@@ -1,7 +1,7 @@
-# Safespring blog
+# Safespring web
 
 This repository contains the source code and Markdown content to generate our
-blog at https://www.safespring.com/blog
+website at https://www.safespring.com/
 
 ## Building a preview of the site
 
@@ -10,8 +10,8 @@ blog at https://www.safespring.com/blog
 1. [Download and copy][1] the Hugo binary to your`$PATH`.
 2. Clone the git repository and run Hugo:
    ```
-   git clone git@github.com:safespring/blog
-   cd blog
+   git clone git@github.com:safespring/web
+   cd web
    hugo serve
    ```
 3. Access http://localhost:1313/blog in your browser of choice.
@@ -23,11 +23,11 @@ blog at https://www.safespring.com/blog
 1. Make sure you have [Docker installed][2].
 2. Clone the git repository and run Docker:
    ```
-   git clone git@github.com:safespring/blog
+   git clone git@github.com:safespring/web
    cd blog
    docker run --rm -it -p 1313:1313 -v $PWD:/site:z -e VIRTUAL_HOST="${1}" devopsdays/docker-hugo-server
    ```
-3. Access http://localhost:1313/blog in your browser of choice.
+3. Access http://localhost:1313/ in your browser of choice.
 
 [2]:https://www.docker.com/community-edition#/download
 
