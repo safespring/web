@@ -1,0 +1,287 @@
+<manifest alg="2" build="2017.0.4.363" opt="false" iceEnabled="false" exportTarget="other" domain="https://safespring.se" resolutions="1x,2x" timestamp="1504982824091">
+  <folder name="css">
+    <file name="site_global.css" crc="530242890"/>
+    <file name="master_safespring-master-start.css" crc="127627378" ref="index:tack:kontakt"/>
+    <file name="master_safespring-master.css" crc="4018091723" ref="chalmers:pris"/>
+    <file name="master_safespring-master-huvudsida.css" crc="89915087" ref="testa-safespring-storage:safespring-backup:safespring-storage:tjanster:testa-safespring-backup:aktuellt:support:testa-safespring-compute:kundreferenser:safespring-compute:om-oss"/>
+    <file name="chalmers.css" crc="504245843" ref="chalmers"/>
+    <file name="testa-safespring-storage.css" crc="3912436776" ref="testa-safespring-storage"/>
+    <file name="safespring-backup.css" crc="3845507652" ref="safespring-backup"/>
+    <file name="index.css" crc="4147948090" ref="index"/>
+    <file name="pris.css" crc="33972994" ref="pris"/>
+    <file name="safespring-storage.css" crc="3816770802" ref="safespring-storage"/>
+    <file name="tjanster.css" crc="184042694" ref="tjanster"/>
+    <file name="testa-safespring-backup.css" crc="135959719" ref="testa-safespring-backup"/>
+    <file name="aktuellt.css" crc="417447919" ref="aktuellt"/>
+    <file name="support.css" crc="4156707759" ref="support"/>
+    <file name="testa-safespring-compute.css" crc="419654564" ref="testa-safespring-compute"/>
+    <file name="kundreferenser.css" crc="237384931" ref="kundreferenser"/>
+    <file name="tack.css" crc="4279175373" ref="tack"/>
+    <file name="kontakt.css" crc="4185428703" ref="kontakt"/>
+    <file name="safespring-compute.css" crc="3827338775" ref="safespring-compute"/>
+    <file name="om-oss.css" crc="4033974150" ref="om-oss"/>
+  </folder>
+  <folder name="fonts">
+    <file name="hind-600.woff" crc="4041631020"/>
+    <file name="hind-600.eot" crc="14773684"/>
+    <file name="hind-600.svg" crc="3878735991"/>
+    <file name="montserrat-regular.woff" crc="52445507"/>
+    <file name="montserrat-regular.eot" crc="425044951"/>
+    <file name="montserrat-regular.svg" crc="4213666044"/>
+    <file name="montserrat-700.woff" crc="3858774806"/>
+    <file name="montserrat-700.eot" crc="62259338"/>
+    <file name="montserrat-700.svg" crc="3968374491"/>
+  </folder>
+  <folder name="assets">
+    <file name="safespring-backup-web.pdf" crc="3865878841" seo="true" mt="1485483033000"/>
+    <file name="safespring-compute-web.pdf" crc="16935655" seo="true" mt="1485483038000"/>
+    <file name="safespring-storage-web.pdf" crc="3825067397" seo="true" mt="1485483045000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="museutils.js" crc="4216313831" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="museconfig.js" crc="474374037" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="webpro.js" crc="4143865194" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:pris"/>
+    <file name="musewpdisclosure.js" crc="4050941203" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:pris"/>
+    <file name="jquery.watch.js" crc="460461809" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4110862005" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kundreferenser:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="jquery.scrolleffects.js" crc="128250821" ref="phone>index:kundreferenser:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="require.js" crc="3951022091" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö:index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="form_check.php" crc="154010282" ref="phone>kontakt"/>
+    <file name="form_throttle.php" crc="266437015" ref="phone>kontakt"/>
+    <file name="form_process.php" crc="512629711" ref="phone>kontakt"/>
+    <file name="form-u12017.php" crc="3846924974" ref="phone>kontakt"/>
+    <file name="form-u13513.php" crc="440519892" ref="phone>testa-safespring-compute"/>
+    <file name="form-u13747.php" crc="434895959" ref="phone>testa-safespring-backup"/>
+    <file name="form-u13810.php" crc="4168954107" ref="phone>testa-safespring-storage"/>
+    <file name="musewpslideshow.js" crc="3781122836" ref="phone>prislista:index:pris"/>
+    <file name="jquery.museoverlay.js" crc="4030747646" ref="phone>prislista:index:pris"/>
+    <file name="touchswipe.js" crc="4200445185" ref="phone>prislista:index:pris"/>
+    <file name="jquery.musemenu.js" crc="493622299" ref="index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:kontakt:kundreferenser:tack:tjanster:safespring-backup:om-oss:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers:support:aktuellt:pris"/>
+    <file name="form-u11953.php" crc="4176793475" ref="kontakt"/>
+    <file name="form-u12445.php" crc="263676458" ref="testa-safespring-compute"/>
+    <file name="form-u12622.php" crc="326748285" ref="testa-safespring-backup"/>
+    <file name="form-u12880.php" crc="3808865661" ref="testa-safespring-storage"/>
+  </folder>
+  <folder name="images">
+    <file name="safespring-master-favicon.ico" crc="4142707070" ref="phone>index"/>
+    <file name="1a_safespring_logotyp_bla_rgb.png" crc="4244370795" seo="true" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö">
+      <caption webpage="musikverket" alt=""/>
+      <caption webpage="vårt-erbjudande" alt=""/>
+      <caption webpage="om-oss" alt=""/>
+      <caption webpage="tack" alt=""/>
+      <caption webpage="testa-safespring-compute" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="safespring-storage" alt=""/>
+      <caption webpage="testa-safespring-storage" alt=""/>
+      <caption webpage="safespring-backup" alt=""/>
+      <caption webpage="chalmers" alt=""/>
+      <caption webpage="musikhögskolan-i-malmö" alt=""/>
+      <caption webpage="referenser" alt=""/>
+      <caption webpage="kontakt" alt=""/>
+      <caption webpage="prislista" alt=""/>
+      <caption webpage="aktuellt" alt=""/>
+      <caption webpage="safespring-compute" alt=""/>
+      <caption webpage="testa-safespring-backup" alt=""/>
+      <caption webpage="support" alt=""/>
+    </file>
+    <file name="1a_safespring_logotyp_bla_rgb_2x.png" crc="285179442" seo="true" ref="phone>index:phone>vårt-erbjudande:phone>kontakt:phone>om-oss:phone>safespring-backup:phone>safespring-storage:phone>safespring-compute:phone>testa-safespring-compute:phone>chalmers:phone>testa-safespring-backup:phone>testa-safespring-storage:phone>tack:phone>referenser:phone>aktuellt:phone>support:phone>prislista:phone>musikverket:phone>musikhögskolan-i-malmö">
+      <caption webpage="musikverket" alt=""/>
+      <caption webpage="vårt-erbjudande" alt=""/>
+      <caption webpage="om-oss" alt=""/>
+      <caption webpage="tack" alt=""/>
+      <caption webpage="testa-safespring-compute" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="safespring-storage" alt=""/>
+      <caption webpage="testa-safespring-storage" alt=""/>
+      <caption webpage="safespring-backup" alt=""/>
+      <caption webpage="chalmers" alt=""/>
+      <caption webpage="musikhögskolan-i-malmö" alt=""/>
+      <caption webpage="referenser" alt=""/>
+      <caption webpage="kontakt" alt=""/>
+      <caption webpage="prislista" alt=""/>
+      <caption webpage="aktuellt" alt=""/>
+      <caption webpage="safespring-compute" alt=""/>
+      <caption webpage="testa-safespring-backup" alt=""/>
+      <caption webpage="support" alt=""/>
+    </file>
+    <file name="safespring-molnlagring.jpg" crc="3994075753" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1c_safespring_logotyp_vit_rgb.png" crc="136408079" ref="phone>index:index:kundreferenser:chalmers">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1c_safespring_logotyp_vit_rgb_2x.png" crc="3947763373" ref="phone>index:index:kundreferenser:chalmers">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="safespring_bilder_8-u4670-fr.jpg" crc="3782088695" ref="phone>vårt-erbjudande"/>
+    <file name="safespring_bilder_8-u4670-fr_2x.jpg" crc="4115032971" ref="phone>vårt-erbjudande"/>
+    <file name="safespring_backup_symbol.svg" crc="3923019426" seo="true" ref="phone>vårt-erbjudande:phone>safespring-backup:phone>safespring-storage:phone>testa-safespring-backup:tjanster:safespring-backup:testa-safespring-backup:chalmers:support">
+      <caption webpage="support" alt=""/>
+      <caption webpage="tjanster" alt=""/>
+      <caption webpage="testa-safespring-backup" alt=""/>
+      <caption webpage="safespring-backup" alt=""/>
+      <caption webpage="chalmers" alt=""/>
+    </file>
+    <file name="safespring_backup_symbol_poster_u29211.png" crc="3987467584" ref="phone>vårt-erbjudande:phone>safespring-backup:phone>safespring-storage:phone>testa-safespring-backup"/>
+    <file name="safespring_storage_symbol.svg" crc="3784456658" seo="true" ref="phone>vårt-erbjudande:phone>testa-safespring-storage:tjanster:safespring-storage:testa-safespring-storage:support">
+      <caption webpage="tjanster" alt=""/>
+      <caption webpage="safespring-storage" alt=""/>
+      <caption webpage="testa-safespring-storage" alt=""/>
+      <caption webpage="support" alt=""/>
+    </file>
+    <file name="safespring_storage_symbol_poster_u29217.png" crc="3945040809" ref="phone>vårt-erbjudande:phone>testa-safespring-storage"/>
+    <file name="safespring_compute_symbol.svg" crc="99232182" seo="true" ref="phone>vårt-erbjudande:phone>safespring-compute:phone>testa-safespring-compute:tjanster:safespring-compute:testa-safespring-compute:support">
+      <caption webpage="tjanster" alt=""/>
+      <caption webpage="support" alt=""/>
+      <caption webpage="safespring-compute" alt=""/>
+      <caption webpage="testa-safespring-compute" alt=""/>
+    </file>
+    <file name="safespring_compute_symbol_poster_u29223.png" crc="436981732" ref="phone>vårt-erbjudande:phone>safespring-compute:phone>testa-safespring-compute"/>
+    <file name="safespring_bilder_7.jpg" crc="4099992438" ref="phone>kontakt">
+      <caption webpage="kontakt" alt=""/>
+    </file>
+    <file name="safespring_bilder_7_2x.jpg" crc="259650028" ref="phone>kontakt">
+      <caption webpage="kontakt" alt=""/>
+    </file>
+    <file name="2c_safespring_symbol_vit_rgb.png" crc="4041042091" seo="true" ref="phone>kontakt">
+      <caption webpage="kontakt" alt=""/>
+    </file>
+    <file name="2c_safespring_symbol_vit_rgb_2x.png" crc="203733221" seo="true" ref="phone>kontakt">
+      <caption webpage="kontakt" alt=""/>
+    </file>
+    <file name="safespring_bilder_9-u11442-fr.jpg" crc="4195062805" ref="phone>om-oss"/>
+    <file name="safespring_bilder_9-u11442-fr_2x.jpg" crc="330750395" ref="phone>om-oss"/>
+    <file name="chalmers-u13669-fr.jpg" crc="161241316" ref="phone>chalmers"/>
+    <file name="chalmers-u13669-fr_2x.jpg" crc="201631576" ref="phone>chalmers"/>
+    <file name="safespring_bilder_10-u16118-fr.jpg" crc="419752413" ref="phone>referenser"/>
+    <file name="safespring_bilder_10-u16118-fr_2x.jpg" crc="4253320010" ref="phone>referenser"/>
+    <file name="chalmers-u16130-3-fr.jpg" crc="366716648" ref="phone>referenser"/>
+    <file name="chalmers-u16130-3-fr_2x.jpg" crc="3968753770" ref="phone>referenser"/>
+    <file name="safespring_musikhogskolan.jpg" crc="4038356576" ref="phone>referenser:phone>musikhögskolan-i-malmö:kundreferenser">
+      <caption webpage="referenser" alt=""/>
+    </file>
+    <file name="safespring_musikverket.jpg" crc="4018464081" ref="phone>referenser:kundreferenser">
+      <caption webpage="referenser" alt=""/>
+    </file>
+    <file name="safespring_musikverket_2x.jpg" crc="101986931" ref="phone>referenser:kundreferenser">
+      <caption webpage="referenser" alt=""/>
+    </file>
+    <file name="safespring_bilder_3-u16162-fr.jpg" crc="304468091" ref="phone>aktuellt"/>
+    <file name="safespring_bilder_3-u16162-fr_2x.jpg" crc="4070745267" ref="phone>aktuellt"/>
+    <file name="safespring_bilder_5-u16247-fr.jpg" crc="247609356" ref="phone>support"/>
+    <file name="safespring_bilder_5-u16247-fr_2x.jpg" crc="107071337" ref="phone>support"/>
+    <file name="safespring_bilder_7-u19877-fr.jpg" crc="3981863790" ref="phone>prislista"/>
+    <file name="safespring_bilder_7-u19877-fr_2x.jpg" crc="3908660626" ref="phone>prislista"/>
+    <file name="safespring_musikverket-u29297-fr.jpg" crc="4221467613" ref="phone>musikverket"/>
+    <file name="safespring_musikverket-u29297-fr_2x.jpg" crc="282521465" ref="phone>musikverket"/>
+    <file name="safespring-master-start-favicon.ico" crc="4142707070" ref="index"/>
+    <file name="u1898.png" crc="4067530614" ref="index"/>
+    <file name="u1898_2x.png" crc="245701710" ref="index"/>
+    <file name="u1898-r.png" crc="3809739931" ref="index"/>
+    <file name="u1898-r_2x.png" crc="378184563" ref="index"/>
+    <file name="u1894.png" crc="4067530614" ref="index"/>
+    <file name="u1894_2x.png" crc="245701710" ref="index"/>
+    <file name="u1894-r.png" crc="3809739931" ref="index"/>
+    <file name="u1894-r_2x.png" crc="378184563" ref="index"/>
+    <file name="safespring-master-huvudsida-favicon.ico" crc="4142707070" ref="kundreferenser"/>
+    <file name="safespring_bilder_10.jpg" crc="4095481607" ref="kundreferenser">
+      <caption webpage="kundreferenser" alt=""/>
+    </file>
+    <file name="chalmers-u15838-3-fr.jpg" crc="3859029930" ref="kundreferenser"/>
+    <file name="chalmers-u15838-3-fr_2x.jpg" crc="176662249" ref="kundreferenser"/>
+    <file name="safespring_bilder_8.jpg" crc="99658493" ref="tjanster">
+      <caption webpage="tjanster" alt=""/>
+    </file>
+    <file name="safespring_backup_symbol_poster_.png" crc="3987467584" ref="tjanster"/>
+    <file name="safespring_storage_symbol_poster_.png" crc="3945040809" ref="tjanster"/>
+    <file name="safespring_compute_symbol_poster_.png" crc="436981732" ref="tjanster"/>
+    <file name="arrow2_sprite.png" crc="370784607" ref="safespring-backup:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers">
+      <caption webpage="safespring-backup" alt=""/>
+    </file>
+    <file name="arrow2_sprite_2x.png" crc="3817846912" ref="safespring-backup:safespring-compute:safespring-storage:testa-safespring-compute:testa-safespring-backup:testa-safespring-storage:chalmers">
+      <caption webpage="safespring-backup" alt=""/>
+    </file>
+    <file name="safespring_bilder_9.jpg" crc="522886773" ref="om-oss">
+      <caption webpage="om-oss" alt=""/>
+    </file>
+    <file name="fredric_wallsten-safespring.jpg" crc="3805064988" ref="om-oss">
+      <caption webpage="om-oss" alt=""/>
+    </file>
+    <file name="fredric_wallsten-safespring_2x.jpg" crc="4000939053" ref="om-oss">
+      <caption webpage="om-oss" alt=""/>
+    </file>
+    <file name="chalmers.jpg" crc="3838790481" ref="chalmers">
+      <caption webpage="chalmers" alt=""/>
+    </file>
+    <file name="safespring_bilder_5.jpg" crc="3918037671" ref="support">
+      <caption webpage="support" alt=""/>
+    </file>
+    <file name="safespring_bilder_3.jpg" crc="133698968" ref="aktuellt">
+      <caption webpage="aktuellt" alt=""/>
+    </file>
+    <file name="safespring_bilder_72.jpg" crc="259650028" ref="pris">
+      <caption webpage="pris" alt=""/>
+    </file>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_safespring-master.css" crc="4264791960" ref="phone>chalmers:phone>tack:phone>index:phone>testa-safespring-storage:phone>aktuellt:phone>referenser:phone>vårt-erbjudande:phone>om-oss:phone>support:phone>kontakt:phone>musikverket:phone>safespring-storage:phone>prislista:phone>safespring-backup:phone>testa-safespring-compute:phone>musikhögskolan-i-malmö:phone>safespring-compute:phone>testa-safespring-backup"/>
+      <file name="chalmers.css" crc="295483923" ref="phone>chalmers"/>
+      <file name="tack.css" crc="4288162498" ref="phone>tack"/>
+      <file name="index.css" crc="3996791656" ref="phone>index"/>
+      <file name="testa-safespring-storage.css" crc="456210646" ref="phone>testa-safespring-storage"/>
+      <file name="aktuellt.css" crc="364143881" ref="phone>aktuellt"/>
+      <file name="referenser.css" crc="166274427" ref="phone>referenser"/>
+      <file name="v_rt-erbjudande.css" crc="97915126" ref="phone>vårt-erbjudande"/>
+      <file name="om-oss.css" crc="255962163" ref="phone>om-oss"/>
+      <file name="support.css" crc="4031956754" ref="phone>support"/>
+      <file name="kontakt.css" crc="4252472169" ref="phone>kontakt"/>
+      <file name="musikverket.css" crc="3885209522" ref="phone>musikverket"/>
+      <file name="safespring-storage.css" crc="153533474" ref="phone>safespring-storage"/>
+      <file name="prislista.css" crc="271481268" ref="phone>prislista"/>
+      <file name="safespring-backup.css" crc="3901070868" ref="phone>safespring-backup"/>
+      <file name="testa-safespring-compute.css" crc="3949264350" ref="phone>testa-safespring-compute"/>
+      <file name="musikh_gskolan-i-malm_.css" crc="4137951249" ref="phone>musikhögskolan-i-malmö"/>
+      <file name="safespring-compute.css" crc="195435565" ref="phone>safespring-compute"/>
+      <file name="testa-safespring-backup.css" crc="209053731" ref="phone>testa-safespring-backup"/>
+    </folder>
+    <file name="index.html" crc="4189541071" seo="true" mt="1504107622029" redirect="true"/>
+    <file name="vårt-erbjudande.html" crc="3824900321" seo="true" mt="1504107251684" redirect="true"/>
+    <file name="kontakt.html" crc="212575626" seo="true" mt="1502361506914" redirect="true"/>
+    <file name="om-oss.html" crc="3943255828" seo="true" mt="1504106794013" redirect="true"/>
+    <file name="safespring-backup.html" crc="4085650427" seo="true" mt="1504368213085" redirect="true"/>
+    <file name="safespring-storage.html" crc="4051234809" seo="true" mt="1504107358666" redirect="true"/>
+    <file name="safespring-compute.html" crc="4012183476" seo="true" mt="1504107275841" redirect="true"/>
+    <file name="testa-safespring-compute.html" crc="37107792" seo="true" mt="1504106154666" redirect="true"/>
+    <file name="chalmers.html" crc="4169792418" seo="true" mt="1504106343718" redirect="true"/>
+    <file name="testa-safespring-backup.html" crc="60701836" seo="true" mt="1504106195347" redirect="true"/>
+    <file name="testa-safespring-storage.html" crc="140105762" seo="true" mt="1504106243070" redirect="true"/>
+    <file name="tack.html" crc="497937018" mt="1504107249869" redirect="true"/>
+    <file name="referenser.html" crc="183769155" seo="true" mt="1504107585070" redirect="true"/>
+    <file name="aktuellt.html" crc="4112798304" seo="true" mt="1504369551186" redirect="true"/>
+    <file name="support.html" crc="3775566829" seo="true" mt="1504105629321" redirect="true"/>
+    <file name="prislista.html" crc="4092104444" seo="true" mt="1504982470632" redirect="true"/>
+    <file name="musikverket.html" crc="4152614082" seo="true" mt="1504106718454" redirect="true"/>
+    <file name="musikhögskolan-i-malmö.html" crc="4238321820" seo="true" mt="1504107209505" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="4211494755" seo="true" mt="1504201649988" redirect="true"/>
+  <file name="kontakt.html" crc="4260205453" seo="true" mt="1503586682360" redirect="true"/>
+  <file name="kundreferenser.html" crc="74500590" seo="true" mt="1504108246538" redirect="true"/>
+  <file name="tack.html" crc="4218849206" seo="true" mt="1503586682360" redirect="true"/>
+  <file name="tjanster.html" crc="470456558" seo="true" mt="1504104181022" redirect="true"/>
+  <file name="safespring-backup.html" crc="331412871" seo="true" mt="1504368194224" redirect="true"/>
+  <file name="om-oss.html" crc="170023446" seo="true" mt="1504187542178" redirect="true"/>
+  <file name="safespring-compute.html" crc="4210457777" seo="true" mt="1504107708926" redirect="true"/>
+  <file name="safespring-storage.html" crc="4066373836" seo="true" mt="1504201720535" redirect="true"/>
+  <file name="testa-safespring-compute.html" crc="3886625900" seo="true" mt="1504107250213" redirect="true"/>
+  <file name="testa-safespring-backup.html" crc="304978345" seo="true" mt="1503586676960" redirect="true"/>
+  <file name="testa-safespring-storage.html" crc="65327133" seo="true" mt="1503586676960" redirect="true"/>
+  <file name="chalmers.html" crc="3976908254" seo="true" mt="1504104292346" redirect="true"/>
+  <file name="support.html" crc="154360747" seo="true" mt="1504104258674" redirect="true"/>
+  <file name="aktuellt.html" crc="338061549" seo="true" mt="1504370250232" redirect="true"/>
+  <file name="pris.html" crc="499070247" seo="true" mt="1504982420094" redirect="true"/>
+</manifest>
