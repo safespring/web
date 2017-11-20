@@ -1,0 +1,251 @@
+<style>
+    .btn {
+        -webkit-transition: all .7s ease .0s;
+        -moz-transition: all .7s ease .0s;
+        -o-transition: all .7s ease .0s;
+        transition: all .7s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .7s ease .0s;
+        -moz-transition: all .7s ease .0s;
+        -o-transition: all .7s ease .0s;
+        transition: all .7s ease .0s;
+    }
+</style>
+
+<style>
+    .hexigon {
+        -webkit-transition: all .2s ease .0s;
+        -moz-transition: all .2s ease .0s;
+        -o-transition: all .2s ease .0s;
+        transition: all .2s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .2s ease .0s;
+        -moz-transition: all .2s ease .0s;
+        -o-transition: all .2s ease .0s;
+        transition: all .2s ease .0s;
+    }
+</style>
+
+<style>
+    .hexigon_arrow {
+        -webkit-transition: all .2s ease .0s;
+        -moz-transition: all .2s ease .0s;
+        -o-transition: all .2s ease .0s;
+        transition: all .2s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .2s ease .0s;
+        -moz-transition: all .2s ease .0s;
+        -o-transition: all .2s ease .0s;
+        transition: all .2s ease .0s;
+    }
+</style>
+
+<style>
+    .article {
+        -webkit-transition: all .1s ease 0s;
+        -moz-transition: all .1s ease 0s;
+        -o-transition: all .1s ease 0s;
+        transition: all .1s ease 0s;
+    }
+
+    span {
+        -webkit-transition: all .1s ease 0s;
+        -moz-transition: all .1s ease 0s;
+        -o-transition: all .1s ease 0s;
+        transition: all .1s ease 0s;
+    }
+</style>
+
+<style>
+    .small_tab {
+        -webkit-transition: all .5s ease .0s;
+        -moz-transition: all .5s ease .0s;
+        -o-transition: all .5s ease .0s;
+        transition: all .5s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .5s ease .0s;
+        -moz-transition: all .5s ease .0s;
+        -o-transition: all .5s ease .0s;
+        transition: all .5s ease .0s;
+    }
+</style>
+
+<style>
+    .nano {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden
+    }
+
+    .nano>.nano-content,
+    .nano>.nano-pane {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0
+    }
+
+    .nano>.nano-content {
+        overflow: scroll;
+        overflow-x: hidden;
+        left: 0
+    }
+
+    .nano>.nano-content:focus {
+        outline: dotted thin
+    }
+
+    .nano>.nano-content::-webkit-scrollbar {
+        display: none
+    }
+
+    .has-scrollbar>.nano-content::-webkit-scrollbar {
+        display: block
+    }
+
+    .nano>.nano-pane {
+        background: rgba(0, 0, 0, .25);
+        width: 10px;
+        visibility: hidden\9;
+        opacity: .01;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px
+    }
+
+    .nano>.nano-pane>.nano-slider {
+        background: #444;
+        background: rgba(0, 0, 0, .5);
+        position: relative;
+        margin: 0 1px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px
+    }
+
+    .nano-pane.active,
+    .nano-pane.flashed,
+    .nano:hover>.nano-pane {
+        visibility: visible\9;
+        opacity: .99
+    }
+
+    .sidebar .nano {
+        height: 1000px;
+    }
+
+    .sidebar .nano .nano-content {
+        padding: 10px;
+    }
+
+    .sidebar .nano .nano-pane {
+        background: #888;
+    }
+
+    .sidebar .nano .nano-slider {
+        background: #111;
+    }
+
+    .sidebar .nano>.nano-pane>.nano-slider {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .sidebar .nano .nano-pane {
+        right: 1px;
+        background: rgba(249, 255, 255, 0);
+    }
+
+    .sidebar .nano>.nano-pane {
+        width: 8px;
+    }
+</style>
+
+<style>
+    .none {
+        -webkit-transition: all 1s ease .0s;
+        -moz-transition: all 1s ease .0s;
+        -o-transition: all 1s ease .0s;
+        transition: all 1s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all 1s ease .0s;
+        -moz-transition: all 1s ease .0s;
+        -o-transition: all 1s ease .0s;
+        transition: all 1s ease .0s;
+    }
+
+    .none {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: center center 0;
+    }
+
+    .none:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(3360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+</style>
+
+<style>
+    .slider_arrow {
+        -webkit-transition: all .4s ease .0s;
+        -moz-transition: all .4s ease .0s;
+        -o-transition: all .4s ease .0s;
+        transition: all .4s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .4s ease .0s;
+        -moz-transition: all .4s ease .0s;
+        -o-transition: all .4s ease .0s;
+        transition: all .4s ease .0s;
+    }
+</style>
+
+<style>
+    .article_thumb {
+        -webkit-transition: all .4s ease .0s;
+        -moz-transition: all .4s ease .0s;
+        -o-transition: all .4s ease .0s;
+        transition: all .4s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .4s ease .0s;
+        -moz-transition: all .4s ease .0s;
+        -o-transition: all .4s ease .0s;
+        transition: all .4s ease .0s;
+    }
+</style>
+
+<style>
+    .btn_text {
+        -webkit-transition: all .4s ease .0s;
+        -moz-transition: all .4s ease .0s;
+        -o-transition: all .4s ease .0s;
+        transition: all .4s ease .0s;
+    }
+
+    span {
+        -webkit-transition: all .4s ease .0s;
+        -moz-transition: all .4s ease .0s;
+        -o-transition: all .4s ease .0s;
+        transition: all .4s ease .0s;
+    }
+</style>

@@ -1,0 +1,885 @@
+{{ if eq $.Params.title "Safespring | Aktuellt" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/aktuellt.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/chalmers.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Säkra molntjänster" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/index.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/kontakt.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Kundreferenser" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/kundreferenser.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Om oss" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/om-oss.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Pris" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/pris.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Backup som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/safespring-backup.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Infrastruktur som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/safespring-compute.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Lagring som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/safespring-storage.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Support" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/support.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/tack.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Testa backup som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/testa-safespring-backup.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Testa infrastruktur som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/testa-safespring-compute.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Testa lagring som tjänst" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/testa-safespring-storage.html");
+    </script>
+{{ else if eq $.Params.title "Safespring | Våra tjänster" }}
+    <script type="text/javascript">
+        // Redirect to phone/tablet as necessary
+        (function (a, b, c) {
+            var d = function () {
+                    if (navigator.maxTouchPoints > 1) return !0;
+                    if (window.matchMedia && window.matchMedia("(-moz-touch-enabled)").matches) return !0;
+                    for (var a = ["Webkit", "Moz", "O", "ms", "Khtml"], b = 0, c = a.length; b < c; b++) {
+                        var f = a[b] + "MaxTouchPoints";
+                        if (f in navigator && navigator[f]) return !0
+                    }
+                    try {
+                        return document.createEvent("TouchEvent"), !0
+                    } catch (d) {}
+                    return !1
+                }(),
+                g = function (a) {
+                    a += "=";
+                    for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+                        for (var f = b[c]; f.charAt(0) == " ";) f = f.substring(1, f.length);
+                        if (f.indexOf(a) ==
+                            0) return f.substring(a.length, f.length)
+                    }
+                    return null
+                };
+            if (g("inbrowserediting") != "true") {
+                var f, g = g("devicelock");
+                g == "phone" && c ? f = c : g == "tablet" && b && (f = b);
+                if (g != a && !f)
+                    if (window.matchMedia) window.matchMedia("(max-device-width: 415px)").matches && c ? f = c : window
+                        .matchMedia("(max-device-width: 960px)").matches && b && d && (f = b);
+                    else {
+                        var a = Math.min(screen.width, screen.height) / (window.devicePixelRatio || 1),
+                            g = window.screen.systemXDPI || 0,
+                            i = window.screen.systemYDPI || 0,
+                            g = g > 0 && i > 0 ? Math.min(screen.width / g, screen.height / i) :
+                            0;
+                        (a <= 370 || g != 0 && g <= 3) && c ? f = c : a <= 960 && b && d && (f = b)
+                    }
+                if (f) document.location = f + (document.location.search || "") + (document.location.hash || ""),
+                    document.write('<style type="text/css">body {visibility:hidden}</style>')
+            }
+        })("desktop", "", "phone/tjanster.html");
+    </script>
+{{ end }}
+
+<script type="text/javascript">
+    // Update the 'nojs'/'js' class on the html node
+    document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+</script>
+
+<!-- Check that all required assets are uploaded and up-to-date -->
+{{ if eq $.Params.title "Safespring | Aktuellt" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "aktuellt.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "chalmers.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Säkra molntjänster" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "index.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "kontakt.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Kundreferenser" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "kundreferenser.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Om oss" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "om-oss.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Backup som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "safespring-backup.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Infrastruktur som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "safespring-compute.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Lagring som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "safespring-storage.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Support" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "support.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Testa backup som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "testa-safespring-backup.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Testa infrastruktur som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "testa-safespring-compute.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Testa lagring som tjänst" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "require.js", "musewpslideshow.js", "jquery.museoverlay.js",
+                "touchswipe.js", "jquery.musemenu.js", "testa-safespring-storage.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Pris" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "webpro.js", "musewpdisclosure.js", "jquery.watch.js",
+                "jquery.musepolyfill.bgsize.js", "jquery.scrolleffects.js", "require.js", "musewpslideshow.js",
+                "jquery.museoverlay.js", "touchswipe.js", "jquery.musemenu.js", "pris.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "jquery.musemenu.js",
+                "tack.css"
+            ],
+            "outOfDate": []
+        };
+    </script>
+{{ else if eq $.Params.title "Safespring | Våra tjänster" }}
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "jquery.scrolleffects.js", "require.js", "jquery.musemenu.js", "tjanster.css"],
+            "outOfDate": []
+        };
+    </script>
+{{ end }}

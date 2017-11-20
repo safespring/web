@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Site Title changes according to current page *** -->
+    <title>Safespring | 
+        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+        {{ if .Params.heading }}
+            {{ .Params.heading }}
+        {{ else }}
+            {{ .Title }}
+        {{ end }}
+    </title>
+
+    <meta http-equiv="Content-type" content="html;charset=UTF-8" />
+    <meta name="generator" content="2017.0.4.363" />
+    <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
+    <!-- Description changes according to current page *** -->
+    <meta name="description" content="{{ .Site.Params.meta.description }}"/>
+
+    {{ partial "ridirect.html" . }}
+
+    <!-- Subpage changes based on current page *** -->
+    {{ partial "alternate-css.html" . }}
+    <link rel="shortcut icon" href={{ "img/safespring-master-start-favicon.ico?crc=4142707070" | relURL }} />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="css" href={{ "css/site_global.css?crc=530242890" | relURL }} />
+    <link rel="stylesheet" type="css" href={{ "css/master_safespring-master-start.css?crc=127627378" | relURL }} />
+    <link rel="stylesheet" type="css" href={{ "css/index.css?crc=4147948090" | relURL }} id="pagesheet" />
+
+    <!-- JS includes -->
+    <!--[if lt IE 9]>
+    <script src={{ "js/html5shiv.js?crc=4241844378" | relURL }} type="javascript"></script>
+    <![endif]-->
+    <!--HTML Widget code-->
+
+    <!-- Custom Head HTML ***-->
+    {{ if eq $.Params.title "Safespring | Säkra molntjänster" }}
+    {{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+    {{ else }}
+        <style>
+            .sidebar.nano.nano - pane {
+                width: 4 px!important;
+                top: 60 px!important;
+            }
+        </style>
+    {{ end }}
+    
+    <!-- Tack ***-->
+    {{ if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+        <style>
+            .hexigon {
+                -webkit - transition: all .2 s ease .0 s; -
+                moz - transition: all .2 s ease .0 s; -
+                o - transition: all .2 s ease .0 s;
+                transition: all .2 s ease .0 s;
+            }
+        
+            span {
+                -webkit - transition: all .2 s ease .0 s; -
+                moz - transition: all .2 s ease .0 s; -
+                o - transition: all .2 s ease .0 s;
+                transition: all .2 s ease .0 s;
+            }
+        </style>
+        
+        <style >
+            .hexigon_arrow {
+                -webkit - transition: all .2 s ease .1 s; -
+                moz - transition: all .2 s ease .1 s; -
+                o - transition: all .2 s ease .1 s;
+                transition: all .2 s ease .1 s;
+            }
+        
+            span {
+                -webkit - transition: all .2 s ease .1 s; -
+                moz - transition: all .2 s ease .1 s; -
+                o - transition: all .2 s ease .1 s;
+                transition: all .2 s ease .1 s;
+            }
+        </style>
+    {{ end }}
+    
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TXLJWD7');
+    </script>
+
+    <!-- Script changes according to current page *** -->
+    {{ if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst"}}
+        <style>
+            #u15067 { 
+                z-index:-1
+            }
+        </style>
+    {{ else if eq $.Params.title "Safespring | Pris" }}
+        <style>
+            #u15067 { 
+                z-index:-1
+            }
+        </style>
+    {{ else if eq $.Params.title "Safespring | Säkra molntjänster" }}
+        <style>
+            #u15072 { 
+                z-index:-1
+            }
+        </style>
+    {{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+        <style>
+            #u15072 { 
+                z-index:-1
+            }
+        </style>
+    {{ else if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+        <style>
+            #u15072 { 
+                z-index:-1
+            }
+        </style>
+    {{ else }}
+        <style>
+            #u15919 {
+                z-index:-1
+            }
+        </style>
+    {{ end }}
+
+    {{ if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Kundreferenser" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Om oss" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Backup som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Infrastruktur som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Lagring som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Testa backup som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Testa infrastruktur som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ else if eq $.Params.title "Safespring | Testa lagring som tjänst" }}
+        {{ partial "alternate-styles.html" . }}
+    {{ end }}
+</head>

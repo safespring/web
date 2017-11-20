@@ -1,0 +1,33 @@
+{{ if eq $.Params.title "Safespring | Aktuellt" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/aktuellt.html"/>
+{{ else if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/chalmers.html"/>
+{{ else if eq $.Params.title "Safespring | Säkra molntjänster" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/index.html"/>
+{{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/kontakt.html"/>
+{{ else if eq $.Params.title "Safespring | Kundreferenser" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/kundreferenser.html"/>
+{{ else if eq $.Params.title "Safespring | Om oss" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/om-oss.html"/>
+{{ else if eq $.Params.title "Safespring | Pris" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/pris.html"/>
+{{ else if eq $.Params.title "Safespring | Backup som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/safespring-backup.html"/>
+{{ else if eq $.Params.title "Safespring | Infrastruktur som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/safespring-compute.html"/>
+{{ else if eq $.Params.title "Safespring | Lagring som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/safespring-storage.html"/>
+{{ else if eq $.Params.title "Safespring | Support" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/support.html"/>
+{{ else if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/tack.html"/>
+{{ else if eq $.Params.title "Safespring | Testa backup som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/testa-safespring-backup.html"/>
+{{ else if eq $.Params.title "Safespring | Testa infrastruktur som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/testa-safespring-compute.html"/>
+{{ else if eq $.Params.title "Safespring | Testa lagring som tjänst" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/testa-safespring-storage.html"/>
+{{ else if eq $.Params.title "Safespring | Våra tjänster" }}
+    <link media="only screen and (max-width: 370px)" rel="alternate" href="{{ .Site.BaseURL }}/phone/tjanster.html"/>
+{{ end }}
