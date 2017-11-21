@@ -1,10 +1,7 @@
 {{ partial "head-main.html" . }}
 
 <body>
-  <!--HTML Widget code-->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXLJWD7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+  {{ partial "g-tag-manager.html" . }}
 
   <!-- Header Nav, Content, ???, Footer -->
   <div class="clearfix" id="page">
@@ -107,12 +104,6 @@
       {{ partial "footer-index.html" . }}
     </div>
   </div>
-
-  <!-- Other scripts -->
-  <script type="text/javascript">
-    // Decide weather to suppress missing file error or not based on preference setting
-    var suppressMissingFileError = false
-  </script>
 
   <script type="text/javascript">
     window.Muse.assets.check = function(d) {
@@ -221,7 +212,6 @@
     };
   </script>
 
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=3951022091" type="text/javascript" async data-main="scripts/museconfig.js?crc=474374037" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  {{ partial "other-scripts.html" . }}
 </body>
 </html>

@@ -1,17 +1,13 @@
 {{ partial "head-main.html" . }}
 
 <body>
-  <!--HTML Widget code-->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXLJWD7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+  {{ partial "g-tag-manager.html" . }}
 
-  <!-- Heading, Nav, Content, Footer -->
+  <!-- Heading Text, Header Nav, Content, ???, Content Columns, ???, Footer -->
   <div class="clearfix" id="page">
     <!-- column -->
     <div class="position_content" id="page_position_content">
-
-      <!-- Heading Text -->
+      <!-- Heading text -->
       <div class="clearfix colelem" id="pu16069">
         <!-- group -->
         <div class="browser_width grpelem" id="u16069-bw">
@@ -19,76 +15,142 @@
             <!-- simple frame -->
           </div>
         </div>
-        <div class="browser_width grpelem" id="u27344-bw">
-          <div class="museBGSize" id="u27344">
+
+        <div class="browser_width grpelem" id="u27255-bw">
+          <div class="museBGSize" id="u27255">
             <!-- group -->
-            <div class="clearfix" id="u27344_align_to_page">
-              <div class="mast_hd rubriksida clearfix grpelem" id="u15587-4">
-                <!-- content -->
-                <h1>Aktuellt</h1>
-              </div>
-              <div class="Underrubrik-sida clearfix grpelem" id="u15594-6">
+            <div class="clearfix" id="u27255_align_to_page">
+              <div class="Underrubrik-sida clearfix grpelem" id="u13337-6">
                 <!-- content -->
                 <p>Med Safespring får du en effektiv modell för leverans
-                  <br/>av tjänst utan att förlora kontroll över din data.</p>
+                  <br/>av tjänst utan att förlora kontroll över din data.
+                </p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="mast_hd rubriksida clearfix grpelem" id="u13336-6">
+          <!-- content -->
+          <h1>Stabil infrastruktur och</h1>
+          <h1>resurskonsumering efter behov</h1>
         </div>
       </div>
 
       <!-- Header Nav -->
       {{ partial "header-default.html" . }}
 
-      <!-- Content -->
-      <div class="clearfix colelem" id="u29458-8">
+      <!-- Content Info -->
+      <div class="clearfix colelem" id="u10403-28">
         <!-- content -->
-        <p id="u29458-2">2017-08-28</p>
-        <p id="u29458-4">Safespring lanserar ny webb</p>
-        <p id="u29458-6">Safespring har nu lanserat en ny webb för att tydligare beskriva vårt erbjudande och våra tjänster. Sidan kommer
-          att uppdateras kontinuerligt för att spegla våra lanseringar och nyheter.</p>
-      </div>
-      <div class="clearfix colelem" id="u29521-14">
-        <!-- content -->
-        <p id="u29521-2">2017-08-28</p>
-        <p id="u29521-4">Uppgradering av Safesprings Compute plattform</p>
-        <p id="u29521-6">I enlighet med Safesprings mål att ligga i fas med OpenStacks officiella versioner (med en fördröjning på 3 månader
-          för att säkerställa stabilitet) är nu arbetet med att uppgradera till den senaste versionen Ocata i full gång.
-          Uppgraderingen förväntas förbättra integration med lagringsplattformen Ceph vilket kommer att göra ett antal diskberoende
-          operationer snabbare.</p>
-        <p class="Orange-text" id="u29521-12">Detaljer kring själva uppgraderingen finns att läsa på
-          <span>
-            <a class="nonblock" href="https://status.safespring.com" target="_blank">https://status.safespring.com</a>
-          </span>.</p>
-      </div>
-      <div class="clearfix colelem" id="u29461-10">
-        <!-- content -->
-        <p id="u29461-2">2017-08-28</p>
-        <p id="u29461-4">Safespring ser ökat behov av gemensam lagringsplattform</p>
-        <p id="u29461-6">I och med ökade datamängder inom alla discipliner får lärosäten och institutioner större och större behov av att
-          på ett smidigt sätt kunna lagra data. Fler och fler projekt driver i dag data i Petabyte-skala vilket leder till
-          stora kostnader vid uppsättning av interna lagringslösningar. Safespring har en S3-kompatibel lagringslösning som
-          kan tjäna som en gemensam plattform för projekt inom forskningsvärlden som driver mycket data.</p>
-        <p id="u29461-8">Plattformen kan användas tillsammans med Safespring Compute, för att bearbeta data, eller som en arkiveringsplattform
-          dit data skickas när det har behandlats lokalt. S3 är baserat på HTTPS vilket gör det möjligt för forskare att
-          enkelt, säkert och kostnadseffektivt kunna tillhandahålla rådata och resultat till intressenter. Datat nås via
-          adresser som kan läggas in som referenser i publikationer eller metadatatjänster för publikationer bakom inloggninsportaler
-          för ytterligare kontroll.</p>
+        <h2 class="Rubrik-br-dtext">MOLNTJÄNSTER MED HÖG SÄKERHET</h2>
+        <p class="Brodtext Orange-text">
+          <a class="nonblock anim_swing" href="tjanster.html#safespring-molntjanster">
+            <span id="u10403-3">Safesprings molntjänster</span>
+          </a>är skalbara och kostnadseffektiva. Med lokalt producerade molntjänster och med fysiska datacenter placerade i samma
+          land som kunden - lämnar er data aldrig landet.</p>
+        <p class="Brodtext Orange-text">Safespring lever upp till lokala lagar och regler kring datalagring såsom personuppgiftslagen (PUL) och ligger trots
+          avancerade säkerhetslösningar i priskonkurrens med de internationella publika molnen. Detta möjliggörs med en hög
+          grad av automatisering.</p>
+        <p class="Brodtext Orange-text">Genom självbetjäning kan Safesprings molntjänster skalas upp och ned efter användarens behov. Safesprings molntjänster
+          köps on-demand vilket ger våra användare full kontroll över nyttjandet av tjänsten. På så sätt kan kvoter sättas
+          och kostnaden för det aktuella användandet blir förutsägbar.</p>
+        <p class="Brodtext">&nbsp;</p>
+        <p class="Brodtext">&nbsp;</p>
+
+        <h2 class="Rubrik-br-dtext">SÄKRA OCH FLEXIBLA INFRASTRUKTURTJÄNSTER FRÅN SAFESPRING GER:</h2>
+        <ol class="list0 nls-None" id="u10403-26">
+          <li class="Brodtext">Reducerad tid att ta nya tjänster i produktion</li>
+          <li class="Brodtext">Mer effektivt utnyttjande av IT-resurser</li>
+          <li class="Brodtext">Flexibilitet att skala upp och ner din infrastruktur efter behov</li>
+          <li class="Brodtext">Inbyggda säkerhetsregler i plattformen som förhindrar dataläckage</li>
+          <li class="Brodtext">Säkerhetsfunktioner i plattformen som användaren kan styra själv</li>
+        </ol>
       </div>
 
       <!-- ??? -->
-      <div class="verticalspacer" data-offset-top="1244" data-content-above-spacer="1243" data-content-below-spacer="325"></div>
+      <a class="anchor_item colelem" id="safespring-molntjanster"></a>
+
+      <!-- Content Columns -->
+      <div class="clearfix colelem" id="pu26624">
+        <!-- group -->
+        <div class="rounded-corners clearfix grpelem" id="u26624">
+          <!-- column -->
+          <a class="nonblock nontext clip_frame colelem" id="u26631" href="safespring-backup.html">
+            <!-- svg -->
+            <img class="svg" id="u29148" src="images/safespring_backup_symbol.svg?crc=3923019426" width="135" height="113"
+              alt="" data-mu-svgfallback="images/safespring_backup_symbol_poster_.png?crc=3987467584" />
+          </a>
+          <div class="clearfix colelem" id="u11363-8">
+            <!-- content -->
+            <h2 class="Rubrik-br-dtext" id="u11363-4">
+              <a class="nonblock" href="safespring-backup.html">safespring
+                <span id="u11363-2">backup</span>
+              </a>
+            </h2>
+            <p class="Brodtext">Med Safesprings molnbaserad backuptjänst behöver du inte investera i egen hård- eller mjukvara. Tjänsten konsumeras
+              över internet och du betalar bara för den mängd data som sparas i tjänsten.</p>
+          </div>
+          <a class="nonblock nontext rounded-corners clearfix colelem" id="u11351-4" href="safespring-backup.html">
+            <!-- content -->
+            <p class="rundknapp" id="u11351-2">LÄS MER om backup</p>
+          </a>
+        </div>
+
+        <div class="rounded-corners clearfix grpelem" id="u26638">
+          <!-- column -->
+          <a class="nonblock nontext clip_frame colelem" id="u26659" href="safespring-storage.html">
+            <!-- svg -->
+            <img class="svg" id="u26655" src="images/safespring_storage_symbol.svg?crc=3784456658" width="135" height="113"
+              alt="" data-mu-svgfallback="images/safespring_storage_symbol_poster_.png?crc=3945040809" />
+          </a>
+          <div class="clearfix colelem" id="u11366-8">
+            <!-- content -->
+            <h2 class="Rubrik-br-dtext" id="u11366-4">
+              <a class="nonblock" href="safespring-storage.html">Safespring
+                <span id="u11366-2">storage</span>
+              </a>
+            </h2>
+            <p class="Brodtext">Safesprings molnbaserade lagring finns i tre olika utförande och är baserad på den marknadsledande lagringsteknologin
+              Ceph. Tjänsten levereras ifrån säkra datahallar med hög tillgänglighet.</p>
+          </div>
+          <a class="nonblock nontext rounded-corners clearfix colelem" id="u11354-4" href="safespring-storage.html">
+            <!-- content -->
+            <p class="rundknapp" id="u11354-2">LÄS MER om storage</p>
+          </a>
+        </div>
+
+        <div class="rounded-corners clearfix grpelem" id="u26641">
+          <!-- column -->
+          <a class="nonblock nontext clip_frame colelem" id="u26648" href="safespring-compute.html">
+            <!-- svg -->
+            <img class="svg" id="u26644" src="images/safespring_compute_symbol.svg?crc=99232182" width="135" height="113"
+              alt="" data-mu-svgfallback="images/safespring_compute_symbol_poster_.png?crc=436981732" />
+          </a>
+          <div class="clearfix colelem" id="u11369-8">
+            <!-- content -->
+            <h2 class="Rubrik-br-dtext" id="u11369-4">
+              <a class="nonblock" href="safespring-compute.html">&nbsp;safespring
+                <span id="u11369-2">compute</span>
+              </a>
+            </h2>
+            <p class="Brodtext">&nbsp;Med Safesprings molnbaserade infrastrukturtjänst kan du skala upp och ner din infrastruktur efter behov.
+              Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal.</p>
+          </div>
+          <a class="nonblock nontext rounded-corners clearfix colelem" id="u11357-4" href="safespring-compute.html">
+            <!-- content -->
+            <p class="rundknapp" id="u11357-2">LÄS MER om compute</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- ??? -->
+      <div class="verticalspacer" data-offset-top="1636" data-content-above-spacer="1635" data-content-below-spacer="325"></div>
       
       <!-- Footer -->
       {{ partial "footer-default.html" . }}
     </div>
   </div>
-  
-  <!-- Other scripts -->
-  <script type="text/javascript">
-    // Decide weather to suppress missing file error or not based on preference setting
-    var suppressMissingFileError = false
-  </script>
 
   <script type="text/javascript">
     window.Muse.assets.check = function(d) {
@@ -172,7 +234,7 @@
                     Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) {
                         return $(elem).museMenu();
                     }); /* unifiedNavBar */
-                    $('#u27344').registerBackgroundPositionScrollEffect([{
+                    $('#u27255').registerBackgroundPositionScrollEffect([{
                         "in": [-Infinity, -100],
                         "speed": [0, 0.8]
                     }, {
@@ -201,7 +263,6 @@
     };
   </script>
 
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=3951022091" type="text/javascript" async data-main="scripts/museconfig.js?crc=474374037" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  {{ partial "other-scripts.html" . }}
 </body>
 </html>
