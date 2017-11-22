@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Site Title changes according to current page *** -->
+    <!-- Site Title changes according to current page -->
     <title>Safespring | 
         {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
         {{ if .Params.heading }}
@@ -14,12 +14,12 @@
     <meta http-equiv="Content-type" content="html;charset=UTF-8" />
     <meta name="generator" content="2017.0.4.363" />
     <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
-    <!-- Description changes according to current page *** -->
+    <!-- Description changes according to current page -->
     <meta name="description" content="{{ .Site.Params.meta.description }}"/>
 
     {{ partial "ridirect.html" . }}
 
-    <!-- Subpage changes based on current page *** -->
+    <!-- Subpage changes based on current page -->
     {{ partial "alternate-css.html" . }}
     <link rel="shortcut icon" href={{ "img/safespring-master-start-favicon.ico?crc=4142707070" | relURL }} />
 
@@ -34,9 +34,9 @@
     <![endif]-->
     <!--HTML Widget code-->
 
-    <!-- Custom Head HTML ***-->
-    {{ if eq $.Params.title "Safespring | Säkra molntjänster" }}
-    {{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+    <!-- Custom Head HTML -->
+    {{ if eq $.Params.title "Säkra molntjänster" }}
+    {{ else if eq $.Params.title "Kontakta oss" }}
     {{ else }}
         <style>
             .sidebar.nano.nano - pane {
@@ -46,8 +46,8 @@
         </style>
     {{ end }}
     
-    <!-- Tack ***-->
-    {{ if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+    <!-- Tack -->
+    {{ if eq $.Params.title "Tack för ditt meddelande" }}
         <style>
             .hexigon {
                 -webkit - transition: all .2 s ease .0 s; -
@@ -81,6 +81,7 @@
         </style>
     {{ end }}
     
+    <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -98,32 +99,32 @@
         })(window, document, 'script', 'dataLayer', 'GTM-TXLJWD7');
     </script>
 
-    <!-- Script changes according to current page *** -->
-    {{ if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst"}}
+    <!-- Script changes according to current page -->
+    {{ if eq $.Params.title "Chalmers erfarenheter av backup som tjänst"}}
         <style>
             #u15067 { 
                 z-index:-1
             }
         </style>
-    {{ else if eq $.Params.title "Safespring | Pris" }}
+    {{ else if eq $.Params.title "Pris" }}
         <style>
             #u15067 { 
                 z-index:-1
             }
         </style>
-    {{ else if eq $.Params.title "Safespring | Säkra molntjänster" }}
+    {{ else if eq $.Params.title "Säkra molntjänster" }}
         <style>
             #u15072 { 
                 z-index:-1
             }
         </style>
-    {{ else if eq $.Params.title "Safespring | Kontakta oss" }}
+    {{ else if eq $.Params.title "Kontakta oss" }}
         <style>
             #u15072 { 
                 z-index:-1
             }
         </style>
-    {{ else if eq $.Params.title "Safespring | Tack för ditt meddelande" }}
+    {{ else if eq $.Params.title "Tack för ditt meddelande" }}
         <style>
             #u15072 { 
                 z-index:-1
@@ -136,24 +137,3 @@
             }
         </style>
     {{ end }}
-
-    {{ if eq $.Params.title "Safespring | Chalmers erfarenheter av backup som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Kundreferenser" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Om oss" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Backup som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Infrastruktur som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Lagring som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Testa backup som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Testa infrastruktur som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ else if eq $.Params.title "Safespring | Testa lagring som tjänst" }}
-        {{ partial "alternate-styles.html" . }}
-    {{ end }}
-</head>

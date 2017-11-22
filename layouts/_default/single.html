@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+</head>
+
+<body>
+    <div class="main">
+        {{ partial "header.html" . }}
+        
+        <article class="post">
+            <h1 class="title">{{ .Title }}</h1>
+            <div class="content">{{ .Content }}</div>
+            <div class="meta">
+            {{ if .Params.showthedate }}
+                {{ .Date.Format "Jan 2, 2006" }}
+            {{ end }}
+            {{ partial "tags.html" . }}
+            </div>
+        </article>
+        
+        {{ partial "footer.html" . }}
+    </div> <!-- main end -->
+</body>
+</html>

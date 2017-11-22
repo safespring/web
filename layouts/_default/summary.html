@@ -1,0 +1,9 @@
+<article class="post-preview">
+    <h2 class="title">
+        <a href='{{ .Permalink }}'> {{ .Title }}</a>
+    </h2>
+    <div class="summary"> {{ .Summary }} </div>
+    <div class="date">
+        {{ if .Params.showthedate }} {{ .Date.Format "Jan 2, 2006" }} {{ end }}
+    </div>
+</article>
