@@ -1,5 +1,4 @@
 {{ partial "head.html" . }}
-</head>
 
 <body>
     {{ if eq $.Params.title "Aktuellt" }}
@@ -34,7 +33,7 @@
         {{ partial "tjanster.html" . }}
     {{ else }}
         <div class="main">
-            {{ partial "header-default.html" . }}
+            {{ partial "header.html" . }}
             
             <article class="post">
                 <h1 class="title">{{ .Title }}</h1>
@@ -47,7 +46,7 @@
                 </div>
             </article>
             
-            {{ partial "footer-default.html" . }}
+            {{ partial "footer.html" . }}
         </div> <!-- main end -->
     {{ end }}    
 </body>

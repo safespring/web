@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
 <head>
     <!-- Site Title changes according to current page -->
-    <title>Safespring | 
-        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    <title>
+        Safespring | 
         {{ if .Params.heading }}
-            {{ .Params.heading }}
-        {{ else }}
             {{ .Title }}
+        {{ else }}
+            Säkra molntjänster
         {{ end }}
     </title>
 
@@ -17,123 +17,23 @@
     <!-- Description changes according to current page -->
     <meta name="description" content="{{ .Site.Params.meta.description }}"/>
 
-    {{ partial "ridirect.html" . }}
+    <!-- Favicon -->
+    <link rel="favicon" href={{ "/img/safespring-master-start-favicon.ico?crc=4142707070" | relURL }} />
 
-    <!-- Subpage changes based on current page -->
-    {{ partial "alternate-css.html" . }}
-    <link rel="shortcut icon" href={{ "img/safespring-master-start-favicon.ico?crc=4142707070" | relURL }} />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="css" href={{ "css/site_global.css?crc=530242890" | relURL }} />
-    <link rel="stylesheet" type="css" href={{ "css/master_safespring-master-start.css?crc=127627378" | relURL }} />
-    <link rel="stylesheet" type="css" href={{ "css/index.css?crc=4147948090" | relURL }} id="pagesheet" />
+    <link rel="stylesheet" href={{ "/css/main.css" | relURL }} />
 
-    <!-- JS includes -->
-    <!--[if lt IE 9]>
-    <script src={{ "js/html5shiv.js?crc=4241844378" | relURL }} type="javascript"></script>
-    <![endif]-->
-    <!--HTML Widget code-->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,600|Montserrat" rel="stylesheet">
 
-    <!-- Custom Head HTML -->
-    {{ if eq $.Params.title "Säkra molntjänster" }}
-    {{ else if eq $.Params.title "Kontakta oss" }}
-    {{ else }}
-        <style>
-            .sidebar.nano.nano - pane {
-                width: 4 px!important;
-                top: 60 px!important;
-            }
-        </style>
+    <!-- RSS -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
     {{ end }}
-    
-    <!-- Tack -->
-    {{ if eq $.Params.title "Tack för ditt meddelande" }}
-        <style>
-            .hexigon {
-                -webkit - transition: all .2 s ease .0 s; -
-                moz - transition: all .2 s ease .0 s; -
-                o - transition: all .2 s ease .0 s;
-                transition: all .2 s ease .0 s;
-            }
-        
-            span {
-                -webkit - transition: all .2 s ease .0 s; -
-                moz - transition: all .2 s ease .0 s; -
-                o - transition: all .2 s ease .0 s;
-                transition: all .2 s ease .0 s;
-            }
-        </style>
-        
-        <style >
-            .hexigon_arrow {
-                -webkit - transition: all .2 s ease .1 s; -
-                moz - transition: all .2 s ease .1 s; -
-                o - transition: all .2 s ease .1 s;
-                transition: all .2 s ease .1 s;
-            }
-        
-            span {
-                -webkit - transition: all .2 s ease .1 s; -
-                moz - transition: all .2 s ease .1 s; -
-                o - transition: all .2 s ease .1 s;
-                transition: all .2 s ease .1 s;
-            }
-        </style>
-    {{ end }}
-    
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TXLJWD7');
-    </script>
 
-    <!-- Script changes according to current page -->
-    {{ if eq $.Params.title "Chalmers erfarenheter av backup som tjänst"}}
-        <style>
-            #u15067 { 
-                z-index:-1
-            }
-        </style>
-    {{ else if eq $.Params.title "Pris" }}
-        <style>
-            #u15067 { 
-                z-index:-1
-            }
-        </style>
-    {{ else if eq $.Params.title "Säkra molntjänster" }}
-        <style>
-            #u15072 { 
-                z-index:-1
-            }
-        </style>
-    {{ else if eq $.Params.title "Kontakta oss" }}
-        <style>
-            #u15072 { 
-                z-index:-1
-            }
-        </style>
-    {{ else if eq $.Params.title "Tack för ditt meddelande" }}
-        <style>
-            #u15072 { 
-                z-index:-1
-            }
-        </style>
-    {{ else }}
-        <style>
-            #u15919 {
-                z-index:-1
-            }
-        </style>
-    {{ end }}
+    {{ partial "g-tag-manager.html" . }}
+</head>

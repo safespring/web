@@ -3,7 +3,7 @@
 
 <body>
   <div class="main">
-  {{ partial "header.html" . }}
+  {{ partial "header-default.html" . }}
     <div class="terms">
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms }}
@@ -14,7 +14,7 @@
       </div> <!-- term -->
     {{ end }}
     </div> <!-- terms -->
-  {{ partial "footer.html" . }}
+  {{ partial "footer-default.html" . }}
   </div> <!-- main end -->
 </body>
 </html>

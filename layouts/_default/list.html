@@ -3,7 +3,7 @@
 
 <body>
   <div class="main">
-  {{ partial "header.html" . }}
+  {{ partial "header-default.html" . }}
   <div class="content-list">
   {{ range .Data.Pages.GroupByDate "2006" }}
   <div class="content-list-date">{{ .Key }}</div>
@@ -12,7 +12,7 @@
     {{ end }}
   {{ end }}
   </div>
-  {{ partial "footer.html" . }}
+  {{ partial "footer-default.html" . }}
   </div> <!-- main end -->
 </body>
 </html>

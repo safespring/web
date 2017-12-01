@@ -1,1 +1,276 @@
-#u15072{border-width:0px;border-color:transparent;background-color:transparent;}#u15057{border-color:#F9650E;background-color:#19608C;}.Format-2{border-width:0px;border-color:#000000;background-color:transparent;}#u16869{border-width:0px;border-color:transparent;}#u16869:hover{border-style:solid;border-color:#F9650E;border-width:0px 0px 2px;}#u16870-4{border-width:0px;border-color:transparent;background-color:transparent;line-height:19px;font-family:'__Hind SemiBold_5';font-weight:600;}#u16885{border-style:solid;border-color:#333333;background-color:#333333;border-width:0px 0px 2px;}#u16885:hover{border-color:#F9650E;background-color:#333333;}#u16887-5{background-color:transparent;color:#FFFFFF;line-height:17px;font-size:14px;font-family:'__Hind SemiBold_5';font-weight:600;}#u16887-3{padding-left:12px;padding-top:12px;}#u16876{border-style:solid;border-color:#333333;background-color:#333333;border-width:0px 0px 2px;}#u16876:hover{border-color:#F9650E;background-color:#333333;}#u16879-5{background-color:transparent;color:#FFFFFF;line-height:17px;font-size:14px;font-family:'__Hind SemiBold_5';font-weight:600;}#u16879-3{padding-left:12px;padding-top:12px;}#u16890{border-style:solid;border-color:#333333;background-color:#333333;border-width:0px 0px 2px;}#u16890:hover{border-color:#F9650E;background-color:#333333;}#u16885.MuseMenuActive,#u16876.MuseMenuActive,#u16890.MuseMenuActive{border-color:#19608C;background-color:#19608C;}#u16892-5{background-color:transparent;color:#FFFFFF;line-height:17px;font-size:14px;font-family:'__Hind SemiBold_5';font-weight:600;}#u16892-3{padding-left:12px;padding-top:12px;}#u16887-2,#u16879-2,#u16892-2{color:#F9650E;}#u16869.MuseMenuActive,#u17705{border-width:0px;border-color:transparent;}#u17705:hover{border-style:solid;border-color:#F9650E;border-width:0px 0px 2px;}#u17707-4{border-width:0px;border-color:transparent;background-color:transparent;line-height:19px;font-family:'__Hind SemiBold_5';font-weight:600;}#u17705.MuseMenuActive,#u16911{border-width:0px;border-color:transparent;}#u16911:hover{border-style:solid;border-color:#F9650E;border-width:0px 0px 2px;}#u16914-4{border-width:0px;border-color:transparent;background-color:transparent;line-height:19px;font-family:'__Hind SemiBold_5';font-weight:600;}#u16911.MuseMenuActive,#u16899{border-width:0px;border-color:transparent;}#u16899:hover{border-style:solid;border-color:#F9650E;border-width:0px 0px 2px;}#u16900-4{border-width:0px;border-color:transparent;background-color:transparent;line-height:19px;font-family:'__Hind SemiBold_5';font-weight:600;}#u16899.MuseMenuActive,#u16906{border-width:0px;border-color:transparent;}#u16906:hover{border-style:solid;border-color:#F9650E;border-width:0px 0px 2px;}#u16906.MuseMenuActive{border-width:0px;border-color:transparent;}#u16907-4{border-width:0px;border-color:transparent;background-color:transparent;line-height:19px;font-family:'__Hind SemiBold_5';font-weight:600;}.MenuItem{cursor:pointer;}#u29205{opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url("../images/1c_safespring_logotyp_vit_rgb.png?crc=136408079") no-repeat left top;background-size:contain;}#u14983,#u14996{background-color:#19608C;}#u27192{opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url("../images/1c_safespring_logotyp_vit_rgb.png?crc=136408079") no-repeat center center;background-size:contain;}.hidpi #u29205,.hidpi #u27192{background-image:url("../images/1c_safespring_logotyp_vit_rgb_2x.png?crc=3947763373");}#u27191,#u27188{background-color:#17EF5F;}#u27193-4,#u27194-4,#u27195-4,#u27196-4{background-color:transparent;line-height:17px;}#u16868,#u16873,#u16874,#u16882,#u16875,#u16889,#u17704,#u16910,#u16896,#u16903,#u27189-6,#u27190-6,#u27187-14,#u27186-14{background-color:transparent;}
+#u15072 {
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#u15057 {
+    border-color: #F9650E;
+    background-color: #19608C;
+}
+
+.Format-2 {
+    border-width: 0px;
+    border-color: #000000;
+    background-color: transparent;
+}
+
+#u16869 {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+#u16869:hover {
+    border-style: solid;
+    border-color: #F9650E;
+    border-width: 0px 0px 2px;
+}
+
+#u16870-4 {
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    line-height: 19px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u16885 {
+    border-style: solid;
+    border-color: #333333;
+    background-color: #333333;
+    border-width: 0px 0px 2px;
+}
+
+#u16885:hover {
+    border-color: #F9650E;
+    background-color: #333333;
+}
+
+#u16887-5 {
+    background-color: transparent;
+    color: #FFFFFF;
+    line-height: 17px;
+    font-size: 14px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u16887-3 {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+#u16876 {
+    border-style: solid;
+    border-color: #333333;
+    background-color: #333333;
+    border-width: 0px 0px 2px;
+}
+
+#u16876:hover {
+    border-color: #F9650E;
+    background-color: #333333;
+}
+
+#u16879-5 {
+    background-color: transparent;
+    color: #FFFFFF;
+    line-height: 17px;
+    font-size: 14px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u16879-3 {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+#u16890 {
+    border-style: solid;
+    border-color: #333333;
+    background-color: #333333;
+    border-width: 0px 0px 2px;
+}
+
+#u16890:hover {
+    border-color: #F9650E;
+    background-color: #333333;
+}
+
+#u16885.MuseMenuActive,
+#u16876.MuseMenuActive,
+#u16890.MuseMenuActive {
+    border-color: #19608C;
+    background-color: #19608C;
+}
+
+#u16892-5 {
+    background-color: transparent;
+    color: #FFFFFF;
+    line-height: 17px;
+    font-size: 14px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u16892-3 {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+#u16887-2,
+#u16879-2,
+#u16892-2 {
+    color: #F9650E;
+}
+
+#u16869.MuseMenuActive,
+#u17705 {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+#u17705:hover {
+    border-style: solid;
+    border-color: #F9650E;
+    border-width: 0px 0px 2px;
+}
+
+#u17707-4 {
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    line-height: 19px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u17705.MuseMenuActive,
+#u16911 {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+#u16911:hover {
+    border-style: solid;
+    border-color: #F9650E;
+    border-width: 0px 0px 2px;
+}
+
+#u16914-4 {
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    line-height: 19px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u16911.MuseMenuActive,
+#u16899 {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+#u16899:hover {
+    border-style: solid;
+    border-color: #F9650E;
+    border-width: 0px 0px 2px;
+}
+
+#u16900-4 {
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    line-height: 19px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+#u16899.MuseMenuActive,
+#u16906 {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+#u16906:hover {
+    border-style: solid;
+    border-color: #F9650E;
+    border-width: 0px 0px 2px;
+}
+
+#u16906.MuseMenuActive {
+    border-width: 0px;
+    border-color: transparent;
+}
+
+#u16907-4 {
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    line-height: 19px;
+    font-family: '__Hind SemiBold_5';
+    font-weight: 600;
+}
+
+.MenuItem {
+    cursor: pointer;
+}
+
+#u29205 {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    /* background: transparent url('/img/1c_safespring_logotyp_vit_rgb.png?crc=136408079') no-repeat left top;
+    background-size: contain; */
+}
+
+#u14983,
+#u14996 {
+    background-color: #19608C;
+}
+
+#u27192 {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    /* background: transparent url('/img/1c_safespring_logotyp_vit_rgb.png?crc=136408079') no-repeat center center;
+    background-size: contain; */
+}
+
+/* .hidpi #u29205,
+.hidpi #u27192 {
+    background-image: url('/img/1c_safespring_logotyp_vit_rgb_2x.png?crc=3947763373');
+} */
+
+#u27191,
+#u27188 {
+    background-color: #17EF5F;
+}
+
+#u27193-4,
+#u27194-4,
+#u27195-4,
+#u27196-4 {
+    background-color: transparent;
+    line-height: 17px;
+}
+
+#u16868,
+#u16873,
+#u16874,
+#u16882,
+#u16875,
+#u16889,
+#u17704,
+#u16910,
+#u16896,
+#u16903,
+#u27189-6,
+#u27190-6,
+#u27187-14,
+#u27186-14 {
+    background-color: transparent;
+}
