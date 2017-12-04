@@ -1,53 +1,34 @@
 {{ partial "head.html" . }}
 
 <body>
-    {{ if eq $.Params.title "Aktuellt" }}
-        {{ partial "aktuellt.html" . }}
-    {{ else if eq $.Params.title "Chalmers erfarenheter av backup som tjänst" }}
-        {{ partial "chalmers.html" . }}
-    {{ else if eq $.Params.title "Kontakta oss" }}
-        {{ partial "kontakt.html" . }}
-    {{ else if eq $.Params.title "Kundreferenser" }}
-        {{ partial "kundreferenser.html" . }}
-    {{ else if eq $.Params.title "Om oss" }}
-        {{ partial "om-oss.html" . }}
-    {{ else if eq $.Params.title "Pris" }}
-        {{ partial "pris.html" . }}
-    {{ else if eq $.Params.title "Backup som tjänst" }}
-        {{ partial "safespring-backup.html" . }} 
-    {{ else if eq $.Params.title "Infrastruktur som tjänst" }}
-        {{ partial "safespring-compute.html" . }} 
-    {{ else if eq $.Params.title "Lagring som tjänst" }}
-        {{ partial "safespring-storage.html" . }} 
-    {{ else if eq $.Params.title "Support" }}
-        {{ partial "support.html" . }} 
-    {{ else if eq $.Params.title "Tack för ditt meddelande" }}
-        {{ partial "tack.html" . }} 
-    {{ else if eq $.Params.title "Testa backup som tjänst" }}
-        {{ partial "testa-safespring-backup.html" . }} 
-    {{ else if eq $.Params.title "Testa infrastruktur som tjänst" }}
-        {{ partial "testa-safespring-compute.html" . }}
-    {{ else if eq $.Params.title "Testa lagring som tjänst" }}
-        {{ partial "testa-safespring-storage.html" . }}
-    {{ else if eq $.Params.title "Våra tjänster" }}
-        {{ partial "tjanster.html" . }}
-    {{ else }}
-        <div class="main">
-            {{ partial "header.html" . }}
-            
-            <article class="post">
-                <h1 class="title">{{ .Title }}</h1>
-                <div class="content">{{ .Content }}</div>
-                <div class="meta">
-                {{ if .Params.showthedate }}
-                    {{ .Date.Format "Jan 2, 2006" }}
-                {{ end }}
-                {{ partial "tags.html" . }}
-                </div>
-            </article>
-            
-            {{ partial "footer.html" . }}
-        </div> <!-- main end -->
-    {{ end }}    
+{{ if eq $.Params.title "Aktuellt" }}
+    {{ partial "aktuellt.html" . }}
+{{ else if eq $.Params.title "Chalmers erfarenheter av backup som tjänst" }}
+    {{ partial "chalmers.html" . }}
+{{ else if eq $.Params.title "Kontakta oss" }}
+    {{ partial "kontakt.html" . }}
+{{ else if eq $.Params.title "Kundreferenser" }}
+    {{ partial "kundreferenser.html" . }}
+{{ else if eq $.Params.title "Om oss" }}
+    {{ partial "om-oss.html" . }}
+{{ else }}
+    <div class="main">
+        {{ partial "header.html" . }}
+        
+        <article class="post">
+            <h1 class="title">{{ .Title }}</h1>
+            <div class="content">{{ .Content }}</div>
+            <div class="meta">
+            {{ if .Params.showthedate }}
+                {{ .Date.Format "Jan 2, 2006" }}
+            {{ end }}
+            {{ partial "tags.html" . }}
+            </div>
+        </article>
+        
+        {{ partial "footer.html" . }}
+    </div> <!-- main end -->
+{{ end }}
+
 </body>
 </html>

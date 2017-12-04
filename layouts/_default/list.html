@@ -1,18 +1,14 @@
 {{ partial "head.html" . }}
-</head>
 
 <body>
   <div class="main">
-  {{ partial "header-default.html" . }}
-  <div class="content-list">
-  {{ range .Data.Pages.GroupByDate "2006" }}
-  <div class="content-list-date">{{ .Key }}</div>
-    {{ range .Pages }}
-    {{ .Render "li"}}
-    {{ end }}
-  {{ end }}
+    {{ partial "header.html" . }}
+    <div class="content-list">
+      {{ range .Data.Pages.GroupByDate "2006" }}
+      <div class="content-list-date">{{ .Key }}</div>
+      {{ range .Pages }} {{ .Render "li"}} {{ end }} {{ end }}
+    </div>
+    {{ partial "footer.html" . }}
   </div>
-  {{ partial "footer-default.html" . }}
-  </div> <!-- main end -->
 </body>
 </html>

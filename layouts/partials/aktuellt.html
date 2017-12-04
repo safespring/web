@@ -1,195 +1,22 @@
-{{ partial "head.html" . }}
+<!-- Google Tag Manager -->
+{{ partial "g-tag-manager.html" . }}
 
-<body>
-    <!-- Heading, Nav, Content, Footer -->
-    <div class="clearfix" id="page">
-        <!-- column -->
-        <div class="position_content" id="page_position_content">
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
 
-        <!-- Heading Text -->
-        <div class="clearfix colelem" id="pu16069">
-            <!-- group -->
-            <div class="browser_width grpelem" id="u16069-bw">
-            <div id="u16069">
-                <!-- simple frame -->
-            </div>
-            </div>
-            <div class="browser_width grpelem" id="u27344-bw">
-            <div class="museBGSize" id="u27344">
-                <!-- group -->
-                <div class="clearfix" id="u27344_align_to_page">
-                <div class="mast_hd rubriksida clearfix grpelem" id="u15587-4">
-                    <!-- content -->
-                    <h1>Aktuellt</h1>
-                </div>
-                <div class="Underrubrik-sida clearfix grpelem" id="u15594-6">
-                    <!-- content -->
-                    <p>Med Safespring får du en effektiv modell för leverans
-                    <br/>av tjänst utan att förlora kontroll över din data.</p>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <!-- Header Nav -->
-        {{ partial "header-default.html" . }}
-
-        <!-- Content -->
-        <div class="clearfix colelem" id="u29458-8">
-            <!-- content -->
-            <p id="u29458-2">2017-08-28</p>
-            <p id="u29458-4">Safespring lanserar ny webb</p>
-            <p id="u29458-6">Safespring har nu lanserat en ny webb för att tydligare beskriva vårt erbjudande och våra tjänster. Sidan kommer
-            att uppdateras kontinuerligt för att spegla våra lanseringar och nyheter.</p>
-        </div>
-        <div class="clearfix colelem" id="u29521-14">
-            <!-- content -->
-            <p id="u29521-2">2017-08-28</p>
-            <p id="u29521-4">Uppgradering av Safesprings Compute plattform</p>
-            <p id="u29521-6">I enlighet med Safesprings mål att ligga i fas med OpenStacks officiella versioner (med en fördröjning på 3 månader
-            för att säkerställa stabilitet) är nu arbetet med att uppgradera till den senaste versionen Ocata i full gång.
-            Uppgraderingen förväntas förbättra integration med lagringsplattformen Ceph vilket kommer att göra ett antal diskberoende
-            operationer snabbare.</p>
-            <p class="Orange-text" id="u29521-12">Detaljer kring själva uppgraderingen finns att läsa på
-            <span>
-                <a class="nonblock" href="https://status.safespring.com" target="_blank">https://status.safespring.com</a>
-            </span>.</p>
-        </div>
-        <div class="clearfix colelem" id="u29461-10">
-            <!-- content -->
-            <p id="u29461-2">2017-08-28</p>
-            <p id="u29461-4">Safespring ser ökat behov av gemensam lagringsplattform</p>
-            <p id="u29461-6">I och med ökade datamängder inom alla discipliner får lärosäten och institutioner större och större behov av att
-            på ett smidigt sätt kunna lagra data. Fler och fler projekt driver i dag data i Petabyte-skala vilket leder till
-            stora kostnader vid uppsättning av interna lagringslösningar. Safespring har en S3-kompatibel lagringslösning som
-            kan tjäna som en gemensam plattform för projekt inom forskningsvärlden som driver mycket data.</p>
-            <p id="u29461-8">Plattformen kan användas tillsammans med Safespring Compute, för att bearbeta data, eller som en arkiveringsplattform
-            dit data skickas när det har behandlats lokalt. S3 är baserat på HTTPS vilket gör det möjligt för forskare att
-            enkelt, säkert och kostnadseffektivt kunna tillhandahålla rådata och resultat till intressenter. Datat nås via
-            adresser som kan läggas in som referenser i publikationer eller metadatatjänster för publikationer bakom inloggninsportaler
-            för ytterligare kontroll.</p>
-        </div>
-
-        <!-- ??? -->
-        <div class="verticalspacer" data-offset-top="1244" data-content-above-spacer="1243" data-content-below-spacer="325"></div>
-        
-        <!-- Footer -->
-        {{ partial "footer-default.html" . }}
-        </div>
+<!-- HEADING -->
+<div class="heading-sub">
+    <div class="heading-content">
+        <h1>Aktuellt</h1>
+        <p>Med Safespring får du en effektiv modell för leverans
+        <br/>av tjänst utan att förlora kontroll över din data.</p>
     </div>
+</div>
 
-    <script type="text/javascript">
-        window.Muse.assets.check = function(d) {
-            if (!window.Muse.assets.checked) {
-                window.Muse.assets.checked = !0;
-                var b = {},
-                    c = function(a, b) {
-                        if (window.getComputedStyle) {
-                            var c = window.getComputedStyle(a, null);
-                            return c && c.getPropertyValue(b) || c && c[b] || ""
-                        }
-                        if (document.documentElement.currentStyle) return (c = a.currentStyle) && c[b] || a.style && a.style[b] || "";
-                        return ""
-                    },
-                    a = function(a) {
-                        if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
-                        if (a.match(/^\#/)) return parseInt(a.substr(1),
-                            16);
-                        return 0
-                    },
-                    g = function(g) {
-                        for (var f = document.getElementsByTagName("link"), h = 0; h < f.length; h++)
-                            if ("text/css" == f[h].type) {
-                                var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);
-                                if (!i || !i[1] || !i[2]) break;
-                                b[i[1]] = i[2]
-                            }
-                        f = document.createElement("div");
-                        f.className = "version";
-                        f.style.cssText = "display:none; width:1px; height:1px;";
-                        document.getElementsByTagName("body")[0].appendChild(f);
-                        for (h = 0; h < Muse.assets.required.length;) {
-                            var i = Muse.assets.required[h],
-                                l = i.match(/([\w\-\.]+)\.(\w+)$/),
-                                k = l && l[1] ?
-                                l[1] : null,
-                                l = l && l[2] ? l[2] : null;
-                            switch (l.toLowerCase()) {
-                                case "css":
-                                    k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
-                                    f.className += " " + k;
-                                    k = a(c(f, "color"));
-                                    l = a(c(f, "backgroundColor"));
-                                    k != 0 || l != 0 ? (Muse.assets.required.splice(h, 1), "undefined" != typeof b[i] && (k != b[i] >>> 24 || l != (b[i] & 16777215)) && Muse.assets.outOfDate.push(i)) : h++;
-                                    f.className = "version";
-                                    break;
-                                case "js":
-                                    h++;
-                                    break;
-                                default:
-                                    throw Error("Unsupported file type: " + l);
-                            }
-                        }
-                        d ? d().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
-                        f.parentNode.removeChild(f);
-                        if (Muse.assets.outOfDate.length || Muse.assets.required.length) f = "En del filer på servern kanske saknas eller är felaktiga. Rensa webbläsarens cacheminne och försök igen. Kontakta webbplatsadministratören om problemet kvarstår.", g && Muse.assets.outOfDate.length && (f += "\nOut of date: " + Muse.assets.outOfDate.join(",")), g && Muse.assets.required.length && (f += "\nMissing: " + Muse.assets.required.join(",")), suppressMissingFileError ? (f += "\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.", console.log(f)) : alert(f)
-                    };
-                location && location.search && location.search.match && location.search.match(/muse_debug/gi) ?
-                    setTimeout(function() {
-                        g(!0)
-                    }, 5E3) : g()
-            }
-        };
-        var muse_init = function() {
-            require.config({
-                baseUrl: ""
-            });
-            require(["jquery", "museutils", "whatinput", "jquery.watch", "jquery.musepolyfill.bgsize", "jquery.musemenu", "jquery.scrolleffects"], function(d) {
-                var $ = d;
-                $(document).ready(function() {
-                    try {
-                        window.Muse.assets.check($); /* body */
-                        Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
-                        Muse.Utils.detectScreenResolution(); /* HiDPI screens */
-                        Muse.Utils.prepHyperlinks(true); /* body */
-                        Muse.Utils.resizeHeight('.browser_width'); /* resize height */
-                        Muse.Utils.requestAnimationFrame(function() {
-                            $('body').addClass('initialized');
-                        }); /* mark body as initialized */
-                        Muse.Utils.fullPage('#page'); /* 100% height page */
-                        Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) {
-                            return $(elem).museMenu();
-                        }); /* unifiedNavBar */
-                        $('#u27344').registerBackgroundPositionScrollEffect([{
-                            "in": [-Infinity, -100],
-                            "speed": [0, 0.8]
-                        }, {
-                            "in": [-100, Infinity],
-                            "speed": [0, 0.8]
-                        }]); /* scroll effect */
-                        $('#u15976').registerOpacityScrollEffect([{
-                            "in": [-Infinity, 35],
-                            "opacity": 0,
-                            "fade": 0
-                        }, {
-                            "in": [35, 35],
-                            "opacity": 0
-                        }, {
-                            "in": [35, Infinity],
-                            "opacity": 100,
-                            "fade": 34.5
-                        }]); /* scroll effect */
-                        Muse.Utils.showWidgetsWhenReady(); /* body */
-                        Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
-                    } catch (b) {
-                        if (b && "function" == typeof b.notify ? b.notify() : Muse.Assert.fail("Error calling selector function: " + b), false) throw b;
-                    }
-                })
-            })
-        };
-    </script>
+<!-- CONTENT -->
+<main class="content-main">
+    <h1>Paginator Placeholder</h1>
+</main>
 
-    {{ partial "other-scripts.html" . }}
-</body>
-</html>
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

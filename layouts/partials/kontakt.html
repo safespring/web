@@ -1,215 +1,45 @@
-{{ partial "head.html" . }}
+<!-- Google Tag Manager -->
+{{ partial "g-tag-manager.html" . }}
 
-<body>
-  <!-- Header Nav, Content, ???, Footer -->
-  <div class="clearfix" id="page">
-    <!-- Header Nav -->
-    {{ partial "header-index.html" . }}
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
 
-    <!-- Content -->
-    <div class="clearfix grpelem" id="pu12008-8">
-      <!-- column -->
-      <div class="clearfix colelem" id="u12008-8">
-        <!-- content -->
-        <p class="Br-dtext-vit" id="u12008-2">ADRESS</p>
-        <p class="Br-dtext-vit" id="u12008-6">Smidesvägen 12
-          <br/>171 41 Solna</p>
-      </div>
-      <div class="size_fixed colelem" id="u11948">
-        <!-- custom html -->
-        <iframe class="actAsDiv" style="width:100%;height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-          src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=Smidesv%C3%A4gen%2012&amp;aq=0&amp;ie=UTF8&amp;t=p&amp;z=14&amp;iwloc= &amp;output=embed"></iframe>
-      </div>
-    </div>
-    <div class="clearfix grpelem" id="pu12014-8">
-      <!-- column -->
-      <div class="clearfix colelem" id="u12014-8">
-        <!-- content -->
-        <p class="Br-dtext-vit" id="u12014-2">KONTAKT</p>
-        <p class="Br-dtext-vit" id="u12014-6">
-          <span id="u12014-5">
-            <a class="nonblock" href="mailto:info@safespring.com">info@safespring.com</a>
-          </span>
-        </p>
-      </div>
-      <form class="form-grp clearfix colelem" id="widgetu11953" method="post" enctype="multipart/form-data" action="php/form-u11953.php">
-        <!-- none box -->
-        <div class="fld-grp clearfix grpelem" id="widgetu11959" data-required="true">
-          <!-- none box -->
-          <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u11961-4">
-            <!-- content -->
-            <input class="wrapped-input" type="text" spellcheck="false" id="widgetu11959_input" name="custom_U11959" tabindex="1"
-            />
-            <label class="wrapped-input fld-prompt" id="widgetu11959_prompt" for="widgetu11959_input">
-              <span class="actAsPara">Ditt namn</span>
-            </label>
-          </span>
-        </div>
-        <div class="fld-grp clearfix grpelem" id="widgetu11965" data-required="true" data-type="email">
-          <!-- none box -->
-          <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u11967-4">
-            <!-- content -->
-            <input class="wrapped-input" type="email" spellcheck="false" id="widgetu11965_input" name="Email" tabindex="2"
-            />
-            <label class="wrapped-input fld-prompt" id="widgetu11965_prompt" for="widgetu11965_input">
-              <span class="actAsPara">Din epost</span>
-            </label>
-          </span>
-        </div>
-        <div class="clearfix grpelem" id="u11964-4">
-          <!-- content -->
-          <p>Skickar formuläret…</p>
-        </div>
-        <div class="clearfix grpelem" id="u11958-4">
-          <!-- content -->
-          <p>Servern påträffade ett fel.</p>
-        </div>
-        <div class="clearfix grpelem" id="u11969-4">
-          <!-- content -->
-          <p>Formuläret togs emot.</p>
-        </div>
-        <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u11963-4" type="submit" value="Skicka" tabindex="4">
-          <!-- content -->
-          <div style="margin-top:-14px;height:14px;">
-            <p>Skicka</p>
-          </div>
-        </button>
-        <div class="fld-grp clearfix grpelem" id="widgetu11954" data-required="false">
-          <!-- none box -->
-          <span class="fld-textarea actAsDiv clearfix grpelem" id="u11957-4">
-            <!-- content -->
-            <textarea class="wrapped-input" id="widgetu11954_input" name="custom_U11954" tabindex="3"></textarea>
-            <label class="wrapped-input fld-prompt" id="widgetu11954_prompt" for="widgetu11954_input">
-              <span class="actAsPara">Ditt meddelande</span>
-            </label>
-          </span>
-        </div>
-      </form>
+<!-- CONTENT -->
+<main class="content-main kon-main">
+  <div class="kontakt">
+    <!-- Address -->
+    <div class="adr">
+      <h3>ADRESS</h3>
+      <p>Smidesvägen 12
+      <br/>171 41 Solna</p>
     </div>
 
-    <!-- ??? -->
-    <div class="verticalspacer" data-offset-top="781" data-content-above-spacer="781" data-content-below-spacer="264"></div>
-    
-    <div class="clearfix grpelem" id="pu14983">
-      <!-- group -->
-      <div class="browser_width grpelem" id="u14983-bw">
-        <div id="u14983">
-          <!-- simple frame -->
-        </div>
-      </div>
-      
-      <!-- Footer -->
-      {{ partial "footer-index.html" . }}
+    <!-- Contact -->
+    <div class="cont">
+      <h3>KONTAKT</h3>
+      <a class="nonblock" href="mailto:info@safespring.com">info@safespring.com</a>
     </div>
+
+      <!-- Maps -->
+    <div class="map">
+      <iframe class="actAsDiv" style="width:100%;height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=Smidesv%C3%A4gen%2012&amp;aq=0&amp;ie=UTF8&amp;t=p&amp;z=14&amp;iwloc= &amp;output=embed"></iframe>
+    </div>
+
+    <!-- Form -->
+    <form class="form" method="post" enctype="multipart/form-data" action="php/form-u11953.php">
+      <input class="form-name" type="text" spellcheck="false" name="name" tabindex="1" placeholder="Ditt namn" required/>
+
+      <input class="form-email" type="email" spellcheck="false" name="email" tabindex="2" placeholder="Din epost" required/>
+
+      <textarea class="form-message" name="message" tabindex="3" placeholder="Ditt meddelande"></textarea>
+
+      <button class="skicka" type="submit" value="Skicka" tabindex="4">
+          <p>Skicka</p>
+      </button>
+    </form>
   </div>
+</main>
 
-  <script type="text/javascript">
-    window.Muse.assets.check = function(d) {
-        if (!window.Muse.assets.checked) {
-            window.Muse.assets.checked = !0;
-            var b = {},
-                c = function(a, b) {
-                    if (window.getComputedStyle) {
-                        var c = window.getComputedStyle(a, null);
-                        return c && c.getPropertyValue(b) || c && c[b] || ""
-                    }
-                    if (document.documentElement.currentStyle) return (c = a.currentStyle) && c[b] || a.style && a.style[b] || "";
-                    return ""
-                },
-                a = function(a) {
-                    if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
-                    if (a.match(/^\#/)) return parseInt(a.substr(1),
-                        16);
-                    return 0
-                },
-                g = function(g) {
-                    for (var f = document.getElementsByTagName("link"), h = 0; h < f.length; h++)
-                        if ("text/css" == f[h].type) {
-                            var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);
-                            if (!i || !i[1] || !i[2]) break;
-                            b[i[1]] = i[2]
-                        }
-                    f = document.createElement("div");
-                    f.className = "version";
-                    f.style.cssText = "display:none; width:1px; height:1px;";
-                    document.getElementsByTagName("body")[0].appendChild(f);
-                    for (h = 0; h < Muse.assets.required.length;) {
-                        var i = Muse.assets.required[h],
-                            l = i.match(/([\w\-\.]+)\.(\w+)$/),
-                            k = l && l[1] ?
-                            l[1] : null,
-                            l = l && l[2] ? l[2] : null;
-                        switch (l.toLowerCase()) {
-                            case "css":
-                                k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
-                                f.className += " " + k;
-                                k = a(c(f, "color"));
-                                l = a(c(f, "backgroundColor"));
-                                k != 0 || l != 0 ? (Muse.assets.required.splice(h, 1), "undefined" != typeof b[i] && (k != b[i] >>> 24 || l != (b[i] & 16777215)) && Muse.assets.outOfDate.push(i)) : h++;
-                                f.className = "version";
-                                break;
-                            case "js":
-                                h++;
-                                break;
-                            default:
-                                throw Error("Unsupported file type: " + l);
-                        }
-                    }
-                    d ? d().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
-                    f.parentNode.removeChild(f);
-                    if (Muse.assets.outOfDate.length || Muse.assets.required.length) f = "En del filer på servern kanske saknas eller är felaktiga. Rensa webbläsarens cacheminne och försök igen. Kontakta webbplatsadministratören om problemet kvarstår.", g && Muse.assets.outOfDate.length && (f += "\nOut of date: " + Muse.assets.outOfDate.join(",")), g && Muse.assets.required.length && (f += "\nMissing: " + Muse.assets.required.join(",")), suppressMissingFileError ? (f += "\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.", console.log(f)) : alert(f)
-                };
-            location && location.search && location.search.match && location.search.match(/muse_debug/gi) ?
-                setTimeout(function() {
-                    g(!0)
-                }, 5E3) : g()
-        }
-    };
-    var muse_init = function() {
-        require.config({
-            baseUrl: ""
-        });
-        require(["jquery", "museutils", "whatinput", "jquery.musemenu", "webpro", "jquery.watch"], function(d) {
-            var $ = d;
-            $(document).ready(function() {
-                try {
-                    window.Muse.assets.check($); /* body */
-                    Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
-                    Muse.Utils.detectScreenResolution(); /* HiDPI screens */
-                    Muse.Utils.prepHyperlinks(true); /* body */
-                    Muse.Utils.resizeHeight('.browser_width'); /* resize height */
-                    Muse.Utils.requestAnimationFrame(function() {
-                        $('body').addClass('initialized');
-                    }); /* mark body as initialized */
-                    Muse.Utils.fullPage('#page'); /* 100% height page */
-                    Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) {
-                        return $(elem).museMenu();
-                    }); /* unifiedNavBar */
-                    Muse.Utils.initWidget('#widgetu11953', ['#bp_infinity'], function(elem) {
-                        return new WebPro.Widget.Form(elem, {
-                            validationEvent: 'submit',
-                            errorStateSensitivity: 'high',
-                            fieldWrapperClass: 'fld-grp',
-                            formSubmittedClass: 'frm-sub-st',
-                            formErrorClass: 'frm-subm-err-st',
-                            formDeliveredClass: 'frm-subm-ok-st',
-                            notEmptyClass: 'non-empty-st',
-                            focusClass: 'focus-st',
-                            invalidClass: 'fld-err-st',
-                            requiredClass: 'fld-err-st',
-                            ajaxSubmit: true
-                        });
-                    }); /* #widgetu11953 */
-                    Muse.Utils.showWidgetsWhenReady(); /* body */
-                    Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
-                } catch (b) {
-                    if (b && "function" == typeof b.notify ? b.notify() : Muse.Assert.fail("Error calling selector function: " + b), false) throw b;
-                }
-            })
-        })
-    };
-  </script>
-
-  {{ partial "other-scripts.html" . }}
-</body>
-</html>
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

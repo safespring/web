@@ -5,8 +5,9 @@ author = "Safespring"
 copyright = ""
 
 
-# Posts per page
+# Pagination
 paginate = 10
+paginatePath = "blog"
 
 
 SectionPagesMenu = "main"
