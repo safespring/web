@@ -11,6 +11,8 @@
     {{ partial "kundreferenser.html" . }}
 {{ else if eq $.Params.title "Om oss" }}
     {{ partial "om-oss.html" . }}
+{{ else if eq $.Params.title "Support" }}
+    {{ partial "support.html" . }}
 {{ else }}
     <div class="main">
         {{ partial "header.html" . }}

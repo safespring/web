@@ -1,322 +1,80 @@
-{{ partial "head.html" . }}
+<!-- Google Tag Manager -->
+{{ partial "g-tag-manager.html" . }}
 
-<body>
-  <!-- Header Nav, Heading Text, Column Headings, Content, ???, Footer -->
-  <div class="clearfix" id="page">
-    <!-- column -->
-    <div class="position_content" id="page_position_content">
-      <!-- Header Nav -->
-      {{ partial "header-default.html" . }}
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
+
+<!-- HEADING -->
+<div class="heading-sub">
+  <div class="heading-content">
+    <h1>Support</h1>
+    <p>Ta del av guider och instruktioner rörande våra tjänster.</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<main class="content-main">
+  <div class="sup-content">
+    <!-- Compute -->
+    <div class="sup-compute">
+      <div class="sup-top">
+        <img src={{ "/img/safespring_compute_symbol.svg" | relURL }} alt="">
+        <div class="sup-heading">
+          <h2>SAFESPRING </h2>
+          <h2>COMPUTE</h2>
+        </div>
+      </div>
       
-      <!-- Heading Text -->
-      <div class="clearfix colelem" id="pu16069">
-        <!-- group -->
-        <div class="browser_width grpelem" id="u16069-bw">
-          <div id="u16069">
-            <!-- simple frame -->
-          </div>
-        </div>
-        
-        <div class="browser_width grpelem" id="u27363-bw">
-          <div class="museBGSize" id="u27363">
-            <!-- group -->
-            <div class="clearfix" id="u27363_align_to_page">
-              <div class="mast_hd rubriksida clearfix grpelem" id="u15489-4">
-                <!-- content -->
-                <h1>Support</h1>
-              </div>
-              <div class="Underrubrik-sida clearfix grpelem" id="u15487-4">
-                <!-- content -->
-                <p>Ta del av guider och instruktioner rörande våra tjänster.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="sup-bottom">
+        <a href="https://docs.safespring.com/compute/getting-started/">Getting Started</a>
+        <a href="https://docs.safespring.com/compute/api/">API Access</a>
+        <a href="https://docs.safespring.com/compute/image/">Image Service</a>
+        <a href="https://docs.safespring.com/compute/network/">Network Service</a>
+        <a href="https://docs.safespring.com/compute/keypairs/">Using Keypairs</a>
+        <a href="https://docs.safespring.com/compute/ipv6-howto/">Enabling IPv6</a>
       </div>
+    </div>
 
-      <!-- Column Headings -->
-      <div class="clearfix colelem" id="ppu15818-10">
-        <!-- group -->
-        <div class="clearfix grpelem" id="pu15818-10">
-          <!-- group -->
-          <div class="clearfix grpelem" id="u15818-10">
-            <!-- content -->
-            <p id="u15818-8">
-              <span id="u15818-6">
-                <br/>
-                <br/>
-                <br/>
-                <br/>SAFESPRING </span>
-              <span id="u15818-7">STORAGE</span>
-            </p>
-          </div>
-          <div class="clip_frame grpelem" id="u26800">
-            <!-- svg -->
-            <img class="svg" id="u26801" src={{ "/img/safespring_compute_symbol.svg?crc=99232182" | relURL }} width="113" height="95" alt="" data-mu-svgfallback="images/safespring_compute_symbol_poster_.png?crc=436981732"/>
-          </div>
-        </div>
-
-        <div class="clearfix grpelem" id="u15815-10">
-          <!-- content -->
-          <h3 class="Support---Rubrik">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <span id="u15815-5">SAFESPRING</span>
-            <span id="u15815-7">COMPUTE</span>
-          </h3>
-        </div>
-
-        <div class="clearfix grpelem" id="u15821-10">
-          <!-- content -->
-          <p id="u15821-8">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <span id="u15821-5">SAFESPRING</span>
-            <span id="u15821-7">BACKUP</span>
-          </p>
-        </div>
-
-        <div class="clip_frame grpelem" id="u26756">
-          <!-- svg -->
-          <img class="svg" id="u26757" src={{ "/img/safespring_storage_symbol.svg?crc=3784456658" }} width="113" height="95" alt="" data-mu-svgfallback="images/safespring_storage_symbol_poster_.png?crc=3945040809"
-          />
-        </div>
-
-        <div class="clip_frame grpelem" id="u26765">
-          <!-- svg -->
-          <img class="svg" id="u29165" src={{ "/img/safespring_backup_symbol.svg?crc=3923019426" }} width="113" height="95" alt="" data-mu-svgfallback="images/safespring_backup_symbol_poster_.png?crc=3987467584"
-          />
-        </div>
+    <!-- Storage -->
+    <div class="sup-storage">
+      <div class="sup-top">
+        <img src={{ "/img/safespring_storage_symbol.svg" | relURL }} alt="">
+        <div class="sup-heading">
+          <h2>SAFESPRING </h2>
+          <h2>STORAGE</h2>
+        </div>  
       </div>
-
-      <!-- Content -->
-      <div class="clearfix colelem" id="pu15809-26">
-        <!-- Compute -->
-        <div class="clearfix grpelem" id="u15809-26">
-          <!-- content -->
-          <p class="Support----verst-lista" id="u15809-4">
-            <span id="u15809-3">
-              <a class="nonblock" href="https://docs.safespring.com/compute/getting-started/" target="_blank">Getting started</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15809-8">
-            <span id="u15809-7">
-              <a class="nonblock" href="https://docs.safespring.com/compute/api/">API access</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15809-12">
-            <span id="u15809-11">
-              <a class="nonblock" href="https://docs.safespring.com/compute/image/">Image service</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15809-16">
-            <span id="u15809-15">
-              <a class="nonblock" href="https://docs.safespring.com/compute/network/">Network service</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15809-20">
-            <span id="u15809-19">
-              <a class="nonblock" href="https://docs.safespring.com/compute/keypairs/">Using Keypairs</a>
-            </span>
-          </p>
-          <p class="Support---lista-sist" id="u15809-24">
-            <span id="u15809-23">
-              <a class="nonblock" href="https://docs.safespring.com/compute/ipv6-howto/">Enabling IPv6</a>
-            </span>
-          </p>
-        </div>
-
-        <!-- Storage -->
-        <div class="clearfix grpelem" id="u15824-18">
-          <!-- content -->
-          <p class="Support----verst-lista" id="u15824-4">
-            <span id="u15824-3">
-              <a class="nonblock" href="https://docs.safespring.com/storage/generalinfo/">General S3 Info</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15824-8">
-            <span id="u15824-7">
-              <a class="nonblock" href="https://docs.safespring.com/storage/s3cmd/">Example s3cmd config</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15824-12">
-            <span id="u15824-11">
-              <a class="nonblock" href="https://docs.safespring.com/storage/cloudberry/">Example CloudBerry config</a>
-            </span>
-          </p>
-          <p class="Support---lista-sist" id="u15824-16">
-            <span id="u15824-15">
-              <a class="nonblock" href="https://docs.safespring.com/storage/cyberduck/">Example CyberDuck config</a>
-            </span>
-          </p>
-        </div>
-
-        <!-- Backup -->
-        <div class="clearfix grpelem" id="u15827-32">
-          <!-- content -->
-          <p class="Support----verst-lista" id="u15827-4">
-            <span id="u15827-3">
-              <a class="nonblock" href="https://docs.safespring.com/backup/getting-started/">Getting started</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15827-8">
-            <span id="u15827-7">
-              <a class="nonblock" href="https://docs.safespring.com/backup/introduction/">Introduction</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15827-13">
-            <span id="u15827-11">
-              <a class="nonblock" href="https://docs.safespring.com/backup/install/overview/">Installation</a>
-            </span>
-            <span id="u15827-12"></span>
-          </p>
-          <p class="Support---lista-mitten" id="u15827-17">
-            <span id="u15827-16">
-              <a class="nonblock" href="https://docs.safespring.com/backup/performance/">Performance</a>
-            </span>
-          </p>
-          <p class="Support---lista-mitten" id="u15827-22">
-            <span id="u15827-20">
-              <a class="nonblock" href="https://docs.safespring.com/backup/howto/restore-alternate/">Howtos</a>
-            </span>
-            <span id="u15827-21"></span>
-          </p>
-          <p class="Support---lista-mitten" id="u15827-26">
-            <span id="u15827-25">
-              <a class="nonblock" href="https://docs.safespring.com/backup/api/">API</a>
-            </span>
-          </p>
-          <p class="Support---lista-sist" id="u15827-30">
-            <span id="u15827-29">
-              <a class="nonblock" href="https://docs.safespring.com/backup/faq/">FAQ</a>
-            </span>
-          </p>
-        </div>
-      </div>
-
-      <!-- ??? -->
-      <div class="verticalspacer" data-offset-top="909" data-content-above-spacer="908" data-content-below-spacer="326"></div>
       
-      <!-- Footer -->
-      {{ partial "footer-default.html" . }}
+      <div class="sup-bottom">
+        <a href="https://docs.safespring.com/storage/generalinfo/">General S3 Info</a>
+        <a href="https://docs.safespring.com/storage/s3cmd/">Example S3cmd Config</a>
+        <a href="https://docs.safespring.com/storage/cloudberry/">Example CloudBerry Config</a>
+        <a href="https://docs.safespring.com/storage/cyberduck/">Example CyberDuck Config</a>
+      </div>
+    </div>
+
+    <!-- Backup -->
+    <div class="sup-backup">
+      <div class="sup-top">
+        <img src={{ "/img/safespring_backup_symbol.svg" | relURL }} alt="">
+        <div class="sup-heading">
+          <h2>SAFESPRING </h2>
+          <h2>BACKUP</h2>
+        </div>  
+      </div>
+      
+      <div class="sup-bottom">
+        <a href="https://docs.safespring.com/backup/getting-started/">Getting Started</a>
+        <a href="https://docs.safespring.com/backup/introduction/">Introduction</a>
+        <a href="https://docs.safespring.com/backup/install/overview/">Installation</a>
+        <a href="https://docs.safespring.com/backup/performance/">Performance</a>
+        <a href="https://docs.safespring.com/backup/howto/restore-alternate/">Howtos</a>
+        <a href="https://docs.safespring.com/backup/api/">API</a>
+        <a href="https://docs.safespring.com/backup/faq/">FAQ</a>
+      </div>
     </div>
   </div>
+</main>
 
-  <script type="text/javascript">
-    window.Muse.assets.check = function(d) {
-        if (!window.Muse.assets.checked) {
-            window.Muse.assets.checked = !0;
-            var b = {},
-                c = function(a, b) {
-                    if (window.getComputedStyle) {
-                        var c = window.getComputedStyle(a, null);
-                        return c && c.getPropertyValue(b) || c && c[b] || ""
-                    }
-                    if (document.documentElement.currentStyle) return (c = a.currentStyle) && c[b] || a.style && a.style[b] || "";
-                    return ""
-                },
-                a = function(a) {
-                    if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
-                    if (a.match(/^\#/)) return parseInt(a.substr(1),
-                        16);
-                    return 0
-                },
-                g = function(g) {
-                    for (var f = document.getElementsByTagName("link"), h = 0; h < f.length; h++)
-                        if ("text/css" == f[h].type) {
-                            var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);
-                            if (!i || !i[1] || !i[2]) break;
-                            b[i[1]] = i[2]
-                        }
-                    f = document.createElement("div");
-                    f.className = "version";
-                    f.style.cssText = "display:none; width:1px; height:1px;";
-                    document.getElementsByTagName("body")[0].appendChild(f);
-                    for (h = 0; h < Muse.assets.required.length;) {
-                        var i = Muse.assets.required[h],
-                            l = i.match(/([\w\-\.]+)\.(\w+)$/),
-                            k = l && l[1] ?
-                            l[1] : null,
-                            l = l && l[2] ? l[2] : null;
-                        switch (l.toLowerCase()) {
-                            case "css":
-                                k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
-                                f.className += " " + k;
-                                k = a(c(f, "color"));
-                                l = a(c(f, "backgroundColor"));
-                                k != 0 || l != 0 ? (Muse.assets.required.splice(h, 1), "undefined" != typeof b[i] && (k != b[i] >>> 24 || l != (b[i] & 16777215)) && Muse.assets.outOfDate.push(i)) : h++;
-                                f.className = "version";
-                                break;
-                            case "js":
-                                h++;
-                                break;
-                            default:
-                                throw Error("Unsupported file type: " + l);
-                        }
-                    }
-                    d ? d().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
-                    f.parentNode.removeChild(f);
-                    if (Muse.assets.outOfDate.length || Muse.assets.required.length) f = "En del filer på servern kanske saknas eller är felaktiga. Rensa webbläsarens cacheminne och försök igen. Kontakta webbplatsadministratören om problemet kvarstår.", g && Muse.assets.outOfDate.length && (f += "\nOut of date: " + Muse.assets.outOfDate.join(",")), g && Muse.assets.required.length && (f += "\nMissing: " + Muse.assets.required.join(",")), suppressMissingFileError ? (f += "\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.", console.log(f)) : alert(f)
-                };
-            location && location.search && location.search.match && location.search.match(/muse_debug/gi) ?
-                setTimeout(function() {
-                    g(!0)
-                }, 5E3) : g()
-        }
-    };
-    var muse_init = function() {
-        require.config({
-            baseUrl: ""
-        });
-        require(["jquery", "museutils", "whatinput", "jquery.musemenu", "jquery.watch", "jquery.musepolyfill.bgsize", "jquery.scrolleffects"], function(d) {
-            var $ = d;
-            $(document).ready(function() {
-                try {
-                    window.Muse.assets.check($); /* body */
-                    Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
-                    Muse.Utils.detectScreenResolution(); /* HiDPI screens */
-                    Muse.Utils.prepHyperlinks(true); /* body */
-                    Muse.Utils.resizeHeight('.browser_width'); /* resize height */
-                    Muse.Utils.requestAnimationFrame(function() {
-                        $('body').addClass('initialized');
-                    }); /* mark body as initialized */
-                    Muse.Utils.fullPage('#page'); /* 100% height page */
-                    Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) {
-                        return $(elem).museMenu();
-                    }); /* unifiedNavBar */
-                    $('#u15976').registerOpacityScrollEffect([{
-                        "in": [-Infinity, 35],
-                        "opacity": 0,
-                        "fade": 0
-                    }, {
-                        "in": [35, 35],
-                        "opacity": 0
-                    }, {
-                        "in": [35, Infinity],
-                        "opacity": 100,
-                        "fade": 34.5
-                    }]); /* scroll effect */
-                    $('#u27363').registerBackgroundPositionScrollEffect([{
-                        "in": [-Infinity, -100],
-                        "speed": [0, 0.8]
-                    }, {
-                        "in": [-100, Infinity],
-                        "speed": [0, 0.8]
-                    }]); /* scroll effect */
-                    Muse.Utils.showWidgetsWhenReady(); /* body */
-                    Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
-                } catch (b) {
-                    if (b && "function" == typeof b.notify ? b.notify() : Muse.Assert.fail("Error calling selector function: " + b), false) throw b;
-                }
-            })
-        })
-    };
-  </script>
-
-  {{ partial "other-scripts.html" . }}
-</body>
-</html>
+<!-- FOOTER -->
+{{ partial "footer.html" . }}
