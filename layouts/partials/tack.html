@@ -1,151 +1,22 @@
-{{ partial "head.html" . }}
+<!-- Google Tag Manager -->
+{{ partial "g-tag-manager.html" . }}
 
-<body>
-    <!-- ???, Heading Text/Content, Header Nav, ???, Footer -->
-    <div class="clearfix" id="page">
-        <!-- ??? -->
-        <div class="clearfix grpelem" id="pu5113">
-            <!-- column -->
-            <div class="size_fixed colelem" id="u5113">
-                <!-- custom html -->
-            </div>
-            <div class="size_fixed colelem" id="u5115">
-                <!-- custom html -->
-            </div>
-        </div>
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
 
-        <!-- Heading Text/Content -->
-        <div class="clearfix grpelem" id="pu5092-4">
-            <!-- Text -->
-            <div class="rubriksida clearfix colelem" id="u5092-4">
-                <!-- content -->
-                <h1>Ditt meddelande är skickat</h1>
-            </div>
-            <div class="clearfix colelem" id="u5093-4">
-                <!-- content -->
-                <p>En av våra medarbetare kommer kontakta dig inom kort.</p>
-            </div>
-
-            <!-- Button -->
-            <a class="nonblock nontext rounded-corners clearfix colelem" id="u12091-4" href="/index">
-                <!-- content -->
-                <p class="rundknapp" id="u12091-2">Tillbaka</p>
-            </a>
-        </div>
-
-        <!-- Header Nav -->
-        {{ partial "header-index.html" . }}
-
-        <!-- ??? -->
-        <div class="verticalspacer" data-offset-top="341" data-content-above-spacer="341" data-content-below-spacer="267"></div>
-        
-        <div class="clearfix grpelem" id="pu14983">
-            <!-- group -->
-            <div class="browser_width grpelem" id="u14983-bw">
-                <div id="u14983">
-                <!-- simple frame -->
-                </div>
-            </div>
-            
-            <!-- Footer -->
-            {{ partial "footer-index.html" . }}
-        </div>
+<!-- CONTENT -->
+<main class="content-main">
+  <div class="tack-content">
+    <div class="tack-heading">
+      <h1>Ditt meddelande är skickat</h1>
+      <p>En av våra medarbetare kommer kontakta dig inom kort.</p>
     </div>
-  
-    {{ partial "js-includes.html" . }}
 
-    <script type="text/javascript">
-        window.Muse.assets.check = function(d) {
-            if (!window.Muse.assets.checked) {
-                window.Muse.assets.checked = !0;
-                var b = {},
-                    c = function(a, b) {
-                        if (window.getComputedStyle) {
-                            var c = window.getComputedStyle(a, null);
-                            return c && c.getPropertyValue(b) || c && c[b] || ""
-                        }
-                        if (document.documentElement.currentStyle) return (c = a.currentStyle) && c[b] || a.style && a.style[b] || "";
-                        return ""
-                    },
-                    a = function(a) {
-                        if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
-                        if (a.match(/^\#/)) return parseInt(a.substr(1),
-                            16);
-                        return 0
-                    },
-                    g = function(g) {
-                        for (var f = document.getElementsByTagName("link"), h = 0; h < f.length; h++)
-                            if ("text/css" == f[h].type) {
-                                var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);
-                                if (!i || !i[1] || !i[2]) break;
-                                b[i[1]] = i[2]
-                            }
-                        f = document.createElement("div");
-                        f.className = "version";
-                        f.style.cssText = "display:none; width:1px; height:1px;";
-                        document.getElementsByTagName("body")[0].appendChild(f);
-                        for (h = 0; h < Muse.assets.required.length;) {
-                            var i = Muse.assets.required[h],
-                                l = i.match(/([\w\-\.]+)\.(\w+)$/),
-                                k = l && l[1] ?
-                                l[1] : null,
-                                l = l && l[2] ? l[2] : null;
-                            switch (l.toLowerCase()) {
-                                case "css":
-                                    k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
-                                    f.className += " " + k;
-                                    k = a(c(f, "color"));
-                                    l = a(c(f, "backgroundColor"));
-                                    k != 0 || l != 0 ? (Muse.assets.required.splice(h, 1), "undefined" != typeof b[i] && (k != b[i] >>> 24 || l != (b[i] & 16777215)) && Muse.assets.outOfDate.push(i)) : h++;
-                                    f.className = "version";
-                                    break;
-                                case "js":
-                                    h++;
-                                    break;
-                                default:
-                                    throw Error("Unsupported file type: " + l);
-                            }
-                        }
-                        d ? d().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
-                        f.parentNode.removeChild(f);
-                        if (Muse.assets.outOfDate.length || Muse.assets.required.length) f = "En del filer på servern kanske saknas eller är felaktiga. Rensa webbläsarens cacheminne och försök igen. Kontakta webbplatsadministratören om problemet kvarstår.", g && Muse.assets.outOfDate.length && (f += "\nOut of date: " + Muse.assets.outOfDate.join(",")), g && Muse.assets.required.length && (f += "\nMissing: " + Muse.assets.required.join(",")), suppressMissingFileError ? (f += "\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.", console.log(f)) : alert(f)
-                    };
-                location && location.search && location.search.match && location.search.match(/muse_debug/gi) ?
-                    setTimeout(function() {
-                        g(!0)
-                    }, 5E3) : g()
-            }
-        };
-        var muse_init = function() {
-            require.config({
-                baseUrl: ""
-            });
-            require(["jquery", "museutils", "whatinput", "jquery.musemenu", "jquery.watch"], function(d) {
-                var $ = d;
-                $(document).ready(function() {
-                    try {
-                        window.Muse.assets.check($); /* body */
-                        Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
-                        Muse.Utils.detectScreenResolution(); /* HiDPI screens */
-                        Muse.Utils.prepHyperlinks(true); /* body */
-                        Muse.Utils.resizeHeight('.browser_width'); /* resize height */
-                        Muse.Utils.requestAnimationFrame(function() {
-                            $('body').addClass('initialized');
-                        }); /* mark body as initialized */
-                        Muse.Utils.fullPage('#page'); /* 100% height page */
-                        Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) {
-                            return $(elem).museMenu();
-                        }); /* unifiedNavBar */
-                        Muse.Utils.showWidgetsWhenReady(); /* body */
-                        Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
-                    } catch (b) {
-                        if (b && "function" == typeof b.notify ? b.notify() : Muse.Assert.fail("Error calling selector function: " + b), false) throw b;
-                    }
-                })
-            })
-        };
-    </script>
+    <div>
+      <a id="button" href="{{ .Site.BaseURL }}">Tillbaka</a>
+    </div> 
+  </div>
+</main>
 
-    {{ partial "other-scripts.html" . }}
-</body>
-</html> 
+<!-- FOOTER -->
+{{ partial "footer.html" . }}
