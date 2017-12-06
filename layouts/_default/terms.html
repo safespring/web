@@ -2,18 +2,21 @@
 
 <body>
   <div class="main">
-  {{ partial "header.html" . }}
+    {{ partial "header.html" . }}
     <div class="terms">
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms }}
+      {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
       <div class="term">
         <a href="{{ $data.Plural }}/{{ $key | urlize }}">
           <div class="term-title">{{ $key }} ({{ len $value }}) </div>
         </a>
-      </div> <!-- term -->
-    {{ end }}
-    </div> <!-- terms -->
-  {{ partial "footer.html" . }}
-  </div> <!-- main end -->
+      </div>
+      <!-- term -->
+      {{ end }}
+    </div>
+    <!-- terms -->
+    {{ partial "footer.html" . }}
+  </div>
+  <!-- main end -->
 </body>
+
 </html>

@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html class="html">
 <head>
-    <!-- Site Title changes according to current page -->
-    <title>
-        Safespring | 
-        {{ if .Params.heading }}
-            {{ .Title }}
-        {{ else }}
-            Säkra molntjänster
-        {{ end }}
-    </title>
-
-    <meta http-equiv="Content-type" content="html;charset=UTF-8" />
-    <meta name="generator" content="2017.0.4.363" />
-    <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
-    <!-- Description changes according to current page -->
-    <meta name="description" content="{{ .Site.Params.meta.description }}"/>
-
-    <!-- Favicon -->
-    <link rel="favicon" href={{ "/img/safespring-master-start-favicon.ico?crc=4142707070" | relURL }} />
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href={{ "/css/main.css" | relURL }} />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:500" rel="stylesheet">
-
-    <!-- RSS -->
-    <link rel="canonical" href="{{ .Permalink }}">
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
+  <!-- Site Title changes according to current page -->
+  <title>
+    Safespring | 
+    {{ if .Params.heading }} 
+      {{ .Title }} 
+    {{ else }} 
+      Säkra molntjänster 
     {{ end }}
+  </title>
 
-    {{ partial "g-tag-manager.html" . }}
+  <meta http-equiv="Content-type" content="html;charset=UTF-8" />
+  <meta name="generator" content="2017.0.4.363" />
+  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
+  <!-- Description changes according to current page -->
+  <meta name="description" content="{{ .Site.Params.meta.description }}" />
+
+  <!-- Favicon -->
+  <link rel="favicon" href={{ "/img/safespring-master-start-favicon.ico?crc=4142707070" | relURL }} />
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href={{ "/css/main.css" | relURL }} />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:500" rel="stylesheet">
+
+  <!-- RSS -->
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" /> 
+  {{ end }} 
+  
+  {{ partial "g-tag-manager.html" . }}
 </head>
