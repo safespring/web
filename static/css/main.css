@@ -393,7 +393,7 @@ button {
   display: grid;
   grid-template-columns:
     [full-start] minmax(1em, 1fr)
-    [main-start] minmax(0, 65rem) [main-end]
+    [main-start] minmax(0, 55rem) [main-end]
     minmax(1em, 1fr) [full-end];
   grid-template-rows:
     [full-start] minmax(4em, 1fr)
