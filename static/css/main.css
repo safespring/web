@@ -956,7 +956,7 @@ a {
 }
 
 /* Sidebar */
-.sb-sidebar {
+.s-sidebar {
   background-color: var(--content-color);
   align-self: start;
   padding: 65px 0;
@@ -968,11 +968,11 @@ a {
     minmax(1em, 1fr) [full-end];
 }
 
-.sb-sidebar > * {
+.s-sidebar > * {
   grid-column: main;
 }
 
-.sb-sidebar img {
+.s-sidebar img {
   padding: 0 0 15px;
   width: 95px;
 }
@@ -1007,16 +1007,16 @@ a {
 }
 
 .ss-grid,
-.ss-middle,
-.ss-bottom {
+.s-middle,
+.s-bottom {
   padding-top: 35px;
 }
 
-.ss-top p,
-.ss-grid p,
-.ss-middle p,
-.ss-bottom p {
-  margin: 0;
+.s-top p:last-child,
+.ss-grid p:last-child,
+.s-middle p:last-child,
+.s-bottom p:last-child {
+  margin-bottom: 0;
 }
 
 .ss-grid h2 {
