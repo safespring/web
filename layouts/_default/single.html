@@ -19,6 +19,10 @@
     {{ partial "tjanster.html" . }}
   {{ else if eq $.Params.title "Backup som tjänst" }}
     {{ partial "safespring-backup.html" . }}
+  {{ else if eq $.Params.title "Lagring som tjänst" }}
+    {{ partial "safespring-storage.html" . }}
+  {{ else if eq $.Params.title "Infrastruktur som tjänst" }}
+    {{ partial "safespring-compute.html" . }}
   {{ else }}
   <div class="content-main">
     {{ partial "header.html" . }}
