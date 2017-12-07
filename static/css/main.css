@@ -548,7 +548,7 @@ button {
 .kontakt {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr;
   grid-row-gap: 5%;
   grid-column-gap: 5%;
@@ -603,6 +603,7 @@ button {
 
 .form-message {
   flex-grow: 2;
+  padding-top: 15px;
 }
 
 .form button p {
