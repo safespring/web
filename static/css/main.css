@@ -407,13 +407,8 @@ button {
   grid-row: main;
 }
 
-/* .content-main a {
-  text-decoration: none;
-  color: var(--link-color);
-} */
-
 .content-head {
-  font: var(--heavy-weight) 24px var(--mon-font);
+  font: var(--heavy-weight) 20px var(--mon-font);
   color: var(--heading-color);
 }
 
@@ -951,7 +946,7 @@ button {
   display: grid;
   grid-template-columns:
     [full-start] minmax(1em, 0.5fr)
-    [main-start] minmax(0, 320px) [main-end]
+    [main-start] minmax(0, 260px) [main-end]
     minmax(1em, 1fr) [full-end];
 }
 
