@@ -38,7 +38,6 @@ a {
   color: var(--text-color);
   background-color: var(--button-color);
   border-radius: 3px;
-  margin: 25px;
   padding: 10px 25px;
   text-align: center;
 }
@@ -212,6 +211,10 @@ a {
 .heading-content h1 {
   font: var(--heavy-weight) 42px var(--hind-font);
   margin: 0;
+}
+
+.heading-content h1:nth-child(2) {
+  margin-top: -20px;
 }
 
 .heading-content p {
@@ -886,5 +889,106 @@ a {
   font: var(--heavy-weight) 20px var(--hind-font);
   color: var(--alt-color);
   margin: 0;
+}
+/***/
+
+
+/* TJANSTER */
+.tj-content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 45px;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 45rem) [main-end]
+    minmax(1em, 1fr) [full-end];
+}
+
+.tj-content > * {
+  grid-column: main;
+}
+
+.tj-content > .tj-offers {
+  grid-column: full;
+}
+
+.tj-offers {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.tj-backup,
+.tj-storage,
+.tj-compute {
+  background-color: var(--content-color);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tj-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tj-secure ol li{
+  color: var(--accent-color);
+  font: var(--heavy-weight) 15px var(--mon-font);
+}
+
+.tj-secure span {
+  padding-left: 10px;
+}
+
+.tj-offers img {
+  width: 95px;
+}
+
+.tj-heading {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.tj-cloud h2,
+.tj-secure h2 {
+  font-size: 18px;
+}
+
+.tj-heading h2 {
+  font: var(--heavy-weight) 24px var(--hind-font);
+  color: var(--main-color);
+  margin: 20px 0 ;
+}
+
+.tj-heading h2:last-child {
+  color: var(--link-color);
+}
+
+.tj-body {
+  min-height: 185px;
+}
+
+.tj-offers p {
+  margin: 0;
+}
+
+.tj-button {
+  margin: 10px 25px;
+  padding-top: 40px;
 }
 /***/
