@@ -7,11 +7,59 @@
 <!-- HEADING -->
 <div class="heading-sub">
   <div class="heading-content">
+    <h1>Testa backup som tjänst</h1>
   </div>
 </div>
 
 <!-- CONTENT -->
-<main class="sb-main">
+<main class="s-main">
+  <div class="s-content">
+    <div class="s-top">
+      <h2 class="content-heading">Intresseanmälan:&nbsp; SAFESPRING BACKUP</h2>
+      <p class="content-body">Fyll i formuläret nedan för att anmäla ert intresse. Så kontaktar en av våra medarbetare er inom kort.</p>
+    </div>
+
+    <form class="form" method="post" enctype="multipart/form-data" action="">
+      <input class="form-name" type="text" spellcheck="false" name="name" tabindex="1" placeholder="Ditt namn" required/>
+      
+      <input class="form-email" type="email" spellcheck="false" name="email" tabindex="2" placeholder="Din epost" required/>
+
+      <input class="form-name" type="text" spellcheck="false" name="email" tabindex="3" placeholder="Ange företag" required/>
+
+      <input class="form-name" type="text" spellcheck="false" name="email" tabindex="4" placeholder="Ange telefonnummer" required/>
+      
+      <textarea class="form-message" name="message" tabindex="5" placeholder="Övriga önskemål"></textarea>
+      
+      <button id="button" type="submit" value="Skicka" tabindex="6">
+        <p>Anmäl intresse</p>
+      </button>
+    </form>
+  </div>
+
+  <div class="s-sidebar">
+    <div>
+      <img src={{ "/img/safespring_backup_symbol.svg?crc=3923019426" | relURL }} alt="" />
+    </div>
+  
+    <div>
+      <h2 class="content-heading">SAFESPRING BACKUP</h2>
+      <p class="content-body">Med Safesprings molnbaserad backuptjänst (Baas) behöver du inte investera i egen hård- eller mjukvara. Tjänsten konsumeras över internet och du betalar bara för den mängd data som sparas i tjänsten.</p>
+    </div>
+  
+    <a id="button" href="/assets/safespring-compute-web.pdf">LADDA NED<br/>PRODUKTBLAD</a>
+  
+    <a id="button" href="/safespring-backup">TILLBAKA</a>
+  
+    <div class="read-more">
+      <h2>Läs mer om:</h2>
+      <li class="content-body">
+        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+      </li>
+    </div>
+  </div>
 </main>
 
 <!-- FOOTER -->
