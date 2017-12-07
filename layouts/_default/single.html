@@ -17,6 +17,8 @@
    {{ partial "tack.html" . }}
   {{ else if eq $.Params.title "Våra tjänster" }}
     {{ partial "tjanster.html" . }}
+  {{ else if eq $.Params.title "Backup som tjänst" }}
+    {{ partial "safespring-backup.html" . }}
   {{ else }}
   <div class="content-main">
     {{ partial "header.html" . }}

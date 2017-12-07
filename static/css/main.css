@@ -24,8 +24,6 @@ html {
 
 body {
   margin: 0;
-  color: var(--text-color);
-  line-height: 23px;
 }
 
 a {
@@ -34,12 +32,13 @@ a {
 }
 
 #button {
-  font: var(--heavy-weight) 15px var(--hind-font);
+  font: var(--heavy-weight) 15px var(--mon-font);
   color: var(--text-color);
   background-color: var(--button-color);
   border-radius: 3px;
   padding: 10px 25px;
   text-align: center;
+  margin: 10px 0;
 }
 
 #button:hover {
@@ -210,6 +209,7 @@ a {
 
 .heading-content h1 {
   font: var(--heavy-weight) 42px var(--hind-font);
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -220,6 +220,7 @@ a {
 .heading-content p {
   font: var(--heavy-weight) 18px var(--mon-font);
   margin: 0;
+  color: var(--text-color);
 }
 
 .arrows {
@@ -363,6 +364,7 @@ a {
 
 .footer-text {
   font: var(--heavy-weight) 14px var(--mon-font);
+  color: var(--text-color);
 }
 
 /* PAGE NAVIGATION */
@@ -474,7 +476,7 @@ a {
   display: grid;
   grid-template-columns:
     [full-start] minmax(1em, 0.5fr)
-    [main-start] minmax(0, 320px) [main-end]
+    [main-start] minmax(0, 300px) [main-end]
     minmax(1em, 1fr) [full-end];
 }
 
@@ -484,6 +486,7 @@ a {
 
 .ch-sidebar img {
   padding: 0 0 15px;
+  width: 95px;
 }
 
 #find-more {
@@ -868,6 +871,112 @@ a {
   color: var(--link-color);
 }
 /***/
+
+/* SF BACKUP */
+#sb-title {
+  color: var(--button-color);
+}
+
+.sb-main {
+  background-color: var(--content-color);
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+}
+
+.sb-content {
+  background-color: var(--text-color);
+  padding: 65px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 41rem) [main-end]
+    minmax(1em, 0.5fr) [full-end];
+}
+
+.sb-content > * {
+  grid-column: main;
+}
+
+.sb-content .content-heading:nth-child(n + 2) {
+  padding: 55px 0 0;
+}
+
+.content-heading {
+  margin: 0;
+  padding: 0 0 10px;
+  font: var(--heavy-weight) 18px var(--hind-font);
+  color: var(--heading-color);
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.sb-content-bottom .content-heading {
+  padding: 30px 0 20px;
+}
+
+.sb-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 15px;
+}
+
+.sb-grid div {
+  background-color: var(--main-color);
+}
+
+.sb-top,
+.sb-bottom {
+  grid-column: 1 / 3;
+  padding: 20px;
+}
+
+.sb-middle {
+  padding: 20px;
+}
+
+.sb-heading {
+  font: var(--heavy-weight) 15px var(--hind-font);
+  color: var(--text-color);
+}
+
+.sb-body {
+  font: var(--heavy-weight) 13px var(--hind-font);
+  color: var(--text-color);
+}
+.sb-bottom li {
+  color: var(--accent-color);
+}
+
+.sb-bottom ul {
+  padding-left: 20px;
+}
+
+/* Sidebar */
+.sb-sidebar {
+  background-color: var(--content-color);
+  align-self: start;
+  padding: 65px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 0.5fr)
+    [main-start] minmax(0, 320px) [main-end]
+    minmax(1em, 1fr) [full-end];
+}
+
+.sb-sidebar > * {
+  grid-column: main;
+}
+
+.sb-sidebar img {
+  padding: 0 0 15px;
+  width: 95px;
+}
+/***/
+
 
 /* TACK */
 .tack-content {
