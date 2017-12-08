@@ -2,7 +2,7 @@ baseURL = "https://www2.safespring.com/"
 languageCode = "sv-SE"
 title = "Safespring"
 author = "Safespring"
-copyright = ""
+copyright = "2017 Safespring"
 
 
 # Pagination

@@ -58,13 +58,13 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 65rem) [main-end]
-    minmax(1em, 1fr) [full-end];
+    minmax(2em, 1fr) [full-end];
   grid-template-rows:
-    [full-start] minmax(1em, 1fr)
-    [main-start] minmax(0, 4rem) [main-end]
-    minmax(1em, 1fr) [full-end];
+    [full-start] minmax(10px, 1fr)
+    [main-start] minmax(0, 45px) [main-end]
+    minmax(10px, 1fr) [full-end];
   background: var(--main-color);
   padding: 0;
   z-index: 100;
@@ -88,8 +88,7 @@ button {
 }
 
 .logo img {
-  height: 46px;
-  width: auto;
+  max-width: 155px;
   color: var(--text-color);
   padding: 0;
 }
@@ -120,7 +119,6 @@ button {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr;
   grid-column-gap: 10px;
-  box-shadow: var(--tran-shadow);
 }
 
 .site-navigation li {
@@ -147,8 +145,9 @@ button {
   min-width: 34px;
   position: absolute;
   transition: visibility 0.65s ease-in;
-  margin-top: 24px;
+  margin-top: 18px;
   z-index: 100;
+  box-shadow: var(--reg-shadow);
 }
 
 .site-navigation ul li ul li {
@@ -234,12 +233,12 @@ button {
 
 #arrow {
   font-size: 20px;
-  color: rgba(249, 255, 255, 0.5);
+  color: var(--text-color);
   text-decoration: none;
 }
 
 #arrow:hover {
-  color: var(--text-color);
+  color: rgba(249, 255, 255, 0.5);
   transition: color 0.4s ease-in-out;
 }
 
@@ -285,13 +284,13 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 65rem) [main-end]
     minmax(1em, 1fr) [full-end];
   grid-template-rows:
-    [full-start] minmax(1em, 3.125rem)
-    [main-start] minmax(0, 12rem) [main-end]
-    minmax(1em, 3.125rem) [full-end];
+    [full-start] minmax(1em, 2rem)
+    [main-start] minmax(0, 8.5rem) [main-end]
+    minmax(2em, 2rem) [full-end];
   width: 100%;
   background-color: var(--main-color);
 }
@@ -306,7 +305,7 @@ button {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: repeat(2, auto);
-  grid-row-gap: 40px;
+  grid-row-gap: 15px;
   grid-column-gap: 10%;
 }
 
@@ -318,15 +317,14 @@ button {
   text-decoration: none;
 }
 
-.logo-footer {
+/* .logo-footer {
   grid-column: 1 / 3;
 }
 
 .logo-footer img {
-  height: 62px;
-  width: auto;
+  max-width: 155px;
   padding: 0;
-}
+} */
 
 .contact {
   justify-self: start;
@@ -336,12 +334,22 @@ button {
   grid-column-gap: 20px;
 }
 
-.nav-footer {
+.navigation {
   justify-self: end;
   display: -ms-grid;
   display: grid;
   grid-template-columns: 0.85fr 1fr;
   grid-column-gap: 20px;
+}
+
+.copyright {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.copyright p {
+  font: var(--normal-weight) 15px var(--mon-font);
+  color: var(--text-color);
 }
 
 .address,
@@ -392,9 +400,9 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 55rem) [main-end]
-    minmax(1em, 1fr) [full-end];
+    minmax(2em, 1fr) [full-end];
   grid-template-rows:
     [full-start] minmax(4em, 1fr)
     [main-start] minmax(30em, auto) [main-end]
@@ -446,9 +454,9 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 41rem) [main-end]
-    minmax(1em, 0.5fr) [full-end];
+    minmax(2em, 0.5fr) [full-end];
 }
 
 .ch-content > * {
@@ -703,9 +711,9 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 41rem) [main-end]
-    minmax(1em, 0.5fr) [full-end];
+    minmax(2em, 0.5fr) [full-end];
 }
 
 .om-content > * {
@@ -872,9 +880,9 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 41rem) [main-end]
-    minmax(1em, 0.5fr) [full-end];
+    minmax(2em, 0.5fr) [full-end];
 }
 
 .s-content > * {
@@ -1058,9 +1066,9 @@ button {
   display: grid;
   grid-gap: 45px;
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(2em, 1fr)
     [main-start] minmax(0, 45rem) [main-end]
-    minmax(1em, 1fr) [full-end];
+    minmax(2em, 1fr) [full-end];
 }
 
 .tj-content > * {
