@@ -1151,3 +1151,39 @@ button {
   padding-top: 40px;
 }
 /***/
+
+
+/* BLOG */
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content-item {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 3px;
+  background-color: var(--content-color);
+}
+
+.post-heading {
+  font: var(--normal-weight) 20px var(--hind-font);
+  color: var(--main-color);
+  padding-bottom: 10px;
+}
+
+.post-heading:hover {
+  color: var(--link-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.content-meta {
+  font: var(--normal-weight) 14px var(--mon-font);
+  color: var(--main-color);
+  padding: 10px 0 0;
+}
+/***/

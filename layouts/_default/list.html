@@ -1,18 +1,37 @@
 {{ partial "head.html" . }}
 
 <body>
-  <div class="main">
-    {{ partial "header.html" . }}
-    <div class="content-list">
-      {{ range .Data.Pages.GroupByDate "2006" }}
-      <div class="content-list-date">{{ .Key }}</div>
+  <!-- Google Tag Manager -->
+  {{ partial "g-tag-manager.html" . }}
+  
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
+  
+  <!-- HEADING -->
+  <div class="heading-sub">
+    <div class="heading-content">
+      <h1>Aktuellt</h1>
+      <p>Med Safespring får du en effektiv modell för leverans
+        <br/>av tjänst utan att förlora kontroll över din data.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-main">
+    <div class="">
+       {{ range .Data.Pages.GroupByDate "2006" }}
+    </div>
+
+    <div class="content-container">
       {{ range .Pages }} 
         {{ .Render "li"}} 
         {{ end }} 
       {{ end }}
     </div>
-    {{ partial "footer.html" . }}
-  </div>
-</body>
+    
+  </main>
 
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
+</body>
 </html>
