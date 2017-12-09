@@ -288,7 +288,7 @@ button {
     minmax(1em, 1fr) [full-end];
   grid-template-rows:
     [full-start] minmax(1em, 2rem)
-    [main-start] minmax(0, 8.5rem) [main-end]
+    [main-start] minmax(0, 16rem) [main-end]
     minmax(2em, 2rem) [full-end];
   width: 100%;
   background-color: var(--main-color);
@@ -303,8 +303,8 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
-  grid-template-rows: repeat(2, auto);
-  grid-row-gap: 15px;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 30px;
   grid-column-gap: 10%;
 }
 
@@ -316,14 +316,14 @@ button {
   text-decoration: none;
 }
 
-/* .logo-footer {
+.logo-footer {
   grid-column: 1 / 3;
 }
 
 .logo-footer img {
-  max-width: 155px;
+  max-width: 250px;
   padding: 0;
-} */
+}
 
 .contact {
   justify-self: start;
