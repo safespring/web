@@ -30,7 +30,7 @@
   </div>
 
   <!-- CONTENT -->
-  <div class="content-main" id="down">
+  <main class="content-main" id="down">
     <div>
       <!-- Heading Text -->
       <div class="content-head">
@@ -45,8 +45,18 @@
         <p>Safespring levererar infrastrukturlösningar i molnet, och når idag samtliga universitet, högskolor och andra utbildnings- och Uninett i Norge.</p>
         <p>Med en mycket hög grad av automatisering kan Safespring leverera högklassiga infrastrukturlösningar i priskonkurrens med de internationella publika molnen.</p>
       </div>
+
+      <div class="blog-feed">
+        <h2 class="content-heading">Senaste nytt</h2>
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }} 
+          {{ range $paginator.Pages }} 
+            {{ .Render "summary" }}
+        {{ end }}
+      </div>
     </div>
-  </div>
+
+    
+  </main>
 
   <!-- Homepage Heading Slideshow -->
   <script>
