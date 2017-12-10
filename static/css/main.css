@@ -285,37 +285,39 @@ button {
 .footer {
   display: -ms-grid;
   display: grid;
+  grid-gap: 15px;
   grid-template-columns:
     [full-start] minmax(2em, 1fr)
-    [main-start] minmax(0, 65rem) [main-end]
+    [main-start] minmax(0, 32rem)
+    [main-middle] minmax(0, 32rem) [main-end]
     minmax(1em, 1fr) [full-end];
-  grid-template-rows:
-    [full-start] minmax(1em, 2rem)
-    [main-start] minmax(0, 8.5rem) [main-end]
-    minmax(2em, 2rem) [full-end];
   width: 100%;
   background-color: var(--main-color);
+  padding: 25px 0;
 }
 
-.footer > * {
-  grid-column: main;
+/* .footer > * {
   grid-row: main;
+} */
+
+.contact {
+  grid-column: main-start;
 }
 
-.footer-container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
-  grid-template-rows: repeat(2, auto);
-  grid-row-gap: 15px;
-  grid-column-gap: 5%;
+.navigation {
+  grid-column: main-middle;
+  justify-self: end;
 }
 
-.footer-container li {
+.copyright {
+  grid-column: full;
+}
+
+.footer li {
   list-style: none;
 }
 
-.footer-container a {
+.footer a {
   text-decoration: none;
 }
 
@@ -332,20 +334,21 @@ button {
   justify-self: start;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.945fr 1fr;
-  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  /* grid-column-gap: 20px; */
+  min-width: 313px;
 }
 
 .navigation {
   justify-self: end;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.85fr 1fr;
-  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  /* grid-column-gap: 20px; */
+  min-width: 313px;
 }
 
 .copyright {
-  grid-column: 1 / 3;
   text-align: center;
 }
 
@@ -356,7 +359,7 @@ button {
 
 .address,
 .about {
-  border-right: 1px solid var(--accent-color);
+  /* border-right: 1px solid var(--accent-color); */
   width: auto;
 }
 
@@ -1198,18 +1201,7 @@ button {
   border-top: 1px solid var(--content-color);
   margin-top: 60px;
   padding: 60px 0 0;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 15px;
-  /* grid-template-columns:
-    [full-start] minmax(2em, 1fr)
-    [main-start] minmax(0, 45rem) [main-end]
-    minmax(2em, 1fr) [full-end]; */
 }
-
-/* .blog-feed > * {
-  grid-column: main;
-} */
 
 .blog-feed .content-heading {
   text-align: center;
@@ -1540,5 +1532,22 @@ label {
   #h-bar > * {
     /* grid-column: main; */
     grid-row: main;
+  }
+}
+
+@media only screen and (max-device-width: 680px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 15px;
+  }
+
+  .contact,
+  .navigation,
+  .copyright {
+    grid-column: unset;
+    justify-self: center;
   }
 }
