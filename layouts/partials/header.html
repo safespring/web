@@ -1,3 +1,4 @@
+<!-- Full Navbar -->
 <div class="navbar">
   <div class="nav-flex">
     <a class="logo" href="{{ .Site.BaseURL }}">
@@ -42,3 +43,37 @@
     </nav>
   </div>
 </div>
+
+<!-- Mobile Navbar -->
+<nav id="h-bar" class="site-navigation" role="navigation">
+  <div class="h-container">
+    <a class="h-logo" href="{{ .Site.BaseURL }}">
+      <img src={{ "/img/1c_safespring_logotyp_vit_rgb_2x.png?crc=3947763373" | relURL }}>
+    </a>
+
+    <input id="toggle" type="checkbox" />
+    <label class="hamburger" for="toggle">
+      <div class="top"></div>
+      <div class="meat"></div>
+      <div class="bottom"></div>
+    </label>
+  
+    <ul class="h-menu">
+      <li class="menu-item">
+        <a class="link" href="/tjanster">VÅRT ERBJUDANDE</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="/pris">PRIS</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="/kundreferenser">REFERENSER</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="/blog">AKTUELLT</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="/support">SUPPORT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
