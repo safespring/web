@@ -462,9 +462,9 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(2em, 1fr)
-    [main-start] minmax(0, 45rem) [main-end]
-    minmax(2em, 1fr) [full-end];
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 50rem) [main-end]
+    minmax(1em, 1fr) [full-end];
 }
 
 .index-content > * {
@@ -1190,6 +1190,10 @@ button {
   align-items: center;
 }
 
+.tj-secure ol {
+    padding-left: 20px;
+  }
+
 .tj-secure ol li {
   color: var(--accent-color);
   font: var(--heavy-weight) 15px var(--mon-font);
@@ -1822,5 +1826,102 @@ label {
 
   .ts-content .s-top {
     grid-column: unset;
+  }
+
+  /* FONTS */
+
+  /* General */
+  #button {
+    font: var(--heavy-weight) 13px var(--mon-font);
+  }
+
+  .content-head {
+    font: var(--heavy-weight) 18px var(--mon-font);
+  }
+
+  .content-body {
+    font: var(--normal-weight) 14px var(--mon-font);
+  }
+
+  .content-heading {
+    font: var(--heavy-weight) 16px var(--hind-font);
+  }
+
+  .content-heading h2 {
+    font: var(--heavy-weight) 16px var(--hind-font);
+  }
+
+  /* Navbar */
+  .navbar {
+    font: var(--heavy-weight) 15px var(--hind-font);
+  }
+
+  /* Footer */
+  .footer-head {
+    font: var(--heavy-weight) 13px var(--hind-font);
+  }
+
+  .footer-text {
+    font: var(--normal-weight) 13px var(--mon-font);
+  }
+
+  /* Index Heading */
+  .heading-content h1 {
+    font: var(--heavy-weight) 38px var(--hind-font);
+  }
+
+  .heading-content p {
+    font: var(--heavy-weight) 16px var(--mon-font);
+  }
+
+
+  /* Kontakt */
+  .adr h3,
+  .cont h3 {
+    font: var(--heavy-weight) 16px var(--hind-font);
+  }
+
+  .adr p,
+  .cont a {
+    font: var(--normal-weight) 14px var(--mon-font);
+  }
+
+  .form-text,
+  .form-message {
+    font: var(--heavy-weight) 16px var(--hind-font);
+  }
+
+  /* Support */
+  .sup-bottom a {
+    font: var(--heavy-weight) 15px var(--hind-font);
+  }
+
+  /* Offers */
+  .sb-heading {
+    font: var(--heavy-weight) 14px var(--hind-font);
+  }
+
+  .ss-heading,
+  .ss-body {
+    font: var(--normal-weight) 14px var(--mon-font);
+  }
+
+  /* Tack */
+  .tack-heading h1 {
+    font: var(--heavy-weight) 35px var(--hind-font);
+  }
+
+  .tack-heading p {
+    font: var(--heavy-weight) 18px var(--hind-font);
+  }
+
+  /* Tjanster */
+  .tj-secure ol li {
+    font: var(--normal-weight) 14px var(--mon-font);
+  }
+
+  /* Pris */
+  .pris-heading {
+    font: var(--heavy-weight) 14px var(--hind-font);
   }
 }
