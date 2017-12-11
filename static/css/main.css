@@ -662,23 +662,49 @@ button {
   grid-row: main;
 }
 
-.kun-top img {
-  max-width: 680px;
-  object-fit: contain;
+.kun-top,
+.kun-bottom {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
 }
 
-.kun-bottom img {
-  max-width: 680px;
+.kun-top .kun-img {
+  background: #f9ffff url("/img/chalmers-u15838-3-fr_2x.jpg?crc=176662249")
+    no-repeat 50% 50%;
+  background-size: cover;
 }
 
-.kun-side img {
-  max-width: 340px;
+.kun-bottom .kun-img {
+  background: #f9ffff url("/img/safespring_musikhogskolan.jpg?crc=4038356576")
+    no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.kun-side-img {
+  background: #f9ffff url("/img/safespring_musikverket.jpg?crc=4018464081")
+    no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.kun-img {
+  width: 680px;
+  height: 320px;
+  margin-bottom: 15px;
+}
+
+.kun-side-img {
+  height: 430px;
+  width: 320px;
+  margin-bottom: 15px;
 }
 
 .kun-container {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 2fr 0.5fr;
+  grid-template-columns: 680px 320px;
   grid-gap: 20px;
 }
 
@@ -689,7 +715,6 @@ button {
 .kun-main {
   display: -ms-grid;
   display: grid;
-  /* grid-template-rows: 52% 48%; */
   grid-gap: 20px;
 }
 
@@ -699,9 +724,8 @@ button {
   background-color: var(--content-color);
 }
 
-.kun-top,
 .kun-bottom {
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 
 .kun-top span,
@@ -710,16 +734,6 @@ button {
 }
 
 .kun-top a {
-  font: var(--heavy-weight) 15px var(--mon-font);
-  line-height: 15px;
-  color: var(--text-color);
-  text-align: center;
-  outline: none;
-  border: none;
-  background-color: var(--button-color);
-  border-radius: 3px;
-  padding: 5px 15px;
-  margin: 0;
   float: right;
 }
 
@@ -732,10 +746,18 @@ button {
   align-self: stretch;
 }
 
-.kun-top div,
-.kun-bottom div,
-.kun-side div {
+.kun-top .content-heading,
+.kun-top .content-body,
+.kun-bottom .content-heading,
+.kun-bottom .content-body,
+.kun-side .content-heading,
+.kun-side .content-body {
   padding: 0 20px;
+}
+
+.kun-bottom,
+.kun-side {
+  padding-bottom: 20px;
 }
 /***/
 
@@ -1511,6 +1533,7 @@ label {
 
 /* MEDIA QUERIES */
 @media only screen and (max-device-width: 870px) {
+  /* Navbar */
   .navbar {
     display: none;
   }
@@ -1539,9 +1562,13 @@ label {
     /* grid-column: main; */
     grid-row: main;
   }
+
+  /* Kundreferenser */
+
 }
 
 @media only screen and (max-device-width: 750px) {
+  /* Footer */
   .footer {
     display: -ms-grid;
     display: grid;
@@ -1571,6 +1598,7 @@ label {
 }
 
 @media only screen and (max-device-width: 650px) {
+  /* Kontakt */
   .kontakt {
     display: -ms-grid;
     display: grid;
