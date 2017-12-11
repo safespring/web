@@ -269,7 +269,7 @@ button {
     [main-start] minmax(0, 65rem) [main-end]
     minmax(1em, 1fr) [full-end];
   grid-template-rows:
-    [full-start] minmax(12em, 1fr)
+    [full-start] minmax(10em, 1fr)
     [main-start] minmax(7em, auto) [main-end]
     minmax(3.125em, 0.5fr) [full-end];
   text-align: center;
@@ -278,6 +278,10 @@ button {
 .heading-sub > * {
   grid-column: main;
   grid-row: main;
+}
+
+.heading-sub .heading-content {
+  text-shadow: 1px 1px 1px  var(--alt-color);
 }
 /***/
 
@@ -440,6 +444,7 @@ button {
   font: var(--heavy-weight) 15px var(--mon-font);
   color: var(--alt-color);
   line-height: 23px;
+  margin: 5px 0;
 }
 
 .content-body p:last-child {
@@ -493,7 +498,7 @@ button {
 
 .content-heading h2 {
   margin: 0;
-  padding: 0 0 10px;
+  padding: 0;
   font: var(--heavy-weight) 18px var(--hind-font);
   color: var(--heading-color);
   text-transform: uppercase;
@@ -823,6 +828,7 @@ button {
   display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #om-or {
@@ -1617,6 +1623,26 @@ label {
   .email {
     margin-left: 8px;
   }
+
+  /* Om */
+  .content-om {
+    background-color: var(--text-color);
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+  }
+
+  .om-sidebar {
+    display: -ms-grid;
+    display: grid;
+    padding: 35px 0;
+    grid-template-columns:
+      [full-start] minmax(1em, 1fr)
+      [main-start] minmax(0, 320px) [main-end]
+      minmax(1em, 1fr) [full-end];
+  }
+
 }
 
 @media only screen and (max-device-width: 650px) {
