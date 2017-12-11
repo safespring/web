@@ -1489,18 +1489,18 @@ label {
 }
 
 .hamburger {
-  width: 50px;
+  /* width: 50px; */
   height: 45px;
-  top: 10px;
-  right: 20px;
+  /* top: 10px;
+  right: 20px; */
   z-index: 120;
   justify-self: end;
 }
 
 .hamburger div {
   position: relative;
-  width: 50px;
-  height: 5px;
+  width: 40px;
+  height: 3px;
   border-radius: 3px;
   background-color: var(--text-color);
   margin-top: 7px;
@@ -1521,7 +1521,7 @@ label {
 #toggle:checked + .hamburger .meat {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin-top: -5px;
+  margin-top: -3px;
 }
 
 #toggle:checked + .hamburger .bottom {
