@@ -1388,7 +1388,7 @@ button {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-gap: 20px;
+  grid-column-gap: 20px;
 }
 
 #toggle-t,
@@ -1439,6 +1439,14 @@ label {
 #checkbox-sc:not(:checked) ~ #toggle-sc {
   clip: rect(0 0 0 0);
   position: absolute;
+}
+
+#toggle-sc .desk-button {
+  display: block;
+}
+
+#toggle-sc .mobile-button {
+  display: none;
 }
 /***/
 
@@ -1591,7 +1599,14 @@ label {
     grid-row: main;
   }
 
-  /* Kundreferenser */
+  /* Pris */
+  #toggle-sc .desk-button {
+    display: none;
+  }
+
+  #toggle-sc .mobile-button {
+    display: block;
+  }
 
 }
 
@@ -1660,4 +1675,69 @@ label {
     display: none;
   }
 
+  /* Pris */
+  .toggle-sc-content {
+    grid-column-gap: 10px;
+  }
+
+  .pris-content {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .pris-top,
+  .pris-heading,
+  .pris-column-cell,
+  .pris-center-cell {
+    grid-column: unset;
+  }
+
+  .pris-center-cell {
+    grid-template-columns: auto;
+  }
+
+}
+
+@media only screen and (max-device-width: 550px) {
+  .pris-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto minmax(200px, 45rem) auto;
+    grid-gap: 20px;
+  }
+
+  #toggle-sb,
+  #toggle-ss,
+  #toggle-sc {
+    grid-column: 1 / 4;
+  }
+
+  .main-button {
+    grid-column: 2/2;
+  }
+
+  .toggle-sc-content {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(7, auto);
+  }
+
+  .mobile-button {
+
+  }
+
+  #toggle-t,
+  #toggle-s,
+  #toggle-m,
+  #toggle-l,
+  #toggle-x,
+  #toggle-xx {
+    grid-column: 1/3;
+    grid-gap: 30px;
+  }
+
+  
 }
