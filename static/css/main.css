@@ -1621,6 +1621,11 @@ label {
     align-items: center;
   }
 
+  /* Tack */
+  .tack-content {
+    padding: 80px 0;
+  }
+
 }
 
 @media only screen and (max-device-width: 750px) {
