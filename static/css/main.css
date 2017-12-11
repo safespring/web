@@ -648,7 +648,7 @@ button {
   display: grid;
   grid-template-columns:
     [full-start] minmax(2em, 1fr)
-    [main-start] minmax(0, 65rem) [main-end]
+    [main-start] minmax(auto, 65rem) [main-end]
     minmax(2em, 1fr) [full-end];
   grid-template-rows:
     [full-start] minmax(4em, 1fr)
@@ -662,6 +662,7 @@ button {
   grid-row: main;
 }
 
+
 .kun-top,
 .kun-bottom {
   display: -ms-grid;
@@ -669,6 +670,7 @@ button {
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
+  justify-self: center;
 }
 
 .kun-top .kun-img {
@@ -690,14 +692,14 @@ button {
 }
 
 .kun-img {
-  width: 680px;
+  max-width: 680px;
   height: 320px;
   margin-bottom: 15px;
 }
 
 .kun-side-img {
   height: 430px;
-  width: 320px;
+  max-width: 320px;
   margin-bottom: 15px;
 }
 
@@ -716,6 +718,7 @@ button {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
+  justify-self: center;
 }
 
 .kun-top,
@@ -743,7 +746,7 @@ button {
 }
 
 .kun-side {
-  align-self: stretch;
+  justify-self: center;
 }
 
 .kun-top .content-heading,
@@ -1532,6 +1535,30 @@ label {
 
 
 /* MEDIA QUERIES */
+@media only screen and (max-device-width: 1024px) {
+  /* Kundreferenser */
+  .kun-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: minmax(auto, 680px);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .kun-img {
+    max-width: 680px;
+    height: 220px;
+    margin-bottom: 15px;
+  }
+
+  .kun-side-img {
+    max-width: 680px;
+    height: 220px;
+    margin-bottom: 15px;
+  }
+}
+
 @media only screen and (max-device-width: 870px) {
   /* Navbar */
   .navbar {
@@ -1542,10 +1569,6 @@ label {
     font: var(--heavy-weight) 16px var(--hind-font);
     display: -ms-grid;
     display: grid;
-    /* grid-template-columns:
-      [full-start] minmax(2em, 1fr)
-      [main-start] minmax(0, 65rem) repeat(2, 1fr)  [main-end]
-      minmax(2em, 1fr) [full-end]; */
     grid-template-rows:
       [full-start] minmax(10px, 1fr)
       [main-start] minmax(0, 45px) [main-end]
@@ -1559,7 +1582,6 @@ label {
   }
 
   #h-bar > * {
-    /* grid-column: main; */
     grid-row: main;
   }
 
@@ -1606,4 +1628,10 @@ label {
     grid-template-rows: repeat(2, 0.5fr) repeat(2, 1fr);
     grid-gap: 2%;
   }
+
+  /* Kundreferenser */
+  #kun-body {
+    display: none;
+  }
+
 }
