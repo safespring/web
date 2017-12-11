@@ -49,13 +49,14 @@ button {
   background-color: var(--button-color);
   border-radius: 3px;
   padding: 10px 25px;
-  text-align: center;
+  /* text-align: center; */
   margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #button:hover {
@@ -621,7 +622,7 @@ button {
 .form {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
   grid-gap: 5px;
 }
@@ -1788,4 +1789,38 @@ label {
     grid-gap: 5px;
   }
   
+  /* Offers */
+  .s-main {
+    background-color: var(--content-color);
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+  }
+
+  .s-sidebar {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns:
+      [full-start] minmax(1em, auto)
+      [main-start] minmax(0, 260px) [main-end]
+      minmax(1em, auto) [full-end];
+  }
+
+  .s-sidebar > * {
+    grid-column: main;
+  }
+
+  .ts-content {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    padding-bottom: 0;
+  }
+
+  .ts-content .s-top {
+    grid-column: unset;
+  }
 }
