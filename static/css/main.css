@@ -29,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  overflow: scroll;
+  overflow: auto;
   height: 100%;
 }
 
@@ -685,7 +685,7 @@ button {
 }
 
 .kun-top .kun-img {
-  background: #f9ffff url("/img/chalmers-u15838-3-fr_2x.jpg?crc=176662249")
+  background: #f9ffff url("/img/chalmers.jpg?crc=176662249")
     no-repeat 50% 50%;
   background-size: cover;
 }
