@@ -1750,6 +1750,24 @@ label {
 }
 
 @media only screen and (max-device-width: 550px) {
+  /* CHALMERS */
+  .content-chalmers {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .ch-sidebar {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns:
+      [full-start] minmax(1em, 1fr)
+      [main-start] minmax(0, 300px) [main-end]
+      minmax(1em, 1fr) [full-end];
+  }
+
+  /* Pris */
   .pris-container {
     display: -ms-grid;
     display: grid;
