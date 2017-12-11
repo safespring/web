@@ -870,7 +870,7 @@ button {
 .sup-content {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 0.7fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
 }
 
@@ -1606,6 +1606,19 @@ label {
 
   #toggle-sc .mobile-button {
     display: block;
+  }
+
+  /* SUPPORT */
+  .sup-content {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+    width: 100%;
+  }
+
+  .sup-bottom {
+    align-items: center;
   }
 
 }
