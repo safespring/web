@@ -51,6 +51,11 @@ button {
   padding: 10px 25px;
   text-align: center;
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #button:hover {
@@ -1140,9 +1145,9 @@ button {
   display: grid;
   grid-gap: 45px;
   grid-template-columns:
-    [full-start] minmax(2em, 1fr)
+    [full-start] minmax(1em, 1fr)
     [main-start] minmax(0, 45rem) [main-end]
-    minmax(2em, 1fr) [full-end];
+    minmax(1em, 1fr) [full-end];
 }
 
 .tj-content > * {
@@ -1202,6 +1207,7 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  margin: 20px 0;
 }
 
 .tj-cloud h2,
@@ -1212,7 +1218,7 @@ button {
 .tj-heading h2 {
   font: var(--heavy-weight) 24px var(--hind-font);
   color: var(--main-color);
-  margin: 20px 0;
+  margin: 0;
 }
 
 .tj-heading h2:last-child {
@@ -1626,6 +1632,26 @@ label {
     padding: 80px 0;
   }
 
+  /* Tjanster */
+  .tj-offers {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 25px;
+  }
+
+  .tj-backup,
+  .tj-storage,
+  .tj-compute {
+    /* grid-column: 1/3; */
+  }
+
+  .tj-cloud,
+  .tj-secure {
+    grid-column: full;
+  }
+
 }
 
 @media only screen and (max-device-width: 750px) {
@@ -1743,10 +1769,6 @@ label {
     grid-template-rows: repeat(7, auto);
   }
 
-  .mobile-button {
-
-  }
-
   #toggle-t,
   #toggle-s,
   #toggle-m,
@@ -1757,5 +1779,13 @@ label {
     grid-gap: 30px;
   }
 
+  /* Tjanster */
+  .tj-heading {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5px;
+  }
   
 }
