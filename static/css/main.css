@@ -336,7 +336,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* grid-column-gap: 20px; */
-  min-width: 313px;
+  min-width: 320px;
 }
 
 .navigation {
@@ -345,7 +345,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* grid-column-gap: 20px; */
-  min-width: 313px;
+  min-width: 320px;
 }
 
 .copyright {
@@ -358,12 +358,6 @@ button {
 }
 
 .address,
-.about {
-  /* border-right: 1px solid var(--accent-color); */
-  width: auto;
-}
-
-.address,
 .email,
 .about,
 .offer {
@@ -373,6 +367,19 @@ button {
   display: flex;
   flex-direction: column;
   padding: 5px 0;
+}
+
+.email,
+.offer {
+  justify-self: end;
+}
+
+.address,
+.about {
+  justify-self: start;
+  border-right: 1px solid var(--accent-color);
+  width: auto;
+  padding-right: 25px;
 }
 
 .footer-head {
@@ -1535,13 +1542,13 @@ label {
   }
 }
 
-@media only screen and (max-device-width: 680px) {
+@media only screen and (max-device-width: 750px) {
   .footer {
     display: -ms-grid;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
-    grid-gap: 15px;
+    grid-gap: 25px;
   }
 
   .contact,
@@ -1549,5 +1556,17 @@ label {
   .copyright {
     grid-column: unset;
     justify-self: center;
+  }
+
+  .address {
+    padding-right: 24.5px;
+  }
+
+  .about {
+    padding-right: 34px;
+  }
+
+  .email {
+    margin-left: 8px;
   }
 }
