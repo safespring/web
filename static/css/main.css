@@ -24,6 +24,7 @@
 
 html {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
 }
 
