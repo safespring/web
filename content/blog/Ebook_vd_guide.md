@@ -12,7 +12,7 @@ steget till en mer flexibel infrastrukur.
 [![ebok](../images/ebook-banner.png)][ebook]
 
 Guiden innehåller praktiska råd och tips kring vanliga misstag och hur man kan
-tänka för att för att lyckas med sitt migreringsprojekt. Guiden finns att ladda
+tänka för att lyckas med sitt migreringsprojekt. Guiden finns att ladda
 ned [här][ebook].
 
 [ebook]: ../../marketing/ebook_vd_guide.html
