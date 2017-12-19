@@ -459,7 +459,7 @@ button {
 }
 
 .content-body a {
-  color: var(--alt-color);
+  color: var(--main-color);
 }
 
 .content-body a:hover{
