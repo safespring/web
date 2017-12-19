@@ -458,6 +458,14 @@ button {
   margin-bottom: 0;
 }
 
+.content-body a {
+  color: var(--alt-color);
+}
+
+.content-body a:hover{
+  color: var(--link-color);
+}
+
 /* INDEX */
 .index-content {
   display: -ms-grid;
