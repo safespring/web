@@ -38,3 +38,31 @@ website at https://www.safespring.com/
 
 [3]: https://github.com/digitalcraftsman/hugo-type-theme
 [4]: https://gohugo.io/themes/customizing/
+
+### more notes
+
+Hugo has a feature where you can redirect old links to new ones. I used it on a personal blog earlier this year.
+
+So for example, `Cleverlaziness.com/post/Automating%20RSS%20Feeds%20With%20IFTTT/` can redirect to `Cleverlaziness.com/2017/07/31/automating-rss-feeds-with-ifttt/`
+
+Yeah, I can work it into the page and the design template. (edited)
+
+
+[18:45]
+So if any changes happen to the structure of the page, users can still use their old links
+
+
+[18:45]
+Not sure if that’s addresses your concerns.
+
+
+bruvik
+[18:47]
+I think that will work
+
+
+Juan Villela [18:51]
+Cool. The code is quite simple, too. Just add this to the blog post MD file frontmatter:
+```-aliases = [
+-    "/old-link/",
+-    "/new-link/"```
