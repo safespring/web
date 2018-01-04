@@ -1,6 +1,6 @@
 +++
 title = "Meltdown: Sårbarheter i moderne mikroprosessorer"
-date = "2018-01-03"
+date = "2018-01-04"
 draft = false
 tags = ["vedlikehold"]
 showthedate = true
