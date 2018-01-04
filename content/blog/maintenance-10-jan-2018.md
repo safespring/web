@@ -14,7 +14,7 @@ Vi jobber med å skaffe oss oversikt over omfanget, og vil i dagene fremover opp
 
 ## Anbefaling til kunder
 
-Vi anbefaler at alle sørger for å holde operativsystemer oppdatert, og installere patcher fra leverandører. For de fleste linux-distroer er det sluppet oppdateringer som dekker enkelte av sårbarhetene. For Windows wil det komme oppdateringer snart. 
+Vi anbefaler at alle sørger for å holde operativsystemer oppdatert, og installere patcher fra leverandører. For de fleste linux-distroer er det sluppet oppdateringer som dekker enkelte av sårbarhetene. For Windows vil det komme oppdateringer snart. 
 
 [Informasjon fra RedHat](https://access.redhat.com/security/vulnerabilities/speculativeexecution?sc_cid=701f2000000tsLNAAY&)
 
