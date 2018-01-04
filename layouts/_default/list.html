@@ -26,16 +26,16 @@
   <!-- CONTENT -->
   <main class="content-main">
     <div class="">
-       {{ range .Data.Pages.GroupByDate "2006" }}
-    </div>
+      {{ range .Data.Pages.GroupByDate "2006" }}
 
-    <div class="content-container">
-      {{ range .Pages }} 
-        {{ .Render "li"}} 
-        {{ end }} 
-      {{ end }}
-    </div>
+      <div class="content-container">
+        {{ range .Pages }} 
+          {{ .Render "li"}} 
+          {{ end }} 
+        {{ end }}
+      </div>
     
+    </div>
   </main>
 
   <!-- FOOTER -->
