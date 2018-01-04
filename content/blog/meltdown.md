@@ -10,7 +10,7 @@ Safespring er kjent med flere sårbarheter ("Meltdown" og "Spectre") som rammer 
 
 For de som vil lese mer om sårbarhetene har de fått sin [eget nettsted](https://meltdownattack.com)
 
-Vi jobber med å skaffe oss oversikt over omfanget, og vil i dagene fremover oppdatere systemene våre med tilgjengelige sikkerhetsoppdateringer. Vi forventer ikke at oppdateringer skal ha påvirkning kunder, men vi anbefaler at man følger med på [vår statusside](http://status.safespring.com).
+Vi jobber med å skaffe oss oversikt over omfanget, og vil i dagene fremover oppdatere systemene våre med tilgjengelige sikkerhetsoppdateringer. Dette vil påvirke kundene våre i forskjellig grad, i hovedsak som omstart av kjørende systemer. Vi anbefaler at man følger med på [vår statusside](http://status.safespring.com).
 
 ## Anbefaling til kunder
 
@@ -20,7 +20,7 @@ Vi anbefaler at alle sørger for å holde operativsystemer oppdatert, og install
 
 ## Safespring som skyleverandør
 
-Safespring produserer skytjenester lokalt fra datasentre i Norge og Sverige. Våre tjenester er tilgjengelige for alle universiteter, høgskoler og utdanningsinstitusjoner gjennom avtaler med Uninett i Norge og Sunett i Sverige. Som skyleverandør er vi opptatt av å levere tjenester med høyt sikkerhetsnivå. Gjennom å levere tjenester fra lokale datasenter, og med dedikerte ressurser til målgruppen vår, bidrar vi til å begrense påvirkningen fra denne typen sårbarheter.
+Safespring produserer skytjenester lokalt fra datasentre i Norge og Sverige. Våre tjenester er tilgjengelige for alle universiteter, høgskoler og utdanningsinstitusjoner gjennom avtaler med UNINETT i Norge og SUNET i Sverige. Som skyleverandør er vi opptatt av å levere tjenester med høyt sikkerhetsnivå. Gjennom å levere tjenester fra lokale datasenter, og med dedikerte ressurser til målgruppen vår, bidrar vi til å begrense påvirkningen fra denne typen sårbarheter.
 
 ## Lenker til mer informasjon
 
