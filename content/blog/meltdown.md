@@ -20,7 +20,22 @@ Vi anbefaler at alle sørger for å holde operativsystemer oppdatert, og install
 
 ## Safespring som skyleverandør
 
-Safespring produserer skytjenester lokalt fra datasentre i Norge og Sverige. Våre tjenester er tilgjengelige for alle universiteter, høgskoler og utdanningsinstitusjoner gjennom avtaler med UNINETT i Norge og SUNET i Sverige. Som skyleverandør er vi opptatt av å levere tjenester med høyt sikkerhetsnivå. Gjennom å levere tjenester fra lokale datasenter, og med dedikerte ressurser til målgruppen vår, bidrar vi til å begrense påvirkningen fra denne typen sårbarheter.
+Safespring produserer skytjenester lokalt fra datasentre i Norge og Sverige. Våre tjenester er tilgjengelige for alle universiteter, høgskoler og utdanningsinstitusjoner gjennom avtaler med Uninett i Norge og Sunet i Sverige. Som skyleverandør er vi opptatt av å levere tjenester med høyt sikkerhetsnivå. Gjennom å levere tjenester fra lokale datasenter, og med dedikerte ressurser til målgruppen vår, bidrar vi til å begrense påvirkningen fra denne typen sårbarheter.
+
+
+## Oppdatert status:
+
+### Fredag 5. februar
+
+Vi har i løpet av dagen bygget ny kjerne og konfigurasjon for compute hosts. Vi vil teste denne grundig før vi setter den i produksjon.
+
+Det har blitt publisert oppdatert informasjon fra qemu, og vi mener at patching av kjernen på compute hosts foreløpig skal være tilstrekkelig.
+
+* [Informasjon fra Qemu.org](https://www.qemu.org/2018/01/04/spectre/)
+
+### Mandag 8 februar
+
+Vi har i løpet av dagen oppdatert test-systemer med patchet kjerne, og kjører disse med last. Så snart vi har verifisert at ny kjerne oppfører seg som forventet vil vi fortløpende oppdatere compute-noder på datasentrene i Norge og Sverige.
 
 ## Lenker til mer informasjon
 
