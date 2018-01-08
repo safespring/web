@@ -37,6 +37,20 @@ Det har blitt publisert oppdatert informasjon fra qemu, og vi mener at patching 
 
 Vi har i løpet av dagen oppdatert test-systemer med patchet kjerne, og kjører disse med last. Så snart vi har verifisert at ny kjerne oppfører seg som forventet vil vi fortløpende oppdatere compute-noder på datasentrene i Norge og Sverige.
 
+## Oppdatert status:
+
+### Fredag 5. januar
+
+Vi har i løpet av dagen bygget ny kjerne og konfigurasjon for compute hosts. Vi vil teste denne grundig før vi setter den i produksjon.
+
+Det har blitt publisert oppdatert informasjon fra qemu, og vi mener at patching av kjernen på compute hosts foreløpig skal være tilstrekkelig.
+
+* [Informasjon fra Qemu.org](https://www.qemu.org/2018/01/04/spectre/)
+
+### Mandag 8 januar
+
+Vi har i løpet av dagen oppdatert test-systemer med patchet kjerne, og kjører disse med last. Så snart vi har verifisert at ny kjerne oppfører seg som forventet vil vi fortløpende oppdatere compute-noder på datasentrene i Norge og Sverige.
+
 ## Lenker til mer informasjon
 
 * Google [Project Zero blog](https://googleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html)
