@@ -44,6 +44,10 @@ button {
   border: none;
 }
 
+twitter-follow-button {
+  line-height: 8px
+}
+
 #button {
   font: var(--heavy-weight) 15px var(--mon-font);
   color: var(--text-color);
@@ -95,7 +99,7 @@ button {
 .nav-flex {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-column-gap: 5px;
   align-items: end;
 }
