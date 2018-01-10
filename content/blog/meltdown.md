@@ -36,6 +36,14 @@ Det har blitt publisert oppdatert informasjon fra qemu, og vi mener at patching 
 
 Vi har i løpet av dagen oppdatert test-systemer med patchet kjerne, og kjører disse med last. Så snart vi har verifisert at ny kjerne oppfører seg som forventet vil vi fortløpende oppdatere compute-noder på datasentrene i Norge og Sverige.
 
+### Tirsdag 9 januar
+
+Patchingen av datasenteret i Norge ble fullført i løpet av dagen. 
+
+### Onsdag 10. januar
+
+Vi fortsetter patching av datasenteret i Sverige.
+
 ## Lenker til mer informasjon
 
 * Google [Project Zero blog](https://googleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html)
