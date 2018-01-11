@@ -44,6 +44,10 @@ Patchingen av datasenteret i Norge ble fullført i løpet av dagen.
 
 Vi fortsetter patching av datasenteret i Sverige.
 
+### Torsdag 11. januar
+
+Sikkerhetspatching ferdigstilt i går kveld - for denne gang. Vi følger med videre, vær trygg!
+
 ## Lenker til mer informasjon
 
 * Google [Project Zero blog](https://googleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html)
