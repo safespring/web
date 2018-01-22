@@ -8,6 +8,8 @@ showthedate = true
 
 Safespring er kjent med flere sårbarheter ("Meltdown" og "Spectre") som rammer alle operativsystemer på moderne mikroprosessorer, og som kan gjøre det mulig for en prosess å lese andre prosessers minne. Sårbarhetene rammer både personlige datamaskiner, mobile enheter og skytjenester.
 
+<!--more-->
+
 For de som vil lese mer om sårbarhetene har de fått sin [eget nettsted](https://meltdownattack.com)
 
 Vi jobber med å skaffe oss oversikt over omfanget, og vil i dagene fremover oppdatere systemene våre med tilgjengelige sikkerhetsoppdateringer. Dette vil påvirke kundene våre i forskjellig grad, i hovedsak som omstart av kjørende systemer. Vi anbefaler at man følger med på [vår statusside](http://status.safespring.com).
