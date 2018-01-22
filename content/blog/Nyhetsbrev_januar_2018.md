@@ -1,7 +1,7 @@
 +++
 title = "Nyhetsbrev januar 2018"
-date = "2018-01-18"
-draft = true
+date = "2018-01-22"
+draft = false
 tags = ["nyhetsbrev, backup, compute"]
 showthedate = false
 +++
