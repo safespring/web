@@ -15,6 +15,8 @@ Vi har laget en guide for å bistå ved valg av backuptjeneste. Våre backuptjen
 Dessuten er Safespring fra i høst parter med Microsoft,
 og vi kan dermed tilby imager med Windows Server operativsystem i 
 compute-plattformen.
+
+<!--more-->
  
 ### Safespring Backup
 

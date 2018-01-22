@@ -8,6 +8,8 @@ showthedate = true
 
 Safespring har författat en praktisk [guide][ebook] för vädledning in i molnet.
 
+<!--more-->
+
 # [![ebok](../images/ebook-banner.png)][ebook]
 
 Guiden finns att ladda ned [här][ebook].
