@@ -8,7 +8,7 @@ showthedate = true
 
 Safespring bjuder in till inspirationsfrukost kring nya teknologier och moderna sätt att bygga plattformar tillsammans med Johan Staël von Holstein.
 
-För anmälan gå [hit][inspirationsfrukost].
+För anmälan gå [hit][insp].
 
-[inspirationsfrukost]: ../../marketing/safespring-inspirationsfrukost.html
+[insp]: ../../marketing/safespring-inspirationsfrukost.html
 
