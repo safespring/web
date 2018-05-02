@@ -15,10 +15,37 @@
 <main class="s-main">
   <div class="s-content">
     <div class="ts-content">
-      <div class="s-top">
-        <h2 class="content-heading">Intresseanmälan:&nbsp; SAFESPRING COMPUTE</h2>
-	<p class="content-body">Kontakt oss för att anmäla ert intresse.</p>
-      </div>
+<form id="up-form" name="form_9549ue4297132164d42908fb46b7181d4218b" action="https://power.upsales.com/api/external/formSubmit" method="POST" style="box-shadow: none;">
+  <h2 class="content-heading">Testa Safespring Compute</h2>
+  <div class="content-body"><p>Skriv in uppgifterna i formuläret nedan så kontaktar vi dig och sätter tillsammans upp ett testkonto för er.</p>
+  <div>
+    <input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Namn...">
+  </div>
+  <div>
+    <input maxlength="512" type="text" name="Contact.title" required="required" placeholder="Titel...">
+  </div>
+  <div>
+    <input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag...">
+  </div>
+  <div class="email">
+    <input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="E-mail...">
+  </div>
+  <div>
+    <input maxlength="512" type="text" name="Contact.phone" required="required" placeholder="Telefon...">
+  </div>
+  <!-- REQUIRED FIELDS -->
+  <input type="hidden" name="formCid" value="9549">
+  <input type="hidden" name="formId" value="9549ue4297132164d42908fb46b7181d4218b">
+  <input type="hidden" name="isFrame" value="false">
+  <input type="text" value="" name="validation" style="display: none;">
+  <!-- END OF REQUIRED FIELDS -->
+  <button type="submit" id="button">Skicka in förfrågan</button>
+</form>
+<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
+<script>
+  function onSubmit(e){var t=!0,n=!0;typeof window.__validEmail!="undefined"&&(n=window.__validEmail,t=!1);if(typeof n=="boolean"&&n&&!t)validateForm(e,"https://www.safespring.se/tack/");else{e.preventDefault();var r=!0,i=setInterval(function(){var n=window._bEmValid;if(typeof window.__validEmail!="undefined"||!n)r=window.__validEmail,t=!1;if(typeof r=="boolean"&&r||!t)clearInterval(i),validateForm(e,"https://www.safespring.se/tack/")},300)}}function validateForm(e,t){e.preventDefault();var n=document.getElementsByName("formId")[0].value,r=document.forms["form_"+n],i=r.querySelectorAll("input, textarea, select");for(var s=0;s<i.length;s++)i[s].type==="text"&&(i[s].value=i[s].value.trim());if(window.grecaptcha===undefined||window.grecaptcha.getResponse()!==""){var o=[];for(var s=0;s<i.length;s++)o.push(i[s].name+"="+encodeURI(i[s].value));var u=o.join("&");u+="&isAjax=true";var a=window._paq||null,f=new XMLHttpRequest;f.open("POST",r.action),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(u),f.onload=function(){if(f.status===200)if(t)a&&a.push&&a.push(["trackLink","https://post.upsales.com/"+f.responseText,"link"]),typeof _uaq!="undefined"&&_uaq("form="+f.responseText),window.top.location.href=t;else{var e=document.getElementById("up-form"),n=document.getElementById("up-form-thanks");e.style.display="none",n.style.display="block",a&&a.push&&a.push(["trackLink","https://post.upsales.com/"+f.responseText,"link"]),_uaq&&_uaq("form="+f.responseText)}else console.log("AJAX ERROR",f.status)}}else{var l=document.getElementById("recaptcha-error"),c=document.getElementsByClassName("g-recaptcha");l.style.display="none",c&&c.length&&console.log("handle this later")}}var form=document.getElementById("up-form");form.addEventListener("submit",onSubmit)
+</script>
+</div>
 <!--
       <form class="form" method="post" enctype="multipart/form-data" action="">
         <input class="form-text" type="text" spellcheck="false" name="name" tabindex="1" placeholder="Ditt namn" required/>
