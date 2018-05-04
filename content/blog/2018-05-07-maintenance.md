@@ -8,7 +8,11 @@ showthedate = true
 
 ## Maintenance in Stockholm [sto1] datacentre
 
-This post describes planned work on our compute and storage services at our datacentre in Stockholm monday may 7. from 17:00-22:00 CEST. All impacted customers have previously been informed by email.
+This post describes planned work on our compute and storage services at 
+our datacentre in Stockholm monday may 7. from 17:00-22:00 CEST. 
+All impacted customers have previously been informed by email.
+
+<!--more-->
 
 ### [sto1] Storage (S3) maintenance 2018-05-07 17:00-22:00
 
