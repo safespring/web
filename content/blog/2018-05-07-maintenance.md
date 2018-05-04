@@ -1,5 +1,5 @@
 +++
-title = "Data "
+title = "Datacentre maintenance in Stockholm"
 date = "2018-05-04"
 draft = false
 tags = ["compute, storage, maintenance"]
