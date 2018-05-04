@@ -899,21 +899,28 @@ input[type=text], [type=email] {
 .tj-content {
   display: -ms-grid;
   display: grid;
-  grid-gap: 45px;
-  grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(45em, 5rem)[main-end] minmax(1em, 1fr)[full-end]
+  grid-gap: 0px;
+  grid-template-columns:
+    [full-start] minmax(0px, 1fr)
+    [main-start] minmax(0px, 45rem) [main-end]
+    minmax(0px, 1fr) [full-end];
 }
-.tj-content>* {
-  grid-column: main
+
+.tj-content > * {
+  grid-column: main;
 }
-.tj-content>.tj-offers {
-  grid-column: full
+
+.tj-content > .tj-offers {
+  grid-column: 100%
 }
+
 .tj-offers {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px
+  grid-template-columns: repeat(auto, 1fr);
+  grid-gap: 45px;
 }
+
 .tj-backup,
 .tj-storage,
 .tj-compute {
@@ -925,8 +932,9 @@ input[type=text], [type=email] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
+
 .tj-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -934,49 +942,60 @@ input[type=text], [type=email] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
+
 .tj-secure ol {
-  padding-left: 20px
-}
+    padding-left: 20px;
+  }
+
 .tj-secure ol li {
   color: var(--accent-color);
-  font: var(--heavy-weight) 15px var(--mon-font)
+  font: var(--heavy-weight) 15px var(--mon-font);
 }
+
 .tj-secure span {
-  padding-left: 10px
+  padding-left: 10px;
 }
+
 .tj-offers img {
-  width: 95px
+  width: 95px;
 }
+
 .tj-heading {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  margin: 20px 0
+  margin: 20px 0;
 }
+
 .tj-cloud h2,
 .tj-secure h2 {
-  font-size: 18px
+  font-size: 18px;
 }
+
 .tj-heading h2 {
   font: var(--heavy-weight) 24px var(--hind-font);
   color: var(--main-color);
-  margin: 0
+  margin: 0;
 }
+
 .tj-heading h2:last-child {
-  color: var(--link-color)
+  color: var(--link-color);
 }
+
 .tj-body {
-  min-height: 185px
+  min-height: 185px;
 }
+
 .tj-offers p {
-  margin: 0
+  margin: 0;
 }
+
 .tj-button {
   margin: 10px 0;
-  padding-top: 40px
+  padding-top: 40px;
 }
 .blog-feed {
   border-top: 1px solid var(--content-color);
