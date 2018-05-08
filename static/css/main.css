@@ -15,8 +15,8 @@
   --tran-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2)
 }
 .index {
-  background: #f9ffff url("/img/safespring-molnlagring.jpg?crc=3994075753") no-repeat center top fixed;
-  background-size: cover
+  background: #f9ffff url("/img/safespring-molnlagring.jpg?crc=3994075753") no-repeat center;
+  background-size: cover;
 }
 html {
   overflow: hidden;
@@ -542,7 +542,7 @@ input[type=text], [type=email] {
 }
 .kun-top .kun-img {
   background: #f9ffff url("/img/chalmers.jpg?crc=176662249") no-repeat 50% 50%;
-  background-size: cover
+  background-size: cover;
 }
 .kun-bottom .kun-img {
   background: #f9ffff url("/img/safespring_musikhogskolan.jpg?crc=4038356576") no-repeat 50% 50%;
