@@ -15,13 +15,11 @@ Safespring är en av flera lokala molntjänst-leverantörer som verkar i samma
 land som datan och kunden, vilket gör att datan är säkrad under lokal
 lagstiftning och inte berörs av CLOUD act.
 
+Electronic Frontier Foundation (EFF) är bekymrade över utvecklingen och har publicerat ett [blogginlägg som varnar för CLOUD act][effcloudact].
+
 Om du vill läsa mer om hur CLOUD act påverkar svenska och norska företag har
 Mattias Malmqvist skrivit [en artikel om CLOUD act][cloudact] för IDG som är
 värd att läsas.
-
-Electronic Frontier Foundation (EFF) are also concerned and have published a
-blog post [warning against this new legislature][effcloudact]. (Translate to
-swedish please).
 
 [cloudact]: http://bit.ly/2IdBiu0
 [effcloudact]: https://www.eff.org/deeplinks/2018/04/us-cloud-act-and-eu-privacy-protection-race-bottom
