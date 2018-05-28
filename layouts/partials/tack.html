@@ -1,19 +1,37 @@
+
+<style>
+  .aktuellt {
+    background: #f9ffff url("/img/safespring_bilder_10.jpg?crc=4095481607") no-repeat center -300px;
+    background-size: cover;
+  }
+</style>
 <!-- Google Tag Manager -->
 {{ partial "g-tag-manager.html" . }}
+
+<script>
+  fbq('track', 'CompleteRegistration');
+</script>
+
 
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 
+<!-- HEADING -->
+<div class="heading-sub">
+  <div class="heading-content">
+    <h1></h1>
+  </div>
+</div>
+
+
 <!-- CONTENT -->
 <main class="content-main">
-  <div class="tack-content">
-    <div class="tack-heading">
-      <h1>Ditt meddelande är skickat</h1>
-      <p>En av våra medarbetare kommer kontakta dig inom kort.</p>
-    </div>
+<div class="content-body>">
+      <h1 class="content-heading">Tack så mycket</h1>
+      <p class="content-body">Vad kul att du vill testa Safesprings tjänster.<br/> En av våra medarbetare kommer kontakta dig inom kort.</p><br/><br/>
 
-    <div>
-      <a id="button" href="{{ .Site.BaseURL }}">Tillbaka</a>
+      <a id="button" href="{{ .Site.BaseURL }}" style="width:110px">Till startsidan</a>
+      <a id="button" href="https://www.youtube.com/channel/UCvMh9YaZWGixXoIwZRRUU8A?view_as=subscriber" style="width:235px">Kom igång med video-guider</a>
     </div> 
   </div>
 </main>
