@@ -1,11 +1,11 @@
 :root {
   --main-color: #195F8C;
   --heading-color: #195F8C;
-  --button-color: #e96d30;
-  --link-color: #fa690f;
-  --alt-color: #333;
+  --button-color: #FA690F;
+  --link-color: #FA690F;
+  --alt-color: #323232;
   --text-color: #f9ffff;
-  --content-color: #323232;
+  --content-color: #f3f3f3;
   --accent-color: #19F064;
   --hind-font: "Hind", sans-serif;
   --mon-font: "Montserrat", sans-serif;
@@ -412,6 +412,7 @@ input[type=text], [type=email] {
   grid-column: main
 }
 .content-chalmers {
+  background-color: #FAFEFE; 
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 65rem;
