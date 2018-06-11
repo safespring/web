@@ -412,7 +412,7 @@ input[type=text], [type=email] {
   grid-column: main
 }
 .content-chalmers {
-  background-color: #FAFEFE; 
+  background-color: var(--content-color);
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 65rem;
@@ -423,6 +423,7 @@ input[type=text], [type=email] {
   color: var(--link-color)
 }
 .ch-content {
+  background-color: #FAFEFE; 
   padding: 65px 0;
   display: -ms-grid;
   display: grid;
