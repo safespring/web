@@ -5,7 +5,7 @@
   --link-color: #fa690f;
   --alt-color: #333;
   --text-color: #f9ffff;
-  --content-color: #f3f3f3;
+  --content-color: #323232;
   --accent-color: #19F064;
   --hind-font: "Hind", sans-serif;
   --mon-font: "Montserrat", sans-serif;
@@ -14,10 +14,31 @@
   --reg-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
   --tran-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2)
 }
+
+
 .index {
   background: #f9ffff url("/img/safespring-molnlagring.jpg?crc=3994075753") no-repeat center;
   background-size: cover;
 }
+
+h2 {
+  padding-top: 30px;
+  font: var(--heavy-weight) 18px var(--hind-font);
+  color: var(--heading-color);
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+h3 {
+  padding-top: 30px;
+  font: var(--heavy-weight) 18px var(--hind-font);
+  color: var(--heading-color);
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
 html {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -353,23 +374,35 @@ input[type=text], [type=email] {
   color: var(--heading-color)
 }
 .content-head p {
-  margin-top: 0
+  margin-top: 0px;
 }
-.content-body {
+.content-body  {
   font: var(--normal-weight) 15px var(--mon-font);
   color: var(--alt-color);
-  line-height: 20px;
-  margin: 0,0,0,0px
 }
-.content-body p:last-child {
-  margin-bottom: 0
-}
+
 .content-body a {
   color: var(--main-color)
 }
 .content-body a:hover {
   color: var(--link-color)
 }
+.content-body h2 {
+  padding-top: 30px;
+  font: var(--heavy-weight) 18px var(--hind-font);
+  color: var(--heading-color);
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.content-body h3 {
+  padding-top: 30px;
+  font: var(--heavy-weight) 18px var(--hind-font);
+  color: var(--heading-color);
+  text-transform: uppercase;
+}
+
+
 .index-content {
   display: -ms-grid;
   display: grid;
@@ -379,7 +412,6 @@ input[type=text], [type=email] {
   grid-column: main
 }
 .content-chalmers {
-  background-color: var(--text-color);
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 65rem;
@@ -390,7 +422,6 @@ input[type=text], [type=email] {
   color: var(--link-color)
 }
 .ch-content {
-  background-color: var(--content-color);
   padding: 65px 0;
   display: -ms-grid;
   display: grid;
@@ -411,6 +442,7 @@ input[type=text], [type=email] {
   padding: 55px 0 0
 }
 .ch-sidebar {
+  background-color: var(--content-color);
   align-self: start;
   padding: 65px 0;
   display: -ms-grid;
