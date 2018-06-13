@@ -17,7 +17,7 @@
   <!-- HEADING -->
   <div class="heading-sub">
     <div class="heading-content">
-      <h1>Senate nytt</h1>
+      <h1>White Papers</h1>
       <p>Med Safespring får du en effektiv modell för leverans
         <br/>av tjänst utan att förlora kontroll över din data.</p>
     </div>
@@ -30,11 +30,12 @@
       <div class="">
         {{ range .Data.Pages.GroupByDate "2006" }}
 
-        <div class="content-container">
+          <div class="">
           {{ range .Pages }}
             {{ .Render "li"}}
             {{ end }}
           {{ end }}
+        </div>
         </div>
       </div>
     </div>

@@ -45,7 +45,7 @@ SectionPagesMenu = "main"
 
 [params.contact]
     email = "info@safespring.com"
-    address = "Smidesvej 12 171 41 Solna"
+    address = "Smidesvägen 12, 171 41 Solna"
 
 
 [params.social]

@@ -1,17 +1,17 @@
 {{ partial "head.html" . }}
 
 <body>
-  {{ if eq $.Params.title "Aktuellt" }} 
-    {{ partial "aktuellt.html" . }} 
+  {{ if eq $.Params.title "Aktuellt" }}
+    {{ partial "aktuellt.html" . }}
   {{ else if eq $.Params.title "Chalmers erfarenheter av backup som tjänst" }}
-    {{ partial "chalmers.html" . }} 
-  {{ else if eq $.Params.title "Kontakta oss" }} 
-    {{ partial "kontakt.html" . }} 
-  {{ else if eq $.Params.title "Kundreferenser" }} 
-    {{ partial "kundreferenser.html" . }} 
+    {{ partial "chalmers.html" . }}
+  {{ else if eq $.Params.title "Kontakta oss" }}
+    {{ partial "kontakt.html" . }}
+  {{ else if eq $.Params.title "Kundreferenser" }}
+    {{ partial "kundreferenser.html" . }}
   {{ else if eq $.Params.title "Om oss" }}
-    {{ partial "om-oss.html" . }} 
-  {{ else if eq $.Params.title "Pris" }} 
+    {{ partial "om-oss.html" . }}
+  {{ else if eq $.Params.title "Pris" }}
     {{ partial "pris.html" . }}
   {{ else if eq $.Params.title "Backup som tjänst" }}
     {{ partial "safespring-backup.html" . }}
@@ -19,8 +19,8 @@
     {{ partial "safespring-storage.html" . }}
   {{ else if eq $.Params.title "Infrastruktur som tjänst" }}
     {{ partial "safespring-compute.html" . }}
-  {{ else if eq $.Params.title "Support" }} 
-    {{ partial "support.html" . }} 
+  {{ else if eq $.Params.title "Support" }}
+    {{ partial "support.html" . }}
   {{ else if eq $.Params.title "Tack för ditt meddelande" }}
    {{ partial "tack.html" . }}
   {{ else if eq $.Params.title "Testa backup som tjänst" }}

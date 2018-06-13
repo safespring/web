@@ -13,4 +13,3 @@ Safespring har författat en praktisk [guide][ebook] för vädledning in i molne
 Guiden finns att ladda ned [här][ebook].
 
 [ebook]: ../../marketing/safespring-2018-lp-ebook-2.html
-

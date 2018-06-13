@@ -17,8 +17,17 @@
 
 
 .index {
-  background: #f9ffff url("/img/safespring-molnlagring.jpg?crc=3994075753") no-repeat center;
+  background: #f9ffff url("/img/safespring-molnlagring.jpg") no-repeat center;
   background-size: cover;
+}
+
+p {
+  font: var(--normal-weight) 15px var(--mon-font);
+  color: var(--alt-color);
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-variant-numeric: normal;
 }
 
 h2 {
@@ -28,8 +37,8 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 0px;
   margin-top: 0px;
+  font-variant-numeric: normal;
 }
-
 
 h3 {
   padding-top: 30px;
@@ -37,6 +46,7 @@ h3 {
   color: var(--heading-color);
   text-transform: uppercase;
   margin-bottom: 0px;
+  font-variant-numeric: normal;
 }
 
 html {
@@ -47,23 +57,36 @@ html {
 body {
   margin: 0;
   overflow: auto;
-  height: 100%
+  height: 100%;
+  font-variant-numeric: normal;
 }
 a {
   color: var(--text-color);
   text-decoration: none
 }
+
 button {
   outline: none;
   border: none
 }
 
 input[type=text], [type=email] {
-    width: 360px;
+    width: 300px;
     padding: 12px;
     margin: 8px 0;
     background-color: #195F8C;
-    color: #fefefe;
+    color: #fafefe;
+    font: var(--normal-weight) 15px var(--mon-font);
+    line-height: 20px;
+    border-radius: 0px;
+}
+
+textarea {
+    width: 300px;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #195F8C;
+    color: #fafefe;
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
 }
@@ -155,7 +178,7 @@ input[type=text], [type=email] {
   grid-template-rows: repeat(3, 0.5fr);
   grid-column-gap: 10px;
   visibility: hidden;
-  min-width: 34px;
+  min-width: 180px;
   position: absolute;
   transition: visibility 0.6s ease-in-out;
   z-index: 100
@@ -272,6 +295,7 @@ input[type=text], [type=email] {
   text-shadow: 1px 1px 1px var(--alt-color)
 }
 .footer {
+  position: relative;
   display: -ms-grid;
   display: grid;
   grid-gap: 15px;
@@ -369,7 +393,7 @@ input[type=text], [type=email] {
   grid-column: main;
   grid-row: main
 }
-.content-head {
+.content-head>* {
   font: var(--heavy-weight) 20px var(--mon-font);
   color: var(--heading-color)
 }
@@ -379,6 +403,12 @@ input[type=text], [type=email] {
 .content-body  {
   font: var(--normal-weight) 15px var(--mon-font);
   color: var(--alt-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.TableOfContents {
+  list-style: none;
 }
 
 .content-body a {
@@ -420,10 +450,10 @@ input[type=text], [type=email] {
 }
 .content-chalmers a {
   text-decoration: none;
-  color: var(--link-color)
+  color: var(--main-color)
 }
 .ch-content {
-  background-color: #FAFEFE; 
+  background-color: #FAFEFE;
   padding: 65px 0;
   display: -ms-grid;
   display: grid;
@@ -432,7 +462,7 @@ input[type=text], [type=email] {
 .ch-content>* {
   grid-column: main
 }
-.content-heading h2 {
+.content-heading>* {
   margin: 0;
   padding: 0;
   font: var(--heavy-weight) 18px var(--hind-font);
@@ -458,6 +488,26 @@ input[type=text], [type=email] {
   padding: 0 0 15px;
   width: 95px
 }
+
+.kontakt-sidebar {
+  background-color: var(--content-color);
+  align-self: start;
+  padding: 65px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: [full-start] minmax(1em, 0.5fr)[main-start] minmax(0, 300px)[main-end] minmax(1em, 1fr)[full-end]
+}
+.kontakt-sidebar>* {
+  grid-column: main
+}
+.kontakt-sidebar img {
+  padding: 50px 0px 0px 0px;
+  width: 95px
+}
+
+.kontakt-sidebar h2 {
+  padding: 0px;
+}
 #find-more {
   font: var(--heavy-weight) 15px var(--mon-font);
   line-height: 15px;
@@ -472,6 +522,44 @@ input[type=text], [type=email] {
   box-shadow: var(--tran-shadow);
   transition: box-shadow 0.4s ease-in-out
 }
+
+#TableOfContents >* {
+  padding: 0px;
+  font-size: 15px;
+  list-style: none;
+  padding: 0px;
+  list-style-type: none;
+  list-style-position: inside;
+  text-decoration: none;
+  font: var(--normal-weight) 15px var(--mon-font);
+  color: var(--alt-color);
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-variant-numeric: normal;
+}
+
+#TableOfContents a {
+    color: var(--alt-color)
+}
+#TableOfContents a:hover {
+    color: var(--link-color)
+}
+#TableOfContents ul {
+  padding: 0px;
+  list-style: none;
+}
+
+#TableOfContents ul ul {
+  padding: 0px;
+    list-style: none;
+}
+
+#TableOfContents ul ul ul {
+  padding: 0px;
+    list-style: none;
+}
+
 .read-more {
   padding: 15px 0 0
 }
@@ -484,12 +572,12 @@ input[type=text], [type=email] {
 }
 .read-more li {
   font-size: 12px;
-  padding: 0;
+  padding: 0px;
   list-style-type: none;
   list-style-position: inside;
   text-decoration: none;
-  padding: 0
 }
+
 .read-more a {
   color: var(--alt-color)
 }
@@ -1049,11 +1137,44 @@ input[type=text], [type=email] {
   flex-direction: column;
   justify-content: flex-start
 }
+.content-container-whitepaper {
+  padding: 30px;
+  margin: 10px 0;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+}
 .content-item {
   padding: 30px;
   margin: 10px 0;
   border-radius: 3px;
-  background-color: var(--content-color);
+  background: var(--content-color);
+}
+
+.content-item-whitepaper {
+  padding: 30px;
+  margin: 10px 0;
+  border-radius: 3px;
+  background: var(--content-color) url(img/whitepapers/CLOUD.jpg);
+  background-size: cover;
+
+}
+.content-item-whitepaper a {
+  color: var(--content-color);
+
+}
+.post-heading-whitepaper {
+  font: var(--heavy-weight) 30px var(--hind-font);
+  color: #FAFEFE;
+  padding-bottom: 10px
+}
+.post-heading-whitepaper:hover {
+  color: var(--link-color);
+  transition: color 0.2s ease-in-out
 }
 .post-heading {
   font: var(--heavy-weight) 20px var(--hind-font);
@@ -1067,6 +1188,11 @@ input[type=text], [type=email] {
 .content-meta {
   font: var(--heavy-weight) 14px var(--hind-font);
   color: var(--main-color);
+  padding: 10px 0 0
+}
+.content-meta-whitepaper {
+  font: var(--heavy-weight) 14px var(--hind-font);
+  color: #FAFEFE;
   padding: 10px 0 0
 }
 .headless {

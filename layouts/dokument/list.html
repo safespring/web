@@ -1,0 +1,47 @@
+{{ partial "head.html" . }}
+
+
+<style>
+  .heading-sub {
+    background: #417DA5;
+    background-size: cover;
+    background-attachment:bottom;
+  }
+</style>
+  <title>Safespring | Dokument</title>
+</head>
+<body>
+  {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+   {{ partial "header.html" . }} <!-- HEADING -->
+  <div class="heading-sub">
+    <div class="heading-content">
+      <h1>Dokument</h1>
+    </div>
+  </div>
+
+<!-- HEADING -->
+
+
+<!-- CONTENT -->
+<main class="content-chalmers">
+  <!-- Main  -->
+  <div class="ch-content">
+    <div class="">
+      {{ range .Data.Pages.GroupByDate "2006" }}
+
+      <div class="content-container">
+        {{ range .Pages }}
+          {{ .Render "li"}}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+{{ partial "side-bar.html" . }}
+
+</main>
+
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

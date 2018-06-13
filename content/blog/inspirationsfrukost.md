@@ -11,4 +11,3 @@ Safespring bjuder in till inspirationsfrukost kring nya teknologier och moderna 
 För anmälan gå [hit][insp].
 
 [insp]: ../../marketing/safespring-inspirationsfrukost.html
-

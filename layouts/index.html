@@ -48,8 +48,8 @@
 
       <div class="blog-feed">
         <h2 class="content-heading">Senaste nytt</h2>
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }} 
-          {{ range $paginator.Pages }} 
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
+          {{ range $paginator.Pages }}
             {{ .Render "summary" }}
         {{ end }}
       </div>
