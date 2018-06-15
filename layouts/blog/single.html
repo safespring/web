@@ -28,9 +28,10 @@
   <!-- Main  -->
   <div class="ch-content">
     <div class="content-heading">
-      <h2>{{ .Title }}</h2>
+      {{ .Title }}<p style="color: var(--green-color);">Publicerad {{ .Date.Format "2006-01-02" }}</p>
     </div>
     <div class="content-body">
+
      {{ .Content }}
     </div>
   </div>

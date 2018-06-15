@@ -7,6 +7,7 @@
   --text-color: #f9ffff;
   --content-color: #f3f3f3;
   --accent-color: #19F064;
+  --green-color: #32CD32;
   --hind-font: "Hind", sans-serif;
   --mon-font: "Montserrat", sans-serif;
   --normal-weight: 400;
@@ -41,9 +42,9 @@ h2 {
 }
 
 h3 {
-  padding-top: 30px;
-  font: var(--heavy-weight) 18px var(--hind-font);
-  color: var(--heading-color);
+  padding-top: 20px;
+  font: var(--heavy-weight) 12px var(--hind-font);
+  color: var(--alt-color);
   text-transform: uppercase;
   margin-bottom: 0px;
   font-variant-numeric: normal;
@@ -426,10 +427,12 @@ textarea {
 }
 
 .content-body h3 {
-  padding-top: 30px;
-  font: var(--heavy-weight) 18px var(--hind-font);
-  color: var(--heading-color);
+  padding-top: 15px;
+  font: var(--heavy-weight) 15px var(--hind-font);
+  color: var(--alt-color);
   text-transform: uppercase;
+  margin-bottom: 0px;
+  font-variant-numeric: normal;
 }
 
 
@@ -448,10 +451,10 @@ textarea {
   grid-auto-columns: 65rem;
   grid-template-columns: 1.3fr 0.7fr
 }
-.content-chalmers a {
+/* .content-chalmers a {
   text-decoration: none;
   color: var(--main-color)
-}
+}*/
 .ch-content {
   background-color: #FAFEFE;
   padding: 65px 0;
@@ -1159,7 +1162,6 @@ textarea {
   padding: 30px;
   margin: 10px 0;
   border-radius: 3px;
-  background: var(--content-color) url(img/whitepapers/CLOUD.jpg);
   background-size: cover;
 
 }
