@@ -84,6 +84,26 @@ För det femte är en vanlig invändning mot att EU-domstolen skulle kunna ogilt
 
 Vad nästa steg skulle bli efter att EU har ogiltigförklarat USA som adekvat tredje land kan man bara spekulera om. Man kan dock konstatera att vid EU-domstolens förra förhandsavgörande i C-362 / 14 upphörde Safe Harbor omedelbart att gälla, men de europeiska datainspektionerna gav personuppgiftsombud 3 månaders respit så att EU-kommissionen och USA skulle kunna hitta en ny lösning. Om inte en ny lösning står att finna i närtid, behöver personuppgiftsombud upphöra med behandling av personuppgifter på drabbade tjänster för att undvika hot om böter.
 
+## Rekommendationer till organisationer
+1. Givet rättssituationen finns några strategiska rekommendationer, gällande molntjänster, för att undvika att hamna i kläm innan (eller om inte) de rättsliga motstridigheterna mellan EU och USA har retts ut.
+
+2. Se till att bygga molninfrastrukturen med agnostiska verktyg och plattformar för att enklare kunna flytta miljön till en annan leverantör om det rättsliga läget förvärras. Att bygga sin miljö med containrar (eller Docker) istället för virtuella servrar är ett beprövat sätt som underlättar migrering av tjänsterna till en annan leverantör.
+
+3. Räkna på hur dataöverföringskostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänsteleverantörer tar inget betalt för att lägga upp - men desto mer för att hämta hem vilket kan ge obehagliga överraskningar.
+
+4. Se till att separera datat från tjänsterna med öppna (eller åtminstone standardiserade) gränssnitt för enklare kunna byta datalagringsplattform. Amazons S3-protokoll har blivit branschstandard för storskalig lagring av ostruktuerad data i molnet. Dessvärre använder Amazon sig av vissa tillägg som inte stöds av andra S3-kompatibla tjänster. Om man ser till att använda sig av en mer generisk  S3-kompatibel leverantör i första läget så är det enklare att flytta till en annan leverantör.
+
+5. Investera i en egen identitetshantering istället för att lita på molntjänsteleverantörens. Detta kommer i vissa fall bli lite krångligare men otroligt mycket enklare om tjänsterna skall migreras någon annanstans.    
+
+6. Gör grundarbetet med GDPR kring hantering av personuppgifter
+
+7. Fördjupa GDPR-arbetet med att införa säkerhetsklassning av den information som behandlas inom organisationen -- detta är nödvändigt för att därefter kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster
+
+8. Inkludera i riskanalysen den legala osäkerheten kring existerande och nya molntjänstleverantörer -- gör en sannolikhetsbedömning och konsekvensanalys och agera utifrån detta: Om det antas till exempel vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?
+
+9. Ha redundans även av leverantörer. Särskilt viktigt för tjänster i riskzonen och gör en bedömning kring migrationsprocessen -- hur lång tid tar det t.ex. att byta ut samtliga amerikanska tjänster om behovet skulle uppstå? Det kan tyckas för katastrofalt för att ens övervägas men underlaget behövs för att kunna ta rätt beslut om det skulle bli skarpt läge.
+
+
 ## Källor
 1. [Stadgan för grundläggande rättigheter](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=celex:12016P/TXT "Stadgan för grundläggande rättigheter")
 2. [Europaparlamentets och rådets direktiv 95/46/EG 1995](https://eur-lex.europa.eu/legal-content/SV/TXT/?qid=1527194603743&uri=CELEX:31995L0046 "Europaparlamentets och rådets direktiv 95/46/EG den 24 oktober 1995")
