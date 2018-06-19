@@ -5,7 +5,7 @@ draft: true
 author: ""
 dokumentnamn: ".pdf"
 huvudbildnamn: ".jpg"
-socialmedia-bild: ""
+socialmediabild: ""
 intro: ""
 ---
 
@@ -20,7 +20,7 @@ The file name (including the .pdf) of the PDF located in /marketing/whitepapers
 The name of the image that is shown as a header (including the .jpg, or other file extension)
 The file should be located in img/whitepapers
 
-## socialmedia-bild
+## socialmediabild
 The file name of the image that will show up when you share the link to the white paper in social media
 (will be the "huvudbildnamn" if you don't specify it)
 

@@ -7,13 +7,13 @@
 <meta name="twitter:description" content="{{ if.Params.intro }} {{ .Params.intro}} {{ else }} Safespring levererar snabba, flexibla och säkra molntjänster som reducerar time-to-market och möjliggör snabb förnyelse utan tekniska hinder. Safesprings molntjänster produceras säkert och lokalt i samma land som kunden för att bibehålla data-suveränitet. {{ end }}">
 <meta name="twitter:creator" content="@{{ .Params.author}}">
 <!-- Twitter Summary card images must be at least 120x120px -->
-<meta name="twitter:image" content="{{ if.Params.socialmedia-bild }} https://www.safespring.com/img/whitepapers/{{ .Params.socialmedia-bild }}{{ .Params.intro}} {{ else }} https://www.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}">
+<meta name="twitter:image" content="{{ if.Params.socialmediabild }} https://www.safespring.com/img/whitepapers/{{ .Params.socialmediabild }}{{ .Params.intro}} {{ else }} https://www.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}">
 
 <!-- Open Graph data -->
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{.URL}}" />
-<meta property="og:image" content="{{ if.Params.socialmedia-bild }} https://www.safespring.com/img/whitepapers/{{ .Params.socialmedia-bild }}{{ .Params.intro}} {{ else }} https://www.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ else }} https://www.safespring.com/img/whitepapers/Safespring_socialmedia.jpg {{ end }}"/>
+<meta property="og:image" content="{{ if.Params.socialmediabild }} https://www.safespring.com/img/whitepapers/{{ .Params.socialmediabild }}{{ .Params.intro}} {{ else }} https://www.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}"/>
 <meta property="og:description" content="{{ if.Params.intro }} {{ .Params.intro}} {{ else }} Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing. {{ end }} " />
 <meta property="og:site_name" content="Safespring" />
 
