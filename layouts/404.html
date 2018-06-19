@@ -1,0 +1,76 @@
+{{ partial "head.html" . }}
+
+
+<style>
+  .aktuellt {
+    background: #f9ffff url("/img/safespring_bilder_3.jpg?crc=133698968") no-repeat center top fixed;
+    background-size: cover;
+  }
+</style>
+  <title>Safespring | {{ .Title }}</title>
+</head>
+<body>
+  {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+   {{ partial "header.html" . }} <!-- HEADING -->
+   <div class="heading-sub">
+     <div class="heading-content">
+       <h1>Error 404</h1>
+       <p>Ett fel har inträffat</p>
+     </div>
+   </div>
+
+<!-- HEADING -->
+
+
+<!-- CONTENT -->
+<main class="content-chalmers">
+  <!-- Main  -->
+  <div class="ch-content">
+    <div class="content-heading">
+      <h2>Sidan du söker verkar inte finnas</h2>
+    </div>
+    <div class="content-body">
+      <p>Det kan bero på att länken är felaktig. Om sidan flyttas eller om sidan tagits bort kan det hända att den gamla länken slutar att fungera, och länkar dig till denna sida stället. Ta gärna kontakt med oss om du anser att denna sida fortfarande borde finnas under just denna länk.</p>
+        <p>Denna sida försökte du nå: </br><strong>{{.URL}}</strong> </p>
+        <h2>Vad betyder 404?</h2>
+        <p>"404 error" eller "error 404" är en standardfelkod i HTTP-protokollet som betecknar att webbsidan som efterfrågats inte finns eller inte kan hittas.</p>
+        <p>Uttrycket 404 är vanligt och i överförd betydelse kan det emellanåt användas istället för "finns inte" eller "fel", oftast i tekniska sammanhang.</p>
+        <p>404-felkoden ska inte förväxlas med "server not found", "server crashed" eller liknande fel.</p>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="ch-sidebar">
+    <div>
+      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+    </div>
+
+    <div>
+      <h2 class="content-heading">Kontakta Safespring</h2>
+
+
+      <br>
+    </div>
+
+    <a id="find-more" href="/kontakt/kontakt">KONTAKTA
+      <br/>SAFESPRING</a>
+
+    <div class="read-more">
+      <h2>Läs mer om:</h2>
+            <li class="content-body">
+        <a href="/safespring-backup">&gt; Backup som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+      </li>
+    </div>
+  </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

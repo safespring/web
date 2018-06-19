@@ -5,6 +5,7 @@ draft: false
 author: "Martin Millnert"
 dokumentnamn: "CLOUD act.pdf"
 huvudbildnamn: "CLOUD.jpg"
+socialmedia-bild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta."
 ---
 
