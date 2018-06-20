@@ -62,7 +62,11 @@ body {
   font-variant-numeric: normal;
 }
 a {
-  color: var(--text-color);
+  color: var(--heading-color);
+  text-decoration: none
+}
+a:hover {
+  color: var(--link-color);
   text-decoration: none
 }
 

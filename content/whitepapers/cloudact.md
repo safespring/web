@@ -1,11 +1,11 @@
 ---
 title: "Att tänka på gällande CLOUD act och GDPR"
-date: 2018-06-15
+date: 2018-06-20
 draft: false
 author: "Martin Millnert"
 dokumentnamn: "CLOUD act.pdf"
 huvudbildnamn: "CLOUD.jpg"
-socialmedia-bild: "Safespring_Linkedin_cloudact-gdpr.jpg"
+socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta."
 ---
 
@@ -137,3 +137,5 @@ Vad nästa steg skulle bli efter att EU har ogiltigförklarat USA som adekvat tr
 29. [Ryan Browne - CNBC ](https://www.cnbc.com/2018/05/23/eu-politicians-dissatisfied-with-facebook-ceo-mark-zuckerbergs-parliament-meeting.html "Ryan Browne - CNBC ")
 30. [EP Conference of Presidents with Mark Zuckerberg ](http://www.europarl.europa.eu/ep-live/en/other-events/video?event=20180522-1820-SPECIAL-UNKN "EP Conference of Presidents with Mark Zuckerberg ")
 31. [Mål C‑362/14 - Maximillian Schrems mot Data Protection Commissioner](https://eur-lex.europa.eu/legal-content/SV/TXT/?qid=1527547272668&uri=CELEX:62014CC0362 "Mål C‑362/14 - Maximillian Schrems mot Data Protection Commissioner")
+
+...

@@ -10,7 +10,7 @@ intro: ""
 ---
 
 ## author
-your name (or the authors name)
+your name (or the authors name).
 a photo of the author should be places in the img/whitepapers folder
 
 ## dokumentnamn
