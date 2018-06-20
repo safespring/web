@@ -1,5 +1,5 @@
 <div class="content-item">
   <a class="post-heading" href="{{ .Permalink }}">{{ .Title }}</a>
-  <div class="content-body">{{ slicestr .Summary 0 200 }}...</div>
+  <div class="content-body">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 200 }}... {{ end }}</div>
   <div class="content-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
 </div>

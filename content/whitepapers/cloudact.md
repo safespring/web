@@ -3,7 +3,7 @@ title: "Att tänka på gällande CLOUD act och GDPR"
 date: 2018-06-20
 draft: false
 author: "Martin Millnert"
-dokumentnamn: "CLOUD act.pdf"
+dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
 huvudbildnamn: "CLOUD.jpg"
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta."
