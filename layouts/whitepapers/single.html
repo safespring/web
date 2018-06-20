@@ -12,8 +12,8 @@
 <!-- Open Graph data -->
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{.URL}}" />
-<meta property="og:image" content="{{ if.Params.socialmediabild }} https://www2.safespring.com/img/whitepapers/{{ .Params.socialmediabild }}{{ .Params.intro}} {{ else }} https://www2.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}"/>
+<meta property="og:url" content="https://www2.safespring.com{{.URL}}" />
+<meta property="og:image" content="{{ if.Params.socialmediabild }} https://www2.safespring.com/img/whitepapers/{{ .Params.socialmediabild }} {{ else }} https://www2.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}"/>
 <meta property="og:description" content="{{ if.Params.intro }} {{ .Params.intro }} {{ else }} Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing. {{ end }} " />
 <meta property="og:site_name" content="Safespring" />
 
