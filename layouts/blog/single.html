@@ -14,8 +14,9 @@
    {{ partial "header.html" . }} <!-- HEADING -->
    <div class="heading-sub">
      <div class="heading-content">
-       <h1>Error 404</h1>
-       <p>Ett fel har inträffat</p>
+       <h1>Senaste nytt från Safespring</h1>
+       <p>Med Safespring får du en effektiv modell för leverans
+         <br/>av tjänst utan att förlora kontroll över din data.</p>
      </div>
    </div>
 
@@ -27,15 +28,11 @@
   <!-- Main  -->
   <div class="ch-content">
     <div class="content-heading">
-      <h2>Sidan du söker verkar inte finnas</h2>
+      {{ .Title }}<p style="color: var(--green-color);">Publicerad {{ .Date.Format "2006-01-02" }}</p>
     </div>
     <div class="content-body">
-      <p>Det kan bero på att länken är felaktig. Om sidan flyttas eller om sidan tagits bort kan det hända att den gamla länken slutar att fungera, och länkar dig till denna sida stället. Ta gärna kontakt med oss om du anser att denna sida fortfarande borde finnas under just denna länk.</p>
-        <p>Denna sida försökte du nå: </br><strong>({{.URL}})</strong> </p>
-        <h2>Vad betyder 404?</h2>
-        <p>"404 error" eller "error 404" är en standardfelkod i HTTP-protokollet som betecknar att webbsidan som efterfrågats inte finns eller inte kan hittas.</p>
-        <p>Uttrycket 404 är vanligt och i överförd betydelse kan det emellanåt användas istället för "finns inte" eller "fel", oftast i tekniska sammanhang.</p>
-        <p>404-felkoden ska inte förväxlas med "server not found", "server crashed" eller liknande fel.</p>
+
+     {{ .Content }}
     </div>
   </div>
 
@@ -46,7 +43,10 @@
     </div>
 
     <div>
-      <h2 class="content-heading">Kontakta Safespring</h2>
+      <h2 class="content-heading">Senaste inläggen</h2>
+      {{ range first 5 (where .Site.Pages "Type" "blog") }}
+        <li class="content-body" id="TableOfContents" style="list-style: none;  "><a href="{{.URL}}">{{ .Title }}</a></li>
+      {{ end }}
 
 
       <br>

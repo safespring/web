@@ -13,18 +13,11 @@
       <div id="slideshow">
         <div class="heading-content">
           <h1>Säkra molntjänster</h1>
-          <p>Infrastruktur, backup och lagring genom teknologi i världsklass.</p>
-        </div>
-
-        <div class="hidden heading-content">
-          <h1>Lokalt producerade i Sverige och Norge</h1>
-          <p>Trygga datacenter håller din data inom landets gränser.</p>
+          <p>Trygga datacenter lokalt placerade i Sverige och Norge</p>
         </div>
       </div>
       <div class="arrows">
-        <a class="arrowL" id="arrow" href="#">&lt;</a>
         <a class="more" href="#down">LÄS MER</a>
-        <a class="arrowR" id="arrow" href="#">&gt;</a>
       </div>
     </div>
   </div>
@@ -48,8 +41,8 @@
 
       <div class="blog-feed">
         <h2 class="content-heading">Senaste nytt</h2>
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }} 
-          {{ range $paginator.Pages }} 
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
+          {{ range $paginator.Pages }}
             {{ .Render "summary" }}
         {{ end }}
       </div>

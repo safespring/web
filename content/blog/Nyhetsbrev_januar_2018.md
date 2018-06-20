@@ -6,32 +6,30 @@ tags = ["nyhetsbrev, backup, compute"]
 showthedate = false
 +++
 
-## Nyhetsbrev fra Safespring
+Godt nytt år! Vi vil med dette nyhetsbrevet dele et par nyheter fra Safespring:
 
-Godt nytt år! Vi vil med dette nyhetsbrevet dele et par nyheter fra Safespring: 
-
-Vi har laget en guide for å bistå ved valg av backuptjeneste. Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv. 
+Vi har laget en guide for å bistå ved valg av backuptjeneste. Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv.
 
 Dessuten er Safespring fra i høst parter med Microsoft,
-og vi kan dermed tilby imager med Windows Server operativsystem i 
+og vi kan dermed tilby imager med Windows Server operativsystem i
 compute-plattformen.
 
 <!--more-->
- 
-### Safespring Backup
 
-Vi tilbyr 3 ulike varianter av Backup: 
+## Safespring Backup
+
+Vi tilbyr 3 ulike varianter av Backup:
 
 * Large
-* Small 
-* On-Demand. 
+* Small
+* On-Demand.
 
 Sammen med UNINETT har vi laget en guide som gir veiledning i hvilken tjeneste som passer best avhengig av behov.
 Guiden finner du her:
 https://www.uninett.no/sites/default/files/safespring_backup_oversikt.pdf
- 
-### Safespring tilbyr Microsoft Windows operativsystem i Compute-plattformen
- 
+
+## Safespring tilbyr Microsoft Windows operativsystem i Compute-plattformen
+
 For å imøtekomme brukernes behov for å kjøre Microsoft-applikasjoner har Safespring lansert Windows som støttet operativsystem i Compute-plattformen.
 Mange kunder har etterspurt dette og vi har derfor inngått en avtale med Microsoft som “Services Provider”. Dermed kan vi tilby følgende operativsystem:
 

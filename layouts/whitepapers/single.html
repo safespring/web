@@ -1,0 +1,95 @@
+{{ partial "head.html" . }}
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Safespring">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ if.Params.intro }} {{ .Params.intro }} {{ else }} Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing. {{ end }}">
+<meta name="twitter:creator" content="@{{ .Params.author}}">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="{{ if.Params.socialmediabild }} https://www2.safespring.com/img/whitepapers/{{ .Params.socialmediabild }} {{ else }} https://www2.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www2.safespring.com{{.URL}}" />
+<meta property="og:image" content="{{ if.Params.socialmediabild }} https://www2.safespring.com/img/whitepapers/{{ .Params.socialmediabild }} {{ else }} https://www2.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }} {{ end }}"/>
+<meta property="og:description" content="{{ if.Params.intro }} {{ .Params.intro }} {{ else }} Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing. {{ end }} " />
+<meta property="og:site_name" content="Safespring" />
+
+<style>
+  .heading-sub {
+    background: #417DA5 url("/img/whitepapers/{{ .Params.huvudbildnamn }}");
+    background-size: cover;
+    background-attachment:bottom;
+  }
+</style><!-- Google Tag Manager -->
+  <title>Safespring White Paper</title>
+</head>
+<body>
+  {{ partial "g-tag-manager.html" . }} <!--  NAVBAR -->
+   {{ partial "header.html" . }} <!--  HEADING -->
+  <div class="heading-sub">
+    <div class="heading-content">
+      <h1>{{ .Title }}</h1>
+            <p>{{ .Date.Format "2006-01-02" }}</p>
+      <p>Safespring White Paper</p>
+
+    </div>
+  </div>
+
+<!-- HEADING -->
+
+
+<!-- CONTENT -->
+<main class="content-chalmers">
+  <!-- Main  -->
+  <div class="ch-content">
+    <div class="content-body">
+     {{ .Content }}
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="ch-sidebar">
+    <div>
+      <img src="/img/whitepapers/{{.Params.author}}.png" alt="{{ .Params.Author }}" />
+    </div>
+
+    <div>
+      <h2 class="content-heading">Skriven av {{ .Params.author}}</h2>
+      <p>
+      Publicerad {{ .Date.Format "2006-01-02" }}</p>
+      <p class="content-body">{{ if.Params.intro }} {{ .Params.intro }} {{ else }} Safespring levererar snabba, flexibla och säkra molntjänster som reducerar time-to-market och möjliggör snabb förnyelse utan tekniska hinder. Safesprings molntjänster produceras säkert och lokalt i samma land som kunden för att bibehålla data-suveränitet. {{ end }} </p>
+
+      <br>
+      <div>
+        <h2>Innehållsförteckning</h2>
+        {{ .TableOfContents }}
+      </div>
+      <br>
+    </div>
+
+    <a id="find-more" href="/marketing/whitepapers/{{ .Params.dokumentnamn }}">LADDA NED
+      <br/>WHITE PAPER</a>
+
+    <a id="find-more" href="/testa-safespring-compute">TESTA SAFESPRING
+      <br/>COMPUTE GRATIS</a>
+
+    <div class="read-more">
+      <h2>Läs mer om:</h2>
+            <li class="content-body">
+        <a href="/safespring-backup">&gt; Backup som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+      </li>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+{{ partial "footer.html" . }}
