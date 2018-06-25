@@ -6,18 +6,18 @@ author: "Martin Millnert"
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
 huvudbildnamn: "CLOUD.jpg"
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
-intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta."
+intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
 ---
 
 ## Inledning
 
 Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL). Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 2009 [(1)](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=celex:12016P/TXT "Stadgan för grundläggande rättigheter"). EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.
 
-Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta.
+Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
 ## Bakgrund
 
-Dataskyddsdirektivet [(2)](https://eur-lex.europa.eu/legal-content/SV/TXT/?qid=1527194603743&uri=CELEX:31995L0046 "Europaparlamentets och rådets direktiv 95/46/EG den 24 oktober 1995") från 1995 skapade ett EU-gemensamt regelverk för skydd av personuppgifter, med i vissa fall starkare rättsligt skydd än vad som varit fallet innan i Sverige. Det var fortfarande upp till vart enskilt land att införa nationell lagstiftning utifrån direktivet. I Sverige genomfördes direktivet i nationell rätt 1998 genom personuppgiftslagen (PUL)  [(3)](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/personuppgiftslag-1998204_sfs-1998-204 "Personuppgiftslagen PUL"). PUL reglerade dels vilka sorters personuppgifter som fick registreras samt även hur dessa fick överföras till så kallat “tredje land”. Det senare krävde att åtminstone en av tre följande situationer gällde:
+Dataskyddsdirektivet [(2)](https://eur-lex.europa.eu/legal-content/SV/TXT/?qid=1527194603743&uri=CELEX:31995L0046 "Europaparlamentets och rådets direktiv 95/46/EG den 24 oktober 1995") från 1995 skapade ett EU-gemensamt regelverk för skydd av personuppgifter, med i vissa fall starkare rättsligt skydd än vad som varit fallet innan i Sverige. Det var fortfarande upp till varje enskilt land att införa nationell lagstiftning utifrån direktivet. I Sverige genomfördes direktivet i nationell rätt 1998 genom personuppgiftslagen (PUL)  [(3)](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/personuppgiftslag-1998204_sfs-1998-204 "Personuppgiftslagen PUL"). PUL reglerade dels vilka sorters personuppgifter som fick registreras samt även hur dessa fick överföras till så kallat “tredje land”. Det senare krävde att åtminstone en av tre följande situationer gällde:
 
 1. Landets personuppgiftslagstiftning anses jämförbar med den europeiska (33 § PUL)
 2. Individen har gett samtycke eller har genom ingående av kontrakt de facto accepterat viss utlämning (34 § PUL),
