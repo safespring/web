@@ -13,26 +13,6 @@
    <head>
    	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#195f8c",
-      "text": "#fafefe"
-    },
-    "button": {
-      "background": "#fa690f",
-      "text": "#fafefe"
-    }
-  },
-  "content": {
-    "message": "Safesprings webbplats använder cookies",
-    "dismiss": "Acceptera",
-    "link": "Läs mer om cookies"
-  }
-})});
-</script>
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -41,15 +21,16 @@ window.cookieconsent.initialise({
          })(window,document,'script','dataLayer','GTM-TXLJWD7');
       </script>
       <!-- End Google Tag Manager -->
+
+      <meta property="og:title" content="{{ .Title }}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.safespring.com{{.URL}}" />
+      <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www2.safespring.com/img/whitepapers/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www2.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www2.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www2.safespring.com/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
+      <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
+      <meta property="og:site_name" content="Safespring" />
+
       <!-- Site Title changes according to current page -->
-      <title>
-         Safespring |
-         {{ if .Params.heading }}
-         {{ .Title }}
-         {{ else }}
-         Säkra molntjänster
-         {{ end }}
-      </title>
+      <title>Safespring | {{ if .Title }}{{ .Title }}{{ else }}Säkra molntjänster{{ end }}</title>
       <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
       <meta name="generator" content="2017.0.4.363" />
       <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />

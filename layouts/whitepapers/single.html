@@ -74,7 +74,7 @@ window.cookieconsent.initialise({
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.safespring.com{{.URL}}" />
-<meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/img/whitepapers/{{ .Params.socialmediabild }}{{ else }}https://www.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }}{{ end }}"/>
+<meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/img/whitepapers/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www.safespring.com/img/whitepapers/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
 <meta property="og:site_name" content="Safespring" />
 
@@ -130,10 +130,11 @@ window.cookieconsent.initialise({
       </div>
       <br>
     </div>
-
+{{ if.Params.dokumentnamn }}
     <a id="find-more" href="/marketing/whitepapers/{{ .Params.dokumentnamn }}">LADDA NED
       <br/>WHITE PAPER</a>
-
+{{ else }}
+{{ end }}
     <a id="find-more" href="/testa-safespring-compute">TESTA SAFESPRING
       <br/>COMPUTE GRATIS</a>
 

@@ -307,7 +307,8 @@ textarea {
   grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 32rem)[main-middle] minmax(0, 32rem)[main-end] minmax(1em, 1fr)[full-end];
   width: 100%;
   background-color: var(--main-color);
-  padding: 25px 0
+  padding: 25px 0;
+  height: 160px;
 }
 .contact {
   grid-column: main-start
@@ -455,10 +456,6 @@ textarea {
   grid-auto-columns: 65rem;
   grid-template-columns: 1.3fr 0.7fr
 }
-/* .content-chalmers a {
-  text-decoration: none;
-  color: var(--main-color)
-}*/
 .ch-content {
   background-color: #FAFEFE;
   padding: 65px 0;

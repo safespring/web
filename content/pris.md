@@ -1,7 +1,8 @@
-+++
-title = "Pris"
-date = "2017-11-22"
-draft = false
-tags = [""]
-showthedate = false
-+++
+---
+title: "Pris"
+date: "2017-11-22"
+draft: false
+tags: ""
+showthedate: false
+pageimage: "Safespring_pris.jpg"
+---
