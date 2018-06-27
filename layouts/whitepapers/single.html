@@ -11,27 +11,6 @@
    tjanster
    " lang="sv">
    <head>
-   	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#195f8c",
-      "text": "#fafefe"
-    },
-    "button": {
-      "background": "#fa690f",
-      "text": "#fafefe"
-    }
-  },
-  "content": {
-    "message": "Safesprings webbplats använder cookies",
-    "dismiss": "Acceptera",
-    "link": "Läs mer om cookies"
-  }
-})});
 </script>
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -44,7 +23,7 @@ window.cookieconsent.initialise({
       <!-- Site Title changes according to current page -->
       <title>
          Safespring |
-         {{ if .Title }}
+         {{ if.Title }}
          {{ .Title }}
          {{ else }}
          Säkra molntjänster
