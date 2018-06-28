@@ -70,7 +70,7 @@
   nameField.typeahead("val", client.name);
   dunsField.val(client.dunsNo);
   }).on("typeahead:asyncrequest", function() {
-  spinner.show(); 
+  spinner.show();
   }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
   spinner.hide();
   });
