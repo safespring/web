@@ -14,7 +14,7 @@
 
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
-		 <meta property="og:url" content="{{.URL}}" />
+		 <meta property="og:url" content="https://www.safespring.com{{.URL}}" />
 		 <meta property="og:image" content="{{ if.Params.socialmediabild }}{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}{{ "/img/whitepapers/{{ .Params.huvudbildnamn }}" | relURL }}{{ else if.Params.pageimage}}{{ "/img/pageimage/{{ .Params.pageimage }}" | relURL }}{{ else }}{{ "/img/pageimage/Safespring_molntjanster.jpg" | relURL }}{{ end }}"/>
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
@@ -37,7 +37,7 @@
       <meta name="generator" content="2017.0.4.363" />
       <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
       <!-- Description changes according to current page -->
-      <meta name="description" content="{{ .Site.Params.meta.description }}" />
+      <meta name="description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}"" />
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href={{ "/img/favicon.ico" | relURL }} />
