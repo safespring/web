@@ -308,7 +308,6 @@ textarea {
   width: 100%;
   background-color: var(--main-color);
   padding: 25px 0;
-  height: 160px;
 }
 .contact {
   grid-column: main-start
@@ -1176,6 +1175,7 @@ textarea {
 }
 .post-heading-whitepaper {
   font: var(--heavy-weight) 30px var(--hind-font);
+  line-height: 1;
   color: #FAFEFE;
   padding-bottom: 10px
 }
@@ -1185,6 +1185,7 @@ textarea {
 }
 .post-heading {
   font: var(--heavy-weight) 20px var(--hind-font);
+  line-height: 1;
   color: var(--main-color);
   padding-bottom: 10px
 }
