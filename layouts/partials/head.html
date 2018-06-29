@@ -15,7 +15,7 @@
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{.URL}}" />
-		 <meta property="og:image" content="{{ if.Params.socialmediabild }}{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}/img/whitepapers/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage}}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
+		 <meta property="og:image" content="{{ if.Params.socialmediabild }}{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}{{ "/img/whitepapers/{{ .Params.huvudbildnamn }}" | relURL }}{{ else if.Params.pageimage}}{{ "/img/pageimage/{{ .Params.pageimage }}" | relURL }}{{ else }}{{ "/img/pageimage/Safespring_molntjanster.jpg" | relURL }}{{ end }}"/>
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
 
@@ -44,7 +44,7 @@
       <!-- jQuery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <!-- CSS -->
-      <link rel="stylesheet" href={{ "css/main.css" | relURL }} />
+      <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:500" rel="stylesheet">
       <!-- RSS -->
