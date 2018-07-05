@@ -4,7 +4,7 @@
   --button-color: #FA690F;
   --link-color: #FA690F;
   --alt-color: #323232;
-  --text-color: #f9ffff;
+  --text-color: #FAFEFE;
   --content-color: #f3f3f3;
   --accent-color: #19F064;
   --green-color: #32CD32;
@@ -18,8 +18,7 @@
 
 
 .index {
-  background: #f9ffff url("/img/safespring-molnlagring.jpg") no-repeat center;
-  background-size: cover;
+  background: #FAFEFE;
 }
 
 p {
@@ -285,6 +284,7 @@ textarea {
   transition: box-shadow 0.4s ease-in-out
 }
 .heading-sub {
+  background: var(--main-color);
   margin: 0;
   display: -ms-grid;
   display: grid;
@@ -307,7 +307,7 @@ textarea {
   grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 32rem)[main-middle] minmax(0, 32rem)[main-end] minmax(1em, 1fr)[full-end];
   width: 100%;
   background-color: var(--main-color);
-  padding: 25px 0
+  padding: 25px 0;
 }
 .contact {
   grid-column: main-start
@@ -387,7 +387,8 @@ textarea {
   text-align: right
 }
 .content-main {
-  background-color: var(--text-color);
+  background: var(--text-color);
+  min-height: 61%;
   display: -ms-grid;
   display: grid;
   grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 35rem)[main-end] minmax(2em, 1fr)[full-end];
@@ -449,16 +450,13 @@ textarea {
   grid-column: main
 }
 .content-chalmers {
+  min-height: 61%;
   background-color: var(--content-color);
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 65rem;
   grid-template-columns: 1.3fr 0.7fr
 }
-/* .content-chalmers a {
-  text-decoration: none;
-  color: var(--main-color)
-}*/
 .ch-content {
   background-color: #FAFEFE;
   padding: 65px 0;
@@ -882,12 +880,14 @@ textarea {
   color: var(--button-color)
 }
 .s-main {
+  min-height: 61%;
   background-color: var(--content-color);
   display: -ms-grid;
   display: grid;
   grid-template-columns: 1.3fr 0.7fr
 }
 .s-content {
+  min-height: 61%;
   background-color: var(--text-color);
   padding: 65px 0;
   display: -ms-grid;
@@ -1175,6 +1175,7 @@ textarea {
 }
 .post-heading-whitepaper {
   font: var(--heavy-weight) 30px var(--hind-font);
+  line-height: 1;
   color: #FAFEFE;
   padding-bottom: 10px
 }
@@ -1184,6 +1185,7 @@ textarea {
 }
 .post-heading {
   font: var(--heavy-weight) 20px var(--hind-font);
+  line-height: 1;
   color: var(--main-color);
   padding-bottom: 10px
 }

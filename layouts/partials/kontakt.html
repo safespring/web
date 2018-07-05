@@ -1,45 +1,178 @@
-<!-- Google Tag Manager -->
-{{ partial "g-tag-manager.html" . }}
 
-<!-- NAVBAR -->
-{{ partial "header.html" . }}
-
-<!-- CONTENT -->
-<main class="content-main kon-main">
-  <div class="kontakt">
-    <!-- Address -->
-    <div class="adr">
-      <h3>ADRESS</h3>
-      <p>Smidesvägen 12
-      <br/>171 41 Solna</p>
-    </div>
-
-    <!-- Contact -->
-    <div class="cont">
-      <h3>KONTAKT</h3>
-      <a class="nonblock" href="mailto:info@safespring.com">info@safespring.com</a>
-    </div>
-
-      <!-- Maps -->
-    <div class="map">
-      <iframe class="actAsDiv" style="width:100%;height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=Smidesv%C3%A4gen%2012&amp;aq=0&amp;ie=UTF8&amp;t=p&amp;z=14&amp;iwloc= &amp;output=embed"></iframe>
-    </div>
-
-    <!-- Form
-    <form class="form" method="post" enctype="multipart/form-data" action="php/form-u11953.php">
-      <input class="form-text" type="text" spellcheck="false" name="name" tabindex="1" placeholder="Ditt namn" required/>
-
-      <input class="form-text" type="email" spellcheck="false" name="email" tabindex="2" placeholder="Din epost" required/>
-
-      <textarea class="form-message" name="message" tabindex="3" placeholder="Ditt meddelande"></textarea>
-
-      <button id="button" type="submit" value="Skicka" tabindex="4">
-          <p>Skicka</p>
-      </button>
-    </form> -->
+	{{ partial "head.html" . }}
+	<!-- Google Tag Manager -->
+<body>
+		{{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+	 {{ partial "header.html" . }} <!-- HEADING -->
+	 <div class="heading-sub" style="background: url(/img/safespring_bilder_9.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+		<div class="heading-content">
+			<h1>{{ .Title }}</h1>
+		</div>
+	</div><!-- HEADING -->
+	<!-- CONTENT -->
+	<main class="content-chalmers">
+		<!-- Main  -->
+		<div class="ch-content">
+			<div class="content-heading">
+				<h2>{{ .Title }}</h2>
+			</div>
+			<div class="content-body">
+				<p>Safespring finns lokalt i Sverige och Norge. Huvudkontoret ligger en bit utanför Stockholm i Sverige. För att kontakta någon på Safespring kan du använda dig av länkarna till höger, eller fylla i kontaktformuläret på denna sida.</p>
+				<p>När du skickar ett meddelande till oss via formulär på våra webbplatser gokänner du Safesprings <a href="/dokument/personuppgiftshantering/">personuppgiftspolicy</a>.</p>
+				<script src="//code.jquery.com/jquery-3.1.1.min.js">
+				</script>
+				<link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+				<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js">
+				</script>
+				<style>
+				    .twitter-typeahead .tt-hint{color: #6B7C93;}.twitter-typeahead .tt-menu{background-color: #fff;max-height: 300px;overflow: auto;border: 1px solid #66afe9;border-top: none;border-radius: 0 0 4px 4px;width: 100%;margin-top: -2px;}.twitter-typeahead .tt-suggestion{padding: 5px 10px;color: #4B5562;}.twitter-typeahead .tt-suggestion:hover{background-color: #F6F9FB;color: #000;}
+				</style>
+				<script>
+            jQuery(document).ready(function() {
+              var matchClientsTimeout = null;
+              var matchClients = function(q, sync, cb) {
+                if (matchClientsTimeout) {
+                  clearTimeout(matchClientsTimeout);
+                }
+                matchClientsTimeout = setTimeout(function() {
+                  $.ajax({
+                    type: "GET",
+                    url: "https://power.upsales.com/api/external/soliditet/clientSearch?name=" + q,
+                    success: function(res) {
+                      cb(res.data);
+                    },
+                    error: function(res) {},
+                  });
+                }, 200);
+              };
+              var getSuggestTemplate = function(c) {
+                return "<div><div>" + c.name + "<\/div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "<\/span><\/div>";
+              };
+              var nameField = jQuery("#up-client-name-input");
+              if (nameField.length) {
+                var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
+                var spinner = jQuery("<b id='up-client-spinner' class='fa fa-refresh fa-spin' />");
+                spinner.hide();
+                nameField.after(dunsField);
+                nameField.after(spinner);
+                nameField.typeahead({
+                  hint: true,
+                  highlight: true,
+                  minLength: 3
+                }, {
+                  name: "clients",
+                  limit: 25,
+                  source: matchClients,
+                  templates: {
+                    suggestion: getSuggestTemplate
+                  }
+                }).bind("typeahead:autocompleted", function(ev, client) {
+                  nameField.typeahead("val", client.name);
+                  dunsField.val(client.dunsNo);
+                  nameField.blur();
+                }).bind("typeahead:select", function(ev, client) {
+                  nameField.typeahead("val", client.name);
+                  dunsField.val(client.dunsNo);
+                }).bind("typeahead:cursorchange", function(ev, client) {
+                  nameField.typeahead("val", client.name);
+                  dunsField.val(client.dunsNo);
+                }).on("typeahead:asyncrequest", function() {
+                  spinner.show();
+                }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
+                  spinner.hide();
+                });
+              }
+            });
+				</script>
+				<form action="https://power.upsales.com/api/external/formSubmit" id="up-form" method="post" name="form_9549u13ba8e3764c345a39c3ae9fc2fc44d6a">
+					<div>
+						<input maxlength="512" name="Contact.name" placeholder="Namn..." required="required" type="text">
+					</div>
+					<div class="email">
+						<input autocomplete="off" id="up-email-input" maxlength="512" name="Contact.email" placeholder="Epost..." required="required" type="email">
+					</div>
+					<div>
+						<input id="up-client-name-input" maxlength="512" name="Client.name" placeholder="Företag..." required="required" type="text">
+					</div>
+					<div>
+						<textarea maxlength="712" name="Extra.1528723484035" placeholder="Meddelande..." rows="5"></textarea>
+					</div><!-- REQUIRED FIELDS -->
+					<input name="formCid" type="hidden" value="9549"> <input name="formId" type="hidden" value="9549u13ba8e3764c345a39c3ae9fc2fc44d6a"> <input name="isFrame" type="hidden" value="false"> <input name="validation" style="display: none;" type="text" value=""> <!-- END OF REQUIRED FIELDS -->
+					 <button id="button" style="width: 130px;" type="submit">Skicka</button>
+				</form>
+				<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js">
+				</script>
+				<script>
+				    function onSubmit(e){var t=!0,n=!0;typeof window.__validEmail!="undefined"&&(n=window.__validEmail,t=!1);if(typeof n=="boolean"&&n&&!t)validateForm(e,"https://safespring.com/kontakt/kontakt");else{e.preventDefault();var r=!0,i=setInterval(function(){var n=window._bEmValid;if(typeof window.__validEmail!="undefined"||!n)r=window.__validEmail,t=!1;if(typeof r=="boolean"&&r||!t)clearInterval(i),validateForm(e,"https://safespring.com/kontakt/kontakt")},300)}}function validateForm(e,t){e.preventDefault();var n=document.getElementsByName("formId")[0].value,r=document.forms["form_"+n],i=r.querySelectorAll("input, textarea, select");for(var s=0;s<i.length;s++)i[s].type==="text"&&(i[s].value=i[s].value.trim());if(window.grecaptcha===undefined||window.grecaptcha.getResponse()!==""){var o=[];for(var s=0;s<i.length;s++)i[s].type==="checkbox"?o.push(i[s].name+"="+encodeURI(i[s].checked?i[s].value:"off")):o.push(i[s].name+"="+encodeURI(i[s].value));var u=o.join("&");u+="&isAjax=true";var a=window._paq||null,f=new XMLHttpRequest;f.open("POST",r.action),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(u),f.onload=function(){if(f.status===200)if(t)a&&a.push&&a.push(["trackLink","https://post.upsales.com/"+f.responseText,"link"]),typeof _uaq!="undefined"&&_uaq("form="+f.responseText),window.top.location.href=t;else{var e=document.getElementById("up-form"),n=document.getElementById("up-form-thanks");e.style.display="none",n.style.display="block",a&&a.push&&a.push(["trackLink","https://post.upsales.com/"+f.responseText,"link"]),_uaq&&_uaq("form="+f.responseText)}else console.log("AJAX ERROR",f.status)}}else{var l=document.getElementById("recaptcha-error"),c=document.getElementsByClassName("g-recaptcha");l.style.display="none",c&&c.length&&console.log("handle this later")}}var form=document.getElementById("up-form");form.addEventListener("submit",onSubmit)
+				</script>
+				<div>
+					<h2>Besöksadress Sverige</h2>
+					<p>Smidesvägen 12<br>
+					171 41 Solna<br>
+					Sverige<br>
+					<br>
+					<iframe frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2033.4512155799866!2d17.979684316731618!3d59.35880798166926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9db89a7f86bf%3A0x6c1a43d93fcbf297!2sSafespring!5e0!3m2!1ssv!2sse!4v1528722539706" style="border:0" width="300"></iframe></p>
+					<h2>Besöksadress Norge</h2>
+					<p>Lysaker Torg 12<br>
+					1366 Lysaker, Oslo<br>
+					Norge</p><br>
+					<iframe frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2299012175845!2d10.633605316302893!3d59.91173178186637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416cfa39be1a6b%3A0x328bf62a2a8f42cc!2sLysaker+Torg+12%2C+1366+Lysaker%2C+Norge!5e0!3m2!1ssv!2sse!4v1530192586614" style="border:0" width="300"></iframe>
+				</div>
+			</div>
   </div>
-</main>
+			<!-- SIDEBAR -->
+			<div class="kontakt-sidebar">
+				<!-- FREDRIC WALLSTEN -->
+				<div>
+					<img alt="Fredric Wallsten, VD, Försäljningschef Norge" src="/img/kontakt/fredric-wallsten.png">
+					<h2>Fredric Wallsten</h2>
+					<p>VD, Försäljningschef Norge<br>
+					<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a><br>
+					<a href="tel:+46766292502">‭+46 76-629 25 02</a></p>
+				</div><!-- JOHAN EDEVÅG -->
+				<div>
+					<img alt="Johan Edevåg, Försäljningschef Sverige" src="/img/kontakt/johan-edevag.png">
+					<h2>Johan Edevåg</h2>
+					<p>Försäljningschef Sverige<br>
+					<a href="mailto:johan.edevag@safespring.se">johan.edevag@safespring.se</a><br>
+					<a href="tel:+46705890255">+46 70-589 02 55‬</a></p>
+				</div><!-- MARCUS BOBEG -->
+				<div>
+					<img alt="Marcus Boberg, Informations- och Marknadsansvarig" src="/img/kontakt/marcus-boberg.png">
+					<h2>Marcus Boberg</h2>
+					<p>Informations- och Marknadsansvarig<br>
+					<a href="mailto:marcus.boberg@safespring.se">marcus.boberg@safespring.se</a><br>
+					<a href="tel:+46702864701‬">+46 70-286 47 01‬</a></p>
+				</div>
+				<div>
+					<br>
+					<br>
+				</div>
+				<div>
+					<a href="mailto:sales@safespring.se" id="button">KONTAKTA<br>
+				SÄLJAVDELNINGEN</a>
+					<a href="mailto:media@safespring.se" id="button">KONTAKTA<br>
+				INFO-AVDELNINGEN</a>
+			</div>
+				<div class="read-more">
+					<h2>Läs mer om:</h2>
+					<ul class="content-body">
+						<li class="">
+							<a href="/safespring-backup">&gt; Backup som tjänst</a>
+						</li>
+						<li class="">
+							<a href="/safespring-storage">&gt; Lagring som tjänst</a>
+						</li>
+						<li class="">
+							<a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-<!-- FOOTER -->
-{{ partial "footer.html" . }}
+</div>
+	</main><!-- FOOTER -->
+	{{ partial "footer.html" . }}
+</body>
+</html>

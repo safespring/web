@@ -1,17 +1,17 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: "{{ .Date }}"
+title: "Fördelarna med ett digitalt arkiv"
+date: "2018-06-25T14:04:37+02:00"
 draft: true
-author: ""
-dokumentnamn: ""
-huvudbildnamn: ".jpg"
-socialmediabild: ""
+author: "Gabriel Paues"
+dokumentnamn: "test.pdf"
+huvudbildnamn: "Safespring_archive.jpg"
+socialmediabild: "Safespring_Linkedin_archive.jpg"
 intro: ""
 ---
 
 ## author
-your name (or the authors name).
-a photo of the author should be places in the img/whitepapers folder
+your name (or the authors name)
+a photo of the author should be places in the img/whitepapers folders
 
 ## dokumentnamn
 The file name (including the .pdf) of the PDF located in /marketing/whitepapers

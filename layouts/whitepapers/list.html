@@ -1,12 +1,7 @@
 {{ partial "head.html" . }}
 
 <body>
-  <style>
-    .aktuellt {
-      background: #f9ffff url("/img/safespring_bilder_3.jpg?crc=133698968") no-repeat center top fixed;
-      background-size: cover;
-    }
-  </style>
+
 
   <!-- Google Tag Manager -->
   {{ partial "g-tag-manager.html" . }}
@@ -15,11 +10,10 @@
   {{ partial "header.html" . }}
 
   <!-- HEADING -->
-  <div class="heading-sub">
+  <div class="heading-sub" style="background: url(/img/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
     <div class="heading-content">
       <h1>Safespring White Papers</h1>
-      <p>Med Safespring får du en effektiv modell för leverans
-        <br/>av tjänst utan att förlora kontroll över din data.</p>
+      <p>Safesprings white papers syftar till att sprida kunskap</br> och intresse för datasäkerhet och cloud computing.</p>
     </div>
   </div>
 
@@ -42,7 +36,34 @@
   </div>
 
     <!-- SIDEBAR -->
-  {{ partial "side-bar.html" . }}
+    <div class="ch-sidebar">
+      <div>
+        <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+      </div>
+
+      <div>
+        <h2 class="content-heading">Safespring White Papers</h2>
+        <p class="content-body">Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
+
+        <br>
+      </div>
+
+      <a id="find-more" href="/kontakt">KONTAKTA
+        <br/>SAFESPRING</a>
+
+      <div class="read-more">
+        <h2>Läs mer om:</h2>
+              <li class="content-body">
+          <a href="/safespring-backup">&gt; Backup som tjänst</a>
+        </li>
+        <li class="content-body">
+          <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+        </li>
+        <li class="content-body">
+          <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+        </li>
+      </div>
+    </div>
 
   </main>
 
