@@ -6,7 +6,7 @@ tags: [""]
 showthedate: true
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 ---
-{{< youtube XhLAQpb4RmA >}}
+{{< youtube ogzSdTNk554 >}}
 
 ## Varför en tidslinje?
 De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande personuppgiftsskydd har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
