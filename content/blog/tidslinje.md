@@ -11,7 +11,7 @@ socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 ## Inledning
 De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande IT-säkerhet har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
 </br></br>
-<button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button>
+<a href="/whitepapers/cloudact"><button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button></a>
 
 ## År 1995
 1995-10-24: EU-parlamentet och EU-rådet beslutar om Dataskyddsdirektivet(1). Detta leder till införandet av Personuppgiftslagen (PUL) i Sverige(2) tre år senare.
@@ -78,8 +78,7 @@ Lagen öppnar också för att presidenten kan ingå bilaterala avtal med andra l
 2018-04-17: US vs. Microsoft-överklagan till amerikanska Supreme Court läggs ner på grund av att CLOUD Act har gjort fallet onödigt. US gjorde om dess begäran om utlämnande av information med den nya lagstiftningen och ingen tvist föreligger längre mellan Microsoft och US.
 
 </br>
-<button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button>
-
+<a href="/whitepapers/cloudact"><button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button></a>
 
 ## Källor
 
