@@ -1,5 +1,5 @@
 ---
-title: "Tidslinje över lagarna som formade EU:s och USA:s IT-säkerhet"
+title: "Tidslinje över lagarna som format EU:s och USA:s personuppgiftsskydd"
 date: "2018-08-02T09:22:53+02:00"
 draft: false
 tags: [""]
@@ -9,7 +9,7 @@ socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 {{< youtube XhLAQpb4RmA >}}
 
 ## Varför en tidslinje?
-De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande IT-säkerhet har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
+De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande personuppgiftsskydd har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
 </br></br>
 <a href="/whitepapers/cloudact"><button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button></a>
 
