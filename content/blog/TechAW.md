@@ -74,7 +74,7 @@ Smidesvägen 12</br>
 **15:45 - SCALEOUT SYSTEMS** </br> Fog computing
 
 **16:30 - SUSE**
-</br> Container as a Service Platform. Software Defined Storage (Ceph)
+</br> SUSE Linux Enterprise Server 15 as a Service Platform 
 
 
 <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
