@@ -68,14 +68,13 @@ Smidesvägen 12</br>
 [Se karta](https://goo.gl/maps/of8hjYSNFUH2)
 
 ## AGENDA
-**15:00 - SCALEOUT SYSTEMS** </br> Fog computing
+**15:00 - SAFESPRING**
+</br> DevOps, Containers and Workflows
 
-**15:45 - SUSE**
-</br> Container as a Service Platform. Software Defined Storage (Ceph)
+**15:45 - SCALEOUT SYSTEMS** </br> Fog computing
 
-**16:30 - SAFESPRING**
-</br> Bygga Hybrid- & Private Cloud i praktiken
-
+**16:30 - SUSE**
+</br> SUSE Linux Enterprise Server 15 as a Service Platform 
 
 
 <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
