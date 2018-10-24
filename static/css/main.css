@@ -258,6 +258,27 @@ textarea {
   margin: 0;
   color: var(--text-color)
 }
+.heading-event h1 {
+  font: var(--heavy-weight) 38px var(--hind-font)
+}
+.heading-event p {
+  font: var(--heavy-weight) 16px var(--mon-font)
+}
+
+.heading-event h1 {
+  font: var(--heavy-weight) 42px var(--hind-font);
+  color: var(--text-color);
+  margin: 0
+}
+.heading-event h1:nth-child(2) {
+  margin-top: -20px
+}
+.heading-event p {
+  font: var(--heavy-weight) 18px var(--mon-font);
+  margin: 0;
+  color: var(--text-color)
+}
+
 .arrows {
   text-align: center
 }
@@ -297,6 +318,22 @@ textarea {
   grid-row: main
 }
 .heading-sub .heading-content {
+  text-shadow: 1px 1px 1px var(--alt-color)
+}
+.heading-sub-event {
+  background: var(--main-color);
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 65rem)[main-end] minmax(1em, 1fr)[full-end];
+  grid-template-rows: [full-start] minmax(10em, 1fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
+  text-align: center
+}
+.heading-sub-event>* {
+  grid-column: main;
+  grid-row: main
+}
+.heading-sub-event .heading-event {
   text-shadow: 1px 1px 1px var(--alt-color)
 }
 .footer {
@@ -355,7 +392,7 @@ textarea {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  padding: 5px 0
+  padding: 0px 0
 }
 .email,
 .offer {
@@ -1510,7 +1547,7 @@ label {
     padding-right: 34px
   }
   .email {
-    margin-left: 8px
+    margin-left: 0px
   }
   .content-om {
     background-color: var(--text-color);
