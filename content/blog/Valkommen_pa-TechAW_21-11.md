@@ -19,6 +19,6 @@ Gabriel Paues (Cloud Architect, Safespring) och Jonas Forsberg (Pre-sales engine
 
 **Datum:** 21 november
 
-**Plats:** Stockholms innerstad
+**Plats:** Grevturegatan 15   <a href="https://goo.gl/maps/NkuB9WbraTk" style="color:#FA690F;">SE PÅ GOOGLE MAPS</a>
 
-**Lokal:** Kommer släppas inom kort
+**Lokal:** Napolyon Bistro & Bar
