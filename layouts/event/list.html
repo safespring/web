@@ -2,81 +2,76 @@
 
 <body>
 
+    <!-- Google Tag Manager -->
+    {{ partial "g-tag-manager.html" . }}
 
-  <!-- Google Tag Manager -->
-  {{ partial "g-tag-manager.html" . }}
+    <!-- NAVBAR -->
+    {{ partial "header.html" . }}
 
-  <!-- NAVBAR -->
-  {{ partial "header.html" . }}
-
-  <!-- HEADING -->
-  <div class="heading-sub" style="background: url(/img/pageimage/Safespring_event.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
-    <div class="heading-content">
-      <h1>Safespring event</h1>
-      <p>Safesprings evenemang syftar till att sprida kunskap</br> och intresse för datasäkerhet och cloud computing.</p>
-    </div>
-  </div>
-
-  <!-- CONTENT -->
-  <main class="content-chalmers">
-    <!-- Main  -->
-    <div class="ch-content">
-      <div class="">
-        <h2>Kommande event</h2>
-        {{ range where .Data.Pages.ByDate "Section" "event" }}
-        {{ if ge .Date.Unix (now.AddDate 0 0 -1) }}
-        <div class="content-container">
-            {{ .Render "li"}}
+    <!-- HEADING -->
+    <div class="heading-sub" style="background: url(/img/pageimage/Safespring_event.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+        <div class="heading-content">
+            <h1>Safespring event</h1>
+            <p>Safesprings evenemang syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
         </div>
-        {{ end }}
-      {{ end }}
-      </div>
-      <div>
-          <h2>Tidigare event</h2>
-          {{ range where .Data.Pages.ByDate.Reverse "Section" "event" }}
-          {{ if .Date.Before (now.AddDate 0 0 -1) }}
-          <div class="content-container" style="opacity: 0.5; filter: alpha(opacity=50);">
-              {{ .Render "li" }}
-          </div>
-          {{ end }}
-            {{ end }}
-      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <main class="content-chalmers">
+        <!-- Main  -->
+        <div class="ch-content">
+            <div class="">
+                <h2>Kommande event</h2>
+                {{ range where .Data.Pages.ByDate "Section" "event" }} {{ if ge .Date.Unix (now.AddDate 0 0 -1) }}
+                <div class="content-container">
+                    {{ .Render "li"}}
+                </div>
+                {{ end }} {{ end }}
+            </div>
+            <div>
+                <h2>Tidigare event</h2>
+                {{ range where .Data.Pages.ByDate.Reverse "Section" "event" }}
+                {{ if .Date.Before (now.AddDate 0 0 -1) }}
+                <div class="content-container" style="opacity: 0.5; filter: alpha(opacity=50);">
+                    {{ .Render "li" }}
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="ch-sidebar">
+            <div>
+                <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
             </div>
 
+            <div>
+                <h2 class="content-heading">Safespring event</h2>
+                <p class="content-body">Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
+            </div>
+            <div id="lankar">
+                <a id="text-button" href="/kontakt">Kontakta Safespring</a>
+            </div>
 
-    <!-- SIDEBAR -->
-    <div class="ch-sidebar">
-      <div>
-        <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
-      </div>
+            <div class="read-more">
+                <h2>Läs mer om:</h2>
+                <li class="content-body">
+                    <a href="/safespring-backup">&gt; Backup som tjänst</a>
+                </li>
+                <li class="content-body">
+                    <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+                </li>
+                <li class="content-body">
+                    <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+                </li>
+            </div>
+        </div>
 
-      <div>
-        <h2 class="content-heading">Safespring event</h2>
-        <p class="content-body">Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
+    </main>
 
-        <br>
-      </div>
-
-      <a id="find-more" href="/kontakt">KONTAKTA
-        <br/>SAFESPRING</a>
-
-      <div class="read-more">
-        <h2>Läs mer om:</h2>
-              <li class="content-body">
-          <a href="/safespring-backup">&gt; Backup som tjänst</a>
-        </li>
-        <li class="content-body">
-          <a href="/safespring-storage">&gt; Lagring som tjänst</a>
-        </li>
-        <li class="content-body">
-          <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-        </li>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- FOOTER -->
-  {{ partial "footer.html" . }}
+    <!-- FOOTER -->
+    {{ partial "footer.html" . }}
 </body>
+
 </html>

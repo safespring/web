@@ -264,14 +264,14 @@ textarea {
 .heading-content h1 {
   font: var(--heavy-weight) 42px var(--hind-font);
   color: var(--text-color);
-  margin: 0
+  margin: 0;
+  line-height: 42px;
 }
 .heading-content h1:nth-child(2) {
-  margin-top: -20px
+  margin-top: -20px;
 }
 .heading-content p {
   font: var(--heavy-weight) 18px var(--mon-font);
-  margin: 0;
   color: var(--text-color)
 }
 .heading-event h1 {
