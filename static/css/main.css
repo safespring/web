@@ -261,6 +261,7 @@ textarea {
 .hidden {
   display: none
 }
+
 .heading-content h1 {
   font: var(--heavy-weight) 42px var(--hind-font);
   line-height: 42px;
@@ -929,7 +930,8 @@ textarea {
   color: var(--link-color)
 }
 #sb-title {
-  color: var(--button-color)
+  color: var(--button-color);
+  margin-top: 1px;
 }
 .s-main {
   min-height: 61%;
