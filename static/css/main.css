@@ -263,12 +263,13 @@ textarea {
 }
 .heading-content h1 {
   font: var(--heavy-weight) 42px var(--hind-font);
+  line-height: 42px;
   color: var(--text-color);
   margin: 0;
-  line-height: 42px;
 }
 .heading-content h1:nth-child(2) {
   margin-top: -20px;
+  line-height: 42px;
 }
 .heading-content p {
   font: var(--heavy-weight) 18px var(--mon-font);
