@@ -52,4 +52,10 @@
       {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
+
+      {{ "<!--[if lt IE 9]>" | safeHTML }}
+  <script src="html5shiv.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+
+
    </head>
