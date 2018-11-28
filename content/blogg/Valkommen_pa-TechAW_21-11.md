@@ -2,6 +2,7 @@
 title: "Välkommen på TechAW 21 november"
 date: 2018-10-24
 draft: false
+category: "Blog"
 ---
 {{< youtube JB7FtKURpck >}}
 <br><br>

@@ -1,0 +1,73 @@
+{{ partial "head.html" . }}
+
+
+  <!-- Google Tag Manager -->
+  {{ partial "g-tag-manager.html" . }}
+
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
+
+  <!-- HEADING -->
+  <div class="heading-sub" style="background: url(/img/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+    <div class="heading-content">
+      <h1>Publikationer</h1>
+      <p>Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-chalmers">
+    <!-- Main  -->
+    <div class="ch-content">
+      <div class="">
+        {{ range .Site.Pages.GroupByDate "January 2006" }}
+          <h2>{{ .Key }}</h2>
+          <div class="">
+          {{ range .Pages }}
+            {{ .Render "li"}}
+            {{ end }}
+        </div>
+        {{ end }}
+        </div>
+      </div>
+
+    <!-- SIDEBAR -->
+    <div class="ch-sidebar">
+      <div>
+        <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+      </div>
+
+      <div>
+        <h2 class="content-heading">Safespring Publikationer</h2>
+        <p class="content-body">Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
+        <div>
+          <a href="/event" id="text-button">Event</a><br>
+          <a href="/blogg" id="text-button">Blogg</a><br>
+          <a href="/blogg" id="text-button">Guider</a><br>
+          <a href="/dokument" id="text-button">Dokument</a><br>
+          <a href="/whitepaper" id="text-button">White Papers</a>
+        </div>
+
+        <br>
+      </div>
+
+      <a id="find-more" href="/kontakt">KONTAKT</a>
+
+      <div class="read-more">
+        <h2>Läs mer om:</h2>
+              <li class="content-body">
+          <a href="/safespring-backup">&gt; Backup som tjänst</a>
+        </li>
+        <li class="content-body">
+          <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+        </li>
+        <li class="content-body">
+          <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+        </li>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}

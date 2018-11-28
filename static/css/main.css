@@ -1247,10 +1247,41 @@ textarea {
   color: var(--link-color);
   transition: color 0.2s ease-in-out
 }
+.content-category-publikationer {
+  font: var(--heavy-weight) 14px var(--hind-font);
+  color: var(--main-color);
+  padding: 10px 0 0;
+  text-transform: capitalize;
+}
+.content-category-event {
+  font: var(--heavy-weight) 14px var(--hind-font);
+  color: var(--green-color);
+  padding: 10px 0 0;
+  text-transform: capitalize;
+}
+.content-category-blogg {
+  font: var(--heavy-weight) 14px var(--hind-font);
+  color: var(--alt-color);
+  padding: 10px 0 0;
+  text-transform: capitalize;
+}
+.content-category-dokument {
+  font: var(--heavy-weight) 14px var(--hind-font);
+  color: var(--green-color);
+  padding: 10px 0 0;
+  text-transform: capitalize;
+}
+.content-category-whitepaper {
+  font: var(--heavy-weight) 14px var(--hind-font);
+  color: var(--link-color);
+  padding: 10px 0 0;
+  text-transform: capitalize;
+}
 .content-meta {
   font: var(--heavy-weight) 14px var(--hind-font);
   color: var(--main-color);
-  padding: 10px 0 0
+  padding: 10px 0 0;
+  text-transform: capitalize
 }
 .content-meta-whitepaper {
   font: var(--heavy-weight) 14px var(--hind-font);

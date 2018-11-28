@@ -1,8 +1,8 @@
 ---
-title: "Tack för din anmälan"
-date: "{{ .Date.Unix now }}"
-publishDate: "{{ .Date.Unix now }}"
-eventdatum: ""
+title: "Tack"
+date: ""
+publishDate: "2018-01-01"
+eventdatum: "2018-11-21T16:00:00"
 draft: false
 author: "Safespring"
 dokumentnamn: ""
