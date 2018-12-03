@@ -1,5 +1,5 @@
 +++
-title = "Safespring bjuder in till inspirationsfrukost"
+title = "Safespring bjuder in till inspirations-frukost"
 date = "2018-02-19"
 draft = false
 tags = ["inspirationsfruktost, seminarum"]
