@@ -14,7 +14,7 @@ background: "Safespring_huvudbild_cloudact.jpg"
 ## Varför en tidslinje?
 De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande personuppgiftsskydd har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
 </br></br>
-<a href="/whitepapers/cloudact"><button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button></a>
+<a href="/marketing/whitepapers/Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"><button id="button" href="/whitepapers/cloudact/">Läs Safesprings White Paper</button></a>
 
 ## 1995
 1995-10-24: EU-parlamentet och EU-rådet beslutar om Dataskyddsdirektivet(1). Detta leder till införandet av Personuppgiftslagen (PUL) i Sverige(2) tre år senare.
