@@ -23,7 +23,7 @@
         {{ range .Site.Pages.GroupByDate "January 2006" }}
           <h2>{{ .Key }}</h2>
           <div class="">
-          {{ range where .Pages "Section" "in" (slice "blogg" "whitepaper") }}
+          {{ range where .Pages "Section" "!=" "event" }}
             {{ .Render "li"}}
             {{ end }}
         </div>
