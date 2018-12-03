@@ -9,7 +9,7 @@ background: "Safespring_huvudbild_EU-digital-strategy.jpg"
 ---
 EU kommissionen publicerade sin **[digitala strategi][strategi]** den 21 november. Det intressanta med EUs digitala utveckling kan sammanfattas i en mening på sida 25: “Co-creation will be encouraged. Open-source solutions will be preferred...”.
 
-I Sverige tillämpar vi offentlighetsprincipen vilket innebär att allt som inkommer, eller produceras av myndigheter och kommuner är öppen information, om man inte kan motivera varför informationen ska vara klassificeras som sekretessbelagd..
+I Sverige tillämpar vi offentlighetsprincipen vilket innebär att allt som inkommer, eller produceras av myndigheter och kommuner är öppen information, om man inte kan motivera varför informationen ska vara klassificeras som sekretessbelagd.
 
 Det är fler och fler röster som menar att detta bör även gälla programkod. Fördelarna med detta är bland annat:
 
