@@ -1,0 +1,77 @@
+{{ partial "head.html" . }}
+
+<body>
+
+
+  <!-- Google Tag Manager -->
+  {{ partial "g-tag-manager.html" . }}
+
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
+
+  <!-- HEADING -->
+  <div class="heading-sub" style="background: url(/img/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+    <div class="heading-content">
+      <h1>Safespring White Papers</h1>
+      <p>Safesprings white papers syftar till att sprida kunskap</br> och intresse för datasäkerhet och cloud computing.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-chalmers">
+    <!-- Main  -->
+    <div class="ch-content">
+      <div class="">
+        {{ range .Data.Pages.GroupByDate "2006" }}
+
+          <div class="">
+          {{ range .Pages }}
+            {{ .Render "li"}}
+            {{ end }}
+          {{ end }}
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- SIDEBAR -->
+    <div class="ch-sidebar">
+      <div>
+        <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+      </div>
+
+      <div>
+        <h2 class="content-heading">Safespring White Papers</h2>
+        <p class="content-body">Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
+
+        <br>
+      </div>
+      <div>
+        <a href="/event" id="text-button">Event</a><br>
+        <a href="/blogg" id="text-button">Blogg</a><br>
+        <a href="/whitepaper" id="text-button">White Papers</a>
+      </div><br><br>
+
+      <a id="find-more" href="/kontakt">KONTAKTA SAFESPRING</a>
+
+      <div class="read-more">
+        <h2>Läs mer om:</h2>
+              <li class="content-body">
+          <a href="/safespring-backup">&gt; Backup som tjänst</a>
+        </li>
+        <li class="content-body">
+          <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+        </li>
+        <li class="content-body">
+          <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+        </li>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,5 +1,6 @@
-<div class="content-item">
-  <a class="post-heading" href="{{ .Permalink }}">{{ .Title }}</a>
-  <div class="content-body">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 200 }}... {{ end }}</div>
-  <div class="content-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+<div class="content-container-post" style="background: var(--main-color)">
+
+  <div class="content-meta-post">{{ .Date.Format "Jan 2, 2006" }}:</div><br>
+  <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
+  <a class="content-category-dokument" href="/{{ .Section }}">{{ .Section }}</a>
 </div>

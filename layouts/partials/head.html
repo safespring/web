@@ -44,12 +44,18 @@
       <!-- jQuery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <!-- CSS -->
-      <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
+      <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type="text/css"/>
       <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:500" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:400,500,600" rel="stylesheet">
       <!-- RSS -->
       <link rel="canonical" href="{{ .Permalink }}">
       {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
+
+      {{ "<!--[if lt IE 11]>" | safeHTML }}
+  <script src="html5shiv.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+
+
    </head>
