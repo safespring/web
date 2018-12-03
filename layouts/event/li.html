@@ -1,13 +1,19 @@
 <div class="content-container-post" style="background: url({{ if.Params.eventbild }}/img/event/{{ .Params.eventbild }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}); background-size: cover;">
 
-  <div class="content-meta-post">{{ .Date.Format "Jan 2, 2006" }}:</div><br>
+  <div class="content-meta-post"><a class="content-category-event" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
   <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
   {{ if .Date.Before (now.AddDate 0 0 -1) }}
-  <a class="content-category-event" href="{{ .Permalink }}">Detta event har tyvärr redan varit</a>
+  <a class="content-summary-event" href="{{ .Permalink }}">Detta event har tyvärr redan varit</a>
   {{ else }}
-  <a class="content-category-event" href="{{ .Permalink }}">Skaffa biljett här</a>
+  <div class="content-summary-event">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
   {{ end }}
 </div>
+<!--
+<div class="content-container-post" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
+  <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
+  <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
+  <div class="content-summary-blogg">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
+</div>-->
 
 <!--
 <div class="content-container-whitepaper" style="background: url({{ if.Params.eventbild }}/img/event/{{ .Params.eventbild }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}); background-size: cover;">

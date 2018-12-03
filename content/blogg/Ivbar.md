@@ -4,6 +4,7 @@ date = "2018-05-16"
 draft = false
 tags = ["IVBAR, cloudtechnilogy"]
 showthedate = true
+background = "Safespring_huvudbild_ivbar.jpg"
 +++
 
 IVBAR är en  startup som nyligen benämndes som ett av europas topp-20 bolag i vårdteknik-sektorn. Mjukvaran de erbjuder hjälper vårdföretag att göra avancerad verksamhetsanalys, ersättningsmodeller och internationell benchmarking inom sjukvården. Safesprings bakgrund i säkerhet och flexibilitet gör att Ivbar enkelt kan utveckla sin tjänst ovanpå Safesprings infrastruktur.

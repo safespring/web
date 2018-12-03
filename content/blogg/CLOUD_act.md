@@ -4,6 +4,7 @@ date = "2018-05-15"
 draft = false
 tags = ["GDPR, cloudact"]
 showthedate = true
+background = "Safespring_huvudbild_cloudact.jpg"
 +++
 
 CLOUD act är en ny amerikansk lag som gör det möjligt för myndigheter att

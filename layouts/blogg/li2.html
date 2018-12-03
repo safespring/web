@@ -1,8 +1,6 @@
-<div class="content-container-post" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
   <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
-  <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
+  <a class="post-heading-firstpage" href="{{ .Permalink }}">{{ .Title }}</a>
     <div class="content-summary-blogg">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
-</div>
 
 <!--
 <div class="content-item">

@@ -1,5 +1,5 @@
 +++
-title = "Nyhetsbrev januar 2018"
+title = "Nyhetsbrev januari 2018"
 date = "2018-01-22"
 draft = false
 tags = ["nyhetsbrev, backup, compute"]

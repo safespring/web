@@ -1,6 +1,6 @@
-<div class="content-container-post" style="background: var(--main-color)">
-
-  <div class="content-meta-post">{{ .Date.Format "Jan 2, 2006" }}:</div><br>
+<div class="content-container-post" style="background: url({{ if.Params.background }}/whitepaper/images/background/{{ .Params.background }}{{ else }}/whitepaper/images/background/background.jpg{{ end }}); background-size: cover;">
+  <div class="content-meta-post"><a class="content-category-whitepaper" href="/{{ .Section }}">{{ .Section }}</a>
+ | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
   <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
-  <a class="content-category-whitepaper" href="/{{ .Section }}">{{ .Section }}</a>
+  <div class="content-summary-blogg">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
 </div>

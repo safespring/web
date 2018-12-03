@@ -1,5 +1,5 @@
 ---
-title: "Att tänka på gällande CLOUD act och GDPR"
+title: "Att tänka på när det gäller CLOUD act och GDPR"
 date: 2018-06-20
 draft: false
 author: "Martin Millnert"
@@ -7,6 +7,7 @@ dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-
 huvudbildnamn: "CLOUD.jpg"
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
+background: "Safespring_huvudbild_cloudact.jpg"
 ---
 
 ## Inledning
@@ -111,7 +112,7 @@ Givet rättssituationen finns några strategiska rekommendationer, gällande mol
 
 8. Inkludera i riskanalysen den legala osäkerheten kring existerande och nya molntjänstleverantörer -- gör en sannolikhetsbedömning och konsekvensanalys och agera utifrån detta: Om det antas till exempel vara 20 procents risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?
 
-9. Ha redundans även av leverantörer. Särskilt viktigt för tjänster i riskzonen och gör en bedömning kring migrationsprocessen: hur lång tid tar det t.ex. att flytta applikationer med känslig data från amerikanska tjänster om behovet  skulle uppstå? Underlaget behövs för att kunna ta rätt beslut om det skulle bli skarpt läge.
+9. Ha redundans även av leverantörer. Särskilt viktigt för tjänster i riskzonen och gör en bedömning kring migrationsprocessen: hur lång tid tar det t.ex. att flytta applikationer med känslig data från amerikanska tjänster om behovet skulle uppstå? Underlaget behövs för att kunna ta rätt beslut om det skulle bli skarpt läge.
 
 
 ## Källor

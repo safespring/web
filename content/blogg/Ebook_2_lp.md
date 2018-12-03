@@ -4,6 +4,7 @@ date = "2018-01-22"
 draft = false
 tags = ["ebok, guide, VD, migrering"]
 showthedate = true
+background = "Safespring_huvudbild_ebok1.jpg"
 +++
 
 Safespring har författat en praktisk [guide][ebook] för vädledning in i molnet.

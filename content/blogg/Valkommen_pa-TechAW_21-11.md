@@ -1,8 +1,9 @@
 ---
-title: "Välkommen på TechAW 21 november"
+title: "Välkommen på TechAW den 21 november med SUSE"
 date: 2018-10-24
 draft: false
 category: "Blog"
+background: "Safespring-Tech_AW_20181115.jpg"
 ---
 {{< youtube JB7FtKURpck >}}
 <br><br>

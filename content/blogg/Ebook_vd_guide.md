@@ -1,5 +1,5 @@
 +++
-title = "eBook - En VD:s guide till infrastruktur i molnet"
+title = "E-bok - En VD:s guide till infrastruktur i molnet"
 date = "2017-12-19"
 draft = false
 tags = ["ebok, guide, VD, migrering"]

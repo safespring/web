@@ -1,12 +1,13 @@
 ---
 title: "Moving data to offsite storage using Commvault"
 date: "2018-11-29"
-draft: false
+draft: true
 author: "Gabriel Paues"
 dokumentnamn: ""
 huvudbildnamn: "Safespring_WhitePaper_Commvault_web.jpg"
 socialmediabild: "Safespring_WhitePaper_Commvault_social-media.jpg"
 intro: "This whitepaper describes how to configure Safespring Storage as a “Disk Library” in Commvault."
+background: "Safespring_WhitePaper_Commvault_web.jpg"
 ---
 
 ## Introduction

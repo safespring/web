@@ -52,18 +52,6 @@
       {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
-
-      {{ "<!--[if lt IE 11]>" | safeHTML }}
-  <script src="html5shiv.js"></script>
-{{ "<![endif]-->" | safeHTML }}
-
-
-<style>
-  .heading-sub {
-    background: {{ if.Params.huvudbildnamn }}url("/img/whitepapers/{{ .Params.huvudbildnamn }}") no-repeat center top fixed {{ else }} #195F8C {{ end }};
-    background-size: cover;
-  }
-</style>
   <title>Safespring | {{ .Title }}</title>
 </head>
 <body>
@@ -84,8 +72,9 @@
 <main class="content-chalmers">
   <!-- Main  -->
   <div class="ch-content">
-    <div class="content-heading">
-      {{ .Title }}<p style="color: var(--green-color);">Publicerad {{ .Date.Format "2006-01-02" }}</p>
+    <div class="">
+      <div class="blogg-meta">{{ .Date.Format "2006-01-02" }}</div>
+      <div class="blogg-heading">{{ .Title }}</div>
     </div>
     <div class="content-body">
 

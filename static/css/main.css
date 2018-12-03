@@ -238,7 +238,6 @@ textarea {
   display: -ms-grid;
   display: grid;
   grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 65rem)[main-end] minmax(1em, 1fr)[full-end];
-  text-align: center
 }
 .heading-index>* {
   grid-column: main
@@ -1201,7 +1200,7 @@ textarea {
   justify-content: flex-start
 }
 .content-container-post {
-  padding: 30px;
+  padding: 50px;
   margin: 10px 0;
   border-radius: 3px;
   display: -webkit-box;
@@ -1209,7 +1208,8 @@ textarea {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start
+  justify-content: flex-start;
+  max-width:700px;
 }
 .content-item {
   padding: 30px;
@@ -1230,7 +1230,19 @@ textarea {
 
 }
 .post-heading-post {
-  font: var(--heavy-weight) 30px var(--hind-font);
+  font: var(--heavy-weight) 35px var(--hind-font);
+  line-height: 1;
+  color: #FAFEFE;
+  padding-bottom: 10px
+}
+.blogg-heading {
+  font: var(--heavy-weight) 35px var(--hind-font);
+  line-height: 1;
+  color: var(--main-color);
+  padding-bottom: 10px
+}
+.post-heading-firstpage {
+  font: var(--heavy-weight) 45px var(--hind-font);
   line-height: 1;
   color: #FAFEFE;
   padding-bottom: 10px
@@ -1256,33 +1268,45 @@ textarea {
   text-transform: capitalize;
 }
 .content-category-post {
-  font: var(--heavy-weight) 16px var(--mon-font);
+  font: var(--heavy-weight) 18px var(--mon-font);
   color: var(--text-color);
   padding: 10px 0 0;
   text-transform: capitalize;
 }
 .content-category-blogg {
-  font: var(--heavy-weight) 16px var(--mon-font);
+  font: var(--heavy-weight) 14px var(--mon-font);
   color: var(--green-color);
   padding: 10px 0 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+.content-summary-blogg {
+  font: var(--medium-weight) 18px var(--mon-font);
+  color: var(--text-color);
+  padding: 10px 0 0;
+  text-transform: ;
 }
 .content-category-dokument {
-  font: var(--heavy-weight) 16px var(--mon-font);
+  font: var(--heavy-weight) 18px var(--mon-font);
   color: var(--clear-blue-color);
   padding: 10px 0 0;
   text-transform: capitalize;
 }
 .content-category-event {
-  font: var(--heavy-weight) 16px var(--mon-font);
+  font: var(--heavy-weight) 14px var(--mon-font);
   color: var(--green-color);
   padding: 10px 0 0;
 }
+.content-summary-event {
+  font: var(--medium-weight) 18px var(--mon-font);
+  color: var(--text-color);
+  padding: 10px 0 0;
+  text-transform: ;
+}
 .content-category-whitepaper {
-  font: var(--heavy-weight) 16px var(--mon-font);
+  font: var(--heavy-weight) 14px var(--mon-font);
   color: var(--link-color);
   padding: 10px 0 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .content-meta {
   font: var(--heavy-weight) 14px var(--hind-font);
@@ -1294,6 +1318,13 @@ textarea {
   font: var(--medium-weight) 14px var(--mon-font);
   color: #FAFEFE;
   padding: 10px 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.blogg-meta {
+  font: var(--heavy-weight) 14px var(--mon-font);
+  color: var(--green-color);
+  margin-bottom: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
