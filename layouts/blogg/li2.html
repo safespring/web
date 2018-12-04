@@ -1,6 +1,7 @@
   <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
   <a class="post-heading-firstpage" href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="content-summary-blogg">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
+    <div class="content-summary-blogg">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 65 }}... {{ end }}</div><br><br>
+    <a class="button" href="{{ .Permalink }}">Läs mer</a>
 
 <!--
 <div class="content-item">

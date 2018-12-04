@@ -15,7 +15,7 @@
   --medium-weight: 500;
   --heavy-weight: 600;
   --reg-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
-  --tran-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2)
+  --tran-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.1)
 }
 
 
@@ -129,6 +129,22 @@ textarea {
   box-shadow: var(--tran-shadow);
   transition: box-shadow 0.2s ease-in-out
 }
+.button {
+  width: 100px;
+  font: var(--heavy-weight) 15px var(--mon-font);
+  color: var(--text-color);
+  background-color: var(--button-color);
+  border-radius: 300px;
+  padding: 10px 25px;
+  margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button:hover {
+  box-shadow: var(--tran-shadow);
+  transition: box-shadow 0.2s ease-in-out;
+  color: var(--text-color)
+}
 
 #lankar {
   margin:10px 0px 10px 0px;
@@ -143,8 +159,6 @@ textarea {
   color: var(--main-color);
   transition: color 0.2s ease-out
 }
-
-
 .navbar {
   font: var(--heavy-weight) 16px var(--hind-font);
   display: -ms-grid;
@@ -1780,7 +1794,8 @@ label {
     font: var(--normal-weight) 13px var(--mon-font)
   }
   .heading-content h1 {
-    font: var(--heavy-weight) 38px var(--hind-font)
+    font: var(--heavy-weight) 38px var(--hind-font);
+    line-height: 40px;
   }
   .heading-content p {
     font: var(--heavy-weight) 16px var(--mon-font)
