@@ -1794,7 +1794,8 @@ label {
     font: var(--normal-weight) 13px var(--mon-font)
   }
   .heading-content h1 {
-    font: var(--heavy-weight) 38px var(--hind-font)
+    font: var(--heavy-weight) 38px var(--hind-font);
+    line-height: 40px;
   }
   .heading-content p {
     font: var(--heavy-weight) 16px var(--mon-font)
