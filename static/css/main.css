@@ -342,13 +342,12 @@ textarea {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 65rem)[main-end] minmax(1em, 1fr)[full-end];
+  grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
   grid-template-rows: [full-start] minmax(10em, 1fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
-  text-align: center
 }
 .heading-sub>* {
   grid-column: main;
-  grid-row: main
+  grid-row: main;
 }
 .heading-sub .heading-content {
   text-shadow: 1px 1px 1px var(--alt-color)
@@ -461,7 +460,7 @@ textarea {
   min-height: 61%;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 35rem)[main-end] minmax(2em, 1fr)[full-end];
+  grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 39rem)[main-end] minmax(2em, 1fr)[full-end];
   grid-template-rows: [full-start] minmax(4em, 1fr)[main-start] minmax(30em, auto)[main-end] minmax(4em, 1fr)[full-end];
   justify-items: center
 }
@@ -516,6 +515,7 @@ textarea {
   display: grid;
   grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 35rem)[main-end] minmax(1em, 1fr)[full-end]
 }
+
 .index-content>* {
   grid-column: main
 }
@@ -1184,9 +1184,6 @@ textarea {
   color: var(--link-color);
 }
 
-.tj-body {
-  min-height: 185px;
-}
 
 .tj-offers p {
   margin: 0;
@@ -1260,6 +1257,24 @@ textarea {
   line-height: 1;
   color: #FAFEFE;
   padding-bottom: 10px
+}
+@media only screen and (max-device-width: 700px) {
+  .post-heading-firstpage{
+    font: var(--heavy-weight) 35px var(--hind-font);
+    line-height: 1;
+    color: #FAFEFE;
+    padding-bottom: 10px
+  }
+  .heading-sub {
+    grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
+    grid-template-rows: [full-start] minmax(8em, 1fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
+  }
+  .ch-content {
+    padding-top: 30px;
+  }
+  .heading-index {
+    padding: 50px 0px 0px 0px;
+  }
 }
 .post-heading-whitepaper:hover {
   color: var(--link-color);
@@ -1483,11 +1498,12 @@ label {
   display: none
 }
 .h-container {
+  margin: 8px;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 32rem)[main-middle] minmax(0, 32rem)[main-end] minmax(2em, 1fr)[full-end];
-  width: 100%
+  width: 100%;
 }
 .h-logo {
   grid-column: main-start
