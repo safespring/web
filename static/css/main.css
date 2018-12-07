@@ -278,17 +278,17 @@ textarea {
 }
 
 .heading-content h1 {
-  font: var(--heavy-weight) 42px var(--hind-font);
-  line-height: 42px;
+  font: var(--heavy-weight) 55px var(--hind-font);
+  line-height: 1;
   color: var(--text-color);
   margin: 0;
 }
 .heading-content h1:nth-child(2) {
   margin-top: -20px;
-  line-height: 42px;
+  line-height: 1;
 }
 .heading-content p {
-  font: var(--heavy-weight) 18px var(--mon-font);
+  font: var(--medium-weight) 18px var(--mon-font);
   color: var(--text-color)
 }
 .heading-event h1 {
@@ -350,7 +350,6 @@ textarea {
   grid-row: main;
 }
 .heading-sub .heading-content {
-  text-shadow: 1px 1px 1px var(--alt-color)
 }
 .heading-sub-event {
   background: var(--main-color);
@@ -1256,14 +1255,19 @@ textarea {
   font: var(--heavy-weight) 55px var(--hind-font);
   line-height: 1;
   color: #FAFEFE;
-  padding-bottom: 10px
 }
 @media only screen and (max-device-width: 700px) {
-  .post-heading-firstpage{
+  .heading-content h1 {
     font: var(--heavy-weight) 35px var(--hind-font);
     line-height: 1;
     color: #FAFEFE;
-    padding-bottom: 10px
+  }
+  @media only screen and (max-device-width: 700px) {
+    .post-heading-firstpage {
+      font: var(--heavy-weight) 35px var(--hind-font);
+      line-height: 1;
+      color: #FAFEFE;
+    }
   }
   .heading-sub {
     grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
@@ -1311,7 +1315,7 @@ textarea {
 .content-summary-blogg {
   font: var(--medium-weight) 18px var(--mon-font);
   color: var(--text-color);
-  padding: 10px 0 0;
+  padding: 20px 0 0;
   text-transform: ;
 }
 .content-category-dokument {
@@ -1808,13 +1812,6 @@ label {
   }
   .footer-text {
     font: var(--normal-weight) 13px var(--mon-font)
-  }
-  .heading-content h1 {
-    font: var(--heavy-weight) 38px var(--hind-font);
-    line-height: 40px;
-  }
-  .heading-content p {
-    font: var(--heavy-weight) 16px var(--mon-font)
   }
   .adr h3,
   .cont h3 {
