@@ -1,7 +1,7 @@
 ---
 title: "Sanningen om kostnaden av att flytta in molnet med bibehållen säkerhet"
 date: "2018-12-06T10:25:20+01:00"
-draft: false
+draft: true
 tags: [""]
 showthedate: true
 socialmediabild: "Safespring_Blogg_LCC-kalkyl.jpg"
