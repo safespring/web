@@ -84,7 +84,8 @@ input[type=text], [type=email] {
     color: #fafefe;
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
-    border-radius: 0px;
+    border: none;
+    border-radius: 5px;
 }
 
 textarea {
@@ -95,6 +96,8 @@ textarea {
     color: #fafefe;
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -117,11 +120,6 @@ textarea {
   border-radius: 300px;
   padding: 10px 25px;
   margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
@@ -356,16 +354,12 @@ textarea {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 65rem)[main-end] minmax(1em, 1fr)[full-end];
-  grid-template-rows: [full-start] minmax(10em, 1fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
-  text-align: center
+  grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
+  grid-template-rows: [full-start] minmax(4em, 1fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
 }
 .heading-sub-event>* {
   grid-column: main;
   grid-row: main
-}
-.heading-sub-event .heading-event {
-  text-shadow: 1px 1px 1px var(--alt-color)
 }
 .footer {
   position: relative;
