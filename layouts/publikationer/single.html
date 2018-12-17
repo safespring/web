@@ -1,22 +1,63 @@
-{{ partial "head.html" . }}
+<!DOCTYPE html>
+<html
+   class="
+   index
+   aktuellt
+   chalmers
+   kundreferenser
+   om-oss
+   pris
+   support
+   tjanster
+   " lang="sv">
+   <head>
+     <meta property="og:title" content="{{ .Title }}" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
+     <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/publikationer/image/socialmedia/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www.safespring.com/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_event.jpg{{ end }}"/>
+     <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
+     <meta property="og:site_name" content="Safespring" />
+   	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-TXLJWD7');
+      </script>
+      <!-- End Google Tag Manager -->
 
-
-<style>
-  .aktuellt {
-    background: #f9ffff url("/img/safespring_bilder_3.jpg?crc=133698968") no-repeat center top fixed;
-    background-size: cover;
-  }
-</style>
+      <!-- Site Title changes according to current page -->
+      <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra molntjänster{{ end }}</title>
+      <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+      <meta name="generator" content="2017.0.4.363" />
+      <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
+      <!-- Description changes according to current page -->
+      <meta name="description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href={{ "/img/favicon.ico" | relURL }} />
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!-- CSS -->
+      <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type="text/css"/>
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:400,500,600" rel="stylesheet">
+      <!-- RSS -->
+      <link rel="canonical" href="{{ .Permalink }}">
+      {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+      {{ end }}
   <title>Safespring | {{ .Title }}</title>
 </head>
 <body>
+  {{ partial "header.html" . }}
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-   {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub">
+  <!-- {{ partial "header.html" . }} <!-- HEADING -->
+   <div class="heading-sub" style="background: url({{ if.Params.background }}/publikationer/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
      <div class="heading-content">
-       <h1>Senaste nytt från Safespring</h1>
-       <p>Med Safespring får du en effektiv modell för leverans
-         <br/>av tjänst utan att förlora kontroll över din data.</p>
+       {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
      </div>
    </div>
 
@@ -27,11 +68,7 @@
 <main class="content-chalmers">
   <!-- Main  -->
   <div class="ch-content">
-    <div class="content-heading">
-      {{ .Title }}<p style="color: var(--green-color);">Publicerad {{ .Date.Format "2006-01-02" }}</p>
-    </div>
     <div class="content-body">
-
      {{ .Content }}
     </div>
   </div>
@@ -39,21 +76,57 @@
   <!-- SIDEBAR -->
   <div class="ch-sidebar">
     <div>
-      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" id="register" />
     </div>
 
     <div>
-      <h2 class="content-heading">Senaste inläggen</h2>
-      {{ range first 5 (where .Site.Pages "Type" "blog") }}
-        <li class="content-body" id="TableOfContents" style="list-style: none;  "><a href="{{.URL}}">{{ .Title }}</a></li>
+<!-- START OF FORM -->
+{{ if .Params.formid }}
+      <h2 class="content-heading">{{ .Params.formheadline }}</h2>
+<form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	<div>
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="{{ if .Params.english }}Your name...{{ else }}Ditt namn...{{ end }}">
+	</div>
+	<div class="email">
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="{{ if .Params.english }}Work Email...{{ else }}Jobb-email...{{ end }}">
+	</div>
+	<div>
+		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="{{ if .Params.english }}Mobile...{{ else }}Mobilnummer...{{ end }}">
+	</div>
+	<!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="{{ .Params.formid }}">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<button type="submit" id="button">{{ .Params.knapp }}</button>
+</form>
+<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
+<br><br>
+{{ else }}{{ end }}
+<!-- END OF FORM -->
+
+      <h2 class="content-heading">{{ if .Params.english }}What is Safespring?{{ else }}Vad gör Safespring?{{ end }}</h2>
+      {{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring erbjuder en storskalig molnplattform där data aldrig lämnar landet.</p>
       {{ end }}
 
 
       <br>
     </div>
-    <a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>
+    {{ if .Params.english }}<a id="text-button" href="/kontakt">CONTACT SAFESPRING</a>{{ else }}<a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>{{ end }}
 </br></br>
-    <div class="read-more">
+    {{ if .Params.english }}<div class="read-more">
+      <h2>Read more (in swedish):</h2>
+            <li class="content-body">
+        <a href="/safespring-backup">&gt; Backup as a service</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-storage">&gt; Storage as a service</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-compute">&gt; Infrastructure as a service</a>
+      </li>
+    </div>{{ else }}<div class="read-more">
       <h2>Läs mer om:</h2>
             <li class="content-body">
         <a href="/safespring-backup">&gt; Backup som tjänst</a>
@@ -64,7 +137,7 @@
       <li class="content-body">
         <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
       </li>
-    </div>
+    </div>{{ end }}
   </div>
 
   </div>
