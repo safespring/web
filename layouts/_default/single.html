@@ -32,6 +32,8 @@
     {{ partial "tjanster.html" . }}
   {{ else if eq $.Params.title "tack-event" }}
     {{ partial "tack-event.html" . }}
+  {{ else if eq $.Params.title "opplev" }}
+    {{ partial "opplev.html" . }}
   {{ else }}
     {{ partial "header.html" . }}
 
