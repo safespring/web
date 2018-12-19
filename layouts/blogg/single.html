@@ -57,10 +57,9 @@
 <body>
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
    {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub">
+   <div class="heading-sub" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
      <div class="heading-content">
-       <h1>Senaste nytt från Safespring</h1>
-       <p>Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.</p>
+       {{ .Render "li3" }}
      </div>
    </div>
 
@@ -71,12 +70,7 @@
 <main class="content-chalmers">
   <!-- Main  -->
   <div class="ch-content">
-    <div class="">
-      <div class="blogg-meta">{{ .Date.Format "2006-01-02" }}</div>
-      <div class="blogg-heading">{{ .Title }}</div>
-    </div>
     <div class="content-body">
-
      {{ .Content }}
     </div>
   </div>

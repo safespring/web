@@ -30,8 +30,10 @@
     {{ partial "testa-safespring-compute.html" . }}
   {{ else if eq $.Params.title "Våra tjänster" }}
     {{ partial "tjanster.html" . }}
-  {{ else if eq $.Params.title "1234" }}
-    {{ partial "1234.html" . }}
+  {{ else if eq $.Params.title "tack-event" }}
+    {{ partial "tack-event.html" . }}
+  {{ else if eq $.Params.title "opplev" }}
+    {{ partial "opplev.html" . }}
   {{ else }}
     {{ partial "header.html" . }}
 

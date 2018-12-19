@@ -11,7 +11,7 @@ Safespring har författat en praktisk [guide][ebook] för vädledning in i molne
 
 De senaste tjugo åren har stora förändringar skett i hur IT effektivt ska hanteras. När företag ska fatta beslut om migrering till molnet är trygghet ledordet. I denna guide går vi igenom vilka delar som är viktigast för att uppnå den tryggheten och samtidigt förena den med alla de konkurrensfördelar molnet ger.
 
-[![ebok](../images/ebook-2-banner.png)][ebook]
+<img src="../images/ebook-2-banner.png" style="width: 100%;">
 
 Guiden finns att ladda ned [här][ebook].
 

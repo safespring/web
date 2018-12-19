@@ -10,9 +10,10 @@
   <!-- HEADING -->
   <div class="heading-index" style="background: url(/img/safespring-molnlagring-blue.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
     <div class="content-container-post">
-      {{ range first 1 (where .Pages "Section" "in" (slice "blogg" "")) }}
+      {{ range first 1 (where .Pages "Section" "blogg") }}
         {{ .Render "li2"}}
-        {{ end }}</br>
+        {{ end }}
+      </br>
       </div>
     </div>
   </div>

@@ -1,1027 +1,154 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
-<head>
-	<meta charset="utf-8">
-	<meta content="{{ .Title }}" property="og:title">
-	<meta content="{{ .URL | absURL }}" property="og:url">
-	<meta content="{{ if.Params.socialmediabild }}/img/event/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}" property="og:image">
-	<meta content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" property="og:description">
-	<meta content="summary" name="twitter:card">
-	<meta content="{{ .Title }}" name="twitter:title">
-	<meta content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" name="twitter:description">
-	<meta content="{{ if.Params.socialmediabild }}/img/event/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}" name="twitter:image:src">
-  <style>
-    h2 {
-    	margin-bottom: 20px;
-    }
-    p {
-    	margin: 10px 0;
+<html
+   class="
+   index
+   aktuellt
+   chalmers
+   kundreferenser
+   om-oss
+   pris
+   support
+   tjanster
+   " lang="sv">
+   <head>
 
-    }
-    .md-iphone-5 .md-body {
-    	width: 100%;
-    	/*height: 100%;*/
-    	height: 600px;
-    	/*border-radius: 3.75em;*/
-    	border-radius: 35px;
-    	border-style: solid;
-    	border-width: 0.375em;
-    	position: relative;
-    }
-    .md-iphone-5 .md-screen {
-    	position: relative;
-    	margin: 0 auto;
-    	background-color: #fafafa;
-    	border-radius: 4px;
-    	overflow: hidden;
-    	box-shadow: 0 0 0px 2px #fafafa;
-    }
-    .md-iphone-5 .md-screen img {
-    	width: 100%;
-    }
-    .md-iphone-5 .md-home-button {
-    	display: block;
-    	width: 3.625em;
-    	height: 3.625em;
-    	margin: 0 auto;
-    	position: relative;
-    	border-radius: 100%;
-    	border: none;
-    	cursor: default;
-    	font-size: 100%;
-    }
-    .md-iphone-5 .md-front-camera {
-    	width: 0.875em;
-    	height: 0.875em;
-    	margin: 0 auto;
-    	position: relative;
-    	border-radius: 100%;
-    }
-    .md-iphone-5 .md-front-camera:after {
-    	content: "";
-    	display: block;
-    	width: 0.375em;
-    	height: 0.375em;
-    	position: relative;
-    	top: 0.25em;
-    	left: 0.25em;
-    	background-color: #8c8091;
-    	border-radius: 100%;
-    }
-    .md-iphone-5.md-glare:before {
-    	content: "";
-    	display: block;
-    	width: 50%;
-    	height: 83%;
-    	position: absolute;
-    	top: 0.625em;
-    	right: 0.625em;
-    	border-radius: 0 3.125em 0 0;
-    	z-index: 1;
-    }
-    .md-iphone-5 {
-    	width: 22.8125em;
-    	height: 47em;
-    	position: relative;
-    }
-    .md-iphone-5 .md-front-camera {
-    	top: 1.25em;
-    }
-    .md-iphone-5 .md-top-speaker {
-    	width: 3.75em;
-    	height: 0.875em;
-    	margin: 0 auto;
-    	position: relative;
-    	top: 2.25em;
-    	border-radius: 3.125em;
-    }
-    .md-iphone-5 .md-top-speaker:after {
-    	content: "";
-    	display: block;
-    	width: 3.25em;
-    	height: 0.375em;
-    	margin: 0 auto;
-    	position: relative;
-    	top: 0.25em;
-    	background-color: $upsales-blue;
-    	border-radius: 3.125em;
-    }
-    .md-iphone-5 .md-screen {
-    	// width: 20em;
-    	width: 100%;
-    	height: auto;
-    	top: 3.75em;
-    }
-    .md-iphone-5 .md-home-button {
-    	bottom: -5.1em;
-    }
-    .md-iphone-5 .md-buttons {
-    	width: 0.1875em;
-    	height: 1.875em;
-    	position: absolute;
-    	left: -0.5em;
-    	top: 5.9375em;
-    	border-radius: 0.125em 0 0 0.125em;
-    }
-    .md-iphone-5 .md-buttons:after, .md-iphone-5 .md-buttons:before {
-    	content: "";
-    	display: block;
-    	position: absolute;
-    	width: 0.1875em;
-    	height: 1.5625em;
-    	border-radius: 0.125em 0 0 0.125em;
-    }
-    .md-iphone-5 .md-buttons:after {
-    	top: 3.125em;
-    }
-    .md-iphone-5 .md-buttons:before {
-    	top: 6.25em;
-    }
-    .md-iphone-5.md-glare:before {
-    	background: -webkit-linear-gradient(16deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-    	background: -moz-linear-gradient(16deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-    	background: -o-linear-gradient(16deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-    	background: linear-gradient(74deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-    }
-    .md-iphone-5.md-landscape {
-    	-webkit-transform: rotateZ(90deg);
-    	-moz-transform: rotateZ(90deg);
-    	-ms-transform: rotateZ(90deg);
-    	-o-transform: rotateZ(90deg);
-    	transform: rotateZ(90deg);
-    }
-    .md-iphone-5.md-landscape.md-glare:before {
-    	-webkit-transform: rotateY(180deg);
-    	-moz-transform: rotateY(180deg);
-    	-ms-transform: rotateY(180deg);
-    	-o-transform: rotateY(180deg);
-    	transform: rotateY(180deg);
-    	left: 0.625em;
-    	top: 0.625em;
-    }
-    .md-white-device .md-front-camera, .md-white-device .md-top-speaker, .md-white-device .md-home-button {
-    	background: #fafafa;
-    	border: 1px solid #fafafa;
-    }
-    .md-black-device .md-front-camera, .md-black-device .md-top-speaker, .md-black-device .md-home-button {
-    	background: -webkit-linear-gradient(#141917, #202623);
-    	background: -moz-linear-gradient(#141917, #202623);
-    	background: -o-linear-gradient(#141917, #202623);
-    	background: linear-gradient(#141917, #202623);
-    }
-    .md-white-device.md-landscape .md-home-button, .md-white-device.md-landscape .md-front-camera, .md-white-device.md-landscape .md-top-speaker {
-    	background: -webkit-linear-gradient(left, #d0d0c5, #eeeeea);
-    	background: -moz-linear-gradient(left, #d0d0c5, #eeeeea);
-    	background: -o-linear-gradient(left, #d0d0c5, #eeeeea);
-    	background: linear-gradient(to right, #d0d0c5, #eeeeea);
-    }
-    .md-black-device.md-landscape .md-home-button, .md-black-device.md-landscape .md-front-camera, .md-black-device.md-landscape .md-top-speaker {
-    	background: -webkit-linear-gradient(left, #141917, #202623);
-    	background: -moz-linear-gradient(left, #141917, #202623);
-    	background: -o-linear-gradient(left, #141917, #202623);
-    	background: linear-gradient(to right, #141917, #202623);
-    }
-    .md-white-device .md-body {
-    	background-color: #fff;
-    	border-color: #fff;
-    	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
-    	max-height: 580px;
-    }
-    .md-white-device .md-buttons {
-    	background-color: #ebebe4;
-    }
-    .md-white-device .md-buttons:after, .md-white-device .md-buttons:before {
-    	background-color: #ebebe4;
-    }
-    .md-white-device .md-front-camera:after {
-    	background-color: #8c8091;
-    }
-    .md-white-device .md-top-speaker:after {
-    	background-color: #4b414a;
-    }
-    .md-white-device .md-home-button:after {
-    	border-color: #eff1e6;
-    }
-    .md-black-device .md-body {
-    	background-color: #1b211e;
-    	border-color: #282e2b;
-    }
-    .md-black-device .md-buttons {
-    	background-color: #1b211e;
-    }
-    .md-black-device .md-buttons:after, .md-black-device .md-buttons:before {
-    	background-color: #1b211e;
-    }
-    .md-black-device .md-front-camera:after {
-    	background-color: #2c292f;
-    }
-    .md-black-device .md-top-speaker:after {
-    	background-color: #191616;
-    }
-    .md-black-device .md-home-button:after {
-    	border-color: #444a45;
-    }
-    .md-black-device:after {
-    	background: #1b211e;
-    }
-    .phone-content {
-    	border-radius: 2px;
-    	overflow: hidden;
-    }
-</style>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<title>Tech AW med SUSE 21/11 (extern)</title>
-  <style>
-    .template-scoped-style {
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 0 15px;
-    }
-    .template-scoped-style.frame {
-      padding: 0;
-    }
-    .template-scoped-style.frame #up-form-element-wrapper {
-      margin: 0 !important;
-      width: initial !important;
-    }
-    .template-scoped-style.frame #up-form {
-      box-shadow: none;
-      border-radius: 0;
-      background-color: transparent;
-    }
-    p {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-    }
-    p.ingress {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-    }
-    h2 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 34px;
-      display: block;
-    }
-    h3 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 30px;
-      display: block;
-    }
-    h2.large {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 68px;
-    }
-    h3.large {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 40px;
-    }
-    .up-row {
-      position: relative;
-    }
-    .up-row.up-absolute-row {
-      position: absolute !important;
-      left: 0;
-      z-index: 1002;
-      right: 0;
-      background-color: transparent
-    }
-    .up-container {
-      position: relative;
-    }
-    .twitter-typeahead {
-      display: block !important;
-    }
-    .up-background-image {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-position: center center;
-      background-size: cover;
-    }
-    .up-form-wrapper button[type=submit] {
-      height: 45px;
-      margin-top: 20px;
-    }
-    .up-form-wrapper h2 {
-      margin-bottom: 10px;
-    }
-    .up-form-wrapper-cover {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-    .form-group {
-      position: relative;
-    }
-    .error-message {
-      background-color: #dc0d17;
-      padding: 1px 5px;
-      color: white;
-      font-style: italic;
-    }
-    .top-carot {
-      position: absolute;
-      width: 0;
-      height: 0;
-      margin-top: -7px;
-      margin-left: 10px;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid #dc0d17;
-    }
-    .error-body {
-      margin: 2px 5px;
-      font-size: 12px;
-    }
-    b#up-email-warning {
-      position: absolute;
-      top: 35px;
-      right: 15px;
-      color: #dc0d17;
-    }
-    #up-client-spinner {
-      position: absolute;
-      display: none;
-      bottom: 10px;
-      right: 10px;
-      color: #6B7C93;
-    }
-    .up-form-wrapper {
-      position: relative;
-    }
-    #up-form-thanks, #up-form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 3px;
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    }
-    #up-form-thanks {
-      display: none;
-    }
-    .up-element #up-form-thanks .up-editor-placeholder {
-      margin: -20px;
-      margin-top: -40px;
-    }
-    .up-element.has-placeholder {
-      padding: 0 !important;
-      background-color: transparent !important;
-    }
-    .up-element.type-file {
-      text-align: center;
-    }
-    .up-element.type-file h2 {
-      display: block;
-    }
-    .up-element.type-file img {
-      max-width: 100%;
-    }
-    .up-element.type-file a.up-file-btn {
-      padding: 10px 20px;
-      border-radius: 3px;
-      border: none;
-      font-size: 14px;
-      text-align: center;
-      display: inline-block;
-      margin: 10px 0;
-      color: #ffffff;
-      background-color: #002f65;
-    }
-    .up-element.type-file a:hover, .up-element.type-file a:focus, .up-element.type-file a:active {
-      text-decoration: none;
-    }
-    .up-element.type-map .map-info {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 10px;
-      font-size: 14px;
-      background-color: #ffffff;
-      color: #000000;
-      border-bottom: 1px solid #A4B3C7;
-      text-align: center;
-      height: 40px;
-      z-index: 1000;
-    }
-    .up-element.type-map .map-info+.map {
-      margin-top: 40px;
-    }
-    .up-element.type-map {
-      border-radius: 3px;
-      overflow: hidden;
-      position: relative;
-    }
-    .up-element.type-map .map {
-      min-height: 200px;
-    }
-    .up-element.type-card {
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      padding: 10px 30px;
-      border-radius: 5px;
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    .up-element.type-card .card-img {
-      height: 200px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-    }
-    .up-element.type-card .card-title {
-      font-size: 18px;
-      line-height: 18px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    .up-element.type-card .card-text {
-      font-size: 12px;
-      margin: 10px 0;
-      line-height: 16px;
-    }
-    .up-element.type-card .card-subtitle {
-      margin: 10px 0;
-      font-size: 12px;
-      line-height: 12px;
-      font-weight: normal;
-    }
-    .up-element.type-card .card-img+.card-title {
-      margin-top: 210px;
-    }
-    .up-element.type-countdown {
-      text-align: center;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 3px;
-    }
-    .up-element.type-countdown .cd-unit {
-      display: inline-block;
-      width: 20%;
-      min-width: 100px;
-    }
-    .up-element.type-countdown .cd-unit .cd-header {
-      text-transform: uppercase;
-      color: #6B7C93;
-      font-size: 14px;
-    }
-    .up-element.type-countdown .cd-unit h2 {
-      font-size: 42px;
-    }
-    .up-element.type-video iframe {
-      display: block;
-    }
-    .up-element.type-video.shadow {
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5)
-    }
-    .up-element.type-video.vimeo-video {
-      width: 100%;
-    }
-    .up-element.type-image {
-      max-width: 100%;
-    }
-    .fade-animation {
-      opacity: 0;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-in-out;
-    }
-    #up-click-cover {
-      position: fixed;
-      z-index: 9999;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: transparent;
-      cursor: pointer;
-    }
-    .vpadding-none {
-      padding-top: 0px !important;
-      padding-bottom: 0px;
-      !important;
-    }
-    .hpadding-none {
-      padding-left: 0px !important;
-      padding-right: 0px;
-      !important;
-    }
-    .vpadding-xs {
-      padding-top: 10px !important;
-      padding-bottom: 10px;
-      !important;
-    }
-    .hpadding-xs {
-      padding-left: 10px !important;
-      padding-right: 10px;
-      !important;
-    }
-    .vpadding-sm {
-      padding-top: 20px !important;
-      padding-bottom: 20px;
-      !important;
-    }
-    .hpadding-sm {
-      padding-left: 20px !important;
-      padding-right: 20px;
-      !important;
-    }
-    .vpadding-md {
-      padding-top: 40px !important;
-      padding-bottom: 40px;
-      !important;
-    }
-    .hpadding-md {
-      padding-left: 40px !important;
-      padding-right: 40px;
-      !important;
-    }
-    .vpadding-lg {
-      padding-top: 60px !important;
-      padding-bottom: 60px;
-      !important;
-    }
-    .hpadding-lg {
-      padding-left: 60px !important;
-      padding-right: 60px;
-      !important;
-    }
-    .vpadding-xl {
-      padding-top: 100px !important;
-      padding-bottom: 100px;
-      !important;
-    }
-    .hpadding-xl {
-      padding-left: 100px !important;
-      padding-right: 100px;
-      !important;
-    }
-    .vpadding-xxl {
-      padding-top: 160px !important;
-      padding-bottom: 160px;
-      !important;
-    }
-    .hpadding-xxl {
-      padding-left: 160px !important;
-      padding-right: 160px;
-      !important;
-    }
-    @media (max-width: 992px) {
-      .vpadding-xs {
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-      }
-      .hpadding-xs {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-      }
-      .vpadding-xs {
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
-      }
-      .hpadding-xs {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-      }
-      .vpadding-sm {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-      }
-      .hpadding-sm {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-      }
-      .vpadding-md {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-      }
-      .hpadding-md {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-      }
-      .vpadding-lg {
-        padding-top: 30px !important;
-        padding-bottom: 30px !important;
-      }
-      .hpadding-lg {
-        padding-left: 30px !important;
-        padding-right: 30px !important;
-      }
-      .vpadding-xl {
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
-      }
-      .hpadding-xl {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-      }
-      .vpadding-xxl {
-        padding-top: 80px !important;
-        padding-bottom: 80px !important;
-      }
-      .hpadding-xxl {
-        padding-left: 80px !important;
-        padding-right: 80px !important;
-      }
-    }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    @keyframes fadeInLeft {
-      from {
-        opacity: 0;
-        margin-left: -20px;
-      }
-      to {
-        opacity: 1;
-        margin-left: 0px;
-      }
-    }
-    @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        margin-right: -20px;
-      }
-      to {
-        opacity: 1;
-        margin-right: 0px;
-      }
-    }
-    @keyframes zoomIn {
-      from {
-        opacity: 0;
-        transform: scale(0);
-      }
-      to {
-        opacity: 1;
-        margin-right: scale(1);
-      }
-    }
-</style>
-	<script src="//code.jquery.com/jquery-3.1.1.min.js">
-	</script>
-	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBz8DCi-zXpKspt_-LTIlhu-0vbLYMTNOA&libraries=places&v=3">
-	</script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js">
-	</script>
-	<script async src="//fast.wistia.com/assets/external/E-v1.js">
-	</script>
-	<script>
-	  jQuery(document).ready(function() {
-		var calcDiff = function(elem) {
-			var momentDate = moment(elem.data("date"));
-			if (momentDate.isValid()) {
-				var ms = momentDate.utc().unix();
-				var curr = moment().utc().unix();
-				var diffTime = ms - curr;
-				var duration = moment.duration(diffTime * 1000, "milliseconds");
-				var days = momentDate.diff(moment(), 'days');
-				var hours = duration.hours();
-				var minutes = duration.minutes();
-				if (days < 0) {
-					days = 0;
-				}
-				if (hours < 0) {
-					hours = 0;
-				}
-				if (minutes < 0) {
-					minutes = 0;
-				}
-				if (days.toString().length === 1) {
-					days = "0" + days;
-				}
-				if (hours.toString().length === 1) {
-					hours = "0" + hours;
-				}
-				if (minutes.toString().length === 1) {
-					minutes = "0" + minutes;
-				}
-				elem.find(".cd-unit.days h2").text(days);
-				elem.find(".cd-unit.hours h2").text(hours);
-				elem.find(".cd-unit.minutes h2").text(minutes);
-			}
-		};
-		var initMap = function(elem) {
-			var data = elem.data();
-			var pos = {
-				lat: data.lat,
-				lng: data.lng
-			};
-			var map = new google.maps.Map(elem.find(".map")[0], {
-				zoom: 16,
-				center: pos,
-				disableDefaultUI: true,
-				mapTypeControl: data.showtools,
-				zoomControl: data.showtools,
-				scrollwheel: data.allowscrollzoom,
-			});
-			var marker = new google.maps.Marker({
-				position: pos,
-				map: map
-			});
-		};
-		var initVimeo = function(elem) {
-			var videoUrl = elem.data("src");
-			var endpoint = "http://www.vimeo.com/api/oembed.json";
-			var callback = "embedVimeo";
-			var playerId = elem.attr("id") + "_player";
-			var url = endpoint + "?url=" + encodeURIComponent(videoUrl) + "&callback=" + callback + "&player_id=" + playerId + "&width=640";
-			var js = document.createElement("script");
-			js.setAttribute("type", "text/javascript");
-			js.setAttribute("src", url);
-			document.getElementsByTagName("head").item(0).appendChild(js);
-		};
-		jQuery(".type-countdown").each(function() {
-			calcDiff(jQuery(this));
-		});
-		jQuery(".type-map").each(function() {
-			initMap(jQuery(this));
-		});
-		jQuery(".type-video").each(function() {
-			var elem = jQuery(this);
-			if (elem.data("type") === "vimeo") {
-				initVimeo(elem);
-			}
-		});
-		if (window.location.href.indexOf("?valid=false") != -1) {
-			document.getElementById("failedId").innerHTML = "The form didnt validate, please check all fields."
-		}
-		if (window.location.href.indexOf("?reCaptcha=false") != -1) {
-			document.getElementById("failedId").innerHTML = "The reCaptcha validation failed. Please try again."
-		}
-		var formIdElem = document.getElementsByName('formId');
-		var formCidElem = document.getElementsByName('formCid');
-		if (formIdElem && formIdElem.length && formCidElem && formCidElem.length) {
-			var xmlhttp = new window.XMLHttpRequest();
-			var formId = formIdElem[0].value;
-			var formCid = formCidElem[0].value;
-			xmlhttp.open('POST', 'https://power.upsales.com/api/external/formView/' + formId + "_" + formCid, true);
-			xmlhttp.send();
-		}
-	});
-		function embedVimeo(video) {
-			var regex = /([0-9A-Z]+)_player/g;
-			var match = regex.exec(video.html);
-			if (match.length >= 2) {
-				jQuery("#" + match[1]).html(video.html);
-			}
-		}
-		var validEmail = true;
-		function validateForm(event, redirectURL) {
-			event.preventDefault();
-			var formId = document.getElementsByName('formId')[0].value;
-			var form = document.forms['form_' + formId];
-			var inputs = form.querySelectorAll('input');
-			for (var i = 0; i < inputs.length; i++) {
-				if (inputs[i].type === 'text') {
-					inputs[i].value = inputs[i].value.trim();
-				}
-			}
-			if (!form.checkValidity() || !validEmail) {
-				return false;
-			}
-			if (window.grecaptcha === undefined || grecaptcha.getResponse() !== "") {
-				jQuery("#up-form button[type=submit]").attr("disabled", "disabled");
-				var data = $(form).serialize();
-				data += "&isAjax=true";
-				var _paq = window._paq || null;
-				$.ajax({
-					type: "POST",
-					url: form.action,
-					data: data,
-					success: function(qs) {
-						var redirUrl = redirectURL;
-						if (redirectURL) {
-							if (redirUrl.indexOf('?') !== -1) {
-								redirUrl += '&' + qs;
-							} else {
-								redirUrl += '?' + qs;
-							};
-							if (_paq && _paq.push) {
-								_paq.push(['trackLink', "https://post.upsales.com/" + qs, 'link']);
-							}
-							if (_uaq) {
-								_uaq('form=' + qs);
-							}
-							window.top.location.href = redirectURL;
-						} else {
-							jQuery("#up-form").hide();
-							jQuery("#up-form-thanks").show();
-							if (_paq && _paq.push) {
-								_paq.push(['trackLink', "https://post.upsales.com/" + qs, 'link']);
-							}
-							if (_uaq) {
-								_uaq('form=' + qs);
-							}
-						}
-					},
-					error: function(response) {
-						jQuery("#up-form button[type=submit]").removeAttr("disabled");
-					},
-				});
-			} else {
-				jQuery("#recaptcha-error").remove();
-				var recapElem = jQuery(".g-recaptcha");
-				recapElem.after("<div id='recaptcha-error' class='error-message'><span class='top-carot'><\/span><p class='error-body'>You need to enter this field<\/p><\/div>");
-				return false;
-			}
-		}
-		function openTerms(id) {
-			var terms = {
-				"1": "<p dir=\"ltr\"><em>SAFESPRING 2018<br />\nInformation avseende personuppgiftsbehandling<\/em><br />\n<br />\n<br />\n<u><strong>Information<\/strong><\/u><br />\n<br />\nSafespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret. Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”). Blue Safespring AB, org. nr. 559075–0245, är personuppgiftsansvariga för behandlingen av Personuppgifterna.<br />\n<br />\nDen legala grunden för behandlingen av Personuppgifterna för Ändamålet är vårt berättigade intresse att på ett effektivt sätt kunna marknadsföra de tjänster vi erbjuder. Personuppgifterna lagras naturligtvis på ett säkert sätt i linje med vår affärsmodell och du har rätt att när som helst avregistrera dig från nyhetsbrevet och/eller ange att du inte vill bli kontaktad av oss. Vi kommer att behandla Personuppgifterna så länge du väljer att ta emot nyhetsbrevet. Då behandlingen upphör raderas Personuppgifterna.<br />\n<br />\nVi kan komma att dela Personuppgifterna med de tredje parter som vi anlitar för att uppnå Ändamålen, vilket kan vara t.ex. för extern lagring. En sådan tredje part kan vara belägen i ett land utanför EU/EES. Om Europakommissionen inte anser att landet säkerställer en adekvat skyddsnivå kommer överföringen till den tredje parten att ha stöd i kommissionens standardavtalsklausuler för överföring av personuppgifter till ett land utanför EU/EES, se artiklarna 45-46 i dataskyddsförordningen. Dessa standardavtalsklausuler finns åtkomliga här:&nbsp;<br />\nhttp://ec.europa.eu/justice/data-protection/international-transfers/transfer<br />\n<br />\nOm du har några frågor avseende vår behandling av Personuppgifterna, bör dessa ställas till oss via E-mailadress GDPR@safespring.com. Dessa kontaktuppgifter kan även användas om du önskar att utöva någon av dina rättigheter enligt dataskyddsförordningen (2016/679). Dessa rättigheter är inte absoluta och en begäran om utövande av rättigheterna resulterar därför inte alltid i någon åtgärd. Rättigheterna i dataskyddsförordningen inkluderar:<br />\n<br />\n<strong><em>Rätt till tillgång<\/em><\/strong> – Enligt artikel 15 i dataskyddsförordningen har du rätt att få tillgång till Personuppgifterna samt viss information rörande behandlingen av Personuppgifterna. Den informationen framgår av detta dokument.<br />\n<br />\n<strong><em>Rätt till rättelse<\/em><\/strong> – Enligt artikel 16 i dataskyddsförordningen har du rätt att få Personuppgifterna rättade om de är felaktiga och kompletterade om de är ofullständiga.&nbsp;<br />\n<br />\n<strong><em>Rätt till radering<\/em><\/strong> – Under vissa omständigheter har du enligt artikel 17 i dataskyddsförordningen rätt att få dina personuppgifter raderade. Detta är den så kallade ”rätten att bli bortglömd”.<br />\nRätt till begränsning av behandling – Under vissa omständigheter har du enligt artikel 18 i dataskyddsförordningen rätt att begränsa den behandling som vi vidtar.&nbsp;<br />\n<br />\n<strong><em>Rätt till dataportabilitet <\/em><\/strong>– Enligt artikel 20 i dataskyddsförordningen har du rätt att få ut dina personuppgifter (eller få dem överförda till en annan personuppgiftsansvarig) i ett strukturerat, allmänt använt och maskinläsbart format.<br />\n<br />\n<strong><em>Rätt att göra invändningar <\/em><\/strong>– Enligt artikel 21 i dataskyddsförordningen har du rätt att invända mot vårt berättigade intresse. I sådana fall kommer vi att upphöra med behandlingen av Personuppgifterna för Ändamålen. Safespring vill att du är medveten om rätten att göra invändningar då den enligt dataskyddsförordningen är en särskilt viktig rättighet.<br />\n<br />\nSlutligen har du rätt att inge klagomål till Datainspektionen, se kontaktuppgifter på nästa sida.\f<br />\n<br />\n<br />\n<strong><u>Kontaktinformation<\/u><\/strong><br />\n<br />\n<em>Safespring<\/em><br />\nGDPR@safespring.com<br />\n<br />\n<em>Datainspektionen<\/em><br />\ndatainspektionen@datainspektionen.se<br />\nTelefon: +46(0)‭8-657 61 00.‬<\/p>\n",
-				"2": "Safespring 2018<br />\n<strong>General Terms and Conditions for Cloud Services <\/strong>&nbsp; <br />\n<br />\n<em>THE PARTIES UNDERTAKE TO PERFORM ALL THEIR RESPECTIVE OBLIGATIONS IN ACCORDANCE WITH THE AGREEMENT, AS SET OUT HEREIN.<\/em><br />\n<br />\n<br />\n<strong>01. Definitions<\/strong><br />\n<br />\nThe following terms and expressions shall in this Agreement when capitalized have the meanings assigned to them in this Section 1.<br />\n<br />\n“Agreement” - means these General Terms and Conditions, Service Specification, Service Order and any other agreement documents referred to in the Service Order.<br />\n<br />\n“Customer” – means the legal entity that has entered into the Agreement with Safespring. Also referred to as “Party”.<br />\n<br />\n“Customer Systems” – means the IT system(s) and facilities used by Customer to receive and use the Service at and from the Service Access Point, including all relevant computer systems and locations and any other equipment, software, hardware, internet-, telecom- or VPN connections, firmware, database file, or (electronic) documentation required to receive the Services.<br />\n<br />\n“Data” – means all the information, text drawings, diagrams, images or sounds (including and/or together with any databases made up of any of these) and other data which are embodied in any electronic magnetic, optical or tangible media, and which:&nbsp;<br />\nI.&nbsp;&nbsp; &nbsp;are owned by or relate to either Party’s business;&nbsp;<br />\nII.&nbsp;&nbsp; &nbsp;are supplied to one Party or on behalf of the other Party; or&nbsp;<br />\nIII.&nbsp;&nbsp; &nbsp;are generated, processed, stored or transmitted by a Party and/or a sub-contractor, on behalf of the other Party pursuant to this agreement.<br />\n<br />\n“Safespring” – means the Safespring-company that have entered into the Agreement with Customer. Also referred to as “Party”.<br />\n<br />\n“Safespring Systems” – means Safespring’s IT system(s), including all relevant computer systems and any other equipment, software, hardware, firmware, database file, or (electronic) documentation, used to produce the Services.<br />\n<br />\n“Professional Services” – means separately ordered consultancy services provided by Safespring on hourly rates and basis.<br />\n<br />\n“Service” – means the cloud services offered by Safespring and specified in the Service Specification attached to the Service Order.<br />\n<br />\n“Service Access Point” – means the physical connection point and technical interface specified by Safespring where Customer receives the Service.<br />\n<br />\n“Service Fee” – means the periodic fee for the Services (yearly or monthly) and the aggregated hourly fees for Professional Services, to be paid by Customer to Safespring.<br />\n<br />\n“Service Order” – means the request for Service made by Customer under this Agreement and duly signed by both Parties.<br />\n<br />\n“Service Recipient” – means a third-party company - other than the Customer - entitled to receive and use the Services.<br />\n<br />\n“Service Specification” – means the document attached to the Service Order describing the Service and applicable service levels.<br />\n<br />\n“Service Start Date” – means the date that the Services shall be available to Customer and from which date Safespring shall be entitled to charge the Service Fee. Service Start Date is specified in Service Order and if not, it shall be the date Safespring announces that the Service is ready for use.<br />\n<br />\n“Term” – means the term of the agreement as set forth in section 7.<br />\n<br />\n<br />\n<strong>02. Service requirements<\/strong><br />\n<br />\n<strong>2.1. GENERAL<\/strong><br />\nSafespring shall from Service Start Date and for the duration of the Agreement make the Services available at the Service Access Point.&nbsp;<br />\n<br />\nThe Services shall be delivered in accordance with the Service Specification. Safespring will use all best efforts and shall be entitled to<br />\nmaintain, bug fix and upgrade the Services with recent and up-to-date versions of Services and to remedy defects in Services.<br />\n<br />\nSafespring shall upon specific order provide the Professional Services in a workmanlike and professional manner according to good industry practice. All services shall be provided in a manner that complies with law and regulations applicable to Safespring in its capacity as a supplier of IT-services.<br />\n<br />\nSafespring shall take, implement and maintain up-to-date industry standard of technical and organizational measures<br />\nagainst any computer viruses and/or malicious and/or harmful software on the hardware and software used in the Safespring System.<br />\n<br />\nSafespring shall during the term of this Agreement hold and maintain appropriate insurance policies with reputable insurers in relation to its obligations under this Agreement.<br />\n<br />\n<br />\n<strong>03. Customer general obligations<\/strong><br />\n<br />\nThe Customer is responsible for the Customer System and that it has the capability to receive the Services at the Service Access Point.<br />\n<br />\nThe Customer shall, upon request, grant access to and provide Safespring with information about the Customer SysCloud to the extent relevant and required to set up, maintain and perform the Services.<br />\n<br />\nThe Customer shall comply with Safespring’s general security instructions and procedures for using the Services, provided that Safespring have made such instructions and procedures available to Customer in advance.<br />\n<br />\nThe Customer shall not permit any persons other than its authorized personnel and authorized users to access or use the Services or the Safespring System. The Customer will take all necessary precautions to prevent loss and alteration of Safespring System and data, to prevent introduction of viruses to Safespring System, and to prevent any unauthorized access.&nbsp;<br />\n<br />\nThe Customer must promptly provide Safespring with any and all details of which the Customer becomes aware of any unauthorized access, copying, modification or use of the Services and Safespring System.<br />\n<br />\nThe Customer acknowledge and accept that Safespring without any liability is entitled to temporarily suspend the provision of the Services, should Safespring in its professional discretion conclude that Customer’s (or any of its user’s) Data or access to the Service cause or impose, or may cause or impose a risk for, system failure, Service defects or a security threat to Safespring System or its Data therein.<br />\n<br />\n<br />\n<strong>04. Service fees and terms of payment<\/strong><br />\n<br />\nAll Service Fees are exclusive of VAT and other taxes and/or duties.<br />\n<br />\nAll Service Fees shall be adjusted yearly based on Labor Cost Index (LCI) for non-manual workers in the private sector, according to SNI 2007, Category J (information and communication companies), published by SCB in Sweden (Swe: Statistiska Centralbyrån).&nbsp;<br />\n<br />\nBase quarter for the adjustments shall be the third quarter 3 of the year specified by Safespring.<br />\n<br />\n<strong>4.1 Services<\/strong><br />\nThe Customer shall for the Services pay the Services Fee stated in the Service Order or otherwise as stated in Safespring’s general price list for cloud services.<br />\n<br />\nThe Service Fee shall be invoiced by Safespring quarterly in advance.<br />\nTerms of payment are thirty (30) days from date of invoice.<br />\n<br />\n<strong>4.2 Professional Services<\/strong><br />\nThe Customer shall for the Professional Services pay the Services Fee stated in the Service Order or otherwise as stated in Safespring’s general price list for consultancy services. The Service Fee for Professional Services shall be invoiced by Safespring on a monthly basis in arrears. Terms of payment<br />\nare thirty (30) days from date of invoice.<br />\n<br />\n<strong>4.3 Overdue Payments<\/strong><br />\nFor any overdue payments, Safespring shall have the right to charge a monthly interest of 2 percent based on the outstanding overdue balance.&nbsp;<br />\n<br />\nIf payment for Services is more than 60 days past due, Safespring may, without any liability whatsoever, terminate or suspend providing the affected services to the Customer upon 10 days prior written notice to the Customer.<br />\n<br />\n<br />\n<strong>05. Term and termination<\/strong><br />\n<br />\nThe Agreement shall enter into force when Service Order has been duly signed by both Parties and shall remain in force for an ‘initial agreement period’ of 3 years, unless the Service Order states another initial period.<br />\n<br />\nIf not terminated in writing by either Party no later than six (6) months prior to the end of the initial period (or extension period), the Agreement will be automatically extended for consecutive extension periods of one (1) year at the time.<br />\n<br />\nEither Party shall have the right to terminate the Agreement forthwith without liability to the other Party, by written notice to the other Party, if the other Party goes into liquidation, enters into composition proceedings with its creditors, becomes insolvent or is unable to pay its major debts or the majority of its debts or fails or admits in writing its inability to pay its major debts or the majority of its debts as they become due, makes a general assignment for the benefit of creditors or if a petition under bankruptcy or under any insolvency law is filed by or against the other Party and such petition filed by a third party is not dismissed within sixty (60) days (or such longer period agreed upon between the Parties) after it has been filed or a secured part takes possession of all or<br />\nsubstantially all of its assets and such process is not dismissed or restrained within thirty (30) days.<br />\n<br />\nEither Party shall have the right to terminate the Agreement forthwith without liability to the other Party, by written notice to the other Party, if the other Party commits a material breach of its obligations hereunder. However,<br />\nin case such a material breach is capable of being cured, neither Party shall be entitled to terminate the Agreement unless and until the other Party have failed to cure the material breach within thirty (30) days after the failing Party have been served with a notice requiring it to cure such a breach and stating the sending Party's intention to terminate the Agreement if compliance with the notice to cure is not met.<br />\n<br />\nThe expiration or termination of this Agreement shall not affect or prejudice any provisions of the Agreement which are expressly or by implication provided to continue in effect after such expiration or termination.<br />\n06. Force majeure<br />\nNeither Party shall be liable for non-performance or defective nor late performance of any of their obligations<br />\nhereunder to the extent that such non-performance, defective or late performance is due to causes and/or conditions outside of the performing Party’s reasonable control.<br />\n<br />\nCauses and/or conditions outside of a Party's reasonable control shall include, but not be limited to, acts of terrorism, strikes and other labor disputes, fire, explosions, floods, earthquakes, typhoons, epidemics, wars (whether declared or undeclared), government acts (including failure to act) (de jure or de facto), riots, revolutions, sabotage<br />\nor severe weather conditions which the Party claiming excuse could not have reasonably foreseen the effects of or made alternative arrangements for.<br />\n07. Limitation of liability<br />\nSafespring shall not be liable for any non or late performance or defective Service if this has been caused by Customers’ Data or Systems; non-compliance with the customer obligations; regular System maintenance activities announced by Safespring in advance; or emergency System maintenance activities which could not reasonably have been foreseen by Safespring or its third party program product developers.<br />\n<br />\n<em>SAFESPRING SHALL NOT BE LIABLE TO THE CUSTOMER IN CONNECTION WITH THE AGREEMENT FOR ANY INDIRECT OR CONSEQUENTIAL DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PRODUCTION, LOSS OF DATA, LOSS OF BUSINESS, LOSS OF INVESTMENT, LOSS OF REVENUE AND LOSS OF GOODWILL.<\/em><br />\n<br />\nSafespring’s aggregate and total liability in respect of any one or more events or series of events (whether connected or unconnected) occurring during the term of this Agreement shall per calendar year be limited to direct damages equal to fifty (50) percent of the Service Fees invoiced to the Customer during the calendar year preceding the year when the loss arose. If this Agreement has not been in force during an entire calendar year, the abovementioned amount shall be calculated over a twelve month period on the basis of the Service Fees already invoiced to the Customer during the calendar year in question.<br />\n<br />\nThe limitations of liability set forth herein shall not apply to any liability arising from death or injury to persons caused by negligence, any liability arising from intent or gross negligence, willful recklessness or fraud or any specific indemnification given in section 10 or any breach of the obligations as regards Confidential Information.<br />\n<br />\n<br />\n<strong>08. Confidential information<\/strong><br />\n<br />\nAll information (oral, visual and written) which is secret or confidential by its nature, by a restrictive legend or by other written or oral designation and is transferred or made available to the other Party under the Agreement or during negotiations before execution of the Agreement shall be treated by the receiving Party as confidential<br />\n(“Confidential Information”).<br />\n<br />\n<strong>The Parties agree:<\/strong><br />\nto maintain the confidentiality of such Confidential Information and not disclose the same to any third party, except as authorized by the original disclosing Party in writing; and<br />\nb) to restrict disclosure of Confidential Information to employees, consultants, subcontractors and the Customer’s group companies who have a “need to know”, provided that such third party has confirmed their adherence to a confidential undertaking which shall be no less restrictive than the undertaking set out in this section 8.<br />\n<br />\nConfidential Information shall be handled with the same degree of care that the receiving Party applies to its own Confidential Information but in no event less than reasonable care, and that Confidential Information is and shall at all times remain the property of the disclosing Party.&nbsp;<br />\n<br />\nNo use of Confidential Information is permitted except as expressly stated herein or as strictly required in performance of the Agreement or in receipt of the Services.<br />\n<br />\nHowever, each Party may disclose Confidential Information in accordance with judicial or governmental order, mandatory legal requirement or applicable mandatory Regulations, provided that the other Party is given reasonable prior notice to such disclosure, including the intended scope and content of such disclosure.<br />\n<br />\nThe Confidential Information shall be considered confidential for a period of five (5) years from the termination or expiration of the Agreement, as relevant.<br />\n09. Intellectual property rights<br />\nSafespring hereby grants the Customer a non-exclusive, nontransferable, license to use the Safespring Systems to receive and use the Services for internal purposes. The Customer shall not be entitled to resell, assign, (sub)license or lease the Services or act as service bureau for the Services to third parties unless the third party is listed as a Services Recipient in the Service Order.<br />\n<br />\nThe Safespring Data and Systems including but not limited to any derivatives, developments or modifications (upgrades,<br />\nupdates, fixes etc) thereof and the intellectual and industrial property rights therein, shall be and remain the exclusive property of Safespring or its subcontractors.&nbsp;<br />\n<br />\nAny results of the Professional Services created by Safespring under and during the performance of this Agreement, including any intellectual property rights in relation thereto, shall be the exclusive property of Safespring or its subcontractors.<br />\n<br />\nThe Customer Data and Systems including but not limited to any derivatives, developments or modifications (upgrades,<br />\nupdates, fixes etc) thereof and the Intellectual and industrial property rights therein, shall be and remain the exclusive property of the Customer or its suppliers.<br />\n<br />\nThe Customer grants Safespring a non-exclusive, non-transferable, license to use the Customer Data and Systems to perform the Services. Each Party is responsible for obtaining, at its own cost, all consents and licenses which it requires in order to enable it to perform its rights and obligations in accordance with this Agreement.<br />\n<br />\n&nbsp;In particular, the Customer warrants, and is solely liable for ensuring, that it has any and all necessary rights, consents and licenses to access and process any data provided to Safespring under this Agreement. In particular, Safespring warrants, and is solely liable for ensuring that it has any and all necessary rights, consents and licenses to perform and provide any Services to the Customer under this Agreement.<br />\n<br />\n<br />\n<strong>10. Indemnity<\/strong><br />\n<br />\nSafespring shall at its sole cost defend, indemnify and hold the Customer harmless from and against any and all damages, costs and expenses incurred as a result of any claim, suits, proceedings or litigation of any kind (actual or threatened) brought against the Customer based on the allegation<br />\nthat the access or use of the Safespring’s Systems in accordance with the terms of this Agreement constitutes an infringement of any intellectual and industrial property rights of such third party, subject to Safespring being authorized to manage and settle the claim, suit or proceeding or other right of action at its own discretion.<br />\n<br />\nThe Customer shall, at its sole cost, defend, indemnify and hold Safespring harmless from and against any and all damages, cost and expenses incurred as a result of any claims, suits or proceedings or litigation of any kind (actual or threatened) brought against Safespring based on the allegation that the access to or use of the Customer Data or Systems in accordance with the terms of this Agreement constitutes an infringement of any intellectual and industrial property rights of any third party.<br />\n<br />\nThe intellectual property indemnities as set out in this section, shall not apply to the degree and to the extent:<br />\n<br />\na)&nbsp;&nbsp; &nbsp;the claim arises out of breach of this Agreement by the Party entitled to be indemnified;<br />\n<br />\nb)&nbsp;&nbsp; &nbsp;the claim arises directly out of compliance by the indemnifying Party with a specification or instructions provided by the Party entitled to be indemnified; or<br />\n<br />\nc)&nbsp;&nbsp; &nbsp;the Party entitled to be indemnified has caused or materially and/or substantially contributed to the events which gave rise to the claim under the indemnity.<br />\n<br />\nEach Party shall notify the other Party as soon as it becomes aware of a third party claim or a potential claim that may be subject of an indemnity hereunder. The indemnifying Party shall without delay undertake all reasonable measures to rectify and remedy the infringing situation.<br />\n<br />\nIn case the infringement claim in the indemnifying Party’s reasonable discretion materially prevents it from fulfilling its obligations under the Agreement, it shall be entitled to terminate the Agreement without any further liability.<br />\n<br />\n<br />\n<strong>11. Data protection<\/strong><br />\n<br />\nIn the performance of this Agreement, Safespring may process personal data on behalf of the Customer. In relation to any such personal data, the Customer shall be the data controller and ensure that the processing is performed in accordance with applicable legislation in respect of data protection and security.<br />\n<br />\nIn the performance of this Agreement, the Customer may process personal data received from Safespring. In relation to<br />\nany such personal data, Safespring shall be the data controller and ensure that the processing is performed in accordance with applicable legislation in respect of data protection and security.<br />\n<br />\nEach Party shall be the data processor in relation to any personal data received from the other Party and shall only process the data in accordance with this Agreement and the written instructions of the other Party.&nbsp;<br />\n<br />\nIn relation to any personal data received from the other Party, each Party further undertakes to implement appropriate technical and organizational measures to protect the personal data in order to prevent unauthorized or unlawful processing of personal data and accidental loss of, or damage to, personal data, including but not limited to taking reasonable steps to ensure the reliability of employees having access to the personal data.<br />\n<br />\nEach Party undertake to only process personal data received from the other Party if necessary in order to perform or receive the Services and comply with any reasonable procedures or processes notified to such Party by the other Party with respect to personal data from time to time.<br />\n<br />\nEach Party shall notify the other Party without delay if it receives a request from a registered person to have access to that person’s personal data or compliant or request relating to the other Party’s obligations under any applicable law.<br />\nEach Party shall provide the other Party with reasonable cooperation and assistance, at the other Party’s expense, in relation to any compliant or request made under any<br />\napplicable law.<br />\n<br />\nA Party shall not without the prior written consent of the other Party process any personal data received from the other Party outside the European Economic Area. If such consent is granted, the Parties shall ensure that an agreement consisting of the relevant EU model clauses for the transfer of personal data to third countries is signed by the concerned entities.<br />\n<br />\n<br />\n<br />\n<strong>12. Subcontracting<\/strong><br />\n<br />\nSafespring may use subcontractors for the performance of its obligations under this Agreement. Safespring is fully responsible and liable for all acts (including omissions) of its subcontractors and shall cause each of its subcontractors to fully abide with all applicable obligations, terms and conditions of this Agreement.<br />\n<br />\n<br />\n<strong>13. Assignment<\/strong><br />\n<br />\nThe Agreement shall accrue to the benefit of and be binding upon the Parties hereto and any successor entity into which either Party shall have been merged or consolidated or to which either Party shall have sold or transferred all or substantially all its assets, but it shall not be otherwise assigned by either Party without the prior written consent of the other Party.&nbsp;<br />\n<br />\nThe Parties agree that any consent to a requested assignment shall not be unreasonably withheld or delayed. Safespring shall be entitled to assign this Agreement to any company within the Safespring group of companies.<br />\n<br />\n<br />\n<strong>14. No waiver<\/strong><br />\n<br />\nThe failure of either Party to insist, in one or more instances, upon the performance of any of the terms or conditions of the Agreement, or to exercise any right hereunder, shall not be construed as a waiver or relinquishment<br />\nof the future performance of any such terms or conditions or the future exercise of such right, and the obligation of Safespring or the Customer with respect to such future performance shall continue in full force and effect.<br />\n<br />\n<br />\n<strong>15. Miscelleneous<\/strong><br />\n<br />\nNo general terms and conditions of either Party or any third party shall apply to this Agreement.<br />\n<br />\nAny notice required or permitted to be given by either Party under this Agreement, shall be in writing and may be delivered by hand, by courier, sent by registered airmail letter, fax or electronic mail. Any notice shall be deemed to have been received when actually delivered or<br />\n&nbsp;<br />\nI.&nbsp;&nbsp; &nbsp;when left at the address of the recipient, receipt confirmed;<br />\n<br />\nII.&nbsp;&nbsp; &nbsp;five (5) days after the date of posting it with ordinary mail; or<br />\n<br />\nIII.&nbsp;&nbsp; &nbsp;where sent by email or fax, on the day following receipt by the sender of an email confirmation or fax transmission report, generated by the machine (or computer) from which the notice was sent, indicating that the notice was sent in its entirety to the recipient’s email address or fax number, as applicable. Any notices shall be sent to the contact details specified in the Service Order.<br />\n<br />\n<br />\n<strong>16. Governing law and settlements of dispute<\/strong><br />\n<br />\nThe Agreement shall be governed by and construed in accordance with the laws of Sweden. Any dispute, controversy or claim arising out of or in connection with the Agreement shall be finally settled through arbitration under the Rules of the Arbitration Institute of the Stockholm Chamber of Commerce by three (3) arbitrators appointed in accordance with the said Rules.<br />\n<br />\nThe place of the arbitration proceedings shall be Stockholm, and the language of the proceeding shall be English.<br />\n<br />\n<br />\n<strong>17. Severability<\/strong><br />\n<br />\nEach provision of the Agreement is construed in such a manner as to be effective and valid under the substantive laws of Sweden. Should, however, any provision notwithstanding this, by action of law or for any other reason, be held to be prohibited or invalid in any relevant jurisdiction, the remaining provisions of this Agreement shall, provided that the contractual state of equilibrium between the Parties is not materially distorted as a result of such prohibition or invalidity, remain in full force and effect.<br />\n<br />\nShould the contractual state of equilibrium between the Parties not be materially distorted as a result of a prohibition or invalidity of any provision of this Agreement, the Parties shall promptly agree upon an alternative provision having an effect as similar as possible to the effect of the<br />\nprohibited or invalid provision.<br />\n<br />\nShould the contractual state of equilibrium between the Parties be materially distorted as a result of the prohibition or invalidity of any provision of the Agreement, the Party not favored by such prohibition or invalidity shall<br />\nhave the right to terminate this Agreement with immediate effect.<br />\n<br />\n<br />\n<strong>18. Entire agreement<\/strong><br />\n<br />\nThis Agreement constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all previous negotiations, proposals, commitments, writings, oral statements, and understanding of any nature whatsoever.<br />\n<br />\n<br />\n<strong>19. Modification of agreement<\/strong><br />\n<br />\nNo modification, amendment or other change may be made to the Agreement or any part thereof unless reduced to writing and executed by authorized representatives<br />\nof both Parties.&nbsp;<br />\n<br />\n<br />\n<br />\n<br />\n&nbsp;"
-			};
-			var preview = window.open("", "", "height=700,width=800,scrollbars=yes,resizable=yes,toolbar=no,status=no,menu=no,titlebar=no,location=no,addressbar=no");
-			var html = "<head><meta charset=\"UTF-8\"><style>body {margin: 0; padding: 20px;color: #333;font-family: Helvetica;font-size: 14px;}<\/style><\/head><body>" + terms[id] + "<\/body>";
-			preview.document.write(html);
-		}
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90353113-1">
-		</script>
-		<script>
-		 window.dataLayer = window.dataLayer || [];
-		 function gtag(){dataLayer.push(arguments);}
-		 gtag('js', new Date());
+     <meta property="og:title" content="{{ .Title }}" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
+     <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/event/image/socialmedia{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www.safespring.com/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_event.jpg{{ end }}"/>
+     <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
+     <meta property="og:site_name" content="Safespring" />
 
-		 gtag('config', 'UA-90353113-1');
-	</script>
-	<link href="https://fonts.googleapis.com/css?family=Hind:600,700|Montserrat:400,400i,700" rel="stylesheet">
-	<style>
-	button,h2,h3,h3.large{font-family:Hind;font-weight:600}h3,h3.large{font-size:40px}h2{font-size:16px}button{font-size:14px;text-transform:uppercase}label,p,p.bold{font-family:Montserrat}p.bold{font-weight:700}label{font-weight:400}
-	</style>
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+   	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-TXLJWD7');
+      </script>
+      <!-- End Google Tag Manager -->
+
+      <!-- Site Title changes according to current page -->
+      <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra molntjänster{{ end }}</title>
+      <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+      <meta name="generator" content="2017.0.4.363" />
+      <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
+      <!-- Description changes according to current page -->
+      <meta name="description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href={{ "/img/favicon.ico" | relURL }} />
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!-- CSS -->
+      <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type="text/css"/>
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:400,500,600" rel="stylesheet">
+      <!-- RSS -->
+      <link rel="canonical" href="{{ .Permalink }}">
+      {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+      {{ end }}
+  <title>Safespring | {{ .Title }}</title>
 </head>
-<body class="template-scoped-style" style="background-color: #323232;">
-	<!--TEMPLATE_START-->
-	<div class="row up-row up-absolute-row has-logo vpadding-sm hpadding-xs" data-row-id="0" data-up-row="" data-up-special="" id="header">
-		<div class="container up-container">
-			<div class="container">
-				<div class="col-md-12"><img class="up-element type-image" data-up-required="" id="logo" src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/images/Logotype-Safespring_SUSE.png" style="opacity: 1; float: left; max-width:300px;"></div>
-			</div>
-		</div>
-	</div><!-- COUNTDOWN -->
-	<div class="row up-row has-1536581277485 has-1536581277486" data-row-id="1" data-up-row="" style="background-color: rgb(25, 95, 140);">
-		<div class="up-background-image" style="background-image: url({{ if.Params.eventbild }}/img/event/{{ .Params.eventbild }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}); opacity: 1; background-size: cover; background-repeat: no-repeat;"></div>
-		<div class="container up-container">
-			<div class="col-md-8 up-column vpadding-none hpadding-sm" data-col-id="0" data-up-col="2" data-up-padding="xl sm">
-				<div class="up-element type-text" id="1536581277485">
-					<div style="color: #ffffff; text-align: left;">
-						<p style="color:rgba(255,255,255,.6);"><br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<strong>21&nbsp; N O V E M B E R&nbsp; - 16:00<br>
-						N A P O L Y O N&nbsp; &nbsp;B I S T R O</strong></p>
-						<h3 class="large">{{ .Title }}</h3>
-						<p class="paragraph" style="color: #FAFEFE;"><span style="font-size:16px;">{{ .Content }}</span></p>
-					</div>
-				</div>
-			</div><!-- FORM -->
-			<div class="col-md-4 up-column vpadding-xl hpadding-md" data-col-id="1" data-up-col="" data-up-padding="xl sm">
-				<div class="up-element type-form" data-background="transparent" data-button-bg="#fa690f" data-button-color="#ffffff" data-color="#ffffff" id="1536581277486">
-					<div class="up-form-wrapper">
-						<form action="https://power.upsales.com/api/external/formSubmit" id="up-form" method="post" name="form_9549ubdcc46ab485e42a79836f62b680afb11" onsubmit="return validateForm(event, &quot;https://pages.upsales.com/9549ucdb19df4657d49e9beb5154f9f2c2a6a?utm_source=Tack&quot;)" style="background-color: transparent; box-shadow: none;">
-							<span id="failedId" style="color:red;"></span>
-							<div class="form-group">
-								<label style="color: rgb(250, 254, 254);">För- och Efternamn <span class="text-danger">*</span></label><input class="form-control" maxlength="512" name="Contact.name" required="required" type="text">
-							</div>
-							<div class="form-group email">
-								<label style="color: rgb(250, 254, 254);">E-postadress (arbete) <span class="text-danger">*</span></label><input autocomplete="off" class="form-control" id="up-email-input" maxlength="512" name="Contact.email" required="required" type="email">
-							</div>
-							<div class="form-group">
-								<label style="color: rgb(250, 254, 254);">Telefon <span class="text-danger">*</span></label><input class="form-control" maxlength="512" name="Contact.phone" required="required" type="text">
-							</div>
-							<div class="form-group" style="display: flex;">
-								<input name="singleOptIn.1539762800694" required="required" style="margin: auto 7px auto 0px;" type="checkbox" value="on"><label style="color: rgb(250, 254, 254);">Jag accepterar <a href="javascript:openTerms(1);" style="color: #fa690f;">villkoren</a> <span class="text-danger">*</span></label>
-							</div>
-							<div class="form-group">
-								<label style="color: rgb(250, 254, 254);"><input name="Extra.1539762809144" type="checkbox" value="on"> Jag kan inte komma, men vill ha mer information om liknande event.</label><br>
-							</div><input name="formCid" type="hidden" value="9549"><input name="formId" type="hidden" value="9549ubdcc46ab485e42a79836f62b680afb11"><input name="isFrame" type="hidden" value="false"><input name="validation" style="display: none;" type="text" value=""><button class="btn btn-primary btn-block" style="border: 0px; background-color: rgb(250, 105, 15); color: rgb(255, 255, 255);" type="submit">Skicka in</button>
-						</form>
-						<div id="up-form-thanks" style="background-color: transparent;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
+<body>
+  {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+  <!-- {{ partial "header.html" . }} <!-- HEADING -->
+   <div class="heading-sub-event" style="background: url({{ if.Params.background }}/event/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
+     <div class="heading-content">
+       <a class="logo" href="{{ .Site.BaseURL }}">
+         <img src="{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}" style="margin-bottom:30px; padding: 0px;">
+       </a>
+       {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
+     </div>
+   </div>
+
+<!-- HEADING -->
+
+
+<!-- CONTENT -->
+<main class="content-chalmers">
+  <!-- Main  -->
+  <div class="ch-content">
+    <div class="content-body">
+     {{ .Content }}
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="ch-sidebar">
+    <div>
+      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" id="register" />
+    </div>
+
+    <div>
+<!-- START OF FORM -->
+{{ if .Params.formid }}
+      <h2 class="content-heading">{{ if .Params.english }}Register to get a  ticket{{ else }}SKAFFA BILJETT
+      {{ end }}</h2>
+<form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	<div>
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Your name...">
 	</div>
-	<div class="row up-row has-1536581277487" data-row-id="2" data-up-row="" style="background-color: rgb(51, 51, 51);">
-		<div class="container up-container">
-			<div class="col-md-12 up-column vpadding-md hpadding-none" data-col-id="0" data-up-col="" data-up-padding="md sm">
-				<div class="up-element type-countdown" data-background="transparent" data-color="#fa690f" data-date="{{ .Params.eventdatum }}" data-num-color="#ffffff" id="1536581277487" style="background-color: transparent;">
-					<div class="cd-unit days">
-						<div class="cd-header" style="color: rgb(250, 105, 15);">
-							Dagar
-						</div>
-						<h2 style="color: rgb(255, 255, 255);">05</h2>
-					</div>
-					<div class="cd-unit hours">
-						<div class="cd-header" style="color: rgb(250, 105, 15);">
-							Timmar
-						</div>
-						<h2 style="color: rgb(255, 255, 255);">04</h2>
-					</div>
-					<div class="cd-unit minutes">
-						<div class="cd-header" style="color: rgb(250, 105, 15);">
-							Minuter
-						</div>
-						<h2 style="color: rgb(255, 255, 255);">45</h2>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="email">
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Work Email...">
 	</div>
-	<div class="row up-row has-1539681989757" data-row-id="1539681985469" data-up-row="">
-		<div class="container up-container" style="background-color: rgb(255, 255, 255);">
-			<div class="col-md-12 up-column vpadding-lg hpadding-xxl" data-col-id="0" data-up-col="">
-				<div class="up-element type-text" id="1539681989757">
-					<h3 class="large" style="text-align: center;">VAR &amp; NÄR</h3>
-					<p class="paragraph" style="text-align: center;">&nbsp;</p>
-					<p class="paragraph" style="text-align: center;"><span style="font-size:16px;"><strong>Start kl: <span style="color:#fa690f;">16:00</span><br>
-					Datum:&nbsp;<span style="color:#fa690f;">21 november</span><br>
-					Plats: <span style="color:#fa690f;">Grevturegatan 15</span></strong></span><br>
-					<strong><span style="font-size:14px;"><span style="color:#777777;">Lokal: Napolyon Bistro &amp;&nbsp;Bar</span></span></strong></p>
-				</div>
-			</div>
-		</div>
+	<div>
+		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="Mobile...">
 	</div>
-	<div class="row up-row has-1539681961587" data-row-id="1539681954340" data-up-row="" style="background-color: rgb(50, 50, 50);">
-		<div class="container up-container">
-			<div class="col-md-12 up-column vpadding-sm hpadding-sm" data-col-id="0" data-up-col="">
-				<div class="up-element type-text" id="1539681961587">
-					<p>&nbsp;</p>
-				</div>
-			</div>
-		</div>
-	</div><!-- AVALIABLE ON ANY DEVICE -->
-	<!-- MAP -->
-	<div class="row up-row has-1536581277496" data-row-id="6" data-up-row="" style="background-color: rgb(25, 95, 140);">
-		<div class="up-background-image" style="background-image: url(&quot;https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/images/Skärmavbild 2018-10-25 kl. 13.52.04.png&quot;); opacity: 0.9; filter: blur(0px); background-size: cover; background-repeat: no-repeat;"></div>
-		<div class="container up-container">
-			<div class="col-md-3 up-column vpadding-xl hpadding-sm" data-col-id="0" data-up-col="3" data-up-padding="xl sm">
-				<div class="up-element type-card" data-background="#333333" data-color="#fa690f" data-subtitle="Smidesvägen 12" data-text="171 41, Solna" data-title="Location" data-title-color="#ffffff" id="1536581277496" style="background-color: rgb(51, 51, 51);">
-					<div class="card-img" style="background-image: url(&quot;https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/images/IMG_4696.jpg&quot;); opacity: 1; background-size: cover;"></div>
-					<h3 class="card-title" style="color: rgb(255, 255, 255);">Plats: Napolyon Bistro &amp; Bar</h3>
-					<h3 class="card-subtitle" style="color: rgb(250, 105, 15);">Grevturegatan 15</h3>
-					<p class="card-text" style="color: rgb(250, 105, 15);"></p>
-				</div>
-			</div>
-			<div class="col-md-9 up-column vpadding-sm hpadding-sm" data-col-id="1" data-up-col="9"></div>
-		</div>
-	</div>
-	<div class="row up-row has-1540193915715" data-row-id="1540193912328" data-up-row="" style="background-color: rgb(50, 50, 50);">
-		<div class="container up-container">
-			<div class="col-md-12 up-column vpadding-md hpadding-sm" data-col-id="0" data-up-col="">
-				<div class="up-element type-text" id="1540193915715">
-					<p class="paragraph" style="text-align: center;"><span style="font-size:16px;"><span style="color:#fafefe;">Har du några frågor om eventet så vänligen kontakta oss,</span></span></p>
-				</div>
-			</div>
-		</div>
-	</div><!-- FOOTER -->
-	<div class="row up-row has-1540193629037" data-row-id="1540193625238" data-up-row="" style="background-color: rgb(50, 50, 50);">
-		<div class="container up-container">
-			<div class="col-md-12 up-column vpadding-none hpadding-none" data-col-id="0" data-up-col=""><img class="up-element type-image" id="1540193629037" src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/images/1C_Safespring_Logotyp_Vit_RGB(liten).png" style="opacity: 1; margin: 0px auto; display: block;"></div>
-		</div>
-	</div>
-	<div class="row up-row has-1540193684905" data-row-id="1540193680469" data-up-row="" style="background-color: rgb(50, 50, 50);">
-		<div class="container up-container">
-			<div class="col-md-12 up-column vpadding-sm hpadding-none" data-col-id="0" data-up-col="">
-				<div class="up-element type-text" id="1540193684905">
-					<p class="paragraph" style="text-align: center;"><span style="color:#fafefe;"><span style="font-size:13px;">Smidesvägen 12, 171 41 Solna</span></span><br>
-					<span style="font-size:13px;"><a href="mailto:kontakt@safespring.com"><span style="color:#fafefe;">kontakt@safespring.com</span></a></span><br>
-					<span style="color:#fafefe;"><span style="font-size:13px;">Telefon: 070-5890255‬</span></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row up-row has-1540193822463" data-row-id="1540193813135" data-up-row="" style="background-color: rgb(50, 50, 50);">
-		<div class="container up-container">
-			<div class="col-md-12 up-column vpadding-none hpadding-none" data-col-id="0" data-up-col="">
-				<div class="up-element type-text" id="1540193822463">
-					<p>&nbsp;</p>
-				</div>
-			</div>
-		</div>
-	</div><!--TEMPLATE_END-->
-	<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js">
-	</script>
-</body>
-</html>
+	<!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="{{ .Params.formid }}">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<button type="submit" id="button">{{ if .Params.english }}GET A TICKET{{ else }}SKAFFA BILJETT
+  {{ end }}</button>
+</form>
+<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
+<br><br>
+{{ else }}{{ end }}
+<!-- END OF FORM -->
+
+      <h2 class="content-heading">{{ if .Params.english }}What is Safespring?{{ else }}Vad gör Safespring?{{ end }}</h2>
+      {{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring erbjuder en storskalig molnplattform där data aldrig lämnar landet.</p>
+      {{ end }}
+
+
+      <br>
+    </div>
+    {{ if .Params.english }}<a id="text-button" href="/kontakt">CONTACT SAFESPRING</a>{{ else }}<a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>{{ end }}
+</br></br>
+    {{ if .Params.english }}<div class="read-more">
+      <h2>Read more (in swedish):</h2>
+            <li class="content-body">
+        <a href="/safespring-backup">&gt; Backup as a service</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-storage">&gt; Storage as a service</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-compute">&gt; Infrastructure as a service</a>
+      </li>
+    </div>{{ else }}<div class="read-more">
+      <h2>Läs mer om:</h2>
+            <li class="content-body">
+        <a href="/safespring-backup">&gt; Backup som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
+      </li>
+      <li class="content-body">
+        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
+      </li>
+    </div>{{ end }}
+  </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

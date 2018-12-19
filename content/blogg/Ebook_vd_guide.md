@@ -9,7 +9,7 @@ showthedate = true
 Safespring har författat en [guide][ebook] till dig som står i begrepp att ta
 steget till en mer flexibel infrastrukur.
 
-[![ebok](../images/ebook-banner.png)][ebook]
+<img src="../images/ebook-banner.png" style="width: 100%;" />
 
 Guiden innehåller praktiska råd och tips kring vanliga misstag och hur man kan
 tänka för att lyckas med sitt migreringsprojekt. Guiden finns att ladda

@@ -1,0 +1,11 @@
+  <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
+  <h1 class="post-heading-firstpage">{{ .Title }}</h1>
+
+<!--
+<div class="content-item">
+  <a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a></br>
+  <a class="post-heading" href="{{ .Permalink }}">{{ .Title }}</a>
+  <div class="content-body">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 200 }}... {{ end }}</div>
+  <div class="content-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+</div>
+-->
