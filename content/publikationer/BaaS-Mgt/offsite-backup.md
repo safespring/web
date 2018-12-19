@@ -1,8 +1,8 @@
 ---
-title: "Hur du hanterar en offsite backup när mängden data växer explosionsartat"
-date: 2018-12-19T14:11:06+01:00
-eventdatum: ""
+title: "Offsite backup inom landet, fördelarna med svenska moln"
+date: 2018-12-19T09:16:32+01:00
 draft: false
+eventdatum: ""
 author: ""
 dokumentnamn: ""
 eventbild: ""
