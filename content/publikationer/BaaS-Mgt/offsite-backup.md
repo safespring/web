@@ -28,7 +28,7 @@ eSam, som är ett program för samverkan mellan 23 myndigheter och SKL, säger e
 
 <a href="/blogg/tidslinje/" id="text-button">LÄS MER: TIDSLINJE ÖVER DATASKYDDET I EU</a><br><br>
 
-Vi på Safespring producerar som sagt Svenska molntjänster och hos oss lämnar din data inte landet, därigenom kan du ha bra koll på vilka lagar och regler som gäller och känna dig trygg, men ändå dra nytta av molnets fördelar.
+Vi på Safespring producerar som sagt svenska molntjänster och hos oss lämnar din data inte landet, därigenom kan du ha bra koll på vilka lagar och regler som gäller och känna dig trygg, men ändå dra nytta av molnets fördelar.
 
 Om du har en befintlig backuplösning som stödjer objektlagring såsom S3 kan du lösa ditt Off-Sitebehov på några minuter genom att använda molntjänster, om du använder våra tjänster på Safespring kan du dessutom känna dig säker att data aldrig lämnar landet eller att kompromissa med säkerheten!
 
