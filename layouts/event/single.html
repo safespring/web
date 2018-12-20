@@ -57,7 +57,7 @@
 <body>
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
   <!-- {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub-event" style="background: url({{ if.Params.background }}/event/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
+   <div class="heading-sub-event" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
      <div class="heading-content">
        <a class="logo" href="{{ .Site.BaseURL }}">
          <img src="{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}" style="margin-bottom:30px; padding: 0px;">
@@ -79,9 +79,9 @@
   </div>
 
   <!-- SIDEBAR -->
-  <div class="ch-sidebar">
+  <div class="ch-sidebar" id="register">
     <div>
-      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" id="register" />
+      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
     </div>
 
     <div>
@@ -105,8 +105,7 @@
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" id="button">{{ if .Params.english }}GET A TICKET{{ else }}SKAFFA BILJETT
-  {{ end }}</button>
+	<button type="submit" id="button">{{ .Params.knapp }}</button>
 </form>
 <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
 <br><br>
