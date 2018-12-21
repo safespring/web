@@ -11,12 +11,15 @@
    tjanster
    " lang="sv">
    <head>
+
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
-     <meta property="og:image" content="{{ if.Params.socialmediabild }}/publikationer/image/socialmedia/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}"/>
-     <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
+     <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/event/image/socialmedia{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www.safespring.com/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_event.jpg{{ end }}"/>
+     <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
      <meta property="og:site_name" content="Safespring" />
+
+
    	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
       <!-- Google Tag Manager -->
@@ -29,7 +32,7 @@
       <!-- End Google Tag Manager -->
 
       <!-- Site Title changes according to current page -->
-      <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra molntjänster{{ end }}</title>
+      <title>Safespring | opplev .</title>
       <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
       <meta name="generator" content="2017.0.4.363" />
       <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
@@ -52,12 +55,16 @@
   <title>Safespring | {{ .Title }}</title>
 </head>
 <body>
-  {{ partial "header.html" . }}
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
   <!-- {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub" style="background: url({{ if.Params.background }}/publikationer/image/background/{{ .Params.background }}{{ else }}/blogg/image/background/background.jpg{{ end }}); background-size: cover; background-position:center;">
+   <div class="heading-sub-event" style="background: url({{ if.Params.background }}/event/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
      <div class="heading-content">
-       {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
+       <a class="logo" href="{{ .Site.BaseURL }}">
+         <img src="{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}" style="margin-bottom:30px; padding: 0px;">
+       </a>
+       <div class="content-meta-post">Teknologi i världsklass:</div><br>
+       <h1 class="post-heading-firstpage">Upplev Safespring baserat på OpenStack</h1><br><br>
+        <a class="button" href="#register">Testa gratis</a>
      </div>
    </div>
 
@@ -69,7 +76,7 @@
   <!-- Main  -->
   <div class="ch-content">
     <div class="content-body">
-     {{ .Content }}
+     <p>Testa Safespring!</p>
     </div>
   </div>
 
@@ -82,16 +89,17 @@
     <div>
 <!-- START OF FORM -->
 {{ if .Params.formid }}
-      <h2 class="content-heading">{{ .Params.formheadline }}</h2>
+      <h2 class="content-heading">{{ if .Params.english }}Register to get a  ticket{{ else }}SKAFFA BILJETT
+      {{ end }}</h2>
 <form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	<div>
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="{{ if .Params.english }}Your name...{{ else }}Ditt namn...{{ end }}">
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Your name...">
 	</div>
 	<div class="email">
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="{{ if .Params.english }}Work Email...{{ else }}Jobb-email...{{ end }}">
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Work Email...">
 	</div>
 	<div>
-		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="{{ if .Params.english }}Mobile...{{ else }}Mobilnummer...{{ end }}">
+		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="Mobile...">
 	</div>
 	<!-- REQUIRED FIELDS -->
 	<input type="hidden" name="formCid" value="9549">
@@ -99,7 +107,8 @@
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" id="button">{{ .Params.knapp }}</button>
+	<button type="submit" id="button">{{ if .Params.english }}GET A TICKET{{ else }}SKAFFA BILJETT
+  {{ end }}</button>
 </form>
 <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
 <br><br>
