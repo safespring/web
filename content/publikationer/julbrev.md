@@ -1,5 +1,5 @@
 ---
-title: "God jul og godt nytt år, Ønskes fra alle vi i Safespring!"
+title: "God jul og godt nytt år, Ønskes fra alle vi i Safespring"
 date: "2018-12-21T07:12:50+01:00"
 draft: false
 tags: [""]
