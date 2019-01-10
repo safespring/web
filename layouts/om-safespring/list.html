@@ -5,8 +5,6 @@
  <meta property="og:image" content="{{ if.Params.socialmediabild }}/om-oss/images/socialmedia/{{ .Params.socialmediabild }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
  <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
  <meta property="og:site_name" content="Safespring" />
-
-
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
    <!-- Google Tag Manager -->
@@ -42,9 +40,11 @@
 <title>Safespring | {{ .Title }}</title>
 </head>
 
-
-{{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
- {{ partial "header.html" . }} <!-- HEADING -->
+<body>
+{{ partial "g-tag-manager.html" . }}
+<!-- NAVBAR -->
+ {{ partial "header.html" . }}
+ <!-- HEADING -->
  <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_9.jpg); background-size: cover; background-position: center;">
   <div class="heading-content">
     <div class="content-meta-post"><a class="content-category-blogg" href="/om-safespring">Om Safespring</a></div><br>
@@ -53,9 +53,9 @@
   </div>
 </div>
 
-<main class="content-om">
   <!-- Main -->
-  <div class="om-content">
+<main class="content-chalmers">
+  <div class="ch-content">
     <div class="content-heading">
       <h2 class="">Vår historia</h2>
     </div>
@@ -65,7 +65,6 @@
       <p>Safesprings tjänster når idag samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningssätena i Skandinavien.</p>
       <p>Under 2017 etableras Safespring som eget bolag för att expandera erbjudandet till marknaden även utanför den akademiska sektorn.</p>
     </div>
-
     <div class="content-heading">
       <h2 class="">Vårt erbjudande</h2>
     </div>
@@ -77,10 +76,8 @@
 
   <!-- SIDEBAR -->
 {{ partial "side-bar.html" . }}
-
 </main>
 
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
 </body>
-</html>
