@@ -202,9 +202,21 @@ textarea {
   padding: 20px;
   float:left;
 }
-.menu-item ul {
-  padding: 0;
+
+.menu-item li {
+  text-align: left;
+  padding: 20px 0px 0px 30px;
+  float:left;
 }
+
+
+.menu-item ul {
+  padding: 0px 0px 0px 30px;
+}
+.menu-item:last-child ul {
+  padding: 0px 0px 20px 30px;
+}
+
 .blur {
   background: inherit;
   filter: blur(10px);
@@ -1553,7 +1565,7 @@ label {
 .h-logo img {
   max-width: 155px;
   color: var(--text-color);
-  padding: 0
+  padding: 5px 0px 0px 0px;
 }
 .hamburger {
   z-index: 120;
@@ -1575,7 +1587,7 @@ label {
 #toggle:checked + .hamburger .top {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  margin-top: 22.5px
+  margin-top: 13.5px;
 }
 #toggle:checked + .hamburger .meat {
   -webkit-transform: rotate(45deg);
@@ -1588,10 +1600,10 @@ label {
 }
 .h-menu {
   background: var(--alt-color);
-  margin: 0 0 0 -8px;
+  margin: 0px 0px 0px -8px;
   display: -ms-grid;
   display: grid;
-  grid-template-rows: 0.5fr repeat(7, 0.5fr);
+  /*grid-template-rows: 0.5fr repeat(7, 0.5fr);*/
   /*grid-row-gap: 25px;*/
   padding: 15px 0;
   list-style: none;
@@ -1599,13 +1611,16 @@ label {
   width: auto;
   visibility: hidden;
   text-align: center;
-  transition: height .2s ease;
   z-index: 110;
-  box-shadow: var(--reg-shadow);
 }
 .h-menu>li.menu-item {
-  padding: 10px 7em 10px 3em;
+  padding: 0px 0px 0px 25px;
 }
+
+.h-menu ul {
+  padding: 0px 0px 0px 25px;
+}
+
 #toggle:checked~.h-menu {
   visibility: visible;
   transition: visibility 0.7s ease-in-out;
@@ -1635,17 +1650,22 @@ label {
     display: none
   }
   #h-bar {
-    font: var(--heavy-weight) 16px var(--hind-font);
+    font: var(--heavy-weight) 25px var(--hind-font);
     display: -ms-grid;
     display: grid;
-    grid-template-rows: [full-start] minmax(10px, 1fr)[main-start] minmax(0, 45px)[main-end] minmax(10px, 1fr)[full-end];
+    grid-template-rows: [full-start] minmax(10px, 1fr)[main-start] minmax(0, 50px)[main-end] minmax(10px, 1fr)[full-end];
     background: var(--main-color);
     padding: 0;
     z-index: 100;
     position: fixed;
     box-shadow: var(--tran-shadow);
-    width: 100%
+    width: 100%;
   }
+
+#h-bar .sub-menu {
+  font: var(--normal-weight) 16px var(--mon-font);
+}
+
   #h-bar>* {
     grid-row: main
   }

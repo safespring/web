@@ -57,30 +57,52 @@
     </label>
 
     <ul class="h-menu">
-      <li class="menu-item">
-        <a class="link" href="/om-safespring">Om Safespring&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="/tjanster">Tjänster&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="/brancher">Brancher</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="/pris">Pris</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="/publikationer">Aktuellt&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="/kontakt">Kontakt</a>
-      </li>
-      <li class="menu-item">
-        <a id="link" href="tel:+4608855034" style="color: var(--green-color);">
-          <i class="fas fa-phone fa-flip-horizontal">
-          </i>&nbsp;&nbsp;&nbsp;08-85 50 34
-        </a>
-      </li>
-    </ul>
+          <li class="menu-item">Om Safespring&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-2"></i></li>
+          <ul class="menu-item" style="display: none;">
+            <li class="sub-menu"><a class="" href="/om-safespring/">Om oss</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/samarbeten-och-partners">Samarbeten och Partners</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/ramavtal">Ramavtal</a></li>
+            <li class="sub-menu"><a class="" href="/referenser">Kundreferenser</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/datacenter">Våra datacenter</a></li>
+          </ul>
+
+        <li class="menu-item">Tjänster&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-2"></i></li>
+          <ul class="menu-item" style="display: none;">
+            <li class="sub-menu"><a class="" href="/tjanster/safespring-backup">Backup</a></li>
+            <li class="sub-menu"><a class="" href="/tjanster/safespring-storage">Storage</a></li>
+            <li class="sub-menu"><a class="" href="/tjanster/safespring-compute">Compute</a></li>
+            <li class="sub-menu"><a class="" href="/tjanster/hybrid-cloud">Hybrid Cloud</a></li>
+            <li class="sub-menu"><a class="" href="/tjanster/managed-private-cloud">Managed Private Cloud</a></li>
+            <li class="sub-menu"><a class="" href="/tjanster/konsulttjanster">Konsulttjänster</a></li>
+            <li class="sub-menu"><a class="" href="/support">Support</a></li>
+            <li class="sub-menu"><a class="" href="/tjanster/utbildning">Utbildning</a></li>
+          </ul>
+        <li class="menu-item"><a class="link" href="/brancher">Brancher</a></li>
+        <li class="menu-item"><a class="link" href="/pris">Pris</a></li>
+
+        <li class="menu-item">Aktuellt&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-2"></i><li>
+          <ul class="menu-item" style="display: none;">
+            <li class="sub-menu"><a class="" href="/event">Event</a></li>
+            <li class="sub-menu"><a class="" href="/publikationer">Publikationer</a></li>
+          </ul>
+        <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
+        <li class="menu-item"><a id="link" href="tel:+4608855034" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal"></i> 08-85 50 34</a></li>
+      </ul>
   </div>
 </nav>
+<script>
+var coll = document.getElementsByClassName("menu-item");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var submenu = this.nextElementSibling;
+    if (submenu.style.display === "block") {
+      submenu.style.display = "none";
+    } else {
+      submenu.style.display = "block";
+    }
+  });
+}
+</script>
