@@ -14,8 +14,8 @@
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
-     <meta property="og:image" content="{{ if.Params.socialmediabild }}/publikationer/image/socialmedia/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}"/>
-     <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
+     <meta property="og:image" content="{{ if .Params.socialmediabild }}/publikationer/image/socialmedia/{{ .Params.socialmediabild }}{{ else if .Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if .Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}"/>
+     <meta property="og:description" content="{{ if .Params.intro }}{{ .Params.intro }}{{ else }}Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
      <meta property="og:site_name" content="Safespring" />
    	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
