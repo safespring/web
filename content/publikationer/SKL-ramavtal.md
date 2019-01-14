@@ -1,6 +1,6 @@
 ---
 title: "SKL väljer ArkivIT och Safespring som leverantör av e-arkiv som tjänst"
-date: "2019-01-13T10:12:50+01:00"
+date: "2019-01-14T06:12:50+01:00"
 draft: false
 tags: [""]
 showthedate: true
