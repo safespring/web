@@ -1,3 +1,4 @@
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 <!-- Full Navbar -->
 <div class="navbar">
   <div class="nav-flex">
@@ -10,9 +11,11 @@
           <ul class="dropdown">
             <li class="sub-menu"><a class="" href="/om-safespring/">Om oss</a></li>
             <li class="sub-menu"><a class="" href="/om-safespring/samarbeten-och-partners">Samarbeten och Partners</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/bli-partner">Bli partner med oss!</a></li>
             <li class="sub-menu"><a class="" href="/om-safespring/ramavtal">Ramavtal</a></li>
             <li class="sub-menu"><a class="" href="/referenser">Kundreferenser</a></li>
             <li class="sub-menu"><a class="" href="/om-safespring/datacenter">Våra datacenter</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/miljo-och-hallbarhet">Miljö och hållbarhet</a></li>
           </ul>
         </li>
         <li class="menu-item"><a class="link" href="/tjanster">Tjänster</a>
@@ -23,11 +26,19 @@
             <li class="sub-menu"><a class="" href="/tjanster/hybrid-cloud">Hybrid Cloud</a></li>
             <li class="sub-menu"><a class="" href="/tjanster/managed-private-cloud">Managed Private Cloud</a></li>
             <li class="sub-menu"><a class="" href="/tjanster/konsulttjanster">Konsulttjänster</a></li>
-            <li class="sub-menu"><a class="" href="/support">Support</a></li>
             <li class="sub-menu"><a class="" href="/tjanster/utbildning">Utbildning</a></li>
+            <li class="sub-menu"><a class="" href="/support">Support</a></li>
           </ul>
         </li>
-        <li class="menu-item"><a class="link" href="/brancher">Brancher</a></li>
+        <li class="menu-item"><a class="link" href="/branscher">Branscher</a>
+          <ul class="dropdown">
+            <li class="sub-menu"><a class="" href="/branscher/utbildning-forskning">Utbildning och forskning</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/myndigheter">Myndigheter</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/kommuner">Kommuner</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/mjukvarutillverkare">Mjukvarutillverkare</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/it-branschen">IT-branschen</a></li>
+          </ul>
+        </li>
         <li class="menu-item"><a class="link" href="/pris">Pris</a></li>
         <li class="menu-item"><a class="link" href="/publikationer">Aktuellt</a>
           <ul class="dropdown">
@@ -36,7 +47,7 @@
           </ul>
         </li>
         <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
-        <li class="menu-item"><a id="link" href="tel:+4608855034" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal"></i> 08-85 50 34</a></li>
+        <li class="menu-item"><a id="link" href="tel:+4608855034" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-4"></i> 08-85 50 34</a></li>
       </ul>
     </nav>
   </div>
@@ -57,7 +68,7 @@
     </label>
 
     <ul class="h-menu">
-          <li class="menu-item">Om Safespring&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-2"></i></li>
+          <li class="menu-item">Om Safespring&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-5"></i></li>
           <ul class="menu-item" style="display: none;">
             <li class="sub-menu"><a class="" href="/om-safespring/">Om oss</a></li>
             <li class="sub-menu"><a class="" href="/om-safespring/samarbeten-och-partners">Samarbeten och Partners</a></li>
@@ -66,31 +77,38 @@
             <li class="sub-menu"><a class="" href="/om-safespring/datacenter">Våra datacenter</a></li>
           </ul>
 
-        <li class="menu-item">Tjänster&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-2"></i></li>
+        <li class="menu-item">Tjänster&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-5"></i></li>
           <ul class="menu-item" style="display: none;">
-            <li class="sub-menu"><a class="" href="/tjanster/safespring-backup">Backup</a></li>
-            <li class="sub-menu"><a class="" href="/tjanster/safespring-storage">Storage</a></li>
-            <li class="sub-menu"><a class="" href="/tjanster/safespring-compute">Compute</a></li>
-            <li class="sub-menu"><a class="" href="/tjanster/hybrid-cloud">Hybrid Cloud</a></li>
-            <li class="sub-menu"><a class="" href="/tjanster/managed-private-cloud">Managed Private Cloud</a></li>
-            <li class="sub-menu"><a class="" href="/tjanster/konsulttjanster">Konsulttjänster</a></li>
-            <li class="sub-menu"><a class="" href="/support">Support</a></li>
-            <li class="sub-menu"><a class="" href="/tjanster/utbildning">Utbildning</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/safespring-backup">Backup</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/safespring-storage">Storage</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/safespring-compute">Compute</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/hybrid-cloud">Hybrid Cloud</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/managed-private-cloud">Managed Private Cloud</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/konsulttjanster">Konsulttjänster</a></li>
+              <li class="sub-menu"><a class="" href="/tjanster/utbildning">Utbildning</a></li>
+              <li class="sub-menu"><a class="" href="/support">Support</a></li>
+            </ul>
+        <li class="menu-item">Brancher&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-5"></i></li>
+          <ul class="menu-item" style="display: none;">
+            <li class="sub-menu"><a class="" href="/branscher/utbildning-forskning">Utbildning och forskning</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/myndigheter">Myndigheter</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/kommuner">Kommuner</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/mjukvarutillverkare">Mjukvarutillverkare</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/it-branschen">IT-branschen</a></li>
           </ul>
-        <li class="menu-item"><a class="link" href="/brancher">Brancher</a></li>
         <li class="menu-item"><a class="link" href="/pris">Pris</a></li>
-
-        <li class="menu-item">Aktuellt&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-2"></i><li>
+        <li class="menu-item">Aktuellt&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-5"></i></li>
           <ul class="menu-item" style="display: none;">
             <li class="sub-menu"><a class="" href="/event">Event</a></li>
             <li class="sub-menu"><a class="" href="/publikationer">Publikationer</a></li>
           </ul>
         <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
-        <li class="menu-item"><a id="link" href="tel:+4608855034" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal"></i> 08-85 50 34</a></li>
+        <li class="menu-item"><a id="link" href="tel:+4608855034" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 08-85 50 34</a></li>
       </ul>
   </div>
 </nav>
 <script>
+
 var coll = document.getElementsByClassName("menu-item");
 var i;
 

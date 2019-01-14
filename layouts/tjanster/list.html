@@ -19,7 +19,7 @@
        <!-- End Google Tag Manager -->
 
        <!-- Site Title changes according to current page -->
-       <title>Safespring | Våra tjänster</title>
+       <title>Safespring | {{ .Title }}</title>
        <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
        <meta name="generator" content="2017.0.4.363" />
        <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
@@ -53,11 +53,10 @@
          </div>
          <br>
          <h1 class="post-heading-firstpage">
-           Safesprings tjänster
+           {{ .Title }}
          </h1>
          <div class="content-summary-blogg">
-           Safespring levererar snabba, flexibla och säkra molntjänster som reducerar time-to-market och möjliggör snabb förnyelse utan tekniska hinder. Safesprings molntjänster produceras säkert och lokalt i samma land som kunden för att bibehålla data-suveränitet.
-         </div>
+{{ .Params.intro }}         </div>
        </div>
      </div>
 
@@ -69,37 +68,7 @@
     <!-- Main  -->
     <div class="ch-content">
       <div class="content-body">
-        <h2>Molntjänster med hög säkerhet</h2>
-        <p>Safesprings molntjänster är skalbara och kostnadseffektiva. Med lokalt producerade molntjänster och med fysiska datacenter placerade i samma land som kunden - lämnar er data aldrig landet.</p>
-        <p>Safespring lever upp till lokala lagar och regler kring datalagring såsom personuppgiftslagen (PUL) och ligger trots avancerade säkerhetslösningar i priskonkurrens med de internationella publika molnen. Detta möjliggörs med en hög grad av automatisering.</p>
-        <p>Genom självbetjäning kan Safesprings molntjänster skalas upp och ned efter användarens behov. Safesprings molntjänster köps on-demand vilket ger våra användare full kontroll över nyttjandet av tjänsten. På så sätt kan kvoter sättas och kostnaden
-        för det aktuella användandet blir förutsägbar.</p>
-        <h2>Säkra och flexibla tjäsnter från Safespring ger:</h2>
-        <ol>
-          <li>Reducerad tid att ta nya tjänster i produktion</li>
-          <li>Mer effektivt utnyttjande av IT-resurser</li>
-          <li>Flexibilitet att skala upp och ner din infrastruktur efter behov</li>
-          <li>Inbyggda säkerhetsregler i plattformen som förhindrar dataläckage</li>
-          <li>Säkerhetsfunktioner i plattformen som användaren kan styra själv</li>
-        </ol>
-        <div class="service-box">
-          <div class="service-box-content">
-            <h3>Safespring Backup</h3>
-            <p>Med Safesprings molnbaserad backuptjänst behöver du inte investera i egen hård- eller mjukvara. Tjänsten konsumeras över internet och du betalar bara för den mängd data som sparas i tjänsten.</p>
-          </div>
-        </div>
-        <div class="service-box">
-          <div class="service-box-content">
-            <h3>Safespring Storage</h3>
-            <p>Safesprings molnbaserade lagring finns i tre olika utförande och är baserad på den marknadsledande lagringsteknologin Ceph. Tjänsten levereras ifrån säkra datahallar med hög tillgänglighet.</p>
-          </div>
-        </div>
-        <div class="service-box">
-          <div class="service-box-content">
-            <h3>Safespring Compute</h3>
-            <p>Med Safesprings molnbaserade infrastrukturtjänst kan du skala upp och ner din infrastruktur efter behov. Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal.</p>
-          </div>
-        </div>
+        {{ .Content }}
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Våra tjänster"
+title: "Tjänster"
 date: "2017-11-22"
 draft: false
 tags: ""

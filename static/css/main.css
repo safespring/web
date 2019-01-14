@@ -113,6 +113,15 @@ textarea {
    color: #fefefe;
 }
 
+.quote {
+  color: var(--heading-color);
+  font-size: 20px;
+  font-style: italic;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.2;
+}
+
 #button {
   width: 175px;
   background-color: var(--button-color);
@@ -211,7 +220,7 @@ textarea {
 
 
 .menu-item ul {
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 0px;
 }
 .menu-item:last-child ul {
   padding: 0px 0px 20px 30px;
@@ -225,7 +234,7 @@ textarea {
 .dropdown {
   margin: 20px auto 0;
   visibility: hidden;
-  min-width: 200%;
+  min-width: 250%;
   min-height: 100%;
   background: ;
   position: absolute;
@@ -1603,8 +1612,7 @@ label {
   margin: 0px 0px 0px -8px;
   display: -ms-grid;
   display: grid;
-  /*grid-template-rows: 0.5fr repeat(7, 0.5fr);*/
-  /*grid-row-gap: 25px;*/
+  grid-row-gap:15px;
   padding: 15px 0;
   list-style: none;
   clear: both;
@@ -1619,6 +1627,12 @@ label {
 
 .h-menu ul {
   padding: 0px 0px 0px 25px;
+}
+.sub-menu:last-child {
+  padding-bottom: 30px;:
+}
+.sub-menu:first-child {
+  padding-top: 10px;:
 }
 
 #toggle:checked~.h-menu {
