@@ -4,8 +4,8 @@ date: "2019-01-14T06:12:50+01:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: ""
-background: ""
+socialmediabild: "Safespring-SKL_ramavtal_ArkivIT-01.jpg"
+background: "Safespring-SKL_ramavtal_ArkivIT-01.jpg"
 ---
 ### E-arkivtjänst i molnet, där data aldrig lämnar landet
 ArkivIT, i partnerskap med Safespring, tecknar ramavtal med SKL för en modern och säker e-arkivtjänst där data aldrig lämnar landet. Arkivtjänsten följer SKL:s krav på säkerhet och efterlevnad av nationella lagar och regler.
