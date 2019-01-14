@@ -10,7 +10,7 @@ background: "Safespring-SKL_ramavtal_ArkivIT-01.jpg"
 ### E-arkivtjänst i molnet, där data aldrig lämnar landet
 ArkivIT, i partnerskap med Safespring, tecknar ramavtal med SKL för en modern och säker e-arkivtjänst där data aldrig lämnar landet. Arkivtjänsten följer SKL:s krav på säkerhet och efterlevnad av nationella lagar och regler.
 
-ArkivIT:s kompetens inom arkivering och Safesprings infrastruktur baserad på öppen källkod har tillsammans skapat ett av de modernaste e-arkiven på marknaden. Data lagras inom landet utan kontakt med utländska företag vilket ökar säkerheten och efterlevnaden av dataskyddsförordningen och andra regelverk. Via ramavtalet kan nu ca 400 myndigheter ta del av erbjudandet.
+ArkivIT:s kompetens inom arkivering och Safesprings infrastruktur baserad på öppen källkod har tillsammans skapat ett av de modernaste e-arkiven på marknaden. Data lagras inom landet utan kontakt med utländska företag vilket ökar säkerheten och efterlevnaden av dataskyddsförordningen och andra regelverk. Via ramavtalet kan hela 952 avropsberättigade myndigheter ta del av erbjudandet.
 
 Öppna standarder och öppen källkod är grunden i Archivematica och Safesprings infrastruktur, samt är en standard som rekommenderas bland annat av eu-kommissionen.
 
