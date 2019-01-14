@@ -40,7 +40,9 @@ h2 {
   margin-top: 0px;
   font-variant-numeric: normal;
 }
-
+img {
+  width: 100%;
+}
 h3 {
   padding-top: 20px;
   font: var(--heavy-weight) 12px var(--hind-font);
