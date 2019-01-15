@@ -125,7 +125,7 @@ textarea {
 }
 
 #button {
-  display: inline-block;
+  width: 175px;
   background-color: var(--button-color);
   border-radius: 50px;
   padding: 10px 25px 8px 25px;
