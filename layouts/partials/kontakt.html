@@ -4,20 +4,34 @@
 <body>
 		{{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
 	 {{ partial "header.html" . }} <!-- HEADING -->
-	 <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_9.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
-		<div class="heading-content">
-			<h1>{{ .Title }}</h1>
-		</div>
-	</div><!-- HEADING -->
+	 <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
+	 	<div class="heading-content">
+			<div class="content-meta-post">
+			</div>
+			<br>
+			<h1 class="post-heading-firstpage">
+				Kontakta Safespring
+			</h1>
+			<div class="content-summary-blogg">
+				Kul att du vill komma i kontakt med oss! Här hittar du förhoppningsvis en kanal som passar dig!
+			</div>
+			<br>
+			<br>
+	 	</div>
+	 </div>
+
+	<!-- HEADING -->
 	<!-- CONTENT -->
 	<main class="content-chalmers">
 		<!-- Main  -->
 		<div class="ch-content">
 			<div class="content-heading">
-				<h2>{{ .Title }}</h2>
 			</div>
 			<div class="content-body">
 				<p>Safespring finns lokalt i Sverige och Norge. Huvudkontoret ligger en bit utanför Stockholm i Sverige. För att kontakta någon på Safespring kan du använda dig av länkarna till höger, eller fylla i kontaktformuläret på denna sida.</p>
+				<p>Ring oss gärna för att snabbt komma i kontakt med oss:</p>
+				<a id="link" href="tel:+46705890255‬" style="color: var(--main-color); font-weight:var(--medium-weight);"><div class="partner-container"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 070-589 02 55</div>‬</a>
+				<h2>Skicka ett meddelande</h2>
 				<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
@@ -130,7 +144,7 @@
 				<div>
 					<img alt="Fredric Wallsten, VD, Försäljningschef Norge" src="/img/kontakt/fredric-wallsten.png">
 					<h2>Fredric Wallsten</h2>
-					<p>VD, Försäljningschef Norge<br>
+					<p>VD<br>
 					<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a><br>
 					<a href="tel:+46766292502">‭+46 76-629 25 02</a></p>
 				</div><!-- JOHAN EDEVÅG -->
@@ -142,6 +156,26 @@
 					<a href="tel:+46705890255">+46 70-589 02 55‬</a></p>
 				</div><!-- MARCUS BOBEG -->
 				<div>
+					<img alt="Mikael Schütt, Vice VD" src="/img/kontakt/mikael-schutt.png">
+					<h2>Mikael Schütt</h2>
+					<p>Vice VD<br>
+					<a href="mailto:mikael.schutt@safespring.se">mikael.schutt@safespring.se</a><br>
+					<a href="tel:+46721864701">+46 72-186 47 01‬</a></p>
+				</div>
+				<div>
+					<img alt="Gabriel Paues, Cloud Architect" src="/img/kontakt/gabriel-paues.png">
+					<h2>Gabriel Paues</h2>
+					<p>Cloud Architect<br>
+					<a href="mailto:gabriel.paues@safespring.se">gabriel.paues@safespring.se</a><br>
+					<a href="tel:‭+46762770776‬">‭+46 76-277 07 76‬‬</a></p>
+				</div>
+				<div>
+					<img alt="Jan Ivar Beddari, CTO" src="/img/kontakt/jan-ivar-beddari.png">
+					<h2>Jan Ivar Beddari</h2>
+					<p>CTO<br>
+					<a href="mailto:beddari@safespring.com">beddari@safespring.com</a><br>
+				</div>
+				<div>
 					<img alt="Marcus Boberg, Informations- och Marknadsansvarig" src="/img/kontakt/marcus-boberg.png">
 					<h2>Marcus Boberg</h2>
 					<p>Informations- och Marknadsansvarig<br>
@@ -152,10 +186,8 @@
 					<br>
 					<br>
 				</div>
-				<div>
-					<a href="mailto:sales@safespring.se" id="button">SÄLJAVDELNINGEN</a>
-					<a href="mailto:media@safespring.se" id="button">INFO-AVDELNINGEN</a>
-			</div>
+					<div id="button"><a href="mailto:sales@safespring.se">Säljavdelningen</a></div>
+					<div id="button"><a href="mailto:media@safespring.se">Infoavdelningen</a></div>
 			<div class="read-more">
 				<h2>Läs mer om:</h2>
 				<li class="content-body">
