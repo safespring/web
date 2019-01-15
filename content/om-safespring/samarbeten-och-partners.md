@@ -21,3 +21,16 @@ Vår egen djupa kompetens, våra egenproducerade tjänster och plattformar tills
 Kontakta oss för att diskutera vidare! Vi är övertygade att vi hittar en samarbetsform!
 
 <a href="/om-safespring/bli-partner" id="text-button">Bli partner med oss</a>
+
+## Några av våra partners
+
+<div class="partner-grid">
+<a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_scaleout-systems.png"></div></a>
+<a href="https://www.suse.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_suse.png"></div></a>
+<a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_arkivit.png"></div></a>
+<a href="https://www.cristie.dk/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_cristie-nordic.png"></div></a>
+<a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_sunet.png"></div></a>
+<a href="https://www.uninett.no/en"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_uninett.png"></div></a>
+<a href="http://www.denali.no/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_denali.png"></div></a>
+<a href="https://www.microsoft.com"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partner-logos/safespring_partners_microsoft.png"></div></a>
+</div>
