@@ -17,7 +17,6 @@ Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Ba
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
 
 ## Testa Safespring gratis
-<div class="form-check d-flex"><input class="switch mb-1" type="checkbox" id="exampleCheck2"><label class="form-check-label switch-label" for="exampleCheck2">Backup</label></div>
 
 <form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	<div class="form">
@@ -38,8 +37,6 @@ I det fallet att ni redan har en backuplösning lokalt så går det också att a
 	</div>
 	<div>
 		<h3>Vad vill du testa?</h3>
-		<br>
-<br>
 		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547637703567"><label for="Backup">Backup</label></div>
 		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547637703567"><label for="Storage">Storage</label></div>
 		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547637703567"><label for="Compute">Compute</label></div>
