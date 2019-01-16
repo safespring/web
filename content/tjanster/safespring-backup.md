@@ -15,3 +15,43 @@ Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Ba
 
 ### LÖSNING FÖR OFFSITE BACKUP
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
+
+## Testa Safespring gratis
+
+<form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	<div class="form">
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
+	</div>
+  <div class="form">
+    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
+	</div>
+  <div class="form">
+    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag...">
+	</div>
+  <div class="form">
+    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
+	</div>
+	<div>
+		<h3>Tjänster att testa</h3>
+		<br>
+    <div class="form-check d-flex"><input class="switch mb-1" type="checkbox" id="exampleCheck2"><label class="form-check-label switch-label" for="exampleCheck2">Backup</label></div>
+		<label><input type="checkbox" value="Backup" name="Extra.1547637703567">&nbsp;Backup&nbsp;</label></br>
+		<label><input type="checkbox" value="Storage" name="Extra.1547637703567">&nbsp;Storage&nbsp;</label></br>
+		<label><input type="checkbox" value="Compute" name="Extra.1547637703567">&nbsp;Compute&nbsp;</label></br>
+		<label><input type="checkbox" value="Hybrid Cloud" name="Extra.1547637703567">&nbsp;Hybrid Cloud&nbsp;</label></br>
+		<label><input type="checkbox" value="Private Cloud" name="Extra.1547637703567">&nbsp;Private Cloud&nbsp;</label></br>
+    <br>
+	</div>
+	<!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<button type="submit" class="button">Skapa demokonto</button>
+</form>
+<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>

@@ -16,6 +16,13 @@
   --heavy-weight: 600;
   --reg-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
   --tran-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+
+  --width-Ckb: 40px;
+  --checkedColor: rgba(33, 150, 243, 1);
+  --unCheckedColor: rgba(220, 220, 220, 1);
+  --height-Ckb: ($width-Ckb*0.5625);
+  --transitionSpeed: 0.05s;
+  --border: (($width-Ckb - $height-Ckb)/10);
 }
 
 .index {
@@ -75,19 +82,25 @@ a:hover {
 
 button {
   outline: none;
-  border: none
+  border: none;
 }
 
+.form {
+  display: block;
+  width: 300px;
+  padding: 12px 24px;
+  margin: 8px 0;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font: var(--normal-weight) 15px var(--mon-font);
+  line-height: 20px;
+  border-radius: 50px;
+}
 input[type=text], [type=email] {
-    width: 300px;
-    padding: 12px;
-    margin: 8px 0;
-    background-color: #195F8C;
-    color: #fafefe;
+    color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
     border: none;
-    border-radius: 5px;
 }
 
 textarea {
@@ -95,7 +108,7 @@ textarea {
     padding: 12px;
     margin: 8px 0;
     background-color: #195F8C;
-    color: #fafefe;
+    color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
     border: none;
@@ -103,12 +116,12 @@ textarea {
 }
 
 ::placeholder {
-    color: #fefefe;
+    color: var(--main-color);
     opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #fefefe;
+   color: var(--main-color);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
@@ -146,7 +159,6 @@ textarea {
   transition: box-shadow 0.2s ease-in-out
 }
 .button {
-  width: 100px;
   font: var(--heavy-weight) 15px var(--mon-font);
   color: var(--text-color);
   background-color: var(--button-color);
@@ -160,6 +172,62 @@ textarea {
   box-shadow: var(--tran-shadow);
   transition: box-shadow 0.2s ease-in-out;
   color: var(--text-color)
+}
+
+/* Checkbox toggle */
+
+input.switch {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: var(--width-Ckb);
+  height: var(--height-Ckb);
+  border-radius: var(--height-Ckb);
+  box-shadow: inset var(--width-Ckb/2.3) 0px 0px 0px var(--unCheckedColor);
+  border: var(--border) solid var(--unCheckedColor);
+  outline: none;
+  transition: var(--transitionSpeed);
+  cursor: pointer;
+  background-color:rgba(255,255,255,1);
+}
+
+    input.switch:after {
+      content: "";
+      font-size:var(--height-Ckb/2);
+      display: inline-flex;
+      justify-content: center;
+      width:var(--width-Ckb/2);
+      line-height:var(--height-Ckb);
+      position:relative;
+      z-index:99;
+      left: 0;
+      top: var(--border);
+      color:var(--unCheckedColor);
+      transition: var(--transitionSpeed);
+      }
+  input.switch:checked {
+    box-shadow: inset var(--width-Ckb/2.3) 0px 0px 0px var(--checkedColor);
+    border: var(--border) solid var(--checkedColor);
+    + label.switch-label {
+      color: var(--checkedColor);
+    }
+    input.switch:after{
+      content: "";
+      // left:calc(100% - var(--width-Ckb));
+      left: var(--width-Ckb/2) - var(--border);
+      color: var(--checkedColor);
+
+      }
+  }
+
+label.switch-label {
+  font-size: var(--height-Ckb/1);
+  height: var(--height-Ckb);
+  display: flex;
+  line-height: var(--height-Ckb);
+  padding: 0 0 0 var(--width-Ckb/4);
+  color: var(--unCheckedColor);
 }
 
 #lankar {
@@ -568,6 +636,11 @@ textarea {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   padding: 30px;
+  font: var(--heavy-weight) 15px var(--hind-font);
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-variant-numeric: normal;
 
 }
 #dark {
@@ -763,7 +836,7 @@ textarea {
 .cont a:hover {
   color: var(--link-color)
 }
-.form {
+/*.form {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -790,7 +863,7 @@ textarea {
 }
 .form button p {
   margin: 0
-}
+}*/
 .kun {
   background-color: var(--text-color);
   display: -ms-grid;
