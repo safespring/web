@@ -43,8 +43,6 @@ I det fallet att ni redan har en backuplösning lokalt så går det också att a
 		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547637703567"><label for="Backup">Backup</label></div>
 		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547637703567"><label for="Storage">Storage</label></div>
 		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547637703567"><label for="Compute">Compute</label></div>
-		<div class="inputGroup"><input id="Hybrid" type="checkbox" value="Hybrid Cloud" name="Extra.1547637703567"><label for="Hybrid">Hybrid Cloud</label></div>
-		<div class="inputGroup"><input id="Private" type="checkbox" value="Private Cloud" name="Extra.1547637703567"><label for="Private">Private Cloud</label></div>
     <br>
 	</div>
 	<!-- REQUIRED FIELDS -->
