@@ -37,9 +37,10 @@ I det fallet att ni redan har en backuplösning lokalt så går det också att a
 	</div>
 	<div>
 		<h3>Vad vill du testa?</h3>
-		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547637703567"><label for="Backup">Backup</label></div>
-		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547637703567"><label for="Storage">Storage</label></div>
-		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547637703567"><label for="Compute">Compute</label></div>
+		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547719761203"><label for="Backup">Backup</label></div>
+    <div class="inputGroup"><input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1547719761203"><label for="Offsite">Offsite Backup</label></div>
+		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547719761203"><label for="Storage">Storage</label></div>
+		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547719761203"><label for="Compute">Compute</label></div>
     <br>
 	</div>
 	<!-- REQUIRED FIELDS -->
