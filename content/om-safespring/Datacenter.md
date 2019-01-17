@@ -2,14 +2,48 @@
 title: "Våra Datacenter"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum arcu non ligula maximus blandit. Nulla ultricies libero et sapien sodales, eu nullam."
+intro: "Våra datacenter matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom våra datacenter drivs till 100 procent med el från förnyelsebara energikällor."
 background: ""
 ---
-## Lorem ipsum dolor sit amet
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ex eu odio consequat molestie a sit amet sem. Praesent non ligula risus. Ut efficitur, mi sit amet porttitor vehicula, nisi enim gravida justo, quis consequat est dui nec velit. In in molestie dolor, sit amet efficitur diam. Nulla ut sem ac dui mattis pretium. Morbi scelerisque massa et enim egestas faucibus. Curabitur vitae consectetur felis, id varius turpis.
 
-Nulla in suscipit turpis. Pellentesque malesuada elit at felis sollicitudin sollicitudin. Nunc nec tellus faucibus, congue ipsum eu, congue felis. Integer aliquet fermentum blandit. Maecenas cursus vulputate tortor eu convallis. Quisque maximus aliquam commodo. Proin eleifend, nulla non feugiat hendrerit, turpis risus rutrum massa, at ultrices nisi nisi sed erat. Curabitur quis hendrerit dui. Nunc consequat, eros non luctus interdum, tortor tortor vehicula nibh, rhoncus mattis lectus quam sit amet sem. Proin at magna malesuada, pellentesque arcu eu, commodo mauris. In aliquam, tellus nec imperdiet tincidunt, augue lorem tempor mi, venenatis feugiat sapien lectus ut lectus.
+## Safespring Stockholm Norr (sto1.safedc.se)
+Datacentret är säkrat och byggt som en byggnad, inom en byggnad. Övervakning med CCTV sker dygnet runt alla dagar i veckan och säkerhetsvakter patrullerar området. Det finns flera åtkomsthinder, inklusive slussar, kontaktlösa nyckelkort och biometriska läsare.
+Hållbarhet
 
-Maecenas ac porttitor justo. Mauris cursus quis enim nec iaculis. Proin eget purus lorem. Nam faucibus accumsan congue. Donec vehicula gravida leo eget commodo. Nunc vitae velit eget ligula tempor rhoncus eget sit amet metus. Sed nisi arcu, molestie a orci vel, imperdiet scelerisque sem. Suspendisse porttitor neque quis nisi dignissim, sed fringilla massa vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus blandit risus. Morbi condimentum pulvinar dictum. Quisque leo leo, vestibulum vel accumsan sit amet, sodales non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc id diam lacinia, vulputate elit in, suscipit ante.
+Interxion i Stockholm och resten av Norden använder enbart 100 procent grön energi, och har gjort det sedan 2012.
 
-Fusce cursus porttitor tortor, sed laoreet ante consequat eget. Maecenas vestibulum gravida laoreet. Nullam id iaculis diam. Etiam ut enim aliquet eros tempor lobortis. Vivamus diam sem, tincidunt ut turpis ultricies.
+Datahallen har sedan 2015 ett unikt projekt tillsammans med Stockholm Exergi (tidigare Fortum Värme) där de  återvinner värme från datacentret till fjärrvärmenätet. Årligen värmen detta upp tusentals lägenheter i Stockholm.
+
+Interxion leder utvecklingen för mer energieffektiva datacenter och genomför löpande förändringar i designen av datacenter, detta inkluderar bland annat: Höjt golvet i datacentren från 60 cm till 120 centimeter för att minska behovet av kylning.
+
+### Ackrediteringar
+- BSI **ISO 22301**	Business Continuity Management
+- BSI **ISO 27001**	Information Security Management
+- AICPA SOC 2	Service Organization Control
+
+## Safespring Stockholm Syd (sto2.safedc.se)
+Vårt datacenter (sto2.safdc.se) matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom datacentret drivs till 100 procent med el från förnyelsebara energikällor och ständigt arbets det med att hitta nya sätt att öka energieffektiviteten.
+
+### Byggstandard
+- Designade för tillgänglighetskrav enligt Tier-3
+- Reservkraftsystem
+- UPS med N+1 eller 2N
+- Kylsystem med N+1 eller 2N
+- Branddetektering med luftanalys
+- Serverhallar med IT-vänliga släcksystem
+- Brandlarm direktkopplat till brandstation
+- Inbrottslarm direktkopplat till larmcentral
+- Övervakning 24/7 av egen NOC
+- Design för 1,2-1,3 i energieffektivitet (PUE)
+- Förberedda för energiåtervinning
+
+## Safespring Oslo (osl1.safedc.se)
+Fastigheten förvärvades av Bulk Eiendom och Akershus Energi som 50/50 partner i november 2014. Parterna samarbetar för att underlätta tillgången av vattenkraftgenererade datacenter till nationella och internationella kunder. Den här fastigheten är det största befintliga datacentret i Norge. Ledande internationella datacenteroperatörer hyr ca. 6 000 m2 i byggnaden. Fastigheten har 22 MW kraftkapacitet installerad och potentialen att expandera för datacenter operatörer är stor. Byggnaden är totalt 25 000 m2 stor.
+
+Oslo Internet Exchange / OS-IX är den största datacenterplatsen i Oslo, och uppgraderas ständigt för att uppfylla de högsta statliga säkerhetsstandarderna.
+
+### Byggstandard
+- Kostnadseffektiv byggkompetens kombinerad med optimal plats för europeisk fiberåtkomst.
+- Datacentrets Campus har internationellt fokus med strategin att följa bästa praxis.
+- Två separata elkällor, vattenkraftverk (30 MW) och tillgång till "National Power Grid Node" (100 MW) gör webbplatsen extremt pålitlig i elavkänning.
+- Flera ryggradsnätledningar passerar platsen, och det finns en kvalificerad lokal utbildad, lokal arbetskraft är också tillgänglig. Ett av de bästa universiteten i Norge, Universitetet i Oslo med mer än 24 000 studenter, ligger nära datacentrets campus.

@@ -36,3 +36,40 @@ Arbetssätt som inbegriper automation och API kan effektivisera och reducera kos
 Kontakta oss för att specificera vilka behov just ni behöver och låt oss se hur vi kan effektivisera ert användande av kapacitetstjänster.
 
 <a href="/kontakt" id="text-button">Kontakta Safespring</a>
+
+## Testa Safespring gratis
+
+<form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	<div class="form">
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
+	</div>
+  <div class="form">
+    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
+	</div>
+  <div class="form">
+    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag...">
+	</div>
+  <div class="form">
+    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
+	</div>
+	<div>
+		<h3>Vad vill du testa?</h3>
+		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547719761203"><label for="Backup">Backup</label></div>
+    <div class="inputGroup"><input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1547719761203"><label for="Offsite">Offsite Backup</label></div>
+		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547719761203"><label for="Storage">Storage</label></div>
+		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547719761203"><label for="Compute">Compute</label></div>
+    <br>
+	</div>
+	<!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<button type="submit" class="button">Skapa demokonto</button>
+</form>
+<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>

@@ -1,7 +1,7 @@
 ---
 title: "Utbildning"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum arcu non ligula maximus blandit. Nulla ultricies libero et sapien sodales, eu nullam."
 background: "safespring_bilder_8.jpg"
 ---
