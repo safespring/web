@@ -1,7 +1,7 @@
 ---
 title: "Musik- och Teaterbiblioteket"
 date: 2019-01-10T16:59:47+01:00
-draft: false
+draft: true
 intro: "En lokal filserver (NAS) används för att lagra masterdata som synkroniseras med Safesprings lagringslösning, orkesterat av den befintliga interna backuplösningen."
 background: "safespring_bilder_musik-och-teaterbiblioteket.jpg"
 socialmedia: ""

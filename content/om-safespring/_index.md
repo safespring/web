@@ -9,7 +9,7 @@ Som man kan gissa på vårt namn är <strong>säkerhet är något vi brinner fö
 Ytterligare en viktig aspekt är att vi är ett svenskt bolag som därigenom inte omfattas av Cloud Act, och kan därför inte tvingas att lämna ut din data till tredje part.
 Exempel på regelverk kan vara GDPR och Arkivlagen.
 
-Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och UNINETT i Norge.
+Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och UNINETT i Norge. <a href="/tjanster" id="text-button">Läs mer om våra tjänster</a>
 
 Utöver kunder inom forskning och högre utbildning har vi kunder bl.a. inom Telecom, Medtech och Edtech som alla värdesätter och förstår vikten hög säkerhet och lokalt producerade tjänster.
 

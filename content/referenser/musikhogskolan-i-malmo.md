@@ -1,7 +1,7 @@
 ---
 title: "Musikhögskolan i Malmö"
 date: 2019-01-06T13:32:28+01:00
-draft: false
+draft: true
 intro: "Musikhögskolan i Malmö (MHM) behövde sätta upp egna system i Safespring Compute, men den centrala IT-policyn krävde att alla system passerade genom centrala brandväggar."
 background: "safespring_bilder_mhm.jpg"
 socialmedia: ""

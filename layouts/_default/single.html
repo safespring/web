@@ -25,7 +25,7 @@
     {{ partial "tack-event.html" . }}
   {{ else if eq $.Params.title "opplev" }}
     {{ partial "opplev.html" . }}
-  {{ else }}{{ end }}
+  {{ else }}
 
 
 {{ partial "head.html" . }}
@@ -51,3 +51,4 @@
     </main>
     <!-- FOOTER -->
     {{ partial "footer.html" . }}
+{{ end }}

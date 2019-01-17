@@ -1,7 +1,6 @@
 
 	{{ partial "head.html" . }}
-	<!-- Google Tag Manager -->
-<body>
+
 		{{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
 	 {{ partial "header.html" . }} <!-- HEADING -->
 	 <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
@@ -25,104 +24,19 @@
 	<main class="content-chalmers">
 		<!-- Main  -->
 		<div class="ch-content">
-			<div class="content-heading">
-			</div>
 			<div class="content-body">
-				<p>Safespring finns lokalt i Sverige och Norge. Huvudkontoret ligger en bit utanför Stockholm i Sverige. För att kontakta någon på Safespring kan du använda dig av länkarna till höger, eller fylla i kontaktformuläret på denna sida.</p>
-				<p>Ring oss gärna för att snabbt komma i kontakt med oss:</p>
-				<a id="link" href="tel:+46705890255‬" style="color: var(--main-color); font-weight:var(--medium-weight);"><div class="partner-container"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 070-589 02 55</div>‬</a>
-				<h2>Skicka ett meddelande</h2>
-				<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
-<style>
-	.twitter-typeahead .tt-hint{color: #6B7C93;}.twitter-typeahead .tt-menu{background-color: #fff;max-height: 300px;overflow: auto;border: 1px solid #66afe9;border-top: none;border-radius: 0 0 4px 4px;width: 100%;margin-top: -2px;}.twitter-typeahead .tt-suggestion{padding: 5px 10px;color: #4B5562;}.twitter-typeahead .tt-suggestion:hover{background-color: #F6F9FB;color: #000;}
-</style>
-<script>
-	jQuery(document).ready(function() {
-	var matchClientsTimeout = null;
-	var matchClients = function(q, sync, cb) {
-	if(matchClientsTimeout) {
-	clearTimeout(matchClientsTimeout);
-	}
-	matchClientsTimeout = setTimeout(function() {
-	$.ajax({
-	type: "GET",
-	url: "https://power.upsales.com/api/external/soliditet/clientSearch?name="+q,
-	success: function(res) {
-	cb(res.data);
-	},
-	error: function(res) {},
-	});
-	}, 200);
-	};
-	var getSuggestTemplate = function(c) {
-	return "<div><div>"+c.name+"</div><span style='color: #6B7C93; font-size: 10px;'>"+c.city+"</span></div>";
-	};
-	var nameField = jQuery("#up-client-name-input");
-	if(nameField.length) {
-	var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
-	var spinner = jQuery("<b id='up-client-spinner' class='fa fa-refresh fa-spin' />");
-	spinner.hide();
-	nameField.after(dunsField);
-	nameField.after(spinner);
-	nameField.typeahead({
-	hint: true,
-	highlight: true,
-	minLength: 3
-	},{
-	name: "clients",
-	limit: 25,
-	source: matchClients,
-	templates: {
-	suggestion: getSuggestTemplate
-	}
-	}).bind("typeahead:autocompleted", function(ev, client) {
-	nameField.typeahead("val", client.name);
-	dunsField.val(client.dunsNo);
-	nameField.blur();}).bind("typeahead:select", function(ev, client) {
-	nameField.typeahead("val", client.name);
-	dunsField.val(client.dunsNo);
-	}).bind("typeahead:cursorchange", function(ev, client) {
-	nameField.typeahead("val", client.name);
-	dunsField.val(client.dunsNo);
-	}).on("typeahead:asyncrequest", function() {
-	spinner.show();
-	}).on("typeahead:asynccancel typeahead:asyncreceive", function() {
-	spinner.hide();
-	});
-	}
-	});
-</script>
-<form id="up-form" name="form_9549u13ba8e3764c345a39c3ae9fc2fc44d6a" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div>
+				<p>Safespring finns lokalt i Sverige och Norge. Huvudkontoret ligger en bit utanför Stockholm i Sverige. För att kontakta någon på Safespring kan du använda dig av länkarna till höger, eller fylla i kontaktformuläret på denna sida. Ring oss gärna för att snabbt komma i kontakt med oss. <br><br><a id="button" href="tel:+46705890255‬"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 070-589 02 55</a></p>
+				<h2>Testa våra tjänster</h2>
+				<p>Vill du testa våra tjänster? Du kan enkelt skapa ett demokonto hos Safespring där du gratis kan testa våra tjänster. Du får tillgång till en pool med resurser som du kan använda som du vill för att utvärdera och testa vår miljö. <a href="#testa-safespring" id="text-button">Skapa konto</a></p>
+				<h2>Följ oss på sociala medier</h2>
+				<p>Aktuella nyheter från oss och branchen uppdateras regelbundet i våra sociala kanaler. Det är också ett enkelt sätt för dig att kommentera och meddela oss om vår verksamhet.</p>
+				<div class="partner-grid">
+				<a href="https://www.linkedin.com/company/safespring/"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_linkedin.png"></div></a>
+				<a href="https://www.facebook.com/Safespring-147994442601302/"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_facebook.png"></div></a>
+				<a href="https://www.youtube.com/channel/UCvMh9YaZWGixXoIwZRRUU8A"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_youtube.png"></div></a>
+				<a href="https://twitter.com/safespring"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_twitter.png"></div></a>
+				</div>
 
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Namn...">
-	</div>
-	<div class="email">
-
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Email...">
-	</div>
-	<div>
-
-		<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Företag...">
-	</div>
-	<div>
-
-		<textarea maxlength="512" rows="3" name="Extra.1528723484035" required="required" placeholder="Meddelande..."></textarea>
-	</div>
-	<div class="form-group" style="display: flex;"><input type="checkbox" required="required" value="on" name="singleOptIn.1539161263967" style="margin: auto 7px auto 0px;"><label>Jag accepterar <a style="color: #fa690f;" href="https://www.safespring.com/dokument/personuppgiftshantering/" target="_blank">villkoren</a></label>
-
-	</div>
-	<!-- REQUIRED FIELDS -->
-	<input type="hidden" name="formCid" value="9549">
-	<input type="hidden" name="formId" value="9549u13ba8e3764c345a39c3ae9fc2fc44d6a">
-	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" id="button">Skicka</button>
-</form>
-<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
 				<div>
 					<h2>Besöksadress Sverige</h2>
 					<p>Smidesvägen 12<br>
@@ -136,6 +50,42 @@
 					Norge</p><br>
 					<iframe frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2299012175845!2d10.633605316302893!3d59.91173178186637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416cfa39be1a6b%3A0x328bf62a2a8f42cc!2sLysaker+Torg+12%2C+1366+Lysaker%2C+Norge!5e0!3m2!1ssv!2sse!4v1530192586614" style="border:0" width="300"></iframe>
 				</div>
+				<h2 id="testa-safespring"> Testa Safespring gratis
+
+				<form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+					<div class="form">
+				    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
+						<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
+					</div>
+				  <div class="form">
+				    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+						<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
+					</div>
+				  <div class="form">
+				    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+						<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag...">
+					</div>
+				  <div class="form">
+				    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
+						<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
+					</div>
+					<div>
+						<h3>Vad vill du testa?</h3>
+						<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547719761203"><label for="Backup">Backup</label></div>
+				    <div class="inputGroup"><input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1547719761203"><label for="Offsite">Offsite Backup</label></div>
+						<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547719761203"><label for="Storage">Storage</label></div>
+						<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547719761203"><label for="Compute">Compute</label></div>
+				    <br>
+					</div>
+					<!-- REQUIRED FIELDS -->
+					<input type="hidden" name="formCid" value="9549">
+					<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
+					<input type="hidden" name="isFrame" value="false">
+					<input type="text" value="" name="validation" style="display: none;">
+					<!-- END OF REQUIRED FIELDS -->
+					<button type="submit" class="button">Skapa demokonto</button>
+				</form>
+				<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
 			</div>
   </div>
 			<!-- SIDEBAR -->
@@ -201,10 +151,6 @@
 				</li>
 			</div>
 			</div>
-		</div>
-
-</div>
-	</main><!-- FOOTER -->
+	</main>
+	<!-- FOOTER -->
 	{{ partial "footer.html" . }}
-</body>
-</html>
