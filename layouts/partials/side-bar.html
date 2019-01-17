@@ -14,14 +14,11 @@
 
   <div class="read-more">
     <h2>Läs mer om:</h2>
-          <li class="content-body">
-      <a href="/safespring-backup">&gt; Backup som tjänst</a>
-    </li>
-    <li class="content-body">
-      <a href="/safespring-storage">&gt; Lagring som tjänst</a>
-    </li>
-    <li class="content-body">
-      <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-    </li>
+      {{ range where (where .Pages "Section" "tjanster" ) ".Title" "!=" "Tack! Vad kul att du vill testa Safesprings tjänster" }}
+      <li class="content-body">
+        <a href="{{ .Permalink }}">&gt; {{ .Title }}</a>
+      </li>
+      {{ end }}
+
   </div>
 </div>
