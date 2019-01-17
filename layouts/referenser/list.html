@@ -22,31 +22,6 @@
 		</div>
 
     <!-- SIDEBAR -->
-		<div class="ch-sidebar">
-			<div><img alt="Safespring Logotyp" src="/img/safespring_cloud.svg"></div>
-			<div>
-				<h2 class="content-heading">Safespring Publikationer</h2>
-				<p class="content-body">Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
-				<div>
-					<a href="/event" id="text-button">Event</a><br>
-					<a href="/blogg" id="text-button">Blogg</a><br>
-					<a href="/whitepaper" id="text-button">White Papers</a>
-				</div><br>
-			</div><a href="/kontakt" id="find-more">KONTAKT</a>
-			<div class="read-more">
-				<h2>Läs mer om:</h2>
-				<ul>
-					<li class="content-body">
-						<a href="/safespring-backup">&gt; Backup som tjänst</a>
-					</li>
-					<li class="content-body">
-						<a href="/safespring-storage">&gt; Lagring som tjänst</a>
-					</li>
-					<li class="content-body">
-						<a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+	{{ partial "side-bar.html" . }}
 	</main><!-- FOOTER -->
 	{{ partial "footer.html" . }}

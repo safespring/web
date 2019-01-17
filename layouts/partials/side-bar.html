@@ -14,7 +14,7 @@
 
   <div class="read-more">
     <h2>Läs mer om:</h2>
-      {{ range where (where .Pages "Section" "tjanster" ) ".Title" "!=" "Tack! Vad kul att du vill testa Safesprings tjänster" }}
+      {{ range .Site.Pages where (where .Pages "Section" "tjanster" ) ".Title" "!=" "Tack! Vad kul att du vill testa Safesprings tjänster" }}
       <li class="content-body">
         <a href="{{ .Permalink }}">&gt; {{ .Title }}</a>
       </li>
