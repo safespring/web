@@ -1,5 +1,5 @@
 ---
-title: "Mjukvarutillverkare"
+title: "Applikationsutvecklare"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Med våra molntjänster kan du antingen producera lösningar där infrastrukturen är delad mellan många kunder, eller där det finns behov på en lösning per kund."

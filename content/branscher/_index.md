@@ -12,5 +12,5 @@ Våra tjänster är mångsidiga och är ett mycket bra fundament för många oli
 - Utbildning / Forskning
 - Myndigheter
 - Kommuner
-- Mjukvarutillverkare
-- IT
+- Applikationsutvecklare
+- IT-leverantörer
