@@ -732,6 +732,7 @@ label.switch-label {
 .partnerlogo {
   height: auto;
   width: 175px;
+  vertical-align: middle;
 }
 
 
