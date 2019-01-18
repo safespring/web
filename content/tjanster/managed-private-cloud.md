@@ -12,3 +12,7 @@ Våra molntjänster är byggda med säkerhet i fokus, men det finns dock en del 
 Vi har stor erfarenhet av att sätta upp och underhålla molnplattformar. Vi vår tjänst Managed Private Cloud installerar och underhåller vi en privat molnplattform i ert datacenter.  Vår spetskompetens inom öppen källkod gör att du kommer få en väldigt prisvärd lösning utan licenskostnader. Vi hanterar ditt privata moln på samma sätt som vår publika molnplattform med vår övervakning och våra drifthanteringsrutiner. Skulle ni vid någon tidpunkt i framtiden vilja hantera lösningen själva så har vi rutiner för att lämna över plattformen i era händer.
 
 Ett exempel på lösning är den vi gjort åt SUNET, där vi satt upp noder för “Managed Private Cloud” på flera Universitet. De har olika skäl till att vilja behålla kontrollen men likartade behov av att spara och behandla stora mängder data. Genom att använda vår kompetens kring molntjänster kan lärosätena på ett mycket effektivt sätt erbjuda en storskalig molnplattform samtidigt som behoven för egen kontroll kan upprätthållas.
+
+### Safespring Private Cloud
+<br>
+<img src="/tjanster/Images/safespring_private_cloud.jpg">

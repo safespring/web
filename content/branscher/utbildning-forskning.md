@@ -9,7 +9,13 @@ Vi har mångårig erfarenhet att arbeta med den akademiska sektorn och har mycke
 
 Våra lösningar gör att forskning och utbildning kan dra nytta av de möjligheter som infrastruktur- och molnlösningar kan ge genom kostnadseffektivitet, flexibilitet och skalbarhet. Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör det möjligt för dig att leva upp till lagar och regler.
 
-Om ni arbetar med högre utbildning eller forskning och är ansluten till SUNET gör vårt ramavtal med Nordunet / SUNET / Uninett att du enkelt kan avropa våra tjänster, utan att göra någon separat upphandling. <Länk till SUNETs sida om molntjänster>
+Om ni arbetar med högre utbildning eller forskning och är ansluten till SUNET gör vårt ramavtal med Nordunet / SUNET / Uninett att du enkelt kan avropa våra tjänster, utan att göra någon separat upphandling.
+
+### läs mer på SUNETS webbplats
+
+- [Backup som tjänst](https://www.sunet.se/tjanster/molnbaserad-backuptjanst/)
+- [Lagring som tjänst](https://www.sunet.se/tjanster/lagring-i-molnet/)
+- [Infrastruktur som tjänst](https://www.sunet.se/tjanster/virtuell-server-i-molnet/)
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 <br><br>
