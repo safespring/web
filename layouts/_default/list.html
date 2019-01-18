@@ -69,6 +69,7 @@
 <div class="ch-content">
   <div class="content-body">
     {{ .Content }}
+    {{ if .Params.form }}{{ partial "form.html" . }}{{ else }}{{ end }}
   </div>
 </div>
 

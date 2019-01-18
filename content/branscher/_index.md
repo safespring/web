@@ -9,8 +9,8 @@ Våra tjänster är mångsidiga och är ett mycket bra fundament för många oli
 
 ### Läs mer under respektive bransch.
 
-- Utbildning / Forskning
-- Myndigheter
-- Kommuner
-- Applikationsutvecklare
-- IT-leverantörer
+- [Utbildning / Forskning](/branscher/utbildning-forskning)
+- [Myndigheter](/branscher/myndigheter)
+- [Kommuner](/branscher/kommuner)
+- [Applikationsutvecklare](/branscher/applikationsutvecklare)
+- [IT-leverantörer](/branscher/it-leverantorer)

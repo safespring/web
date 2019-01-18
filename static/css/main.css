@@ -95,12 +95,14 @@ button {
   font: var(--normal-weight) 15px var(--mon-font);
   line-height: 20px;
   border-radius: 50px;
+  background-color: var(--text-color);
 }
 input[type=text], [type=email] {
     color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
     border: none;
+    background-color: var(--text-color);
 }
 
 textarea {
@@ -543,7 +545,7 @@ label.switch-label {
   display: -ms-grid;
   display: grid;
   grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
-  grid-template-rows: [full-start] minmax(9em, 4fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
+  grid-template-rows: [full-start] minmax(2em, 4fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
 }
 .heading-sub>* {
   grid-column: main;

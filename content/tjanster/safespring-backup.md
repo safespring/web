@@ -4,6 +4,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserad backuptjänst (Backup) behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"
 background: "safespring_bilder_8.jpg"
+form: "yes"
 ---
 ## BACKUP SOM TJÄNST
 Safesprings Backup som tjänst (Backup) är en riktig molnbaserad backuptjänst. Det betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
@@ -16,40 +17,3 @@ Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Ba
 
 ### LÖSNING FÖR OFFSITE BACKUP
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
-
-<h2 id="testa-safespring">Testa Safespring gratis</h2>
-
-<form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div class="form">
-    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
-	</div>
-  <div class="form">
-    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
-	</div>
-  <div class="form">
-    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag...">
-	</div>
-  <div class="form">
-    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
-	</div>
-	<div>
-		<h3>Vad vill du testa?</h3>
-		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547719761203"><label for="Backup">Backup</label></div>
-    <div class="inputGroup"><input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1547719761203"><label for="Offsite">Offsite Backup</label></div>
-		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547719761203"><label for="Storage">Storage</label></div>
-		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547719761203"><label for="Compute">Compute</label></div>
-    <br>
-	</div>
-	<!-- REQUIRED FIELDS -->
-	<input type="hidden" name="formCid" value="9549">
-	<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
-	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" class="button">Skapa demokonto</button>
-</form>
-<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>

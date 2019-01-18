@@ -4,6 +4,7 @@ date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Molntjänster med hög säkerhet! Stabil infrastruktur och resurskonsumering efter behov utan att förlora kontroll över din data."
 background: "safespring_bilder_8.jpg"
+form: "yes"
 ---
 Stabil infrastruktur och resurskonsumering efter behov.
 Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.

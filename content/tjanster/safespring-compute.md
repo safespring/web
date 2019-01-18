@@ -4,6 +4,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserade infrastrukturtjänst  (Compute)  kan du skala upp och ner din infrastruktur efter behov. Levereras ifrån säkra datahallar inom landet."
 background: "safespring_bilder_8.jpg"
+form: "yes"
 ---
 ### VIRTUELLA MASKINER TILL ER TJÄNST
 En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar. <a href="#testa-safespring" id="text-button">Testa Safespring Compute</a>
@@ -32,40 +33,3 @@ OpenStack använder sig av öppna, dokumenterade APIer som gör det enkelt att s
 Vi på Safespring samarbetar också med andra företag inom Linux-communityt för att leverera tjänster. En sådan partner är SUSE som genom sin produkt Container as a Service-plattform gör det väldigt enkelt att sätta upp, och underhålla, ett fullfjädrat Kubernetes-kluster i vår plattform.  
 
 Även om vår plattform är baserad på öppen källkod och Linux så går det naturligtvis att köra Windows på de virtuella maskinerna. Safespring använder underleverantören CloudBase för att erbjuda startklara avbildningar av Windows för att du lätt skall kunna komma igång med dem.
-
-<h2 id="testa-safespring">Testa Safespring gratis</h2>
-
-<form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div class="form">
-    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
-	</div>
-  <div class="form">
-    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
-	</div>
-  <div class="form">
-    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag...">
-	</div>
-  <div class="form">
-    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
-	</div>
-	<div>
-		<h3>Vad vill du testa?</h3>
-		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547719761203"><label for="Backup">Backup</label></div>
-    <div class="inputGroup"><input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1547719761203"><label for="Offsite">Offsite Backup</label></div>
-		<div class="inputGroup"><input id="Storage" type="checkbox" value="Storage" name="Extra.1547719761203"><label for="Storage">Storage</label></div>
-		<div class="inputGroup"><input id="Compute" type="checkbox" value="Compute" name="Extra.1547719761203"><label for="Compute">Compute</label></div>
-    <br>
-	</div>
-	<!-- REQUIRED FIELDS -->
-	<input type="hidden" name="formCid" value="9549">
-	<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
-	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" class="button">Skapa demokonto</button>
-</form>
-<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
