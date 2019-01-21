@@ -1,54 +1,77 @@
 
-<body>
-  {{ if eq $.Params.title "Aktuellt" }}
-    {{ partial "aktuellt.html" . }}
-  {{ else if eq $.Params.title "Chalmers erfarenheter av backup som tjänst" }}
-    {{ partial "chalmers.html" . }}
-  {{ else if eq $.Params.title "Kontakta oss" }}
-    {{ partial "kontakt.html" . }}
-  {{ else if eq $.Params.title "Kundreferenser" }}
-    {{ partial "kundreferenser.html" . }}
-  {{ else if eq $.Params.title "Om oss" }}
-    {{ partial "om-oss.html" . }}
-  {{ else if eq $.Params.title "Pris" }}
-    {{ partial "pris.html" . }}
-  {{ else if eq $.Params.title "Backup som tjänst" }}
-    {{ partial "safespring-backup.html" . }}
-  {{ else if eq $.Params.title "Lagring som tjänst" }}
-    {{ partial "safespring-storage.html" . }}
-  {{ else if eq $.Params.title "Infrastruktur som tjänst" }}
-    {{ partial "safespring-compute.html" . }}
-  {{ else if eq $.Params.title "Support" }}
-    {{ partial "support.html" . }}
-  {{ else if eq $.Params.title "Tack för ditt meddelande" }}
-   {{ partial "tack.html" . }}
-  {{ else if eq $.Params.title "Testa backup som tjänst" }}
-    {{ partial "testa-safespring-backup.html" . }}
-  {{ else if eq $.Params.title "Testa lagring som tjänst" }}
-    {{ partial "testa-safespring-storage.html" . }}
-  {{ else if eq $.Params.title "Testa infrastruktur som tjänst" }}
-    {{ partial "testa-safespring-compute.html" . }}
-  {{ else if eq $.Params.title "Våra tjänster" }}
-    {{ partial "tjanster.html" . }}
-  {{ else if eq $.Params.title "tack-event" }}
-    {{ partial "tack-event.html" . }}
-  {{ else if eq $.Params.title "opplev" }}
-    {{ partial "opplev.html" . }}
-  {{ else }}
-    {{ partial "header.html" . }}
+{{ if eq $.Params.title "Aktuellt" }}
+{{ partial "aktuellt.html" . }}
 
-    <main class="content-main headless">
-      <div>
-        <h1 class="content-heading single-heading">{{ .Title }}</h1>
-        <div class="content-body">{{ .Content }}</div>
-        <div class="content-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+{{ else if eq $.Params.title "Chalmers erfarenheter av backup som tjänst" }}
+{{ partial "chalmers.html" . }}
+
+{{ else if eq $.Params.title "Kontakta oss" }}
+{{ partial "kontakt.html" . }}
+
+{{ else if eq $.Params.title "Kundreferenser" }}
+{{ partial "kundreferenser.html" . }}
+
+{{ else if eq $.Params.title "Pris" }}
+{{ partial "pris.html" . }}
+
+{{ else if eq $.Params.title "Support" }}
+{{ partial "support.html" . }}
+
+{{ else if eq $.Params.title "Tack för ditt meddelande" }}
+{{ partial "tack.html" . }}
+
+{{ else if eq $.Params.title "Testa backup som tjänst" }}
+{{ partial "testa-safespring-backup.html" . }}
+
+{{ else if eq $.Params.title "Testa lagring som tjänst" }}
+{{ partial "testa-safespring-storage.html" . }}
+
+{{ else if eq $.Params.title "Testa infrastruktur som tjänst" }}
+{{ partial "testa-safespring-compute.html" . }}
+
+{{ else if eq $.Params.title "Backup som tjänst" }}
+{{ partial "safespring-backup.html" . }}
+
+{{ else if eq $.Params.title "Lagring som tjänst" }}
+{{ partial "safespring-storage.html" . }}
+
+{{ else if eq $.Params.title "Infrastruktur som tjänst" }}
+{{ partial "safespring-compute.html" . }}
+
+{{ else if eq $.Params.title "Våra tjänster" }}
+{{ partial "tjanster.html" . }}
+
+{{ else if eq $.Params.title "tack-event" }}
+{{ partial "tack-event.html" . }}
+
+{{ else if eq $.Params.title "opplev" }}
+{{ partial "opplev.html" . }}
+
+{{ else }}
+
+
+{{ partial "head.html" . }}
+    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+     {{ partial "header.html" . }}
+
+     <!-- HEADING -->
+     <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
+       <div class="heading-content">
+         {{ .Render "li3" }}
+       </div>
+     </div>
+
+  <!-- CONTENT -->
+  <main class="content-chalmers">
+    <div class="ch-content">
+      <div class="content-body">
+       {{ .Content }}
+       {{ if .Params.form }}{{ partial "form.html" . }}{{ else }}{{ end }}
       </div>
+    </div>
+      <!-- SIDEBAR -->
+      {{ partial "side-bar.html" . }}
     </main>
-
+    <!-- FOOTER -->
     {{ partial "footer.html" . }}
-  <!-- main end -->
-  {{ end }}
-
-</body>
-
-</html>
+{{ end }}
