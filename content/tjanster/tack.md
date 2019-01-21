@@ -18,7 +18,7 @@ På Safesprings youtube-kanal hittar du guider och instruktioner från våra mol
 <div class="partner-grid">
 
 <a href="https://www.youtube.com/channel/UCvMh9YaZWGixXoIwZRRUU8A?view_as=subscriber">
-  <div class="partner-container"><img class="partnerlogo" src="/tjanster/images/logos/safespring_youtube_logo.png">
+  <div class="partner-container"><img class="partnerlogo" src="/tjanster/Images/logos/safespring_youtube_logo.png">
   </div>
 </a>
 <a href="/support">
