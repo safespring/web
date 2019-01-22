@@ -11,5 +11,5 @@ Musikverket har som uppgift att lagra noter, teatermanuskript och koreografidoku
 
 Objektlagringstjänsten Safespring Active Archive visade sig passa perfekt eftersom att tjänsten lämpar sig väl för stora datamängder på filnivå. Safesprings tjänst används som en backuptjänst dit all data synkroniseras med jämna mellanrum, men enskilda filer kan också nås direkt utan återläsning vid behov.
 
-*"Safespring är en mycket pragmatisk och hjälpsam leverantör. Under projektet fick vi mycket hjälp med att sätta upp tjänsten precis som vi ville ha den."
-*– Christer Wandel, IT-ansvarig Musikverket.
+>"Safespring är en mycket pragmatisk och hjälpsam leverantör. Under projektet fick vi mycket hjälp med att sätta upp tjänsten precis som vi ville ha den."
+– Christer Wandel, IT-ansvarig Musikverket.

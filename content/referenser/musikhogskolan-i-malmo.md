@@ -27,5 +27,5 @@ Musikhögskolan i Malmö är ansluten till SUNET genom Lunds universitet, som ha
 
 För att lösa detta beställde MHM Saferoute från Safespring vilket är en dedikerad MPLS-routinginstans via SUNETs nätverk som ger följande fördelar:
 
-IP-adresserna som tillhandahålls till instanserna kommer att vara LDC:s egna adresser, vilket ser till att all trafik till och från instanserna går genom LDC:s brandväggar.
-Ett privat nätverk till instanserna är upprättat så att ingen ytterligare hantering av en tunnel via Internet behövs för att kommunicera mellan servrar på campus och instanser i plattformen.
+- IP-adresserna som tillhandahålls till instanserna kommer att vara LDC:s egna adresser, vilket ser till att all trafik till och från instanserna går genom LDC:s brandväggar.
+- Ett privat nätverk till instanserna är upprättat så att ingen ytterligare hantering av en tunnel via Internet behövs för att kommunicera mellan servrar på campus och instanser i plattformen.
