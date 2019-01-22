@@ -25,5 +25,4 @@ På Safesprings youtube-kanal hittar du guider och instruktioner från våra mol
   <div class="partner-container"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;Safespring support
   </div>
 </a>
-
 </div>

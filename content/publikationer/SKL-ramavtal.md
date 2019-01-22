@@ -14,11 +14,11 @@ ArkivIT:s kompetens inom arkivering och Safesprings infrastruktur baserad på ö
 
 Öppna standarder och öppen källkod är grunden i Archivematica och Safesprings infrastruktur, samt är en standard som rekommenderas bland annat av eu-kommissionen.
 
-*“Givet debatten om IT-säkerhet och utländska molntjänster känns vår lösning som ett tryggt och tidsenligt val. Safespring och ArkivIT:s e-arkivlösning baseras på öppen källkod, öppna standarder och automation för maximal kostnadseffektivitet”*.  – Fredric Wallsten, VD på Safespring
+>“Givet debatten om IT-säkerhet och utländska molntjänster känns vår lösning som ett tryggt och tidsenligt val. Safespring och ArkivIT:s e-arkivlösning baseras på öppen källkod, öppna standarder och automation för maximal kostnadseffektivitet”. – Fredric Wallsten, VD på Safespring
 
 Safesprings säkra och lokala infrastruktur tillsammans med ArkivIT:s applikation för e-arkiv är ett av de kostnadseffektivaste alternativen på marknaden. Kunden betalar ingen licensavgift för e-arkivet utan endast för systemanpassningar och förbrukning av mängden data. Öppen standard och öppen källkod eliminerar dessutom inlåsningseffekten.
 
-”*Ett e-arkiv baserat på väletablerade open source-produkter ger en trygg, säker och långsiktig lösning och med vårt kunnande inom arkiv, informationssäkerhet och systemutveckling kan vi erbjuda skräddarsydda lösningar för varje enskild kunds behov”*. – Daniel Setterwall, VD på ArkivIT.
+>”Ett e-arkiv baserat på väletablerade open source-produkter ger en trygg, säker och långsiktig lösning och med vårt kunnande inom arkiv, informationssäkerhet och systemutveckling kan vi erbjuda skräddarsydda lösningar för varje enskild kunds behov”. – Daniel Setterwall, VD på ArkivIT.
 
 ### Om ArkivIT
 ArkivIT har sedan 2010 erbjudit konsulttjänster inom vårt expertområde digital arkiv- och informationshantering. Vårt fokusområde är bevarande och dokumenthantering, något vi gärna kombinerar med nya tekniska lösningar och framåtskridande verksamhetsutveckling. Vi vill förenkla och effektivisera våra kunders arbete samtidigt som vi gärna bjuder på kompetensutveckling. Våra arkivkonsulter kan hjälpa er med allt från bevarandestrategi till postöppningen, givetvis skräddarsytt utifrån era behov. Därtill har vi tekniska projektledare, utvecklare samt konsulter inom informationssäkerhet och dataskydd.
