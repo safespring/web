@@ -10,3 +10,6 @@ Våra molntjänster är baserade på öppen källkod och öppna standarder med s
 
 ### Managed Private Cloud
 För er som har önskemål om denna funktionalitet erbjuder vi vårt koncept **Managed Private Cloud**. I den lösningen installerar och underhåller vi en privat molnplattform i ert datacenter på er infrastruktur. Vi hanterar ert privata moln på samma sätt som vår publika molnplattform med vår övervakning och våra drifthanteringsrutiner. Skulle ni vid någon tidpunkt i framtiden vilja hantera lösningen själva så har vi rutiner för att lämna över plattformen i era händer.
+<br><br><br>
+
+![Få hjälp med att sätta upp din egen molnmiljö som vi underhåller. Då får du kraften från molnet - i ditt datacenter.](/tjanster/Images/safespring_private_cloud.jpg "Managed Private Cloud")
