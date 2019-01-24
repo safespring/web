@@ -90,31 +90,39 @@ button {
   width: 250px;
   padding: 12px 24px;
   margin: 8px 0;
+  line-height: 20px;
   border: 1px solid var(--main-color);
   color: var(--main-color);
   font: var(--normal-weight) 15px var(--mon-font);
-  line-height: 20px;
   border-radius: 50px;
+  background-color: var(--text-color);
+}
+
+select {
+  border: none;
+  width: 250px;
+  color: var(--main-color);
+  font: var(--normal-weight) 15px var(--mon-font);
   background-color: var(--text-color);
 }
 input[type=text], [type=email] {
     color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
-    line-height: 20px;
     border: none;
     background-color: var(--text-color);
+    width: 215px;
 }
 
 textarea {
-    width: 300px;
-    padding: 12px;
+    width: 250px;
+    padding: 12px 24px;
     margin: 8px 0;
-    background-color: #195F8C;
+    background-color: var(--text-color);
     color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
 }
 
 ::placeholder {

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html class="index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv">
    <head>
+     {{ if .Params.noindex }}
+     <meta name="robots" content="noindex">
+     {{ end }}
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{ .URL  | absURL }}" />

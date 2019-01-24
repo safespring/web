@@ -49,10 +49,13 @@
 
 {{ else }}
 
-
 {{ partial "head.html" . }}
-    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-     {{ partial "header.html" . }}
+{{ partial "g-tag-manager.html" . }}
+{{ if not .Params.navigation }}
+{{ partial "header.html" . }}
+{{ end }}
+     <!-- NAVBAR -->
+
 
      <!-- HEADING -->
      <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
