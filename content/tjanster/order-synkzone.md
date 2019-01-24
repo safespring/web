@@ -26,7 +26,6 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 		<input maxlength="512" type="text" name="Client.webpage" required="required" placeholder="Webbplats">
 	</div>
 <h3>1. Företagets kontakt</h3>
-<p>Er kommersiella kontaktperson/referens på fakturan</p>
 	<div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Extra.1548340803760" required="required" required="required" placeholder="Namn">
 	</div>
@@ -37,7 +36,6 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 		<input maxlength="512" type="text" name="Extra.1548340812473" placeholder="E-post">
 	</div>
 <h3>2. Administratör och driftansvarig</h3>
-<p>Admin-kontot kommer kopplas till denna person, som också blir primär kontaktperson vid eventuella driftstörningar och för återskapande av förlorade lösenord.</p>
 	<div class="form"><i class="fas fa-user-cog"></i>&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Namn">
 	</div>
@@ -47,8 +45,7 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 	<div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="E-mail">
 	</div>
-<h3>2. Säkerhetsansvarig</h3>
-<p>(Om inte samma som ovan)</p>
+<h3>2. Säkerhetsansvarig (Om ej samma som ovan)</h3>
 	<div class="form"><i class="fas fa-user-shield"></i>&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Extra.1548340878741" required="required" placeholder="Namn">
 	</div>
