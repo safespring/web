@@ -9,6 +9,66 @@ pageimage: "safespring_synkzone-by-safespring_social.jpg"
 ## Enkel och säker fildelning
 Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation krypterat, lokalt och snabbt. Med versionshantering, chatt och loggning har ni kontroll över filerna och hur de uppdateras.
 
+<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+<style>
+  .twitter-typeahead .tt-hint{color: #999;}.twitter-typeahead .tt-menu{background-color: #fafefe;max-height: 300px;overflow: auto;border: 1px solid #195F8C;border-top: none;border-radius: 0 0 25px 25px;width: 300px;margin: -10px;}.twitter-typeahead .tt-suggestion{padding: 5px 10px;color: #666;}.twitter-typeahead .tt-suggestion:hover{background-color: #fafefe;color: #000;}
+</style>
+<script>
+  jQuery(document).ready(function() {
+  var matchClientsTimeout = null;
+  var matchClients = function(q, sync, cb) {
+  if(matchClientsTimeout) {
+  clearTimeout(matchClientsTimeout);
+  }
+  matchClientsTimeout = setTimeout(function() {
+  $.ajax({
+  type: "GET",
+  url: "https://power.upsales.com/api/external/soliditet/clientSearch?name="+q,
+  success: function(res) {
+  cb(res.data);
+  },
+  error: function(res) {},
+  });
+  }, 200);
+  };
+  var getSuggestTemplate = function(c) {
+  return "<div><div>"+c.name+"</div><span style='color: #999; font-size: 10px;'>"+c.city+"</span></div>";
+  };
+  var nameField = jQuery("#up-client-name-input");
+  if(nameField.length) {
+  var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
+  var spinner = jQuery("<b id='up-client-spinner' class='fa fa-refresh fa-spin' />");
+  spinner.hide();
+  nameField.after(dunsField);
+  nameField.after(spinner);
+  nameField.typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 3
+  },{
+  name: "clients",
+  limit: 25,
+  source: matchClients,
+  templates: {
+  suggestion: getSuggestTemplate
+  }
+  }).bind("typeahead:autocompleted", function(ev, client) {
+  nameField.typeahead("val", client.name);
+  dunsField.val(client.dunsNo);
+  nameField.blur();}).bind("typeahead:select", function(ev, client) {
+  nameField.typeahead("val", client.name);
+  dunsField.val(client.dunsNo);
+  }).bind("typeahead:cursorchange", function(ev, client) {
+  nameField.typeahead("val", client.name);
+  dunsField.val(client.dunsNo);
+  }).on("typeahead:asyncrequest", function() {
+  spinner.show();
+  }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
+  spinner.hide();
+  });
+  }
+  });
+</script>
 <form id="up-form" name="form_9549u2dceed11b77a45cb8128be76c12634a0" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 <h2>Företag</h2>
   <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;

@@ -5,7 +5,6 @@ draft = false
 tags = ["nyhetsbrev, backup, compute"]
 showthedate = false
 +++
-
 Godt nytt år! Vi vil med dette nyhetsbrevet dele et par nyheter fra Safespring:
 
 Vi har laget en guide for å bistå ved valg av backuptjeneste. Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv.
@@ -13,8 +12,6 @@ Vi har laget en guide for å bistå ved valg av backuptjeneste. Våre backuptjen
 Dessuten er Safespring fra i høst parter med Microsoft,
 og vi kan dermed tilby imager med Windows Server operativsystem i
 compute-plattformen.
-
-<!--more-->
 
 ## Safespring Backup
 

@@ -68,11 +68,11 @@ Privacy Shield adresserar en del av bristerna i Safe Harbor, men inte alla[(17)]
 ## 2018
 2018-04-12: Irländska domstolen kommer vidare med Schrems 2.0 och hänvisar sina frågor till EU-domstolen efter en överklagan från Facebook nekats. Schrems kommenterar:
 
-*"The question in this case does not seem to be if Facebook can win it, but to what extent the Court of Justice will prohibit Facebook’s EU-US data transfers."*
+>"The question in this case does not seem to be if Facebook can win it, but to what extent the Court of Justice will prohibit Facebook’s EU-US data transfers."
 
 He added that, in the long-term, “the only reasonable solution is to cut back on mass surveillance laws”. If such a solution isn’t available between the EU and US, he said,
 
-*“Facebook would have to split global and US services in two systems and keep European data outside of reach for US authorities, or face billions in penalties under the upcoming EU data protection regulation”*[(18)](https://www.theregister.co.uk/2018/04/12/schrems_facebook_data_flow_eu_us_cjeu_questions/ "Rebecca Hill, The Register").
+>“Facebook would have to split global and US services in two systems and keep European data outside of reach for US authorities, or face billions in penalties under the upcoming EU data protection regulation”[(18)](https://www.theregister.co.uk/2018/04/12/schrems_facebook_data_flow_eu_us_cjeu_questions/ "Rebecca Hill, The Register").
 
 2018-03-23: CLOUD Act passerar som lag. Lagen gör bland annat ett tillägg till amerikanska "Stored Communications Act" som möjliggör för amerikanska bolag att utlämna information oavsett var den är lagrad, utan någon hänsyn till det eventuella andra landets lagstiftning.
 

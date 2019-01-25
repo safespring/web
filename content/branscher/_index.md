@@ -7,7 +7,7 @@ background: "safespring_bilder_10.jpg"
 ---
 Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar och har därför erfarenhet av många olika branscher och sektorer.
 
-### Läs mer under respektive bransch.
+### Läs mer under respektive bransch
 
 - [Utbildning / Forskning](/branscher/utbildning-forskning)
 - [Myndigheter](/branscher/myndigheter)
