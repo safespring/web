@@ -3,7 +3,8 @@ title: "Synkzone by Safespring"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Lokal fildelningstjänst där data stannar inom landet. Med s.k. zero knowledge kan varken vi som operatör av tjänsten eller någon annan läsa era filer."
-background: "safespring_bilder_8.jpg"
+background: "safespring_synkzone-by-safespring_background.jpg"
+pageimage: "safespring_synkzone-by-safespring_social.jpg"
 ---
 ## Enkel och säker fildelning
 Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation krypterat, lokalt och snabbt. Med versionshantering, chatt och loggning har ni kontroll över filerna och hur de uppdateras.
