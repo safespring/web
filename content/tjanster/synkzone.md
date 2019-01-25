@@ -20,7 +20,7 @@ Med s.k. **zero knowledge** kan varken vi som operatör av tjänsten eller någo
 Synkzone innehåller också ett avancerad skydd mot s.k. ransomware som automatiskt kan detektera ransomware attacker, isolera infekterade datorer och återställa era filer.
 
 <br><br>
-<a href="/tjanster/bestall-synkzone/" id="button">Beställ Synkzone</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="text-button">Läs support-dokumentation</a>
+<a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="text-button">Läs support-dokumentation</a>
 
 ## Enkelhet
 I Synkzone så kan en verksamhet delas upp i en eller flera zoner, där en zon representerar ett projekt, en avdelning, eller något annat som en grupp användare samarbetar kring. Bara medlemmar i en zon har tillgång till zonens innehåll. Zonen skyddar dokument mot att obehöriga kan komma åt dem, skyddet omfattar även obehöriga inom organisationen som inte kan läsa känsliga dokument som t.ex. anställningsvillkor, kontrakt eller andra dokument. En zon kan också omfatta extern personal som behöver arbeta tillsammans med er organisation som t.ex. tillfälliga konsulter, revisorer, patentbyråer, kunder, samarbetspartners eller jurister.
