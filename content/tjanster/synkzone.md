@@ -21,7 +21,7 @@ Med s.k. **zero knowledge** krypteras data direkt på användarnas datorer. Det 
 Synkzone innehåller också ett avancerat skydd mot s.k. ransomware som automatiskt kan detektera ransomware attacker, isolera infekterade datorer och återställa era filer.
 
 <br><br>
-<div style="float:left; margin:0px 20px 20px 0px;"><a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a></div><div style="float:left;"><a href="#" id="text-button">Läs FAQ</a></div>
+<div style="float:left; margin:0px 20px 20px 0px;"><a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a></div><div style="float:left;"><a href="https://docs.safespring.com/synkzone/general-info/" id="text-button">Läs FAQ</a></div>
 <br><br>
 
 ## Enkelhet
@@ -52,5 +52,5 @@ Samarbete inom en organisation är ofta baserat på utbyte av information som la
 - Vid behov kan vi erbjuda möjlighet till extra lagringsservrar i era lokaler (fråga oss om vårt hybrid erbjudande).
 
 <br><br>
-<div style="float:left; margin:0px 20px 20px 0px;"><a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a></div><div style="float:left;"><a href="#" id="text-button">Läs FAQ</a></div>
+<div style="float:left; margin:0px 20px 20px 0px;"><a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a></div><div style="float:left;"><a href="https://docs.safespring.com/synkzone/general-info/" id="text-button">Läs FAQ</a></div>
 <br><br>

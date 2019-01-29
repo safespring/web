@@ -9,9 +9,6 @@ form: "yes"
 Objektlagring är en helt internetbaserad lagring. Filerna kan laddas upp och ned från vår infrastruktur med klientprogramvara eller med många av de bibliotek till olika programmeringsspråk som finns skrivna. Objektlagring är optimalt för lösningar där du kommer att behöva lagra ett stort antal filer till en låg kostnad.
 <a href="#testa-safespring" id="text-button">Testa Safespring Storage</a>
 
-## LAGRING SOM TJÄNST
-Genom att välja Safesprings molnlagring kan du köpa lagring baserat på faktiska behov och användningsmönster. Molnlagring är flexibelt att sätta upp, istället för att spendera veckor och månader på att installera komplicerad infrastruktur kan den behövda kapaciteten göras tillgänglig inom några minuter. Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet.
-
 ## SÄKRA DATAHALLAR INOM LANDETS GRÄNSER
 Tjänsten levereras ifrån säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett svenskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
 
