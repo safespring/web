@@ -110,7 +110,7 @@ input[type=text], [type=email] {
     font: var(--normal-weight) 15px var(--mon-font);
     border: none;
     background-color: var(--text-color);
-    width: 215px;
+    width: 200px;
 }
 
 textarea {
@@ -383,7 +383,11 @@ label.switch-label {
   padding: 20px 0px 0px 30px;
   float:left;
 }
-
+.menu-item:active svg {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
 
 .menu-item ul {
   padding: 0px 0px 0px 0px;

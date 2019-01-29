@@ -86,7 +86,7 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 	<div class="form"><i class="fas fa-globe"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Client.webpage" required="required" placeholder="Webbplats">
 	</div>
-<h3>1. Företagets kontakt</h3>
+<h3>1. Företagets kommersiella kontakt</h3>
 	<div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Extra.1548340803760" required="required" required="required" placeholder="Namn">
 	</div>
@@ -119,14 +119,14 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 <h2>Underlag för igångsättning</h2>
 <div class="form">
   <select name="Extra.1548342479459">
-<option value="Ja">Webbaccess påkopplad: Ja</option>
-<option value="Nej">Webbaccess påkopplad: Nej</option>
+<option value="Ja">Webbaccess? Ja</option>
+<option value="Nej">Webbaccess? Nej</option>
 </select>
 </div>
 <div class="form">
   <select name="Extra.1548342504164">
-<option value="Nej">Önskar egen webbserver? Nej</option>
-<option value="Ja">Önskar egen webbserver? Ja</option>
+<option value="Nej">Egen webbserver? Nej</option>
+<option value="Ja">Egen webbserver? Ja</option>
 </select>
 </div>
 	<!-- REQUIRED FIELDS -->
