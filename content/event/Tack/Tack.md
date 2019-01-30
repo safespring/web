@@ -1,5 +1,5 @@
 ---
-title: "Tack! Din biljett kommer snart skickas till din mail-adress"
+title: "Tack! Din biljett kommer snart skickas till din mailadress"
 draft: false
 author: ""
 dokumentnamn: ""
@@ -15,7 +15,7 @@ tack: "."
 ---
 
 ## Vad händer nu?
-Snart kommer din biljett skickas till den mailadress du angav. Om du inte får din biljett inom 24 timmar så kontakt oss gärna på vår mailadress:
+Snart kommer din biljett skickas till den mailadress du angav. Om du inte får din biljett inom 24 timmar så kontakta oss gärna på vår mailadress:
 
 <a href="mailto:event@safespring.se" id="text-button">event@safespring.se</a>
 

@@ -6,12 +6,14 @@ intro: "Lokal fildelningstjänst där data stannar inom landet. Med s.k. zero kn
 background: "safespring_synkzone-by-safespring_background.jpg"
 pageimage: "safespring_synkzone-by-safespring_social.jpg"
 ---
-## Enkel och säker fildelning
+## Nästa generations molnteknologi med "zero knowledge"
 Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation krypterat, lokalt och snabbt. Med versionshantering, chatt och loggning har ni kontroll över filerna och hur de uppdateras.
 
 Synkzone är ett alternativ till både traditionella filservrar och molnbaserade fillagringstjänster. Ni slipper sköta och underhålla en egen filserver, eller sprida er data på ospecificerade platser i molnet ihop med data från alla möjliga håll. Istället lagras era filer på servrar som är unika för din organisation men som sköts av Safespring.
 
->Synkzone ser till att ni kan arbeta gemensamt, effektivt och säkert oavsett vilka datorer ni har eller vilket nätverk ni befinner er på. Det som särskilt utmärker Synkzone är ett fokus på hög säkerhet, tillgänglighet, och ett unikt samarbetsstöd.
+Det som särskilt utmärker Synkzone är ett fokus på hög säkerhet, tillgänglighet, och ett unikt samarbetsstöd.
+
+<p class="quote">Synkzone ser till att ni kan arbeta gemensamt, effektivt och säkert oavsett vilka datorer ni har eller vilket nätverk ni befinner er på.</p>
 
 ### Med ”zero knowledge” kan ingen utomstående läsa era filer
 Synkzone erbjuder en av marknadens säkraste lösningar för filhantering. Er organisations filer lagras på en egen specifik server i högklassigt datacenter i Sverige. Drift och underhåll av servern ingår i tjänsten.
@@ -37,7 +39,6 @@ Samarbete inom en organisation är ofta baserat på utbyte av information som la
 - **Chat:** Användare kan skriva meddelanden till varandra i en chatt.
 - **Versionshantering:** Filer sparas i versioner med enkel återställning.
 - **Fillås:** Användare kan låsa filer för exklusiv åtkomst.
-- **Nedladdningslänkar via e-mail:** Enkel extern delning via privata länkar.
 - **Arkivering:** Filer kan arkiveras på din dator så att de inte tar upp någon plats.
 
 ## FAKTA
@@ -45,11 +46,9 @@ Samarbete inom en organisation är ofta baserat på utbyte av information som la
 - Varje fil är individuellt krypterad med AES-256, godkänt av NSA för skydd av information klassad som TOP SECRET.
 - Synkzone är ett s.k. zero knowledge system där all kryptering sker på användarnas datorer. Endast de som anses behöriga har tillgång till de kryptonycklar som är nödvändiga för att läsa filerna. Ingen annan part som t.ex. operatör, ”hackers”, myndigheter eller vi som tjänsteleverantör kan komma åt filerna i klartext.
 - Synkzone har inbyggt stöd för skydd mot ransomware attacker.
-- Synkzone har unikt system för att flytta och lagra filer och stödjer direkt samverkan och överföring alla datorer emellan, resultatet är extra hög tillgänglighet och snabba överföringar.
 - Synkzone säljs som en tjänst där varje kund har egen server. Hosting och drift ingår som en del i tjänsten.
 - Synkzone finns för Windows och Mac OS samt går att komma åt via webbläsare.
 - Servrarna är placerade i förstklassiga datacenters i Sverige för högsta tillgänglighet.
-- Vid behov kan vi erbjuda möjlighet till extra lagringsservrar i era lokaler (fråga oss om vårt hybrid erbjudande).
 
 <br><br>
 <div style="float:left; margin:0px 20px 20px 0px;"><a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a></div><div style="float:left;"><a href="https://docs.safespring.com/synkzone/general-info/" id="text-button">Läs FAQ</a></div>

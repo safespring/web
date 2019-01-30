@@ -7,7 +7,7 @@ background: "safespring_synkzone-by-safespring_background.jpg"
 pageimage: "safespring_synkzone-by-safespring_social.jpg"
 ---
 ## Enkel och säker fildelning
-Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation krypterat, lokalt och snabbt. Med versionshantering, chatt och loggning har ni kontroll över filerna och hur de uppdateras.
+Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation krypterat, lokalt och snabbt. Med versionshantering, chatt och loggning har ni kontroll över filerna och hur de uppdateras. <a href="/tjanster/synkzone/" id="text-button">Läs mer</a>
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
