@@ -5,6 +5,8 @@ draft: false
 intro: "Lokal fildelningstjänst där data stannar inom landet. Med s.k. zero knowledge kan varken vi som operatör av tjänsten eller någon annan läsa era filer."
 background: "safespring_synkzone-by-safespring_background.jpg"
 pageimage: "safespring_synkzone-by-safespring_social.jpg"
+sidebarlinkname: "Ladda ner produktblad"
+sidebarlinkurl: "/marketing/safespring-synkzone-web.pdf"
 ---
 ## Nästa generations molnteknologi med "zero knowledge"
 Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation krypterat, lokalt och snabbt. Med versionshantering, chatt och loggning har ni kontroll över filerna och hur de uppdateras.

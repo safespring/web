@@ -5,6 +5,8 @@ draft: false
 intro: "Med Safesprings molnbaserade infrastrukturtjänst  (Compute)  kan du skala upp och ner din infrastruktur efter behov. Levereras ifrån säkra datahallar inom landet."
 background: "safespring_bilder_8.jpg"
 form: "yes"
+sidebarlinkname: "Ladda ner produktblad"
+sidebarlinkurl: "/marketing/safespring-compute-web.pdf"
 ---
 ## VIRTUELLA MASKINER TILL ER TJÄNST
 **En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar**

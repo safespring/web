@@ -8,7 +8,10 @@
     {{ .Title }}
   </h1>
   <div class="content-summary-blogg">
-    {{ .Params.intro }}
+    {{ .Params.intro }}</br></br>
+    {{ if .Params.sidebarlinkurl }}
+    <div><a href="{{ .Params.sidebarlinkurl }}" id="text-button">{{ .Params.sidebarlinkname }}</a></div>
+    {{ end }}
   </div>
   <br>
   <br>
