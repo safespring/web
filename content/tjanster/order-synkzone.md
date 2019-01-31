@@ -11,7 +11,34 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
-  .twitter-typeahead .tt-hint{color: #999;}.twitter-typeahead .tt-menu{background-color: #fafefe;max-height: 300px;overflow: auto;border: 1px solid #195F8C;border-top: none;border-radius: 0 0 25px 25px;width: 300px;margin: -10px;}.twitter-typeahead .tt-suggestion{padding: 5px 10px;color: #666;}.twitter-typeahead .tt-suggestion:hover{background-color: #fafefe;color: #000;}
+  .twitter-typeahead .tt-hint {
+    color: #195F8C;
+  }
+  .twitter-typeahead .tt-menu {
+    max-height: 300px;
+    overflow: auto;
+    border: 1px solid #195F8C;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+    width: 298px;
+    margin: -7px 0 0 -52px;
+  }
+  .twitter-typeahead .tt-suggestion {
+    background-color: #fafefe;
+    padding: 5px 10px;
+    color: #323232;
+  }
+  .tt-suggestion:first-child {
+    margin: 7px 0 0 0;
+    padding-top:10px;
+  }
+  .tt-suggestion:last-child {
+    padding-bottom:20px;
+  }
+  .twitter-typeahead .tt-suggestion:hover {
+    background-color: #fafefe;
+    color: #195F8C;
+}
 </style>
 <script>
   jQuery(document).ready(function() {
@@ -32,7 +59,7 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
   }, 200);
   };
   var getSuggestTemplate = function(c) {
-  return "<div><div>"+c.name+"</div><span style='color: #999; font-size: 10px;'>"+c.city+"</span></div>";
+  return "<div><div>"+c.name+"</div><span style='color: #323232; font-size: 10px;'>"+c.city+"</span></div>";
   };
   var nameField = jQuery("#up-client-name-input");
   if(nameField.length) {
