@@ -1,114 +1,42 @@
 
 	{{ partial "head.html" . }}
-	<!-- Google Tag Manager -->
-<body>
+
 		{{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
 	 {{ partial "header.html" . }} <!-- HEADING -->
-	 <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_9.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
-		<div class="heading-content">
-			<h1>{{ .Title }}</h1>
-		</div>
-	</div><!-- HEADING -->
+	 <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
+	 	<div class="heading-content">
+			<div class="content-meta-post">
+			</div>
+			<br>
+			<h1 class="post-heading-firstpage">
+				Kontakta Safespring
+			</h1>
+			<div class="content-summary-blogg">
+				Kul att du vill komma i kontakt med oss! Här hittar du förhoppningsvis en kanal som passar dig!
+			</div>
+			<br>
+			<br>
+	 	</div>
+	 </div>
+
+	<!-- HEADING -->
 	<!-- CONTENT -->
 	<main class="content-chalmers">
 		<!-- Main  -->
 		<div class="ch-content">
-			<div class="content-heading">
-				<h2>{{ .Title }}</h2>
-			</div>
 			<div class="content-body">
-				<p>Safespring finns lokalt i Sverige och Norge. Huvudkontoret ligger en bit utanför Stockholm i Sverige. För att kontakta någon på Safespring kan du använda dig av länkarna till höger, eller fylla i kontaktformuläret på denna sida.</p>
-				<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
-<style>
-	.twitter-typeahead .tt-hint{color: #6B7C93;}.twitter-typeahead .tt-menu{background-color: #fff;max-height: 300px;overflow: auto;border: 1px solid #66afe9;border-top: none;border-radius: 0 0 4px 4px;width: 100%;margin-top: -2px;}.twitter-typeahead .tt-suggestion{padding: 5px 10px;color: #4B5562;}.twitter-typeahead .tt-suggestion:hover{background-color: #F6F9FB;color: #000;}
-</style>
-<script>
-	jQuery(document).ready(function() {
-	var matchClientsTimeout = null;
-	var matchClients = function(q, sync, cb) {
-	if(matchClientsTimeout) {
-	clearTimeout(matchClientsTimeout);
-	}
-	matchClientsTimeout = setTimeout(function() {
-	$.ajax({
-	type: "GET",
-	url: "https://power.upsales.com/api/external/soliditet/clientSearch?name="+q,
-	success: function(res) {
-	cb(res.data);
-	},
-	error: function(res) {},
-	});
-	}, 200);
-	};
-	var getSuggestTemplate = function(c) {
-	return "<div><div>"+c.name+"</div><span style='color: #6B7C93; font-size: 10px;'>"+c.city+"</span></div>";
-	};
-	var nameField = jQuery("#up-client-name-input");
-	if(nameField.length) {
-	var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
-	var spinner = jQuery("<b id='up-client-spinner' class='fa fa-refresh fa-spin' />");
-	spinner.hide();
-	nameField.after(dunsField);
-	nameField.after(spinner);
-	nameField.typeahead({
-	hint: true,
-	highlight: true,
-	minLength: 3
-	},{
-	name: "clients",
-	limit: 25,
-	source: matchClients,
-	templates: {
-	suggestion: getSuggestTemplate
-	}
-	}).bind("typeahead:autocompleted", function(ev, client) {
-	nameField.typeahead("val", client.name);
-	dunsField.val(client.dunsNo);
-	nameField.blur();}).bind("typeahead:select", function(ev, client) {
-	nameField.typeahead("val", client.name);
-	dunsField.val(client.dunsNo);
-	}).bind("typeahead:cursorchange", function(ev, client) {
-	nameField.typeahead("val", client.name);
-	dunsField.val(client.dunsNo);
-	}).on("typeahead:asyncrequest", function() {
-	spinner.show();
-	}).on("typeahead:asynccancel typeahead:asyncreceive", function() {
-	spinner.hide();
-	});
-	}
-	});
-</script>
-<form id="up-form" name="form_9549u13ba8e3764c345a39c3ae9fc2fc44d6a" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div>
-
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Namn...">
-	</div>
-	<div class="email">
-
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Email...">
-	</div>
-	<div>
-
-		<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Företag...">
-	</div>
-	<div>
-
-		<textarea maxlength="512" rows="3" name="Extra.1528723484035" required="required" placeholder="Meddelande..."></textarea>
-	</div>
-	<div class="form-group" style="display: flex;"><input type="checkbox" required="required" value="on" name="singleOptIn.1539161263967" style="margin: auto 7px auto 0px;"><label>Jag accepterar <a style="color: #fa690f;" href="https://www.safespring.com/dokument/personuppgiftshantering/" target="_blank">villkoren</a></label>
-
-	</div>
-	<!-- REQUIRED FIELDS -->
-	<input type="hidden" name="formCid" value="9549">
-	<input type="hidden" name="formId" value="9549u13ba8e3764c345a39c3ae9fc2fc44d6a">
-	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" id="button">Skicka</button>
-</form>
-<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
+				<p>Safespring har verksamhet i Sverige och i Norge med huvudkontor i Solna. Enklast kommer du i kontakt med oss via telefon eller mail. För generella frågor kan du med fördel ringa oss eller skicka ett mail vår info-adress,
+men du är naturligtvis även välkommen att kontakta någon av våra medarbetare direkt, du finner kontaktinformationen till höger. <br><br><a id="button" href="tel:+46705890255‬"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 070-589 02 55</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="text-button" href="mailto:info@safespring.com‬"><i class="fas fa-envelope fa-flip-horizontal" data-fa-transform="shrink-5"></i> info@safespring.com</a></p>
+				<h2>Testa våra tjänster</h2>
+				<p>Vill du testa våra tjänster? Du kan enkelt skapa ett demokonto hos Safespring där du gratis kan testa våra tjänster. Du får tillgång till en pool med resurser som du kan använda som du vill för att utvärdera och testa vår miljö. <a href="#testa-safespring" id="text-button">Skapa konto</a></p>
+				<h2>Följ oss på sociala medier</h2>
+				<p>Aktuella nyheter från oss och branchen uppdateras regelbundet i våra sociala kanaler. Det är också ett enkelt sätt för dig att kommentera och meddela oss om vår verksamhet.</p>
+				<div class="partner-grid">
+				<a href="https://www.linkedin.com/company/safespring/"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_linkedin.png"></div></a>
+				<a href="https://www.facebook.com/Safespring-147994442601302/"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_facebook.png"></div></a>
+				<a href="https://www.youtube.com/channel/UCvMh9YaZWGixXoIwZRRUU8A"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_youtube.png"></div></a>
+				<a href="https://twitter.com/safespring"><div class="partner-container"><img class="partnerlogo" src="/img/logos/safespring_twitter.png"></div></a>
+				</div>
 				<div>
 					<h2>Besöksadress Sverige</h2>
 					<p>Smidesvägen 12<br>
@@ -122,6 +50,7 @@
 					Norge</p><br>
 					<iframe frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2299012175845!2d10.633605316302893!3d59.91173178186637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416cfa39be1a6b%3A0x328bf62a2a8f42cc!2sLysaker+Torg+12%2C+1366+Lysaker%2C+Norge!5e0!3m2!1ssv!2sse!4v1530192586614" style="border:0" width="300"></iframe>
 				</div>
+				{{ partial "form.html" . }}
 			</div>
   </div>
 			<!-- SIDEBAR -->
@@ -130,7 +59,7 @@
 				<div>
 					<img alt="Fredric Wallsten, VD, Försäljningschef Norge" src="/img/kontakt/fredric-wallsten.png">
 					<h2>Fredric Wallsten</h2>
-					<p>VD, Försäljningschef Norge<br>
+					<p>VD Sverige & Norge<br>
 					<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a><br>
 					<a href="tel:+46766292502">‭+46 76-629 25 02</a></p>
 				</div><!-- JOHAN EDEVÅG -->
@@ -142,6 +71,26 @@
 					<a href="tel:+46705890255">+46 70-589 02 55‬</a></p>
 				</div><!-- MARCUS BOBEG -->
 				<div>
+					<img alt="Mikael Schütt, Vice VD" src="/img/kontakt/mikael-schutt.png">
+					<h2>Mikael Schütt</h2>
+					<p>Styrelseordförande / Vice VD<br>
+					<a href="mailto:mikael.schutt@safespring.se">mikael.schutt@safespring.se</a><br>
+					<a href="tel:+46730935070‬‬">+46 73-093 50 70‬‬</a></p>
+				</div>
+				<div>
+					<img alt="Gabriel Paues, Cloud Architect" src="/img/kontakt/gabriel-paues.png">
+					<h2>Gabriel Paues</h2>
+					<p>Cloud Architect<br>
+					<a href="mailto:gabriel.paues@safespring.se">gabriel.paues@safespring.se</a><br>
+					<a href="tel:‭+46762770776‬">‭+46 76-277 07 76‬‬</a></p>
+				</div>
+				<div>
+					<img alt="Jan Ivar Beddari, CTO" src="/img/kontakt/jan-ivar-beddari.png">
+					<h2>Jan Ivar Beddari</h2>
+					<p>CTO<br>
+					<a href="mailto:beddari@safespring.com">beddari@safespring.com</a><br>
+				</div>
+				<div>
 					<img alt="Marcus Boberg, Informations- och Marknadsansvarig" src="/img/kontakt/marcus-boberg.png">
 					<h2>Marcus Boberg</h2>
 					<p>Informations- och Marknadsansvarig<br>
@@ -152,29 +101,20 @@
 					<br>
 					<br>
 				</div>
-				<div>
-					<a href="mailto:sales@safespring.se" id="button">SÄLJAVDELNINGEN</a>
-				</div><br><br><br>
-				<div>
-					<a href="mailto:media@safespring.se" id="button">INFO-AVDELNINGEN</a>
-			</div><br><br>
-			<div class="read-more">
-				<h2>Läs mer om:</h2>
-				<li class="content-body">
-					<a href="/safespring-storage">&gt; Lagring som tjänst</a>
-				</li>
-				<li class="content-body">
-					<a href="/safespring-backup">&gt; Backup som tjänst</a>
-				</li>
-				<li class="content-body">
-					<a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-				</li>
-			</div>
-			</div>
-		</div>
+					<div id="button"><a href="mailto:sales@safespring.se">Säljavdelningen</a></div>
+					<div id="button"><a href="mailto:media@safespring.se">Infoavdelningen</a></div>
+					<div class="read-more">
+				    <h2>Läs mer om:</h2>
+				      <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
+				      <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
+				      <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
+				      <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+				      <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+				      <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+				      <li class="content-body"><a href="/support">&gt; Support</a></li>
 
-</div>
-	</main><!-- FOOTER -->
+				  </div>
+			</div>
+	</main>
+	<!-- FOOTER -->
 	{{ partial "footer.html" . }}
-</body>
-</html>

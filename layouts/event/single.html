@@ -121,29 +121,26 @@
     </div>
     {{ if .Params.english }}<a id="text-button" href="/kontakt">CONTACT SAFESPRING</a>{{ else }}<a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>{{ end }}
 </br></br>
-    {{ if .Params.english }}<div class="read-more">
-      <h2>Read more (in swedish):</h2>
-            <li class="content-body">
-        <a href="/safespring-backup">&gt; Backup as a service</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-storage">&gt; Storage as a service</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-compute">&gt; Infrastructure as a service</a>
-      </li>
-    </div>{{ else }}<div class="read-more">
-      <h2>Läs mer om:</h2>
-            <li class="content-body">
-        <a href="/safespring-backup">&gt; Backup som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-      </li>
-    </div>{{ end }}
+    {{ if .Params.english }}  <div class="read-more">
+        <h2>Read more about (in swedish):</h2>
+          <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Backup as a service</a></li>
+          <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Compute as a service</a></li>
+          <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Storage as a service</a></li>
+          <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+          <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+          <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Consulting</a></li>
+          <li class="content-body"><a href="/support">&gt; Support</a></li>
+      </div>{{ else }}<div class="read-more">
+      <div class="read-more">
+        <h2>Läs mer om:</h2>
+          <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
+          <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
+          <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
+          <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+          <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+          <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+          <li class="content-body"><a href="/support">&gt; Support</a></li>
+      </div>{{ end }}
   </div>
 
   </div>

@@ -84,13 +84,14 @@
 {{ if .Params.formid }}
       <h2 class="content-heading">{{ .Params.formheadline }}</h2>
 <form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div>
+	<div class="form">
 		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="{{ if .Params.english }}Your name...{{ else }}Ditt namn...{{ end }}">
 	</div>
+  <div class="form">
 	<div class="email">
 		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="{{ if .Params.english }}Work Email...{{ else }}Jobb-email...{{ end }}">
-	</div>
-	<div>
+	</div></div>
+	<div class="form">
 		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="{{ if .Params.english }}Mobile...{{ else }}Mobilnummer...{{ end }}">
 	</div>
 	<!-- REQUIRED FIELDS -->
@@ -115,29 +116,29 @@
     </div>
     {{ if .Params.english }}<a id="text-button" href="/kontakt">CONTACT SAFESPRING</a>{{ else }}<a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>{{ end }}
 </br></br>
-    {{ if .Params.english }}<div class="read-more">
-      <h2>Read more (in swedish):</h2>
-            <li class="content-body">
-        <a href="/safespring-backup">&gt; Backup as a service</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-storage">&gt; Storage as a service</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-compute">&gt; Infrastructure as a service</a>
-      </li>
-    </div>{{ else }}<div class="read-more">
-      <h2>Läs mer om:</h2>
-            <li class="content-body">
-        <a href="/safespring-backup">&gt; Backup som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-      </li>
-    </div>{{ end }}
+    {{ if .Params.english }}
+    <div class="read-more">
+      <h2>Read more about (in Swedish):</h2>
+        <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Backup as a service</a></li>
+        <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Infrastructure as a service</a></li>
+        <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Storage as a service</a></li>
+        <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+        <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+        <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+        <li class="content-body"><a href="/support">&gt; Support</a></li>
+    </div>
+    {{ else }}
+    <div class="read-more">
+            <h2>Läs mer om:</h2>
+              <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
+              <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
+              <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
+              <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+              <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+              <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+              <li class="content-body"><a href="/support">&gt; Support</a></li>
+          </div>
+          {{ end }}
   </div>
 
   </div>
