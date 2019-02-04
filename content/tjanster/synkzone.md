@@ -2,7 +2,7 @@
 title: "Synkzone by Safespring"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Lokal fildelningstjänst där data stannar inom landet. Med s.k. zero knowledge kan varken vi som operatör av tjänsten eller någon annan läsa era filer."
+intro: "Lokal fildelningstjänst där data stannar inom landet. Med "Zero knowledge" kan varken vi som operatör av tjänsten eller någon annan läsa era filer."
 background: "safespring_synkzone-by-safespring_background.jpg"
 pageimage: "safespring_synkzone-by-safespring_social.jpg"
 sidebarlinkname: "Ladda ner produktblad"
@@ -20,7 +20,7 @@ Det som särskilt utmärker Synkzone är ett fokus på hög säkerhet, tillgäng
 ### Med ”zero knowledge” kan ingen utomstående läsa era filer
 Synkzone erbjuder en av marknadens säkraste lösningar för filhantering. Er organisations filer lagras på en egen specifik server i högklassigt datacenter i Sverige. Drift och underhåll av servern ingår i tjänsten.
 
-Med s.k. **zero knowledge** krypteras data direkt på användarnas datorer. Det betyder att varken vi som operatör av tjänsten eller någon annan som kommer åt er data kan läsa era filer i klartext.
+Med **"Zero knowledge"** krypteras data direkt på användarnas datorer. Det betyder att varken vi som operatör av tjänsten eller någon annan som kommer åt er data kan läsa era filer i klartext.
 
 Synkzone innehåller också ett avancerat skydd mot s.k. ransomware som automatiskt kan detektera ransomware attacker, isolera infekterade datorer och återställa era filer.
 
