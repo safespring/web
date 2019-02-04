@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.safespring.com"
 languageCode = "sv-SE"
 title = "Safespring"
 author = "Safespring"
@@ -7,8 +7,7 @@ copyright = "2019 Safespring"
 
 # Pagination
 paginate = 10
-paginatePath = "blog"
-
+paginatePath = "Blogg"
 
 SectionPagesMenu = "main"
 
@@ -55,8 +54,8 @@ SectionPagesMenu = "main"
 
 
 [params.meta]
-    description = "Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
-    keywords = "compute, storage, backup"
+    description = "Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!"
+    keywords = "compute, storage, backup, hybrid cloud, openstack, private cloud, synkzone"
 
 
 [sitemap]
