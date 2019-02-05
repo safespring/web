@@ -1,6 +1,6 @@
 <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
-<h1 class="post-heading-firstpage">{{ .Title }}</h1><br><br>
-  {{ if .Params.knapp }}<a class="button" href="#register">{{ .Params.knapp }}</a>{{ else }}{{ end }}
+<h1 class="post-heading-firstpage">{{ .Title }}</h1><br>
+  {{ if .Params.knapp }}<a id="text-button" href="#register">{{ .Params.knapp }}</a>{{ else }}{{ end }}
 
 <!--
 <div class="content-item">
