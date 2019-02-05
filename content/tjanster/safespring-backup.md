@@ -5,6 +5,7 @@ draft: false
 intro: "Med Safesprings molnbaserad backuptjänst (Backup) behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"
 background: "safespring_bilder_8.jpg"
 form: "yes"
+youtubeid: "xixq-fvTN0M"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-backup-web.pdf"
 ---
@@ -21,4 +22,4 @@ Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Ba
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
 
 
-<video src="/tjanster/images/safespring-backup-video.mp4" style="width:100%; border-radius:5px;" controls="true"></video>
+{{< youtube xixq-fvTN0M >}}
