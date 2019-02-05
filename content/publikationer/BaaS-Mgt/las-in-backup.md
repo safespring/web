@@ -42,3 +42,8 @@ Det är den här typen av smarta kombinationer av tjänster är det vi på Safes
 ...för ett möte eller samtal, så att vi kan förstå mer kring vilka behov du har!
 <br><br><br>
 <a href="/kontakt" id="button">Kontakta Safespring</a>
+<br><br><br>
+
+<video width="100%" style="border-radius: 5px;" controls="true">
+<source type="video/mp4" src="/publikationer/image/Safespring_Video_2019-01-25_lasa-in-backup_FINAL(720p).mp4">
+<track src="/publikationer/image/Safespring_Video_2019-01-25_lasa-in-backup_FINAL.vtt" label="Svenska" kind="captions" srclang="sv-SE" default >
