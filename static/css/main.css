@@ -557,13 +557,15 @@ label.switch-label {
   transition: box-shadow 0.4s ease-in-out
 }
 .heading-sub {
-  background: var(--main-color);
   margin: 0;
   display: -ms-grid;
   display: grid;
   grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
   grid-template-rows: [full-start] minmax(2em, 4fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
+  overflow: hidden;
 }
+
+
 .heading-sub>* {
   grid-column: main;
   grid-row: main;
