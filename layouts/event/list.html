@@ -19,22 +19,22 @@
     <!-- CONTENT -->
     <main class="content-chalmers">
         <!-- Main  -->
-        <div class="ch-content">
-            <div class="">
-                <h2>Kommande event</h2>
+        <div class="" style="background: var(--text-color);">
+          <h2 style="text-align:center;">Kommande event</h2></br>
+            <div class="flexcontainer" style="background: var(--text-color);">
                 {{ range where .Data.Pages.ByDate "Section" "event" }} {{ if ge .Date.Unix (now.AddDate 0 0 -1) }}
-                <div class="content-container">
-                    {{ .Render "li"}}
-                </div>
+
+                    {{ .Render "li4"}}
+
                 {{ end }} {{ end }}
             </div>
-            <div>
-                <h2>Tidigare event</h2>
+            <h2 style="text-align:center;">Tidigare event</h2></br>
+            <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
                 {{ range where .Data.Pages.ByDate.Reverse "Section" "event" }}
                 {{ if .Date.Before (now.AddDate 0 0 -1) }}
-                <div class="content-container" style="opacity: 0.5; filter: alpha(opacity=50);">
+
                     {{ .Render "li" }}
-                </div>
+
                 {{ end }}
                 {{ end }}
             </div>

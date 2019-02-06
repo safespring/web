@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html
-   class="
-   index
-   aktuellt
-   chalmers
-   kundreferenser
-   om-oss
-   pris
-   support
-   tjanster
-   " lang="sv">
+   class="index aktuellt chalmers kundreferenser om-oss pris support tjanster" lang="sv">
    <head>
-
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
      <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/event/image/socialmedia{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www.safespring.com/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_event.jpg{{ end }}"/>
      <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
      <meta property="og:site_name" content="Safespring" />
-
-
    	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -30,7 +18,6 @@
          })(window,document,'script','dataLayer','GTM-TXLJWD7');
       </script>
       <!-- End Google Tag Manager -->
-
       <!-- Site Title changes according to current page -->
       <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra molntjänster{{ end }}</title>
       <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
@@ -52,19 +39,19 @@
       {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
-  <title>Safespring | {{ .Title }}</title>
-</head>
+      <title>Safespring | {{ .Title }}</title>
+    </head>
 <body>
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
   <!-- {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub-event" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
-     <div class="heading-content">
+   <div class="heading-sub-event" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center; background-color: #195F8C; background-blend-mode: multiply;">
+       <div class="heading-content">
        <a class="logo" href="{{ .Site.BaseURL }}">
          <img src="{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}" style="margin-bottom:30px; padding: 0px;">
        </a>
        {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
-     </div>
-   </div>
+     </div></div>
+
 
 <!-- HEADING -->
 
@@ -90,14 +77,14 @@
       <h2 class="content-heading">{{ if .Params.english }}Register to get a  ticket{{ else }}SKAFFA BILJETT
       {{ end }}</h2>
 <form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div>
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Your name...">
+	<div class="form">
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
 	</div>
-	<div class="email">
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Work Email...">
+	<div class="form">
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Jobb email...">
 	</div>
-	<div>
-		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="Mobile...">
+	<div class="form">
+		<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="Mobilnummer...">
 	</div>
 	<!-- REQUIRED FIELDS -->
 	<input type="hidden" name="formCid" value="9549">
@@ -105,7 +92,7 @@
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" id="button">{{ .Params.knapp }}</button>
+	<button type="submit" class="button">{{ .Params.knapp }}</button>
 </form>
 <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
 <br><br>
@@ -113,7 +100,7 @@
 <!-- END OF FORM -->
 
       <h2 class="content-heading">{{ if .Params.english }}What is Safespring?{{ else }}Vad gör Safespring?{{ end }}</h2>
-      {{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring erbjuder en storskalig molnplattform där data aldrig lämnar landet.</p>
+      {{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!</p>
       {{ end }}
 
 
