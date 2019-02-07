@@ -8,17 +8,15 @@
 	</div>
 
   <!-- CONTENT -->
-	<main class="content-chalmers">
+	<main class="content-chalmers" style="background:var(--text-color)">
 		<!-- Main  -->
-		<div class="ch-content">
-			<div class="">
+			<div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
 				{{ range .Data.Pages.GroupByDate "2006" }}
-				<div class="content-container">
+
 					{{ range .Pages }} {{ .Render "li"}} {{ end }}
-				</div>
+
         {{ end }}
 			</div>
-		</div>
 
     <!-- SIDEBAR -->
 		<div class="ch-sidebar">

@@ -25,7 +25,7 @@
 
   <!-- CONTENT -->
   <main class="content-main" id="down">
-    <div class="index-content">
+    <div class="">
       <!-- Heading Text -->
       <div class="content-head">
         <p>Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!
@@ -34,25 +34,22 @@
 
       <!-- Body Text -->
       <div class="content-body">
-        <p>Safespring är ett Svenskt företag med lokalt producerade molntjänster i Sverige och Norge.</p>
-        <p>Molntjänster är ett modernt och effektivt sätt att producera IT, men frågor som alltid diskuteras är om det är säkert och var ens data finns. Det är något som vi tagit fasta på när vi skapat Safespring och våra tjänster, hos oss ska du känna dig trygg! Din data lämnar aldrig landet.</p>
-        <p>Att vi är ett svenskt företag innebär dessutom att vi inte innefattas av Cloud Act, så vi kan inte tvingas att lämna ut din data!</p>
-        <p>Vi har skapat våra tjänster med högsta säkerhet i fokus, vi producerar dem lokalt för att du ska veta vilka lagar och regler som gäller och var ditt data finns lagrat ! Vi är experter på det vi gör och hjälper dig gärna att ta fram bästa lösningen för just dig!</p>
+        <p>Safespring är ett Svenskt företag med lokalt producerade molntjänster i Sverige och Norge.</p><br>
+        <p>Molntjänster är ett modernt och effektivt sätt att producera IT, men frågor som alltid diskuteras är om det är säkert och var ens data finns. Det är något som vi tagit fasta på när vi skapat Safespring och våra tjänster, hos oss ska du känna dig trygg! Din data lämnar aldrig landet.</p><br>
+        <p>Att vi är ett svenskt företag innebär dessutom att vi inte innefattas av Cloud Act, så vi kan inte tvingas att lämna ut din data!</p><br>
+        <p>Vi har skapat våra tjänster med högsta säkerhet i fokus, vi producerar dem lokalt för att du ska veta vilka lagar och regler som gäller och var ditt data finns lagrat ! Vi är experter på det vi gör och hjälper dig gärna att ta fram bästa lösningen för just dig!</p><br>
         <h2>Open Source</h2>
         <p>Våra tjänster baseras på öppen källkod sk. Open Source. De senaste decennierna har visat att öppen källkod ger ett oerhört kraftfullt ekosystem av företag och organisationer som i stort har samma behov, men samtidigt behov av skräddarsydda lösningar.</p>
         <a href="/om-safespring/bli-partner" id="text-button">Bli partner med oss</a>
       </div>
-<div class="blog-feed">
-        <h2 class="content-heading">Senaste nytt</h2>
-        <div class="">
-          {{ range .Site.Pages.GroupByDate "2006" }}
-            <div class="">
-            {{ range first 5 (where .Pages "Section" "in" (slice "blogg" "")) }}
+    </main>
+    <h2 style="text-align:center;">Senaste nytt</h2></br>
+<div class="flexcontainer" style="align-items:baseline; margin-bottom:200px;">
+          {{ range first 3 .Site.Pages.ByDate.Reverse }}
+            {{ range first 4 (where .Pages "Section" "in" (slice "blogg" "")) }}
               {{ .Render "li"}}
               {{ end }}
-          </div>
           {{ end }}
-          </div>
         </div>
       <!-->
         {{ $paginator := .Paginate (where .Data.Pages "Type" "blogg") 10 }}
@@ -60,7 +57,6 @@
             {{ .Render "summary" }}
         {{ end }}-->
     </div>
-  </main>
 
   <!-- Homepage Heading Slideshow
 

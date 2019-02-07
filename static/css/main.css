@@ -3554,7 +3554,7 @@ p, h1 {
    color: rgba(50,50,50,0.8);
 }
 .text-black {
-  color: rgba(50,50,50,1);
+  color: #323232;
 }
 .text-muted {
   color: #32CD32;
@@ -3621,8 +3621,9 @@ p, h1 {
 
 
 
-
-
+.extra-small {
+  font-size: .7rem;
+}
 .small {
   font-size: 1rem;
 }
@@ -3720,6 +3721,10 @@ p, h1 {
 .my-3 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .mt-0 {
