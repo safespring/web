@@ -90,31 +90,39 @@ button {
   width: 250px;
   padding: 12px 24px;
   margin: 8px 0;
+  line-height: 20px;
   border: 1px solid var(--main-color);
   color: var(--main-color);
   font: var(--normal-weight) 15px var(--mon-font);
-  line-height: 20px;
   border-radius: 50px;
+  background-color: var(--text-color);
+}
+
+select {
+  border: none;
+  width: 250px;
+  color: var(--main-color);
+  font: var(--normal-weight) 15px var(--mon-font);
   background-color: var(--text-color);
 }
 input[type=text], [type=email] {
     color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
-    line-height: 20px;
     border: none;
     background-color: var(--text-color);
+    width: 200px;
 }
 
 textarea {
-    width: 300px;
-    padding: 12px;
+    width: 250px;
+    padding: 12px 24px;
     margin: 8px 0;
-    background-color: #195F8C;
+    background-color: var(--text-color);
     color: var(--main-color);
     font: var(--normal-weight) 15px var(--mon-font);
     line-height: 20px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
 }
 
 ::placeholder {
@@ -375,7 +383,11 @@ label.switch-label {
   padding: 20px 0px 0px 30px;
   float:left;
 }
-
+.menu-item:active svg {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
 
 .menu-item ul {
   padding: 0px 0px 0px 0px;
@@ -545,13 +557,15 @@ label.switch-label {
   transition: box-shadow 0.4s ease-in-out
 }
 .heading-sub {
-  background: var(--main-color);
   margin: 0;
   display: -ms-grid;
   display: grid;
   grid-template-columns: [full-start] minmax(1em, 2fr)[main-start] minmax(0, 48rem)[main-end] minmax(1em, 3fr)[full-end];
   grid-template-rows: [full-start] minmax(2em, 4fr)[main-start] minmax(7em, auto)[main-end] minmax(3.125em, 0.5fr)[full-end];
+  overflow: hidden;
 }
+
+
 .heading-sub>* {
   grid-column: main;
   grid-row: main;
@@ -3500,3 +3514,325 @@ td {
   mso-generic-font-family: auto;
   mso-font-charset: 0;
 }
+
+/* CARD */
+
+ .body {
+   margin: 20px;
+   padding: 0;
+   font-size: 16px;
+   line-height: 1.5;
+   text-rendering: optimizeLegibility;
+   font-variant-ligatures: none;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   background-color: #fafafa;
+   overflow: hidden;
+   border-radius: 5px;
+   width: 390px;
+}
+.body::before,
+.body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.body * {
+  box-sizing: inherit;
+}
+
+@media only screen and (max-device-width: 750px) {
+  .body {
+    width: 320px;
+  }
+}
+p, h1 {
+  margin: 0; padding: 0;
+}
+
+ .body, .text-light-black {
+   color: rgba(50,50,50,0.8);
+}
+.text-black {
+  color: rgba(50,50,50,1);
+}
+.text-muted {
+  color: #32CD32;
+}
+
+
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ff-serif {
+  font-family: 'Hind', san-serif;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+.font-weight-medium {
+  font-weight: 600;
+}
+
+ .lts-1px {
+   letter-spacing: 1px;
+}
+.lts-2px {
+  letter-spacing: 2px;
+}
+
+
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute
+}
+
+
+
+.bg-white {
+  background-color: #fff;
+}
+
+
+
+
+
+
+.small {
+  font-size: 1rem;
+}
+.card-heading {
+  font-size: 2.25rem;
+  line-height: 1 !important;
+}
+.styled-link {
+  text-decoration: none;
+  outline: none;
+  color: #195F8C;
+  transition: all 0.25s ease-in;
+}
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+  color: #FA690F;
+}
+.shadow-1 {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+}
+.blue-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+}
+.blue-hover:hover {
+  transform: translateY(-5px);
+  mar
+  border: none;
+  border-bottom: 5px solid #195F8C;
+}
+
+
+
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
+
+
+
+
+
+/**Margin and padding utilities*/
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+
+
+
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.flexcontainer {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-flow: row wrap;
+     align-content: space-between;
+}
+
+/* END - CARD */
