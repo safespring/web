@@ -10,38 +10,52 @@
   <!-- CONTENT -->
 	<main class="content-chalmers">
 		<!-- Main  -->
-		<div class="ch-content">
-			<div class="">
+			<div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
 				{{ range .Data.Pages.GroupByDate "2006" }}
-				<div class="content-container">
+
 					{{ range .Pages }} {{ .Render "li"}} {{ end }}
-				</div>
+
         {{ end }}
 			</div>
-		</div>
 
     <!-- SIDEBAR -->
 		<div class="ch-sidebar">
-			<div><img alt="Safespring Logotyp" src="/img/safespring_cloud.svg"></div>
-			<div>
-				<h2 class="content-heading">Safespring Publikationer</h2>
-				<p class="content-body">Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.</p>
 				<div>
-					<a href="/event" id="text-button">Event</a><br>
-					<a href="/blogg" id="text-button">Blogg</a><br>
-					<a href="/whitepaper" id="text-button">White Papers</a>
-				</div><br>
-			</div><a href="/kontakt" id="find-more">KONTAKT</a>
-			<div class="read-more">
-		    <h2>Läs mer om:</h2>
-		      <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
-		      <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
-		      <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
-		      <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
-		      <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
-		      <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
-		      <li class="content-body"><a href="/support">&gt; Support</a></li>
-		  </div>
+						<img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+				</div>
+			<div>
+				<h2 class="content-heading">{{ if .Params.english }}What is Safespring?{{ else }}Vad gör Safespring?{{ end }}</h2>
+				{{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!</p>
+				{{ end }}
+
+
+				<br>
+				</div>
+				<div>
+				{{ if .Params.english }}<a id="text-button" href="/kontakt">CONTACT SAFESPRING</a>{{ else }}<a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>{{ end }}
+				</br></br>
+				{{ if .Params.english }}  <div class="read-more">
+					<h2>Read more about (in swedish):</h2>
+						<li class="content-body"><a href="/tjanster/safespring-backup">&gt; Backup as a service</a></li>
+						<li class="content-body"><a href="/tjanster/safespring-compute">&gt; Compute as a service</a></li>
+						<li class="content-body"><a href="/tjanster/safespring-storage">&gt; Storage as a service</a></li>
+						<li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+						<li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+						<li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Consulting</a></li>
+						<li class="content-body"><a href="/support">&gt; Support</a></li>
+				</div>{{ else }}<div class="read-more">
+				<div class="read-more">
+					<h2>Läs mer om:</h2>
+						<li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
+						<li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
+						<li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
+						<li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+						<li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+						<li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+						<li class="content-body"><a href="/support">&gt; Support</a></li>
+				</div>{{ end }}
+				</div>
+			</div>
 		</div>
 	</main><!-- FOOTER -->
 	{{ partial "footer.html" . }}
