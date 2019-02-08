@@ -16,7 +16,34 @@ Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
-## Bakgrund
+<h2 id="testa-safespring">Ladda ner White Paper</h2>
+<form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	  <div class="form">
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.name" placeholder="Ditt namn...">
+	</div>
+  <div class="form">
+    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
+	</div>
+  <div class="form">
+    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.cellPhone" placeholder="Ditt mobilnummer...">
+	</div>
+  <!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549u043a5ff8644c4ebeacdb3ef21accfa85">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<button type="submit" id="button">Ladda ner</button>
+</form>
+<script>
+	(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();
+</script>
+
+
+<!-- ## Bakgrund
 
 Dataskyddsdirektivet [(2)](https://eur-lex.europa.eu/legal-content/SV/TXT/?qid=1527194603743&uri=CELEX:31995L0046 "Europaparlamentets och rådets direktiv 95/46/EG den 24 oktober 1995") från 1995 skapade ett EU-gemensamt regelverk för skydd av personuppgifter, med i vissa fall starkare rättsligt skydd än vad som varit fallet innan i Sverige. Det var fortfarande upp till varje enskilt land att införa nationell lagstiftning utifrån direktivet. I Sverige genomfördes direktivet i nationell rätt 1998 genom personuppgiftslagen (PUL)  [(3)](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/personuppgiftslag-1998204_sfs-1998-204 "Personuppgiftslagen PUL"). PUL reglerade dels vilka sorters personuppgifter som fick registreras samt även hur dessa fick överföras till så kallat “tredje land”. Det senare krävde att åtminstone en av tre följande situationer gällde:
 
@@ -147,3 +174,4 @@ Givet rättssituationen finns några strategiska rekommendationer, gällande mol
 29. [Ryan Browne - CNBC ](https://www.cnbc.com/2018/05/23/eu-politicians-dissatisfied-with-facebook-ceo-mark-zuckerbergs-parliament-meeting.html "Ryan Browne - CNBC ")
 30. [EP Conference of Presidents with Mark Zuckerberg ](http://www.europarl.europa.eu/ep-live/en/other-events/video?event=20180522-1820-SPECIAL-UNKN "EP Conference of Presidents with Mark Zuckerberg ")
 31. [Mål C‑362/14 - Maximillian Schrems mot Data Protection Commissioner](https://eur-lex.europa.eu/legal-content/SV/TXT/?qid=1527547272668&uri=CELEX:62014CC0362 "Mål C‑362/14 - Maximillian Schrems mot Data Protection Commissioner")
+-->
