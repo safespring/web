@@ -10,7 +10,8 @@
 	<meta content="{{ .Title }}" name="twitter:title">
 	<meta content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings white papers syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" name="twitter:description">
 	<meta content="{{ if.Params.socialmediabild }}/img/event/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}" name="twitter:image:src">
-  <style>
+	{{ partial "telavox.html" }}
+	<style>
     h2 {
     	margin-bottom: 20px;
     }

@@ -50,6 +50,7 @@
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
   <title>Safespring | {{ .Title }}</title>
+  {{ partial "telavox.html" }}
 </head>
 <body>
   {{ partial "header.html" . }}

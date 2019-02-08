@@ -48,7 +48,7 @@
       {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
-
+      {{ partial "telavox.html" }}
 <!-- Open Graph data -->
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="website" />
