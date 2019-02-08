@@ -37,6 +37,7 @@
    {{ if .RSSLink }}
    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
    {{ end }}
+   {{ partial "telavox.html" }}
 <title>{{ .Title }}</title>
 </head>
 
