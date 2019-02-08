@@ -46,7 +46,7 @@
       {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
-
+      {{ partial "telavox.html" }}
       {{ "<!--[if lt IE 11]>" | safeHTML }}
   <script src="html5shiv.js"></script>
 {{ "<![endif]-->" | safeHTML }}
