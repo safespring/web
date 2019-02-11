@@ -17,6 +17,17 @@
 		<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
 	</div>
 	<div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+			    $('#checkBtn').click(function() {
+			      checked = $("input[type=checkbox]:checked").length;
+			      if(!checked) {
+			        alert("Hej! Markera minst en tjänst du önskar att testa innan du skickar in formuläret.");
+			        return false;
+			      }
+			    });
+			});
+		</script>
 		<h3>Vad vill du testa?</h3>
 		<div class="inputGroup"><input id="Backup" type="checkbox" value="Backup" name="Extra.1547719761203"><label for="Backup">Backup</label></div>
     <div class="inputGroup"><input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1547719761203"><label for="Offsite">Offsite Backup</label></div>
@@ -30,6 +41,6 @@
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
-	<button type="submit" class="button">Skapa demokonto</button>
+	<button type="submit" class="button" id="checkBtn">Skapa demokonto</button>
 </form>
 <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
