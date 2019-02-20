@@ -1,5 +1,5 @@
 ---
-title: "Upplev Safespring Compute baserat på OpenStack"
+title: "Upplev Safespring, baserat på OpenStack"
 date: "2018-09-18"
 draft: false
 tags: ""
@@ -8,7 +8,7 @@ pageimage: ""
 intro: "Med Safesprings molnbaserade infrastrukturtjänst kan du skala upp och ner din infrastruktur efter behov. Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal."
 ---
 ## Hämta dina resurser
-Safesprings molnbaserade infrastrukturtjänst är baserad på den marknadsledande molnplattformen OpenStack. Tjänsten levereras ifrån säkra datahallar med hög tillgänglighet. Data i tjänsten lämnar aldrig landet då datahallarna är placerade inom landets gränser.
+Stabil infrastruktur och resurskonsumering efter behov. Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.
 <br><br>
 <form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	<div class="form">
