@@ -25,7 +25,7 @@ Rapporten kommer fram till att det finns behov av ett juridiskt hållbart Webbas
 Samtidigt har det kommit fram att de ramavtal som finns idag inte är tillräckliga för att köpa in liknande tjänster. Ett intresse och investeringsvilja hos offentliga aktörer måste finnas för att en marknad av webbaserade kontorsstöd skall uppstå. Därför uppmuntrar Statens inköpscentral dialog mellan it-bolag och offentliga aktörer för att gemensamt komma fram till en lösning som i framtiden kan upphandlas.
 
 <br>
-Safespring kommer följa utvecklingen på nära håll och kommer bidra i dialogen med vår kompetens om säkra, moderna och lokala molntjänster. I skrivande stund är vi på plats under presentationena av förstudien.
+Safespring kommer följa utvecklingen på nära håll och kommer bidra i dialogen med vår kompetens om säkra, moderna och lokala molntjänster. I skrivande stund är vi på plats under presentationen av förstudien. På bilden syns Daniel Melin som är IT-upphandlare på Kammarkollegiet.
 
 <br><br>
 <img alt="Safespring på plats under presentaionena av förstudien: webbaserade kontorsstöd" src="/blogg/images/safespring-webbaserat-kontorsstod.jpg" style="border-radius:5px;">
