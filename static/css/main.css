@@ -1831,10 +1831,10 @@ label {
   padding: 0px 0px 0px 25px;
 }
 .sub-menu:last-child {
-  padding-bottom: 30px;:
+  padding-bottom: 30px;
 }
 .sub-menu:first-child {
-  padding-top: 10px;:
+  padding-top: 10px;
 }
 
 #toggle:checked~.h-menu {
