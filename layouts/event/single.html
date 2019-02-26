@@ -43,9 +43,11 @@
       <title>Safespring | {{ .Title }}</title>
     </head>
 <body>
+  {{ partial "svg-filter.html" . }}
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
   <!-- {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub-event" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center; background-color: #195F8C; background-blend-mode: multiply;">
+  <img class="heading-background-event safespring_blue" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
+    <div class="heading-sub-event">
        <div class="heading-content">
        <a href="{{ .Site.BaseURL }}">
          <img src="{{ if eq .Params.partner "SUSE" }}{{ "/img/safespring-suse.svg" | relURL }}{{ else }}{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}{{ end }}" style="margin-bottom:30px; width:300px;">

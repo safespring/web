@@ -15,7 +15,7 @@
   <div class="content-container">
     <a href="{{ .Permalink }}">
     <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-        <img src="{{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}" alt="{{ .Title }}" class="d-block w-full" style="height: 240px;">
+        <div style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; height:240px;" alt="{{ .Title }}" class="d-block w-full"></div>
   <div class="px-2 py-2">
     <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
       {{ .Section }}
