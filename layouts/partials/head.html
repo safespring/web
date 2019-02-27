@@ -7,6 +7,8 @@
 		 <meta property="og:image" content="{{ if.Params.socialmediabild }}{{ "/img/whitepapers/" | absURL }}{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}{{ "/img/whitepapers/" | absURL }}{ .Params.huvudbildnamn }}{{ else if.Params.pageimage}}{{ "/img/pageimage/" | absURL }}{{ .Params.pageimage }}{{ else }}{{ "/img/pageimage/Safespring_molntjanster.jpg" | absURL }}{{ end }}"/>
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
+     {{ partial "smooth-scroll.html" . }}
+
 
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

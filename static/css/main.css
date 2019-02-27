@@ -26,6 +26,7 @@
 }
 .index {
   background: #FAFEFE;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -1601,6 +1602,19 @@ label.switch-label {
     flex-direction: column;
     justify-content: flex-start;
     max-width:700px;
+  }
+  .heading-index:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    filter: url('#safespring_blue');
+    background: url('/img/safespring-molnlagring-blue3.jpg');
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
   }
 }
 
