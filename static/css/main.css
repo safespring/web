@@ -11,12 +11,12 @@
   --clear-blue-color: #3C9BCD;
   --hind-font: "Hind", sans-serif;
   --mon-font: "Montserrat", sans-serif;
+  --light-weight: 100;
   --normal-weight: 400;
   --medium-weight: 500;
   --heavy-weight: 600;
   --reg-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
   --tran-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
-
   --width-Ckb: 40px;
   --checkedColor: rgba(33, 150, 243, 1);
   --unCheckedColor: rgba(220, 220, 220, 1);
@@ -24,9 +24,9 @@
   --transitionSpeed: 0.05s;
   --border: var(--width-Ckb) - var(--height-Ckb)/10;
 }
-
 .index {
   background: #FAFEFE;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -482,11 +482,24 @@ label.switch-label {
   visibility: visible;
 }
 .heading-index {
-  margin: 0;
-  padding: 175px 0 60px;
+  position: relative;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 65rem)[main-end] minmax(1em, 1fr)[full-end];
+  grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 67rem)[main-end] minmax(1em, 1fr)[full-end];
+  height: 100vh;
+}
+
+.heading-index:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  filter: url('#safespring_blue');
+  background: url('/img/safespring-molnlagring-blue2.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 .heading-index>* {
   grid-column: main
@@ -588,7 +601,7 @@ label.switch-label {
   top: 0px;
   z-index: -1;
   position: absolute;
-  
+
 }
 
 .heading-background-event {
@@ -711,15 +724,47 @@ label.switch-label {
   display: grid;
   grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 39rem)[main-end] minmax(2em, 1fr)[full-end];
   grid-template-rows: [full-start] minmax(4em, 1fr)[main-start] minmax(30em, auto)[main-end] minmax(4em, 1fr)[full-end];
-  justify-items: center
+  justify-items: center;
+}
+
+.content-main-index {
+  background: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+.content-main-index {
+  background: var(--text-color);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+}
+.content-image {
+  background: url('/img/safespring-first-page.jpg');
+  background-size: cover;
+  background-position: center;
+  grid-column: span 4;
+  padding: 25%;
+}
+@media (max-width: 900px) {
+  .content-image {
+    order: 2;
+  }
 }
 .content-main>* {
   grid-column: main;
   grid-row: main
 }
+
 .content-head>* {
   font: var(--heavy-weight) 20px var(--mon-font);
   color: var(--heading-color)
+}
+.content-head-index {
+  font: var(--heavy-weight) 18px var(--mon-font);
+  font: var(--heavy-weight) 20px var(--mon-font);
+  color: var(--heading-color);
+  display: grid;
 }
 .content-head p {
   margin-top: 0px;
@@ -729,6 +774,29 @@ label.switch-label {
   color: var(--alt-color);
   margin-bottom: 10px;
   margin-top: 10px;
+  display: grid;
+  align-self: start;
+}
+.content-body-index  {
+  font: var(--normal-weight) 15px var(--mon-font);
+  color: var(--alt-color);
+  margin: 10%;
+  display: grid;
+  align-self: start;
+  max-width: 700px;
+  grid-column: span 6;
+}
+.blogg-promo {
+  padding: 5%;
+  background-color: var(--content-color);
+}
+.blogg-promo h2  {
+  text-align: center;
+}
+.ingress p {
+  font: var(--light-weight) 25px var(--mon-font);
+  margin-bottom: 30px;
+  line-height: 1.25;
 }
 
 .TableOfContents {
@@ -1509,6 +1577,47 @@ label.switch-label {
   justify-content: flex-start;
   max-width:700px;
 }
+
+.content-container-index {
+  margin: 35vh 0 0 0;
+  padding: 0 0 5vh 0;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width:700px;
+}
+@media only screen and (max-width: 900px) {
+  .content-container-index {
+    margin: 15vh 0 0 0;
+    padding: 0 0 5vh 0;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width:700px;
+  }
+  .heading-index:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    filter: url('#safespring_blue');
+    background: url('/img/safespring-molnlagring-blue3.jpg');
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+}
+
 .content-item {
   padding: 30px;
   margin: 10px 0;
@@ -1540,7 +1649,7 @@ label.switch-label {
   padding-bottom: 10px
 }
 .post-heading-firstpage {
-  font: var(--heavy-weight) 55px var(--hind-font);
+  font: var(--heavy-weight) 10vh var(--hind-font);
   line-height: 1;
   color: #FAFEFE;
 }
@@ -1564,9 +1673,7 @@ label.switch-label {
   .ch-content {
     padding-top: 30px;
   }
-  .heading-index {
-    padding: 50px 0px 0px 0px;
-  }
+
 }
 .post-heading-whitepaper:hover {
   color: var(--link-color);
