@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="index-index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv">
    <head>
-     <!--[if IE]><meta http-equiv="refresh" content="0;url=https://pages.upsales.com/9549u0fe415b79737492cb66610389ae302fd" /><![endif]-->
-
+     {{ "<!--[if IE]><meta http-equiv="refresh" content="0;url=https://pages.upsales.com/9549u0fe415b79737492cb66610389ae302fd" /><![endif]-->" | safeHTML }}
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{ .URL  | absURL }}" />
@@ -45,5 +44,7 @@
       {{ "<!--[if lt IE 11]>" | safeHTML }}
   <script src="html5shiv.js"></script>
 {{ "<![endif]-->" | safeHTML }}
+
+
 <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:100,400,600" rel="stylesheet">
    </head>
