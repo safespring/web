@@ -55,10 +55,12 @@
   <title>Safespring | {{ .Title }}</title>
 </head>
 <body>
+  {{ partial "svg-filter.html" . }}
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
    {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
-     <div class="heading-content">
+   <img class="heading-background safespring_blue" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
+<div class="heading-sub">
+<div class="heading-content">
        {{ .Render "li3" }}
      </div>
    </div>

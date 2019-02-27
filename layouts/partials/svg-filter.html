@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+  <filter id="safespring_blue">
+    <feColorMatrix type="matrix" result="grayscale"
+      values="1 0 0 0 0
+              1 0 0 0 0
+              1 0 0 0 0
+              0 0 0 1 0" />
+
+    <feComponentTransfer color-interpolation-filters="sRGB" result="safespring_blue">
+      <feFuncR type="table" tableValues="0.1960784314 0.09803921569"></feFuncR>
+      <feFuncG type="table" tableValues="0.1960784314 0.3725490196"></feFuncG>
+      <feFuncB type="table" tableValues="0.1960784314 0.5490196078"></feFuncB>
+      <feFuncA type="table" tableValues="0 1"></feFuncA>
+    </feComponentTransfer>
+  </filter>
+
+  <filter id="safespring_dark">
+    <feColorMatrix type="matrix" result="grayscale"
+      values="1 0 0 0 0
+              1 0 0 0 0
+              1 0 0 0 0
+              0 0 0 1 0" />
+
+    <feComponentTransfer color-interpolation-filters="sRGB" result="safespring_dark">
+      <feFuncR type="table" tableValues="0.1960784314 0.9803921569"></feFuncR>
+      <feFuncG type="table" tableValues="0.1960784314 0.9960784314"></feFuncG>
+      <feFuncB type="table" tableValues="0.1960784314 0.9960784314"></feFuncB>
+      <feFuncA type="table" tableValues="0 .2"></feFuncA>
+    </feComponentTransfer>
+  </filter>
+</svg>
