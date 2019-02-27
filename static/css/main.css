@@ -1578,7 +1578,7 @@ label.switch-label {
 }
 
 .content-container-index {
-  margin: 45% 0 0 0;
+  margin: 35vh 0 0 0;
   padding: 0 0 5vh 0;
   border-radius: 3px;
   display: -webkit-box;
@@ -1588,6 +1588,20 @@ label.switch-label {
   flex-direction: column;
   justify-content: flex-start;
   max-width:700px;
+}
+@media only screen and (max-width: 900px) {
+  .content-container-index {
+    margin: 15vh 0 0 0;
+    padding: 0 0 5vh 0;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width:700px;
+  }
 }
 
 .content-item {
