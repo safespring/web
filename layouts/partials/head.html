@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv">
+<html class="index-index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv">
    <head>
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
@@ -7,12 +7,7 @@
 		 <meta property="og:image" content="{{ if.Params.socialmediabild }}{{ "/img/whitepapers/" | absURL }}{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}{{ "/img/whitepapers/" | absURL }}{ .Params.huvudbildnamn }}{{ else if.Params.pageimage}}{{ "/img/pageimage/" | absURL }}{{ .Params.pageimage }}{{ else }}{{ "/img/pageimage/Safespring_molntjanster.jpg" | absURL }}{{ end }}"/>
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
-     <!-- Google material design -->
-     <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
-     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-     <!-- Cookie consent -->
-     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,10 +32,8 @@
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
       <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
       <!-- CSS -->
-      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" type="text/css"/>
       <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type="text/css"/>
       <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:400,500,600" rel="stylesheet">
       <!-- RSS -->
       <link rel="canonical" href="{{ .Permalink }}">
       {{ if .RSSLink }}
@@ -50,4 +43,5 @@
       {{ "<!--[if lt IE 11]>" | safeHTML }}
   <script src="html5shiv.js"></script>
 {{ "<![endif]-->" | safeHTML }}
+<link href="https://fonts.googleapis.com/css?family=Hind:600|Montserrat:100,400,600" rel="stylesheet">
    </head>
