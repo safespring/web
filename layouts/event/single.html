@@ -3,6 +3,7 @@
    class="index aktuellt chalmers kundreferenser om-oss pris support tjanster" lang="sv">
    <head>
      {{ if Params.IE }}
+     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
      {{ "<!--[if IE]>" | safeHTML }}
        <meta HTTP-EQUIV="REFRESH" content="0; url={{ Params.IE }}">
      {{ "<![endif]-->" | safeHTML }}
