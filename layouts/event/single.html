@@ -2,6 +2,11 @@
 <html
    class="index aktuellt chalmers kundreferenser om-oss pris support tjanster" lang="sv">
    <head>
+     {{ if Params.IE }}
+     {{ "<!--[if IE]>" | safeHTML }}
+       <meta HTTP-EQUIV="REFRESH" content="0; url={{ Params.IE }}">
+     {{ "<![endif]-->" | safeHTML }}
+     {{ else }}{{ end }}
      {{ partial "telavox.html" }}
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:type" content="website" />
