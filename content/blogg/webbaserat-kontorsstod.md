@@ -9,7 +9,7 @@ background: "safespring-webbaserat-kontorsstod.jpg"
 ---
 
 ## Lokala lösningar efterfrågas
-Idag släpptes *”[Förstudierapport Webbaserade kontorsstöd](https://www.avropa.se/globalassets/forstudierapporter-vt--it/forstudierapport-webbaserat-kontorsstod.pdf) "*. Statens inköpscentral inledde en förstudie i september förra året som ska resultera i en eventuellt kommande upphandling av webbaserat kontorsstöd.
+Idag släpptes *”[Förstudierapport Webbaserade kontorsstöd](https://www.avropa.se/globalassets/forstudierapporter-vt--it/forstudierapport-webbaserat-kontorsstod2.pdf?_t_id=1B2M2Y8AsgTpgAmY7PhCfg%3d%3d&_t_q=%22forstudierapport-webbaserat-kontorsstod%22&_t_tags=language%3asv%2csiteid%3a95d515a5-23ca-47bf-87a9-07b10d8ac360&_t_ip=109.238.132.56&_t_hit.id=Avropa_Core_Models_Media_GenericMedia/_ba5d22e5-3a3a-4719-a772-ee0e89e9f617&_t_hit.pos=1) "*. Statens inköpscentral inledde en förstudie i september förra året som ska resultera i en eventuellt kommande upphandling av webbaserat kontorsstöd.
 
 >Med webbaserat kontorsstöd avses helt integrerad och webbaserad e-post, ordbehandling, kalkylark, presentation, chatt, fillagring och dokumenthantering.
 
