@@ -1,0 +1,25 @@
+---
+title: "Vi välkomnar ännu ett MedTech-bolag in i Safesprings svenska molntjänst!"
+date: "2019-03-05T08:51:25+01:00"
+draft: false
+tags: [""]
+showthedate: true
+socialmediabild: "Safespring_prorenata.jpg"
+background: "Safespring_prorenata.jpg"
+---
+**ProReNata** tillhandahåller ett digitalt journalsystem för hälso- och sjukvårdspersonal med inriktning på skolhälsovården. De hanterar många patientjournaler och under 2018 ökade kundernas frågor om deras nuvarande produktionplattform.
+<br><br>
+Efter tydliggöranden från bland annat [staten](/blogg/webbaserat-kontorsstod/) och [upphandlingar](https://www.e-avrop.com/norrkoping/e-Upphandling/Announcement.aspx?id=40679) med krav på lösningar som följer svensk och europeisk lagstiftning valde ProReNata att byta till en Svensk tjänsteleverantör.
+<br><br>Många känner säkert till [eSams](http://www.esamverka.se/download/18.290a0225166bfafb714c0c7a/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf) utlåtande om hur CLOUD Act ökar risken att data i amerkanska molntjänster röjs. Detta var något som ProReNata tog till sig och valde att agera på.
+
+>"Även om vi menar att vi lagrar data i full enlighet med svensk lag, utan röjd sekretess så följer vi noga den diskussion som förs bland våra kunder kring CLOUD Act och lagrandet av data och vi har förstått att våra kunder skulle föredra att data lagras i Sverige hos en svensk leverantör" — Jens Alm, VD ProReNata
+
+<br>
+ProReNata hanterar känslig information åt deras kunder och säkerhet, såväl teknisk som juridisk är deras högsta prioritet.
+<br><br>
+ProReNata gör bedömningen att regelefterlevnad blir enklare genom att använda en svensk lokal molntjänsteleverantör som Safespring. Efter flytten in i Safesprings plattform kommer all information som hanteras i ProReNata Journal att lagras hos oss i Sverige.
+
+>"Vi har efter noggrann övervägan valt att samarbeta med server-leverantören Safespring AB. Vi upplever redan ett mycket gott samarbete med dem och vi delar samma fokus på säkerhet och kundnära arbete" — Jens Alm, VD ProReNata
+
+### Läs mer om ProReNata
+<div class="partner-grid"><a href="https://www.prorenata.se/?utm_source=safespring&utm_medium=blogg&utm_campaign=blogg"><div class="partner-container"><img class="partnerlogo" src="/blogg/images/safespring_prorenata.png"></div></a></div>
