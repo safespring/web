@@ -11,7 +11,8 @@
   --clear-blue-color: #3C9BCD;
   --hind-font: "Hind", sans-serif;
   --mon-font: "Montserrat", sans-serif;
-  --light-weight: 100;
+  --extra-light-weight: 100;
+  --light-weight: 300;
   --normal-weight: 400;
   --medium-weight: 500;
   --heavy-weight: 600;
@@ -30,12 +31,11 @@
 }
 
 p {
-  font: var(--normal-weight) 15px var(--mon-font);
+  font: var(--normal-weight) 19px var(--mon-font);
   color: var(--alt-color);
-  line-height: 20px;
+  line-height: 1.3;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-variant-numeric: normal;
 }
 
 h2 {
@@ -770,12 +770,18 @@ label.switch-label {
   margin-top: 0px;
 }
 .content-body  {
-  font: var(--normal-weight) 15px var(--mon-font);
+  font: var(--normal-weight) 16px var(--mon-font);
   color: var(--alt-color);
+  line-height: 1.25;
   margin-bottom: 10px;
   margin-top: 10px;
   display: grid;
   align-self: start;
+}
+
+.content-body p {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .content-body-index  {
   font: var(--normal-weight) 15px var(--mon-font);
@@ -794,7 +800,7 @@ label.switch-label {
   text-align: center;
 }
 .ingress p {
-  font: var(--light-weight) 25px var(--mon-font);
+  font: var(--extra-light-weight) 25px var(--mon-font);
   margin-bottom: 30px;
   line-height: 1.25;
 }
@@ -987,14 +993,15 @@ label.switch-label {
 }
 .read-more h2 {
   padding: 0;
-  font: var(--heavy-weight) 11px var(--hind-font);
+  font: var(--heavy-weight) 16px var(--hind-font);
   color: var(--heading-color);
   text-transform: uppercase;
-  line-height: 18px
+  line-height: 25px;
 }
 .read-more li {
-  font-size: 12px;
+  font-size: 16px;
   padding: 0px;
+  line-height: 16px;
   list-style-type: none;
   list-style-position: inside;
   text-decoration: none;
@@ -3758,9 +3765,6 @@ p, h1 {
   background-color: #fff;
 }
 
-
-
-
 .extra-small {
   font-size: .7rem;
 }
@@ -3770,6 +3774,7 @@ p, h1 {
 .card-heading {
   font-size: 2.25rem;
   line-height: 1 !important;
+  hyphens: manual;
 }
 .styled-link {
   text-decoration: none;
