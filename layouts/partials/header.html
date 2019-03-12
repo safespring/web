@@ -2,20 +2,29 @@
 <!-- Full Navbar -->
 <div class="navbar">
   <div class="nav-flex">
-    <a class="logo" href="{{ .Site.BaseURL }}">
+    <a href="{{ .Site.BaseURL }}" class="logo">
       <img src={{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}>
     </a>
     <nav id="navigation" class="site-navigation" role="navigation">
       <ul class="menu">
-        <li class="menu-item"><a class="link" href="/om-safespring">Om Safespring</a>
+        <li class="menu-item"><a id="link" href="tel:+460855107370" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-4"></i> 08-55 10 73 70</a></li>
+        <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
+        <li class="menu-item"><a class="link" href="/publikationer">Aktuellt</a>
           <ul class="dropdown">
-            <li class="sub-menu"><a class="" href="/om-safespring/">Om oss</a></li>
-            <li class="sub-menu"><a class="" href="/om-safespring/samarbeten-och-partners">Samarbeten och Partners</a></li>
-            <li class="sub-menu"><a class="" href="/om-safespring/bli-partner">Bli partner med oss!</a></li>
-            <!-- <li class="sub-menu"><a class="" href="/om-safespring/ramavtal">Ramavtal</a></li> -->
-            <li class="sub-menu"><a class="" href="/referenser">Kundreferenser</a></li>
-            <li class="sub-menu"><a class="" href="/om-safespring/datacenter">Våra datacenter</a></li>
-            <li class="sub-menu"><a class="" href="/om-safespring/miljo-och-hallbarhet">Miljö och hållbarhet</a></li>
+            <li class="sub-menu"><a class="" href="/event">Event</a></li>
+            <li class="sub-menu"><a class="" href="/blogg">Blogg</a></li>
+            <li class="sub-menu"><a class="" href="/whitepaper">White Papers</a></li>
+            <li class="sub-menu"><a class="" href="/publikationer">Publikationer</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a class="link" href="/pris">Pris</a></li>
+        <li class="menu-item"><a class="link" href="/branscher">Branscher</a>
+          <ul class="dropdown">
+            <li class="sub-menu"><a class="" href="/branscher/utbildning-forskning">Utbildning och forskning</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/myndigheter">Myndigheter</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/kommuner">Kommuner</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/applikationsutvecklare">Applikationsutvecklare</a></li>
+            <li class="sub-menu"><a class="" href="/branscher/it-leverantorer">IT-leverantörer</a></li>
           </ul>
         </li>
         <li class="menu-item"><a class="link" href="/tjanster">Tjänster</a>
@@ -32,29 +41,20 @@
             <li class="sub-menu"><a class="" href="/support">Support</a></li>
           </ul>
         </li>
-        <li class="menu-item"><a class="link" href="/branscher">Branscher</a>
+        <li class="menu-item"><a class="link" href="/om-safespring">Om Safespring</a>
           <ul class="dropdown">
-            <li class="sub-menu"><a class="" href="/branscher/utbildning-forskning">Utbildning och forskning</a></li>
-            <li class="sub-menu"><a class="" href="/branscher/myndigheter">Myndigheter</a></li>
-            <li class="sub-menu"><a class="" href="/branscher/kommuner">Kommuner</a></li>
-            <li class="sub-menu"><a class="" href="/branscher/applikationsutvecklare">Applikationsutvecklare</a></li>
-            <li class="sub-menu"><a class="" href="/branscher/it-leverantorer">IT-leverantörer</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/">Om oss</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/samarbeten-och-partners">Samarbeten och Partners</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/bli-partner">Bli partner med oss!</a></li>
+            <!-- <li class="sub-menu"><a class="" href="/om-safespring/ramavtal">Ramavtal</a></li> -->
+            <li class="sub-menu"><a class="" href="/referenser">Kundreferenser</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/datacenter">Våra datacenter</a></li>
+            <li class="sub-menu"><a class="" href="/om-safespring/miljo-och-hallbarhet">Miljö och hållbarhet</a></li>
           </ul>
         </li>
-        <li class="menu-item"><a class="link" href="/pris">Pris</a></li>
-        <li class="menu-item"><a class="link" href="/publikationer">Aktuellt</a>
-          <ul class="dropdown">
-            <li class="sub-menu"><a class="" href="/event">Event</a></li>
-            <li class="sub-menu"><a class="" href="/blogg">Blogg</a></li>
-            <li class="sub-menu"><a class="" href="/whitepaper">White Papers</a></li>
-            <li class="sub-menu"><a class="" href="/publikationer">Publikationer</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
-        <li class="menu-item"><a id="link" href="tel:+460855107370" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-4"></i> 08-55 10 73 70</a></li>
       </ul>
     </nav>
-  </div>
+</div>
 </div>
 
 <!-- Mobile Navbar -->
@@ -101,7 +101,7 @@
             <li class="sub-menu"><a class="" href="/branscher/applikationsutvecklare">Applikationsutvecklare</a></li>
             <li class="sub-menu"><a class="" href="/branscher/it-leverantorer">IT-leverantörer</a></li>
           </ul>
-        <li class="menu-item"><a class="link" href="/pris">Pris</a></li>
+        <li class="menu-item"><a class="" href="/pris">Pris</a></li>
         <li class="menu-item">Aktuellt&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-5"></i></li>
           <ul class="menu-item" style="display: none;">
             <li class="sub-menu"><a class="" href="/event">Event</a></li>
@@ -109,7 +109,7 @@
             <li class="sub-menu"><a class="" href="/whitepaper">White Papers</a></li>
             <li class="sub-menu"><a class="" href="/publikationer">Publikationer</a></li>
           </ul>
-        <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
+        <li class="menu-item"><a class="" href="/kontakt">Kontakt</a></li>
         <li class="menu-item"><a id="link" href="tel:+460855107370‬" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 08-55 10 73 70</a></li>
       </ul>
   </div>
@@ -131,3 +131,48 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("h-bar").style.top = "0";
+  } else if (document.body.scrollTop > 1) {
+    document.getElementById("h-bar").style.top = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<!--<script>
+    function debounce(func, wait = 10, immediate = true) {
+      let timeout;
+      return function() {
+        let context = this, args = arguments;
+        let later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        let callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+    let scrollPos = 0;
+    const nav = document.querySelector('.h-bar');
+    function checkPosition() {
+      let windowY = window.scrollY;
+      if (windowY < scrollPos) {
+        // Scrolling UP
+        nav.classList.add('is-visible');
+        nav.classList.remove('is-hidden');
+      } else {
+        // Scrolling DOWN
+        nav.classList.add('is-hidden');
+        nav.classList.remove('is-visible');
+      }
+      scrollPos = windowY;
+    }
+    // window.addEventListener('scroll', checkPosition);
+    window.addEventListener('scroll', debounce(checkPosition));
+  </script>-->
