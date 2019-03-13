@@ -920,7 +920,8 @@ label.switch-label {
 }
 
 .content-body a {
-	color: var(--main-color)
+	color: var(--main-color);
+	font: var(--normal-weight) 16px var(--mon-font);
 }
 
 .content-body a:hover {
