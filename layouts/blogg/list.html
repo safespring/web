@@ -10,6 +10,7 @@
   <!-- CONTENT -->
 	<main class="content-chalmers" style="background:var(--text-color)">
 		<!-- Main  -->
+		<div class="listpage">
 			<div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
 				{{ range .Data.Pages.GroupByDate "2006" }}
 
@@ -18,7 +19,7 @@
         {{ end }}
 			</div>
 
-    <!-- SIDEBAR -->
+    <!-- SIDEBAR
 		<div class="ch-sidebar">
 			<div><img alt="Safespring Logotyp" src="/img/safespring_cloud.svg"></div>
 			<div>
@@ -40,6 +41,11 @@
 		      <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
 		      <li class="content-body"><a href="/support">&gt; Support</a></li>
 		  </div>
-		</div>
+		</div> -->
+	</div>
+	{{ partial "side-bar.html" . }}
+
+</main>
+
 	<!-- FOOTER -->
 	{{ partial "footer.html" . }}

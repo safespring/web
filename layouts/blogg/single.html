@@ -78,19 +78,20 @@
   </div>
 
   <!-- SIDEBAR -->
-  <div class="ch-sidebar">
+  <div class="ch-sidebar shadow-1">
     <div>
       <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
     </div>
 
-    <div>
+    <div class="content-body">
       <h2 class="content-heading">Senaste inläggen</h2>
       {{ range first 5 (where .Site.Pages "Type" "blogg") }}
-        <li class="content-body" id="TableOfContents" style="list-style: none;  "><a href="{{.URL}}">{{ .Title }}</a></li>
+        <li class="" id="" style="list-style: none;"><a href="{{.URL}}">{{ .Title }}</a></li>
+          <br>
       {{ end }}
 
 
-      <br>
+
     </div>
     <a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>
 </br></br>
