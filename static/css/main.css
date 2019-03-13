@@ -900,6 +900,12 @@ label.switch-label {
 	margin-top: 10px;
 }
 
+.content-body ul {
+	font: var(--normal-weight) 17px var(--mon-font);
+	color: var(--alt-color);
+	line-height: 1.3;
+}
+
 .blogg-promo {
 	padding: 5%;
 	background-color: var(--content-color);

@@ -48,11 +48,9 @@
     </main>
     <div class="blogg-promo"><h2>Senaste nytt</h2>
 <div class="flexcontainer" style="align-items:baseline; margin-bottom:200px;">
-          {{ range first 3 .Site.Pages.ByDate.Reverse }}
-            {{ range first 3 (where .Pages "Section" "in" (slice "blogg" "")) }}
+            {{ range first 3 (where .Pages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}
-          {{ end }}
         </div></div>
       <!-->
         {{ $paginator := .Paginate (where .Data.Pages "Type" "blogg") 10 }}
