@@ -870,7 +870,7 @@ label.switch-label {
 		margin: 10% 16px;
 	}
 	body {
-		height: auto;
+		height: 100%;
 	}
 }
 
@@ -900,6 +900,12 @@ label.switch-label {
 	margin-top: 10px;
 }
 
+.content-body ul {
+	font: var(--normal-weight) 17px var(--mon-font);
+	color: var(--alt-color);
+	line-height: 1.3;
+}
+
 .blogg-promo {
 	padding: 5%;
 	background-color: var(--content-color);
@@ -920,7 +926,8 @@ label.switch-label {
 }
 
 .content-body a {
-	color: var(--main-color)
+	color: var(--main-color);
+	font: var(--normal-weight) 16px var(--mon-font);
 }
 
 .content-body a:hover {
