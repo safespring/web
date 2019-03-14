@@ -8,7 +8,7 @@ socialmediabild: "safespring-piql.jpg"
 background: "safespring-piql.jpg"
 ---
 
-<a href="/#" id="button">Read in English</a> <!--<a href="/#" id="button">Read in Norwegian</a>-->
+<a href="/marketing/Safespring_press-release_20919-03-14_Piql-and-Safespring-collaborate-for-enhanced-services.pdf" id="button">Read in English</a> <!--<a href="/#" id="button">Read in Norwegian</a>-->
 
 ## Piql och Safespring i nytt sammarbete
 
