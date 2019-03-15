@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "sv-SE"
-title = "Safespring"
+title = "Svenska molntjänster"
 author = "Safespring"
 copyright = "2019 Safespring"
 
@@ -50,7 +50,7 @@ SectionPagesMenu = "main"
 
 [params.social]
     github = "safespring/web"
-    linkedin = "https://www.linkedin.com/company/16166768"
+    linkedin = "https://www.linkedin.com/company/safespring"
     twitter = "@safespring"
 
 

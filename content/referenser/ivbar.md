@@ -1,13 +1,15 @@
 ---
-title: "IVBAR"
+title: "Safespring löser tekniska utmaningar för IVBAR"
 date: 2019-01-08T13:32:28+01:00
 draft: false
 intro: "“I dialogen med Safespring känner våra experter att de pratar med andra experter, som dessutom är uppriktiga och lyhörda. Vi känner att vi hjälper varandra. Detta är en helt unik upplevelse jämfört med andra IT-partners“"
-background: "safespring_bilder_IVBAR.jpg"
-socialmedia: ""
+background: "safespring_ivbar.jpg"
+socialmedia: "safespring_ivbar.jpg"
 ---
-## Säkra molntjänster från Safespring löser tekniska utmaningar för IVBAR
-IVBAR är en startup som nyligen benämndes som ett av europas topp-20 bolag i vårdteknik-sektorn. Mjukvaran de erbjuder hjälper vårdföretag att göra avancerad verksamhetsanalys, ersättningsmodeller och internationell benchmarking inom sjukvården. Safesprings bakgrund i säkerhet och flexibilitet gör att Ivbar enkelt kan utveckla sin tjänst ovanpå Safesprings infrastruktur.
+
+<div class="ingress"><p>IVBAR är en startup som nyligen benämndes som ett av europas topp-20 bolag i vårdteknik-sektorn.</p></div>
+
+Mjukvaran de erbjuder hjälper vårdföretag att göra avancerad verksamhetsanalys, ersättningsmodeller och internationell benchmarking inom sjukvården. Safesprings bakgrund i säkerhet och flexibilitet gör att Ivbar enkelt kan utveckla sin tjänst ovanpå Safesprings infrastruktur.
 
 Med Ivbars mjukvara analyseras vårdutfall uttryckt i patientens upplevda livskvalitet (snarare än vårdens interna sekvens fakturerbara händelser). Ivbar stödjer verksamheterna i förbättringsarbete runt detta och skapar även nya former av betalningsmodeller inom vården som leder till “rätt” incitament, dvs. det ska premieras att man skapar goda utfall för patienterna.
 
