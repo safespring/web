@@ -445,9 +445,9 @@ label.switch-label {
 	padding: 0px 0px 0px 0px;
 }
 
-.menu-item:last-child ul {
+/*.menu-item:last-child ul {
 	padding: 0px 0px 20px 30px;
-}
+}*/
 
 .blur {
 	background: inherit;
@@ -2229,7 +2229,7 @@ label {
 }
 
 .h-menu>li.menu-item {
-	padding: 0px 0px 0px 25px;
+	padding: 0px 0px 0px 0px;
 }
 
 .h-menu ul {
