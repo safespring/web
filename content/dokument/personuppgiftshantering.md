@@ -1,11 +1,13 @@
 ---
-title: "Personuppgiftshantering"
+title: "Information avseende personuppgiftsbehandling"
 date: 2018-06-27T14:29:26+02:00
 draft: false
+intro: "Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com"
 ---
 
-## Information avseende personuppgiftsbehandling
-Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret. Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”).
+<div class="ingress"><p>Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret.</p></div> 
+
+Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”).
 
 *Blue Safespring AB, org. nr. 559075–0245, är personuppgiftsansvariga för behandlingen av Personuppgifterna.*
 

@@ -8,7 +8,7 @@ form: "yes"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-compute-web.pdf"
 ---
-## VIRTUELLA MASKINER TILL ER TJÄNST
+## Virtuella maskiner till er tjänst
 **En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar**
 
 Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.

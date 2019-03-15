@@ -42,7 +42,6 @@ h2 {
 	padding-top: 30px;
 	font: var(--heavy-weight) 24px var(--hind-font);
 	color: var(--heading-color);
-	text-transform: uppercase;
 }
 
 img {
@@ -59,13 +58,21 @@ h3 {
 html {
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
-	height: 100%
+	height: 100%;
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+	html {
+		height: auto;
+	}
+	body {
+		height: auto;
+	}
 }
 
 body {
 	margin: 0;
 	overflow: auto;
-	height: 100%;
+	height: inherit;
 	font-variant-numeric: normal;
 	scroll-behavior: smooth;
 }
@@ -426,7 +433,7 @@ label.switch-label {
 
 .menu-item {
 	text-align: left;
-	padding: 20px;
+	padding: 22px 20px 18px 20px;
 	float: right;
 }
 
@@ -553,7 +560,7 @@ label.switch-label {
 	position: relative;
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: [full-start] minmax(1em, 1fr)[main-start] minmax(0, 67rem)[main-end] minmax(1em, 1fr)[full-end];
+	grid-template-columns: repeat(10, 1fr);
 	height: 100vh;
 }
 
@@ -685,7 +692,7 @@ label.switch-label {
 }
 
 .heading-background {
-	height: 500px;
+	height: inherit;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -831,7 +838,7 @@ label.switch-label {
 	flex-direction: column;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 1500px) {
 	.content-main-index {
 		background: var(--text-color);
 		display: grid;
@@ -846,8 +853,25 @@ label.switch-label {
 		max-width: 700px;
 		grid-column: span 6;
 	}
+	.content-container-index {
+		grid-column: 2 / span 6;
+		bottom: 15vh;
+	}
 }
-
+.content-body-index {
+	font: var(--normal-weight) 15px var(--mon-font);
+	color: var(--alt-color);
+	margin: 10%;
+	display: grid;
+	align-self: start;
+	max-width: 700px;
+	grid-column: span 6;
+}
+.content-main-index {
+	background: var(--text-color);
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
 .content-image {
 	background: url('/img/safespring-first-page.jpg');
 	background-size: cover;
@@ -859,12 +883,17 @@ label.switch-label {
 @media only screen and (max-width: 900px) {
 	.content-image {
 		order: 2;
+		grid-column: span 10;
+	}
+	.menu-item {
+margin-left: 24px;
 	}
 	.content-body-index {
 		margin: 10% 16px;
+		grid-column: span 10;
 	}
-	body {
-		height: 100%;
+	.content-body-index p {
+		margin-bottom: 0px;
 	}
 }
 
@@ -1018,6 +1047,10 @@ label.switch-label {
 	.heading-content {
 		grid-column: 3 / span 5;
 	}
+	.content-container-index {
+		grid-column: 3 / span 5;
+		bottom: 15vh;
+	}
 	.logo {
 		grid-column: 3;
 		min-width: 150px;
@@ -1035,6 +1068,10 @@ label.switch-label {
 	.ch-sidebar p {
 		font-size: 16px;
 	}
+}
+.content-container-index {
+	position: absolute;
+	display: block;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1537,7 +1574,6 @@ label.switch-label {
 	padding: 0 0 10px;
 	font: var(--heavy-weight) 18px var(--hind-font);
 	color: var(--heading-color);
-	text-transform: uppercase;
 	line-height: 18px
 }
 
@@ -1804,31 +1840,11 @@ label.switch-label {
 	max-width: 700px;
 }
 
-.content-container-index {
-	margin: 35vh 0 0 0;
-	padding: 0 0 5vh 0;
-	border-radius: 3px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	max-width: 700px;
-}
-
 @media only screen and (max-width: 900px) {
 	.content-container-index {
-		margin: 15vh 0 0 0;
-		padding: 0 0 5vh 0;
-		border-radius: 3px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		max-width: 700px;
+		margin: 0px 16px 0 16px;
+		top: 15vh;
+		grid-column: span 10;
 	}
 	.heading-index:before {
 		content: "";
@@ -2172,10 +2188,6 @@ label {
 	justify-self: end
 }
 
-.h-menu {
-	grid-column: 1 / span all;
-}
-
 .h-logo img {
 	max-width: 155px;
 	color: var(--text-color);
@@ -2214,6 +2226,7 @@ label {
 }
 
 .h-menu {
+	grid-column: 1 / span 10;
 	background: var(--alt-color);
 	margin: 10px 0px 0px -8px;
 	display: -ms-grid;
@@ -2224,7 +2237,6 @@ label {
 	clear: both;
 	width: auto;
 	visibility: hidden;
-	text-align: center;
 	z-index: 110;
 }
 
@@ -2290,6 +2302,7 @@ label {
 	}
 	#h-bar .sub-menu {
 		font: var(--normal-weight) 16px var(--mon-font);
+		padding-left: 0px;
 	}
 	#h-bar>* {
 		grid-row: main

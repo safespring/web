@@ -4,15 +4,14 @@ date: 2018-06-20
 draft: false
 author: "Martin Millnert"
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
-huvudbildnamn: "CLOUD.jpg"
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
 background: "Safespring_huvudbild_cloudact.jpg"
 ---
 
-## Inledning
+<div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>
 
-Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL). Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 2009 [(1)](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=celex:12016P/TXT "Stadgan för grundläggande rättigheter"). EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.
+Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 2009 [(1)](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=celex:12016P/TXT "Stadgan för grundläggande rättigheter"). EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
@@ -36,6 +35,8 @@ Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestäm
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
+	<br>
+	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
 	<button type="submit" id="button">Ladda ner</button>
 </form>
 <script>
