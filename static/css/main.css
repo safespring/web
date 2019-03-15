@@ -35,18 +35,14 @@ p {
 	font: var(--normal-weight) 17px var(--mon-font);
 	color: var(--alt-color);
 	line-height: 1.3;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin: 0 0 20px 0;
 }
 
 h2 {
 	padding-top: 30px;
-	font: var(--heavy-weight) 18px var(--hind-font);
+	font: var(--heavy-weight) 24px var(--hind-font);
 	color: var(--heading-color);
 	text-transform: uppercase;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	font-variant-numeric: normal;
 }
 
 img {
@@ -54,12 +50,10 @@ img {
 }
 
 h3 {
-	padding-top: 20px;
-	font: var(--heavy-weight) 12px var(--hind-font);
+	margin: 40px 0 10px 0;
+	font: var(--heavy-weight) 20px var(--hind-font);
 	color: var(--alt-color);
-	text-transform: uppercase;
-	margin-bottom: 0px;
-	font-variant-numeric: normal;
+	line-height: 21px;
 }
 
 html {
@@ -607,7 +601,7 @@ label.switch-label {
 
 .heading-content {
 	margin: 166px 0 5% 0;
-	grid-column: 2 / span 5;
+	grid-column: 2 / span 6;
 	max-width: 700px;
 }
 
@@ -895,11 +889,6 @@ label.switch-label {
 	margin-top: 0px;
 }
 
-.content-body p {
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
 .content-body ul {
 	font: var(--normal-weight) 17px var(--mon-font);
 	color: var(--alt-color);
@@ -936,19 +925,10 @@ label.switch-label {
 
 .content-body h2 {
 	padding-top: 30px;
-	font: var(--heavy-weight) 18px var(--hind-font);
+	font: var(--heavy-weight) 24px var(--hind-font);
 	color: var(--heading-color);
-	text-transform: uppercase;
+	line-height: 25px;
 	margin-bottom: 0px;
-}
-
-.content-body h3 {
-	padding-top: 15px;
-	font: var(--heavy-weight) 15px var(--hind-font);
-	color: var(--alt-color);
-	text-transform: uppercase;
-	margin-bottom: 0px;
-	font-variant-numeric: normal;
 }
 
 .partner-container {
@@ -1026,6 +1006,9 @@ label.switch-label {
 	.ch-sidebar p {
 		font-size: 16px;
 	}
+	.ch-sidebar h2 {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (min-width: 1500px) {
@@ -1033,7 +1016,7 @@ label.switch-label {
 		grid-column: 4 / span 6;
 	}
 	.heading-content {
-		grid-column: 3 / span 4;
+		grid-column: 3 / span 5;
 	}
 	.logo {
 		grid-column: 3;
@@ -4049,7 +4032,7 @@ td {
 	}
 }
 
-p, h1 {
+h1 {
 	margin: 0;
 	padding: 0;
 }
