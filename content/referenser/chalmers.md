@@ -1,9 +1,9 @@
 ---
-title: "Chalmers Tekniska Högskola"
+title: "Safespring levererar säker molnbaserat backuptjänst till Chalmers"
 date: 2019-01-09T13:32:28+01:00
 draft: false
 intro: "”Vi känner oss tryggare med Safesprings backuplösning och har en kontinuitet vi inte hade förut. Tjänsten uppfyller förväntningarna både ur ett tekniskt-, informationssäkerhetsmässigt- och ekonomiskt perspektiv”"
-background: "safespring_bilder_chalmers.jpg"
+background: "Safespring_background_chalmers.jpg"
 socialmedia: ""
 ---
 ## SAFESPRING LEVERERAR SÄKER MOLNBASERAD BACKUPTJÄNST TILL CHALMERS

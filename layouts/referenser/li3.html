@@ -1,0 +1,17 @@
+  <div class="content-meta-post">
+    <a class="content-category-blogg" href="/{{ .Section }}">
+      {{ if eq .Section "tjanster" }}Tjänster{{ else if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else }}{{ .Section }}{{ end }}
+    </a>
+  </div>
+  <br>
+  <h1 class="post-heading-firstpage">
+    {{ .Title }}
+  </h1>
+  <div class="content-summary-blogg">
+    {{ .Params.intro }}</br></br>
+    {{ if .Params.sidebarlinkurl }}
+    <div><a href="{{ .Params.sidebarlinkurl }}" id="text-button">{{ .Params.sidebarlinkname }}</a></div>
+    {{ end }}
+  </div>
+  <br>
+  <br>
