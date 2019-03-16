@@ -1,10 +1,9 @@
 {{ partial "head.html" . }}
-<body>
   {{ partial "svg-filter.html" . }}
   {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
    {{ partial "header.html" . }} <!-- HEADING -->
-   <img class="heading-background safespring_blue" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
 <div class="heading-sub">
+  <img class="heading-background safespring_blue" style="background: url('{{ if.Params.background }}/whitepaper/images/background/{{ .Params.background }}{{ else }}/whitepaper/images/background/background.jpg{{ end }}'); background-size: cover; background-position: center;">
 <div class="heading-content">
        {{ .Render "li3" }}
      </div>

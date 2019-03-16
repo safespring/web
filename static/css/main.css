@@ -684,11 +684,12 @@ label.switch-label {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	overflow: hidden;
+	background-position: center;
+	background-size: cover;
 }
 
 .heading-background {
-	height: inherit;
-	width: 100%;
+	height: 100%;
 	left: 0px;
 	top: 0px;
 	z-index: -1;
@@ -696,8 +697,7 @@ label.switch-label {
 }
 
 .heading-background-event {
-	height: inherit;
-	width: 100%;
+	height: 100%;
 	left: 0px;
 	top: 0px;
 	z-index: -1;
