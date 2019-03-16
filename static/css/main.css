@@ -55,18 +55,10 @@ h3 {
 	line-height: 21px;
 }
 
-html {
+/*html {
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 	height: 100%;
-}
-@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
-	html {
-		height: auto;
-	}
-	body {
-		height: auto;
-	}
 }
 
 body {
@@ -75,6 +67,9 @@ body {
 	height: inherit;
 	font-variant-numeric: normal;
 	scroll-behavior: smooth;
+}*/
+body {
+	margin: 0;
 }
 
 a {
