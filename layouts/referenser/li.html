@@ -27,7 +27,7 @@
 </div>
 -->
 <div class="content-container">
-  <a href="{{ .Permalink }}">
+  <a href="{{ .Permalink | relURL }}">
   <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
       <div style="background: url({{ if.Params.background }}/referenser/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; height:240px;" alt="{{ .Title }}" class="d-block w-full"></div>
 <div class="px-2 py-2">
