@@ -148,6 +148,10 @@ textarea {
 	border-radius: 25px;
 }
 
+.green {
+	color: var(--green-color)
+}
+
 ::placeholder {
 	color: var(--main-color);
 	opacity: 1;
@@ -1054,7 +1058,7 @@ margin-left: 24px;
 		grid-column: 3 / span 5;
 	}
 	.listpage {
-		grid-column: span 6;
+		grid-column: span 7;
 	}
 	.ch-sidebar {
 		grid-column: 8 / span 2;
@@ -4119,10 +4123,16 @@ h1 {
 
 .extra-small {
 	font-size: .7rem;
+	padding-top: 4px;
 }
 
 .small {
 	font-size: 1rem;
+}
+
+.big {
+	font-weight: var(--extra-light-weight);
+		font-size: 1.5rem;
 }
 
 .card-heading {
@@ -4134,12 +4144,12 @@ h1 {
 .styled-link {
 	text-decoration: none;
 	outline: none;
-	color: #195F8C;
+	color: var(--link-color);
 	transition: all 0.25s ease-in;
 }
 
 .styled-link:hover, .styled-link:focus, .styled-link:active {
-	color: #FA690F;
+	color: var(--main-color);
 }
 
 .shadow-1 {
@@ -4351,7 +4361,6 @@ h1 {
 }
 
 .flexcontainer {
-	max-width: 1300px;
 	margin: auto;
 	display: flex;
 	align-items: center;

@@ -20,7 +20,9 @@
          })(window,document,'script','dataLayer','GTM-TXLJWD7');
       </script>
       <!-- End Google Tag Manager -->
-
+{{ if .Params.noindex }}
+<meta name="robots" content="noindex">
+{{ else }}{{ end }}
       <!-- Site Title changes according to current page -->
       <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra, lokala molntjänster{{ end }}</title>
       <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
