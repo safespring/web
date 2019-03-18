@@ -133,6 +133,8 @@ Med **Synkzone by Safespring** kan ni enkelt dela filer inom er organisation kry
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
+	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
+  <br>
 	<button type="submit" class="button">Skicka in beställning</button>
 </form>
 <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
