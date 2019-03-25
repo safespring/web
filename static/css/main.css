@@ -4434,7 +4434,7 @@ h1 {
   }
 
   .row .cell:before {
-    font-family: Hind;
+    font-family: var(--hind-font);
     font-size: 13px;
     color: #195F8C;
     line-height: 1.2;
@@ -4459,7 +4459,7 @@ h1 {
 }
 
 .row .cell {
-  font-family: Montserrat-Regular;
+  font-family: var(--mon-font);
   font-size: 15px;
   color: #666666;
   line-height: 1.2;
@@ -4471,7 +4471,7 @@ h1 {
 }
 
 .row.header .cell {
-  font-family: Hind;
+  font-family: var(--hind-font);
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
@@ -4531,7 +4531,7 @@ h1 {
   }
 
   .row .cell {
-    font-family: Montserrat-Regular;
+    font-family: var(--mon-font);
     font-size: 18px;
     color: #555555;
     line-height: 1.2;
