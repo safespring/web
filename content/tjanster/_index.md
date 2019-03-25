@@ -6,7 +6,6 @@ intro: "Molntjänster med hög säkerhet! Stabil infrastruktur och resurskonsume
 background: "safespring_bilder_8.jpg"
 form: "yes"
 aliases:
-    - /edtech/
     - /tjenester
 ---
 Stabil infrastruktur och resurskonsumering efter behov.
