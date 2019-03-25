@@ -1,15 +1,44 @@
 ---
 title: "Utbildning"
 date: 2019-01-07T13:58:58+01:00
-draft: true
+draft: false
 intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum arcu non ligula maximus blandit. Nulla ultricies libero et sapien sodales, eu nullam."
 background: "safespring_bilder_8.jpg"
 ---
-## Lorem ipsum dolor sit amet
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ex eu odio consequat molestie a sit amet sem. Praesent non ligula risus. Ut efficitur, mi sit amet porttitor vehicula, nisi enim gravida justo, quis consequat est dui nec velit. In in molestie dolor, sit amet efficitur diam. Nulla ut sem ac dui mattis pretium. Morbi scelerisque massa et enim egestas faucibus. Curabitur vitae consectetur felis, id varius turpis.
+<div class="ingress"><p>Målet med Lean AI-programmet är att skapa processer och teknik som integrerar kunskap, processer och data i arbetsflöden som stöder kontinuerlig innovation.</p></div>
 
-Nulla in suscipit turpis. Pellentesque malesuada elit at felis sollicitudin sollicitudin. Nunc nec tellus faucibus, congue ipsum eu, congue felis. Integer aliquet fermentum blandit. Maecenas cursus vulputate tortor eu convallis. Quisque maximus aliquam commodo. Proin eleifend, nulla non feugiat hendrerit, turpis risus rutrum massa, at ultrices nisi nisi sed erat. Curabitur quis hendrerit dui. Nunc consequat, eros non luctus interdum, tortor tortor vehicula nibh, rhoncus mattis lectus quam sit amet sem. Proin at magna malesuada, pellentesque arcu eu, commodo mauris. In aliquam, tellus nec imperdiet tincidunt, augue lorem tempor mi, venenatis feugiat sapien lectus ut lectus.
+Vi tror att adoptera AI är en smidig startprocess. Som sådan handlar det lika mycket om människor som det handlar om teknik.
 
-Maecenas ac porttitor justo. Mauris cursus quis enim nec iaculis. Proin eget purus lorem. Nam faucibus accumsan congue. Donec vehicula gravida leo eget commodo. Nunc vitae velit eget ligula tempor rhoncus eget sit amet metus. Sed nisi arcu, molestie a orci vel, imperdiet scelerisque sem. Suspendisse porttitor neque quis nisi dignissim, sed fringilla massa vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus blandit risus. Morbi condimentum pulvinar dictum. Quisque leo leo, vestibulum vel accumsan sit amet, sodales non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc id diam lacinia, vulputate elit in, suscipit ante.
+Processerna spänner maskininlärning FoU, datateknik, mjukvaruutveckling och IT-verksamhet och kräver nära samarbete i korsfunktionella, smidiga team.
+DevOps ändrade IT-verksamheten för att bli en del av ett kontinuerligt mjukvaruleveranssystem. I en liknande anda låter Lean AI datavetenskap bli en del av ett liknande kontinuerligt leveranssystem tillsammans med domänexperter, programutvecklare och IT-operationer.
 
-Fusce cursus porttitor tortor, sed laoreet ante consequat eget. Maecenas vestibulum gravida laoreet. Nullam id iaculis diam. Etiam ut enim aliquet eros tempor lobortis. Vivamus diam sem, tincidunt ut turpis ultricies.
+Scaleout Lean AI-konceptet är utformat för att påskynda adoption av AI genom att ge de lag som använder sig av fall till produktionstjänster.
+
+Den tar itu med utmaningen att sätta och hålla verkliga AI i produktionen i sin kärna genom att ge organisationen både den kunskap, de verktyg och det stöd som behövs för att upprepade gånger lyckas med AI-projekt.
+
+## Programöversikt
+Lean AI-programmet har tre huvudfaser
+
+### 1. Lagbildnings- och inriktningsfas
+Denna fas introducerar Lean AI-processen och den associerade tekniken och anpassar lagmedlemskunskapen i kärnområdena cloud native computing och datavetenskap.
+Detta görs som en serie teman som vi går igenom under 6 veckor:
+
+1. Introduktion till Lean AI-programmet
+1. The DevOps-kulturen
+1. Kubernetes och container orkestration
+1. Cloud-agnostisk automation med Kubernetes
+1. Introduktion till CI / CD
+1. De Stegen som involveras i konstruktionen av en maskininlärningsmodell
+1. Open source-verktyg för ML-modellering från ett IT-perspektiv
+
+Läs mer om Scaleout Cloud-inbyggd AI-stack.
+
+### 2. Projektarbete
+Den centrala delen av programmet är att arbeta på ett “use case” som ett team, att ta ett “use case” från första data till en produktionstjänst. Teamet ska i samarbete med Scaleout-teamet välja ett “use case” med teknisk komplexitet som är anpassad till gruppmedlemmarnas  erfarenheter.
+
+Målet är att få en holistisk förståelse för de processer som tar ett “use case” till produktionen.
+
+### 3. Avslutande verkstad
+Programmet avslutas med en halvdag workshop som börjar med laget som presenterar projektet för kollegor / ledarskap i egen organisation.
+
+Vi engagerar oss sedan i fokuserade diskussioner om hur vi kan utnyttja den kunskap som erhölls i din organisation och på nästa steg i din AI-resa.
