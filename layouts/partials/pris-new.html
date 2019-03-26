@@ -20,7 +20,7 @@
 </div>
 </main>
 <div class="background-gray" id="prisexempel">
-	<div class="flexcontainer" style="align-items:baseline; margin-bottom:200px;">
+	<div class="flexcontainer" style="align-items:baseline;">
 		<div class="content-container">
 			<a href="/upplev">
 			<div class="body my-2 p-relative bg-white shadow-1 blue-hover">
@@ -157,20 +157,28 @@
 		</div>
 		{{ partial "price-table-microsoft.html" . }}
 		{{ partial "price-table-linux.html" . }}
+		{{ partial "price-table-block-storage.html" . }}
 		<div class="ch-content mb-1">
 			<div class="content-body">
 				<h2>Mjukvara</h2>
-				<p>Safesprings infrastruktur som tjänst kan kompletteras med mjukvara som visas nedan. Dessa priser är utöver det vi tar ut för vår Computetjänst som listas ovan.</p>
+				<p>Safesprings infrastruktur som tjänst kan kompletteras med mjukvara som visas nedan.</p>
 			</div>
 		</div>
 		{{ partial "price-table-mjukvara.html" . }}
 		<div class="ch-content mb-1">
 			<div class="content-body">
 				<h2>Nätverk</h2>
-				<p>Safesprings infrastruktur som tjänst (Compute) kan kompletteras med mjukvara som visas nedan. Dessa priser är utöver det vi tar ut för vår Computetjänst som listas ovan.</p>
+				<p></p>
 			</div>
 		</div>
 		{{ partial "price-table-network.html" . }}
+		<div class="ch-content mb-1">
+			<div class="content-body">
+				<h2>Safespring Backup</h2>
+				<p>Dedup är en datareduktion som görs i tjänsten. Beroende på data varierar det normalt mellan 45-90 procent</p>
+			</div>
+		</div>
+		{{ partial "price-table-backup.html" . }}
 </main>
 	<!-- FOOTER -->
 	{{ partial "footer.html" . }}
