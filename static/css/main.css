@@ -6,8 +6,8 @@
 	--alt-color: #323232;
 	--text-color: #FAFEFE;
 	--content-color: #EEF2F4;
-	--accent-color: #19F064;
-	--green-color: #19F064;
+	--web-green-color: #19F064;
+	--green-color: #32CD32;
 	--clear-blue-color: #3C9BCD;
 	--hind-font: "Hind", sans-serif;
 	--mon-font: "Montserrat", sans-serif;
@@ -149,7 +149,7 @@ textarea {
 }
 
 .green {
-	color: var(--green-color)
+	color: var(--web-green-color)
 }
 
 ::placeholder {
@@ -292,7 +292,7 @@ blockquote p {
 }
 
 .inputGroup input:checked~label:after {
-	background-color: var(--green-color);
+	background-color: var(--web-green-color);
 	border-color: var(--main-color);
 }
 
@@ -794,7 +794,7 @@ label.switch-label {
 
 .address, .about {
 	justify-self: start;
-	border-right: 1px solid var(--accent-color);
+	border-right: 1px solid var(--web-green-color);
 	width: auto;
 	padding-right: 25px
 }
@@ -1039,9 +1039,9 @@ margin-left: 24px;
 	}
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1600px) {
 	.site-navigation {
-		grid-column: 4 / span 6;
+		grid-column: 4 / span 5;
 	}
 	.heading-content {
 		grid-column: 3 / span 5;
@@ -1604,7 +1604,7 @@ margin-left: 24px;
 .sb-heading {
 	margin: 5px 0px 5px 0px;
 	font: var(--heavy-weight) 15px var(--hind-font);
-	color: var(--accent-color);
+	color: var(--web-green-color);
 	text-transform: uppercase;
 }
 
@@ -1614,7 +1614,7 @@ margin-left: 24px;
 }
 
 .sb-bottom li {
-	color: var(--accent-color)
+	color: var(--web-green-color)
 }
 
 .sb-bottom ul {
@@ -1653,7 +1653,7 @@ margin-left: 24px;
 }
 
 .ss-heading {
-	color: var(--accent-color);
+	color: var(--web-green-color);
 	text-transform: uppercase;
 	margin: 5px 0 5px 0;
 }
@@ -1763,7 +1763,7 @@ margin-left: 24px;
 }
 
 .tj-secure ol li {
-	color: var(--accent-color);
+	color: var(--web-green-color);
 	font: var(--heavy-weight) 15px var(--mon-font);
 }
 
@@ -1968,7 +1968,7 @@ margin-left: 24px;
 
 .content-category-blogg {
 	font: var(--heavy-weight) 14px var(--mon-font);
-	color: var(--green-color);
+	color: var(--web-green-color);
 	padding: 10px 0 0;
 	text-transform: uppercase;
 }
@@ -1989,7 +1989,7 @@ margin-left: 24px;
 
 .content-category-event {
 	font: var(--heavy-weight) 14px var(--mon-font);
-	color: var(--green-color);
+	color: var(--web-green-color);
 	padding: 10px 0 0;
 }
 
@@ -2024,7 +2024,7 @@ margin-left: 24px;
 
 .blogg-meta {
 	font: var(--heavy-weight) 14px var(--mon-font);
-	color: var(--green-color);
+	color: var(--web-green-color);
 	margin-bottom: 15px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -2098,7 +2098,7 @@ margin-left: 24px;
 
 .pris-data {
 	font: var(--normal-weight) 22px var(--hind-font);
-	color: var(--accent-color);
+	color: var(--web-green-color);
 	text-transform: uppercase
 }
 
@@ -4025,7 +4025,7 @@ td {
 	background-color: #fafafa;
 	overflow: hidden;
 	border-radius: 5px;
-	width: 390px;
+	width: 350px;
 }
 
 .body::before, .body::after {
@@ -4374,19 +4374,25 @@ h1 {
 /* PRICE TABLE */
 
 .container-table100 {
- display: -webkit-box;
- display: -webkit-flex;
- display: -moz-box;
- display: -ms-flexbox;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-wrap: wrap;
- padding: 5%;
+ display: grid;
+ grid-column: 3 / span 6;
+}
+
+@media screen and (max-width: 1600px) {
+	.container-table100 {
+	 display: grid;
+	 grid-column: 2 / span 8;
+	}
+}
+@media screen and (max-width: 900px) {
+	.container-table100 {
+	 display: grid;
+	 grid-column: span 10;
+	 margin: 0 16px 0 16px
+	}
 }
 
 .price-table {
-  width: 960px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -4411,8 +4417,8 @@ h1 {
 }
 
 .row.header {
-  color: #fafefe;
-  background: #417DA5;
+	color: #fafefe;
+	background: #195F8C;
 }
 
 .row.header:hover {
@@ -4465,43 +4471,48 @@ h1 {
   line-height: 1.2;
   font-weight: unset !important;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.row:last-of-type .cell {
+  border-bottom: 0px solid #fff;
+	padding-bottom: 16px;
 }
 
 .row.header .cell {
   font-family: var(--hind-font);
   font-size: 18px;
-  color: #fff;
+	color: #fafefe;
+	background: #195F8C;
   line-height: 1.2;
   font-weight: unset !important;
 
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 21px;
+  padding-bottom: 17px;
 }
 
 .row .cell:nth-child(1) {
-  width: 360px;
+  width: 450px;
   padding-left: 40px;
 }
 
 .row .cell:nth-child(2) {
-  width: 160px;
+  width: 150px;
 }
 
 .row .cell:nth-child(3) {
-  width: 250px;
+  width: 150px;
 }
 
 .row .cell:nth-child(4) {
-  width: 190px;
+  width: 150px;
 }
 
 .row .cell:nth-child(5) {
-  width: 190px;
+  width: 150px;
 }
-
 
 .table, .row {
   width: 100% !important;
@@ -4541,6 +4552,77 @@ h1 {
   .table, .row, .cell {
     width: 100% !important;
   }
+}
+
+.hide{
+  display: none;
+}
+
+/* TOGGLE */
+
+.toggle, .toggler {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toggler {
+  color: #666;
+  transition: .2s;
+	font: var(--normal-weight) 17px var(--hind-font);
+}
+
+.toggler--is-active {
+  color: var(--link-color);
+}
+
+.b {
+  display: block;
+}
+
+.toggle {
+  position: relative;
+  width: 54px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: var(--main-color);
+  overflow: hidden;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
+	margin: 10px;
+}
+
+.check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+.check:checked ~ .switch {
+  right: 2px;
+  left: 57.5%;
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-property: left, right;
+  transition-delay: .08s, 0s;
+}
+
+.switch {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 57.5%;
+  background-color: #fff;
+  border-radius: 36px;
+  z-index: 1;
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-property: left, right;
+  transition-delay: 0s, .08s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* END PRICE TABLE */
