@@ -7,6 +7,8 @@ dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
 background: "Safespring_huvudbild_cloudact0.jpg"
+aliases:
+    - /whitepapers/cloudact
 ---
 
 <div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>
