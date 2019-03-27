@@ -73,12 +73,12 @@ body {
 }
 
 a {
-	color: var(--link-color);
+	color: var(--heading-color);
 	text-decoration: none;
 }
 
 a:hover {
-	color: var(--heading-color);
+	color: var(--link-color);
 	text-decoration: none;
 }
 
@@ -1827,9 +1827,7 @@ margin-left: 24px;
 }
 
 .content-container ul, li, a {
-	list-style: none;
 	padding: 0;
-	color: var(--main-color);
 	margin: 0px;
 }
 
@@ -4646,14 +4644,14 @@ h1 {
 
 .support-list li {
   list-style: none;
-  color: #888;
+  color: #757575;
   font-size: 16px;
   font-weight: normal;
 }
 
 .support-list a {
   border-bottom: 1px solid transparent;
-  color: #888;
+  color: #757575;
   text-decoration: none;
   transition: all 0.2s ease;
 }
@@ -4665,7 +4663,7 @@ h1 {
 
 .support-list .folder,
 .support-list .folder > a {
-  color: #777;
+  color: #757575;
   font: var(--heavy-weight) 17px var(--hind-font);
 }
 

@@ -45,8 +45,8 @@
         <a href="/om-safespring/bli-partner" id="text-button">Bli partner med oss</a>
       </div>
     </main>
-    <div class="background-gray"><h2>Senaste nytt</h2>
-<div class="flexcontainer" style="align-items:baseline; margin-bottom:200px;">
+    <div class="background-gray"><h2 style="text-align:center;">Senaste nytt</h2>
+<div class="flexcontainer" style="align-items:baseline;">
             {{ range first 3 (where .Pages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}
