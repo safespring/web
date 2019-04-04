@@ -9,6 +9,7 @@ intro: "Detta whitepaper handlar särskilt om EU-rättens och amerikansk rätts 
 background: "Safespring_huvudbild_cloudact0.jpg"
 aliases:
     - /whitepapers/cloudact
+    - /cloudact
 ---
 
 <div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>

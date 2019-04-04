@@ -2,14 +2,8 @@
 {{ if eq $.Params.title "Aktuellt" }}
 {{ partial "aktuellt.html" . }}
 
-{{ else if eq $.Params.title "Chalmers erfarenheter av backup som tjänst" }}
-{{ partial "chalmers.html" . }}
-
 {{ else if eq $.Params.title "Kontakta oss" }}
 {{ partial "kontakt.html" . }}
-
-{{ else if eq $.Params.title "Kundreferenser" }}
-{{ partial "kundreferenser.html" . }}
 
 {{ else if eq $.Params.title "Pris" }}
 {{ partial "pris.html" . }}
@@ -22,27 +16,6 @@
 
 {{ else if eq $.Params.title "Tack för ditt meddelande" }}
 {{ partial "tack.html" . }}
-
-{{ else if eq $.Params.title "Testa backup som tjänst" }}
-{{ partial "testa-safespring-backup.html" . }}
-
-{{ else if eq $.Params.title "Testa lagring som tjänst" }}
-{{ partial "testa-safespring-storage.html" . }}
-
-{{ else if eq $.Params.title "Testa infrastruktur som tjänst" }}
-{{ partial "testa-safespring-compute.html" . }}
-
-{{ else if eq $.Params.title "Backup som tjänst" }}
-{{ partial "safespring-backup.html" . }}
-
-{{ else if eq $.Params.title "Lagring som tjänst" }}
-{{ partial "safespring-storage.html" . }}
-
-{{ else if eq $.Params.title "Infrastruktur som tjänst" }}
-{{ partial "safespring-compute.html" . }}
-
-{{ else if eq $.Params.title "Våra tjänster" }}
-{{ partial "tjanster.html" . }}
 
 {{ else if eq $.Params.title "tack-event" }}
 {{ partial "tack-event.html" . }}
