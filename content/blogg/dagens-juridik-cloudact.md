@@ -17,7 +17,7 @@ Han menar att risken för kollision mellan dataskyddsförordningen och Cloud Act
 
 En lösning är att fytta ut känslig data från de amerikanska molnen och lagra den inom landets gränser hos en lokal leverantör som lyder under samma lagstiftning som företaget eller myndigheten.
 
-Många företag och instutioner har redan tagit steget in i bland annat vår svenska molntjänst. Läs mer om våra kunder och deras upplevelse av Safespring.
+Många företag och institutioner har redan tagit steget in i bland annat vår svenska molntjänst. Läs mer om våra kunder och deras upplevelse av Safespring här:
 
 <a href="/referenser" id="text-button">Läs Safesprings Kundreferenser</a><br>
 
