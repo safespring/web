@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="index-index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv-SE">
+<html class="index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv-SE">
    <head>
      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
      {{ "<!--[if IE]>" | safeHTML }}
-       <meta HTTP-EQUIV="REFRESH" content="0; url=https://pages.upsales.com/9549u0fe415b79737492cb66610389ae302fd">
+       <meta HTTP-EQUIV="REFRESH" content="0; url=https://www.safespring.com/explorer">
      {{ "<![endif]-->" | safeHTML }}
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
@@ -20,7 +20,9 @@
          })(window,document,'script','dataLayer','GTM-TXLJWD7');
       </script>
       <!-- End Google Tag Manager -->
-
+{{ if .Params.noindex }}
+<meta name="robots" content="noindex">
+{{ else }}{{ end }}
       <!-- Site Title changes according to current page -->
       <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra, lokala molntjänster{{ end }}</title>
       <meta http-equiv="Content-type" content="text/html" charset="utf-8" />

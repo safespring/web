@@ -4,6 +4,8 @@ date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Vi har mångårig erfarenhet att arbeta med den akademiska sektorn och har mycket god förståelse för arbetssätt och utmaningar."
 background: "safespring_bilder_10.jpg"
+aliases:
+    - /edtech/
 ---
 Vi har mångårig erfarenhet att arbeta med den akademiska sektorn och har mycket god förståelse för arbetssätt och utmaningar. Vi är även medlemmar i **[Swedish Edtech Industry](http://swedishedtechindustry.se/)** för att bidra till att Sverige blir det ledande landet i världen på att utnyttja digitaliseringens möjligheter.
 

@@ -8,7 +8,6 @@
   {{ partial "header.html" . }}
   {{ partial "svg-filter.html" . }}
   <!-- HEADING -->
-  <a href="#down">
     <div class="heading-index">
       <div class="content-container-index">
         <div class="content-meta-post">
@@ -16,16 +15,10 @@
         </div>
         <h1 class="post-heading-firstpage">Svenska<br>molntjänster</h1>
         <p class="content-summary-blogg">Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!</p><br><br>
-        <!--<a id="button" href="/om-safespring" style="width: 75px;">Läs mer</a>-->
-        <i class="fas fa-arrow-circle-down fa-5x" style="color: var(--button-color)"></i>
-      <!-- Range random page from "om-safespring"
-      {{ range first 1 ((where .Pages "Section" "om-safespring") | shuffle) }}
-        {{ .Render "li2"}}
-        {{ end }}
-      </br>
-    </div> -->
+        <a id="button" href="/upplev" style="margin:0 20px 20px 0;">Upplev Safespring</a><a id="text-button" href="#down">Läs mer</a>
+        <!--<i class="fas fa-arrow-circle-down fa-5x" style="color: var(--button-color)"></i>-->
     </div>
-  </div></a>
+  </div>
 
   <!-- CONTENT -->
   <main class="content-main-index" id="down">
@@ -45,8 +38,8 @@
         <a href="/om-safespring/bli-partner" id="text-button">Bli partner med oss</a>
       </div>
     </main>
-    <div class="blogg-promo"><h2>Senaste nytt</h2>
-<div class="flexcontainer" style="align-items:baseline; margin-bottom:200px;">
+    <div class="background-gray"><h2 style="text-align:center;">Senaste nytt</h2>
+<div class="flexcontainer" style="align-items:baseline;">
             {{ range first 3 (where .Pages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}

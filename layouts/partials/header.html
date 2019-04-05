@@ -7,7 +7,7 @@
     </a>
     <nav id="navigation" class="site-navigation" role="navigation">
       <ul class="menu">
-        <li class="menu-item"><a id="link" target="_parent" href="tel:+460855107370" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-4"></i> 08-55 10 73 70</a></li>
+        <li class="menu-item"><a id="link" target="_parent" href="tel:+460855107370" style="color: var(--web-green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-4"></i> 08-55 10 73 70</a></li>
         <li class="menu-item"><a class="link" href="/kontakt">Kontakt</a></li>
         <li class="menu-item"><a class="link" href="/publikationer">Aktuellt</a>
           <ul class="dropdown">
@@ -38,7 +38,7 @@
             <li class="sub-menu"><a class="" href="/tjanster/managed-private-cloud">Managed Private Cloud</a></li>
             <li class="sub-menu"><a class="" href="/tjanster/konsulttjanster">Konsulttjänster</a></li>
             <!-- <li class="sub-menu"><a class="" href="/tjanster/utbildning">Utbildning</a></li> -->
-            <li class="sub-menu"><a class="" href="/support">Support</a></li>
+            <li class="sub-menu"><a class="" href="/support" style="color: var(--web-green-color);">Support</a></li>
           </ul>
         </li>
         <li class="menu-item"><a class="link" href="/om-safespring">Om Safespring</a>
@@ -91,7 +91,7 @@
               <li class="sub-menu"><a class="" href="/tjanster/managed-private-cloud">Managed Private Cloud</a></li>
               <li class="sub-menu"><a class="" href="/tjanster/konsulttjanster">Konsulttjänster</a></li>
               <!-- <li class="sub-menu"><a class="" href="/tjanster/utbildning">Utbildning</a></li> -->
-              <li class="sub-menu"><a class="" href="/support">Support</a></li>
+              <li class="sub-menu"><a class="" href="/support" style="color: var(--web-green-color);">Support</a></li>
             </ul>
         <li class="menu-item">Branscher&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down" data-fa-transform="shrink-5"></i></li>
           <ul class="menu-item" style="display: none;">
@@ -110,7 +110,7 @@
             <li class="sub-menu"><a class="" href="/publikationer">Publikationer</a></li>
           </ul>
         <li class="menu-item"><a class="" href="/kontakt">Kontakt</a></li>
-        <li class="menu-item"><a id="link" target="_self" href="tel:+460855107370‬" style="color: var(--green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 08-55 10 73 70</a></li>
+        <li class="menu-item"><a id="link" target="_self" href="tel:+460855107370‬" style="color: var(--web-green-color);"><i class="fas fa-phone fa-flip-horizontal" data-fa-transform="shrink-5"></i> 08-55 10 73 70</a></li>
       </ul>
   </div>
 </nav>
@@ -143,36 +143,3 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
-<!--<script>
-    function debounce(func, wait = 10, immediate = true) {
-      let timeout;
-      return function() {
-        let context = this, args = arguments;
-        let later = function() {
-          timeout = null;
-          if (!immediate) func.apply(context, args);
-        };
-        let callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-      };
-    };
-    let scrollPos = 0;
-    const nav = document.querySelector('.h-bar');
-    function checkPosition() {
-      let windowY = window.scrollY;
-      if (windowY < scrollPos) {
-        // Scrolling UP
-        nav.classList.add('is-visible');
-        nav.classList.remove('is-hidden');
-      } else {
-        // Scrolling DOWN
-        nav.classList.add('is-hidden');
-        nav.classList.remove('is-visible');
-      }
-      scrollPos = windowY;
-    }
-    // window.addEventListener('scroll', checkPosition);
-    window.addEventListener('scroll', debounce(checkPosition));
-  </script>-->
