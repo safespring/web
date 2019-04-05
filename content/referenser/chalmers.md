@@ -6,7 +6,7 @@ intro: "”Vi känner oss tryggare med Safesprings backuplösning och har en kon
 background: "Safespring_background_chalmers.jpg"
 socialmedia: ""
 aliases:
-    - /chalmers
+    - /chalmers/
 ---
 
 <div class="ingress"><p>Svenska lärosäten hanterar stora mängder forsknings- och utbildningsdata vilket gör att de behöver en backuplösning med hög prestanda och säkerhet.</p></div>
