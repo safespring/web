@@ -4,7 +4,7 @@ date: "2019-04-05T12:00:13+02:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: "Safespring_dagens-juridik-cloudact.jpg"
+socialmedia: "Safespring_dagens-juridik-cloudact.jpg"
 background: "Safespring_dagens-juridik-cloudact.jpg"
 ---
 <div class="ingress"><p>Adam Odmark, biträdande jurist, advokatfirman Delphi, har skrivit en analys i Dagens juridik den 28 mars</p></div>
