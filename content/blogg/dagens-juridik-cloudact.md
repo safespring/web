@@ -17,6 +17,12 @@ Han menar att risken för kollision mellan dataskyddsförordningen och Cloud Act
 
 En lösning är att fytta ut känslig data från de amerikanska molnen och lagra den inom landets gränser hos en lokal leverantör som lyder under samma lagstiftning som företaget eller myndigheten.
 
->Europeiska dataskyddsstyrelsen bör skyndsamt agera och tala om vad europeiska företag och myndigheter bör göra för att kunna sälja respektive använda molntjänster utan att behöva oroa sig för att bryta mot dataskyddsförordningen.
+Många företag och instutioner har redan tagit steget in i bland annat vår svenska molntjänst. Läs mer om våra kunder och deras upplevelse av Safespring.
+
+<a href="/referenser" id="text-button">Läs Safesprings Kundreferenser</a><br>
+
+Adam Odmark menar att det finns en kollision mellan dataskyddsförordningen och USA:s Cloud Act - som kräver skyndsamt agerande.
+
+>Europeiska dataskyddsstyrelsen bör skyndsamt agera och tala om vad europeiska företag och myndigheter bör göra för att kunna sälja respektive använda molntjänster utan att behöva oroa sig för att bryta mot dataskyddsförordningen. - Adam Odmark
 
 <br><br><a href="http://www.dagensjuridik.se/2019/03/kollision-mellan-dataskyddsforordningen-och-usas-cloud-act" id="button">Läs hela analysen</a>
