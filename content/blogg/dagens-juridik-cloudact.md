@@ -7,7 +7,7 @@ showthedate: true
 socialmediabild: "Safespring_dagens-juridik-cloudact.jpg"
 background: "Safespring_dagens-juridik-cloudact.jpg"
 ---
-<div class="ingress"><p>Adam Odmark, biträdande jurist, advokatfirman Delphi, har skrivit en analys i Dagend juridik den 28 mars</p></div>
+<div class="ingress"><p>Adam Odmark, biträdande jurist, advokatfirman Delphi, har skrivit en analys i Dagens juridik den 28 mars</p></div>
 
 Enligt Adam Odmark bör den Europeiska dataskyddsstyrelsen ta fram vägledning gällande amerianska molntjänster.
 
