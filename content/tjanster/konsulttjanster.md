@@ -5,6 +5,8 @@ draft: false
 intro: "Safespring har stor kompetens inom molntjänster och molnapplikationer. Vi har också ett nätverk av partners som kan hjälpa dig komma igång."
 background: "safespring_bilder_8.jpg"
 form: "yes"
+aliases:
+    - /konsulttjanster/
 ---
 Att skapa säkra och väl fungerande molntjänster med öppen källkod kräver expertis med hög kompetens eftersom att det är många delar som skall fogas ihop. Vi på Safespring har den kompetensen och kan på så vis kan erbjuda avancerade konsulttjänster för att hjälpa ert företag med er molnstrategi.
 

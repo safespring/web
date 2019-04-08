@@ -5,6 +5,8 @@ draft: false
 intro: "Få hjälp med att sätta upp din egen molnmiljö som vi underhåller. Då får du kraften från molnet - i ditt datacenter."
 background: "safespring_bilder_8.jpg"
 form: "yes"
+aliases:
+    - /private-cloud/
 ---
 Våra molntjänster är baserade på öppen källkod och öppna standarder med säkerhet i fokus. Automatisering och självprovisionering för att skala resursförbrukning upp och ner beroende på behov är exempel på funktionalitet som alla vill ha. Beroende på individuella förutsättningar, det kan vara både tekniska, kommersiella eller legala skäl, så önskar kunder få denna funktionalitet lokalt i sitt egna datacenter på sin egna infrastruktur. Att sätta upp och underhålla en molnplattform är resurskrävande och kräver kompetens som inte alla företag eller myndigheter har.
 

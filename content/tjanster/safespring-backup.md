@@ -8,6 +8,8 @@ form: "yes"
 youtubeid: "xixq-fvTN0M"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-backup-web.pdf"
+aliases:
+    - /backup/
 ---
 ## BACKUP SOM TJÄNST
 Safesprings Backup som tjänst (Backup) är en riktig molnbaserad backuptjänst. Det betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
