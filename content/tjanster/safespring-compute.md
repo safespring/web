@@ -7,6 +7,8 @@ background: "safespring_bilder_8.jpg"
 form: "yes"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-compute-web.pdf"
+aliases:
+    - /compute/
 ---
 ## Virtuella maskiner till er tjänst
 **En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar**
