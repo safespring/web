@@ -5,6 +5,7 @@ draft: false
 intro: "Få hjälp med att sätta upp din egen molnmiljö som vi underhåller. Då får du kraften från molnet - i ditt datacenter."
 background: "safespring_bilder_8.jpg"
 form: "yes"
+socialmedia: "safespring-private-cloud.jpg"
 aliases:
     - /private-cloud/
 ---

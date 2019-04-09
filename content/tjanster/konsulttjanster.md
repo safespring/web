@@ -4,6 +4,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Safespring har stor kompetens inom molntjänster och molnapplikationer. Vi har också ett nätverk av partners som kan hjälpa dig komma igång."
 background: "safespring_bilder_8.jpg"
+socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
 aliases:
     - /konsulttjanster/

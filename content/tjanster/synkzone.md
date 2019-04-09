@@ -7,6 +7,7 @@ background: "safespring_synkzone-by-safespring_background.jpg"
 pageimage: "safespring_synkzone-by-safespring_social.jpg"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-synkzone-web.pdf"
+socialmedia: "safespring-synkzone.jpg"
 aliases:
     - /synkzone/
 ---

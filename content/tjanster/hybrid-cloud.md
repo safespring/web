@@ -4,6 +4,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Safesprings lösningar inom Hybrid Cloud gör det möjligt för dig att kombinera kraften i molnet med din egen “on prem” eller private cloud."
 background: "safespring_bilder_8.jpg"
+socialmedia: "safespring-hybrid-cloud.jpg"
 Form: "yes"
 aliases:
     - /hybrid-cloud/

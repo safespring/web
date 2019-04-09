@@ -4,6 +4,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Att värna om miljön är för oss en självklarhet. Våra tjänster produceras i miljöeffektiva datahallar och vi har ett hållbart arbetssätt."
 background: ""
+socialmedia: "safespring-miljo.jpg"
 ---
 ## Våra datahallar
 100 procent av energin till våra datahallar kommer från förnybara källor, såsom vatten, vind och solkraft.

@@ -8,6 +8,7 @@ form: "yes"
 youtubeid: "xixq-fvTN0M"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-backup-web.pdf"
+socialmedia: "safespring-backup.jpg"
 aliases:
     - /backup/
 ---

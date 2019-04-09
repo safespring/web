@@ -7,6 +7,7 @@ background: "safespring_bilder_8.jpg"
 form: "yes"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-compute-web.pdf"
+socialmedia: "safespring-compute.jpg"
 aliases:
     - /compute/
 ---
