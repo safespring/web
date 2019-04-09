@@ -4,6 +4,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Våra datacenter matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom våra datacenter drivs till 100 procent med el från förnyelsebara energikällor."
 background: ""
+socialmedia: "safespring-datacenter.jpg"
 ---
 
 ## Safespring Stockholm Norr (sto1.safedc.se)
