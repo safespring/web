@@ -3,7 +3,7 @@ title: "Miljö och hållbarhet"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Att värna om miljön är för oss en självklarhet. Våra tjänster produceras i miljöeffektiva datahallar och vi har ett hållbart arbetssätt."
-background: ""
+background: "safespring-miljo.jpg"
 socialmedia: "safespring-miljo.jpg"
 ---
 ## Våra datahallar

@@ -3,8 +3,7 @@ title: "Synkzone by Safespring"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Lokal fildelningstjänst där data stannar inom landet. Med Zero knowledge kan varken vi som operatör av tjänsten eller någon obehörig läsa era filer."
-background: "safespring_synkzone-by-safespring_background.jpg"
-pageimage: "safespring_synkzone-by-safespring_social.jpg"
+background: "safespring-synkzone.jpg"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-synkzone-web.pdf"
 socialmedia: "safespring-synkzone.jpg"

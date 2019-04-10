@@ -3,7 +3,7 @@ title: "Safespring Backup"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserad backuptjänst (Backup) behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"
-background: "safespring_bilder_8.jpg"
+background: "safespring-backup.jpg"
 form: "yes"
 youtubeid: "xixq-fvTN0M"
 sidebarlinkname: "Ladda ner produktblad"
