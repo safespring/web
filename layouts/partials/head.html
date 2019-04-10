@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html class="index aktuellt chalmers kundreferenser om-oss pris supporttjanster" lang="sv-SE">
    <head>
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TXLJWD7');</script>
+<!-- End Google Tag Manager -->
      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
      {{ "<!--[if IE]>" | safeHTML }}
        <meta HTTP-EQUIV="REFRESH" content="0; url=https://www.safespring.com/explorer">
      {{ "<![endif]-->" | safeHTML }}
+     {{ partial "favicons.html" . }}
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{ .URL  | absURL }}" />
@@ -12,14 +20,6 @@
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
      {{ partial "smooth-scroll.html" . }}
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-         })(window,document,'script','dataLayer','GTM-TXLJWD7');
-      </script>
-      <!-- End Google Tag Manager -->
 {{ if .Params.noindex }}
 <meta name="robots" content="noindex">
 {{ else }}{{ end }}
@@ -31,8 +31,6 @@
       <!-- Description changes according to current page -->
       <meta name="description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar lokalt producerade säkra molntjänster. Med datacenter i Sverige håller du din data inom landets gränser. Läs mer!{{ end }}" />
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-      <!-- Favicon -->
-      <link rel="icon" type="image/x-icon" href={{ "/img/favicon.ico" | relURL }} />
       <!-- jQuery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>

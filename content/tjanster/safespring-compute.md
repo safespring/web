@@ -3,7 +3,7 @@ title: "Safespring Compute"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserade infrastrukturtjänst  (Compute)  kan du skala upp och ner din infrastruktur efter behov. Levereras ifrån säkra datahallar inom landet."
-background: "safespring_bilder_8.jpg"
+background: "safespring-compute.jpg"
 form: "yes"
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-compute-web.pdf"
