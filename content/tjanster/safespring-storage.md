@@ -10,6 +10,7 @@ sidebarlinkurl: "/marketing/safespring-storage-web.pdf"
 socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
+    - /safespring-storage/
 ---
 Objektlagring är en helt internetbaserad lagring. Filerna kan laddas upp och ned från vår infrastruktur med klientprogramvara eller med många av de bibliotek till olika programmeringsspråk som finns skrivna. Objektlagring är optimalt för lösningar där du kommer att behöva lagra ett stort antal filer till en låg kostnad.
 <a href="#testa-safespring" id="text-button">Testa Safespring Storage</a>
