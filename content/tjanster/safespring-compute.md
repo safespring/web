@@ -10,6 +10,7 @@ sidebarlinkurl: "/marketing/safespring-compute-web.pdf"
 socialmedia: "safespring-compute.jpg"
 aliases:
     - /compute/
+    - /safespring-compute/
 ---
 ## Virtuella maskiner till er tjänst
 **En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar**
