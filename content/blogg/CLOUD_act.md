@@ -22,5 +22,37 @@ Om du vill läsa mer om hur CLOUD act påverkar svenska och norska företag har
 Mattias Malmqvist skrivit [en artikel om CLOUD act][cloudact] för IDG som är
 värd att läsas.
 
+
+<h2 id="testa-safespring">Ladda ner Safesprings White Paper</h2>
+
+Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
+
+<br><form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	  <div class="form">
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.name" placeholder="Ditt namn...">
+	</div>
+  <div class="form">
+    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
+	</div>
+  <div class="form">
+    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" type="text" name="Contact.cellPhone" placeholder="Ditt mobilnummer...">
+	</div>
+  <!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549u043a5ff8644c4ebeacdb3ef21accfa85">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<br>
+	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
+	<button type="submit" id="button">Ladda ner</button>
+</form>
+<script>
+	(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();
+</script>
+
 [cloudact]: http://bit.ly/2IdBiu0
 [effcloudact]: https://www.eff.org/deeplinks/2018/04/us-cloud-act-and-eu-privacy-protection-race-bottom
