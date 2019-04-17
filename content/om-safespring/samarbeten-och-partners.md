@@ -26,7 +26,7 @@ Kontakta oss för att diskutera vidare! Vi är övertygade att vi hittar en sama
 
 <div class="partner-grid">
 <a href="http://www.synkzone.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_synkzone.png"></div></a>
-<a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_piql.svg"></div></a>
+<a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_piql.png"></div></a>
 <a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_scaleout-systems.png"></div></a>
 <a href="https://www.suse.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_suse.png"></div></a>
 <a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_arkivit.png"></div></a>

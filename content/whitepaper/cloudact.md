@@ -22,18 +22,18 @@ Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestäm
 <form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	  <div class="form">
     <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.name" placeholder="Ditt namn...">
+		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
 	</div>
   <div class="form">
     <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
 	</div>
   <div class="form">
-    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.cellPhone" placeholder="Ditt mobilnummer...">
+    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+		<input maxlength="512" maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Företag...">
 	</div>
   <!-- REQUIRED FIELDS -->
-	<input type="hidden" name="formCid" value="9549">
+  <input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u043a5ff8644c4ebeacdb3ef21accfa85">
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
