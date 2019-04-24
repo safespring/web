@@ -15,6 +15,6 @@ Vi hade två intensiva dagar i Karlstad. Anders Bruvik presenterade hur vi bygge
 <a href="/blogg/Safespring_Infrastructure-as-code_Presentation-SUNET-dagarna_2019.pdf" id="text-button">Infrastruktur som kod</a><br><br>
 
 
-Gabriel Paues presenterade vårt projekt "SUNET Distribuerad lagring" med nuvarande status samt roadmap framöver. Vill du få en bra bild av SUNET Object Storage så rekommenderar vi att ni laddar ner Gabriels presentation
+Gabriel Paues presenterade vårt projekt "SUNET Distribuerad lagring" med nuvarande status samt roadmap framöver. Vill du få en bra bild av SUNET Object Storage så rekommenderar vi att ni laddar ner Gabriels presentation:
 
 <a href="/blogg/Safespring_SUNET-Distribuerad-Lagring_Presentation-SUNET-dagarna_2019.pdf" id="text-button">SUNET distribuerad lagring</a>
