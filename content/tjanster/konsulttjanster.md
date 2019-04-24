@@ -46,3 +46,5 @@ Kontakta oss för att specificera vilka behov just ni behöver och låt oss se h
 För att kunna utnyttja molnets fördelar fullt ut så handlar det inte bara om att använda rätt teknik utan också att anpassa sina arbetsprocesser. Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt.
 
 Safespring erbjuder tillsammans med Scaleout Systems färdiga paket för att snabbare kunna utnyttja molnet fullt ut. De färdiga paketen består av timpaket som ger tillgång till erfarna konsulter inom DevOps och container-teknologier som blir som en extra resurs som ditt team kan kalla in vid behov för att snabba på processen och snabbare kunna komma till en nivå där tekniken arbetar för er istället för mot er. Safesprings infrastrukturtjänster tillsammans med Scaleouts kunskap om hur molnet används på bästa sätt ger ditt företag en kick-start till att arbeta mer effektivt.
+
+<br><a id="button" href="/tjanster/safespring-compute#devops" style="margin:0 20px 20px 0;">Se våra planer</a><a id="text-button" href="/kontakt">Kontakta Safespring</a><br><br>
