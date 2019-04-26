@@ -11,7 +11,7 @@ socialmedia: "safespring-compute.jpg"
 aliases:
     - /compute/
     - /safespring-compute/
-devops: "yes"
+devops: ""
 ---
 ## Virtuella maskiner till er tjänst
 **En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar**
