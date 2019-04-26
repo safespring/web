@@ -7,6 +7,7 @@ dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Det White paper du nyss laddade ner kommer skickas till den mailadress som du angav i formuläret."
 background: "Safespring_huvudbild_objektlagring.jpg"
+dontshow: "yes"
 ---
 
 <div class="ingress"><p>Det White paper du nyss laddade ner kommer skickas till den mailadress som du angav i formuläret.</p></div>
