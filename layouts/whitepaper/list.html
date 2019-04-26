@@ -22,7 +22,7 @@
         {{ range .Data.Pages.GroupByDate "2006" }}
 
           <div class="">
-          {{ range .Pages }}
+          {{ range where .Pages ".Params.dontshow" "!=" "yes" }}
             {{ .Render "li"}}
             {{ end }}
           {{ end }}
