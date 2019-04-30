@@ -2,10 +2,10 @@
 title: "Safespring DevOps"
 date: 2019-04-30T08:58:58+01:00
 draft: false
-intro: "Safespring erbjuder tillsammans med Scaleout Systems färdiga paket för att snabbare kunna utnyttja molnet fullt ut."
+intro: "Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt. Safespring erbjuder färdiga paket för att snabbare kunna utnyttja molnet fullt ut."
 background: "safespring-devops.jpg"
 sidebarlinkname: "Bli kontaktad"
-sidebarlinkurl: "#bli-kontaktad"
+sidebarlinkurl: "#kontaktad"
 socialmedia: "safespring-devops.jpg"
 aliases:
     - /devops/
@@ -13,9 +13,9 @@ aliases:
 
 <div class="ingress"><p>För att kunna utnyttja molnets fördelar fullt ut så handlar det inte bara om att använda rätt teknik utan också att anpassa sina arbetsprocesser. Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt.</p></div>
 
-<br><br><a href="#bli-kontaktad" id="button" style="margin:20px 20px 20px 0px;">Bli kontaktad</a><a href="#supportpaket" id="text-button" style="margin:20px 20px 20px 0px;">Se supportpaket</a><br><br>
+<br><br><a href="#kontaktad" id="button" style="margin:20px 20px 20px 0px;">Bli kontaktad</a><a href="#supportpaket" id="text-button" style="margin:20px 20px 20px 0px;">Se supportpaket</a><br><br>
 
-Safespring erbjuder tillsammans med Scaleout Systems färdiga paket för att snabbare kunna utnyttja molnet fullt ut. De färdiga paketen består av timpaket som ger tillgång till erfarna konsulter inom DevOps och container-teknologier som blir som en extra resurs som ditt team kan kalla in vid behov för att snabba på processen och snabbare kunna komma till en nivå där tekniken arbetar för er istället för mot er. Safesprings infrastrukturtjänster tillsammans med Scaleouts kunskap om hur molnet används på bästa sätt ger ditt företag en kick-start till att arbeta mer effektivt.
+För att stötta Er i ert förändringsarbetet och minimera risken i ert molnmigrationsprojekt tillhandahåller vi ett koncept som kombinerar Cloud Architect Expert Advisory kompetens med möjligheten att få praktisk hjälp och vägledning från erfarna DevOps-experter och programmerare. Vi erbjuder färdigpaketerade tjänster där ni köper access till ett team av dessa experter. Erbjudandet innebär tillgång till erfarna konsulter inom DevOps och container-teknologier som blir som en extra resurs som ni kan använda löpande vid behov. Safesprings infrastrukturtjänster tillsammans med Expertrådgivning ger Er en kick-start.
 
 För att hjälpa team att lyckas med molnmigrationsprojekt och utveckling av nya mikrotjänstbaserade applikationer och tjänster, tillhandahåller vi ett supportkoncept som kombinerar Cloud Architect Expert Advisory med möjligheten att få praktisk hjälp från erfarna DevOps-experter och programmerare.
 
@@ -23,32 +23,30 @@ Tjänsten är inte knuten till någon speciell plattform, men vi betonar agnosti
 
 ## Typiska saker som du kan få hjälp med
 
-- Molnstrategi, leverantörs- och teknikbedömning
+- Molnstrategi och teknikbedömning
 - Artkitektur för molnapplikationer
-- Molnsäkerhet
+- Infrastruktursäkerhet
 - Kodgranskning och felsökning
 - DevOps, automatisering av infrastruktur och konfigurationshantering.
 - Mikrotjänster och Kubernetes
 - Privat molnarkitektur baserad på OpenStack
 
 ## Hur fungerar det?
-Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för att garantera bekvämt tillgång till vår expertrådgivning. När du behöver hjälp från våra programmerare och arkitekter kan du lägga till utvecklartid till en förutsägbar kostnad.
-<br><br><a href="#bli-kontaktad" id="text-button">Bli kontaktad</a>
+Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för att garantera bekvämt tillgång till vår expertrådgivning.
+<br><br><a href="#kontaktad" id="text-button">Bli kontaktad</a>
 
-Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra viktiga punkter:
+Vår expertrådgivning är speciellt utformad för att ta itu med fyra viktiga punkter:
 
-1. **Minska risken** med en öppen källkodsstrategi genom att se till att du har kontinuerlig tillgång till ledande molnexperter som vet möjligheterna och fallgroparna.
-2. **Aktivera en snabb projektstart** och ett smidigt tillvägagångssätt. Genom att ge ditt team tillgång till våra experter, behöver det inte vara hugget i sten vilken molninfrastruktur eller en tekniskt färdplan projektet skall använda. Vi kommer att se till att Du kommer fram till en hållbar lösning även om kravbilden ändras på vägen.
+1. **Minska risken** i ert projekt genom att se till att du har kontinuerlig tillgång till erfarna drift- och utvecklingsexperter som kan bidra med rådgivning..
+2. **Aktivera en snabb projektstart** och ett smidigt tillvägagångssätt. Genom att ge ditt team tillgång till våra experter, kan vi bistå att ta fram en tekniskt färdplan projektet skall använda. Vi kommer att se till att Du kommer fram till en hållbar lösning även om kravbilden ändras på vägen.
 3. **Behåll äganderätten** till dina projekt och applikationer. Genom att komplettera ditt team med experter och teknisk kapacitet för att övervinna tekniska hinder, kan du behålla äganderätten av projektet.
-4. **Undvik inlåsning** till en specifik teknisk plattform. Vårt expertteam hjälper dig med en applikationsstrategi för att se till att dina lösningar är agnostiska mot den underliggande infrastrukturen.
+4. **Undvik inlåsning** till en specifik teknisk plattform eller proprietära tjänster. Vårt expertteam hjälper dig med en applikationsstrategi för att se till att dina lösningar är agnostiska mot den underliggande infrastrukturen.
 
 <h2 id="supportpaket">Våra supportpaket</h2>
-
-<div class="flexcontainer float-left" style="align-items:baseline;justify-content:left;margin:0;">
+<div class="flexcontainer" style="align-items:baseline;justify-content:left;margin:0;">
   <div class="content-container">
-    <a href="#bli-kontaktad">
     <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-        <img src="/tjanster/images/safespring-standard-devops-support.jpg" alt="{{ .Title }}" class="d-block w-full" style="height: 240px;">
+        <img src="/tjanster/images/safespring-standard-devops-support.jpg" alt="" class="d-block w-full">
   <div class="px-2 py-2">
     <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
       Service Plan
@@ -62,22 +60,21 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
     <h1 class="ff-serif font-weight-medium text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
       Standardplan för DevOps-support
     </h1><br>
-    <p>Answers to requests within 24h on business days (email).</p>
-    <p>Up to 2 hours of face-to-face video meetings/month (access within 5 business days).</p>
-    <p>Access to hands-on help at a flat rate of 20 000 EUR/FTE/month (next month).</p>
+    <p>Svarar på förfrågningar inom ett dygn (epost).</p>
+    <p>Upp till två timmar videomöten (tillgängligt inom 5 arbetsdagar efter förfrågan).</p>
+    <p>Tillgång till ytterligare hands-on hjälp för  1 250 kr / timmen (nästkommande månad).</p>
     <br>
     <p class="mb-1 big">
       <b class="small">Pris i månaden:</b><br>
       13 000 kr
     </p>
   </div>
-  <a href="#bli-kontaktad" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
+  <a href="#kontaktad" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
     Kontakta Safespring
   </a>
-  </div></a>
+  </div>
 </div>
 <div class="content-container">
-  <a href="#bli-kontaktad">
   <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
       <img src="/tjanster/images/safespring-premium-devops-support.jpg" alt="{{ .Title }}" class="d-block w-full" style="height: 240px;">
 <div class="px-2 py-2">
@@ -93,26 +90,26 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
   <h1 class="ff-serif font-weight-medium text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
     Premiumplan för DevOps-support
   </h1><br>
-  <p class="extra-small"><b>Like standard, <br>and in addition:</b></p>
-  <p>Dedicated contact person.</p>
-  <p>Live chat with the engineering team (business hours).</p>
-  <p>Up to 6 hours of face-to-face video meetings/month (access within 2 business days).</p>
-  <p>Up to 10h of limited scope junior and mid-senior hands-on help (code reviews, troubleshooting, containerization, automation, piloting etc.). Rolls over to next month if not used.</p>
-  <p>Access to additional hands-on help at a flat rate of 15 000 EUR/FTE/month (same month).</p>
+  <p class="extra-small"><b>Förutom allt inom standard:</b></p>
+  <p>Specifik kontaktperson.</p>
+  <p>Live chatt med utvecklings&shy;teamet (under kontorstider).</p>
+  <p>Upp till sex timmar videomöten i månaden (Inom två dagar efter förfrågan).</p>
+  <p>Upp till 10 timmar av junior och mid-senior hands-on hjälp för specifika problem (kodgranskning, felsökning, containeranpassning, automation, testning mm.).</p>
+  <p>Ytterligare hands-on hjälp till ett fast pris. 750 kr / timmen (samma månad).</p>
   <br>
   <p class="mb-1 big">
     <b class="small">Pris i månaden:</b><br>
     37 500 kr
   </p>
 </div>
-<a href="#bli-kontaktad" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
+<a href="#kontaktad" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
   Kontakta Safespring
 </a>
-</div></a>
+</div>
 </div>
 </div>
 <br><br>
-<h2 id="bli-kontaktad">Bli kontaktad av en molnarkitekt</h2><br><br>
+<h2 id="kontaktad">Bli kontaktad av en Safespring-utvecklare</h2><br><br>
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
   .twitter-typeahead .tt-hint{color:#195f8c}.twitter-typeahead .tt-menu{max-height:300px;overflow:auto;border:1px solid #195f8c;border-top:none;border-radius:0 0 25px 25px;width:298px;margin:-7px 0 0 -52px}.twitter-typeahead .tt-suggestion{background-color:#fafefe;padding:5px 10px;color:#323232}.tt-suggestion:first-child{margin:7px 0 0 0;padding-top:10px}.tt-suggestion:last-child{padding-bottom:20px}.twitter-typeahead .tt-suggestion:hover{background-color:#fafefe;color:#195f8c}
@@ -134,6 +131,6 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
   <br>
 	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
   <br>
-	<button type="submit" class="button">Skicka in beställning</button>
+	<button type="submit" class="button">Skicka in</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

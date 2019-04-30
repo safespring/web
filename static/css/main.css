@@ -936,6 +936,7 @@ margin-left: 24px;
 	font: var(--extra-light-weight) 25px var(--mon-font);
 	margin-bottom: 30px;
 	line-height: 1.25;
+	color: #000;
 }
 
 .TableOfContents {
@@ -4032,7 +4033,7 @@ td {
 	background-color: #fafafa;
 	overflow: hidden;
 	border-radius: 5px;
-	width: 350px;
+	width: 340px;
 }
 
 .body::before, .body::after {

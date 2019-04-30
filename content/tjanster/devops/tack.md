@@ -64,7 +64,7 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
     </h1><br>
     <p>Answers to requests within 24h on business days (email).</p>
     <p>Up to 2 hours of face-to-face video meetings/month (access within 5 business days).</p>
-    <p>Access to hands-on help at a flat rate of 20 000 EUR/FTE/month (next month).</p>
+    <p>Access to hands-on help at a flat rate of 1 250 kr / hour (next month).</p>
     <br>
     <p class="mb-1 big">
       <b class="small">Pris i månaden:</b><br>
