@@ -71,13 +71,13 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
       13 000 kr
     </p>
   </div>
-  <a href="/kontakt" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
+  <a href="#bli-kontaktad" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
     Kontakta Safespring
   </a>
   </div></a>
 </div>
 <div class="content-container">
-  <a href="/kontakt">
+  <a href="#bli-kontaktad">
   <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
       <img src="/tjanster/images/safespring-premium-devops-support.jpg" alt="{{ .Title }}" class="d-block w-full" style="height: 240px;">
 <div class="px-2 py-2">
