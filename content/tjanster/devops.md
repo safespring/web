@@ -6,7 +6,7 @@ intro: "Safespring erbjuder tillsammans med Scaleout Systems färdiga paket för
 background: "safespring-devops.jpg"
 sidebarlinkname: "Bli kontaktad"
 sidebarlinkurl: "#bli-kontaktad"
-socialmedia: "safespring-devopd.jpg"
+socialmedia: "safespring-devops.jpg"
 aliases:
     - /devops/
 ---
