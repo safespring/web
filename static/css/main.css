@@ -31,7 +31,7 @@
 	scroll-behavior: smooth;
 }
 
-p {
+p, ol {
 	font: var(--normal-weight) 17px var(--mon-font);
 	color: var(--alt-color);
 	line-height: 1.3;
