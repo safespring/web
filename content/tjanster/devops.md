@@ -42,7 +42,7 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
 3. **Behåll äganderätten** till dina projekt och applikationer. Genom att komplettera ditt team med experter och teknisk kapacitet för att övervinna tekniska hinder, kan du behålla äganderätten av projektet.
 4. **Undvik inlåsning** till en specifik teknisk plattform. Vårt expertteam hjälper dig med en applikationsstrategi för att se till att dina lösningar är agnostiska mot den underliggande infrastrukturen.
 
-<h2 href="#supportpaket">Våra supportpaket</h2>
+<h2 id="supportpaket">Våra supportpaket</h2>
 
 <div class="flexcontainer float-left" style="align-items:baseline;justify-content:left;margin:0;">
   <div class="content-container">
