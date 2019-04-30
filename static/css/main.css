@@ -4529,6 +4529,10 @@ h1 {
   width: 150px;
 }
 
+.row .cell:nth-child(7) {
+  width: 150px;
+}
+
 .table, .row {
   width: 100% !important;
 }
