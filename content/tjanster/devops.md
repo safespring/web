@@ -13,9 +13,7 @@ aliases:
 
 <div class="ingress"><p>För att kunna utnyttja molnets fördelar fullt ut så handlar det inte bara om att använda rätt teknik utan också att anpassa sina arbetsprocesser. Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt.</p></div>
 
-<br><br><a href="#bli-kontaktad" id="button" style="margin:20px 20px 20px 0px;">Bli kontaktad</a>
-
-<a href="#supportpaket" id="text-button" style="margin:20px 20px 20px 0px;">Se supportpaket</a><br><br>
+<br><br><a href="#bli-kontaktad" id="button" style="margin:20px 20px 20px 0px;">Bli kontaktad</a><a href="#supportpaket" id="text-button" style="margin:20px 20px 20px 0px;">Se supportpaket</a><br><br>
 
 Safespring erbjuder tillsammans med Scaleout Systems färdiga paket för att snabbare kunna utnyttja molnet fullt ut. De färdiga paketen består av timpaket som ger tillgång till erfarna konsulter inom DevOps och container-teknologier som blir som en extra resurs som ditt team kan kalla in vid behov för att snabba på processen och snabbare kunna komma till en nivå där tekniken arbetar för er istället för mot er. Safesprings infrastrukturtjänster tillsammans med Scaleouts kunskap om hur molnet används på bästa sätt ger ditt företag en kick-start till att arbeta mer effektivt.
 
@@ -114,7 +112,7 @@ Vår avancerade supporttjänst är speciellt utformad för att ta itu med fyra v
 </div>
 </div>
 <br><br>
-<h2 id="bli-kontaktad">Bli kontaktad av en molnarkitekt</h2>
+<h2 id="bli-kontaktad">Bli kontaktad av en molnarkitekt</h2><br><br>
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
   .twitter-typeahead .tt-hint{color:#195f8c}.twitter-typeahead .tt-menu{max-height:300px;overflow:auto;border:1px solid #195f8c;border-top:none;border-radius:0 0 25px 25px;width:298px;margin:-7px 0 0 -52px}.twitter-typeahead .tt-suggestion{background-color:#fafefe;padding:5px 10px;color:#323232}.tt-suggestion:first-child{margin:7px 0 0 0;padding-top:10px}.tt-suggestion:last-child{padding-bottom:20px}.twitter-typeahead .tt-suggestion:hover{background-color:#fafefe;color:#195f8c}
