@@ -11,36 +11,33 @@ aliases:
     - /devops/
 ---
 
-<div class="ingress"><p>För att kunna utnyttja molnets fördelar fullt ut så handlar det inte bara om att använda rätt teknik utan också att anpassa sina arbetsprocesser. Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt.</p></div>
+<div class="ingress"><p>För att kunna utnyttja den nya teknikens fördelar fullt ut så handlar det inte bara om att använda rätt tjänst utan också att anpassa sina arbetsprocesser.</p></div>
 
 <br><br><a href="#kontaktad" id="button" style="margin:20px 20px 20px 0px;">Bli kontaktad</a><a href="#supportpaket" id="text-button" style="margin:20px 20px 20px 0px;">Se supportpaket</a><br><br>
 
-För att stötta Er i ert förändringsarbetet och minimera risken i ert molnmigrationsprojekt tillhandahåller vi ett koncept som kombinerar Cloud Architect Expert Advisory kompetens med möjligheten att få praktisk hjälp och vägledning från erfarna DevOps-experter och programmerare. Vi erbjuder färdigpaketerade tjänster där ni köper access till ett team av dessa experter. Erbjudandet innebär tillgång till erfarna konsulter inom DevOps och container-teknologier som blir som en extra resurs som ni kan använda löpande vid behov. Safesprings infrastrukturtjänster tillsammans med Expertrådgivning ger Er en kick-start.
+Safespring erbjuder färdiga paket som ger tillgång till erfarna experter inom DevOps och container-teknologi. Våra experter blir en extra resurs som ert team kan kalla in vid behov för att snabbare komma till en nivå där tekniken arbetar för er. Safesprings infrastrukturtjänster och vår kunskap om hur de används på bästa sätt ger ditt företag en kick-start till att arbeta mer effektivt.
 
-För att hjälpa team att lyckas med molnmigrationsprojekt och utveckling av nya mikrotjänstbaserade applikationer och tjänster, tillhandahåller vi ett supportkoncept som kombinerar Cloud Architect Expert Advisory med möjligheten att få praktisk hjälp från erfarna DevOps-experter och programmerare.
-
-Tjänsten är inte knuten till någon speciell plattform, men vi betonar agnostiska och öppna lösningar, oftast baserade på öppen källkod.
-
-## Typiska saker som du kan få hjälp med
-
-- Molnstrategi och teknikbedömning
-- Artkitektur för molnapplikationer
+## Typiska saker som ni kan få hjälp med
+- Strategi och teknikbedömning
+- Artkitektur för applikationer
 - Infrastruktursäkerhet
 - Kodgranskning och felsökning
 - DevOps, automatisering av infrastruktur och konfigurationshantering.
 - Mikrotjänster och Kubernetes
-- Privat molnarkitektur baserad på OpenStack
+- Privat arkitektur baserad på OpenStack
 
 ## Hur fungerar det?
 Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för att garantera bekvämt tillgång till vår expertrådgivning.
 <br><br><a href="#kontaktad" id="text-button">Bli kontaktad</a>
 
-Vår expertrådgivning är speciellt utformad för att ta itu med fyra viktiga punkter:
+## Varför du skall överväga Safespring DevOps-paket
+- **Minska risken** i ert projekt genom att se till att du har kontinuerlig tillgång till erfarna drift- och utvecklingsexperter som kan bidra med rådgivning.
 
-1. **Minska risken** i ert projekt genom att se till att du har kontinuerlig tillgång till erfarna drift- och utvecklingsexperter som kan bidra med rådgivning..
-2. **Aktivera en snabb projektstart** och ett smidigt tillvägagångssätt. Genom att ge ditt team tillgång till våra experter, kan vi bistå att ta fram en tekniskt färdplan projektet skall använda. Vi kommer att se till att Du kommer fram till en hållbar lösning även om kravbilden ändras på vägen.
-3. **Behåll äganderätten** till dina projekt och applikationer. Genom att komplettera ditt team med experter och teknisk kapacitet för att övervinna tekniska hinder, kan du behålla äganderätten av projektet.
-4. **Undvik inlåsning** till en specifik teknisk plattform eller proprietära tjänster. Vårt expertteam hjälper dig med en applikationsstrategi för att se till att dina lösningar är agnostiska mot den underliggande infrastrukturen.
+- **Få en snabb projektstart** och ett smidigt tillvägagångssätt. Vi hjälper er ta fram en färdplan med en hållbar lösning som projektet skall använda.
+
+- **Behåll äganderätte** till dina projekt och applikationer. Genom att ni själva utvecklar applikationer med vår hjälp är ni som äger dem.
+
+- **Undvik inlåsning** till en specifik plattform eller proprietära tjänster. Vi hjälper er med en strategi för att era lösningar ska vara agnostiska och möjliga att flytta.
 
 <h2 id="supportpaket">Våra supportpaket</h2>
 <div class="flexcontainer" style="align-items:baseline;justify-content:left;margin:0;">
@@ -61,7 +58,7 @@ Vår expertrådgivning är speciellt utformad för att ta itu med fyra viktiga p
       Standardplan för DevOps-support
     </h1><br>
     <p>Svarar på förfrågningar inom ett dygn (epost).</p>
-    <p>Upp till två timmar videomöten (tillgängligt inom 5 arbetsdagar efter förfrågan).</p>
+    <p>Upp till två timmar videomöten (inom 5 arbetsdagar efter förfrågan).</p>
     <p>Tillgång till ytterligare hands-on hjälp för  1 250 kr / timmen (nästkommande månad).</p>
     <br>
     <p class="mb-1 big">
@@ -92,10 +89,10 @@ Vår expertrådgivning är speciellt utformad för att ta itu med fyra viktiga p
   </h1><br>
   <p class="extra-small"><b>Förutom allt inom standard:</b></p>
   <p>Specifik kontaktperson.</p>
-  <p>Live chatt med utvecklings&shy;teamet (under kontorstider).</p>
-  <p>Upp till sex timmar videomöten i månaden (Inom två dagar efter förfrågan).</p>
-  <p>Upp till 10 timmar av junior och mid-senior hands-on hjälp för specifika problem (kodgranskning, felsökning, containeranpassning, automation, testning mm.).</p>
-  <p>Ytterligare hands-on hjälp till ett fast pris. 750 kr / timmen (samma månad).</p>
+  <p>Livechatt med utvecklings&shy;teamet (kontorstid).</p>
+  <p>Upp till sex timmar videomöten i månaden (inom två dagar efter förfrågan).</p>
+  <p>Upp till 10 timmar junior och mid-senior hands-on hjälp för specifika problem (kodgranskning, felsökning, containeranpassning, automation, testning mm.).</p>
+  <p>Ytterligare hands-on hjälp för 750 kr / timmen (samma månad).</p>
   <br>
   <p class="mb-1 big">
     <b class="small">Pris i månaden:</b><br>

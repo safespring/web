@@ -1015,11 +1015,14 @@ margin-left: 24px;
 		display: -ms-grid;
 		display: grid;
 		grid-column: 2 / span 5;
-		margin: 10% 10% 10% 0;
+		margin: 10% 0 10% 0;
+
 	}
-	.ch-content p, h1, h2, h3, h4{
+	.ch-content p, h1, h2, h3, h4, li, ol {
 		max-width: 700px;
+		margin: 16px 10% 0 0;
 	}
+
 	.listpage {
 		display: -ms-grid;
 		display: grid;
