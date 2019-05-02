@@ -35,7 +35,7 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
 
 - **Få en snabb projektstart** och ett smidigt tillvägagångssätt. Vi hjälper er ta fram en färdplan med en hållbar lösning som projektet skall använda.
 
-- **Behåll äganderätte** till dina projekt och applikationer. Genom att ni själva utvecklar applikationer med vår hjälp är ni som äger dem.
+- **Behåll ägandeskapet** över era projekt och applikationer. Eftersom ni får tillgång till våra experter inom DevOps och infrastruktur kan ni behålla ägandeskapet över era projekt även om ert team inte har all kunskap eller de resurser som krävs för att komma över svåra tekniska hinder.
 
 - **Undvik inlåsning** till en specifik plattform eller proprietära tjänster. Vi hjälper er med en strategi för att era lösningar ska vara agnostiska och möjliga att flytta.
 
@@ -92,7 +92,7 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
   <p>Livechatt med utvecklings&shy;teamet (kontorstid).</p>
   <p>Upp till sex timmar videomöten i månaden (inom två dagar efter förfrågan).</p>
   <p>Upp till 10 timmar junior och mid-senior hands-on hjälp för specifika problem (kodgranskning, felsökning, containeranpassning, automation, testning mm.).</p>
-  <p>Ytterligare hands-on hjälp för 750 kr / timmen (samma månad).</p>
+  <p>Ytterligare hands-on hjälp för 950 kr / timmen (samma månad).</p>
   <br>
   <p class="mb-1 big">
     <b class="small">Pris i månaden:</b><br>
