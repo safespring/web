@@ -27,7 +27,7 @@ Safespring erbjuder färdiga paket som ger tillgång till erfarna experter inom 
 - Privat arkitektur baserad på OpenStack
 
 ## Hur fungerar det?
-Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för att garantera bekvämt tillgång till vår expertrådgivning.
+Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig tillgång till vår expertrådgivning.
 <br><br><a href="#kontaktad" id="text-button">Bli kontaktad</a>
 
 ## Varför du skall överväga Safespring DevOps-paket
