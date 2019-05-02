@@ -8,8 +8,8 @@
 {{ else if eq $.Params.title "Pris" }}
 {{ partial "pris.html" . }}
 
-{{ else if eq $.Params.title "Pris-new" }}
-{{ partial "pris-new.html" . }}
+{{ else if eq $.Params.title "Pris-old" }}
+{{ partial "pris-old.html" . }}
 
 {{ else if eq $.Params.title "Support" }}
 {{ partial "support.html" . }}
@@ -51,7 +51,6 @@
       <!-- SIDEBAR -->
       {{ partial "side-bar.html" . }}
     </main>
-    {{ if .Params.devops }}{{ partial "devops-consulting.html" . }}{{ else }}{{ end }}
     <!-- FOOTER -->
     {{ partial "footer.html" . }}
 {{ end }}

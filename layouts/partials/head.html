@@ -19,7 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		 <meta property="og:image" content="{{ if.Params.socialmedia }}/{{ .Section }}/images/socialmedia/{{ .Params.socialmedia }}{{ else }}/img/socialmedia/safespring-start.jpg{{ end }}">
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
-     {{ partial "smooth-scroll.html" . }}
 {{ if .Params.noindex }}
 <meta name="robots" content="noindex">
 {{ else }}{{ end }}
@@ -44,7 +43,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
       {{ partial "telavox.html" }}
-      {{ "<!--[if lt IE 11]>" | safeHTML }}
-  <script src="html5shiv.js"></script>
-{{ "<![endif]-->" | safeHTML }}
    </head>
