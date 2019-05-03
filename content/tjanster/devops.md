@@ -63,7 +63,7 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
     <br>
     <p class="mb-1 big">
       <b class="small">Pris i månaden:</b><br>
-      13 000 kr
+      7 900 kr
     </p>
   </div>
   <a href="#kontaktad" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif" id="text-button">
