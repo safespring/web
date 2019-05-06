@@ -7,8 +7,6 @@ background: "safespring-devops.jpg"
 sidebarlinkname: "Bli kontaktad"
 sidebarlinkurl: "#bli-kontaktad"
 socialmedia: "safespring-devops.jpg"
-aliases:
-    - /devops/
 ---
 
 <div class="ingress"><p>För att kunna utnyttja molnets fördelar fullt ut så handlar det inte bara om att använda rätt teknik utan också att anpassa sina arbetsprocesser. Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt.</p></div>
