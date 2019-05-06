@@ -5,7 +5,7 @@ draft: false
 tags: [""]
 showthedate: true
 socialmediabild: "safespring-devops.jpg"
-background: "safespring_devops.jpg"
+background: "Safespring_devops.jpg"
 ---
 
 <div class="ingress"><p>Antalet bolag som planerat att outsourca sin it-produktion har minskat och anledningen är bland annat behovet av att arbeta mer i agila/DevOps-grupper.</p></div>
