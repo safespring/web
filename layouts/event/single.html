@@ -51,7 +51,7 @@
   <!-- {{ partial "header.html" . }} <!-- HEADING -->
   <img class="heading-background-event safespring_blue" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
     <div class="heading-sub">
-       <div class="heading-content" style="margin:10% 0 10% 0">
+       <div class="heading-content" style="margin-top:20%; margin-bottom:10%;">
        <a href="{{ .Site.BaseURL }}">
          <img src="{{ if eq .Params.partner "SUSE" }}{{ "/img/safespring-suse.svg" | relURL }}{{ else }}{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}{{ end }}" style="margin-bottom:30px; width:300px;">
        </a>
