@@ -1,4 +1,6 @@
-<a href="{{ .Permalink }}"><div class="body my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
+<div class="content-container">
+  <a href="{{ .Permalink }}">
+  <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
         <img src="{{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}?auto=compress&cs=tinysrgb" alt="{{ .Title }}" class="d-block w-full" style="height: 240px;">
   <div class="px-2 py-2">
     <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
@@ -22,4 +24,4 @@
   <a href="{{ .Permalink }}" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif">
     Läs mer
   </a>
-</div></a>
+</div></a></div>

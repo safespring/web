@@ -19,7 +19,7 @@
     <!-- CONTENT -->
     <main class="content-chalmers">
         <!-- Main  -->
-        <div class="listpage" style="background: var(--text-color);">
+        <div class="listpage" style="background: var(--text-color); align-items: baseline;">
           <h2 style="text-align:center;">Kommande event</h2></br>
             <div class="flexcontainer" style="background: var(--text-color);">
                 {{ range where .Data.Pages.ByDate "Section" "event" }} {{ if ge .Date.Unix (now.AddDate 0 0 -1) }}
