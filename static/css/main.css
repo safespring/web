@@ -118,17 +118,17 @@ input[type=text], [type=email] {
 	border-radius: inherit;
 }
 
-::-webkit-input-placeholder { / WebKit browsers /
+::-webkit-input-placeholder { /* WebKit browsers */
 color: var(--main-color) !important;
-opacity: 1 !important;
+opacity: 0.9 !important;
 }
-::-moz-placeholder { / Mozilla Firefox 19+ /
+::-moz-placeholder { /* Mozilla Firefox 19+ */
 color: var(--main-color) !important;
-opacity: 1 !important;
+opacity: 0.9 !important;
 }
-:-ms-input-placeholder { / Internet Explorer 10+ /
+:-ms-input-placeholder { /* Internet Explorer 10+ */
 color: var(--main-color) !important;
-opacity: 1;
+opacity: 0.9;
 }
 
 /*
