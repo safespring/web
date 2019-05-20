@@ -2,7 +2,7 @@
 title: "Objektlagring med protokollet S3 ger dig oändlig flexibilitet"
 date: 2018-06-20
 draft: false
-author: "Martin Millnert"
+author: ""
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Detta white paper går igenom lagringsstandarden S3 och ger dig fyra exempel på hur det kan användas idag. Du kommer lära dig hur du kan använda dig av den på olika sätt i din verksamhet, säkert och modernt, utan att din data behöver lämnar landet."
@@ -20,6 +20,7 @@ background: "Safespring_huvudbild_objektlagring.jpg"
 <form id="up-form" name="form_9549ud958ab6767c34e7c843fe5585ca7e9ac" action="https://power.upsales.com/api/external/formSubmit" method="POST">
   <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag..."></div>
   <div class="form"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn..."></div>
+  <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Mobiltelefon"></div>
   <div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email..."></div>
   <input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549ud958ab6767c34e7c843fe5585ca7e9ac">
