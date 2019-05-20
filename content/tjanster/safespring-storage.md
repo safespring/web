@@ -5,8 +5,8 @@ draft: false
 intro: "Safesprings molnbaserade lagring (Storage) levereras ifrån säkra datahallar och är baserad på den marknadsledande lagringsteknologin Ceph. Läs mer!"
 background: "safespring-storage.jpg"
 form: "yes"
-sidebarlinkname: "Ladda ner produktblad"
-sidebarlinkurl: "/marketing/safespring-storage-web.pdf"
+sidebarlinkname: "Ladda ner white paper om S3"
+sidebarlinkurl: "/whitepaper/objektlagring/"
 socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
