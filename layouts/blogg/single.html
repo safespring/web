@@ -11,6 +11,9 @@
    tjanster
    " lang="sv">
    <head>
+     {{ "<!--[if IE]>" | safeHTML }}
+       <meta HTTP-EQUIV="REFRESH" content="0; url={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}https://www.safespring.com/explorer{{ end }}">
+     {{ "<![endif]-->" | safeHTML }}
      {{ partial "telavox.html" }}
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
