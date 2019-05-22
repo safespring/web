@@ -10,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
      {{ "<!--[if IE]>" | safeHTML }}
-       <meta HTTP-EQUIV="REFRESH" content="0; url=https://www.safespring.com/explorer">
+       <meta HTTP-EQUIV="REFRESH" content="0; url={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}https://www.safespring.com/explorer{{ end }}">
      {{ "<![endif]-->" | safeHTML }}
      {{ partial "favicons.html" . }}
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
