@@ -4,7 +4,7 @@
    <head>
      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
      {{ "<!--[if IE]>" | safeHTML }}
-       <meta HTTP-EQUIV="REFRESH" content="0; url={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}https://www.safespring.com/explorer{{ end }}">
+       <meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">
      {{ "<![endif]-->" | safeHTML }}
      {{ partial "telavox.html" }}
      <meta property="og:title" content="{{ .Title }}" />
