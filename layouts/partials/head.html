@@ -3,7 +3,7 @@
    <head>
      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
      {{ "<!--[if IE]>" | safeHTML }}
-       <meta HTTP-EQUIV="REFRESH" content="1" url="{{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}https://www.safespring.com/explorer{{ end }}">
+       <meta HTTP-EQUIV="REFRESH" content="1" url="{{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">
      {{ "<![endif]-->" | safeHTML }}
      <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
