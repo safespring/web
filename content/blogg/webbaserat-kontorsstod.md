@@ -4,9 +4,8 @@ date: "2019-02-22T14:51:25+01:00"
 draft: false
 tags: [""]
 showthedate: true
-card: "safespring_card_1.jpg"
-eventbild: "safespring_background_1.jpg"
-socialmediabild: "safespring_social_1.jpg"
+socialmediabild: "safespring-webbaserat-kontorsstod.jpg"
+background: "safespring-webbaserat-kontorsstod.jpg"
 ---
 
 ## Lokala lösningar efterfrågas

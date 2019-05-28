@@ -4,9 +4,8 @@ date: "2018-11-30T12:41:37+01:00"
 draft: false
 tags: [""]
 showthedate: true
-card: "safespring_card_10.jpg"
-eventbild: "safespring_background_10.jpg"
-socialmediabild: "safespring_social_10.jpg"
+socialmediabild: "Safespring_socialmedia_EU-digital-strategy.jpg"
+background: "Safespring_huvudbild_EU-digital-strategy.jpg"
 ---
 EU kommissionen publicerade sin **[digitala strategi][strategi]** den 21 november. Det intressanta med EUs digitala utveckling kan sammanfattas i en mening på sida 25: “Co-creation will be encouraged. Open-source solutions will be preferred...”.
 
