@@ -4,8 +4,9 @@ date: "2018-12-20T15:12:50+01:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: "Safespring_christmas-greeting_2018.jpg"
-background: "Safespring_christmas-greeting_2018.jpg"
+card: "safespring_card_17.jpg"
+eventbild: "safespring_background_17.jpg"
+socialmediabild: "safespring_social_17.jpg"
 ---
 
 ## Hoppas du också haft ett händelserikt år

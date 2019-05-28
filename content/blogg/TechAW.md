@@ -4,10 +4,11 @@ date: "2018-07-24T14:39:43+02:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: "Safespring_chalmers.jpg"
 intro: "Safesprings tjänster når universitet, högskolor och forskningsmiljöer som är anslutna till de nationella forskningssätena i Skandinavien. Läs kundreferenser!"
 category: "Blog"
-background: "Safespring_Meetup_TechAW.jpg"
+card: "safespring_card_7.jpg"
+eventbild: "safespring_background_7.jpg"
+socialmediabild: "safespring_social_7.jpg"
 ---
 Välkommen till Tech AW där vi snackar om Hybrid Cloud och framtida molnlösningar. Den 29 augusti i Solna Business Park.
 

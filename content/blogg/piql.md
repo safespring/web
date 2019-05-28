@@ -4,8 +4,9 @@ date: "2019-03-12T13:46:22+01:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: "safespring-piql.jpg"
-background: "safespring-piql.jpg"
+card: "safespring_card_3.jpg"
+eventbild: "safespring_background_3.jpg"
+socialmediabild: "safespring_social_3.jpg"
 ---
 
 <a href="/marketing/Safespring_press-release_20919-03-14_Piql-and-Safespring-collaborate-for-enhanced-services.pdf" id="button">Read in English</a> <!--<a href="/#" id="button">Read in Norwegian</a>-->

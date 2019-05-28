@@ -5,6 +5,9 @@ draft = false
 tags = [""]
 showthedate = true
 category = "Blog"
+card = "safespring_card_0.jpg"
+eventbild = "safespring_background_0.jpg"
+socialmediabild = "safespring_social_0.jpg"
 +++
 
 I och med ökade datamängder inom alla discipliner får lärosäten och institutioner större och större behov av att på ett smidigt sätt kunna lagra data. Fler och fler projekt driver i dag data i Petabyte-skala vilket leder till stora kostnader vid uppsättning av interna lagringslösningar. Safespring har en S3-kompatibel lagringslösning som kan tjäna som en gemensam plattform för projekt inom forskningsvärlden som driver mycket data.
