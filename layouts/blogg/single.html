@@ -61,7 +61,7 @@
   {{ partial "g-tag-manager.html" . }}
   {{ partial "svg-filter.html" . }}
    {{ partial "header.html" . }} <!-- HEADING -->
-   <img class="heading-background safespring_blue" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
+   <img class="heading-background" style="background: url({{ if.Params.eventbild }}/blogg/images/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
 <div class="heading-sub">
 <div class="heading-content">
        {{ .Render "li3" }}
