@@ -851,7 +851,7 @@ label.switch-label {
 	flex-direction: column;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1600px) {
 	.content-main-index {
 		background: var(--text-color);
 		display: grid;
