@@ -1,7 +1,7 @@
 <div class="content-container">
   <a href="{{ .Permalink }}">
   <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-        <img src="{{ if.Params.eventbild }}/event/image/card/{{ .Params.card }}{{ else }}/blogg/images/background/background.jpg{{ end }}?auto=compress&cs=tinysrgb" alt="{{ .Title }}" class="d-block w-full">
+        <div src="{{ if.Params.eventbild }}/event/image/card/{{ .Params.card }}{{ else }}/blogg/images/background/background.jpg{{ end }}?auto=compress&cs=tinysrgb" alt="{{ .Title }}" class="d-block w-full"></div>
   <div class="px-2 py-2">
     <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
       {{ .Section }}</div>
