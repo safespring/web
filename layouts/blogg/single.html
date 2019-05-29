@@ -18,7 +18,7 @@
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{ .URL  | absURL }}" />
-		 <meta property="og:image" content="{{ if.Params.socialmediabild }}/blogg/images/socialmedia/{{ .Params.socialmediabild }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
+		 <meta property="og:image" content="{{ if.Params.socialmediabild }}img/blogg/socialmedia/{{ .Params.socialmediabild }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
 		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
 
@@ -61,7 +61,7 @@
   {{ partial "g-tag-manager.html" . }}
   {{ partial "svg-filter.html" . }}
    {{ partial "header.html" . }} <!-- HEADING -->
-   <img class="heading-background safespring_blue" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
+   <img class="heading-background" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}); background-size: cover; background-position: center;">
 <div class="heading-sub">
 <div class="heading-content">
        {{ .Render "li3" }}

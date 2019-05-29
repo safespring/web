@@ -4,8 +4,9 @@ date: "2019-04-03T14:55:39+02:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: "Safespring_sunetdagarna.jpg"
-background: "Safespring_sunetdagarna.jpg"
+card: "safespring_card_5.jpg"
+eventbild: "safespring_background_5.jpg"
+socialmediabild: "safespring_social_5.jpg"
 ---
 
 ### Ladda ner Safesprings presentationer

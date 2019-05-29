@@ -4,6 +4,9 @@ date = "2017-12-19"
 draft = false
 tags = ["ebok, guide, VD, migrering"]
 showthedate = true
+card = "safespring_card_0.jpg"
+eventbild = "safespring_background_0.jpg"
+socialmediabild = "safespring_social_0.jpg"
 +++
 
 Safespring har författat en [guide][ebook] till dig som står i begrepp att ta

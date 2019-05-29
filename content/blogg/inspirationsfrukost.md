@@ -4,7 +4,9 @@ date = "2018-02-19"
 draft = false
 tags = ["inspirationsfruktost, seminarum"]
 showthedate = true
-background = "Safespring-frukostseminarium_20180328.jpg"
+card = "safespring_card_4.jpg"
+eventbild = "safespring_background_4.jpg"
+socialmediabild = "safespring_social_4.jpg"
 +++
 
 Safespring bjuder in till inspirationsfrukost kring nya teknologier och moderna sätt att bygga plattformar tillsammans med Johan Staël von Holstein.

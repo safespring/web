@@ -4,10 +4,11 @@ date: "2018-08-02T09:22:53+02:00"
 draft: false
 tags: [""]
 showthedate: true
-socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "En sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna för bland annat personuppgiftsskydd och utlämning av data."
 category: "Blog"
-background: "Safespring_huvudbild_cloudact.jpg"
+card: "safespring_card_12.jpg"
+eventbild: "safespring_background_12.jpg"
+socialmediabild: "safespring_social_12.jpg"
 ---
 {{< youtube ogzSdTNk554 >}}
 
