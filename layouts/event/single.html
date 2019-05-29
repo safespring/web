@@ -10,7 +10,7 @@
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
-     <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/event/image/socialmedia/{{ .Params.socialmediabild }}{{ else if.Params.huvudbildnamn }}https://www.safespring.com/img/event/{{ .Params.huvudbildnamn }}{{ else if.Params.pageimage }}https://www.safespring.com/img/pageimage/{{ .Params.pageimage }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_event.jpg{{ end }}"/>
+     <meta property="og:image" content="{{ if.Params.socialmediabild }}https://www.safespring.com/img/event/socialmedia/{{ .Params.socialmediabild }}{{ else if.Params.eventbild }}https://www.safespring.com/img/event/background/{{ .Params.eventbild }}{{ else }}https://www.safespring.com/img/pageimage/Safespring_event.jpg{{ end }}"/>
      <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safesprings event syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
      <meta property="og:site_name" content="Safespring" />
    	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
@@ -49,7 +49,7 @@
   {{ partial "g-tag-manager.html" . }}
   {{ partial "svg-filter.html" . }} <!-- NAVBAR -->
   <!-- {{ partial "header.html" . }} <!-- HEADING -->
-  <img class="heading-background-event" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
+  <img class="heading-background-event" style="background: url({{ if.Params.eventbild }}/img/event/background/{{ .Params.eventbild }}{{ else }}/img/event/background/safespring_background_0.jpg{{ end }}); background-size: cover; background-position: center;">
     <div class="heading-sub">
        <div class="heading-content" style="margin-top:20%; margin-bottom:10%;">
        <a href="{{ .Site.BaseURL }}">
