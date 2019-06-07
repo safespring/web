@@ -1,5 +1,5 @@
 ---
-title: "Support"
+title: "Dokumentation"
 date: "2017-11-22"
 draft: false
 tags: ""
