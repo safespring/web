@@ -20,6 +20,7 @@ noindex: "yes"
     </div>
     <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
         <input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="User mobile phone">
+				<div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1">Including +46 or +47 and only numbers. <br><br><b>Example: +46762117309</b></span></div>
     </div>
     <div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
         <input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="User e-mail">
