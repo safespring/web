@@ -68,10 +68,6 @@ noindex: "yes"
             <label for="Backup">Backup</label>
         </div>
         <div class="inputGroup">
-            <input id="Offsite" type="checkbox" value="Offsite Backup" name="Extra.1540364264537">
-            <label for="Offsite">Offsite Backup</label>
-        </div>
-        <div class="inputGroup">
             <input id="Storage" type="checkbox" value="Storage" name="Extra.1540364264537">
             <label for="Storage">Storage</label>
         </div>
