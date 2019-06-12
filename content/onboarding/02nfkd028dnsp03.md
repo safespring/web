@@ -42,14 +42,6 @@ noindex: "yes"
             <option value="Safespring NO">Safespring NO</option>
         </select>
     </div>
-    <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
-        <select name="Extra.1540280713562">
-            <option>Account type:</option>
-            <option value="Demo account">Demo account</option>
-            <option value="Regular account">Regular account</option>
-            <option value="See message to on-boarding">See message to on-boarding</option>
-        </select>
-    </div>
     <div>
         <script type="text/javascript">
             $(document).ready(function() {
