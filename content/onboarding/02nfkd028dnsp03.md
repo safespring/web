@@ -7,6 +7,7 @@ background: "safespring-devops.jpg"
 sidebarlinkname: "Fyll i formulär"
 sidebarlinkurl: "#up-form"
 socialmedia: "safespring-devops.jpg"
+noindex: "yes"
 ---
 
 
