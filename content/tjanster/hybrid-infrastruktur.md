@@ -1,13 +1,14 @@
 ---
-title: "Hybrid Cloud"
+title: "Hybrid Infrastruktur"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Safesprings lösningar inom Hybrid Cloud gör det möjligt för dig att kombinera kraften i molnet med din egen “on prem” eller private cloud."
+intro: "Safesprings lösningar inom Hybrid Infrastruktur gör det möjligt för dig att kombinera kraften i molnet med din egen “on prem” eller managerad infrastruktur."
 background: "safespring_bilder_8.jpg"
 socialmedia: "safespring-hybrid-cloud.jpg"
 Form: "yes"
 aliases:
     - /hybrid-cloud/
+    - /tjanster/hybrid-cloud/
 ---
 Kraften hos molntjänster har skapat många typer av nya tjänster  de senaste tio åren. Trafikmönster hos de tjänster som företag erbjuder blir i många fall oregelbundna eftersom  tjänsterna har möjlighet till att nå ut till så många fler. Att behöva investera i infrastruktur som bara behövs vid trafikspikar, några få gånger om året, kan bli en dyr historia. Samtidigt så finns det anledningar till att själv behålla kontrollen över de tjänster som man som företag erbjuder sina kunder.
 
