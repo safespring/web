@@ -37,6 +37,7 @@ noindex: "yes"
             <option>Connected to site:</option>
             <option value="None">None</option>
             <option value="Sunet">Sunet</option>
+            <option value="Sunet sto3">Sunet sto3</option>
             <option value="Uninett">Uninett</option>
             <option value="Safespring SE">Safespring SE</option>
             <option value="Safespring NO">Safespring NO</option>
