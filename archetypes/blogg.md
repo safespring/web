@@ -4,7 +4,7 @@ date: "{{ .Date }}"
 draft: true
 tags: [""]
 showthedate: true
+card: ""
+eventbild: ""
 socialmediabild: ""
-background: ""
 ---
-.
