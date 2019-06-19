@@ -18,8 +18,11 @@
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{ .URL  | absURL }}" />
-		 <meta property="og:image" content="{{ if.Params.socialmediabild }}img/blogg/socialmedia/{{ .Params.socialmediabild }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
-		 <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
+		 <meta property="og:image" content="{{ if.Params.socialmediabild }}/img/blogg/socialmedia/{{ .Params.socialmediabild }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}" />
+     <meta property="og:image:width" content="1200" />
+     <meta property="og:image:height" content="630" />
+     <meta property="og:image:alt" content="{{ .Title }}" />
+     <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
 
 
