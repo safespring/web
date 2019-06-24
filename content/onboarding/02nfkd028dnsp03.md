@@ -16,21 +16,21 @@ noindex: "yes"
 <form id="up-form" name="form_9549ub29368611aa848ba9492ebadbed4c999" action="https://power.upsales.com/api/external/formSubmit" method="POST">
     <h3>1. User info</h3>
     <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" name="Contact.name" required="required" placeholder="User name">
+        <input maxlength="512" type="text" name="Contact.name" placeholder="User name">
     </div>
     <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="User mobile phone">
+        <input maxlength="512" type="text" name="Contact.cellPhone" placeholder="User mobile phone">
 				<div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1">Including +46 or +47 and only numbers. <br><br><b>Example: +46762117309</b></span></div>
     </div>
     <div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
         <input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="User e-mail">
     </div>
     <div class="form"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;<div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1"><b>Federated identity</b><br><br>Connected to <b>SUNET</b>: Verify your EPPN at https://sp.swamid.se<br><br>Connected to <b>Uninett</b>: verify your EPPN for Dataporten at minside.dataporten.no</span></div>
-        <input maxlength="512" type="text" name="Extra.1560240459285" required="required" placeholder="EPPN">
+        <input maxlength="512" type="text" name="Extra.1560240459285" placeholder="EPPN">
     </div>
     <h3>2. Company info</h3>
     <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Company name">
+        <input maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Company name">
     </div>
     <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
         <select name="Extra.1539933501590">
