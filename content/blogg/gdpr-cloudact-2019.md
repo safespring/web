@@ -1,6 +1,6 @@
 ---
 title: "Ytterligare två data-säkerhets­avtal mellan USA och EU kan ogiltigförklaras"
-date: "2019-07-07T06:00:39+02:00"
+date: "2019-07-07T17:13:00+02:00"
 draft: false
 tags: [""]
 showthedate: true
