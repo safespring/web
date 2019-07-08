@@ -1,5 +1,5 @@
 ---
-title: "Att tänka på när det gäller CLOUD act och GDPR"
+title: "Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield"
 date: 2018-06-20
 draft: false
 author: "Martin Millnert"
@@ -13,6 +13,8 @@ aliases:
 ---
 
 <div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>
+
+*Läs om ytterligare två data-säkerhets­avtal mellan USA och EU som kan ogiltigförklaras <a href="/blogg/gdpr-cloudact-2019/">i vårt blogginlägg</a>.*
 
 Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 2009 [(1)](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=celex:12016P/TXT "Stadgan för grundläggande rättigheter"). EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.
 
