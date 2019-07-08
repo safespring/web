@@ -28,7 +28,7 @@ Vi har samlat rekommendationer i vårt White Paper om hur organisationer bör t�
 Ladda ner hela bakgrunden till säkerhetsläget i Europa och hur du kan säkra din data inför kommande lagstiftning från EU.
 
 ### Ladda ner vårt Whiter Paper
-Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av scc och privacy shield
+Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield.
 
 <form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	  <div class="form">

@@ -1,5 +1,5 @@
 ---
-title: "Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act"
+title: "Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield"
 date: 2018-06-20
 draft: false
 author: "Martin Millnert"
