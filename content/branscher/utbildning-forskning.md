@@ -24,5 +24,4 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja 
 <a href="/kontakt" id="text-button">Kontakta Safespring</a>
 <br><br>
 <a href="http://swedishedtechindustry.se/"><div class="partner-container">
-<img src="/branscher/images/safespring_swedish-edtech-industry.png" alt="Safespring är medlemmar i Swedish EdTech Industry" class="partnerlogo">
-</div></a>
+<img src="/branscher/images/safespring_swedish-edtech-industry.png" alt="Safespring är medlemmar i Swedish EdTech Industry" class="partnerlogo"></div></a>
