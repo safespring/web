@@ -1,6 +1,6 @@
 ---
-title: "Ytterligare två data-säkerhets­avtal mellan USA och EU kan ogiltigförklaras"
-date: "2019-07-08T19:20:00+02:00"
+title: "Ytterligare två data-överförings­avtal mellan USA och EU kan ogiltigförklaras"
+date: "2019-07-08"
 draft: false
 tags: [""]
 showthedate: true
@@ -15,15 +15,15 @@ socialmediabild: "safespring_social_19.jpg"
 
 Det är två viktiga avtal som används allmänt av företag inom Europeiska ekonomiska samarbetsområdet (EES) för att legitimera överföringen av personuppgifter till länder utanför EES.
 
-Fallet som påbörjat denna prövning är Schrems 2.0 vilket är en fortsättning på ett fall (Schrems 1.0) som startades 2013 där Max Schrems anmälde Facebook för spridning av personuppgifter till NSA. 
+Fallet som påbörjat denna prövning är Schrems 2.0 vilket är en fortsättning på ett fall (Schrems 1.0) som startades 2013 där Max Schrems anmälde Facebook för spridning av personuppgifter till NSA.
 
-Fallet, Schrems 1.0, gjorde att EU-domstolen ogiltigförklarade det dåvarande avtalen Safe Harbour och tusentals företag gick över till SCCs. Schrems 2.0 är en fortsättning på denna konflikt då Max Schrems ifrågasätter säkerheten i SCCs och Privacy Shield som ersättning av Safe Harbour.
+Fallet, Schrems 1.0, gjorde att EU-domstolen ogiltigförklarade det dåvarande avtalet Safe Harbour och tusentals företag gick över till SCCs. Schrems 2.0 är en fortsättning på denna konflikt då Max Schrems ifrågasätter säkerheten i SCCs och Privacy Shield som ersättning av Safe Harbour.
 
-### Betydande säkerhetsrisk
-Det finns en betydande risk att EU-domstolen  kommer ogiltigförklara Privacy Shield och SCCs vilket innebär att många företag står utan lagligt skydd att överföra personuppgifter till tredje land. Precis detta inträffade första gången detta fall togs upp 2015 och Safe Harbour ogiltigförklarades.
+### Betydande risk
+Det finns en betydande risk att EU-domstolen  kommer ogiltigförklara Privacy Shield och SCCs vilket innebär att många företag står utan lagligt skydd att överföra personuppgifter till tredje land. Precis detta inträffade första gången detta fall togs upp 2015 och Safe Harbour ogiltigförklarades.
 
 ### Våra rekommendationer
-Vi har samlat rekommendationer i vårt White Paper om hur organisationer bör tänka i och med införandet av GDPR och CLOUD Act, framförallt nu när fler säkerhetsavtal kan komma att ogiltigförklaras. 
+Vi har uppdaterat rekommendationerna i vårt White Paper om hur organisationer bör tänka efter införandet av GDPR och CLOUD Act, samt nu när Privacy Shield och SCC kan komma att ogiltigförklaras.
 
 Ladda ner hela bakgrunden till säkerhetsläget i Europa och hur du kan säkra din data inför kommande lagstiftning från EU.
 
