@@ -1,6 +1,6 @@
 ---
 title: "Ytterligare två data-överförings­avtal mellan USA och EU kan ogiltigförklaras"
-date: "2019-07-08"
+date: "2019-07-09"
 draft: false
 tags: [""]
 showthedate: true

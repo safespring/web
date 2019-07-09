@@ -1,6 +1,6 @@
 ---
 title: "Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield"
-date: "2019-07-08"
+date: "2019-07-09"
 draft: false
 author: "Martin Millnert"
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
