@@ -88,6 +88,7 @@ noindex: "yes"
     <input type="hidden" name="isFrame" value="false">
     <input type="text" value="" name="validation" style="display: none;">
     <!-- END OF REQUIRED FIELDS -->
+    <p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
     <button type="submit" id="button">Order</button>
 </form>
 <script>
