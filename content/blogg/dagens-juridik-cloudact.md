@@ -10,6 +10,8 @@ socialmediabild: "safespring_social_14.jpg"
 ---
 <div class="ingress"><p>Adam Odmark, biträdande jurist, advokatfirman Delphi, har skrivit en analys i Dagens juridik den 28 mars</p></div>
 
+<p style="font-size: 12px;"><i>Denna text är skriven av Safespring.</i></p>
+
 Enligt Adam Odmark bör den Europeiska dataskyddsstyrelsen ta fram vägledning gällande amerianska molntjänster.
 
 >Det finns knappast något europeiskt företag eller myndighet som inte använder sig av molntjänster. Utvecklingen går dessutom mot mer och mer molnbaserade IT-lösningar. - Adam Odmark
@@ -25,5 +27,3 @@ Många företag och institutioner har redan tagit steget in i bland annat vår s
 Adam Odmark anser att läget mellan dataskyddsförordningen och USA:s Cloud Act kräver skyndsamt agerande.
 
 >Europeiska dataskyddsstyrelsen bör skyndsamt agera och tala om vad europeiska företag och myndigheter bör göra för att kunna sälja respektive använda molntjänster utan att behöva oroa sig för att bryta mot dataskyddsförordningen. - Adam Odmark
-
-<br><br><a href="http://www.dagensjuridik.se/2019/03/kollision-mellan-dataskyddsforordningen-och-usas-cloud-act" id="button">Läs hela analysen</a>
