@@ -13,7 +13,7 @@ noindex: "yes"
 
 
 
-<form id="up-form" name="form_9549ufb53e38826ba4dc4962bae86986d188c" action="https://power.upsales.com/api/external/formSubmit" method="PUT">
+<form id="up-form" name="form_9549ufb53e38826ba4dc4962bae86986d188c" action="https://power.upsales.com/api/external/formSubmit" method="POST">
     <h3>1. User info</h3>
     <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
         <input maxlength="512" type="text" name="Contact.name" placeholder="User name">
