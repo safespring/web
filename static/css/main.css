@@ -91,7 +91,7 @@ button {
 .form {
 	display: block;
 	max-width: 250px;
-	padding: 12px 24px;
+	padding: 8px 24px;
 	margin: 8px 0;
 	line-height: 20px;
 	border: 1px solid var(--main-color);
@@ -3380,7 +3380,7 @@ h1 {
 }
 
 .ipad-section {
-	font: var(--heavy-weight) 16px/19px var(--mon-font);
+	font: var(--heavy-weight) 16px/5px var(--mon-font);
 	color: var(--web-green-color);
 	text-transform: uppercase;
 }
