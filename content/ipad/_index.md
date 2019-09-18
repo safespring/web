@@ -1,8 +1,8 @@
 ---
-title: "Ditt White Paper har skickats till din mail."
+title: "Safespring"
 date: "2019-07-09"
 draft: false
-section: "Tack!"
+section: ""
 type: "ipad"
 layout: "tack"
 background: "safespring-ipad-start.jpg"
