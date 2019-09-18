@@ -91,7 +91,7 @@ button {
 .form {
 	display: block;
 	max-width: 250px;
-	padding: 8px 24px;
+	padding: 5px 24px;
 	margin: 8px 0;
 	line-height: 20px;
 	border: 1px solid var(--main-color);
@@ -3463,7 +3463,6 @@ h1 {
 	background-color: var(--link-color);
 	padding: 15px 30px 13px 30px;
 	text-align: center;
-	bottom: 10vw;
 	font: var(--heavy-weight) 18px var(--hind-font);
 	color: var(--text-color);
 	text-transform: uppercase;
