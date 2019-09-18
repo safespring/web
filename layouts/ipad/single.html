@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 <body>
   {{ partial "g-tag-manager.html" . }}
-  <div class="ipad-image" style="background: url("/img/ipad/{{ if.Params.background }}{{ .Params.background }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}"); background-size: cover; background-position: center;">
+  <div class="ipad-image" style="background: url('/img/ipad/{{ if.Params.background }}{{ .Params.background }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}'); background-size: cover; background-position: center;">
     <img src={{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}>
     <button class="button-white-border" onclick="goBack()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;&nbsp;Tillbaka</button>
   </div>
