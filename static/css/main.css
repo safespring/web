@@ -13,6 +13,7 @@
 	--mon-font: "Montserrat", sans-serif;
 	--extra-light-weight: 100;
 	--light-weight: 200;
+	--hind-light-weight: 300;
 	--normal-weight: 400;
 	--medium-weight: 500;
 	--heavy-weight: 600;
@@ -90,7 +91,7 @@ button {
 .form {
 	display: block;
 	max-width: 250px;
-	padding: 12px 24px;
+	padding: 5px 24px;
 	margin: 8px 0;
 	line-height: 20px;
 	border: 1px solid var(--main-color);
@@ -252,7 +253,7 @@ blockquote p {
 }
 
 .inputGroup label {
-	padding: 12px 12px 12px 30px;
+	padding: 12px 12px 12px 60px;
 	display: block;
 	text-align: left;
 	color: var(--main-color);
@@ -293,7 +294,7 @@ blockquote p {
 	border-radius: 50%;
 	z-index: 2;
 	position: absolute;
-	right: 4px;
+	left: 9px;
 	top: 50%;
 	transform: translateY(-50%);
 	cursor: pointer;
@@ -1854,6 +1855,16 @@ text-align: center;
 	justify-content: flex-start
 }
 
+.content-container-ipad {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start
+	flex: 0 0 auto;
+}
+
 .content-container ul, li, a {
 	padding: 0;
 	margin: 0px;
@@ -3301,3 +3312,174 @@ h1 {
 }
 
 /* END - FORM TOOL TIP */
+
+.ipad-form-tack {
+	width: 100vw;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.ipad-form-start {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	-webkit-overflow-scrolling: touch;
+	z-index: 10;
+}
+
+.ipad-form {
+	float: left;
+	width: 40vw;
+	padding: 10vw;
+	margin-left: 40vw;
+}
+
+.ipad-form-tack h1 {
+	font: 300 65px/70px var(--hind-font);
+	color: var(--text-color);
+	text-align: center;
+	position: absolute;
+	top: 40vh;
+}
+
+.ipad-form-start h1 {
+	position: absolute;
+	font: 300 55px/70px var(--hind-font);
+	color: var(--text-color);
+	text-align: center;
+	max-width: 100vw;
+	top: 16vw;
+}
+
+.ipad-form h1 {
+	font: 300 35px/40px var(--hind-font);
+	color: var(--clear-blue-color);
+	margin: 0;
+}
+
+.ipad-form h2 {
+	font: 300 25px/40px var(--hind-font);
+	color: var(--clear-blue-color);
+	margin: 0;
+}
+
+.ipad-section-tack {
+	position: absolute;
+	font: var(--heavy-weight) 30px/20px var(--mon-font);
+	color: var(--web-green-color);
+	text-transform: uppercase;
+	text-align: center;
+	top: 33vh;
+}
+
+.ipad-section {
+	font: var(--heavy-weight) 16px/5px var(--mon-font);
+	color: var(--web-green-color);
+	text-transform: uppercase;
+}
+
+.ipad-image-tack {
+	height: 100vh;
+	width: 100vw;
+	float: left;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+
+.ipad-image-start {
+	height: 100vh;
+	width: 100vw;
+	float: left;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+
+.ipad-image {
+	height: 100vh;
+	width: 40vw;
+	float: left;
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+}
+
+.ipad-image-tack img {
+	position: absolute;
+	margin: 0 auto 0 auto;
+	width: 20vw;
+	top: 10vh;
+}
+
+.ipad-image img {
+	position: absolute;
+	margin: 0 auto 0 auto;
+	width: 20vw;
+	top: 10vw;
+}
+
+.ipad-image-start img {
+	position: absolute;
+	margin: 0 auto 0 auto;
+	width: 20vw;
+	top: 6vw;
+}
+
+.button-white-border {
+	position: absolute;
+	text-align: center;
+	border-radius: 50px;
+	background-color: transparent;
+	border: 2.5px solid #FAFEFE;
+	padding: 15px 30px 13px 30px;
+	bottom: 10vw;
+	text-align: center;
+	font: var(--heavy-weight) 18px var(--hind-font);
+	color: var(--text-color);
+	text-transform: uppercase;
+}
+
+.orange {
+	color: var(--link-color);
+}
+
+.ipad-button {
+	position: absolute;
+	text-align: center;
+	border-radius: 50px;
+	background-color: var(--link-color);
+	padding: 15px 30px 13px 30px;
+	text-align: center;
+	font: var(--heavy-weight) 18px var(--hind-font);
+	color: var(--text-color);
+	text-transform: uppercase;
+	bottom: 10vh;
+}
+
+.flexcontainer-ipad {
+	display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+	margin-top: 15%;
+	&::-webkit-scrollbar {
+	display: none;
+}
+}
+
+.flexcontainer-ipad h3 {
+	font: 300 28px/1.2 var(--hind-font) !important;
+	color: var(--blue-color);
+	margin: 0;
+}
