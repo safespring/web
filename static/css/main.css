@@ -3314,9 +3314,7 @@ h1 {
 /* END - FORM TOOL TIP */
 
 .ipad-form-tack {
-	height: 300px;
 	width: 100vw;
-	margin-top: 20%;
 	display: flex;
 	position: absolute;
 	justify-content: center;
@@ -3343,10 +3341,11 @@ h1 {
 }
 
 .ipad-form-tack h1 {
-	position: absolute;
 	font: 300 65px/70px var(--hind-font);
 	color: var(--text-color);
 	text-align: center;
+	position: absolute;
+	top: 40vh;
 }
 
 .ipad-form-start h1 {
@@ -3376,7 +3375,7 @@ h1 {
 	color: var(--web-green-color);
 	text-transform: uppercase;
 	text-align: center;
-	top: 3vw;
+	top: 33vh;
 }
 
 .ipad-section {
@@ -3421,7 +3420,7 @@ h1 {
 	position: absolute;
 	margin: 0 auto 0 auto;
 	width: 20vw;
-	top: 10vw;
+	top: 10vh;
 }
 
 .ipad-image img {
@@ -3466,6 +3465,7 @@ h1 {
 	font: var(--heavy-weight) 18px var(--hind-font);
 	color: var(--text-color);
 	text-transform: uppercase;
+	bottom: 10vh;
 }
 
 .flexcontainer-ipad {

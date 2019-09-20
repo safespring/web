@@ -5,7 +5,7 @@ draft: false
 section: "Tack!"
 type: "ipad"
 layout: "tack"
-background: "safespring-ipad-villkor.jpg"
+background: "safespring-ipad-start.jpg"
 linktext: "Tack"
 hide: "x"
 noindex: "x"
