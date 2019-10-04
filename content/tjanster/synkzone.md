@@ -30,13 +30,13 @@ Synkzone innehåller också ett avancerat skydd mot s.k. ransomware som automati
 <div style="float:left; margin:0px 20px 20px 0px;"><a href="/tjanster/order-synkzone/" id="button">Beställ Synkzone</a></div><div style="float:left;"><a href="https://docs.safespring.com/synkzone/general-info/" id="text-button">Läs FAQ</a></div>
 <br><br>
 
-## Enkelhet
+### Enkelhet
 I Synkzone så kan en verksamhet delas upp i en eller flera zoner, där en zon representerar ett projekt, en avdelning, eller något annat som en grupp användare samarbetar kring. Bara medlemmar i en zon har tillgång till zonens innehåll. Zonen skyddar dokument mot att obehöriga kan komma åt dem, skyddet omfattar även obehöriga inom organisationen som inte kan läsa känsliga dokument som t.ex. anställningsvillkor, kontrakt eller andra dokument. En zon kan också omfatta extern personal som behöver arbeta tillsammans med er organisation som t.ex. tillfälliga konsulter, revisorer, patentbyråer, kunder, samarbetspartners eller jurister.
 
-## Tillgänglighet
+### Tillgänglighet
 Synkzones programvara gör det enkelt att arbeta med dokument och filer oavsett om du är på kontoret, arbetar hemma, är på resande fot eller befinner dig på någon annans nätverk. Du kan fortsätta arbeta lokalt även när du inte har tillgång till något nätverk. Synkzone har all funktionalitet för säkerhet och överföring inbyggd i sig och laddar automatiskt upp de ändringar du gjort samt ser till att du alltid har dina kollegors senaste ändringar lokalt på din dator. Alla filer sparas dessutom på er server.
 
-## Samarbetsstöd
+### Samarbetsstöd
 Samarbete inom en organisation är ofta baserat på utbyte av information som lagras i filer. Synkzone erbjuder flera stöd för att organisera och underlätta samarbete kring dokument och andra filer.
 
 - **Logg:** Inom varje zon loggas automatiskt allt som sker med filerna.
@@ -45,7 +45,7 @@ Samarbete inom en organisation är ofta baserat på utbyte av information som la
 - **Fillås:** Användare kan låsa filer för exklusiv åtkomst.
 - **Arkivering:** Filer kan arkiveras på din dator så att de inte tar upp någon plats.
 
-## FAKTA
+## Fakta
 - Alla filer krypteras automatiskt hos er och lagras sedan i Safesprings infrastruktur.
 - Varje fil är individuellt krypterad med AES-256, godkänt av NSA för skydd av information klassad som TOP SECRET.
 - Synkzone är ett s.k. zero knowledge system där all kryptering sker på användarnas datorer. Endast de som anses behöriga har tillgång till de kryptonycklar som är nödvändiga för att läsa filerna. Ingen annan part som t.ex. operatör, ”hackers”, myndigheter eller vi som tjänsteleverantör kan komma åt filerna i klartext.
