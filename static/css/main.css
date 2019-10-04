@@ -47,6 +47,10 @@ h2 {
 	margin-bottom: 7px;
 }
 
+h2:first-child {
+	padding-top: 0;
+}
+
 img {
 	width: 100%;
 }
@@ -1143,7 +1147,7 @@ text-align: center;
 	}
 	.ch-content {
 		grid-column: span all;
-		margin: 16px;
+		margin: 30px;
 	}
 	.ch-sidebar {
 		background-color: #FFF;
@@ -1943,8 +1947,8 @@ text-align: center;
 	}
 	.heading-content {
 		grid-column: span 10;
-		margin-left: 16px;
-		margin-right: 16px;
+		margin-left: 30px;
+		margin-right: 30px;
 	}
 	/*.ch-content {
     display: -ms-grid;
@@ -1953,7 +1957,7 @@ text-align: center;
     overflow: hidden;
   }*/
 	.ch-body {
-		margin: 16px;
+		margin: 30px;
 		grid-column: 2/ span 10;
 	}
 }

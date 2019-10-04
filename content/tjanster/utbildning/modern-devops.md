@@ -10,7 +10,9 @@ sidebarlinkurl: "#"
 socialmedia: "safespring-devops.jpg"
 ---
 ## Description
-For technical professionals that wants to learn how to build infrastructure for the cloud. We will cover what it means to build and support cloud environments for your organi-zation microservices need based on Kubernetes. We learn how to build production ready microservice cluster that are secure, observable and supporting Continuous Inte-gration/Deployment and Delivery, accelerating your organization's time to market for your development efforts.
+For technical professionals that wants to learn how to build infrastructure for the cloud. We will cover what it means to build and support cloud environments for your organization microservices need based on Kubernetes. We learn how to build production ready microservice cluster that are secure, observable and supporting Continuous Integration/Deployment and Delivery, accelerating your organization's time to market for your development efforts.
+
+This course can be divided into several lectures. Download the course description for more information.
 
 ### Level
 Intermediate
@@ -36,7 +38,7 @@ Software Developers, Technical Project Managers, Software Architects, Operations
 - Serverless Architecture/Development
 
 ## How to apply
-Let us know that youre intressted in the course "Modern DevOps & Microservices". Fill in the form below and we'll contact you.
+Let us know that you're interested in the course "Modern DevOps & Microservices". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
@@ -59,7 +61,6 @@ Let us know that youre intressted in the course "Modern DevOps & Microservices".
 	<!-- END OF REQUIRED FIELDS -->
   <br>
 	<p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
-  <br>
 	<button type="submit" class="button">Send request</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

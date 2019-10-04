@@ -3,11 +3,11 @@ title: "Cloud strategy for top-level managers"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "Introduction and preventive study for managers with limited technical understand-ing."
-background: "safespring-devops.jpg"
+background: "safespring-utbildning-cloud-strategy-for-top-level-managers2.jpg"
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "#"
-socialmedia: "safespring-devops.jpg"
+socialmedia: "safespring-utbildning-cloud-strategy-for-top-level-managers.jpg"
 ---
 ## Description
 Introduction and preventive study for managers with limited technical understand-ing to enable common ground for internal dialogs and progress in a change of IT-related decisions and way going forward.
@@ -33,7 +33,7 @@ CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, 
 - Process
 
 ## How to apply
-Let us know that youre intressted in the course "Cloud strategy for top-level managers". Fill in the form below and we'll contact you.
+Let us know that you're interested in the course "Cloud strategy for top-level managers". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
@@ -56,7 +56,6 @@ Let us know that youre intressted in the course "Cloud strategy for top-level ma
 	<!-- END OF REQUIRED FIELDS -->
   <br>
 	<p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
-  <br>
 	<button type="submit" class="button">Send request</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

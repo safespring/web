@@ -12,6 +12,8 @@ socialmedia: "safespring-devops.jpg"
 ## Description
 For management or tech savvy employees that wants to get a hands-on experience of cloud computing and understand the cloud landscape. We dig into enabling technol-ogies and surrounding strategic concerns when deploying to the cloud. This course can help you get started with public cloud providers and understand the components needed to run your workloads in the cloud.
 
+This course can be divided into several lectures. Download the course description for more information.
+
 ### Level
 Beginner (with some technical knowledge).
 
@@ -19,7 +21,10 @@ Beginner (with some technical knowledge).
 Software Developers, Technical Project Managers, Software Architects, Operations Support professionals, Deployment engineers, IT Managers, Development Managers, Technical Managers, Line managers, QA and Testing professionals, Domain Experts, etc. From all industry sectors.
 
 ### Duration
-8-9 lectures + 1 Workshop.
+4 days (or 2 + 2 days).
+
+### Content
+8-9 lectures + 1 Workshop
 
 ### Topics Covered
 
@@ -34,7 +39,7 @@ Software Developers, Technical Project Managers, Software Architects, Operations
 - Observability
 
 ## How to apply
-Let us know that youre intressted in the course "Introduction to Cloud Computing". Fill in the form below and we'll contact you.
+Let us know that you're interested in the course "Introduction to Cloud Computing". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
@@ -57,7 +62,6 @@ Let us know that youre intressted in the course "Introduction to Cloud Computing
 	<!-- END OF REQUIRED FIELDS -->
   <br>
 	<p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
-  <br>
 	<button type="submit" class="button">Send request</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

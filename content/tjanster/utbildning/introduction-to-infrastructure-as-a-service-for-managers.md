@@ -19,7 +19,7 @@ Beginner (with no or limited technical knowledge).
 CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.
 
 ### Duration
-4 days (or 2 + 2 days).
+1 day.
 
 ### Content
 Safespring Cloud Infrastructure with OpenStack.
@@ -86,7 +86,7 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 ## How to apply
-Let us know that youre intressted in the course "Introduction to “Infrastructure as a Service” for managers". Fill in the form below and we'll contact you.
+Let us know that you're interested in the course "Introduction to “Infrastructure as a Service” for managers". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
@@ -109,7 +109,6 @@ Let us know that youre intressted in the course "Introduction to “Infrastructu
 	<!-- END OF REQUIRED FIELDS -->
   <br>
 	<p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
-  <br>
 	<button type="submit" class="button">Send request</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>
