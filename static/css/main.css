@@ -919,6 +919,18 @@ margin-left: 24px;
 	.content-body-index p {
 		margin-bottom: 0px;
 	}
+	.heading-sub {
+		margin: 80px 0 0 0;
+		height: 60vh;
+		width: 100vw;
+		overflow: hidden;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.heading-sub:last-child {
+		margin: 0 0 20px 0;
+	}
 }
 
 .content-main>* {
@@ -1947,8 +1959,11 @@ text-align: center;
 	}
 	.heading-content {
 		grid-column: span 10;
-		margin-left: 30px;
-		margin-right: 30px;
+		margin: 0 30px;;
+		align-self: end;
+	}
+	.heading-content:last-child {
+		margin: 0 30px 30px 30px;
 	}
 	/*.ch-content {
     display: -ms-grid;

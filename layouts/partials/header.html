@@ -2,7 +2,7 @@
 <!-- Full Navbar -->
 <div class="navbar shadow-1">
   <div class="nav-flex">
-    <a href="{{ .Site.BaseURL }}" class="logo">
+    <a href="/" class="logo">
       <img src={{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}>
     </a>
     <nav id="navigation" class="site-navigation" role="navigation">
@@ -117,6 +117,7 @@
       </ul>
   </div>
 </nav>
+
 <script>
 var coll = document.getElementsByClassName("menu-item");
 var i;
@@ -132,6 +133,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
 <script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -139,7 +141,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("h-bar").style.top = "0";
   } else if (document.body.scrollTop > 1) {
-    document.getElementById("h-bar").style.top = "-200px";
+    document.getElementById("h-bar").style.top = "-80px";
   }
   prevScrollpos = currentScrollPos;
 }
