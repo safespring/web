@@ -576,12 +576,11 @@ label.switch-label {
 	position: absolute;
 	top: 0;
 	left: 0;
-	filter: url('#safespring_blue');
 	background: url('/img/safespring-index.jpg');
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background-position: center;
+	background-position: left;
 	z-index: -1;
 }
 
@@ -1928,8 +1927,6 @@ text-align: center;
 		position: absolute;
 		top: 0;
 		left: 0;
-		filter: url('#safespring_blue');
-		background: url('/img/safespring-molnlagring-blue3.jpg');
 		width: 100%;
 		max-width: 100vw;
 		height: 100%;
@@ -1999,7 +1996,7 @@ text-align: center;
 	color: #FAFEFE;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 875px) {
 	.heading-content h1 {
 		font: var(--heavy-weight) 35px var(--hind-font);
 		line-height: 1;
@@ -2666,7 +2663,7 @@ h1 {
 }
 
 .text-black {
-	color: #323232;
+	color: var(--main-color);
 }
 
 .text-muted {
@@ -2687,6 +2684,10 @@ h1 {
 
 .font-weight-medium {
 	font-weight: 600;
+}
+
+.font-weight-light {
+	font-weight: 300;
 }
 
 .lts-1px {

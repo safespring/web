@@ -19,14 +19,12 @@ Beginner / management (No or limited technical background).
 CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.
 
 ### Duration
-1-2 lectures
+1 day (1-2 lectures)
 
 ### Topics Covered
 
-- Definition of current state
-  - for the company with respect to IT support
-- Definition of desired state
-  - for the company with respect to IT support
+- Definition of **current** state for the company with respect to IT support
+- Definition of **desired** state for the company with respect to IT support
 - Possible and suggested paths and directions going forward
 - Strategy
 - Organization

@@ -10,7 +10,7 @@ sidebarlinkurl: "#"
 socialmedia: "safespring-devops.jpg"
 ---
 ## Description
-For management or tech savvy employees that wants to get a hands-on experience of cloud computing and understand the cloud landscape. We dig into enabling technol-ogies and surrounding strategic concerns when deploying to the cloud. This course can help you get started with public cloud providers and understand the components needed to run your workloads in the cloud.
+For management or tech savvy employees that wants to get a hands-on experience of cloud computing and understand the cloud landscape. We dig into enabling technologies and surrounding strategic concerns when deploying to the cloud. This course can help you get started with public cloud providers and understand the components needed to run your workloads in the cloud.
 
 This course can be divided into several lectures. Download the course description for more information.
 
@@ -26,17 +26,72 @@ Software Developers, Technical Project Managers, Software Architects, Operations
 ### Content
 8-9 lectures + 1 Workshop
 
-### Topics Covered
+<div class="accordion-box">
+<button class="accordion">Topics Covered</button>
+<div class="panel content-body">
+<p>These topcs will be covered:</p>
+<ul>
+<li>Cloud Computing definitions</li>
+<li>Compute models and Load Balancing</li>
+<li>Cloud Virtualization</li>
+<li>Cloud Storage</li>
+<li>Service Oriented Architecture / Microservices</li>
+<li>Software Defined Networks</li>
+<li>Scalability essentials</li>
+<li>Big Data</li>
+<li>Observability</li>
+</ul>
+<div class="pb-3"> </div>
+</div>
+</div>
 
-- Cloud Computing definitions
-- Compute models and Load Balancing
-- Cloud Virtualization
-- Cloud Storages
-- Service Oriented Architecture / Microservices
-- Software Defined Networks
-- Scalability essentials
-- Big Data
-- Observability
+<div class="accordion-box">
+<button class="accordion">Sessions</button>
+<div class="panel content-body">
+<p>Example of course plan:</p>
+<ul>
+<li><b>Session 1</b> (2–3 hours)
+<ul>
+<li>Instroduction to Cloud Computing</li>
+<li>Compute Models and Load Balancing</li>
+</ul></li>
+<li><b>Session 2</b> (2–3 Hours)
+<ul>
+<li>Cloud Virtualization</li>
+<li>Cloud Storage</li>
+</ul></li>
+<li><b>Session 3</b> (2–3 hours)
+<ul>
+<li>Software Defined Networks</li>
+<li>SOA / Microservices</li>
+</ul></li>
+<li><b>Session 4</b> (2–3 hours)
+<ul>
+<li>Big Data</li>
+<li>Observability</li>
+</ul></li>
+</ul>
+<div class="pb-3"> </div>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 ## How to apply
 Let us know that you're interested in the course "Introduction to Cloud Computing". Fill in the form below and we'll contact you.
