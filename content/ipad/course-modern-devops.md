@@ -3,7 +3,7 @@ title: "Modern DevOps & Microservices"
 date: "2019-08-07"
 draft: false
 section: "Utbildning"
-background: "safespring-ipad-utbildning3.jpg"
+background: "safespring-ipad-utbildning4.jpg"
 linktext: "Anmäl intresse"
 noindex: "x"
 ---
@@ -22,6 +22,10 @@ Aimed for Managers with overall technical understanding but no expertise. Overvi
   <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.name" required="" placeholder="Your name"></div>
   <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.cellPhone" required="" placeholder="Your cell phone"></div>
   <div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Your E-mail"></div>
+  <div class="inputGroup">
+    <input id="villkor" type="checkbox" value="on" name="singleOptIn.1570524135523">
+    <label for="villkor">I'm accepting the <a class="orange" href="/ipad/villkor/">terms</a></label>
+  </div>
   <input type="hidden" value="Introduction to “Infrastructure as a Service” for managers" name="Extra.1570014130220" checked>
 	<!-- REQUIRED FIELDS -->
   <input type="hidden" name="formCid" value="9549">
@@ -30,7 +34,6 @@ Aimed for Managers with overall technical understanding but no expertise. Overvi
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
 	<button type="submit" class="button"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Get course description</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>
