@@ -13,7 +13,7 @@ aliases:
     - /backup/
     - /safespring-backup/
 ---
-## BACKUP SOM TJÄNST
+## Backup som tjänst
 Safesprings Backup som tjänst (Backup) är en riktig molnbaserad backuptjänst. Det betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
 <a href="#testa-safespring" id="text-button">Testa Safespring</a>
 
@@ -22,7 +22,7 @@ Tjänsten är flexibel och lätthanterlig. Ni kan individuellt välja vilken dat
 
 Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Bare Machine Recovery” vilket gör det möjligt att återskapa en maskin i sin helhet, antingen på en annan fysisk hårdvara, eller till en ny virtuell maskin exempelvis i vår Compute-miljö.
 
-### LÖSNING FÖR OFFSITE BACKUP
+### Lösning för off-site backup
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
 
 

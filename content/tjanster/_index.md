@@ -12,7 +12,7 @@ aliases:
 Stabil infrastruktur och resurskonsumering efter behov.
 Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.
 
-### MOLNTJÄNSTER MED HÖG SÄKERHET
+### Molntjänster med hög säkerhet
 Våra molntjänster är skalbara och kostnadseffektiva. Med lokalt producerade molntjänster och med fysiska datacenter placerade i samma land som kunden - lämnar er data aldrig landet.
 
 Vi lever upp till lokala lagar och regler kring datalagring såsom GDPR och Arkivlagen och ligger trots avancerade säkerhetslösningar i priskonkurrens med de internationella publika molnen. Vi gör detta genom en hög grad av automatisering. Automatisering är även ett mycket bra sätt att höja kvalitet och driftsäkerhet.
@@ -21,7 +21,7 @@ Vi lever upp till lokala lagar och regler kring datalagring såsom GDPR och Arki
 
 Våra molntjänster skalar du enkelt upp och ner och betalar bara för det ni  använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
 
-### SÄKRA OCH FLEXIBLA INFRASTRUKTURTJÄNSTER FRÅN SAFESPRING GER:
+### Säkra och flexibla infrastrukturtjänster från Safespring ger:
 - Kostnadsfördelar, betala bara för den kapacitet du behöver idag
 - Full kontroll på leveransen, självprovisionering via API
 - Mer effektivt utnyttjande av IT-resurser

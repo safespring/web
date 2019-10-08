@@ -10,7 +10,7 @@
   <div class="content-summary-blogg">
     {{ .Params.intro }}</br></br></br>
     {{ if .Params.sidebarlinkurl }}
-    <a href="{{ .Params.sidebarlinkurl }}" id="button">{{ .Params.sidebarlinkname }}</a>
+    <a href="{{ .Params.sidebarlinkurl }}" id="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}</a>
     {{ end }}
   </div>
   <br>

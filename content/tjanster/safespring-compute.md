@@ -14,7 +14,7 @@ aliases:
 devops: ""
 ---
 ## Virtuella maskiner till er tjänst
-**En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar**
+<div class="ingress"><p>En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar.</p></div>
 
 Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
 
@@ -28,7 +28,7 @@ Den lagring som behövs till de virtuella instanserna är separerad från nodern
 - **Fast** — som är optimerat på prestanda.
 - **Large** — som är optimerat på pris.
 
-Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet. <a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
+Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet. <br><br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
 
 ## Datahallar inom landets gränser
 Tjänsten levereras från våra mycket säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett nordiskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
@@ -42,9 +42,11 @@ Eftersom att OpenStack är baserad på Open Source gör det också att den funge
 
 Plattformen skapar också ett ramverk för att designa sina applikationer så att de är anpassade för molnet, s k Cloud Native. Den stora skillnaden i design från traditionella applikationsuppsättningar är att tjänsterna delas upp i små tjänster som är lätta att skala horisontellt - dvs. att man skapar många små byggklossar som tillsammans delar på arbetet istället för att öka resurserna på en nod som gör allt (monolit).
 
-**Kubernetes och containrar** gör det också lätt att automatisera uppsättningen av applikationer  och gör det också möjligt att låta uppsättningen skala efter behov. Det går också att använda Kubernetes för att skapa en likadan uppsättning av dina applikationer, oavsett om ni kör dem hos oss, hos er eller hos en annan molnleverantör.
+### Kubernetes och containrar
+ ...gör det också lätt att automatisera uppsättningen av applikationer  och gör det också möjligt att låta uppsättningen skala efter behov. Det går också att använda Kubernetes för att skapa en likadan uppsättning av dina applikationer, oavsett om ni kör dem hos oss, hos er eller hos en annan molnleverantör.
 
-**OpenStack** använder sig av öppna, dokumenterade APIer som gör det enkelt att skriva egna skript för automatisering för uppsättning av nya resurser. På så sätt kan ni göra klara definitionerna för er infrastruktur och en väldigt enkel flytt till en annan leverantör om ni någon gång i framtiden skulle vilja byta.
+### OpenStack
+...använder sig av öppna, dokumenterade APIer som gör det enkelt att skriva egna skript för automatisering för uppsättning av nya resurser. På så sätt kan ni göra klara definitionerna för er infrastruktur och en väldigt enkel flytt till en annan leverantör om ni någon gång i framtiden skulle vilja byta.
 
 Vi på Safespring samarbetar också med andra företag inom Linux-communityt för att leverera tjänster. En sådan partner är SUSE som genom sin produkt Container as a Service-plattform gör det väldigt enkelt att sätta upp, och underhålla, ett fullfjädrat Kubernetes-kluster i vår plattform.  
 
