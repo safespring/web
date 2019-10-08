@@ -1,5 +1,5 @@
 ---
-title: "Ditt White Paper har skickats till din mail."
+title: "Kolla din inkorg, du har precis fått mail från oss."
 date: "2019-07-09"
 draft: false
 section: "Tack!"
