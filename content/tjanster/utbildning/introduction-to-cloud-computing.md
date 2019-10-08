@@ -6,7 +6,7 @@ intro: "For technical professionals that wants to learn how to build infrastruct
 background: "safespring-devops.jpg"
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 ---
 ## Description

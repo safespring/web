@@ -6,7 +6,7 @@ intro: "Vi tror att adoptera AI är en smidig startprocess. Som sådan handlar d
 background: "safespring-devops.jpg"
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 ---
 <div class="ingress"><p>Målet med Lean AI-programmet är att skapa processer och teknik som integrerar kunskap, processer och data i arbetsflöden som stöder kontinuerlig innovation.</p></div>

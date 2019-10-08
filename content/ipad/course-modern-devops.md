@@ -26,7 +26,7 @@ Aimed for Managers with overall technical understanding but no expertise. Overvi
     <input id="villkor" type="checkbox" value="on" name="singleOptIn.1570524135523">
     <label for="villkor">I'm accepting the <a class="orange" href="/ipad/villkor/">terms</a></label>
   </div>
-  <input type="hidden" value="Introduction to “Infrastructure as a Service” for managers" name="Extra.1570014130220" checked>
+  <input type="hidden" value="Modern DevOps & Microservices" name="Extra.1570014130220" checked>
 	<!-- REQUIRED FIELDS -->
   <input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u6492f11dcdff4847b321cfc6837e5ad2">
