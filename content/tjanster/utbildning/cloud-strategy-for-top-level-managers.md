@@ -6,7 +6,7 @@ intro: "Introduction and preventive study for managers with limited technical un
 background: "safespring-utbildning-cloud-strategy-for-top-level-managers.jpg"
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-utbildning-cloud-strategy-for-top-level-managers.jpg"
 ---
 ## Description
