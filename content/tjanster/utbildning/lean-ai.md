@@ -1,7 +1,7 @@
 ---
 title: "Lean Artificial Intelligence"
 date: 2019-10-01T16:07:06+02:00
-draft: false
+draft: true
 intro: "Vi tror att adoptera AI är en smidig startprocess. Som sådan handlar det lika mycket om människor som det handlar om teknik."
 background: "safespring-devops.jpg"
 sidebarlinkname: "Course description"
