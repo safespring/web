@@ -12,7 +12,7 @@ aliases:
 
 We believe in building scalable software and infrastructure, and with the help of our courses you can learn what that means for you and your organization and how it can support your operations and further development as a successful company.
 
-We’re currently offering five courses at different technical levels to give you both an overview of cloud computing and an in-depth dive into advanced cloud computing and AI.
+We’re currently offering five courses at different technical levels to give you both an overview of cloud computing and an in-depth dive into advanced cloud computing and Microservices.
 
 ## Cloud computing and introduction for managers
 Two of our course packages is aimed for staff with overall technical overview but with no expertise level. The goal of these courses it to strengthen the understanding and knowledge at management level, both of cloud computing and the benefits a company can gain from adapting to modern cloud computing practices.
@@ -43,7 +43,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
 </div>
 
 ## Cloud computing, DevOps and microservices
-We’re currently offering three technical course packages that covers working with the cloud, from different roles. Each of these packages could be divided into two separate courses (3-4 topics per 2-day course), or even shorter and with deeper content for more experienced technical staff (1-2 topics per day).
+We’re currently offering two technical course packages that covers working with the cloud, from different roles. Each of these packages could be divided into two separate courses (3-4 topics per 2-day course), or even shorter and with deeper content for more experienced technical staff (1-2 topics per day).
 
 These two packages are developed to give you an overview and good understanding on a high level, what opportunities and advantages cloud services can offer your operations and businesses in terms of higher security, lower cost production, flexibility, shorter time to market, compliance with local laws and regulations, and more…
 
@@ -73,7 +73,7 @@ These two packages are developed to give you an overview and good understanding 
   </p>
 </div>
 </div>
-<div class="accordion-box">
+<!--<div class="accordion-box">
 <button class="accordion">Lean Artificial Intelligence</button>
 <div class="panel">
   <h3>Level</h3>
@@ -86,7 +86,7 @@ These two packages are developed to give you an overview and good understanding 
   <button id="button" onclick="window.location.href = '/tjanster/utbildning/lean-ai/';">Learn more</button>
   </p>
 </div>
-</div>
+</div>-->
 
 ## Before course start
 To ensure that participants gain maximum benefits from the training, detailed questionnaires will be sent to all course participants to establish exactly where their training needs lie. The completed forms will be analyzed by the course trainer. We also provide online studies to prepare you for the course.
@@ -106,7 +106,7 @@ Our courses are thoroughly researched and structured to provide intense and inti
 - Hands-on “learning by doing”
 
 ## About the instructors
-The curriculum is designed by experts and our instructors are all experienced professionals. The courseware is always current and updated with the latest tech advancements.  
+The curriculum is designed by experts and our instructors are all experienced professionals. The courseware is always current and updated with the latest tech advancements.
 
 ### Max Andersson
 *Technical PM & Software engineer*
