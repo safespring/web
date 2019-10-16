@@ -3,6 +3,9 @@ title: "Safespring Acceptable Use Policy"
 date: 2018-06-27T14:29:26+02:00
 draft: false
 intro: "Safespring offers its customers a variety of infrastructure cloud services. This policy sets forth the principles governing the use of any of Safespring’s cloud services by its customers or partners."
+sidebarlinkname: "Download PDF"
+sidebarlinkicon: "fa-file-download"
+sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01"
 ---
 
 <div class="ingress"><p>This policy sets forth the principles governing the use of any of Safespring’s cloud services by its customers or partners.</p></div>
