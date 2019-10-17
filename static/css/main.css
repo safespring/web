@@ -1124,7 +1124,7 @@ text-align: center;
 	}
 	.ch-sidebar {
 		grid-column: 8 / span 2;
-		margin: 15% 0 0 0;
+		margin: 15% 0;
 	}
 	.ch-sidebar p {
 		font-size: 16px;
@@ -2983,9 +2983,9 @@ h1 {
 }
 
 .flexcontainer {
-	margin: auto;
+	margin: 5% auto;
 	display: flex;
-	align-items: center;
+	align-items: top;
 	justify-content: center;
 	flex-flow: row wrap;
 	align-content: space-between;

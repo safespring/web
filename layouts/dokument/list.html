@@ -1,67 +1,27 @@
 {{ partial "head.html" . }}
-<body>
-  {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-   {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub" style="background: url(/img/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
-    <div class="heading-content">
-      <h1>Dokument</h1>
-    </div>
-  </div>
-
-<!-- HEADING -->
-
-
-<!-- CONTENT -->
-<main class="content-chalmers">
-  <!-- Main  -->
-  <div class="ch-content">
-    <div class="">
-      {{ range .Data.Pages.GroupByDate "2006" }}
-
-      <div class="content-container">
-        {{ range .Pages }}
-          {{ .Render "li"}}
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
+{{ partial "g-tag-manager.html" . }}
+ {{ partial "header.html" . }} <!-- HEADING -->
+<div class="heading-sub" style="background: url(/img/blue/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+  <div class="heading-content">
+    <h1>Safespring dokument</h1>
+    <p>Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.</p>
   </div>
 </div>
 
-  <!-- SIDEBAR -->
-  <div class="ch-sidebar shadow-1">
-    <div>
-      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
-    </div>
+<!-- CONTENT -->
+<main class="content-chalmers" style="background:var(--text-color)">
+  <!-- Main  -->
+  <div class="listpage">
+    <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
+      {{ range .Data.Pages.GroupByDate "2006" }}
 
-    <div>
-      <h2 class="content-heading">Om Safespring</h2>
-      <p class="content-body">Här finns allmänna dokument samlade från Safespring. För att läsa dokumentation om våra tjänster hänvisar vi till sidan <a href="/support">support</a> eller vår <a href="https://docs.safespring.com/"> tekniska tjänste-beskrivning</a>.</p>
+        {{ range .Pages }} {{ .Render "li"}} {{ end }}
 
-      <br>
+      {{ end }}
     </div>
-    <div id="lankar">
-        <a href="/event" id="text-button">Event</a><br>
-        <a href="/blogg" id="text-button">Blogg</a><br>
-        <a href="/whitepaper" id="text-button">White Papers</a><br><br><br>
-        <a id="find-more" href="/kontakt">Kontakta Safespring</a><br><br><br>
-    </div>
-
-    <div class="read-more">
-      <h2>Läs mer om:</h2>
-            <li class="content-body">
-        <a href="/safespring-backup">&gt; Backup som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-      </li>
-    </div>
-  </div>
+</div>
+{{ partial "side-bar.html" . }}
 
 </main>
-
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
