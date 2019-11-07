@@ -8,7 +8,7 @@ linktext: "Send til e-post"
 noindex: "x"
 ---
 
-<form id="up-form" name="form_9549u62c8befa2484414e89fc8f2fea8da7d8" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+<form id="up-form" name="form_9549uc38ae857a42a4feea0d28d66f9fc8a30" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	<div class="form">
     <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
@@ -31,7 +31,7 @@ noindex: "x"
 </div>
   <!-- REQUIRED FIELDS -->
   <input type="hidden" name="formCid" value="9549">
-	<input type="hidden" name="formId" value="9549u62c8befa2484414e89fc8f2fea8da7d8">
+	<input type="hidden" name="formId" value="9549uc38ae857a42a4feea0d28d66f9fc8a30">
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
