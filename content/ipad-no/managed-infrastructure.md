@@ -27,7 +27,7 @@ noindex: "x"
 	</div>
   <div class="inputGroup">
     <input id="villkor" type="checkbox" value="on" name="singleOptIn.1568140995494">
-    <label for="villkor">Jag accepterar <a class="orange" href="/ipad/villkor/">villkoren</a></label>
+    <label for="villkor">Jag accepterar <a class="orange" href="/ipad-no/villkor/">villkoren</a></label>
 	</div>
   <!-- REQUIRED FIELDS -->
   <input type="hidden" name="formCid" value="9549">
