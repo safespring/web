@@ -3366,14 +3366,17 @@ h1 {
 }
 
 .ipad-form-start {
-	height: 100vh;
-	width: 100vw;
+	/*height: 100vh;
+	width: 100vw;*/
 	display: flex;
-	position: absolute;
+	/*position: absolute;*/
 	justify-content: center;
 	align-items: center;
 	-webkit-overflow-scrolling: touch;
 	z-index: 10;
+}
+.ipad-form-start:first-child {
+	padding-top: 15%;
 }
 
 .ipad-form {
@@ -3519,7 +3522,6 @@ h1 {
 	display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-	margin-top: 15%;
 	&::-webkit-scrollbar {
 	display: none;
 }
