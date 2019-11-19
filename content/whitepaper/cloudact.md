@@ -20,8 +20,10 @@ Den är varken början eller slutet på EU:s sedan länge pågående ansträngni
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
-<h2 id="testa-safespring">Ladda ner White Paper</h2>
-<form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+<h2 id="testa-safespring">Ladda ner White Paper</h2><br><br>
+<iframe src="https://pages.upsales.com/9549u043a5ff8644c4ebeacdb3ef21accfa85-frame" class="linked-form" style="border:0"></iframe>
+
+<!--<form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
 	  <div class="form">
     <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
@@ -34,12 +36,12 @@ Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestäm
     <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
 		<input maxlength="512" maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Företag...">
 	</div>
-  <!-- REQUIRED FIELDS -->
+  <!-- REQUIRED FIELDS --.>
   <input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u043a5ff8644c4ebeacdb3ef21accfa85">
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
+	<!-- END OF REQUIRED FIELDS --.>
 	<br>
 	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
 	<button type="submit" id="button">Ladda ner</button>
@@ -47,7 +49,6 @@ Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestäm
 <script>
 	(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();
 </script>
-
 
 <!-- ## Bakgrund
 
