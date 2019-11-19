@@ -522,7 +522,7 @@ label.switch-label {
 	padding: 20px 0px 0px 30px;
 }
 
-.menu-item:active svg {
+.menu-item.active svg {
 	-webkit-transform: rotateZ(180deg);
 	-moz-transform: rotateZ(180deg);
 	transform: rotateZ(180deg);
@@ -577,6 +577,12 @@ label.switch-label {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
 	}
+}
+
+.sub-menu {
+	clear: both;
+	padding: 10px 10px 5px 20px;
+	list-style-type: none;
 }
 
 .sub-menu {
@@ -948,6 +954,14 @@ label.switch-label {
 	.menu-item {
 		margin-left: 24px;
 	}
+
+.sub-menu > a {
+	font: var(--normal-weight) 16px var(--mon-font);
+}
+.menu-item > a {
+	font: var(--heavy-weight) 25px var(--hind-font);
+}
+
 	.content-body-index {
 		margin: 10% 16px;
 		grid-column: span 10;
@@ -2454,6 +2468,8 @@ label {
 	#h-bar>* {
 		grid-row: main
 	}
+
+
 	#toggle-sc .desk-button {
 		display: none
 	}
@@ -2633,7 +2649,7 @@ label {
 		font: var(--heavy-weight) 16px var(--hind-font)
 	}
 	.navbar {
-		font: var(--heavy-weight) 15px var(--hind-font)
+		font: var(--heavy-weight) 15px var(--hind-font) !important;
 	}
 	.footer-head {
 		font: var(--heavy-weight) 13px var(--hind-font)
@@ -3611,7 +3627,7 @@ h1 {
 	border-radius: 5px;
 }
 
-.active {
+.active-utbildning {
 	border-radius: 5px 5px 0 0;
 }
 
@@ -3623,7 +3639,7 @@ h1 {
   margin-right: 15px !important;
 }
 
-.active:after {
+.active-utbildning:after {
   content: "\2212" !important;
 	color: #FA690F !important;
 	border-radius:  5px 5px 0 0;
