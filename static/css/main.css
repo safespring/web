@@ -27,6 +27,16 @@
 	--border: var(--width-Ckb) - var(--height-Ckb)/10;
 }
 
+p::selection {
+  color: #195F8C;
+  background: #EAF0F4;
+}
+
+a::selection {
+  color: #fafefe;
+  background: #FA690F;
+}
+
 .index {
 	background: #FAFEFE;
 	scroll-behavior: smooth;
@@ -92,6 +102,27 @@ a:hover {
 button {
 	outline: none;
 	border: none;
+}
+
+.linked-form {
+	width: 360px;
+	height: 900px;
+}
+
+.g-recaptcha {
+	margin-top: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+	.linked-form {
+		width: 100%;
+	}
+	#rc-imageselect, .g-recaptcha {
+		transform:scale(0.7);
+		-webkit-transform:scale(0.7);
+		transform-origin:0 0;
+		-webkit-transform-origin:0 0;
+	}
 }
 
 .form {
@@ -891,7 +922,7 @@ label.switch-label {
 		grid-column: span 10;
 	}
 	.menu-item {
-margin-left: 24px;
+		margin-left: 24px;
 	}
 	.content-body-index {
 		margin: 10% 16px;
