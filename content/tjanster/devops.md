@@ -107,7 +107,10 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
 </div>
 <br><br>
 <h2 id="kontaktad">Bli kontaktad av en Safespring-utvecklare</h2><br><br>
-<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+<iframe src="https://pages.upsales.com/9549u4061d542b5e64b06ac436bb899d071bf-frame" class="linked-form" style="border:0"></iframe>
+
+<!--<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 <style>
   .twitter-typeahead .tt-hint{color:#195f8c}.twitter-typeahead .tt-menu{max-height:300px;overflow:auto;border:1px solid #195f8c;border-top:none;border-radius:0 0 25px 25px;width:298px;margin:-7px 0 0 -52px}.twitter-typeahead .tt-suggestion{background-color:#fafefe;padding:5px 10px;color:#323232}.tt-suggestion:first-child{margin:7px 0 0 0;padding-top:10px}.tt-suggestion:last-child{padding-bottom:20px}.twitter-typeahead .tt-suggestion:hover{background-color:#fafefe;color:#195f8c}
 </style>
@@ -119,15 +122,16 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
   <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Mobiltelefon..."></div>
   <div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="E-mail..."></div>
   <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag..."></div>
-	<!-- REQUIRED FIELDS -->
+	<!-- REQUIRED FIELDS --.>
   <input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u4061d542b5e64b06ac436bb899d071bf">
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
+	<!-- END OF REQUIRED FIELDS --.>
   <br>
 	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
   <br>
 	<button type="submit" class="button">Skicka in</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>
+-->
