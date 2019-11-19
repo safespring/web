@@ -27,9 +27,22 @@
 	--border: var(--width-Ckb) - var(--height-Ckb)/10;
 }
 
-p::selection {
+::selection {
   color: #195F8C;
   background: #EAF0F4;
+}
+
+hr {
+	width: 90%;
+	max-width: 700px;
+	border: 1px solid var(--main-color);
+	float: left;
+	margin: 50px 0;
+}
+
+h1::selection, h2::selection {
+	color: #fafefe;
+	background: #195F8C;
 }
 
 a::selection {
@@ -40,6 +53,10 @@ a::selection {
 .index {
 	background: #FAFEFE;
 	scroll-behavior: smooth;
+}
+
+li {
+	line-height: 1.2;
 }
 
 p, ol {
@@ -72,6 +89,10 @@ h3 {
 	line-height: 21px;
 }
 
+.youtube, video {
+	max-width: 700px !important;
+}
+
 /*html {
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -90,13 +111,13 @@ body {
 }
 
 a {
-	color: var(--heading-color);
+	color: var(--link-color);
 	text-decoration: none;
+	font: var(--normal-weight) 16px var(--mon-font);
 }
 
 a:hover {
-	color: var(--link-color);
-	text-decoration: none;
+	color: var(--main-color);
 }
 
 button {
@@ -436,13 +457,16 @@ label.switch-label {
 }
 
 .navbar {
-	font: var(--heavy-weight) 16px var(--hind-font);
 	letter-spacing: 0.2px;
 	background: var(--main-color);
 	z-index: 100;
 	position: fixed;
 	width: 100%;
 	align-items: center;
+}
+
+.navbar a {
+	font: var(--heavy-weight) 16px var(--hind-font) !important;
 }
 
 .navbar>* {}
@@ -1030,15 +1054,6 @@ text-align: center;
 	list-style: none;
 }
 
-.content-body a {
-	color: var(--main-color);
-	font: var(--normal-weight) 16px var(--mon-font);
-}
-
-.content-body a:hover {
-	color: var(--link-color)
-}
-
 /*.content-body h2 {
 	padding-top: 30px;
 	font: var(--hind-light-weight) 30px var(--hind-font);
@@ -1202,6 +1217,14 @@ text-align: center;
 .ch-sidebar img {
 	padding: 0 0 15px;
 	width: 95px
+}
+
+.ch-sidebar a {
+	color: var(--main-color);
+}
+
+.ch-sidebar a:hover {
+	color: var(--link-color);
 }
 
 .kontakt-sidebar {
