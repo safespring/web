@@ -34,6 +34,19 @@ socialmediabild: "safespring_social_20.jpg"
 ---
 ## European data sovereignty
 
+<h3 style="color: var(--link-color);">Official statements</h3>
+
+### EU - U.S. Privacy Shield - Third Annual Joint Review report
+**2019-11-12** / EDPB / [Link to article](https://edpb.europa.eu/our-work-tools/our-documents/eu-us-privacy-shield-third-annual-joint-review-report-12112019_en)
+
+- Europeiska dataskyddsstyrelsen European Data Protection Board (EDPB) har publicerat sin rapport från den tredje granskningen av Privacy Shield.
+- EDPB noterar en lång rad problem. EDPB noterar också de mål som ligger hos EU-domstolen där dessa frågor tas upp för rättslig prövning.
+
+
+
+
+
+
 <h3 style="color: var(--link-color);">News articles</h3>
 
 ### What’s driving Europe’s new aggressive stance on tech
