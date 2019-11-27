@@ -1045,7 +1045,8 @@ label.switch-label {
 
 .background-gray {
 	padding: 5% 0 5% 0;
-	background-color: var(--content-color);
+	background: rgb(235,241,245);
+	background: linear-gradient(0deg, rgba(235,241,245,1) 0%, rgba(235,241,245,0) 100%);
 }
 .background-gray h2{
 max-width: 100vw;
