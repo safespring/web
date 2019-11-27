@@ -38,69 +38,12 @@
         <a href="/om-safespring/bli-partner" id="text-button">Bli partner med oss</a>
       </div>
     </main>
-    <div class="background-gray"><h2>Senaste nytt</h2>
+    <div class="background-gray">
 <div class="flexcontainer" style="align-items:baseline;">
             {{ range first 3 (where .Pages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}
         </div></div>
-      <!-->
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "blogg") 10 }}
-          {{ range $paginator.Pages }}
-            {{ .Render "summary" }}
-        {{ end }}-->
-
-  <!-- Homepage Heading Slideshow
-
-
-  <script>
-      var main = function () {
-
-        var paused = false
-
-        $('.arrowR').click(function () {
-          paused = true;
-          $('#slideshow > div:first')
-            .fadeOut(1000)
-            .next()
-            .fadeIn(1000)
-            .end()
-            .appendTo('#slideshow');
-        });
-
-        $('.arrowL').click(function () {
-          paused = true;
-          $('#slideshow > div:last')
-            .fadeIn(1000)
-            .prependTo('#slideshow')
-            .next()
-            .fadeOut(1000)
-            .end();
-        });
-
-
-
-        setInterval(function () {
-          if (paused === false) {
-            $('#slideshow > div:first')
-              .fadeOut(1000)
-              .next()
-              .fadeIn(1000)
-              .end()
-              .appendTo('#slideshow');
-          };
-        }, 5000);
-
-
-      };
-
-      $(document).ready(main);
-    </script>
-
-
-  -->
-
-
   <!-- FOOTER -->
   {{ partial "footer.html" . }}
 </body>

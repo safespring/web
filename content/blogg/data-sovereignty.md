@@ -164,29 +164,18 @@ socialmediabild: "safespring_social_20.jpg"
 **2019-06-19** / Computer Sweden / [Link to article](https://computersweden.idg.se/2.2683/1.720445/samarbete-oppen-kallkod--kommuner-digitalisering)
 
 - Föreslår införandet av en nationell app store för mjukvara baserad på öppen källkod.
-- Lösningar baserade på öppen källkod kan förbättras och kompletteras av många aktörer, inklusive medborgarna själva och därför är det centralt att alla förbättringar kommer alla till godo, oavsett om man bor i Luleå eller Malmö. 
-
-
-
-
-
-
-
-
-
-
-
+- Lösningar baserade på öppen källkod kan förbättras och kompletteras av många aktörer, inklusive medborgarna själva och därför är det centralt att alla förbättringar kommer alla till godo, oavsett om man bor i Luleå eller Malmö.
 
 ---
 
-## US Cloud Act
+## CLOUD Act
 
 <h3 style="color: var(--link-color);">Official statements</h3>
 
 ### Joint Response to the LIBE Committee on US Cloud Act
 **2019-07-19** / EPDB / [Link to article](https://edpb.europa.eu/our-work-tools/our-documents/letters/epdb-edps-joint-response-libe-committee-impact-us-cloud-act_en)
 
-- “We also stress the need for an EU-level approach. In this specific context, as massive amounts of electronic communication data are processed and stored by operators falling under US ju-risdiction and since direct access requests sent by US authorities are likely to affect any Mem-ber State, an EUlevel approach is essential here in order to avoid the potential negative conse-quences of a fragmented patchwork of non-harmonised bilateral executive agreements be-tween the US and EU Member States that would be concluded under the US CLOUD Act”.
+- “We also stress the need for an EU-level approach. In this specific context, as massive amounts of electronic communication data are processed and stored by operators falling under US jurisdiction and since direct access requests sent by US authorities are likely to affect any Member State, an EUlevel approach is essential here in order to avoid the potential negative consequences of a fragmented patchwork of non-harmonised bilateral executive agreements be-tween the US and EU Member States that would be concluded under the US CLOUD Act”.
 
 ### European Data Protection Board - Twelfth Plenary session
 **2019-07-11** / EPDB / [Link to article](https://edpb.europa.eu/news/news/2019/european-data-protection-board-twelfth-plenary-session_en)

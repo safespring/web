@@ -25,6 +25,8 @@ Kontakta oss för att diskutera vidare! Vi är övertygade att vi hittar en sama
 ## Några av våra partners
 
 <div class="partner-grid">
+<a href="https://elastisys.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_elastisys.svg"></div></a>
+<a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_severalnines.svg"></div></a>
 <a href="http://www.synkzone.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_synkzone.png"></div></a>
 <a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_piql.png"></div></a>
 <a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_scaleout-systems.png"></div></a>
