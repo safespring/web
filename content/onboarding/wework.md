@@ -8,6 +8,9 @@ sidebarlinkname: "Fyll i formulär"
 sidebarlinkurl: "#up-form"
 socialmedia: "safespring-devops.jpg"
 noindex: "yes"
+aliases:
+    - /wework/
+    - /WeWork/
 ---
 
 
