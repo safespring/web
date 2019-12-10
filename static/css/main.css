@@ -3660,3 +3660,79 @@ h1 {
 }
 
 /* END - UTBILDNING */
+
+.label-green {
+	float: left;
+	width: fit-content;
+	position: relative;
+	padding: 7px;
+	margin: 14px 10px 0 0;
+	background: var(--green-color);
+	border-radius: 5px;
+	color: var(--content-color);
+	font: 600 12px var(--mon-font);
+}
+
+.label-orange {
+	float: left;
+	width: fit-content;
+	position: relative;
+	padding: 7px;
+	margin: 14px 10px 0 0;
+	background: var(--link-color);
+	border-radius: 5px;
+	color: var(--content-color);
+	font: 600 12px var(--mon-font);
+}
+
+.label-blue {
+	float: left;
+	width: fit-content;
+	position: relative;
+	padding: 7px;
+	margin: 14px 10px 0 0;
+	background: var(--main-color);
+	border-radius: 5px;
+	color: var(--content-color);
+	font: 600 12px var(--mon-font);
+}
+
+/* START - LANGUAGE PICKER SITE */
+
+.start-container {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
+.start-image {
+	float: left;
+	height: 70vh;
+	width: 30vw;
+	margin: 15vh 0 15vh 0;
+	overflow: hidden;
+}
+
+.start-image img {
+	width: auto;
+	height: 100%
+}
+
+.start-logo {
+	max-width: 300px;
+	min-width: 150px;
+	width: 15vw;
+}
+
+.start-content {
+	align-items: center;
+	margin: auto 0;
+	padding: 0 100px;
+}
+
+.start-content h1 {
+	font: 100 60px var(--mon-font);
+	color: #323232;
+	margin: 60px 0;
+	max-width: none; !important;
+}
