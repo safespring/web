@@ -31,10 +31,27 @@ socialmediabild: "safespring_social_20.jpg"
 - ”Vi vill vara öppna och tillgängliga och underlätta för våra partners både här i landet och över landsgränsen att dra nytta av den kunskap som vi har byggt upp, inte minst inom gränsöverskridande e-legitimering som görs inom eIDAS” säger Anna Eriksson, gen-eraldirektör på DIGG.
 - Genom att vara öppna med vår källkod kan vi underlätta för våra partners och tillsammans öka takten i digitaliseringen utan att tulla på säkerheten, fortsätter hon.
 
+
+
+
+
+
+
+
+
+
 ---
 ## European data sovereignty
 
 <h3 style="color: var(--link-color);">Official statements</h3>
+
+<div class="label-green">New</div>
+### Molntjänster i samhällsbärande verksamhet – risker, lämplighet och vägen framåt
+**2019-11-22** / Försäkringskassan / [Link to white paper](https://www.forsakringskassan.se/wps/wcm/connect/30cc57bd-b5cd-4e04-94cd-1f7a02a9ae1a/vitbok.pdf?MOD=AJPERES&CVID=)
+
+- Den 22 november skriver Försäkringskassans generaldirektör Nils Öberg på [DN-debatt](https://www.dn.se/debatt/sveriges-digitala-suveranitet-hotas-av-it-tjanster-i-molnet) om publika molntjänster i offentlig verksamhet.
+- "Den svenska stats- och kommunala förvaltningen måste ha suverän kontroll över sin information", säger Nils Öberg
+
 
 ### EU - U.S. Privacy Shield - Third Annual Joint Review report
 **2019-11-12** / EDPB / [Link to article](https://edpb.europa.eu/our-work-tools/our-documents/eu-us-privacy-shield-third-annual-joint-review-report-12112019_en)
@@ -48,6 +65,13 @@ socialmediabild: "safespring_social_20.jpg"
 
 
 <h3 style="color: var(--link-color);">News articles</h3>
+
+<div class="label-green">New</div>
+### Gaia-X - Europe Is Starting to Declare Its Cloud Independence
+**2019-10-30** / Fortune / [Link to article](https://fortune.com/2019/10/30/europe-cloud-independence-gaia-x-germany-france/)
+
+- Tired of its businesses turning to foreign cloud-computing providers such as the Google, Microsoft and Amazon, the German government is leading the push for a European cloud network called Gaia-X. France is also on board.
+- “Data will be the most important raw material of the future,” said German Economy Minister Peter Altmaier in a statement this week. “The European economy urgently needs an infrastructure that ensures data sovereignty.”
 
 ### What’s driving Europe’s new aggressive stance on tech
 **2019-10-29** / Politico / [Link to article](https://www.politico.eu/article/europe-digital-technological-sovereignty-facebook-google-amazon-ursula-von-der-leyen/)

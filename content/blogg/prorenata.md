@@ -23,4 +23,4 @@ ProReNata gör bedömningen att regelefterlevnad blir enklare genom att använda
 >"Vi har efter noggrann övervägan valt att samarbeta med server-leverantören Safespring AB. Vi upplever redan ett mycket gott samarbete med dem och vi delar samma fokus på säkerhet och kundnära arbete" — Jens Alm, VD ProReNata
 
 ### Läs mer om ProReNata
-<div class="partner-grid"><a href="https://www.prorenata.se/?utm_source=safespring&utm_medium=blogg&utm_campaign=blogg"><div class="partner-container"><img class="partnerlogo" src="/blogg/images/safespring_prorenata.png"></div></a></div>
+<div class="partner-grid"><a href="https://www.prorenata.se/"><div class="partner-container"><img class="partnerlogo" src="/blogg/images/safespring_prorenata.svg/"></div></a></div>
