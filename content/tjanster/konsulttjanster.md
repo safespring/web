@@ -9,7 +9,7 @@ form: "yes"
 aliases:
     - /konsulttjanster/
 ---
-Att skapa säkra och väl fungerande molntjänster med öppen källkod kräver expertis med hög kompetens eftersom att det är många delar som skall fogas ihop. Vi på Safespring har den kompetensen och kan på så vis kan erbjuda avancerade konsulttjänster för att hjälpa ert företag med er molnstrategi.
+<div class="ingress"><p>Att skapa säkra och väl fungerande molntjänster med öppen källkod kräver expertis med hög kompetens eftersom att det är många delar som skall fogas ihop. Vi på Safespring har den kompetensen och kan på så vis kan erbjuda avancerade konsulttjänster för att hjälpa ert företag med er molnstrategi.</p></div>
 
 Vi på Safespring brinner för att skapa värde kring de tjänster vi producerar. Vi erbjuder därför gärna vår kompetens kring hur ni ska använda våra tjänster på bästa sätt. Detta gäller alltifrån kapacitetsplanering till fullfjädrade strategier för hur ni skall bygga er lösning så att den blir skalbar och utnyttjar kraften i våra kapacitetstjänster maximalt.
 
@@ -30,10 +30,9 @@ Safespring, hjälper er genom att genomföra en grundläggande förstudie för a
 
 <a href="/referenser" id="text-button">Läs våra kundreferenser</a></br></br>
 
-Prata direkt med en molnarkitekt för att mer tekniskt gå in på hur vi kan stötta och underlätta processen.
-
 ### Kundanpassning
-För varje månad som går utvecklas möjligheterna och kunskapen på marknaden inom Cloud computing. Vi hjälper er att förnya era existerande system och kan erbjuda en genomgång av möjligheterna med DevOps, Containrar, olika manageringsplattformar etc.
+
+Prata direkt med en molnarkitekt för att mer tekniskt gå in på hur vi kan stötta och underlätta processen. För varje månad som går utvecklas möjligheterna och kunskapen på marknaden inom Cloud computing. Vi hjälper er att förnya era existerande system och kan erbjuda en genomgång av möjligheterna med DevOps, Containrar, olika manageringsplattformar etc.
 
 Arbetssätt som inbegriper automation och API kan effektivisera och reducera kostnaderna av era system. Vår plattform är baserad på öppen källkod genom OpenStack. Det gör att vi ständigt moderniseras och hjälper er gärna framåt på den resan.
 

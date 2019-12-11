@@ -17,7 +17,7 @@ aliases:
 
 Safespring erbjuder färdiga paket som ger tillgång till erfarna experter inom DevOps och container-teknologi. Våra experter blir en extra resurs som ert team kan kalla in vid behov för att snabbare komma till en nivå där tekniken arbetar för er. Safesprings infrastrukturtjänster och vår kunskap om hur de används på bästa sätt ger ditt företag en kick-start till att arbeta mer effektivt.
 
-## Typiska saker som ni kan få hjälp med
+### Typiska saker som ni kan få hjälp med
 - Strategi och teknikbedömning
 - Artkitektur för applikationer
 - Infrastruktursäkerhet
@@ -26,17 +26,15 @@ Safespring erbjuder färdiga paket som ger tillgång till erfarna experter inom 
 - Mikrotjänster och Kubernetes
 - Privat arkitektur baserad på OpenStack
 
-## Hur fungerar det?
+### Hur fungerar det?
 Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig tillgång till vår expertrådgivning.
 <br><br><a href="#kontaktad" id="text-button">Bli kontaktad</a>
 
-## Varför du skall överväga Safespring DevOps-paket
+### Varför du skall överväga Safespring DevOps-paket
+
 - **Minska risken** i ert projekt genom att se till att du har kontinuerlig tillgång till erfarna drift- och utvecklingsexperter som kan bidra med rådgivning.
-
 - **Få en snabb projektstart** och ett smidigt tillvägagångssätt. Vi hjälper er ta fram en färdplan med en hållbar lösning som projektet skall använda.
-
 - **Behåll ägandeskapet** över era projekt och applikationer. Eftersom ni får tillgång till våra experter inom DevOps och infrastruktur kan ni behålla ägandeskapet över era projekt även om ert team inte har all kunskap eller de resurser som krävs för att komma över svåra tekniska hinder.
-
 - **Undvik inlåsning** till en specifik plattform eller proprietära tjänster. Vi hjälper er med en strategi för att era lösningar ska vara agnostiska och möjliga att flytta.
 
 <h2 id="supportpaket">Våra supportpaket</h2>

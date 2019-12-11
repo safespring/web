@@ -22,7 +22,7 @@ Vår molnbaserade infrastrukturtjänst är baserad på den marknadsledande molnp
 <br><br><br>
 <a href="#testa-safespring" id="button">Testa Safespring</a>
 
-## Lagring till Safespring Compute
+### Lagring till Safespring Compute
 Den lagring som behövs till de virtuella instanserna är separerad från noderna där själva instanserna kör i ett Ceph-kluster och kan fås i två varianter:
 
 - **Fast** — som är optimerat på prestanda.
@@ -30,12 +30,12 @@ Den lagring som behövs till de virtuella instanserna är separerad från nodern
 
 Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet. <br><br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
 
-## Datahallar inom landets gränser
+### Datahallar inom landets gränser
 Tjänsten levereras från våra mycket säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett nordiskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
 
 Safespring Compute erbjuder stora fördelar såsom förenklat samarbete mellan olika avdelningar eller grupper, förenklar IT-hantering och adderar effektivitet och flexibilitet till er organisation.
 
-## Öppen källkod som grund
+### Öppen källkod som grund
 Safespring Compute är byggd på Open Source. De senaste decennierna har visat att Open Source är ett oerhört effektivt ramverk för samarbete och innovation för företag och organisationer emellan. Genom att dela på produktutvecklingen kring de saker som är gemensamma kan de deltagande organisationerna ägna sig åt tjänster och värdeförädling kring de områden där de skiljer sig åt. På så sätt så kan både företagen, organisationerna och kunderna tjäna på det samtidigt.
 
 Eftersom att OpenStack är baserad på Open Source gör det också att den fungerar mycket bra som bottenplatta för andra projekt baserade på öppen källkod t ex containers och Kubernetes. Om dessa verktyg används på rätt sätt kan ert företag skapa de tekniska förutsättningarna för att arbeta helt enligt DevOps.
