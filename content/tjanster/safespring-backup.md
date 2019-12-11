@@ -14,7 +14,11 @@ aliases:
     - /safespring-backup/
 ---
 ## Backup som tjänst
-Safesprings Backup som tjänst (Backup) är en riktig molnbaserad backuptjänst. Det betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
+
+<div class="ingress"><p>Safesprings Backup som tjänst (Backup) är en riktig molnbaserad backuptjänst.</p></div>
+
+Det betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
+
 <a href="#testa-safespring" id="text-button">Testa Safespring</a>
 
 Tjänsten konsumeras över internet och du betalar för mängden data som sparas i tjänsten. Faktura över förbrukning kommer månadsvis och utnyttjandet går att öka eller minska efter eget behov. Säkerheten är mycket god och självklart krypteras all data både i transport (TLS över internet) och på krypterade diskar i datacentret.
