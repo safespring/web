@@ -5,7 +5,7 @@ draft: false
 intro: "Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar och har därför erfarenhet av många olika branscher och sektorer."
 background: "safespring_bilder_10.jpg"
 ---
-Vi är ju själva i IT-branschen, så vi har mycket god förståelse för de utmaningar som finns. Exempelvis att kunna tillhandahålla rätt typ av tjänster och ha en rättvis marginal på det man bidrar med.
+<div class="ingress"><p>Vi är ju själva i IT-branschen, så vi har mycket god förståelse för de utmaningar som finns. Exempelvis att kunna tillhandahålla rätt typ av tjänster och ha en rättvis marginal på det man bidrar med.</p></div>
 
 Är ni en IT-partner eller systemintegratör som har behov av en kompetent molnleverantör för att komplettera ert erbjudande, eller vill du i eget namn sälja infrastruktur och molntjänster, men vill inte producera dem själva?  Vi har i så fall ett bra erbjudande!
 

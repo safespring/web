@@ -5,11 +5,16 @@ draft: false
 intro: "Safespring levererar lokalt producerade säkra molntjänster. Med datacenter i Sverige håller du din data inom landets gränser."
 background: ""
 ---
-Som man kan gissa på vårt namn är <strong>säkerhet är något vi brinner för!</strong> Vi tycker det är självklart att producera våra tjänster lokalt. Skälen är flera, förutom prestanda och närhet så är det i många fall ett krav för att uppfylla lagar och regler, att data inte lämnar landet.
+<div class="ingress"><p>Som man kan gissa på vårt namn är säkerhet är något vi brinner för! Vi tycker det är självklart att producera våra tjänster lokalt. Skälen är flera, förutom prestanda och närhet så är det i många fall ett krav för att uppfylla lagar och regler, att data inte lämnar landet.</p></div>
+
 Ytterligare en viktig aspekt är att vi är ett svenskt bolag som därigenom inte omfattas av Cloud Act, och kan därför inte tvingas att lämna ut din data till tredje part.
 Exempel på regelverk kan vara GDPR och Arkivlagen.
 
-Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och UNINETT i Norge. <a href="/tjanster" id="text-button">Läs mer om våra tjänster</a>
+### Många fördelar med molntjänster inom landet
+
+Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och UNINETT i Norge.
+
+<a href="/tjanster" id="text-button">Läs mer om våra tjänster</a>
 
 Utöver kunder inom forskning och högre utbildning har vi kunder bl.a. inom Telecom, Medtech och Edtech som alla värdesätter och förstår vikten hög säkerhet och lokalt producerade tjänster.
 
