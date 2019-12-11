@@ -680,7 +680,7 @@ label.switch-label {
 }
 
 .heading-content h1 {
-	font: var(--heavy-weight) 55px var(--hind-font);
+	font: var(--extra-light-weight) 55px var(--hind-font);
 	line-height: 1;
 	color: var(--text-color);
 	margin: 0;
@@ -697,7 +697,7 @@ label.switch-label {
 }
 
 .heading-event h1 {
-	font: var(--heavy-weight) 38px var(--hind-font)
+	font: var(--extra-light-weight) 38px var(--hind-font)
 }
 
 .heading-event p {
@@ -705,7 +705,7 @@ label.switch-label {
 }
 
 .heading-event h1 {
-	font: var(--heavy-weight) 42px var(--hind-font);
+	font: var(--extra-light-weight) 42px var(--hind-font);
 	color: var(--text-color);
 	margin: 0
 }
@@ -715,7 +715,7 @@ label.switch-label {
 }
 
 .heading-event p {
-	font: var(--heavy-weight) 18px var(--mon-font);
+	font: var(--medium-weight) 18px var(--mon-font);
 	margin: 0;
 	color: var(--text-color)
 }
@@ -736,7 +736,7 @@ label.switch-label {
 }
 
 .more {
-	font: var(--heavy-weight) 15px var(--hind-font);
+	font: var(--extra-light-weight) 15px var(--hind-font);
 	margin: 25px;
 	padding: 10px 25px;
 	border-radius: 50px;
@@ -1816,7 +1816,7 @@ text-align: center;
 }
 
 .tack-heading h1 {
-	font: var(--heavy-weight) 42px var(--hind-font);
+	font: var(--extra-light-weight) 42px var(--hind-font);
 	color: var(--alt-color);
 	margin: 0
 }
@@ -2059,7 +2059,7 @@ text-align: center;
 }
 
 .post-heading-firstpage {
-	font: var(--heavy-weight) 4vw var(--hind-font);
+	font: var(--extra-light-weight) 4vw var(--hind-font);
 	max-width: 90vw;
 	line-height: 1;
 	color: #FAFEFE;
@@ -2067,13 +2067,13 @@ text-align: center;
 
 @media only screen and (max-width: 875px) {
 	.heading-content h1 {
-		font: var(--heavy-weight) 35px var(--hind-font);
+		font: var(--extra-light-weight) 35px var(--hind-font);
 		line-height: 1;
 		color: #FAFEFE;
 	}
 
 	.post-heading-firstpage {
-		font: var(--heavy-weight) 35px var(--hind-font);
+		font: var(--extra-light-weight) 35px var(--hind-font);
 		line-height: 1;
 		color: #FAFEFE;
 		}
@@ -2089,7 +2089,7 @@ text-align: center;
 }
 
 .post-heading {
-	font: var(--heavy-weight) 20px var(--hind-font);
+	font: var(--extra-light-weight) 20px var(--hind-font);
 	line-height: 1;
 	color: var(--main-color);
 	padding-bottom: 10px
@@ -2101,7 +2101,7 @@ text-align: center;
 }
 
 .content-category-publikationer {
-	font: var(--heavy-weight) 14px var(--hind-font);
+	font: var(--extra-light-weight) 14px var(--hind-font);
 	color: var(--main-color);
 	padding: 10px 0 0;
 	text-transform: capitalize;
@@ -2677,7 +2677,7 @@ label {
 		font: var(--normal-weight) 14px var(--mon-font)
 	}
 	.tack-heading h1 {
-		font: var(--heavy-weight) 35px var(--hind-font)
+		font: var(--extra-light-weight) 35px var(--hind-font)
 	}
 	.tack-heading p {
 		font: var(--heavy-weight) 18px var(--hind-font)
@@ -3707,9 +3707,9 @@ h1 {
 
 .start-image {
 	float: left;
-	height: 70vh;
+	height: 90vh;
 	width: 30vw;
-	margin: 15vh 0 15vh 0;
+	margin: 5vh 0 5vh 0;
 	overflow: hidden;
 }
 
