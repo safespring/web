@@ -52,7 +52,7 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
     <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
       Standard
     </div>
-    <h1 class="ff-serif font-weight-medium text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+    <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
       Standardplan för DevOps-support
     </h1><br>
     <p>Svarar på förfrågningar inom ett dygn (epost).</p>
@@ -82,7 +82,7 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
   <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
     Premium
   </div>
-  <h1 class="ff-serif font-weight-medium text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
     Premiumplan för DevOps-support
   </h1><br>
   <p class="extra-small"><b>Förutom allt inom standard:</b></p>

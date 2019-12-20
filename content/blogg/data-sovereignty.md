@@ -45,7 +45,7 @@ socialmediabild: "safespring_social_20.jpg"
 
 <h3 style="color: var(--link-color);">Official statements</h3>
 
-<div class="label-green">New</div>
+<!-- <div class="label-green">New</div> -->
 ### Molntjänster i samhällsbärande verksamhet – risker, lämplighet och vägen framåt
 **2019-11-22** / Försäkringskassan / [Link to white paper](https://www.forsakringskassan.se/wps/wcm/connect/30cc57bd-b5cd-4e04-94cd-1f7a02a9ae1a/vitbok.pdf?MOD=AJPERES&CVID=)
 
@@ -66,7 +66,7 @@ socialmediabild: "safespring_social_20.jpg"
 
 <h3 style="color: var(--link-color);">News articles</h3>
 
-<div class="label-green">New</div>
+<!-- <div class="label-green">New</div> -->
 ### Gaia-X - Europe Is Starting to Declare Its Cloud Independence
 **2019-10-30** / Fortune / [Link to article](https://fortune.com/2019/10/30/europe-cloud-independence-gaia-x-germany-france/)
 
