@@ -7,7 +7,7 @@
 {{ partial "header.html" . }}
 
 <!-- HEADING -->
-<div class="heading-sub" style="background: url(/img/blue/safespring_bilder_5.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+<div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
   <div class="heading-content">
     <div class="content-meta-post">
       <a class="content-category-blogg" href="/tjanster">
@@ -19,10 +19,10 @@
       Safespring Dokumentation
     </h1>
     <div class="content-summary-blogg">
-      Ta del av support, guider och instruktioner rörande våra tjänster.
+      {{ .Params.intro }}</br></br></br>
+      <a href="https://status.safespring.com" id="button">Driftstatus&nbsp;&nbsp;&nbsp;<i class="fas fa-tasks"></i>
+      </a>
     </div>
-    <br>
-    <br>
   </div>
 </div>
 
