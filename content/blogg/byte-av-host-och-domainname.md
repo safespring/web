@@ -28,6 +28,7 @@ Detta påverkar de kunder som gör backup mot TSM1 (tsm1.cloud.ipnett.se), de va
 <p>Filen dsm.sys (unixar) eller dsm.opt (Win) behöver ändra parametern till TCPSERVERADDRESS från tsm1.cloud.ipnett.se till <b>tsm1.backup.sto2.safedc.net</b>, och root-certifikatet för safedc.net ska in i den keystore som används av IBM TSM (dsmcert.kdb). </p><p>Existerande gamla certifikat i keystoren kan vara kvar, det skadar inte. </p><p>Bytet kommer heller inte påverka OS:ets egna certifikat eller andra installerade applikationer som använder certifikat.</p>
 <h3>Mer information</h3>
 <ul>
+  <li><a href="https://docs.safespring.com/service/domain-changes/">Docs: Safespring domain name changes</a></li>
   <li><a href="https://github.com/safespring/cloud-BaaS/tree/master/pki">Helper scripts for migration and CA root certificate</a></li>
   <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/SafeDC-Net-Root-CA.pem">Certificate to add to keystore </a></li>
   <li><b>Linux:</b>
@@ -77,6 +78,7 @@ This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se)
 <p>The dsm.sys (unix-like OSes) or dsm.opt (Win) file needs to get TCPSERVERADDRESS updated from tsm1.cloud.ipnett.se to <b>tsm1.backup.sto2.safedc.net</b> and the root-ca for safedc.net needs to get into the IBM TSM keystore (dsmcert.kdb).</p><p>The old cert(s) in the keystore can stay, it will not do any harm if they remain. This will not affect the OS certificate stores, or any other application using certificates. </p>
 <h3>More information</h3>
 <ul>
+  <li><a href="https://docs.safespring.com/service/domain-changes/">Docs: Safespring domain name changes</a></li>
   <li><a href="https://github.com/safespring/cloud-BaaS/tree/master/pki">Helper scripts for migration and CA root certificate</a></li>
   <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/SafeDC-Net-Root-CA.pem">Certificate to add to keystore </a></li>
   <li><b>Linux:</b>
