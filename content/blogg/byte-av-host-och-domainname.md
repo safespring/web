@@ -11,9 +11,9 @@ socialmediabild: "safespring_social_25.jpg"
 
 <a id="text-button" href="#english">Read the English version</a>
 
-<div class="ingress"><p>Vi arbetar ständigt  med att förbättra och förtydliga våra tjänster. En del av arbetet är att fasa ut vårt gamla moderbolags varumärke IPnett från våra tjänster.</p></div>
+<div class="ingress"><p>Vi arbetar ständigt  med att förbättra och förtydliga våra tjänster. En del av arbetet är att fasa ut vårt tidigare moderbolags varumärke IPnett från våra tjänster.</p></div>
 
-Som ett led i att byta ut gamla moderbolagets namn från våra tjänster kommer vi förnya certifikaten som skyddar BaaS-trafiken och samtidigt flytta tjänsten till en av våra egna domäner. Namnbytet kommer ligga i linje med tjänsterna för Compute och Storage.
+Som ett led i att ta bort IPnetts namn från våra tjänster kommer vi förnya certifikaten som skyddar BaaS-trafiken. Samtidigt flyttar tjänsten till en av våra egna domäner där namnbytet kommer ligga i linje med tjänsterna för Compute och Storage.
 
 Söndagen den 19 januari, 2020 byter "*tsm1.cloud.ipnett.se*" namn till **tsm1.backup.sto2.safedc.net**
 
@@ -36,9 +36,10 @@ Detta påverkar de kunder som gör backup mot TSM1 (tsm1.cloud.ipnett.se), de va
       <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/Change-TSM-Hostname.sh">Change TSM-Hostname</a></li>
     </ul>
   </li>
-  <li><b>Windows:</b>
+  <li><b>Windows Powershell replace helper:</b>
     <ul>
-      <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/Change-TSM-Hostname.cmd">Powershell replace helper</a></li>
+      <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/Change-TSM-Hostname.cmd">Change TSM Hostname</a></li>
+      <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/SafeDC-Net-Root-CA-win64.bat ">SafeDC Net Root CA win64</a></li>
     </ul>
   </li>
   <li><b>macOS:</b>
@@ -84,9 +85,10 @@ This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se)
       <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/Change-TSM-Hostname.sh">Change TSM-Hostname</a></li>
     </ul>
   </li>
-  <li><b>Windows:</b>
+  <li><b>Windows Powershell replace helper:</b>
     <ul>
-      <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/Change-TSM-Hostname.cmd">Powershell replace helper</a></li>
+      <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/Change-TSM-Hostname.cmd">Change TSM Hostname</a></li>
+      <li><a href="https://github.com/safespring/cloud-BaaS/blob/master/pki/SafeDC-Net-Root-CA-win64.bat ">SafeDC Net Root CA win64</a></li>
     </ul>
   </li>
   <li><b>macOS:</b>
