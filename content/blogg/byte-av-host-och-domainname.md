@@ -15,7 +15,7 @@ socialmediabild: "safespring_social_25.jpg"
 
 Som ett led i att ta bort IPnetts namn från våra tjänster kommer vi förnya certifikaten som skyddar BaaS-trafiken. Samtidigt flyttar tjänsten till en av våra egna domäner där namnbytet kommer ligga i linje med tjänsterna för Compute och Storage.
 
-Söndagen den 19 januari, 2020 byter "*tsm1.cloud.ipnett.se*" namn till **tsm1.backup.sto2.safedc.net**
+Söndagen den 19 januari, 2020 byter "*tsm1.cloud.ipnett.se*" namn till **tsm1.backup.sto2.safedc.net**. Det går bra att uppdatera domännamnet redan idag. Det nya namnet är redan aktivt.
 
 
 Eftersom DNS-namnet är knutet till vilket certifikat som används för TLS så måste klienterna uppdatera sina root-certifikat i IBMs TSM-keystore. Vi kommer uppdatera våra klientinstallers och bidra med enkla script som utför bytet för Win/Mac/Linux, men de behöver köras på varje klient.
@@ -66,7 +66,7 @@ De gamla adresserna kommer fungera ett tag till framöver. Det kommer bli enklar
 
 In line with our work to replace the former parent company name from our services, at the time of renewal of the certificates that protect the Backup traffic, we will be renaming the endpoint to our own domain to match the Storage and Compute services.
 
-*“tsm1.cloud.ipnett.se”* will change to **tsm1.backup.sto2.safedc.net** on the 19 of january 2020.
+*“tsm1.cloud.ipnett.se”* will change to **tsm1.backup.sto2.safedc.net** on the 19 of january 2020. You may update the domain name at any time. It's already active.
 
 Since the DNS name is tied to the certificate used for TLS, the clients will need to update the root certificate in the IBM TSM keystore. We will be updating the client installers and provide simple scripts to help perform the edits for Win/Mac/Linux, but the changes will have to be done on every client.
 
