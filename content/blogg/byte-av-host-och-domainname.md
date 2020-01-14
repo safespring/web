@@ -1,5 +1,5 @@
 ---
-title: "Byte av host- och domännamn på Support & Backuptjänsten 19/1"
+title: "Byte av host- och domännamn på Support & Backuptjänsten 14/1"
 date: "2020-01-07T10:16:45+01:00"
 draft: false
 tags: [""]
@@ -11,11 +11,13 @@ socialmediabild: "safespring_social_25.jpg"
 
 <a id="text-button" href="#english">Read the English version</a>
 
+**Uppdatering:*** Bytet av domännamn sker idag (2020-01-14). Det betyder att ändringen av host-namnet och DNS bör göras så snabbt som möjligt. Gör man ändringarna (nytt DNS-namn och in med extra root-ca-cert) så fungerar tjänsten 100% som innan och man kan göra backup och restores precis som väntat. Läs mer under "tekniska detaljer".
+
 <div class="ingress"><p>Vi arbetar ständigt  med att förbättra och förtydliga våra tjänster. En del av arbetet är att fasa ut vårt tidigare moderbolags varumärke IPnett från våra tjänster.</p></div>
 
 Som ett led i att ta bort IPnetts namn från våra tjänster kommer vi förnya certifikaten som skyddar BaaS-trafiken. Samtidigt flyttar tjänsten till en av våra egna domäner där namnbytet kommer ligga i linje med tjänsterna för Compute och Storage.
 
-Söndagen den 19 januari, 2020 byter "*tsm1.cloud.ipnett.se*" namn till **tsm1.backup.sto2.safedc.net**. Det går bra att uppdatera domännamnet redan idag. Det nya namnet är redan aktivt.
+Söndagen den 14 januari, 2020 byter "*tsm1.cloud.ipnett.se*" namn till **tsm1.backup.sto2.safedc.net**. Det går bra att uppdatera domännamnet redan idag. Det nya namnet är redan aktivt.
 
 
 Eftersom DNS-namnet är knutet till vilket certifikat som används för TLS så måste klienterna uppdatera sina root-certifikat i IBMs TSM-keystore. Vi kommer uppdatera våra klientinstallers och bidra med enkla script som utför bytet för Win/Mac/Linux, men de behöver köras på varje klient.
@@ -64,9 +66,11 @@ De gamla adresserna kommer fungera ett tag till framöver. Det kommer bli enklar
 
 <h2 id="english">Change of host- and domain name for Support and Backup service 2020-01-19</h2>
 
+**Update:*** Change of host name and DNS should be done today (2020-01-14). When you have done the changes (new DNS-name and added the extra root-ca-cert) then the service is back to 100% again, and backups/restores work exactly as planned.
+
 In line with our work to replace the former parent company name from our services, at the time of renewal of the certificates that protect the Backup traffic, we will be renaming the endpoint to our own domain to match the Storage and Compute services.
 
-*“tsm1.cloud.ipnett.se”* will change to **tsm1.backup.sto2.safedc.net** on the 19 of january 2020. You may update the domain name at any time. It's already active.
+*“tsm1.cloud.ipnett.se”* will change to **tsm1.backup.sto2.safedc.net** on the 14 of january 2020. You may update the domain name at any time. It's already active.
 
 Since the DNS name is tied to the certificate used for TLS, the clients will need to update the root certificate in the IBM TSM keystore. We will be updating the client installers and provide simple scripts to help perform the edits for Win/Mac/Linux, but the changes will have to be done on every client.
 
