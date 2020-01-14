@@ -11,7 +11,7 @@ socialmediabild: "safespring_social_25.jpg"
 
 <a id="text-button" href="#english">Read the English version</a>
 
-**Uppdatering:*** Bytet av domännamn sker idag (2020-01-14). Det betyder att ändringen av host-namnet och DNS bör göras så snabbt som möjligt. Gör man ändringarna (nytt DNS-namn och in med extra root-ca-cert) så fungerar tjänsten 100% som innan och man kan göra backup och restores precis som väntat. Läs mer under "tekniska detaljer".
+**Uppdatering 14/1:** Bytet av domännamn sker idag (2020-01-14). Det betyder att ändringen av host-namnet och DNS bör göras så snabbt som möjligt. Gör ni ändringarna (nytt DNS-namn och in med extra root-ca-cert) så fungerar tjänsten 100% som innan och man kan göra backup och restores precis som väntat. Läs mer under "tekniska detaljer".
 
 <div class="ingress"><p>Vi arbetar ständigt  med att förbättra och förtydliga våra tjänster. En del av arbetet är att fasa ut vårt tidigare moderbolags varumärke IPnett från våra tjänster.</p></div>
 
@@ -66,7 +66,7 @@ De gamla adresserna kommer fungera ett tag till framöver. Det kommer bli enklar
 
 <h2 id="english">Change of host- and domain name for Support and Backup service 2020-01-19</h2>
 
-**Update:*** Change of host name and DNS should be done today (2020-01-14). When you have done the changes (new DNS-name and added the extra root-ca-cert) then the service is back to 100% again, and backups/restores work exactly as planned.
+**Update 14/1:** Change of host name and DNS needs to be done today (2020-01-14). When you have done the changes (new DNS-name and added the extra root-ca-cert) then the service is back to 100% again, and backups/restores work exactly as planned.
 
 In line with our work to replace the former parent company name from our services, at the time of renewal of the certificates that protect the Backup traffic, we will be renaming the endpoint to our own domain to match the Storage and Compute services.
 
