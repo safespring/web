@@ -1,9 +1,7 @@
 {{ partial "head.html" . }}
-{{ partial "g-tag-manager.html" . }}
-  {{ partial "svg-filter.html" . }} <!-- NAVBAR -->
    {{ partial "header.html" . }} <!-- HEADING -->
 <div class="heading-sub">
-  <img class="heading-background safespring_blue" style="background: url('{{ if.Params.background }}/whitepaper/images/background/{{ .Params.background }}{{ else }}/whitepaper/images/background/background.jpg{{ end }}'); background-size: cover; background-position: center;">
+  <img class="heading-background" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}); background-size: cover; background-position: center;">
 <div class="heading-content">
        {{ .Render "li3" }}
      </div>
@@ -26,16 +24,12 @@
     <div>
       <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
     </div>
-
     <div class="content-body">
       <h2 class="content-heading">Senaste inläggen</h2>
       {{ range first 5 (where .Site.Pages "Type" "blogg") }}
         <li style="list-style: none;"><a href="{{.URL}}">{{ .Title }}</a></li>
           <br>
       {{ end }}
-
-
-
     </div>
     <a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>
 </br></br>

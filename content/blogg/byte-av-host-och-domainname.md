@@ -19,7 +19,6 @@ Som ett led i att ta bort IPnetts namn från våra tjänster kommer vi förnya c
 
 Söndagen den 14 januari, 2020 byter "*tsm1.cloud.ipnett.se*" namn till **tsm1.backup.sto2.safedc.net**. Det går bra att uppdatera domännamnet redan idag. Det nya namnet är redan aktivt.
 
-
 Eftersom DNS-namnet är knutet till vilket certifikat som används för TLS så måste klienterna uppdatera sina root-certifikat i IBMs TSM-keystore. Vi kommer uppdatera våra klientinstallers och bidra med enkla script som utför bytet för Win/Mac/Linux, men de behöver köras på varje klient.
 
 Detta påverkar de kunder som gör backup mot TSM1 (tsm1.cloud.ipnett.se), de vars klienter går mot andra TSM-servrar har redan nya root-certifikatet och korrekt namn.
