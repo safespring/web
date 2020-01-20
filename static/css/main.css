@@ -677,6 +677,7 @@ label.switch-label {
 	margin: 166px 0 5% 0;
 	grid-column: 2 / span 6;
 	max-width: 700px;
+	align-self: end;
 }
 
 .heading-content h1 {
@@ -758,12 +759,11 @@ label.switch-label {
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
+	height: 45vh;
 }
 
 .heading-background {
-	height: 100%;
-	left: 0px;
-	top: 0px;
+	height: inherit;
 	z-index: -1;
 	position: absolute;
 }
@@ -2008,11 +2008,11 @@ text-align: center;
 	}
 	.heading-content {
 		grid-column: span 10;
-		margin: 0 30px;;
+		margin: 30px;;
 		align-self: end;
 	}
 	.heading-content:last-child {
-		margin: 0 30px 30px 30px;
+		margin: 30px;
 	}
 	/*.ch-content {
     display: -ms-grid;
