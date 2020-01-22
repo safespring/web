@@ -23,6 +23,7 @@ aliases:
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
 <br>
+
 <iframe src="https://pages.upsales.com/9549u043a5ff8644c4ebeacdb3ef21accfa85-frame" style="border:0; height:566px;"></iframe>
 <div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>
 

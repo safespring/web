@@ -16,4 +16,4 @@ socialmediabild: "safespring_social_27.jpg"
 <p><b>I detta whitepaper kan du läsa om fyra stycken användningsområden som vi tycker är bra implementationer av S3.</b></p>
 <h2>Ladda ner White Paper</h2>
 
-<iframe src="https://pages.upsales.com/9549ud958ab6767c34e7c843fe5585ca7e9ac-frame" class="linked-form" style="border:0"></iframe>
+<iframe src="https://pages.upsales.com/9549ud958ab6767c34e7c843fe5585ca7e9ac-frame" class="linked-form" style="border:0"></iframe> 
