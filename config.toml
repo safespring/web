@@ -58,8 +58,10 @@ SectionPagesMenu = "main"
     description = "Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
     keywords = "compute, storage, backup"
 
-
 [sitemap]
     changefreq = "monthly"
     filename = "sitemap.xml"
     priority = 0.5
+
+[markup.goldmark.renderer]
+unsafe= true
