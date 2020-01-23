@@ -18,7 +18,7 @@ aliases:
 ---
 
 
-<h2 id="download">Ladda ner White Paper</h2>
+<h2 id="download">Ladda ner White Paper</h2> 
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 

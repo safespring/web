@@ -9,6 +9,7 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 ---
+
 ## Description
 For management or tech savvy employees that wants to get a hands-on experience of cloud computing and understand the cloud landscape. We dig into enabling technologies and surrounding strategic concerns when deploying to the cloud. This course can help you get started with public cloud providers and understand the components needed to run your workloads in the cloud.
 

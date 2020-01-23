@@ -17,7 +17,7 @@ This whitepaper describes how to configure Safespring Storage as a “Disk Libra
 Offsite backups are primarily is used in data backup and disaster-recovery measures. The core objective behind storing and maintaining data at a backup facility is to:
 
 - Secure data from malicious attacks
-- Keep a backup copy of data in case the primary site is damaged or destroyed
+- Keep a backup copy of data in case the primary site is damaged or destroyed 
 
 Cloud backup, online backup or managed backup are examples of offsite backup solutions that enable an individual or organization to store data at facilities that are geographically and logically external.
 
