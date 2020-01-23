@@ -18,13 +18,13 @@ aliases:
 ---
 
 
-<h2 id="download">Ladda ner White Paper</h2> 
+<h2 id="download">Ladda ner White Paper</h2>
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
 <br>
 
-<iframe src="https://pages.upsales.com/9549u043a5ff8644c4ebeacdb3ef21accfa85-frame" style="border:0; height:566px;"></iframe>
+<iframe src="https://pages.upsales.com/9549u043a5ff8644c4ebeacdb3ef21accfa85-frame" style="border:0; height:350px;"></iframe>
 <div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>
 
 *Läs om ytterligare två data-säkerhets­avtal mellan USA och EU som kan ogiltigförklaras <a href="/blogg/gdpr-cloudact-2019/">i vårt blogginlägg</a>.*
