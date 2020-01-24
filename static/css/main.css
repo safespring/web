@@ -759,7 +759,6 @@ label.switch-label {
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
-	height: 45vh;
 }
 
 .heading-background {
@@ -971,7 +970,6 @@ label.switch-label {
 	}
 	.heading-sub {
 		margin: 80px 0 0 0;
-		height: 60vh;
 		width: 100vw;
 		overflow: hidden;
 		background-position: center;
