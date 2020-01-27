@@ -757,14 +757,14 @@ label.switch-label {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	overflow: hidden;
-	background-position: center;
-	background-size: cover;
 }
 
 .heading-background {
-	height: inherit;
+	height: 100%;
 	z-index: -1;
 	position: absolute;
+	background-size: cover;
+	background-position: center
 }
 
 .heading-background-event {
