@@ -1,7 +1,7 @@
 +++
 title = "eBook - Praktisk guide för vägledning in i molnet"
 date = "2018-01-22"
-draft = false
+draft = true
 tags = ["ebok, guide, VD, migrering"]
 showthedate = true
 card = "safespring_card_11.jpg"

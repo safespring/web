@@ -1,7 +1,7 @@
 +++
 title = "E-bok - En VD:s guide till infrastruktur i molnet"
 date = "2017-12-19"
-draft = false
+draft = true
 tags = ["ebok, guide, VD, migrering"]
 showthedate = true
 card = "safespring_card_0.jpg"
