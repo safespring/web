@@ -65,7 +65,7 @@
   {{ partial "svg-filter.html" . }}
    {{ partial "header.html" . }} <!-- HEADING -->
 <div class="heading-sub">
-  <img class="heading-background" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}); background-size: cover; background-position: center;">
+  <img class="heading-background" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}');background-size:cover;background-position:center;">
 <div class="heading-content">
        {{ .Render "li3" }}
      </div>

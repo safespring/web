@@ -82,6 +82,10 @@ img {
 	width: 100%;
 }
 
+.content-body img {
+	border-radius: 5px;
+}
+
 h3 {
 	margin: 40px 0 10px 0;
 	font: var(--hind-light-weight) 20px var(--hind-font);
@@ -757,15 +761,14 @@ label.switch-label {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	overflow: hidden;
-	background-position: center;
-	background-size: cover;
-	height: 45vh;
 }
 
 .heading-background {
-	height: inherit;
+	height: 100%;
 	z-index: -1;
 	position: absolute;
+	background-size: cover;
+	background-position: center
 }
 
 .heading-background-event {
@@ -971,7 +974,6 @@ label.switch-label {
 	}
 	.heading-sub {
 		margin: 80px 0 0 0;
-		height: 60vh;
 		width: 100vw;
 		overflow: hidden;
 		background-position: center;
