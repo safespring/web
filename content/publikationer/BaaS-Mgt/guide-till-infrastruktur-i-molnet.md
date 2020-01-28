@@ -5,7 +5,7 @@ eventdatum: ""
 draft: false
 author: ""
 dokumentnamn: ""
-eventbild: ""
+background: "safespring_background_22.jpg"
 socialmediabild: "Safespring_Linkedin_e-bok2.jpg"
 intro: ""
 formheadline: "Fyll i för att hämta e-bok"

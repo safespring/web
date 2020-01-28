@@ -5,7 +5,7 @@ eventdatum: ""
 draft: false
 author: ""
 dokumentnamn: ""
-eventbild: ""
+background: ""
 socialmediabild: ""
 intro: ""
 formheadline: ""
