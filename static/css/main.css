@@ -82,6 +82,10 @@ img {
 	width: 100%;
 }
 
+.content-body img {
+	border-radius: 5px;
+}
+
 h3 {
 	margin: 40px 0 10px 0;
 	font: var(--hind-light-weight) 20px var(--hind-font);
