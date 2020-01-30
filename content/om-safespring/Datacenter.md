@@ -35,7 +35,7 @@ Datacentret har branddetektering med luftanalys. Serverhallar med IT-vänliga sl
 
 - UPS med N+1 eller 2N
 - Kylsystem med N+1 eller 2N
-- Design för 1,2-1,3 i energieffektivitet (PUE)
+- Design för under 1,2 i energieffektivitet (PUE)
 - Förberedda för energiåtervinning
 
 ## Safespring Oslo
