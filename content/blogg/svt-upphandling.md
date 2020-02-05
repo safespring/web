@@ -1,6 +1,6 @@
 ---
 title: "Safespring får leverera tjänster till SVT, SR och UR"
-date: "2020-02-04T10:39:43+02:00"
+date: "2020-02-05T10:39:43+02:00"
 draft: false
 tags: [""]
 showthedate: true
