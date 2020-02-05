@@ -11,7 +11,7 @@ socialmediabild: "safespring_social_29.jpg"
 
 <div class="ingress"><p>Vi är mycket stolta över att ha vunnit upphandlingen av molntjänster till Public Service-bolagen.</p></div>
 
-Tillsammans med våra partners Elastisys och Serveralnines får vi nu producera och managera tjänster till SVT, Sveriges Radio och Utbildningsradion i Sverige.
+Tillsammans med våra partners Elastisys och Serveralnines får vi nu möjlighet att leverera tjänster till SVT, Sveriges Radio och Utbildningsradion i Sverige.
 
 I beskrivningen av upphandlingen skriver SVT att det är viktigt för dem att leverantören har säkra, flexibla och väldokumenterade tjänster vilket passar bra in på oss då Safespring väl lever upp till dessa krav samt producerar alla tjänster inom norden.
 
