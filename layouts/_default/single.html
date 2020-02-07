@@ -8,6 +8,9 @@
 {{ else if eq $.Params.title "Pris" }}
 {{ partial "pris.html" . }}
 
+{{ else if eq $.Params.title "Pris2020" }}
+{{ partial "pris2020.html" . }}
+
 {{ else if eq $.Params.title "Pris-old" }}
 {{ partial "pris-old.html" . }}
 
@@ -22,6 +25,9 @@
 
 {{ else if eq $.Params.title "opplev" }}
 {{ partial "opplev.html" . }}
+
+{{ else if eq $.Params.title "start" }}
+{{ partial "start.html" . }}
 
 {{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
 {{ partial "explorer.html" . }}
