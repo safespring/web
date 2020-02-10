@@ -23,6 +23,9 @@
 {{ else if eq $.Params.title "opplev" }}
 {{ partial "opplev.html" . }}
 
+{{ else if eq $.Params.title "start" }}
+{{ partial "start.html" . }}
+
 {{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
 {{ partial "explorer.html" . }}
 
