@@ -21,11 +21,29 @@ aliases:
 <h2 id="download">Ladda ner White Paper</h2>
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
-
-<br>
-
-<iframe src="https://pages.upsales.com/9549u043a5ff8644c4ebeacdb3ef21accfa85-frame" style="border:0; height:350px;"></iframe>
-<div class="ingress"><p>Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersätter Personuppgiftslagen (PUL).</p></div>
+<form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+  <h3>Fyll i din jobbmail...</h3>
+	<div class="email">
+    <div class="form">
+      <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+      <input maxlength="512" type="email" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Mail...">
+    </div>
+  </div>
+    <div class="inputGroup">
+        <input id="villkor" type="checkbox" value="on" name="singleOptIn.1568140995494">
+        <label for="villkor">Jag accepterar <a href="/dokument/acceptable-use-policy/">villkoren</a></label>
+    </div>
+	<!-- REQUIRED FIELDS -->
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549u043a5ff8644c4ebeacdb3ef21accfa85">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<!-- END OF REQUIRED FIELDS -->
+	<div class="submit-button"><button class="button" type="submit">Hämta White Paper</button></div>
+</form>
+<script>
+	(function(){var form = document.getElementById("up-form");if(form) {var submitted = false;form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}if (!submitted && window.hasPhoneFields) {var phoneFields = form.querySelectorAll('input[name*=phone], input[name*=Phone]');[].forEach.call(phoneFields, function(element) {if (element.iti) { element.value = element.iti.getNumber(); }});submitted = true;form.submit()}});}})();
+</script>
 
 *Läs om ytterligare två data-säkerhets­avtal mellan USA och EU som kan ogiltigförklaras <a href="/blogg/gdpr-cloudact-2019/">i vårt blogginlägg</a>.*
 

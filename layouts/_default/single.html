@@ -8,6 +8,9 @@
 {{ else if eq $.Params.title "Pris" }}
 {{ partial "pris.html" . }}
 
+{{ else if eq $.Params.title "Pris tack" }}
+{{ partial "pris-tack.html" . }}
+
 {{ else if eq $.Params.title "Pris-old" }}
 {{ partial "pris-old.html" . }}
 
