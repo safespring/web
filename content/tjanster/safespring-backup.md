@@ -14,7 +14,7 @@ aliases:
     - /safespring-backup/
 ---
 
-<video width="100%" style="border-radius: 5px;" controls="true">
+<video poster="/tjanster/images/safespring_backup.jpg" width="100%" style="border-radius: 5px;" controls="true">
 <source type="video/mp4" src="/tjanster/images/safespring_backup.mp4">
 </video>
 
