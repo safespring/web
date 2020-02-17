@@ -16,6 +16,7 @@ aliases:
 
 <video poster="/tjanster/images/safespring_backup.jpg" width="100%" style="border-radius: 5px;" controls="true">
 <source type="video/mp4" src="/tjanster/images/safespring_backup.mp4">
+<track src="/tjanster/images/safespring_backup.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
 
 
