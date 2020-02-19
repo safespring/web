@@ -16,7 +16,8 @@ devops: ""
 
 <video poster="/tjanster/images/safespring_compute.jpg" width="100%" style="border-radius: 5px;" controls="true">
 <source type="video/mp4" src="/tjanster/images/safespring_compute.mp4">
-</video> 
+<track src="/tjanster/images/safespring_compute.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
+</video>
 
 ## Virtuella maskiner till er tjänst
 <div class="ingress"><p>En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar.</p></div>
