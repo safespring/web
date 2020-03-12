@@ -40,11 +40,9 @@
     </main>
     <div class="background-gray">
 <div class="flexcontainer" style="align-items:baseline;">
-
-            {{ range first 3 where .Pages "Section" "blogg" }}
+            {{ range first 3 (where .Pages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}
-
         </div>
       </div>
   <!-- FOOTER -->
