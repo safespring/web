@@ -43,7 +43,8 @@
             {{ range first 3 (where .Pages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}
-        </div></div>
+        </div>
+      </div>
   <!-- FOOTER -->
   {{ partial "footer.html" . }}
 </body>
