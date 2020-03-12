@@ -18,7 +18,7 @@ Tjänsterna som SVT efterfrågar i avtalet för ”Cloud services” är Infrast
 
 I upphandlingen skriver SVT att det är viktigt för dem att leverantören har säkra, flexibla och väldokumenterade tjänster. Safespring lever upp till dessa krav samt producerar alla tjänster inom norden.
 
->”Öppna standarder, öppen källkod och hög juridisk säkerhet och är grunden i vår plattform. Vi är stolta över att ingå i SVTs ramavtal för molntjänster och ser fram emot möjligheten att utveckla public service digitala infrastruktur”.
+>”Öppna standarder, öppen källkod och hög juridisk säkerhet är grunden i vår plattform. Vi är stolta över att ingå i SVTs ramavtal för molntjänster och ser fram emot möjligheten att utveckla public service digitala infrastruktur”.
 
 säger Fredric Wallsten, VD på Safespring.
 
