@@ -6,7 +6,7 @@ tags: [""]
 showthedate: true
 card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"
-socialmediabild: "safespring_social_30.jpg"
+socialmediabild: "safespring_social_31.jpg"
 ---
 
 <div class="ingress"><p>Idag blir Safespring en av fem leverantörer som får möjlighet att via ramavtal leverera molntjänster till Sveriges Television och Utbildningsradion.
