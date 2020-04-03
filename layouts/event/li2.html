@@ -1,4 +1,4 @@
-<div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ if .Params.english }}COMPLETE REGISTRATION{{ else }}LYCKAD REGISTRERING{{ end }}</div><br>
+<div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}</a> | {{ if .Params.english }}COMPLETE REGISTRATION{{ else }}LYCKAD REGISTRERING{{ end }}</div><br>
 <h1 class="post-heading-firstpage">{{ .Title }}</h1><br><br>
   {{ if .Params.knapp }}<a class="button" href="#register">{{ .Params.knapp }}</a>{{ else }}{{ end }}
 
