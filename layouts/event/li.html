@@ -25,7 +25,7 @@
         <div class="d-block w-full"><img src="{{ if.Params.eventbild }}/img/event/cards/{{ .Params.card }}{{ else }}/img/event/cards/safespring_card_0.jpg{{ end }}" alt="{{ .Title }}"></div>
   <div class="px-2 py-2">
     <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-      {{ .Section }}
+      {{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
     </p>
 
     <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">

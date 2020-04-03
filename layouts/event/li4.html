@@ -4,7 +4,7 @@
         <div class="d-block w-full"><img src="{{ if.Params.eventbild }}/img/event/cards/{{ .Params.card }}{{ else }}/img/event/cards/safespring_card_0.jpg{{ end }}" alt="{{ .Title }}"></div>
   <div class="px-2 py-2">
     <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
-      {{ .Section }}</div>
+      {{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}</div>
       <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
         |
       </div>
@@ -12,7 +12,7 @@
       {{ .Params.eventdatum }}
     </div>
 
-    <h1 class="ff-serif font-weight-medium text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+    <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
       {{ .Title }}
     </h1>
 
