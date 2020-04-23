@@ -1,27 +1,4 @@
-<!--<div class="content-container-post" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/event/image/background/Safespring_event.jpg{{ end }}); background-size: cover;">
-
-  <div class="content-meta-post"><a class="content-category-event" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
-  <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
-  {{ if .Date.Before (now.AddDate 0 0 -1) }}
-  <a class="content-summary-event" href="{{ .Permalink }}">Detta event har tyvärr redan varit</a>
-  {{ else }}
-  <div class="content-summary-event">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
-  {{ end }}
-</div>
-
-<div class="content-container-post" style="background: url({{ if.Params.background }}/blogg/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover;">
-  <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
-  <a class="post-heading-post" href="{{ .Permalink }}">{{ .Title }}</a>
-  <div class="content-summary-blogg">{{ if gt (len .Summary) 200 }} {{ slicestr .Summary 0 45 }}... {{ end }}</div>
-</div>-->
-
-<!--
-<div class="content-container-whitepaper" style="background: url({{ if.Params.eventbild }}/img/event/{{ .Params.eventbild }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}); background-size: cover;">
-  <a class="content-category-event" href="/{{ .Section }}">{{ .Section }}</a></br>
-  <div class="content-meta-whitepaper">{{ .Params.eventdatum }}</div>
-  <a class="post-heading-whitepaper" href="{{ .Permalink }}">{{ .Title }}</a>
-</div>-->
-<div class="body my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="-webkit-filter: opacity(50%) grayscale(100%); /* Safari 6.0 - 9.0 */ filter: opacity(50%) grayscale(100%)">
+<!--<div class="body my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="-webkit-filter: opacity(50%) grayscale(100%); /* Safari 6.0 - 9.0 */ filter: opacity(50%) grayscale(100%)">
         <div class="d-block w-full"><img src="{{ if.Params.eventbild }}/img/event/cards/{{ .Params.card }}{{ else }}/img/event/cards/safespring_card_0.jpg{{ end }}" alt="{{ .Title }}"></div>
   <div class="px-2 py-2">
     <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
@@ -40,4 +17,29 @@
   <a href="{{ .Permalink }}" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif">
     Passerat event
   </a>
+</div>-->
+
+<div class="content-container">
+  <a href="{{ .Permalink }}">
+  <div class="body my-2 p-relative bg-white shadow-1 blue-hover" style="-webkit-filter: opacity(50%) grayscale(100%); /* Safari 6.0 - 9.0 */ filter: opacity(50%) grayscale(100%)">
+      <div class="d-block w-full"><img src="{{ if.Params.eventbild }}/img/event/cards/{{ .Params.card }}{{ else }}/img/event/cards/safespring_card_0.jpg{{ end }}" alt="{{ .Title }}"></div>
+<div class="px-2 py-2">
+  <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
+    {{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
+  </div>
+  <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
+      |
+  </div>
+  <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
+    {{ .Date.Format "Jan 2, 2006" }}
+  </div>
+  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+    {{ .Title }}
+  </h1>
+  <p class="mb-1">
+  </p>
 </div>
+<a href="{{ .Permalink }}" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif">
+  Passerat event
+</a>
+</div></a></div>
