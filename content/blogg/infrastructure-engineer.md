@@ -81,3 +81,4 @@ Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies
 If you want more information about the job, please contact Anders Bruvik. His email address is [anders.bruvik@safespring.com](mailto:anders.bruvik@safespring.com). You can also find him on [LinkedIn](https://www.linkedin.com/in/bruvik/) or as [@bruvik](https://twitter.com/bruvik) on twitter
 
 If you want to apply, we want your CV and a short application letter sent to:
+[anders.bruvik@safespring.com](mailto:anders.bruvik@safespring.com)
