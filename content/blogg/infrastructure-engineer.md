@@ -76,6 +76,7 @@ In addition, there is a budget for traveling to at least a few conferences or me
 
 Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including 30 day vacation, wellness benefits and market salary.   
 <div id="apply"></div>
+
 ### How do I apply?
 
 If you want more information about the job, please contact Anders Bruvik. His email address is [anders.bruvik@safespring.com](mailto:anders.bruvik@safespring.com). You can also find him on [LinkedIn](https://www.linkedin.com/in/bruvik/) or as [@bruvik](https://twitter.com/bruvik) on twitter
