@@ -74,7 +74,7 @@ In addition, there is a budget for traveling to at least a few conferences or me
 
 ### How is the salary?
 
-Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including 30 day vacation, wellness benefits and market salary.   
+Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including local rules for working hours, vacation, wellness benefits and market salary.   
 <div id="apply"></div>
 
 ### How do I apply?
