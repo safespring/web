@@ -47,20 +47,20 @@
     </head>
 <body>
   {{ partial "g-tag-manager.html" . }}
-  {{ partial "svg-filter.html" . }} <!-- NAVBAR -->
-  <!-- {{ partial "header.html" . }} <!-- HEADING -->
+  {{ partial "svg-filter.html" . }} <!-- NAVBAR  -->
+  <!-- {{ partial "header.html" . }} <!-- HEADING  asdf-->
   <img class="heading-background-event" style="background: url({{ if.Params.eventbild }}/img/event/background/{{ .Params.eventbild }}{{ else }}/img/event/background/safespring_background_0.jpg{{ end }}); background-size: cover; background-position: center;">
     <div class="heading-sub">
        <div class="heading-content" style="margin-top:20%; margin-bottom:10%;">
        <a href="{{ .Site.BaseURL }}">
-         <img src="{{ if eq .Params.partner "SUSE" }}{{ "/img/safespring-suse.svg" | relURL }}{{ else if eq .Params.partner "Scaleout" }}{{ "/img/safespring-scaleout.png" | relURL }}{{ else if eq .Params.partner "apendo" }}{{ "/img/safespring-apendo.svg" | relURL }}{{ else }}{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}{{ end }}" style="margin-bottom:30px; width:300px;">
+         <img src="{{ if eq .Params.partner "SUSE" }}{{ "/img/safespring-suse.svg" | relURL }}{{ else if eq .Params.partner "Scaleout" }}{{ "/img/safespring-scaleout.png" | relURL }}{{ else if eq .Params.partner "apendo" }}{{ "/img/safespring-apendo.svg" | relURL }}{{ else if eq .Params.partner "tempus" }}{{ "/img/safespring-tempus.png" | relURL }}{{ else }}{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}{{ end }}" style="margin-bottom:30px; width:300px;">
        </a>
        {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
        <br>
      </div></div>
 
 
-<!-- HEADING -->
+<!-- HEADING hej-->
 
 
 <!-- CONTENT -->
@@ -73,33 +73,95 @@
   </div>
 
   <!-- SIDEBAR -->
-  <div class="ch-sidebar shadow-1" id="register">
-    <div>
-      <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+    <div class="ch-sidebar shadow-1" id="register">
+      <div>
+        <img src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+      </div>
+
+      <div>
+  <!-- START OF FORM -->
+  {{ if .Params.formid }}
+        <h2 class="content-heading">{{ if .Params.english }}Register to get a  ticket{{ else }}SKAFFA BILJETT
+        {{ end }}</h2>
+  <form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+  	<div class="form"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn..."></div>
+  	<div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Jobb email..."></div>
+    <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag..."></div>
+    <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="Mobilnummer..."></div>
+  	<!-- REQUIRED FIELDS -->
+  	<input type="hidden" name="formCid" value="9549">
+  	<input type="hidden" name="formId" value="{{ .Params.formid }}">
+  	<input type="hidden" name="isFrame" value="false">
+  	<input type="text" value="" name="validation" style="display: none;">
+  	<!-- END OF REQUIRED FIELDS -->
+  	<button type="submit" class="button">{{ .Params.knapp }}</button>
+  </form>
+  <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
+  <br><br>
+  {{ else }}{{ end }}
+  <!-- END OF FORM -->
+
+        <h2 class="content-heading">{{ if .Params.english }}What is Safespring?{{ else }}Vad gör Safespring?{{ end }}</h2>
+        {{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!</p>
+        {{ end }}
+
+
+        <br>
+      </div>
+      {{ if .Params.english }}<a id="text-button" href="/kontakt">CONTACT SAFESPRING</a>{{ else }}<a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>{{ end }}
+  </br></br>
+      {{ if .Params.english }}  <div class="read-more">
+          <h2>Read more about (in swedish):</h2>
+            <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Backup as a service</a></li>
+            <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Compute as a service</a></li>
+            <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Storage as a service</a></li>
+            <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+            <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+            <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Consulting</a></li>
+            <li class="content-body"><a href="/support">&gt; Support</a></li>
+        </div>{{ else }}<div class="read-more">
+        <div class="read-more">
+          <h2>Läs mer om:</h2>
+            <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
+            <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
+            <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
+            <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+            <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+            <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+            <li class="content-body"><a href="/support">&gt; Support</a></li>
+        </div>{{ end }}
     </div>
 
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
+
+  <!-- SIDEBAR
+  <div class="ch-sidebar shadow-1" id="register">
+  <div class="eventmeta">
+    <span class="eventdag">{{ .Params.Eventdag }}</span><br>
+    <span class="eventdatum">{{ .Params.Eventdatum }}</span>
+    <p>Fyll i din jobb-mailadress för att registrera dig och få en länk till eventet.</p>
+  </div>
     <div>
-<!-- START OF FORM -->
+<!-- START OF FORM --.>
 {{ if .Params.formid }}
-      <h2 class="content-heading">{{ if .Params.english }}Register to get a  ticket{{ else }}SKAFFA BILJETT
-      {{ end }}</h2>
 <form id="up-form" name="{{ .Params.formid }}" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div class="form"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn..."></div>
 	<div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Jobb email..."></div>
-  <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Företag..."></div>
-  <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;<input maxlength="512" type="text" id="up-client-name-input" name="Contact.cellPhone" required="required" placeholder="Mobilnummer..."></div>
-	<!-- REQUIRED FIELDS -->
+	<!-- REQUIRED FIELDS --.>
 	<input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="{{ .Params.formid }}">
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
+	<!-- END OF REQUIRED FIELDS --.>
 	<button type="submit" class="button">{{ .Params.knapp }}</button>
 </form>
 <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>
 <br><br>
 {{ else }}{{ end }}
-<!-- END OF FORM -->
+<!-- END OF FORM --.>
 
       <h2 class="content-heading">{{ if .Params.english }}What is Safespring?{{ else }}Vad gör Safespring?{{ end }}</h2>
       {{ if .Params.english }}<p>Safespring delivers a locally based Cloud built for the apps of tomorrow.</p>{{ else }}<p>Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!</p>
@@ -132,8 +194,8 @@
       </div>{{ end }}
   </div>
 
-  </div>
+  </div> 
 </main>
 
-<!-- FOOTER -->
-{{ partial "footer.html" . }}
+<!-- FOOTER
+{{ partial "footer.html" . }} -->
