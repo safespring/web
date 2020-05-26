@@ -1,6 +1,6 @@
 ---
 title: "UNIT Digitization Conference"
-date: "2020-05-28"
+date: "2020-01-28"
 publishDate: "2020-04-23"
 eventdatum: "27-28 maj 2020"
 draft: false
