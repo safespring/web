@@ -29,7 +29,7 @@
             </div>
             <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
                 {{ range where .Data.Pages.ByDate.Reverse "Section" "event" }}
-                {{ if .Date.Before (now.AddDate 0 0 -0) }}
+                {{ if .Date.Before (now.AddDate 0 0 -1) }}
 
                     {{ .Render "li" }}
 
