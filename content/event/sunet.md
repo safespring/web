@@ -1,7 +1,7 @@
 ---
 title: "Webbinarium om SUNETs molntjänster"
-date: "2020-06-08"
-publishDate: "2001-05-26"
+date: "2001-06-08"
+publishDate: "2020-05-26"
 eventdatum: "8-11 juni 2020"
 draft: false
 author: ""
