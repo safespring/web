@@ -1,5 +1,5 @@
 ---
-title: "We are now strengthening our team furthermore"
+title: "Strengthening our infrastructure team!"
 date: "2020-04-28T10:39:43+02:00"
 draft: false
 tags: [""]
@@ -9,15 +9,20 @@ eventbild: ""
 socialmediabild: ""
 ---
 
-## Apply for the role as an Infrastructure Engineer
+## Apply as an Infrastructure Engineer
 
-<div class="ingress"><p>Safespring is expanding, and we are looking for engineers who wants to join our team!</p></div>
+<div class="ingress"><p>Safespring is expanding, and we are looking for engineers who want to join our team!</p></div>
 
 <a id="button" href="#apply">How to apply</a>
 
 ### About the team
 
-As an infrastructure engineer you will be a part of the infrastructure team at Safespring. The team is organized as a distributed team, that means you can choose to work from home or your hometown, but if you prefer to work from an office, we currently have people working from offices in Oslo, Stockholm and Bergen. Note that for regulatory reasons, we require team members to be residents of Norway or Sweden.
+This role is part of the infrastructure team at Safespring. The team is
+organized as a remote, distributed team - which means you can choose to work
+from an office in your home, if you want. If you prefer to work from elsewhere,
+for any reason, we currently have people working from offices we rent for them
+in in Oslo, Stockholm and Bergen. Note that for regulatory reasons, we require
+team members to be residents of Norway or Sweden.
 
 ### Who will be the manager?
 
@@ -28,7 +33,6 @@ As an infrastructure engineer your manager will be Anders Bruvik. See contact in
 Safespring is a Nordic startup delivering a locally based infrastructure as a Service based on open source software. Our Services enables customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency levels and retaining data sovereignty. From our professional data centers in Sweden and Norway our delivery of infrastructure-as-a-Service include Safespring Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through API or portal. Our value proposition includes open standards, privacy and compliance to local laws.
 
 Our customers include some of the largest research and education organizations, government authorities and SaaS companies in Sweden and Norway. Safespring holds directly or through partners framework agreement with SUNET, Uninett, NORDUnet, SKR, Kammarkollegiet to mention the most important ones.
-
 
 ### What should you expect from Safespring?
 
