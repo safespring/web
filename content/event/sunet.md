@@ -93,10 +93,6 @@ Du som deltagit på webbinarierna har möjlighet att vara med och vinna en **JBL
 - [Onsdagen 10 juni (13.00) - Lagring i privat molntjänst](/event/2020-06-10)
 - [Torsdagen den 11 juni (13:00) - Uppdaterat backuperbjudande](/event/2020-06-11)
 
-### Hur deltar jag?
-
-Webbinarierna kommer ske genom Zoom.
-Är din arbetsplats ansluten till SUNET så anmäler du dig enklast genom länken ovan.
 
 ### Tidsdisposition: 1 timme
 
@@ -111,7 +107,7 @@ Webbinarierna kommer ske genom Zoom.
 - Demonstration av det nya gränssnittet och hur man startar en ny instans.
 - Kryptering
 
-<br><a href="https://us02web.zoom.us/webinar/register/WN_TEHtYcFEQfuTEKtP2G9raQ" id="button">Registrera dig - 8 juni</a>
+Video kommer inom kort.
 
 ## Webbinarium, 10 juni kl. 13:00 - Lagring i privat molntjänst
 
@@ -123,7 +119,7 @@ Safespring går igenom det senaste inom SUNET Lagring i privat molntjänst. Till
 - Kryptera på dina villkor det som ska läggas i S3 buckets.
 - Arkivarier säger data ska sparas i evig tid.
 
-<br><a href="https://us02web.zoom.us/webinar/register/8415904788506/WN_9PVQWIpFTI2-83ZFs0_MdQ" id="button">Registrera dig - 10 juni</a>
+Video kommer inom kort.
 
 ## Webbinarium, 11 juni kl. 13:00 - Uppdaterat backuperbjudande
 
@@ -133,4 +129,4 @@ Safespring presenterar de senaste förändringarna i vår backuptjänst.
 - Integration med befintlig virtualiseringslösning med Spectrum Protect Plus
 - Backuper av Office 365
 
-<br><a href="https://us02web.zoom.us/webinar/register/4315904791112/WN_3ff1UWUgSwG-2dRQPGN_ww" id="button">Registrera dig - 11 juni</a>
+Video kommer inom kort.
