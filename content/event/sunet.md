@@ -107,6 +107,7 @@ Du som deltagit på webbinarierna har möjlighet att vara med och vinna en **JBL
 - Demonstration av det nya gränssnittet och hur man startar en ny instans.
 - Kryptering
 
+<br>
 <a href="#" id="button">Video kommer inom kort</a>
 
 ## Webbinarium, 10 juni kl. 13:00 - Lagring i privat molntjänst
@@ -119,6 +120,7 @@ Safespring går igenom det senaste inom SUNET Lagring i privat molntjänst. Till
 - Kryptera på dina villkor det som ska läggas i S3 buckets.
 - Arkivarier säger data ska sparas i evig tid.
 
+<br>
 <a href="https://youtu.be/A6Tn462UzwE" id="button">Se inspelning från den 10 juni</a>
 
 ## Webbinarium, 11 juni kl. 13:00 - Uppdaterat backuperbjudande
@@ -129,4 +131,5 @@ Safespring presenterar de senaste förändringarna i vår backuptjänst.
 - Integration med befintlig virtualiseringslösning med Spectrum Protect Plus
 - Backuper av Office 365
 
+<br>
 <a href="https://youtu.be/ZXjMnpVqsno" id="button">Se inspelning från den 11 juni</a>
