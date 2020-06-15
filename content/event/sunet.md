@@ -25,11 +25,6 @@ aliases:
 
 Välkommen till årets digitala uppdatering av Sunets molntjänster. Under tre webbinarier kommer vi gå igenom nyheter, uppdateringar och information om Sunet Compute, Sunet Backup och Sunet lagring i privat molntjänst.
 
-### Vinn en bluetooth-högtalare
-Du som deltagit på webbinarierna har möjlighet att vara med och vinna en **JBL Click 3**. Registrera din mailadress nedan så har du en chans att bli utvald. Alla som registrerar sig får även ta del av Safesprings nyhetsbrev.
-
-<iframe src="https://pages.upsales.com/9549u7e25bcce5fef4a2da7f567302725664e-frame" 		width="360" 		height="500" 		style="border:0"></iframe>
-
 ## Uppdateringar om SUNETs molntjänster
 
 - [Måndagen 8 juni (13:00) - Ny openstack](https://youtu.be/vwO3EjJVew4)
