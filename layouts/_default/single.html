@@ -8,6 +8,9 @@
 {{ else if eq $.Params.title "Pris" }}
 {{ partial "pris.html" . }}
 
+{{ else if eq $.Params.title "Price" }}
+{{ partial "price.html" . }}
+
 {{ else if eq $.Params.title "Pris tack" }}
 {{ partial "pris-tack.html" . }}
 
@@ -52,6 +55,7 @@
       <div class="content-body">
        {{ .Content }}
        {{ if .Params.form }}{{ partial "form.html" . }}{{ else }}{{ end }}
+       {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
       </div>
     </div>
       <!-- SIDEBAR -->
