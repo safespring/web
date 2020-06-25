@@ -24,28 +24,9 @@
 <p>Få priskalkylatorn skickad till din mail genom att fylla i din adress i formuläret. Priskalkylatorn är en Excel-fil med inbyggd logik för att räkna ut en månadskostnad baserad på dina val.
 
 </p>
-				  <h3>Fyll i din jobbmail...</h3>
-					<div class="email">
-				    <div class="form">
-				      <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
-				      <input maxlength="512" type="email" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Mail...">
-				    </div>
-				  </div>
-				    <div class="inputGroup">
-				        <input id="villkor" type="checkbox" value="on" name="singleOptIn.1568140995494">
-				        <label for="villkor">Jag accepterar <a href="/dokument/acceptable-use-policy/">villkoren</a></label>
-				    </div>
-						<!-- REQUIRED FIELDS -->
-						<input type="hidden" name="formCid" value="9549">
-						<input type="hidden" name="formId" value="9549ue3e2de16b7284fbea9a18435cda12fb4">
-						<input type="hidden" name="isFrame" value="false">
-						<input type="text" value="" name="validation" style="display: none;">
-						<!-- END OF REQUIRED FIELDS -->
-					<div class="submit-button"><button class="button" type="submit">Hämta priskalkylatorn</button></div>
-				</form>
-				<script>
-					(function(){var form = document.getElementById("up-form");if(form) {var submitted = false;form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}if (!submitted && window.hasPhoneFields) {var phoneFields = form.querySelectorAll('input[name*=phone], input[name*=Phone]');[].forEach.call(phoneFields, function(element) {if (element.iti) { element.value = element.iti.getNumber(); }});submitted = true;form.submit()}});}})();
-				</script></div>
+<br><br>
+<a class="button" style="margin-right:20px;" href="/pricelist/SEK/safespring-price-list_2020-06-23.xlsx"><i class="fas fa-file-download" style="margin-right:10px;"></i> Ladda ner priskalkulatorn</a> <a id="text-button" href="/pricelist/SEK/safespring-price-list_2020-06-23.pdf">Ladda ner som PDF</a>
+</div>
 </div>
 </main>
 
