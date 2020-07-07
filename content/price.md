@@ -6,4 +6,5 @@ tags: ""
 showthedate: false
 pageimage: "Safespring_pris.jpg"
 intro: "Safespring's cloud services are scalable and cost-effective."
+language: "En"
 ---
