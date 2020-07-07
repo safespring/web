@@ -1,0 +1,29 @@
+            <div class="body my-2 p-relative bg-white shadow-1 blue-hover" style="float:left">
+                <div class="d-block w-full">
+                    <img
+                        style="border-radius: 0;"
+                        src="{{.Get `picture` }}"
+                        alt="{{ .Get `name`}}, {{.Get `title` }} at Safespring"
+                    />
+                </div>
+                <div class="px-2 py-2">
+                    <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right: 5px;">
+                        {{ .Get "title" }}
+                    </div>
+                    <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right: 5px;">
+                        |
+                    </div>
+                    <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
+                        Safespring
+                    </div>
+                    <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                        {{ .Get "name" }}
+                    </h1>
+                    <p class="mb-1">
+                      <span class="inline-rubrik">PHONE</span><br>
+                        <a style="color:#323232" href="tel:{{ .Get `phone` }}">{{ .Get "phone" }}</a><br><br>
+                        <span class="inline-rubrik">EMAIL</span><br>
+                        <a style="color:#323232" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
+                    </p>
+                </div>
+            </div>

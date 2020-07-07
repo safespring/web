@@ -40,7 +40,7 @@
 
 {{ partial "head.html" . }}
     {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-     {{ partial "header.html" . }}
+     {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
 
      <!-- HEADING -->
      <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
@@ -54,13 +54,13 @@
     <div class="ch-content">
       <div class="content-body">
        {{ .Content }}
-       {{ if .Params.form }}{{ partial "form.html" . }}{{ else }}{{ end }}
+       {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
        {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
       </div>
     </div>
       <!-- SIDEBAR -->
-      {{ partial "side-bar.html" . }}
+      {{ if eq .Params.language "En" }}{{ partial "en-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
     </main>
     <!-- FOOTER -->
-    {{ partial "footer.html" . }}
+    {{ if eq .Params.language "En" }}{{ partial "en-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
 {{ end }}

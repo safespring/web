@@ -45,6 +45,12 @@ h1::selection, h2::selection {
 	background: #195F8C;
 }
 
+.inline-rubrik {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 15px;
+}
+
 a::selection {
   color: #fafefe;
   background: #FA690F;
@@ -522,6 +528,12 @@ label.switch-label {
 	padding: 0px;
 	z-index: 100;
 	list-style: none;
+}
+
+.menu-item-flag {
+	text-align: left;
+	padding: 22px 20px 8px 20px;
+	float: right;
 }
 
 .menu-item {
