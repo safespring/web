@@ -12,6 +12,7 @@ language: "En"
 section: "Service"
 section: "Safespring Storage"
 Language: "En"
+socialmedia: "/safespring-start.jpg"
 ---
 
 <div class="ingress"><p>Cloud-based storage is provided from secure data centers in Sweden and is based on the market-leading Ceph storage technology.</p></div>

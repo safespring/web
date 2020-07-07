@@ -6,6 +6,7 @@ draft: false
 language: "En"
 section: "Safespring"
 Language: "En"
+socialmedia: "/safespring-start.jpg"
 ---
 <div class="ingress"><p>Safespring has offices in Sweden and in Norway with headquarters in Stockholm, Sweden.</p></div>
 

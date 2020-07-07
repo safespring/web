@@ -12,6 +12,7 @@ language: "En"
 section: "Service"
 section: "Safespring Compute"
 Language: "En"
+socialmedia: "/safespring-start.jpg"
 ---
 
 <div class="ingress"><p>With cloud-based infrastructure as a service, you can scale your infrastructure up or down as needed. Provided from secure data centers in Sweden.</p></div>

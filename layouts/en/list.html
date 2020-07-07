@@ -14,7 +14,7 @@
           <p class="content-category-blogg">About Safespring</p>
         </div>
         <h1 class="post-heading-firstpage">{{ .Title }}</h1>
-        <p class="content-summary-blogg">{{ .Params "intro" }}</p><br><br>
+        <p class="content-summary-blogg">{{ index .Params "intro" }}</p><br><br>
         <a id="button" href="/en/services/" style="margin:0 20px 20px 0;">What we offer</a><a id="text-button" href="#down">About us</a>
         <!--<i class="fas fa-arrow-circle-down fa-5x" style="color: var(--button-color)"></i>-->
     </div>
