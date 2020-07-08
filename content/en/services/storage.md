@@ -17,6 +17,8 @@ socialmedia: "/safespring-start.jpg"
 
 <div class="ingress"><p>Cloud-based storage is provided from secure data centers in Sweden and is based on the market-leading Ceph storage technology.</p></div>
 
+_Get information about all our services in our  [Service Catalogue](/services/safespring-service-catalogue-2020.pdf)_
+
 Cloud-based storage comes in three different versions based on the market-leading Ceph storage technology. The service is provided from secure data centers with high levels of availability. Data never leaves Sweden as the data centers are physically located within the country, and all data is stored on encrypted hard disks. The service is flexible and fully automated, and users can create new volumes themselves in just a few easy steps.
 
 By choosing Cloud Storage, users can reduce their data storage costs, free up capital, improve the company’s flexibility, and increase system performance. To date, physical servers and storage have forced IT departments to invest in storage capacity based on anticipated future requirements. Cloud-based Storage allows users to buy storage based on their actual requirements and usage patterns.

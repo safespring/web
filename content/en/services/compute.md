@@ -17,6 +17,8 @@ socialmedia: "/safespring-start.jpg"
 
 <div class="ingress"><p>With cloud-based infrastructure as a service, you can scale your infrastructure up or down as needed. Provided from secure data centers in Sweden.</p></div>
 
+_Get information about all our services in our  [Service Catalogue](/services/safespring-service-catalogue-2020.pdf)_
+
 Our cloud-based infrastructure service Compute is based on the market-leading OpenStack cloud platform. The service is provided from secure data halls with high levels of availability. Your data never leaves Sweden as the data halls are physically located within the country. The service is flexible, fully automated, and self-service-based by way of a portal in that the user can start and stop new servers in just a few easy steps. Servers can even be controlled programmatically by way of standard-based requests to our API.
 
 A flexible and scalable service that doesn’t require new investments in hardware. The service is available on a per-hour basis, and you pay for only the resources you use. Users can access the service via a secure and encrypted internet connection. The public image library contains the most common operating systems, and there is also a private library where the user can upload their own images. There are three storage services for the virtual servers – Fast (SSD), Large (HDD), and Active Archive. This gives users a high degree of flexibility so that they can balance their requirements between cost and performance. Active Archive is our object storage service where we provide users with an S3 interface.

@@ -21,7 +21,9 @@ The easiest way is to contact us by phone or mail. If you have general questions
 <span class="inline-rubrik">Safespring Support</span><br>
 <a href="mailto:support@safespring.com">support@safespring.com</a>
 
+<div class="flexcontainer-shortcode" style="background: var(--text-color);">
 {{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CEO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
 {{< contact picture="/img/kontakt/mikael-schutt.jpg" title="Chairman" name="Mikael Schütt" phone="+46730935070" email="mikael.schutt@safespring.se" >}}
 {{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}
 {{< contact picture="/img/kontakt/marcus-boberg.jpg" title="CMO" name="Marcus Boberg" phone="+46721864701‬" email="marcus.boberg@safespring.se" >}}
+</div>

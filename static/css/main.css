@@ -3146,6 +3146,15 @@ h1 {
 	align-content: space-between;
 }
 
+.flexcontainer-shortcode {
+	margin: 5% auto;
+	display: flex;
+	align-items: top;
+	justify-content: right;
+	flex-flow: row wrap;
+	align-content: space-between;
+}
+
 /* END - CARD */
 
 /* PRICE TABLE */
