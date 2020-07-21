@@ -1,6 +1,6 @@
 ---
 title: "Privacy Shields fall kan skapa ny svensk basnäring"
-date: "2020-07-16T10:43:09+02:00"
+date: "2020-07-22T08:43:09+02:00"
 draft: false
 tags: [""]
 showthedate: true
