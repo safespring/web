@@ -35,4 +35,4 @@ Som representanter för ett antal svenska molntjänsteföretag så delar vi gär
 **Fredric Wallsten**, vd och grundare Safespring<br>
 **Johan Christenson**, vd och grundare City Network<br>
 **Charlotte Darth**, vd Binero Group<br>
-**Joakim Öhman**, vd och grundare Elastx<br> 
+**Joakim Öhman**, vd och grundare Elastx<br>
