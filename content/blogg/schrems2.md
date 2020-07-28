@@ -1,7 +1,7 @@
 ---
 title: "Privacy Shields fall kan skapa ny svensk basnäring"
-date: "2020-07-22T08:43:09+02:00"
-draft: false
+date: "2020-07-27"
+draft: true
 tags: [""]
 showthedate: true
 card: "safespring_card_32.jpg"
@@ -16,8 +16,7 @@ Långsiktigt är det dock en stor möjlighet för att skapa svensk innovation oc
 
 Den österrikiske juristen och integritetsaktivisten Max Schrems har gjort det igen. För fem år sedan fick han rätt i EU-domstolen att dåvarande dataskyddsavtal mellan EU och USA, Safe Harbour, inte var tillräckligt för att garantera europeiska medborgares rättssäkerhet. Den 16 juli 2020 kom beslutet från EU-domstolen att inte heller ersättningsavtalet, Privacy Shield, ger tillräckligt skydd för européer mot statliga övervakningsåtgärder och granskningar i USA.
 
-Domen var väntad och innebär i korthet att amerikanska it-tjänsteleverantörer
-inte får föra ut personuppgifter från Europa till USA eller ha access till de samma. Ej heller kan därmed persondata som faller under GDPR-lagstiftningen sparas i amerikanska it-tjänster. E-post och molntjänstföretag som Microsoft och Google som används av de flesta svenska företag och kommuner kommer få utmaningar med utfallet i domen, likväl som sociala mediejätten Facebook som kommer att få problem med att lagra persondata.
+Domen var väntad och innebär i korthet att amerikanska it-tjänsteleverantörer inte får föra ut personuppgifter från Europa till USA eller ha access till de samma. Ej heller kan därmed persondata som faller under GDPR-lagstiftningen sparas i amerikanska it-tjänster. E-post och molntjänstföretag som Microsoft och Google som används av de flesta svenska företag och kommuner kommer få utmaningar med utfallet i domen, likväl som sociala mediejätten Facebook som kommer att få problem med att lagra persondata.
 
 Därmed kommer domen kortsiktigt att skapa problem för de många företag och myndigheter som är beroende av amerikanska drifttjänster för IT, s.k. molntjänster där amerikanska företag som Microsoft, Google och Amazon är dominerande aktörer.
 
