@@ -300,6 +300,7 @@ blockquote p {
 	box-shadow: var(--tran-shadow);
 	transition: all 0.4s ease;
 	transform: translateY(-1px);
+	color: var(--text-color) !important;
 }
 
 .button {
@@ -317,6 +318,7 @@ blockquote p {
 	box-shadow: var(--tran-shadow);
 	transition: all 0.2s ease-in-out ;
 	transform: translateY(-2px);
+	color: var(--text-color) !important;
 }
 
 /* Checkbox toggle */
@@ -864,6 +866,10 @@ label.switch-label {
 
 .footer a {
 	text-decoration: none
+}
+
+.footer a:hover {
+	color: var(--link-color)
 }
 
 .contact {

@@ -1,50 +1,38 @@
 ---
-title: ""
-date: "{{ .Date }}"
+title: "{{ replace .Name "-" " " | title }}"
+date: "{{ replace .Name "-" " " | title }}"
 publishDate: "{{ .Date }}"
-eventdatum: ""
+eventdatum: "{{ replace .Name "-" " " | title }}"
+eventdag: "Onsdag kl. 13:00"
 draft: false
 author: ""
 dokumentnamn: ""
-eventbild: ""
-socialmediabild: ""
+card: "safespring_card_X.jpg"
+eventbild: "safespring_background_X.jpg"
+socialmediabild: "safespring_social_X.jpg"
 intro: ""
 partner: ""
 link: ""
+section: Webbinarium
 knapp: ""
 english: ""
 formid: ""
+explorer: ""
+aliases:
+    -
 ---
 
-## title
-the title of the event.
+{{< calendar month="sep" day="02" type="Webbinairum" platform="Plattform: Zoom" time="Klockan 11:000" >}}
 
-## date
-this is the event date and time.
+## Title
 
-## publishDate
-this is the date when this will be posted on the website.
+{{< ingress>}}
+texter
+{{< /ingress >}}
 
-## author
-your name (or the authors name).
-a photo of the author should be places in the img/whitepapers folder
+### Hur deltar jag på webbinariet?
+Du registrera dig genom länken med din mailadress. Du kommer få ett bekräftelsemeddelande skickat till din mail. En timme innan webbinariet får du även en påminnelse.
 
-## dokumentnamn
-The file name (including the .pdf) of the PDF located in /marketing/whitepapers
+Boka enkelt in webbinariet i din kalender med de färdiga länkarna i mailet.
 
-## eventbild
-The name of the image that is shown as a header (including the .jpg, or other file extension)
-The file should be located in img/event
-
-## socialmediabild
-The file name of the image that will show up when you share the link to the white paper in social media
-(will be the "eventbild" if you don't specify it)
-
-## intro
-Is a small summery that is shown under the authors name
-
-## partner
-If we're hosting this event with a partner, name the partner here
-
-## lank
-post the link to the event, if we have an external landing page for example.
+{{< button >}}
