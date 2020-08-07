@@ -243,6 +243,12 @@ textarea {
 	border-radius: 25px;
 }
 
+.inline_rubrik {
+	text-transform: uppercase;
+	font-weight: var(--heavy-weight);
+	font-size: 14px;
+}
+
 .green {
 	color: var(--web-green-color)
 }
