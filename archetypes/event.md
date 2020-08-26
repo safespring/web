@@ -18,8 +18,6 @@ knapp: ""
 english: ""
 formid: ""
 explorer: ""
-aliases:
-    -
 ---
 
 {{< calendar month="sep" day="02" type="Webbinairum" platform="Plattform: Zoom" time="Klockan 11:000" >}}
