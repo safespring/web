@@ -53,7 +53,7 @@
     <div class="heading-sub">
        <div class="heading-content" style="margin-top:20%; margin-bottom:10%;">
        <a href="{{ .Site.BaseURL }}">
-         <img src="{{ if eq .Params.partner "SUSE" }}{{ "/img/safespring-suse.svg" | relURL }}{{ else if eq .Params.partner "Scaleout" }}{{ "/img/safespring-scaleout.png" | relURL }}{{ else if eq .Params.partner "apendo" }}{{ "/img/safespring-apendo.svg" | relURL }}{{ else if eq .Params.partner "tempus" }}{{ "/img/safespring-tempus.png" | relURL }}{{ else if eq .Params.partner "artvise" }}{{ "/img/safespring-artvise-logo.svg" | relURL }}{{ else if eq .Params.partner "elastisys" }}{{ "/img/safespring-elastisys.svg" | relURL }}{{ else }}{{ "/img/1C_Safespring_Logotyp_Vit_RGB.svg" | relURL }}{{ end }}" style="margin-bottom:30px; width:300px;">
+         <img src="{{ if .Params.partner }}/img/event/partners/{{ .Params.partner }}{{ end }}" style="margin-bottom:30px; width:300px;">
        </a>
        {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
        <br>
