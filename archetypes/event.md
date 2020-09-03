@@ -20,7 +20,7 @@ formid: ""
 explorer: ""
 ---
 
-{{< calendar month="sep" day="02" type="Webbinairum" platform="Plattform: Zoom" time="Klockan 11:000" >}}
+{{< calendar month="sep" day="02" type="Webbinarium" platform="Plattform: Zoom" time="Klockan 11:00" >}}
 
 ## Title
 
