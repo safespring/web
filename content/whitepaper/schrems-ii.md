@@ -28,4 +28,4 @@ Detta white paper tar upp förutsättningarna efter domen och rekommendationer t
 
 <h3 id="download">Hämta white paper</h3>
 
-<br><<iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" 		width="360" 		height="367" 		style="border:0"></iframe>
+<br><iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" 		width="360" 		height="367" 		style="border:0"></iframe>
