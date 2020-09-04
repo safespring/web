@@ -4,7 +4,7 @@ date: "2020-09-04"
 draft: false
 author: "Amelia Andersdotter"
 dokumentnamn: ""
-socialmedia: "/blog/social/safespring_social_33.jpg"
+socialmedia: "/blogg/socialmedia/safespring_social_33.jpg"
 intro: "Förutsättningar och rekommendationer för offentlig sektor och deras leverantörer"
 sidebarlinkname: "Hämta"
 sidebarlinkicon: "fa-file-download"
