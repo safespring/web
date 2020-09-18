@@ -48,3 +48,18 @@ Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestäm
 *Läs om ytterligare två data-säkerhets­avtal mellan USA och EU som kan ogiltigförklaras <a href="/blogg/gdpr-cloudact-2019/">i vårt blogginlägg</a>.*
 
 Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 2009 [(1)](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=celex:12016P/TXT "Stadgan för grundläggande rättigheter"). EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.
+
+## EU-domstolens ogiltigförklarande av Privacy Shield
+
+Nu när molntjänster som lyder under amerikansk lagstiftning sannolikt inte kan användas vid en upphandling har vi på Safespring släppt ett white paper om det nya rättsläget.
+
+Detta white paper tar upp förutsättningarna efter domen och rekommendationer till organisationer inom EU, det är uppdelat i fyra kapitel.
+
+- Schrems II-avgörandet (del I),
+- marknadsstrukturen för molntjänster och samverkan mellan tekniska krav och juridik (del II),
+- olika svenska aktörers roll för vidareutvecklingen av denna marknadsstruktur och särskilt behovet av koordinering av insatser på statlig nivå (del III)
+- och en kort beskrivning av vägen framåt (del IV).
+
+<h3 id="download">Hämta white paper</h3>
+
+<br><iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" width="360" height="367" style="border:0"></iframe>
