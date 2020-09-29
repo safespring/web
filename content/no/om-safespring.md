@@ -1,6 +1,6 @@
 ---
 title: "Om Safespring"
-intro: "Safespring leverer en lokalt basert sky bygget for morgendagens apper."
+intro: "Safespring leverer en lokalt basert sky bygget for morgendagens apper."
 date: "2020-07-03"
 draft: false
 language: "No"
@@ -22,6 +22,6 @@ Fra våre profesjonelle datasentre i Sverige og Norge inkluderer leveransen av i
 
 ## Open Source
 
-Our services are based on Open Source. Recent decades have shown that open source software provides an extremely powerful ecosystem of companies and organizations that have the same needs, but at the same time the need for customized solutions.
+Våre tjenester er basert på Open Source. De siste tiårene har vist at programvare med åpen kildekode gir et ekstremt kraftig økosystem av selskaper og organisasjoner som har de samme behovene, men samtidig behovet for tilpassede løsninger.
 
-<br><br><a href="/en/services" id="button">Our services</a>
+<br><br><a href="/no/tjenester" id="button">Våre tjenester</a>
