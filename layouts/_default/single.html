@@ -40,7 +40,7 @@
 
 {{ partial "head.html" . }}
     {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-     {{ if isset .Params "language" }}{{ partial "en-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
+     {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
 
      <!-- HEADING -->
      <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
@@ -59,8 +59,8 @@
       </div>
     </div>
       <!-- SIDEBAR -->
-      {{ if eq .Params.language "En" }}{{ partial "en-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
+      {{ if eq .Params.language "En" }}{{partial "en-side-bar.html" . }}{{ else if eq .Params.language "No" }}{{partial "no-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
     </main>
     <!-- FOOTER -->
-    {{ if eq .Params.language "En" }}{{ partial "en-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
+    {{ if eq .Params.language "En" }}{{ partial "en-footer.html" .}}{{ else if eq .Params.language "No" }}{{ partial "no-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
 {{ end }}
