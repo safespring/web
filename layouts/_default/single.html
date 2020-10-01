@@ -59,7 +59,7 @@
       </div>
     </div>
       <!-- SIDEBAR -->
-      {{ if eq .Params.language "En" }}{{ partial "en-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
+      {{ if eq .Params.language "En" }}{{partial "en-side-bar.html" . }}{{ else if eq .Params.language "No" }}{{partial "no-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
     </main>
     <!-- FOOTER -->
     {{ if eq .Params.language "En" }}{{ partial "en-footer.html" .}}{{ else if eq .Params.language "No" }}{{ partial "no-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}

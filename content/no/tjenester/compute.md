@@ -24,7 +24,7 @@ Minste kostnadsbelastning er per time og kun de ressurser som brukes blir faktur
 
 Til de virtuelle serverne finnes det to forskjellige lagringstjenester: Fast (SSD) og  Large (HDD). Dette gir brukeren stor fleksibilitet til å balansere sine behov mellom beste ytelse og laveste kostnad. Large er vår objektlagringstjeneste der vi har et S3-interface mot brukeren.
 
-## Bakgrunn
+## Bakgrunn 
 Safespring vant anbudet om levering av Safespring Compute til den akademiske sektoren i Sverige og Norge.
 
 I dag omfatter våre kunder alle universiteter, høyskoler og andre utdannelses- og forskningsmiljøer som er oppkoblet til de nasjonale forskningsnettene, Sunet i Sverige og Uninett i Norge. Totalt omfatter dette flere hundre organisasjoner med hundretusenvis av brukere.
