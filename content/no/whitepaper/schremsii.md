@@ -12,7 +12,7 @@ Language: "No"
 socialmedia: "/safespring-schremsii.jpg"
 ---
 
-## White paper om EU-domstolens ugyldigforklaring av Privacy Shield
+## Informasjonsguide om EU-domstolens ugyldigforklaring av Privacy Shield
 
 {{< ingress >}}
 Nå som skytjenester som er underlagt amerikansk lovgivning sannsynligvis ikke kan brukes i anskaffelser, har vi i Safespring gitt ut en informasjonsguide om den nye juridiske situasjonen.
