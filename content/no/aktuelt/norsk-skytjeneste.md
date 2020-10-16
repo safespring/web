@@ -6,7 +6,7 @@ intro: "Fredric Wallsten har jobbat länge med de här frågorna i sin roll som 
 background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 form: "no"
 sidebarlinkname: "Last ned White Paper"
-sidebarlinkurl: "/services/safespring-compute-web-no.pdf"
+sidebarlinkurl: "#down"
 socialmedia: "safespring-compute.jpg"
 language: "No"
 section: "Safespring Compute"
@@ -54,3 +54,5 @@ Det är nog i grunden en bra idé. Det finns nog en hel del applikationer och da
 Jag tror inte att varken staten eller någon annan enskild leverantör kan producera den mångfald av tjänster som det finns behov för, både på infrastruktur- plattforms- och applikationslagret. Därför vore det extremt olyckligt om man valde proprietära lösningar där man blev utelåst ifrån övriga marknaden. Då tror jag staten riskerar att mista mycket av den innovationskraft som man uppnår med moderna skytjenester. Därför är det väldigt viktigt att välja lösningar som baserar sig på öppna standarder, standardiserade API:er och standardiserade filformat.
 
 Det behöver finnas ett förutsägbart och standardiserat sätt att interagera med övriga marknaden för att tillgängliggöra sig den fulla potentialen av den innovation som marknaden kan bidra med. Det finns europeiska initiativ, tex Gaia-X, som kommer bli intressanta att följa. Just GAIA-X handlar om federerad infrastruktur som, om det lyckas, kan bli en sådan plattform för standardiserat utbyte av tjänster.
+
+<span id="down" />
