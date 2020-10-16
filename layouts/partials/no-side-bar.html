@@ -19,7 +19,11 @@
     <p class="mb-1">
       Safespring har gitt ut en informasjonsguide om den nye juridiske situasjonen.
     </p>
-    <iframe src="https://pages.upsales.com/9549u8f9ca8d1577e42a1b7c7ed65d9d1eba3-frame" 		width="275" 		height="200" 		style="border:0"></iframe>
+    {{ if eq .Params.article "DN.no" }}
+    <iframe src="https://pages.upsales.com/9549u8f9ca8d1577e42a1b7c7ed65d9d1eba3-frame" 		width="270" 		height="200" 		style="border:0"></iframe>
+    {{ else }}
+    <iframe src="https://pages.upsales.com/9549uef7a9b654a73489cb99641bf7524f053-frame" 		width="270" 		height="200" 		style="border:0"></iframe>
+    {{ end }}
   </div>
   </div></div>
   {{ else }}

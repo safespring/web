@@ -11,7 +11,7 @@ socialmedia: "safespring-compute.jpg"
 language: "No"
 section: "Safespring Compute"
 Language: "No"
-article: "DN.no"
+article: "Safespring"
 socialmedia: "/socialmedia/fredric-social-article.jpg"
 ---
 
