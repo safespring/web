@@ -12,7 +12,7 @@ language: "No"
 section: "Safespring Compute"
 Language: "No"
 article: "yes"
-socialmedia: "/fredric-social-article.jpg"
+socialmedia: "/socialmedia/fredric-social-article.jpg"
 ---
 
 
