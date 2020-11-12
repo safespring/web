@@ -4,6 +4,7 @@ date: 2018-06-27T14:29:26+02:00
 draft: false
 intro: "Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com"
 dokumentbild: "safespring_card_20.jpg"
+general: "yes"
 ---
 
 <div class="ingress"><p>Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret.</p></div>

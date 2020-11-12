@@ -13,11 +13,15 @@
   <!-- Main  -->
   <div class="listpage">
     <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
-      {{ range .Data.Pages.GroupByDate "2006" }}
 
-        {{ range .Pages }} {{ .Render "li"}} {{ end }}
-
+      {{ $sectionPages := where .Pages "Section" .Section }}
+      {{ if ge (len $sectionPages) 1 }}
+      {{ range $sectionPages }}
+      {{ .Render "li" }}
+        {{ end }}
+      </ul>
       {{ end }}
+
     </div>
 </div>
 {{ partial "side-bar.html" . }}
