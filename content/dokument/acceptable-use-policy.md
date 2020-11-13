@@ -7,6 +7,7 @@ dokumentbild: "safespring_card_21.jpg"
 sidebarlinkname: "Download PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01.pdf"
+general: "yes"
 ---
 
 <div class="ingress"><p>This policy sets forth the principles governing the use of any of Safespring’s cloud services by its customers or partners.</p></div>
