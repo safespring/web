@@ -7,7 +7,9 @@ dokumentbild: "safespring_card_20.jpg"
 general: "yes"
 ---
 
-<div class="ingress"><p>Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret.</p></div>
+{{< ingress >}}
+Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret.
+{{</ ingress >}}
 
 Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”).
 
