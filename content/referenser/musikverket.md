@@ -1,7 +1,7 @@
 ---
 title: "Musikverket skaffar flexibel lagring och backup för högupplösta bilder"
 date: 2019-01-07T13:32:28+01:00
-draft: false
+draft: true
 intro: "“Safespring är en mycket pragmatisk och hjälpsam leverantör. Under projektet fick vi mycket hjälp med att sätta upp tjänsten precis som vi ville ha den“"
 background: "safespring_musikverket.jpg"
 socialmedia: "safespring_musikverket.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Safespring levererar säker molnbaserat backuptjänst till Chalmers"
 date: 2019-01-09T13:32:28+01:00
-draft: false
+draft: true
 intro: "”Vi känner oss tryggare med Safesprings backuplösning och har en kontinuitet vi inte hade förut”"
 background: "Safespring_background_chalmers.jpg"
 socialmedia: ""
