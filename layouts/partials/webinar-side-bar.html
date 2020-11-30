@@ -1,0 +1,29 @@
+<div class="ch-sidebar shadow-1">
+  <div>
+    <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+  </div>
+  <div>
+    <h3 class="">Fortsätt se nästa webbinarium:</h3>
+    <p class="">Många bolag och myndigheter väljer att bygga sina säkra molntjänster på Safesprings plattform. Ta del av flera informativa webbinarium.</p>
+    <br>
+  </div>
+  <div>
+    {{ $sectionPages := where .Site.Pages "Section" .Section }}
+    {{ if ge (len $sectionPages) 1 }}
+    {{ range $sectionPages }}
+    {{ .Render "li-1" }}
+    {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="read-more">
+    <h2>Läs mer</h2>
+      <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
+      <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
+      <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
+      <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
+      <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
+      <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
+      <li class="content-body"><a href="/support">&gt; Support</a></li>
+  </div>
+</div>
