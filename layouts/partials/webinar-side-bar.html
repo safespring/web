@@ -8,7 +8,7 @@
     <br>
   </div>
   <div>
-    {{ $sectionPages := where .Site.Pages "Section" .Section }}
+    {{ $sectionPages := where .Pages "Section" .Section }}
     {{ if ge (len $sectionPages) 1 }}
     {{ range $sectionPages }}
     {{ .Render "li-1" }}
