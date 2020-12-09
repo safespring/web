@@ -13,7 +13,7 @@ socialmediabild: "safespring_social_32.jpg"
 intro: "Vi går igenom hur e-arkiveringens utmaningar kan lösas med serverkapacitet och tillfällig lagring."
 partner: "arkivit.svg"
 link: "https://us02web.zoom.us/webinar/register/9116022242491/WN_uT2x58w6RjWf8BPQzZqLbw"
-section: Webbinarium
+audience: "kommun"
 knapp: "Registrera"
 english: ""
 formid: ""

@@ -7,7 +7,7 @@ eventbild: "safespring_background_26.jpg"
 socialmediabild: "safespring_social_26.jpg"
 intro: "Avlasta flera avdelningar och underlätta för invånare med hjälp av svensk AI"
 partner: "apendo.svg"
-section: Kommun
+audience: "kommun"
 explorer: "https://youtu.be/boxjRCyFinY"
 ---
 

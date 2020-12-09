@@ -7,7 +7,7 @@ eventbild: "safespring_background_15.jpg"
 socialmediabild: "safespring_social_15.jpg"
 intro: "Hur kan jag förenkla vardagen och effektivisera förskolans verksamhet och samtidigt ge både vårdnadshavare och personal mer tid med barnen?"
 partner: "tempus.svg"
-section: "kommun"
+audience: "kommun"
 explorer: "https://youtu.be/jDxOispa2ME"
 ---
 {{< youtube jDxOispa2ME >}}

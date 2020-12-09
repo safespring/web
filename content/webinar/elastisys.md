@@ -7,7 +7,7 @@ eventbild: "safespring_background_31.jpg"
 socialmediabild: "safespring_social_31.jpg"
 intro: "Vi går igenom hur juridisk säkerhet går hand i hand med kubernetes och cloud native applikationer"
 partner: "elastisys.svg"
-section: Webbinarium
+audience: "saas"
 explorer: "https://youtu.be/3Pu0dWro0ag"
 ---
 

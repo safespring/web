@@ -13,11 +13,11 @@ socialmediabild: "safespring_social_26.jpg"
 intro: "Avlasta flera avdelningar och underlätta för invånare med hjälp av svensk AI"
 partner: "apendo.svg"
 link: "#"
-section: "kommun"
+audience: "kommun"
 knapp: "Starta webinar"
 english: ""
 formid: ""
 explorer: ""
 ---
 
-Detta är listsidan
+Detta är listsidan 

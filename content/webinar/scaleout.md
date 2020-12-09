@@ -7,7 +7,7 @@ eventbild: "safespring_background_28.jpg"
 socialmediabild: "safespring_social_28.jpg"
 intro: "För att bättre förbereda er organisation för den förändring som AI teknologier för med sig är det viktigt att förstå förutsättningarna."
 partner: "scaleout.svg"
-section: Webbinarium
+audience: "saas"
 explorer: "https://youtu.be/_uWqI_1Yt-M"
 ---
 
