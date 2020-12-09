@@ -23,4 +23,4 @@ explorer: "https://youtu.be/SpkzPLEPbxc"
 
 ### Om webbinariet
 
-Lyckat Multicloud.
+Lyckat Multicloud
