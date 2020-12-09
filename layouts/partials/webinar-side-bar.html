@@ -3,17 +3,21 @@
     <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
   </div>
   <div>
-    <h3 class="">Fortsätt se nästa webbinarium:</h3>
+    <h3 class="">Fortsätt se nästa webbinarium</h3>
     <p class="">Många bolag och myndigheter väljer att bygga sina säkra molntjänster på Safesprings plattform. Ta del av flera informativa webbinarium.</p>
     <br>
   </div>
   <div>
-    {{ $sectionPages := where .Site.Pages "Section" .Section }}
-    {{ if ge (len $sectionPages) 1 }}
-    {{ range $sectionPages }}
+    {{ if eq .Params.audience "kommun" }}
+    {{ range where .Site.RegularPages ".Params.audience" "kommun" }}
+    {{ .Render "li-1" }}
+    {{ end }}
+    {{ else }}
+    {{ range where .Site.RegularPages ".Params.audience" "saas" }}
     {{ .Render "li-1" }}
     {{ end }}
     {{ end }}
+
   </div>
 
   <div class="read-more">
