@@ -1,7 +1,7 @@
 ---
 title: "Vi välkomnar ännu ett MedTech-bolag in i Safesprings svenska molntjänst!"
 date: "2019-03-05T08:51:25+01:00"
-draft: false
+draft: true
 tags: [""]
 showthedate: true
 card: "safespring_card_6.jpg"
