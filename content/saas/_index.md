@@ -45,3 +45,5 @@ I fall en svensk kommun överför personuppgifter med stöd av Privacy Shield, �
 eSamverkanprogrammet, eSam (28 svenka myndigheter och SKR) hade i september ett webbinarium tillsammans med molntjänstleverantörer i Sverige där de största myndigheterna i Sverige beskrev hur det här utfallet i EU-domstolen kommer påverka dem. eSam jobbar för att etablera en ny plan för molntjänster för sina medlemmar som bygger på att deras data ligger hos svenska eller europeiska företag.
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
+
+{{< localbutton "Kontakta Safespring" "/kontakt/" >}}

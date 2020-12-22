@@ -51,7 +51,6 @@ Med en säker molnplattform utformad för compliance blir tjänsten mer tillgän
 
 {{< localbutton "Tempus webbinarium" "/webinar/kommun/tempus/" >}}
 
-<span id="down"</span>
 
 ## Esams leverantörsmöte
 eSam bjöd in fem av sina medlemmars it-chefer för att träffa leverantörer av it-tjänster i ett samtal kring offentlig sektors behov när det gäller möjligheten att använda sig av molntjänster. It-cheferna beskriver sina förutsättningar och utmaningar i vardagen.
