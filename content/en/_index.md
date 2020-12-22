@@ -5,4 +5,6 @@ date: "2020-07-03"
 draft: false
 language: "En"
 socialmedia: "/safespring-start.jpg"
+aliases:
+    - /ocre/
 ---
