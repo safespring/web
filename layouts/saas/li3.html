@@ -1,5 +1,5 @@
   <div class="content-meta-post">
-    <a class="content-category-blogg" href="/{{ .Section }}">
+    <a class="content-category-blogg">
       {{ if eq .Section "tjanster" }}Tjänster{{ else if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
     </a>
   </div>
