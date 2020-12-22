@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+
+<body>
+  {{ partial "g-tag-manager.html" . }}
+  <div class="main">
+    {{ partial "header.html" . }}
+    <div class="terms">
+      {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
+      <div class="term">
+        <a href="{{ $data.Plural }}/{{ $key | urlize }}">
+          <div class="term-title">{{ $key }} ({{ len $value }}) </div>
+        </a>
+      </div>
+      <!-- term -->
+      {{ end }}
+    </div>
+    <!-- terms -->
+    {{ partial "footer.html" . }}
+  </div>
+  <!-- main end -->
+</body>
+
+</html>
