@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+     {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
+
+     <!-- HEADING -->
+     <div class="heading-sub" style="background: url(/img/saas/backgrounds/{{ .Params.background }}); background-size: cover; background-position: center;">
+       <div class="heading-content">
+         {{ .Render "li3" }}
+       </div>
+     </div>
+
+  <!-- CONTENT -->
+  <main class="content-chalmers">
+    <div class="ch-content">
+      <div class="content-body">
+       {{ .Content }}
+      </div>
+    </div>
+      <!-- SIDEBAR -->
+      {{partial "side-bar.html" . }}
+    </main>
+    <!-- FOOTER -->
+    {{ partial "footer.html" . }}

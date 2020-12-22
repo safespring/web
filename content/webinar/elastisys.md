@@ -1,44 +1,43 @@
 ---
-title: "Kubernetes: Praktisk guide till compliance"
-publishDate: "2020-09-18T07:37:39+02:00"
+title: "Lär dig lyckas med containers och Kubernetes"
+publishDate: "2020-05-05"
 draft: false
-card: "safespring_card_31.jpg"
-eventbild: "safespring_background_31.jpg"
-socialmediabild: "safespring_social_31.jpg"
-intro: "Vi går igenom hur juridisk säkerhet går hand i hand med kubernetes och cloud native applikationer"
+card: "safespring_card_18.jpg"
+eventbild: "safespring_background_18.jpg"
+socialmediabild: "safespring_social_18.jpg"
+intro: "Ta chansen att lära dig hur du lyckas med dina container- och Kubernetes-initiativ, även i hårt reglerade branscher där data-säkerhet och regelefterlevnad är A och O"
 partner: "elastisys.svg"
 audience: "saas"
-explorer: "https://youtu.be/3Pu0dWro0ag"
+explorer: "https://youtu.be/Gbh-2rosbqA"
 ---
 
-{{< youtube 3Pu0dWro0ag >}}
+{{< youtube Gbh-2rosbqA >}}
 
 ### Om webbinariet
 
 {{< ingress>}}
-På detta webbinarium (45 min) går vi genom hur juridisk säkerhet går hand i hand med kubernetes och cloud native applikationer, allt lokalt producerat inom europa.
+Ta chansen att lära dig hur du lyckas med dina container- och Kubernetes-initiativ, även i hårt reglerade branscher där data-säkerhet och regelefterlevnad är A och O.
 {{< /ingress >}}
 
-Vi går bland annat igenom:
+Johan Tordsson, CTO på Elastisys och cloud-forskare på Umeå Universitet, går igenom grunderna för containers, cloud-native och Kubernetes. Utifrån Elastisys erfarenhet av transformations-resor i en mängd olika branscher och CNCFs cloud native trail map tar Johan upp bland annat:
 
-1. Vad innebär regelefterlevnad för Kubernetes?
-2. Hur ser livscykeln ut för en regulatoriskt korrekt applikation?
-3. Vilket stöd för regelefterlevnad får jag från cloud native-verktyg?
+- Lärdomar, best practices och fallgropar att undvika för att på bästa sätt kunna dra nytta av tekniken.
+- Vad är business caset för att göra den här omställningen?
+- Vilka är de lågt hängande frukterna?
+- Hur kan organisationer ta sig an förändringen beroende på hur långt man kommit på resan?
 
-**Johan Tordsson**, CTO på Elastisys och cloud-forskare på Umeå Universitet och **Gabriel Paues**, Cloud Architect på Safespring går igenom hur regelefterlevnad kan uppnås i dina Kubernetes initiativ. Genom lokal moln-infrastruktur och cloud nativ-verktyg presenterar de en praktisk guide till compliance.
+Containers och Kubernetes är tekniker som ingår i det bredare angreppssätt till mjukvaruutveckling och drift som kallas cloud native. Detta har blivit extremt populärt senaste åren och möjliggör snabbare utvecklingscykler, högre tillgänglighet och ger oberoende till enskilda molnleverantörers plattformar.
 
-### Del I: Kort introduktion
-1. Schrems II och regelefterlevnad
+Kubernetes är det snabbast växande open source-projektet i världen och det med flest utvecklare efter Linux. Populariteten hos utvecklare för containers växer explosionsartat och merparten av alla applikationer kommer de närmaste åren att distribueras och konsumeras i form av containers.
 
-### Del II: Compliant Kubernetes
+### Agenda för webbinariet:
 
-2. Vad innebär regelefterlevnad för Kubernetes?
-3. Hur ser livscykeln ut för en regulatorisk korrekt applikation?
-4. Vilket stöd för regelefterlevnad får jag från cloud native-verktyg?
+1. Kort intro av Safespring
+1. Presentation av Elastisys
+1. Containers och Kubernetes
+1. Vad är Elastisys Compliant Kuberneters?
+1. Frågor och Svar
 
-### Del III: Lokal molninfrastruktur
+### Det här är Elastisys
 
-5. Var finns Safespring datacenter?
-6. Safespring Compute & Storage.
-7. Varför S3 kompatibel?
-8. Kubernetes i Safespring Compute
+Elastisys utvecklar och driftar en egen distribution, Compliant Kubernetes, för kunder med hårda krav på säkerhet och regelefterlevnad. Elastisys har under flera år hjälpt bolag och organisationer över hela Europa med transformationer mot modern, container-baserade mjukvaruutveckling med hjälp av open source-verktygen i cloud-native ekosystemet.
