@@ -1,4 +1,5 @@
   <div class="content-meta-post">
+    <img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">
     <a class="content-category-blogg" href="/{{ .Section }}">
       {{ if eq .Section "tjanster" }}Tjänster{{ else if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
     </a>
