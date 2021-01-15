@@ -13,8 +13,7 @@ socialmedia: "/safespring-start.jpg"
 
 Safespring delivers a locally based Cloud built for the apps of tomorrow. It enables our customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency levels and retaining data sovereignty. With our platform, we help our customers improve competitiveness to delivery excellence.
 
-<br><br>
-<a target="_blank" href="/services/safespring-service-catalogue-2020.pdf" class="button">Service catalogue</a>
+{{< localbutton "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" >}}
 
 <div class="flexcontainer-shortcode" style="background: var(--text-color);">
 
