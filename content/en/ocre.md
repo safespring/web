@@ -12,6 +12,7 @@ Language: "En"
 intro: "The Open Clouds for Research Environments project (OCRE), aims to accelerate cloud adoption in the European research community."
 aliases:
     - /ocre/
+logobanner: "yes"
 ---
 
 {{< ingress >}}
@@ -20,10 +21,8 @@ With cloud-based infrastructure as a service, you can scale your infrastructure 
 
 Safespring delivers a locally based Cloud built for the apps of tomorrow. It enables you to innovate quickly and retaining data sovereignty. With our cloud platform, we help you improve competitiveness and deliver excellence.
 
-{{< localbutton "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" >}}
+{{< 2calltoaction "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" "PRICE CALCULATOR" "http://localhost:1313/pricelist/EUR/safespring-price-list_2020-09-23.xlsx" >}}
 <br><br>
 
 ### We know the Research and education sector
 Safespring as worked along side the academic sector in Sweden and Norway since 2014 when we first started to develop our infrastructure platform.
-
-{{< LogoBanner >}}
