@@ -14,7 +14,9 @@ aliases:
     - /ocre/
 ---
 
-<div class="ingress"><p>With cloud-based infrastructure as a service, you can scale your infrastructure up or down as needed. Provided from secure data centers in Sweden.</p></div>
+{{< ingress >}}
+With cloud-based infrastructure as a service, you can scale your infrastructure up or down as needed. Provided from secure data centers in Sweden.
+{{</ ingress >}}
 
 Safespring delivers a locally based Cloud built for the apps of tomorrow. It enables you to innovate quickly and retaining data sovereignty. With our cloud platform, we help you improve competitiveness and deliver excellence.
 
@@ -24,6 +26,4 @@ Safespring delivers a locally based Cloud built for the apps of tomorrow. It ena
 ### We know the Research and education sector
 Safespring as worked along side the academic sector in Sweden and Norway since 2014 when we first started to develop our infrastructure platform.
 
-<br>
-
-![Safespring customers in the R&E sector](/img/safespring-research-and-education.png)
+{{< LogoBanner >}}

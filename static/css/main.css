@@ -3971,3 +3971,51 @@ h1 {
 .toplogo {
 	width: 200px
 }
+
+/* Photo roll */
+
+/* Photo Banner */
+.photo-roll--container {
+  max-width: 700px;
+	height: 150px;
+  overflow: hidden;
+	border-radius: 5px;
+}
+
+.photo-roll {
+  height: 150px;
+  width: 200%;
+  margin-bottom: 5px;
+  font-size: 0;
+}
+.photo-roll img {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  height: 150px;
+  width: 300px;
+  transition: all 0.5s ease;
+}
+.photo-roll img:first-child {
+  -webkit-animation: bannermove 112s linear infinite;
+          animation: bannermove 112s linear infinite;
+}
+
+/* Keyframe animations*/
+@-webkit-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -8520px;
+  }
+}
+@keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -8520px;
+  }
+}
+
+/* END Photo roll */
