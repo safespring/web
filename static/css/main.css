@@ -4028,10 +4028,10 @@ h1 {
 
 /* Photo Banner */
 .photo-roll--container2 {
-  width: 100%;
+  width: 99.5vw;
 	height: 150px;
   overflow: hidden;
-	margin-top: 5px;
+	margin: 5px auto 0 auto;
 	border-radius: 5px;
 }
 
