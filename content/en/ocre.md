@@ -30,6 +30,6 @@ Safespring delivers a locally based Cloud built for the apps of tomorrow. It ena
 
 On 15 September 2020, OCRE launched it’s first funding call for the adoption of cloud services available through the OCRE IaaS+ framework agreements. Two subsequent calls for projects are planned to open in February and July 2021 respectively.
 
-Under this 1st Cloud funding call, OCRE aims to fund the consumption of infrastructure-cloud services (IaaS, PaaS, SaaS, marketplace) by projects which can become clear showcases for the benefits of using cloud services to positively impact research outcomes
+Under this 1st Cloud funding call, OCRE aims to fund the consumption of infrastructure-cloud services (IaaS, PaaS, SaaS, marketplace) by projects which can become clear showcases for the benefits of using cloud services to positively impact research outcomes.
 
 {{< localtextbutton "Read more" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
