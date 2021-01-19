@@ -24,9 +24,8 @@ Stockholms universitet skickar en offsite kopia från sin backupmiljö på  5 TB
 
 Så - med en minimal arbetsinsats kunde universitetet slå på en säker offsite-backup, som är helt automatiserad, till ett väldigt förmånligt pris. Dessutom slipper de helt trafikavgifter eftersom att de sitter på SUNETs nät tillsammans med Safespring. En kostnadseffektiv lösning som ger mycket mervärde och trygghet för Stockholm universitets driftorganisation.
 
-<br><br>
-<a id="button" href="/tjanster/safespring-storage/">Läs mer om Safespring Storage</a>
+{{< 2calltoaction "Safespring Storage" "/tjanster/safespring-storage/" "Kontakta oss" "/kontakt" >}}
 
 
 <br><br>
-**FOTO:** <br>*Eva Dalin / Stockholms universitet*
+*Foto: Eva Dalin / Stockholms universitet*

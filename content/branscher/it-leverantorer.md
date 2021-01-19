@@ -13,6 +13,4 @@ Våra tjänster lämpar sig mycket väl för att komplettera ert erbjudande och 
 
 Kontakta oss för att höra mer kring våra partnertjänster!
 
-<a href="/om-safespring/bli-partner" id="text-button">Bli partner med oss</a></br>
-
-<a href="/kontakt" id="text-button">Kontakta Safespring</a>
+{{< 2calltoaction "Bli partner" "/om-safespring/bli-partner" "Kontakta Safespring" "/kontakt" >}}

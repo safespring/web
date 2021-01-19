@@ -17,7 +17,7 @@ De erfarenheter vi har kring hur man ska tänka processmässigt för att kunna a
 
 Vi har också partners som erbjuder tjänster kring backup, både som en lokal lösning, vår molnbaserade lösning eller en kombination för ökad säkerhet. Kring det här området finns också möjlighet att ta fram lösningar för att kontinuerligt kunna göra återställningstester för att säkerställa att de backuper ni tar verkligen fungerar. Dessa tester kan kombineras med vår Compute plattform så att ni bara betalar för resurserna när ni gör testerna - för att hålla nere kostnaderna och samtidigt kunna känna trygghet.
 
-<a href="/om-safespring/samarbeten-och-partners/" id="text-button">Läs mer om våra sammarbeten</a></br></br>
+{{< 2calltoaction "Våra partners" "/om-safespring/samarbeten-och-partners/" "Kontakta oss" "/kontakt" >}}
 
 Vi har även konsulttjänster inom AI och ML (Machine Learning). Genom vår starka förankring i den akademiska världen har vi partners som är den absoluta spetsen inom dessa områden. Genom att kombinera dessa tjänster med Safesprings molntjänster så kan ni hitta en väg fram att kunna utnyttja dessa tekniker med datat kvar inom landets gränser. Om inte landets gränser är gott nog så kan vi också hjälpa till med att sätta upp en plattform i ert datacenter (som vi managerar) som ger fullständig kontroll kring var datat är samtidigt som ni kan få en kort startsträcka för att komma igång med dessa teknologier.
 

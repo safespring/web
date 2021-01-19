@@ -25,8 +25,8 @@ devops: ""
 Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
 
 Vår molnbaserade infrastrukturtjänst är baserad på den marknadsledande molnplattformen OpenStack. Tjänsten levereras ifrån säkra datahallar med mycket hög tillgänglighet. Data i tjänsten lämnar aldrig Sverige då datahallarna är placerade inom landets gränser. Vi är ett nordiskt bolag som därigenom inte omfattas av ex. Cloud Act, vilket gör att gör att du kan känna dig ännu tryggare.
-<br><br><br>
-<a href="#testa-safespring" id="button">Testa Safespring</a>
+
+{{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
 
 ### Lagring till Safespring Compute
 Den lagring som behövs till de virtuella instanserna är separerad från noderna där själva instanserna kör i ett Ceph-kluster och kan fås i två varianter:
@@ -34,7 +34,9 @@ Den lagring som behövs till de virtuella instanserna är separerad från nodern
 - **Fast** — som är optimerat på prestanda.
 - **Large** — som är optimerat på pris.
 
-Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet. <br><br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
+Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet.
+
+<br><br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
 
 ### Datahallar inom landets gränser
 Tjänsten levereras från våra mycket säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett nordiskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
