@@ -12,6 +12,8 @@ sidebarlinkurl: "#download"
 card: "safespring_card_33.jpg"
 eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
+aliases:
+    - /schrems/
 ---
 
 
