@@ -10,7 +10,7 @@ partner: "elastisys.svg"
 audience: ""
 explorer: "https://us02web.zoom.us/j/83858312888"
 sidebarlinkname: "Anslut till mötet"
-sidebarlinkurl: "https://us02web.zoom.us/j/83858312888"
+sidebarlinkurl: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzQyZGVjNWUtMjAwZi00OWQ2LWI1YjAtN2JiZDk2Y2RkMTk0%40thread.v2/0?context=%7b%22Tid%22%3a%221a5e7528-8965-4dd8-913d-7d84b4d657cd%22%2c%22Oid%22%3a%22a8ea5436-7684-4fb0-80c0-6117d3bc4c6e%22%7d"
 sidebarlinkicon: "fa-video"
 sidebarwhitepaper: "yes"
 saas: "y"
@@ -21,7 +21,7 @@ sidebartext: "Läs förutsättningar och rekommendationer för offentlig sektor 
 sidebardate: "Dataskydd"
 ---
 
-<a href="https://us02web.zoom.us/j/83858312888" target="_blank"><img src="/img/event/petter-live.jpg" alt="Petter är redo LIVE inför eFörvaltningsdagarna."></a>
+<a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzQyZGVjNWUtMjAwZi00OWQ2LWI1YjAtN2JiZDk2Y2RkMTk0%40thread.v2/0?context=%7b%22Tid%22%3a%221a5e7528-8965-4dd8-913d-7d84b4d657cd%22%2c%22Oid%22%3a%22a8ea5436-7684-4fb0-80c0-6117d3bc4c6e%22%7d" target="_blank"><img src="/img/event/petter-live.jpg" alt="Petter är redo LIVE inför eFörvaltningsdagarna."></a>
 
 ### Prata med oss live
 
