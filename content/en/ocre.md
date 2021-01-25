@@ -32,4 +32,4 @@ On 15 September 2020, OCRE launched it’s first funding call for the adoption o
 
 Under this 1st Cloud funding call, OCRE aims to fund the consumption of infrastructure-cloud services (IaaS, PaaS, SaaS, marketplace) by projects which can become clear showcases for the benefits of using cloud services to positively impact research outcomes.
 
-{{< localtextbutton "Read more" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
+{{< localtextbutton "Get funding" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
