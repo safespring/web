@@ -12,6 +12,7 @@ Language: "En"
 intro: "The Open Clouds for Research Environments project (OCRE), aims to accelerate cloud adoption in the European research community."
 aliases:
     - /ocre/
+    - /OCRE/
 logobanner: "yes"
 ---
 
