@@ -14,6 +14,14 @@ aliases:
     - /ocre/
     - /OCRE/
 logobanner: "yes"
+sidebarwhitepaper: "yes"
+saas: "y"
+sidebarsection: "White Paper"
+sidebarimage: "safespring_card_02.jpg"
+sidebartitle: "Annulment of Privacy Shield by the European Court of Justice"
+sidebartext: "Read about conditions and recommendations for the public sector and its suppliers"
+sidebardate: "Data privacy"
+form: "https://pages.upsales.com/9549uf36ac6805f3f44a8bc545fafb8b8005e-frame"
 ---
 
 {{< ingress >}}

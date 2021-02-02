@@ -1,0 +1,23 @@
+<div class="accordion-box">
+<button class="accordion">{{ .Get "title" }}</button>
+<div class="panel content-body">
+{{ .Inner }}
+<div class="pb-3"></div>
+</div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active-utbildning");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>

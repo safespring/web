@@ -91,7 +91,7 @@
 
     <div class="content-body">
       <h2 class="content-heading">Senaste inläggen</h2>
-      {{ range first 5 (where .Site.Pages "Type" "blogg") }}
+      {{ range first 5 (where .Site.RegularPages "Type" "blogg") }}
         <li style="list-style: none;"><a href="{{.URL}}">{{ .Title }}</a></li>
           <br>
       {{ end }}
