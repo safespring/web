@@ -1,4 +1,29 @@
-<div class="ch-sidebar shadow-1" style="float:left">
+{{ if .Params.saas }}
+<div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 1;position: sticky;top: -206px;height: fit-content;">
+<div class="content-container">
+  <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
+      <div class="d-block w-full"><img src="/img/saas/cards/{{ .Params.sidebarimage }}" alt="{{ .Params.sidebartitle }}"></div>
+<div class="px-2 py-2">
+  <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
+    {{ .Params.sidebarsection }}
+  </div>
+  <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
+      {{ if .Params.sidebardate }}|{{ else }} {{ end }}
+  </div>
+  <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
+    {{ if .Params.sidebardate }}{{ .Params.sidebardate }}{{ else }} {{ end }}
+  </div>
+  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+    {{ .Params.sidebartitle }}
+  </h1>
+  <p class="mb-1">
+    {{ .Params.sidebartext }}
+  </p><br>
+  {{ if .Params.sidebarwhitepaper }}<iframe src="{{ .Params.form }}" width="250" height="300" style="border:0"></iframe>{{ else }}
+  <a href="{{ .Params.sidebarlink }}" class="button">{{ .Params.sidebarknapp }}</a>
+  {{ end }}
+</div>
+{{ else }}<div class="ch-sidebar shadow-1" style="float:left">
   <div>
     <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
   </div>
@@ -18,3 +43,4 @@
       <li class="content-body"><a target="_blank" href="https://docs.safespring.com/">&gt; Documentation</a></li>
   </div>
 </div>
+{{ end }}
