@@ -2051,6 +2051,7 @@ text-align: center;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	float: left;
 	flex-direction: column;
 	justify-content: flex-start
 }
