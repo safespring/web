@@ -25,7 +25,7 @@ form: "https://pages.upsales.com/9549uf36ac6805f3f44a8bc545fafb8b8005e-frame"
 ---
 
 {{< ingress >}}
-We at Safespring have a long history of delivering cloud infrastructure services to the research and education market. Our platform enables open standards, GDPR compliance and is letting you maintain data souveregity.{{</ ingress >}}
+We at Safespring have a long history of delivering cloud infrastructure services to the research and education market. Our platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty.{{</ ingress >}}
 
 Safespring’s data centers are directly connected to the NREN Network in order to give you the best performance, without data transfer costs.
 
