@@ -19,9 +19,9 @@
   <p class="mb-1">
     {{ .Params.sidebartext }}
   </p><br>
-  {{ if .Params.sidebarwhitepaper }}<iframe src="{{ .Params.form }}" width="250" height="300" style="border:0"></iframe>{{ else }}
-  <a href="{{ .Params.sidebarlink }}" class="button">{{ .Params.sidebarknapp }}</a>
-  {{ end }}
+  {{ if .Params.sidebarwhitepaper }}{{ if .Params.iframe }}<iframe src="{{ .Params.form }}" width="250" height="300" style="border:0"></iframe>{{ else }}
+  <a href="{{ .Params.sidebarlink }}" class="button" target="_blank">{{ .Params.sidebarknapp }}</a>
+  {{ end }}{{ end }}
 </div>
 {{ else }}<div class="ch-sidebar shadow-1" style="float:left">
   <div>
