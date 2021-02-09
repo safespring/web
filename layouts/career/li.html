@@ -14,7 +14,10 @@
     <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
       {{ .Title }}
     </h1>
-    <p class="mb-1">
+    <p class="mb-1 small">
+      <i class="fas fa-location-arrow" style="margin: 7px 15px 0 0"></i>{{ .Params.location }}<br>
+      <i class="fas fa-users" style="margin: 7px 10px 0 0"></i>{{ .Params.team }}<br>
+      <i class="fas fa-history" style="margin: 7px 15px 0 0"></i>{{ .Params.duration }}
     </p>
   </div>
   <a href="{{ .Permalink }}" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif">
