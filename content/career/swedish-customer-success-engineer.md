@@ -5,8 +5,8 @@ Location: "Sweden - Remote"
 Duration: "Full time"
 draft: false
 date: "2021-02-05"
-sidebarlinkurl: "https://www.linkedin.com/jobs/view/274841796/"
-sidebarlinkname: "Apply now"
+sidebarlinkurl: "#down"
+sidebarlinkname: "Register interest"
 sidebarlinkicon: "fa-external-link-alt"
 ---
 
@@ -66,4 +66,7 @@ We try to gather the team approximately one time each quarter, usually somewhere
 
 Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including local rules for working hours, vacation, wellness benefits and market salary.
 
-{{% button %}}
+
+<div id="down">
+<iframe src="https://pages.upsales.com/9549u1fe5e44e386c42089fc3aeacc8456b8b-frame" width="310" height="825" style="border:0"></iframe>
+</div>
