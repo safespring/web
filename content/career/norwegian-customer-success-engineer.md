@@ -8,6 +8,8 @@ date: "2021-02-05"
 sidebarlinkurl: "#down"
 sidebarlinkname: "Register interest"
 sidebarlinkicon: "fa-external-link-alt"
+language: "En"
+socialmedia: "/socialmedia/safespring-work.jpg"
 ---
 
 ## Job description
@@ -68,5 +70,5 @@ Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies
 
 
 <div id="down">
-<iframe src="https://pages.upsales.com/9549u1fe5e44e386c42089fc3aeacc8456b8b-frame" width="310" height="825" style="border:0"></iframe>
+<iframe src="https://pages.upsales.com/9549u1fe5e44e386c42089fc3aeacc8456b8b-frame" width="310" height="900" style="border:0"></iframe>
 </div>
