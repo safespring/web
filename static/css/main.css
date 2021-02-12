@@ -981,6 +981,7 @@ label.switch-label {
 		grid-column: 2 / span 8;
 		bottom: 15vh;
 	}
+
 }
 .content-body-index {
 	font: var(--normal-weight) 15px var(--mon-font);
@@ -4078,3 +4079,32 @@ h1 {
 }
 
 /* END Photo roll2 */
+
+/* card horisontal */
+
+.blog-card {
+
+}
+
+.post-image {
+	float: left;
+	width: 30%;
+}
+
+.article-details {
+}
+
+.post-category {
+
+}
+.post-title {
+
+}
+.post-description {
+
+}
+.post-c2a {
+
+}
+
+/* END card horisontal */
