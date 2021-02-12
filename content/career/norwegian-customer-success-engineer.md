@@ -10,6 +10,7 @@ sidebarlinkname: "Register interest"
 sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
+Language: "En"
 ---
 
 ## Job description

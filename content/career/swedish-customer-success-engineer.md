@@ -9,6 +9,7 @@ sidebarlinkurl: "#down"
 sidebarlinkname: "Register interest"
 sidebarlinkicon: "fa-external-link-alt"
 socialmedia: "/socialmedia/safespring-work.jpg"
+Language: "En"
 ---
 
 ## Job description
