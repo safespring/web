@@ -32,7 +32,7 @@ Safespring’s data centers are directly connected to the NREN Network in order 
 
 We are delighted to have qualified for this framework agreement that let us support the research and education community with our modern, API based services that support federated login to enable single sign-on. Safespring’s services are trusted by more than 60 universities, institutions and research platforms and we’re hoping to be part of your digital future as well. Welcome to make a first contact!
 
-{{< 2calltoaction "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" "PRICE CALCULATOR" "/pricelist/EUR/safespring-price-list_2020-09-23.xlsx" >}}
+{{< 2calltoaction "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" "PRICE CALCULATOR" "/pricelist/EUR/safespring-price-list-eur-2021-01-19.xlsx" >}}
 <br><br>
 
 ### OCRE Cloud Funding for Research

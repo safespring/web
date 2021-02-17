@@ -1,12 +1,12 @@
 ---
-Title: "Norwegian Customer Success Engineer"
+Title: "Cloud Engineer - Customer Success Team"
 Team: "Customer success team"
-Location: "Norway - Remote"
+Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2021-02-05"
 sidebarlinkurl: "#down"
-sidebarlinkname: "Register interest"
+sidebarlinkname: "Apply now"
 sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
@@ -69,7 +69,7 @@ We try to gather the team approximately one time each quarter, usually somewhere
 
 Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including local rules for working hours, vacation, wellness benefits and market salary.
 
+## How to apply
+To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
 
-<div id="down">
-<iframe src="https://pages.upsales.com/9549u1fe5e44e386c42089fc3aeacc8456b8b-frame" width="310" height="900" style="border:0"></iframe>
-</div>
+{{% localbutton "upload application" "https://nextcloud.safespring.com/index.php/s/TS7m4fC9sxBx6En" %}}
