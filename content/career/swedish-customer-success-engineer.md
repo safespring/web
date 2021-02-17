@@ -3,7 +3,7 @@ Title: "Swedish Customer Success Engineer"
 Team: "Customer success team"
 Location: "Sweden - Remote"
 Duration: "Full time"
-draft: false
+draft: true
 date: "2021-02-05"
 sidebarlinkurl: "#down"
 sidebarlinkname: "Register interest"
@@ -12,7 +12,7 @@ socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 ---
 
-## Job description
+## Job description 
 
 Safespring is expanding, and we are looking for engineers who want to join a new team with a mission to create the best possible customer experience.
 
