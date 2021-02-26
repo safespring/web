@@ -61,7 +61,7 @@ For the right person we are happy to offer an interesting roll, good salary and 
 ## How to apply
 You're welcome to apply contacting Safespring directly or through LinkedIn. If you have any questions don't hesitate to contact Mikael Schütt, VP at Safespring.
 
-{{< 2calltoaction "Apply on LinkedIn" "#" "Send email to Mikael" "mailto:mikael.schutt@safespring.se" >}}
+{{< 2calltoaction "Apply on LinkedIn" "https://www.linkedin.com/jobs/view/2427471416/?refId=p1QRACgI5RVRBWS72znboQ%3D%3D&trackingId=tjaJpzWhRyH8qYtafCzOpQ%3D%3D" "Send email to Mikael" "mailto:mikael.schutt@safespring.se" >}}
 
 ## About Safespring
 
