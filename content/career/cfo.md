@@ -71,4 +71,6 @@ From our professional data centers in Sweden and Norway our delivery of Infrastr
 
 Safespring is now entering into a next phase of rapid expansion in Scandinavia and other targeted European markets. We have an ambitious 5-year plan in place to secure our position in the cloud service provider market. Our further expansion requires a rapid increase in several activities within the company. To support the expansion, we’re therefore looking for a skilled and experienced CFO to join the team.
 
+## For more information
+
 {{< contact picture="/img/kontakt/mikael-schutt.jpg" title="Chairman" name="Mikael Schütt" phone="+46730935070" email="mikael.schutt@safespring.se" >}}
