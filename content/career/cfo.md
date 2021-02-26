@@ -51,7 +51,9 @@ You will be an active and central function of the management group carrying out 
 -	High ambition and business orientation
 
 <div id="down"></div>
+
 ### The opportunity
+
 Now is the perfect time for an ambitious CFO to join Safespring and take part of the exciting and challenging path for the next coming years.
 
 For the right person we are happy to offer an interesting roll, good salary and a position in the strongest team in our market. we also want to offer you an opportunity to invest with us in the company.
