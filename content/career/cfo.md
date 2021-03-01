@@ -1,7 +1,7 @@
 ---
 Title: "Chief Financial Officer (CFO)"
 Team: "Management"
-Location: "Sweden - Solna or Remote"
+Location: "Sweden - Solna, Stockholm"
 Duration: "Full time"
 draft: false
 date: "2021-02-26"
@@ -77,11 +77,12 @@ You're welcome to apply contacting Safespring directly or through LinkedIn. If y
 
 ## About Safespring
 
-Safespring is a Nordic company delivering EU compliant infrastructure as a Service, based on open-source software. Our Services enables customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency levels and retaining data sovereignty.
+Safespring started developing a modern cloud platform in 2014. Since the initial market launch 2016, Safespring has developed a strong hold within its market verticals in Sweden and Norway.
 
-From our professional data centers in Sweden and Norway our delivery of Infrastructure-as-a-Service include Safespring Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through our API or portal. Our value proposition includes open standards, data privacy and compliance to European laws and regulations. Our customers include some of the largest research and education organizations, government authorities and Software-as-a-Service companies in Sweden and Norway.
+From our professional data centers in Sweden and Norway and from customer premises data center (so called private clouds) our delivery of Infrastructure-as-a-Service include Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through API or our portal. Our value proposition includes open standards, privacy and compliance to local laws.
 
-Safespring is now entering into a next phase of rapid expansion in Scandinavia and other targeted European markets. We have an ambitious 5-year plan in place to secure our position in the cloud service provider market. Our further expansion requires a rapid increase in several activities within the company. To support the expansion, we’re therefore looking for a skilled and experienced CFO to join the team.
+Our customers include some of the largest research and education organizations, government authorities and Software-as-a-service companies in Sweden and Norway. Safespring holds framework agreements, directly or through partners, with [Géant](/ocre) (including SUNET, Uninett and NORDUnet), SKR and Kammarkollegiet, to mention the most important ones.
+
 
 ## For more information
 
