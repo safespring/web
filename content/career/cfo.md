@@ -12,43 +12,53 @@ socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 ---
 
-## Job description
-We are looking for a person who is motivated by being a part of a dynamic environment in rapid development and change. In your roll as CFO you will be responsible of further developing our financial function to support our business and growth in the best way.
+{{< ingress >}}
+Safespring is now entering a new phase of rapid expansion in Scandinavia and other targeted European markets.
+{{</ ingress >}}
 
-You will be an active and central member of the management group. The reporting line is to the CEO. The roll will be located in Solna, Sweden.
+To support the expansion, we’re looking for a skilled and experienced CFO to join the team. We have an ambitious 5-year plan in place to secure our position in the cloud service provider market. Our further expansion requires a rapid increase in several activities within the company.
+
+Safespring is a Nordic company delivering EU-compliant Infrastructure-as-a-Service, based on Open-Source software. Our Compute and Storage services enable customers to maintain data sovereignty while innovating quickly, reducing time to market and removing technical constraints but still increasing efficiency levels.
+
+{{< localtextbutton "Learn more" "#info">}}
+
+## Job description
+We are looking for a person who is motivated by being a part of a dynamic environment in rapid development and change. In your roll as CFO, you will be responsible for further developing our financial function to support our business and growth in the best way.
+
+You will be an active and central member of the management group. The reporting line is to the CEO and the board. The roll will be located in Solna, Sweden with the flexibility to work remote from home.
 
 ### Responsibilities
-The responsibilities that come with the roll as CFO at Safespring include:
+Responsibilities that come with the roll as CFO at Safespring include:
 
--	Provide leadership, direction and management of the finance and accounting team
--	Provide strategic recommendations to the CEO and members of the executive management team
--	Establishing and developing relations with senior management and external partners and stakeholders
--	Accounting, cost control and group consolidation
--	Data analysis, forecasting and cash management
--	Strategic planning, financial planning, budgeting and follow up
--	Compliance, liabilities management and responsibilities acting as a liaison towards various parties
--	Risk management, contracts and other compliance
--	Ensure quality control (ISO), establish and document internal processes and accounting policies
+- Provide leadership, direction and management of the finance and accounting team
+- Provide strategic recommendations to the CEO and members of the executive management team
+- Establishing and developing relations with senior management and external partners and stakeholders
+- Accounting, cost control and group consolidation
+- Data analysis, forecasting and cash management
+- Strategic planning, financial planning, budgeting and follow up
+- Compliance, liabilities management and responsibilities acting as a liaison towards various parties
+- Risk management, contracts and other compliance
+- Ensure quality control (ISO), establish and document internal processes and accounting policies
 
 ### Tasks
 You will be an active and central function of the management group carrying out a number of tasks including:
 
--	Establish and execute on development plans to strive towards operational excellence.
--	Strategically establish relevant internal processes and secure quality in professionalism in the organization
--	Build an effective and high-quality finance department fit for execution on all related tasks coordinated for the group
--	Develop financial models enabling control and monitoring of margins and profits per service delivered from our technical platform. Analyze potential and development per service. 	
--	Manage and follow up on the company’s performance related to Compliance
--	Ensure quality control in the company (ISO)
+- Establish and execute on development plans to strive towards operational excellence.
+- Strategically establish relevant internal processes and secure quality in professionalism in the organization
+- Build an effective and high-quality finance department fit for execution on all related tasks coordinated for the group
+- Develop financial models enabling control and monitoring of margins and profits per service delivered from our technical platform. Analyze potential and development per service. 	
+- Manage and follow up on the company’s performance related to Compliance
+- Ensure quality control in the company (ISO)
 
 ### Requirements
 
--	Proven experience as a CFO or Financial Controller
--	5+ years of overall combined accounting and finance experience
--	Experience creating financial statements
--	Experience with general ledger functions, group consolidation and the month-end/year end close processes
--	Master’s degree in Finance/Accounting/Business administration
--	Team player with a can-do mentality
--	High ambition and business orientation
+- Proven experience as a CFO or Financial Controller
+- 5+ years of overall combined accounting and finance experience
+- Experience creating financial statements
+- Experience with general ledger functions, group consolidation and the month-end/year end close processes
+- Master’s degree in Finance/Accounting/Business administration
+- Team player with a can-do mentality
+- High ambition and business orientation
 
 <div id="down"></div>
 
@@ -58,14 +68,16 @@ Now is the perfect time for an ambitious CFO to join Safespring and take part of
 
 For the right person we are happy to offer an interesting roll, good salary and a position in the strongest team in our market. we also want to offer you an opportunity to invest with us in the company.
 
+<div id="info"></div>
+
 ## How to apply
 You're welcome to apply contacting Safespring directly or through LinkedIn. If you have any questions don't hesitate to contact Mikael Schütt, VP at Safespring.
 
-{{< 2calltoaction "Apply on LinkedIn" "https://www.linkedin.com/jobs/view/2427471416/?refId=p1QRACgI5RVRBWS72znboQ%3D%3D&trackingId=tjaJpzWhRyH8qYtafCzOpQ%3D%3D" "Send email to Mikael" "mailto:mikael.schutt@safespring.se" >}}
+{{< 2calltoaction "Apply on LinkedIn" "https://www.linkedin.com/jobs/view/2427471416/?refId=p1QRACgI5RVRBWS72znboQ%3D%3D&trackingId=tjaJpzWhRyH8qYtafCzOpQ%3D%3D" "Contact Mikael Schütt" "mailto:mikael.schutt@safespring.se" >}}
 
 ## About Safespring
 
-Safespring is a Nordic startup delivering EU compliant infrastructure as a Service, based on open-source software. Our Services enables customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency levels and retaining data sovereignty.
+Safespring is a Nordic company delivering EU compliant infrastructure as a Service, based on open-source software. Our Services enables customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency levels and retaining data sovereignty.
 
 From our professional data centers in Sweden and Norway our delivery of Infrastructure-as-a-Service include Safespring Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through our API or portal. Our value proposition includes open standards, data privacy and compliance to European laws and regulations. Our customers include some of the largest research and education organizations, government authorities and Software-as-a-Service companies in Sweden and Norway.
 
