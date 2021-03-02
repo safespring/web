@@ -1235,7 +1235,7 @@ text-align: center;
 		background-color: #FFF;
 		grid-column: 7 / span 4;
 		margin: 5%;
-		padding: 15%;
+		padding: 10% 15% 10% 15%;
 		border-radius: 10px;
 	}
 	.event-sidebar {
