@@ -20,6 +20,17 @@
   </div>
 
   <!-- SIDEBAR -->
+  {{ if $.Params.toc }}
+  <div class="toc">
+  <div class="ch-sidebar shadow-1">
+    <div>
+      <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+    </div>
+    <div class="content-body">
+      <h2>{{ .Params.toc }}</h2>
+      {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+    </div>
+  {{ else }}
   <div class="ch-sidebar shadow-1">
     <div>
       <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
@@ -44,8 +55,8 @@
     <li class="content-body"><a href="/support">&gt; Support</a></li>
 </div>
   </div>
-
   </div>
+  {{ end }}
 </main>
 
 <!-- FOOTER -->

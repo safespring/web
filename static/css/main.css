@@ -65,6 +65,34 @@ li {
 	line-height: 1.2;
 }
 
+.toc {
+	margin-top: 10%;
+	display: grid;grid-column: 7 / span 4;
+	position: sticky;
+	top: 70px;
+	height: fit-content;
+	max-height: 90vh;
+
+	overflow: scroll;
+}
+#TableOfContents ul>li {
+	list-style: none;
+}
+
+#TableOfContents ul>li>ul>li>a {
+	font: var(--hind-light-weight) 15px var(--mon-font);
+	color: var(--alt-color);
+}
+
+#TableOfContents ul>li>ul>li {
+	margin-left: 15px;
+}
+
+#TableOfContents ul>li>a {
+	font: var(--hind-light-weight) 16px var(--hind-font);
+	color: var(--clear-blue-color);
+}
+
 p, ol {
 	font: var(--hind-light-weight) 17px var(--mon-font);
 	color: var(--alt-color);
@@ -1318,7 +1346,7 @@ text-align: center;
 
 .ch-sidebar .logo {
 	padding: 0 0 15px;
-	width: 95px
+	width: 65px
 }
 
 .ch-sidebar a {
