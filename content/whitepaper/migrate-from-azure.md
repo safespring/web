@@ -4,7 +4,7 @@ date: "2020-09-04"
 draft: false
 author: "Amelia Andersdotter"
 dokumentnamn: ""
-socialmedia: "/blogg/socialmedia/safespring_social_37.jpg"
+socialmedia: "/blogg/socialmedia/safespring_social_37.gif"
 intro: "Detta dokument sammanställer de steg som bör tas för att migrera från Azure Kubernetes Service."
 sidebarlinkname: "Ladda ner PDF"
 sidebarlinkicon: "fa-file-download"
