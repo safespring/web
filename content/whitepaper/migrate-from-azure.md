@@ -121,6 +121,10 @@ Det är också viktigt att inventera om de egenutvecklade systemen har beroenden
 ### Tjänster som ska ersättas
 Det finns många inbyggda system som har en motsvarighet byggd med öppen källkod. På sida 10 finns en samling av circa 20 stycken. I det här steget sätts också en lista på vilka tester som ska genomföras för att definiera vad som är en lyckad migrering.
 
+### Tjänster i Azure och deras motsvarighet som Open source
+
+{{< aks-alternatives >}}
+
 ### Planering och rangordning
 Efter en genomförd beroendeanalys kan planering göras av hur systemen ska migreras.  Ofta kommer migreringen innefatta någon form av servicefönster då tjänsterna är nere så det är viktigt att planera allt som ska göras och i vilken ordning. Ingångsvärden till det här steget kommer också från test- och säkerställandefasen.
 

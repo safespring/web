@@ -66,15 +66,14 @@ li {
 }
 
 .toc {
-	margin-top: 10%;
 	display: grid;grid-column: 7 / span 4;
 	position: sticky;
 	top: 70px;
 	height: fit-content;
 	max-height: 90vh;
-
 	overflow: scroll;
 }
+
 #TableOfContents ul>li {
 	list-style: none;
 }
@@ -551,6 +550,10 @@ label.switch-label {
 		grid-column: 1;
 		min-width: 150px;
 		margin-left: 16px;
+	}
+	.ch-sidebar-logo {
+		padding: 0 0 15px;
+		max-width: 65px !important;
 	}
 	.menu-item {
 		padding: 10px;
@@ -1275,6 +1278,17 @@ text-align: center;
 		grid-column: 3;
 		min-width: 150px;
 	}
+
+	.ch-sidebar-logo {
+		padding: 0 0 15px;
+		max-width: 65px !important;
+	}
+
+	.toc {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
 	.ch-content {
 		grid-column: 3 / span 4;
 	}
@@ -1344,9 +1358,9 @@ text-align: center;
 	padding: 55px 0 0
 }
 
-.ch-sidebar .logo {
+.ch-sidebar-logo {
 	padding: 0 0 15px;
-	width: 65px
+	max-width: 65px !important;
 }
 
 .ch-sidebar a {
@@ -3222,6 +3236,25 @@ h1 {
 	}
 }
 
+.container-table-wp {
+ display: grid;
+ grid-column: 1 / span 7;
+}
+
+@media screen and (max-width: 1600px) {
+	.container-table-wp {
+	 display: grid;
+	 grid-column: 1 / span 8;
+	}
+}
+@media screen and (max-width: 900px) {
+	.container-table-wp {
+	 display: grid;
+	 grid-column: span 10;
+	 margin: 0 16px 0 16px
+	}
+}
+
 .price-table {
   border-radius: 5px;
   overflow: hidden;
@@ -3318,26 +3351,27 @@ h1 {
 	background: #195F8C;
   line-height: 1.2;
   font-weight: unset !important;
-
   padding-top: 21px;
   padding-bottom: 17px;
 }
 
 .row .cell:nth-child(1) {
-  width: 450px;
+  width: 150px;
   padding-left: 40px;
 }
 
 .row .cell:nth-child(2) {
   width: 150px;
+	padding-right: 10px;
 }
 
 .row .cell:nth-child(3) {
   width: 150px;
+	margin-right: 10px;
 }
 
 .row .cell:nth-child(4) {
-  width: 150px;
+  width: 80px;
 }
 
 .row .cell:nth-child(5) {
