@@ -121,9 +121,10 @@ Det är också viktigt att inventera om de egenutvecklade systemen har beroenden
 ### Tjänster som ska ersättas
 Det finns många inbyggda system som har en motsvarighet byggd med öppen källkod. På sida 10 finns en samling av circa 20 stycken. I det här steget sätts också en lista på vilka tester som ska genomföras för att definiera vad som är en lyckad migrering.
 
-### Tjänster i Azure och deras motsvarighet som Open source
+### Tjänster i Azure som Open Source
+Vi har samlat de vanligaste tjänsterna hos Azure Kubernetes Service och listat deras motsvarighet som Open Source. Se hela listan i slutet av den här texten. Du kan enkelt skrolla ner genom att klicka på knappen nedan.
 
-{{< aks-alternatives >}}
+{{< localbutton "Se listan" "#tjänster-i-azure-och-deras-motsvarighet-som-open-source" >}}
 
 ### Planering och rangordning
 Efter en genomförd beroendeanalys kan planering göras av hur systemen ska migreras.  Ofta kommer migreringen innefatta någon form av servicefönster då tjänsterna är nere så det är viktigt att planera allt som ska göras och i vilken ordning. Ingångsvärden till det här steget kommer också från test- och säkerställandefasen.
@@ -208,3 +209,7 @@ I detta dokument har de steg en organisation behöver ta sammanställts för att
 En migrationsplan innehåller med nödvändighet en inventeringsfas, upptäckandet av beroenden och hur dessa kan bytas ut, planering av arbetet och tester som säkerställer funktionalitet. Därefter kan migreringen inledas och verifieras med hjälp av de kravställande testerna. Kontinuerlig dokumentation och uppföljning gör att viktiga lärdomar inte går förlorade.
 
 När migreringen väl är genomförd väntar systemadministration och övervakning i en ny miljö. Verktygen för detta har också presenterats i dokumentet och även hur de tillsammans verkar för att ge en helhetslösning med fokus på säkerhet och smidiga agila utvecklingsprocesser.
+
+## AKS motsvarighet som Open source
+
+{{< aks-alternatives >}}

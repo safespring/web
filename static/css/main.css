@@ -328,12 +328,12 @@ blockquote p {
 	text-transform: uppercase;
 }*/
 
-#button:hover {
+/*#button:hover {
 	box-shadow: var(--tran-shadow);
 	transition: all 0.4s ease;
 	transform: translateY(-1px);
 	color: var(--text-color) !important;
-}
+}*/
 
 .button {
 	background-color: var(--button-color);
@@ -1401,6 +1401,10 @@ text-align: center;
 
 .kontakt-sidebar h2 {
 	padding: 0px;
+}
+
+.kontakt-sidebar .button {
+	color: var(--text-color)
 }
 
 #find-more {
