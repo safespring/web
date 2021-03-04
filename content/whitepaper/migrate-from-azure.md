@@ -124,7 +124,7 @@ Det finns många inbyggda system som har en motsvarighet byggd med öppen källk
 ### Tjänster i Azure som Open Source
 Vi har samlat de vanligaste tjänsterna hos Azure Kubernetes Service och listat deras motsvarighet som Open Source. Se hela listan i slutet av den här texten. Du kan enkelt skrolla ner genom att klicka på knappen nedan.
 
-{{< localbutton "Se listan" "#tjänster-i-azure-och-deras-motsvarighet-som-open-source" >}}
+{{< localbutton "Se listan" "#aks-motsvarighet-som-open-source" >}}
 
 ### Planering och rangordning
 Efter en genomförd beroendeanalys kan planering göras av hur systemen ska migreras.  Ofta kommer migreringen innefatta någon form av servicefönster då tjänsterna är nere så det är viktigt att planera allt som ska göras och i vilken ordning. Ingångsvärden till det här steget kommer också från test- och säkerställandefasen.
