@@ -1,0 +1,36 @@
+{{ partial "head.html" . }}
+<body>
+  <!-- Google Tag Manager -->
+  {{ partial "g-tag-manager.html" . }}
+
+  <!-- NAVBAR -->
+  {{ partial "en-header.html" . }}
+
+  <!-- HEADING -->
+  <div class="heading-sub" style="background: url(/img/blogg/background/safespring_background_0.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+    <div class="heading-content">
+      <h1>Safespring White Papers</h1>
+      <p>Safespring's whitepapers aim to spread knowledge and interest in data security and cloud computing.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-chalmers">
+    <!-- Main  -->
+      <div class="listpage">
+        {{ range .Data.Pages.GroupByDate "2006" }}
+          <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
+          {{ range where .Pages ".Params.dontshow" "!=" "yes" }}
+            {{ .Render "whitepapercard"}}
+            {{ end }}
+          {{ end }}
+        </div>
+        </div>
+      </div>
+    </div>
+
+  {{ partial "en-side-bar.html" . }}
+
+  </main>
+  <!-- FOOTER -->
+  {{ partial "en-footer.html" . }}
