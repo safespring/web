@@ -13,8 +13,6 @@ card: "safespring_card_37.jpg"
 eventbild: "safespring_background_37.jpg"
 socialmediabild: "safespring_social_37.gif"
 toc: "Innehållsförteckning"
-aliases:
-    - /schrems/
 ---
 
 
