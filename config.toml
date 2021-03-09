@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "sv-SE"
-title = "Svenska molntjänster"
+title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
 copyright = "2021 Safespring"
 
@@ -65,3 +65,6 @@ SectionPagesMenu = "main"
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[blackfriday]
+fractions = false

@@ -18,3 +18,5 @@ Remote med tillgång till kontor i Stockholm eller Oslo.
 sdfkljsd flksdjf sldkjf f.
 
 {{% /accordion %}}
+
+{{< accordion-script >}}
