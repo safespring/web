@@ -1132,6 +1132,45 @@ label.switch-label {
 	margin-left: -1em;
 }
 
+.content-body-index ul {
+	list-style-type: none;
+	font: var(--hind-light-weight) 17px var(--mon-font);
+	color: var(--alt-color);
+	line-height: 1;
+	list-style-position: outside;
+}
+.content-body-index ul li {
+		margin-bottom: 10px;
+}
+
+.content-body-index ul li::before {
+  content: "\2022";
+  color: var(--clear-blue-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.content-body-index ul li > ul {
+	margin: 3px 0 15px 0;
+}
+
+.content-body-index ul li > ul li {
+	font-style: italic;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+
+.content-body-index ul li > ul li::before {
+  content: "-";
+  color: var(--link-color);
+  font-weight: bold;
+  display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
 .background-gray {
 	padding: 5% 0 5% 0;
 	background: rgb(235,241,245);
