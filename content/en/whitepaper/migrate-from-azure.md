@@ -22,7 +22,7 @@ language: "En"
 This white paper summarises the steps that need to be taken to migrate from Azure Kubernetes Service.
 {{< /ingress >}}
 
-There are many reasons for such a migration, including adhering to Swedish and European legislation for GDPR compliance, access to expert support in Swedish, and the secure roosting of data in Sweden. Another reason is the emphasis on security in Compliant Kubernetes.
+There are many reasons for such a migration, including adhering to Swedish and European legislation for GDPR compliance, access to expert support in Swedish, and the secure storage of data in Sweden. Another reason is the emphasis on security in Compliant Kubernetes.
 
 A migration plan contains the necessary inventory phase, the identification of dependencies and how these can be replaced, work planning, and tests that ensure functionality. Migration can then commence and is verified by way of the requisite tests. Ongoing documentation and follow-ups mean that everything that is learnt along the way is retained for future reference.
 
