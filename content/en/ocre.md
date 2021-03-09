@@ -21,8 +21,8 @@ sidebarimage: "safespring_card_02.jpg"
 sidebartitle: "Annulment of Privacy Shield by the European Court of Justice"
 sidebartext: "Read about conditions and recommendations for the public sector and its suppliers"
 sidebardate: "Data privacy"
-sidebarlink: "/publications/english-safespring_white-paper_schrems-ii_2021.pdf"
-sidebarknapp: "Download"
+sidebarlink: "https://www.safespring.com/en/whitepaper/schrems2/"
+sidebarknapp: "Read now"
 ---
 
 {{< ingress >}}
