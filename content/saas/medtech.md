@@ -19,7 +19,7 @@ saas: "yes"
 sidebarwhitepaper: "yes"
 ---
 
-## Behöver en SaaS tjänst för sjukvården ta hänsyn till dataskyddsförordningen och GDPR?
+## Behöver en SaaS tjänst för sjukvården ta hänsyn till dataskydds­förordningen och GDPR?
 
 {{< ingress >}}
 Mjukvarutjänster inom MedTech utvecklas snabbt och SKR:s medlemmar köper allt fler tjänster för att förbättra sin sjuk- och åldringsvård.
