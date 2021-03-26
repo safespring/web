@@ -14,8 +14,10 @@ aliases:
     - /ocre/
     - /OCRE/
 logobanner: "yes"
-sidebarwhitepaper: "yes"
+sidebarwhitepaper: "y"
 saas: "y"
+meeting: ""
+meetingurl: ""
 sidebarsection: "White Paper"
 sidebarimage: "safespring_card_02.jpg"
 sidebartitle: "Annulment of Privacy Shield by the European Court of Justice"
@@ -23,7 +25,9 @@ sidebartext: "Read about conditions and recommendations for the public sector an
 sidebardate: "Data privacy"
 sidebarlink: "https://www.safespring.com/en/whitepaper/schrems2/"
 sidebarknapp: "Read now"
+
 ---
+
 
 {{< ingress >}}
 We at Safespring have a long history of delivering cloud infrastructure services to the research and education market. Our platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty.{{</ ingress >}}
@@ -32,8 +36,7 @@ Safespring’s data centers are directly connected to the NREN Network in order 
 
 We are delighted to have qualified for this framework agreement that let us support the research and education community with our modern, API based services that support federated login to enable single sign-on. Safespring’s services are trusted by more than 60 universities, institutions and research platforms and we’re hoping to be part of your digital future as well. Welcome to make a first contact!
 
-{{< 2calltoaction "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" "PRICE CALCULATOR" "/pricelist/EUR/safespring-price-list-eur-2021-01-19.xlsx" >}}
-<br><br>
+{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Schedule a video call" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c" linktext="Book meeting" text="Hi, I'm Johan Harrysson, the COO here at Safespring. Let’s discuss your needs and how Safespring’s platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty." >}}
 
 ### OCRE Cloud Funding for Research
 

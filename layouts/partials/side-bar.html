@@ -20,6 +20,33 @@
     {{ .Params.sidebartext }}
   </p><br>
   {{ if .Params.sidebarwhitepaper }}<iframe src="https://pages.upsales.com/9549u1363271089514223bc3729e84ea32f8f-frame" width="250" height="300" style="border:0"></iframe>{{ else }}
+  <a href="{{ .Params.sidebarlink }}" id="text-button">{{ .Params.sidebarknapp }}</a>
+  {{ end }}
+</div>
+</div></div>
+{{ else if .Params.meeting }}
+<div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 1;position: sticky;top: -206px;height: fit-content;">
+<div class="content-container">
+  <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
+      <div class="d-block w-full"><img src="/img/saas/cards/{{ .Params.sidebarimage }}" alt="{{ .Params.sidebartitle }}"></div>
+<div class="px-2 py-2">
+  <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
+    {{ .Params.sidebarsection }}
+  </div>
+  <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
+      {{ if .Params.sidebardate }}|{{ else }} {{ end }}
+  </div>
+  <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
+    {{ if .Params.sidebardate }}{{ .Params.sidebardate }}{{ else }} {{ end }}
+  </div>
+  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+    {{ .Params.sidebartitle }}
+  </h1>
+  <p class="mb-1">
+    {{ .Params.sidebartext }}
+  </p><br>
+  {{ if .Params.meetingurl }}<div class="calendly-inline-widget" data-url="{{ .Params.meetingurl }}" style="min-width:320px;height:630px;"></div>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>{{ else }}
   <a href="{{ .Params.sidebarlink }}" class="button">{{ .Params.sidebarknapp }}</a>
   {{ end }}
 </div>

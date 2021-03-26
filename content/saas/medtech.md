@@ -27,6 +27,8 @@ Mjukvarutjänster inom MedTech utvecklas snabbt och SKR:s medlemmar köper allt 
 
 De flesta tjänster som vänder sig till vårdaktörer innehåller personuppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet. Personuppgifter regleras av dataskyddsförordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
 
+{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="15 min om hållbar Medtech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka kvart" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
+
 ### Kan patientdata ligga i en utländsk molntjänst?
 Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
 
@@ -45,8 +47,6 @@ I fall en svensk kommun överför personuppgifter med stöd av Privacy Shield, �
 eSamverkanprogrammet (28 myndigheter och SKR) hade i september ett webbinarium tillsammans med oss molntjänstleverantörer där de största myndigheterna i Sverige beskrev hur det här utfallet i EU-domstolen kommer påverka dem. eSam jobbar för att etablera en ny plan för molntjänster för sina medlemmar som bygger på att deras data ligger hos svenska eller europeiska företag.
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
-
-{{< localbutton "Kontakta Safespring" "/kontakt/" >}}
 
 
 ## Esams leverantörsmöte
