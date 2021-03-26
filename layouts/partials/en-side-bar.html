@@ -29,11 +29,20 @@
   </h1>
   <p class="mb-1">
     {{ .Params.sidebartext }}
-  </p><br>
+  </p>
   {{ if .Params.sidebarwhitepaper }}{{ if .Params.iframe }}<iframe src="{{ .Params.form }}" width="250" height="300" style="border:0"></iframe>{{ else }}
-  <a href="{{ .Params.sidebarlink }}" class="button" target="_blank">{{ .Params.sidebarknapp }}</a>
+  <a href="{{ .Params.sidebarlink }}" id="text-button" target="_blank">{{ .Params.sidebarknapp }}</a>
   {{ end }}{{ end }}
 </div>
+{{ else if .Params.meeting }}
+<div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 1;position: sticky;top: 60px;height: 100%;">
+<div class="content-container">
+  <div class="body my-2 p-relative bg-white shadow-1">
+  {{ if .Params.meetingurl }}<div class="calendly-inline-widget" data-url="{{ .Params.meetingurl }}" style="min-width:320px;height:1530px;"></div>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>{{ else }}
+  {{ end }}
+</div>
+</div></div>
 {{ else }}<div class="ch-sidebar shadow-1" style="float:left">
   <div>
     <img class="ch-sidebar-logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
