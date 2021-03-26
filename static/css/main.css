@@ -4189,7 +4189,7 @@ h1 {
 
 .safespring-horisontal-card-container {
 	border-radius: 5px;
-	width: 120%;
+	width: 100%;
 }
 
 .safespring-horisontal-card-row {
@@ -4206,6 +4206,12 @@ h1 {
   }
 	.safespring-horisontal-card-container {
 		width: 90%;
+}
+
+@media screen and (min-width: 900px) {
+	.safespring-horisontal-card-container {
+		width: 120% !important;
+}
 }
 
 /*@media screen and (max-width: 900px) {
