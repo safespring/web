@@ -25,7 +25,7 @@ sidebarwhitepaper: "yes"
 Mjukvarutjänster inom MedTech utvecklas snabbt och SKR:s medlemmar köper allt fler tjänster för att förbättra sin sjuk- och åldringsvård.
 {{</ ingress >}}
 
-De flesta tjänster som vänder sig till vårdaktörer innehåller personuppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet. Personuppgifter regleras av dataskyddsförordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
+De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet. Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
 
 {{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="15 min om hållbar Medtech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka kvart" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
 
