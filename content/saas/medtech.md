@@ -13,10 +13,10 @@ sidebarimage: "safespring_card_02.jpg"
 sidebartitle: "EU-domstolens ogiltigförklarande av Privacy Shield"
 sidebartext: "Läs förutsättningar och rekommendationer för offentlig sektor och deras leverantörer"
 sidebardate: "Dataskydd"
-sidebarknapp: "test"
-sidebarlink: "test"
+sidebarknapp: "Läs nu"
+sidebarlink: "/whitepaper/schrems-ii/"
 saas: "yes"
-sidebarwhitepaper: "yes"
+sidebarwhitepaper: ""
 ---
 
 ## Behöver en SaaS tjänst för sjukvården ta hänsyn till dataskydds­förordningen och GDPR?
