@@ -13,10 +13,10 @@ sidebarimage: "safespring_card_02.jpg"
 sidebartitle: "EU-domstolens ogiltigförklarande av Privacy Shield"
 sidebartext: "Läs förutsättningar och rekommendationer för offentlig sektor och deras leverantörer"
 sidebardate: "Dataskydd"
-sidebarknapp: "test"
-sidebarlink: "test"
+sidebarknapp: "Läs nu"
+sidebarlink: "/whitepaper/schrems-ii/"
 saas: "yes"
-sidebarwhitepaper: "yes"
+sidebarwhitepaper: ""
 ---
 
 ## Behöver en skolplattform för en kommunal skola ta hänsyn till dataskyddsförordningen?
@@ -26,6 +26,8 @@ Många av de skolplattformar som svenska skolor använder idag har flera funktio
 {{</ ingress >}}
 
 De flesta innehåller också personuppgifter som namn, telefonnummer, hemadresser och e-mail som behöver hanteras med stor försiktighet. Personuppgifter regleras av dataskyddsförordningen i Sverige och GDPR.
+
+{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="15 min om hållbar EdTech" link="https://calendly.com/petter-hylin/15-min-om-hallbar-edtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka kvart" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om EdTech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
 
 ### Sorterar elevers personuppgifter under GDPR?
 Svar ja, personuppgifter ska hanteras enligt dataskyddsförordningen och GDPR. Skolan är ansvarig för att personuppgifterna hanteras korrekt och lagras i en molnplattform som följer dataskyddsförordningen.
