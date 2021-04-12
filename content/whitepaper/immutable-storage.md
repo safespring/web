@@ -1,6 +1,6 @@
 ---
 title: "Veeam backup with Safespring immutable object storage"
-date: "2020-09-04"
+date: "2021-04-12"
 draft: false
 author: "Gabriel Paues"
 section: "Solution Brief"
