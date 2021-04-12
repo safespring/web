@@ -3,7 +3,7 @@ title: "Veeam backup with Safespring immutable object storage"
 date: "2020-09-04"
 draft: false
 author: "Gabriel Paues"
-section: "Solutions Brief"
+section: "Solution Brief"
 dokumentnamn: ""
 socialmedia: "/blogg/socialmedia/safespring_social_38.gif"
 intro: "With immutable objects, Safespring Storage is a great way of creating an offside backup that is secure and reliable."
