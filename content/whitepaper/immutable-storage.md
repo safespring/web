@@ -59,7 +59,7 @@ S3 organizes files in objects and buckets. A bucket may contain files and is the
 
 When that is done you create an “Object Storage Repository” in Veeam.
 
-![Make S3 bucket an immutable object.png](/img/whitepapers/Make\ S3\ bucket\ an\ immutable\ object.png )
+![Make S3 bucket an immutable object.png](/img/whitepapers/make_S3_bucket_an_immutable_object.png)
 
 In the configuration wizard, under the step Bucket, one should check the option “Make recent backups immutable for…”. Here you also configure the number of days the objects should be immutable and it is important to configure the same value that was configured on the bucket.
 
