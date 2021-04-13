@@ -1,4 +1,14 @@
-{{ if .Params.saas }}
+{{ if $.Params.toc }}
+<div class="toc">
+<div class="ch-sidebar shadow-1">
+  <div>
+    <img class="ch-sidebar-logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+  </div>
+  <div class="content-body">
+    <h2>{{ .Params.toc }}</h2>
+    {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+  </div>
+{{ else if .Params.saas }}
 <div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 1;position: sticky;top: -206px;height: fit-content;">
 <div class="content-container">
   <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
