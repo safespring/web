@@ -5,7 +5,7 @@ date: 2021-04-12T11:29:26+02:00
 draft: false
 intro: "A secure storage and collaboration solution for universities in Sweden."
 eventbild: "safespring_background_39.jpg"
-social:
+socialmedia: "safespring_social_39.gif"
 dokumentbild: "safespring_card_39.jpg"
 sidebarlinkname: ""
 sidebarlinkicon: "fa-file-download"
