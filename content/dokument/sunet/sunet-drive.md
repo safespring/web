@@ -24,7 +24,7 @@ Sunet Drive is a managed storage solution which is physically installed in the u
 
 ## Background
 
-Increased international cooperation has become one of the driving factors to influencing the success of our innovation ecosystem. With this comes an ever-increasing amount of data being collected and analyzed, and the challenge of storing and archiving the data. Scientists always find solutions to solving their problems here and now by either solving their storage needs themselves by establishing their own shadow IT in the project, or by using storage services from central IT departments. There are several problems with this local approach:
+Increased international cooperation has become one of the driving factors to influencing the success of our innovation ecosystem. With this comes an ever-increasing amount of data being collected and analyzed, and the challenge of storing and archiving the data. Scientists always find solutions by either solving their storage needs themselves by establishing their own shadow IT in the project, or by using storage services from central IT departments. There are several problems with this local approach:
 
 - Does the storage solution align with the data management requirements from the funding body?
 - How can central IT cater for flexible collaboration on the data between researchers on campus and external actors?
