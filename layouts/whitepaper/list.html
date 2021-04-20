@@ -18,15 +18,10 @@
   <main class="content-chalmers">
     <!-- Main  -->
       <div class="listpage">
-        {{ range .Data.Pages.GroupByDate "2006" }}
-          <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
-          {{ range where .Pages ".Params.dontshow" "!=" "yes" }}
+          <div class="flexcontainer" style="background: var(--text-color)";>
+            {{ range where .Pages ".Params.dontshow" "!=" "yes" }}
             {{ .Render "li"}}
             {{ end }}
-          {{ end }}
-        </div>
-        </div>
-        </div>
         </div>
         </div>
 
