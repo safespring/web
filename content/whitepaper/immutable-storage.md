@@ -1,5 +1,5 @@
 ---
-title: "Veeam backup with Safespring immutable object storage"
+title: "Safespring immutable object storage"
 date: "2021-04-12"
 draft: false
 author: "Gabriel Paues"
@@ -27,7 +27,15 @@ By using the solution described in this brief, the organization can achieve thes
 
 * A modern and complete backup solution that is easy to manage.
 * A secure off-site storage for critical backup data.
-* A cost efficent solution that meet all security requirements from a demanding organisation.
+* A cost efficient solution that meet all security requirements from a demanding organisation.
+
+<br>
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a class="button" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/petter-hylin/introduction'});return false;">Book an introduction</a>
+<!-- Calendly link widget end -->
+<br>
 
 ## The 3-2-1 rule
 
@@ -59,7 +67,7 @@ S3 organizes files in objects and buckets. A bucket may contain files and is the
 
 When that is done you create an “Object Storage Repository” in Veeam.
 
-![Make S3 bucket an immutable object.png](/img/whitepapers/make_S3_bucket_an_immutable_object.png)
+![Make S3 bucket an immutable object](/img/whitepapers/make_S3_bucket_an_immutable_object.png)
 
 In the configuration wizard, under the step Bucket, one should check the option “Make recent backups immutable for…”. Here you also configure the number of days the objects should be immutable and it is important to configure the same value that was configured on the bucket.
 

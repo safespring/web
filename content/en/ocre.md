@@ -36,7 +36,7 @@ Safespring’s data centers are directly connected to the NREN Network in order 
 
 We are delighted to have qualified for this framework agreement that let us support the research and education community with our modern, API based services that support federated login to enable single sign-on. Safespring’s services are trusted by more than 60 universities, institutions and research platforms and we’re hoping to be part of your digital future as well. Welcome to make a first contact!
 
-{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Schedule a video call" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c" linktext="Book meeting" text="Hi, I'm Johan Harrysson, the COO here at Safespring. Let’s discuss your needs and how Safespring’s platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty." >}}
+{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Schedule a video call" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c?utm_source=website" linktext="Book meeting" text="Hi, I'm Johan Harrysson, the COO here at Safespring. Let’s discuss your needs and how Safespring’s platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty." >}}
 
 ### OCRE Cloud Funding for Research
 

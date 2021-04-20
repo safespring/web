@@ -1,4 +1,4 @@
-  <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ .Section }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
+  <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}</a> | {{ .Date.Format "Jan 2, 2006" }}:</div><br>
   <h1 class="post-heading-firstpage">{{ .Title }}</h1>
 
 <!--
