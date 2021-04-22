@@ -67,7 +67,7 @@ En objektlagringstjänst med S3 kan lösa dessa problem. Genom att använda en S
 
 
 ## Exempel 3 - Prisvärda och interna kollaborationstjänster
-Det är många applikationer som har stöd för S3 som lagringsalternativ, bland annat DropBox. Många gånger krävs en högre säkerhet och då finns det flera alternativ med liknande funktioner.
+S3 erbjuder med sin enkelhet möjlighet att använda det med många olika applikationer. Det gör det möjligt att utvidga funktionaliteten i kombination med den kostnadseffektiva lagring som S3 erbjuder. Många gånger krävs en högre säkerhet och då finns det flera alternativ med liknande funktioner.
 
 ### Nextcloud
 En sådan applikation är Nextcloud som är en serverprogramvara som bygger på öppen källkod och som syftar till att sätta upp en egen privat tjänst som liknar t ex Dropbox. Gränssnittet är webbaserat, men det finns också synkroniseringklienter för både arbetsstationer som kör Windows, MacOS eller Linux och smartphones så att datat alltid är lätt att nå.
