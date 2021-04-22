@@ -2,7 +2,7 @@
 title: "Sunet Drive"
 section: "Solution Brief"
 date: 2021-04-12T11:29:26+02:00
-draft: false
+draft: true
 intro: "A secure storage and collaboration solution for universities in Sweden."
 eventbild: "safespring_background_39.jpg"
 socialmedia: "safespring_social_39.gif"
