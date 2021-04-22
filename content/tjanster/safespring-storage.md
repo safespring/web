@@ -1,11 +1,11 @@
 ---
-title: "Safespring Storage"
+title: "Safespring Storage är en objektlagringstjänst"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Safesprings molnbaserade lagring (Storage) levereras ifrån säkra datahallar och är baserad på den marknadsledande lagringsteknologin Ceph. Läs mer!"
+intro: "Safesprings molnbaserade lagring stödjer S3 och är byggt på marknadsledande lagringsteknologin Ceph."
 background: "safespring-storage.jpg"
 form: "yes"
-sidebarlinkname: "Ladda ner white paper om S3"
+sidebarlinkname: "Läs vår solution brief"
 sidebarlinkurl: "/whitepaper/objektlagring/"
 socialmedia: "safespring-storage.jpg"
 aliases:
@@ -13,19 +13,29 @@ aliases:
     - /safespring-storage/
 ---
 
-## Objektlagring är en helt internetbaserad lagring.
+{{< ingress >}}
+Är du i behov av att lagra en stor mängd tillgänglig data? Då är objektlagring en kostnadseffektiv och säker lösning.
+{{< /ingress >}}
 
-<div class="ingress"><p>Filerna kan laddas upp och ned från vår infrastruktur med klientprogramvara eller med många av de bibliotek till olika programmeringsspråk som finns skrivna.</p></div>
+Vår lagringstjänst använder {{% tooltip "S3-protokollet" %}}S3 kan användas för att lagra alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring.{{% /tooltip %}} som standard för objektlagring. Det gör att data enkelt kan laddas upp och ned från vår svenska infrastruktur, desutom utan trafikkostnad. Tjänsten är i grunden byggd på lagringsteknologin {{% tooltip "Ceph" %}}Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader.{{% /tooltip %}} vilket gör Safespring storage både flexibel och robust.  All data lagras dessutom på krypterade hårddiskar.
 
-Objektlagring är optimalt för lösningar där du kommer att behöva lagra ett stort antal filer till en låg kostnad.
+ Med immutable objects blir Safespring Storage en perfekt tjänst för modern offsite backup inom Sverige. Det gör att du kan låsa data och hindra all förändring och radering under en tidsperiod som du själv väljer. Din backup är alltså säkrad och redo när du behöver den.
 
-{{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
+<br><a class="button mb-2" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/petter-hylin/introduktion-till-safespring'});return false;"><i class="fas fa-calendar-check"></i> Boka introduktion (15 min)</a><br><br><br><br>
 
-### Säkra datahallar inom landets gränser
-Tjänsten levereras ifrån säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett svenskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
+![Safespring Storage benefits](/img/safespring-storage-key-points.svg)
+
+### Passar för lagring av känslig data
+Hanterar din organisation känslig data som personuppgifter eller skyddsvärd information? Då är Safespring storage även ett juridiskt säkert alternativ. Tjänsten levereras från säkra datahallar med mycket hög tillgänglighet. Safespring är ett svenskt bolag och våra molntjänster produceras i svenska datacenter.
 
 ### Storage som komplement
-Lagringstjänsten är en objektlagringstjänst. Safespring exponerar ett S3-gränssnitt genom vilket det går att ladda upp och ner filer. S3 är ett gränssnitt med brett stöd vilket gör att integration kan göras från kommandorad eller inifrån befintliga program eller skript. Tjänsten är optimerad för stor och billig lagringsyta och lämpar sig väl för applikationer som läser eller skriver stora datamängder, typ E-arkiv eller webbapplikationer för att publicera data. Kan antingen användas av Safespring Compute eller som fristående extern lagring för någon annan applikation.
+Safespring storage kan också vara ett bra komplement med din nuvarande lagringslösning. S3 kan användas för att lagra alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring. S3 är ett gränssnitt med brett stöd vilket gör att integration kan göras från kommandorad eller inifrån befintliga program eller skript.
 
-### Öppet gränssnitt
-Active Archive är också den tjänsten som går att kombinera med befintlig, lokal backuplösning för att lagra offsite-kopior. Med tanke på det låga priser för Active Archive så kan ni få en mycket högre trygghet till ett väldigt lågt pris.
+### Grunden i Safespring Storage är Ceph
+Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader. [Läs dokumentation.](https://docs.safespring.com/storage/generalinfo/)
+
+<br><br>
+<a href="/whitepaper/immutable-storage"><img alt="Immutable Objects Solution Brief" src="/img//blogg/socialmedia/safespring_social_38.gif"></a>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
