@@ -9,6 +9,7 @@ intro: "Denna solution brief går igenom lagringsstandarden S3 och ger dig fyra 
 card: "safespring_card_27.jpg"
 eventbild: "safespring_background_27.jpg"
 socialmediabild: "safespring_social_27.gif"
+socialmedia: "/blogg/socialmedia/safespring_social_27.gif"
 toc: "Innehållsförteckning"
 ---
 
