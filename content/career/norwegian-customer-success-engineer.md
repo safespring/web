@@ -39,7 +39,7 @@ From our professional data centers in Sweden and Norway our delivery of infrastr
 
 Our customers include some of the largest research and education organizations, government authorities and SaaS companies in Sweden and Norway. Safespring holds directly or through partners framework agreement with Géant (including SUNET, Uninett, NORDUnet), SKR, Kammarkollegiet to mention the most important ones.
 
-Safespring supports open infrastructure and open-source through memberships in open infra foundation, Nordix foundation and Gaia-X among other initiatives.
+Safespring supports open infrastructure and open-source through memberships in open infra foundation, Nordix foundation and GAIA-X among other initiatives.
 
 ### What are you going to work on?
 
@@ -74,4 +74,4 @@ Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies
 ## How to apply
 To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
 
-{{% localbutton "upload application" "https://nextcloud.safespring.com/index.php/s/TS7m4fC9sxBx6En" %}}
+{{% localbutton "upload application" "https://nextcloud.safespring.com/index.php/s/ciHKRKojcgdd9j5" %}}
