@@ -3,7 +3,7 @@ Title: "Chief Financial Officer (CFO)"
 Team: "Management"
 Location: "Sweden - Solna, Stockholm"
 Duration: "Full time"
-draft: false
+draft: true
 date: "2021-02-26"
 sidebarlinkurl: "#down"
 sidebarlinkname: "Apply now"
