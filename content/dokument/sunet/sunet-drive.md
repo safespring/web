@@ -44,6 +44,10 @@ Universities all over Europe have common needs and requirements regarding a stor
 - Data should be able to be handled from the primary data sources up to archiving of published results.
 - The solution should be based on open standards and API to prevent a vendor lock-in.
 
+### Classification
+
+All these requirements are then fit into a general model of lifecycle-managing research data, based on a combination of classification parameters: on-premise or stored in the cloud, smaller or larger files, as well as sensitivity of the data to be stored. Once these parameters have been determined, the data can be accessed either through a classical file system or modern apps that work on mobile and desktop devices, while always being able to determine where the data is stored physically. Sunet Drive then enables a seamless lifecycle management of the data during the project execution, through the data retention period, to archiving of the data.
+
 ## The solution
 
 Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers and is built on the trusted open-source projects Nextcloud, OpenStack and Ceph. It uses SAML2 federated login to tie together collaborating researchers all over the academic sector. It is built to handle data on petabyte scale and uses Sunet’s high performance NREN network for file transfers between universities.
@@ -127,6 +131,18 @@ In the middle of the picture, we see the shared components running centrally at 
 - Not in the picture is the test-environment, which is a replicate of the architecture for verification and validation of new features and upgrades.
 
 At the top of the picture, we see the users at the different institutions accessing the service by logging in through the Global Site Selector and being redirected to their university’s Nextcloud node, respectively.
+
+## Operations
+
+Most of the components of Sunet Drive are managed as code (infrastructure as code), enabling immutable infrastructure divided between stateful and stateless components. Nextcloud frontend servers are a good example for stateless components, they can easily be scaled out by adding more instances. But even the database instances, which are clustered, stateful instances, are mostly decoupled from the underlying S3-storage, containing only general information about operations on files, rather than actual research data.
+
+## Compliance
+
+Data compliance is achieved on multiple levels, incorporating processes that support, but are not limited to, processes frameworks like ISO 27001, ITIL, or the Swedish MSBFS 2020:7, which determines regulations on security measures in information systems for state authorities. This is done through a clear distinction of responsibilities of the involved parties. Users and operators gain access to their respective parts of the federated architecture, which then can be aligned with local processes.
+
+## User-perspective
+
+The perspective of an end user is as simple as it can get while using an Enterprise File Sync and Share (EFSS) solution. A user logs on through their institutional account and will be delegated to the federated node which is co-managed between Sunet/Safespring and their institution. This means for example that a user can apply for project-specific storage (an S3-bucket), which will then show as a regular folder in Nextcloud and can be synchronized using Nextcloud’s standard applications. Collaborations with other researchers can easily be established by inviting them into Sunet Drive. Once a project has finished, the properties of the S3 bucket can be changed, and the ownership of the data can be transferred. This also includes the integration of metadata for publications, e.g., through the DORIS from the Swedish National Data service (SND).
 
 
 ## Conclusion
