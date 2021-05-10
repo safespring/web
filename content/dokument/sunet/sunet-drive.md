@@ -46,7 +46,11 @@ Universities all over Europe have common needs and requirements regarding a stor
 
 ### Classification
 
-All these requirements are then fit into a general model of lifecycle-managing research data, based on a combination of classification parameters: on-premise or stored in the cloud, smaller or larger files, as well as sensitivity of the data to be stored. Once these parameters have been determined, the data can be accessed either through a classical file system or modern apps that work on mobile and desktop devices, while always being able to determine where the data is stored physically. Sunet Drive then enables a seamless lifecycle management of the data during the project execution, through the data retention period, to archiving of the data.
+All these requirements are then fit into a general model of lifecycle-managing research data, based on a combination of classification parameters: on-premise or stored in the cloud, smaller or larger files, as well as sensitivity of the data to be stored.
+
+Once these parameters have been determined, the data can be accessed either through a classical file system or modern apps that work on mobile and desktop devices, while always being able to determine where the data is stored physically. 
+
+Sunet Drive then enables a seamless lifecycle management of the data during the project execution, through the data retention period, to archiving of the data.
 
 ## The solution
 
@@ -142,7 +146,9 @@ Data compliance is achieved on multiple levels, incorporating processes that sup
 
 ## User-perspective
 
-The perspective of an end user is as simple as it can get while using an Enterprise File Sync and Share (EFSS) solution. A user logs on through their institutional account and will be delegated to the federated node which is co-managed between Sunet/Safespring and their institution. This means for example that a user can apply for project-specific storage (an S3-bucket), which will then show as a regular folder in Nextcloud and can be synchronized using Nextcloud’s standard applications. Collaborations with other researchers can easily be established by inviting them into Sunet Drive. Once a project has finished, the properties of the S3 bucket can be changed, and the ownership of the data can be transferred. This also includes the integration of metadata for publications, e.g., through the DORIS from the Swedish National Data service (SND).
+The perspective of an end user is as simple as it can get while using an Enterprise File Sync and Share (EFSS) solution. A user logs on through their institutional account and will be delegated to the federated node which is co-managed between Sunet/Safespring and their institution. This means for example that a user can apply for project-specific storage (an S3-bucket), which will then show as a regular folder in Nextcloud and can be synchronized using Nextcloud’s standard applications.
+
+Collaborations with other researchers can easily be established by inviting them into Sunet Drive. Once a project has finished, the properties of the S3 bucket can be changed, and the ownership of the data can be transferred. This also includes the integration of metadata for publications, e.g., through the DORIS from the Swedish National Data service (SND).
 
 
 ## Conclusion
