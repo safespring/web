@@ -12,6 +12,7 @@ socialmedia: "safespring-backup.jpg"
 aliases:
     - /backup/
     - /safespring-backup/
+section: "Public Cloud"
 ---
 
 <video poster="/tjanster/images/safespring_backup.jpg" width="100%" style="border-radius: 5px;" controls="true">

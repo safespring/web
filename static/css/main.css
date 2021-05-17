@@ -651,10 +651,10 @@ label.switch-label {
 	list-style-type: none;
 }
 
-.sub-menu {
-	clear: both;
-	padding: 10px 10px 5px 20px;
-	list-style-type: none;
+.sub-sub-menu a {
+	font: var(--hind-light-weight) 16px var(--hind-font) !important;
+	padding: 0 0 0 10px !important;
+
 }
 
 .sub-menu:last-child {

@@ -9,6 +9,7 @@ socialmedia: "safespring-private-cloud.jpg"
 aliases:
     - /private-cloud/
     - /tjanster/managed-private-cloud/
+section: "Private Cloud"
 ---
 <div class="ingress"><p>Våra tjänster är baserade på öppen källkod och öppna standarder med säkerhet i fokus. Automatisering och självprovisionering för att skala resursförbrukning upp och ner beroende på behov är exempel på funktionalitet som alla vill ha.</p></div>
 
