@@ -23,8 +23,8 @@ More and more industries like public sector, banking, fin-tech, RegTech, iGaming
 Handling sensitive user data and adhering to regulations like GDPR, ISO-27001 or PCI-DSS can be hard in a dynamic, container-based environment due to multiple levels of abstraction and virtualization, which are hard to translate to regulatory requirements written with physical infrastructure and single-tenancy in mind. As such, proving to security teams that containers can be as secure, if not more, than traditional VMs have for the last few years been a challenge. Furthermore, with additional moving parts, attack surfaces increase.
 
 <br><br>
-<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop">
 <img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile">
+<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop">
 <br><br>
 
 If your current environment has passed all audits, DevOps teams must make the case for containerization even louder as the current setup, even though inflexible and causing a slower software development lifecycle, is proven compliant. Aspects such as network segmentation, firewalls, role-based access control, secret handling, vulnerability (antivirus) scanning and updates are all done differently in containerized environments.
