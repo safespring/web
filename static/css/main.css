@@ -1037,6 +1037,13 @@ label.switch-label {
 }
 
 @media only screen and (max-width: 900px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+
 	.content-image {
 		order: 2;
 		grid-column: span 10;
@@ -1246,6 +1253,12 @@ text-align: center;
 }
 
 @media only screen and (min-width: 900px) {
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
 	.content-chalmers {
 		Background-color: #FAFEFE;
 		min-height: 61%;
