@@ -25,7 +25,7 @@ Handling sensitive user data and adhering to regulations like GDPR, ISO-27001 or
 <br><br>
 <img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop">
 <img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile">
-<br><br><br>
+<br><br>
 
 If your current environment has passed all audits, DevOps teams must make the case for containerization even louder as the current setup, even though inflexible and causing a slower software development lifecycle, is proven compliant. Aspects such as network segmentation, firewalls, role-based access control, secret handling, vulnerability (antivirus) scanning and updates are all done differently in containerized environments.
 
