@@ -33,6 +33,8 @@ Although historically known as hard to set up, getting a Kubernetes cluster up a
 
 In addition to monitoring the clusters 24/7 for both health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management - upgrading, testing and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
 
+{{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/tjanster/safespring-compute/" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is located in secure data centers within the EU and doesn't get effected by foreign laws like CLOUD Act or FISA 702." %}}
+
 In essence, the challenge is how to increase software agility through containerization while guaranteeing security and compliance for your business.
 
 Safespring Compliant Kubernetes (CK8s) is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security hardened configurations and open source components according to best practices. Safespring provides quarterly releases of Compliant Kubernetes - testing and hardening the components, to make sure they adhere to the strict security and regulatory requirements our customers have for their container platforms.
