@@ -3,9 +3,9 @@ title: "Sunet Drive"
 section: "Solution Brief"
 date: 2021-04-12T11:29:26+02:00
 draft: false
-intro: "A secure storage and collaboration solution for universities in Sweden."
+intro: "A GDPR compliant file sync and share solution for research and education"
 eventbild: "safespring_background_42.jpg"
-socialmedia: "safespring_social_41.gif"
+socialmedia: "safespring_social_42.gif"
 dokumentbild: "safespring_card_42.jpg"
 sidebarlinkname: "Download as PDF"
 sidebarlinkicon: "fa-file-download"
