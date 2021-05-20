@@ -6,7 +6,7 @@ draft: false
 intro: "A secure storage and collaboration solution for universities in Sweden."
 eventbild: "safespring_background_42.jpg"
 socialmedia: "safespring_social_41.gif"
-dokumentbild: "safespring_card_41.jpg"
+dokumentbild: "safespring_card_42.jpg"
 sidebarlinkname: "Download as PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring_solution-brief_sunet-drive.pdf"
