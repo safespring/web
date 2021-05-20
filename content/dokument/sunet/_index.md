@@ -5,4 +5,6 @@ draft: false
 intro: "The purpose of these documents is to clarify the security principles in Safespring Private Cloud Service delivery for Sunet call off contract project."
 dokumentbild: "safespring_card_21.jpg"
 noindex: "noindex"
+aliases:
+    - /sunet/
 ---

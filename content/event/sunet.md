@@ -17,8 +17,6 @@ knapp: ""
 english: ""
 formid: ""
 explorer: ""
-aliases:
-    - /sunet/
 ---
 
 <div class="ingress"><p>Safespring går igenom de nyheter som kommer i samband med uppgraderingen av vår plattform.</p></div>
