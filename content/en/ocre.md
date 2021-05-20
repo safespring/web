@@ -46,5 +46,14 @@ Under this 1st Cloud funding call, OCRE aims to fund the consumption of infrastr
 
 {{< localtextbutton "Get funding" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
 
+<br>
+<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img//blogg/socialmedia/safespring_social_42.gif"></a>
+<br>
+
+## Get in touch
+Safespring has offices in Sweden and in Norway with headquarters in Stockholm, Sweden.
+
+The easiest way is to contact us by phone or mail. If you have general questions, you can call us or send us an email at our info-address, but of course you are also welcome to contact any of our employees directly.
+
 {{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CEO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
 {{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}

@@ -11,6 +11,7 @@ socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
     - /safespring-storage/
+section: "Public Cloud"
 ---
 
 {{< ingress >}}

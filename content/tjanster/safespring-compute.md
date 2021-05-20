@@ -12,6 +12,7 @@ aliases:
     - /compute/
     - /safespring-compute/
 devops: ""
+section: "Public Cloud"
 ---
 
 <video poster="/tjanster/images/safespring_compute.jpg" width="100%" style="border-radius: 5px;" controls="true">

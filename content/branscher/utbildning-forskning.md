@@ -1,28 +1,32 @@
 ---
-title: "Utbildning och forskning"
+title: "Safespring är den föredragna plattformen för forskning och utbildningssektorn"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Vi har mångårig erfarenhet att arbeta med den akademiska sektorn och har mycket god förståelse för arbetssätt och utmaningar."
-background: "safespring_bilder_10.jpg"
+background: "safespring-research.jpg"
+logobanner: "yes"
+toplogo: "ocre.png"
+showthedate: false
+section: " "
 ---
 
 {{< ingress >}}
+Vi på Safespring har lång erfarenhet av att leverera molninfrastrukturtjänster till forsknings- och utbildningssektorn. Vår plattform möjliggör öppna standarder, GDPR-efterlevnad och låter dig behålla digital suveränitet.
+{{</ ingress >}}
 
-Vi har mångårig erfarenhet att arbeta med den akademiska sektorn och har mycket god förståelse för arbetssätt och utmaningar.
+Safesprings datacenter är direktanslutna till NREN-nätverket för att ge dig bästa möjliga prestanda utan dataöverföringskostnader.
 
-{{< /ingress >}}
+Vi är mycket glada över att ha kvalificerat oss för OCRE-ramavtalet. Ramavtalet låter oss stödja forsknings- och utbildningssektorn med våra moderna, API-baserade tjänster som stöder federerad inloggning för att möjliggöra enkel inloggning. Safesprings tjänster används av över 60 universitet, institutioner och forskningsplattformar och vi hoppas också kunna vara en del av din digitala framtid. Välkommen att ta kontakt med oss!
 
-Våra lösningar gör att forskning och utbildning kan dra nytta av de möjligheter som infrastruktur- och molnlösningar kan ge genom kostnadseffektivitet, flexibilitet och skalbarhet. Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör det möjligt för dig att leva upp till lagar och regler.
+{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Boka videosamtal" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c?utm_source=website" linktext="Boka tid" text="Hej, jag heter Johan Harrysson och är COO här på Safespring. Låt oss diskutera dina behov och hur Safesprings plattform möjliggör öppna standarder, GDPR-efterlevnad och låter dig behålla digital suveränitet." >}}
 
-Om ni arbetar med högre utbildning eller forskning och är ansluten till SUNET gör vårt ramavtal med Nordunet / SUNET / Uninett att du enkelt kan avropa våra tjänster, utan att göra någon separat upphandling.
+### OCRE Cloud Funding for Research
 
-### Läs mer på SUNETS webbplats
+Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagande av molntjänster som är tillgängliga via OCRE IaaS + ramavtal. Två efterföljande projektanrop planeras att öppnas i februari respektive juli 2021.
 
-- [Infrastruktur som tjänst](https://www.sunet.se/services/molnbaserade-tjanster/virtuella-servrar)
-- [Lagring som tjänst](https://www.sunet.se/services/molnbaserade-tjanster/lagring-2)
-- [Backup som tjänst](https://www.sunet.se/services/molnbaserade-tjanster/backup)
+Under detta första molnfinansieringssamtal syftar OCRE till att finansiera konsumtionen av infrastruktur-molntjänster (IaaS, PaaS, SaaS, marknadsplats) av projekt som kan bli tydliga utställningar för fördelarna med att använda molntjänster för att positivt påverka forskningsresultat.
 
+{{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
 
-Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja SUNETs molnlösning och samtidigt uppfylla lagar och regler.
-<br><br>
-<a href="/kontakt" id="text-button">Kontakta oss</a>
+{{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CEO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
+{{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}
