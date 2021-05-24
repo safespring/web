@@ -5,13 +5,13 @@
   <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <h3>{{ .Get "cardtitle" }}
     </h3>
-      <p>{{ .Get "text" }}
-      </p><br><br>
-        <!-- Calendly link widget begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <a class="button" href="" onclick="Calendly.initPopupWidget({url: '{{ .Get `link` }}'});return false;">{{ .Get "linktext" }}</a>
-        <!-- Calendly link widget end -->
-      </a>
-    </div>
-  </div>
+    <p>{{ .Get "text" }}
+    </p><br><br>
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <a class="button" href="" onclick="Calendly.initPopupWidget({url: '{{ .Get `link` }}'});return false;">{{ .Get "linktext" }}</a>
+    <!-- Calendly link widget end -->
+  </a>
+</div>
+</div>
