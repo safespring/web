@@ -1,8 +1,9 @@
 ---
-title: "Applikationsutvecklare"
-date: 2019-01-09T10:47:25+01:00
+title: "Lösningar för SaaS-bolag"
+date: 2021-01-09T10:47:25+01:00
+card: "safespring_card_2.svg"
 draft: false
-intro: "Med våra molntjänster kan du antingen producera lösningar där infrastrukturen är delad mellan många kunder, eller där det finns behov på en lösning per kund."
+intro: "Vi lockar kunder från de stora molnleverantörerna genom att erbjuda en hållbar plattform utan inlåsning."
 background: "safespring_bilder_10.jpg"
 ---
 <div class="ingress"><p>Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar. Ett område där de är särskilt starka är att producera SaaS-tjänster eftersom skalbarhet och flexibilitet är viktiga komponenter.</p></div>

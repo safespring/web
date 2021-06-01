@@ -1,6 +1,7 @@
 ---
-title: "Myndigheter"
-date: 2019-01-09T10:47:25+01:00
+title: "Safespring för myndigheter"
+date: 2021-02-09T10:47:25+01:00
+card: "safespring_card_3.svg"
 draft: false
 intro: "Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla eSams rekommendationer."
 background: "safespring_bilder_10.jpg"

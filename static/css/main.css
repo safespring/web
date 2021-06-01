@@ -695,7 +695,7 @@ label.switch-label {
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	height: 100vh;
+	height: 75vh;
 }
 
 .heading-index:before {
@@ -1182,6 +1182,10 @@ label.switch-label {
 	background: rgb(235,241,245);
 	background: linear-gradient(0deg, rgba(235,241,245,1) 0%, rgba(235,241,245,0) 100%);
 }
+.background-bright {
+	padding: 2% 0 2% 0;
+	background: #EEF2F4;
+}
 .background-gray h2{
 max-width: 100vw;
 margin: 0px;
@@ -1323,7 +1327,7 @@ text-align: center;
 	}
 	.content-container-index {
 		grid-column: 3 / span 5;
-		bottom: 15vh;
+		bottom: 10vh;
 	}
 	.logo {
 		grid-column: 3;

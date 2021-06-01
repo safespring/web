@@ -11,7 +11,7 @@
     <div class="heading-index">
       <div class="content-container-index">
         <div class="content-meta-post">
-          <img style="width: 200px; margin: 0 0 40px 0;" src="/img/1C_Safespring_Logotyp_Vit_RGB.svg">
+          <!--<img style="width: 200px; margin: 0 0 40px 0;" src="/img/1C_Safespring_Logotyp_Vit_RGB.svg">-->
         </div>
         <h1 class="post-heading-firstpage">En hållbar plattform<br>för säkra molntjänster</h1>
         <p class="content-summary-blogg">Safespring är en svensk leverantör av moln- och infrastruktur som tjänst. Vår plattform är baserad på Open Source och öppna standarder. Upplev fördelarna med molnet där du behåller kontroll och digital suveränitet.</p><br><br>
@@ -19,16 +19,23 @@
         <!--<i class="fas fa-arrow-circle-down fa-5x" style="color: var(--button-color)"></i>-->
     </div>
   </div>
+  <div class="background-bright">
+<div class="flexcontainer" style="align-items:baseline;">
+          {{ range first 3 (where $.Site.RegularPages "Section" "branscher") }}
+            {{ .Render "li"}}
+            {{ end }}
+      </div>
+    </div>
 
   <!-- CONTENT -->
-  <main class="content-main-index" id="down">
+  <main class="content-main-index">
       <!-- Heading Text -->
       <div class="content-image">
       </div>
 
       <!-- Body Text -->
       <div class="content-body-index">
-        <div class="ingress"><p>Ta kontroll på din hantering av personuppgifter och känslig data med oss</p></div>
+        <div class="ingress" id="down"><p>Ta kontroll på din hantering av personuppgifter och känslig data med oss</p></div>
         <p>Vi är en svensk moln-och infrastrukturleverantör (Infrastructure-as-a-Service) som producerar nätverk, lagring, servrar med virtualisering i en skalbar plattform utan inlåsning. </p>
         <p>Våra tjänster är byggda på Open Source och öppna standarder, vilket ger hög säkerhet utan licenskostnader. Det resulterar i att vi erbjuder ett konkurrenskraftigt pris. Samtliga tjänster produceras i lokala datacenter och data lämnar aldrig landet verksamheten befinner sig i. Upplev fördelarna från båda sidorna: publika molnet med bibehållen digital suveränitet.</p>
         <p>För organisationer som hanterar känslig information som måste efterleva alla lagar och regler men vill ha alla fördelar med molnet erbjuder vi bland annat:</p>
