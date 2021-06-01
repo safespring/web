@@ -1010,7 +1010,7 @@ label.switch-label {
 	}
 	.content-container-index {
 		grid-column: 2 / span 8;
-		bottom: 10vh;
+		bottom: 8vh;
 	}
 
 }
@@ -1327,7 +1327,7 @@ text-align: center;
 	}
 	.content-container-index {
 		grid-column: 3 / span 5;
-		bottom: 10vh;
+		bottom: 8vh;
 	}
 	.logo {
 		grid-column: 3;
@@ -3252,6 +3252,15 @@ h1 {
 
 .pb-3 {
 	padding-bottom: 3rem;
+}
+
+.flexcontainer-start {
+	margin: 3% auto;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-content: space-between;
 }
 
 .flexcontainer {

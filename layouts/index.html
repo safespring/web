@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="background-bright">
-<div class="flexcontainer" style="align-items:baseline;">
+<div class="flexcontainer-start" style="align-items:baseline;">
           {{ range first 3 (where $.Site.RegularPages "Section" "branscher") }}
             {{ .Render "li"}}
             {{ end }}
