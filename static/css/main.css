@@ -2189,7 +2189,7 @@ text-align: center;
 @media only screen and (max-width: 900px) {
 	.content-container-index {
 		margin: 0px 16px 0 16px;
-		top: 10vh;
+		top: 15vh;
 		grid-column: span 10;
 	}
 	.heading-index:before {
