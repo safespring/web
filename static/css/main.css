@@ -1010,7 +1010,7 @@ label.switch-label {
 	}
 	.content-container-index {
 		grid-column: 2 / span 8;
-		bottom: 15vh;
+		bottom: 10vh;
 	}
 
 }
