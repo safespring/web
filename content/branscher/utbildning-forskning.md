@@ -1,8 +1,10 @@
 ---
 title: "Safespring är den föredragna plattformen för forskning och utbildningssektorn"
-date: 2019-01-09T10:47:25+01:00
+cardtitle: "Safespring för akademisk sektor"
+card: "safespring_card_1.svg"
+date: 2021-03-09T10:47:25+01:00
 draft: false
-intro: "Vi har mångårig erfarenhet att arbeta med den akademiska sektorn och har mycket god förståelse för arbetssätt och utmaningar."
+intro: "Över 60 universitet och högskolor använder Safesprings tjänster idag via SUNET eller direkt genom OCRE-ramavtalet."
 background: "safespring-research.jpg"
 logobanner: "yes"
 toplogo: "ocre.png"
