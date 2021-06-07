@@ -4,7 +4,7 @@ cardtitle: "Safespring för akademisk sektor"
 card: "safespring_card_1.svg"
 date: 2021-03-09T10:47:25+01:00
 draft: false
-intro: "Över 60 universitet och högskolor använder Safesprings tjänster idag via SUNET eller direkt genom OCRE-ramavtalet."
+intro: "Över 60 universitet och högskolor använder våra tjänster via SUNET, UNINETT eller direkt genom GÈANTs OCRE-ramavtal."
 background: "safespring-research.jpg"
 logobanner: "yes"
 toplogo: "ocre.png"
