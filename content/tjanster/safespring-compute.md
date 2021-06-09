@@ -25,6 +25,10 @@ section: "Public Cloud"
 
 Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
 
+<br><a class="button mb-2" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/petter-hylin/introduktion-till-safespring'});return false;"><i class="fas fa-calendar-check"></i> Boka introduktion (15 min)</a><br><br><br><br>
+
+![Safespring Storage benefits](/img/safespring-compute-key-points.svg)
+
 Vår molnbaserade infrastrukturtjänst är baserad på den marknadsledande molnplattformen OpenStack. Tjänsten levereras ifrån säkra datahallar med mycket hög tillgänglighet. Data i tjänsten lämnar aldrig Sverige då datahallarna är placerade inom landets gränser. Vi är ett nordiskt bolag som därigenom inte omfattas av ex. Cloud Act, vilket gör att gör att du kan känna dig ännu tryggare.
 
 {{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
