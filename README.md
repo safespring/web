@@ -24,7 +24,7 @@ website at https://www.safespring.com/
 2. Clone the git repository and run Docker:
    ```
    git clone git@github.com:safespring/web
-   cd blog
+   cd web
    # updated version https://hub.docker.com/r/klakegg/hugo/
    docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo server
    # old version
