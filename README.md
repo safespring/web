@@ -18,18 +18,21 @@ website at https://www.safespring.com/
 
 [1]: https://gohugo.io/overview/installing/
 
-### Using Docker
+### Using Docker as a server
 
 1. Make sure you have [Docker installed][2].
 2. Clone the git repository and run Docker:
    ```
    git clone git@github.com:safespring/web
    cd blog
-   docker run --rm -it -p 1313:1313 -v $PWD:/site:z -e VIRTUAL_HOST="${1}" devopsdays/docker-hugo-server
+   # updated version https://hub.docker.com/r/klakegg/hugo/
+   docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo server
+   # old version
+   #docker run --rm -it -p 1313:1313 -v $PWD:/site:z -e VIRTUAL_HOST="${1}" devopsdays/docker-hugo-server
    ```
 3. Access http://localhost:1313/ in your browser of choice.
 
-[2]:https://www.docker.com/community-edition#/download
+[2]:https://www.docker.com/products/container-runtime#/download
 
 ## Notes for theme development
 
