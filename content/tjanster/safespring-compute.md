@@ -41,7 +41,7 @@ Den lagring som behövs till de virtuella instanserna är separerad från nodern
 
 Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet.
 
-<br><br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
+<br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
 
 ### Datahallar inom landets gränser
 Tjänsten levereras från våra mycket säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett nordiskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
