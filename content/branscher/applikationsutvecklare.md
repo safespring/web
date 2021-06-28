@@ -5,6 +5,7 @@ card: "safespring_card_2.svg"
 draft: false
 intro: "MedTech, EdTech eller andra moderna bolag som söker Compliant Kubernetes, Databastjänster och mer."
 background: "safespring_bilder_10.jpg"
+logobannersaas: "yes"
 ---
 <div class="ingress"><p>Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar. Ett område där de är särskilt starka är att producera SaaS-tjänster eftersom skalbarhet och flexibilitet är viktiga komponenter.</p></div>
 
