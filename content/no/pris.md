@@ -20,4 +20,4 @@ Last ned vår priskalkulator og velg infrastruktur for å se den beregnede kostn
 
 Priskalkulatoren er en Excel-fil med innebygd logikk for å beregne en månedlig kostnad basert på dine valg.
 
-<br><br><a class="button" style="margin-right:20px;" href="/pricelist/NOK/safespring-price-list-nok-2021-01-19.xlsx"><i class="fas fa-file-download" style="margin-right:10px;"></i> Last ned priskalkulator</a> <a id="text-button" href="/pricelist/NOK/safespring-price-list-nok-2021-01-19.pdf">Last ned som PDF</a>
+<br><br><a class="button" style="margin-right:20px;" href="/pricelist/NOK/safespring-price-list-nok.xlsx"><i class="fas fa-file-download" style="margin-right:10px;"></i> Last ned priskalkulator</a> <a id="text-button" href="/pricelist/NOK/safespring-price-list-nok.pdf">Last ned som PDF</a>
