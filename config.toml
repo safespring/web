@@ -59,7 +59,7 @@ SectionPagesMenu = "main"
     keywords = "compute, storage, backup"
 
 [sitemap]
-    changefreq = "monthly"
+    changefreq = "daily"
     filename = "sitemap.xml"
     priority = 0.5
 
