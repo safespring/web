@@ -1,6 +1,6 @@
 ---
-title: "Lösningar för SaaS-bolag"
-date: 2021-01-09T10:47:25+01:00
+title: "Hållbar container plattform för innovativa bolag"
+date: 2021-07-29T10:47:25+01:00
 card: "safespring_card_2.svg"
 draft: false
 intro: "MedTech, EdTech eller andra moderna bolag som söker Compliant Kubernetes, Databastjänster och mer."
