@@ -13,7 +13,7 @@ socialmedia: "/safespring-start.jpg"
 Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har generelle spørsmål, kan du ringe oss eller sende oss en e-post på info-adressen vår, men selvfølgelig er du også velkommen til å kontakte noen av våre ansatte direkte.
 
 <span class="inline-rubrik">Telefon</span><br>
-<a href="tel:+46855107370">+46 8-55 10 73 70</a>
+<a href="tel:+4735688870">+47 35 68 88 70</a>
 
 <span class="inline-rubrik">E-post</span><br>
 <a href="mailto:info@safespring.com">info@safespring.com</a>
