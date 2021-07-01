@@ -1,5 +1,6 @@
 ---
 title: "Safespring är en hållbar container plattform för innovativa bolag"
+cardtitle: "Safespring för SaaS-bolag"
 date: 2021-06-28T10:47:25+01:00
 card: "safespring_card_2.svg"
 draft: false
