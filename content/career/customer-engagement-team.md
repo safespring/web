@@ -1,6 +1,6 @@
 ---
-Title: "Cloud Engineer - Customer Success Team"
-Team: "Customer success team"
+Title: "Cloud Engineer - Customer Engagement Team"
+Team: "Customer engagement team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
@@ -23,7 +23,13 @@ The customer success team is a completely new team that we will establish during
 
 As an early member of the team, you will be able to help establish the teams tasks and responsibilities.
 
-Safespring was organized as a distributed organization from the beginning, and this team will also be organized as a distributed team. That means you can choose to work from home or your home town, but if you prefer to work from an office, we currently have people working from offices in Oslo, Stockholm and Bergen. Note that for regulatory reasons, we require team members to be residents of Norway or Sweden.
+Safespring was organized as a distributed organization from the beginning, and
+so is this team. That means you can choose to work from home or your home town,
+but if you some times want to work from an office, we currently have flexible
+office spaces in Oslo, Stockholm and Bergen, and will consider the same in other
+cities. Note that for regulatory reasons, we require team members to be
+residents of Norway or Sweden.
+
 
 ### Who will be the manager?
 
