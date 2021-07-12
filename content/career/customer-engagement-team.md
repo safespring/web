@@ -1,6 +1,6 @@
 ---
-Title: "Cloud Engineer - Customer Success Team"
-Team: "Customer success team"
+Title: "Cloud Engineer - Customer Engagement Team"
+Team: "Customer engagement team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
