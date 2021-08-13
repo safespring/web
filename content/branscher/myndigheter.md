@@ -43,7 +43,7 @@ Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och dat
 
 Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla GDPR och Dataskyddsförordningen.
 
- <a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
+ <a href="https://www.esamverka.se/aktuellt/nyheter/nyheter/2019-09-20-esams-juridiska---expertgrupp-fortydligar-uttalanden-om-rojanden-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
 
 ## White paper
 
