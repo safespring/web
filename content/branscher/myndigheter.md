@@ -30,20 +30,19 @@ Safespring är underleverantör till:
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 
-<a href="/kontakt" id="text-button">Kontakta Safespring</a><br><br>
+{{< localbutton "Kontakta Safespring" "/kontakt" >}}
 
-<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
+<br><br><br><br><video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
 <source type="video/mp4" src="/branscher/images/safespring_esam.mp4">
 <track src="/branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
-<br><br>
+
+
 <div class="ingress"><p>Ta tillbaka kontrollen och få digital suveränitet</p></div>
 
 Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta den kostnadseffektivitet, flexibilitet som moln- och infrastrukturtjänster ger.
 
 Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla GDPR och Dataskyddsförordningen.
-
- <a href="https://www.esamverka.se/aktuellt/nyheter/nyheter/2019-09-20-esams-juridiska---expertgrupp-fortydligar-uttalanden-om-rojanden-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
 
 ## White paper
 
