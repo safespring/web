@@ -1,38 +1,39 @@
 ---
-title: "Tydligare krav på att patientdata inte ligger utanför EU"
+title: "Trygg behandling av patient­data enligt GDPR: Compliant Kubernetes i svenskt moln"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Fredric Wallsten som är VD på Safespring har följt lagstiftningen för personuppgifter under lång tid och beskriver de skärpta kraven på mjukvarubolagen inom MedTech i Sverige."
-background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
+section: "MedTech"
+intro: ""
+background: "safespring_background_medtech.jpg"
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: ""
 sidebarlinkurl: ""
-sidebarsection: "White Paper"
-sidebarimage: "safespring_card_02.jpg"
-sidebartitle: "EU-domstolens ogiltigförklarande av Privacy Shield"
-sidebartext: "Läs förutsättningar och rekommendationer för offentlig sektor och deras leverantörer"
-sidebardate: "Dataskydd"
-sidebarknapp: "Läs nu"
-sidebarlink: "/whitepaper/schrems-ii/"
+sidebarsection: "MedTech"
+sidebarimage: "petter-live.gif"
+sidebartitle: "Webbinarium onsdag 15 sep"
+sidebartext: "Best practice vid uppsättning av Kubernetes. Byggstenarna i Compliant Kubernetes och kundcase från MedTech."
+sidebardate: "Compliant Kubernetes"
+sidebarknapp: "Hämta länk"
+sidebarlink: "https://us02web.zoom.us/webinar/register/1916293684246/WN_CVkFeI0HTyWKI2g8uhCqjQ"
 saas: "yes"
 sidebarwhitepaper: ""
 ---
 
-## Behöver en SaaS tjänst för sjukvården ta hänsyn till dataskydds­förordningen och GDPR?
-
 {{< ingress >}}
-Mjukvarutjänster inom MedTech utvecklas snabbt och SKR:s medlemmar köper allt fler tjänster för att förbättra sin sjuk- och åldringsvård.
+Få hjälp med driften av certifierade Kubernetes­experter: Managerade tjänster i Sverige. Säkra dina kunders data och få direkt­support.
 {{</ ingress >}}
 
-De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet. Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
+De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
 
-{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="15 min om hållbar Medtech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka kvart" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
+Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
 
 ### Kan patientdata ligga i en utländsk molntjänst?
 Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
 
 Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svenska lag. Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
+
+{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="30 min om säker lokal MedTech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka intro" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
 
 ### Hur ni kan behålla era svenska kunder
 På Safesprings plattform bygger många SaaS-bolag idag sina säkra molntjänster för att kunna erbjuda sina kunder säker datahantering. Vår juridiska säkerhet är bara en av fördelarna. Om ni kan utveckla er tjänst i en säker molnplattform kommer ni öka er kundbas inom Sverige.
