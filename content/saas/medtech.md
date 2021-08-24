@@ -28,6 +28,8 @@ De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgi
 
 Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
 
+![Compliant Kubernetes on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
+
 ### Kan patientdata ligga i en utländsk molntjänst?
 Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
 
