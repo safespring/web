@@ -1,9 +1,9 @@
 ---
-title: "Trygg behandling av patient­data enligt GDPR: Compliant Kubernetes i svenskt moln"
+title: "Låt interna utvecklare fokusera på er tjänst"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "MedTech"
-intro: ""
+intro: "Få hjälp med driften av certifierade Kubernetes­experter: Managerade tjänster i Sverige. Säkra dina kunders data och få direkt­support"
 background: "safespring_background_medtech.jpg"
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -19,6 +19,7 @@ sidebarlink: "https://us02web.zoom.us/webinar/register/1916293684246/WN_CVkFeI0H
 saas: "yes"
 sidebarwhitepaper: ""
 ---
+ ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
 
 {{< ingress >}}
 Få hjälp med driften av certifierade Kubernetes­experter: Managerade tjänster i Sverige. Säkra dina kunders data och få direkt­support.
