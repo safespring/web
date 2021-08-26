@@ -18,6 +18,8 @@ sidebarknapp: "Hämta länk"
 sidebarlink: "https://us02web.zoom.us/webinar/register/1916293684246/WN_CVkFeI0HTyWKI2g8uhCqjQ"
 saas: "yes"
 sidebarwhitepaper: ""
+aliases:
+    - /medtech/
 ---
  ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
 
