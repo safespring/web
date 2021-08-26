@@ -1,9 +1,9 @@
 ---
-title: "Låt interna utvecklare fokusera på er tjänst"
+title: "Låt era utvecklare fokusera på kärnverksamheten"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "MedTech"
-intro: "Få hjälp med driften av Kubernetes från certifierade experter: Managerade tjänster i Sverige. Säkra dina kunders data och få direkt­support"
+intro: "Kör Compliant Kubernetes som en managerad tjänst."
 background: "safespring_background_medtech.jpg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -21,42 +21,36 @@ sidebarwhitepaper: ""
 aliases:
     - /medtech/
 ---
- ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
+
 
 {{< ingress >}}
-Få hjälp med driften av certifierade Kubernetes­experter: Managerade tjänster i Sverige. Säkra dina kunders data och få direkt­support.
+Kör ni Kubernetes idag eller planerar ni att göra det? Det här är en möjlighet för er att lämna över driften till certifierade experter och samtidigt öka er kontroll och säkerhet.
 {{</ ingress >}}
 
+Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
+
+![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
+
+![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
+
+### Stärk ditt team med extern DevOps- och Kubernetes-expertis.
+Elastisys är certifierade [Kubernetes service providers](Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.) skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder Elastisys kompletterande utbildningar och konsulttjänster.
+
+### Varför Compliant Kubernetes?
+
+Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
+
+<a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
+
+{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="30 min om säker lokal MedTech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka intro" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
+
+### Sidebar: Bakgrund: Därför väljer många MedTech-bolag att flytta hem sin patientdata till Europa
 De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
 
 Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
 
-![Compliant Kubernetes on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
-
-### Kan patientdata ligga i en utländsk molntjänst?
 Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
 
-Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svenska lag. Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
+Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svensk lag.
 
-{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="30 min om säker lokal MedTech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka intro" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
-
-### Hur ni kan behålla era svenska kunder
-På Safesprings plattform bygger många SaaS-bolag idag sina säkra molntjänster för att kunna erbjuda sina kunder säker datahantering. Vår juridiska säkerhet är bara en av fördelarna. Om ni kan utveckla er tjänst i en säker molnplattform kommer ni öka er kundbas inom Sverige.
-
-Våra tjänster gör det möjligt att uppfylla alla lagar och regler och samtidigt få alla fördelarna som moln- och infrastrukturtjänster har: flexibilitet, skapa servrar, skala upp och ner efter behov och betala enbart för det du använder. En kraftfull svensk molnplattform för SaaS tjänster som hanterar personuppgifter
-
-Lägg din patientdata på en säker molnplattform utformad för compliance. Vi är ett svenskt bolag som garanterar att ert data stannar i Sverige utan att tumma på utvecklingstakten. Bli en SaaS tjänst inom MedTech som följer GDPR och därav bredda er SaaS tjänst för vårdsektorn så myndigheter och kommuner kommer kunna köpa från er framöver.
-
-### Vad har svenska kommuner för krav?
-I fall en svensk kommun överför personuppgifter med stöd av Privacy Shield, är det sedan den 16/7 2020 en olaglig överföring. Om standardklausulerna (SCC) används krävs det att myndigheten göra en analys för varje land där personuppgiftsbehandlingen kommer ske. Analys för USA görs mestadels av EU-domstolen, då Privacy Shield inte uppfyllde kraven i GDPR och EU-stadgan. Detta resulterar i att det är väldigt svårt att anlita amerikanska företag för personuppgiftbehandling oavsett var i världen personuppgiftbehandlingen sker.
-
-eSamverkanprogrammet (28 myndigheter och SKR) hade i september ett webbinarium tillsammans med oss molntjänstleverantörer där de största myndigheterna i Sverige beskrev hur det här utfallet i EU-domstolen kommer påverka dem. eSam jobbar för att etablera en ny plan för molntjänster för sina medlemmar som bygger på att deras data ligger hos svenska eller europeiska företag.
-
-Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
-
-
-## Esams leverantörsmöte
-eSam bjöd in fem av sina medlemmars it-chefer för att träffa leverantörer av it-tjänster i ett samtal kring offentlig sektors behov när det gäller möjligheten att använda sig av molntjänster. It-cheferna beskriver sina förutsättningar och utmaningar i vardagen.
-
-
-{{< youtube yjibzEx8sI8 >}}
+Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
