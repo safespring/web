@@ -748,7 +748,7 @@ label.switch-label {
 
 .heading-content h1 {
 	font: var(--extra-light-weight) 55px var(--hind-font);
-	line-height: 1;
+	line-height: 1.1;
 	color: var(--text-color);
 	margin: 0;
 }

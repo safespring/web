@@ -18,4 +18,6 @@ knapp: "Starta webinar"
 english: ""
 formid: ""
 explorer: ""
+aliases:
+    - /event/
 ---

@@ -8,6 +8,7 @@ sidebarlinkname: "Fyll i formulär"
 sidebarlinkurl: "#up-form"
 socialmedia: "safespring-devops.jpg"
 noindex: "yes"
+sidebar: "no"
 ---
 
 <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -139,15 +140,29 @@ noindex: "yes"
 						});
 				});
 		</script>
+		<div>
+		<div style="float:right;">
+			<h3>Sweden</h3>
 		<div class="inputGroup">
 			<input type="checkbox" value="Safespring Compute" name="Extra.1623315527845">
 			<label>Safespring Compute</label>
 		</div>
-		<label><input type="checkbox" value="Safespring Storage" name="Extra.1623315527845">&nbsp;Safespring Storage&nbsp;</label>
-		<label><input type="checkbox" value="Compliant Kubernetes" name="Extra.1623315527845">&nbsp;Compliant Kubernetes&nbsp;</label>
-		<label><input type="checkbox" value="Safespring Backup" name="Extra.1623315527845">&nbsp;Safespring Backup&nbsp;</label>
-	</div>
+		<div class="inputGroup">
+			<input type="checkbox" value="Safespring Storage" name="Extra.1623315527845">
+			<label>Safespring Storage</label>
+		</div>
+		<div class="inputGroup">
+			<input type="checkbox" value="Compliant Kubernetes" name="Extra.1623315527845">
+			<label>Compliant Kubernetes</label>
+		</div>
+		<div class="inputGroup">
+			<input type="checkbox" value="Safespring Backup" name="Extra.1623315527845">
+			<label>Safespring Backup</label>
+		</div>
 	<div>
+		</div>
+		<div style="float:right;">
+			<h3>Norway</h3>
 		<label>Safespring Services (Data centers in Norway)</label>
 		<br>
 		<label><input type="checkbox" value="Safespring Compute" name="Extra.1623315759521">&nbsp;Safespring Compute&nbsp;</label>
@@ -155,6 +170,9 @@ noindex: "yes"
 		<label><input type="checkbox" value="Compliant Kubernets" name="Extra.1623315759521">&nbsp;Compliant Kubernets&nbsp;</label>
 		<label><input type="checkbox" value="Safespring Backup" name="Extra.1623315759521">&nbsp;Safespring Backup&nbsp;</label>
 	</div>
+		</div>
+		</div>
+		<div style="float:right;">
 	<h3>User account 1<h3>
 	<div>
 		<label>User account 1 (Name)</label>
@@ -176,9 +194,12 @@ noindex: "yes"
 		<br>
 		<textarea maxlength="255" rows="3" placeholder="" name="Extra.1623315942297"></textarea>
 	</div>
-	<div class="form-group" style="display: flex;"><input type="checkbox" value="on" name="singleOptIn.74pvmtvmw9n" style="margin: auto 7px auto 0px;"><label class="opt-in-label">Jag accepterar <a class="up-unstyled-element" href="javascript:openTerms(1);">villkoren</a></label>
-
+	<div class="form-group" style="display: flex;">
+		<input type="checkbox" value="on" name="singleOptIn.74pvmtvmw9n" style="margin: auto 7px auto 0px;">
+		<label class="opt-in-label">Jag accepterar <a class="up-unstyled-element" href="javascript:openTerms(1);">villkoren</a></label>
 	</div>
+	</div>
+	<div style="float:right;">
 	<div>
 		<label>User account 2 (Name)</label>
 		<br>
@@ -194,6 +215,8 @@ noindex: "yes"
 		<br>
 		<input maxlength="512" type="text" placeholder="" name="Extra.1623935974593">
 	</div>
+	</div>
+	<div style="float:right;">
 	<div>
 		<label>User account 3 (Name)</label>
 		<br>
@@ -208,6 +231,7 @@ noindex: "yes"
 		<label>User account 3 (Email)</label>
 		<br>
 		<input maxlength="512" type="text" placeholder="" name="Extra.1623936379803">
+	</div>
 	</div>
 	<!-- REQUIRED FIELDS -->
 	<input type="hidden" name="formCid" value="9549">
@@ -239,7 +263,6 @@ noindex: "yes"
 			void 0 === window.__validEmail && e || (o = window.__validEmail, a = !1), ("boolean" == typeof o && o || !a) && (clearInterval(n), validateForm(t, "https://www.safespring.com/onboarding/success/"))
 		}, 300))
 	}
-
 	function validateForm(e, o) {
 		e.preventDefault();
 		for (var t = document.getElementsByName("formId")[0].value, e = document.forms["form_" + t], n = e.querySelectorAll("input, textarea, select"), a = 0; a < n.length; a++) "text" === n[a].type && (n[a].value = n[a].value.trim());
@@ -266,3 +289,4 @@ noindex: "yes"
 	var form = document.getElementById("up-form");
 	form.addEventListener("submit", onSubmit);
 </script>
+</div>
