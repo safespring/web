@@ -7,8 +7,8 @@ intro: "Kör Compliant Kubernetes som en managerad tjänst."
 background: "safespring_background_medtech.jpg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: ""
-sidebarlinkurl: ""
+sidebarlinkname: "Delta på webinar 15/9"
+sidebarlinkurl: "https://us02web.zoom.us/webinar/register/1916293684246/WN_CVkFeI0HTyWKI2g8uhCqjQ"
 sidebarsection: "MedTech"
 sidebarimage: "petter-live.gif"
 sidebartitle: "Webbinarium onsdag 15 sep"
@@ -27,24 +27,26 @@ aliases:
 Kör ni Kubernetes idag eller planerar ni att göra det? Det här är en möjlighet för er att lämna över driften till certifierade experter och samtidigt öka er kontroll och säkerhet.
 {{</ ingress >}}
 
-Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
-
 ![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
+### Stärk ditt team med extern expertis inom DevOps och Kubernetes
+Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
 
-### Stärk ditt team med extern DevOps- och Kubernetes-expertis.
-Elastisys är certifierade [Kubernetes service providers](Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.) skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder Elastisys kompletterande utbildningar och konsulttjänster.
+Elastisys är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder Elastisys kompletterande utbildningar och konsulttjänster.
+
+![Safespring benefits](/img/saas/key-points-kubernetes.svg)
+
 
 ### Varför Compliant Kubernetes?
 
-Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
+Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
+{{< localtextbutton "Utforska källkoden" "https://compliantkubernetes.io/" >}}
 
 <a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
 
 {{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="30 min om säker lokal MedTech" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka intro" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Medtech och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
 
-### Sidebar: Bakgrund: Därför väljer många MedTech-bolag att flytta hem sin patientdata till Europa
+### Bakgrund: Därför väljer många MedTech-bolag att flytta hem sin patientdata till Europa
 De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
 
 Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
