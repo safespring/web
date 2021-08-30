@@ -30,4 +30,4 @@ Patrik är VD och grundare av IT-Säkerhetsbolaget AB som är en helhetsleverant
 
 Hoppas vi ses live den 25/8 2021.
 
-{{< localbutton "Se direkt" "https://us02web.zoom.us/webinar/register/2916136604736/WN_Fa7afEvzQvyAII9OBrInmw" >}}
+{{< localbutton "Se på Youtube" "https://youtu.be/JWGvHE2_-HA" >}}
