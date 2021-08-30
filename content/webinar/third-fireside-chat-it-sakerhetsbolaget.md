@@ -9,10 +9,10 @@ socialmediabild: "safespring_social_39.gif"
 intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?"
 partner: "it-sakerhetsbolaget.png"
 audience: "saas"
-explorer: "https://us02web.zoom.us/webinar/register/2916136604736/WN_Fa7afEvzQvyAII9OBrInmw"
+explorer: "https://youtu.be/JWGvHE2_-HA"
 ---
 
-<a href="https://us02web.zoom.us/webinar/register/2916136604736/WN_Fa7afEvzQvyAII9OBrInmw"><img src="/img/event/socialmedia/safespring_social_39.gif"></a>
+{{< youtube JWGvHE2_-HA >}}
 
 {{< ingress>}}
 Vi tar upp EDPBs vägledningen efter Schrems II. Är den snabbaste vägen framåt just nu molntjänster utan amerikanska ägare eller drift? Låt oss diskutera!
