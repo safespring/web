@@ -18,8 +18,8 @@ explorer: "https://youtu.be/JWGvHE2_-HA"
 Vi tar upp EDPBs vägledningen efter Schrems II. Är den snabbaste vägen framåt just nu molntjänster utan amerikanska ägare eller drift? Låt oss diskutera!
 {{< /ingress >}}
 
-<a href="https://www.safespring.com/webinar/fireside-chat-it-sakerhetsbolaget/">Se del I</a><br>
-<a href="https://www.safespring.com/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a>
+<a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Se del I</a><br>
+<a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a>
 
 En fortsättning på vårt populära samtal från den 16 juni. Var med och diskutera praktiska möjligheter efter Schrems II med en Senior Cloud Architect (Gabriel Paues) och dataskyddsombud samt It-säkerhetsexpert (Patrik Jonasson). Var står vi nu och hur kommer vi vidare?
 

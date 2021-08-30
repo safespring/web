@@ -17,8 +17,8 @@ explorer: "https://youtu.be/nzQunPqkIWs"
 Var med och diskutera praktiska möjligheter efter Schrems II med en Senior Cloud Architect (Gabriel Paues) och dataskyddsombud samt It-säkerhetsexpert (Patrik Jonasson). Var står vi nu och hur kommer vi vidare?
 {{< /ingress >}}
 
-<a href="https://www.safespring.com/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a>
-<a href="https://www.safespring.com/webinar/third-fireside-chat-it-sakerhetsbolaget/">Se del III</a>
+<a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a><br>
+<a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Se del III</a>
 
 Under ca 60 minuter pratar vi om varför bolag som använder amerikanska molntjänster hamnat i den här juridiska situationen. Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?
 
