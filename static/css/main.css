@@ -31,6 +31,9 @@
   color: #195F8C;
   background: #EAF0F4;
 }
+.br-5 {
+	border-radius: 5px !important;
+}
 
 hr {
 	width: 90%;
@@ -1215,6 +1218,32 @@ text-align: center;
 	margin-bottom: 7px;
 }*/
 
+.social-container {
+	background: #f3f3f3;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 1rem;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	padding: 10px;
+	font: var(--heavy-weight) 15px var(--hind-font);
+	color: var(--main-color);
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	font-variant-numeric: normal;
+}
+
+.sociallogo {
+	height: 20px;
+	vertical-align: middle;
+	width: 30px;
+}
+
+.social-container:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .partner-container {
 	background: #f3f3f3;
 	border-radius: 5px;
@@ -1271,13 +1300,21 @@ text-align: center;
 		/*  grid-auto-columns: 65rem;
 		grid-template-columns: 1.3fr 0.7fr */
 	}
-	.ch-content {
+
+	/*.ch-content {
 		display: -ms-grid;
 		display: grid;
 		grid-column: 2 / span 4;
 		margin: 10% 0 10% 0;
+	}*/
 
-	}
+	.ch-content {
+		display: -ms-grid;
+		display: grid;
+		grid-column: 1 / span 7;
+		margin: 10%;
+}
+
 	.ch-content p, h1, h2, h3, h4, li, ol {
 		max-width: 700px;
 		/*margin: 16px 10% 0 0;*/
@@ -1291,8 +1328,8 @@ text-align: center;
 	.ch-sidebar {
 		height: fit-content;
 		background-color: #FFF;
-		grid-column: 7 / span 4;
-		margin: 5%;
+		grid-column: 8 / span 3;
+		margin: 10% 10% 10% 0;
 		padding: 10% 15% 10% 15%;
 		border-radius: 10px;
 	}
@@ -1345,7 +1382,7 @@ text-align: center;
 	}
 
 	.ch-content {
-		grid-column: 3 / span 4;
+		grid-column: 2 / span 5;
 	}
 	.listpage {
 		grid-column: span 7;
@@ -2148,6 +2185,20 @@ text-align: center;
 	font-size: 25px
 }
 
+.flex-container {
+	display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.flex-content {
+	width: 100% !important;
+}
+
+.flex-container > div {
+  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+}
+
 .content-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2895,7 +2946,7 @@ label {
 /* CARD */
 
 .body {
-	margin: 20px;
+	margin: 10px;
 	padding: 0;
 	font-size: 16px;
 	line-height: 1.5;
@@ -2903,16 +2954,10 @@ label {
 	font-variant-ligatures: none;
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #fafafa;
+	background-color: #FFFFFF;
 	overflow: hidden;
 	border-radius: 5px;
-	width: 340px;
-}
-
-.body::before, .body::after {
-	content: "";
-	display: table;
-	clear: both;
+	max-width: 340px;
 }
 
 .body * {
