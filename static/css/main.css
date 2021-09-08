@@ -4262,7 +4262,7 @@ h1 {
     max-width: 30% !important;
   }
 	.safespring-horisontal-card-container {
-		width: 90%;
+		width: 80%;
 }
 }
 
@@ -4276,7 +4276,7 @@ h1 {
 	  flex: 1; /* additionally, equal width */
 	}
 	.safespring-horisontal-card-container {
-		width: 120% !important;
+		width: 100% !important;
 	}
 		.safespring-horisontal-card-row {
 		  display: flex; /* equal height of the children */

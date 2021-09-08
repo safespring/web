@@ -1,51 +1,57 @@
 ---
-title: "Compliant Kubernetes"
+title: "La utviklerne fokusere på kjernevirksomheten"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
-background: "safespring-compute.jpg"
-form: "yes"
-sidebarlinkname: ""
-sidebarlinkurl: ""
-socialmedia: "safespring-compute.jpg"
-devops: ""
 section: "Public Cloud"
-language: "No"
+intro: "Kjør kompatible Kubernetes som en administrert tjeneste."
+background: "safespring_background_medtech.jpg"
+card: "safespring_background_medtech.jpg"
+socialmedia: "safespring_social_01.jpg"
+sidebarlinkname: "Les Solution Brief"
+sidebarlinkurl: "/no/whitepaper/compliant-kubernetes/"
+sidebarsection: "Compliant"
+sidebarimage: "safespring_card_02.jpg"
+sidebartitle: "Solution Brief Compliant Kubernetes"
+sidebartext: "Best practice vid uppsättning av Kubernetes. Byggstenarna i Compliant Kubernetes."
+sidebardate: "Kubernetes"
+sidebarknapp: "Les direkt"
+sidebarlink: "/no/whitepaper/compliant-kubernetes/"
+saas: "yes"
+sidebarwhitepaper: ""
+aliases:
+Language: "No"
 ---
 
-{{% ingress %}}
-Organizations across all industries are adopting containers for increased agility, developer productivity and increased availability and performance.
-{{% /ingress %}}
+{{< ingress >}}
+Kjører du Kubernetes i dag, eller planlegger du å gjøre det? Dette er en mulighet for deg til å overlate operasjonen til sertifiserte eksperter og samtidig øke din kontroll og sikkerhet.
+{{</ ingress >}}
 
-To orchestrate and manage this dynamic, new environment of smaller micro-services, Kubernetes has emerged as the de-facto standard.
+![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-pyramid.svg)
 
-More and more industries like public sector, banking, fin-tech, RegTech, iGaming, MedTech and biotech are all facing increased regulatory pressure due their influence on society. Even companies not under industry regulations choose to adopt best practice controls like CIS or SOC2.
+### Styrk teamet ditt med ekstern kompetanse innen DevOps og Kubernetes
+Sammen med vår partner tilbyr Safespring kompatible Kubernetes som en omfattende driftsløsning.
 
-Handling sensitive user data and adhering to regulations like GDPR, ISO-27001 or PCI-DSS can be hard in a dynamic, container-based environment due to multiple levels of abstraction and virtualization, which are hard to translate to regulatory requirements written with physical infrastructure and single-tenancy in mind. As such, proving to security teams that containers can be as secure, if not more, than traditional VMs have for the last few years been a challenge. Furthermore, with additional moving parts, attack surfaces increase.
+Partnerne våre er sertifisert {{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}} skaperne av den åpne Kubernetes-distribusjonskompatible Kubernetes og et aktivt medlem av Cloud Native -fellesskapet. I tillegg til administrerte tjenester, tilbyr vi tilleggstrening og konsulenttjenester.
 
-<br><br>
-<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile">
-<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop">
-<br><br>
+![Safespring benefits](/img/saas/no-key-points-kubernetes.svg)
 
-If your current environment has passed all audits, DevOps teams must make the case for containerization even louder as the current setup, even though inflexible and causing a slower software development lifecycle, is proven compliant. Aspects such as network segmentation, firewalls, role-based access control, secret handling, vulnerability (antivirus) scanning and updates are all done differently in containerized environments.
+### Hvorfor kompatible Kubernetes?
 
-Although historically known as hard to set up, getting a Kubernetes cluster up and running today is basically a few clicks away. Operating it in production with real workloads while handling sensitive user data is still a major challenge though, especially under heavy security requirements or regulatory restrictions.
+Kubernetes er ikke sikkert "out-of-the-box". Kompatibel Kubernetes ble designet basert på ISO27001 og er en sikkerhetsherdet Kubernetes-distribusjon som inneholder komponentene og konfigurasjonen du trenger for observerbarhet og sikkerhet - fra dag én.
 
-![Compliant Kubernetes on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
+{{< localtextbutton "Utforsk kildekoden" "https://compliantkubernetes.io/" >}}
 
-*A process has started to connect Safespring's cloud platform to Sjunet in Sweden.*
+<a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
 
-In addition to monitoring the clusters 24/7 for both health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management - upgrading, testing and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
+{{< calendly image="/img/kontakt/kristian-fjellhaug.jpg" cardtitle="30 minutter om trygge lokale Kubernetes" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Bestill intro" text="Hei, jeg heter Kristian og jeg jobber på Safespring. La oss snakke om Compliant Kubernetes og hvordan tilbudet ditt kan styrkes med den riktige plattformen for tjenesten din." >}}
 
-In essence, the challenge is how to increase software agility through containerization while guaranteeing security and compliance for your business.
+### Bakgrunn: Det er derfor mange SaaS-selskaper velger å flytte pasientdataene sine hjem til Europa
+De fleste tjenester som henvender seg til helsepersonell inkluderer personlig informasjon som navn, telefonnumre, hjemmeadresser og i mange tilfeller pasientjournaler som må håndteres med stor forsiktighet.
 
-Safespring Compliant Kubernetes (CK8s) is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security hardened configurations and open source components according to best practices. Safespring provides quarterly releases of Compliant Kubernetes - testing and hardening the components, to make sure they adhere to the strict security and regulatory requirements our customers have for their container platforms.
+Personopplysninger er regulert av databeskyttelsesforordningen i Sverige, GDPR og pasientdataloven. Behandler du pasient- og medisinske journaler uten å overholde GDPR?
 
-{{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/tjanster/safespring-compute/" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is located in secure data centers within the EU and doesn't get effected by foreign laws like CLOUD Act or FISA 702." %}}
+Hvis tjenesten som håndterer personopplysninger og ligger i en amerikansk skytjeneste, bryter helsetjenesten personvernforordningen (GDPR) i henhold til EU -domstolens kjennelse i juli 2020.
 
-Compliant Kubernetes allows organizations to enjoy the full benefits of Kubernetes while fulfilling regulatory requirements, not only when deploying new clusters but over the whole software development life cycle - software development, composition and packaging, testing and deployment, as well as operations and audits.
+Derfor stiller Sveriges regioner og kommuner klare krav til at personopplysningene er hos svenske skytjenesteleverandører med samme kapasitet og fleksibilitet som de store internasjonale alternativene. Svenske skyplattformer som Safespring lagrer data i Sverige og sorterer etter svensk lov.
 
-Due to Cloud Act and other forces that allow foreign entities to access user data, European companies are also more and more migrating their workloads to European providers.
-
-Compliant Kubernetes is available as a managed service in partnership with Safespring, giving you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations.
+Øk konkurranseevnen din i Europa med riktig skytjeneste og øk salget.

@@ -34,7 +34,7 @@ Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en drifta
 
 Elastisys är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder Elastisys kompletterande utbildningar och konsulttjänster.
 
-![Safespring benefits](/img/saas/key-points-kubernetes.svg)
+![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
 
 
 ### Varför Compliant Kubernetes?
