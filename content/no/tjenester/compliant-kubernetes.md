@@ -3,7 +3,7 @@ title: "La utviklerne fokusere på kjernevirksomheten"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Kjør kompatible Kubernetes som en administrert tjeneste."
+intro: "Kjør Compliant Kubernetes som en administrert tjeneste."
 background: "safespring_background_medtech.jpg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
