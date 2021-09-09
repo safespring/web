@@ -59,13 +59,17 @@ Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utif
 <div style="margin-bottom:100px;">
 </div>
 
-{{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="30 min om Compliant Kubernetes" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka intro" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Kubernetes och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
+{{< horisontal-card image="/img/kontakt/stockholm.png" cardtitle="30 min om Compliant Kubernetes" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Skicka in dina frågor till våra kunniga medarbetare på stockholmskontoret så får du snabbt svar." >}}
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">
 </div>
 
-### Bakgrund: Därför väljer många bolag att flytta hem sin data till Europa
+## Bakgrund
+{{< ingress >}}
+Därför väljer många bolag att flytta hem sin data till Europa.
+{{< /ingress >}}
+
 De flesta tjänster inom SaaS innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
 
 Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
