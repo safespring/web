@@ -28,6 +28,10 @@ Kör ni Kubernetes idag eller planerar ni att göra det? Det här är en möjlig
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
+
 ### Stärk ditt team med extern expertis inom DevOps och Kubernetes
 Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
 
@@ -35,6 +39,9 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
 
 ![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
 
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
 
 ### Varför Compliant Kubernetes?
 
@@ -43,7 +50,15 @@ Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utif
 
 <a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
 
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
+
 {{< calendly image="/img/kontakt/petter-hylin.jpg" cardtitle="30 min om Compliant Kubernetes" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Boka intro" text="Hej, jag heter Petter och jobbar på Safespring. Låt oss prata om Kubernetes och hur ert erbjudande kan stärkas med rätt plattform för er tjänst." >}}
+
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
 
 ### Bakgrund: Därför väljer många bolag att flytta hem sin data till Europa
 De flesta tjänster inom SaaS innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
