@@ -43,7 +43,7 @@ Partneren vår er sertifisert "{{% tooltip "Kubernetes service providers" %}} K
 <div style="margin-bottom:100px;">
 </div>
 
-### Hvorfor kompatible Kubernetes?
+### Hvorfor Compliant Kubernetes?
 
 Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Compliant Kubernetes" ble designet basert på ISO27001-standarden og er en sikkerhetsherdet Kubernetes-distribusjon som inneholder komponentene og konfigurasjonen du trenger for observerbarhet og sikkerhet - fra dag én.
 
