@@ -29,29 +29,49 @@ Kjører du Kubernetes i dag, eller planlegger du å gjøre det? Dette er en muli
 ![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-pyramid.svg)
 
 ### Styrk teamet ditt med ekstern kompetanse innen DevOps og Kubernetes
-Sammen med vår partner tilbyr Safespring kompatible Kubernetes som en omfattende driftsløsning.
+Sammen med vår partner tilbyr Safespring en Kubernetes-plattform som gjør det enkelt å være i samsvar med regelverk angående sikkerhet og personvern. Vi tilbyr en omfattende driftsløsning hvor du som kunde kan fokusere på din egen forretning og la automatikken ta seg av rapporteringskrav i henhold til regelverk.
 
-Partnerne våre er sertifisert {{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}} skaperne av den åpne Kubernetes-distribusjonskompatible Kubernetes og et aktivt medlem av Cloud Native -fellesskapet. I tillegg til administrerte tjenester, tilbyr vi tilleggstrening og konsulenttjenester.
+Partneren vår er sertifisert "{{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}}" via CNCF og leverer en sikkerhetsherdet Kubernetes-distribusjon som følger "upstream" Kubernetes-versjoner tett og er et aktivt medlem av Cloud Native-fellesskapet. I tillegg til administrerte Kuberntes-tjenester, tilbyr vi opplæring og konsulenttjenester.
+
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
 
 ![Safespring benefits](/img/saas/no-key-points-kubernetes.svg)
 
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
+
 ### Hvorfor kompatible Kubernetes?
 
-Kubernetes er ikke sikkert "out-of-the-box". Kompatibel Kubernetes ble designet basert på ISO27001 og er en sikkerhetsherdet Kubernetes-distribusjon som inneholder komponentene og konfigurasjonen du trenger for observerbarhet og sikkerhet - fra dag én.
+Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Compliant Kubernetes" ble designet basert på ISO27001-standarden og er en sikkerhetsherdet Kubernetes-distribusjon som inneholder komponentene og konfigurasjonen du trenger for observerbarhet og sikkerhet - fra dag én.
 
 {{< localtextbutton "Utforsk kildekoden" "https://compliantkubernetes.io/" >}}
 
 <a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
 
-{{< calendly image="/img/kontakt/kristian-fjellhaug.jpg" cardtitle="30 minutter om trygge lokale Kubernetes" link="https://calendly.com/petter-hylin/medtech?hide_gdpr_banner=1&primary_color=195f8c" linktext="Bestill intro" text="Hei, jeg heter Kristian og jeg jobber på Safespring. La oss snakke om Compliant Kubernetes og hvordan tilbudet ditt kan styrkes med den riktige plattformen for tjenesten din." >}}
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
 
-### Bakgrunn: Det er derfor mange SaaS-selskaper velger å flytte pasientdataene sine hjem til Europa
-De fleste tjenester som henvender seg til helsepersonell inkluderer personlig informasjon som navn, telefonnumre, hjemmeadresser og i mange tilfeller pasientjournaler som må håndteres med stor forsiktighet.
+{{< horisontal-card image="/img/kontakt/oslo.png" cardtitle="Kontakt oss" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Send en e -post til vårt kontor i Norge med dine spørsmål. Våre eksperter er alltid raske til å svare." >}}
 
-Personopplysninger er regulert av databeskyttelsesforordningen i Sverige, GDPR og pasientdataloven. Behandler du pasient- og medisinske journaler uten å overholde GDPR?
+<div id="contact"></div>
+<div style="margin-bottom:100px;">
+</div>
 
-Hvis tjenesten som håndterer personopplysninger og ligger i en amerikansk skytjeneste, bryter helsetjenesten personvernforordningen (GDPR) i henhold til EU -domstolens kjennelse i juli 2020.
+## Bakgrunn
+{{< ingress >}}Det er derfor mange SaaS-selskaper velger å flytte persondataene sine hjem til Europa{{< /ingress >}}
 
-Derfor stiller Sveriges regioner og kommuner klare krav til at personopplysningene er hos svenske skytjenesteleverandører med samme kapasitet og fleksibilitet som de store internasjonale alternativene. Svenske skyplattformer som Safespring lagrer data i Sverige og sorterer etter svensk lov.
+De fleste tjenester som behandler personlig informasjon som navn, telefonnumre, hjemmeadresser, og i mange tilfeller sensitive helsedata, må håndteres med stor forsiktighet.
 
-Øk konkurranseevnen din i Europa med riktig skytjeneste og øk salget.
+Det er mange regler og lover som skal overholdes når det gjelder slike opplysninger. "Compliant Kubernetes" reduserer byrden med å være i samsvar med en hel del lover og sikkerhetsstandarder, f.eks. GDPR,HIPAA,PCI-DSS og andre standarder som overlapper med ISO-27001
+
+Personopplysninger og helsedata er regulert av personopplysningsloven i Norge og GDPR , samt helseregisterloven. Behandler du persondata og sensitive helsedata uten å overholde regelverket?
+
+Hvis tjenesten som håndterer personopplysninger og ligger i en amerikansk skytjeneste, bryter tjenesten [EUs personvernforordning (GDPR)](https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/652073/EPRSATA(2020)652073EN.pdf) i henhold til EU-domstolens kjennelse i juli 2020.
+
+I Sverige tar man dette på alvor og stiller derfor krav om lokalt eierskap til skytjenester som skal behandle persondata. Dette bør man ta på alvor i Norge også, da det i stor grad er de samme reglene som gjelder innenfor EU/EØS med hensyn til GDPR. Safespring har hovedeierskap i Sverige og infrastruktur i Sverige og Norge. Vi havner derfor utenfor spørsmålet om overføring av data til land som ikke er regulert av regler i EU, f.eks. GDPR. Land utenfor EU/EØS har dermed ikke tilgang til utlevering av data.
+
+Øk konkurranseevnen og sikkerhetsnivået med riktig skytjeneste og øk effektivitet og salg.
