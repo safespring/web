@@ -64,3 +64,10 @@ We try to gather the team approximately one time each quarter, usually somewhere
 ### How is the salary?
 
 Safespring is affiliated to Kollektivavtalet (https://www.itot.se/) and applies to their rules in both Sweden and Norway, including local rules for working hours, vacation, wellness benefits and market salary.
+
+<div id="down"></div>
+
+## How to apply
+To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
+
+{{% localbutton "upload application" "https://nextcloud.safespring.com/index.php/s/ciHKRKojcgdd9j5" %}}
