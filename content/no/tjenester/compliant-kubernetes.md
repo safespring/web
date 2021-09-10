@@ -70,7 +70,7 @@ Det er mange regler og lover som skal overholdes når det gjelder slike opplysni
 
 Personopplysninger og helsedata er regulert av personopplysningsloven i Norge og GDPR , samt helseregisterloven. Behandler du persondata og sensitive helsedata uten å overholde regelverket?
 
-Hvis tjenesten som håndterer personopplysninger og ligger i en amerikansk skytjeneste, bryter tjenesten [EUs personvernforordning (GDPR)](https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/652073/EPRSATA(2020)652073EN.pdf) i henhold til EU-domstolens kjennelse i juli 2020.
+Hvis tjenesten som håndterer personopplysninger og ligger i en amerikansk skytjeneste, bryter tjenesten EUs personvernforordning (GDPR) i henhold til [EU-domstolens kjennelse i juli 2020](https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/652073/EPRS_ATA(2020)652073_EN.pdf).
 
 I Sverige tar man dette på alvor og stiller derfor krav om lokalt eierskap til skytjenester som skal behandle persondata. Dette bør man ta på alvor i Norge også, da det i stor grad er de samme reglene som gjelder innenfor EU/EØS med hensyn til GDPR. Safespring har hovedeierskap i Sverige og infrastruktur i Sverige og Norge. Vi havner derfor utenfor spørsmålet om overføring av data til land som ikke er regulert av regler i EU, f.eks. GDPR. Land utenfor EU/EØS har dermed ikke tilgang til utlevering av data.
 
