@@ -49,7 +49,7 @@ men du är naturligtvis välkommen att kontakta någon av våra medarbetare dire
 
 {{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Vice CEO" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
+{{< contact-small title="Vice President" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="CCO" name="Johan Harrysson" email="johan.harrysson@safespring.com" >}}
 {{< contact-small title="COO" name="Anders Bruvik" email="anders.bruvik@safespring.com" >}}
