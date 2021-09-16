@@ -10,7 +10,7 @@ socialmedia: "safespring-datacenter.jpg"
 ---
 
 ## Safespring Stockholm Norr
-<div class="ingress"><p>Datacentret återvinner värmen som genereas från produktionen tillbaka till fjärrvärmenätet vilket årligen värmer upp tusentals lägenheter i stockholmsområdet.</p></div>
+<div class="ingress"><p>Datacentret återvinner värmen som genereras från produktionen tillbaka till fjärrvärmenätet vilket årligen värmer upp tusentals lägenheter i stockholmsområdet.</p></div>
 
 Datacentret är säkrat och byggt som en byggnad, inom en byggnad. Övervakning med CCTV sker dygnet runt alla dagar i veckan och säkerhetsvakter patrullerar området. Det finns flera åtkomsthinder, inklusive slussar, kontaktlösa nyckelkort och biometriska läsare.
 
@@ -26,9 +26,9 @@ Utvecklingen för mer energieffektiva datacenter pågår ständigt vilket medfö
 
 Datacentret i är idag 2800 kvm stort varav 1100 kvm är datazoner. Datacentret drivs till 100 procent med el från förnyelsebara energikällor och ständigt arbetas det med att hitta nya sätt att öka energieffektiviteten.
 
-Datacentrets ansvarige kan göra utdrag på passersystem och kameramaterial om vi skulle önska det. Safesprings utrymmen är låsta så det går inte att påverka eller manipuleras av någon utomstående.
+Datacentrets ansvarige kan göra utdrag på passersystem och kameramaterial om vi skulle önska det. Safesprings utrymmen är låsta så det går inte att påverka eller manipuleras av någon utomstående. 
 
-Byggstandarden är designad för tillgänglihetskrav enligt Tier-3 som är Safesprings policy. Det finns även ett reservkraftsystem som gör datacentret oberoende av elnätet.
+Byggstandarden är designad för tillgänglighetskrav enligt Tier-3 som är Safesprings policy. Det finns även ett reservkraftsystem som gör datacentret oberoende av elnätet.
 Datacentret har branddetektering med luftanalys. Serverhallar med IT-vänliga släcksystem och brandlarm direktkopplat till brandstation och inbrottslarm direktkopplat till larmcentral samt övervakning 24⁄7 av egen NOC.
 
 ### Övrigt
