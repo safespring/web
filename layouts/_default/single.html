@@ -5,6 +5,9 @@
 {{ else if eq $.Params.title "Kontakta oss" }}
 {{ partial "kontakt.html" . }}
 
+{{ else if eq $.Params.title "Kontakt oss på Safespring" }}
+{{ partial "no-kontakt.html" . }}
+
 {{ else if eq $.Params.title "Pris" }}
 {{ partial "pris.html" . }}
 

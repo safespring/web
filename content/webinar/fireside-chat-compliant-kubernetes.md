@@ -8,13 +8,13 @@ socialmediabild: "safespring_social_40.gif"
 intro: "Känns Kubernetes lite som en svart låda? I det här samtalet tar vi upp hur du använder Kubernetes i produktion på ett säkert sätt."
 partner: "elastisys.png"
 audience: "saas"
-explorer: ""
+explorer: "https://youtu.be/np0mDvTmaZM"
 ---
 
-![Snart kommer inspelningen av webbinariet laddas upp här.](/img/event/safespring-video-placeholder.svg)
+{{< youtube np0mDvTmaZM >}}
 
 {{< ingress>}}
-Vi kommer gå igenom Kubernetes med hög säkerhet under tre punkter. Även nu efter webbinariet kan du ställa frågor till våra experter inom Kubernetes och säkra molntjänster.
+Vi går igenom Kubernetes med hög säkerhet under tre punkter. Även nu efter webbinariet kan du ställa frågor till våra experter inom Kubernetes och säkra molntjänster.
 {{< /ingress >}}
 
 1. Best practice - Kubernetes är inte säkert "out of the box". Vilka komponenter och vilken konfiguration behövs för att säkerställa kontroll över er data?
