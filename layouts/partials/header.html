@@ -144,15 +144,3 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("h-bar").style.top = "0px";
-  } else if (document.body.scrollTop > 1) {
-    document.getElementById("h-bar").style.top = "-80px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
