@@ -1,4 +1,16 @@
 <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("h-bar").style.top = "0px";
+  } else if (document.body.scrollTop > 1) {
+    document.getElementById("h-bar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 <!-- Full Navbar -->
 <div class="navbar shadow-1">
   <div class="nav-flex">

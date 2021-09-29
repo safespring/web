@@ -44,16 +44,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
       {{ partial "telavox.html" }}
-      <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("h-bar").style.top = "0px";
-        } else if (document.body.scrollTop > 1) {
-          document.getElementById("h-bar").style.top = "-80px";
-        }
-        prevScrollpos = currentScrollPos;
-      }
-      </script>
    </head>
