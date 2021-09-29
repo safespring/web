@@ -1,4 +1,5 @@
 {{ partial "head.html" . }}
+<body>
    {{ partial "header.html" . }} <!-- HEADING -->
 <div class="heading-sub">
   <img class="heading-background" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}); background-size: cover; background-position: center;">
@@ -43,7 +44,7 @@
       {{ end }}
     </div>
     <a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>
-</br></br>
+<br><br>
 <div class="read-more">
   <h2>Läs mer om:</h2>
     <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
@@ -61,3 +62,4 @@
 
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
+</body>

@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
     {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+    <body>
      {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
 
      <!-- HEADING -->
@@ -21,3 +22,4 @@
     </main>
     <!-- FOOTER -->
     {{ if eq .Params.language "En" }}{{ partial "en-footer.html" .}}{{ else if eq .Params.language "No" }}{{ partial "no-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
+</body>
