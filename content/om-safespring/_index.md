@@ -5,7 +5,7 @@ draft: false
 intro: "Safespring levererar lokalt producerade säkra molntjänster. Med datacenter i Sverige håller du din data inom landets gränser."
 background: ""
 ---
-<div class="ingress"><p>Som man kan gissa på vårt namn är säkerhet är något vi brinner för! Vi tycker det är självklart att producera våra tjänster lokalt. Skälen är flera, förutom prestanda och närhet så är det i många fall ett krav för att uppfylla lagar och regler, att data inte lämnar landet.</p></div>
+<div class="ingress"><p>Vi tycker det är självklart att producera våra tjänster lokalt. Skälen är flera, förutom prestanda och närhet så är det i många fall ett krav för att uppfylla lagar och regler, att data inte lämnar landet.</p></div>
 
 Ytterligare en viktig aspekt är att vi är ett svenskt bolag som därigenom inte omfattas av Cloud Act, och kan därför inte tvingas att lämna ut din data till tredje part.
 Exempel på regelverk kan vara GDPR och Arkivlagen.
