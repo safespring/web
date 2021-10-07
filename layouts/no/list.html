@@ -18,6 +18,13 @@
         <a id="button" href="/no/tjenester/" style="margin:0 20px 20px 0;">Hva vi tilbyr</a><a id="text-button" href="#down">Om oss</a>
     </div>
   </div>
+  <div class="background-bright">
+<div class="flexcontainer-start" style="align-items:baseline;">
+          {{ range where (where $.Site.RegularPages "Section" "no" ) "Params.tags" "bransjer" }}
+            {{ .Render "li"}}
+            {{ end }}
+      </div>
+    </div>
 
   <!-- CONTENT -->
   <main class="content-main-index" id="down">
