@@ -10,10 +10,10 @@ intro: "Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjen
 partner: "elastisys.svg"
 audience: "saas"
 language: "No"
-explorer: "https://youtu.be/zwWd7Wzrs90"
+explorer: "https://youtu.be/qjCBWbbXgus"
 ---
 
-{{< youtube zwWd7Wzrs90 >}}
+{{< youtube qjCBWbbXgus >}}
 
 ### Om denne fireside chat
 
