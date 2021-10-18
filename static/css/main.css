@@ -699,6 +699,7 @@ label.switch-label {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	height: 75vh;
+	min-height: 600px;
 }
 
 .heading-index:before {
