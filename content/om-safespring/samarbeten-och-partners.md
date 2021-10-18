@@ -29,7 +29,6 @@ Kontakta oss för att diskutera vidare! Vi är övertygade att vi hittar en sama
 <div class="partner-grid">
 <a href="https://nextcloud.com"><div class="partner-container"><img style="max-height:70px;" class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_nextcloud.svg"></div></a><a href="https://elastisys.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_elastisys.svg"></div></a>
 <a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_severalnines.svg"></div></a>
-<a href="http://www.synkzone.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_synkzone.png"></div></a>
 <a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_piql.png"></div></a>
 <a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_scaleout-systems.png"></div></a>
 <a href="https://www.suse.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_suse.png"></div></a>
@@ -38,5 +37,4 @@ Kontakta oss för att diskutera vidare! Vi är övertygade att vi hittar en sama
 <a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_sunet.png"></div></a>
 <a href="https://www.uninett.no/en"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_uninett.png"></div></a>
 <a href="http://www.denali.no/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_denali.png"></div></a>
-<a href="https://www.microsoft.com"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_microsoft.png"></div></a>
 </div>
