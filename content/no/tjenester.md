@@ -6,7 +6,6 @@ draft: false
 language: En
 section: "Safespring tjenester"
 Language: "No"
-socialmedia: "/safespring-start.jpg"
 ---
 
 <div class="ingress"><p>Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge.</p></div>
