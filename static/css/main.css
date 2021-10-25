@@ -69,7 +69,7 @@ li {
 }
 
 .toc {
-	display: grid;grid-column: 7 / span 4;
+	display: grid;grid-column: 8 / span 3;
 	position: sticky;
 	top: 70px;
 	height: fit-content;
@@ -1378,8 +1378,8 @@ text-align: center;
 	}
 
 	.toc {
-		margin-right: 5%;
-		margin-left: 5%;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 	.ch-content {

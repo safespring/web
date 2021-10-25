@@ -4,5 +4,4 @@ intro: "Safespring er en nordisk leverandør av sky og infrastruktur som en tjen
 date: "2020-09-25"
 draft: false
 language: "No"
-socialmedia: "/safespring-start.jpg"
 ---

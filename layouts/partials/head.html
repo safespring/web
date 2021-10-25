@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		 <meta property="og:title" content="Safespring | {{ .Title }}" />
 		 <meta property="og:type" content="website" />
 		 <meta property="og:url" content="{{ .URL  | absURL }}" />
-		 <meta property="og:image" content="https://www.safespring.com{{ if isset .Params "socialmedia" }}/img/{{ index .Params "socialmedia" }}{{ else }}/img/socialmedia/safespring-start.jpg{{ end }}">
+     <meta property="og:image" content="https://www.safespring.com{{ if isset .Params "socialmedia" }}/img/{{ index .Params "socialmedia" }}{{ else if eq .Params.language "No" }}/img/safespring-social_media-animation-norway.gif{{ else }}/img/socialmedia/safespring-start.jpg{{ end }}">
 		 <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
 		 <meta property="og:site_name" content="Safespring" />
 {{ if isset .Params "noindex" }}

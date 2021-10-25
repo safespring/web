@@ -6,7 +6,6 @@ draft: false
 language: "No"
 section: "Pris"
 Language: "No"
-socialmedia: "/safespring-start.jpg"
 sidebarlinkname: "Last ned priskalkulator"
 sidebarlinkurl: "/pricelist/NOR/safespring-price-list_2020-09-23.xlsx"
 ---
