@@ -1378,8 +1378,8 @@ text-align: center;
 	}
 
 	.toc {
-		margin-right: 5%;
-		margin-left: 5%;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 	.ch-content {
