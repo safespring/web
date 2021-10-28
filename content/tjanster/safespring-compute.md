@@ -43,6 +43,8 @@ Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid be
 
 <br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
 
+{{< youtube iYDi_Hz7A74 >}}
+
 ### Datahallar inom landets gränser
 Tjänsten levereras från våra mycket säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett nordiskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
 
@@ -54,6 +56,8 @@ Safespring Compute är byggd på Open Source. De senaste decennierna har visat a
 Eftersom att OpenStack är baserad på Open Source gör det också att den fungerar mycket bra som bottenplatta för andra projekt baserade på öppen källkod t ex containers och Kubernetes. Om dessa verktyg används på rätt sätt kan ert företag skapa de tekniska förutsättningarna för att arbeta helt enligt DevOps.
 
 Plattformen skapar också ett ramverk för att designa sina applikationer så att de är anpassade för molnet, s k Cloud Native. Den stora skillnaden i design från traditionella applikationsuppsättningar är att tjänsterna delas upp i små tjänster som är lätta att skala horisontellt - dvs. att man skapar många små byggklossar som tillsammans delar på arbetet istället för att öka resurserna på en nod som gör allt (monolit).
+
+
 
 ### Kubernetes och containrar
  ...gör det också lätt att automatisera uppsättningen av applikationer  och gör det också möjligt att låta uppsättningen skala efter behov. Det går också att använda Kubernetes för att skapa en likadan uppsättning av dina applikationer, oavsett om ni kör dem hos oss, hos er eller hos en annan molnleverantör.
