@@ -10,7 +10,7 @@ socialmedia: "/safespring-start.jpg"
 ---
 <div class="ingress"><p>Safespring has offices in Sweden and in Norway with headquarters in Stockholm, Sweden.</p></div>
 
-The easiest way is to contact us by phone or mail. If you have general questions, you can call us or send us an email at our info-address, but of course you are also welcome to contact any of our employees directly.
+The easiest way is to contact us by phone or mail. If you have general questions, you can call us or send us an email at our info address, but of course, you are also welcome to contact any of our employees directly.
 
 <span class="inline-rubrik">Phone</span><br>
 <a href="tel:+46855107370">+46 8-55 10 73 70</a>

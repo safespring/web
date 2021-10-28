@@ -35,28 +35,28 @@ The service is available on a per GB per hour basis. Users can access the servic
 
 <span class="inline-rubrik">Large:</span> This storage service is based on mechanical SAS hard disks with NVRAM write cache to ensure a balance between price and performance. The service is well suited to file storage and operating systems. The service is used together with our Compute service and is provisioned by way of a self-service portal or API.
 
-<span class="inline-rubrik">Active archive:</span> This storage service is an object storage service based on SMR hard disks. We give your application access to an S3 interface. The service is optimised for large, inexpensive storage spaces and is well suited to applications that read or write large volumes of data, such as e-archives or web applications for publishing data. The service is provisioned by way of an API.
+<span class="inline-rubrik">Active archive:</span> This storage service is an object storage service based on SMR hard disks. We give your application access to an S3 interface. The service is optimized for large, inexpensive storage spaces and is well suited to applications that read or write large volumes of data, such as e-archives or web applications for publishing data. The service is provisioned by way of an API.
 
-The service’s detailed invoice and can can be easily downloaded, while role-based access gives the IT department full usage traceability, enabling resource consumption costs to be pinpointed at user or department level. Quotas are easily set for individual users or projects. This then gives the company complete cost control and traceability, and enables the company to solve the problem of the phenomenon popularly called “shadow IT”.
+The service’s detailed invoice and can be easily downloaded, while role-based access gives the IT department full usage traceability, enabling resource consumption costs to be pinpointed at a user or department level. Quotas are easily set for individual users or projects. This then gives the company complete cost control and traceability, and enables the company to solve the problem of the phenomenon popularly called “shadow IT”.
 
 ### Service highlights
 
 - Flexible cloud-based storage in one of three different services depending on your requirements
-- Data is transmitted encrypted to a data centre and stored on encrypted disks in the data centre
+- Data is transmitted encrypted to a data center and stored on encrypted disks in the data center
 - Invoice-based payment
 - Easy-to-use self-service portal
 - 24/7 technical support, all year round
 
 ### Factsheet
 
-Storage as a service, is a cloud-based service created to cater for the stringent requirements of the education and research sector in the Nordic region. All data is stored in our data centre to give users the security and control they need. Our Storage service is flexible and easy to use, either via the self-service portal or via automated standard request to the service’s API, making it very well suited to integration with applications.
+Storage as a service is a cloud-based service created to cater to the stringent requirements of the education and research sector in the Nordic region. All data is stored in our data center to give users the security and control they need. Our Storage service is flexible and easy to use, either via the self-service portal or via an automated standard request to the service’s API, making it very well suited to integration with applications.
 
 ### Key features
 
 - <span class="inline-rubrik">Market-leading Ceph cloud technology</span> – Choose from three different storage services – Fast, Large, or Active Archive – High level of network performance and software-defined virtual networks to easily separate traffic.
 - <span class="inline-rubrik">Hourly rates</span> – Manage both peaks and low volumes – Discounts for one- or two-year minimum-term contracts.
 - <span class="inline-rubrik">Great flexibility for the user</span> – Elastic storage as required.
-- <span class="inline-rubrik">High level of security</span> – Role-based access control to the service. Optional integration with identity systems – Integrated with SWAMID & FEIDE for the education sector – Data is encrypted both during transmission (TLS) and in our data centre on self-encrypted hard disks.
+- <span class="inline-rubrik">High level of security</span> – Role-based access control to the service. Optional integration with identity systems – Integrated with SWAMID & FEIDE for the education sector – Data is encrypted both during transmission (TLS) and in our data center on self-encrypted hard disks.
 - <span class="inline-rubrik">High level of availability</span> – Disaster protection – Storage in another geographical location – Redundant internet connection – Direct connection to SUNET and UNINETT for the education sector.
 - <span class="inline-rubrik">Cost control</span> – Predict your costs by setting quotas for users and/or projects with invoice-based payment.
 
