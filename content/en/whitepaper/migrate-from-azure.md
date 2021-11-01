@@ -5,7 +5,7 @@ draft: false
 author: ""
 dokumentnamn: ""
 socialmedia: "/blogg/socialmedia/safespring_social_37-2.gif"
-intro: "This white paper summarises the steps that need to be taken to migrate from Azure Kubernetes Service."
+intro: "This white paper summarises the steps you need to migrate from Azure Kubernetes Service."
 sidebarlinkname: ""
 Section: "White Paper"
 sidebarlinkicon: "fa-file-download"

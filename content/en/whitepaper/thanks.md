@@ -11,7 +11,7 @@ Language: "En"
 ---
 
 {{% ingress %}}
-The White paper you just downloaded will be sent to the email address you provided in the form.
+We will send the White paper you just downloaded to the email address you provided in the form.
 {{% /ingress %}}
 
 If you need help or need to get in touch with us, please send an email to info@safespring.com.
