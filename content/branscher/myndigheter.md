@@ -26,7 +26,7 @@ Ett exempel är när kund avropar molntjänst tillsammans med konsulttjänster. 
 
 Safespring är underleverantör till:
 
-[![Safespring är underleverantör till Redpill Linpro och Cybercom](/img/ramavtalspartners.svg)](https://www.avropa.se/ramavtal/ramavtalsomraden/it-och-telekom/Programvaror-och-tjanster/programvarulosningar/IngaAvropsformer/)
+[![Safespring är underleverantör till Redpill Linpro och Cybercom](/img/ramavtalspartners.svg)](https://www.avropa.se/ramavtal/ramavtalsomraden/it-och-telekom/Programvaror-och-tjanster/programvarulosningar/)
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 
