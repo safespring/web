@@ -1119,8 +1119,56 @@ label.switch-label {
   color: var(--clear-blue-color);
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: 2em;
+  margin-left: -2em;
+}
+
+.videoplayer {
+
+}
+.video{
+	float: right;
+}
+.playlist {
+	height: 300px;
+	overflow: scroll;
+}
+
+.float-right {
+	float: right !important;
+}
+
+.playlist ul li::before {
+  font-family: "Font Awesome 5 Free";
+	content: "\f144";
+  color: var(--clear-blue-color);
+	padding: 20px;
+}
+
+.playlist ul li:hover:before {
+	background-color: #F2F7F9;
+}
+
+.playlist ul li {
+	font: 20px var(--hind-font) !important;
+	color: var(--main-color) !important;
+	margin: 0px;
+	/*padding: 15px 0 13px 0;*/
+	border-bottom: 0.25px solid #E8EFF3;
+}
+
+.playlist ul li span {
+	float:right;
+	padding: 17px 15px 0 0;
+}
+
+.playlist ul li a{
+	font: 20px var(--hind-font) !important;
+	color: var(--main-color) !important;
+}
+
+.playlist li:hover {
+	background-color: #F2F7F9;
 }
 
 .content-body ul li > ul {
@@ -1312,8 +1360,8 @@ text-align: center;
 	.ch-content {
 		display: -ms-grid;
 		display: grid;
-		grid-column: 1 / span 7;
-		margin: 10%;
+		grid-column: 2 / span 5;
+		margin: 10% 0;
 }
 
 	.ch-content p, h1, h2, h3, h4, li, ol {
@@ -1379,11 +1427,11 @@ text-align: center;
 
 	.toc {
 		margin-right: 0;
-		margin-left: 0;
+		margin-left: ;
 	}
 
 	.ch-content {
-		grid-column: 2 / span 5;
+		grid-column: 3 / span 4;
 	}
 	.listpage {
 		grid-column: span 7;
