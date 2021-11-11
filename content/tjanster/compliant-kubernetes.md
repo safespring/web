@@ -54,6 +54,10 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       videoId: 'zVKS_yRL09Q',
+      playerVars: {
+        'modestbranding': 1,
+        'iv_load_policy': 3
+},
     });
   }
   function setCurrentTime(slideNum) {
@@ -80,7 +84,7 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
 
   <div id="contact"></div>
   <div style="margin-bottom:100px;"></div>
-  
+
   ### Varför Compliant Kubernetes?
 
   Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
