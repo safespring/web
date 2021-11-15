@@ -9,6 +9,7 @@
 	--web-green-color: #19F064;
 	--green-color: #32CD32;
 	--clear-blue-color: #3C9BCD;
+	--cloud-blue-color: #E8EFF3;
 	--hind-font: "Hind", sans-serif;
 	--mon-font: "Montserrat", sans-serif;
 	--extra-light-weight: 100;
@@ -1171,6 +1172,97 @@ label.switch-label {
 	background-color: #F2F7F9;
 }
 
+@media only screen and (min-width: 900px) {
+.webinarplayer {
+	margin-top: 10%;
+	display: grid;
+	grid-column: 2 / span 8;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.webinarvideo {
+	display: grid;
+	grid-column: 1 / span 3;
+}
+
+.webinarplaylist-container {
+	grid-column: 4 / span 2;
+	padding: 40px 40px 40px 0;
+	margin: 0 0 0 40px;
+	border-radius: 10px;
+	background-color: white;
+}
+}
+
+@media only screen and (max-width: 900px) {
+.webinarplayer {
+	margin-top: 10%;
+	display: grid;
+	grid-column: 2 / span 8;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.webinarvideo {
+	display: grid;
+	grid-column: 2 / span 8;
+}
+
+.webinarplaylist-container {
+	grid-column: 2 / span 8;
+	padding: 40px 40px 40px 0;
+	margin: 40px 0 0 0;
+	border-radius: 10px;
+	background-color: white;
+}
+}
+
+.webinarplaylist-container h3 {
+	padding-left: 50px;
+	margin: 10px 0 0 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.webinarplaylist {
+	overflow: scroll;
+}
+
+.webinarplaylist ul li::before {
+  font-family: "Font Awesome 5 Free";
+	content: "\f144";
+  color: var(--clear-blue-color);
+	padding: 20px;
+}
+
+.webinarplaylist ul li:hover:before {
+	background-color: #F2F7F9;
+}
+
+.webinarplaylist ul li {
+	font: 20px var(--hind-font) !important;
+	color: var(--main-color) !important;
+	margin: 0px;
+	padding: 20px 0;
+	border-bottom: 0.25px solid #E8EFF3;
+	list-style-type: none;
+	list-style-position: outside;
+	line-height: 1 !important;
+}
+
+.webinarplaylist ul li span {
+	float:right;
+	padding: 0px 15px 0 0;
+}
+
+.webinarplaylist ul li a{
+	font: 20px var(--hind-font) !important;
+	color: var(--main-color) !important;
+}
+
+.webinarplaylist li:hover {
+	background-color: #F2F7F9;
+}
+
 .content-body ul li > ul {
 	margin: 3px 0 15px 0;
 }
@@ -1382,6 +1474,11 @@ text-align: center;
 		padding: 10% 15% 10% 15%;
 		border-radius: 10px;
 	}
+	.webinar-side-bar {
+		grid-column: 1 / span 10;
+		padding: 10%;
+		background-color: var(--cloud-blue-color)
+	}
 	.event-sidebar {
 		height: fit-content;
 		background-color: #FFF;
@@ -1419,7 +1516,11 @@ text-align: center;
 		grid-column: 3;
 		min-width: 150px;
 	}
-
+	.webinar-side-bar {
+		padding: 5% 20%;
+		background-color: var(--cloud-blue-color);
+		height: 100%;
+	}
 	.ch-sidebar-logo {
 		padding: 0 0 15px;
 		max-width: 65px !important;
@@ -1463,6 +1564,11 @@ text-align: center;
 	.ch-content {
 		grid-column: span all;
 		margin: 30px;
+	}
+	.webinar-side-bar {
+		padding: 10%;
+		background-color: var(--cloud-blue-color);
+		height: 100%;
 	}
 	.ch-sidebar {
 		background-color: #FFF;
