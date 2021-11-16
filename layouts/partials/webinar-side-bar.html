@@ -24,7 +24,7 @@
   {{ end }}
 </div>
 {{ else }}
-<div class="ch-sidebar shadow-1">
+<div class="webinar-side-bar">
   <div>
     <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
   </div>
@@ -36,25 +36,13 @@
   <div>
     {{ if eq .Params.audience "kommun" }}
     {{ range where .Site.RegularPages ".Params.audience" "kommun" }}
-    {{ .Render "li-1" }}
+    {{ .Render "li" }}
     {{ end }}
     {{ else }}
     {{ range where .Site.RegularPages ".Params.audience" "saas" }}
-    {{ .Render "li-1" }}
+    {{ .Render "li" }}
     {{ end }}
     {{ end }}
-
-  </div>
-
-  <div class="read-more">
-    <h2>Läs mer</h2>
-      <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
-      <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
-      <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
-      <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
-      <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
-      <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
-      <li class="content-body"><a href="/support">&gt; Support</a></li>
   </div>
 </div>
 {{ end }}

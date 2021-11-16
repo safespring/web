@@ -9,9 +9,20 @@ intro: "Känns Kubernetes lite som en svart låda? I det här samtalet tar vi up
 partner: "elastisys.png"
 audience: "saas"
 explorer: "https://youtu.be/np0mDvTmaZM"
+youtube: "np0mDvTmaZM"
+timecodes: "0, 132, 780, 2017, 2661"
+chapter1: "Intro"
+minute1: "00:00"
+chapter2: "Best Practice"
+minute2: "02:12"
+chapter3: "ISO 27001 Controls"
+minute3: "13:00"
+chapter4: "Vanliga kundcase"
+minute4: "33:37"
+chapter5: "Frågor och svar"
+minute5: "44:21"
 ---
 
-{{< youtube np0mDvTmaZM >}}
 
 {{< ingress>}}
 Vi går igenom Kubernetes med hög säkerhet under tre punkter. Även nu efter webbinariet kan du ställa frågor till våra experter inom Kubernetes och säkra molntjänster.
