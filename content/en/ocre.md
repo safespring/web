@@ -36,8 +36,6 @@ Safespring's data centers are directly connected to the NREN Network to give you
 
 We are delighted to have qualified for this framework agreement to support the research and education community with our modern, API-based services that support federated login to enable single sign-on. More than 60 universities trust Safespring's services, institutions, and research platforms, and we're hoping to be part of your digital future as well. Welcome to make the first contact!
 
-{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Schedule a video call" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c?utm_source=website" linktext="Book meeting" text="Hi, I'm Johan Harrysson, the COO here at Safespring. Let's discuss your needs and how Safespring's platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty.">}}
-
 ### OCRE Cloud Funding for Research
 
 On 15 September 2020, OCRE launched its first funding call to adopt cloud services available through the OCRE IaaS+ framework agreements. OCRE is planning to open two subsequent calls for projects in February and July 2021, respectively.
