@@ -1,28 +1,40 @@
 ---
-title: "Samarbeten & Partners"
+title: "Safesprings molnplattform för partners"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Vår egen djupa kompetens, våra egenproducerade tjänster och plattformar tillsammans med samarbeten gör oss mycket flexibla och snabbfotade."
+intro: "Vår djupa kompetens och våra egenproducerade tjänster tillsammans med samarbeten gör oss mycket flexibla."
 background: ""
 ---
-<p class="quote">“Stora saker i affärer görs aldrig av en person.
-De görs av ett team människor” – Steve Jobs</p>
 
-<div class="ingress"><p>Vår övertygelse är att samarbeten är en vinnande strategi och samarbetar därför gärna!</p></div>
+{{< ingress >}}
+Safespring är en svensk moln-och infrastrukturleverantör som levererar en plattform skapad för korrekt hantering av personuppgifter och känslig data.
+{{< /ingress >}}
 
-Vi vet att våra tjänster och plattformar mångsidiga och våra lösningar är ett mycket bra fundament för många olika typer av branscher och tillämpningar, men vi vet även att vi inte når samtliga kunder av egen kraft, så därför samarbetar vi!
+![Safespring Partner Key points](/img/safespring_key-points-partner.svg)
 
-En del av våra kunder är slutkunder och slutanvändare, men många av de som brukar våra tjänster går via partners och återförsäljare av våra tjänster. Ytterligare andra använder våra tjänster för att i sin tur producera sina tjänster, ex. en applikation eller system.
+## Vinn upphandlingar tillsammans med oss
 
-### Vi arbetar med handplockade partners
+{{< ingress >}}
+Med er tjänst på Safesprings plattform får ni en starkare erbjudande vid upphandlingar.
+{{< /ingress >}}
 
-Vi stannar dock inte vid att ha olika försäljningskanaler, vi samarbetar även på leverantörssidan när vi har behov av att förstärka eller komplettera vår egen leverans. Vi arbetar med handplockade partners, som var och en är specialister inom sitt område. Vi samordnar dessa och tar helhetsansvaret gentemot dig som kund. Har du som kund någon befintlig leverantör som det är lämpligt att vi samarbetar med i ett projekt så gör vi naturligtvis gärna det med!
+Molntjänster växer över 20 procent per år och står i snitt för elva procent av totala IT-budgeten i dagsläget. Molntjänster i upphandlingar väntas med detta också öka och även kraven för korrekt hantering av personuppgifter och känslig data.
 
-Vår egen djupa kompetens, våra egenproducerade tjänster och plattformar tillsammans med samarbeten gör att vi kan vara en mycket flexibel och snabbfotad leverantör som kan tillgodose just dina behov.
+Med Safespring som underleverantör kan ni bjuda på flera upphandlingar med mera specifika krav. Vi vill gärna hjälpa er i de fallen där dessa frågor avropas och är viktiga. Vi har lång erfarenhet och ett starkt nätverk inom upphandling. Vi ger er även en dedikerat kontaktperson och supportväg.
 
-Kontakta oss för att diskutera vidare! Vi är övertygade att vi hittar en samarbetsform!
+{{< 2calltoaction "Ring oss" "tel:+46855107370" "Hitta kontaktperson" "/kontakt" >}}
 
-{{< 2calltoaction "Bli partner" "/om-safespring/bli-partner" "Kontakta oss" "/kontakt" >}}
+### Inga tveksamma underleverantörer
+
+Vår plattform tar bort den komplexa processen för partners att granska och utvärdera flera underleverantörer och i sin tur deras underleverantörers leverantörer. Safespring hanterar data korrekt och där tar trappan med underleverantörer slut.
+
+Safesprings molntjänst berörs inte av domar som ogiltighetsförklaringen av Privacy Shield (Schrems  II), CLOUD Act eller FISA 702 som amerikanska molnleverantörer gör.
+
+![Safespring Partner Key points](/img/safespring_key-points-partner-3.svg)
+
+Vår plattform har aldrig behövt kompromissa med svensk- eller europeisk lagstiftning. Korrekt hantering av personuppgifter i molnet har varit en debatt länge och det har inte lagts fram en lösning. I stället har många enskilda individer eller företag valt att tolka frågan olika och det enda vi vet är att rättsläget bara blir mera komplext och åtstramat.
+
+Som partners till Safespring kan ni garantera era kunder en korrekt hantering av personuppgifter och annan känslig data utan kompromiss. Med datacenter i Sverige och som ett helt svenskt bolag garanterar vår plattform trygghet, både tekniskt och juridiskt, att data stannar i Sverige och hanteras korrekt.
 
 ## Några av våra partners
 
