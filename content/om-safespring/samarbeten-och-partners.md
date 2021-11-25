@@ -18,7 +18,7 @@ Safespring är en svensk moln-och infrastrukturleverantör som levererar en plat
 Med er tjänst på Safesprings plattform får ni en starkare erbjudande vid upphandlingar.
 {{< /ingress >}}
 
-Molntjänster växer över 20 procent per år och står i snitt för 11 procent av totala IT-budgeten i dagsläget. Molntjänster i upphandlingar väntas med detta också öka och även kraven för korrekt hantering av personuppgifter och känslig data.
+Molntjänster växer över 20 procent per år och står i snitt för elva procent av totala IT-budgeten i dagsläget. Molntjänster i upphandlingar väntas med detta också öka och även kraven för korrekt hantering av personuppgifter och känslig data.
 
 Med Safespring som underleverantör kan ni bjuda på flera upphandlingar med mera specifika krav. Vi vill gärna hjälpa er i de fallen där dessa frågor avropas och är viktiga. Vi har lång erfarenhet och ett starkt nätverk inom upphandling. Vi ger er även en dedikerat kontaktperson och supportväg.
 
