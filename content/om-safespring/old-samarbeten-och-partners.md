@@ -2,7 +2,7 @@
 title: "Samarbeten & Partners"
 date: 2019-01-07T13:58:58+01:00
 draft: true
-intro: "Vår egen djupa kompetens, våra egenproducerade tjänster och plattformar tillsammans med samarbeten gör oss mycket flexibla och snabbfotade."
+intro: "Vår djupa kompetens och våra egenproducerade tjänster tillsammans med samarbeten gör oss mycket flexibla."
 background: ""
 ---
 <p class="quote">“Stora saker i affärer görs aldrig av en person.
