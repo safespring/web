@@ -18,9 +18,6 @@ Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontak
 ### Legal grund
 Den legala grunden för behandlingen av Personuppgifterna för Ändamålet är vårt berättigade intresse att på ett effektivt sätt kunna marknadsföra de tjänster vi erbjuder. Personuppgifterna lagras på ett säkert sätt i linje med vår affärsmodell och du har rätt att när som helst be os radera Personuppgifterna och/eller ange att du inte vill bli kontaktad av oss. Vi kommer att behandla Personuppgifterna så länge du godkänner det. Då behandlingen upphör raderas Personuppgifterna.
 
-### Tredje part
-Vi kan komma att dela Personuppgifterna med de tredje parter som vi anlitar för att uppnå Ändamålen, vilket kan vara t.ex. för extern lagring. En sådan tredje part kan vara belägen i ett land utanför EU/EES. Om Europakommissionen inte anser att landet säkerställer en adekvat skyddsnivå kommer överföringen till den tredje parten att ha stöd i kommissionens standardavtalsklausuler för överföring av personuppgifter till ett land utanför EU/EES, se artiklarna 45-46 i dataskyddsförordningen. Dessa standardavtalsklausuler finns åtkomliga på [Europakommissionens webbplats](http://ec.europa.eu/justice/data-protection/international-transfers/transfer "Europakommissionens webbplats").
-
 ### Dina rättigheter
 Om du har några frågor avseende vår behandling av Personuppgifterna, bör dessa ställas till oss via E-mailadress GDPR@safespring.com. Dessa kontaktuppgifter kan även användas om du önskar att utöva någon av dina rättigheter enligt dataskyddsförordningen (2016/ 679). Dessa rättigheter är inte absoluta och en begäran om utövande av rättigheterna resulterar därför inte alltid i någon åtgärd. Rättigheterna i dataskyddsförordningen inkluderar:
 
