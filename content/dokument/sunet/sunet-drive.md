@@ -167,5 +167,3 @@ Increased international cooperation has become one of the driving factors to inf
 By using standard hardware and established open-source projects, Sunet Drive provides a storage solution designed to solve the ever-increasing storage needs in the academic sector.
 
 By connecting it to already existing solutions such as SWAMID for identity handling, the researchers will be able to work and collaborate with large datasets. This is combined with predictable cost and the ability to let the data follow the researcher instead of the other way around.
-
-{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Schedule a video call" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c?utm_source=website" linktext="Book a meeting" text="Hi, I'm Johan Harrysson, the COO here at Safespring. Let’s discuss your needs and how Sunet Drive enables open standards, GDPR compliance and is letting you maintain digital sovereignty." >}}

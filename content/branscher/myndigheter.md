@@ -8,6 +8,8 @@ intro: "Safesprings tjänster går att upphandla genom Kammarkollegiets ramavtal
 background: "safespring_bilder_10.jpg"
 aliases:
     - /myndighet/
+sidebarlinkurl: "/webinar/forth-fireside-chat-it-sakerhetsbolaget/"
+sidebarlinkname: "Se fireside chat 16/12"
 ---
 
  ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
