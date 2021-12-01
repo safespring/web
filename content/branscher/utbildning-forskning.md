@@ -20,8 +20,6 @@ Safesprings datacenter är direktanslutna till NREN-nätverket för att ge dig b
 
 Vi är mycket glada över att ha kvalificerat oss för OCRE-ramavtalet. Ramavtalet låter oss stödja forsknings- och utbildningssektorn med våra moderna, API-baserade tjänster som stöder federerad inloggning för att möjliggöra enkel inloggning. Safesprings tjänster används av över 60 universitet, institutioner och forskningsplattformar och vi hoppas också kunna vara en del av din digitala framtid. Välkommen att ta kontakt med oss!
 
-{{< calendly image="/img/kontakt/johan-harrysson.jpg" cardtitle="Boka videosamtal" link="https://calendly.com/johan-harrysson/ocre?hide_gdpr_banner=1&primary_color=195f8c?utm_source=website" linktext="Boka tid" text="Hej, jag heter Johan Harrysson och är COO här på Safespring. Låt oss diskutera dina behov och hur Safesprings plattform möjliggör öppna standarder, GDPR-efterlevnad och låter dig behålla digital suveränitet." >}}
-
 ### OCRE Cloud Funding for Research
 
 Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagande av molntjänster som är tillgängliga via OCRE IaaS + ramavtal. Två efterföljande projektanrop planeras att öppnas i februari respektive juli 2021.
@@ -30,5 +28,4 @@ Under detta första molnfinansieringssamtal syftar OCRE till att finansiera kons
 
 {{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
 
-{{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CEO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
 {{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}

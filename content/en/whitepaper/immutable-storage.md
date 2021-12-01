@@ -30,14 +30,6 @@ By using the solution described in this brief, the organization can achieve thes
 * A secure off-site storage for critical backup data.
 * A cost-efficient solution that meets all security requirements from a demanding organization.
 
-<br>
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a class="button" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/petter-hylin/introduction'});return false;">Book an introduction</a>
-<!-- Calendly link widget end -->
-<br>
-
 ## The 3-2-1 rule
 
 There are several ways to design a backup solution but most seem to agree that the 3-2-1 rule is a good principle. It means that one should have three copies of the data, on two separate media out of which one of the copies should be stored offsite. The traditional solution to cater for this was to use a tape robot with a rolling scheme where tapes with complete backups were transported to a different location at reoccurring times.

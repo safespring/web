@@ -22,8 +22,6 @@ Vår lagringstjänst använder {{% tooltip "S3-protokollet" %}}S3 kan användas 
 
  Med immutable objects blir Safespring Storage en perfekt tjänst för modern offsite backup inom Sverige. Det gör att du kan låsa data och hindra all förändring och radering under en tidsperiod som du själv väljer. Din backup är alltså säkrad och redo när du behöver den.
 
-<br><a class="button mb-2" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/petter-hylin/introduktion-till-safespring'});return false;"><i class="fas fa-calendar-check"></i> Boka introduktion (15 min)</a><br><br><br><br>
-
 ![Safespring Storage benefits](/img/safespring-storage-key-points.svg)
 
 ### Passar för lagring av känslig data
@@ -37,6 +35,3 @@ Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som repl
 
 <br><br>
 <a href="/whitepaper/immutable-storage"><img alt="Immutable Objects Solution Brief" src="/img//blogg/socialmedia/safespring_social_38.gif"></a>
-
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>

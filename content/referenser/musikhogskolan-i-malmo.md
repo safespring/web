@@ -6,7 +6,7 @@ intro: "Musikhögskolan i Malmö (MHM) behövde sätta upp egna system i Safespr
 background: "safespring_bilder_mhm.jpg"
 socialmedia: ""
 ---
-## Musikhögskolan i Malmö får en expressförbindelse (Saferoute) till Safespring Compute)
+## Musikhögskolan i Malmö får en expressförbindelse (Saferoute) till Safespring Compute
 Musikhögskolan i Malmö (MHM) behövde sätta upp egna system i Safespring Compute, men den centrala IT-policyn krävde att alla system passerade genom centrala brandväggar.
 
 Safespring Saferoute är en nätverkstjänst som gör det möjligt att sätta upp en MPLS-förbindelse mellan Safesprings plattform och det enskilda lärosätet, med möjlighet att använda lärosätets IP-adresser i Safespring Compute.
