@@ -26,6 +26,6 @@ Patrik fra IT-Säkerhetsbolaget AB og Gabriel fra Safespring vil oppsummere hva 
 
 Få din link i dag og få tilsendt opptaket dersom du ikke kan delta 16. desember kl 13:00!
 
-{{< localbutton "Få din link" "https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA" >}}
+{{< localbutton "Meld deg på" "https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA" >}}
 
 <a href="https://www.safespring.com/webinar/forth-fireside-chat-it-sakerhetsbolaget/"><img style="max-width: 90%; margin: 10% 0; border-radius: 10px;cursor: pointer;" src="/img/event/socialmedia/safespring_social_41-no.gif"></img></a>
