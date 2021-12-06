@@ -19,4 +19,4 @@ Share some basic information and submit your resume. If there’s a role that mi
 
 Send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com) please, or upload them Nextcloud by clicking on the button below labeled "Submit resume".
 
-{{% localbutton "Submit resume" "https://nextcloud.safespring.com/index.php/s/ciHKRKojcgdd9j5" %}}
+{{% localbutton "Submit resume" "https://next.safespring.com/s/64fzktwr5tFpMQz" %}}

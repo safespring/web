@@ -5,8 +5,8 @@ Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2021-02-05"
-sidebarlinkurl: "#down"
-sidebarlinkname: "Apply now"
+sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
+sidebarlinkname: "Upload CV"
 sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
@@ -80,4 +80,4 @@ Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies
 ## How to apply
 To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
 
-{{% localbutton "upload application" "https://nextcloud.safespring.com/index.php/s/ciHKRKojcgdd9j5" %}}
+{{% localbutton "upload application" "https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
