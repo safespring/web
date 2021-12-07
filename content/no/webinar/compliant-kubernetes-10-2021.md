@@ -8,7 +8,6 @@ eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"
 intro: "Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjennom webinaret kan du stille spørsmål til våre eksperter på Kubernetes og sikre skytjenester."
 partner: "elastisys.svg"
-audience: "saas"
 language: "No"
 explorer: "https://youtu.be/qjCBWbbXgus"
 ---
