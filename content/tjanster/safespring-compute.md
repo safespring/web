@@ -55,8 +55,6 @@ Eftersom att OpenStack är baserad på Open Source gör det också att den funge
 
 Plattformen skapar också ett ramverk för att designa sina applikationer så att de är anpassade för molnet, s k Cloud Native. Den stora skillnaden i design från traditionella applikationsuppsättningar är att tjänsterna delas upp i små tjänster som är lätta att skala horisontellt - dvs. att man skapar många små byggklossar som tillsammans delar på arbetet istället för att öka resurserna på en nod som gör allt (monolit).
 
-{{< docs "compute" >}}
-
 ### Kubernetes och containrar
  ...gör det också lätt att automatisera uppsättningen av applikationer  och gör det också möjligt att låta uppsättningen skala efter behov. Det går också att använda Kubernetes för att skapa en likadan uppsättning av dina applikationer, oavsett om ni kör dem hos oss, hos er eller hos en annan molnleverantör.
 
