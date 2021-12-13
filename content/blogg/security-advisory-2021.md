@@ -43,12 +43,12 @@ Fortunately, this has no consequences for our systems, and no services are down.
 
 If you think you are not vulnerable, please check to be on the safe side one more time.
 
-Please note that Log4j is embedded in many other logging tools and services using those logging tools. There are a growing list of affected (and non-affected) technologies published here.
+Please note that Log4j is embedded in many other logging tools and services using those logging tools. There are a growing list of affected (and non-affected).
 
-{{< 2calltoaction "Affected technologies" "https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592" "Contact Safespring" "/en/contact/" >}}
+{{< 2calltoaction "Affected technologies" "https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592" "Read CVE announcement" "https://nvd.nist.gov/vuln/detail/CVE-2021-44228" >}}
 
 <div style="margin-bottom:50px;"></div>
 
-If we at Safespring have indications that services/instances in our infrastructure are taken and actively used in attacks, we will alert the customer, and if action is not taken, we will have to shut down those instances as soon as possible to prevent further damage.
+Suppose we at Safespring have indications that services or instances in our infrastructure are affected by the Log4j vulnerability and actively used in attacks. In that case, we will alert the customer, and if that customer doesn't take action, we will have to shut down those instances as soon as possible to prevent further damage.
 
-We don't actively monitor for this but we might get notified by others. It is the responsibility of the service owner to investigate the situation further in such cases.
+We don't actively monitor for this, but others might notify us. It is the responsibility of the service owner to investigate the situation further in such cases.
