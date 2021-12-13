@@ -16,9 +16,8 @@ A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that 
 
  Log4j is a Java based logging utility widely used in popular software systems.
 
-{{< inline_rubrik >}}Key Takeaways{{< /inline_rubrik >}}
+### Key Takeaways
 
-- Safespring has temporarily disabled all affected services.
 - This has no consequences for Safesprings systems.
 - Safespring customers should stop their services that might be affected.
 
@@ -26,8 +25,6 @@ A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that 
 
 
 ### What Safespring has done so far
-
-We at Safespring have gone through our systems and temporarily disabled all affected services.
 
 Fortunately, this has no consequences for our systems, and no services are down. However, we must point out that we do not have, and should not have, any knowledge of which applications our customers run and how they are affected by this.
 
