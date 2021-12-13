@@ -24,9 +24,13 @@ A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that 
 <div style="margin-bottom:50px;"></div>
 
 
-### What Safespring has done so far
+## What we've done so far
 
-Fortunately, this has no consequences for our systems, and no services are down. However, we must point out that we do not have, and should not have, any knowledge of which applications our customers run and how they are affected by this.
+{{% ingress %}}
+Fortunately, this has no consequences for our systems, and no services are down.
+{{% /ingress %}}
+
+However, we must point out that we do not have, and should not have, any knowledge of which applications our customers run and how they are affected by this.
 
 ### Recommendations to our customers
 
