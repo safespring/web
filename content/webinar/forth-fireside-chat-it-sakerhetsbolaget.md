@@ -16,7 +16,7 @@ sidebarlinkname: "SE DIREKT"
 
 {{< calendar month="dec" day="16" type="Fireside Chat" platform="Plattform: Zoom" time="Klockan 13:00" >}}
 
-![Safespring Fireside Chat](/img/event/socialmedia/safespring_social_41.gif)
+[![Safespring Fireside Chat](/img/event/socialmedia/safespring_social_41.gif)](https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA)
 
 {{< ingress>}}
 Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!
