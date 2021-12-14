@@ -6,7 +6,6 @@
 
   <!-- NAVBAR -->
   {{ partial "header.html" . }}
-  {{ partial "svg-filter.html" . }}
   <!-- HEADING -->
     <div class="heading-index">
       <div class="content-container-index">
@@ -30,7 +29,8 @@
   <!-- CONTENT -->
   <main class="content-main-index">
       <!-- Heading Text -->
-      <div class="content-image">
+      <div class="content-image" >
+      <img class="lazyload" data-src="/img/safespring-first-page.webp">
       </div>
 
       <!-- Body Text -->
@@ -53,14 +53,13 @@
       </div>
     </main>
     <div class="background-gray">
-
-      <video style="border-radius: 10px; margin-left: auto; margin-right: auto; display: block" width="1280" height="720" autoplay loop muted>
+      <div>
+        <a href="https://www.safespring.com/webinar/forth-fireside-chat-it-sakerhetsbolaget/">
+      <video autoplay muted loop width="90%" poster="/img/safespring-social_media-animation-firesidechat.webp" style="margin-left: auto; margin-right: auto; display: block">
         <source src="/img/safespring-social_media-animation-firesidechat.mp4" type="video/mp4" />
-        <source src="/img/safespring-social_media-animation-firesidechat.ogg" type="video/ogg" />
         Du kan tyvärr inte se denna video.
-      </video>
-
-<a href="https://www.safespring.com/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Länk till Fireside Chat</a>
+      </video></a>
+      </div>
       <div class="flexcontainer" style="align-items:baseline;">
             {{ range first 3 (where $.Site.RegularPages "Section" "blogg") }}
               {{ .Render "li"}}

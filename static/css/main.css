@@ -28,12 +28,22 @@
 	--border: var(--width-Ckb) - var(--height-Ckb)/10;
 }
 
+
 ::selection {
   color: #195F8C;
   background: #EAF0F4;
 }
 .br-5 {
 	border-radius: 5px !important;
+}
+
+code {
+	font-style: normal;
+	font-size: 13px;
+	background: #EAF0F4;
+	padding: 5px 8px;
+	border-radius: 5px;
+	color: #195F8C;
 }
 
 hr {
@@ -708,7 +718,7 @@ label.switch-label {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url('/img/safespring-index-2.jpg');
+	background: url('/img/safespring-index-2.webp');
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -1034,11 +1044,17 @@ label.switch-label {
 	grid-template-columns: repeat(10, 1fr);
 }
 .content-image {
-	background: url('/img/safespring-first-page.jpg');
-	background-size: cover;
-	background-position: center;
 	grid-column: span 4;
-	padding: 25%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.content-image img {
+	flex-shrink: 0;
+	min-height:100%;
+	min-width: 100%;
+	object-fit: cover;
 }
 
 @media only screen and (max-width: 900px) {
@@ -2946,7 +2962,7 @@ label {
 	}
 	.contact, .navigation, .copyright {
 		grid-column: unset;
-		justify-self: center
+		justify-self: center;
 	}
 	.address {
 		padding-right: 24.5px
