@@ -40,17 +40,18 @@
 
 {{ else }}
 
-<body>
 {{ partial "head.html" . }}
-    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-     {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
+<body>
+  {{ partial "g-tag-manager.html" . }}
+  <!-- NAVBAR -->
+  {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
 
-     <!-- HEADING -->
-     <div class="heading-sub" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/blue/{{ .Params.background }}{{ else }}/img/blue/safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
-       <div class="heading-content">
-         {{ .Render "li3" }}
-       </div>
-     </div>
+  <!-- HEADING -->
+  <div class="heading-sub" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/blue/{{ .Params.background }}{{ else }}/img/blue/safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
+    <div class="heading-content">
+      {{ .Render "li3" }}
+    </div>
+  </div>
 
   <!-- CONTENT -->
   {{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
@@ -58,15 +59,15 @@
   <main class="content-chalmers">
     <div class="ch-content">
       <div class="content-body">
-       {{ .Content }}
-       {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
-       {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
+        {{ .Content }}
+        {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
+        {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
       </div>
     </div>
-      <!-- SIDEBAR -->
-      {{ if eq .Params.language "En" }}{{partial "en-side-bar.html" . }}{{ else if eq .Params.language "No" }}{{partial "no-side-bar.html" . }}{{ else if eq $.Section "webinar" }}{{partial "webinar-side-bar.html" . }}{{ else if eq $.Section "kommun" }}{{partial "webinar-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
-    </main>
-    <!-- FOOTER -->
-    {{ if eq .Params.language "En" }}{{ partial "en-footer.html" .}}{{ else if eq .Params.language "No" }}{{ partial "no-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
-{{ end }}
+    <!-- SIDEBAR -->
+    {{ if eq .Params.language "En" }}{{partial "en-side-bar.html" . }}{{ else if eq .Params.language "No" }}{{partial "no-side-bar.html" . }}{{ else if eq $.Section "webinar" }}{{partial "webinar-side-bar.html" . }}{{ else if eq $.Section "kommun" }}{{partial "webinar-side-bar.html" . }}{{ else }}{{ partial "side-bar.html" . }}{{ end }}
+  </main>
+  <!-- FOOTER -->
+  {{ if eq .Params.language "En" }}{{ partial "en-footer.html" .}}{{ else if eq .Params.language "No" }}{{ partial "no-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
+  {{ end }}
 </body>
