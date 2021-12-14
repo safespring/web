@@ -11,10 +11,10 @@ language: "en"
 ---
 
 {{% ingress %}}
-A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that handles logging for Java programs.{{< /tooltip >}} was announced on the 10th of December 2021. Reports worldwide show that the vulnerability is actively and successfully used in attacks.
+A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that handles logging for Java programs.{{< /tooltip >}} was announced on the 10th of December 2021. Reports worldwide show that the vulnerability is used actively and successfully in attacks.
 {{% / ingress %}}
 
- Log4j is a Java based logging utility widely used in popular software systems.
+ Log4j is a Java-based logging utility widely used in popular software systems.
 
 ### Key Takeaways
 
@@ -44,7 +44,7 @@ However, we must point out that we do not have, and should not have, any knowled
 
 If you think you are not vulnerable, please check to be on the safe side one more time.
 
-Please note that Log4j is embedded in many other logging tools and services using those logging tools. There are a growing list of affected (and non-affected).
+Please note that Log4j is embedded in many other logging tools and services using those logging tools. There is a growing list of affected (and non-affected).
 
 {{< 2calltoaction "Affected technologies" "https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592" "Read CVE announcement" "https://nvd.nist.gov/vuln/detail/CVE-2021-44228" >}}
 
