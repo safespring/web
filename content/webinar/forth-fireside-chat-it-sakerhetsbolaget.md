@@ -19,7 +19,7 @@ sidebarlinkname: "SE DIREKT"
 [![Safespring Fireside Chat](/img/event/socialmedia/safespring_social_41.gif)](https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA)
 
 {{< ingress>}}
-Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!
+Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!
 {{< /ingress >}}
 
 <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Se del I</a><br>
