@@ -16,11 +16,11 @@ men du är naturligtvis välkommen att kontakta någon av våra medarbetare dire
 </div>
 
 {{< flexbox >}}
-{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@ safespring.se" >}}
-{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="KAM" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@ safespring.com" >}}
-{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@ safespring.com" >}}
-{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Cloud Architect" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@ safespring.com" >}}
-{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@ safespring.se" >}}
+{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.se" >}}
+{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="KAM" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}
+{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
+{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Cloud Architect" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
+{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.se" >}}
 {{< /flexbox >}}
 
 <div id="address"></div>
@@ -49,7 +49,7 @@ men du är naturligtvis välkommen att kontakta någon av våra medarbetare dire
 
 {{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Vice President" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
+{{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="CCO" name="Johan Harrysson" email="johan.harrysson@safespring.com" >}}
 {{< contact-small title="COO" name="Anders Bruvik" email="anders.bruvik@safespring.com" >}}
