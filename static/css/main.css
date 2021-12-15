@@ -571,7 +571,8 @@ label.switch-label {
 	}
 	.menu-item {
 		padding: 10px;
-	}
+		margin-left: 25px;
+		}
 }
 
 #h-bar {
@@ -1057,6 +1058,11 @@ label.switch-label {
 	object-fit: cover;
 }
 
+@media only screen and (max-width: 1150px) {
+.menu-item > a {
+	font: var(--heavy-weight) 25px var(--hind-font) !important;
+}
+}
 @media only screen and (max-width: 900px) {
 	.mobile {
 		display: block;
@@ -1069,14 +1075,11 @@ label.switch-label {
 		grid-column: span 10;
 	}
 	.menu-item {
-		margin-left: 24px;
+		margin-left: 25px;
 	}
 
 .sub-menu > a {
 	font: var(--normal-weight) 16px var(--mon-font);
-}
-.menu-item > a {
-	font: var(--heavy-weight) 25px var(--hind-font);
 }
 
 	.content-body-index {
