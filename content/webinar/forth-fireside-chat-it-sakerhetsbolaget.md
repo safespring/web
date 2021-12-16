@@ -14,9 +14,7 @@ sidebarlinkurl: "https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gX
 sidebarlinkname: "SE DIREKT"
 ---
 
-{{< calendar month="dec" day="16" type="Fireside Chat" platform="Plattform: Zoom" time="Klockan 13:00" >}}
-
-[![Safespring Fireside Chat](/img/event/socialmedia/safespring_social_41.gif)](https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA)
+![Safespring Fireside Chat](/img/event/safespring-video-placeholder.svg)
 
 {{< ingress>}}
 Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!
@@ -32,8 +30,4 @@ I slutet av året kommer tre omfattande rapporter om molntjänster. Vi tar upp v
 2. IT-driftsutredningen
 3. Skatteverkets analys av Gaia-X
 
-Ställ dina frågor direkt till Patrik Jonasson (Dataskyddsombud) och Gabriel Paues (Senior Cloud Architect). Vill du endast ha inspelningen så registrera dig och ta del av länken efteråt.
-
-Hoppas vi ses live den 16/12 2021.
-
-{{< localbutton "Hämta länk" "https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA" >}}
+Ställ dina frågor direkt till Patrik Jonasson (Dataskyddsombud) och Gabriel Paues (Senior Cloud Architect).
