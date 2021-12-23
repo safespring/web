@@ -12,9 +12,22 @@ audience: "saas"
 explorer: "https://youtu.be/XFjs2XShSS4"
 sidebarlinkurl: ""
 sidebarlinkname: ""
+youtube: "XFjs2XShSS4"
+timecodes: "0, 249, 350, 970, 2372, 2587"
+chapter1: "Intro"
+minute1: "00:00"
+chapter2: "Trender i rapporterna"
+minute2: "04:09"
+chapter3: "eSams rapport"
+minute3: "05:50"
+chapter4: "It-driftsutredningen"
+minute4: "16:10"
+chapter5: "Gaia-X"
+minute5: "39:32"
+chapter6: "Trenderna 2022"
+minute6: "43:07"
 ---
 
-{{< youtube XFjs2XShSS4 >}}
 
 {{< ingress>}}
 Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!
