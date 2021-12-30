@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "sv-SE"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
-copyright = "{{ now.Year }} Safespring"
+copyright = "2021 Safespring"
 
 
 # Pagination
