@@ -12,9 +12,8 @@ section: "Solution Brief"
 card: "safespring_card_21.jpg"
 eventbild: "safespring_background_21.jpg"
 socialmediabild: "safespring_social_21.gif"
-aliases:
-    - /openshift
 form: "yes"
+toc: "Innehållsförteckning"
 ---
 
 ![Safespring OpenShift benefits](/img/safespring_key-points-openshift-1.svg)
@@ -45,13 +44,28 @@ På Safesprings Openstack-baserade infrastruktur­plattform kan du snabbt distri
 
 <div style="margin-bottom:50px;"></div>
 
+### Detta behöver du för att köra igång
+
+- Ett projekt på [Safespring Compute](/compute) med följande resurser:
+    - Memory: 60GB
+    - VCPUs: 16
+    - Security group rules: 40
+    - Storage access to S3 in sto2 site
+    - A liveDNS domain @ gandi.net
+    - An API key for your gandi.net user
+
+### Terraform-modulen
 Kärnan vårt framtagna verktyg är Terraform-modulen som tillhandahåller alla nödvändiga resurser som ett OKD-kluster behöver för att sätta ihop sig själv, dvs. beräkna noder med olika roller (boot, master, worker), blocklagring, säkerhet, grupper, nätverk, DNS-poster, nyckelpar, och så vidare. Modulen är så generell som den kan vara.
 
+### Indataparametrar
 För att tillhandahålla klustret behöver det en stor mängd indataparametrar. Du kan välja att tillhandahålla dessa parametrar för att passa dina behov, men vi gjorde ett abstraktionslager som täcker vardagliga användningsfall för att göra detta så enkelt som möjligt. Det verktyg vi tagit fram ser till att du har alla beroenden på plats och gör den nödvändiga konfigurationen från mallar.
 
 Verktyget tar några få ingångar som klusternamn, DNS-domän, S3-bucket (för den stora ignition-filen för startnoden) och konverterar dessa till användbara parametrar för Terraform-modulen. En mallgenererad "main.tf" innehåller dessa parametrar och referenser till modulen. Filen "main.tf" används för provisioneringen.
 
-Installationen ger ett minimalt OKD-kluster med tre masters och två arbetsnoder med minimal instanssmakstorlek. Du kan åsidosätta instansstorleken och andra parametrar (som antalet olika noder) genom filen "settings.yml".
+## Resultat
+Installationen ger ett minimalt OKD-kluster med tre masters och två arbetsnoder med minimal instansstorlek. Du kan åsidosätta instansstorleken och andra parametrar (som antalet olika noder) genom filen "settings.yml".
+
+{{< 2calltoaction "Hämta Terraform-modul" "https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns" "Hämta OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
 [1]:https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns
 [2]:https://github.com/safespring-community/utilities/tree/main/okd
