@@ -10,7 +10,7 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 language: "En"
-toc: "Content"
+toc: "Table of contents"
 ---
 {{< ingress >}}
 In this blog post, we'll showcase just how easy it is by the example of our community Terraform modules.
