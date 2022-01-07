@@ -21,18 +21,18 @@ It has never been easier to provision compute and block storage resources in Saf
 ## Terraform introduction
 Terraform has become the de-facto industry standard for «Infrastructure As Code - IAC». It is written in Golang, is open source, and you can download it as a single executable file from the [Terraform download page][tfdl].
 
-Terraform takes plain text files with "HCL - Hashicorp Configuration Language" as input and provides servers and storage as output. HCL is a declarative language, i.e., it does not specify any actions to be taken but rather a desired state - or outcome.
+Terraform takes plain text files with «HCL - Hashicorp Configuration Language» as input and provides servers and storage as output. HCL is a declarative language, i.e., it does not specify any actions to be taken but rather a desired state - or outcome.
 
-The idea that configuration languages should be declarative and convergence of real state into that declared desired state has become widely accepted over the last three decades and is based on ideas and research by [Mark Burgess during the early nineties and later][mbcfengine].
+The idea that configuration languages should be declarative, and that convergence of real state into the declared desired state, has become widely accepted over the last three decades and is based on ideas and research by [Mark Burgess during the early nineties and later][mbcfengine].
 
 ### Terraform providers
-The superpower of Terraform comes from all of its providers. The Terraform providers are binary extensions of Terraform that, as the name indicates, "provide" resources of different kinds using the APIs of the cloud provider reflected by the extension's name.
+The superpower of Terraform comes from all of it's providers. The Terraform providers are binary extensions of Terraform that, as the name indicates, «provide» resources of different kinds using the APIs of the cloud provider reflected by the extension's name.
 
 These extensions do all the heavy lifting towards the cloud provider APIs and ensure that the actual state (the cloud resources) is converged to what is specified as the desired state.
 
 Terraform can be viewed as a desired state configuration agent for infrastructure. Every time it is run, it will turn the desired state into the actual state for cloud resources.
 
-### Reducing the level of "lock-in"
+### Reducing the level of «lock-in»
 Terraform has tons of battle-tested providers available to use, thus easing the burden of provisioning cloud resources from all kinds of cloud APIs within the same (or different) configurations.
 
 Let's say you need resources in other clouds (or on-premise) for the same multi-cloud or hybrid environments. Then you can do that using one Terraform config, and you can even scale up and down the number of resources by changing some variables in your Terraform code.
@@ -43,12 +43,12 @@ Terraform is cloud-agnostic and thus is excellent insurance that your resources 
 The Safespring Openstack platform provides two categories of instance flavors:
 
 1. Flavors with local NVMe disk. Flavor names start with `l`, for example, `lm.small`.
-2. Flavors with no disk. Flavor names start without `l`. These flavors need to provision at least one additional volume from the Openstack volume service (Cinder) to boot the operating system from
+2. Flavors with no disk. Flavor names start without `l`. These flavors need to provision at least one additional volume from the Openstack volume service (Cinder) to boot the operating system from.
 
 ### 1. The smallest possible example
  A local disk flavor instance with default values.
 
-Parameters for flavor, image, name-prefix, suffix, count, and so on are the default unless specified. The only mandatory parameter is `key_pair_name` witch can be a pre-existing key created as part of the Terraform config. First, we'll create one with OpenStack Kcli and reference it in Terraform config.
+Parameters for flavor, image, name-prefix, suffix, count, and so on are the default unless specified. The only mandatory parameter is `key_pair_name` which can be a pre-existing key , or it can be created as part of the Terraform config. First, we'll create one with OpenStack CLI and reference it in the Terraform config.
 
 <script data-theme="solarized-dark" id="asciicast-yr2F1jWsmTWTFvkiXMtQ26f5I" src="https://asciinema.org/a/yr2F1jWsmTWTFvkiXMtQ26f5I.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
 
@@ -61,11 +61,11 @@ The Safespring modules contain references to which providers/versions they depen
 <script data-theme="solarized-dark" id="asciicast-P36Q7BaY9sktSzTbS7uhASjGj" src="https://asciinema.org/a/P36Q7BaY9sktSzTbS7uhASjGj.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
 
 
-### 3. Mow with security groups
+### 3. Now with security groups
 
-If an instance is not a member of any security groups, it is impossible to communicate with the instance using any allocated IP addresses. The following example shows how to create a security group with a couple of rules to allow ssh and ICMP (ping, for instance) from the world on IPv4. It is also possible to use names of pre-existing security groups (the default security group, for example, which is always present in a project).
+If an instance is not a member of any security groups, it is impossible to communicate with the instance using any allocated IP addresses. The following example shows how to create a security group with a couple of rules to allow `ssh` and `ICMP` (ping, for instance) from «the world» by IPv4. It is also possible to use names of pre-existing security groups (the default security group, for example, which is always present in a project).
 
-Also, it should be possible to apply configuration changes without needing to destroy the current state of the resources. Sometimes, it is impossible to change the state without re-creating objects. Terraform will re-create objects when the changes require it, so be careful when examining the plan before applying. The plan is always shown when Terraform apply is run in interactive mode, but it is also possible/recommended to run `Terraform plan`, which only shows the planned changes.
+Also, it should be possible to apply configuration changes without needing to destroy the current state of the resources. Sometimes it is impossible to change the state without re-creating objects. Terraform will re-create objects when the changes require it, so be careful when examining the plan before applying. The plan is always shown when `terraform apply` is run in interactive mode, but it is also possible/recommended to run `terraform plan`, which only **shows** the planned changes.
 
 Let's apply our newly added security group to our existing config without destroying it first.
 
