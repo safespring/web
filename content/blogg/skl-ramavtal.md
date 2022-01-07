@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_16.jpg"
 eventbild: "safespring_background_16.jpg"
 socialmediabild: "safespring_social_16.jpg"
+section: "blogg"
 ---
 ## Nytt ramavtal för e-arkiv som tjänst.
 

@@ -8,6 +8,7 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 language: "en"
+section: "Tech update"
 ---
 
 {{% ingress %}}

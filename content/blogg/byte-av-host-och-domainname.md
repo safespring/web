@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_25.jpg"
 eventbild: "safespring_background_25.jpg"
 socialmediabild: "safespring_social_25.jpg"
+section: "Tech update"
 ---
 
 <a id="text-button" href="#english">Read the English version</a>

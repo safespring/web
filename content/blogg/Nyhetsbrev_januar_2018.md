@@ -4,6 +4,8 @@ date = "2018-01-22"
 draft = false
 tags = ["nyhetsbrev, backup, compute"]
 showthedate = false
+section = "blogg"
+language = "No"
 +++
 
 Godt nytt år! Vi vil med dette nyhetsbrevet dele et par nyheter fra Safespring:

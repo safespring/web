@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_5.jpg"
 eventbild: "safespring_background_5.jpg"
 socialmediabild: "safespring_social_5.jpg"
+section: "blogg"
 ---
 
 ### Ladda ner Safesprings presentationer

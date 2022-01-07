@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_6.jpg"
 eventbild: "safespring_background_6.jpg"
 socialmediabild: "safespring_social_6.jpg"
+section: "blogg"
 ---
 **ProReNata** erbjuder ett digitalt journalsystem för hälso- och sjukvårdspersonal med inriktning på skolhälsovården. De hanterar många patientjournaler och under 2018 ökade kundernas frågor om var deras journaler lagras.
 

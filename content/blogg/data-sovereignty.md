@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_20.jpg"
 eventbild: "safespring_background_20.jpg"
 socialmediabild: "safespring_social_20.jpg"
+section: "blogg"
 ---
 
 

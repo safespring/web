@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_29.jpg"
 eventbild: "safespring_background_29.jpg"
 socialmediabild: "safespring_social_29.jpg"
+section: "blogg"
 ---
 
 <div class="ingress"><p>Vi är mycket stolta över att ha vunnit upphandlingen av molntjänster till Public Service-bolagen.</p></div>

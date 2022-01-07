@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_19.jpg"
 eventbild: "safespring_background_19.jpg"
 socialmediabild: "safespring_social_19.jpg"
+section: "blogg"
 ---
 
 <div class="ingress"><p>Idag påbörjar EU-domstolen prövningen om giltigheten i Privacy Shield och Standard Contractual Clauses (SCCs).</p></div>

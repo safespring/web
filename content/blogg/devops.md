@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_15.jpg"
 eventbild: "safespring_background_15.jpg"
 socialmediabild: "safespring_social_15.jpg"
+section: "blogg"
 ---
 
 <div class="ingress"><p>Antalet bolag som planerat att outsourca sin it-produktion har minskat och anledningen är bland annat behovet av att arbeta mer i agila/DevOps-grupper.</p></div>

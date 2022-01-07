@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_14.jpg"
 eventbild: "safespring_background_14.jpg"
 socialmediabild: "safespring_social_14.jpg"
+section: "blogg"
 ---
 <div class="ingress"><p>Adam Odmark, biträdande jurist, advokatfirman Delphi, har skrivit en analys i Dagens juridik den 28 mars</p></div>
 

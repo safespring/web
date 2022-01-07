@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="200" viewBox="0 0 370 200">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="linkedin-Safespring" d="M10,0H360a10,10,0,0,1,10,10V200a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(785 147)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.492" y2="0.703" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#195f8c"/>
+      <stop offset="1" stop-color="#0d3046" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-785 -147)" opacity="0.041" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="safespring_symbol_blue_svg" transform="translate(777.988 141.025) rotate(-5)">
+      <path id="Path_1" data-name="Path 1" d="M268.412,83a93.269,93.269,0,0,0-185.4,0A93.269,93.269,0,0,0,93.289,268.976H175.71a52.058,52.058,0,0,0,0-104.117,30.377,30.377,0,1,1,21.526-51.789A10.855,10.855,0,1,0,212.6,97.733,52.058,52.058,0,1,0,175.71,186.5a30.377,30.377,0,0,1,0,60.754H93.289a71.587,71.587,0,1,1,0-143.175,10.848,10.848,0,0,0,10.834-10.834,71.587,71.587,0,0,1,143.175,0,10.834,10.834,0,0,0,10.834,10.834,71.587,71.587,0,1,1,0,143.175,10.848,10.848,0,0,0,0,21.682A93.269,93.269,0,0,0,268.412,83Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 0, 90.858)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

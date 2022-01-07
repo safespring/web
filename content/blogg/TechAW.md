@@ -9,6 +9,7 @@ category: "Blog"
 card: "safespring_card_7.jpg"
 eventbild: "safespring_background_7.jpg"
 socialmediabild: "safespring_social_7.jpg"
+section: "blogg"
 ---
 Välkommen till Tech AW där vi snackar om Hybrid Cloud och framtida molnlösningar. Den 29 augusti i Solna Business Park.
 

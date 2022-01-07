@@ -6,6 +6,7 @@ category: "Blog"
 card: "safespring_card_2.jpg"
 eventbild: "safespring_background_2.jpg"
 socialmediabild: "safespring_social_2.jpg"
+section: "blogg"
 ---
 {{< youtube JB7FtKURpck >}}
 <br><br>
