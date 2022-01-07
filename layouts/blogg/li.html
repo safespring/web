@@ -28,7 +28,7 @@
 <a href="{{ .Permalink }}">
 <div class="body my-2 p-relative bg-blue-white-fade shadow-1 blue-hover-tech">
     <div class="d-block w-full blogg-card-image-container"><img class="lazyload blogg-card-image" data-src="/img/blogg/cards/safespring-tech-update.svg" alt="{{ .Title }}"></div>
-<div class="blogg-card-text-container">
+<div class="blogg-card-text-container-no-image">
 <div class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
   {{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
 </div>
@@ -46,7 +46,7 @@
 </p>
 </div>
 <a href="{{ .Permalink }}" class="blogg-card-link text-uppercase d-inline-block font-weight-medium lts-2px text-center styled-link ff-serif">
-Läs mer
+{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}
 </a>
 </div></a>
 {{ end }}{{ end }}

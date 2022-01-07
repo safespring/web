@@ -3265,6 +3265,10 @@ h1 {
 		font-size: 1.5rem;
 }
 
+.blogg-card-title {
+	font-size: 30px;
+}
+
 .blogg-card-link {
 	padding: 0 50px 50px 50px;
 }
@@ -3285,6 +3289,11 @@ h1 {
 
 .blogg-card-text-container {
 	padding: 50px;
+}
+
+.blogg-card-text-container-no-image {
+	padding: 50px;
+	margin-top: -150px
 }
 
 .blogg-card-section {

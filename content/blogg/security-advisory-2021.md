@@ -1,5 +1,6 @@
 ---
 title: "Security advisory regarding the Log4j critical vulnerability"
+intro: "A a small internal module that handles logging for Java programs may affect your application."
 date: "2021-12-13"
 draft: false
 tags: [""]
