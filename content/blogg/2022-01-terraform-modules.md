@@ -45,6 +45,17 @@ The Safespring Openstack platform provides two categories of instance flavors:
 1. Flavors with local NVMe disk. Flavor names start with `l`, for example, `lm.small`.
 2. Flavors with no disk. Flavor names start without `l`. These flavors need to provision at least one additional volume from the Openstack volume service (Cinder) to boot the operating system from.
 
+Thus the modules ar divided into to major types according to instance types with or without local disk. In addition, both instances with or without local disk can have a central disk (data disk) attached to it. That makes four modules in total:
+
+1. `v2-compute-local-disk`<br>
+Module for flavor with local disk and no central extra data disk.
+2. `v2-compute-central-disk`<br>
+Module for flavor with central disk and no central extra data disk
+3. `v2-compute-local-disk-and-attached-disk`<br>
+Module for flavor with local disk and central extra data disk
+4. `v2-compute-central-disk-and-attached-disk`<br>
+Module for flavor with central disk and extra central data disk:
+
 ### 1. The smallest possible example
  A local disk flavor instance with default values.
 
@@ -71,7 +82,7 @@ Let's apply our newly added security group to our existing config without destro
 
 <script data-theme="solarized-dark" id="asciicast-py92MXeP9yI4f2a33Z5KMRLuk" src="https://asciinema.org/a/py92MXeP9yI4f2a33Z5KMRLuk.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
 
-### 5. More modules and parameters
+### 4. More modules and parameters
 
 So how do I magically know which parameters are available for a module and what they do? Easy, I look at the `variables.tf` file in the module directory on GitHub. For instance, the `v2-compute-local-disk` module used so far (among others) is located on [Safespring Community at GitHub](https://github.com/safespring-community/terraform-modules/tree/main/v2-compute-local-disk). There are some `.tf` files in that directory. The `variables.tf` contains all the variables/parameters that the module accepts, their description, and default values.
 
