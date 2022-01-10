@@ -1,6 +1,6 @@
 ---
 title: "Dead easy provisioning using the Safespring Terraform modules"
-date: "2022-01-07"
+date: "2022-01-10"
 intro: "It has never been easier to provision compute and block storage resources in Safespring's infrastructure platform."
 draft: false
 tags: [""]
