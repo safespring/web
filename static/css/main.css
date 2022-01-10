@@ -1530,6 +1530,11 @@ text-align: center;
 		margin: 10% 0;
 }
 
+.ch-content li {
+	margin: 7px 0;
+	line-height: 1.5;
+}
+
 	.ch-content p, h1, h2, h3, h4, li, ol {
 		max-width: 700px;
 		/*margin: 16px 10% 0 0;*/

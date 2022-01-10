@@ -47,10 +47,14 @@ The Safespring Openstack platform provides two categories of instance flavors:
 
 Thus the modules ar divided into to major types according to instance types with or without local disk. In addition, both instances with or without local disk can have a central disk (data disk) attached to it. That makes four modules in total:
 
-1. Module for flavor with local disk and no central extra data disk: `v2-compute-local-disk`
-2. Module for flavor with central disk and no central extra data disk: `v2-compute-central-disk` 
-3. Module for flavor with local disk and central extra data disk: `v2-compute-local-disk-and-attached-disk`
-4. Module for flavor with central disk and extra central data disk: `v2-compute-central-disk-and-attached-disk`
+1. `v2-compute-local-disk`<br>
+Module for flavor with local disk and no central extra data disk.
+2. `v2-compute-central-disk`<br>
+Module for flavor with central disk and no central extra data disk
+3. `v2-compute-local-disk-and-attached-disk`<br>
+Module for flavor with local disk and central extra data disk
+4. `v2-compute-central-disk-and-attached-disk`<br>
+Module for flavor with central disk and extra central data disk:
 
 ### 1. The smallest possible example
  A local disk flavor instance with default values.
