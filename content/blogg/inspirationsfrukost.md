@@ -7,6 +7,7 @@ showthedate = true
 card = "safespring_card_4.jpg"
 eventbild = "safespring_background_4.jpg"
 socialmediabild = "safespring_social_4.jpg"
+section = "blogg"
 +++
 
 Safespring bjuder in till inspirationsfrukost kring nya teknologier och moderna sätt att bygga plattformar tillsammans med Johan Staël von Holstein.

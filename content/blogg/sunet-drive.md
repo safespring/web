@@ -6,6 +6,7 @@ tags: [""]
 showthedate: true
 card: "safespring_card_42.jpg"
 eventbild: "safespring_background_42.jpg"
+section: "blogg"
 ---
 {{< ingress >}}
 Tillsammans med Sunet har vi tagit fram en filhanterings- och samarbetstjänst för universitet, högskolor och anslutna myndigheter i Sunets nät.

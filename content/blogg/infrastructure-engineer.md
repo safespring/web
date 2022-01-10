@@ -7,6 +7,7 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
+section: "blogg"
 ---
 
 ## Apply as an Infrastructure Engineer

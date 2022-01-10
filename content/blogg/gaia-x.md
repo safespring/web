@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_40.jpg"
 eventbild: "safespring_background_40.jpg"
 socialmediabild: "safespring_social_40.gif"
+section: "blogg"
 ---
 
 {{< ingress >}}

@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_1.jpg"
 eventbild: "safespring_background_1.jpg"
 socialmediabild: "safespring_social_1.jpg"
+section: "blogg"
 ---
 
 ## Lokala lösningar efterfrågas

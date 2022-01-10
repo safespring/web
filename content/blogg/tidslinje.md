@@ -9,6 +9,7 @@ category: "Blog"
 card: "safespring_card_12.jpg"
 eventbild: "safespring_background_12.jpg"
 socialmediabild: "safespring_social_12.jpg"
+section: "blogg"
 ---
 {{< youtube ogzSdTNk554 >}}
 

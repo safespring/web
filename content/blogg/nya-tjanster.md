@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"
+section: "blogg"
 ---
 
 <div class="ingress"><p>Behovet av säkra svenska infrastrukturtjänster ökar snabbt. Hos oss är öppen källkod och öppna standarder två av grundstenarna.</p></div>

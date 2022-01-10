@@ -65,17 +65,8 @@
   {{ partial "g-tag-manager.html" . }}
   {{ partial "svg-filter.html" . }}
    {{ partial "header.html" . }} <!-- HEADING -->
-<div class="heading-sub">
-  <img class="heading-background" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}');background-size:cover;background-position:center;">
-<div class="heading-content">
        {{ .Render "li3" }}
-     </div>
-   </div>
 
-<!-- HEADING -->
-
-
-<!-- CONTENT -->
 <main class="content-chalmers">
   <!-- Main  -->
   <div class="ch-content">
@@ -85,34 +76,7 @@
   </div>
 
   <!-- SIDEBAR -->
-  <div class="ch-sidebar shadow-1">
-    <div>
-      <img class="ch-sidebar-logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
-    </div>
-
-    <div class="content-body">
-      <h2 class="content-heading">Senaste inläggen</h2>
-      {{ range first 5 (where .Site.RegularPages "Type" "blogg") }}
-        <li style="list-style: none;"><a href="{{.URL}}">{{ .Title }}</a></li>
-          <br>
-      {{ end }}
-
-
-
-    </div>
-    <a id="text-button" href="/kontakt">KONTAKTA SAFESPRING</a>
-</br></br>
-<div class="read-more">
-  <h2>Läs mer om:</h2>
-    <li class="content-body"><a href="/tjanster/safespring-backup">&gt; Safespring Backup</a></li>
-    <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
-    <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
-    <li class="content-body"><a href="/tjanster/hybrid-cloud">&gt; Hybrid Cloud</a></li>
-    <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Managed Private Cloud</a></li>
-    <li class="content-body"><a href="/tjanster/konsulttjanster">&gt; Konsulttjänster</a></li>
-    <li class="content-body"><a href="/support">&gt; Support</a></li>
-</div>
-  </div>
+  {{ partial "side-bar.html" . }}
 
   </div>
 </main>

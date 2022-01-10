@@ -7,6 +7,7 @@ showthedate = true
 card = "safespring_card_11.jpg"
 eventbild = "safespring_background_11.jpg"
 socialmediabild = "safespring_social_11.jpg"
+section = "blogg"
 +++
 
 Safespring har författat en praktisk [guide][ebook] för vädledning in i molnet.

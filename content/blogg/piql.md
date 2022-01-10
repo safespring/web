@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_3.jpg"
 eventbild: "safespring_background_3.jpg"
 socialmediabild: "safespring_social_3.jpg"
+section: "blogg"
 ---
 
 <a href="/marketing/Safespring_press-release_20919-03-14_Piql-and-Safespring-collaborate-for-enhanced-services.pdf" id="button">Read in English</a> <!--<a href="/#" id="button">Read in Norwegian</a>-->

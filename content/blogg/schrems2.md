@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_32.jpg"
 eventbild: "safespring_background_32.jpg"
 socialmediabild: "safespring_social_32.jpg"
+section: "blogg"
 ---
 {{< ingress >}}
 Regeringen behöver agera för att främja lokal innovation inom molninfrastruktur. Det är särskilt aktuellt efter en EU-dom som underkänner dataskyddsavtalet mellan EU och USA, skriver svenska entreprenörer inom IT-drift i en replik.

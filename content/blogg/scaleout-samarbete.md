@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_34.jpg"
 eventbild: "safespring_background_34.jpg"
 socialmediabild: "safespring_social_34.jpg"
+section: "blogg"
 ---
 
 ## Strategiskt samarbete inom AI för att främja den svenska digitaliserings­strategin

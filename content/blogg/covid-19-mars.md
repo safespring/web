@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_31.jpg"
 eventbild: "safespring_background_31.jpg"
 socialmediabild: "safespring_social_31-1.jpg"
+section: "blogg"
 ---
 
 <div class="ingress"><p>Safespring planerar för fortsatt kontinuerlig drift.</p></div>

@@ -7,6 +7,7 @@ showthedate: true
 card: "safespring_card_28.jpg"
 eventbild: "safespring_background_22.jpg"
 socialmediabild: "safespring_social_28.jpg"
+section: "blogg"
 ---
 
 ![Johan Harrysson, CCO, utanför Safesprings huvudkontor i Stockholm.](/img/blogg/safespring-johan-harrysson_2020-01-27.jpg)

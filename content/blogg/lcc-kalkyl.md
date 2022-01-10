@@ -6,6 +6,7 @@ tags: [""]
 showthedate: true
 socialmediabild: "Safespring_Blogg_LCC-kalkyl.jpg"
 background: "Safespring_huvudbild_LCC-kalkyl.jpg"
+section: "blogg"
 ---
 Frågan om huruvida publik molninfrastruktur är billigare än att driva datacentraler på lokal nivå fortsätter att debatteras. Svaren från industrin kan vara snedvridna av de intressen som ligger till grund för den som kommer med svaret.
 
