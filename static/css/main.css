@@ -1630,6 +1630,7 @@ color: var(--unCheckedColor);
 		.ch-content {
 			grid-column: 2 / span 5;
 		}
+
 		.listpage {
 			grid-column: 2 / span 5;
 		}
