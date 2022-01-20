@@ -1625,13 +1625,14 @@ color: var(--unCheckedColor);
 			grid-column: 8 / span 2;
 			margin-right: 5%;
 		}
+
+		.listpage {
+			grid-column: 2 / span 5;
+		}
+		
 	}
 
 		.ch-content {
-			grid-column: 2 / span 5;
-		}
-
-		.listpage {
 			grid-column: 2 / span 5;
 		}
 
