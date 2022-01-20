@@ -1,12 +1,12 @@
 ---
-title: "Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield"
+title: "Hur du hanterar det osäkra läget i och med GDPR och CLOUD Act"
 date: "2019-07-09"
+intro: "EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
 draft: false
 tags: ["Svenska"]
 author: "Martin Millnert"
 dokumentnamn: ""
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
-intro: ""
 sidebarlinkname: "Hämta"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "#download"
