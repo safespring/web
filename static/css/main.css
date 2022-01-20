@@ -1550,11 +1550,9 @@ color: var(--unCheckedColor);
 		}
 
 		.listpage {
-			display: -ms-grid;
-			display: grid;
 			width: 90%;
 			margin: 0 auto;
-			grid-column: span 7;
+			grid-column: 1 / span 7;
 		}
 		.ch-sidebar {
 			height: fit-content;
@@ -1629,7 +1627,6 @@ color: var(--unCheckedColor);
 		.listpage {
 			grid-column: 2 / span 5;
 		}
-		
 	}
 
 		.ch-content {
