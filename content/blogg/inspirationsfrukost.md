@@ -2,7 +2,7 @@
 title = "Safespring bjuder in till inspirations-frukost"
 date = "2018-02-19"
 draft = false
-tags = ["inspirationsfruktost, seminarum"]
+tags = ["Svenska"]
 showthedate = true
 card = "safespring_card_4.jpg"
 eventbild = "safespring_background_4.jpg"

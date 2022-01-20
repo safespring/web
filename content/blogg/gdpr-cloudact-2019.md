@@ -2,7 +2,7 @@
 title: "Ytterligare två data-överförings­avtal mellan USA och EU kan ogiltigförklaras"
 date: "2019-07-09"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_19.jpg"
 eventbild: "safespring_background_19.jpg"

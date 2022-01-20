@@ -2,7 +2,7 @@
 title: "Sunet Drive, filhantering och samarbetstjänst"
 date: "2021-05-20"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_42.jpg"
 eventbild: "safespring_background_42.jpg"

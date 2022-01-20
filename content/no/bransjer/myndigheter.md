@@ -6,7 +6,7 @@ card: "safespring_card_3.svg"
 draft: false
 intro: "Safesprings tjenester kan anskaffes direkte eller via vår rammeavtale med Uninett."
 background: "safespring_bilder_10.jpg"
-tags: "bransjer"
+startpage: "yes"
 language: "No"
 section: "Safespring"
 ---

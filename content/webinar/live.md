@@ -1,7 +1,8 @@
 ---
 title: "Safespring live på eFörvaltningsdagarna"
 publishDate: "2020-09-18T07:37:39+02:00"
-draft: false
+draft: true
+tags: ["Svenska"]
 card: "safespring_card_34.jpg"
 eventbild: "safespring_background_34.jpg"
 socialmediabild: "safespring_social_34.jpg"

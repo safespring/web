@@ -20,9 +20,9 @@ sidebarknapp: "Les direkt"
 sidebarlink: "/no/whitepaper/compliant-kubernetes/"
 saas: "yes"
 sidebarwhitepaper: ""
+startpage: "yes"
 aliases:
 Language: "No"
-tags: "bransjer"
 ---
 
 {{< ingress >}}

@@ -3,6 +3,7 @@ title: "Ett år efter Schrems II, vad har hänt och hur ska vi planera?"
 date: "2021-08-25"
 publishDate: "2021-06-17"
 draft: false
+tags: ["Svenska"]
 card: "safespring_card_39.jpg"
 eventbild: "safespring_background_39.jpg"
 socialmediabild: "safespring_social_39.gif"

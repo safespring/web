@@ -2,7 +2,7 @@
 title = "Nyhetsbrev januari 2018"
 date = "2018-01-22"
 draft = false
-tags = ["nyhetsbrev, backup, compute"]
+tags = ["Norska"]
 showthedate = false
 section = "blogg"
 language = "No"

@@ -2,6 +2,7 @@
 title: "EU-domstolens ogiltigförklarande av Privacy Shield"
 date: "2020-09-04"
 draft: false
+tags: ["Svenska"]
 author: "Amelia Andersdotter"
 dokumentnamn: ""
 socialmedia: "/blogg/socialmedia/safespring_social_33.jpg"

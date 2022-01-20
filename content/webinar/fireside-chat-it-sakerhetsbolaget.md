@@ -2,6 +2,7 @@
 title: "Praktiska möjligheter efter Schrems II, med exempel!"
 publishDate: "2021-05-05T07:37:39+02:00"
 draft: false
+tags: ["Svenska"]
 card: "safespring_card_38.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"

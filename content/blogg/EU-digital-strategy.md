@@ -2,7 +2,7 @@
 title: "EUs nya digitala strategi förespråkar öppen källkod"
 date: "2018-11-30T12:41:37+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_10.jpg"
 eventbild: "safespring_background_10.jpg"

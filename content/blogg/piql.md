@@ -2,7 +2,7 @@
 title: "Data som arkiveras i 500 år ska bli smidigare och säkrare att nå digitalt"
 date: "2019-03-12T13:46:22+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_3.jpg"
 eventbild: "safespring_background_3.jpg"

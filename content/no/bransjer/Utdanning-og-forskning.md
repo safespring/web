@@ -9,8 +9,8 @@ background: "safespring-research.jpg"
 logobanner: "yes"
 toplogo: "ocre.png"
 showthedate: false
-section: " "
-tags: "bransjer"
+section: ""
+startpage: "yes"
 language: "No"
 ---
 

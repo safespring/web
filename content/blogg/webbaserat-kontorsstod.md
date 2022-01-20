@@ -2,7 +2,7 @@
 title: "Alla ska kunna arbeta säkert med webbaserade kontorsstöd"
 date: "2019-02-22T14:51:25+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_1.jpg"
 eventbild: "safespring_background_1.jpg"

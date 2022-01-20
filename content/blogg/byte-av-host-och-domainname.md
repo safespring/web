@@ -1,8 +1,9 @@
 ---
-title: "Byte av host- och domännamn på Support & Backuptjänsten 14/1"
+title: "Byte av host- och domännamn på Support- & Backuptjänsten"
+intro: "Vi fasar ut vårt tidigare moderbolags varumärke IPnett från våra tjänster."
 date: "2020-01-07T10:16:45+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_25.jpg"
 eventbild: "safespring_background_25.jpg"
@@ -12,7 +13,7 @@ section: "Tech update"
 
 <a id="text-button" href="#english">Read the English version</a>
 
-**Uppdatering 14 januari:** Bytet av domännamn sker idag (2020-01-14). Det betyder att ändringen av host-namnet och DNS bör göras så snabbt som möjligt. Gör ni ändringarna (nytt DNS-namn och in med extra root-ca-cert) så fungerar tjänsten 100% som innan och man kan göra backup och restores precis som väntat. Läs mer under "tekniska detaljer".
+**Uppdatering 14 januari:** Bytet av domännamn skedde den 2020-01-14. Det betyder att ändringen av host-namnet och DNS bör göras så snabbt som möjligt. Gör ni ändringarna (nytt DNS-namn och in med extra root-ca-cert) så fungerar tjänsten 100% som innan och man kan göra backup och restores precis som väntat. Läs mer under "tekniska detaljer".
 
 <div class="ingress"><p>Vi arbetar ständigt  med att förbättra och förtydliga våra tjänster. En del av arbetet är att fasa ut vårt tidigare moderbolags varumärke IPnett från våra tjänster.</p></div>
 

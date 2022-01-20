@@ -2,7 +2,7 @@
 title = "Med CLOUD act kan USA begära data från svenska och norska verksamheter"
 date = "2018-05-15"
 draft = false
-tags = ["GDPR, cloudact"]
+tags = ["Svenska"]
 showthedate = true
 card = "safespring_card_12.jpg"
 eventbild = "safespring_background_12.jpg"

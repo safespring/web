@@ -2,7 +2,7 @@
 title: "Ramavtalet med SKL Kommentus för e-arkiv som tjänst är påskrivet"
 date: "2019-01-14T10:16:45+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_16.jpg"
 eventbild: "safespring_background_16.jpg"

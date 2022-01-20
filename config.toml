@@ -9,6 +9,8 @@ copyright = "2021 Safespring"
 paginate = 10
 paginatePath = "blog"
 
+[params]
+  mainSections = ['blogg', 'webinar', 'whitepaper', 'solution-brief']
 
 SectionPagesMenu = "main"
 

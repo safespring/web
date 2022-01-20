@@ -2,6 +2,7 @@
 title: "Moving data to offsite storage using Commvault"
 date: "2018-11-29"
 draft: true
+tags: ["English"]
 author: "Gabriel Paues"
 dokumentnamn: ""
 huvudbildnamn: "Safespring_WhitePaper_Commvault_web.jpg"

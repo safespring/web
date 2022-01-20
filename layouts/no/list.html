@@ -20,7 +20,7 @@
   </div>
   <div class="background-bright">
 <div class="flexcontainer-start" style="align-items:baseline;">
-          {{ range where (where $.Site.RegularPages "Section" "no" ) "Params.tags" "bransjer" }}
+          {{ range where (where $.Site.RegularPages "Section" "no" ) ".Params.startpage" "yes" }}
             {{ .Render "li"}}
             {{ end }}
       </div>

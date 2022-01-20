@@ -2,7 +2,7 @@
 title: "Safespring är svensk medlem i GAIA-X"
 date: "2021-04-19"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_40.jpg"
 eventbild: "safespring_background_40.jpg"

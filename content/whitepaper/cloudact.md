@@ -2,6 +2,7 @@
 title: "Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield"
 date: "2019-07-09"
 draft: false
+tags: ["Svenska"]
 author: "Martin Millnert"
 dokumentnamn: ""
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"

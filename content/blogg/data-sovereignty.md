@@ -1,13 +1,14 @@
 ---
-title: "Articles about Data sovereignty, GDPR and CLOUD Act"
+title: "Articles about digital sovereignty, GDPR and CLOUD Act"
 date: "2019-11-19T08:03:13+02:00"
 draft: false
-tags: [""]
+tags: ["English"]
 showthedate: true
 card: "safespring_card_20.jpg"
 eventbild: "safespring_background_20.jpg"
 socialmediabild: "safespring_social_20.jpg"
 section: "blogg"
+toc: "Innehållsförteckning"
 ---
 
 

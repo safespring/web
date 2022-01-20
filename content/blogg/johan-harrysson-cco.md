@@ -2,7 +2,7 @@
 title: "Johan Harrysson blir Safesprings nya CCO"
 date: "2020-01-28T08:03:13+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_28.jpg"
 eventbild: "safespring_background_22.jpg"
@@ -39,7 +39,7 @@ erfarenhet hjälper oss att nå våra högt ställda mål”
 
 säger Mikael Schütt, styrelseordförande på Safespring.
 
-### För med information
+### För mer information
 
 **Mikael Schütt**, Styrelseordförande<br>
 <a href="mailto:mikael.shutt@safespring.se">mikael.shutt@safespring.se</a><br>

@@ -2,7 +2,7 @@
 title = "Säkra molntjänster från Safespring löser tekniska utmaningar för IVBAR"
 date = "2018-05-16"
 draft = false
-tags = ["IVBAR, cloudtechnilogy"]
+tags = ["Svenska"]
 showthedate = true
 card = "safespring_card_9.jpg"
 eventbild = "safespring_background_9.jpg"

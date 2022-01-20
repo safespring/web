@@ -2,7 +2,7 @@
 title: "2018, Ett händelserikt år!"
 date: "2018-12-20T15:12:50+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_17.jpg"
 eventbild: "safespring_background_17.jpg"

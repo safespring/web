@@ -1,6 +1,7 @@
 ---
 title: "Pre-ingest, hur säkerställa flexibilitet och säkerhet?"
 date: "2020-11-11"
+tags: ["Svenska"]
 publishDate: "2020-10-21T07:37:39+02:00"
 eventdatum: "11 nov. 2020"
 eventdag: "Onsdag kl. 11:00"

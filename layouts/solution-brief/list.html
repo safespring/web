@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+  <body>
+  <!-- Google Tag Manager -->
+  {{ partial "g-tag-manager.html" . }}
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
+  <!-- HEADING -->
+  <div class="heading-sub" style="background: url(/img/blogg/background/safespring_background_0.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+    <div class="heading-content">
+      <h1>Safesprings publikationer</h1>
+      <p>Safesprings publikationer syftar till att sprida kunskap<br> och intresse för datasäkerhet och cloud computing.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-chalmers">
+    <!-- Main  -->
+      <div class="listpage">
+          <div class="flexcontainer" style="background: var(--text-color)";>
+            {{ range where .Pages ".Params.dontshow" "!=" "yes" }}
+            {{ .Render "li"}}
+            {{ end }}
+        </div>
+        </div>
+
+  {{ partial "side-bar.html" . }}
+
+  </main>
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
+</body>

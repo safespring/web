@@ -2,6 +2,7 @@
 title: "Fördelarna med ett digitalt arkiv"
 date: "2018-06-25T14:04:37+02:00"
 draft: true
+tags: ["Svenska"]
 author: "Gabriel Paues"
 dokumentnamn: "test.pdf"
 huvudbildnamn: "Safespring_archive.jpg"

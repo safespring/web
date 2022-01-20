@@ -2,7 +2,7 @@
 title: "Safespring tecknar ramavtal med SVT och UR för svenska molntjänster"
 date: "2020-03-11T10:39:43+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"

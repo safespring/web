@@ -2,7 +2,7 @@
 title: "Strategiskt samarbete inom AI med Scaleout"
 date: "2020-10-29T09:46:45+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_34.jpg"
 eventbild: "safespring_background_34.jpg"

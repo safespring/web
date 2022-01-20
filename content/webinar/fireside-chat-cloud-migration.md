@@ -2,6 +2,7 @@
 title: "Cloud to cloud migration"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: false
+tags: ["English"]
 card: "safespring_card_37.jpg"
 eventbild: "safespring_background_37.jpg"
 socialmediabild: "safespring_social_37.gif"

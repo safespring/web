@@ -2,7 +2,7 @@
 title: "Information om Safesprings drift under covid-19 pandemin"
 date: "2020-03-13T10:39:43+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_31.jpg"
 eventbild: "safespring_background_31.jpg"

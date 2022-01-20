@@ -2,7 +2,7 @@
 title: "Europa behöver skapa egna molntjänster"
 date: "2020-08-05"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_32.jpg"
 eventbild: "safespring_background_32.jpg"

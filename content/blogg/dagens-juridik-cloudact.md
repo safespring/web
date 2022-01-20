@@ -2,7 +2,7 @@
 title: "Amerikanska moln-leverantörer kan behöva välja lag att bryta mot"
 date: "2019-04-05T12:00:13+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_14.jpg"
 eventbild: "safespring_background_14.jpg"

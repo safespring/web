@@ -2,6 +2,7 @@
 title: "Välkommen på TechAW den 21 november med SUSE"
 date: 2018-10-24
 draft: false
+tags: ["Svenska"]
 category: "Blog"
 card: "safespring_card_2.jpg"
 eventbild: "safespring_background_2.jpg"

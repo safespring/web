@@ -2,9 +2,9 @@
 title: "Välkommen på MeetUp den 29/8 i Solna Business Park"
 date: "2018-07-24T14:39:43+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
-intro: "Safesprings tjänster når universitet, högskolor och forskningsmiljöer som är anslutna till de nationella forskningssätena i Skandinavien. Läs kundreferenser!"
+intro: ""
 category: "Blog"
 card: "safespring_card_7.jpg"
 eventbild: "safespring_background_7.jpg"
@@ -19,6 +19,8 @@ Det är alltså tre drivande personer inom molnarkitektur, mjukvara och datasyst
 
 Arrangörer för eventet är Safespring, SUSE och ScaleOut Systems.
 Efter presentationerna bjuds det på öl och mackor medan vi snackar om det som presenterats.
+
+Safesprings tjänster når universitet, högskolor och forskningsmiljöer som är anslutna till de nationella forskningssätena i Skandinavien. Läs kundreferenser!
 
 [Läs mer på eventets webbsida (extern länk).](https://pages.upsales.com/9549u026dcc33199e441899f641ef0d097e3a?utm_source=Safespring.com&utm_medium=blogg&utm_campaign=Meetup_29-8)
 

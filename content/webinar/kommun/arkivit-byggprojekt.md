@@ -1,6 +1,7 @@
 ---
 title: "Avställa byggprojekt - Går det att ställa av information & alla ÄTA i 12 år?"
 date: "2020-12-16"
+tags: ["Svenska"]
 publishDate: "2020-12-16T11:30:39+02:00"
 eventdatum: "16 dec. 2020"
 eventdag: "Onsdag kl. 13:00"

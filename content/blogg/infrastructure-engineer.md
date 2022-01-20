@@ -2,7 +2,7 @@
 title: "Strengthening our infrastructure team!"
 date: "2020-04-28T10:39:43+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: ""
 eventbild: ""
