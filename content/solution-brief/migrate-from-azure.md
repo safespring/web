@@ -9,7 +9,7 @@ intro: "Detta dokument sammanställer de steg som bör tas för att migrera frå
 sidebarlinkname: "Ladda ner PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/publications/safespring-migrering-fran-microsoft-azure-kubernetes-service-2021.pdf"
-card: "safespring_card_37.jpg"
+card: "safespring-azure.svg"
 eventbild: "safespring_background_37.jpg"
 socialmediabild: "safespring_social_37.gif"
 toc: "Innehållsförteckning"

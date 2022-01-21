@@ -3,7 +3,6 @@ title: "Meltdown: Sårbarheter i moderne mikroprosessorer"
 date: "2018-01-04"
 tags: ["Norska"]
 draft: true
-tags: "vedlikehold"
 showthedate: true
 section: "tech update"
 ---

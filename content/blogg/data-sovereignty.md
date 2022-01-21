@@ -11,8 +11,6 @@ section: "blogg"
 toc: "Innehållsförteckning"
 ---
 
-
-
 <div class="ingress"><p>We’ve gathered some articles about GDPR and the US Cloud Act to make it easier to get a greater picture about the two regulations.</p></div>
 
 ## Open Source

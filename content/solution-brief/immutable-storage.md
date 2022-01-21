@@ -10,7 +10,7 @@ intro: "With immutable objects, Safespring Storage is a great way of creating an
 sidebarlinkname: ""
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: ""
-card: "safespring_card_38.jpg"
+card: "safespring-storage.svg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"
 toc: "Table of Contents"

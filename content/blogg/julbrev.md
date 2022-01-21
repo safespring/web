@@ -30,5 +30,3 @@ I många delar av världen är det andra mycket mer basala problem som måste l�
 ### God jul och gott nytt år!
 
 Önskar Fredric, och alla andra på Safespring.
-
-<br><br><img src="/blogg/images/socialmedia/Safespring_christmas-greeting_2018.jpg" style="width: 100%; border-radius:5px;">

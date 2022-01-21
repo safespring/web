@@ -13,7 +13,7 @@ section: "blogg"
 <div class="ingress"><p>Idag blir Safespring en av fem leverantörer som får möjlighet att via ramavtal leverera molntjänster till Sveriges Television och Utbildningsradion.
 </p></div>
 
-**Avtalet tecknades idag den 11 mars.**
+**Avtalet tecknades den 11 mars.**
 
 Tjänsterna som SVT efterfrågar i avtalet för ”Cloud services” är Infrastruktur, plattformstjänster, distribuerad lagring, maskininlärning och databastjänster.
 

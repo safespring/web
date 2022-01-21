@@ -35,7 +35,7 @@
 	background: #EAF0F4;
 }
 .br-5 {
-	border-radius: 5px !important;
+	border-radius: 10px !important;
 }
 
 code {
@@ -48,9 +48,9 @@ code {
 }
 
 hr {
-	width: 90%;
+	width: 100%;
 	max-width: 700px;
-	border: 1px solid var(--main-color);
+	border: 0.25px solid #195F8C70;
 	float: left;
 	margin: 50px 0;
 }
