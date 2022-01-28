@@ -6,15 +6,15 @@ tags: ["Svenska"]
 dokumentnamn: ""
 socialmedia: "/blogg/socialmedia/safespring_social_37.gif"
 intro: "Detta dokument sammanställer de steg som bör tas för att migrera från Azure Kubernetes Service."
-sidebarlinkname: "Ladda ner PDF"
+sidebarlinkname: "Läs som PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/publications/safespring-migrering-fran-microsoft-azure-kubernetes-service-2021.pdf"
 card: "safespring-azure.svg"
-eventbild: "safespring_background_37.jpg"
-socialmediabild: "safespring_social_37.gif"
-toc: "Innehållsförteckning"
+sidebarimage: "safespring-azure.svg"
+toc: "Innehåll"
+background: "safespring-azure.png"
+socialmediabild: ""
 ---
-
 
 ## Migrering till Compliant Kubernetes
 

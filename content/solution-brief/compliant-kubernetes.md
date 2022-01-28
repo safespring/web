@@ -4,13 +4,14 @@ date: 2021-09-01T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
-background: "safespring-compute.jpg"
 form: "yes"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-kubernetes.svg"
+background: "safespring-kubernetes.png"
+sidebarimage: ""
 eventbild: "safespring_background_21.jpg"
 socialmediabild: "safespring_social_21.gif"
 language: "En"

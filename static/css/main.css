@@ -91,9 +91,23 @@ li {
 	margin-right: 5%
 }
 
+.stidebar-sticky {
+	position: sticky !important;
+	top: -130px !important;
+	max-height: 110vh !important;
+	overflow: scroll !important;
+}
+
 #TableOfContents ul>li {
 	list-style: none;
 }
+#TableOfContents ul>li>a {
+	font: var(--hind-light-weight) 16px var(--hind-font);
+	color: var(--clear-blue-color);
+	margin: 10px 0 2px 0;
+	line-height: 1;
+}
+
 
 #TableOfContents ul>li>ul>li>a {
 	font: var(--hind-light-weight) 15px var(--mon-font);
@@ -107,20 +121,11 @@ li {
 	display: inline-block;
 	width: 1em;
 	margin-left: -1em;
-	margin-bottom: 2px;
 }
 
-#TableOfContents ul>li>ul>li {
-	margin-left: 15px;
-	margin-bottom: 6px;
-}
-
-#TableOfContents ul>li>a {
-	font: var(--hind-light-weight) 16px var(--hind-font);
-	color: var(--clear-blue-color);
-	line-height: 1;
-	margin-bottom: 2px;
-	margin-top: 8px;
+#TableOfContents ul>li>ul {
+	margin-left: 17px;
+	margin-bottom: 15px;
 }
 
 p, ol {
@@ -1802,7 +1807,7 @@ color: var(--unCheckedColor);
 	}
 
 	.read-more {
-		padding: 15px 0 0
+		padding: 0;
 	}
 
 	.read-more h2 {
@@ -1817,7 +1822,7 @@ color: var(--unCheckedColor);
 		font-size: 16px;
 		padding: 0px;
 		line-height: 16px;
-		list-style-type: none;
+		list-style-type: '–   ';
 		list-style-position: inside;
 		text-decoration: none;
 	}
@@ -2569,6 +2574,13 @@ margin: 0
 	color: var(--middle-blue-color) !important;
 }
 
+.post-heading-black {
+	font: var(--extra-light-weight) 4vw var(--hind-font);
+	max-width: 90vw;
+	line-height: 1;
+	color: var(--alt-color) !important;
+}
+
 @media only screen and (max-width: 875px) {
 	.heading-content h1 {
 		font: var(--extra-light-weight) 35px var(--hind-font);
@@ -2640,11 +2652,26 @@ padding-top: 30px;
 	text-transform: uppercase;
 }
 
+.content-category-black {
+	font: var(--heavy-weight) 14px var(--mon-font);
+	color: #32323290;
+	padding: 10px 0 0;
+	text-transform: uppercase;
+}
+
 
 .content-summary-blogg {
 	font: var(--medium-weight) 18px var(--mon-font);
 	color: var(--text-color);
 	padding: 20px 0 0;
+	text-transform: ;
+	max-width: 700px;
+}
+
+.content-summary-black {
+	font: var(--medium-weight) 18px var(--mon-font);
+	color: #32323290;
+	padding: 20px 0 0 0;
 	text-transform: ;
 	max-width: 700px;
 }

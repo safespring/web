@@ -1,86 +1,145 @@
-{{ if $.Params.toc }}
-<div class="toc">
-<div class="ch-sidebar shadow-1">
-  <div>
-    <img class="ch-sidebar-logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+<div class="ch-sidebar body my-2 p-relative bg-white shadow-1 {{ if .Params.toc }}stidebar-sticky{{ end }}">
+  <div class="d-block w-full blogg-card-image-container">
+    {{ if .Params.sidebarimage }}
+    <img class="lazyload blogg-card-image" data-src="/img/card/{{ .Params.sidebarimage }}" alt="{{ .Title }}">
+    {{ else }}
+    <img class="lazyload blogg-card-image" data-src="/img/card/safespring_logotype_blue_svg.svg" alt="{{ .Title }}">
+    {{ end }}
   </div>
-  <div class="content-body">
-    <h2>{{ .Params.toc }}</h2>
-    {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+  <div class="blogg-card-text-container mb-1">
+    {{ if .Params.toc }}
+    <h2 class="blogg-card-title ff-serif font-weight-light text-black mt-0 mb-1" style="line-height: 1.1;">
+      {{ .Params.toc }}
+    </h2>
+    <div>
+      {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+    </div>
   </div>
-{{ else if .Params.saas }}
-<div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 3; position: sticky;top: -186px; height: fit-content;">
-<a href="{{ .Params.sidebarlink }}"><div class="content-container">
-  <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-      <div class="d-block w-full"><img src="/img/saas/cards/{{ .Params.sidebarimage }}" alt="{{ .Params.sidebartitle }}"></div>
-<div class="px-2 py-2">
-  <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
-    {{ .Params.sidebarsection }}
+  {{ else if .Params.saas }}
+  <div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 3; position: sticky;top: -186px; height: fit-content;">
+    <a href="{{ .Params.sidebarlink }}">
+      <div class="content-container">
+        <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
+          <div class="d-block w-full">
+            <img src="/img/saas/cards/{{ .Params.sidebarimage }}" alt="{{ .Params.sidebartitle }}">
+          </div>
+          <div class="px-2 py-2">
+            <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
+              {{ .Params.sidebarsection }}
+            </div>
+            <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
+              {{ if .Params.sidebardate }}|{{ else }} {{ end }}
+            </div>
+            <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
+              {{ if .Params.sidebardate }}{{ .Params.sidebardate }}{{ else }} {{ end }}
+            </div>
+            <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+              {{ .Params.sidebartitle }}
+            </h1>
+            <p class="mb-1">
+              {{ .Params.sidebartext }}
+            </p>
+            {{ if .Params.sidebarwhitepaper }}
+            <iframe src="https://pages.upsales.com/9549u1363271089514223bc3729e84ea32f8f-frame" width="250" height="300" style="border:0"></iframe>
+            {{ else }}
+            <a href="{{ .Params.sidebarlink }}" id="text-button">
+              {{ .Params.sidebarknapp }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </a>
+    </div>
+    {{ else if .Params.meeting }}
+    <div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 3;position: sticky;top: -186px;height: fit-content;">
+      <div class="content-container">
+        <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
+          <div class="d-block w-full">
+            <img src="/img/saas/cards/{{ .Params.sidebarimage }}" alt="{{ .Params.sidebartitle }}">
+          </div>
+          <div class="px-2 py-2">
+            <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
+              {{ .Params.sidebarsection }}
+            </div>
+            <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
+              {{ if .Params.sidebardate }}|{{ else }} {{ end }}
+            </div>
+            <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
+              {{ if .Params.sidebardate }}{{ .Params.sidebardate }}{{ else }} {{ end }}
+            </div>
+            <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+              {{ .Params.sidebartitle }}
+            </h1>
+            <p class="mb-1">
+              {{ .Params.sidebartext }}
+            </p><br>
+            {{ if .Params.meetingurl }}<div class="calendly-inline-widget" data-url="{{ .Params.meetingurl }}" style="min-width:320px;height:630px;">
+            </div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            {{ else }}
+            <a href="{{ .Params.sidebarlink }}" class="button">
+              {{ .Params.sidebarknapp }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ else }}
+     <p class="mt-0">
+    {{ if  eq .Params.language "En" }}
+      Safespring produces secure, reliable, and flexible cloud services. Our infrastructure as a service is based on open source and open standards.
+    </p>
+    <p>
+      We produce all our services within Europe and it's, therefore, easier for you to follow European local laws and regulations.
+    </p>
+    {{ else if  eq .Params.language "No" }}
+      Safespring produserer sikre, pålitelige og fleksible skytjenester. Vår infrastruktur som en tjeneste er basert på åpen kildekode og åpne standarder.
+    </p>
+    <p>
+      Vi produserer alle våre tjenester i Europa, og det er derfor lettere for deg å følge europeiske lokale lover og regler.
+    </p>
+    {{ else }}
+      Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder.
+    </p>
+    <p>
+      Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!
+    </p>
+    {{ end }}
+    <h2>
+      {{ if eq .Params.language "En" }}Stay updated{{ else if eq .Params.language "No" }} {{ else }}Håll dig uppdaterad{{ end }}
+    </h2>
+    <iframe src="https://pages.upsales.com/9549u7e25bcce5fef4a2da7f567302725664e-frame" width="100%" height="200" style="border:0"></iframe>
+    <h2 class="mt-0 pt-0 mb-0">
+      {{ if eq .Params.language "En" }}Explore more{{ else if eq .Params.language "No" }}Utforsk mer{{ else }}Upptäck mer{{ end }}
+    </h2>
+    <ul class="read-more">
+      <li>
+        <a href="/tjanster/compliant-kubernetes">
+          Compliant Kubernetes
+        </a>
+      </li>
+      <li class="">
+        <a href="/tjanster/safespring-compute">
+          Safespring Compute
+        </a>
+      </li>
+      <li class="">
+        <a href="/tjanster/safespring-storage">
+          Safespring Storage
+        </a>
+      </li>
+      <li class="">
+        <a href="/tjanster/managed-private-cloud/">
+          Private Cloud
+        </a>
+      </li>
+      <li class="">
+        <a href="/support">
+          {{ if eq .Params.language "En" }}Documentation{{ else if eq .Params.language "No" }}Dokumentasjon{{ else }}Dokumentation{{ end }}
+        </a>
+      </li>
+    </ul>
   </div>
-  <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
-      {{ if .Params.sidebardate }}|{{ else }} {{ end }}
-  </div>
-  <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
-    {{ if .Params.sidebardate }}{{ .Params.sidebardate }}{{ else }} {{ end }}
-  </div>
-  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-    {{ .Params.sidebartitle }}
-  </h1>
-  <p class="mb-1">
-    {{ .Params.sidebartext }}
-  </p>
-  {{ if .Params.sidebarwhitepaper }}<iframe src="https://pages.upsales.com/9549u1363271089514223bc3729e84ea32f8f-frame" width="250" height="300" style="border:0"></iframe>{{ else }}
-  <a href="{{ .Params.sidebarlink }}" id="text-button">{{ .Params.sidebarknapp }}</a>
   {{ end }}
 </div>
-</div></a></div>
-{{ else if .Params.meeting }}
-<div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 3;position: sticky;top: -186px;height: fit-content;">
-<div class="content-container">
-  <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-      <div class="d-block w-full"><img src="/img/saas/cards/{{ .Params.sidebarimage }}" alt="{{ .Params.sidebartitle }}"></div>
-<div class="px-2 py-2">
-  <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
-    {{ .Params.sidebarsection }}
-  </div>
-  <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
-      {{ if .Params.sidebardate }}|{{ else }} {{ end }}
-  </div>
-  <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
-    {{ if .Params.sidebardate }}{{ .Params.sidebardate }}{{ else }} {{ end }}
-  </div>
-  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-    {{ .Params.sidebartitle }}
-  </h1>
-  <p class="mb-1">
-    {{ .Params.sidebartext }}
-  </p><br>
-  {{ if .Params.meetingurl }}<div class="calendly-inline-widget" data-url="{{ .Params.meetingurl }}" style="min-width:320px;height:630px;"></div>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>{{ else }}
-  <a href="{{ .Params.sidebarlink }}" class="button">{{ .Params.sidebarknapp }}</a>
-  {{ end }}
-</div>
-</div></div>
-{{ else }}
-<div class="ch-sidebar shadow-1">
-  <div>
-    <img class="ch-sidebar-logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
-  </div>
-  <div>
-    <h2 class="content-heading">Om Safespring</h2>
-    <p class="">Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på Open Source och öppna standarder. Vi producerar själva samtliga tjänster lokalt vilket gör det enklare för dig att uppfylla lagar och regler, samt känna dig trygg!</p>
-    <br>
-  </div>
-  <h2>Få vårt nyhetsbrev</h2>
-  <iframe src="https://pages.upsales.com/9549u7e25bcce5fef4a2da7f567302725664e-frame" width="100%" height="200" style="border:0"></iframe>
-<br><br>
-  <div class="read-more">
-    <h2>Läs mer om:</h2>
-      <li class="content-body"><a href="/tjanster/compliant-kubernetes">&gt; Compliant Kubernetes</a></li>
-      <li class="content-body"><a href="/tjanster/safespring-compute">&gt; Safespring Compute</a></li>
-      <li class="content-body"><a href="/tjanster/safespring-storage">&gt; Safespring Storage</a></li>
-      <li class="content-body"><a href="/tjanster/managed-private-cloud/">&gt; Private Cloud</a></li>
-      <li class="content-body"><a href="/support">&gt; Dokumentation</a></li>
-  </div>
-</div>
-{{ end }}
