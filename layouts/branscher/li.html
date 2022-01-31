@@ -1,16 +1,16 @@
-  <div class="content-container">
-    <a href="{{ .Permalink }}">
-    <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-        <div class="d-block w-full"><img src="{{ if.Params.card }}/img/card/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.jpg{{ end }}" alt="{{ .Title }}"></div>
-  <div class="px-2 py-2">
-    <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-      {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
-    </h1>
-    <p class="mb-1">
-      {{ .Params.intro }}
-    </p>
-  </div>
-  <a href="{{ .Permalink }}" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif">
-    Läs mer
-  </a>
+<div class="content-container">
+  <a href="{{ .Permalink }}">
+  <div class="body my-2 p-relative bg-white shadow-1 {{ .Params.banner }}">
+      <div class="d-block w-full blogg-card-image-container"><img class="lazyload blogg-card-image" data-src="{{ if.Params.card }}/img/card/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}"></div>
+<div class="blogg-card-text-container">
+  <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-0 mb-1" style="line-height: 1.1;">
+    {{ .Params.cardtitle }}
+  </h1>
+  <p class="mb-1">
+    {{ .Params.intro }}
+  </p>
+</div>
+<a href="{{ .Permalink }}" class="blogg-card-link text-uppercase d-inline-block font-weight-medium lts-2px text-center styled-link ff-serif">
+  {{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}
+</a>
 </div></a></div>

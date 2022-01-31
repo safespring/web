@@ -87,7 +87,11 @@
     </div>
     {{ else }}
      <p class="mt-0">
-    {{ if  eq .Params.language "En" }}
+       {{ if .Params.sidebartext }}
+       {{ .Params.sidebartext }}
+     </p>
+    {{ else if  eq .Params.language "En" }}
+    <p class="mt-0">
       Safespring produces secure, reliable, and flexible cloud services. Our infrastructure as a service is based on open source and open standards.
     </p>
     <p>

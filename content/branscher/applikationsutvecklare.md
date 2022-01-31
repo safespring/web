@@ -2,11 +2,12 @@
 title: "Safespring är en hållbar container plattform för innovativa bolag"
 cardtitle: "Safespring för SaaS-bolag"
 date: 2021-06-28T10:47:25+01:00
-card: "safespring_card_2.svg"
+card: "safespring_card_21.svg"
 draft: false
 intro: "MedTech, EdTech eller andra moderna bolag som söker Compliant Kubernetes, Databastjänster och mer."
 background: "safespring_bilder_10.jpg"
 logobannersaas: "yes"
+banner: "blue-hover-webinar"
 ---
 <div class="ingress"><p>Safesprings molnplattform är mångsidig och ett mycket bra fundament för många olika typer av tillämpningar. Plattformen är väl utformad för SaaS-tjänster eftersom skalbarhet och flexibilitet är viktiga komponenter.</p></div>
 

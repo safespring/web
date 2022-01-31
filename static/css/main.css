@@ -189,6 +189,10 @@ body {
 	margin: 0;
 }
 
+.light-backround {
+	color: #323232 !important;
+}
+
 a {
 	color: var(--link-color);
 	text-decoration: none;
