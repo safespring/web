@@ -81,7 +81,7 @@ Safespring started developing a modern cloud platform in 2014. Since the initial
 
 From our professional data centers in Sweden and Norway and from customer premises data center (so called private clouds) our delivery of Infrastructure-as-a-Service include Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through API or our portal. Our value proposition includes open standards, privacy and compliance to local laws.
 
-Our customers include some of the largest research and education organizations, government authorities and Software-as-a-service companies in Sweden and Norway. Safespring holds framework agreements, directly or through partners, with [Géant](/ocre) (including SUNET, Uninett and NORDUnet), SKR and Kammarkollegiet, to mention the most important ones.
+Our customers include some of the largest research and education organizations, government authorities and Software-as-a-service companies in Sweden and Norway. Safespring holds framework agreements, directly or through partners, with [Géant](/ocre) (including Sunet, Sikt and NORDUnet), SKR and Kammarkollegiet, to mention the most important ones.
 
 
 ## For more information

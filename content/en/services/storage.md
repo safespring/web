@@ -57,7 +57,7 @@ Storage as a service is a cloud-based service created to cater to the stringent 
 - <span class="inline-rubrik">Hourly rates</span> – Manage both peaks and low volumes – Discounts for one- or two-year minimum-term contracts.
 - <span class="inline-rubrik">Great flexibility for the user</span> – Elastic storage as required.
 - <span class="inline-rubrik">High level of security</span> – Role-based access control to the service. Optional integration with identity systems – Integrated with SWAMID & FEIDE for the education sector – Data is encrypted during transmission (TLS) and in our data center on self-encrypted hard disks.
-- <span class="inline-rubrik">High level of availability</span> – Disaster protection – Storage in another geographical location – Redundant internet connection – Direct connection to SUNET and UNINETT for the education sector.
+- <span class="inline-rubrik">High level of availability</span> – Disaster protection – Storage in another geographical location – Redundant internet connection – Direct connection to SUNET and Sikt for the education sector.
 - <span class="inline-rubrik">Cost control</span> – Predict your costs by setting quotas for users and/or projects with invoice-based payment.
 
 ### Benefits

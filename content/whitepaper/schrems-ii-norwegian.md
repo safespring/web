@@ -3,7 +3,7 @@ title: "EU-domstolens ugyldigforklaring av
 Privacy Shield"
 date: "2020-09-04"
 draft: false
-tags: ["Norska"]
+tags: ["Norsk"]
 author: "Amelia Andersdotter"
 dokumentnamn: ""
 socialmedia: "/blogg/socialmedia/safespring_social_33.jpg"
@@ -14,9 +14,8 @@ sidebarlinkurl: ""
 card: "safespring_card_33.jpg"
 eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
-toc: "Innehåll"
-aliases:
-    - /schrems/
+toc: "Innhold"
+language: "No"
 ---
 
 

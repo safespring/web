@@ -33,7 +33,7 @@ As an infrastructure engineer your manager will be Anders Bruvik. See contact in
 
 Safespring is a Nordic startup delivering a locally based infrastructure as a Service based on open source software. Our Services enables customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency levels and retaining data sovereignty. From our professional data centers in Sweden and Norway our delivery of infrastructure-as-a-Service include Safespring Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through API or portal. Our value proposition includes open standards, privacy and compliance to local laws.
 
-Our customers include some of the largest research and education organizations, government authorities and SaaS companies in Sweden and Norway. Safespring holds directly or through partners framework agreement with SUNET, Uninett, NORDUnet, SKR, Kammarkollegiet to mention the most important ones.
+Our customers include some of the largest research and education organizations, government authorities and SaaS companies in Sweden and Norway. Safespring holds directly or through partners framework agreement with SUNET, Sikt, NORDUnet, SKR, Kammarkollegiet to mention the most important ones.
 
 ### What should you expect from Safespring?
 

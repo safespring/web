@@ -1,10 +1,10 @@
 ---
 title: "Safespring er den foretrukne plattformen for forsknings- og utdanningssektoren"
 cardtitle: "Safespring for akademisk sektor"
-card: "safespring_card_1-orange.svg"
+card: "safespring_card_11.svg"
 date: 2021-06-29T10:47:25+01:00
 draft: false
-intro: "Over 60 universiteter og høyskoler bruker våre tjenester via SUNET, UNINETT eller direkte gjennom GÉANTs OCRE-rammeavtale."
+intro: "Over 60 utdannings­institusjoner bruker våre tjenester via Sunet, Sikt eller OCRE-rammeavtalet."
 background: "safespring-research.jpg"
 logobanner: "yes"
 toplogo: "ocre.png"

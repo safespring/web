@@ -12,7 +12,7 @@ Exempel på regelverk kan vara GDPR och Arkivlagen.
 
 ### Många fördelar med molntjänster inom landet
 
-Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och UNINETT i Norge.
+Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och Sikt i Norge.
 
 <a href="/tjanster" id="text-button">Läs mer om våra tjänster</a>
 

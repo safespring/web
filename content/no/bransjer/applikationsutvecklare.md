@@ -2,7 +2,7 @@
 title: "Safespring är en hållbar container plattform för innovativa bolag"
 cardtitle: "Safespring för SaaS-bolag"
 date: 2021-06-28T10:47:25+01:00
-card: "safespring_card_2.svg"
+card: "safespring-kubernetes.svg"
 draft: false
 intro: "MedTech, EdTech eller andra moderna bolag som söker Compliant Kubernetes, Databastjänster och mer."
 background: "safespring_bilder_10.jpg"

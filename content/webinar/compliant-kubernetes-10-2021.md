@@ -2,7 +2,7 @@
 title: "Norsk Kubernetes for beskyttelses­verdige data"
 publishDate: "2021-10-12"
 draft: false
-tags: ["Norska"]
+tags: ["Norsk"]
 section: "Webinar"
 card: "safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"

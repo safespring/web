@@ -25,11 +25,17 @@ section: "Public Cloud"
 
 Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
 
+<div style="margin-bottom:50px;"></div>
+
 ![Safespring Compute benefits](/img/safespring-compute-key-points.svg)
+
+<div style="margin-bottom:50px;"></div>
 
 Vår molnbaserade infrastrukturtjänst är baserad på den marknadsledande molnplattformen OpenStack. Tjänsten levereras ifrån säkra datahallar med mycket hög tillgänglighet. Data i tjänsten lämnar aldrig Sverige då datahallarna är placerade inom landets gränser. Vi är ett nordiskt bolag som därigenom inte omfattas av ex. Cloud Act, vilket gör att gör att du kan känna dig ännu tryggare.
 
 {{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
+
+<div style="margin-bottom:50px;"></div>
 
 ### Lagring till Safespring Compute
 Den lagring som behövs till de virtuella instanserna är separerad från noderna där själva instanserna kör i ett Ceph-kluster och kan fås i två varianter:
@@ -42,6 +48,8 @@ Genom en självbetjäningsportal kan tjänsten skalas uppåt eller nedåt vid be
 <br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
 
 {{< youtube iYDi_Hz7A74 >}}
+
+<div style="margin-bottom:50px;"></div>
 
 ### Datahallar inom landets gränser
 Tjänsten levereras från våra mycket säkra datahallar med mycket hög tillgänglighet. Eftersom vi är ett nordiskt bolag och våra molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.

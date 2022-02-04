@@ -44,7 +44,6 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
 <div id="contact"></div>
 <div style="margin-bottom:100px;"></div>
 
-
 <div class="videoplayer">
 <div class="iframe-aspect-ratio iframe responsive-container"><div id="player"></div></div> <script>var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
@@ -97,7 +96,7 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
   <div style="margin-bottom:100px;">
   </div>
 
-  {{< horisontal-card image="/img/kontakt/stockholm.png" cardtitle="30 min om Compliant Kubernetes" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Skicka in dina frågor till våra kunniga medarbetare på stockholmskontoret så får du snabbt svar." >}}
+  {{< horisontal-card image="/img/card/findout-logo-1x1.svg" cardtitle="Affärscase" link="mailto:info@safespring.com" linktext="Läs mer" text="FindOut valde att flytta hela sin lösning från Google Cloud till Compliant Kubernetes på svensk infrastruktur." >}}
 
   <div id="contact"></div>
   <div style="margin-bottom:100px;">
@@ -117,3 +116,5 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
   Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svensk lag.
 
   Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
+
+  {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is located in secure data centers within the EU and doesn't get affected by foreign laws like CLOUD Act or FISA 702." %}}

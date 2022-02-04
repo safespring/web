@@ -2,9 +2,9 @@
 title: "Safespring produserer en bærekraftig skyplattform og er medlem av GAIA-X"
 cardtitle: "Safespring for myndigheter"
 date: 2021-06-30T10:47:25+01:00
-card: "safespring_card_3.svg"
+card: "safespring_card_31.svg"
 draft: false
-intro: "Safesprings tjenester kan anskaffes direkte eller via vår rammeavtale med Uninett."
+intro: "Safesprings tjenester kan anskaffes direkte eller via vår rammeavtale med Sikt."
 background: "safespring_bilder_10.jpg"
 startpage: "yes"
 language: "No"

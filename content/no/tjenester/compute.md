@@ -27,7 +27,7 @@ Til de virtuelle serverne finnes det to forskjellige lagringstjenester: Fast (SS
 ## Bakgrunn 
 Safespring vant anbudet om levering av Safespring Compute til den akademiske sektoren i Sverige og Norge.
 
-I dag omfatter våre kunder alle universiteter, høyskoler og andre utdannelses- og forskningsmiljøer som er oppkoblet til de nasjonale forskningsnettene, Sunet i Sverige og Uninett i Norge. Totalt omfatter dette flere hundre organisasjoner med hundretusenvis av brukere.
+I dag omfatter våre kunder alle universiteter, høyskoler og andre utdannelses- og forskningsmiljøer som er oppkoblet til de nasjonale forskningsnettene, Sunet i Sverige og Sikt i Norge. Totalt omfatter dette flere hundre organisasjoner med hundretusenvis av brukere.
 
 ### Tjenestehøydepunkter
 - Fleksibel server som skytjeneste
@@ -61,7 +61,7 @@ Alle data lagres i Safesprings eget datasenter og gir brukeren den nødvendige e
     - Disaster beskyttelse - Server kjører på geografisk annet sted.
     - Ressursreservasjon: Mulighet for å booke ressurser på sekundær geografisk plass.
     - Redundant oppkobling til internett.
-    - Direkte oppkobling til SUNET og UNINETT for utdanningssektoren.
+    - Direkte oppkobling til SUNET og Sikt for utdanningssektoren.
 - Kostnadskontroll
     - Forutsigbare kostnader gjennom å sette kvoter for brukere eller prosjekter.
     - Fakturabasert betaling

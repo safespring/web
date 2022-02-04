@@ -3,7 +3,7 @@ title = "Vi har laget en guide for å bistå ved valg av backuptjeneste."
 intro = "Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning"
 date = "2018-01-22"
 draft = false
-tags = ["Norska"]
+tags = ["Norsk"]
 showthedate = false
 section = "Tech update"
 language = "No"
@@ -24,7 +24,7 @@ Vi tilbyr 3 ulike varianter av Backup:
 * Small
 * On-Demand
 
-Sammen med UNINETT har vi laget en guide som gir veiledning i hvilken tjeneste som passer best avhengig av behov.
+Sammen med Sikt har vi laget en guide som gir veiledning i hvilken tjeneste som passer best avhengig av behov.
 
 ## Safespring tilbyr Microsoft Windows operativsystem i Compute-plattformen
 

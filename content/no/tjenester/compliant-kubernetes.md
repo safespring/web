@@ -4,10 +4,10 @@ cardtitle: "Safespring og Kubernetes"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Kjør Compliant Kubernetes som en administrert tjeneste."
+intro: "Kjør Compliant Kubernetes som en administrert tjeneste i henhold til GDPR i Europa."
 background: "safespring_background_medtech.jpg"
 card: "safespring_background_medtech.jpg"
-card: "safespring_card_4.svg"
+card: "safespring-kubernetes.svg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Les Solution Brief"
 sidebarlinkurl: "/no/whitepaper/compliant-kubernetes/"

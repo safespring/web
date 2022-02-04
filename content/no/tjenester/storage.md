@@ -55,7 +55,7 @@ Safespring Storage er fleksibel og enkel å bruke, enten via vår selvbetjenings
 - Høy tilgjengelighet
     - Disaster Protection: Data lagres på en annen geografisk lokasjon.
     - Redundant oppkobling til internett.
-    - Direkte oppkobling til Sunet og Uninett for utdannelsessektoren.
+    - Direkte oppkobling til Sunet og Sikt for utdannelsessektoren.
 - Kostnadskontroll
     - Forutsigbare kostnader gjennom å sette kvoter for brukere og/eller prosjekter.
     - Fakturabasert betaling

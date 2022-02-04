@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="701" viewBox="0 0 1920 701">
+  <defs>
+    <linearGradient id="linear-gradient" x1="3.14" y1="-1.956" x2="-0.03" y2="1.026" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#195f8c" stop-opacity="0.392"/>
+      <stop offset="1" stop-color="#195f8c" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#195f8c" stop-opacity="0.306"/>
+      <stop offset="1" stop-color="#195f8c" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip-safespring-blue-fade">
+      <rect width="1920" height="701"/>
+    </clipPath>
+  </defs>
+  <g id="safespring-blue-fade" clip-path="url(#clip-safespring-blue-fade)">
+    <rect width="1920" height="701" fill="#fff"/>
+    <g id="safespring-blue-fade-2" data-name="safespring-blue-fade" transform="translate(-190 -242)">
+      <rect id="Rectangle_286" data-name="Rectangle 286" width="1920" height="701" transform="translate(190 242)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_25" data-name="Ellipse 25" cx="713" cy="573.5" rx="713" ry="573.5" transform="translate(-655 19)" fill="url(#radial-gradient)"/>
+      <ellipse id="Ellipse_26" data-name="Ellipse 26" cx="713" cy="573.5" rx="713" ry="573.5" transform="translate(1360 370)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="safespring_symbol_black_svg" transform="translate(875.516 196.681) rotate(-11)" opacity="0.039">
+      <path id="Path_5088" data-name="Path 5088" d="M719.549,222.508a250.036,250.036,0,0,0-497.035,0C90.572,237.116-6.955,352.284.373,484.828s116.956,236.259,249.7,236.234H471.031a139.559,139.559,0,0,0,0-279.117,81.435,81.435,0,1,1,57.707-138.837,29.1,29.1,0,1,0,41.192-41.116,139.559,139.559,0,1,0-98.9,237.963,81.434,81.434,0,1,1,0,162.869H250.076c-105.99,0-191.912-85.922-191.912-191.912S144.086,279,250.076,279a29.081,29.081,0,0,0,29.043-29.043c0-105.99,85.922-191.912,191.912-191.912s191.912,85.922,191.912,191.912A29.043,29.043,0,0,0,691.986,279C797.976,279,883.9,364.922,883.9,470.912S797.976,662.824,691.986,662.824a29.081,29.081,0,0,0,0,58.124c132.361-.5,241.4-104.07,248.707-236.229S851.047,237.6,719.549,222.508Z" transform="translate(0 0)" fill="#195f8c"/>
+      <path id="Path_5089" data-name="Path 5089" d="M719.549,222.508a250.036,250.036,0,0,0-497.035,0C90.572,237.116-6.955,352.284.373,484.828s116.956,236.259,249.7,236.234H471.031a139.559,139.559,0,0,0,0-279.117,81.435,81.435,0,1,1,57.707-138.837,29.1,29.1,0,1,0,41.192-41.116,139.559,139.559,0,1,0-98.9,237.963,81.434,81.434,0,1,1,0,162.869H250.076c-105.99,0-191.912-85.922-191.912-191.912S144.086,279,250.076,279a29.081,29.081,0,0,0,29.043-29.043c0-105.99,85.922-191.912,191.912-191.912s191.912,85.922,191.912,191.912A29.043,29.043,0,0,0,691.986,279C797.976,279,883.9,364.922,883.9,470.912S797.976,662.824,691.986,662.824a29.081,29.081,0,0,0,0,58.124c132.361-.5,241.4-104.07,248.707-236.229S851.047,237.6,719.549,222.508Z" transform="translate(0 0)" fill="#195f8c"/>
+    </g>
+  </g>
+</svg>

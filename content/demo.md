@@ -1,10 +1,10 @@
 ---
-title: "Upptäck en lokal molntjänst i världsklass med våra experter"
+title: "Upptäck en lokal molntjänst i världsklass, med våra experter"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: ""
 intro: "Kostnadsfri demo av Safesprings molnplattform"
-background: "safespring-blue-fade.svg"
+background: "safespring-blue-fade2.svg"
 darkmode: "off"
 card: ""
 socialmedia: ""
@@ -26,7 +26,7 @@ aliases: ""
 Vilket värde tillför vårt medlemskap i Gaia-X, moderna infrastruktur och kompetens till er verksamhet?
 {{< /ingress >}}
 
-Det här ingår:
+### Det här ingår
 
 - Genomgång av våra tjänster & lösningar
 - Presentation av vilket värde vår plattform kan skapa och hur vi kan hjälpa er komma igång

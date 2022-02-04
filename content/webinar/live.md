@@ -34,7 +34,7 @@ Safespring erbjuder infrastrukturtjänster och storskalig lagring. Safespring ä
 
 Många bolag som skapar molntjänster för den offentliga sektorn drar nytta av att utveckla sina tjänster ovanpå Safesprings molnplattform. Vi har datacenter i Sverige och Norge och stödjer moderna gränssnitt som till exempel Kuberneteskluster. Vår plattform är byggd med säkerhet som största fokus både fysisk, logisk och juridisk. Kombination av modern infrastruktur, öppen källkod som standard och personal med spetskompetens gör oss starka på marknaden.
 
-Våra tjänster går att nyttja in genom flera ramavtal. Bland annat når vi alla högskolor och universitet genom SUNET i Sverige och UNINETT i Norge. SVT har skrivit ramavtal med oss och vi har 17 myndigheter som drar nytta av styrkan i Safesprings molnplattform idag. Genom ett ramavtal med Géant når vi ut till 27 europeiska länder som kan använda våra säkra molntjänster.
+Våra tjänster går att nyttja in genom flera ramavtal. Bland annat når vi alla högskolor och universitet genom SUNET i Sverige och Sikt i Norge. SVT har skrivit ramavtal med oss och vi har 17 myndigheter som drar nytta av styrkan i Safesprings molnplattform idag. Genom ett ramavtal med Géant når vi ut till 27 europeiska länder som kan använda våra säkra molntjänster.
 
 Gå gärna in i vårt mötesrum för att prata med oss direkt om hur vi kan vara en trygg grund i er digitala utveckling.
 
