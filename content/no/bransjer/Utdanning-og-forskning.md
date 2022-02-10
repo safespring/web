@@ -4,7 +4,7 @@ cardtitle: "Safespring for akademisk sektor"
 card: "safespring_card_11.svg"
 date: 2021-06-29T10:47:25+01:00
 draft: false
-intro: "Over 60 utdannings­institusjoner bruker våre tjenester via Sunet, Sikt eller OCRE-rammeavtalet."
+intro: "Over 60 utdannings­institusjoner bruker våre tjenester."
 background: "safespring-research.jpg"
 logobanner: "yes"
 toplogo: "ocre.png"
