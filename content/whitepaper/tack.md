@@ -1,8 +1,7 @@
 ---
 title: "Tack för att du laddade ner vårt White Paper"
 date: 2018-06-20
-draft: false
-author: "Martin Millnert"
+draft: true
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 intro: "Det White paper du nyss laddade ner kommer skickas till den mailadress som du angav i formuläret."

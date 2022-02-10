@@ -52,7 +52,7 @@ Safespring Compute is built on the market-leading OpenStack cloud technology. Ch
 - <span class="inline-rubrik">HOURLY RATES</span> – Manage both peaks and low volumes. Discounts for minimum-term contracts.
 - <span class="inline-rubrik">GREAT FLEXIBILITY</span> –  For the user – elastic servers – control via API requests. Elastic storage as required.
 - <span class="inline-rubrik">HIGH LEVEL OF SECURITY</span> – Role-based access control to the service. Option for integration with your identity system. Safespring Compute is integrated with SWAMID & FEIDE for the education sector. Data is encrypted both during transmission (TLS) and in our data center on self-encrypted hard disks.
-- <span class="inline-rubrik">HIGH LEVEL OF AVAILABILITY</span> – Disaster protection – data is stored in another geographical location. Redundant connection to the internet. Direct connection to SUNET and UNINETT for the education sector.
+- <span class="inline-rubrik">HIGH LEVEL OF AVAILABILITY</span> – Disaster protection – data is stored in another geographical location. Redundant connection to the internet. Direct connection to SUNET and Sikt for the education sector.
 - <span class="inline-rubrik">COST CONTROL</span> – Predict your costs by setting quotas for users and/or projects with invoice-based payment.
 
 ### Benefits

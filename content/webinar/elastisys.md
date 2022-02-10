@@ -2,6 +2,7 @@
 title: "Lär dig lyckas med containers och Kubernetes"
 publishDate: "2020-05-05"
 draft: false
+tags: ["Svenska"]
 card: "safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"

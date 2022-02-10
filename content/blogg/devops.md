@@ -2,7 +2,7 @@
 title: "Outsourcing av IT minskar till fördel för DevOps"
 date: "2019-05-06T11:55:39+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_15.jpg"
 eventbild: "safespring_background_15.jpg"

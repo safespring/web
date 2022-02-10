@@ -1,24 +1,20 @@
 <div class="content-container">
   <a href="{{ .Permalink }}">
-  <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
-      <div class="d-block w-full"><img src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}"></div>
-<div class="px-2 py-2">
-  <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right:5px;">
-    {{ .Section }}
+  <div class="body my-2 p-relative bg-white shadow-1 blue-hover-webinar">
+      <div class="d-block w-full blogg-card-image-container"><img class="lazyload blogg-card-image" data-src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}"></div>
+<div class="blogg-card-text-container">
+  <div class="blogg-card-section-webinar mb-1 font-weight-medium text-uppercase lts-1px">
+    {{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
   </div>
-  <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right:5px;">
-      |
-  </div>
-  <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
-    {{ if .Date }}{{ .Date.Format "Jan 2, 2006" }}{{ else }}{{ .publishDate.Format "Jan 2, 2006" }}{{ end }}
-  </div>
-  <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+  <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-0 mb-1" style="line-height: 1.1;">
     {{ .Title }}
   </h1>
   <p class="mb-1">
+
   </p>
 </div>
-<a href="{{ .Permalink }}" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link ff-serif">
-  Läs mer
-</a>
-</div></a></div>
+<div class="webinar-card-link text-uppercase d-inline-block font-weight-medium lts-2px text-center ff-serif">
+  {{ if (eq .Params.language "En") }}Watch now{{ else if (eq .Params.language "No") }}Se direkte{{ else }}Se direkt{{ end }}
+</div>
+</div></a>
+</div>

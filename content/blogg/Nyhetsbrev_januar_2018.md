@@ -1,22 +1,20 @@
 +++
-title = "Nyhetsbrev januari 2018"
+title = "Vi har laget en guide for å bistå ved valg av backuptjeneste."
+intro = "Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning"
 date = "2018-01-22"
 draft = false
-tags = ["nyhetsbrev, backup, compute"]
+tags = ["Norsk"]
 showthedate = false
-section = "blogg"
+section = "Tech update"
 language = "No"
 +++
 
-Godt nytt år! Vi vil med dette nyhetsbrevet dele et par nyheter fra Safespring:
-
-Vi har laget en guide for å bistå ved valg av backuptjeneste. Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv.
+Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv.
 
 Dessuten er Safespring fra i høst parter med Microsoft,
 og vi kan dermed tilby imager med Windows Server operativsystem i
 compute-plattformen.
 
-<!--more-->
 
 ## Safespring Backup
 
@@ -24,11 +22,9 @@ Vi tilbyr 3 ulike varianter av Backup:
 
 * Large
 * Small
-* On-Demand.
+* On-Demand
 
-Sammen med UNINETT har vi laget en guide som gir veiledning i hvilken tjeneste som passer best avhengig av behov.
-Guiden finner du her:
-https://www.uninett.no/sites/default/files/safespring_backup_oversikt.pdf
+Sammen med Sikt har vi laget en guide som gir veiledning i hvilken tjeneste som passer best avhengig av behov.
 
 ## Safespring tilbyr Microsoft Windows operativsystem i Compute-plattformen
 
@@ -45,5 +41,6 @@ De kunder som har “software assurance”-avtale med Microsoft kan også instal
 
 I forbindelse med avtaleinngåelse må kunden signere en EULA-avtale for Microsoft-produkter med Safespring.
 
-For mer informasjon og spesifikasjon av hva som omfattes: http://www.microsoft.com/licensing/software-assurance/license-mobility.aspx
-For mer informasjon om Safespring Compute: https://www.uninett.no/safespring-infrastructure-as-a-service
+- [For mer informasjon og spesifikasjon av hva som omfattes](http://www.microsoft.com/licensing/software-assurance/license-mobility.aspx)
+- [For mer informasjon om Safespring Compute](https://www.uninett.no/bruk-av-safespring-rammeavtale
+)

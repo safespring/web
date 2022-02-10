@@ -2,7 +2,7 @@
 title: "Safespring tecknar ramavtal med SVT och UR för svenska molntjänster"
 date: "2020-03-11T10:39:43+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"
@@ -13,7 +13,7 @@ section: "blogg"
 <div class="ingress"><p>Idag blir Safespring en av fem leverantörer som får möjlighet att via ramavtal leverera molntjänster till Sveriges Television och Utbildningsradion.
 </p></div>
 
-**Avtalet tecknades idag den 11 mars.**
+**Avtalet tecknades den 11 mars.**
 
 Tjänsterna som SVT efterfrågar i avtalet för ”Cloud services” är Infrastruktur, plattformstjänster, distribuerad lagring, maskininlärning och databastjänster.
 

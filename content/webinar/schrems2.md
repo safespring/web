@@ -3,6 +3,7 @@ title: "Safespring - Schrems II"
 date: "2020-11-04"
 publishDate: "2020-09-03T13:58:35+02:00"
 eventdatum: "2020-11-04"
+tags: ["Svenska"]
 eventdag: "Onsdag kl. 11:00"
 draft: true
 author: ""

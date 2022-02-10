@@ -2,7 +2,7 @@
 title: "2018, Ett händelserikt år!"
 date: "2018-12-20T15:12:50+01:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_17.jpg"
 eventbild: "safespring_background_17.jpg"
@@ -30,5 +30,3 @@ I många delar av världen är det andra mycket mer basala problem som måste l�
 ### God jul och gott nytt år!
 
 Önskar Fredric, och alla andra på Safespring.
-
-<br><br><img src="/blogg/images/socialmedia/Safespring_christmas-greeting_2018.jpg" style="width: 100%; border-radius:5px;">

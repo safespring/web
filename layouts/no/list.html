@@ -9,18 +9,19 @@
   {{ partial "svg-filter.html" . }}
   <!-- HEADING -->
     <div class="heading-index">
+      <img class="lazyload heading-background-index" data-src="/img/safespring-index-logo-fade.svg" >
       <div class="content-container-index">
         <div class="content-meta-post">
           <p class="content-category-blogg">Om Safespring</p>
         </div>
         <h1 class="post-heading-firstpage">Safespring er din sikre <br>kilde for skytjenester</h1>
         <p class="content-summary-blogg">{{ index .Params "intro" }}</p><br><br>
-        <a id="button" href="/no/tjenester/" style="margin:0 20px 20px 0;">Hva vi tilbyr</a><a id="text-button" href="#down">Om oss</a>
+        <a id="button" href="/no/demo/" style="margin:0 20px 20px 0;">Boka demo</a><a id="text-button" href="/no/tjenester/">Hva vi tilbyr</a>
     </div>
   </div>
   <div class="background-bright">
 <div class="flexcontainer-start" style="align-items:baseline;">
-          {{ range where (where $.Site.RegularPages "Section" "no" ) "Params.tags" "bransjer" }}
+          {{ range where (where $.Site.RegularPages "Section" "no" ) ".Params.startpage" "yes" }}
             {{ .Render "li"}}
             {{ end }}
       </div>
@@ -30,6 +31,7 @@
   <main class="content-main-index" id="down">
       <!-- Heading Text -->
       <div class="content-image">
+        <img class="lazyload" data-src="/img/safespring-first-page.webp">
       </div>
 
       <!-- Body Text -->

@@ -2,6 +2,7 @@
 title: "Lätthanterlig närvarohantering och resursplanering i förskolan"
 publishDate: "2020-04-27"
 draft: false
+tags: ["Svenska"]
 card: "safespring_card_15.jpg"
 eventbild: "safespring_background_15.jpg"
 socialmediabild: "safespring_social_15.jpg"

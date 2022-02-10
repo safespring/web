@@ -2,15 +2,16 @@
 title: "OpenShift kör smidigt på Safesprings plattform"
 date: 2021-12-07T13:58:58+01:00
 draft: false
-intro: "Med vår egen OKD-installer kan du snabbt få ett OpenShift-cluster up-and-running. Ge din miljö den skalbarhet som moderna applikationer förtjänar."
+tags: ["Svenska"]
+intro: "Med vår egen OKD-installer kan du snabbt få ett OpenShift-cluster up-and-running."
 background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakta oss"
 sidebarlinkurl: "/kontakt"
 socialmedia: "safespring-compute.jpg"
 devops: ""
-section: "Solution Brief"
-card: "safespring_card_21.jpg"
-eventbild: "safespring_background_21.jpg"
+card: "safespring-openshift.svg"
+sidebarimage: "safespring-openshift.svg"
+background: "safespring-openshift.png"
 socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Innehållsförteckning"

@@ -2,7 +2,7 @@
 title: "Safespring är svensk medlem i GAIA-X"
 date: "2021-04-19"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_40.jpg"
 eventbild: "safespring_background_40.jpg"
@@ -11,8 +11,10 @@ section: "blogg"
 ---
 
 {{< ingress >}}
-Safespring är svensk medlem i det europeiska samarbetsprojektet, GAIA-X som etablerar en organisation i Sverige. Initiativtagare är Ericsson, City Network & Netnod. Syftet är att öka regionens förmåga att vara självförsörjande inom digital infrastruktur och främja innovation baserat på europeisk datalagstiftning.
+Safespring är svensk medlem i det europeiska samarbetsprojektet, GAIA-X som etablerar en organisation i Sverige.
 {{</ ingress >}}
+
+Initiativtagare är Ericsson, City Network & Netnod. Syftet är att öka regionens förmåga att vara självförsörjande inom digital infrastruktur och främja innovation baserat på europeisk datalagstiftning.
 
 {{% accordion title="Vad är GAIA-X?" %}}
 GAIA-X är ett europeiskt samarbetsprojekt för molninfrastruktur och syftar till att öka regionens självförsörjning inom digital infrastruktur.
@@ -32,7 +34,9 @@ Under de senaste 10-15 åren har Sverige och resten av EU sakta men säkert bliv
 
 Projektets centrala del består av en digital marknadsplats där privat och offentlig sektor i Europa kan komma åt digitala tjänster inom åtta definierade delområden för innovation; industri 4.0/SME, smarta städer, finans, hälsa, offentlig sektor, mobilitet, lantbruk och energi. Alla tjänster under respektive delområde utvecklas för att kunna användas över landsgränser inom hela EU. Mot bakgrund av detta är öppenhet och transparens viktiga utgångspunkter för alla delprojekt inom GAIA-X.
 
+{{< ingress >}}
 – Vi ser det som självklart att en transportinfrastruktur ska vara transparent och robust. Val av molntjänst ska inte behöva bero på konnektivitet utan andra parametrar, säger Patrik Fältström, Teknik- och Säkerhetsskyddschef på Netnod.
+{{< /ingress >}}
 
 Den svenska organisationen för GAIA-X riktar sig till alla som verkar inom den digitala industrin, företag, universitet och offentlig sektor. Det kan handla om organisationer som har en specifik digital tjänst eller teknik och vill göra den tillgänglig via GAIA-X, eller verksamheter som vill delta i redan existerande projekt inom ramen för GAIA-X i Sverige eller något annat medlemsland.
 

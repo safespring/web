@@ -2,6 +2,7 @@
 title: "Hur ska vi tänka kring utom-europeiska molntjänster?"
 publishDate: "2021-06-16T07:37:39+02:00"
 draft: false
+tags: ["Svenska"]
 card: "safespring_card_38-2.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38-2.gif"

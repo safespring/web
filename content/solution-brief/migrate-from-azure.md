@@ -2,19 +2,19 @@
 title: "Migrera från Azure Kubernetes Service till CK8s på Safespring"
 date: "2020-09-04"
 draft: false
-author: "Amelia Andersdotter"
+tags: ["Svenska"]
 dokumentnamn: ""
 socialmedia: "/blogg/socialmedia/safespring_social_37.gif"
 intro: "Detta dokument sammanställer de steg som bör tas för att migrera från Azure Kubernetes Service."
-sidebarlinkname: "Ladda ner PDF"
+sidebarlinkname: "Läs som PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/publications/safespring-migrering-fran-microsoft-azure-kubernetes-service-2021.pdf"
-card: "safespring_card_37.jpg"
-eventbild: "safespring_background_37.jpg"
-socialmediabild: "safespring_social_37.gif"
-toc: "Innehållsförteckning"
+card: "safespring-azure.svg"
+sidebarimage: "safespring-azure.svg"
+toc: "Innehåll"
+background: "safespring-azure.png"
+socialmediabild: ""
 ---
-
 
 ## Migrering till Compliant Kubernetes
 

@@ -1,16 +1,15 @@
 ---
-title: "Articles about Data sovereignty, GDPR and CLOUD Act"
+title: "Articles about digital sovereignty, GDPR and CLOUD Act"
 date: "2019-11-19T08:03:13+02:00"
 draft: false
-tags: [""]
+tags: ["English"]
 showthedate: true
 card: "safespring_card_20.jpg"
 eventbild: "safespring_background_20.jpg"
 socialmediabild: "safespring_social_20.jpg"
 section: "blogg"
+toc: "Innehållsförteckning"
 ---
-
-
 
 <div class="ingress"><p>We’ve gathered some articles about GDPR and the US Cloud Act to make it easier to get a greater picture about the two regulations.</p></div>
 

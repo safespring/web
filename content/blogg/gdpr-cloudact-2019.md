@@ -2,7 +2,7 @@
 title: "Ytterligare två data-överförings­avtal mellan USA och EU kan ogiltigförklaras"
 date: "2019-07-09"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_19.jpg"
 eventbild: "safespring_background_19.jpg"
@@ -10,9 +10,9 @@ socialmediabild: "safespring_social_19.jpg"
 section: "blogg"
 ---
 
-<div class="ingress"><p>Idag påbörjar EU-domstolen prövningen om giltigheten i Privacy Shield och Standard Contractual Clauses (SCCs).</p></div>
+{{< localbutton "Läs White paper" "/whitepaper/schrems-ii/" >}}<br>
 
-<br><a href="#up-form" id="button">Ladda ner White Paper</a><br><br>
+<div class="ingress"><p>Idag påbörjar EU-domstolen prövningen om giltigheten i Privacy Shield och Standard Contractual Clauses (SCCs).</p></div>
 
 Det är två viktiga avtal som används allmänt av företag inom Europeiska ekonomiska samarbetsområdet (EES) för att legitimera överföringen av personuppgifter till länder utanför EES.
 
@@ -28,41 +28,9 @@ Vi har uppdaterat rekommendationerna i vårt White Paper om hur organisationer b
 
 Ladda ner hela bakgrunden till säkerhetsläget i Europa och hur du kan säkra din data inför kommande lagstiftning från EU.
 
-### Ladda ner vårt Whiter Paper
-Hur du hanterar det osäkra läget i och med GDPR, CLOUD Act samt prövningen av SCC och Privacy Shield.
-
-<form id="up-form" name="form_9549u043a5ff8644c4ebeacdb3ef21accfa85" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	  <div class="form">
-    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Ditt namn...">
-	</div>
-  <div class="form">
-    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-    <input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Ditt mobilnummer...">
-  </div>
-  <div class="form">
-    <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="Din email...">
-	</div>
-  <div class="form">
-    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-		<input maxlength="512" maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Företag...">
-	</div>
-  <!-- REQUIRED FIELDS -->
-  <input type="hidden" name="formCid" value="9549">
-	<input type="hidden" name="formId" value="9549u043a5ff8644c4ebeacdb3ef21accfa85">
-	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
-	<!-- END OF REQUIRED FIELDS -->
-	<br>
-	<p>Genom att skicka in formuläret godkänner du våra <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
-	<button type="submit" id="button">Ladda ner</button>
-</form>
-<script>
-	(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();
-</script>
-
 ### Källor
 <a href="https://blogs.dlapiper.com/privacymatters/schrems-2-0-the-demise-of-standard-contractual-clauses-and-privacy-shield/">DLA Piper, 2019-07-01</a><br>
 <a href="https://techcrunch.com/2019/06/24/eu-us-privacy-shield-legal-showdown-now-set-for-july-9/?guccounter=2">Techcrunch, 2019-06-24</a><br>
 <a href="https://www.justice.gov/opa/press-release/file/1153446/download?utm_medium=email&utm_a=govdelivery">U.S. Department of Justice, 2019-04</a><br>
+
+{{< localbutton "Läs White paper" "/whitepaper/schrems-ii/" >}}<br>

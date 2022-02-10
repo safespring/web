@@ -1,8 +1,8 @@
 ---
 title: "Meltdown: Sårbarheter i moderne mikroprosessorer"
 date: "2018-01-04"
+tags: ["Norsk"]
 draft: true
-tags: "vedlikehold"
 showthedate: true
 section: "tech update"
 ---
@@ -21,7 +21,7 @@ Vi anbefaler at alle sørger for å holde operativsystemer oppdatert, og install
 
 ## Safespring som skyleverandør
 
-Safespring produserer skytjenester lokalt fra datasentre i Norge og Sverige. Våre tjenester er tilgjengelige for alle universiteter, høgskoler og utdanningsinstitusjoner gjennom avtaler med Uninett i Norge og Sunet i Sverige. Som skyleverandør er vi opptatt av å levere tjenester med høyt sikkerhetsnivå. Gjennom å levere tjenester fra lokale datasenter, og med dedikerte ressurser til målgruppen vår, bidrar vi til å begrense påvirkningen fra denne typen sårbarheter.
+Safespring produserer skytjenester lokalt fra datasentre i Norge og Sverige. Våre tjenester er tilgjengelige for alle universiteter, høgskoler og utdanningsinstitusjoner gjennom avtaler med Sikt i Norge og Sunet i Sverige. Som skyleverandør er vi opptatt av å levere tjenester med høyt sikkerhetsnivå. Gjennom å levere tjenester fra lokale datasenter, og med dedikerte ressurser til målgruppen vår, bidrar vi til å begrense påvirkningen fra denne typen sårbarheter.
 
 ## Oppdatert status:
 

@@ -43,7 +43,7 @@ Safespring is a Nordic startup delivering a locally based infrastructure as a Se
 
 From our professional data centers in Sweden and Norway, our delivery of infrastructure-as-a-Service includes Safespring Compute, Storage, and Backup. The services are flexible, fully automated, and based on self-service through API or portal. Our value proposition includes open standards, privacy, and compliance with local laws.
 
-Our customers include some of the largest research and education organizations, government authorities, and SaaS companies in Sweden and Norway. Safespring holds directly or through a partners framework agreement with Géant (including SUNET, Uninett, NORDUnet), SKR, Kammarkollegiet to mention the most important ones.
+Our customers include some of the largest research and education organizations, government authorities, and SaaS companies in Sweden and Norway. Safespring holds directly or through a partners framework agreement with Géant (including SUNET, Sikt, NORDUnet), SKR, Kammarkollegiet to mention the most important ones.
 
 Safespring supports open infrastructure and open sources through memberships in open infra foundation, Nordix foundation, and GAIA-X among other initiatives.
 

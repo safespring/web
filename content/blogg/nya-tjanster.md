@@ -2,7 +2,7 @@
 title: "Safespring lanserar flera nya tjänster"
 date: "2019-06-19T08:52:06+02:00"
 draft: false
-tags: [""]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"

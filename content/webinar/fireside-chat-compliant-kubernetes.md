@@ -2,6 +2,7 @@
 title: "MedTech best practice: Säker Kubernetes inom Europa"
 publishDate: "2021-09-15T07:37:39+02:00"
 draft: false
+tags: ["Svenska"]
 card: "safespring_card_40.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_40.gif"
