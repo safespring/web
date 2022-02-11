@@ -47,6 +47,6 @@ Som partners till Safespring kan ni garantera era kunder en korrekt hantering av
 <a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_arkivit.png"></div></a>
 <a href="https://www.cristie.dk/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_cristie-nordic.png"></div></a>
 <a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_sunet.png"></div></a>
-<a href="https://www.uninett.no/en"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_uninett.png"></div></a>
+<a href="https://sikt.no"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/sikt.svg"></div></a>
 <a href="http://www.denali.no/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_denali.png"></div></a>
 </div>
