@@ -96,7 +96,7 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
   <div style="margin-bottom:100px;">
   </div>
 
-  {{< horisontal-card image="/img/card/findout-logo-1x1.svg" cardtitle="Affärscase" link="mailto:info@safespring.com" linktext="Läs mer" text="FindOut valde att flytta hela sin lösning från Google Cloud till Compliant Kubernetes på svensk infrastruktur." >}}
+  {{< horisontal-card image="/img/card/findout-logo-1x1.svg" cardtitle="Affärscase" link="/tjanster/case/findout/" linktext="Läs mer" text="FindOut valde att flytta hela sin lösning från Google Cloud till Compliant Kubernetes på svensk infrastruktur." >}}
 
   <div id="contact"></div>
   <div style="margin-bottom:100px;">
