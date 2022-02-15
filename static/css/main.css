@@ -2643,8 +2643,15 @@ padding-top: 30px;
 }
 
 .content-category-blogg {
-	font: var(--heavy-weight) 14px var(--mon-font);
-	color: var(--web-green-color);
+	font: var(--heavy-weight) 13px var(--mon-font);
+	color: var(--green-color);
+	padding: 10px 0 0;
+	text-transform: uppercase;
+}
+
+.content-category-blogg-light {
+	font: var(--heavy-weight) 13px var(--mon-font);
+	color: var(--clear-blue-color);
 	padding: 10px 0 0;
 	text-transform: uppercase;
 }

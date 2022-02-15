@@ -2,7 +2,7 @@
 title: "Upptäck en lokal molntjänst i världsklass, med våra experter"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-section: ""
+section: "Boka demo"
 intro: "Kostnadsfri demo av Safesprings molnplattform"
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
