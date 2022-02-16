@@ -2436,9 +2436,15 @@ margin: 0
 	padding: 60px 0 0
 }
 
+pre {
+	background: #EAF0F4;
+	max-width: 700px;
+	padding: 2%;
+	border-radius: 10px;
+	line-height: 1.5;
+}
 .blog-feed .content-heading {
 	text-align: center;
-	font-size: 25px
 }
 
 .flex-container {
@@ -2643,8 +2649,15 @@ padding-top: 30px;
 }
 
 .content-category-blogg {
-	font: var(--heavy-weight) 14px var(--mon-font);
-	color: var(--web-green-color);
+	font: var(--heavy-weight) 13px var(--mon-font);
+	color: var(--green-color);
+	padding: 10px 0 0;
+	text-transform: uppercase;
+}
+
+.content-category-blogg-light {
+	font: var(--heavy-weight) 13px var(--mon-font);
+	color: var(--clear-blue-color);
 	padding: 10px 0 0;
 	text-transform: uppercase;
 }
@@ -2664,7 +2677,7 @@ padding-top: 30px;
 }
 
 
-.content-summary-blogg {
+ {
 	font: var(--medium-weight) 18px var(--mon-font);
 	color: var(--text-color);
 	padding: 20px 0 0;
@@ -2673,7 +2686,7 @@ padding-top: 30px;
 }
 
 .content-summary-black {
-	font: var(--medium-weight) 18px var(--mon-font);
+	font: var(--medium-weight) 17px var(--mon-font);
 	color: #32323290;
 	padding: 20px 0 0 0;
 	text-transform: ;
@@ -2681,7 +2694,7 @@ padding-top: 30px;
 }
 
 .content-category-dokument {
-	font: var(--heavy-weight) 18px var(--mon-font);
+	font: var(--heavy-weight) 17px var(--mon-font);
 	color: var(--clear-blue-color);
 	padding: 10px 0 0;
 	text-transform: capitalize;
@@ -2698,6 +2711,14 @@ padding-top: 30px;
 	color: var(--text-color);
 	padding: 10px 0 0;
 	text-transform: ;
+}
+
+.content-summary-blogg {
+	font: var(--medium-weight) 18px var(--mon-font);
+	color: var(--text-color);
+	padding: 10px 0 0;
+	text-transform: ;
+	max-width: 700px;
 }
 
 .content-category-whitepaper {
