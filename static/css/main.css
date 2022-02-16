@@ -2436,9 +2436,14 @@ margin: 0
 	padding: 60px 0 0
 }
 
+pre {
+	background: #EAF0F4;
+	padding: 2%;
+	border-radius: 10px;
+	line-height: 1.5;
+}
 .blog-feed .content-heading {
 	text-align: center;
-	font-size: 25px
 }
 
 .flex-container {
