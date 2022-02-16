@@ -15,15 +15,14 @@ toc: "Table of contents"
 {{< ingress >}}
 In this blog post, we'll go through some virtual machine optimizations that were done based on poor application performance (CPU bound) for one of our customers
 {{< /ingress >}}
-i
 ## Background
 
-We were recently contacted by a client usinge windows 2019 server operating systemi. The experienced higher CPU load and slower response times when using our platform compared to other cloud solutions.
+We were recently contacted by a client using windows 2019 server operating system. They experienced higher CPU load and slower response times when using our platform compared to other IaaS solutions.
 
-Our general internal experience with windows is that it had stable performance across compute hosts, and that it got better performance when we installed newer hardware. For some reason we had never tested against other cloud providers, thus we were unaware of the problem.
+Our general internal experience with windows is that it had stable performance across compute/hypervisor hosts, and that it got better performance when we installed newer hardware (as expected). For some reason we had never tested against other cloud providers, thus we were unaware of the problem.
 
 ## Investigations
-The client started out tracing the applicaiton and looked for possible differences in code paths between platforms. This process yielded performance improvments for tha pplication on all platforms, however the difference between us and other plattforms (as measured by the client) was still way too much to be expected. As a result we started investigating and doing som general benchmarking in a sandbox environment. This idid not exhibit a stellar performance, but - as previously noted - the performance did not differ significantly between hypervisor hosts. A stable bad performance can usually rule out issues with single hypervisor hosts.
+The client started out tracing the applicaiton and looked for possible differences in code execution paths between platforms. This process yielded performance improvements for the pplication on all platforms, however the difference between us and other plattforms (as measured by the client) was still way too much to be expected. As a result we started investigating and doing som general benchmarking in a sandbox environment. This investigations did not exhibit a stellar performance, but - as previously noted - the performance did not differ significantly between hypervisor hosts. A stable bad performance can usually rule out issues with single hypervisor hosts.
 
 When experiencing consistent site wide bad performance on a specific set of virtual machines this is normally either caused by being presented with the wrong type of virtual hardware or using bad (or no) drivers for the virtual hardware.
 
