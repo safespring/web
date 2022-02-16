@@ -39,7 +39,7 @@ While doing some searching around the topic of windows and kvm (which we use for
 
 ## The solution
 
-....was embarrasingly simple. Just add image property `os_type=windows` and openstack will add some «Hyper-V Enlightenments» to the KVM XML-config of the VM created from that image [^4].
+....was embarrasingly simple once discovered. It was not really obvious that just adding the image property `os_type=windows` would pose such dramatice CPU performance boost. The implemantiation of that boost comes form the fact that  openstack will add some «Hyper-V Enlightenments» to the KVM XML-config of the VM created from that image when that image property is set for new instances created from that image. The property is also inherited if a volume is created from that image, and subsequently an instance is created to boot from that volume[^4].
 
 The config that is added as a result of setting this property is:
 
@@ -62,4 +62,4 @@ The config that is added as a result of setting this property is:
   </clock>
 ```
 
-After this change windows application performance is on par with other platforms. A warm thank you to the client that helped us discover this, to the benefit of all our windows customers. This property is now a standard setting, such that all windows instances in our new platform will get this improvement automatically.
+After this change windows application performance is on par with other platforms. A warm thank you to the client that helped us discover this, to the benefit of all our windows customers. This property is now a standard setting, such that all windows instances in our new platform will get this improvement automatically. Let's hope this blog post can notify other Openstack operators of this subtle but important setting for windows users.
