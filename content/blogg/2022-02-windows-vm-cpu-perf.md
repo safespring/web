@@ -10,7 +10,7 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 language: "En"
-toc: "Table of Contents"
+toc: ""
 ---
 
 {{< ingress >}}
