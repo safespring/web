@@ -2713,6 +2713,14 @@ padding-top: 30px;
 	text-transform: ;
 }
 
+.content-summary-blogg {
+	font: var(--medium-weight) 18px var(--mon-font);
+	color: var(--text-color);
+	padding: 10px 0 0;
+	text-transform: ;
+	max-width: 700px;
+}
+
 .content-category-whitepaper {
 	font: var(--heavy-weight) 14px var(--mon-font);
 	color: var(--link-color);
