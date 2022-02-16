@@ -30,10 +30,10 @@ When experiencing consistent site-wide lousy performance on a specific set of vi
 
 Virtual platforms usually have specific drivers for each guest operating system type to make them use the virtual hardware in the most efficient way possible. These are ideally baked into the virtual image used when installing the operating system. In addition, the host system can sometimes present different kinds of virtual hardware based on which operating system is using the system.
 
-There were drivers baked into the windows image used in our case, so that should not be the problem. The virtual hardware was what seemed to be a typical virtual machine, much like the other non-windows instances we were running.
+There were drivers baked into the Windows image used in our case, so that should not be the problem. The virtual hardware was what seemed to be a typical virtual machine, much like the other non-Windows instances we were running.
 
 ### Findings regarding Hyper-V for KVM
-While doing some searching around the topic of windows and KVM (which we use for virtualization), we found some info regarding Hyper-V for KVM ([1][1], [2][2], [3][3] and [4][4]) - which, according to the documentation, could lead to a pretty massive performance boost. To enable these additions, settings had to be done in each instances' XML config file. The problem is that Openstack authoritatively writes this file on instance boot, which means that any changes made to the XML (which is only read at boot) will be overwritten at boot.
+While doing some searching around the topic of Windows and KVM (which we use for virtualization), we found some info regarding Hyper-V for KVM ([1][1], [2][2], [3][3] and [4][4]) - which, according to the documentation, could lead to a pretty massive performance boost. To enable these additions, settings had to be done in each instances' XML config file. The problem is that Openstack authoritatively writes this file on instance boot, which means that any changes made to the XML (which is only read at boot) will be overwritten at boot.
 
 [1]: https://leduccc.medium.com/improving-the-performance-of-a-windows-10-guest-on-qemu-a5b3f54d9cf5
 [2]: https://techblog.web.cern.ch/techblog/post/ostype-property-for-windows-images-on/
@@ -65,4 +65,4 @@ The config that is added as a result of setting this property is:
   </clock>
 ```
 
-After this change, Windows application performance is on par with other platforms. A warm thank you to the client who helped us discover this to benefit all our windows customers. This property is now a standard-setting.
+After this change, Windows application performance is on par with other platforms. A warm thank you to the client who helped us discover this to benefit all our Windows customers. This property is now a standard-setting.
