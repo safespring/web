@@ -1116,7 +1116,7 @@ color: var(--unCheckedColor);
 		}
 
 		.content-body-index {
-			margin: 10% 16px;
+			margin: 10% 30px;
 			grid-column: span 10;
 		}
 		.content-body-index p {
@@ -3294,9 +3294,6 @@ label {
 	}
 
 	@media only screen and (max-device-width: 750px) {
-		.body {
-			margin: 10%;
-		}
 	}
 
 	h1 {
