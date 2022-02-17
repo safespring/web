@@ -1123,7 +1123,7 @@ color: var(--unCheckedColor);
 			margin-bottom: 0px;
 		}
 		.heading-sub {
-			margin: 80px 0 0 0;
+			padding: 130px 0 0 0;
 			width: 100vw;
 			overflow: hidden;
 			background-position: center;
@@ -1132,6 +1132,10 @@ color: var(--unCheckedColor);
 
 		.heading-sub:last-child {
 			margin: 0 0 20px 0;
+		}
+
+		.ch-sidebar {
+			margin:20px
 		}
 	}
 
@@ -1671,12 +1675,8 @@ color: var(--unCheckedColor);
 			background-color: var(--cloud-blue-color);
 			height: 100%;
 		}
-		.ch-sidebar {
-			background-color: #FFF;
-			grid-column: span all;
-			padding: 10%;
-			margin: 25px;
-			border-radius: 10px;
+		.body {
+			margin: 20px auto !important;
 		}
 		.ch-sidebar p {
 			font-size: 16px;
