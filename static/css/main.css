@@ -3294,7 +3294,7 @@ label {
 
 	@media only screen and (max-device-width: 750px) {
 		.body {
-			width: 310px;
+			margin: 5%;
 		}
 	}
 
