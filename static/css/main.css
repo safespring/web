@@ -2500,7 +2500,7 @@ pre {
 
 @media only screen and (max-width: 900px) {
 	.content-container-index {
-		margin: 0px 16px 0 16px;
+		margin: 0px 30px;
 		top: 15vh;
 		grid-column: span 10;
 	}
