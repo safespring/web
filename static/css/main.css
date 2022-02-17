@@ -2442,6 +2442,7 @@ pre {
 	padding: 2%;
 	border-radius: 10px;
 	line-height: 1.5;
+	overflow: scroll;
 }
 .blog-feed .content-heading {
 	text-align: center;
