@@ -12,7 +12,7 @@ background: "Safespring_WhitePaper_Commvault_web.jpg"
 ---
 
 ## Introduction
-This whitepaper describes how to configure Safespring Storage as a “Disk Library” in Commvault. The only prerequisite is that you have a storage account at Safespring and a running Commvault solution. With that, you will be able to be up and running with a disaster backup solution in minutes.
+This White Paper describes how to configure Safespring Storage as a “Disk Library” in Commvault. The only prerequisite is that you have a storage account at Safespring and a running Commvault solution. With that, you will be able to be up and running with a disaster backup solution in minutes.
 
 ### Customer benefits of moving data to Safespring
 Offsite backups are primarily is used in data backup and disaster recovery measures. The core objective behind storing and maintaining data at a backup facility is to:

@@ -7,7 +7,7 @@
     {{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}
   </div>
   <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-0 mb-1" style="line-height: 1.1;">
-    {{ .Params.cardtitle }}
+    {{ if  .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
   </h1>
   <p class="mb-1">
 

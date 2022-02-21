@@ -1,7 +1,7 @@
   <div class="content-meta-post">
     {{ if .Params.toplogo }}<img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">{{ end }}
     <a class="{{ if eq .Params.darkmode `off` }}content-category-blogg-light{{ else }}content-category-blogg{{ end }}" href="/{{ .Section }}">
-      {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{ .Section }}{{ end }}
+      {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
     </a>
   </div>
   <br>
