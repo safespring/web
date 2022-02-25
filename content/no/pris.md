@@ -7,7 +7,7 @@ language: "No"
 section: "Pris"
 Language: "No"
 sidebarlinkname: "Last ned priskalkulator"
-sidebarlinkurl: "/pricelist/NOR/safespring-price-list_2020-09-23.xlsx"
+sidebarlinkurl: "/pricelist/NOK/safespring-price-list-nok.xlsx"
 ---
 {{<ingress>}}
 Sammen skaper vi en tryggere og mer kostnadseffektiv digital infrastruktur.
