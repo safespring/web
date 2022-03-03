@@ -37,7 +37,7 @@
    <!-- RSS -->
    <link rel="canonical" href="{{ .Permalink }}">
    {{ if .RSSLink }}
-   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+   {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
    {{ end }}
 <title>Safespring | {{ .Title }}</title>
 {{ partial "telavox.html" }}
