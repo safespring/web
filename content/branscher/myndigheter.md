@@ -1,7 +1,7 @@
 ---
 title: "Safespring producerar en hållbar molnplattform och är medlem i GAIA-X"
 cardtitle: "Safespring för myndigheter"
-date: 2021-06-30T10:47:25+01:00
+date: 2022-03-03T10:47:25+01:00
 card: "safespring_card_31.svg"
 draft: false
 intro: "Safesprings tjänster går att upphandla genom Kammarkollegiets ramavtal programvarulösningar."
