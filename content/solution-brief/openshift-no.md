@@ -6,7 +6,7 @@ tags: ["Norsk"]
 intro: "Med vårt eget OKD-installasjonsprogram kan du raskt få en OpenShift-cluster up-and-running."
 background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakt oss"
-sidebarlinkurl: "/kontakt"
+sidebarlinkurl: "/no/kontakt"
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-openshift.svg"
