@@ -52,7 +52,7 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
   var player;
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      videoId: 'zVKS_yRL09Q',
+      videoId: 'Ae2GVatxzS8',
       playerVars: {
         'modestbranding': 1,
         'iv_load_policy': 3
