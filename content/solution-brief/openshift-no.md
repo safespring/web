@@ -3,7 +3,7 @@ title: "OpenShift kjører smidig på Safesprings plattform"
 date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["Norsk"]
-intro: "Med vårt eget OKD-installasjonsprogram kan du raskt få et OpenShift-cluster up-and-running."
+intro: "Med OKD-community-installer kan du raskt spinne opp et OpenShift-cluster."
 background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakt oss"
 sidebarlinkurl: "/no/kontakt"
@@ -21,28 +21,28 @@ language: "No"
 ![Safespring OpenShift benefits](/img/safespring_key-points-openshift-2.svg)
 
 {{% ingress %}}
-Containere krever fleksibilitet. Safesprings plattform er skapt for skalerbarhet, høy sikkerhet og er optimalisert for OpenShift-clusterressurskrav.
+Containere krever fleksibilitet og skalerbarhet. Safesprings API-drevne IaaS-plattform er skapt for skalerbarhet, høy sikkerhet og er og er derfor optimalisert for OpenShift-clusterressurskrav.
 {{% /ingress %}}
 
-Safesprings Compute-tjeneste gir deg alle ressursene du trenger for å kjøre OKD, åpen kildekodeversjon av Kubernetes basert på RedHat OpenShift.
+Safesprings Compute-tjeneste gir deg alle ressursene du trenger for å kjøre OKD. 
 
-Kjører du OpenShift on-prem i dag? Med en norsk skytjeneste som grunnlag for din OKD-cluster får du både skalerbarheten og sikkerheten til en administrert infrastrukturplattform. La utviklerne dine fokusere på OpenShift og betal kun for ressursene du bruker.
+Kjører du OpenShift on-prem i dag? Med en norsk skytjeneste som infrastruktur for ditt OKD-cluster får du både skalerbarheten og sikkerheten til IaaS samtidig som du sikrer digital suverenitet. La ditt plattform-team og dine utviklere fokusere på OpenShift og betal kun for ressursene du bruker.
 
 <div style="margin-bottom:50px;"></div>
 
-![Safespring OpenShift installer demo](/img/event/safespring-video-placeholder.svg)
+<script data-theme="solarized-dark" id="asciicast-J98pWS97p1zAHM8L1VFmB7Bre" src="https://asciinema.org/a/J98pWS97p1zAHM8L1VFmB7Bre.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
 
-## Installer OKD med vår Terraform-modul og installer
+## Installer OKD med community-installeren.
 
 {{% ingress %}}
-Lær alt som trengs for å sette opp community-distribusjonen til Kubernetes som kjører RedHat OpenShift (OKD) på Safesprings skyplattform.
+Lær alt du trenger for å sette opp RedHat OpenShift (OKD) på Safesprings skyplattform.
 {{% /ingress %}}
 
-Med disse verktøyene kan du gi en OKD-cluster på omtrent en time. Installasjonen gir en minimal OKD-klynge med tre mastere og to arbeidsnoder med en minimumsinstansstørrelse.
+Med disse verktøyene kan spinne opp et OKD-cluster på omtrent en time. Installasjonen gir en minimal OKD-klynge med tre control plane noder og to arbeidsnoder. Ved å tilpasse input paramtere kan klusteret skaleres opp/ned med sett av forskjellige arbeidsnoder.
 
-På Safesprings Openstack-baserte infrastrukturplattform kan du raskt distribuere en OKD-klynge med vår [terraform-modul][1] og [verktøyene for å instansiere cluster][2].
+På Safesprings Openstack-baserte infrastrukturplattform (IaaS) kan du raskt distribuere en OKD-klynge med community-[verktøyene for å instansiere cluster][1].
 
-{{< 2calltoaction "Last ned Terraform-modul" "https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns" "Last ned OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
+{{< 2calltoaction "Last ned OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
 <div style="margin-bottom:50px;"></div>
 
@@ -57,17 +57,16 @@ På Safesprings Openstack-baserte infrastrukturplattform kan du raskt distribuer
     - An API key for your gandi.net user
 
 ### Terraform-modulen
-Kjernen i vårt utviklede verktøy er Terraform-modulen, som gir alle nødvendige ressurser som en OKD-klynge trenger for å sette sammen selv, dvs. beregne noder med forskjellige roller (oppstart, master, arbeider), blokklagring, sikkerhet, grupper, nettverk, DNS-poster, nøkkelpar, og så videre. Modulen er så generell som den kan bli.
+Kjernen i installleren er Terraform-modulen, som gir alle nødvendige ressurser som en OKD-klynge trenger for å sette seg selv sammen, dvs. noder med forskjellige roller (boot, control plane , worker), blokklagring, security groups, nettverk, DNS-oppføringer, nøkkelpar, og så videre. Modulen er så generell som den kan bli. Modulen kalles opp direkte mot github i installasjonsverktøyet, i cluster-konfigurasjonsmalen "cluster.tf.js".
 
 ### Inndataparametere
-For å gi klyngen trenger den en stor mengde inndataparametere. Du kan velge å angi disse parametrene for å passe dine behov, men vi har laget et abstraksjonslag som dekker hverdagsbruk for å gjøre dette så enkelt som mulig. Verktøyet vi har utviklet sikrer at du har alle avhengigheter på plass og gjør nødvendig konfigurasjon fra maler.
+Oppsettet av klyngen trenger en stor mengde inndataparametere. Du kan velge å angi disse parametrene for å tilpasse til dine behov, men installeren har et abstraksjonslag som reduserer kompleksiteten og gjør installasjonen så enkel som mulig. Verktøyet sikrer at du har alle avhengigheter på plass og gjør nødvendig konfigurasjon fra maler.
 
-Verktøyet tar noen få innganger som klyngenavn, DNS-domene, S3-bøtte (for den store tenningsfilen for startnoden) og konverterer disse til nyttige parametere for Terraform-modulen. En malgenerert "main.tf" inneholder disse parameterne og referansene til modulen. "main.tf"-filen brukes til klargjøring.
+Verktøyet trenger noen få parametere som klyngenavn, DNS-domene, S3-bøtte (for den store ignition-filen til boot-noden). blander disse med en del standardverdier og videresender disse som parametere til Terraform-modulen, i form av en  malgenerert "cluster.tf".
 
-## Resultater
-Installasjonen gir en minimal OKD-klynge med tre mastere og to arbeidsnoder med en minimumsinstansstørrelse. Du kan overstyre forekomststørrelsen og andre parametere (som antall forskjellige noder) gjennom "settings.yml"-filen.
+## Resultat
+Installasjonen gir en minimal OKD-klynge med tre control plane noder og to arbeidsnoder med minimumsinstansstørrelse. Du kan overstyre node-størrelse og andre parametere (som antall forskjellige noder) gjennom "settings.yml"-filen.
 
-{{< 2calltoaction "Last ned Terraform-modul" "https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns" "Last ned OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
+{{< 2calltoaction "Last ned OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
-[1]:https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns
-[2]:https://github.com/safespring-community/utilities/tree/main/okd
+[1]:https://github.com/safespring-community/utilities/tree/main/okd
