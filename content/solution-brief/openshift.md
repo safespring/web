@@ -15,6 +15,7 @@ background: "safespring-openshift.png"
 socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Innehållsförteckning"
+language: "Se"
 ---
 
 ![Safespring OpenShift benefits](/img/safespring_key-points-openshift-1.svg)
