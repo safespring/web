@@ -13,6 +13,7 @@ eventbild: "safespring_background_27.jpg"
 socialmediabild: "safespring_social_27.gif"
 socialmedia: "/blogg/socialmedia/safespring_social_27.gif"
 toc: "Innehållsförteckning"
+language: "Se"
 ---
 
 {{< ingress >}}

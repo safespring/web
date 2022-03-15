@@ -3,7 +3,7 @@ title: "OpenShift kör smidigt på Safesprings plattform"
 date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["Svenska"]
-intro: "Med vår egen OKD-installer kan du snabbt få ett OpenShift-cluster up-and-running."
+intro: "Med OKD-community-installer kan du snabbt få ett OpenShift-cluster up-and-running."
 background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakta oss"
 sidebarlinkurl: "/kontakt"
@@ -15,6 +15,7 @@ background: "safespring-openshift.png"
 socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Innehållsförteckning"
+language: "Se"
 ---
 
 ![Safespring OpenShift benefits](/img/safespring_key-points-openshift-1.svg)
@@ -29,21 +30,20 @@ Kör ni OpenShift on-prem idag? Med en svensk molntjänst som grund för ert OKD
 
 <div style="margin-bottom:50px;"></div>
 
-![Safespring OpenShift installer demo](/img/event/safespring-video-placeholder.svg)
+<script data-theme="solarized-dark" id="asciicast-J98pWS97p1zAHM8L1VFmB7Bre" src="https://asciinema.org/a/J98pWS97p1zAHM8L1VFmB7Bre.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
 
-## Installera OKD med vår Terraform-modul och installer
+## Installera OKD med community installeren
 
 {{% ingress %}}
-Lär dig allt som krävs för att sätta upp community­distributionen av Kubernetes som driver RedHat OpenShift (OKD) på Safesprings molnplattform.
+Lär dig allt som krävs för att sätta upp RedHat OpenShift (OKD) på Safesprings molnplattform.
 {{% /ingress %}}
 
-Med dessa verktyg kan du tillhandahålla ett OKD-kluster på ungefär en timme. Installationen ger ett minimalt OKD-kluster med tre masters och två arbetsnoder med minimal instans­storlek.
+Med dessa verktyg kan du tillhandahålla ett OKD-kluster på ungefär en timme. Installationen ger ett minimalt OKD-kluster med tre control plane noder och två arbetsnoder med minimal instans­storlek. Clusteret kan skaleres upp och ned baserad på endrade input parameters og ny kjörning av ansible playbook.
 
-På Safesprings Openstack-baserade infrastruktur­plattform kan du snabbt distribuera ett OKD-kluster med vår [terraform-modul][1] och [verktygen för att instansiera kluster][2].
+På Safesprings Openstack-baserade infrastruktur­plattform kan du snabbt distribuera ett OKD-kluster med vår [verktyg för att instansiera kluster][1].
 
-{{< 2calltoaction "Hämta Terraform-modul" "https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns" "Hämta OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
+{{< 2calltoaction "Hämta OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
-<div style="margin-bottom:50px;"></div>
 
 ### Detta behöver du för att köra igång
 
@@ -56,17 +56,15 @@ På Safesprings Openstack-baserade infrastruktur­plattform kan du snabbt distri
     - An API key for your gandi.net user
 
 ### Terraform-modulen
-Kärnan vårt framtagna verktyg är Terraform-modulen som tillhandahåller alla nödvändiga resurser som ett OKD-kluster behöver för att sätta ihop sig själv, dvs. beräkna noder med olika roller (boot, master, worker), blocklagring, säkerhet, grupper, nätverk, DNS-poster, nyckelpar, och så vidare. Modulen är så generell som den kan vara.
-
+Kärnan i vårt framtagna verktyg är Terraform-modulen som tillhandahåller alla nödvändiga resurser som ett OKD-kluster behöver för att sätta ihop sig själv, dvs. beräkna noder med olika roller (boot, control plane, worker), blocklagring, säkerhet, grupper, nätverk, DNS-poster, nyckelpar, och så vidare. Modulen är så generell som den kan vara. Installationsverktygen anvendar terraform-modulen till all provisionering av infrastruktur. Modulen kallas upp direkt mot github i installasjonsverktygen, i cluster-konfigurasjonsmallen "cluster.tf.js". 
 ### Indataparametrar
 För att tillhandahålla klustret behöver det en stor mängd indataparametrar. Du kan välja att tillhandahålla dessa parametrar för att passa dina behov, men vi gjorde ett abstraktionslager som täcker vardagliga användningsfall för att göra detta så enkelt som möjligt. Det verktyg vi tagit fram ser till att du har alla beroenden på plats och gör den nödvändiga konfigurationen från mallar.
 
-Verktyget tar några få ingångar som klusternamn, DNS-domän, S3-bucket (för den stora ignition-filen för startnoden) och konverterar dessa till användbara parametrar för Terraform-modulen. En mallgenererad "main.tf" innehåller dessa parametrar och referenser till modulen. Filen "main.tf" används för provisioneringen.
+Verktyget tar några få ingångar som klusternamn, DNS-domän, S3-bucket (för den stora ignition-filen för startnoden) och konverterar dessa till användbara parametrar för Terraform-modulen. En mallgenererad "cluster.tf" innehåller dessa parametrar och referenser till modulen. Filen "cluster.tf" används för provisioneringen.
 
 ## Resultat
-Installationen ger ett minimalt OKD-kluster med tre masters och två arbetsnoder med minimal instansstorlek. Du kan åsidosätta instansstorleken och andra parametrar (som antalet olika noder) genom filen "settings.yml".
+Installationen ger ett minimalt OKD-kluster med controle plane noder och två arbetsnoder med minimal instansstorlek. Du kan åsidosätta instansstorleken och andra parametrar (som antalet olika noder) genom filen "settings.yml".
 
-{{< 2calltoaction "Hämta Terraform-modul" "https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns" "Hämta OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
+{{< 2calltoaction "Hämta OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
-[1]:https://github.com/safespring-community/terraform-modules/tree/main/v2-okd-cluster-local-disk-gandi-dns
-[2]:https://github.com/safespring-community/utilities/tree/main/okd
+[1]:https://github.com/safespring-community/utilities/tree/main/okd

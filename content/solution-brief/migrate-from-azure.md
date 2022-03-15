@@ -14,6 +14,7 @@ sidebarimage: "safespring-azure.svg"
 toc: "Innehåll"
 background: "safespring-azure.png"
 socialmediabild: ""
+language: "Se"
 ---
 
 ## Migrering till Compliant Kubernetes
