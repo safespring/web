@@ -38,7 +38,7 @@ Are you running OpenShift on-prem today? With a Swedish cloud service as the bas
 Learn everything needed to set up RedHat OpenShift (OKD) on Safespring's cloud platform.
 {{% /ingress %}}
 
-With these tools, you can provide an OKD cluster in about an hour. The installation provides a minimal OKD cluster with three control plane nodes and two working nodes with a minimum instance size. The cluster can be scaled up and down based on changed input parameters and new selection of Ansible playbook.
+With these tools, you can provide an OKD cluster in about an hour. The installation provides a minimal OKD cluster with three control plane nodes and two working nodes with a minimum instance size. The cluster can be scaled up and down based on changed input parameters and re-run of Ansible playbook.
 
 On Safespring's Openstack-based infrastructure platform, you can quickly deploy an OKD cluster with our [tools for instantiating clusters][1].
 
@@ -59,7 +59,7 @@ On Safespring's Openstack-based infrastructure platform, you can quickly deploy 
 The core of our developed tool is the Terraform module, which provides all the necessary resources that an OKD cluster needs to assemble itself, ie. calculate nodes with different roles (boot, control plane, worker), block storage, security, groups, networks, DNS records, key pairs, and so on. The module is as general as it can be. The installation tools use the terraform module for all infrastructure provisioning. The module is called directly to GitHub in the installation tools, in the cluster configuration template `cluster.tf.js`.
 
 ### Input parameters
-To provide the cluster, it needs a large amount of input parameters. You can choose to provide these parameters to suit your needs, but we created an abstraction layer that covers everyday use cases to make this as easy as possible. The tool we have developed ensures that you have all the dependencies in place and make the necessary configuration from templates.
+The cluster setup needs a large amount of input parameters. You can choose to provide these parameters to suit your needs, but we created an abstraction layer withe sane default values for many of the parameters to make this as easy as possible. The tool we have developed ensures that you have all the dependencies in place and make the necessary configuration from templates.
 
 The tool takes a few inputs such as cluster name, DNS domain, S3 bucket (for the large ignition file for the start node) and converts these to useful parameters for the Terraform module. A template-generated `cluster.tf` contains these parameters and references to the module. The file `cluster.tf` is used for the provisioning.
 
