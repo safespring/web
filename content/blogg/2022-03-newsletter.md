@@ -29,7 +29,7 @@ Contact Kristian Fjellhaug and take the opportunity to go through your needs for
 ##  OpenShift runs smoothly on Safespring's platform
 With our OKD community installer, you can quickly get an OpenShift cluster up-and-running. Containers require flexibility. Safespring's platform is created for scalability, high security, and is optimized for OpenShift cluster resource requirements.
 
-{{< localtextbutton "Solution Brief" "/solution-brief/openshift/" >}}
+{{< localtextbutton "Solution Brief (Swedish)" "/solution-brief/openshift/" >}}
 
 ## Safespring storage v2.0 is now live!
 Our S3 service is excellent for everything from an off-site backup of a customer's entire infrastructure to storing large-scale data.
