@@ -1,5 +1,5 @@
 ---
-title: "Best practices for ssh keys in Cloud/Openstack
+title: "Best practices for ssh keys in Cloud/Openstack"
 date: "2022-03-17"
 intro: "Let's go through some best practices regarding management of ssh keys, and clear up common misunderstandings."
 draft: false
@@ -19,10 +19,10 @@ For Linux-/Unix-based cloud instances the initial root access to the instances i
 ## TL;DR
 
 * Ssh keypairs is not the same as an openstack keypair.
-* Shh keypairs should be created on the user's computer in a trusted environment. It should be of type RSA and it should be kept in an encrypted secret store and never be exposed outside the user's local sit / environment.
-* The badly named openstack keypair contains no secrets, only an ssh pubkey.
-* An openstack keypair is tied to the user creating it, not to a specific project.
-* Nobody cares about ssh host keys, but they should. 
+* Shh keypairs should be created on the user's computer in a trusted environment, tt should be of type RSA and the private key should be kept in an encrypted secret store and never be exposed outside the user's local site/environment.
+* The badly named "openstack keypair" contains no secrets, only an ssh pubkey.
+* An "openstack keypair" is tied to the user creating it, not to a specific project.
+* Nobody cares about ssh host keys, but they should.
 
 ## Background
 When you provision instances in any cloud platform you get at virtual server
