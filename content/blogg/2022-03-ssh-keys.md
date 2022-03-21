@@ -1,5 +1,5 @@
 ---
-title: "Best practices for SSH keys in Cloud/Openstack"
+title: "Best practices for SSH keys in Cloud/OpenStack"
 date: "2022-03-17"
 intro: "Let's go through some best practices regarding management of SSH keys, and clear up common misunderstandings."
 draft: false
