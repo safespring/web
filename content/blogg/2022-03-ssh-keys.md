@@ -18,9 +18,9 @@ For Linux-/Unix-based cloud instances, the initial root access to the instances 
 
 ## Summary (TL;DR)
 
+* The poorly named "OpenStack keypair" contains no secrets, only an SSH pubkey.
 * SSH keypairs are not the same as an OpenStack keypair.
 * SSH keypairs should be created in a trusted environment on the user's computer. It should be of type RSA. The private key should be kept in an encrypted secret store and never be exposed outside the user's local site/environment.
-* The poorly named "OpenStack keypair" contains no secrets, only an SSH pubkey.
 * An "OpenStack keypair" is tied to the user creating it, not a specific project.
 * Nobody cares about SSH host keys, but they should.
 
@@ -41,9 +41,9 @@ In order to gain operating system access to a cloud instance with an SSH client,
 * Use the correct cloud user name for the image: i.e., centos for Centos, Ubuntu for Ubuntu, etc. (Google is your friend here.)
 * Have the private key matching the public key in the instance' `authorized_keys` file available to your client.
 
-Injection of the public key into the cloud user's `authorized_keys` file is done by "cloud-init" when you tell OpenStack which public SSH key to use with the instance.
+Injection of the public key into the cloud user's `authorized_keys` file is done by "cloud-init" when you tell OpenStack which public SSH key (Openstack keypair) to use with the instance.
 
-So we can appreciate that a lot of stuff happens behind the scenes for the users to securely bootstrap root access to the instances that are provisioned. Openstack is just reusing already existing mechanisms long before "the cloud." It's just wrapped in something new called "cloud-init." No magic, really!
+So we can appreciate that a lot of stuff happens behind the scenes for the users to securely bootstrap root access to the instances that are provisioned. Openstack is just reusing already existing mechanisms from a long time before "the cloud age." It's just wrapped in something new called "cloud-init." No magic, really!
 
 ## Best practice
 
@@ -80,11 +80,11 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 If we say yes, the fingerprint is stored in our `known_hosts` file and effectively is trusted upon subsequent access.
 
-The correct thing to do before answering yes and trusting that the SSH service on the host is actually the one it claims to be is to compare the fingerprint in that prompt against a known fingerprint of the remote servers' host key file. You can do this with the output of `ssh-keygen -l -f <ssh-host-key-file>` on the server you are trying to log in to.
+The correct thing to do before answering yes, and trusting that the SSH service on the host is actually the one it claims to be, is to compare the fingerprint in that prompt against a known fingerprint of the remote servers' host key file. You can do this with the output of `ssh-keygen -l -f <ssh-host-key-file>` on the server you are trying to log in to.
 
-Hmm, that's a bit of Catch22, right? How can I run a command on a host I'm not yet logged into? Perhaps this is why most users ignore it and accept the risk that someone executes a man in the middle (MITM) attack right in that moment of exchange of initial trust. Of course, suppose you accept the key fingerprint without verifying it. In that case, you say that «I'm convinced enough that someone is not spoofing my communication at this time and accept to trust this fingerprint without verifying it».
+Hmm, that's a bit of Catch22, right? How can I run a command on a host I'm not yet logged into? Perhaps this is why most users ignore it and accept the risk that someone executes a man in the middle (MITM) attack right in that moment of exchange of initial trust. Suppose you accept the key fingerprint without verifying it? In that case, you say that «I'm convinced enough that someone is not spoofing my communication at this time and accept to trust this fingerprint without verifying it».
 
-Unless you are among the vast majority that apparently is fine with this, the practice you should probably consider is injecting a script with cloud-init that will securely post that server SSH host key fingerprint home to you and use that to generate SSH known hosts that actually are known.
+Unless you are among the vast majority that apparently is fine with this practice, you should probably consider developing automation for, for example with cloud-init, that will securely post that server SSH host key fingerprint home to you and use that to generate SSH known hosts that actually are known.
 
 More on [SSH MITM][ssh-mitm]
 
