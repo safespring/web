@@ -18,8 +18,8 @@ stack from a user perspective. If you come from other platforms that use the leg
 «layer two bridging» approach (with software defined switches, routers,
 floating ip addresses etc), please read the full post to understand the
 implications. It does not work the way you think :-). Prerequisites for
-understanding the post is basic knowledge of CIDR notation and IP protocols
-(TCP,UDP,ICMP) 
+understanding the post is basic knowledge of CIDR notation, IP protocols
+(TCP,UDP,ICMP) and IP based access control. 
 
 {{< /ingress >}}
 
@@ -41,35 +41,39 @@ understanding the post is basic knowledge of CIDR notation and IP protocols
 ## The explanation
 
 All frames of the diagram contain the same three instances that are attached
-to public, default and private networks respectively. Note that none of the
+to `public`, `default-v4-nat` and `private` networks respectively. **Note that none of the
 instances have more than one interface; the interface to the network they are
-attached to. 
+attached to.**
 
-Each frame examplifies the effect security groups and their rules has on which
-connections is allowed to take place from a platform perspective. 
+Each diagram frame examplifies the effect that security groups and their rules have on how
+connections is allowed to take place. This blog is only about how the platform
+works, so what is happening in the operating system of instances is outside of
+the scope for this post.
+
+Red dashed arrows depict no connection. Green solid arrows depict an allow rule with the arrow pointing in the allowed direction.
 
 1. None of the instances can communicate with anyone. Instances is not member of any security group by default, thus no communcation can happen. 
-2. Egress (E) rule is added to allow the instance on the `public`-network to allow it to access any IPv4 Internet address on any port. Connection going out is visualized with the arrow direction.  
-3. Ingress (I) rule is added to allow any IPv4 Internet address to contact the instance on the `public`-network (public instacne) on port 443. (Arrow goes from the Internet to the instance) 
-4. Ingress (I) rule is added to the instance on the `default-v4-nat`-network (default instacne) that will allow the public instance to reach default instance on port 80 (tcp). This is where many users think they need a separate «leg» from the "public instance" to the `defaulv4-nat`-network. Not only is this not necessary, it will also destroy the communcation on the public instance completely. Note that the egress rule from 3. will allow outbound traffic from the public instance already, thus we do not need to add a rule for that.
-5. Ingress (I) rule is added to the public instance that will allow the the default instance to reach public instance on port 3333 (tcp). Since there were no egress rule attached to the default instance we also need to allow outgoing traffic (egress) to the public instance on port 3333 too (or wider).
-6. Ingress (I) rule is added to the default instance allowing the instance on the the `private`-network (private instance) to connect to the default instance on port 4535 (tcp). Again an egress rule for the private instance is necessary too. In this case we open wide, an allow the private instance to reach all ports in all of the IPv4 address space. (And the default instacne is of course part of that. ). So the private network should be able to talk to any Internet IPv4 address, right ? **Wrong**. Instances on the private network can only talk to other Safespring instances in the same site, provided scurity group rules allow it.    
-7. Egress (E) rule is added to allow the default instance to access 1.1.1.1 on port 443 (tcp). Because the `default-v4-nat` is set up to do Network Address Translation (NAT) this will be allowed, just be aware that obviously the source address as seen from 1.1.1.1 is **not** the one on the instance interface. It is in facte the public addresse of the compute host the instance is running on. (Which is doing the NAT/Masquerade)  
+2. Egress (E) rule is added to allow the instance on the `public`-network (public instance) to allow it to access any IPv4 Internet address on any port. Connection going out is visualized with the arrow direction.  
+3. Ingress (I) rule is added to allow any IPv4 Internet address to contact the public instance on port 443. (The arrow goes from the Internet to the instance) 
+4. Ingress (I) rule is added to the instance on the `default-v4-nat`-network (default instance) that will allow the public instance to reach the default instance on port 80 (tcp). This is where many users think they need a separate «leg» from the "public instance" to the `default-v4-nat`-network. Not only is this not necessary, it will also destroy the communcation on the public instance completely. Note that the egress rule from 3. will allow outbound traffic from the public instance already, thus we do not need to add a rule for that.
+5. Ingress (I) rule is added to the public instance that will allow the the default instance to reach the public instance on port 3333 (tcp). Since there were no egress rule attached to the default instance we also need to allow outgoing traffic (egress) to the public instance on port 3333 too.
+6. Ingress (I) rule is added to the default instance allowing the instance on the `private`-network (private instance) to connect to the default instance on port 4545 (tcp). Again an egress rule for the private instance is necessary too. In this case we open wide, and allow the private instance to reach all ports in all of the IPv4 address space. (And the default instance is of course part of that. ). So the private network should be able to talk to any Internet IPv4 address, right ? **Wrong**. Instances on the private network can only talk to other Safespring instances in the same site, provided security group rules allow it.    
+7. Egress (E) rule is added to allow the default instance to access 1.1.1.1 on port 443 (tcp). Because the `default-v4-nat` is set up to do Network Address Translation (NAT) this will work. Just be aware that obviously the source address as seen from 1.1.1.1 is **not** the one on the instance interface. It is in fact the public address of the compute host the instance is running on. (Which is doing the NAT/Masquerade)  
 
 ## Other gotchas 
 
 An instance **must** have the Safespring provided gateway (from
-dhcp) as the first routing hop, always. If you try to add another default
-gateway, or a static route via another, the packages will just be dropped and
-it will not work. This is because each instance has its own isolated "layer
-two" that only is connected to the Safespring provided gateway, hence all
-communication out from the instances must happen on layer three and always use
-our gateway as the first hop (as automtically configured by dhcp).
+DHCP) as the first routing hop, always. If you try to add (in the operating
+system) another default gateway, or a static route via another, the packages
+will just be dropped and it will not work. This is because each instance has
+its own isolated "layer two" that only is connected to the Safespring provided
+gateway, hence all communication out from the instances must happen on layer
+three and always use our gateway as the first hop (as automtically configured
+by DHCP).
 
 As a consequence, if you require your own network on top of the Safespring
 platform you must use some form of tunneling like Wireguard, IPIP, GRE etc.
-that will create its own overlay network that is transported by means of the
-platform's layer three only transport.  
+that will create its own overlay network that you as a user control.
 
 ## Why Calico  
 
@@ -81,9 +85,9 @@ platform's layer three only transport.
 ## Summmary
 
 * Only use one interface per instance
-* Security groups **is** the firewall. Adapt your design to utilise this property of the platform, using automation tools like Terraform for instance (no pun intended) 
+* Security groups **is** the firewall. Adapt your design to utilize this property of the platform, using automation tools like Terraform for instance (no pun intended) 
 * Open up only what you need with security groups.
 * Do not change the interface/network configuration in the instances away from using DHCP.
 * Use tunneling on top of our provided layer three network stack if you must have layer two connectivity between instances.
-* The safespring «networks» is just a mechanism to allocate IP-addresses from a CIDR. Each instance is routed separately (with /32 prefix) by the platfrom. The instance can only talk to the gateway over layer two.   
+* The safespring «networks» is just a mechanism to allocate IP-addresses from a CIDR. Each instance is routed separately (with /32 prefix) by the platfrom. The instance can only talk to the gateway over layer two, so in practice all traffic must go through the platform provided gateway on layer three..   
 
