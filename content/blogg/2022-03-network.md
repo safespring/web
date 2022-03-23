@@ -50,9 +50,17 @@ connections is allowed to take place. This blog is only about how the platform
 works, so what is happening in the operating system of instances is outside of
 the scope for this post.
 
-Red dashed arrows depict no connection. Green solid arrows depict an allow rule with the arrow pointing in the allowed direction.
 
-1. None of the instances can communicate with anyone. Instances is not member of any security group by default, thus no communcation can happen. 
+In order to explain how egress rules and ingress rules work together the
+diagram starts out with instances that is not mamber of any security groups.
+(I.e, the default security group that inclges egress to the world has been
+removed) 
+
+Red dashed arrows depict no connection. Green solid arrows depict an allow rule
+with the arrow pointing in the allowed direction.
+
+
+1. None of the instances can communicate with anyone. 
 2. Egress (E) rule is added to allow the instance on the `public`-network (public instance) to allow it to access any IPv4 Internet address on any port. Connection going out is visualized with the arrow direction.  
 3. Ingress (I) rule is added to allow any IPv4 Internet address to contact the public instance on port 443. (The arrow goes from the Internet to the instance) 
 4. Ingress (I) rule is added to the instance on the `default-v4-nat`-network (default instance) that will allow the public instance to reach the default instance on port 80 (tcp). This is where many users think they need a separate «leg» from the "public instance" to the `default-v4-nat`-network. Not only is this not necessary, it will also destroy the communcation on the public instance completely. Note that the egress rule from 3. will allow outbound traffic from the public instance already, thus we do not need to add a rule for that.
@@ -65,11 +73,10 @@ Red dashed arrows depict no connection. Green solid arrows depict an allow rule 
 An instance **must** have the Safespring provided gateway (from
 DHCP) as the first routing hop, always. If you try to add (in the operating
 system) another default gateway, or a static route via another, the packages
-will just be dropped and it will not work. This is because each instance has
-its own isolated "layer two" that only is connected to the Safespring provided
-gateway, hence all communication out from the instances must happen on layer
-three and always use our gateway as the first hop (as automtically configured
-by DHCP).
+will just be dropped and it will not work. 
+This is because every instance has its own separate layer 2-connection to the
+Safespring provided gateway, and thus all traffic is routed through it on layer
+3. This router is always the first hop, as automatically configured by DHCP.
 
 As a consequence, if you require your own network on top of the Safespring
 platform you must use some form of tunneling like Wireguard, IPIP, GRE etc.
@@ -82,7 +89,7 @@ that will create its own overlay network that you as a user control.
 * Scalability: BGP scales the Internet. Calico scales the datacenter similarly using BGP
 * Cost: No expensive vendor «lock in» with costs attached. Less overhead => less compute power => less energy consumption for the same work => greener and less expensive.  
 
-## Summmary
+## Summary
 
 * Only use one interface per instance
 * Security groups **is** the firewall. Adapt your design to utilize this property of the platform, using automation tools like Terraform for instance (no pun intended) 
