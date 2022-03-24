@@ -2,7 +2,7 @@
 title: "The Safespring network model explained"
 date: "2022-03-24"
 intro: "People are puzzled by the network stack of the Safespring OpenStack 
-IaaS. Let's check it out and do some explanation."
+compute platform. Let's check it out and do some explanation."
 draft: false
 tags: ["English"]
 showthedate: true
@@ -17,7 +17,7 @@ toc: "Table of contents"
 This blog post will explain the different aspects of the Safespring network
 stack from a user perspective.{{< /ingress >}} <p>If you come from other platforms that use the 
 legacy
-«layer two bridging» approach (with software-defined switches, routers,
+«layer 2 bridging» approach (with software-defined switches, routers,
 floating IP addresses, etc.), please read the full post to understand the
 implications. It does not work the way you think :-). Prerequisites for
 understanding this post are basic knowledge of CIDR notation, IP protocols
@@ -29,8 +29,9 @@ understanding this post are basic knowledge of CIDR notation, IP protocols
 ## TL;DR (Summary)
 
 * **Do not attach more than one interface; it will destroy communication**
-* The Safespring IaaS platform uses the [Calico][calico] OpenStack neutron core 
-plugin for networking.  * Use security groups to enable communication between 
+* The Safespring compute platform platform uses the [Calico][calico] OpenStack neutron core 
+plugin for networking.  
+* Use security groups to enable communication between 
 Safespring instances and between Safespring instances and the Internet.
 * IP addresses are allocated from a shared pool but don't change during the 
 lifetime of an instance.
@@ -136,10 +137,10 @@ property of the platform, using automation tools like Terraform, for instance
 (no pun intended) * Open up only what you need with security groups.
 * Do not change the interface/network configuration in the instances away from 
 using DHCP.
-* Use tunneling on top of our provided layer three network stack if you must 
-have layer two connectivity between instances.
+* Use tunneling on top of our provided layer 3 network stack if you must 
+have layer 2 connectivity between instances.
 * The Safespring «networks» is just a mechanism to allocate IP addresses from a 
 CIDR. Each instance is routed separately (with /32 prefix) by the platform. The 
-instance can only talk to the gateway over layer two, so in practice, all 
-traffic must go through the platform-provided gateway on layer three.
+instance can only talk to the gateway over layer 2, so in practice, all 
+traffic must go through the platform-provided gateway on layer 2.
 
