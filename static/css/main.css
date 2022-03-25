@@ -87,7 +87,6 @@ li {
 	top: 70px;
 	height: fit-content;
 	max-height: 90vh;
-	overflow: scroll;
 	margin-right: 5%
 }
 
@@ -95,7 +94,6 @@ li {
 	position: sticky !important;
 	top: -130px !important;
 	max-height: 110vh !important;
-	overflow: scroll !important;
 }
 
 #TableOfContents ul>li {
@@ -1201,8 +1199,6 @@ color: var(--unCheckedColor);
 		float: right;
 	}
 	.playlist {
-		height: 300px;
-		overflow: scroll;
 	}
 
 	.float-right {
@@ -1294,7 +1290,6 @@ color: var(--unCheckedColor);
 	}
 
 	.webinarplaylist {
-		overflow: scroll;
 	}
 
 	.webinarplaylist ul li::before {
@@ -3271,6 +3266,27 @@ label {
 		}
 	}
 
+ol {
+	list-style: none;
+  counter-reset: safespring-list;
+  padding-left: 32px;
+}
+ol li {
+  counter-increment: safespring-list;
+	border-top: solid #CDDEE7 .25px;
+	padding: 10px 0 3px 0;
+}
+ol li:before {
+  content: counters(safespring-list, '.') ' ';
+	color: var(--clear-blue-color);
+	font-weight: 700;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.5em;
+	margin-right: 0.5em;
+	text-align: right;
+	direction: rtl;
+}
 
 	/* CARD */
 
