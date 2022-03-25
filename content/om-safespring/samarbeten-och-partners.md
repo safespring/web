@@ -43,7 +43,7 @@ Som partners till Safespring kan ni garantera era kunder en korrekt hantering av
 <a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_severalnines.svg"></div></a>
 <a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_piql.png"></div></a>
 <a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_scaleout-systems.png"></div></a>
-<a href="https://www.suse.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_suse.png"></div></a>
+<a href="https://www.suse.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_suse.svg"></div></a>
 <a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_arkivit.png"></div></a>
 <a href="https://www.cristie.dk/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_cristie-nordic.webp"></div></a>
 <a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_sunet.png"></div></a>
