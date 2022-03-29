@@ -1,7 +1,7 @@
 ---
-title: "Flexible provisioning of services using Safespring's Terraform modules and Ansible"
+title: "Flexible provisioning of services with Safespring's Terraform modules"
 date: "2022-03-29"
-intro: "Using Terraform and Ansible for fully automated «zero to service» in minutes"
+intro: "From basic to to more advanced/powerful usage of Safespring's Terraform modules"
 draft: false
 tags: ["English"]
 showthedate: true
@@ -13,10 +13,12 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-This is part two in the series about Terraform Safespring's
-terraform modules. In this blog post, we'll look at the new and more general
-Safespring module for compute instances, how it can be used to provision sets of
-instances and have Ansible configure services on them.  {{< /ingress >}}
+This is part two in the series about Safespring's Terraform modules. In this
+blog post, we'll look at the new and more general Safespring module for compute
+instances, how it can be used to provision sets of instances in different
+configurations. The next post will be about how Ansible can be used together
+with inventory from terraform/openstack to configure services on the provisioned
+instances.{{< /ingress >}}
 
 ## The new «v2-compute-instance» module
 In [the previous blog post][firstblog] we showcased basic usage of the initial
@@ -38,7 +40,7 @@ point in time.
 We'll use the code [examples][sftfexamples] in the Terraform module [git
 repo][sftfmodules] as reference and explain each of them underneath the code.
 
-### One instance with variations using parameters
+### One instance with default paramters
 
 Code:
 ```
@@ -106,8 +108,9 @@ have the same properties as in the first example.
 
 Code:
 ```
+# This is needed when creating resources directly. When using modules the modules will have this included.
 terraform {
-required_version = ">= 0.14.0"
+  required_version = ">= 0.14.0"
   required_providers {
     openstack = {
       source  = "terraform-provider-openstack/openstack"
@@ -153,23 +156,34 @@ module my_sf_instances {
 }
 ```
 Now we've added code to create the keypair `hello-pubkey` and the security group
-`puff`. Those names will be used to name the objects in openstack. There is also
-the Terrform internal names which is used only for referencing back and forth
+`puff`. Those names are used to name the objects within openstack. There is also
+the Terraform internal names which is used only for referencing back and forth
 inside the Terraform code/state. The latter is used to reference the names of
 the keypair and security group in the definition of the instances.
 
 The result of this config will be the same 3 instances as in the previous
 example except they wont be member of the default security group, but rather the
-`puff` security group that we created with ingress rules for `hhtp`and `https`.
+`puff` security group that we created with ingress rules for `http`and `https`.
+
 Also we have created our own keypair (public key) that our instances will get in
-their cloud-users' `authorized_keys_file`. This code will take the local
-`~/.ssh/id_rsa.pub` file and create an openstack keypair for it. For details
-(not Terraform specific) about ssh-keys in Openstack, please head over to
-[another blog post regarding that][sshblog]
+their cloud-users' `authorized_keys`-file. This code takes the local (where
+Terraform is run) `~/.ssh/id_rsa.pub` file and create an openstack keypair for
+it. For details about ssh-keys in Openstack, please head over to [another blog
+post regarding that][sshblog]
+
+Note: In this config we have mixed the creation of resources directly in the
+config and via external modules. This is fine, sometimes the resources is so
+simple tht it doesn't make sense to create an abstraction (moduel) for it. The
+openstack keypairs is a good example of such a resource.
+
+It is totally up to you if you want to make use of our module library, create
+your own modules or just create the resources directly in your config. At least
+the module library, with its default values, can serve as a documentation or
+thin wrapper around the resources and names in our platform as seen from a
+Terraform perspective.
 
 ### A set of instances using a map
 
-### A set of instances using a wireguard gateway 
 
 [diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L15
 [newflavors]: https://docs.safespring.com/new/flavors/
