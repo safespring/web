@@ -130,21 +130,22 @@ module puff {
    source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
    name = "bowl-of-petunias"
    description = "Oh no! Not again"
-   rules = [
-     {
+   rules = {
+     one = {
        ip_protocol = "tcp"
-       to_port = "80"
-       from_port = "80"
+       to_port = "22"
+       from_port = "22"
+       ethertype = "IPv4"
        cidr = "0.0.0.0/0"
-     },
-     {
+     }
+     two = {
        ip_protocol = "tcp"
        to_port = "443"
        from_port = "443"
+       ethertype = "IPv4"
        cidr = "0.0.0.0/0"
      }
-
-   ]
+  }
 }
 
 module my_sf_instances {
@@ -163,7 +164,7 @@ the keypair and security group in the definition of the instances.
 
 The result of this config will be the same 3 instances as in the previous
 example except they wont be member of the default security group, but rather the
-`puff` security group that we created with ingress rules for `http`and `https`.
+`puff` security group that we created with ingress rules for `ssh`and `https`.
 
 Also we have created our own keypair (public key) that our instances will get in
 their cloud-users' `authorized_keys`-file. This code takes the local (where
