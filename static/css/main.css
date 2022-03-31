@@ -781,7 +781,6 @@ color: var(--unCheckedColor);
 	.heading-content {
 		margin: 166px 0 5% 0;
 		grid-column: 2 / span 6;
-		max-width: 700px;
 		align-self: end;
 	}
 
@@ -1552,7 +1551,7 @@ color: var(--unCheckedColor);
 			line-height: 1.5;
 		}
 
-		.ch-content p, h1, h2, h3, h4, li, ol {
+		.ch-content p, h2, h3, h4, li, ol {
 			max-width: 700px;
 			/*margin: 16px 10% 0 0;*/
 		}
@@ -2324,6 +2323,39 @@ margin: 0
 	grid-template-rows: repeat(2, auto)
 }
 
+.tech-intro::before {
+	background: var(--clear-blue-color);
+	content: "TECH UPDATE";
+	border-radius: 50px;
+	color: white;
+	font-size: 13px;
+	padding: 5px 13px;
+	font-weight: 700;
+}
+
+.note {
+	background: white;
+	margin: 1.5625em 0;
+	padding: 25px 20px 15px 40px;
+	border-left: 10px solid var(--green-color);
+	border-radius: 10px;
+}
+
+.note-title {
+		color: var(--green-color);
+		font: var(--heavy-weight) 15px var(--mon-font);
+		text-transform: uppercase;
+}
+
+.note-title::before {
+	margin-right: 10px;
+	background: #EAFAEA;
+	padding: 7px 14px;
+	color: var(--green-color);
+	border-radius: 50%;
+	content: "!";
+}
+
 .ts-content .s-top {
 	grid-column: 1 / 3;
 	padding-bottom: 30px
@@ -2574,9 +2606,8 @@ pre {
 }
 
 .post-heading-firstpage-tech {
-	font: var(--extra-light-weight) 4vw var(--hind-font);
-	max-width: 90vw;
-	line-height: 1;
+	font: var(--extra-light-weight) 5vw var(--hind-font) !important;
+	line-height: 1 !important;
 	color: var(--middle-blue-color) !important;
 }
 
@@ -2601,17 +2632,7 @@ pre {
 	}
 }
 
-.post-heading-firstpage-tech {
-	font: var(--extra-light-weight) 35px var(--hind-font);
-	line-height: 1;
-	color: var(--middle-blue-color) !important;
-}
-}
 
-/*  .ch-content {
-padding-top: 30px;
-}*/
-}
 
 .post-heading-whitepaper:hover {
 	color: var(--link-color);
@@ -2687,6 +2708,7 @@ padding-top: 30px;
 	padding: 20px 0 0 0;
 	text-transform: ;
 	max-width: 700px;
+	line-height: 25px;
 }
 
 .content-category-dokument {
