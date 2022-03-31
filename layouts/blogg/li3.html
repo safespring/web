@@ -2,9 +2,9 @@
 <div class="heading-sub">
   <img class="lazyload heading-background" data-src="/img/blogg/cards/safespring-tech-update.svg" ><img class="heading-background" style="background-image: linear-gradient(0deg, #E8EFF3, #E8EFF300 80%)" >
   <div class="heading-content">
-    <div class="content-meta-post-tech"><a class="content-category-blogg-tech" href="/{{ .Section }}">{{ if .Params.section }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}</a> {{ .Date.Format "2006-01-02" }}</div><br>
+    <div class="content-meta-post-tech">{{ .Date.Format "2006-01-02" }}</div><br>
     <h1 class="post-heading-firstpage-tech">{{ .Title }}</h1>
-    <div class="content-summary-black">
+    <div class="content-summary-black tech-intro">
       {{ if .Params.intro }}{{ .Params.intro }}</br></br>{{ else }}{{ end }}</br>
       {{ if .Params.sidebarlinkurl }}
       <a href="{{ .Params.sidebarlinkurl }}" target="_blank" id="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}</a>

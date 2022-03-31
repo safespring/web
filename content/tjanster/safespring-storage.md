@@ -34,4 +34,4 @@ Safespring storage kan också vara ett bra komplement med din nuvarande lagrings
 Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader. [Läs dokumentation.](https://docs.safespring.com/storage/generalinfo/)
 
 <br><br>
-<a href="/whitepaper/immutable-storage"><img alt="Immutable Objects Solution Brief" src="/img//blogg/socialmedia/safespring_social_38.gif"></a>
+<a href="/solution-brief/immutable-storage/"><img alt="Immutable Objects Solution Brief" src="/img//blogg/socialmedia/safespring_social_38.gif"></a>
