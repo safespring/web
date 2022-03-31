@@ -68,6 +68,7 @@ module my_sf_instance {
    # }
 }
 ```
+
 This is the simplest possible example using only the module source on github and
 a pre-existing keypair. All other values are default. The commented lines
 document the contents of the default values. To override default just uncomment
