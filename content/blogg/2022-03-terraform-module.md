@@ -2,7 +2,7 @@
 title: "Flexible provisioning of services with Safespring's Terraform modules"
 date: "2022-03-29"
 intro: "From basic to to more advanced/powerful usage of Safespring's Terraform modules"
-draft: false
+draft: true
 tags: ["English"]
 showthedate: true
 card: ""
@@ -68,6 +68,7 @@ module my_sf_instance {
    # }
 }
 ```
+
 This is the simplest possible example using only the module source on github and
 a pre-existing keypair. All other values are default. The commented lines
 document the contents of the default values. To override default just uncomment
