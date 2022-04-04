@@ -72,7 +72,7 @@ module my_sf_instance {
 
 This is the simplest possible example using only the module source on GitHub and
 a pre-existing keypair. All other values are default. The commented lines
-document the contents of the default values. To override the default just
+document the contents of the default values. To override a default just
 uncomment and change the value.
 
 When applied, this code will create a compute instance with the name
@@ -80,8 +80,8 @@ hello-safespring, operating system ubuntu 20.04, from a flavor with the local
 disk, 2 VCPUS and 4 GB of RAM. It will be attached to the default network which
 gives the instance a public IPv6 address and a private IPv4 address.  The
 instance will have no data disks and will be a member of the `default` security
-group which will contain rules that allow traffic from the instance egress to
-the world on IPv4 and IPv6. Since the flavor is of type local disk, the
+group which will contain rules that allow traffic from the instance to
+the world on IPv4 and IPv6 (egress). Since the flavor is of type local disk, the
 disk_size parameter will be ignored and the local NVMe disk that is defined in
 the flavor (100GB) will be used for the Ubuntu operating system.
 
@@ -106,7 +106,8 @@ same name). Applying this will yield 3 instances named
 `hello-safespring-{1,2,3}.example.com`. Commented default parameters were
 explained in the first example so they are left out here. As in the first
 example, default values will be used where none is given, so all 3 instances
-will have the same properties as in the first example.
+will have the same properties, and these properties are the same default values
+as in the first example. 
 
 ### Security group(s) and keypair as part of the code
 
@@ -297,10 +298,10 @@ the default egress rules that allow access to the world on IPv4 and IPv6, hence
 giving you full control over what traffic will be allowed.  This will
 effectively firewall all attempts from servers to initiate outbound connections
 and can be used as efficient prevention of [stage 2 downloads of executable code
-(break establishment of command and control (COC))][coc]. Then you can punch
-only the necessary holes for legitimate outbound connections to software
-repositories etc. This is relevant also for servers on the `default`-network
-both via IPv6 and NATed IPv4.
+during an attack and hence [prevent attackers establishment of command and
+control (COC))][coc]. Then you can punch only the necessary holes for legitimate
+outbound connections to software repositories etc. This is relevant also for
+servers on the `default`-network both via IPv6 and NATed IPv4.
 
 {{<note "Note">}}If you create an instance that has no security groups attached
 to it, it will still be attached to the `default` security group that includes
@@ -310,7 +311,7 @@ create your own security groups that you attach instances to and use the
 module.{{</note>}}
 
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
-[diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L15
+[diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]:https://docs.safespring.com/new/flavors/
 [firstblog]:https://www.safespring.com/blogg/2022-01-terraform-modules/
 [mbcfengine]:https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
