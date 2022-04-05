@@ -41,7 +41,8 @@ Especially at a later point in time. {{</note>}}
 We'll use the code [examples][sftfexamples] in the Terraform module [git
 repo][sftfmodules] as a reference and explain each of them underneath the code.
 
-### One instance with default parameters
+### [Ex1][ex1]: One instance with default parameters
+[ex1]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
 
 Code:
 ```
@@ -89,7 +90,8 @@ The `config_drive` parameter is rarely used. If you don't know what it is used
 for you can safely leave the default (false). For the `role` and `wg_ip`
 parameters we'll leave the explanation until later.
 
-### A set of 3 instances using count
+### [Ex2][ex2]: A set of 3 instances using count
+[ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
 
 Code:
 ```
@@ -109,7 +111,8 @@ example, default values will be used where none is given, so all 3 instances
 will have the same properties, and these properties are the same default values
 as in the first example. 
 
-### Security group(s) and keypair as part of the code
+### [Ex3][ex3]: Security group(s) and keypair as part of the code
+[ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
 
 Code:
 ```
@@ -195,7 +198,8 @@ the module library, with its default values, can serve as documentation or a
 thin wrapper around the resources and names in our platform as seen from a
 Terraform perspective.
 
-### Maps define instances and security group rules
+### [Ex4][ex4]: Maps define instances and security group rules
+[ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf
 
 ```
 module ingress {
@@ -309,6 +313,150 @@ egress rules that allow the instance to connect to the world. To prevent this,
 create your own security groups that you attach instances to and use the
 «delete_default_rules = true» parameter to the «v2-compute-security-group»
 module.{{</note>}}
+
+### [Ex5][ex5]: Combining count and map 
+[ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
+
+It would be nice if you could combine iteration with `for_each` (map) and count,
+right? That way you could say: «Give me 10 web-servers with no datadisk on the
+public network with flavor X, and 2 backend server on default network with a
+100GB datadisk». Well, if you try to combine them in the same call to
+`v2-compute-instance` you will get an error saying: 
+
+```
+The "count" and "for_each" meta-arguments are mutually-exclusive, only one
+should be used to be explicit about the number of resources to be created.  
+```
+
+However it can be done by wrapping one of the two into its own (local) module.
+let's say we create the following local module in the directory `./a-set-of-instances`:
+
+
+`main.tf`
+
+```
+module my_sf_instances {
+   source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
+   name            = "${var.prefix}-${count.index + 1}.example.com"
+   count           = var.i_count
+   key_pair_name   = var.key_pair_name
+   data_disks      = var.data_disks
+   image           = var.image
+   network         = var.network
+   flavor          = var.flavor
+}
+```
+
+`variables.tf`
+```
+variable "i_count" {
+  description = "Count"
+  type        = number
+}
+
+variable "flavor" {
+  type        = string
+}
+
+variable "prefix" {
+  type        = string
+}
+
+variable "key_pair_name" {
+  type = string
+}
+
+variable "image" {
+  type = string
+}
+
+variable "network" {
+  type = string
+}
+
+variable "data_disks" {
+  type        = map(
+    object({
+      type      = string
+      size      = number
+    })
+  )
+}
+```
+
+`providers.tf`
+```
+terraform {
+required_version = ">= 0.14.0"
+  required_providers {
+    openstack = {
+      source  = "terraform-provider-openstack/openstack"
+    }
+  }
+}
+```
+
+And then this code in our `main.tf`:
+```
+locals {
+  instances = {
+    "web" = {
+      prefix  = "web"
+      flavor  = "l2.c2r4.100"
+      os      = "centos-7"
+      network = "public"
+      i_count   = 2
+    }
+    "db" = {
+      prefix  = "db"
+      flavor  = "l2.c4r8.100"
+      network = "default"
+      os      = "ubuntu-20.04"
+      data_disks = {
+        "db" = {
+          size    = 5
+          type    = "fast"
+        }
+      }
+    }
+  }
+}
+
+module my_sf_instances {
+   for_each        = local.instances
+   source          = "./a-set-of-instances"
+   prefix          = each.value.prefix
+   i_count         = try(each.value.i_count,1)
+   image           = each.value.os
+   flavor          = each.value.flavor
+   network         = each.value.network
+   key_pair_name   = "jb-jump"
+   data_disks      = try(each.value.data_disks,{})
+}
+```
+
+So first we created a module that use our `v2-compute-instance` as source and
+with the necessary variable defintiions for the values we intend to override the
+defaults for, and the `i_count` parameter which define the count value for each. 
+
+Then we call our local module, that now supports an `i_count` parameter, and
+iterate over a map that has all the necessary default overrides for each set
+**and** the count for each set. So now, instead of copying two identical map
+entries and only varying the name, we can generate the name from a prefix and
+the count index in the local module hence, we with one map entry we can create a
+set of as many instances we want with the same properties. If we need different
+properties we create another set with it's own parameters and `i_count`. THe
+naming of the `i_count` parameter is chosen so it will not collide with the
+internal reserved `count` parameter.  
+
+So here we have combined methods of example 2 and 4 to make the same thing as
+example 4 but in a more generic way that can scale up sets without
+duplicating lots of map entries.  
+
+The `try` function is nice to give the local module the mandatory fallback
+parameters when different map entries need to override different sets of
+parameters. The local module must have variables for the sum/union of alle
+parameters to be specified. 
 
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
