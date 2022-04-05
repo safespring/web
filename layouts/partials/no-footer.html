@@ -65,3 +65,7 @@
       <p>Copyright &copy; {{ now.Format "2006"}} Safespring</p>
     </div>
 </div>
+
+{{ if (findRE "<pre" .Content 1) }}
+    <script src="/js/copy-code-button.js"></script>
+{{ end }}

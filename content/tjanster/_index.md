@@ -9,8 +9,11 @@ form: "yes"
 aliases:
     - /tjenester
 ---
-<div class="ingress"><p>Stabil infrastruktur och resurskonsumering efter behov.
-Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.</p></div>
+
+{{< ingress >}}
+Stabil infrastruktur och resurskonsumering efter behov.
+Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.
+{{< /ingress >}}
 
 ### Molntjänster med hög säkerhet
 Safespring är skalbar och kostnadseffektiv. Med lokalt producerade molntjänster och med fysiska datacenter placerade i samma land som kunden - lämnar er data aldrig landet.
