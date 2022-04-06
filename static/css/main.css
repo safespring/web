@@ -4999,6 +4999,9 @@ button.text {
 		margin: 0;
 		grid-column: 2 / span 6;
 	}
+	.copy-code-button {
+		margin-left: 675px !important;
+	}
 }
 
 section {
@@ -5051,4 +5054,45 @@ margin-bottom: 2rem
 .nava {
 	text-transform: none;
 	font-size: 90%!important;
+}
+
+/* COPY CODE BUTTON */
+
+.copy-code-button {
+	font-family: var(--hind-font);
+	color: #FFF;
+    background-color: #FA690F;
+    border-radius: 50px;
+		border: none;
+
+    /* right-align */
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+
+    margin-bottom: -2px;
+    padding: 3px 12px 0px 12px;
+    font-size: 0.8em;
+}
+
+.copy-code-button:hover {
+    cursor: pointer;
+    background-color: #32CD32;
+}
+
+.copy-code-button:focus {
+    /* Avoid an ugly focus outline on click in Chrome,
+       but darken the button for accessibility.
+       See https://stackoverflow.com/a/25298082/1481479 */
+    background-color: #E6E6E6;
+    outline: 0;
+}
+
+.copy-code-button:active {
+    background-color: #D9D9D9;
+}
+
+.highlight pre {
+    /* Avoid pushing up the copy buttons. */
+    margin: 0;
 }
