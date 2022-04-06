@@ -4999,6 +4999,9 @@ button.text {
 		margin: 0;
 		grid-column: 2 / span 6;
 	}
+	.copy-code-button {
+		margin-left: 675px !important;
+	}
 }
 
 section {
