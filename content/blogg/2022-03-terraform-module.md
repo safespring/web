@@ -1,5 +1,5 @@
 ---
-title: "Flexible provisioning of services with Safespring's Terraform modules"
+title: "Flexible provisioning of resources with Safespring's new Terraform modules"
 date: "2022-03-29"
 intro: "From basic to to more advanced/powerful usage of Safespring's Terraform modules"
 draft: false
