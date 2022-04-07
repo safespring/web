@@ -21,6 +21,62 @@ security groups. The next post will be about how Ansible can be used together
 with inventory from terraform/openstack to configure services on the provisioned
 instances.{{< /ingress >}}
 
+## Prerequisites 
+This blogpost assumes that you use the open source Terraform CLI. Terraform CLI
+is just a binary program that you download from the [releases page][tfreleases],
+for your architechture/platform. Here you also find checksums for the files to
+verify their integrity.  
+
+Unless otherwise explained, all the examples presupposes that you put the code
+in a `.tf` in a separate directory and run `plan`, `init`, `apply` and `destroy`
+from within that directory. `main.tf` is mostly used as convention for the file
+name, but you can name it whatever you like as long as it ends in `.tf`
+
+There is also the official [Terraform documentation][tfdocs]
+
+## Terraform introduction
+
+Terraform takes plain text files with «HCL - Hashicorp Configuration Language»
+as input and provides servers and storage as output. HCL is a declarative
+language, i.e., it does not specify any actions to be taken but rather a desired
+state - or outcome.
+
+The idea that configuration languages should be declarative, and that
+the agent should drive/converge real state into the declared desired state, has
+become widely accepted over the last three decades and is based on ideas and
+research by [Mark Burgess during the early nineties and later][mbcfengine].
+
+### Terraform providers
+The superpower of Terraform comes from all of it's providers. The Terraform
+providers are binary extensions of Terraform that, as the name indicates,
+«provide» resources of different kinds using the APIs of the cloud provider
+reflected by the extension's name.
+
+These extensions do all the heavy lifting towards the cloud provider APIs and
+ensure that the actual state (the cloud resources) is converged to what is
+specified as the desired state.
+
+Terraform can be viewed as a desired state configuration agent for
+infrastructure. Every time it is run, it will turn the desired state into the
+actual state for cloud resources.
+
+### Reducing the level of «lock-in»
+Terraform has tons of battle-tested providers available to use, thus easing the
+burden of provisioning cloud resources from all kinds of cloud APIs within the
+same (or different) configurations.
+
+Let's say you need resources in other clouds (or on-premise) for the same
+multi-cloud or hybrid environments. Then you can do that using one Terraform
+config, and you can even scale up and down the number of resources by changing
+some variables in your Terraform code.
+
+Terraform is cloud-agnostic and thus is excellent insurance that your resources are as portable as possible, thus reducing the level of "lock-in" to a minimum.
+
+{{<note "Disclaimer">}}Terraform is a powerful tool and powerful tools can make
+powerful failures if used incorrectly, so be sure to read up on documentation
+and best practices to understand the nature of the tool before using it for
+important stuff.  {{</note>}}
+
 ## The new «v2-compute-instance» module
 In [the previous blog post][firstblog] we showcased basic usage of the initial
 version of the Safespring Terraform modules. These modules are now deprecated
@@ -314,7 +370,7 @@ create your own security groups that you attach instances to and use the
 «delete_default_rules = true» parameter to the «v2-compute-security-group»
 module.{{</note>}}
 
-### [Ex5][ex5]: Combining count and map 
+### [Ex5][ex5]: Combining count and map for instances and map for disks 
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 
 It would be nice if you could combine iteration with `for_each` (map) and count,
@@ -329,8 +385,8 @@ should be used to be explicit about the number of resources to be created.
 ```
 
 However it can be done by wrapping one of the two into its own (local) module.
-let's say we create the following local module in the directory `./a-set-of-instances`:
-
+let's say we create the following local module in a directory named
+`./a-set-of-instances`:
 
 `main.tf`
 
@@ -387,9 +443,9 @@ variable "data_disks" {
 `providers.tf`
 ```
 terraform {
-required_version = ">= 0.14.0"
-  required_providers {
-    openstack = {
+  required_version = ">= 0.14.0"
+    required_providers {
+      openstack = {
       source  = "terraform-provider-openstack/openstack"
     }
   }
@@ -451,13 +507,19 @@ internal reserved `count` parameter.
 
 So here we have combined methods of example 2 and 4 to make the same thing as
 example 4 but in a more generic way that can scale up sets without
-duplicating lots of map entries.  
+duplicating lots of map entries. To scale up the number of web servers now you
+only increase `i_count` field in the map entry for web servers instead of
+creating as many new map entries as new servers needed.  
 
-The `try` function is nice to give the local module the mandatory fallback
+In addition we have defined another map inside the map entry of the `db`
+instance that will create and attach a volume of type `fast` and size 5GB.
+
+The [try][tftry] is used to give the local module the mandatory fallback
 parameters when different map entries need to override different sets of
-parameters. The local module must have variables for the sum/union of alle
-parameters to be specified. 
+parameters in the `v2_compute_instance`. The local module must have variables
+for the sum/union of all parameters to be specified. 
 
+[tftry]: https://www.terraform.io/language/functions/try
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]:https://docs.safespring.com/new/flavors/
@@ -468,3 +530,5 @@ parameters to be specified.
 [sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
 [sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
 [netblog]:https://www.safespring.com/blogg/2022-03-network/
+[tfdocs]: https://www.terraform.io/docs
+[tfreleases]: https://releases.hashicorp.com/terraform/
