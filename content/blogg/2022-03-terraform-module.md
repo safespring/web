@@ -1,7 +1,7 @@
 ---
 title: "Flexible provisioning of resources with Safespring's new Terraform modules"
-date: "2022-03-29"
-intro: "From basic to to more advanced/powerful usage of Safespring's Terraform modules"
+date: "2022-04-08"
+intro: "From basic to more advanced/powerful usage of Safespring's Terraform modules"
 draft: false
 tags: ["English"]
 showthedate: true
@@ -13,23 +13,23 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-This is part two in the series about Safespring's Terraform modules. In this
-blog post, we'll look at the new and more general Safespring modules for compute
-instances and security groups, how it can be used to provision sets of instances
+This is part two in the series about Safespring's Terraform modules. This blog 
+post will look at the new and more general Safespring modules for compute 
+instances and security groups.{{< /ingress >}}<p>We will also look at how we can use it to provision sets of instances
 in different configurations allowing only the necessary connections using
-security groups. The next post will be about how Ansible can be used together
-with inventory from terraform/openstack to configure services on the provisioned
-instances.{{< /ingress >}}
+security groups. The next post will be about using Ansible and
+from terraform/OpenStack to configure services on the provisioned 
+instances.
 
 ## Prerequisites 
-This blogpost assumes that you use the open source Terraform CLI. Terraform CLI
+This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
-for your architechture/platform. Here you also find checksums for the files to
+for your architecture/platform. Here you also find checksums for the files to
 verify their integrity.  
 
-Unless otherwise explained, all the examples presupposes that you put the code
+Unless otherwise explained, all the examples presuppose that you put the code
 in a `.tf` in a separate directory and run `plan`, `init`, `apply` and `destroy`
-from within that directory. `main.tf` is mostly used as convention for the file
+from within that directory. `main.tf` is mostly used as a convention for the file
 name, but you can name it whatever you like as long as it ends in `.tf`
 
 There is also the official [Terraform documentation][tfdocs]
@@ -47,12 +47,12 @@ become widely accepted over the last three decades and is based on ideas and
 research by [Mark Burgess during the early nineties and later][mbcfengine].
 
 ### Terraform providers
-The superpower of Terraform comes from all of it's providers. The Terraform
+The superpower of Terraform comes from all of its providers. The Terraform
 providers are binary extensions of Terraform that, as the name indicates,
 «provide» resources of different kinds using the APIs of the cloud provider
 reflected by the extension's name.
 
-These extensions do all the heavy lifting towards the cloud provider APIs and
+These extensions do all the heavy lifting for the cloud provider APIs and
 ensure that the actual state (the cloud resources) is converged to what is
 specified as the desired state.
 
@@ -72,10 +72,10 @@ some variables in your Terraform code.
 
 Terraform is cloud-agnostic and thus is excellent insurance that your resources are as portable as possible, thus reducing the level of "lock-in" to a minimum.
 
-{{<note "Disclaimer">}}Terraform is a powerful tool and powerful tools can make
-powerful failures if used incorrectly, so be sure to read up on documentation
+{{<disclaimer "Disclaimer">}}Terraform is a powerful tool, and powerful tools can make
+powerful failures if misused, so be sure to read up on documentation
 and best practices to understand the nature of the tool before using it for
-important stuff.  {{</note>}}
+the important stuff.{{</disclaimer>}}
 
 ## The new «v2-compute-instance» module
 In [the previous blog post][firstblog] we showcased basic usage of the initial
@@ -84,13 +84,13 @@ and are replaced by a single module that does more than the deprecated ones. The
 reason for this is that the new module automatically switches usage of «boot
 from volume» on and off based on whether the flavor name starts with an «l» or
 not. The new module also defaults to use [our new compute flavors][newflavors],
-while the deprecated ones default to the old deprecated flavors.  Last but not
+while the deprecated ones default to the old deprecated flavors. Last but not
 least, the new module can [receive a map variable describing a set of additional
 data disks to be attached to the instance][diskmap].
 
-{{<note "Note">}}The module library is constantly evolving so this blog post
+{{<note "Note">}}The module library is constantly evolving, so this blog post
 explains the features currently available and how to use them. Please also look
-at the code, comments, and variable definitions to get the full picture.
+at the code, comments, and variable definitions to get the whole picture.
 Especially at a later point in time. {{</note>}}
 
 ## Examples
@@ -100,7 +100,6 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 ### [Ex1][ex1]: One instance with default parameters
 [ex1]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
 
-Code:
 ```
 module my_sf_instance {
    source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
@@ -134,22 +133,21 @@ uncomment and change the value.
 
 When applied, this code will create a compute instance with the name
 hello-safespring, operating system ubuntu 20.04, from a flavor with the local
-disk, 2 VCPUS and 4 GB of RAM. It will be attached to the default network which
-gives the instance a public IPv6 address and a private IPv4 address.  The
+disk, 2 VCPUS, and 4 GB of RAM. It will be attached to the default network, which
+gives the instance a public IPv6 address and a private IPv4 address. The
 instance will have no data disks and will be a member of the `default` security
-group which will contain rules that allow traffic from the instance to
+group, which will contain rules that allow traffic from the instance to
 the world on IPv4 and IPv6 (egress). Since the flavor is of type local disk, the
-disk_size parameter will be ignored and the local NVMe disk that is defined in
+disk_size parameter will be ignored, and the local NVMe disk defined in
 the flavor (100GB) will be used for the Ubuntu operating system.
 
 The `config_drive` parameter is rarely used. If you don't know what it is used
-for you can safely leave the default (false). For the `role` and `wg_ip`
-parameters we'll leave the explanation until later.
+for, you can safely leave the default (false). For the `role` and `wg_ip`
+parameters, we'll leave the explanation until later.
 
 ### [Ex2][ex2]: A set of 3 instances using count
 [ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
 
-Code:
 ```
 module my_sf_instances {
    count           = 3
@@ -158,11 +156,11 @@ module my_sf_instances {
    key_pair_name   = "an-existing-keypair"
 }
 ```
-Here we added a count of 3 and we use the count index to differentiate the names
+Here we added a count of 3, and we use the count index to differentiate the names
 of the 3 instances created (you can't create more than one instance with the
 same name). Applying this will yield 3 instances named
 `hello-safespring-{1,2,3}.example.com`. Commented default parameters were
-explained in the first example so they are left out here. As in the first
+explained in the first example, so they are left out here. As in the first
 example, default values will be used where none is given, so all 3 instances
 will have the same properties, and these properties are the same default values
 as in the first example. 
@@ -170,7 +168,6 @@ as in the first example.
 ### [Ex3][ex3]: Security group(s) and keypair as part of the code
 [ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
 
-Code:
 ```
 # This is needed when creating resources directly. When using modules
 # the modules will have this included.
@@ -241,7 +238,7 @@ post regarding that][sshblog]
 In this config, we have mixed the creation of resources directly in the config
 and via external modules. This is fine, sometimes the resources are so simple
 that it doesn't make sense to create an abstraction (module) for it. The
-OpenStack keypairs are a good example of such a resource.
+OpenStack keypairs are an excellent example of such a resource.
 
 The specification of security group rules is done with map variables directly
 inside the security group module instantiation, a map of maps «one» and «two».
@@ -355,7 +352,7 @@ network stack.][netblog]
 
 It is worth noting that the parameter `delete_default_rules = true` will remove
 the default egress rules that allow access to the world on IPv4 and IPv6, hence
-giving you full control over what traffic will be allowed.  This will
+giving you full control over what traffic will be allowed. This will
 effectively firewall all attempts from servers to initiate outbound connections
 and can be used as efficient prevention of [stage 2 downloads of executable code
 during an attack and hence [prevent attackers establishment of command and
@@ -491,21 +488,21 @@ module my_sf_instances {
 }
 ```
 
-So first we created a module that use our `v2-compute-instance` as the source 
-with the necessary variable definitions for the values we intend to override the
+So first we created a module that used our `v2-compute-instance` as the source 
+with the necessary variable definitions for the values, we intend to override the
 defaults for and the `i_count` parameter which defines the count value for each. 
 
 Then we call our local module, that now supports an `i_count` parameter, and
 iterate over a map that has all the necessary default overrides for each set
 **and** the count for each set. So now, instead of copying two identical map
 entries and only varying the name, we can generate the name from a prefix and
-the count index in the local module hence, we with one map entry we can create a
+the count index in the local module; hence, we with one map entry we can create a
 set of as many instances we want with the same properties. If we need different
-properties we create another set with it's own parameters and `i_count`. The
+properties, we create another set with its own parameters and `i_count`. The
 naming of the `i_count` parameter is chosen so it will not collide with the
-internal reserved `count` parameter.  
+internal, reserved `count` parameter.  
 
-So here we have combined methods of example 2 and 4 to make the same thing as
+So here we have combined methods of examples 2 and 4 to make the same thing as
 example 4 but in a more generic way that can scale up sets without
 duplicating lots of map entries. To scale up the number of web servers now you
 only increase `i_count` field in the map entry for web servers instead of
