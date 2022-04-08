@@ -374,8 +374,8 @@ module.{{</note>}}
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 
 It would be nice if you could combine iteration with `for_each` (map) and count,
-right? That way you could say: «Give me 10 web-servers with no datadisk on the
-public network with flavor X, and 2 backend server on default network with a
+right? That way you could say: «Give me 10 web servers with no datadisk on the
+public network with flavor X, and 2 backend servers on the default network with a
 100GB datadisk». Well, if you try to combine them in the same call to
 `v2-compute-instance` you will get an error saying: 
 
@@ -384,7 +384,7 @@ The "count" and "for_each" meta-arguments are mutually-exclusive, only one
 should be used to be explicit about the number of resources to be created.  
 ```
 
-However it can be done by wrapping one of the two into its own (local) module.
+However it can be done by wrapping one of them into its own module.
 let's say we create the following local module in a directory named
 `./a-set-of-instances`:
 
@@ -491,9 +491,9 @@ module my_sf_instances {
 }
 ```
 
-So first we created a module that use our `v2-compute-instance` as source and
-with the necessary variable defintiions for the values we intend to override the
-defaults for, and the `i_count` parameter which define the count value for each. 
+So first we created a module that use our `v2-compute-instance` as the source 
+with the necessary variable definitions for the values we intend to override the
+defaults for and the `i_count` parameter which defines the count value for each. 
 
 Then we call our local module, that now supports an `i_count` parameter, and
 iterate over a map that has all the necessary default overrides for each set
@@ -501,7 +501,7 @@ iterate over a map that has all the necessary default overrides for each set
 entries and only varying the name, we can generate the name from a prefix and
 the count index in the local module hence, we with one map entry we can create a
 set of as many instances we want with the same properties. If we need different
-properties we create another set with it's own parameters and `i_count`. THe
+properties we create another set with it's own parameters and `i_count`. The
 naming of the `i_count` parameter is chosen so it will not collide with the
 internal reserved `count` parameter.  
 
@@ -511,7 +511,7 @@ duplicating lots of map entries. To scale up the number of web servers now you
 only increase `i_count` field in the map entry for web servers instead of
 creating as many new map entries as new servers needed.  
 
-In addition we have defined another map inside the map entry of the `db`
+In addition, we have defined another map inside the map entry of the `db`
 instance that will create and attach a volume of type `fast` and size 5GB.
 
 The [try][tftry] is used to give the local module the mandatory fallback
