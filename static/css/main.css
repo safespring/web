@@ -2356,6 +2356,29 @@ margin: 0
 	content: "!";
 }
 
+.disclaimer {
+	background: white;
+	margin: 1.5625em 0;
+	padding: 25px 20px 15px 40px;
+	border-left: 10px solid #eed700;
+	border-radius: 10px;
+}
+
+.disclaimer-title {
+		color: #dbc500;
+		font: var(--heavy-weight) 15px var(--mon-font);
+		text-transform: uppercase;
+}
+
+.disclaimer-title::before {
+	margin-right: 10px;
+	background: #eed60038;
+	padding: 7px 14px;
+	color: #dbc500;
+	border-radius: 50%;
+	content: "!";
+}
+
 .ts-content .s-top {
 	grid-column: 1 / 3;
 	padding-bottom: 30px
