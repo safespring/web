@@ -529,5 +529,6 @@ for the sum/union of all parameters to be specified.
 [sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
 [sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
 [netblog]:https://www.safespring.com/blogg/2022-03-network/
+
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
