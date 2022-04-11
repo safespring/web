@@ -1,6 +1,6 @@
 ---
 title: "Flexible provisioning of resources with Safespring's new Terraform modules"
-date: "2022-04-08"
+date: "2022-04-11"
 intro: "From basic to more advanced/powerful usage of Safespring's Terraform modules"
 draft: false
 tags: ["English"]
