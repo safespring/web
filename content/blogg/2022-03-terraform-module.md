@@ -15,7 +15,9 @@ toc: "Table of contents"
 {{< ingress >}}
 This is part two in the series about Safespring's Terraform modules. This blog 
 post will look at the new and more general Safespring modules for compute 
-instances and security groups.{{< /ingress >}}<p>We will also look at how we can use it to provision sets of instances
+instances and security groups.{{< /ingress >}}
+
+We will also look at how we can use it to provision sets of instances
 in different configurations allowing only the necessary connections using
 security groups. The next post will be about using Ansible and
 from terraform/OpenStack to configure services on the provisioned 
@@ -72,10 +74,10 @@ some variables in your Terraform code.
 
 Terraform is cloud-agnostic and thus is excellent insurance that your resources are as portable as possible, thus reducing the level of "lock-in" to a minimum.
 
-{{<disclaimer "Disclaimer">}}Terraform is a powerful tool, and powerful tools can make
+{{< disclaimer "Disclaimer" >}}Terraform is a powerful tool, and powerful tools can make
 powerful failures if misused, so be sure to read up on documentation
 and best practices to understand the nature of the tool before using it for
-the important stuff.{{</disclaimer>}}
+the important stuff.{{< /disclaimer >}}
 
 ## The new «v2-compute-instance» module
 In [the previous blog post][firstblog] we showcased basic usage of the initial
@@ -88,10 +90,10 @@ while the deprecated ones default to the old deprecated flavors. Last but not
 least, the new module can [receive a map variable describing a set of additional
 data disks to be attached to the instance][diskmap].
 
-{{<note "Note">}}The module library is constantly evolving, so this blog post
+{{< note "Note" >}}The module library is constantly evolving, so this blog post
 explains the features currently available and how to use them. Please also look
 at the code, comments, and variable definitions to get the whole picture.
-Especially at a later point in time. {{</note>}}
+Especially at a later point in time. {{< /note >}}
 
 ## Examples
 We'll use the code [examples][sftfexamples] in the Terraform module [git
@@ -360,12 +362,12 @@ control (COC))][coc]. Then you can punch only the necessary holes for legitimate
 outbound connections to software repositories etc. This is relevant also for
 servers on the `default`-network both via IPv6 and NATed IPv4.
 
-{{<note "Note">}}If you create an instance that has no security groups attached
+{{< note "Note" >}}If you create an instance that has no security groups attached
 to it, it will still be attached to the `default` security group that includes
 egress rules that allow the instance to connect to the world. To prevent this,
 create your own security groups that you attach instances to and use the
 «delete_default_rules = true» parameter to the «v2-compute-security-group»
-module.{{</note>}}
+module.{{< /note >}}
 
 ### [Ex5][ex5]: Combining count and map for instances and map for disks 
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
