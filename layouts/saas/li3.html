@@ -4,10 +4,10 @@
     </a>
   </div>
   <br>
-  <h1 class="post-heading-firstpage">
+  <h1 class="post-heading-firstpage {{ if eq .Params.darkmode `off` }}light-backround{{ end }}">
     {{ .Title }}
   </h1>
-  <div class="content-summary-blogg">
+  <div class="content-summary-blogg {{ if eq .Params.darkmode `off` }}light-backround{{ end }}">
     {{ .Params.intro }}</br></br></br>
     {{ if .Params.sidebarlinkurl }}
     <a href="{{ .Params.sidebarlinkurl }}" target="_blank" id="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}</a>

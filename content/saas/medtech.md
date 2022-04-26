@@ -4,31 +4,30 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Kubernetes"
 intro: "Kör er applikation på en managerad Kubernetes-plattform"
-background: "safespring_background_medtech.jpg"
+background: "safespring_background_medtech2.svg"
 card: "safespring-kubernetes.svg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo"
-sidebarsection: "MedTech"
+sidebarsection: "Medtech"
 sidebarimage: "safespring-kubernetes.svg"
 sidebartitle: ""
 sidebartext: ""
 sidebardate: ""
 sidebarknapp: ""
 sidebarlink: ""
+darkmode: "off"
 saas: ""
 sidebarwhitepaper: ""
 aliases:
     - /medtech/
-
 ---
 
-
 {{< ingress >}}
-Tjänsten Kubernetes Platform as a Service passar bolag som vill att interna utvecklare ska få fokusera på att skapa kundnytta medan den underliggande plattformen är fullt managerad.
+Compliant Kubernetes passar bolag som vill att interna utvecklare ska få fokusera på att skapa kundnytta medan den underliggande plattformen är fullt managerad.
 {{</ ingress >}}
 
-{{% half-image "/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg" %}}
+{{% half-image "/img/saas/-safespring-compliant-kubernetes-pyramid.svg" %}}
 
 ### Fördelarna med Kubernetes Platform as a Service
 - Skala upp med samma antal interna utvecklare
@@ -41,9 +40,9 @@ Tjänsten Kubernetes Platform as a Service passar bolag som vill att interna utv
 {{% /half-image %}}
 
 ## Stärk ditt team med extern expertis inom DevOps och Kubernetes
-Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
+Safespring och Compliant Kubernetes som en driftad helhetslösning.
 
-Elastisys är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder Elastisys kompletterande utbildningar och konsulttjänster.
+Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">
