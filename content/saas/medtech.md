@@ -60,7 +60,7 @@ Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utif
 
 {{< localtextbutton "Utforska källkoden" "https://compliantkubernetes.io/" >}}
 
-<a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
+<a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)</a>
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">
