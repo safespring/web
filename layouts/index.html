@@ -58,12 +58,12 @@
         <source src="/img/safespring-social_media-animation-firesidechat.mp4" type="video/mp4" />
         Du kan tyvärr inte se denna video.
       </video></a>
-      </div>
+      </div>-->
       <div class="flexcontainer" style="align-items:baseline;">
             {{ range first 3 (where $.Site.RegularPages "Section" "blogg") }}
               {{ .Render "li"}}
               {{ end }}
-        </div>-->
+        </div>
       </div>
   <!-- FOOTER -->
   {{ partial "footer.html" . }}
