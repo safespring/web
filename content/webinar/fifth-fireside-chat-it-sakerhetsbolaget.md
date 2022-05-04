@@ -41,7 +41,7 @@ Vad har hänt under första kvartalet 2022. Var med och diskutera, ställ frågo
 Dagens ämnen:
 - Avtal mellan EU och USA?
 - Skatteverkets rapport om Gaia-X
-- Region Stockholm och Stockholm stads beslut att inte använda amerkanska molntjänster.
+- Region Stockholm och Stockholm stads beslut att inte använda amerikanska molntjänster.
 - Esams arbetsprojekt som fortgår. De hade ett seminarium den 28/4 2022. Presentationer om leverantöres bild av regleran från Esam.
 
 {{< localbutton "Se direkt" "https://us02web.zoom.us/webinar/register/3516514829729/WN_9wQrIRwKT-O0a7XqfysWSA" >}}
