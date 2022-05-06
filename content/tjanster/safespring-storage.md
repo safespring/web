@@ -6,7 +6,7 @@ intro: "Safespring stödjer S3 och är byggt på marknadsledande lagringsteknolo
 background: "safespring-storage.jpg"
 form: "yes"
 sidebarlinkname: "Läs Solution Brief"
-sidebarlinkurl: "/whitepaper/objektlagring/"
+sidebarlinkurl: "/solution-brief/objektlagring/"
 socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
