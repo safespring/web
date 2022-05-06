@@ -29,6 +29,8 @@ chapter6: ""
 minute6: ""
 ---
 
+{{< calendar month="Maj" day="10" type="Fireside chat" platform="Digitalt: Zoom" time="10:00–10:50">}}
+
 <a href="https://us02web.zoom.us/webinar/register/3516514829729/WN_9wQrIRwKT-O0a7XqfysWSA"><img src="/img/event/socialmedia/safespring_social_42.gif" alt="Välkommen att delta i vår femte Fireside Chat.">
 </a>
 
