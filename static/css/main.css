@@ -2333,6 +2333,16 @@ margin: 0
 	font-weight: 700;
 }
 
+.blog-intro::before {
+	background: var(--green-color);
+	content: "BLOGG";
+	border-radius: 50px;
+	color: white;
+	font-size: 13px;
+	padding: 5px 13px;
+	font-weight: 700;
+}
+
 .note {
 	background: white;
 	margin: 1.5625em 0;

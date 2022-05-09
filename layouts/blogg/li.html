@@ -18,7 +18,7 @@
     </p>
   </div>
   <a href="{{ .Permalink }}" class="blogg-card-link text-uppercase d-inline-block font-weight-medium lts-2px text-center styled-link ff-serif">
-    Läs mer
+    {{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}
   </a>
 </div></a>
 {{ else }}{{ if eq $.Params.section "Tech update" }}
