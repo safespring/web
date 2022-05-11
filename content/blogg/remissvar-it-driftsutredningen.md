@@ -1,6 +1,6 @@
 ---
 title: "Remissvar på It-driftsutredningen"
-date: "2022-05-08"
+date: "2022-05-11"
 intro: "Vårt svar adresserar inte specialsystem i första hand utan myndigheters behov av innovativa, standardiserade IT system och tjänster för att fortsätta digitalisera och utveckla verksamheten."
 draft: false
 tags: ["Swedish"]
@@ -95,10 +95,14 @@ Källa: [De Nationale Cyber Security Strategie (NCSS)](https://www.vno-ncw.nl/si
 
 ## Undertecknat
 
-För Safespring, Binero och City Networks
+### För Safespring, Binero och City Networks
 
 {{< inline "Fredric Wallsten" >}}, VD Safespring<br>
 {{< inline "Charlotte Darth" >}}, VD Binero<br>
 {{< inline "Johan Cristiansen" >}}, City Networks<br>
 
 Rådgivare: Amelia Andersdotter
+
+## Länkar
+### [Samtliga remissvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+### [Slutbetänkande av It-driftsutredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)
