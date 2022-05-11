@@ -39,6 +39,11 @@ Välkommen att delta i vår femte Fireside Chat. Kommer EU och USA ingå i ett n
 Vad har hänt under första kvartalet 2022. Var med och diskutera, ställ frågor och lyssna på Patrik Jonasson (VD och dataskyddsombud på IT-säkerhetsbolaget) och Gabriel Paues (Senior Cloud Architect på Safespring).
 
 ### Dokument som tas upp under samtalet
+- [Safesprings remissvar till It-driftsutredningen](/blogg/remissvar-it-driftsutredningen/)
+- [Trans Atlantic Data Privacy Framework](https://next.safespring.com/s/L5ssXCHtGAjKFYs)
+- [EDPB:s förtydligande om Trans Atlantic Data Privacy Framework](https://edpb.europa.eu/our-work-tools/our-documents/statements/statement-012022-announcement-agreement-principle-new-trans_en)
+- [Stockholm stad ansluter sig till eSam](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)
+- [Lista på länder med adekvat skyddsnivå (IMY)](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)
 
 ### Dagens ämnen:
 - Avtal mellan EU och USA?
