@@ -41,7 +41,7 @@ Att ta backup är självklart idag - men att ta backup som klarar att hela din p
 Lösningen är att ha ett system uppsatt som skickar iväg en offsite kopia till en annan plats. Med en sådan lösning på plats är du mycket mer förberedd om något skulle hända din primära site. Lösningen är enkel och kostnadseffektiv eftersom att du använder ditt befintliga backupsystem.
 
 ### Immutable objects
-När objektlagring används för offsite backup är det viktigt att datan inte går att manipulera eller radera. Därför är funktionen "immutable objects" ett bra sätt att skydda den lagrade datan. Användaren kan sätta en tidsram där datan är helt skyddad från påverkan utifrån. Det gör att säkerhetskopiering blir säkrare och mer kostnadseffektiv än innan genom Safespring Storage. [Läs vår solution brief om immutable objects](/whitepaper/immutable-storage/).
+När objektlagring används för offsite backup är det viktigt att datan inte går att manipulera eller radera. Därför är funktionen "immutable objects" ett bra sätt att skydda den lagrade datan. Användaren kan sätta en tidsram där datan är helt skyddad från påverkan utifrån. Det gör att säkerhetskopiering blir säkrare och mer kostnadseffektiv än innan genom Safespring Storage. [Läs vår solution brief om immutable objects](/solution-brief/immutable-storage/).
 
 ### Vikten av offsite backup
 Att lagra kopior på annan plats är ovärderligt om en katastrof skulle inträffa. De huvudsakliga anledningarna till en sådan lösning är följande:
