@@ -13,24 +13,22 @@ audience: "saas"
 explorer: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
-youtube: ""
-timecodes: ""
-chapter1: ""
-minute1: ""
-chapter2: ""
-minute2: ""
-chapter3: ""
-minute3: ""
-chapter4: ""
-minute4: ""
-chapter5: ""
-minute5: ""
-chapter6: ""
-minute6: ""
+youtube: "pEs-cW5kL40"
+timecodes: "0, 190, 1588, 1935, 2675, 2840"
+chapter1: "Intro"
+minute1: "00:00"
+chapter2: "Avtal: EU-USA?"
+minute2: "03:10"
+chapter3: "Senaste om Gaia-X"
+minute3: "26:30"
+chapter4: "Safesprings remissvar"
+minute4: "32:15"
+chapter5: "Sthlm lämnar O365"
+minute5: "44:35"
+chapter6: "Esams arbete"
+minute6: "47:20"
 ---
 
-<a href="https://us02web.zoom.us/webinar/register/3516514829729/WN_9wQrIRwKT-O0a7XqfysWSA"><img src="/img/event/socialmedia/safespring_social_42.gif" alt="Välkommen att delta i vår femte Fireside Chat.">
-</a>
 
 {{< ingress>}}
 Välkommen att delta i vår femte Fireside Chat. Kommer EU och USA ingå i ett nytt dataöverföringsavtal, och kan det i så fall leda till Schrems III?
