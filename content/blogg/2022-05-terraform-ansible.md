@@ -103,32 +103,32 @@ timeconsuming than static inventories. Also they can put a heavy load on the
 Openstack APIs if the inventory is frequently updated.   
 
 ## Terraform and Ansible
-It must be "Terrible" then ;-), actually not the terrible at all. 
+It must be "Terrible" then ;-) ? Actually it is not terrible at all. 
 
-Terraform keeps it's own account of all objects that it provisons together with
-their matadata. This is called "state" and it is stored in the local directory
+Terraform keeps it's own account of all objects that it provisions together with
+its matadata. This is called "state" and it is stored in the local directory
 where Terraform is run by default, in a file called `terraform.tfstate`. The
 previous state version is backed up in the file `terraform.tfstate.backup`. 
 
 This means that most things you can query the API for, about your Terraform
-provided objects in openstack, will also be present in the local Terraform
-state file. Hence, if we use a script that querys the local Terraform state
+provided objects in OpenStack, will also be present in the local Terraform
+state file. Hence, if we use a script that queries the local Terraform state
 file we will benefit from very fast performance and no resource consumption in
-the Openstack API. This is exactly what we'll showcase here. There is several
+the OpenStack API. This is exactly what we'll showcase here. There is several
 scripts/programs available for this purpose (duckduckgo.com is your friend),
-but we'll use a simple [python script][ati] orginally developed by Cisco
+but we'll use a simple [python script][ati] originally developed by Cisco
 Systems. 
 
 In order to use it, just copy or symlink the script somewhere convenient and
 use the path of it as the `--inventory` option to `ansible-*` commands. If you
 put the script in a directory, and use the directory name as `--inventory`, you
-can also combine information from dynamic inventory provided by the script with
-static inventory files that further enrich or transform the dynamic inventory.
-For instance if you use an Ansible role or playbook that require a specific
-host group name you can use a static inventory to define a new host group that
-you choos the name of and specify a hos group  from the dynamic inventory as
-`children` to the group you created, and then use that group with your role or
-playbook. We'll look at  that in a later example. 
+can also combine information from the dynamic inventory provided by the script
+with static inventory files that further enrich or transform the dynamic
+inventory.  For instance if you use an Ansible role or playbook that requires a
+specific host group name you can use a static inventory to define a new host
+group that you choose the name of and specify a hos group  from the dynamic
+inventory as `children` to the group you created, and then use that group with
+your role or playbook. We'll look at that in a later example. 
 
 ## Examples
 We'll use the code [examples][sftfexamples] in the Terraform module [git
@@ -155,13 +155,8 @@ module ingress {
    source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
    name = "ingress"
    delete_default_rules = true
-   description = "For exposing web servers on port 443 (https) to the world"
+   description = "For exposing web servers on port 80 (http) to the world"
    rules = {
-     egress = {
-       direction   = "egress"
-       ethertype   = "IPv4"
-       cidr        = "0.0.0.0/0"
-     }
      ssh = {
        direction   = "ingress"
        ip_protocol = "tcp"
@@ -189,7 +184,7 @@ locals {
       os      = "ubuntu-20.04"
       network = "public"
       role    = "webserver"
-      sgs     = [ module.ingress.name ]
+      sgs     = [ "default", module.ingress.name ]
     }
     "web2" = {
       name    = "websrv2.example.com"
@@ -197,7 +192,7 @@ locals {
       os      = "ubuntu-20.04"
       network = "public"
       role    = "webserver"
-      sgs     = [ module.ingress.name ]
+      sgs     = [ "default", module.ingress.name ]
     }
   }
 }
@@ -213,11 +208,11 @@ module my_sf_instances {
    key_pair_name   = openstack_compute_keypair_v2.skp.name
 }
 ```
-First we create two instances on the `public` network, from flavor
-`l2.c2r4.100` and `ubuntu-20.04` image. Notably we specify `role=webserver`.
-When we run `terraform apply` on this, the instances, key pairs and security
+First, we create two instances on the `public` network, from flavor
+`l2.c2r4.100` and `ubuntu-20.04` image. Notably, we specify `role=webserver`.
+When we run `terraform apply` on this, the instances, key pairs, and security
 groups are created. There is not yet a webserver installed nor configured. That
-is what we'll use ansible for.
+is what we'll use Ansible for.
 
 In order to reuse the role we specified in the Terraform code for instances we
 need an inventory script that reads Terraform state file(s) and produce
@@ -258,16 +253,220 @@ we specified in the Terraform code. The inventory script will find the correct
 instances, and their ip-addresses, belonging to the group that has the
 `webserver` role, and hence the playbook tasks will be ensured for those hosts.
 
-First of all we wait for the instances to come up. This way we can run the
-playbook straight after provisioning (in script for instance) instead of
-waiting an unknown number of seconds before the instances is available and
+First of all, we wait for the instances to come up. This way we can run the
+playbook straight after provisioning (in a script for instance) instead of
+waiting an unknown number of seconds before the instances are available and
 ready to be configured by Ansible over ssh. We set `gather_facts: no` to
 prevent playbook failure before instances are available, then we use `setup:`
-in it's own task after we waited for instances to be available.  
+in its own task after we waited for instances to be available.  
 
-The two next tasks is for installing the Nginx package, and create an
+The two next tasks is for installing the Nginx package and create an
 `index.html` with a welcome message that inserts the hostname of each instance
 respectively.
+
+### A set of wireguard clients using an exit gateway
+
+In this example, we show how to combine static and dynamic inventory to bridge
+group names expected by an Ansible role with group names provided by the
+OpenStack metadata role in the Terraform state.
+
+The practical upshot of the example is also to show an automated setup of
+Wireguard on a set of clients to route their traffic through a gateway. 
+This can be useful in case clients need to access an external service with a
+stable source address, for example, if that external service uses IP-based ACLs.
+
+```
+terraform {
+  required_version = ">= 0.14.0"
+  required_providers {
+    openstack = {
+      source  = "terraform-provider-openstack/openstack"
+    }
+  }
+}
+
+# Create a keypair from a public key.
+# An openstack keypair contains only the public key. Thus a misleading name for it.
+resource "openstack_compute_keypair_v2" "skp" {
+  name       = "hello-pubkey"
+  public_key = "${chomp(file("~/.ssh/id_rsa.pub"))}"
+}
+
+module interconnect {
+   source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
+   name = "interconnect"
+   delete_default_rules = true
+   description = "For interconnecting servers with full network access between members"
+   rules = {
+     ingress = {
+       direction       = "ingress"
+       remote_group_id = "self"
+     }
+     egress = {
+       direction       = "egress"
+       remote_group_id = "self"
+     }
+  }
+}
+
+module ingress {
+   source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
+   name = "ingress"
+   delete_default_rules = true
+   description = "For for ssh access from the world, and egress from nodes"
+   rules = {
+     ssh = {
+       direction   = "ingress"
+       ip_protocol = "tcp"
+       to_port     = "22"
+       from_port   = "22"
+       ethertype   = "IPv4"
+       cidr        = "0.0.0.0/0"
+     }
+  }
+}
+
+module my_gw {
+   source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
+   name            = "wireguard-gw.example.com"
+   image           = "ubuntu-20.04"
+   network         = "public"
+   security_groups = [ "default", module.interconnect.name, module.ingress.name ]
+   role            = "wg_gw"
+   wg_ip           = "192.168.45.1"
+   key_pair_name   = openstack_compute_keypair_v2.skp.name
+}
+
+module my_clients {
+   source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
+   count           = 2
+   name            = "wireguard-client-${count.index+1}.example.com"
+   image           = "ubuntu-20.04"
+   network         = "public"
+   security_groups = [ "default", module.interconnect.name, module.ingress.name ]
+   role            = "wg_client"
+   wg_ip           = cidrhost("192.168.45.0/24",count.index + 2)
+   key_pair_name   = openstack_compute_keypair_v2.skp.name
+}
+```
+Here we declare a key pair (public key), two security groups, a Wireguard
+gateway instance, and a set of 2 Wireguard client instances. The `ingress`
+security group allows access from the world on IPv4 to port 22/tcp (ssh), the
+`interconnect` security group ensures full IPv4 connectivity between all member
+instances of the group. Both the gateway instance and the set of client
+instances is included in both those security groups, also they are included in
+the pre-existing default security group to allow egress traffic to the world.
+
+We also added a new parameter to the Safespring compute instance module, namely
+the `wg_ip` parameter. The purpose of this parameter is to allocate the
+Wireguard overlay IP plan as metadata when creating the instances. Later we'll
+see how this metadata can be found and reused as variables inside the Ansible
+inventory, thus completely avoiding any manual specification of config. 
+
+We assign the Wireguard IP address of the gateway instance to the first address
+in the range `192.168.45.0/24`, and then we assign the client's addresses to
+the second, third, and so on by utilizing the function
+`cidrhost("192.168.45.0/24",count.index + 2)`. The count index starts on 0 and
+docs for the Terraform `cidrhost()` function can be found in the [Terraform
+docs][tfdocs]
+
+And now over to Ansible. We created an inventory directory with the following contents:
+```
+$ ls -l inventory
+total 4
+-rw-rw-r-- 1 jarle jarle 241 May 25 13:36 hosts
+lrwxrwxrwx 1 jarle jarle  22 May 25 13:32 _terraform.py -> ../../ati/terraform.py
+```
+
+The file `_terraform.py` is a symlink to the dynamic inventory script. The
+reason it starts with an underscore is that the stuff that is defined in the
+static inventory (the `hosts ` file) refers to stuff produced by the dynamic
+inventory. Files in the inventory directory are processed in alphabetical order,
+thus the dynamic inventory must be processed before the static inventory
+otherwise, the referenced child groups in the  static inventory do
+not yet exists when it is processed.
+
+The content of the `hosts` file:
+```
+[wireguard_gateway]
+[wireguard_gateway:children]
+os_metadata_role=wg_gw
+
+[wireguard_gateway:vars]
+wireguard_forward_interface=ens3
+wireguard_connect_interface=ens3
+
+[wireguard_clients]
+[wireguard_clients:children]
+os_metadata_role=wg_client
+```
+
+So here we define the host groups that the Wireguard role expects, namely
+`wireguard_gateway` and `wireguard_clients` and populate them with the children
+from the respective groups from the dynamic inventory, namely
+`os_metadata_role=wg_gw` and `os_metadata_role=wg_client`. 
+Also we define the static variables `wireguard_forward_interface` and
+`wireguard_connect_interface` 
+
+The playbook looks like this: 
+```
+- hosts: wireguard_gateway
+  become: yes
+  remote_user: ubuntu
+  vars:
+    wireguard_address: "{{metadata.wg_ip}}"
+  tasks:
+    - include_role:
+        name: ansible-role-wireguard
+
+- hosts: wireguard_clients
+  become: yes
+  remote_user: ubuntu
+  vars:
+    wireguard_address: "{{metadata.wg_ip}}"
+  tasks:
+    - include_role:
+        name: ansible-role-wireguard
+```
+
+
+First, we run a play applying the Wireguard role to the Wireguard gateway and
+then we run another play applying the same role to Wireguard clients. This is
+because the clients require information that was created by the play for the
+gateway. The population of the host variable `wireguard_address` expected by the
+role from the value of `{{metadata.wg_ip}}` which comes from the dynamic
+inventory script and points back at the `wg_ip` that was defined in Terraform.
+
+Then we run the playbook with the mixed static and dynamic inventory:
+
+```
+ansible-playbook -i inventory wg.yml
+```
+
+This will install Wireguard, and configure clients to route all traffic via the
+Wireguard gateway, over the Wireguard encrupted overlay network. Like so:
+
+```
+$ openstack server list |grep wire
+| 666bc025-3c86-4bc8-9278-66600a49f522 | wireguard-client-2.example.com | ACTIVE | public=185.189.29.84, 2a0a:bcc0:40::40c  | ubuntu-20.04                   | l2.c2r4.100 |
+| 9c260891-954b-418c-9be5-aff2b8482164 | wireguard-gw.example.com       | ACTIVE | public=185.189.28.40, 2a0a:bcc0:40::d3   | ubuntu-20.04                   | l2.c2r4.100 |
+| f3f361c3-19f8-45dd-887e-ca2dd7fa98f2 | wireguard-client-1.example.com | ACTIVE | public=185.189.29.118, 2a0a:bcc0:40::326 | ubuntu-20.04                   | l2.c2r4.100 |
+```
+
+The IP address of the gateway is `185.189.28.40`. If we log in to the clients
+and ask what is our source address as perceived from the Internet.
+```
+$ ssh ubuntu@185.189.29.84
+(..)
+$ curl ifconfig.me
+185.189.28.40
+$ ssh ubuntu@185.189.29.118
+(..)
+$ curl ifconfig.me
+185.189.28.40
+```
+
+Voila!
 
 
 [ati]: https://github.com/safespring-community/utilities/blob/main/ati/terraform.py
