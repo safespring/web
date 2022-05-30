@@ -13,13 +13,17 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-This is part three in the series about Safespring's Terraform modules. This blog 
-post will look at how we can integrate Ansible and Terraform in order to configure 
-services on top of the instances provisioned with Terraform, using Terraform state as 
+This is part three in the series about Safespring's Terraform modules. This blog
+post will look at how we can integrate Ansible and Terraform in order to configure
+services on top of the instances provisioned with Terraform, using Terraform state as
 ansible inventory.
 {{< /ingress >}}
 
-## Prerequisites 
+{{% note "Read more" %}}
+Here you can read [part one](/blogg/2022-01-terraform-modules), [part two](/blogg/2022-03-terraform-module) and part three (this post).
+{{% /note %}}
+
+## Prerequisites
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
@@ -27,12 +31,12 @@ verify their integrity.
 
 Unless otherwise explained, all the examples presuppose that you put the code
 in a `.tf` in a separate directory and run `plan`, `init`, `apply` and `destroy`
-from within that directory. `main.tf` is mostly used as a convention for the file
+from within that directory. `main.tf` is mainly used as a convention for the file
 name, but you can name it whatever you like as long as it ends in `.tf`
 
 There is also the official [Terraform documentation][tfdocs]
 
-A basic understanding of Ansible playbooks and inventories is also necessary. 
+A basic understanding of Ansible playbooks and inventories is also necessary.
 
 ## Terraform introduction
 
@@ -79,56 +83,56 @@ and best practices to understand the nature of the tool before using it for
 the important stuff.{{< /disclaimer >}}
 
 ## Ansible introduction
-[Ansible][ansible] is a suite of of tools for orchestration an configuration management
-mainly by using so called playbooks. Playbooks is written in YAML and describes
+[Ansible][ansible] is a suite of tools for orchestration and configuration management
+mainly by using so-called playbooks. Playbooks are written in YAML and describes the
 desired state for operating system properties like files, services, filesystems
-and so on. It is mainly used for configuring Linux based operating systems over the
-ssh protocal, however it can also be used for configuring windows operating
-systems. In this post we will show how to use Ansible to configure services on
-a Linux based operating system (Ubuntu 20.04) 
+and so on. It is mainly used for configuring Linux-based operating systems over the
+ssh protocol, however, it can also be used for configuring windows operating
+systems. In this post, we will show how to use Ansible to configure services on
+a Linux based operating system (Ubuntu 20.04)
 
-Ansible inventories are lists of hosts, groups of hosts and variables for those
-hosts and groups. Hosts and groups ae used to tell Ansoble where a certain
-desired state (task) is applocable.  When working with static hosts in a
-datacenter, inventories is often also static textfiles which is maintained
-manually or semi-manually.  However, inventories can also be dynamic, i.e.
-provided by scripts. 
+Ansible inventories are lists of hosts, groups of hosts, and variables for those
+hosts and groups. Hosts and groups are used to tell Ansible where a certain
+desired state (task) is applicable. When working with static hosts in a
+data center, inventories are often also static textfiles which is maintained
+manually or semi-manually. However, inventories can also be dynamic, i.e.
+provided by scripts.
 
-When working with Openstack it is possible to use inventory scripts that
-queries the Openstack API directly and produces a complete inventory of all
-instances with metadata all the  group memberships and so on, but often times
-these scripts takes a long time to run and they generally need to run every
-time you run a plabook, thus making playbook runs orders of magnitude more
-timeconsuming than static inventories. Also they can put a heavy load on the
-Openstack APIs if the inventory is frequently updated.   
+When working with OpenStack, it is possible to use inventory scripts that
+queries the OpenStack API directly and produces a complete inventory of all
+instances with metadata all the  group memberships and so on, but oftentimes
+these scripts take a long time to run, and they generally need to run every
+time you run a playbook, thus making playbook runs orders of magnitude more
+timeconsuming than static inventories. Also, they can put a heavy load on the
+OpenStack APIs if the inventory is frequently updated.   
 
 ## Terraform and Ansible
-It must be "Terrible" then ;-) ? Actually it is not terrible at all. 
+It must be "Terrible" then ;-) ? Actually, it is not terrible at all.
 
-Terraform keeps it's own account of all objects that it provisions together with
-its matadata. This is called "state" and it is stored in the local directory
+Terraform keeps its own account of all objects it provisions together with
+its metadata. This is called "state," and it is stored in the local directory
 where Terraform is run by default, in a file called `terraform.tfstate`. The
-previous state version is backed up in the file `terraform.tfstate.backup`. 
+previous state version is backed up in the file `terraform.tfstate.backup`.
 
-This means that most things you can query the API for, about your Terraform
-provided objects in OpenStack, will also be present in the local Terraform
+This means that most things you can query the API for about your Terraform
+provided objects in OpenStack will also be present in the local Terraform
 state file. Hence, if we use a script that queries the local Terraform state
-file we will benefit from very fast performance and no resource consumption in
-the OpenStack API. This is exactly what we'll showcase here. There is several
+file we will benefit from the high-speed performance and no resource consumption in
+the OpenStack API. This is precisely what we'll showcase here. There is several
 scripts/programs available for this purpose (duckduckgo.com is your friend),
-but we'll use a simple [python script][ati] originally developed by Cisco
-Systems. 
+but we'll use a simple [python script][ati] developed initially by Cisco
+Systems.
 
 In order to use it, just copy or symlink the script somewhere convenient and
-use the path of it as the `--inventory` option to `ansible-*` commands. If you
+use the path as the `--inventory` option to `ansible-*` commands. If you
 put the script in a directory, and use the directory name as `--inventory`, you
 can also combine information from the dynamic inventory provided by the script
 with static inventory files that further enrich or transform the dynamic
-inventory.  For instance if you use an Ansible role or playbook that requires a
-specific host group name you can use a static inventory to define a new host
+inventory. For instance, if you use an Ansible role or playbook that requires a
+specific host group name, you can use a static inventory to define a new host
 group that you choose the name of and specify a hos group  from the dynamic
 inventory as `children` to the group you created, and then use that group with
-your role or playbook. We'll look at that in a later example. 
+your role or playbook. We'll look at that in a later example.
 
 ## Examples
 We'll use the code [examples][sftfexamples] in the Terraform module [git
@@ -209,16 +213,16 @@ module my_sf_instances {
 }
 ```
 First, we create two instances on the `public` network, from flavor
-`l2.c2r4.100` and `ubuntu-20.04` image. Notably, we specify `role=webserver`.
+`l2.c2r4.100` and the `ubuntu-20.04` image. Notably, we specify `role=webserver`.
 When we run `terraform apply` on this, the instances, key pairs, and security
 groups are created. There is not yet a webserver installed nor configured. That
 is what we'll use Ansible for.
 
-In order to reuse the role we specified in the Terraform code for instances we
-need an inventory script that reads Terraform state file(s) and produce
-invontory on a format that ansible can consume. The [Ansible Terraform
+In order to reuse the role we specified in the Terraform code for instances, we
+need an inventory script that reads Terraform state file(s) and produces
+an inventory in a format that Ansible can consume. The [Ansible Terraform
 Inventory script][ati] will be used for this purpose. We copy the script to a
-directory named `ati` and run this playbook. 
+directory named `ati` and run this playbook.
 
 ```
 ansible-playbook -i ati example.yml
@@ -250,29 +254,29 @@ The contents of `example.yml`
 
 Notice `hosts: os_metadata_role=webserver`. This is where we call upon the role
 we specified in the Terraform code. The inventory script will find the correct
-instances, and their ip-addresses, belonging to the group that has the
+instances, and their IP-addresses, belonging to the group that has the
 `webserver` role, and hence the playbook tasks will be ensured for those hosts.
 
-First of all, we wait for the instances to come up. This way we can run the
-playbook straight after provisioning (in a script for instance) instead of
+First of all, we wait for the instances to come up. This way, we can run the
+playbook straight after provisioning (in a script, for instance) instead of
 waiting an unknown number of seconds before the instances are available and
 ready to be configured by Ansible over ssh. We set `gather_facts: no` to
 prevent playbook failure before instances are available, then we use `setup:`
 in its own task after we waited for instances to be available.  
 
-The two next tasks is for installing the Nginx package and create an
+The two following tasks are to install the Nginx package and to create an
 `index.html` with a welcome message that inserts the hostname of each instance
 respectively.
 
-### A set of wireguard clients using an exit gateway
+### A set of Wireguard clients using an exit gateway
 
 In this example, we show how to combine static and dynamic inventory to bridge
 group names expected by an Ansible role with group names provided by the
 OpenStack metadata role in the Terraform state.
 
 The practical upshot of the example is also to show an automated setup of
-Wireguard on a set of clients to route their traffic through a gateway. 
-This can be useful in case clients need to access an external service with a
+Wireguard on a set of clients to route their traffic through a gateway.
+This can be useful if clients need to access an external service with a
 stable source address, for example, if that external service uses IP-based ACLs.
 
 ```
@@ -354,14 +358,14 @@ gateway instance, and a set of 2 Wireguard client instances. The `ingress`
 security group allows access from the world on IPv4 to port 22/tcp (ssh), the
 `interconnect` security group ensures full IPv4 connectivity between all member
 instances of the group. Both the gateway instance and the set of client
-instances is included in both those security groups, also they are included in
+instances are included in both those security groups, also they are included in
 the pre-existing default security group to allow egress traffic to the world.
 
 We also added a new parameter to the Safespring compute instance module, namely
 the `wg_ip` parameter. The purpose of this parameter is to allocate the
-Wireguard overlay IP plan as metadata when creating the instances. Later we'll
+Wireguard overlay IP plan as metadata when creating the instances. Later, we'll
 see how this metadata can be found and reused as variables inside the Ansible
-inventory, thus completely avoiding any manual specification of config. 
+inventory, thus avoiding any manual config specification.
 
 We assign the Wireguard IP address of the gateway instance to the first address
 in the range `192.168.45.0/24`, and then we assign the client's addresses to
@@ -404,11 +408,11 @@ os_metadata_role=wg_client
 So here we define the host groups that the Wireguard role expects, namely
 `wireguard_gateway` and `wireguard_clients` and populate them with the children
 from the respective groups from the dynamic inventory, namely
-`os_metadata_role=wg_gw` and `os_metadata_role=wg_client`. 
+`os_metadata_role=wg_gw` and `os_metadata_role=wg_client`.
 Also we define the static variables `wireguard_forward_interface` and
-`wireguard_connect_interface` 
+`wireguard_connect_interface`
 
-The playbook looks like this: 
+The playbook looks like this:
 ```
 - hosts: wireguard_gateway
   become: yes
@@ -433,7 +437,7 @@ The playbook looks like this:
 First, we run a play applying the Wireguard role to the Wireguard gateway and
 then we run another play applying the same role to Wireguard clients. This is
 because the clients require information that was created by the play for the
-gateway. The population of the host variable `wireguard_address` expected by the
+gateway. The population of the host variable `wireguard_address` is expected by the
 role from the value of `{{metadata.wg_ip}}` which comes from the dynamic
 inventory script and points back at the `wg_ip` that was defined in Terraform.
 
@@ -443,8 +447,8 @@ Then we run the playbook with the mixed static and dynamic inventory:
 ansible-playbook -i inventory wg.yml
 ```
 
-This will install Wireguard, and configure clients to route all traffic via the
-Wireguard gateway, over the Wireguard encrupted overlay network. Like so:
+This will install Wireguard and configure clients to route all traffic via the
+Wireguard gateway over the Wireguard encrypted overlay network. Like so:
 
 ```
 $ openstack server list |grep wire
@@ -453,8 +457,8 @@ $ openstack server list |grep wire
 | f3f361c3-19f8-45dd-887e-ca2dd7fa98f2 | wireguard-client-1.example.com | ACTIVE | public=185.189.29.118, 2a0a:bcc0:40::326 | ubuntu-20.04                   | l2.c2r4.100 |
 ```
 
-The IP address of the gateway is `185.189.28.40`. If we log in to the clients
-and ask what is our source address as perceived from the Internet.
+The IP-address of the gateway is `185.189.28.40`. If we log in to the clients
+and ask what is our source-address as perceived from the Internet.
 ```
 $ ssh ubuntu@185.189.29.84
 (..)
