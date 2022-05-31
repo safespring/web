@@ -100,11 +100,11 @@ provided by scripts.
 
 When working with OpenStack, it is possible to use inventory scripts that
 queries the OpenStack API directly and produces a complete inventory of all
-instances with metadata all the  group memberships and so on, but oftentimes
+instances with metadata, all the  group memberships and so on, but oftentimes
 these scripts take a long time to run, and they generally need to run every
 time you run a playbook, thus making playbook runs orders of magnitude more
-timeconsuming than static inventories. Also, they can put a heavy load on the
-OpenStack APIs if the inventory is frequently updated.   
+time consuming than static inventories. Also, they can put a heavy load on the
+OpenStack APIs if the inventory is frequently queried.
 
 ## Terraform and Ansible
 It must be "Terrible" then ;-) ? Actually, it is not terrible at all.
@@ -114,12 +114,12 @@ its metadata. This is called "state," and it is stored in the local directory
 where Terraform is run by default, in a file called `terraform.tfstate`. The
 previous state version is backed up in the file `terraform.tfstate.backup`.
 
-This means that most things you can query the API for about your Terraform
-provided objects in OpenStack will also be present in the local Terraform
+This means that most things you can query the API for, about your Terraform
+provided objects in OpenStack, will also be present in the local Terraform
 state file. Hence, if we use a script that queries the local Terraform state
 file we will benefit from the high-speed performance and no resource consumption in
 the OpenStack API. This is precisely what we'll showcase here. There is several
-scripts/programs available for this purpose (duckduckgo.com is your friend),
+scripts/programs available for this purpose (https://duckduckgo.com is your friend),
 but we'll use a simple [python script][ati] developed initially by Cisco
 Systems.
 
@@ -130,7 +130,7 @@ can also combine information from the dynamic inventory provided by the script
 with static inventory files that further enrich or transform the dynamic
 inventory. For instance, if you use an Ansible role or playbook that requires a
 specific host group name, you can use a static inventory to define a new host
-group that you choose the name of and specify a hos group  from the dynamic
+group that you choose the name of and specify a host group  from the dynamic
 inventory as `children` to the group you created, and then use that group with
 your role or playbook. We'll look at that in a later example.
 
