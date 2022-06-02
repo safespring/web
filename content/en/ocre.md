@@ -54,4 +54,4 @@ Safespring has offices in Sweden and Norway, with headquarters in Stockholm, Swe
 The easiest way is to contact us by phone or mail. If you have general questions, you can call us or send us an email at our info address, but of course, you are also welcome to contact any of our employees directly.
 
 {{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CEO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
-{{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}
+{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}

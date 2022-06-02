@@ -23,6 +23,6 @@ Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har gener
 <div class="flexcontainer-shortcode">
 {{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CEO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
 {{< contact picture="/img/kontakt/mikael-schutt.jpg" title="Chairman" name="Mikael Schütt" phone="+46730935070" email="mikael.schutt@safespring.se" >}}
-{{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}
+{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}
 {{< contact picture="/img/kontakt/marcus-boberg.jpg" title="CMO" name="Marcus Boberg" phone="+46721864701‬" email="marcus.boberg@safespring.se" >}}
 </div>
