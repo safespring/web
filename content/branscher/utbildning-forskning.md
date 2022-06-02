@@ -29,4 +29,4 @@ Under detta första molnfinansieringssamtal syftar OCRE till att finansiera kons
 
 {{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
 
-{{< contact picture="/img/kontakt/johan-harrysson.jpg" title="CCO" name="Johan Harrysson" phone="+46708375566‬" email="johan.harrysson@safespring.se" >}}
+{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}
