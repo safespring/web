@@ -32,9 +32,9 @@ verify their integrity.
 Unless otherwise explained, all the examples presuppose that you put the code
 in a `.tf` in a separate directory and run `plan`, `init`, `apply` and `destroy`
 from within that directory. `main.tf` is mainly used as a convention for the file
-name, but you can name it whatever you like as long as it ends in `.tf`
+name, but you can name it whatever you like as long as it ends in `.tf`.
 
-There is also the official [Terraform documentation][tfdocs]
+There is also the official [Terraform documentation][tfdocs].
 
 A basic understanding of Ansible playbooks and inventories is also necessary.
 
