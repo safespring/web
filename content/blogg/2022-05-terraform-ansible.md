@@ -16,7 +16,7 @@ toc: "Table of contents"
 This is part three in the series about Safespring's Terraform modules. This blog
 post will look at how we can integrate Ansible and Terraform in order to configure
 services on top of the instances provisioned with Terraform, using Terraform state as
-ansible inventory.
+Ansible inventory.
 {{< /ingress >}}
 
 {{% note "Read more" %}}
@@ -27,7 +27,7 @@ Here you can read [part one](/blogg/2022-01-terraform-modules), [part two](/blog
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
-verify their integrity.  
+verify their integrity.
 
 Unless otherwise explained, all the examples presuppose that you put the code
 in a `.tf` in a separate directory and run `plan`, `init`, `apply` and `destroy`
@@ -84,7 +84,7 @@ the important stuff.{{< /disclaimer >}}
 
 ## Ansible introduction
 [Ansible][ansible] is a suite of tools for orchestration and configuration management
-mainly by using so-called playbooks. Playbooks are written in YAML and describes the
+mainly by using so-called playbooks. Playbooks are written in YAML and describe the
 desired state for operating system properties like files, services, filesystems
 and so on. It is mainly used for configuring Linux-based operating systems over the
 ssh protocol, however, it can also be used for configuring windows operating
@@ -94,7 +94,7 @@ a Linux based operating system (Ubuntu 20.04)
 Ansible inventories are lists of hosts, groups of hosts, and variables for those
 hosts and groups. Hosts and groups are used to tell Ansible where a certain
 desired state (task) is applicable. When working with static hosts in a
-data center, inventories are often also static textfiles which is maintained
+data center, inventories are often also static textfiles maintained
 manually or semi-manually. However, inventories can also be dynamic, i.e.
 provided by scripts.
 
@@ -103,7 +103,7 @@ queries the OpenStack API directly and produces a complete inventory of all
 instances with metadata, all the  group memberships and so on, but oftentimes
 these scripts take a long time to run, and they generally need to run every
 time you run a playbook, thus making playbook runs orders of magnitude more
-time consuming than static inventories. Also, they can put a heavy load on the
+time-consuming than static inventories. Also, they can put a heavy load on the
 OpenStack APIs if the inventory is frequently queried.
 
 ## Terraform and Ansible
@@ -115,7 +115,7 @@ where Terraform is run by default, in a file called `terraform.tfstate`. The
 previous state version is backed up in the file `terraform.tfstate.backup`.
 
 This means that most things you can query the API for, about your Terraform
-provided objects in OpenStack, will also be present in the local Terraform
+provided objects in OpenStack will also be present in the local Terraform
 state file. Hence, if we use a script that queries the local Terraform state
 file we will benefit from the high-speed performance and no resource consumption in
 the OpenStack API. This is precisely what we'll showcase here. There is several
@@ -123,7 +123,7 @@ scripts/programs available for this purpose (https://duckduckgo.com is your frie
 but we'll use a simple [python script][ati] developed initially by Cisco
 Systems.
 
-In order to use it, just copy or symlink the script somewhere convenient and
+In order to use it, copy or symlink the script somewhere convenient and
 use the path as the `--inventory` option to `ansible-*` commands. If you
 put the script in a directory, and use the directory name as `--inventory`, you
 can also combine information from the dynamic inventory provided by the script
@@ -458,7 +458,7 @@ $ openstack server list |grep wire
 ```
 
 The IP-address of the gateway is `185.189.28.40`. If we log in to the clients
-and ask what is our source-address as perceived from the Internet.
+and ask what is our source address as perceived from the Internet.
 ```
 $ ssh ubuntu@185.189.29.84
 (..)
