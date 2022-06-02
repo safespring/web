@@ -16,7 +16,13 @@ toc: "Table of contents"
 In this blog post, we'll showcase just how easy it is by the example of our community Terraform modules.
 {{< /ingress >}}
 
+
+
 It has never been easier to provision compute and block storage resources in Safespring's infrastructure platform. Modules can be sourced directly from GitHub using a minimum of Terraform code.
+
+{{% note "Read more" %}}
+Here you can read part one (this post), [part two](/blogg/2022-03-terraform-module) and [part three](/blogg/2022-05-terraform-ansible)
+{{% /note %}}
 
 ## Terraform introduction
 Terraform has become the de-facto industry standard for «Infrastructure As Code - IAC». It is written in Golang, is open source, and you can download it as a single executable file from the [Terraform download page][tfdl].

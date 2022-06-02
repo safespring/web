@@ -13,17 +13,21 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-This is part two in the series about Safespring's Terraform modules. This blog 
-post will look at the new and more general Safespring modules for compute 
+This is part two in the series about Safespring's Terraform modules. This blog
+post will look at the new and more general Safespring modules for compute
 instances and security groups.{{< /ingress >}}
 
 We will also look at how we can use it to provision sets of instances
 in different configurations allowing only the necessary connections using
 security groups. The next post will be about using Ansible and
-from terraform/OpenStack to configure services on the provisioned 
+from terraform/OpenStack to configure services on the provisioned
 instances.
 
-## Prerequisites 
+{{% note "Read more" %}}
+Here you can read [part one](/blogg/2022-01-terraform-modules), part two (this post) and [part three](/blogg/2022-05-terraform-ansible)
+{{% /note %}}
+
+## Prerequisites
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
@@ -165,7 +169,7 @@ same name). Applying this will yield 3 instances named
 explained in the first example, so they are left out here. As in the first
 example, default values will be used where none is given, so all 3 instances
 will have the same properties, and these properties are the same default values
-as in the first example. 
+as in the first example.
 
 ### [Ex3][ex3]: Security group(s) and keypair as part of the code
 [ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
@@ -369,14 +373,14 @@ create your own security groups that you attach instances to and use the
 «delete_default_rules = true» parameter to the «v2-compute-security-group»
 module.{{< /note >}}
 
-### [Ex5][ex5]: Combining count and map for instances and map for disks 
+### [Ex5][ex5]: Combining count and map for instances and map for disks
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 
 It would be nice if you could combine iteration with `for_each` (map) and count,
 right? That way you could say: «Give me 10 web servers with no datadisk on the
 public network with flavor X, and 2 backend servers on the default network with a
 100GB datadisk». Well, if you try to combine them in the same call to
-`v2-compute-instance` you will get an error saying: 
+`v2-compute-instance` you will get an error saying:
 
 ```
 The "count" and "for_each" meta-arguments are mutually-exclusive, only one
@@ -490,9 +494,9 @@ module my_sf_instances {
 }
 ```
 
-So first we created a module that used our `v2-compute-instance` as the source 
+So first we created a module that used our `v2-compute-instance` as the source
 with the necessary variable definitions for the values, we intend to override the
-defaults for and the `i_count` parameter which defines the count value for each. 
+defaults for and the `i_count` parameter which defines the count value for each.
 
 Then we call our local module, that now supports an `i_count` parameter, and
 iterate over a map that has all the necessary default overrides for each set
@@ -516,7 +520,7 @@ instance that will create and attach a volume of type `fast` and size 5GB.
 The [try][tftry] is used to give the local module the mandatory fallback
 parameters when different map entries need to override different sets of
 parameters in the `v2_compute_instance`. The local module must have variables
-for the sum/union of all parameters to be specified. 
+for the sum/union of all parameters to be specified.
 
 [tftry]: https://www.terraform.io/language/functions/try
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
