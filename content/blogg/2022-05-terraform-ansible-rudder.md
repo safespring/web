@@ -143,15 +143,15 @@ of nodes/agent in a central place. Because Rudder i built on the highly
 efficient [Cfengine core][cfcore] it consumes very little resources, is
 blazingly fast and scales from a handful of nodes to many thousands.
 
-You can choose to purchase a Rudder subscription support plan from
-Normation, the company behind Rudder, in order to get predictability for
-product development and maintenance and different support SLAs. Or you can
-choose to install and support it yourself by means of the friendly souls at
-Normation et. al that provides softwarepackages, Ansible collection etc. for
+You can choose to purchase a Rudder subscription support plan from Normation,
+the company behind Rudder, in order to get predictability for product
+development and maintenance and different support SLAs. Or you can choose to
+install and support it yourself by means of the friendly souls at Normation et.
+al that provides ready to use software packages, Ansible collection etc. for
 the most common platforms.
 
 The leading theme through this blog series is how to glue together existing
-technologies to achieve a higher goal, previously using the Ansible Terraform
+technologies to achieve a higher goal, previously, using the Ansible Terraform
 Inventory (ATI) script to bridge Terraform and Ansible. This time we'll take it
 one step further and use Ansible with ATI together with an [Ansible
 collection][rudder-ansible] maintained by Normation for installing Rudder
@@ -165,8 +165,120 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 
 ### Installing a rudder server and bootstrapping agents to that server
 
+Terraform code:
 ```
+terraform {
+  required_version = ">= 0.14.0"
+  required_providers {
+    openstack = {
+      source  = "terraform-provider-openstack/openstack"
+    }
+  }
+}
+
+# Create a keypair from a public key.
+# An openstack keypair contains only the public key. Thus a misleading name for it.
+resource "openstack_compute_keypair_v2" "skp" {
+  name       = "hello-pubkey"
+  public_key = "${chomp(file("~/.ssh/id_rsa.pub"))}"
+}
+
+module interconnect {
+   source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
+   name = "interconnect"
+   delete_default_rules = true
+   description = "For interconnecting servers with full network access between members"
+   rules = {
+     ingress = {
+       direction       = "ingress"
+       remote_group_id = "self"
+     }
+     egress = {
+       direction       = "egress"
+       remote_group_id = "self"
+     }
+  }
+}
+
+module ingress {
+   source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
+   name = "ingress"
+   delete_default_rules = true
+   description = "For for ssh access from the world, and egress from nodes"
+   rules = {
+     http = {
+       direction   = "ingress"
+       ip_protocol = "tcp"
+       to_port     = "80"
+       from_port   = "80"
+       ethertype   = "IPv4"
+       cidr        = "0.0.0.0/0"
+     }
+     https = {
+       direction   = "ingress"
+       ip_protocol = "tcp"
+       to_port     = "443"
+       from_port   = "443"
+       ethertype   = "IPv4"
+       cidr        = "0.0.0.0/0"
+     }
+     ssh = {
+       direction   = "ingress"
+       ip_protocol = "tcp"
+       to_port     = "22"
+       from_port   = "22"
+       ethertype   = "IPv4"
+       cidr        = "0.0.0.0/0"
+     }
+  }
+}
+
+module my_gw {
+   source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
+   name            = "rudder-server.example.com"
+   image           = "ubuntu-20.04"
+   network         = "public"
+   security_groups = [ "default", module.interconnect.name, module.ingress.name ]
+   role            = "rudder_server"
+   key_pair_name   = openstack_compute_keypair_v2.skp.name
+}
+
+module my_clients {
+   source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
+   count           = 2
+   name            = "rudder-client-${count.index+1}.example.com"
+   image           = "ubuntu-20.04"
+   network         = "default"
+   security_groups = [ "default", module.interconnect.name, module.ingress.name ]
+   role            = "rudder_client"
+   key_pair_name   = openstack_compute_keypair_v2.skp.name
+}
 ```
+
+Here we create an instance that will be configured as Rudder server using the
+v2-compute-instance module with `role=rudder_server`. Then we create 2 rudder
+clients/agents using the v2-compute-instance with `count=2` and
+`role=rudder_client` and attach it to the default network. The default network
+is a private (RFC1918) network where instances can reach the Internet through
+NAT via the compute host, for things like package installs etc. However,
+instances on this network can not be reached directly *from* the Internet,
+obviously.
+
+We create two security groups: one «interconnect» security group where all
+members in it have full connectivity to each other, and one ingress security
+group that allows incoming (ingress) connections on ports `80/tcp` (http),
+`443/tcp` (https) and `22/tcp` (ssh) from the world. All instances is member of
+the interconnect security group so agents can talk freely with the server, and
+the server is also member of the ingress security group so that it can be
+reachable as a management host both by means of the Rudder web gui, and API,
+but also as a bastion host for logging in with ssh and jump further to the
+clients wich is provisioned on a RFC1918 network not directly reachable from
+the Internet. Lastly, we include the pre existing `default` security group to
+allow outbound (egress) traffic from all instances.
+
+{{% note "Safespring network" %}}
+None of the instances have more than one interface. This is intentional. If you don't know why, then please read the post on [The Safespring network model][netblog]
+{{% /note %}}
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
 [cfcore]: https://github.com/cfengine/core
