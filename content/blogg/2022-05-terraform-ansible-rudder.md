@@ -1,9 +1,9 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
 date: "2022-06-15"
-intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only." 
+intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only."
 
-draft: false
+draft: true
 tags: ["English"]
 showthedate: true
 card: ""
@@ -18,7 +18,7 @@ This is part four, and probably the last, in the series about Safespring's
 Terraform modules. This blog post will look at how we can build even further on
 previously demonstrated concepts to creates sets of servers that is
 continuously monitored and kept in compliance using Rudder, a state of the art
-configuration management tool 
+configuration management tool
 {{< /ingress >}}
 
 {{% note "Read more" %}}
