@@ -3,7 +3,7 @@ title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
 date: "2022-06-15"
 intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only." 
 
-draft: true
+draft: false
 tags: ["English"]
 showthedate: true
 card: ""
@@ -331,6 +331,94 @@ groups directly in the Ansible playbook, `os_metadata_role=rudder_server` and
 `policy_server` parameter of the `rudder_agent` role  as IP address of the
 server from the Ansible inventory of that instance (which in the end is
 provided by the ATI dynamic inventory script).
+
+## Using Rudder to manage desired state
+
+This is a big topic and we'll just go through basics on how to get started and
+illustrate the power of a tool like Rudder. 
+
+When the Ansible playbook is run, and the roles in it applied, we end up with a
+Rudder server on the `rudder-server` instance, and Rudder agents on the
+`rudder-client` instances. The Rudder agents is confugured to use the IP
+address of the Rudder server as their policy server through variable
+`policy_server:` in the rudder_agent Ansible role. The Rudder server is started
+with a self signed certificate for the web GUI and API. These must be replaced
+with valid certificates before taking the Rudder server into production,
+obviously. Here we'll just focus on a minimal proof of concept with no
+production data so we choose to use the self signed certifcate and ignore
+warnings for it when interacting with the Rudder server.
+
+The Rudder server needs an admin user in order to set itself up for usage. This
+is done by logging in to the Rudder server instance and run the following
+command:
+
+```
+root@rudder-server:~# rudder server create-user -u  admin
+New password:
+Re-type new password:
+User 'admin' added, restarting the Rudder server
+root@rudder-server:~#
+```
+
+After this you can log in to the web GUI of the Rudder server on
+`https://<ip-address-of-rudder-server-instance>` with the username and
+password just created with the CLI. From here you can choose to either work in
+the web GUI (which is quite good and user friendly) or you can work through the
+API or the `rudder-cli` tool which in turn uses the API. In any case you need a
+token for accessing the API and that can be generated in the GUI under
+"Administration/API accounts". 
+
+The two `rudder-client` instances can now be observed in "Node
+Management/Pending Nodes" in the GUI. That means the two new clients/agents
+need to be acccepted by the policy server in order for the server to manage
+them. You can do this in the web GUI by marking it and press the "accept"
+button. When nodes are accepted they move from the "Pending Nodes" list to the
+"Nodes" list.
+
+If you click on a node in the "Pending Nodes" list, you get some more detail.
+The "Node ID" is a unique ID for each node/agent. You can verify the "Node ID"
+of the pending node by comparing it with the output of the following command on
+the node/agent/client itself. 
+```
+root@rudder-client-1:~# rudder agent info |grep UUID
+               UUID: c9e80279-00d3-4ee3-a7e1-8491955ebd3c
+root@rudder-client-1:~#
+```
+
+Or you can do it with the "rudder-cli" tool through the API like shown under.
+
+Observe the list of pending nodes with `rudder-cli` and `jq`. (There is only
+one node remaining in pending because the other one is already accepted.) 
+
+```
+root@rudder-server:~# rudder-cli node list_pending -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
+bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-server:~# 
+```
+
+Observe the ID of the pending agent on the agent itself
+```
+root@rudder-client-2:~# rudder agent info |grep UUID
+               UUID: bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-client-2:~#
+```
+
+Then accept the the node 
+```
+root@rudder-server:~# rudder-cli node accept bdfbd21c-d46d-403b-9836-06e2d282b704  -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
+bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-server:~#
+```
+
+And then observe that the node have moved to the node list: 
+```
+root@rudder-server:~# rudder-cli node list -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
+root
+c9e80279-00d3-4ee3-a7e1-8491955ebd3c
+bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-server:~#
+```
+
 
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
