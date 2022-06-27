@@ -1,7 +1,7 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
 date: "2022-06-15"
-intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only."
+intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only." 
 
 draft: true
 tags: ["English"]
@@ -18,7 +18,7 @@ This is part four, and probably the last, in the series about Safespring's
 Terraform modules. This blog post will look at how we can build even further on
 previously demonstrated concepts to creates sets of servers that is
 continuously monitored and kept in compliance using Rudder, a state of the art
-configuration management tool
+configuration management tool 
 {{< /ingress >}}
 
 {{% note "Read more" %}}
@@ -139,16 +139,17 @@ your role or playbook. We'll look at that in a later example.
 ## Rudder introduction
 [Rudder][rudder] is an open source configuration and security managament tool.
 It comes with a multi tenant control plane for managing and monitoring groups
-of nodes/agent in a central place. Because Rudder i built on the highly
+of nodes/agents in a central place. Because Rudder i built on the highly
 efficient [Cfengine core][cfcore] it consumes very little resources, is
 blazingly fast and scales from a handful of nodes to many thousands.
 
 You can choose to purchase a Rudder subscription support plan from Normation,
 the company behind Rudder, in order to get predictability for product
-development and maintenance and different support SLAs. Or you can choose to
-install and support it yourself by means of the friendly souls at Normation et.
-al that provides ready to use software packages, Ansible collection etc. for
-the most common platforms.
+development and maintenance and different support SLAs. Normation also offers
+training and consulting regarding Rudder. Or you can choose to install and
+support it yourself by means of the friendly souls at Normation et.  al that
+provides ready to use software packages, Ansible collection etc. for the most
+common platforms.
 
 The leading theme through this blog series is how to glue together existing
 technologies to achieve a higher goal, previously, using the Ansible Terraform
@@ -165,7 +166,9 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 
 ### Installing a rudder server and bootstrapping agents to that server
 
-Terraform code:
+Example in https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-rudder-minimal-poc
+
+**Terraform code**
 ```
 terraform {
   required_version = ">= 0.14.0"
@@ -279,6 +282,56 @@ allow outbound (egress) traffic from all instances.
 {{% note "Safespring network" %}}
 None of the instances have more than one interface. This is intentional. If you don't know why, then please read the post on [The Safespring network model][netblog]
 {{% /note %}}
+
+**Confguration of the Rudder Ansible collection (requirements.yml):**
+```
+collections:
+  - name: https://github.com/Normation/rudder-ansible.git
+    type: git
+    version: master
+```
+
+In order to utilize the rudder-ansible collection we must install it locally.
+This is done by creating the `requirements.yml` as shown above and running:
+```
+ansible-galaxy install -r requirements.yml
+```
+
+**Ansible playbook (configure.yml):**
+```
+---
+
+- name: Install Rudder Server
+  hosts: os_metadata_role=rudder_server
+  become: yes
+  collections:
+    - rudder.rudder
+  tasks:
+    - import_role:
+        name: rudder.rudder.rudder_server
+      vars:
+        server_version: 7.0
+
+- name: Install Rudder agents
+  hosts: os_metadata_role=rudder_client
+  become: yes
+  collections:
+    - rudder.rudder
+  tasks:
+    - import_role:
+        name: rudder.rudder.rudder_agent
+      vars:
+        agent_version: 7.0
+        policy_server: "{{hostvars['rudder-server.example.com']['ansible_default_ipv4']['address']}}"
+```
+
+Here we reuse our previously defined `role` from the Terraform code as host
+groups directly in the Ansible playbook, `os_metadata_role=rudder_server` and
+`os_metadata_role=rudder_client` respectively. Note that we specify the
+`policy_server` parameter of the `rudder_agent` role  as IP address of the
+server from the Ansible inventory of that instance (which in the end is
+provided by the ATI dynamic inventory script).
+
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
 [cfcore]: https://github.com/cfengine/core
