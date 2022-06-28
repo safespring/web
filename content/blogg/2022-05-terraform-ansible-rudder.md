@@ -137,6 +137,42 @@ inventory as `children` to the group you created, and then use that group with
 your role or playbook. We'll look at that in a later example.
 
 ## Rudder introduction
+{{% note "A short history lesson" %}}
+Configuration drift used to be a problem in datcenters a long time before "The
+Cloud" came along. Tools like Cfengine, Chef and Puppet addressed this issue to
+a large extent, by more or less continuously comparing desired state with actual
+state, and then converge the system into desired state by rectifying the
+differences. You can think of configuration drift as mutations and configuration
+management tools like the immune system that recitfy the mutations, thus
+creating stability and resilience from perturbations and security problems.
+I.e. the analogy that servers are like pets that needs to be taken care of over
+their life time, which can be many years.
+
+In the Cloud era there's a new paradigm largely described by the idea of
+immutable infrastructure and that servers are like cattle: short lived and if
+there is problems we just rebuild the server from an image an rerun the
+templating (once) to create the desired state.
+
+However, after working some years with cloud technoligies, and observing how
+many people and companies use them, there is quite a few gaps between reality
+and the somewhat illusory idea of short lived cattle servers (instances):
+
+Because many companies are so focused on delivering new features fast, the
+reality is that infrastructures is not short lived at all, especially taking
+into consideration the reduced time from deploying an updated system until a
+new security flaw is discovered. This is especailly true for virtual machines,
+but even for containers we find that many of them live for a long time and thus
+experience the same problems as the pet servers from the old days. Considering
+the poor software quality, hence the rapid detection of vulnerabilities it is
+basically the same situation as before. Maybe it is even worse, because
+containers and their orchestration introduce added complexity and hence larger
+attack surfaces. 
+
+The good news though is that the tools to fix configuration drift is still
+around and can and should be used inside cloud instances to close the gap
+described above. This blog post illustrates how easy it can be to go from a
+"fire and forget" world to a "continuous compliance" world.  {{% /note %}}
+
 [Rudder][rudder] is an open source configuration and security managament tool.
 It comes with a multi tenant control plane for managing and monitoring groups
 of nodes/agents in a central place. Because Rudder i built on the highly
