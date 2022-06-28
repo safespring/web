@@ -1,7 +1,7 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
 date: "2022-06-15"
-intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only." 
+intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only. It also brings some history, and why you should care about configuration drift even on cloud instances." 
 
 draft: false
 tags: ["English"]
@@ -143,7 +143,7 @@ Cloud" came along. Tools like Cfengine, Chef and Puppet addressed this issue to
 a large extent, by more or less continuously comparing desired state with actual
 state, and then converge the system into desired state by rectifying the
 differences. You can think of configuration drift as mutations and configuration
-management tools like the immune system that recitfy the mutations, thus
+management tools like the immune system that rectify the mutations, thus
 creating stability and resilience from perturbations and security problems.
 I.e. the analogy that servers are like pets that needs to be taken care of over
 their life time, which can be many years.
