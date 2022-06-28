@@ -410,7 +410,7 @@ bdfbd21c-d46d-403b-9836-06e2d282b704
 root@rudder-server:~#
 ```
 
-And then observe that the node have moved to the node list: 
+And then observe that the node have moved to "pending" list to the "node" list: 
 ```
 root@rudder-server:~# rudder-cli node list -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 root
@@ -419,7 +419,13 @@ bdfbd21c-d46d-403b-9836-06e2d282b704
 root@rudder-server:~#
 ```
 
+From now on the two clients is under continous mangament from the Rudder server
+and verified every 5th minute by default. No actions is taken to configure
+anything on the agent instances before you create rules for node groups.  
 
+Usage of Rudder to keep your instances continously in compliance with your
+policy (desired state) is large topic by itself, and outside the scope of this
+blog post. Head over to Normation's [Rudder page][rudder] to learn more
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
 [cfcore]: https://github.com/cfengine/core
