@@ -424,8 +424,8 @@ and verified every 5th minute by default. No actions is taken to configure
 anything on the agent instances before you create rules for node groups.  
 
 Usage of Rudder to keep your instances continously in compliance with your
-policy (desired state) is large topic by itself, and outside the scope of this
-blog post. Head over to Normation's [Rudder page][rudder] to learn more
+policy (desired state) is a large topic by itself, and it is outside the scope
+of this blog post. Head over to Normation's [Rudder page][rudder] to learn more
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
 [cfcore]: https://github.com/cfengine/core
