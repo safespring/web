@@ -2504,6 +2504,10 @@ pre {
 	line-height: 1.5;
 	overflow: scroll;
 }
+
+pre > code {
+	padding: 0;
+}
 .blog-feed .content-heading {
 	text-align: center;
 }
