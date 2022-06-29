@@ -1,6 +1,6 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
-date: "2022-06-28"
+date: "2022-06-29"
 intro: "This post shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only."
 draft: false
 tags: ["English"]
