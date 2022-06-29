@@ -1014,7 +1014,6 @@ color: var(--unCheckedColor);
 
 	.page-nav .page-prev a {
 		font-size: 14px;
-		color: var(--alt-color);
 		text-align: left
 	}
 
@@ -2344,6 +2343,7 @@ margin: 0
 }
 
 .note {
+	max-width: 600px;
 	background: white;
 	margin: 1.5625em 0;
 	padding: 25px 20px 15px 40px;
@@ -2367,6 +2367,7 @@ margin: 0
 }
 
 .disclaimer {
+	max-width: 600px;
 	background: white;
 	margin: 1.5625em 0;
 	padding: 25px 20px 15px 40px;
@@ -2497,12 +2498,17 @@ margin: 0
 }
 
 pre {
-	background: #EAF0F4;
-	max-width: 700px;
-	padding: 2%;
-	border-radius: 10px;
-	line-height: 1.5;
-	overflow: scroll;
+	background: #EAF0F4 !important;
+	max-width: 700px !important;
+	padding: 15px !important;
+	border-radius: 10px 0 10px 10px !important;
+	line-height: 1.5 !important;
+	overflow: scroll !important;
+	margin: 0 13px  13px 0 !important;
+}
+
+pre > code {
+	padding: 0;
 }
 .blog-feed .content-heading {
 	text-align: center;
@@ -2639,7 +2645,7 @@ pre {
 }
 
 .post-heading-firstpage-tech {
-	font: var(--extra-light-weight) 5vw var(--hind-font) !important;
+	font: var(--extra-light-weight) 3vw var(--hind-font) !important;
 	line-height: 1 !important;
 	color: var(--middle-blue-color) !important;
 }
@@ -2652,6 +2658,13 @@ pre {
 }
 
 @media only screen and (max-width: 875px) {
+
+	.post-heading-firstpage-tech {
+		font: var(--extra-light-weight) 40px var(--hind-font) !important;
+		line-height: 1.2 !important;
+		color: var(--middle-blue-color) !important;
+	}
+
 	.heading-content h1 {
 		font: var(--extra-light-weight) 35px var(--hind-font);
 		line-height: 1;
@@ -3488,7 +3501,7 @@ ol li:before {
 		min-height: 100%
 	}
 
-	.blogg-card-image-container {
+	.-container {
 		height: 200px;
 		display: flex;
 		justify-content: center;
@@ -4468,22 +4481,23 @@ ol li:before {
 		max-width: 700px;
 		width: 99%;
 		margin-bottom: 10px;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	.accordion {
 		background-color: #E9F2F6;
 		color: #195f8c !important;
 		cursor: pointer !important;
-		padding: 18px !important;
+		padding: 18px 18px 14px 18px !important;
 		width: 100%;
 		height: 100%;
 		border: none !important;
 		text-align: left !important;
 		outline: none !important;
 		transition: 0.4s !important;
-		font: 300 20px/1.2 var(--hind-font) !important;
-		border-radius: 5px;
+		font: 300 16px/1.2 var(--hind-font) !important;
+		border-radius: 10px;
+		text-transform: none;
 	}
 
 	.active-utbildning {
@@ -4510,11 +4524,11 @@ ol li:before {
 		max-height: 0;
 		overflow: hidden !important;
 		transition: max-height 0.2s ease-out !important;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	.panel p:first-child {
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 
 	/* END - UTBILDNING */
@@ -5033,7 +5047,8 @@ button.text {
 		grid-column: 2 / span 6;
 	}
 	.copy-code-button {
-		margin-left: 675px !important;
+		width: 100px;
+		margin: 0 0 0 630px  !important;
 	}
 }
 
@@ -5093,9 +5108,9 @@ margin-bottom: 2rem
 
 .copy-code-button {
 	font-family: var(--hind-font);
-	color: #FFF;
-    background-color: #FA690F;
-    border-radius: 50px;
+	color: #FA690F;
+    background-color: #EAF0F4;
+    border-radius: 10px 10px 0 0;
 		border: none;
 
     /* right-align */
@@ -5103,14 +5118,13 @@ margin-bottom: 2rem
     margin-left: auto;
     margin-right: 0;
 
-    margin-bottom: -2px;
-    padding: 3px 12px 0px 12px;
+    padding: 6px 12px 0px 12px;
     font-size: 0.8em;
 }
 
 .copy-code-button:hover {
     cursor: pointer;
-    background-color: #32CD32;
+		color: #32CD32;
 }
 
 .copy-code-button:focus {

@@ -1,9 +1,8 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
-date: "2022-06-15"
-intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only."
-
-draft: true
+date: "2022-06-29"
+intro: "This post shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only."
+draft: false
 tags: ["English"]
 showthedate: true
 card: ""
@@ -14,11 +13,10 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-This is part four, and probably the last, in the series about Safespring's
-Terraform modules. This blog post will look at how we can build even further on
-previously demonstrated concepts to creates sets of servers that is
+This blog post will look at how we can build even further on
+previously demonstrated concepts to create sets of servers that are
 continuously monitored and kept in compliance using Rudder, a state of the art
-configuration management tool
+configuration management tool.
 {{< /ingress >}}
 
 {{% note "Read more" %}}
@@ -91,8 +89,9 @@ desired state for operating system properties like files, services, filesystems
 and so on. It is mainly used for configuring Linux-based operating systems over the
 ssh protocol, however, it can also be used for configuring windows operating
 systems. In this post, we will show how to use Ansible to configure services on
-a Linux based operating system (Ubuntu 20.04)
+a Linux based operating system (Ubuntu 20.04).
 
+### Ansible inventories
 Ansible inventories are lists of hosts, groups of hosts, and variables for those
 hosts and groups. Hosts and groups are used to tell Ansible where a certain
 desired state (task) is applicable. When working with static hosts in a
@@ -125,6 +124,7 @@ scripts/programs available for this purpose (https://duckduckgo.com is your frie
 but we'll use a simple [python script][ati] developed initially by Cisco
 Systems.
 
+### Get started
 In order to use it, copy or symlink the script somewhere convenient and
 use the path as the `--inventory` option to `ansible-*` commands. If you
 put the script in a directory, and use the directory name as `--inventory`, you
@@ -137,18 +137,56 @@ inventory as `children` to the group you created, and then use that group with
 your role or playbook. We'll look at that in a later example.
 
 ## Rudder introduction
-[Rudder][rudder] is an open source configuration and security managament tool.
-It comes with a multi tenant control plane for managing and monitoring groups
-of nodes/agent in a central place. Because Rudder i built on the highly
+[Rudder][rudder] is an open source configuration and security management tool.
+It comes with a multi tenant-control plane for managing and monitoring groups
+of nodes/agents in a central place. Because Rudder is built on the highly
 efficient [Cfengine core][cfcore] it consumes very little resources, is
-blazingly fast and scales from a handful of nodes to many thousands.
+blazingly fast, and scales from a handful of nodes to many thousands.
+
+{{% accordion title="A short history lesson" %}}
+Configuration drift used to be a problem in datacenters a long time before "The
+Cloud" came along. Tools like Cfengine, Chef, and Puppet addressed this issue to
+a large extent, by more or less continuously comparing the desired state with actual
+state, and then converge the system into desired state by rectifying the
+differences. You can think of configuration drift as mutations and configuration
+management tools like the immune system that rectify the mutations, thus
+creating stability and resilience from perturbations and security problems.
+I.e. the analogy that servers are like pets that need to be taken care of over
+their lifetime, which can be many years.
+
+In the Cloud era, there's a new paradigm largely described by the idea of
+immutable infrastructure and that servers are like cattle: short-lived and if
+there are problems we just rebuild the server from an image and rerun the
+templating (once) to create the desired state.
+
+However, after working some years with cloud technologies, and observing how
+many people and companies use them, but there are quite a few gaps between reality
+and the somewhat illusory idea of short-lived cattle servers (instances):
+
+Because many companies are so focused on delivering new features fast, the
+reality is that infrastructures are not short-lived at all, especially taking
+into consideration the reduced time from deploying an updated system until a
+new security flaw is discovered. This is especially true for virtual machines,
+but even for containers, we find that many of them live for a long time and thus
+experience the same problems as the pet servers from the old days. Considering
+the poor software quality, hence the rapid detection of vulnerabilities it is
+basically the same situation as before. Maybe it is even worse, because
+containers and their orchestration introduce added complexity and hence larger
+attack surfaces.
+
+The good news though is that the tools to fix configuration drift are still
+around and can and should be used inside cloud instances to close the gap
+described above. This blog post illustrates how easy it can be to go from a
+"fire and forget" world to a "continuous compliance" world.  
+{{% /accordion %}}
 
 You can choose to purchase a Rudder subscription support plan from Normation,
 the company behind Rudder, in order to get predictability for product
-development and maintenance and different support SLAs. Or you can choose to
-install and support it yourself by means of the friendly souls at Normation et.
-al that provides ready to use software packages, Ansible collection etc. for
-the most common platforms.
+development and maintenance and different support SLAs. Normation also offers
+training and consulting regarding Rudder. Or you can choose to install and
+support it yourself by means of the friendly souls at Normation et.  al that
+provides ready to use software packages, Ansible collection etc. for the most
+common platforms.
 
 The leading theme through this blog series is how to glue together existing
 technologies to achieve a higher goal, previously, using the Ansible Terraform
@@ -165,8 +203,10 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 
 ### Installing a rudder server and bootstrapping agents to that server
 
-Terraform code:
-```
+Example in https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-rudder-minimal-poc
+
+#### Terraform code
+```terraform
 terraform {
   required_version = ">= 0.14.0"
   required_providers {
@@ -255,30 +295,179 @@ module my_clients {
 }
 ```
 
-Here we create an instance that will be configured as Rudder server using the
+Here we create an instance that will be configured as a Rudder server using the
 v2-compute-instance module with `role=rudder_server`. Then we create 2 rudder
 clients/agents using the v2-compute-instance with `count=2` and
-`role=rudder_client` and attach it to the default network. The default network
+`role=rudder_client` and attach them to the default network. The default network
 is a private (RFC1918) network where instances can reach the Internet through
-NAT via the compute host, for things like package installs etc. However,
+NAT via the compute host, for things like package installs, etc. However,
 instances on this network can not be reached directly *from* the Internet,
 obviously.
 
 We create two security groups: one «interconnect» security group where all
 members in it have full connectivity to each other, and one ingress security
-group that allows incoming (ingress) connections on ports `80/tcp` (http),
-`443/tcp` (https) and `22/tcp` (ssh) from the world. All instances is member of
+group that allows incoming (ingress) connections on ports `80/tcp` (HTTP),
+`443/tcp` (HTTPS) and `22/tcp` (ssh) from the world. All instances are member of
 the interconnect security group so agents can talk freely with the server, and
-the server is also member of the ingress security group so that it can be
+the server is also a member of the ingress security group so that it can be
 reachable as a management host both by means of the Rudder web gui, and API,
-but also as a bastion host for logging in with ssh and jump further to the
+but also as a bastion host for logging in with ssh and jumping further to the
 clients wich is provisioned on a RFC1918 network not directly reachable from
-the Internet. Lastly, we include the pre existing `default` security group to
+the Internet. Lastly, we include the pre-existing `default` security group to
 allow outbound (egress) traffic from all instances.
 
 {{% note "Safespring network" %}}
-None of the instances have more than one interface. This is intentional. If you don't know why, then please read the post on [The Safespring network model][netblog]
+None of the instances have more than one interface. This is intentional. If you don't know why; then please read the post on [The Safespring network model][netblog]
 {{% /note %}}
+
+#### Confguration of the Rudder Ansible collection (requirements.yml)
+
+```yaml
+collections:
+  - name: https://github.com/Normation/rudder-ansible.git
+    type: git
+    version: master
+```
+
+In order to utilize the rudder-ansible collection we must install it locally.
+This is done by creating the `requirements.yml` as shown above and running:
+
+```shell
+$ ansible-galaxy install -r requirements.yml
+```
+
+#### Ansible playbook (configure.yml)
+
+```yaml
+---
+
+- name: Install Rudder Server
+  hosts: os_metadata_role=rudder_server
+  become: yes
+  collections:
+    - rudder.rudder
+  tasks:
+    - import_role:
+        name: rudder.rudder.rudder_server
+      vars:
+        server_version: 7.0
+
+- name: Install Rudder agents
+  hosts: os_metadata_role=rudder_client
+  become: yes
+  collections:
+    - rudder.rudder
+  tasks:
+    - import_role:
+        name: rudder.rudder.rudder_agent
+      vars:
+        agent_version: 7.0
+        policy_server: "{{hostvars['rudder-server.example.com']['ansible_default_ipv4']['address']}}"
+```
+
+Here we reuse our previously defined `role` from the Terraform code as host
+groups directly in the Ansible playbook, `os_metadata_role=rudder_server` and
+`os_metadata_role=rudder_client` respectively. Note that we specify the
+`policy_server` parameter of the `rudder_agent` role  as IP address of the
+server from the Ansible inventory of that instance (which in the end is
+provided by the ATI dynamic inventory script).
+
+## Using Rudder to manage the desired state
+
+This is a big topic and we'll just go through the basics on how to get started and
+illustrate the power of a tool like Rudder.
+
+When the Ansible playbook is run, and the roles in it applied, we end up with a
+Rudder server on the `rudder-server` instance, and Rudder agents on the
+`rudder-client` instances. The Rudder agents are configured to use the IP
+address of the Rudder server as their policy server through variable
+`policy_server:` in the rudder_agent Ansible role. The Rudder server is started
+with a self-signed certificate for the web GUI and API. These must be replaced
+with valid certificates before taking the Rudder server into production,
+obviously. Here we'll just focus on a minimal proof of concept with no
+production data so we choose to use the self-signed certificate and ignore
+warnings for it when interacting with the Rudder server.
+
+The Rudder server needs an admin user in order to set itself up for usage. This
+is done by logging in to the Rudder server instance and running the following
+command:
+
+```console
+root@rudder-server:~# rudder server create-user -u  admin
+New password:
+Re-type new password:
+User 'admin' added, restarting the Rudder server
+root@rudder-server:~#
+```
+
+After this, you can log in to the web GUI of the Rudder server on
+`https://<ip-address-of-rudder-server-instance>` with the username and
+password just created with the CLI. From here you can choose to either work in
+the web GUI (which is quite good and user-friendly) or you can work through the
+API or the `rudder-cli` tool which in turn uses the API. In any case, you need a
+token for accessing the API and that can be generated in the GUI under
+"Administration/API accounts".
+
+The two `rudder-client` instances can now be observed in "Node
+Management/Pending Nodes" in the GUI. That means the two new clients/agents
+need to be accepted by the policy server in order for the server to manage
+them. You can do this in the web GUI by marking it and pressing the "accept"
+button. When nodes are accepted they move from the "Pending Nodes" list to the
+"Nodes" list.
+
+If you click on a node in the "Pending Nodes" list, you get some more detail.
+The "Node ID" is a unique ID for each node/agent. You can verify the "Node ID"
+of the pending node by comparing it with the output of the following command on
+the node/agent/client itself.
+
+```console
+root@rudder-client-1:~# rudder agent info |grep UUID
+               UUID: c9e80279-00d3-4ee3-a7e1-8491955ebd3c
+root@rudder-client-1:~#
+```
+
+Or you can do it with the "rudder-cli" tool through the API as shown under.
+
+Observe the list of pending nodes with `rudder-cli` and `jq`. (There is only
+one node remaining in the pending state because the other one is already
+accepted.)
+
+```console
+root@rudder-server:~# rudder-cli node list_pending -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
+bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-server:~#
+```
+
+Observe the ID of the pending agent on the agent itself
+```console
+root@rudder-client-2:~# rudder agent info |grep UUID
+               UUID: bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-client-2:~#
+```
+
+Then accept the the node
+```console
+root@rudder-server:~# rudder-cli node accept bdfbd21c-d46d-403b-9836-06e2d282b704  -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
+bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-server:~#
+```
+
+And then observe that the node has moved to "pending" list to the "node" list:
+```console
+root@rudder-server:~# rudder-cli node list -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
+root
+c9e80279-00d3-4ee3-a7e1-8491955ebd3c
+bdfbd21c-d46d-403b-9836-06e2d282b704
+root@rudder-server:~#
+```
+
+From now on the two clients is under continuous management from the Rudder server
+and verified every 5th minute by default. No actions are taken to configure
+anything on the agent instances before you create rules for node groups.  
+
+Usage of Rudder to keep your instances continuously in compliance with your
+policy (desired state) is a large topic by itself, and it is outside the scope
+of this blog post. Head over to Normation's [Rudder page][rudder] to learn more.
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
 [cfcore]: https://github.com/cfengine/core
@@ -299,3 +488,5 @@ None of the instances have more than one interface. This is intentional. If you 
 
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
+
+{{< accordion-script >}}
