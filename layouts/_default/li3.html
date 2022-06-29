@@ -13,6 +13,10 @@
     {{ if .Params.sidebarlinkurl }}
     <a href="{{ .Params.sidebarlinkurl }}" target="_blank" id="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}</a>
     {{ end }}
+    {{ if .Params.logo }}
+    <img src="{{ .Params.logo }}" alt="Logotyp" class="">
+    {{ else }}
+    {{ end }}
   </div>
   <br>
   <br>

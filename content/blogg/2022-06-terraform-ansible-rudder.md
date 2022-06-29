@@ -1,9 +1,8 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
-date: "2022-06-15"
+date: "2022-06-29"
 intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only. It also brings some history, and why you should care about configuration drift even on cloud instances." 
-
-draft: false
+draft: true
 tags: ["English"]
 showthedate: true
 card: ""
@@ -18,7 +17,7 @@ This is part four, and probably the last, in the series about Safespring's
 Terraform modules. This blog post will look at how we can build even further on
 previously demonstrated concepts to create sets of servers that are
 continuously monitored and kept in compliance using Rudder, a state of the art
-configuration management tool 
+configuration management tool
 {{< /ingress >}}
 
 {{% note "Read more" %}}
@@ -166,7 +165,7 @@ experience the same problems as the pet servers from the old days. Considering
 the poor software quality, hence the rapid detection of vulnerabilities it is
 basically the same situation as before. Maybe it is even worse, because
 containers and their orchestration introduce added complexity and hence larger
-attack surfaces. 
+attack surfaces.
 
 The good news though is that the tools to fix configuration drift are still
 around and can and should be used inside cloud instances to close the gap
@@ -371,7 +370,7 @@ provided by the ATI dynamic inventory script).
 ## Using Rudder to manage the desired state
 
 This is a big topic and we'll just go through the basics on how to get started and
-illustrate the power of a tool like Rudder. 
+illustrate the power of a tool like Rudder.
 
 When the Ansible playbook is run, and the roles in it applied, we end up with a
 Rudder server on the `rudder-server` instance, and Rudder agents on the
@@ -402,7 +401,7 @@ password just created with the CLI. From here you can choose to either work in
 the web GUI (which is quite good and user-friendly) or you can work through the
 API or the `rudder-cli` tool which in turn uses the API. In any case, you need a
 token for accessing the API and that can be generated in the GUI under
-"Administration/API accounts". 
+"Administration/API accounts".
 
 The two `rudder-client` instances can now be observed in "Node
 Management/Pending Nodes" in the GUI. That means the two new clients/agents
@@ -414,7 +413,7 @@ button. When nodes are accepted they move from the "Pending Nodes" list to the
 If you click on a node in the "Pending Nodes" list, you get some more detail.
 The "Node ID" is a unique ID for each node/agent. You can verify the "Node ID"
 of the pending node by comparing it with the output of the following command on
-the node/agent/client itself. 
+the node/agent/client itself.
 ```
 root@rudder-client-1:~# rudder agent info |grep UUID
                UUID: c9e80279-00d3-4ee3-a7e1-8491955ebd3c
@@ -425,12 +424,12 @@ Or you can do it with the "rudder-cli" tool through the API as shown under.
 
 Observe the list of pending nodes with `rudder-cli` and `jq`. (There is only
 one node remaining in the pending state because the other one is already
-accepted.) 
+accepted.)
 
 ```
 root@rudder-server:~# rudder-cli node list_pending -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 bdfbd21c-d46d-403b-9836-06e2d282b704
-root@rudder-server:~# 
+root@rudder-server:~#
 ```
 
 Observe the ID of the pending agent on the agent itself
@@ -440,14 +439,14 @@ root@rudder-client-2:~# rudder agent info |grep UUID
 root@rudder-client-2:~#
 ```
 
-Then accept the the node 
+Then accept the the node
 ```
 root@rudder-server:~# rudder-cli node accept bdfbd21c-d46d-403b-9836-06e2d282b704  -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 bdfbd21c-d46d-403b-9836-06e2d282b704
 root@rudder-server:~#
 ```
 
-And then observe that the node has moved to "pending" list to the "node" list: 
+And then observe that the node has moved to "pending" list to the "node" list:
 ```
 root@rudder-server:~# rudder-cli node list -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 root
