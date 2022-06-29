@@ -180,7 +180,6 @@ described above. This blog post illustrates how easy it can be to go from a
 "fire and forget" world to a "continuous compliance" world.  
 {{% /accordion %}}
 
-### How to get Rudder
 You can choose to purchase a Rudder subscription support plan from Normation,
 the company behind Rudder, in order to get predictability for product
 development and maintenance and different support SLAs. Normation also offers
