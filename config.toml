@@ -78,7 +78,7 @@ SectionPagesMenu = "main"
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'rainbow_dash'
+    style = 'igor'
     tabWidth = 4
 [markup.goldmark.renderer]
   hardWraps = false

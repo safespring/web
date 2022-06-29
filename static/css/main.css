@@ -2499,12 +2499,12 @@ margin: 0
 
 pre {
 	background: #EAF0F4 !important;
-	max-width: 600px !important;
+	max-width: 700px !important;
 	padding: 15px !important;
-	border-radius: 10px !important;
+	border-radius: 10px 0 10px 10px !important;
 	line-height: 1.5 !important;
 	overflow: scroll !important;
-	margin: 13px 0 !important;
+	margin: 0 13px  13px 0 !important;
 }
 
 pre > code {
@@ -3501,7 +3501,7 @@ ol li:before {
 		min-height: 100%
 	}
 
-	.blogg-card-image-container {
+	.-container {
 		height: 200px;
 		display: flex;
 		justify-content: center;
@@ -5047,7 +5047,8 @@ button.text {
 		grid-column: 2 / span 6;
 	}
 	.copy-code-button {
-		margin-left: 573px !important;
+		width: 100px;
+		margin: 0 0 0 630px  !important;
 	}
 }
 
@@ -5107,9 +5108,9 @@ margin-bottom: 2rem
 
 .copy-code-button {
 	font-family: var(--hind-font);
-	color: #FFF;
-    background-color: #FA690F;
-    border-radius: 50px;
+	color: #FA690F;
+    background-color: #EAF0F4;
+    border-radius: 10px 10px 0 0;
 		border: none;
 
     /* right-align */
@@ -5117,14 +5118,13 @@ margin-bottom: 2rem
     margin-left: auto;
     margin-right: 0;
 
-    margin-bottom: -2px;
-    padding: 3px 12px 0px 12px;
+    padding: 6px 12px 0px 12px;
     font-size: 0.8em;
 }
 
 .copy-code-button:hover {
     cursor: pointer;
-    background-color: #32CD32;
+		color: #32CD32;
 }
 
 .copy-code-button:focus {
