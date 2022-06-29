@@ -2643,7 +2643,7 @@ pre > code {
 }
 
 .post-heading-firstpage-tech {
-	font: var(--extra-light-weight) 4vw var(--hind-font) !important;
+	font: var(--extra-light-weight) 3vw var(--hind-font) !important;
 	line-height: 1 !important;
 	color: var(--middle-blue-color) !important;
 }
