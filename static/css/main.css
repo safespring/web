@@ -2643,7 +2643,7 @@ pre > code {
 }
 
 .post-heading-firstpage-tech {
-	font: var(--extra-light-weight) 5vw var(--hind-font) !important;
+	font: var(--extra-light-weight) 4vw var(--hind-font) !important;
 	line-height: 1 !important;
 	color: var(--middle-blue-color) !important;
 }
@@ -2656,6 +2656,13 @@ pre > code {
 }
 
 @media only screen and (max-width: 875px) {
+
+	.post-heading-firstpage-tech {
+		font: var(--extra-light-weight) 40px var(--hind-font) !important;
+		line-height: 1.2 !important;
+		color: var(--middle-blue-color) !important;
+	}
+
 	.heading-content h1 {
 		font: var(--extra-light-weight) 35px var(--hind-font);
 		line-height: 1;
@@ -4472,22 +4479,23 @@ ol li:before {
 		max-width: 700px;
 		width: 99%;
 		margin-bottom: 10px;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	.accordion {
 		background-color: #E9F2F6;
 		color: #195f8c !important;
 		cursor: pointer !important;
-		padding: 18px !important;
+		padding: 18px 18px 14px 18px !important;
 		width: 100%;
 		height: 100%;
 		border: none !important;
 		text-align: left !important;
 		outline: none !important;
 		transition: 0.4s !important;
-		font: 300 20px/1.2 var(--hind-font) !important;
-		border-radius: 5px;
+		font: 300 16px/1.2 var(--hind-font) !important;
+		border-radius: 10px;
+		text-transform: none;
 	}
 
 	.active-utbildning {
@@ -4514,11 +4522,11 @@ ol li:before {
 		max-height: 0;
 		overflow: hidden !important;
 		transition: max-height 0.2s ease-out !important;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	.panel p:first-child {
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 
 	/* END - UTBILDNING */

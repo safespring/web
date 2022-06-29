@@ -1,8 +1,8 @@
 ---
 title: "From zero to continuous compliance with Terraform, Ansible and Rudder"
-date: "2022-06-29"
-intro: "This post concludes the blog series about automated provisioning and configuration of resources in the Safespring platform. It shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only. It also brings some history, and why you should care about configuration drift even on cloud instances." 
-draft: true
+date: "2022-06-28"
+intro: "This post shows how you can get from no resources to a fully automated and continuously compliant infrastructure with code only."
+draft: false
 tags: ["English"]
 showthedate: true
 card: ""
@@ -13,11 +13,10 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-This is part four, and probably the last, in the series about Safespring's
-Terraform modules. This blog post will look at how we can build even further on
+This blog post will look at how we can build even further on
 previously demonstrated concepts to create sets of servers that are
 continuously monitored and kept in compliance using Rudder, a state of the art
-configuration management tool
+configuration management tool.
 {{< /ingress >}}
 
 {{% note "Read more" %}}
@@ -90,8 +89,9 @@ desired state for operating system properties like files, services, filesystems
 and so on. It is mainly used for configuring Linux-based operating systems over the
 ssh protocol, however, it can also be used for configuring windows operating
 systems. In this post, we will show how to use Ansible to configure services on
-a Linux based operating system (Ubuntu 20.04)
+a Linux based operating system (Ubuntu 20.04).
 
+### Ansible inventories
 Ansible inventories are lists of hosts, groups of hosts, and variables for those
 hosts and groups. Hosts and groups are used to tell Ansible where a certain
 desired state (task) is applicable. When working with static hosts in a
@@ -124,6 +124,7 @@ scripts/programs available for this purpose (https://duckduckgo.com is your frie
 but we'll use a simple [python script][ati] developed initially by Cisco
 Systems.
 
+### Get started
 In order to use it, copy or symlink the script somewhere convenient and
 use the path as the `--inventory` option to `ansible-*` commands. If you
 put the script in a directory, and use the directory name as `--inventory`, you
@@ -136,7 +137,13 @@ inventory as `children` to the group you created, and then use that group with
 your role or playbook. We'll look at that in a later example.
 
 ## Rudder introduction
-{{% note "A short history lesson" %}}
+[Rudder][rudder] is an open source configuration and security management tool.
+It comes with a multi tenant-control plane for managing and monitoring groups
+of nodes/agents in a central place. Because Rudder is built on the highly
+efficient [Cfengine core][cfcore] it consumes very little resources, is
+blazingly fast, and scales from a handful of nodes to many thousands.
+
+{{% accordion title="A short history lesson" %}}
 Configuration drift used to be a problem in datacenters a long time before "The
 Cloud" came along. Tools like Cfengine, Chef, and Puppet addressed this issue to
 a large extent, by more or less continuously comparing the desired state with actual
@@ -170,14 +177,10 @@ attack surfaces.
 The good news though is that the tools to fix configuration drift are still
 around and can and should be used inside cloud instances to close the gap
 described above. This blog post illustrates how easy it can be to go from a
-"fire and forget" world to a "continuous compliance" world.  {{% /note %}}
+"fire and forget" world to a "continuous compliance" world.  
+{{% /accordion %}}
 
-[Rudder][rudder] is an open source configuration and security management tool.
-It comes with a multi tenant-control plane for managing and monitoring groups
-of nodes/agents in a central place. Because Rudder is built on the highly
-efficient [Cfengine core][cfcore] it consumes very little resources, is
-blazingly fast, and scales from a handful of nodes to many thousands.
-
+### How to get Rudder
 You can choose to purchase a Rudder subscription support plan from Normation,
 the company behind Rudder, in order to get predictability for product
 development and maintenance and different support SLAs. Normation also offers
@@ -203,7 +206,7 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 
 Example in https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-rudder-minimal-poc
 
-**Terraform code**
+#### Terraform code
 ```
 terraform {
   required_version = ">= 0.14.0"
@@ -318,7 +321,7 @@ allow outbound (egress) traffic from all instances.
 None of the instances have more than one interface. This is intentional. If you don't know why; then please read the post on [The Safespring network model][netblog]
 {{% /note %}}
 
-**Confguration of the Rudder Ansible collection (requirements.yml):**
+#### Confguration of the Rudder Ansible collection (requirements.yml)
 ```
 collections:
   - name: https://github.com/Normation/rudder-ansible.git
@@ -332,7 +335,7 @@ This is done by creating the `requirements.yml` as shown above and running:
 ansible-galaxy install -r requirements.yml
 ```
 
-**Ansible playbook (configure.yml):**
+#### Ansible playbook (configure.yml)
 ```
 ---
 
@@ -461,7 +464,7 @@ anything on the agent instances before you create rules for node groups.
 
 Usage of Rudder to keep your instances continuously in compliance with your
 policy (desired state) is a large topic by itself, and it is outside the scope
-of this blog post. Head over to Normation's [Rudder page][rudder] to learn more
+of this blog post. Head over to Normation's [Rudder page][rudder] to learn more.
 
 [rudder-ansible]: https://github.com/Normation/rudder-ansible
 [cfcore]: https://github.com/cfengine/core
@@ -482,3 +485,5 @@ of this blog post. Head over to Normation's [Rudder page][rudder] to learn more
 
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
+
+{{< accordion-script >}}
