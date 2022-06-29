@@ -206,7 +206,7 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 Example in https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-rudder-minimal-poc
 
 #### Terraform code
-```
+```terraform
 terraform {
   required_version = ">= 0.14.0"
   required_providers {

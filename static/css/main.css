@@ -1014,7 +1014,6 @@ color: var(--unCheckedColor);
 
 	.page-nav .page-prev a {
 		font-size: 14px;
-		color: var(--alt-color);
 		text-align: left
 	}
 
@@ -2344,6 +2343,7 @@ margin: 0
 }
 
 .note {
+	max-width: 600px;
 	background: white;
 	margin: 1.5625em 0;
 	padding: 25px 20px 15px 40px;
@@ -2367,6 +2367,7 @@ margin: 0
 }
 
 .disclaimer {
+	max-width: 600px;
 	background: white;
 	margin: 1.5625em 0;
 	padding: 25px 20px 15px 40px;
@@ -2497,12 +2498,13 @@ margin: 0
 }
 
 pre {
-	background: #EAF0F4;
-	max-width: 700px;
-	padding: 2%;
-	border-radius: 10px;
-	line-height: 1.5;
-	overflow: scroll;
+	background: #EAF0F4 !important;
+	max-width: 600px !important;
+	padding: 15px !important;
+	border-radius: 10px !important;
+	line-height: 1.5 !important;
+	overflow: scroll !important;
+	margin: 13px 0 !important;
 }
 
 pre > code {
@@ -5045,7 +5047,7 @@ button.text {
 		grid-column: 2 / span 6;
 	}
 	.copy-code-button {
-		margin-left: 675px !important;
+		margin-left: 573px !important;
 	}
 }
 

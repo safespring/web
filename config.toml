@@ -65,8 +65,25 @@ SectionPagesMenu = "main"
     filename = "sitemap.xml"
     priority = 0.5
 
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'rainbow_dash'
+    tabWidth = 4
 [markup.goldmark.renderer]
-unsafe= true
+  hardWraps = false
+  unsafe = true
+  xhtml = false
 
 [blackfriday]
 fractions = false
