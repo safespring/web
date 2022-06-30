@@ -627,11 +627,11 @@ color: var(--unCheckedColor);
 		padding: 20px 0px 0px 30px;
 	}
 
-	.menu-item.active svg {
+	/*.menu-item.active svg {
 		-webkit-transform: rotateZ(180deg);
 		-moz-transform: rotateZ(180deg);
 		transform: rotateZ(180deg);
-	}
+	}*/
 
 	.menu-item ul {
 		padding: 0px 0px 0px 0px;
@@ -692,7 +692,7 @@ color: var(--unCheckedColor);
 
 	.sub-sub-menu a {
 		font: var(--hind-light-weight) 16px var(--hind-font) !important;
-		padding: 0 0 0 10px !important;
+		padding: 5px 0 0 10px !important;
 
 	}
 
