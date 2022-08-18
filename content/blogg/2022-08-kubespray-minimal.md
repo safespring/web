@@ -18,7 +18,7 @@ Kubernetes (K8S) cluster by utilizing a tool called Kubespray. Kubespray is a
 comprehensive tool that covers a lot of different use cases. In this post we
 will focus on the necessary config to install a minimal K8S cluster for test
 and experiment on the Safespring IaaS.
-{{</ingress >}}
+{{< /ingress >}}
 
 ## Prerequisites
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
