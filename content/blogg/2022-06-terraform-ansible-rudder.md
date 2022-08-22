@@ -17,9 +17,11 @@ This blog post will look at how we can build even further on
 previously demonstrated concepts to create sets of servers that are
 continuously monitored and kept in compliance using Rudder, a state of the art
 configuration management tool.
-
-**Updated to fix an inconsistency on 2022-08-22**
 {{< /ingress >}}
+
+{{% disclaimer "update" %}}
+Updated to fix an inconsistency on 2022-08-22
+{{% /disclaimer %}}
 
 {{% note "Read more" %}}
 Here you can read [part one](/blogg/2022-01-terraform-modules), [part two](/blogg/2022-03-terraform-module), [part three](/blogg/2022-05-terraform-ansible) and part four (this post).
