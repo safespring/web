@@ -17,6 +17,8 @@ This blog post will look at how we can build even further on
 previously demonstrated concepts to create sets of servers that are
 continuously monitored and kept in compliance using Rudder, a state of the art
 configuration management tool.
+
+**Updated to fix an inconsistency on 2022-08-22**
 {{< /ingress >}}
 
 {{% note "Read more" %}}
@@ -227,15 +229,19 @@ module interconnect {
    source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
    name = "interconnect"
    delete_default_rules = true
-   description = "For interconnecting servers with full network access between members"
+   description = "For interconnecting servers with full network access between members, egress to the world and ssh from the world"
    rules = {
      ingress = {
        direction       = "ingress"
        remote_group_id = "self"
      }
-     egress = {
-       direction       = "egress"
-       remote_group_id = "self"
+     ssh = {
+       direction   = "ingress"
+       ip_protocol = "tcp"
+       to_port     = "22"
+       from_port   = "22"
+       ethertype   = "IPv4"
+       cidr        = "0.0.0.0/0"
      }
   }
 }
@@ -244,7 +250,7 @@ module ingress {
    source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
    name = "ingress"
    delete_default_rules = true
-   description = "For for ssh access from the world, and egress from nodes"
+   description = "For ingress http/https traffic to the Rudder server"
    rules = {
      http = {
        direction   = "ingress"
@@ -259,14 +265,6 @@ module ingress {
        ip_protocol = "tcp"
        to_port     = "443"
        from_port   = "443"
-       ethertype   = "IPv4"
-       cidr        = "0.0.0.0/0"
-     }
-     ssh = {
-       direction   = "ingress"
-       ip_protocol = "tcp"
-       to_port     = "22"
-       from_port   = "22"
        ethertype   = "IPv4"
        cidr        = "0.0.0.0/0"
      }
@@ -289,7 +287,7 @@ module my_clients {
    name            = "rudder-client-${count.index+1}.example.com"
    image           = "ubuntu-20.04"
    network         = "default"
-   security_groups = [ "default", module.interconnect.name, module.ingress.name ]
+   security_groups = [ "default", module.interconnect.name ]
    role            = "rudder_client"
    key_pair_name   = openstack_compute_keypair_v2.skp.name
 }
@@ -371,6 +369,10 @@ groups directly in the Ansible playbook, `os_metadata_role=rudder_server` and
 `policy_server` parameter of the `rudder_agent` role  as IP address of the
 server from the Ansible inventory of that instance (which in the end is
 provided by the ATI dynamic inventory script).
+
+{{% note "Reachability of the client nodes" %}}
+In order to reach the client nodes with ssh (they are on a RFC1918 network), the playbook must be run from an instance residing in the same Safespring site as the client nodes. If this sounds strange, please read the blog post about [The Safespring network model][netblog].
+{{% /note %}}
 
 ## Using Rudder to manage the desired state
 
@@ -489,4 +491,4 @@ of this blog post. Head over to Normation's [Rudder page][rudder] to learn more.
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
 
-{{< accordion-script >}}
+{s{< accordion-script >}}

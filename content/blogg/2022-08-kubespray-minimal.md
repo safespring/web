@@ -2,7 +2,7 @@
 title: "Setting up a minimal Kubernetes cluster on Safespring using Kubespray"
 date: "2022-08-16"
 intro: "This post shows one way you can get from no resources to a minimal Kubernetes cluster with code only."
-draft: false
+draft: true
 tags: ["English"]
 showthedate: true
 card: ""
