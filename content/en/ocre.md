@@ -14,12 +14,12 @@ aliases:
     - /ocre/
     - /OCRE/
 logobanner: "yes"
-sidebarwhitepaper: "y"
-saas: "y"
+sidebarwhitepaper: ""
+saas: ""
 meeting: ""
 meetingurl: ""
 sidebarsection: "White Paper"
-sidebarimage: "safespring_card_02.jpg"
+sidebarimage: ""
 sidebartitle: "Annulment of Privacy Shield by the European Court of Justice"
 sidebartext: "Read about conditions and recommendations for the public sector and its suppliers"
 sidebardate: "Data privacy"
