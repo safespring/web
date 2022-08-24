@@ -8,7 +8,7 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-section: "Tech update"
+"
 language: "En"
 toc: "Table of contents"
 ---
