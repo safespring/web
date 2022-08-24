@@ -8,7 +8,7 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-section: "Tech update"
+"
 language: "En"
 toc: "Table of contents"
 ---
@@ -493,4 +493,4 @@ of this blog post. Head over to Normation's [Rudder page][rudder] to learn more.
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
 
-{s{< accordion-script >}}
+{{< accordion-script >}}
