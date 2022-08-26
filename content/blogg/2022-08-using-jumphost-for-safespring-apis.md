@@ -35,8 +35,7 @@ project - a common model in open source projects. The components communicate
 over their respective REST APIs with the dashboard as a centerpiece for the user
 interaction with these APIs. However, when using the CLI or automation software
 like Terraform you're not communicating through a single application interface
-like the dashboard, but with all the individual
-service's public API endpoints. 
+like the dashboard, but with all the individual service's public API endpoints. 
 
 This doesn't imply that Openstack is insecure; quite the contrary actually. 
 Openstack is one of the most transparent and secure cloud platforms there is,
@@ -69,7 +68,7 @@ manage devices in a separate security zone. By using a jumphost you can restrict
 access to internal resources to a single source with increased security
 hardening (including multi-factor authentication) and monitoring. Depending on
 how strictly you define a jumphost, it can also be a work environment where e.g.
-deployments to the internal servers are executed.  In some cases even full
+deployments to the internal servers are executed. In some cases even full
 development environments are deployed on jumphosts using remote development
 tools like VSCode or a combination of terminal editors and multiplexers with the
 benefits of easy access to internal resources and collaborative coding. 
@@ -78,6 +77,17 @@ The public instance network ranges in Safespring Compute are whitelisted for API
 access on our load-balancers which is why we always recommend our customers to
 start off by creating a jumphost through the web dashboard and utilize this for
 API-based provisioning (e.g. Terraform). 
+
+There are other benefits as well. For example, if you want to deploy to
+instances on the private (RFC1918) network the only way to do that is through a
+public instance in the same site. We've written about that in detail in 
+[another blog post](https://www.safespring.com/blogg/2022-03-network/). 
+You could of course create a specific jump for this purpose alone, however,
+doing all provisioning and deployments from a single host is far more
+convenient.
+
+Combine all this and you have a very practical way of managing your Safespring
+infrastructure as well as your own security zone. 
 
 Working over SSH from a jumphost doesn't fit every scenario. Another common
 option when working across security zones is a VPN. This has traditionally been
@@ -118,9 +128,9 @@ security hardening as a regular OpenSSH client, including MFA.
 Other options include more full-fledged VPN solutions like
 [Wireguard](https://www.wireguard.com/), [ZeroTier](https://www.zerotier.com/)
 or [OpenVPN](https://openvpn.net/) which are all a lot simpler to configure than
-traditional protocols like IPSec, PPTP etc. If you're going to set up a VPN in
-Safespring Compute anyway, this might be a good option for forwarding Openstack
-API requests as well. We've created some documentation on how to get started at
+traditional protocols like IPSec, GRE, PPTP etc. If you're going to set up a VPN
+in Safespring Compute anyway the gateway can serve as a jumphost has well. We've
+created some documentation on how to get started at
 https://docs.safespring.com/new/vpn/ and we also provide an automated setup of a
-Wireguard gateway available here
+Wireguard gateway which can be used for this purpose and more, available here
 https://github.com/safespring-community/wireguard-gateway 
