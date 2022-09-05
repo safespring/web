@@ -45,7 +45,7 @@ infrastructure provisioned by Terraform.
     ```bash
       $ mkdir -p ~/kubespray-clusters/minimal-k8s
     ```
-1. lone the kubespray repository to your preferred place, and check out the latest release:
+1. Clone the kubespray repository to your preferred place, and check out the latest release:
     ```bash
     $ cd ~/git/
     $ git clone https://github.com/kubernetes-sigs/kubespray.git
