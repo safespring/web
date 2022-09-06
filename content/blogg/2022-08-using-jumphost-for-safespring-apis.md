@@ -113,7 +113,7 @@ There's currently no support for Windows, including WSL (although there is a
 [workaround](https://sshuttle.readthedocs.io/en/stable/windows.html)).
 
 Using sshuttle with a Safespring Compute instance hardly requires any set up.
-Just launch an instance, add your SSH-key and simply run
+Just launch an instance, add your SSH-key and simply run:
 
 ```
 sshuttle -r <username>@<instance ip> <range you want to forward>
