@@ -223,6 +223,10 @@ config/state directory and make sure it is executable.
     ```
 1. Create a config file for the Kubespray ansible setup, for example like this:
     ```yaml
+    mkdir -p ~/kubespray-clusters/minimal-k8s-old/group_vars/k8s_cluster
+    vi ~/kubespray-clusters/minimal-k8s-old/group_vars/k8s_cluster/ck8s-k8s-cluster.yaml
+    (edit stuff)
+    cat ~/kubespray-clusters/minimal-k8s-old/group_vars/k8s_cluster/ck8s-k8s-cluster.yaml
     artifacts_dir: "{{ inventory_dir }}/artifacts"
     cluster_admin_users:
     - k8sadmin@exmaple.com
@@ -251,7 +255,7 @@ config/state directory and make sure it is executable.
     documentation][ksparams]
 1. Then it is time to install Kubernetes using the Kubespray playbook and roles.
     ```
-    $ ansible-playbook -i ~/kubespray-clusters/minimal-k8s/terraform.py cluster.yml -b
+    $ .venv/bin/ansible-playbook -i ~/kubespray-clusters/minimal-k8s/terraform.py cluster.yml -b
     ```
 1. Go for a coffe or two ..... or maybe even three :-)
 
