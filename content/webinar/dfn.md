@@ -34,9 +34,6 @@ minute6: ""
 Safespring is the preferred cloud platform for research and education. Welcome to participate in our webinar regarding our services under OCRE for the X-WIN community.
 {{< /ingress >}}
 
-**The video will be published shortly.**
-{{< distance >}}
-
 ## Agenda
 
 1. **Introduction**  
