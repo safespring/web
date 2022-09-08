@@ -4,9 +4,9 @@ date: "2022-09-08"
 publishDate: "2022-09-08"
 draft: false
 tags: ["Svenska"]
-card: ""
+card: "safespring_card_44.jpg"
 eventbild: ""
-socialmediabild: ""
+socialmediabild: "safespring_social_44.jpg"
 intro: "Welcome to watch our webinar regarding our services under OCRE for the X-WIN community."
 partner: ""
 audience: "saas"
