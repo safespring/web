@@ -13,7 +13,7 @@ audience: "saas"
 explorer: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
-youtube: ""
+youtube: "https://youtu.be/E_8Bngx_YjA"
 timecodes: ""
 chapter1: ""
 minute1: ""
@@ -33,9 +33,6 @@ minute6: ""
 {{< ingress>}}
 Safespring is the preferred cloud platform for research and education. Welcome to participate in our webinar regarding our services under OCRE for the X-WIN community.
 {{< /ingress >}}
-
-**The video will be published shortly.**
-{{< distance >}}
 
 ## Agenda
 
