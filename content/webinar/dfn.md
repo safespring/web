@@ -33,7 +33,8 @@ minute6: ""
 {{< ingress>}}
 Safespring is the preferred cloud platform for research and education. Welcome to participate in our webinar regarding our services under OCRE for the X-WIN community.
 {{< /ingress >}}
-{{< localbutton "See live September 8th" "https://us02web.zoom.us/webinar/register/1916618659162/WN_cLkVjwdAQA--xAxq6-GQFg" >}}
+
+**The video will be published shortly.**
 {{< distance >}}
 
 ## Agenda
