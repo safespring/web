@@ -34,21 +34,21 @@
         }</script>
 
         {{ if .Params.timecodes }}<div class="webinarplaylist-container shadow-1">
-          <h3>Avsnitt</h3>
+          <h3>{{ if .Params.timecodetitle }}{{ .Params.timecodetitle }}{{ else }}Avsnitt{{ end }}</h3>
           <div class="webinarplaylist">
           <ul>
-            {{ if .Params.chapter1 }}<a href="javascript:void(0);" onclick="setCurrentTime(0)"><li>{{ .Params.chapter1 }} <span>{{ .Params.minute1 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter2 }}<a href="javascript:void(0);" onclick="setCurrentTime(1)"><li>{{ .Params.chapter2 }} <span>{{ .Params.minute2 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter3 }}<a href="javascript:void(0);" onclick="setCurrentTime(2)"><li>{{ .Params.chapter3 }} <span>{{ .Params.minute3 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter4 }}<a href="javascript:void(0);" onclick="setCurrentTime(3)"><li>{{ .Params.chapter4 }} <span>{{ .Params.minute4 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter5 }}<a href="javascript:void(0);" onclick="setCurrentTime(4)"><li>{{ .Params.chapter5 }} <span>{{ .Params.minute5 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter6 }}<a href="javascript:void(0);" onclick="setCurrentTime(5)"><li>{{ .Params.chapter6 }} <span>{{ .Params.minute6 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter7 }}<a href="javascript:void(0);" onclick="setCurrentTime(6)"><li>{{ .Params.chapter7 }} <span>{{ .Params.minute7 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter8 }}<a href="javascript:void(0);" onclick="setCurrentTime(7)"><li>{{ .Params.chapter8 }} <span>{{ .Params.minute8 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter9 }}<a href="javascript:void(0);" onclick="setCurrentTime(8)"><li>{{ .Params.chapter9 }} <span>{{ .Params.minute9 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter10 }}<a href="javascript:void(0);" onclick="setCurrentTime(9)"><li>{{ .Params.chapter10 }} <span>{{ .Params.minute10 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter11 }}<a href="javascript:void(0);" onclick="setCurrentTime(10)"><li>{{ .Params.chapter11 }} <span>{{ .Params.minute11 }}</span></li></a>{{ end }}
-            {{ if .Params.chapter12 }}<a href="javascript:void(0);" onclick="setCurrentTime(11)"><li>{{ .Params.chapter12 }} <span>{{ .Params.minute12 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter1 }}<a href="javascript:void(0);" onclick="setCurrentTime(0)"><li><span>{{ .Params.chapter1 }}</span> <span class="timer">{{ .Params.minute1 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter2 }}<a href="javascript:void(0);" onclick="setCurrentTime(1)"><li><span>{{ .Params.chapter2 }}</span> <span class="timer">{{ .Params.minute2 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter3 }}<a href="javascript:void(0);" onclick="setCurrentTime(2)"><li><span>{{ .Params.chapter3 }}</span> <span class="timer">{{ .Params.minute3 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter4 }}<a href="javascript:void(0);" onclick="setCurrentTime(3)"><li><span>{{ .Params.chapter4 }}</span> <span class="timer">{{ .Params.minute4 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter5 }}<a href="javascript:void(0);" onclick="setCurrentTime(4)"><li><span>{{ .Params.chapter5 }}</span> <span class="timer">{{ .Params.minute5 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter6 }}<a href="javascript:void(0);" onclick="setCurrentTime(5)"><li><span>{{ .Params.chapter6 }}</span> <span class="timer">{{ .Params.minute6 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter7 }}<a href="javascript:void(0);" onclick="setCurrentTime(6)"><li><span>{{ .Params.chapter7 }}</span> <span class="timer">{{ .Params.minute7 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter8 }}<a href="javascript:void(0);" onclick="setCurrentTime(7)"><li><span>{{ .Params.chapter8 }}</span> <span class="timer">{{ .Params.minute8 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter9 }}<a href="javascript:void(0);" onclick="setCurrentTime(8)"><li><span>{{ .Params.chapter9 }}</span> <span class="timer">{{ .Params.minute9 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter10 }}<a href="javascript:void(0);" onclick="setCurrentTime(9)"><li><span>{{ .Params.chapter10 }}</span> <span class="timer">{{ .Params.minute10 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter11 }}<a href="javascript:void(0);" onclick="setCurrentTime(10)"><li><span>{{ .Params.chapter11 }}</span> <span class="timer">{{ .Params.minute11 }}</span></li></a>{{ end }}
+            {{ if .Params.chapter12 }}<a href="javascript:void(0);" onclick="setCurrentTime(11)"><li><span>{{ .Params.chapter12 }}</span> <span class="timer">{{ .Params.minute12 }}</span></li></a>{{ end }}
           </ul>
         </div>
         </div>{{ else }}{{ end }}{{ else }}{{ end }}

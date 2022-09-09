@@ -1290,32 +1290,36 @@ color: var(--unCheckedColor);
 	.webinarplaylist {
 	}
 
-	.webinarplaylist ul li::before {
-		font-family: "Font Awesome 5 Free";
-		content: "\f144";
-		color: var(--clear-blue-color);
-		padding: 20px;
-	}
+		.webinarplaylist ul li::before {
+			display: inline-block;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+			font-family: "Font Awesome 6 Pro";
+			content: "\f144";
+			color: var(--clear-blue-color);
+			padding: 0px 15px;
+		}
 
-	.webinarplaylist ul li:hover:before {
-		background-color: #F2F7F9;
-	}
+		.webinarplaylist ul li:hover:before {
+			background-color: #F2F7F9;
+		}
 
-	.webinarplaylist ul li {
-		font: 18px var(--hind-font) !important;
-		color: var(--main-color) !important;
-		margin: 0px;
-		padding: 15px 0;
-		border-bottom: 0.25px solid #E8EFF3;
-		list-style-type: none;
-		list-style-position: outside;
-		line-height: 1 !important;
-	}
-
-	.webinarplaylist ul li span {
-		float:right;
-		padding: 0px 15px 0 0;
-	}
+		.webinarplaylist ul li {
+			display: flex;
+			align-items: center;
+			font: 18px var(--hind-font) !important;
+			color: var(--main-color) !important;
+			margin: 0;
+			padding: 15px 0;
+			border-bottom: 0.25px solid #E8EFF3;
+			list-style-type: none;
+			list-style-position: outside;
+			line-height: 1 !important;
+		}
+			.webinarplaylist ul li .timer {
+				margin-left:auto;
+				padding: 3px 15px 0 0;
+			}
 
 	.webinarplaylist ul li a{
 		font: 20px var(--hind-font) !important;
