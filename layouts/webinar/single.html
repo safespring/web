@@ -34,7 +34,7 @@
         }</script>
 
         {{ if .Params.timecodes }}<div class="webinarplaylist-container shadow-1">
-          <h3>Avsnitt</h3>
+          <h3>{{ if .Params.timecodetitle }}{{ .Params.timecodetitle }}{{ else }}Avsnitt{{ end }}</h3>
           <div class="webinarplaylist">
           <ul>
             {{ if .Params.chapter1 }}<a href="javascript:void(0);" onclick="setCurrentTime(0)"><li>{{ .Params.chapter1 }} <span>{{ .Params.minute1 }}</span></li></a>{{ end }}
