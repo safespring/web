@@ -13,7 +13,7 @@ language: "En"
 toc: "Table of contents"
 ---
 {{< ingress >}}
-At Safespring we promote as much automation as possible using standard tools
+Safespring promote as much automation as possible using standard tools
 like Terraform and Ansible. Sometimes, however, it is necessary to dig one step
 deeper in order to find some missing pieces of information in order to create a complete automation.
 {{</ingress >}}
@@ -24,6 +24,7 @@ based compute service are now integrated. It means that once you have access to 
 compute platform you also can fetch credentials for accessing the integrated S3
 service through the web GUI and/or the command line interface (CLI).
 
+### Openshift installer
 We have created an [Openshift installer][okdinstaller] that makes it easy to
 install Openshift on Safespring by wrapping some tooling around the official
 [UPI installer][okdupi].
@@ -40,6 +41,7 @@ The Openshift installer was created before Safespring had S3 integrated into the
 compute service and it was a bit cumbersome that the installer depended on a
 manually maintained S3 service, which was the method used previously.
 
+### Fetch credentials
 Now that S3 is integrated the installer should automatically fetch credentials
 and S3 endpoint URL and create a bucket, upload the ignition file to the
 bucket, presign it and inject the presign url into the ignition file for the

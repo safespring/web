@@ -98,6 +98,7 @@ li {
 
 #TableOfContents ul>li {
 	list-style: none;
+	margin-top: 15px;
 }
 #TableOfContents ul>li>a {
 	font: var(--hind-light-weight) 16px var(--hind-font);
@@ -121,9 +122,9 @@ li {
 	margin-left: -1em;
 }
 
-#TableOfContents ul>li>ul {
+#TableOfContents ul>li>ul>li {
 	margin-left: 17px;
-	margin-bottom: 15px;
+	margin-top: 0px !important;
 }
 
 p, ol {
