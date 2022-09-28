@@ -26,6 +26,6 @@ aliases:
 Video-feed:en är länkad till en vanligt video-tagg och publicerad på en standardsida. Kontakta Marcus eller Gabriel vid frågor.
 {{</ ingress >}}
 
-<video src="rtmp://rtmp.safedc.services/live/obs_stream">
+<video src="https://rtmp.safedc.services/obs_stream.m3u8">
     Your browser does not support the VIDEO tag and/or RTP streams.
 </video>
