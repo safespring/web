@@ -26,7 +26,7 @@ player.play();
 <script>
   var player = new Clappr.Player(
   {
-    source: "https://rtmp.safedc.services/obs_stream.m3u8",
+    source: "rtmp://rtmp.safedc.services/live/stream.",
     parentId: "#player",
     plugins: {'playback': [RTMP]},
     rtmpConfig: {
