@@ -1,4 +1,4 @@
-<video id='hls-example'  class="video-js" height="394" width="700" style="border-radius: 10px;" controls>
+<!--<video id='hls-example'  class="video-js" height="394" width="700" style="border-radius: 10px;" controls>
 <source type="" src="rtmp://rtmp.safedc.services/live/stream">
 </video>
 <style media="screen">
@@ -13,4 +13,17 @@
 <script>
 var player = videojs('hls-example');
 player.play();
+</script>-->
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/hlsjs-playback@latest/dist/hlsjs-playback.min.js"></script>
+<div id="player"></div>
+<script>
+  var player = new Clappr.Player(
+  {
+    source: "https://rtmp.safedc.services/stream.m3u8",
+    plugins: [HlsjsPlayback],
+    parentId: "#player"
+  });
 </script>
