@@ -1,4 +1,4 @@
-baseURL = "safespring.com"
+baseURL = "/"
 languageCode = "sv-SE"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
