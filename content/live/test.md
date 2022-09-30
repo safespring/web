@@ -27,11 +27,3 @@ Video-feed:en är länkad till en vanligt video-tagg och publicerad på en stand
 {{</ ingress >}}
 
 {{< livevideo-rtmp >}}
-{{< note "RTMP Gabriel" >}}
-xxx
-{{< /note >}}
-
-{{< livevideo >}}
-{{< note "HLS Marcus" >}}
-Video.js
-{{< /note >}}
