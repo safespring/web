@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "safespring.com"
 languageCode = "sv-SE"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
@@ -64,6 +64,11 @@ SectionPagesMenu = "main"
     changefreq = "daily"
     filename = "sitemap.xml"
     priority = 0.5
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
 
 [markup]
   [markup.highlight]
