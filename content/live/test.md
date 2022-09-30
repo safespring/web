@@ -29,7 +29,7 @@ Video-feed:en är länkad till en vanligt video-tagg och publicerad på en stand
 
 {{< livevideo >}}
 {{< note "Marcus" >}}
-https://https://rtmp.safedc.services/stream/obs_stream.m3u8
+https://https://rtmp.safedc.services/obs_stream.m3u8
 {{< /note >}}
 
 ---------------------------------------------------------------------
