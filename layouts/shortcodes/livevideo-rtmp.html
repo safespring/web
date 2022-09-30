@@ -16,20 +16,18 @@ player.play();
 </script>
 
 rtmp://rtmp.safedc.services/live/stream
-
+-->
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
   <div id="player"></div>
   <script>
     var player = new Clappr.Player({
       source: "https://rtmp.safedc.services/stream.m3u8",
-      mineType: "application/x-mpegURL",
-      parentId: "#player",
+      parentId: "#player"
     });
   </script>
 
--->
-
+<!--
 <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
 
 <video id="video"></video>
@@ -50,4 +48,4 @@ rtmp://rtmp.safedc.services/live/stream
     hls.attachMedia(video);
     video.play();
   }
-</script>
+</script>-->
