@@ -26,4 +26,15 @@ aliases:
 Video-feed:en är länkad till en vanligt video-tagg och publicerad på en standardsida. Kontakta Marcus eller Gabriel vid frågor.
 {{</ ingress >}}
 
+
 {{< livevideo >}}
+{{< note "HLS" >}}
+https://rtmp.safedc.services/obs_stream.m3u8
+{{< /note >}}
+
+---------------------------------------------------------------------
+
+{{< livevideo-rtmp >}}
+{{< note "RTMP" >}}
+https://rtmp.safedc.services/stream.m3u8
+{{< /note >}}
