@@ -28,7 +28,7 @@ Video-feed:en är länkad till en vanligt video-tagg och publicerad på en stand
 
 {{< livevideo-rtmp >}}
 {{< note "RTMP Gabriel" >}}
-Clappr
+xxx
 {{< /note >}}
 
 {{< livevideo >}}
