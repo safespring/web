@@ -13,7 +13,11 @@
 <script>
 var player = videojs('hls-example');
 player.play();
-</script>-->
+</script>
+
+    parentId: "#player"
+
+  -->
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
@@ -22,8 +26,7 @@ player.play();
 <script>
   var player = new Clappr.Player(
   {
-    source: "https://rtmp.safedc.services/stream.m3u8",
     plugins: [HlsjsPlayback],
-    parentId: "#player"
+    source: "https://rtmp.safedc.services/stream.m3u8",
   });
 </script>
