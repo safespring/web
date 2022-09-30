@@ -28,10 +28,10 @@ Video-feed:en är länkad till en vanligt video-tagg och publicerad på en stand
 
 {{< livevideo-rtmp >}}
 {{< note "RTMP Gabriel" >}}
-rtmp://rtmp.safedc.services/live/stream
+Clappr
 {{< /note >}}
 
 {{< livevideo >}}
 {{< note "HLS Marcus" >}}
-https://rtmp.safedc.services/obs_stream.m3u8
+Video.js
 {{< /note >}}
