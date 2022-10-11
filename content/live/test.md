@@ -1,7 +1,7 @@
 ---
 title: "Test av Safespring live"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 section: "Kubernetes"
 intro: "Genom RTMP kan vi sända live till vår egen webbplats."
 background: "safespring_background_medtech2.svg"
@@ -27,11 +27,3 @@ Video-feed:en är länkad till en vanligt video-tagg och publicerad på en stand
 {{</ ingress >}}
 
 {{< livevideo-rtmp >}}
-{{< note "RTMP Gabriel" >}}
-xxx
-{{< /note >}}
-
-{{< livevideo >}}
-{{< note "HLS Marcus" >}}
-Video.js
-{{< /note >}}

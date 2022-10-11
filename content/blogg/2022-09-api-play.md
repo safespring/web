@@ -102,7 +102,8 @@ EOF
 ```
 
 For this function to work you must make sure the environment variables in the
-function are properly set before usage.
+function are properly set before usage (in the same way as you would when using
+the Openstack CLI or Terraform)..
 
 Next, we'll use curl to fetch some JSON data from the OpenStack API:
 
@@ -132,8 +133,8 @@ to the project it was created in. Personal credentials may have much wider
 access and hence it comprises a much bigger impact if breached. Application
 credentials are easy to rotate and (should) have a different (shorter) life
 cycle than your personal credentials, and last but not least, when using
-application credentials you don't expose your personal credentials in the
-code.
+application credentials you don't risk expose your personal credentials when
+using them from runninge code.
 
 So let's see how we can get the S3 endpoint URL authenticating with a set of
 application credentials. The procedure is not much different. The difference is
@@ -176,7 +177,7 @@ conn = openstack.connect(cloud=cloud, username=os.environ['OS_USERNAME'], passwo
 print(conn.endpoint_for('s3'))
 ```
 
-To get the S#3 endpoint URL using Ansible you can do this:
+To get the S3 endpoint URL using Ansible you can do this:
 
 ```ansible
   - name: Authenticate to the cloud and retrieve the service catalog
