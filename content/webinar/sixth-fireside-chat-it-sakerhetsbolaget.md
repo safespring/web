@@ -32,7 +32,7 @@ minute5: "11:46"
 Vi pratar med Patrik på IT-Säkerhetsbolaget AB om det senaste i debatten om molntjänster.
 {{< /ingress >}}
 
-President Biden har undertecknat en presidentorder om förbättrade skyddsåtgärder för USA:s signalspaningsverksamhet. Vad innebär det? Lyssna och ställ dina frågor direkt till oss här på LinkedIn. Kommendera vilka frågor du har direkt i det här inlägget så tar vi upp det.
+President Biden har undertecknat en presidentorder om förbättrade skyddsåtgärder för USA:s signalspaningsverksamhet. Vad innebär det? Lyssna och ställ dina frågor direkt till oss här på Safespring. Kommentera vilka frågor du har direkt till oss på LinkedIn där det här eventet finns.
 
 ### Dagens frågor
 1. Vad är en Executive order, och får den konsekvenser för oss?
