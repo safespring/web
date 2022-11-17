@@ -8,7 +8,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserad backuptjänst (Backup) behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"
 cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servrar."
-background: "safespring-backup-background.svg"
+background: "safespring-backup.jpg"
 form: "yes"
 youtubeid: "xixq-fvTN0M"
 sidebarlinkname: "Boka demo"
