@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="radial-gradient" cx="2.411" cy="1.417" r="2.475" gradientTransform="translate(0 -0.007) scale(1 0.963)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#32cd32"/>
+      <stop offset="1" stop-color="#eafcea"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip-Backup">
+      <rect width="800" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="Backup" clip-path="url(#clip-Backup)">
+    <rect width="800" height="800" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_51" data-name="Ellipse 51" cx="322" cy="322" r="322" transform="translate(-111 54)" opacity="0.888" fill="url(#radial-gradient-2)"/>
+  </g>
+</svg>
