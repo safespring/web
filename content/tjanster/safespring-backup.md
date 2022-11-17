@@ -1,13 +1,18 @@
 ---
 title: "Safespring Backup"
+cardtitle: "Backup"
+cardicon: "fa-solid fa-cloud-arrow-up"
+cardcolor: "#32CD32"
+cardorder: "5"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserad backuptjänst (Backup) behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"
+cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servrar."
 background: "safespring-backup.jpg"
 form: "yes"
-youtubeid: "xixq-fvTN0M"
-sidebarlinkname: "Ladda ner produktblad"
-sidebarlinkurl: "/marketing/safespring-backup-web.pdf"
+youtubeid: "JCXm-Adpf40"
+sidebarlinkname: "Boka demo"
+sidebarlinkurl: "/demo/"
 socialmedia: "safespring-backup.jpg"
 aliases:
     - /backup/
@@ -15,10 +20,7 @@ aliases:
 section: "Public Cloud"
 ---
 
-<video poster="/tjanster/images/safespring_backup.jpg" width="100%" style="border-radius: 5px;" controls="true">
-<source type="video/mp4" src="/tjanster/images/safespring_backup.mp4">
-<track src="/tjanster/images/safespring_backup.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
-</video>
+{{< youtube "JCXm-Adpf40">}}
 
 
 ## Backup som tjänst
