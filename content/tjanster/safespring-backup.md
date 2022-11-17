@@ -10,7 +10,7 @@ intro: "Med Safesprings molnbaserad backuptjänst (Backup) behöver du inte inve
 cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servrar."
 background: "safespring-backup.jpg"
 form: "yes"
-youtubeid: "xixq-fvTN0M"
+youtubeid: "JCXm-Adpf40"
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo/"
 socialmedia: "safespring-backup.jpg"
@@ -20,10 +20,7 @@ aliases:
 section: "Public Cloud"
 ---
 
-<video poster="/tjanster/images/safespring_backup.jpg" width="100%" style="border-radius: 5px;" controls="true">
-<source type="video/mp4" src="/tjanster/images/safespring_backup.mp4">
-<track src="/tjanster/images/safespring_backup.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
-</video>
+{{< youtube >}}
 
 
 ## Backup som tjänst
