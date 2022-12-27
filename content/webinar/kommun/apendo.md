@@ -1,5 +1,6 @@
 ---
 title: "Öka kommunens samhällsnytta med digital assistent"
+language: "Se"
 publishDate: "2020-07-29T10:30:14+02:00"
 draft: false
 tags: ["Svenska"]

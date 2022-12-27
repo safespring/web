@@ -1,5 +1,6 @@
 ---
 title: "Safespring DevOps"
+language: "Se"
 date: 2019-04-30T08:58:58+01:00
 draft: false
 intro: "Många företag vill idag modernisera sitt sätt att arbeta men ser ingen klar väg framåt. Safespring erbjuder färdiga paket för att snabbare kunna utnyttja molnet fullt ut."

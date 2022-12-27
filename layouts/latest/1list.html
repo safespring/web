@@ -2,8 +2,10 @@
 {{ partial "g-tag-manager.html" . }}
 {{ partial "header.html" . }}
 <!-- HEADING -->
-<div class="heading-sub" style="background: url(/img/blue/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
-	<div class="heading-content">
+<div class="heading-default-single" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+    {{ .Render "li3" }}
+  </div>
+		<div class="heading-content">
 		<h1>Latest updates from Safespring</h1>
 		<p>Choosse your prefered language and section.</p>
 	</div>
@@ -76,10 +78,8 @@
 				</div>
 				<div class="tf-items-container">
 					{{ range $pages.ByPublishDate.Reverse }}
-					<div class="tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}" data-section="{{ .Section }}" data-authors="{{ with .Params.author }}{{ if eq ( printf "%T" . ) "string" }}{{ . | replaceRE "[.]" "_" | urlize }}{{ else if eq ( printf "%T" . ) "[]string" }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{end}}{{end}}{{else}}no-author{{end}}">
-						<div class="flexcontainer">
-							{{ .Render "li"}}
-						</div>
+					<div class="content-container tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}" data-section="{{ .Section }}" data-authors="{{ with .Params.author }}{{ if eq ( printf "%T" . ) "string" }}{{ . | replaceRE "[.]" "_" | urlize }}{{ else if eq ( printf "%T" . ) "[]string" }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{end}}{{end}}{{else}}no-author{{end}}">
+							{{ .Render "li-latest"}}
 					</div>
 					{{ end }}
 				</div>

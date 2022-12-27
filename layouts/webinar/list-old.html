@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-{{ partial "g-tag-manager.html" . }}
+
 <body>
  {{ partial "header.html" . }} <!-- HEADING -->
 <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
@@ -18,9 +18,8 @@
       {{ $sectionPages := where .Pages "Section" .Section }}
       {{ if ge (len $sectionPages) 1 }}
       {{ range $sectionPages }}
-      {{ .Render "li" }}
+      {{ .Render "li-latest" }}
         {{ end }}
-      </ul>
       {{ end }}
 
     </div>

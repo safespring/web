@@ -53,5 +53,32 @@
     <script src="/img/lazysizes.min.js" async></script>
   <!-- UPSALES visitor tag -->
   <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js"></script>
+  <script type="text/javascript" src="/js/text-balancer.js"></script>
+
   <!-- END UPSALES visitor tag -->
+      <style>
+      .balance-text {
+        visibility: hidden;
+      }
+
+      @media (scripting: none) {
+        .balance-text {
+          visibility: visible;
+        }
+      }
+
+      @supports (text-wrap: balance) {
+        .balance-text {
+          text-wrap: balance;
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript>
+      <style>
+        .balance-text {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
 </head>

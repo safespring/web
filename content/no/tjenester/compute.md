@@ -1,10 +1,16 @@
 ---
-title: "Vår skybaserte infrastruktur­tjeneste"
+title: "Vår skybaserte infrastrukturtjeneste"
+cardtitle: "Compute"
+cardicon: "fa-solid fa-server"
+cardcolor: "#417DA5"
+cardorder: "1"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge."
-background: "safespring-compute.jpg"
+cardintro: "Skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norden."
+background: "safespring-compute-background.svg"
 form: "no"
+documentation: "Compute"
 sidebarlinkname: "Last ned tjenestebeskrivelse"
 sidebarlinkurl: "/services/safespring-compute-web-no.pdf"
 socialmedia: "safespring-compute.jpg"

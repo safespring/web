@@ -1,5 +1,6 @@
 ---
 title: "Safespring Cloud Platform and OCRE"
+language: "En"
 date: "2022-09-08"
 publishDate: "2022-09-08"
 draft: false

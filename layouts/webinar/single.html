@@ -1,19 +1,17 @@
 {{ partial "head.html" . }}
-    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+<!-- NAVBAR -->
     <body>
      {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
 
      <!-- HEADING -->
-     <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
-       <div class="heading-content">
+     <div class="heading-default-single" style="background: url(/img/background/safespring-blue-fade2.svg); background-size: cover; background-position: center;">
          {{ .Render "li3" }}
        </div>
-     </div>
 
   <!-- CONTENT -->
-  <main class="content-chalmers">
-    {{ if .Params.youtube }}
-      <div class="webinarplayer">
+  {{ if .Params.youtube }}
+  <div class="main-default-single">
+    <div class="webinar-default-single">
       <div class="webinarvideo iframe-aspect-ratio iframe responsive-container"><div id="player"></div></div> <script>var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -32,8 +30,8 @@
           var object = [ {{ .Params.timecodes | safeJS }} ];
           player.seekTo(object[slideNum]);
         }</script>
-
-        {{ if .Params.timecodes }}<div class="webinarplaylist-container shadow-1">
+    </div>
+        {{ if .Params.timecodes }}<div class=" webinarplaylist-container shadow-1">
           <h3>{{ if .Params.timecodetitle }}{{ .Params.timecodetitle }}{{ else }}Avsnitt{{ end }}</h3>
           <div class="webinarplaylist">
           <ul>
@@ -51,16 +49,17 @@
             {{ if .Params.chapter12 }}<a href="javascript:void(0);" onclick="setCurrentTime(11)"><li><span>{{ .Params.chapter12 }}</span> <span class="timer">{{ .Params.minute12 }}</span></li></a>{{ end }}
           </ul>
         </div>
-        </div>{{ else }}{{ end }}{{ else }}{{ end }}
-              </div>
-        <div class="ch-content">
-      <div class="content-body">
+        </div>
+              {{ else }}{{ end }}{{ else }}{{ end }}</div>
+        <div class="main-default-single">
+      <div class="content-default-single">
        {{ .Content }}
       </div>
+      <div class="sidebar-default-single" style="width:350px"></div>
     </div>
       <!-- SIDEBAR -->
       {{ partial "webinar-side-bar.html" . }}
     </main>
     <!-- FOOTER -->
-    {{ if eq .Params.language "En" }}{{ partial "en-footer.html" .}}{{ else if eq .Params.language "No" }}{{ partial "no-footer.html" . }}{{ else }}{{ partial "footer.html" . }}{{ end }}
+    {{ partial "footer.html" . }}
 </body>

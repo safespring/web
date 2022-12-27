@@ -1,22 +1,29 @@
-  <div class="content-meta-post">
-    {{ if .Params.toplogo }}<img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">{{ end }}
-    <a class="{{ if eq .Params.darkmode `off` }}content-category-blogg-light{{ else }}content-category-blogg{{ end }}" href="/{{ .Section }}">
-      {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
-    </a>
-  </div>
-  <br>
-  <h1 class="post-heading-firstpage {{ if eq .Params.darkmode `off` }}light-backround{{ end }}">
-    {{ .Title }}
-  </h1>
-  <div class="content-summary-blogg {{ if eq .Params.darkmode `off` }}light-backround{{ end }}">
-    {{ if .Params.intro }}{{ .Params.intro }}</br></br>{{ else }}{{ end }}</br>
+  <div style="max-width: 700px;">
+    <div class="section">
+      {{ if .Params.toplogo }}
+      <img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">
+      {{ end }}
+      <a class="" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
+        {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
+      </a>
+    </div>
+    <h1 class="balance-text" style="color: {{ .Params.cardcolor }}">
+      {{ .Title }}
+    </h1>
+    {{ if .Params.intro }}
+    <p>{{ .Params.intro }}</p>
+    {{ else }}{{ end }}
     {{ if .Params.sidebarlinkurl }}
-    <a href="{{ .Params.sidebarlinkurl }}" target="_blank" id="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}</a>
+    <div class="header-button">
+      <a href="{{ .Params.sidebarlinkurl }}" target="_blank" class="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;
+        <i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}
+      </a>
+    </div>
     {{ end }}
     {{ if .Params.logo }}
-    <img src="{{ .Params.logo }}" alt="Logotyp" class="">
+    <img src="{{ .Params.logo }}" alt="Logotyp" class="logo">
     {{ else }}
     {{ end }}
   </div>
-  <br>
-  <br>
+  <div class="w350">
+  </div>

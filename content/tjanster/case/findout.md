@@ -1,5 +1,6 @@
 ---
 title: "Migrerade från amerikanskt moln till en helt svensk lösning med bibehållen funktionalitet"
+language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 darkmode: "off"

@@ -1,5 +1,6 @@
 ---
 title: "MedTech best practice: Säker Kubernetes inom Europa"
+language: "Se"
 publishDate: "2021-09-15T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]

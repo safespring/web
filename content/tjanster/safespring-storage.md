@@ -1,9 +1,15 @@
 ---
 title: "Safespring S3 Storage"
+language: "Se"
+documentation: "Storage"
+cardtitle: "Storskalig lagring"
+cardicon: "fak fa-safespring-s3"
+cardcolor: "#FA690F"
+cardorder: "2"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Safespring stödjer S3 och är byggt på marknadsledande lagringsteknologin Ceph."
-background: "safespring-storage.jpg"
+intro: "Safespring stödjer S3 och ger snabb eller långtidslagring för er data."
+background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Läs Solution Brief"
 sidebarlinkurl: "/solution-brief/objektlagring/"

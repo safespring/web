@@ -1,5 +1,6 @@
 ---
 title: "Safespring webbinarium on-demand"
+language: "Se"
 date: 2020-12-09T13:14:45+01:00
 draft: false
 ---

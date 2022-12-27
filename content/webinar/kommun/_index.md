@@ -1,5 +1,6 @@
 ---
 title: "Safespring webbinarium för kommuner"
+language: "Se"
 date: "2018-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"
 eventdatum: "10 nov. 2020"

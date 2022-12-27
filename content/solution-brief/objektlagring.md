@@ -1,19 +1,19 @@
 ---
 title: "Objektlagring med protokollet S3 ger dig oändlig flexibilitet"
+language: "Se"
 date: 2018-06-20
 draft: false
 author: ""
 tags: ["Svenska"]
+documentation: "Storage"
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"
 intro: "Denna solution brief går igenom lagringsstandarden S3 och ger dig fyra exempel på hur det kan användas idag. Du kommer lära dig hur du kan använda dig av den på olika sätt i din verksamhet, säkert och modernt, utan att din data behöver lämnar landet."
 card: "safespring-s3.svg"
 sidebarimage: "safespring-s3.svg"
-background: "safespring-s3.png"
-eventbild: "safespring_background_27.jpg"
+background: "safespring-storage.png"
 socialmediabild: "safespring_social_27.gif"
 socialmedia: "/blogg/socialmedia/safespring_social_27.gif"
 toc: "Innehållsförteckning"
-language: "Se"
 ---
 
 {{< ingress >}}

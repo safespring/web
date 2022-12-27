@@ -1,11 +1,14 @@
 ---
 title: "La utviklerne fokusere på kjerne­virksomheten"
-cardtitle: "Safespring og Kubernetes"
+cardtitle: "Containerplattform"
+cardicon: "fa-solid fa-container-storage"
+cardcolor: "#3C9BCD"
+cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
 intro: "Kjør Compliant Kubernetes som en administrert tjeneste i henhold til GDPR i Europa."
-background: "safespring_background_medtech.jpg"
+background: "safespring-kubernetes-background.svg"
 card: "safespring-kubernetes.svg"
 sidebarimage: "safespring-kubernetes.svg"
 socialmedia: "safespring_social_01.jpg"
@@ -45,7 +48,7 @@ Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Complia
 
 {{< localtextbutton "Utforsk kildekoden" "https://compliantkubernetes.io/" >}}
 
-<a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
+![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">
@@ -57,17 +60,13 @@ Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Complia
 <div style="margin-bottom:100px;">
 </div>
 
-## Bakgrunn
-{{< ingress >}}Det er derfor mange SaaS-selskaper velger å flytte persondataene sine hjem til Europa{{< /ingress >}}
+## Forskjellen på lokal og utenlandsk skytjeneste for SaaS-selskaper
+{{< ingress >}}Det finnes mange grunner til at SaaS-selskaper velger å flytte personopplysningene sine tilbake til Europa.{{< /ingress >}}
 
-De fleste tjenester som behandler personlig informasjon som navn, telefonnumre, hjemmeadresser, og i mange tilfeller sensitive helsedata, må håndteres med stor forsiktighet.
+Mange tjenester som håndterer personlig informasjon, som navn, telefonnumre, hjemmeadresser og i mange tilfeller sensitive helsedata, må håndteres med stor forsiktighet. Det finnes mange regler og lover som må følges når det gjelder slik informasjon. "Compliant Kubernetes" reduserer byrden med å være i samsvar med en rekke lover og sikkerhetsstandarder, som GDPR, HIPAA, PCI-DSS og andre standarder som overlapper med ISO-27001.
 
-Det er mange regler og lover som skal overholdes når det gjelder slike opplysninger. "Compliant Kubernetes" reduserer byrden med å være i samsvar med en hel del lover og sikkerhetsstandarder, f.eks. GDPR,HIPAA,PCI-DSS og andre standarder som overlapper med ISO-27001
+Personopplysninger og helsedata reguleres av den norske personopplysningsloven og GDPR, samt helseregisterloven. Hvis du håndterer personopplysninger og sensitive helsedata uten å følge regelverket, kan du bryte loven. Hvis tjenesten som håndterer personopplysninger befinner seg i en amerikansk skytjeneste, bryter den EUs personvernforordning (GDPR) ifølge en dom fra EU-domstolen i juli 2020.
 
-Personopplysninger og helsedata er regulert av personopplysningsloven i Norge og GDPR , samt helseregisterloven. Behandler du persondata og sensitive helsedata uten å overholde regelverket?
+I Sverige tas dette på alvor, og derfor kreves lokalt eierskap av skytjenester som håndterer personopplysninger. Dette bør også tas på alvor i Norge, da de samme reglene gjelder innenfor EU/EØS når det gjelder GDPR. Safespring har hovedeierskap i Sverige og infrastruktur i Sverige og Norge. Derfor faller vi utenfor spørsmålet om overføring av data til land som ikke reguleres av EU-regler, som GDPR. Land utenfor EU/EØS har ikke tilgang til utlevering av data.
 
-Hvis tjenesten som håndterer personopplysninger og ligger i en amerikansk skytjeneste, bryter tjenesten EUs personvernforordning (GDPR) i henhold til [EU-domstolens kjennelse i juli 2020](https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/652073/EPRS_ATA(2020)652073_EN.pdf).
-
-I Sverige tar man dette på alvor og stiller derfor krav om lokalt eierskap til skytjenester som skal behandle persondata. Dette bør man ta på alvor i Norge også, da det i stor grad er de samme reglene som gjelder innenfor EU/EØS med hensyn til GDPR. Safespring har hovedeierskap i Sverige og infrastruktur i Sverige og Norge. Vi havner derfor utenfor spørsmålet om overføring av data til land som ikke er regulert av regler i EU, f.eks. GDPR. Land utenfor EU/EØS har dermed ikke tilgang til utlevering av data.
-
-Øk konkurranseevnen og sikkerhetsnivået med riktig skytjeneste og øk effektivitet og salg.
+Øk konkurranseevnen og sikkerhetsnivået med riktig skytjeneste og øk effektiviteten og salget ditt.

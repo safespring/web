@@ -1,13 +1,16 @@
 ---
 title: "Kontakta oss"
+language: "Se"
 date: "2017-11-22"
 draft: false
+intro: "Safespring har verksamhet i Sverige och i Norge med huvudkontor i Solna. Enklast kommer du i kontakt med oss via telefon eller mail. "
 tags: ""
 showthedate: false
 pageimage: ""
 ---
-Safespring har verksamhet i Sverige och i Norge med huvudkontor i Solna. Enklast kommer du i kontakt med oss via telefon eller mail. För generella frågor kan du med fördel ringa oss eller skicka ett mail vår info-adress,
-men du är naturligtvis välkommen att kontakta någon av våra medarbetare direkt.
+{{< ingress >}}
+För generella frågor kan du med fördel ringa oss eller skicka ett mail vår info-adress, men du är naturligtvis välkommen att kontakta någon av våra medarbetare direkt.
+{{< /ingress >}}
 
 {{< 2calltoaction "08-55 10 73 70" "tel:+46855107370" "info@safespring.com" "mailto:info@safespring.com" >}}
 

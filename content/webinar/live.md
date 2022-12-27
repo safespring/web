@@ -1,5 +1,6 @@
 ---
 title: "Safespring live på eFörvaltningsdagarna"
+language: "Se"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: true
 tags: ["Svenska"]

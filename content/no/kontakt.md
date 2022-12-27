@@ -5,7 +5,7 @@ date: "2020-09-25"
 draft: false
 language: "No"
 section: "Safespring"
-Language: "No"
+language: "No"
 ---
 <div class="ingress"><p>Safespring har kontorer i Norge og i Sverige med hovedkontor i Stockholm, Sverige.</p></div>
 

@@ -1,4 +1,4 @@
-{{ if .Params.saas }}
+<!--{{ if .Params.saas }}
 <div class="" style="margin-top: 15%;display: grid;grid-column: 8 / span 1;position: sticky;top: -206px;height: fit-content;">
 <div class="content-container">
   <div class="body my-2 p-relative bg-white shadow-1 blue-hover">
@@ -23,26 +23,28 @@
   <a href="{{ .Params.sidebarlink }}" class="button">{{ .Params.sidebarknapp }}</a>
   {{ end }}
 </div>
-{{ else }}
+{{ else }}-->
 <div class="webinar-side-bar">
   <div>
     <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
   </div>
-  <div>
+  <div class="webinar-side-bar-text">
     <h3 class="">Fortsätt se nästa webbinarium</h3>
     <p class="">Många bolag och myndigheter väljer att bygga sina säkra molntjänster på Safesprings plattform. Ta del av flera informativa webbinarium.</p>
     <br>
   </div>
-  <div>
+  <div class="webinar-side-bar-cards">
     {{ if eq .Params.audience "kommun" }}
     {{ range where .Site.RegularPages ".Params.audience" "kommun" }}
-    {{ .Render "li" }}
+    {{ .Render "li-latest" }}
     {{ end }}
     {{ else }}
     {{ range where .Site.RegularPages ".Params.audience" "saas" }}
-    {{ .Render "li" }}
+    <div class="content-container">
+    {{ .Render "li-latest" }}
+    </div>
     {{ end }}
     {{ end }}
   </div>
 </div>
-{{ end }}
+<!--{{ end }}-->

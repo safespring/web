@@ -1,5 +1,6 @@
 ---
 title: "Om oss (original)"
+language: "Se"
 date: "2017-11-22"
 draft: false
 tags: ""

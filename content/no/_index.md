@@ -1,7 +1,8 @@
 ---
-title: "En bærekraftig plattform for sikre skytjenester"
-intro: "Safespring er en nordisk leverandør av sky og infrastruktur som en tjeneste. Vår plattform er basert på åpen kildekode og åpne standarder. Opplev fordelene med skyen der du beholder kontrollen og digital suverenitet."
+title: "Den nordiske sky­plattformen"
+intro: "Safespring er alternativet som overholder lover og regler innen EU"
 date: "2020-09-25"
 draft: false
 language: "No"
+layout: "index"
 ---

@@ -1,13 +1,14 @@
-+++
-title = "Vi har laget en guide for å bistå ved valg av backuptjeneste."
-intro = "Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning"
-date = "2018-01-22"
-draft = false
-tags = ["Norsk"]
-showthedate = false
-section = "Tech update"
-language = "No"
-+++
+---
+title: "Vi har laget en guide for å bistå ved valg av backuptjeneste"
+intro: "Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning"
+date: "2018-01-22"
+draft: false
+tags: ["Norsk"]
+showthedate: false
+section: "Tech update"
+language: "No"
+documentation: "Backup"
+---
 
 Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv.
 

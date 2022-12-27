@@ -1,9 +1,16 @@
 ---
 title: "Safespring Compute"
-date: 2019-01-07T13:58:58+01:00
+language: "Se"
+documentation: "Compute"
+cardtitle: "Compute"
+cardicon: "fa-solid fa-server"
+cardcolor: "#417DA5"
+cardorder: "1"
+date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "Med Safespring kan du skala upp och ner din infrastruktur efter behov. Levereras från säkra datahallar inom landet."
-background: "safespring-compute.jpg"
+cardintro: "Robust serverkapacitet i molnet för era tjänster. Säkert svensk IaaS."
+background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Kontakta oss"
 sidebarlinkurl: "/kontakt"
@@ -15,7 +22,7 @@ devops: ""
 section: "Public Cloud"
 ---
 
-<video poster="/tjanster/images/safespring_compute.jpg" width="100%" style="border-radius: 5px;" controls="true">
+<video poster="/tjanster/images/safespring_compute.jpg" width="100%" style="border-radius: 10px; background-color:#E8EFF3;" controls>
 <source type="video/mp4" src="/tjanster/images/safespring_compute.mp4">
 <track src="/tjanster/images/safespring_compute.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
@@ -37,15 +44,13 @@ Safespring Compute är baserad på den marknadsledande molnplattformen OpenStack
 
 <div style="margin-bottom:50px;"></div>
 
-### Skaffa lagring till dina applikationer
-Den lagring som behövs till de virtuella instanserna är separerad från noderna där själva instanserna kör i ett Ceph-kluster och kan fås i två varianter:
+![Safespring Compute benefits](/img/safespring-compute-central-blocklagring.svg)
+
+<!--### Skaffa lagring till dina applikationer
+Den lagring som behövs till de virtuella instanserna är separerad från noderna där själva instanserna kör i ett Ceph-kluster och kan fås i två varianter.
 
 - **Fast** — som är optimerat på prestanda.
-- **Large** — som är optimerat på pris.
-
-Genom Safesprings portal kan tjänsten skalas uppåt eller nedåt vid behov. Detta tillsammans med att våra plattformar är mycket kostnadseffektiva kan minska dina kostnader för lagring betydligt samtidigt som du har full flexibilitet.
-
-<br><a href="/tjanster/safespring-storage" id="text-button">Läs mer om lagring</a>
+- **Large** — som är optimerat på pris.-->
 
 
 <div style="margin-bottom:50px;"></div>

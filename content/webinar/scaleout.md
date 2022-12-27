@@ -1,5 +1,6 @@
 ---
 title: "Maskininlärning - från idé till pilot och produktion"
+language: "Se"
 publishDate: "2020-09-03T13:58:35+02:00"
 draft: false
 tags: ["Svenska"]

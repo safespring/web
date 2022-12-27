@@ -1,5 +1,6 @@
 ---
 title: "Svenska molntjänster (Explorer)"
+language: "Se"
 date: "2019-03-28"
 draft: false
 tags: ""

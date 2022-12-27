@@ -1,5 +1,6 @@
 ---
 title: "Private Cloud"
+language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Få hjälp med att sätta upp din egen miljö som vi underhåller. Då får du kraften från molnet - i ditt datacenter."

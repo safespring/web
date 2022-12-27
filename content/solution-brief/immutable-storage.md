@@ -13,7 +13,6 @@ sidebarlinkurl: ""
 card: "safespring-storage.svg"
 background: "safespring-storage.png"
 sidebarimage: "safespring-storage.svg"
-eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"
 toc: "Table of Contents"
 language: "En"
@@ -72,8 +71,3 @@ When that is done you finish the wizard and now the function is enabled on the o
 
 We have explained the importance of offsite backups and why object locking is an important feature. By using it disasters can be avoided at the same time as recovery time (RTO) can be shortened since a restore from tapes can take a long time. With object locking, the best from two worlds can be achieved.
 
-<div class="flexcontainer-shortcode" style="background: var(--text-color);">
-
-{{< services >}}
-
-</div>

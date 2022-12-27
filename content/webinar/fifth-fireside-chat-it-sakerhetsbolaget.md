@@ -1,5 +1,6 @@
 ---
 title: "Kan EU & USAs tänkta nya avtal leda till Schrems III?"
+language: "Se"
 date: "2022-05-10"
 publishDate: "2022-05-02"
 draft: false
@@ -57,7 +58,10 @@ Vad har hänt under första kvartalet 2022. Var med och diskutera, ställ frågo
 
 {{< distance >}}
 
-<a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Se del I</a><br>
-<a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a><br>
-<a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Se del III</a>
-<a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Se del IV</a>
+### Se alla webcasts om debatten kring molntjänster
+1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
+2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
+3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>
+4. <a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Vad säger myndigets­rapporterna om molntjänster?</a><br>
+5. <a href="/webinar/fifth-fireside-chat-it-sakerhetsbolaget/">Kan EU & USAs tänkta nya avtal leda till Schrems III?</a><br>
+

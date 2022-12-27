@@ -1,5 +1,7 @@
 ---
 title: "EU-domstolens ogiltigförklarande av Privacy Shield"
+section: "White Paper"
+language: "Se"
 date: "2020-09-04"
 draft: false
 tags: ["Svenska"]
@@ -11,7 +13,6 @@ sidebarlinkname: "Ladda ner som PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/publications/safespring-white_paper-ogiltigforklarandet_av_privacy_shield.pdf"
 card: "safespring_card_33.jpg"
-eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
 toc: "Innehåll"
 aliases:

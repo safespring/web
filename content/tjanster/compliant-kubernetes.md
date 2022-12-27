@@ -1,10 +1,15 @@
 ---
 title: "Låt era utvecklare fokusera på kärnverksamheten"
+language: "Se"
+cardtitle: "Containerplattform"
+cardicon: "fa-solid fa-container-storage"
+cardcolor: "#3C9BCD"
+cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Kör Compliant Kubernetes som en managerad tjänst."
-background: "safespring_background_medtech.jpg"
+intro: "Kör bland annat Compliant Kubernetes som en managerad tjänst."
+background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Se webbinarium"
@@ -18,7 +23,6 @@ sidebarknapp: "Se direkt"
 sidebarlink: "/webinar/fireside-chat-compliant-kubernetes/"
 saas: ""
 sidebarwhitepaper: ""
-aliases:
 ---
 
 
@@ -90,7 +94,7 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
 
   {{< localtextbutton "Utforska källkoden" "https://compliantkubernetes.io/" >}}
 
-  <a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
+![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
   <div id="contact"></div>
   <div style="margin-bottom:100px;">

@@ -1,5 +1,6 @@
 ---
 title: "Databas som tjänst med hög tillgänglighet"
+language: "Se"
 cardtitle: "Databas som tjänst"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"

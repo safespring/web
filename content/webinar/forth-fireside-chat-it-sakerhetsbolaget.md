@@ -1,5 +1,6 @@
 ---
 title: "Vad säger myndigets­rapporterna om molntjänster?"
+language: "Se"
 date: "2021-12-16"
 publishDate: "2021-11-29"
 draft: false
@@ -34,9 +35,13 @@ minute6: "43:07"
 Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!
 {{< /ingress >}}
 
-<a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Se del I</a><br>
-<a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a><br>
-<a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Se del III</a>
+### Se alla webcasts om debatten kring molntjänster
+1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
+2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
+3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>
+4. <a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Vad säger myndigets­rapporterna om molntjänster?</a><br>
+5. <a href="/webinar/fifth-fireside-chat-it-sakerhetsbolaget/">Kan EU & USAs tänkta nya avtal leda till Schrems III?</a><br>
+
 
 I slutet av året kommer tre omfattande rapporter om molntjänster. Vi tar upp vad de egentligen säger och hur det påverkar befintliga och kommande arbete. Hur ser trenderna ut för 2022?
 

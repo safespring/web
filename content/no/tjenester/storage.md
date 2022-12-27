@@ -1,10 +1,16 @@
 ---
 title: "Storage er basert på Ceph-lagringsteknologi"
+cardtitle: "Storage"
+cardicon: "fak fa-safespring-s3"
+cardcolor: "#FA690F"
+cardorder: "2"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Cloud-based storage is provided from secure data centers in Sweden and is based on the market-leading Ceph storage technology."
-background: "safespring-storage.jpg"
+cardintro: "Cloud-based storage is provided from secure data centers in Norden."
+background: "safespring-storage-background.svg"
 form: "no"
+documentation: "Storage"
 sidebarlinkname: "Last ned tjenestebeskrivelse"
 sidebarlinkurl: "/services/safespring-storage-web-no.pdf"
 socialmedia: "safespring-storage.jpg"

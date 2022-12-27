@@ -5,7 +5,7 @@ card: "safespring_card_11.svg"
 date: 2022-03-01T10:47:25+01:00
 draft: false
 intro: "Över 60 lärosäten använder Safespring via Sunet, Sikt eller direkt genom GÉANTs OCRE-ramavtal."
-background: "safespring-research.jpg"
+background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
 toplogo: "ocre.png"
 showthedate: false

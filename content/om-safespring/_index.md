@@ -1,42 +1,33 @@
 ---
-title: "Om oss"
+title: "Självklart producerar vi våra tjänster lokalt"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Safespring levererar lokalt producerade säkra molntjänster. Med datacenter i Sverige håller du din data inom landets gränser."
-background: ""
+intro: "Safespring är en svensk molnplattform. Med datacenter i Sverige håller du din data inom landets gränser."
+background: "safespring-blue-fade2.svg"
+alias:
+  "/om-safespring"
 ---
-<div class="ingress"><p>Vi tycker det är självklart att producera våra tjänster lokalt. Skälen är flera, förutom prestanda och närhet så är det i många fall ett krav för att uppfylla lagar och regler, att data inte lämnar landet.</p></div>
 
-Ytterligare en viktig aspekt är att vi är ett svenskt bolag som därigenom inte omfattas av Cloud Act, och kan därför inte tvingas att lämna ut din data till tredje part.
-Exempel på regelverk kan vara GDPR och Arkivlagen.
+{{< ingress >}} 
+Vi på Safespring tycker det är självklart att producera våra tjänster lokalt i Sverige och Norge. 
+{{< /ingress >}}
 
-### Många fördelar med molntjänster inom landet
+Detta har många fördelar, såsom bättre prestanda och närhet till våra kunder. Dessutom uppfyller vi lagar och regler såsom GDPR och Arkivlagen som kräver att data inte lämnar landet.
 
-Safespring levererar bl.a. backup, storskalig molnlagring samt infrastruktur som tjänst och når idag via ramavtal bl.a. samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningsnäten, SUNET i Sverige och Sikt i Norge.
+### Lokalt producerade molntjänster med hög säkerhet
 
-<a href="/tjanster" id="text-button">Läs mer om våra tjänster</a>
+Som svenskt bolag omfattas vi inte av Cloud Act och kan därför inte tvingas att lämna ut din data till tredje part. Vi erbjuder bl.a. backup, storskalig molnlagring och infrastruktur som tjänst och har idag kunder inom samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till SUNET och Sikt.
 
-Utöver kunder inom forskning och högre utbildning har vi kunder bl.a. inom Telecom, Medtech och Edtech som alla värdesätter och förstår vikten hög säkerhet och lokalt producerade tjänster.
+Utöver dessa kunder har vi även kunder inom Telecom, Medtech och Edtech som värdesätter våra lokalt producerade tjänster med hög säkerhet. Vi kan även hjälpa dig i din molnresa och prata med dig om möjligheterna med privata- eller hybrida moln, containers, DevOps osv.
 
-Förutom att erbjuda själva plattformarna och dess tjänster kan vi hjälpa dig i din molnresa. Vi pratar gärna om Privata- eller Hybrida moln, Containers, DevOps, etc.
+Vi tror att de bästa relationerna skapas med öppenhet och därför har våra tjänster inga bindningstider. Vi baserar de flesta av våra tjänster på Open Source och föredrar att göra implementationer genom att använda öppna standarder så långt det är möjligt. Vi tror också att många kunder mår bra av att ha ett par alternativa leverantörer, så vi pratar gärna med dig även om du redan har en befintlig leverantör. Kanske kan vi lösa vissa delar bättre eller vara en bra backup.
 
-<p class="quote">"Vi tror de bästa relationerna skapas med öppenhet och inte med inlåsning!"</p>
+Safespring grundades 2014 som en del av IPnett och vann en upphandling för att leverera infrastruktur som tjänst till den akademiska sektorn i Skandinavien. Kompetensen bakom vår lösning samt vår strategi att basera den på öppen källkod gjorde att vi vann utvärderingen ur både ett tekniskt och kommersiellt perspektiv. Vi har full kontroll över vår egen teknik och erbjuder idag tjänster till samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer i Skandinav
 
-Därför har våra tjänster **inga bindningstider** och baserar de flesta av våra tjänster på Open Source. När vi pratar lösningar med våra kunder så förordar dessutom att göra implementationer genom att använda öppna standarder så långt det är möjligt.
+## Utforska våra tjänster
+Som svenskt bolag omfattas vi inte av Cloud Act och kan därför inte tvingas att lämna ut din data till tredje part. Vi erbjuder bland annat backup, storskalig molnlagring och infrastruktur som tjänst.
 
-Vi tror även att de flesta kunder mår bra av att ha ett par alternativa leverantörer, så vi pratar gärna med dig även fast du har en befintlig leverantör och behöver ett komplement. Kanske kan vi kan lösa vissa delar bättre än din nuvarande leverantör, eller ”bara” vara en backup.
 
-<a href="/om-safespring/bli-partner" id="text-button">Bli parner med safespring</a>
+{{< distance >}}
 
-## Vår historia
-Safesprings molntjänster grundlades 2014, som en del av IPnett, då företaget vann en upphandling för att leverera infrastruktur som tjänst till den akademiska sektorn i Skandinavien. I upphandlingen ställdes höga krav på lokal datalagring samt logisk och fysisk säkerhet.
-
-Kompetensen bakom Safesprings lösning samt strategin att basera lösningen på öppen källkod gjorde att Safespring vann utvärderingen ur både ett tekniskt och kommersiellt perspektiv. Att ha full kontroll på den egna tekniken är centralt för oss.
-
-Safesprings tjänster når idag samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer som är anslutna till de nationella forskningssätena i Skandinavien.
-
-Under 2017 etableras Safespring som eget bolag för att expandera erbjudandet till marknaden även utanför den akademiska sektorn.
-
-## Vårt erbjudande
-Safespring levererar lokalt producerade molntjänster designade för framtidens behov och applikationer. Våra tjänster lever upp till högt ställda krav på säkerhet, liksom lokala lagar och regler - idag och i framtiden.
-Våra kunder skapar sig konkurrensfördelar genom flexibilitet utan tekniska begränsningar - och till en avsevärt lägre kostnad än tidigare.
+{{< services >}}

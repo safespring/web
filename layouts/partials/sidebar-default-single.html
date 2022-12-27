@@ -1,0 +1,86 @@
+<div class="sidebar-container">
+  <img class="lazyload sidebar-image" src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }}" alt="{{ .Title }}">
+  <div class="sidebar-content">
+    {{ if .Params.toc }}
+    <h2 class="sidebar-toc">
+      {{ .Params.toc }}
+    </h2>
+    <div>
+      {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+    </div>
+  </div>
+</div>
+<div class="sidebar-container">
+  <div class="sidebar-content">
+    {{ end }}   
+    <div>
+      {{ if eq .Params.language "En" }}
+      <p>Safespring is a fast and flexible cloud infrastructure service.</p>
+      <p>As a Swedish solution, Safespring makes it easier for you to comply with laws and regulations, such as GDPR.</p>
+      {{ else if eq .Params.language "No" }}
+      <p>NO - Safespring är en snabb och flexibel moln- och IT-infrastrukturtjänst.</p>
+      <p>Som en svensk lösning gör Safespring det enklare för dig att uppfylla lagar och regler, som GDPR.</p>
+      {{ else }}
+      <p>Safespring är en snabb och flexibel moln- och IT-infrastrukturtjänst.</p>
+      <p>Som en svensk lösning gör Safespring det enklare för dig att uppfylla lagar och regler, som GDPR.</p>
+      {{ end }}
+    </div>
+    {{ $currentPage := . }}
+    <div class="sidebar-services">
+      <h4>      
+        {{ if strings.HasPrefix .RelPermalink "/tjanster" }}Kombinera {{ .Params.cardtitle }} med
+        {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}Kombiner {{ .Params.cardtitle }} med
+        {{ else if strings.HasPrefix .RelPermalink "/en/services" }}Combine {{ .Params.cardtitle }} with
+        {{ else }}
+        {{ if eq .Params.language "No" }}Les mer
+        {{ else if eq .Params.language "En" }}Learn more
+        {{ else }} Utforska {{ end }}
+        {{ end }}
+      </h4>
+      <ul>
+        {{ if eq .Params.language "No" }}
+        {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }}
+        {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+        <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+        {{ end }}
+        {{ end }}
+        {{ else if eq .Params.language "En" }}
+        {{ range (where $.Site.RegularPages "Section" "en").ByParam "cardorder" }}
+        {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+        <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+        {{ end }}
+        {{ end }}
+        {{ else}}
+        {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }}
+        {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+        <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+        {{ end }}
+        {{ end }}{{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{{ if .Params.documentation }}
+
+<div class="sidebar-container">
+  <div class="sidebar-content">
+    <div>
+      <p class="card-section">{{ .Params.documentation }}</p>
+      <h2 class="card-heading">
+        {{ if eq .Params.language "Se" }}Safespring Dokumentation
+        {{ else if eq .Params.language "No" }}Safespring Dokumentasjon
+        {{ else if eq .Params.language "En" }}Safespring Documentation
+        {{ else }}Hej
+        {{ end }}
+      </h2>
+      <p class="mb-2">
+        {{ if eq .Params.language "Se" }}Safesprings portal ger dig en översikt över projektet och kontostatistiken. Genom den här dokumentationen kommer du i gång.{{ end }}
+        {{ if eq .Params.language "No" }}Safesprings portal gir deg oversikt over prosjekt- og kontostatistikken. Denne dokumentasjonen vil hjelpe deg i gang.{{ end }}
+        {{ if eq .Params.language "En" }}Safespring's portal gives you an overview of the project and account statistics. This documentation will get you started.{{ end }}
+      </p>
+      {{ partial "documentation.html" . }}
+    </div>
+  </div>
+</div>
+{{ end }}

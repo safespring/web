@@ -1,5 +1,6 @@
 ---
 title: "Tack för att du hämtade vår e-bok!"
+language: "Se"
 date: 2018-12-17T20:19:18+01:00
 eventdatum: ""
 draft: false

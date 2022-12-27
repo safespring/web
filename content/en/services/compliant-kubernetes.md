@@ -1,10 +1,15 @@
 ---
 title: "Compliant Kubernetes"
-date: 2019-01-07T13:58:58+01:00
+cardtitle: "Container platform"
+cardicon: "fa-solid fa-container-storage"
+cardcolor: "#3C9BCD"
+cardorder: "3"
+date: 2022-12-22T13:58:58+01:00
 draft: false
 intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
-background: "safespring-compute.jpg"
-form: "yes"
+cardintro: "Run Kuberntes or OpenShift on Safespring infrastrucure, as a service or on your own."
+background: "safespring-kubernetes-background.svg"
+form: ""
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
@@ -12,6 +17,8 @@ devops: ""
 section: "Public Cloud"
 language: "En"
 ---
+
+![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
 
 {{% ingress %}}
 Organizations across all industries adopt containers for increased agility, developer productivity, and availability and performance.
@@ -34,9 +41,12 @@ Although historically tricky to set up, getting a Kubernetes cluster up and runn
 
 ![Compliant Kubernetes on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
 
-*A process has started to connect Safespring's cloud platform to Sjunet in Sweden.*
 
-In addition to monitoring the clusters 24/7 for health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management. Such as upgrading, testing, and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups, and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
+{{< ingress >}}
+In addition to monitoring the clusters 24/7 for health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management. 
+{{< /ingress >}}
+
+Such as upgrading, testing, and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups, and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
 
 In essence, the challenge is how to increase software agility through containerization while guaranteeing security and compliance for your business.
 

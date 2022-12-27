@@ -12,11 +12,12 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
 {{< ingress >}}
 Safespring promote as much automation as possible using standard tools
 like Terraform and Ansible. Sometimes, however, it is necessary to dig one step
 deeper in order to find some missing pieces of information in order to create a complete automation.
-{{</ingress >}}
+{{< /ingress >}}
 
 ## Introduction (Problem statement)
 In the Safespring platform, the S3 compatible storage service and the OpenStack

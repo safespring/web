@@ -27,17 +27,6 @@ aliases:
 Compliant Kubernetes passar bolag som vill att interna utvecklare ska få fokusera på att skapa kundnytta medan den underliggande plattformen är fullt managerad.
 {{</ ingress >}}
 
-{{% half-image "/img/saas/-safespring-compliant-kubernetes-pyramid.svg" %}}
-
-### Fördelarna med Kubernetes Platform as a Service
-- Skala upp med samma antal interna utvecklare
-- Ingen  infrastrukturs- eller Kubernetes Admin kompetens krävs
-- Öppen källkod med dokumentation av hög kvalité
-- Kan integreras med dina verktyg och programmeringsspråk
-- 24/7 eller Business Hour Support
-- GDPR Compliant
-
-{{% /half-image %}}
 
 ## Stärk ditt team med extern expertis inom DevOps och Kubernetes
 Safespring och Compliant Kubernetes som en driftad helhetslösning.
