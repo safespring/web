@@ -2205,7 +2205,7 @@ color: var(--unCheckedColor);
 
 	@media only screen and (max-width: 900px) {
 		.two-field-background {
-			background: url(/img/graphics/safespring-datacenter-map.svg);
+			background: url(/img/graphics/safespring-datacenter-map-mobile.svg);
 			background-position: bottom;
 			background-repeat: no-repeat;
 			display: flex;
