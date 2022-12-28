@@ -1,7 +1,7 @@
 ---
 title: "Compliant Kubernetes"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
 background: "safespring-compute.jpg"
 form: "yes"

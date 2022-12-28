@@ -4,35 +4,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
   <!-- Matomo -->
   <script>
-  var _paq = window._paq = window._paq || [];
+    var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.safespring.com/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.safespring.com/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
   {{ "<!--[if IE]>" | safeHTML }}
-    <meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">
-    {{ "<![endif]-->" | safeHTML }}
+  <meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">
+  {{ "<![endif]-->" | safeHTML }}
     {{ partial "favicons.html" . }}
     <meta property="og:title" content="Safespring | {{ .Title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .URL  | absURL }}" />
-    <meta property="og:image" content="https://www.safespring.com{{ if isset .Params "socialmedia" }}/img/{{ index .Params "socialmedia" }}{{ else if eq .Params.language "No" }}/img/safespring-social_media-animation-norway.gif{{ else }}/img/socialmedia/safespring-start.jpg{{ end }}">
+    <meta property="og:image" content="https://www.safespring.com{{ if isset .Params "socialmedia" }}/img/{{ index .Params "socialmedia" }}{{ else if eq .Params.language "No" }}/img/safespring-social_media-animation-norway.gif{{ else }}/img/socialmedia/safespring-start.png{{ end }}">
     <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
     <meta property="og:site_name" content="Safespring" />
     {{ if isset .Params "noindex" }}
     <meta name="robots" content="noindex">
     {{ else }}{{ end }}
     <!-- Site Title changes according to current page -->
-    <title>Safespring | {{ if.Title }}{{ .Title }}{{ else }}Säkra, lokala molntjänster{{ end }}</title>
-    <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+    <title>Safespring | {{ if .Title }}{{ .Title }}{{ else }}Säkra, lokala molntjänster{{ end }}</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="2017.0.4.363" />
     <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
     <!-- Description changes according to current page -->
@@ -44,19 +44,16 @@
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type="text/css"/>
     <!-- Fonts -->
     <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind:wght@300:600&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="canonical" href="{{ .Permalink }}">
     <script src="/img/lazysizes.min.js" async></script>
-  <!-- UPSALES visitor tag -->
-  <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js"></script>
-  <script type="text/javascript" src="/js/text-balancer.js"></script>
+    <!-- UPSALES visitor tag -->
+    <script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js"></script>
+    <script async type="text/javascript" src="/js/text-balancer.js"></script>
 
-  <!-- END UPSALES visitor tag -->
-      <style>
+    <!-- END UPSALES visitor tag -->
+    <style> @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@100;300;400;600&display=swap'); </style>
+    <style>
       .balance-text {
         visibility: hidden;
       }
@@ -81,4 +78,4 @@
         }
       </style>
     </noscript>
-</head>
+  </head>
