@@ -4,11 +4,14 @@ section: "Om Safespring"
 date: 2022-01-07T13:58:58+01:00
 draft: false
 intro: "Våre datasenter oppfyller dine høye krav til driftssikkerhet og tilgjengelighet. Du får også en klimasmart løsning, siden våre datasenter drives 100% med elektrisitet fra fornybare energikilder."
-background: ""
+background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår sikkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring-datacenter-security-2019.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
+
+![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)
+
 
 ## Safespring Oslo
 

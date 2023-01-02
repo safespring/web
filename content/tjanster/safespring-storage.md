@@ -8,7 +8,7 @@ cardcolor: "#FA690F"
 cardorder: "2"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Safespring stödjer S3 och ger snabb eller långtidslagring för er data."
+intro: "Safespring stödjer S3 och ger snabb- eller långtidslagring för er data."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Läs Solution Brief"
@@ -39,5 +39,6 @@ Safespring storage kan också vara ett bra komplement med din nuvarande lagrings
 ### Grunden i Safespring Storage är Ceph
 Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader. [Läs dokumentation.](https://docs.safespring.com/storage/generalinfo/)
 
-<br><br>
+{{< distance >}}
+
 <a href="/solution-brief/immutable-storage/"><img alt="Immutable Objects Solution Brief" src="/img//blogg/socialmedia/safespring_social_38.gif"></a>

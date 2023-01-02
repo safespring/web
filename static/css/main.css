@@ -59,11 +59,6 @@ hr {
 	margin: 50px 0;
 }
 
-h1::selection, h2::selection {
-	color: #fafefe;
-	background: #195F8C;
-}
-
 .inline-rubrik {
 	text-transform: uppercase;
 	font-weight: 600;
@@ -659,7 +654,7 @@ color: var(--unCheckedColor);
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-end;
-	gap: 7%;
+	gap: 30px;
 	width: 700px;
 }
 
@@ -1998,6 +1993,7 @@ color: var(--unCheckedColor);
 			/*margin: 0 0 0 40px;*/
 			border-radius: 10px;
 			background-color: white;
+			min-width: 350px;
 		}
 	}
 
@@ -2035,12 +2031,13 @@ color: var(--unCheckedColor);
 
 	.webinarplaylist ul li::before {
 		display: inline-block;
+		font-size: 100%;
 		text-rendering: auto;
 		-webkit-font-smoothing: antialiased;
 		font-family: "Font Awesome 6 Pro";
 		content: "\f144";
 		color: var(--clear-blue-color);
-		padding: 0px 15px;
+		padding: 0px 0px 0px 30px;
 	}
 
 	.webinarplaylist ul li:hover:before {
@@ -2053,7 +2050,7 @@ color: var(--unCheckedColor);
 		font: 18px var(--hind-font) !important;
 		color: var(--main-color) !important;
 		margin: 0;
-		padding: 15px 0;
+		padding: 15px;
 		border-bottom: 0.25px solid #E8EFF3;
 		list-style-type: none;
 		list-style-position: outside;
