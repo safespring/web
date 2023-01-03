@@ -14,7 +14,7 @@
      <script src="https://cmp.osano.com/6oljzSNwReavJu0/97758f75-7a34-4dc8-ab77-040649dc3c6c/osano.js"></script>
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:type" content="website" />
-     <meta property="og:url" content="https://www.safespring.com{{ .URL }}" />
+     <meta property="og:url" content="{{ .Permalink }}" />
      <meta property="og:image" content="{{ if .Params.socialmediabild }}/publikationer/image/socialmedia/{{ .Params.socialmediabild }}{{ else if .Params.huvudbildnamn }}/img/event/{{ .Params.huvudbildnamn }}{{ else if .Params.pageimage }}/img/pageimage/{{ .Params.pageimage }}{{ else }}/img/pageimage/Safespring_event.jpg{{ end }}"/>
      <meta property="og:description" content="{{ if .Params.intro }}{{ .Params.intro }}{{ else }}Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing.{{ end }}" />
      <meta property="og:site_name" content="Safespring" />
@@ -54,9 +54,6 @@ _paq.push(['enableLinkTracking']);
       <link href="https://fonts.googleapis.com/css?family=Hind:300,600|Montserrat:100,300,400,600" rel="stylesheet">
       <!-- RSS -->
       <link rel="canonical" href="{{ .Permalink }}">
-      {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-      {{ end }}
   <title>Safespring | {{ .Title }}</title>
   {{ partial "telavox.html" }}
 </head>

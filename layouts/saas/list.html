@@ -2,7 +2,7 @@
   <script src="https://cmp.osano.com/6oljzSNwReavJu0/97758f75-7a34-4dc8-ab77-040649dc3c6c/osano.js"></script>
  <meta property="og:title" content="Safespring | {{ .Title }}" />
  <meta property="og:type" content="website" />
- <meta property="og:url" content="{{ .URL  | absURL }}" />
+ <meta property="og:url" content="{{ .Permalink }}" />
  <meta property="og:image" content="{{ if.Params.socialmediabild }}/om-oss/images/socialmedia/{{ .Params.socialmediabild }}{{ else }}/img/pageimage/Safespring_molntjanster.jpg{{ end }}"/>
  <meta property="og:description" content="{{ if.Params.intro }}{{ .Params.intro }}{{ else }}Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
  <meta property="og:site_name" content="Safespring" />
@@ -43,9 +43,6 @@ _paq.push(['enableLinkTracking']);
    <link href="https://fonts.googleapis.com/css?family=Hind:300,600|Montserrat:100,300,400,600" rel="stylesheet">
    <!-- RSS -->
    <link rel="canonical" href="{{ .Permalink }}">
-   {{ if .RSSLink }}
-   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-   {{ end }}
 <title>Safespring | {{ .Title }}</title>
 {{ partial "telavox.html" }}
 </head>
