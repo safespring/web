@@ -52,6 +52,7 @@
   {{ if eq .Params.nosidebar "x" }}{{ else }}<div class="sidebar-default-single">
     {{ if eq $.Section "webinar" }}{{partial "webinar-side-bar.html" . }}{{ else if eq $.Section "kommun" }}{{partial "webinar-side-bar.html" . }}{{ else }}{{ partial "sidebar-default-single.html" . }}{{ end }}
   </div>{{end}}
+  {{ if .Params.fullwidthwidget }}{{ partial "{{ .Params.fullwidthwidget }}"}}{{ end }}
 
 </main>
 <!-- FOOTER -->

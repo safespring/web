@@ -16,6 +16,8 @@ sidebarimage: "safespring-storage.svg"
 socialmediabild: "safespring_social_38.gif"
 toc: "Table of Contents"
 language: "En"
+aliases:
+    - /whitepaper/immutable-storage/
 ---
 
 

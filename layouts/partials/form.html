@@ -1,4 +1,579 @@
-<h2 id="testa-safespring">Upplev Safespring</h2>
-<p>Hos safespring betalar du endast för de resurser du konsumerar vilket gör att du slipper licenskostnader. Du får även testa våra tjänster utan kostnad under en period för att enkelt komma igång. Ta första steget och fyll i formuläret nedan.</p>
-<br>
-<iframe src="https://pages.upsales.com/9549uf83546290004448380e8164ebe216d83-frame" class="linked-form" style="border:0"></iframe>
+<div>
+	<h2 id="testa-safespring">Upplev Safespring</h2>
+	<p>Hos safespring betalar du endast för de resurser du konsumerar vilket gör att du slipper licenskostnader. Du får även testa våra tjänster utan kostnad under en period för att enkelt komma igång. Ta första steget och fyll i formuläret nedan.</p>
+	<br>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+	<style>
+		.checkbox {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			cursor: pointer;
+		}
+
+		.checkbox:hover .checkbox__check {
+			background: #E8EFF3;
+		}
+
+		.checkbox__input {
+			width: 0;
+			height: 0;
+			opacity: 0;
+		}
+
+		.checkbox__input:checked + .checkbox__check {
+			background: #32CD32;
+			border: 2px solid #32CD32;
+			stroke-dashoffset: 0;
+		}
+
+		.checkbox__check {
+			border: 2px solid #195F8C;
+			background: #fafefe;
+			stroke: #f9f9f9;
+			stroke-dasharray: 25;
+			stroke-dashoffset: 25;
+			stroke-linecap: round;
+			stroke-width: 0.2rem;
+
+			border-radius: 50%;
+
+			fill: none;
+
+			transition: background 0.3s, stroke-dashoffset 0.4s;
+			margin-right: 15px;
+		}
+
+		.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+			padding-left: 65px !important;
+		}
+
+		.iti__selected-flag {
+			padding: 0 6px 0 25px !important;
+		}
+
+		.twitter-typeahead .tt-hint {
+			color: #6B7C93;
+		}
+		.twitter-typeahead .tt-menu {
+			background-color: #fff;
+			max-height: 300px;
+			overflow: auto;
+			border: 1px solid #66afe9;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+			width: 100%;
+			margin-top: -2px;
+		}
+		.twitter-typeahead .tt-suggestion {
+			padding: 5px 10px;
+			color: #4B5562;
+		}
+		.twitter-typeahead .tt-suggestion:hover {
+			background-color: #F6F9FB;
+			color: #000;
+		}
+		#w300px {
+			width: 300px !important;
+		}
+	</style>
+	<script>
+		jQuery(document).ready(function() {
+			var matchClientsTimeout = null;
+			var matchClients = function(q, sync, cb) {
+				if (matchClientsTimeout) {
+					clearTimeout(matchClientsTimeout);
+				}
+				matchClientsTimeout = setTimeout(function() {
+					$.ajax({
+						type: "GET",
+						url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&name=" + q,
+						success: function(res) {
+							cb(res.data);
+						},
+						error: function(res) {},
+					});
+				}, 200);
+			};
+			var getSuggestTemplate = function(c) {
+				return "<div><div>" + c.name + "</div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "</span></div>";
+			};
+			var nameField = jQuery("#up-client-name-input");
+			if (nameField.length) {
+				var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
+				var spinner = jQuery("<b id='up-client-spinner'><svg class='spinner' viewBox='0 0 50 50'><circle class='path' cx='25' cy='25' r='20' fill='none' stroke-width='5'></circle></svg></b>");
+				spinner.css("display", "none");
+				nameField.after(dunsField);
+				nameField.after(spinner);
+				nameField.typeahead({
+					hint: true,
+					highlight: true,
+					minLength: 3
+				}, {
+					name: "clients",
+					limit: 25,
+					source: matchClients,
+					templates: {
+						suggestion: getSuggestTemplate
+					}
+				})
+				.bind("typeahead:autocompleted", function(ev, client)
+				      nameField.typeahead("val", client.name);
+				      dunsField.val(client.dunsNo);
+				      nameField.blur();
+				  }).bind("typeahead:select", function(ev, client) {
+				  	nameField.typeahead("val", client.name);
+				  	dunsField.val(client.dunsNo);
+				  }).bind("typeahead:cursorchange", function(ev, client) {
+				  	nameField.typeahead("val", client.name);
+				  	dunsField.val(client.dunsNo);
+				  }).on("typeahead:asyncrequest", function() {
+				  	spinner.css("display", "inline");
+				  }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
+				  	spinner.css("display", "none");
+				  });
+				}
+			});
+		</script>
+		<script type="text/javascript">
+			function openTerms(id) {
+				var terms = {
+					"1": "",
+					"3": null
+				};
+				var preview = window.open("", "", "height=700,width=800,scrollbars=yes,resizable=yes,toolbar=no,status=no,menu=no,titlebar=no,location=no,addressbar=no");
+				var html = "<head><meta charset=\"UTF-8\"><style>body {margin: 0; padding: 20px;color: #333;font-family: Helvetica;font-size: 14px;}</style></head><body>" + terms[id] + "</body>";
+				preview.document.write(html);
+			}
+		</script>
+		<form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+			<div id="step1">
+				<!-- Step 1 content goes here -->
+				<div>
+					<input maxlength="512" type="text" placeholder="Ditt namn" name="Contact.name" required="required">
+				</div>
+				<div class="email">
+					<input maxlength="512" type="email" placeholder="E-post" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
+				</div>
+				<br>
+				<button type="button" onclick="showStep2()">Nästa</button>
+			</div>
+			<div id="step2" style="display:none">
+				<!-- Step 2 content goes here -->
+				<div>
+					<input maxlength="512" type="text" placeholder="Företag" id="up-client-name-input" name="Client.name" required="required">
+				</div>
+				<div>
+					<input id="w300px" maxlength="512" type="text" placeholder="Mobiltelefon" name="Contact.cellPhone" required="required">
+				</div>
+				<br>
+				<button type="button" onclick="showStep1()">Tillbaka</button>
+				<button type="button" onclick="showStep3()">Nästa</button>
+			</div>
+			<div id="step3" style="display:none">
+				<!-- Step 3 content goes here -->
+				<div>
+					<label class="checkbox">
+						<input class="checkbox__input" type="checkbox" value="on" name="Contact.custom_30">
+						<svg class="checkbox__check" width="24" height="24">
+							<polyline points="17 8 11 17 6 13"></polyline>
+						</svg>
+						<p>Containerplattform</p>
+					</label>
+				</div>
+				<div>
+					<label class="checkbox">
+						<input class="checkbox__input" type="checkbox" value="on" name="Contact.custom_31">
+						<svg class="checkbox__check" width="24" height="24">
+							<polyline points="17 8 11 17 6 13"></polyline>
+						</svg>
+						<p>Safespring Storage</p>
+					</label>
+				</div>
+				<div>
+					<label class="checkbox">
+						<input class="checkbox__input" type="checkbox" value="on" name="Contact.custom_32">
+						<svg class="checkbox__check" width="24" height="24">
+							<polyline points="17 8 11 17 6 13"></polyline>
+						</svg>
+						<p>Safespring Compute</p>
+					</label>
+				</div>
+				<div class="form-group" style="display: flex;">
+					<label class="checkbox">
+						<input class="checkbox__input" type="checkbox" value="on" name="singleOptIn.1573113563490" required="required">
+						<svg class="checkbox__check" width="24" height="24">
+							<polyline points="17 8 11 17 6 13"></polyline>
+						</svg>
+						<p>Jag accepterar <a class="up-unstyled-element" href="/dokument/acceptable-use-policy/">villkoren</a> *</p>
+					</label>
+				</div>
+				<button type="button" onclick="showStep2()">Tillbaka</button>
+				<button id="button" type="submit">Skicka in</button>
+			</div>
+			<!-- REQUIRED FIELDS -->
+			<input type="hidden" name="formCid" value="9549">
+			<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
+			<input type="hidden" name="isFrame" value="false">
+			<input type="text" value="" name="validation" style="display: none;">
+			<!-- END OF REQUIRED FIELDS -->
+		</form>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js"></script>
+		<script>
+			(function() {
+				var phoneFields = document.querySelectorAll('input[name*=phone], input[name*=Phone]');
+				[].forEach.call(phoneFields, function(element) {
+					window.hasPhoneFields = true;
+					element.iti = window.intlTelInput(element, {
+						preferredCountries: [],
+						initialCountry: 'auto',
+						utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/utils.js',
+						geoIpLookup: function(success) {
+							var xhr = new XMLHttpRequest();
+							xhr.open('GET', 'https://power.upsales.com/api/external/whereAmI');
+							xhr.onload = function() {
+								success(xhr.status === 200 && !xhr.responseText?.includes("no-js") ? (JSON.parse(xhr.responseText).data || "") : "");
+							};
+							xhr.send();
+						}
+					});
+				});
+			})();
+		</script>
+		<script>
+			(function() {
+				var form = document.getElementById("up-form");
+				if (form) {
+					form.addEventListener("submit", function(ev) {
+						var button = ev.target.querySelector("button[type=submit]");
+						if (button) {
+							button.disabled = true;
+						}
+					});
+				}
+			})();
+		</script>
+		<script>
+			function onSubmit(t) {
+				var n, o, a = !0,
+				e = !0;
+				void 0 !== window.__validEmail && (e = window.__validEmail, a = !1), "boolean" == typeof e && e && !a ? validateForm(t, "https://www.safespring.com/tjanster/tack") : (t.preventDefault(), n = !0, o = setInterval(function() {
+					var e = window._bEmValid;
+					void 0 === window.__validEmail && e || (n = window.__validEmail, a = !1), ("boolean" == typeof n && n || !a) && (clearInterval(o), validateForm(t, "https://www.safespring.com/tjanster/tack"))
+				}, 300))
+			}
+
+			function validateForm(e, n) {
+				e.preventDefault();
+				for (var e = document.getElementsByName("formId")[0].value, e = document.forms["form_" + e], t = e.querySelectorAll("input, textarea, select"), o = 0; o < t.length; o++) "text" === t[o].type && (t[o].value = t[o].value.trim());
+					var a = e.querySelectorAll("input[name*=phone], input[name*=Phone]");
+				if ([].forEach.call(a, function(e) {
+					e.iti && (e.value = e.iti.getNumber())
+				}), void 0 === window.grecaptcha || "" !== window.grecaptcha.getResponse()) {
+					for (var l = [], o = 0; o < t.length; o++) "checkbox" === t[o].type ? l.push(t[o].name + "=" + encodeURIComponent(t[o].checked ? t[o].value : "off")) : l.push(t[o].name + "=" + encodeURIComponent(t[o].value));
+						var a = l.join("&"),
+					s = (a += "&isAjax=true", window._paq || null),
+					i = new XMLHttpRequest;
+					i.open("POST", e.action), i.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), i.send(a), i.onload = function() {
+						var e, t;
+						200 === i.status ? n ? (s && s.push && s.push(["trackLink", "https://post.upsales.com/" + i.responseText, "link"]), "undefined" != typeof _uaq && _uaq("form=" + i.responseText), setTimeout(function() {
+							window.top.location.href = n
+						}, 333)) : (e = document.getElementById("up-form"), t = document.getElementById("up-form-thanks"), e.style.display = "none", t.style.display = "block", s && s.push && s.push(["trackLink", "https://post.upsales.com/" + i.responseText, "link"]), _uaq && _uaq("form=" + i.responseText)) : console.log("AJAX ERROR", i.status)
+					}
+				} else {
+					e = document.getElementById("recaptcha-error"), a = document.getElementsByClassName("g-recaptcha");
+					e.style.display = "none", a && a.length && console.log("handle this later")
+				}
+			}
+			var form = document.getElementById("up-form");
+			form.addEventListener("submit", onSubmit);
+		</script>
+	</div>
+</form>
+<script>
+	function showStep1() {
+		document.getElementById('step1').style.display = 'block';
+		document.getElementById('step2').style.display = 'none';
+		document.getElementById('step3').style.display = 'none';
+		
+	}
+
+	function showStep2() {
+		document.getElementById('step1').style.display = 'none';
+		document.getElementById('step2').style.display = 'block';
+		document.getElementById('step3').style.display = 'none';
+	}
+
+	function showStep3() {
+		document.getElementById('step1').style.display = 'none';
+		document.getElementById('step2').style.display = 'none';
+		document.getElementById('step3').style.display = 'block';
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+<style>
+	.checkbox {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		cursor: pointer;
+	}
+
+	.checkbox:hover .checkbox__check {
+		background: #E8EFF3;
+	}
+
+	.checkbox__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+
+	.checkbox__input:checked + .checkbox__check {
+		background: #32CD32;
+		border: 2px solid #32CD32;
+		stroke-dashoffset: 0;
+	}
+
+	.checkbox__check {
+		border: 2px solid #195F8C;
+		background: #fafefe;
+		stroke: #f9f9f9;
+		stroke-dasharray: 25;
+		stroke-dashoffset: 25;
+		stroke-linecap: round;
+		stroke-width: 0.2rem;
+
+		border-radius: 50%;
+
+		fill: none;
+
+		transition: background 0.3s, stroke-dashoffset 0.4s;
+		margin-right: 15px;
+	}
+	.twitter-typeahead .tt-hint {
+		color: #6B7C93;
+	}
+
+	.twitter-typeahead .tt-menu {
+		background-color: #fff;
+		max-height: 300px;
+		overflow: auto;
+		border: 1px solid #66afe9;
+		border-top: none;
+		border-radius: 0 0 4px 4px;
+		width: 100%;
+		margin-top: -2px;
+	}
+
+	.twitter-typeahead .tt-suggestion {
+		padding: 5px 10px;
+		color: #4B5562;
+	}
+
+	.twitter-typeahead .tt-suggestion:hover {
+		background-color: #F6F9FB;
+		color: #000;
+	}
+</style>
+<script>
+	jQuery(document).ready(function() {
+		var matchClientsTimeout = null;
+		var matchClients = function(q, sync, cb) {
+			if (matchClientsTimeout) {
+				clearTimeout(matchClientsTimeout);
+			}
+			matchClientsTimeout = setTimeout(function() {
+				$.ajax({
+					type: "GET",
+					url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&name=" + q,
+					success: function(res) {
+						cb(res.data);
+					},
+					error: function(res) {},
+				});
+			}, 200);
+		};
+		var getSuggestTemplate = function(c) {
+			return " < div > < div > "+c.name+" < /div> < span style = 'color: #6B7C93; font-size: 10px;' > "+c.city+" < /span> < /div>";};var nameField = jQuery("#up-client-name-input");if(nameField.length) {var dunsField = jQuery(" < input type = 'hidden'
+			                                                                                                                                                                                                                            name = 'Client.dunsNo' / > ");var spinner = jQuery(" < b id = 'up-client-spinner' > < svg class = 'spinner'
+			                                                                                                                                                                                                                            viewBox = '0 0 50 50' > < circle class = 'path'
+			                                                                                                                                                                                                                            cx = '25'
+			                                                                                                                                                                                                                            cy = '25'
+			                                                                                                                                                                                                                            r = '20'
+			                                                                                                                                                                                                                            fill = 'none'
+			                                                                                                                                                                                                                            stroke - width = '5' > < /circle> < /svg> < /b>");spinner.css("display", "none");nameField.after(dunsField);nameField.after(spinner);nameField.typeahead({hint: true,highlight: true,minLength: 3},{name: "clients",limit: 25,source: matchClients,templates: {suggestion: getSuggestTemplate}}).bind("typeahead:autocompleted", function(ev, client) {nameField.typeahead("val", client.name);dunsField.val(client.dunsNo);nameField.blur();}).bind("typeahead:select", function(ev, client) {nameField.typeahead("val", client.name);dunsField.val(client.dunsNo);}).bind("typeahead:cursorchange", function(ev, client) {nameField.typeahead("val", client.name);dunsField.val(client.dunsNo);}).on("typeahead:asyncrequest", function() {spinner.css("display", "inline");	}).on("typeahead:asynccancel typeahead:asyncreceive", function() {spinner.css("display", "none");});}});
+			                                                                                                                                                                                                                        </script>
+
+			                                                                                                                                                                                                                        <form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+			                                                                                                                                                                                                                        	<div>
+
+			                                                                                                                                                                                                                        		<input maxlength="512" type="text" placeholder="Ditt namn" name="Contact.name" required="required">
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<div class="email">
+
+			                                                                                                                                                                                                                        		<input maxlength="512" type="email" placeholder="E-post" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<div>
+
+			                                                                                                                                                                                                                        		<input maxlength="512" type="text" placeholder="Företag" id="up-client-name-input" name="Client.name" required="required">
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<div>
+
+			                                                                                                                                                                                                                        		<input maxlength="512" type="text" placeholder="Mobiltelefon" name="Contact.cellPhone" required="required">
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<br>
+			                                                                                                                                                                                                                        	<div>
+			                                                                                                                                                                                                                        		<label class="checkbox">
+			                                                                                                                                                                                                                        			<input class="checkbox__input" type="checkbox" value="on" name="Contact.custom_30">
+			                                                                                                                                                                                                                        			<svg class="checkbox__check" width="24" height="24">
+			                                                                                                                                                                                                                        				<polyline points="17 8 11 17 6 13"></polyline>
+			                                                                                                                                                                                                                        			</svg>
+			                                                                                                                                                                                                                        			<p>Containerplattform</p>
+			                                                                                                                                                                                                                        		</label>
+
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<div>
+			                                                                                                                                                                                                                        		<label class="checkbox">
+			                                                                                                                                                                                                                        			<input class="checkbox__input" type="checkbox" value="on" name="Contact.custom_31">
+			                                                                                                                                                                                                                        			<svg class="checkbox__check" width="24" height="24">
+			                                                                                                                                                                                                                        				<polyline points="17 8 11 17 6 13"></polyline>
+			                                                                                                                                                                                                                        			</svg>
+			                                                                                                                                                                                                                        			<p>Safespring Storage</p>
+			                                                                                                                                                                                                                        		</label>
+
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<div>
+			                                                                                                                                                                                                                        		<label class="checkbox">
+			                                                                                                                                                                                                                        			<input class="checkbox__input" type="checkbox" value="on" name="Contact.custom_32">
+			                                                                                                                                                                                                                        			<svg class="checkbox__check" width="24" height="24">
+			                                                                                                                                                                                                                        				<polyline points="17 8 11 17 6 13"></polyline>
+			                                                                                                                                                                                                                        			</svg>
+			                                                                                                                                                                                                                        			<p>Safespring Compute</p>
+			                                                                                                                                                                                                                        		</label>
+
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<div class="form-group" style="display: flex;">
+			                                                                                                                                                                                                                        		<label class="checkbox">
+			                                                                                                                                                                                                                        			<input class="checkbox__input" type="checkbox" value="on" name="singleOptIn.1573113563490" required="required">
+			                                                                                                                                                                                                                        			<svg class="checkbox__check" width="24" height="24">
+			                                                                                                                                                                                                                        				<polyline points="17 8 11 17 6 13"></polyline>
+			                                                                                                                                                                                                                        			</svg>
+			                                                                                                                                                                                                                        			<p>Jag accepterar <a class="up-unstyled-element" href="/dokument/acceptable-use-policy/">villkoren</a> *</p>
+			                                                                                                                                                                                                                        		</label>
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        	<!-- REQUIRED FIELDS 
+			                                                                                                                                                                                                                        	<input type="hidden" name="formCid" value="9549">
+			                                                                                                                                                                                                                        	<input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
+			                                                                                                                                                                                                                        	<input type="hidden" name="isFrame" value="false">
+			                                                                                                                                                                                                                        	<input type="text" value="" name="validation" style="display: none;">
+			                                                                                                                                                                                                                        	<!-- END OF REQUIRED FIELDS 
+			                                                                                                                                                                                                                        	<div class="submit-button">
+			                                                                                                                                                                                                                        		<button type="submit">Skicka in</button>
+			                                                                                                                                                                                                                        	</div>
+			                                                                                                                                                                                                                        </form>
+			                                                                                                                                                                                                                        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous">
+			                                                                                                                                                                                                                        <script src="//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js"></script>
+			                                                                                                                                                                                                                        <script>
+			                                                                                                                                                                                                                        	(function() {
+			                                                                                                                                                                                                                        		var phoneFields = document.querySelectorAll('input[name*=phone], input[name*=Phone]');
+			                                                                                                                                                                                                                        		[].forEach.call(phoneFields, function(element) {
+			                                                                                                                                                                                                                        			window.hasPhoneFields = true;
+			                                                                                                                                                                                                                        			element.iti = window.intlTelInput(element, {
+			                                                                                                                                                                                                                        				preferredCountries: [],
+			                                                                                                                                                                                                                        				initialCountry: 'auto',
+			                                                                                                                                                                                                                        				utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/utils.js',
+			                                                                                                                                                                                                                        				geoIpLookup: function(success) {
+			                                                                                                                                                                                                                        					var xhr = new XMLHttpRequest();
+			                                                                                                                                                                                                                        					xhr.open('GET', 'https://power.upsales.com/api/external/whereAmI');
+			                                                                                                                                                                                                                        					xhr.onload = function() {
+			                                                                                                                                                                                                                        						success(xhr.status === 200 && !xhr.responseText?.includes("no-js") ? (JSON.parse(xhr.responseText).data || "") : "");
+			                                                                                                                                                                                                                        					};
+			                                                                                                                                                                                                                        					xhr.send();
+			                                                                                                                                                                                                                        				}
+			                                                                                                                                                                                                                        			});
+			                                                                                                                                                                                                                        		});
+			                                                                                                                                                                                                                        	})();
+			                                                                                                                                                                                                                        </script>
+			                                                                                                                                                                                                                        <script>
+			                                                                                                                                                                                                                        	(function() {
+			                                                                                                                                                                                                                        		var form = document.getElementById("up-form");
+			                                                                                                                                                                                                                        		if (form) {
+			                                                                                                                                                                                                                        			form.addEventListener("submit", function(ev) {
+			                                                                                                                                                                                                                        				var button = ev.target.querySelector("button[type=submit]");
+			                                                                                                                                                                                                                        				if (button) {
+			                                                                                                                                                                                                                        					button.disabled = true;
+			                                                                                                                                                                                                                        				}
+			                                                                                                                                                                                                                        			});
+			                                                                                                                                                                                                                        		}
+			                                                                                                                                                                                                                        	})();
+			                                                                                                                                                                                                                        </script>
+			                                                                                                                                                                                                                        <script>
+			                                                                                                                                                                                                                        	function onSubmit(t) {
+			                                                                                                                                                                                                                        		var n, o, a = !0,
+			                                                                                                                                                                                                                        		e = !0;
+			                                                                                                                                                                                                                        		void 0 !== window.__validEmail && (e = window.__validEmail, a = !1), "boolean" == typeof e && e && !a ? validateForm(t, "https://www.safespring.com/tjanster/tack") : (t.preventDefault(), n = !0, o = setInterval(function() {
+			                                                                                                                                                                                                                        			var e = window._bEmValid;
+			                                                                                                                                                                                                                        			void 0 === window.__validEmail && e || (n = window.__validEmail, a = !1), ("boolean" == typeof n && n || !a) && (clearInterval(o), validateForm(t, "https://www.safespring.com/tjanster/tack"))
+			                                                                                                                                                                                                                        		}, 300))
+			                                                                                                                                                                                                                        	}
+
+			                                                                                                                                                                                                                        	function validateForm(e, n) {
+			                                                                                                                                                                                                                        		e.preventDefault();
+			                                                                                                                                                                                                                        		for (var e = document.getElementsByName("formId")[0].value, e = document.forms["form_" + e], t = e.querySelectorAll("input, textarea, select"), o = 0; o < t.length; o++) "text" === t[o].type && (t[o].value = t[o].value.trim());
+			                                                                                                                                                                                                                        			var a = e.querySelectorAll("input[name*=phone], input[name*=Phone]");
+			                                                                                                                                                                                                                        		if ([].forEach.call(a, function(e) {
+			                                                                                                                                                                                                                        			e.iti && (e.value = e.iti.getNumber())
+			                                                                                                                                                                                                                        		}), void 0 === window.grecaptcha || "" !== window.grecaptcha.getResponse()) {
+			                                                                                                                                                                                                                        			for (var l = [], o = 0; o < t.length; o++) "checkbox" === t[o].type ? l.push(t[o].name + "=" + encodeURIComponent(t[o].checked ? t[o].value : "off")) : l.push(t[o].name + "=" + encodeURIComponent(t[o].value));
+			                                                                                                                                                                                                                        				var a = l.join("&"),
+			                                                                                                                                                                                                                        			s = (a += "&isAjax=true", window._paq || null),
+			                                                                                                                                                                                                                        			i = new XMLHttpRequest;
+			                                                                                                                                                                                                                        			i.open("POST", e.action), i.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), i.send(a), i.onload = function() {
+			                                                                                                                                                                                                                        				var e, t;
+			                                                                                                                                                                                                                        				200 === i.status ? n ? (s && s.push && s.push(["trackLink", "https://post.upsales.com/" + i.responseText, "link"]), "undefined" != typeof _uaq && _uaq("form=" + i.responseText), setTimeout(function() {
+			                                                                                                                                                                                                                        					window.top.location.href = n
+			                                                                                                                                                                                                                        				}, 333)) : (e = document.getElementById("up-form"), t = document.getElementById("up-form-thanks"), e.style.display = "none", t.style.display = "block", s && s.push && s.push(["trackLink", "https://post.upsales.com/" + i.responseText, "link"]), _uaq && _uaq("form=" + i.responseText)) : console.log("AJAX ERROR", i.status)
+			                                                                                                                                                                                                                        			}
+			                                                                                                                                                                                                                        		} else {
+			                                                                                                                                                                                                                        			e = document.getElementById("recaptcha-error"), a = document.getElementsByClassName("g-recaptcha");
+			                                                                                                                                                                                                                        			e.style.display = "none", a && a.length && console.log("handle this later")
+			                                                                                                                                                                                                                        		}
+			                                                                                                                                                                                                                        	}
+			                                                                                                                                                                                                                        	var form = document.getElementById("up-form");
+			                                                                                                                                                                                                                        	form.addEventListener("submit", onSubmit);
+			                                                                                                                                                                                                                        </script>
+			                                                                                                                                                                                                                    </div>-->
+<!--<iframe src="https://pages.upsales.com/9549uf83546290004448380e8164ebe216d83-frame" class="linked-form" style="border:0"></iframe>-->

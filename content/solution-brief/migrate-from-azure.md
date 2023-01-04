@@ -23,9 +23,9 @@ language: "Se"
 Detta dokument sammanställer de steg som bör tas för att migrera från Azure Kubernetes Service.
 {{< /ingress >}}
 
-Motiven till en sådan migrering är många. Att svenskt och europeiskt lagrum gäller för GDPR-efterlevnad, tillgången på expertsupport på svenska och att datat vilar tryggt i Sverige är några av dessa. Det starka säkerhetsfokuset inom Compliant Kubernetes är ytterligare en.
+Motiven till en sådan migrering är många. Att svenskt och europeiskt lagrum gäller för GDPR-efterlevnad, tillgången på expertsupport på svenska och att datat vilar tryggt i Sverige är några av dessa. Det starka säkerhetsfokuset inom Compliant Kubernetes är ytterligare ett.
 
-En migrationsplan innehåller med nödvändighet en inventeringsfas, upptäckandet av beroenden och hur dessa kan bytas ut, planering av arbetet och tester som säkerställer funktionalitet. Därefter kan migreringen inledas och verifieras med hjälp av de kravställande testerna. Kontinuerlig dokumentation och uppföljning gör att viktiga lärdomar inte går förlorade.
+En migrationsplan innehåller med nödvändighet en inventeringsfas, identifiering av beroenden och hur dessa kan bytas ut, planering av arbetet och tester som säkerställer funktionalitet. Därefter kan migreringen inledas och verifieras med hjälp av de kravställande testerna. Kontinuerlig dokumentation och uppföljning gör att viktiga lärdomar inte går förlorade.
 
 När migreringen väl är genomförd väntar systemadministration och övervakning i en ny miljö. Verktygen för detta har också presenterats i dokumentet och även hur de tillsammans verkar för att ge en helhetslösning med fokus på säkerhet och smidiga agila utvecklingsprocesser.
 
@@ -44,6 +44,7 @@ De skilda utgångspunkterna skapar en krock som juridiskt inte är helt lätt at
 Kvar står nu ett antal företag och organisationer som med ett fundament av molntjänster har anammat ett nytt sätt att arbeta utan laglig grund att använda dem. Det är en svår sits eftersom det inte är enkelt att gå tillbaka samtidigt som organisationer måste följa lagen.
 
 ### Möjlighet att bli oberoende
+
 Ramverk har utvecklats som tar bort beroendena till den underliggande molntjänstleverantören. Ett sådant ramverk är Kubernetes som är en orkestreringsplattform för containerteknologi med standardiserade gränssnitt för hur applikationer kan driftsättas och underhållas. Kubernetes skapar en grundplatta uppe på vilken applikationer kan hanteras genom standardiserade definitioner. Om det låter tekniskt så kan det sammanfattas med att Kubernetes hjälper organisationer att på ett standardiserat sätt hantera applikationer och tjänster med hög driftsäkerhet. Genom att systemen och dess beroenden är definierade med kod går det att ta hjälp av den kunskap som finns på internet och enkelt ta i drift komplicerade system som kan ersätta de tjänster som finns hos de etablerade molntjänstleverantörerna. Det är alltså enklare att köra de tjänster själv som organisationen har blivit beroende av.
 
 Det kommer också fler och fler applikationer som ersätter de mer användarnära tjänsterna såsom Office 365, OneDrive eller Dropbox. Om organisationen använder Kubernetes för att köra sina applikationer och tjänster så blir driftsättande och underhåll av dessa applikationer hanterbart.
@@ -53,12 +54,14 @@ Safespring är en molntjänstleverantör med datacenter i Sverige vilket gör ju
 Detta white paper beskriver hur en migrering från Microsoft Azure Kubernetes Service (AKS) ser ut. Utgångspunkt är att organisationen redan kör Kubernetes i Azure. Flera av stegen är applicerbara även för organisationer som inte använder Azure Kubernetes Service i dagsläget. Med utgångspunkt att Kubernetes fortsätter att vara det lingua franca för drift av containeriserade applikationer, är fördelen att köra det i organisationen uppenbara. Allt arbete som läggs ned på att migrera till en standardiserad plattform kan återanvändas om organisationen skulle vilja flytta sin infrastruktur någon annanstans eftersom samma definitioner för infrastrukturen kan användas så länge som mottagarplattformen också är Kubernetes. Det skapar en flexibilitet och oberoende som annars är svår att uppnå.
 
 ### Fördelarna med Open Source
+
 En stor anledning att många använder sig av molntjänster är att det finns användbara extratjänster som minskar time-to-market. Lika mycket som dessa tjänster minskar produktionstiden ökas dock beroendet till molnleverantörernas ekosystem. Ett alternativt sätt att minska produktionstiden för sina tjänster, samtidigt som man minskar leverantörsberoende, är att implementera system som ligger utanför ens kärnleverans med open source. Båda tillvägagångssätten låter dig fokusera på din applikation och lämna stödsystem åt sidan medan tillvägagångssättet med open source minskar beroendet istället för att öka det.
 
 Open source bygger på kollaboration och genom att engagera sig i de projekt man använder (främst genom att posta tillbaka de buggfixar och förbättringar man gör) så granskas det man bidrar med för större trygghet och säkerhet. Att andra som använder projekten gör samma sak skapar en kontinuerligt uppdaterad kodbas granskad av många utan licenskostnader. Genom att  många använder projekten finns det också mycket färdig kod och lösningar för att driftsätta och underhålla systemen bara några sökningar bort.
 
 ### Compliant Kubernetes
-Compliant Kubernetes (CK8s)är en CNCF (Cloud Native Computing Foundation) certifierad Kubernetes distribution som är fritt tillgängligt både som open source och som en fullt managerad tjänst på Safespring. Open source-lösningen passar organisationer som gärna driftar Kubernetes och kringliggande teknikstack själva men vill dra nytta av en säkerhetshärdad Kubernetes-distribution speciellt anpassad för reglerade branscher, samtidigt som de slipper underhåll och kan förlita sig på kvartalsvis uppdateringar av paketeringen av Kubernetes och kringliggande projekt. Open source-varianten är också ett bra komplement till en managerad tjänst för dem som behöver leverera sin mjukvara i kombination av i egna serverhallar, ute hos kunder och i publika moln och vill göra det på ett sömlöst sätt med full regelefterlevnad. För kunder som önskar det tillhandahåller vår partner Elastisys både 8/17 och 24/7 support.
+
+Compliant Kubernetes (CK8s) är en CNCF (Cloud Native Computing Foundation) certifierad Kubernetes distribution som är fritt tillgängligt både som open source och som en fullt managerad tjänst på Safespring. Open source-lösningen passar organisationer som gärna driftar Kubernetes och kringliggande teknikstack själva men vill dra nytta av en säkerhetshärdad Kubernetes-distribution speciellt anpassad för reglerade branscher, samtidigt som de slipper underhåll och kan förlita sig på kvartalsvis uppdateringar av paketeringen av Kubernetes och kringliggande projekt. Open source-varianten är också ett bra komplement till en managerad tjänst för dem som behöver leverera sin mjukvara i kombination av i egna serverhallar, ute hos kunder och i publika moln och vill göra det på ett sömlöst sätt med full regelefterlevnad. För kunder som önskar det tillhandahåller vår partner Elastisys både 8/17 och 24/7 support.
 
 ### CK8s som öppen källkod
 
@@ -66,6 +69,7 @@ Compliant Kubernetes (CK8s)är en CNCF (Cloud Native Computing Foundation) certi
 - Dokumentation: https://compliantkubernetes.io
 
 ### Förutsättningar
+
 För att kunna köra applikationer i Compliant Kubernetes gäller följande förutsättningar:
 
 - Konto till Safespring Compute och eventuellt Safespring Storage om objektlagring ska användas.
@@ -101,6 +105,7 @@ Om VPN används så kommer en ny VPN-tunneln behöva sättas upp mellan den inte
 Om det andra alternativet används så blir det enklare eftersom det då bara är att peka om kommunikationen till Safesprings miljö med en förändring av en DNS-post. Det kan vara värt att titta på det här alternativet även om VPN-tunnel används idag eftersom alla typer av migreringar blir enklare om applikationerna hanterar den säkra kommunikationen själva.  
 
 ### Inventering av tjänster
+
 Inventera beroenden för de tjänster som kör i Azure.
 
 - {{< inline "Identitetshantering" >}} Hur hanteras identitetshantering och rättigheter? Används Azure AD och om det används anropas det från tjänsterna som kör i Azure Kubernetes Service (AKS)? Ett steg som kan förenkla senare är att aktivera Secure LDAP (som är ett standardiserat protokoll) på Azure AD och anpassa tjänsterna så att de använder det istället. Då kommer det gå mycket lättare när migreringen ut från Azure AD sker.
@@ -111,6 +116,7 @@ Inventera beroenden för de tjänster som kör i Azure.
 - {{< inline "Meddelandebuss" >}} eller meddelandeköer. Asynkron kommunikation mellan tjänster sköts ofta med hjälp av ett meddelandebussystem eller ett system för meddelandeköer. I Azure finns tjänsten Service Bus. Safespring erbjuder inte en motsvarande tjänst, men rekommenderar att kunder installerar ett RabbitMQ-kluster. Detta kan köras inom Compliant Kubernetes och RabbitMQ är kompatibelt med Azure Service Bus i och med att båda stödjer samma API (AMQP 1.0). Därmed bör en migrering vara relativt okomplicerad och främst kräva att den nya tjänsten pekas ut i applikationernas konfiguration. Ett modernt alternativ med överlägsen prestanda och avancerad funktionalitet är NATS, men dock är det inte API-kompatibelt med Azure Service Bus.
 
 ### Upprätta beroendematris
+
 En kontrollerad migrering innebär full vetskap om vilka beroende som finns mellan systemen. Det visar i vilken ordning systemen migreras och vilka system som är mer centrala än andra. Beroenden kan ibland smyga sig in på oväntade ställen så en noggrann genomgång av hur tjänsterna hos Azure är konfigurerade och vilka tjänster som används i egenutvecklade system kommer att betala sig när det är dags att migrera.
 
 Dolda beroenden finns vanligtvis kring centrala system, såsom identitetshantering (Azure AD), meddelandebussar och/eller databaser.
@@ -118,17 +124,21 @@ Dolda beroenden finns vanligtvis kring centrala system, såsom identitetshanteri
 Det är också viktigt att inventera om de egenutvecklade systemen har beroenden i form av utvecklingsbibliotek. Om ett bibliotek anpassat för Azure har använts så behövs det bytas ut till något som är agnostiskt mot den underliggande plattformen. Detta kan skapa behov av anpassningar i själva applikationen.
 
 ### Tjänster som ska ersättas
+
 Det finns många inbyggda system som har en motsvarighet byggd med öppen källkod. På sida 10 finns en samling av circa 20 stycken. I det här steget sätts också en lista på vilka tester som ska genomföras för att definiera vad som är en lyckad migrering.
 
 ### Tjänster i Azure som Open Source
+
 Vi har samlat de vanligaste tjänsterna hos Azure Kubernetes Service och listat deras motsvarighet som Open Source. Se hela listan i slutet av den här texten. Du kan enkelt skrolla ner genom att klicka på knappen nedan.
 
 {{< localbutton "Se listan" "#aks-motsvarighet-som-open-source" >}}
 
 ### Planering och rangordning
+
 Efter en genomförd beroendeanalys kan planering göras av hur systemen ska migreras.  Ofta kommer migreringen innefatta någon form av servicefönster då tjänsterna är nere så det är viktigt att planera allt som ska göras och i vilken ordning. Ingångsvärden till det här steget kommer också från test- och säkerställandefasen.
 
 ### Test och säkerställande
+
 Det första som ska testas är själva tjänsterna som kör i den nya plattformen. När det fungerar är målbilden klar och då testas migrering till testmiljön för att få en uppfattning om vilka steg som behövs för en lyckad migrering.
 
 Efter detta ska också lasttester som speglar produktionslasten i möjligaste mån göras. Självklart gäller att ju närmare produktionslast som uppnås i testerna desto mindre risk för överraskningar när väl migreringen genomförs.
@@ -142,12 +152,15 @@ Om testerna genomförts så kommer själva migreringen inte att vara så svår.
 Vid en migrering så kan det dyka upp oväntade händelser som inte kunnat förutses. Typiska saker som kan dyka upp är att testdatabasen inte är identisk med produktionsdatabasen vilken kan ge oväntade effekter. Andra vanliga problem är att en annan uppsättning nycklar och hemligheter använts i produktion än i test som kanske måste uppdateras om tjänsterna inte använder en central hemlighetshanterade (t ex Hasicorp Vault) fullt ut.
 
 ### Lastbalanserare
+
 För att säkerställa hög tillgänglighet för produktionslast så kommer en lösning för lastbalanserare att behöva sättas upp. Safespring kan tillhandahålla en lösning där ni får tillgång till två eller fler virtuella maskiner som kan balansera lasten över specifika instanser som kör i plattformen. Tjänsten som sådan inbegriper några manuella steg vid uppsättning men är lätt att hantera när den väl är i drift. Vilken programvara som skall användas för lastbalanserare är valfritt men de mest populära valen är HAProxy eller Traefik. Det går även att installera MetalLB, för att få ett system som erbjuder en Kubernetes-levererad och -kompatibel tjänst som ger dynamisk lastbalanseringsfunktionalitet.
 
 ### Uppföljning
+
 Efter att migrering är gjord genomförs testerna från listan som definierar en lyckad migrering. Enhetstester som har skapats för att testa systemen före och efter migrering skall köras för att säkerställa att all funktionalitet fungerar som den skall. I de fall det uppstår avvikelser gås de igenom för att utröna om några ytterligare anpassningar behöver göras innan driftsättning.
 
 ### Dokumentation
+
 Dokumentation ska föras under hela processen men det behövs också ett separat steg för att sammanställa det som har producerats. Förutom dokumentation om hur saker och ting är uppsatta och hur systemen interagerar så är det också viktigt att få med lärda erfarenheter.
 
 ## Efter genomförd migrering
@@ -157,6 +170,7 @@ Drift och bevakning av dina applikationer efter migreringen ser till att du har 
 {{< /ingress >}}
 
 ### Drift och bevakning
+
 Applikationer i Compliant Kubernetes bevakas på två sätt:
 
 1. Mätvärden och monitorerings-data sparas i Prometheus och visualiseras i Grafana.
@@ -176,6 +190,7 @@ På så sätt kan ingenjörer hålla reda på de “fyra gyllene signalerna” i
 Applikationsloggar hämtas ur containrarna automatiskt och deras innehåll görs sökvänligt i Kibana via taggat metadata. Därmed kan administratörer snabbt avgöra vilken nod i Compliant Kubernetes-klustret en viss loggutskrift kom ifrån och göra root cause analysis för att felsöka effektivt. Om loggdatat konsekvent alltid följer en viss struktur, eller rent av är i ett hierarkiskt format såsom JSON, kan denna struktur göras till regelrätta fält i Elasticsearch och därmed ytterligare förenkla behandling av datat.
 
 ### Continuous Integration and Deployment
+
 För att möjliggöra ett agilt arbetssätt förlitar sig många organisationer på system som låter dem automatiskt bygga, testa och driftsätta programvara i en Continuous Integration and Deployment (CI/CD)-process, gärna direkt vid incheckning av kod till ett versionshanteringssystem. Azure erbjuder där Azure DevOps Pipelines som helhetslösning. Andra populära alternativ är Gitlab, CircleCI, ArgoCD, Octopus Deploy, TeamCity och Jenkins, där organisationer administrerar åtminstone några av dessa själva.
 
 Då systemen för att bygga och driftsätta programvara i en CI/CD-process i sig inte typiskt är beroende av användarens personuppgifter är det sannolikt möjligt att, även under GDPR, fortsätta använda de systemen för detta organisationen redan har. Organisationer som därför har processer och mycket kunskap inom en viss serie produkter eller tjänster kan därför tänkas vilja stanna med dessa.
@@ -185,6 +200,7 @@ Varken Safespring som sådant eller Compliant Kubernetes dikterar en viss CI/CD-
 I egenskap av att vara en av CNCF officiellt certifierad Kubernetes-distribution är Compliant Kubernetes helt kompatibel med alla CI/CD-system som har stöd för Kubernetes.
 
 ### Policy as Code
+
 Kontinuerlig säkerhet och regelefterlevnad via Policy as Code. Compliant Kubernetes är en Kubernetes-distribution med stort fokus på säkerhet. Att säkerställa säkerheten i system är inte en engångsföreteelse utan en kontinuerligt pågående process. Compliant Kubernetes stödjer denna process på följande sätt:
 
 - Säkerhetsscanning av container images efter kända fel genomförs kontinuerligt av programvaran Trivy som integrerats i container image registret Harbor.
@@ -205,10 +221,99 @@ En migrationsplan innehåller en inventeringsfas, upptäckandet av beroenden, pl
 
 I detta dokument har de steg en organisation behöver ta sammanställts för att framgångsrikt kunna migrera från Microsoft Azure och Azure Kubernetes Service till Safespring och Compliant Kubernetes. Motiveringarna till en sådan migrering är många. Att svenskt och europeiskt lagrum gäller för GDPR-efterlevnad, tillgången på expertsupport på svenska och att datat vilar tryggt i Sverige är några av dessa. Det starka säkerhetsfokuset inom Compliant Kubernetes är ytterligare en.
 
-En migrationsplan innehåller med nödvändighet en inventeringsfas, upptäckandet av beroenden och hur dessa kan bytas ut, planering av arbetet och tester som säkerställer funktionalitet. Därefter kan migreringen inledas och verifieras med hjälp av de kravställande testerna. Kontinuerlig dokumentation och uppföljning gör att viktiga lärdomar inte går förlorade.
+En migrationsplan innehåller med nödvändighet en inventeringsfas, identifiering av beroenden och hur dessa kan bytas ut, planering av arbetet och tester som säkerställer funktionalitet. Därefter kan migreringen inledas och verifieras med hjälp av de kravställande testerna. Kontinuerlig dokumentation och uppföljning gör att viktiga lärdomar inte går förlorade.
 
 När migreringen väl är genomförd väntar systemadministration och övervakning i en ny miljö. Verktygen för detta har också presenterats i dokumentet och även hur de tillsammans verkar för att ge en helhetslösning med fokus på säkerhet och smidiga agila utvecklingsprocesser.
 
 ## AKS motsvarighet som Open source
 
+| Tjänst i Azure                               | Funktion                                                               | Open Source                                                                                                    | Managerat hos Safespring |
+|----------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------|
+| Azure Kubernetes Service (AKS)               | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | Ja                       |
+| Azure Virtual Machine                        | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | Ja                       |
+| Azure Blob Storage                           | Objektlagring                                                          | N/A                                                                                                            | Ja                       |
+| Azure Mysql, Azure MariaDB, Azure PostgreSQL | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | Ja                       |
+| Azure Service Bus                            | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | Ja                       |
+| Azure Monitor                                | Monitorering                                                           | Prometheus + Grafana                                                                                           | Ja                       |
+| Azure Monitor                                | Loggning                                                               | Elasticsearch                                                                                                  | Ja                       |
+| Azure Container Registry                     | Container register                                                     | Harbor                                                                                                         | Ja                       |
+| N/A                                          | Intrångsdetektering                                                    | Falco                                                                                                          | Ja                       |
+| Azure Active Directory                       | Identity Provider                                                      | Dex                                                                                                            | Ja                       |
+| Azure AD Domain Services                     | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | -                        |
+| Azure Key Vault                              | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | -                        |
+| Azure Cosmos DB (Table API)                  | Key-value store                                                        | TiKV                                                                                                           | -                        |
+| Azure Functions                              | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | -                        |
+| Azure Virtual Network                        | Private networking                                                     | Calico                                                                                                         | -                        |
+| Azure DevOps Pipelines                       | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | -                        |
+
+
+## Amazon motsvarighet som Open source
+
+| Tjänst i Amazon                                       | Funktion                                                               | Motsvarande Open Source                                                                                        | Managerat hos Safespring |
+|-------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------|
+| Amazon Elastic Container Service for Kubernetes (EKS) | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | Ja                       |
+| Amazon Elastic Compute Cloud (EC2)                    | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | Ja                       |
+| Amazon Simple Storage Service (S3)                    | Objektlagring                                                          | N/A                                                                                                            | Ja                       |
+| Amazon Relational Database Service (RDS)              | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | Ja                       |
+| Amazon Simple Queue Service (SQS)                     | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | Ja                       |
+| Amazon CloudWatch                                     | Monitorering                                                           | Prometheus + Grafana                                                                                           | Ja                       |
+| Amazon CloudWatch                                     | Loggning                                                               | Elasticsearch                                                                                                  | Ja                       |
+| Amazon Elastic Container Registry (ECR)               | Container register                                                     | Harbor                                                                                                         | Ja                       |
+| N/A                                                   | Intrångsdetektering                                                    | Falco                                                                                                          | Ja                       |
+| Amazon Cognito                                        | Identity Provider                                                      | Dex                                                                                                            | Ja                       |
+| Amazon Directory Service                              | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | -                        |
+| Amazon Key Management Service (KMS)                   | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | -                        |
+| Amazon DynamoDB                                       | Key-value store                                                        | TiKV                                                                                                           | -                        |
+| Amazon Simple Queue Service (SQS)                     | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | -                        |
+| Amazon Virtual Private Cloud (VPC)                    | Private networking                                                     | Calico                                                                                                         | -                        |
+| AWS CodePipeline                                      | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | -                        |
+
+
+## Google motsvatighet som Open source
+
+| Tjänst hos Google                   | Funktion                                                               | Motsvarande Open Source                                                                                        | Managerat hos Safespring |
+|-------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------|
+| Google Kubernetes Engine (GKE)      | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | Ja                       |
+| Google Compute Engine               | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | Ja                       |
+| Google Cloud Storage                | Objektlagring                                                          | N/A                                                                                                            | Ja                       |
+| Google Cloud SQL                    | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | Ja                       |
+| Google Cloud Pub/Sub                | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | Ja                       |
+| Stackdriver                         | Monitorering                                                           | Prometheus + Grafana                                                                                           | Ja                       |
+| Stackdriver                         | Loggning                                                               | Elasticsearch                                                                                                  | Ja                       |
+| Google Container Registry           | Container register                                                     | Harbor                                                                                                         | Ja                       |
+| N/A                                 | Intrångsdetektering                                                    | Falco                                                                                                          | Ja                       |
+| Google Identity Platform            | Identity Provider                                                      | Dex                                                                                                            | Ja                       |
+| Google Cloud Directory Sync         | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | -                        |
+| Google Cloud Key Management Service | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | -                        |
+| Google Cloud Bigtable               | Key-value store                                                        | TiKV                                                                                                           | -                        |
+| Google Cloud Functions              | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | -                        |
+| Google Cloud Virtual Private Cloud  | Private networking                                                     | Calico                                                                                                         | -                        |
+| Google Cloud Build                  | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | -                        |
+
+
+## Gamla listan
+
 {{< aks-alternatives >}}
+
+<script>
+// Hämta tabellen
+const table = document.querySelector('table');
+
+// Kör funktionen när sidan laddas
+window.addEventListener('load', function() {
+  // Iterera över tabellens rader
+  const rows = table.querySelectorAll('tr');
+  rows.forEach(function(row, rowIndex) {
+    // Iterera över radens celler
+    const cells = row.querySelectorAll('td');
+    cells.forEach(function(cell, cellIndex) {
+      // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
+      const label = table.querySelectorAll('th')[cellIndex].textContent;
+
+      // Lägg till data-label attributet till cellen med rubriktexten som värde
+      cell.setAttribute('data-label', label);
+    });
+  });
+});
+
+</script>

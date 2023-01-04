@@ -1166,7 +1166,7 @@ color: var(--unCheckedColor);
 		letter-spacing: 1px;
 	}
 
-	@media only screen and (max-width: 850px) {
+	@media only screen and (max-width: 1100px) {
 		.main-default-single {
 			flex-flow: row wrap !important;
 			padding: 10% !important;
@@ -5744,9 +5744,9 @@ ol li::before {
 
 	/* HORISONTAL CARD */
 	.safespring-horisontal-card-container {
-			overflow: hidden;
-			border-radius: 10px;
-		}
+		overflow: hidden;
+		border-radius: 10px;
+	}
 
 	@media screen and (min-width: 1500px) {
 		.safespring-horisontal-card-image {
@@ -6314,4 +6314,126 @@ transform: translate(15%, -10px);
 data-player {
 	border-radius: 10px;
 	overflow: hidden;
+}
+
+/* TABLE */
+
+table {
+	width: min(70vw, 1400px);
+	border-spacing: 0;
+}
+
+thead {
+	font: 18px/1 var(--hind-font);
+	color: var(--clear-blue-color);
+	background-color: #fafefe;
+}
+
+tbody {
+	margin: 0;
+}
+
+th {
+	font-weight: 300;
+	text-align: left;
+	border-bottom: 1px solid var(--cloud-blue-color);
+	padding: 10px 20px;
+	background-color: none;
+}
+
+td {
+	font: 16px/1 var(--mon-font);
+	font-weight: 300;
+	padding: 10px 20px;
+	border-bottom: 1px solid var(--cloud-blue-color);
+}
+
+td:first-child {
+	font-weight: 600;
+	color: var(--main-color);
+}
+
+tr:hover {
+	background-color: var(--cloud-blue-color);
+}
+
+tr:nth-child(even) {
+	/*background-color: var(--cloud-blue-color);*/
+}
+
+
+td:first-child,
+th:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+td:last-child,
+th:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 650px) {
+	table {
+		border: 0;
+	}
+
+	table caption {
+		font-size: 1.3em;
+	}
+
+	table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	table tr {
+		border-bottom: 1px solid var(--main-color);
+		display: block;
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+	}
+
+	table td {
+		border-bottom: 1px solid var(--cloud-blue-color);
+		display: block;
+		font-size: .8em;
+		text-align: right;
+	}
+
+	table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+		content: attr(data-label);
+		float: left;
+		font-weight: 300;
+		font: 16px/1 var(--hind-font);
+		color: var(--clear-blue-color);
+	}
+
+	table td:last-child {
+		border-bottom: 0;
+	}
+
+	td:first-child,
+	th:first-child {
+		border-radius: 0;
+	}
+
+	td:last-child,
+	th:last-child {
+		border-radius: 0;
+	}
+
+	td:first-child {
+		font-weight: 300;
+		color: var(--alt-color);
+	}
 }
