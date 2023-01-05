@@ -65,8 +65,8 @@ Compliant Kubernetes (CK8s) är en CNCF (Cloud Native Computing Foundation) cert
 
 ### CK8s som öppen källkod
 
-- Källkod: https://github.com/elastisys/compliantkubernetes
-- Dokumentation: https://compliantkubernetes.io
+- [Källkod](https://github.com/elastisys/compliantkubernetes)
+- [Dokumentation](https://compliantkubernetes.io)
 
 ### Förutsättningar
 
@@ -225,95 +225,69 @@ En migrationsplan innehåller med nödvändighet en inventeringsfas, identifieri
 
 När migreringen väl är genomförd väntar systemadministration och övervakning i en ny miljö. Verktygen för detta har också presenterats i dokumentet och även hur de tillsammans verkar för att ge en helhetslösning med fokus på säkerhet och smidiga agila utvecklingsprocesser.
 
+
 ## AKS motsvarighet som Open source
 
 | Tjänst i Azure                               | Funktion                                                               | Open Source                                                                                                    | Managerat hos Safespring |
 |----------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------|
-| Azure Kubernetes Service (AKS)               | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | Ja                       |
-| Azure Virtual Machine                        | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | Ja                       |
-| Azure Blob Storage                           | Objektlagring                                                          | N/A                                                                                                            | Ja                       |
-| Azure Mysql, Azure MariaDB, Azure PostgreSQL | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | Ja                       |
-| Azure Service Bus                            | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | Ja                       |
-| Azure Monitor                                | Monitorering                                                           | Prometheus + Grafana                                                                                           | Ja                       |
-| Azure Monitor                                | Loggning                                                               | Elasticsearch                                                                                                  | Ja                       |
-| Azure Container Registry                     | Container register                                                     | Harbor                                                                                                         | Ja                       |
-| N/A                                          | Intrångsdetektering                                                    | Falco                                                                                                          | Ja                       |
-| Azure Active Directory                       | Identity Provider                                                      | Dex                                                                                                            | Ja                       |
-| Azure AD Domain Services                     | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | -                        |
-| Azure Key Vault                              | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | -                        |
-| Azure Cosmos DB (Table API)                  | Key-value store                                                        | TiKV                                                                                                           | -                        |
-| Azure Functions                              | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | -                        |
-| Azure Virtual Network                        | Private networking                                                     | Calico                                                                                                         | -                        |
-| Azure DevOps Pipelines                       | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | -                        |
+| Azure Kubernetes Service (AKS)               | Managerad Kubernetes                                                   | [Compliant Kubernetes](/tjanster/compliant-kubernetes)                                                         | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Virtual Machine                        | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Blob Storage                           | Objektlagring                                                          | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Mysql, Azure MariaDB, Azure PostgreSQL | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Service Bus                            | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Monitor                                | Monitorering                                                           | Prometheus + Grafana                                                                                           | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Monitor                                | Loggning                                                               | Elasticsearch                                                                                                  | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Container Registry                     | Container register                                                     | Harbor                                                                                                         | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| N/A                                          | Intrångsdetektering                                                    | Falco                                                                                                          | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure Active Directory                       | Identity Provider                                                      | Dex                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Azure AD Domain Services                     | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Azure Key Vault                              | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Azure Cosmos DB (Table API)                  | Key-value store                                                        | TiKV                                                                                                           | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Azure Functions                              | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Azure Virtual Network                        | Private networking                                                     | Calico                                                                                                         | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Azure DevOps Pipelines                       | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
 
 
 ## Amazon motsvarighet som Open source
 
 | Tjänst i Amazon                                       | Funktion                                                               | Motsvarande Open Source                                                                                        | Managerat hos Safespring |
 |-------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------|
-| Amazon Elastic Container Service for Kubernetes (EKS) | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | Ja                       |
-| Amazon Elastic Compute Cloud (EC2)                    | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | Ja                       |
-| Amazon Simple Storage Service (S3)                    | Objektlagring                                                          | N/A                                                                                                            | Ja                       |
-| Amazon Relational Database Service (RDS)              | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | Ja                       |
-| Amazon Simple Queue Service (SQS)                     | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | Ja                       |
-| Amazon CloudWatch                                     | Monitorering                                                           | Prometheus + Grafana                                                                                           | Ja                       |
-| Amazon CloudWatch                                     | Loggning                                                               | Elasticsearch                                                                                                  | Ja                       |
-| Amazon Elastic Container Registry (ECR)               | Container register                                                     | Harbor                                                                                                         | Ja                       |
-| N/A                                                   | Intrångsdetektering                                                    | Falco                                                                                                          | Ja                       |
-| Amazon Cognito                                        | Identity Provider                                                      | Dex                                                                                                            | Ja                       |
-| Amazon Directory Service                              | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | -                        |
-| Amazon Key Management Service (KMS)                   | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | -                        |
-| Amazon DynamoDB                                       | Key-value store                                                        | TiKV                                                                                                           | -                        |
-| Amazon Simple Queue Service (SQS)                     | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | -                        |
-| Amazon Virtual Private Cloud (VPC)                    | Private networking                                                     | Calico                                                                                                         | -                        |
-| AWS CodePipeline                                      | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | -                        |
+| Amazon Elastic Container Service for Kubernetes (EKS) | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Elastic Compute Cloud (EC2)                    | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Simple Storage Service (S3)                    | Objektlagring                                                          | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Relational Database Service (RDS)              | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Simple Queue Service (SQS)                     | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon CloudWatch                                     | Monitorering                                                           | Prometheus + Grafana                                                                                           | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon CloudWatch                                     | Loggning                                                               | Elasticsearch                                                                                                  | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Elastic Container Registry (ECR)               | Container register                                                     | Harbor                                                                                                         | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| N/A                                                   | Intrångsdetektering                                                    | Falco                                                                                                          | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Cognito                                        | Identity Provider                                                      | Dex                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Amazon Directory Service                              | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Amazon Key Management Service (KMS)                   | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Amazon DynamoDB                                       | Key-value store                                                        | TiKV                                                                                                           | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Amazon Simple Queue Service (SQS)                     | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Amazon Virtual Private Cloud (VPC)                    | Private networking                                                     | Calico                                                                                                         | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| AWS CodePipeline                                      | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
 
 
 ## Google motsvatighet som Open source
 
 | Tjänst hos Google                   | Funktion                                                               | Motsvarande Open Source                                                                                        | Managerat hos Safespring |
 |-------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------|
-| Google Kubernetes Engine (GKE)      | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | Ja                       |
-| Google Compute Engine               | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | Ja                       |
-| Google Cloud Storage                | Objektlagring                                                          | N/A                                                                                                            | Ja                       |
-| Google Cloud SQL                    | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | Ja                       |
-| Google Cloud Pub/Sub                | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | Ja                       |
-| Stackdriver                         | Monitorering                                                           | Prometheus + Grafana                                                                                           | Ja                       |
-| Stackdriver                         | Loggning                                                               | Elasticsearch                                                                                                  | Ja                       |
-| Google Container Registry           | Container register                                                     | Harbor                                                                                                         | Ja                       |
-| N/A                                 | Intrångsdetektering                                                    | Falco                                                                                                          | Ja                       |
-| Google Identity Platform            | Identity Provider                                                      | Dex                                                                                                            | Ja                       |
-| Google Cloud Directory Sync         | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | -                        |
-| Google Cloud Key Management Service | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | -                        |
-| Google Cloud Bigtable               | Key-value store                                                        | TiKV                                                                                                           | -                        |
-| Google Cloud Functions              | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | -                        |
-| Google Cloud Virtual Private Cloud  | Private networking                                                     | Calico                                                                                                         | -                        |
-| Google Cloud Build                  | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | -                        |
+| Google Kubernetes Engine (GKE)      | Managerad Kubernetes                                                   | Compliant Kubernetes                                                                                           | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Compute Engine               | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Cloud Storage                | Objektlagring                                                          | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Cloud SQL                    | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Cloud Pub/Sub                | Meddelandefunktion för kommunikation mellan tjänster                   | RabbitMQ eller NATS som kör i Kubernetes eller i separata virtuella maskiner                                   | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Stackdriver                         | Monitorering                                                           | Prometheus + Grafana                                                                                           | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Stackdriver                         | Loggning                                                               | Elasticsearch                                                                                                  | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Container Registry           | Container register                                                     | Harbor                                                                                                         | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| N/A                                 | Intrångsdetektering                                                    | Falco                                                                                                          | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Identity Platform            | Identity Provider                                                      | Dex                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}}                       |
+| Google Cloud Directory Sync         | Hantering av organisationens användare, resurser och deras rättigheter | OpenLDAP                                                                                                       | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Google Cloud Key Management Service | Hanterar hemligheter på ett centralt och säkert sätt                   | Hashicorp Vault                                                                                                | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Google Cloud Bigtable               | Key-value store                                                        | TiKV                                                                                                           | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Google Cloud Functions              | Serverless runtime                                                     | OpenFaaS / OpenWhisk                                                                                           | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Google Cloud Virtual Private Cloud  | Private networking                                                     | Calico                                                                                                         | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
+| Google Cloud Build                  | CI/CD                                                                  | Jenkins, ArgoCD, med flera.                                                                                    | {{< icon "fa-solid fa-dash" "#FA690F" >}}                        |
 
-
-## Gamla listan
-
-{{< aks-alternatives >}}
-
-<script>
-// Hämta tabellen
-const table = document.querySelector('table');
-
-// Kör funktionen när sidan laddas
-window.addEventListener('load', function() {
-  // Iterera över tabellens rader
-  const rows = table.querySelectorAll('tr');
-  rows.forEach(function(row, rowIndex) {
-    // Iterera över radens celler
-    const cells = row.querySelectorAll('td');
-    cells.forEach(function(cell, cellIndex) {
-      // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
-      const label = table.querySelectorAll('th')[cellIndex].textContent;
-
-      // Lägg till data-label attributet till cellen med rubriktexten som värde
-      cell.setAttribute('data-label', label);
-    });
-  });
-});
-
-</script>

@@ -44,11 +44,12 @@
 
 code {
 	font-style: normal;
-	font-size: 13px;
+	font-size: 13px !important;
 	background: #EAF0F4;
 	padding: 5px 8px;
 	border-radius: 5px;
 	color: #195F8C;
+	overflow: scroll;
 }
 
 hr {
@@ -3334,11 +3335,10 @@ margin: 0
 pre {
 	background: #EAF0F4 !important;
 	max-width: 700px !important;
-	padding: 15px !important;
-	border-radius: 10px 0 10px 10px !important;
-	line-height: 1.5 !important;
+	padding: 20px 30px !important;
+	border-radius: 10px !important;
 	overflow: scroll !important;
-	margin: 0 13px  13px 0 !important;
+	/*margin: 0 13px  13px 0 !important;*/
 }
 
 pre > code {
@@ -3425,6 +3425,7 @@ pre > code {
 	margin: 0px;
 }
 .content-container a {
+	width: 100%;
 	padding: 0;
 	margin: 0px;
 }
@@ -6105,12 +6106,10 @@ white-space: nowrap;
 		grid-column: 2 / span 6;
 	}
 	.copy-code-button {
-		width: 100px;
-		margin: 0 0 0 587px  !important;
+
 	}
+
 	li>.copy-code-button {
-		width: 100px;
-		margin: 0 0 0 587px  !important;
 	}
 }
 
@@ -6173,24 +6172,28 @@ margin-bottom: 2rem
 /* COPY CODE BUTTON */
 
 .copy-code-button {
-	font-family: var(--hind-font);
-	color: #FA690F;
-	background-color: #EAF0F4;
-	border-radius: 10px 10px 0 0;
+	font-family: "Font Awesome 6 Pro";
+	color: #32cd32;
+	background-color: #32cd3217;
+	border-radius: 50px;
 	border: none;
+	width: 40px;
+	height: 40px;
+	font-size: 90%;
+	transition: transform 0.2s;
 
 	/* right-align */
 	display: block;
-	margin-left: auto;
-	margin-right: 0;
+	float: right;
+	margin: 0 10px;
 
-	padding: 6px 12px 0px 12px;
-	font-size: 0.8em;
+	padding: 10px;
 }
 
 .copy-code-button:hover {
 	cursor: pointer;
-	color: #32CD32;
+	transform: translateY(-5px);
+
 }
 
 .copy-code-button:focus {
@@ -6205,9 +6208,22 @@ margin-bottom: 2rem
 	background-color: #D9D9D9;
 }
 
+@media screen and (max-width: 650px) {
+	.copy-code-button {
+		float: none;
+		margin: 10px auto;
+	}
+
+}
+
 .highlight pre {
 	/* Avoid pushing up the copy buttons. */
 	margin: 0;
+}
+
+.highlight {
+	margin: 0;
+	max-width: 80vw;
 }
 
 /* FLEX CONTAINER */
@@ -6321,12 +6337,16 @@ data-player {
 table {
 	width: min(70vw, 1400px);
 	border-spacing: 0;
+	/*box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.10);
+	padding: 5%;
+	background-color: white;
+	border-radius: 10px;*/
+	margin: 40px 0 80px 0;
 }
 
 thead {
 	font: 18px/1 var(--hind-font);
 	color: var(--clear-blue-color);
-	background-color: #fafefe;
 }
 
 tbody {
@@ -6375,6 +6395,7 @@ th:last-child {
 @media screen and (max-width: 650px) {
 	table {
 		border: 0;
+		width: 100%;
 	}
 
 	table caption {
@@ -6396,7 +6417,7 @@ th:last-child {
 		border-bottom: 1px solid var(--main-color);
 		display: block;
 		margin-bottom: 10px;
-		padding-bottom: 5px;
+		padding-bottom: 7px;
 	}
 
 	table td {
@@ -6413,8 +6434,8 @@ th:last-child {
     */
 		content: attr(data-label);
 		float: left;
-		font-weight: 300;
-		font: 16px/1 var(--hind-font);
+		font-weight: ;
+		font: 15px/1 var(--hind-font);
 		color: var(--clear-blue-color);
 	}
 
@@ -6433,7 +6454,7 @@ th:last-child {
 	}
 
 	td:first-child {
-		font-weight: 300;
-		color: var(--alt-color);
+		font-weight: 600;
+		color: var(--main-color);
 	}
 }

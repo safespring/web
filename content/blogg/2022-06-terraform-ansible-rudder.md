@@ -24,8 +24,15 @@ Updated to fix an inconsistency on 2022-08-22
 {{% /disclaimer %}}
 
 {{% note "Read more" %}}
-Here you can read [part one](/blogg/2022-01-terraform-modules), [part two](/blogg/2022-03-terraform-module), [part three](/blogg/2022-05-terraform-ansible) and part four (this post).
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy: 
+
+1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
+2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
+3. [Integrating Terraform and ansible for efficient resource management](/blogg/2022-05-terraform-ansible)
+4. [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)
+
 {{% /note %}}
+
 
 ## Prerequisites
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
@@ -210,7 +217,9 @@ repo][sftfmodules] as a reference and explain each of them underneath the code.
 Example in https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-rudder-minimal-poc
 
 #### Terraform code
+
 ```terraform
+
 terraform {
   required_version = ">= 0.14.0"
   required_providers {
@@ -293,6 +302,7 @@ module my_clients {
    role            = "rudder_client"
    key_pair_name   = openstack_compute_keypair_v2.skp.name
 }
+
 ```
 
 Here we create an instance that will be configured as a Rudder server using the

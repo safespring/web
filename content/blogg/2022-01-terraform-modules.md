@@ -12,17 +12,23 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
 {{< ingress >}}
 In this blog post, we'll showcase just how easy it is by the example of our community Terraform modules.
 {{< /ingress >}}
 
-
-
 It has never been easier to provision compute and block storage resources in Safespring's infrastructure platform. Modules can be sourced directly from GitHub using a minimum of Terraform code.
 
 {{% note "Read more" %}}
-Here you can read part one (this post), [part two](/blogg/2022-03-terraform-module) and [part three](/blogg/2022-05-terraform-ansible)
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy: 
+
+1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
+2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
+3. [Integrating Terraform and ansible for efficient resource management](/blogg/2022-05-terraform-ansible)
+4. [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)
+
 {{% /note %}}
+
 
 ## Terraform introduction
 Terraform has become the de-facto industry standard for «Infrastructure As Code - IAC». It is written in Golang, is open source, and you can download it as a single executable file from the [Terraform download page][tfdl].

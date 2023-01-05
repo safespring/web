@@ -259,3 +259,28 @@
 <script src="/js/copy-code-button.js">
 </script>
 {{ end }}
+
+<script>
+// Hämta alla tabeller på sidan
+const tables = document.querySelectorAll('table');
+
+// Kör funktionen när sidan laddas
+window.addEventListener('load', function() {
+  // Iterera över tabellerna
+  tables.forEach(function(table) {
+    // Iterera över tabellens rader
+    const rows = table.querySelectorAll('tr');
+    rows.forEach(function(row, rowIndex) {
+      // Iterera över radens celler
+      const cells = row.querySelectorAll('td');
+      cells.forEach(function(cell, cellIndex) {
+        // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
+        const label = table.querySelectorAll('th')[cellIndex].textContent;
+
+        // Lägg till data-label attributet till cellen med rubriktexten som värde
+        cell.setAttribute('data-label', label);
+      });
+    });
+  });
+});
+</script>

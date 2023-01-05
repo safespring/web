@@ -3,7 +3,7 @@ function addCopyButtons(clipboard) {
     var button = document.createElement('button');
     button.className = 'copy-code-button';
     button.type = 'button';
-    button.innerText = 'Copy';
+    button.innerText = '';
 
     button.addEventListener('click', function () {
       clipboard.writeText(codeBlock.innerText).then(function () {
@@ -11,13 +11,13 @@ function addCopyButtons(clipboard) {
         leaving the button in a focused state. */
         button.blur();
 
-        button.innerText = 'Copied!';
+        button.innerText = '';
 
         setTimeout(function () {
-          button.innerText = 'Copy';
-        }, 2000);
+          button.innerText = '';
+        }, 4000);
       }, function (error) {
-        button.innerText = 'Error';
+        button.innerText = '';
       });
     });
 
