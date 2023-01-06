@@ -4,9 +4,6 @@ title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
 copyright = "2021 Safespring"
 
-module.data = true
-
-
 # Pagination
 paginate = 10
 paginatePath = "blog"
@@ -89,7 +86,4 @@ SectionPagesMenu = "main"
 
 [blackfriday]
 fractions = false
-
-[data]
-authors = "authorsv"
 
