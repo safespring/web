@@ -35,8 +35,8 @@
 
 <!-- HEADING -->
 <div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
-    {{ .Render "li3" }}
-  </div>
+  {{ .Render "li3" }}
+</div>
 </div>
 
 <!-- CONTENT -->
@@ -44,10 +44,11 @@
 {{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
-      {{ .Content }}
-      {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
-      {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
-    </div>
+    {{ .Content }}
+    
+    {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
+    {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
+  </div>
   <!-- SIDEBAR -->
   {{ if eq .Params.nosidebar "x" }}{{ else }}<div class="sidebar-default-single">
     {{ if eq $.Section "webinar" }}{{partial "webinar-side-bar.html" . }}{{ else if eq $.Section "kommun" }}{{partial "webinar-side-bar.html" . }}{{ else }}{{ partial "sidebar-default-single.html" . }}{{ end }}
@@ -56,4 +57,4 @@
 
 </main>
 <!-- FOOTER -->
-{{ partial "footer.html" . }}{{end}}
+{{ partial "footer.html" . }} {{ end }}

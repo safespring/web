@@ -13,6 +13,8 @@ language: "En"
 toc: ""
 ---
 
+{{< author-advg >}}
+
 {{< ingress >}}
 Using a jump host is good practice for increased security and a simple solution when you don’t have a fixed IP-adress but need access to Safespring’s APIs.
 {{< /ingress >}}

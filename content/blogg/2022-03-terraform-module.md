@@ -12,6 +12,9 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
+{{< author-jarle >}}
+
 {{< ingress >}}
 This is part two in the series about Safespring's Terraform modules. This blog
 post will look at the new and more general Safespring modules for compute

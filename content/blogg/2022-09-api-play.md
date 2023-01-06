@@ -13,6 +13,8 @@ language: "En"
 toc: "Table of contents"
 ---
 
+{{< author-jarle >}}
+
 {{< ingress >}}
 Safespring promote as much automation as possible using standard tools
 like Terraform and Ansible. Sometimes, however, it is necessary to dig one step

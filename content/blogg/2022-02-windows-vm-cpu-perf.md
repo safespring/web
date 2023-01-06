@@ -13,6 +13,8 @@ language: "En"
 toc: ""
 ---
 
+{{< author-oyvind >}}
+
 {{< ingress >}}
 In this blog post, we'll go through some virtual machine optimizations. We optimized CPU performance improvement on Windows due to poor application performance for one of our customers.
 {{< /ingress >}}

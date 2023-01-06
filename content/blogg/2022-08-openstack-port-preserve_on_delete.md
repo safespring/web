@@ -13,6 +13,8 @@ language: "En"
 toc: ""
 ---
 
+{{< author-jarle >}}
+
 {{< ingress >}}
 There is no way to retroactively keep OpenStack from deleting a network port on detachment, but in this blog post we'll walk through a possible solution.
 {{< /ingress >}}

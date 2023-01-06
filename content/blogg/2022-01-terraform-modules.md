@@ -13,6 +13,8 @@ language: "En"
 toc: "Table of contents"
 ---
 
+{{< author-jarle >}}
+
 {{< ingress >}}
 In this blog post, we'll showcase just how easy it is by the example of our community Terraform modules.
 {{< /ingress >}}

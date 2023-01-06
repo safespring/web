@@ -12,6 +12,9 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
+{{< author-jarle >}}
+
 {{< ingress >}}
 For Linux-/Unix-based cloud instances, the initial root access to the instances is enabled employing SSH keys. In this post, we'll go through some best practices and things to keep in mind when managing ssh-keys to enable root access to instances.
 {{< /ingress >}}

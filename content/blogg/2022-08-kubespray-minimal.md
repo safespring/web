@@ -12,6 +12,9 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
+{{< author-jarle >}}
+
 {{< ingress >}}
 Kubespray is a
 comprehensive tool that covers a lot of different use cases. In this post we

@@ -6458,3 +6458,33 @@ th:last-child {
 		color: var(--main-color);
 	}
 }
+
+.author-container {
+	display: flex;
+    align-items: center;
+    border-bottom: 0.25px solid var(--cloud-blue-color);
+    padding-bottom: 30px;
+}
+.author-image {
+	width: 75px;
+	height: 75px;
+	border-radius: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.author-info {
+	margin-left: 15px;
+}
+
+.author-name {
+	margin: 0;
+	font-weight: 600;
+}
+
+.author-title {
+	font-size: 14px;
+	margin: 0;
+	font-weight: 300;
+	text-transform: uppercase;
+}

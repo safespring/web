@@ -12,6 +12,9 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
+{{< author-jarle >}}
+
 {{< ingress >}}
 This is part three in the series about Safespring's Terraform modules. This blog
 post will look at how we can integrate Ansible and Terraform in order to configure

@@ -12,6 +12,9 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
+{{< author-jarle >}}
+
 {{< ingress >}}
 This blog post will look at how we can build even further on
 previously demonstrated concepts to create sets of servers that are

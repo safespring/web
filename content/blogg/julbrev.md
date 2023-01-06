@@ -10,8 +10,15 @@ socialmediabild: "safespring_social_17.jpg"
 section: "blogg"
 ---
 
+{{< author-fredric-happy >}}
+
 ## Hoppas du också haft ett händelserikt år
-Jag hoppas att du haft ett lika händelserikt och spännande år som vi på Safespring. Våra tjänster är i huvudsak baserade på öppen källkod och vi tror på att vara en del av ett ekosystem där fler bidrar till att förbättra applikationer utan att hindras av licensavgifter eller proprietära lösningar som låser in användare.
+
+{{< ingress >}}
+Jag hoppas att du haft ett lika händelserikt och spännande år som vi på Safespring. 
+{{< /ingress >}}
+
+Våra tjänster är i huvudsak baserade på öppen källkod och vi tror på att vara en del av ett ekosystem där fler bidrar till att förbättra applikationer utan att hindras av licensavgifter eller proprietära lösningar som låser in användare.
 
 Vi upplever att användningen av öppen källkod accelererat under 2018 och vi tror det kommer fortsätta spela en stor roll i digitaliseringen av samhället. T.ex gynna den digitalisering som svenska utbildningssektorn genomgår just nu. Safespring blev under året medlemmar i Swedish EdTech för att bidra med vår kunskap om storskaliga tjänster där säkerhet står i fokus och öppen källkod och öppna standarder gör att ingen blir inlåst i vår plattform.
 

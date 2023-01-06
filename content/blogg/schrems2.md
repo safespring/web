@@ -1,5 +1,6 @@
 ---
 title: "Europa behöver skapa egna molntjänster"
+intro: "Regeringen behöver agera för att främja lokal innovation inom molninfrastruktur."
 date: "2020-08-05"
 draft: false
 tags: ["Svenska"]
@@ -9,6 +10,9 @@ eventbild: "safespring_background_32.jpg"
 socialmediabild: "safespring_social_32.jpg"
 section: "blogg"
 ---
+
+{{< author-fredric-firm >}}
+
 {{< ingress >}}
 Regeringen behöver agera för att främja lokal innovation inom molninfrastruktur. Det är särskilt aktuellt efter en EU-dom som underkänner dataskyddsavtalet mellan EU och USA, skriver svenska entreprenörer inom IT-drift i en replik.
 {{< /ingress >}}
@@ -21,11 +25,11 @@ Vi menar att i en värld där många sätter sin egen nations intressen i först
 
 Givetvis kommer domen att kortsiktigt skapa utmaningar för de många företag och myndigheter som är beroende av amerikanskt IT-stöd för datadrift, så kallade molntjänster där amerikanska företag som Microsoft, Google och Amazon är dominerande aktörer.
 
-{{< inline_rubrik >}}Långsiktigt kommer domen{{< /inline_rubrik >}} dock få mycket positiva effekter då den innebär att Europa behöver skapa ett eget ramverk för denna grundläggande och samhällskritiska digitala infrastruktur som IT-stöd utgör. Och inte minst Sverige har en unik möjlighet. Med vår starka digitala innovationsgrad kan vi skapa en ny basnäring och stark exportgren inom området. Nya svenska globala företag kan växa fram och tillika skapas nya ingenjörstunga arbetstillfällen.
+{{< inline "Långsiktigt kommer domen" >}} dock få mycket positiva effekter då den innebär att Europa behöver skapa ett eget ramverk för denna grundläggande och samhällskritiska digitala infrastruktur som IT-stöd utgör. Och inte minst Sverige har en unik möjlighet. Med vår starka digitala innovationsgrad kan vi skapa en ny basnäring och stark exportgren inom området. Nya svenska globala företag kan växa fram och tillika skapas nya ingenjörstunga arbetstillfällen.
 
 För att Sverige ska kunna ta denna möjlighet krävs dock att regeringen med infrastrukturminister Tomas Eneroth och näringsminister Ibrahim Baylan i spetsen ser innovationsmöjligheterna med den digitala infrastrukturen. Tyvärr läggs ett allt för stort fokus på hur den svenska lagstiftningen ska kunna anpassas för att amerikanska lösningar och intressen ska främjas, vilket Agne Lindberg och Adam Odmarks artikel är ytterligare ett exempel på.
 
-{{< inline_rubrik >}}Vi är givetvis för en helt öppen{{< /inline_rubrik >}} och konkurrensutsatt marknad där även de amerikanska lösningarna ska finnas som en del, men det finns många fördelar med en ökad lokal konkurrens på området för IT-stöd. Inte bara kommer de ökande valmöjligheterna medföra att den oligopolliknande ställning som amerikanska leverantörer av IT-stöd hittills haft försvinner. De kommer även att leda till en säkrare värld där vi kan främja europeiska värderingar. Den digitala infrastrukturen har idag blivit ett av de viktigaste säkerhetspolitiska områdena eftersom den som äger informationen kan kontrollera världen. I en värld där nationerna sätter sina egna intressen i första rummet, är det en stor säkerhetsrisk att använda sig nästan uteslutande av utomeuropeiska leverantörer. En enkel parallell är hur vi historiskt i Sverige har resonerat kring försvarsindustrin eller den nu pågående översynen av beredskapslagren av livsmedelsförsörjning och utrustning till vården i spåren av den pågående pandemin. Vi måste kunna stå på egna ben!
+{{< inline "Vi är givetvis för en helt öppen" >}} och konkurrensutsatt marknad där även de amerikanska lösningarna ska finnas som en del, men det finns många fördelar med en ökad lokal konkurrens på området för IT-stöd. Inte bara kommer de ökande valmöjligheterna medföra att den oligopolliknande ställning som amerikanska leverantörer av IT-stöd hittills haft försvinner. De kommer även att leda till en säkrare värld där vi kan främja europeiska värderingar. Den digitala infrastrukturen har idag blivit ett av de viktigaste säkerhetspolitiska områdena eftersom den som äger informationen kan kontrollera världen. I en värld där nationerna sätter sina egna intressen i första rummet, är det en stor säkerhetsrisk att använda sig nästan uteslutande av utomeuropeiska leverantörer. En enkel parallell är hur vi historiskt i Sverige har resonerat kring försvarsindustrin eller den nu pågående översynen av beredskapslagren av livsmedelsförsörjning och utrustning till vården i spåren av den pågående pandemin. Vi måste kunna stå på egna ben!
 
 Även om Sverige många gånger ses som ett föregångsland inom digitalisering har regeringen knappast agerat tillräckligt kraftfullt för att främja lokal innovation inom den molninfrastruktur som utgör själva grunden för att digitaliseringen ska fungera. Det är därför viktigt att industrin tillsammans med regeringen nu kraftsamlar för att skapa en långsiktigt hållbar lösning. Målsättningen bör vara att se över hur vi kan skapa en svensk basindustri inom IT-stöd och tillika främja svensk exportnäring och nationell säkerhet.
 
@@ -46,6 +50,4 @@ Detta white paper tar upp förutsättningarna efter domen och rekommendationer t
 - olika svenska aktörers roll för vidareutvecklingen av denna marknadsstruktur och särskilt behovet av koordinering av insatser på statlig nivå (del III)
 - och en kort beskrivning av vägen framåt (del IV).
 
-<h3 id="download">Hämta white paper</h3>
-
-<br><iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" width="360" height="367" style="border:0"></iframe>
+{{< localbutton "Läs white paper" "/whitepaper/schrems-ii/" >}}

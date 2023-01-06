@@ -13,6 +13,9 @@ section: "Tech update"
 language: "En"
 toc: "Table of contents"
 ---
+
+{{< author-jarle >}}
+
 {{< ingress >}}
 This blog post will explain the different aspects of the Safespring network
 stack from a user perspective.
