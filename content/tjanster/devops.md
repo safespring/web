@@ -39,17 +39,6 @@ Vi erbjuder våra tjänster genom att ta ut en fast månadsavgift för en smidig
 - **Undvik inlåsning** till en specifik plattform eller proprietära tjänster. Vi hjälper er med en strategi för att era lösningar ska vara agnostiska och möjliga att flytta.
 
 
-{{< horisontal-card cardtitle="Standardplan för DevOps-support" image="/img/graphics/safespring-image.svg" link="/kontakt" linktext="Kontakta oss">}}
-    Svarar på förfrågningar inom ett dygn (epost).  
-    Upp till två timmar videomöten (inom 5 arbetsdagar efter förfrågan).  
-    Tillgång till ytterligare hands-on hjälp för  1 250 kr / timmen (nästkommande månad).
-{{< /horisontal-card >}}
-
-{{< horisontal-card cardtitle="Premiumplan för DevOps-support" image="/img/graphics/safespring-image.svg" link="/kontakt" linktext="Kontakta oss">}}
-  Specifik kontaktperson.  
-  Livechatt med utvecklings&shy;teamet (kontorstid).  
-  Upp till sex timmar videomöten i månaden (inom två dagar efter förfrågan).  
-  Upp till 10 timmar junior och mid-senior hands-on hjälp för specifika problem (kodgranskning, felsökning, containeranpassning, automation, testning mm.).  
-  Ytterligare hands-on hjälp för 950 kr / timmen (samma månad).
-{{< /horisontal-card >}}
+{{< horisontal-card cardtitle="Standardplan för DevOps-support" image="/img/graphics/safespring-image.svg" link="/kontakt" linktext="Kontakta oss" text="Svarar på förfrågningar inom ett dygn (epost).  Upp till två timmar videomöten (inom 5 arbetsdagar efter förfrågan).  Tillgång till ytterligare hands-on hjälp för  1 250 kr / timmen (nästkommande månad)." >}}
+{{< horisontal-card cardtitle="Premiumplan för DevOps-support" image="/img/graphics/safespring-image.svg" link="/kontakt" linktext="Kontakta oss" text="Specifik kontaktperson. Livechatt med utvecklings&shy;teamet (kontorstid). Upp till sex timmar videomöten i månaden (inom två dagar efter förfrågan). Upp till 10 timmar junior och mid-senior hands-on hjälp för specifika problem (kodgranskning, felsökning, containeranpassning, automation, testning mm.). Ytterligare hands-on hjälp för 950 kr / timmen (samma månad)." >}}
 

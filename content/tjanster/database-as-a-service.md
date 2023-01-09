@@ -69,12 +69,10 @@ Prissättningskomponenter är antalet server-vCPU:er och tillhörande RAM, mäng
 | XX-Large | 16vCPU | 32GB     | 1000      | 17,417 SEK          |
 
 
-| Data Egress          | Månadspris  |
+| Data Egress          | Månadspris     |
 |----------------------|----------------|
 | Första 1024GB        | GRATIS         |
 | Över 1024 GB         | 9,37 SEK/GB    |
 
 
-
-
-  {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan av Database as a service" text="Safespring körs i datacenter inom Europa och berörs inte av utländsk lagstiftning som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan av Database as a service" text="Safespring körs i datacenter inom Europa och berörs inte av utländsk lagstiftning som CLOUD Act eller FISA 702." %}}

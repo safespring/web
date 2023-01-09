@@ -22,10 +22,7 @@ devops: ""
 section: "Public Cloud"
 ---
 
-<video poster="/tjanster/images/safespring_compute.jpg" width="100%" style="border-radius: 10px; background-color:#E8EFF3;" controls>
-<source type="video/mp4" src="/tjanster/images/safespring_compute.mp4">
-<track src="/tjanster/images/safespring_compute.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
-</video>
+{{< youtube "iYDi_Hz7A74" >}}
 
 ## Virtuella maskiner till er tjänst
 <div class="ingress"><p>En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar.</p></div>
