@@ -6173,8 +6173,8 @@ margin-bottom: 2rem
 
 .copy-code-button {
 	font-family: "Font Awesome 6 Pro";
-	color: #32cd32;
-	background-color: #32cd3217;
+	color: var(--middle-blue-color);
+	background-color: var(--cloud-blue-color);
 	border-radius: 50px;
 	border: none;
 	width: 40px;
@@ -6193,6 +6193,8 @@ margin-bottom: 2rem
 .copy-code-button:hover {
 	cursor: pointer;
 	transform: translateY(-5px);
+	color: var(--link-color);
+	background-color: #fbefe8;
 
 }
 
@@ -6200,7 +6202,8 @@ margin-bottom: 2rem
 	/* Avoid an ugly focus outline on click in Chrome,
 	but darken the button for accessibility.
 	See https://stackoverflow.com/a/25298082/1481479 */
-	background-color: #E6E6E6;
+	color: #32cd32;
+	background-color: #e7f9eb;
 	outline: 0;
 }
 

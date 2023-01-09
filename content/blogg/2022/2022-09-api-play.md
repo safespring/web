@@ -165,6 +165,7 @@ EOF
 You must of course again set the environment variables accordingly with the
 information from creating the [application credentials][appcred]. Otherwise, it
 is the same:
+
 ```shell
 curl  -s -H "Content-Type: application/json" -d"$(gen_os_auth_data_appcred_global_scope)" "${OS_AUTH_URL}/auth/tokens"|jq '.token.catalog[]|select(.type=="s3").endpoints[0].url' -r
 ```
