@@ -1,5 +1,5 @@
 ---
-title: "Safespring Backup"
+title: "Safespring Backup: Secure and Scalable Data Backup and Recovery"
 language: "En"
 documentation: "Backup"
 cardtitle: "Backup"
@@ -21,19 +21,22 @@ section: "Public Cloud"
 
 {{< youtube "JCXm-Adpf40">}}
 
-
-## Cloud-based Backup Services
-
 {{< ingress >}}
-Our Backup as a Service is a true cloud-based backup service.
+Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect. 
 {{< /ingress >}}
 
-This means that you don't need to invest in any hardware or software, all you need to do is install a client on the machines you want to back up. The fact that your data doesn't leave the country and that we are a Nordic company that is not subject to the Cloud Act, for example, means you can feel even safer.
+With Safespring Backup, businesses can protect countless terabytes of data with minimal administration effort, thanks to its high security, excellent scalability, and data lifecycle automation features. Our backups are encrypted in transit with TLS 1.2, and can also be configured to be encrypted client-side for even higher security automatically.
 
-The service is consumed over the internet and you pay for the amount of data stored in the service. The invoice for consumption will be sent monthly and the usage can be increased or decreased according to your needs. The security is very good and of course all data is encrypted both in transport (TLS over the internet) and on encrypted disks in the data center. The service is flexible and easy to use. You can individually choose which data to back up and which backup scheme to use. You have full control over your own data and your costs.
+### Why Safespring Backup?
 
-In addition to the pure backup functions, there is much other functionality, such as "Bare Machine Recovery", which makes it possible to recreate a machine in its entirety, either on another physical hardware or to a new virtual machine, for example, in our Compute environment.
+Despite being a well-proven solution for large enterprises, traditional backup solutions like Spectrum Protect often lack flexible administration options, particularly when it comes to handling user accounts and role assignments. Safespring Backup addresses this challenge by introducing a user-friendly, self-service portal that simplifies the setup of new nodes, key token generation, and hierarchical user management.
 
-### Offsite Backup Solution
+### Solution Overview
 
-If you already have a local backup solution, you can also use our Active Archive solution as a complement to store offsite backups with us. Our solution supports S3, a de facto standard for object storage, making it compatible with many backup solutions on the market. With that solution, you can significantly increase the safety of backups at a relatively low price. The installation is also easy because the connection to our Active Archive solution only needs to be configured centrally on the existing backup server and not on each machine separately.
+With Safespring Backup, we introduce a complete overhaul of the user portal, based on the Auwau Cloutility product, which includes the following features:
+- End-user self-service with the ability to create new users, assign roles and privileges, and manage hierarchies of servers.
+- Multi-tenancy with role-based access controls for different parts of the hierarchy, enabling delegation of servers to different parts of the organization.
+- Provisioning and advanced report engine for easy status tracking and scheduling of reports.
+- A REST API for further automation of administrative tasks.
+
+Safespring Backup is a secure, easy-to-use solution that provides businesses with the reliability of Spectrum Protect, and the flexibility of a fully-fledged self-service portal. With advanced features, multi-tenancy, and automation capabilities, Safespring Backup 2.0 is the perfect choice for managing all your backups.

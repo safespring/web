@@ -1,6 +1,7 @@
 ---
 title: "Safespring S3 Storage"
 language: "Se"
+section: "Public Cloud"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
 cardicon: "fak fa-safespring-s3"
@@ -8,7 +9,8 @@ cardcolor: "#FA690F"
 cardorder: "2"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Safespring stödjer S3 och ger snabb- eller långtidslagring för er data."
+intro: "Safespring erbjuder snabb- eller långtidslagring för din data med hjälp av S3-protokollet, en kostnadseffektiv och säker lösning för lagring av stora mängder tillgänglig data."
+cardintro: "Safespring stödjer S3 och ger snabb- eller långtidslagring för er data."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Läs Solution Brief"
@@ -17,7 +19,6 @@ socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
     - /safespring-storage/
-section: "Public Cloud"
 ---
 
 {{< ingress >}}
@@ -37,8 +38,10 @@ Hanterar din organisation känslig data som personuppgifter eller skyddsvärd in
 Safespring storage kan också vara ett bra komplement med din nuvarande lagringslösning. S3 kan användas för att lagra alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring. S3 är ett gränssnitt med brett stöd vilket gör att integration kan göras från kommandorad eller inifrån befintliga program eller skript.
 
 ### Grunden i Safespring Storage är Ceph
-Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader. [Läs dokumentation.](https://docs.safespring.com/storage/generalinfo/)
+Det finns flera fördelar med att Safespring Storage är baserat på Ceph. En av de största fördelarna är att Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Detta gör systemet både självläkande och självhanterande, vilket minimerar administrationstiden och andra kostnader. Dessutom är Ceph en mycket skalbar teknologi, vilket innebär att Safespring Storage kan anpassa sig efter dina lagringsbehov och växa tillsammans med ditt företag. Ceph är också en mycket pålitlig teknologi med hög tillgänglighet, vilket gör Safespring Storage till en robust och tillförlitlig lagringstjänst.
 
 {{< distance >}}
 
-<a href="/solution-brief/immutable-storage/"><img alt="Immutable Objects Solution Brief" src="/img//blogg/socialmedia/safespring_social_38.gif"></a>
+<a href="/solution-brief/immutable-storage/"><img style="border-radius: 10px;" alt="Immutable Objects Solution Brief" src="/img/blogg/socialmedia/safespring_social_38.gif"></a>
+
+{{< distance >}}
