@@ -1413,9 +1413,10 @@ color: var(--unCheckedColor);
 
 	.safespring-footer-third {
 		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		gap: 60px;
+    	flex-flow: row nowrap;
+    	justify-content: space-between;
+    	gap: 60px;
+    	align-items: center;
 	}
 	.safespring-footer-copyright>p {
 		color: #195F8C90;
