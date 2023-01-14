@@ -33,7 +33,7 @@ Vi närmar oss produktlansering och vill i samband med det få ökad kontroll ö
 
 Vi blev rekommenderade Safespring/Elastisys och fick ett väldigt bra intryck av dem redan från våra första uppstartsmöten. Vi får också tillgång till expertis som vi kanske inte har själva, eller har möjlighet att rekrytera”.
 
-{{< 2calltoaction "Compliant Kubernetes" "/tjanster/compliant-kubernetes/" "Mer om Findout" "https://findout.se/nb/">}}
+{{< 2calltoaction "Compliant Kubernetes" "/tjanster/compliant-kubernetes/" "Mer om Findout" "https://findout.se/om-oss" >}}
 
 ![Migrerade från Amerikansk molntjänst till Safespring och Elastisys](/img/usa-to-sweden-safespring.svg)
 ![FindOut Diagnostic](/img/findout-kundcase-2.svg)

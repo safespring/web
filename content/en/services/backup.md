@@ -13,13 +13,17 @@ cardintro: "Robust enterprise-grade cloud backup for physical or virtual servers
 background: "safespring-backup-background.svg"
 form: ""
 youtubeid: "JCXm-Adpf40"
-sidebarlinkname: "Get started"
-sidebarlinkurl: "/en/contact/"
+sidebarlinkname: "Read solution brief"
+sidebarlinkurl: "/solution-brief/safespring-backup-portal-en"
+sidebarlinkname2: "Get stared"
+sidebarlinkurl2: "/en/demo"
 socialmedia: "safespring-backup.jpg"
 section: "Public Cloud"
 ---
 
 {{< youtube "JCXm-Adpf40">}}
+
+{{< distance >}}
 
 {{< ingress >}}
 Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect. 

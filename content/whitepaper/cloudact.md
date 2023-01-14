@@ -29,6 +29,7 @@ Detta white paper handlar om EUs- och amerikansk rätts bestämmelser om gräns�
 Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersatte Personuppgiftslagen (PUL). Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 20091. EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.
 
 ## Bakgrund
+
 {{< ingress >}}
 Dataskyddsdirektivet2 från 1995 skapade ett EU-gemensamt regelverk för skydd av personuppgifter. 
 {{< /ingress >}}
@@ -41,7 +42,6 @@ Det var fortfarande upp till vart enskilt land att införa nationell lagstiftnin
 
 GDPR till skillnad från Dataskyddsdirektivet gäller som EU-lag direkt, och kräver inte omsättning av EU-reglerna i nationell lagstiftning. Det medför att samtliga EU-medlemsstater nu har fått en ännu mer harmoniserad lagstiftning vad gäller personuppgiftsskydd. Mindre lokala anpassningar av vissa detaljer i GDPR tillåts, särskilt vad gäller offentlig förvaltning, men den stora merparten av lagstiftningen förblir lik medlemsländer emellan. 
 
-
 Det fanns fram till 6:e oktober 2015 ett flertal sätt att möjliggöra överföring till tredje land, varav de tre huvudsakliga alternativen  till överföring var:
 
 1. Safe Harbor4 - system för amerikanska bolag att själv-certifiera sin personuppgiftshantering.
@@ -53,11 +53,13 @@ Den 6:e oktober 2015 ogiltigförklarade Europa-domstolen i C-362/14 EU-kommissio
 Vid sidan av personuppgiftsskyddet som gäller vid interaktioner mellan enskilda och företag eller enskilda och myndigheter finns ett särskilt system för dataöverföring i verksamheter som rör brottsbekämpande myndigheter. Dessa myndigheter kan inhämta information i förundersökningar och liknande från andra länder via så kallade MLAT-avtal (Mutual Legal Assistance Treaty).
 
 ## Aktuellt
+
 {{< ingress >}}
 Idag kan amerikanska IT-bolag tvingas lämna ut persondata när amerikanska myndigheter så kräver, oavsett fysisk plats där denna data befinner sig.
 {{< /ingress >}}
 
 ### CLOUD Act
+
 Clarifying Lawful Overseas Use of Data Act (US CLOUD act)8 är en amerikansk lag som röstades igenom den 23:e mars 2018, med syfte att undanröja tidigare hinder i den amerikanska lagstiftningen för amerikanska IT-bolag att lämna ut persondata när amerikanska myndigheter så kräver, oavsett fysisk plats där denna data befinner sig. 
 
 Lagen innehåller också en process där den amerikanska regeringen kan kvalificera andra länder att få lov att begära data från amerikanska bolag. Ett ytterligare syfte med lagstiftningen är att kringgå idag existerande MLAT (se ovan), bland annat därför att MLAT-processer anses långsamma. MLAT-processer innefattar att begäranden om utlämnande av uppgifter granskas av domstolar, vilket tar tid9. Såväl europeiska som brittiska representanter inom brottsbekämpning har varit i förhandling med amerikanska motsvarigheter för att förbättra situationen inom området och få till stånd enklare och snabbare tillgång av utländsk sparad data i brottsmålsundersökningar. 
@@ -78,7 +80,8 @@ I EU-domstolsbeslutet i “Safe Harbor”-fallet resonerar domstolen inte i för
 Det som måste förstås är att EU-stadgan tillhör ramfördragen, och avser kodifiera EU:s grundprinciper. Det betyder att annan EU-rätt som direktiv, förordningar, och regler för avtal, successivt bygger ovanpå den lagstiftningen. EU-stadgan garanterar rättigheter till EU-medborgare, som europeiska domstolar måste förhålla sig till vid rättstvister. Det ser därför ut som att den andra frågan ovan leder till samma grundläggande frågeställning som EU-domstolen redan måste ta i beaktande i och med hanteringen av fallet “Data Protection Commissioner” (se nedan). Andra punkten kan också sägas till stor del redan ha bedömts i C-362/14 (se särskilt paragraf 79-98 som fullständigt fällde Safe Harbor-avtalet).
 När det gäller den första frågan hävdas det att Storbritannien ligger i bilaterala förhandlingar med USA i syfte att få till stånd ett nytt MLAT-avtal21, medan EU eftersträvar ett multilateralt avtal för hela unionen med USA22. Ett problem för EU är att US CLOUD Act strikt läst inte tillåter att USA ingår multilaterala avtal snarare än bilaterala avtal, vilket kan innebära att amerikansk lag förhindrar amerikanska staten från att göra annat än att söka bilaterala avtal med varje enskilt EU-medlemsland. För EU vore en sådan lösning otillfredställande. Ytterligare lagstiftning eller en “snäll” tolkning  av US CLOUD Act krävs för att EU ska kunna söka ett multilateralt avtal.
 
-### C-311/18, Data Protection Commissioner 
+### C-311/18, Data Protection Commissioner
+
 Efter Safe Harbor-beslutet ogiltigförklarades av EU-domstolen den 6:e oktober 2015 i C-362/14, ansökte österrikaren Max Schrems igen till den irländska datainspektionen om tillsyn av Facebook Irlands dataflöden ut ur EU. Han menade att det, givet utfallet i C-362/14 omöjligen kunde vara tillåtet att överföra data till USA baserat på Standard Contract Clauses eller Privacy Shield. Fallet gick till domstol då Schrems argumenterade för att den irländska datainspektionen själva kan besluta om att stoppa Facebooks dataflöden ut ur EU. USA:s regering, Digital Europe, the Business Software Alliance  bistår Facebook i fallet, medan Schrems och den irländska datainspektören bistås av EPIC.
 
 Datainspektören håller med Schrems om att EU-stadgans artikel 47 --  Rätt till ett effektivt rättsmedel och till en opartisk domstol -- inte respekteras i den ordningen som etableras av Standard Contract Clauses och Privacy Shield, samt om risken för att EU-medborgares rättigheter enligt artikel 7 och 8 därmed är hotade. Den irländska High Court24 beslöt den 3:e oktober 2017 att hänvisa ärendet till EU-domstolen så att domslutet  blir giltigt i hela EU. Facebook överklagade beslutet att hänvisa till EU-domstolen till den irländska Supreme Court. När High Court väl annonserade själva hänvisningen den 12:e april 2018 ansökte sedan Facebook till High Court om att frysa hänvisningen till EU-domstolen i väntan på beslut av Supreme Court. 
@@ -93,6 +96,7 @@ Hänvisningen består av 11 st frågor som ber EU-domstolen att uttala sig om St
 
 
 ## Slutsats
+
 {{< ingress >}}
 Givet ovan beskrivna rättssituation med den stora diskrepans som finns mellan utformningen på amerikansk lag och rätt kontra europeisk dito är det svårt att se hur de bägge regimerna är förenliga sinsemellan.
 {{< /ingress >}}
@@ -109,17 +113,20 @@ Vad nästa steg skulle bli efter att EU har ogiltigförklarat USA som adekvat tr
 
 
 ## Rekommendationer till organisationer
+
 {{< ingress >}}
 Givet rättssituationen finns några strategiska rekommendationer, gällande molntjänster, för att undvika att hamna i kläm innan (eller om inte) de rättsliga motstridigheterna mellan EU och USA har retts ut.
 {{< /ingress >}}
 
 ### Rekommendationer gällande IT-arkitektur
+
 1. Se till att bygga molninfrastrukturen med agnostiska verktyg och plattformar för att enklare kunna flytta miljön till en annan leverantör om det rättsliga läget förvärras. Att bygga sin miljö med containrar (eller Docker) istället för virtuella servrar är ett beprövat sätt som underlättar migrering av tjänsterna till en annan leverantör.
 2. Räkna på hur dataöverförings­kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänsteleverantörer tar inget betalt för att lägga upp - men desto mer för att hämta hem vilket kan ge obehagliga överraskningar.
 3. Se till att separera datat från tjänsterna med öppna (eller åtminstone standardiserade) gränssnitt för enklare kunna byta datalagringsplattform. Amazons S3-protokoll har blivit branschstandard för storskalig lagring av ostruktuerad data i molnet. Dessvärre använder Amazon sig av vissa tillägg som inte stöds av andra S3-kompatibla tjänster. Om du ser till att använda dig av en mer generisk  S3-kompatibel leverantör i första läget så är det enklare att flytta till en annan leverantör.
 4. Investera i en egen identitetshantering istället för att lita på molntjänst-leverantörens. Detta kommer i vissa fall bli lite krångligare men otroligt mycket enklare om tjänsterna skall migreras någon annanstans.
 
 ### Rekommendationer gällande riskanalys och tillmötesgående av personuppgiftsskyddslagstiftning
+
 1. Gör grundarbetet med GDPR kring hantering av personuppgifter. Ett sådant grundarbete bör inkludera att ni ser över: 
     1. var ni geografiskt lagrar era personuppgifter, 
     2. vad ni har för laglig grund för behandlingen samt (om personuppgifterna lagras utanför EU/EES) för själva överföringen dit, 
@@ -131,6 +138,7 @@ Givet rättssituationen finns några strategiska rekommendationer, gällande mol
 4. Ha redundans även av leverantörer. Särskilt viktigt för tjänster i riskzonen och gör en bedömning kring migrationsprocessen -- hur lång tid tar det t.ex. att byta ut samtliga amerikanska tjänster om behovet skulle uppstå? Det kan tyckas för katastrofalt för att ens övervägas men underlaget behövs för att kunna ta rätt beslut om det skulle bli skarpt läge.
  
 Rekommendationer till organisationer som förlitar sig på Privacy Shield och SCCs
+
 1. Analysera dataflöden som innebär överföring av data till länder utanför EES och ta reda på vilket överföringsavtal som används, hur viktigt det är för verksamheten och sannolika konsekvenser av att inte kunna fortsätta sådana överföringar. Ta fram möjliga lösningar som skulle kunna undvika behovet av överföringar.
 2. Ta reda på hur de tredjeparter som hanterar dataflöden från er verksamhet kommer hantera en möjlig ogiltigförklaring av SCC och / eller Privacy Shield. 
 3. Informera ledningen och andra viktiga intressenter om riskerna som uppstår vid en potentiell ogiltigförklaring av SCC och / eller Privacy Shield.

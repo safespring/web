@@ -1037,9 +1037,7 @@ color: var(--unCheckedColor);
 		flex-flow: column nowrap;
 		justify-content: center;
 		align-items: center;
-		padding: max(200px, 15%) 10% 0 10%;
-
-
+		padding: max(150px, 15%) 10% 0 10%;
 	}
 
 	.heading-index-old {
@@ -1886,6 +1884,12 @@ color: var(--unCheckedColor);
 		margin: 50px;
 	}
 
+	@media only screen and (max-width: 1100px) {
+		.sidebar-container {
+			margin-top: 50px;
+		}
+	}
+
 	.ch-sidebar .content-body ul li::before {
 		content: "";
 		color: var(--clear-blue-color);
@@ -2225,7 +2229,7 @@ color: var(--unCheckedColor);
 		margin-bottom: 30px;
 		line-height: 1.25;
 		color: #000;
-	}¨™
+	}
 
 
 
@@ -3953,6 +3957,12 @@ label {
 		margin-bottom: 15px
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.text-tooltiptext {
+		display: none;
+	}
+} 
 
 @media only screen and (max-width: 1150px) {
 	.navbar {
@@ -6279,6 +6289,7 @@ justify-content: flex-end;
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 50px;
 	}
 	.badge {
 		order:3 !important;
@@ -6462,4 +6473,52 @@ th:last-child {
 	margin: 0;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+/* Cookie tractor */
+
+#CookieConsent .cookie-popup {
+	background: #fafefed1 !important;
+}
+
+#CookieConsent .cookie-popup > div {
+	box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.10);
+}
+
+#CookieConsent .cookie-popup h1 {
+	font: 300 30px/1 var(--hind-font);
+	color: var(--main-color);
+}
+
+#CookieConsent .cookie-popup h2 {
+	font: 300 20px/1 var(--hind-font);
+	color: var(--clear-blue-color);
+}
+
+#CookieConsent .cookie-popup p{
+	font: 300 16px/1.2 var(--mon-font);
+}
+
+#CookieConsent .cookie-popup .details {
+	background-color: var(--cloud-blue-color) !important;
+}
+
+#CookieConsent .cookie-popup .details > button {
+	background-color: var(--cloud-blue-color) !important;
+}
+
+#cc-footer a {
+	display: none !important;
+}
+
+#CookieConsent .cookie-popup th {
+	font: 600 14px/1 var(--mon-font);
+}
+
+#CookieConsent .cookie-popup td {
+	font: 300 14px/1 var(--mon-font);
+}
+
+#CookieConsent .cookie-popup label {
+	font: 600 16px/1 var(--mon-font) !important;
 }

@@ -18,6 +18,10 @@
       <a href="{{ .Params.sidebarlinkurl }}" target="_blank" class="button">{{ .Params.sidebarlinkname }}{{ if .Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;
         <i class="fas {{ .Params.sidebarlinkicon }}"></i> {{ end }}
       </a>
+      {{ if .Params.sidebarlinkurl2 }}
+      <a style="margin:25px 0 0 25px; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" id="text-button">{{ .Params.sidebarlinkname2 }}
+      </a>
+      {{ end }}
     </div>
     {{ end }}
     {{ if .Params.logo }}

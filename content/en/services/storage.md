@@ -31,13 +31,7 @@ Your data never leaves the country and is stored on encrypted disks.
 
 Our cloud storage is fully automated and flexible, allowing you to create new volumes with just a few easy steps. Plus, it's cost-effective, allowing you to purchase storage based on your actual needs and usage patterns rather than anticipating future requirements.
 
-### Fast, Large, and Archive Options
-
-**FAST**: Optimized for extremely fast storage (IOPS) using SSD hard disks, this service is ideal for transaction-intensive applications like databases.
-
-**LARGE**: This service uses mechanical SAS hard disks with NVRAM write cache for a balance of price and performance, making it suitable for file storage and operating systems.
-
-**ARCHIVE**: This object storage service uses SMR hard disks and offers access to an S3 interface, making it ideal for large volumes of data like e-archives or web applications for publishing.
+This object storage service uses SMR hard disks and offers access to an S3 interface, making it ideal for large volumes of data like e-archives or web applications for publishing.
 
 ### Other Benefits
 
@@ -47,5 +41,5 @@ Our cloud storage is fully automated and flexible, allowing you to create new vo
 - Scalable to meet your business needs
 - Encrypted data transmission and storage in data centers with high levels of physical security
 
-For more information, check out our [Service Catalogue](link).
+For more information, check out our [Solution Brief](/solution-brief/immutable-storage/).
 

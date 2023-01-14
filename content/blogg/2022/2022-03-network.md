@@ -50,7 +50,7 @@ communication happens based on security group memberships and rules.
 
 [calico]: https://www.tigera.io/project-calico/
 
-<iframe src="/img/safespring-network.sozi.html"  width="600" height="500" style="border:0"></iframe>
+<iframe src="/img/safespring-network.sozi.html"  width="100%" height="500" style="border:0"></iframe>
 
 ## The explanation
 

@@ -4,7 +4,7 @@ date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Forutsetninger og anbefalinger for offentlig sektor og leverandører til offentlig sektor."
 form: "no"
-sidebarlinkname: "Last ned"
+sidebarlinkname: "Les direkte"
 sidebarlinkurl: "#down"
 language: "No"
 section: "Informasjonsguide "
@@ -24,4 +24,4 @@ Denne meldingen tar for seg forholdene etter kjennelsen og anbefalinger til orga
 - markedsstrukturen for skytjenester og samspillet mellom tekniske krav og lov (del II);
 - og en kort beskrivelse av veien videre (del III).
 
-<br><br><iframe src="https://pages.upsales.com/9549uef7a9b654a73489cb99641bf7524f053-frame" 		width="300" 		height="367" 		style="border:0"></iframe>
+{{< localbutton "Les direkte" "/whitepaper/schrems-ii-norwegian" >}}

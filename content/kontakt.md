@@ -28,7 +28,7 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 
 <div id="address"></div>
 <div style="margin-bottom:100px;">
-</div>
+</div> 
 
 ## Safesprings adresser
 
@@ -46,7 +46,7 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 </div>
 
 ## Safesprings ledning
-
+ 
 <div style="margin-bottom:50px;">
 </div>
 

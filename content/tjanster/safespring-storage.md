@@ -25,9 +25,13 @@ aliases:
 Är du i behov av att lagra en stor mängd tillgänglig data? Då är objektlagring en kostnadseffektiv och säker lösning.
 {{< /ingress >}}
 
-Safespring använder {{% tooltip "S3-protokollet" %}}S3 kan användas för att lagra alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring.{{% /tooltip %}} som standard för objektlagring. Det gör att data enkelt kan laddas upp och ned från vår svenska infrastruktur, dessutom utan trafikkostnad. Tjänsten är i grunden byggd på lagringsteknologin {{% tooltip "Ceph" %}}Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader.{{% /tooltip %}} vilket gör Safespring både flexibel och robust. All data lagras dessutom på krypterade hårddiskar.
+Safespring använder S3-protokollet som används för att lagra alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring. S3 är Safesprings standard för objektlagring. Det gör att data enkelt kan laddas upp och ned från vår svenska infrastruktur, dessutom utan trafikkostnad. Tjänsten är i grunden byggd på lagringsteknologin ceph vilket gör Safespring både flexibel och robust. All data lagras dessutom på krypterade hårddiskar.
 
- Med immutable objects blir Safespring en perfekt tjänst för modern offsite backup inom Sverige. Det gör att du kan låsa data och hindra all förändring och radering under en tidsperiod som du själv väljer. Din backup är alltså säkrad och redo när du behöver den.
+{{< note "Fördelarna med Ceph" >}}
+Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som replikering, raderingskodning, snapshots och lagringskloning. Det gör systemet både självläkande och självhanterande och syftar till att minimera administrationstiden och andra kostnader.
+{{< /note >}}
+
+Med immutable objects blir Safespring en perfekt tjänst för modern offsite backup inom Sverige. Det gör att du kan låsa data och hindra all förändring och radering under en tidsperiod som du själv väljer. Din backup är alltså säkrad och redo när du behöver den.
 
 ![Safespring Storage benefits](/img/safespring-storage-key-points.svg)
 

@@ -59,7 +59,20 @@ Pricing is consumption-based. You pay per hour only for what you use.
 
 Pricing components are the number of server vCPUs and associated RAM, amount of storage consumed, and data output type (outbound or inter-AZ) and amount.
 
-{{< price-table-dbaas >}}
+| Instance | vCPU   | RAM (GB) | Disk (GB) | Hourly price (Node) |
+|----------|--------|----------|-----------|---------------------|
+| Tiny     | 2vCPU  | 4GB      | 100       | 0.185 EUR           |
+| Small    | 8vCPU  | 8GB      | 100       | 0.332 EUR           |
+| Medium   | 8vCPU  | 16GB     | 100       | 0.628 EUR           |
+| Large    | 16vCPU | 32GB     | 100       | 1.205 EUR           |
+| X-Large  | 16vCPU | 32GB     | 500       | 1.338 EUR           |
+| XX-Large | 16vCPU | 32GB     | 1000      | 1.543 EUR           |
 
 
-{{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/en/services/compute/" linktext="Learn more" cardtitle="Safespring Compute is the core of Database as a service" text="Safespring runs in data centers within Europe and is not affected by foreign legislation such as the CLOUD Act or FISA 702." %}}
+| Data Egress          | Monthly       |
+|----------------------|---------------|
+| Första 1024GB        | Free          |
+| Över 1024 GB         | 0.083 EUR/GB  |
+
+
+{{% horisontal-card image="/img/card/safespring-compute-icon.svg" link="/en/services/compute/" linktext="Learn more" cardtitle="Safespring Compute is the core of Database as a service" text="Safespring runs in data centers within Europe and is not affected by foreign legislation such as the CLOUD Act or FISA 702." %}}

@@ -27,6 +27,6 @@ Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagan
 
 Under detta första molnfinansieringssamtal syftar OCRE till att finansiera konsumtionen av infrastruktur-molntjänster (IaaS, PaaS, SaaS, marknadsplats) av projekt som kan bli tydliga utställningar för fördelarna med att använda molntjänster för att positivt påverka forskningsresultat.
 
-{{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
+{{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities">}}
 
 {{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}
