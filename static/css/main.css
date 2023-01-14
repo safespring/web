@@ -1385,8 +1385,6 @@ color: var(--unCheckedColor);
 		padding: 25px 0;
 	}
 
-
-
 	/* SAFESPRING FOOTER */
 
 	.safespring-footer-container {
@@ -1447,7 +1445,7 @@ color: var(--unCheckedColor);
 		margin-inline-start: 0;
 		margin-inline-end: 0;
 		padding-inline-start: 0;
-		font: 12px var(--mon-font);
+		font: 12px/1 var(--mon-font);
 		margin: 12px 0;
 		transition: 0.1s;
 		cursor: pointer;
