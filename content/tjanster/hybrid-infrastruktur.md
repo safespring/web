@@ -1,5 +1,7 @@
 ---
 title: "Hybrid Infrastruktur"
+language: "Se"
+Language: "SE"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Safesprings lösningar inom hybrid infrastruktur gör det möjligt för dig att kombinera kraften i molnet med din egen “on prem” eller managerad infrastruktur."

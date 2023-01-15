@@ -5,7 +5,7 @@ date: 2021-06-30T10:47:25+01:00
 card: "safespring_card_31.svg"
 draft: false
 intro: "Safesprings tjenester kan anskaffes direkte eller via vår rammeavtale med Sikt."
-background: "safespring_bilder_10.jpg"
+background: "safespring-government-background.svg"
 startpage: "yes"
 language: "No"
 section: "Safespring"
@@ -21,8 +21,9 @@ Safesprings tjenester kan anskaffes direkte eller via vår rammeavtale med Unine
 
 Kontakt oss for å diskutere videre hvordan vi kan hjelpe deg trygt å bruke en skyløsning og samtidig overholde lover og forskrifter.
 
-{{< horisontal-card image="/img/kontakt/oslo.png" cardtitle="Kontakt oss" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Send en e -post til vårt kontor i Norge med dine spørsmål. Våre eksperter er alltid raske til å svare." >}}
+{{< horisontal-card image="/img/kontakt/kristian-fjellhaug.jpg" cardtitle="Kontakt oss" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Send en e -post til vårt kontor i Norge med dine spørsmål. Våre eksperter er alltid raske til å svare." >}}
 
+{{< distance >}}
 
 ### Ta tilbake kontrollen og få digital suverenitet
 

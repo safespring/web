@@ -5,7 +5,7 @@ card: "safespring_card_11.svg"
 date: 2021-06-29T10:47:25+01:00
 draft: false
 intro: "Over 60 utdannings­institusjoner bruker våre tjenester."
-background: "safespring-research.jpg"
+background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
 toplogo: "ocre.png"
 showthedate: false
@@ -23,6 +23,8 @@ Safesprings datasentre er direkte koblet til NREN-nettverket for å gi deg best 
 Vi er veldig glade for å ha kvalifisert oss for OCRE-rammeavtalen. Rammeavtalen lar oss støtte forsknings- og utdanningssektoren med våre moderne, API-baserte tjenester som støtter føderert pålogging. Safesprings tjenester brukes av over 60 universiteter, avdelinger og forskningsplattformer, og vi håper også å være en del av din digitale fremtid. Velkommen til å kontakte oss!
 
 {{< horisontal-card image="/img/kontakt/oslo.png" cardtitle="Kontakt oss" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Send en e -post til vårt kontor i Norge med dine spørsmål. Våre eksperter er alltid raske til å svare." >}}
+
+{{< distance >}}
 
 ### OCRE Cloud Funding for Research
 

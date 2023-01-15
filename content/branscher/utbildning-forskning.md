@@ -5,7 +5,7 @@ card: "safespring_card_11.svg"
 date: 2022-03-01T10:47:25+01:00
 draft: false
 intro: "Över 60 lärosäten använder Safespring via Sunet, Sikt eller direkt genom GÉANTs OCRE-ramavtal."
-background: "safespring-research.jpg"
+background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
 toplogo: "ocre.png"
 showthedate: false
@@ -27,6 +27,6 @@ Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagan
 
 Under detta första molnfinansieringssamtal syftar OCRE till att finansiera konsumtionen av infrastruktur-molntjänster (IaaS, PaaS, SaaS, marknadsplats) av projekt som kan bli tydliga utställningar för fördelarna med att använda molntjänster för att positivt påverka forskningsresultat.
 
-{{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities/cloud-funding">}}
+{{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities">}}
 
 {{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}

@@ -1,74 +1,289 @@
-<div class="footer">
 
-    <!-- Contact Info -->
-    <div class="contact">
-      <!-- Adress -->
-      <div class="address">
-        <li>
-          <a class="footer-head" href="/kontakt">ADRESS</a>
-        </li>
-        <li class="footer-text">Smidesvägen 12</li>
-        <li class="footer-text">171 41 Solna</li>
-      </div>
 
-      <!-- Kontakt -->
-      <div class="email">
-        <li>
-          <a class="footer-head" href="/kontakt">KONTAKT</a>
-        </li>
-        <li>
-          <a class="footer-text" href="mailto:info@safespring.com">info@safespring.com</a>
-        </li>
-        <li>
-          <a class="footer-text" href="mailto:media@safespring.se">media@safespring.se</a>
-        </li>
+{{ if eq .Params.language "En"}}
+
+<div class="safespring-footer-container">
+  <div class="safespring-footer">
+    <div class="safespring-footer-logo">
+      <a href="/"><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"></a>
+      <p>Safespring is a fast and flexible cloud and IT infrastructure service.</p>
+      <a class="button"href="/en/contact/">Contact</a>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Cloud platform</li>
+        <li><a href="/en/services/compute/">Compute</a></li>
+        <li><a href="/en/services/storage/">Storage (S3)</a></li>
+        <li><a href="/en/services/compliant-kubernetes">Kubernetes</a></li>
+        <li><a href="/en/services/backup/">Backup</a></li>
+        <!--<li><a href="/tjanster/machine-learning/">AI och ML</a></li>-->
+        <li><a href="/en/services/database-as-a-service/">Database</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+<ul>
+  <li>Industries</li>
+  <li><a href="/en/ocre/">Research</a></li>
+  <li><a href="/en/ocre/">Education</a></li>
+  <!--<li><a href="/branscher/myndigheter/">Authorities</a></li>
+  <li><a href="/branscher/applikationsutvecklare/">SaaS companies</a></li>
+  <li><a href="/branscher/applikationsutvecklare/">PaaS companies</a></li>
+  <li><a href="/saas/medtech/">Medtech</a></li>-->
+</ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Latest news</li>
+        <li><a href="/latest/">White Paper</a></li>
+        <li><a href="/latest/">Solution Briefs</a></li>
+        <li><a href="/latest/">Webbinarium</a></li>
+        <li><a href="/latest/">Tech update</a></li>
+        <li><a href="/latest/">Blogg</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Safespring</li>
+        <li><a href="/en/about/">About us</a></li>
+        <li><a href="/career/">Work here</a></li>
+        <li><a href="/en/data-centers/">Our data centers</a></li>
+        <!--<li><a href="/om-safespring/samarbeten-och-partners/">Partnerskap</a></li>
+        <li><a href="/om-safespring/miljo-och-hallbarhet/">Hållbarhet</a></li>-->
+      </ul>
+    </div>
+  </div>
+
+  <div class="safespring-footer-second">
+    <div class="safespring-footer-social">
+      <a href="https://www.linkedin.com/company/safespring/"><img src="/img/logos/social-media/safespring-linkedin.svg" alt="Safespring Linkedin"></a>
+      <a href="https://twitter.com/safespring/"><img src="/img/logos/social-media/safespring-twitter.svg" alt="Safespring Twitter"></a>
+      <a href="https://github.com/safespring/"><img src="/img/logos/social-media/safespring-github.svg" alt="Safespring GitHub"></a>
+      <a href="https://www.youtube.com/@safespring8922/"><img src="/img/logos/social-media/safespring-youtube.svg" alt="Safespring YouTube"></a>
+      <a href="https://www.facebook.com/Safespring-147994442601302/"><img src="/img/logos/social-media/safespring-facebook.svg" alt="Safespring Facebook"></a>
+    </div>
+    <div class="safespring-footer-language">
+      <div class="safespring-footer-language-icon">
+        <p>Choose language</p>
+        <a href="/"><img src="/img/sweden.svg" alt="Safespring Sweden"></a>
+        <a href="/no"><img src="/img/norway.svg" alt="Safespring Norway"></a>
+        <a href="/en"><img src="/img/eu.svg" alt="Safespring English"></a>
       </div>
     </div>
+  </div>
 
-    <!-- Links -->
-    <div class="navigation">
-      <!-- Om Safespring -->
-      <div class="about">
-        <li>
-          <a class="footer-head" href="/om-safespring">OM SAFESPRING</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/dokument/personuppgiftshantering/">GDPR</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/dokument/acceptable-use-policy/">Användarvillkor</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/dokument/cookies/">Om webbplatsen</a>
-        </li>
-      </div>
-
-      <!-- Vårt Erbjudande -->
-      <div class="offer">
-        <li>
-          <a class="footer-head" href="/tjanster">VÅRA TJÄNSTER</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/tjanster/compliant-kubernetes">Compliant Kubernetes</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/tjanster/safespring-compute">Safespring Compute</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/tjanster/safespring-storage">Safespring Storage</a>
-        </li>
-        <li>
-          <a class="footer-text" href="/tjanster/safespring-backup">Safespring Backup</a>
-        </li>
-      </div>
+  <div class="safespring-footer-third">
+    <div class="safespring-footer-copyright">
+      <p>© Blue Safespring AB (559075-0245) 2017-{{ now.Format "2006"}}</p>
     </div>
-
-    <!-- Copyright -->
-    <div class="copyright">
-      <p>Upphovsrätt &copy; {{ now.Format "2006"}} Safespring</p>
+    <div class="safespring-footer-information-menu">
+      <ul>
+        <!--<li><a href="/dokument/personuppgiftshantering/">Personuppgiftshantering</a></li>-->
+        <li><a href="/dokument/cookies-en/">Cookie policy</a></li>
+        <li><a href="javascript:cookieTractor.openConsentSettings()">Cookie settings</a></li>
+        <li><a href="/dokument/acceptable-use-policy/">Acceptable use policy</a></li>
+        <!--<li><a href="/kontakt/#företagsinformation">Bolagsinformation</a></li>-->
+      </ul>
     </div>
+  </div>
 </div>
 
-{{ if (findRE "<pre" .Content 1) }}
-    <script src="/js/copy-code-button.js"></script>
+{{ else if eq .Params.language "No"}}
+
+<div class="safespring-footer-container">
+  <div class="safespring-footer">
+    <div class="safespring-footer-logo">
+      <a href="/"><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"></a>
+      <p>Safespring er en rask og fleksibel sky- og IT-infrastrukturtjeneste.</p>
+      <a class="button"href="/kontakt">Kontakt</a>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Plattformen</li>
+        <li><a href="/no/tjenester/compute/">Compute</a></li>
+        <li><a href="/no/tjenester/storage/">Storage (S3)</a></li>
+        <li><a href="/no/tjenester/compliant-kubernetes/">Kubernetes</a></li>
+        <li><a href="/no/tjenester/backup/">Backup</a></li>
+        <!--<li><a href="/tjanster/machine-learning/">AI og ML</a></li>
+        <li><a href="/tjanster/database-as-a-service/">Database</a></li>-->
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Bransjer</li>
+        <li><a href="/no/bransjer/utdanning-og-forskning">Research</a></li>
+        <li><a href="/no/bransjer/myndigheter">Myndigheter</a></li>
+        <li><a href="/no/tjenester/compliant-kubernetes">SaaS-selskap</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Aktuellt</li>
+        <li><a href="/latest/">White Paper</a></li>
+        <li><a href="/latest">Solution Briefs</a></li>
+        <li><a href="/latest/">Webcast</a></li>
+        <li><a href="/latest/">Tech update</a></li>
+        <li><a href="/latest/">Blogg</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Safespring</li>
+        <li><a href="/no/om-safespring/">Om selskapet</a></li>
+        <li><a href="/career/">Jobb med oss</a></li>
+        <li><a href="/no/datasenter/">Våre datasentre</a></li>
+        <!--<li><a href="/om-safespring/samarbeten-och-partners/">Partnerskap</a></li>
+        <li><a href="/om-safespring/miljo-och-hallbarhet/">Hållbarhet</a></li>-->
+      </ul>
+    </div>
+  </div>
+
+  <div class="safespring-footer-second">
+    <div class="safespring-footer-social">
+      <a href="https://www.linkedin.com/company/safespring/"><img src="/img/logos/social-media/safespring-linkedin.svg" alt="Safespring Linkedin"></a>
+      <a href="https://twitter.com/safespring/"><img src="/img/logos/social-media/safespring-twitter.svg" alt="Safespring Twitter"></a>
+      <a href="https://github.com/safespring/"><img src="/img/logos/social-media/safespring-github.svg" alt="Safespring GitHub"></a>
+      <a href="https://www.youtube.com/@safespring8922/"><img src="/img/logos/social-media/safespring-youtube.svg" alt="Safespring YouTube"></a>
+      <a href="https://www.facebook.com/Safespring-147994442601302/"><img src="/img/logos/social-media/safespring-facebook.svg" alt="Safespring Facebook"></a>
+    </div>
+    <div class="safespring-footer-language">
+      <div class="safespring-footer-language-icon">
+        <p>Choose language</p>
+        <a href="/"><img src="/img/sweden.svg" alt="Safespring Sweden"></a>
+        <a href="/no"><img src="/img/norway.svg" alt="Safespring Norway"></a>
+        <a href="/en"><img src="/img/eu.svg" alt="Safespring English"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="safespring-footer-third">
+    <div class="safespring-footer-copyright">
+      <p>© Safespring AS (918 269 649) 2017-{{ now.Format "2006"}}</p>
+    </div>
+    <div class="safespring-footer-information-menu">
+      <ul>
+        <!--<li><a href="/dokument/personuppgiftshantering/">Personuppgiftshantering</a></li>-->
+        <li><a href="/dokument/cookies/">Cookiepolicy</a></li>
+        <li><a href="javascript:cookieTractor.openConsentSettings()">Cookies setting</a></li>
+        <li><a href="/dokument/acceptable-use-policy/">Acceptable use policy</a></li>
+        <!--<li><a href="/kontakt/#företagsinformation">Bolagsinformation</a></li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+
+{{ else }}
+
+<div class="safespring-footer-container">
+  <div class="safespring-footer">
+    <div class="safespring-footer-logo">
+      <a href="/"><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"></a>
+      <p>Safespring är en snabb och flexibel moln- och It-infrastrukturtjänst.</p>
+      <a class="button"href="/kontakt">Kontakt</a>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Plattformen</li>
+        <li><a href="/tjanster/safespring-compute/">Compute</a></li>
+        <li><a href="/tjanster/safespring-storage/">Storage (S3)</a></li>
+        <li><a href="/tjanster/compliant-kubernetes/">Kubernetes</a></li>
+        <li><a href="/tjanster/safespring-backup/">Backup</a></li>
+        <li><a href="/tjanster/machine-learning/">AI och ML</a></li>
+        <li><a href="/tjanster/database-as-a-service/">Database</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Branscher</li>
+        <li><a href="/branscher/utbildning-forskning/">Akademin</a></li>
+        <li><a href="/branscher/myndigheter/">Myndigheter</a></li>
+        <li><a href="/branscher/applikationsutvecklare/">SaaS-bolag</a></li>
+        <li><a href="/branscher/applikationsutvecklare/">PaaS-bolag</a></li>
+        <li><a href="/saas/medtech/">Medtech</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Aktuellt</li>
+        <li><a href="/whitepaper/">White Paper</a></li>
+        <li><a href="/solution-brief/">Solution Briefs</a></li>
+        <li><a href="/webinar/">Webbinarium</a></li>
+        <li><a href="/blogg/">Tech update</a></li>
+        <li><a href="/blogg/">Blogg</a></li>
+      </ul>
+    </div>
+    <div class="safespring-footer-menu">
+      <ul>
+        <li>Safespring</li>
+        <li><a href="/om-safespring/">Om bolaget</a></li>
+        <li><a href="/career/">Jobba hos oss</a></li>
+        <li><a href="/om-safespring/datacenter/">Våra datacenter</a></li>
+        <li><a href="/om-safespring/samarbeten-och-partners/">Partnerskap</a></li>
+        <li><a href="/om-safespring/miljo-och-hallbarhet/">Hållbarhet</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="safespring-footer-second">
+    <div class="safespring-footer-social">
+      <a href="https://www.linkedin.com/company/safespring/"><img src="/img/logos/social-media/safespring-linkedin.svg" alt="Safespring Linkedin"></a>
+      <a href="https://twitter.com/safespring/"><img src="/img/logos/social-media/safespring-twitter.svg" alt="Safespring Twitter"></a>
+      <a href="https://github.com/safespring/"><img src="/img/logos/social-media/safespring-github.svg" alt="Safespring GitHub"></a>
+      <a href="https://www.youtube.com/@safespring8922/"><img src="/img/logos/social-media/safespring-youtube.svg" alt="Safespring YouTube"></a>
+      <a href="https://www.facebook.com/Safespring-147994442601302/"><img src="/img/logos/social-media/safespring-facebook.svg" alt="Safespring Facebook"></a>
+    </div>
+    <div class="safespring-footer-language">
+      <div class="safespring-footer-language-icon">
+        <p>Choose language</p>
+        <a href="/"><img src="/img/sweden.svg" alt="Safespring Sweden"></a>
+        <a href="/no"><img src="/img/norway.svg" alt="Safespring Norway"></a>
+        <a href="/en"><img src="/img/eu.svg" alt="Safespring English"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="safespring-footer-third">
+    <div class="safespring-footer-copyright">
+      <p>© Blue Safespring AB (559075-0245) 2017-{{ now.Format "2006"}}</p>
+    </div>
+    <div class="safespring-footer-information-menu">
+      <ul>
+        <li><a href="/dokument/personuppgiftshantering/">Personuppgiftshantering</a></li>
+        <li><a href="/dokument/cookies/">Cookiepolicy</a></li>
+        <li><a href="javascript:void(0)" class="cookie-consent-settings">Inställningar för cookies</a></li>
+        <li><a href="/dokument/acceptable-use-policy/">Acceptable use policy</a></li>
+        <li><a href="/kontakt/#företagsinformation">Bolagsinformation</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 {{ end }}
+
+{{ if (findRE "<pre" .Content 1) }}
+<script src="/js/copy-code-button.js">
+</script>
+{{ end }}
+
+<script>
+// Hämta alla tabeller på sidan
+const tables = document.querySelectorAll('table');
+
+// Kör funktionen när sidan laddas
+window.addEventListener('load', function() {
+  // Iterera över tabellerna
+  tables.forEach(function(table) {
+    // Iterera över tabellens rader
+    const rows = table.querySelectorAll('tr');
+    rows.forEach(function(row, rowIndex) {
+      // Iterera över radens celler
+      const cells = row.querySelectorAll('td');
+      cells.forEach(function(cell, cellIndex) {
+        // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
+        const label = table.querySelectorAll('th')[cellIndex].textContent;
+
+        // Lägg till data-label attributet till cellen med rubriktexten som värde
+        cell.setAttribute('data-label', label);
+      });
+    });
+  });
+});
+</script>

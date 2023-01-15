@@ -1,5 +1,6 @@
 ---
 title: "Safespring Cloud Platform and OCRE"
+language: "En"
 date: "2022-09-08"
 publishDate: "2022-09-08"
 draft: false
@@ -59,14 +60,14 @@ jarle.bjorgeengen@safespring.com
 - [About the service](https://severalnines.com/ccx/)
 - [Sovereign DBaaS White paper](https://severalnines.com/sovereign-dbaas/)
 
-### IaC
+### Infrastructure as Code
 
 - [Safespring OKD-installer](https://github.com/safespring-community/utilities/tree/main/okd)
-- [Recipe/ Blog post for minimal Kubespray](https://www.safespring.com/blogg/2022-08-kubespray-minimal/)
+- [Recipe/ Blog post for minimal Kubespray](/blogg/2022-08-kubespray-minimal/)
 - [Safespring Terraform Modules](https://github.com/safespring-community/terraform-modules)
 
 ### Read more
-- [All blog posts](https://www.safespring.com/blogg/)
+- [All blog posts](/blogg/)
 - Solution Brief: [OpenShift runs smoothly on Safespring's platform](/solution-brief/openshift-en/)
 - Teach update: [Get started with Kubespray](/blogg/2022-08-kubespray-minimal/)
 - Teach update: [Easy provisioning with Terraform, Ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder/)

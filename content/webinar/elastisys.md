@@ -1,5 +1,6 @@
 ---
 title: "Lär dig lyckas med containers och Kubernetes"
+language: "Se"
 publishDate: "2020-05-05"
 draft: false
 tags: ["Svenska"]

@@ -1,13 +1,17 @@
 ---
 title: "Våra Datacenter"
+section: "Om Safespring"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Våra datacenter matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom våra datacenter drivs till 100 procent med el från förnyelsebara energikällor."
-background: ""
+background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår säkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring-datacenter-security-2019.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
+
+![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)
+
 
 ## Safespring Stockholm Norr
 <div class="ingress"><p>Datacentret återvinner värmen som genereras från produktionen tillbaka till fjärrvärmenätet vilket årligen värmer upp tusentals lägenheter i stockholmsområdet.</p></div>

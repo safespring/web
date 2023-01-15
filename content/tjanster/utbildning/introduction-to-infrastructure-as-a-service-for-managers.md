@@ -1,5 +1,6 @@
 ---
 title: "Introduction to “Infrastructure as a Service” for managers"
+language: "En"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "Overview and understanding from a management point of view enabling management and technical staff to form a common understanding."

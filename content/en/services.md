@@ -3,9 +3,8 @@ title: "Safespring Infrastructure Service Catalogue"
 intro: "With cloud-based infrastructure as a service, you can scale your infrastructure up or down as needed. Provided from secure data centers in Sweden."
 date: 2020-07-06T09:42:10+02:00
 draft: false
-language: En
 section: "Safespring Services"
-Language: "En"
+language: "En"
 socialmedia: "/safespring-start.jpg"
 ---
 
@@ -15,8 +14,8 @@ Safespring delivers a locally based Cloud built for the apps of tomorrow. It ena
 
 {{< localbutton "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" >}}
 
-<div class="flexcontainer-shortcode" style="background: var(--text-color);">
+<div class="flexcontainer-shortcode" style="background: var(--text-color);"> 
 
-{{< services >}}
-
+{{< services "En" >}}
+ 
 </div>

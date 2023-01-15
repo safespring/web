@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+  <body>
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
+  <!-- HEADING -->
+  <div class="heading-default-single" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+    {{ .Render "li3" }}
+  </div>
+</div>
+
+  <!-- CONTENT -->
+  <main class="main-default-single">
+    <!-- Main  -->
+    <div class="content-default-single">
+      {{ .Content }}
+          <div class="flexcontainer">
+      {{ range first 3 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+       <div class="content-container">
+      {{ .Render "li-latest"}}
+    </div>
+      {{ end }}
+    </div>
+  </div>
+
+  </main>
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
+</body>

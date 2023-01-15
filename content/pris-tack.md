@@ -1,5 +1,6 @@
 ---
 title: "Pris tack"
+language: "Se"
 date: "2019-04-30"
 draft: false
 tags: ""

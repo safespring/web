@@ -1,5 +1,6 @@
 ---
 title: "Tack för att du laddade ner vårt White Paper"
+language: "Se"
 date: 2018-06-20
 draft: true
 dokumentnamn: "Safespring_White-Paper_Att-tanka-pa-i-och-med-inforandet-av-GDPR-och-CLOUD-act.pdf"

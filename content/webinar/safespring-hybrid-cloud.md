@@ -1,5 +1,6 @@
 ---
 title: "Safespring - Hybrid cloud"
+language: "Se"
 date: "2020-11-04"
 publishDate: "2020-09-03T13:58:35+02:00"
 eventdatum: "2020-11-04"

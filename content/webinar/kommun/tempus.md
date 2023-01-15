@@ -1,5 +1,6 @@
 ---
 title: "Lätthanterlig närvarohantering och resursplanering i förskolan"
+language: "Se"
 publishDate: "2020-04-27"
 draft: false
 tags: ["Svenska"]

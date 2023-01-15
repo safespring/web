@@ -17,6 +17,6 @@ Safespring leverer en lokalt basert sky bygget for morgendagens apper. Det gjør
 
 <div class="flexcontainer-shortcode" style="background: var(--text-color);">
 
-{{< tjenester >}}
+{{< services "No" >}}
 
 </div>

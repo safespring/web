@@ -2,8 +2,7 @@ baseURL = "/"
 languageCode = "sv-SE"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
-copyright = "2021 Safespring"
-
+copyright = "2023 Safespring"
 
 # Pagination
 paginate = 10
@@ -67,9 +66,9 @@ SectionPagesMenu = "main"
 
 [markup]
   [markup.highlight]
-    anchorLineNos = false
+    anchorLineNos = true
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ''
     hl_inline = false
     lineAnchors = ''
@@ -87,3 +86,4 @@ SectionPagesMenu = "main"
 
 [blackfriday]
 fractions = false
+

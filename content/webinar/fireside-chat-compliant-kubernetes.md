@@ -1,5 +1,6 @@
 ---
 title: "MedTech best practice: Säker Kubernetes inom Europa"
+language: "Se"
 publishDate: "2021-09-15T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
@@ -16,23 +17,22 @@ chapter1: "Intro"
 minute1: "00:00"
 chapter2: "Best Practice"
 minute2: "02:12"
-chapter3: "ISO 27001 Controls"
+chapter3: "ISO 27001"
 minute3: "13:00"
-chapter4: "Vanliga kundcase"
+chapter4: "Kundcase"
 minute4: "33:37"
-chapter5: "Frågor och svar"
+chapter5: "Frågor & svar"
 minute5: "44:21"
 ---
 
-
 {{< ingress>}}
-Vi går igenom Kubernetes med hög säkerhet under tre punkter. Även nu efter webbinariet kan du ställa frågor till våra experter inom Kubernetes och säkra molntjänster.
+Under det här webbinariet kommer vi att titta närmare på hur man använder Kubernetes med hög säkerhet.
 {{< /ingress >}}
 
+Vi kommer att diskutera tre viktiga områden. Efter webbinariet kommer du också att ha möjlighet att ställa frågor till våra experter på Kubernetes och säkra molntjänster.
+
 1. Best practice - Kubernetes är inte säkert "out of the box". Vilka komponenter och vilken konfiguration behövs för att säkerställa kontroll över er data?
-
 2. Compliant Kubernetes: Vi går igenom ett praktiskt exempel på hur open source kan användas för att hantera din tjänst enligt best practice.
-
 3. Två typiska kundscenarion inom MedTech: Migrera från USA till Europa och steget från en monolit till micro services.
 
 ### Kontakta oss

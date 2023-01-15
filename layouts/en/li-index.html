@@ -1,0 +1,25 @@
+<a href="{{ .Permalink }}">
+  <div class="flex-item shadow-1 border-hover-{{ .Params.cardorder }}">
+  <style>
+    	.border-hover-{{ .Params.cardorder }} {
+    		transition: all 0.2s ease-in;
+    		border-bottom: 5px solid white;
+    	}
+
+    	.border-hover-{{ .Params.cardorder }}:hover {
+  			transform: translateY(-5px);
+  			mar border: none;
+  			border-bottom: 5px solid {{ .Params.cardcolor }} !important;
+  		}
+      </style>
+    <div class="cardtitle">
+      <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10"><i class="{{ .Params.cardicon }} icon" style="color: {{ .Params.cardcolor }} !important"></i></div>
+      <h2 style="color: {{ .Params.cardcolor }}">
+        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
+      </h2>
+    </div>
+      <p class="mb-0">
+        {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{ .Params.intro }}{{ end }}
+      </p>
+</div>
+</a>

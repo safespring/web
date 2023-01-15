@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Cloud Computing"
+language: "En"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "For technical professionals that wants to learn how to build infrastructure for the cloud."

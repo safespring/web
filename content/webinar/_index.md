@@ -1,5 +1,6 @@
 ---
-title: "Safesspring webbinairum riktade mot SaaS"
+title: "Safesspring Webcasts"
+language: "Se"
 date: "2020-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"
 eventdatum: "10 nov. 2020"
@@ -8,10 +9,10 @@ draft: false
 author: ""
 dokumentnamn: ""
 card: "safespring_card_26.jpg"
-eventbild: "safespring_background_26.jpg"
+eventbild: ""
 socialmediabild: "safespring_social_26.jpg"
-intro: "Avlasta flera avdelningar och underlätta för invånare med hjälp av svensk AI"
-partner: "apendo.svg"
+intro: "Ta del av inspirerande material från Safespring."
+partner: ""
 link: "#"
 audience: "saas"
 knapp: "Starta webinar"
@@ -20,4 +21,6 @@ formid: ""
 explorer: ""
 aliases:
     - /event/
+nosidebar: "x"
+fullwidth: "x"
 ---

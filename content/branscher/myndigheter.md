@@ -5,7 +5,7 @@ date: 2022-03-03T10:47:25+01:00
 card: "safespring_card_31.svg"
 draft: false
 intro: "Safespring går att upphandla genom Kammar­kollegiets ramavtal programvaru­lösningar."
-background: "safespring_bilder_10.jpg"
+background: "safespring-government-background.svg"
 aliases:
     - /myndighet/
 sidebarlinkurl: "/webinar/forth-fireside-chat-it-sakerhetsbolaget/"

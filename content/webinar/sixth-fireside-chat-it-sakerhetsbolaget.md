@@ -1,5 +1,6 @@
 ---
 title: "Ny presidentorder: blir molntjänster från USA lagliga nu?"
+language: "Se"
 date: "2022-11-08"
 publishDate: "2022-11-08"
 draft: false
@@ -42,7 +43,7 @@ President Biden har undertecknat en presidentorder om förbättrade skyddsåtgä
 
 {{< distance >}}
 
-### Tidigare Fireside Chats
+### Se alla webcasts om debatten kring molntjänster
 1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
 2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
 3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>

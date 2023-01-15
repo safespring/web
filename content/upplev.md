@@ -1,5 +1,6 @@
 ---
 title: "Upplev Safespring, baserat på OpenStack"
+language: "Se"
 date: "2018-09-18"
 draft: false
 tags: ""

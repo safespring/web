@@ -1,10 +1,15 @@
 ---
 title: "Låt era utvecklare fokusera på kärnverksamheten"
+language: "Se"
+cardtitle: "Containerplattform"
+cardicon: "fa-solid fa-container-storage"
+cardcolor: "#3C9BCD"
+cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Kör Compliant Kubernetes som en managerad tjänst."
-background: "safespring_background_medtech.jpg"
+intro: "Kör bland annat Compliant Kubernetes som en managerad tjänst."
+background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Se webbinarium"
@@ -18,7 +23,6 @@ sidebarknapp: "Se direkt"
 sidebarlink: "/webinar/fireside-chat-compliant-kubernetes/"
 saas: ""
 sidebarwhitepaper: ""
-aliases:
 ---
 
 
@@ -28,41 +32,38 @@ Kör ni Kubernetes idag eller planerar ni att göra det? Det här är en möjlig
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-<div id="contact"></div>
-<div style="margin-bottom:100px;"></div>
-
 ### Stärk ditt team med extern expertis inom DevOps och Kubernetes
 Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
 
-Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
-
-<div id="contact"></div>
-<div style="margin-bottom:100px;"></div>
+Vår partner är certifierade Kubernetes service providers skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
 
 ![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
 
-<div id="contact"></div>
-<div style="margin-bottom:100px;"></div>
-
 <div class="videoplayer">
-<div class="iframe-aspect-ratio iframe responsive-container"><div id="player"></div></div> <script>var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      videoId: 'Ae2GVatxzS8',
-      playerVars: {
-        'modestbranding': 1,
-        'iv_load_policy': 3
-},
-    });
-  }
-  function setCurrentTime(slideNum) {
-    var object = [ 0, 64, 253, 429, 579, 695, 814, 884, 950, 990, 1032 ];
-    player.seekTo(object[slideNum]);
-  }</script>
+  <div class="iframe-aspect-ratio iframe responsive-container">
+    <div id="player">
+    </div>
+  </div>
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: 'Ae2GVatxzS8',
+        playerVars: {
+          'modestbranding': 1,
+          'iv_load_policy': 3
+        },
+      });
+    }
+    function setCurrentTime(slideNum) {
+      var object = [ 0, 64, 253, 429, 579, 695, 814, 884, 950, 990, 1032 ];
+      player.seekTo(object[slideNum]);
+    }
+  </script>
   <h3>Avsnitt</h3>
   <div class="playlist">
     <ul>
@@ -79,42 +80,31 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
       <a href="javascript:void(0);" onclick="setCurrentTime(10)"><li>Sammanfattning <span>17:12</span></li></a>
     </ul>
   </div>
-  </div>
+</div>
 
-  <div id="contact"></div>
-  <div style="margin-bottom:100px;"></div>
 
-  ### Varför Compliant Kubernetes?
+### Varför Compliant Kubernetes?
 
-  Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
+Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
 
-  {{< localtextbutton "Utforska källkoden" "https://compliantkubernetes.io/" >}}
+![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
-  <a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-chart.png)</a>
+{{< horisontal-card image="/img/card/findout-logo-1x1.svg" cardtitle="Affärscase" link="/tjanster/case/findout/" linktext="Läs mer" text="FindOut valde att flytta hela sin lösning från Google Cloud till Compliant Kubernetes på svensk infrastruktur." >}}
 
-  <div id="contact"></div>
-  <div style="margin-bottom:100px;">
-  </div>
 
-  {{< horisontal-card image="/img/card/findout-logo-1x1.svg" cardtitle="Affärscase" link="/tjanster/case/findout/" linktext="Läs mer" text="FindOut valde att flytta hela sin lösning från Google Cloud till Compliant Kubernetes på svensk infrastruktur." >}}
+## Bakgrund
+{{< ingress >}}
+Därför väljer många bolag att flytta hem sin data till Europa.
+{{< /ingress >}}
 
-  <div id="contact"></div>
-  <div style="margin-bottom:100px;">
-  </div>
+De flesta tjänster inom SaaS innehåller personuppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
 
-  ## Bakgrund
-  {{< ingress >}}
-  Därför väljer många bolag att flytta hem sin data till Europa.
-  {{< /ingress >}}
+Personuppgifter regleras av dataskyddsförordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
 
-  De flesta tjänster inom SaaS innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
+Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
 
-  Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
+Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svensk lag.
 
-  Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
+Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
 
-  Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svensk lag.
-
-  Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
-
-  {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is located in secure data centers within the EU and doesn't get affected by foreign laws like CLOUD Act or FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan i Compliant Kubernetes" text="Vår infrastrukturtjänst kör i säkra datacenters inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}

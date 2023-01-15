@@ -5,7 +5,7 @@ date: 2022-03-04T08:47:25+01:00
 card: "safespring_card_21.svg"
 draft: false
 intro: "Medtech, EdTech eller andra moderna bolag som söker Compliant Kubernetes, Databastjänster och mer."
-background: "safespring_bilder_10.jpg"
+background: "safespring-kubernetes-background.svg"
 logobannersaas: "yes"
 banner: "blue-hover-webinar"
 ---

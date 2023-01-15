@@ -1,5 +1,6 @@
 ---
 title: "Safespring is the preferred cloud platform for research and education"
+language: "En"
 date: "2021-01-14"
 draft: false
 tags: ""
@@ -7,8 +8,7 @@ toplogo: "ocre.png"
 showthedate: false
 pageimage: ""
 section: " "
-background: "safespring-research.jpg"
-Language: "En"
+background: "2safespring-akademisk-sektor-2022.webp"
 intro: "The Open Clouds for Research Environments project (OCRE), aims to accelerate cloud adoption in the European research community."
 aliases:
     - /ocre/
@@ -30,7 +30,8 @@ sidebarknapp: "Read now"
 
 
 {{< ingress >}}
-We at Safespring have a long history of delivering cloud infrastructure services to the research and education market. Our platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty.{{</ ingress >}}
+We at Safespring have a long history of delivering cloud infrastructure services to the research and education market. Our platform enables open standards, GDPR compliance and is letting you maintain digital sovereignty.
+{{</ ingress >}}
 
 Safespring's data centers are directly connected to the NREN Network to give you the best performance without data transfer costs.
 

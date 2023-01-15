@@ -1,5 +1,6 @@
 ---
 title: "Norsk Kubernetes for beskyttelses­verdige data"
+language: "No"
 publishDate: "2021-10-12"
 draft: false
 tags: ["Norsk"]

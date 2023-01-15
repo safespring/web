@@ -1,6 +1,6 @@
 ---
 title: "Oppdag en lokal skytjeneste i verdensklasse med våre eksperter"
-date: 2019-01-07T13:58:58+01:00
+date: 2022-12-07T13:58:58+01:00
 draft: false
 Section: "Bestill demo"
 language: "No"
@@ -26,6 +26,9 @@ aliases: ""
 {{< ingress >}}
 Hvilken verdi tilfører vårt medlemskap i Gaia-X, moderne infrastruktur og ekspertise virksomheten din?
 {{< /ingress >}}
+
+Med Safespring får du tilgang til en rekke verktøy og ressurser som hjelper deg å bygge, distribuere og skalere applikasjonene dine raskt og enkelt. Plattformen vår bygger på noen av de mest pålitelige og sikre infrastrukturene i bransjen, så du kan være trygg på at dataene og applikasjonene dine er sikre.
+
 
 ### Dette er inkludert
 

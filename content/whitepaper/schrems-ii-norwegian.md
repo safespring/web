@@ -1,6 +1,6 @@
 ---
-title: "EU-domstolens ugyldigforklaring av
-Privacy Shield"
+title: "EU-domstolens ugyldigforklaring av Privacy Shield"
+section: "White Paper"
 date: "2020-09-04"
 draft: false
 tags: ["Norsk"]
@@ -12,7 +12,6 @@ sidebarlinkname: ""
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: ""
 card: "safespring_card_33.jpg"
-eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
 toc: "Innhold"
 language: "No"

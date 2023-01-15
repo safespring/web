@@ -1,5 +1,6 @@
 ---
 title: "Ett år efter Schrems II, vad har hänt och hur ska vi planera?"
+language: "Se"
 date: "2021-08-25"
 publishDate: "2021-06-17"
 draft: false
@@ -19,8 +20,13 @@ explorer: "https://youtu.be/JWGvHE2_-HA"
 Vi tar upp EDPBs vägledningen efter Schrems II. Är den snabbaste vägen framåt just nu molntjänster utan amerikanska ägare eller drift? Låt oss diskutera!
 {{< /ingress >}}
 
-<a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Se del I</a><br>
-<a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Se del II</a>
+### Se alla webcasts om debatten kring molntjänster
+1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
+2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
+3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>
+4. <a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Vad säger myndigets­rapporterna om molntjänster?</a><br>
+5. <a href="/webinar/fifth-fireside-chat-it-sakerhetsbolaget/">Kan EU & USAs tänkta nya avtal leda till Schrems III?</a><br>
+
 
 En fortsättning på vårt populära samtal från den 16 juni. Var med och diskutera praktiska möjligheter efter Schrems II med en Senior Cloud Architect (Gabriel Paues) och dataskyddsombud samt It-säkerhetsexpert (Patrik Jonasson). Var står vi nu och hur kommer vi vidare?
 
