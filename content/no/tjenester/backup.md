@@ -8,7 +8,7 @@ cardcolor: "#32CD32"
 cardorder: "5"
 date: 2022-12-22T13:58:58+01:00
 draft: false
-intro: "Med Safesprings skybasert backup-tjeneste trenger du ikke å investere i noen maskinvare eller programvare. Betal bare for mengden data lagret i tjenesten!"
+intro: "Med Safesprings skybaserte backup-tjeneste trenger du ikke å investere i noen maskinvare eller programvare. Betal bare for mengden data lagret i tjenesten!"
 cardintro: "Robust enterprise-grade skybackup for fysiske eller virtuelle servere."
 background: "safespring-backup-background.svg"
 form: ""
@@ -43,4 +43,4 @@ Med Safespring Backup introduserer vi en fullstendig overhaling av brukerportale
 - Provisoning og avansert rapportmotor for enkel statusoppfølging og planlegging av rapporter.
 - En REST API for ytterligere automatisering av administrative oppgaver.
 
-Safespring Backup er en sikker og enkel å bruke løsning som gir bedrifter påliteligheten til Spectrum Protect og fleksibiliteten til en fullverdig selvbetjent portal. Med avanserte funksjoner, multi-tenancy og automatiseringsegenskaper, er Safespring Backup 2.0 det perfekte valget for å administrere alle dine sikkerhetskopier.
+Safespring Backup er en sikker og enkel å bruke løsning som gir bedrifter påliteligheten til Spectrum Protect og fleksibiliteten til en fullverdig selvbetjent portal. Med avanserte funksjoner, multi-tenancy og automatiseringsegenskaper, er Safespring Backup det perfekte valget for å administrere alle dine sikkerhetskopier.
