@@ -27,7 +27,6 @@
 	--height-Ckb: (var(--width-Ckb)*0.5625);
 	--transitionSpeed: 0.05s;
 	--border: var(--width-Ckb) - var(--height-Ckb)/10;
-
 }
 
 .fixed-position {
