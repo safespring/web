@@ -30,12 +30,23 @@ section: "Public Cloud"
 ## Backup som tjänst
 
 {{< ingress >}}
-Safesprings Backup som tjänst (Backup) är en riktig molnbaserad backuptjänst.
+Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data.
 {{< /ingress >}}
 
-Det betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
+Att ta Backup genom Safespring betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
+
+Med vår webbportal kan du enkelt hantera dina klienter, få rapporter och status samt hantera användare och roller i din organisation.
 
 {{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
+
+![Safespring Backup kommer med många fördelar](/img/graphics/safespring_key-points-backup.svg)
+
+1. {{< inline "Hög säkerhet:" >}} Våra säkerhetskopior krypteras under transit med TLS 1.2 och kan också konfigureras för att krypteras klientsidan för ännu högre säkerhet automatiskt.
+1. {{< inline "Utmärkt skalbarhet:" >}} Safespring Backup kan skydda många terabyte data med minimal administrativ ansträngning tack vare sina funktioner för data livscykelautomatisering.
+1. {{< inline "Flexibel administration:" >}} Vår användarvänliga, självbetjäningsportal förenklar inställningen av nya noder, generering av nycklar och hierarkisk hantering av användarkonton.
+1. {{< inline "Multi-tenancy och rollbaserat åtkomstkontroll:" >}} Vår lösning möjliggör delegation av servrar till olika delar av organisationen och ger IT-administratörer granulär kontroll över åtkomst.
+1. {{< inline "Avancerad rapportering och automatisering:" >}} Med vår avancerade rapportmotor och REST-API kan du enkelt följa upp statusen för dina säkerhetskopior och automatisera administrativa uppgifter.
+1. {{< inline "Compliance ready:" >}} Safespring Backup är körs från svenska datacenter av Safespring som är ett svenskt bolag vilket skyddar er från lagar som CLOUD Act och FISA 720 som annars bryter mot GDPR.
 
 Tjänsten konsumeras över internet och du betalar för mängden data som sparas i tjänsten. Faktura över förbrukning kommer månadsvis och utnyttjandet går att öka eller minska efter eget behov. Säkerheten är mycket god och självklart krypteras all data både i transport (TLS över internet) och på krypterade diskar i datacentret.
 Tjänsten är flexibel och lätthanterlig. Ni kan individuellt välja vilken data ni ska säkerhetskopiera och vilket backup-schema som ska gälla. Du har full kontroll över din egna data och dina kostnader.
