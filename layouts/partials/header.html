@@ -7,14 +7,14 @@
         <span></span>
         <span></span>
         <span></span>
-<ul id="menu" class="site-header-links">
-  {{ $language := .Params.language }}
-  <li><a id="main-menu-link" href='/{{ if eq $language "En" }}en/services{{ else if eq $language "No" }}no/tjenester{{ else }}tjanster{{ end }}/'>{{ if eq $language "En" }}Platform{{ else if eq $language "No" }}Plattformen{{ else }}Plattformen{{ end }}</a></li>
-  <li><a id="main-menu-link" href='/{{ if eq $language "En" }}en/price{{ else if eq $language "No" }}no/pris{{ else }}pris{{ end }}'>{{ if eq $language "En" }}Price{{ else if eq $language "No" }}Pris{{ else }}Pris{{ end }}</a></li>
-  <li><a id="main-menu-link" href='/latest/'>{{ if eq $language "En" }}News{{ else if eq $language "No" }}Aktuelt{{ else }}Aktuellt{{ end }}</a></li>
-  <li><a id="main-menu-link" href='/{{ if eq $language "En" }}en/contact{{ else if eq $language "No" }}no/kontakt{{ else }}kontakt{{ end }}/'>{{ if eq $language "En" }}Contact{{ else if eq $language "No" }}Kontakt{{ else }}Kontakt{{ end }}</a></li>
-  <li><a id="main-menu-link" href='{{ if eq $language "No" }}tel:+4735688870{{ else }}tel:+46855107370{{ end }}' class="site-header-button">{{ if eq $language "No" }}35 68 88 70{{ else if eq $language "En" }}+46 855 107 370{{ else }}08-55 10 73 70{{ end }}</a></li>
-</ul>
+        <ul id="menu" class="site-header-links">
+          {{ $language := .Params.language }}
+          <li><a id="main-menu-link" href='/{{ if eq $language "En" }}en/services{{ else if eq $language "No" }}no/tjenester{{ else }}tjanster{{ end }}/'>{{ if eq $language "En" }}Platform{{ else if eq $language "No" }}Plattformen{{ else }}Plattformen{{ end }}</a></li>
+          <li><a id="main-menu-link" href='/{{ if eq $language "En" }}en/price{{ else if eq $language "No" }}no/pris{{ else }}pris{{ end }}'>{{ if eq $language "En" }}Price{{ else if eq $language "No" }}Pris{{ else }}Pris{{ end }}</a></li>
+          <li><a id="main-menu-link" href='/latest/'>{{ if eq $language "En" }}News{{ else if eq $language "No" }}Aktuelt{{ else }}Aktuellt{{ end }}</a></li>
+          <li><a id="main-menu-link" href='/{{ if eq $language "En" }}en/contact{{ else if eq $language "No" }}no/kontakt{{ else }}kontakt{{ end }}/'>{{ if eq $language "En" }}Contact{{ else if eq $language "No" }}Kontakt{{ else }}Kontakt{{ end }}</a></li>
+          <li><a id="main-menu-link" href='{{ if eq $language "No" }}tel:+4735688870{{ else }}tel:+46855107370{{ end }}' class="site-header-button">{{ if eq $language "No" }}35 68 88 70{{ else if eq $language "En" }}+46 855 107 370{{ else }}08-55 10 73 70{{ end }}</a></li>
+        </ul>
       </div>
     </nav>
   </div>
