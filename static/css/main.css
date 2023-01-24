@@ -29,6 +29,9 @@
 	--border: var(--width-Ckb) - var(--height-Ckb)/10;
 }
 
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@100;300;400;600&display=swap'); 
+
+
 .fixed-position {
 	position: fixed;
 }
@@ -1410,10 +1413,10 @@ color: var(--unCheckedColor);
 
 	.safespring-footer-third {
 		display: flex;
-    	flex-flow: row nowrap;
-    	justify-content: space-between;
-    	gap: 60px;
-    	align-items: center;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		gap: 60px;
+		align-items: center;
 	}
 	.safespring-footer-copyright>p {
 		color: #195F8C90;
@@ -6445,9 +6448,9 @@ th:last-child {
 
 .author-container {
 	display: flex;
-    align-items: center;
-    border-bottom: 0.25px solid var(--cloud-blue-color);
-    padding-bottom: 30px;
+	align-items: center;
+	border-bottom: 0.25px solid var(--cloud-blue-color);
+	padding-bottom: 30px;
 }
 .author-image {
 	width: 75px;
@@ -6476,7 +6479,9 @@ th:last-child {
 /* Cookie tractor */
 
 #CookieConsent .cookie-popup {
-	background: #fafefed1 !important;
+	background: #fafefe00 !important;
+	backdrop-filter: blur(20px) !important;
+	transition: 500ms;
 }
 
 #CookieConsent .cookie-popup > div {
@@ -6520,3 +6525,90 @@ th:last-child {
 #CookieConsent .cookie-popup label {
 	font: 600 16px/1 var(--mon-font) !important;
 }
+
+
+
+
+
+/* Flavour */
+
+.flavour-container {
+	background-color: var(--cloud-blue-color);
+	border-radius: 10px;
+	padding: 15px 30px 13px 20px;
+	margin: 5px 0;
+	width: fit-content;
+}
+
+.cpu-container {
+	display: flex;
+	flex-flow: row;
+	margin-left: 35px;
+}
+
+.cpu {
+	width: max(10px, 15px);
+	height: 10px;
+	background-color: var(--main-color);
+}
+
+.ram-container {
+	display: flex;
+	flex-flow: row;
+	margin-left: 35px;
+}
+
+.ram-container::before {
+	width: 35px;
+	content: "RAM";
+	font: 900 12px/1 var(--mon-font);
+	margin-left: -35px;
+}
+
+.cpu-container::before {
+	width: 35px;
+	content: "CPU";
+	font: 900 12px/1 var(--mon-font);
+	margin-left: -35px;
+}
+
+.ram {
+	width: 15px;
+	height: 10px;
+	background-color: var(--clear-blue-color);
+}
+
+.ram:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.ram:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+.cpu:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.cpu:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+/* Balanced text */
+
+      .balance-text {
+        visibility: hidden;
+      }
+
+      @media (scripting: none) {
+        .balance-text {
+          visibility: visible;
+        }
+      }
+
+      @supports (text-wrap: balance) {
+        .balance-text {
+          text-wrap: balance;
+          visibility: visible;
+        }
+      }
