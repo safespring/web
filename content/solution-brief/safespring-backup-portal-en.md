@@ -25,7 +25,11 @@ language: "En"
 
 ## Introduction
 
-Safespring Backup is based on the very well-established Spectrum Protect from IBM. It has many strengths, such as high security, excellent scalability and data lifecycle automation. Spectrum Protect can protect countless Terabytes of data with minimal administration effort.
+{{< ingress >}} 
+Safespring Backup is based on the very well-established Spectrum Protect from IBM. It has many strengths, such as high security, excellent scalability and data lifecycle automation. 
+{{< /ingress >}}
+
+Spectrum Protect can protect countless Terabytes of data with minimal administration effort.
 
 Backups are encrypted in transit with TLS 1.2 but can also be configured to be encrypted client side for even higher security automatically.
 
@@ -48,6 +52,16 @@ With our relaunch of Safespring Backup, we introduce a complete rehaul of the us
 - Provisioning where the administrator can define the process with standard settings to let the users handle their own activation of backups with ease.
 - Advanced, but easy to use, report engine that makes it simple to follow up the status of all the backups running. It is also possible to set up schedules for sending reports at specific intervals to particular email addresses.
 - REST API makes it possible to do everything you can do in the web user interface with API calls to automate your setup even further.
+
+### Protection against ransomware
+
+Safespring Backup utilizes a locking mechanism on each node that registers to use the service. This mechanism is designed to prevent the backup agent from deleting backups before a preset retention period has passed. This retention period is set to a certain number of days, during which the backups are kept safe and secure.
+
+By implementing this mechanism, we are able to ensure that even in the event of a ransomware attack, the attacker would not be able to remove all backups from the server before encrypting the data locally. This is because the backups are locked and cannot be deleted until the retention period has passed.
+
+In addition to this, the mechanism also provides an additional layer of protection to ensure data recovery in case of an attack. By keeping multiple backups available, we are able to restore data to a point before the attack occurred, minimizing the impact of the attack on our customers.
+
+Overall, the use of this mechanism helps us to provide a more secure and reliable backup service for our customers, and is an important step in protecting against the growing threat of ransomware attacks.
 
 ## Conclusion
 

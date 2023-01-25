@@ -22,6 +22,7 @@ devops: ""
 section: "Public Cloud"
 ---
 
+
 {{< youtube "iYDi_Hz7A74" >}}
 
 ## Virtuella maskiner till er tjänst
