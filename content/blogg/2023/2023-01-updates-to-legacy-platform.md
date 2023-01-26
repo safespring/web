@@ -21,9 +21,9 @@ Dear valued customers, We would like to inform you that our legacy platform in s
 You will not be able to create new instances on this platform after March 1st and there will only be best effort support available starting April 1st. These are hard dates that we will be adhering to, so it is important that you take necessary steps to migrate to our new platform.
 
 ### Please note the following important dates
-- {{< inline "March 1st:" >}} No new instances can be created on our legacy platform in sto1.
-- {{< inline "April 1st:" >}} End of Life for the legacy plattform. Only best effort support will be available for existing instances on the legacy platform in sto1.
-- {{< inline "May 1st:" >}} Legacy platform in sto1 will be shut down.
+- {{< inline "March 1st, 2023:" >}} No new instances can be created on our legacy platform in sto1.
+- {{< inline "April 1st, 2023:" >}} End of Life for the legacy plattform. Only best effort support will be available for existing instances on the legacy platform in sto1.
+- {{< inline "May 1st, 2023:" >}} Legacy platform in sto1 will be shut down.
 
 We understand that this transition may cause inconvenience and we want to assure you that we will work closely with you to help you migrate to our new platform smoothly. If you have any questions or concerns, please do not hesitate to contact our support team.
 
