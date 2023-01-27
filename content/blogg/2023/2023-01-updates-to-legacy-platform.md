@@ -12,8 +12,10 @@ socialmediabild: ""
 section: "Tech update"
 language: "En"
 toc: ""
-linktext: "How to migrate"
-link: "https://docs.safespring.com/new/migrate-from-legacy/"
+sidebarlinkname: "How to migrate"
+sidebarlinkurl: "https://docs.safespring.com/new/migrate-from-legacy/"
+sidebarlinkname2: "Contact support"
+sidebarlinkurl2: "mailto:support@safespring.com"
 ---
 
 {{< ingress >}}
