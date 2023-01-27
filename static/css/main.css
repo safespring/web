@@ -6339,16 +6339,16 @@ tbody {
 th {
 	font-weight: 300;
 	text-align: left;
-	border-bottom: 1px solid var(--cloud-blue-color);
+	/*border-bottom: 1px solid var(--cloud-blue-color);*/
 	padding: 10px 20px;
-	background-color: none;
+	background-color: none !important;
 }
 
 td {
 	font: 16px/1 var(--mon-font);
 	font-weight: 300;
 	padding: 10px 20px;
-	border-bottom: 1px solid var(--cloud-blue-color);
+	/*border-bottom: 1px solid var(--cloud-blue-color);*/
 }
 
 td:first-child {
@@ -6357,11 +6357,15 @@ td:first-child {
 }
 
 tr:hover {
-	background-color: var(--cloud-blue-color);
+	background-color: var(--cloud-blue-color) !important;
 }
 
-tr:nth-child(even) {
-	/*background-color: var(--cloud-blue-color);*/
+tr:nth-child(odd) td {
+	background-color: #e8eff34d;
+}
+
+tr:last-child td {
+	border-bottom: 1px solid var(--cloud-blue-color);
 }
 
 
@@ -6472,6 +6476,10 @@ th:last-child {
 	font-weight: 300;
 	text-transform: uppercase;
 }
+
+
+
+
 
 /* Cookie tractor */
 
