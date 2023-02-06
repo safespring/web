@@ -24,6 +24,8 @@ socialmedia: "/safespring-start.jpg"
 Cloud-based infrastructure as a service (IaaS) allows you to adjust the size of your infrastructure according to your needs. It is provided from secure data centers located in Sweden.
 {{< /ingress >}}
 
+![Safespring Compute benefits](/img/safespring-compute-key-points.svg)
+
 _Get information about all our services in our  [Service Catalogue](/services/safespring-service-catalogue-2020.pdf)_
 
 Our IaaS service, called Compute, is based on the popular OpenStack cloud platform and is available on an hourly basis. You only pay for the resources you use. Compute is flexible, fully automated, and can be controlled through standard requests to our API. It is also self-service, allowing you to start and stop new servers easily. You can access the service through a secure, encrypted internet connection. There is a public library with common operating systems and a private library where you can upload your own images. We offer three storage options for virtual servers: Fast (SSD), Large (HDD), and Active Archive. This allows you to balance cost and performance based on your needs. Active Archive is our object storage service, which provides an S3 interface.

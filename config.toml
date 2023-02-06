@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "sv-SE"
+languageCode = "se"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
 copyright = "2023 Safespring"
@@ -10,54 +10,6 @@ paginatePath = "blog"
 
 [params]
   mainSections = ['blogg', 'webinar', 'whitepaper', 'solution-brief']
-
-SectionPagesMenu = "main"
-
-[[menu.main]]
-  name = "VÅRT ERBJUDANDE"
-  weight = -110
-  identifier = "vårt-erbjudande"
-  url = "/tjanster/"
-
-[[menu.main]]
-  name = "PRIS"
-  weight = -110
-  identifier = "pris"
-  url = "/pris/"
-
-[[menu.main]]
-  name = "REFERENSER"
-  weight = -110
-  identifier = "referenser"
-  url = "/kundreferenser/"
-
-[[menu.main]]
-  name = "AKTUELLT"
-  weight = -110
-  identifier = "aktuellt"
-  url = "/aktuellt/"
-
-[[menu.main]]
-  name = "SUPPORT"
-  weight = -110
-  identifier = "support"
-  url = "/support/"
-
-
-[params.contact]
-    email = "info@safespring.com"
-    address = "Smidesvägen 12, 171 41 Solna"
-
-
-[params.social]
-    github = "safespring/web"
-    linkedin = "https://www.linkedin.com/company/safespring"
-    twitter = "@safespring"
-
-
-[params.meta]
-    description = "Safespring levererar säkra molntjänster som är lokalt producerade. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
-    keywords = "compute, storage, backup"
 
 [sitemap]
     changefreq = "daily"
