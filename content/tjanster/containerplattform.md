@@ -27,11 +27,12 @@ sidebarlinkurl2: "#"
 NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency jämfört med traditionella lagringstekniker. 
 {{< /ingress >}}
 
-Det är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster eller lagring av metadata. 
+Det är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata. 
 
 Genom att använda NVMe-lagring för etcd förbättras prestanda och tillförlitlighet i systemet, så att det kan hantera stora mängder data och trafik med lätthet samtidigt som det stödjer Kubernetes kraftfulla containerhantering.
 
 ## Safesprings nätverksmodell är optimal för containerplattformar
+
 Safespring är en produkt som erbjuder en effektiv och hög tillgänglig nätverksstack som använder BGP (Border Gateway Protocol). Det här gör att Safespring kan erbjuda en effektiv lastbalansering med hjälp av Equal cost multipath routing och Elastic IP (ECMP).
 
 En annan fördel med Safespring är den skalbara nätverksimplementationen, där det inte finns några centrala kontrollnoder. Det här gör att nätverket är mer robust och driftsäkert.
@@ -44,6 +45,6 @@ Sammanfattningsvis har Safespring en effektiv nätverksstack, en skalbar nätver
 
 ## Kör Kubernetes som en tjänst på Safespring
 
-Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukrutren och plattformslagret. 
+Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret. 
 
 {{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Kör Kubernetes som en tjänst. Med omfattande säkerhetsmekanismer är Compliant Kubernetes en helhetslösning för säker hantering av ert behov av Kubernetes." cardtitle="Compliant Kubernetes som managerad tjänst på Safespring" linktext="Kom igång!" link="/tjanster/compliant-kubernetes/"  >}}
