@@ -13,42 +13,45 @@ socialmedia: "safespring-datacenter.jpg"
 ## Frågor om Compliance
 
 {{% accordion title="Hur förhåller ni er till GDPR?" %}}
-Safespring följer Europeiska lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
+Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
 {{% /accordion %}}
 
 {{% accordion title="Vem är kontaktperson för informationssäkerhetsfrågor?" %}}
-Anders Bruvik anders.bruvik@safespring.com
+Anders Bruvik är din kontaktperson för alla frågor om informationssäkerhet. Du når honom på anders.bruvik@safespring.com.
 {{% /accordion %}}
 
-{{% accordion title="Finns möjlighet för att granska säkerhetsarbete?" %}}
-Vi håller på att certifiera oss för ISO27001 och det finns möjlighet att granska de rutiner vi arbetar idag. Skicka ett mail till info@safespring.com och fråga efter Safesprings Cloud Controls.
+{{% accordion title="Kan jag granska ert säkerhetsarbete?" %}}
+Ja, vi på Safespring är stolta över vårt arbete med informationssäkerhet och vi erbjuder möjligheten att granska våra rutiner. Vi håller på att certifiera oss enligt ISO27001-standarden. För mer information, vänligen skicka ett mail till info@safespring.com och fråga efter Safesprings Cloud Controls.
 {{% /accordion %}}
 
-{{% accordion title="Vilka underleverantörer använder ni er av och till vilket syfte? Hur väljs dessa ut?" %}}
-Kontkta oss och fråga efter "Data Processing Agreement" Appendix 1- Instructions and sub-processors.
+{{% accordion title="Vilka underleverantörer använder ni och vilket är syftet med det?" %}}
+För information om vilka underleverantörer vi använder och för vad de används, vänligen kontakta oss och fråga efter vårt "Data Processing Agreement" Appendix 1- Instructions and sub-processors. Dessa val av underleverantörer görs noggrant med tanke på säkerhet, kvalitet och tillförlitlighet.
 {{% /accordion %}}
 
 {{% accordion title="Erbjuder ni PUB-avtal eller DPA?" %}}
-Ja. Fråga oss om dokumentet "General terms and conditions"
+Ja, vi erbjuder PUB-avtal eller DPA. För att få en kopia av dokumentet, vänligen kontakta oss och fråga efter "General terms and conditions".
 {{% /accordion %}}
 
 ## Frågor om våra datacenter
+
 {{% accordion title="Vilka geografiska möjligheter erbjuder ni för lagring av data?" %}}
-Vi har tre datacenter. Två stycken i Stockholm, STO1 och STO2. Ett i Oslo, OSL1.
+Vi har tillgång till tre säkra datacenter, två belägna i Stockholm (STO1 och STO2) och ett i Oslo (OSL1), så att våra kunder kan välja den geografiska plats som passar deras behov bäst.
 {{% /accordion %}}
 
-{{% accordion title="Vilken garanti ger ni på up-tid? Hur beräknas denna?" %}}
-Safespring lämnar SLA tider på 99.9% upptid. Safepspring beräknar tillgänlighet enligt uptime institute definition. Se bifogat SLA. (nextcloud SALES SLA avtal SLA)
+{{% accordion title="Vilken tillgänglighet garantierar ni?" %}}
+Safespring strävar efter att alltid erbjuda högsta möjliga tillgänglighet för våra tjänster. Vi lämnar en Service Level Agreement (SLA) på 99.9% upptid. Tillgängligheten beräknas enligt Uptime Institute's definition. För mer information, kontakta oss och fråga efter vårt SLA.
 {{% /accordion %}}
 
-{{% accordion title="Har ni en informationssäkerhetspolicy?" %}}
-Ja, kontakta oss och fråga efter "Safespring Information Security Guidelines".
+{{% accordion title="Har ni en policy för informationssäkerhet?" %}}
+Ja, vi har en policy för informationssäkerhet som beskriver våra åtgärder och riktlinjer för att skydda känsliga information och personuppgifter. För att få tillgång till vår informationssäkerhetspolicy, vänligen kontakta oss och fråga efter "Safespring Information Security Guidelines".
 {{% /accordion %}}
 
-{{% accordion title="Hur hanteras fysisk åtkomst till datahallar?" %}}
-Alla besök måste föranmälas till administrationen för datahallen. Vid ankomst visar besökaren upp ID och får ett temporärt nyckelkort med pin-kod som bara fungerar till den hall och den bur där våra saker står. Besökaren passerar en sluss (man trap) med fingeravtrycksläsare.
-Safespring har MSBs högsta säkerhetsklassning, Tier 3. Byggstandarden är designad för tillgänglighetskrav enligt Tier-3, MSBs högsta fysiska klassning för datacenter, sex olika steg (taggtråd, fysiska vakter, olika nivåer innan men kommer till servrarna). Övervakning CCTV, sker dygnet runt, säkerhetsvakter, åtkomsthinder som slussar, kontaktlösa nyckelkort och biometriska läsare.
-Läs mer om [Safespring Datacenter Security](/documents/safespring-datacenter-security-2019.pdf).
+{{% accordion title="Hur hanteras fysisk tillgång till datacentra?" %}}
+Fysisk tillgång till våra datacentra regleras av strikta säkerhetsprocedurer. Alla besök måste föranmälas till administrationen för datahallen och besökaren måste visa upp giltigt ID. Vid ankomst till datacentret får besökaren ett temporärt nyckelkort med en pin-kod som bara fungerar till den specifika hallen och den specifika bur där våra utrustningar är placerade.
+
+För att säkerställa högsta säkerhetsnivå har Safespring en säkerhetsklassning av högsta graden enligt MSBs Tier 3. Datacentret är byggt enligt standarder som är specifikt designade för tillgänglighetskrav enligt Tier-3, MSBs högsta fysiska klassning för datacenter. Detta innefattar säkerhetsåtgärder som sex olika steg (taggtråd, fysiska vakter, olika säkerhetsnivåer innan man kommer till servrarna), övervakning via CCTV som sker dygnet runt, säkerhetsvakter, åtkomsthinder som slussar med fingeravtrycksläsare och kontaktlösa nyckelkort med biometriska läsare.
+
+För mer information om Safesprings säkerhet för datacentra, vänligen läs vårt dokument "Safespring Datacenter Security" på följande länk: [Safespring Datacenter Security](/documents/safespring-datacenter-security-2019.pdf).
 {{% /accordion %}}
 
 {{% accordion title="Redundans för strömförsörjning, kyling och nät?" %}}
@@ -61,37 +64,48 @@ En anordning för reglering av utrymmets luftfuktighet ska användas. Risker fö
 Läs mer om [Safespring Datacenter Security](/documents/safespring-datacenter-security-2019.pdf).
 {{% /accordion %}}
 
-{{% accordion title="Finns skydd av data at rest?" %}}
-Ja. Diskkryptering.
+{{% accordion title="Erbjuder ni DR-site?" %}}
+Ja, vi erbjuder möjligheten att använda flera platser som en del av er Disaster Recovery-strategi. Kunden väljer själv vilken plats som ska fungera som deras DR-site.
 {{% /accordion %}}
 
-{{% accordion title="Har ni DR-site?" %}}
-Ja. Vi har flera siter, det är upp till kunden att sätta egen DR-identitet.
+{{% accordion title="Finns det rutiner för testning av redundans?" %}}
+Ja, vi har regelbundna tester för redundans av våra datacenterleverantörer.
+{{% /accordion %}}
+
+## Frågor om informationssäkerhet
+
+{{% accordion title="Är ni certifierade enligt ISO 27001?" %}}
+Safespring arbetar med informationssäkerhetskontroller enligt ISO 27001. Våra policyinstruktioner och kontroller samlas i vårt ISMS neupartOne. Vi är för närvarande i färd med att certifiera oss enligt ISO27001 och förväntas vara klara under andra kvartalet 2023.
+{{% /accordion %}}
+
+{{% accordion title="Har ni en rutin för att hantera ändringar i åtkomsträttigheter?" %}}
+Ja, vi har en rutin för att hantera ändringar i åtkomsträttigheter när en medarbetare byter tjänst eller avslutar sin anställning. Vi använder hårdvarunycklar som en säker metod för att återkalla åtkomsträttigheter.
+{{% /accordion %}}
+
+{{% accordion title="Har ni en kontinuitetsplan?" %}}
+Ja, vi har en kontinuitetsplan på plats.
+{{% /accordion %}}
+
+{{% accordion title="Sker extern granskning av ert informationssäkerhetsarbete?" %}}
+Ja, Safespring har en extern DPO (Data Protection Officer) som granskar företagets informationssäkerhetsarbete för att säkerställa att det är i enlighet med gällande dataskyddslagstiftning och informationssäkerhetsstandarder.
 {{% /accordion %}}
 
 ## Frågor om våra tjänster och verksamhet
-{{% accordion title="Har är certifierade enligt ISO27001 eller liknande standard kring informationssäkerhet?" %}}
-Safespring jobbar med informationssäkerhetskontroller enligt ISO27001. Policys instruktioner och kontroller är samlade i Safespring ISMS neupartOne. Safespring är mitt inne i att certifiera oss enligt ISO27001, beräknas vara klara under Q2 2023.
+
+{{% accordion title="Erbjuds skydd för data vid viloläge (data at rest)?" %}}
+Ja, vi tillhandahåller diskkryptering för att skydda data vid viloläge.
 {{% /accordion %}}
 
 {{% accordion title="Access till innehållet till kundens produktionssystem eller databaser?" %}}
 Ja.
 {{% /accordion %}}
 
-{{% accordion title="Har ni back-up och återställningsrutin?" %}}
-Ja. Vi har back-up och återställningsrutin för egna system. För kunders data kan man köpa till som tjänst men då är man som kund själv ansvarig för återställningsrutinen.
-{{% /accordion %}}
-
-{{% accordion title="Har ni rutin för åtkomsträttigheter när medarbetare byter tjänst eller slutar?" %}}
-Ja. Vi arbetar med hårdvarunycklar som man återkallar.
-{{% /accordion %}}
-
-{{% accordion title="Rutin för testning av redundans" %}}
-Ja. Testning sker regelbundet av våra datacenterleverantörer.
+{{% accordion title="Har ni en backup och återställningsrutin?" %}}
+Ja. Vi har backup och återställningsrutin för egna system. För kunders data kan man köpa till som tjänst men då är man som kund själv ansvarig för återställningsrutinen.
 {{% /accordion %}}
 
 {{% accordion title="Finns upprättade rutiner för incidenthantering?" %}}
-Ja.
+Ja, vi har upprättade rutiner för incidenthantering som omfattar en strukturerad process för att hantera och åtgärda olika typer av säkerhetsincidenter, inklusive incidentanalys, kommunikation, återställning och rapportering. Dessa rutiner säkerställer att vi snabbt och effektivt kan hantera och lösa säkerhetsincidenter och minimera deras inverkan på våra kunders tjänster och data.
 {{% /accordion %}}
 
 {{% accordion title="Finns skydd av produktionsmiljön mot yttre miljörelaterade hot?" %}}
@@ -99,27 +113,19 @@ Ja.
 {{% /accordion %}}
 
 {{% accordion title="Genomförs sårbarhetsscanningar för att säkerställa att tekniska sårbarheter hanteras?" %}}
-Ja.
+Ja, vi genomför sårbarhetsscanningar regelbundet för att säkerställa att tekniska sårbarheter hanteras och adresseras.
 {{% /accordion %}}
 
 {{% accordion title="Finns IPS/IDS/IDPS?" %}}
 Finns som alternativ via partners till Safespring.
 {{% /accordion %}}
 
-{{% accordion title="Har ni separat nätverk för administration av virtuella hostas från andra nätverk?" %}}
-Ja.
+{{% accordion title="Har ni separerade nätverk för administration av virtuella hostar?" %}}
+Ja, vi har ett separat nätverk för administration av virtuella hostar för att säkerställa en hög säkerhetsstandard och minimera risken för säkerhetsincidenter.
 {{% /accordion %}}
 
-{{% accordion title="Har ni någon kontinuitetsplan?" %}}
-Ja.
-{{% /accordion %}}
-
-{{% accordion title="Sker extern granskning av ert informationssäkerhetsarbete?" %}}
-Ja. Safespring har extern DPO som granskar oss.
-{{% /accordion %}}
-
-{{% accordion title="Vad erbjuder ni för SLA?" %}}
-Vi erbjuder SLA 99.9. Ja, de är kopplat till viten
+{{% accordion title="Vad ingår i er SLA (Service Level Agreement)?" %}}
+Vi erbjuder en SLA på 99.9%. Det innebär att vi garanterar en tillgänglighet på 99.9% för våra tjänster. Detta är kopplat till våra SLA-villkor.
 {{% /accordion %}}
 
 {{< accordion-script >}}
