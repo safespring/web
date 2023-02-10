@@ -1,6 +1,6 @@
 ---
 title: "Maskinlæring og AI med GPU-ressurser"
-section: "Offentlig sky"
+section: "Public Cloud"
 language: "No"
 cardtitle: "AI & ML-tjenester"
 cardicon: "fa-solid fa-microchip-ai"
