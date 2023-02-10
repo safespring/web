@@ -34,7 +34,7 @@ logomobile: "/img/logos/dbaas-logos-mobile.svg"
 ![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)
 
 {{< ingress >}}
-The Database-as-a-Service solution CXX takes care of everything, giving you accessible, high-performance databases for your applications.
+The Database-as-a-Service solution CCX takes care of everything, giving you accessible, high-performance databases for your applications.
 {{</ ingress >}}
 
 Our partner Severalnines has built the service on Safespring. Managing a complex, clustered database environment is time-consuming and often daunting. With just a few simple steps, you can deploy a fully managed, load-balanced, high-availability database cluster for MySQL, MariaDB or PostgreSQL that delivers performance, uptime and simplicity.

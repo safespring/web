@@ -1,10 +1,6 @@
 ---
 title: "Låt era utvecklare fokusera på kärnverksamheten"
 language: "Se"
-cardtitle: "Containerplattform"
-cardicon: "fa-solid fa-container-storage"
-cardcolor: "#3C9BCD"
-cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"

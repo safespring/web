@@ -3,8 +3,8 @@ title: "Private Cloud"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Få hjälp med att sätta upp din egen miljö som vi underhåller. Då får du kraften från molnet - i ditt datacenter."
-background: "safespring_bilder_8.jpg"
+intro: "Få hjälp med att sätta upp din egen miljö som vi underhåller. Då får du kraften från molnet - i ditt- eller vårt datacenter."
+background: ""
 form: ""
 socialmedia: "safespring-private-cloud.jpg"
 aliases:
@@ -24,4 +24,4 @@ För er som har önskemål om denna funktionalitet erbjuder vi vårt koncept Pri
 ## Hybrid Infrastruktur
 Safesprings lösningar inom hybrid infrastruktur gör det möjligt för dig att kombinera kraften i molnet med din egen “on prem” eller managerad infrastruktur.
 
-{{< localbutton "Läs mer" "/tjanster/hybrid-infrastruktur/">}}
+{{< localbutton "Läs mer" "/tjanster/hybrid-infrastruktur/" >}}

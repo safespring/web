@@ -44,13 +44,6 @@ Safespring Compute är baserad på den marknadsledande molnplattformen OpenStack
 
 ![Safespring Compute benefits](/img/safespring-compute-central-blocklagring.svg)
 
-<!--### Skaffa lagring till dina applikationer
-Den lagring som behövs till de virtuella instanserna är separerad från noderna där själva instanserna kör i ett Ceph-kluster och kan fås i två varianter.
-
-- **Fast** — som är optimerat på prestanda.
-- **Large** — som är optimerat på pris.-->
-
-
 <div style="margin-bottom:50px;"></div>
 
 ### Datahallar inom landets gränser
@@ -70,7 +63,5 @@ Plattformen skapar också ett ramverk för att designa sina applikationer så at
 
 ### OpenStack
 ...använder sig av öppna, dokumenterade API:er som gör det enkelt att skriva egna skript för automatisering för uppsättning av nya resurser. På så sätt kan ni göra klara definitionerna för er infrastruktur och en väldigt enkel flytt till en annan leverantör om ni någon gång i framtiden skulle vilja byta.
-
-Vi på Safespring samarbetar också med andra företag inom Linux-communityt för att leverera tjänster. En sådan partner är SUSE som genom sin produkt Container as a Service-plattform gör det väldigt enkelt att sätta upp, och underhålla, ett fullfjädrat Kubernetes-kluster i vår plattform.  
 
 Även om vår plattform är baserad på öppen källkod och Linux så går det naturligtvis att köra Windows på de virtuella maskinerna. Safespring använder underleverantören CloudBase för att erbjuda startklara avbildningar av Windows för att du lätt skall kunna komma igång med dem.
