@@ -8,8 +8,8 @@ intro: "Molntjänster med hög säkerhet! Stabil infrastruktur och resurskonsume
 background: ""
 socialmedia: "safespring-tjanster.jpg"
 nolist: "x"
-fullwidth: "x"
-nosidebar: "x"
+fullwidth: ""
+nosidebar: ""
 ---
 
 {{< services >}}
