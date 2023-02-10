@@ -1,7 +1,7 @@
 ---
-title: "Databas som tjeneste med høy tilgjengelighet"
+title: "Database som tjeneste med høy tilgjengelighet"
 language: "No"
-cardtitle: "Databastjeneste"
+cardtitle: "Database-tjeneste"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
 cardorder: "4"
@@ -34,7 +34,7 @@ logomobile: "/img/logos/dbaas-logos-mobile.svg"
 ![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)
 
 {{< ingress >}}
-Databas-som-tjeneste tar seg av alt, noe som gir deg tilgjengelige databaser med høy ytelse for dine applikasjoner.
+Database-som-tjeneste tar seg av alt, noe som gir deg tilgjengelige databaser med høy ytelse for dine applikasjoner.
 {{</ ingress >}}
 
 Tjenesten bygges av vår partner Severalnines på Safespring. Å administrere en kompleks, klustret databasmiljø er en tidkrevende og ofte skummel oppgave. Med bare noen få klikk kan du distribuere et fullt administrert, lastbalansert, høytilgjengelig databasenøkkel for MySQL, MariaDB eller PostgreSQL som gir ytelse, drifttid og enkelhet.

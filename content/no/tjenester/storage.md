@@ -6,8 +6,8 @@ cardcolor: "#FA690F"
 cardorder: "2"
 date: 2020-07-06T09:42:10+02:00
 draft: false
-intro: "Skybasert lagring tilbys fra sikre datasenter i Norden og bygger på markedsledende Ceph lagringsteknologi."
-cardintro: "Skybasert lagring tilbys fra sikre datasenter i Norden."
+intro: "Skybasert lagring tilbys fra sikre datasentre i Norden og bygger på markedsledende Ceph lagringsteknologi."
+cardintro: "Skybasert lagring tilbys fra sikre datasentre i Norden."
 background: "safespring-storage-background.svg"
 form: "no"
 documentation: "Storage"
