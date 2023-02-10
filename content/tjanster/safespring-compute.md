@@ -9,7 +9,7 @@ cardorder: "1"
 date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "Med Safespring kan du skala upp och ner din infrastruktur efter behov. Levereras från säkra datahallar inom landet."
-cardintro: "Robust serverkapacitet i molnet för era tjänster. Säkert svensk IaaS."
+cardintro: "Robust serverkapacitet i molnet för era tjänster. Säker, svensk IaaS."
 background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Kontakta oss"
