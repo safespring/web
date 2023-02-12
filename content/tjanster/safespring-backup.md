@@ -24,7 +24,7 @@ aliases:
 section: "Public Cloud"
 ---
 
-{{< readfile "Läs Solution Brief" "/content/solution-brief/safespring-backup-portal-en-more.md" >}}
+{{< readfile "Solution Brief" "/content/solution-brief/safespring-backup-portal-en-more.md" >}}
 
 {{< youtube "JCXm-Adpf40">}}
 
