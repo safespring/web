@@ -6690,7 +6690,11 @@ details[open] {
 }
 
 summary::-webkit-details-marker {
-  display: none;
+  content: "";
+}
+
+summary#summary::marker {
+  content: "";
 }
 
 details[open] summary {
