@@ -6689,7 +6689,7 @@ details[open] {
 	margin: 3% 0;
 }
 
-summary::-webkit-details-marker {
+summary#summary::-webkit-details-marker {
   content: "";
 }
 
