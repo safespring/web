@@ -6658,6 +6658,9 @@ details[open] {
   details[open] summary {
   	margin: 15% !important;
   }
+  details[open] summary:before {
+  content: "Tillbaka " !important;
+}
 }
 
   @media screen and (max-width: 600px){
@@ -6689,7 +6692,7 @@ details[open] {
 	margin: 3% 0;
 }
 
-summary#summary::-webkit-details-marker {
+summary::-webkit-details-marker {
   content: "";
 }
 
@@ -6697,7 +6700,12 @@ summary#summary::marker {
   content: "";
 }
 
+details[open] summary:before {
+  content: "Tillbaka " !important;
+}
+
 details[open] summary {
+	content: none !important;
   margin: 5%;
   position: sticky;
   top: 10%;
