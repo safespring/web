@@ -1,0 +1,29 @@
+<details>
+<summary id="summary" onclick="toggleSummary()">{{ .Get 0 }}</summary>
+  <div>
+  	{{ with .Get 1 }}
+  {{ $path := . }}
+  {{ with (readFile $path) }}
+    {{ . | markdownify | safeHTML}}
+  {{ end }}
+{{ end }}
+  </div>
+</details>
+<script type="text/javascript">
+  var isSummaryHidden = true;
+
+  function toggleSummary() {
+    var summary = document.getElementById("summary");
+
+    if (isSummaryHidden) {
+      summary.innerHTML = "Tillbaka";
+      isSummaryHidden = false;
+    } else {
+      summary.innerHTML = "Läs Solution Brief";
+      isSummaryHidden = true;
+    }
+
+    var details = document.getElementById("details");
+    details.classList.toggle("hidden");
+  }
+</script>
