@@ -1,0 +1,24 @@
+<details>
+	<summary id="summary">{{ .Get 0 }}</summary>
+	<!--<button id="print-button">Skriv ut</button>-->
+	<div id="content-to-print">
+		{{ with .Get 1 }}
+		{{ $path := . }}
+		{{ with (readFile $path) }}
+		{{ . | markdownify | safeHTML}}
+		{{ end }}
+		{{ end }}
+	</div>
+</details>
+<script type="text/javascript">
+var printButton = document.getElementById("print-button");
+printButton.addEventListener("click", function() {
+  var contentToPrint = document.getElementById("content-to-print");
+  var windowContent = contentToPrint.innerHTML;
+  var originalContent = document.body.innerHTML;
+
+  document.body.innerHTML = windowContent;
+  window.print();
+  document.body.innerHTML = originalContent;
+});
+</script>

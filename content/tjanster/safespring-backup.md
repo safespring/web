@@ -13,10 +13,10 @@ cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servr
 background: "safespring-backup-background.svg"
 form: "yes"
 youtubeid: "JCXm-Adpf40"
-sidebarlinkname: "Läs solution brief"
-sidebarlinkurl: "/solution-brief/safespring-backup-portal-en/"
-sidebarlinkname2: "Boka demo"
-sidebarlinkurl2: "/demo/"
+sidebarlinkname: ""
+sidebarlinkurl: ""
+sidebarlinkname2: ""
+sidebarlinkurl2: ""
 socialmedia: "safespring-backup.jpg"
 aliases:
     - /backup/
@@ -24,8 +24,9 @@ aliases:
 section: "Public Cloud"
 ---
 
-{{< youtube "JCXm-Adpf40">}}
+{{< readfile "Solution Brief" "/content/solution-brief/safespring-backup-portal-sv-more.md" >}}
 
+{{< youtube "JCXm-Adpf40">}}
 
 ## Backup som tjänst
 

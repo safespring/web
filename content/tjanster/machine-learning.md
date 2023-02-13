@@ -19,7 +19,9 @@ socialmedia: "safespring-managed-database.jpg"
 {{< youtube _uWqI_1Yt-M >}}
 
 
-<div class="ingress"><p>Safespring tillhandahåller STACKn som är en helt managerad PostgreSQL-tjänst som kör på vår infrastruktur.</p></div>
+{{< ingress >}}
+Safespring tillhandahåller STACKn som är en helt managerad PostgreSQL-tjänst som kör på vår infrastruktur.
+{{< /ingress >}}
 
 STACKn är en lätt maskininlärningsplattform för datavetenskap som låter forskare samarbeta i ML-projekt där de kan dela datamängder, arbeta i Notebook-miljöer, spåra experiment och servera ML-modeller. STACKn låter också användare distribuera modeller och appar i offentliga eller privata kataloger för att dela modelländpunkter och anpassade dashboardar. STACKn är en molntjänst som byggs på Safespring Compute.
 

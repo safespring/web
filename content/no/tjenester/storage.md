@@ -6,8 +6,8 @@ cardcolor: "#FA690F"
 cardorder: "2"
 date: 2020-07-06T09:42:10+02:00
 draft: false
-intro: "Cloud-based storage is provided from secure data centers in Sweden and is based on the market-leading Ceph storage technology."
-cardintro: "Cloud-based storage is provided from secure data centers in Norden."
+intro: "Skybasert lagring tilbys fra sikre datasentre i Norden og bygger på markedsledende Ceph lagringsteknologi."
+cardintro: "Skybasert lagring tilbys fra sikre datasentre i Norden."
 background: "safespring-storage-background.svg"
 form: "no"
 documentation: "Storage"
@@ -24,7 +24,9 @@ socialmedia: "/safespring-start.jpg"
 
 ## Safespring lagring som tjeneste
 
-<div class="ingress"><p>Safesprings skybaserte lagring bygger på den markedsledende lagringsteknologien Ceph.</p></div>
+{{< ingress >}}
+Safesprings skybaserte lagring bygger på den markedsledende lagringsteknologien Ceph.
+{{< /ingress >}}
 
 _Få informasjon om alle tjenestene våre i [servicekatalogen](/services/safespring-service-catalogue-2020.pdf) vår._
 

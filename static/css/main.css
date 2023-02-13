@@ -6622,3 +6622,115 @@ th:last-child {
           visibility: visible;
         }
       }
+
+/* Läs mer */
+
+details[open] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0, .0);
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    transition: 0.3s ease-out;
+
+  }
+
+  details[open]>div {
+  	transition: 0.5s ease-out;
+	box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.10);
+    z-index: 9999;
+    background-color: white;
+    max-width: 800px;
+    padding: 100px;
+    margin: 5% auto;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 1100px){
+  	  details[open]>div {
+  	  	margin: 10%;
+  }
+  details[open] summary {
+  	margin: 15% !important;
+  }
+  details[open] summary:before {
+  content: "Tillbaka " !important;
+}
+}
+
+  @media screen and (max-width: 600px){
+  	  details[open]>div {
+  	  	margin: 5% !important;
+  	  	padding: 5% !important;
+  }
+  details[open] summary {
+  	margin: 0 auto !important;
+  	top: 90% !important;
+  	float: none !important;
+  }
+}
+
+
+  summary {
+    cursor: pointer;
+	background-color: var(--link-color);
+	border-radius: 50px;
+	border: none;
+	padding: 14px 25px 12px 25px !important;
+	text-align: center;
+	font: var(--heavy-weight) 14px/1 var(--hind-font);
+	color: var(--text-color);
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 0.2px;
+	width: fit-content;
+	margin: 3% 0;
+}
+
+summary::-webkit-details-marker {
+  content: "";
+}
+
+summary#summary::marker {
+  content: "";
+}
+
+details[open] summary:before {
+  content: "Stäng " !important;
+}
+
+details[open] summary {
+	content: none !important;
+  margin: 5%;
+  position: sticky;
+  top: 10%;
+  float: right;
+  background-color: var(--link-color);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px 8px 25px;
+  text-align: center;
+  font: var(--heavy-weight) 13px/1 var(--hind-font);
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  width: fit-content;
+}
+
+
+@media print {
+  @page {
+    padding: 3cm;
+    margin: 3cm;
+  }
+}
+
+
+
+
