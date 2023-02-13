@@ -1,6 +1,7 @@
 <details>
 	<summary id="summary">{{ .Get 0 }}</summary>
-	<div>
+	<!--<button id="print-button">Skriv ut</button>-->
+	<div id="content-to-print">
 		{{ with .Get 1 }}
 		{{ $path := . }}
 		{{ with (readFile $path) }}
@@ -9,18 +10,15 @@
 		{{ end }}
 	</div>
 </details>
-<!--<script type="text/javascript">
-	var isSummaryHidden = true;
+<script type="text/javascript">
+var printButton = document.getElementById("print-button");
+printButton.addEventListener("click", function() {
+  var contentToPrint = document.getElementById("content-to-print");
+  var windowContent = contentToPrint.innerHTML;
+  var originalContent = document.body.innerHTML;
 
-	function toggleSummary() {
-		var summary = document.getElementById("summary");
-
-		if (isSummaryHidden) {
-			summary.innerHTML = "Tillbaka";
-			isSummaryHidden = false;
-		} else {
-			summary.innerHTML = "{{ .Get 0 }}";
-			isSummaryHidden = true;
-		}
-	}
-</script>-->
+  document.body.innerHTML = windowContent;
+  window.print();
+  document.body.innerHTML = originalContent;
+});
+</script>

@@ -6701,7 +6701,7 @@ summary#summary::marker {
 }
 
 details[open] summary:before {
-  content: "Tillbaka " !important;
+  content: "Stäng " !important;
 }
 
 details[open] summary {
@@ -6722,5 +6722,15 @@ details[open] summary {
   letter-spacing: 0.2px;
   width: fit-content;
 }
+
+
+@media print {
+  @page {
+    padding: 3cm;
+    margin: 3cm;
+  }
+}
+
+
 
 
