@@ -1,15 +1,14 @@
 ---
 title: "Hosted Server vs IaaS"
+section: "blogg"
 date: "2023-02-13"
 publishDate: "2023-01-26"
 intro: "Lär dig om skillnaden mellan hosted server och IaaS (Infrastructure as a Service) och upptäck varför IaaS kan vara en bättre lösning för dina behov."
 draft: false
 tags: ["Svenska"]
 showthedate: true
-card: ""
-eventbild: ""
+card: "safespring_card_39.jpg"
 socialmediabild: ""
-section: ""
 language: "Se"
 toc: ""
 sidebarlinkname: "Läs om Safespring IaaS"
