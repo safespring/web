@@ -1,12 +1,19 @@
-##
+#
 
-{{< author-gabriel >}}
+<div class="author-container">
+  <div class="author-image" style="background-image: url(/img/author/gabriel-paues.jpg)"></div>
+  <div class="author-info">
+    <p class="author-name">Gabriel Paues</p>
+    <p class="author-title">Cloud Architect</p>
+  </div>
+</div>
 
 ## Safespring Backup: En fullständig uppdatering av användarportalen
 
-{{< ingress >}} 
+<div class="ingress">
+	<p>
 Safespring Backup bygger på den mycket väl etablerade lösningen Spectrum Protect från IBM. Den har många styrkor, som hög säkerhet, utmärkt skalbarhet och livscykelautomatisering av data. 
-{{< /ingress >}}
+</p></div>
 
 Spectrum Protect kan skydda obegränsat antal Terabyte av data med minimal administrativ ansträngning.
 
@@ -24,21 +31,21 @@ För att lösa detta har Safespring tagit fram en användarportal och API-bro f�
 
 ## Nyheter och fördelar
 
-Med vår relansering av Safespring Backup introducerar vi en fullständig omarbetning av användargränssnittet. Lösningen bygger på Auwau Cloutility-produkten med funktioner som:
+Med vår relansering av Safespring Backup introducerar vi en fullständig omarbetning av användargränssnittet. Lösningen bygger på Auwau Cloutility med funktioner som:
 
-- Självbetjäning för slutanvändare med möjlighet att skapa nya användare utan att kontakta Safespring och tilldela roller och privilegier till användare.
+- Självbetjäning med möjlighet att skapa nya användare utan att kontakta Safespring och tilldela roller och privilegier till dem.
 - Multi-tenancy med möjlighet att skapa hierarkier och användare med rollbaserad åtkomst till olika delar av hierarkin. Detta gör det möjligt för en administratör att delegera olika servrar till olika delar av organisationen.
 - Provisioning där administratören kan definiera processen med standardinställningar för att låta användare hantera sin egen aktivering av säkerhetskopiering enkelt.
-- Avancerad, men enkel att använda, rapportmotor som gör det enkelt att följa upp statusen för alla säkerhetskopieringar som körs. Det är också möjligt att ställa in scheman för att skicka rapporter vid specifika intervaller till specifika e-postadresser.
+- Avancerad (men enkel att använda) rapportmotor som gör det möjligt att följa upp statusen för alla säkerhetskopieringar som körs. Det är också möjligt att ställa in scheman för att skicka rapporter vid specifika intervaller till specifika e-postadresser.
 - REST API gör det möjligt att göra allt du kan göra i webbanvändargränssnittet med API-anrop för att automatisera din uppställning ännu mer.
 
 ### Skydd mot ransomware
 
-Safespring Backup använder en låsningsmekanism på varje nod som registrerar sig för att använda tjänsten. Denna mekanism är designad för att förhindra att säkerhetskopieringsagenten tar bort säkerhetskopieringar innan en förinställd behållningstid har gått. Denna behållningstid är inställd på ett visst antal dagar, under vilka säkerhetskopieringarna hålls säkra och säkra.
+Safespring Backup använder en låsningsmekanism på varje nod som registrerar sig för att använda tjänsten. Denna mekanism är designad för att förhindra att säkerhetskopieringsagenten tar bort säkerhetskopieringar innan en förinställd behållningstid har gått. Denna behållningstid är inställd på ett visst antal dagar, under vilka säkerhetskopieringarna hålls extra säkra.
 
 Genom att implementera denna mekanism kan vi säkerställa att även vid en ransomwareattack skulle angriparen inte kunna ta bort alla säkerhetskopieringar från servern innan den krypterar datan lokalt. Detta beror på att säkerhetskopieringarna är låsta och inte kan tas bort förrän behållningstiden har passerat.
 
-Förutom detta tillhandahåller mekanismen också en ytterligare skyddsskikt för att säkerställa dataåterställning vid en attack. Genom att hålla flera säkerhetskopier tillgängliga kan vi återställa data till en punkt innan angreppet inträffade, vilket minimerar påverkan av angreppet på våra kunder.
+Förutom detta tillhandahåller mekanismen också en ytterligare skyddsskikt för att säkerställa dataåterställning vid en attack. Genom att hålla flera säkerhetskopior tillgängliga kan vi återställa data till en punkt innan angreppet inträffade, vilket minimerar påverkan av angreppet på våra kunder.
 
 Sammantaget hjälper användningen av denna mekanism oss att erbjuda en säkrare och mer pålitlig säkerhetskopieringstjänst för våra kunder, och är ett viktigt steg i skydd mot den växande hotbilden från ransomwareangrepp.
 
@@ -46,6 +53,6 @@ Sammantaget hjälper användningen av denna mekanism oss att erbjuda en säkrare
 
 Med vår relansering av Safespring Backup tar Safespring ett jättesteg framåt för att förbättra användarupplevelsen och användarvänligheten för att hantera dina säkerhetskopieringar med Safespring. Med pålitligheten i Spectrum Protect kombinerat med en fullt utvecklad självbetjäningsportal för att köra dina säkerhetskopieringar har det aldrig varit enklare. Med en fullständig REST API är automatisering av olika administrativa uppgifter möjlig.
 
-Med Safespring Backup får du en säker men enkel att använda lösning för att hantera alla dina säkerhetskopieringar.
+Med Safespring Backup får du en säker lösning (men enkel att använda) för att hantera alla dina säkerhetskopieringar.
 
 
