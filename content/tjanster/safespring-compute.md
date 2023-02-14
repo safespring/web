@@ -26,6 +26,7 @@ section: "Public Cloud"
 {{< youtube "iYDi_Hz7A74" >}}
 
 ## Virtuella maskiner till er tjänst
+
 <div class="ingress"><p>En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar.</p></div>
 
 Safespring är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
