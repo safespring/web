@@ -26,7 +26,7 @@ section: "Public Cloud"
 
 {{< readfile "Solution Brief" "/content/solution-brief/safespring-backup-portal-sv-more.md" >}}
 
-{{< youtube "JCXm-Adpf40">}}
+{{< youtube "JCXm-Adpf40" >}}
 
 ## Backup som tjänst
 
