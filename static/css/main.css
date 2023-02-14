@@ -5420,11 +5420,15 @@ ol li::before {
 		border-radius: 10px;
 	}
 
+	.accordion-box button {
+		white-space: normal !important;
+	}
+
 	.accordion {
 		background-color: #E9F2F6;
 		color: #195f8c !important;
 		cursor: pointer !important;
-		padding: 18px 18px 14px 18px !important;
+		padding: 18px 18px 14px 35px !important;
 		width: 100%;
 		height: 100%;
 		border: none !important;
@@ -5434,6 +5438,8 @@ ol li::before {
 		font: 300 16px/1.2 var(--hind-font) !important;
 		border-radius: 10px;
 		text-transform: none;
+		position: relative;
+		padding-left: 30px;
 	}
 
 	.active-utbildning {
@@ -5441,11 +5447,16 @@ ol li::before {
 	}
 
 	.accordion:after {
-		content: '\002B' !important;
-		color: #19F064 !important;
-		font-weight: bold !important;
-		float: left !important;
-		margin-right: 15px !important;
+		content: '\002B';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		/* Flytta elementet vertikalt med 50% av sin höjd */
+		color: #19F064;
+		font-weight: bold;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 
 	.active-utbildning:after {
