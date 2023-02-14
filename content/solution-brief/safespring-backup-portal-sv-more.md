@@ -27,7 +27,7 @@ För att lösa detta har Safespring tagit fram en användarportal och API-bro f�
 
 Även om den gamla portalen var funktionsduglig, saknade den dashboards för status och möjligheten för kunder att lägga till sina egna användarkonton. Användare kunde inte skapa sina egna hierarkier för att förenkla hanteringen av olika grupper av servrar som säkerhetskopieras.
 
-![Safesprings nya backup-portal](/img/safespring-backup-portal.png)
+![Safesprings nya backup-portal](/img/safespring-backup-portal.webp)
 
 ## Nyheter och fördelar
 

@@ -1,7 +1,4 @@
-
 <div class="iframe-aspect-ratio">
-<iframe id="ytplayer" type="text/html" width="1920" height="1080"
-src="https://www.youtube.com/embed/{{ index .Params 0 }}"
-frameborder="0" allowfullscreen>
-</iframe>
+<iframe id="ytplayer" class="lazyload" data-src="https://www.youtube.com/embed/{{ index .Params 0 }}"
+width="1920" height="1080" frameborder="0" allowfullscreen></iframe>
 </div>
