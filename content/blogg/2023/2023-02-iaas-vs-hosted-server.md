@@ -23,10 +23,10 @@ Letar du efter den bästa hosted servern för dina program eller tjänster? Varf
 
 I denna artikel tittar vi närmare på vad en hosted server och IaaS är, samt varför IaaS kan vara en bättre lösning för dina behov, speciellt när det kommer till hosting and server.
 
-## Hosted Server
+## Vad är en Hosted Server?
 En hosted server är en tjänst där en extern leverantör tillhandahåller en fysisk server som är placerad i deras datacenter. Kunden har tillgång till servern via ett webbgränssnitt och får en viss mängd bandbredd, minne och lagringskapacitet. Kunden äger inte själv servern och är inte ansvarig för dess underhåll.
 
-## Infrastructure as a Service (IaaS)
+## Vad är Infrastructure as a Service (IaaS)?
 IaaS är en tjänst där en leverantör tillhandahåller en virtuell infrastruktur som inkluderar virtuella servrar, lagring, nätverk och andra resurser som kunden behöver för att driva sina program eller tjänster. Kunden har kontroll över virtuella resurserna och kan skala upp eller ned beroende på sina behov. Kunden äger inte själv den fysiska infrastrukturen, men är ansvarig för driften av den virtuella infrastrukturen.
 
 ### Fördelar med IaaS
