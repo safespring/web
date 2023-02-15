@@ -1139,7 +1139,6 @@ color: var(--unCheckedColor);
 		.main-default-single {
 			flex-flow: row wrap !important;
 			padding: 10% !important;
-
 		}
 		.webinar-default-single {
 			margin: 0 0 5% 0;
