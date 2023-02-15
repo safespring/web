@@ -16,8 +16,7 @@ sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
 ---
 
-{{< youtube _uWqI_1Yt-M >}}
-
+![Safespring provides STACKn, a fully managed PostgreSQL service that runs on our infrastructure.](/img/graphics/safespring-stackn_serve_overview.webp)
 
 {{< ingress >}}
 Safespring provides STACKn, a fully managed PostgreSQL service that runs on our infrastructure. 
