@@ -3353,6 +3353,7 @@ pre > code {
 	;
 	overflow: hidden;
 	border-radius: 15px;
+	webkit-border-radius: 15px;
 	width: 350px;
 }
 
