@@ -79,7 +79,7 @@
 				<div class="tf-items-container">
 					{{ range $pages.ByPublishDate.Reverse }}
 					<div class="content-container tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}" data-section="{{ .Section }}" data-authors="{{ with .Params.author }}{{ if eq ( printf "%T" . ) "string" }}{{ . | replaceRE "[.]" "_" | urlize }}{{ else if eq ( printf "%T" . ) "[]string" }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{end}}{{end}}{{else}}no-author{{end}}">
-							{{ .Render "li-latest"}}
+						{{ .Render "li-latest"}}
 					</div>
 					{{ end }}
 				</div>

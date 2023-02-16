@@ -3352,8 +3352,14 @@ pre > code {
 	0px 26px 46px rgba(0, 0, 0, -0.006)
 	;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 15px;
+	webkit-border-radius: 15px;
 	width: 350px;
+}
+
+.content-container * {
+	cursor: pointer !important;
+
 }
 .image-container {
 	display: flex;
@@ -4265,6 +4271,10 @@ ol li::before {
 		box-sizing: inherit;
 	}
 
+	.pointer {
+		cursor: pointer !important;
+	}
+
 	@media only screen and (max-device-width: 750px) {
 
 	}
@@ -4273,6 +4283,7 @@ ol li::before {
 		margin: 0;
 		padding: 0;
 	}
+
 
 	.body, .text-light-black {
 		color: rgba(50, 50, 50, 0.8);
@@ -4364,26 +4375,88 @@ ol li::before {
 		font-size: 1.5rem;
 	}
 
+	.img-250>img {
+		height: 250px !important;
+		width: auto;
+	}
+
 	.blogg-card-title {
 		font-size: 30px;
 		line-height: 1.1;
+	}
+
+	.blogg-card-flag {
+		width: 20px;
+	}
+
+	.blogg-card-wapper {
+		padding: 5% 15%;
 	}
 
 	.blogg-card-link {
 		padding: 0 50px 50px 50px;
 	}
 
+	.flex-center {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: flex-start;	
+	}
+
+	.blogg-card-tagg-container-webinar {
+	    display: flex;
+	    align-items: center;
+	    gap: 10px;
+	    background-color: #FFEFE5;
+	    padding: 5px 15px 5px 5px;
+	    border-radius: 100px;
+	    margin-top: -20px;
+	    border: solid 7px white;
+	}
+
+	.blogg-card-tagg-container {
+	    display: flex;
+	    align-items: center;
+	    gap: 10px;
+	    background-color: #E6FBE9;
+	    padding: 5px 15px 5px 5px;
+	    border-radius: 100px;
+	    margin-top: -20px;
+	    border: solid 7px white;
+	}
+
+	.blogg-card-tagg-container-tech {
+	    display: flex;
+	    align-items: center;
+	    gap: 10px;
+	    background-color: #FFFFF;
+	    border-radius: 100px;
+	    margin-top: -20px;
+	}
+
+	.blogg-card-tagg-container-solution-brief {
+	    display: flex;
+	    align-items: center;
+	    gap: 10px;
+	    background-color: #E8EFF3;
+	    padding: 5px 15px 5px 5px;
+	    border-radius: 100px;
+	    margin-top: -20px;
+	    border: solid 7px white;
+	}
+
 	.webinar-card-link {
-		margin: 50px 0 0 0 !important;
-		background-color: var(--button-color);
-		border-radius: 50px;
-		padding: 10px 25px 8px 25px !important;
-		text-align: center;
 		font: var(--heavy-weight) 16px var(--hind-font);
-		color: var(--text-color);
+		color: var(--button-color);
 		text-transform: uppercase;
-		white-space: nowrap;
-		width: fit-content;
+		margin: 20px 0;
+	}
+
+	.webinar-card-link:after {
+		font: var(--fa-font-solid);
+		content: "\f04b";
+		margin: 0 0 0 10px;
 	}
 
 	.blogg-card-image {
@@ -4414,38 +4487,62 @@ ol li::before {
 
 	.blogg-card-section {
 		font-size: 13px;
-		margin-right: 5px;
-		margin-top: 3px;
+		margin-top: 1px;
 		font-weight: 600;
 	}
+
+	.blogg-card-section:after {
+		font: var(--fa-font-solid);
+		content: "\f02d";
+		margin: 0 0 0 10px;
+	}
+
+	.blogg-card-section-solution-brief {
+		color: #195F8C;
+		margin-top: 1px;		
+		font-size: 13px;
+		font-weight: 600;
+	}
+
+	.blogg-card-section-solution-brief:after {
+		font: var(--fa-font-solid);
+		content: "\f672";
+		margin: 0 0 0 10px;
+	}
+
+	.blogg-card-section-webinar:after {
+		font: var(--fa-font-solid);
+		content: "\f03d";
+		margin: 0 0 0 10px;
+	}
+
 	.blogg-card-section-tech {
 		color: #3C9BCD;
+		margin-top: 1px;
 		font-size: 13px;
 		margin-right: 5px;
-		margin-top: 3px;
 		font-weight: 600;
 	}
 
 	.blogg-card-section-webinar {
 		color: #FA690F;
+		margin-top: 1px;
 		font-size: 13px;
-		margin-right: 5px;
-		margin-top: 3px;
 		font-weight: 600;
+
 	}
 
 	.blogg-card-section-whitepaper {
 		color: #32CD32;
 		font-size: 13px;
 		margin-right: 5px;
-		margin-top: 3px;
 		font-weight: 600;
 	}
 
 	.blogg-card-date {
 		font-size: 13px;
 		margin-right: 5px;
-		margin-top: 3px;
+		margin-bottom: 0 !important;
 		font-weight: 400;
 		color: #888888;
 	}
@@ -6616,78 +6713,78 @@ th:last-child {
 
 /* Balanced text */
 
-      .balance-text {
-        visibility: hidden;
-      }
+.balance-text {
+	visibility: hidden;
+}
 
-      @media (scripting: none) {
-        .balance-text {
-          visibility: visible;
-        }
-      }
+@media (scripting: none) {
+	.balance-text {
+		visibility: visible;
+	}
+}
 
-      @supports (text-wrap: balance) {
-        .balance-text {
-          text-wrap: balance;
-          visibility: visible;
-        }
-      }
+@supports (text-wrap: balance) {
+	.balance-text {
+		text-wrap: balance;
+		visibility: visible;
+	}
+}
 
 /* Läs mer */
 
 details[open] {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;
-    z-index: 9999;
-    background-color: rgb(0, 0, 0, .0);
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    transition: 0.3s ease-out;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	z-index: 9999;
+	background-color: rgb(0, 0, 0, .0);
+	backdrop-filter: blur(20px) !important;
+	-webkit-backdrop-filter: blur(20px) !important;
+	transition: 0.3s ease-out;
 
-  }
+}
 
-  details[open]>div {
-  	transition: 0.5s ease-out;
+details[open]>div {
+	transition: 0.5s ease-out;
 	box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.10);
-    z-index: 9999;
-    background-color: white;
-    max-width: 800px;
-    padding: 100px;
-    margin: 5% auto;
-    border-radius: 20px;
-  }
-
-  @media screen and (max-width: 1100px){
-  	  details[open]>div {
-  	  	margin: 10%;
-  }
-  details[open] summary {
-  	margin: 15% !important;
-  }
-  details[open] summary:before {
-  content: "Tillbaka " !important;
-}
+	z-index: 9999;
+	background-color: white;
+	max-width: 800px;
+	padding: 100px;
+	margin: 5% auto;
+	border-radius: 20px;
 }
 
-  @media screen and (max-width: 600px){
-  	  details[open]>div {
-  	  	margin: 5% !important;
-  	  	padding: 5% !important;
-  }
-  details[open] summary {
-  	margin: 0 auto !important;
-  	top: 90% !important;
-  	float: none !important;
-  }
+@media screen and (max-width: 1100px){
+	details[open]>div {
+		margin: 10%;
+	}
+	details[open] summary {
+		margin: 15% !important;
+	}
+	details[open] summary:before {
+		content: "Tillbaka " !important;
+	}
+}
+
+@media screen and (max-width: 600px){
+	details[open]>div {
+		margin: 5% !important;
+		padding: 5% !important;
+	}
+	details[open] summary {
+		margin: 0 auto !important;
+		top: 90% !important;
+		float: none !important;
+	}
 }
 
 
-  summary {
-    cursor: pointer;
+summary {
+	cursor: pointer;
 	background-color: var(--link-color);
 	border-radius: 50px;
 	border: none;
@@ -6703,42 +6800,42 @@ details[open] {
 }
 
 summary::-webkit-details-marker {
-  content: "";
+	content: "";
 }
 
 summary#summary::marker {
-  content: "";
+	content: "";
 }
 
 details[open] summary:before {
-  content: "Stäng " !important;
+	content: "Stäng " !important;
 }
 
 details[open] summary {
 	content: none !important;
-  margin: 5%;
-  position: sticky;
-  top: 10%;
-  float: right;
-  background-color: var(--link-color);
-  border-radius: 50px;
-  border: none;
-  padding: 10px 25px 8px 25px;
-  text-align: center;
-  font: var(--heavy-weight) 13px/1 var(--hind-font);
-  color: var(--text-color);
-  text-transform: uppercase;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
-  width: fit-content;
+	margin: 5%;
+	position: sticky;
+	top: 10%;
+	float: right;
+	background-color: var(--link-color);
+	border-radius: 50px;
+	border: none;
+	padding: 10px 25px 8px 25px;
+	text-align: center;
+	font: var(--heavy-weight) 13px/1 var(--hind-font);
+	color: var(--text-color);
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 0.2px;
+	width: fit-content;
 }
 
 
 @media print {
-  @page {
-    padding: 3cm;
-    margin: 3cm;
-  }
+	@page {
+		padding: 3cm;
+		margin: 3cm;
+	}
 }
 
 
