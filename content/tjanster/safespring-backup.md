@@ -21,7 +21,7 @@ socialmedia: "safespring-backup.jpg"
 aliases:
     - /backup/
     - /safespring-backup/
-section: "Public Cloud"
+section: "Public Cloud" 
 ---
 
 {{< readfile "Solution Brief" "/content/solution-brief/safespring-backup-portal-sv-more.md" >}}
