@@ -3355,6 +3355,11 @@ pre > code {
 	border-radius: 15px;
 	width: 350px;
 }
+
+.content-container * {
+	cursor: pointer !important;
+
+}
 .image-container {
 	display: flex;
 	height: 250px;
@@ -4265,6 +4270,10 @@ ol li::before {
 		box-sizing: inherit;
 	}
 
+	.pointer {
+		cursor: pointer !important;
+	}
+
 	@media only screen and (max-device-width: 750px) {
 
 	}
@@ -4273,6 +4282,7 @@ ol li::before {
 		margin: 0;
 		padding: 0;
 	}
+
 
 	.body, .text-light-black {
 		color: rgba(50, 50, 50, 0.8);

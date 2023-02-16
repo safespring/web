@@ -1,5 +1,5 @@
 <a href="{{ .RelPermalink }}">
-  <div class='fill-available-space img-250 {{ if eq .Section "webinar" }}blue-hover-webinar flex-center{{ else }}{{ if eq .Section "solution-brief" }}blue-hover-whitepaper flex-center{{ else }}{{ if eq $.Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex{{ else }}blue-hover-blogg flex-center{{ end }}{{ end }}{{ end }}'>
+  <div class='fill-available-space img-250 pointer {{ if eq .Section "webinar" }}blue-hover-webinar flex-center{{ else }}{{ if eq .Section "solution-brief" }}blue-hover-whitepaper flex-center{{ else }}{{ if eq $.Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex{{ else }}blue-hover-blogg flex-center{{ end }}{{ end }}{{ end }}'>
 
     {{ if eq $.Params.section "blogg" }}
     <img class="lazyload" data-src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">
