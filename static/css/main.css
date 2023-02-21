@@ -156,8 +156,7 @@ h2:first-child {
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+	width: 100%;
 }
 
 p > img {
