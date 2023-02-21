@@ -1,5 +1,3 @@
-  var cookieSettingsLink = document.getElementById('cookie-settings-link');
-  cookieSettingsLink.addEventListener('click', function(event) {
 // Lägg till statistiskt script
 window.addEventListener('CookieConsentGiven', function (event) {
   if (cookieTractor.consentGivenFor('statistical')) {
@@ -48,4 +46,3 @@ window.addEventListener('CookieConsentRevoked', function (event) {
     upsales.parentNode.removeChild(upsales);
   }
 }, false);
-  });
