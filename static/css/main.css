@@ -150,6 +150,10 @@ h2:first-child {
 	padding-top: 0;
 }
 
+img[Attributes Style] {
+  aspect-ratio: auto 640 / 360;
+}
+
 img {
 	width: 100%;
 	height: auto;
