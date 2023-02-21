@@ -5,7 +5,7 @@ section: "Public Cloud"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
 cardicon: "fak fa-safespring-s3"
-cardcolor: "#FA690F"
+cardcolor: "#f4670f"
 cardorder: "2"
 date: 2023-02-15
 draft: false

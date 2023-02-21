@@ -4,7 +4,7 @@ language: "En"
 documentation: "Storage"
 cardtitle: "Storage"
 cardicon: "fak fa-safespring-s3"
-cardcolor: "#FA690F"
+cardcolor: "#f4670f"
 cardorder: "2"
 date: 2020-07-06T09:42:10+02:00
 draft: false

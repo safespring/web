@@ -1,10 +1,10 @@
 :root {
 	--main-color: #195F8C;
 	--heading-color: #195F8C;
-	--button-color: #FA690F;
-	--link-color: #FA690F;
+	--button-color: #f4670f;
+	--link-color: #f4670f;
 	--alt-color: #323232;
-	--text-color: #FAFEFE;
+	--text-color: #FFF;
 	--content-color: #EEF2F4;
 	--web-green-color: #19F064;
 	--middle-blue-color: #417DA5;
@@ -66,7 +66,7 @@ hr {
 }
 
 a::selection {
-	color: #fafefe;
+	color: #FFF;
 	background: #FA690F;
 }
 
@@ -1518,6 +1518,18 @@ color: var(--unCheckedColor);
 	.safespring-footer-menu li {
 		font: 20px/22px var(--mon-font);
 		color: var(--main-color) !important;
+	}
+
+	@media screen and (max-width: 600px) {
+		.safespring-footer-menu li {
+		font: 20px/45px var(--mon-font);
+	}
+
+	.safespring-footer-menu li a {
+		background-color: #195F8C10;
+		padding: 10px 15px;
+		border-radius: 10px;
+	}
 	}
 
 	.safespring-footer-menu li a{
