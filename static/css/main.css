@@ -1607,7 +1607,23 @@ color: var(--unCheckedColor);
 		.safespring-footer-copyright p {
 			font: 300 16px/1 var(--mon-font);
 		}
-	}
+
+		.safespring-footer-information-menu a {
+			font: 300 16px/45px var(--mon-font);
+			color: var(--main-color);
+			display: initial;
+			background-color: #195F8C10;
+			padding: 10px 15px;
+			border-radius: 10px;
+			width: 100%;
+		}
+		.safespring-footer-third {
+			align-items: flex-start;
+		}
+		.safespring-footer-information-menu>ul>li>a::before {
+			content: none;
+		}
+}
 
 	/* END - SAFESPRING FOOTER */
 
