@@ -150,8 +150,13 @@ h2:first-child {
 	padding-top: 0;
 }
 
+.content-default-single img {
+	max-width: 700px;
+	height: auto;
+}
+
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 

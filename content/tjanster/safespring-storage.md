@@ -48,11 +48,3 @@ Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som repl
 {{% /accordion %}}
 
 {{% accordion-script %}}
-
-{{< distance >}}
-
-<a href="/solution-brief/immutable-storage/">
-    <img style="border-radius: 10px;" alt="Immutable Objects Solution Brief" src="/img/blogg/socialmedia/safespring_social_38.gif">
-</a>
-
-{{< distance >}}
