@@ -1,10 +1,10 @@
 :root {
 	--main-color: #195F8C;
 	--heading-color: #195F8C;
-	--button-color: #FA690F;
-	--link-color: #FA690F;
+	--button-color: #f4670f;
+	--link-color: #f4670f;
 	--alt-color: #323232;
-	--text-color: #FAFEFE;
+	--text-color: #FFF;
 	--content-color: #EEF2F4;
 	--web-green-color: #19F064;
 	--middle-blue-color: #417DA5;
@@ -66,7 +66,7 @@ hr {
 }
 
 a::selection {
-	color: #fafefe;
+	color: #FFF;
 	background: #FA690F;
 }
 
@@ -152,6 +152,7 @@ h2:first-child {
 
 img {
 	width: 100%;
+	height: auto;
 }
 
 p > img {
@@ -1520,6 +1521,18 @@ color: var(--unCheckedColor);
 		color: var(--main-color) !important;
 	}
 
+	@media screen and (max-width: 600px) {
+		.safespring-footer-menu li {
+		font: 20px/45px var(--mon-font);
+	}
+
+	.safespring-footer-menu li a {
+		background-color: #195F8C10;
+		padding: 10px 15px;
+		border-radius: 10px;
+	}
+	}
+
 	.safespring-footer-menu li a{
 		font: 300 16px/23px var(--mon-font);
 		color: var(--main-color) !important;
@@ -1595,7 +1608,23 @@ color: var(--unCheckedColor);
 		.safespring-footer-copyright p {
 			font: 300 16px/1 var(--mon-font);
 		}
-	}
+
+		.safespring-footer-information-menu a {
+			font: 300 16px/45px var(--mon-font);
+			color: var(--main-color);
+			display: initial;
+			background-color: #195F8C10;
+			padding: 10px 15px;
+			border-radius: 10px;
+			width: 100%;
+		}
+		.safespring-footer-third {
+			align-items: flex-start;
+		}
+		.safespring-footer-information-menu>ul>li>a::before {
+			content: none;
+		}
+}
 
 	/* END - SAFESPRING FOOTER */
 

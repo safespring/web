@@ -9,9 +9,25 @@ sidebarlinkname: "Miljöpolicy (pdf)"
 sidebarlinkurl: "/documents/safespring-environment-policy-2019.pdf"
 ---
 
+<img style="max-width: 300px;" src="https://api.thegreenwebfoundation.org/greencheckimage/www.safespring.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+
+{{< ingress >}}
+Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan. Ett viktigt steg vi har tagit är att säkerställa att våra datacenter använder 100% förnyelsebar energi. 
+{{< /ingress >}}
+
+Genom att välja förnyelsebar energi undviker vi koldioxidutsläpp som annars skulle vara skadliga för miljön.
+
+För att bekräfta vår hållbarhetsprestanda, har vi valt att låta våra tjänster certifieras av "The Green Web Foundation". Denna organisation arbetar för att stärka internet som en grön plats och certifierar företag som använder förnybar energi för sin webbsida och sina digitala tjänster. Att ha våra tjänster certifierade av The Green Web Foundation är ett steg i rätt riktning för att bli en grönare organisation.
+
+Men det är inte bara vår användning av förnybar energi som gör oss till en hållbar verksamhet. Alla våra datacenter är designade för att ha ett PUE under 1,2. PUE står för "Power Usage Effectiveness" och är en viktig faktor för att mäta energieffektiviteten för ett datacenter. En PUE på under 1,2 innebär att vi använder minimal mängd energi för att driva våra datacenter, vilket är en viktig del av att minska vår miljöpåverkan.
+
+Vi på Safespring kommer fortsätta att arbeta för att minska vår miljöpåverkan och fortsätta att vara en hållbar verksamhet. Vi är stolta över vårt miljöarbete och vi är fast beslutna att göra vår del för att skydda vår planet
+
 ## Safesprings hållbarhetsarbete
 
-<div class="ingress"><p>Safesprings mål är att bidra till en renare värld genom att leverera infrastrukturtjänster av hög kvalitet till våra kunder i Norden, så att de kan producera sina tjänster utan egen investering i hårdvara. Detta kommer att betyda lägre koldioxid-utsläpp.</p></div>
+{{< ingress >}}
+Safesprings mål är att bidra till en renare värld genom att leverera infrastrukturtjänster av hög kvalitet till våra kunder i Norden, så att de kan producera sina tjänster utan egen investering i hårdvara. Detta kommer att betyda lägre koldioxid-utsläpp.
+{{< /ingress >}}
 
 De företag som har mest att vinna på att införa den här typen av lösningar är många. Därför är de potentiella vinsterna betydande. Safespring använder dessa lösningar internt av samma anledning.
 
@@ -51,7 +67,9 @@ Safespring håller nere inköpen av datorer och tjänstetelefoner för att inte 
 
 ## Safesprings kontor och arbetsmiljö
 
-<div class="ingress"><p>Safesprings huvudkontor drivs av Castellum och ligger nära Stockholms tunnelbana, pendeltåg, tvärbana samt 14 olika bussar som finns inom några minuters gångväg.</p></div>
+{{< ingress >}}
+Safesprings huvudkontor drivs av Castellum och ligger nära Stockholms tunnelbana, pendeltåg, tvärbana samt 14 olika bussar som finns inom några minuters gångväg.
+{{< /ingress >}}
 
 Detta gör att Stockholms kollektivtrafik är det första alternativet för våra anställda. Castellum har ett aktivt miljöarbete och ett hållbart arbetssätt.
 
