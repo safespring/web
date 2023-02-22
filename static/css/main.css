@@ -2204,6 +2204,7 @@ color: var(--unCheckedColor);
 		flex-wrap: wrap;
 		justify-content: flex-end;
 		gap: 20% 0;
+		margin: auto;
 	}
 
 	@media only screen and (max-width: 900px) {
