@@ -3,7 +3,7 @@ title: "Safespring stödjer Europas självförsörjning på tech-området"
 date: "2023-02-22"
 publishDate: "2023-02-17"
 intro: "Läs om Safesprings stöd för Europas självförsörjning på tech-området. Safespring diskuterar vikten av ökad självförsörjningsgrad för att säkra organisationers och individers integritet och uppmuntrar till samarbete inom den europeiska tech-sektorn."
-draft: true
+draft: false
 tags: ["Svenska"]
 showthedate: true
 card: ""
@@ -13,7 +13,7 @@ section: "blogg"
 language: "Se"
 toc: ""
 sidebarlinkname: "Läs debattartikel"
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://www.altinget.se/artikel/europas-sjalvforsorjning-paa-techomraadet-maaste-bli-lika-prioriterad-som-elen"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
 ---
