@@ -6,7 +6,7 @@ intro: "Läs om Safesprings stöd för Europas självförsörjning på tech-omr�
 draft: false
 tags: ["Svenska"]
 showthedate: true
-card: ""
+card: "safespring_card_43.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
@@ -38,4 +38,8 @@ Vi stödjer fullt ut den debattartikel som nyligen publicerades på Altinget.se,
 
 - För att säkra Europas digitala suveränitet måste vi öka vår självförsörjningsgrad inom tech-sektorn.
 - Tech-sektorn bör prioriteras lika högt som el och metaller.
-- Ett ökat samarbete mellan europeiska företag och organisationer är nyckeln till att uppnå en hög sj
+- Ett ökat samarbete mellan europeiska företag och organisationer är nyckeln till att uppnå en hög självständighet.
+
+{{< distance >}}
+
+{{< custom-card image="/img/graphics/safespring-dabate.svg" text="Läs om Safesprings stöd för Europas självförsörjning på tech-området." cardtitle="Läs debattartikel"  linktext="Till artikeln" link="https://www.altinget.se/artikel/europas-sjalvforsorjning-paa-techomraadet-maaste-bli-lika-prioriterad-som-elen">}}
