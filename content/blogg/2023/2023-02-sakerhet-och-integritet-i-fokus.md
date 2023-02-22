@@ -3,17 +3,17 @@ title: "Safespring stödjer Europas självförsörjning på tech-området"
 date: "2023-02-22"
 publishDate: "2023-02-17"
 intro: "Läs om Safesprings stöd för Europas självförsörjning på tech-området. Safespring diskuterar vikten av ökad självförsörjningsgrad för att säkra organisationers och individers integritet och uppmuntrar till samarbete inom den europeiska tech-sektorn."
-draft: true
+draft: false
 tags: ["Svenska"]
 showthedate: true
-card: ""
+card: "safespring_card_43.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
 language: "Se"
 toc: ""
 sidebarlinkname: "Läs debattartikel"
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://www.altinget.se/artikel/europas-sjalvforsorjning-paa-techomraadet-maaste-bli-lika-prioriterad-som-elen"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
 ---
@@ -38,4 +38,8 @@ Vi stödjer fullt ut den debattartikel som nyligen publicerades på Altinget.se,
 
 - För att säkra Europas digitala suveränitet måste vi öka vår självförsörjningsgrad inom tech-sektorn.
 - Tech-sektorn bör prioriteras lika högt som el och metaller.
-- Ett ökat samarbete mellan europeiska företag och organisationer är nyckeln till att uppnå en hög sj
+- Ett ökat samarbete mellan europeiska företag och organisationer är nyckeln till att uppnå en hög självständighet.
+
+{{< distance >}}
+
+{{< custom-card image="/img/graphics/safespring-dabate.svg" text="Läs om Safesprings stöd för Europas självförsörjning på tech-området." cardtitle="Läs debattartikel"  linktext="Till artikeln" link="https://www.altinget.se/artikel/europas-sjalvforsorjning-paa-techomraadet-maaste-bli-lika-prioriterad-som-elen">}}
