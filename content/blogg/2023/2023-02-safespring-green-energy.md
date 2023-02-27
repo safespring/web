@@ -28,6 +28,6 @@ För att bekräfta vår hållbarhetsprestanda, har vi valt att låta våra tjän
 
 ![För att bekräfta vår hållbarhetsprestanda, har Safespring valt att låta våra tjänster certifieras av "The Green Web Foundation". ](/img/blogg/safespring-green-web.svg)
 
-Men det är inte bara vår användning av förnybar energi som gör oss till en hållbar verksamhet. Alla våra datacenter är designade för att ha ett PUE under 1,2. PUE står för "Power Usage Effectiveness" och är en viktig faktor för att mäta energieffektiviteten för ett datacenter. En PUE på under 1,2 innebär att vi använder minimal mängd energi för att driva våra datacenter, vilket är en viktig del av att minska vår miljöpåverkan.
+Men det är inte bara vår användning av förnybar energi som gör oss till en hållbar verksamhet. Alla våra datacenter är designade för att ha ett PUE under 1,3. PUE står för "Power Usage Effectiveness" och är en viktig faktor för att mäta energieffektiviteten för ett datacenter. En PUE på under 1,2 innebär att vi använder minimal mängd energi för att driva våra datacenter, vilket är en viktig del av att minska vår miljöpåverkan.
 
 Vi på Safespring kommer fortsätta att arbeta för att minska vår miljöpåverkan och fortsätta att vara en hållbar verksamhet. Vi är stolta över vårt miljöarbete och vi är fast beslutna att göra vår del för att skydda vår planet.
