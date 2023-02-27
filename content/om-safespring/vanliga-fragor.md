@@ -6,7 +6,7 @@ draft: false
 intro: "Våra datacenter matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom våra datacenter drivs till 100 procent med el från förnyelsebara energikällor."
 background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår säkerhet (pdf)"
-sidebarlinkurl: "/documents/safespring-datacenter-security-2019.pdf"
+sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
 
@@ -51,7 +51,7 @@ Fysisk tillgång till våra datacentra regleras av strikta säkerhetsprocedurer.
 
 För att säkerställa högsta säkerhetsnivå har Safespring en säkerhetsklassning av högsta graden enligt MSBs Tier 3. Datacentret är byggt enligt standarder som är specifikt designade för tillgänglighetskrav enligt Tier-3, MSBs högsta fysiska klassning för datacenter. Detta innefattar säkerhetsåtgärder som sex olika steg (taggtråd, fysiska vakter, olika säkerhetsnivåer innan man kommer till servrarna), övervakning via CCTV som sker dygnet runt, säkerhetsvakter, åtkomsthinder som slussar med fingeravtrycksläsare och kontaktlösa nyckelkort med biometriska läsare.
 
-För mer information om Safesprings säkerhet för datacentra, vänligen läs vårt dokument "Safespring Datacenter Security" på följande länk: [Safespring Datacenter Security](/documents/safespring-datacenter-security-2019.pdf).
+För mer information om Safesprings säkerhet för datacentra, vänligen läs vårt dokument "Safespring Datacenter Security" på följande länk: [Safespring Datacenter Security](/documents/safespring-datacenter-security.pdf).
 {{% /accordion %}}
 
 {{% accordion title="Redundans för strömförsörjning, kyling och nät?" %}}
@@ -61,7 +61,7 @@ Utrymmets temperatur ska inte tillåtas variera utanför temperaturgränserna +1
 
 En anordning för reglering av utrymmets luftfuktighet ska användas. Risker för vätskeläckage från kylanordning ska tas hänsyn till. Tilluft samt luft som passerar klimatutrustning ska filtreras. Dessa filter ska bytas regelbundet. Tilluftskanaler ska förses med rökdetektorer anslutna till brandspjäll eller automatiska fläktstopp. Luftomsättningen ska dimensioneras utifrån arbetsmiljökraven för att det antal personer som är tänkta att kunna vistas kontinuerligt i utrymmet. Nödkyla (ytterligare köldbärare) ska finnas tillgänglig för att säkerställa kontinuerlig drift. Kyleffekten hos kylanordningen för utrymmet ska utredas men bör dimensioneras med minst 2 kilowatt per kvadratmeter yta. 
 
-Läs mer om [Safespring Datacenter Security](/documents/safespring-datacenter-security-2019.pdf).
+Läs mer om [Safespring Datacenter Security](/documents/safespring-datacenter-security.pdf).
 {{% /accordion %}}
 
 {{% accordion title="Erbjuder ni DR-site?" %}}
