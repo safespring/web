@@ -15,7 +15,7 @@ Safespring leverer en lokalt basert sky bygget for morgendagens apper. Det gjør
 <br><br>
 <a target="_blank" href="/services/safespring-service-catalogue-2020.pdf" class="button">Service catalogue</a>
 
-<div class="flexcontainer-shortcode" style="background: var(--text-color);">
+<div class="flexcontainer-shortcode" style="">
 
 {{< services "No" >}}
 

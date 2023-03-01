@@ -14,7 +14,7 @@ Safespring delivers a locally based Cloud built for the apps of tomorrow. It ena
 
 {{< localbutton "Service catalogue" "/services/safespring-service-catalogue-2020.pdf" >}}
 
-<div class="flexcontainer-shortcode" style="background: var(--text-color);"> 
+<div class="flexcontainer-shortcode" style=""> 
 
 {{< services "En" >}}
  

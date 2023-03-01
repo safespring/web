@@ -120,7 +120,7 @@ Ceph, with the RadosGW implementation, is a proven solution for high scale objec
 ### Compute – OpenStack
 The OpenStack installation is small in comparison with the Ceph installation since it is primarily used to be able to run the virtual machines needed for Nextcloud and the Galera Cluster. If the university needs further resources for data processing the capacity can easily be increased.
 
-By having compute power close to the data, researchers will have the ability to process and do calculations on the data. The resources will be assigned with flavors, where some will be regular CPU resources and some GPU resources if the university has need for it and has GPU-cards installed in the instance. The instances will also come with fast, local NVME storage for high performance when processing the data.
+By having compute power close to the data, researchers will have the ability to process and do calculations on the data. The resources will be assigned with flavors, where some will be regular CPU resources and some GPU resources if the university has need for it and has GPU-cards installed in the instance. The instances will also come with fast, local NVMe storage for high performance when processing the data.
 
 ### Hardware Infrastructure
 The hardware infrastructure is based on standard i386 nodes placed in the university’s IT-environment. Most of the management is done remotely but in the case of physical work such as drive swaps and replacements the local IT-staff perform these assignments.
