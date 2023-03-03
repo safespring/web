@@ -59,9 +59,9 @@ Sometimes you would like to repartition this disk into several partitions  if th
 8. Mount the new partition by running the following command:  
 	```
 	bash# sudo mount /dev/sdaX /mnt
-	`
+	```
 9. Verify that the partition has been mounted by running the following command:  
 	```
 	bash# df -h
-	`
+	```
 10. Congratulations! You have successfully repartitioned the root filesystem and enabled XFS on the other partition using cloud-config.
