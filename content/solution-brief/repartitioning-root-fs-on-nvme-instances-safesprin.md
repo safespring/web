@@ -32,7 +32,7 @@ Sometimes you would like to repartition this disk into several partitions  if th
 1. Start by creating a new instance in OpenStack with a flavor in the l2-series to ensure that the node have local NVMe.
 2. During the instance creation process, on the "Configuration" tab, select "Manual" for the disk partitioning option.
 3. In the "Customization Script" field, enter the following cloud-config code: 
-	```
+	```yaml
 	#cloud-config
 	# Ubuntu 18.04+
 	resize_rootfs: false
@@ -52,16 +52,11 @@ Sometimes you would like to repartition this disk into several partitions  if th
 5. Click on "Launch Instance" to create the instance.
 6. Once the instance is launched, SSH into the instance using a tool like PuTTY.
 7. Check the disk partitions by running the following command. Create the new filesystem on the partition, in this case it is XFS. Ensure that the device number X below corresponds to the one from the listing from fdisk.
-	```
+	```shell
 	bash# sudo fdisk -l
 	bash# sudo mkfs.xfs /dev/sdaX 
 	```
-8. Mount the new partition by running the following command:
-	```
-	bash# sudo mount /dev/sdaX /mnt
-	```
-9. Verify that the partition has been mounted by running the following command:
-	```
-	bash# df -h
-	```
+8. Mount the new partition by running the following command:  
+`bash# sudo mount /dev/sdaX /mnt`
+9. Verify that the partition has been mounted by running the following command: `bash# df -h`
 10. Congratulations! You have successfully repartitioned the root filesystem and enabled XFS on the other partition using cloud-config.
