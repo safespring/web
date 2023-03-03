@@ -39,7 +39,7 @@ Välkommen till årets digitala uppdatering av Sunets molntjänster. Under tre w
 
 - Nya nätverksimplementationen Calico baserad på BGP för bättre skalbarhet och stabilitet.
 - Uppdaterad funktionalitet
-- Nya flavours med lokal disk (NVME) för de riktigt prestandakrävande applikationerna.
+- Nya flavours med lokal disk (NVMe) för de riktigt prestandakrävande applikationerna.
 - Demonstration av det nya gränssnittet och hur man startar en ny instans.
 - Kryptering
 

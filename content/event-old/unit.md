@@ -32,7 +32,7 @@ aliases:
 <div class="ingress"><p>Sesjon 1: Safespring’s new Compute platform.</p></div>
 
 I denne sesjonen vil vi snakke om kommende oppdateringer i Safesprings plattform.
-Spesielt vil vi nevne nye flavors med lokal NVME disk og AMD prosessor
+Spesielt vil vi nevne nye flavors med lokal NVMe disk og AMD prosessor
 
 - Vi vil gjøre en kort demonstrasjon av vårt nye GUI
 - Vi vil gå gjennom hovedpunktene i oppdatert prisliste
