@@ -51,7 +51,7 @@ Sometimes you would like to repartition this disk into several partitions  if th
 4. Modify the above code as per your requirements. You can change the partition size and file system according to your needs.
 5. Click on "Launch Instance" to create the instance.
 6. Once the instance is launched, SSH into the instance using a tool like PuTTY.
-7. Check the disk partitions by running the following command. Create the new filesystem on the partition, in this case it is XFS. Ensure that the device number X below corresponds to the one from the listing from fdisk.
+7. Check the disk partitions by running the following command. Create the new filesystem on the partition, in this case it is XFS. Ensure that the device number X below corresponds to the one from the listing of fdisk.
 	```shell
 	bash# sudo fdisk -l
 	bash# sudo mkfs.xfs /dev/sdaX 
