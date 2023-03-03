@@ -53,15 +53,15 @@ Sometimes you would like to repartition this disk into several partitions  if th
 6. Once the instance is launched, SSH into the instance using a tool like PuTTY.
 7. Check the disk partitions by running the following command. Create the new filesystem on the partition, in this case it is XFS. Ensure that the device number X below corresponds to the one from the listing from fdisk.
 	```
-   bash# sudo fdisk -l
-   bash# sudo mkfs.xfs /dev/sdaX 
+	bash# sudo fdisk -l
+	bash# sudo mkfs.xfs /dev/sdaX 
    ```
-   1. Mount the new partition by running the following command:
-   	 ```
-   	 bash# sudo mount /dev/sdaX /mnt
-   	 ```
-   1. Verify that the partition has been mounted by running the following command:
-   	 ```
-   	 bash# df -h
-   	 ```
+1. Mount the new partition by running the following command:
+	```
+	bash# sudo mount /dev/sdaX /mnt
+	```
+1. Verify that the partition has been mounted by running the following command:
+	```
+	bash# df -h
+	```
 1. Congratulations! You have successfully repartitioned the root filesystem and enabled XFS on the other partition using cloud-config.
