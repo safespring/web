@@ -24,7 +24,7 @@ Safespring deltar tillsammans med Sunet på den kommande CS3-konferensen som äg
 ### Men vad är egentligen CS3?
 CS3 (Collaboration Services for Scientific Computing) är en serie konferenser som äger rum vartannat år. Konferensen samlar ledande experter inom IT för forskning och akademiskt samarbete. Det är ett tillfälle att lära sig om de senaste trenderna inom teknologi, samarbete och molntjänster inom vetenskapligt samarbete.
 
-### Varför är det viktigt att Safespring deltar i CS3-konferensen?
+### Varför är det viktigt att Safespring deltar på CS3-konferensen?
 Som en ledande leverantör av molnbaserade tjänster för forskning och utbildning i Norden är Safespring dedikerade att stödja forsknings- och utbildningsgemenskapen genom att erbjuda högpresterande, säkra och kostnadseffektiva molntjänster. Genom att delta i konferenser som CS3, kan vi dela med oss av vår expertis och samarbeta med andra experter inom vetenskapligt samarbete för att utveckla och förbättra våra tjänster.
 
 {{< distance >}}
