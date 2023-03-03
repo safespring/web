@@ -48,6 +48,7 @@ Sometimes you would like to repartition this disk into several partitions  if th
 	  - [ growpart, /dev/sda, 1 ] 
 	  - [ resize2fs, /dev/sda1 ]
 	```
+	
 4. Modify the above code as per your requirements. You can change the partition size and file system according to your needs.
 5. Click on "Launch Instance" to create the instance.
 6. Once the instance is launched, SSH into the instance using a tool like PuTTY.
