@@ -406,6 +406,14 @@ blockquote p {
 	white-space: nowrap;
 	letter-spacing: 0.2px;
 	width: fit-content;
+	margin-right: 25px;
+	transition: all .3s ease;
+}
+
+.button:hover {
+	margin-right: 10px;
+	transition: all .3s ease;
+	padding-right: 20px;
 }
 
 .button:after {

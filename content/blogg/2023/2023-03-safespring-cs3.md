@@ -29,7 +29,10 @@ Som en ledande leverantör av molnbaserade tjänster för forskning och utbildni
 
 {{< distance >}}
 
-{{< custom-card image="/img/graphics/sunet-drive-pyramide.svg" text="Vi är stolta över att vara med och presentera Sunet Drive på CS3-konferensen och ser fram emot att diskutera de senaste trenderna inom vetenskapligt samarbete med våra kollegor." cardtitle="Presentation om Sunet Drive"  linktext="Till presentationen" link="https://indico.cern.ch/event/1210538/contributions/5207911/attachments/2603770/4496553/SunetDrive-SiteReport-CS3-2023.pptx.pdf" >}}
+{{% custom-card image="/img/graphics/sunet-drive-pyramide.svg" cardtitle="Presentation om Sunet Drive"  linktext="Till presentationen" link="https://indico.cern.ch/event/1210538/contributions/5207911/attachments/2603770/4496553/SunetDrive-SiteReport-CS3-2023.pptx.pdf" %}}
+Vi är stolta över att vara med och presentera Sunet Drive på CS3-konferensen och ser fram emot att diskutera de senaste trenderna inom vetenskapligt samarbete med våra kollegor.
+{{% /custom-card %}}
+
 
 {{< distance >}}
 
