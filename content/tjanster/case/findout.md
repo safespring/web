@@ -1,5 +1,5 @@
 ---
-title: "Flyttade till svensk molnlösning med bibehållen funktionalitet"
+title: "Från Google Cloud till Safespring med bibehållen funktionalitet"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
