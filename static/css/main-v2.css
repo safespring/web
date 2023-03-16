@@ -7016,7 +7016,7 @@ details[open] summary {
 /* Media query for smaller screens */
 @media (max-width: 550px) {
     .icon-block {
-       width: 110px;
+       width: 120px;
        height: 120px;
        padding: 10px;
        justify-content: space-evenly;
