@@ -3,7 +3,7 @@ title: "Safespring courses"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "We believe in building scalable software and infrastructure, and with the help of our courses you can learn what that means for you and your organization and how it can support your operations and further development as a successful company."
-background: "safespring_bilder_8.jpg"
+background: ""
 aliases:
     - /utbildning/
 ---
@@ -37,8 +37,8 @@ Two of our course packages is aimed for staff with overall technical overview bu
   <h3>Who should attend?</h3>
   <p>CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.</p>
   <h3>Duration</h3>
-  <p>1 day.</p>
-  <button id="button" onclick="window.location.href = '/tjanster/utbildning/cloud-strategy-for-top-level-managers/';">Learn more</button>
+  <p>1 day.
+  <a id="button" href='/tjanster/utbildning/cloud-strategy-for-top-level-managers/'>Learn more</a></p>
 </div>
 </div>
 
