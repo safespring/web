@@ -9,6 +9,7 @@ background: "safespring-blue-fade2.svg"
 darkmode: "off"
 sidebarimage: "safespring-petter.jpg"
 sidebartext: "Jag heter Petter Hylin och är din kontakt på Safespring. Ta gärna kontakt med mig om du har några frågor."
+draft: true
 sidebarphone: "073-533 65 21"
 socialmedia: ""
 sidebarlinkname: "Boka demo"
