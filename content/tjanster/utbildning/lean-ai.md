@@ -4,7 +4,7 @@ language: "En"
 date: 2019-10-01T16:07:06+02:00
 draft: true
 intro: "Vi tror att adoptera AI är en smidig startprocess. Som sådan handlar det lika mycket om människor som det handlar om teknik."
-background: "safespring-devops.jpg"
+background: ""
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"

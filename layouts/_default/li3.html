@@ -11,7 +11,9 @@
       {{ .Title }}
     </h1>
     {{ if .Params.intro }}
-    <p>{{ .Params.intro }}</p>
+    <p>
+      {{ .Params.intro }}
+    </p>
     {{ else }}{{ end }}
     {{ if .Params.sidebarlinkurl }}
     <div class="header-button">
@@ -19,7 +21,8 @@
         <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Params.sidebarlinkname }}
       </a>
       {{ if .Params.sidebarlinkurl2 }}
-      <a style="margin:25px 0 0 25px; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" id="text-button">{{ .Params.sidebarlinkname2 }}
+      <a style="margin:25px 0 0 0; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" id="text-button">
+        {{ .Params.sidebarlinkname2 }}
       </a>
       {{ end }}
     </div>

@@ -1,10 +1,18 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: "{{ .Date }}"
-draft: true
-tags: [""]
+intro: ""
+draft: false
+tags: ["Svenska"]
 showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
+section: "blogg"
+language: "Se"
+toc: ""
+sidebarlinkname: ""
+sidebarlinkurl: ""
+sidebarlinkname2: ""
+sidebarlinkurl2: ""
 ---

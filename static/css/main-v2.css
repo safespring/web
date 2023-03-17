@@ -1,3 +1,4 @@
+
 :root {
 	--main-color: #195F8C;
 	--heading-color: #195F8C;
@@ -388,6 +389,7 @@ blockquote p {
 	font: var(--heavy-weight) 16px var(--hind-font);
 	color: var(--text-color);
 	text-transform: uppercase;
+	border: 0;
 }
 
 .header-button {
@@ -406,6 +408,14 @@ blockquote p {
 	white-space: nowrap;
 	letter-spacing: 0.2px;
 	width: fit-content;
+	margin-right: 25px;
+	transition: all .3s ease;
+}
+
+.button:hover {
+	margin-right: 10px;
+	transition: all .3s ease;
+	padding-right: 20px;
 }
 
 .button:after {
@@ -6925,6 +6935,100 @@ details[open] summary {
 	}
 }
 
+/* Icon block 
 
+.icon-block {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 15px;
+    background-color: white;
+    padding: 40px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.icon-block p {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+
+.icon-block i {
+	font-size: 60px;
+	margin: 0;
+}
+
+.icon-block-container {
+	display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: center;
+}
+*/
+
+.icon-block {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 40px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-block p {
+	text-transform: uppercase;
+	font: 700 16px/1 var(--mon-font);
+	margin: 0;
+	text-align: center;
+}
+
+.icon-block i {
+	transition: ease .5s;
+	font-size: min(calc(3.5rem + 2vw), 70px);
+	margin: 0;
+}
+
+.icon-block-container {
+	display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.icon-block-link .icon-block{
+	transition: ease .2s;
+}
+
+.icon-block-link:hover .icon-block{
+	transform: scale(102%);
+	transition: ease .2s;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 550px) {
+    .icon-block {
+       width: 120px;
+       height: 120px;
+       padding: 10px;
+       justify-content: space-evenly;
+    }
+
+    .icon-block p {
+        font-size: 14px;
+    }
+    .icon-block i {
+	transition: ease .5s;
+	font-size: min(calc(2.5rem + 2vw), 70px);
+	margin: 0;
+}
+}
 

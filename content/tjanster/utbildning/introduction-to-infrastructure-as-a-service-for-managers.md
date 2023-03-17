@@ -4,7 +4,7 @@ language: "En"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "Overview and understanding from a management point of view enabling management and technical staff to form a common understanding."
-background: "safespring-devops.jpg"
+background: ""
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
