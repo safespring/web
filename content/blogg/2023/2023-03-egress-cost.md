@@ -5,7 +5,7 @@ intro: "Egress cost, eller utgående trafikkostnader, är en kostnad som ofta gl
 draft: false
 tags: ["Svenska"]
 showthedate: true
-card: "safespring_card_45.svg"
+card: "safespring_card_46.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
