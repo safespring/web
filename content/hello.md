@@ -9,7 +9,6 @@ background: "safespring-blue-fade2.svg"
 darkmode: "off"
 sidebarimage: "safespring-petter.jpg"
 sidebartext: "Jag heter Petter Hylin och är din kontakt på Safespring. Ta gärna kontakt med mig om du har några frågor."
-draft: true
 sidebarphone: "073-533 65 21"
 socialmedia: ""
 sidebarlinkname: "Boka demo"
@@ -28,12 +27,12 @@ Vi på Safespring är glada att du är intresserad av att lära dig mer om våra
 Safespring är den svenska publika molnplattformen som uppfyller europeiska dataskyddslagar. Vi erbjuder en säker och pålitlig plattform för våra kunder och deras data. Vi erbjuder en rad moln- och säkerhetstjänster, inklusive:
 
 {{< icon-block-container >}}
-	{{< icon-block icon="user-lock" text="Data suveränitet" link="#" color="#32cd32">}}
-	{{< icon-block icon="lock" text="Elastic IP för last-balanserare" link="#" color="#195F8C">}}
-	{{< icon-block icon="gauge-max" text="Snabb lokal disk till ECTP" link="#" color="#3C9BCD">}}
-	{{< icon-block icon="webhook" text="Powerful automation" link="#" color="#3C9BCD">}}
-	{{< icon-block icon="network-wired" text="Stabilt nätverk" link="#" color="#FA690F">}}
-	{{< icon-block icon="code" text="Öppna standarder" link="#" color="#32cd32">}}
+	{{< icon-block icon="map-location-dot" text="Safesprings Datacenter" link="#" color="#32cd32">}}
+	{{< icon-block icon="film" text="Se våra webcasts" link="#" color="#195F8C">}}
+	{{< icon-block icon="safespring-icon" text="Lär känna bolaget" link="#" color="#3C9BCD">}}
+	{{< icon-block icon="lightbulb-on" text="Läs Solution Briefs" link="#" color="#3C9BCD">}}
+	{{< icon-block icon="gavel" text="Läs om Schrems II" link="#" color="#FA690F">}}
+	{{< icon-block icon="code" text="Safespring & Kubernetes" link="#" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Företagsinformation
