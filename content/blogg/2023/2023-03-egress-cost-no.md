@@ -3,18 +3,18 @@ title: "Safespring tar ikke ut noen trafikkavgifter"
 date: "2023-03-20"
 intro: "Egress cost, eller utgående trafikkostnader, er en kostnad som ofte overses når man bruker infrastruktur som en tjeneste og er en vanlig innesperringsteknikk."
 draft: true
-tags: ["Svenska"]
+tags: ["Norsk"]
 showthedate: true
 card: "safespring_card_46.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Se"
+language: "No"
 toc: ""
 sidebarlinkname: "Book demo"
-sidebarlinkurl: "/demo/"
+sidebarlinkurl: "/no/demo/"
 sidebarlinkname2: "Kontakt oss"
-sidebarlinkurl2: "/kontakt/"
+sidebarlinkurl2: "/no/kontakt/"
 ---
 
 ![Safespring har en null egress kostnad for datatransfer](/img/blogg/safespring-zero-egress-cost.svg)
