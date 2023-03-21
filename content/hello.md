@@ -19,7 +19,6 @@ saas: ""
 aliases: ""
 ---
 
-
 {{< ingress >}}
 Vi på Safespring är glada att du är intresserad av att lära dig mer om våra moln- och säkerhetstjänster. Nedan hittar du en sammanfattning av Safespring och länkar till mer detaljerad information.
 {{< /ingress >}}
@@ -27,12 +26,12 @@ Vi på Safespring är glada att du är intresserad av att lära dig mer om våra
 Safespring är den svenska publika molnplattformen som uppfyller europeiska dataskyddslagar. Vi erbjuder en säker och pålitlig plattform för våra kunder och deras data. Vi erbjuder en rad moln- och säkerhetstjänster, inklusive:
 
 {{< icon-block-container >}}
-	{{< icon-block icon="map-location-dot" text="Safesprings Datacenter" link="#" color="#32cd32">}}
-	{{< icon-block icon="film" text="Se våra webcasts" link="#" color="#195F8C">}}
-	{{< icon-block icon="safespring-icon" text="Lär känna bolaget" link="#" color="#3C9BCD">}}
-	{{< icon-block icon="lightbulb-on" text="Läs Solution Briefs" link="#" color="#3C9BCD">}}
-	{{< icon-block icon="gavel" text="Läs om Schrems II" link="#" color="#FA690F">}}
-	{{< icon-block icon="code" text="Safespring & Kubernetes" link="#" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="#" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="#" color="#195F8C">}}
+	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="#" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="#" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="#" color="#FA690F">}}
+	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="#" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Företagsinformation

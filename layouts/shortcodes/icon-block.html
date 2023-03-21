@@ -1,5 +1,5 @@
 {{ with .Get "link" }}
 <a class="icon-block-link" href='{{ . }}'>{{ end }}<div class="icon-block shadow-1" style='color: {{ .Get "color" }};'>
-	<i class='fa-solid fa-{{ .Get "icon" }} icon'></i>
+	<i class='{{ .Get "icon" }} icon'></i>
 	<p style='color: {{ .Get "color" }};'>{{ .Get "text" }}</p>
 </div>{{ with .Get "link" }}</a>{{ end }}
