@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="250" viewBox="0 0 350 250">
+  <defs>
+    <clipPath id="clip-safespring-webinar-29-3">
+      <rect width="350" height="250"/>
+    </clipPath>
+  </defs>
+  <g id="safespring-webinar-29-3" clip-path="url(#clip-safespring-webinar-29-3)">
+    <rect width="350" height="250" fill="#fff"/>
+    <rect id="Rectangle_407" data-name="Rectangle 407" width="350" height="79" fill="#d15b5b"/>
+    <text id="mars" transform="translate(175 57)" fill="#fff" font-size="49" font-family="Montserrat" font-weight="500"><tspan x="-62.84" y="0">mars</tspan></text>
+    <text id="_29" data-name="29" transform="translate(175 204)" fill="#585858" font-size="134" font-family="Montserrat" font-weight="500"><tspan x="-79.848" y="0">29</tspan></text>
+    <text id="START_10:00" data-name="START 10:00" transform="translate(175 245)" fill="#9b9b9b" font-size="18" font-family="Montserrat" font-weight="600"><tspan x="-57.042" y="0">START</tspan><tspan y="0" xml:space="preserve" font-size="19"> 10:00</tspan></text>
+  </g>
+</svg>

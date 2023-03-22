@@ -14,9 +14,13 @@ audience: "saas"
 explorer: ""
 sidebarlinkurl: "https://sikt.no/arrangement/webinar-om-bruk-av-skytjenester-i-undervisninger-med-oslomet"
 sidebarlinkname: "Meld deg på"
+sidebar: "x"
+sidebarimage: "safespring-webinar-29-3.svg"
 ---
 
 {{< author-jarle >}}
+
+**Start: 29. mars 2023 kl. 10:00**
 
 {{< ingress>}}
 Fra gjør-det-selv til as-a-service i IT-undervisningen; OsloMET deler erfaringer med overgangen fra hjemmlaget automatisering av VM-administrasjon  til "Safespring Compute (managed Openstack)". 
