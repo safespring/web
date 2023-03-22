@@ -33,7 +33,14 @@ Safespring är flexibel, fullt automatiserad och baserad på självbetjäning vi
 
 <div style="margin-bottom:50px;"></div>
 
-![Safespring Compute benefits](/img/safespring-compute-key-points.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimised" link="/tjanster/containerplattform/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-door-open" text="Open standards" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
+{{< /icon-block-container >}}
 
 <div style="margin-bottom:50px;"></div>
 

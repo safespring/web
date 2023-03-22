@@ -1,5 +1,5 @@
 ---
-title: "Från Google Cloud till Safespring med bibehållen funktionalitet"
+title: "Från Google Cloud till Safespring med Compliant Kubernetes"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -21,12 +21,18 @@ aliases:
 ---
 
 {{< ingress >}}
-FindOut Diagnostics, ett medicintekniskt företag som arbetar med diagnostiska lösningar för att förbättra hälsan för patienter, valde att flytta från en amerikansk molntjänstleverantör till en svensk molntjänstleverantör för att följa GDPR. 
+FindOut Diagnostics, ett medicintekniskt företag som arbetar med diagnostiska lösningar för att förbättra hälsan för patienter, valde att flytta från en amerikansk molntjänstleverantör till Safespring för att följa GDPR. 
 {{< /ingress >}}
 
-Efter en grundlig utvärdering valde de att köra Compliant Kubernetes på Safespring, en svensk molntjänstleverantör med en bevisad historia av att hantera känslig information säkert.
+Med en stor mängd patientuppgifter är FindOut Diagnostic ett av många bolag som ser riskerna med amerikanska molntjänster. De amerikanska lagarna CLOUD Act och FISA 702 innebär att amerikanska myndigheter kan begära ut data lagrad av amerikanska företag, oavsett var i världen datan lagras. 
 
-Denise Luxenburg Stuifbergen, VD på FindOut Diagnostics, betonade vikten av att ha fullständig kontroll över patientuppgifter för att bevara användarnas tillit och undvika GDPR-böter.
+Detta kan skapa en juridisk konflikt för svenska företag som hanterar patientdata och personuppgifter, eftersom de måste följa EU-lagstiftningen, såsom GDPR. Detta leder till att svenska företag riskerar att bryta mot sekretesslagar och dataskyddsförordningar när de använder amerikanska molntjänster som lyder under amerikansk jurisdiktion.
+
+{{< readfile "Vad är Cloud Act och Fisa 702?" "/content/read-more/about-cloudact-fisa702-se.md" >}}
+
+Efter en grundlig utvärdering valde de att köra [Compliant Kubernetes](/tjanster/compliant-kubernetes/) på Safesprings infrastruktur, en svensk molntjänstleverantör med en bevisad historia av att hantera känslig information säkert.
+
+Denise Luxenburg Stuifbergen, VD på FindOut Diagnostics, betonade vikten av att ha fullständig kontroll över företagets data för att bevara användarnas tillit och undvika GDPR-böter.
 
 {{< distance >}}
 

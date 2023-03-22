@@ -1,7 +1,7 @@
 ---
 title: "Safespring tar ikke ut noen trafikkavgifter"
 date: "2023-03-20"
-intro: "Egress cost, eller utgående trafikkostnader, er en kostnad som ofte overses når man bruker infrastruktur som en tjeneste og er en vanlig innesperringsteknikk."
+intro: "Egress cost, eller utgående trafikkostnader, er en kostnad som ofte overses når man bruker infrastruktur som en tjeneste og er en vanlig innlåsingsmetode."
 draft: false
 tags: ["Norsk"]
 showthedate: true
@@ -30,9 +30,10 @@ Kostnaden for opplasting og nedlasting av data er en viktig faktor å ta hensyn 
 
 For det første kan det være en uventet kostnad for brukere som ikke er klar over dens eksistens. Egress cost kan legge til betydelige kostnader i en bedrifts budsjett, og dette kan være vanskelig å forutsi eller planlegge for. For det andre kan det påvirke beslutningen om hvilken IaaS-leverandør man velger å bruke. Siden egress cost kan variere mellom forskjellige skytjenesteleverandører, kan det påvirke hvilket alternativ som er mest kostnadseffektivt for en spesifikk organisasjon eller bruk.
 
-Trafikkostnader kan fungere som en innesperringsteknikk for skytjenesteleverandører, da kunder kan ha vanskelig for å bytte på grunn av de høye kostnadene for utgående trafikk. Dette gjør det viktig å vurdere både direkte og indirekte kostnader når man velger en skytjenesteleverandør.
+Trafikkostnader kan fungere som en innlåsingsmetode for skytjenesteleverandører, da kunder kan ha vanskelig for å bytte på grunn av de høye kostnadene for utgående trafikk. Dette gjør det viktig å vurdere både direkte og indirekte kostnader når man velger en skytjenesteleverandør.
 
-Hvorfor tar ikke Safespring ut trafikkostnader?
+### Hvorfor tar ikke Safespring ut trafikkostnader?
+
 Safespring tror på viktigheten av åpne standarder og åpen kildekode-programvare for å fremme innovasjon, samarbeid og frihet innen IT-bransjen. Ved å bruke åpne standarder og åpen kildekode-programvare kan Safespring tilby en skytjeneste som er fleksibel og skalerbar, noe som gjør det mulig å tilpasse seg kundenes behov og ønsker.
 
 Safespring tror også på viktigheten av digital suverenitet, noe som betyr at brukerne skal ha kontroll over sine egne data. Safespring tilbyr en skytjeneste som er bygget på en infrastruktur basert på OpenStack, en åpen plattform for skytjenester. Dette gjør det mulig å ha høy grad av kontroll over data og sikkerhet for Safesprings kunder.
