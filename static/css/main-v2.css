@@ -6991,7 +6991,6 @@ details[open] summary {
 }
 
 .icon-block i {
-	transition: ease .5s;
 	font-size: min(calc(3.5rem + 2vw), 70px);
 	margin: 0;
 }
@@ -7026,7 +7025,6 @@ details[open] summary {
         font-size: 14px;
     }
     .icon-block i {
-	transition: ease .5s;
 	font-size: min(calc(2.5rem + 2vw), 70px);
 	margin: 0;
 }
