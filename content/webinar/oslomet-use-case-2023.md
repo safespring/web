@@ -13,7 +13,7 @@ partner: ""
 audience: "saas"
 explorer: ""
 sidebarlinkurl: "#"
-sidebarlinkname: "Til arrangementet"
+sidebarlinkname: "Link kommer snart"
 ---
 
 
