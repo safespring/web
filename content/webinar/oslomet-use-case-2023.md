@@ -12,10 +12,11 @@ intro: 'OsloMET deler sine erfaringer med overgangen fra hjemmelaget automatiser
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "#"
-sidebarlinkname: "Link kommer snart"
+sidebarlinkurl: "https://sikt.no/arrangement/webinar-om-bruk-av-skytjenester-i-undervisninger-med-oslomet"
+sidebarlinkname: "Meld deg på"
 ---
 
+{{< author-jarle >}}
 
 {{< ingress>}}
 Fra gjør-det-selv til as-a-service i IT-undervisningen; OsloMET deler erfaringer med overgangen fra hjemmlaget automatisering av VM-administrasjon  til "Safespring Compute (managed Openstack)". 
