@@ -60,7 +60,7 @@
   <div class="content-default-single">
    {{ .Content }}
  </div>
- <div class="sidebar-default-single" style="width:350px"></div>
+ {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ else }}<div class="sidebar-default-single" style="width:350px"></div>{{ end }}
 </div>
 <!-- SIDEBAR -->
 {{ partial "webinar-side-bar.html" . }}
