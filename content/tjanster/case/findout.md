@@ -20,7 +20,7 @@ sidebarwhitepaper: ""
 aliases:
 ---
 
-{{< ingress >}}
+<!--{{< ingress >}}
 FindOut Diagnostics, ett medicintekniskt företag som arbetar med diagnostiska lösningar för att förbättra hälsan för patienter, valde att flytta från en amerikansk molntjänstleverantör till Safespring för att följa GDPR. 
 {{< /ingress >}}
 
@@ -34,7 +34,7 @@ Efter en grundlig utvärdering valde de att köra [Compliant Kubernetes](/tjanst
 
 Denise Luxenburg Stuifbergen, VD på FindOut Diagnostics, betonade vikten av att ha fullständig kontroll över företagets data för att bevara användarnas tillit och undvika GDPR-böter.
 
-{{< distance >}}
+{{< distance >}}-->
 
 {{% custom-card image="/img/safespring-usercase-1.jpg" cardtitle="Denise Luxenburg Stuifbergen" %}}
 
@@ -45,6 +45,8 @@ Denise Luxenburg Stuifbergen, VD på FindOut Diagnostics, betonade vikten av att
 
 {{< distance >}}
 
+<!-- 
+
 Safespring erbjuder många fördelar som hjälpte FindOut Diagnostics att fatta beslutet att välja dem som deras IaaS-leverantör. En av de största fördelarna var att de kan erbjuda fullständig kontroll över patientuppgifter. Med Safespring har FindOut Diagnostics möjlighet att skydda patienternas integritet genom att säkerställa att all deras data lagras och hanteras i Sverige, utan att någon obehörig kan få tillgång till den genom tredjelandsöverföring.
 
 Safespring erbjuder också möjligheten att leverera kundnytta snabbare genom att möjliggöra för interna utvecklare att fokusera på sin tjänst medan externa experter ansvarar för plattformen. Med en smidig migrering till Safespring kunde FindOut Diagnostics förlita sig på att deras data var i trygga händer, medan de fortsatte att utveckla och lansera sina innovativa produkter.
@@ -52,5 +54,5 @@ Safespring erbjuder också möjligheten att leverera kundnytta snabbare genom at
 SGenom att välja Safespring kunde FindOut Diagnostics få tillgång till expertis som de inte hade själva eller möjlighet att rekrytera, vilket gjorde att de kunde fortsätta att fokusera på sin kärnverksamhet.
 
 {{< 2calltoaction "Compliant Kubernetes" "/tjanster/compliant-kubernetes/" "Mer om Findout" "https://findout.se/om-oss" >}}
-
+-->
 ![FindOut Diagnostic](/img/findout-kundcase-2.svg)
