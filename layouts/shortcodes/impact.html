@@ -1,0 +1,18 @@
+{{ $difficulty := .Get "difficulty" }}
+{{ $impact := .Get "impact" }}
+<div class="impact-container">
+  <div class="difficulty-column">
+    {{ with $difficulty }}
+    {{ range $index, $e := seq 1 $difficulty }}
+    <div class="difficulty"></div>
+    {{ end }}
+    {{ end }}
+  </div> 
+  <div class="impact-column">
+    {{ with $impact }}
+    {{ range $index, $e := seq 1 $impact }}
+    <div class="impact"></div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>

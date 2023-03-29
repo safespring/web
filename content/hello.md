@@ -23,6 +23,7 @@ aliases: ""
 Vi på Safespring är glada att du är intresserad av att lära dig mer om våra moln- och säkerhetstjänster. Nedan hittar du en sammanfattning av Safespring och länkar till mer detaljerad information.
 {{< /ingress >}}
 
+
 Safespring är den svenska publika molnplattformen som uppfyller europeiska dataskyddslagar. Vi erbjuder en säker och pålitlig plattform för våra kunder och deras data. Vi erbjuder en rad moln- och säkerhetstjänster, inklusive:
 
 {{< icon-block-container >}}

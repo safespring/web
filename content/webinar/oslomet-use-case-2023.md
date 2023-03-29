@@ -3,7 +3,7 @@ title: "Fra hjemmelaget automatisering til as-a-service"
 language: "No"
 date: "2023-03-20"
 publishDate: "2023-03-20"
-draft: false
+draft: true
 tags: ["Norsk"]
 card: "safespring_card_47.svg"
 eventbild: ""
@@ -12,15 +12,13 @@ intro: 'OsloMET deler sine erfaringer med overgangen fra hjemmelaget automatiser
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "https://sikt.no/arrangement/webinar-om-bruk-av-skytjenester-i-undervisninger-med-oslomet"
-sidebarlinkname: "Meld deg på"
+sidebarlinkurl: "/no/demo"
+sidebarlinkname: "demo av Safesprings skyplattform"
 sidebar: "x"
-sidebarimage: "safespring-webinar-29-3.svg"
+sidebarimage: ""
 ---
 
 {{< author-jarle >}}
-
-**Start: 29. mars 2023 kl. 10:00**
 
 {{< ingress>}}
 Fra gjør-det-selv til as-a-service i IT-undervisningen; OsloMET deler erfaringer med overgangen fra hjemmlaget automatisering av VM-administrasjon  til "Safespring Compute (managed Openstack)". 
@@ -41,6 +39,6 @@ Salgsdirektør Kristian Fjellhaug vil fortelle litt om innrettingen av rammeavta
 ### Program
 
 1. Velkommen og innledning fra SIKT (3-5min)
-1. vKort om bakgrunn og problemstilling ved  Hårek 5min
+1. Kort om bakgrunn og problemstilling ved  Hårek 5min
 1. Dialogbasert samtale om use case og plattformens egenskaper ved Hårek og Jarle (30 min)
 1. Kort om OCRE-rammeavtalen med praktisk fokus på konsum fra SIKT-tilknyttede institusjoner (5 min) 
