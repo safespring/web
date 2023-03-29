@@ -3413,6 +3413,7 @@ pre > code {
 .padding-15 {
 	padding: 15%;
 }
+
 .blog-feed .content-heading {
 	text-align: center;
 }
@@ -3430,9 +3431,11 @@ pre > code {
 	flex: 40%; /* or - flex: 0 50% - or - flex-basis: 50% - */
 	/*demo*/
 }
+
 .fill-available-space {
 	height: 100%;
 }
+
 .content-container {
 	display: flex;
 	background-color: white;
@@ -3452,8 +3455,8 @@ pre > code {
 
 .content-container * {
 	cursor: pointer !important;
-
 }
+
 .image-container {
 	display: flex;
 	height: 250px;
@@ -3491,10 +3494,12 @@ pre > code {
 	padding: 0;
 	margin: 0px;
 }
+
 .content-container li {
 	padding: 0;
 	margin: 0px;
 }
+
 .content-container a {
 	width: 100%;
 	padding: 0;
@@ -6456,6 +6461,12 @@ margin-bottom: 2rem
 	margin: auto;
 }
 
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 /*.headline-and-badge {
 display: flex;
 justify-content: flex-end;
@@ -6805,6 +6816,70 @@ th:last-child {
 }
 
 .cpu:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+/* Impcat */
+
+.impact-container {
+	background-color: var(--cloud-blue-color);
+	border-radius: 10px;
+	padding: 15px 30px 13px 20px;
+	margin: 5px 0;
+	width: fit-content;
+}
+
+.impact-column {
+	display: flex;
+	flex-flow: row;
+	margin-left: 35px;
+}
+
+.impact {
+	width: max(10px, 15px);
+	height: 10px;
+	background-color: var(--main-color);
+}
+
+.difficulty-column {
+	display: flex;
+	flex-flow: row;
+	margin-left: 35px;
+}
+
+.difficulty-column::before {
+	width: 70px;
+	content: "Difficulty";
+	font: 900 12px/1 var(--mon-font);
+	margin-left: -35px;
+}
+
+.impact-column::before {
+	width: 70px;
+	content: "Impact";
+	font: 900 12px/1 var(--mon-font);
+	margin-left: -35px;
+}
+
+.difficulty {
+	width: 15px;
+	height: 10px;
+	background-color: var(--clear-blue-color);
+}
+
+.difficulty:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.difficulty:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+.impact:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.impact:last-child {
 	border-radius: 0 10px 10px 0;
 }
 
