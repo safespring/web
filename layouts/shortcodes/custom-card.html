@@ -1,1 +1,13 @@
-<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row"><div class="safespring-horisontal-card-col safespring-horisontal-card-image"><img src="{{ .Get `image` }}" alt="{{ .Get `cardtitle` }}"></div><div class="safespring-horisontal-card-col safespring-horisontal-card-content"><h3>{{ .Get "cardtitle" }}</h3><p>{{ .Get "text" }}{{ .Inner }}</p>{{ if isset .Params "link" }}<br><br><a class="button" href="{{ .Get `link` }}">{{ .Get "linktext" }}</a>{{ end }}</div></div>
+<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
+	<div class="safespring-horisontal-card-col safespring-horisontal-card-image">
+		<img src="{{ .Get `image` }}" alt="{{ .Get `cardtitle` }}">
+	</div>
+	<div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+		<h3>{{ .Get "cardtitle" }}</h3>
+		<p>{{ .Get "text" }}{{ .Inner }}</p>
+		{{ if isset .Params "link" }}<br>
+		<br>
+		<a class="button" href="{{ .Get `link` }}">{{ .Get "linktext" }}</a>
+		{{ end }}
+	</div>
+</div> 
