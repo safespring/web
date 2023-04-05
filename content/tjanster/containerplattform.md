@@ -45,4 +45,8 @@ Sammanfattningsvis har Safespring en effektiv nätverksstack, en skalbar nätver
 
 ## Kör Kubernetes som en tjänst på Safespring
 
-Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret.  
+Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret. 
+
+<!--
+{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Kör Kubernetes som en tjänst. Med omfattande säkerhetsmekanismer är Compliant Kubernetes en helhetslösning för säker hantering av ert behov av Kubernetes." cardtitle="Compliant Kubernetes som managerad tjänst på Safespring" linktext="Kom igång!" link="/tjanster/compliant-kubernetes/" >}}
+-->
