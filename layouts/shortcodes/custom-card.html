@@ -4,7 +4,7 @@
 	</div>
 	<div class="safespring-horisontal-card-col safespring-horisontal-card-content">
 		<h3>{{ .Get "cardtitle" }}</h3>
-		<p>{{ .Get "text" }}</p>
+		<p>{{ .Get "text" }}{{ .Inner }}</p>
 		{{ if isset .Params "link" }}<br>
 		<br>
 		<a class="button" href="{{ .Get `link` }}">{{ .Get "linktext" }}</a>
