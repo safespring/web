@@ -1,7 +1,7 @@
 ---
-title: "Training"
+title: "Courses"
 language: "En"
-cardtitle: "Training"
+cardtitle: "Courses"
 cardicon: "fa-solid fa-user-graduate"
 cardcolor: "#195F8C"
 cardorder: "11"

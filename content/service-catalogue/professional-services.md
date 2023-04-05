@@ -4,7 +4,7 @@ language: "En"
 cardtitle: "Consulting"
 cardicon: "fa-solid fa-user-tie"
 cardcolor: "#195F8C"
-cardorder: "11"
+cardorder: "12"
 date: 2023-02-28
 draft: false
 intro: "Allowing customers to extract more value out of the services deployed in the platform"
