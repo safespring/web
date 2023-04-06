@@ -27,12 +27,16 @@ STACKn är en lätt maskininlärningsplattform för datavetenskap som låter for
 
 STACKn är ett Django-ramverk som implementerar projektbaserat fleranvändarhantering, autentisering, auktorisering och objektnivåbehörigheter för populära datavetenskapliga verktyg baserade på open source. En intuitiv användargränssnitt låter användare skapa privata eller delade projekt där olika tillgångar distribueras:
 
-- Lagring: hantera privata och delade lagringsvolymer och objektlagring. Kontrollera åtkomst på projekt- och användarnivå.
-- Miljöer: konfigurera Docker-miljöer och projektmallar för att skapa anpassade arbetsplatser för ML-utveckling.
-- Anteckningsböcker: Jupyter-anteckningsböcker, RStudio
-- Experimentuppföljning: MLFlow
-- Modellregister och servering: MLFlow, Tensorflow Serving, PyTorch Serve och MLFlow Serve.
-- Modellkatalog: publicera och organisera modeller i en katalog, med behörighetskontroll på modellnivå.
-- Dashboards/appar: distribuera och värd Dash, Flask och RShiny UI:er och appar enkelt.
+{{% column-two %}}
+
+- **Lagring**: hantera privata och delade lagringsvolymer och objektlagring. Kontrollera åtkomst på projekt- och användarnivå.
+- **Miljöer**: konfigurera Docker-miljöer och projektmallar för att skapa anpassade arbetsplatser för ML-utveckling.
+- **Anteckningsböcker**: Jupyter-anteckningsböcker, RStudio
+- **Experimentuppföljning**: MLFlow
+- **Modellregister och servering**: MLFlow, Tensorflow Serving, PyTorch Serve och MLFlow Serve.
+- **Modellkatalog**: publicera och organisera modeller i en katalog, med behörighetskontroll på modellnivå.
+- **Dashboards/appar**: distribuera och värd Dash, Flask och RShiny UI:er och appar enkelt.
+
+{{% /column-two %}}
 
 STACKn är mycket anpassningsbart och är den bästa plattformen för maskininlärning i molnet för datavetenskap i Sverige, med fokus på GDPR-överensstämmelse eftersom den är byggd på Safespring IaaS.

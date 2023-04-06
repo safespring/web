@@ -2,7 +2,7 @@
 title: "Oro kring EU-US Data Privacy Framework: Varför dataöverföring till tredjeland bör undvikas"
 date: "2023-04-05"
 intro: "Osäkerheten kring det EU-US Data Privacy Framework och dess följder för företag som överför personuppgifter mellan EU och USA."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_47.svg"
@@ -32,3 +32,9 @@ Anledningen till detta är att det nya avtalet huvudsakligen grundar sig på ett
 Det är viktigt att notera att om DPF inte kan garantera skyddet för EU-medborgares rättigheter, kan det leda till ett "Schrems III"-scenario. Detta skulle innebära att företag som är beroende av DPF för dataöverföringar mellan EU och USA plötsligt skulle stå inför rättslig osäkerhet och potentiella sanktioner.
 
 En lösning som redan finns idag är att välja europeiska IaaS (Infrastructure-as-a-Service)-leverantörer för att lagra och bearbeta data inom EU. Detta minskar risken för dataöverföringar till tredjeland och bidrar till att skydda personuppgifter. Företag kan också använda tekniska åtgärder som kryptering och pseudonymisering för att ytterligare skydda personuppgifter. Genom att vara proaktiva och fokusera på att skydda EU-medborgarnas rättigheter kan företag minska risken för störningar orsakade av framtida rättsliga utmaningar och bidra till att skapa en mer robust och hållbar dataskyddsmiljö.
+
+{{< distance >}}
+
+{{% custom-card cardtitle="Se webcast" image="/img/card/safespring-image.svg" link="https://www.safespring.com/webinar/sixth-fireside-chat-it-sakerhetsbolaget/" linktext="Se webcast" %}}
+President Biden har undertecknat en presidentorder om förbättrade skyddsåtgärder för USA:s signalspaningsverksamhet. Vad innebär det?
+{{% /custom-card %}}

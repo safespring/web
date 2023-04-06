@@ -23,6 +23,7 @@ Vi har också partners som erbjuder tjänster kring backup, både som en lokal l
 Vi har även konsulttjänster inom AI och ML (Machine Learning). Genom vår starka förankring i den akademiska världen har vi partners som är den absoluta spetsen inom dessa områden. Genom att kombinera dessa tjänster med Safesprings molntjänster så kan ni hitta en väg fram att kunna utnyttja dessa tekniker med datat kvar inom landets gränser. Om inte landets gränser är gott nog så kan vi också hjälpa till med att sätta upp en plattform i ert datacenter (som vi managerar) som ger fullständig kontroll kring var datat är samtidigt som ni kan få en kort startsträcka för att komma igång med dessa teknologier.
 
 ## Exempel på konsulttjänster
+
 ### Inför ett projekt
 Safespring, hjälper er genom att genomföra en grundläggande förstudie för att kartlägga er nuvarande lösning. Vi visar även hur en inventering av ert data bör göras för att säkerställa att ni får den bästa lösningen anpassat till era förutsättningar. Resultatet från förstudien ger en riktlinje för hur arbetet och er nya lösning skall designas.
 
