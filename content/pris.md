@@ -7,7 +7,8 @@ draft: false
 tags: ""
 showthedate: false
 pageimage: ""
-intro: "Tillsammans skapar vi en säkrare, och mer kostnadseffektiv digital infrastruktur. "
+intro: "Tillsammans skapar vi en säkrare, och mer kostnadseffektiv digital infrastruktur."
+toc: "Prislista"
 ---
 
 {{< ingress >}}
@@ -20,3 +21,5 @@ Få priskalkylatorn nedladdad till din dator. Priskalkylatorn är en Excel-fil m
 Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till längre kostnad slipper du investeria i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
 
 Ladda ner vår priskalkulator och bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safespring. I priset ingår hög säkerhet såväl fysisk, logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäsningsportal där du kan managera dina instanser efter behov.
+
+{{< distance >}}
