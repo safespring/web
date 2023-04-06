@@ -1437,7 +1437,7 @@ color: var(--unCheckedColor);
 	.wrapper-max-1400 {
 		max-width: max(90%, 1400px);
 		margin: auto;
-	}
+	} 
 
 	.footer {
 		position: relative;
@@ -1447,7 +1447,7 @@ color: var(--unCheckedColor);
 		grid-template-columns: [full-start] minmax(2em, 1fr)[main-start] minmax(0, 32rem)[main-middle] minmax(0, 32rem)[main-end] minmax(1em, 1fr)[full-end];
 		width: 100%;
 		background-color: var(--main-color);
-		padding: 25px 0;
+		padding: 25px 0
 	}
 
 	/* SAFESPRING FOOTER */
