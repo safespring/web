@@ -9,34 +9,20 @@
  </div>
 
  <!-- CONTENT -->
- {{ if .Params.youtube }}
  <div class="main-default-single">
-  <div class="webinar-default-single">
+  <div class="content-default-single">
+ {{ if .Params.youtube }}
     <div class="webinarvideo iframe-aspect-ratio iframe responsive-container">
       <div id="player">
       </div>
     </div>
-    <script>var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: '{{ .Params.youtube }}',
-        playerVars: {
-          'modestbranding': 1,
-          'iv_load_policy': 3
-        },
-      });
-    }
-    function setCurrentTime(slideNum) {
-      var object = [ {{ .Params.timecodes | safeJS }} ];
-      player.seekTo(object[slideNum]);
-    }
-  </script>
-</div>
-{{ if .Params.timecodes }}<div class=" webinarplaylist-container shadow-1">
+    {{ else }}{{ end }}
+    {{ .Content }}
+    </div>
+ <div class="sidebar-default-single">
+  {{ if .Params.timecodes }}
+  <div class="sidebar-container">
+<div class="sidebar-content">
   <h3>{{ if .Params.timecodetitle }}{{ .Params.timecodetitle }}{{ else }}Avsnitt{{ end }}</h3>
   <div class="webinarplaylist">
     <ul>
@@ -55,16 +41,34 @@
     </ul>
   </div>
 </div>
-{{ else }}{{ end }}{{ else }}{{ end }}</div>
-<div class="main-default-single">
-  <div class="content-default-single">
-   {{ .Content }}
- </div>
- {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ else }}<div class="sidebar-default-single" style="width:350px"></div>{{ end }}
+</div>
+{{ else }}{{ end }}
+ {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ else }}{{ end }}
+</div>
+</div>
 </div>
 <!-- SIDEBAR -->
 {{ partial "webinar-side-bar.html" . }}
 </main>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
-</body>
+
+<script>var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: '{{ .Params.youtube }}',
+        playerVars: {
+          'modestbranding': 1,
+          'iv_load_policy': 3
+        },
+      });
+    }
+    function setCurrentTime(slideNum) {
+      var object = [ {{ .Params.timecodes | safeJS }} ];
+      player.seekTo(object[slideNum]);
+    }
+  </script>

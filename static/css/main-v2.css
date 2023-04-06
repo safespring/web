@@ -187,6 +187,10 @@ h3 {
 	line-height: 21px;
 }
 
+h2 + h3 {
+  margin-top: 16px;
+}
+
 h4 {
 	margin: 30px 0 10px 0;
 	font: var(--hind-light-weight) 16px var(--hind-font);
@@ -2091,7 +2095,9 @@ color: var(--unCheckedColor);
 		margin-bottom: 20px;
 	}
 
-	.webinarplaylist {
+	.webinarplaylist ul {
+		padding: 0;
+
 	}
 
 	.webinarplaylist ul li::before {
@@ -2102,37 +2108,43 @@ color: var(--unCheckedColor);
 		font-family: "Font Awesome 6 Pro";
 		content: "\f144";
 		color: var(--clear-blue-color);
-		padding: 0px 0px 0px 30px;
-	}
-
-	.webinarplaylist ul li:hover:before {
-		background-color: #F2F7F9;
+		padding: 0px 0px 0px 20px;
 	}
 
 	.webinarplaylist ul li {
 		display: flex;
 		align-items: center;
-		font: 18px var(--hind-font) !important;
+		font: 16px var(--hind-font);
 		color: var(--main-color) !important;
 		margin: 0;
-		padding: 15px;
+		padding: 15px 0 15px 15px;
 		border-bottom: 0.25px solid #E8EFF3;
 		list-style-type: none;
 		list-style-position: outside;
 		line-height: 1 !important;
+		transition: all 0.2s ease;
 	}
 	.webinarplaylist ul li .timer {
 		margin-left:auto;
 		padding: 3px 15px 0 0;
+		transition: all 0.2s ease;
+	}
+
+	.webinarplaylist ul li:hover .timer {
+		margin-left:auto;
+		padding: 3px 25px 0 0;
 	}
 
 	.webinarplaylist ul li a{
-		font: 20px var(--hind-font) !important;
+		font: 16px var(--hind-font) !important;
 		color: var(--main-color) !important;
 	}
 
 	.webinarplaylist li:hover {
 		background-color: #F2F7F9;
+		border-radius: 10px;
+		padding-left: 35px;
+		margin: 0px -10px 0 -20px;
 	}
 
 	.content-body ul li > ul {
@@ -7103,5 +7115,24 @@ details[open] summary {
 	font-size: min(calc(2.5rem + 2vw), 70px);
 	margin: 0;
 }
+}
+
+.column-two {
+  column-count: 2;
+}
+
+.column-two li {
+  break-inside: avoid-column;
+}
+
+.column-two ol {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .column-two {
+    flex-direction: column;
+    column-count: unset;
+  }
 }
 

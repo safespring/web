@@ -38,5 +38,4 @@
   {{ partial "favicons.html" . }}
 
   {{ "<!--[if IE]>" | safeHTML }}<meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">{{ "<![endif]-->" | safeHTML }}
-
 </head>
