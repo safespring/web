@@ -1,45 +1,36 @@
-function addCopyButtons(clipboard) {
-  document.querySelectorAll('pre > code').forEach(function (codeBlock) {
-    var button = document.createElement('button');
-    button.className = 'copy-code-button';
-    button.type = 'button';
-    button.innerText = '';
-
-    button.addEventListener('click', function () {
-      clipboard.writeText(codeBlock.innerText).then(function () {
-        /* Chrome doesn't seem to blur automatically,
-        leaving the button in a focused state. */
-        button.blur();
-
-        button.innerText = '';
-
-        setTimeout(function () {
-          button.innerText = '';
-        }, 4000);
-      }, function (error) {
-        button.innerText = '';
-      });
-    });
-
-    var pre = codeBlock.parentNode;
-    if (pre.parentNode.classList.contains('highlight')) {
-      var highlight = pre.parentNode;
-      highlight.parentNode.insertBefore(button, highlight);
-    } else {
-      pre.parentNode.insertBefore(button, pre);
+function addLanguageLabels() {
+  document.querySelectorAll('pre > code[class*="language-"]').forEach(function (codeBlock) {
+    var language = codeBlock.className.match(/language-(\w+)/)[1];
+    if (language) {
+      var pre = codeBlock.parentNode;
+      pre.setAttribute('data-lang', language);
     }
   });
 }
-    if (navigator && navigator.clipboard) {
-      addCopyButtons(navigator.clipboard);
-    } else {
-      var script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
-      script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
-      script.crossOrigin = 'anonymous';
-      script.onload = function() {
-        addCopyButtons(clipboard);
-      };
 
-      document.body.appendChild(script);
-    }
+document.querySelectorAll('pre').forEach((pre) => {
+  addLanguageLabels();
+
+  const button = document.createElement('button');
+  button.className = 'copy-code-button';
+  button.innerHTML = '';
+
+  button.addEventListener('click', () => {
+    const code = pre.querySelector('code').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      button.innerHTML = '';
+      setTimeout(() => {
+        button.innerHTML = '';
+      }, 2000);
+    }).catch(() => {
+      button.innerHTML = '';
+    });
+  });
+
+  pre.style.position = 'relative';
+  button.style.position = 'absolute';
+  button.style.top = '0';
+  button.style.right = '0';
+
+  pre.appendChild(button);
+});

@@ -84,7 +84,7 @@ Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster.
 |-----------------|---------------------------|-------------:|----------------:|
 | VOLUME-large    | HDD-backed 3-replica Ceph |   0,00167 kr |         1,20 kr |
 | VOLUME-fast     | SSD-backed 3-replica Ceph |   0,00500 kr |         3,60 kr |
-| VOLUME-snapshot | Snapshot of image         |   0,00167 kr |         1,20 kr |
+<!--| VOLUME-snapshot | Snapshot of image         |   0,00167 kr |         1,20 kr |-->
 
 {{< distance >}}
 
@@ -134,8 +134,8 @@ Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och e
 | NET-ingress  | Datatrafik                 |                                         | GB             | 0,00 kr      |
 | NET-egress   | Datatrafik                 |                                         | GB             | 0,00 kr      |
 | NET-mgn.slb  | Managed SLB                | Lastbalanserare som kräver egna servrar | Instans        | Begär offert |
-| NET-rdns     | Reverse DNS names          |                                         | N/A            | 0,00 kr      |
-| NET-byoip    | Bring your own IP prefixes |                                         | N/A            | 0,00 kr      |
+<!--| NET-rdns     | Reverse DNS names          |                                         | N/A            | 0,00 kr      |
+| NET-byoip    | Bring your own IP prefixes |                                         | N/A            | 0,00 kr      |-->
 
 ### Mjukvara och Licenser
 Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattform.
@@ -166,8 +166,9 @@ Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelef
 Vi erbjuder olika nivåer av support för molninfrastruktur. Dessutom erbjuder vi erfarna konsulter och projektledare till konkurrenskraftiga priser.
 {{< /ingress >}}
 
+<!--### Support
 ### Support
-Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.
+Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.-->
 
 | Produkt   ID     | Beskrivning                                                  | Debitering per | Pris                 |
 |------------------|--------------------------------------------------------------|----------------|----------------------:|
