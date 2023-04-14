@@ -15,7 +15,7 @@ toc: ""
 
 {{< ingress >}}
 Europeiska dataskyddsstyrelsen (EDPB) stöder EU-US Data Privacy Framework (DPF), men det finns betänkligheter kring dataskyddet. 
-{{< /ingress >}}
+{{< /ingress >}} 
 
 DPF har förbättrats med krav på nödvändighghet och proportionalitet för amerikansk underrättelseinsamling, men vidareöverföringar av data och skydd av EU-medborgares rättigheter kräver förtydliganden.
 
