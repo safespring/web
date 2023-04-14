@@ -1,7 +1,7 @@
 function addLanguageLabels() {
   document.querySelectorAll('pre > code[class*="language-"]').forEach(function (codeBlock) {
     var language = codeBlock.className.match(/language-(\w+)/)[1];
-    if (language) {
+    if (language && language !== 'fallback') {
       var pre = codeBlock.parentNode;
       pre.setAttribute('data-lang', language);
     }
