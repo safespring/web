@@ -21,6 +21,28 @@ Safesprings datacenter är direktanslutna till NREN-nätverket för att ge dig b
 
 Vi är mycket glada över att ha kvalificerat oss för OCRE-ramavtalet. Ramavtalet låter oss stödja forsknings- och utbildningssektorn med våra moderna, API-baserade tjänster som stöder federerad inloggning för att möjliggöra enkel inloggning. Safesprings tjänster används av över 60 universitet, institutioner och forskningsplattformar och vi hoppas också kunna vara en del av din digitala framtid. Välkommen att ta kontakt med oss!
 
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-kit fa-sunet" text="Anslutning till Sunet" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-shield-halved" text="GDPR Compliant" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-file-contract" text="Ramavtal genom OCRE" link="" color="#555555">}}
+    {{< icon-block icon="fa-solid fa-coins" text="Kostnads-effektivt" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#32cd32">}}
+{{< /icon-block-container >}}
+
+### Vårt engagemang för innovation inom forskning och utbildning
+
+Safespring är stolta över att stödja forskning och utbildning, och vi förstår att dessa sektorer står inför unika utmaningar och behov. Vårt engagemang för innovation, samt vårt samarbete med OCRE, gör att vi kan erbjuda skräddarsydda lösningar som främjar forskningssamverkan, tillgång till högkvalitativa resurser och hållbar utveckling.
+
+Som en pålitlig partner inom forskning och utbildning erbjuder vi:
+
+1. Stöd för forskningsprojekt genom säker datahantering och anpassade molninfrastrukturer.
+2. Erbjudande av molnbaserade lösningar som främjar digital transformation inom utbildning, såsom e-lärande och samarbetsplattformar.
+3. Integrerade tjänster för att underlätta datainsamling, analys och lagring, vilket främjar effektiv forskning och snabbare resultat.
+4. Anpassad support och expertis för att säkerställa att era institutioners specifika krav och behov uppfylls.
+
+Vår expertis och partnerskap med OCRE gör att vi kan leverera de bästa och mest effektiva lösningarna för att möjliggöra forskning och utbildning av hög kvalitet. Låt Safespring vara er partner för att förverkliga er fulla potential inom forskning och utbildning.
+
 ### OCRE Cloud Funding for Research
 
 Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagande av molntjänster som är tillgängliga via OCRE IaaS + ramavtal. Två efterföljande projektanrop planeras att öppnas i februari respektive juli 2021.
