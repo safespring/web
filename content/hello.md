@@ -23,42 +23,13 @@ aliases: ""
 Vi på Safespring är glada att du är intresserad av att lära dig mer om våra moln- och säkerhetstjänster. Nedan hittar du en sammanfattning av Safespring och länkar till mer detaljerad information.
 {{< /ingress >}}
 
-
 Safespring är den svenska publika molnplattformen som uppfyller europeiska dataskyddslagar. Vi erbjuder en säker och pålitlig plattform för våra kunder och deras data. Vi erbjuder en rad moln- och säkerhetstjänster, inklusive:
 
 {{< icon-block-container >}}
-	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="#" color="#32cd32">}}
-	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="#" color="#195F8C">}}
-	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="#" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
+	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
 	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="#" color="#3C9BCD">}}
 	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="#" color="#FA690F">}}
 	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="#" color="#32cd32">}}
 {{< /icon-block-container >}}
-
-## Företagsinformation
-
-Läs mer om Safespring, vårt team och våra partners [här](https://www.safespring.com/om-oss/).
-
-## Kundreferenser
-
-Se hur våra kunder använder Safespring [här](https://www.safespring.com/referenser/).
-
-## Prissättning och paketering
-
-Lär dig mer om prissättning och paketering av våra tjänster [här](https://www.safespring.com/pricing/).
-
-## Säkerhet och efterlevnad av standarder
-
-Läs mer om hur Safespring håller dina data säkra och uppfyller relevanta säkerhetsstandarder [här](https://www.safespring.com/sakerhet/).
-
-## Relaterade resurser
-
-Här är några relaterade resurser för att hjälpa dig att lära dig mer om Safespring:
-
-- [Blogg](https://www.safespring.com/blogg/)
-- [Whitepapers](https://www.safespring.com/whitepapers/)
-- [Användarhandledningar och FAQ](https://www.safespring.com/support/)
-
-## Kontakta oss
-
-Om du har frågor eller vill ha mer information, tveka inte att kontakta oss [här](https://www.safespring.com/kontakt/).

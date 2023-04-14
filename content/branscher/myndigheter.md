@@ -13,7 +13,16 @@ sidebarlinkname: "Se fireside chat 16/12"
 banner: "blue-hover-blogg"
 ---
 
- ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
+
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-kit fa-gaiax" text="Öppna standarder" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-shield-halved" text="GDPR Compliant" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-file-contract" text="Flera ramavtal" link="" color="#555555">}}
+    {{< icon-block icon="fa-kit fa-private-cloud" text="Private Cloud" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#32cd32">}}
+{{< /icon-block-container >}}
+
 
 ## Ramavtal
 
@@ -35,7 +44,7 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja 
 
 {{< localbutton "Kontakta Safespring" "/kontakt" >}}
 
-<br><br><br><br><video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
+<br><br><br><br><video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 15px;" controls="true">
 <source type="video/mp4" src="/branscher/images/safespring_esam.mp4">
 <track src="/branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
