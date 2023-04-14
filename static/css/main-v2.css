@@ -70,6 +70,7 @@ pre > code {
 pre[data-lang]::before {
   content: attr(data-lang);
   font-weight: bold;
+  font-size: 13px;
   background-color: #195F8C10;
   color: #195F8C;
   padding: 15px 0px 15px 30px;
