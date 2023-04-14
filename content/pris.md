@@ -21,7 +21,7 @@ nosidebar: ""
 {{< distance >}}
 
 {{< ingress >}}
-Få priskalkylatorn nedladdad till din dator. Priskalkylatorn är en Excel-fil med inbyggd logik för att räkna ut en månadskostnad baserad på dina val.
+Se våra priser längre ner på den här sidan eller få priskalkylatorn nedladdad till din dator. Priskalkylatorn är en Excel-fil med inbyggd logik för att räkna ut en månadskostnad baserad på dina val.
 {{< /ingress >}}
 
 Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till längre kostnad slipper du investeria i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
