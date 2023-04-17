@@ -56,7 +56,7 @@ För att handla Safesprings tjänster via OCRe-avtalet, kontakta Safespring dire
 {{< /ingress >}}
 
 {{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
-Jag är försäljningschef för Safespring i Norge och hjälper dig med upphandlingen av våra tjänser enligt OCRE-avtalet.  
+Jag är försäljningschef för Safespring i Norge och hjälper dig med upphandlingen av våra tjänster enligt OCRE-avtalet.  
 
 {{< inline "Ring:" >}} +47 90 67 58 27  
 kristian.fjellhaug@safespring.com
@@ -65,7 +65,7 @@ kristian.fjellhaug@safespring.com
  -
 
 {{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef för Safespring i Sverige och hjälper dig med upphandlingen av våra tjänser enligt OCRE-avtalet.  
+Jag är försäljningschef för Safespring i Sverige och hjälper dig med upphandlingen av våra tjänster enligt OCRE-avtalet.  
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21  
 petter.hylin@safespring.com
