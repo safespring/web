@@ -47,8 +47,26 @@ Vår expertis och partnerskap med OCRE gör att vi kan leverera de bästa och me
 
 Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagande av molntjänster som är tillgängliga via OCRE IaaS + ramavtal. Två efterföljande projektanrop planeras att öppnas i februari respektive juli 2021.
 
-Under detta första molnfinansieringssamtal syftar OCRE till att finansiera konsumtionen av infrastruktur-molntjänster (IaaS, PaaS, SaaS, marknadsplats) av projekt som kan bli tydliga utställningar för fördelarna med att använda molntjänster för att positivt påverka forskningsresultat.
+Under detta första molnfinansieringssamtal syftar OCRE till att finansiera konsumtionen av infrastruktur-molntjänster (IaaS, PaaS, SaaS, marknadsplats) av projekt som kan bli tydliga utställningar för fördelarna med att använda molntjänster för att positivt påverka forskningsresultat. Läs mer på https://www.ocre-project.eu/funding-opportunities
 
-{{< localtextbutton "Skaffa finnansiering" "https://www.ocre-project.eu/funding-opportunities">}}
 
-{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}
+## Så handlar du tjänster på OCRE-avtalet
+{{< ingress >}}
+För att handla Safesprings tjänster via OCRe-avtalet, kontakta Safespring direkt.
+{{< /ingress >}}
+
+{{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
+Jag är försäljningschef för Safespring i Norge och hjälper dig med upphandlingen av våra tjänser enligt OCRE-avtalet.  
+
+{{< inline "Ring:" >}} +47 90 67 58 27  
+kristian.fjellhaug@safespring.com
+
+{{% /custom-card %}}  
+ -
+
+{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+Jag är försäljningschef för Safespring i Sverige och hjälper dig med upphandlingen av våra tjänser enligt OCRE-avtalet.  
+
+{{< inline "Ring" >}} +46 (0)73 533 65 21  
+petter.hylin@safespring.com
+{{% /custom-card %}}
