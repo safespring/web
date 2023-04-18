@@ -2,7 +2,7 @@
 title: "Oro kring EU-US Data Privacy Framework: Varför dataöverföring till tredjeland bör undvikas"
 date: "2023-04-05"
 intro: "Osäkerheten kring det EU-US Data Privacy Framework och dess följder för företag som överför personuppgifter mellan EU och USA."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_47.svg"
