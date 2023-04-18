@@ -55,8 +55,10 @@ Under detta första molnfinansieringssamtal syftar OCRE till att finansiera kons
 För att handla Safesprings tjänster via OCRe-avtalet, kontakta Safespring direkt.
 {{< /ingress >}}
 
+Safesprings tjänster är redo att användas. Om du är inom akademisk sektor i Europa eller kopplad till Sunet eller Sikt, kan du enkelt använda vår molnplattform.
+
 {{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
-Jag är försäljningschef för Safespring i Norge och hjälper dig med upphandlingen av våra tjänster enligt OCRE-avtalet.  
+Jag är försäljningschef i Norge och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
 {{< inline "Ring:" >}} +47 90 67 58 27  
 kristian.fjellhaug@safespring.com
@@ -65,7 +67,7 @@ kristian.fjellhaug@safespring.com
  -
 
 {{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef för Safespring i Sverige och hjälper dig med upphandlingen av våra tjänster enligt OCRE-avtalet.  
+Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21  
 petter.hylin@safespring.com
