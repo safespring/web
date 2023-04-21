@@ -12,6 +12,8 @@ socialmedia: "safespring-datacenter.jpg"
 
 ## Frågor om Compliance
 
+<div>
+
 {{% accordion title="Hur förhåller ni er till GDPR?" %}}
 Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
 {{% /accordion %}}
@@ -32,7 +34,11 @@ För information om vilka underleverantörer vi använder och för vad de använ
 Ja, vi erbjuder PUB-avtal eller DPA. För att få en kopia av dokumentet, vänligen kontakta oss och fråga efter "General terms and conditions".
 {{% /accordion %}}
 
+</div>
+
 ## Frågor om våra datacenter
+
+<div>
 
 {{% accordion title="Vilka geografiska möjligheter erbjuder ni för lagring av data?" %}}
 Vi har tillgång till tre säkra datacenter, två belägna i Stockholm (STO1 och STO2) och ett i Oslo (OSL1), så att våra kunder kan välja den geografiska plats som passar deras behov bäst.
@@ -72,7 +78,11 @@ Ja, vi erbjuder möjligheten att använda flera platser som en del av er Disaste
 Ja, vi har regelbundna tester för redundans av våra datacenterleverantörer.
 {{% /accordion %}}
 
+</div>
+
 ## Frågor om informationssäkerhet
+
+<div>
 
 {{% accordion title="Är ni certifierade enligt ISO 27001?" %}}
 Safespring arbetar med informationssäkerhetskontroller enligt ISO 27001. Våra policyinstruktioner och kontroller samlas i vårt ISMS neupartOne. Vi är för närvarande i färd med att certifiera oss enligt ISO27001 och förväntas vara klara under andra kvartalet 2023.
@@ -90,7 +100,11 @@ Ja, vi har en kontinuitetsplan på plats.
 Ja, Safespring har en extern DPO (Data Protection Officer) som granskar företagets informationssäkerhetsarbete för att säkerställa att det är i enlighet med gällande dataskyddslagstiftning och informationssäkerhetsstandarder.
 {{% /accordion %}}
 
+</div>
+
 ## Frågor om våra tjänster och verksamhet
+
+<div>
 
 {{% accordion title="Erbjuds skydd för data vid viloläge (data at rest)?" %}}
 Ja, vi tillhandahåller diskkryptering för att skydda data vid viloläge.
@@ -127,5 +141,7 @@ Ja, vi har ett separat nätverk för administration av virtuella hostar för att
 {{% accordion title="Vad ingår i er SLA (Service Level Agreement)?" %}}
 Vi erbjuder en SLA på 99.9%. Det innebär att vi garanterar en tillgänglighet på 99.9% för våra tjänster. Detta är kopplat till våra SLA-villkor.
 {{% /accordion %}}
+
+</div>
 
 {{< accordion-script >}}
