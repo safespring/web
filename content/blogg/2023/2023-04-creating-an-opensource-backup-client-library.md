@@ -2,7 +2,7 @@
 title: "Creating an open-source backup client library"
 date: "2023-04-21"
 publishDate: "2023-04-23"
-intro: ""
+intro: "Explore our open-source Cloutility API client library for simplifying backup client enrollment and management."
 draft: false
 tags: ["English"]
 showthedate: true
