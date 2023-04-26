@@ -13,4 +13,27 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function openAccordion(id) {
+  var accordionBox = document.getElementById(id);
+  if (accordionBox) {
+    var button = accordionBox.getElementsByClassName("accordion")[0];
+    if (button) {
+      button.click();
+      accordionBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    }
+  }
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    var targetId = this.getAttribute('href').substr(1);
+    var targetElement = document.getElementById(targetId);
+    if (targetElement && targetElement.classList.contains('accordion-box')) {
+      e.preventDefault();
+      openAccordion(targetId);
+    }
+  });
+});
 </script>
