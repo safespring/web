@@ -15,7 +15,7 @@ toc: ""
 sidebarlinkname: "Cloutility-api-client Repository"
 sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
 sidebarlinkname2: "Complete code example"
-sidebarlinkurl2: "https://github.com/safespring-community/cloutility-api-client/examples/enroll"
+sidebarlinkurl2: "https://github.com/safespring-community/cloutility-api-client/tree/main/examples/enroll"
 ---
 
 {{< author-daniel >}}
