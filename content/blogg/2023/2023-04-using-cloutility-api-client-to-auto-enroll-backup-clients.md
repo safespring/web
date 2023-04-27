@@ -80,7 +80,7 @@ The `Init()` function initializes a Cloutility API client and returns a pointer 
 
 | Parameter   | Type            | Description                                                                                                 |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------|
-| `ctx`       | context.Context | API client's context with `context.TODO()` and a 10-second default timeout                                    |
+| `ctx`       | context.Context | A context.Context object for the API client                                                                 |
 | `client_id` | string          | Provide the Safespring client ID (APIKey)                                                                   |
 | `origin`    | string          | The origin of the client ID, specified upon creation                                                        |
 | `username`  | string          | Input the username for the Safespring Backup service                                                        |
