@@ -46,16 +46,16 @@ Set default values and retrieve the server's hostname, which will be used as the
 We will begin by setting a few default values:
 ```go
 const (
-	// Set the OS to Linux, ID = 3
-	osTypeID = int(3)
-	// Set the nodeType to Fileserver, ID = 1
-	nodeTypeID = int(1)
-	// Use standard domain (180 Days backup retention), ID = 1
-	domainID = int(1)
-	// Set the clientOptionSet to "DEDUP_AND_COMPRESS", ID = 2
-	clientOptionSetID = int(2)
-	// Set contact info to IT Department
-	contact = "Company IT Department"
+    // Set the OS to Linux, ID = 3
+    osTypeID = int(3)
+    // Set the nodeType to Fileserver, ID = 1
+    nodeTypeID = int(1)
+    // Use standard domain (180 Days backup retention), ID = 1
+    domainID = int(1)
+    // Set the clientOptionSet to "DEDUP_AND_COMPRESS", ID = 2
+    clientOptionSetID = int(2)
+    // Set contact info to IT Department
+    contact = "Company IT Department"
 )
 ```
 As we will see later in the tutorial, we will pass these values when creating our backup node to ensure we set the correct settings for this particular server type. These settings can easily be adapted to a variety of server / workstation setups. For a complete list of all available combinations supported by Safespring Backup you can use the cli-tool included in the cloutilty-api-client project.
@@ -182,24 +182,24 @@ Now let's put everything together and take a look at the complete application:
 package main
 
 import (
-	"context"
-	"fmt"
-	"os"
+    "context"
+    "fmt"
+    "os"
 
-	"github.com/safespring-community/cloutility-api-client/cloutapi"
+    "github.com/safespring-community/cloutility-api-client/cloutapi"
 )
 
 const (
-	// Set the OS to Linux, ID = 3
-	osTypeID = int(3)
-	// Set the nodeType to server, ID = 1
-	nodeTypeID = int(1)
-	// Use standard domain (180 Days backup retention), ID = 1
-	domainID = int(1)
-	// Set the clientOptionSet to "DEDUP_AND_COMPRESS", ID = 2
-	clientOptionSetID = int(2)
-	// Set contact info to IT Department
-	contact = "Company IT Department"
+    // Set the OS to Linux, ID = 3
+    osTypeID = int(3)
+    // Set the nodeType to server, ID = 1
+    nodeTypeID = int(1)
+    // Use standard domain (180 Days backup retention), ID = 1
+    domainID = int(1)
+    // Set the clientOptionSet to "DEDUP_AND_COMPRESS", ID = 2
+    clientOptionSetID = int(2)
+    // Set contact info to IT Department
+    contact = "Company IT Department"
 )
 
 func main() {
