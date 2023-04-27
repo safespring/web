@@ -80,7 +80,7 @@ The `Init()` function initializes a Cloutility API client and returns a pointer 
 
 | Parameter   | Type            | Description                                                                                                 |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------|
-| `ctx`       | context.Context | API client's context with `context.TODO()` and a 10-second default timeout                                    |
+| `ctx`       | context.Context | A context.Context object for the API client                                  |
 | `client_id` | string          | Provide the Safespring client ID (APIKey)                                                                   |
 | `origin`    | string          | The origin of the client ID, specified upon creation                                                        |
 | `username`  | string          | Input the username for the Safespring Backup service                                                        |
@@ -256,4 +256,9 @@ The code above will result in a standalone binary at ~7Mb which is easily distri
 {{% note "Recommendation" %}}
 The example code above has for the sake of simplicity omitted any error handling. In a production environment exception handling is recommended
 {{% /note %}}
-With just over 35 lines of code we've created a fully functional tool for automating backup client enrollment using Safespring's cloutility-api-client library. 
+
+In just over 35 lines of code, we have successfully developed a fully functional tool to automate backup client enrollment utilizing Safespring's cloutility-api-client library.
+
+To summarize, the cloutility-api-client library by Safespring has enabled us to create an automated backup client enrollment tool that can be effortlessly integrated into your existing processes. This showcases Safespring's dedication to preventing vendor lock-in and advocating for seamless integration with our services. 
+
+We are committed to offering our customers the flexibility and liberty to select and modify their solutions based on their requirements. If you have any questions or need support with implementation, please do not hesitate to contact our support team. Happy coding!
