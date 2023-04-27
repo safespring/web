@@ -2,7 +2,7 @@
 title: "Safespring är den föredragna plattformen för forskning och utbildningssektorn"
 cardtitle: "Safespring för akademisk sektor"
 card: "safespring_card_11.svg"
-date: 2022-03-01T10:47:25+01:00
+date: 2023-04-27
 draft: false
 intro: "Över 60 lärosäten använder Safespring via Sunet, Sikt eller direkt genom GÉANTs OCRE-ramavtal."
 background: "2safespring-akademisk-sektor-2022.webp"
