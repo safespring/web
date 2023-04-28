@@ -36,6 +36,9 @@ However, the power of a library lies in its ability to be extended with custom t
 
 As such, we welcome contributions from the community to expand the available features and provide specialized tools that meet specific needs. Our goal, as always, is to create a robust and flexible solution that can be easily adapted to different environments and use cases and hope that our work on the Cloutility API client will allow for this.
 
+{{% note "Recommended reading" %}}
+Dive deeper into the world of open-source backup client management by checking out our recent article on [Automating backup node enrollment with Cloutility API-client.](/blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/)  Happy reading!
+{{% /note %}}
 
 ## Understanding Key Terms 
 

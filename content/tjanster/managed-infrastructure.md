@@ -2,7 +2,7 @@
 title: "Safespring On-Premise Cloud"
 language: "Se"
 date: 2023-04-27
-draft: false
+draft: true
 intro: "Få hjälp med att sätta upp din egen miljö som vi underhåller. Då får du kraften från molnet - i ditt- eller vårt datacenter."
 background: ""
 form: ""
