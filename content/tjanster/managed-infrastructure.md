@@ -2,7 +2,7 @@
 title: "Safespring On-Premise Cloud"
 language: "Se"
 date: 2023-04-27
-draft: true
+draft: false
 intro: "Få hjälp med att sätta upp din egen miljö som vi underhåller. Då får du kraften från molnet - i ditt- eller vårt datacenter."
 background: ""
 form: ""
@@ -81,6 +81,14 @@ För att SLA:n ska gälla krävs det att det finns tillräckliga resurser i proj
 | API     | 3 fysiska hosts för backend som körs i 3 separata chassin |                                                             |
 
 
+### Kundens ansvar
+Kunderna ansvarar för att övervaka sina egna instanser och säkerställa att deras tjänster fungerar efter ett avbrott. Kunden ansvarar för följande:
+
+* Strömförsörjning
+* Kylning
+* Nätverk
+* Fysisk installation på platsen, Safespring kan tillhandahålla specifikationer och/eller installationstjänst
+* Fysiskt underhåll på platsen (byte av reservdelar såsom hårddiskar, nätaggregat, RAM, etc.)
 
 ## Technical Account Manager (TAM)
 
