@@ -121,8 +121,13 @@ Thank you for choosing Safespring's services. We're excited to work with you!
 
         .selection-icon {
             position: absolute;
-            right: 30px;
-            top: 18px;
+            right: 11px;
+            top: 9px;
+            padding: 10px 9px 6px 9px;
+            border-radius: 100px;
+            background-color: var(--cloud-blue-color);
+            color: var(--middle-blue-color);
+            z-index: -2;
         }
 
         /* Checkboxar */
@@ -138,6 +143,9 @@ Thank you for choosing Safespring's services. We're excited to work with you!
 
         .form-field.has-content label {
             transform: translateY(-215%);
+            color: #3C9BCD;
+            font: 400 12px/12px 'Hind';
+            letter-spacing: 0.5px;
             background-color: #fafefe;
         }
 
@@ -149,10 +157,6 @@ Thank you for choosing Safespring's services. We're excited to work with you!
             background-color: #fafefe;
         }
 
-
-        .form-field.has-content.invalid input[type="email"] {
-            border: solid 0,5px red;
-        }
 
 </style>
 
