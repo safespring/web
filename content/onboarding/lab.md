@@ -27,6 +27,8 @@ To get started, simply fill out the form below with your user and account inform
 
 Thank you for choosing Safespring's services. We're excited to work with you!
 
+{{< distance >}}
+
 <style>
         /* Formulärcontainer */
         form {
