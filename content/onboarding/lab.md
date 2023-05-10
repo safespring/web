@@ -214,11 +214,11 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         <label for="gatekeeper-name"><i class="fas fa-user-gear"></i>&nbsp;&nbsp;&nbsp;Name</label>
     </div>
     <div class="form-field">
-        <input type="tel" id="gatekeeper-phone" name="gatekeeper-phone" required>
+        <input type="tel" id="gatekeeper-phone" name="Extra.1683706862870" required>
         <label for="gatekeeper-phone"><i class="fa-kit fa-solid-mobile-screen-button-gear"></i>&nbsp;&nbsp;&nbsp;Mobile</label>
     </div>
     <div class="form-field">
-        <input type="email" id="gatekeeper-email" name="gatekeeper-email" required>
+        <input type="email" id="gatekeeper-email" name="Extra.1683706879354" required>
         <label for="gatekeeper-email"><i class="fa-kit fa-solid-envelope-gear"></i>&nbsp;&nbsp;&nbsp;Email</label>
     </div>
     <h2>Acceptence</h2>
