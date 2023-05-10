@@ -1,7 +1,7 @@
 ---
 title: "Safespring On-Premise Cloud"
 language: "Se"
-date: 2023-04-27
+date: 2023-05-10
 draft: false
 intro: "Få hjälp med att sätta upp din egen molninfrastruktur som vi underhåller. Då får du kraften från molnet - i ditt datacenter."
 background: ""
@@ -98,6 +98,9 @@ Maximera potentialen hos dina maskininlärnings- och AI-projekt genom att lägga
 
 ## Tillgänglighet
 
+Det här avnittet är under produktion och kommer tas fram under 2023.
+
+<!--
 {{< ingress >}}
 Safespring OnPrem Cloud erbjuder ett Service Level Agreement (SLA) med tillgänglighet på 99,9% för Compute och Storage Service API.
 {{< /ingress >}}
@@ -116,7 +119,7 @@ För att SLA:n ska gälla krävs det att det finns tillräckliga resurser i proj
 | Compute | 6 fysiska hosts                                           | Ledig kapacitet i klustret motsvarande minst en fysisk host |
 | Storage | 12 fysiska hosts, med minst 8 drives per host             | Kluster fyllt till mindre än 70% av maxkapacitet            |
 | API     | 3 fysiska hosts för backend som körs i 3 separata chassin |                                                             |
-
+-->
 
 ### Kundens ansvar
 Kunderna ansvarar för att övervaka sina egna instanser och säkerställa att deras tjänster fungerar efter ett avbrott. Kunden ansvarar för följande:
@@ -157,6 +160,9 @@ Presentation och diskussion kring Safesprings aktuella och planerade produktutve
 {{% /accordion %}}
 
 ## Support
+
+Denna sektion är under produktion och kommer tas fram under 2023.
+<!--
 {{< ingress >}}
 Vi på Safespring förstår att tillgänglig och effektiv support är avgörande för att säkerställa en smidig användning av vår On-Premise Cloud-tjänst. 
 {{< /ingress >}}
@@ -172,6 +178,6 @@ Kunder har tillgång till ett telefonnummer för nödsupport utanför arbetstid.
 {{% /accordion %}}
 
 Med Safesprings engagerade supportteam kan du känna dig trygg i att få snabb och professionell hjälp när du behöver det mest, vilket säkerställer en problemfri användning av Safespring On-Premise Cloud.
-
+-->
 
 {{< accordion-script >}}
