@@ -127,8 +127,6 @@ I sammanhanget med OCRE är GÉANT en av huvudparterna i OCRE-projektet. GÉANT,
 GÉANTs roll inom OCRE innebär att de hjälper till att förhandla fram avtal med molntjänstleverantörer, tillhandahålla en plattform för tillgång till dessa tjänster, och stödja forskningssamhället i att utnyttja dessa resurser på bästa sätt. GÉANTs breda nätverk och erfarenhet inom forskning och utbildning gör dem till en viktig partner i OCRE-projektet.
 {{% /accordion %}}
 
-- Sunet
-
 ## Ordlista
 Här är en lista över ord och begrepp som förklaras i texten om Safespring och deras tjänsteleverans till SciLifeLab. För att hjälpa till att förstå texten bättre och för att skapa en mer komplett bild av vad Safespring och SciLifeLab gör tillsammans.
 
