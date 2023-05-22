@@ -25,24 +25,22 @@ toc: "I denna artikel"
 Safespring levererar en molnbaserad VM- och lagringstjänst till SciLifeLab, den största nationella forskningsinfrastrukturen för life science i Sverige. 
 {{< /ingress >}}
 
-Tjänsten möter höga krav på prestanda, nätverk, säkerhet och lagring för att möta SciLifeLabs specifika behov. Safespring arbetar tillsammans med SciLifeLab för att leverera en flexibel och dynamisk infrastruktur som är lättanvänd för vanliga forskare.
+Safesprings virtuella maskiner och lagring går att automatisera genom API. Det ger SciLifeLab flexibilitet att anpassa resurserna vid varje givet tillfälle och optimerar kostnader och prestanda i realtid.
 
-- Modernisering,
-- automatisering och 
-- OCRE.
+SciLifeLabs har höga krav på [prestanda och nätverk](#prestanda) samt [lagring och säkerhet](#sakerhet) för att möta deras specifika behov. Safespring arbetar tillsammans med SciLifeLab för att leverera en flexibel och dynamisk infrastruktur som är lättanvänd för vanliga forskare.
 
-{{% accordion title="Prestanda och nätverk" %}}
-Safespring erbjuder en rad olika VM-flavors på en flexibel IaaS-plattform som enkelt kan anpassas efter kundernas krav. VM-flavors sträcker sig från 1VCPU till 128 VCPUs och från 1 GB till 256 GB RAM. Safespring har även möjlighet att lägga till nya VM-flavorer allt eftersom kundernas krav förändras över tid. 
+{{% accordion title="Prestanda och nätverk" id="prestanda" %}}
+Safespring erbjuder en rad olika VM-flavors på en flexibel IaaS-plattform som enkelt kan anpassas efter kundernas krav. VM-flavors sträcker sig från 1 vCPU till 128 vCPU och RAM från 1 GB till 256 GB. Safespring har även möjlighet att lägga till nya VM-flavors allt eftersom kundernas krav förändras över tid. 
 
 För att förbättra prestanda och stabilitet använder Safespring en Calico-nätverksplugin för OpenStack, vilket ger förstklassig separation mellan kundens infrastrukturer och minskar belastningen på nätverket. Detta ökar också säkerheten för känsliga data som ofta används inom bioinformatik.
 
-Calico möjliggör hantering av all nätverkstrafik på layer-3 med hjälp av det välettablerade BGP-protokollet. Detta minskar belastningen och komplexiteten jämfört med traditionell layer-2-bridging och ger optimal nätverksprestanda. Safespring tillämpar också security groups, virtuella brandväggsregler, per virtuell maskin för att skydda kundernas känsliga data.
+Calico möjliggör hantering av all nätverkstrafik på layer-3 med hjälp av det välettablerade BGP-protokollet. Detta minskar belastningen och komplexiteten jämfört med traditionell layer-2-bridging och ger optimal nätverksprestanda. Safespring tillämpar också security groups (virtuella brandväggsregler) per virtuell maskin för att skydda kundernas känsliga data.
 {{% /accordion %}}
 
-{{% accordion title="Lagring och säkerhet" %}}
+{{% accordion title="Lagring och säkerhet" id="sakerhet" %}}
 Safespring levererar molnbaserad lagring för att möta SciLifeLabs behov av hög lagringskapacitet för deras datahanterings- och AI-modellhanteringssystem. Safespring använder S3-objektlagring som standard för att möjliggöra lagring av stora mängder data i en skalbar och säker miljö. SciLifeLab använder också Safespring lagring som en byggsten för att bygga forskningsmiljöer.
 
-Safespring upprätthåller ett detaljerat Service-baserat SLA och övervakar teknisk prestanda och servicenivåer för sina system och tjänster 24/7. Safespring använder ITIL4-kompatibla processer, procedurer, uppgifter och checklista för att uppnå detta. All övervaknings- och serviceanalysdata är transparent och tillgänglig för kunden på begäran. 
+Safespring upprätthåller ett detaljerat Service-baserat [SLA](#sla) och övervakar teknisk prestanda och servicenivåer för sina system och tjänster 24/7. Safespring använder ITIL4-kompatibla processer, procedurer, uppgifter och checklista för att uppnå detta. All övervaknings- och serviceanalysdata är transparent och tillgänglig för kunden på begäran. 
 
 Safespring svarar snabbt på alla supportärenden, vilket garanterar att forskare kan utföra sina arbetsuppgifter utan distraktion. Safespring tillhandahåller regelbundna rapporter till kunderna om deras nuvarande tekniska leveransstatus mot SLA och om utvecklingen av nya/uppdaterade tjänstefunktioner.
 {{% /accordion %}}
@@ -54,13 +52,13 @@ SciLifeLab har flera forskningsprogram som är beroende av högpresterande datab
 Två stora forskningsmiljöer och plattformar som SciLifeLab bygger på Safesprings infrastruktur är dataleveransprojektet DDS och AI-projektet Bigpicture. 
 
 {{% accordion title="Dataleveransprojektet DDS" %}}
-DDS står för Data Delivery System och är en central lösning för SciLifeLab som en komplex infrastruktur som producerar forskningsdata. Det är en enhetlig transportlösning för att leverera livsvetenskapsdata från data-producerande tekniska plattformar, såsom DNA-sekvensering, avbildning och proteomik, till forskare över hela Sverige. DDS utnyttjar Safesprings virtuella maskiner och lagringslösningar för att hantera flödet av data mellan producenter och forskare, förväntas nå 3 petabyte under 2023.
+DDS står för Data Delivery System och är en central lösning för SciLifeLab som en komplex infrastruktur som producerar forskningsdata. Det är en enhetlig transportlösning för att leverera life science-data från data-producerande tekniska plattformar, såsom DNA-sekvensering, avbildning och proteomik, till forskare över hela Sverige. DDS utnyttjar Safesprings virtuella maskiner och lagringslösningar för att hantera flödet av data mellan producenter och forskare, förväntas nå 3 petabyte under 2023.
 
 [Läs mer om DDS](https://delivery.scilifelab.se)
 {{% /accordion %}}
 
 {{% accordion title="AI-projektet BigPicture" %}}
-BigPicture är ett Horizon2020-projekt där SciLifeLab och ELIXIR-SE har gått samman med många andra europeiska partners för att leverera en patologidatarepositorium. BigPicture är avsett att stödja utvecklingen av artificiell intelligens inom livsvetenskap. 
+BigPicture är ett Horizon2020-projekt där SciLifeLab och ELIXIR-SE har gått samman med många andra europeiska partners för att leverera en patologidatarepositorium. BigPicture är avsett att stödja utvecklingen av artificiell intelligens inom life science. 
 
 Safesprings VM- och lagringstjänster utgör en nyckelkomponent i detta projekt genom att möjliggöra skapandet av en skalbar infrastruktur som uppfyller projektets krav på datahantering och prestanda. SciLifeLab har kunnat utveckla BigPicture-projektet på ett snabbt sätt genom att använda Safespring.
 
@@ -70,9 +68,14 @@ Safesprings VM- och lagringstjänster utgör en nyckelkomponent i detta projekt 
 ### Relevant för EOSC
 EOSC står för European Open Science Cloud och är en planerad molnbaserad plattform som syftar till att ge forskare och andra användare en enkel och säker tillgång till forskningsdata, verktyg och infrastruktur över hela Europa.
 
-Safesprings tjänster stöder SciLifeLabs projekt för att leverera life science till forskare över hela Sverige. Forskare kan använda vistuella maskiner och lagring direkt, samt bygga virtuella forskningsmiljöer på SciLifeLab. Safespring har också nyligen börjat utveckla GPU-backade virtuella maskiner för Protein Folding och analys av bilddata.
+Safesprings tjänster stöder SciLifeLabs projekt för att leverera life science till forskare över hela Sverige. Forskare kan använda vistuella maskiner och lagring direkt, samt bygga virtuella forskningsmiljöer på SciLifeLab. Safespring har också nyligen börjat utveckla [GPU](#gpu)-backade virtuella maskiner för Protein Folding och analys av bilddata.
 
 EOSC-plattformen kommer att underlätta samarbete och delning av data mellan forskare och institutioner i olika länder och discipliner, vilket förväntas leda till ökad innovation och upptäckt av nya insikter. EOSC kommer att bestå av olika tjänster och verktyg som tillhandahålls av både offentliga och privata organisationer, och kommer att följa principerna om FAIR (Findable, Accessible, Interoperable, Reusable) datahantering. EOSC förväntas vara fullt operationellt år 2025.
+
+{{% accordion title="Vad är GPU?" id="gpu"%}}
+GPU står för Graphics Processing Unit och är en processor som är specialdesignad för att hantera grafiskt intensiva uppgifter, som till exempel datorspel och bild- eller videoredigering.
+I detta sammanhang används GPU:er för Protein Folding och analys av bilddata inom forskning.
+{{% /accordion %}}
 
 ## Strategiska mål
 {{< ingress >}}
@@ -101,30 +104,42 @@ För att hantera relationen med SciLifeLab och säkerställa att deras affärsbe
 
 Safespring har också en process för att kontinuerligt förbättra deras tjänster och serviceleveransnivåer genom att lära av incidenter och använda ITIL4-ramverket för att identifiera möjligheter till förbättringar och för att implementera förändringar som stödjer deras kunders affärsbehov. Genom att följa ITIL4-ramverket kan Safespring säkerställa att deras processer och rutiner för hantering av kundrelationer är effektiva och stöder en kontinuerlig förbättring av deras tjänster och serviceleverans.
 
-## Allt från Safespring köps in genom ramavtal
+## Allt köpts in genom ramavtal
 {{< ingress >}}
-Safespring har ett ramvatal som alla inom akademisk sektor kan avropa. 
+Safespring har ett ramvatal genom Open Clouds for Research Environments (OCRE) som forsknings- och utbildningsinstitutioner kan avropa. 
 {{< /ingress >}}
 
-- [OCRE](https://www.ocre-project.eu/services/cloud-suppliers/)
+SciLifeLab köper in tjänster från Safespring genom Sunet och genom OCRE-avtalet. Safespring är direkt ansluten till Sunets nätverk vilket ger hög tillgängliget och snabb förbindelse.
+
+Ett av huvudsyftena med [OCRE](#ocre) är att förenkla och standardisera processen för att skaffa molntjänster, vilket i sin tur kan leda till ökad produktivitet och effektivitet inom forskningssamhället. Genom att tillhandahålla en enda portal för forskare att få tillgång till molntjänster, strävar OCRE efter att göra det lättare för forskare att använda dessa tjänster i sin forskning.
+
+{{% accordion title="Vad är OCRE?" id="ocre"%}}
+Open Clouds for Research Environments (OCRE) är ett EU-finansierat projekt som syftar till att främja användningen av molntjänster och Earth Observation (EO) tjänster inom forskningssamhället. OCRE-projektet strävar efter att underlätta och påskynda användningen av kommersiella molntjänster inom forskning genom att fungera som en brygga mellan forskningssamhället och molntjänstleverantörerna.
+
+Läs mer om [OCRE](https://www.ocre-project.eu/services/cloud-suppliers/).
+{{% /accordion %}}
+
+{{% accordion title="Vad är GÉANT?" %}}
+GÉANT är en europeisk forsknings- och utbildningsnätverksorganisation som sammanför Europas nationella forsknings- och utbildningsnätverk (NRENs). GÉANT stödjer forskning och utbildning över hela Europa genom att tillhandahålla infrastruktur, tjänster och lösningar för datadelning, kommunikation och samarbete.
+
+I sammanhanget med OCRE är GÉANT en av huvudparterna i OCRE-projektet. GÉANT, tillsammans med andra partners, arbetar för att underlätta tillgången till och användningen av molntjänster för forskningssamhället genom OCRE.
+
+GÉANTs roll inom OCRE innebär att de hjälper till att förhandla fram avtal med molntjänstleverantörer, tillhandahålla en plattform för tillgång till dessa tjänster, och stödja forskningssamhället i att utnyttja dessa resurser på bästa sätt. GÉANTs breda nätverk och erfarenhet inom forskning och utbildning gör dem till en viktig partner i OCRE-projektet.
+{{% /accordion %}}
+
 - Sunet
 
 ## Ordlista
 Här är en lista över ord och begrepp som förklaras i texten om Safespring och deras tjänsteleverans till SciLifeLab. För att hjälpa till att förstå texten bättre och för att skapa en mer komplett bild av vad Safespring och SciLifeLab gör tillsammans.
 
 
-{{% accordion title="Virtuell Maskin (VM)" %}}
+{{% accordion title="Virtuell Maskin (VM)" id="vm"%}}
 VM står för virtuell maskin. Det är en programvara som simulerar en dator och låter flera operativsystem köras samtidigt på samma fysiska hårdvara.
 {{% /accordion %}}
 
-{{% accordion title="Service Level Agreement (SLA)" %}}
+{{% accordion title="Service Level Agreement (SLA)" id="sla"%}}
 SLA står för Service Level Agreement och är en överenskommelse mellan två parter om vilken nivå av service som ska levereras och hur den ska mätas och rapporteras.
 I detta sammanhang är det en överenskommelse mellan Safespring och SciLifeLab om vilken nivå av prestanda och service som ska levereras för molntjänsten.
-{{% /accordion %}}
-
-{{% accordion title="Graphics Processing Unit (GPU)" %}}
-GPU står för Graphics Processing Unit och är en processor som är specialdesignad för att hantera grafiskt intensiva uppgifter, som till exempel datorspel och bild- eller videoredigering.
-I detta sammanhang används GPU:er för Protein Folding och analys av bilddata inom forskning.
 {{% /accordion %}}
 
 {{< accordion-script >}}
