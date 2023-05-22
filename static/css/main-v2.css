@@ -527,7 +527,7 @@ blockquote p {
 /* Checkbox toggle */
 
 .inputGroup {
-	background-color: var(--content-color);
+	background-color: transparent;
 	display: block;
 	margin: 10px 0;
 	position: relative;
@@ -537,9 +537,10 @@ blockquote p {
 
 .inputGroup label {
 	padding: 12px 12px 12px 60px;
+	border: 1px solid #D1D7DC;
 	display: block;
 	text-align: left;
-	color: var(--main-color);
+	color: var(--middle-blue-color);
 	cursor: pointer;
 	position: relative;
 	z-index: 2;
@@ -555,7 +556,7 @@ blockquote p {
 	height: 10px;
 	border-radius: 50%;
 	content: "";
-	background-color: var(--main-color);
+	background-color: var(--cloud-blue-color);
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -569,7 +570,7 @@ blockquote p {
 	width: 32px;
 	height: 32px;
 	content: "";
-	border: 2px solid #D1D7DC;
+	border: 1px solid #D1D7DC;
 	background-color: #fff;
 	background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
 	background-repeat: no-repeat;
@@ -585,7 +586,8 @@ blockquote p {
 }
 
 .inputGroup input:checked~label {
-	color: #fff;
+	color: var(--main-color);
+	border: 1px solid var(--cloud-blue-color);
 }
 
 .inputGroup input:checked~label:before {
@@ -595,7 +597,7 @@ blockquote p {
 
 .inputGroup input:checked~label:after {
 	background-color: var(--web-green-color);
-	border-color: var(--main-color);
+	border: 2px solid var(--web-green-color);
 }
 
 .inputGroup input {
@@ -5706,7 +5708,7 @@ ol li::before {
 
 	.accordion {
 		/*background-color: #E9F2F6;*/
-		color: #195f8c !important;
+		color: #195f8c;
 		cursor: pointer !important;
 		padding: 18px 18px 14px 45px !important;
 		width: 100%;
@@ -5721,6 +5723,11 @@ ol li::before {
 		position: relative;
 		padding-left: 30px;
 	}
+
+	.accordion:hover {
+		color: var(--link-color);
+	}
+
 
 	.active-utbildning {
 		border-radius: 5px 5px 0 0;
