@@ -102,7 +102,7 @@ Safespring är en svensk molntjänstleverantör som inte påverkas av amerikansk
 
 För att hantera relationen med SciLifeLab och säkerställa att deras affärsbehov möts och att serviceleveransnivåerna uppfylls, har Safespring och SciLifeLab regelbundna operativa möten där man diskuterar öppna ärenden, nya funktioner och funktionella förbättringar, utnyttjande av tjänster, planerade projekt och andra affärsrelaterade frågor. Dessa möten möjliggör en god kvalitet i leveransen av molntjänster och ger Safespring möjlighet att samarbeta med SciLifeLab för att identifiera och planera tekniska förändringsbegäran som stöder deras affärsbehov.
 
-Safespring har också en process för att kontinuerligt förbättra våra tjänster och serviceleveransnivåer genom att lära av incidenter och använda ITIL4-ramverket för att identifiera möjligheter till förbättringar och för att implementera förändringar som stödjer deras kunders affärsbehov. Genom att följa ITIL4-ramverket kan Safespring säkerställa att deras processer och rutiner för hantering av kundrelationer är effektiva och stöder en kontinuerlig förbättring av deras tjänster och serviceleverans.
+Safespring har också en process för att kontinuerligt förbättra våra tjänster och serviceleveransnivåer genom att lära av incidenter och att identifiera möjligheter till förbättringar. Vi implementerar förändringar som stödjer kundernas affärsbehov.
 
 ## Allt köpts in genom ramavtal
 {{< ingress >}}
