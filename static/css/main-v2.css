@@ -5704,10 +5704,11 @@ ol li::before {
 
 	.accordion-box button {
 		white-space: normal !important;
+		background-color: transparent;
 	}
 
 	.accordion {
-		/*background-color: #E9F2F6;*/
+		background-color: transparent;
 		color: #195f8c;
 		cursor: pointer !important;
 		padding: 18px 18px 14px 45px !important;
