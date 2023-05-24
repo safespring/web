@@ -34,7 +34,7 @@ Tjänsten erbjuder en kombination av molnteknikens flexibilitet och kontrollen �
 ## Fördelar med Safespring On-Premise Cloud
 När du väljer Safespring On-premise Cloud får du en rad fördelar som hjälper din organisation att utnyttja förmånerna med molnteknologi samtidigt som du behåller kontroll över dina resurser och data.
 
-{{% accordion title="Safespring levererar hårdvaran" %}}
+{{% accordion title="Dedikerad infrastruktur" %}}
 Safespring är en pålitlig partner som levererar all nödvändig hårdvara för din on-premise cloud. Vi ser till att du får den senaste tekniken, anpassad efter dina specifika krav och behov. Med Safesprings expertis och support får du en problemfri upplevelse när det gäller installation, konfiguration och underhåll av din on-premise cloud. Safespring förser dig med de bästa lösningarna för att driva din verksamhet framåt.
 {{% /accordion %}}
 
@@ -59,14 +59,14 @@ Safespring On-Premise Cloud är utformad med fokus på säkerhet och regelefterl
 {{% /accordion %}}
 
 {{% accordion title="Tekniskt stöd och teknisk kontoansvarig" %}}
-Ni får tillgång till snabb och professionell support samt möjlighet att lägga till en Technical Account Manager (TAM) som en extra tjänst. TAM:en hjälper er med kapacitetsplanering, incidentrapportering och ger insikt i Safesprings nuvarande och kommande produktutbud.
+Ni får tillgång till snabb och professionell support med en Technical Account Manager (TAM). TAM:en hjälper er med kapacitetsplanering, incidentrapportering och ger insikt i Safesprings nuvarande och kommande produktutbud.
 {{% /accordion %}}
 
 
 
 ### Tilläggstjänster för on-premise cloud
 
-Utöka din on-premise cloud med följande tilläggstjänster för att anpassa det efter dina behov och optimera prestanda.
+Börja arbeta med hybrid cloud med följande tilläggstjänster för att anpassa det efter dina behov och optimera prestanda.
 
 {{% accordion title="Kombinera med Safesprings publika molnplattform" %}}
 Förbättra din infrastruktur genom att kombinera din on-premise cloud med en Public Cloud. Dra nytta av följande fördelar:
@@ -92,7 +92,7 @@ Lägg till en fullt managerad Kubernetesplattform till din on-premise cloud för
 Förenkla databashanteringen genom att lägga till en managerad databas till din on-premise cloud. Med denna tjänst får du automatiska säkerhetskopieringar, skalning och underhåll av dina databaser, vilket ger dig mer tid att fokusera på att utveckla och förbättra dina applikationer.
 {{% /accordion %}}
 
-{{% accordion title="Scalout ML plattform" %}}
+{{% accordion title="ML plattform" %}}
 Maximera potentialen hos dina maskininlärnings- och AI-projekt genom att lägga till en Scalout ML plattform till din on-premise cloud. Den här tilläggstjänsten ger dig en skalbar och flexibel plattform som är optimerad för att hantera och distribuera maskininlärningsmodeller, vilket gör det enklare för dig att träna, förutsäga och analysera data.
 {{% /accordion %}}
 

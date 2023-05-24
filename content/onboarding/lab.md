@@ -57,11 +57,12 @@ Thank you for choosing Safespring's services. We're excited to work with you!
             pointer-events: none;
             font-size: 16px;
             font-weight: 400;
-            transition: all 0.2s ease-out;
+            transition: all 0.2s ease;
             background-color: transparent;
             padding: 0 8px;
             margin: 0 -8px;
             font-family: 'Montserrat';
+            line-height: 16px;
             color: var(--middle-blue-color);
         }
 
@@ -71,6 +72,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         .form-field input[type="tel"],
         .form-field select {
             width: 100%;
+            line-height: 16px;
             padding: 10px;
             border: solid 0.5px var(--main-color);
             border-radius: 100px;
@@ -94,9 +96,10 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         .form-field input[type="email"]:valid ~ label,
         .form-field input[type="tel"]:valid ~ label,
         .form-field select:valid ~ label {
-            transform: translateY(-215%);
+            transform: translateY(-205%);
+            -webkit-transform: translateY(-205%);
             color: #3C9BCD;
-            font: 400 12px/12px 'Hind';
+            font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
             background-color: #fafefe;
         }
@@ -106,9 +109,10 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         .form-field input[type="email"]:focus ~ label,
         .form-field input[type="tel"]:focus ~ label,
         .form-field select:focus ~ label {
-            transform: translateY(-215%);
+            transform: translateY(-205%);
+            -webkit-transform: translateY(-205%);
             color: #3C9BCD;
-            font: 400 12px/12px 'Hind';
+            font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
             background-color: #fafefe;
         }
@@ -122,7 +126,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         .selection-icon {
             position: absolute;
             right: 11px;
-            top: 9px;
+            top: 8px;
             padding: 10px 9px 6px 9px;
             border-radius: 100px;
             background-color: var(--cloud-blue-color);
@@ -142,21 +146,111 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         }
 
         .form-field.has-content label {
-            transform: translateY(-215%);
+            transform: translateY(-205%);
+            -webkit-transform: translateY(-205%);
             color: #3C9BCD;
-            font: 400 12px/12px 'Hind';
+            font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
             background-color: #fafefe;
         }
 
         .form-field.has-content.invalid label {
-            transform: translateY(-215%);
+            transform: translateY(-205%);
+            -webkit-transform: translateY(-205%);
             color: red;
-            font: 400 12px/12px 'Hind';
+            font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
             background-color: #fafefe;
         }
 
+/* Checkbox toggle */
+
+.inputGroup {
+    background-color: transparent;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 50px;
+    max-width: 300px;
+}
+
+.inputGroup label {
+    padding: 12px 12px 12px 60px;
+    border: 1px solid #D1D7DC;
+    display: block;
+    text-align: left;
+    color: var(--middle-blue-color);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    border-radius: 50px;
+    max-width: 300px;
+    font: var(--heavy-weight) 17px var(--hind-font);
+}
+
+.inputGroup label:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: "";
+    background-color: var(--cloud-blue-color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    z-index: -1;
+}
+
+.inputGroup label:after {
+    width: 32px;
+    height: 32px;
+    content: "";
+    border: 1px solid #D1D7DC;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.inputGroup input:checked~label {
+    color: var(--main-color);
+    border: 1px solid var(--cloud-blue-color);
+}
+
+.inputGroup input:checked~label:before {
+    transform: translate(-50%, -50%) scale3d(56, 56, 1);
+    opacity: 1;
+}
+
+.inputGroup input:checked~label:after {
+    background-color: var(--web-green-color);
+    border: 2px solid var(--web-green-color);
+}
+
+.inputGroup input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}
 
 </style>
 
@@ -202,8 +296,8 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Choose your site</label><i class="fas fa-angle-down selection-icon"></i>
     </div>
     <div class="form-field">
-        <input type="text" id="project" name="Extra.1683706799384" required>
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name</label>
+        <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
+        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name (Eg. infra.domain.com)</label>
     </div>
     <div class="form-field">
         <input type="email" id="billing" name="Extra.1683706812269" required>
@@ -237,7 +331,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
     </div>
     <div class="inputGroup">
             <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
-           <label for="accept-terms"> General terms and conditions</label>
+           <label for="accept-terms"> General terms & conditions</label>
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">
@@ -252,7 +346,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
                 $('#checkBtn').click(function() {
                     checked = $("input[type=checkbox]:checked").length;
                     if (!checked) {
-                        alert("Choose one or more services to access");
+                        alert("You must accept our terms our conditions");
                         return false;
                     }
                 });
@@ -282,121 +376,3 @@ Thank you for choosing Safespring's services. We're excited to work with you!
     });
 });
 </script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var formFields = document.querySelectorAll('.form-field input, .form-field select');
-
-    formFields.forEach(function(formField) {
-        formField.addEventListener('input', function() {
-            if (this.value.trim() !== '') {
-                this.parentElement.classList.add('has-content');
-                this.parentElement.classList.remove('is-empty');
-            } else {
-                this.parentElement.classList.remove('has-content');
-                this.parentElement.classList.add('is-empty');
-            }
-
-            if (!this.validity.valid) {
-                this.parentElement.classList.add('invalid');
-            } else {
-                this.parentElement.classList.remove('invalid');
-            }
-        });
-
-        // Kör en gång för att sätta rätt klass vid sidoladdning
-        formField.dispatchEvent(new Event('input'));
-    });
-});
-</script>
-
-<!--
-<form id="up-form" name="form_9549uf199d92873fb4d7bb4d3722b75578d98" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-    <h3>1. User info</h3>
-    <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" name="Contact.name" placeholder="User full name">
-    </div>
-    <div class="form"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" name="Contact.cellPhone" placeholder="User mobile phone">
-				<div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1">Including +46 or +47 and only numbers. <br><br><b>Example: +46762117309</b></span></div>
-    </div>
-    <div class="form"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="email" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="User e-mail">
-    </div>
-    <div class="form"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;<div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1"><b>Federated identity</b><br><br>Connected to <b>SUNET</b>: Verify your EPPN at https://sp.swamid.se<br><br>Connected to <b>Uninett</b>: verify your EPPN for Dataporten at minside.dataporten.no</span></div>
-        <input maxlength="512" type="text" name="Contact.custom_27" placeholder="EPPN">
-    </div>
-    <h3>2. Company info</h3>
-    <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" id="up-client-name-input" name="Client.name" placeholder="Company name">
-    </div>
-    <div class="form"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;
-        <select name="Client.custom_6">
-            <option>Connected to site:</option>
-            <option value="Safespring SE">Safespring SE</option>
-            <option value="Safespring NO">Safespring NO</option>
-            <option value="Uninett">Uninett</option>
-            <option value="SUNET">SUNET</option>
-            <option value="SUNET sto3">SUNET sto3</option>
-        </select>
-    </div>
-    <div>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#checkBtn').click(function() {
-                    checked = $("input[type=checkbox]:checked").length;
-                    if (!checked) {
-                        alert("Choose one or more services to access");
-                        return false;
-                    }
-                });
-            });
-        </script>
-        <h3>3. Safespring service</h3>
-        <div class="inputGroup">
-            <input id="Backup" type="checkbox" value="on" name="Contact.custom_30">
-            <label for="Backup">Backup</label>
-        </div>
-        <div class="inputGroup">
-            <input id="Storage" type="checkbox" value="on" name="Contact.custom_31">
-            <label for="Storage">Storage</label>
-        </div>
-        <div class="inputGroup">
-            <input id="Compute" type="checkbox" value="on" name="Contact.custom_32">
-            <label for="Compute">Compute</label>
-        </div>
-        <br>
-    </div>
-    <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" id="up-client-name-input" name="Extra.1567777613170" placeholder="Project name">
-        <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1">In Compute, a project owns virtual machines. Users can be associated with more than one project.</span></div>
-    </div>
-    <div class="form"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" id="up-client-name-input" name="Extra.1567777625449" placeholder="Cost center">
-        <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext shadow-1">For your internal billing reference.</span></div>
-    </div>
-    <div>
-        <h3>4. Message to onboarding:</h3>
-        <textarea maxlength="512" rows="3" name="Extra.1567777636350"></textarea>
-    </div>
-    <!-- REQUIRED FIELDS 
-    <input type="hidden" name="formCid" value="9549">
-    <input type="hidden" name="formId" value="9549uf199d92873fb4d7bb4d3722b75578d98">
-    <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;">
-    <!-- END OF REQUIRED FIELDS 
-    <p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
-    <button type="submit" id="button">Order</button>
-</form>
-<script>
-    (function() {
-        var form = document.getElementById("up-form");
-        if (form) {
-            form.addEventListener("submit", function(ev) {
-                var button = ev.target.querySelector("button[type=submit]");
-                if (button) {
-                    button.disabled = true;
-                }
-            });
-        }
-    })();
-</script>-->
