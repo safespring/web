@@ -25,6 +25,8 @@ Safespring's data centers are directly connected to the NREN network to provide 
 
 We are very proud to have qualified for the OCRE framework agreement. The framework agreement enables us to support the research and education sector with our modern, API-based services that support federated login to make logging in easier. Safespring's services are used by over 60 universities, institutions, and research platforms, and we also hope to be part of your digital future. Please feel free to contact us!
 
+{{< readfile "Safespring and BigPicture" "/content/read-more/bigpicture.md" >}}
+
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Data sovereignty" link="" color="#32cd32">}}
     {{< icon-block icon="fa-kit fa-sunet" text="Connection to Sunet" link="" color="#FA690F">}}
@@ -74,3 +76,5 @@ I am the sales manager in Sweden and can help you use our services that are alre
 {{< inline "Call:" >}} +46 (0)73 533 65 21
 petter.hylin@safespring.com
 {{% /custom-card %}}
+
+{{< accordion-script >}}
