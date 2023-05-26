@@ -1,13 +1,13 @@
 ---
-title: "Safesprings molnplattform för partners"
+title: "En molnplattform för partners vid upphandlingar"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Vår djupa kompetens och våra egenproducerade tjänster tillsammans med samarbeten gör oss mycket flexibla."
+intro: "Vår djupa kompetens och våra egenproducerade tjänster tillsammans med samarbeten gör oss mycket flexibla. Vi kan den nordiska marknaden."
 background: ""
 ---
 
 {{< ingress >}}
-Safespring är en svensk moln-och infrastrukturleverantör som levererar en plattform skapad för korrekt hantering av personuppgifter och känslig data.
+Safespring är en svensk moln- och infrastrukturleverantör som levererar en plattform skapad för korrekt hantering av personuppgifter och känslig data Virtuella servar, storskalig lagring och backup.
 {{< /ingress >}}
 
 ![Safespring Partner Key points](/img/safespring_key-points-partner.svg)
@@ -35,6 +35,13 @@ Safesprings molntjänst berörs inte av domar som ogiltighetsförklaringen av Pr
 Vår plattform har aldrig behövt kompromissa med svensk- eller europeisk lagstiftning. Korrekt hantering av personuppgifter i molnet har varit en debatt länge och det har inte lagts fram en lösning. I stället har många enskilda individer eller företag valt att tolka frågan olika och det enda vi vet är att rättsläget bara blir mera komplext och åtstramat.
 
 Som partners till Safespring kan ni garantera era kunder en korrekt hantering av personuppgifter och annan känslig data utan kompromiss. Med datacenter i Sverige och som ett helt svenskt bolag garanterar vår plattform trygghet, både tekniskt och juridiskt, att data stannar i Sverige och hanteras korrekt.
+
+{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
+
+{{< inline "Ring" >}} +46 (0)73 533 65 21  
+petter.hylin@safespring.com
+{{% /custom-card %}}
 
 ## Några av våra partners
 
