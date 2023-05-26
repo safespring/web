@@ -2,7 +2,7 @@
 title: "En flexibel och säker molntjänst för life science forskning"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 darkmode: "off"
 section: "User case"
 intro: "Läs om Safesprings leverans av en molnbaserad VM- och lagringstjänst till SciLifeLab, Sveriges största forskningsinfrastruktur för life science. Tjänsten stödjer SciLifeLabs behov av integration med högteknologiska analysmetoder, hantering av stora mängder forskningsdata och tvärvetenskapliga samarbeten."
