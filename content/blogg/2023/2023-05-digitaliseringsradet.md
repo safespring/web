@@ -48,17 +48,4 @@ Källa: [Regeringskansliet](https://www.regeringen.se/rattsliga-dokument/proposi
 
 {{% /accordion %}}
 
-{{% accordion title="50-årsplanen för IT-sektorn: Ett långsiktigt, strategiskt perspektiv" id="50-year-plan" %}}
-
-50-årsplanen syftar till att skapa en långsiktig vision för IT-sektorn i Sverige. Planen identifierar viktiga utmaningar och möjligheter som branschen står inför, och föreslår strategiska åtgärder för att säkerställa dess fortsatta utveckling och konkurrenskraft. Den betonar betydelsen av inhemsk industri, framtida kompetensförsörjning och Sveriges roll i Europa.
-
-Planen tar upp frågor kring dataskydd, sekretess och användningen av molntjänster, och diskuterar hur dessa relaterar till svensk och europeisk lagstiftning. Den betonar behovet av att följa dessa lagar även i digitaliserade myndigheter, och föreslår att regeringen bör ta ett mer aktivt ledarskap i att styra normer på marknaden genom offentlig upphandling.
-
-50-årsplanen belyser också behovet av att decentralisera rimlighetsbedömningar till varje enskild myndighet, men varnar för att detta kan överföra ansvaret för långsiktiga, strategiska beslut till verksamheter vars uppdrag inte är att överväga eller ta ansvar för sådana beslut. Planen uppmanar regeringen och digitaliseringsrådet att istället fokusera på de större strategiska utmaningarna för inhemsk industri och Sveriges plats i Europa.
-
-Källa: [Regeringskansliet](https://www.regeringen.se/rattsliga-dokument/proposition/2023/03/prop.-20222397)
-
-{{% /accordion %}}
-
-
 {{< accordion-script >}}
