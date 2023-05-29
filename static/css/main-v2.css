@@ -1248,12 +1248,20 @@ color: var(--unCheckedColor);
 			font: 300 40px/1.1 var(--hind-font) !important;
 		}
 	}
+
 	.heading-default-single {
 		padding: 15% 5% 5% 5%;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
 		gap: 5%;
+		transition: all ease 0.5s;
+	}
+
+		@media only screen and (min-width: 1500px) {
+		.heading-default-single {
+			padding: 12% 5% 3% 5%;
+		}
 	}
 
 	.heading-default-single h1{
