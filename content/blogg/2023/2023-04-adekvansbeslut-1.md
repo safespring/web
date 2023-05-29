@@ -2,7 +2,7 @@
 title: "Relevans i ett nytt adekvansbeslut?"
 date: "2023-04-17"
 intro: "I denna text analyseras EU-kommissionens adekvansbeslut för dataöverföringar till USA och dess inverkan på europeiska verksamheter och medborgares rättigheter. Vi diskuterar även strategier för att säkerställa digital suveränitet och långsiktig hållbarhet i IT-miljöer för europeiska företag och myndigheter."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: ""
