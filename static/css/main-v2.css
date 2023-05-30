@@ -58,7 +58,6 @@ pre {
 	max-width: 800px !important;
 	padding: 60px 30px 20px 30px !important;
 	border-radius: 10px !important;
-	overflow: scroll !important;
 	white-space: pre-wrap;
 	/*margin: 0 13px  13px 0 !important;*/
 }
@@ -1248,15 +1247,23 @@ color: var(--unCheckedColor);
 			font: 300 40px/1.1 var(--hind-font) !important;
 		}
 	}
+
 	.heading-default-single {
 		padding: 15% 5% 5% 5%;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
 		gap: 5%;
+		transition: all ease 0.5s;
 	}
 
-	.heading-default-single h1{
+		@media only screen and (min-width: 1500px) {
+		.heading-default-single {
+			padding: 12% 5% 3% 5%;
+		}
+	}
+
+	.heading-default-single h1 {
 		color: var(--main-color);
 		font: 300 60px/1 var(--hind-font);
 	}

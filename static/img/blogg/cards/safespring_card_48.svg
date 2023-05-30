@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="250" viewBox="0 0 350 250">
+  <defs>
+    <clipPath id="clip-safespring_card_49">
+      <rect width="350" height="250"/>
+    </clipPath>
+  </defs>
+  <g id="safespring_card_49" clip-path="url(#clip-safespring_card_49)">
+    <rect width="350" height="250" fill="#e7eff3"/>
+    <rect id="Rectangle_423" data-name="Rectangle 423" width="68.503" height="46.803" rx="9" transform="translate(198.254 124) rotate(90)" fill="#9f7ac2"/>
+    <rect id="Rectangle_421" data-name="Rectangle 421" width="133" height="84" rx="9" transform="translate(95.345 89)" fill="#ee3c39"/>
+    <path id="blå" d="M9,0H49a0,0,0,0,1,0,0V46.8a0,0,0,0,1,0,0H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0Z" transform="translate(198.254 124) rotate(90)" fill="#263b70"/>
+    <rect id="gul" width="97.376" height="79.803" rx="9" transform="translate(254.655 57.497) rotate(90)" fill="#f7c72a"/>
+    <path id="Rectangle_426" data-name="Rectangle 426" d="M9,0H65.873a0,0,0,0,1,0,0V44.493a9,9,0,0,1-9,9H0a0,0,0,0,1,0,0V9A9,9,0,0,1,9,0Z" transform="translate(228.345 89) rotate(90)" fill="#87c4b2"/>
+    <path id="vit" d="M9,0H30.873a0,0,0,0,1,0,0V14.4a9,9,0,0,1-9,9H0a0,0,0,0,1,0,0V9A9,9,0,0,1,9,0Z" transform="translate(198.254 124) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

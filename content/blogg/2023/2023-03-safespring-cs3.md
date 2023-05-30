@@ -33,7 +33,6 @@ Som en ledande leverantör av molnbaserade tjänster för forskning och utbildni
 Vi är stolta över att vara med och presentera Sunet Drive på CS3-konferensen och ser fram emot att diskutera de senaste trenderna inom vetenskapligt samarbete med våra kollegor.
 {{% /custom-card %}}
 
-
 {{< distance >}}
 
 ### Vad är Sunet Drive?
