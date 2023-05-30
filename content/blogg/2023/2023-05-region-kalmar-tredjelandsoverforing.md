@@ -3,7 +3,7 @@ title: "Så påverkas vi i Sverige när amerikanska staten tar del av utkontrakt
 date: "2023-05-29"
 publishDate: "2023-05-24"
 intro: "I denna artikel diskuterar Fredric hur svensk offentlighet och dataskydd påverkas av amerikansk utkontraktering."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: ""
