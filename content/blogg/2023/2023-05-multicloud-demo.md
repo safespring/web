@@ -16,13 +16,22 @@ toc: "Table of contents"
 {{< author-jarle >}}
 
 {{< ingress >}}
+Explore the power of infrastructure as code (IAC) with this guide on 
+creating a scalable web application using multiple OpenStack sites. 
+Learn how to utilize Terraform for infrastructure provisioning, Ansible 
+for system configuration, and how these tools, in combination with DNS 
+round-robin, can offer a dynamic and scalable solution for your web services.
+{{< /ingress >}}
+
 In previous posts, we have shown the power of combining Terraform for
 infrastructure provisioning and Ansible for configuring operating systems on
 the instances in the infrastructure. In this blog post, we take it one step
 further. We will show a minimal example of how to scale up web service backends
 across multiple sites and use an API programmable DNS servcie (Gandi) to
 maintain A records for those backends, effectively scaling the service by means
-of DNS round-robin (RR). This is the simplest possible approach for such an
+of DNS round-robin (RR). 
+
+This is the simplest possible approach for such an
 implementation, however, this can be expanded by replacing the simple DNS RR
 with a service discovery mechanism (like Consul for instance) to enable more
 dynamic behaviors and even health checks ensuring that only healthy service are
@@ -31,17 +40,16 @@ scale Kubernetes clusters, thus enabling horizontal scaling, continous
 delivery, and all the Cloud native bells and whistles you want to deliver
 microservices and applications that scale horizontally; in fact this is exactly
 what our partner Elastisys does.
-{{< /ingress >}}
 
 ## Prerequisites
-1. This blog post assumes you use the open source Terraform CLI. Terraform CLI
+This blog post assumes you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
 verify their integrity. There is also the official [Terraform documentation][tfdocs].
-1. A basic understanding of Ansible playbooks and inventories is also necessary.
-1. Some basic usage of the [OpenStack CLI][osclidoc] will also be required.
-1. A basic understanding of DNS and round-robin (RR) behavior.
-1. The blog post about [Safespring community terraform modules][tfmodulesblog]
+- A basic understanding of Ansible playbooks and inventories is also necessary.
+- Some basic usage of the [OpenStack CLI][osclidoc] will also be required.
+- A basic understanding of DNS and round-robin (RR) behavior.
+- The blog post about [Safespring community terraform modules][tfmodulesblog]
 
 ## Overview
 
@@ -49,13 +57,12 @@ The following animated drawing shows the concept of the demonstration. Click in
 the drawing to cycle through the screens.
 
 1. No infra, DNS or services exist yet.
-1. One back-end service exists in the Safespring sto1 sandbox project.
-1. One instance is added to the PSNC site, yielding one back-end service in each site.
-1. A records pointing towards the IP addresses of the instances across sites is added.
-1. Scaling up the service with `count` parameters.
-1. Scaling even further (not part of the demo)
-1. Automated scaling using feedback based on service response times (not part of the demo  )
-
+2. One back-end service exists in the Safespring sto1 sandbox project.
+3. One instance is added to the PSNC site, yielding one back-end service in each site.
+4. A records pointing towards the IP addresses of the instances across sites is added.
+5. Scaling up the service with `count` parameters.
+6. Scaling even further (not part of the demo).
+7. Automated scaling using feedback based on service response times (not part of the demo).
 
 <iframe src="/img/eosc-multicloud-demo.sozi.html"  width="100%" height="500" style="border:0"></iframe>
 
@@ -64,12 +71,11 @@ the drawing to cycle through the screens.
 
 <script data-autoplay="true" data-loop="true" data-speed="2" async id="asciicast-kCn38aGPomo6FvSCjqCDAukoM" src="https://asciinema.org/a/kCn38aGPomo6FvSCjqCDAukoM.js"></script>
 
+## Start scale up web service backends
 All the files in the demo is available on [the Safespring community Github
-repository][mcdemo].
+repository][mcdemo]. Keep reading to understand what happens in further detail.
 
-Keep reading to understand what happens in further detail.
-
-## Using multiple clouds from the same Terraform code and state
+### Using multiple clouds from the same Terraform code and state
 
 Terraform has a handy feature that let us configure multiple instances of the
 the same type of provider and use aliases to differentiate which one will be used
@@ -115,7 +121,7 @@ terraform {
 Note also that the aliases of the OpenStack provider instances need to be
 declared in the `configuration_aliases` field.
 
-## Web back end instances in cloud number one (Safespring sto1)
+### Web back end instances in cloud number one (Safespring sto1)
 
 We start by declaring Terraform desired state for instances in the sto1
 Safespring datacenter, like this (`safespring.tf`):
@@ -203,7 +209,7 @@ To summarize: applying only this code will create the keypair (pubkey), the
 security group with rules and one instance in the `sandbox` OpenStack project
 in the `sto1` Safespring site.
 
-## About the connection between Terraform and Ansible
+### About the connection between Terraform and Ansible
 
 Terraform keeps its own account of all objects it provisions together with its
 metadata. This is called "state," and it is stored in the local directory where
@@ -227,7 +233,7 @@ the `role` parameter. In the next chapter, you'll see how the role parameter can
 be picked up and used as a host group to configure services on a set of
 instances with an Ansible playbook.
 
-## Configuring the web service on back end instances in Safespring
+### Configuring the web service on back end instances in Safespring
 
 We configure a minimal back end http service using an Ansible playbook like
 this (`configure.yaml`):
@@ -304,7 +310,7 @@ obtained from the Ansible Terraform Inventory Python script to configure a
 web service (Nginx) that serves a minimal greeting that includes the instance'
 hostname (mc-safespring-sto1-1.saft.in) over HTTP on port 80.
 
-## Configuring new back ends in a different cloud
+### Configuring new back ends in a different cloud
 
 In Poland, we work together with Poznan Supercomputing and Networking Center
 (PSNC). They also provide an OpenStack-based IaaS, however with a slightly
@@ -410,7 +416,7 @@ This code will allocate a public IPv4 address from a pool of floating IP
 addresses and associate it with the instance id(s) according to the same
 `count.index` cycle as the instances.
 
-## Configuring the web service on back-end instances in PSNC
+### Configuring the web service on back-end instances in PSNC
 
 And now the beauty of automation pays off because the only thing necessary to
 do now is to run the Ansible playbook again with the updated inventory that the
@@ -450,7 +456,7 @@ up correctly, but in the new PSNC instance, nothing has been done yet, so it
 will close that gap and end up converging to the desired state for all hosts in the
 group.
 
-## Configuring round-robin (RR) load balancing using DNS
+### Configuring round-robin (RR) load balancing using DNS
 
 Any DNS provider can be used really, however, to stay away from any problematic
 US-owned services it is best to find a European company. This is why we chose
@@ -471,6 +477,7 @@ resource "gandi_livedns_record" "rrlb" {
   type   = "A"
   values = concat(tolist([for i in module.sto1_instances : i.IPv4]), openstack_networking_floatingip_v2.floatip_1.*.address)
 }
+```
 
 Here we create A records for all IPv4 addresses for instances in both
 Safespring and PSNC OpenStack IaaSes by concatenating the lists of IPv4
@@ -494,7 +501,7 @@ Here we make 100 curl requests against www.mcdemo.saft.in, sort them and
 collapse them into unique strings. This shows that both the Safespring and the PSNC
 instances are taking part in the serving of web requests.
 
-## Scaling up (and down)
+### Scaling up (and down)
 
 Armed with a setup like this the only thing we need, to scale the setup, is to
 change some count parameters and run `terraform apply` and re-run the same
@@ -520,6 +527,29 @@ done|sort |uniq
 <html><h1>Welcome to mc-safespring-sto1-2</h1></html>                                                                              
 <html><h1>Welcome to mc-safespring-sto1-3</h1></html>
 ```
+
+
+
+## Summary
+
+### Harnessing the Power of Infrastructure as Code
+In conclusion, the power of Infrastructure as Code (IAC) lies in its ability to seamlessly scale web applications across multiple OpenStack sites. By leveraging tools like Terraform and Ansible, we can automate the provisioning of infrastructure and system configuration, respectively. The integration of these tools with DNS round-robin for load balancing allows us to create a dynamic and scalable solution for web services.
+
+### Enhancing Scalability and Resilience
+While this guide presented a simple implementation, it’s possible to introduce more sophisticated elements such as service discovery mechanisms and health checks for further optimization. Ultimately, these methodologies can be applied to provision and scale Kubernetes clusters, supporting continuous delivery and other cloud-native features.
+
+### Final Thoughts
+As we continue to explore the possibilities of IAC, we hope this guide serves as a valuable stepping stone in your journey to building scalable, resilient, and efficient web services.
+
+{{% note "Read more" %}}
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
+
+-- [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)  
+-- [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)  
+-- [Integrating Terraform and ansible for efficient resource management](/blogg/2022-05-terraform-ansible)  
+-- [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)  
+
+{{% /note %}}
 
 [tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
 [ati]: https://github.com/safespring-community/utilities/blob/main/ati/terraform.py
