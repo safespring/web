@@ -2,7 +2,7 @@
 title: "Så bör regeringens IT-strategi stärkas genom Digitaliseringsrådet"
 date: "2023-05-29"
 publishDate: "2023-05-29"
-intro: "Digitaliseringsrådet har fått förnyat uppdrag fram till 2026. Samtidigt ligger prop 2022/23:97 för beslut om sekretessundantag vid utkotraktering av It-drift. "
+intro: "Digitaliseringsrådet har fått förnyat uppdrag fram till 2026. Samtidigt ligger prop 2022/23:97 för beslut om sekretessundantag vid utkontraktering av It-drift. "
 draft: false
 tags: ["Svenska"]
 showthedate: true

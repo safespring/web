@@ -43,6 +43,22 @@ verify their integrity. There is also the official [Terraform documentation][tfd
 1. A basic understanding of DNS and round-robin (RR) behavior.
 1. The blog post about [Safespring community terraform modules][tfmodulesblog]
 
+## Overview
+
+The following animated drawing shows the concept of the demonstration. Click in
+the drawing to cycle through the screens.
+
+1. No infra, DNS or services exist yet.
+1. One back-end service exists in the Safespring sto1 sandbox project.
+1. One instance is added to the PSNC site, yielding one back-end service in each site.
+1. A records pointing towards the IP addresses of the instances across sites is added.
+1. Scaling up the service with `count` parameters.
+1. Scaling even further (not part of the demo)
+1. Automated scaling using feedback based on service response times (not part of the demo  )
+
+
+<iframe src="/img/eosc-multicloud-demo.sozi.html"  width="100%" height="500" style="border:0"></iframe>
+
 ## TL;DR
 <div style="margin-bottom:50px;"></div>
 
