@@ -1,6 +1,6 @@
 ---
 title: "Creating a multi-cloud web service from scratch"
-date: "2023-05-30"
+date: "2023-06-07"
 intro: "This post shows infrastructure as code (IAC) that enables zero to infinate scaling of a minimal example web application using multiple OpenStack sites and DNS round-robin (RR)for loadbalancing by means of Terraform and Ansible"
 draft: false
 tags: ["English"]
