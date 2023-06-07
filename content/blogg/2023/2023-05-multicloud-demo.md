@@ -58,7 +58,7 @@ the drawing to cycle through the screens.
 
 1. No infra, DNS or services exist yet.
 2. One back-end service exists in the Safespring sto1 sandbox project.
-3. One instance is added to the PSNC site, yielding one back-end service in each site.
+3. One instance is added to the European cloud site, yielding one back-end service in each site.
 4. A records pointing towards the IP addresses of the instances across sites is added.
 5. Scaling up the service with `count` parameters.
 6. Scaling even further (not part of the demo).
@@ -312,19 +312,18 @@ hostname (mc-safespring-sto1-1.saft.in) over HTTP on port 80.
 
 ### Configuring new back ends in a different cloud
 
-In Poland, we work together with Poznan Supercomputing and Networking Center
-(PSNC). They also provide an OpenStack-based IaaS, however with a slightly
+In Poland, we work together with another European Cloud providor. They also provide an OpenStack-based IaaS, however with a slightly
 different setup with regard to the network stack in the OpenStack platform.
 
 In our demo, we'll show that the Safespring community Terraform modules also can
-be used to provision instances on the PSNC OpenStack IaaS with only a few
+be used to provision instances on the other European Cloud providor's OpenStack IaaS with only a few
 additional lines of Terraform code for allocating and attaching floating IP
 addresses to instances. If we were to use another Safespring site as the second
 (or even more) OpenStack IaaS, only the variation of providers and aliases
 would be necessary.
 
 The code for ssh-key, security group with rules and instance is in fact
-identical except for using a different provider alias which points to the PSNC
+identical except for using a different provider alias which points to the other European Cloud providor's
 OpenStack cloud entry in the local `clouds.yaml` file, like this:
 
 ```hcl
@@ -391,7 +390,7 @@ module "psnc_dcw_instances" {
 Note, that the `image` and `flavor` parameters need to be specified since the
 built-in defaults for the Safespring modules specifies Safespring sepcific
 image and flavor. And similarly, as with Safespring, the default instance count
-in PSNC is `1`.
+in the other European Cloud providor is `1`.
 
 This code is, however, not enough in order to make instances available on the
 Internet in the same way as it was using the Safespring IaaS. To do that we
@@ -416,12 +415,12 @@ This code will allocate a public IPv4 address from a pool of floating IP
 addresses and associate it with the instance id(s) according to the same
 `count.index` cycle as the instances.
 
-### Configuring the web service on back-end instances in PSNC
+### Configuring the web service on back-end instances
 
 And now the beauty of automation pays off because the only thing necessary to
 do now is to run the Ansible playbook again with the updated inventory that the
 new Terraform state represents. Namely, the `os_metadata_role=http_backend`
-host group now contains both the Safespring and the PSNC instance(s).
+host group now contains both the Safespring and the the other European Cloud providor instance(s).
 
 ```shell
 $ ansible-playbook -i ati configure.yaml
@@ -452,7 +451,7 @@ mc-safespring-sto1-1.saft.in : ok=4    changed=0    unreachable=0    failed=0   
 ```
 
 And the playbook will find that in the Safespring instance, all was already set
-up correctly, but in the new PSNC instance, nothing has been done yet, so it
+up correctly, but in the new second Cloud providor instance, nothing has been done yet, so it
 will close that gap and end up converging to the desired state for all hosts in the
 group.
 
@@ -480,8 +479,8 @@ resource "gandi_livedns_record" "rrlb" {
 ```
 
 Here we create A records for all IPv4 addresses for instances in both
-Safespring and PSNC OpenStack IaaSes by concatenating the lists of IPv4
-addresses from Safespring module outputs and PSNCs floating IP addresses
+Safespring and the other European Cloud providors's OpenStack IaaSes by concatenating the lists of IPv4
+addresses from Safespring module outputs and the other European Cloud providor's floating IP addresses
 respectively. All A-records point to the name `www.mcdemo.saft.in`, hence DNS
 will load balance across all those IPv4 addresses in a round-robin fashion.
 
@@ -498,7 +497,7 @@ done|sort |uniq
 ```
 
 Here we make 100 curl requests against www.mcdemo.saft.in, sort them and
-collapse them into unique strings. This shows that both the Safespring and the PSNC
+collapse them into unique strings. This shows that both the Safespring and the other European Cloud providor's
 instances are taking part in the serving of web requests.
 
 ### Scaling up (and down)
