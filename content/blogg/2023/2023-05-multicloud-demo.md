@@ -58,7 +58,7 @@ the drawing to cycle through the screens.
 
 1. No infra, DNS or services exist yet.
 2. One back-end service exists in the Safespring sto1 sandbox project.
-3. One instance is added to the European cloud site, yielding one back-end service in each site.
+3. One instance is added to another European cloud site, yielding one back-end service in each site.
 4. A records pointing towards the IP addresses of the instances across sites is added.
 5. Scaling up the service with `count` parameters.
 6. Scaling even further (not part of the demo).
