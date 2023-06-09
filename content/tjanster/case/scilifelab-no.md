@@ -1,5 +1,5 @@
 ---
-title: "En fleksibel og sikker skyløsning for forskning inenfor livsvitenskap "
+title: "En fleksibel og sikker skyløsning for forskning innenfor livsvitenskap "
 language: "No"
 date: 2023-06-01
 draft: false
