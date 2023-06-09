@@ -113,7 +113,7 @@ Safespring tilbyr en rekke fordeler som gjør det til en pålitelig skytjenestel
 
 {{% accordion title="Compliance" %}}
 
-Safespring er en skytjenesteleverandør som er klar over viktigheten av å oppfylle regler og standarder for å beskytte kundenes data og sikkerhet. Ved å følge regler og standarder sørger Safespring for at deres skytjenester oppfyller kundense krav til sikkerhet og personvern. Safespring er også en del av det europeiske Gaia-X-initiativet, som er en sammenslutning (federation) av tjenestetilbyder innenfor Europa skyinfrastruktur som binder sammen disse og arbeider for europeisk digital suverenitet. Ved å bruke Safesprings skytjenester kan forskere være trygge på at deres data lagres og håndteres i samsvar med kunders behov for sikkerhet, personvern og digital suverenitet.
+Safespring er en skytjenesteleverandør som er klar over viktigheten av å oppfylle regler og standarder for å beskytte kundenes data og sikkerhet. Ved å følge regler og standarder sørger Safespring for at deres skytjenester oppfyller kundense krav til sikkerhet og personvern. Safespring er også en del av det europeiske Gaia-X-initiativet, som er en sammenslutning (federation) av tjenestetilbydere innenfor europeisk skyinfrastruktur som binder sammen disse og arbeider for europeisk digital suverenitet. Ved å bruke Safesprings skytjenester kan forskere være trygge på at deres data lagres og håndteres i samsvar med kunders behov for sikkerhet, personvern og digital suverenitet.
 
 {{% /accordion %}}
 
