@@ -1,11 +1,11 @@
 ---
-title: "En fleksibel og sikker skyløsning for life science forskning"
+title: "En fleksibel og sikker skyløsning for forskning inenfor livsvitenskap "
 language: "No"
 date: 2023-06-01
 draft: false
 darkmode: "off"
 section: "Brukercase"
-intro: "Les om Safesprings leveranse av en skybasert compute VM- og lagringstjeneste til SciLifeLab, Sveriges største forskningsinfrastruktur for life science. Tjenesten støtter SciLifeLabs behov for integrasjon med høyteknologiske analysemetoder, håndtering av store mengder forskningsdata og tverrfaglige samarbeid."
+intro: "Les om Safesprings leveranse av en skybasert compute- og lagringstjeneste til SciLifeLab, Sveriges største forskningsinfrastruktur for life science. Tjenesten støtter SciLifeLabs behov for integrasjon med høyteknologiske analysemetoder, håndtering av store mengder forskningsdata og tverrfaglige samarbeid."
 background: "/safespring-scilifelab.webp"
 card: ""
 socialmedia: ""
@@ -39,7 +39,7 @@ Safespring tilbyr en rekke forskjellige compute-flavors på en fleksibel IaaS-pl
 
 For å forbedre ytelse og stabilitet  nettverket benytter Safespring Calico nettverksplugin for OpenStack, noe som gir førsteklasses separasjon mellom kundens infrastrukturer og reduserer belastningen på nettverket. Dette øker også sikkerheten for sensitive data som ofte brukes innen bioinformatikk.
 
-Calico gjør det mulig å håndtere all nettverkstrafikk på lag 3 ved hjelp av den veletablerte BGP-protokollen, som også benyttes til å gjøre kjenren av Internet robust og redundant. Dette reduserer belastningen og kompleksiteten sammenlignet med tradisjonell lag 2-bridging og gir optimal nettverksytelse. Safespring tilbyr også security groups (virtuelle brannmurregler) som kan benyttes til å styre nettverkstilgang mot grupper av kundens compute instanser, noe som igjen er et lag i perimeter-sikringen av kundens data.
+Calico gjør det mulig å håndtere all nettverkstrafikk på lag 3 ved hjelp av den veletablerte BGP-protokollen, som også benyttes til å gjøre kjernen av internett robust og redundant. Dette reduserer belastningen og kompleksiteten sammenlignet med tradisjonell lag 2-bridging og gir optimal nettverksytelse. Safespring tilbyr også security groups (virtuelle brannmurregler) som kan benyttes til å styre nettverkstilgang mot grupper av kundens compute instanser, noe som igjen er et lag i perimeter-sikringen av kundens data.
 
 {{% /accordion %}}
 
@@ -53,9 +53,15 @@ Safespring svarer raskt på alle support henvendelser, noe som sikrer at forsker
 
 {{% /accordion %}}
 
+{{< distance >}}
+
 ## Forskning som utføres på Safesprings skyplattform
 
-SciLifeLab har flere forskningsprogrammer som er avhengige av høy-ytelse databehandling og lagring av store datamengder for å bygge egne forskningsplattformer på Safesprings elastiske infrastruktur. Safesprings compute tjeneste gjør også at forskerne selv kan be om ressurser på en enkel måte og tilfredsstille deres spesifikke behov for å drive forskningsprosjektene sine på en effektiv måte.
+{{< ingress >}}
+SciLifeLab har flere forskningsprogrammer som er avhengige av høy-ytelse databehandling og lagring av store datamengder for å bygge egne forskningsplattformer på Safesprings elastiske infrastruktur. 
+{{< /ingress >}}
+
+Safesprings compute tjeneste gjør også at forskerne selv kan be om ressurser på en enkel måte og tilfredsstille deres spesifikke behov for å drive forskningsprosjektene sine på en effektiv måte.
 
 To store forskningsmiljøer og plattformer som SciLifeLab bygger på Safesprings infrastruktur er datadelingsprosjektet DDS og AI-prosjektet Bigpicture.
 
@@ -81,7 +87,7 @@ Safesprings compute- og lagringstjenester utgjør en nøkkelkomponent i dette pr
 
 EOSC står for European Open Science Cloud og er en planlagt skybasert plattform som sikter på å gi forskere og andre brukere enkel og sikker tilgang til forskningsdata, verktøy og infrastruktur over hele Europa.
 
-Safesprings tjenester støtter SciLifeLabs prosjekter for å levere life science til forskere over hele Sverige. Forskere kan bruke virtuelle maskiner og lagring direkte, samt bygge virtuelle forskningsmiljøer på SciLifeLab. Safespring har også nylig begynt å utvikle [GPU](#gpu)-støttede virtuelle maskiner for Protein Folding og analyse av bildedata.
+Safesprings tjenester støtter SciLifeLabs prosjekter for å levere livsvitenskap til forskere over hele Sverige. Forskere kan bruke virtuelle maskiner og lagring direkte, samt bygge virtuelle forskningsmiljøer på SciLifeLab. Safespring har også nylig begynt å utvikle [GPU](#gpu)-støttede virtuelle maskiner for Protein Folding og analyse av bildedata.
 
 EOSC-plattformen vil lette samarbeid og deling av data mellom forskere og institusjoner i forskjellige land og disipliner, noe som forventes å føre til økt innovasjon og oppdagelse av nye innsikter. EOSC vil bestå av forskjellige tjenester og verktøy som leveres av både offentlige og private organisasjoner, og vil følge prinsippene om FAIR (Findable, Accessible, Interoperable, Reusable) datahåndtering. EOSC forventes å være fullt operativt i 2025.
 
