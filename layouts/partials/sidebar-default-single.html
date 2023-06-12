@@ -35,13 +35,9 @@
     {{ $currentPage := . }}
     <div class="sidebar-services">
       <h4>      
-        {{ if strings.HasPrefix .RelPermalink "/tjanster" }}Kombinera {{ .Params.cardtitle }} med
-        {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}Kombiner {{ .Params.cardtitle }} med
-        {{ else if strings.HasPrefix .RelPermalink "/en/services" }}Combine {{ .Params.cardtitle }} with
-        {{ else }}
-        {{ if eq .Params.language "No" }}Les mer
-        {{ else if eq .Params.language "En" }}Learn more
-        {{ else }} Utforska {{ end }}
+        {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
+        {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
+        {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
         {{ end }}
       </h4>
       <ul>
@@ -62,7 +58,8 @@
         {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
         <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
         {{ end }}
-        {{ end }}{{ end }}
+        {{ end }}
+        {{ end }}
       </ul>
     </div>
   </div>
