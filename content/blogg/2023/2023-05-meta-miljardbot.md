@@ -3,7 +3,7 @@ title: "Meta bötfällt för dataöverträdelser: Är det bara en symbolisk åtg
 date: "2023-05-24"
 publishDate: "2023-05-24"
 intro: "Fredric skriver i denna artikel om varför USA och EU inte kommer enas om ett dataöverföringsavtal som håller i längden inom överskådlig tid"
-draft: true
+draft: false
 tags: ["Svenska"]
 showthedate: true
 card: ""
