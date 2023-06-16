@@ -33,3 +33,5 @@ Safespring är den svenska publika molnplattformen som uppfyller europeiska data
 	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
 	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
 {{< /icon-block-container >}}
+
+{{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Öppna presentaion" text="Ta en närmare titt på Safespring och vår svenska molnplattform som fokuserar på compliance och hantering av känsliga data och GDPR." >}}
