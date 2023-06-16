@@ -29,7 +29,10 @@
         {{ end }}
       {{ end }}
       {{ if .Params.sidebarphone }}
-        <a style="margin: 50px 0;" class="" href="tel:{{ .Params.sidebarphone }}">Ring: {{ .Params.sidebarphone }}</a>
+        <a style="margin: 50px 0;" class="" href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a><br>
+      {{ end }}
+            {{ if .Params.sidebarmail }}
+        <a style="margin: 50px 0;" class="" href="mailto:{{ .Params.sidebarmail }}">{{ .Params.sidebarmail }}</a>
       {{ end }}
     </div>
     {{ $currentPage := . }}
