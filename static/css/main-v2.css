@@ -7202,4 +7202,104 @@ details[open] summary {
   }
 }
 
+/* ABOUT SAFESPRING PAGE */
+
+.card-title {
+	font-family: var(--hind-font);
+  color: var(--clear-blue-color);
+  margin: 0;
+
+}
+
+.card-text {
+	padding: 3% 20% 20% 20%;
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+}
+
+#sticky-div {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	position: sticky;
+	top: 15vh;
+	background-image: url(/img/background/safespring-map.svg);
+	background-size: cover;
+	border-radius: 20px;
+	width: 60vw;
+	height: 60vh;
+	margin: auto;
+	align-items: flex-end;
+	justify-content: top;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+	#sticky-div {
+		width: 100%;
+		height: 80vh;
+		top: 10vh;
+	}
+	.map {
+		align-items: center !important;
+	}
+	.card-content {
+		right: 0 !important;
+	}
+}
+
+.map {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card-icon {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  width:100px;
+  height: 100px;
+  border-radius: 150px;
+  font-size: 50px;
+  padding: 20px;
+  top:-75px;
+  position: absolute;
+}
+
+.icon-blue {
+	color: var(--main-color);
+	background-color: var(--cloud-blue-color);
+}
+
+.icon-green {
+	color: var(--green-color);
+	background-color: #f4fcf3;
+}
+
+.icon-orange {
+	color: var(--link-color);
+	background-color: #fff6f1;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+  height: 300px; 
+  width: 300px;
+  background: white;
+  border-radius: 40px;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 300px;
+  right: -20vw;
+  z-index: 1;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* END - ABOUT SAFESPRING PAGE */
 

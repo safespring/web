@@ -6,6 +6,7 @@ intro: "Safespring är en svensk molnplattform. Med datacenter i Sverige håller
 background: "safespring-blue-fade2.svg"
 alias:
   "/om-safespring"
+nosidebar: "x"
 ---
 
 {{< ingress >}} 
@@ -13,6 +14,34 @@ Vi på Safespring tycker det är självklart att producera våra tjänster lokal
 {{< /ingress >}}
 
 Detta har många fördelar, såsom bättre prestanda och närhet till våra kunder. Dessutom uppfyller vi lagar och regler såsom GDPR och Arkivlagen som kräver att data inte lämnar landet.
+
+<section>
+</section>
+<section class="map">
+  <div id="sticky-div"></div>
+  <div class="card-content">
+    <div class="card-icon icon-blue"><i class="fa-kit fa-safespring-icon"></i></div>
+    <p class="card-title">Safespring</p>
+    <p class="card-text">Scandinavian Company offering nordic IaaS and PaaS.</p>
+  </div>
+  <div class="card-content">
+    <div class="card-icon icon-green"><i class="fa-solid fa-shield-check"></i></div>
+    <p class="card-title">Compliance</p>
+    <p class="card-text">Regulatory compliance for GDPR. No data transfer to 3:rd countries.</p>
+  </div>
+  <div class="card-content">
+    <div class="card-icon icon-orange"><i class="fa-solid fa-lock"></i></div>
+    <p class="card-title">Datacenter-security</p>
+    <p class="card-text">Secure data center with 100% renewable energy and focus on sustainability.</p>
+  </div>
+    <div class="card-content">
+    <div class="card-icon icon-blue"><i class="fa-solid fa-door-open"></i></div>
+    <p class="card-title">Open Standard</p>
+    <p class="card-text">Flexibility, control over data, interoperability, cost savings, data portability, innovation.</p>
+  </div>
+</section>
+<section>
+</section>
 
 ### Lokalt producerade molntjänster med hög säkerhet
 
