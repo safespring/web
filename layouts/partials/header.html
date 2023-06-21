@@ -39,7 +39,7 @@
   <ul class="megamenu-service-card-list">
     {{ range (where $.Site.RegularPages "Section" $section).ByParam "cardorder" }}
       {{ if and (not (isset .Params "megamenu")) (isset .Params "cardorder") }}
-        <li><a href="{{ .RelPermalink }}">{{ .Params.cardtitle }}</a></li>
+        <li><a href="{{ .RelPermalink }}" class="matomo-track">{{ .Params.cardtitle }}</a></li>
       {{ end }}
     {{ end }}
   </ul>
