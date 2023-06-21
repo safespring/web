@@ -19,6 +19,7 @@ sidebarlinkname2: "Get stared"
 sidebarlinkurl2: "/en/demo"
 socialmedia: "safespring-backup.jpg"
 section: "Public Cloud"
+megamenu: "yes"
 ---
 
 {{< youtube "JCXm-Adpf40">}}

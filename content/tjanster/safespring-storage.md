@@ -19,6 +19,7 @@ socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
     - /safespring-storage/
+megamenu: "yes"
 ---
 
 ![Safespring Storage benefits](/img/safespring-storage-key-points.svg)

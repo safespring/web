@@ -20,6 +20,7 @@ language: "No"
 section: "Safespring Storage"
 Language: "No"
 socialmedia: "/safespring-start.jpg"
+megamenu: "yes"
 ---
 
 ## Safespring lagring som tjeneste

@@ -1,0 +1,13 @@
+<a href="{{ .RelPermalink }}">
+  <div class="megamenu-main-service-card">
+    <div class="cardtitle">
+      <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10"><i class="{{ .Params.cardicon }} icon" style="color: {{ .Params.cardcolor }} !important"></i></div>
+      <h2 style="color: {{ .Params.cardcolor }}">
+        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
+      </h2>
+    </div>
+      <p class="mb-0">
+        {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{ .Params.intro }}{{ end }}
+      </p>
+</div>
+</a>

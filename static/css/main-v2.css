@@ -687,14 +687,16 @@ color: var(--unCheckedColor);
 /* HEADER 2022 */
 
 .site-header {
-	z-index: 99;
-	width: 100%;
 	position: fixed;
-	transition: 0.3s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 	background: linear-gradient(#fafefe 20%, #fafefe00);
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
 }
+
 
 .site-header .darkmode {
 	background: #fafefee3 /*linear-gradient(#fafefe 71%, #fafefe00)*/;
@@ -944,8 +946,7 @@ color: var(--unCheckedColor);
 	}
 	/* And let's fade it in from the left
 	*/
-	#menuToggle input:checked ~ ul
-	{
+	#menuToggle input:checked ~ ul {
 		transform: none;
 		opacity: 1;
 		display: flex !important;
@@ -7303,3 +7304,114 @@ details[open] summary {
 
 /* END - ABOUT SAFESPRING PAGE */
 
+/* MEGA MENU */
+
+.megamenu-wrapper.show {
+  display: flex;
+  opacity: 1;
+  /* Övriga egenskaper för mega menyn när den visas */
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.megamenu-wrapper.hide {
+  animation: fade-slide-up 0.3s ease-in-out forwards;
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-2%);
+  }
+}
+
+.megamenu-wrapper {
+	transition: all ease-out .3s;
+  display: none;
+  transform: translateY(-2%);
+  animation: fade-slide-down 1s cubic-bezier(0, 0, 0.05, 1.08) forwards;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;
+  gap: 80px;
+  background: linear-gradient(transparent, #195f8c20);
+  align-items: stretch;
+  justify-content: center;
+}
+
+.megamenu-main-service{
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.megamenu-main-service-card {
+	transition: all ease-in-out .3s;
+	width: 250px;
+}
+
+.megamenu-main-service-card h2{
+	font-size: 21px !important;	
+}
+
+.megamenu-main-service-card:hover {
+	background-color: #FFFFFF90;
+	border-radius: 20px;
+	padding: 10%;
+	margin: -10%;
+}
+
+.megamenu-service-card-list {
+	list-style: none;
+	content: ">";
+	font-size: 17px;
+	padding-inline-start: 0;
+	margin: 26px 0 0 0 !important;
+}
+
+.megamenu-service-card {
+	transition: all ease-in-out .3s;
+	background-color: #ffffffad;
+	border-radius: 20px;
+	padding: 30px 40px;
+	margin: -30px -40px;
+}
+
+.megamenu-service-card:hover {
+	border-radius: 25px;
+	padding: 40px 50px;
+	margin: -40px -50px;
+}
+
+.megamenu-service-card h3 {
+	color: var(--main-color);
+	margin-top:10px;
+}
+
+.megamenu-service-card-list li {
+	line-height: 1.5;
+}
+
+.megamenu-service-card a {
+	color: var(--clear-blue-color) !important;
+}
+
+.megamenu-service-card a:hover {
+	color: var(--link-color) !important;
+}

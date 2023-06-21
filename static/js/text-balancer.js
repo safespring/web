@@ -102,27 +102,3 @@
     document.addEventListener('readystatechange', initialize);
   }
 })();
-
-// timer-based fallback if text doesn’t appear after three seconds
-(function ()
-{
-  function revealText()
-  {
-    var texts = document.querySelectorAll('.balance-text');
-    if (texts)
-    {
-      for (var index = 0; index < texts.length; index++)
-      {
-        var text = texts[index];
-        if (text.classList)
-        {
-          // classList.replace isn’t supported in older browsers
-          text.classList.remove('balance-text');
-          text.classList.add('balanced-text');
-        }
-      }
-    }
-  }
-
-  setTimeout(revealText, 3000);
-})();

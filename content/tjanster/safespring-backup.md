@@ -22,6 +22,7 @@ aliases:
     - /backup/
     - /safespring-backup/
 section: "Public Cloud" 
+megamenu: "yes"
 ---
 
 {{< readfile "Solution Brief" "/content/read-more/safespring-backup-portal-sv-more.md" >}}

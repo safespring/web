@@ -19,6 +19,7 @@ section: "Service"
 section: "Public Cloud"
 documentation: "Storage"
 socialmedia: "/safespring-start.jpg"
+megamenu: "yes"
 ---
 
 ![Safespring Storage benefits](/img/safespring-storage-key-points.svg)

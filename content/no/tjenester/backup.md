@@ -19,6 +19,7 @@ sidebarlinkname2: "Kontakt"
 sidebarlinkurl2: "/no/demo"
 socialmedia: "safespring-backup.jpg"
 section: "Public Cloud"
+megamenu: "yes"
 ---
 
 {{< youtube "JCXm-Adpf40">}}

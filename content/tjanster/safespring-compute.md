@@ -20,18 +20,21 @@ aliases:
     - /safespring-compute/
 devops: ""
 section: "Public Cloud"
+megamenu: "yes"
 ---
 
-
+ddd
 {{< youtube "iYDi_Hz7A74" >}}
 
 ## Virtuella maskiner till er tjänst
 
-<div class="ingress"><p>En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar.</p></div>
+{{< ingress >}}
+En flexibel och skalbar IT-tjänst som inte kräver hårdvaruinvesteringar.
+{{< /ingress >}}
 
 Safespring är flexibel, fullt automatiserad och baserad på självbetjäning via en portal. Användaren kan själv med få, enkla steg skapa, starta och stoppa virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
 
-<div style="margin-bottom:50px;"></div>
+{{< distance >}}
 
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
@@ -42,17 +45,19 @@ Safespring är flexibel, fullt automatiserad och baserad på självbetjäning vi
     {{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
-<div style="margin-bottom:50px;"></div>
+{{< distance >}}
 
 Safespring Compute är baserad på den marknadsledande molnplattformen OpenStack. Plattformen levereras ifrån säkra datahallar med mycket hög tillgänglighet. Data som lagras i Safespring lämnar aldrig Sverige då datahallarna är placerade inom landets gränser som inte omfattas av ex. Cloud Act, vilket gör att gör att du kan känna dig ännu tryggare.
 
-{{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
+{{< distance >}}
 
-<div style="margin-bottom:50px;"></div>
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="Affärscase" link="/tjanster/case/scilifelab/" linktext="Läs mer" text="Vår Compute-tjänst spelar en avgörande roll i att stödja vetenskaplig forskning. Ett framstående exempel är vårt samarbete med SciLifeLab, där vi hjälper till att driva genombrott inom livsvetenskaperna." >}}
+
+{{< distance >}}
 
 ![Safespring Compute benefits](/img/safespring-compute-central-blocklagring.svg)
 
-<div style="margin-bottom:50px;"></div>
+{{< distance >}}
 
 ### Datahallar inom landets gränser
 Safespring levereras från mycket säkra datahallar med mycket hög tillgänglighet. Eftersom Safespring produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen samt att din Data aldrig lämnar landet, är det enklare att efterleva lagar och regler kring vilken data som kan lagras externt. All data lagras dessutom på krypterade hårddiskar. Tjänsten är flexibel och fullt automatiserad.
