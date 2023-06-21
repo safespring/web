@@ -82,7 +82,7 @@ The company will deliver IT services to businesses that want efficient, secure, 
 </div>
 
 {{< infobox >}}
-{{< info title="Name" name="Blue Safespring AB" >}}
+{{< info title="Name" name="Safespring AB" >}}
 {{< info title="Organization number" name="559075-0245" >}}
 {{< info title="Head office" name="Smidesvägen 12, 171 41 Solna" >}}
 {{< info title="Board" name="Solna, Sweden" >}}

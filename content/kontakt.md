@@ -84,7 +84,7 @@ Bolaget ska leverera IT-tjänster till verksamheter som önskar effektiva, säkr
 </div>
 
 {{< infobox >}}
-{{< info title="Namn" name="Blue Safespring AB" >}}
+{{< info title="Namn" name="Safespring AB" >}}
 {{< info title="Org. nummer" name="559075-0245" >}}
 {{< info title="Huvudkontor" name="Smidesvägen 12, 171 41 Solna" >}}
 {{< info title="Styrelsens säte" name="Solna, Sverige" >}}
