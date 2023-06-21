@@ -12,7 +12,7 @@ noindex: "x"
 
 Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”).
 
-Blue Safespring AB, org. nr. 559075–0245, är personuppgiftsansvariga för behandlingen av Personuppgifterna.
+Safespring AB, org. nr. 559075–0245, är personuppgiftsansvariga för behandlingen av Personuppgifterna.
 
 ## Legal grund
 Den legala grunden för behandlingen av Personuppgifterna för Ändamålet är vårt berättigade intresse att på ett effektivt sätt kunna marknadsföra de tjänster vi erbjuder.

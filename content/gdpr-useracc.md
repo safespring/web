@@ -3,7 +3,7 @@ title: "Information avseende personuppgiftsbehandling – Användarkonto"
 date: 2018-02-21T09:29:44Z
 draft: false
 ---
-Om du har skapat ett användarkonto för någon av Safesprings tjänster kommer Safespring att behandla dina personuppgifter. Detta görs för att vi ska kunna möjliggöra din användning av den aktuella tjänsten (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn och [Fyll i, t.ex. ”din e-mailadress”] (”Personuppgifterna”). Personuppgifterna är nödvändiga för att vi ska kunna upprätta och tillhandahålla ditt användarkonto. Blue Safespring AB, org. nr. 559075–0245, är personuppgiftsansvarigt för behandlingen av Personuppgifterna.
+Om du har skapat ett användarkonto för någon av Safesprings tjänster kommer Safespring att behandla dina personuppgifter. Detta görs för att vi ska kunna möjliggöra din användning av den aktuella tjänsten (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn och [Fyll i, t.ex. ”din e-mailadress”] (”Personuppgifterna”). Personuppgifterna är nödvändiga för att vi ska kunna upprätta och tillhandahålla ditt användarkonto. Safespring AB, org. nr. 559075–0245, är personuppgiftsansvarigt för behandlingen av Personuppgifterna.
 
 Den legala grunden för behandlingen av Personuppgifterna för Ändamålet är att behandlingen är nödvändig för att Safespring ska kunna fullgöra tillhandahållandet av kontot till dig. Safespring kommer att behandla Personuppgifterna så länge ditt konto existerar. Då behandlingen upphör raderas Personuppgifterna.
 
