@@ -23,7 +23,6 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-ddd
 {{< youtube "iYDi_Hz7A74" >}}
 
 ## Virtuella maskiner till er tjänst
