@@ -695,6 +695,7 @@ color: var(--unCheckedColor);
 	background: linear-gradient(#fafefe 20%, #fafefe00);
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
+	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
 
@@ -1002,7 +1003,7 @@ color: var(--unCheckedColor);
 	position: fixed;
 	width: 100%;
 	align-items: center;
-	transition: 0.3s;
+	transition: all ease 0.3s;
 }
 
 .navbar a {
