@@ -10,7 +10,7 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Sv"
+language: "Se"
 toc: ""
 ---
 

@@ -10,7 +10,7 @@ card: "safespring_card_48.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Sv"
+language: "Se"
 toc: ""
 ---
 
