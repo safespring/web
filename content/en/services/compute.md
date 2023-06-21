@@ -18,6 +18,7 @@ socialmedia: "safespring-compute.jpg"
 section: "Service"
 section: "Safespring Compute"
 socialmedia: "/safespring-start.jpg"
+megamenu: "yes"
 ---
 
 {{< ingress >}}
