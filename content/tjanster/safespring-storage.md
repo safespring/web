@@ -49,3 +49,12 @@ Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som repl
 {{% /accordion %}}
 
 {{% accordion-script %}}
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Låt oss bjuda på lunch och en lagringslösning" %}}
+Säkra dina data i molnet. Storskalig lagring är avgörande för alla datadrivna företag. Låt oss bjuda på lunch, boka in en tid idag!
+
+{{< inline "Ring" >}} +46 76-629 25 02
+fredric.wallsten@safespring.com
+{{% /custom-card %}}
+
+{{< distance >}}

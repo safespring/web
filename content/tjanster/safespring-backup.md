@@ -56,3 +56,13 @@ Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Ba
 
 ### Lösning för offsite backup
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Backuptjänst om ni kör TSM lokalt, eller Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Diskutera Backup över en lunch med vår VD" %}}
+Skydda ditt företag med robust backup i molnet. Robust backup är nyckeln till att säkra ditt företags data, oavsett om de är på fysiska eller virtuella servrar.
+
+{{< inline "Ring" >}} +46 76-629 25 02
+fredric.wallsten@safespring.com
+{{% /custom-card %}}
+
+
+{{< distance >}}

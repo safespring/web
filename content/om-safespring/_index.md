@@ -53,6 +53,12 @@ Vi tror att de bästa relationerna skapas med öppenhet och därför har våra t
 
 Safespring grundades 2014 som en del av IPnett och vann en upphandling för att leverera infrastruktur som tjänst till den akademiska sektorn i Skandinavien. Kompetensen bakom vår lösning samt vår strategi att basera den på öppen källkod gjorde att vi vann utvärderingen ur både ett tekniskt och kommersiellt perspektiv. Vi har full kontroll över vår egen teknik och erbjuder idag tjänster till samtliga universitet, högskolor och andra utbildnings- och forskningsmiljöer i Skandinav
 
+{{< distance >}}
+
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="SciLifeLabs forskning på Safespring" link="/tjanster/case/scilifelab/" linktext="Läs mer" text="Vår Compute-tjänst spelar en avgörande roll i att stödja vetenskaplig forskning. Ett framstående exempel är vårt samarbete med SciLifeLab, där vi hjälper till att driva genombrott inom livsvetenskaperna." >}}
+
+{{< distance >}}
+
 ## Utforska våra tjänster
 Som svenskt bolag omfattas vi inte av Cloud Act och kan därför inte tvingas att lämna ut din data till tredje part. Vi erbjuder bland annat backup, storskalig molnlagring och infrastruktur som tjänst.
 

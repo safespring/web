@@ -43,14 +43,20 @@ Som en pålitlig partner inom forskning och utbildning erbjuder vi:
 
 Vår expertis och partnerskap med OCRE gör att vi kan leverera de bästa och mest effektiva lösningarna för att möjliggöra forskning och utbildning av hög kvalitet. Låt Safespring vara er partner för att förverkliga er fulla potential inom forskning och utbildning.
 
+{{< distance >}}
+
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="SciLifeLabs forskning på Safespring" link="/tjanster/case/scilifelab/" linktext="Läs mer" text="Vår Compute-tjänst spelar en avgörande roll i att stödja vetenskaplig forskning. Ett framstående exempel är vårt samarbete med SciLifeLab, där vi hjälper till att driva genombrott inom livsvetenskaperna." >}}
+
+{{< distance >}}
+
 ### OCRE Cloud Funding for Research
 
 Den 15 september 2020 lanserade OCRE sin första finansieringsanrop för antagande av molntjänster som är tillgängliga via OCRE IaaS + ramavtal. Två efterföljande projektanrop planeras att öppnas i februari respektive juli 2021.
 
 Under detta första molnfinansieringssamtal syftar OCRE till att finansiera konsumtionen av infrastruktur-molntjänster (IaaS, PaaS, SaaS, marknadsplats) av projekt som kan bli tydliga utställningar för fördelarna med att använda molntjänster för att positivt påverka forskningsresultat. Läs mer på https://www.ocre-project.eu/funding-opportunities
 
-
 ## Så handlar du tjänster på OCRE-avtalet
+
 {{< ingress >}}
 För att handla Safesprings tjänster via OCRe-avtalet, kontakta Safespring direkt.
 {{< /ingress >}}

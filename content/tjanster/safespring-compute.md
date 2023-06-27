@@ -77,3 +77,14 @@ Plattformen skapar också ett ramverk för att designa sina applikationer så at
 ...använder sig av öppna, dokumenterade API:er som gör det enkelt att skriva egna skript för automatisering för uppsättning av nya resurser. På så sätt kan ni göra klara definitionerna för er infrastruktur och en väldigt enkel flytt till en annan leverantör om ni någon gång i framtiden skulle vilja byta.
 
 Även om vår plattform är baserad på öppen källkod och Linux så går det naturligtvis att köra Windows på de virtuella maskinerna. Safespring använder underleverantören CloudBase för att erbjuda startklara avbildningar av Windows för att du lätt skall kunna komma igång med dem.
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Diskutera Compute över en lunch med vår VD" %}}
+Ge ditt företag kraft från molnet med Safespring. Vill du veta mer om hur vår säkra, svenska IaaS kan stärka ditt företag? Boka en lunch med mig idag!
+
+{{< inline "Ring" >}} +46 76-629 25 02
+fredric.wallsten@safespring.com
+{{% /custom-card %}}
+
+
+
+{{< distance >}}
