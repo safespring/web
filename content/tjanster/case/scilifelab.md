@@ -9,8 +9,8 @@ intro: "Läs om Safesprings leverans av en molnbaserad VM- och lagringstjänst t
 background: "/safespring-scilifelab.webp"
 card: ""
 socialmedia: ""
-sidebarlinkname: ""
-sidebarlinkurl: ""
+sidebarlinkname: "Behöver du molntjänster?"
+sidebarlinkurl: "#sla"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 sidebarsection: ""
@@ -40,7 +40,7 @@ Calico möjliggör hantering av all nätverkstrafik på layer-3 med hjälp av de
 {{% accordion title="Lagring och säkerhet" id="sakerhet" %}}
 Safespring levererar molnbaserad lagring för att möta SciLifeLabs behov av hög lagringskapacitet för deras datahanterings- och AI-modellhanteringssystem. Safespring använder S3-objektlagring som standard för att möjliggöra lagring av stora mängder data i en skalbar och säker miljö. SciLifeLab använder också Safespring lagring som en byggsten för att bygga forskningsmiljöer.
 
-Safespring upprätthåller ett detaljerat Service-baserat [SLA](#sla) och övervakar teknisk prestanda och servicenivåer för sina system och tjänster 24/7. Safespring använder ITIL4-kompatibla processer, procedurer, uppgifter och checklista för att uppnå detta. All övervaknings- och serviceanalysdata är transparent och tillgänglig för kunden på begäran. 
+Safespring upprätthåller ett detaljerat Service-baserat SLA och övervakar teknisk prestanda och servicenivåer för sina system och tjänster 24/7. Safespring använder ITIL4-kompatibla processer, procedurer, uppgifter och checklista för att uppnå detta. All övervaknings- och serviceanalysdata är transparent och tillgänglig för kunden på begäran. 
 
 Safespring svarar snabbt på alla supportärenden, vilket garanterar att forskare kan utföra sina arbetsuppgifter utan distraktion. Safespring tillhandahåller regelbundna rapporter till kunderna om deras nuvarande tekniska leveransstatus mot SLA och om utvecklingen av nya/uppdaterade tjänstefunktioner.
 {{% /accordion %}}
@@ -127,17 +127,14 @@ I sammanhanget med OCRE är GÉANT en av huvudparterna i OCRE-projektet. GÉANT,
 GÉANTs roll inom OCRE innebär att de hjälper till att förhandla fram avtal med molntjänstleverantörer, tillhandahålla en plattform för tillgång till dessa tjänster, och stödja forskningssamhället i att utnyttja dessa resurser på bästa sätt. GÉANTs breda nätverk och erfarenhet inom forskning och utbildning gör dem till en viktig partner i OCRE-projektet.
 {{% /accordion %}}
 
-## Ordlista
-Här är en lista över ord och begrepp som förklaras i texten om Safespring och deras tjänsteleverans till SciLifeLab. För att hjälpa till att förstå texten bättre och för att skapa en mer komplett bild av vad Safespring och SciLifeLab gör tillsammans.
+## Ge ditt projekt kraft från molnet
+Storskalig lagring och compute-kapacitet är det många som efterfrågar. Safespring har länge jobbat med den akademiska sektorn för att se till att digital infrastruktur, lagring och backup efterlever Sunets krav.
 
+{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+Jag är kontaktperson för den akademiska sektorn i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
-{{% accordion title="Virtuell Maskin (VM)" id="vm"%}}
-VM står för virtuell maskin. Det är en programvara som simulerar en dator och låter flera operativsystem köras samtidigt på samma fysiska hårdvara.
-{{% /accordion %}}
-
-{{% accordion title="Service Level Agreement (SLA)" id="sla"%}}
-SLA står för Service Level Agreement och är en överenskommelse mellan två parter om vilken nivå av service som ska levereras och hur den ska mätas och rapporteras.
-I detta sammanhang är det en överenskommelse mellan Safespring och SciLifeLab om vilken nivå av prestanda och service som ska levereras för molntjänsten.
-{{% /accordion %}}
+{{< inline "Ring" >}} +46 (0)73 533 65 21
+petter.hylin@safespring.com
+{{% /custom-card %}}
 
 {{< accordion-script >}}
