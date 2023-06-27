@@ -3,7 +3,7 @@ title: "Safespring deltar i gemensamt initiativ för att stärka svensk IT-drift
 date: "2023-06-27"
 publishDate: "2023-06-27"
 intro: "Safespring stödjer initiativet Sveriges IT-driftnätverk med sin expertis och dedikation till digital suveränitet, dataskydd och GDPR-efterlevnad."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: "safespring-itdrift.svg"
