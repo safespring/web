@@ -112,11 +112,40 @@ Safespring erbjuder tre olika backuplösningar. Priserna per GB börjar så låg
 
 Safespring Backup erbjuder datareduktionsteknik i tjänsten som vanligtvis minskar datamängden mellan 45%-90%. Priset är fastställt per skyddad GB på klienten och per lagrad GB i tjänsten efter deduplicering och komprimering. Dessutom ingår 1TB i det fasta månadspriset för BAAS-small.
 
+{{% accordion title="Vilken plan är bäst?" %}}
+
+<table class="width100" style="margin-bottom:40px;">
+    <thead>
+        <tr>
+            <th>Data Usage (GB)</th>
+            <th>Most Cost-effective Service</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>0 - 4820</td>
+        <td>Backup on Demand</td>
+    </tr>
+    <tr>
+        <td>4821 - 7857</td>
+        <td>Backup Small</td>
+    </tr>
+    <tr>
+        <td>>7857</td>
+        <td>Backup Large</td>
+    </tr>
+</tbody>
+</table>
+
+{{% /accordion %}}
+{{< accordion-script >}}
+
 | Produkt   ID   | Fast   månadspris | Per   GB i 30 dagar |
 |----------------|-------------------|---------------------:|
 | BAAS-on.demand | N/A               | 2,45 kr             |
 | BAAS-small     | 5 500 kr          | 1,75 kr             |
 | BAAS-large     | 9 500 kr          | 0,92 kr             |
+
 
 
 ## Nätverk och Mjukvara
