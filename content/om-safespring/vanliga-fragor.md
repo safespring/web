@@ -14,9 +14,9 @@ socialmedia: "safespring-datacenter.jpg"
 
 <div>
 
-{{% accordion title="Hur förhåller ni er till GDPR?" %}}
+{{% question question="Hur förhåller ni er till GDPR?" %}}
 Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
-{{% /accordion %}}
+{{% /question %}}
 
 {{% accordion title="Vem är kontaktperson för informationssäkerhetsfrågor?" %}}
 Anders Bruvik är din kontaktperson för alla frågor om informationssäkerhet. Du når honom på anders.bruvik@safespring.com.

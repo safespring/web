@@ -1,0 +1,8 @@
+<div class="accordion-box" id="{{ .Get "id" }}" itemscope itemtype="https://schema.org/Question">
+  <button class="accordion" itemprop="name">{{ .Get "question" }}</button>
+  <div class="panel content-body">
+    <h3 itemprop="text">{{ .Get "question" }}</h3>
+    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p style="padding:0;">{{ .Inner }}</p></div>
+    <div class="pb-2"></div>
+  </div>
+</div>
