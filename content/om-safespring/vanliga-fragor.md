@@ -9,6 +9,7 @@ sidebarlinkname: "Vår säkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 ## Frågor om Compliance
 
@@ -142,6 +143,7 @@ Ja, vi har ett separat nätverk för administration av virtuella hostar för att
 Vi erbjuder en SLA på 99.9%. Det innebär att vi garanterar en tillgänglighet på 99.9% för våra tjänster. Detta är kopplat till våra SLA-villkor.
 {{% /accordion %}}
 
+</div>
 </div>
 
 {{< accordion-script >}}
