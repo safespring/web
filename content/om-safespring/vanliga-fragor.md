@@ -10,11 +10,9 @@ sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
 
-<div itemscope itemtype="https://schema.org/FAQPage">
+<div itemscope itemtype="https://schema.org/FAQPage" itemName="Frågor om Compliance">
 
 ## Frågor om Compliance
-
-<div>
 
 {{% question question="Hur förhåller ni er till GDPR?" %}}
 Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
@@ -37,6 +35,8 @@ Ja, vi erbjuder PUB-avtal eller DPA. För att få en kopia av dokumentet, vänli
 {{% /question %}}
 
 </div>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 ## Frågor om våra datacenter
 
