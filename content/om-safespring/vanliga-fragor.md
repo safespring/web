@@ -1,8 +1,19 @@
-<div itemscope itemtype="https://schema.org/FAQPage">
+---
+title: "Vanliga frågor om Safespring, Datacenter och vår verksamhet"
+section: "Om Safespring"
+date: 2023-01-07T13:58:58+01:00
+draft: false
+intro: "Våra datacenter matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom våra datacenter drivs till 100 procent med el från förnyelsebara energikällor."
+background: "/safespring-datacenter-map-background.svg"
+sidebarlinkname: "Vår säkerhet (pdf)"
+sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
+socialmedia: "safespring-datacenter.jpg"
+---
+
 
 ## Frågor om Compliance
 
-<div>
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 {{% question question="Hur förhåller ni er till GDPR?" %}}
 Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
@@ -28,7 +39,7 @@ Ja, vi erbjuder PUB-avtal eller DPA. För att få en kopia av dokumentet, vänli
 
 ## Frågor om våra datacenter
 
-<div>
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 {{% question question="Vilka geografiska möjligheter erbjuder ni för lagring av data?" %}}
 Vi har tillgång till tre säkra datacenter, två belägna i Stockholm (STO1 och STO2) och ett i Oslo (OSL1), så att våra kunder kan välja den geografiska plats som passar deras behov bäst.
@@ -72,7 +83,7 @@ Ja, vi har regelbundna tester för redundans av våra datacenterleverantörer.
 
 ## Frågor om informationssäkerhet
 
-<div>
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 {{% question question="Är ni certifierade enligt ISO 27001?" %}}
 Safespring arbetar med informationssäkerhetskontroller enligt ISO 27001. Våra policyinstruktioner och kontroller samlas i vårt ISMS neupartOne. Vi är för närvarande i färd med att certifiera oss enligt ISO27001 och förväntas vara klara under andra kvartalet 2023.
@@ -94,7 +105,7 @@ Ja, Safespring har en extern DPO (Data Protection Officer) som granskar företag
 
 ## Frågor om våra tjänster och verksamhet
 
-<div>
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 {{% question question="Erbjuds skydd för data vid viloläge (data at rest)?" %}}
 Ja, vi tillhandahåller diskkryptering för att skydda data vid viloläge.
@@ -132,7 +143,6 @@ Ja, vi har ett separat nätverk för administration av virtuella hostar för att
 Vi erbjuder en SLA på 99.9%. Det innebär att vi garanterar en tillgänglighet på 99.9% för våra tjänster. Detta är kopplat till våra SLA-villkor.
 {{% /question %}}
 
-</div>
 </div>
 
 {{< accordion-script >}}
