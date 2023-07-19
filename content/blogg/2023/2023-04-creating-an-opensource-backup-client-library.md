@@ -10,6 +10,7 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Daniel de Oquiñena"
 language: "En"
 toc: ""
 sidebarlinkname: "Cloutility-api-client Repository"
@@ -17,8 +18,6 @@ sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 ---
-
-{{< author-daniel >}}
 
 {{< ingress >}}
 At Safespring, we are passionate about open source technologies. Our platform relies on multiple open source products, and we are committed to giving back to the community whenever possible. 

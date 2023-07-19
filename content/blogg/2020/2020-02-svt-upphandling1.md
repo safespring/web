@@ -8,11 +8,10 @@ card: "safespring_card_29.jpg"
 eventbild: "safespring_background_29.jpg"
 socialmediabild: "safespring_social_29.jpg"
 section: "blogg"
+author: "Fredric Wallsten"
 aliases:
     - /blogg/svt-upphandling1
 ---
-
-{{< author-fredric-happy >}}
 
 {{< ingress >}}
 Vi är mycket stolta över att ha vunnit upphandlingen av molntjänster till Public Service-bolagen.

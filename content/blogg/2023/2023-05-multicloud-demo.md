@@ -9,11 +9,10 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 Explore the power of infrastructure as code (IAC) with this guide on 

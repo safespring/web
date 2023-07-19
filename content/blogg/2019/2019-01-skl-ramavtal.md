@@ -8,11 +8,10 @@ card: "safespring_card_16.jpg"
 eventbild: "safespring_background_16.jpg"
 socialmediabild: "safespring_social_16.jpg"
 section: "blogg"
+author: "Fredric Wallsten"
 aliases:
     - /blogg/skl-ramavtal
 ---
-
-{{< author-fredric-happy >}}
 
 ## Nytt ramavtal för e-arkiv som tjänst.
 

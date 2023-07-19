@@ -9,12 +9,12 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
+author: "Fredric Wallsten"
+author_image: "firm"
 section: "blogg"
 language: "Se"
 toc: ""
 ---
-
-{{< author-fredric-firm >}}
 
 {{% ingress %}}
 

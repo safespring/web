@@ -9,6 +9,8 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
+author: "Fredric Wallsten"
+author_image: "firm"
 language: "Se"
 toc: ""
 sidebarlinkname: ""
@@ -16,8 +18,6 @@ sidebarlinkurl: ""
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 ---
-
-{{< author-fredric-firm >}}
  
 {{< ingress >}}
 Den 13 december 2022 annonserade EU-kommissionens ordförande Ursula von der Leyen ett utkast till ett så kallat adekvansbeslut för dataöverföringar till USA under Dataskyddsförordningen, en åtgärd EU-kommission kan vidta för att garantera lagligheten i behandlingen av personuppgifter på tredje lands (i detta fall USA:s) territorium. 

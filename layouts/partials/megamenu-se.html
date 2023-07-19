@@ -1,0 +1,21 @@
+<div class="megamenu-wrapper">
+	<div class="megamenu-main-service">
+		{{ $language := .Params.language }}
+		{{ $sections := (dict "Se" "tjanster" "En" "en" "No" "no") }}
+		{{ $section := index $sections $language }}
+		{{ range (where $.Site.RegularPages "Section" $section).ByParam "cardorder" }}
+		{{ if isset .Params "megamenu" }}
+		{{ .Render "li-megamenu" }}
+		{{ end }}
+		{{ end }}
+	</div>
+	<div class="megamenu-service-card">
+		<h3>Plattformstjänster</h3>
+		<ul class="megamenu-service-card-list">
+			<li><a href="/tjanster/containerplattform/">Containrar (as a Service)</a></li>
+			<li><a href="/tjanster/database-as-a-service/">Databas som tjänst</a></li>
+			<li><a href="/tjanster/machine-learning/">AI och Machine Learning</a></li>
+		</ul>
+	</div>
+</div>
+</div>

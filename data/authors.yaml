@@ -1,0 +1,28 @@
+- name: "Anders Trier-Vaage"
+  title: "Senior Infrastructure Engineer"
+  image_happy: "anders-trier-vaage.jpeg"
+
+- name: "Amelia Andersdotter"
+  title: "Sakkunnig, it-säkerhet"
+  image_happy: "safespring-author-amelia-anderdotter.webp"
+
+- name: "Daniel de Oquiñena"
+  title: "Cloud Architect"
+  image_happy: "daniel.webp"
+
+- name: "Gabriel Paues"
+  title: "Cloud Architect"
+  image_happy: "gabriel-paues.jpg"
+
+- name: "Jarle Bjørgeengen"
+  title: "Cloud Architect"
+  image_happy: "jarle-bjorgeengen.jpg"
+
+- name: "Øyvind Christiansen"
+  title: "Senior Infrastructure Engineer"
+  image_happy: "oyvind-christiansen.webp"
+
+- name: "Fredric Wallsten"
+  title: "CEO, Safespring"
+  image_happy: "fredric-wallsten-1.jpg"
+  image_firm: "fredric-wallsten-2.jpg"

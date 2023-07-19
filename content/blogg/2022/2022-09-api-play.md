@@ -9,13 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
     - /blogg/2022-09-api-play
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 Safespring promote as much automation as possible using standard tools

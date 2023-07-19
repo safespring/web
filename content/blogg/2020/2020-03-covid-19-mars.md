@@ -8,11 +8,11 @@ card: "safespring_card_31.jpg"
 eventbild: "safespring_background_31.jpg"
 socialmediabild: "safespring_social_31-1.jpg"
 section: "blogg"
+author: "Fredric Wallsten"
+author_image: "firm"
 aliases:
     - /blogg/covid-19-mars
 ---
-
-{{< author-fredric-firm >}}
 
 <div class="ingress"><p>Safespring planerar för fortsatt kontinuerlig drift.</p></div>
 

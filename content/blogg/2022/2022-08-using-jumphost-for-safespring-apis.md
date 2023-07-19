@@ -9,13 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Anders Trier-Vaage"
 language: "En"
 toc: ""
 aliases:
     - /blogg/2022-08-using-jumphost-for-safespring-apis
 ---
-
-{{< author-advg >}}
 
 {{< ingress >}}
 Using a jump host is good practice for increased security and a simple solution when you don’t have a fixed IP-adress but need access to Safespring’s APIs.

@@ -9,13 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Øyvind Christiansen"
 language: "En"
 toc: ""
 aliases:
     - /blogg/2022-02-windows-vm-cpu-perf
 ---
-
-{{< author-oyvind >}}
 
 {{< ingress >}}
 In this blog post, we'll go through some virtual machine optimizations. We optimized CPU performance improvement on Windows due to poor application performance for one of our customers.

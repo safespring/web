@@ -8,14 +8,13 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
+author: "Jarle Bjørgeengen"
 section: ""
 language: "En"
 toc: ""
 aliases:
     - /blogg/2022-08-openstack-port-preserve_on_delete
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 There is no way to retroactively keep OpenStack from deleting a network port on detachment, but in this blog post we'll walk through a possible solution.

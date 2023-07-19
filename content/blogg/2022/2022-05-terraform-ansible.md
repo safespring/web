@@ -9,13 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
     - /blogg/2022-05-terraform-ansible
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 This is part three in the series about Safespring's Terraform modules. This blog
