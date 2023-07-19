@@ -10,10 +10,11 @@ sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
 
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 ## Frågor om Compliance
 
-<div itemscope itemtype="https://schema.org/FAQPage">
+<div>
 
 {{% question question="Hur förhåller ni er till GDPR?" %}}
 Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
@@ -39,8 +40,8 @@ Ja, vi erbjuder PUB-avtal eller DPA. För att få en kopia av dokumentet, vänli
 
 ## Frågor om våra datacenter
 
-<div itemscope itemtype="https://schema.org/FAQPage">
-
+<div>
+	
 {{% question question="Vilka geografiska möjligheter erbjuder ni för lagring av data?" %}}
 Vi har tillgång till tre säkra datacenter, två belägna i Stockholm (STO1 och STO2) och ett i Oslo (OSL1), så att våra kunder kan välja den geografiska plats som passar deras behov bäst.
 {{% /question %}}
@@ -83,8 +84,8 @@ Ja, vi har regelbundna tester för redundans av våra datacenterleverantörer.
 
 ## Frågor om informationssäkerhet
 
-<div itemscope itemtype="https://schema.org/FAQPage">
-
+<div>
+	
 {{% question question="Är ni certifierade enligt ISO 27001?" %}}
 Safespring arbetar med informationssäkerhetskontroller enligt ISO 27001. Våra policyinstruktioner och kontroller samlas i vårt ISMS neupartOne. Vi är för närvarande i färd med att certifiera oss enligt ISO27001 och förväntas vara klara under andra kvartalet 2023.
 {{% /question %}}
@@ -105,8 +106,8 @@ Ja, Safespring har en extern DPO (Data Protection Officer) som granskar företag
 
 ## Frågor om våra tjänster och verksamhet
 
-<div itemscope itemtype="https://schema.org/FAQPage">
-
+<div>
+	
 {{% question question="Erbjuds skydd för data vid viloläge (data at rest)?" %}}
 Ja, vi tillhandahåller diskkryptering för att skydda data vid viloläge.
 {{% /question %}}
