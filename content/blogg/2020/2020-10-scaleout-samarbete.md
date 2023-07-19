@@ -8,11 +8,10 @@ card: "safespring_card_34.jpg"
 eventbild: "safespring_background_34.jpg"
 socialmediabild: "safespring_social_34.jpg"
 section: "blogg"
+author: "Fredric Wallsten"
 aliases:
     - /blogg/scaleout-samarbete
 ---
-
-{{< author-fredric-happy >}}
 
 ## Strategiskt samarbete inom AI för att främja den svenska digitaliserings­strategin
 

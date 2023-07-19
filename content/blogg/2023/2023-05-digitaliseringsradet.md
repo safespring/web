@@ -9,12 +9,12 @@ showthedate: true
 card: "safespring_card_48.svg"
 eventbild: ""
 socialmediabild: ""
+author: "Fredric Wallsten"
 section: "blogg"
 language: "Se"
 toc: ""
 ---
 
-{{< author-fredric-happy >}}
 
 {{% ingress %}}
 

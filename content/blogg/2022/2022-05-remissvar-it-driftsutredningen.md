@@ -9,12 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
+author: "Fredric Wallsten"
+author_image: "firm"
 toc: "Innehåll"
 aliases:
     - /blogg/remissvar-it-driftsutredningen
 ---
-
-{{< author-fredric-firm >}}
 
 {{< ingress >}}
 Sedan utredningen publicerades så har det geopolitiska läget förändrats väsentligt. Det ändrar inget i sak för utredningen men belyser ytterligare vikten av suveräna, säkra och robusta IT tjänster.{{< /ingress >}}

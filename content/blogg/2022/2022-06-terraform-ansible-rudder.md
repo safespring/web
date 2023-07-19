@@ -9,13 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
     - /blogg/2022-06-terraform-ansible-rudder
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 This blog post will look at how we can build even further on

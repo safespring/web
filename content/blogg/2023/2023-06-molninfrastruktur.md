@@ -10,14 +10,13 @@ eventbild: ""
 socialmediabild: ""
 section: "blogg"
 language: "Se"
+author: "Fredric Wallsten"
 toc: ""
 sidebarlinkname: "Läs bilagan"
 sidebarlinkurl: "/publications/safespring-svd-kritisk-infrastruktur.pdf"
 ---
 
-{{< author-fredric-happy >}}
-
-*Denna text är publicerad Svenska Dagbladets bilaga "Kritisk infrastruktur".*
+*Denna text är publicerad i Svenska Dagbladets bilaga "Kritisk infrastruktur".*
 
 {{% ingress %}}
 

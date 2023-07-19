@@ -37,6 +37,17 @@
 {{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
+{{ $pageParams := .Params }}
+{{ range where .Site.Data.authors "name" $pageParams.author }}
+<div class="author-container">
+    <div class="author-image" style="background-image: url(/img/author/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})"></div>
+    <div class="author-info">
+        <p class="author-name">{{ .name }}</p>
+        <p class="author-title">{{ .title }}</p>
+    </div>
+</div>
+{{ end }}
+
     {{ .Content }}
     
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}

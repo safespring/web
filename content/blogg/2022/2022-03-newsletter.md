@@ -14,10 +14,10 @@ toc: ""
 aliases:
     - /blogg/2022-03-newsletter
 ---
+
 {{< ingress >}}
 This article is a collection of the latest news from Safespring. Consider subscribing to our newsletter to get the latest updates directly to your inbox.
 {{< /ingress >}}
-
 
 
 ## Kristian is our contact for everyone in the academic sector

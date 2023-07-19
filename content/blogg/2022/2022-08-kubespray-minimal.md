@@ -9,13 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
     - /blogg/2022-08-kubespray-minimal
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 Kubespray is a

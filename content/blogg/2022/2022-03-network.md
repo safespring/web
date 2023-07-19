@@ -10,13 +10,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
     - /blogg/2022-03-network
 ---
-
-{{< author-jarle >}}
 
 {{< ingress >}}
 This blog post will explain the different aspects of the Safespring network

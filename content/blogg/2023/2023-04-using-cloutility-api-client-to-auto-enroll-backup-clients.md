@@ -10,6 +10,7 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 section: "Tech update"
+author: "Daniel de Oquiñena"
 language: "En"
 toc: ""
 sidebarlinkname: "Cloutility-api-client Repository"
@@ -18,8 +19,6 @@ sidebarlinkname2: "Complete code example"
 sidebarlinkurl2: "https://github.com/safespring-community/cloutility-api-client/tree/main/examples/enroll"
 toc: "In this guide"
 ---
-
-{{< author-daniel >}}
 
 {{< ingress >}}
 In this tutorial, we will explore Safespring's cloutility-backup-client library written in Go. We will write a small, easily deployable, tool to automate the enrollment procedure of backup nodes and take a deeper look at a few of the methods available in the cloutility-api-client library.

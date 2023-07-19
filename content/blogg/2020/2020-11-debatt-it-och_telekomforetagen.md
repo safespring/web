@@ -8,11 +8,11 @@ card: "safespring_card_35.jpg"
 eventbild: "safespring_background_35.jpg"
 socialmediabild: "safespring_social_35.jpg"
 section: "blogg"
+author: "Fredric Wallsten"
+author_image: "firm"
 aliases:
     - /blogg/debatt-it-och_telekomforetagen
 ---
-
-{{< author-fredric-firm >}}
 
 {{< ingress >}}
 IT & Telekomföretagens förbundsordförande Åsa Zetterberg behöver lyfta blicken, skriver företrädare för fyra svenska molntjänstleverantörer i en replik till förra veckans debattartikel.

@@ -8,11 +8,10 @@ card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"
 socialmediabild: "safespring_social_31.jpg"
 section: "blogg"
+author: "Fredric Wallsten"
 aliases:
     - /blogg/svt-upphandling
 ---
-
-{{< author-fredric-happy >}}
 
 {{< ingress >}}
 Idag blir Safespring en av fem leverantörer som får möjlighet att via ramavtal leverera molntjänster till Sveriges Television och Utbildningsradion.
