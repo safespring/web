@@ -1,10 +1,12 @@
-<div class="accordion-box" id="{{ .Get "id" }}" itemscope itemtype="https://schema.org/Question">
-  <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-    <button class="accordion" itemprop="name">{{ .Get "question" }}</button>
+<div class="accordion-box" id="{{ .Get "id" }}">
+    <button class="accordion">{{ .Get "question" }}</button>
     <div class="panel content-body">
-      <h3 itemprop="text">{{ .Get "question" }}</h3>
-      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p style="padding:0;" itemprop="text">{{ .Inner }}</p></div>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name">{{ .Get "question" }}</h3>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text"><p style="padding:0;">{{ .Inner }}</p></div>
+      </div>
+      </div>
       <div class="pb-2"></div>
     </div>
-  </div>
 </div>
