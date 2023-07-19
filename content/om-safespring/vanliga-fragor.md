@@ -41,7 +41,7 @@ Ja, vi erbjuder PUB-avtal eller DPA. För att få en kopia av dokumentet, vänli
 ## Frågor om våra datacenter
 
 <div>
-	
+
 {{% question question="Vilka geografiska möjligheter erbjuder ni för lagring av data?" %}}
 Vi har tillgång till tre säkra datacenter, två belägna i Stockholm (STO1 och STO2) och ett i Oslo (OSL1), så att våra kunder kan välja den geografiska plats som passar deras behov bäst.
 {{% /question %}}
@@ -144,6 +144,6 @@ Ja, vi har ett separat nätverk för administration av virtuella hostar för att
 Vi erbjuder en SLA på 99.9%. Det innebär att vi garanterar en tillgänglighet på 99.9% för våra tjänster. Detta är kopplat till våra SLA-villkor.
 {{% /question %}}
 
-</div>
+</div></div>
 
 {{< accordion-script >}}
