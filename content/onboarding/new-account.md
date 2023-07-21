@@ -66,7 +66,6 @@ Thank you for choosing Safespring's services. We're excited to work with you!
             color: var(--middle-blue-color);
         }
 
-
         .form-field input[type="text"],
         .form-field input[type="email"],
         .form-field input[type="tel"],
@@ -90,7 +89,9 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         .form-field input[type="tel"]:focus,
         .form-field select:focus {
             outline: none;
-            box-shadow: none;        }
+            box-shadow: none;
+            border: solid 0.5px var(--main-color) !important;       
+        }
 
         .form-field input[type="text"]:valid ~ label,
         .form-field input[type="email"]:valid ~ label,
@@ -102,6 +103,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
             font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
             background-color: #fafefe;
+            border-radius: 100px;
         }
 
 
@@ -115,7 +117,23 @@ Thank you for choosing Safespring's services. We're excited to work with you!
             font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
             background-color: #fafefe;
+            border-radius: 100px;
         }
+
+        .form-field.invalid.has-content input {
+            border-color: red;
+        }
+
+        .form-field.invalid.has-content label {
+            transform: translateY(-205%);
+            -webkit-transform: translateY(-205%);
+            color: red;
+            font: 400 12px/16px 'Hind';
+            letter-spacing: 0.5px;
+            background-color: #fafefe;
+            border-radius: 100px;
+        }
+
 
         select {
             appearance: none;
@@ -146,8 +164,6 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         }
 
         .form-field.has-content label {
-            transform: translateY(-205%);
-            -webkit-transform: translateY(-205%);
             color: #3C9BCD;
             font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
@@ -155,8 +171,6 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         }
 
         .form-field.has-content.invalid label {
-            transform: translateY(-205%);
-            -webkit-transform: translateY(-205%);
             color: red;
             font: 400 12px/16px 'Hind';
             letter-spacing: 0.5px;
@@ -259,11 +273,11 @@ Thank you for choosing Safespring's services. We're excited to work with you!
     <p></p>
     <div class="column-two">
     <div class="form-field">
-        <input type="text" id="name" name="Contact.firstname" required>
+        <input type="text" id="firstname" name="Contact.firstname" required>
         <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
     </div>
         <div class="form-field">
-        <input type="text" id="name" name="Contact.lastname" required>
+        <input type="text" id="lastname" name="Contact.lastname" required>
         <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Last name</label>
     </div>
     </div>
@@ -300,11 +314,11 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name (Eg. infra.domain.com)</label>
     </div>
     <div class="form-field">
-        <input type="email" id="billing" name="Extra.1683706812269" required>
+        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="billing" autocomplete="off" name="Extra.1683706812269" required="required">
         <label for="billing"><i class="fas fa-envelope-open-dollar"></i>&nbsp;&nbsp;&nbsp;Billing address (email)</label>
     </div>
     <div class="form-field">
-        <input type="text" id="ip" name="Extra.1683706829902" required>
+        <input maxlength="512" type="text" id="ip" name="Extra.1683706829902" required>
         <label for="ip"><i class="fas fa-input-numeric"></i>&nbsp;&nbsp;&nbsp;Whitelist IP address for API access</label>
     </div>
     <h2>Customer user administrator</h2>
@@ -339,7 +353,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
     <input type="hidden" name="isFrame" value="false">
     <input type="text" value="" name="validation" style="display: none;">
     <!-- END OF REQUIRED FIELDS -->
-    <button class="button pt-1 pb-1 mt-2 submit-button" type="submit">Create account</button>
+    <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Create account</button>
 </form>
 <script type="text/javascript">
             $(document).ready(function() {
@@ -353,26 +367,25 @@ Thank you for choosing Safespring's services. We're excited to work with you!
             });
         </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var formFields = document.querySelectorAll('.form-field input, .form-field select');
-
-    formFields.forEach(function(formField) {
-        formField.addEventListener('input', function() {
-            if (this.value.trim() !== '') {
-                this.parentElement.classList.add('has-content');
-            } else {
-                this.parentElement.classList.remove('has-content');
-            }
-
-            if (!this.validity.valid) {
-                this.parentElement.classList.add('invalid');
-            } else {
-                this.parentElement.classList.remove('invalid');
-            }
-        });
-
-        // Kör en gång för att sätta rätt klass vid sidoladdning
-        formField.dispatchEvent(new Event('input'));
+document.addEventListener("DOMContentLoaded", function(){
+    const ids = ["#up-email-input", "#billing", "#gatekeeper-email"];
+    ids.forEach(id => {
+        const element = document.querySelector(id);
+        if (element) {
+            element.addEventListener("input", function (event) {
+                var emailField = event.target;
+                if (emailField.checkValidity()) {
+                    emailField.parentElement.classList.remove("invalid");
+                } else {
+                    emailField.parentElement.classList.add("invalid");
+                }
+                if (emailField.value) {
+                    emailField.parentElement.classList.add("has-content");
+                } else {
+                    emailField.parentElement.classList.remove("has-content");
+                }
+            });
+        }
     });
 });
 </script>

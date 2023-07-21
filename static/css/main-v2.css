@@ -410,6 +410,7 @@ background-color: var(--text-color);
 
 */
 
+
 textarea {
 	width: 250px;
 	padding: 12px 24px;
@@ -6745,9 +6746,6 @@ th:last-child {
 }
 
 
-
-
-
 /* Cookie tractor */
 
 #CookieConsent .cookie-popup {
@@ -6797,9 +6795,6 @@ th:last-child {
 #CookieConsent .cookie-popup label {
 	font: 600 16px/1 var(--mon-font) !important;
 }
-
-
-
 
 
 /* Flavour */
@@ -7170,10 +7165,6 @@ details[open] summary {
     column-count: unset;
   }
 }
-
-
-
-
 
 .scroll-link {
   display: inline-block;
