@@ -34,7 +34,7 @@ Safespring has operations in Sweden and Norway, with headquarters in Stockholm. 
 </div>
 
 {{< flexbox >}}
-{{< contact picture="/img/kontakt/stockholm.png" title="Sweden" name="Stockholm" phone="+46855107370" address="Smidesvägen 12, 171 41 Solna" address-link="https://g.page/safespring?share">}}
+{{< contact picture="/img/kontakt/stockholm.png" title="Sweden" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
 {{< contact picture="/img/kontakt/oslo.png" title="Norway" name="Oslo" phone="+4735688870" address="Universitetsgata 2, 0164 Oslo" address-link="https://goo.gl/maps/1zEYFyLUGz9w5RLv7">}}
 {{< contact picture="/img/kontakt/bergen.png" title="Norway" name="Bergen" phone="+4735688870" address="Jacobsfjorden 6b, 5003 Bergen" address-link="https://goo.gl/maps/DpQWmUzpeyeeR9B26">}}
 {{< /flexbox >}}
@@ -84,7 +84,7 @@ The company will deliver IT services to businesses that want efficient, secure, 
 {{< infobox >}}
 {{< info title="Name" name="Safespring AB" >}}
 {{< info title="Organization number" name="559075-0245" >}}
-{{< info title="Head office" name="Smidesvägen 12, 171 41 Solna" >}}
+{{< info title="Head office" name="Rättarvägen 3, 169 68 Solna" >}}
 {{< info title="Board" name="Solna, Sweden" >}}
 {{< info title="Owner" name="Private" >}}
 {{< info title="Established" name="2016-09-05" >}}

@@ -36,7 +36,7 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 </div>
 
 {{< flexbox >}}
-{{< contact picture="/img/kontakt/stockholm.png" title="Sverige" name="Stockholm" phone="+46855107370" address="Smidesvägen 12, 171 41 Solna" address-link="https://g.page/safespring?share">}}
+{{< contact picture="/img/kontakt/stockholm.png" title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
 {{< contact picture="/img/kontakt/oslo.png" title="Norge" name="Oslo" phone="+4735688870" address="Universitetsgata 2, 0164 Oslo" address-link="https://goo.gl/maps/1zEYFyLUGz9w5RLv7">}}
 {{< contact picture="/img/kontakt/bergen.png" title="Norge" name="Bergen" phone="+4735688870" address="Jacobsfjorden 6b, 5003 Bergen" address-link="https://goo.gl/maps/DpQWmUzpeyeeR9B26">}}
 {{< /flexbox >}}
@@ -86,7 +86,7 @@ Bolaget ska leverera IT-tjänster till verksamheter som önskar effektiva, säkr
 {{< infobox >}}
 {{< info title="Namn" name="Safespring AB" >}}
 {{< info title="Org. nummer" name="559075-0245" >}}
-{{< info title="Huvudkontor" name="Smidesvägen 12, 171 41 Solna" >}}
+{{< info title="Huvudkontor" name="Rättarvägen 3, 169 68 Solna" >}}
 {{< info title="Styrelsens säte" name="Solna, Sverige" >}}
 {{< info title="Ägare" name="Privat, ej börsnoterat" >}}
 {{< info title="Grundat" name="2016-09-05" >}}
