@@ -5,7 +5,7 @@ card: "safespring_card_11.svg"
 date: 2022-03-01T10:47:25+01:00
 draft: false
 intro: "Over 60 educational institutions use Safespring via Sunet, Sikt or directly through GÉANT's OCRE framework agreement."
-background: "2safespring-academic-sector-2022.webp"
+background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
 toplogo: "ocre.png"
 showthedate: false

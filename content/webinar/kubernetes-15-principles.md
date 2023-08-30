@@ -1,9 +1,9 @@
 ---
 title: "Webbserie: Design och driftsättning av skalbara applikationer på Kubernetes"
 language: "Se"
-date: "2023-03-27"
-publishDate: "2023-03-27"
-draft: false
+date: "2023-08-30"
+publishDate: "2023-08-30"
+draft: true
 tags: ["Svenska"]
 card: "safespring_card_47.svg"
 eventbild: ""
@@ -20,7 +20,7 @@ toc: "Avsnitt"
 ---
 
 {{< ingress >}}
-Vi kommer att gå igenom 15 grundprinciper som hjälper dig att få ut mesta möjliga av Kubernetes och dess fördelar.
+Vi kommer att gå igenom Elastisys 15 grundprinciper som hjälper dig att få ut mesta möjliga av Kubernetes och dess fördelar.
 {{< /ingress >}}
 
 Varje avsnitt behandlar specifika ämnen och ger dig insikt i hur du kan förbättra dina DevOps-processer och skapa en mer robust och skalbar arkitektur. Vi har grupperat principerna efter hur de passar in i avsnitten, därför kommer vi inte gå igenom dem i ordning.
@@ -82,7 +82,7 @@ I detta avsnitt kommer vi att fokusera på konfiguration och livscykelhantering 
 
 {{< inline "Princip 03" >}} Separating secret and non-secret configurations  
 {{< inline "Princip 14" >}}	Enabling automatic scaling  
-{{< inline "Princip 15" >}} Utilizing container lifecycle hooks
+{{< inline "Princip 15" >}} Utilizing container lifecycle hooksg
 
 ![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
