@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="" lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}se{{end}}'>
+<html lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}se{{end}}'>
 <head>
   <!-- Site Title changes according to current page -->
   <title>Safespring | {{ if .Title }}{{ .Title }}{{ else }}Svensk publik molnplattform{{ end }}</title>
-
+  <meta charset="utf-8">
   <!-- CSS -->
   <link rel="stylesheet" href="/css/main-v2.css" type="text/css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
   <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
   <meta property="og:site_name" content="Safespring" />
   <meta name="author" content="{{ .Params.author }}">
-  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
   <meta name="description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
@@ -41,3 +41,4 @@
 
   {{ "<!--[if IE]>" | safeHTML }}<meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">{{ "<![endif]-->" | safeHTML }}
 </head>
+<body>

@@ -685,6 +685,19 @@ color: var(--unCheckedColor);
 	transition: color 0.2s ease-out
 }
 
+.text-button {
+	font: var(--heavy-weight) 15px var(--hind-font);
+	color: var(--button-color);
+	text-transform: uppercase;
+	white-space: nowrap;
+	line-height: 5;
+}
+
+.text-button:hover {
+	color: var(--main-color);
+	transition: color 0.2s ease-out
+}
+
 /* HEADER 2022 */
 
 .site-header {

@@ -2,7 +2,7 @@
   <div class='fill-available-space img-250 pointer {{ if eq .Section "webinar" }}blue-hover-webinar flex-center{{ else }}{{ if eq .Section "solution-brief" }}blue-hover-whitepaper flex-center{{ else }}{{ if eq $.Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex{{ else }}blue-hover-blogg flex-center{{ end }}{{ end }}{{ end }}'>
 
     {{ if eq $.Params.section "blogg" }}
-    <img class="lazyload" data-src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">
+    <img class="lazyload" src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">
     <div class="blogg-card-tagg-container">
       <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
       <span class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px">{{ if (eq .Params.language "En") }}Blog{{ else if (eq .Params.language "No") }}Blogg{{ else }}Blogg{{ end }}</span>
@@ -15,7 +15,7 @@
     </div>
 
     {{ else }}{{ if eq $.Params.section "Tech update" }}
-    <img class="lazyload tech-card-image" data-src="/img/blogg/cards/safespring-tech-update.svg" alt="{{ .Title }}">
+    <img class="lazyload tech-card-image" src="/img/blogg/cards/safespring-tech-update.svg" alt="{{ .Title }}">
     <div class="tech-update-card-content">
       <div class="blogg-card-tagg-container-tech">
       <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
@@ -29,7 +29,7 @@
       </div>
     </div>
     {{ else }}{{ if eq .Section "webinar" }}
-    <img class="lazyload" data-src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}">
+    <img class="lazyload" src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}">
     <!--<div style="background-image:url(/img/event/cards/{{ .Params.card }});" class="image-container">
       <div class="image-container-blur"></div>
        <img style="position: absolute; width: 350px;" class="lazyload" data-src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}">
@@ -45,7 +45,7 @@
     </div>
 
     {{ else }}{{ if eq .Section "solution-brief" }}
-    <img class="lazyload" data-src="/img/card/{{ .Params.card }}" alt="{{ .Title }}">
+    <img class="lazyload" src="/img/card/{{ .Params.card }}" alt="{{ .Title }}">
     <div class="blogg-card-tagg-container-solution-brief">
       <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
       <span class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px">Solution brief</span>
@@ -63,7 +63,7 @@
         <p class="mb-1">{{ .Params.intro }}</p>
       </div>
       <div>
-        <span id="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
+        <span class="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
       </div>
     </div>
 
