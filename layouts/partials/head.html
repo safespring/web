@@ -21,16 +21,16 @@
   <link rel="stylesheet" href="/css/lite-yt-embed.css">
   <script defer src="/js/lite-yt-embed.js"></script>
 
-  <meta property="og:title" content="Safespring | {{ .Title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:title" content="Safespring | {{ .Title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else if eq .Params.language "No" }}img/safespring-social_media-animation-norway.gif{{ else }}img/socialmedia/safespring-start.png{{ end }}'>    
-  <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
-  <meta property="og:site_name" content="Safespring" />
+  <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
+  <meta property="og:site_name" content="Safespring">
   <meta name="author" content="{{ .Params.author }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
-  <meta name="description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}" />
+  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
+  <meta name="description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
   <link rel="canonical" href="https://www.safespring.com{{ .Permalink }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
