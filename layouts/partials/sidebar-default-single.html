@@ -36,13 +36,11 @@
       {{ end }}
     </div>
     {{ $currentPage := . }}
-    <div class="sidebar-services">
-      <h4>      
-        {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
-        {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
-        {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
+    <div class="sidebar-services">      
+        {{ if strings.HasPrefix .RelPermalink "/tjanster" }}<h4>{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska</h4>{{ end }}
+        {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}<h4>{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{</h4>{ end }}
+        {{ else if strings.HasPrefix .RelPermalink "/en/services" }}<h4>{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:</h4>{{ end }}
         {{ end }}
-      </h4>
       <ul>
         {{ if eq .Params.language "No" }}
         {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }}
