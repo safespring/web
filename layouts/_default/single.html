@@ -1,29 +1,19 @@
-
 {{ if eq $.Params.title "Aktuellt" }}
 {{ partial "aktuellt.html" . }}
-
 {{ else if eq $.Params.title "Pris tack" }}
 {{ partial "pris-tack.html" . }}
-
 {{ else if eq $.Params.title "Pris-old" }}
 {{ partial "pris-old.html" . }}
-
 {{ else if eq $.Params.title "tack-event" }}
 {{ partial "tack-event.html" . }}
-
 {{ else if eq $.Params.title "opplev" }}
 {{ partial "opplev.html" . }}
-
 {{ else if eq $.Params.title "start" }}
 {{ partial "start.html" . }}
-
 {{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
 {{ partial "explorer.html" . }}
-
 {{ else }}
-
 {{ partial "head.html" . }}
-
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 <!-- HEADING -->
