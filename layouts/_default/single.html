@@ -42,7 +42,7 @@
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
   </div>
   <!-- SIDEBAR -->
-  {{ if eq .Params.nosidebar "x" }}<div class="w350"> </div>{{ else }}<div class="sidebar-default-single">
+  {{ if eq .Params.nosidebar "x" }}<div class="w350"></div>{{ else }}<div class="sidebar-default-single">
     {{ if eq $.Section "webinar" }}{{partial "webinar-side-bar.html" . }}{{ else if eq $.Section "kommun" }}{{partial "webinar-side-bar.html" . }}{{ else }}{{ partial "sidebar-default-single.html" . }}{{ end }}
   </div>{{end}}
   {{ if .Params.fullwidthwidget }}{{ partial "{{ .Params.fullwidthwidget }}"}}{{ end }}
