@@ -21,7 +21,7 @@
         <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Params.sidebarlinkname }}
       </a>
       {{ if .Params.sidebarlinkurl2 }}
-      <a style="margin:25px 0 0 0; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" id="text-button">
+      <a style="margin:25px 0 0 0; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" class="text-button">
         {{ .Params.sidebarlinkname2 }}
       </a>
       {{ end }}
@@ -32,5 +32,4 @@
     {{ else }}
     {{ end }}
   </div>
-  <div class="w350">
-  </div>
+  <div class="w350"></div>
