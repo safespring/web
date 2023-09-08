@@ -7,7 +7,7 @@
         {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
       </a>
     </div>
-    <h1 class="balance-text" style="color: {{ .Params.cardcolor }}">
+    <h1 class="balance-text" style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{else}}var(--main-color){{end}}">
       {{ .Title }}
     </h1>
     {{ if .Params.intro }}
