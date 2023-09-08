@@ -15,9 +15,7 @@ toc: ""
 ---
 
 {{% ingress %}}
-
 Vi på Safespring kan stolt meddela att Amelia Andersdotter nu kliver in i rollen som Senior Advisor.
-
 {{% /ingress %}}
 
 Med sin långa bakgrund inom politik, teknik och kommunikation är Amelia en strategisk tillgång som starkt kommer bidra till Safesprings fortsatta utveckling.
