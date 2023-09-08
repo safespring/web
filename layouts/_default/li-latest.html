@@ -11,7 +11,7 @@
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
       
       <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-      <span id="text-button">{{ if (eq .Params.language "En") }}Read post{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs inlägg{{ end }}</span>
+      <span class="text-button">{{ if (eq .Params.language "En") }}Read post{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs inlägg{{ end }}</span>
     </div>
 
     {{ else }}{{ if eq $.Params.section "Tech update" }}
@@ -25,7 +25,7 @@
         <p class="mb-1">{{ .Params.intro }}</p>
       </div>
       <div>
-        <span id="text-button">{{ if (eq .Params.language "En") }}Read article{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs artikeln{{ end }}</span>
+        <span class="text-button">{{ if (eq .Params.language "En") }}Read article{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs artikeln{{ end }}</span>
       </div>
     </div>
     {{ else }}{{ if eq .Section "webinar" }}
@@ -52,7 +52,7 @@
     </div>
     <div class="blogg-card-wapper">
       <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-      <span id="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
+      <span class="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
     </div>
 
     {{ else }}{{ if eq .Section "whitepaper" }}
