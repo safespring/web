@@ -1,37 +1,25 @@
-
 {{ if eq $.Params.title "Aktuellt" }}
 {{ partial "aktuellt.html" . }}
-
 {{ else if eq $.Params.title "Pris tack" }}
 {{ partial "pris-tack.html" . }}
-
 {{ else if eq $.Params.title "Pris-old" }}
 {{ partial "pris-old.html" . }}
-
 {{ else if eq $.Params.title "tack-event" }}
 {{ partial "tack-event.html" . }}
-
 {{ else if eq $.Params.title "opplev" }}
 {{ partial "opplev.html" . }}
-
 {{ else if eq $.Params.title "start" }}
 {{ partial "start.html" . }}
-
 {{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
 {{ partial "explorer.html" . }}
-
 {{ else }}
-
 {{ partial "head.html" . }}
-
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 <!-- HEADING -->
 <div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>
-</div>
-
 <!-- CONTENT -->
 {{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
@@ -54,7 +42,7 @@
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
   </div>
   <!-- SIDEBAR -->
-  {{ if eq .Params.nosidebar "x" }}<div class="w350"> </div>{{ else }}<div class="sidebar-default-single">
+  {{ if eq .Params.nosidebar "x" }}<div class="w350"></div>{{ else }}<div class="sidebar-default-single">
     {{ if eq $.Section "webinar" }}{{partial "webinar-side-bar.html" . }}{{ else if eq $.Section "kommun" }}{{partial "webinar-side-bar.html" . }}{{ else }}{{ partial "sidebar-default-single.html" . }}{{ end }}
   </div>{{end}}
   {{ if .Params.fullwidthwidget }}{{ partial "{{ .Params.fullwidthwidget }}"}}{{ end }}
