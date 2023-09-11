@@ -1,10 +1,10 @@
 ---
-title: "Låt era utvecklare fokusera på kärnverksamheten"
+title: "Maximera er produktivitet med Compliant Kubernetes"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Kör bland annat Compliant Kubernetes som en managerad tjänst."
+intro: "Upplev kraften i Compliant Kubernetes hanterad av Elastisys på Safesprings infrastruktur."
 background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -13,7 +13,7 @@ sidebarlinkurl: "/webinar/fireside-chat-compliant-kubernetes/"
 sidebarsection: "MedTech"
 sidebarimage: "safespring-kubernetes.svg"
 sidebartitle: "Webbinarium onsdag 15 sep"
-sidebartext: "Best practice vid uppsättning av Kubernetes. Byggstenarna i Compliant Kubernetes och kundcase från MedTech."
+sidebartext: "Bli en mästare i Kubernetes: Lär dig allt om Compliant Kubernetes och dess fördelar inom MedTech."
 sidebardate: "Compliant Kubernetes"
 sidebarknapp: "Se direkt"
 sidebarlink: "/webinar/fireside-chat-compliant-kubernetes/"
@@ -21,17 +21,16 @@ saas: ""
 sidebarwhitepaper: ""
 ---
 
-
 {{< ingress >}}
-Kör ni Kubernetes idag eller planerar ni att göra det? Det här är en möjlighet för er att lämna över driften till certifierade experter och samtidigt öka er kontroll och säkerhet.
-{{</ ingress >}}
+Redo att gå över till Compliant Kubernetes? Låt experter från Elastisys ta hand om driften medan ni behåller full kontroll och säkerhet på Safesprings robusta infrastruktur.
+{{< /ingress >}}
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-### Stärk ditt team med extern expertis inom DevOps och Kubernetes
-Tillsammans med Elastisys erbjuder Safespring Compliant Kubernetes som en driftad helhetslösning.
+### Få bästa möjliga stöd med DevOps och Kubernetes
+Med Elastisys vid rodret kan vi erbjuda Compliant Kubernetes som en fullständigt hanterad tjänst på Safesprings infrastruktur.
 
-Vår partner är certifierade Kubernetes service providers skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
+Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers men också skapare av den öppna Kubernetes-distributionen Compliant Kubernetes. De är dessutom en framstående medlem av Cloud Native-communityn. Vi erbjuder inte bara managerade tjänster men också skräddarsydda utbildningar och konsultationer.
 
 ![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
 
@@ -79,18 +78,14 @@ Vår partner är certifierade Kubernetes service providers skaparna av den öppn
 </div>
 
 
-### Varför Compliant Kubernetes?
-
-Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
+### Varför välja Compliant Kubernetes?
+Kubernetes i sin renaste form är inte säkert. Compliant Kubernetes är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
-{{< horisontal-card image="/img/card/findout-logo-1x1.svg" cardtitle="Affärscase" link="/tjanster/case/findout/" linktext="Läs mer" text="FindOut valde att flytta hela sin lösning från Google Cloud till Compliant Kubernetes på svensk infrastruktur." >}}
-
-
 ## Bakgrund
 {{< ingress >}}
-Därför väljer många bolag att flytta hem sin data till Europa.
+Det finns många skäl till varför företag väljer att föra hem sina data till Europa.
 {{< /ingress >}}
 
 De flesta tjänster inom SaaS innehåller personuppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
@@ -103,4 +98,4 @@ Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifte
 
 Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan i Compliant Kubernetes" text="Vår infrastrukturtjänst kör i säkra datacenters inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute: Grunden för Compliant Kubernetes" text="Vår infrastrukturtjänst drivs i toppmoderna datacenters inom EU, skyddade från lagar som CLOUD Act eller FISA 702." %}}
