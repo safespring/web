@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "se"
+languageCode = "sv"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
 copyright = "2023 Safespring"
@@ -39,3 +39,10 @@ paginatePath = "blog"
 [blackfriday]
 fractions = false
 
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
