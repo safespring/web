@@ -48,8 +48,8 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja 
 
 <!-- VIDEO START -->
 <video poster="branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 15px;" controls="true">
-<source type="video/mp4" src="branscher/images/safespring_esam.mp4">
-<track src="branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
+    <source type="video/mp4" src="branscher/images/safespring_esam.mp4">
+    <track src="branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
 <!-- VIDEO END -->
 
