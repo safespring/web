@@ -9,7 +9,7 @@ background: "safespring-government-background.svg"
 aliases:
     - /myndighet/
 sidebarlinkurl: "/webinar/forth-fireside-chat-it-sakerhetsbolaget/"
-sidebarlinkname: "Se fireside chat 16/12"
+sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"
 ---
 
@@ -44,13 +44,16 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja 
 
 {{< localbutton "Kontakta Safespring" "/kontakt" >}}
 
-<br><br><br><br><video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 15px;" controls="true">
-<source type="video/mp4" src="/branscher/images/safespring_esam.mp4">
-<track src="/branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
+<br><br><br><br>
+
+<video poster="branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 15px;" controls="true">
+<source type="video/mp4" src="branscher/images/safespring_esam.mp4">
+<track src="branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
 
-
-<div class="ingress"><p>Ta tillbaka kontrollen och få digital suveränitet</p></div>
+{{< ingress >}}
+Ta tillbaka kontrollen och få digital suveränitet
+{{</ ingress >}}
 
 Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta den kostnadseffektivitet, flexibilitet som moln- och infrastrukturtjänster ger.
 
@@ -68,3 +71,6 @@ Detta white paper tar upp förutsättningarna efter domen och rekommendationer t
 - och en kort beskrivning av vägen framåt (del IV).
 
 {{< localbutton "Läs direkt" "/schrems" >}}
+
+
+
