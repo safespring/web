@@ -68,6 +68,3 @@ Detta white paper tar upp förutsättningarna efter domen och rekommendationer t
 - och en kort beskrivning av vägen framåt (del IV).
 
 {{< localbutton "Läs direkt" "/schrems" >}}
-
-
-
