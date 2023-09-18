@@ -60,13 +60,13 @@ Prissättningen är förbrukningsbaserad. Du betalar per timme bara för det du 
 Prissättningskomponenter är antalet server-vCPU:er och tillhörande RAM, mängden förbrukad lagring och datautgångstyp (utgående eller mellan AZ) och mängd.
 
 | Instance | vCPU   | RAM (GB) | Disk (GB) | Pris per nod i timmen |
-|----------|--------|----------|-----------|---------------------|
-| Tiny     | 2vCPU  | 4GB      | 100       | 2,085 SEK           |
-| Small    | 8vCPU  | 8GB      | 100       | 3,746 SEK           |
-| Medium   | 8vCPU  | 16GB     | 100       | 7,045 SEK           |
-| Large    | 16vCPU | 32GB     | 100       | 13,609 SEK          |
-| X-Large  | 16vCPU | 32GB     | 500       | 15,266 SEK          |
-| XX-Large | 16vCPU | 32GB     | 1000      | 17,417 SEK          |
+|----------|--------|----------|-----------|-----------------------|
+| Tiny     | 2vCPU  | 4GB      | 100       | 2,085 SEK             |
+| Small    | 8vCPU  | 8GB      | 100       | 3,746 SEK             |
+| Medium   | 8vCPU  | 16GB     | 100       | 7,045 SEK             |
+| Large    | 16vCPU | 32GB     | 100       | 13,609 SEK            |
+| X-Large  | 16vCPU | 32GB     | 500       | 15,266 SEK            |
+| XX-Large | 16vCPU | 32GB     | 1000      | 17,417 SEK            |
 
 
 | Data Egress          | Månadspris     |
