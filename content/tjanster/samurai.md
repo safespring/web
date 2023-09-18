@@ -74,7 +74,7 @@ Samurai MDR uppdateras regelbundet med de senaste hotdatadefinitionerna och säk
 ### Din säkerhet är vår prioritet
 Genom att kombinera NTT Securitys expertis inom cybersäkerhet med Safesprings molnplattform erbjuder vi den högsta nivån av cybersäkerhet. Samurai MDR på Safespring ger dig en lösning som är flexibel, automatiserad och som uppfyller europeiska krav på datalagring och GDPR-compliance.
 
-### Avancerad detektion och respons av NTT
+### Avancerad detektion och respons av NTT Security
 NTT Security tillhandahåller tjänsten Samurai MDR, vilket säkerställer att ditt företag har tillgång till de bästa verktygen och expertisen för att skydda sig mot cyberhot.
 
 ### Byggt på Safesprings IaaS-plattform
