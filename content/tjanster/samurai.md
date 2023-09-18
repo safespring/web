@@ -2,10 +2,6 @@
 title: "Skydda ditt företag med NTT Securitys Samurai MDR på Safespring"
 language: "Se"
 documentation: ""
-cardtitle: ""
-cardicon: ""
-cardcolor: ""
-cardorder: ""
 date: 2023-09-18
 draft: false
 intro: "Med NTT Securitys Samurai MDR på Safesprings IaaS-plattform får ditt företag toppmodern cybersäkerhet från säkra datahallar inom Sverige."
@@ -20,8 +16,7 @@ sidebarlinkurl2: "/pris/#safespring-samurai"
 socialmedia: ""
 sidebartext: "Skydda ditt företag med NTT Securitys avancerade cybersäkerhets-tjänster på Safespring. Säker, svensk molnplattform."
 devops: ""
-section: "Cybersecurity"
-megamenu: ""
+section: ""
 ---
 
 ## NTT Securitys Cyberhotdetektion och respons för ditt företag, byggd på Safesprings molnplattform
