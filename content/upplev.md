@@ -1,28 +1,28 @@
 ---
-title: "Upplev Safespring, baserat på OpenStack"
-language: "Se"
-date: "2018-09-18"
+title: "Experience Safespring, based on OpenStack"
+language: "En"
+date: "2023-09-18"
 draft: false
 tags: ""
 showthedate: false
 pageimage: ""
-intro: "Med Safesprings molnbaserade infrastrukturtjänst kan du skala upp och ner din infrastruktur efter behov. Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal."
+intro: "With Safespring's cloud-based infrastructure service, you can scale up and down your infrastructure as needed. The service is flexible, fully automated, and based on self-service through a portal."
 form: "yes"
 ---
-## Hämta dina resurser
-Stabil infrastruktur och resurskonsumering efter behov. Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.
+## Access your resources
+Stable infrastructure and resource consumption as needed. With Safespring, you get an efficient model for service delivery without losing control over your data.
 
 <br>
-<a href="#testa-safespring" id="button">Skapa konto</a>
+<a href="#test-safespring" id="button">Create account</a>
 
-### Virtuella maskiner till er tjänst
-Safesprings molnbaserade infrastrukturtjänst är baserad på den marknadsledande molnplattformen OpenStack. Tjänsten levereras ifrån säkra datahallar med hög tillgänglighet. Data i tjänsten lämnar aldrig landet då datahallarna är placerade inom landets gränser.
+### Virtual machines at your service
+Safespring's cloud-based infrastructure service is based on the market-leading cloud platform OpenStack. The service is delivered from secure data centers with high availability. Data in the service never leaves the country as the data centers are located within the country's borders.
 
-Tjänsten är flexibel, fullt automatiserad och baserad på självbetjäning via en portal: användaren kan själv med få, enkla steg starta och stoppa nya virtuella maskiner. Det går även att styra virtuella maskiner programmatiskt genom standardiserade anrop mot vårt API.
+The service is flexible, fully automated, and based on self-service through a portal: users can easily start and stop new virtual machines in a few simple steps. It is also possible to control virtual machines programmatically through standardized calls to our API.
 
-### Datahallar inom landets gränser
-Safesprings molntjänster produceras i datahallar som befinner sig inom landets gränser och sorterar under den lokala lagstiftningen, inte minst dataskyddsförordningen (GDPR).
+### Data centers within the country's borders
+Safespring's cloud services are produced in data centers located within the country's borders and are subject to local legislation, not least the General Data Protection Regulation (GDPR).
 
-Datahallarna har en mycket hög nivå av fysisk säkerhet. All data lagras på krypterade diskar. Alla underliggande system i molnplattformen har en hög nivå av säkerhetshärdning (SELinux). Plattformen är redundant upprättad för att nå hög tillgänglighet samtidigt som systemkomponenterna kontinuerligt och automatiskt uppdateras, baserat på en CI/CD-miljö. Det kallar vi "Secure by Design".
+The data centers have a very high level of physical security. All data is stored on encrypted disks. All underlying systems in the cloud platform have a high level of security hardening (SELinux). The platform is redundantly set up to achieve high availability while system components are continuously and automatically updated, based on a CI/CD environment. We call this "Secure by Design".
 
-Safespring Compute erbjuder stora fördelar såsom förenklat samarbete mellan olika avdelningar eller grupper, förenklar IT-hantering och adderar effektivitet och flexibilitet till er organisation.
+Safespring Compute offers great advantages such as simplified collaboration between different departments or groups, simplifies IT management, and adds efficiency and flexibility to your organization.
