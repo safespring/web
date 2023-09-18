@@ -1,5 +1,5 @@
 ---
-title: "Med Safespring kan Elastisys kunder fokusera att utveckla sina digitala tjänster"
+title: "Med Safespring kan Elastisys kunder fokusera på att utveckla sina digitala tjänster"
 language: "Se"
 date: 2023-09-18
 draft: false
@@ -47,10 +47,10 @@ Safesprings plattform är helt fri från tredjelandsöverföringar och hjälper 
 Rob berättar att samarbetet mellan Elastisys och Safespring präglas av transparens vilket är en förutsättningen i en snabbrörlig bransch där frågor, bekymmer och regleringsförändringar ständigt uppstår. 
 
 {{< quote "Rob McCuaig, COO på Elastisys" >}}
-– För att våra tjänster ska fungera optimalt för våra kunder är en nära kommunikation Safespring avgörande. Vi träffas flera gånger per år, har snabba kommunikationskanaler för både utvecklings- och affärsfrågor samt värdesätter varandras feedback. 
-Hjälps åt att lösa kundens utmaningar 
+– För att våra tjänster ska fungera optimalt för våra kunder är en nära kommunikation med Safespring avgörande. Vi träffas flera gånger per år, har snabba kommunikationskanaler för både utvecklings- och affärsfrågor samt värdesätter varandras feedback.  
 {{< /quote >}}
 
+### Hjälps åt att lösa kundens utmaningar
 Oftast är Elastisys primär kontaktperson i de gemensamma projekten, men när deras slutkund till exempel behöver kompletterande information om infrastrukturens säkerhetspolicy är Safespring snabba på att hjälpa till med lokal support genom direktchatt med utvecklarna. Rob utvecklar:
 
 – Våra kunder har inte någon löpande kontakt med Safespring, och det är ett gott tecken. Men när det väl uppstår situationer där kunden har specifika frågor, till exempel vid en offentlig upphandling, så får de snabbt ett bra svar från Safespring. Resultatet är att kunden inte behöver grotta ner sig i långa leverantörskedjor utan får snabbt veta vad de behöver.
