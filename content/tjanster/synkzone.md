@@ -2,9 +2,9 @@
 title: "Synkzone by Safespring"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 intro: "Lokal fildelningstjänst där data stannar inom landet. Med Zero knowledge kan varken vi som operatör av tjänsten eller någon obehörig läsa era filer."
-background: "safespring-synkzone.jpg"
+background: ""
 sidebarlinkname: "Ladda ner produktblad"
 sidebarlinkurl: "/marketing/safespring-synkzone-web.pdf"
 socialmedia: "safespring-synkzone.jpg"
@@ -18,7 +18,9 @@ Synkzone är ett alternativ till både traditionella filservrar och molnbaserade
 
 Det som särskilt utmärker Synkzone är ett fokus på hög säkerhet, tillgänglighet, och ett unikt samarbetsstöd.
 
-<p class="quote">Synkzone ser till att ni kan arbeta gemensamt, effektivt och säkert oavsett vilka datorer ni har eller vilket nätverk ni befinner er på.</p>
+{{< quote >}}
+Synkzone ser till att ni kan arbeta gemensamt, effektivt och säkert oavsett vilka datorer ni har eller vilket nätverk ni befinner er på.
+{{< /quote >}}
 
 ### Med ”zero knowledge” kan ingen utomstående läsa era filer
 Synkzone erbjuder en av marknadens säkraste lösningar för filhantering. Er organisations filer lagras på en egen specifik server i högklassigt datacenter i Sverige. Drift och underhåll av servern ingår i tjänsten.
