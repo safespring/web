@@ -23,6 +23,6 @@ Med våra molntjänster kan du antingen producera lösningar där infrastrukture
 
 Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att era tjänster som produceras på våra plattformar enklare kan uppfylla eventuella krav på var och hur slutkunders data lagras i er tjänst.
 
-Kontakta oss för att se hur vi kan stötta dig i din affär!
+Kontakta oss för att se hur vi kan stötta dig i din affär! 
 
 <a href="/kontakt" id="text-button">Kontakta Safespring</a>
