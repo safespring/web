@@ -1,7 +1,7 @@
 ---
 title: "Skydda ditt företag med NTT Securitys Samurai MDR på Safespring"
 language: "Se"
-documentation: ""
+documentation: "Samurai"
 date: 2023-09-18
 draft: false
 intro: "Med NTT Securitys Samurai MDR på Safesprings IaaS-plattform får ditt företag toppmodern cybersäkerhet från säkra datahallar inom Sverige."
