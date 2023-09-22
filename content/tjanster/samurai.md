@@ -33,7 +33,7 @@ Med NTT Securitys Samurai MDR på Safespring kan ditt företag upptäcka och han
     {{< icon-block icon="fa-solid fa-user-shield" text="Europeisk datalagring" link="" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-lock" text="GDPR-fördelar" link="" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-cloud" text="Svensk molntjänst" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-brain" text="NTTs Machine Learning" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-brain" text="Machine Learning" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-eye" text="Övervakning av hot" link="" color="#FA690F">}}
     {{< icon-block icon="fa-solid fa-shield-check" text="Avancerat skydd" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
