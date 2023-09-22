@@ -16,7 +16,7 @@ sidebarlinkurl2: "/pris/#safespring-samurai"
 socialmedia: ""
 sidebartext: "Skydda ditt företag med NTT Securitys avancerade cybersäkerhets-tjänster på Safespring. Säker, svensk molnplattform."
 devops: ""
-section: ""
+section: "Tjänster"
 ---
 
 ## NTT Securitys Cyberhotdetektion och respons för ditt företag, byggd på Safesprings molnplattform
