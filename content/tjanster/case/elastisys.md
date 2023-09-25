@@ -43,7 +43,7 @@ Safesprings plattform är helt fri från tredjelandsöverföringar och hjälper 
 
 ![Elastisys på Safesprings infrastruktur](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-## Nära samarbete skapar god kundupplevelse 
+## Nära samarbete skapar god kundupplevelse
 Rob berättar att samarbetet mellan Elastisys och Safespring präglas av transparens vilket är en förutsättningen i en snabbrörlig bransch där frågor, bekymmer och regleringsförändringar ständigt uppstår. 
 
 {{< quote "Rob McCuaig, COO på Elastisys" >}}
@@ -66,6 +66,7 @@ Bara för att man har gemensamma värderingar betyder det inte att samarbetet fu
 
 ### 3. Närhet vinner 
 Välj en partner som värdesätter att ni jobbar nära varandra. Dina seniora utvecklare ska enkelt kunna kontakta leverantörens – då kan du få till bra samarbete, enkel kommunikation och värdeskapande leveranser. 
-Söker du en svensk partner för molnlagring som värdesätter regelefterlevnad inom Sverige och EU?
-Det ska vara enkelt att möta högt ställda krav på driftsäkerhet och tillgänglighet. Därför har Safespring sett till att enkelt sammanställa vanliga frågor om IT-säkerhet och compliance – och hur du möter dem. Och vill du ha rekommendationer specifika för din verksamhet, hör av dig!
 {{% /note %}}
+
+## Söker du en svensk partner för molnlagring som värdesätter regelefterlevnad inom Sverige och EU?
+Det ska vara enkelt att möta högt ställda krav på driftsäkerhet och tillgänglighet. Därför har Safespring sett till att enkelt sammanställa vanliga frågor om IT-säkerhet och compliance – och hur du möter dem. Och vill du ha rekommendationer specifika för din verksamhet, hör av dig!

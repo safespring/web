@@ -3,7 +3,7 @@ title: "Med Safespring kan Elastisys' kunder fokusere på å utvikle sine digita
 language: "No"
 date: 2023-09-18
 draft: false
-section: "Use Case"
+section: "Brukercase"
 intro: "Elastisys, i samarbeid med Safespring, tilbyr compliance-tilpassede Kubernetes-løsninger. COO Rob McCuaig fremhever viktigheten av partnerskap og datalagring innenfor EU."
 background: "/safespring-elastisys.svg"
 card: ""
@@ -31,10 +31,10 @@ Rob McCuaig er COO hos Elastisys og her forteller han mer om samarbeidet med Saf
 ## Med Compliant Kubernetes kan kunden fokusere på egen utvikling
 Elastisys leverer Kubernetes-løsninger til kunder som må oppfylle lovkrav som GDPR. Deres plattform, Compliant Kubernetes, muliggjør effektiv drift der strenge etterlevelses- og sikkerhetskrav er til stede. Dette betyr at deres kunder kan akselerere utviklingen av nye applikasjoner samtidig som de oppfyller kravene som for eksempel GDPR og pasientdataloven stiller.
 
-Elastisys har kunder over hele Europa og derfor samarbeider de med ulike infrastrukturleverandører, men for svenske kunder anbefaler de Safespring. Rob forklarer hvorfor:
+Elastisys har kunder over hele Europa og derfor samarbeider de med ulike infrastrukturleverandører, men for norske og svenske kunder anbefaler de Safespring. Rob forklarer hvorfor:
 
 {{< quote "Rob McCuaig, COO hos Elastisys" >}}
-– Vi så tidlig en god match mellom Elastisys og Safespring. Vi selger Compliant Kubernetes, og Safespring har infrastrukturen som gjør det mulig for våre mange svenske kunder å oppfylle sikkerhetskravene.
+– Vi så tidlig en god match mellom Elastisys og Safespring. Vi selger Compliant Kubernetes, og Safespring har infrastrukturen som gjør det mulig for våre mange norske og svenske kunder å oppfylle sikkerhetskravene.
 {{< /quote >}}
 
 Safesprings plattform er helt fri for tredjelands overføringer og hjelper Elastisys – og indirekte deres kunder – med å følge GDPR. Elastisys bruker verktøy som Falco og Gatekeeper for sikkerhetsbeskyttelse av Kubernetes-klustere, samt Argo for at kundene raskt og enkelt kan implementere nye versjoner av sine applikasjoner, noe som kjører smidig på Safespring.
@@ -45,7 +45,7 @@ Safesprings plattform er helt fri for tredjelands overføringer og hjelper Elast
 Rob forteller at samarbeidet mellom Elastisys og Safespring preges av transparens, noe som er en forutsetning i en raskt bevegelig bransje der spørsmål, bekymringer og reguleringsendringer stadig oppstår.
 
 {{< quote "Rob McCuaig, COO hos Elastisys" >}}
-– For at våre tjenester skal fungere optimalt for våre kunder er nær kommunikasjon med Safespring avgjørende. Vi møtes flere ganger i året, har raske kommunikasjonskanaler for både utviklings- og forretningsrelaterte spørsmål og verdsetter hverandres tilbakemeldinger.
+– For at våre tjenester skal fungere optimalt for våre kunder er tett kommunikasjon med Safespring avgjørende. Vi møtes flere ganger i året, har raske kommunikasjonskanaler for både utviklings- og forretningsrelaterte spørsmål og verdsetter hverandres tilbakemeldinger.
 {{< /quote >}}
 
 ### Samarbeider for å løse kundens utfordringer
@@ -64,6 +64,7 @@ Bare fordi man har felles verdier betyr det ikke at samarbeidet fungerer bra i p
 
 ### 3. Nærhet vinner
 Velg en partner som verdsetter at dere jobber tett sammen. Dine seniorutviklere skal enkelt kunne kontakte leverandørens – da kan du oppnå godt samarbeid, enkel kommunikasjon og verdiskapende leveranser.
-Leter du etter en svensk partner for skylagring som verdsetter etterlevelse innenfor Sverige og EU?
-Det skal være enkelt å møte høye krav til driftssikkerhet og tilgjengelighet. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og compliance – og hvordan du oppfyller dem. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 {{% /note %}}
+
+## Leter du etter en norsk partner for skylagring som verdsetter etterlevelse innenfor Norge og EU?
+Det skal være enkelt å møte høye krav til driftssikkerhet og tilgjengelighet. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og compliance – og hvordan du oppfyller dem. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
