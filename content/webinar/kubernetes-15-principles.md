@@ -1,9 +1,9 @@
 ---
 title: "Webbserie: Design och driftsättning av skalbara applikationer på Kubernetes"
 language: "Se"
-date: "2023-08-30"
-publishDate: "2023-08-30"
-draft: true
+date: "2023-09-18"
+publishDate: "2023-09-18"
+draft: false
 tags: ["Svenska"]
 card: "safespring_card_47.svg"
 eventbild: ""
