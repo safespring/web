@@ -123,15 +123,15 @@ Safespring Backup erbjuder datareduktionsteknik i tjänsten som vanligtvis minsk
     </thead>
     <tbody>
     <tr>
-        <td>0 - 5 357</td>
+        <td>0 - 5 000</td>
         <td>Backup on Demand</td>
     </tr>
     <tr>
-        <td>5 358 - 6 927</td>
+        <td>5 001 - 7 000</td>
         <td>Backup Small</td>
     </tr>
     <tr>
-        <td>>6 927</td>
+        <td>7 001</td>
         <td>Backup Large</td>
     </tr>
 </tbody>

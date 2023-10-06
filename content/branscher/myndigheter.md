@@ -13,7 +13,6 @@ sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"
 ---
 
-
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
     {{< icon-block icon="fa-kit fa-gaiax" text="Öppna standarder" link="" color="#195F8C">}}
@@ -22,7 +21,6 @@ banner: "blue-hover-blogg"
     {{< icon-block icon="fa-kit fa-private-cloud" text="Private Cloud" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
-
 
 ## Ramavtal
 

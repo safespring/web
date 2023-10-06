@@ -458,6 +458,7 @@ blockquote p {
 	font-style: italic;
 }
 
+/*
 .quote {
 	color: var(--heading-color);
 	font-size: 20px;
@@ -465,7 +466,7 @@ blockquote p {
 	padding: 30px;
 	text-align: center;
 	line-height: 1.2;
-}
+}*/
 
 #button {
 	width: 175px;
@@ -2443,7 +2444,26 @@ color: var(--unCheckedColor);
 		color: #000;
 	}
 
+		.quote {
+		background: var(--cloud-blue-color);
+		padding: 40px;
+		border-radius: 20px;
+	}
 
+	.quote p {
+		font: var(--light-weight) 20px var(--mon-font);
+		margin: 0;
+		line-height: 1.25;
+		color: var(--main-color);
+	}
+
+	.quote-person {
+		font: var(--heavy-weight) 13px var(--mon-font) !important;
+		margin: 20px 0 0 0 !important;
+		line-height: 1.25;
+		color: var(--middle-blue-color);
+		text-align: right;
+	}
 
 	.TableOfContents {
 		list-style: none;

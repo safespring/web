@@ -15,6 +15,8 @@ Stable infrastructure and resource consumption as needed. With Safespring, you g
 <br>
 <a href="#test-safespring" id="button">Create account</a>
 
+{{< distance >}}
+
 ### Virtual machines at your service
 Safespring's cloud-based infrastructure service is based on the market-leading cloud platform OpenStack. The service is delivered from secure data centers with high availability. Data in the service never leaves the country as the data centers are located within the country's borders.
 
