@@ -3,7 +3,7 @@ title: "Webbserie: Design och driftsättning av skalbara applikationer på Kuber
 language: "Se"
 date: "2023-09-18"
 publishDate: "2023-09-18"
-draft: false
+draft: true
 tags: ["Svenska"]
 card: "safespring_card_47.svg"
 eventbild: ""
