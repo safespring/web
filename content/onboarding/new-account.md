@@ -2,7 +2,7 @@
 title: "Safespring onboarding"
 date: 2019-06-10T13:05:26+02:00
 draft: false
-intro: "Welcome to Safespring's onboarding page! We're thrilled to have you here and look forward to helping you get started with our services."
+intro: "Welcome to Safespring's onboarding page! We're thrilled to have you here and look forward to helping you get started with our services. "
 background: ""
 sidebarlinkname: "Create account"
 sidebarlinkurl: "#form"
