@@ -3,8 +3,8 @@ title: "Med Safespring kan Elastisys kunder fokusera på att utveckla sina digit
 language: "Se"
 date: 2023-09-18
 draft: false
-section: "User case"
-intro: "Elastisys, i samarbete med Safespring, erbjuder compliance-anpassade Kubernetes-lösningar. COO Rob McCuaig belyser vikten av partnerskap och datalagring inom EU."
+section: "Use case"
+intro: "Elastisys, i samarbete med Safespring, erbjuder compliance-anpassade Kubernetes-lösningar. COO Rob McCuaig belyser vikten av partnerskap och databehandling inom EU."
 background: "/safespring-elastisys.svg"
 card: ""
 socialmedia: ""
@@ -14,7 +14,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 sidebarsection: ""
 sidebarimage: "elastisys-rob.png"
-sidebartext: "Rob McCuaig delar insikter om Elastisys' samarbete med Safespring och vikten av datalagring inom EU."
+sidebartext: "Rob McCuaig delar insikter om Elastisys' samarbete med Safespring och vikten av databehandling inom EU."
 saas: ""
 sidebarwhitepaper: ""
 aliases:
@@ -28,12 +28,12 @@ Vad gör samarbetet mellan Elastisys och Safespring så kraftfullt? Rob McCuaig,
 
 Genom att erbjuda compliance-anpassade Kubernetes-lösningar på Safesprings infrastruktur skapar Elastisys kundupplevelser där användaren aldrig behöver oroa sig för informationssäkerheten.
 
-Rob McCuaig är COO på Elastisys och här berättar han mer om samarbetet med Safespring. 
+Rob McCuaig är COO på svenska Elastisys och här berättar han mer om samarbetet med Safespring. 
 
 ## Med Compliant Kubernetes kan kunden fokusera på sin egen utveckling
 Elastisys levererar Kubernetes-lösningar till kunder som måste uppfylla lagkrav som GDPR. Deras plattform, Compliant Kubernetes, möjliggör effektiv drift där det råder stränga regelefterlevnads- och säkerhetskrav. Det gör att deras kunder kan snabba upp sin utveckling av nya applikationer samtidigt som de uppfyller de krav som till exempel GDPR och Patientdatalagen ställer. 
 
-Elastisys har kunder spridda över Europa och därför samarbetar de med olika infrastruktursleverantörer, men för svenska kunder rekommenderar de Safespring. Rob berättar varför:
+Elastisys har kunder spridda över Europa och därför samarbetar de med olika infrastruktursleverantörer, men för svenska kunder rekommenderar de lokala leverantörer. Rob berättar varför:
 
 {{< quote "Rob McCuaig, COO på Elastisys" >}}
 – Vi såg tidigt en bra match mellan Elastisys och Safespring. Vi säljer Compliant Kubernetes och Safespring har infrastrukturen som gör det möjligt för våra många svenska kunder att möta säkerhetskraven.
@@ -51,7 +51,7 @@ Rob berättar att samarbetet mellan Elastisys och Safespring präglas av transpa
 {{< /quote >}}
 
 ### Hjälps åt att lösa kundens utmaningar
-Oftast är Elastisys primär kontaktperson i de gemensamma projekten, men när deras slutkund till exempel behöver kompletterande information om infrastrukturens säkerhetspolicy är Safespring snabba på att hjälpa till med lokal support genom direktchatt med utvecklarna. Rob utvecklar:
+Oftast är Elastisys primär kontaktperson i de gemensamma projekten, men när deras slutkund till exempel behöver kompletterande information om infrastrukturens säkerhetspolicy är Safespring som är vana att arbeta mot offentlig sektor snabba på att hjälpa till med lokal support genom direktchatt med utvecklarna. Rob utvecklar:
 
 – Våra kunder har inte någon löpande kontakt med Safespring, och det är ett gott tecken. Men när det väl uppstår situationer där kunden har specifika frågor, till exempel vid en offentlig upphandling, så får de snabbt ett bra svar från Safespring. Resultatet är att kunden inte behöver grotta ner sig i långa leverantörskedjor utan får snabbt veta vad de behöver.
 
