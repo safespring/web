@@ -2,7 +2,7 @@
 title: "Safespring onboarding"
 date: 2019-06-10T13:05:26+02:00
 draft: false
-intro: "Welcome to Safespring's onboarding page! We're thrilled to have you here and look forward to helping you get started with our services."
+intro: "Welcome to Safespring's onboarding page! We're thrilled to have you here and look forward to helping you get started with our services. "
 background: ""
 sidebarlinkname: "Create account"
 sidebarlinkurl: "#form"
@@ -303,8 +303,6 @@ Thank you for choosing Safespring's services. We're excited to work with you!
         <select id="site" name="Extra.1683706744635" required>
             <option value="STO 1">STO 1</option>
             <option value="STO 2">STO 2</option>
-            <option value="STO 3 (NREN connection)">STO 3 (NREN connection)</option>
-            <option value="STO 4 (NREN connection)">STO 4 (NREN connection)</option>
             <option value="OSL 1">OSL 1</option>
         </select>
         <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Choose your site</label><i class="fas fa-angle-down selection-icon"></i>
