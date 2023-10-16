@@ -55,7 +55,13 @@
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
     {{ if .Params.nolist }}
-    {{ else }}
+    {{ else if eq .Params.list "indexcard" }}
+<div class="flexcontainer-three">
+  {{ range .Pages }}
+{{ .Render "li-index"}}
+{{ end }}
+</div>
+{{ else }}
     <div class="flexcontainer">
       {{ range .Pages }}
       <div class="content-container">

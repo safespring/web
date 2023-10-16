@@ -11,6 +11,10 @@ aliases:
 sidebarlinkurl: "/webinar/forth-fireside-chat-it-sakerhetsbolaget/"
 sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"
+cardtitle: "Myndigheter"
+cardicon: "fa-solid fa-building-columns"
+cardcolor: "#417DA5"
+cardintro: ""
 ---
 
 {{< icon-block-container >}}

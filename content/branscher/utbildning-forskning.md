@@ -11,6 +11,10 @@ toplogo: "ocre.png"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
+cardtitle: "Akademisk sektor"
+cardicon: "fa-solid fa-graduation-cap"
+cardcolor: "#417DA5"
+cardintro: "Med direktanslutning till forskningsnäten och OCRE kommer du igång snabbt"
 ---
 
 {{< ingress >}}

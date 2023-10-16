@@ -8,6 +8,10 @@ intro: "Medtech, EdTech eller andra moderna bolag som söker Compliant Kubernete
 background: "safespring-kubernetes-background.svg"
 logobannersaas: "yes"
 banner: "blue-hover-webinar"
+cardtitle: "SaaS-bolag"
+cardicon: "fa-solid fa-code"
+cardcolor: "#417DA5"
+cardintro: "Utveckla direkt i vår plattform eller ta hjälp av våra plattformspartners"
 ---
 <div class="ingress"><p>Safespring är en mångsidig plattform och ett mycket bra fundament för många olika typer av tillämpningar. Safespring är väl utformad för SaaS-tjänster där skalbarhet och flexibilitet är viktiga komponenter.</p></div>
 
