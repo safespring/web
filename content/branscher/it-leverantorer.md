@@ -3,7 +3,7 @@ title: "IT-leverantörer"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar och har därför erfarenhet av många olika branscher och sektorer."
-background: "safespring_bilder_10.jpg"
+background: ""
 ---
 <div class="ingress"><p>Vi är ju själva i IT-branschen, så vi har mycket god förståelse för de utmaningar som finns. Exempelvis att kunna tillhandahålla rätt typ av tjänster och ha en rättvis marginal på det man bidrar med.</p></div>
 
