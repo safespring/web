@@ -72,7 +72,7 @@ Välj en partner som värdesätter att ni jobbar nära varandra. Dina seniora ut
 Det ska vara enkelt att möta högt ställda krav på driftsäkerhet och tillgänglighet. Därför har Safespring sett till att enkelt sammanställa vanliga frågor om IT-säkerhet och compliance – och hur du möter dem. Och vill du ha rekommendationer specifika för din verksamhet, hör av dig!
 
 {{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef för Safespring i Sverige och hjälper dig att använda våra tjänster.
+Jag är försäljningschef för Safespring i Sverige och hjälper dig gärna att komma igång.
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21
 petter.hylin@safespring.com

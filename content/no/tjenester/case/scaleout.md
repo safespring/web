@@ -68,3 +68,11 @@ Overforbruk av tjenester og APIer spesifikke for en leverandør kan føre til l�
 
 ## Vil du også ha en sikker og langsiktig partner for din datalagring?
 Det skal være enkelt for deg å håndtere store mengder data på en effektiv og sikker måte. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og overensstemmelse. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
+
+{{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
+Jeg er salgssjef i Norge og hjelper deg med å bruke våre tjenester.
+
+{{< inline "Ring:" >}} +47 90 67 58 27
+kristian.fjellhaug@safespring.com
+
+{{% /custom-card %}}
