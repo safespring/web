@@ -25,7 +25,7 @@ sidebarlinkurl2: "#"
     {{< icon-block icon="fa-kit fa-nvme" text="Snabb lokal disk till ETCD" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-kit fa-api" text="Powerful automation" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-network-wired" text="Stabilt nätverk" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-kit fa-safespring" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Kraftfulla virtuella servrar med NVMe
