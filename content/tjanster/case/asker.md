@@ -1,10 +1,10 @@
 ---
 title: "Hur Asker formar framtidens rekryteringsprocesser med Safespring"
 language: "Se"
-date: 2023-10-16
+date: 2023-10-18
 draft: false
 section: "Use case"
-intro: "Andreas Hellander, en av grundarna av Scaleout Systems, betonar att det gemensamma värdet av datasäkerhet och användning av öppen källkod har varit en stark grund i samarbetet med Safespring."
+intro: "Med sin AI-drivna intervjuplattform hjälper Asker chefer och rekryteringsteam att hitta rätt person för jobbet."
 background: ""
 card: ""
 socialmedia: ""
