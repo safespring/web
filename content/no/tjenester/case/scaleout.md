@@ -35,6 +35,8 @@ Etterspørselen etter Scaleouts løsninger fortsetter å øke. Selskapet utvikle
 – Samarbeidet med Safespring fungerer veldig bra. Ved å kombinere personvernfremmende teknikker og sikker skyinfrastruktur leverer vi smarte løsninger til våre kunder, som igjen bruker plattformen for å utvikle AI-løsninger innenfor blant annet forebyggende vedlikehold, svindeldeteksjon, og energioptimalisering i bilflåter.
 {{< /quote >}}
 
+{{< distance >}}
+
 ### Felles verdier er et sterkt fundament i samarbeidet
 Safesprings fokus på datasikkerhet spiller en sentral rolle i partnerskapet fordi Scaleout Systems verdsetter en sikker og pålitelig skyinfrastruktur. Siden de opererer internasjonalt og også mot andre leverandører, ser de store fordeler med en svensk offentlig skyplattform – så mye at de nå kjører både sin egen utvikling og produksjon på Safespring.
 
@@ -43,6 +45,8 @@ I tillegg er det felles verdier som styrker forståelsen mellom selskapene. Begg
 {{< quote "Andreas Hellander, CEO i Scaleout" >}}
 – Safespring er en kulturell match for oss, og er også en god sparringspartner når det kommer til å utvikle nye innovative løsninger, sier Andreas. Vårt samarbeid har ført til at Scaleouts løsninger for maskinlæring nå er tilgjengelige som en tjeneste i Safesprings skyinfrastruktur.
 {{< /quote >}}
+
+{{< distance >}}
 
 ### Store mengder data stiller høye krav til lagring
 Siden maskinlæring krever store mengder data for å kunne trene og utvikle modeller, stiller Scaleout Systems høye krav til Safespring. Skalerbarhet, tilgjengelighet av datalagring og beregningskraft er avgjørende faktorer.

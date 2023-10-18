@@ -35,6 +35,8 @@ Efterfrågan på Scaleouts lösningar fortsätter öka. Företaget utvecklar ML-
 – Samarbetet med Safespring fungerar väldigt bra. Genom att kombinera integritetshöjande tekniker och säker molninfrastruktur levererar vi smarta lösningar till våra kunder, som i sin tur använder plattformen för att utveckla AI-lösningar inom bland annat preventivt underhåll, fraud detection, och energioptimering i fordonsflottor. 
 {{< /quote >}}
 
+{{< distance >}}
+
 ### Gemensamma värderingar är en stark grund i samarbetet
 Safesprings fokus på datasäkerhet spelar en central roll i partnerskapet eftersom Scaleout Systems värdesätter en säker och pålitlig molninfrastruktur. Eftersom de verkar internationellt och även mot andra leverantörer, ser de stora fördelar med en svensk publik molnplattform – så pass att de nu kör både sin egen utveckling och produktion på Safespring. 
 
@@ -43,6 +45,8 @@ Dessutom finns det gemensamma värderingar som stärker förståelsen mellan bol
 {{< quote "Andreas Hellander, VD på Scaleout" >}}
 – Safespring är en kulturell matchning för oss, och är dessutom en bra sparringpartner när det kommer till att utveckla nya innovativa lösningar, säger Andreas. Vårt samarbete har lett till att Scaleout’s lösningar för maskininlärning nu är tillgängliga som tjänst i Safesprings molninfrastruktur. 
 {{< /quote >}}
+
+{{< distance >}}
 
 ### Stora mängder data ställer höga krav på lagringen
 Eftersom maskininlärning kräver stora mängder data för att kunna träna och utveckla modeller ställer Scaleout Systems höga krav på Safespring. Skalbarhet, tillgänglighet av datalagring och beräkningskraft är avgörande faktorer.
