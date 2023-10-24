@@ -6,7 +6,7 @@ date: "2023-02-28"
 draft: false
 language: "En"
 socialmedia: "/safespring-start.jpg"
-nosidebar: "x"
+nosidebar: "none"
 fullwidth: "x"
 language: "En"
 nolist: "x"

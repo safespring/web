@@ -2,16 +2,14 @@
 title: "Branscher"
 date: 2019-01-09T10:47:25+01:00
 draft: false
-intro: "Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar och har därför erfarenhet av många olika branscher och sektorer."
-background: "safespring_bilder_10.jpg"
+intro: "Utforska mångfalden av branscher som drar nytta av Safesprings innovativa IaaS-tjänster. Vi levererar anpassningsbara och pålitliga lösningar som uppfyller unika behov inom varje sektor."
+background: ""
+list: "indexcard"
 ---
+{{< ingress >}}
+Safespring erbjuder IaaS-tjänster som är utformade för att vara flexibla och kraftfulla, vilket möjliggör olika tillämpningar över flera branscher. Vår erfarenhet sträcker sig över många sektorer, vilket gör oss till en pålitlig partner för dina molnbaserade behov.
+{{< /ingress >}}
 
-Våra tjänster är mångsidiga och är ett mycket bra fundament för många olika typer av tillämpningar och har därför erfarenhet av många olika branscher och sektorer.
+### Läs mer under respektive bransch
 
-### Läs mer under respektive bransch.
-
-- [Utbildning / Forskning](/branscher/utbildning-forskning)
-- [Myndigheter](/branscher/myndigheter)
-- [Kommuner](/branscher/kommuner)
-- [Applikationsutvecklare](/branscher/applikationsutvecklare)
-- [IT-leverantörer](/branscher/it-leverantorer)
+{{< distance >}}

@@ -165,6 +165,15 @@ GÉANTs rolle innen OCRE innebærer at de hjelper til med å forhandle fram avta
 
 {{% /accordion %}}
 
+{{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
+Jeg er salgssjef i Norge og hjelper deg med å bruke våre tjenester som allerede er innkjøpt i henhold til OCRE-avtalen.
+
+{{< inline "Ring:" >}} +47 90 67 58 27
+kristian.fjellhaug@safespring.com
+
+{{% /custom-card %}}
+
+
 ## Ordliste
 
 Her er en liste over ord og begreper som blir forklart i teksten om Safespring og deres tjenesteleveranse til SciLifeLab. For å hjelpe til med å forstå teksten bedre og for å skape et mer komplett bilde av hva Safespring og SciLifeLab gjør sammen.
@@ -184,4 +193,3 @@ I denne sammenhengen er det en avtale mellom Safespring og SciLifeLab om hvilket
 {{% /accordion %}}
 
 {{< accordion-script >}}
-

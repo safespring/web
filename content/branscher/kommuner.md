@@ -3,7 +3,11 @@ title: "Kommuner"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla eSams rekommendationer."
-background: "safespring_bilder_10.jpg"
+background: ""
+cardtitle: "Kommuner"
+cardicon: "fa-solid fa-building-flag"
+cardcolor: "#417DA5"
+cardintro: ""
 ---
 
 <video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
