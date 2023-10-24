@@ -13,8 +13,10 @@ intro: "Safespring erbjuder snabb- eller långtidslagring (molnlagring) för din
 cardintro: "Safespring stödjer S3 och ger snabb- eller långtidslagring för er data."
 background: "safespring-storage-background.svg"
 form: "yes"
-sidebarlinkname: "Läs Solution Brief"
-sidebarlinkurl: "/solution-brief/objektlagring/"
+sidebarlinkname: "Boka demo"
+sidebarlinkurl: "/demo"
+sidebarlinkname2: "Pris för Storage"
+sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 aliases:
     - /storage/
