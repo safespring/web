@@ -282,8 +282,64 @@ h4 {
 	line-height: 21px;
 }
 
+
+
+
+
+
+
+#custom-cursor {
+	display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: #E8EFF3;
+    color: var(--middle-blue-color);
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    line-height: 16px;
+    pointer-events: none; /* För att förhindra att cirkeln påverkar klickhändelser */
+    visibility: hidden;
+    z-index: 1000; /* Se till att cirkeln är över andra element */
+    font-family: var(--mon-font);
+    align-items: center;
+    justify-content: center;
+}
+
+.index-video video:hover {
+    cursor: none; /* Gömmer den vanliga muspekaren när du hovrar över videon */
+}
+
+
+
+
+
+
+
+
+
+
+.video-container {
+	margin-top: 10%;
+  position: relative;
+}
+
+.index-video {
+	display: flex;
+	justify-content: center;
+	padding: ;
+}
+
+.index-video video{
+	border-radius: 20px;
+	max-width: 100% !important;
+}
+
 .youtube, video {
-	max-width: 700px !important;
+	max-width: 700px;
 	background-color: #E8EFF3;
 }
 

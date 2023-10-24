@@ -9,13 +9,13 @@
       <div class="headline-and-badge">
         <h1 class="post-heading-firstpage balance-text">{{ .Title }}</h1>
         <a href="/om-safespring/datacenter">
-        <img class="badge lazyload" src="/img/safespring-gdpr-compliant-badge.svg" alt="GDPR compliant badge">
+          <img class="badge lazyload" src="/img/safespring-gdpr-compliant-badge.svg" alt="GDPR compliant badge">
         </a>
         <p class="content-summary-index">{{ .Params.intro }}</p>
       </div>
     </div>
     <div class="background-bright">
-<div class="flexcontainer-three">
+      <div class="flexcontainer-three">
         {{ $language := .Params.language }}
         {{ $sections := (dict "Se" "tjanster" "En" "en" "No" "no") }}
         {{ $section := index $sections $language }}
@@ -25,7 +25,17 @@
         {{ end }}
         {{ end }}
       </div>
-      <img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">
+      <div class="index-video video-container">
+        <video id="myVideo" autoplay muted controls width="100%" height="auto" poster="https://next.safespring.com/s/WrLBgFcKEyZxDx6/download/safespring_use-case_scaleout-1080p.jpg">
+          <source src="https://next.safespring.com/s/ibo9AqwqAni2S37/download/safespring_x_scaleout%20%281080p%29-v3.mp4" type="video/mp4" media="all and (min-resolution: 192dpi)">
+          <source src="https://next.safespring.com/s/ibo9AqwqAni2S37/download/safespring_x_scaleout%20%281080p%29-v3.mp4" type="video/mp4" media="all and (max-width: 1920px)">
+          <source src="https://next.safespring.com/s/ibo9AqwqAni2S37/download/safespring_x_scaleout%20%281080p%29-v3.mp4" type="video/mp4" media="all and (max-width: 1280px)">
+          <track label="Swedish" kind="subtitles" srclang="sv" src="https://next.safespring.com/s/7ka9RsyWWaeWBWk/download/safespring_use-case_scaleout.vtt" default>
+          Din webbläsare stödjer inte HTML5 video.
+        </video>
+        <div id="custom-cursor" class="custom-cursor">Play with sound</div>
+      </div>
+      <!--<img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">-->
     </div>
     <div class="two-field-background">
       <div class="two-field-container-1">
@@ -58,3 +68,76 @@
   <!-- FOOTER -->
   {{ partial "footer.html" . }}
 </body>
+<script>
+    var video = document.getElementById('myVideo');
+    var customCursor = document.getElementById('custom-cursor');
+    var cursorChanged = false;  // En flagga för att hålla reda på om cursorn har ändrats
+
+    video.addEventListener('mousemove', function(e) {
+        var bounds = video.getBoundingClientRect();
+        var lowerBound = bounds.bottom - 50;  // Justera värdet beroende på storleken på dina kontroller
+
+        if (e.clientY > lowerBound) {
+            document.body.style.cursor = 'auto'; // Återställ till normal cursor
+            customCursor.style.visibility = 'hidden';  // Göm custom cursor
+            cursorChanged = true;  // Uppdatera flaggan
+        } else {
+            // Om cursorn har ändrats, återställ det till din custom cursor
+            if (cursorChanged) {
+                document.body.style.cursor = 'none';
+                cursorChanged = false;
+            }
+            customCursor.style.top = (e.clientY - bounds.top - 50) + 'px';
+            customCursor.style.left = (e.clientX - bounds.left - 50) + 'px';
+            customCursor.style.visibility = 'visible';
+        }
+    });
+
+    video.addEventListener('mouseleave', function() {
+        document.body.style.cursor = 'auto'; // Återställ till normal cursor när musen lämnar videon
+        customCursor.style.visibility = 'hidden';
+    });
+
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (!isSafari) {
+    video.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            customCursor.innerText = "Pause";
+        } else {
+            if (video.paused) {
+                video.play();
+                customCursor.innerText = "Pause";
+            } else {
+                video.pause();
+                customCursor.innerText = "Play";
+            }
+        }
+    });
+}
+
+if (isSafari) {
+    video.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            customCursor.innerText = "Pause";
+        } else {
+            if (video.paused) {
+                customCursor.innerText = "Play";
+            } else {
+                customCursor.innerText = "Pause";
+            }
+        }
+    });
+}
+
+</script>

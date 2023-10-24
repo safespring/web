@@ -14,6 +14,7 @@ nolist: "x"
 
 {{< service-catalogue >}}
 
+<!--
 | Service Levels               | Basic | Business | Enterprise |
 |------------------------------|:-------:|:----------:|:------------:|
 | Availability                 | X     | X        | X          |
@@ -48,3 +49,4 @@ nolist: "x"
 | Maintenance News             | X     | X        | X          |
 | Collaboration Forums         | X     | X        | X          |
 | Price                        | X     | X        | X          |
+-->
