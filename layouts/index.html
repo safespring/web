@@ -69,34 +69,23 @@
   {{ partial "footer.html" . }}
 </body>
 <script>
-    var video = document.getElementById('myVideo');
-    var customCursor = document.getElementById('custom-cursor');
-    var cursorChanged = false;  // En flagga för att hålla reda på om cursorn har ändrats
+var video = document.getElementById('myVideo');
+var customCursor = document.getElementById('custom-cursor');
 
-    video.addEventListener('mousemove', function(e) {
-        var bounds = video.getBoundingClientRect();
-        var lowerBound = bounds.bottom - 50;  // Justera värdet beroende på storleken på dina kontroller
-
-        if (e.clientY > lowerBound) {
-            document.body.style.cursor = 'auto'; // Återställ till normal cursor
-            customCursor.style.visibility = 'hidden';  // Göm custom cursor
-            cursorChanged = true;  // Uppdatera flaggan
-        } else {
-            // Om cursorn har ändrats, återställ det till din custom cursor
-            if (cursorChanged) {
-                document.body.style.cursor = 'none';
-                cursorChanged = false;
-            }
-            customCursor.style.top = (e.clientY - bounds.top - 50) + 'px';
-            customCursor.style.left = (e.clientX - bounds.left - 50) + 'px';
-            customCursor.style.visibility = 'visible';
-        }
-    });
-
-    video.addEventListener('mouseleave', function() {
-        document.body.style.cursor = 'auto'; // Återställ till normal cursor när musen lämnar videon
+video.addEventListener('mousemove', function(e) {
+    var bounds = video.getBoundingClientRect();
+    customCursor.style.top = (e.clientY - bounds.top - 50) + 'px'; 
+    customCursor.style.left = (e.clientX - bounds.left - 50) + 'px'; 
+    
+    // Check if the mouse is in the bottom 100px of the video
+    if (e.clientY - bounds.top > video.offsetHeight - 100) {
         customCursor.style.visibility = 'hidden';
-    });
+        video.style.cursor = 'auto'; // Change the cursor to the default cursor style
+    } else {
+        customCursor.style.visibility = 'visible';
+        video.style.cursor = 'none'; // Hide the default cursor
+    }
+});
 
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
