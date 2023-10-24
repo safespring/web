@@ -74,8 +74,8 @@ var customCursor = document.getElementById('custom-cursor');
 
 video.addEventListener('mousemove', function(e) {
     var bounds = video.getBoundingClientRect();
-    customCursor.style.top = (e.clientY - bounds.top - 50) + 'px'; 
-    customCursor.style.left = (e.clientX - bounds.left - 50) + 'px'; 
+    customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
+    customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
     
     // Check if the mouse is in the bottom 100px of the video
     if (e.clientY - bounds.top > video.offsetHeight - 100) {
@@ -85,6 +85,11 @@ video.addEventListener('mousemove', function(e) {
         customCursor.style.visibility = 'visible';
         video.style.cursor = 'none'; // Hide the default cursor
     }
+});
+
+video.addEventListener('mouseleave', function() {
+    customCursor.style.visibility = 'hidden';
+    video.style.cursor = 'auto'; // Change the cursor to the default cursor style
 });
 
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
