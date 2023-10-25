@@ -323,8 +323,11 @@ h4 {
 
 
 .video-container {
-	margin-top: 10%;
+	display: flex;
+	margin-block: 10%;
   position: relative;
+  max-width: 80vw;
+  min-width: 330px;
 }
 
 .index-video {
@@ -2424,6 +2427,10 @@ color: var(--unCheckedColor);
 	.background-bright {
 		max-width: 1400px;
 		margin: auto;
+		display: flex;
+		flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 	}
 
 	.white-blue-fade {
