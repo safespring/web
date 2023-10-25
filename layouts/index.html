@@ -81,7 +81,7 @@ var customCursor = document.getElementById('custom-cursor');
 video.addEventListener('mousemove', function(e) {
     var bounds = video.getBoundingClientRect();
     customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
-    customCursor.style.left = (e.clientX - bounds.left - 65v) + 'px'; 
+    customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
     
     // Check if the mouse is in the bottom 100px of the video
     if (e.clientY - bounds.top > video.offsetHeight - 100) {
@@ -139,5 +139,4 @@ if (isSafari) {
         }
     });
 }
-
 </script>
