@@ -282,6 +282,15 @@ h4 {
 	line-height: 21px;
 }
 
+.center-text {
+	  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+}
+
 #custom-cursor {
 	display: flex;
     width: 100px;
