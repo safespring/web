@@ -282,12 +282,6 @@ h4 {
 	line-height: 21px;
 }
 
-
-
-
-
-
-
 #custom-cursor {
 	display: flex;
     width: 100px;
@@ -313,15 +307,6 @@ h4 {
     cursor: none; /* Gömmer den vanliga muspekaren när du hovrar över videon */
 }
 
-
-
-
-
-
-
-
-
-
 .video-container {
 	display: flex;
 	margin-block: 10%;
@@ -333,7 +318,9 @@ h4 {
 .index-video {
 	display: flex;
 	justify-content: center;
-	padding: ;
+	align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .index-video video{

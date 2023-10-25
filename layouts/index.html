@@ -34,6 +34,7 @@
           Din webbläsare stödjer inte HTML5 video.
         </video>
         <div id="custom-cursor" class="custom-cursor">Play with sound</div>
+         <p>Läs vårt use case om hur <a href="/tjanster/case/scaleout/">Scaleout bygger en AI-plattform</a> på Safesprings infrastruktur.</p>
       </div>
       <!--<img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">-->
     </div>
@@ -75,7 +76,7 @@ var customCursor = document.getElementById('custom-cursor');
 video.addEventListener('mousemove', function(e) {
     var bounds = video.getBoundingClientRect();
     customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
-    customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
+    customCursor.style.left = (e.clientX - bounds.left - 65v) + 'px'; 
     
     // Check if the mouse is in the bottom 100px of the video
     if (e.clientY - bounds.top > video.offsetHeight - 100) {
