@@ -2426,7 +2426,6 @@ color: var(--unCheckedColor);
 	}
 	.background-bright {
 		max-width: 1400px;
-		margin: auto;
 		display: flex;
 		flex-direction: column;
     flex-wrap: nowrap;
