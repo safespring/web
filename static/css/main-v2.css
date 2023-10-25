@@ -289,7 +289,6 @@ h4 {
     align-items: center;
     max-width: 700px;
     text-align: center;
-    margin:10%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -300,6 +299,7 @@ h4 {
     align-items: center;
     max-width: 700px;
     text-align: left;
+    margin:10%;
 }
 }
 
