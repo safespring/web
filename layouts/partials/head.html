@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="/css/main-v2.css" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!--Video js -->
+  <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
 
   <!-- Fonts -->
   <script defer src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous"></script>
@@ -39,4 +42,4 @@
   {{ partial "favicons.html" . }}
 
   {{ "<!--[if IE]>" | safeHTML }}<meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">{{ "<![endif]-->" | safeHTML }}
-</head>
+</head> 

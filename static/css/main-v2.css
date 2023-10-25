@@ -282,8 +282,75 @@ h4 {
 	line-height: 21px;
 }
 
+.center-text {
+	  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+	.center-text {
+	  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 700px;
+    text-align: left;
+    margin:10%;
+}
+}
+
+#custom-cursor {
+	display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: #E8EFF3;
+    color: var(--middle-blue-color);
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    line-height: 16px;
+    pointer-events: none; /* För att förhindra att cirkeln påverkar klickhändelser */
+    visibility: hidden;
+    z-index: 1000; /* Se till att cirkeln är över andra element */
+    font-family: var(--mon-font);
+    align-items: center;
+    justify-content: center;
+}
+
+.index-video video:hover {
+    cursor: none; /* Gömmer den vanliga muspekaren när du hovrar över videon */
+}
+
+.video-container {
+	display: flex;
+	margin-block: 10%;
+  position: relative;
+  max-width: 80vw;
+  min-width: 330px;
+}
+
+.index-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.index-video video{
+	border-radius: 20px;
+	max-width: 100% !important;
+}
+
 .youtube, video {
-	max-width: 700px !important;
+	max-width: 700px;
 	background-color: #E8EFF3;
 }
 
@@ -2368,6 +2435,10 @@ color: var(--unCheckedColor);
 	.background-bright {
 		max-width: 1400px;
 		margin: auto;
+		display: flex;
+		flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 	}
 
 	.white-blue-fade {
