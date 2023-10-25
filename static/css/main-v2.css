@@ -289,6 +289,18 @@ h4 {
     align-items: center;
     max-width: 700px;
     text-align: center;
+    margin:10%;
+}
+
+@media only screen and (max-width: 900px) {
+	.center-text {
+	  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 700px;
+    text-align: left;
+}
 }
 
 #custom-cursor {
