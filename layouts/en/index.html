@@ -23,7 +23,25 @@
         {{ end }}
         {{ end }}
       </div>
-      <img class="lazyload" data-src="/img/safespring-portal3.svg" class="index-image"></img>
+      <div id="scaleout-usecase"></div>
+      <div class="index-video video-container">
+        <video id="myVideo" autoplay muted controls width="100%" height="auto" poster="https://next.safespring.com/s/WrLBgFcKEyZxDx6/download/safespring_use-case_scaleout-1080p.jpg">
+          <source src="https://next.safespring.com/s/ibo9AqwqAni2S37/download/safespring_x_scaleout%20%281080p%29-v3.mp4" type="video/mp4" media="all and (min-resolution: 192dpi)">
+          <source src="https://next.safespring.com/s/ibo9AqwqAni2S37/download/safespring_x_scaleout%20%281080p%29-v3.mp4" type="video/mp4" media="all and (max-width: 1920px)">
+          <source src="https://next.safespring.com/s/ibo9AqwqAni2S37/download/safespring_x_scaleout%20%281080p%29-v3.mp4" type="video/mp4" media="all and (max-width: 1280px)">
+          <track label="Swedish" kind="subtitles" srclang="sv" src="https://next.safespring.com/s/ogpeSwaSZzgQSRw/download/safespring_use-case_scaleout-sv.vtt">
+          <track label="English" kind="subtitles" srclang="en" src="https://next.safespring.com/s/ACWkn7jJy2eDQdF/download/safespring_use-case_scaleout-en.vtt" default>
+          <track label="Norwegian" kind="subtitles" srclang="no" src="https://next.safespring.com/s/exe4Xb74t9jAT4W/download/safespring_use-case_scaleout-no.vtt">
+          Your browser does not support HTML5 video.
+        </video>
+        <div id="custom-cursor" class="custom-cursor">Play with sound</div>
+      </div>
+      <div class="center-text">
+        <img src="/om-safespring/images/partners/safespring_partners_scaleout-systems.svg" style="max-width:250px;margin-bottom: 20px;">
+         <p>Scaleout is building an AI platform on Safespring's infrastructure. The interest and demand for machine learning and AI have exploded recently. At the same time, a discussion is ongoing about the transparency of the data the models are trained on and what one discloses when using the services.</p>
+         <p><a href="/en/services/case/scaleout/" class="button">Read Use case</a></p>
+       </div>
+      <!--<img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">-->
     </div>
     <div class="two-field-background">
       <div class="two-field-container-1">
@@ -59,3 +77,69 @@
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
 </body>
+<script>
+var video = document.getElementById('myVideo');
+var customCursor = document.getElementById('custom-cursor');
+
+video.addEventListener('mousemove', function(e) {
+    var bounds = video.getBoundingClientRect();
+    customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
+    customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
+    
+    // Check if the mouse is in the bottom 100px of the video
+    if (e.clientY - bounds.top > video.offsetHeight - 100) {
+        customCursor.style.visibility = 'hidden';
+        video.style.cursor = 'auto'; // Change the cursor to the default cursor style
+    } else {
+        customCursor.style.visibility = 'visible';
+        video.style.cursor = 'none'; // Hide the default cursor
+    }
+});
+
+video.addEventListener('mouseleave', function() {
+    customCursor.style.visibility = 'hidden';
+    video.style.cursor = 'auto'; // Change the cursor to the default cursor style
+});
+
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (!isSafari) {
+    video.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            customCursor.innerText = "Pause";
+        } else {
+            if (video.paused) {
+                video.play();
+                customCursor.innerText = "Pause";
+            } else {
+                video.pause();
+                customCursor.innerText = "Play";
+            }
+        }
+    });
+}
+
+if (isSafari) {
+    video.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            customCursor.innerText = "Pause";
+        } else {
+            if (video.paused) {
+                customCursor.innerText = "Play";
+            } else {
+                customCursor.innerText = "Pause";
+            }
+        }
+    });
+}
+</script>
