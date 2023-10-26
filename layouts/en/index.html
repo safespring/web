@@ -77,3 +77,69 @@
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
 </body>
+<script>
+var video = document.getElementById('myVideo');
+var customCursor = document.getElementById('custom-cursor');
+
+video.addEventListener('mousemove', function(e) {
+    var bounds = video.getBoundingClientRect();
+    customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
+    customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
+    
+    // Check if the mouse is in the bottom 100px of the video
+    if (e.clientY - bounds.top > video.offsetHeight - 100) {
+        customCursor.style.visibility = 'hidden';
+        video.style.cursor = 'auto'; // Change the cursor to the default cursor style
+    } else {
+        customCursor.style.visibility = 'visible';
+        video.style.cursor = 'none'; // Hide the default cursor
+    }
+});
+
+video.addEventListener('mouseleave', function() {
+    customCursor.style.visibility = 'hidden';
+    video.style.cursor = 'auto'; // Change the cursor to the default cursor style
+});
+
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (!isSafari) {
+    video.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            customCursor.innerText = "Pause";
+        } else {
+            if (video.paused) {
+                video.play();
+                customCursor.innerText = "Pause";
+            } else {
+                video.pause();
+                customCursor.innerText = "Play";
+            }
+        }
+    });
+}
+
+if (isSafari) {
+    video.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            customCursor.innerText = "Pause";
+        } else {
+            if (video.paused) {
+                customCursor.innerText = "Play";
+            } else {
+                customCursor.innerText = "Pause";
+            }
+        }
+    });
+}
+</script>
