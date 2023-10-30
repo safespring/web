@@ -14,9 +14,9 @@ Safespring receives and stores the information entered in the contact forms avai
 
 This means that we process your personal data to be able to get in touch with you, and/or create user accounts related to our services ("The Purpose"). The data we process for The Purpose is usually your name, your email address, your phone number, your title, and your employer ("The Personal Data").
 
-{{< note "Note" >}}
+{{% note "Note" %}}
 Safespring AB, org. no. 559075–0245, is responsible for the processing of The Personal Data.
-{{< /note >}}
+{{% /note %}}
 
 ### Legal Basis
 The legal basis for the processing of The Personal Data for The Purpose is our legitimate interest in being able to market the services we offer effectively. The Personal Data is stored securely in line with our business model, and you have the right to ask us to delete The Personal Data and/or indicate that you do not wish to be contacted by us. We will process The Personal Data as long as you consent to it. When the processing ends, The Personal Data will be deleted.

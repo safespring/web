@@ -38,4 +38,6 @@ Med Safespring får du tilgang til en rekke verktøy og ressurser som hjelper de
 
 <div style="margin-bottom:50px;"></div>
 
-{{< bestill-demo >}}
+{{< distance >}}
+
+{{< boka-demo-no >}}

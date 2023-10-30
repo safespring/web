@@ -14,7 +14,6 @@ language: "En"
 
 {{< ingress >}}
 Safespring's "Acceptable Use Policy" specifies what is considered acceptable and what is not to prevent abuse, violations, or harm to users, providers, or other parties.
-
 {{< /ingress >}}
 
 In this text, Safespring establishes policy principles for the use of their cloud services by users or partners. Below is a summary of the text in bullet points:

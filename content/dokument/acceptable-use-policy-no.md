@@ -14,7 +14,6 @@ language: "No"
 
 {{< ingress >}}
 Safesprings "akseptable brukerpolitikk" spesifiserer hva som anses som akseptabelt og hva som ikke er det, for å forhindre misbruk, brudd eller skade på brukere, leverandører eller andre parter.
-
 {{< /ingress >}}
 
 I denne teksten fastsetter Safespring policyprinsipper for bruk av deres skytjenester av brukere eller partnere. Nedenfor er sammendraget av teksten i punktlister:

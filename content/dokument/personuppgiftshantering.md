@@ -13,9 +13,9 @@ Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär s
 
 Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”).
 
-{{< note "Note" >}}
+{{% note "Note" %}}
 Safespring AB, org. nr. 559075–0245, är personuppgiftsansvariga för behandlingen av Personuppgifterna.
-{{< /note >}}
+{{% /note %}}
 
 
 ### Legal grund
