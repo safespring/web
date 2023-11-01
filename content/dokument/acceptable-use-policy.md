@@ -11,9 +11,9 @@ general: "yes"
 toc: ""
 ---
 
+
 {{< ingress >}}
 Safesprings "Acceptable Use Policy" anger vad som anses vara acceptabelt och vad som inte är det för att förhindra missbruk, kränkningar eller skador på användare, leverantör eller andra parter.
-
 {{< /ingress >}}
 
 I den här texten fastställer Safesprings policy principer för användningen av deras molntjänster av användare eller partners. Nedan är sammanfattningen av texten i punktlistor:

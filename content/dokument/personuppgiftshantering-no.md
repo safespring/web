@@ -14,9 +14,9 @@ Safespring mottar og lagrer opplysningene som skrives inn i kontaktskjemaene som
 
 Dette innebærer at vi behandler dine personopplysninger for å kunne komme i kontakt med deg, og/eller opprette brukerkontoer knyttet til våre tjenester ("Formålet"). De opplysninger vi behandler for Formålet er normalt ditt navn, din e-postadresse, ditt telefonnummer, din tittel og din arbeidsgiver ("Personopplysningene").
 
-{{< note "Merk" >}}
+{{% note "Merk" %}}
 Safespring AB, org. nr. 559075–0245, er ansvarlig for behandlingen av Personopplysningene.
-{{< /note >}}
+{{% /note %}}
 
 ### Lovlig grunnlag
 Det lovlige grunnlaget for behandlingen av Personopplysningene for Formålet er vår berettigede interesse i å kunne markedsføre tjenestene vi tilbyr på en effektiv måte. Personopplysningene lagres på en sikker måte i tråd med vår forretningsmodell, og du har rett til når som helst å be oss slette Personopplysningene og/eller angi at du ikke ønsker å bli kontaktet av oss. Vi vil behandle Personopplysningene så lenge du godkjenner det. Når behandlingen opphører, slettes Personopplysningene.

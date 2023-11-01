@@ -35,4 +35,6 @@ With Safespring, you have access to a variety of resources and tools that help y
 - Presentation of the value our platform can create and how we can help you get started
 - Advice on which services are best for your business
 
-{{< 2calltoaction "Contact us" "/en/contact" "Send an email" "mailto:info@safespring.com">}}
+{{< distance >}}
+
+{{< boka-demo-en >}}
