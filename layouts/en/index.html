@@ -10,56 +10,59 @@
         <h1 class="post-heading-firstpage balance-text">{{ .Title }}</h1>
         <object class="badge lazyload" data="/img/safespring-gdpr-compliant-badge.svg"></object>
         <p class="content-summary-index">{{ .Params.intro }}</p>
-      </div>
     </div>
-    <div class="background-bright">
-      <div class="flexcontainer-three">
-        {{ $language := .Params.language }}
-        {{ $sections := (dict "Se" "tjanster" "En" "en" "No" "no") }}
-        {{ $section := index $sections $language }}
-        {{ range (where $.Site.RegularPages "Section" $section).ByParam "cardorder" }}
-        {{ if isset .Params "cardorder" }}
-        {{ .Render "li-index" }}
-        {{ end }}
-        {{ end }}
-      </div>
-      <div id="scaleout-usecase"></div>
-        <div class="index-video video-container">
-    <video id="myVideo" autoplay muted controls width="100%" height="auto" poster="https://next.safespring.com/s/WrLBgFcKEyZxDx6/download/safespring_use-case_scaleout-1080p.jpg">
-        Your browser does not support the video tag.
-    </video>
-    <div id="custom-cursor" class="custom-cursor">Play with sound</div>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('myVideo');
-        var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/master.m3u8";
-
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource(videoSrc);
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                video.play();
-            });
-            hls.on(Hls.Events.ERROR, function (event, data) {
-                console.error('Error event:', event, 'Data:', data);
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = videoSrc;
-            video.addEventListener('canplay', function() {
-                video.play();
-            });
-        }
-    });
-</script>
 </div>
-      <div class="center-text">
-        <img src="/om-safespring/images/partners/safespring_partners_scaleout-systems.svg" style="max-width:250px;margin-bottom: 20px;">
-         <p>Scaleout is building an AI platform on Safespring's infrastructure. The interest and demand for machine learning and AI have exploded recently. At the same time, a discussion is ongoing about the transparency of the data the models are trained on and what one discloses when using the services.</p>
-         <p><a href="/en/services/case/scaleout/" class="button">Read Use case</a></p>
-       </div>
-      <!--<img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">-->
+<div class="background-bright">
+  <div class="flexcontainer-three">
+    {{ $language := .Params.language }}
+    {{ $sections := (dict "Se" "tjanster" "En" "en" "No" "no") }}
+    {{ $section := index $sections $language }}
+    {{ range (where $.Site.RegularPages "Section" $section).ByParam "cardorder" }}
+    {{ if isset .Params "cardorder" }}
+    {{ .Render "li-index" }}
+    {{ end }}
+    {{ end }}
+</div>
+<div id="scaleout-usecase"></div>
+<div class="index-video video-container">
+    <video id="myVideo" autoplay muted controls width="100%" height="auto" poster="https://next.safespring.com/s/WrLBgFcKEyZxDx6/download/safespring_use-case_scaleout-1080p.jpg">
+        <track src="https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/sub/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish">
+            <track src="https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/sub/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English" default>
+              <track src="https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/sub/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+                Your browser does not support the video tag.
+            </video>
+            <div id="custom-cursor" class="custom-cursor">Play with sound</div>
+            <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var video = document.getElementById('myVideo');
+                    var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/master.m3u8";
+
+                    if (Hls.isSupported()) {
+                        var hls = new Hls();
+                        hls.loadSource(videoSrc);
+                        hls.attachMedia(video);
+                        hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                            video.play();
+                        });
+                        hls.on(Hls.Events.ERROR, function (event, data) {
+                            console.error('Error event:', event, 'Data:', data);
+                        });
+                    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                        video.src = videoSrc;
+                        video.addEventListener('canplay', function() {
+                            video.play();
+                        });
+                    }
+                });
+            </script>
+        </div>
+        <div class="center-text">
+            <img src="/om-safespring/images/partners/safespring_partners_scaleout-systems.svg" style="max-width:250px;margin-bottom: 20px;">
+            <p>Scaleout is building an AI platform on Safespring's infrastructure. The interest and demand for machine learning and AI have exploded recently. At the same time, a discussion is ongoing about the transparency of the data the models are trained on and what one discloses when using the services.</p>
+            <p><a href="/en/services/case/scaleout/" class="button">Read Use case</a></p>
+        </div>
+        <!--<img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">-->
     </div>
     <div class="two-field-background">
       <div class="two-field-container-1">
@@ -67,46 +70,46 @@
         <div class="ingress" id="down">
           <p>You'll feel right at home in Safespring. Launch virtual servers with a single click, or store large amounts of data through S3 and much more.</p>
           <a href="/en/services/compute/" class="button">Safespring compute</a>
-        </div>
       </div>
-      <div class="two-field-container-image">
-        <img class="lazyload" data-src="/img/graphics/safespring-list-en.svg" class="index-image"></img>
-      </div>
-      <div class="two-field-container">
-        <h2 class="balance-text">Safesprings Data Center is Located in the Nordics</h2>
-        <div class="ingress" id="down">
-          <p>Our data centers meet high demands for reliability and availability. The data centers are powered 100% by electricity from renewable energy sources.</p>
-          <a href="/en/data-centers/" class="button">About our data centers</a>
-          <a style="margin:25px 0 0 25px; padding: 1px 0 0 0;" id="text-button" href="/en/about/">About Safespring</a>
-
-        </div>
-      </div>
-
-    </div>
   </div>
-  <div class="flexcontainer">
+  <div class="two-field-container-image">
+    <img class="lazyload" data-src="/img/graphics/safespring-list-en.svg" class="index-image"></img>
+</div>
+<div class="two-field-container">
+    <h2 class="balance-text">Safesprings Data Center is Located in the Nordics</h2>
+    <div class="ingress" id="down">
+      <p>Our data centers meet high demands for reliability and availability. The data centers are powered 100% by electricity from renewable energy sources.</p>
+      <a href="/en/data-centers/" class="button">About our data centers</a>
+      <a style="margin:25px 0 0 25px; padding: 1px 0 0 0;" id="text-button" href="/en/about/">About Safespring</a>
+
+  </div>
+</div>
+
+</div>
+</div>
+<div class="flexcontainer">
     {{ range first 3 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
     <div class="content-container">
       {{ .Render "li-latest"}}
-    </div>
-    {{ end }}
   </div>
+  {{ end }}
+</div>
 </div>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
 </body>
 <script>
-var video = document.getElementById('myVideo');
-var customCursor = document.getElementById('custom-cursor');
+    var video = document.getElementById('myVideo');
+    var customCursor = document.getElementById('custom-cursor');
 
-video.addEventListener('mousemove', function(e) {
-    var bounds = video.getBoundingClientRect();
-    customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
-    customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
-    
+    video.addEventListener('mousemove', function(e) {
+        var bounds = video.getBoundingClientRect();
+        customCursor.style.top = (e.clientY - bounds.top - 65) + 'px'; 
+        customCursor.style.left = (e.clientX - bounds.left - 65) + 'px'; 
+
     // Check if the mouse is in the bottom 100px of the video
-    if (e.clientY - bounds.top > video.offsetHeight - 100) {
-        customCursor.style.visibility = 'hidden';
+        if (e.clientY - bounds.top > video.offsetHeight - 100) {
+            customCursor.style.visibility = 'hidden';
         video.style.cursor = 'auto'; // Change the cursor to the default cursor style
     } else {
         customCursor.style.visibility = 'visible';
@@ -114,50 +117,50 @@ video.addEventListener('mousemove', function(e) {
     }
 });
 
-video.addEventListener('mouseleave', function() {
-    customCursor.style.visibility = 'hidden';
+    video.addEventListener('mouseleave', function() {
+        customCursor.style.visibility = 'hidden';
     video.style.cursor = 'auto'; // Change the cursor to the default cursor style
 });
 
-var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-if (!isSafari) {
-    video.addEventListener('click', function(e) {
-        e.preventDefault();
+    if (!isSafari) {
+        video.addEventListener('click', function(e) {
+            e.preventDefault();
 
-        if (video.muted) {
-            video.muted = false;
-            video.currentTime = 0;
-            video.play();
-            customCursor.innerText = "Pause";
-        } else {
-            if (video.paused) {
+            if (video.muted) {
+                video.muted = false;
+                video.currentTime = 0;
                 video.play();
                 customCursor.innerText = "Pause";
             } else {
-                video.pause();
-                customCursor.innerText = "Play";
+                if (video.paused) {
+                    video.play();
+                    customCursor.innerText = "Pause";
+                } else {
+                    video.pause();
+                    customCursor.innerText = "Play";
+                }
             }
-        }
-    });
-}
+        });
+    }
 
-if (isSafari) {
-    video.addEventListener('click', function(e) {
-        e.preventDefault();
+    if (isSafari) {
+        video.addEventListener('click', function(e) {
+            e.preventDefault();
 
-        if (video.muted) {
-            video.muted = false;
-            video.currentTime = 0;
-            video.play();
-            customCursor.innerText = "Pause";
-        } else {
-            if (video.paused) {
-                customCursor.innerText = "Play";
-            } else {
+            if (video.muted) {
+                video.muted = false;
+                video.currentTime = 0;
+                video.play();
                 customCursor.innerText = "Pause";
+            } else {
+                if (video.paused) {
+                    customCursor.innerText = "Play";
+                } else {
+                    customCursor.innerText = "Pause";
+                }
             }
-        }
-    });
-}
+        });
+    }
 </script>
