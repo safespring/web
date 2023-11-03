@@ -11,7 +11,7 @@
   <div class="content-default-single">
 {{ if .Params.videoURL }}
 <div class="webinarvideo">
-    <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls>
+    <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls playsinline webkit-playsinline>
         {{ if eq (path.Ext .Params.videoURL) ".m3u8" }}
             <!-- Inget behov av <source> taggen för .m3u8, hanteras av hls.js -->
         {{ else }}
