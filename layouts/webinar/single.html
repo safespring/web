@@ -83,6 +83,14 @@
         }
     });
 </script>
+<script>
+const videoElement = document.querySelector('video');
+videoElement.addEventListener('error', (e) => {
+    console.error('Video error:', e);
+});
+videoElement.src = '{{ .Params.videoURL }}';
+videoElement.load();
+</script>
 {{ end }}
           {{ .Content }}
           {{ partial "webinar-serie.html" . }}
