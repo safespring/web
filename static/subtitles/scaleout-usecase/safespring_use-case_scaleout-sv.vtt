@@ -1,5 +1,11 @@
 WEBVTT
 
+::cue {
+  font-family: Montserrat;
+  background-color: var(--cloud-blue-color)
+  color: var(--middle-blue-color)
+}
+
 00:00:01.560 --> 00:00:04.680
 Vi lever i en värld där 
 förändringstakten är hög
