@@ -41,6 +41,6 @@ chapters:
 ---
 
 ## Avsnitt 1
-### Introduktion till molnbaserade applikationer och Kubernetes
+### Introduktion till molnbaserade applikationer och Kubernetes.
 
 I detta avsnitt med Gabriel Paues från Safespring och Lars Larsson från Elastisys får du en översikt över molnbaserade applikationer och en introduktion till Kubernetes. Du kommer att lära dig om dess nyckelkomponenter,hur de samverkar för att skapa en skalbar och pålitlig infrastruktur och vad dessa komponenter motsvarar i AWS.
