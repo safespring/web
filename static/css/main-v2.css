@@ -303,32 +303,44 @@ h4 {
 	}
 }
 
-#custom-cursor {
-	display: flex;
-	width: 100px;
-	height: 100px;
-	padding: 30px;
-	background-color: #FFFFFF90;
-	color: var(--middle-blue-color);
-	border-radius: 50%;
-	position: absolute;
-	text-align: center;
-	line-height: 100px;
-	font-weight: bold;
-	line-height: 16px;
-	pointer-events: none; /* För att förhindra att cirkeln påverkar klickhändelser */
-	visibility: hidden;
-	z-index: 1000; /* Se till att cirkeln är över andra element */
-	font-family: var(--mon-font);
-	align-items: center;
-	justify-content: center;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-
-.index-video video:hover {
+@media only screen and (min-width: 900px) {
+	#custom-cursor {
+		display: flex;
+		width: 100px;
+		height: 100px;
+		padding: 30px;
+		background-color: #FFFFFF90;
+		color: var(--middle-blue-color);
+		border-radius: 50%;
+		position: absolute;
+		text-align: center;
+		line-height: 100px;
+		font-weight: bold;
+		line-height: 16px;
+		pointer-events: none; /* För att förhindra att cirkeln påverkar klickhändelser */
+		visibility: hidden;
+		z-index: 1000; /* Se till att cirkeln är över andra element */
+		font-family: var(--mon-font);
+		align-items: center;
+		justify-content: center;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+	.index-video video:hover {
 	cursor: none; /* Gömmer den vanliga muspekaren när du hovrar över videon */
 }
+}
+
+@media only screen and (max-width: 900px) {
+	#custom-cursor {
+		display: none;
+	}
+	.index-video video:hover {
+	cursor: auto !important;
+}
+}
+
+
 
 .video-container {
 	display: flex;
@@ -1327,6 +1339,10 @@ color: var(--unCheckedColor);
 		width: 350px;
 	}
 
+	.w250 {
+		width: 250px;
+	}
+
 
 	@media only screen and (max-width: 900px) {
 		.heading-default-single {
@@ -1376,6 +1392,11 @@ color: var(--unCheckedColor);
 		font: 600 16px var(--mon-font) !important;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+	}
+
+	.episode-counter {
+		font-weight: 600;
+		color: var(--middle-blue-color);
 	}
 
 	.webinar-videoplayer {
@@ -5158,16 +5179,190 @@ ol li::before {
 		padding: 5% 0;
 	}
 
-	.flexcontainer-shortcode {
-		margin: 5% auto;
-		display: flex;
-		align-items: stretch;
-		justify-content: flex-start;
-		flex-flow: row wrap;
-		align-content: flex-start;
-		flex-direction: row;
-		flex-wrap: wrap;
+
+/* WEBINAR SERIE SCROLLBAR */
+
+
+/* WEBINAR SERIE */
+
+.scroll-controls {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 10; 
+	width: 100%; /* eller ange en specifik bredd om du föredrar det */
+}
+
+#scrollLeft, #scrollRight {
+	background: rgba(255, 255, 255, 0.7); /* Halvtransparent vit */
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 10px;
+	height: 70px;
+	width: 70px;
+}
+
+#scrollLeft:hover, #scrollRight:hover {
+	background: rgba(255, 255, 255, 1); /* Opaq vit vid hover */
+}
+
+.webinar-scrolling-wrapper-flexbox {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	padding: 1%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: x mandatory;
+	/* Centrera den första och sista kortet genom att använda pseudo-element */
+	&:before,
+	&:after {
+		content: '';
+		width: 10vw; /* Halva skärmbredden så att första och sista kortet kan centreras */
+		flex: 0 0 auto;
 	}
+}
+
+.webinar-card {
+	display: inline-block;
+}
+
+/* Göm scrollbar för webkit browsers */
+.webinar-scrolling-wrapper-flexbox::-webkit-scrollbar {
+	display: none;
+}
+
+/* Responsivitet för mobila enheter */
+@media (max-width: 768px) {
+	.webinar-card {
+		width: 80%; /* Mindre kort för mobila enheter */
+	}
+
+	.webinar-scrolling-wrapper-flexbox {
+		padding-left: 0; /* Ta bort padding på vänster sida */
+	}
+}
+
+.webinar-highlist-card {
+	/* Stilar för webinar-highlist-card */
+	margin-right: 10px; /* Mellanrum mellan kort */
+	scroll-snap-align: center; /* Snappar kortet till mitten */
+	display: flex;
+	border-radius: 20px;
+	overflow: hidden;
+	height: 350px;
+	position: relative;
+	background-color: white;
+}
+
+.webinar-highlist-image {
+	width: 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+.webinar-series-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 400px;
+	padding: 20px 40px;
+}
+
+.webinar-highlist-card h2 {
+	/* Stilar för webinar-highlist-card h2 */
+}
+
+
+/* Responsiva stilar för webinar-highlist-card */
+@media (max-width: 768px) {
+	.scroll-controls {
+		display: none;
+	}
+
+	#scrollLeft, #scrollRight {
+		display: none;
+	}
+
+
+	#scrollLeft:hover, #scrollRight:hover {
+		display: none;
+	}
+
+	.webinar-highlist-card {
+		width: 300px;
+		height: 400px !important;
+		margin-left: 10px;
+	}
+
+	.webinar-highlist-image {
+		height: 100%;
+		width: 100%;
+	}
+
+	.webinar-highlist-image:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)); /* svart toning */
+		z-index: 1; /* Säkerställ att toningen är över bilden men under texten */
+	}
+
+
+	.webinar-series-text-container {
+		z-index: 9;
+		position: absolute;
+		display: flex;
+		width: 200px;
+		height: calc(100% - 40px);
+		justify-content: space-between;
+		padding: 20px 40px;
+	}
+
+	.episode-counter {
+		margin-top: 20px !important;
+	}
+
+	.webinar-series-text-container p, h2{
+		line-height: 1.1;
+		padding: 0;
+		margin: 0;
+		color: white;
+	}
+}
+
+
+.flexcontainer-webinar-series-backplate {
+	background-color: var(--cloud-blue-color);
+	padding: 10% 0;
+
+}
+
+.flexcontainer-webinar-series {
+	display: flex;
+	gap: 40px;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+
+.flexcontainer-shortcode {
+	margin: 5% auto;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 }
 
 .tech-update-card-content {
