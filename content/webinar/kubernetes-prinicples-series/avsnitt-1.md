@@ -47,7 +47,7 @@ I detta avsnitt med Gabriel Paues från Safespring och Lars Larsson från Elasti
 
 <script>
   if (Hls.isSupported()) {
-  var video = document.getElementById('myVideo');
+  var video = document.getElementById('player');
   var hls = new Hls();
   
   // Bind händelsehanterare här
