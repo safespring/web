@@ -17,7 +17,7 @@ sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"
 nosidebar: "none"
 sidebarimage: ""
-videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/ProcessedVideos/safespring-elastisys_webcast_episode_1/master.m3u8"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/ProcessedVideos/safespring-elastisys_webcast_episode_1/1920.m3u8"
 thumbnail: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-1.jpeg"
 categories:
   - "Kategori1"
