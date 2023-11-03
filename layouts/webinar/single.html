@@ -30,22 +30,56 @@
     document.addEventListener('DOMContentLoaded', function () {
         var video = document.getElementById('player');
         var videoSrc = "{{ .Params.videoURL }}";
+        console.log("Video source:", videoSrc);
 
         if (Hls.isSupported()) {
             var hls = new Hls();
+
+            // Lägg till en logg för varje huvudhändelse i HLS för att se hur långt vi kommer
+            hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                console.log('video and hls.js are now bound together!');
+            });
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                console.log('manifest loaded, found ' + hls.levels.length + ' quality level');
+                try {
+                    video.play();
+                } catch (e) {
+                    console.error('Error trying to play video:', e);
+                }
+            });
+
+            // Felsökning: lägg till detaljerade loggar för alla händelser och fel.
+            hls.on(Hls.Events.ERROR, function (event, data) {
+                if (data.fatal) {
+                    switch (data.type) {
+                        case Hls.ErrorTypes.NETWORK_ERROR:
+                            console.error('fatal network error encountered', data);
+                            break;
+                        case Hls.ErrorTypes.MEDIA_ERROR:
+                            console.error('fatal media error encountered', data);
+                            break;
+                        default:
+                            console.error('fatal error encountered', data);
+                            break;
+                    }
+                } else {
+                    console.warn('non-fatal error', data);
+                }
+            });
+
             hls.loadSource(videoSrc);
             hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                video.play();
-            });
-            hls.on(Hls.Events.ERROR, function (event, data) {
-                console.error('Error event:', event, 'Data:', data);
-            });
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             video.src = videoSrc;
             video.addEventListener('canplay', function() {
-                video.play();
+                try {
+                    video.play();
+                } catch (e) {
+                    console.error('Error trying to play video:', e);
+                }
             });
+        } else {
+            console.error('HLS is not supported on this device and the video cannot be played with native MPEGURL support.');
         }
     });
 </script>
