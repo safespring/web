@@ -81,29 +81,32 @@
         Your browser does not support the video tag.
     </video>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('player');
-        var videoSrc = "{{ .Params.videoURL }}";
-
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource(videoSrc);
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                video.play();
-            });
-            hls.on(Hls.Events.ERROR, function (event, data) {
-                console.error('Error event:', event, 'Data:', data);
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = videoSrc;
-            video.addEventListener('canplay', function() {
-                video.play();
-            });
+ <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('player');
+            var videoSrc = "{{ .Params.videoURL }}";
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    // video.play(); // Comment this out if you don't want autoplay
+                });
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                    console.error('Error event:', event, 'Data:', data);
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+                // Removed 'canplay' event listener to prevent autoplay
+            }
+        });
+        // Function to handle chapter clicks
+        function setCurrentTime(time) {
+            var player = document.getElementById('player');
+            player.currentTime = time;
+            player.play();
         }
-    });
-</script>
+    </script>
 {{ end }}
           {{ .Content }}
           {{ partial "webinar-serie.html" . }}
