@@ -25,19 +25,20 @@ categories:
 tags:
   - "Tag1"
   - "Tag2"
+chaptersTitle: "I detta avsnitt"
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
-    time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
-    time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+  - title: "Om detta avsnitt"
+    time: 56
+    timeFormatted: "0:56"
+  - title: "Konfiguration"
+    time: 86
+    timeFormatted: "1:26"
+  - title: "Autoskalning"
+    time: 326
+    timeFormatted: "5:26"
+  - title: "Livscykelhantering"
+    time: 591
+    timeFormatted: "9:51"
 ---
 
 ## Avsnitt 3
