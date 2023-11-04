@@ -26,18 +26,24 @@ tags:
   - "Tag1"
   - "Tag2"
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
-    time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
-    time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+  - title: "Om detta avsnitt"
+    time: 44
+    timeFormatted: "0:44"
+  - title: "Vad är pods?"
+    time: 77
+    timeFormatted: "1:17"
+  - title: "Deployments och StatefulSets"
+    time: 134
+    timeFormatted: "2:14"
+  - title: "Använda Controlers"
+    time: 233
+    timeFormatted: "3:53"
+  - title: "Schemaläggning"
+    time: 559
+    timeFormatted: "9:19"
+  - title: "Vad är etiketter?"
+    time: 672
+    timeFormatted: "11:12"
 ---
 
 ## Avsnitt 2
