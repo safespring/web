@@ -1,6 +1,7 @@
 ---
 title: "Pre-ingest, hur säkerställa flexibilitet och säkerhet?"
 language: "Se"
+episode: "3"
 date: "2020-11-11"
 tags: ["Svenska"]
 publishDate: "2020-10-21T07:37:39+02:00"
@@ -9,7 +10,7 @@ eventdag: "Onsdag kl. 11:00"
 draft: false
 author: ""
 dokumentnamn: ""
-card: "safespring_card_32.jpg"
+card: "/img/event/cards/safespring_card_32.jpg"
 eventbild: "safespring_background_32.jpg"
 socialmediabild: "safespring_social_32.jpg"
 intro: "Vi går igenom hur e-arkiveringens utmaningar kan lösas med serverkapacitet och tillfällig lagring."

@@ -1,5 +1,5 @@
 ---
-title: "Safesspring Webcasts"
+title: "Safespring Webcasts"
 language: "Se"
 date: "2020-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"
@@ -11,7 +11,7 @@ dokumentnamn: ""
 card: "safespring_card_26.jpg"
 eventbild: ""
 socialmediabild: "safespring_social_26.jpg"
-intro: "Ta del av inspirerande material från Safespring."
+intro: "Ta del av inspirerande material från Safespring. Se våra serier om Kubernetes och cloud native, eller dyk ner i regelverken kring molntjänster och digital suveränitet."
 partner: ""
 link: "#"
 audience: "saas"
@@ -21,6 +21,5 @@ formid: ""
 explorer: ""
 aliases:
     - /event/
-nosidebar: "x"
 fullwidth: "x"
 ---

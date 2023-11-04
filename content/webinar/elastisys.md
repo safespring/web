@@ -4,7 +4,7 @@ language: "Se"
 publishDate: "2020-05-05"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_18.jpg"
+card: "/img/event/cards/safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"
 intro: "Ta chansen att lära dig hur du lyckas med dina container- och Kubernetes-initiativ, även i hårt reglerade branscher där data-säkerhet och regelefterlevnad är A och O"

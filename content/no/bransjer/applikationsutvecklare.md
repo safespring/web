@@ -1,28 +1,28 @@
 ---
-title: "Safespring är en hållbar container plattform för innovativa bolag"
-cardtitle: "Safespring för SaaS-bolag"
+title: "Safespring er en bærekraftig containerplattform for innovative selskaper"
+cardtitle: "Safespring for SaaS-selskaper"
 date: 2021-06-28T10:47:25+01:00
 card: "safespring-kubernetes.svg"
 draft: false
-intro: "MedTech, EdTech eller andra moderna bolag som söker Compliant Kubernetes, Databastjänster och mer."
+intro: "MedTech, EdTech eller andre moderne selskaper som søker Compliant Kubernetes, databasetjenester og mer."
 background: "safespring_bilder_10.jpg"
 logobannersaas: "yes"
-language: "No"
+language: "Nei"
 ---
-<div class="ingress"><p>Safesprings molnplattform är mångsidig och ett mycket bra fundament för många olika typer av tillämpningar. Plattformen är väl utformad för SaaS-tjänster eftersom skalbarhet och flexibilitet är viktiga komponenter.</p></div>
+<div class="ingress"><p>Safesprings skyplattform er allsidig og et veldig godt fundament for mange forskjellige typer applikasjoner. Plattformen er godt designet for SaaS-tjenester siden skalérbarhet og fleksibilitet er viktige komponenter.</p></div>
 
 <br>
-<a href="/tjanster/compliant-kubernetes/"><img alt="Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations." src="/img/saas/safespring-kubernetes.gif"></a>
+<a href="/tjenester/compliant-kubernetes/"><img alt="Compliant Kubernetes gir deg alle fordelene med en moderne containerplattform som kjører i nordiske datasentre uten at du trenger å bekymre deg for drift." src="/img/saas/safespring-kubernetes.gif"></a>
 <br>
 
-Vi lockar kunder från de stora molnleverantörerna genom att erbjuda en hållbar plattform utan inlåsning.
+Vi tiltrekker kunder fra de store skytjenesteleverandørene ved å tilby en bærekraftig plattform uten låsing.
 
-Med våra molntjänster kan du antingen producera lösningar där infrastrukturen är delad mellan många kunder, eller där det finns behov på en lösning per kund. Du kan oavsett enkelt få en effektiv och stabil drift. Oavsett om din tjänst använder sig av Linux/Unix/Windows maskiner eller har tagit steget mot containers har vi lösningen för dig.
+Med våre skytjenester kan du enten produsere løsninger der infrastrukturen er delt mellom mange kunder, eller der det er behov for en løsning per kunde. Uansett kan du enkelt oppnå en effektiv og stabil drift. Enten tjenesten din bruker Linux/Unix/Windows-maskiner eller har tatt steget mot containere, har vi løsningen for deg.
 
-### Hög säkerhet
+### Høy sikkerhet
 
-Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att era tjänster som produceras på våra plattformar enklare kan uppfylla eventuella krav på var och hur slutkunders data lagras i er tjänst.
+At vi er et svensk selskap som produserer tjenestene i Sverige gjør at tjenestene som produseres på våre plattformer lettere kan møte eventuelle krav om hvor og hvordan sluttbrukerdata lagres i din tjeneste.
 
-Kontakta oss för att se hur vi kan stötta dig i din affär!
+Kontakt oss for å se hvordan vi kan støtte deg i din virksomhet!
 
-<a href="/kontakt" id="text-button">Kontakta Safespring</a>
+<a href="/kontakt" id="text-button">Kontakt Safespring</a>

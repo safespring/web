@@ -1,0 +1,185 @@
+
+{{ if eq $.Params.title "Aktuellt" }}
+{{ partial "aktuellt.html" . }}
+
+{{ else if eq $.Params.title "Kontakt oss på Safespring" }}
+{{ partial "no-kontakt.html" . }}
+
+{{ else if eq $.Params.title "Pris" }}
+{{ partial "pris.html" . }}
+
+{{ else if eq $.Params.title "Price" }}
+{{ partial "price.html" . }}
+
+{{ else if eq $.Params.title "Pris tack" }}
+{{ partial "pris-tack.html" . }}
+
+{{ else if eq $.Params.title "Pris-old" }}
+{{ partial "pris-old.html" . }}
+
+{{ else if eq $.Params.title "Dokumentation" }}
+{{ partial "dokumentation.html" . }}
+
+{{ else if eq $.Params.title "Tack för ditt meddelande" }}
+{{ partial "tack.html" . }}
+
+{{ else if eq $.Params.title "tack-event" }}
+{{ partial "tack-event.html" . }}
+
+{{ else if eq $.Params.title "opplev" }}
+{{ partial "opplev.html" . }}
+
+{{ else if eq $.Params.title "start" }}
+{{ partial "start.html" . }}
+
+{{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
+{{ partial "explorer.html" . }}
+
+{{ else }}
+
+{{ partial "head.html" . }}
+
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
+
+<!-- HEADING -->
+<div class="heading-default-single" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+    <div style="max-width: 800px;">
+    <div class="section">
+      {{ if .Params.toplogo }}
+      <img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">
+      {{ end }}
+      <a class="" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
+        {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
+      </a>
+    </div>
+    <h1 class="balance-text" style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{else}}var(--main-color){{end}}">
+      {{ .Title }}
+    </h1>
+    {{ if .Params.intro }}
+    <p>
+      {{ .Params.intro }}
+    </p>
+    {{ else }}{{ end }}
+    {{ if .Params.sidebarlinkurl }}
+    <div class="header-button">
+      <a href="{{ .Params.sidebarlinkurl }}" target="_blank" class="button">{{ if .Params.sidebarlinkicon }}
+        <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Params.sidebarlinkname }}
+      </a>
+      {{ if .Params.sidebarlinkurl2 }}
+      <a style="margin:25px 0 0 0; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" class="text-button">
+        {{ .Params.sidebarlinkname2 }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ if .Params.logo }}
+    <img src="{{ .Params.logo }}" alt="Logotyp" class="logo">
+    {{ else }}
+    {{ end }}
+  </div>
+  <div class="w250"></div>
+</div>
+<!-- CONTENT -->
+{{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
+{{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
+<!-- Lista utvalda serier (huvudsidor för varje serie) -->
+<div class="flexcontainer-webinar-series-backplate">
+<div class="webinar-scrolling-wrapper-flexbox">
+    {{ if in .RelPermalink "webinar/" }} <!-- Kontrollerar om URL innehåller "webinar/" -->
+        {{ if eq .RelPermalink "/webinar/" }} <!-- Vi är på root av "webinar" -->
+            {{ range .Pages }}
+                {{ if .IsSection }}
+                        {{ .Render "series-summary" }}
+                {{ end }}
+            {{ end }}
+        {{ else }} <!-- Vi är inne i en sub-sektion -->
+            {{ range sort .Pages "Params.episode" }}
+                {{ if not .IsSection }}
+                        {{ .Render "episode-summary" }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
+
+
+
+  <div class="scroll-controls">
+    <button id="scrollLeft"><i class="fas fa-arrow-left"></i></button> <!-- Vänsterpil -->
+    <button id="scrollRight"><i class="fas fa-arrow-right"></i></button> <!-- Högerpil -->
+</div>
+<script type="text/javascript">
+  document.getElementById('scrollLeft').addEventListener('click', function() {
+    document.querySelector('.webinar-scrolling-wrapper-flexbox').scrollBy({
+      left: -150, // ändra detta värde för att justera skrollmängden
+      behavior: 'smooth'
+    });
+});
+
+document.getElementById('scrollRight').addEventListener('click', function() {
+    document.querySelector('.webinar-scrolling-wrapper-flexbox').scrollBy({
+      left: 150, // ändra detta värde för att justera skrollmängden
+      behavior: 'smooth'
+    });
+});
+
+</script>
+</div>
+<main class="main-default-single">
+  <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
+    {{ .Content }}
+
+    <!-- Lista för övriga sidor, exkluderar seriens sammanfattningar -->
+    <div class="flexcontainer">
+      {{ range .Pages }}
+      {{ if not .IsSection }}
+      <div class="content-container">
+        {{ .Render "li-latest"}}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+
+  <!-- SIDEBAR -->
+  <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
+  <!-- Kontrollera om aktuell sektion är "webinar" -->
+  {{ $isWebinar := eq $.Section "webinar" }}
+  <!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
+  {{ $isNoSidebar := eq .Params.nosidebar "none" }}
+  <!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
+  {{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
+  <!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
+  {{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
+
+  <!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
+  {{ if $isSidebarInvisible }}
+  <div class="w350"></div>
+  {{ else if not $isNoSidebar }}
+  <!-- Om sidebar inte ska döljas helt och sidan inte är 'webinar', inkludera standard-sidebar -->
+  {{ if not $isWebinar }}
+  <div class="sidebar-default-single">
+    <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
+    {{ partial "sidebar-default-single.html" . }}
+  </div>
+  {{ end }}
+  {{ end }}
+
+  <!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
+  {{ if $isFullWidthWidgetSet }}
+  <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
+  {{ partial (printf "%s" .Params.fullwidthwidget) . }}
+  {{ end }}
+</main>
+
+<!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
+{{ if $isWebinar }}
+<!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
+{{ partial "webinar-side-bar.html" . }}
+{{ end }}
+
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

@@ -1,10 +1,11 @@
 ---
 title: "Öka kommunens samhällsnytta med digital assistent"
 language: "Se"
+episode: "1"
 publishDate: "2020-07-29T10:30:14+02:00"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_26.jpg"
+card: "/img/event/cards/safespring_card_26.jpg"
 eventbild: "safespring_background_26.jpg"
 socialmediabild: "safespring_social_26.jpg"
 intro: "Avlasta flera avdelningar och underlätta för invånare med hjälp av svensk AI"

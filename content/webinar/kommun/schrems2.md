@@ -9,7 +9,7 @@ eventdag: "Onsdag kl. 11:00"
 draft: true
 author: ""
 dokumentnamn: ""
-card: "safespring_card_35.jpg"
+card: "/img/event/cards/safespring_card_35.jpg"
 eventbild: "safespring_background_01.jpg"
 socialmediabild: "safespring_social_01.jpg"
 intro: "För att bättre förbereda er organisation för den förändring som AI teknologier för med sig är det viktigt att förstå förutsättningarna."

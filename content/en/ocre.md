@@ -62,13 +62,6 @@ To purchase Safespring's services via the OCRE agreement, please contact Safespr
 
 Safespring's services are ready to use. If you are within the academic sector in Europe or affiliated with Sunet or Sikt, you can easily use our cloud platform, which has already been procured under the OCRE agreement.
 
-{{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
-I am the sales manager in Norway and can help you use our services that are already procured under the OCRE agreement.
-
-{{< inline "Call:" >}} +47 90 67 58 27
-kristian.fjellhaug@safespring.com
-
-{{% /custom-card %}}
 -
 {{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
 I am the sales manager in Sweden and can help you use our services that are already procured under the OCRE agreement.

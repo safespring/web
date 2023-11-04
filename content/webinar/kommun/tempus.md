@@ -1,10 +1,11 @@
 ---
-title: "Lätthanterlig närvarohantering och resursplanering i förskolan"
+title: "Lätthanterlig närvaro­hantering och resursplanering i förskolan"
 language: "Se"
+episode: "5"
 publishDate: "2020-04-27"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_15.jpg"
+card: "/img/event/cards/safespring_card_15.jpg"
 eventbild: "safespring_background_15.jpg"
 socialmediabild: "safespring_social_15.jpg"
 intro: "Hur kan jag förenkla vardagen och effektivisera förskolans verksamhet och samtidigt ge både vårdnadshavare och personal mer tid med barnen?"

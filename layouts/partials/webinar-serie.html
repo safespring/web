@@ -1,97 +1,3 @@
-<style>
-    .video-item {
-        display: flex;
-        align-items: center;
-    }
-
-    .video-list {
-        margin: 15% 0 0 0;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .video-thumbnail {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .video-container2:hover {
-      transform: scale(1.01);
-  }
-
-  .video-container2 {
-      cursor: pointer;
-      overflow: hidden;
-      transition: transform 0.2s ease;
-      display: flex;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0px 4.9px 7px rgba(0, 0, 0, 0.04),
-      0px 9.6px 10.7px rgba(0, 0, 0, 0.024),
-      0px 14.3px 13.3px rgba(0, 0, 0, 0.013),
-      0px 18.8px 16.4px rgba(0, 0, 0, 0.004),
-      0px 23px 22.1px rgba(0, 0, 0, -0.002),
-      0px 26px 46px rgba(0, 0, 0, -0.006);
-  }
-
-  .thumbnail {
-      max-height: 120px;
-      width: auto;
-  }
-
-  .play-button {
-    position: absolute;
-    display: flex;
-    height: 30px;
-    width: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    padding: 10px 8px 10px 12px;
-    justify-content: center;
-    align-items: center;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-}
-
-.play-button i {
-  color: white;
-  font-size: 24px;
-}
-
-.video-title {
-    padding-inline: 30px;
-}
-
-.video-title p, .video-title h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.video-title p {
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--middle-blue-color);
-}
-
-.video-title p, .video-title h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.current-episode {
-    cursor: default !important;
-      overflow: hidden;
-      display: flex;
-    background-color: var(--cloud-blue-color); /* Ändra till den färg du önskar */
-      border-radius: 10px;
-  }
-
-.current-episode:hover {
-    transform: none !important;
-}
-
-</style>
 <div class="video-list">
     {{ $currentNode := . }}
     {{ range sort (where .Site.RegularPages "Section" "webinar") "Params.episode" }}
@@ -101,13 +7,13 @@
         {{ if eq .RelPermalink $currentNode.RelPermalink }}{{else}}<a href="{{ .RelPermalink }}">{{ end }}
             <div class="video-item">
                 <div class="video-thumbnail">
-                    <img class="thumbnail" src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+                    <div class="thumbnail" style="background-image: url('{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Params.card }}{{ end }}');"></div>
                     {{ if eq .RelPermalink $currentNode.RelPermalink }}{{else}}<div class="play-button">
                         <i class="fas fa-play"></i>
                     </div>{{ end }}
                 </div>
                 <div class="video-title">
-                    <p>{{ .Params.episode }}</p>
+                    <p>Avsnitt {{ .Params.episode }}</p>
                     <h3 class="balance-text">{{ .Title }}</h3>
                 </div>
             </div>

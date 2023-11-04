@@ -1,13 +1,13 @@
 ---
 title: "Introduktion till molnbaserade applikationer och Kubernetes"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
-episode: "Avsnitt 1"
+episode: "1"
 series: "true"
 language: "Se"
 date: "2023-09-18"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_47.svg"
+card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-1.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Du kommer att lära dig om dess nyckelkomponenter, hur de samverkar för att skapa en skalbar och pålitlig infrastruktur och vad dessa komponenter motsvarar i AWS.'

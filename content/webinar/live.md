@@ -4,7 +4,7 @@ language: "Se"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: true
 tags: ["Svenska"]
-card: "safespring_card_34.jpg"
+card: "/img/event/cards/safespring_card_34.jpg"
 eventbild: "safespring_background_34.jpg"
 socialmediabild: "safespring_social_34.jpg"
 intro: "Genom kompetens, moderna infrastrukturtjänster och flexibilitet är Safespring grunden i digital utveckling. Vi möjliggör snabb innovation genom pålitliga och skalbara tjänster utan inlåsningseffekter."

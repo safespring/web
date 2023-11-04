@@ -20,11 +20,10 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 
 {{< flexbox >}}
 {{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
-{{< contact picture="/img/kontakt/kristian-fjellhaug.jpg" title="Sales Director" name="Kristian Fjellhaug" phone="+4790675827" email="kristian.fjellhaug@safespring.com" >}}
 {{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
-{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Cloud Architect" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
+{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
 {{< contact picture="/img/kontakt/marcus-boberg.jpg" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
-{{< /flexbox >}}
+{{< /flexbox >}} 
 
 <div id="address"></div>
 <div style="margin-bottom:100px;">
@@ -34,7 +33,6 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 
 <div style="margin-bottom:50px;">
 </div>
-
 {{< flexbox >}}
 {{< contact picture="/img/kontakt/stockholm.png" title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
 {{< contact picture="/img/kontakt/oslo.png" title="Norge" name="Oslo" phone="+4735688870" address="Universitetsgata 2, 0164 Oslo" address-link="https://goo.gl/maps/1zEYFyLUGz9w5RLv7">}}
@@ -55,6 +53,8 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 {{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="COO" name="Anders Bruvik" email="anders.bruvik@safespring.com" >}}
+{{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
+
 {{< /flexbox >}}
 
 <div id="board"></div>

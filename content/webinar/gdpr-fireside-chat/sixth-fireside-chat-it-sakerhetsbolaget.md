@@ -1,11 +1,12 @@
 ---
-title: "Ny presidentorder: blir molntjänster från USA lagliga nu?"
+title: "Ny president­order: blir molntjänster från USA lagliga nu?"
 language: "Se"
+episode: "6"
 date: "2022-11-08"
 publishDate: "2022-11-08"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_45.webp"
+card: "/img/event/cards/safespring_card_45.webp"
 eventbild: ""
 socialmediabild: "safespring_card_45.webp"
 intro: "President Biden har undertecknat en presidentorder om förbättrade skyddsåtgärder för USA:s signalspaningsverksamhet. Vad innebär det?"
