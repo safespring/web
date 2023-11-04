@@ -35,7 +35,7 @@ chapters:
 - title: "Intro Kubernetes"
   time: 386
   timeFormatted: "6:26"
-- title: "Nyckelkomponenter"
+- title: "Grunderna i K8s"
   time: 761
   timeFormatted: "12:41"
 - title: "Jämförelse med AWS"
