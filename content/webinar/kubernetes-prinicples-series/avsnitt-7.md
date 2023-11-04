@@ -31,11 +31,11 @@ chapters:
     time: 26
     timeFormatted: "0:26"
   - title: "Varför molntjänster?"
-    time: 60
-    timeFormatted: "1:00"
+    time: 61
+    timeFormatted: "1:01"
   - title: "Byte av moln"
-    time: 158
-    timeFormatted: "2:38"
+    time: 157
+    timeFormatted: "2:37"
   - title: "Säkerhet med open source"
     time: 379
     timeFormatted: "6:19"
