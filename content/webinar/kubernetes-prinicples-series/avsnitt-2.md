@@ -25,6 +25,7 @@ categories:
 tags:
   - "Tag1"
   - "Tag2"
+chaptersTitle: "I detta avsnitt"
 chapters:
   - title: "Om detta avsnitt"
     time: 44
