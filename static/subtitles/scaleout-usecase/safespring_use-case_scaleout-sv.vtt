@@ -1,7 +1,7 @@
 WEBVTT
 
 ::cue {
-  font-family: Montserrat;
+  font-family: var(--mon-font);
   background-color: var(--cloud-blue-color);
   color: var(--middle-blue-color);
 }
