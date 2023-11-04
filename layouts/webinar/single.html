@@ -83,26 +83,33 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('player');
-        var videoSrc = "{{ .Params.videoURL }}";
+    var video = document.getElementById('player');
+    var videoSrc = "{{ .Params.videoURL }}";
 
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource(videoSrc);
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                video.play();
-            });
-            hls.on(Hls.Events.ERROR, function (event, data) {
-                console.error('Error event:', event, 'Data:', data);
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = videoSrc;
-            video.addEventListener('canplay', function() {
-                video.play();
-            });
-        }
-    });
+    if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource(videoSrc);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function() {
+            // video.play(); // Bortkommenterad för att förhindra automatisk uppspelning
+        });
+        hls.on(Hls.Events.ERROR, function (event, data) {
+            console.error('Error event:', event, 'Data:', data);
+        });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = videoSrc;
+        // Ta bort 'canplay' event listener om du inte vill att videon ska spelas automatiskt
+    }
+});
+
+// Lägg till en global funktion som kan anropas från snabblänkarna
+window.setCurrentTime = function(time) {
+    var video = document.getElementById('player');
+    video.currentTime = time;
+    // Om du vill att videon ska spela direkt efter att ha hoppat till rätt tidpunkt, behåll raden nedan
+    video.play();
+};
+
 </script>
 {{ end }}
           {{ .Content }}
