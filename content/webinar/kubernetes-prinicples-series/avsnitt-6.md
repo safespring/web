@@ -25,24 +25,34 @@ categories:
 tags:
   - "Tag1"
   - "Tag2"
+chaptersTitle: "I detta avsnitt"
 chapters:
-  - title: "Introduktion"
+  - title: "Om detta avsnitt"
     time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
+    timeFormatted: "0:26"
+  - title: "Säkerhetsaspekter"
     time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
-    time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+    timeFormatted: "0:45"
+  - title: "Nätverkspolicyer"
+    time: 
+    timeFormatted: "2:35"
+  - title: "Säkerhet på infrastrukturen"
+    time: 
+    timeFormatted: "4:00"
+  - title: "Security context"
+    time: 
+    timeFormatted: "6:00"
+  - title: "Sårbarhetsskaning"
+    time: 
+    timeFormatted: "10:32"  
+  - title: "Zero-day-attack"
+    time: 
+    timeFormatted: "12:56"
 ---
 
 ## Avsnitt 6
 ### Säkerhet och begränsningar för Pods och nätverk
 I det här avsnittet undersöker Gabriel Paues från Safespring och Lars Larsson från Elastisys säkerhetsaspekter av att köra applikationer på Kubernetes. Du kommer att lära dig om vikten av att begränsa behörigheter och åtkomst för Pods, hur du hanterar nätverkspolicyer och förbättrar säkerheten för dina applikationer genom att följa bästa praxis.
 
-{{< inline "Princip 14" >}} Restrict permissions
+{{< inline "Princip 14" >}} Restrict permissions  
 {{< inline "Princip 15" >}} Limit attack surface
