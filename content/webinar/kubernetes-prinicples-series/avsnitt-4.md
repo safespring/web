@@ -25,19 +25,20 @@ categories:
 tags:
   - "Tag1"
   - "Tag2"
+chaptersTitle: "I detta avsnitt"
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
-    time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
-    time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+  - title: "Om detta avsnitt"
+    time: 32
+    timeFormatted: "0:32"
+  - title: "Automatisering"
+    time: 98
+    timeFormatted: "1:38"
+  - title: "Observability"
+    time: 373
+    timeFormatted: "6:13"
+  - title: "Failing hard, fast, and loudly"
+    time: 576
+    timeFormatted: "9:36"
 ---
 
 ## Avsnitt 4
