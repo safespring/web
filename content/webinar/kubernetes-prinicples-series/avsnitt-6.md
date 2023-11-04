@@ -37,8 +37,8 @@ chapters:
     time: 155
     timeFormatted: "2:35"
   - title: "Säkerhet på infrastrukturen"
-    time: 240
-    timeFormatted: "4:00"
+    time: 241
+    timeFormatted: "4:01"
   - title: "Security context"
     time: 360
     timeFormatted: "6:00"
