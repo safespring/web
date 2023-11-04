@@ -28,25 +28,25 @@ tags:
 chaptersTitle: "I detta avsnitt"
 chapters:
   - title: "Om detta avsnitt"
-    time: 0
+    time: 26
     timeFormatted: "0:26"
   - title: "Säkerhetsaspekter"
-    time: 30
+    time: 45
     timeFormatted: "0:45"
   - title: "Nätverkspolicyer"
-    time: 
+    time: 155
     timeFormatted: "2:35"
   - title: "Säkerhet på infrastrukturen"
-    time: 
+    time: 240
     timeFormatted: "4:00"
   - title: "Security context"
-    time: 
+    time: 360
     timeFormatted: "6:00"
   - title: "Sårbarhetsskaning"
-    time: 
-    timeFormatted: "10:32"  
+    time: 632
+    timeFormatted: "10:32"
   - title: "Zero-day-attack"
-    time: 
+    time: 776
     timeFormatted: "12:56"
 ---
 
