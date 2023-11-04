@@ -26,18 +26,24 @@ tags:
   - "Tag1"
   - "Tag2"
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
-    time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
-    time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+- title: "Om detta avsnitt"
+  time: 91
+  timeFormatted: "1:31"
+- title: "Vad är en molnapp?"
+  time: 154
+  timeFormatted: "2:34"
+- title: "Intro Kubernetes"
+  time: 386
+  timeFormatted: "6:26"
+- title: "Nyckelkomponenter"
+  time: 761
+  timeFormatted: "12:41"
+- title: "Jämförelse med AWS"
+  time: 985
+  timeFormatted: "16:25"
+- title: "Compliant Kubernetes"
+  time: 1120
+  timeFormatted: "18:40"
 ---
 
 ## Avsnitt 1
