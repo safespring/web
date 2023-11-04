@@ -25,19 +25,23 @@ categories:
 tags:
   - "Tag1"
   - "Tag2"
+chaptersTitle: "I detta avsnitt"
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
-    time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
+  - title: "Om detta avsnitt"
+    time: 26
+    timeFormatted: "0:26"
+  - title: "Varför molntjänster?"
     time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+    timeFormatted: "1:00"
+  - title: "Byte av moln"
+    time: 158
+    timeFormatted: "2:38"
+  - title: "Säkerhet med open source"
+    time: 379
+    timeFormatted: "6:19"
+  - title: "Compliant Kubernetes"
+    time: 973
+    timeFormatted: "16:13"
 ---
 
 ## Avsnitt 7
