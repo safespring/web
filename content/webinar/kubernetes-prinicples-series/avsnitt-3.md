@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-3.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Vi diskuterar vikten av att separera hemliga och icke-hemliga konfigurationer samt hur du förbereder en komponent för att både skala ut och skala in på ett kontrollerat och bra sätt.'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"

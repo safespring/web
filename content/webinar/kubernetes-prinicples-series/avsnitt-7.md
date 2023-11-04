@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-7.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Vi sammanfattar och diskuterar ytterligare resurser och rekommendationer för att fortsätta förbättra dina Kubernetes- och molnbaserade applikationer'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"

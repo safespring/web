@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-2.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Vi ger dig en grund i att hantera applikationer som involverar både tillståndslösa och tillståndsbaserade komponenter.'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"

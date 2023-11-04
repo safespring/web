@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-1.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Du kommer att lära dig om dess nyckelkomponenter, hur de samverkar för att skapa en skalbar och pålitlig infrastruktur och vad dessa komponenter motsvarar i AWS.'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"

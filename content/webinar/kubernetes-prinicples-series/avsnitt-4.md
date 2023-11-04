@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-4.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Vi diskuterar vikten av att förbereda din applikation för observability och hur du implementerar automatisering för att underlätta drift och skalning.'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"

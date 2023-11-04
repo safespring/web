@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-5.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Vi diskuterar blue/green- och canary deployments samt hur du kan garantera hög tillgänglighet genom att använda Pod Disruption Budgets'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"

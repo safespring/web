@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-6.jpeg"
 eventbild: ""
 socialmediabild: ""
 intro: 'Vi diskuterar vikten av att begränsa behörigheter och åtkomst för Pods, hur du hanterar nätverkspolicyer och förbättrar säkerheten för dina applikationer.'
-sidebarlinkurl: "#"
+sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"
