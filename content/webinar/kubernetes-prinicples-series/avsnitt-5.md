@@ -28,8 +28,8 @@ tags:
 chaptersTitle: "I detta avsnitt"
 chapters:
   - title: "Om detta avsnitt"
-    time: 26
-    timeFormatted: "0:26"
+    time: 27
+    timeFormatted: "0:27"
   - title: "Blue/green deployment"
     time: 70
     timeFormatted: "1:10"
@@ -39,7 +39,7 @@ chapters:
   - title: "Continuous deployments"
     time: 191
     timeFormatted: "3:11"
-  - title: "Rollouts"
+  - title: "Argo Rollouts"
     time: 475
     timeFormatted: "7:55"
   - title: "Pod Disruption Budgets"
