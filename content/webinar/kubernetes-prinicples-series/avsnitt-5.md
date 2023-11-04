@@ -25,19 +25,26 @@ categories:
 tags:
   - "Tag1"
   - "Tag2"
+chaptersTitle: "I detta avsnitt"
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
-  - title: "Avsnitt 1"
-    time: 30
-    timeFormatted: "0:30"
-  - title: "Avsnitt 2"
-    time: 60
-    timeFormatted: "20:00"
-  - title: "Avslutning"
-    time: 120
-    timeFormatted: "30:00"
+  - title: "Om detta avsnitt"
+    time: 26
+    timeFormatted: "0:26"
+  - title: "Blue/green deployment"
+    time: 70
+    timeFormatted: "1:10"
+  - title: "Canary deployment"
+    time: 100
+    timeFormatted: "1:40"
+  - title: "Continuous deployments"
+    time: 191
+    timeFormatted: "3:11"
+  - title: "Rollouts"
+    time: 475
+    timeFormatted: "7:55"
+  - title: "Pod Disruption Budgets"
+    time: 828
+    timeFormatted: "13:48"
 ---
 
 ## Avsnitt 5
