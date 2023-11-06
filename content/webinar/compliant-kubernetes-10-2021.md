@@ -5,7 +5,7 @@ publishDate: "2021-10-12"
 draft: false
 tags: ["Norsk"]
 section: "Webinar"
-card: "safespring_card_18.jpg"
+card: "/img/event/cards/safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"
 intro: "Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjennom webinaret kan du stille spørsmål til våre eksperter på Kubernetes og sikre skytjenester."

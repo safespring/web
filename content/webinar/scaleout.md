@@ -4,7 +4,7 @@ language: "Se"
 publishDate: "2020-09-03T13:58:35+02:00"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_28.jpg"
+card: "/img/event/cards/safespring_card_28.jpg"
 eventbild: "safespring_background_28.jpg"
 socialmediabild: "safespring_social_28.jpg"
 intro: "För att bättre förbereda er organisation för den förändring som AI teknologier för med sig är det viktigt att förstå förutsättningarna."

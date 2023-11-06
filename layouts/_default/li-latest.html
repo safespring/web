@@ -29,7 +29,7 @@
       </div>
     </div>
     {{ else }}{{ if eq .Section "webinar" }}
-    <img class="lazyload" src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}">
+    <img class="lazyload" src="{{ .Params.card }}" alt="{{ .Title }}">
     <!--<div style="background-image:url(/img/event/cards/{{ .Params.card }});" class="image-container">
       <div class="image-container-blur"></div>
        <img style="position: absolute; width: 350px;" class="lazyload" data-src="/img/event/cards/{{ .Params.card }}" alt="{{ .Title }}">

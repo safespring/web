@@ -4,7 +4,7 @@ language: "Se"
 publishDate: "2021-09-15T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_40.jpg"
+card: "/img/event/cards/safespring_card_40.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_40.gif"
 intro: "Känns Kubernetes lite som en svart låda? I det här samtalet tar vi upp hur du använder Kubernetes i produktion på ett säkert sätt."

@@ -1,11 +1,13 @@
 ---
 title: "Kan EU & USAs tänkta nya avtal leda till Schrems III?"
+episode: "5"
+thumbnail: "/img/event/cards/safespring_card_41.png"
 language: "Se"
 date: "2022-05-10"
 publishDate: "2022-05-02"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_41.png"
+card: "/img/event/cards/safespring_card_41.png"
 eventbild: "safespring_background_39.jpg"
 socialmediabild: "safespring_social_42.gif"
 intro: "Kommer EU och USA ingå i ett nytt dataöverföringsavtal, och kan det i så fall leda till Schrems III?"
@@ -53,15 +55,3 @@ Vad har hänt under första kvartalet 2022. Var med och diskutera, ställ frågo
 - Skatteverkets rapport om Gaia-X
 - Region Stockholm och Stockholm stads beslut att inte använda amerikanska molntjänster.
 - Esams arbetsprojekt som fortgår. De hade ett seminarium den 28/4 2022. Presentationer om leverantöres bild av regleran från Esam.
-
-{{< localbutton "Se direkt" "https://us02web.zoom.us/webinar/register/3516514829729/WN_9wQrIRwKT-O0a7XqfysWSA" >}}
-
-{{< distance >}}
-
-### Se alla webcasts om debatten kring molntjänster
-1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
-2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
-3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>
-4. <a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Vad säger myndigets­rapporterna om molntjänster?</a><br>
-5. <a href="/webinar/fifth-fireside-chat-it-sakerhetsbolaget/">Kan EU & USAs tänkta nya avtal leda till Schrems III?</a><br>
-

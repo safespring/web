@@ -1,6 +1,7 @@
 ---
-title: "Kundservice och ärendehantering med åtkomst från valfri enhet"
+title: "Kundservice och ärende­hantering med åtkomst från valfri enhet"
 language: "Se"
+episode: "4"
 date: "2020-06-24"
 tags: ["Svenska"]
 publishDate: "2020-05-05"
@@ -9,7 +10,7 @@ eventdag: "Onsdag kl. 13:00"
 draft: false
 author: ""
 dokumentnamn: ""
-card: "safespring_card_17.jpg"
+card: "/img/event/cards/safespring_card_17.jpg"
 eventbild: "safespring_background_17.jpg"
 socialmediabild: "safespring_social_17.jpg"
 intro: "Äntligen ett riktigt kontaktcenter som utöver att vara intelligent och skalbart även innehåller helt integrerad ärendehantering och lättillgängliga telefonifunktioner."

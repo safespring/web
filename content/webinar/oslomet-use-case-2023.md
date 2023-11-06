@@ -5,7 +5,7 @@ date: "2023-03-20"
 publishDate: "2023-03-20"
 draft: true
 tags: ["Norsk"]
-card: "safespring_card_47.svg"
+card: "/img/event/cards/safespring_card_47.svg"
 eventbild: ""
 socialmediabild: ""
 intro: 'OsloMET deler sine erfaringer med overgangen fra hjemmelaget automatisering av VM-administrasjon til Safespring Compute i et seminar om "Fra gjør-det-selv til as-a-service i IT-undervisningen"'

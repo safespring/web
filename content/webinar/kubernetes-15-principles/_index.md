@@ -1,11 +1,11 @@
 ---
-title: "Webbserie: Design och driftsättning av skalbara applikationer på Kubernetes"
+title: "Design och driftsättning av skalbara applikationer på Kubernetes"
 language: "Se"
 date: "2023-09-18"
 publishDate: "2023-09-18"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_47.svg"
+card: "safespring-gabriel-lars.jpg"
 eventbild: ""
 socialmediabild: ""
 intro: 'I denna webbserie kommer vi att utforska hur man designar och driftsätter skalbara applikationer på Kubernetes.'
@@ -14,8 +14,8 @@ audience: "saas"
 explorer: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
-sidebar: "x"
 sidebarimage: ""
+nosidebar: "invisible"
 toc: "Avsnitt"
 ---
 
@@ -58,7 +58,6 @@ Alla kodsnuttar som visas under den här serien finns tillgänglig på GitHub un
 
 I detta avsnitt med Gabriel Paues från Safespring och Lars Larsson från Elastisys får du en översikt över molnbaserade applikationer och en introduktion till Kubernetes. Du kommer att lära dig om dess nyckelkomponenter,hur de samverkar för att skapa en skalbar och pålitlig infrastruktur och vad dessa komponenter motsvarar i AWS.
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 
@@ -71,7 +70,6 @@ Gabriel Paues från Safespring och Lars Larsson från Elastisys ger dig en djupa
 {{< inline "Princip 01" >}} Using Controllers for Pods  
 {{< inline "Princip 11" >}} Force co-location of or spreading out Pods as needed  
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 
@@ -83,9 +81,8 @@ I detta avsnitt fokuserar Gabriel Paues från Safespring och Lars Larsson från 
 
 {{< inline "Princip 02" >}} Separate secret from non-secret configuration  
 {{< inline "Princip 14" >}}	Enabling automatic scaling  
-{{< inline "Princip 15" >}} Utilizing container lifecycle hooksg
+{{< inline "Princip 15" >}} Utilizing container lifecycle hooks
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 
@@ -100,7 +97,6 @@ Detta avsnitt lär dig vikten av att förbereda din applikation för observabili
 {{< inline "Princip 7" >}} Failing hard, fast, and loudly  
 {{< inline "Princip 8" >}} Preparing your application for observability
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 
@@ -115,7 +111,6 @@ Detta avsnitt behandlar avancerade driftsättningsstrategier, såsom blue/green 
 {{< inline "Princip 12" >}} Pod Disruption Budget
 {{< inline "Princip 13" >}} Strategies > stop the world
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 
@@ -128,7 +123,6 @@ I det här avsnittet undersöker Gabriel Paues från Safespring och Lars Larsson
 {{< inline "Princip 14" >}} Restrict permissions
 {{< inline "Princip 15" >}} Limit attack surface
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 
@@ -138,7 +132,6 @@ I det här avsnittet undersöker Gabriel Paues från Safespring och Lars Larsson
 ### Sammanfattning och nästa steg
 I det sista avsnitt sammanfattar Gabriel Paues från Safespring och Lars Larsson från Elastisys allt material från webbserien och diskuterar ytterligare resurser och rekommendationer för att fortsätta förbättra dina Kubernetes- och molnbaserade applikationer. Vi täcker viktiga lärdomar och tips som hjälper dig att lyckas i din fortsatta resa med att designa, bygga och driftsätta skalbara och robusta applikationer på Kubernetes. Vi går även igenom vad vi anser är bra nästa steg för att öka dina kunskaper inom området.
 
-![Avsnitt 2: Hantering av Pods, Deployments och StatefulSets](/img/event/safespring-video-placeholder.svg)
 
 {{< distance >}}
 

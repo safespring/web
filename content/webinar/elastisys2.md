@@ -4,7 +4,7 @@ language: "Se"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_31.jpg"
+card: "/img/event/cards/safespring_card_31.jpg"
 eventbild: "safespring_background_31.jpg"
 socialmediabild: "safespring_social_31.jpg"
 intro: "Vi går igenom hur juridisk säkerhet går hand i hand med kubernetes och cloud native applikationer"

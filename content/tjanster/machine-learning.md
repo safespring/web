@@ -11,13 +11,12 @@ draft: false
 intro: "Bygg moderna lösningar som nyttjar maskininlärning och artificiell intelligens."
 form: "yes"
 background: "safespring-ai-background.svg"
-sidebarlinkname: ""
-sidebarlinkurl: ""
+sidebarlinkname: "Boka demo"
+sidebarlinkurl: "/demo"
+sidebarlinkname2: "Kontakta Safespring"
+sidebarlinkurl2: "/kontakt"
 socialmedia: "safespring-managed-database.jpg"
 ---
-
-{{< youtube _uWqI_1Yt-M >}}
-
 
 {{< ingress >}}
 Safespring tillhandahåller STACKn som är en helt managerad PostgreSQL-tjänst som kör på vår infrastruktur.

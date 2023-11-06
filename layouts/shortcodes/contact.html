@@ -5,15 +5,9 @@
       src="{{.Get `picture` }}"
       alt="{{ .Get `name`}}, {{.Get `title` }} at Safespring"
       />
-    <div class="px-2 py-2">
-      <div class="mb-0 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right: 5px;">
+    <div class="px-2 py-2 contact-card-content">
+      <div class="mb-1 small font-weight-medium text-uppercase text-muted lts-1px float-left" style="margin-right: 5px;">
         {{ .Get "title" }}
-      </div>
-      <div class="mb-0 small font-weight-normal text-uppercase text-light-black lts-1px float-left" style="margin-right: 5px;">
-        |
-      </div>
-      <div class="mb-1 extra-small font-weight-medium text-uppercase text-light-black">
-        Safespring
       </div>
       <h1 class="ff-serif font-weight-light text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
         {{ .Get "name" }}

@@ -5,7 +5,7 @@ date: "2023-02-08"
 publishDate: "2023-02-08"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_46.svg"
+card: "/img/event/cards/safespring_card_46.svg"
 eventbild: ""
 socialmediabild: ""
 intro: "Sunet Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data."

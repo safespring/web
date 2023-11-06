@@ -1,10 +1,13 @@
 ---
 title: "Praktiska möjligheter efter Schrems II, med exempel!"
+episode: "1"
+thumbnail: "/img/event/cards/safespring_card_38.jpg"
+videoURL: "https://next.safespring.com/s/ssDrtEw4jSdexDn/download/2021-05-05_safespring-fireside_chat-it_sakerhetsbolaget-video.mp4"
 language: "Se"
 publishDate: "2021-05-05T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
-card: "safespring_card_38.jpg"
+card: "/img/event/cards/safespring_card_38.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"
 intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?"
@@ -13,19 +16,9 @@ audience: "saas"
 explorer: "https://youtu.be/nzQunPqkIWs"
 ---
 
-{{< youtube nzQunPqkIWs >}}
-
 {{< ingress>}}
 Var med och diskutera praktiska möjligheter efter Schrems II med en Senior Cloud Architect (Gabriel Paues) och dataskyddsombud samt It-säkerhetsexpert (Patrik Jonasson). Var står vi nu och hur kommer vi vidare?
 {{< /ingress >}}
-
-### Se alla webcasts om debatten kring molntjänster
-1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
-2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
-3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>
-4. <a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Vad säger myndigets­rapporterna om molntjänster?</a><br>
-5. <a href="/webinar/fifth-fireside-chat-it-sakerhetsbolaget/">Kan EU & USAs tänkta nya avtal leda till Schrems III?</a><br>
-
 
 Under ca 60 minuter pratar vi om varför bolag som använder amerikanska molntjänster hamnat i den här juridiska situationen. Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?
 

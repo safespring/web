@@ -16,9 +16,6 @@ sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
 ---
 
-{{< youtube _uWqI_1Yt-M >}}
-
-
 {{< ingress >}}
 Safespring tilbyr STACKn som er en fullstendig managed PostgreSQL-tjeneste som kjører på vår infrastruktur.
 {{< /ingress >}}
