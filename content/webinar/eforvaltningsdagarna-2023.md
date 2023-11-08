@@ -43,7 +43,7 @@ chapters:
   time: 1227
   timeFormatted: "20:27"
 aliases:
-  - /eforvaltningsdagarna-2023
+    - /eforvaltningsdagarna2023
 ---
 
 {{< ingress >}}
