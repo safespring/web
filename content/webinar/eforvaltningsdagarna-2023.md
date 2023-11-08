@@ -47,7 +47,7 @@ aliases:
 ---
 
 {{< ingress >}}
-Om du inte hade möjlighet att närvara vid eFörvaltningsdagarna har vi nu glädjen att presentera inspelningen av vår uppskattade session.
+Om du missade vår session eller inte hade möjlighet att närvara vid eFörvaltningsdagarna har vi nu glädjen att presentera inspelningen av vårt uppskattade samtal om AI.
 {{< /ingress >}}
 
 Fredric Wallsten, VD på Safespring, och Ebba Kraemer från Scaleout utforskade tillsammans med deltagarna hur AI kan driva på förändring inom offentlig sektor på ett ansvarsfullt sätt.
