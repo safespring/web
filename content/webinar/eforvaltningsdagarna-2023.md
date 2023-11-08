@@ -42,12 +42,20 @@ chapters:
 - title: "Att ta med sig från seminariet"
   time: 1227
   timeFormatted: "20:27"
+alias:
+  - /eforvaltningsdagarna-2023
 ---
 
 {{< ingress >}}
-Missade du vår talarsession på eFörvaltningsdagarna? Ingen fara, nu finns inspelningen tillgänglig här för dig som vill uppleva höjdpunkterna från evenemanget.
+Om du inte hade möjlighet att närvara vid eFörvaltningsdagarna har vi nu glädjen att presentera inspelningen av vår uppskattade session.
 {{< /ingress >}}
 
-Fredric Wallsten, VD för Safespring, och Ebba Kraemer från Scaleout delade med sig av sina insikter om framtiden för AI i offentlig sektor. De diskuterade hur vi kan använda AI på ett sätt som respekterar integritet, främjar innovation och samtidigt beaktar både miljömässig och juridisk säkerhet. Genom att bygga AI-plattformar på Safesprings säkra infrastruktur, tar vi ett steg närmare en ansvarsfull och hållbar teknologisk framtid.
+Fredric Wallsten, VD på Safespring, och Ebba Kraemer från Scaleout utforskade tillsammans med deltagarna hur AI kan driva på förändring inom offentlig sektor på ett ansvarsfullt sätt.
 
-Se talarsessionen nu och upptäck hur vårt samarbete med Scaleout kan revolutionera er myndighets digitala tjänster.
+Deras diskussion rörde sig kring att förena teknologisk innovation med de strikta kraven på dataskydd, suveränitet och hållbarhet. Med Safesprings infrastruktur som grund, visade de hur Scaleouts AI-plattform kan stärka och effektivisera den offentliga förvaltningens arbete.
+
+Se vår talarsession och låt dig inspireras av hur nära samarbeten kan skapa framtidens lösningar.
+
+{{% note "Om seminariet" %}}
+
+{{% note %}}
