@@ -109,7 +109,9 @@
     </script>
 {{ end }}
           {{ .Content }}
-          {{ partial "webinar-serie.html" . }}
+          {{ if and (isset .Params "episode") (.Params.episode) }}
+  {{ partial "webinar-serie.html" . }}
+{{ end }}
         </div>
         <div class="sidebar-default-single">
           {{ if .Params.chapters }}
