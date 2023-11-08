@@ -8,7 +8,7 @@ tags: ["Svenska"]
 card: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Du kommer att lära dig om dess nyckelkomponenter, hur de samverkar för att skapa en skalbar och pålitlig infrastruktur och vad dessa komponenter motsvarar i AWS.'
+intro: 'I en värld där artificiell intelligens (AI) förändrar landskapet för nästan varje industri, finns viktiga frågor att besvara: hur säkerställer vi att AI:s kraft används på ett sätt som är effektivt och hållbart, utan att riskera att data hamnar i fel händer?'
 sidebarlinkurl: "/hello"
 sidebarlinkname: "Läs mer om Safespring"
 sidebarlinkurl2: "/kontakt"
