@@ -42,7 +42,7 @@ chapters:
 - title: "Att ta med sig från seminariet"
   time: 1227
   timeFormatted: "20:27"
-alias:
+aliases:
   - /eforvaltningsdagarna-2023
 ---
 
