@@ -36,7 +36,7 @@ chapters:
 - title: "Träna AI utan att flytta data"
   time: 490
   timeFormatted: "8:10"
-- title: "Exempel från verklihheten"
+- title: "Exempel från verkligeheten"
   time: 845
   timeFormatted: "14:05"
 - title: "Att ta med sig från seminariet"
