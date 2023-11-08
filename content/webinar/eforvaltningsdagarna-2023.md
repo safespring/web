@@ -55,7 +55,3 @@ Fredric Wallsten, VD på Safespring, och Ebba Kraemer från Scaleout utforskade 
 Deras diskussion rörde sig kring att förena teknologisk innovation med de strikta kraven på dataskydd, suveränitet och hållbarhet. Med Safesprings infrastruktur som grund, visade de hur Scaleouts AI-plattform kan stärka och effektivisera den offentliga förvaltningens arbete.
 
 Se vår talarsession och låt dig inspireras av hur nära samarbeten kan skapa framtidens lösningar.
-
-{{% note "Om seminariet" %}}
-
-{{% note %}}
