@@ -4,7 +4,7 @@ language: "No"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Bestill demo"
-intro: "Safespring er den svenske offentlige skyplattformen som oppfyller europeiske databeskyttelseslover. Vi er glade for å kunne tilby en sikker og pålitelig plattform for våre kunder og deres data."
+intro: "Safespring er den norske offentlige skyplattformen som oppfyller europeiske databeskyttelseslover. Vi er glade for å kunne tilby en sikker og pålitelig plattform for våre kunder og deres data."
 background: "safespring-blue-fade2.svg"
 darkmode: "av"
 sidebarimage: "safespring-petter.jpg"
