@@ -2,18 +2,16 @@
 <!-- NAVBAR -->
 <body>
  {{ partial "header.html" . }}
-
  <!-- HEADING -->
- <div class="heading-default-single" style="background: url(/img/background/safespring-blue-fade2.svg); background-size: cover; background-position: center;">
+ <div class="heading-default-single" style="background: url('/img/background/safespring-blue-fade2.svg'); background-size: cover; background-position: center;">
    {{ .Render "li3" }}
  </div>
-
  <!-- CONTENT -->
  {{ if .Params.youtube }}
  <div class="main-default-single">
   <div class="webinar-default-single">
     <div class="webinarvideo iframe-aspect-ratio iframe responsive-container">
-      <div id="player">
+      <div id="youtube-player">
       </div>
     </div>
     <script>var tag = document.createElement('script');
@@ -22,7 +20,7 @@
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     var player;
     function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
+      player = new YT.Player('youtube-player', {
         videoId: '{{ .Params.youtube }}',
         playerVars: {
           'modestbranding': 1,
@@ -36,7 +34,7 @@
     }
   </script>
 </div>
-{{ if .Params.timecodes }}<div class=" webinarplaylist-container shadow-1">
+{{ if .Params.timecodes }}<div class="sidebar-container"><div class="sidebar-content">
   <h3>{{ if .Params.timecodetitle }}{{ .Params.timecodetitle }}{{ else }}Avsnitt{{ end }}</h3>
   <div class="webinarplaylist">
     <ul>
@@ -54,19 +52,89 @@
       {{ if .Params.chapter12 }}<a href="javascript:void(0);" onclick="setCurrentTime(11)"><li><span>{{ .Params.chapter12 }}</span> <span class="timer">{{ .Params.minute12 }}</span></li></a>{{ end }}
     </ul>
   </div>
+  </div>
 </div>
-{{ else }}{{ end }}{{ else }}{{ end }}</div>
-<div class="main-default-single">
+    <script>
+      var youtube-player = document.getElementById('youtube-player');
+      function setCurrentTime(time) {
+        youtube-player.currentTime = time;
+        youtube-player.play();
+      }
+    </script>
+{{ else }}{{ end }}</div>{{ else }}{{ end }}
+
+ <div class="main-default-single">
   <div class="content-default-single">
-   {{ .Content }}
- </div>
- <div class="sidebar-default-single">
- {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ else }}<div class="sidebar-default-single" style="width:350px"></div>{{ end }}
+{{ if .Params.videoURL }}
+<div class="webinarvideo">
+    <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls>
+        {{ if eq (path.Ext .Params.videoURL) ".m3u8" }}
+            <!-- Inget behov av <source> taggen för .m3u8, hanteras av hls.js -->
+        {{ else }}
+            <source src="{{ .Params.videoURL }}" type="video/mp4">
+        {{ end }}
+
+        {{ range .Params.subtitles }}
+            <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
+        {{ end }}
+
+        Your browser does not support the video tag.
+    </video>
 </div>
-</div>
-<!-- SIDEBAR -->
-{{ partial "webinar-side-bar.html" . }}
-</main>
-<!-- FOOTER -->
-{{ partial "footer.html" . }}
-</body>
+ <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('player');
+            var videoSrc = "{{ .Params.videoURL }}";
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    // video.play(); // Comment this out if you don't want autoplay
+                });
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                    console.error('Error event:', event, 'Data:', data);
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+                // Removed 'canplay' event listener to prevent autoplay
+            }
+        });
+        // Function to handle chapter clicks
+        function setCurrentTime(time) {
+            var player = document.getElementById('player');
+            player.currentTime = time;
+            player.play();
+        }
+    </script>
+{{ end }}
+          {{ .Content }}
+          {{ if and (isset .Params "episode") (.Params.episode) }}
+  {{ partial "webinar-serie.html" . }}
+{{ end }}
+        </div>
+        <div class="sidebar-default-single">
+          {{ if .Params.chapters }}
+          <div class="sidebar-container">
+            <div class="sidebar-content">
+              <h3>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}</h3>
+              <div class="webinarplaylist">
+                <ul>
+                  {{ range $index, $element := .Params.chapters }}
+                  <a href="javascript:void(0);" onclick="setCurrentTime({{ $element.time }})">
+                    <li><span>{{ $element.title }}</span> <span class="timer">{{ $element.timeFormatted }}</span></li>
+                  </a>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+          {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ end }}
+        </div>
+      </div>
+      <!-- SIDEBAR -->
+      {{ partial "webinar-side-bar.html" . }}
+    </main>
+    <!-- FOOTER -->
+    {{ partial "footer.html" . }}
