@@ -5,7 +5,7 @@ intro: "Att investera i digital infrastruktur är inte bara en fråga om natione
 draft: false
 tags: ["English"]
 showthedate: true
-card: ""
+card: "safespring-debattartikel-2023.webp"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
