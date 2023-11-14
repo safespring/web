@@ -1,4 +1,3 @@
-
 :root {
 	--main-color:#195F8C;
 	--heading-color:#195F8C;
@@ -450,7 +449,7 @@ select {
 	background-color:var(--text-color);
 }
 
-input[type=text], [type=email] {
+input[type=text], [type=email], input[type="tel"] {
 	padding:15px 24px;
 	margin:8px 0;
 	line-height:20px;
@@ -7843,6 +7842,12 @@ details[open] summary {
 	/* Övriga egenskaper för mega menyn när den visas */
 }
 
+.megamenu-wrapper-aktuellt.show {
+	display:flex;
+	opacity:1;
+	/* Övriga egenskaper för mega menyn när den visas */
+}
+
 @keyframes fade-slide-down {
 	0% {
 		opacity:0;
@@ -7858,6 +7863,10 @@ details[open] summary {
 	animation:fade-slide-up 0.3s ease-in-out forwards;
 }
 
+.megamenu-wrapper-aktuellt.hide {
+	animation:fade-slide-up 0.3s ease-in-out forwards;
+}
+
 @keyframes fade-slide-up {
 	0% {
 		opacity:1;
@@ -7870,6 +7879,20 @@ details[open] summary {
 }
 
 .megamenu-wrapper {
+	transition:all ease-out .3s;
+	display:none;
+	transform:translateY(-2%);
+	animation:fade-slide-down 1s cubic-bezier(0, 0, 0.05, 1.08) forwards;
+	flex-direction:row;
+	flex-wrap:wrap;
+	padding:5%;
+	gap:80px;
+	background:linear-gradient(transparent, #195f8c20);
+	align-items:stretch;
+	justify-content:center;
+}
+
+.megamenu-wrapper-aktuellt {
 	transition:all ease-out .3s;
 	display:none;
 	transform:translateY(-2%);
