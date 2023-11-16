@@ -1,5 +1,5 @@
 ---
-title: "Automatisering och övervakning av applikationer"
+title: "Automatisering & övervakning av applikationer"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "4"
 series: "true"

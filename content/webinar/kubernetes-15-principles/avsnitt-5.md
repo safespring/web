@@ -1,5 +1,5 @@
 ---
-title: "Avancerade driftsättnings­strategier och hög tillgänglighet"
+title: "Avancerade driftsättnings­strategier & tillgänglighet"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "5"
 series: "true"
