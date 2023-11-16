@@ -1,5 +1,5 @@
 ---
-title: "Hantering av Pods, Deployments och StatefulSets"
+title: "Hantering av Pods, Deployments & StatefulSets"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "2"
 series: "true"
