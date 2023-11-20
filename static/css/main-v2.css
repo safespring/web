@@ -7974,3 +7974,11 @@ details[open] summary {
 .megamenu-service-card a:hover {
 	color:var(--link-color) !important;
 }
+
+/* MERMAID */
+
+	.titleText {
+  font-family: var(--hind-font) !important;
+  color: var(--clear-blue-color) !important;
+  fill: var(--clear-blue-color) !important;
+}
