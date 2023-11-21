@@ -11,7 +11,6 @@ socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
 language: "En"
-toc: "Table of contents"
 ---
 
 eparating the config data into a yaml file which serves as input to the Pulumi program" eparating the config data into a yaml file which serves as input to the Pulumi program" eparating the config data into a yaml file which serves as input to the Pulumi program"
@@ -27,7 +26,7 @@ eparating the config data into a yaml file which serves as input to the Pulumi p
         primaryBorderColor: "#FFFFFF",
         lineColor: "#417DA5",
         secondaryColor: "#FAFEFE",
-        secondaryTextColor: "##FAFEFE",
+        secondaryTextColor: "#FAFEFE",
         tertiaryColor: "#FFF",
         fontFamily: "var(--mon-font)",
         labelColor: "#FFFFFF",
@@ -46,7 +45,11 @@ eparating the config data into a yaml file which serves as input to the Pulumi p
         classBorder: "#FFFFFF",
         tableNodeTextColor: "#417DA5",
         tableNodeBackground: "#E8EFF3",
-        tableNodeBorderColor: "#FFFFFF"
+        tableNodeBorderColor: "#FFFFFF",
+        quadrantTitleFill: "var(--clear-blue-color)",
+        quadrantPointFill: "var(--link-color)",
+        quadrantPointTextFill: "var(--link-color)",
+        pieOuterStrokeWidth: "0px",
       }
     };
 
@@ -57,24 +60,15 @@ eparating the config data into a yaml file which serves as input to the Pulumi p
 {{< distance >}}
 
 {{< chart >}}
-graph TD
-    A[Start] --> B[Läs in videofiler från INPUT_DIR]
-    B --> C[Skapa output_folder i OUTPUT_DIR]
-    C --> D[Skapa master.m3u8 spellista]
-    D --> E[Hämta originalvideons bredd och höjd]
-    E --> F{Jämför originalbredd med önskad storlek}
-    F --> |Större| G[Beräkna ny bredd och höjd]
-    G --> H[Justera höjd för h264]
-    H --> I[Skala video med ffmpeg]
-    F --> |Mindre eller lika| J[Behåll originalupplösning]
-    J --> I
-    I --> K[Lägg till upplösning i master.m3u8]
-    K --> L{Finns fler storlekar?}
-    L --> |Ja| F
-    L --> |Nej| M[Slut på en video]
-    M --> N{Finns fler videofiler?}
-    N --> |Ja| B
-    N --> |Nej| O[Slut]
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
 {{< /chart >}}
 
 {{< distance >}}

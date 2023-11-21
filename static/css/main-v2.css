@@ -7982,3 +7982,15 @@ details[open] summary {
   color: var(--clear-blue-color) !important;
   fill: var(--clear-blue-color) !important;
 }
+
+.title {
+  font-family: var(--hind-font) !important;
+  color: var(--clear-blue-color) !important;
+  fill: var(--clear-blue-color) !important;
+}
+
+
+.quadrant text {
+	font-weight: 600 !important;
+}
+
