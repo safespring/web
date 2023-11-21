@@ -57,62 +57,24 @@ eparating the config data into a yaml file which serves as input to the Pulumi p
 {{< distance >}}
 
 {{< chart >}}
-flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[Car]
+graph TD
+    A[Start] --> B[Läs in videofiler från INPUT_DIR]
+    B --> C[Skapa output_folder i OUTPUT_DIR]
+    C --> D[Skapa master.m3u8 spellista]
+    D --> E[Hämta originalvideons bredd och höjd]
+    E --> F{Jämför originalbredd med önskad storlek}
+    F --> |Större| G[Beräkna ny bredd och höjd]
+    G --> H[Justera höjd för h264]
+    H --> I[Skala video med ffmpeg]
+    F --> |Mindre eller lika| J[Behåll originalupplösning]
+    J --> I
+    I --> K[Lägg till upplösning i master.m3u8]
+    K --> L{Finns fler storlekar?}
+    L --> |Ja| F
+    L --> |Nej| M[Slut på en video]
+    M --> N{Finns fler videofiler?}
+    N --> |Ja| B
+    N --> |Nej| O[Slut]
 {{< /chart >}}
 
 {{< distance >}}
-
-{{< chart >}}
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: I am good thanks!
-{{< /chart >}}
-
-{{< distance >}}
-
-{{< chart >}}
-flowchart TB
-    A[Start] --> B{Is it working?};
-    B -->|Yes| C[End];
-    B -->|No| A;
-{{< /chart >}}
-
-{{< distance >}}
-
-{{< chart >}}
-classDiagram
-    Class01 <|-- AveryLongClass : Cool
-    Class03 *-- Class04
-    Class05 o-- Class06
-    Class07 .. Class08
-    Class09 --> C2 : Where am i?
-    Class09 --* C3
-    Class09 --|> Class07
-    Class07 : equals()
-    Class07 : Object[] elementData
-    Class01 : size()
-    Class01 : int chimp
-    Class01 : int gorilla
-    Class08 <--> C2: Cool label
-{{< /chart >}}
-
-{{< distance >}}
-
-{{< chart >}}
-gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    another task    : 24d
-{{< /chart >}}
