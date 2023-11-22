@@ -19,15 +19,18 @@ eparating the config data into a yaml file which serves as input to the Pulumi p
 
 {{< distance >}}
 
+
 {{< chart >}}
+---
+displayMode: compact
+---
+%% Use 2017-01-01 as a starting point to show weeks correct
 gantt
-    dateFormat D
+    dateFormat YYYY-MM-DD
     axisFormat Vecka %W
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
+        A task          :a1, 2017-01-01, 7d
+        Another task    :after a1, 7d
+        Task in Another :2017-01-12, 12d
         another task    :24d
 {{< /chart >}}
 
