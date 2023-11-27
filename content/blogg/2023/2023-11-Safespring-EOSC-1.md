@@ -3,7 +3,7 @@ title: "Safespring: En nyckelaktör i Europas nya Vetenskapliga molnplattform v�
 date: "2023-11-27"
 intro: "European Open Science Cloud (EOSC) är ett initiativ som syftar till att förbättra och revolutionera vetenskapligt forskningssamarbete i Europa."
 draft: false
-section: "Nyhet"
+section: "blogg"
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_eosc.svg"
