@@ -28,7 +28,7 @@ I detta projekt är vår uppgift att tillhandahålla infrastruktur- och plattfor
 Europakommissionen syfte med EOSC är att uppnå en federation av infrastrukturer som ger sömlös tillgång till interoperabla verktyg för hela livscykelhanteringen av forskningsdata, från upptäckt till lagring, hantering, analys och återanvändning.
 
 {{< quote "Fredric Wallsten, VD på Safespring" >}}
-"EOSC återspeglar kärnvärdena i EU:s Digitala mål för 2030. Min förhoppning är att dessa initiativ kommer att minska offentlig sektors tveksamhet mot molntjänster och främja deras bredare acceptans." 
+"EOSC återspeglar kärnvärdena i EU:s Digitala mål för 2030. Min förhoppning är att dessa initiativ kommer att minska offentlig sektors tveksamhet mot molntjänster och främja deras bredare acceptans."
 {{< /quote >}}
 
 ### Om Safespring
