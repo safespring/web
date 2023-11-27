@@ -30,22 +30,30 @@ understanding this post are basic knowledge of CIDR notation, IP protocols
 (TCP,UDP,ICMP), and IP-based access control.
 
 
+{{% accordion title="TL;DR (Summary)" %}}
+**Do not attach more than one interface; it will destroy communication**  
 
-
-## TL;DR (Summary)
-
-* **Do not attach more than one interface; it will destroy communication**
-* The Safespring compute platform platform uses the [Calico][calico] OpenStack neutron core
+The Safespring compute platform platform uses the [Calico][calico] OpenStack neutron core
 plugin for networking.  
-* Use security groups to enable communication between
-Safespring instances and between Safespring instances and the Internet.
-* IP addresses are allocated from a shared pool but don't change during the
-lifetime of an instance.
-* You can't bring your own IP address unless you create your own tunnels on top
-of your instances.
-* There is no floating IP pool.
-* Click through the seven screens of the diagram below to understand how
-communication happens based on security group memberships and rules.
+
+Use security groups to enable communication between
+Safespring instances and between Safespring instances and the Internet.  
+
+IP addresses are allocated from a shared pool but don't change during the
+lifetime of an instance.  
+
+You can't bring your own IP address unless you create your own tunnels on top
+of your instances.  
+
+There is no floating IP pool.  
+
+Click through the seven screens of the diagram below to understand how
+communication happens based on security group memberships and rules.  
+
+{{% /accordion %}}
+{{< accordion-script >}}
+
+{{< distance >}}
 
 [calico]: https://www.tigera.io/project-calico/
 
