@@ -56,9 +56,9 @@ communication happens based on security group memberships and rules.
 All frames of the diagram contain the same three instances that are attached
 to `public`, `default-v4-nat` and `private` networks respectively.
 
-{{< note "Note" >}}
+{{% note "Note" %}}
 Note that none of the instances have more than one interface; the interface to the network they are attached to.
-{{< /note >}}
+{{% /note %}}
 
 Each diagram frame exemplifies the effect that security groups and their rules have on how
 connections are allowed to take place. This blog is only about how the platform
