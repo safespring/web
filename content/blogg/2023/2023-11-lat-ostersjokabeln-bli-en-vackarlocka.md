@@ -3,7 +3,7 @@ title: "Kommentar: Låt Östersjökabeln bli en väckarklocka"
 date: "2023-11-13"
 intro: "Att investera i digital infrastruktur är inte bara en fråga om nationell säkerhet; det är också en möjlighet att öka tech-kompetensen i Sverige."
 draft: false
-tags: ["English"]
+tags: ["Svenska"]
 showthedate: true
 card: "safespring-debattartikel-2023.webp"
 eventbild: ""
@@ -11,6 +11,7 @@ socialmediabild: ""
 section: "blogg"
 author: "Fredric Wallsten"
 author_image: "firm"
+language: "Se"
 ---
 
 
