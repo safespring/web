@@ -63,7 +63,6 @@ Ni får tillgång till snabb och professionell support med en Technical Account 
 {{% /accordion %}}
 
 
-
 ### Tilläggstjänster för on-premise cloud
 
 Börja arbeta med hybrid cloud med följande tilläggstjänster för att anpassa det efter dina behov och optimera prestanda.
@@ -92,34 +91,14 @@ Lägg till en fullt managerad Kubernetesplattform till din on-premise cloud för
 Förenkla databashanteringen genom att lägga till en managerad databas till din on-premise cloud. Med denna tjänst får du automatiska säkerhetskopieringar, skalning och underhåll av dina databaser, vilket ger dig mer tid att fokusera på att utveckla och förbättra dina applikationer.
 {{% /accordion %}}
 
-{{% accordion title="ML plattform" %}}
+{{% accordion title="Machine Learning-plattform" %}}
 Maximera potentialen hos dina maskininlärnings- och AI-projekt genom att lägga till en Scalout ML plattform till din on-premise cloud. Den här tilläggstjänsten ger dig en skalbar och flexibel plattform som är optimerad för att hantera och distribuera maskininlärningsmodeller, vilket gör det enklare för dig att träna, förutsäga och analysera data.
 {{% /accordion %}}
 
-## Tillgänglighet
+## Support och tillgänglighet
 
-Det här avnittet är under produktion och kommer tas fram under 2023.
-
-<!--
-{{< ingress >}}
-Safespring OnPrem Cloud erbjuder ett Service Level Agreement (SLA) med tillgänglighet på 99,9% för Compute och Storage Service API.
-{{< /ingress >}}
-
-För Safespring Compute Service gäller en tillgänglighet på 99,9%. Kunder informeras om både planerade driftstopp för underhållsarbete och oplanerade driftstopp på en privat statussida. Kunderna får ett antal konton för statussidan och kan ställa in notifikationer via e-post eller en webhook. Detta säkerställer att ni alltid är uppdaterade om eventuella ändringar i er Safespring On-Premise Clouds tillgänglighet och kan vidta lämpliga åtgärder vid behov.
-
-
-{{% accordion title="Om otillgänglighet" %}}
-Otillgänglighet för en tjänst mäts från det att tjänsten avbryts tills den åter accepterar kundlast. För Compute Service anses en datorvärd vara tillgänglig när de instanser som kördes när tjänsten blev otillgänglig har utfärdat startkommandot eller, vid nätverksavbrott, när de åter kan ta emot och skicka nätverkstrafik.
-{{% /accordion %}}
-
-För att SLA:n ska gälla krävs det att det finns tillräckliga resurser i projektet enligt tabellen nedan:
-
-| Tjänst  | Minsta hårdvara                                           | Maximal användning                                          |
-|---------|-----------------------------------------------------------|-------------------------------------------------------------|
-| Compute | 6 fysiska hosts                                           | Ledig kapacitet i klustret motsvarande minst en fysisk host |
-| Storage | 12 fysiska hosts, med minst 8 drives per host             | Kluster fyllt till mindre än 70% av maxkapacitet            |
-| API     | 3 fysiska hosts för backend som körs i 3 separata chassin |                                                             |
--->
+Denna tjänst kan levereras med en tillgänglighet på upp till 99,9 procent under förutsättning att kunden följer våra krav på datacenter-specifikationer och gränser för användning av kapacitet. Detaljer om detta ingår i standardkontraktet som blir känt under försäljningsprocessen.
+Utöver detta gäller standardstödprocessen som beskrivs i [Safesprings dokumentation](https://docs.safespring.com/service/policies).
 
 ### Kundens ansvar
 Kunderna ansvarar för att övervaka sina egna instanser och säkerställa att deras tjänster fungerar efter ett avbrott. Kunden ansvarar för följande:
@@ -159,25 +138,53 @@ Genomgång av eventuella incidenter på plattformen, orsakerna bakom dem och fö
 Presentation och diskussion kring Safesprings aktuella och planerade produktutveckling, inklusive icke-offentliga vägkartor som kräver att ett sekretessavtal (NDA) undertecknas med Safespring.
 {{% /accordion %}}
 
-## Support
+{{< distance >}}
 
-Denna sektion är under produktion och kommer tas fram under 2023.
-<!--
-{{< ingress >}}
-Vi på Safespring förstår att tillgänglig och effektiv support är avgörande för att säkerställa en smidig användning av vår On-Premise Cloud-tjänst. 
-{{< /ingress >}}
+{{< chart >}}
+timeline
+    section Vecka 0
+    Avtal signerat: Förbereda avtalsdokument
+           : Skicka avtalsdokument för granskning
+           : Få avtalet signerat av alla parter
+           : Arkivera det signerade avtalet
+    section Vecka 1
+    Beställning av hårdvara: Identifiera och specificera nödvändig hårdvara
+           : Samla in offerter från leverantörer
+           : Granska och jämföra offerter
+           : Placera en beställning för godkänd hårdvara
+           : Följ upp leveranstiden och leveransstatus
+    section Vecka 4
+    Arbetsplanering: Identifiera projektresurser
+           : Allokera resurser till specifika uppgifter
+           : Skapa en detaljerad projektplan
+           : Dela ut uppgifter och ansvarsområden
+    Uppföljningsmöte 1: Förbereda statusrapport inför mötet
+           : Diskutera och säkerställa access
+           : Planera för kundens resurser
+    section Vecka 8
+    Utbildning plattform: Planera och schemalägga utbildningstillfällen
+           : Skapa utbildningsmaterial
+           : Genomföra utbildningstillfällen
+           : Samla in feedback och utvärdera
+    Uppföljningsmöte 2: Förbereda statusrapport
+           : Utses kundens resurser
+           : Diskutera problem och lösningar
+    section  Vecka 12-18
+Leverans hårdvara: Följ upp leveransstatus
+           : Informera kund om leveransdatum
+           : Säkerställ mottagande av hårdvaran
+    Installation hårdvara (v18): Planera installationsprocessen
+           : Genomföra installation
+           : Funktionalitetstester
+    section  Vecka 18-19
+Installation mjukvara: Samla in nödvändig mjukvara
+           : Installera och konfigurera mjukvara
+           Utföra tester : Utföra tester
+    section     Vecka 20
+Leveransmöte: Förbereda statusrapport
+           : Genomgång av användargränssnitt
+           : Genomgång av plattformens funktioner
+{{< /chart >}}
 
-För att erbjuda högkvalitativ support och ge er trygghet har vi utvecklat en supportstruktur som innefattar snabba svarstider, tillgång till nödsupport dygnet runt och ett tydligt stöd i avtalen för att möta era behov. Här är en översikt över de supporttjänster vi erbjuder:
-
-{{% accordion title="Snabba svarstider" %}}
-Vi erbjuder en svarstid på supportärenden inom fyra timmar under arbetstid (08:00 till 16:00 CEST). Supportärenden kan skickas via e-post till support@safespring.com. Svarstiden mäts från det att Safespring tar emot e-postmeddelandet tills den första responsen från en ingenjör skickas till kunden.
-{{% /accordion %}}
-
-{{% accordion title="Nödsupport dygnet runt" %}}
-Kunder har tillgång till ett telefonnummer för nödsupport utanför arbetstid. Detta innebär att vi finns tillgängliga för att snabbt hjälpa er om det uppstår några kritiska problem.
-{{% /accordion %}}
-
-Med Safesprings engagerade supportteam kan du känna dig trygg i att få snabb och professionell hjälp när du behöver det mest, vilket säkerställer en problemfri användning av Safespring On-Premise Cloud.
--->
-
+{{< distance >}}
 {{< accordion-script >}}

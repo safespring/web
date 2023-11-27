@@ -30,22 +30,30 @@ understanding this post are basic knowledge of CIDR notation, IP protocols
 (TCP,UDP,ICMP), and IP-based access control.
 
 
+{{% accordion title="TL;DR (Summary)" %}}
+**Do not attach more than one interface; it will destroy communication**  
 
-
-## TL;DR (Summary)
-
-* **Do not attach more than one interface; it will destroy communication**
-* The Safespring compute platform platform uses the [Calico][calico] OpenStack neutron core
+The Safespring compute platform platform uses the [Calico][calico] OpenStack neutron core
 plugin for networking.  
-* Use security groups to enable communication between
-Safespring instances and between Safespring instances and the Internet.
-* IP addresses are allocated from a shared pool but don't change during the
-lifetime of an instance.
-* You can't bring your own IP address unless you create your own tunnels on top
-of your instances.
-* There is no floating IP pool.
-* Click through the seven screens of the diagram below to understand how
-communication happens based on security group memberships and rules.
+
+Use security groups to enable communication between
+Safespring instances and between Safespring instances and the Internet.  
+
+IP addresses are allocated from a shared pool but don't change during the
+lifetime of an instance.  
+
+You can't bring your own IP address unless you create your own tunnels on top
+of your instances.  
+
+There is no floating IP pool.  
+
+Click through the seven screens of the diagram below to understand how
+communication happens based on security group memberships and rules.  
+
+{{% /accordion %}}
+{{< accordion-script >}}
+
+{{< distance >}}
 
 [calico]: https://www.tigera.io/project-calico/
 
@@ -56,9 +64,9 @@ communication happens based on security group memberships and rules.
 All frames of the diagram contain the same three instances that are attached
 to `public`, `default-v4-nat` and `private` networks respectively.
 
-{{< note "Note" >}}
+{{% note "Note" %}}
 Note that none of the instances have more than one interface; the interface to the network they are attached to.
-{{< /note >}}
+{{% /note %}}
 
 Each diagram frame exemplifies the effect that security groups and their rules have on how
 connections are allowed to take place. This blog is only about how the platform
@@ -126,14 +134,14 @@ that will create its own overlay network that you as a user control.
 
 ## Why Calico  
 
-* Simplicity/Security: I.e., less complexity => smaller attack surface, and fewer
+* {{< inline "Simplicity/Security:" >}} I.e., less complexity => smaller attack surface, and fewer
 things that can go wrong.
-* Performance: Just straight BGP routing is a lot more performant than
+* {{< inline "Performance:" >}} Just straight BGP routing is a lot more performant than
 (re)creating virtual switch layers and **then** put layer 3 on top again. We
 get close to line speed with very little overhead using this approach.
-* Scalability: BGP scales the Internet. Calico scales the data center similarly
+* {{< inline "Scalability:" >}} BGP scales the Internet. Calico scales the data center similarly
 using BGP
-* Cost: No expensive vendor «lock-in» with costs attached. Less overhead =>
+* {{< inline "Cost:" >}} No expensive vendor «lock-in» with costs attached. Less overhead =>
 less compute power => less energy consumption for the same work => greener and
 less expensive.  
 

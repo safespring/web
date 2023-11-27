@@ -7974,3 +7974,23 @@ details[open] summary {
 .megamenu-service-card a:hover {
 	color:var(--link-color) !important;
 }
+
+/* MERMAID */
+
+	.titleText {
+  font-family: var(--hind-font) !important;
+  color: var(--clear-blue-color) !important;
+  fill: var(--clear-blue-color) !important;
+}
+
+.title {
+  font-family: var(--hind-font) !important;
+  color: var(--clear-blue-color) !important;
+  fill: var(--clear-blue-color) !important;
+}
+
+
+.quadrant text {
+	font-weight: 600 !important;
+}
+
