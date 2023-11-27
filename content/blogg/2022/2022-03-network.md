@@ -134,14 +134,14 @@ that will create its own overlay network that you as a user control.
 
 ## Why Calico  
 
-* Simplicity/Security: I.e., less complexity => smaller attack surface, and fewer
+* {{< inline "Simplicity/Security:" >}} I.e., less complexity => smaller attack surface, and fewer
 things that can go wrong.
-* Performance: Just straight BGP routing is a lot more performant than
+* {{< inline "Performance:" >}} Just straight BGP routing is a lot more performant than
 (re)creating virtual switch layers and **then** put layer 3 on top again. We
 get close to line speed with very little overhead using this approach.
-* Scalability: BGP scales the Internet. Calico scales the data center similarly
+* {{< inline "Scalability:" >}} BGP scales the Internet. Calico scales the data center similarly
 using BGP
-* Cost: No expensive vendor «lock-in» with costs attached. Less overhead =>
+* {{< inline "Cost:" >}} No expensive vendor «lock-in» with costs attached. Less overhead =>
 less compute power => less energy consumption for the same work => greener and
 less expensive.  
 
