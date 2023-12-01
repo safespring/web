@@ -57,6 +57,7 @@ Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU o
 | FLAVOR-l2.c16r32.100  |  16  |    32    |       100       |   4,36 kr |     3 140 kr |
 | FLAVOR-l2.c16r32.500  |  16  |    32    |       500       |   4,92 kr |     3 540 kr |
 | FLAVOR-l2.c16r32.1000 |  16  |    32    |      1 000      |   5,61 kr |     4 040 kr |
+| FLAVOR-l2.c16r64.500  |  16  |    64    |       500       |   7,36 kr |     5 300 kr |
 | FLAVOR-l2.c32r64.1000 |  32  |    64    |      1 000      |   9,83 kr |     7 080 kr |
 
 
