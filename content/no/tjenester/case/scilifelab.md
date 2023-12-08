@@ -17,6 +17,7 @@ sidebarsection: ""
 sidebarimage: "scilifelab.svg"
 saas: ""
 sidebarwhitepaper: ""
+service: "Safespring Private Cloud"
 aliases:
 toc: "I denne artikkelen"
 ---

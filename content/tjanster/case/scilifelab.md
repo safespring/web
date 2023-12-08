@@ -5,12 +5,12 @@ date: 2023-06-01
 draft: false
 darkmode: "off"
 section: "User case"
-intro: "Läs om Safesprings leverans av en molnbaserad VM- och lagringstjänst till SciLifeLab, Sveriges största forskningsinfrastruktur för life science. Tjänsten stödjer SciLifeLabs behov av integration med högteknologiska analysmetoder, hantering av stora mängder forskningsdata och tvärvetenskapliga samarbeten."
+intro: "Läs om hur Safespring levererade molnbaserade VM- och lagringstjänster till SciLifeLab, för att stödja deras avancerade life science-forskning och hantering av stora datamängder."
 background: "/safespring-scilifelab.webp"
 card: ""
 socialmedia: ""
-sidebarlinkname: "Behöver du molntjänster?"
-sidebarlinkurl: "#sla"
+sidebarlinkname: ""
+sidebarlinkurl: ""
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 sidebarsection: ""
@@ -19,12 +19,15 @@ saas: ""
 sidebarwhitepaper: ""
 aliases:
 toc: "I denna artikel"
+service: "Safespring Private Cloud"
 ---
 
 ## 
 {{< ingress >}}
 Safespring levererar en molnbaserad VM- och lagringstjänst till SciLifeLab, den största nationella forskningsinfrastrukturen för life science i Sverige. 
 {{< /ingress >}}
+
+{{< readfile "Vad är Life Science?" "/content/read-more/lifescience.md" >}}
 
 Safesprings virtuella maskiner och lagring går att automatisera genom API. Det ger SciLifeLab flexibilitet att anpassa resurserna vid varje givet tillfälle och optimerar kostnader och prestanda i realtid.
 

@@ -17,6 +17,7 @@ sidebarimage: "asker-alex.webp"
 sidebartext: "Alex deler innsikt om Askers samarbeid med Safespring og viktigheten av databehandling innen EU."
 saas: ""
 sidebarwhitepaper: ""
+service: "Compliant Kubernetes"
 aliases:
 ---
 

@@ -17,6 +17,7 @@ sidebarimage: "elastisys-rob.png"
 sidebartext: "Rob McCuaig delar insikter om Elastisys' samarbete med Safespring och vikten av databehandling inom EU."
 saas: ""
 sidebarwhitepaper: ""
+service: "Safespring Compute"
 aliases:
 ---
 

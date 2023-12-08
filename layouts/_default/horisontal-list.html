@@ -1,0 +1,13 @@
+<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2">
+  <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
+    <img src="/img/card/{{ .Params.sidebarimage }}" alt="{{ .Params.title }}">
+  </div>
+  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+  	      <p style="margin: 25px 0 0 0; font-weight: 600; font-size: 13px; text-transform: uppercase; color: var(--middle-blue-color);">{{ .Params.service }}</p>
+    <h3>{{ .Title }}</h3>
+      <p>{{ .Params.intro }}
+      </p><br><br>
+        <a class="button" href="{{ .RelPermalink }}">Read more</a>
+      </a>
+    </div>
+  </div>

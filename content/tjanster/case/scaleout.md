@@ -17,6 +17,7 @@ sidebarimage: "scaleout-andreas.webp"
 sidebartext: "Andreas delar insikter om Scaleouts samarbete med Safespring och vikten av databehandling inom EU."
 saas: ""
 sidebarwhitepaper: ""
+service: "Safespring Compute"
 aliases:
 ---
 
