@@ -17,6 +17,7 @@ sidebarsection: ""
 sidebarimage: "scilifelab.svg"
 saas: ""
 sidebarwhitepaper: ""
+service: "Safespring Private Cloud"
 aliases:
 toc: "I denne artikkelen"
 ---
@@ -165,11 +166,11 @@ GÉANTs rolle innen OCRE innebærer at de hjelper til med å forhandle fram avta
 
 {{% /accordion %}}
 
-{{% custom-card image="/img/card/safespring-kristian.jpg" cardtitle="Kristian Fjellhaug" %}}
-Jeg er salgssjef i Norge og hjelper deg med å bruke våre tjenester som allerede er innkjøpt i henhold til OCRE-avtalen.
+{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+Jeg er din kontakt i Norge og hjelper deg med å bruke våre tjenester.
 
-{{< inline "Ring:" >}} +47 90 67 58 27
-kristian.fjellhaug@safespring.com
+{{< inline "Ring" >}} +46 (0)73 533 65 21
+petter.hylin@safespring.com
 
 {{% /custom-card %}}
 

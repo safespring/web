@@ -2,7 +2,7 @@
 title: "Från Google Cloud till Safespring med Compliant Kubernetes"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 darkmode: "off"
 section: "User case"
 intro: "Kör Compliant Kubernetes som en managerad tjänst."

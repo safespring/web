@@ -37,4 +37,4 @@ Med Safespring får du tillgång till en mängd olika resurser och verktyg som h
 
 <div style="margin-bottom:50px;"></div>
 
-{{< boka-demo >}}
+{{< book-demo >}}
