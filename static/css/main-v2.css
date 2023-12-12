@@ -614,6 +614,29 @@ blockquote p {
 	visibility:visible;
 }
 
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 35px; 
+  height: 35px; 
+  background-color: #f4670f10; 
+  border-radius: 50%; 
+  color: #f4670f; 
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  transition:all .3s ease;
+}
+
+.close-btn:hover {
+	transform: scale(120%);
+}
 
 
 /* Checkbox toggle */
@@ -2305,6 +2328,11 @@ color:var(--unCheckedColor);
 
 .sidebar-content {
 	margin:50px;
+}
+
+.demo-sticky {
+	position: sticky;
+	top: 20px;
 }
 
 @media only screen and (max-width:1100px) {
