@@ -68,12 +68,12 @@ pre {
 /*white-space:pre-wrap;*/;
 overflow:scroll;
 /*margin:0 13px  13px 0 !important;*/;
-
 }
 
 .highlight::-webkit-scrollbar{
 	color:blue;
 }
+
 pre > code {
 	padding:0;
 }
