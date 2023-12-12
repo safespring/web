@@ -94,3 +94,39 @@
   </div>
 </div>
 {{ end }}
+
+<div class="sidebar-container demo-sticky">
+  <div class="sidebar-content">
+    <div>
+      <p class="card-section">{{ .Params.documentation }}</p>
+      <h2 class="card-heading">
+        {{ if eq .Params.language "Se" }}Boka demo
+        {{ else if eq .Params.language "No" }}Boka demo
+        {{ else if eq .Params.language "En" }}Schedule demo
+        {{ else }}Hej
+        {{ end }}
+      </h2>
+      <p class="mb-2">
+        {{ if eq .Params.language "Se" }}Låt en av våra Cloud Architects visa dig vår plattform.
+        {{ else if eq .Params.language "No" }}La en av våre Cloud Architects vise deg vår plattform.
+        {{ else if eq .Params.language "En" }}Let one of our Cloud Architects show you our platform.
+        {{ end }}
+      </p>
+      {{ if eq .Params.language "Se" }}
+      <a class="button" href="/demo">Boka demo</a>
+      {{ else if eq .Params.language "No" }}
+      <a class="button" href="/no/demo">Boka demo</a>
+      {{ else if eq .Params.language "En" }}
+      <a class="button" href="/en/demo">Schedule demo</a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="close-btn">&times;</div>
+</div>
+<script>document.addEventListener('DOMContentLoaded', (event) => {
+  var closeBtn = document.querySelector('.close-btn');
+  closeBtn.addEventListener('click', function() {
+    this.parentElement.style.display = 'none';
+  });
+});
+</script>
