@@ -37,7 +37,7 @@
     </div>
     {{ $currentPage := . }}
     <div class="sidebar-services">
-      <h4>      
+      <h4>
         {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
         {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
         {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
@@ -100,16 +100,15 @@
     <div>
       <p class="card-section">{{ .Params.documentation }}</p>
       <h2 class="card-heading">
-        {{ if eq .Params.language "Se" }}Boka demo
-        {{ else if eq .Params.language "No" }}Boka demo
+        {{ if eq .Params.language "No" }}Boka demo
         {{ else if eq .Params.language "En" }}Schedule demo
-        {{ else }}Hej
+        {{ else }}Boka demo
         {{ end }}
       </h2>
       <p class="mb-2">
-        {{ if eq .Params.language "Se" }}Låt en av våra Cloud Architects visa dig vår plattform.
-        {{ else if eq .Params.language "No" }}La en av våre Cloud Architects vise deg vår plattform.
+        {{ if eq .Params.language "No" }}La en av våre Cloud Architects vise deg vår plattform.
         {{ else if eq .Params.language "En" }}Let one of our Cloud Architects show you our platform.
+        {{ else  }}Låt en av våra Cloud Architects visa dig vår plattform.
         {{ end }}
       </p>
       {{ if eq .Params.language "Se" }}
