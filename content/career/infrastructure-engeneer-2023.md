@@ -1,10 +1,10 @@
 ---
 Title: "Infrastructure Engineer (OpenStack & Ceph Specialist)"
-intro: "s an Infrastructure Engineer at Safespring, you will develop and operate our infrastructure based on OpenStack and Ceph."
+intro: "As an Infrastructure Engineer at Safespring, you will develop and operate our infrastructure based on OpenStack and Ceph."
 Team: "Infrastructure team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
-draft: false
+draft: true
 date: "2022-03-16"
 sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
 sidebarlinkname: "Upload CV"
