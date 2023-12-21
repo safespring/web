@@ -1,10 +1,6 @@
 ---
 title: "Compliant Kubernetes"
-cardtitle: "Container platform"
-cardicon: "fa-solid fa-container-storage"
-cardcolor: "#3C9BCD"
-cardorder: "3"
-date: 2022-12-22T13:58:58+01:00
+date: 2023-12-20
 draft: false
 intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
 cardintro: "Run Kuberntes or OpenShift on Safespring infrastrucure, as a service or on your own."
@@ -18,7 +14,15 @@ section: "Public Cloud"
 language: "En"
 ---
 
-![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32" >}}
+    {{< icon-block icon="fa-solid fa-globe-europe" text="Nordic Data Centers" link="" color="#195F8C" >}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Regulatory Compliance" link="" color="#3C9BCD" >}}
+    {{< icon-block icon="fa-solid fa-cloud" text="Cloud Native Computing" link="" color="#3C9BCD" >}}
+    {{< icon-block icon="fa-solid fa-file-code" text="Lifecycle Management" link="" color="#FA690F" >}}
+    {{< icon-block icon="fa-solid fa-lock" text="Security & Vulnerability Management" link="" color="#3C9BCD" >}}
+{{< /icon-block-container >}}
+
 
 {{% ingress %}}
 Organizations across all industries adopt containers for increased agility, developer productivity, and availability and performance.
