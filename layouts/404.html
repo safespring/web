@@ -1,74 +1,42 @@
 {{ partial "head.html" . }}
-
-<style>
-  .aktuellt {
-    background: #f9ffff url("/img/safespring_bilder_3.jpg?crc=133698968") no-repeat center top fixed;
-    background-size: cover;
-  }
-</style>
-  <title>Safespring | {{ .Title }}</title>
-</head>
-<body><!-- NAVBAR -->
-   {{ partial "header.html" . }} <!-- HEADING -->
-   <div class="heading-sub">
-     <div class="heading-content">
-       <h1>Error 404</h1>
-       <p>Ett fel har inträffat</p>
-     </div>
-   </div>
-
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
 <!-- HEADING -->
-
-
-<!-- CONTENT -->
-<main class="content-chalmers">
-  <!-- Main  -->
-  <div class="ch-content">
-    <div class="content-heading">
-      <h2>Sidan du söker verkar inte finnas</h2>
+<div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+  <div style="max-width: 800px;">
+    <div class="section">
+      {{ if .Params.toplogo }}
+      <img src="/img/logos/{{ .Params.toplogo }}" alt="Logo" class="toplogo">
+      {{ end }}
+      <a class="" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
+        {{ if eq .Section "om-safespring" }}About Safespring{{ else if eq .Section "referenser" }}Customer References{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
+      </a>
     </div>
-    <div class="content-body">
-      <p>Det kan bero på att länken är felaktig. Om sidan flyttas eller om sidan tagits bort kan det hända att den gamla länken slutar att fungera, och länkar dig till denna sida stället. Ta gärna kontakt med oss om du anser att denna sida fortfarande borde finnas under just denna länk.</p>
-        <p>Denna sida försökte du nå: </br><strong>({{ .Permalink }})</strong> </p>
-        <h2>Vad betyder 404?</h2>
-        <p>"404 error" eller "error 404" är en standardfelkod i HTTP-protokollet som betecknar att webbsidan som efterfrågats inte finns eller inte kan hittas.</p>
-        <p>Uttrycket 404 är vanligt och i överförd betydelse kan det emellanåt användas istället för "finns inte" eller "fel", oftast i tekniska sammanhang.</p>
-        <p>404-felkoden ska inte förväxlas med "server not found", "server crashed" eller liknande fel.</p>
-    </div>
+    <h1 class="balance-text" style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{else}}var(--main-color){{end}}">
+      404 error
+    </h1>
+    <p>
+      "404 error" or "error 404" is a standard error code in the HTTP protocol that indicates that the requested webpage does not exist or cannot be found.
+    </p>
   </div>
-
-  <!-- SIDEBAR -->
-  <div class="ch-sidebar">
-    <div>
-      <img class="ch-sidebar-logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
-    </div>
-
-    <div>
-      <h2 class="content-heading">Kontakta Safespring</h2>
-
-
-      <br>
-    </div>
-
-    <a id="find-more" href="/kontakt/kontakt">KONTAKTA
-      <br/>SAFESPRING</a>
-
-    <div class="read-more">
-      <h2>Läs mer om:</h2>
-            <li class="content-body">
-        <a href="/safespring-backup">&gt; Backup som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-storage">&gt; Lagring som tjänst</a>
-      </li>
-      <li class="content-body">
-        <a href="/safespring-compute">&gt; Infrastruktur som tjänst</a>
-      </li>
-    </div>
+  <div class="w250"></div>
+</div>
+<main class="main-default-single">
+  <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
+    <h2>The page you are looking for seems to not exist</h2>
+    <p>This may be due to an incorrect link. If the page has moved or has been removed, it can happen that the old link stops working and directs you to this page instead. Please contact us if you believe that this page should still exist under this link.</p>
+    <p>The page you tried to reach: </br><strong id="requested-url"></strong></p>
+    <h3>What does 404 mean?</h3>
+    <p>"404 error" or "error 404" is a standard error code in the HTTP protocol that indicates that the requested webpage does not exist or cannot be found.</p>
+    <p>The term 404 is common and in a transferred sense, it can sometimes be used instead of "does not exist" or "error", mostly in technical contexts.</p>
+    <p>The 404 error code should not be confused with "server not found", "server crashed", or similar errors.</p>
+    <script>
+      document.getElementById('requested-url').textContent = window.location.href;
+    </script>
   </div>
-
+  <div class="sidebar-default-single">
+    <!-- Use partial to include the content in the standard sidebar -->
+    {{ partial "sidebar-default-single.html" . }}
   </div>
-</main>
-
-<!-- FOOTER -->
+  </main>
 {{ partial "footer.html" . }}
