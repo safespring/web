@@ -72,7 +72,7 @@ Priskomponentene er antall server-vCPUer og tilhørende RAM, mengden forbrukt la
 | Data Egress          | Månedspris     |
 |----------------------|----------------|
 | Första 1024GB        | GRATIS         |
-| Över 1024 GB         | 9,37 NOK/GB    |
+| Över 1024 GB         | 0,95 NOK/GB    |
 
 
 {{< 2calltoaction "Bestill demo" "/no/demo" "Kontakt oss" "/no/kontakt" >}}

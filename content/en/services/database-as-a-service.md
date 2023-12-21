@@ -71,8 +71,8 @@ Pricing components are the number of server vCPUs and associated RAM, amount of 
 
 | Data Egress          | Monthly       |
 |----------------------|---------------|
-| Första 1024GB        | Free          |
-| Över 1024 GB         | 0.083 EUR/GB  |
+| First 1024GB        | Free          |
+| Greater than 1024 GB         | $.09375 / GB  |
 
 
 {{% horisontal-card image="/img/card/safespring-compute-icon.svg" link="/en/services/compute/" linktext="Learn more" cardtitle="Safespring Compute is the core of Database as a service" text="Safespring runs in data centers within Europe and is not affected by foreign legislation such as the CLOUD Act or FISA 702." %}}
