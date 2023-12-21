@@ -9,8 +9,6 @@ sidebarlinkname: "Miljöpolicy (pdf)"
 sidebarlinkurl: "/documents/safespring-environment-policy-2019.pdf"
 ---
 
-<img style="max-width: 300px;" src="https://api.thegreenwebfoundation.org/greencheckimage/www.safespring.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
-
 {{< ingress >}}
 Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan. Ett viktigt steg vi har tagit är att säkerställa att våra datacenter använder 100% förnyelsebar energi. 
 {{< /ingress >}}
