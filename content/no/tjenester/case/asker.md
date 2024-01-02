@@ -2,7 +2,7 @@
 title: "Hvordan Asker former fremtidens rekrutteringsprosesser med Safespring"
 language: "No"
 date: 2023-10-18
-draft: false
+draft: true
 section: "Use case"
 intro: "Med sin AI-drevne intervjuplattform hjelper Asker ledere og rekrutteringsteam med å finne den rette personen for jobben."
 background: ""
