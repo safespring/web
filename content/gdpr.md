@@ -30,7 +30,7 @@ TOC: "På denna sida"
 
 ## Externa dataskyddsåtgärder
 
-En av Safesprings skyldigheter som personuppgiftsbiträde är att bistå personuppgiftsansvariga som använder våra tjänster med deras compliance-arbete (A28.3). Vi ska alltid göra det enklare, inte svårare, att uppfylla dataskyddskrav som träffar aktörer längre ned i värdekedjan. 
+Safespring skyldighet som ert personuppgiftsbiträde är att aktivt bistå i ert compliance-arbete (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla de strikta dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
 Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera våra kunder om vilka möjligheter vår infrastruktur ger dem att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
 
