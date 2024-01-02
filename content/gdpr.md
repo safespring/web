@@ -36,6 +36,8 @@ Vi tolkar detta som en positiv skyldighet att inte bara själva implementera sä
 
 
 
+
+
 {{% accordion title="Logghantering och Säkerhetsåtgärder" id="1" %}}
 
 Skydd mot intern och extern aktiv/aggressiv expertis: Safespring har för närvarande effektiv debug och systemloggning.  
@@ -144,7 +146,11 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 {{% /accordion %}}
 {{< accordion-script >}}
 
-{{< horisontal-card image="/img/card/asker-alex.webp" cardtitle="Use Case Asker Technologies" link="/tjanster/case/asker/" linktext="Läs Use Case" text="“Det förhöjda säkerhetsläget gör folk mer måna om sin data och sina leverantörer. Inom offentlig sektor är svensk datalagring ofta ett krav, men även inom privat sektor ökar medvetenheten om compliance och informationssäkerhet. Därför ville vi jobba med det säkraste vi kunde hitta – och det är Safespring.”" >}}
+
+
+
+
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Use Case Scaleout" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 
 
 

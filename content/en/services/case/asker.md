@@ -2,7 +2,7 @@
 title: "How Asker Shapes the Future of Recruitment Processes with Safespring"
 language: "En"
 date: 2023-10-18
-draft: false
+draft: true
 section: "Use case"
 intro: "With its AI-powered interview platform, Asker assists managers and recruitment teams in finding the right person for the job."
 background: ""

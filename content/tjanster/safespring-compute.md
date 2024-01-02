@@ -56,7 +56,7 @@ Med Safespring Compute får du tillgång till marknadsledande molnteknologi dire
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/card/asker-alex.webp" cardtitle="Use Case Asker Technologies" link="/tjanster/case/asker/" linktext="Läs Use Case" text="Asker hjälper sina kunder att fatta bättre rekryteringsbeslut med hjälp av AI ovanpå Safesprings digitala infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Scaleout bygger en AI-plattform" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 
 {{< distance >}}
 
