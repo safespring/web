@@ -1,8 +1,8 @@
 ---
 title: "Testsida för GDPR beyond data transfer"
 language: "Se"
-date: 2019-01-07T13:58:58+01:00
-draft: false
+date: 2024-01-01T13:58:58+01:00
+draft: true
 section: "Boka demo"
 intro: "Safespring är den svenska publika molnplattformen som uppfyller europeiska dataskyddslagar. Vi är glada över att kunna erbjuda en säker och pålitlig plattform för våra kunder och deras data."
 background: "safespring-blue-fade2.svg"
