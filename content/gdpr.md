@@ -28,15 +28,11 @@ TOC: "På denna sida"
 
 
 
-
 ## Externa dataskyddsåtgärder
 
-En av Safesprings skyldigheter som personuppgiftsbiträde är att bistå personuppgiftsansvariga som använder våra tjänster med deras compliance-arbete (A28.3). Vi ska alltid göra det enklare, inte svårare, att uppfylla dataskyddskrav som träffar aktörer längre ned i värdekedjan. Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera våra kunder om vilka möjligheter vår infrastruktur ger dem att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
+En av Safesprings skyldigheter som personuppgiftsbiträde är att bistå personuppgiftsansvariga som använder våra tjänster med deras compliance-arbete (A28.3). Vi ska alltid göra det enklare, inte svårare, att uppfylla dataskyddskrav som träffar aktörer längre ned i värdekedjan. 
 
-
-
-
-
+Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera våra kunder om vilka möjligheter vår infrastruktur ger dem att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
 
 
 
@@ -158,9 +154,13 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 
 Interna dataskyddsåtgärder är sådana som Safespring implementerar för personuppgifter vi själva ansvarar för. Vi är ett molnbolag som är verksamma mot andra företag. Vår kommersiella verksamhet omfattar personuppgifter i ytterst begränsad omfattning. I produktion hanteras endast användarnamn och lösenord till användare i plattformen.
 
+### Administrativ datahantering
+
 Inom det administrativa området är det framför allt vid hantering av fakturor, administration av personal, genom vår webbsida och vid vissa typer av informationsutskick i marknadsföringssyfte som vi hanterar kontaktuppgifter eller aggregerad statistik.
 
 För alla typer av bokföringsåtgärder är vi bundna av aktiebolagslagen, bokföringslagen, skattelagstiftningen och riktlinjer om god revisionssed. Kvittenser, avtal, fakturor (ingående och utgående) eller information om sjukersättningsbetalningar bevaras i sju år för att tillgodose behovet av efterhandskontroller av vår bokföring. Efter det gallras uppgifterna i enlighet med vår policy för dataskydd vid personalhantering.
+
+### Marknadsföringsåtgärder och samtycke
 
 För marknadsföring utöver webbanalys gäller att man interagerar med Safespring baserat på samtycke eller vår berättigade intresse. Det kan exempelvis vara att en person i någon social media markerat sig som intresserad av molntjänster och därför, till följd, antas av oss vara intresserad av Safespring även om man inte personligen tagit kontakt med vår CMO. I andra fall får vi del av kontaktuppgifter när personer anmäler sig till event och seminarier.
 
