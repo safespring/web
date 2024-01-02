@@ -1,5 +1,4 @@
 {{ with .Get "link" }}
 <a class="icon-block-link" href='{{ . }}'>{{ end }}<div class="icon-block shadow-1" style='color: {{ .Get "color" }};'>
 	<i class='{{ .Get "icon" }} icon'></i>
-	<p style='color: {{ .Get "color" }};'>{{ .Get "text" }}</p>
-</div>{{ with .Get "link" }}</a>{{ end }}
+	<p><span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}</p></div>{{ with .Get "link" }}</a>{{ end }}
