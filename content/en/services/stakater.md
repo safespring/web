@@ -29,7 +29,7 @@ section: "Public Cloud"
 
 ## Stakater’s App Agility Platform (SAAP) 
 
-Empower your development process with **Stakater’s App Agility Platform (SAAP)**, a groundbreaking service built on Safespring's robust platform (IaaS). SAAP simplifies the cloud development cycle, enabling faster deployment and scaling of software, while ensuring operational stability 24x7x365.
+Empower your development process with **Stakater’s App Agility Platform (SAAP)**, a groundbreaking service built on Safespring's sovereign platform (IaaS). SAAP simplifies the cloud development cycle, enabling faster deployment and scaling of software, while ensuring operational stability 24x7x365.
 
 ### Transforming Development with SAAP
 Before SAAP, teams and apps may be scattered and stressed with learning new tools. After SAAP, teams are streamlined, focused on product development, and better at prioritizing user requests.
