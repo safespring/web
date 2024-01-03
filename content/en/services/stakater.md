@@ -34,10 +34,16 @@ Empower your development process with **Stakater’s App Agility Platform (SAAP)
 ### Transforming Development with SAAP
 Before SAAP, teams and apps may be scattered and stressed with learning new tools. After SAAP, teams are streamlined, focused on product development, and better at prioritizing user requests.
 
+A complete 24x7x365 supported DevSecOps platform for observability, and effortless development, shipping, monitoring, and scaling of microservices.
+
+{{% question question="What is DevSecOps?" %}}
+A DevSecOps platform is an integrated solution that combines software development (Dev), security (Sec), and operations (Ops) practices. It aims to embed security seamlessly into the software development lifecycle. This approach ensures that security considerations are not just an afterthought but are integrated from the outset and throughout the development, deployment, and maintenance processes. By doing so, it helps in identifying and mitigating security vulnerabilities early, improving the overall security of the software, speeding up the development process, and fostering collaboration among development, security, and operations teams.
+{{% /question %}}
+{{< accordion-script >}}
+
 ### Features at a Glance
 
 {{% column-two %}}
-- **DevSecOps and Auto-Pilot**: A complete 24x7x365 supported platform for observability, and effortless development, shipping, monitoring, and scaling of microservices.
 - **Orchestration and Cloud Consistency**: Optimal performance with Kubernetes or RedHat OpenShift, and a seamless experience across hybrid cloud infrastructures.
 - **Productivity and Expertise**: Boost efficiency with handpicked cloud-native tools and gain insights from full-stack experienced site reliability engineers.
 - **Cost-Effective Development**: Enjoy significant cost reductions and enhanced developer productivity with dynamic test environments, self-service, and a comprehensive local development environment.
