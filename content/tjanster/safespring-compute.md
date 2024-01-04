@@ -27,6 +27,36 @@ megamenu: "yes"
 
 {{< youtube "iYDi_Hz7A74" >}}
 
+<video id="myVideo" autoplay muted controls poster="">
+  <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish">
+  <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+  Your browser does not support the video tag.
+</video>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('myVideo');
+    var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/ProcessedVideos/safespring-demo-instans-svenska/master.m3u8";
+
+    if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function() {
+        video.play();
+      });
+      hls.on(Hls.Events.ERROR, function (event, data) {
+        console.error('Error event:', event, 'Data:', data);
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = videoSrc;
+      video.addEventListener('canplay', function() {
+        video.play();
+      });
+    }
+  });
+</script>
+
 ## Virtuella maskiner som tjänar ert företag
 
 {{< ingress >}}
