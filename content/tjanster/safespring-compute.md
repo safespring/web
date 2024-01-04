@@ -25,7 +25,7 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-<video id="myVideo" controls>
+<video style="border-radius: 15px; id="myVideo" controls>
   Your browser does not support the video tag.
 </video>
 <script>
