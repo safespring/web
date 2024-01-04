@@ -27,10 +27,7 @@ megamenu: "yes"
 
 {{< youtube "iYDi_Hz7A74" >}}
 
-<video id="myVideo" autoplay muted controls poster="">
-  <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish">
-  <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English">
-  <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+<video id="myVideo" controls>
   Your browser does not support the video tag.
 </video>
 <script>
