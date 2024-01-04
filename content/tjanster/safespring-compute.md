@@ -25,8 +25,6 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< youtube "iYDi_Hz7A74" >}}
-
 <video id="myVideo" controls>
   Your browser does not support the video tag.
 </video>
@@ -34,7 +32,6 @@ megamenu: "yes"
   document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
     var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8";
-
     if (Hls.isSupported()) {
       var hls = new Hls();
       hls.loadSource(videoSrc);
