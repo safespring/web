@@ -138,7 +138,7 @@ Vår rekommendation är att regelbundet uppdatera och reviderar sina egna säker
 
 Skydd mot fysisk och tekniskt haveri eller ransomware
 
-Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder vi central blocklagring till Safespring Compute, där data lagras i tre kopior över ett kluster, vilket minimerar beroendet av specifika hårddiskar. Denna åtgärd är avgörande för att säkerställa dataåtkomst och återställning, och stärker vår position i överensstämmelse med GDPR Art 32.1.c.
+Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder vi central blocklagring till Safespring Compute, där data lagras i tre kopior över ett kluster, vilket minimerar beroendet av specifika hårddiskar. Denna åtgärd är avgörande för att säkerställa dataåtkomst och återställning vid tekniskt haveri.
 
 #### Detta överensstämmer med GDPR:s krav på
   - motståndskraft hos behandlingssystemen och -tjänsterna (32.1c)
