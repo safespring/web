@@ -3,7 +3,7 @@ title: "Safespring: Omfattande GDPR-skydd utöver tredjelands­överföring"
 language: "Se"
 date: 2024-01-01T13:58:58+01:00
 draft: false
-section: "Boka demo"
+section: "Compliance"
 intro: "Här ger vi en djupgående översikt över hur vår svenska publika molnplattform inte bara uppfyller de stränga kraven i GDPR, men också går ett steg längre för att säkerställa ditt företags dataskydd. Med Safespring får du inte bara en lösning som skyddar mot dataöverföring till tredjeland, utan en omfattande strategi som täcker fler aspekter av dataskydd och säkerhet. "
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
