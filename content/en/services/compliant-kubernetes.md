@@ -23,7 +23,6 @@ language: "En"
     {{< icon-block icon="fa-solid fa-lock" text="Security & Vulnerability Management" link="" color="#3C9BCD" >}}
 {{< /icon-block-container >}}
 
-
 {{% ingress %}}
 Organizations across all industries adopt containers for increased agility, developer productivity, and availability and performance.
 {{% /ingress %}}
