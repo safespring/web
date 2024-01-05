@@ -25,59 +25,62 @@
 {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
-{{ $pageParams := .Params }}
-{{ range where .Site.Data.authors "name" $pageParams.author }}
-<div class="author-container">
-    <div class="author-image" style="background-image: url(/img/author/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})"></div>
-    <div class="author-info">
-        <p class="author-name">{{ .name }}</p>
-        <p class="author-title">{{ .title }}</p>
+    {{ $pageParams := .Params }}
+    {{ range where .Site.Data.authors "name" $pageParams.author }}
+    <div itemscope itemtype="http://schema.org/Person" class="author-container">
+      <div class="author-image" style="background-image: url(/img/author/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})">
+        <img itemprop="image" src="/img/author/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }}" alt="{{ .name }}" style="display:none;">
+      </div>
+      <div class="author-info">
+        <p class="author-name" itemprop="name">{{ .name }}</p>
+        <p class="author-title" itemprop="jobTitle">{{ .title }}</p>
+      </div>
     </div>
-</div>
-{{ end }}
+
+    {{ end }}
 
     {{ .Content }}
     
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
   </div>
-<!-- SIDEBAR -->
-<!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
-<!-- Kontrollera om aktuell sektion är "webinar" -->
-{{ $isWebinar := eq $.Section "webinar" }}
-<!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
-{{ $isNoSidebar := eq .Params.nosidebar "none" }}
-<!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
-{{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
-<!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
-{{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
+  <!-- SIDEBAR -->
+  <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
+  <!-- Kontrollera om aktuell sektion är "webinar" -->
+  {{ $isWebinar := eq $.Section "webinar" }}
+  <!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
+  {{ $isNoSidebar := eq .Params.nosidebar "none" }}
+  <!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
+  {{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
+  <!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
+  {{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
 
-<!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
-{{ if $isSidebarInvisible }}
+  <!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
+  {{ if $isSidebarInvisible }}
   <div class="w350"></div>
-{{ else if not $isNoSidebar }}
+  {{ else if not $isNoSidebar }}
   <!-- Om sidebar inte ska döljas helt och sidan inte är 'webinar', inkludera standard-sidebar -->
   {{ if not $isWebinar }}
-    <div class="sidebar-default-single">
-      <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
-      {{ partial "sidebar-default-single.html" . }}
-    </div>
+  <div class="sidebar-default-single">
+    <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
+    {{ partial "sidebar-default-single.html" . }}
+  </div>
   {{ end }}
-{{ end }}
+  {{ end }}
 
-<!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
-{{ if $isFullWidthWidgetSet }}
+  <!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
+  {{ if $isFullWidthWidgetSet }}
   <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
   {{ partial (printf "%s" .Params.fullwidthwidget) . }}
-{{ end }}
+  {{ end }}
 </main>
 
 <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
 {{ if $isWebinar }}
-  <!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
-  {{ partial "webinar-side-bar.html" . }}
+<!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
+{{ partial "webinar-side-bar.html" . }}
 {{ end }}
 
-  <!-- FOOTER -->
+<!-- FOOTER -->
 {{ partial "footer.html" . }}
 {{ end }}

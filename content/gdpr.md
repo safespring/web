@@ -18,27 +18,28 @@ TOC: "På denna sida"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-file-alt" text="White Paper Schrems II" link="/whitepaper/schrems-ii/" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsåtgärder" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsåtgärder" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" link="/om-safespring/datacenter/" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-policy" link="/dokument/personuppgiftshantering/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsåtgärder" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsåtgärder" color="#195F8C">}}
 {{< /icon-block-container >}}
 
 
 
 ## Externa dataskyddsåtgärder
+I dataskydds- och GDRP-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar uteslutande om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat [rekommendationer för organisationer](/whitepaper/schrems-ii/) som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
 
-Safespring skyldighet som ert personuppgiftsbiträde är att aktivt bistå i ert compliance-arbete (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla de strikta dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
+Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
-Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera våra kunder om vilka möjligheter vår infrastruktur ger dem att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
-
-
-
+Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera om vilka möjligheter vår infrastruktur ger er att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
 
 
-{{% accordion title="Logghantering och Säkerhetsåtgärder" id="1" %}}
+
+
+
+{{% accordion title="Logghantering och säkerhetsåtgärder" id="1" %}}
 
 Skydd mot intern och extern aktiv/aggressiv expertis: Safespring har för närvarande effektiv debug och systemloggning.  
 
@@ -59,7 +60,7 @@ Vår rekommendation är att använda etablerade branschverktyg för intrångsdet
 
 
 
-{{% accordion title="Användarhantering och Åtkomstkontroll" id="2" %}}
+{{% accordion title="Användarhantering och åtkomstkontroll" id="2" %}}
 
 Skydd mot intern Passiv/Neutral Expert: För att hantera risker associerade med anställdas misstag eller rolländringar, hanterar Safespring användaråtkomst noggrant. Alla konton måste vara individuella.
 
@@ -97,7 +98,7 @@ Vår rekommendation är att upprätta en "zero-knowledge" arkitektur, där data 
 
 
 
-{{% accordion title="Backup och Återställning" id="4" %}}
+{{% accordion title="Backup och återställning" id="4" %}}
 
 Skydd mot fysisk och teknisk incidenthantering: Safespring implementerar viktiga åtgärder för att säkerställa tillgänglighet och återställning av kunddata. Vi erbjuder en robust backup-lösning för våra interna tjänster och miljöer, men det är viktigt att notera att vi inte säkerhetskopierar kundinmatad data. Kunder uppmanas att själva säkerställa säkerhetskopiering av sitt data för att kunna återställa tillgängligheten och tillgången till personuppgifter vid behov. Vår backup-tjänst är ett värdefullt tillval som underlättar för kunder att uppfylla denna rekommendation.
 
@@ -117,9 +118,9 @@ Vår rekommendation är att aktivt hantera säkerhetskopiering och redundans av 
 
 
 
-{{% accordion title="Säkerhetsrevision och Policy Uppdatering" id="5" %}}
+{{% accordion title="Säkerhetsrevision och policy-uppdatering" id="5" %}}
 
-Policydokument och Revisioner: Safespring har flera policydokument och säkerhetsguider, vilket gör  att vi regelbundet uppdaterar och reviderar våra säkerhetspolicyer.
+Policydokument och revisioner: Safespring har flera policydokument och säkerhetsguider, vilket gör  att vi regelbundet uppdaterar och reviderar våra säkerhetspolicyer.
 
 #### Safesprings rekommendationer till våra kunder 
 Vår rekommendation är att regelbundet uppdatera och reviderar sina egna säkerhetspolicyer för att säkerställa att de upprättade rutinerna följs eller för att uppdatera rutinerna så att de speglar verksamheten i praktiken.
@@ -138,7 +139,7 @@ Vår rekommendation är att regelbundet uppdatera och reviderar sina egna säker
 
 Skydd mot fysisk och tekniskt haveri eller ransomware
 
-Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder vi central blocklagring till Safespring Compute, där data lagras i tre kopior över ett kluster, vilket minimerar beroendet av specifika hårddiskar. Denna åtgärd är avgörande för att säkerställa dataåtkomst och återställning, och stärker vår position i överensstämmelse med GDPR Art 32.1.c.
+Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder vi central blocklagring till Safespring Compute, där data lagras i tre kopior över ett kluster, vilket minimerar beroendet av specifika hårddiskar. Denna åtgärd är avgörande för att säkerställa dataåtkomst och återställning vid tekniskt haveri.
 
 #### Detta överensstämmer med GDPR:s krav på
   - motståndskraft hos behandlingssystemen och -tjänsterna (32.1c)
@@ -150,7 +151,7 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 
 
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Use Case Scaleout" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 
 
 
