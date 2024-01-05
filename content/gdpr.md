@@ -18,18 +18,18 @@ TOC: "På denna sida"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-file-alt" text="White Paper Schrems II" link="/whitepaper/schrems-ii/" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsåtgärder" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsåtgärder" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" link="/om-safespring/datacenter/" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-policy" link="/dokument/personuppgiftshantering/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsåtgärder" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsåtgärder" color="#195F8C">}}
 {{< /icon-block-container >}}
 
 
 
 ## Externa dataskyddsåtgärder
-I dataskydds- och GDRP-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar uteslutande om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat **rekommendationer för organisationer** som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
+I dataskydds- och GDRP-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar uteslutande om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat [rekommendationer för organisationer](/whitepaper/schrems-ii/) som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
 
 Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
