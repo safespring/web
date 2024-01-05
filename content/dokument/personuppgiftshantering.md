@@ -29,7 +29,7 @@ Den rättsliga grunden för vår insamling är dels samtycke, dels berättigat i
 ### Hur vi sparar dina uppgifter
 Vi sparar dina uppgifter i ett CRM tills dess att du ber oss ta bort uppgifterna därifrån. Vi använder automatiserade bokföringsverktyg som också lagrar dina uppgifter om du är kund eller leverantör och det behövs för våra relationer.
 
-Hur utövar jag min rätt att få uppgifter borttagna eller ändrade?
+### Hur utövar jag min rätt att få uppgifter borttagna eller ändrade?
 
 Skriv till gdpr@safespring.com så löser vi det.
 
