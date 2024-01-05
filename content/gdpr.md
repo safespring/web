@@ -117,7 +117,7 @@ Vår rekommendation är att aktivt hantera säkerhetskopiering och redundans av 
 
 
 
-{{% accordion title="Säkerhetsrevision och policy uppdatering" id="5" %}}
+{{% accordion title="Säkerhetsrevision och policy-uppdatering" id="5" %}}
 
 Policydokument och revisioner: Safespring har flera policydokument och säkerhetsguider, vilket gör  att vi regelbundet uppdaterar och reviderar våra säkerhetspolicyer.
 
