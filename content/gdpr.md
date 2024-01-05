@@ -29,10 +29,11 @@ TOC: "På denna sida"
 
 
 ## Externa dataskyddsåtgärder
+I dataskydds- och GDRP-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar bara om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat [rekommendationer för organisatione](/whitepaper/schrems-ii/) som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
 
-Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla de strikta dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
+Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
-Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera våra kunder om vilka möjligheter vår infrastruktur ger dem att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
+Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera om vilka möjligheter vår infrastruktur ger er att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
 
 
 
