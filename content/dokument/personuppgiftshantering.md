@@ -1,42 +1,52 @@
 ---
 title: "Information avseende personuppgifts­­behandling"
-date: 2022-03-31T14:29:26+02:00
+date: 2024-01-05
 draft: false
-intro: "Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com"
+intro: "På den här sidan får du reda på hur vi samlar in och använder personuppgifter på vår webbplats."
 dokumentbild: "safespring_card_20.jpg"
 general: "yes"
+TOC: "På denna sida"
 ---
 
-{{< ingress >}}
-Safespring tar emot och lagrar uppgifterna som skrivs in i de kontaktformulär som finns på webbplatsen safespring.com och våra landningssidor där detta dokument finns i anslutning till formuläret.
-{{</ ingress >}}
+*För information om hur vi arbetar med dataskyddsåtgärder i våra tjänster, besök i stället [vår sida om GDPR i molnet](/gdpr).*
 
-Det innebär att vi behandlar dina personuppgifter för att kunna komma i kontakt med dig, och/eller skapa användarkonton kopplade till våra tjänster (”Ändamålet”). De uppgifter vi behandlar för Ändamålet är normalt ditt namn, din e-mailadress, ditt telefonnummer, din titel och din arbetsgivare (”Personuppgifterna”).
+### Vårt företag
+Safespring AB, org. nr. 559075–0245, är ett svenskt företag med huvudkontor i Stockholm och ett dotterbolag i Norge. Vi levererar molntjänster baserade på OpenStack och CEPH från flertalet datacenter i Sverige och Norge. Vårt huvudkontor ligger på Rättarvägen 3, 169 68 Solna.
 
-{{% note "Note" %}}
-Safespring AB, org. nr. 559075–0245, är personuppgiftsansvariga för behandlingen av Personuppgifterna.
+### Insamling av personuppgifter
+Safespring samlar in och tar emot personuppgifter främst från privatpersonen själv. Vi lagrar uppgifter som skrivs in i kontaktformulär på safespring.com och andra landningssidor. 
+
+Vi lagrar också uppgifter som vi tar del av när personer anmäler sig till våra evenemang eller webinarier. Vid affärsrelationer behöver vi samla in sådana personuppgifter som krävs för fakturering, administrativ kontakt och kontoadministration.
+
+### Vilka uppgifter samlar vi in och varför
+Uppgifterna som samlas in på det här sättet är huvudsakligen kontaktuppgifter. Bara i undantagsfall kan är detta något annat än ditt namn, din e-mailadress, ditt telefonnummer, din titel och eventuellt din arbetsgivare. Om vi undantagsvis samlar in även annan information framgår det i anslutning till insamlingen.
+
+Syftet med att samla in uppgifterna är att kunna kontakta dig i framtiden, med information om vårt företag och våra produkter, framtida evenemang eller för att undvika att problematiska deltagare (till exempel spammare) dyker upp vid våra webbaserade evenemang.
+
+### Rättslig grund
+Den rättsliga grunden för vår insamling är dels samtycke, dels berättigat intresse. För överföringar till tredjeland är det antingen samtycke eller standardavtalsklausuler som är den rättsliga grunden.
+
+### Hur vi sparar dina uppgifter
+Vi sparar dina uppgifter i ett CRM tills dess att du ber oss ta bort uppgifterna därifrån. Vi använder automatiserade bokföringsverktyg som också lagrar dina uppgifter om du är kund eller leverantör och det behövs för våra relationer.
+
+Hur utövar jag min rätt att få uppgifter borttagna eller ändrade?
+
+Skriv till gdpr@safespring.com så löser vi det.
+
+### Överföringar till tredjeland
+Vissa av våra videomötestjänster överför uppgifter till tredjeland. Vårt CRM och vårt bokföringssystem använder sig också av molntjänster som har huvudkontor i länder utanför EU. Framför allt kontaktuppgifter till personer vi har en marknadsförings- eller kundrelation till kan alltså komma att flyttas till tredjeland.
+
+### Delning av personuppgifter
+Vi delar inte dina personuppgifter med tredjeparter.
+
+### Dina rättigheter i övrigt
+Om du har några frågor om dina rättigheter får du gärna kontakta oss på gdpr@safespring.com.
+
+Du har en rätt att göra invändningar mot vår behandling av dina uppgifter och be att vi slutar med den behandlingen. Du har också rätt att få reda på vilka uppgifter vi har om dig, och att ta del av de uppgifterna. Vi förbehåller oss rätten att inte agera på en förfrågan om det vore uppenbart orimligt givet arbetsbördan, eller om vi saknar tillräcklig information för att förstå vem du som riktar frågor mot oss är och hur vi kan hjälpa dig.  Slutligen har du rätt att inge klagomål till Integritetsskyddsmyndigheten.
+
+### Särskild information om webbkakor
+Vi har särskild information om webbkakor på den här sidan: https://www.safespring.com/dokument/cookies/
+
+{{% note "personuppgiftsbiträdesavtal" %}}
+För mer information om vårt personuppgiftsbiträdesavtal, ta kontakt med din kundkontakt.
 {{% /note %}}
-
-
-### Legal grund
-Den legala grunden för behandlingen av Personuppgifterna för Ändamålet är vårt berättigade intresse att på ett effektivt sätt kunna marknadsföra de tjänster vi erbjuder. Personuppgifterna lagras på ett säkert sätt i linje med vår affärsmodell och du har rätt att när som helst be os radera Personuppgifterna och/eller ange att du inte vill bli kontaktad av oss. Vi kommer att behandla Personuppgifterna så länge du godkänner det. Då behandlingen upphör raderas Personuppgifterna.
-
-### Dina rättigheter
-Om du har några frågor avseende vår behandling av Personuppgifterna, bör dessa ställas till oss via e-postadress gdpr@safespring.com. Dessa kontaktuppgifter kan även användas om du önskar att utöva någon av dina rättigheter enligt dataskyddsförordningen (2016/ 679). Dessa rättigheter är inte absoluta och en begäran om utövande av rättigheterna resulterar därför inte alltid i någon åtgärd. Rättigheterna i dataskyddsförordningen inkluderar:
-
-- {{< inline "Rätt till tillgång" >}} Enligt artikel 15 i dataskyddsförordningen har du rätt att få tillgång till Personuppgifterna samt viss information rörande behandlingen av Personuppgifterna. Den informationen framgår av detta dokument.
-- {{< inline "Rätt till rättelse" >}} Enligt artikel 16 i dataskyddsförordningen har du rätt att få Personuppgifterna rättade om de är felaktiga och kompletterade om de är ofullständiga.
-- {{< inline "Rätt till radering" >}} Under vissa omständigheter har du enligt artikel 17 i dataskyddsförordningen rätt att få dina personuppgifter raderade. Detta är den så kallade ”rätten att bli bortglömd”.
-- {{< inline "Rätt till begränsning av behandling" >}} Under vissa omständigheter har du enligt artikel 18 i dataskyddsförordningen rätt att begränsa den behandling som vi vidtar.
-- {{< inline "Rätt till dataportabilitet" >}} Enligt artikel 20 i dataskyddsförordningen har du rätt att få ut dina personuppgifter (eller få dem överförda till en annan personuppgiftsansvarig) i ett strukturerat, allmänt använt och maskinläsbart format.
-- {{< inline "Rätt att göra invändningar" >}} Enligt artikel 21 i dataskyddsförordningen har du rätt att invända mot vårt berättigade intresse. I sådana fall kommer vi att upphöra med behandlingen av Personuppgifterna för Ändamålen. Safespring vill att du är medveten om rätten att göra invändningar då den enligt dataskyddsförordningen är en särskilt viktig rättighet.
-
-Slutligen har du rätt att inge klagomål till Datainspektionen.
-
-## Kontaktinformation
-### Safespring
-[gdpr@safespring.com](mailto:gdpr@safespring.com)
-
-### Datainspektionen
-[datainspektionen@datainspektionen.se](mailto:datainspektionen@datainspektionen.se)</br>
-Telefon: [+46(0)‭8-657 61 00](tel:+4686576100).‬
