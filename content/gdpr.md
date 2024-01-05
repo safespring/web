@@ -38,7 +38,7 @@ Vi tolkar detta som en positiv skyldighet att inte bara själva implementera sä
 
 
 
-{{% accordion title="Logghantering och Säkerhetsåtgärder" id="1" %}}
+{{% accordion title="Logghantering och säkerhetsåtgärder" id="1" %}}
 
 Skydd mot intern och extern aktiv/aggressiv expertis: Safespring har för närvarande effektiv debug och systemloggning.  
 
@@ -59,7 +59,7 @@ Vår rekommendation är att använda etablerade branschverktyg för intrångsdet
 
 
 
-{{% accordion title="Användarhantering och Åtkomstkontroll" id="2" %}}
+{{% accordion title="Användarhantering och åtkomstkontroll" id="2" %}}
 
 Skydd mot intern Passiv/Neutral Expert: För att hantera risker associerade med anställdas misstag eller rolländringar, hanterar Safespring användaråtkomst noggrant. Alla konton måste vara individuella.
 
@@ -97,7 +97,7 @@ Vår rekommendation är att upprätta en "zero-knowledge" arkitektur, där data 
 
 
 
-{{% accordion title="Backup och Återställning" id="4" %}}
+{{% accordion title="Backup och återställning" id="4" %}}
 
 Skydd mot fysisk och teknisk incidenthantering: Safespring implementerar viktiga åtgärder för att säkerställa tillgänglighet och återställning av kunddata. Vi erbjuder en robust backup-lösning för våra interna tjänster och miljöer, men det är viktigt att notera att vi inte säkerhetskopierar kundinmatad data. Kunder uppmanas att själva säkerställa säkerhetskopiering av sitt data för att kunna återställa tillgängligheten och tillgången till personuppgifter vid behov. Vår backup-tjänst är ett värdefullt tillval som underlättar för kunder att uppfylla denna rekommendation.
 
@@ -117,7 +117,7 @@ Vår rekommendation är att aktivt hantera säkerhetskopiering och redundans av 
 
 
 
-{{% accordion title="Säkerhetsrevision och Policy Uppdatering" id="5" %}}
+{{% accordion title="Säkerhetsrevision och policy uppdatering" id="5" %}}
 
 Policydokument och Revisioner: Safespring har flera policydokument och säkerhetsguider, vilket gör  att vi regelbundet uppdaterar och reviderar våra säkerhetspolicyer.
 
