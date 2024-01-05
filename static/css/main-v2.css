@@ -7112,7 +7112,14 @@ justify-content:flex-end;
 	order:2;
 	width:13vw !important;
 	right:12%;
+	transition: transform 0.3s ease;
 }
+
+.badge:hover {
+	transform: scale(1.05);
+}
+
+
 .content-summary-index {
 	order:3;
 	flex-basis:100%;
