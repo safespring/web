@@ -151,7 +151,7 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 
 
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Det finns ett värde i att kritisk infratruktur finns på plats i Sverige där vi inte är beroende av andra länders lagtiftningar...“ – Ebba Kreamer, Scaleout" >}}
 
 
 
