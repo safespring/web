@@ -36,7 +36,7 @@ With this comes an ever-increasing amount of data being collected and analyzed, 
 
 Public cloud services with a simple billing model and collaboration features have solutions for these challenges but are hard to use for European researchers. This especially applies if the data produced by the project is somehow sensitive. There is always an option to run a private cloud solution but not all universities have an IT department staffed to implement and maintain such a solution, especially when it comes to establishing high standards of physical data center security and other administrative processes.
 
-By growing accustomed to modern cloud storage services, the researchers have a good idea what they want but no way of achieving it and still be compliant to GDRP or other European legislations.
+By growing accustomed to modern cloud storage services, the researchers have a good idea what they want but no way of achieving it and still be compliant to GDPR or other European legislations.
 
 ![Sunet Drive is perfect for collaboration](/img/documents/safespring-sunet-drive.jpg)
 
