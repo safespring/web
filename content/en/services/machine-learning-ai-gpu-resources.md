@@ -16,22 +16,28 @@ sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
 ---
 
-![Safespring provides STACKn, a fully managed PostgreSQL service that runs on our infrastructure.](/img/graphics/safespring-stackn_serve_overview.webp)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-brain" text="Advanced Machine Learning" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-users-cog" text="Collaborative Environment" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-lock" text="Data Privacy and Security" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-network-wired" text="Federated Learning" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-cloud" text="Cloud-based Integration" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="GDPR Compliance" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
-Safespring provides STACKn, a fully managed PostgreSQL service that runs on our infrastructure. 
+Safespring, in collaboration with Scaleout Systems, offers STACKn, a comprehensive platform for machine learning and AI development.
 {{< /ingress >}}
 
-STACKn is a lightweight machine learning platform for data science that allows researchers to collaborate on ML projects where they can share datasets, work in Notebook environments, track experiments, and serve ML models. STACKn also allows users to distribute models and apps in public or private catalogs to share model endpoints and custom dashboards. STACKn is a cloud service built on Safespring Compute.
+STACKn is a robust platform for data scientists, offering tools for collaboration, experiment tracking, and model deployment. It's built on Django, ensuring secure project management with user authentication and permissions. STACKn's features include:
 
-STACKn is a Django framework that implements project-based multi-user management, authentication, authorization, and object-level permissions for popular data science tools based on open source. An intuitive user interface allows users to create private or shared projects where different assets are distributed:
+- **Storage Management**: Secure project and user-level data storage solutions.
+- **Customizable Environments**: Docker-based environments for tailored ML development.
+- **Interactive Notebooks**: Support for Jupyter, RStudio.
+- **Experiment Tracking and Model Registry**: Integrated with MLFlow, TensorFlow Serving, and others.
+- **Model Catalog**: Organize and share models with controlled access.
+- **Dashboards/Apps**: Deploy Dash, Flask, RShiny interfaces for interactive applications.
 
-- **Storage**: manage private and shared storage volumes and object storage. Control access at project and user level.
-- **Environments**: configure Docker environments and project templates to create custom workspaces for ML development.
-- **Notebooks**: Jupyter notebooks, RStudio
-- **Experiment Tracking**: MLFlow
-- **Model Registry and Serving**: MLFlow, Tensorflow Serving, PyTorch Serve, and MLFlow Serve.
-- **Model Catalog**: publish and organize models in a catalog, with permission control at the model level.
-- **Dashboards/Apps**: easily distribute and host Dash, Flask, and RShiny UIs and apps.
+STACKn, with its GDPR-compliant framework, is ideal for secure, scalable machine learning projects, leveraging Safespring's robust infrastructure.
 
-STACKn is highly customizable and is the best cloud-based platform for machine learning in data science in Sweden, with a focus on GDPR compliance as it is built on Safespring IaaS.
+[For more details, visit the STACKn GitHub page](https://github.com/scaleoutsystems/stackn)
