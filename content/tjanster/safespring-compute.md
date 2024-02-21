@@ -11,7 +11,7 @@ draft: false
 intro: "Med Safespring får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt levereras från säkra datahallar inom Sverige."
 cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, svensk IaaS."
 background: "safespring-compute-background.svg"
-form: "yes"
+form: ""
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo"
 sidebarlinkname2: "Pris för Compute"
@@ -23,6 +23,7 @@ aliases:
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
+TOC: "På denna sida"
 ---
 
 <video style="border-radius: 15px;" id="myVideo" controls>
@@ -51,13 +52,16 @@ megamenu: "yes"
   });
 </script>
 
-## Virtuella maskiner som tjänar ert företag
-
+## 
 {{< ingress >}}
-Upptäck en flexibel IT-lösning som skapar möjligheter istället för att binda upp kapital.
+Safespring Compute erbjuder en kraftfull och flexibel Infrastruktur som Tjänst (IaaS) från en helt svensk molnplattform. 
 {{< /ingress >}}
 
-Med Safespring kan du skapa, starta och stoppa virtuella maskiner med bara några få enkla steg. Det är enkelt att anpassa efter dina behov tack vare vår självbetjäning och fullständiga automation.
+Vår tjänst möjliggör skapandet av virtuella maskiner med olika "flavors" för att erbjuda både flexibilitet och kostnadseffektivitet, utan det krångel och de höga kostnader som kommer med att utveckla en egen plattform.
+
+Med Safespring Compute kan du enkelt och smidigt skapa, starta och stoppa virtuella maskiner via vårt API, med bara några få klick. Vår plattform är utformad för att vara lättanvänd, med självbetjäning och helt automatiserade processer, vilket gör det enklare än någonsin att skräddarsy din IT-infrastruktur efter just dina behov.
+
+Vår prissättningsmodell är transparent och flexibel, där du endast betalar för de resurser du använder, timme för timme. Detta tillvägagångssätt maximerar din kostnadseffektivitet och ger dig möjlighet att dynamiskt anpassa både kapacitet och budget.
 
 {{< readfile "Vad är IaaS?" "/content/read-more/iaas-vs-colocation.md" >}}
 
@@ -84,17 +88,52 @@ Med Safespring Compute får du tillgång till marknadsledande molnteknologi dire
 
 {{< distance >}}
 
-![Safespring Compute benefits](/img/safespring-compute-central-blocklagring.svg)
+## Två typer av flavors
+
+Safespring Compute erbjuder en rad olika flavors med olika kombinationer av RAM, vCPU och lagringsalternativ anpassade för dina behov. Oavsett om du behöver ultrahög hastighet eller stora lagringsvolymer, har vi en lösning för dig.
+
+### Flavors med central blocklagring
+
+Våra virtuella servrar kan kopplas till en central blocklagring, vilket ger en robust och skalbar lagringslösning. Vi erbjuder två typer av lagringskluster:
+
+- **Fast:** Byggt med SSD-teknik för snabba åtkomst- och skrivtider, perfekt för applikationer som kräver hög prestanda.
+- **Large:** Använder traditionella mekaniska diskar (typ SATA) för att erbjuda stora lagringsvolymer till ett förmånligt pris. Idealiskt för stora datamängder som inte kräver samma åtkomsthastighet som SSD.
+
+All data i våra kluster sparas automatiskt i tre kopior inom ett Ceph-kluster, vilket ger hög tillförlitlighet och datatillgänglighet.
+
+![Safespring Compute benefits](/img/safespring-flavors.svg)
+
+### Flavors med lokal NVMe-lagring
+
+För de som söker det absolut snabbaste lagringsalternativet erbjuder vi servrar med lokal NVMe-disk. Denna teknik ger oslagbar hastighet för läsning och skrivning, vilket är idealiskt för de mest krävande applikationerna.
+
+Oavsett vilket lagringsalternativ du väljer, är säkerheten för din data vår högsta prioritet. Vi erbjuder rådgivning och lösningar för att säkerställa att din data är skyddad, inklusive rekommendationer för backup-strategier och dataskydd.
+
+{{% disclaimer "NVME sparas i ett exemplar" %}}
+Det är dock viktigt att notera att data lagrat på NVMe-disken finns i endast ett exemplar. Om disken går sönder kan datat gå förlorat. Vi rekommenderar därför starkt att komplettera med egna backuper eller kopplingar till våra lagringskluster för att säkerställa datans säkerhet.
+{{% /disclaimer %}}
 
 {{< distance >}}
 
-### Samarbeta effektivt med Safespring Compute
-Vår tjänst underlättar samarbete mellan olika avdelningar eller grupper, förenklar IT-hantering och tillför effektivitet till din organisation.
 
-### Byggt på öppen källkod
-Safespring Compute är byggd på Open Source, vilket möjliggör för företag och organisationer att dela på produktutvecklingen och innovation. Detta gynnar alla parter - företag, organisationer och slutanvändare.
+## Styrkan hos Safespring
 
-### OpenStack och Kubernetes
+Safespring Compute erbjuder inte bara robusta och skalbara molnlösningar, utan även en plattform byggd med fokus på digital suveränitet, öppna standarder och öppen källkod. Detta säkerställer att våra kunder får tillgång till en flexibel och framtidssäker infrastruktur som skyddar deras data samtidigt som den främjar innovation och samarbete.
+
+### Digital suveränitet
+
+I en värld där data är en av de mest värdefulla tillgångarna, är digital suveränitet avgörande för att säkerställa kontroll och integritet. Safespring Compute ger våra kunder möjligheten att behålla full kontroll över sin data, med garantier om att den lagras och hanteras inom Sveriges gränser. Detta ger inte bara juridisk klarhet men också en ökad trygghet i att känslig information skyddas enligt högsta möjliga standarder.
+
+### Öppna standarder
+
+Genom att anamma öppna standarder försäkrar Safespring Compute interoperabilitet och flexibilitet i teknologilandskapet. Detta tillåter våra kunder att enkelt integrera och samarbeta med ett brett spektrum av applikationer och tjänster, utan att låsas till en specifik leverantör eller plattform. Öppna standarder bidrar till en mer hållbar och tillgänglig IT-miljö, där innovation kan blomstra.
+
+### Öppen källkod
+
+Safespring Compute bygger på principen om öppen källkod, vilket möjliggör en transparent och samarbetsdriven utvecklingsprocess. Genom att använda och bidra till öppen källkodsprojekt, kan våra kunder dra nytta av de senaste innovationerna, samtidigt som de bidrar till en större gemenskap. Öppen källkod underlättar anpassning och optimering av tjänster, vilket säkerställer att de exakt möter kundernas unika behov och krav.
+
+
+## OpenStack och Kubernetes
 OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.
 
 Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
