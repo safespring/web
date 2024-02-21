@@ -29,7 +29,7 @@ cardintro: ""
 ## Svensk infrastruktur som tjänst
 
 {{< ingress >}}
-Behåll kontrollen med digital suveränitet, öppna standarder och öppen källkod
+Behåll kontrollen med digital suveränitet, öppna standarder och öppen källkod.
 {{</ ingress >}}
 
 Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta den kostnadseffektivitet, flexibilitet som moln- och infrastrukturtjänster ger.
