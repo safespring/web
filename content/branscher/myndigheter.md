@@ -8,7 +8,7 @@ intro: "Safespring går att upphandla genom Kammar­kollegiets ramavtal programv
 background: "safespring-government-background.svg"
 aliases:
     - /myndighet/
-sidebarlinkurl: "/webinar/forth-fireside-chat-it-sakerhetsbolaget/"
+sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
 sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"
 cardtitle: "Myndigheter"
@@ -25,6 +25,25 @@ cardintro: ""
     {{< icon-block icon="fa-kit fa-private-cloud" text="Private Cloud" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
+
+## Svensk infrastruktur som tjänst
+
+{{< ingress >}}
+Behåll kontrollen med digital suveränitet, öppna standarder och öppen källkod.
+{{</ ingress >}}
+
+Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta den kostnadseffektivitet, flexibilitet som moln- och infrastrukturtjänster ger.
+
+Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla GDPR och Dataskyddsförordningen.
+
+{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
+Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
+
+{{< inline "Ring" >}} +46 (0)76 868 00 59 
+daniel.melin@safespring.com
+{{% /custom-card %}}
+
+{{< distance >}}
 
 ## Ramavtal
 
@@ -50,13 +69,7 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja 
 
 {{< video-myndighet >}}
 
-{{< ingress >}}
-Ta tillbaka kontrollen och få digital suveränitet
-{{</ ingress >}}
-
-Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta den kostnadseffektivitet, flexibilitet som moln- och infrastrukturtjänster ger.
-
-Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla GDPR och Dataskyddsförordningen.
+{{< distance >}}
 
 ## White paper
 

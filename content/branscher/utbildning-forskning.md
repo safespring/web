@@ -67,9 +67,9 @@ För att handla Safesprings tjänster via OCRe-avtalet, kontakta Safespring dire
 
 Safesprings tjänster är redo att användas. Om du är inom akademisk sektor i Europa eller kopplad till Sunet eller Sikt, kan du enkelt använda vår molnplattform som redan är upphandlad enligt OCRE-avtalet.
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
+{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
+Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21  
-petter.hylin@safespring.com
+{{< inline "Ring" >}} +46 (0)76 868 00 59 
+daniel.melin@safespring.com
 {{% /custom-card %}}
