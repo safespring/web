@@ -1,5 +1,5 @@
 ---
-Title: "Team Lead for our container platform team"
+Title: "Engineer for our container platform team"
 intro: "To plan for future expansion of our offerings, we are looking for a team lead for our new platform services team."
 Team: "Container platform"
 Location: "Remote (Sweden or Norway)"
@@ -17,58 +17,50 @@ sidebarimage: "safespring-kubernetes.svg"
 ---
 
 {{< ingress >}}
-Join Safespring as our Tech Team Lead for the container platform team, where innovation meets leadership.
+Join Safespring as a Platform Engineer and contribute to building our cutting-edge Kubernetes-based container platform. 
 {{< /ingress >}}
 
-In this key role, you'll guide the development and operation of our Kubernetes-based container platform, directly impacting our mission to deliver local and sustainable cloud services. 
-
-With a focus on open-source technology and a passion for continuous improvement, you'll lead a talented team towards creating seamless CI/CD experiences. This is an exciting opportunity to contribute to a fast-growing company at the forefront of cloud technology, fostering a culture of transparency, innovation, and collaboration. If you're ready to make a significant impact in a dynamic environment, we're looking for you.
+In this role, you'll help build, operate, and refine our service, directly impacting our sustainable cloud solutions. Ideal for those passionate about open-source and collaborative innovation, you'll work closely with our tech lead, aligning with strategic goals. Safespring values a supportive, agile environment—perfect for forward-thinkers eager to shape the future of cloud technology.v
 
 ## Leadership Dynamics
 
-- **Reporting Structure:** The Tech Team Leadreports to the Chief Product Officer during the build-up of the service and the Chief Technical Officer when in production.
+- **Reporting Structure:** The Platform Engineer directly reports to the Platform Tech Lead.
 - **Language Requirement:** English is the working language.
 
 ## About the position
 
-A platform engineer in the Safespring platform team contributes to the building, operation and continuous improvement of the Safespring container platform product.
+A platform engineer in the Safespring platform team contributes to the building,
+operation and continuous improvement of the Safespring container platform product.
 
 Currently, the platform is being built with the Community Distribution of Kubernetes that powers Openshift (OKD). Other variants of Kubernetes may be introduced later. The platform team will build, maintain and operate the container service from scratch on top of Safespring's production IaaS.
 
 The product is built and operated by consuming Safespring's IaaS products, OpenStack and CEPH, and the container team has the sole responsibility for upholding the service level objectives set forth by the engineering and product management.
 
-The work should synchronize well with the product strategy of the container platform. The main synchronization point for daily work will be with the tech lead for the container platform; however, we also expect the platform engineers to exhibit a self-driven mindset and actively suggest and contribute to the progress of the platform according to the overall strategy of the product and the company as whole.
+The work should synchronize well with the product strategy of the container platform. The main synchronization point for daily work will be with the tech lead for the container platform, however, we also expect the platform engineers to exhibit a self driven mind set and actively suggest and contribute to the progress of the platform according to the overall strategy of the product and the company as whole.
 
 Safespring is a small company, and we operate as a family where we help each other and contribute where needed most at any time. It is expected that priorities might change over time.
 
 ### Responsibilities
 
-The platform tech lead is responsible for actively progressing the customer experience of our container platform offering by aligning with the overall product and company strategy and providing mentoring, context and priorities to team members to unblock them and create progress.
+The platform engineer is responsible for actively progressing the customer experience of our container platform offering in coordination with the tech lead and other team members. We expect that individual contributors in the container platform team:
 
-- Lead discussions and set direction to progress the team's understanding of what is needed.
-- Foster a culture of transparency, learning and trust without blame.
-- Strategically select experiments for maximizing team learning about customer needs and the product development cycle.
-- Foster a culture of transparency, learning and traceability in work- and decision processes by actively documenting intention and learning points in our work management system (JIRA) and link code changes by referencing pull requests and commits to work descriptions.
-- Suggest experiments for progressing work processes and tooling to support the above goals better.
-- When in production: 
-  - Plan for staffing support and on-call
-  - Maintain the vacation plan for the team.
-  - Ensure that the team follows and participates in improving relevant procedures, policies and processes.
+- Actively participate in discussions and seek help and advice to progress their own and the team's understanding of what is needed. Working in pairs will often be a preferred approach.
+- Needs will be surfaced by consciously experimenting and learning from customer feedback, filtering it through our knowledge about technology, its possibilities and constraints and by measuring experiment outcomes to learn.
+- Provide transparency and traceability in work- and decision processes by actively documenting intention and learning points in our work management system (JIRA) and link code changes by referencing pull requests and/or commits to work descriptions.
 
 ### Desired Expertise
 
 We expect that the candidate has experience with at least a subset of the following aspects.
 
-- A passion for building, leading and learning with a high-performing autonomous technical container platform team
-- An open-source software engineering mindset.
+- An open-source software engineering mindset and experience working in engineering teams
 - A passion for enabling users of Kubernetes to efficiently manage their containerized application lifecycle with the lowest possible effort.
 - Kubernetes (K8S). Familiarity with the OKD/Openshift "distribution" of K8S is an advantage.
-- Experience with CI/CD tools like ArgoCD, Flux, and secure secret handling within K8S and CI/CD context.
-- K8S deployment tools like Helm, Kustomize, etc
+- CI/CD tools like ArgoCD, Flux, and secure secret handling within K8S and CI/CD context.
+- K8s deployment tools like Helm, Kustomize etc
 - Development and usage of Kubernetes operators.
-- Ability to utilize IaaS through API automation only, and preferably experience with the OpenStack APIs.
+- Ability to utilize IaaS by means of API automation only, and preferably experience with the OpenStack APIs.
 - Infrastructure as code (IaC) and configuration management tools like Terraform, Ansible, Cfengine, Puppet, etc.
-- General networking knowledge (IPv4/6, routing, bridging, VPN overlays like Wireguard. )
+- General networking knowledge (IPv4/6, routing, bridging, VPN-overlays like wireguard.)
 - Performance and capacity management in a containerized context.
 - Monitoring and observability in a containerized context, with tools like Prometheus, Grafana and Alertmanager
 - Knowledge of security challenges and tooling in a container management context.
