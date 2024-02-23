@@ -6,9 +6,9 @@ Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2024-02-20"
-sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
-sidebarlinkname: "Upload Resume"
-sidebarlinkicon: "fa-external-link-alt"
+sidebarlinkurl: "mailto:jarle.bjorgeengen@safespring.com?subject=Engineer%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email."
+sidebarlinkname: "Send Resume"
+sidebarlinkicon: "fa-paper-plane-top"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
@@ -84,4 +84,7 @@ Safespring is a pioneer in providing cloud services that emphasize digital sover
 
 If you are ready to join a fast-paced, innovative company and play a vital role in the development of cutting-edge infrastructure services, please submit your application today! We look forward to hearing from you.
 
-{{% localbutton "upload application" "https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
+{{% localbutton "Send Resume" "mailto:jarle.bjorgeengen@safespring.com?subject=Engineer%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email." %}}
+
+
+
