@@ -1,1 +1,5 @@
 User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Allow: /
+Sitemap: https://www.safespring.com/sitemap.xml
