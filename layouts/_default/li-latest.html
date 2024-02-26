@@ -1,9 +1,9 @@
 <a href="{{ .RelPermalink }}">
   <div class='fill-available-space img-250 pointer {{ if eq .Section "webinar" }}blue-hover-webinar flex-center{{ else }}{{ if eq .Section "solution-brief" }}blue-hover-whitepaper flex-center{{ else }}{{ if eq $.Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex{{ else }}blue-hover-blogg flex-center{{ end }}{{ end }}{{ end }}'>
     {{ if eq $.Params.section "blogg" }}
-    <img class="lazyload" src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">
+    <img class="lazyload" loading="lazy" src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">
     <div class="blogg-card-tagg-container">
-      <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
+      <img class="blogg-card-flag" loading="lazy" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
       <span class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px">{{ if (eq .Params.language "En") }}Blog{{ else if (eq .Params.language "No") }}Blogg{{ else }}Blogg{{ end }}</span>
     </div>
     <div class="blogg-card-wapper">
@@ -12,7 +12,7 @@
       <span class="text-button">{{ if (eq .Params.language "En") }}Read post{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs inlägg{{ end }}</span>
     </div>
     {{ else }}{{ if eq $.Params.section "Tech update" }}
-    <img class="lazyload tech-card-image" src="/img/blogg/cards/safespring-tech-update.svg" alt="{{ .Title }}">
+    <img class="lazyload tech-card-image" loading="lazy" src="/img/blogg/cards/safespring-tech-update.svg" alt="{{ .Title }}">
     <div class="tech-update-card-content">
       <div class="blogg-card-tagg-container-tech">
         <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
@@ -26,7 +26,7 @@
         </div>
       </div>
       {{ else }}{{ if eq .Section "webinar" }}
-      <img class="lazyload" src="{{ .Params.card }}" alt="{{ .Title }}">
+      <img class="lazyload" loading="lazy" src="{{ .Params.card }}" alt="{{ .Title }}">
       <div class="blogg-card-tagg-container-webinar">
         <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
         <span class="blogg-card-section-webinar mb-0 font-weight-medium text-uppercase text-muted lts-1px">Webcast</span>
@@ -37,9 +37,9 @@
         <div class="webinar-card-link">Play</div>
       </div>
       {{ else }}{{ if eq .Section "solution-brief" }}
-      <img class="lazyload" src="/img/card/{{ .Params.card }}" alt="{{ .Title }}">
+      <img class="lazyload" loading="lazy" src="/img/card/{{ .Params.card }}" alt="{{ .Title }}">
       <div class="blogg-card-tagg-container-solution-brief">
-        <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
+        <img class="blogg-card-flag" loading="lazy" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
         <span class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px">Solution brief</span>
       </div>
       <div class="blogg-card-wapper">
