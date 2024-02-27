@@ -35,4 +35,4 @@ Detta white paper tar upp förutsättningarna efter domen och rekommendationer t
 - olika svenska aktörers roll för vidareutvecklingen av denna marknadsstruktur och särskilt behovet av koordinering av insatser på statlig nivå (del III)
 - och en kort beskrivning av vägen framåt (del IV).
 
-{{< localbutton "Les White Paper" "/schrems2"}}
+{{< localbutton "Les White Paper" "/schrems2" >}}
