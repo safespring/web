@@ -15,7 +15,7 @@
 	--hind-font-semibold:"Hind SemiBold", sans-serif;
 	--mon-font:"Montserrat", sans-serif;
 	--extra-light-weight:100;
-	--light-weight:100;
+	--light-weight:200;
 	--hind-light-weight:300;
 	--normal-weight:400;
 	--medium-weight:500;
@@ -2710,7 +2710,7 @@ background-color:white;
 }
 
 .ingress p {
-	font:var(--light-weight) 25px var(--mon-font);
+	font:var(--extra-light-weight) 25px var(--mon-font);
 	margin-bottom:30px;
 	line-height:1.25;
 	color:#000;
