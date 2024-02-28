@@ -5,35 +5,30 @@
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
     var videoSrc = "{{ .Get 0 | safeURL }}";
-    var loaded = false;
 
-    video.addEventListener('click', function() {
-        if (!loaded) {
-            loaded = true; // Sätt denna tidigt för att förhindra flera laddningar
-            // Dynamiskt ladda hls.min.js
-            var script = document.createElement('script');
-            script.src = "/js/hls.min.js";
-            document.head.appendChild(script);
+    // Ladda direkt hls.min.js
+    var script = document.createElement('script');
+    script.src = "/js/hls.min.js";
+    document.head.appendChild(script);
 
-            script.onload = function() {
-                // När scriptet är laddat, använd Hls för att spela videon
-                if (Hls.isSupported()) {
-                    var hls = new Hls();
-                    hls.loadSource(videoSrc);
-                    hls.attachMedia(video);
-                    hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                        video.play();
-                    });
-                    hls.on(Hls.Events.ERROR, function (event, data) {
-                        console.error('Error event:', event, 'Data:', data);
-                    });
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = videoSrc;
-                    video.play();
-                }
-            };
+    script.onload = function() {
+        // När scriptet är laddat, använd Hls för att spela videon
+        if (Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource(videoSrc);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                // Om du vill att videon ska spelas automatiskt, avkommentera nästa rad
+                // video.play();
+            });
+            hls.on(Hls.Events.ERROR, function (event, data) {
+                console.error('Error event:', event, 'Data:', data);
+            });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = videoSrc;
+            // Om du vill att videon ska spelas automatiskt, avkommentera nästa rad
+            // video.play();
         }
-    });
+    };
 });
-
 </script>
