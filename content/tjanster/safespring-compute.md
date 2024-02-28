@@ -25,31 +25,7 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-<video style="border-radius: 15px;" id="myVideo" controls>
-  Your browser does not support the video tag.
-</video>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var video = document.getElementById('myVideo');
-    var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8";
-    if (Hls.isSupported()) {
-      var hls = new Hls();
-      hls.loadSource(videoSrc);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, function() {
-        video.play();
-      });
-      hls.on(Hls.Events.ERROR, function (event, data) {
-        console.error('Error event:', event, 'Data:', data);
-      });
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = videoSrc;
-      video.addEventListener('canplay', function() {
-        video.play();
-      });
-    }
-  });
-</script>
+{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" >}}
 
 ## Virtuella maskiner som tjänar ert företag
 
@@ -98,14 +74,3 @@ Safespring Compute är byggd på Open Source, vilket möjliggör för företag o
 OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.
 
 Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
-
-{{< distance >}}
-
-{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Diskutera Compute över en lunch med vår VD" %}}
-Låt oss diskutera hur Safespring kan stärka ditt företag. Boka en lunch med mig idag!
-
-{{< inline "Ring" >}} +46 76-629 25 02
-fredric.wallsten@safespring.com
-{{% /custom-card %}}
-
-{{< distance >}}

@@ -1,0 +1,16 @@
+<div class="webinarvideo">
+  <video class="webinar-videoplayer" id="myVideo" controls src="{{ .Get 0 | safeURL }}">
+  Your browser does not support the video tag.
+</video>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('myVideo');
+
+    if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource(video.getAttribute('src'));
+        hls.attachMedia(video);
+    }
+});
+</script>
+</div>
