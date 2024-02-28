@@ -74,14 +74,3 @@ Safespring Compute är byggd på Open Source, vilket möjliggör för företag o
 OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.
 
 Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
-
-{{< distance >}}
-
-{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Diskutera Compute över en lunch med vår VD" %}}
-Låt oss diskutera hur Safespring kan stärka ditt företag. Boka en lunch med mig idag!
-
-{{< inline "Ring" >}} +46 76-629 25 02
-fredric.wallsten@safespring.com
-{{% /custom-card %}}
-
-{{< distance >}}
