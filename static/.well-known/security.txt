@@ -15,3 +15,6 @@ Preferred-Languages: sv, no, en
 
 # Canonical URL for this security.txt file
 Canonical: https://www.safespring.com/.well-known/security.txt
+
+# Expiration date for this file
+Expires: 2025-12-31T23:59:59Z
