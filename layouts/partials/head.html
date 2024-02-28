@@ -6,9 +6,12 @@
   <meta charset="utf-8">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/main-v2.css" type="text/css">
-  <!-- Fonts -->
-  <script defer src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/css/main-v2.css" >
+
+  <!-- Fonts-->
+  <link rel="stylesheet" type="text/css" href="/fonts/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/fonts/solid.min.css">
+  <link rel="stylesheet" type="text/css" href="/fonts/custom-icons.min.css">
 
   <!-- Scripts -->
   <script defer src="//cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"></script>
@@ -35,6 +38,4 @@
   {{ else }}{{ end }}
 
   {{ partial "favicons.html" . }}
-
-  {{ "<!--[if IE]>" | safeHTML }}<meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">{{ "<![endif]-->" | safeHTML }}
-  </head> 
+  </head>
