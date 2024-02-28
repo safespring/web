@@ -1,4 +1,5 @@
-<video style="border-radius: 15px;" id="myVideo" controls src="{{ .Get 0 | safeURL }}">
+<div class="webinarvideo">
+  <video class="webinar-videoplayer" id="myVideo" controls src="{{ .Get 0 | safeURL }}">
   Your browser does not support the video tag.
 </video>
 <script>
@@ -12,3 +13,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 </script>
+</div>
