@@ -7317,6 +7317,9 @@ th:last-child {
 		font-weight:599;
 		color:var(--main-color);
 	}
+	td {
+	text-align:right !important;
+}
 }
 
 /* TABLE - END */
