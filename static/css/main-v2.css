@@ -251,7 +251,7 @@ margin-top:1px;
 }
 
 p, ol {
-	font:var(--normal-weight) 17px var(--mon-font);
+	font:300 17px var(--mon-font);
 	color:var(--alt-color);
 	line-height:1.5;
 }
