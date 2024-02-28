@@ -119,7 +119,6 @@ Our recommendation is to regularly update and revise their own security policies
 
 
 
-
 {{% accordion title="Redundancy" id="6" %}}
 
 Protection against physical and technical failure or ransomware

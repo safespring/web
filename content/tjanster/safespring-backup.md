@@ -61,7 +61,7 @@ I det fallet att ni redan har en backuplösning lokalt så går det också att a
 Skydda ditt företag med robust backup i molnet. Robust backup är nyckeln till att säkra ditt företags data, oavsett om de är på fysiska eller virtuella servrar.
 
 {{< inline "Ring" >}} +46 76-629 25 02
-fredric.wallsten@safespring.com
+hello@safespring.com
 {{% /custom-card %}}
 
 
