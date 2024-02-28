@@ -4,7 +4,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
-    var videoSrc = "{{ .Get 0 }}";
+    var videoSrc = "{{ .Get 0 | safeURL }}";
     var loaded = false;
 
     video.addEventListener('click', function() {
