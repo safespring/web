@@ -1,0 +1,17 @@
+# Our security contact
+Contact: hello@safespring.com
+
+# Our security policy
+Policy: https://www.safespring.com/en/documents/data-protection-policy/
+
+# Our status page
+Acknowledgments: https://status.safespring.com
+
+# Our career page
+Hiring: https://www.safespring.com/career/
+
+# Preferred languages
+Preferred-Languages: sv, no, en
+
+# Canonical URL for this security.txt file
+Canonical: https://www.safespring.com/.well-known/security.txt
