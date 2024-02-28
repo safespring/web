@@ -1566,7 +1566,6 @@ color:var(--unCheckedColor);
 }
 @media only screen and (max-width:900px) {
 	.webinar-videoplayer {
-		width: 90vw;
 		max-width: 100%;
 		height: 400px;
 		object-fit: cover;
