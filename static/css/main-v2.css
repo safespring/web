@@ -6236,7 +6236,6 @@ z-index:10;
 
 .button-white-border {
 	position:absolute;
-	text-align:center;
 	border-radius:50px;
 	background-color:transparent;
 	border:2.5px solid #FAFEFE;
@@ -6259,7 +6258,6 @@ z-index:10;
 	border-radius:50px;
 	background-color:var(--link-color);
 	padding:15px 30px 13px 30px;
-	text-align:center;
 	font:18px var(--hind-font-semibold);
 	color:var(--text-color);
 	text-transform:uppercase;
