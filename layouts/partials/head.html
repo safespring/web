@@ -7,10 +7,7 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="/css/main-v2.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
   <script defer src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous"></script>
 
   <!-- Scripts -->
@@ -20,7 +17,6 @@
   <script defer src="/js/text-balancer.js"></script>
   <script defer src="/js/hls.min.js"></script>
   <script defer src="/js/lite-yt-embed.js"></script>
-  <meta http-equiv="Content-Security-Policy" content="default-src *; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline'; img-src * data:; font-src * data:; connect-src *;">
   <meta property="og:title" content="Safespring | {{ .Title }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -41,25 +37,4 @@
   {{ partial "favicons.html" . }}
 
   {{ "<!--[if IE]>" | safeHTML }}<meta HTTP-EQUIV="REFRESH" content="0;URL={{ if.Params.explorer }}{{ .Params.explorer }}{{ else }}/explorer{{ end }}">{{ "<![endif]-->" | safeHTML }}
-    <script>
-      function loadCSS(href, before, media){
-        "use strict";
-        var ss = window.document.createElement("link");
-        var ref = before || window.document.getElementsByTagName("script")[0];
-        ss.rel = "stylesheet";
-        ss.href = href;
-        ss.media = "only x";
-        ref.parentNode.insertBefore(ss, ref);
-        setTimeout( function(){
-          ss.media = media || "all";
-        });
-        return ss;
-      }
-    </script>
-
-    <!-- Load non-critical CSS files asynchronously -->
-    <script>
-      loadCSS("https://vjs.zencdn.net/8.5.2/video-js.css");
-      loadCSS("/css/lite-yt-embed.css");
-    </script>
   </head> 
