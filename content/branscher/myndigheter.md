@@ -1,10 +1,10 @@
 ---
-title: "Safespring är en hållbar molnplattform och godkänd av GAIA-X"
+title: "Safespring är en helt svensk molnplattform"
 cardtitle: "Safespring för myndigheter"
 date: 2022-03-03T10:47:25+01:00
 card: "safespring_card_31.svg"
 draft: false
-intro: "Safespring går att upphandla genom Kammar­kollegiets ramavtal programvaru­lösningar."
+intro: "Safespring tillhandahåller säkra och hållbara molntjänster utan inlåsning"
 background: "safespring-government-background.svg"
 aliases:
     - /myndighet/
@@ -15,29 +15,33 @@ cardtitle: "Myndigheter"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
 cardintro: ""
+TOC: "På denna sida"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-gaiax" text="Öppna standarder" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-shield-halved" text="GDPR Compliant" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-file-contract" text="Flera ramavtal" link="" color="#555555">}}
-    {{< icon-block icon="fa-kit fa-private-cloud" text="Private Cloud" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-balance-scale" text="Juridisk säkerhet" link="#juridisk-säkerhet" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-leaf" text="Hållbarhet" link="#hållbarhet" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-handshake" text="Politisk säkerhet" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-code-branch" text="Öppna standarder" link="#öppna-standarder" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-file-signature" text="Ramavtal" link="#ramavtal" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="#öppen-källkod" color="#195F8C">}}
 {{< /icon-block-container >}}
 
-## Svensk infrastruktur som tjänst
+
+## Svenska molntjänster
 
 {{< ingress >}}
-Behåll kontrollen med digital suveränitet, öppna standarder och öppen källkod.
+Digital suveränitet genom svenska molntjänster byggd med öppna standarder och öppen källkod.
 {{</ ingress >}}
 
-Våra tjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta den kostnadseffektivitet, flexibilitet som moln- och infrastrukturtjänster ger.
+Våra molntjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta av den kostnadseffektivitet och flexibilitet som moderna molntjänster ger.
 
-Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla GDPR och Dataskyddsförordningen.
+Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att det långsiktigt är enkelt för er att uppfylla dataskyddsförordningen samt offentlighets- och sekretesslagen.
+
+{{< distance >}}
 
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
+Jag är ansvarig affärsutvecklare för akademisk och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
 
 {{< inline "Ring" >}} +46 (0)76 868 00 59 
 daniel.melin@safespring.com
@@ -48,38 +52,33 @@ daniel.melin@safespring.com
 ## Ramavtal
 
 {{< ingress >}}
-Safesprings tjänster går att upphandla genom befintliga ramavtal där vi är underleverantör.
+Safesprings tjänster går att avropa genom Statens inköpscentrals befintliga ramavtal, Informations­försörjning och Programvaru­lösningar, där vi är underleverantör.
 {{</ ingress >}}
 
-### Kammarkollegiet - Programvarulösningar
+Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att använda lagliga och lämpliga molntjänster.
 
-Ramavtalet omfattar programvara, publik molntjänst och privat molntjänst som används när kunds behov täcker mer än ett av ramavtalen Licensförsörjning, Systemutveckling, Informationsförsörjning samt Vård Skola Omsorg.
+## Safespring
+Upptäck molntjänster byggda på öppenhet, hållbarhet och säkerhet. Med vårt engagemang för öppna standarder och gröna datacenter, erbjuder vi en trygg och effektiv molnplattform. Läs vidare för att se vad som gör Safespring unikt.
 
-Ett exempel är när kund avropar molntjänst tillsammans med konsulttjänster. Ramavtalet omfattar även behov som helt eller delvis är utanför något av de andra uppräknade ramavtalen men omfattas av upphandlingsområdet Programvaror och tjänster.
+### Öppen källkod
+Alla Safesprings molntjänster är byggda med öppen källkodskomponenter eftersom dessa är branschstandard och är de tekniskt mest avancerade programvarorna som finns.
 
-Safespring är underleverantör till:
 
-[![Safespring är underleverantör till Redpill Linpro och Cybercom](/img/ramavtalspartners.svg)](https://www.avropa.se/ramavtal/ramavtalsomraden/it-och-telekom/Programvaror-och-tjanster/programvarulosningar/)
+### Öppna standarder
+Alla Safesprings molntjänster använder öppna standarder eftersom vi, till skillnad från flera av våra konkurrenter, inte tror på leverantörsinlåsning. Vi tror instället att vi är så bra och kostnadseffektiva att kunderna vill stanna kvar av fri vilja.
 
-Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 
-{{< localbutton "Kontakta Safespring" "/kontakt" >}}
+### Hållbarhet
+Alla Safesprings molntjänster levereras från moderna och hållbara datacenter i Sverige. Exempelvis använder vi endast grön el, har hög energieffektivitet och tar till vara på restvärmen.
 
-<br><br><br><br>
 
-{{< video-myndighet >}}
+### Juridisk säkerhet
+Eftersom Safespring är ett svenskt personalägt företag med datacenter i Sverige behöver du inte fundera över om kommande domar från EU-domstolen kommer påverka t.ex. er personuppgiftsbehandling.
 
-{{< distance >}}
 
-## White paper
+### Kollektivavtal
+Samtliga medarbetare på Safespring omfattas av kollektivavtal och vi är medlemmar i Almega. Fråga gärna din nuvarande leverantör om alla deras anställda omfattas av kollektivavtal.
 
-Nu när molntjänster som lyder under amerikansk lagstiftning sannolikt inte kan användas vid en upphandling har vi på Safespring släppt ett white paper om det nya rättsläget.
 
-Detta white paper tar upp förutsättningarna efter domen och rekommendationer till organisationer inom EU, det är uppdelat i fyra kapitel.
-
-- Schrems II-avgörandet (del I),
-- marknadsstrukturen för molntjänster och samverkan mellan tekniska krav och juridik (del II),
-- olika svenska aktörers roll för vidareutvecklingen av denna marknadsstruktur och särskilt behovet av koordinering av insatser på statlig nivå (del III)
-- och en kort beskrivning av vägen framåt (del IV).
-
-{{< localbutton "Läs direkt" "/schrems" >}}
+### Politisk säkerhet
+Eftersom Safespring är ett svenskt personalägt företag med datacenter i Sverige kan inte politiska beslut i t.ex. USA påverka tillhandahållandet av våra molntjänster.
