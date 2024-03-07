@@ -7700,15 +7700,16 @@ details[open] summary {
 */
 
 .icon-block {
-	width:130px;
-	height:130px;
-	border-radius:15px;
-	background-color:white;
-	padding:40px 40px 30px 40px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:space-between;
+border: solid 1px var(--cloud-blue-color);
+width: 130px;
+height: 130px;
+border-radius: 15px;
+background-color: #fafefe;
+padding: 40px 40px 30px 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
 }
 
 .icon-block p {
@@ -7735,9 +7736,24 @@ details[open] summary {
 	transition:ease .2s;
 }
 
+.icon-block-link {
+	cursor: pointer !important;
+}
+
 .icon-block-link:hover .icon-block{
 	transform:scale(102%);
 	transition:ease .2s;
+	width:130px;
+	height:130px;
+	border-radius:15px;
+	background-color:white;
+	padding:40px 40px 30px 40px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+	border: solid 1px white;
+	box-shadow: var(--tran-shadow);
 }
 
 /* Media query for smaller screens */
