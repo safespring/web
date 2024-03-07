@@ -4,7 +4,7 @@ language: "Se"
 date: 2024-03-06
 draft: false
 section: "Use case"
-intro: "Andreas Hellander, en av grundarna av Scaleout Systems, betonar att det gemensamma värdet av datasäkerhet och användning av öppen källkod har varit en stark grund i samarbetet med Safespring."
+intro: "Genom att kunna lägga upp organisationen i en hierarkisk struktur så kan Göteborgs Universitet följa upp förbrukningen och även sätta upp egna regler för intern debitering"
 background: ""
 card: ""
 socialmedia: ""
@@ -14,7 +14,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 sidebarsection: ""
 sidebarimage: "goteborgs-universitet-jill-sundstrom.jpg"
-sidebartext: "Andreas delar insikter om Scaleouts samarbete med Safespring och vikten av databehandling inom EU."
+sidebartext: "Jill Sundström, IT-tjänsteansvarig på Göteborgs Universitet, beskriver vinsten av att följa upp förbrukningen och även sätta upp egna regler för intern debitering."
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
@@ -34,7 +34,7 @@ aliases:
 Safespring Backup har kommit i en ny version som hjälper våra kunder att få bättre överblick. Genom att kunna lägga upp organisationen i en hierarkisk struktur så kan Göteborgs Universitet följa upp förbrukningen och även sätta upp egna regler för intern debitering.
 {{< /ingress >}}
 
-"Med den nya tjänsten får vi en helt annan överblick över förbrukningen. Vi kan i realtid gå in och se hur olika delar av organisationen använder tjänsten", säger Jill Sundström, IT-tjänsteansvarig på Göteborgs Universitet..
+"Med den nya tjänsten får vi en helt annan överblick över förbrukningen. Vi kan i realtid gå in och se hur olika delar av organisationen använder tjänsten", säger Jill Sundström, IT-tjänsteansvarig på Göteborgs Universitet.
 
 {{< quote "Jill Sundström" >}}
 "Genom att sätta upp en intern hierarki, så kan vi välja att antingen titta på organisationen som helhet, eller delar av den. Det underlättar för att få kostnadskontroll. Tidigare var det svårt att få en överblick över vilka avdelningar som drev förbrukningen".
