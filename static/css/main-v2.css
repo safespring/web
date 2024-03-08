@@ -4743,7 +4743,7 @@ ol li {
 ol li::before {
 	content:counters(safespring-list, '.') ' ';
 		color:var(--clear-blue-color);
-		font-weight:700;
+		font-weight:599;
 		display:inline-block;
 		width:30px;
 		margin-left:-40px;
