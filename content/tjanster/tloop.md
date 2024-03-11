@@ -28,24 +28,6 @@ devops: ""
 För att uppfylla de mest krävande hållbarhetsmålen är Safespring Private Cloud i T.Loops Data Energy Center en bra start på er molnresa.
 {{< /ingress >}}
 
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-hair-long" text="Människan i centrum" link="#" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-hands-helping" text="Solidaritet & inkludering" link="#" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-ballot-check" text="Digital valfrihet" link="#" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-users-medical" text="Ökat digitalt deltagande" link="#" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-shield-halved" text="Säkerhet & trygghet" link="#" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-seedling" text="Främja hållbarhet" link="#" color="#32cd32">}}
-{{< /icon-block-container >}}
-
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-hair-long" text="Human-Centric" link="#" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-hands-helping" text="Solidarity & Inclusion" link="#" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-ballot-check" text="Freedom of choice" link="#" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-users-medical" text="More Digital Participation" link="#" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-shield-halved" text="Safety & Security" link="#" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-seedling" text="Promoting Sustainability" link="#" color="#32cd32">}}
-{{< /icon-block-container >}}
-
 T.Loop är en innovativ aktör inom co-location-tjänster som fokuserar på hållbarhet och högkvalitativ infrastruktur genom sina Data Energy Centers®. Genom att integrera de senaste teknologierna för energieffektivitet och återvinning av överskottsvärme strävar T.Loop efter att minska CO2-utsläppen samtidigt som de erbjuder pålitliga och säkra datacenterlösningar.
 
 Genom att välja att placera Safesprings Private Cloud hos T.Loop får du tillgång till en miljövänlig och effektiv infrastruktur som är utformad för att möta dina behov av tillgänglighet, skalbarhet och suveränitet. Tillsammans erbjuder vi en komplett och hållbar molnlösning som gör att du kan behålla kontroll och ägandeskap.
