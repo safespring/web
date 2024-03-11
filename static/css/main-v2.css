@@ -8107,21 +8107,13 @@ details[open] summary {
 
 @media screen and (max-width:900px) {
 	.icon-block-horisontal {
-		display: flex;
 		flex-direction: column;
-		border-radius: 20px;
-		overflow: hidden;
-		align-items: stretch;
-		margin: 10px 0 0 0;
 		padding-right: 0px;
 	}
 
 	.icon-block-color {
 		height: 100px;
-		font-size: 35px;
-		display: flex;
 		margin: 0 0 0 0;
-		min-width: 100%;
 	}
 		.icon-block-horisontal p {
 		padding: 4% 10%;
