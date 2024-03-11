@@ -8090,6 +8090,21 @@ details[open] summary {
 
 /* ICON BLOCK */
 
+@media screen and (max-width:900px) {
+	.icon-block-horisontal {
+		flex-direction: column;
+		padding-right: 0px;
+	}
+
+	.icon-block-color {
+		height: 100px;
+		margin: 0 0 0 0;
+	}
+		.icon-block-horisontal p {
+		padding: 4% 10%;
+	}
+}
+
 .icon-block-horisontal {
 	display: flex;
 	border-radius: 20px;
@@ -8105,17 +8120,3 @@ details[open] summary {
 	min-width: 150px;
 }
 
-@media screen and (max-width:900px) {
-	.icon-block-horisontal {
-		flex-direction: column;
-		padding-right: 0px;
-	}
-
-	.icon-block-color {
-		height: 100px;
-		margin: 0 0 0 0;
-	}
-		.icon-block-horisontal p {
-		padding: 4% 10%;
-	}
-}
