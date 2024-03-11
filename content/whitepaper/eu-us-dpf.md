@@ -2,7 +2,7 @@
 title: "Läget efter EU-US DPF"
 section: "White Paper"
 language: "Se"
-date: "2024-02-05"
+date: "2024-03-05"
 intro: "Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023  finns anledning att återigen se över de förändrade omständigheterna."
 draft: false
 tags: ["Svenska"]
@@ -120,7 +120,7 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 	- hur känsliga personuppgifter det är som behandlas,
 	- om det finns någon gallringsrutin implementerad,
 	- hur ni informerar privatpersoner om behandlingen, och
--	 om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit {{< note "Gallringsrutiner" >}}Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.{{< /note >}}
+    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit {{< note "Gallringsrutiner" >}}Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.{{< /note >}}
 -  Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Är det känsliga personuppgifter? Offentliga uppgifter? Privat kommunikation? Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster.
 
 ### Hantering av försörjningskedjan
@@ -139,10 +139,10 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 4. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 131.
 5. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 138.
 6. Dataskyddsförordningen. (2016). 679/2016 Art. 6.1.f. I C(2023) 4745 final, Rec. 134-135.
-7. C(2023) 4745 final, Rec. 126.
-8. C(2023) 4745 final, Rec. 184.
+7. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 126.
+8. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 184.
 9. Noyb. (2023, 10 juli). *European Commission gives EU-US data transfers third round at CJEU*. Hämtad från [https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu](https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu)
-10. Se t.ex. Proposition 2022/23:97.
+10. Se t.ex. Proposition 2022/23:97 *Sekretessgenombrott vid utlämnande för teknisk bearbetning eller teknisk lagring av uppgifter*.
 11. Transportstyrelseskandalen sommaren 2017.
 12. Tom
 13. Safespring. (2020). *Schrems II*. Hämtad från [https://www.safespring.com/whitepaper/schrems-ii/](https://www.safespring.com/whitepaper/schrems-ii/)

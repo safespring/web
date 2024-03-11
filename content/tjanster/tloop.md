@@ -28,6 +28,24 @@ devops: ""
 För att uppfylla de mest krävande hållbarhetsmålen är Safespring Private Cloud i T.Loops Data Energy Center en bra start på er molnresa.
 {{< /ingress >}}
 
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-user-hair-long" text="Människan i centrum" link="#" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-hands-helping" text="Solidaritet & inkludering" link="#" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-ballot-check" text="Digital valfrihet" link="#" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-users-medical" text="Ökat digitalt deltagande" link="#" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-shield-halved" text="Säkerhet & trygghet" link="#" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-seedling" text="Främja hållbarhet" link="#" color="#32cd32">}}
+{{< /icon-block-container >}}
+
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-user-hair-long" text="Human-Centric" link="#" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-hands-helping" text="Solidarity & Inclusion" link="#" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-ballot-check" text="Freedom of choice" link="#" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-users-medical" text="More Digital Participation" link="#" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-shield-halved" text="Safety & Security" link="#" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-seedling" text="Promoting Sustainability" link="#" color="#32cd32">}}
+{{< /icon-block-container >}}
+
 T.Loop är en innovativ aktör inom co-location-tjänster som fokuserar på hållbarhet och högkvalitativ infrastruktur genom sina Data Energy Centers®. Genom att integrera de senaste teknologierna för energieffektivitet och återvinning av överskottsvärme strävar T.Loop efter att minska CO2-utsläppen samtidigt som de erbjuder pålitliga och säkra datacenterlösningar.
 
 Genom att välja att placera Safesprings Private Cloud hos T.Loop får du tillgång till en miljövänlig och effektiv infrastruktur som är utformad för att möta dina behov av tillgänglighet, skalbarhet och suveränitet. Tillsammans erbjuder vi en komplett och hållbar molnlösning som gör att du kan behålla kontroll och ägandeskap.
@@ -39,8 +57,8 @@ Kontakta oss gärna om du vill veta mer eller om du har några frågor. Vi ser f
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59 
-daniel.melin@safespring.com
+{{< inline "Ring" >}} +46 (0)76 868 00 59  
+[Skicka mail](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
 
 {{< distance >}}
@@ -66,7 +84,7 @@ T.Loop står för Therma Loop, vilket indikerar att de ser omvandlingen av energ
 {{% question question="Vad är ett Data Energy Center®?" %}}
 T.Loop har myntat begreppet Data Energy Center® (DEC) för att fokusera på datacentrets viktiga roll i vårt energisystem och framför allt för att utnyttja all stillastående och överskott av energi och kapacitet som produceras av många datacenter idag.
 
-De ser dessa lösningar som ett kvalificerat sätt att använda Data Energy Center® som en källa för uppvärmning av byggnader och städer, samtidigt som de mestadels stillastående resurserna i nöd- och reservkraft kan användas för att balansera elnätet. För att uppnå hög hållbarhetsklassificering är vår teknik främst baserad på vätskekylning, smart programvara, värmeåtervinning, bränsleceller och batterier för backup. De tar bort kol från beräkning!
+De ser dessa lösningar som ett kvalificerat sätt att använda Data Energy Center® som en källa för uppvärmning av byggnader och städer, samtidigt som de mestadels stillastående resurserna i nöd- och reservkraft kan användas för att balansera elnätet. För att uppnå hög hållbarhets­klassificering är vår teknik främst baserad på vätskekylning, smart programvara, värmeåtervinning, bränsleceller och batterier för backup. De tar bort kol från beräkning!
 {{% /question %}}
 
 {{% question question="Vad skiljer T.Loops Co-location-tjänster från traditionella datacenter?" %}}
@@ -77,7 +95,7 @@ De designar och bygger sitt Data Energy Center® med hållbarhet och energiåter
 De gör din IT mer hållbar genom att fokusera på energicirkularitet i hjärtat av deras datacentradesign, utan att kompromissa med datacentrets operationers kritikalitet.
 
 - Deras design minskar betydligt energiförbrukningen där det är möjligt.
-- De placerar sina Data Energy Centers® i befintliga byggnader, använder befintlig kraft- och kommunikationsinfrastruktur, vilket ger ett lågt inbyggt CO₂-avtryck i konstruktionen.
+- De placerar sina Data Energy Centers® i befintliga byggnader, använder befintlig kraft- och kommunikations­infrastruktur, vilket ger ett lågt inbyggt CO₂-avtryck i konstruktionen.
 - Genom att integrera ett Data Energy Center® i fastigheten kan överskottsvärmen från servrarna värma byggnaden direkt, utan att använda elektricitet för värmepumpar.
 - De bidrar till nätbalansering genom att använda Data Energy Center®-kraftinfrastrukturen för att hjälpa till att stabilisera elnätet och bidra med extra kapacitet.
 - De placerar Data Energy Centers® nära datakällan för att möta kraven på låg latens.
@@ -99,16 +117,16 @@ T.Loop erbjuder ett co-location-kundavtal (kontrakt) där de inkluderar tjänsto
 {{% /question %}}
 
 {{% question question="Vilken prismodell har T.Loop för co-location-tjänster?" %}}
-De erbjuder anpassad prissättning för våra co-location-tjänster baserat på faktorer som den nödvändiga utrymmesmängden, nivån på kraft och kylning samt nätverkskommunikationskraven. De vill tillgodose dina behov, vänligen <a href="mailto:daniel.melin@safespring.com">kontakta Daniel Melin på Safespring</a> för en specifik offert.
+De erbjuder anpassad prissättning för våra co-location-tjänster baserat på faktorer som den nödvändiga utrymmesmängden, nivån på kraft och kylning samt nätverks­kommunikations­kraven. De vill tillgodose dina behov, vänligen <a href="mailto:daniel.melin@safespring.com">kontakta Daniel Melin på Safespring</a> för en specifik offert.
 {{% /question %}}
 
 {{% question question="Vilka säkerhetsåtgärder har T.Loop på plats för att skydda min utrustning?" %}}
 Data Energy Centers® är belägna inuti befintliga byggnader, vilket ger extra lager av fysisk säkerhet. T.Loop följer bästa praxis för co-location-tjänster med applikationer för datacenter och perimetersäkerhet, såsom:
 
-- Redundant kraft- och kylinfrastruktur samt icke-fossila backupkraftlösningar för att säkerställa oavbruten service.
-- Miljökontrollsystem för brandsläckning, temperatur och luftfuktighet samt läckagevarningssystem.
-- Robusta nätverkssäkerhetsåtgärder såsom brandväggar, intrångs- och förebyggande system samt DDoS-mitigeringstjänster.
-- Åtkomstkontrollsystem, säkerhetskameror och eskorterade besök för att ge möjlighet för kunder att säkert komma åt sin utrustning.
+- Redundant kraft- och kylinfrastruktur samt icke-fossila backup­kraftlösningar för att säkerställa oavbruten service.
+- Miljö­kontrollsystem för brandsläckning, temperatur och luftfuktighet samt läckage­varningssystem.
+- Robusta nätverks­säkerhets­åtgärder såsom brandväggar, intrångs- och förebyggande system samt DDoS-mitigerings­tjänster.
+- Åtkomst­kontrollsystem, säkerhetskameror och eskorterade besök för att ge möjlighet för kunder att säkert komma åt sin utrustning.
 {{% /question %}}
 
 {{% question question="Hur tillförlitlig är T.Loops kraft- och kylinfrastruktur?" %}}
