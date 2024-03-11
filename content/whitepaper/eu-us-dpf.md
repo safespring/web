@@ -133,9 +133,9 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 
 ## Källförteckning
 
-1. Safespring. (2018). *Cloud Act*. Hämtad från [https://www.safespring.com/whitepaper/cloudact/](https://www.safespring.com/whitepaper/cloudact/)
-2. Safespring. (2020). *Schrems II*. Hämtad från [https://www.safespring.com/whitepaper/schrems-ii/](https://www.safespring.com/whitepaper/schrems-ii/)
-3. Europeiska kommissionen. (2023). *Adequacy decision EU-US Data Privacy Framework*. C(2023) 4745 final. Hämtad från [https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
+1. Safespring. (2018). *Cloud Act*. Hämtad från [https://www.safespring.com /whitepaper/cloudact/](https://www.safespring.com/whitepaper/cloudact/)
+2. Safespring. (2020). *Schrems II*. Hämtad från [https://www.safespring.com /whitepaper/schrems-ii/](https://www.safespring.com/whitepaper/schrems-ii/)
+3. Europeiska kommissionen. (2023). *Adequacy decision EU-US Data Privacy Framework*. C(2023) 4745 final. Hämtad från [https://commission.europa.eu /system/files/2023-07 /Adequacy%20decision %20EU-US%20 Data%20Privacy%20 Framework_en.pdf](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
 4. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 131.
 5. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 138.
 6. Dataskyddsförordningen. (2016). 679/2016 Art. 6.1.f. I C(2023) 4745 final, Rec. 134-135.
@@ -145,7 +145,7 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 10. Se t.ex. Proposition 2022/23:97 *Sekretessgenombrott vid utlämnande för teknisk bearbetning eller teknisk lagring av uppgifter*.
 11. Transportstyrelseskandalen sommaren 2017.
 12. Tom
-13. Safespring. (2020). *Schrems II*. Hämtad från [https://www.safespring.com/whitepaper/schrems-ii/](https://www.safespring.com/whitepaper/schrems-ii/)
+13. Safespring. (2020). *Schrems II*. Hämtad från [https://www.safespring.com /whitepaper/schrems-ii/](https://www.safespring.com/whitepaper/schrems-ii/)
 14. SOU 2021:97. *Säker och kostnadseffektiv IT-drift*.
 15. Safespring, Binero, City Networks. (2022, 21 mars). *Remissvar: It-driftsutredningens slutbetänkande (SOU 2021:97)*.
 16. Tom
@@ -158,4 +158,4 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 23. Konsortier som OpenRAN, Kubernetes Foundation, Linux Foundation, OpenStack Consortium.
 24. Tom
 25. Tom
-26. LIBRIS. *Terminologi för BIBFRAME på svenska*. Hämtad från [https://libris.kb.se/katalogisering/help/terminology-bibframe-swedish](https://libris.kb.se/katalogisering/help/terminology-bibframe-swedish) . Notera att föregångaren MARC21 hade samma framgång av samma skäl.
+26. LIBRIS. *Terminologi för BIBFRAME på svenska*. Hämtad från [https://libris.kb.se /katalogisering/help /terminology-bibframe-swedish](https://libris.kb.se/katalogisering/help/terminology-bibframe-swedish) . Notera att föregångaren MARC21 hade samma framgång av samma skäl.
