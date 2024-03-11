@@ -27,7 +27,7 @@ I två tidigare white papers, 2018<sup>1</sup> och 2020<sup>2</sup>,  har Safesp
 
 Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023[<sup>3</sup>](#källförteckning) finns anledning att återigen se över de förändrade omständigheterna.
 
-I huvudsak förblir rekommendationerna samma. Vi har i vissa delar uppdaterat språket och tagit bort rekommendationer som hänvisar till gamla dataöverföringsbeslut. Infrastrukturplanering är dock ingen ny aktivitet som sådan: grundstenarna i det som utgör ett ansvarsfullt grepp om infrastruktur för en överskådlig tid framöver är desamma idag som för femtio år sedan, eller trettio eller fem. Det handlar om att ge sin verksamhet möjligheter att undvika inlåsningar till enskilda leverantörer, att kunna förutsäga och i bästa fall minimera kostnader och underhållskostnader. Både den enskilda verksamheten, Sverige och Europa behöver i ökad utsträckning verka för rådighet över de delar av infrastrukturen som ska vara stabila och fungera, och de delar som ska möjliggöra flexibilitet, förändring och innovation.
+I huvudsak förblir rekommendationerna samma. Vi har i vissa delar uppdaterat språket och tagit bort rekommendationer som hänvisar till gamla data­överföringsbeslut. Infrastruktur­planering är dock ingen ny aktivitet som sådan: grundstenarna i det som utgör ett ansvarsfullt grepp om infrastruktur för en överskådlig tid framöver är desamma idag som för femtio år sedan, eller trettio eller fem. Det handlar om att ge sin verksamhet möjligheter att undvika inlåsningar till enskilda leverantörer, att kunna förutsäga och i bästa fall minimera kostnader och underhållskostnader. Både den enskilda verksamheten, Sverige och Europa behöver i ökad utsträckning verka för rådighet över de delar av infrastrukturen som ska vara stabila och fungera, och de delar som ska möjliggöra flexibilitet, förändring och innovation.
 
 ## Bakgrund
 I detta avsnitt utforskar vi konsekvenserna av EU-kommissionens senaste beslut från juli 2023 gällande EU-US Data Protection Framework (DPF), ett viktigt steg efter tidigare avtal som Safe Harbor och Privacy Shield. Vi granskar dess inverkan på dataöverföringar till USA och dess betydelse för svenska verksamheters IT-infrastruktur och datahantering.
@@ -36,21 +36,21 @@ I detta avsnitt utforskar vi konsekvenserna av EU-kommissionens senaste beslut f
 "Som anmärkts av andra än Safespring finns egentligen få anledningar att tro att dessa förändringar innebär 'väsentligen samma skydd'. Proportionalitet, nödvändighet och berättigade intressen är inte absoluta, utan relativa begrepp."
 {{% /quote %}}
 
-### Dataöverföringsbeslut
+### Data­överföringsbeslut
 
 Den 10 juli 2023 offentliggjorde EU-kommissionen sitt senaste beslut med avseende på rättslig säkerhet vid överföring av personuppgifter till aktörer som lyder under amerikansk rätt: EU-US Data Protection Framework (DPF). Detta är en uppföljare till besluten Safe Harbor och Privacy Shield som tidigare förklarats ogiltiga av EU-domstolen. Till grund för EU-US DPF ligger förhandlingar mellan EU:s medlemsländer och EU-kommissionen, å ena sidan, och EU-kommissionen och federala myndigheter i USA, å andra sidan. Förhandlingarna har resulterat i en överenskommelse mellan USA och EU som ligger i ett appendix till beslutet.
 
-Bland nyheterna i EU-US DPF ingår därför hänvisningar till viktiga begrepp i europeisk dataskyddsrätt: proportionalitet[<sup>4</sup>](#källförteckning),  nödvändighet[<sup>5</sup>](#källförteckning)  och berättigade intressen[<sup>6</sup>](#källförteckning).  Den tidigare ombudsmannafunktionen har delats upp i nya funktioner: en Civil Liberties Protection Officer[<sup>7</sup>](#källförteckning)  och en Data Protection Review Court[<sup>8</sup>](#källförteckning). 
+Bland nyheterna i EU-US DPF ingår därför hänvisningar till viktiga begrepp i europeisk dataskyddsrätt: proportionalitet[<sup>4</sup>](#källförteckning),  nödvändighet[<sup>5</sup>](#källförteckning)  och berättigade intressen[<sup>6</sup>](#källförteckning).  Den tidigare ombudsmanna­funktionen har delats upp i nya funktioner: en Civil Liberties Protection Officer[<sup>7</sup>](#källförteckning)  och en Data Protection Review Court[<sup>8</sup>](#källförteckning). 
 
 Som anmärkts av andra än Safespring finns egentligen få anledningar att tro att dessa förändringar innebär "väsentligen samma skydd"[<sup>9</sup>](#källförteckning).  Proportionalitet, nödvändighet och berättigade intressen är inte absoluta, utan relativa begrepp. Om utgångspunkten är att amerikanska säkerhetsintressen, till exempel sådant som riskerar att påverka amerikansk ekonomi, amerikanska företag eller amerikanska medborgare, står överordnade andra intressen, kan det vara både nödvändigt och proportionerligt att inskränka europeiska medborgares rättigheter enligt amerikansk rätt.
 
-EU-domstolens invändning mot den tidigare ombudsmannafunktionen var inte heller grundad i att titeln ombudsman är felaktig, utan i de befogenheter ombudsmannen tilldelats. Domstolsfunktionen ses inte av EU-domstolens som en förvaltningsmyndighet vars uppdrag flexibelt kan styras utifrån politiska direktiv, utan som en egen och separat funktion friställd från övriga politiskt styrda verksamheter.
+EU-domstolens invändning mot den tidigare ombudsmanna­funktionen var inte heller grundad i att titeln ombudsman är felaktig, utan i de befogenheter ombudsmannen tilldelats. Domstolsfunktionen ses inte av EU-domstolens som en förvaltnings­myndighet vars uppdrag flexibelt kan styras utifrån politiska direktiv, utan som en egen och separat funktion friställd från övriga politiskt styrda verksamheter.
 
 Utifrån det perspektivet kommer EU-domstolen vid en rättslig prövning sannolikt inte kunna göra något annat än att underkänna även EU-US DPF. Det behöver inte ta lång tid. Safe Harbor-beslutet underkändes efter 15 år, och Privacy Shield-beslutet efter 4 år. Nya rättsliga möjligheter för europeiska medborgare att försvara sina rättigheter i domstol har avsevärt kortat sträckan mellan förmodat olagligt beslut och rättslig prövning i EU-domstolen. Även om rättvisans kvarnar fortfarande mal långsamt, menar vi på Safespring att de inte längre kan förmodas mala långsammare än de tidshorisonter man bör planera sin IT-infrastruktur på.
 
 ### Lagar om IT-drift och infrastruktur
 
-Det är inte bara den europeiska rätten som spelar roll för svenska verksamheter som planerar sin IT-infrastruktur. Även svensk lagstiftning i form av säkerhetsskydd och offentlighets- och sekretesslagstiftning spelar in. Det kan till exempel röra tolkningen av begrepp så som "att röja [en sekretessklassad uppgift]", "direktåtkomst", eller skillnaden mellan ett utlämnande och teknisk bearbetning. Idag är det oklart om och hur regeringen gör skillnad mellan den situation att olika myndigheter samarbetar om IT-drift (samordning) och att en enskild myndighet överlägger på en privat aktör att tillhandahålla IT-drift (utkontraktering)[<sup>10</sup>](#källförteckning). 
+Det är inte bara den europeiska rätten som spelar roll för svenska verksamheter som planerar sin IT-infrastruktur. Även svensk lagstiftning i form av säkerhetsskydd och offentlighets- och sekretess­lagstiftning spelar in. Det kan till exempel röra tolkningen av begrepp så som "att röja [en sekretessklassad uppgift]", "direktåtkomst", eller skillnaden mellan ett utlämnande och teknisk bearbetning. Idag är det oklart om och hur regeringen gör skillnad mellan den situation att olika myndigheter samarbetar om IT-drift (samordning) och att en enskild myndighet överlägger på en privat aktör att tillhandahålla IT-drift (utkontraktering)[<sup>10</sup>](#källförteckning). 
 
 Vid analyser av försörjningskedjor kan det uppstå frågor om utsträckningen i vilken man behöver säkerställa att underleverantörer av supporttjänster har eller har haft problematiska medborgarskap. Exempelvis då en balkansk service-tekniker i Tjeckien tillhandahåller systemadministrativa supporttjänster för ett myndighetssystem i Sverige[<sup>11</sup>](#källförteckning).  I vissa fall blir kraven så strikta att en säkerhetsgranskning måste genomföras för all personal som hanterar IT-systemet där svenskt medborgarskap är ett krav för att alls få granskas.
 
@@ -60,7 +60,7 @@ Vid bedömningen av oklarheter kring tolkning av svensk lagstiftning behöver ma
 
 ## Effektivitet
 
-Molntjänster bidrar till allt ifrån miljömässig hållbarhet till starkare säkerhetsarbete, samt ökad förmåga att snabbt få tillgång till antingen datalagringskapacitet eller databehandlingskapacitet utan formaliserade upphandlingar. Det är framför allt två egenskaper som utmärker molnet: en möjlighet att separera mjukvara som infrastruktur från mjukvara som tjänster, och renodling av kompetens kring driftsfunktioner.
+Molntjänster bidrar till allt ifrån miljömässig hållbarhet till starkare säkerhetsarbete, samt ökad förmåga att snabbt få tillgång till antingen datalagrings­kapacitet eller databehandlings­kapacitet utan formaliserade upphandlingar. Det är framför allt två egenskaper som utmärker molnet: en möjlighet att separera mjukvara som infrastruktur från mjukvara som tjänster, och renodling av kompetens kring driftsfunktioner.
 
 Som Safespring tidigare redovisat finns ett stort antal resurser i Sverige kring IT-drift och infrastruktur[<sup>13</sup>](#källförteckning).  Sedan mer än 50 år tillbaka till tiden har man regelbundet arbetat med att beskriva och analysera marknadsstrukturer. Den senaste sådana kartläggningen på nationell nivå kallas IT-driftsutredningen[<sup>14</sup>](#källförteckning).,  dit Safespring tillsammans med en rad andra aktörer på svenska molnmarknaden lämnade ett yttrande[<sup>15</sup>](#källförteckning). 
 
@@ -87,12 +87,12 @@ Rådighet kan avgränsas till den egna förmågan att utveckla, drifta eller anv
 ### Utveckling
 I de industridrivna organen för standardisering av IT-infrastruktur har det idag uppstått två spår. Man gör åtskillnad mellan standardiserade funktioner som utformas som skriftliga dokument för implementation av var och en av tillverkarna efter eget tycke[<sup>22</sup>](#källförteckning) och mjukvaru-specificerade funktioner som i första hand tillhandahålls som kod och bara i andra hand som API-beskrivningar[<sup>23</sup>](#källförteckning). Exempel på denna moderna uppdelning är 5G-standarden i 3GPP som täcker radioantenner och chipfunktioner och 5G-funktionerna som införlivats i det mjukvarubaserade OpenRAN som körs ovanpå 3GPP-specificerad hårdvara.
 
-Mjukvaruspecificerade funktionaliteter med API-beskrivningar utvecklas ofta i konsortier. De största konsortierna på marknaden idag är amerikanska eller baserade i USA. Det gör att rådigheten över hur man driftar ett konsortium för mjukvaruspecificerade funktionaliter också är i huvudsak amerikansk.
+Mjukvaru­specificerade funktionaliteter med API-beskrivningar utvecklas ofta i konsortier. De största konsortierna på marknaden idag är amerikanska eller baserade i USA. Det gör att rådigheten över hur man driftar ett konsortium för mjukvaru­specificerade funktionaliter också är i huvudsak amerikansk.
 
 ### Drift
 De största leverantörerna av IT-tjänster är idag amerikanska. Det innebär att möjligheterna att utveckla kompetenser för att samtidigt drifta en sammanhållen infrastruktur över mångfaldiga datacenter koncentrerats hos amerikanska aktörer. Europeiska aktörer har haft utmaningar med att utveckla samma rådighet av flera skäl.
 
-I kontinentala Europa har många nuvarande molntjänsterleverantörer börjat som antingen teleoperatörer eller webbhostingföretag. De har gått från hårdvaruinfrastruktur till mjukvaruinfrastruktur. De amerikanska aktörerna har i stället ofta börjar med operativsystem eller webbtjänster. De har kommit från mjukvaruutveckling till mjukvaruinfrastruktur. Rådigheten som redan är fallet vid koordinering av utveckling av mjukvara spiller över på rådighet vid drift.
+I kontinentala Europa har många nuvarande molntjänster­leverantörer börjat som antingen teleoperatörer eller webbhostingföretag. De har gått från hårdvaru­infrastruktur till mjukvaru­infrastruktur. De amerikanska aktörerna har i stället ofta börjar med operativsystem eller webbtjänster. De har kommit från mjukvaruutveckling till mjukvaru­infrastruktur. Rådigheten som redan är fallet vid koordinering av utveckling av mjukvara spiller över på rådighet vid drift.
 
 ### Användning
 De riktlinjer och försök till koordinering kring digital samverkan som hittills kommit på plats i Sverige har varit inspirerade av europeiska förlagor[<sup>24</sup>](#källförteckning) eller tvingande europeisk lagstiftning[<sup>26</sup>](#källförteckning) Enigheten bland svenska bibliotek kring implementation av dataformatet BIBFRAME[<sup>26</sup>](#källförteckning) har föregåtts av ett beslut i amerikanska kongressbiblioteket att implementera detta format. Sammantaget tyder inte detta på en innevarande svensk rådighet över de normer som blir gällande för svensk IT-infrastruktur.
@@ -103,15 +103,15 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 
 ### Etablera den tidshorisont ni vill jobba på.
 - Bestäm på vilken tidshorisont ni planerar er infrastruktur och hur ofta ni vill eftersöka och upphandla nya tjänster. Jämför denna tidshorisont med hur snabbt rättsläget, teknikläget och er organisation i övrigt kan förändras.
-- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. Notera: Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtalsförändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
-- Testa och modellera olika scenarier. Sätt siffror på era sannolikhetsbedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}} Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer? {{< /note >}}
+- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. Notera: Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
+- Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}} Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer? {{< /note >}}
 
 ### Skapa förutsättningar för enkel migration.
 - Att bygga sin miljö med containrar (t ex Kubernetes eller Docker) underlättar migration av utvecklings- och produktionsmiljöer mellan leverantörer i förhållande till virtuella servrar eller fysiska servrar.
-- Räkna på hur dataöverförings¬kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänsteleverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
-- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagringsplattform. Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
+- Räkna på hur dataöverförings¬kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänste­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
+- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
 - Investera i egen identitetshantering istället för att lita på molntjänst-leverantörens. Startsträckan blir lite längre men migration blir mycket enklare.
-- Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade mjukvarufunktionaliteter (som API:er eller dataformat).
+- Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade mjukvaru­funktionaliteter (som API:er eller dataformat).
 
 ### Personuppgiftsskydd
 - Gör grundarbetet med GDPR kring hantering av personuppgifter. Se över:
@@ -129,7 +129,7 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 	- Verifiera att det finns avtal mellan tjänsteleverantören och underleverantören, samt att avtalet överensstämmer med de dataskyddsrättsliga kraven.
 	- Kontrollera ifall antingen tjänsteleverantören som sådan eller tjänsteleverantörens underleverantörer har sin legala hemvist i tredjeland. Gör en bedömning av om detta riskerar innebära att tredjelandets myndigheter kan ålägga antingen underleverantören eller tjänsteleverantören att överlämna uppgifter till tredjelandets myndigheter.
 - Ha redundans av leverantörer. Detta är särskilt viktigt för tjänster i riskzonen och gör det enklare att migrera om behovet eller viljan uppstår.
-- Kontrollera att underleverantören tillhandahåller dokumentation kring de öppna standarder och specifikationer underleverantören använt för sina infrastrukturlösningar. Kontrollera vidare att tjänsteleverantören förvissat sig om att de har möjlighet att vid behov migrera till en annan underleverantör.
+- Kontrollera att underleverantören tillhandahåller dokumentation kring de öppna standarder och specifikationer underleverantören använt för sina infrastruktur­lösningar. Kontrollera vidare att tjänsteleverantören förvissat sig om att de har möjlighet att vid behov migrera till en annan underleverantör.
 
 ## Källförteckning
 
@@ -138,12 +138,12 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 3. Europeiska kommissionen. (2023). *Adequacy decision EU-US Data Privacy Framework*. C(2023) 4745 final. Hämtad från [https://commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
 4. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 131.
 5. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 138.
-6. Dataskyddsförordningen. (2016). 679/2016 Art. 6.1.f. I C(2023) 4745 final, Rec. 134-135.
+6. Dataskydds­förordningen. (2016). 679/2016 Art. 6.1.f. I C(2023) 4745 final, Rec. 134-135.
 7. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 126.
 8. Europeiska unionens stadga för grundläggande rättigheter. (2023). Art. 52.1. I C(2023) 4745 final, Rec. 184.
 9. Noyb. (2023, 10 juli). *European Commission gives EU-US data transfers third round at CJEU*. Hämtad från [https://noyb.eu](https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu)
 10. Se t.ex. Proposition 2022/23:97 *Sekretessgenombrott vid utlämnande för teknisk bearbetning eller teknisk lagring av uppgifter*.
-11. Transportstyrelseskandalen sommaren 2017.
+11. Transportstyrelse­skandalen sommaren 2017.
 12. Tom
 13. Safespring. (2020). *Schrems II*. Hämtad från [https://www.safespring.com](https://www.safespring.com/whitepaper/schrems-ii/)
 14. SOU 2021:97. *Säker och kostnadseffektiv IT-drift*.
@@ -154,7 +154,7 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 19. SOU 2007:47. *Den osynliga infrastrukturen*.
 20. Webbriktlinjer från Myndigheten för digital förvaltning.
 21. Svenskt ramverk för digital samverkan från Myndigheten för digital förvaltning.
-22. Standardiseringsorgan som ISO/IEC, ETSI, IEEE LAN/MAN SC, 3GPP, IETF, W3C.
+22. Standardiserings­organ som ISO/IEC, ETSI, IEEE LAN/MAN SC, 3GPP, IETF, W3C.
 23. Konsortier som OpenRAN, Kubernetes Foundation, Linux Foundation, OpenStack Consortium.
 24. Tom
 25. Tom
