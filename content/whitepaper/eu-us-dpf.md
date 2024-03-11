@@ -120,7 +120,7 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 	- hur känsliga personuppgifter det är som behandlas,
 	- om det finns någon gallringsrutin implementerad,
 	- hur ni informerar privatpersoner om behandlingen, och
-    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit {{< note "Gallringsrutiner" >}}Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.{{< /note >}}
+    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit {{< note "Gallring" >}}Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.{{< /note >}}
 -  Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Är det känsliga personuppgifter? Offentliga uppgifter? Privat kommunikation? Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster.
 
 ### Hantering av försörjningskedjan
