@@ -110,10 +110,23 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 
 ### Etablera den tidshorisont ni vill jobba på.
 
-- Bestäm på vilken tidshorisont ni planerar er infrastruktur och hur ofta ni vill eftersöka och upphandla nya tjänster. Jämför denna tidshorisont med hur snabbt rättsläget, teknikläget och er organisation i övrigt kan förändras.
-- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. 
-    - **Notera:** Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
-- Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}}Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?{{< /note >}}
+{{% checkbox %}}
+Bestäm på vilken tidshorisont ni planerar er infrastruktur och hur ofta ni vill eftersöka och upphandla nya tjänster. Jämför denna tidshorisont med hur snabbt rättsläget, teknikläget och er organisation i övrigt kan förändras.
+{{% /checkbox %}}
+
+{{% checkbox %}}
+Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. Notera: Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
+{{% /checkbox %}}
+
+{{% checkbox %}}
+Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser.
+{{% /checkbox %}}
+
+{{% note "Exempel på scenario" %}}
+
+Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?
+
+{{% /note %}}
 
 ### Skapa förutsättningar för enkel migration.
 - Att bygga sin miljö med containrar (t ex Kubernetes eller Docker) underlättar migration av utvecklings- och produktionsmiljöer mellan leverantörer i förhållande till virtuella servrar eller fysiska servrar.
@@ -134,7 +147,7 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
     - Är det känsliga personuppgifter? 
     - Offentliga uppgifter? 
     - Privat kommunikation? 
-    
+
 ### Hantering av försörjningskedjan
 - Ha koll på hela värdekedjan:
 	- Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av PaaS eller SaaS-tillhandahållare.
