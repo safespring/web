@@ -25,7 +25,15 @@
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     <h2>The page you are looking for seems to not exist</h2>
     <p>This may be due to an incorrect link. If the page has moved or has been removed, it can happen that the old link stops working and directs you to this page instead. Please contact us if you believe that this page should still exist under this link.</p>
-    <p>The page you tried to reach: </br><strong id="requested-url"></strong></p>
+    <div class="icon-block-horisontal" style='background-color: #eed70010;'>
+      <div class="icon-block-color" style='color: #eed700;background-color: #eed70010;'>
+        <i class="fa-solid fa-triangle-exclamation icon"></i>
+      </div>
+      <div style="padding: 15px 0;">
+      <p class="inline_rubrik" style='color: #eed700; margin-bottom: 0;'>The page you tried to reach</p>
+      <p id="requested-url" style="margin-top: 0;"></p>
+    </div>
+    </div>
     <h3>What does 404 mean?</h3>
     <p>"404 error" or "error 404" is a standard error code in the HTTP protocol that indicates that the requested webpage does not exist or cannot be found.</p>
     <p>The term 404 is common and in a transferred sense, it can sometimes be used instead of "does not exist" or "error", mostly in technical contexts.</p>
@@ -38,5 +46,5 @@
     <!-- Use partial to include the content in the standard sidebar -->
     {{ partial "sidebar-default-single.html" . }}
   </div>
-  </main>
+</main>
 {{ partial "footer.html" . }}
