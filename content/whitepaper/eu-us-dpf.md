@@ -1,9 +1,9 @@
 ---
-title: "Läget efter EU-US DPF"
+title: "Läget efter EU-US Data Protection Framework (DPF)"
 section: "White Paper"
 language: "Se"
 date: "2024-03-05"
-intro: "Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023  finns anledning att återigen se över de förändrade omständigheterna."
+intro: "Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023 finns anledning att återigen se över de förändrade omständigheterna."
 draft: false
 tags: ["Svenska"]
 author: "Amelia Andersdotter"
@@ -15,9 +15,6 @@ sidebarlinkurl: ""
 card: ""
 eventbild: ""
 socialmediabild: ""
-aliases:
-    - /whitepapers/cloudact
-    - /cloudact
 toc: "Innehåll"
 ---
 
@@ -58,6 +55,18 @@ I mångt om mycket handlar dessa frågor om administrativ rådighet. En svensk m
 
 Vid bedömningen av oklarheter kring tolkning av svensk lagstiftning behöver man ofta först ta reda på om man är samhällsviktig verksamhet i den mening som avses i svensk, nationell säkerhetspolitik[<sup>12</sup>](#källförteckning).  Ett kommunalt elnät kan till exempel vara lokalt samhällsviktigt, men inte nationellt samhällsviktigt. En statlig myndighet kan i stället oftast presumeras vara nationellt samhällsviktig.
 
+### Standardisering, öppen källkod och certifiering
+
+En viktig utveckling i den europeiska rätten är att allt starkare tonvikt läggs vid industrinormer, standarder och certifieringar. Detta gäller exempelvis i NIS2-direktivet, men ännu tydligare i lagar som AI Act och Cyber Resilience Act.
+
+Standardisering och certifiering inom IT-industrin är inget nytt. Apparater för generering av kryptografiska signaturer har till exempel standardiserats sedan 1990-talet. Tänk exempelvis bankdosor, kortläsare, chippen på biometriska pass och ID-kort, och dylika applikationer. Även för mjukvarukod finns kvalitetsstandarder: de så kallade Common Criteria och FIPS används i Nordamerika för att testa mjukvaruimplementationer av säkerhetsfunktioner. I EU finns inga dylika regionomfattande initiativ eller standarder.
+
+Den vanligaste kritiken mot certifieringsprogram för mjukvarukod är att certifieringscyklerna är långa och dyra för leverantörer att ta sig igenom. Det minskar incitamentet att upptäcka, analysera och åtgärda säkerhetsproblem efter att certifieringen är klar, trots att ingen befintlig certifiering garanterar felfria produkter (och det är i fallet mjukvarukod inte ens möjligt).
+
+I allmänhet blir det allt vanligare att man inom en viss industri samarbetar kring gemensamt utvecklade, öppna applikationsgränssnitt (API:er). Exempelvis OpenRAN, som är en mängd gränssnitt för hantering av mobilnätsutrustning, består av öppen källkodsapplikationer som var och en av mobilnätoperatörerna kan bidra till, ändra i sina egna nät, eller implementera "as is" för att säkerställa högsta nivå av interoperabilitet med andra mobilnät. Motsvarande gränssnittsmängder finns för molntjänster, hantering av sakernas internet, gränssnitt för elektronik i bilar, med många fler. Öppen källkod har blivit det snabbaste sättet att garantera största mängd digital samverkan.
+
+Att koden är öppen minskar möjligheterna för leverantörer och implementatörer att dölja säkerhetsfel som upptäcks efter eventuell certifiering. Det skapar också möjlighet för samhällelig styrning av resurser som går in i de konsortier som ansvarar för gränssnittsutvecklingen. Hur exakt styrningen kommer utvecklas återstår att se, men som synes finns både säkerhetsskäl och samverkansskäl att orientera sig mot öppen källkodslösningar.
+
 ## Effektivitet
 
 Molntjänster bidrar till allt ifrån miljömässig hållbarhet till starkare säkerhetsarbete, samt ökad förmåga att snabbt få tillgång till antingen datalagrings­kapacitet eller databehandlings­kapacitet utan formaliserade upphandlingar. Det är framför allt två egenskaper som utmärker molnet: en möjlighet att separera mjukvara som infrastruktur från mjukvara som tjänster, och renodling av kompetens kring driftsfunktioner.
@@ -97,19 +106,19 @@ I kontinentala Europa har många nuvarande molntjänster­leverantörer börjat 
 ### Användning
 De riktlinjer och försök till koordinering kring digital samverkan som hittills kommit på plats i Sverige har varit inspirerade av europeiska förlagor[<sup>24</sup>](#källförteckning) eller tvingande europeisk lagstiftning[<sup>26</sup>](#källförteckning) Enigheten bland svenska bibliotek kring implementation av dataformatet BIBFRAME[<sup>26</sup>](#källförteckning) har föregåtts av ett beslut i amerikanska kongressbiblioteket att implementera detta format. Sammantaget tyder inte detta på en innevarande svensk rådighet över de normer som blir gällande för svensk IT-infrastruktur.
 
-
-
 ## Rekommendationer
 
 ### Etablera den tidshorisont ni vill jobba på.
+
 - Bestäm på vilken tidshorisont ni planerar er infrastruktur och hur ofta ni vill eftersöka och upphandla nya tjänster. Jämför denna tidshorisont med hur snabbt rättsläget, teknikläget och er organisation i övrigt kan förändras.
-- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. Notera: Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
-- Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}} Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer? {{< /note >}}
+- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. 
+    - **Notera:** Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
+- Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}}Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?{{< /note >}}
 
 ### Skapa förutsättningar för enkel migration.
 - Att bygga sin miljö med containrar (t ex Kubernetes eller Docker) underlättar migration av utvecklings- och produktionsmiljöer mellan leverantörer i förhållande till virtuella servrar eller fysiska servrar.
 - Räkna på hur dataöverförings¬kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänste­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
-- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
+- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. *Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet.* Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
 - Investera i egen identitetshantering istället för att lita på molntjänst-leverantörens. Startsträckan blir lite längre men migration blir mycket enklare.
 - Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade mjukvaru­funktionaliteter (som API:er eller dataformat).
 
@@ -120,9 +129,12 @@ De riktlinjer och försök till koordinering kring digital samverkan som hittill
 	- hur känsliga personuppgifter det är som behandlas,
 	- om det finns någon gallringsrutin implementerad,
 	- hur ni informerar privatpersoner om behandlingen, och
-    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit {{< note "Gallring" >}}Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.{{< /note >}}
--  Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Är det känsliga personuppgifter? Offentliga uppgifter? Privat kommunikation? Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster.
-
+    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit. {{< note "Gallring" >}}Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.{{< /note >}}
+-  Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster.
+    - Är det känsliga personuppgifter? 
+    - Offentliga uppgifter? 
+    - Privat kommunikation? 
+    
 ### Hantering av försörjningskedjan
 - Ha koll på hela värdekedjan:
 	- Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av PaaS eller SaaS-tillhandahållare.
