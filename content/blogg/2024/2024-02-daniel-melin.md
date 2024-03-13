@@ -12,7 +12,6 @@ socialmediabild: ""
 language: "Se"
 ---
 
-
 ![Daniel Malin på Safespring](/img/blogg/cards/web-safespring-daniel-melin-2024-02.jpg)
 
 {{< ingress >}}
