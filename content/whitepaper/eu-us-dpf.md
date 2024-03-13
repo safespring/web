@@ -3,7 +3,7 @@ title: "Läget efter EU-US Data Protection Framework (DPF)"
 section: "White Paper"
 language: "Se"
 date: "2024-03-05"
-intro: "Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023 finns anledning att återigen se över de förändrade omständigheterna."
+intro: "Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molntjänstleverantörer i juli 2023 finns anledning att återigen se över de förändrade omständigheterna."
 draft: false
 tags: ["Svenska"]
 author: "Amelia Andersdotter"
@@ -22,7 +22,7 @@ toc: "Innehåll"
 I två tidigare white papers, 2018<sup>1</sup> och 2020<sup>2</sup>,  har Safespring gått igenom det rättsliga och tekniska läget för organisationer som planerar sin IT-infrastruktur. 
 {{% /ingress %}}
 
-Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023[<sup>3</sup>](#källförteckning) finns anledning att återigen se över de förändrade omständigheterna.
+Med anledning av EU-kommissionen senaste beslut om dataöverföringar till amerikanska molntjänstleverantörer i juli 2023[<sup>3</sup>](#källförteckning) finns anledning att återigen se över de förändrade omständigheterna.
 
 I huvudsak förblir rekommendationerna samma. Vi har i vissa delar uppdaterat språket och tagit bort rekommendationer som hänvisar till gamla data­överföringsbeslut. Infrastruktur­planering är dock ingen ny aktivitet som sådan: grundstenarna i det som utgör ett ansvarsfullt grepp om infrastruktur för en överskådlig tid framöver är desamma idag som för femtio år sedan, eller trettio eller fem. Det handlar om att ge sin verksamhet möjligheter att undvika inlåsningar till enskilda leverantörer, att kunna förutsäga och i bästa fall minimera kostnader och underhållskostnader. Både den enskilda verksamheten, Sverige och Europa behöver i ökad utsträckning verka för rådighet över de delar av infrastrukturen som ska vara stabila och fungera, och de delar som ska möjliggöra flexibilitet, förändring och innovation.
 
