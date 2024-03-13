@@ -78,8 +78,10 @@ Att koden är öppen minskar möjligheterna för leverantörer och implementatö
 
 ### Skapa förutsättningar för enkel migration.
 - Att bygga sin miljö med containrar (t ex Kubernetes eller Docker) underlättar migration av utvecklings- och produktionsmiljöer mellan leverantörer i förhållande till virtuella servrar eller fysiska servrar.
-- Räkna på hur dataöverförings­kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänst­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
-- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
+- Räkna på hur dataöverförings­kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänst­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. 
+    - Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
+- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. 
+    - Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
 - Investera i egen identitetshantering istället för att lita på molntjänst-leverantörens. Startsträckan blir lite längre men migration blir mycket enklare.
 - Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade mjukvaru­funktionaliteter (som API:er eller dataformat).
 
