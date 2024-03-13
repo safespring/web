@@ -25,11 +25,14 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< readfile "Solution Brief" "/content/read-more/safespring-backup-portal-sv-more.md" >}}
-
-{{< youtube "JCXm-Adpf40" >}}
- 
-## Backup som tjänst
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-clipboard-list-check" text="Avancerad Rapportering" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-gauge-high" text="Hög Säkerhet" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-arrow-up-right-and-arrow-down-left-from-center" text="Utmärkt Skalbarhet" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Multi Tenancy" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-pen-to-square" text="Flexibel Administration" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
 Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data.
@@ -39,9 +42,6 @@ Att ta Backup genom Safespring betyder att du inte behöver investera i någon e
 
 Med vår webbportal kan du enkelt hantera dina backup:er, få rapporter och status samt hantera användare och roller i din organisation.
 
-{{< 2calltoaction "Testa tjänst" "#testa-safespring" "Kontakta oss" "/kontakt" >}}
-
-![Safespring Backup kommer med många fördelar](/img/graphics/safespring_key-points-backup.svg)
 
 1. {{< inline "Hög säkerhet:" >}} Våra säkerhetskopior krypteras under transit med TLS 1.2 och kan också konfigureras för att krypteras klientsidan för ännu högre säkerhet automatiskt.
 1. {{< inline "Utmärkt skalbarhet:" >}} Safespring Backup kan skydda många terabyte data med minimal administrativ ansträngning tack vare sina funktioner för data livscykelautomatisering.
@@ -54,15 +54,9 @@ Tjänsten konsumeras över internet och du betalar för mängden data som sparas
 
 Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Bare Machine Recovery” vilket gör det möjligt att återskapa en maskin i sin helhet, antingen på en annan fysisk hårdvara, eller till en ny virtuell maskin exempelvis i vår Compute-miljö.
 
+{{< readfile "Solution Brief" "/content/read-more/safespring-backup-portal-sv-more.md" >}}
+
 ### Lösning för offsite backup
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Backuptjänst om ni kör TSM lokalt, eller Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
-
-{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Diskutera Backup över en lunch med vår VD" %}}
-Skydda ditt företag med robust backup i molnet. Robust backup är nyckeln till att säkra ditt företags data, oavsett om de är på fysiska eller virtuella servrar.
-
-{{< inline "Ring" >}} +46 76-629 25 02
-hello@safespring.com
-{{% /custom-card %}}
-
 
 {{< distance >}}
