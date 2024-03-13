@@ -47,7 +47,7 @@ Utifrån det perspektivet kommer EU-domstolen vid en rättslig prövning sannoli
 
 ### Svensk lagstiftning
 
-Det är inte bara den europeiska rätten som spelar roll för svenska verksamheter som planerar sin IT-infrastruktur. Även svensk lagstiftning i form av säkerhetsskyddslagen och offentlighets- och sekretess­lagstiftning spelar in. Det kan till exempel röra tolkningen av begrepp så som "att röja [en sekretessklassad uppgift]", "direktåtkomst", eller skillnaden mellan ett utlämnande och teknisk bearbetning. Idag är det oklart om och hur regeringen gör skillnad mellan den situation att olika myndigheter samarbetar om IT-drift (samordning) och att en enskild myndighet överlägger på en privat aktör att tillhandahålla IT-drift (utkontraktering).[<sup>11</sup>](#källförteckning)
+Det är inte bara den europeiska rätten som spelar roll för svenska verksamheter som planerar sin IT-infrastruktur. Även svensk lagstiftning i form av säkerhetsskyddslagen och offentlighets- och sekretesslagen spelar in. Det kan till exempel röra tolkningen av begrepp så som "att röja [en sekretessklassad uppgift]", "direktåtkomst", eller skillnaden mellan ett utlämnande och teknisk bearbetning. Idag är det oklart om och hur regeringen gör skillnad mellan den situation att olika myndigheter samarbetar om IT-drift (samordning) och att en enskild myndighet avtalar med en privat aktör att tillhandahålla IT-drift (utkontraktering).[<sup>11</sup>](#källförteckning)
 
 Vid analyser av försörjningskedjor kan det uppstå frågor om utsträckningen i vilken man behöver säkerställa att underleverantörer av supporttjänster har eller har haft problematiska medborgarskap. Exempelvis då en balkansk service-tekniker i Tjeckien tillhandahåller systemadministrativa supporttjänster för ett myndighetssystem i Sverige[<sup>12</sup>](#källförteckning). I vissa fall blir kraven så strikta att en säkerhetsgranskning måste genomföras för all personal som hanterar IT-systemet där svenskt medborgarskap är ett krav för att alls få granskas.
 
@@ -119,11 +119,11 @@ Att koden är öppen minskar möjligheterna för leverantörer och implementatö
 3. Europeiska kommissionen. (2023). *C(2023) 4745 final*. Hämtad från [https://commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
 4. Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 131*. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
 5. Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 138*. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
-6. Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 134-135*. Dataskyddsförordningen (GDPR), 679/2016, Artikel 6.1.f.
+6. Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 134-135*. Dataskydds­förordningen (GDPR), 679/2016, Artikel 6.1.f.
 7. Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 126*.
 8. Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 184*.
 9. noyb. (2023, 10 juli). *European Commission gives EU-US data transfers third round at CJEU*. Hämtad från [https://noyb.eu](https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu)
-10. Europeiska dataskyddsombudsmannen. (2024). *EDPS/2024/05*. European Commission’s use of Microsoft 365 infringes data protection law for EU institutions and bodies. Hämtad från [https://www.edps.europa.eu](https://www.edps.europa.eu/system/files/2024-03/EDPS-2024-05-European-Commission_s-use-of-M365-infringes-data-protection-rules-for-EU-institutions-and-bodies_EN.pdf)
+10. Europeiska dataskydds­ombudsmannen. (2024). *EDPS/2024/05*. European Commission’s use of Microsoft 365 infringes data protection law for EU institutions and bodies. Hämtad från [https://www.edps.europa.eu](https://www.edps.europa.eu/system/files/2024-03/EDPS-2024-05-European-Commission_s-use-of-M365-infringes-data-protection-rules-for-EU-institutions-and-bodies_EN.pdf)
 11. Se till exempel Regeringens proposition 2022/23:97. (2023). *Sekretessgenombrott vid utlämnande för teknisk bearbetning eller teknisk lagring av uppgifter.* Stockholm: Finansdepartementet.
 12. Jämför Transportstyrelsens datasäkerhetsskandal sommaren 2017.
 13. Myndigheten för samhällsskydd och beredskap. (n.d.). *MSB1408: Metod för identifiering av samhällsviktig verksamhet*.
