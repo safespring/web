@@ -81,9 +81,9 @@ Att källkoden är öppen minskar möjligheterna för leverantörer och implemen
 - Räkna på hur dataöverförings­kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänst­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. 
     - Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
 - Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. 
-    - Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva även i en generisk S3-leverantörs tjänster.
+    - Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva i alla S3-leverantörers tjänster.
 - Investera i egen identitetshantering istället för att lita på molntjänst-leverantörens. Startsträckan blir lite längre men migration blir mycket enklare.
-- Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade mjukvaru­funktionaliteter (som API:er eller dataformat).
+- Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade API:er och dataformat.
 
 ### Personuppgiftsskydd
 - Gör grundarbetet med GDPR kring hantering av personuppgifter. Se över:
@@ -107,7 +107,7 @@ Att källkoden är öppen minskar möjligheterna för leverantörer och implemen
 - Hur ska ni hantera löpande säkerhets­uppdateringar?
 
 ### Hantering av försörjningskedjan
-- Ha koll på hela värdekedjan:
+- Ha koll på hela försörjningskedjan:
     - Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av PaaS eller SaaS-tillhandahållare.
     - Verifiera att det finns avtal mellan tjänsteleverantören och underleverantören, samt att avtalet överensstämmer med de dataskyddsrättsliga kraven.
     - Kontrollera ifall antingen tjänsteleverantören som sådan eller tjänsteleverantörens underleverantörer har sin legala hemvist i tredjeland. Gör en bedömning av om detta riskerar innebära att tredjelandets myndigheter kan ålägga antingen underleverantören eller tjänsteleverantören att överlämna uppgifter till tredjelandets myndigheter.
