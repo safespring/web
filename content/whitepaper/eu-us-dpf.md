@@ -47,7 +47,7 @@ Utifrån det perspektivet kommer EU-domstolen vid en rättslig prövning sannoli
 
 ### Svensk lagstiftning
 
-Det är inte bara den europeiska rätten som spelar roll för svenska verksamheter som planerar sin IT-infrastruktur. Även svensk lagstiftning i form av säkerhetsskydd och offentlighets- och sekretess­lagstiftning spelar in. Det kan till exempel röra tolkningen av begrepp så som "att röja [en sekretessklassad uppgift]", "direktåtkomst", eller skillnaden mellan ett utlämnande och teknisk bearbetning. Idag är det oklart om och hur regeringen gör skillnad mellan den situation att olika myndigheter samarbetar om IT-drift (samordning) och att en enskild myndighet överlägger på en privat aktör att tillhandahålla IT-drift (utkontraktering).[<sup>11</sup>](#källförteckning)
+Det är inte bara den europeiska rätten som spelar roll för svenska verksamheter som planerar sin IT-infrastruktur. Även svensk lagstiftning i form av säkerhetsskyddslagen och offentlighets- och sekretess­lagstiftning spelar in. Det kan till exempel röra tolkningen av begrepp så som "att röja [en sekretessklassad uppgift]", "direktåtkomst", eller skillnaden mellan ett utlämnande och teknisk bearbetning. Idag är det oklart om och hur regeringen gör skillnad mellan den situation att olika myndigheter samarbetar om IT-drift (samordning) och att en enskild myndighet överlägger på en privat aktör att tillhandahålla IT-drift (utkontraktering).[<sup>11</sup>](#källförteckning)
 
 Vid analyser av försörjningskedjor kan det uppstå frågor om utsträckningen i vilken man behöver säkerställa att underleverantörer av supporttjänster har eller har haft problematiska medborgarskap. Exempelvis då en balkansk service-tekniker i Tjeckien tillhandahåller systemadministrativa supporttjänster för ett myndighetssystem i Sverige[<sup>12</sup>](#källförteckning). I vissa fall blir kraven så strikta att en säkerhetsgranskning måste genomföras för all personal som hanterar IT-systemet där svenskt medborgarskap är ett krav för att alls få granskas.
 
@@ -92,8 +92,7 @@ Att koden är öppen minskar möjligheterna för leverantörer och implementatö
     - hur känsliga personuppgifter det är som behandlas,
     - om det finns någon gallringsrutin implementerad,
     - hur ni informerar privatpersoner om behandlingen, och
-    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit.
-{{< note "Gallring" >}}<p>Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.</p>{{< /note >}}
+    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit. {{< note "Gallring" >}}<p>Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.</p>{{< /note >}}
 - Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster. 
     - Är det känsliga personuppgifter? 
     - Offentliga uppgifter? 
