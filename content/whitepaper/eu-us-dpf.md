@@ -126,4 +126,4 @@ Att källkoden är öppen minskar möjligheterna för leverantörer och implemen
 10. Europeiska dataskydds­ombudsmannen. (2024). *EDPS/2024/05*. European Commission’s use of Microsoft 365 infringes data protection law for EU institutions and bodies. Hämtad från [https://www.edps.europa.eu](https://www.edps.europa.eu/system/files/2024-03/EDPS-2024-05-European-Commission_s-use-of-M365-infringes-data-protection-rules-for-EU-institutions-and-bodies_EN.pdf)
 11. Se till exempel Regeringens proposition 2022/23:97. (2023). *Sekretessgenombrott vid utlämnande för teknisk bearbetning eller teknisk lagring av uppgifter.* Stockholm: Finansdepartementet.
 12. Jämför Transportstyrelsens datasäkerhetsskandal sommaren 2017.
-13. Myndigheten för samhällsskydd och beredskap. (n.d.). *MSB1408: Metod för identifiering av samhällsviktig verksamhet*.
+13. Myndigheten för samhällsskydd och beredskap. (2023). *MSB1408: Metod för identifiering av samhällsviktig verksamhet*.
