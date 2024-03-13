@@ -72,8 +72,9 @@ Att koden är öppen minskar möjligheterna för leverantörer och implementatö
 
 ### Etablera den tidshorisont ni vill jobba på
 - Bestäm på vilken tidshorisont ni planerar er infrastruktur och hur ofta ni vill eftersöka och upphandla nya tjänster. Jämför denna tidshorisont med hur snabbt rättsläget, teknikläget och er organisation i övrigt kan förändras.
-- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva överdenna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. Notera: Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
-- Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}}<p>Om det till exempel antas vara 20% risk för ett fullt stopp avöverföring av personuppgifter till amerikanska tjänster under 12 månader med start om 9 månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?</p>{{< /note >}}
+- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva överdenna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. 
+    - Notera: Vid användning av leverantörers standardavtal är det vanligare att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
+- Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}}<p>Om det till exempel antas vara 20% risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under tolv månader med start om nio månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?</p>{{< /note >}}
 
 ### Skapa förutsättningar för enkel migration.
 - Att bygga sin miljö med containrar (t ex Kubernetes eller Docker) underlättar migration av utvecklings- och produktionsmiljöer mellan leverantörer i förhållande till virtuella servrar eller fysiska servrar.
