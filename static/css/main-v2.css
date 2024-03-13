@@ -7193,7 +7193,7 @@ data-player {
 /* TABLE */
 
 table {
-	width:min(70vw, 1400px);
+	min-width: 100%;
 	border-spacing:0;
 	/*box-shadow:2px 3px 9px 0 rgba(0, 0, 0, 0.10);
 	padding:5%;
@@ -7221,6 +7221,7 @@ th {
 /*border-bottom:1px solid var(--cloud-blue-color);*/;
 padding:10px 20px;
 background-color:none !important;
+white-space: nowrap;
 }
 
 td {
@@ -7228,6 +7229,7 @@ td {
 	font-weight:300;
 	padding:10px 20px;
 /*border-bottom:1px solid var(--cloud-blue-color);*/;
+white-space: nowrap;
 }
 
 td:first-child {
