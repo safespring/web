@@ -26,6 +26,11 @@ Med anledning av EU-kommissionen senaste beslut om dataöverföringar till ameri
 
 I huvudsak förblir rekommendationerna samma. Vi har i vissa delar uppdaterat språket och tagit bort rekommendationer som hänvisar till gamla dataöverförings­beslut. Infrastruktur­planering är ingen ny aktivitet: grundstenarna i det som utgör ett ansvarsfullt grepp om infrastruktur för en överskådlig tid framöver är desamma idag som för femtio år sedan, eller trettio eller fem. Det handlar om att ge sin verksamhet möjligheter att undvika inlåsningar till enskilda leverantörer, att kunna förutsäga och i bästa fall minimera kostnader och underhållskostnader. Både den enskilda verksamheten, Sverige och Europe behöver i ökad utsträckning verka för rådighet över de delar av infrastrukturen som ska vara stabila och fungera, och de delar som ska möjliggöra flexiblitet, förändring och innovation.
 
+{{< quote "Amelia Andersdotter" >}}
+
+Som anmärkts av andra än Safespring finns egentligen få anledningar att tro att förändringarna i nya data­överförings­beslutet innebär “väsentligen samma skydd” som europeisk rätt.
+
+{{< /quote >}}
 
 ## Bakgrund 
 ### Europeiska dataöverförings­beslut
