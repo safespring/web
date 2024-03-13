@@ -1,5 +1,5 @@
 ---
-title: "Cinder CSI volume provisioner"
+title: "OpenStack Cinder CSI volume provisioner"
 date: "2024-03-13"
 intro: "This guide is designed to help you effortlessly integrate the Cinder CSI Volume Provisioner into your OKD or OpenShift cluster."
 draft: false
