@@ -2,7 +2,7 @@
 title: "Göteborgs Universitet tar kontroll över sina backuper"
 language: "Se"
 date: 2024-03-06
-draft: false
+draft: true
 section: "Use case"
 intro: "Genom att kunna lägga upp organisationen i en hierarkisk struktur så kan Göteborgs Universitet följa upp förbrukningen och även sätta upp egna regler för intern debitering"
 background: ""
