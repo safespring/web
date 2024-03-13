@@ -108,7 +108,7 @@ Att källkoden är öppen minskar möjligheterna för leverantörer och implemen
 
 ### Hantering av försörjningskedjan
 - Ha koll på hela försörjningskedjan:
-    - Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av PaaS eller SaaS-tillhandahållare.
+    - Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av andra molntjänstleverantörer.
     - Verifiera att det finns avtal mellan tjänsteleverantören och underleverantören, samt att avtalet överensstämmer med de dataskyddsrättsliga kraven.
     - Kontrollera ifall antingen tjänsteleverantören som sådan eller tjänsteleverantörens underleverantörer har sin legala hemvist i tredjeland. Gör en bedömning av om detta riskerar innebära att tredjelandets myndigheter kan ålägga antingen underleverantören eller tjänsteleverantören att överlämna uppgifter till tredjelandets myndigheter.
 
