@@ -30,7 +30,7 @@ I huvudsak förblir rekommendationerna samma. Vi har i vissa delar uppdaterat sp
 I detta avsnitt utforskar vi konsekvenserna av EU-kommissionens senaste beslut från juli 2023 gällande EU-US Data Protection Framework (DPF), ett viktigt steg efter tidigare avtal som Safe Harbor och Privacy Shield. Vi granskar dess inverkan på dataöverföringar till USA och dess betydelse för svenska verksamheters IT-infrastruktur och datahantering.
 
 {{% quote "Amelia Andersdotter" %}}
-"Som anmärkts av andra än Safespring finns egentligen få anledningar att tro att dessa förändringar innebär 'väsentligen samma skydd'. Proportionalitet, nödvändighet och berättigade intressen är inte absoluta, utan relativa begrepp."
+"Som anmärkts av andra än Safespring finns egentligen få anledningar att tro att förändringarna i nya dataöverföringsbeslutet innebär “väsentligen samma skydd” som europeisk rätt".
 {{% /quote %}}
 
 ### Data­överföringsbeslut
