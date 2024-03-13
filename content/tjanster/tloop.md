@@ -17,7 +17,7 @@ devops: ""
 
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-leaf" text="CO2-minskning" link="#" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-tank-water" text="Flytande kylning" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-tank-water" text="Vätske­kylning" link="" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lägre energikostnader" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-recycle" text="Klimatneutralt" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-scale-balanced" text="Nätbalansering" link="" color="#FA690F">}}
@@ -54,9 +54,9 @@ Enligt EU:s vision för det digitala decenniet är hållbarhet en central del av
 Safespring och T.Loop, i linje med denna vision, prioriterar hållbarhetsaspekter i sina tjänster. Genom att samarbeta för att leverera molntjänster i T.Loop's Data Energy Centers, arbetar Safespring och T.Loop för att främja EU:s vision för ett hållbart digitalt decennium.
 
 {{< distance >}}
-{{< icon-block-horisontal icon="fa-kit fa-safespring-icon" color="#3C9BCD" description="Safespring använder energieffektiva tekniker och förnyelsebara energikällor. Genom att använda våra hållbara molntjänster minskar behovet av lokala lösningar eller globala molntjänster som har ett väsentligt högre klimatavtryck." text="Safespring's hållbarhetsfokus" >}}
-{{< icon-block-horisontal icon="fa-kit fa-tloop" color="#3C9BCD" description="Data Energy Centers är designade för att vara klimatneutrala genom att minska CO2-utsläppen och maximera energieffektiviteten samt återvinna värmen." text="T.Loop's bidrag till hållbarhet" >}}
-{{< icon-block-horisontal icon="fa-kit fa-eu-flag" color="#195F8C" description="Det digitala decenniet inkluderar hållbarhetsmål som omfattar bland annat ökad användning av klimatneutrala teknologier och minskning av energiförbrukningen inom den digitala sektorn." text="EU:s vision för digital hållbarhet" >}}
+  {{< icon-block-horisontal icon="fa-kit fa-safespring-icon" color="#3C9BCD" description="Safespring använder energieffektiva tekniker och förnyelsebara energikällor. Genom att använda våra hållbara molntjänster minskar behovet av lokala lösningar eller globala molntjänster som har ett väsentligt högre klimatavtryck." text="Safespring's hållbarhetsfokus" >}}
+  {{< icon-block-horisontal icon="fa-kit fa-tloop" color="#3C9BCD" description="Data Energy Centers är designade för att vara klimatneutrala genom att minska CO2-utsläppen och maximera energieffektiviteten samt återvinna värmen." text="T.Loop's bidrag till hållbarhet" >}}
+  {{< icon-block-horisontal icon="fa-kit fa-eu-flag" color="#195F8C" description="Det digitala decenniet inkluderar hållbarhetsmål som omfattar bland annat ökad användning av klimatneutrala teknologier och minskning av energiförbrukningen inom den digitala sektorn." text="EU:s vision för digital hållbarhet" >}}
 {{< distance >}}
 
 ## Frågor och svar om T.Loop
@@ -112,10 +112,10 @@ Data Energy Centers® är belägna inuti befintliga byggnader, vilket ger extra 
 {{% /question %}}
 
 {{% question question="Hur tillförlitlig är T.Loops kraft- och kylinfrastruktur?" %}}
-Deras Data Energy Centers® är utformade och byggda enligt de högsta möjliga datacenterstandarderna för att tillhandahålla solida infrastrukturer (upp till Tier 3 & samtidigt underhållbara) som säkerställer den högsta möjliga tillgängligheten enligt dina behov. Dessutom erbjuder de co-location-lösningar baserade på placering av utrustning i två eller flera Data Energy Centers®.
+Deras Data Energy Centers® är utformade och byggda enligt de högsta möjliga datacenter­standarderna för att tillhandahålla solida infrastrukturer (upp till Tier 3 & samtidigt underhållbara) som säkerställer den högsta möjliga tillgängligheten enligt dina behov. Dessutom erbjuder de co-location-lösningar baserade på placering av utrustning i två eller flera Data Energy Centers®.
 {{% /question %}}
 
-{{% question question="Kan jag besöka T.Loops datacenteranläggningar innan jag tecknar avtal om co-location?" %}}
+{{% question question="Kan jag besöka T.Loops datacenter­anläggningar innan jag tecknar avtal om co-location?" %}}
 För att boka en rundtur, vänligen <a href="mailto:hello@tloop.se">kontakta T.Loop</a> så ordnar de en besökstid för dig.
 {{% /question %}}
 
