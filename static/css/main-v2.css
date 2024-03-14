@@ -7287,7 +7287,6 @@ th:last-child {
 		display:block;
 		margin-bottom:10px;
 		padding-bottom:7px;
-		white-space: wrap;
 	}
 
 	table td {
@@ -7295,7 +7294,6 @@ th:last-child {
 		display:block;
 		font-size:.8em;
 		text-align:right;
-		white-space: wrap;
 	}
 
 	table td::before {
@@ -7330,6 +7328,7 @@ th:last-child {
 	}
 	td {
 		text-align:right !important;
+		white-space: pre-wrap;
 	}
 }
 
