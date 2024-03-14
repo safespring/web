@@ -7198,8 +7198,8 @@ table {
 	/*box-shadow:2px 3px 9px 0 rgba(0, 0, 0, 0.10);
 	padding:5%;
 	background-color:white;
-border-radius:10px;*/;
-margin:40px 0 80px 0;
+	border-radius:10px;*/;
+	margin:40px 0 80px 0;
 }
 
 table.width100 {
@@ -7218,18 +7218,18 @@ tbody {
 th {
 	font-weight:300;
 	text-align:left;
-/*border-bottom:1px solid var(--cloud-blue-color);*/;
-padding:10px 20px;
-background-color:none !important;
-white-space: nowrap;
+	/*border-bottom:1px solid var(--cloud-blue-color);*/;
+	padding:10px 20px;
+	background-color:none !important;
+	white-space: nowrap;
 }
 
 td {
 	font:16px/1 var(--mon-font);
 	font-weight:300;
 	padding:10px 20px;
-/*border-bottom:1px solid var(--cloud-blue-color);*/;
-white-space: nowrap;
+	/*border-bottom:1px solid var(--cloud-blue-color);*/;
+	white-space: nowrap;
 }
 
 td:first-child {
@@ -7287,6 +7287,7 @@ th:last-child {
 		display:block;
 		margin-bottom:10px;
 		padding-bottom:7px;
+		white-space: wrap;
 	}
 
 	table td {
@@ -7294,6 +7295,7 @@ th:last-child {
 		display:block;
 		font-size:.8em;
 		text-align:right;
+		white-space: wrap;
 	}
 
 	table td::before {
@@ -8102,7 +8104,7 @@ details[open] summary {
 		height: 100px;
 		margin: 0 0 0 0;
 	}
-		.icon-block-horisontal p {
+	.icon-block-horisontal p {
 		padding: 4% 10%;
 	}
 }
