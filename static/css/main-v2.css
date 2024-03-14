@@ -71,6 +71,10 @@
 	border-radius:10px !important;
 }
 
+html {
+	-webkit-text-size-adjust: 100%; /* Förhindrar att Safari justerar textstorleken */
+}
+
 italic {
 	font: var(--mon-font-italic);
 }
@@ -92,6 +96,11 @@ code {
 	color:#195F8C;
 	overflow:scroll;
 }
+
+code>span {
+	font-size: 13px;
+}
+
 
 pre {
 	position:relative;
@@ -169,6 +178,7 @@ outline:0;
 .highlight {
 	margin:15px 0;
 	max-width:80vw;
+	font-size: 13px;
 }
 
 hr {
