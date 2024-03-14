@@ -93,6 +93,10 @@ code {
 	overflow:scroll;
 }
 
+code>span {
+	font-size: 13px;
+}
+
 pre {
 	position:relative;
 	background:#EAF0F4 !important;
