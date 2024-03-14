@@ -71,6 +71,10 @@
 	border-radius:10px !important;
 }
 
+html {
+	-webkit-text-size-adjust: 100%; /* Förhindrar att Safari justerar textstorleken */
+}
+
 italic {
 	font: var(--mon-font-italic);
 }
@@ -96,6 +100,7 @@ code {
 code>span {
 	font-size: 13px;
 }
+
 
 pre {
 	position:relative;
