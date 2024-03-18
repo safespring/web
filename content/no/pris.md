@@ -170,12 +170,12 @@ Safespring tilbyr IPv4 og IPv6 offentlige IP-adresser, datatrafikk (innkommende 
 ### Programvare og Lisenser
 Maksimer infrastrukturen din med programvare som kjører optimalt på Safesprings plattform.
 
-| Produkt   ID    | Beskrivelse                                | Debitering per | Per måned    |
-|-----------------|--------------------------------------------|----------------|--------------:|
-| SW-win.ser.2022 | Windows Server 2022                        | vCPU           | 78 kr        |
-| SW-ms.sql.ser   | Microsoft SQL Server                       | vCPU           | 1 498 kr     |
-| SW-nextcloud    | Nextcloud Filutveksling                    | N/A            | Be om tilbud  |
-| SW-suse.linux   | SUSE Linux Enterprise Server, 12x5 Support | N/A            | Be om tilbud  |
+| Produkt   ID    | Beskrivelse                                | Debitering per  | Per måned     |
+|-----------------|--------------------------------------------|-----------------|--------------:|
+| SW-win.ser      | Windows Server                             | vCPU            | 175 kr        |
+| SW-ms.sql.ser   | Windows SQL Server standard                | vCPU (min 4vcpu)| 1 229 kr      |
+| SW-nextcloud    | Nextcloud Filutveksling                    | N/A             | Be om tilbud  |
+| SW-suse.linux   | SUSE Linux Enterprise Server, 12x5 Support | N/A             | Be om tilbud  |
 
 ### Plattformtjenester
 Vi tilbyr komplett administrasjon av Kubernetes-miljøene dine, inkludert overholdelse av regler, med Compliant Kubernetes. I tillegg tilbys Managed Elasticsearch, NATS, MariaDB og Redis. Be om tilbud i dag for å få tilgang til disse tjenestene!

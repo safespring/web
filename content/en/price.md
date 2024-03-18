@@ -169,8 +169,8 @@ Maximize your infrastructure with software optimized to run on Safespring's plat
 
 | Product ID         | Description                               | Billing per | Per month    |
 |--------------------|-------------------------------------------|-------------|-------------:|
-| SW-win.ser.2022    | Windows Server 2022                       | vCPU        | €6.94        |
-| SW-ms.sql.ser      | Microsoft SQL Server                      | vCPU        | €133.22      |
+| SW-win.ser      | Windows Server                             | vCPU            | €15.58        |
+| SW-ms.sql.ser   | Windows SQL Server standard                | vCPU (min 4vcpu)| €109.38      |
 | SW-nextcloud       | Nextcloud Filesharing                     | N/A         | Request quote|
 | SW-suse.linux      | SUSE Linux Enterprise Server, 12x5 Support| N/A         | Request quote|
 

@@ -180,10 +180,10 @@ Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattf
 Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelefterlevnad, med Compliant Kubernetes. Dessutom erbjuds Managed Elasticsearch, NATS, MariaDB och Redis. Begär en offert idag för att få tillgång till dessa tjänster!
 
 | Produkt   ID           | Beskrivning                                            | Per månad    |
-|------------------------|--------------------------------------------------------|--------------:|
-| PAAS-man.kubernetes24  | Managed Compliant Kubernetes 24/7                    | Begär offert |
-| PAAS-man.kubernetes8   | Managed Compliant Kubernetes 8/5                     | Begär offert |
-| PAAS-man.elasticsearch | Managed Elasticsearch (ingår i Compliant Kubernetes) | Begär offert |
+|------------------------|--------------------------------------------------------|-------------:|
+| PAAS-man.kubernetes24  | Managed Compliant Kubernetes 24/7                      | Begär offert |
+| PAAS-man.kubernetes8   | Managed Compliant Kubernetes 8/5                       | Begär offert |
+| PAAS-man.elasticsearch | Managed Elasticsearch (ingår i Compliant Kubernetes)   | Begär offert |
 | PAAS-openshift         | Ingen suport                                           | Begär offert |
 | PAAS-man.nats          | Managed NATS                                           | Begär offert |
 | PAAS-man.mariadb       | Managed MariaDB                                        | Begär offert |
