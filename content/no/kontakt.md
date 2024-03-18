@@ -15,7 +15,7 @@ Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har gener
 <a href="tel:+4735688870">+47 35 68 88 70</a>
 
 <span class="inline-rubrik">E-post</span><br>
-<a href="mailto:info@safespring.com">info@safespring.com</a>
+<a href="mailto:hello@safespring.com">hello@safespring.com</a>
 
 <span class="inline-rubrik">Safespring Support</span><br>
 <a href="mailto:support@safespring.com">support@safespring.com</a>
@@ -59,7 +59,6 @@ Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har gener
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
 {{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
-{{< contact-small title="COO" name="Anders Bruvik" email="anders.bruvik@safespring.com" >}}
 {{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
 {{< /flexbox >}}
 
