@@ -164,27 +164,26 @@ Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och e
 | NET-ingress  | Datatrafik                 |                                         | GB             | 0,00 kr      |
 | NET-egress   | Datatrafik                 |                                         | GB             | 0,00 kr      |
 | NET-mgn.slb  | Managed SLB                | Lastbalanserare som kräver egna servrar | Instans        | Begär offert |
-<!--| NET-rdns     | Reverse DNS names          |                                         | N/A            | 0,00 kr      |
-| NET-byoip    | Bring your own IP prefixes |                                         | N/A            | 0,00 kr      |-->
+
 
 ### Mjukvara och Licenser
 Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattform.
 
-| Produkt   ID    | Beskrivning                                | Debitering per | Per månad    |
-|-----------------|--------------------------------------------|----------------|--------------:|
-| SW-win.ser.2022 | Windows Server 2022                        | vCPU           | 78 kr        |
-| SW-ms.sql.ser   | Microsoft SQL Server                       | vCPU           | 1 498 kr     |
-| SW-nextcloud    | Nextcloud Filesharing                      | N/A            | Begär offert |
-| SW-suse.linux   | SUSE Linux Enterprise Server, 12x5 Support | N/A            | Begär offert |
+| Produkt   ID    | Beskrivning                                | Debitering per  | Per månad    |
+|-----------------|--------------------------------------------|-----------------|-------------:|
+| SW-win.ser      | Windows Server                             | vCPU            | 175 kr       |
+| SW-ms.sql.ser   | Windows SQL Server standard                | vCPU (min 4vcpu)| 1 229 kr     |
+| SW-nextcloud    | Nextcloud Filesharing                      | N/A             | Begär offert |
+| SW-suse.linux   | SUSE Linux Enterprise Server, 12x5 Support | N/A             | Begär offert |
 
 ### Plattformstjänster
 Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelefterlevnad, med Compliant Kubernetes. Dessutom erbjuds Managed Elasticsearch, NATS, MariaDB och Redis. Begär en offert idag för att få tillgång till dessa tjänster!
 
 | Produkt   ID           | Beskrivning                                            | Per månad    |
-|------------------------|--------------------------------------------------------|--------------:|
-| PAAS-man.kubernetes24  | Managed Compliant Kubernetes 24/7                    | Begär offert |
-| PAAS-man.kubernetes8   | Managed Compliant Kubernetes 8/5                     | Begär offert |
-| PAAS-man.elasticsearch | Managed Elasticsearch (ingår i Compliant Kubernetes) | Begär offert |
+|------------------------|--------------------------------------------------------|-------------:|
+| PAAS-man.kubernetes24  | Managed Compliant Kubernetes 24/7                      | Begär offert |
+| PAAS-man.kubernetes8   | Managed Compliant Kubernetes 8/5                       | Begär offert |
+| PAAS-man.elasticsearch | Managed Elasticsearch (ingår i Compliant Kubernetes)   | Begär offert |
 | PAAS-openshift         | Ingen suport                                           | Begär offert |
 | PAAS-man.nats          | Managed NATS                                           | Begär offert |
 | PAAS-man.mariadb       | Managed MariaDB                                        | Begär offert |
