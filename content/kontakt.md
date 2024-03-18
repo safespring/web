@@ -12,7 +12,7 @@ pageimage: ""
 För generella frågor kan du med fördel ringa oss eller skicka ett mail vår info-adress, men du är naturligtvis välkommen att kontakta någon av våra medarbetare direkt.
 {{< /ingress >}}
 
-{{< 2calltoaction "08-55 10 73 70" "tel:+46855107370" "info@safespring.com" "mailto:info@safespring.com" >}}
+{{< 2calltoaction "08-55 10 73 70" "tel:+46855107370" "hello@safespring.com" "mailto:hello@safespring.com" >}}
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">

@@ -15,7 +15,7 @@ Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har gener
 <a href="tel:+4735688870">+47 35 68 88 70</a>
 
 <span class="inline-rubrik">E-post</span><br>
-<a href="mailto:info@safespring.com">info@safespring.com</a>
+<a href="mailto:hello@safespring.com">hello@safespring.com</a>
 
 <span class="inline-rubrik">Safespring Support</span><br>
 <a href="mailto:support@safespring.com">support@safespring.com</a>
