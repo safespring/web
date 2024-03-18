@@ -59,7 +59,6 @@ Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har gener
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
 {{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
-{{< contact-small title="COO" name="Anders Bruvik" email="anders.bruvik@safespring.com" >}}
 {{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
 {{< /flexbox >}}
 

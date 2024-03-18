@@ -8,32 +8,33 @@ intro: "Upplev kraften i Compliant Kubernetes hanterad av Elastisys på Safespri
 background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: "Se webbinarium"
-sidebarlinkurl: "/webinar/fireside-chat-compliant-kubernetes/"
-sidebarsection: "MedTech"
-sidebarimage: "safespring-kubernetes.svg"
-sidebartitle: "Webbinarium onsdag 15 sep"
-sidebartext: "Bli en mästare i Kubernetes: Lär dig allt om Compliant Kubernetes och dess fördelar inom MedTech."
-sidebardate: "Compliant Kubernetes"
-sidebarknapp: "Se direkt"
-sidebarlink: "/webinar/fireside-chat-compliant-kubernetes/"
-saas: ""
-sidebarwhitepaper: ""
+sidebarlinkname: "Se videoserie i sju delar"
+sidebarlinkurl: "/webinar/kubernetes-15-principles/"
+sidebarimage: "saas_elastisys.svg"
+sidebartext: " Elastisys Compliant Kubernetes gör det enkelt att skapa kluster med hög regelefterlevnad, medan vi ser till att er infrastruktur är optimerad för era specifika behov."
 ---
+
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-person-chalkboard" text="Certifierade experter" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-file-shield" text="GDPR Compliant" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-life-ring" text="Svensk support" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
 Redo att gå över till Compliant Kubernetes? Låt experter från Elastisys ta hand om driften medan ni behåller full kontroll och säkerhet på Safesprings robusta infrastruktur.
 {{< /ingress >}}
 
-![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
-
-### Få bästa möjliga stöd med DevOps och Kubernetes
 Med Elastisys vid rodret kan vi erbjuda Compliant Kubernetes som en fullständigt hanterad tjänst på Safesprings infrastruktur.
 
 Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers men också skapare av den öppna Kubernetes-distributionen Compliant Kubernetes. De är dessutom en framstående medlem av Cloud Native-communityn. Vi erbjuder inte bara managerade tjänster men också skräddarsydda utbildningar och konsultationer.
+{{< distance >}}
 
-![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
+{{% horisontal-card image="/img/event/cards/safespring-gabriel-lars.jpg" link="/webinar/kubernetes-15-principles/" linktext="Se videoserien" cardtitle="Sju avsnitt om Kubernetes" text="I denna webbserie kommer vi att utforska hur man designar och driftsätter skalbara applikationer på Kubernetes." %}}
 
+<!--
 <div class="videoplayer">
   <div class="iframe-aspect-ratio iframe responsive-container">
     <div id="player">
@@ -76,9 +77,12 @@ Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers
     </ul>
   </div>
 </div>
+-->
+
+![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
 
-### Varför välja Compliant Kubernetes?
+## Varför välja Compliant Kubernetes?
 Kubernetes i sin renaste form är inte säkert. Compliant Kubernetes är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)

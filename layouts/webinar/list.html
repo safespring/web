@@ -1,42 +1,3 @@
-
-{{ if eq $.Params.title "Aktuellt" }}
-{{ partial "aktuellt.html" . }}
-
-{{ else if eq $.Params.title "Kontakt oss på Safespring" }}
-{{ partial "no-kontakt.html" . }}
-
-{{ else if eq $.Params.title "Pris" }}
-{{ partial "pris.html" . }}
-
-{{ else if eq $.Params.title "Price" }}
-{{ partial "price.html" . }}
-
-{{ else if eq $.Params.title "Pris tack" }}
-{{ partial "pris-tack.html" . }}
-
-{{ else if eq $.Params.title "Pris-old" }}
-{{ partial "pris-old.html" . }}
-
-{{ else if eq $.Params.title "Dokumentation" }}
-{{ partial "dokumentation.html" . }}
-
-{{ else if eq $.Params.title "Tack för ditt meddelande" }}
-{{ partial "tack.html" . }}
-
-{{ else if eq $.Params.title "tack-event" }}
-{{ partial "tack-event.html" . }}
-
-{{ else if eq $.Params.title "opplev" }}
-{{ partial "opplev.html" . }}
-
-{{ else if eq $.Params.title "start" }}
-{{ partial "start.html" . }}
-
-{{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
-{{ partial "explorer.html" . }}
-
-{{ else }}
-
 {{ partial "head.html" . }}
 
 <!-- NAVBAR -->
@@ -129,20 +90,7 @@ document.getElementById('scrollRight').addEventListener('click', function() {
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
-
-    <!-- Lista för övriga sidor, exkluderar seriens sammanfattningar -->
-    <div class="flexcontainer">
-      {{ range .Pages }}
-      {{ if not .IsSection }}
-      <div class="content-container">
-        {{ .Render "li-latest"}}
-      </div>
-      {{ end }}
-      {{ end }}
-    </div>
-    {{ end }}
-  </div>
-
+ </div>
 
   <!-- SIDEBAR -->
   <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->

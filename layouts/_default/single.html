@@ -38,9 +38,7 @@
     </div>
 
     {{ end }}
-
     {{ .Content }}
-    
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
   </div>
