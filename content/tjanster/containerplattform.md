@@ -21,7 +21,7 @@ sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
 
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP för lastbalanserare" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP för last­balanserare" link="" color="#195F8C">}}
     {{< icon-block icon="fa-kit fa-nvme" text="Snabb lokal disk till ETCD" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-kit fa-api" text="Powerful automation" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-network-wired" text="Stabilt nätverk" link="" color="#FA690F">}}
