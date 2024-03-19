@@ -24,7 +24,15 @@ aliases:
 megamenu: "yes"
 ---
 
-![Safespring Storage benefits](/img/safespring-storage-key-points.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3 Protocol Support" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Encrypted Hard Drives" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-calendar-xmark" text="Immutable Objects" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Offsite Backup" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-coins" text="Cost Effective" link="" color="#32cd32">}}
+{{< /icon-block-container >}}
+
 
 
 {{< ingress >}}
@@ -56,7 +64,7 @@ Ceph erbjuder katastrofåterställning och dataredundans genom tekniker som repl
 Säkra dina data i molnet. Storskalig lagring är avgörande för alla datadrivna företag. Låt oss bjuda på lunch, boka in en tid idag!
 
 {{< inline "Ring" >}} +46 76-629 25 02
-fredric.wallsten@safespring.com
+hello@safespring.com
 {{% /custom-card %}}
 
 {{< distance >}}

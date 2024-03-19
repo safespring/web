@@ -1,13 +1,21 @@
 ---
 title: "Miljö och hållbarhet"
-date: 2019-01-07T13:58:58+01:00
+date: 2024-03-19
 draft: false
 intro: "Att värna om miljön är för oss en självklarhet. Våra tjänster produceras i miljöeffektiva datahallar och vi har ett hållbart arbetssätt."
 background: "safespring-environment-2022.webp"
 socialmedia: "safespring-miljo.jpg"
-sidebarlinkname: "Miljöpolicy (pdf)"
-sidebarlinkurl: "/documents/safespring-environment-policy-2019.pdf"
 ---
+
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-leaf" text="100% Förnyelsebara energikällor" link="#safesprings-hållbarhetsarbete" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-recycle" text="Hållbar återvinning" link="#resursutnyttjande-och-återanvändning" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-thermometer-three-quarters" text="Värme­återvinning" link="#safespring-stockholm-norr" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-route" text="Resurs­effektivisering" link="#miljöhänsyn-vid-inköp-och-upphandling" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-award" text="ISO 14001 ramverk" link="#iso-14001-ramverk-för-vår-miljöpolicy" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-hand-holding-water" text="Adiabatisk kylsystems­teknologi" link="#safespring-oslo" color="#195F8C">}}
+{{< /icon-block-container >}}
+
 
 {{< ingress >}}
 Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan. Ett viktigt steg vi har tagit är att säkerställa att våra datacenter använder 100% förnyelsebar energi. 
@@ -16,6 +24,8 @@ Vi på Safespring är stolta över att vara ett företag som arbetar hårt för 
 Genom att välja förnyelsebar energi undviker vi koldioxidutsläpp som annars skulle vara skadliga för miljön.
 
 För att bekräfta vår hållbarhetsprestanda, har vi valt att låta våra tjänster certifieras av "The Green Web Foundation". Denna organisation arbetar för att stärka internet som en grön plats och certifierar företag som använder förnybar energi för sin webbsida och sina digitala tjänster. Att ha våra tjänster certifierade av The Green Web Foundation är ett steg i rätt riktning för att bli en grönare organisation.
+
+![This website is hosted Green - checked by thegreenwebfoundation.org](https://api.thegreenwebfoundation.org/greencheckimage/safespring.com?nocache=true)
 
 Men det är inte bara vår användning av förnybar energi som gör oss till en hållbar verksamhet. Alla våra datacenter är designade för att ha ett PUE under 1,2. PUE står för "Power Usage Effectiveness" och är en viktig faktor för att mäta energieffektiviteten för ett datacenter. En PUE på under 1,2 innebär att vi använder minimal mängd energi för att driva våra datacenter, vilket är en viktig del av att minska vår miljöpåverkan.
 
@@ -48,10 +58,10 @@ Safespring fokuserar med avseende på ISO 14001 främst på minskade koldioxidav
 
 ### Safesprings miljömål
 
-- Årligen mäta Safesprings CO2-avtryck.
-- Sänka vårt CO2-avtryck i förhållande till omsättning.
-- Återvinna allt material så klimatsmart och hållbart som möjligt.
-- Kontinuerligt utbilda och informera Safesprings personal i vårt miljöarbete.
+{{< icon-block-horisontal icon="fa-solid fa-file-chart-pie" color="#195F8C" description="Årligen mäta Safesprings CO2-avtryck för att öka transparensen och uppmuntra ansvarstagande." text="Mätning av CO2-avtryck" >}}
+{{< icon-block-horisontal icon="fa-solid fa-down-left-and-up-right-to-center" color="#195F8C" description="Aktivt arbeta för att minska vårt CO2-avtryck i förhållande till omsättningen." text="Reducera CO2 per omsättning" >}}
+{{< icon-block-horisontal icon="fa-solid fa-recycle" color="#195F8C" description="Återvinna allt material på ett klimatsmart och hållbart sätt, för att minska vårt avfall och stödja en cirkulär ekonomi." text="Hållbar återvinning" >}}
+{{< icon-block-horisontal icon="fa-solid fa-chalkboard-teacher" color="#195F8C" description="Ständig utbildning och information till Safesprings personal om vårt miljöarbete för att främja en hållbar arbetskultur." text="Utbildning i hållbarhet" >}}
 
 ### Miljöhänsyn vid inköp och upphandling
 

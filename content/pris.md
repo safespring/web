@@ -85,10 +85,8 @@ Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster.
 |-----------------|---------------------------|-------------:|----------------:|
 | VOLUME-large    | HDD-backed 3-replica Ceph |   0,00167 kr |         1,20 kr |
 | VOLUME-fast     | SSD-backed 3-replica Ceph |   0,00500 kr |         3,60 kr |
-<!--| VOLUME-snapshot | Snapshot of image         |   0,00167 kr |         1,20 kr |-->
 
 {{< distance >}}
-
 
 ## Safespring Storage (S3)
 
@@ -99,11 +97,9 @@ Safespring erbjuder två anpassade S3-produkter för olika lagringsbehov: S3-arc
 | Produkt   ID | Förklaring                                                       |       Per TB i 30 dagar |
 |--------------|------------------------------------------------------------------|------------------------:|
 | S3-archive   | Anpassad för större   lagringsvolymer över längre tid.           |                 350 kr  |
-| S3-storage   | Anpassad för   applikationer som aktivt använder S3-protokollet. |                 500 kr  |
+| S3-storage   | Anpassad för applikationer som aktivt använder S3-protokollet.   |                 500 kr  |
 
 {{< distance >}}
-
-
 
 ## Safespring Backup
 
@@ -142,11 +138,10 @@ Safespring Backup erbjuder datareduktionsteknik i tjänsten som vanligtvis minsk
 {{< accordion-script >}}
 
 | Produkt   ID   | Fast   månadspris | Per   GB i 30 dagar |
-|----------------|-------------------|---------------------:|
+|----------------|-------------------|--------------------:|
 | BAAS-on.demand | N/A               | 2,45 kr             |
 | BAAS-small     | 5 500 kr          | 1,75 kr             |
 | BAAS-large     | 9 500 kr          | 0,92 kr             |
-
 
 
 ## Nätverk och Mjukvara
@@ -158,7 +153,7 @@ Safespring erbjuder en del mjukvaror och licenser som kan köra ovanpå Safespri
 ### Nätverk
 Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och egress) utan extra kostnad, Reverse DNS-names och Bring Your Own IP-prefixes. Dessutom kan kunder begära en offert för deras hanterade lastbalanserare som kräver egna servrar.
 | Produkt   ID | Typ                        | Beskrivning                             | Debitering per | Per månad    |
-|--------------|----------------------------|-----------------------------------------|----------------|--------------:|
+|--------------|----------------------------|-----------------------------------------|----------------|-------------:|
 | NET-publicv4 | IPv4                       | Publik                                  | IP-adress      | 25 kr        |
 | NET-publicv6 | IPv6                       | Publik                                  | N/A            | 0,00 kr      |
 | NET-ingress  | Datatrafik                 |                                         | GB             | 0,00 kr      |
@@ -200,16 +195,16 @@ Vi erbjuder olika nivåer av support för molninfrastruktur. Dessutom erbjuder v
 Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.-->
 
 | Produkt   ID     | Beskrivning                                                  | Debitering per | Pris                 |
-|------------------|--------------------------------------------------------------|----------------|----------------------:|
+|------------------|--------------------------------------------------------------|----------------|---------------------:|
 | SUPPORT-base     | Support för Safesprings tjänster                             | N/A            | 0,00 kr              |
-| SUPPORT-standard | Access to backchannel chat room with support and engineering | Total volym    | 3 % av total volym  |
+| SUPPORT-standard | Access to backchannel chat room with support and engineering | Total volym    | 3 % av total volym   |
 | SUPPORT-premium  | Dedicated Service Manager with quarterly operations meetings | Timme          | Begär offert         |
 
 ### Konsulttjänster
 Få tillgång till våra erfarna konsulter och projektledare för att optimera din molninfrastruktur till konkurrenskraftiga priser, med juniora experter som börjar på 1 127 kr/timme och seniora experter som når upp till 1 374 kr/timme.
 
 | Produkt   ID     | Beskrivning                                                       | Debitering per | Pris     |
-|------------------|-------------------------------------------------------------------|----------------|----------:|
+|------------------|-------------------------------------------------------------------|----------------|---------:|
 | PS-consult.jun   | Cloud Infrastructure Consultant, junior expertise level           | Timme          | 1 127 kr |
 | PS-consult.sen   | Cloud infrastructure Consultant, senior expertise level           | Timme          | 1 374 kr |
 | PS-cloudarch.jun | Cloud Infrastructure Architect Consultant, junior expertise level | Timme          | 1 277 kr |
@@ -221,7 +216,7 @@ Få tillgång till våra erfarna konsulter och projektledare för att optimera d
 Lär dig allt om moderna IT-tjänster med Safesprings kurspaket, inklusive introduktioner till "infrastruktur som tjänst" och moln-infrastrukturteknik, samt fördjupade kurser om molnstrategi och modern DevOps med "microservices". Begär offert idag för att ta din verksamhet till nästa nivå!
 
 | Produkt   ID                | Beskrivning                                  | Längd      | Debitering per | Pris         |
-|-----------------------------|----------------------------------------------|------------|----------------|--------------:|
+|-----------------------------|----------------------------------------------|------------|----------------|-------------:|
 | COURSE-intro.iaas           | Introduktion till "infrastruktur som tjänst" | En dag     | Tillfälle      | Begär offert |
 | COURSE-cxo.strategy         | Molnstrategi för ledningsgrupper,            | En dag     | Tillfälle      | Begär offert |
 | COURSE-intro.cloud          | Introduktion till moln-infrastrukturteknik,  | Fyra dagar | Tillfälle      | Begär offert |
