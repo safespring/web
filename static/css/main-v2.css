@@ -8106,12 +8106,12 @@ details[open] summary {
 @media screen and (max-width:900px) {
 	.icon-block-horisontal {
 		flex-direction: column;
-		padding-right: 0px;
+		padding-right: 0px !important;
 	}
 
 	.icon-block-color {
 		height: 100px;
-		margin: 0 0 0 0;
+		margin: 0 0 0 0 !important;
 	}
 	.icon-block-horisontal p {
 		padding: 4% 10%;
