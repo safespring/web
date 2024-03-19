@@ -23,13 +23,22 @@ socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 ---
 
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3 Protocol Support" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Encrypted Hard Drives" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-calendar-xmark" text="Immutable Objects" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Offsite Backup" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-coins" text="Cost Effective" link="" color="#32cd32">}}
+{{< /icon-block-container >}}
+
 ## Safespring lagring som tjeneste
 
 {{< ingress >}}
 Safesprings skybaserte lagring bygger på den markedsledende lagringsteknologien Ceph.
 {{< /ingress >}}
 
-_Få informasjon om alle tjenestene våre i [servicekatalogen](/services/safespring-service-catalogue-2020.pdf) vår._
+_Få informasjon om alle tjenestene våre i [servicekatalogen](/service-catalogue) vår._
 
 Tjenesten leveres fra sikre datasentre med høy tilgjengelighet. Data forlater aldri Norge, siden datasentrene fysisk ligger her i landet. Data lagres krypterte på harddisker, og tjenesten er fleksibel og fullt automatisert. Brukeren kan selv med få, enkle tiltak skape nye dataområder.
 

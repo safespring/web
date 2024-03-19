@@ -1,7 +1,7 @@
 ---
 title: "Safespring onboarding for WeWork"
 date: 2019-06-10T13:05:26+02:00
-draft: false
+draft: true
 intro: "Skapa ett konto hos Safespring genom att fylla i formuläret nedan. Skicka in formuläret en gång för varje kontakt som ska ha tillgång till projektet."
 background: "safespring-devops.jpg"
 sidebarlinkname: "Fyll i formulär"

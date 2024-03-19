@@ -22,7 +22,14 @@ socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 ---
 
-![Safespring Storage benefits](/img/safespring-storage-key-points.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3 Protocol Support" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Encrypted Hard Drives" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-calendar-xmark" text="Immutable Objects" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Offsite Backup" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-coins" text="Cost Effective" link="" color="#32cd32">}}
+{{< /icon-block-container >}}
 
 {{% ingress %}}
 Looking for reliable and secure cloud-based storage? Safespring offers three different options based on the market-leading Ceph storage technology, all provided from our secure data centers in Sweden.
