@@ -5,6 +5,7 @@ draft: false
 intro: "Att värna om miljön är för oss en självklarhet. Våra tjänster produceras i miljöeffektiva datahallar och vi har ett hållbart arbetssätt."
 background: "safespring-environment-2022.webp"
 socialmedia: "safespring-miljo.jpg"
+TOC: "På denna sida"
 ---
 
 {{< icon-block-container >}}
@@ -129,9 +130,15 @@ Byggstandarden är designad för tillgänglighetskrav Tier-3 enligt Safesprings 
 
 ### Safespring Oslo
 
-Den här fastigheten är det största befintliga datacentret i Norge och drivs helt av vattenkraft.
-Datacentret kommer att samarbeta med flera parter för att underlätta vattenkraftgenererade datacenter till nationella och internationella kunder. Den här fastigheten är det största befintliga datacentret i Norge. Ledande internationella datacenters operatörer hyr ca. 6000 kvadratmeter i byggnaden. Fastigheten har 22 MW kraftkapacitet installerad och potentialen att expandera för datacenter operatörer är stor. Byggnaden är totalt 25 000 kvadratmeter. Safespring producerar Compute, och Storage i det här datacentret.
+Safespring Oslo utmärker sig genom sin hållbarhetsprofil och avancerade teknik. Anläggningen drivs helt av förnybar energi från vattenkraft, vilket speglar vårt åtagande att minimera miljöpåverkan. Med kapacitet för 200 serverrack och en effektförmåga på 1 MW, säkerställer vi både tillförlitlighet och skalbarhet för våra kunders behov. 
 
-Datacentret har en återvinningsstation på området som är anpassat för miljövänlig återvinning av hårdvara. De har även ett program för förnyelse av hårdvaruprodukter på plats.
+Datacentret är också förberett för att bidra till fjärrvärmesystem, vilket ytterligare bekräftar vår strävan efter hållbarhet. Certifieringar som Eco-Lighthouse och ISO 27001:2022 understryker vårt fokus på både miljö och säkerhet.
 
-Datacentret använder även den senaste adiabatiska indirekta kylsystemsteknologin där de samlar in regnvatten för att kyla ner anläggningen.
+- Drivs med 100% förnybar energi från vattenkraft
+- Solpaneler för nätverksutrustning
+- Värmeåteranvändning för uppvärmning av byggnader
+- Certifieringar:
+	- Eco-Lighthouse Foundation, 
+	- Climate Neutral Data Center Pact, 
+	- ISO 27001:2022
+
