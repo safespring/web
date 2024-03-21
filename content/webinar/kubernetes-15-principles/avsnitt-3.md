@@ -19,12 +19,6 @@ nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-elastisys_webcast_episode_3/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-3.jpeg"
-categories:
-  - "Kategori1"
-  - "Kategori2"
-tags:
-  - "Tag1"
-  - "Tag2"
 chaptersTitle: "I detta avsnitt"
 chapters:
   - title: "Om detta avsnitt"

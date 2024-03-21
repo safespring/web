@@ -16,12 +16,6 @@ sidebarlinkname2: "Kontakta oss"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna–talarslot-2023/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg"
-categories:
-  - "Kategori1"
-  - "Kategori2"
-tags:
-  - "Tag1"
-  - "Tag2"
 chaptersTitle: "I detta seminarie"
 chapters:
 - title: "Är det en katt?"

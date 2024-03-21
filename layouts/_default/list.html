@@ -50,26 +50,6 @@
 {{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
-  <!--div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
-    {{ .Content }}
-    {{ if .Params.nolist }}
-    {{ else if eq .Params.list "indexcard" }}
-    <div class="flexcontainer-three">
-      {{ range .Pages }}
-      {{ .Render "li-index"}}
-      {{ end }}
-    </div>
-    {{ else }}
-    <div class="flexcontainer">
-      {{ range .Pages }}
-      <div class="content-container">
-        {{ .Render "li-latest"}}
-      </div>
-      {{ end }}
-    </div>
-    {{ end }}
-  </div>-->
-
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
 
