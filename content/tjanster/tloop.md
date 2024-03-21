@@ -112,6 +112,8 @@ Data Energy Centers® är belägna inuti befintliga byggnader, vilket ger extra 
 {{% /question %}}
 
 {{% question question="Hur tillförlitlig är T.Loops kraft- och kylinfrastruktur?" %}}
+Genom att erbjuda vätskekylda serverlösningar så kan T.Loop säkerställa driftsäkerhet även vid höga utomhustemperaturer. 
+
 Deras Data Energy Centers® är utformade och byggda enligt de högsta datacenter­standarderna för att tillhandahålla solid infrastruktur (upp till Tier 3 och samtidigt redundanta) som säkerställer den högsta möjliga tillgängligheten enligt dina behov. Dessutom erbjuder de co-location-lösningar baserade på placering av utrustning i två eller flera Data Energy Centers®.
 {{% /question %}}
 
