@@ -9,14 +9,14 @@ background: ""
 form: ""
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo"
-sidebarlinkname2: "Kontkta Safespring"
+sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
 socialmedia: ""
 devops: ""
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-leaf" text="CO2-minskning" link="#" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-leaf" text="100% CO2-minskning" link="#" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-tank-water" text="Vätske­kylning" link="" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lägre energikostnader" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-recycle" text="Klimatneutralt" link="" color="#3C9BCD">}}
@@ -25,10 +25,10 @@ devops: ""
 {{< /icon-block-container >}}
 
 {{< ingress >}}
-För att uppfylla de mest krävande hållbarhetsmålen är Safespring Private Cloud i T.Loops Data Energy Center en bra start på er molnresa.
+För att uppfylla de mest krävande hållbarhetsmålen är Safespring Private Cloud i T.Loops Data Energy Center® en bra start på er molnresa.
 {{< /ingress >}}
 
-T.Loop är en innovativ aktör inom co-location-tjänster som fokuserar på hållbarhet och högkvalitativ infrastruktur genom sina Data Energy Centers®. Genom att integrera de senaste teknologierna för energieffektivitet och återvinning av överskottsvärme strävar T.Loop efter att minska CO2-utsläppen samtidigt som de erbjuder pålitliga och säkra datacenterlösningar.
+T.Loop är en innovativ aktör inom co-location-tjänster som fokuserar på hållbarhet och högkvalitativ infrastruktur genom sina Data Energy Centers®. Genom att integrera de senaste teknologierna för energieffektivitet och återvinning av överskottsvärme strävar T.Loop efter att minska CO2-utsläppen kraftigt samtidigt som de erbjuder pålitliga och säkra datacenterlösningar.
 
 Genom att välja att placera Safesprings Private Cloud hos T.Loop får du tillgång till en miljövänlig och effektiv infrastruktur som är utformad för att möta dina behov av tillgänglighet, skalbarhet och suveränitet. Tillsammans erbjuder vi en komplett och hållbar molnlösning som gör att du kan behålla kontroll och ägandeskap.
 
@@ -45,17 +45,17 @@ Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjä
 
 {{< distance >}}
 
-## Hållbarhet i EU:s digitala decenium
+## Hållbarhet i EU:s digitala decennium
 
 {{< ingress >}}
 Enligt EU:s vision för det digitala decenniet är hållbarhet en central del av den digitala omställningen. 
 {{< /ingress >}}
 
-Safespring och T.Loop, i linje med denna vision, prioriterar hållbarhetsaspekter i sina tjänster. Genom att samarbeta för att leverera molntjänster i T.Loop's Data Energy Centers, arbetar Safespring och T.Loop för att främja EU:s vision för ett hållbart digitalt decennium.
+Safespring och T.Loop, i linje med denna vision, prioriterar hållbarhetsaspekter i sina tjänster. Genom att samarbeta för att leverera molntjänster i T.Loop's Data Energy Centers®, arbetar Safespring och T.Loop för att främja EU:s vision för ett hållbart digitalt decennium.
 
 {{< distance >}}
   {{< icon-block-horisontal icon="fa-kit fa-safespring-icon" color="#3C9BCD" description="Safespring använder energieffektiva tekniker och förnyelsebara energikällor. Genom att använda våra hållbara molntjänster minskar behovet av lokala lösningar eller globala molntjänster som har ett väsentligt högre klimatavtryck." text="Safespring's hållbarhetsfokus" >}}
-  {{< icon-block-horisontal icon="fa-kit fa-tloop" color="#3C9BCD" description="Data Energy Centers är designade för att vara klimatneutrala genom att minska CO2-utsläppen och maximera energieffektiviteten samt återvinna värmen." text="T.Loop's bidrag till hållbarhet" >}}
+  {{< icon-block-horisontal icon="fa-kit fa-tloop" color="#3C9BCD" description="Data Energy Centers® är designade för att vara klimatneutrala genom att minska CO2-utsläppen och maximera energieffektiviteten samt återvinna värmen." text="T.Loop's bidrag till hållbarhet" >}}
   {{< icon-block-horisontal icon="fa-kit fa-eu-flag" color="#195F8C" description="Det digitala decenniet inkluderar hållbarhetsmål som omfattar bland annat ökad användning av klimatneutrala teknologier och minskning av energiförbrukningen inom den digitala sektorn." text="EU:s vision för digital hållbarhet" >}}
 {{< distance >}}
 
@@ -70,7 +70,7 @@ De ser dessa lösningar som ett kvalificerat sätt att använda Data Energy Cent
 {{% /question %}}
 
 {{% question question="Vad skiljer T.Loops Co-location-tjänster från traditionella datacenter?" %}}
-De designar och bygger sitt Data Energy Center® med hållbarhet och energiåtervinning i åtanke. De använder cirkulär tänkande i konstruktionen genom att använda befintliga installationer i redan byggda faciliteter. De ser datacentret, inte bara som en säker plats för servrar och lagring, utan också som en del av energisystemet. Således undviker de med en solid infrastruktur fossilbaserade stödsystem.
+De designar och bygger sitt Data Energy Center® med hållbarhet och energiåtervinning i åtanke. De använder cirkulärt tänkande i konstruktionen genom att använda befintliga installationer i redan byggda faciliteter. De ser datacentret, inte bara som en säker plats för servrar och lagring, utan också som en del av energisystemet. Således undviker de med en solid infrastruktur fossilbaserade stödsystem.
 {{% /question %}}
 
 {{% question question="Vad skiljer T.Loops Colocation-tjänster på marknaden?" %}}
@@ -83,11 +83,11 @@ De gör din IT mer hållbar genom att fokusera på energicirkularitet i hjärtat
 - De placerar Data Energy Centers® nära datakällan för att möta kraven på låg latens.
 - De ökar tillgängligheten genom att ansluta flera Data Energy Centers®. Det ger bättre redundans och fler valmöjligheter för kunderna.
 
-Sammanfattningsvis erbjuder de mindre kol i beräkning, mindre kol i fastigheter och friskare energinät!
+Sammanfattningsvis erbjuder de mindre koldioxid i beräkning, mindre koldioxid i fastigheter och friskare energinät!
 {{% /question %}}
 
 {{% question question="Hur mycket lägre CO₂ kan Safespring Private Cloud hos T.Loop erbjuda jämfört med min nuvarande installation?" %}}
-De kan hjälpa dig att beräkna ditt nuvarande fotavtryck om de får detaljer om din användning. Huvudsakligen baseras den beräknade CO₂:n på din PUE och hur många kWh du använder. Om du behöver hjälp, vänligen <a href="mailto:daniel.melin@safespring.com">kontakta Daniel Melin på Safespring</a>.
+De kan hjälpa dig att beräkna ditt nuvarande klimatavtryck om de får detaljer om din användning. Huvudsakligen baseras den beräknade CO₂:n på din PUE och hur många kWh du använder. Om du behöver hjälp, vänligen <a href="mailto:daniel.melin@safespring.com">kontakta Daniel Melin på Safespring</a>.
 {{% /question %}}
 
 {{% question question="Erbjuder T.Loop även Data Energy Centers® för Safespring On-Prem Cloud?" %}}
