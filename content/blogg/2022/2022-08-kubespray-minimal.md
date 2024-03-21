@@ -1,7 +1,7 @@
 ---
 title: "Setting up a minimal Kubernetes cluster on Safespring using Kubespray"
 date: "2022-08-22"
-intro: "This post shows one way you can get from no resources to a minimal Kubernetes cluster with code only."
+intro: "Safespring is a cloud platform built on OpenStack. This post shows one way you can get from no resources to a minimal Kubernetes cluster with code only."
 draft: false
 tags: ["English"]
 showthedate: true
