@@ -12,7 +12,7 @@ eventbild: ""
 socialmediabild: ""
 language: "En"
 TOC: "In this guide"
-sidebarlinkname: "To Git-repository"
+sidebarlinkname: "GitHub repository"
 sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 ---
@@ -28,6 +28,11 @@ This guide is designed to help you effortlessly integrate the Cinder CSI Volume 
 Moreover, this guide is not exclusive to OpenShift or OKD environments; it can be easily adapted for use in vanilla Kubernetes setups with a simple modification. A key highlight for OKD and OpenShift users is the inclusion of Security Context Constraints (SCC) cluster role bindings in the Helm chart's templates directory. This critical feature enables the Cinder CSI pods to run with privileged access, aligning them with OpenShift's security practices and ensuring their optimal functionality within your cluster's security framework.
 
 Throughout this guide, we will take you step by step through the installation process, providing clear instructions and helpful tips to ensure a successful integration. Whether you're new to OpenShift or an experienced administrator, this guide aims to provide you with all the necessary information to enhance your cluster's storage capabilities with the Cinder CSI Volume Provisioner.
+
+{{% note "Git-repository" %}}
+This guide is accompanied by a complete set of code examples available on our GitHub repository. For easy access to all the scripts, configurations, and templates used throughout this guide, please visit [safespring-community/utilities](https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi) on GitHub. This will ensure you have everything you need to successfully integrate the Cinder CSI Volume Provisioner into your environment.
+
+{{% /note %}}
 
 ## Setting up your secret for OpenStack authentication
 
