@@ -12,7 +12,12 @@ eventbild: ""
 socialmediabild: ""
 language: "En"
 TOC: "In this guide"
+sidebarlinkname: "To Git-repository"
+sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
+sidebarlinkicon: "fa-arrow-up-right-from-square"
 ---
+
+
 
 {{< ingress >}}
 Have you configured your OKD or OpenShift cluster with the platform option set to "none" and, as a result, are missing the OpenStack Cinder CSI Driver Operator?
