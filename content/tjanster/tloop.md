@@ -91,7 +91,7 @@ De kan hjälpa dig att beräkna ditt nuvarande klimatavtryck om de får detaljer
 {{% /question %}}
 
 {{% question question="Erbjuder T.Loop även Data Energy Centers® för Safespring On-Prem Cloud?" %}}
-Konceptet Data Energy Center® kan tillämpas på många datacenterplatser. T.Loop erbjuder ett ombyggnadsprogram som är specifikt anpassat till dina behov, även om de aldrig kompromissar med att placera datacentret i byggnadens energisystem. T.Loop kommer att vara leverantören av den fortsatta datacentertjänsten.
+T.Loops koncept kan anpassas helt utifrån dina behov, även om de aldrig kompromissar på restvärmeåtervinningen. T.Loop kommer att vara leverantören av den fortsatta datacentertjänsten.
 {{% /question %}}
 
 {{% question question="Vilka typer av avtal erbjuder T.Loop, och kan jag anpassa min serviceavtalsnivå (SLA)?" %}}
@@ -99,7 +99,7 @@ T.Loop erbjuder ett co-location-kundavtal (kontrakt) där de inkluderar tjänsto
 {{% /question %}}
 
 {{% question question="Vilken prismodell har T.Loop för co-location-tjänster?" %}}
-De erbjuder anpassad prissättning för våra co-location-tjänster baserat på faktorer som den nödvändiga utrymmesmängden, nivån på kraft och kylning samt nätverks­kommunikations­kraven. De vill tillgodose dina behov, vänligen <a href="mailto:daniel.melin@safespring.com">kontakta Daniel Melin på Safespring</a> för en specifik offert.
+De erbjuder anpassad prissättning för våra co-location-tjänster baserat på faktorer som den nödvändiga utrymmesmängden, nivån på kraft och kylning samt nätverks­kommunikations­kraven. Genom sin restvärmeåtervinning och effektiva energistyrning kan T.Loop erbjuda mycket konkurrenskraftiga priser på energikostnaden. För en specifik offert vänligen kontakta Daniel Melin på Safespring.
 {{% /question %}}
 
 {{% question question="Vilka säkerhetsåtgärder har T.Loop på plats för att skydda min utrustning?" %}}
@@ -112,7 +112,9 @@ Data Energy Centers® är belägna inuti befintliga byggnader, vilket ger extra 
 {{% /question %}}
 
 {{% question question="Hur tillförlitlig är T.Loops kraft- och kylinfrastruktur?" %}}
-Deras Data Energy Centers® är utformade och byggda enligt de högsta möjliga datacenter­standarderna för att tillhandahålla solida infrastrukturer (upp till Tier 3 & samtidigt underhållbara) som säkerställer den högsta möjliga tillgängligheten enligt dina behov. Dessutom erbjuder de co-location-lösningar baserade på placering av utrustning i två eller flera Data Energy Centers®.
+Genom att erbjuda vätskekylda serverlösningar så kan T.Loop säkerställa [driftsäkerhet även vid höga utomhustemperaturer](https://www.tloop.se/blog/guarding-against-heat-sustainable-cooling-solutions-for-data-centers. 
+
+Deras Data Energy Centers® är utformade och byggda enligt de högsta datacenter­standarderna för att tillhandahålla solid infrastruktur (upp till Tier 3 och samtidigt redundanta) som säkerställer den högsta möjliga tillgängligheten enligt dina behov. Dessutom erbjuder de co-location-lösningar baserade på placering av utrustning i två eller flera Data Energy Centers®.
 {{% /question %}}
 
 {{% question question="Kan jag besöka T.Loops datacenter­anläggningar innan jag tecknar avtal om co-location?" %}}
