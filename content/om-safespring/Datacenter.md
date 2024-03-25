@@ -6,7 +6,7 @@ draft: false
 intro: "Våra datacenter matchar dina höga krav på driftsäkerhet och tillgänglighet. Du får dessutom en klimatsmart lösning eftersom våra datacenter drivs till 100 procent med el från förnyelsebara energikällor."
 background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår säkerhet (pdf)"
-sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
+sidebarlinkurl: "/documents/safespring_information-security-guidelines_2024.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
 
