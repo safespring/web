@@ -309,8 +309,8 @@ In the realm of Kubernetes and OpenShift, the complexity of namespace management
 
 Project Onboarding is more than a tool; it's a community project that thrives on your insights, contributions, and feedback. We warmly invite you to contribute:
 
-- **Pull Requests**: Whether it's adding new features, improving existing ones, or fixing bugs, your code contributions are invaluable. Together, we can enhance Project Onboarding to better serve the needs of our growing community.
-- **Success Stories**: Have you successfully integrated Project Onboarding into your workflow? We'd love to hear about your experiences, challenges overcome, and the benefits you've realized. Your stories can inspire and guide new users as they embark on their own Project Onboarding journeys.
+{{< icon-block-horisontal icon="fa-solid fa-code-pull-request" text="Pull Requests" description="Whether it's adding new features, improving existing ones, or fixing bugs, your code contributions are invaluable. Together, we can enhance Project Onboarding to better serve the needs of our growing community." color="#195F8C" >}}
+{{< icon-block-horisontal icon="fa-solid fa-rectangle-history-circle-user" text="Success Stories" description="Have you successfully integrated Project Onboarding into your workflow? We'd love to hear about your experiences, challenges overcome, and the benefits you've realized. Your stories can inspire and guide new users!" color="#195F8C" >}}
 
 ### Get involved
 
