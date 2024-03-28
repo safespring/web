@@ -19,10 +19,14 @@ sidebarlinkicon: "fa-arrow-up-right-from-square"
 
 
 {{< ingress >}}
-Welcome to Project Onboarding - a transformative approach to simplifying namespace management in Kubernetes for multi-tenant environments. 
+Welcome to Project Onboarding - a transformative approach to simplifying namespace management in Kubernetes for multi-tenant environments.
 {{< /ingress >}}
 
-This tool is crafted for IT architects, DevOps engineers, and technical teams eager to integrate company-specific workflows into Kubernetes, fostering a seamless, efficient management system. Project Onboarding stands at the intersection of innovation and simplicity, offering a robust solution to the complexities often encountered in Kubernetes namespace management.
+This tool is crafted for IT architects, DevOps engineers, and technical teams eager to integrate company-specific workflows into Kubernetes, fostering a seamless, efficient namespace management system. Project Onboarding stands at the intersection of innovation and simplicity, offering a robust solution to the complexities often encountered in Kubernetes namespace management.
+
+{{% note "GitHub repository" %}}
+This guide is accompanied by a complete set of code examples available on our GitHub repository. For easy access to all the scripts, configurations, and templates used throughout this guide, please visit [safespring-community/utilities](https://github.com/safespring-community/utilities/tree/main/okd/project-onboarding) on GitHub. This will ensure you have everything you need to successfully work with Project Onboarding in your environment.
+{{% /note %}}
 
 ## Why Project Onboarding?
 
@@ -51,7 +55,7 @@ This YAML snippet exemplifies how a new namespace `glassproj-appname-acc` can be
 - **Multi-Tenancy Made Easy**: Ensure secure and isolated multi-tenant environments with customizable network policies and resource quotas.
 - **OpenShift & Kubernetes Compatibility**: Designed for flexibility, Project Onboarding seamlessly integrates with both Kubernetes and OpenShift environments, supported by Helm and Kustomize for a smooth setup experience.
 
-Project Onboarding is more than just a tool; it's a new perspective on Kubernetes management, inviting you to rethink how namespaces are handled within your infrastructure. It's about enabling teams, enhancing security, and promoting efficiency through intelligent automation.
+Project Onboarding is more than just a tool; it's a new perspective on Kubernetes management, inviting you to rethink how namespaces are handled within your infrastructure. It's about enabling teams, enhancing security and promoting efficiency through intelligent automation.
 
 
 ## Namespace configurations
@@ -90,6 +94,7 @@ Here's a glimpse into how these resource definitions for Namespace Configuration
             └── GroupConfig
                 └── group-shared-namespace.yaml
 ```
+
 
 
 With Project Onboarding you only have to create a new namespace with labels that define everything. Below are a complete example for namespace [glassproj-appname-acc](namespace-configuration/examples/clustertypeZ/glassproj-appname-acc/namespace.yaml) with all possible labels currently possible.
@@ -150,12 +155,12 @@ Use the label `project-onboarding/team: groupname` to provide admin rights to a 
 
 For more granular control over permissions, the following labels are available:
 
-- **`project-onboarding/team1-name`**
-- **`project-onboarding/team1-permissions`**
-- **`project-onboarding/team2-name`**
-- **`project-onboarding/team2-permissions`**
-- **`project-onboarding/team3-name`**
-- **`project-onboarding/team3-permissions`**
+- `project-onboarding/team1-name`
+- `project-onboarding/team1-permissions`
+- `project-onboarding/team2-name`
+- `project-onboarding/team2-permissions`
+- `project-onboarding/team3-name`
+- `project-onboarding/team3-permissions`
 
 These labels enable you to link a group with specific permissions within a namespace. While the permissions are initially limited to admin, edit, and view, they can be customized in the custom resource `namespaceConfig` to accommodate more variations as needed.
 
@@ -167,8 +172,8 @@ Resource quotas are a critical aspect of managing resources within your Kubernet
 
 To manage compute resources effectively, Project Onboarding offers the following labels:
 
-- **`project-onboarding/compute-limits-cpu`** Specifies the total amount of CPU resources that can be consumed by all pods in the namespace. For instance, setting this to `"10"` allows pods within the namespace to consume up to 10 CPU units.
-- **`project-onboarding/compute-limits-memory`** Determines the total amount of memory (RAM) that can be consumed by all pods in the namespace. Setting this label to `"8Gi"` permits up to 8 GiB of memory usage.
+- **`project-onboarding/compute-limits-cpu`**: Specifies the total amount of CPU resources that can be consumed by all pods in the namespace. For instance, setting this to `"10"` allows pods within the namespace to consume up to 10 CPU units.
+- **`project-onboarding/compute-limits-memory`**: Determines the total amount of memory (RAM) that can be consumed by all pods in the namespace. Setting this label to `"8Gi"` permits up to 8 GiB of memory usage.
 
 These quotas ensure that your applications run efficiently without monopolizing cluster resources, facilitating fair resource distribution across all namespaces.
 
@@ -242,11 +247,12 @@ With the Namespace Configuration Operator installed and the service account set 
 
 ## Managing Project Onboarding with ArgoCD
 
-Here's a tip on how namespaces can be managed using Kustomize and, by extension, ArgoCD. If greater flexibility is needed, I recommend using a dedicated git repository solely for managing the configuration of namespaces. This git repository is managed by a customer portal or other automation that writes all desired changes as Kustomize YAML code. On the other side, ArgoCD ensures that changes are applied in the cluster. This approach creates flexibility by offering manual customization of namespaces and at the same time creates audit, replay and state management.
+For a flexible approach to namespace management, consider leveraging Kustomize alongside ArgoCD. This method involves using a dedicated git repository for namespace configuration, managed either by a customer portal or an automation tool. This repository houses all desired Kustomize YAML code changes, which ArgoCD then applies to your cluster, providing a balance between manual customization options and robust audit, state management, and replay capabilities.
 
-For example, unique namespaces can receive their own configuration in the git tree structure, which ArgoCD then ensures is applied in the cluster. For instance, if a namespace needs specially tailored network policies and there's no need to create NamespaceConfig custom resources (CRs) for that purpose. Create the customization in its own file and reference the customization in the namespace's `kustomization.yaml` file.
+Consider structuring your git repository to allow for unique configurations per namespace. This structure supports complex scenarios, such as when a namespace requires specific network policies beyond what is easily achievable with a NamespaceConfig custom resource. In such cases, you can craft a dedicated network policy file and reference it within the namespace's `kustomization.yaml`.
 
-[Here is an example](namespace-configuration/examples) of a git tree structure:
+Below is an illustrative example of how you might organize your git repository:
+
 ```text
 .
 └── namespace-configuration
@@ -272,13 +278,11 @@ For example, unique namespaces can receive their own configuration in the git tr
         └── kustomization.yaml
 ```
 
-When a change occurs in the tree structure, use kustomize `create` or `edit` with `--autodetect` and `--recursive` flags to include all files. Git commit and push and then, contact your ArgoCD webhook to initiate scanning of the git repository immediately.
+To incorporate changes, use Kustomize's `create` or `edit` commands with `--autodetect` and `--recursive` flags, ensuring all relevant files are included. After committing and pushing these changes, trigger an immediate scan by ArgoCD's webhook.
 
-This method allows for dynamic management and deployment of namespace configurations across multiple clusters, ensuring that each namespace is configured according to specific requirements. It streamlines the process of managing Kubernetes resources, making it easier to maintain and update configurations in a controlled and automated manner.
+This strategy enables the dynamic and streamlined deployment of namespace configurations across your Kubernetes environments, tailoring each namespace to meet specific requirements while maintaining ease of management and updateability.
 
-## FAQ
-
-### Enhanced security considerations for namespace management
+## Enhanced security considerations for namespace management
 
 Project Onboarding enhances the ease with which external customer portals or APIs can create and manage Kubernetes namespaces, abstracting away the underlying complexity. This ability to directly manage namespace objects in Kubernetes also implies that external systems have the capacity to modify namespaces that are integral to the system’s operations.
 
@@ -288,10 +292,30 @@ Further strengthening this security posture, Kubernetes 1.29 introduces an advan
 
 Additionally, there are several tools available that specialize in validating Kubernetes API requests, including K-Rail, Kyverno, Kubewarden, and OPA/Gatekeeper. These tools offer versatile and powerful means to enforce security policies and validate requests, further ensuring that system-owned namespaces remain secure from unauthorized changes.
 
-### Growing to manage more than just the namespace object
+
+## Growing to manage more than just the namespace object
 
 Managing your Kubernetes environment can be significantly simplified by modifying labels on a namespace object, triggering changes elsewhere within that namespace. This functionality removes the complexity for external customer portals, with the Namespace Configuration Operator taking on the responsibility of maintaining the correct state for the desired functionality.
 
 Labels like `project-onboarding/compute-limits-cpu` set limits for CPU, but there are many other resource quota settings such as requests.cpu, requests.memory, persistent volume claims, and all varieties of object counts. If you want to make all these configurable, you'll need to create NamespaceConfig custom resources (CRs) for each setting you wish to expose. Over time, this could become cumbersome, and you'll need to decide when it's time to approach this differently. One option is to package resource quotas into T-shirt sizes containing multiple resource quota limitations instead of specifying individual settings. For example, introduce `project-onboarding/compute-t-shirt-size` and allow it to specify sizes like `small`, `medium`, `large`, etc. Another approach is to support direct management of resource quotas in the external customer portal when more control over resource quotas is needed. This means removing all labels related to resource quotas from the namespace object and directly managing resource quotas with external tools.
 
 The same principle applies to types such as network policies. When the complexity exceeds a manageable level, move away from labels on the namespace object and implement management of these elements through external tools. This shift will help streamline the management process, ensuring that your Kubernetes environment remains efficient and scalable.
+
+## Conclusion and invitation to collaborate
+
+In the realm of Kubernetes and OpenShift, the complexity of namespace management in multi-tenant environments can be daunting. Project Onboarding has been designed with the vision of simplifying this process, offering an innovative approach to managing namespaces that balances flexibility with the necessity of hiding underlying complexities. This guide has walked you through the fundamentals of Project Onboarding, from streamlined namespace configurations to enhanced security considerations, all aimed at improving the efficiency and security of your Kubernetes environments.
+
+### We welcome your contributions
+
+Project Onboarding is more than a tool; it's a community project that thrives on your insights, contributions, and feedback. We warmly invite you to contribute:
+
+- **Pull Requests**: Whether it's adding new features, improving existing ones, or fixing bugs, your code contributions are invaluable. Together, we can enhance Project Onboarding to better serve the needs of our growing community.
+- **Success Stories**: Have you successfully integrated Project Onboarding into your workflow? We'd love to hear about your experiences, challenges overcome, and the benefits you've realized. Your stories can inspire and guide new users as they embark on their own Project Onboarding journeys.
+
+### Get involved
+
+Trying out Project Onboarding is just the beginning. Dive into the configuration examples, experiment with the labels, and see firsthand how it can transform your namespace management practices. As you explore, remember that your perspectives and experiences are key to shaping the future of Project Onboarding.
+
+We're excited to embark on this journey with you, fostering a vibrant community where innovation leads the way in Kubernetes namespace management. Let's build something great together.
+
+**Join us, contribute, and let's make Kubernetes namespace management simpler, together.**
