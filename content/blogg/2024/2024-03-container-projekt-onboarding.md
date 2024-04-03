@@ -2,7 +2,7 @@
 title: "Kubernetes Project Onboarding Guide"
 date: "2024-03-27"
 intro: "This tool is crafted for IT architects, DevOps engineers, and technical teams eager to integrate company-specific workflows into Kubernetes, fostering a seamless, efficient management system."
-draft: true
+draft: false
 section: "Tech update"
 author: "Niklas Hagman"
 tags: ["English"]
