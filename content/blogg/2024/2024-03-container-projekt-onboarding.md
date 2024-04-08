@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Project Onboarding Guide"
-date: "2024-03-27"
+date: "2024-04-08"
 intro: "This tool is crafted for IT architects, DevOps engineers, and technical teams eager to integrate company-specific workflows into Kubernetes, fostering a seamless, efficient management system."
 draft: false
 section: "Tech update"
