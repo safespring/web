@@ -22,7 +22,7 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-english/master.m3u8" >}}
+{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-english/master.m3u8" "/img/card/safespring_backup_demo.svg" >}}
 
 {{< distance >}}
 
