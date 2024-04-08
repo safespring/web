@@ -1,7 +1,9 @@
 <div class="webinarvideo">
-  <video class="webinar-videoplayer" id="myVideo" controls src="{{ .Get 0 | safeURL }}">
-  Your browser does not support the video tag.
-</video>
+  <video class="webinar-videoplayer" id="myVideo" controls
+    src="{{ .Get 0 | safeURL }}"
+    poster="{{ .Get 1 | safeURL }}">
+    Your browser does not support the video tag.
+  </video>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
@@ -10,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var hls = new Hls();
         hls.loadSource(video.getAttribute('src'));
         hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = video.getAttribute('src');
     }
 });
 </script>

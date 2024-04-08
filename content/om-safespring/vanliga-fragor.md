@@ -21,7 +21,7 @@ Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika 
 {{% /question %}}
 
 {{% question question="Vem är kontaktperson för informationssäkerhetsfrågor?" %}}
-Anders Bruvik är din kontaktperson för alla frågor om informationssäkerhet. Du når honom på anders.bruvik@safespring.com.
+Amelia Andersdotter är din kontaktperson för alla frågor om informationssäkerhet. Du når henne på amelia.andersdotter@safespring.com.
 {{% /question %}}
 
 {{% question question="Kan jag granska ert säkerhetsarbete?" %}}
