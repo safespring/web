@@ -13,7 +13,7 @@ socialmediabild: ""
 language: "En"
 TOC: "In this guide"
 sidebarlinkname: "GitHub repository"
-sidebarlinkurl: "https://github.com/safespring/container-platform/tree/project-onboarding/project-onboarding"
+sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/project-onboarding"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 ---
 
