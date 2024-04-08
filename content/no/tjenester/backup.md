@@ -12,7 +12,7 @@ intro: "Med Safesprings skybaserte backup-tjeneste trenger du ikke å investere 
 cardintro: "Robust enterprise-grade skybackup for fysiske eller virtuelle servere."
 background: "safespring-backup-background.svg"
 form: ""
-youtubeid: "JCXm-Adpf40"
+youtubeid: ""
 sidebarlinkname: "Les Solution brief"
 sidebarlinkurl: "/solution-brief/safespring-backup-portal-en"
 sidebarlinkname2: "Kontakt"
@@ -22,7 +22,7 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< youtube "JCXm-Adpf40">}}
+{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-english/master.m3u8" >}}
 
 {{< distance >}}
 
