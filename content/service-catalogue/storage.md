@@ -31,36 +31,11 @@ None.
 
 ### Ceph Versions
 
-<table class="width100">
-  <thead>
-    <tr>
-      <th>Product Code</th>
-      <th>Type</th>
-      <th>Site</th>
-      <th>Version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>S3-standard</td>
-      <td>S3-storage</td>
-      <td>OSL1</td>
-      <td>v10.2.11 (Jewel)</td>
-    </tr>
-    <tr>
-      <td>S3-standard</td>
-      <td>S3-storage</td>
-      <td>STO1</td>
-      <td>v10.2.11 (Jewel)</td>
-    </tr>
-    <tr>
-      <td>S3-standard</td>
-      <td>S3-storage</td>
-      <td>STO2</td>
-      <td>v13.2.10 (Mimic)</td>
-    </tr>
-  </tbody>
-</table>
+| Product Code | Type       | Site | Version         |
+|--------------|------------|------|-----------------|
+| S3-standard  | S3-storage | OSL2 | v17 (Quincy)    |
+| S3-standard  | S3-storage | STO1 | v15 (Octopus)   |
+| S3-standard  | S3-storage | STO2 | v15 (Octopus)   |
 
 
 ## Direct RADOS-integration of application

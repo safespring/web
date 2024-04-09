@@ -95,34 +95,35 @@ None.
 | FLAVOR-l2. c32 r64.1000  | 32   | 64       |                  1 000    |
 
 
-## 4. Memory Optimized Compute with GPU and local NVMe disk
-The memory optimized compute with local NVMe disk profile provides a 1:2 vCPU to RAM ratio, which means that for every virtual CPU allocated, there are two gigabytes of RAM available. This profile includes local ephemeral NVMe storage, which is provisioned with IOPS. The CPU oversubscription ratio is set to 1:1, meaning that there can be no more virtual CPUs than physical CPUs available on the host.
+## 4. Compute with GPU and local NVME disk
+The memory optimized compute with local NVME disk profile has a 1:4 vCPU:RAM ratio profile. It comes with local ephemeral NVME storage. The CPU oversubscription ratio is 1:1. The local storage is IOPS provisioned.
 
 ### 4.1. Prerequisites
 None.
 
 ### 4.2. Configurations
 
-| Product Code            | Instance type  | vCPU | Memory  | Base Disk | Extra disk | Provisioned IOPs (R/W) |
-|-------------------------|----------------|------|---------|-----------|------------|------------------------|
-| FLAVOR-glm.large.1d   | glm.large.1d   | 4    | 16 GB  | 80 GB     | 170 GB     | 4k/8k, 8.5k/17k        |
-| FLAVOR-glm.xlarge.2d  | glm.xlarge.2d  | 8    | 32 GB  | 80 GB     | 420 GB     | 4k/8k, 21k/42k         |
-| FLAVOR-glm.2xlarge.4d | glm.2xlarge.4d | 16   | 64 GB  | 80 GB     | 920 GB     | 4k/8k, 46k/92k         |
-| FLAVOR-glm.4xlarge.8d | glm.4xlarge.8d | 32   | 128 GB | 80 GB     | 1920 GB    | 4k/8k, 96k/192k        |
+| Product Code         | Instance type  | vCPU | Memory | Base Disk | Provisioned IOPs (R/W)  |
+|----------------------|----------------|------|--------|-----------|-------------------------|
+| FLAVOR-g2 .c4 r8. 100   | g2.c4r8.100    | 4    | 16 GiB | 100 GB    | 4k/8k, 8.5k/17k         |
+| FLAVOR-g2 .c8 r32. 500  | g2.c8r32.500   | 8    | 32 GiB | 500 GB    | 4k/8k, 21k/42k          |
+| FLAVOR-g2 .c16 r64. 1000| g2.c16r64.1000 | 16   | 64 GiB | 1000 GB   | 4k/8k, 46k/92k          |
+
 
 ## 5. Bare Metal Compute
-The bare metal compute type is a physical server that is provisioned for your exclusive use. Only the provided OS images are fully supported, but documentation is available to assist in preparing an OS image for use with the bare metal server. If the order exceeds the available capacity, the delivery time will depend on the hardware delivery times of our suppliers.
+The bare metal compute type is a provisioned physical server. Only the provided OS images are fully supported, although documentation on how to prepare an OS image for the bare metal server are also provided. If order exceed available capacity, lead times in delivery depend on supplier hardware delivery times.
 
 ### 5.1. Prerequisites
 None.
 
 ### 5.2. Configurations
 
-| Product Code            | Instance type  | CPU (p)core | Memory  | NVMe Disk  |
-|-------------------------|----------------|-------------|---------|------------|
-| FLAVOR-p1.2xlarge.16d | p1.2xlarge.16d | 16          | 128 GB | 3,8 TB     |
-| FLAVOR-p1.4xlarge.16d | p1.4xlarge.16d | 32          | 256 GB | 3,8 TB     |
-| FLAVOR-p1.8xlarge.32d | p1.8xlarge.32d | 2 x 32      | 512 GB | 2 x 3,8 TB |
+| Product Code             | Instance type    | CPU (p)core | Memory | NVME Disk   |
+|--------------------------|------------------|-------------|--------|-------------|
+| FLAVOR-p1. c16 r128. 4000| p1.c16r128.4000  | 16          | 128 GiB| 3,8 TB      |
+| FLAVOR-p1. c32 r256. 4000| p1.c32r256.4000  | 32          | 256 GiB| 3,8 TB      |
+| FLAVOR-p1. c64 r512. 8000| p1.c64r512.8000  | 2 x 32      | 512 GiB| 2 x 3,8 TB  |
+
 
 ## 6. Volumes Storage
 We provide volume storage through Ceph clusters consisting of both HDD and SSD storage.
