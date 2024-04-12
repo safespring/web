@@ -79,6 +79,7 @@
       <!-- FOOTER -->
       {{ partial "footer.html" . }}
       <script>
+        document.addEventListener('DOMContentLoaded', function () {
         var video = document.getElementById('myVideo');
         var customCursor = document.getElementById('custom-cursor');
 
@@ -143,5 +144,6 @@ video.style.cursor = 'auto'; // Change the cursor to the default cursor style
             }
           });
         }
+        });
       </script>
     </body>
