@@ -107,7 +107,7 @@ Safespring’s managed Kubernetes service is built on Compliant Kubernetes (CK8s
 - Decreases the operational burden by managing all additional components required for a secure and compliant Kubernetes environment such as observability (logging, monitoring, auditing), authentication, secret management, intrusion detection, vulnerability scanning and a private container registry.
 
 ### Managed Kubernetes – Service description
-![Safespring Managed Kubernetes service Description](/img/graphics/safespring-managed-kubernetessservice-description.svg)
+![Safespring Managed Kubernetes service Description](/img/graphics/safespring-openshift-2024.png)
 
 ### Managed Kubernetes – SLA
 The service come with support ”twenty-four hours a day, seven days a week” and has a 99.9 percent availability SLA.
