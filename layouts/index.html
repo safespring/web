@@ -78,57 +78,54 @@
       </main>
       <!-- FOOTER -->
       {{ partial "footer.html" . }}
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var video = document.getElementById('myVideo');
-      var customCursor = document.getElementById('custom-cursor');
-      var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/master.m3u8";
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('myVideo');
+    var customCursor = document.getElementById('custom-cursor');
+    var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/master.m3u8";
 
-      if (Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource(videoSrc);
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, function() {
-          // video.play();
-        });
-      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = videoSrc;
-        video.addEventListener('loadedmetadata', function() {
-          // video.play();
-        });
-      }
-
-      // Existing mouse and click event handlers
-      video.addEventListener('mousemove', function(e) {
-        var bounds = video.getBoundingClientRect();
-        customCursor.style.top = (e.clientY - bounds.top - 65) + 'px';
-        customCursor.style.left = (e.clientX - bounds.left - 65) + 'px';
-
-        if (e.clientY - bounds.top > video.offsetHeight - 100) {
-          customCursor.style.visibility = 'hidden';
-          video.style.cursor = 'auto';
-        } else {
-          customCursor.style.visibility = 'visible';
-          video.style.cursor = 'none';
-        }
+    if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function() {
+        // video.play();
       });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = videoSrc;
+      video.addEventListener('loadedmetadata', function() {
+        // video.play();
+      });
+    }
 
-      video.addEventListener('mouseleave', function() {
+    video.addEventListener('mousemove', function(e) {
+      var bounds = video.getBoundingClientRect();
+      customCursor.style.top = (e.clientY - bounds.top - 65) + 'px';
+      customCursor.style.left = (e.clientX - bounds.left - 65) + 'px';
+
+      if (e.clientY - bounds.top > video.offsetHeight - 100) {
         customCursor.style.visibility = 'hidden';
         video.style.cursor = 'auto';
-      });
-
-      video.addEventListener('click', function(e) {
-        e.preventDefault(); // Stops the native play/pause behavior
-        if (video.paused || video.muted) {
-          video.muted = false;
-          video.play();
-          customCursor.innerText = "Pause";
-        } else {
-          video.pause();
-          customCursor.innerText = "Play";
-        }
-      });
+      } else {
+        customCursor.style.visibility = 'visible';
+        video.style.cursor = 'none';
+      }
     });
-  </script>
+
+    video.addEventListener('mouseleave', function() {
+      customCursor.style.visibility = 'hidden';
+      video.style.cursor = 'auto';
+    });
+
+    video.addEventListener('click', function(e) {
+      if (video.paused) {
+        video.play();
+        customCursor.innerText = "Pause";
+      } else {
+        video.pause();
+        customCursor.innerText = "Play";
+      }
+    });
+  });
+</script>
     </body>
