@@ -1,0 +1,218 @@
+{{ partial "head.html" . }}
+<!-- NAVBAR -->
+<body>
+ {{ partial "header.html" . }}
+ <!-- HEADING -->
+ <div class="heading-default-single" style="background: url('/img/background/safespring-blue-fade2.svg'); background-size: cover; background-position: center;">
+   {{ .Render "li3" }}
+ </div>
+ <!-- CONTENT -->
+ {{ if .Params.youtube }}
+ <div class="main-default-single">
+  <div class="webinar-default-single">
+    <div class="webinarvideo iframe-aspect-ratio iframe responsive-container">
+      <div id="youtube-player">
+      </div>
+    </div>
+    <script>var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-player', {
+        videoId: '{{ .Params.youtube }}',
+        playerVars: {
+          'modestbranding': 1,
+          'iv_load_policy': 3
+        },
+      });
+    }
+    function setCurrentTime(slideNum) {
+      var object = [ {{ .Params.timecodes | safeJS }} ];
+      player.seekTo(object[slideNum]);
+    }
+  </script>
+</div>
+{{ if .Params.timecodes }}<div class="sidebar-container"><div class="sidebar-content">
+  <h3>{{ if .Params.timecodetitle }}{{ .Params.timecodetitle }}{{ else }}Avsnitt{{ end }}</h3>
+  <div class="webinarplaylist">
+    <ul>
+      {{ if .Params.chapter1 }}<a href="javascript:void(0);" onclick="setCurrentTime(0)"><li><span>{{ .Params.chapter1 }}</span> <span class="timer">{{ .Params.minute1 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter2 }}<a href="javascript:void(0);" onclick="setCurrentTime(1)"><li><span>{{ .Params.chapter2 }}</span> <span class="timer">{{ .Params.minute2 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter3 }}<a href="javascript:void(0);" onclick="setCurrentTime(2)"><li><span>{{ .Params.chapter3 }}</span> <span class="timer">{{ .Params.minute3 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter4 }}<a href="javascript:void(0);" onclick="setCurrentTime(3)"><li><span>{{ .Params.chapter4 }}</span> <span class="timer">{{ .Params.minute4 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter5 }}<a href="javascript:void(0);" onclick="setCurrentTime(4)"><li><span>{{ .Params.chapter5 }}</span> <span class="timer">{{ .Params.minute5 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter6 }}<a href="javascript:void(0);" onclick="setCurrentTime(5)"><li><span>{{ .Params.chapter6 }}</span> <span class="timer">{{ .Params.minute6 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter7 }}<a href="javascript:void(0);" onclick="setCurrentTime(6)"><li><span>{{ .Params.chapter7 }}</span> <span class="timer">{{ .Params.minute7 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter8 }}<a href="javascript:void(0);" onclick="setCurrentTime(7)"><li><span>{{ .Params.chapter8 }}</span> <span class="timer">{{ .Params.minute8 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter9 }}<a href="javascript:void(0);" onclick="setCurrentTime(8)"><li><span>{{ .Params.chapter9 }}</span> <span class="timer">{{ .Params.minute9 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter10 }}<a href="javascript:void(0);" onclick="setCurrentTime(9)"><li><span>{{ .Params.chapter10 }}</span> <span class="timer">{{ .Params.minute10 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter11 }}<a href="javascript:void(0);" onclick="setCurrentTime(10)"><li><span>{{ .Params.chapter11 }}</span> <span class="timer">{{ .Params.minute11 }}</span></li></a>{{ end }}
+      {{ if .Params.chapter12 }}<a href="javascript:void(0);" onclick="setCurrentTime(11)"><li><span>{{ .Params.chapter12 }}</span> <span class="timer">{{ .Params.minute12 }}</span></li></a>{{ end }}
+    </ul>
+  </div>
+</div>
+</div>
+<script>
+  var youtube-player = document.getElementById('youtube-player');
+  function setCurrentTime(time) {
+    youtube-player.currentTime = time;
+    youtube-player.play();
+  }
+</script>
+{{ else }}{{ end }}</div>{{ else }}{{ end }}
+
+<div class="main-default-single">
+  <div class="content-default-single">
+    {{ if .Params.videoURL }}
+    <div class="webinarvideo">
+      <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls>
+        {{ if eq (path.Ext .Params.videoURL) ".m3u8" }}
+        <!-- Inget behov av <source> taggen för .m3u8, hanteras av hls.js -->
+          {{ else }}
+          <source src="{{ .Params.videoURL }}" type="video/mp4">
+            {{ end }}
+
+            {{ range .Params.subtitles }}
+            <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
+              {{ end }}
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var video = document.getElementById('player');
+              var videoSrc = "{{ .Params.videoURL }}";
+              var isFullScreen = false;
+
+    // Funktion för att hantera fullskärmsändringar
+              function handleFullScreenChange() {
+                if (document.fullscreenElement) {
+                  isFullScreen = true;
+                  _paq.push(['trackEvent', 'Video', 'FullScreen', 'Enter', video.currentSrc]);
+                } else {
+                  isFullScreen = false;
+                  _paq.push(['trackEvent', 'Video', 'FullScreen', 'Exit', video.currentSrc]);
+                }
+              }
+
+    // Lägg till lyssnare för fullskärmsändringar
+              document.addEventListener("fullscreenchange", handleFullScreenChange, false);
+
+              if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                  _paq.push(['trackEvent', 'Video', 'Loaded', videoSrc]);
+                });
+
+                video.addEventListener('play', function () {
+                  _paq.push(['trackEvent', 'Video', 'Play', video.currentSrc]);
+                });
+
+                video.addEventListener('pause', function () {
+                  _paq.push(['trackEvent', 'Video', 'Pause', video.currentSrc]);
+                });
+
+                video.addEventListener('ended', function () {
+                  _paq.push(['trackEvent', 'Video', 'Ended', video.currentSrc]);
+                });
+
+                video.addEventListener('seeking', function () {
+                  _paq.push(['trackEvent', 'Video', 'Seeking', video.currentSrc]);
+                });
+
+                video.addEventListener('volumechange', function () {
+                  if(video.muted) {
+                    _paq.push(['trackEvent', 'Video', 'Muted', video.currentSrc]);
+                  } else {
+                    _paq.push(['trackEvent', 'Video', 'VolumeChange', video.currentSrc]);
+                  }
+                });
+
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                  if (data.fatal) {
+                    switch(data.type) {
+                    case Hls.ErrorTypes.NETWORK_ERROR:
+                      _paq.push(['trackEvent', 'Video', 'Error', 'Network Error', video.currentSrc]);
+                      break;
+                    case Hls.ErrorTypes.MEDIA_ERROR:
+                      _paq.push(['trackEvent', 'Video', 'Error', 'Media Error', video.currentSrc]);
+                      break;
+                    default:
+                      _paq.push(['trackEvent', 'Video', 'Error', 'Other Error', video.currentSrc]);
+                      break;
+                    }
+                  }
+                });
+              } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+
+                video.addEventListener('play', function () {
+                  _paq.push(['trackEvent', 'Video', 'Play', videoSrc]);
+                });
+
+                video.addEventListener('pause', function () {
+                  _paq.push(['trackEvent', 'Video', 'Pause', videoSrc]);
+                });
+
+                video.addEventListener('ended', function () {
+                  _paq.push(['trackEvent', 'Video', 'Ended', videoSrc]);
+                });
+
+                video.addEventListener('seeking', function () {
+                  _paq.push(['trackEvent', 'Video', 'Seeking', videoSrc]);
+                });
+
+                video.addEventListener('volumechange', function () {
+                  if(video.muted) {
+                    _paq.push(['trackEvent', 'Video', 'Muted', videoSrc]);
+                  } else {
+                    _paq.push(['trackEvent', 'Video', 'VolumeChange', videoSrc]);
+                  }
+                });
+
+        // Lägg till hantering för buffring, kvalitetsändringar etc. här för inbyggd HLS-stöd
+              }
+            });
+function setCurrentTime(time) {
+  var player = document.getElementById('player');
+  player.currentTime = time;
+  player.play();
+}
+</script>
+{{ end }}
+{{ .Content }}
+{{ if and (isset .Params "episode") (.Params.episode) }}
+{{ partial "webinar-serie.html" . }}
+{{ end }}
+</div>
+<div class="sidebar-default-single">
+  {{ if .Params.chapters }}
+  <div class="sidebar-container">
+    <div class="sidebar-content">
+      <h3>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}</h3>
+      <div class="webinarplaylist">
+        <ul>
+          {{ range $index, $element := .Params.chapters }}
+          <a href="javascript:void(0);" onclick="setCurrentTime({{ $element.time }})">
+            <li><span>{{ $element.title }}</span> <span class="timer">{{ $element.timeFormatted }}</span></li>
+          </a>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ end }}
+</div>
+</div>
+<!-- SIDEBAR -->
+{{ partial "webinar-side-bar.html" . }}
+</main>
+<!-- FOOTER -->
+{{ partial "footer.html" . }}
