@@ -17,7 +17,7 @@ sidebarlinkurl2: ""
 sidebarlinkname2: ""
 nosidebar: "none"
 sidebarimage: ""
-videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-episode-6-use-instance-in-public-as-jumphost/master.m3u8"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-episode-6-use-instance-in-public-as-jumphost_final/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/demo-episode-6.webp"
 chaptersTitle: "In this episode"
 chapters:
