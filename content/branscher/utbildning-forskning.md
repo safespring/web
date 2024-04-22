@@ -71,5 +71,5 @@ Safesprings tjänster är redo att användas. Om du är inom akademisk sektor i 
 Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
 {{< inline "Ring" >}} +46 (0)76 868 00 59 
-daniel.melin@safespring.com
+[daniel.melin @safespring.com](daniel.melin@safespring.com)
 {{% /custom-card %}}
