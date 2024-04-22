@@ -18,33 +18,18 @@ thumbnail: ""
 chaptersTitle: "I detta avsnitt"
 chapters:
 chapters:
-  - title: "Introduktion"
-    time: 0
-    timeFormatted: "0:00"
   - title: "Myt 1"
     time: 36
     timeFormatted: "0:36"
-  - title: "Lagstiftning"
-    time: 42
-    timeFormatted: "0:42"
   - title: "Myt 2"
     time: 183
     timeFormatted: "3:03"
-  - title: "Kryptering"
-    time: 203
-    timeFormatted: "3:23"
   - title: "Myt 3"
     time: 543
     timeFormatted: "9:03"
-  - title: "Alternativ"
-    time: 568
-    timeFormatted: "9:28"
   - title: "Myt 4"
     time: 794
     timeFormatted: "13:14"
-  - title: "Ekonomi"
-    time: 874
-    timeFormatted: "14:34"
 
 ---
 
