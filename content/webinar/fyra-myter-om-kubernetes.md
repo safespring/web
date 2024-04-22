@@ -22,13 +22,13 @@ chapters:
     time: 36
     timeFormatted: "0:36"
   - title: "Myt 2"
-    time: 183
-    timeFormatted: "3:03"
+    time: 278
+    timeFormatted: "4:38"
   - title: "Myt 3"
-    time: 543
+    time: 542
     timeFormatted: "9:03"
   - title: "Myt 4"
-    time: 794
+    time: 788
     timeFormatted: "13:14"
 
 ---
