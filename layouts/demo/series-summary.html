@@ -9,7 +9,7 @@
   <div class="webinar-card">
 <a href="{{ .RelPermalink }}">
   <div class="webinar-highlist-card shadow-1">
-  <div class="webinar-highlist-image" style="background-image: url('/img/event/cards/{{ .Params.card }}');"></div>
+  <div class="webinar-highlist-image" style="background-image: url('{{ .Params.card }}');"></div>
   <div class="webinar-series-text-container" data-href="{{ .Permalink }}">
     <p class="episode-counter">{{ $episodeCount }} demos</p>
     <div>
