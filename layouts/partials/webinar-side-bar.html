@@ -34,16 +34,10 @@
     <br>
   </div>
   <div class="webinar-side-bar-cards">
-    {{ if eq .Params.audience "kommun" }}
-    {{ range where .Site.RegularPages ".Params.audience" "kommun" }}
-    {{ .Render "li-latest" }}
-    {{ end }}
-    {{ else }}
-    {{ range where .Site.RegularPages ".Params.audience" "saas" }}
+    {{ range where .RegularPages ".Params.series" "ne" "true" }}
     <div class="content-container">
     {{ .Render "li-latest" }}
     </div>
-    {{ end }}
     {{ end }}
   </div>
 </div>
