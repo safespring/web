@@ -19,7 +19,7 @@ chaptersTitle: "I detta avsnitt"
 chapters:
 chapters:
   - title: "Myt 1"
-    time: 36
+    time: 30
     timeFormatted: "0:36"
   - title: "Myt 2"
     time: 278
