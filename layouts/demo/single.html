@@ -188,7 +188,7 @@ function setCurrentTime(time) {
 {{ end }}
 {{ .Content }}
 {{ if and (isset .Params "episode") (.Params.episode) }}
-{{ partial "webinar-serie.html" . }}
+{{ partial "demo-serie.html" . }}
 {{ end }}
 </div>
 <div class="sidebar-default-single">
@@ -212,7 +212,6 @@ function setCurrentTime(time) {
 </div>
 </div>
 <!-- SIDEBAR -->
-{{ partial "webinar-side-bar.html" . }}
 </main>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}

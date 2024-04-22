@@ -1,0 +1,27 @@
+<div class="video-list">
+    {{ $currentNode := . }}
+    {{ range sort (where .Site.RegularPages "Section" "demo") "Params.episode" }}
+    {{ if eq .Section "demo" }}
+    {{ if eq .Parent $currentNode.Parent }}
+    <div class="{{ if eq .RelPermalink $currentNode.RelPermalink }}current-episode{{else}}video-container2{{ end }}">
+        {{ if eq .RelPermalink $currentNode.RelPermalink }}{{else}}<a href="{{ .RelPermalink }}">{{ end }}
+            <div class="video-item">
+                <div class="video-thumbnail">
+                    <div class="thumbnail" style="background-image: url('{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Params.card }}{{ end }}');"></div>
+                    {{ if eq .RelPermalink $currentNode.RelPermalink }}{{else}}<div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>{{ end }}
+                </div>
+                <div class="video-title">
+                    <p>Demo {{ .Params.episode }}</p>
+                    <h3 class="balance-text">{{ .Title }}</h3>
+                </div>
+            </div>
+        {{ if eq .RelPermalink $currentNode.RelPermalink }}{{else}}</a>{{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</div>
+
+
