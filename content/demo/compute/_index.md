@@ -1,5 +1,5 @@
 ---
-title: "Safespring Compute"
+title: "Introduction to Safespring Compute"
 language: "En"
 date: "2024-04-19"
 publishDate: "2024-04-19"

@@ -90,6 +90,13 @@ document.getElementById('scrollRight').addEventListener('click', function() {
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
+  <div class="webinar-side-bar-cards" style="margin-top: 0;">
+    {{ range where .RegularPages ".Params.series" "ne" "true" }}
+    <div class="content-container">
+    {{ .Render "li-latest" }}
+    </div>
+    {{ end }}
+  </div>
  </div>
 
   <!-- SIDEBAR -->
@@ -122,12 +129,6 @@ document.getElementById('scrollRight').addEventListener('click', function() {
   {{ partial (printf "%s" .Params.fullwidthwidget) . }}
   {{ end }}
 </main>
-
-<!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
-{{ if $isWebinar }}
-<!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
-{{ partial "webinar-side-bar.html" . }}
-{{ end }}
 
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
