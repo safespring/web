@@ -1,6 +1,7 @@
 ---
 title: "Vad säger myndigets­rapporterna om molntjänster?"
 episode: "4"
+series: "true"
 card: "/img/event/cards/safespring_card_41.png"
 language: "Se"
 date: "2021-12-16"
