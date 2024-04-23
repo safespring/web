@@ -38,5 +38,5 @@ At Safespring, we provide a cloud service that supports your business's need for
 
 {{< distance >}}
 
-<iframe src="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" width="100%" height="500px" frameborder="0" allowfullscreen></iframe> 
+<iframe src="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
 
