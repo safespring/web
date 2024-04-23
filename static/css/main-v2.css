@@ -4768,6 +4768,14 @@ ol li::before {
 		direction:rtl;
 	}
 
+ol li ol li {
+	border-top: 0;
+}
+
+ol li ol li::before {
+	color: #ababab;
+}
+
 	/* CARD */
 
 	.body {
