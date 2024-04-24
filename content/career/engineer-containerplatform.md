@@ -17,10 +17,10 @@ sidebarimage: "safespring-kubernetes.svg"
 ---
 
 {{< ingress >}}
-Are you a cloud enthusiast that enjoys building things from scratch? Do you live and breathe open-source technology? This is the right place for you! 
+Are you a cloud enthusiast that enjoys building things from scratch? Do you live and breathe open-source technology? This is the right place for you!
 {{< /ingress >}}
 
-As a **Platform Engineer** at Safespring, you will have the unique opportunity to shape the future of our Kubernetes-based container platform. This role is ideal for someone who thrives in a collaborative environment and wants to contribute to building and refining sustainable cloud technologies. 
+As a **Platform Engineer** at Safespring, you will have the unique opportunity to shape the future of our Kubernetes-based container platform. This role is ideal for someone who thrives in a collaborative environment and wants to contribute to building and refining sustainable cloud technologies.  
 
 ### Your Team
 We are a remote-friendly team at Safespring with colleagues scattered around Europe. You will join the newly built Container Platform Team that will consist of 4 engineers. 
@@ -31,11 +31,11 @@ The product is built and operated by consuming Safespring’s IaaS products, Ope
 
 ### What will you do?
 
-- Build and Operate: Collaborate with a dedicated team to build and maintain the Safespring container platform from the ground up. You'll work with the Community Distribution of Kubernetes (OKD) and may engage with other Kubernetes variants as needed.
-- Continuous Improvement: Take the initiative in enhancing the performance and capabilities of our platform. Your contributions will directly impact the customer experience, ensuring our solutions meet and exceed their expectations. 
-- Strategic Alignment: Work closely with the tech lead to align your efforts with the strategic goals of our container platform. Your insights and suggestions will be crucial in driving the platform's progress. 
-- Collaborative Development: Engage in discussions, pair programming, and actively seek and provide feedback within the team to advance collective knowledge and capabilities.
-- Documentation and Transparency: Maintain a clear record of your work and decisions in our work management system (JIRA), linking code changes to work descriptions to ensure transparency, traceability and knowledge sharing. 
+- **Build and Operate:** Collaborate with a dedicated team to build and maintain the Safespring container platform from the ground up. You'll work with the Community Distribution of Kubernetes (OKD) and may engage with other Kubernetes variants as needed.
+- **Continuous Improvement:** Take the initiative in enhancing the performance and capabilities of our platform. Your contributions will directly impact the customer experience, ensuring our solutions meet and exceed their expectations. 
+- **Strategic Alignment:** Work closely with the tech lead to align your efforts with the strategic goals of our container platform. Your insights and suggestions will be crucial in driving the platform's progress. 
+- **Collaborative Development:** Engage in discussions, pair programming, and actively seek and provide feedback within the team to advance collective knowledge and capabilities.
+- **Documentation and Transparency:** Maintain a clear record of your work and decisions in our work management system (JIRA), linking code changes to work descriptions to ensure transparency, traceability and knowledge sharing.
 
 ### Who are you?
 
@@ -46,9 +46,10 @@ We think you most likely also got:
 - Experience in Kubernetes and container lifecycle management
 - Proficiency in CI/CD tools (e.g. Flux, ArgoCD) and Kubernetes deployment tools like Helm or Kustomize 
 - Familiarity with Infrastructure as Code (IaC) and configuration management tools like Terraform, Ansible, Cfengine, Puppet
-- API automation (or automation thru the use of APIs?)
+- Ability to manage IaaS by means of utilizing API  only (via tools like Terraform, Aansible and/or  Shell/CLI), and preferably experience with the OpenStack APIs.
 - Strong foundation in network engineering (IPv4/6, routing, bridging, VPN-overlays like wireguard.) and security in container management.
-- Programming skills, especially in Python, Golang, and Shell scripting.
+- Programming skills, preferably in Python, Golang, and some Shell scripting.
+
 
 ### What in it for you? 
 
@@ -59,13 +60,12 @@ We think you most likely also got:
 - Flexible & remote/hybrid work
 - Collective bargaining agreement 
 
-### Our Culture 
+### About Safespring
 
-About Safespring:
 Safespring is a pioneer in providing cloud services that emphasize digital sovereignty, ensuring that your data remains secure, private, and within regulatory boundaries. Our commitment to open-source technology and environmental sustainability is matched by our dedication to empowering businesses with full control over their digital assets. 
 
 ### Apply Now
-If you're ready to make a significant impact in a dynamic team, apply today to join us at Safespring. 
+If you're ready to make a significant impact in a dynamic team, apply today to join us at Safespring. Got questions? Contact Marietta at marietta@safespring.com 
 
 {{% accordion title="Our recruitment process" %}}
 At Safespring we're not just building systems; we're building relationships. 
