@@ -27,8 +27,6 @@ service: "Safespring Private Cloud"
 Safespring delivers a cloud-based VM and storage service to SciLifeLab, Sweden's largest national research infrastructure for life sciences. 
 {{< /ingress >}}
 
-{{< readfile "What is Life Science?" "/content/read-more/lifescience.md" >}}
-
 Safespring's virtual machines and storage can be automated through APIs, providing SciLifeLab with the flexibility to adjust resources as needed and optimize costs and performance in real time.
 
 SciLifeLab has high demands for [performance and network](#performance) as well as [storage and security](#security) to meet their specific needs. Safespring works with SciLifeLab to deliver a flexible and dynamic infrastructure that is easy for researchers to use.
@@ -134,11 +132,9 @@ GÉANT's role within OCRE involves helping to negotiate agreements with cloud se
 ## Power Your Project from the Cloud
 Large-scale storage and computing capacity are in high demand. Safespring has long worked with the academic sector to ensure that digital infrastructure, storage, and backup meet Sunet's requirements.
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
-I am the contact person for the academic sector in Sweden and can help you use our services that are already procured according to the OCRE agreement.
+{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
+I am the Business Development Manager for the academic and public sectors and can assist you in using our services already procured under the OCRE agreement.
 
-{{< inline "Call" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+{{< inline "Call" >}} +46 (0)76 868 00 59 
+[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

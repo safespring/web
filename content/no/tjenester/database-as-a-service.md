@@ -13,8 +13,6 @@ cardintro: "Med noen få klikk kan du distribuere et fullt administrert, databas
 background: "safespring-background-dbaas.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: ""
-sidebarlinkurl: ""
 sidebarsection: ""
 sidebarimage: "safespring-dbaas.svg"
 sidebartitle: ""
@@ -39,7 +37,7 @@ Database-som-tjeneste tar seg av alt, noe som gir deg tilgjengelige databaser me
 
 Tjenesten bygges av vår partner Severalnines på Safespring. Å administrere en kompleks, klustret databasmiljø er en tidkrevende og ofte skummel oppgave. Med bare noen få klikk kan du distribuere et fullt administrert, lastbalansert, høytilgjengelig databasenøkkel for MySQL, MariaDB eller PostgreSQL som gir ytelse, drifttid og enkelhet.
 
-{{< 2calltoaction "Bestill demo" "/no/demo" "Kontakt oss" "/no/kontakt" >}}
+{{< 2calltoaction "Bestill demo" "/demo/compute" "Kontakt oss" "/no/kontakt" >}}
 
 {{< distance >}}
 
@@ -75,6 +73,6 @@ Priskomponentene er antall server-vCPUer og tilhørende RAM, mengden forbrukt la
 | Över 1024 GB         | 0,95 NOK/GB    |
 
 
-{{< 2calltoaction "Bestill demo" "/no/demo" "Kontakt oss" "/no/kontakt" >}}
+{{< 2calltoaction "Bestill demo" "/demo/compute" "Kontakt oss" "/no/kontakt" >}}
 
 {{< distance >}}

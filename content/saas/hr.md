@@ -3,13 +3,13 @@ title: "Måste rekryterings­plattformar följa dataskydds­förordningen?"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Fredric Wallsten som är VD på Safespring har följt lagstiftningen för personuppgifter under lång tid och beskriver de skärpta kraven på mjukvarubolagen inom rekrytering och HR i Sverige."
-background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
+background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 sidebarsection: "White Paper"
-sidebarimage: "safespring_card_02.jpg"
+sidebarimage: ""
 sidebartitle: "EU-domstolens ogiltigförklarande av Privacy Shield"
 sidebartext: "Läs förutsättningar och rekommendationer för offentlig sektor och deras leverantörer"
 sidebardate: "Dataskydd"
@@ -43,11 +43,10 @@ I fall en svensk kommun överför personuppgifter med stöd av Privacy Shield, �
 eSamverkan­programmet (28 myndigheter och SKR) hade i september ett webbinarium tillsammans med oss molntjänst­leverantörer där de största myndigheterna i Sverige beskrev hur det här utfallet i EU-domstolen kommer påverka dem. eSam jobbar för att etablera en ny plan för molntjänster för sina medlemmar som bygger på att deras data ligger hos svenska eller europeiska företag.
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 
-{{< localbutton "Kontakta Safespring" "/kontakt/" >}}
+{{< localbutton text="Kontakta Safespring" link="/kontakt/" >}}
 
 
 ## Esams leverantörsmöte
 eSam bjöd in fem av sina medlemmars it-chefer för att träffa leverantörer av it-tjänster i ett samtal kring offentlig sektors behov när det gäller möjligheten att använda sig av molntjänster. It-cheferna beskriver sina förutsättningar och utmaningar i vardagen.
 
-
-{{< youtube yjibzEx8sI8 >}}
+*Videon är inte tillgänglig längre.*

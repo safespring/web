@@ -1,9 +1,9 @@
 ---
 title: "About Safespring"
+language: "En"
 intro: "Safespring delivers a locally based Cloud built for the apps of tomorrow."
 date: "2020-07-03"
 draft: false
-language: "En"
 section: "Safespring"
 Language: "En"
 socialmedia: "/safespring-start.jpg"
@@ -20,4 +20,4 @@ We provide an object-storage service where we expose an S3 interface to your app
 ## Open Source
 Our services are based on Open Source. Recent decades have shown that open-source software provides a compelling ecosystem of companies and organizations that have the exact needs, but at the same time, they need customized solutions.
 
-{{< localbutton "Services" "/en/services/">}}
+{{< localbutton text="Services" link="/en/services/">}}

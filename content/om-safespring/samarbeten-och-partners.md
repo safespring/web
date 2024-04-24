@@ -40,7 +40,7 @@ Som partners till Safespring kan ni garantera era kunder en korrekt hantering av
 Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21  
-petter.hylin@safespring.com
+[petter.hylin @safespring.com](petter.hylin@safespring.com)
 {{% /custom-card %}}
 
 ## Några av våra partners

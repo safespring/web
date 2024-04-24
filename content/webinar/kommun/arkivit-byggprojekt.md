@@ -2,6 +2,7 @@
 title: "Avställa byggprojekt: Går det att ställa av information & alla ÄTA i 12 år?"
 language: "Se"
 episode: "2"
+series: "true"
 date: "2020-12-16"
 tags: ["Svenska"]
 publishDate: "2020-12-16T11:30:39+02:00"

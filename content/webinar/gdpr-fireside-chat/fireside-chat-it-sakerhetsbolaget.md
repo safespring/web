@@ -1,6 +1,7 @@
 ---
 title: "Praktiska möjligheter efter Schrems II, med exempel!"
 episode: "1"
+series: "true"
 thumbnail: "/img/event/cards/safespring_card_38.jpg"
 videoURL: "https://next.safespring.com/s/ssDrtEw4jSdexDn/download/2021-05-05_safespring-fireside_chat-it_sakerhetsbolaget-video.mp4"
 language: "Se"

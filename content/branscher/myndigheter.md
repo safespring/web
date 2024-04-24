@@ -44,7 +44,7 @@ Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att det l
 Jag är ansvarig affärsutvecklare för akademisk och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
 
 {{< inline "Ring" >}} +46 (0)76 868 00 59 
-daniel.melin@safespring.com
+[daniel.melin @safespring.com](daniel.melin@safespring.com)
 {{% /custom-card %}}
 
 {{< distance >}}

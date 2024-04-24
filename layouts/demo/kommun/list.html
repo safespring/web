@@ -1,0 +1,30 @@
+{{ partial "head.html" . }}
+ {{ partial "header.html" . }} <!-- HEADING -->
+<div class="heading-sub" style="background: url(/img/blue/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
+  <div class="heading-content">
+    <h1>Safespring webbinarium</h1>
+    <p>Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<main class="content-chalmers" style="background:var(--text-color)">
+  <!-- Main  -->
+  <div class="listpage">
+    <div class="flexcontainer" style="background: var(--text-color); align-items: baseline;">
+
+      {{ $sectionPages := where .Pages "Section" .Section }}
+      {{ if ge (len $sectionPages) 1 }}
+      {{ range $sectionPages }}
+      {{ .Render "li" }}
+      {{ end }}
+      </ul>
+      {{ end }}
+
+    </div>
+</div>
+{{ partial "webinar-side-bar.html" . }}
+
+</main>
+<!-- FOOTER -->
+{{ partial "footer.html" . }}

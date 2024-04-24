@@ -1,6 +1,7 @@
 ---
 title: "Hur ska vi tänka kring utom-europeiska molntjänster?"
 episode: "2"
+series: "true"
 thumbnail: "/img/event/cards/safespring_card_38-2.jpg"
 language: "Se"
 publishDate: "2021-06-16T07:37:39+02:00"

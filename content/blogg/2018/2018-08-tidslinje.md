@@ -21,7 +21,7 @@ aliases:
 De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande personuppgiftsskydd har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
 </br></br>
 
-{{< localbutton "Läs white paper" "/whitepaper/schrems-ii/" >}}
+{{< localbutton text="Läs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
 
 ### 1995
 {{< inline "1995-10-24" >}} EU-parlamentet och EU-rådet beslutar om Dataskyddsdirektivet(1). Detta leder till införandet av Personuppgiftslagen (PUL) i Sverige(2) tre år senare.
@@ -89,7 +89,7 @@ Lagen öppnar också för att presidenten kan ingå bilaterala avtal med andra l
 
 </br>
 
-{{< localbutton "Läs white paper" "/whitepaper/schrems-ii/" >}}
+{{< localbutton text="Läs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
 
 ## Källor
 

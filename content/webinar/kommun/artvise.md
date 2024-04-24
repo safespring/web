@@ -2,6 +2,7 @@
 title: "Kundservice och ärende­hantering med åtkomst från valfri enhet"
 language: "Se"
 episode: "4"
+series: "true"
 date: "2020-06-24"
 tags: ["Svenska"]
 publishDate: "2020-05-05"

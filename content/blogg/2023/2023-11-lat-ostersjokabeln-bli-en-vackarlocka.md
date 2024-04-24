@@ -40,5 +40,8 @@ Sammanfattningsvis är vår linje tydlig, och på Safespring är vi redo att bid
 {{% custom-card image="/img/blogg/safespring-debattartikel-2023.webp" cardtitle="Läs debattartikeln på NyTeknik" %}}
 ”Låt Östersjökabeln bli en väckarklocka – digital infrastruktur behöver ett beredskapslyft”
 
-{{< localbutton "Läs artikel" "https://www.nyteknik.se/debatt/lat-ostersjokabeln-bli-en-vackarklocka-digital-infrastruktur-behover-ett-beredskapslyft/4208118" >}}
+{{< localbutton text="Läs artikel" target="_blank" link="https://www.nyteknik.se/debatt/lat-ostersjokabeln-bli-en-vackarklocka-digital-infrastruktur-behover-ett-beredskapslyft/4208118" icon="fa-up-right-from-square" >}}
+
 {{% /custom-card %}}
+
+

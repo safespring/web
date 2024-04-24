@@ -9,7 +9,7 @@ background: ""
 card: ""
 socialmedia: "sudo_dockyards_social_01.jpg"
 sidebarlinkname: "Boka demo"
-sidebarlinkurl: "/demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
 ---

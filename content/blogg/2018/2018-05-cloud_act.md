@@ -32,7 +32,8 @@ värd att läsas.
 
 Detta white paper handlar särskilt om EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta.
 
-{{< localbutton "Läs white paper" "/whitepaper/cloudact">}}
+{{< localbutton text="Läs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+
 
 [cloudact]: http://bit.ly/2IdBiu0
 [effcloudact]: https://www.eff.org/deeplinks/2018/04/us-cloud-act-and-eu-privacy-protection-race-bottom

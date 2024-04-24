@@ -13,7 +13,7 @@ cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, sv
 background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Boka demo"
-sidebarlinkurl: "/demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
 socialmedia: "safespring-compute.jpg"

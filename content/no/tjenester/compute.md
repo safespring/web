@@ -11,10 +11,10 @@ cardintro: "Skalere infrastrukturen opp eller ned etter behov. Levert fra sikre 
 background: "safespring-compute-background.svg"
 form: "no"
 documentation: "Compute"
-sidebarlinkname: "Kom i gang"
-sidebarlinkurl: "/no/kontakt"
-sidebarlinkname2: "Skriv til oss"
-sidebarlinkurl2: "mailto:info@safespring.com"
+sidebarlinkname: "Bestill demo"
+sidebarlinkurl: "/demo/compute/"
+sidebarlinkname2: "Pris för Compute"
+sidebarlinkurl2: "/no/pris/#safespring-compute"
 language: "No"
 section: "Safespring Compute"
 Language: "No"
@@ -47,7 +47,7 @@ Safespring Compute tilbyr en skybasert infrastrukturtjeneste som gir deg fleksib
 
 Safespring Compute kan forbedre din organisasjons IT-infrastruktur gjennom sin skybaserte løsning. Besøk vår nettside og bestill en demo i dag.
 
-{{< localbutton "Kom i gang" "/no/demo/" >}}
+{{< localbutton text="Kom i gang" link="/no/demo/" >}}
 {{< distance >}}
 
 Oppdag fordelene ved Safespring Compute og la oss hjelpe deg med å skape en fleksibel, sikker og kostnadseffektiv IT-løsning for din organisasjon. Invester i en norsk skytjeneste som gir deg den beste balansen mellom ytelse og sikkerhet.

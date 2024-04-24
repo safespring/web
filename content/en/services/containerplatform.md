@@ -13,10 +13,10 @@ intro: "Lightning-fast NVMe storage and optimized network design tailored for co
 background: "safespring-kubernetes-background.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: "Book a demo"
-sidebarlinkurl: "/demo"
-sidebarlinkname2: "Read Solution Brief"
-sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
+sidebarlinkname: "Watch demo"
+sidebarlinkurl: "/demo/compute/"
+sidebarlinkname2: "Prices"
+sidebarlinkurl2: "/en/price/"
 ---
 
 {{< icon-block-container >}}

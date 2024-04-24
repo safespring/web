@@ -39,4 +39,4 @@ Våra tjänster går att nyttja in genom flera ramavtal. Bland annat når vi all
 
 Gå gärna in i vårt mötesrum för att prata med oss direkt om hur vi kan vara en trygg grund i er digitala utveckling.
 
-{{< localbutton "Anslut till mötet" "https://us02web.zoom.us/j/83858312888" >}}
+{{< localbutton text="Anslut till mötet" link="https://us02web.zoom.us/j/83858312888" >}}

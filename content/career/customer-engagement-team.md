@@ -80,4 +80,4 @@ Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies
 ## How to apply
 To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
 
-{{% localbutton "upload application" "https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
+{{% localbutton text="upload application" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}

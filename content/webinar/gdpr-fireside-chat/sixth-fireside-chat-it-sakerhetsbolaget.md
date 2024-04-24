@@ -2,6 +2,7 @@
 title: "Ny president­order: blir molntjänster från USA lagliga nu?"
 language: "Se"
 episode: "6"
+series: "true"
 date: "2022-11-08"
 publishDate: "2022-11-08"
 draft: false

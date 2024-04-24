@@ -14,7 +14,7 @@ background: "safespring-kubernetes-background.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Boka demo"
-sidebarlinkurl: "/demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Läs Solution Brief"
 sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
 ---

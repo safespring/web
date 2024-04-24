@@ -1,0 +1,22 @@
+{{ $sectionPages := .Pages }}
+  {{ $episodeCount := 0 }}
+  
+  {{ range $sectionPages }}
+    {{ if not .IsSection }}
+      {{ $episodeCount = add $episodeCount 1 }}
+    {{ end }}
+  {{ end }}
+  <div class="webinar-card">
+<a href="{{ .RelPermalink }}">
+  <div class="webinar-highlist-card shadow-1">
+  <div class="webinar-highlist-image" style="background-image: url('{{ .Params.card }}');"></div>
+  <div class="webinar-series-text-container" data-href="{{ .Permalink }}">
+    <p class="episode-counter">{{ $episodeCount }} demos</p>
+    <div>
+      <h2>{{ .Title }}</h2>
+      <span class="text-button">Se all demos&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span>
+  </div>
+  </div>
+</div>
+</a>
+</div>

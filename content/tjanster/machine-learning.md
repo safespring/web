@@ -12,7 +12,7 @@ intro: "Bygg moderna lösningar som nyttjar maskininlärning och artificiell int
 form: "yes"
 background: "safespring-ai-background.svg"
 sidebarlinkname: "Boka demo"
-sidebarlinkurl: "/demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
 socialmedia: "safespring-managed-database.jpg"

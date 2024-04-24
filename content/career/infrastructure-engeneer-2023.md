@@ -71,7 +71,7 @@ Compensation includes a base salary, variable salary based on company targets, o
 
 If you are ready to join a fast-paced, innovative company and play a vital role in the development of cutting-edge infrastructure services, please submit your application today! We look forward to hearing from you.
 
-{{% localbutton "upload application" "https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
+{{% localbutton text="upload application" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
 
 
 ### Contact Information

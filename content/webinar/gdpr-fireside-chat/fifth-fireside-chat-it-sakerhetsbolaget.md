@@ -1,6 +1,7 @@
 ---
 title: "Kan EU & USAs tänkta nya avtal leda till Schrems III?"
 episode: "5"
+series: "true"
 thumbnail: "/img/event/cards/safespring_card_41.png"
 language: "Se"
 date: "2022-05-10"

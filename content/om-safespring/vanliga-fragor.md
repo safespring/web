@@ -17,11 +17,11 @@ socialmedia: "safespring-datacenter.jpg"
 <div>
 
 {{% question question="Hur förhåller ni er till GDPR?" %}}
-Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgiftöverföringar till tredjeland.
+Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgift­överföringar till tredjeland.
 {{% /question %}}
 
-{{% question question="Vem är kontaktperson för informationssäkerhetsfrågor?" %}}
-Amelia Andersdotter är din kontaktperson för alla frågor om informationssäkerhet. Du når henne på amelia.andersdotter@safespring.com.
+{{% question question="Vem är kontaktperson för informations­säkerhetsfrågor?" %}}
+Amelia Andersdotter är din kontaktperson för alla frågor om informations­säkerhet. Du når henne på amelia.andersdotter @safespring.com.
 {{% /question %}}
 
 {{% question question="Kan jag granska ert säkerhetsarbete?" %}}
@@ -51,7 +51,7 @@ Safespring strävar efter att alltid erbjuda högsta möjliga tillgänglighet f�
 {{% /question %}}
 
 {{% question question="Har ni en policy för informationssäkerhet?" %}}
-Ja, vi har en policy för informationssäkerhet som beskriver våra åtgärder och riktlinjer för att skydda känsliga information och personuppgifter. För att få tillgång till vår informationssäkerhetspolicy, vänligen kontakta oss och fråga efter "Safespring Information Security Guidelines".
+Ja, vi har en policy för informationssäkerhet som beskriver våra åtgärder och riktlinjer för att skydda känsliga information och personuppgifter. För att få tillgång till vår informations­säkerhetspolicy, vänligen kontakta oss och fråga efter "Safespring Information Security Guidelines".
 {{% /question %}}
 
 {{% question question="Hur hanteras fysisk tillgång till datacentra?" %}}
@@ -77,7 +77,7 @@ Ja, vi erbjuder möjligheten att använda flera platser som en del av er Disaste
 {{% /question %}}
 
 {{% question question="Finns det rutiner för testning av redundans?" %}}
-Ja, vi har regelbundna tester för redundans av våra datacenterleverantörer.
+Ja, vi har regelbundna tester för redundans av våra datacenter­leverantörer.
 {{% /question %}}
 
 </div>
@@ -87,7 +87,7 @@ Ja, vi har regelbundna tester för redundans av våra datacenterleverantörer.
 <div>
 	
 {{% question question="Är ni certifierade enligt ISO 27001?" %}}
-Safespring arbetar med informationssäkerhetskontroller enligt ISO 27001. Våra policyinstruktioner och kontroller samlas i vårt ISMS neupartOne. Vi är för närvarande i färd med att certifiera oss enligt ISO27001 och förväntas vara klara under andra kvartalet 2023.
+Safespring arbetar med informations­säkerhets­kontroller enligt ISO 27001. Våra policyinstruktioner och kontroller samlas i vårt ISMS neupartOne. Vi är för närvarande i färd med att certifiera oss enligt ISO27001 och förväntas vara klara under andra kvartalet 2023.
 {{% /question %}}
 
 {{% question question="Har ni en rutin för att hantera ändringar i åtkomsträttigheter?" %}}
@@ -98,8 +98,8 @@ Ja, vi har en rutin för att hantera ändringar i åtkomsträttigheter när en m
 Ja, vi har en kontinuitetsplan på plats.
 {{% /question %}}
 
-{{% question question="Sker extern granskning av ert informationssäkerhetsarbete?" %}}
-Ja, Safespring har en extern DPO (Data Protection Officer) som granskar företagets informationssäkerhetsarbete för att säkerställa att det är i enlighet med gällande dataskyddslagstiftning och informationssäkerhetsstandarder.
+{{% question question="Sker extern granskning av ert informations­säkerhetsarbete?" %}}
+Ja, Safespring har en extern DPO (Data Protection Officer) som granskar företagets informations­säkerhetsarbete för att säkerställa att det är i enlighet med gällande dataskydds­lagstiftning och informations­säkerhetsstandarder.
 {{% /question %}}
 
 </div>
@@ -117,7 +117,7 @@ Ja.
 {{% /question %}}
 
 {{% question question="Har ni en backup och återställningsrutin?" %}}
-Ja. Vi har backup och återställningsrutin för egna system. För kunders data kan man köpa till som tjänst men då är man som kund själv ansvarig för återställningsrutinen.
+Ja. Vi har backup och återställningsrutin för egna system. För kunders data kan man köpa till som tjänst men då är man som kund själv ansvarig för återställnings­rutinen.
 {{% /question %}}
 
 {{% question question="Finns upprättade rutiner för incidenthantering?" %}}

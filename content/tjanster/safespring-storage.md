@@ -14,7 +14,7 @@ cardintro: "Safespring stödjer S3 och ger snabb- eller långtidslagring för er
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Boka demo"
-sidebarlinkurl: "/demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Storage"
 sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
