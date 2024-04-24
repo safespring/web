@@ -1,73 +1,76 @@
 ---
-title: "Safespring is the preferred platform for the research and education sector"
-cardtitle: "Safespring for academic sector"
+title: "Safespring is the Preferred Platform for the Research and Education Sector"
+cardtitle: "Safespring for the Academic Sector"
 card: "safespring_card_11.svg"
-date: 2022-03-01T10:47:25+01:00
+date: 2023-04-27
 draft: false
-intro: "Over 60 educational institutions use Safespring via Sunet, Sikt or directly through GÉANT's OCRE framework agreement."
+intro: "Over 60 educational institutions use Safespring through Sunet, Sikt, or directly via the GÉANT OCRE framework agreement."
 background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
 toplogo: "ocre.png"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
-language: "en"
-aliases:
-    - /ocre/
-    - /OCRE/
+language: "En"
+cardtitle: "Academic Sector"
+cardicon: "fa-solid fa-graduation-cap"
+cardcolor: "#417DA5"
+cardintro: "With direct connection to research networks and OCRE, you can get started quickly"
 ---
 
 {{< ingress >}}
-We at Safespring have extensive experience delivering cloud infrastructure services to the research and education sector. Our platform enables open standards, GDPR compliance, and allows you to maintain digital sovereignty.
+At Safespring, we have extensive experience in delivering cloud infrastructure services to the research and education sector. Our platform supports open standards, GDPR compliance, and allows you to maintain digital sovereignty.
 {{</ ingress >}}
 
-Safespring's data centers are directly connected to the NREN network to provide you with the best possible performance without data transfer costs.
+Safespring's data centers are directly connected to the NREN network to provide you with optimal performance without data transfer costs.
 
-We are very proud to have qualified for the OCRE framework agreement. The framework agreement enables us to support the research and education sector with our modern, API-based services that support federated login to make logging in easier. Safespring's services are used by over 60 universities, institutions, and research platforms, and we also hope to be part of your digital future. Please feel free to contact us!
-
-{{< readfile "Safespring and BigPicture" "/content/read-more/bigpicture.md" >}}
+We are very pleased to have qualified for the OCRE framework agreement. This agreement enables us to support the research and education sector with our modern, API-based services that support federated login for easy sign-in. Safespring's services are used by over 60 universities, institutions, and research platforms, and we hope to be a part of your digital future as well. Welcome to contact us!
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data sovereignty" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
     {{< icon-block icon="fa-kit fa-sunet" text="Connection to Sunet" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-shield-halved" text="GDPR-compliant" link="" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-sikt" text="Connection to Sikt" link="" color="#0f0035">}}
+    {{< icon-block icon="fa-solid fa-shield-halved" text="GDPR Compliant" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-file-contract" text="Framework Agreement" link="" color="#555555">}}
     {{< icon-block icon="fa-solid fa-coins" text="Cost-effective" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-code" text="Open Source" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
-### Our commitment to innovation in research and education
+### Our Commitment to Innovation in Research and Education
 
-Safespring is proud to support research and education, and we understand that these sectors face unique challenges and needs. Our commitment to innovation, as well as our partnership with OCRE, enables us to offer customized solutions that promote research collaboration, access to high-quality resources, and sustainable development.
+Safespring is proud to support research and education, and we understand the unique challenges and needs of these sectors. Our commitment to innovation, along with our collaboration with OCRE, enables us to offer tailored solutions that promote research collaboration, access to high-quality resources, and sustainable development.
 
-### As a reliable partner in research and education, we offer:
+As a trusted partner in research and education, we offer:
 
-1. Support for research projects through secure data management and customized cloud infrastructure.
-2. Offering of cloud-based solutions that promote digital transformation in education, such as e-learning and collaboration platforms.
-3. Integrated services to facilitate data collection, analysis, and storage, which promote efficient research and faster results.
-4. Customized support and expertise to ensure that your institution's specific requirements and needs are met.
+1. Support for research projects through secure data management and customised cloud infrastructures.
+2. Provision of cloud-based solutions that promote digital transformation in education, such as e-learning and collaboration platforms.
+3. Integrated services to facilitate data collection, analysis, and storage, which promote efficient research and faster outcomes.
+4. Customised support and expertise to ensure your institution's specific requirements and needs are met.
 
-Our expertise and partnership with OCRE enable us to deliver the best and most efficient solutions to enable high-quality research and education. Let Safespring be your partner in realizing your full potential in research and education.
+Our expertise and partnership with OCRE allow us to deliver the best and most effective solutions to enable high-quality research and education. Let Safespring be your partner in realizing your full potential in research and education.
+
+{{< distance >}}
+
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="SciLifeLab Research at Safespring" link="/en/services/case/scilifelab/" linktext="Read More" text="Our Compute service plays a crucial role in supporting scientific research. A prominent example is our collaboration with SciLifeLab, where we assist in driving breakthroughs in life sciences." >}}
+
+{{< distance >}}
 
 ### OCRE Cloud Funding for Research
 
-On September 15, 2020, OCRE launched its first call for funding for the adoption of cloud services that are available through the OCRE IaaS+ framework agreement. Two subsequent project calls are planned to be opened in February and July 2021.
+On September 15, 2020, OCRE launched its first funding call for the adoption of cloud services available through the OCRE IaaS+ framework agreement. Two subsequent project calls are planned to open in February and July 2021.
 
-During this first cloud funding call, OCRE aims to fund the consumption of infrastructure cloud services (IaaS, PaaS, SaaS, marketplace) by projects that can become clear showcases for the benefits of using cloud services to positively impact research outcomes. Read more at https://www.ocre-project.eu/funding-opportunities
+In this initial cloud funding call, OCRE aims to fund the consumption of infrastructure cloud services (IaaS, PaaS, SaaS, marketplace) by projects that can become clear exhibitions of the benefits of using cloud services to positively impact research outcomes. Learn more at https://www.ocre-project.eu/funding-opportunities
 
-## How to purchase services on the OCRE agreement
+## How to Procure Services on the OCRE Agreement
+
 {{< ingress >}}
-To purchase Safespring's services via the OCRE agreement, please contact Safespring directly.
+To procure Safespring's services via the OCRE agreement, contact Safespring directly.
 {{< /ingress >}}
 
-Safespring's services are ready to use. If you are within the academic sector in Europe or affiliated with Sunet or Sikt, you can easily use our cloud platform, which has already been procured under the OCRE agreement.
+Safespring's services are ready to use. If you are in the academic sector in Europe or connected to Sunet or Sikt, you can easily use our cloud platform already procured under the OCRE agreement.
 
--
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
-I am the sales manager in Sweden and can help you use our services that are already procured under the OCRE agreement.
+{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
+I am the Business Development Manager for the academic and public sectors and can assist you in using our services already procured under the OCRE agreement.
 
-{{< inline "Call:" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+{{< inline "Call" >}} +46 (0)76 868 00 59 
+[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

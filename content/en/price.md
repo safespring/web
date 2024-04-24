@@ -10,6 +10,10 @@ pageimage: ""
 intro: "Together we create a safer, and more cost-effective digital infrastructure."
 toc: "On this page"
 nosidebar: ""
+sidebarlinkname: "Watch demo"
+sidebarlinkurl: "/demo/compute/"
+sidebarlinkname2: "Contact us"
+sidebarlinkurl2: "/en/contact"
 ---
 
 {{< icon-block-container >}}

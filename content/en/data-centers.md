@@ -1,7 +1,7 @@
 ---
 title: "Safespring Data Centers"
-section: "About Safespring"
 language: "En"
+section: "About Safespring"
 date: 2022-12-22T13:58:58+01:00
 draft: false
 intro: "Our data centers meet your high demands for reliability and availability. In addition, you get a climate-smart solution because our data centers are powered 100% by electricity from renewable energy sources."

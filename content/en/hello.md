@@ -14,6 +14,10 @@ sidebarmail: "petter.hylin@safespring.com"
 socialmedia: ""
 saas: ""
 aliases: ""
+sidebarlinkname: "Watch demo"
+sidebarlinkurl: "/demo/compute/"
+sidebarlinkname2: "Contact us"
+sidebarlinkurl2: "/en/contact"
 ---
 
 {{< ingress >}}

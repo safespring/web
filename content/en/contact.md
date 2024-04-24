@@ -1,11 +1,15 @@
 ---
 title: "Contact us at Safespring"
+language: "En"
 intro: "Safespring delivers a locally based Cloud built for the apps of tomorrow."
 date: "2020-07-03"
 draft: false
-language: "En"
 section: "Safespring"
 socialmedia: "/safespring-start.jpg"
+sidebarlinkname: "Watch demo"
+sidebarlinkurl: "/demo/compute/"
+sidebarlinkname2: "Safespring prices"
+sidebarlinkurl2: "/en/price"
 ---
 
 Safespring has operations in Sweden and Norway, with headquarters in Stockholm. The easiest way to get in touch with us is by phone or email. For general questions, you can call us or email our info address. Still, you are, of course, welcome to contact one of our employees directly.

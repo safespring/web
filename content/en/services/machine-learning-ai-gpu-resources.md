@@ -1,5 +1,6 @@
 ---
 title: "Machine Learning and AI with GPU resources"
+language: "En"
 section: "Public Cloud"
 language: "En"
 cardtitle: "AI and ML Services"
@@ -14,6 +15,10 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
+sidebarlinkname: "Watch demo"
+sidebarlinkurl: "/demo/compute/"
+sidebarlinkname2: "Contact us"
+sidebarlinkurl2: "/en/contact"
 ---
 
 {{< icon-block-container >}}
