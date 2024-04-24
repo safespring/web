@@ -25,8 +25,8 @@ chapters:
   time: 15
   timeFormatted: "0:15"
 - title: "Upload key"
-  time: 97
-  timeFormatted: "1:37"
+  time: 92
+  timeFormatted: "1:32"
 ---
 
 {{< ingress >}}
