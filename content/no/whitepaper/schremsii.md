@@ -24,4 +24,4 @@ Denne meldingen tar for seg forholdene etter kjennelsen og anbefalinger til orga
 - markedsstrukturen for skytjenester og samspillet mellom tekniske krav og lov (del II);
 - og en kort beskrivelse av veien videre (del III).
 
-{{< localbutton "Les direkte" "/whitepaper/schrems-ii-norwegian" >}}
+{{< localbutton text="Les direkte" link="/whitepaper/schrems-ii-norwegian" >}}

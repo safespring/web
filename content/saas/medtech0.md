@@ -47,7 +47,7 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
 
 Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
 
-{{< localtextbutton "Utforska källkoden" "https://compliantkubernetes.io/" >}}
+{{< localtextbutton text="Utforska källkoden" link="https://compliantkubernetes.io/" >}}
 
 <a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)</a>
 

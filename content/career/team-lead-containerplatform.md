@@ -92,4 +92,5 @@ Safespring is a pioneer in providing cloud services that emphasize digital sover
 
 If you are ready to join a fast-paced, innovative company and play a vital role in the development of cutting-edge infrastructure services, please submit your application today! We look forward to hearing from you.
 
-{{% localbutton "Send Resume" "mailto:jarle.bjorgeengen@safespring.com?subject=Team%20%20Lead%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email." %}}
+{{% localbutton text="Send Resume" link="mailto:jarle.bjorgeengen@safespring.com?subject=Team%20%20Lead%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email." %}}
+

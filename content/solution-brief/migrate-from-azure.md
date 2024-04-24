@@ -131,7 +131,7 @@ Det finns många inbyggda system som har en motsvarighet byggd med öppen källk
 
 Vi har samlat de vanligaste tjänsterna hos Azure Kubernetes Service och listat deras motsvarighet som Open Source. Se hela listan i slutet av den här texten. Du kan enkelt skrolla ner genom att klicka på knappen nedan.
 
-{{< localbutton "Se listan" "#aks-motsvarighet-som-open-source" >}}
+{{< localbutton text="Se listan" link="#aks-motsvarighet-som-open-source" >}}
 
 ### Planering och rangordning
 

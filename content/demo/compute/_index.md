@@ -32,12 +32,11 @@ At Safespring, we provide a cloud service that supports your business's need for
 - A walkthrough of how our platform can support your business's digital transformation
 - Guidance on optimizing your cloud strategy to better suit your specific business needs
 
+
+
+{{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+
 {{< distance >}}
-
-<iframe src="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
-
-
-
 
 ## Deepen Your Expertise with Safespring OpenStack
 

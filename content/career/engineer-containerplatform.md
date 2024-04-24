@@ -6,7 +6,7 @@ Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2024-02-20"
-sidebarlinkurl: "mailto:jarle.bjorgeengen@safespring.com?subject=Engineer%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email."
+sidebarlinkurl: "mailto:marietta@safespring.com?subject=Engineer%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email."
 sidebarlinkname: "Send Resume"
 sidebarlinkicon: "fa-paper-plane-top"
 language: "En"
@@ -46,7 +46,7 @@ We think you most likely also got:
 - Experience in Kubernetes and container lifecycle management
 - Proficiency in CI/CD tools (e.g. Flux, ArgoCD) and Kubernetes deployment tools like Helm or Kustomize 
 - Familiarity with Infrastructure as Code (IaC) and configuration management tools like Terraform, Ansible, Cfengine, Puppet
-- Ability to manage IaaS by means of utilizing API  only (via tools like Terraform, Aansible and/or  Shell/CLI), and preferably experience with the OpenStack APIs.
+- Ability to manage IaaS by means of utilizing API  only (via tools like Terraform, Ansible and/or  Shell/CLI), and preferably experience with the OpenStack APIs.
 - Strong foundation in network engineering (IPv4/6, routing, bridging, VPN-overlays like wireguard.) and security in container management.
 - Programming skills, preferably in Python, Golang, and some Shell scripting.
 

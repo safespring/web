@@ -47,7 +47,7 @@ Safespring Compute tilbyr en skybasert infrastrukturtjeneste som gir deg fleksib
 
 Safespring Compute kan forbedre din organisasjons IT-infrastruktur gjennom sin skybaserte løsning. Besøk vår nettside og bestill en demo i dag.
 
-{{< localbutton "Kom i gang" "/no/demo/" >}}
+{{< localbutton text="Kom i gang" link="/no/demo/" >}}
 {{< distance >}}
 
 Oppdag fordelene ved Safespring Compute og la oss hjelpe deg med å skape en fleksibel, sikker og kostnadseffektiv IT-løsning for din organisasjon. Invester i en norsk skytjeneste som gir deg den beste balansen mellom ytelse og sikkerhet.

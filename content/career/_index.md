@@ -32,6 +32,6 @@ Share some basic information and submit your resume. If there’s a role that mi
 
 Please send your resume and cover letter as a single PDF to [career@safespring.com](mailto:career@safespring.com), or upload the file by clicking on the button below labeled "Upload resume".
 
-{{% localbutton "Upload resume" "https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
+{{% localbutton text="Upload resume" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
 
 {{< distance >}}

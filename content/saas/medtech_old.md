@@ -51,4 +51,4 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja 
 eSam bjöd in fem av sina medlemmars it-chefer för att träffa leverantörer av it-tjänster i ett samtal kring offentlig sektors behov när det gäller möjligheten att använda sig av molntjänster. It-cheferna beskriver sina förutsättningar och utmaningar i vardagen.
 
 
-{{< youtube yjibzEx8sI8 >}}
+*Videon är inte tillgänglig längre.*

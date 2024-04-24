@@ -83,5 +83,5 @@ Med Samurai MDR på Safesprings molnplattform får du en kombination av NTT Secu
 ## Boka en demo
 Låt oss guida dig igenom fördelarna med Samurai MDR. Ta kontakt med oss idag och boka in en demo.
 
-{{< localbutton "Boka demo" "/demo" >}}
+{{< localbutton text="Boka demo" link="/demo" >}}
 

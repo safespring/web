@@ -121,7 +121,7 @@ In addition, it’s important to make an inventory of proprietary systems and wh
 ### Services in Azure as Open Source
 Many embedded systems have an equivalent built with open-source code. There is a list of around 20 on page 10. In this step, a list is compiled of the tests to be performed to define what a successful migration is.
 
-{{< localbutton "See the list" "#aks-counterparts-as-open-source" >}}
+{{< localbutton text="See the list" link="#aks-counterparts-as-open-source" >}}
 
 ### Planning and ranking
 After the dependency analysis has been completed, the migration of the systems can be planned.  Migration will often include some form of service window for when the services are down, so it’s important to plan everything to be done and in what order. Input values for this step also come from the testing and assurance phase.
