@@ -21,9 +21,12 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-1.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Generate key"
+  time: 15
+  timeFormatted: "0:15"
+- title: "Upload key"
+  time: 97
+  timeFormatted: "1:37"
 ---
 
 {{< ingress >}}

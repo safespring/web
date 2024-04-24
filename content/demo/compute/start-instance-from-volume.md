@@ -21,9 +21,21 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-4.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Create volume"
+  time: 39
+  timeFormatted: "0:39"
+- title: "Create instance"
+  time: 151
+  timeFormatted: "2:31"
+- title: "Connect to instance"
+  time: 341
+  timeFormatted: "5:40"
+- title: "Create file system"
+  time: 482
+  timeFormatted: "8:02"
+- title: "Mount volume"
+  time: 532
+  timeFormatted: "8:52"
 ---
 
 {{< ingress >}}

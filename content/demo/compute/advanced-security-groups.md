@@ -21,9 +21,15 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-7.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Create Security groups"
+  time: 84
+  timeFormatted: "1:24"
+- title: "Edit instances"
+  time: 312
+  timeFormatted: "5:12"
+- title: "Allow SSH"
+  time: 384
+  timeFormatted: "6:24"
 ---
 
 {{< ingress >}}

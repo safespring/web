@@ -21,9 +21,21 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-5.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Network Topology"
+  time: 17
+  timeFormatted: "0:17"
+- title: "Public Network"
+  time: 51
+  timeFormatted: "0:51"
+- title: "Private Network"
+  time: 83
+  timeFormatted: "1:23"
+- title: "Default Network"
+  time: 143
+  timeFormatted: "2:23"
+- title: "Instance - Default NW"
+  time: 169
+  timeFormatted: "2:49"
 ---
 
 {{< ingress >}}

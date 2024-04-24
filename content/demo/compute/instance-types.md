@@ -21,9 +21,15 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-2.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Find flavors"
+  time: 9
+  timeFormatted: "0:9"
+- title: "L2 vs B2 explained"
+  time: 30
+  timeFormatted: "0:30"
+- title: "NVME storage"
+  time: 62
+  timeFormatted: "1:02"
 ---
 
 {{< ingress >}}

@@ -21,9 +21,15 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-8.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Set up Server Groups"
+  time: 59
+  timeFormatted: "0:59"
+- title: "Affinity Policy"
+  time: 68
+  timeFormatted: "1:08"
+- title: "Create instance"
+  time: 155
+  timeFormatted: "2:35"
 ---
 
 {{< ingress >}}

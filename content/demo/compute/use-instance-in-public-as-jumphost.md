@@ -21,9 +21,15 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-episode-6.webp"
 chaptersTitle: "In this episode"
 chapters:
-- title: "Om detta avsnitt"
-  time: 91
-  timeFormatted: "1:31"
+- title: "Copy prive key"
+  time: 72
+  timeFormatted: "1:12"
+- title: "Check IP address"
+  time: 133
+  timeFormatted: "2:13"
+- title: "Access the instance"
+  time: 205
+  timeFormatted: "3:25"
 ---
 
 {{< ingress >}}
