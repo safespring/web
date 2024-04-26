@@ -1,5 +1,5 @@
 ---
-Title: "Team Lead for our container platform team"
+Title: "Tech Team Lead for our container platform team"
 intro: "Are you ready to lead the way? Drive the vision and strategic development of newly built Container Platform Team!"
 Team: "Container platform"
 Location: "Remote (Sweden or Norway)"
