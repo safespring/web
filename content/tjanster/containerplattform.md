@@ -31,7 +31,7 @@ sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
 ## Kraftfulla virtuella servrar med NVMe
 
 {{< ingress >}}
-NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency jämfört med traditionella lagringstekniker. 
+NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency för Kubernetes jämfört med traditionella lagringstekniker. 
 {{< /ingress >}}
 
 Din cloud native applikation kommer köra smidigt. NVMe är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata. 
