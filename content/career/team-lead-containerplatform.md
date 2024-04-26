@@ -1,12 +1,12 @@
 ---
 Title: "Team Lead for our container platform team"
-intro: "To plan for future expansion of our offerings, we are looking for a team lead for our new platform services team."
+intro: "Are you ready to lead the way? Drive the vision and strategic development of newly built Container Platform Team!"
 Team: "Container platform"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2024-02-20"
-sidebarlinkurl: "mailto:jarle.bjorgeengen@safespring.com?subject=Team%20%20Lead%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email."
+sidebarlinkurl: "mailto:marietta@safespring.com?subject=Team%20%20Lead%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email."
 sidebarlinkname: "Send Resume"
 sidebarlinkicon: "fa-paper-plane-top"
 language: "En"
@@ -17,80 +17,57 @@ sidebarimage: "safespring-kubernetes.svg"
 ---
 
 {{< ingress >}}
-Join Safespring as our Tech Team Lead for the container platform team, where innovation meets leadership.
+As a Tech Team Lead, with a focus on open-source technology and a passion for continuous improvement, you'll guide the development and operation of our Kubernetes-based container platform.
 {{< /ingress >}}
 
-In this key role, you'll guide the development and operation of our Kubernetes-based container platform, directly impacting our mission to deliver local and sustainable cloud services. 
+You will directly impact our mission to deliver local and sustainable cloud services. This is your chance to contribute to a fast-growing company at the forefront of cloud technology, fostering a culture of transparency, innovation, and collaboration. 
 
-With a focus on open-source technology and a passion for continuous improvement, you'll lead a talented team towards creating seamless CI/CD experiences. This is an exciting opportunity to contribute to a fast-growing company at the forefront of cloud technology, fostering a culture of transparency, innovation, and collaboration. If you're ready to make a significant impact in a dynamic environment, we're looking for you.
+### Your future team 
 
-## Leadership Dynamics
+We are a remote-friendly team at Safespring with colleagues scattered around Europe. You will lead the newly built Container Platform Team that will consist of 4 engineers including you. 
 
-- **Reporting Structure:** The Tech Team Leadreports to the Chief Product Officer during the build-up of the service and the Chief Technical Officer when in production.
-- **Language Requirement:** English is the working language.
+Currently, the platform is being built with the Community Distribution of Kubernetes that powers Openshift (OKD). The platform team will build, maintain and operate the container service from scratch on top of Safespring’s production IaaS.
 
-## About the position
+The product is built and operated by consuming Safespring’s IaaS products, OpenStack and CEPH.
 
-A platform engineer in the Safespring platform team contributes to the building, operation and continuous improvement of the Safespring container platform product.
+### What will you do?
 
-Currently, the platform is being built with the Community Distribution of Kubernetes that powers Openshift (OKD). Other variants of Kubernetes may be introduced later. The platform team will build, maintain and operate the container service from scratch on top of Safespring's production IaaS.
+The platform tech lead is responsible for taking the customer experience of our container platform offering to the next level.  You will provide mentorship, context and priorities to team members to unblock them and create progress.
 
-The product is built and operated by consuming Safespring's IaaS products, OpenStack and CEPH, and the container team has the sole responsibility for upholding the service level objectives set forth by the engineering and product management.
+- Lead and Mentor: Support a team of engineers in building and operating the Safespring’s container platform. Drive the strategic vision and operational excellence of our Kubernetes-based systems.
+- Collaborative Leadership: Promote a culture of transparency and collaboration, facilitating open discussions and knowledge sharing within the team. Ensure documentation and traceability of work through our management system (JIRA), linking code changes to work descriptions.
+- Innovate and Improve: Champion continuous improvement initiatives that enhance platform performance and user satisfaction. Your leadership will directly impact the evolution of our services to meet and exceed customer expectations.
+- Strategic Oversight: Provide guidance aligned with the broader strategic goals of our container platform. Your decisions will be pivotal in advancing the platform's development.
 
-The work should synchronize well with the product strategy of the container platform. The main synchronization point for daily work will be with the tech lead for the container platform; however, we also expect the platform engineers to exhibit a self-driven mindset and actively suggest and contribute to the progress of the platform according to the overall strategy of the product and the company as whole.
+### Who are you? 
 
-Safespring is a small company, and we operate as a family where we help each other and contribute where needed most at any time. It is expected that priorities might change over time.
+You are a visionary leader with a robust open-source software engineering mindset. 
 
-### Responsibilities
+We think you might also have:
 
-The platform tech lead is responsible for actively progressing the customer experience of our container platform offering by aligning with the overall product and company strategy and providing mentoring, context and priorities to team members to unblock them and create progress.
+- Sound experience with Kubernetes and lifecycle management of containers.
+- Expertise in CI/CD tools (e.g., ArgoCD, Flux) and Kubernetes deployment tools like Helm or Kustomize.
+- A strong background in Infrastructure as Code (IaC) and tools such as Terraform, Ansible, Cfengine, Puppet.
+- Skills in managing IaaS solely through API utilization (e.g., using Terraform, Ansible, Shell/CLI), and familiarity with OpenStack APIs.
+- Solid knowledge in network engineering (IPv4/6, routing, bridging, VPN-overlays like wireguard) and security within container management.
+- Programming skills, preferably in Python, Golang, and shell scripting.
 
-- Lead discussions and set direction to progress the team's understanding of what is needed.
-- Foster a culture of transparency, learning and trust without blame.
-- Strategically select experiments for maximizing team learning about customer needs and the product development cycle.
-- Foster a culture of transparency, learning and traceability in work- and decision processes by actively documenting intention and learning points in our work management system (JIRA) and link code changes by referencing pull requests and commits to work descriptions.
-- Suggest experiments for progressing work processes and tooling to support the above goals better.
-- When in production: 
-  - Plan for staffing support and on-call
-  - Maintain the vacation plan for the team.
-  - Ensure that the team follows and participates in improving relevant procedures, policies and processes.
+### What’s in it for you? 
 
-### Desired Expertise
+- Continuous Learning and Growth: Access to numerous training and development opportunities to further your career and keep you at the forefront of industry innovations.
+- Influence and Impact: Play a key role in shaping a state-of-the-art CI/CD experience from the ground up.
+- Contribution to Sustainability: Help deliver local and sustainable cloud services in an agile and supportive work environment.
+- A supportive and agile work environment in a rapidly growing company.
+- Flexibility and Remote Work: Benefit from a flexible and remote/hybrid working model under a collective bargaining agreement.
 
-We expect that the candidate has experience with at least a subset of the following aspects.
+### About Safespring
 
-- A passion for building, leading and learning with a high-performing autonomous technical container platform team
-- An open-source software engineering mindset.
-- A passion for enabling users of Kubernetes to efficiently manage their containerized application lifecycle with the lowest possible effort.
-- Kubernetes (K8S). Familiarity with the OKD/Openshift "distribution" of K8S is an advantage.
-- Experience with CI/CD tools like ArgoCD, Flux, and secure secret handling within K8S and CI/CD context.
-- K8S deployment tools like Helm, Kustomize, etc
-- Development and usage of Kubernetes operators.
-- Ability to utilize IaaS through API automation only, and preferably experience with the OpenStack APIs.
-- Infrastructure as code (IaC) and configuration management tools like Terraform, Ansible, Cfengine, Puppet, etc.
-- General networking knowledge (IPv4/6, routing, bridging, VPN overlays like Wireguard. )
-- Performance and capacity management in a containerized context.
-- Monitoring and observability in a containerized context, with tools like Prometheus, Grafana and Alertmanager
-- Knowledge of security challenges and tooling in a container management context.
-- General programming languages, preferably Python, Golang and some shell scripting
+Safespring is a pioneer in providing cloud services that emphasize digital sovereignty, ensuring that your data remains secure, private, and within regulatory boundaries. Our commitment to open-source technology and environmental sustainability is matched by our dedication to empowering businesses with full control over their digital assets. 
 
-## What Safespring offer
+### Ready to lead with us?
 
-- The opportunity to build a team that builds an attractive CI/CD experience from IaaS and up, starting from scratch.
-- Be a part of the solution to deliver local and sustainable cloud services.
-- Work with nice and competent people in a fast-growing small company.
-- Compensation according to the market
+If you’re ready to make a significant impact in a dynamic team, apply today to join us at Safespring. Got questions? Contact Marietta at marietta@safespring.com
 
-### About the company
+{{< horisontal-card image="/img/kontakt/marietta.webp" cardtitle="Got questions?" link="mailto:marietta@safespring.com" linktext="Send email" text="Marietta is your contact here at Safespring. You can contact her at marietta@safespring.com " >}}
 
-Safespring is a pioneer in providing cloud services that emphasize digital sovereignty, ensuring that your data remains secure, private, and within regulatory boundaries. Our commitment to open-source technology and environmental sustainability is matched by our dedication to empowering businesses with full control over their digital assets. By leveraging advanced infrastructure solutions like OpenStack and Kubernetes, we offer a platform that not only meets the current demands for scalability and flexibility but also prioritizes the sovereignty of your digital information. In a world where data residency and compliance are paramount, choosing Safespring means partnering with a provider that understands the importance of keeping your data protected and under your jurisdiction, all while supporting a greener future.
-
-*Keywords: tech-lead, platform engineering, Openshift, OKD, Kubernetes, Containers, CI/CD, tech mentoring, DX (Developer Experience), OpenStack, IaaS, IaC*
-
-
-## How to Apply
-
-If you are ready to join a fast-paced, innovative company and play a vital role in the development of cutting-edge infrastructure services, please submit your application today! We look forward to hearing from you.
-
-{{% localbutton text="Send Resume" link="mailto:jarle.bjorgeengen@safespring.com?subject=Team%20%20Lead%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email." %}}
 
