@@ -34,7 +34,7 @@ The product is built and operated by consuming Safespring’s IaaS products, Ope
 
 The platform tech lead is responsible for taking the customer experience of our container platform offering to the next level.  You will provide mentorship, context and priorities to team members to unblock them and create progress.
 
-- **Lead and Mentor: **Support a team of engineers in building and operating the Safespring’s container platform. Drive the strategic vision and operational excellence of our Kubernetes-based systems.
+- **Lead and Mentor:** Support a team of engineers in building and operating the Safespring’s container platform. Drive the strategic vision and operational excellence of our Kubernetes-based systems.
 - **Collaborative Leadership:** Promote a culture of transparency and collaboration, facilitating open discussions and knowledge sharing within the team. Ensure documentation and traceability of work through our management system (JIRA), linking code changes to work descriptions.
 - **Innovate and Improve:** Champion continuous improvement initiatives that enhance platform performance and user satisfaction. Your leadership will directly impact the evolution of our services to meet and exceed customer expectations.
 - **Strategic Oversight:** Provide guidance aligned with the broader strategic goals of our container platform. Your decisions will be pivotal in advancing the platform's development.
