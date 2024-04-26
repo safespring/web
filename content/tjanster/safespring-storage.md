@@ -39,7 +39,9 @@ megamenu: "yes"
 Är du i behov av att lagring av data? Då är objektlagring en kostnadseffektiv och säker lösning.
 {{< /ingress >}}
 
-Safespring använder S3-protokoll som används för molnlagring i Sverige av alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring. S3 är Safesprings standard för objektlagring. Det gör att data enkelt kan laddas upp och ned från vår svenska infrastruktur, dessutom utan trafikkostnad. Tjänsten är i grunden byggd på lagringsteknologin ceph vilket gör Safespring både flexibel och robust. All data lagras dessutom på krypterade hårddiskar.
+Safespring använder S3-protokoll som används för molnlagring i Sverige av alla typer av objekt, vilket möjliggör användning som lagring för Internetapplikationer, säkerhetskopiering och återställning, katastrofåterställning, dataarkiv, "data lakes" för analys och hybridmolnlagring. 
+
+S3 är Safesprings standard för objektlagring. Det gör att data enkelt kan laddas upp och ned från vår svenska infrastruktur, dessutom utan trafikkostnad. Tjänsten är i grunden byggd på lagringsteknologin ceph vilket gör Safespring både flexibel och robust. All data lagras dessutom på krypterade hårddiskar.
 
 {{< readfile "Vad är storage-a- a-service?" "/content/read-more/safespring-storage-sv-more.md" >}}
 
