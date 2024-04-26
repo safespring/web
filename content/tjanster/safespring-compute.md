@@ -8,7 +8,7 @@ cardcolor: "#417DA5"
 cardorder: "1"
 date: 2022-12-07T13:58:58+01:00
 draft: false
-intro: "Med Safespring får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt levereras från säkra datahallar inom Sverige."
+intro: "Med Safesprings molntjänster får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt levereras från säkra datahallar inom Sverige."
 cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, svensk IaaS."
 background: "safespring-compute-background.svg"
 form: "yes"
@@ -27,7 +27,7 @@ megamenu: "yes"
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" >}}
 
-## Virtuella maskiner som tjänar ert företag
+## Svenska molntjänster
 
 {{< ingress >}}
 Upptäck en flexibel IT-lösning som skapar möjligheter istället för att binda upp kapital.
@@ -49,10 +49,12 @@ Med Safespring kan du skapa, starta och stoppa virtuella maskiner med bara någr
 {{< /icon-block-container >}}
 
 {{< distance >}}
+
 ### Dina data är säkra med oss
+
 Vi erbjuder högsta nivå av säkerhet och tillgänglighet med våra datahallar belägna inom Sveriges gränser. Safespring Compute är flexibel, automatiserad och ger dig enklare efterlevnad av lagar och regler kring datalagring. Alla data lagras på krypterade hårddiskar.
 
-Med Safespring Compute får du tillgång till marknadsledande molnteknologi direkt ifrån våra säkra och tillförlitliga datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra trygghet och säkerhet.
+Med Safespring Compute får du tillgång till marknadsledande molnteknologi direkt ifrån våra säkra och tillförlitliga datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra datasäkerhet.
 
 {{< distance >}}
 

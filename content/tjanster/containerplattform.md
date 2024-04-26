@@ -9,7 +9,7 @@ cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för containers. Hantera dem själv eller köp som managerad tjänst."
+intro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för cloud native. Hantera dem själv eller köp som managerad tjänst."
 background: "safespring-kubernetes-background.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
@@ -34,7 +34,7 @@ sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
 NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency jämfört med traditionella lagringstekniker. 
 {{< /ingress >}}
 
-Det är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata. 
+Din cloud native applikation kommer köra smidigt. NVMe är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata. 
 
 Genom att använda NVMe-lagring för etcd förbättras prestanda och tillförlitlighet i systemet, så att det kan hantera stora mängder data och trafik med lätthet samtidigt som det stödjer Kubernetes kraftfulla containerhantering.
 
@@ -48,7 +48,7 @@ Rob McCuaig delar insikter om Elastisys samarbete med Safespring och vikten av d
 
 {{< distance >}}
 
-## Safesprings nätverksmodell är optimal för containerplattformar
+## Safesprings nätverksmodell är optimal för containerplattformar och cloud native
 
 Safespring är en produkt som erbjuder en effektiv och hög tillgänglig nätverksstack som använder BGP (Border Gateway Protocol). Det här gör att Safespring kan erbjuda en effektiv lastbalansering med hjälp av Equal cost multipath routing och Elastic IP (ECMP).
 
