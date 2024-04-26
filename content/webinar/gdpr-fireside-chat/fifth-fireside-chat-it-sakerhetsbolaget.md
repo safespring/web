@@ -32,7 +32,8 @@ minute5: "44:35"
 chapter6: "Esams arbete"
 minute6: "47:20"
 aliases:
-    - /fifth-fireside-chat-it-sakerhetsbolaget/&#xA0/
+    - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/&#xA0/
+    - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/
 ---
 
 

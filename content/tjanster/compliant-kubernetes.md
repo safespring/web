@@ -36,53 +36,7 @@ Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers
 
 {{% horisontal-card image="/img/event/cards/safespring-gabriel-lars.jpg" link="/webinar/kubernetes-15-principles/" linktext="Se videoserien" cardtitle="Sju avsnitt om Kubernetes" text="I denna webbserie kommer vi att utforska hur man designar och driftsätter skalbara applikationer på Kubernetes." %}}
 
-<!--
-<div class="videoplayer">
-  <div class="iframe-aspect-ratio iframe responsive-container">
-    <div id="player">
-    </div>
-  </div>
-  <script>
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'Ae2GVatxzS8',
-        playerVars: {
-          'modestbranding': 1,
-          'iv_load_policy': 3
-        },
-      });
-    }
-    function setCurrentTime(slideNum) {
-      var object = [ 0, 64, 253, 429, 579, 695, 814, 884, 950, 990, 1032 ];
-      player.seekTo(object[slideNum]);
-    }
-  </script>
-  <h3>Avsnitt</h3>
-  <div class="playlist">
-    <ul>
-      <a href="javascript:void(0);" onclick="setCurrentTime(0)"><li>Intro <span>00:00</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(1)"><li>Access control <span>01:04</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(2)"><li>Logging <span>04:13</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(3)"><li>Backup <span>07:09</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(4)"><li>Continuous compliance <span>09:39</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(5)"><li>Vulnerability management <span>11:35</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(6)"><li>Intrusion detection <span>13:34</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(7)"><li>Network security <span>14:44</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(8)"><li>Use of cryptography <span>15:50</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(9)"><li>Capacity management <span>16:30</span></li></a>
-      <a href="javascript:void(0);" onclick="setCurrentTime(10)"><li>Sammanfattning <span>17:12</span></li></a>
-    </ul>
-  </div>
-</div>
--->
-
 ![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
-
 
 ## Varför välja Compliant Kubernetes?
 Kubernetes i sin renaste form är inte säkert. Compliant Kubernetes är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
