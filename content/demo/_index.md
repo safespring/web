@@ -23,7 +23,7 @@ sidebarwhitepaper: ""
 aliases: ""
 ---
 
-# Scedule a private demo
+# Schedule a private demo
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?
 {{< /ingress >}}
