@@ -34,7 +34,7 @@ Download our price calculator and build your current environment to see what you
 
 ## No Traffic Cost
 
-Safespring does not charge any traffic cost for data sent to or from our services. Traffic cost, or Egress cost as it is also called, is a common lock-in mechanism. Safespring is built on open standards and it is part of our philosophy. Read more about Egress and Ingress cost in our [blog post in swedish about traffic costs](/blog/2023/2023-03-egress-cost/).
+Safespring does not charge any traffic cost for data sent to or from our services. Traffic cost, or Egress cost as it is also called, is a common lock-in mechanism. Safespring is built on open standards and it is part of our philosophy.
 
 {{< distance >}}
 
