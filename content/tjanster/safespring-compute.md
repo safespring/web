@@ -56,6 +56,20 @@ Vi erbjuder högsta nivå av säkerhet och tillgänglighet med våra datahallar 
 
 Med Safespring Compute får du tillgång till marknadsledande molnteknologi direkt ifrån våra säkra och tillförlitliga datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra datasäkerhet.
 
+
+{{% accordion title="VPN option" %}}
+
+Med Safespring Compute kan du stärka din organisation med robusta och flexibla VPN-alternativ som WireGuard och ZeroTier. Vår automatiserade lösning för WireGuard VPN-servrar ger en säker och effektiv startpunkt för åtkomst till privata nätverk från vilken plats som helst, perfekt för företag som kräver fjärråtkomst och hög datasekretess. WireGuard erbjuder en strömlinjeformad och lättkonfigurerad VPN-arkitektur som garanterar att dina företagsdata är säkra och åtkomliga oavsett var dina anställda befinner sig.
+
+För organisationer som söker en ännu mer skalbar VPN-lösning är ZeroTier ett utmärkt alternativ. Med ZeroTier kan du enkelt skapa virtuella nätverk med krypterade tunnlar, som möjliggör säker och omedelbar kommunikation mellan noder globalt. Denna plattform är idealisk för snabb konfiguration och enkel skalbarhet, utan behovet av traditionell VPN-hårdvara eller komplexa installationsprocesser.
+
+På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter integrerade direkt i vår Compute-plattform. Med bara några få klick kan du konfigurera och deploya en fullständig VPN-lösning som stöder både WireGuard och ZeroTier, vilket säkerställer att din organisation alltid har tillgång till säkra och flexibla nätverksalternativ.
+
+[Läs mer i vår dokumentation. ](https://docs.safespring.com/new/vpn)
+
+{{% /accordion %}}
+{{< accordion-script >}}
+
 {{< distance >}}
 
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Scaleout bygger en AI-plattform" link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
