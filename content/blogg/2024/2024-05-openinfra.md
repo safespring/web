@@ -39,7 +39,7 @@ Our talk, "Using NATS and Huma to Enhance Open Source Infrastructure," focused o
 4. **Addressing integration challenges:**
    Integrating diverse platforms poses substantial challenges. I outlined our strategic approaches to ensure seamless interoperability between different cloud services such as OpenStack and OKD, focusing on synchronization, error handling, and efficient resource management.
 
-{{< horisontal-card link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" image="/img/card/jon-openinfra-2024-2.webp" cardtitle="Download presentation" text="Do you want to read the presentation that Jon held, please dosnload it here." linktext="Download presentation" >}}
+{{< horisontal-card link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" image="/img/card/jon-openinfra-2024-2.webp" cardtitle="Download presentation" text="Do you want to read the presentation that Jon Ander held, please download it here." linktext="Download presentation" >}}
 
 ### Connect and learn More:
 
