@@ -1,20 +1,21 @@
 ---
 title: "Greetings from OpenInfra Days Gothenburg 2024!"
-date: "2024-05-06"
+date: "2024-05-07"
 intro: "Our session, titled 'Using NATS and Huma to Enhance Open Source Infrastructure', was designed to empower both B2B and European research communities with robust self-service access."
 section: "blogg"
 draft: false
 author: "Jon Ander Novella de Miguel"
 tags: ["English"]
 showthedate: true
-card: ""
+card: "safespring_card_52.webp"
 eventbild: ""
 socialmediabild: ""
 language: "En"
 TOC: ""
-sidebarlinkname: ""
+sidebarlinkname: "Presentation"
 sidebarlinkurl: ""
 sidebarlinkicon: ""
+sidebarimage: "jon-openinfra-2024.webp"
 ---
 
 
@@ -38,6 +39,8 @@ Our talk, "Using NATS and Huma to Enhance Open Source Infrastructure," focused o
 4. **Addressing integration challenges:**
    Integrating diverse platforms poses substantial challenges. I outlined our strategic approaches to ensure seamless interoperability between different cloud services such as OpenStack and OKD, focusing on synchronization, error handling, and efficient resource management.
 
+{{< horisontal-card link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" image="/img/card/jon-openinfra-2024-2.webp" cardtitle="Download presentation" text="Do you want to read the presentation that Jon held, please dosnload it here." linktext="Download presentation" >}}
+
 ### Connect and learn More:
 
 I encourage everyone interested in learning more or viewing the presentation materials to visit [Presentation Link]. For ongoing updates, please keep an eye on our website and connect with us on LinkedIn.
@@ -47,5 +50,5 @@ Your insights and questions are invaluable. Feel free to reach out directly at h
 
 Thank you for your continued support and interest in Safespring. Together, we are setting the stage for a revolutionary approach to cloud computing.
 
-Best regards,
+Best regards,  
 Jon Ander Novella de Miguel
