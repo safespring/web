@@ -1,10 +1,10 @@
 ---
 title: "Låt era utvecklare fokusera på kärnverksamheten"
-date: 2019-01-07T13:58:58+01:00
+date: 2024-05-08
 draft: false
 section: "Kubernetes"
-intro: "Kör er applikation på en managerad Kubernetes-plattform"
-background: "safespring-kubernetes.svg"
+intro: "Eliminerar behovet av specialiserad infrastruktur- eller Kubernetes-administrationskompetens."
+background: "safespring-medtech-2022.webp"
 card: "safespring-kubernetes.svg"
 socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Boka demo"
@@ -16,70 +16,55 @@ sidebartext: ""
 sidebardate: ""
 sidebarknapp: ""
 sidebarlink: ""
-darkmode: "off"
+darkmode: ""
 saas: ""
 sidebarwhitepaper: ""
 aliases:
 ---
 
 {{< ingress >}}
-Compliant Kubernetes passar bolag som vill att interna utvecklare ska få fokusera på att skapa kundnytta medan den underliggande plattformen är fullt managerad.
+Compliant Kubernetes från Elastisys är en plattform designad för att låta dina interna utvecklare fokusera på att leverera värde till era kunder, medan vi hanterar den underliggande infrastrukturen. Upptäck hur vi kan stärka er kapacitet utan att öka er personalstyrka.
 {{</ ingress >}}
 
 ### Fördelarna med Kubernetes Platform as a Service
-- Skala upp med samma antal interna utvecklare
-- Ingen  infrastrukturs- eller Kubernetes Admin kompetens krävs
-- Öppen källkod med dokumentation av hög kvalité
-- Kan integreras med dina verktyg och programmeringsspråk
-- 24/7 eller Business-Hour Support
-- GDPR Compliant
+- Möjliggör skalning utan att öka antalet interna utvecklare.
+- Eliminerar behovet av specialiserad infrastruktur- eller Kubernetes-administrationskompetens.
+- Bygger på öppen källkod med väl dokumenterade processer.
+- Anpassningsbar för integration med era befintliga verktyg och programmeringsspråk.
+- Erbjuder flexibla supportalternativ anpassade till era behov: 24/7 eller under kontorstid.
+- Fullt GDPR-compliant för trygg hantering av känslig information.
 
+## Stärk ditt team med Safesprings expertis
+Låt oss ta hand om er -infrastruktur med Compliant Kubernetes som en fullständigt hanterad lösning. Vår expertis är verifierad genom certifierade Kubernetes service providers, där vi ständigt kvalificerar oss för att stödja stora företagskunder. Upptäck fördelarna med vår djupa kunskap inom DevOps, Kubernetes och mer.
 
-## Stärk ditt team med extern expertis inom DevOps och Kubernetes
-Safespring och Compliant Kubernetes som en driftad helhetslösning.
-
-Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
-
-<div id="contact"></div>
-<div style="margin-bottom:100px;">
-</div>
-
-![Safespring benefits](/img/saas/se-key-points-kubernetes.svg)
-
-<div id="contact"></div>
-<div style="margin-bottom:100px;">
-</div>
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-person-chalkboard" text="Certifierade experter" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-file-shield" text="GDPR Compliant" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-life-ring" text="Svensk support" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 ### Varför Compliant Kubernetes?
-
-Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
-
-{{< localtextbutton text="Utforska källkoden" link="https://compliantkubernetes.io/" >}}
+Compliant Kubernetes är inte bara säker från start, utan också designad enligt ISO27001 för att erbjuda säkerhetsförstärkningar och konfigurationer ni behöver för säkerhet och observerbarhet från dag ett.
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
-<div id="contact"></div>
-<div style="margin-bottom:100px;">
-</div>
+### Kontakta oss för att utforska era möjligheter
+Vi förstår utmaningarna ni står inför och är här för att hjälpa er. Boka en kostnadsfri 30-minuters konsultation med vårt team för att diskutera era specifika behov och hur vi kan stötta er väg framåt.
 
-{{< horisontal-card image="/img/kontakt/stockholm.png" cardtitle="30 min om Compliant Kubernetes" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Skicka in dina frågor till våra kunniga medarbetare på stockholmskontoret så får du snabbt svar." >}}
-
-<div id="contact"></div>
-<div style="margin-bottom:100px;">
-</div>
+{{< horisontal-card image="/img/kontakt/petter-hylin.jpg" cardtitle="Boka ett möte om Compliant Kubernetes" link="mailto:hello@safespring.com" linktext="Boka här" text="Kontakta oss på hello@safespring.com för att boka ett möte eller få svar på era frågor." >}}
 
 ## Bakgrund
-
 {{< ingress >}}
-Därför väljer många MedTech-bolag att flytta hem sin patientdata till Europa.
+Många MedTech-bolag väljer att flytta hem sin patientdata till Europa för ökad säkerhet och kontroll.
 {{< /ingress >}}
 
-De flesta tjänster som vänder sig till vårdaktörer innehåller person­uppgifter som namn, telefonnummer, hemadresser och i många fall patientjournaler som behöver hanteras med stor försiktighet.
+Denna trend drivs av krav på hög säkerhet och dataskydd för patientdata. GDPR och andra lokala lagstiftningar kräver noggrann hantering av personuppgifter. Väljer ni en icke-EU-baserad lösning riskerar ni att bryta mot dessa lagar.
 
-Personuppgifter regleras av dataskydds­förordningen i Sverige, GDPR och patientdatalagen. Hanterar ni patient- och journaluppgifter utan att följa GDPR?
+Svenska molnplattformar som Safespring lagrar all data i Sverige och lyder under svensk lagstiftning, vilket ger er både kapacitet och flexibilitet att möta era patienters och kunders förväntningar.
 
-Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter vårdinrättningen mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.
+### Öka er konkurrenskraft och försäljning med Safespring
+Kontakta oss för att utforska hur vi kan hjälpa er att säkra och skala er verksamhet inom EU.
 
-Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svensk lag.
-
-Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
