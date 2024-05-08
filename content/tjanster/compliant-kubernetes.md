@@ -23,7 +23,7 @@ sidebartext: " Elastisys Compliant Kubernetes gör det enkelt att skapa kluster 
     {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-life-ring" text="Svensk support" link="" color="#FA690F">}}
     {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
-{{< /icon-block-container >}}
+{{< /icon-block-container >}} 
 
 {{< ingress >}}
 Redo att gå över till Compliant Kubernetes? Låt experter från Elastisys ta hand om driften medan ni behåller full kontroll och säkerhet på Safesprings robusta infrastruktur.
