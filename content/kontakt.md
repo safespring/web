@@ -8,22 +8,24 @@ tags: ""
 showthedate: false
 pageimage: ""
 ---
+
+{{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="08-55 10 73 70" text="Ring oss" link="tel:+46855107370" >}}
+
+{{< icon-block-horisontal icon="fa-solid fa-paper-plane" color="#3C9BCD" description="hello@safesproing.com" text="skicka mail" link="mailto:hello@safespring.com" >}}
+
+{{< distance >}}
+
 {{< ingress >}}
 För generella frågor kan du med fördel ringa oss eller skicka ett mail vår info-adress, men du är naturligtvis välkommen att kontakta någon av våra medarbetare direkt.
 {{< /ingress >}}
 
-{{< 2calltoaction "08-55 10 73 70" "tel:+46855107370" "hello@safespring.com" "mailto:hello@safespring.com" >}}
-
 <div id="contact"></div>
-<div style="margin-bottom:100px;">
-</div>
 
-{{< flexbox >}}
 {{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
 {{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
 {{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
-{{< /flexbox >}} 
+{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
+
 
 <div id="address"></div>
 <div style="margin-bottom:100px;">
@@ -33,11 +35,9 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 
 <div style="margin-bottom:50px;">
 </div>
-{{< flexbox >}}
 {{< contact picture="/img/kontakt/stockholm.png" title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
 {{< contact picture="/img/kontakt/oslo.png" title="Norway" name="Oslo" phone="+4735688870" address="Apotekergata 10b, 0180 Oslo" address-link="https://www.google.com/maps/place/Apotekergata+10B,+0180+Oslo,+Norge/@59.9152664,10.7394665,16z/data=!3m1!4b1!4m6!3m5!1s0x46416e7d293b4dd9:0x5b97ba3436cde149!8m2!3d59.9152664!4d10.7420468!16s%2Fg%2F11c5k2t95q?entry=ttu">}}
 {{< contact picture="/img/kontakt/bergen.png" title="Norge" name="Bergen" phone="+4735688870" address="Jacobsfjorden 6b, 5003 Bergen" address-link="https://goo.gl/maps/DpQWmUzpeyeeR9B26">}}
-{{< /flexbox >}}
 
 <div id="leadership"></div>
 <div style="margin-bottom:100px;">
@@ -48,13 +48,10 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 <div style="margin-bottom:50px;">
 </div>
 
-{{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
 {{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-
-{{< /flexbox >}}
 
 <div id="board"></div>
 <div style="margin-bottom:100px;">
@@ -65,11 +62,9 @@ För generella frågor kan du med fördel ringa oss eller skicka ett mail vår i
 <div style="margin-bottom:50px;">
 </div>
 
-{{< flexbox >}}
 {{< contact-small title="Ordförande" name="Mikael Schütt" >}}
 {{< contact-small title="Ledamot" name="Fredric Wallsten" >}}
 {{< contact-small title="Ledamot" name="Jan Gottlander" >}}
-{{< /flexbox >}}
 
 <div id="information"></div>
 <div style="margin-bottom:100px;">

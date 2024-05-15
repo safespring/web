@@ -2076,9 +2076,11 @@ color:var(--unCheckedColor);
 		border-radius:10px;
 		width:100%;
 	}
+
 	.safespring-footer-third {
 		align-items:flex-start;
 	}
+	
 	.safespring-footer-information-menu>ul>li>a::before {
 		content:none;
 	}
@@ -2086,12 +2088,143 @@ color:var(--unCheckedColor);
 
 /* END - SAFESPRING FOOTER */
 
+/* SAFESPRING CONACT CARD v1 
+
+.contact-container {
+	display: flex;
+	box-shadow: var(--tran-shadow);
+	border-radius: 20px;
+	background-color: white;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.contact-image {
+	width: 150px !important;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+}
+
+.contact-text-container {
+	margin: 30px;
+}
+
+.contact-name {
+	font-family: var(--hind-font);
+	font-size: 25px;
+}
+
+.contact-title {
+	font-family: var(--mon-font);
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-link-container {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.contact-link {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	background-color: var(--cloud-blue-color);
+	border-radius: 10px;
+	padding: 20px;
+	color: var(--main-color);
+	font-weight: 599;
+	margin-top: 10px;
+	overflow: hidden;
+	transition: all 1s ease;
+	width: 17px;
+}
+
+.contact-link:hover {
+	width: 100%;
+}
+
+
+.contact-link span {
+	visibility: hidden;
+  transition: all 1s ease;
+  opacity: 0;
+  position: relative;
+}
+
+.contact-link:hover span {
+	visibility: visible;
+	opacity: 1;
+}
+
+*/
+
+/* SAFESPRING CONACT CARD v2 */
+
+.contact-container {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding: 10px;
+	border-bottom: solid .5px var(--cloud-blue-color);
+}
+
+.contact-image {
+	width: 100px !important;
+	height: 100px !important;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	border-radius: 500px;
+}
+
+.contact-text-container {
+	margin: 30px;
+}
+
+.contact-name {
+	font-family: var(--hind-font);
+	font-size: 25px;
+}
+
+.contact-title {
+	font-family: var(--mon-font);
+	font-weight: 300;
+	margin-top: -7px;
+	margin-bottom: 10px;
+}
+
+.contact-link-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-link {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	color: var(--main-color);
+	overflow: hidden;
+	word-break: break-word;
+}
+
+.contact-link i {
+	display: none;
+	background-color: var(--cloud-blue-color);
+	border-radius: 500px;
+	padding: 6px;
+	font-size: 12px;
+}
+
+
+/* END – SAFESPRING CONACT CARD */
 
 .contact-card-content {
 	display: flex;
 	flex-direction: column;
 }
-
 
 .contact {
 	grid-column:main-start;
