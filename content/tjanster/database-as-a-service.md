@@ -13,7 +13,7 @@ cardintro: "Med några få klick kan du distribuera ett fullt hanterat, databask
 background: "safespring-background-dbaas.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"

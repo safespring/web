@@ -13,7 +13,7 @@ intro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för clo
 background: "safespring-kubernetes-background.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Läs Solution Brief"
 sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
