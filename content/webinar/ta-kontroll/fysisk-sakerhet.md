@@ -17,7 +17,7 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_fysisk-sakerhet.jpg"
 chaptersTitle: "I detta avsnitt"
 chapters:
-- title: "Fysisk Säkerhet"
+- title: "Fysisk säkerhet"
   time: 27
   timeFormatted: "0:27"
 - title: "Certifieringar"
@@ -32,18 +32,19 @@ chapters:
 ---
 
 
-## Förstå Fysisk Säkerhet
+## Förstå fysisk säkerhet
 
 {{< ingress >}}
-En dialog med Gabriel Paues och Amelia Andersdotter om hur fysisk säkerhet påverkar datadrivna företag och deras molntjänster.
+Detta avsnitt ger en grundlig översikt över hur datadrivna företag kan skydda sin fysiska infrastruktur mot olika hot. Att säkra den fysiska miljön är avgörande för att skydda känslig information och upprätthålla verksamhetens kontinuitet.
 {{< /ingress >}}
 
-I detta avsnitt diskuterar Amelia Andersdotter, Risk och regelefterlevnads­ansvarig på Safespring, och Gabriel Paus, Molnarkitekt på Safespring, fysisk säkerhet och dess kritiska betydelse för företag vars verksamhet är starkt datadriven. De belyser de fysiska aspekterna av säkerhet som är avgörande för att skydda infrastruktur och data, såsom säkerhet i datacenter, tillgång till biometriska system, och betydelsen av tillförlitliga system för kyla, ström och brandbekämpning.
+I detta avsnitt diskuterar Amelia Andersdotter, ansvarig för risk och regelefterlevnad på Safespring, och Gabriel Paus, molnarkitekt på Safespring, vikten av fysisk säkerhet för datadrivna företag. De betonar kritiska aspekter som säkerhet i datacenter, biometriska åtkomstsystem, samt tillförlitliga system för kyla, ström och brandbekämpning.
 
-Amelia och Gabriel utforskar hur certifieringar som ISO 27001 kan användas för att verifiera att underleverantörer uppfyller höga standarder för fysisk säkerhet. De diskuterar även hur fysisk säkerhet fungerar som en grundpelare för att skydda data även i en molnbaserad miljö, där det fysiska och logiska skyddet måste samverka för att skapa en robust säkerhetsstruktur.
+Amelia och Gabriel utforskar hur certifieringar som ISO 27001 kan verifiera att underleverantörer uppfyller höga standarder för fysisk säkerhet. De diskuterar också hur fysisk säkerhet fungerar som en grundpelare för dataskydd i molnbaserade miljöer, där både fysiskt och logiskt skydd måste samverka för att skapa en robust säkerhetsstruktur.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikatio kan byggas på Safesprings digitala infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
 
+{{< distance >}}
 
 ### I detta avsnitt
 1. **Fysisk säkerhet definieras:** Diskussion om vad fysisk säkerhet innebär och dess grundläggande komponenter i skyddet av datacenter.
@@ -51,4 +52,3 @@ Amelia och Gabriel utforskar hur certifieringar som ISO 27001 kan användas för
 3. **Konsekvenser av fysiska säkerhetssystem:** Berättelse om hur ett brandsläckningssystem oavsiktligt skadade data genom vibrationer, illustrerande vikten av noggrann planering och installation.
 4. **Integration av fysisk och logisk säkerhet:** Diskussion om hur fysisk säkerhet integreras med logisk säkerhet för att skapa ett omfattande skydd.
 
-Detta avsnitt ger en grundlig översikt över hur datadrivna företag kan säkerställa att deras fysiska infrastruktur är säkrad mot olika hot, vilket är avgörande för att skydda känslig information och upprätthålla verksamhetens kontinuitet.

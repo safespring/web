@@ -35,15 +35,16 @@ chapters:
 ## Utforska logisk säkerhet
 
 {{< ingress >}}
-En dialog med Gabriel Paues och Amelia Andersdotter om att bygga robusta system genom logiska säkerhetslager.
+Detta avsnitt ger en djupgående förståelse för hur företag kan använda logisk säkerhet för att stärka sin totala säkerhetsstruktur, vilket är avgörande för att skydda känslig information i en alltmer osäker digital miljö.
 {{< /ingress >}}
 
-I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterlevnadsansvarig på Safespring, och Gabriel Paues, molnarkitekt, konceptet logisk säkerhet och dess roll i att skydda datadrivna företag. De utforskar hur logiska säkerhetsåtgärder kan implementeras för att komplettera fysiska säkerhetsåtgärder och ge en omfattande skyddsnivå.
+I detta avsnitt diskuterar Amelia Andersdotter, ansvarig för risk och regelefterlevnad på Safespring, och Gabriel Paues, molnarkitekt, konceptet logisk säkerhet och dess betydelse för datadrivna företag. De utforskar hur logiska säkerhetsåtgärder kan komplettera fysiska säkerhetsåtgärder för att erbjuda ett omfattande skydd.
 
-Amelia och Gabriel belyser hur logisk säkerhet innefattar allt från kryptering och datalagring till redundanta system som kan skydda data även vid fysiska fel. De diskuterar hur moderna tekniker som containerisering och konfidentiell databehandling hjälper till att skydda data i bearbetning och vila, vilket minskar risken för obehörig åtkomst.
+Amelia och Gabriel belyser olika aspekter av logisk säkerhet, inklusive kryptering, datalagring och redundanta system som skyddar data även vid fysiska fel. De diskuterar också moderna tekniker som containerisering och konfidentiell databehandling, som skyddar data både under bearbetning och i vila, vilket minskar risken för obehörig åtkomst.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikatio kan byggas på Safesprings digitala infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
 
+{{< distance >}}
 
 ### I detta avsnitt
 1. **Logisk säkerhet förklarad:** Diskussion om hur logisk säkerhet integreras med fysisk säkerhet för att skydda företagsdata.
@@ -51,4 +52,3 @@ Amelia och Gabriel belyser hur logisk säkerhet innefattar allt från kryptering
 3. **Redundans och arkivering:** Utforskning av redundans, arkivering och deras roll i att säkerställa dataåterställning och lagring.
 4. **Flexibilitet och migration:** Diskussion om hur logisk säkerhet underlättar flexibilitet och möjliggör säker migration mellan olika plattformar och leverantörer.
 
-Detta avsnitt ger en djupgående förståelse för hur företag kan utnyttja logisk säkerhet för att förbättra sin totala säkerhetsstruktur, vilket är avgörande för att skydda känslig information i en alltmer osäker digital miljö.
