@@ -55,6 +55,12 @@
         <span>{{ .Get "email" }}</span>
       </a>
       {{ end }}
+      {{ if .Params.address }}
+      <a class="contact-link" href="{{ .Get `address-link` }}">
+        <i class="fa-solid fa-map"></i>
+        <span>{{ .Get "address" }}</span>
+      </a>
+      {{ end }}
     </div>
   </div>
 </div>

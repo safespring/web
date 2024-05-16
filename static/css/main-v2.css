@@ -2187,12 +2187,12 @@ color:var(--unCheckedColor);
 .contact-name {
 	font-family: var(--hind-font);
 	font-size: 25px;
+	line-height: 1;
 }
 
 .contact-title {
 	font-family: var(--mon-font);
 	font-weight: 300;
-	margin-top: -7px;
 	margin-bottom: 10px;
 }
 

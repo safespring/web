@@ -1,94 +1,68 @@
 ---
-title: "Contact us at Safespring"
+title: "Contact Us"
 language: "En"
-intro: "Safespring delivers a locally based Cloud built for the apps of tomorrow."
-date: "2020-07-03"
-draft: false
 section: "Safespring"
-socialmedia: "/safespring-start.jpg"
-sidebarlinkname: "Watch demo"
-sidebarlinkurl: "/demo/compute/"
-sidebarlinkname2: "Safespring prices"
-sidebarlinkurl2: "/en/price"
+date: "2024-05-16"
+draft: false
+intro: "Safespring operates in Sweden and Norway with its head office in Solna. The easiest way to contact us is by phone or email."
+tags: ""
+showthedate: false
+pageimage: ""
 ---
 
-Safespring has operations in Sweden and Norway, with headquarters in Stockholm. The easiest way to get in touch with us is by phone or email. For general questions, you can call us or email our info address. Still, you are, of course, welcome to contact one of our employees directly.
+{{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="+46 8-55 10 73 70" text="Call us" link="tel:+46855107370" >}}
 
-{{< 2calltoaction "+468-55 10 73 70" "tel:+46855107370" "hello@safespring.com" "mailto:hello@safespring.com" >}}
+{{< icon-block-horisontal icon="fa-solid fa-paper-plane" color="#3C9BCD" description="hello@safespring.com" text="Send email" link="mailto:hello@safespring.com" >}}
 
-<div id="contact"></div>
-<div style="margin-bottom:100px;">
-</div>
+{{< distance >}}
 
-{{< flexbox >}}
-{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.se" >}}
+### Our Team
+Here you can find contact information for some of our team members. Don't hesitate to get in touch if you have any questions or need assistance with anything specific.
+
+{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
+{{< contact picture="/img/kontakt/safespring-daniel-melin-2024.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
 {{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
 {{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="sCMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.se" >}}
-{{< /flexbox >}}
+{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
 
-<div id="address"></div>
-<div style="margin-bottom:100px;">
-</div>
+{{< distance >}}
 
-## Safespring addresses
+### Addresses
+Below you can find the addresses of our offices in Sweden and Norway. Click the links to get directions via Google Maps.
 
-<div style="margin-bottom:50px;">
-</div>
-
-{{< flexbox >}}
 {{< contact picture="/img/kontakt/stockholm.png" title="Sweden" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
 {{< contact picture="/img/kontakt/oslo.png" title="Norway" name="Oslo" phone="+4735688870" address="Apotekergata 10b, 0180 Oslo" address-link="https://www.google.com/maps/place/Apotekergata+10B,+0180+Oslo,+Norge/@59.9152664,10.7394665,16z/data=!3m1!4b1!4m6!3m5!1s0x46416e7d293b4dd9:0x5b97ba3436cde149!8m2!3d59.9152664!4d10.7420468!16s%2Fg%2F11c5k2t95q?entry=ttu">}}
 {{< contact picture="/img/kontakt/bergen.png" title="Norway" name="Bergen" phone="+4735688870" address="Jacobsfjorden 6b, 5003 Bergen" address-link="https://goo.gl/maps/DpQWmUzpeyeeR9B26">}}
-{{< /flexbox >}}
 
-<div id="leadership"></div>
-<div style="margin-bottom:100px;">
-</div>
+{{< distance >}}
 
-## Safesprings management
+### Management
+Our management team works to ensure we deliver high-quality and innovative services. Here you can find contact information for our management team.
 
-<div style="margin-bottom:50px;">
-</div>
-
-{{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
+{{< contact-small title="Vice-Director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-{{< /flexbox >}}
 
-<div id="board"></div>
-<div style="margin-bottom:100px;">
-</div>
+{{< distance >}}
 
-## Safesprings board
+### Board of Directors
+Our board consists of experienced members who guide and direct the company's strategic direction.
 
-<div style="margin-bottom:50px;">
-</div>
+{{< contact-small title="Chairman" name="Mikael Schütt" >}}
+{{< contact-small title="Member" name="Fredric Wallsten" >}}
+{{< contact-small title="Member" name="Jan Gottlander" >}}
 
-{{< flexbox >}}
-{{< contact-small title="Ordförande" name="Mikael Schütt" >}}
-{{< contact-small title="Ledamot" name="Fredric Wallsten" >}}
-{{< contact-small title="Ledamot" name="Jan Gottlander" >}}
-{{< /flexbox >}}
+{{< distance >}}
 
-<div id="information"></div>
-<div style="margin-bottom:100px;">
-</div>
-
-## Information
-
-The company will deliver IT services to businesses that want efficient, secure, and cost-effective solutions and compatible operations.
-
-<div style="margin-bottom:50px;">
-</div>
+### Company Information
+Safespring delivers IT services that are efficient, secure, and cost-effective. Here is basic information about our company.
 
 {{< infobox >}}
 {{< info title="Name" name="Safespring AB" >}}
-{{< info title="Organization number" name="559075-0245" >}}
-{{< info title="Head office" name="Rättarvägen 3, 169 68 Solna" >}}
-{{< info title="Board" name="Solna, Sweden" >}}
-{{< info title="Owner" name="Private" >}}
-{{< info title="Established" name="2016-09-05" >}}
+{{< info title="Org. number" name="559075-0245" >}}
+{{< info title="Head Office" name="Rättarvägen 3, 169 68 Solna" >}}
+{{< info title="Board Location" name="Solna, Sweden" >}}
+{{< info title="Ownership" name="Private, not listed" >}}
+{{< info title="Founded" name="2016-09-05" >}}
 {{< /infobox >}}
