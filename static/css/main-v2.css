@@ -528,6 +528,8 @@ input[type=text], [type=email], input[type="tel"] {
 	opacity:1;
 }
 
+
+
 /*
 
 
@@ -693,12 +695,12 @@ blockquote p {
 	margin:10px 0;
 	position:relative;
 	border-radius:50px;
-	max-width:300px;
+	max-width: fit-content !important;
 }
 
 .inputGroup label {
-	padding:12px 12px 12px 60px;
-	border:1px solid #D1D7DC;
+	padding:12px 25px 12px 60px;
+	border:.5px solid var(--main-color);
 	display:block;
 	text-align:left;
 	color:var(--middle-blue-color);
@@ -708,8 +710,7 @@ blockquote p {
 	transition:color 200ms ease-in;
 	overflow:hidden;
 	border-radius:50px;
-	max-width:300px;
-	font:17px var(--hind-font-semibold);
+	font:17px var(--hind-font);
 }
 
 .inputGroup label:before {
@@ -731,7 +732,7 @@ blockquote p {
 	width:32px;
 	height:32px;
 	content:"";
-	border:1px solid #D1D7DC;
+	border:.5px solid #7b9fbb;
 	background-color:#fff;
 	background-image:url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
 	background-repeat:no-repeat;
@@ -748,7 +749,7 @@ blockquote p {
 
 .inputGroup input:checked~label {
 	color:var(--main-color);
-	border:1px solid var(--cloud-blue-color);
+	border:.5px solid var(--cloud-blue-color);
 }
 
 .inputGroup input:checked~label:before {
@@ -758,7 +759,7 @@ blockquote p {
 
 .inputGroup input:checked~label:after {
 	background-color:var(--web-green-color);
-	border:2px solid var(--web-green-color);
+	border:.5px solid var(--web-green-color);
 }
 
 .inputGroup input {
@@ -773,6 +774,13 @@ blockquote p {
 	cursor:pointer;
 	visibility:hidden;
 }
+
+.label-link {
+	float: right;
+	margin: 3px 0px 0 25px;
+}
+
+/* END - CHECKBOX TOGGLE */
 
 /*input.switch {
 -moz-appearance:none;

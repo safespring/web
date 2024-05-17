@@ -5,7 +5,7 @@ cardtitle: "Own License"
 cardicon: "fa-solid fa-hand-holding-box"
 cardcolor: "#195F8C"
 cardorder: "09"
-date: 2023-02-28
+date: 2024-05-17
 draft: false
 intro: "Bring Your Own License, using existing software licenses in Safespring cloud environment"
 cardintro: ""
@@ -43,5 +43,5 @@ Vendors with commercial support with known permissibility terms are listed in th
 | SUSE      | SUSE Enterprise Linux                                  | Permissible.                                                                                                                                                 |
 | Oracle    | Oracle Database                                        | Permissible on Safespring virtual IaaS with risk of no support if Oracle believes cause is not Oracle software. Bare metal deployments receive full support. |
 
-Safespring does not restrict in any way what software customers use, other than via its Acceptable Use Policy . This means that any Linux distribution that can run on x86 platforms on standard modern KVM hypervisors is technically supported, including essentially all community editions.
+Safespring does not restrict in any way what software customers use, other than via its [Acceptable Use Policy](/documents/safespring-acceptable_use_policy.pdf) . This means that any Linux distribution that can run on x86 platforms on standard modern KVM hypervisors is technically supported, including essentially all community editions.
 
