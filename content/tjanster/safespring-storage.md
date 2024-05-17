@@ -13,7 +13,7 @@ intro: "Safespring erbjuder lagring av data med hjälp av S3-protokollet, en kos
 cardintro: "Safespring stödjer S3 och ger snabb- eller långtidslagring för er data."
 background: "safespring-storage-background.svg"
 form: "yes"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Storage"
 sidebarlinkurl2: "/pris/#safespring-storage-s3"

@@ -8,7 +8,7 @@ intro: "Kraftfulla virtuella servrar med NVMe-lagring och optimerad nätverksdes
 background: ""
 card: ""
 socialmedia: "sudo_dockyards_social_01.jpg"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"

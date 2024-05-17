@@ -1,12 +1,12 @@
 ---
 title: "Safesprings Acceptable Use Policy"
-date: 2018-06-27T14:29:26+02:00
+date: 2024-05-17
 draft: false
 intro: "En acceptable use policy är en riktlinje som fastställer användning av en viss tjänst, produkt eller programvara på ett godkänt sätt."
 dokumentbild: "safespring_card_21.jpg"
 sidebarlinkname: "Läs Acceptable use policy"
 sidebarlinkicon: "fa-file-lines"
-sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01.pdf"
+sidebarlinkurl: "/documents/safespring-acceptable_use_policy.pdf"
 general: "yes"
 toc: ""
 ---
@@ -25,4 +25,4 @@ I den här texten fastställer Safesprings policy principer för användningen a
 - Safespring övervakar tjänsterna och kan vid behov hjälpa användare att upprätthålla adekvat säkerhet. Vid hög risk kan de utfärda en varning och vid ignorering kan de stoppa tillgång till applikationen.
 - Om användare bryter mot policy måste de omedelbart informera Safespring och ge rimlig hjälp för att åtgärda och minska riskerna.
 
-{{< 2calltoaction "Läs Acceptable use policy" "/documents/safespring-acceptable-use-policy_20191654-01.pdf" "Kontakta oss" "/kontakt" >}}
+{{< 2calltoaction "Läs Acceptable use policy" "/documents/safespring-acceptable_use_policy.pdf" "Kontakta oss" "/kontakt" >}}

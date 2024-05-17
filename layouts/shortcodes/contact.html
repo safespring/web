@@ -1,3 +1,5 @@
+<!--
+
 <div class="flex-content">
   <div class="body p-relative bg-white shadow-1">
       <img
@@ -25,3 +27,79 @@
     </div>
   </div>
 </div>
+
+-->
+
+<div class="contact-container">
+  <div class="contact-image" style="background-image: url({{.Get `picture` }});">
+  </div>
+  <div class="contact-text-container">
+    <div class="contact-text">
+      <div class="contact-name">
+        {{ .Get "name" }}
+      </div>
+      <div class="contact-title">
+        {{ .Get "title" }}
+      </div>
+    </div>
+    <div class="contact-link-container">
+      {{ if .Params.phone }}
+      <a class="contact-link" href="tel:{{ .Get `phone` }}">
+        <i class="fa-solid fa-phone"></i>
+        <span class="phone-number">{{ .Get "phone" }}</span>
+      </a>
+      {{ end }}
+      {{ if .Params.email }}
+      <a class="contact-link" href="tel:{{ .Get `email` }}">
+        <i class="fa-solid fa-envelope"></i>
+        <span>{{ .Get "email" }}</span>
+      </a>
+      {{ end }}
+      {{ if .Params.address }}
+      <a class="contact-link" href="{{ .Get `address-link` }}">
+        <i class="fa-solid fa-map"></i>
+        <span>{{ .Get "address" }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+  function formatPhoneNumber(phoneNumber) {
+    // Remove all non-digit characters
+    let cleaned = ('' + phoneNumber).replace(/\D/g, '');
+
+    // Format Swedish mobile numbers (e.g., +46762117309 to +46 76-211 73 09)
+    if (cleaned.startsWith('46') && cleaned.length === 11) {
+      return `+46 ${cleaned.slice(2, 4)}-${cleaned.slice(4, 7)} ${cleaned.slice(7, 9)} ${cleaned.slice(9, 11)}`;
+    }
+
+    // Format Swedish landline numbers (e.g., +46855107370 to +46 8-551 073 70)
+    if (cleaned.startsWith('46') && cleaned.length === 10) {
+      return `+46 ${cleaned.slice(2, 3)}-${cleaned.slice(3, 6)} ${cleaned.slice(6, 8)} ${cleaned.slice(8, 10)}`;
+    }
+
+    // Format Norwegian mobile numbers (e.g., +4747123456 to +47 471 23 456)
+    if (cleaned.startsWith('47') && cleaned.length === 11) {
+      return `+47 ${cleaned.slice(2, 4)} ${cleaned.slice(4, 6)} ${cleaned.slice(6, 8)} ${cleaned.slice(8, 11)}`;
+    }
+
+    // Format Norwegian landline numbers (e.g., +4722345678 to +47 22 34 56 78)
+    if (cleaned.startsWith('47') && cleaned.length === 10) {
+      return `+47 ${cleaned.slice(2, 4)} ${cleaned.slice(4, 6)} ${cleaned.slice(6, 8)} ${cleaned.slice(8, 10)}`;
+    }
+
+    // If it doesn't match any of the above formats, return the original number
+    return phoneNumber;
+  }
+
+  // Format phone numbers on document load
+  document.addEventListener('DOMContentLoaded', () => {
+    const phoneElements = document.querySelectorAll('.phone-number');
+    phoneElements.forEach(phoneElement => {
+      const formattedNumber = formatPhoneNumber(phoneElement.textContent);
+      phoneElement.textContent = formattedNumber;
+    });
+  });
+</script>

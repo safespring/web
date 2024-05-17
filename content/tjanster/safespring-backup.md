@@ -13,7 +13,7 @@ cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servr
 background: "safespring-backup-background.svg"
 form: "yes"
 youtubeid: "JCXm-Adpf40"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Backup"
 sidebarlinkurl2: "/pris/#safespring-backup"

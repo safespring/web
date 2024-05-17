@@ -12,7 +12,7 @@ intro: "Med Safesprings molntjänster får ditt företag flexibiliteten att anpa
 cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, svensk IaaS."
 background: "safespring-compute-background.svg"
 form: "yes"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"

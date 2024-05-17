@@ -1,12 +1,12 @@
 ---
 title: "Safespring's Acceptable Use Policy"
-date: 2018-06-27T14:29:26+02:00
+date: 2024-05-17
 draft: false
 intro: "An acceptable use policy is a guideline that establishes the use of a particular service, product, or software in an approved manner."
 documentimage: "safespring_card_21.jpg"
 sidebarlinkname: "Read Acceptable Use Policy"
 sidebarlinkicon: "fa-file-lines"
-sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01.pdf"
+sidebarlinkurl: "/documents/safespring-acceptable_use_policy.pdf"
 general: "yes"
 toc: ""
 language: "En"
@@ -25,4 +25,4 @@ In this text, Safespring establishes policy principles for the use of their clou
 - Safespring monitors the services and can assist users in maintaining adequate security as needed. In cases of high risk, they may issue a warning, and if ignored, they may stop access to the application.
 - If users violate the policy, they must immediately inform Safespring and provide reasonable assistance to rectify and minimize the risks.
 
-{{< 2calltoaction "Read Acceptable Use Policy" "/documents/safespring-acceptable-use-policy_20191654-01.pdf" "Contact Us" "/contact" >}}
+{{< 2calltoaction "Read Acceptable Use Policy" "/documents/safespring-acceptable_use_policy.pdf" "Contact Us" "/contact" >}}

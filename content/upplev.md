@@ -308,12 +308,14 @@ Safespring Compute offers great advantages such as simplified collaboration betw
     <div class="inputGroup">
             <input type="checkbox" name="accept-usage" id="accept-usage" required>
             <label for="accept-usage">
-            Acceptable use policy
+            Acceptable use policy <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
             <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
-           <label for="accept-terms"> General terms & conditions</label>
+           <label for="accept-terms"> 
+        General terms & conditions <a class="label-link" href="/documents/safespring-general_terms _and_conditions.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </label>
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">

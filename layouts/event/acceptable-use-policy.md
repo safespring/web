@@ -6,7 +6,7 @@ intro: "Safespring offers its customers a variety of infrastructure cloud servic
 dokumentbild: "safespring_card_21.jpg"
 sidebarlinkname: "Download PDF"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01.pdf"
+sidebarlinkurl: "/documents/safespring-acceptable_use_policy.pdf"
 general: "yes"
 ---
 

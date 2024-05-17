@@ -11,7 +11,7 @@ draft: false
 intro: "Bygg moderna lösningar som nyttjar maskininlärning och artificiell intelligens."
 form: "yes"
 background: "safespring-ai-background.svg"
-sidebarlinkname: "Boka demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
