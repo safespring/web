@@ -9,7 +9,7 @@ background: "safespring-blue-fade2.svg"
 darkmode: "off"
 sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
 sidebarlinkname: "Schedule a video chat"
-sidebarlinkicon: "fa fa-external-link"
+sidebarlinkicon: "fa fa-arrow-up-right-from-square"
 ---
 
 # Schedule a private demo
