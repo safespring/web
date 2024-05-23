@@ -877,7 +877,7 @@ color:var(--unCheckedColor);
 	background:linear-gradient(#fafefe 20%, #fafefe00);
 	-webkit-backdrop-filter:blur(20px);
 	backdrop-filter:blur(20px);
-	transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+	transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
 }
 
 
