@@ -28,6 +28,8 @@ Over the past three months, we've been working on a new tool designed to enhance
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-open-infra-days-2024/master.m3u8" >}}
 
+{{< icon-block-horisontal icon="fa-solid fa-download" color="#3C9BCD" description="Click here to download the presentation as a PDF." text="Download presentation" link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" >}}
+
 
 ### Project Overview
 Our project addresses the need for automated provisioning of resources such as projects, users, networks, and access control lists across multiple open stack installations. We developed a self-service API using two key technologies:
