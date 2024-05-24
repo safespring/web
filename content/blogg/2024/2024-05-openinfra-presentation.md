@@ -26,10 +26,14 @@ Over the past three months, we've been working on a new tool designed to enhance
 
 {{< inline "Safespring’s Mission" >}} Safespring aims to become the platform of choice for European cloud computing. We are dedicated to providing secure, compliant cloud services across multiple data centers in the Nordics, including Oslo, Stockholm, and Luleå. Our offerings adhere to GDPR and European security standards, ensuring top-notch security for our users.
 
+{{< distance >}}
+
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-open-infra-days-2024/master.m3u8" >}}
 
 {{< icon-block-horisontal icon="fa-solid fa-download" color="#3C9BCD" description="Click here to download the presentation as a PDF." text="Download presentation" link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" >}}
 
+
+{{< distance >}}
 
 ### Project Overview
 Our project addresses the need for automated provisioning of resources such as projects, users, networks, and access control lists across multiple open stack installations. We developed a self-service API using two key technologies:
