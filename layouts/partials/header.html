@@ -60,46 +60,24 @@
 </script>
 <script>
   let platformLink = document.getElementById('main-menu-link-platform');
-  let siteHeader = document.querySelector('.site-header');
   let megaMenuWrapper = document.querySelector('.megamenu-wrapper');
   let hideTimeout;
 
   platformLink.addEventListener('mouseover', function () {
     clearTimeout(hideTimeout);
-
-    // Measure the current height of the header.
-    var initialHeight = siteHeader.offsetHeight;
-
-    // Show the mega menu immediately.
     megaMenuWrapper.classList.add('show');
-
-    // Measure the height of the header with the mega menu displayed.
-    var finalHeight = siteHeader.offsetHeight;
-
-    // Apply the initial height.
-    siteHeader.style.height = initialHeight + 'px';
-
-    // Force a repaint (this is needed to ensure the next steps are done separately in the browser's rendering engine).
-    siteHeader.offsetHeight;
-
-    // Add the 'animate' class to enable the transition.
-    siteHeader.classList.add('animate');
-
-    // Change the height. Because we're in 'animate' mode, this will happen smoothly.
-    siteHeader.style.height = finalHeight + 'px';
+    megaMenuWrapper.classList.remove('hide');
   });
-
-  platformLink.addEventListener('mouseout', handleMouseOut);
-  megaMenuWrapper.addEventListener('mouseout', handleMouseOut);
 
   function handleMouseOut() {
     hideTimeout = setTimeout(function () {
       megaMenuWrapper.classList.remove('show');
-      siteHeader.style.height = '';
-      siteHeader.classList.remove('animate');
+      megaMenuWrapper.classList.add('hide');
     }, 100); // Adjust the time (in milliseconds) as needed
   }
 
+  platformLink.addEventListener('mouseout', handleMouseOut);
+  megaMenuWrapper.addEventListener('mouseout', handleMouseOut);
   megaMenuWrapper.addEventListener('mouseover', function () {
     clearTimeout(hideTimeout);
   });
