@@ -1,12 +1,13 @@
 ---
 title: "Våre Datasenter"
 section: "Om Safespring"
+language: "No"
 date: 2022-01-07T13:58:58+01:00
 draft: false
 intro: "Våre datasenter oppfyller dine høye krav til driftssikkerhet og tilgjengelighet. Du får også en klimasmart løsning, siden våre datasenter drives 100% med elektrisitet fra fornybare energikilder."
 background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår sikkerhet (pdf)"
-sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
+sidebarlinkurl: "/documents/safespring_information-security-guidelines_2024.pdf"
 socialmedia: "safespring-datacenter.jpg"
 ---
 
