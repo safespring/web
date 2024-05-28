@@ -7,9 +7,12 @@ language: "No"
 section: "Safespring"
 Language: "No"
 ---
-{{<ingress>}}
-Safespring leverer sikre, raske og skalerbare skytjenester for privat og offentlig sektor i Norge og Sverige. Safesprings infrastrukturtjenester (IaaS-virtuell server, lagring og back-up) egner seg bra for kunder som utvikler og drifter applikasjoner hvor automatisering via API blir etterspurt.
+
+{{< ingress >}}
+Safespring leverer sikre, raske og skalerbare skytjenester for privat og offentlig sektor i Norge og Sverige.
 {{< /ingress >}}
+
+Safesprings infrastrukturtjenester (IaaS-virtuell server, lagring og back-up) egner seg bra for kunder som utvikler og drifter applikasjoner hvor automatisering via API blir etterspurt.
 
 Safespring utvikler og drifter sine tjenester i egne datasenter i Norge (Oslo) og Sverige (Stockholm) og tilrettelegger for at deres kunder kan etterleve relevant regulatorisk rammeverk, herunder personvernregelverket (GDPR). Safespring vil presentere sine løsninger og gi eksempler på hvordan tjenestene kan benyttes, samt eksempler på noen usecases hvor ulike virksomheter benytter Safesprings tjenester.
 
