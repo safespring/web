@@ -57,6 +57,7 @@ partner: "it-sakerhetsbolaget.png"
 audience: "saas"
 aliases:
     - /webinar/gdpr-fireside-chat/fireside-chat-it-sakerhetsbolaget/
+    - /webinar/fireside-chat-it-sakerhetsbolaget/
 ---
 
 {{< ingress >}}

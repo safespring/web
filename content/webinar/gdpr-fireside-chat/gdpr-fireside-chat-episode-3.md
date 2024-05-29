@@ -17,6 +17,7 @@ partner: "it-sakerhetsbolaget.png"
 audience: "saas"
 aliases:
     - /webinar/gdpr-fireside-chat/third-fireside-chat-it-sakerhetsbolaget/
+    - /webinar/third-fireside-chat-it-sakerhetsbolaget/
 chaptersTitle: "I detta avsnitt"
 chapters:
 - title: "Intro"

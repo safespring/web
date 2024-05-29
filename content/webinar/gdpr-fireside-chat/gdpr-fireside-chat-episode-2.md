@@ -15,6 +15,7 @@ partner: "it-sakerhetsbolaget.png"
 audience: "saas"
 aliases:
     - /webinar/gdpr-fireside-chat/second-fireside-chat-it-sakerhetsbolaget/
+    - /webinar/second-fireside-chat-it-sakerhetsbolaget/
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-2/master.m3u8"
 chaptersTitle: "I detta avsnitt"
 chapters:

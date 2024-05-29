@@ -39,6 +39,7 @@ chapters:
   timeFormatted: "43:07"
 aliases:
     - /webinar/gdpr-fireside-chat/forth-fireside-chat-it-sakerhetsbolaget/
+    - /webinar/forth-fireside-chat-it-sakerhetsbolaget/
 ---
 
 
