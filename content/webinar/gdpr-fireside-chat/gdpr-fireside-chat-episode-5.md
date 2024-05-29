@@ -2,13 +2,12 @@
 title: "Kan EU & USAs tänkta nya avtal leda till Schrems III?"
 episode: "5"
 series: "true"
-thumbnail: "/img/event/cards/safespring_card_41.png"
 language: "Se"
 date: "2022-05-10"
 publishDate: "2022-05-02"
 draft: false
 tags: ["Svenska"]
-card: "/img/event/cards/safespring_card_41.png"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.png"
 eventbild: "safespring_background_39.jpg"
 socialmediabild: "safespring_social_42.gif"
 intro: "Kommer EU och USA ingå i ett nytt dataöverföringsavtal, och kan det i så fall leda till Schrems III?"
@@ -17,23 +16,32 @@ audience: "saas"
 explorer: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
-youtube: "pEs-cW5kL40"
-timecodes: "0, 190, 1588, 1935, 2675, 2840"
-chapter1: "Intro"
-minute1: "00:00"
-chapter2: "Avtal: EU-USA?"
-minute2: "03:10"
-chapter3: "Senaste om Gaia-X"
-minute3: "26:30"
-chapter4: "Safesprings remissvar"
-minute4: "32:15"
-chapter5: "Sthlm lämnar O365"
-minute5: "44:35"
-chapter6: "Esams arbete"
-minute6: "47:20"
 aliases:
     - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/&#xA0/
     - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/
+    - /webinar/gdpr-fireside-chat/fifth-fireside-chat-it-sakerhetsbolaget/
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-5/master.m3u8"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.png"
+chaptersTitle: "I detta avsnitt"
+chapters:
+- title: "Intro"
+  time: 0
+  timeFormatted: "0:00"
+- title: "Avtal: EU-USA?"
+  time: 190
+  timeFormatted: "3:10"
+- title: "Senaste om Gaia-X"
+  time: 1588
+  timeFormatted: "26:28"
+- title: "Safesprings remissvar"
+  time: 1935
+  timeFormatted: "32:15"
+- title: "Sthlm lämnar O365"
+  time: 2675
+  timeFormatted: "44:35"
+- title: "Esams arbete"
+  time: 2840
+  timeFormatted: "47:20"
 ---
 
 
