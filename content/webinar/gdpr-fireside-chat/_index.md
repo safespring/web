@@ -8,7 +8,7 @@ tags: ["Svenska"]
 card: "gdpr-fireside-chat-series.jpg"
 eventbild: ""
 socialmediabild: ""
-intro: 'I denna webbserie kommer vi att utforska hur man designar och driftsätter skalbara applikationer på Kubernetes.'
+intro: 'Upptäck det kritiska samtalet kring dataskydd och molntjänster i post-Schrems II-eran genom vår sexdelade serie.'
 partner: ""
 audience: "saas"
 explorer: ""
