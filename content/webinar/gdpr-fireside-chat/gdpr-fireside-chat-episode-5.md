@@ -7,7 +7,7 @@ date: "2022-05-10"
 publishDate: "2022-05-02"
 draft: false
 tags: ["Svenska"]
-card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.png"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.jpg"
 eventbild: "safespring_background_39.jpg"
 socialmediabild: "safespring_social_42.gif"
 intro: "Kommer EU och USA ingå i ett nytt dataöverföringsavtal, och kan det i så fall leda till Schrems III?"
@@ -21,7 +21,7 @@ aliases:
     - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/
     - /webinar/gdpr-fireside-chat/fifth-fireside-chat-it-sakerhetsbolaget/
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-5/master.m3u8"
-thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.png"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.jpg"
 chaptersTitle: "I detta avsnitt"
 chapters:
 - title: "Intro"

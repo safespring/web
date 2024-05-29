@@ -7,8 +7,8 @@ date: "2022-11-08"
 publishDate: "2022-11-08"
 draft: false
 tags: ["Svenska"]
-card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-6.png"
-thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-6.png"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-6.jpg"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-6.jpg"
 eventbild: ""
 socialmediabild: "safespring_card_45.webp"
 intro: "President Biden har undertecknat en presidentorder om förbättrade skyddsåtgärder för USA:s signalspaningsverksamhet. Vad innebär det?"

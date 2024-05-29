@@ -2,7 +2,7 @@
 title: "Praktiska möjligheter efter Schrems II, med exempel!"
 episode: "1"
 series: "true"
-thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-1.png"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-1.jpg"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-1/master.m3u8"
 chaptersTitle: "I detta avsnitt"
 chapters:
@@ -49,7 +49,7 @@ language: "Se"
 publishDate: "2021-05-05T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
-card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-1.png"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-1.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"
 intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?"

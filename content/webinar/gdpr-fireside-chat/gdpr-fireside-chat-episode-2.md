@@ -2,12 +2,12 @@
 title: "Hur ska vi tänka kring utom-europeiska molntjänster?"
 episode: "2"
 series: "true"
-thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.png"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.jpg"
 language: "Se"
 publishDate: "2021-06-16T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
-card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.png"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38-2.gif"
 intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?"
