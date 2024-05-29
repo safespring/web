@@ -53,17 +53,6 @@ President Biden har undertecknat en presidentorder om förbättrade skyddsåtgä
 3. Vad saknas för att USA skall få ett adekvansbeslut från EU-kommisionen?
 4. Hur väver digital suveränitet in i ett beslut av den amerikanske presidenten?
 
-{{< distance >}}
-
-### Se alla webcasts om debatten kring molntjänster
-1. <a href="/webinar/fireside-chat-it-sakerhetsbolaget/">Praktiska möjligheter efter Schrems II, med exempel!</a><br>
-2. <a href="/webinar/second-fireside-chat-it-sakerhetsbolaget/">Hur ska vi tänka kring utom-europeiska molntjänster?</a><br>
-3. <a href="/webinar/third-fireside-chat-it-sakerhetsbolaget/">Ett år efter Schrems II, vad har hänt och hur ska vi planera?</a><br>
-4. <a href="/webinar/forth-fireside-chat-it-sakerhetsbolaget/">Vad säger myndigets­rapporterna om molntjänster?</a><br>
-5. <a href="/webinar/fifth-fireside-chat-it-sakerhetsbolaget/">Kan EU & USAs tänkta nya avtal leda till Schrems III?</a><br>
-
-{{< distance >}}
-
 ### Dokument som tas upp under tidigare samtal
 - [Safesprings remissvar till It-driftsutredningen](/blogg/remissvar-it-driftsutredningen/)
 - [Trans Atlantic Data Privacy Framework](https://next.safespring.com/s/L5ssXCHtGAjKFYs)
