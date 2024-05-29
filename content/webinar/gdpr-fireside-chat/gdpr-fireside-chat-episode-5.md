@@ -1,5 +1,5 @@
 ---
-title: "Kan EU & USAs tänkta nya avtal leda till Schrems III?"
+title: "Kan EU & USAs nya avtal leda till Schrems III?"
 episode: "5"
 series: "true"
 language: "Se"

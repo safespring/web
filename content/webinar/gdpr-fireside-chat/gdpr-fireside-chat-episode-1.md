@@ -1,5 +1,5 @@
 ---
-title: "Praktiska möjligheter efter Schrems II, med exempel!"
+title: "Praktiska möjligheter efter Schrems II"
 episode: "1"
 series: "true"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-1.jpg"

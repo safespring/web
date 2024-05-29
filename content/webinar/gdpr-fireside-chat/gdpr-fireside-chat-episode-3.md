@@ -1,5 +1,5 @@
 ---
-title: "Ett år efter Schrems II, vad har hänt och hur ska vi planera?"
+title: "Ett år efter Schrems II, vad har hänt?"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-3/master.m3u8"
 episode: "3"
 series: "true"

@@ -1,5 +1,5 @@
 ---
-title: "Hur ska vi tänka kring utom-europeiska molntjänster?"
+title: "Hur ska vi tänka kring molntjänster?"
 episode: "2"
 series: "true"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.jpg"

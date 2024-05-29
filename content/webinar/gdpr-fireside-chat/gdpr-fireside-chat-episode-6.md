@@ -1,5 +1,5 @@
 ---
-title: "Ny president­order: blir molntjänster från USA lagliga nu?"
+title: "Ny president­order: blir USA:s molntjänster lagliga nu?"
 language: "Se"
 episode: "6"
 series: "true"
