@@ -1,22 +1,28 @@
 ---
-title: "Ett år efter Schrems II, vad har hänt och hur ska vi planera?"
-thumbnail: "/img/event/cards/safespring_card_39.jpg"
-videoURL: "https://next.safespring.com/s/6RqzjkfWwwto32r/download/2021-08-25_safespring-fireside_chat-it_sakerhetsbolaget-video.mp4"
+title: "Ett år efter Schrems II, vad har hänt?"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-3/master.m3u8"
 episode: "3"
 series: "true"
-thumbnail: "/img/event/cards/safespring_card_39.jpg"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-3.jpg"
 language: "Se"
 date: "2021-08-25"
 publishDate: "2021-06-17"
 draft: false
 tags: ["Svenska"]
-card: "/img/event/cards/safespring_card_39.jpg"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-3.jpg"
 eventbild: "safespring_background_39.jpg"
 socialmediabild: "safespring_social_39.gif"
 intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?"
 partner: "it-sakerhetsbolaget.png"
 audience: "saas"
-explorer: "https://youtu.be/JWGvHE2_-HA"
+aliases:
+    - /webinar/gdpr-fireside-chat/third-fireside-chat-it-sakerhetsbolaget/
+    - /webinar/third-fireside-chat-it-sakerhetsbolaget/
+chaptersTitle: "I detta avsnitt"
+chapters:
+- title: "Intro"
+  time: 0
+  timeFormatted: "0:00"
 ---
 
 {{< ingress>}}
@@ -33,7 +39,7 @@ Har du frågor som rör just din situation? Ta det här tillfället och ställ d
 Gabriel arbetar på Safespring som levererar en hållbar molnplattform för säkra molntjänster. Idag har Safespring bland annat 17 myndigheter i sin infrastrukturtjänst.
 {{% /accordion %}}
 
-{{% accordion title="om It-säkerhetsbolaget och Patrik" %}}
+{{% accordion title="Om It-säkerhetsbolaget och Patrik" %}}
 Patrik är VD och grundare av IT-Säkerhetsbolaget AB som är en helhetsleverantör inom hållbar digitalisering med expertkompetens inom It-säkerhet, informationssäkerhet, ISO-revisioner, It-juridik och dataskydd.
 {{% /accordion %}}
 
