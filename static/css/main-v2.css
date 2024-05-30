@@ -7681,12 +7681,12 @@ th:last-child {
 }
 
 #CookieConsent .cookie-popup h1 {
-	font:300 30px/1 var(--hind-font);
+	font:300 30px/1 var(--hind-font) !important;
 	color:var(--main-color);
 }
 
 #CookieConsent .cookie-popup h2 {
-	font:300 20px/1 var(--hind-font);
+	font:300 20px/1 var(--hind-font) !important;
 	color:var(--clear-blue-color);
 }
 
@@ -7707,7 +7707,7 @@ th:last-child {
 }
 
 #CookieConsent .cookie-popup th {
-	font:599 14px/1 var(--mon-font);
+	font:599 14px/1 var(--mon-font) !important;
 }
 
 #CookieConsent .cookie-popup td {
@@ -7716,6 +7716,15 @@ th:last-child {
 
 #CookieConsent .cookie-popup label {
 	font:599 16px/1 var(--mon-font) !important;
+}
+
+#CookieConsent .cookie-popup .details > button span {
+	font:500 16px/1 var(--mon-font) !important;
+	color: var(--main-color);
+}
+
+#CookieConsent .cookie-popup .details > button span:before {
+	background-color: var(--main-color) !important;
 }
 
 
