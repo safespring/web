@@ -13,7 +13,6 @@ socialmediabild: "safespring_social_42.gif"
 intro: "Kommer EU och USA ingå i ett nytt dataöverföringsavtal, och kan det i så fall leda till Schrems III?"
 partner: "it-sakerhetsbolaget.png"
 audience: "saas"
-explorer: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
 aliases:
