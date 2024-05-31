@@ -5,30 +5,38 @@ date: "2023-02-08"
 publishDate: "2023-02-08"
 draft: false
 tags: ["Svenska"]
-card: "/img/event/cards/safespring_card_46.svg"
+card: "/img/webinar/thumbnails/safespring_backup_demo-card.jpg"
 eventbild: ""
 socialmediabild: ""
 intro: "Sunet Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data."
 partner: ""
 audience: "saas"
 explorer: ""
-sidebar: "x"
+sidebar: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
-youtube: "RXPZWlLF_fc"
-timecodes: "62, 255, 820, 1090, 1425"
-chapter1: "Om tjänsten"
-minute1: "01:02"
-chapter2: "Demonstration"
-minute2: "04:12"
-chapter3: "Skapa avdelningar"
-minute3: "13:50"
-chapter4: "Fråga om S3 Endpoint"
-minute4: "18:10"
-chapter5: "Hur du skaffar tjänsten"
-minute5: "21:56"
-chapter6: "Info: befintliga kunder"
-minute6: "23:45"
+thumbnail: "/img/webinar/thumbnails/demo-backup-1.jpg"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safepsinrg-demo-backup-1/master.m3u8"
+chaptersTitle: "I detta avsnitt"
+chapters:
+- title: "Om tjänsten"
+  time: 62
+  timeFormatted: "01:02"
+- title: "Demonstration"
+  time: 255
+  timeFormatted: "04:12"
+- title: "Skapa avdelningar"
+  time: 820
+  timeFormatted: "13:50"
+- title: "Fråga om S3 Endpoint"
+  time: 1090
+  timeFormatted: "18:10"
+- title: "Hur du skaffar tjänsten"
+  time: 1425
+  timeFormatted: "21:56"
+- title: "Info: befintliga kunder"
+  time: 1425
+  timeFormatted: "23:45"
 ---
 
 

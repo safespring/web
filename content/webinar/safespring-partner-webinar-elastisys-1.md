@@ -1,19 +1,23 @@
 ---
 title: "Cloud to cloud migration"
-language: "Se"
+language: "En"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: false
 tags: ["English"]
-card: "/img/event/cards/safespring_card_37.jpg"
+card: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-1.jpg"
 eventbild: "safespring_background_37.jpg"
 socialmediabild: "safespring_social_37.gif"
 intro: "Vi går igenom hur juridisk säkerhet går hand i hand med kubernetes och cloud native applikationer"
 partner: "elastisys.svg"
 audience: "saas"
-explorer: "https://youtu.be/KbcnjY0AjEo"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-1.jpg"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-elastisys-1/master.m3u8"
+chaptersTitle: "I detta avsnitt"
+chapters:
+sidebar: "x"
+aliases:
+    - /webinar/fireside-chat-cloud-migration/
 ---
-
-{{< youtube KbcnjY0AjEo >}}
 
 {{< ingress>}}
 Listen in to the fireside chat between two Senior Cloud Architects, Lars Larsson (Elastisys) and Gabriel Paus (Safespring), who both have helped companies move from one cloud to another several times before.

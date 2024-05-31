@@ -4,13 +4,16 @@ language: "Se"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
-card: "/img/event/cards/safespring_card_31.jpg"
+card: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-4.jpg"
 eventbild: "safespring_background_31.jpg"
 socialmediabild: "safespring_social_31.jpg"
 intro: "Vi går igenom hur juridisk säkerhet går hand i hand med kubernetes och cloud native applikationer"
 partner: "elastisys.svg"
 audience: "saas"
-explorer: "https://youtu.be/3Pu0dWro0ag"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-4.jpg"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-elastisys-4/master.m3u8"
+aliases:
+    - /webinar/elastisys2/
 ---
 
 {{< youtube 3Pu0dWro0ag >}}
