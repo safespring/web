@@ -30,7 +30,6 @@ chapters:
   - title: "Myt 4"
     time: 788
     timeFormatted: "13:14"
-
 ---
 
 ## Insikter och expertanalys i molntjänsternas värld

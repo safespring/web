@@ -4,16 +4,34 @@ language: "Se"
 publishDate: "2020-09-03T13:58:35+02:00"
 draft: false
 tags: ["Svenska"]
-card: "/img/event/cards/safespring_card_28.jpg"
+card: "/img/webinar/thumbnails/safespring-partner-webinar-scaleout-1-card.jpg"
 eventbild: "safespring_background_28.jpg"
 socialmediabild: "safespring_social_28.jpg"
 intro: "För att bättre förbereda er organisation för den förändring som AI teknologier för med sig är det viktigt att förstå förutsättningarna."
 partner: "scaleout.svg"
 audience: "saas"
-explorer: "https://youtu.be/_uWqI_1Yt-M"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-scaleout-1.jpg"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-scaleout-1/master.m3u8"
+chaptersTitle: "I detta avsnitt"
+chapters:
+- title: "Intro Safespring"
+  time: 165
+  timeFormatted: "02:45"
+- title: "Scaleout"
+  time: 452
+  timeFormatted: "07:32"
+- title: "Demo av STACKn"
+  time: 1089
+  timeFormatted: "18:09"
+- title: "Sammanfattning"
+  time: 2010
+  timeFormatted: "33:30"
+- title: "Frågor"
+  time: 2173
+  timeFormatted: "36:13"
+aliases:
+    - /webinar/scaleout/
 ---
-
-{{< youtube _uWqI_1Yt-M >}}
 
 ### Om webbinariet
 
