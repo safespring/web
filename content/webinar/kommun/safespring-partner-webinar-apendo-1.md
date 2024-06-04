@@ -6,19 +6,19 @@ series: "true"
 publishDate: "2020-07-29T10:30:14+02:00"
 draft: false
 tags: ["Svenska"]
-card: "/img/event/cards/safespring_card_26.jpg"
+card: "/img/event/cards/safespring-partner-webinar-apendo-1.jpg"
 eventbild: "safespring_background_26.jpg"
 socialmediabild: "safespring_social_26.jpg"
 intro: "Avlasta flera avdelningar och underlätta för invånare med hjälp av svensk AI"
 partner: "apendo.svg"
 audience: "kommun"
-explorer: "https://youtu.be/boxjRCyFinY"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-apendo-1/master.m3u8"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-apendo-1.jpg"
+sidebar: "x"
+aliases:
+   - /webinar/kommun/apendo.md
 ---
 
-{{< youtube boxjRCyFinY >}}
-
-
-### Om webbinariet
 
 {{< ingress >}}
 Tänk om medborgare kunde chatta med kommunen och på ett ögonblick få svar på sina frågor utan att en handläggare behövdes tas från sina uppgifter. På webbinariet presenterar vi ADA, en AI-baserad digital assistent för kommunens handläggare.

@@ -1,6 +1,6 @@
 ---
 title: "Thank you! Your ticket will soon be sent to your email address"
-draft: false
+draft: true
 author: ""
 dokumentnamn: ""
 eventbild: ""

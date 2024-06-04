@@ -14,25 +14,36 @@ audience: "saas"
 explorer: ""
 sidebarlinkurl: ""
 sidebarlinkname: ""
-youtube: "E_8Bngx_YjA"
-timecodetitle: "Agenda"
-timecodes: "455, 2082, 4551, 4819, 5073, 5672, 5929, 6335"
-chapter1: "Safespring Compute"
-minute1: "07:25"
-chapter2: "Automate your IaaS"
-minute2: "34:42"
-chapter3: "Compliant Kubernetes"
-minute3: "1:15:51"
-chapter4: "Database as a Service (1)"
-minute4: "1:20:19"
-chapter5: "File sync and share for researchers"
-minute5: "1:24:33"
-chapter6: "Database as a service (2)"
-minute6: "1:34:32"
-chapter7: "Safespring Backup"
-minute7: "1:38:49"
-chapter8: "References"
-minute8: "1:45:35"
+chaptersTitle: "Agenda"
+chapters:
+- title: "Safespring Compute"
+  time: 455
+  timeFormatted: "07:25"
+- title: "Automate your IaaS"
+  time: 2082
+  timeFormatted: "34:42"
+- title: "Compliant Kubernetes"
+  time: 4551
+  timeFormatted: "1:15:51"
+- title: "Database as a Service (1)"
+  time: 4819
+  timeFormatted: "1:20:19"
+- title: "File sync and share for researchers"
+  time: 5073
+  timeFormatted: "1:24:33"
+- title: "Database as a service (2)"
+  time: 5672
+  timeFormatted: "1:34:32"
+- title: "Safespring Backup"
+  time: 5929
+  timeFormatted: "1:38:49"
+- title: "References"
+  time: 6335
+  timeFormatted: "1:45:35"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-ocre/master.m3u8"
+thumbnail: "/img/event/cards/safespring_card_44.jpg"
+aliases:
+   - /webinar/dfn
 ---
 
 {{< ingress>}}
@@ -41,19 +52,9 @@ Safespring is the preferred cloud platform for research and education. Welcome t
 
 [Read more about our OCRE agreement](/ocre)
 
-## Contact the presenters
-
-**Kristian Fjellhaug**  
-Safespring Sales Director and OCRE contact person.  
-kristian.fjellhaug@safespring.com
-
-**Gabriel Paues**  
-Safespring Senior Cloud Architect  
-gabriel.paues@safespring.com
-
-**Jarle Bjørgeengen**  
-Safespring Senior Cloud Architect  
-jarle.bjorgeengen@safespring.com
+{{< contact picture="/img/kontakt/safespring-daniel-melin-2024.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
+{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
+{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
 
 ## References
 ### Database as a service

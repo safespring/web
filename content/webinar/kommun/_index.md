@@ -1,33 +1,21 @@
 ---
-title: "Moderna tjänster för offentlig sektor på svensk infrastruktur"
+title: "Byggt på Safespring, utforska våra kunders molntjänster"
 language: "Se"
-date: "2018-11-10"
-publishDate: "2020-07-29T10:30:14+02:00"
-eventdatum: "10 nov. 2020"
-eventdag: "Tisdag kl. 11:00"
+date: "2018-06-03"
 draft: false
 author: ""
 dokumentnamn: ""
 card: "safespring-offentlig-sektor.jpg"
 eventbild: ""
 socialmediabild: "safespring_social_26.jpg"
-intro: ""
-partner: "apendo.svg"
-link: "#"
+intro: "En webcast-serie där vi dyker ner i våra kunders digitala framsteg med Safespring."
 audience: "kommun"
-knapp: "Starta webinar"
-english: ""
-formid: ""
-explorer: " "
 ---
 
-## Safespring Insights: Utforska Digital Transformation
-
 {{< ingress >}}
-En webcast-serie där vi dyker ner i våra kunders digitala framsteg med Safespring.
+Upptäck hur våra kunder har navigerat i den digitala eran och integrerat innovativa lösningar för att förbättra effektiviteten och tjänsterna i deras organisationer. Varje avsnitt erbjuder en unik inblick i praktiska tillämpningar av Safespring-teknologier.
 {{< /ingress >}}
 
-Upptäck hur våra kunder har navigerat i den digitala eran och integrerat innovativa lösningar för att förbättra effektiviteten och tjänsterna i deras organisationer. Varje avsnitt erbjuder en unik inblick i praktiska tillämpningar av Safespring-teknologier.
 
 ### Avsnitt 1: Digital Assistent i Kommunen
 

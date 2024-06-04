@@ -13,9 +13,12 @@ section: "blogg"
 aliases:
     - /blogg/tidslinje
 ---
-{{< youtube ogzSdTNk554 >}}
 
-{{< ingress >}}En sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna för bland annat personuppgiftsskydd och utlämning av data.{{< /ingress >}}
+{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
+
+{{< ingress >}}
+En sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna för bland annat personuppgiftsskydd och utlämning av data.
+{{< /ingress >}}
 
 ## Varför en tidslinje?
 De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande personuppgiftsskydd har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.

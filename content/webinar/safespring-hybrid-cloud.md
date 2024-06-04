@@ -19,10 +19,6 @@ audience: "saas"
 knapp: "Registrera"
 english: ""
 formid: ""
-explorer: "https://youtu.be/SpkzPLEPbxc"
 ---
-{{< youtube SpkzPLEPbxc >}}
 
-### Om webbinariet
 
-Lyckat Multicloud

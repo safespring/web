@@ -11,7 +11,7 @@ eventdag: "Onsdag kl. 13:00"
 draft: false
 author: ""
 dokumentnamn: ""
-card: "/img/event/cards/safespring_card_17.jpg"
+card: "/img/event/cards/safespring-partner-webinar-artvise-1.jpg"
 eventbild: "safespring_background_17.jpg"
 socialmediabild: "safespring_social_17.jpg"
 intro: "Äntligen ett riktigt kontaktcenter som utöver att vara intelligent och skalbart även innehåller helt integrerad ärendehantering och lättillgängliga telefonifunktioner."
@@ -21,12 +21,13 @@ audience: "kommun"
 knapp: "Registrera dig"
 english: ""
 formid: ""
-explorer: "https://youtu.be/6XufF3H9qg4"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-artvise-1/master.m3u8"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-artvise-1.jpg"
+sidebar: "x"
+aliases:
+   - /webinar/kommun/artvise.md
 ---
 
-{{< youtube 6XufF3H9qg4 >}}
-
-### Om webbinariet
 
 {{< ingress >}}
 Äntligen ett riktigt kontaktcenter som utöver att vara intelligent och skalbart även innehåller helt integrerad ärendehantering och lättillgängliga telefonifunktioner.
