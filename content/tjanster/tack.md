@@ -2,7 +2,7 @@
 title: "Tack! Vad kul att du vill testa Safesprings tjänster"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 intro: "Vi har tagit emot dina uppgifter och börjar skapa ditt konto inom kort. Läs gärna mer om tjänsterna eller ta del av våra videoguider."
 background: "safespring_bilder_8.jpg"
 ---
