@@ -12,9 +12,12 @@ socialmediabild: "safespring_social_15.jpg"
 intro: "Hur kan jag förenkla vardagen och effektivisera förskolans verksamhet och samtidigt ge både vårdnadshavare och personal mer tid med barnen?"
 partner: "tempus.svg"
 audience: "kommun"
-explorer: "https://youtu.be/jDxOispa2ME"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-tempus-1/master.m3u8"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-tempus-1.jpg"
+sidebar: "x"
+aliases:
+   - /webinar/kommun/tempus
 ---
-{{< youtube jDxOispa2ME >}}
 
 ### Om webbinariet
 

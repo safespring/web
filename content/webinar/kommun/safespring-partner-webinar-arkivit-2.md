@@ -1,5 +1,5 @@
 ---
-title: "Avställa byggprojekt: Går det att ställa av information & alla ÄTA i 12 år?"
+title: "Avställa byggprojekt: Går det att ställa av alla ÄTA i 12 år?"
 language: "Se"
 episode: "2"
 series: "true"
@@ -11,7 +11,7 @@ eventdag: "Onsdag kl. 13:00"
 draft: false
 author: ""
 dokumentnamn: ""
-card: "/img/event/cards/safespring_card_33.jpg"
+card: "/img/event/cards/safespring-partner-webinar-arkivit-2.jpg"
 eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
 intro: "Vi går igenom hur e-arkiveringens utmaningar kan lösas med serverkapacitet och tillfällig lagring."
@@ -21,11 +21,12 @@ audience: "kommun"
 knapp: "Registrera"
 english: ""
 formid: ""
-explorer: "https://youtu.be/ByruKHYO2ZU"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-arkivit-2/master.m3u8"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-arkivit-2.jpg"
+sidebar: "x"
+aliases:
+   - /webinar/kommun/arkivit-byggprojekt.md
 ---
-{{< youtube ByruKHYO2ZU >}}
-
-### Om webbinariet
 
 {{< ingress>}}
 Hur ska vi garantera att bygghandlingar finns tillgängliga om 10 år? När ni har tagit emot anläggningen eller byggnaden uppstår arkiv-utmaningen.

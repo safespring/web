@@ -11,7 +11,7 @@ eventdag: "Onsdag kl. 11:00"
 draft: false
 author: ""
 dokumentnamn: ""
-card: "/img/event/cards/safespring_card_32.jpg"
+card: "/img/event/cards/safespring-partner-webinar-arkivit-1.jpg"
 eventbild: "safespring_background_32.jpg"
 socialmediabild: "safespring_social_32.jpg"
 intro: "Vi går igenom hur e-arkiveringens utmaningar kan lösas med serverkapacitet och tillfällig lagring."
@@ -21,9 +21,12 @@ audience: "kommun"
 knapp: "Registrera"
 english: ""
 formid: ""
-explorer: "https://youtu.be/i99SeSw3d6Y"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-arkivit-1/master.m3u8"
+thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-arkivit-1.jpg"
+sidebar: "x"
+aliases:
+   - /webinar/kommun/arkivit.md
 ---
-{{< youtube i99SeSw3d6Y >}}
 
 ### Om webbinariet
 

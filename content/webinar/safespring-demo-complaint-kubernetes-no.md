@@ -11,12 +11,12 @@ socialmediabild: "safespring_social_18.jpg"
 intro: "Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjennom webinaret kan du stille spørsmål til våre eksperter på Kubernetes og sikre skytjenester."
 partner: "elastisys.svg"
 language: "No"
-explorer: "https://youtu.be/qjCBWbbXgus"
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-complaint-kubernetes-no/master.m3u8"
+sidebar: "x"
+aliases:
+   - /webinar/compliant-kubernetes-10-2021
 ---
 
-{{< youtube qjCBWbbXgus >}}
-
-### Om denne fireside chat
 
 {{< ingress>}}
 Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjennom webinaret kan du stille spørsmål til våre eksperter på Kubernetes og sikre skytjenester.
@@ -29,4 +29,6 @@ Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjennom webi
 ### Kontakt oss
 Send en e -post til vårt kontor i Norge med dine spørsmål. Våre eksperter er alltid raske til å svare.
 
-[info@safespring.com](mailto:info@safespring.com)
+{{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="+46 8-55 10 73 70" text="Ring oss" link="tel:+46855107370" >}}
+
+{{< icon-block-horisontal icon="fa-solid fa-paper-plane" color="#3C9BCD" description="hello@safespring.com" text="Send e-post" link="mailto:hello@safespring.com" >}}
