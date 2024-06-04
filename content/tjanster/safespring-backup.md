@@ -12,7 +12,6 @@ intro: "Med Safesprings molnbaserad backuptjänst behöver du inte investera i e
 cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servrar."
 background: "safespring-backup-background.svg"
 form: "yes"
-youtubeid: "JCXm-Adpf40"
 sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Backup"

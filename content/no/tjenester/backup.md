@@ -12,7 +12,6 @@ intro: "Med Safesprings skybaserte backup-tjeneste trenger du ikke å investere 
 cardintro: "Robust enterprise-grade skybackup for fysiske eller virtuelle servere."
 background: "safespring-backup-background.svg"
 form: ""
-youtubeid: ""
 sidebarlinkname: "Bestill demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Backup"
@@ -23,8 +22,6 @@ megamenu: "yes"
 ---
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-english/master.m3u8" "/img/card/safespring_backup_demo.svg" >}}
-
-{{< distance >}}
 
 {{< ingress >}}
 Safespring Backup er en neste generasjons databackup- og gjenopprettingsløsning som utnytter påliteligheten og skalerbarheten til IBM Spectrum Protect. 

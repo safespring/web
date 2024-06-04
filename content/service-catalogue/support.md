@@ -67,7 +67,7 @@ Safespring keeps an updated status information for all services at https://statu
 
 Examples of configurations are also provided in the online documentation.
 
-Safespring maintain a Youtube channel with updated How To’s with guidelines and tutorials for all services.  The channel is updated with new material based on user requests or when a new product is launched.
+Safespring maintain videos with updated How To’s with guidelines and tutorials for all services. The channel is updated with new material based on user requests or when a new product is launched.
 
 ## Standard support
 Access to backchannel chat room with support and engineering.

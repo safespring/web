@@ -2,7 +2,7 @@
 title: "Hvilke trender ser vi i den svenske debatten rundt skytjenester?"
 date: "2021-12-16"
 publishDate: "2021-11-29"
-draft: false
+draft: true
 section: "Fireside Chat"
 card: "safespring_card_41.png"
 eventbild: "safespring_background_39.jpg"
