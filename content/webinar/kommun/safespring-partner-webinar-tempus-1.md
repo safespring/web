@@ -25,13 +25,13 @@ aliases:
 Hur kan jag förenkla vardagen och effektivisera förskolans verksamhet och samtidigt ge både vårdnadshavare och personal mer tid med barnen?
 {{</ ingress >}}
 
-Tempus är ett beprövat och lättanvänt system för schemaläggning, närvarohantering och resursplanering i förskolan. Tempus förenklar vardagen och effektiviserar verksamheten och ger både vårdnadshavare och personal mer tid för barnen. **Går att upphandla genom befintliga ramavtal.**
+Tempus är ett beprövat och lättanvänt system för schemaläggning, närvarohantering och resursplanering i förskolan. Tempus förenklar vardagen och effektiviserar verksamheten och ger både vårdnadshavare och personal mer tid för barnen. Går att upphandla genom befintliga ramavtal.
 
 ### På webbinariet går vi igenom:
 
-- Hur Tempus underlättar arbetet i förskola/fritidshem
-- Demo av tjänsten
-- Hur köper eller upphandlar jag Tempus?
+1. Hur Tempus underlättar arbetet i förskola/fritidshem
+1. Demo av tjänsten
+1. Hur köper eller upphandlar jag Tempus?
 
 ### Det här är Tempus huvuddelar:
 
