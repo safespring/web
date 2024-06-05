@@ -35,7 +35,7 @@ aliases:
 
 Lös fler ärenden redan vid första kundkontakten, ha kontroll på de ärenden som behöver vandra runt i er organisation & få en helhetsbild av kunden, i ett och samma gränssnitt.
 
-Hjälp era kundtjänstmedarbetare leverera den bästa servicen! De är redan ert ansikte utåt, ge dem verktygen att leverera svar, lösningar & en fantastisk kundvård redan i första linjen med hjälp av Artvise Contact Center. **Går att upphandla genom befintliga ramavtal.**
+Hjälp era kundtjänstmedarbetare leverera den bästa servicen! De är redan ert ansikte utåt, ge dem verktygen att leverera svar, lösningar & en fantastisk kundvård redan i första linjen med hjälp av Artvise Contact Center. Går att upphandla genom befintliga ramavtal.
 
 ### På webbinariet går vi igenom:
 

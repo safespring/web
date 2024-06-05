@@ -11,10 +11,10 @@
   <div class="webinar-highlist-card shadow-1">
   <div class="webinar-highlist-image" style="background-image: url('/img/event/cards/{{ .Params.card }}');"></div>
   <div class="webinar-series-text-container" data-href="{{ .Permalink }}">
-    <p class="episode-counter">{{ $episodeCount }} avsnitt</p>
+    <p class="episode-counter">{{ $episodeCount }} {{ if isset .Params "episodetype" }}{{ .Params.episodetype }}{{ else }}avsnitt{{ end }}</p>
     <div>
       <h2>{{ .Title }}</h2>
-      <span class="text-button">Se alla avsnitt&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span>
+      <span class="text-button">Se alla {{ if isset .Params "episodetype" }}{{ .Params.episodetype }}{{ else }}avsnitt{{ end }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span>
   </div>
   </div>
 </div>

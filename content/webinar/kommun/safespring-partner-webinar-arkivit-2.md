@@ -39,7 +39,7 @@ Hur ska vi garantera att bygghandlingar finns tillgängliga om 10 år? När ni h
 
 Hur ska vi kunna hantera dessa mängder information utan att behöva investera i hård- och mjukvaror, lokaler och personella kompetenser?
 
-### Vilka borde delta på webbinariet?
+### Vilka borde se inspelningen?
 
 1. Projektadministratörer för byggprojekt
 2. Anläggnings- och fastighetsförvaltare

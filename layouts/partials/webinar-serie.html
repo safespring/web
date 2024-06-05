@@ -13,7 +13,15 @@
                     </div>{{ end }}
                 </div>
                 <div class="video-title">
-                    <p>Avsnitt {{ .Params.episode }}</p>
+                    <p>{{ with .Parent }}
+                  {{ if .Params.episodetype }}
+                      {{ .Params.episodetype }}
+                  {{ else }}
+                      avsnitt
+                  {{ end }}
+              {{ else }}
+                  avsnitt
+              {{ end }} {{ .Params.episode }}</p>
                     <h3 class="balance-text">{{ .Title }}</h3>
                 </div>
             </div>
