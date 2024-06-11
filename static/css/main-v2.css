@@ -2754,7 +2754,7 @@ body.no-scroll {
  
 /* Visa överläggningen när TOC är synlig */
 .overlay.visible {
-  display: block;
+  display: block !important;
 }
 
 

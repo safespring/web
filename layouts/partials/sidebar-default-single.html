@@ -1,5 +1,5 @@
   {{ if .Params.toc }}
-  <button class="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}</button>
+  <button class="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}.</button>
     <div class="sidebar-container-mobile">
       <div class="sidebar-content-mobile">  
         <h2 class="sidebar-toc">
@@ -15,7 +15,7 @@
   <div class="sidebar-container">
     <img class="lazyload sidebar-image" src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }}" alt="{{ .Title }}">
     <div class="sidebar-content">
-      {{ if .Params.toc }} 
+      {{ if .Params.toc }}
       <h2 class="sidebar-toc">
         {{ .Params.toc }}
       </h2>
