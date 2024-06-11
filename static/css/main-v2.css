@@ -2751,7 +2751,7 @@ body.no-scroll {
   -webkit-backdrop-filter:blur(5px);
   z-index: 999; /* Bör vara precis under sidebar-container-mobile */
 }
-
+ 
 /* Visa överläggningen när TOC är synlig */
 .overlay.visible {
   display: block;
