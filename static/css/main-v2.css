@@ -2702,8 +2702,8 @@ color:var(--unCheckedColor);
 
 /* Ändra ikon och färg vid expandering */
 .mobile-toc.expanded {
-	background-color: #fff7f3;
-  color: var(--link-color);
+	background-color: var(--link-color);
+  color: white;
   border-color: var(--link-color);
 }
 
@@ -2728,11 +2728,10 @@ body.no-scroll {
   z-index: 1001;
   margin: 5%;
   border-radius: 20px;
-  max-height: 70vh; /* Begränsad höjd för att kunna scrolla */
-  overflow-y: auto; /* Scrollbar om innehållet är långt */
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
-/* Visa knappen på mindre skärmar */
 @media screen and (max-width: 768px) {
   .mobile-toc {
     display: block;
@@ -2749,10 +2748,9 @@ body.no-scroll {
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter:blur(5px);
-  z-index: 999; /* Bör vara precis under sidebar-container-mobile */
+  z-index: 999;
 }
  
-/* Visa överläggningen när TOC är synlig */
 .overlay.visible {
   display: block !important;
 }
@@ -2762,7 +2760,7 @@ body.no-scroll {
 	background-color: var(--cloud-blue-color);
 	padding: 15px;
 	border-radius: 5px;
-		font: 15px;
+	font: 15px;
 	font-weight: 400;
 	color: var(--middle-blue-color);
 	margin: 5px !important;

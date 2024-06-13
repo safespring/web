@@ -134,8 +134,10 @@
 </div>
 <div class="sidebar-default-single">
     {{ if .Params.chapters }}
-  <button class="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}</button>
-    <div class="sidebar-container-mobile">
+<button class="mobile-toc" id="mobile-toc-webinar">
+  <i class="fa-solid fa-list-ul"></i>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
+</button>    
+<div class="sidebar-container-mobile">
       <div class="sidebar-content-mobile">  
         <h2 class="sidebar-toc">
           {{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
