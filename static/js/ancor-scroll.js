@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     function adjustScrollOffset() {
-        // Get the hash from the URL
-        const hash = window.location.hash;
+        // Decode the hash to handle special characters
+        const hash = decodeURIComponent(window.location.hash);
 
         if (hash) {
             setTimeout(() => {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if (element) {
                     // Calculate the top position of the element minus the offset
-                    const offset = 100;
+                    const offset = 200;
                     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
                     const offsetPosition = elementPosition - offset;
 
