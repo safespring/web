@@ -2670,36 +2670,44 @@ color:var(--unCheckedColor);
 }
 
 .sidebar-content-mobile #TableOfContents a {
-	font: 15px;
+	font-size: 19px;
 	font-weight: 400;
 	color: var(--middle-blue-color);
+	font-family: var(--mon-font);
 }
 
 
 .sidebar-content-mobile #TableOfContents ul>li>ul>li {
-	background-color: #195F8C20;
-	padding: 10px;
-	border-radius: 5px;
-	margin: 7px 0 0 0;
+	padding: 5px 10px;
+	margin: 0px 0 0 0;
+}
+
+.sidebar-content-mobile #TableOfContents ul ul {
+	padding: 0 20px;
 }
 
 .sidebar-content-mobile #TableOfContents ul>li>ul>li>a {
 	margin-left: 0px;
+	font-weight: 400 !important;
 }
 
 .sidebar-content-mobile #TableOfContents ul>li {
-	background-color: var(--cloud-blue-color);
-	padding: 15px;
-	border-radius: 5px;
-	margin: 7px 0 0 0;
+	padding: 15px 0;
+	margin: 0px 0 0 0;
 }
 
+.sidebar-content-mobile #TableOfContents ul>li>a {
+	font-weight: 599 !important;
+}
 
 .sidebar-content-mobile #TableOfContents ul li > ul li::before {
-	content: none;
+	content: "";
+	font-size: 15px;
+	margin-left: -25px;
+  margin-top: 1px;
+  width: 25px;
 }
 
-/* Ändra ikon och färg vid expandering */
 .mobile-toc.expanded {
 	background-color: var(--link-color);
   color: white;
@@ -2714,7 +2722,6 @@ body.no-scroll {
   content: "\f00d"; /* Font Awesome unicode för xmark */
 }
 
-/* Stil för den utökade innehållsförteckningen */
 .sidebar-container-mobile.expanded {
   display: block;
   position: fixed;
