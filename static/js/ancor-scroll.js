@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to adjust scroll position with offset
     function adjustScrollOffset() {
         // Get the hash from the URL
         const hash = window.location.hash;
 
         if (hash) {
-            // Delay to ensure the browser's default jump happens first
             setTimeout(() => {
                 // Find the element with the corresponding ID
                 const element = document.querySelector(hash);
 
                 if (element) {
                     // Calculate the top position of the element minus the offset
+                    const offset = 100;
                     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                    const offsetPosition = elementPosition - 100; // Adjust 100px offset
+                    const offsetPosition = elementPosition - offset;
 
                     // Scroll to the calculated position
                     window.scrollTo({
@@ -21,15 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
                         behavior: "smooth"
                     });
                 }
-            }, 100); // Delay in milliseconds
+            }, 300); // Delay in milliseconds
         }
     }
 
     // Adjust scroll when the page loads
-    adjustScrollOffset();
+    window.addEventListener("load", adjustScrollOffset);
 
     // Adjust scroll when the hash changes (i.e., when a link is clicked)
-    window.addEventListener("hashchange", function() {
+    window.addEventListener("hashchange", adjustScrollOffset);
+
+    // Also check if the hash changes directly without reloading
+    if (window.location.hash) {
         adjustScrollOffset();
-    });
+    }
 });
