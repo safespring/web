@@ -182,7 +182,6 @@ outline:0;
 }
 
 hr {
-	width:100%;
 	max-width:700px;
 	border:0.25px solid #195F8C70;
 	float:left;
@@ -8441,3 +8440,36 @@ details[open] summary {
 	min-width: 150px;
 }
 
+/* REFERENCE FOOTNOTE */
+
+.footnotes li {
+    margin-bottom: 0px;
+    counter-increment: footnote-list;
+}
+
+.footnotes ol {
+    counter-reset: footnote-list;
+    list-style: none;
+}
+
+.footnotes ol li:before {
+		content:counters(footnote-list, '.') ' ';
+}
+.footnotes ol li p {
+    margin: -4px;
+    padding: 0;
+    display: inline;
+    line-height: 1.2;
+}
+
+.footnote-backref {
+    font-size: 0.8em;
+}
+
+sup a {
+	font-size: 12px !important;
+	font-weight: 599 !important;
+	vertical-align: unset;
+	margin: 2px;
+}
+/* END FOOTNOTE */
