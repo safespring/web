@@ -39,19 +39,24 @@ Below you can find the addresses of our offices in Sweden and Norway. Click the 
 ### Management
 Our management team works to ensure we deliver high-quality and innovative services. Here you can find contact information for our management team.
 
+{{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Vice-Director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
+<!--{{< contact-small title="Risk & Compliance" name="Amelia Andersdotter" email="amelia.andersdotter@safespring.com" >}}-->
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
+{{< contact-small title="CTO" name="Jan Ivar Beddari" email="beddari@safespring.com" >}}
+{{< /flexbox >}}
 
 {{< distance >}}
 
 ### Board of Directors
 Our board consists of experienced members who guide and direct the company's strategic direction.
 
-{{< contact-small title="Chairman" name="Mikael Schütt" >}}
-{{< contact-small title="Member" name="Fredric Wallsten" >}}
-{{< contact-small title="Member" name="Jan Gottlander" >}}
+{{< flexbox >}}
+{{< contact-small title="Ordförande" name="Mikael Schütt" >}}
+{{< contact-small title="Ledamot" name="Fredric Wallsten" >}}
+{{< contact-small title="Ledamot" name="Jan Gottlander" >}}
+{{< /flexbox >}}
 
 {{< distance >}}
 

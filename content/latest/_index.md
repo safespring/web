@@ -1,9 +1,9 @@
 ---
-title: "Latest updates from Safespring"
+title: "Safespring Knowledge Hubb"
 section: "News and content"
 date: 2022-12-07T13:58:58+01:00
 draft: false
-intro: "Welcome to Safespring's resource center, where you can find solution briefs, white papers, webinars, and blog posts about our cloud-based infrastructure as a service (IaaS) and other offerings. These materials will help you learn about our IaaS and make informed decisions about your cloud strategy."
+intro: "The Safespring Knowledge Hub is a comprehensive collection of Safespring's materials and resources, including webcasts, white papers, blogs, tech updates, and solution briefs, designed to provide in-depth insights and expertise in cloud services and security solutions."
 section: "Safespring"
 nosidebar: "none"
 fullwidth: "yes"

@@ -39,19 +39,24 @@ Nedan hittar du adresser till våra kontor i Sverige och Norge. Klicka på länk
 ### Ledning
 Vår ledningsgrupp arbetar för att säkerställa att vi levererar högkvalitativa och innovativa tjänster. Här hittar du kontaktinformation till vår ledning.
 
+{{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
+<!--{{< contact-small title="Risk & Compliance" name="Amelia Andersdotter" email="amelia.andersdotter@safespring.com" >}}-->
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
+{{< contact-small title="CTO" name="Jan Ivar Beddari" email="beddari@safespring.com" >}}
+{{< /flexbox >}}
 
 {{< distance >}}
 
 ### Styrelse
 Vår styrelse består av erfarna ledamöter som styr och vägleder företagets strategiska riktning.
 
+{{< flexbox >}}
 {{< contact-small title="Ordförande" name="Mikael Schütt" >}}
 {{< contact-small title="Ledamot" name="Fredric Wallsten" >}}
 {{< contact-small title="Ledamot" name="Jan Gottlander" >}}
+{{< /flexbox >}}
 
 {{< distance >}}
 
@@ -66,85 +71,3 @@ Safespring levererar IT-tjänster som är både effektiva, säkra och kostnadsef
 {{< info title="Ägare" name="Privat, ej börsnoterat" >}}
 {{< info title="Grundat" name="2016-09-05" >}}
 {{< /infobox >}}.
-
-<!-- ---
-title: "Kontakta oss"
-language: "Se"
-date: "2024-05-16"
-draft: false
-intro: "Safespring har verksamhet i Sverige och i Norge med huvudkontor i Solna. Enklast kommer du i kontakt med oss via telefon eller mail. "
-tags: ""
-showthedate: false
-pageimage: ""
----
-
-{{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="08-55 10 73 70" text="Ring oss" link="tel:+46855107370" >}}
-
-{{< icon-block-horisontal icon="fa-solid fa-paper-plane" color="#3C9BCD" description="hello@safesproing.com" text="skicka mail" link="mailto:hello@safespring.com" >}}
-
-
-<div id="contact"></div>
-
-{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
-{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
-{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
-
-
-<div id="address"></div>
-
-{{< distance >}}
-
-## Safesprings adresser
-
-<div style="margin-bottom:50px;">
-</div>
-{{< contact picture="/img/kontakt/stockholm.png" title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
-{{< contact picture="/img/kontakt/oslo.png" title="Norge" name="Oslo" phone="+4735688870" address="Apotekergata 10b, 0180 Oslo" address-link="https://www.google.com/maps/place/Apotekergata+10B,+0180+Oslo,+Norge/@59.9152664,10.7394665,16z/data=!3m1!4b1!4m6!3m5!1s0x46416e7d293b4dd9:0x5b97ba3436cde149!8m2!3d59.9152664!4d10.7420468!16s%2Fg%2F11c5k2t95q?entry=ttu">}}
-{{< contact picture="/img/kontakt/bergen.png" title="Norge" name="Bergen" phone="+4735688870" address="Jacobsfjorden 6b, 5003 Bergen" address-link="https://goo.gl/maps/DpQWmUzpeyeeR9B26">}}
-
-<div id="leadership"></div>
-{{< distance >}}
-
-## Safesprings ledning
- 
-<div style="margin-bottom:50px;">
-</div>
-
-{{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Vice-director" name="Mikael Schütt" email="mikael.schutt@safespring.com" >}}
-{{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
-{{< contact-small title="CPO" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-
-<div id="board"></div>
-
-{{< distance >}}
-
-## Safesprings styrelse
-
-<div style="margin-bottom:50px;">
-</div>
-
-{{< contact-small title="Ordförande" name="Mikael Schütt" >}}
-{{< contact-small title="Ledamot" name="Fredric Wallsten" >}}
-{{< contact-small title="Ledamot" name="Jan Gottlander" >}}
-
-<div id="information"></div>
-
-{{< distance >}}
-
-## Företagsinformation
-
-Bolaget ska leverera IT-tjänster till verksamheter som önskar effektiva, säkra och kostnadseffektiva lösningar samt därmed förenlig verksamhet.
-
-<div style="margin-bottom:50px;">
-</div>
-
-{{< infobox >}}
-{{< info title="Namn" name="Safespring AB" >}}
-{{< info title="Org. nummer" name="559075-0245" >}}
-{{< info title="Huvudkontor" name="Rättarvägen 3, 169 68 Solna" >}}
-{{< info title="Styrelsens säte" name="Solna, Sverige" >}}
-{{< info title="Ägare" name="Privat, ej börsnoterat" >}}
-{{< info title="Grundat" name="2016-09-05" >}}
-{{< /infobox >}} -->

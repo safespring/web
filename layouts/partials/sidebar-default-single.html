@@ -1,23 +1,37 @@
-<div class="sidebar-container">
-  <img class="lazyload sidebar-image" src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }}" alt="{{ .Title }}">
-  <div class="sidebar-content">
-    {{ if .Params.toc }}
-    <h2 class="sidebar-toc">
-      {{ .Params.toc }}
-    </h2>
-    <div>
-      {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+  {{ if .Params.toc }}
+  <button class="mobile-toc" id="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}</button>
+    <div class="sidebar-container-mobile">
+      <div class="sidebar-content-mobile">  
+        <h2 class="sidebar-toc">
+          {{ .Params.toc }}
+        </h2>
+        <div class="balance-text">
+          {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  {{ end }}
+  <div class="sidebar-container">
+    <img class="lazyload sidebar-image" src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }}" alt="{{ .Title }}">
+    <div class="sidebar-content">
+      {{ if .Params.toc }}
+      <h2 class="sidebar-toc">
+        {{ .Params.toc }}
+      </h2>
+      <div>
+        {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+      </div>
     </div>
   </div>
-</div>
-<div class="sidebar-container">
-  <div class="sidebar-content">
-    {{ end }}   
-    <div>
-      {{ if .Params.sidebartext }}
+  <div class="sidebar-container">
+    <div class="sidebar-content">
+      {{ end }}   
+      <div>
+        {{ if .Params.sidebartext }}
         <p>{{ .Params.sidebartext }}</p> 
-      {{ else }}
-      {{ if eq .Params.language "En" }}
+        {{ else }}
+        {{ if eq .Params.language "En" }}
         <p>Safespring offers flexible and high-performance cloud infrastructure services.</p>
         <p>Our Nordic solution provides you with the confidence that you can meet legal and regulatory requirements, such as GDPR, with ease.</p>
         {{ else if eq .Params.language "No" }}
@@ -27,105 +41,159 @@
         <p>Safespring är en snabb och flexibel moln- och IT-infrastrukturtjänst.</p>
         <p>Som en svensk lösning gör Safespring det enklare för dig att uppfylla lagar och regler, som GDPR.</p>
         {{ end }}
-      {{ end }}
-      {{ if .Params.sidebarphone }}
+        {{ end }}
+        {{ if .Params.sidebarphone }}
         <a style="margin: 50px 0;" class="" href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a><br>
-      {{ end }}
-            {{ if .Params.sidebarmail }}
+        {{ end }}
+        {{ if .Params.sidebarmail }}
         <a style="margin: 50px 0;" class="" href="mailto:{{ .Params.sidebarmail }}">{{ .Params.sidebarmail }}</a>
-      {{ end }}
-    </div>
-    {{ $currentPage := . }}
-    <div class="sidebar-services">
-      <h4>
-        {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
-        {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
-        {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
-        {{else}}{{ if eq .Params.language "En"}}Optimize your service with:{{else if eq .Params.lanuage "No"}}Lær mer om{{else}}Utforska{{end}}
         {{ end }}
-      </h4>
-      <ul>
+      </div>
+      {{ $currentPage := . }}
+      <div class="sidebar-services">
+        <h4>
+          {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
+          {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
+          {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
+          {{else}}{{ if eq .Params.language "En"}}Optimize your service with:{{else if eq .Params.lanuage "No"}}Lær mer om{{else}}Utforska{{end}}
+          {{ end }}
+        </h4>
+        <ul>
+          {{ if eq .Params.language "No" }}
+          {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }}
+          {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+          <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+          {{ end }}
+          {{ end }}
+          {{ else if eq .Params.language "En" }}
+          {{ range (where $.Site.RegularPages "Section" "en").ByParam "cardorder" }}
+          {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+          <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+          {{ end }}
+          {{ end }}
+          {{ else}}
+          {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }}
+          {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+          <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {{ if .Params.documentation }}
+
+  <div class="sidebar-container">
+    <div class="sidebar-content">
+      <div>
+        <p class="card-section">{{ .Params.documentation }}</p>
+        <h2 class="card-heading">
+          {{ if eq .Params.documentation "Samurai" }}Samurai Documentation
+          {{ else if eq .Params.language "Se" }}Safespring Dokumentation
+          {{ else if eq .Params.language "No" }}Safespring Dokumentasjon
+          {{ else if eq .Params.language "En" }}Safespring Documentation
+          {{ else }}Hej
+          {{ end }}
+        </h2>
+        <p class="mb-2">
+          {{ if eq .Params.documentation "Samurai" }}Samurai ger dig realtidsinsikter i ditt företags cybersäkerhetsstatus. Kom igång med denna dokumentation.
+          {{ else if eq .Params.language "Se" }}Safesprings portal ger dig en översikt över projektet och kontostatistiken. Genom den här dokumentationen kommer du i gång.
+          {{ else if eq .Params.language "No" }}Safesprings portal gir deg oversikt over prosjekt- og kontostatistikken. Denne dokumentasjonen vil hjelpe deg i gang.
+          {{ else if eq .Params.language "En" }}Safespring's portal gives you an overview of the project and account statistics. This documentation will get you started.{{ end }}
+        </p>
+        {{ partial "documentation.html" . }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+
+  <div class="sidebar-container demo-sticky">
+    <div class="sidebar-content">
+      <div>
+        <p class="card-section">{{ .Params.documentation }}</p>
+        <h2 class="card-heading">
+          {{ if eq .Params.language "No" }}Boka demo
+          {{ else if eq .Params.language "En" }}Schedule demo
+          {{ else }}Boka demo
+          {{ end }}
+        </h2>
+        <p class="mb-2">
+          {{ if eq .Params.language "No" }}La en av våre Cloud Architects vise deg vår plattform.
+          {{ else if eq .Params.language "En" }}Let one of our Cloud Architects show you our platform.
+          {{ else  }}Låt en av våra Cloud Architects visa dig vår plattform.
+          {{ end }}
+        </p>
         {{ if eq .Params.language "No" }}
-        {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }}
-        {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
-        <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
-        {{ end }}
-        {{ end }}
+        <a class="button" href="/demo/compute">Se demo</a>
         {{ else if eq .Params.language "En" }}
-        {{ range (where $.Site.RegularPages "Section" "en").ByParam "cardorder" }}
-        {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
-        <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+        <a class="button" href="/demo/compute">Watch demo</a>
+        {{ else }}
+        <a class="button" href="/demo/compute">Se demo</a>
         {{ end }}
-        {{ end }}
-        {{ else}}
-        {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }}
-        {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
-        <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </ul>
+      </div>
     </div>
+    <div class="close-btn">&times;</div>
   </div>
-</div>
+  <script>document.addEventListener('DOMContentLoaded', (event) => {
+    var closeBtn = document.querySelector('.close-btn');
+    closeBtn.addEventListener('click', function() {
+      this.parentElement.style.display = 'none';
+    });
+  });
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', (event) => {
+  var toggleBtn = document.querySelector('.mobile-toc');
+  var sidebarContainerMobile = document.querySelector('.sidebar-container-mobile');
+  var overlay = document.querySelector('.overlay');
+  var body = document.querySelector('body');
 
-{{ if .Params.documentation }}
+  toggleBtn.addEventListener('click', function() {
+    sidebarContainerMobile.classList.toggle('expanded');
+    overlay.classList.toggle('visible');
+    body.classList.toggle('no-scroll');
+    toggleBtn.classList.toggle('expanded');
 
-<div class="sidebar-container">
-  <div class="sidebar-content">
-    <div>
-      <p class="card-section">{{ .Params.documentation }}</p>
-      <h2 class="card-heading">
-        {{ if eq .Params.documentation "Samurai" }}Samurai Documentation
-        {{ else if eq .Params.language "Se" }}Safespring Dokumentation
-        {{ else if eq .Params.language "No" }}Safespring Dokumentasjon
-        {{ else if eq .Params.language "En" }}Safespring Documentation
-        {{ else }}Hej
-        {{ end }}
-      </h2>
-      <p class="mb-2">
-        {{ if eq .Params.documentation "Samurai" }}Samurai ger dig realtidsinsikter i ditt företags cybersäkerhetsstatus. Kom igång med denna dokumentation.
-        {{ else if eq .Params.language "Se" }}Safesprings portal ger dig en översikt över projektet och kontostatistiken. Genom den här dokumentationen kommer du i gång.
-        {{ else if eq .Params.language "No" }}Safesprings portal gir deg oversikt over prosjekt- og kontostatistikken. Denne dokumentasjonen vil hjelpe deg i gang.
-        {{ else if eq .Params.language "En" }}Safespring's portal gives you an overview of the project and account statistics. This documentation will get you started.{{ end }}
-      </p>
-      {{ partial "documentation.html" . }}
-    </div>
-  </div>
-</div>
-{{ end }}
+    // Ändra ikon
+    var icon = toggleBtn.querySelector('i');
+    if (toggleBtn.classList.contains('expanded')) {
+      icon.classList.remove('fa-list-ul');
+      icon.classList.add('fa-xmark');
+    } else {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-list-ul');
+    }
+  });
 
-<div class="sidebar-container demo-sticky">
-  <div class="sidebar-content">
-    <div>
-      <p class="card-section">{{ .Params.documentation }}</p>
-      <h2 class="card-heading">
-        {{ if eq .Params.language "No" }}Boka demo
-        {{ else if eq .Params.language "En" }}Schedule demo
-        {{ else }}Boka demo
-        {{ end }}
-      </h2>
-      <p class="mb-2">
-        {{ if eq .Params.language "No" }}La en av våre Cloud Architects vise deg vår plattform.
-        {{ else if eq .Params.language "En" }}Let one of our Cloud Architects show you our platform.
-        {{ else  }}Låt en av våra Cloud Architects visa dig vår plattform.
-        {{ end }}
-      </p>
-      {{ if eq .Params.language "No" }}
-      <a class="button" href="/demo/compute">Se demo</a>
-      {{ else if eq .Params.language "En" }}
-      <a class="button" href="/demo/compute">Watch demo</a>
-      {{ else }}
-      <a class="button" href="/demo/compute">Se demo</a>
-      {{ end }}
-    </div>
-  </div>
-  <div class="close-btn">&times;</div>
-</div>
-<script>document.addEventListener('DOMContentLoaded', (event) => {
-  var closeBtn = document.querySelector('.close-btn');
-  closeBtn.addEventListener('click', function() {
-    this.parentElement.style.display = 'none';
+  // Lägg till event listeners på länkar i innehållsförteckningen
+  var tocLinks = sidebarContainerMobile.querySelectorAll('a');
+  tocLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      sidebarContainerMobile.classList.remove('expanded');
+      overlay.classList.remove('visible');
+      body.classList.remove('no-scroll');
+      toggleBtn.classList.remove('expanded');
+
+      // Återställ ikon
+      var icon = toggleBtn.querySelector('i');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-list-ul');
+    });
+  });
+
+  // Lägg till event listener för att stänga overlay när man klickar på den
+  overlay.addEventListener('click', function() {
+    sidebarContainerMobile.classList.remove('expanded');
+    overlay.classList.remove('visible');
+    body.classList.remove('no-scroll');
+    toggleBtn.classList.remove('expanded');
+
+    // Återställ ikon
+    var icon = toggleBtn.querySelector('i');
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-list-ul');
   });
 });
 </script>

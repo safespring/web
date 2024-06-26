@@ -182,7 +182,6 @@ outline:0;
 }
 
 hr {
-	width:100%;
 	max-width:700px;
 	border:0.25px solid #195F8C70;
 	float:left;
@@ -2642,6 +2641,160 @@ color:var(--unCheckedColor);
 	width:2em;
 	margin-left:-2em;
 }
+
+/* MOBILE TOC BUTTON */
+
+.mobile-toc i {
+	margin-right: 10px;
+}
+
+/* Döljer innehållsförteckningen på mindre skärmar */
+.sidebar-container-mobile {
+  display: none;
+  overflow: scroll;
+}
+
+/* Knapp för att visa innehållsförteckningen på mindre skärmar */
+.mobile-toc {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar-content-mobile {
+	margin:20px;
+}
+
+.sidebar-content-mobile #TableOfContents a {
+	font-size: 19px;
+	font-weight: 400;
+	color: var(--middle-blue-color);
+	font-family: var(--mon-font);
+}
+
+
+.sidebar-content-mobile #TableOfContents ul>li>ul>li {
+	padding: 5px 10px;
+	margin: 0px 0 0 0;
+}
+
+.sidebar-content-mobile #TableOfContents ul ul {
+	padding: 0 20px;
+}
+
+.sidebar-content-mobile #TableOfContents ul>li>ul>li>a {
+	margin-left: 0px;
+	font-weight: 400 !important;
+}
+
+.sidebar-content-mobile #TableOfContents ul>li {
+	padding: 15px 0;
+	margin: 0px 0 0 0;
+}
+
+.sidebar-content-mobile #TableOfContents ul>li>a {
+	font-weight: 599 !important;
+}
+
+.sidebar-content-mobile #TableOfContents ul li > ul li::before {
+	content: "";
+	font-size: 15px;
+	margin-left: -25px;
+  margin-top: 1px;
+  width: 25px;
+}
+
+.mobile-toc.expanded {
+	background-color: var(--link-color);
+  color: white;
+  border-color: var(--link-color);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.mobile-toc.expanded i {
+  content: "\f00d"; /* Font Awesome unicode för xmark */
+}
+
+.sidebar-container-mobile.expanded {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1001;
+  margin: 5%;
+  border-radius: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-toc {
+    display: block;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  z-index: 999;
+}
+ 
+.overlay.visible {
+  display: block !important;
+}
+
+
+.mobile-webinar-list li {
+	background-color: var(--cloud-blue-color);
+	padding: 15px;
+	border-radius: 5px;
+	font: 15px;
+	font-weight: 400;
+	color: var(--middle-blue-color);
+	margin: 5px !important;
+}
+
+.mobile-webinar-list .timer {
+	float: right;
+}
+
+.mobile-webinar-list li:before {
+    display: inline-block !important;
+    font-size: 100% !important;
+    text-rendering: auto !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-family: "Font Awesome 6 Pro" !important;
+    content: "\f144" !important;
+    color: var(--clear-blue-color) !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+}
+
+.mobile-webinar-list {
+margin: 0 !important;
+padding: 0;
+}
+
+
+/* END - MOBILE TOC BUTTON */
 
 .sidebar-container {
 	background-color:white;
@@ -8294,3 +8447,36 @@ details[open] summary {
 	min-width: 150px;
 }
 
+/* REFERENCE FOOTNOTE */
+
+.footnotes li {
+    margin-bottom: 0px;
+    counter-increment: footnote-list;
+}
+
+.footnotes ol {
+    counter-reset: footnote-list;
+    list-style: none;
+}
+
+.footnotes ol li:before {
+		content:counters(footnote-list, '.') ' ';
+}
+.footnotes ol li p {
+    margin: -4px;
+    padding: 0;
+    display: inline;
+    line-height: 1.2;
+}
+
+.footnote-backref {
+    font-size: 0.8em;
+}
+
+sup a {
+	font-size: 12px !important;
+	font-weight: 599 !important;
+	vertical-align: unset;
+	margin: 2px;
+}
+/* END FOOTNOTE */

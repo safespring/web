@@ -20,7 +20,7 @@
             {{ range .Params.subtitles }}
             <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
               {{ end }}
-              Your browser does not support the video tag.
+              Your browser does not support the video tag.. 
       </video>
     </div>
     <script>
@@ -133,6 +133,28 @@
 {{ end }}
 </div>
 <div class="sidebar-default-single">
+    {{ if .Params.chapters }}
+<button class="mobile-toc" id="mobile-toc-webinar">
+  <i class="fa-solid fa-list-ul"></i>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
+</button>    
+<div class="sidebar-container-mobile">
+      <div class="sidebar-content-mobile">  
+        <h2 class="sidebar-toc">
+          {{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
+        </h2>
+        <div class="balance-text">
+        <ul class="mobile-webinar-list">
+          {{ range $index, $element := .Params.chapters }}
+          <a href="javascript:void(0);" onclick="setCurrentTime({{ $element.time }})">
+            <li><span>{{ $element.title }}</span> <span class="timer">{{ $element.timeFormatted }}</span></li>
+          </a>
+          {{ end }}
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  {{ end }}
   {{ if .Params.chapters }}
   <div class="sidebar-container">
     <div class="sidebar-content">
@@ -155,5 +177,59 @@
 <!-- SIDEBAR -->
 {{ partial "webinar-side-bar.html" . }}
 </main>
+<script type="">
+  document.addEventListener('DOMContentLoaded', (event) => {
+  var toggleBtn = document.querySelector('.mobile-toc');
+  var sidebarContainerMobile = document.querySelector('.sidebar-container-mobile');
+  var overlay = document.querySelector('.overlay');
+  var body = document.querySelector('body');
+
+  toggleBtn.addEventListener('click', function() {
+    sidebarContainerMobile.classList.toggle('expanded');
+    overlay.classList.toggle('visible');
+    body.classList.toggle('no-scroll');
+    toggleBtn.classList.toggle('expanded');
+
+    // Ändra ikon
+    var icon = toggleBtn.querySelector('i');
+    if (toggleBtn.classList.contains('expanded')) {
+      icon.classList.remove('fa-list-ul');
+      icon.classList.add('fa-xmark');
+    } else {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-list-ul');
+    }
+  });
+
+  // Lägg till event listeners på länkar i innehållsförteckningen
+  var tocLinks = sidebarContainerMobile.querySelectorAll('a');
+  tocLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      sidebarContainerMobile.classList.remove('expanded');
+      overlay.classList.remove('visible');
+      body.classList.remove('no-scroll');
+      toggleBtn.classList.remove('expanded');
+
+      // Återställ ikon
+      var icon = toggleBtn.querySelector('i');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-list-ul');
+    });
+  });
+
+  // Lägg till event listener för att stänga overlay när man klickar på den
+  overlay.addEventListener('click', function() {
+    sidebarContainerMobile.classList.remove('expanded');
+    overlay.classList.remove('visible');
+    body.classList.remove('no-scroll');
+    toggleBtn.classList.remove('expanded');
+
+    // Återställ ikon
+    var icon = toggleBtn.querySelector('i');
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-list-ul');
+  });
+});
+</script>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
