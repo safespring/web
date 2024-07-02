@@ -1,6 +1,7 @@
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2">
   <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
-    <img src="/img/card/{{ .Params.sidebarimage }}" alt="{{ .Params.title }}">
+    <img src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}{{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}{{ end }}
+  " alt="{{ .Params.title }}">
   </div>
   <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
   	      <p style="margin: 25px 0 0 0; font-weight: 599; font-size: 13px; text-transform: uppercase; color: var(--middle-blue-color);">{{ .Params.service }}</p>
