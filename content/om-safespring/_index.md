@@ -6,7 +6,8 @@ intro: "Safespring är en svensk molnplattform. Med datacenter i Sverige håller
 background: "safespring-blue-fade2.svg"
 alias:
   "/om-safespring"
-nosidebar: "x"
+nosidebar: "invisible"
+list: "horisontal"
 ---
 
 {{< ingress >}} 
