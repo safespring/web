@@ -16,6 +16,8 @@ cardtitle: "Academic Sector"
 cardicon: "fa-solid fa-graduation-cap"
 cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly"
+aliases:
+    - /OCRE
 ---
 
 {{< ingress >}}
