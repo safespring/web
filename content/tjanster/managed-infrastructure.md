@@ -95,6 +95,8 @@ Förenkla databashanteringen genom att lägga till en managerad databas till din
 Maximera potentialen hos dina maskininlärnings- och AI-projekt genom att lägga till en Scalout ML plattform till din On-Premise Cloud. Den här tilläggstjänsten ger dig en skalbar och flexibel plattform som är optimerad för att hantera och distribuera maskininlärningsmodeller, vilket gör det enklare för dig att träna, förutsäga och analysera data.
 {{% /accordion %}}
 
+{{< icon-block-horisontal icon="fa-kit fa-ntt" color="#195F8C" text="Cyberhotdetektion och respons" description="Vid upptäckt av ett hot tar Samurai MDR omedelbara åtgärder för att isolera och hantera hotet." link="https://www.safespring.com/tjanster/samurai/" >}}
+
 ## Support och tillgänglighet
 
 Denna tjänst kan levereras med en tillgänglighet på upp till 99,9 procent under förutsättning att kunden följer våra krav på datacenter-specifikationer och gränser för användning av kapacitet. Detaljer om detta ingår i standardkontraktet som blir känt under försäljningsprocessen.
