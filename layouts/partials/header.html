@@ -35,7 +35,7 @@
       {{ end }}
     </div>
     <div class="megamenu-service-card">
-      <h3>{{ if eq $language "En" }}Built on Safespring{{ else if eq $language "No" }}Bygget på Safespring{{ else }}Byggt på Safespring{{ end }}</h3>
+      <span class="megamenu-service-card-title-small">{{ if eq $language "En" }}Built on Safespring{{ else if eq $language "No" }}Bygget på Safespring{{ else }}Byggt på Safespring{{ end }}</span>
   <ul class="megamenu-service-card-list">
     {{ range (where $.Site.RegularPages "Section" $section).ByParam "cardorder" }}
       {{ if and (not (isset .Params "megamenu")) (isset .Params "cardorder") }}

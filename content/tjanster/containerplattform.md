@@ -1,5 +1,6 @@
 ---
-title: "Kör Kubernetes och Open Shift på optimerade servrar"
+title: "Skalbarhet med Kubernetes och Open Shift på optimerade servrar"
+metatitle: "Skalbarhet med Kubernetes och Open Shift på optimerade servrar"
 language: "Se"
 cardtitle: "Containerplattform"
 cardintro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för containers."
@@ -9,7 +10,7 @@ cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för cloud native. Hantera dem själv eller köp som managerad tjänst."
+intro: "Blixtsnabb NVMe och funktionell nätverksdesign anpassade för cloud native. Hantera dem själv eller köp som managerad tjänst. Robust och driftsäkert nätverk."
 background: "safespring-kubernetes-background.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"

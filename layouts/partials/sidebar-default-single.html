@@ -51,13 +51,13 @@
       </div>
       {{ $currentPage := . }}
       <div class="sidebar-services">
-        <h4>
+        <span class="sidebar-services-h4">
           {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
           {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
           {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
           {{else}}{{ if eq .Params.language "En"}}Optimize your service with:{{else if eq .Params.lanuage "No"}}Lær mer om{{else}}Utforska{{end}}
           {{ end }}
-        </h4>
+        </span>
         <ul>
           {{ if eq .Params.language "No" }}
           {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }}
@@ -89,14 +89,14 @@
     <div class="sidebar-content">
       <div>
         <p class="card-section">{{ .Params.documentation }}</p>
-        <h2 class="card-heading">
+        <span class="card-heading">
           {{ if eq .Params.documentation "Samurai" }}Samurai Documentation
           {{ else if eq .Params.language "Se" }}Safespring Dokumentation
           {{ else if eq .Params.language "No" }}Safespring Dokumentasjon
           {{ else if eq .Params.language "En" }}Safespring Documentation
           {{ else }}Hej
           {{ end }}
-        </h2>
+        </span>
         <p class="mb-2">
           {{ if eq .Params.documentation "Samurai" }}Samurai ger dig realtidsinsikter i ditt företags cybersäkerhetsstatus. Kom igång med denna dokumentation.
           {{ else if eq .Params.language "Se" }}Safesprings portal ger dig en översikt över projektet och kontostatistiken. Genom den här dokumentationen kommer du i gång.
@@ -113,12 +113,12 @@
     <div class="sidebar-content">
       <div>
         <p class="card-section">{{ .Params.documentation }}</p>
-        <h2 class="card-heading">
+        <span class="card-heading">
           {{ if eq .Params.language "No" }}Boka demo
           {{ else if eq .Params.language "En" }}Schedule demo
           {{ else }}Boka demo
           {{ end }}
-        </h2>
+        </span>
         <p class="mb-2">
           {{ if eq .Params.language "No" }}La en av våre Cloud Architects vise deg vår plattform.
           {{ else if eq .Params.language "En" }}Let one of our Cloud Architects show you our platform.

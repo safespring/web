@@ -2,7 +2,7 @@
 <html lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}sv{{end}}'>
 <head>
   <!-- Site Title changes according to current page -->
-  <title>Safespring | {{ if .Title }}{{ .Title }}{{ else }}Svensk publik molnplattform{{ end }}</title>
+  <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
   <meta charset="utf-8">
   
   <!-- CSS -->
@@ -20,7 +20,7 @@
   <script defer src="/js/text-balancer.js"></script>
   <script defer src="/js/hls.min.js"></script>
   <script defer src="/js/ancor-scroll.js"></script>
-  <meta property="og:title" content="Safespring | {{ .Title }}">
+  <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else if eq .Params.language "No" }}img/safespring-social_media-animation-norway.gif{{ else }}img/socialmedia/safespring-start.png{{ end }}'>    
