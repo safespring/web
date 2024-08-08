@@ -4,7 +4,7 @@ intro: "Are you ready to lead the way? Drive the vision and strategic developmen
 Team: "Container platform"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
-draft: false
+draft: true
 date: "2024-02-20"
 sidebarlinkurl: "mailto:marietta@safespring.com?subject=Team%20%20Lead%20for%20Safespring%27s%20Container%20Platform%20Team&body=Please%20attach%20your%20CV%20and%20any%20cover%20letter,%20or%20write%20about%20your%20experience%20in%20this%20email."
 sidebarlinkname: "Send Resume"

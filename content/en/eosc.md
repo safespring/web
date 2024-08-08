@@ -4,7 +4,7 @@ metatitle: "Safespring & EOSC: Empowering Open Science with Cloud Infrastructure
 cardtitle: "Safespring for the Academic Sector"
 card: "safespring_card_11.svg"
 date: 2023-04-27
-draft: false
+draft: true
 intro: "Discover Safespring’s vital role in the European Open Science Cloud (EOSC) project, providing managed compute, data transfer, and file synchronization services to support open science and research collaboration across Europe."
 background: "safespring-akademisk-sektor-2024.webp"
 logobanner: "yes"
