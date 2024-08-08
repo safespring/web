@@ -33,12 +33,11 @@ Safespring is a proud partner in the European Open Science Cloud (EOSC), deliver
 
 ## Safespring's Involvement in the European Open Science Cloud (EOSC)
 
-As a crucial partner in the EOSC initiative, Safespring provides key infrastructure services under the **Exchange Infrastructure Services** and **Exchange Application Services** categories. Collaborating with the Poznan Supercomputing and Networking Center (PSNC), Safespring offers managed compute, data transfer, and file synchronization solutions. These services are essential for supporting European research efforts, enabling efficient data processing, sharing, and collaboration among institutions.
+As a crucial partner in the EOSC initiative, Safespring provides key infrastructure services under the **Exchange Infrastructure Services** and **Exchange Application Services** categories. Collaborating with the Poznan Supercomputing and Networking Center (PSNC), Safespring offers managed compute, and container platform that is consumed directly by researchers, but also as the "engine" for enterpise file sync and share, jupyter notebooks and file transfer services provided by other partners to PSNC. These services are essential for supporting European research efforts, enabling efficient data processing, sharing, and collaboration among institutions.
 
 {{< icon-block-horisontal color="#195F8C" icon="fas fa-server" text="Managed Compute Services" description="High-performance virtual machine services for efficient computational tasks in research." >}}
 {{< icon-block-horisontal color="#195F8C" icon="fas fa-exchange-alt" text="Managed Bulk Data Transfer" description="Robust data transfer services for secure and efficient sharing of large datasets." >}}
-{{< icon-block-horisontal color="#195F8C" icon="fas fa-sync-alt" text="Managed File Synchronization and Sharing" description="File synchronization and sharing solutions for effective research collaboration." >}}
-{{< icon-block-horisontal color="#32CD32" icon="fas fa-store" text="EOSC Marketplace" description="Explore and access a wide range of open science resources, services, and tools tailored for research needs." link="https://open-science-cloud.ec.europa.eu" >}}
+{{< icon-block-horisontal color="#195F8C" icon="fas fa-paas-alt" text="Container Platform" description="Container platform for deploying modern and cloud native applications." >}}
 {{< distance >}}
 
 ### Our Commitment to Open Science
