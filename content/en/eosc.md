@@ -37,7 +37,7 @@ As a crucial partner in the EOSC initiative, Safespring provides key infrastruct
 
 {{< icon-block-horisontal color="#195F8C" icon="fas fa-server" text="Managed Compute Services" description="High-performance virtual machine services for efficient computational tasks in research." >}}
 {{< icon-block-horisontal color="#195F8C" icon="fas fa-exchange-alt" text="Managed Bulk Data Transfer" description="Robust data transfer services for secure and efficient sharing of large datasets." >}}
-{{< icon-block-horisontal color="#195F8C" icon="fas fa-paas-alt" text="Container Platform" description="Container platform for deploying modern and cloud native applications." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-cubes" text="Container Platform" description="Container platform for deploying modern and cloud native applications." >}}
 {{< distance >}}
 
 ### Our Commitment to Open Science
