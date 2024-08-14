@@ -24,7 +24,7 @@ Safespring is a proud partner in the European Open Science Cloud (EOSC), deliver
 
 {{< icon-block-container >}}
     {{< icon-block icon="fas fa-cloud" text="Cloud Infrastructure" link="" color="#32cd32">}}
-    {{< icon-block icon="fas fa-database" text="Data Services" link="" color="#195F8C">}}
+    {{< icon-block icon="fas fa-cubes" text="Container platform" link="" color="#195F8C">}}
     {{< icon-block icon="fas fa-shield-alt" text="Security & Compliance" link="" color="#3C9BCD">}}
     {{< icon-block icon="fas fa-sync" text="Interoperability" link="" color="#3C9BCD">}}
     {{< icon-block icon="fas fa-project-diagram" text="Collaboration Tools" link="" color="#FA690F">}}
