@@ -5,7 +5,7 @@ cardtitle: "Safespring for Research & Education"
 card: "safespring_card_11.svg"
 date: 2023-04-27
 draft: false
-intro: "Discover Safespring’s vital role in the European Open Science Cloud (EOSC) project, providing managed compute & Kubernetes, data transfer, and file synchronization services to support open science and research collaboration across Europe."
+intro: "Discover Safespring’s vital role in the European Open Science Cloud (EOSC) project, providing managed compute, containers, data transfer, and file synchronization services to support open science and research collaboration across Europe."
 background: "safespring-akademisk-sektor-2024.webp"
 logobanner: "yes"
 toplogo: "eosc.svg"
