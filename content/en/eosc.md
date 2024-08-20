@@ -3,9 +3,9 @@ title: "Safespring’s Role in the European Open Science Cloud (EOSC): Deliverin
 metatitle: "Safespring & EOSC: Empowering Open Science with Cloud Infrastructure Solutions"
 cardtitle: "Safespring for Research & Education"
 card: "safespring_card_11.svg"
-date: 2024-08-01
+date: 2024-10-10
 draft: false
-intro: "Discover Safespring’s vital role in the European Open Science Cloud (EOSC) project, providing managed compute, containers, data transfer, and file synchronization services to support open science and research collaboration across Europe."
+intro: "Discover Safespring’s vital role in the European Open Science Cloud (EOSC) initiative, providing managed compute, containers, data transfer, and file synchronization services to support open science and research collaboration across Europe."
 background: "safespring-akademisk-sektor-2024.webp"
 logobanner: "yes"
 toplogo: "eosc.svg"
@@ -42,7 +42,7 @@ As a crucial partner in the EOSC initiative, Safespring provides key infrastruct
 
 ### Our Commitment to Open Science
 
-Safespring is dedicated to supporting the principles of open science by providing secure, GDPR-compliant cloud infrastructure solutions. Our involvement in the EOSC project aligns with our mission to enhance research and education through innovative digital services. By participating in this European-wide initiative, Safespring helps ensure that research data and tools are Findable, Accessible, Interoperable, and Reusable (FAIR), promoting a more collaborative and transparent scientific environment.
+Safespring is dedicated to supporting the principles of open science by providing secure, GDPR-compliant cloud infrastructure solutions. Our involvement in the EOSC initiative aligns with our mission to enhance research and education through innovative digital services. By participating in this European-wide initiative, Safespring helps ensure that research data and tools are Findable, Accessible, Interoperable, and Reusable (FAIR), promoting a more collaborative and transparent scientific environment.
 
 We are excited to contribute to the EOSC EU Node and look forward to continuing our support for the European research community. For more information about our services and how we can support your research and educational projects, please contact us.
 
