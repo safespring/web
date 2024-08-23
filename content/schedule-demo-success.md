@@ -1,6 +1,6 @@
 ---
 title: "Thank You for Scheduling a Demo with Safespring"
-language: "en"
+language: "En"
 date: 2024-08-20
 draft: false
 section: "Demo Scheduled"
