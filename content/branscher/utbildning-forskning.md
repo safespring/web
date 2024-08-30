@@ -25,6 +25,13 @@ Safesprings datacenter är direktanslutna till NREN-nätverket för att ge dig b
 
 Vi är mycket glada över att ha kvalificerat oss för OCRE-ramavtalet. Ramavtalet låter oss stödja forsknings- och utbildningssektorn med våra moderna, API-baserade tjänster som stöder federerad inloggning för att möjliggöra enkel inloggning. Safesprings tjänster används av över 60 universitet, institutioner och forskningsplattformar och vi hoppas också kunna vara en del av din digitala framtid. Välkommen att ta kontakt med oss!
 
+{{% note "Senaste nytt" %}}
+Läs vårt senaste nyhetsbrev till alla anslutna till OCRE.
+
+{{% /note %}}
+
+{{< readfile "Läs nyhet" "/content/read-more/2024-06-ocre-news.md" >}}
+
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
     {{< icon-block icon="fa-kit fa-sunet" text="Anslutning till Sunet" link="" color="#FA690F">}}
@@ -71,5 +78,5 @@ Safesprings tjänster är redo att användas. Om du är inom akademisk sektor i 
 Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
 {{< inline "Ring" >}} +46 (0)76 868 00 59 
-[daniel.melin @safespring.com](daniel.melin@safespring.com)
+[daniel@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
