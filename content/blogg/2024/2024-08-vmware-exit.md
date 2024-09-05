@@ -1,5 +1,5 @@
 ---
-title: "Escaping the VMware trap"
+title: "Escaping the VMware trap?"
 date: "2024-08-30"
 intro: "VMware users had their world turned upside down when Broadcom decided to rapidly  change the user terms of VMware software in 2024"
 draft: true
@@ -52,13 +52,37 @@ abstracting server workloads away from physical hardware.
 
 Safespring uses the Openstack and CEPH open source projects to build production
 quality Infrastructure as a Services in multiple physical datacenter locations
-in the Nordics.  
+in the Nordics. At the core both VMware and Openstack is all about managing
+virtual machines (VMs), thus, Safespring ought to be a great alternative to
+VMware, right? Well, as alway: it depends! Most of all it depends on your
+ability and motivaiton to automate infrastructure and operating system
+management.
+
+Traditionally VMware and specialized tooling companies provided tools to first
+migrate physical machines to virtual machines using image capture technologies
+for the hard drives (P2V) and subsequently using virtual disk images as a means to
+manage upgrades and migrations. While this seems like a good approach in the
+short term, we think it only postpones the need to manage VM, disks and
+networks separate from VM operating systems and with operating system
+configuration management tools like Cfengine, Rudder, Puppet, Chef and/or Salt
+& Ansible (for orchestraiton) and a version control system for code and
+configuration data.
+
+So, to be blunt the usefulness of any IaaS service as a replacement for VMware, or
+similar kinds of on premise virtual infrastructure managment tools, depends
+strongly on the willingenss and ability to automate and manage the
+infrastructure provisioning, the operating system configuration (including
+workload deployment) and state management (data dumps, object storage, backups
+etc) separately from VM images and snapshots. Thus, if you already manage your
+VMware workload like this, Safespring could nearly be a drop in replacement by
+only rewriting the infrastructure code, using for instance our community
+provided [Terraform modules][tfmodulesblog]
 
 ### Closing the gap
 
 Safespring offer a free assessement service to estimate the key activities
 needed in order to migrate your workloads from VMware to the Safespring
-platform. 
+platform.
 
 The assessment can be adapted for each customer's needs, but the following
 activity list outlines the assessment:
@@ -73,6 +97,12 @@ activity list outlines the assessment:
 * Based on the POC outcome, create a full migration plan for all workloads
   verified to be compatible with Safespring
 
-The seervice is free, and the only requirment from you is to dedicate human
-resources with sufficient knowledge to work with us and help creating the
-migration plans.
+The service is free, and the only requirement from you is to, first qualify by
+[answering a short survey][survey] about your current in-house experience with
+automated infrastructure management tools and practices. Once qualified, we ask
+you dedicate resources with sufficient knowledge to work with us to first
+carry out the assessment and then create the migration plans, and automation
+code to deploy the necessary infrastructure to deploy workloads onto.
+
+[tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
+[survey]: https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd
