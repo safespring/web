@@ -1,6 +1,6 @@
 ---
 title: "Escaping the VMware trap?"
-date: "2024-08-30"
+date: 2024-08-30
 intro: "VMware users had their world turned upside down when Broadcom decided to rapidly  change the user terms of VMware software in 2024"
 draft: false
 section: "Tech update"
