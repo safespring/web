@@ -445,6 +445,7 @@ a {
 	color:var(--link-color);
 	text-decoration:none;
 	font-weight: var(--normal-weight);
+	font-family: var(--mon-font);
 }
 
 p>a:hover {
