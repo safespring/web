@@ -34,16 +34,16 @@ increases in their annual renewal fees.
 ## Background
 
 VMware was a leading software company in the field of on-premise datacenter
-virtualization technology that creates an abstraction layer over computer
+virtualisation technology that creates an abstraction layer over computer
 hardware. In many ways VMware pioneered the usage of virtual servers on top of
-"common off the shelf" (COTS) Intel based server hardware during the 2000s.
-They became the first choice for many on-premise datacenter workloads even
-though other and less known alternativs did and do exist
+"common off the shelf" (COTS) Intel-based server hardware during the 2000s.
+They became the first choice for many on-premise data centre workloads even
+though other and less known alternatives did and do exist.
 
 ## The Safespring alternative
 
 Safespring uses the OpenStack and CEPH open source projects to build production
-quality Infrastructure as a Service in multiple physical datacenter locations
+quality Infrastructure as a Service in multiple physical data centre locations
 in the Nordics. At the core, both VMware and OpenStack are all about managing
 virtual machines (VMs), thus, Safespring ought to be a great alternative to
 VMware, right? Well, as always, it depends! Most of all, it depends on your
@@ -60,8 +60,8 @@ postpones the need to manage VMs, disks, and networks separate from VM
 operating systems and with operating system configuration management tools like
 Cfengine, Puppet, Chef and orchestration tools like  Salt and Ansible, commonly
 referred to as "infrastructure as code", or IAC. This approach allowed for IAC
-to be managed using the same kind of version control systems seen in cloud native
-application development, thus, improving flexibility, stability and automation
+to be managed using the same kind of version control systems seen in cloud-native
+application development, thus improving flexibility, stability and automation
 level also on the infrastructure side of things.
 
 
@@ -75,12 +75,12 @@ VMware workload like this, Safespring could nearly be a drop in replacement by
 only rewriting the infrastructure code, using, for instance, our community
 provided [Terraform modules][tfmodulesblog]
 
-Of course you can take Openstack for a spin by yourself like described in the
+Of course, you can take OpenStack for a spin by yourself, as described in the
 Openstack open source project description of ["Migrating from VMware to
 OpenStack: Optimizing your Infrastructure to Save Money and Avoid
-Vendor-Lock-in"][openstackmig]. However if you are looking for a minimum effort
-alternative why not just buy the managed service experience and let the
-professionals take care of the somewhat complex task of Operating openstack in
+Vendor-Lock-in"][openstackmig]. However, if you are looking for a minimum effort
+alternative, why not just buy the managed service experience and let the
+professionals take care of the somewhat complex task of Operating OpenStack in
 a secure and stable manner.
 
 ### Closing the gap
@@ -93,11 +93,11 @@ The assessment can be adapted to each customer's needs, but the following
 activity list outlines the evaluation:
 
 * Identify which VMware products are in use.
-* Identify which features of the products are used, for which purposes and to which extent.
-* Identify the distribution of operating systems for VM workloads and the level.
+* Identify which features of the products are used, for which purposes, and to what extent.
+* Identify the distribution of operating systems for VM workloads and the level
   of automation and tools in use for managing operating systems and their workloads.
 * Identify container workloads and tools used to deploy them.
-* For workloads evaluated to be reasonably easy to migrate, create proof of
+* For workloads evaluated to be reasonably easy to migrate, create a proof of
   concept (POC) to try out Safespring as a new destination for the workloads.
 * Based on the POC outcome, create a complete migration plan for all workloads
   verified to be compatible with Safespring.
