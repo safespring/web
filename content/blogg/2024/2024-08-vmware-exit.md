@@ -27,10 +27,11 @@ increases in their annual renewal fees.
 
 {{% note "Key effects of Broadcom's acquisition of VMware" %}}
 
-* Broadcom has made major changes to VMware's pricing and licensing model:
-  * Shifted from perpetual licenses to a subscription-based model
-  * Eliminated the free version of VMware's vSphere Hypervisor (ESXi)
-  * Implemented price increases, with some customers reporting 5-10x higher costs
+Broadcom has made major changes to VMware's pricing and licensing model:
+
+* Shifted from perpetual licenses to a subscription-based model
+* Eliminated the free version of VMware's vSphere Hypervisor (ESXi)
+* Implemented price increases, with some customers reporting 5-10x higher costs
 {{% /note %}}
 
 ## Background
