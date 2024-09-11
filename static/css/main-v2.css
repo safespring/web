@@ -444,11 +444,12 @@ body {
 a {
 	color:var(--link-color);
 	text-decoration:none;
-	font:var(--normal-weight) 16px var(--mon-font);
+	font-weight: var(--normal-weight);
 }
 
-a:hover {
+p>a:hover {
 	color:var(--main-color);
+	text-decoration: underline;
 }
 
 button {
@@ -4132,7 +4133,7 @@ margin:0;
 	max-width:600px;
 	background:white;
 	margin:1.5625em 0;
-	padding:25px 20px 15px 40px;
+	padding:25px 20px 15px 60px;
 	border-left:10px solid var(--green-color);
 	border-radius:10px;
 }
@@ -4141,7 +4142,10 @@ margin:0;
 	color:var(--green-color);
 	font:var(--heavy-weight) 15px var(--mon-font);
 	text-transform:uppercase;
+	padding-left: 0; /* Skapar utrymme för ikonen och texten */
+  text-indent: -2.8em; /* Justera texten i förhållande till ikonen */
 }
+
 
 .note-title::before {
 	margin-right:10px;
