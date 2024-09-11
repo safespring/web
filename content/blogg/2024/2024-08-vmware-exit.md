@@ -60,7 +60,7 @@ postpones the need to manage VMs, disks, and networks separate from VM
 operating systems and with operating system configuration management tools like
 Cfengine, Puppet, Chef and orchestration tools like  Salt and Ansible, commonly
 referred to as "infrastructure as code", or IAC. This approach allowed for IAC
-to managed using the same kind of version control systems seen cloud native
+to be managed using the same kind of version control systems seen in cloud native
 application development, thus, improving flexibility, stability and automation
 level also on the infrastructure side of things.
 
