@@ -41,7 +41,7 @@ With Safespring, you can create, start, and stop virtual machines with just a fe
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-lock-open" text="No Vendor Lock-In" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimized" link="/services/container-platform/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimized" link="/en/services/containerplatform/" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-code" text="Open Source" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-door-open" text="Open Standards" link="" color="#FA690F">}}
     {{< icon-block icon="fa-solid fa-webhook" text="Powerful Automation" link="" color="#32cd32">}}

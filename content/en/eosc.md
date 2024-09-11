@@ -13,9 +13,6 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "En"
-aliases:
-    - /eosc
-    - /EOSC
 ---
 
 {{< ingress >}}
