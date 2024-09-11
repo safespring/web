@@ -16,8 +16,8 @@ language: "En"
 
 {{< ingress >}}
 Broadcom's acquisition of VMware has had significant impacts on customers,
-causing concern and prompting some to consider alternatives. This post will
-address these challenges and one proposed solution.
+causing concern and prompting some to consider alternatives. This post will 
+address these challenges and describe one solution to the challenges.
 {{< /ingress >}}
 
 These changes, after Broadcom's acquisition of VMware, have led to higher long-term
