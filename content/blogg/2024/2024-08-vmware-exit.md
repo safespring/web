@@ -26,9 +26,6 @@ increases in their annual renewal fees.
 
 
 {{% note "Key effects of Broadcom's acquisition of VMware" %}}
-
-Broadcom has made major changes to VMware's pricing and licensing model:
-
 * Shifted from perpetual licenses to a subscription-based model
 * Eliminated the free version of VMware's vSphere Hypervisor (ESXi)
 * Implemented price increases, with some customers reporting 5-10x higher costs
@@ -36,12 +33,12 @@ Broadcom has made major changes to VMware's pricing and licensing model:
 
 ## Background
 
-VMware was a leading software company in the field of cloud computing and
-virtualisation technology that creates an abstraction layer over computer
+VMware was a leading software company in the field of on-premise datacenter
+virtualization technology that creates an abstraction layer over computer
 hardware. In many ways VMware pioneered the usage of virtual servers on top of
 "common off the shelf" (COTS) Intel based server hardware during the 2000s.
-They became the first choice for many on-premise datacenter workloads even though
-other and less known alternativs did and do exist
+They became the first choice for many on-premise datacenter workloads even
+though other and less known alternativs did and do exist
 
 ## The Safespring alternative
 
@@ -83,7 +80,7 @@ Openstack open source project description of ["Migrating from VMware to
 OpenStack: Optimizing your Infrastructure to Save Money and Avoid
 Vendor-Lock-in"][openstackmig]. However if you are looking for a minimum effort
 alternative why not just buy the managed service experience and let the
-professionals take care of the somewhot complex task of Operating openstack in
+professionals take care of the somewhat complex task of Operating openstack in
 a secure and stable manner.
 
 ### Closing the gap
@@ -114,3 +111,4 @@ code to deploy the necessary infrastructure to deploy workloads onto.
 
 [tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
 [survey]: https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd
+[openstackmig]: https://www.openstack.org/vmware-migration-to-openstack-white-paper
