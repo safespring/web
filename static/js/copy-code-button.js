@@ -11,7 +11,6 @@ function addLanguageLabels() {
   });
 }
 
-
 document.querySelectorAll('pre').forEach((pre) => {
   addLanguageLabels();
 
@@ -31,7 +30,7 @@ document.querySelectorAll('pre').forEach((pre) => {
     });
   });
 
-  pre.style.position = 'relative';
+  pre.style.display = 'flex';
   button.style.position = 'absolute';
   button.style.top = '0';
   button.style.right = '0';

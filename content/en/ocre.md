@@ -18,6 +18,7 @@ cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly"
 aliases:
     - /OCRE
+    - /ocre
 ---
 
 {{< ingress >}}
