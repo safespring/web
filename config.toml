@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.safespring.com"
 languageCode = "sv"
 title = "En hållbar plattform för säkra molntjänster"
 author = "Safespring"
@@ -15,6 +15,9 @@ paginatePath = "blog"
     changefreq = "daily"
     filename = "sitemap.xml"
     priority = 0.5
+
+[outputs]
+    home = ["HTML", "RSS", "SITEMAP"]
 
 [markup]
   [markup.highlight]
