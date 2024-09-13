@@ -51,6 +51,16 @@
 	src: url('/fonts/Hind-SemiBold.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Safespring Mono SemiBold';
+	src: url('/fonts/Safespring-Mono-SemiBold.ttf') format('truetype');
+}
+
 .width-700 {
 	max-width: 700px;
 }
@@ -83,6 +93,9 @@ italic {
 	color:blue;
 }
 
+pre {
+	font-family: "Safespring Mono";
+}
 pre > code {
 	padding:0;
 }
@@ -91,16 +104,22 @@ code {
 	font-style:normal;
 	font-size:13px !important;
 	background:#EAF0F4;
-	padding:5px 8px;
-	border-radius:5px;
+	padding:3px 8px;
+	border-radius:7px;
 	color:#195F8C;
 	overflow:scroll;
+	font-family: "Safespring Mono";
+	white-space: nowrap;
 }
 
 code>span {
 	font-size: 13px;
 }
 
+
+strong>code {
+	font-family: "Safespring Mono SemiBold";
+}
 
 pre {
 	position:relative;
@@ -123,6 +142,8 @@ pre[data-lang]::before {
 	top:0;
 	left:0;
 	z-index:1;
+	font-family: "Safespring Mono SemiBold";
+
 }
 
 strong {
