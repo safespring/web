@@ -27,12 +27,12 @@ megamenu: "yes"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimised" link="/tjanster/containerplattform/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-door-open" text="Open standards" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-server" text="Central blocklagring" link="#central-blocklagring" color="#195F8C" >}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32" >}}
+    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C" >}}
+    {{< icon-block icon="fa-solid fa-chart-line" text="Skalbar infrastruktur" link="" color="#3C9BCD" >}}
+    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD" >}}
+    {{< icon-block icon="fa-solid fa-cloud-upload-alt" text="99,9% tillgänglighet" link="" color="#32cd32" >}}
 {{< /icon-block-container >}}
 
 
@@ -51,6 +51,7 @@ Vi erbjuder högsta nivå av säkerhet och tillgänglighet med våra datahallar 
 Med Safespring Compute får du tillgång till marknadsledande molnteknologi direkt ifrån våra säkra och tillförlitliga datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra datasäkerhet.
 
 {{< horisontal-card image="/img/card/safespring-amelia-small.jpg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet. Det innebär också att ledningen ansvarar för efterlevnaden av säkerhetsåtgärder, inklusive användning av kryptering och säkerhetsteknologier." >}}
+{{< distance >}}
 
 
 ### Samarbeta effektivt med Safespring Compute
@@ -73,17 +74,27 @@ På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter
 {{% /accordion %}}
 {{< accordion-script >}}
 
-![Safespring Compute benefits](/img/safespring-compute-central-blocklagring.svg)
+## Central blocklagring
 
+{{< ingress >}}
+Vår centraliserade blocklagring erbjuder säker och flexibel lagringskapacitet som är separerad från de noder där dina instanser körs. 
+{{< /ingress >}}
+
+Detta möjliggör hög tillgänglighet och tillförlitlighet. Genom ett distribuerat Ceph-kluster kan vi garantera optimal prestanda och skalbarhet för dina specifika behov. Våra blocklagringsalternativ finns i två varianter, anpassade för olika användnings­områden: FAST och LARGE.
+
+{{< icon-block-horisontal color="#195F8C" icon="fas fa-rocket" text="FAST" description="Vår FAST-lagring är optimerad för prestanda och designad för applikationer som kräver låga latenser och höga IOPS (Input/Output Operations Per Second). Den är idealisk för databaser, virtuella maskiner och andra prestandakritiska applikationer som kräver snabb responstid och pålitlig tillgänglighet." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fas fa-hdd" text="LARGE" description="LARGE-lagringen är designad för att erbjuda kostnadseffektiv blocklagring med hög kapacitet. Det är det perfekta valet för applikationer där lagringskapacitet prioriteras framför prestanda, såsom arkivering, säkerhetskopior och hantering av stora datamängder där kostnad per gigabyte är en avgörande faktor." >}}
 {{< distance >}}
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" >}}
-{{< readfile "Vad är IaaS?" "/content/read-more/iaas-vs-colocation.md" >}}
+{{< distance >}}
 
-### OpenStack och Kubernetes
+## OpenStack och Kubernetes
 OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.
 
 Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
+
+{{< readfile "Vad är IaaS?" "/content/read-more/iaas-vs-colocation.md" >}}
 
 
 {{< distance >}}

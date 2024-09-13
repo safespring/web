@@ -138,7 +138,7 @@ Storskalig lagring och compute-kapacitet är det många som efterfrågar. Safesp
 Jag är kontaktperson för den akademiska sektorn i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+hello@safespring.com
 {{% /custom-card %}}
 
 {{< accordion-script >}}
