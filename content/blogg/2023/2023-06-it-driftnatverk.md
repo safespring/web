@@ -42,7 +42,7 @@ Vi är stolta över att vara en del av denna gemensamma ansträngning och ser fr
 Safespring är en stolt deltagare i initiativet Sveriges IT-driftnätverk, strävandes efter att främja svensk IT-kompetens och styrka vår nationella IT-infrastruktur. Vill du veta mer om vår roll i detta initiativ och hur vi kan hjälpa ditt företag att navigera i den digitala eran? Boka en lunch med mig idag!
 
 {{< inline "Ring" >}} +46 76-629 25 02
-fredric.wallsten@safespring.com
+[fredric@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< accordion-script >}}

@@ -136,6 +136,13 @@ p>code {
 	white-space: nowrap;
 }
 
+@media only screen and (max-width:900px) {
+	p>code {
+		display: flex;
+		white-space: wrap;
+}
+}
+
 code {
 	font-style:normal;
 	font-size:13px !important;
