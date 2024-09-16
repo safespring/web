@@ -52,45 +52,45 @@
 }
 
 @font-face {
-    font-family: 'Safespring Mono';
-    src: url('/fonts/Safespring-Mono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Safespring Mono';
-    src: url('/fonts/Safespring-Mono-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
 }
 
 @font-face {
-    font-family: 'Safespring Mono';
-    src: url('/fonts/Safespring-Mono-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Safespring Mono';
-    src: url('/fonts/Safespring-Mono-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
 }
 
 @font-face {
-    font-family: 'Safespring Mono';
-    src: url('/fonts/Safespring-Mono-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Safespring Mono';
-    src: url('/fonts/Safespring-Mono-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+	font-family: 'Safespring Mono';
+	src: url('/fonts/Safespring-Mono-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
 }
 
 .width-700 {
@@ -139,7 +139,7 @@ p>code {
 @media only screen and (max-width:900px) {
 	p>code {
 		white-space: wrap;
-}
+	}
 }
 
 code {
@@ -324,7 +324,7 @@ p, ol {
 }
 
 p.url {
-  word-break: break-all;
+	word-break: break-all;
 }
 
 h1 {
@@ -1846,7 +1846,7 @@ color:var(--unCheckedColor);
 }
 
 .sidebar-services-h4 {
-  margin:30px 0 10px 0;
+	margin:30px 0 10px 0;
 	font:var(--hind-light-weight) 16px var(--hind-font);
 	color:var(--main-color);
 	line-height:21px;
@@ -2725,19 +2725,19 @@ color:var(--unCheckedColor);
 
 /* Döljer innehållsförteckningen på mindre skärmar */
 .sidebar-container-mobile {
-  display: none;
-  overflow: scroll;
+	display: none;
+	overflow: scroll;
 }
 
 /* Knapp för att visa innehållsförteckningen på mindre skärmar */
 .mobile-toc {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  z-index: 1000;
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+	z-index: 1000;
 }
 
 .sidebar-content-mobile {
@@ -2779,61 +2779,61 @@ color:var(--unCheckedColor);
 	content: "";
 	font-size: 15px;
 	margin-left: -25px;
-  margin-top: 1px;
-  width: 25px;
+	margin-top: 1px;
+	width: 25px;
 }
 
 .mobile-toc.expanded {
 	background-color: var(--link-color);
-  color: white;
-  border-color: var(--link-color);
+	color: white;
+	border-color: var(--link-color);
 }
 
 body.no-scroll {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .mobile-toc.expanded i {
-  content: "\f00d"; /* Font Awesome unicode för xmark */
+	content: "\f00d"; /* Font Awesome unicode för xmark */
 }
 
 .sidebar-container-mobile.expanded {
-  display: block;
-  position: fixed;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  background: white;
-  padding: 10px;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  z-index: 1001;
-  margin: 5%;
-  border-radius: 20px;
-  max-height: 70vh;
-  overflow-y: auto;
+	display: block;
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	background: white;
+	padding: 10px;
+	box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+	z-index: 1001;
+	margin: 5%;
+	border-radius: 20px;
+	max-height: 70vh;
+	overflow-y: auto;
 }
 
 @media screen and (max-width: 768px) {
-  .mobile-toc {
-    display: block;
-  }
+	.mobile-toc {
+		display: block;
+	}
 }
 
 .overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter:blur(5px);
-  z-index: 999;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter:blur(5px);
+	z-index: 999;
 }
- 
+
 .overlay.visible {
-  display: block !important;
+	display: block !important;
 }
 
 
@@ -2852,20 +2852,20 @@ body.no-scroll {
 }
 
 .mobile-webinar-list li:before {
-    display: inline-block !important;
-    font-size: 100% !important;
-    text-rendering: auto !important;
-    -webkit-font-smoothing: antialiased !important;
-    font-family: "Font Awesome 6 Pro" !important;
-    content: "\f144" !important;
-    color: var(--clear-blue-color) !important;
-    padding: 0 !important;
-    margin-left: 0 !important;
+	display: inline-block !important;
+	font-size: 100% !important;
+	text-rendering: auto !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-family: "Font Awesome 6 Pro" !important;
+	content: "\f144" !important;
+	color: var(--clear-blue-color) !important;
+	padding: 0 !important;
+	margin-left: 0 !important;
 }
 
 .mobile-webinar-list {
-margin: 0 !important;
-padding: 0;
+	margin: 0 !important;
+	padding: 0;
 }
 
 
@@ -4200,7 +4200,7 @@ margin:0;
 	font:var(--heavy-weight) 15px var(--mon-font);
 	text-transform:uppercase;
 	padding-left: 0; /* Skapar utrymme för ikonen och texten */
-  text-indent: -2.8em; /* Justera texten i förhållande till ikonen */
+	text-indent: -2.8em; /* Justera texten i förhållande till ikonen */
 }
 
 
@@ -5283,13 +5283,13 @@ ol li::before {
 		direction:rtl;
 	}
 
-ol li ol li {
-	border-top: 0;
-}
+	ol li ol li {
+		border-top: 0;
+	}
 
-ol li ol li::before {
-	color: #ababab;
-}
+	ol li ol li::before {
+		color: #ababab;
+	}
 
 	/* CARD */
 
@@ -8526,33 +8526,33 @@ details[open] summary {
 /* REFERENCE FOOTNOTE */
 
 .footnotes li {
-    margin-bottom: 0px;
-    counter-increment: footnote-list;
+	margin-bottom: 0px;
+	counter-increment: footnote-list;
 }
 
 .footnotes ol {
-    counter-reset: footnote-list;
-    list-style: none;
+	counter-reset: footnote-list;
+	list-style: none;
 }
 
 .footnotes ol li:before {
-		content:counters(footnote-list, '.') ' ';
-}
-.footnotes ol li p {
-    margin: -4px;
-    padding: 0;
-    display: inline;
-    line-height: 1.2;
-}
+	content:counters(footnote-list, '.') ' ';
+	}
+	.footnotes ol li p {
+		margin: -4px;
+		padding: 0;
+		display: inline;
+		line-height: 1.2;
+	}
 
-.footnote-backref {
-    font-size: 0.8em;
-}
+	.footnote-backref {
+		font-size: 0.8em;
+	}
 
-sup a {
-	font-size: 12px !important;
-	font-weight: 599 !important;
-	vertical-align: unset;
-	margin: 2px;
-}
+	sup a {
+		font-size: 12px !important;
+		font-weight: 599 !important;
+		vertical-align: unset;
+		margin: 2px;
+	}
 /* END FOOTNOTE */
