@@ -73,7 +73,7 @@ workload deployment) and state management (data dumps, object storage, backups
 etc.) separately from VM images and snapshots. Thus, if you already manage your
 VMware workload like this, Safespring could nearly be a drop in replacement by
 only rewriting the infrastructure code, using, for instance, our community
-provided [Terraform modules][tfmodulesblog]
+provided [Terraform modules][tfmodulesblog].
 
 Of course, you can take OpenStack for a spin by yourself, as described in the
 Openstack open source project description of ["Migrating from VMware to
