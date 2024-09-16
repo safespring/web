@@ -1,5 +1,5 @@
 ---
-title: "Information avseende personuppgifts­­behandling"
+title: "Information avseende personuppgifts­behandling"
 date: 2024-01-05
 draft: false
 intro: "På den här sidan får du reda på hur vi samlar in och använder personuppgifter på vår webbplats."
@@ -45,8 +45,8 @@ Om du har några frågor om dina rättigheter får du gärna kontakta oss på gd
 Du har en rätt att göra invändningar mot vår behandling av dina uppgifter och be att vi slutar med den behandlingen. Du har också rätt att få reda på vilka uppgifter vi har om dig, och att ta del av de uppgifterna. Vi förbehåller oss rätten att inte agera på en förfrågan om det vore uppenbart orimligt givet arbetsbördan, eller om vi saknar tillräcklig information för att förstå vem du som riktar frågor mot oss är och hur vi kan hjälpa dig.  Slutligen har du rätt att inge klagomål till Integritetsskyddsmyndigheten.
 
 ### Särskild information om webbkakor
-Vi har särskild information om webbkakor på den här sidan: https://www.safespring.com/dokument/cookies/
+Vi har särskild information om webbkakor på den här [sidan om cookies](https://www.safespring.com/dokument/cookies/).
 
-{{% note "personuppgiftsbiträdesavtal" %}}
+{{% note "personuppgifts­biträdesavtal" %}}
 För mer information om vårt personuppgiftsbiträdesavtal, ta kontakt med din kundkontakt.
 {{% /note %}}
