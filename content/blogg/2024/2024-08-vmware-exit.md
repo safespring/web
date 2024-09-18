@@ -83,17 +83,6 @@ alternative, why not just buy the managed service experience and let the
 professionals take care of the somewhat complex task of Operating OpenStack in
 a secure and stable manner.
 
-{{< distance >}}
-
-{{% custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Get a free assessment for migrating your VMware workloads to Safespring" %}}
-Safespring offers a free assessment service to help you migrate workloads from VMware to our platform, tailored to your needs. This includes identifying current VMware products, assessing automation levels, and creating a proof of concept for migration.
-
-{{< localbutton text="Start the assessment" link="https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd" >}}
-
-{{% /custom-card %}}
-
-{{< distance >}}
-
 ### Closing the gap
 
 Safespring offers a free assessment service to estimate the key activities
@@ -120,7 +109,16 @@ you dedicate resources with sufficient knowledge to work with us to first
 carry out the assessment and then create the migration plans and automation
 code to deploy the necessary infrastructure to deploy workloads onto.
 
+{{< distance >}}
 
+{{% custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Get a free assessment for migrating your VMware workloads to Safespring" %}}
+Safespring offers a free assessment service to help you migrate workloads from VMware to our platform, tailored to your needs. This includes identifying current VMware products, assessing automation levels, and creating a proof of concept for migration.
+
+{{< localbutton text="Start the assessment" link="https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd" >}}
+
+{{% /custom-card %}}
+
+{{< distance >}}
 
 [tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
 [survey]: https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd
