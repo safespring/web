@@ -59,8 +59,8 @@ Our core services are Openstack and Kubernetes (Openshift/OKD at the moment)-bas
 - The chance to be a key player in building a cutting-edge CI/CD experience.
 - Opportunity to contribute to local and sustainable cloud services.
 - A supportive and agile work environment in a rapidly growing company.
-- Flexible & remote/hybrid work
-- Collective bargaining agreement
+- Flexible & remote/hybrid work.
+- Collective bargaining agreement.
 
 
 ## About Safespring
