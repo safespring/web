@@ -5,7 +5,7 @@ Team: "Product development team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
-date: "2024-02-20"
+date: "2024-09-18"
 sidebarlinkurl: "mailto:marietta@safespring.com"
 sidebarlinkname: "Email your Resume"
 sidebarlinkicon: "fa-paper-plane-top"
