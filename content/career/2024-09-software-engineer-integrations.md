@@ -16,9 +16,8 @@ TOC: "On this page"
 sidebarimage: ""
 ---
 
-
 {{< ingress >}}
-Are you a Golang-driven software engineer who is looking for a new challenge? Join our product team as a software engineer specialised in integrations.
+Are you a Golang-driven software engineer who is looking for a new challenge? Join our product team and help us redefine the cloud experience for our users.
 {{< /ingress >}}
 
 Safespring is growing and we are now looking for a talented **Software Engineer** specialised in **Integrations** who will help us advance the user experience for our cloud users by refining business logic and maximizing self-service features. 
