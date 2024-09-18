@@ -45,7 +45,7 @@ We are a remote-friendly team at Safespring with colleagues scattered around Eur
 ### We believe you have: 
 
 - Expert level on development of integration technologies and microservices like REST-APIs, message queues and database technologies using Golang
-- ery good coding skills in Go and extensive knowledge about existing libraries/frameworks, and their mapping to use cases. 
+- Very good coding skills in Go and extensive knowledge about existing libraries/frameworks, and their mapping to use cases. 
 
 ### It’s beneficial if you have: 
 
@@ -60,14 +60,14 @@ Our core services are Openstack and Kubernetes (Openshift/OKD at the moment)-bas
 - Opportunity to contribute to local and sustainable cloud services.
 - A supportive and agile work environment in a rapidly growing company.
 - Flexible & remote/hybrid work
-- Collective bargaining agreement 
+- Collective bargaining agreement
 
 
 ## About Safespring
 Safespring is a pioneer in providing cloud services that emphasize digital sovereignty, ensuring that your data remains secure, private, and within regulatory boundaries. Our commitment to open-source technology and environmental sustainability is matched by our dedication to empowering businesses with full control over their digital assets. 
 
 ## Apply Now
-If you're ready to make a significant impact in a dynamic team, apply today to join us at Safespring. Got questions? Contact Marietta at marietta@safespring.com 
+If you're ready to make a significant impact in a dynamic team, apply today to join us at Safespring. Got questions? Contact Marietta at marietta@safespring.com
 
 
 
