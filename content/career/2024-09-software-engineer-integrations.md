@@ -16,12 +16,12 @@ TOC: "On this page"
 sidebarimage: ""
 ---
 
+## Join us on a mission to empower European innovation!
+
 {{< ingress >}}
-Join us on a mission to empower European innovation!
+Are you a Golang-driven software engineer who is looking for a new challenge? Join us on a mission to empower European innovation. 
 {{< /ingress >}}
 
-Are you a Golang-driven software engineer who is looking for a new challenge? Join us on a mission to empower European innovation. 
- 
 Safespring is growing and we are now looking for a talented **Software Engineer** specialised in **Integrations** who will help us advance the user experience for our cloud users by refining business logic and maximizing self-service features. 
  
 You'll be building APIs, leveraging event-based messaging, and maintaining supporting technologies like Terraform, Pulumi, or other kinds of commonly used API abstraction layers that power our services.
