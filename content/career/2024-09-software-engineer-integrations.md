@@ -50,7 +50,7 @@ We are a remote-friendly team at Safespring with colleagues scattered around Eur
 ### It’s beneficial if you have: 
 
 - Knowledge about Openstack API using Gophercloud framework. 
-- Experience with Kubernetes, operators and custom resource definitions (CRDs) 
+- Experience with Kubernetes, operators and custom resource definitions (CRDs). 
 
 Our core services are Openstack and Kubernetes (Openshift/OKD at the moment)-based. Most of the continuously delivered business logic you develop and operate will run on internal kubernetes platform(s) that in turn runs on Openstack. We aim for an operator driven architecture, thus, familiarity with construction and operation of Kubernetes operators will be necessary. 
 
