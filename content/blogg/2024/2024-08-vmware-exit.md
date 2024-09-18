@@ -1,7 +1,7 @@
 ---
 title: "Escaping the VMware trap?"
 date: 2024-08-30
-intro: "VMware users had their world turned upside down when Broadcom decided to rapidly  change the user terms of the VMware software in 2024"
+intro: "VMware users had their world turned upside down when Broadcom decided to rapidly  change the user terms of the VMware software in 2024."
 draft: false
 section: "Tech update"
 author: "Jarle Bjørgeengen"
@@ -26,9 +26,9 @@ increases in their annual renewal fees.
 
 
 {{% note "Key effects of Broadcom's acquisition of VMware" %}}
-* Shifted from perpetual licenses to a subscription-based model
-* Eliminated the free version of VMware's vSphere Hypervisor (ESXi)
-* Implemented price increases, with some customers reporting 5-10x higher costs
+1. Shifted from perpetual licenses to a subscription-based model.
+2. Eliminated the free version of VMware's vSphere Hypervisor (ESXi).
+3. Implemented price increases, with some customers reporting 5-10x higher costs.
 {{% /note %}}
 
 ## Background
@@ -92,14 +92,14 @@ platform.
 The assessment can be adapted to each customer's needs, but the following
 activity list outlines the evaluation:
 
-* Identify which VMware products are in use.
-* Identify which features of the products are used, for which purposes, and to what extent.
-* Identify the distribution of operating systems for VM workloads and the level
+1. Identify which VMware products are in use.
+2. Identify which features of the products are used, for which purposes, and to what extent.
+3. Identify the distribution of operating systems for VM workloads and the level
   of automation and tools in use for managing operating systems and their workloads.
-* Identify container workloads and tools used to deploy them.
-* For workloads evaluated to be reasonably easy to migrate, create a proof of
+4. Identify container workloads and tools used to deploy them.
+5. For workloads evaluated to be reasonably easy to migrate, create a proof of
   concept (POC) to try out Safespring as a new destination for the workloads.
-* Based on the POC outcome, create a complete migration plan for all workloads
+6. Based on the POC outcome, create a complete migration plan for all workloads
   verified to be compatible with Safespring.
 
 The service is free, and the only requirement from you is to first qualify by
@@ -108,6 +108,17 @@ automated infrastructure management tools and practices. Once qualified, we ask
 you dedicate resources with sufficient knowledge to work with us to first
 carry out the assessment and then create the migration plans and automation
 code to deploy the necessary infrastructure to deploy workloads onto.
+
+{{< distance >}}
+
+{{% custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Get a free assessment for migrating your VMware workloads to Safespring" %}}
+Safespring offers a free assessment service to help you migrate workloads from VMware to our platform, tailored to your needs. This includes identifying current VMware products, assessing automation levels, and creating a proof of concept for migration.
+
+{{< localbutton text="Start the assessment" link="https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd" >}}
+
+{{% /custom-card %}}
+
+{{< distance >}}
 
 [tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
 [survey]: https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd
