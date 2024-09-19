@@ -1,5 +1,5 @@
 ---
-title: "Safespring Storage: Secure, Scalable, and High-Performance Object Storage"
+title: "Safespring Storage: Secure, scalable, and high-performance object storage"
 language: "En"
 documentation: "Storage"
 cardtitle: "Storage"
