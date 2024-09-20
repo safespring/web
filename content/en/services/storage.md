@@ -6,7 +6,7 @@ cardtitle: "Storage"
 cardicon: "fak fa-safespring-s3"
 cardcolor: "#f4670f"
 cardorder: "2"
-date: 2020-07-06T09:42:10+02:00
+date: 2024-09-20T10:50:10+02:00
 draft: false
 intro: "Cloud-based storage is provided from secure data centers in the nordics and is based on the market-leading Ceph storage technology."
 cardintro: "Cloud-based storage for large volumes is provided from secure Nordic data centers"
