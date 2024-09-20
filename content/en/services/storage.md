@@ -29,8 +29,8 @@ megamenu: "yes"
     {{< icon-block icon="fa-solid fa-shield-alt" text="European Security" link="" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-layer-group" text="Scalable Storage" link="" color="#417DA5">}}
     {{< icon-block icon="fa-solid fa-tachometer-alt" text="High Performance" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-cloud" text="S3 Compatibility" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-sync-alt" text="Reliable Availability" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-cloud" text="S3 Compatibile" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-sync-alt" text="High Availability" link="" color="#FA690F">}}
     {{< icon-block icon="fa-solid fa-dollar-sign" text="Cost Effective" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
@@ -38,9 +38,9 @@ megamenu: "yes"
 Discover the power of Safespring Storage — an S3-compatible object storage solution designed to meet the demands of European organisations. With a focus on compliance, scalability, and performance, Safespring Storage provides a reliable foundation for your data storage needs.
 {{< /ingress >}}
 
-With **data encryption**, you can safeguard your data with end-to-end encryption using HTTPS, ensuring integrity and confidentiality during transit. Our **object locking** feature protects your critical data from accidental deletion or ransomware attacks by making objects immutable for a specified period.
+With **data encryption**, you can safeguard your data with end-to-end encryption, ensuring integrity and confidentiality during transit and at rest. Our **object locking** feature protects your critical data from accidental deletion or ransomware attacks by making objects immutable for a specified period.
 
-Real-time applications rely on low-latency data retrieval and high-speed transfers. Our **optimized transfers** enable efficient data handling through performance optimizations like parallel uploads and multipart transfers. 
+Cloud native applications rely on low-latency data retrieval and high-speed transfers. Our **optimized transfers** enable efficient data handling through performance optimizations like parallel uploads and multipart transfers. 
 
 Additionally, our solution provides easy integration with existing S3 tools and applications, eliminating the need for modifications. With wide application support, Safespring Storage is compatible with popular software like Veeam Backup, Nextcloud, Cyberduck, and more.
 
@@ -48,7 +48,7 @@ Additionally, our solution provides easy integration with existing S3 tools and 
 ## Safespring Storage comes in two versions
 Do your application need high speed access to the stored data or are you looking for a long-term storage solution for an offsite-backup?
 
-{{< icon-block-horisontal icon="fa-solid fa-rabbit-running" color="#3C9BCD" text="S3 Standard Storage" description="Our default high-performance S3 service, optimized for applications that require fast and reliable data access." >}}
+{{< icon-block-horisontal icon="fa-solid fa-rabbit-running" color="#3C9BCD" text="S3 Standard Storage" description="Our default low latency, high-performance S3 service. Optimized for applications that require fast and reliable data access." >}}
 {{< icon-block-horisontal icon="fa-solid fa-boxes-packing" color="#3C9BCD" text="S3 Archive Storage" description="A cost-effective S3 service designed for archiving purposes, ideal for storing larger objects that are written once and read occasionally." >}}
 
 ## Key features
@@ -66,10 +66,6 @@ Our expert customer experience team is available to assist you with any question
 
 ### Use cases
 
-#### Data Backup and Recovery
-
-Our Backup service uses Safesprings Storage as a base to securely back up your critical data and ensure quick recovery in case of disasters or data loss events.
-
 #### Content Storage and Distribution
 
 Store and distribute large media files, documents, and other digital assets efficiently to your global audience. Use Safespring Storage as a media server to stream video over HLS. Safespring uses our own services. [This webinar is streamed from Safespring Storage](/webinar/safespring-partner-webinar-elastisys-1/).
@@ -77,6 +73,10 @@ Store and distribute large media files, documents, and other digital assets effi
 #### Big Data Analytics
 
 Leverage Safespring Storage for storing large datasets required for analytics and machine learning applications. Read more about how [SciLifeLab uses Safespring to reasearch life science](http://localhost:1313/en/services/case/scilifelab/).
+
+#### Data Backup and Recovery
+
+Our Backup service uses Safesprings Storage as a base to securely back up your critical data and ensure quick recovery in case of disasters or data loss events.
 
 #### Compliance and Archiving
 
