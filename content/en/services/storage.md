@@ -91,7 +91,7 @@ Meet regulatory compliance requirements by securely storing and archiving data w
     {{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/duck-cli" color="#3C9BCD">}}
     {{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/minio-client" color="#FA690F">}}
     {{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/aws-cli" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-sync" text="NextCloud" link="https://docs.safespring.com/storage/nextcloud-s3" color="#32cd32">}}
+    {{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/nextcloud-s3" color="#32cd32">}}
 {{< /icon-block-small-container >}}
 
 ## Frequently Asked Questions

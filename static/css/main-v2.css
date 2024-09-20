@@ -31,17 +31,17 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: italic;
 }
 
 @font-face {
@@ -8268,6 +8268,7 @@ details[open] summary {
 /* ICON BLOCK - SMALL */
 
 .icon-block-small {
+	position: relative;
 	border-radius: 150px;
 	border: solid 1px;
 	padding: 0 30px 0 10px;
@@ -8276,11 +8277,12 @@ details[open] summary {
 	flex-direction: row;
 	justify-content: space-between;
 	height: 65px;
+	transition:ease-out .3s;
 }
 
 .icon-block-small:hover {
-	transform:scale(102%);
-	transition:ease .2s;
+	transform:scale(101%);
+	transition:ease-out .1s;
 	background-color:white !important;
 	border: solid 1px white !important;
 	box-shadow: var(--reg-shadow);
@@ -8289,8 +8291,7 @@ details[open] summary {
 .icon-block-small p {
 	text-transform:uppercase;
 	font:600 16px/16px var(--mon-font);
-	margin-left: 10px;
-	text-wrap: ;
+	margin-left: 53px;
 }
 
 .icon-block-small-icon i {
@@ -8298,22 +8299,14 @@ details[open] summary {
 }
 
 .icon-block-small-icon {
+	position: absolute;
 	display: flex;
 	height: 45px;
 	width: 45px;
 	border-radius: 50px;
 	align-items: center;
-  justify-content: center;
+	justify-content: center;
 }
-
-.icon-block-small-container {
-	display:flex;
-	gap:20px;
-	flex-wrap:wrap;
-	margin:50px 0;
-	justify-content:center;
-}
-/* END - ICON BLOCK - SMALL */ 
 
 .icon-block-small-container {
 	display:flex;
@@ -8322,6 +8315,37 @@ details[open] summary {
 	margin:50px 0;
 	justify-content:left;
 }
+
+.icon-block-container:before {
+	content: '' !important;
+	width: 0vw !important;
+	flex: 0 0 auto !important;
+}
+
+@media screen and (max-width:550px) {
+	.icon-block-small {
+		scroll-snap-align: center;
+	}
+	.icon-block-small-container {
+		flex-wrap: nowrap !important;
+		gap: 5px !important;
+		width: 300px;
+		overflow: scroll;
+		padding-bottom: 20px;
+		-webkit-overflow-scrolling: touch;
+		scroll-snap-type: x mandatory;
+		justify-content: left;
+	}
+
+	.icon-block-container:before {
+		content: '' !important;
+		width: 50vw !important;
+		flex: 0 0 auto !important;
+	}
+}
+
+/* END - ICON BLOCK - SMALL */ 
+
 
 .icon-block {
 	border: solid 1px var(--cloud-blue-color);
