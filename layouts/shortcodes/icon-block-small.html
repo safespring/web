@@ -1,0 +1,6 @@
+{{ with .Get "link" }}
+<a class="icon-block-link" href='{{ . }}'>{{ end }}
+	<div class="icon-block-small" style='color: {{ .Get "color" }};border-color: {{ .Get "color" }}30;'>
+	<div class="icon-block-small-icon" style='background-color: {{ .Get "color" }}10;'><i class='{{ .Get "icon" }} icon'></i></div>
+	<p><span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}</p></div>{{ with .Get "link" }}
+</a>{{ end }}
