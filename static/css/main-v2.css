@@ -8329,7 +8329,7 @@ details[open] summary {
 	.icon-block-small-container {
 		flex-wrap: nowrap !important;
 		gap: 5px !important;
-		width: 300px;
+		width: 100%;
 		overflow: scroll;
 		padding-bottom: 20px;
 		-webkit-overflow-scrolling: touch;
