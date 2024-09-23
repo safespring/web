@@ -29,7 +29,7 @@ megamenu: "yes"
     {{< icon-block icon="fa-solid fa-shield-alt" text="European Security" link="" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-layer-group" text="Scalable Storage" link="" color="#417DA5">}}
     {{< icon-block icon="fa-solid fa-tachometer-alt" text="High Performance" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-cloud" text="S3 Compatibile" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3 Compatibile" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-sync-alt" text="High Availability" link="" color="#FA690F">}}
     {{< icon-block icon="fa-solid fa-dollar-sign" text="Cost Effective" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
@@ -53,6 +53,7 @@ Do your application need high speed access to the stored data or are you looking
 
 ## Key features
 
+1. No traffic cost is charged from the service, what is called egress-cost and ingress-cost.
 1. Safespring Storage prioritizes your data security. With features like Object Locking and ACLs, you have full control over your data's accessibility and protection.
 2. Only pay for the storage you use. Safespring Storage offers [flexible pricing](/en/price/#safespring-storage-s3) models that can be tailored to your specific needs, providing cost savings as you scale.
 3. Our expert customer experience team is available to assist you with any questions or issues, ensuring a smooth experience with Safespring Storage.
