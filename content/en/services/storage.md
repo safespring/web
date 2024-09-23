@@ -53,16 +53,9 @@ Do your application need high speed access to the stored data or are you looking
 
 ## Key features
 
-Safespring Storage prioritizes your data security. With features like Object Locking and ACLs, you have full control over your data's accessibility and protection.
-
-Only pay for the storage you use. Safespring Storage offers [flexible pricing](http://localhost:1313/en/price/#safespring-storage-s3) models that can be tailored to your specific needs, providing cost savings as you scale.
-
-### **User-friendly management**
-
-- **Intuitive Interface**: Manage your storage easily through our user-friendly portal.
-- **API Access**: Automate your workflows with full API support, integrating Safespring Storage into your existing systems.
-
-Our expert customer experience team is available to assist you with any questions or issues, ensuring a smooth experience with Safespring Storage.
+1. Safespring Storage prioritizes your data security. With features like Object Locking and ACLs, you have full control over your data's accessibility and protection.
+2. Only pay for the storage you use. Safespring Storage offers [flexible pricing](/en/price/#safespring-storage-s3) models that can be tailored to your specific needs, providing cost savings as you scale.
+3. Our expert customer experience team is available to assist you with any questions or issues, ensuring a smooth experience with Safespring Storage.
 
 ### Use cases
 
