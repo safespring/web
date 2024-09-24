@@ -1,6 +1,6 @@
 ---
 title: "Safespring onboarding"
-date: 2019-06-10T13:05:26+02:00
+date: 2024-09-23T13:05:26+02:00
 draft: false
 intro: "Welcome to Safespring's onboarding page! We're thrilled to have you here and look forward to helping you get started with our services. "
 background: ""
@@ -212,9 +212,17 @@ Thank you for choosing Safespring's services. We're excited to work with you!
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
-            <option value="STO 1">STO 1</option>
-            <option value="STO 2">STO 2</option>
-            <option value="OSL 1">OSL 1</option>
+            <optgroup label="Public cloud">
+                <option value="STO 1">STO 1</option>
+                <option value="STO 2">STO 2</option>
+                <option value="OSL 1">OSL 1</option>
+            </optgroup>
+            <optgroup label="Sunet">
+                <option value="STO 3">STO 3</option>
+                <option value="STO 4">STO 4</option>
+                <option value="DCO A">DCO A</option>
+                <option value="DCO B">DCO B</option>
+            </optgroup>
         </select>
         <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Choose your site</label><i class="fas fa-angle-down selection-icon"></i>
     </div>
