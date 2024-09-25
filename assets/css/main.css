@@ -1667,7 +1667,6 @@ color:var(--unCheckedColor);
 		flex-flow:row nowrap;
 		justify-content:space-evenly;
 		gap:5%;
-		transition:all ease 0.5s;
 	}
 
 	@media only screen and (min-width:1500px) {
