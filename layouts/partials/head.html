@@ -25,7 +25,7 @@
 
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4 $js5) | minify | fingerprint }}
 
-  <script src="{{ $scripts.Permalink }}" defer></script>
+  <script src="{{ $scripts.Permalink }}"></script>
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
