@@ -18,7 +18,7 @@
 {{ partial "header.html" . }}
 <!-- HEADING -->
 
-{{ $bg := resources.Get (printf "img/background/%s" (.Params.background | default "safespring-blue-fade2.svg")) | resources.Fingerprint }}
+{{ $bg := resources.Get (printf "img/background/%s" (.Params.background | default "safespring-blue-fade2.svg")) }}
 
 <div class="heading-default-single" style="background-image: url('{{ $bg.Permalink }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
