@@ -17,9 +17,13 @@
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 <!-- HEADING -->
-<div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+
+{{ $bg := (resources.Get (printf "img/background/%s" (.Params.background | default "safespring-blue-fade2.svg"))) | resources.Minify | fingerprint }}
+
+<div class="heading-default-single" style="background-image: url('{{ $bg.Permalink }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>
+
 <!-- CONTENT -->
 {{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}

@@ -6,20 +6,27 @@
   <meta charset="utf-8">
   
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="/css/main-v2.css" >
+  <!--<link rel="stylesheet" type="text/css" href="/css/main-v2.css" >-->
+  {{ $css1 := resources.Get "css/fontawesome.min.css" }}
+  {{ $css2 := resources.Get "css/solid.min.css" }}
+  {{ $css3 := resources.Get "css/custom-icons.min.css" }}
+  {{ $css4 := resources.Get "css/main.css" }}
 
-  <!-- Fonts-->
-  <link rel="stylesheet" type="text/css" href="/fonts/fontawesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/fonts/solid.min.css">
-  <link rel="stylesheet" type="text/css" href="/fonts/custom-icons.min.css">
+  {{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
+
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
 
   <!-- Scripts -->
-  <script defer src="//cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"></script>
-  <script defer src="/js/safespring-cookie-consent.js"></script>
-  <script defer src="/js/lazysizes.min.js"></script>
-  <script defer src="/js/text-balancer.js"></script>
-  <script defer src="/js/hls.min.js"></script>
-  <script defer src="/js/ancor-scroll.js"></script>
+  {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
+  {{ $js2 := resources.Get "js/lazysizes.min.js" }}
+  {{ $js3 := resources.Get "js/text-balancer.js" }}
+  {{ $js4 := resources.Get "js/hls.min.js" }}
+  {{ $js5 := resources.Get "js/ancor-scroll.js" }}
+
+  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4 $js5) | minify | fingerprint }}
+
+  <script src="{{ $scripts.Permalink }}" defer></script>
+
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -38,4 +45,4 @@
   {{ else }}{{ end }}
 
   {{ partial "favicons.html" . }}
-  </head>
+</head>
