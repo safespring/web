@@ -16,11 +16,10 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
-<!-- HEADING . -->
+<!-- HEADING -->
 
-{{ $bg := resources.Get (printf "img/background/%s" (.Params.background | default "safespring-blue-fade2.svg")) }}
 
-<div class="heading-default-single" style="background-image: url('{{ $bg.Permalink }}'); background-size: cover; background-position: center;">
+<div class="heading-default-single" style="background-image: url('/img/background/{{ .Permalink }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>
 
