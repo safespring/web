@@ -1617,6 +1617,11 @@ color:var(--unCheckedColor);
 		grid-column:main;
 	}
 
+	.sidebar-image {
+		max-width: 350px;
+		height: auto;
+	}
+
 	.container {
 		display:-ms-grid;
 		display:grid;
