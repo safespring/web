@@ -8114,6 +8114,7 @@ th:last-child {
 
 /* Balanced text */
 
+@media screen and (min-width:500px) {
 .balance-text {
 	visibility:hidden;
 }
@@ -8129,6 +8130,7 @@ th:last-child {
 		text-wrap:balance;
 		visibility:visible;
 	}
+}
 }
 
 /* Läs mer */
