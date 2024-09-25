@@ -17,7 +17,7 @@
 
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
-  {{ $js2 := resources.Get "/js/text-balancer.js" }}
+  {{ $js2 := resources.Get "js/text-balancer.js" }}
   {{ $js3 := resources.Get "js/lazysizes.min.js" }}
   {{ $js4 := resources.Get "js/hls.min.js" }}
   {{ $js5 := resources.Get "js/ancor-scroll.js" }}
@@ -40,7 +40,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{ if isset .Params "noindex" }}
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex" >
   {{ else }}{{ end }}
 
   {{ partial "favicons.html" . }}
