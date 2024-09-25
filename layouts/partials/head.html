@@ -6,25 +6,26 @@
   <meta charset="utf-8">
 
   <!-- CSS -->
-{{ $css1 := resources.Get "css/fontawesome.min.css" }}
-{{ $css2 := resources.Get "css/solid.min.css" }}
-{{ $css3 := resources.Get "css/custom-icons.min.css" }}
-{{ $css4 := resources.Get "css/main.css" }}
+  {{ $css1 := resources.Get "css/fontawesome.min.css" }}
+  {{ $css2 := resources.Get "css/solid.min.css" }}
+  {{ $css3 := resources.Get "css/custom-icons.min.css" }}
+  {{ $css4 := resources.Get "css/main.css" }}
 
-{{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
+  {{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
 
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
   {{ $js2 := resources.Get "js/text-balancer.js" }}
   {{ $js3 := resources.Get "js/lazysizes.min.js" }}
-  {{ $js4 := resources.Get "js/hls.min.js" }}
-  {{ $js5 := resources.Get "js/ancor-scroll.js" }}
+  {{ $js4 := resources.Get "js/ancor-scroll.js" }}
 
-  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4 $js5) | minify | fingerprint }}
+  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
 
   <script src="{{ $scripts.RelPermalink }}"></script>
+  <script src="/js/hls.min.js" defer ></script>
+
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
@@ -44,4 +45,4 @@
   {{ else }}{{ end }}
 
   {{ partial "favicons.html" . }}
-  </head>
+</head>
