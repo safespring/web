@@ -4,22 +4,22 @@
   <!-- Site Title changes according to current page -->
   <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
   <meta charset="utf-8">
-  
+  <script src="/js/text-balancer.js"></script>
   <!-- CSS -->
   <!--<link rel="stylesheet" type="text/css" href="/css/main-v2.css" >-->
-  {{ $css1 := resources.Get "css/fontawesome.min.css" }}
-  {{ $css2 := resources.Get "css/solid.min.css" }}
-  {{ $css3 := resources.Get "css/custom-icons.min.css" }}
-  {{ $css4 := resources.Get "css/main.css" }}
+{{ $css1 := resources.Get "css/fontawesome.min.css" }}
+{{ $css2 := resources.Get "css/solid.min.css" }}
+{{ $css3 := resources.Get "css/custom-icons.min.css" }}
+{{ $css4 := resources.Get "css/main.css" }}
 
-  {{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
+{{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
 
-  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+<link rel="stylesheet" href="{{ $styles.Permalink }}">
 
+  <!-- Scripts -->
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
-  {{ $js3 := resources.Get "js/text-balancer.js" }}
   {{ $js4 := resources.Get "js/hls.min.js" }}
   {{ $js5 := resources.Get "js/ancor-scroll.js" }}
 
@@ -45,4 +45,4 @@
   {{ else }}{{ end }}
 
   {{ partial "favicons.html" . }}
-</head>
+  </head>
