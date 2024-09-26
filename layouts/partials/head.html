@@ -17,15 +17,15 @@
 
   <!-- Scripts.. -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
-  {{ $js2 := resources.Get "js/text-balancer.js" }}
-  {{ $js3 := resources.Get "js/lazysizes.min.js" }}
-  {{ $js4 := resources.Get "js/ancor-scroll.js" }}
+  {{ $js2 := resources.Get "js/lazysizes.min.js" }}
+  {{ $js3 := resources.Get "js/ancor-scroll.js" }}
 
-  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
+  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3) | minify | fingerprint }}
 
   <script src="{{ $scripts.RelPermalink }}"></script>
-  {{ $hls := resources.Get "js/hls.min.js" | fingerprint }}
-  <script src="{{ $hls.RelPermalink }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  {{ $textbalancer := resources.Get "js/text-balancer.js" | fingerprint }}
+  <script src="{{ $textbalancer.RelPermalink }}" defer></script>
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
