@@ -163,7 +163,7 @@ code {
 	padding:3px 8px;
 	border-radius:7px;
 	color:#195F8C;
-	overflow:scroll;
+	overflow: auto;
 	font-family: "Safespring Mono";
 }
 
@@ -177,7 +177,7 @@ pre {
 	max-width:800px !important;
 	padding:60px 30px 20px 30px !important;
 	border-radius:10px !important;
-	overflow:scroll;
+	overflow: auto;
 }
 
 pre[data-lang]::before {
