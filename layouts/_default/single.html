@@ -37,6 +37,9 @@
     flex-flow:row nowrap;
     justify-content:space-evenly;
     gap:5%;
+    background-image: url('/img/background/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring-blue-fade2.svg{{ end }}'); 
+    background-size: cover; 
+    background-position: center;"
   }
 
   @media only screen and (min-width:1500px) {
@@ -69,7 +72,7 @@
     letter-spacing:1px;
   }
 </style>
-<div class="heading-default-single" style="background-image: url('/img/background/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring-blue-fade2.svg{{ end }}'); background-size: cover; background-position: center;">
+<div class="heading-default-single">
   {{ .Render "li3" }}
 </div>
 
