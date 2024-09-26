@@ -23,9 +23,9 @@
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3) | minify | fingerprint }}
 
   <script src="{{ $scripts.RelPermalink }}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer ></script>
   {{ $textbalancer := resources.Get "js/text-balancer.js" | fingerprint }}
-  <script src="{{ $textbalancer.RelPermalink }}" defer></script>
+  <script src="{{ $textbalancer.RelPermalink }}" defer ></script>
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
