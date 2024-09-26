@@ -74,7 +74,7 @@ Overforbruk av tjenester og APIer spesifikke for en leverandør kan føre til l�
 ## Vil du også ha en sikker og langsiktig partner for din datalagring?
 Det skal være enkelt for deg å håndtere store mengder data på en effektiv og sikker måte. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og overensstemmelse. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
 Jeg er din kontakt i Norge og hjelper deg med å bruke våre tjenester.
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21

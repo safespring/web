@@ -69,7 +69,7 @@ Choose a partner who values working closely with you. Your senior developers sho
 ## Are you looking for a Swedish cloud storage partner who values compliance within Sweden and the EU?
 Meeting high demands for operational reliability and availability should be easy. That's why Safespring has made it easy to compile common questions about IT security and compliance - and how to meet them. And if you want recommendations specific to your business, get in touch!
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
 I am the sales manager for Safespring in Sweden and will be happy to help you get started.
 
 {{< inline "Call" >}} +46 (0)73 533 65 21

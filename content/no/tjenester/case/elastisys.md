@@ -70,7 +70,7 @@ Velg en partner som verdsetter at dere jobber tett sammen. Dine seniorutviklere 
 ## Leter du etter en norsk partner for skylagring som verdsetter etterlevelse innenfor Norge og EU?
 Det skal være enkelt å møte høye krav til driftssikkerhet og tilgjengelighet. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og compliance – og hvordan du oppfyller dem. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
 Jeg er din kontakt i Norge og hjelper deg med å bruke våre tjenester.
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21

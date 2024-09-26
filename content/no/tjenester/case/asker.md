@@ -79,7 +79,7 @@ For øyeblikket er det mangel på EU-spesifikke bestemmelser knyttet til AI, men
 ## Ønsker du også en sikker og langsiktig partner for din datalagring?
 Det skal være enkelt for deg å håndtere store mengder data på en effektiv og sikker måte. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og compliance. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
 Jeg er din kontakt i Norge og hjelper deg med å bruke våre tjenester.
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21
