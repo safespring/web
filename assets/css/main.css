@@ -48,13 +48,13 @@
 
 @font-face {
 	font-family: 'Hind';
-	src: url('/fonts/Hind-Light.ttf') format('truetype');
+	src: url('/fonts/hind-light.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Hind SemiBold';
-	src: url('/fonts/Hind-SemiBold.ttf') format('truetype');
+	src: url('/fonts/hind-semibold.woff2') format('woff2');
 	font-display: swap;
 }
 
@@ -1655,7 +1655,7 @@ color:var(--unCheckedColor);
 	}
 
 
-	@media only screen and (max-width:900px) {
+	/*@media only screen and (max-width:900px) {
 		.heading-default-single {
 			flex-flow:row wrap !important;
 			padding:max(200px, 10%) 10% 10% 10% !important;
@@ -1702,7 +1702,7 @@ color:var(--unCheckedColor);
 		font:599 16px var(--mon-font) !important;
 		text-transform:uppercase;
 		letter-spacing:1px;
-	}
+	}*/
 
 	.episode-counter {
 		font-weight:599;
