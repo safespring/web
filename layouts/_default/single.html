@@ -18,7 +18,57 @@
 {{ partial "header.html" . }}
 <!-- HEADING -->
 
+<style>
 
+  @media only screen and (max-width:900px) {
+    .heading-default-single {
+      flex-flow:row wrap !important;
+      padding:max(200px, 10%) 10% 10% 10% !important;
+    }
+    .heading-default-single h1{
+      max-width:90%;
+      font:300 40px/1.1 var(--hind-font) !important;
+    }
+  }
+
+  .heading-default-single {
+    padding:15% 5% 5% 5%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-evenly;
+    gap:5%;
+  }
+
+  @media only screen and (min-width:1500px) {
+    .heading-default-single {
+      padding:12% 5% 3% 5%;
+    }
+  }
+
+  .heading-default-single h1 {
+    color:var(--main-color);
+    font:300 60px/1 var(--hind-font);
+  }
+
+  .heading-default-single p {
+    font:300 18px var(--mon-font) !important;
+  }
+
+  .heading-default-single .logo {
+    max-width:700px;
+  }
+
+  .heading-default-single .section {
+    margin-bottom:20px;
+  }
+
+  .heading-default-single .section a {
+    color:var(--clear-blue-color);
+    font:599 16px var(--mon-font) !important;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+</style>
 <div class="heading-default-single" style="background-image: url('/img/background/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring-blue-fade2.svg{{ end }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>
