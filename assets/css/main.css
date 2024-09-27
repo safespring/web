@@ -7242,12 +7242,7 @@ padding-left:30px;
 			display:flex; /* equal height of the children */;
 		}
 		.safespring-horisontal-card-image {
-			display:flex;
-			justify-content:center;
-			align-items:center;
-			overflow:hidden;
-			float:left;
-			max-width:50%;
+				width: auto;
 		}
 		.safespring-horisontal-card-image img{
 			flex-shrink:0;
@@ -7270,26 +7265,10 @@ padding-left:30px;
 			display:block !important;
 		}
 		.safespring-horisontal-card-image {
-			max-width:100%;
-			float:none;
+			height:250px;
 		}
 		.safespring-horisontal-card-row {
 			display:flex; /* equal height of the children */;
-		}
-		.safespring-horisontal-card-image {
-			display:flex;
-			justify-content:center;
-			align-items:center;
-			overflow:hidden;
-			float:none;
-			max-width:100%;
-		}
-		.safespring-horisontal-card-image img {
-			flex-shrink:0;
-			min-width:100%;
-			min-height:100%;
-			border-radius:5px 5px 0 0 ;
-			object-fit:cover;
 		}
 
 		.safespring-horisontal-card-content {
@@ -7297,6 +7276,10 @@ padding-left:30px;
 		}
 	}
 
+.safespring-horisontal-card-image {
+	background-position: center;
+	background-size: cover;
+}
 	/*@media screen and (max-width:900px) {
 
 	.row {
