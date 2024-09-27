@@ -1026,7 +1026,7 @@ color:var(--unCheckedColor);
 
 .site-header-logo img {
 	width:140px;
-	height: auto;
+	height: 30px;
 }
 
 .site-header-nav {
