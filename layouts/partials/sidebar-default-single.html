@@ -13,7 +13,7 @@
     <div class="overlay"></div>
   {{ end }}
   <div class="sidebar-container">
-    <img class="lazyload sidebar-image" src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }}" alt="{{ .Title }}">
+    <div class="sidebar-image" style="background-image: url({{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }})" alt="{{ .Title }}"></div>
     <div class="sidebar-content">
       {{ if .Params.toc }}
       <h2 class="sidebar-toc">

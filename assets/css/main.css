@@ -1640,7 +1640,9 @@ color:var(--unCheckedColor);
 
 	.sidebar-image {
 		width: 350px;
-		height: auto;
+		height: 200px;
+		background-size: cover;
+		background-position: center;
 	}
 
 	.container {
@@ -7959,7 +7961,7 @@ th:last-child {
 #CookieConsent .cookie-popup {
 	background:#fafefe00 !important;
 	backdrop-filter:blur(20px) !important;
-	transition:500ms;
+	transition:300ms;
 }
 
 #CookieConsent .cookie-popup > div {
