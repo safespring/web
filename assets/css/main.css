@@ -367,7 +367,7 @@ h2:first-child {
 }
 
 .content-default-single img {
-	max-width:700px;
+	width: min(100%,700px);
 	height:auto;
 }
 
@@ -1682,6 +1682,7 @@ color:var(--unCheckedColor);
 		flex-flow:row nowrap;
 		justify-content:space-evenly;
 		gap:5%;
+		min-height: 600px;
 	}
 
 	@media only screen and (min-width:1500px) {
@@ -1858,7 +1859,7 @@ color:var(--unCheckedColor);
 }
 
 .content-default-single {
-	max-width:700px;
+    width: min(100%,700px);
 }
 
 .sidebar-container {
