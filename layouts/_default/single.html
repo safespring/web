@@ -19,100 +19,11 @@
 <!-- HEADING -->
 
 <style>
-
-  @media only screen and (max-width:900px) {
-    .heading-default-single {
-      flex-flow:row wrap !important;
-      padding:max(200px, 10%) 10% 10% 10% !important;
-    }
-    .heading-default-single h1{
-      max-width:90%;
-      font:300 40px/1.1 var(--hind-font) !important;
-    }
-  }
-
   .heading-default-single {
-    padding:15% 5% 5% 5%;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:space-evenly;
-    gap:5%;
     background-image: url('/img/background/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring-blue-fade2.svg{{ end }}'); 
     background-size: cover; 
     background-position: center;"
   }
-
-  @media only screen and (min-width:1500px) {
-    .heading-default-single {
-      padding:12% 5% 3% 5%;
-    }
-  }
-
-  .heading-default-single h1 {
-    color:var(--main-color);
-    font:300 60px/1 var(--hind-font);
-  }
-
-  .heading-default-single p {
-    font:300 18px var(--mon-font) !important;
-  }
-
-  .heading-default-single .logo {
-    max-width:700px;
-  }
-
-  .heading-default-single .section {
-    margin-bottom:20px;
-  }
-
-  .heading-default-single .section a {
-    color:var(--clear-blue-color);
-    font:599 16px var(--mon-font) !important;
-    text-transform:uppercase;
-    letter-spacing:1px;
-  }
-
-.button {
-  background-color:var(--link-color);
-  border-radius:50px;
-  border:none;
-  padding:10px 25px 8px 25px;
-  text-align:center;
-  font:13px/1 var(--hind-font-semibold);
-  color:var(--text-color) !important;
-  text-transform:uppercase;
-  white-space:nowrap;
-  letter-spacing:0.2px;
-  width:fit-content;
-  margin-right:25px;
-  transition:all .3s ease;
-}
-
-.button:hover {
-  margin-right:10px;
-  transition:all .3s ease;
-  padding-right:20px;
-}
-
-.button:after {
-  content:"\f061";
-  margin-left:-10px;
-  font:var(--fa-font-solid);
-  transform:scaleX(0);
-  transform-origin:left; /* Ändra transform-origin till vänster */;
-  opacity:0;
-  visibility:hidden;
-  transition:all .3s ease;
-}
-
-.button:hover::after {
-  content:"\f061";
-  transition:all .3s ease;
-  transform:scaleX(1);
-  opacity:1;
-  margin-left:10px;
-  visibility:visible;
-}
 </style>
 
 <div class="heading-default-single">
