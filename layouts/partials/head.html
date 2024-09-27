@@ -9,9 +9,9 @@
     <link rel="preload" href="/fonts/Montserrat-VariableFont_wght.tff" as="font" type="font/tff" crossorigin>
   <link rel="preload" href="/fonts/hind-light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/hind-semibold.woff2" as="font" type="font/woff2" crossorigin>
-  <style type="text/css">
+  <!--<style type="text/css">
     body{margin:0}.main-default-single {display: flex;flex-flow: row nowrap;justify-content: space-evenly;padding: 5%;gap: 5%;}.button{background-color:#f4670f;border-radius:50px;border:none;padding:10px 25px 8px 25px;text-align:center;font:13px/1 "Hind SemiBold",sans-serif;color:#FFF !important;text-transform:uppercase;white-space:nowrap;letter-spacing:.2px;width:fit-content;margin-right:25px}.text-button{font:15px "Hind SemiBold",sans-serif;color:#f4670f;text-transform:uppercase;white-space:nowrap;line-height:5};
-  </style>
+  </style>-->
   {{ $css1 := resources.Get "css/fontawesome.min.css" }}
   {{ $css2 := resources.Get "css/solid.min.css" }}
   {{ $css3 := resources.Get "css/custom-icons.min.css" }}
@@ -19,7 +19,7 @@
 
   {{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
 
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
   <!-- Scripts.. -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
