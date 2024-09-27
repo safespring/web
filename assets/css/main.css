@@ -1639,7 +1639,7 @@ color:var(--unCheckedColor);
 	}
 
 	.sidebar-image {
-		max-width: 350px;
+		width: 350px;
 		height: auto;
 	}
 
@@ -2188,7 +2188,8 @@ color:var(--unCheckedColor);
 }
 
 .safespring-footer-logo img {
-	max-width:120px;
+	width:120px;
+	height: auto;
 }
 
 .safespring-footer-logo p {
