@@ -715,13 +715,12 @@ blockquote p {
 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.button {
-		transition:all .3s ease;
-	}
-	.button:hover {
-		transition:all .3s ease;
-	}
+
+.button {
+	transition:all .3s ease;
+}
+.button:hover {
+	transition:all .3s ease;
 }
 
 .button:hover {
@@ -967,10 +966,8 @@ color:var(--unCheckedColor);
 	backdrop-filter:blur(20px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.site-header {
-		transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
-	}
+.site-header {
+	transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
 }
 
 
@@ -1143,10 +1140,8 @@ color:var(--unCheckedColor);
 	justify-content:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.megamenu-wrapper {
-		animation:fade-slide-down 1s cubic-bezier(0, 0, 0.05, 1.08) forwards;
-	}
+.megamenu-wrapper {
+	animation:fade-slide-down 1s cubic-bezier(0, 0, 0.05, 1.08) forwards;
 }
 
 .megamenu-wrapper-aktuellt {
@@ -8135,22 +8130,22 @@ th:last-child {
 /* Balanced text */
 
 @media screen and (min-width:500px) {
-.balance-text {
-	visibility:hidden;
-}
-
-@media (scripting:none) {
 	.balance-text {
-		visibility:visible;
+		visibility:hidden;
 	}
-}
 
-@supports (text-wrap:balance) {
-	.balance-text {
-		text-wrap:balance;
-		visibility:visible;
+	@media (scripting:none) {
+		.balance-text {
+			visibility:visible;
+		}
 	}
-}
+
+	@supports (text-wrap:balance) {
+		.balance-text {
+			text-wrap:balance;
+			visibility:visible;
+		}
+	}
 }
 
 /* Läs mer */
