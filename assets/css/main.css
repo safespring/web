@@ -959,7 +959,7 @@ color:var(--unCheckedColor);
 }
 
 .site-header {
-	transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
+	transition:top cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
 }
 
 
