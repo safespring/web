@@ -712,7 +712,16 @@ blockquote p {
 	letter-spacing:0.2px;
 	width:fit-content;
 	margin-right:25px;
-	transition:all .3s ease;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.button {
+		transition:all .3s ease;
+	}
+	.button:hover {
+		transition:all .3s ease;
+	}
 }
 
 .button:hover {
@@ -720,6 +729,7 @@ blockquote p {
 	transition:all .3s ease;
 	padding-right:20px;
 }
+
 
 .button:after {
 	content:"\f061";
@@ -941,8 +951,7 @@ color:var(--unCheckedColor);
 }
 
 .text-button:hover {
-	color:var(--main-color);
-	transition:color 0.2s ease-out;
+	text-decoration: underline;
 }
 
 /* HEADER 2022 */
@@ -956,7 +965,12 @@ color:var(--unCheckedColor);
 	background:linear-gradient(#fafefe 20%, #fafefe40);
 	-webkit-backdrop-filter:blur(20px);
 	backdrop-filter:blur(20px);
-	transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.site-header {
+		transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
+	}
 }
 
 
@@ -1126,6 +1140,12 @@ color:var(--unCheckedColor);
 	background:linear-gradient(transparent, #195f8c20);
 	align-items:stretch;
 	justify-content:center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.megamenu-wrapper {
+		animation:fade-slide-down 1s cubic-bezier(0, 0, 0.05, 1.08) forwards;
+	}
 }
 
 .megamenu-wrapper-aktuellt {
