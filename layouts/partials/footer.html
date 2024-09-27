@@ -266,8 +266,11 @@
     {{ end }}
 
     {{ if (findRE "<pre" .Content 1) }}
-    <script src="/js/copy-code-button.js">
-    </script>
+<script src="/js/copy-code-button.js"></script>    
+    {{ end }}
+
+        {{ if (findRE "<video" .Content 1) }}
+<script src="/js/hls.min.js"></script>    
     {{ end }}
 
     {{ if (findRE "<table" .Content 1) }}

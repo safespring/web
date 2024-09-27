@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="print" onload="this.media='all'">
 
-  <!-- Scripts.. -->
+  <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
   {{ $js3 := resources.Get "js/ancor-scroll.js" }}
@@ -49,5 +49,4 @@
   {{ else }}{{ end }}
 
   {{ partial "favicons.html" . }}
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer ></script>
 </head>
