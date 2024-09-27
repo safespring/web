@@ -341,7 +341,7 @@ margin-top:1px;
 }
 
 p, ol {
-	font:299 17px var(--mon-font);
+	font:300 17px var(--mon-font);
 	color:var(--alt-color);
 	line-height:1.5;
 }
@@ -1655,7 +1655,7 @@ color:var(--unCheckedColor);
 	}
 
 
-	/*@media only screen and (max-width:900px) {
+	@media only screen and (max-width:900px) {
 		.heading-default-single {
 			flex-flow:row wrap !important;
 			padding:max(200px, 10%) 10% 10% 10% !important;
@@ -1702,7 +1702,7 @@ color:var(--unCheckedColor);
 		font:599 16px var(--mon-font) !important;
 		text-transform:uppercase;
 		letter-spacing:1px;
-	}*/
+	}
 
 	.episode-counter {
 		font-weight:599;
