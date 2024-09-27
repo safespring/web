@@ -4407,12 +4407,12 @@ margin:0;
 	0px 14.3px 13.3px rgba(0, 0, 0, 0.013),
 	0px 18.8px 16.4px rgba(0, 0, 0, 0.004),
 	0px 23px 22.1px rgba(0, 0, 0, -0.002),
-	0px 26px 46px rgba(0, 0, 0, -0.006)
-	;
+	0px 26px 46px rgba(0, 0, 0, -0.006);
 	overflow:hidden;
-	border-radius:15px;
-	webkit-border-radius:15px;
-	width:350px;
+	border-radius:20px;
+	webkit-border-radius:20px;
+	width: min(40%, 350px);
+	min-width: 250px;
 }
 
 .content-container * {
