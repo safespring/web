@@ -15,7 +15,7 @@
 
   {{ $styles := resources.Concat "css/combined-styles.css" (slice $css1 $css2 $css3 $css4) | minify | fingerprint }}
 
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="print" onload="this.media='all'">
 
   <!-- Scripts.. -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
@@ -25,7 +25,7 @@
 
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
 
-  <script src="{{ $scripts.RelPermalink }}" ></script>
+  <script src="{{ $scripts.RelPermalink }}" defer></script>
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
