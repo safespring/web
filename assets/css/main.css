@@ -1088,7 +1088,7 @@ color:var(--unCheckedColor);
     bottom: 0;
     left: 0;
     right: 0;
-    height: .5menupx;
+    height: .5px;
     background: radial-gradient(circle, rgba(25,95,140,0.3) 50%, rgba(25,95,140,0) 100%);}
 
 .megamenu-wrapper {
