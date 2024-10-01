@@ -50,9 +50,16 @@ Vi erbjuder högsta nivå av säkerhet och tillgänglighet med våra datahallar 
 
 Med Safespring Compute får du tillgång till marknadsledande molnteknologi direkt ifrån våra säkra och tillförlitliga datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra datasäkerhet.
 
-{{< horisontal-card image="/img/card/safespring-amelia-small.jpg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet. Det innebär också att ledningen ansvarar för efterlevnaden av säkerhetsåtgärder, inklusive användning av kryptering och säkerhetsteknologier." >}}
 {{< distance >}}
 
+{{% custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Få en kostnadsfri bedömning för att migrera dina VMware-workloads till Safespring" %}}
+Safespring hjälper dig migrera från VMware till Safespring, kostnadsfritt och anpassat efter dina behov. Bedömningen inkluderar att identifiera era nuvarande VMware-produkter, bedöma automationsnivåer och skapa ett koncepttest för migration.
+
+{{< localbutton icon="fa fa-external-link" text="Starta bedömningen" link="https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd" >}}
+
+{{% /custom-card %}}
+
+{{< distance >}}
 
 ### Samarbeta effektivt med Safespring Compute
 Vår tjänst underlättar samarbete mellan olika avdelningar eller grupper, förenklar IT-hantering och tillför effektivitet till din organisation.
@@ -72,6 +79,7 @@ På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter
 [Läs mer i vår dokumentation. ](https://docs.safespring.com/new/vpn)
 
 {{% /accordion %}}
+
 {{< accordion-script >}}
 
 ## Central blocklagring
@@ -88,6 +96,9 @@ Detta möjliggör hög tillgänglighet och tillförlitlighet. Genom ett distribu
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" >}}
 {{< distance >}}
+
+{{< horisontal-card image="/img/card/safespring-amelia-small.jpg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet. Det innebär också att ledningen ansvarar för efterlevnaden av säkerhetsåtgärder, inklusive användning av kryptering och säkerhetsteknologier." >}}
+
 
 ## OpenStack och Kubernetes
 OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.

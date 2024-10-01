@@ -13,7 +13,7 @@
         <span></span>
         <ul id="menu" class="site-header-links">
           {{ $language := .Params.language }}
-          <li><a id="main-menu-link-platform" href='/{{ if eq $language "En" }}en/services{{ else if eq $language "No" }}no/tjenester{{ else }}tjanster{{ end }}/'>{{ if eq $language "En" }}Platform{{ else if eq $language "No" }}Plattformen{{ else }}Plattformen{{ end }}</a></li>
+          <li><a id="main-menu-link-platform" style="padding-bottom: 30px;margin-bottom: -30px;" href='/{{ if eq $language "En" }}en/services{{ else if eq $language "No" }}no/tjenester{{ else }}tjanster{{ end }}/'>{{ if eq $language "En" }}Platform{{ else if eq $language "No" }}Plattformen{{ else }}Plattformen{{ end }}</a></li>
           <li><a id="main-menu-link-1" href='/{{ if eq $language "En" }}en/price{{ else if eq $language "No" }}no/pris{{ else }}pris{{ end }}'>{{ if eq $language "En" }}Price{{ else if eq $language "No" }}Pris{{ else }}Pris{{ end }}</a></li>
           <li><a id="main-menu-link-2" href='/latest/'>{{ if eq $language "En" }}News{{ else if eq $language "No" }}Aktuelt{{ else }}Aktuellt{{ end }}</a></li>
           <li><a id="main-menu-link-3" href='/{{ if eq $language "En" }}en/contact{{ else if eq $language "No" }}no/kontakt{{ else }}kontakt{{ end }}/'>{{ if eq $language "En" }}Contact{{ else if eq $language "No" }}Kontakt{{ else }}Kontakt{{ end }}</a></li>
@@ -23,7 +23,7 @@
       </div>
     </nav>
   </div>
-  <div class="megamenu-wrapper">
+    <div class="megamenu-wrapper">
     <div class="megamenu-main-service">
       {{ $language := default "Se" .Params.language }}
       {{ $sections := (dict "Se" "tjanster" "En" "en" "No" "no") }}
@@ -59,26 +59,24 @@
   };
 </script>
 <script>
-  let platformLink = document.getElementById('main-menu-link-platform');
-  let megaMenuWrapper = document.querySelector('.megamenu-wrapper');
-  let hideTimeout;
+let platformLink = document.getElementById('main-menu-link-platform');
+let megaMenuWrapper = document.querySelector('.megamenu-wrapper');
+let hideTimeout;
 
-  platformLink.addEventListener('mouseover', function () {
+platformLink.addEventListener('mouseover', function () {
     clearTimeout(hideTimeout);
     megaMenuWrapper.classList.add('show');
-    megaMenuWrapper.classList.remove('hide');
-  });
+});
 
-  function handleMouseOut() {
+function handleMouseOut() {
     hideTimeout = setTimeout(function () {
-      megaMenuWrapper.classList.remove('show');
-      megaMenuWrapper.classList.add('hide');
-    }, 100); // Adjust the time (in milliseconds) as needed
-  }
+        megaMenuWrapper.classList.remove('show');
+    }, 100); // 300ms delay to match the CSS transition
+}
 
-  platformLink.addEventListener('mouseout', handleMouseOut);
-  megaMenuWrapper.addEventListener('mouseout', handleMouseOut);
-  megaMenuWrapper.addEventListener('mouseover', function () {
+platformLink.addEventListener('mouseout', handleMouseOut);
+megaMenuWrapper.addEventListener('mouseout', handleMouseOut);
+megaMenuWrapper.addEventListener('mouseover', function () {
     clearTimeout(hideTimeout);
-  });
+});
 </script>
