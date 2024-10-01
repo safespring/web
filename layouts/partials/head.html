@@ -17,7 +17,7 @@
 {{ $css2 := resources.Get "css/solid.min.css" | minify | fingerprint }}
 {{ $css3 := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
 
-<link rel="stylesheet" href="{{ $css4.RelPermalink }}">
+<link rel="stylesheet" href="{{ $css4.RelPermalink }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ $css1.RelPermalink }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ $css2.RelPermalink }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ $css3.RelPermalink }}" media="print" onload="this.media='all'">
