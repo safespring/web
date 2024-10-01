@@ -18,9 +18,8 @@ socialmediabild: ""
 form: ""
 toc: ""
 language: "En"
+author: "Gabriel Paues"
 ---
-
-{{< author-gabriel >}}
 
 {{< ingress >}}
 The default root filesystem on an NVMe instance in the l2-series on Safespring's platform comes with an ext4 filesystem, but in some cases, users may need to create additional partitions or use a different filesystem.
