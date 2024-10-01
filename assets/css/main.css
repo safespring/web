@@ -1083,13 +1083,13 @@ color:var(--unCheckedColor);
 /* ======= MEGA MENU ======= */
 
 .megamenu-wrapper::before {
-	content:"";
-	position:absolute;
-	bottom:0;
-	width:90%;
-	max-width:1550px;
-	border-bottom:solid 1px #195f8c29;
-}
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .5menupx;
+    background: radial-gradient(circle, rgba(25,95,140,0.3) 50%, rgba(25,95,140,0) 100%);}
 
 .megamenu-wrapper {
     position: absolute;
@@ -1314,7 +1314,7 @@ color:var(--unCheckedColor);
 		padding:90px 0 0 0 !important;
 		right:-50px;
 
-		background:linear-gradient(0deg, var(--cloud-blue-color), #fafefe);
+		background:linear-gradient(0deg,#e8eff3 50%,#fafefe 97%, #fafefe00);
 		list-style-type:none;
 		-webkit-font-smoothing:antialiased;
 		/* to stop flickering of text in safari */
