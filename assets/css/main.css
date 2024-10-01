@@ -31,7 +31,7 @@
 }
 
 @font-face {
-	font-family: 'Montserrat';
+	font-family: 'montserrat';
 	src: url('/fonts/montserrat.ttf') format('truetype');
 	font-weight: 100 900;
 	font-style: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-	font-family: 'Montserrat';
+	font-family: 'montserrat';
 	src: url('/fonts/montserrat-italic.ttf') format('truetype');
 	font-weight: 100 900;
 	font-style: italic;
@@ -47,19 +47,19 @@
 }
 
 @font-face {
-	font-family: 'Hind';
+	font-family: 'hind';
 	src: url('/fonts/hind-light.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Hind SemiBold';
+	font-family: 'hind semibold';
 	src: url('/fonts/hind-semibold.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Safespring Mono';
+	font-family: 'safespring mono';
 	src: url('/fonts/Safespring-Mono-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
@@ -67,7 +67,7 @@
 }
 
 @font-face {
-	font-family: 'Safespring Mono';
+	font-family: 'safespring mono';
 	src: url('/fonts/Safespring-Mono-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
@@ -75,7 +75,7 @@
 }
 
 @font-face {
-	font-family: 'Safespring Mono';
+	font-family: 'safespring mono';
 	src: url('/fonts/Safespring-Mono-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -83,7 +83,7 @@
 }
 
 @font-face {
-	font-family: 'Safespring Mono';
+	font-family: 'safespring mono';
 	src: url('/fonts/Safespring-Mono-MediumItalic.ttf') format('truetype');
 	font-weight: 500;
 	font-style: italic;
@@ -91,7 +91,7 @@
 }
 
 @font-face {
-	font-family: 'Safespring Mono';
+	font-family: 'safespring mono';
 	src: url('/fonts/Safespring-Mono-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
@@ -99,7 +99,7 @@
 }
 
 @font-face {
-	font-family: 'Safespring Mono';
+	font-family: 'safespring mono';
 	src: url('/fonts/Safespring-Mono-SemiBoldItalic.ttf') format('truetype');
 	font-weight: 600;
 	font-style: italic;
