@@ -1082,6 +1082,12 @@ color:var(--unCheckedColor);
 
 /* ======= MEGA MENU ======= */
 
+@media only screen and (max-width:500px) { 
+	.megamenu-wrapper {
+		display: none !important;
+	}
+}
+
 .megamenu-wrapper::before {
 	content: '';
     position: absolute;
