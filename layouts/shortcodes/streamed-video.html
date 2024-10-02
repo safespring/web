@@ -7,14 +7,47 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
+    var hlsScriptLoaded = false;
 
-    if (Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource(video.getAttribute('src'));
-        hls.attachMedia(video);
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = video.getAttribute('src');
+    function loadHlsScript(callback) {
+        if (hlsScriptLoaded) {
+            callback();
+            return;
+        }
+
+        var script = document.createElement('script');
+        script.src = '/js/hls.min.js';
+        script.onload = function() {
+            hlsScriptLoaded = true;
+            callback();
+        };
+        document.body.appendChild(script);
     }
+
+    function initializeVideo() {
+        if (Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource(video.getAttribute('src'));
+            hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            // För Safari
+            video.src = video.getAttribute('src');
+        } else {
+            alert('Your browser does not support the video tag.');
+        }
+    }
+
+    video.addEventListener('play', function() {
+        if (!hlsScriptLoaded) {
+            video.pause(); // Pausa videon tills skriptet är laddat
+            loadHlsScript(function() {
+                initializeVideo();
+                video.play(); // Återuppta uppspelningen
+            });
+        } else {
+            initializeVideo();
+        }
+    }, { once: true });
 });
 </script>
 </div>
