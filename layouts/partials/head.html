@@ -25,9 +25,9 @@
   {{ $css4 := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css2.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css3.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css4.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $css2.RelPermalink }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ $css3.RelPermalink }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ $css4.RelPermalink }}" media="print" onload="this.media='all'">
 
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
@@ -37,7 +37,7 @@
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
 
   <script src="{{ $scripts.RelPermalink }}" defer></script>
-  
+
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
