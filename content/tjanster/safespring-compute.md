@@ -94,7 +94,7 @@ Detta möjliggör hög tillgänglighet och tillförlitlighet. Genom ett distribu
 {{< icon-block-horisontal color="#195F8C" icon="fas fa-hdd" text="LARGE" description="LARGE-lagringen är designad för att erbjuda kostnadseffektiv blocklagring med hög kapacitet. Det är det perfekta valet för applikationer där lagringskapacitet prioriteras framför prestanda, såsom arkivering, säkerhetskopior och hantering av stora datamängder där kostnad per gigabyte är en avgörande faktor." >}}
 {{< distance >}}
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" >}}
+{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" "/img/card/safespring-demo-instans-svenska.webp" >}}
 {{< distance >}}
 
 {{< horisontal-card image="/img/card/safespring-amelia-small.jpg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet. Det innebär också att ledningen ansvarar för efterlevnaden av säkerhetsåtgärder, inklusive användning av kryptering och säkerhetsteknologier." >}}
