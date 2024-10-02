@@ -6,8 +6,16 @@
   <meta charset="utf-8">
 
   <!-- CSS -->
-  <link rel="preload" href="/fonts/hind-light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/hind-semibold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/montserrat.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/montserrat-italic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/hind-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/fonts/hind-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Safespring-Mono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Safespring-Mono-Italic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Safespring-Mono-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Safespring-Mono-MediumItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Safespring-Mono-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Safespring-Mono-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <style type="text/css">
     body {margin: 0;background-color:#fafefe;}.main-default-single {display: flex;flex-flow: row nowrap;justify-content: space-evenly;padding: 5%;gap: 5%;}@media only screen and (max-width: 1100px){.main-default-single {flex-flow: row wrap!important;padding: 10%!important;}}.heading-default-single{padding:15% 5% 5% 5%;display:flex;flex-flow:row nowrap;justify-content:space-evenly;gap:5%}@media only screen and (max-width:900px){.heading-default-single{flex-flow:row wrap !important;padding:max(200px,10%) 10% 10% 10% !important}.heading-default-single h1{max-width:90%;font:300 40px/1.1 "hind",sans-serif !important}}@media only screen and (min-width:1500px){.heading-default-single{padding:12% 5% 3% 5%}}.heading-default-single h1{color:#195F8C;font:300 60px/1 "hind",sans-serif}.heading-default-single p{font:300 18px "montserrat",sans-serif !important}.heading-default-single .logo{max-width:700px}.heading-default-single .section{margin-bottom:20px}.heading-default-single .section a{color:#5c5c5c;font:599 16px "montserrat",sans-serif !important;text-transform:uppercase;letter-spacing:1px}.header-button{margin:40px 0 0 0}.button{background-color:#f4670f;border-radius:50px;border:none;padding:10px 25px 8px 25px;text-align:center;font:13px/1 "hind semibold",sans-serif;color:#FFF !important;text-transform:uppercase;white-space:nowrap;letter-spacing:.2px;width:fit-content;margin-right:25px}.text-button{font:15px "hind semibold",sans-serif;color:#f4670f;text-transform:uppercase;white-space:nowrap;line-height:5}.w250{width:250px}re{font-family:"safespring mono";}pre>code{padding:0;}p>code{white-space:nowrap;}@media only screen and (max-width:900px){p>code{white-space:wrap;}}code{font-style:normal;font-size:13px !important;background:#EAF0F4;padding:3px 8px;border-radius:7px;color:#195F8C;overflow:auto;font-family:"safespring mono";}code>span{font-size:13px;}pre{position:relative;background:#EAF0F4 !important;max-width:800px !important;padding:60px 30px 20px 30px !important;border-radius:10px !important;overflow:auto;}pre[data-lang]::before{content:attr(data-lang);font-weight:599;font-size:13px;background-color:#195F8C10;color:#195F8C;padding:15px 0px 15px 30px;position:absolute;width:calc(100% - 30px);top:0;left:0;z-index:1;font-family:"safespring mono";}
   </style>
@@ -17,7 +25,6 @@
   {{ $css4 := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
-  <link rel="preload" href="/fonts/montserrat.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="{{ $css2.RelPermalink }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ $css3.RelPermalink }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ $css4.RelPermalink }}" media="print" onload="this.media='all'">
