@@ -43,6 +43,15 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Your browser does not support this video format.');
         }
     }
+    // Attach event listener to the video element
+    video.addEventListener('play', function() {
+        if (!videoInitialized) {
+            loadHlsScript(function() {
+                initializeVideo();
+                video.play();
+            });
+        }
+    });
 
     // Attach event listener to the video element
     video.addEventListener('click', function() {
