@@ -315,10 +315,6 @@ document.querySelectorAll('pre').forEach((pre) => {
 });</script>    
     {{ end }}
 
-        {{ if (findRE "<video" .Content 1) }}
-<script src="/js/hls.min.js"></script>    
-    {{ end }}
-
     {{ if (findRE "<table" .Content 1) }}
     <script>
       // Hämta alla tabeller på sidan
