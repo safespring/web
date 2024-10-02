@@ -1084,7 +1084,7 @@ color:var(--unCheckedColor);
 
 /* ======= MEGA MENU ======= */
 
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
 .megamenu-wrapper::before {
 	display: none;
 }
