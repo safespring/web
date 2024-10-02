@@ -27,7 +27,7 @@
       </div>
       <div id="scaleout-usecase">
       </div>
-      <div class="index-video video-container">
+ <div class="index-video video-container">
     <video id="myVideo" muted controls poster="/img/card/safespring_use-case_scaleout-1080p.jpg">
         <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish">
         <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English">
@@ -35,7 +35,7 @@
         Din webbläsare stödjer inte videotaggen.
     </video>
     <div id="custom-cursor" class="custom-cursor">
-        Play with sound
+        Play
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -76,7 +76,19 @@
                 }
             }
 
-            // Funktion för att uppdatera den anpassade muspekaren
+            function onFirstClick(event) {
+                event.preventDefault(); // Förhindra standardbeteendet vid första klicket
+                if (!loaded) {
+                    loaded = true;
+                    loadHlsScript(function() {
+                        initializeVideo();
+                    });
+                    // Ta bort denna klickhändelse efter första klicket
+                    video.removeEventListener('click', onFirstClick);
+                }
+            }
+
+            // Anpassad muspekare funktioner
             function updateCursorText() {
                 if (video.paused) {
                     customCursor.textContent = video.muted ? 'Play with sound' : 'Play';
@@ -85,7 +97,6 @@
                 }
             }
 
-            // Visa och dölj den anpassade muspekaren
             function showCustomCursor() {
                 customCursor.style.display = 'block';
                 updateCursorText();
@@ -95,35 +106,35 @@
                 customCursor.style.display = 'none';
             }
 
-            // Hantera muspekarens beteende
+            // Hantera muspekare vid olika händelser
+            video.addEventListener('play', function() {
+                updateCursorText();
+                hideCustomCursor();
+            });
+
+            video.addEventListener('pause', function() {
+                showCustomCursor();
+            });
+
             video.addEventListener('mousemove', function() {
                 showCustomCursor();
                 clearTimeout(video.cursorTimeout);
                 video.cursorTimeout = setTimeout(function() {
                     hideCustomCursor();
-                }, 2000); // Dölj efter 2 sekunders inaktivitet
+                }, 2000); // Dölj efter 2 sekunder av inaktivitet
+            });
+
+            video.addEventListener('ended', function() {
+                showCustomCursor();
             });
 
             // Visa muspekaren initialt
             showCustomCursor();
 
-            // Första klicket för att initialisera videon
-            function onFirstClick(event) {
-                event.preventDefault(); // Förhindra standardbeteende
-                if (!loaded) {
-                    loaded = true;
-                    loadHlsScript(function() {
-                        initializeVideo();
-                        // Efter initialisering, aktivera standard klickbeteende
-                        video.removeEventListener('click', onFirstClick);
-                    });
-                }
-            }
-
-            // Lägg till första klickhändelsen
+            // Lägg till klickhändelser
             video.addEventListener('click', onFirstClick);
 
-            // Hantera play/paus vid klick efter initialisering
+            // Efter att videon initialiserats, tillåt standard play/paus vid klick
             video.addEventListener('click', function() {
                 if (loaded) {
                     if (video.paused) {
@@ -134,22 +145,11 @@
                 }
             });
 
-            // Uppdatera muspekaren vid play/paus
+            // Hantera ljudavstängning vid första uppspelningen
             video.addEventListener('play', function() {
-                updateCursorText();
-                hideCustomCursor();
-                // Avmuta videon vid första uppspelningen
                 if (video.muted) {
                     video.muted = false;
                 }
-            });
-
-            video.addEventListener('pause', function() {
-                showCustomCursor();
-            });
-
-            video.addEventListener('ended', function() {
-                showCustomCursor();
             });
         });
     </script>
