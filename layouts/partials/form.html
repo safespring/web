@@ -196,15 +196,18 @@
 		<button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Bli kontaktad</button>
 	</form>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkBtn').click(function() {
-				checked = $("input[type=checkbox]:checked").length;
-				if (!checked) {
-					alert("You must accept our terms our conditions");
-					return false;
-				}
-			});
-		});
+	    document.addEventListener('DOMContentLoaded', function() {
+	        var checkBtn = document.getElementById('checkBtn');
+	        if (checkBtn) {
+	            checkBtn.addEventListener('click', function() {
+	                var checked = document.querySelectorAll('input[type=checkbox]:checked').length;
+	                if (!checked) {
+	                    alert("You must accept our terms and conditions");
+	                    return false;
+	                }
+	            });
+	        }
+	    });
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function(){

@@ -4,8 +4,8 @@
 
 - name: "Amelia Andersdotter"
   title: "Risk & Compliance Manager"
-  image_happy: "amelia-safespring-1.jpg"
-  image_firm: "amelia-safespring-2.jpg"
+  image_happy: "amelia-safespring-1.webp"
+  image_firm: "amelia-safespring-2.webp"
 
 - name: "Daniel de Oquiñena"
   title: "Cloud Architect"
@@ -13,11 +13,11 @@
 
 - name: "Gabriel Paues"
   title: "Cloud Architect"
-  image_happy: "gabriel-paues.jpg"
+  image_happy: "gabriel-paues.webp"
 
 - name: "Jarle Bjørgeengen"
   title: "Chief Product Officer"
-  image_happy: "jarle-bjorgeengen.jpg"
+  image_happy: "jarle-bjorgeengen.webp"
 
 - name: "Øyvind Christiansen"
   title: "Senior Infrastructure Engineer"
@@ -25,8 +25,8 @@
 
 - name: "Fredric Wallsten"
   title: "CEO, Safespring"
-  image_happy: "fredric-wallsten-1.jpg"
-  image_firm: "fredric-wallsten-2.jpg"
+  image_happy: "fredric-wallsten-1.webp"
+  image_firm: "fredric-wallsten-2.webp"
 
 - name: "Niklas Hagman"
   title: "OpenShift Platform Specialist"
@@ -34,4 +34,4 @@
 
 - name: "Jon Ander Novella de Miguel"
   title: "Safespring Engineer"
-  image_happy: "jon-ander.jpg"
+  image_happy: "jon-ander.webp"

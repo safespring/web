@@ -17,7 +17,7 @@
     {{ else }}{{ end }}
     {{ if .Params.sidebarlinkurl }}
     <div class="header-button">
-      <a href="{{ .Params.sidebarlinkurl }}" target="_blank" class="button">{{ if .Params.sidebarlinkicon }}
+      <a href="{{ .Params.sidebarlinkurl }}" target="_self" class="button">{{ if .Params.sidebarlinkicon }}
         <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Params.sidebarlinkname }}
       </a>
       {{ if .Params.sidebarlinkurl2 }}

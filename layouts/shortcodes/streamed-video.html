@@ -1,20 +1,57 @@
 <div class="webinarvideo">
   <video class="webinar-videoplayer" id="myVideo" controls
-    src="{{ .Get 0 | safeURL }}"
     poster="{{ .Get 1 | safeURL }}">
     Your browser does not support the video tag.
   </video>
+</div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
+    var hlsScriptLoaded = false;
 
-    if (Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource(video.getAttribute('src'));
-        hls.attachMedia(video);
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = video.getAttribute('src');
+    function loadHlsScript(callback) {
+        if (hlsScriptLoaded) {
+            callback();
+            return;
+        }
+
+        var script = document.createElement('script');
+        script.src = '/js/hls.min.js';
+        script.async = true; // Load script asynchronously
+        script.onload = function() {
+            hlsScriptLoaded = true;
+            callback();
+        };
+        document.body.appendChild(script);
     }
+
+    function initializeVideo() {
+        if (window.Hls && Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource('{{ .Get 0 | safeURL }}');
+            hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            // For Safari
+            video.src = '{{ .Get 0 | safeURL }}';
+        } else {
+            alert('Your browser does not support this video format.');
+        }
+    }
+
+    // Lazy load the video when the user clicks play
+    function onVideoPlay() {
+        if (!videoInitialized) {
+            loadHlsScript(function() {
+                initializeVideo();
+                video.play();
+            });
+            videoInitialized = true;
+            video.removeEventListener('play', onVideoPlay);
+        }
+    }
+
+    var videoInitialized = false;
+    video.addEventListener('play', onVideoPlay);
 });
 </script>
-</div>

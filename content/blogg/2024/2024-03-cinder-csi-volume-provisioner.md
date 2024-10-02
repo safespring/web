@@ -14,7 +14,9 @@ language: "En"
 TOC: "In this guide"
 sidebarlinkname: "GitHub repository"
 sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
-sidebarlinkicon: "fa-arrow-up-right-from-square"
+sidebarlinkname2: "GitHub repository"
+sidebarlinkurl2: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
+
 ---
 
 

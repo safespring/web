@@ -5,7 +5,7 @@
 <div class="safespring-footer-container">
   <div class="safespring-footer">
     <div class="safespring-footer-logo">
-      <a href="/"><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"></a>
+      <a href="/"><img src="/img/logos/safespring_logotype_blue_svg.svg" width="120" height="26" alt="Safespring logotype"></a>
       <p>Safespring is a fast and flexible cloud and IT infrastructure service.</p>
       <a class="button"href="/en/contact/">Contact</a>
     </div>
@@ -266,8 +266,53 @@
     {{ end }}
 
     {{ if (findRE "<pre" .Content 1) }}
-    <script src="/js/copy-code-button.js">
-    </script>
+<script>
+  function addLanguageLabels() {
+  document.querySelectorAll('pre > code[class*="language-"]').forEach(function (codeBlock) {
+    var languageMatch = codeBlock.className.match(/language-(\w+)/);
+    if (languageMatch) {
+      var language = languageMatch[1];
+      var pre = codeBlock.parentNode;
+      if (language === 'fallback') {
+        language = ' ';
+      }
+      pre.setAttribute('data-lang', language);
+    }
+  });
+}
+
+addLanguageLabels();
+
+document.querySelectorAll('pre').forEach((pre) => {
+  const button = document.createElement('button');
+  button.className = 'copy-code-button';
+  button.innerHTML = 'Copy code';
+
+  button.addEventListener('click', () => {
+    const code = pre.querySelector('code').textContent;
+    navigator.clipboard.writeText(code).then(() => {
+      button.innerHTML = 'Copied!';
+      setTimeout(() => {
+        button.innerHTML = 'Copy code';
+      }, 4000);
+    }).catch(() => {
+      button.innerHTML = 'Error';
+    });
+
+    // Ta bort fokus från knappen efter 4 sekunder
+    setTimeout(() => {
+      button.blur();
+    }, 4000);
+  });
+
+  pre.style.position = 'relative';
+  pre.style.display = 'flex';
+  button.style.position = 'absolute';
+  button.style.top = '0';
+  button.style.right = '0';
+
+  pre.appendChild(button);
+});</script>    
     {{ end }}
 
     {{ if (findRE "<table" .Content 1) }}

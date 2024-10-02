@@ -27,12 +27,12 @@ aliases:
 
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Europeiska säkerhetsvärden" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Europeiska säkerhets­värden" link="" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-layer-group" text="Skalbar lagring" link="" color="#417DA5">}}
     {{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög prestanda" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-sync-alt" text="Hög tillgänglighet" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnadseffektivt" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnads­effektivt" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## S3 Storage - lagring i molnet
@@ -102,7 +102,7 @@ Ja, Safespring Storage är fullt S3-kompatibelt, vilket gör att du kan använda
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
 Upptäck den fulla potentialen i dina data med Safespring Storage. Vårt team är redo att hjälpa dig att hitta den perfekta lagringslösningen för ditt företags behov.
 
 [hello@safespring.com](mailto:hello@safespring.com)

@@ -18,9 +18,8 @@ socialmediabild: ""
 form: ""
 toc: "In this article"
 language: "En"
+author: "Gabriel Paues"
 ---
-
-{{< author-gabriel >}}
 
 
 ## Introduction

@@ -166,7 +166,7 @@ GÉANTs rolle innen OCRE innebærer at de hjelper til med å forhandle fram avta
 
 {{% /accordion %}}
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
 Jeg er din kontakt i Norge og hjelper deg med å bruke våre tjenester.
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21

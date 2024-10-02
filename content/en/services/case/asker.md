@@ -81,7 +81,7 @@ Right now,
 ## Want a Secure and Long-Term Partner for Your Data Storage?
 It should be easy for you to manage large amounts of data in an efficient and secure way. That's why Safespring has made it easy to compile common questions about IT security and compliance. And if you want recommendations specific to your business, get in touch!
 
-{{% custom-card image="/img/card/safespring-petter.jpg" cardtitle="Petter Hylin" %}}
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
 I am the sales manager for Safespring in Sweden and I am happy to help you get started.
 
 {{< inline "Call" >}} +46 (0)73 533 65 21
