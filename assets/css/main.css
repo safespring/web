@@ -1084,6 +1084,52 @@ color:var(--unCheckedColor);
 
 /* ======= MEGA MENU ======= */
 
+.megamenu-wrapper::before {
+	display: none;
+}
+
+.megamenu-wrapper {
+	display: none;
+}
+
+.megamenu-wrapper.show {
+display: none;
+}
+
+.megamenu-main-service {
+display: none;
+}
+
+.megamenu-main-service-card {
+display: none;
+}
+
+.megamenu-main-service-card p {
+display: none;
+}
+
+.megamenu-main-service-card-title {
+display: none;
+}
+
+.megamenu-service-card-list {
+display: none;
+}
+
+.megamenu-service-card-title-small {
+display: none;
+}
+
+.megamenu-service-card-list li {
+display: none;
+}
+
+.megamenu-service-card a {
+display: none;
+}
+
+/* ==================. */ 
+
 @media only screen and (min-width:500px) { 
 
 .megamenu-wrapper::before {
@@ -1124,8 +1170,7 @@ color:var(--unCheckedColor);
     margin-bottom: -2px;
 }
 
-
-.megamenu-main-service{
+.megamenu-main-service {
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
