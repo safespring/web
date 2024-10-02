@@ -2221,7 +2221,16 @@ color:var(--unCheckedColor);
 	color:var(--main-color) !important;
 }
 
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
+	.safespring-footer-menu ul {
+		margin-bottom: 5px;
+		gap: 0px 6px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.safespring-footer-menu ul>li:first-child {
+		flex-basis: 100%;
+	}
 	.safespring-footer-menu li {
 		font:20px/45px var(--mon-font);
 	}
