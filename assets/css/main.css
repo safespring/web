@@ -1108,9 +1108,9 @@ display: none;
 display: none;
 }
 
-.megamenu-main-service-card>.cardtitle.cardicon i {
-display: none;
-}
+    .megamenu-main-service-card>.cardtitle>.cardicon i {
+      display: none;
+    }
 
 .megamenu-main-service-card-title {
 display: none;
