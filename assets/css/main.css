@@ -708,6 +708,7 @@ blockquote p {
 }
 
 
+@media (min-width: 768px) {
 .button {
 	transition:all .3s ease;
 }
@@ -720,9 +721,6 @@ blockquote p {
 	transition:all .3s ease;
 	padding-right:20px;
 }
-
-
-@media (min-width: 768px) {
 .button:after {
 	content:"\f061";
 	margin-left:-10px;
