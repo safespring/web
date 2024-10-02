@@ -21,5 +21,6 @@ formid: ""
 explorer: ""
 aliases:
     - /event/
+    - /webinars/
 fullwidth: "x"
 ---
