@@ -12,11 +12,11 @@
     {{ if .Params.videoURL }}
     <div class="webinarvideo">
       <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls preload="none">
-        <!-- Vi tar bort src här för att undvika att videon laddas automatiskt -->
+        <!-- Removed src to prevent automatic loading -->
         {{ range .Params.subtitles }}
         <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
         {{ end }}
-        Din webbläsare stödjer inte videotaggen.
+        Your browser does not support the video tag.
       </video>
     </div>
     <script>
@@ -27,7 +27,6 @@
         var hlsScriptLoaded = false;
         var videoInitialized = false;
 
-        // Funktion för att ladda hls.min.js dynamiskt
         function loadHlsScript(callback) {
           if (hlsScriptLoaded) {
             callback();
@@ -40,10 +39,12 @@
             hlsScriptLoaded = true;
             callback();
           };
+          script.onerror = function() {
+            console.error('Failed to load hls.min.js');
+          };
           document.body.appendChild(script);
         }
 
-        // Funktion för att initiera videon
         function initializeVideo() {
           if (videoInitialized) return;
 
@@ -53,12 +54,13 @@
             hls.attachMedia(video);
             videoInitialized = true;
 
-            // Event listeners för HLS.js
+            // HLS.js event listeners
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
               _paq.push(['trackEvent', 'Video', 'Loaded', videoSrc]);
             });
 
             hls.on(Hls.Events.ERROR, function (event, data) {
+              console.error('HLS.js error:', data);
               if (data.fatal) {
                 switch(data.type) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
@@ -74,14 +76,14 @@
               }
             });
           } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            // För Safari
+            // For Safari
             video.src = videoSrc;
             videoInitialized = true;
           } else {
-            alert('Din webbläsare stödjer inte detta videoformat.');
+            alert('Your browser does not support this video format.');
           }
 
-          // Lägg till videohändelser
+          // Video event listeners
           video.addEventListener('play', function () {
             _paq.push(['trackEvent', 'Video', 'Play', video.currentSrc]);
           });
@@ -107,25 +109,25 @@
           });
         }
 
-        // Event listener för att initiera videon vid klick
-        video.addEventListener('click', function() {
+        // Event listener for 'play' event
+        video.addEventListener('play', function() {
           if (!videoInitialized) {
-            // Kontrollera om videon är en HLS-ström
+            // Check if the video is an HLS stream
             if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
               loadHlsScript(function() {
                 initializeVideo();
-                video.play();
+                // No need to call video.play() here
               });
             } else {
-              // För vanliga MP4-videor
+              // For regular MP4 videos
               video.src = videoSrc;
               initializeVideo();
-              video.play();
+              // No need to call video.play() here
             }
           }
         });
 
-        // Funktion för att hantera fullskärmsändringar
+        // Function to handle fullscreen changes
         function handleFullScreenChange() {
           if (document.fullscreenElement) {
             isFullScreen = true;
@@ -136,7 +138,7 @@
           }
         }
 
-        // Lägg till lyssnare för fullskärmsändringar
+        // Add listener for fullscreen changes
         document.addEventListener("fullscreenchange", handleFullScreenChange, false);
 
       });
