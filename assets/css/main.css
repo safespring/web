@@ -4404,7 +4404,7 @@ margin:0;
 	overflow:hidden;
 	border-radius:20px;
 	width: min(40%, 350px);
-	min-width: 250px;
+	min-width: 312px;
 }
 
 .content-container * {
@@ -5892,6 +5892,13 @@ box-shadow:2px 3px 9px 0 rgba(0, 0, 0, 0.10);
 	padding-bottom:3rem;
 }
 
+@media screen and (max-width:500px) {
+	.flexcontainer {
+	padding:5% 10% !important;
+}
+}
+
+
 .flexcontainer-start {
 	margin:3% auto;
 	display:flex;
@@ -7350,6 +7357,7 @@ padding:1em 3em 3em 3em;
 	align-items:center;
 	flex-direction:column;
 	flex-wrap:nowrap;
+	width: 100vw;
 
 }
 
