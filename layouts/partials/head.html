@@ -37,8 +37,7 @@
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
 
   <script src="{{ $scripts.RelPermalink }}" defer></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-
+  
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
