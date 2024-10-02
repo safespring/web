@@ -1,5 +1,6 @@
 <div class="webinarvideo">
   <video class="webinar-videoplayer" id="myVideo" controls
+    preload="none"
     poster="{{ .Get 1 | safeURL }}">
     Your browser does not support the video tag.
   </video>
@@ -9,6 +10,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
     var hlsScriptLoaded = false;
+    var videoInitialized = false;
 
     function loadHlsScript(callback) {
         if (hlsScriptLoaded) {
@@ -18,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var script = document.createElement('script');
         script.src = '/js/hls.min.js';
-        script.async = true; // Load script asynchronously
         script.onload = function() {
             hlsScriptLoaded = true;
             callback();
@@ -27,31 +28,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function initializeVideo() {
+        if (videoInitialized) return;
+
         if (window.Hls && Hls.isSupported()) {
             var hls = new Hls();
             hls.loadSource('{{ .Get 0 | safeURL }}');
             hls.attachMedia(video);
+            videoInitialized = true;
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             // For Safari
             video.src = '{{ .Get 0 | safeURL }}';
+            videoInitialized = true;
         } else {
             alert('Your browser does not support this video format.');
         }
     }
 
-    // Lazy load the video when the user clicks play
-    function onVideoPlay() {
+    // Attach event listener to the video element
+    video.addEventListener('click', function() {
         if (!videoInitialized) {
             loadHlsScript(function() {
                 initializeVideo();
                 video.play();
             });
-            videoInitialized = true;
-            video.removeEventListener('play', onVideoPlay);
         }
-    }
-
-    var videoInitialized = false;
-    video.addEventListener('play', onVideoPlay);
+    });
 });
 </script>
