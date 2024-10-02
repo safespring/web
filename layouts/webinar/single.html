@@ -126,6 +126,22 @@
             }
           }
         });
+                video.addEventListener('click', function() {
+          if (!videoInitialized) {
+            // Check if the video is an HLS stream
+            if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
+              loadHlsScript(function() {
+                initializeVideo();
+                // No need to call video.play() here
+              });
+            } else {
+              // For regular MP4 videos
+              video.src = videoSrc;
+              initializeVideo();
+              // No need to call video.play() here
+            }
+          }
+        });
 
         // Function to handle fullscreen changes
         function handleFullScreenChange() {
