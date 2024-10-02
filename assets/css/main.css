@@ -1163,6 +1163,7 @@ display: none;
     align-items: stretch;
     justify-content: center;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .megamenu-wrapper.show {
@@ -7965,6 +7966,7 @@ th:last-child {
 
 #CookieConsent .cookie-popup {
 	background:#fafefe00 !important;
+	-webkit-backdrop-filter:blur(20px) !important;
 	backdrop-filter:blur(20px) !important;
 	transition:300ms;
 }
