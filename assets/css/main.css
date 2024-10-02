@@ -1070,6 +1070,7 @@ color:var(--unCheckedColor);
 	padding:8px 20px 6px 20px;
 }
 
+@media (min-width: 768px) { 
 .site-header-button-mail::before {
 	font:var(--fa-font-solid);
 	content:"\f0e0";
@@ -1078,6 +1079,7 @@ color:var(--unCheckedColor);
 
 .site-header-button-mail:hover::before {
 	content:"\f044";
+}
 }
 
 /* END - HEADER 2022 */
