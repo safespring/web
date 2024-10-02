@@ -1084,6 +1084,7 @@ color:var(--unCheckedColor);
 
 /* ======= MEGA MENU ======= */
 
+@media (min-width: 768px) { 
 .megamenu-wrapper::before {
 	display: none;
 }
@@ -1108,9 +1109,9 @@ display: none;
 display: none;
 }
 
-    .megamenu-main-service-card>.cardtitle>.cardicon i {
-      display: none;
-    }
+.megamenu-main-service-card>.cardtitle>.cardicon i {
+	display: none;
+ }
 
 .megamenu-main-service-card-title {
 display: none;
@@ -1131,7 +1132,7 @@ display: none;
 .megamenu-service-card a {
 display: none;
 }
-
+}
 /* ==================. */ 
 
 @media only screen and (min-width:500px) { 
