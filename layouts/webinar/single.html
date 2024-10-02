@@ -13,14 +13,13 @@
     <div class="webinarvideo">
       <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls>
         {{ if eq (path.Ext .Params.videoURL) ".m3u8" }}
-          <!-- HLS.js will be used for .m3u8 -->
           {{ else }}
           <source src="{{ .Params.videoURL }}" type="video/mp4">
             {{ end }}
             {{ range .Params.subtitles }}
             <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
               {{ end }}
-              Your browser does not support the video tag.. 
+              Your browser does not support the video tag.
       </video>
     </div>
     <script>
@@ -28,6 +27,8 @@
         var video = document.getElementById('player');
         var videoSrc = "{{ .Params.videoURL }}";
         var isFullScreen = false;
+        var hlsScriptLoaded = false;
+        var videoInitialized = false;
 
         // Function to handle fullscreen changes
         function handleFullScreenChange() {
@@ -43,81 +44,121 @@
         // Add listener for fullscreen changes
         document.addEventListener("fullscreenchange", handleFullScreenChange, false);
 
-        if (Hls.isSupported()) {
-          var hls = new Hls();
-          hls.loadSource(videoSrc);
-          hls.attachMedia(video);
-
-          hls.on(Hls.Events.MANIFEST_PARSED, function() {
-            _paq.push(['trackEvent', 'Video', 'Loaded', videoSrc]);
-          });
-
-          video.addEventListener('play', function () {
-            _paq.push(['trackEvent', 'Video', 'Play', video.currentSrc]);
-          });
-
-          video.addEventListener('pause', function () {
-            _paq.push(['trackEvent', 'Video', 'Pause', video.currentSrc]);
-          });
-
-          video.addEventListener('ended', function () {
-            _paq.push(['trackEvent', 'Video', 'Ended', video.currentSrc]);
-          });
-
-          video.addEventListener('seeking', function () {
-            _paq.push(['trackEvent', 'Video', 'Seeking', video.currentSrc]);
-          });
-
-          video.addEventListener('volumechange', function () {
-            if(video.muted) {
-              _paq.push(['trackEvent', 'Video', 'Muted', video.currentSrc]);
-            } else {
-              _paq.push(['trackEvent', 'Video', 'VolumeChange', video.currentSrc]);
-            }
-          });
-
-          hls.on(Hls.Events.ERROR, function (event, data) {
-            if (data.fatal) {
-              switch(data.type) {
-                case Hls.ErrorTypes.NETWORK_ERROR:
-                  _paq.push(['trackEvent', 'Video', 'Error', 'Network Error', video.currentSrc]);
-                  break;
-                case Hls.ErrorTypes.MEDIA_ERROR:
-                  _paq.push(['trackEvent', 'Video', 'Error', 'Media Error', video.currentSrc]);
-                  break;
-                default:
-                  _paq.push(['trackEvent', 'Video', 'Error', 'Other Error', video.currentSrc]);
-                  break;
-              }
-            }
-          });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-          video.src = videoSrc;
-
-          video.addEventListener('play', function () {
-            _paq.push(['trackEvent', 'Video', 'Play', videoSrc]);
-          });
-
-          video.addEventListener('pause', function () {
-            _paq.push(['trackEvent', 'Video', 'Pause', videoSrc]);
-          });
-
-          video.addEventListener('ended', function () {
-            _paq.push(['trackEvent', 'Video', 'Ended', videoSrc]);
-          });
-
-          video.addEventListener('seeking', function () {
-            _paq.push(['trackEvent', 'Video', 'Seeking', videoSrc]);
-          });
-
-          video.addEventListener('volumechange', function () {
-            if(video.muted) {
-              _paq.push(['trackEvent', 'Video', 'Muted', videoSrc]);
-            } else {
-              _paq.push(['trackEvent', 'Video', 'VolumeChange', videoSrc]);
-            }
-          });
+        function loadHlsScript(callback) {
+          var script = document.createElement('script');
+          script.src = '/js/hls.min.js';
+          script.onload = function() {
+            hlsScriptLoaded = true;
+            callback();
+          };
+          script.onerror = function() {
+            console.error('Failed to load hls.min.js');
+            alert('An error occurred while loading the video player.');
+          };
+          document.body.appendChild(script);
         }
+
+        function initializeVideo() {
+          if (videoInitialized) return;
+          if (window.Hls && Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource(videoSrc);
+            hls.attachMedia(video);
+
+            // Add your event listeners for tracking
+            video.addEventListener('play', function () {
+              _paq.push(['trackEvent', 'Video', 'Play', video.currentSrc]);
+            });
+
+            video.addEventListener('pause', function () {
+              _paq.push(['trackEvent', 'Video', 'Pause', video.currentSrc]);
+            });
+
+            video.addEventListener('ended', function () {
+              _paq.push(['trackEvent', 'Video', 'Ended', video.currentSrc]);
+            });
+
+            video.addEventListener('seeking', function () {
+              _paq.push(['trackEvent', 'Video', 'Seeking', video.currentSrc]);
+            });
+
+            video.addEventListener('volumechange', function () {
+              if(video.muted) {
+                _paq.push(['trackEvent', 'Video', 'Muted', video.currentSrc]);
+              } else {
+                _paq.push(['trackEvent', 'Video', 'VolumeChange', video.currentSrc]);
+              }
+            });
+
+            hls.on(Hls.Events.ERROR, function (event, data) {
+              if (data.fatal) {
+                switch(data.type) {
+                  case Hls.ErrorTypes.NETWORK_ERROR:
+                    _paq.push(['trackEvent', 'Video', 'Error', 'Network Error', video.currentSrc]);
+                    break;
+                  case Hls.ErrorTypes.MEDIA_ERROR:
+                    _paq.push(['trackEvent', 'Video', 'Error', 'Media Error', video.currentSrc]);
+                    break;
+                  default:
+                    _paq.push(['trackEvent', 'Video', 'Error', 'Other Error', video.currentSrc]);
+                    break;
+                }
+              }
+            });
+
+            videoInitialized = true;
+          } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            // For Safari
+            video.src = videoSrc;
+
+            // Add your event listeners for tracking
+            video.addEventListener('play', function () {
+              _paq.push(['trackEvent', 'Video', 'Play', videoSrc]);
+            });
+
+            video.addEventListener('pause', function () {
+              _paq.push(['trackEvent', 'Video', 'Pause', videoSrc]);
+            });
+
+            video.addEventListener('ended', function () {
+              _paq.push(['trackEvent', 'Video', 'Ended', videoSrc]);
+            });
+
+            video.addEventListener('seeking', function () {
+              _paq.push(['trackEvent', 'Video', 'Seeking', videoSrc]);
+            });
+
+            video.addEventListener('volumechange', function () {
+              if(video.muted) {
+                _paq.push(['trackEvent', 'Video', 'Muted', videoSrc]);
+              } else {
+                _paq.push(['trackEvent', 'Video', 'VolumeChange', videoSrc]);
+              }
+            });
+
+            videoInitialized = true;
+          } else {
+            alert('Your browser does not support this video format.');
+          }
+        }
+
+        // Initialize the video player on user interaction to avoid LCP impact
+        function onVideoInteraction() {
+          if (!videoInitialized) {
+            if (!hlsScriptLoaded) {
+              loadHlsScript(function() {
+                initializeVideo();
+                video.play();
+              });
+            } else {
+              initializeVideo();
+              video.play();
+            }
+          }
+        }
+
+        // Add event listener for 'play' event
+        video.addEventListener('play', onVideoInteraction);
       });
 
       function setCurrentTime(time) {
