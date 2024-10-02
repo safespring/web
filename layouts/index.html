@@ -28,51 +28,68 @@
       <div id="scaleout-usecase">
       </div>
       <div class="index-video video-container">
-        <video id="myVideo" muted controls poster="/img/card/safespring_use-case_scaleout-1080p.jpg">
-          <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish">
-            <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English">
-              <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
-                Your browser does not support the video tag.
-              </video>
-              <div id="custom-cursor" class="custom-cursor">
-                Play with sound
-              </div>
-              <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var video = document.getElementById('myVideo');
-                    var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/master.m3u8";
-                    var loaded = false;
+    <video id="myVideo" muted controls poster="/img/card/safespring_use-case_scaleout-1080p.jpg">
+        <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish" default>
+        <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+        Your browser does not support the video tag.
+    </video>
+    <div id="custom-cursor" class="custom-cursor">
+        Play with sound
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('myVideo');
+            var videoSrc = "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_use-case_scaleout_v4/master.m3u8";
+            var loaded = false;
 
-                    video.addEventListener('click', function() {
-                        if (!loaded) {
-                            loaded = true; // Sätt denna tidigt för att förhindra flera laddningar
-                            // Dynamiskt ladda hls.min.js
-                            var script = document.createElement('script');
-                            script.src = "/js/hls.min.js";
-                            document.head.appendChild(script);
+            function loadHlsScript(callback) {
+                var script = document.createElement('script');
+                script.src = "/js/hls.min.js";
+                script.onload = callback;
+                script.onerror = function() {
+                    console.error('Failed to load hls.min.js');
+                };
+                document.head.appendChild(script);
+            }
 
-                            script.onload = function() {
-                                // När scriptet är laddat, använd Hls för att spela videon
-                                if (Hls.isSupported()) {
-                                    var hls = new Hls();
-                                    hls.loadSource(videoSrc);
-                                    hls.attachMedia(video);
-                                    hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                                        video.play();
-                                    });
-                                    hls.on(Hls.Events.ERROR, function (event, data) {
-                                        console.error('Error event:', event, 'Data:', data);
-                                    });
-                                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                                    video.src = videoSrc;
-                                    video.play();
-                                }
-                            };
-                        }
+            function initializeVideo() {
+                if (window.Hls && Hls.isSupported()) {
+                    var hls = new Hls();
+                    hls.loadSource(videoSrc);
+                    hls.attachMedia(video);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                        video.play();
                     });
-                });
-              </script>
-            </div>
+                    hls.on(Hls.Events.ERROR, function (event, data) {
+                        console.error('HLS.js error:', data);
+                    });
+                } else if (video.canPlayType('application/vnd.apple.mpegurl') || video.canPlayType('application/x-mpegURL')) {
+                    // For Safari and browsers with native HLS support
+                    video.src = videoSrc;
+                    video.addEventListener('loadedmetadata', function() {
+                        video.play();
+                    });
+                } else {
+                    console.error('This browser does not support HLS playback.');
+                }
+            }
+
+            function onVideoClick() {
+                if (!loaded) {
+                    loaded = true;
+                    loadHlsScript(function() {
+                        initializeVideo();
+                    });
+                } else {
+                    video.play();
+                }
+            }
+
+            video.addEventListener('click', onVideoClick);
+        });
+    </script>
+</div>
 
           </div>
           <div class="center-text">
