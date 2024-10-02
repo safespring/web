@@ -34,8 +34,6 @@
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
   {{ $js3 := resources.Get "js/ancor-scroll.js" }}
   {{ $js4 := resources.Get "js/text-balancer.js" }}
-  {{ if (findRE "<video" .Content 1) }} <script src="/js/hls.min.js" defer></script>{{ end }}
-
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
 
   <script src="{{ $scripts.RelPermalink }}" defer></script>
