@@ -34,6 +34,9 @@
               <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
                 Your browser does not support the video tag.
               </video>
+                  <div id="custom-cursor" class="custom-cursor">
+                    Play
+                  </div>
               <script>
                 document.addEventListener('DOMContentLoaded', function () {
                   var video = document.getElementById('myVideo');
@@ -81,6 +84,81 @@
             // Add event listener for the first play attempt
                   video.addEventListener('play', onFirstInteraction);
                 });
+
+                function updateCursorText() {
+                if (video.paused) {
+                    customCursor.textContent = video.muted ? 'Play' : 'Play';
+                } else {
+                    customCursor.textContent = 'Pause';
+                }
+            }
+
+            // Visa och dölj den anpassade muspekaren
+            function showCustomCursor() {
+                customCursor.style.display = 'block';
+                updateCursorText();
+            }
+
+            function hideCustomCursor() {
+                customCursor.style.display = 'none';
+            }
+
+            // Hantera muspekarens beteende
+            video.addEventListener('mousemove', function() {
+                showCustomCursor();
+                clearTimeout(video.cursorTimeout);
+                video.cursorTimeout = setTimeout(function() {
+                    hideCustomCursor();
+                }, 2000); // Dölj efter 2 sekunders inaktivitet
+            });
+
+            // Visa muspekaren initialt
+            showCustomCursor();
+
+            // Första klicket för att initialisera videon
+            function onFirstClick(event) {
+                event.preventDefault(); // Förhindra standardbeteende
+                if (!loaded) {
+                    loaded = true;
+                    loadHlsScript(function() {
+                        initializeVideo();
+                        // Efter initialisering, aktivera standard klickbeteende
+                        video.removeEventListener('click', onFirstClick);
+                    });
+                }
+            }
+
+            // Lägg till första klickhändelsen
+            video.addEventListener('click', onFirstClick);
+
+            // Hantera play/paus vid klick efter initialisering
+            video.addEventListener('click', function() {
+                if (loaded) {
+                    if (video.paused) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+            });
+
+            // Uppdatera muspekaren vid play/paus
+            video.addEventListener('play', function() {
+                updateCursorText();
+                hideCustomCursor();
+                // Avmuta videon vid första uppspelningen
+                if (video.muted) {
+                    video.muted = false;
+                }
+            });
+
+            video.addEventListener('pause', function() {
+                showCustomCursor();
+            });
+
+            video.addEventListener('ended', function() {
+                showCustomCursor();
+            });
               </script>
             </div>
             <div class="center-text">
