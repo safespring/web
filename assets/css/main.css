@@ -722,6 +722,7 @@ blockquote p {
 }
 
 
+@media (min-width: 768px) {
 .button:after {
 	content:"\f061";
 	margin-left:-10px;
@@ -740,6 +741,7 @@ blockquote p {
 	opacity:1;
 	margin-left:10px;
 	visibility:visible;
+}
 }
 
 .close-btn {
