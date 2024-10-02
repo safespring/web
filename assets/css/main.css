@@ -1035,7 +1035,6 @@ color:var(--unCheckedColor);
 	font:17px/1 var(--hind-font-semibold) !important;
 	color:var(--clear-blue-color)!important;
 	display:flex;
-	justify-content:flex-end;
 	gap:7%;
 	list-style:none;
 	padding:0 !important;
@@ -1084,11 +1083,7 @@ color:var(--unCheckedColor);
 
 /* ======= MEGA MENU ======= */
 
-@media only screen and (max-width:500px) { 
-	.megamenu-wrapper {
-		display: none !important;
-	}
-}
+@media only screen and (min-width:500px) { 
 
 .megamenu-wrapper::before {
 	content: '';
@@ -1202,6 +1197,7 @@ color:var(--unCheckedColor);
 
 .megamenu-service-card a:hover {
 	color:var(--link-color) !important;
+}
 }
 /* END - MEGA MENU */
 
