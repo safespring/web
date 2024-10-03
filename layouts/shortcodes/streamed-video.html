@@ -1,66 +1,69 @@
 <div class="webinarvideo">
   <video class="webinar-videoplayer" id="myVideo" controls
-    preload="none"
-    poster="{{ .Get 1 | safeURL }}">
-    Your browser does not support the video tag.
-  </video>
+  preload="none"
+  poster="{{ .Get 1 | safeURL }}">
+  Your browser does not support the video tag.
+</video>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    var video = document.getElementById('myVideo');
-    var hlsScriptLoaded = false;
-    var videoInitialized = false;
+    document.addEventListener('DOMContentLoaded', function () {
+        var video = document.getElementById('myVideo');
+        var hlsScriptLoaded = false;
+        var videoInitialized = false;
 
-    function loadHlsScript(callback) {
-        if (hlsScriptLoaded) {
-            callback();
-            return;
+        function loadHlsScript(callback) {
+            if (hlsScriptLoaded) {
+                callback();
+                return;
+            }
+
+            var script = document.createElement('script');
+            script.src = '/js/hls.min.js';
+            script.onload = function() {
+                hlsScriptLoaded = true;
+                callback();
+            };
+            document.body.appendChild(script);
         }
 
-        var script = document.createElement('script');
-        script.src = '/js/hls.min.js';
-        script.onload = function() {
-            hlsScriptLoaded = true;
-            callback();
-        };
-        document.body.appendChild(script);
-    }
+        function initializeVideo() {
+            if (videoInitialized) return;
 
-    function initializeVideo() {
-        if (videoInitialized) return;
-
-        if (window.Hls && Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource('{{ .Get 0 | safeURL }}');
-            hls.attachMedia(video);
-            videoInitialized = true;
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            if (window.Hls && Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource('{{ .Get 0 | safeURL }}');
+                hls.attachMedia(video);
+                videoInitialized = true;
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             // For Safari
-            video.src = '{{ .Get 0 | safeURL }}';
-            videoInitialized = true;
-        } else {
-            alert('Your browser does not support this video format.');
+                video.src = '{{ .Get 0 | safeURL }}';
+                videoInitialized = true;
+            } else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+                video.src = '{{ .Get 0 | safeURL }}';
+                video.load();
+            } else {
+                alert('Your browser does not support this video format.');
+            }
         }
-    }
     // Attach event listener to the video element
-    video.addEventListener('play', function() {
-        if (!videoInitialized) {
-            loadHlsScript(function() {
-                initializeVideo();
-                video.play();
-            });
-        }
-    });
+        video.addEventListener('play', function() {
+            if (!videoInitialized) {
+                loadHlsScript(function() {
+                    initializeVideo();
+                    video.play();
+                });
+            }
+        });
 
     // Attach event listener to the video element
-    video.addEventListener('click', function() {
-        if (!videoInitialized) {
-            loadHlsScript(function() {
-                initializeVideo();
-                video.play();
-            });
-        }
+        video.addEventListener('click', function() {
+            if (!videoInitialized) {
+                loadHlsScript(function() {
+                    initializeVideo();
+                    video.play();
+                });
+            }
+        });
     });
-});
 </script>
