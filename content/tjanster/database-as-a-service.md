@@ -8,6 +8,7 @@ cardorder: "4"
 date: 2022-04-29T11:58:58+01:00
 draft: false
 section: "DBaaS"
+toplogo: "arkivit"
 intro: "Med bara några enkla klick kan du distribuera ett fullt hanterat, lastbalanserat, högtillgängligt databaskluster för MySQL, MariaDB eller PostgreSQL som ger prestanda, drifttid och enkelhet. "
 cardintro: "Med några få klick kan du distribuera ett fullt hanterat, databaskluster."
 background: "safespring-background-dbaas.svg"
@@ -32,8 +33,14 @@ logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
 ---
 
-
-![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-arrows-rotate" text="Automated Operations" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-gauge" text="High Availability" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-sliders" text="Advanced Traffic Control" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-unlock" text="Open Standards" link="" color="#f4670f">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Automated Backups" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
 Databas-som-tjänst tar hand om allt, vilket ger dig tillgängliga databaser med hög prestanda för dina applikationer.

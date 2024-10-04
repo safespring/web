@@ -15,54 +15,54 @@
         <!-- Removed src to prevent automatic loading -->
         {{ range .Params.subtitles }}
         <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
-        {{ end }}
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('player');
-        var videoSrc = "{{ .Params.videoURL }}";
-        var isFullScreen = false;
-        var hlsScriptLoaded = false;
-        var videoInitialized = false;
+          {{ end }}
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var video = document.getElementById('player');
+          var videoSrc = "{{ .Params.videoURL }}";
+          var isFullScreen = false;
+          var hlsScriptLoaded = false;
+          var videoInitialized = false;
 
-        function loadHlsScript(callback) {
-          if (hlsScriptLoaded) {
-            callback();
-            return;
+          function loadHlsScript(callback) {
+            if (hlsScriptLoaded) {
+              callback();
+              return;
+            }
+
+            var script = document.createElement('script');
+            script.src = '/js/hls.min.js';
+            script.onload = function() {
+              hlsScriptLoaded = true;
+              callback();
+            };
+            script.onerror = function() {
+              console.error('Failed to load hls.min.js');
+            };
+            document.body.appendChild(script);
           }
 
-          var script = document.createElement('script');
-          script.src = '/js/hls.min.js';
-          script.onload = function() {
-            hlsScriptLoaded = true;
-            callback();
-          };
-          script.onerror = function() {
-            console.error('Failed to load hls.min.js');
-          };
-          document.body.appendChild(script);
-        }
+          function initializeVideo() {
+            if (videoInitialized) return;
 
-        function initializeVideo() {
-          if (videoInitialized) return;
+            if (window.Hls && Hls.isSupported()) {
+              var hls = new Hls();
+              hls.loadSource(videoSrc);
+              hls.attachMedia(video);
+              videoInitialized = true;
 
-          if (window.Hls && Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource(videoSrc);
-            hls.attachMedia(video);
-            videoInitialized = true;
+      // HLS.js event listeners
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                _paq.push(['trackEvent', 'Video', 'Loaded', videoSrc]);
+              });
 
-            // HLS.js event listeners
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-              _paq.push(['trackEvent', 'Video', 'Loaded', videoSrc]);
-            });
-
-            hls.on(Hls.Events.ERROR, function (event, data) {
-              console.error('HLS.js error:', data);
-              if (data.fatal) {
-                switch(data.type) {
+              hls.on(Hls.Events.ERROR, function (event, data) {
+                console.error('HLS.js error:', data);
+                if (data.fatal) {
+                  switch(data.type) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
                     _paq.push(['trackEvent', 'Video', 'Error', 'Network Error', video.currentSrc]);
                     break;
@@ -72,116 +72,112 @@
                   default:
                     _paq.push(['trackEvent', 'Video', 'Error', 'Other Error', video.currentSrc]);
                     break;
+                  }
                 }
+              });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // För Safari
+              video.src = videoSrc;
+              videoInitialized = true;
+            } else {
+              alert('Your browser does not support this video format.');
+            }
+
+    // Video event listeners
+            video.addEventListener('play', function () {
+              _paq.push(['trackEvent', 'Video', 'Play', video.currentSrc]);
+            });
+
+            video.addEventListener('pause', function () {
+              _paq.push(['trackEvent', 'Video', 'Pause', video.currentSrc]);
+            });
+
+            video.addEventListener('ended', function () {
+              _paq.push(['trackEvent', 'Video', 'Ended', video.currentSrc]);
+            });
+
+            video.addEventListener('seeking', function () {
+              _paq.push(['trackEvent', 'Video', 'Seeking', video.currentSrc]);
+            });
+
+            video.addEventListener('volumechange', function () {
+              if(video.muted) {
+                _paq.push(['trackEvent', 'Video', 'Muted', video.currentSrc]);
+              } else {
+                _paq.push(['trackEvent', 'Video', 'VolumeChange', video.currentSrc]);
               }
             });
-          } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            // For Safari
-            video.src = videoSrc;
-            videoInitialized = true;
-          } else {
-            alert('Your browser does not support this video format.');
           }
 
-          // Video event listeners
-          video.addEventListener('play', function () {
-            _paq.push(['trackEvent', 'Video', 'Play', video.currentSrc]);
-          });
-
-          video.addEventListener('pause', function () {
-            _paq.push(['trackEvent', 'Video', 'Pause', video.currentSrc]);
-          });
-
-          video.addEventListener('ended', function () {
-            _paq.push(['trackEvent', 'Video', 'Ended', video.currentSrc]);
-          });
-
-          video.addEventListener('seeking', function () {
-            _paq.push(['trackEvent', 'Video', 'Seeking', video.currentSrc]);
-          });
-
-          video.addEventListener('volumechange', function () {
-            if(video.muted) {
-              _paq.push(['trackEvent', 'Video', 'Muted', video.currentSrc]);
-            } else {
-              _paq.push(['trackEvent', 'Video', 'VolumeChange', video.currentSrc]);
-            }
-          });
-        }
-
-        // Event listener for 'play' event
-        video.addEventListener('play', function() {
-          if (!videoInitialized) {
-            // Check if the video is an HLS stream
-            if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
-              loadHlsScript(function() {
-                initializeVideo();
-                // No need to call video.play() here
-              });
-            } else {
-              // For regular MP4 videos
-              video.src = videoSrc;
-              initializeVideo();
-              // No need to call video.play() here
-            }
-          }
+  // Event listener för 'play' event
+          video.addEventListener('play', function() {
+            if (!videoInitialized) {
+              if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
+                loadHlsScript(function() {
+                  initializeVideo();
+          video.play(); // Se till att videon startar direkt efter initiering
         });
-                video.addEventListener('click', function() {
-          if (!videoInitialized) {
-            // Check if the video is an HLS stream
-            if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
-              loadHlsScript(function() {
+              } else {
+                video.src = videoSrc;
                 initializeVideo();
-                // No need to call video.play() here
-              });
-            } else {
-              // For regular MP4 videos
-              video.src = videoSrc;
-              initializeVideo();
-              // No need to call video.play() here
-            }
-          }
-        });
-
-        // Function to handle fullscreen changes
-        function handleFullScreenChange() {
-          if (document.fullscreenElement) {
-            isFullScreen = true;
-            _paq.push(['trackEvent', 'Video', 'FullScreen', 'Enter', video.currentSrc]);
-          } else {
-            isFullScreen = false;
-            _paq.push(['trackEvent', 'Video', 'FullScreen', 'Exit', video.currentSrc]);
-          }
-        }
-
-        // Add listener for fullscreen changes
-        document.addEventListener("fullscreenchange", handleFullScreenChange, false);
-
-      });
-
-      function setCurrentTime(time) {
-        var player = document.getElementById('player');
-        player.currentTime = time;
-        player.play();
+        video.play(); // Se till att videon startar direkt efter initiering
       }
-    </script>
-    {{ end }}
+    }
+  });
+
+          video.addEventListener('click', function() {
+            if (!videoInitialized) {
+              if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
+                loadHlsScript(function() {
+                  initializeVideo();
+          video.play(); // Se till att videon startar direkt efter initiering
+        });
+              } else {
+                video.src = videoSrc;
+                initializeVideo();
+        video.play(); // Se till att videon startar direkt efter initiering
+      }
+    }
+  });
+
+  // Funktion för att hantera fullskärmsläget
+          function handleFullScreenChange() {
+            if (document.fullscreenElement) {
+              isFullScreen = true;
+              _paq.push(['trackEvent', 'Video', 'FullScreen', 'Enter', video.currentSrc]);
+            } else {
+              isFullScreen = false;
+              _paq.push(['trackEvent', 'Video', 'FullScreen', 'Exit', video.currentSrc]);
+            }
+          }
+
+  // Lägg till lyssnare för ändringar i fullskärmsläge
+          document.addEventListener("fullscreenchange", handleFullScreenChange, false);
+        });
+
+function setCurrentTime(time) {
+  var player = document.getElementById('player');
+  player.currentTime = time;
+  player.play();
+}
+</script>
+{{ end }}
 {{ .Content }}
 {{ if and (isset .Params "episode") (.Params.episode) }}
 {{ partial "webinar-serie.html" . }}
 {{ end }}
 </div>
 <div class="sidebar-default-single">
-    {{ if .Params.chapters }}
-<button class="mobile-toc" id="mobile-toc-webinar">
-  <i class="fa-solid fa-list-ul"></i>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
-</button>    
-<div class="sidebar-container-mobile">
-      <div class="sidebar-content-mobile">  
-        <h2 class="sidebar-toc">
-          {{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
-        </h2>
-        <div class="balance-text">
+  {{ if .Params.chapters }}
+  <button class="mobile-toc" id="mobile-toc-webinar">
+    <i class="fa-solid fa-list-ul"></i>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
+  </button>    
+  <div class="sidebar-container-mobile">
+    <div class="sidebar-content-mobile">  
+      <h2 class="sidebar-toc">
+        {{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Avsnitt{{ end }}
+      </h2>
+      <div class="balance-text">
         <ul class="mobile-webinar-list">
           {{ range $index, $element := .Params.chapters }}
           <a href="javascript:void(0);" onclick="setCurrentTime({{ $element.time }})">
@@ -189,10 +185,10 @@
           </a>
           {{ end }}
         </ul>
-        </div>
       </div>
     </div>
-    <div class="overlay"></div>
+  </div>
+  <div class="overlay"></div>
   {{ end }}
   {{ if .Params.chapters }}
   <div class="sidebar-container">
@@ -218,57 +214,57 @@
 </main>
 <script type="">
   document.addEventListener('DOMContentLoaded', (event) => {
-  var toggleBtn = document.querySelector('.mobile-toc');
-  var sidebarContainerMobile = document.querySelector('.sidebar-container-mobile');
-  var overlay = document.querySelector('.overlay');
-  var body = document.querySelector('body');
+    var toggleBtn = document.querySelector('.mobile-toc');
+    var sidebarContainerMobile = document.querySelector('.sidebar-container-mobile');
+    var overlay = document.querySelector('.overlay');
+    var body = document.querySelector('body');
 
-  toggleBtn.addEventListener('click', function() {
-    sidebarContainerMobile.classList.toggle('expanded');
-    overlay.classList.toggle('visible');
-    body.classList.toggle('no-scroll');
-    toggleBtn.classList.toggle('expanded');
+    toggleBtn.addEventListener('click', function() {
+      sidebarContainerMobile.classList.toggle('expanded');
+      overlay.classList.toggle('visible');
+      body.classList.toggle('no-scroll');
+      toggleBtn.classList.toggle('expanded');
 
     // Ändra ikon
-    var icon = toggleBtn.querySelector('i');
-    if (toggleBtn.classList.contains('expanded')) {
-      icon.classList.remove('fa-list-ul');
-      icon.classList.add('fa-xmark');
-    } else {
-      icon.classList.remove('fa-xmark');
-      icon.classList.add('fa-list-ul');
-    }
-  });
+      var icon = toggleBtn.querySelector('i');
+      if (toggleBtn.classList.contains('expanded')) {
+        icon.classList.remove('fa-list-ul');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-list-ul');
+      }
+    });
 
   // Lägg till event listeners på länkar i innehållsförteckningen
-  var tocLinks = sidebarContainerMobile.querySelectorAll('a');
-  tocLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
+    var tocLinks = sidebarContainerMobile.querySelectorAll('a');
+    tocLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        sidebarContainerMobile.classList.remove('expanded');
+        overlay.classList.remove('visible');
+        body.classList.remove('no-scroll');
+        toggleBtn.classList.remove('expanded');
+
+      // Återställ ikon
+        var icon = toggleBtn.querySelector('i');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-list-ul');
+      });
+    });
+
+  // Lägg till event listener för att stänga overlay när man klickar på den
+    overlay.addEventListener('click', function() {
       sidebarContainerMobile.classList.remove('expanded');
       overlay.classList.remove('visible');
       body.classList.remove('no-scroll');
       toggleBtn.classList.remove('expanded');
 
-      // Återställ ikon
+    // Återställ ikon
       var icon = toggleBtn.querySelector('i');
       icon.classList.remove('fa-xmark');
       icon.classList.add('fa-list-ul');
     });
   });
-
-  // Lägg till event listener för att stänga overlay när man klickar på den
-  overlay.addEventListener('click', function() {
-    sidebarContainerMobile.classList.remove('expanded');
-    overlay.classList.remove('visible');
-    body.classList.remove('no-scroll');
-    toggleBtn.classList.remove('expanded');
-
-    // Återställ ikon
-    var icon = toggleBtn.querySelector('i');
-    icon.classList.remove('fa-xmark');
-    icon.classList.add('fa-list-ul');
-  });
-});
 </script>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
