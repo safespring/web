@@ -33,8 +33,9 @@
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
   {{ $js3 := resources.Get "js/ancor-scroll.js" }}
   {{ $js4 := resources.Get "js/text-balancer.js" }}
-  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3 $js4) | minify | fingerprint }}
+  {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js2 $js3 $js4) | minify | fingerprint }}
 
+  <script src="{{ $js1.RelPermalink }}" ></script>
   <script src="{{ $scripts.RelPermalink }}" defer></script>
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
