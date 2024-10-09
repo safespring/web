@@ -3,7 +3,7 @@ title: "Safespring’s Role in the European Open Science Cloud (EOSC): Deliverin
 metatitle: "Safespring & EOSC: Empowering Open Science with Cloud Infrastructure Solutions"
 cardtitle: "Safespring for Research & Education"
 card: "safespring_card_11.svg"
-date: 2024-10-10
+date: 2024-10-09
 draft: false
 intro: "Discover Safespring’s vital role in the European Open Science Cloud (EOSC) initiative, providing managed compute, containers, data transfer, and file synchronization services to support open science and research collaboration across Europe."
 background: "safespring-akademisk-sektor-2024.webp"
@@ -13,6 +13,9 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "En"
+aliases:
+    - /eosc
+    - /EOSC
 ---
 
 {{< ingress >}}
