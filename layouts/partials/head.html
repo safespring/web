@@ -18,10 +18,7 @@
 <link rel="preload" href="/fonts/Safespring-Mono-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Safespring-Mono-MediumItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Safespring-Mono-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="/fonts/Safespring-Mono-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  {{ $css2 := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
-  {{ $css3 := resources.Get "css/solid.min.css" | minify | fingerprint }}
-  {{ $css4 := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}-->
+<link rel="preload" href="/fonts/Safespring-Mono-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">-->
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
