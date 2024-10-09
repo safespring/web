@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}sv{{end}}'>
+<html lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.language "No"}}no{{else}}sv{{end}}'>
 <head>
   <!-- Site Title changes according to current page . -->
   <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
@@ -21,9 +21,9 @@
 <link rel="preload" href="/fonts/Safespring-Mono-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   {{ $css2 := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
   {{ $css3 := resources.Get "css/solid.min.css" | minify | fingerprint }}
-  {{ $css4 := resources.Get "css/custom-icons.min.css" | rminify | fingerprint }}-->
+  {{ $css4 := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}-->
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
-  
+
   <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
   <!--<link rel="stylesheet" href="{{ $css2.RelPermalink }}">
   <link rel="stylesheet" href="{{ $css3.RelPermalink }}">
