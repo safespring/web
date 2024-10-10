@@ -19,15 +19,11 @@
 <link rel="preload" href="/fonts/Safespring-Mono-MediumItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Safespring-Mono-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Safespring-Mono-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">-->
+
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
-  {{ $css2 := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
-  {{ $css3 := resources.Get "css/solid.min.css" | minify | fingerprint }}
-  {{ $css4 := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css2.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css3.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css4.RelPermalink }}">
+  <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>
 
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
