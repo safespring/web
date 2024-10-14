@@ -1,5 +1,5 @@
 ---
-section: "OCRE – Safespring"
+section: "OCRE IaaS+ 2024"
 language: "En"
 title: "Géant Price List and Calculator"
 date: "2023-12-01"
@@ -16,6 +16,8 @@ sidebarlinkname2: "Service Catalogue"
 sidebarlinkurl2: "/geant/service-catalogue/"
 noindex: "x"
 ---
+
+All prices are in EUR, excluding VAT. For pricelists with other currencis, please [download the price list in excel](/pricelist/geant/geant_safespring_pricelist.xlsx) format.
 
 ## Safespring Compute
 
@@ -176,7 +178,7 @@ See support alternatives in the [service catalogue](/service-catalogue/support/)
 | Product ID       | Description                                                  | Billing per  | Monthly               |
 |------------------|--------------------------------------------------------------|--------------|-----------------------|
 | SUPPORT-base     | Support for Safespring's services                            | N/A          | 0,00 €                |
-| SUPPORT-standard | Access to chat room with support and engineering             | Total volume | 3 % of total volume [^5] |
+| SUPPORT-standard | Access to chat room with support and engineering             | Total volume | 3 % of total volume [5] |
 | SUPPORT-premium  | Dedicated Service Manager with quarterly operations meetings | Month        | 2 140,00 €            |
 
 <!--### Consulting Services
