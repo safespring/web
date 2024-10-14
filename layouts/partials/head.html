@@ -22,11 +22,11 @@
 
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
-  <!--<link rel="stylesheet" href="{{ $css1.RelPermalink }}">-->
-  <!--<script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>-->
+  <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
+  <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>
 
   <!-- Scripts -->
-  {{ $js1 := resources.Get "js/safespring-cookie-consent.js" }}
+  {{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
   {{ $js3 := resources.Get "js/ancor-scroll.js" }}
   {{ $js4 := resources.Get "js/text-balancer.js" }}
