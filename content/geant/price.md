@@ -11,7 +11,7 @@ intro: "Together we create a safer, and more cost-effective digital infrastructu
 toc: "On this page"
 nosidebar: ""
 sidebarlinkname: "Download price list"
-sidebarlinkurl: "/pricelist/geant/sweden_oip_safespring_mr5.xlsx"
+sidebarlinkurl: "/pricelist/geant/geant_safespring_pricelist.xlsx"
 sidebarlinkname2: "Service Catalogue"
 sidebarlinkurl2: "/geant/service-catalogue/"
 noindex: "x"
