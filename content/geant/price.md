@@ -17,7 +17,7 @@ sidebarlinkurl2: "/geant/service-catalogue/"
 noindex: "x"
 ---
 
-All prices are in EUR, excluding VAT. For pricelists with other currencis, please [download the price list in excel](/pricelist/geant/geant_safespring_pricelist.xlsx) format.
+All prices are in EUR, excluding VAT. For price lists in other currencies, please [download the price list in Excel format](/pricelist/geant/geant_safespring_pricelist.xlsx).
 
 ## Safespring Compute
 
