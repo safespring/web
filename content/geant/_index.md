@@ -1,5 +1,5 @@
 ---
-title: "Géant documentation"
+title: "Gèant documentation"
 section: "Safespring Cloud Platform"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
 date: "2024-10-10"
