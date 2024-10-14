@@ -1,6 +1,6 @@
 ---
 title: "Géant Service Catalogue"
-section: "OCRE – Safespring"
+section: "OOCRE IaaS+ 2024"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
 date: "2024-10-10"
 draft: false
