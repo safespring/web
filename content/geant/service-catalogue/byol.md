@@ -40,12 +40,11 @@ Software vendors with commercial support with known permissibility terms are lis
 |------------------|----------------------------------------------|
 |     Adobe        |     Adobe Creative Suite                     |
 |     Mathworks    |     Matlab                                   |
-|     Microsoft    |     Windows Server, SQL Server,   Windows *  |
+|     Microsoft    |     Windows Server, SQL Server,   Windows [^1]]  |
 |     Oracle       |     Oracle Database                          |
 |     Red Hat      |     Red Hat Enterprise Linux                 |
 |     SUSE         |     SUSE Enterprise Linux                    |
 
-*Currently possible with Software Assurance or Subscription
 
 Safespring does not restrict in any way what software customers use, other than via its [Acceptable Use Policy](/documents/safespring-acceptable_use_policy.pdf). This means that any Linux distribution that can run on x86 platforms on a standard modern KVM hypervisor is technically supported, including essentially all community editions.
 
@@ -54,3 +53,5 @@ Safespring does not restrict in any way what software customers use, other than 
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}
+
+[^1]: Currently possible with Software Assurance or Subscription

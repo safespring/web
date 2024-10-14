@@ -176,7 +176,7 @@ See support alternatives in the [service catalogue](/service-catalogue/support/)
 | Product ID       | Description                                                  | Billing per  | Monthly               |
 |------------------|--------------------------------------------------------------|--------------|-----------------------|
 | SUPPORT-base     | Support for Safespring's services                            | N/A          | 0,00 €                |
-| SUPPORT-standard | Access to chat room with support and engineering             | Total volume | 3 % of total volume 5 |
+| SUPPORT-standard | Access to chat room with support and engineering             | Total volume | 3 % of total volume [^5] |
 | SUPPORT-premium  | Dedicated Service Manager with quarterly operations meetings | Month        | 2 140,00 €            |
 
 <!--### Consulting Services
