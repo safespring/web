@@ -1,5 +1,5 @@
 ---
-section: "OCRE – Safespring"
+section: "OCRE IaaS+ 2024"
 language: "En"
 title: "Géant Price List and Calculator"
 date: "2023-12-01"
@@ -8,7 +8,7 @@ tags: ""
 showthedate: false
 pageimage: ""
 intro: "Together we create a safer, and more cost-effective digital infrastructure."
-toc: "On this page"
+toc: "Price list"
 nosidebar: ""
 sidebarlinkname: "Download price list"
 sidebarlinkurl: "/pricelist/geant/geant_safespring_pricelist.xlsx"
@@ -16,6 +16,10 @@ sidebarlinkname2: "Service Catalogue"
 sidebarlinkurl2: "/geant/service-catalogue/"
 noindex: "x"
 ---
+
+{{% note "Information" %}}
+All prices are in EUR, excluding VAT. For price lists in other currencies, please [download the price list in Excel format](/pricelist/geant/geant_safespring_pricelist.xlsx).
+{{% /note %}}
 
 ## Safespring Compute
 
