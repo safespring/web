@@ -1,5 +1,5 @@
 ---
-title: "Gèant Service Catalogue"
+title: "Géant Service Catalogue"
 section: "Cloud Platform"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
 date: "2024-10-10"

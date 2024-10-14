@@ -1,6 +1,6 @@
 ---
-title: "Gèant documentation"
-section: "Safespring Cloud Platform"
+title: "Géant documentation"
+section: "OCRE – Safespring"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
 date: "2024-10-10"
 draft: false

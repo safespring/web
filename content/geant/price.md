@@ -1,7 +1,7 @@
 ---
 section: "OCRE – Safespring"
 language: "En"
-title: "Gèant Price List and Calculator"
+title: "Géant Price List and Calculator"
 date: "2023-12-01"
 draft: false
 tags: ""
