@@ -25,7 +25,7 @@ Infrastructure as a service can run on an open source license or with a Windows 
 
 ### Flavors with local NVMe disk
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
-See configurations in the [service catalogue](/geant/service-catalogue/infrastructure/#configurations).
+See configurations for flavors with local NVMe disk in the [service catalogue](/geant/service-catalogue/infrastructure/#configurations).
 
 | Product   ID             | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
 |--------------------------|------|----------|-----------------|--------|----------|
@@ -46,7 +46,7 @@ See configurations in the [service catalogue](/geant/service-catalogue/infrastru
 
 ### Flavors without local disk
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
-See configurations in the [service catalogue](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
+See configurations for flavors without local disk in the [service catalogue](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
 
 | Product ID         | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
 |--------------------|------|----------|-----------------|--------|----------|
@@ -80,7 +80,7 @@ See configurations in the [service catalogue](/geant/service-catalogue/infrastru
 Contact us for discounts on larger storage quantities. Pricing model based on the number of stored TB per month.
 {{< /ingress >}}
 
-See configurations in the [service catalogue](/geant/service-catalogue/storage/#configurations).
+See configurations for object storage in the [service catalogue](/geant/service-catalogue/storage/#configurations).
 
 | Product ID | Per TB for 30 days |
 |------------|--------------------|
@@ -99,7 +99,7 @@ Cloud backup solution for on-prem or cloud servers based on Spectrum Protect (TS
 
 Safespring Backup offers data reduction technology[^1] in the service which typically reduces the data volume between 45%-90%. The price is set per protected GB on the client and per stored GB in the service after deduplication and compression. Additionally, 1TB is included in the fixed monthly price for BAAS-small.
 
-See configurations in the [service catalogue](/geant/service-catalogue/backup/#configurations).
+See configurations for backup in the [service catalogue](/geant/service-catalogue/backup/#configurations).
 
 {{% accordion title="Which plan is best?" %}}
 
@@ -128,7 +128,7 @@ Safespring offers various software and licenses that can run on top of Safesprin
 
 ### Network
 Safespring offers several network services.  
-See configurations in the [service catalogue](/geant/service-catalogue/network/).
+See network alternatives in the [service catalogue](/geant/service-catalogue/network/).
 
 | Product ID   | Type                       | Description                             | Billing per | Monthly  |
 |--------------|----------------------------|-----------------------------------------|-------------|----------|
@@ -142,7 +142,7 @@ See configurations in the [service catalogue](/geant/service-catalogue/network/)
 
 ### Software and Licenses
 Safespring offers several software and licenses.  
-See configurations in the [service catalogue](/geant/service-catalogue/third-party-software-licenses/).
+See third-party software licenses in the [service catalogue](/geant/service-catalogue/third-party-software-licenses/).
 
 | Product ID        | Description                     | Billing per | Monthly  |
 |-------------------|---------------------------------|-------------|----------|
@@ -171,7 +171,7 @@ We offer complete management of your Kubernetes environments, including regulato
 Support applies to Safespring Compute, Safespring Storage and Safespring Backup.
 {{< /ingress >}}
 
-See configurations in the [service catalogue](/service-catalogue/support/).
+See support alternatives in the [service catalogue](/service-catalogue/support/).
 
 | Product ID       | Description                                                  | Billing per  | Monthly               |
 |------------------|--------------------------------------------------------------|--------------|-----------------------|
@@ -194,7 +194,7 @@ Access our experienced consultants and project managers to optimize your cloud i
 
 ### Educations
 Safespring offers several courses in IaaS and cloud services.  
-See configurations in the [service catalogue](/geant/service-catalogue/courses/).
+Read the course descriptions in the [service catalogue](/geant/service-catalogue/courses/).
 
 | Product ID                  | Description                                     | Duration  | Billing per | Price      |
 |-----------------------------|-------------------------------------------------|-----------|-------------|------------|
