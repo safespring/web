@@ -18,7 +18,7 @@ noindex: "x"
 ---
 
 {{% note "Information" %}}
-All prices are in EUR, excluding VAT. For price lists in other currencies, please [download the price list in Excel format](/pricelist/geant/geant_safespring_pricelist.xlsx).
+All prices are in EUR, excluding VAT. For a combined price list in SEK, NOK, EUR and DKR, please [download the price list in Excel format](/pricelist/geant/geant_safespring_pricelist.xlsx).
 {{% /note %}}
 
 ## Safespring Compute
@@ -27,9 +27,9 @@ All prices are in EUR, excluding VAT. For price lists in other currencies, pleas
 Infrastructure as a service can run on an open source license or with a Windows license.
 {{< /ingress >}}
 
-### Flavors with local NVMe disk
+### Flavors with local NVMe storage
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
-See configurations for flavors with local NVMe disk in the [service catalogue](/geant/service-catalogue/infrastructure/#configurations).
+See configurations for flavors with local NVMe storage in the [service catalogue](/geant/service-catalogue/infrastructure/#configurations).
 
 | Product   ID             | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
 |--------------------------|------|----------|-----------------|--------|----------|
@@ -48,9 +48,9 @@ See configurations for flavors with local NVMe disk in the [service catalogue](/
 | FLAVOR-l2. c16 r64. 500  | 16   | 64       | 500             | 0,66 € | 471,70 € |
 | FLAVOR-l2. c32 r64. 1000 | 32   | 64       | 1 000           | 0,88 € | 630,12 € |
 
-### Flavors without local disk
+### Flavors without local storage
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
-See configurations for flavors without local disk in the [service catalogue](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
+See configurations for flavors without local storage in the [service catalogue](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
 
 | Product ID         | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
 |--------------------|------|----------|-----------------|--------|----------|
