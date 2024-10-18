@@ -41,7 +41,7 @@ Genom att använda NVMe-lagring för etcd förbättras prestanda och tillförlit
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys Compliant Kubernetes" %}}
+{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys applikation Welkin" %}}
 Rob McCuaig delar insikter om Elastisys samarbete med Safespring och vikten av databehandling inom EU. 
 
 {{< 2calltoaction "Läs Use Case" "/tjanster/case/elastisys" "Mer om tjänsten" "/tjanster/compliant-kubernetes">}}
@@ -65,4 +65,6 @@ Sammanfattningsvis har Safespring en effektiv nätverksstack, en skalbar nätver
 
 Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret. 
 
-{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Kör Kubernetes som en tjänst. Med omfattande säkerhetsmekanismer är Compliant Kubernetes en helhetslösning för säker hantering av ert behov av Kubernetes." cardtitle="Compliant Kubernetes som managerad tjänst på Safespring" linktext="Kom igång!" link="/tjanster/compliant-kubernetes/" >}}{{< /custom-card >}}
+{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Kör Kubernetes som en tjänst. Med omfattande säkerhetsmekanismer är Welkin en helhetslösning för säker hantering av ert behov av Kubernetes." cardtitle="Welkin som managerad tjänst på Safespring" linktext="Kom igång!" link="/tjanster/compliant-kubernetes/" >}}{{< /custom-card >}}
+
+

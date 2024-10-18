@@ -24,11 +24,11 @@ aliases:
 What makes the collaboration between Elastisys and Safespring so powerful? Rob McCuaig, COO at Elastisys, provides insight into a partnership focused on efficiency, mutual trust, and a belief in storing data exclusively within the EU.
 {{< /ingress >}}
 
-By offering compliance-adapted Kubernetes solutions on Safespring’s infrastructure, Elastisys creates customer experiences where users never have to worry about information security.
+By offering Welkin, a compliance-adapted Kubernetes solution on Safespring’s infrastructure, Elastisys creates customer experiences where users never have to worry about information security.
 
 Rob McCuaig is the COO of the Swedish Elastisys and here, he talks more about the collaboration with Safespring.
 
-## With Compliant Kubernetes, the customer can focus on their own development
+## With Welkin, the customer can focus on their own development
 Elastisys delivers Kubernetes solutions to customers who need to comply with legal requirements such as GDPR. Their platform, Compliant Kubernetes, enables efficient operations where strict compliance and security requirements prevail. This allows their customers to accelerate the development of new applications while meeting the requirements set by laws such as GDPR and the Patient Data Act.
 
 Elastisys has customers spread across Europe, and therefore, they collaborate with various infrastructure providers, but for Swedish customers, they recommend local providers. Rob explains why:

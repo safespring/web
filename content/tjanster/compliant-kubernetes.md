@@ -1,10 +1,10 @@
 ---
-title: "Maximera er produktivitet med Compliant Kubernetes"
+title: "Maximera er produktivitet med Welkin"
 language: "Se"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Upplev kraften i Compliant Kubernetes hanterad av Elastisys på Safesprings infrastruktur."
+intro: "Upplev kraften i Welkin hanterad av Elastisys på Safesprings infrastruktur."
 background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -13,7 +13,7 @@ sidebarlinkurl: "/webinar/kubernetes-15-principles/"
 sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute/"
 sidebarimage: "saas_elastisys.svg"
-sidebartext: " Elastisys Compliant Kubernetes gör det enkelt att skapa kluster med hög regelefterlevnad, medan vi ser till att er infrastruktur är optimerad för era specifika behov."
+sidebartext: " Elastisys Welkin gör det enkelt att skapa kluster med hög regelefterlevnad, medan vi ser till att er infrastruktur är optimerad för era specifika behov."
 ---
 
 {{< icon-block-container >}}
@@ -22,26 +22,26 @@ sidebartext: " Elastisys Compliant Kubernetes gör det enkelt att skapa kluster 
     {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-life-ring" text="Svensk support" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Byggd på Safespring" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}} 
 
 {{< ingress >}}
-Redo att gå över till Compliant Kubernetes? Låt experter från Elastisys ta hand om driften medan ni behåller full kontroll och säkerhet på Safesprings robusta infrastruktur.
+Redo att gå över till Welkin? Låt experter från Elastisys ta hand om driften medan ni behåller full kontroll och säkerhet på Safesprings robusta infrastruktur.
 {{< /ingress >}}
 
-Med Elastisys vid rodret kan vi erbjuda Compliant Kubernetes som en fullständigt hanterad tjänst på Safesprings infrastruktur.
+Med Elastisys vid rodret kan vi erbjuda Welkin som en fullständigt hanterad tjänst på Safesprings infrastruktur.
 
-Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers men också skapare av den öppna Kubernetes-distributionen Compliant Kubernetes. De är dessutom en framstående medlem av Cloud Native-communityn. Vi erbjuder inte bara managerade tjänster men också skräddarsydda utbildningar och konsultationer.
+Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers men också skapare av den öppna Kubernetes-distributionen Welkin. De är dessutom en framstående medlem av Cloud Native-communityn. Vi erbjuder inte bara managerade tjänster men också skräddarsydda utbildningar och konsultationer.
 {{< distance >}}
 
 {{% horisontal-card image="/img/event/cards/safespring-gabriel-lars.jpg" link="/webinar/kubernetes-15-principles/" linktext="Se videoserien" cardtitle="Sju avsnitt om Kubernetes" text="I denna webbserie kommer vi att utforska hur man designar och driftsätter skalbara applikationer på Kubernetes." %}}
 
 ![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-## Varför välja Compliant Kubernetes?
-Kubernetes i sin renaste form är inte säkert. Compliant Kubernetes är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
+## Varför välja Welkin?
+Kubernetes i sin renaste form är inte säkert. Welkin är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
 
-![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
+![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
 ## Bakgrund
 {{< ingress >}}
