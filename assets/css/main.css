@@ -7606,6 +7606,13 @@ section {
 	margin-top:18px !important;
 }
 
+.sectionhighlight {
+	background: linear-gradient(323deg, rgba(60, 155, 205, 1) 0%, rgba(25, 240, 100, 1) 100%);
+    padding: 7px 13px;
+    border-radius: 50px;
+    color: white !important;
+}
+
 .tf-items-container {
 	display:flex;
 	flex-flow:row wrap;
