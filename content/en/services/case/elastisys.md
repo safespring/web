@@ -29,12 +29,12 @@ By offering Welkin, a compliance-adapted Kubernetes solution on Safespring’s i
 Rob McCuaig is the COO of the Swedish Elastisys and here, he talks more about the collaboration with Safespring.
 
 ## With Welkin, the customer can focus on their own development
-Elastisys delivers Kubernetes solutions to customers who need to comply with legal requirements such as GDPR. Their platform, Compliant Kubernetes, enables efficient operations where strict compliance and security requirements prevail. This allows their customers to accelerate the development of new applications while meeting the requirements set by laws such as GDPR and the Patient Data Act.
+Elastisys delivers Kubernetes solutions to customers who need to comply with legal requirements such as GDPR. Their platform, Welkin, enables efficient operations where strict compliance and security requirements prevail. This allows their customers to accelerate the development of new applications while meeting the requirements set by laws such as GDPR and the Patient Data Act.
 
 Elastisys has customers spread across Europe, and therefore, they collaborate with various infrastructure providers, but for Swedish customers, they recommend local providers. Rob explains why:
 
 {{< quote "Rob McCuaig, COO at Elastisys" >}}
-- We saw an early good match between Elastisys and Safespring. We sell Compliant Kubernetes, and Safespring has the infrastructure that allows our many Swedish customers to meet security requirements.
+- We saw an early good match between Elastisys and Safespring. We sell Welkin, and Safespring has the infrastructure that allows our many Swedish customers to meet security requirements.
 {{< /quote >}}
 
 Safespring's platform is completely free from third-party transfers and helps Elastisys - and indirectly their customers - to comply with GDPR. Elastisys uses tools such as Falco and Gatekeeper for the security of Kubernetes clusters and Argo for customers to deploy new versions of their applications quickly and easily, running smoothly on Safespring.

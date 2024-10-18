@@ -1,9 +1,9 @@
 ---
-title: "Compliant Kubernetes on Safespring"
-date: 2021-09-01T13:58:58+01:00
+title: "Welkin on Safespring"
+date: 2024-10-18
 draft: false
 tags: ["English"]
-intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
+intro: "Welkin gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
 form: ""
 sidebarlinkname: ""
 sidebarlinkurl: ""
@@ -36,7 +36,7 @@ If your current environment has passed all audits, DevOps teams must make the ca
 
 Although historically known as hard to set up, getting a Kubernetes cluster up and running today is a few clicks away. Operating it in production with real workloads while handling sensitive user data is still a major challenge though, especially under heavy security requirements or regulatory restrictions.
 
-![Compliant Kubernetes on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
+![Welkin on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
 
 *A process has started to connect Safespring's cloud platform to Sjunet in Sweden.*
 
@@ -44,12 +44,12 @@ In addition to monitoring the clusters 24/7 for both health metrics and suspicio
 
 In essence, the challenge is how to increase software agility through containerization while guaranteeing security and compliance for your business.
 
-Safespring Compliant Kubernetes (CK8s) is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security-hardened configurations and open source components according to best practices. Safespring provides quarterly releases of Compliant Kubernetes - testing and hardening the components, to make sure they adhere to the strict security and regulatory requirements our customers have for their container platforms.
+Elastisys Welkin is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security-hardened configurations and open source components according to best practices. Safespring provides quarterly releases of Welkin - testing and hardening the components, to make sure they adhere to the strict security and regulatory requirements our customers have for their container platforms.
 
-{{% horisontal-card image="/img/card/safespring-compute-icon.svg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is located in secure data centers within the EU and doesn't get affected by foreign laws like CLOUD Act or FISA 702." %}}
+{{% horisontal-card image="/img/card/safespring-compute-icon.svg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute is the core of Welkin" text="Our infrastructure service is located in secure data centers within the EU and doesn't get affected by foreign laws like CLOUD Act or FISA 702." %}}
 
-Compliant Kubernetes allows organizations to enjoy the full benefits of Kubernetes while fulfilling regulatory requirements, not only when deploying new clusters but over the whole software development life cycle - software development, composition, and packaging, testing and deployment, as well as operations and audits.
+Welkin allows organizations to enjoy the full benefits of Kubernetes while fulfilling regulatory requirements, not only when deploying new clusters but over the whole software development life cycle - software development, composition, and packaging, testing and deployment, as well as operations and audits.
 
 Due to Cloud Act and other forces that allow foreign entities to access user data, European companies are also more and more migrating their workloads to European providers.
 
-Compliant Kubernetes is available as a managed service in partnership with Safespring, giving you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations.
+Welkin is available as a managed service in partnership with Safespring, giving you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations.

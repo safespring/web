@@ -30,12 +30,12 @@ Ved å tilby Welkin, en compliance-tilpassede Kubernetes-løsning på Safespring
 Rob McCuaig er COO hos Elastisys og her forteller han mer om samarbeidet med Safespring.
 
 ## Med Welkin kan kunden fokusere på egen utvikling
-Elastisys leverer Kubernetes-løsninger til kunder som må oppfylle lovkrav som GDPR. Deres plattform, Compliant Kubernetes, muliggjør effektiv drift der strenge etterlevelses- og sikkerhetskrav er til stede. Dette betyr at deres kunder kan akselerere utviklingen av nye applikasjoner samtidig som de oppfyller kravene som for eksempel GDPR og pasientdataloven stiller.
+Elastisys leverer Kubernetes-løsninger til kunder som må oppfylle lovkrav som GDPR. Deres plattform, Welkin, muliggjør effektiv drift der strenge etterlevelses- og sikkerhetskrav er til stede. Dette betyr at deres kunder kan akselerere utviklingen av nye applikasjoner samtidig som de oppfyller kravene som for eksempel GDPR og pasientdataloven stiller.
 
 Elastisys har kunder over hele Europa og derfor samarbeider de med ulike infrastrukturleverandører, men for norske og svenske kunder anbefaler de Safespring. Rob forklarer hvorfor:
 
 {{< quote "Rob McCuaig, COO hos Elastisys" >}}
-– Vi så tidlig en god match mellom Elastisys og Safespring. Vi selger Compliant Kubernetes, og Safespring har infrastrukturen som gjør det mulig for våre mange norske og svenske kunder å oppfylle sikkerhetskravene.
+– Vi så tidlig en god match mellom Elastisys og Safespring. Vi selger Welkin, og Safespring har infrastrukturen som gjør det mulig for våre mange norske og svenske kunder å oppfylle sikkerhetskravene.
 {{< /quote >}}
 
 Safesprings plattform er helt fri for tredjelands overføringer og hjelper Elastisys – og indirekte deres kunder – med å følge GDPR. Elastisys bruker verktøy som Falco og Gatekeeper for sikkerhetsbeskyttelse av Kubernetes-klustere, samt Argo for at kundene raskt og enkelt kan implementere nye versjoner av sine applikasjoner, noe som kjører smidig på Safespring.
