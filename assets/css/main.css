@@ -7717,9 +7717,9 @@ margin-bottom:2rem;
 }
 
 .icon::before {
-	display:inline-block;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*.headline-and-badge {
