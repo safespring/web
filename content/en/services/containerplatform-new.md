@@ -14,7 +14,8 @@ date: 2024-09-06
 draft: false
 intro: "Explore Safespring’s highly scalable, multitenant Kubernetes platform, designed for SaaS, research, and public sector organizations needing cost-effective, high-performance container management with EU-based security and compliance."
 background: ""
-toplogo: ""
+sidebarlinkname: "Join the Beta Program"
+sidebarlinkurl: "#interested-in-trying-out-the-platform"
 showthedate: false
 banner: "blue-hover-tech"
 language: "En"
@@ -57,7 +58,10 @@ Safespring Container Platform is a flexible, secure, and high-performance soluti
 
 By managing the IaaS and PaaS layers, we empower you to focus on developing and deploying your applications, with Safespring taking care of the infrastructure and compliance.
 
-{{< distance >}}
+
+## Interested in Trying Out the Platform?
+
+Join our beta program and explore the full functionality of the Safespring Container Platform as it launches! We’re excited to onboard our first beta users in early 2025. Be among the first to experience a powerful, scalable, and secure environment tailored for your needs.
 
 {{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Contact us" %}}
 Have questions about our Managed Kubernetes Platform? Contact us for in-depth technical information and personalized guidance.
