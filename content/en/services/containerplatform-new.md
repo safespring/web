@@ -22,7 +22,7 @@ language: "En"
 ---
 
 {{< ingress >}}
-Safespring's Container Platform is a multitenant Kubernetes service built on our powerful compute infrastructure, optimized for fast, reliable, and secure containerized applications. 
+    Safespring's Container Platform is a multitenant Kubernetes service built on our powerful compute infrastructure, optimized for fast, reliable, and secure containerized applications. 
 {{</ ingress >}}
 
 Designed with scalability, compliance, and affordability in mind, our platform supports cloud-native applications in a secure, EU-sovereign environment.
@@ -59,7 +59,7 @@ Safespring Container Platform is a flexible, secure, and high-performance soluti
 By managing the IaaS and PaaS layers, we empower you to focus on developing and deploying your applications, with Safespring taking care of the infrastructure and compliance.
 
 
-## Interested in Trying Out the Platform?
+## Interested in trying out the platform?
 
 Join our beta program and explore the full functionality of the Safespring Container Platform as it launches! We’re excited to onboard our first beta users in early 2025. Be among the first to experience a powerful, scalable, and secure environment tailored for your needs.
 
