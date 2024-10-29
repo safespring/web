@@ -5,7 +5,7 @@ cardtitle: "Container Platform"
 cardintro: "Lightning-fast NVMe storage and optimized network design tailored for containers."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
-cardorder: "3"
+cardorder: ""
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
