@@ -39,7 +39,7 @@ Designed with scalability, compliance, and affordability in mind, our platform s
 
 Our compliant Kubernetes Platform, powered by Safespring Compute, allows you to deploy, scale, and manage cloud-native applications easily, all within a cost-efficient multi-tenant environment. Ideal for SaaS providers, research institutions, and public sector entities, Safespring's infrastructure combines scalability, security, and sovereignty under EU jurisdiction.
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Individual Sizable Namespace/Project" description="Start with a small namespace and grow to full clusters as your requirements increase." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Start with a single namespace" description="Start with a dedicated project of just one namespace that can scale to multiple as your needs grow, from small setups to full clusters." >}}
 {{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Cloud native" description="Scale your cloud native application as your business grows with competitive, pay-as-you-go pricing." >}}
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Secure & Compliant" description="Safeguard data with full compliance to EU security and jurisdictional requirements." >}}
 
@@ -56,7 +56,6 @@ Safespring Container Platform is a flexible, secure, and high-performance soluti
 - **Comming 2026: Integration**: Support for streamlining DevOps practices by automating application provisioning, as well as support for monitoring and logging.
 
 By managing the IaaS and PaaS layers, we empower you to focus on developing and deploying your applications, with Safespring taking care of the infrastructure and compliance.
-
 
 ## Interested in trying out the platform?
 
