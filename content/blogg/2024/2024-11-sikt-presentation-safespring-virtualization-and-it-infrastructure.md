@@ -1,9 +1,9 @@
 ---
 title: "A Future-Ready IT Infrastructure for the Higher Education Sector"
 date: 2024-11-21
-intro: "During the recent webinar, “Virtualization and IT Infrastructure in the Higher Education Sector,” I had the opportunity to delve into how automation, open standards, and digital sovereignty can reshape IT operations for universities and colleges."
+intro: "During the recent webinar with SIKT, I had the opportunity to delve into automation, open standards, and digital sovereignty."
 draft: false
-section: "blogg"
+section: "Tech update"
 author: "Jan Ivar Beddari"
 tags: ["English"]
 showthedate: true
