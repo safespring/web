@@ -11,6 +11,7 @@ card: "safespring_card_0.svg"
 eventbild: ""
 socialmediabild: ""
 language: "En"
+toc: "In this post"
 ---
 
 {{< ingress >}}
@@ -56,7 +57,8 @@ A university was managing an application with five servers for about 100 users, 
 By leveraging Safespring’s API ecosystem, we helped them:
 - Automate the deployment of test and production environments.
 - Establish robust access controls and backup routines.
-- Build a scalable solution that could grow with their needs—whether they stayed small or expanded dramatically.
+- Build a scalable solution that could grow with their needs—whether they stayed small or expanded dramatically.  
+
 {{% /note %}}
 
 {{% note "Scenario 2" %}}
@@ -67,6 +69,7 @@ Safespring delivered:
 - A private S3 storage solution built on open-source Ceph technology.
 - Managed Kubernetes clusters to reduce maintenance burdens.
 - Long-term storage plans to ensure data integrity for over a decade.
+
 {{% /note %}}
 
 ## Starting Your Automation Journey
