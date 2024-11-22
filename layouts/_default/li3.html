@@ -1,12 +1,13 @@
   <div style="max-width: 800px;">
-    <div class="section">
+    <div class="section {{ if .Params.sectionhighlight }}mb-2{{end}}">
       {{ if .Params.toplogo }}
       <img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">
       {{ end }}
-      <a class="" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
+      <a class="{{ if .Params.sectionhighlight }}sectionhighlight{{end}}" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
         {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
       </a>
     </div>
+    {{ if .Params.sectionhighlight }}<div style="margin-bottom: 40px;"></div>{{end}}
     <h1 class="balance-text" style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{else}}var(--main-color){{end}}">
       {{ .Title }}
     </h1>

@@ -1,10 +1,10 @@
 ---
-title: "Maximise Your Productivity with Compliant Kubernetes"
+title: "Maximise Your Productivity with Welkin"
 language: "En"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Experience the power of Compliant Kubernetes managed by Elastisys on Safespring's infrastructure."
+intro: "Experience the power of Welkin managed by Elastisys on Safespring's infrastructure."
 background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -13,7 +13,7 @@ sidebarlinkurl: "/webinar/kubernetes-15-principles/"
 sidebarlinkname2: "Watch demo"
 sidebarlinkurl2: "/demo/compute/"
 sidebarimage: "saas_elastisys.svg"
-sidebartext: "Elastisys Compliant Kubernetes makes it easy to create clusters with high regulatory compliance, while we ensure your infrastructure is optimised for your specific needs."
+sidebartext: "Elastisys Welkin makes it easy to create clusters with high regulatory compliance, while we ensure your infrastructure is optimised for your specific needs."
 ---
 
 {{< icon-block-container >}}
@@ -26,22 +26,22 @@ sidebartext: "Elastisys Compliant Kubernetes makes it easy to create clusters wi
 {{< /icon-block-container >}}
 
 {{< ingress >}}
-Ready to switch to Compliant Kubernetes? Let Elastisys experts manage the operations while you maintain full control and security on Safespring's robust infrastructure.
+Ready to switch to Welkin? Let Elastisys experts manage the operations while you maintain full control and security on Safespring's robust infrastructure.
 {{< /ingress >}}
 
-With Elastisys at the helm, we can offer Compliant Kubernetes as a fully managed service on Safespring's infrastructure.
+With Elastisys at the helm, we can offer Welkin as a fully managed service on Safespring's infrastructure.
 
-Our partner, Elastisys, is not only certified Kubernetes service providers but also creators of the open Kubernetes distribution Compliant Kubernetes. They are also prominent members of the Cloud Native community. We offer not only managed services but also customised training and consultations.
+Our partner, Elastisys, is not only certified Kubernetes service providers but also creators of the open Kubernetes distribution Welkin. They are also prominent members of the Cloud Native community. We offer not only managed services but also customised training and consultations.
 {{< distance >}}
 
 {{% horisontal-card image="/img/event/cards/safespring-gabriel-lars.jpg" link="/webinar/kubernetes-15-principles/" linktext="Watch the video series" cardtitle="Seven Episodes on Kubernetes" text="In this Swedish web series, we will explore how to design and operate scalable applications on Kubernetes." %}}
 
-![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
+![Welkin on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-## Why Choose Compliant Kubernetes?
-Kubernetes in its purest form is not secure. Compliant Kubernetes is tailored to ISO27001 standards, which means it is designed for maximum security and observability from the start.
+## Why Choose Welkin?
+Kubernetes in its purest form is not secure. Welkin is tailored to ISO27001 standards, which means it is designed for maximum security and observability from the start.
 
-![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
+![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
 ## Background
 {{< ingress >}}
@@ -58,4 +58,4 @@ Therefore, Sweden's regions and municipalities set clear requirements that perso
 
 Boost your competitiveness in Europe with the right cloud service and increase your sales.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute: The Foundation for Compliant Kubernetes" text="Our infrastructure service is run in state-of-the-art data centers within the EU, protected from laws like the CLOUD Act or FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute: The Foundation for Welkin" text="Our infrastructure service is run in state-of-the-art data centers within the EU, protected from laws like the CLOUD Act or FISA 702." %}}

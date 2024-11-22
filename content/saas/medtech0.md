@@ -24,14 +24,14 @@ aliases:
 ---
 
 {{< ingress >}}
-Compliant Kubernetes passar bolag som vill att interna utvecklare ska få fokusera på att skapa kundnytta medan den underliggande plattformen är fullt managerad.
+Welkin passar bolag som vill att interna utvecklare ska få fokusera på att skapa kundnytta medan den underliggande plattformen är fullt managerad.
 {{</ ingress >}}
 
 
 ## Stärk ditt team med extern expertis inom DevOps och Kubernetes
-Safespring och Compliant Kubernetes som en driftad helhetslösning.
+Safespring och Welkin som en driftad helhetslösning.
 
-Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Compliant Kubernetes och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
+Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Kraven är att minst tre ingenjörer har erhållit certifieringen "Certified Kubernetes Administrator (CKA)". Bolagets affärsmodell ska klara av att ta emot väldigt stora företagskunder.{{% /tooltip %}} skaparna av den öppna Kubernetes-distributionen Welkin och en aktiv medlem Cloud Native-communityt. Förutom managerade tjänster erbjuder vi kompletterande utbildningar och konsulttjänster.
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">
@@ -43,19 +43,19 @@ Vår partner är certifierade {{% tooltip "Kubernetes service providers" %}}Krav
 <div style="margin-bottom:100px;">
 </div>
 
-### Varför Compliant Kubernetes?
+### Varför Welkin?
 
-Kubernetes är inte säkert out-of-the-box. Compliant Kubernetes designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
+Kubernetes är inte säkert out-of-the-box. Welkin designades utifrån ISO27001 och är en säkerhetshärdad Kubernetes-distribution innehållande de komponenter och konfiguration du behöver för observerbarhet och säkerhet - från dag ett.
 
 {{< localtextbutton text="Utforska källkoden" link="https://compliantkubernetes.io/" >}}
 
-<a href="https://compliantkubernetes.io/">![Compliant Kubernetes on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)</a>
+<a href="https://compliantkubernetes.io/">![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)</a>
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">
 </div>
 
-{{< horisontal-card image="/img/kontakt/stockholm.png" cardtitle="30 min om Compliant Kubernetes" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Skicka in dina frågor till våra kunniga medarbetare på stockholmskontoret så får du snabbt svar." >}}
+{{< horisontal-card image="/img/kontakt/stockholm.png" cardtitle="30 min om Welkin" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Skicka in dina frågor till våra kunniga medarbetare på stockholmskontoret så får du snabbt svar." >}}
 
 <div id="contact"></div>
 <div style="margin-bottom:100px;">

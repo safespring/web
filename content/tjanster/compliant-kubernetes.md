@@ -36,7 +36,7 @@ Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers
 
 {{% horisontal-card image="/img/event/cards/safespring-gabriel-lars.jpg" link="/webinar/kubernetes-15-principles/" linktext="Se videoserien" cardtitle="Sju avsnitt om Kubernetes" text="I denna webbserie kommer vi att utforska hur man designar och driftsätter skalbara applikationer på Kubernetes." %}}
 
-![Compliant Kubernetes on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
+![Welkin on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
 ## Varför välja Welkin?
 Kubernetes i sin renaste form är inte säkert. Welkin är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
@@ -58,4 +58,4 @@ Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifte
 
 Öka din konkurrenskraft inom Europa med rätt molntjänst och öka er försäljning.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute: Grunden för Compliant Kubernetes" text="Vår infrastrukturtjänst drivs i toppmoderna datacenters inom EU, skyddade från lagar som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="Safespring Compute: Grunden för Welkin" text="Vår infrastrukturtjänst drivs i toppmoderna datacenters inom EU, skyddade från lagar som CLOUD Act eller FISA 702." %}}

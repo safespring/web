@@ -1,5 +1,5 @@
 ---
-title: "Trygg behandling av patientdata enligt GDPR: Compliant Kubernetes i svenskt moln"
+title: "Trygg behandling av patientdata enligt GDPR: Welkin i svenskt moln"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Fredric Wallsten som är VD på Safespring har följt lagstiftningen för personuppgifter under lång tid och beskriver de skärpta kraven på mjukvarubolagen inom MedTech i Sverige."

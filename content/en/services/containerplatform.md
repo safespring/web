@@ -1,11 +1,6 @@
 ---
 title: "Run Kubernetes and Open Shift on Optimized Servers"
 language: "En"
-cardtitle: "Container Platform"
-cardintro: "Lightning-fast NVMe storage and optimized network design tailored for containers."
-cardicon: "fa-solid fa-container-storage"
-cardcolor: "#3C9BCD"
-cardorder: "3"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
@@ -40,7 +35,7 @@ Using NVMe storage for etcd improves performance and reliability in the system, 
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys Compliant Kubernetes" %}}
+{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys Welkin" %}}
 Rob McCuaig shares insights into Elastisys' collaboration with Safespring and the importance of data processing within the EU.
 
 {{< 2calltoaction "Read Use Case" "/en/services/case/elastisys" "More about the service" "/en/services/compliant-kubernetes">}}
@@ -64,4 +59,4 @@ In summary, Safespring has an efficient network stack, scalable network implemen
 
 With the strength of Safespring's infrastructure, our partners have built powerful managed services. Let your technicians manage your services and let us focus on the infrastructure and platform layer.
 
-{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Run Kubernetes as a service. With comprehensive security mechanisms, Compliant Kubernetes is a complete solution for securely managing your Kubernetes needs." cardtitle="Compliant Kubernetes as a Managed Service on Safespring" linktext="Get Started!" link="/en/services/compliant-kubernetes/" >}}{{< /custom-card >}}
+{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Run Kubernetes as a service. With comprehensive security mechanisms, Welkin is a complete solution for securely managing your Kubernetes needs." cardtitle="Welkin as a Managed Service on Safespring" linktext="Get Started!" link="/en/services/compliant-kubernetes/" >}}{{< /custom-card >}}
