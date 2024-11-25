@@ -32,7 +32,7 @@ The network design of the IaaS platform is based on L3 (IP) and hardware-based r
 1. Managed SLB (based on BGP and haproxy)
 1. Saferoute / IP-VPN
 1. Bring your own IP prefixes (for large customers)
-1. Reverse DNS names (for large customers, own prefixes)
+1. Reverse DNS Configuration (for large customers, own prefixes)
 
 <table class="width100">
   <thead>
@@ -94,5 +94,6 @@ Safespring manages a Service Load Balancer for customers. It is hosted on a serv
 ## Saferoute
 Safespring provides an MPLS based IP-VPN service with the local NREN allowing separate traffic from regular Internet traffic, such that customers can connect an environment in the Safespring datacenters to their own local infrastructure, e.g. behind firewalls, etc. This product depends on network integration with the local NREN its peers and is not generally available to any customer, but other VPN solutions can be delivered using standard Professional Services instead in those cases.
 
-## Reverse DNS names
-Safespring can configure, on a case-by-case basis, reverse DNS names of its public IP addresses for customers hosting for example SMTP servers or other services where the reverse DNS name (PTR record) is important.
+## Reverse DNS Configuration
+Safespring offers the option to configure reverse DNS names (PTR records) for public IP addresses, tailored to customer needs. This service is particularly relevant for use cases such as hosting SMTP servers or other services where reverse DNS is critical. Requests are evaluated on a case-by-case basis, and we will provide an estimated cost based on the specific requirements.
+
