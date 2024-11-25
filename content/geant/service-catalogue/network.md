@@ -40,8 +40,7 @@ Safespring supports both {{< inline "SAML2" >}} and {{< inline "OIDC" >}} for fe
 - Ingress / Egress traffic controlled by API driven ACL.
 - Managed SLB (based on BGP and haproxy).
 - Bring your own IP prefixes (for large customers).
-- Reverse DNS names (for large customers, own prefixes).
-
+- Reverse DNS Configuration (for large customers, own prefixes).
 
 
 | Product Code | Description                                                    |
@@ -54,14 +53,19 @@ Safespring supports both {{< inline "SAML2" >}} and {{< inline "OIDC" >}} for fe
 | NET-rdns     | Reverse DNS records (PTR)                                      |
 | NET-byoip    | Bring your own IP prefixes                                     |
 
+
 ## Public IP addresses
 Safespring provides public IPv4 and IPv6 addresses to the services. By default, each instance receives one of each.
+
 ## Ingress and egress traffic
 Safespring measures ingress and egress traffic for each customer instance at the network border of each datacenter. Safespring does not bill for ingress or egress traffic. Safespring is directly connected to SUNET, SIKT and NORDUNET networks.
+
 ## Load balancing
 Safespring offers functionality to give the customer means to set up load balancers in the platform. The solution is based on iBGP with anycast routing functionality that enables a secure and stable load balancing solution.
-## Reverse DNS names
-Safespring can configure, on a case-by-case basis, reverse DNS names of its public IP addresses for customers hosting for example SMTP servers or other services where the reverse DNS name (PTR record) is important.
+
+## Reverse DNS Configuration
+Safespring offers the option to configure reverse DNS names (PTR records) for public IP addresses, tailored to customer needs. This service is particularly relevant for use cases such as hosting SMTP servers or other services where reverse DNS is critical. Requests are evaluated on a case-by-case basis, and we will provide an estimated cost based on the specific requirements.
+
 ## Bring your own IP prefix(es)
 Customers can allocate their own IPv4 prefixes to the platform for their own use in the platform (minimum size /24). Safespring configures these prefixes in the platform and announce them to its peers using BGP.
 
