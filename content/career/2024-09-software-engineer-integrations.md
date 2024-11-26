@@ -4,7 +4,7 @@ intro: "Are you a Golang-driven software engineer who is looking for a new chall
 Team: "Product development team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
-draft: false
+draft: true
 date: "2024-09-18"
 sidebarlinkurl: "mailto:marietta@safespring.com"
 sidebarlinkname: "Email your Resume"
