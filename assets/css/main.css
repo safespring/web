@@ -7175,7 +7175,7 @@ padding-left:30px;
 		margin-right:5px;
 		height:150px;
 		width:300px;
-		transition:all 0.5s ease;
+		transition:all ease 0.5s;
 	}
 	.photo-roll img:first-child {
 		-webkit-animation:bannermove 112s linear infinite;
@@ -8436,7 +8436,7 @@ details[open] summary {
 }
 
 .icon-block-link .icon-block{
-	transition:ease .2s;
+	transition:ease .1s;
 }
 
 .icon-block-link {
