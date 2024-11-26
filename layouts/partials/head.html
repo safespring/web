@@ -22,7 +22,8 @@
 
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
-  <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
+  <!--<link rel="stylesheet" href="{{ $css1.RelPermalink }}">-->
+  <link rel="stylesheet" href="{{ $css1.RelPermalink }}" media="print" onload="this.media='all'">
   <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>
 
   <!-- Scripts -->
