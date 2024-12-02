@@ -6,8 +6,8 @@ Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2021-02-05"
-sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
-sidebarlinkname: "Uppload resume"
+sidebarlinkurl: "mailto:marietta@safespring.com"
+sidebarlinkname: "Email your Resume"
 sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
@@ -30,8 +30,6 @@ If you're ready to take your career to the next level, we encourage you to apply
 
 Share some basic information and submit your resume. If there’s a role that might be a good match, an Safespring recruiter will be in touch.
 
-Please send your resume and cover letter as a single PDF to [career@safespring.com](mailto:career@safespring.com), or upload the file by clicking on the button below labeled "Upload resume".
-
-{{% localbutton text="Upload resume" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
+Please send your resume and cover letter as a single PDF to [career@safespring.com](mailto:career@safespring.com)
 
 {{< distance >}}
