@@ -7,7 +7,7 @@ Duration: "Full time"
 draft: false
 date: "2021-02-05"
 sidebarlinkurl: "mailto:marietta@safespring.com"
-sidebarlinkname: "Email your Resume"
+sidebarlinkname: "Send in resume"
 sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
@@ -26,10 +26,15 @@ Our IaaS platform is based on the market-leading OpenStack cloud platform and is
 
 If you're ready to take your career to the next level, we encourage you to apply to join our team at Safespring. We can't wait to see what you can bring to the table.
 
-## Get Discovered
+
+{{% note "Get Discovered" %}}
 
 Share some basic information and submit your resume. If there’s a role that might be a good match, an Safespring recruiter will be in touch.
 
-Please send your resume and cover letter as a single PDF to [career@safespring.com](mailto:career@safespring.com)
+Please send your resume and cover letter as a single PDF.
 
-{{< distance >}}
+{{% localbutton text="Send in Resume" icon="fa-paper-plane" link="mailto:marietta@safespring.com" %}}
+
+.
+
+{{% /note %}}
