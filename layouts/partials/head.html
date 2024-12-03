@@ -23,7 +23,7 @@
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
-  <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" ></script>
 
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
@@ -38,7 +38,8 @@
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'>    
+  <!--<meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'> -->   
+  <meta property="og:image" content="https://www.safespring.com/img/socialmedia/safespring-start.png">
   <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
   <meta property="og:site_name" content="Safespring">
   <meta name="author" content="{{ .Params.author }}">

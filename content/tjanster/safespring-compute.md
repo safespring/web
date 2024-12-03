@@ -11,13 +11,13 @@ date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "Med molntjänster från Safespring får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt från säkra datahallar i Sverige."
 cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, svensk IaaS."
-background: "safespring-compute-background.svg"
+background: ""
 form: "yes"
 sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
-socialmedia: "safespring-compute.jpg"
+socialmedia: ""
 aliases:
     - /compute/
     - /safespring-compute/
