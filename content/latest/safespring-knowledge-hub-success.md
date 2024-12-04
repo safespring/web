@@ -17,3 +17,9 @@ You’re now part of a growing community receiving exclusive updates, insights, 
 {{< icon-block-horisontal icon="fa-solid fa-calendar-alt" color="#3C9BCD" text="Once a month" description="Expect an email from us about once a month, covering everything from industry trends and technical guides to upcoming events and announcements." >}}
 
 {{< icon-block-horisontal icon="fa-solid fa-lightbulb-on" color="#3C9BCD" text="Learn" description="Stay tuned for content designed to empower your decisions and deepen your understanding of digital infrastructure and beyond." >}}
+
+### Safspring in your languge
+
+- [Swedish](/)
+- [Norwegian](/no)
+- [English](/en)
