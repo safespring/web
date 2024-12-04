@@ -1,5 +1,5 @@
 ---
-title: "You are now a subscriber of Safespring Knowledge Hub"
+title: "Thank you for subscribing to Safespring Knowledge Hub!"
 section: "News and content"
 date: 2024-12-03
 draft: false
