@@ -18,8 +18,8 @@ You’re now part of a growing community receiving exclusive updates, insights, 
 
 {{< icon-block-horisontal icon="fa-solid fa-lightbulb-on" color="#3C9BCD" text="Learn" description="Stay tuned for content designed to empower your decisions and deepen your understanding of digital infrastructure and beyond." >}}
 
-### Safspring in your languge
+### Safspring in your own languge
 
-- [Swedish](/)
-- [Norwegian](/no)
-- [English](/en)
+- [Visit the Swedish site](/)
+- [Visit the Norwegian site](/no)
+- [Visit the English site](/en)
