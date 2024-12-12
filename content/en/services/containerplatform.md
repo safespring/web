@@ -1,62 +1,69 @@
 ---
-title: "Run Kubernetes and Open Shift on Optimized Servers"
-language: "En"
-date: 2019-01-07T13:58:58+01:00
+title: "Safespring Container Platform"
+section: "Available late 2025"
+sectionhighlight: "x"
+cardtitle: "Container Platform"
+cardintro: "Kubernetes management with built-in scalability and robust platform security."
+cardicon: "fa-solid fa-container-storage"
+cardcolor: "#3C9BCD"
+cardorder: "3"
+metatitle: "Safespring Managed Kubernetes Platform: Fast, Secure, and Scalable Cloud Solutions"
+card: "safespring_card_12.svg"
+date: 2024-12-12
 draft: false
-section: "Public Cloud"
-intro: "Lightning-fast NVMe storage and optimized network design tailored for containers. Manage them yourself or buy as a managed service."
-background: "safespring-kubernetes-background.svg"
-card: ""
-socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: "Watch demo"
-sidebarlinkurl: "/demo/compute/"
-sidebarlinkname2: "Prices"
-sidebarlinkurl2: "/en/price/"
+intro: "Explore Safespring’s highly scalable, Kubernetes cloud platform, designed for SaaS, research, and public sector organizations needing cost-effective, high-performance container management with EU-based security and compliance."
+background: ""
+sidebarlinkname: "Join the Beta Program"
+sidebarlinkurl: "#interested-in-trying-out-the-platform"
+showthedate: false
+banner: "blue-hover-tech"
+language: "En"
 ---
 
+{{< ingress >}}
+    Safespring's Container Platform is a Managed Kubernetes service built on our powerful compute infrastructure, optimized for fast, reliable, and secure containerized applications. 
+{{</ ingress >}}
+
+Designed with scalability, compliance, and affordability in mind, our platform supports cloud-native applications in a secure, EU-sovereign environment.
+
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP for Load Balancers" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-kit fa-nvme" text="Fast Local Disk for ETCD" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-api" text="Powerful Automation" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-network-wired" text="Stable Network" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-cubes" text="Based on CNCF projects" link="" color="#195F8C">}}
+    {{< icon-block icon="fak fa-safespring-icon" text="Powered by Safespring Compute" link="/en/services/compute/" color="#417DA5">}}
+    {{< icon-block icon="fas fa-sparkles" text="GPU for ML and AI" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-sync" text="Dynamic Scalability" link="" color="#32CD32">}}
+    {{< icon-block icon="fas fa-forward" text="Quick start, Low entry point " link="" color="#FA690F">}}
+    {{< icon-block icon="fa-kit fa-eu-flag" text="Jurisdictional Security" link="/en/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
-## Powerful Virtual Servers with NVMe
+## Safespring Container Platform: <br>Open, Sovereign, and Flexible
 
-{{< ingress >}}
-NVMe is a high-speed storage interface offering faster access times and lower latency compared to traditional storage technologies.
-{{< /ingress >}}
+Our compliant Kubernetes Platform, powered by Safespring Compute, allows you to deploy, scale, and manage cloud-native applications easily, all within a cost-efficient environment. Ideal for SaaS providers, research institutions, and public sector entities, Safespring's infrastructure combines scalability, security, and sovereignty under EU jurisdiction.
 
-It's an excellent choice for use in etcd, a distributed and consistent key-value store that's fundamental to Kubernetes. Etcd is used to store data across a cluster of machines and is useful for storing and retrieving configuration data, service coordination, and storing metadata.
-
-Using NVMe storage for etcd improves performance and reliability in the system, enabling it to handle large amounts of data and traffic with ease while supporting Kubernetes' powerful container management.
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Start with a single namespace" description="Start with a dedicated project of just one namespace that can scale to multiple as your needs grow, from small setups to full clusters." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Cloud native" description="Scale your cloud native application as your business grows with competitive, pay-as-you-go pricing." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Secure & Compliant" description="Safeguard data with full compliance to EU security and jurisdictional requirements." >}}
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys Welkin" %}}
-Rob McCuaig shares insights into Elastisys' collaboration with Safespring and the importance of data processing within the EU.
+## Why Choose Safespring Container Platform?
 
-{{< 2calltoaction "Read Use Case" "/en/services/case/elastisys" "More about the service" "/en/services/compliant-kubernetes">}}
+Safespring Container Platform is a flexible, secure, and high-performance solution tailored to organizations with strict compliance requirements and evolving needs. Whether you're deploying microservices, CI/CD workflows, or data-heavy applications, Safespring’s Container platform provides:
+
+- **Dynamic Scalability**: Start with a small namespace and grow to full clusters as your requirements increase.
+- **Cost-Effective Pricing**: Our platform allows you to scale cost-efficiently with flexible pay-as-you-go options.
+- **High Performance**: Built on Safespring Compute, the platform guarantees reliable, low-latency infrastructure for uninterrupted operations.
+- **EU Compliance & Security**: Enjoy GDPR-compliant infrastructure with digital sovereignty for sensitive workloads.
+- **Comming 2026: Integration**: Support for streamlining DevOps practices by automating application provisioning, as well as support for monitoring and logging.
+
+By managing the IaaS and PaaS layers, we empower you to focus on developing and deploying your applications, with Safespring taking care of the infrastructure and compliance.
+
+## Interested in trying out the platform?
+
+Join our beta program and explore the full functionality of the Safespring Container Platform as it launches! We’re excited to onboard our first beta users in early 2025. Be among the first to experience a powerful, scalable, and secure environment tailored for your needs.
+
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Contact us" %}}
+Have questions about our Managed Kubernetes Platform? Contact us for in-depth technical information and personalized guidance.
+
+{{< inline "Call" >}} [+46 855 10 73 70](tel:+46855107370)  
+{{< inline "Mail" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}
-
-{{< distance >}}
-
-## Safespring's Network Model is Optimal for Container Platforms
-
-Safespring is a product that offers an efficient and highly available network stack using BGP (Border Gateway Protocol). This enables Safespring to offer efficient load balancing using Equal cost multipath routing and Elastic IP (ECMP).
-
-Another advantage of Safespring is its scalable network implementation, where there are no central control nodes. This makes the network more robust and reliable.
-
-Safespring also offers Layer 3 IP-to-IP connectivity, which means there's the possibility for a direct connection between two IP addresses. This makes it easier to build a robust network solution without a "single point of failure."
-
-Thanks to Elastic IP, Safespring serves as a base function for building load balancers. Moreover, Safespring provides the tools to build highly available solutions, where there is no single weak point in the network.
-
-In summary, Safespring has an efficient network stack, scalable network implementation, IP-to-IP connectivity, and provides tools for building highly available solutions, making it an attractive product for those looking to build robust and reliable networks.
-
-## Run Kubernetes as a Service on Safespring
-
-With the strength of Safespring's infrastructure, our partners have built powerful managed services. Let your technicians manage your services and let us focus on the infrastructure and platform layer.
-
-{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Run Kubernetes as a service. With comprehensive security mechanisms, Welkin is a complete solution for securely managing your Kubernetes needs." cardtitle="Welkin as a Managed Service on Safespring" linktext="Get Started!" link="/en/services/compliant-kubernetes/" >}}{{< /custom-card >}}
