@@ -1,70 +1,69 @@
 ---
-title: "Skalbarhet med Kubernetes och Open Shift på optimerade servrar"
-metatitle: "Skalbarhet med Kubernetes och Open Shift på optimerade servrar"
-language: "Se"
+title: "Safespring Container Platform"
+section: "Tillgängligt 2025"
+sectionhighlight: "x"
 cardtitle: "Containerplattform"
-cardintro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för containers."
+cardintro: "Kubernetes-hantering med inbyggd skalbarhet och robust plattformsäkerhet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "3"
-date: 2019-01-07T13:58:58+01:00
+metatitle: "Safespring Managed Kubernetes Platform: Snabba, säkra och skalbara molnlösningar"
+card: "safespring_card_12.svg"
+date: 2024-12-12
 draft: false
-section: "Public Cloud"
-intro: "Blixtsnabb NVMe och funktionell nätverksdesign anpassade för cloud native. Hantera dem själv eller köp som managerad tjänst. Robust och driftsäkert nätverk."
-background: "safespring-kubernetes-background.svg"
-card: ""
-socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: "Se demo"
-sidebarlinkurl: "/demo/compute/"
-sidebarlinkname2: "Läs Solution Brief"
-sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
+intro: "Upptäck Safesprings högt skalbara Kubernetes-molnplattform, designad för SaaS, forskning och offentliga sektorn med behov av kostnadseffektiv och högpresterande containerhantering med EU-baserad säkerhet och efterlevnad."
+background: ""
+sidebarlinkname: "Gå med i Beta-programmet"
+sidebarlinkurl: "#intresserad-av-att-testa-plattformen"
+showthedate: false
+banner: "blue-hover-tech"
+language: "Sv"
 ---
 
+{{< ingress >}}
+    Safesprings Containerplattform är en hanterad Kubernetes-tjänst byggd på vår kraftfulla beräkningsinfrastruktur, optimerad för snabba, tillförlitliga och säkra containeriserade applikationer.
+{{</ ingress >}}
+
+Designad med skalbarhet, efterlevnad och prisvärdhet i åtanke, stödjer vår plattform molnbaserade applikationer i en säker, EU-suveren miljö.
+
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP för last­balanserare" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-kit fa-nvme" text="Snabb lokal disk till ETCD" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-api" text="Powerful automation" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-network-wired" text="Stabilt nätverk" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-cubes" text="Baserad på CNCF-projekt" link="" color="#195F8C">}}
+    {{< icon-block icon="fak fa-safespring-icon" text="Drivs av Safespring Compute" link="/sv/tjänster/compute/" color="#417DA5">}}
+    {{< icon-block icon="fas fa-sparkles" text="GPU för ML och AI" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-sync" text="Dynamisk skalbarhet" link="" color="#32CD32">}}
+    {{< icon-block icon="fas fa-forward" text="Snabb start, Låg startkostnad" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk säkerhet" link="/sv/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
-## Kraftfulla virtuella servrar med NVMe
+## Safespring Container Platform: <br>Öppen, Suverän och Flexibel
 
-{{< ingress >}}
-NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency för Kubernetes jämfört med traditionella lagringstekniker. 
-{{< /ingress >}}
+Vår efterlevnadssäkra Kubernetes-plattform, driven av Safespring Compute, låter dig enkelt implementera, skala och hantera molnbaserade applikationer, allt inom en kostnadseffektiv miljö. Perfekt för SaaS-leverantörer, forskningsinstitutioner och offentliga organisationer. Safesprings infrastruktur kombinerar skalbarhet, säkerhet och suveränitet under EU-jurisdiktion.
 
-Din cloud native applikation kommer köra smidigt. NVMe är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata. 
-
-Genom att använda NVMe-lagring för etcd förbättras prestanda och tillförlitlighet i systemet, så att det kan hantera stora mängder data och trafik med lätthet samtidigt som det stödjer Kubernetes kraftfulla containerhantering.
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Börja med ett enskilt namespace" description="Starta med ett dedikerat projekt med bara ett namespace som kan skalas till flera allteftersom dina behov växer, från små uppsättningar till kompletta kluster." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Molnbaserad" description="Skala din molnbaserade applikation när ditt företag växer med konkurrenskraftiga priser som du betalar efter användning." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Säker & Efterlevnadssäker" description="Skydda data med fullständig efterlevnad av EU:s säkerhets- och jurisdiktionskrav." >}}
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys applikation Welkin" %}}
-Rob McCuaig delar insikter om Elastisys samarbete med Safespring och vikten av databehandling inom EU. 
+## Varför välja Safespring Container Platform?
 
-{{< 2calltoaction "Läs Use Case" "/tjanster/case/elastisys" "Mer om tjänsten" "/tjanster/compliant-kubernetes">}}
+Safespring Container Platform är en flexibel, säker och högpresterande lösning som är skräddarsydd för organisationer med strikta efterlevnadskrav och föränderliga behov. Oavsett om du implementerar mikrotjänster, CI/CD-arbetsflöden eller dataintensiva applikationer, erbjuder Safesprings containerplattform:
+
+- **Dynamisk skalbarhet**: Börja med ett litet namespace och väx till kompletta kluster allteftersom dina behov ökar.
+- **Kostnadseffektiv prissättning**: Vår plattform gör det möjligt att skala kostnadseffektivt med flexibla betalningsalternativ efter användning.
+- **Hög prestanda**: Byggd på Safespring Compute, garanterar plattformen tillförlitlig, lågfördröjningsinfrastruktur för obrutna operationer.
+- **EU-efterlevnad och säkerhet**: Njut av GDPR-kompatibel infrastruktur med digital suveränitet för känsliga arbetsbelastningar.
+- **Kommer 2026: Integration**: Stöd för att effektivisera DevOps-praktiker genom att automatisera applikationsdistribution samt stöd för övervakning och loggning.
+
+Genom att hantera IaaS- och PaaS-lagren möjliggör vi att du kan fokusera på att utveckla och distribuera dina applikationer, medan Safespring tar hand om infrastrukturen och efterlevnaden.
+
+## Intresserad av att testa plattformen?
+
+Gå med i vårt beta-program och utforska Safespring Container Platforms fulla funktionalitet när den lanseras! Vi ser fram emot att välkomna våra första beta-användare i början av 2025. Var bland de första att uppleva en kraftfull, skalbar och säker miljö som är skräddarsydd för dina behov.
+
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Kontakta oss" %}}
+Har du frågor om vår hanterade Kubernetes-plattform? Kontakta oss för djupgående teknisk information och personlig vägledning.
+
+{{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  
+{{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}
-
-{{< distance >}}
-
-## Safesprings nätverksmodell är optimal för containerplattformar och cloud native
-
-Safespring är en produkt som erbjuder en effektiv och hög tillgänglig nätverksstack som använder BGP (Border Gateway Protocol). Det här gör att Safespring kan erbjuda en effektiv lastbalansering med hjälp av Equal cost multipath routing och Elastic IP (ECMP).
-
-En annan fördel med Safespring är den skalbara nätverksimplementationen, där det inte finns några centrala kontrollnoder. Det här gör att nätverket är mer robust och driftsäkert.
-
-Safespring erbjuder även IP-till-IP konnektivitet på lager 3, vilket innebär att det finns möjlighet för en direkt koppling mellan två IP-adresser. Detta gör det enklare att bygga en robust nätverkslösning utan "single point of failure".
-
-Tack vare Elastic IP fungerar Safespring som en basfunktion för att bygga lastbalanserare. Dessutom erbjuder Safespring verktygen för att bygga högt tillgängliga lösningar, där det inte finns någon enda svag punkt i nätverket.
-
-Sammanfattningsvis har Safespring en effektiv nätverksstack, en skalbar nätverksimplementation, IP-till-IP konnektivitet och tillhandahåller verktyg för att bygga högt tillgängliga lösningar, vilket gör det till en attraktiv produkt för de som vill bygga robusta och driftsäkra nätverk.
-
-## Kör Kubernetes som en tjänst på Safespring
-
-Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret. 
-
-{{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Kör Kubernetes som en tjänst. Med omfattande säkerhetsmekanismer är Welkin en helhetslösning för säker hantering av ert behov av Kubernetes." cardtitle="Welkin som managerad tjänst på Safespring" linktext="Kom igång!" link="/tjanster/compliant-kubernetes/" >}}{{< /custom-card >}}
-
-
