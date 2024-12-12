@@ -2,7 +2,7 @@
 title: "Run Kubernetes and Open Shift on Optimized Servers"
 language: "En"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 section: "Public Cloud"
 intro: "Lightning-fast NVMe storage and optimized network design tailored for containers. Manage them yourself or buy as a managed service."
 background: "safespring-kubernetes-background.svg"
