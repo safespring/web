@@ -41,7 +41,7 @@ Vår Kubernetes-plattform er bygget på toppen av Safespring Compute og gjør de
 
 {{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Kom i gang raskt" description="Du kan starte forsiktig etter behov. Du kan bruke namespaces og skalere opp prosjekter etterhvert som behovet øker. Vi hjelper deg hele veien, fra små installasjoner til store, ressurskrevende cluster." >}}
 {{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Skybasert" description="Skaler opp applikasjonene dine i takt med at virksomheten din vokser, med konkurransedyktig prising etter bruk." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Sikker & Samsvarende" description="Beskytt lagrede data med full etterlevelse av norske og EU-baserte sikkerhets- og databehandlingskrav." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Sikker & Compliant" description="Beskytt lagrede data med full etterlevelse av norske og EU-baserte sikkerhets- og databehandlingskrav." >}}
 
 {{< distance >}}
 
