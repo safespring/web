@@ -21,8 +21,8 @@ section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
-    - /storage/
-    - /safespring-storage/
+    - /no/storage/
+    - /no/safespring-storage/
 ---
 
 
