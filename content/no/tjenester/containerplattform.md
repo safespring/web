@@ -21,10 +21,10 @@ language: "No"
 ---
 
 {{< ingress >}}
-    Safesprings Containerplattform er en administrert Kubernetes-tjeneste bygget på vår kraftige infrastruktur, optimalisert for raske, pålitelige og sikre containerbaserte applikasjoner.
+Safesprings Containerplattform er en administrert Kubernetes-tjeneste som kan bygges på toppen av Safespring sin infrastruktur i Norge - klar til å gi deg raske, pålitelige og sikre applikasjoner.
 {{</ ingress >}}
 
-Utformet med skalerbarhet, etterlevelse og kostnadseffektivitet i tankene, støtter vår plattform skybaserte applikasjoner i et sikkert, EU-suverent miljø.
+Utformet for skalerbarhet og kostnadseffektivitet, trygt forankret i norske verdier og lovverk, kan vår plattform levere moderne cloud-native applikasjoner på samme måte som de store, globale leverandørene.
 
 {{< icon-block-container >}}
     {{< icon-block icon="fas fa-cubes" text="Basert på CNCF-prosjekter" link="" color="#195F8C">}}
@@ -37,29 +37,29 @@ Utformet med skalerbarhet, etterlevelse og kostnadseffektivitet i tankene, støt
 
 ## Safespring Containerplattform: <br>Åpen, suveren og fleksibel
 
-Vår samsvarende Kubernetes-plattform, basert på Safespring Compute, gjør det enkelt å distribuere, skalere og administrere skybaserte applikasjoner i et kostnadseffektivt miljø. Perfekt for SaaS-leverandører, forskningsinstitusjoner og offentlige virksomheter, kombinerer Safesprings infrastruktur skalerbarhet, sikkerhet og suverenitet under EU-lovgivning.
+Vår Kubernetes-plattform er bygget på toppen av Safespring Compute og gjør det enkelt å administrere, distribuere og skalere cloud-native applikasjoner i et kostnadseffektivt miljø. Perfekt for SaaS-leverandører, forskningsinstitusjoner og offentlige virksomheter, kombinerer Safesprings løsninger skalerbarhet, sikkerhet og suverenitet på en unik måte.
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Start med kun ett enkelt namespace" description="Start med et dedikert prosjekt bestående av kun ett namespace som kan skalere til flere etter hvert som behovene øker, fra små installasjoner til fullstendige klynger." >}}
-{{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Skybasert" description="Skaler din skybaserte applikasjon i takt med at virksomheten din vokser, med konkurransedyktig betaling etter bruk." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Sikker & Samsvarende" description="Beskytt data med full etterlevelse av EUs sikkerhets- og jurisdiksjonskrav." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Kom i gang raskt" description="Du kan starte forsiktig etter behov. Du kan bruke namespaces og skalere opp prosjekter etterhvert som behovet øker. Vi hjelper deg hele veien, fra små installasjoner til store, ressurskrevende cluster." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Skybasert" description="Skaler opp applikasjonene dine i takt med at virksomheten din vokser, med konkurransedyktig prising etter bruk." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Sikker & Samsvarende" description="Beskytt lagrede data med full etterlevelse av norske og EU-baserte sikkerhets- og databehandlingskrav." >}}
 
 {{< distance >}}
 
 ## Hvorfor velge Safespring Containerplattform?
 
-Safespring Containerplattform er en fleksibel, sikker og høytytende løsning tilpasset organisasjoner med strenge etterlevelseskrav og skiftende behov. Enten du distribuerer mikrotjenester, CI/CD-arbeidsflyter eller dataintensive applikasjoner, tilbyr Safesprings Containerplattform følgende:
+Safespring Containerplattform er en fleksibel, sikker og høytytende løsning tilpasset organisasjoner med strenge krav og skiftende behov. Hvis du jobber med distribuerte mikrotjenester, CI/CD-arbeidsflyt eller dataintensive applikasjoner kan Safesprings Containerplattform tilby følgende:
 
-- **Dynamisk skalerbarhet**: Start med ett namespace og utvid til fullskala klynger etter hvert som kravene øker.
+- **Dynamisk skalerbarhet**: Start med et namespace og vokse videre til fullskala cluster etterhvert som kravene øker.
 - **Kostnadseffektiv prissetting**: Plattformen vår muliggjør kostnadseffektiv skalering med fleksible betalingsalternativer.
-- **Høy ytelse**: Bygget på Safespring Compute garanterer plattformen pålitelig infrastruktur med lav forsinkelse for uavbrutt drift.
-- **EU-etterlevelse & sikkerhet**: GDPR-etterlevende infrastruktur med digital suverenitet for arbeidslaster med sensitiv data.
-- **Kommer 2026: Integrasjon**: Støtte for å effektivisere DevOps ved å automatisere applikasjonsprovisjonering, samt støtte for overvåkning og logging.
+- **Høy ytelse**: Bygget på Safespring Compute garanterer plattformen pålitelig infrastruktur med lav forsinkelse og uavbrutt drift.
+- **Lovgivning & sikkerhet**: GDPR-klar infrastruktur med digital suverenitet for arbeidslaster med sensitiv data.
+- **Kommer 2026: Integrasjon**: Plattformstøtte for effektiv DevOps-drift med automatisert applikasjonsprovisjonering, overvåkning og logging.
 
-Safespring håndterer IaaS- og PaaS-lagene, slik at du kun kan fokusere på utvikling og utrulling av applikasjonene dine, mens vi tar oss av infrastruktur og etterlevelse.
+Safespring håndterer IaaS- og PaaS-lagene, slik at du kun kan fokusere på utvikling og utrulling av applikasjoner, mens vi tar oss av infrastruktur og dekker krav gitt av loven.
 
 ## Interessert i å teste plattformen?
 
-Bli med i vårt beta-program og utforsk deler av funksjonaliteten i Safespring Containerplattform før lansering! Vi ser frem til å ønske våre første betatestere velkommen tidlig i 2025. Vær blant de første til å oppleve et kraftfullt, skalerbart og sikkert miljø tilpasset dine behov.
+Bli med i vårt beta-program og utforsk deler av funksjonaliteten i Safespring Containerplattform før lansering! Vi ser frem til å ønske våre første betatestere velkommen tidlig i 2025. Vær blant de første til sammen med oss å bygge et skalerbart og sikkert miljø, tilpasset dine behov og din suverenitet.
 
 {{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Kontakt oss" alt="Petter Hylin på Safespring" %}}
 Har du spørsmål om vår administrerte Kubernetes-plattform? Kontakt oss for dyptgående teknisk informasjon og personlig rådgivning.
