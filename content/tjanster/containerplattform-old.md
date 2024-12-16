@@ -7,7 +7,7 @@ cardintro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 date: 2019-01-07T13:58:58+01:00
-draft: false
+draft: true
 section: "Public Cloud"
 intro: "Blixtsnabb NVMe och funktionell nätverksdesign anpassade för cloud native. Hantera dem själv eller köp som managerad tjänst. Robust och driftsäkert nätverk."
 background: "safespring-kubernetes-background.svg"

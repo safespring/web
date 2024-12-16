@@ -1,88 +1,111 @@
 ---
-title: "Storage er basert på Ceph-lagringsteknologi"
-cardtitle: "Storage"
+title: "Safespring S3: Skalerbar og høyytelses objektlagring"
+language: "No"
+documentation: "Storage"
+cardtitle: "Lagring i stor skala"
 cardicon: "fak fa-safespring-s3"
 cardcolor: "#f4670f"
 cardorder: "2"
-date: 2020-07-06T09:42:10+02:00
+date: 2024-12-13
 draft: false
-intro: "Skybasert lagring tilbys fra sikre datasentre i Norden og bygger på markedsledende Ceph lagringsteknologi."
-cardintro: "Skybasert lagring tilbys fra sikre datasentre i Norden."
+intro: "Skybasert lagring levert fra våre datasentre i Norden, basert på den markedsledende lagringsteknologien Ceph."
+cardintro: "Skybasert lagring for store datavolumer levert fra våre egne datasentre"
 background: "safespring-storage-background.svg"
-form: "no"
-documentation: "Storage"
-sidebarlinkname: "Bestill demo"
-sidebarlinkurl: "/demo/compute/"
-sidebarlinkname2: "Pris för Storage"
+form: "yes"
+sidebarlinkname: "Kom i gang"
+sidebarlinkurl: "#contact"
+sidebarlinkname2: "Pris for Storage"
 sidebarlinkurl2: "/no/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
-language: "No"
-section: "Safespring Storage"
-Language: "No"
+section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
+aliases:
+    - /no/storage/
+    - /no/safespring-storage/
 ---
 
+
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3 Protocol Support" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Encrypted Hard Drives" link="" color="#417DA5">}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-calendar-xmark" text="Immutable Objects" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Offsite Backup" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-coins" text="Cost Effective" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Europeiske sikkerhets­verdier" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-layer-group" text="Skalerbar lagring" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Høy ytelse" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-sync-alt" text="Høy tilgjengelighet" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnadseffektivt" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
-## Safespring lagring som tjeneste
+## S3 Storage – lagring i skyen
 
 {{< ingress >}}
-Safesprings skybaserte lagring bygger på den markedsledende lagringsteknologien Ceph.
+Safespring Storage er en S3-kompatibel objektlagringsløsning utformet for å møte behovene til europeiske organisasjoner. Med fokus på samsvar, skalerbarhet og ytelse gir Safespring Storage et pålitelig grunnlag for dine lagringsbehov.
 {{< /ingress >}}
 
-_Få informasjon om alle tjenestene våre i [servicekatalogen](/service-catalogue) vår._
+Med **datakryptering** kan du beskytte dataene dine med ende-til-ende-kryptering og sikre integritet og konfidensialitet under overføring og lagring. Vår funksjon **objektlåsning** beskytter dine kritiske data mot utilsiktet sletting eller ransomware-angrep ved å gjøre objekter uforanderlige i en spesifisert tidsperiode.
 
-Tjenesten leveres fra sikre datasentre med høy tilgjengelighet. Data forlater aldri Norge, siden datasentrene fysisk ligger her i landet. Data lagres krypterte på harddisker, og tjenesten er fleksibel og fullt automatisert. Brukeren kan selv med få, enkle tiltak skape nye dataområder.
+Skybaserte applikasjoner er avhengige av dataaksess med lav forsinkelse og raske overføringer. Våre **optimerte overføringer** muliggjør effektiv datahåndtering gjennom ytelsesforbedringer som parallelle opplastinger og multipart-overføringer.
 
-Gjennom å velge Safesprings lagring i skyen kan brukeren senke kostnadene for datalagring, frigjøre kapital, forbedre bedriftens fleksibilitet og øke systemenes ytelse. Hittil har fysiske servere tvunget IT-avdelinger til å investere i lagerkapasitet ut ifra forventet, kommende behov.
+I tillegg tilbyr vår løsning enkel integrasjon med eksisterende S3-verktøy og applikasjoner, uten behov for endringer. Med bred applikasjonsstøtte er Safespring Storage kompatibel med populære programmer som Veeam Backup, Nextcloud, Cyberduck og flere.
 
-Med Safespring Storage kan brukeren kjøpe lagring ut ifra det faktiske behov og bruksmønster. Lagring i skyen er raskt å distribuere i organisasjonen: I stedet for å bruke uker og måneder på å bygge opp komplisert infrastruktur, kan brukeren nå kjøpe den nødvendige kapasitet og få tilgang til den innen noen få minutter. Tjenesten kan dessuten skaleres opp eller ned på bakgrunn av de øyeblikkelige krav i din bedrift.
+## Safespring Storage finnes i to versjoner
+Trenger applikasjonen din rask tilgang til lagrede data, eller ser du etter en langsiktig lagringsløsning for sikkerhetskopiering utenfor stedet?
 
+{{< icon-block-horisontal icon="fa-solid fa-rabbit-running" color="#3C9BCD" text="S3 Standardlagring" description="Vår standard S3-tjeneste med lav forsinkelse og høy ytelse. Optimalisert for applikasjoner som krever rask og pålitelig dataaksess." >}}
+{{< icon-block-horisontal icon="fa-solid fa-boxes-packing" color="#3C9BCD" text="S3 Arkivlagring" description="En kostnadseffektiv S3-tjeneste utformet for arkiveringsformål, ideell for å lagre større objekter som skrives én gang og sjelden leses." >}}
 
-### Tjenestehøydepunkter
-- Fleksibel skytjeneste for lagring i tre varianter for å motsvare din bedrifts behov.
-- Data krypteres under transport til datasenter og i form av krypterte harddisker i datasentret.
-- Fakturabasert betaling
-- Enkel å bruke med selvbetjeningsportal
-- Teknisk support 24/7/365
+## Nøkkelfunksjoner
 
-## Faktaark
-Safesprings Lagring som tjeneste (Safespring Storage) er en skytjeneste som er utviklet til å møte de høye krav fra forsknings- og utdannelsessektoren i Norden. Alle data lagres i Safesprings eget datasenter og gir brukeren den nødvendige egenkontroll og sikkerhet.
+1. Ingen trafikkostnad belastes fra tjenesten, det som kalles egress-cost og ingress-cost. Du kan lese mer om denne funksjonen i vår artikkel: [Safespring tar ikke ut noen trafikkavgifter](/blogg/2023/2023-03-egress-cost/).
+1. Safespring Storage prioriterer datasikkerheten din. Med funksjoner som objektlåsning og ACL-er har du full kontroll over dataenes tilgjengelighet og beskyttelse.
+1. Betal kun for lagringen du bruker. Safespring Storage tilbyr [fleksible prismodeller](/no/pris/#safespring-storage-s3) som kan tilpasses dine spesifikke behov, noe som gir kostnadsbesparelser når du skalerer.
+1. Vårt erfarne kundestøtteteam er tilgjengelig for å hjelpe deg med alle spørsmål eller utfordringer, noe som sikrer en smidig Safespring-opplevelse.
 
-Safespring Storage er fleksibel og enkel å bruke, enten via vår selvbetjeningsportal eller med standardkommandoer til tjenestens API som egner seg veldig godt for integrasjon med applikasjoner.
+### Bruksområder
 
-### Nyckelfunktioner
-- Ceph-skyteknologi
-    - Velg mellom tre varianter: Fast, Large eller Active Archive.
-    - Høy nettverksytelse og software-definerte virtuelle nettverk for enkelt å kunne holde trafikken adskilt.
-- Timedebitering
-    - For å håndtere topper eller kortvarig belastning
-    - Rabatt ved bindingstid på ett eller tre år.
-- Stor fleksibilitet for brukeren
-    - Elastisk lagring etter behov.
-- Høy sikkerhet
-    - Rollebasert adgangskontroll til tjenesten. Mulighet for å integrere med eget identitetssystem.
-    - Integrert med SWAMID & FEIDE i utdannelsessektoren.
-    - Data krypteres både under transport (TLS) og i vårt datasenter på krypterte harddisker.
-- Høy tilgjengelighet
-    - Disaster Protection: Data lagres på en annen geografisk lokasjon.
-    - Redundant oppkobling til internett.
-    - Direkte oppkobling til Sunet og Sikt for utdannelsessektoren.
-- Kostnadskontroll
-    - Forutsigbare kostnader gjennom å sette kvoter for brukere og/eller prosjekter.
-    - Fakturabasert betaling
+#### Innholdslagring og distribusjon
 
-### Fordeler
-- Ekte skytjeneste Kapasiteten skaleres både opp og ned etter brukerens behov.
-- Mindre kostnader Ingen behov for investering i hard- eller software.
-- Sparer tid Enkelt å ta i bruk med automatisert installasjon.
-- Sikkert Data er kryptert.
-- Fred i sjelen Daglig offsite-backup og adgang til teknisk support 24/7.
+Lagre og distribuer store mediefiler, dokumenter og andre digitale eiendeler effektivt til ditt globale publikum. Bruk Safespring Storage som en mediaserver for å strømme video over HLS. Safespring bruker våre egne tjenester. [Våre webcasts strømmes fra Safespring Storage](/webinar/).
+
+#### Stordataanalyse
+
+Utnytt Safespring Storage til å lagre store datasett som kreves for analyse- og maskinlæringsapplikasjoner. Les mer om hvordan [SciLifeLab bruker Safespring til forskning innen livsvitenskap](/tjanster/case/scilifelab/.
+
+#### Databackup og gjenoppretting
+
+Vår backup-tjeneste bruker Safespring Storage som grunnlag for å sikre sikkerhetskopiering av dine kritiske data og sikre rask gjenoppretting ved katastrofer eller datatap.
+
+#### Samsvar og arkivering
+
+Oppfyll regulatoriske krav ved å lagre og arkivere data sikkert med uforanderlighet og revisjonsmuligheter.
+
+## Kom i gang med våre konfigurasjonsguider
+
+{{< icon-block-small-container >}}
+    {{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/s3fs" color="#32cd32">}}
+    {{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/cloudberry" color="#417DA5">}}
+    {{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/cyberduck" color="#3C9BCD">}}
+    {{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/duck-cli" color="#3C9BCD">}}
+    {{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/minio-client" color="#FA690F">}}
+    {{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/aws-cli" color="#32cd32">}}
+    {{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/nextcloud-s3" color="#32cd32">}}
+{{< /icon-block-small-container >}}
+
+## Ofte stilte spørsmål
+
+{{% question question="Hva er objektlåsning og hvordan beskytter det dataene mine?" %}}
+Objektlåsning er en funksjon som gjør objekter uforanderlige i en angitt tidsperiode og forhindrer at de slettes eller overskrives. Dette beskytter dataene dine mot utilsiktet sletting og ransomware-angrep.
+{{% /question %}}
+
+{{% question question="Er Safespring Storage kompatibelt med mine eksisterende S3-verktøy?" %}}
+Ja, Safespring Storage er fullt S3-kompatibelt, slik at du kan bruke dine eksisterende verktøy og applikasjoner uten endringer.
+{{% /question %}}
+
+{{< distance >}}
+
+{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Kontakt oss i dag" alt="Kontakt Safespring" %}}
+Oppdag det fulle potensialet i dataene dine med Safespring Storage. Vårt team er klart til å hjelpe deg med å finne den perfekte lagringsløsningen for virksomhetens behov.
+
+[hello@safespring.com](mailto:hello@safespring.com)
+{{% /custom-card %}}
+
+{{< accordion-script >}}
