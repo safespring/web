@@ -1,14 +1,14 @@
 ---
-Title: "Software engineer specialised in integrations"
-intro: "Are you a Golang-driven software engineer who is looking for a new challenge? Join us on a mission to empower European innovation. "
+Title: "Software Engineer - Integrations"
+intro: "Join us to shape the future of European cloud infra!"
 Team: "Product development team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
-draft: true
-date: "2024-09-18"
-sidebarlinkurl: "mailto:marietta@safespring.com"
-sidebarlinkname: "Email your Resume"
-sidebarlinkicon: "fa-paper-plane-top"
+draft: false
+date: "2024-12-17"
+sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/00cc1265-b5f1-4ee4-a9c1-15bc5f1a944b/5050ef82-63a2-49b2-9197-e9db60acfd18#applyNow"
+sidebarlinkname: "Apply now"
+sidebarlinkicon: "fa-arrow-up-right-from-square"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
@@ -16,60 +16,49 @@ TOC: "On this page"
 sidebarimage: ""
 ---
 
+## Are you our next colleague?
+
 {{< ingress >}}
-Are you a Golang-driven software engineer who is looking for a new challenge? Join our product team and help us redefine the cloud experience for our users.
+You’ve built REST APIs. You know your way around event-based messaging. You’ve written Golang code that gets used. Now, you’re looking for your next challenge.
 {{< /ingress >}}
 
-Safespring is growing and we are now looking for a talented **Software Engineer** specialised in **Integrations** who will help us advance the user experience for our cloud users by refining business logic and maximizing self-service features. 
- 
-You'll be building APIs, leveraging event-based messaging, and maintaining supporting technologies like Terraform, Pulumi, or other kinds of commonly used API abstraction layers that power our services.
- 
-We are an open-source-driven company which means  we not only consume open-source software, but also contribute back to open source projects, in a good community spirit. We believe that giving back to upstream projects is key to our growth, sustainability, and influence in shaping their future.
+We are hiring a Software Engineer (Integrations) to refine our cloud platform’s user experience. You’ll build the APIs and business logic that let users help themselves – and make our services more powerful in the process.
 
-## Your Team 
+### Why us?
+We’re not just another cloud provider. Safespring delivers open-source-powered, sustainable, and European-based cloud infrastructure that puts security, transparency, and digital sovereignty first - with no lock-in effect! We’re small enough that your work will make a visible impact, and smart enough to know that open-source isn’t just about taking – it’s about giving back.
 
-We are a remote-friendly team at Safespring with colleagues scattered around Europe. You will join the cross-collaborative Product Team that currently consists of 4 colleagues, and is led by Jarle, our CPO. You will have the unique opportunity to shape the future of our user facing self service capabilities and the underlying business logic, by utilizing the most vital and suitable open source software to build it. This role is ideal for someone who thrives in a collaborative environment and wants to contribute to building and refining sustainable cloud technologies. 
+### What will you do?
+- Build and Operate: Write production-grade APIs and event-driven architectures using Golang and tools like NATS
+- Improve our services to give users a smoother, faster, and more self-sufficient experience.
+- Collaborate with tech leads, pair program with colleagues, and refine your craft every day.
+- Stay Transparent: Keep your work traceable and well-documented. It’s about sharing knowledge.
 
-## What will you do?
+### What you've got?
+- Solid Golang skills -  you know the libraries, frameworks, and tools.
+- Experience building integrations with REST APIs, message queues, and databases.
+- You know how to build microservices and make them work well together.
 
-- {{< inline "Build and Operate:" >}} You will build and maintain continuously delivered and tested production grade APIs and event based architectures using tools like Golang, frameworks for API documentation and integration with message queueing systems like NATS.
-- {{< inline "Continuous Improvement:" >}} Take the initiative in enhancing the performance and capabilities of our services. Your contributions will directly impact the customer experience, ensuring our solutions meet and exceed their expectations. 
-- {{< inline "Strategic Alignment:" >}} Work closely with the tech leads to align your efforts with the strategic goals of our team. Your insights and suggestions will be crucial in driving the progress. 
-- {{< inline "Collaborative Development:" >}} Engage in discussions, pair programming, and actively seek and provide feedback within the team to advance collective knowledge and capabilities.
-- {{< inline "Documentation and Transparency:" >}} Maintain a clear record of your work and decisions in our work management system, linking code changes to work descriptions to ensure transparency, traceability and knowledge sharing. 
+It's beneficial if you also know your way around Openstack, Kubernetes (CRDs, operators), or the Gophercloud framework. 
 
-## Who are you?
+### What's in it for you?
+- A real chance to shape user-facing services that make a difference
+- Flexible, remote-friendly working conditions
+- Work with talented colleagues that value collaboration 
+- Training opportunities to keep you growing
+- The stability of a collective bargaining agreement.
 
-### We believe you have: 
+Oh, and the satisfaction of building tech that’s open-source, sustainable, and locally driven.
 
-- Expert level on development of integration technologies and microservices like REST-APIs, message queues and database technologies using Golang
-- Very good coding skills in Go and extensive knowledge about existing libraries/frameworks, and their mapping to use cases. 
+### Who will you work with? 
+You will join a small, cross-functional R&D department led by Jan Ivar. We’re a remote-friendly, open-minded team spread across Europe.
+You’ll also work closely with engineers who believe the best code isn’t just written – it’s shared and improved together.
 
-### It’s beneficial if you have: 
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Apply now!" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/00cc1265-b5f1-4ee4-a9c1-15bc5f1a944b/5050ef82-63a2-49b2-9197-e9db60acfd18#applyNow">}}
 
-- Knowledge about Openstack API using Gophercloud framework. 
-- Experience with Kubernetes, operators and custom resource definitions (CRDs). 
-
-Our core services are Openstack and Kubernetes (Openshift/OKD at the moment)-based. Most of the continuously delivered business logic you develop and operate will run on internal kubernetes platform(s) that in turn runs on Openstack. We aim for an operator driven architecture, thus, familiarity with construction and operation of Kubernetes operators will be necessary. 
-
-## What’s in it for you?
-- At Safespring, we believe in fostering a culture of continuous learning and growth. We offer a range of training and development opportunities to help you advance your career and stay up-to-date on the latest industry trends.
-- The chance to be a key player in building a cutting-edge CI/CD experience.
-- Opportunity to contribute to local and sustainable cloud services.
-- A supportive and agile work environment in a rapidly growing company.
-- Flexible & remote/hybrid work.
-- Collective bargaining agreement.
-
-
-## About Safespring
-Safespring is a pioneer in providing cloud services that emphasize digital sovereignty, ensuring that your data remains secure, private, and within regulatory boundaries. Our commitment to open-source technology and environmental sustainability is matched by our dedication to empowering businesses with full control over their digital assets. 
-
-## Apply Now
-If you're ready to make a significant impact in a dynamic team, apply today to join us at Safespring. Got questions? Contact Marietta at marietta@safespring.com
-
-
-
-
+## Next steps: 
+Would you like to join us? Send your CV by clicking the apply button. 
+Questions? Get in touch with Marietta by sending an email to marietta@safespring.com 
+We will contact all candidates after winter holidays e.i. second week of January 2025. 
 
 
 
