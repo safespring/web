@@ -6,9 +6,9 @@ Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
 draft: false
 date: "2021-02-05"
-sidebarlinkurl: "mailto:marietta@safespring.com"
-sidebarlinkname: "Send in resume"
-sidebarlinkicon: "fa-external-link-alt"
+sidebarlinkurl: "#open-positions"
+sidebarlinkname: "Open positions"
+sidebarlinkicon: "fa-arrow-down"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 list: "horisontal"
@@ -40,16 +40,4 @@ At Safespring we're not just building systems; we're building relationships. We 
 We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
 {{% /accordion %}}
 
-{{< distance >}}
-
-{{% note "Get Discovered" %}}
-
-Share some basic information and submit your resume. If there’s a role that might be a good match, an Safespring recruiter will be in touch.
-
-Please send your resume and cover letter as a single PDF.
-
-{{% localbutton text="Send in Resume" icon="fa-paper-plane" link="mailto:marietta@safespring.com" %}}
-
-.
-
-{{% /note %}}
+## Open positions

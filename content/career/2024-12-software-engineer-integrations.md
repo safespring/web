@@ -13,7 +13,7 @@ language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 TOC: "On this page"
-sidebarimage: ""
+sidebarimage: "safespring_card_2.svg"
 ---
 
 ## Are you our next colleague?
@@ -53,12 +53,13 @@ Oh, and the satisfaction of building tech that’s open-source, sustainable, and
 You will join a small, cross-functional R&D department led by Jan Ivar. We’re a remote-friendly, open-minded team spread across Europe.
 You’ll also work closely with engineers who believe the best code isn’t just written – it’s shared and improved together.
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Apply now!" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/00cc1265-b5f1-4ee4-a9c1-15bc5f1a944b/5050ef82-63a2-49b2-9197-e9db60acfd18#applyNow">}}
 
 ## Next steps: 
 Would you like to join us? Send your CV by clicking the apply button. 
 Questions? Get in touch with Marietta by sending an email to marietta@safespring.com 
 We will contact all candidates after winter holidays e.i. second week of January 2025. 
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/00cc1265-b5f1-4ee4-a9c1-15bc5f1a944b/5050ef82-63a2-49b2-9197-e9db60acfd18#applyNow" >}}
 
 
 
@@ -77,4 +78,6 @@ We recognize that talent comes in many forms and that the standard interview pro
 
 {{< accordion-script >}}
 
+
+{{< distance >}}
 {{< horisontal-card image="/img/kontakt/marietta.webp" cardtitle="Got questions?" link="mailto:marietta@safespring.com" linktext="Send email" text="Marietta is your contact here at Safespring. You can contact her at marietta@safespring.com " >}}
