@@ -7323,6 +7323,7 @@ padding-left:30px;
 .safespring-horisontal-card-image {
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 }
 	/*@media screen and (max-width:900px) {
 
