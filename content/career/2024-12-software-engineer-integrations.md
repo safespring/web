@@ -13,7 +13,7 @@ language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 TOC: "On this page"
-sidebarimage: "safespring_card_2.svg"
+sidebarimage: "safespring-gabriel-demo.webp"
 ---
 
 ## Are you our next colleague?

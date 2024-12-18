@@ -9,7 +9,7 @@ sidebarlinkicon: "fa-arrow-up-right-from-square"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
-sidebarimage: "safespring-gabriel-demo.webp"
+sidebarimage: "safespring-image.svg"
 ---
 
 ## Get Discovered
