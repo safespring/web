@@ -31,8 +31,7 @@ Here you can find contact information for some of our team members. Don't hesita
 Below you can find the addresses of our offices in Sweden and Norway. Click the links to get directions via Google Maps.
 
 {{< contact picture="/img/kontakt/stockholm.png" title="Sweden" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
-{{< contact picture="/img/kontakt/oslo.png" title="Norway" name="Oslo" phone="+4735688870" address="Apotekergata 10b, 0180 Oslo" address-link="https://www.google.com/maps/place/Apotekergata+10B,+0180+Oslo,+Norge/@59.9152664,10.7394665,16z/data=!3m1!4b1!4m6!3m5!1s0x46416e7d293b4dd9:0x5b97ba3436cde149!8m2!3d59.9152664!4d10.7420468!16s%2Fg%2F11c5k2t95q?entry=ttu">}}
-{{< contact picture="/img/kontakt/bergen.png" title="Norway" name="Bergen" phone="+4735688870" address="Jacobsfjorden 6b, 5003 Bergen" address-link="https://goo.gl/maps/DpQWmUzpeyeeR9B26">}}
+{{< contact picture="/img/kontakt/bergen.png" title="Norway" name="Bergen" phone="+4735688870" address="Lars Hilles gate 30, 5008 BERGEN" address-link="https://maps.app.goo.gl/bpo9Urkys5sEYHDt7">}}
 
 {{< distance >}}
 
