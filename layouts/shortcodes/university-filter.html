@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +11,7 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url('/img/sweden.svg');
+			background-image: url('/img/flags/sweden.svg');
 		}
 
 		.country-2norge:before {
@@ -25,7 +23,7 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url('/img/norway.svg') !important;
+			background-image: url('/img/flags/norway.svg') !important;
 		}
 
 		.country-3danmark:before {
@@ -37,7 +35,7 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url('/img/denmark.svg');
+			background-image: url('/img/flags/denmark.svg');
 		}
 		.universitylist>li {
 			padding: 7px 20px 5px 15px;
@@ -83,7 +81,7 @@
 	</style>
 </head>
 <body>
-	<input type="text" id="filterInput" placeholder="Skriv något för att filtrera listan..." />    <button id="toggleButton">Visa alla</button>
+	<input type="text" id="filterInput" placeholder="Name of organisation..." />    <button id="toggleButton">Show all</button>
 	<div id="universityContainer">
 		{{ range $country, $universities := site.Data.universities }}
 		<ul id="dataList-{{ $country | urlize }}" class="universitylist">
@@ -95,7 +93,7 @@
 	</div>
 	<div id="noMatchMessage">
 		<ul class="noMatchMessage">
-			<li>Ingen matchning hittades för det du har skrivit in.</li>
+			<li>No match was found.</li>
 		</ul>
 	</div>
 	<script>
@@ -137,17 +135,16 @@
 			toggleButton.addEventListener('click', function () {
 				if (showingAll) {
 					lists.forEach(list => list.style.display = "none");
-					toggleButton.textContent = "Visa alla";
+					toggleButton.textContent = "Show all";
 				} else {
 					lists.forEach(list => {
 						list.style.display = "flex";
 						list.querySelectorAll('li').forEach(item => item.style.display = '');
 					});
-					toggleButton.textContent = "Dölj alla";
+					toggleButton.textContent = "Hide all";
 				}
 				showingAll = !showingAll;
 			});
 		});
 	</script>
 </body>
-</html>
