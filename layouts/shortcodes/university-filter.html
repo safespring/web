@@ -89,54 +89,69 @@
 		</ul>
 	</div>
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const filterInput = document.getElementById('filterInput');
-			const lists = document.querySelectorAll('.universitylist');
-			const toggleButton = document.getElementById('toggleButton');
-			const noMatchMessage = document.getElementById('noMatchMessage');
-			let showingAll = false;
-			noMatchMessage.style.display = "none";
-			filterInput.addEventListener('input', function () {
-				const filterValue = this.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-				let hasMatch = false;
-				lists.forEach(list => {
-					let listHasMatch = false;
-					const items = list.querySelectorAll('li');
-					items.forEach(item => {
-						const text = item.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-						if (text.includes(filterValue)) {
-							item.style.display = '';
-							listHasMatch = true;
-						} else {
-							item.style.display = 'none';
-						}
-					});
-					if (listHasMatch) {
-						list.style.display = "flex";
-						hasMatch = true;
-					} else {
-						list.style.display = "none";
-					}
-				});
-				if (hasMatch) {
-					noMatchMessage.style.display = "none";
-				} else {
-					noMatchMessage.style.display = "block";
-				}
-			});
-			toggleButton.addEventListener('click', function () {
-				if (showingAll) {
-					lists.forEach(list => list.style.display = "none");
-					toggleButton.textContent = "Show all";
-				} else {
-					lists.forEach(list => {
-						list.style.display = "flex";
-						list.querySelectorAll('li').forEach(item => item.style.display = '');
-					});
-					toggleButton.textContent = "Hide all";
-				}
-				showingAll = !showingAll;
-			});
-		});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterInput = document.getElementById('filterInput');
+    const lists = document.querySelectorAll('.universitylist');
+    const toggleButton = document.getElementById('toggleButton');
+    const noMatchMessage = document.getElementById('noMatchMessage');
+    let showingAll = false;
+    noMatchMessage.style.display = "none";
+
+    filterInput.addEventListener('input', function () {
+        const filterValue = this.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        let hasMatch = false;
+
+        // If the input is empty and "Show all" is not active, hide all lists
+        if (filterValue === "" && !showingAll) {
+            lists.forEach(list => {
+                list.style.display = "none";
+                list.querySelectorAll('li').forEach(item => item.style.display = 'none');
+            });
+            noMatchMessage.style.display = "none";
+            return;
+        }
+
+        // Otherwise, filter the results based on input
+        lists.forEach(list => {
+            let listHasMatch = false;
+            const items = list.querySelectorAll('li');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                if (text.includes(filterValue)) {
+                    item.style.display = '';
+                    listHasMatch = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            if (listHasMatch) {
+                list.style.display = "flex";
+                hasMatch = true;
+            } else {
+                list.style.display = "none";
+            }
+        });
+
+        if (hasMatch) {
+            noMatchMessage.style.display = "none";
+        } else {
+            noMatchMessage.style.display = "block";
+        }
+    });
+
+    toggleButton.addEventListener('click', function () {
+        if (showingAll) {
+            lists.forEach(list => list.style.display = "none");
+            toggleButton.textContent = "Show all";
+        } else {
+            lists.forEach(list => {
+                list.style.display = "flex";
+                list.querySelectorAll('li').forEach(item => item.style.display = '');
+            });
+            toggleButton.textContent = "Hide all";
+        }
+        showingAll = !showingAll;
+    });
+});
 	</script>
 </body>
