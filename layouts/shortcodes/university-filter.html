@@ -2,46 +2,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		.country-1sverige:before {
-			content: " "!important;
-			position: relative;
-			transform: translateY(-7%);
-			width: 4em !important;
-			height: 3em;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
+		.country-sweden:before {
 			background-image: url('/img/flags/sweden.svg');
 		}
 
-		.country-2norge:before {
-			content: " "!important;
-			position: relative;
-			transform: translateY(-7%);
-			width: 4em !important;
-			height: 3em;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
+		.country-norway:before {
 			background-image: url('/img/flags/norway.svg') !important;
 		}
 
-		.country-3danmark:before {
-			content: " "!important;
-			position: relative;
-			transform: translateY(-7%);
-			width: 4em !important;
-			height: 3em;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
+		.country-denmark:before {
 			background-image: url('/img/flags/denmark.svg');
 		}
 		.universitylist>li {
 		    display: flex;
-		    padding: 7px 16px 7px 0px;
+		    padding: 7px 16px 7px 7px;
 		    background: #195f8c20;
-		    border-radius: 30px;
+		    border-radius: 15px;
 		    list-style: none;
 		    margin: 4px !important;
 		    font-weight: 600;
@@ -49,13 +25,20 @@
 		    font-size: 14px;
 		    position: relative;
 		    text-indent: 0px;
-		    padding-left: 17px;
 		    align-items: center;
 		}
 		.universitylist>li:before {
-			content: "";
-			color: var(--green-color) !important;
-			margin-right: 4px;
+			content: " "!important;
+			position: relative;
+			width: 18px !important;
+			height: 18px !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 0 !important;
+			margin-left: 0px !important;
+			margin-right: 7px;
+			flex-shrink: 0;
 		}
 		.universitylist {
 			display: none;
@@ -87,15 +70,19 @@
 </head>
 <body>
 	<input type="text" id="filterInput" placeholder="Name of organisation..." style="width:80%;" />    <button id="toggleButton">Show all</button>
-	<div id="universityContainer">
-		{{ range $country, $universities := site.Data.universities }}
-		<ul id="dataList-{{ $country | urlize }}" class="universitylist">
-			{{ range $universities }}
-			<li class="country-{{ $country | urlize }}">{{ . }}</li>
-			{{ end }}
-		</ul>
-		{{ end }}
-	</div>
+<div id="universityContainer">
+    {{ $order := .Get "order" | default "Sweden,Norway,Denmark" }}
+    {{ $orderedCountries := split $order "," }}
+    {{ range $orderedCountries }}
+        {{ $country := . }}
+        <ul id="dataList-{{ $country | urlize }}" class="universitylist">
+            <p>These organisations can use the OCRE 2024 agreement in {{ $country }}:</p>
+            {{ range index site.Data.universities $country }}
+            <li class="country-{{ $country | urlize }}">{{ . }}</li>
+            {{ end }}
+        </ul>
+    {{ end }}
+</div>
 	<div id="noMatchMessage">
 		<ul class="noMatchMessage">
 			<li>No match was found.</li>
