@@ -8383,7 +8383,6 @@ details[open] summary {
 		scroll-snap-align: center;
 	}
 	.icon-block-small-container {
-		flex-wrap: nowrap !important;
 		gap: 5px !important;
 		width: 300px;
 		overflow: scroll;
