@@ -1,6 +1,14 @@
 {{ with .Get "link" }}
 <a class="icon-block-link" href='{{ . }}'>{{ end }}
-	<div class="icon-block" style='color: {{ .Get "color" }};'>
-	<i class='{{ .Get "icon" }} icon'></i>
-	<p><span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}</p></div>{{ with .Get "link" }}
+    <div class="icon-block" style='color: {{ .Get "color" }};'>
+        {{ if .Get "image" }}
+            <img src='{{ .Get "image" }}' alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;"/>
+        {{ else }}
+            <i class='{{ .Get "icon" }} icon'></i>
+        {{ end }}
+        <p>
+            <span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}
+        </p>
+    </div>
+{{ with .Get "link" }}
 </a>{{ end }}
