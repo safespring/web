@@ -138,3 +138,5 @@ I am the Business Development Manager for the academic and public sectors and ca
 {{< inline "Call" >}} +46 (0)76 868 00 59 
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
+
+{{< accordion-script >}}
