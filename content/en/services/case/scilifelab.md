@@ -53,26 +53,39 @@ SciLifeLab runs several research programs that depend on high-performance comput
 
 Two major research environments and platforms built on Safespring's infrastructure are the data delivery project DDS and the AI project Bigpicture.
 
-{{% accordion title="The Data Delivery Project DDS" %}}
-DDS stands for Data Delivery System and is a central solution for SciLifeLab as a complex infrastructure that produces research data. It is a unified transport solution for delivering life science data from data-producing technical platforms, such as DNA sequencing, imaging, and proteomics, to researchers across Sweden. DDS leverages Safespring's virtual machines and storage solutions to manage the flow of data between producers and researchers, expected to reach 3 petabytes in 2023.
+<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;" alt="">
+        <img src="/img/logos/bigpicture.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    </div>
+<div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+    <p>BigPicture is intended to support the development of artificial intelligence in life science. In this Horizon2020 project SciLifeLab and ELIXIR-SE have teamed up with many other European partners to deliver a pathology data repository.
+</p>
+<p>Safesprings provides a scalable infrastructure that meets the project's large data management and high  performance requirements. SciLifeLab has been able to develop the BigPicture project quickly by using Safespring's cloud services.
+</p><br><br>
+<a class="button" href="https://bigpicture.eu">BigPicture website</a>
+</div>
+</div>
+<br>
+<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;" alt="">
+        <img src="/img/logos/scilifelab-symbol.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    </div>
+<div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+    <p>DDS stands for Data Delivery System and is a central solution for SciLifeLab as a complex infrastructure that produces research data. It is a unified transport solution for delivering life science data from data-producing technical platforms, such as DNA sequencing, imaging, and proteomics, to researchers across Sweden. </p>
+<p>DDS leverages Safespring's virtual machines and storage solutions to manage the flow of over 3 petabytes of data between producers and researchers.</p>
+<br><br>
+<a class="button" href="https://delivery.scilifelab.se">DDS website</a>
+</div>
+</div>
 
-[Read more about DDS](https://delivery.scilifelab.se)
-{{% /accordion %}}
 
-{{% accordion title="The AI Project BigPicture" %}}
-BigPicture is a Horizon2020 project where SciLifeLab and ELIXIR-SE have teamed up with many other European partners to deliver a pathology data repository. BigPicture is intended to support the development of artificial intelligence in life science.
-
-Safespring's VM and storage services form a key component in this project by enabling the creation of a scalable infrastructure that meets the project's data management and performance requirements. SciLifeLab has been able to develop the BigPicture project quickly by using Safespring.
-
-[Read more about BigPicture](https://bigpicture.eu)
-{{% /accordion %}}
-
-### Relevant for EOSC
-EOSC stands for European Open Science Cloud and is a planned cloud-based platform aimed at providing researchers and other users with simple and secure access to research data, tools, and infrastructure across Europe.
+## Relevant for EOSC
+EOSC stands for [European Open Science Cloud](/eosc) and is a cloud-based platform aimed at providing researchers and other users with simple and secure access to research data, tools, and infrastructure across Europe.
 
 Safespring's services support SciLifeLab's projects to deliver life science to researchers across Sweden. Researchers can use virtual machines and storage directly, as well as build virtual research environments at SciLifeLab. Safespring has also recently begun developing [GPU](#gpu)-backed virtual machines for Protein Folding and image data analysis.
 
-The EOSC platform will facilitate collaboration and data sharing among researchers and institutions in different countries and disciplines, expected to lead to increased innovation and the discovery of new insights. EOSC will consist of various services and tools provided by both public and private organizations and will adhere to FAIR (Findable, Accessible, Interoperable, Reusable) data management principles. EOSC is expected to be fully operational by 2025.
+The EOSC platform will facilitate collaboration and data sharing among researchers and institutions in different countries and disciplines, expected to lead to increased innovation and the discovery of new insights. EOSC will consist of various services and tools provided by both public and private organizations and will adhere to FAIR (Findable, Accessible, Interoperable, Reusable) data management principles.
+
 
 {{% accordion title="What is a GPU?" id="gpu"%}}
 GPU stands for Graphics Processing Unit and is a processor designed specifically for handling graphically intensive tasks, such as computer games and image or video editing.
@@ -118,7 +131,7 @@ One of the main purposes of [OCRE](#ocre) is to simplify and standardize the pro
 {{% accordion title="What is OCRE?" id="ocre"%}}
 Open Clouds for Research Environments (OCRE) is an EU-funded project that aims to promote the use of cloud services and Earth Observation (EO) services within the research community. The OCRE project strives to facilitate and accelerate the use of commercial cloud services in research by acting as a bridge between the research community and cloud service providers.
 
-Learn more about [OCRE](https://www.ocre-project.eu/services/cloud-suppliers/).
+Learn more about [OCRE](/ocre/).
 {{% /accordion %}}
 
 {{% accordion title="What is GÉANT?" %}}
