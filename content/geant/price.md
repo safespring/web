@@ -1,7 +1,7 @@
 ---
-section: "OCRE IaaS+ 2024"
+section: "OCRE 2024 framework"
 language: "En"
-title: "Géant Price List and Calculator"
+title: "Price List and Calculator"
 date: "2023-12-01"
 draft: false
 tags: ""

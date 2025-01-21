@@ -7,7 +7,7 @@ cardcolor: "#195F8C"
 cardorder: "05"
 date: 2024-10-10
 draft: false
-intro: "Storage service based on the Ceph object storage cluster using S3-API."
+intro: "The storage service is built on the reliable and highly scalable Ceph object storage cluster. It supports integration via S3 API, ensuring compatibility with applications and workflows that rely on object-based storage solutions."
 cardintro: ""
 background: "safespring-compute-background.svg"
 form: "no"
@@ -16,7 +16,7 @@ sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "See price for storage"
 sidebarlinkurl2: "/geant/price/#safespring-storage"
 socialmedia: "safespring-compute.jpg"
-section: "Géant Service Catalogue"
+section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: "x"
@@ -45,6 +45,6 @@ None.
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
-{{< inline "Sales:" >}} +46855107370 or sales@safespring.se
+{{< inline "Info:" >}} +46855107370 or ocre@safespring.com
 {{% /custom-card %}}
 

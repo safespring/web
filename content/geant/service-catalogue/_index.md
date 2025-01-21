@@ -1,6 +1,6 @@
 ---
-title: "Géant Service Catalogue"
-section: "OCRE IaaS+ 2024"
+title: "Service Catalogue"
+section: "OCRE 2024 framework"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
 date: "2024-10-10"
 draft: false
