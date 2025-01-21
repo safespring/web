@@ -5,7 +5,7 @@ cardtitle: "Database service"
 cardicon: "fa-solid fa-database"
 cardcolor: "#195F8C"
 cardorder: "09"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Safespring provides MariaDB, MySQL, Redis, PostgreSQL and MongoDB as services on top of the Compute platform."
 cardintro: "Safespring provides database services on top of the IaaS platform."

@@ -5,7 +5,7 @@ cardtitle: "Private Cloud"
 cardicon: "fa-solid fa-shield-check"
 cardcolor: "#195F8C"
 cardorder: "07"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 cardintro: "Complete offer including hardware, operations and software maintenance."
 intro: "Comprehensive private cloud solutions, including hardware, operations, and software maintenance, tailored for full control and scalability in dedicated customer-owned infrastructure."

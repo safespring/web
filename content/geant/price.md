@@ -2,7 +2,7 @@
 section: "OCRE 2024 framework"
 language: "En"
 title: "Price List and Calculator"
-date: "2023-12-01"
+date: "2025-01-20"
 draft: false
 tags: ""
 showthedate: false

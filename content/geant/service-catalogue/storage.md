@@ -5,7 +5,7 @@ cardtitle: "Object Storage"
 cardicon: "fa-solid fa-database"
 cardcolor: "#195F8C"
 cardorder: "05"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "The storage service is built on the reliable and highly scalable Ceph object storage cluster. It supports integration via S3 API, ensuring compatibility with applications and workflows that rely on object-based storage solutions."
 cardintro: ""

@@ -5,7 +5,7 @@ cardtitle: "Software"
 cardicon: "fa-solid fa-code"
 cardcolor: "#195F8C"
 cardorder: "10"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Safespring provides several third-party software licenses for use on our IaaS platforms"
 cardintro: ""

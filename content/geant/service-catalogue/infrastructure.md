@@ -5,7 +5,7 @@ cardtitle: "Cloud Compute"
 cardicon: "fa-solid fa-server"
 cardcolor: "#195F8C"
 cardorder: "01"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "On this page, you'll find information about our Infrastructure as a Service (IaaS) cloud compute services, including detailed configurations and categories of compute services available."
 cardintro: "With IaaS you can scale your infrastructure up or down as needed."

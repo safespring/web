@@ -5,7 +5,7 @@ cardtitle: "Network"
 cardicon: "fa-solid fa-network-wired"
 cardcolor: "#195F8C"
 cardorder: "03"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Comprehensive network services for seamless connectivity and control, including public/private IP addresses, secure traffic management, load balancing, and advanced options for large-scale users."
 cardintro: "Comprehensive network services for seamless connectivity and control."

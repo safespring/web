@@ -5,7 +5,7 @@ cardtitle: "Cloud Images"
 cardicon: "fa-solid fa-compact-disc"
 cardcolor: "#195F8C"
 cardorder: "04"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 cardintro: "The IaaS service additionally contains a cloud image service (Openstack Glance)."
 intro: "Effortlessly manage and deploy operating system images in the cloud with Safespring’s Image Service, powered by OpenStack Glance, enabling customized or pre-configured cloud environments."

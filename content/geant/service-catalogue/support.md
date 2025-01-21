@@ -5,7 +5,7 @@ cardtitle: "Support"
 cardicon: "fa-solid fa-cloud-question"
 cardcolor: "#195F8C"
 cardorder: "12"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Safespring offers support in several different ways for the platform and related services."
 cardintro: ""

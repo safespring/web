@@ -5,7 +5,7 @@ cardtitle: "Own License"
 cardicon: "fa-solid fa-hand-holding-box"
 cardcolor: "#195F8C"
 cardorder: "11"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Bring Your Own License, using existing software licenses in Safespring cloud environment"
 cardintro: ""

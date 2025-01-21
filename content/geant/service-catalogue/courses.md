@@ -5,7 +5,7 @@ cardtitle: "Courses"
 cardicon: "fa-solid fa-user-graduate"
 cardcolor: "#195F8C"
 cardorder: "13"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Four training courses, including an introduction to IaaS and cloud computing"
 cardintro: ""

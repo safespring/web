@@ -5,7 +5,7 @@ cardtitle: "API Access"
 cardicon: "fa-kit fa-api"
 cardcolor: "#195F8C"
 cardorder: "02"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Access and automate Safespring’s cloud infrastructure seamlessly through our comprehensive APIs, enabling full control over compute, storage, and backup services."
 cardintro: "Effortless cloud automation through Safespring’s API Access."

@@ -5,7 +5,7 @@ cardtitle: "Backup"
 cardicon: "fa-solid fa-cloud-arrow-up"
 cardcolor: "#195F8C"
 cardorder: "06"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "The backup service comes in three subscription models depening on your need."
 cardintro: ""

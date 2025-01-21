@@ -5,7 +5,7 @@ cardtitle: "Consulting"
 cardicon: "fa-solid fa-user-tie"
 cardcolor: "#195F8C"
 cardorder: "14"
-date: 2024-10-10
+date: "2025-01-20"
 draft: false
 intro: "Allowing customers to extract more value out of the services deployed in the platform"
 cardintro: ""
