@@ -60,7 +60,7 @@
 
 @font-face {
 	font-family: 'safespring mono';
-	src: url('/fonts/Safespring-Mono-Regular.ttf') format('truetype');
+	src: url('/fonts/Safespring-Mono-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -68,7 +68,7 @@
 
 @font-face {
 	font-family: 'safespring mono';
-	src: url('/fonts/Safespring-Mono-Italic.ttf') format('truetype');
+	src: url('/fonts/Safespring-Mono-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
@@ -76,7 +76,7 @@
 
 @font-face {
 	font-family: 'safespring mono';
-	src: url('/fonts/Safespring-Mono-Medium.ttf') format('truetype');
+	src: url('/fonts/Safespring-Mono-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -84,7 +84,7 @@
 
 @font-face {
 	font-family: 'safespring mono';
-	src: url('/fonts/Safespring-Mono-MediumItalic.ttf') format('truetype');
+	src: url('/fonts/Safespring-Mono-MediumItalic.woff2') format('woff2');
 	font-weight: 500;
 	font-style: italic;
 	font-display: swap;
@@ -92,7 +92,7 @@
 
 @font-face {
 	font-family: 'safespring mono';
-	src: url('/fonts/Safespring-Mono-SemiBold.ttf') format('truetype');
+	src: url('/fonts/Safespring-Mono-SemiBold.woff2') format('woff2');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -100,7 +100,7 @@
 
 @font-face {
 	font-family: 'safespring mono';
-	src: url('/fonts/Safespring-Mono-SemiBoldItalic.ttf') format('truetype');
+	src: url('/fonts/Safespring-Mono-SemiBoldItalic.woff2') format('woff2');
 	font-weight: 600;
 	font-style: italic;
 	font-display: swap;
@@ -4263,6 +4263,42 @@ margin:0;
 	font-size:13px;
 	padding:5px 13px;
 	font-weight:599;
+}
+
+.note-dotted {
+    border: 1px dashed var(--green-color);
+    max-width: 600px;
+    /* background: white; */
+    margin: 2.5625em 0;
+    padding: 25px 40px 25px 40px;
+    /* border-left: 10px solid var(--green-color); */
+    border-radius: 20px;
+}
+
+.note-dotted-title {
+	color:var(--green-color);
+	font:var(--heavy-weight) 15px var(--mon-font);
+	text-transform:uppercase;
+	margin: -34px 0 30px -10px;
+	padding: 0 12px 0 0;
+	background: #fafefe;
+	width: fit-content;
+
+}
+
+.note-dotted-title::before {
+	margin-right:10px;
+	background:#EAFAEA;
+	padding:7px 14px;
+	color:var(--green-color);
+	border-radius:50%;
+	content:"!";
+}
+
+@media only screen and (max-width:500px) {
+	.note-dotted {
+	    padding: 25px 10% 25px 10%;
+	}
 }
 
 .note {

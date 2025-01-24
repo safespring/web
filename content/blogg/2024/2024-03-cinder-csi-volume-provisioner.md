@@ -32,7 +32,7 @@ Moreover, this guide is not exclusive to OpenShift or OKD environments; it can b
 Throughout this guide, we will take you step by step through the installation process, providing clear instructions and helpful tips to ensure a successful integration. Whether you're new to OpenShift or an experienced administrator, this guide aims to provide you with all the necessary information to enhance your cluster's storage capabilities with the Cinder CSI Volume Provisioner.
 
 {{% note "Git-repository" %}}
-This guide is accompanied by a complete set of code examples available on our GitHub repository. For easy access to all the scripts, configurations, and templates used throughout this guide, please visit [safespring-community/utilities](https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi) on GitHub. This will ensure you have everything you need to successfully integrate the Cinder CSI Volume Provisioner into your environment.
+This guide is accompanied by a complete set of code examples available on our GitHub repository. For easy access to all the scripts, configurations, and templates used throughout this guide, please visit [safespring-community](https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi) on GitHub.
 
 {{% /note %}}
 
@@ -119,6 +119,7 @@ namespace="${namespace:-csi}"
 helm repo -n ${namespace} add cpo https://kubernetes.github.io/cloud-provider-openstack
 helm search -n ${namespace} repo cpo/openstack-cinder-csi --versions
 ```
+
 | name                     | version | app_version | description                    |
 | ------------------------ | ------- | ----------- | ------------------------------ |
 | cpo/openstack-cinder-csi | 2.29.0  | v1.29.0     | Cinder CSI Chart for OpenStack |
