@@ -4,7 +4,7 @@ cardtitle: "Safespring for Reserach and Education"
 card: "safespring_card_11.svg"
 date: 2025-01-27
 draft: false
-intro: "Mer enn 60 høyere utdanningsinstitusjoner bruker Safespring gjennom Sunet, Sikt, DeiC eller direkte via GÉANT OCRE-rammeavtalet."
+intro: "Over 60 videregående uddannelsesinstitutioner anvender Safesprings tjenester gennem Sunet, Sikt, DeiC eller direkte via GÉANT OCRE-rammeaftalen."
 background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
 toplogo: "ocre-safespring-service-providor-2024.svg"
@@ -23,11 +23,11 @@ aliases:
 
 
 {{< ingress >}}
-Safespring har levert pålitelige skytjenester til forsknings- og utdanningssektoren siden selskapet ble grunnlagt. Å styrke forskning og utdanning med databehandling, container-plattformer, skalerbar lagring og fleksible løsninger for sikkerhetskopiering er en del av kjernevirksomheten vår.
+Siden vores grundlæggelse har Safespring leveret pålidelige cloud-tjenester til forsknings- og uddannelsessektoren. Vores kerneforretning er at styrke forskning og uddannelse med beregningsressourcer, container-platforme, skalerbar lagring og fleksible backup-løsninger.
 {{</ ingress >}}
 
 
-## Hvorfor bruke OCRE 2024?
+## Hvorfor anvende OCRE 2024?
 
 Det er mange måter en forsknings- og utdanningsorganisasjon kan anskaffe Safesprings skytjenester på, for eksempel ved at innkjøpsfunksjonen gjennomfører en egen anbudskonkurranse eller gjennomfører en ny anbudskonkurranse fra annat rammeavtale. Den enkleste og raskeste måten er imidlertid å bruke OCRE 2024 av tre grunner:
 

@@ -4,7 +4,7 @@ intro: "Join us to shape the future of European cloud infra!"
 Team: "Product development team"
 Location: "Remote (Sweden or Norway)"
 Duration: "Full time"
-draft: false
+draft: true
 date: "2024-12-17"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/00cc1265-b5f1-4ee4-a9c1-15bc5f1a944b/5050ef82-63a2-49b2-9197-e9db60acfd18#applyNow"
 sidebarlinkname: "Apply now"
