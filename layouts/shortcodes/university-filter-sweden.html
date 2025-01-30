@@ -1,0 +1,153 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.country-sweden:before {
+			background-image: url('/img/flags/sweden.svg');
+		}
+
+		.country-norway:before {
+			background-image: url('/img/flags/norway.svg') !important;
+		}
+
+		.country-denmark:before {
+			background-image: url('/img/flags/denmark.svg');
+		}
+		.universitylist>li {
+		    display: flex;
+		    padding: 7px 16px 7px 7px;
+		    background: #195f8c20;
+		    border-radius: 15px;
+		    list-style: none;
+		    margin: 4px !important;
+		    font-weight: 600;
+		    color: var(--main-color);
+		    font-size: 14px;
+		    position: relative;
+		    text-indent: 0px;
+		    align-items: center;
+		    cursor: default;
+		}
+		.universitylist>li:before {
+			content: " "!important;
+			position: relative;
+			width: 18px !important;
+			height: 18px !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 0 !important;
+			margin-left: 0px !important;
+			margin-right: 7px;
+			flex-shrink: 0;
+		}
+		.universitylist {
+			display: none;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			padding: 0;
+		}
+		.noMatchMessage>li {
+			padding: 7px 10px 7px 20px;
+			background: #195F8C20;
+			border-radius: 10px;
+			list-style: none;
+			margin: 4px !important;
+			font-weight: 600;
+			color: var(--main-color);
+			font-size: 14px;
+		}
+		.noMatchMessage>li:before {
+			color: red !important;
+		}
+		.noMatchMessage {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="filterInput" placeholder="Namn på organisation..." style="width:80%;" />    <button id="toggleButton">Visa alla</button>
+<div id="universityContainer">
+		<ul id="dataList-sweden" class="universitylist">
+		    <p>Avropsberättigade organisationer i Sverige:</p>
+		    {{ range index site.Data.universities "Sweden" }}
+		    <li class="country-sweden">{{ . }}</li>
+		    {{ end }}
+		</ul>
+</div>
+	<div id="noMatchMessage">
+		<ul class="noMatchMessage">
+			<li>Inga organisationer hittades.</li>
+		</ul>
+	</div>
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const filterInput = document.getElementById('filterInput');
+    const lists = document.querySelectorAll('.universitylist');
+    const toggleButton = document.getElementById('toggleButton');
+    const noMatchMessage = document.getElementById('noMatchMessage');
+    let showingAll = false;
+    noMatchMessage.style.display = "none";
+
+    filterInput.addEventListener('input', function () {
+        const filterValue = this.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        let hasMatch = false;
+
+        // If the input is empty and "Show all" is not active, hide all lists
+        if (filterValue === "" && !showingAll) {
+            lists.forEach(list => {
+                list.style.display = "none";
+                list.querySelectorAll('li').forEach(item => item.style.display = 'none');
+            });
+            noMatchMessage.style.display = "none";
+            return;
+        }
+
+        // Otherwise, filter the results based on input
+        lists.forEach(list => {
+            let listHasMatch = false;
+            const items = list.querySelectorAll('li');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                if (text.includes(filterValue)) {
+                    item.style.display = '';
+                    listHasMatch = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            if (listHasMatch) {
+                list.style.display = "flex";
+                hasMatch = true;
+            } else {
+                list.style.display = "none";
+            }
+        });
+
+        if (hasMatch) {
+            noMatchMessage.style.display = "none";
+        } else {
+            noMatchMessage.style.display = "block";
+        }
+    });
+
+    toggleButton.addEventListener('click', function () {
+        if (showingAll) {
+            lists.forEach(list => list.style.display = "none");
+            toggleButton.textContent = "Visa alla";
+        } else {
+            lists.forEach(list => {
+                list.style.display = "flex";
+                list.querySelectorAll('li').forEach(item => item.style.display = '');
+            });
+            toggleButton.textContent = "Dölj alla";
+        }
+        showingAll = !showingAll;
+    });
+});
+	</script>
+</body>

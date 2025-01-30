@@ -1,8 +1,8 @@
 ---
-title: "Géant documentation"
-section: "OCRE IaaS+ 2024"
+title: "Service documentation"
+section: "OCRE 2024 framework"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
-date: "2024-10-10"
+date: "2025-01-20"
 draft: false
 language: "En"
 socialmedia: "/safespring-start.jpg"

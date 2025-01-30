@@ -1,64 +1,89 @@
 ---
-title: "Safespring er den foretrukne plattformen for forsknings- og utdanningssektoren"
-cardtitle: "Safespring for akademisk sektor"
+title: "Safesprings skytjenester for forskning og utdanning"
+cardtitle: "Safespring for Reserach and Education"
 card: "safespring_card_11.svg"
-date: 2023-04-27
+date: 2025-01-27
 draft: false
-intro: "Over 60 utdanningsinstitusjoner bruker Safespring via Sunet, Sikt eller direkte gjennom GÉANTs OCRE-rammeavtale."
+intro: "Mer enn 60 høyere utdanningsinstitusjoner bruker Safespring gjennom Sunet, Sikt, DeiC eller direkte via GÉANT OCRE-rammeavtalet."
 background: "2safespring-akademisk-sektor-2022.webp"
 logobanner: "yes"
-toplogo: "ocre.png"
+toplogo: "ocre-safespring-service-providor-2024.svg"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
-startpage: "yes"
 language: "No"
+cardtitle: "Academic Sector"
+cardicon: "fa-solid fa-graduation-cap"
+cardcolor: "#417DA5"
+cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
+TOC: "På denne siden"
+aliases:
+   - /no/bransjer/ocre-2024
 ---
 
+
 {{< ingress >}}
-Vi i Safespring har lang erfaring med å levere skyinfrastrukturtjenester til forsknings- og utdanningssektoren. Plattformen vår muliggjør åpne standarder, GDPR-etterlevelse og lar deg beholde digital suverenitet.
+Safespring har levert pålitelige skytjenester til forsknings- og utdanningssektoren siden selskapet ble grunnlagt. Å styrke forskning og utdanning med databehandling, container-plattformer, skalerbar lagring og fleksible løsninger for sikkerhetskopiering er en del av kjernevirksomheten vår.
 {{</ ingress >}}
 
-Safesprings datasentre er direkte tilkoblet NREN-nettverket for å gi deg best mulig ytelse uten datatransferkostnader.
 
-Vi er svært glade for å ha kvalifisert oss for OCRE-rammeavtalen. Rammeavtalen lar oss støtte forsknings- og utdanningssektoren med våre moderne, API-baserte tjenester som støtter føderert innlogging for å gjøre innlogging enklere. Safesprings tjenester brukes av over 60 universiteter, institusjoner og forskningsplattformer, og vi håper også å være en del av din digitale fremtid. Ta gjerne kontakt med oss!
+## Hvorfor bruke OCRE 2024?
 
-{{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-user-lock" text="Data suverenitet" link="" color="#32cd32">}}
-{{< icon-block icon="fa-kit fa-sikt" text="Tilkobling til Sikt" link="" color="#0f0035">}}
-{{< icon-block icon="fa-solid fa-shield-halved" text="GDPR-compliant" link="" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-file-contract" text="OCRE Rammeavtale" link="" color="#555555">}}
-{{< icon-block icon="fa-solid fa-coins" text="Kostnads- effektivt" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-code" text="Åpen kildekode" link="" color="#32cd32">}}
-{{< /icon-block-container >}}
+Det er mange måter en forsknings- og utdanningsorganisasjon kan anskaffe Safesprings skytjenester på, for eksempel ved at innkjøpsfunksjonen gjennomfører en egen anbudskonkurranse eller gjennomfører en ny anbudskonkurranse fra annat rammeavtale. Den enkleste og raskeste måten er imidlertid å bruke OCRE 2024 av tre grunner:
 
-### Vårt engasjement for innovasjon innen forskning og utdanning
-Safespring er stolte av å støtte forskning og utdanning, og vi forstår at disse sektorene står overfor unike utfordringer og behov. Vårt engasjement for innovasjon, samt vårt samarbeid med OCRE, gjør at vi kan tilby skreddersydde løsninger som fremmer forskningssamarbeid, tilgang til høykvalitets ressurser og bærekraftig utvikling.
+1. Rammeavtalen har ferdige, [kundevennlige vilkår og betingelser](https://about.geant.org/wp-content/uploads/2025/01/Volume3-GEANT-Terms-and-Conditions-for-IT-Contracts-2025final-1.pdf).
+2. Det er ikke nødvendig å legge inn anbud på nytt - det er bare å kontakte Safespring direkte.
+3. Prisene er allerede rabatterte, men kan forhandles ytterligere.
 
-### Som en pålitelig partner innen forskning og utdanning, tilbyr vi:
+{{< icon-block-small-container >}}
+    {{< icon-block-small icon="fa-solid fa-table" text="Tjenestekatalog" link="/geant/service-catalogue/" color="#195F8C">}}
+    {{< icon-block-small icon="fa-solid fa-coins" text="Prisliste" link="/geant/price/" color="#3C9BCD" >}}
+{{< /icon-block-small-container >}}
 
-1. Støtte for forskningsprosjekter gjennom sikker datahåndtering og tilpasset skyinfrastruktur.
-1. Tilbud om skybaserte løsninger som fremmer digital transformasjon innen utdanning, som e-læring og samarbeidsplattformer.
-1. Integrerte tjenester for å lette datainnsamling, analyse og lagring, som fremmer effektiv forskning og raskere resultater.
-1. Tilpasset støtte og ekspertise for å sikre at institusjonenes spesifikke krav og behov oppfylles.
+{{< distance >}}
 
-Vår ekspertise og partnerskap med OCRE gjør at vi kan levere de beste og mest effektive løsningene for å muliggjøre høykvalitets forskning og utdanning. La Safespring være din partner for å realisere ditt fulle potensiale innen forskning og utdanning.
+<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url(/img/card/ocre-background-blue.svg); display: flex;justify-content: center; align-items: center;" alt="">
+        <img src="/img/card/ocre-logo-white.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    </div>
+<div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+    <h3>Sjekk om organisasjonen din kan bruke OCRE 2024</h3>
+    <p>Skriv inn navnet på organisasjonen din for å sjekke om du kan bruke OCRE 2024-rammeavtalet til å avrop Safesprings tjenester.</p>
+    <br>
+    {{< university-filter-norway >}}
+    <br>
+</div>
+</div>
 
-### OCRE Cloud Funding for forskning
-Den 15. september 2020 lanserte OCRE sin første finansieringsanrop for adopsjon av skytjenester som er tilgjengelige via OCRE IaaS+ rammeavtale. To påfølgende prosjektanrop er planlagt åpnet i februar og juli 2021.
 
-Under dette første skyfinansieringssamtalen har OCRE som mål å finansiere forbruket av infrastruktur skytjenester (IaaS, PaaS, SaaS, markedsplass) av prosjekter som kan bli tydelige utstillinger for fordelene med å bruke skytjenester for å påvirke forskningsresultatene positivt. Les mer på https://www.ocre-project.eu/funding-opportunities
+{{< distance >}}
 
-## Slik handler du tjenester på OCRE-avtalen
-{{< ingress >}}
-For å handle Safespring-tjenester via OCRE-avtalen, ta direkte kontakt med Safespring.
-{{< /ingress >}}
+### Om OCRE
+OCRE 2024-rammeavtalet er en europeisk rammeavtale for skytjenester som er anskaffet av GÉANT, paraplyorganisasjonen for nasjonale forsknings- og utdanningsnettverk.
 
-Safesprings tjenester er klare til bruk. Hvis du er innenfor akademisk sektor i Europa eller tilknyttet Sunet eller Sikt, kan du enkelt bruke vår skyplattform som allerede er innkjøpt i henhold til OCRE-avtalen.
+OCRE 2024 er den tredje iterasjonen av GÉANTs rammeavtale for skytjenester, som siden 2016 har muliggjort digital transformasjon i Europa ved å koble sammen tilbudet av innovative skytjenesteleverandører med behovene til ulike deler av forsknings- og utdanningssektoren. OCRE 2024 er anskaffet for hele Europa med støtte fra GN5-1-prosjektet og gjelder i 39 land i fem år, fra 2025 til 2030.
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jeg er salgssjef i Sverige og hjelper deg med å bruke våre tjenester som allerede er innkjøpt i henhold til OCRE-avtalen.
+Rammeavtalet gjør det mulig for deltakende organisasjoner å anskaffe skytjenester på en enkel, riktig og kostnadseffektiv måte.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+### Om GÉANT
+
+GÉANT er Europas ledende samarbeid om nettverk og relaterte infrastrukturer for forskning og utdanning, og bidrar til Europas økonomiske utvikling og konkurranseevne. Organisasjonen utvikler, leverer og markedsfører avanserte e-infrastrukturnettverk og relaterte tjenester, og støtter innovasjon og kunnskapsdeling mellom sine medlemmer, partnere og det bredere forsknings- og utdanningssamfunnet.
+
+Finn ut mer på [GÉANTs nettsted](https://geant.org/).
+
+{{< distance >}}
+
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="Safespring i forskning" link="/no/tjenester/case/scilifelab/" linktext="Les use case" text="Safesprings skytjenester spiller en avgjørende rolle i vitenskapelig forskning. Et godt eksempel er samarbeidet vårt med SciLifeLab, der vi leverer compute og lagring." >}}
+
+{{< distance >}}
+
+## Avrop av Safesprings tjenester fra OCRE 2024
+
+Safesprings tjenester er klare til bruk. Hvis du tilhører forsknings- og utdanningssektoren i Norge, kan du enkelt begynne å bruke skytjenestene våre via OCRE 2024.
+
+{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
+Jeg er ansvarlig for forretningsutvikling for akademisk og offentlig sektor, og hjelper deg med å bruke tjenestene våre som allerede er anskaffet under OCRE 2024.
+
+{{< inline "Ring" >}} +46 (0)76 868 00 59 
+[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
