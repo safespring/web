@@ -20,7 +20,7 @@ TOC: "On this page"
 aliases:
     - /OCRE
     - /ocre
-    - /ocre-2024
+    - /en/ocre-2024
 ---
 
 
