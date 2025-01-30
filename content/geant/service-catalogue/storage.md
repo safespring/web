@@ -8,7 +8,7 @@ cardorder: "05"
 date: "2025-01-20"
 draft: false
 intro: "The storage service is built on the reliable and highly scalable Ceph object storage cluster. It supports integration via S3 API, ensuring compatibility with applications and workflows that rely on object-based storage solutions."
-cardintro: ""
+cardintro: "Storage service based on the Ceph object storage cluster using S3-API."
 background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Back to all categories"
