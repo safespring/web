@@ -29,12 +29,9 @@ Siden 2014 har Safespring levert pålitelige skytjenester til forsknings- og utd
 
 ## Hvorfor anvende OCRE 2024?
 
-Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte
-Safesprings skytjenester på, for eksempel gjennom en anbudskonkurranse. En annen
-mulighet er å bruke OCRE 2024-avtalen, som er en europeisk rammeavtale for
-skytjenester anskaffet av GÉANT.:
+Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte Safesprings skytjenester på, for eksempel gjennom en anbudskonkurranse. En annen mulighet er å bruke OCRE 2024, som er en europeisk rammeavtale for skytjenester anskaffet av GÉANT:
 
-1. Rammeavtalen har ferdige [vilkår og betingelser](https://about.geant.org/wp-content/uploads/2025/01/Volume3-GEANT-Terms-and-Conditions-for-IT-Contracts-2025final-1.pdf).
+1. Rammeavtalen har ferdige [kundevennlige vilkår og betingelser](https://about.geant.org/wp-content/uploads/2025/01/Volume3-GEANT-Terms-and-Conditions-for-IT-Contracts-2025final-1.pdf).
 2. Det er ikke nødvendig å legge inn anbud på nytt - det er bare å kontakte Safespring direkte.
 3. Prisene er allerede rabatterte, men kan forhandles ytterligere.
 
@@ -62,7 +59,7 @@ skytjenester anskaffet av GÉANT.:
 {{< distance >}}
 
 ### Om OCRE
-OCRE 2024-avtalen er en europeisk rammeavtale for skytjenester som er anskaffet av GÉANT, paraplyorganisasjonen for nasjonale forsknings- og utdanningsnettverk.
+OCRE 2024 er en europeisk rammeavtale for skytjenester som er anskaffet av GÉANT, paraplyorganisasjonen for nasjonale forsknings- og utdanningsnettverk.
 
 OCRE 2024 er den tredje iterasjonen av GÉANTs rammeavtale for skytjenester, som siden 2016 har muliggjort digital transformasjon i Europa ved å koble sammen tilbudet av innovative skytjenesteleverandører med behovene til ulike deler av forsknings- og utdanningssektoren. OCRE 2024 er anskaffet for hele Europa med støtte fra GN5-1-prosjektet og gjelder i 39 land i fem år, fra 2025 til 2030.
 
