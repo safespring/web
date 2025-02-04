@@ -11,7 +11,7 @@ language: "No"
 ## Om bruk av Cookies
 I henhold til loven skal alle som besøker et nettsted informeres om såkalte cookies.
 
-En cookie er en liten tekstfil som nettstedet lagrer på datamaskinen din. Les mer om cookies på den svenske [Post- og Telestyrelsens nettsted](https://pts.se/sv/bransch/regler/lagar/lag-om-elektronisk-kommunikation/kakor-cookies/ "Post- og Telestyrelsens nettside om Cookies").
+En cookie er en liten tekstfil som nettstedet lagrer på datamaskinen din. Les mer om cookies på den svenske [Post- og Telestyrelsens nettsted](https://pts.se/internet-och-telefoni/kakor-cookies/ "Post- og Telestyrelsens nettside om Cookies").
 
 Safesprings nettsted, med adresser som ender på safespring.se eller safespring.com, bruker cookies. Cookien inneholder ingen personlig informasjon, men brukes til å lage aggregert data. Dataen brukes for å forbedre brukervennligheten på Safesprings nettsteder, samt i markedsføringsøyemed.
 
@@ -22,7 +22,7 @@ En oppdatert liste over hvilke cookies vi bruker, henviser vi til dokumentasjone
 
 Safespring bruker Matomo som analyseverktøy. Matomo bruker cookies. Informasjonen som genereres av disse (inkludert IP-adresser) vil bli håndtert på Safesprings infrastruktur. Denne informasjonen brukes i formålet med å evaluere besøksstatistikk.
 
-Safespring følger [Post- og Telestyrelsens](https://pts.se/sv/bransch/regler/lagar/lag-om-elektronisk-kommunikation/kakor-cookies/ "Post- og Telestyrelsens nettside om Cookies") og [IAB Swedens](http://www.minacookies.se/rekommendation-se/ "IAB Swedens anbefalinger for bruk av cookies") anbefalinger for bruk av cookies.
+Safespring følger svenske [Post- og Telestyrelsens](https://pts.se/internet-och-telefoni/kakor-cookies/ "Post- og Telestyrelsens nettside om Cookies") og [IAB Swedens](http://www.minacookies.se/rekommendation-se/ "IAB Swedens anbefalinger for bruk av cookies") anbefalinger for bruk av cookies.
 
 ## Om personopplysninger
 Safespring er ansvarlig for behandlingen av personopplysninger på Safesprings nettsteder.
