@@ -10,7 +10,7 @@ general: "yes"
 ## Om användandet av Cookies
 Enligt lag ska alla som besöker en webbplats informeras om så kallade cookies.  
 
-En cookie är en liten textfil som webbplatsen lagrar i din dator. Läs mer om cookies på svenska [Post- och Telestyrelsens webbplats](https://pts.se/sv/bransch/regler/lagar/lag-om-elektronisk-kommunikation/kakor-cookies/ "Post- och Telestyrelsens webbsida om Cookies").
+En cookie är en liten textfil som webbplatsen lagrar i din dator. Läs mer om cookies på svenska [Post- och Telestyrelsens webbplats](https://pts.se/internet-och-telefoni/kakor-cookies/ "Post- och Telestyrelsens webbsida om Cookies").
 
 Safesprings webbplats, med adresser som slutar på safespring.se eller safespring.com använder sig av cookies. Cookien innehåller ingen personinformation, utan används för att skapa sammanlagd data. Datan används för att förbättra användbarheten på Safesprings webbplatser samt i marknadsföringssyfte.
 
@@ -21,7 +21,7 @@ En aktuell lista över vilka cookies som vi använder oss av hänvisar vi till d
 
 Safespring använder Matomo som analysverktyg. Matomo använder cookies. Informationen som genereras av dessa (inklusive IP-adresser) kommer att hanteras på Safesprings infrastruktur. Denna information används i syfte att utvärdera besöksstatistik.
 
-Safespring följer [Post- och Telestyrelsens](https://pts.se/sv/bransch/regler/lagar/lag-om-elektronisk-kommunikation/kakor-cookies/ "Post- och Telestyrelsens webbplats om Cookies") och [IAB Swedens](http://www.minacookies.se/rekommendation-se/ "IAB Swedens rekommendationer för användning av cookies") rekommendationer för användning av cookies.
+Safespring följer [Post- och Telestyrelsens](https://pts.se/internet-och-telefoni/kakor-cookies/ "Post- och Telestyrelsens webbplats om Cookies") och [IAB Swedens](https://iabsverige.se "IAB Swedens rekommendationer för användning av cookies") rekommendationer för användning av cookies.
 
 ## Om personuppgifter
 Safespring är personuppgiftsansvarig för behandlingen av personuppgifter på Safesprings webbplatser.
