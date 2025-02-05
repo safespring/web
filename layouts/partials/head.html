@@ -22,9 +22,6 @@
 
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
-<script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>
-<script src="{{ $js1.RelPermalink }}" defer></script>
-
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
