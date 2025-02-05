@@ -32,7 +32,8 @@
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
 {{ $faCSS := resources.Get "css/fontawesome/all.min.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $faCSS.RelPermalink }}">
+<link rel="preload" as="style" href="{{ $faCSS.RelPermalink }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ $faCSS.RelPermalink }}"></noscript>
 
 <link rel="preload" href="{{ $css1.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ $css1.RelPermalink }}"></noscript>
