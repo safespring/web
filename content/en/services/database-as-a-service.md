@@ -7,7 +7,7 @@ cardcolor: "#5C509D"
 cardorder: "4"
 date: 2022-04-29T11:58:58+01:00
 draft: false
-section: "DBaaS"
+section: ""
 intro: "Built on top of the pressure-tested ClusterControl, CCX enables you to provision, deploy and manage performant, open source database clusters in moments."
 cardintro: "Database as a service lets you deploy and access managed, secured database clusters."
 background: "safespring-background-dbaas.svg"
@@ -17,6 +17,7 @@ sidebarlinkname: ""
 sidebarlinkurl: ""
 sidebarsection: ""
 sidebarimage: "safespring-dbaas.svg"
+toplogo: "severalninses-logo.png"
 sidebartitle: ""
 sidebartext: ""
 sidebardate: ""
@@ -25,13 +26,18 @@ sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
 ---
 
-
-![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fas fa-repeat" text="Automated Operations" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-gauge-high" text="High Availability" link="" color="#32CD32">}}
+    {{< icon-block icon="fas fa-sliders" text="Advanced Traffic Control" link="" color="#195F8C">}}
+    {{< icon-block icon="fas fa-lock-open" text="Open Standards" link="" color="#FA690F">}}
+    {{< icon-block icon="fak fa-safespring-icon" text="Safespring Infrastructure" link="/en/services/compute/" color="#417DA5">}}
+    {{< icon-block icon="fas fa-clock-rotate-left" text="Automated Backups" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
 The Database-as-a-Service solution CCX takes care of everything, giving you accessible, high-performance databases for your applications.
