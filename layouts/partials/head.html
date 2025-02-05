@@ -22,8 +22,8 @@
 
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
-  <link rel="stylesheet" href="{{ $css1.RelPermalink }}">
-  <script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" ></script>
+<script src="https://kit.fontawesome.com/e5abdf79b6.js" crossorigin="anonymous" defer></script>
+<script src="{{ $js1.RelPermalink }}" defer></script>
 
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
