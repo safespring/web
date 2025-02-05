@@ -22,6 +22,8 @@
 
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
+  <link rel="preload" as="style" href="{{ $css1.RelPermalink }}">
+
   <!-- Scripts -->
   {{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
@@ -29,7 +31,6 @@
   {{ $js4 := resources.Get "js/text-balancer.js" }}
   {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js2 $js3 $js4) | minify | fingerprint }}
 
-  <script src="{{ $js1.RelPermalink }}" ></script>
   <script src="{{ $scripts.RelPermalink }}" defer></script>
 
   <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
