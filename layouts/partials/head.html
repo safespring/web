@@ -31,10 +31,9 @@
 
   {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
 
-  <link rel="preload" as="style" href="{{ $css1.RelPermalink }}">
-
+<link rel="preload" href="{{ $css1.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ $css1.RelPermalink }}"></noscript>
   <!-- Scripts -->
-  {{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
   {{ $js2 := resources.Get "js/lazysizes.min.js" }}
   {{ $js3 := resources.Get "js/ancor-scroll.js" }}
   {{ $js4 := resources.Get "js/text-balancer.js" }}
