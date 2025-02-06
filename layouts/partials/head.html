@@ -25,7 +25,6 @@
 <link rel="preload" href="/fonts/Safespring-Mono-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Safespring-Mono-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">-->
 
-
 {{ if .Params.background }}
   <link rel="preload" as="image" href="/img/background/{{ .Params.background }}" type="image/{{ (index (split .Params.background ".") 1) }}">
 {{ else }}
@@ -33,20 +32,18 @@
 {{ end }}
 
 {{ $css1 := resources.Get "css/main.css" | minify | fingerprint }}
-{{ $combinedCSS := resources.Concat "css/combined.css" (slice $css1) | minify | fingerprint }}
+{{ $fa1CSS := resources.Get "css/solid.min.css" | minify | fingerprint }}
+{{ $fa2CSS := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
+{{ $combinedCSS := resources.Concat "css/combined.css" (slice $css1 $fa1CSS $fa2CSS) | minify | fingerprint }}
+
 <link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
 
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}
 {{ $js2 := resources.Get "js/ancor-scroll.js" }}
 {{ $js3 := resources.Get "js/text-balancer.js" }}
-
 {{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3) | minify | fingerprint }}
 
 <script src="{{ $scripts.RelPermalink }}" defer></script>
-
-<script defer src="/js/solid.min.js"></script>
-<script defer src="/js/custom-icons.min.js"></script>
-<script defer src="/js/fontawesome.min.js"></script>
 
 <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
 <meta property="og:type" content="website">
