@@ -31,8 +31,9 @@
 -->
 
 <div class="contact-container">
-  <div class="contact-image" style="background-image: url({{.Get `picture` }});">
-  </div>
+  {{ if .Params.picture }}
+  <div class="contact-image" style="aspect-ratio: 1 / 1; background-image: url(/img/people/{{.Get `picture` }});">
+  </div>{{ end }}
   <div class="contact-text-container">
     <div class="contact-text">
       <div class="contact-name">

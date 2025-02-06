@@ -131,7 +131,7 @@
 }
 
 pre {
-	font-family: "Safespring Mono";
+	font-family: "safespring mono";
 }
 
 pre > code {
@@ -2474,14 +2474,13 @@ display: none;
 .contact-image {
 	width: 100px !important;
 	height: 100px !important;
-	overflow: hidden;
 	background-position: center;
 	background-size: cover;
 	border-radius: 500px;
 }
 
 .contact-text-container {
-	margin: 30px;
+	margin: 30px 10px;
 }
 
 .contact-name {
@@ -8458,7 +8457,7 @@ details[open] summary {
 	text-align:center;
 }
 
-.icon-block i {
+.icon-block svg {
 	font-size:max(50px, 70px);
 	margin:0;
 }

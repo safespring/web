@@ -32,8 +32,8 @@
     {{ $pageParams := .Params }}
     {{ range where .Site.Data.authors "name" $pageParams.author }}
     <div itemscope itemtype="http://schema.org/Person" class="author-container">
-      <div class="author-image" style="background-image: url(/img/author/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})">
-        <img itemprop="image" src="/img/author/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }}" alt="{{ .name }}" style="display:none;">
+      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})">
+        <img itemprop="image" src="/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }}" alt="{{ .name }}" style="display:none;">
       </div>
       <div class="author-info">
         <p class="author-name" itemprop="name">{{ .name }}</p>
