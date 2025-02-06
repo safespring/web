@@ -31,7 +31,7 @@
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}
 {{ $js2 := resources.Get "js/ancor-scroll.js" }}
 {{ $js3 := resources.Get "js/text-balancer.js" }}
-{{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2 $js3) | minify | fingerprint }}
+{{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2) | minify | fingerprint }}
 
 <script src="{{ $scripts.RelPermalink }}" defer></script>
 
