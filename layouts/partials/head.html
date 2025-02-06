@@ -26,7 +26,7 @@
 {{ $fa3CSS := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
 {{ $combinedCSS := resources.Concat "css/combined.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
 
-<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
 
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}
 {{ $js2 := resources.Get "js/ancor-scroll.js" }}
