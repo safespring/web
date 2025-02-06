@@ -19,11 +19,10 @@ pageimage: ""
 ### Våra medarbetare
 Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte att ta kontakt om du har frågor eller behöver hjälp med något specifikt.
 
-{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
-{{< contact picture="/img/kontakt/safespring-daniel-melin-2024.webp" title="Affärsutveckling" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
-{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Molnarkitekt" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
-{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
+{{< contact picture="/img/employee/petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
+{{< contact picture="/img/employee/daniel-m.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
+{{< contact picture="/img/employee/gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
+{{< contact picture="/img/employee/marcus.webp" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
 
 {{< distance >}}
 
