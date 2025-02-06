@@ -412,6 +412,3 @@ document.querySelectorAll('pre').forEach((pre) => {
       });
     </script>
     {{ end }}
-<!--
-{{ $js1 := resources.Get "js/safespring-cookie-consent.js" | minify | fingerprint }}
-<script src="{{ $js1.RelPermalink }}" defer></script>-->

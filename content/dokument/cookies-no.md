@@ -27,4 +27,4 @@ Safespring følger svenske [Post- og Telestyrelsens](https://pts.se/internet-och
 ## Om personopplysninger
 Safespring er ansvarlig for behandlingen av personopplysninger på Safesprings nettsteder.
 
-Safespring bruker statistikk- og analyseverktøy for å få et bilde av hvordan besøkende bruker nettstedet i formål om å utarbeide statistikk og forbedre navigasjon og struktur. På nettstedet kan brukere registrere seg i noen av Safesprings søknadsskjemaer.
+Safespring bruker statistikk- og analyseverktøy for å få et bilde av hvordan besøkende bruker nettstedet i formål om å utarbeide statistikk og forbedre navigasjon og struktur. På nettstedet kan brukere registrere seg i noen av Safesprings søknadsskjemaer. 30OCpB*cREHRyu1R
