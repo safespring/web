@@ -8502,7 +8502,7 @@ details[open] summary {
 	.icon-block p {
 		font-size:14px;
 	}
-	.icon-block i {
+	.icon-block svg {
 		font-size:min(calc(2.5rem + 2vw), 70px);
 		margin:0;
 	}
