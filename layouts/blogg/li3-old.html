@@ -31,7 +31,7 @@
 <div class="heading-sub">
   <img class="heading-background" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else }}/img/blogg/background/safespring_background_0.jpg{{ end }}');background-size:cover;background-position:center;">
   <div class="heading-content">
-    <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ if .Params.sectiontext }}{{ .Params.section }}{{ else }}{{ .Section }}{{ end }}</a> {{ .Date.Format "2006-01-02" }}</div><br>
+    <div class="content-meta-post"><a class="content-category-blogg" href="/{{ .Section }}">{{ if .Params.sectiontext }}{{ .Params.sectiontext }}{{ else }}{{ .Section }}{{ end }}</a> {{ .Date.Format "2006-01-02" }}</div><br>
     <h1 class="post-heading-firstpage">{{ .Title }}</h1>
   </div>
 </div>

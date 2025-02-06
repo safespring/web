@@ -3,8 +3,8 @@
       {{ if .Params.toplogo }}
       <img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">
       {{ end }}
-      <a class="{{ if .Params.sectionhighlight }}sectionhighlight{{end}}" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
-        {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
+      <a class="{{ if .Params.sectionhighlight }}sectionhighlight{{end}}" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #195F8C;{{ end }}'>
+        {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.sectiontext }}{{ .Params.sectiontext }}{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
       </a>
     </div>
     {{ if .Params.sectionhighlight }}<div style="margin-bottom: 40px;"></div>{{end}}
