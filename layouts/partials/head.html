@@ -166,10 +166,11 @@ img {
     width:250px;
   }
 p, ol {
-  font:300 17px var(--mon-font);
-  color:var(--alt-color);
+  font:300 17px montserrat;
+  color:#323232;
   line-height:1.5;
 }
+
 </style>
 
   {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
