@@ -4,8 +4,6 @@
   {{ $fa3CSS := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
   {{ $combinedCSS := resources.Concat "css/combined.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
-
-
 <header id="navbar" class="site-header">
   <div class="site-header-wrapper">
     <div class="site-header-logo">

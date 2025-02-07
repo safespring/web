@@ -11,10 +11,11 @@
   defer>
 </script>
 {{ if .Params.background }}
-  <link rel="preload" as="image" href="/img/background/{{ .Params.background }}" type="image/{{ (index (split .Params.background ".") 1) }}">
-  {{ else }}
-  <link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" type="image/svg+xml">
-  {{ end }}
+  <link rel="preload" as="image" href="/img/background/{{ .Params.background }}" fetchpriority="high" type="image/{{ (index (split .Params.background ".") 1) }}">
+{{ else }}
+  <link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" fetchpriority="high" type="image/svg+xml">
+{{ end }}
+
   <style>
     @font-face {
   font-family: 'montserrat';
