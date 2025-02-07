@@ -304,12 +304,6 @@ margin-top:1px;
 	margin-bottom:0;
 }
 
-p, ol {
-	font:300 17px var(--mon-font);
-	color:var(--alt-color);
-	line-height:1.5;
-}
-
 p.url {
 	word-break: break-all;
 }

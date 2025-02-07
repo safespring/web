@@ -165,6 +165,11 @@ img {
 .w250 {
     width:250px;
   }
+p, ol {
+  font:300 17px var(--mon-font);
+  color:var(--alt-color);
+  line-height:1.5;
+}
 </style>
 
   {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
