@@ -7,6 +7,7 @@ intro: "The Safespring Knowledge Hub is a comprehensive collection of Safespring
 section: "Safespring"
 nosidebar: "none"
 fullwidth: "yes"
+nolist: "x"
 ---
 
 {{< latest-content-filter >}}
