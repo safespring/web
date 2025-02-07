@@ -10,7 +10,7 @@
   data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"
   defer>
 </script>
-  {{ if .Params.background }}
+{{ if .Params.background }}
   <link rel="preload" as="image" href="/img/background/{{ .Params.background }}" type="image/{{ (index (split .Params.background ".") 1) }}">
   {{ else }}
   <link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" type="image/svg+xml">
@@ -166,7 +166,7 @@ img {
     width:250px;
   }
 </style>
-<!--
+
   {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
   {{ $fa1CSS := resources.Get "css/solid.min.css" | minify | fingerprint }}
   {{ $fa2CSS := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
@@ -174,7 +174,7 @@ img {
   {{ $combinedCSS := resources.Concat "css/combined.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
 
 <link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}" >
--->
+
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}
 {{ $js2 := resources.Get "js/ancor-scroll.js" }}
 {{ $js3 := resources.Get "js/text-balancer.js" }}
