@@ -18,7 +18,7 @@ list: "horisontal"
 Are you passionate about cloud technology and looking for an opportunity to make a real impact? Join our team at Safespring, a leading provider of Infrastructure as a Service (IaaS).
 {{< /ingress >}}
 
-As a member of our team, you'll have the chance to work with cutting-edge technology and collaborate with talented professionals to deliver top-quality IaaS solutions to our customers. Whether you're a developer, engineer, or support specialist, we have a role for you..
+As a member of our team, you'll have the chance to work with cutting-edge technology and collaborate with talented professionals to deliver top-quality IaaS solutions to our customers. Whether you're a developer, engineer, or support specialist, we have a role for you.
 
 At Safespring, we believe in fostering a culture of continuous learning and growth. We offer a range of training and development opportunities to help you advance your career and stay up-to-date on the latest industry trends.
 
