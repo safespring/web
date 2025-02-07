@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
-  <g id="Group_115" data-name="Group 115" transform="translate(-267 -3998)">
-    <circle id="Ellipse_7" data-name="Ellipse 7" cx="15.5" cy="15.5" r="15.5" transform="translate(267 3998)" fill="rgba(25,95,140,0.1)"/>
-    <path id="safespring_facebook" d="M30.38,8.408,30.794,5.7H28.2V3.947a1.353,1.353,0,0,1,1.524-1.463H30.9V.184A14.307,14.307,0,0,0,28.809,0a3.3,3.3,0,0,0-3.536,3.641V5.7H22.9V8.408h2.376v6.54H28.2V8.408Z" transform="translate(255.599 4005.932)" fill="#195f8c"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"><g id="Group_115" transform="translate(-267 -3998)"><circle id="Ellipse_7" cx="15.5" cy="15.5" r="15.5" fill="rgba(25,95,140,0.1)" transform="translate(267 3998)"/><path id="safespring_facebook" fill="#195f8c" d="m30.38 8.4.41-2.7H28.2V3.95a1.35 1.35 0 0 1 1.52-1.47h1.18V.18A14 14 0 0 0 28.8 0a3.3 3.3 0 0 0-3.53 3.64V5.7H22.9v2.7h2.38v6.55h2.92V8.4Z" transform="translate(255.599 4005.932)"/></g></svg>
