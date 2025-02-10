@@ -192,7 +192,7 @@ Detta har många fördelar, såsom bättre prestanda och närhet till våra kund
   overflow: hidden;
 }
 
-.card__content > figure > img {
+.card__content > figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;

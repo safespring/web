@@ -325,7 +325,7 @@ h2:first-child {
 	height:auto;
 }
 
-p > img {
+p img {
 	border-radius:10px;
 }
 
@@ -3504,7 +3504,7 @@ grid-template-columns:1.3fr 0.7fr */;
 	padding:50px 0px 0px 0px;
 }
 
-.kontakt-sidebar div:first-child>img {
+.kontakt-sidebar div:first-child img {
 	padding:0px 0px 0px 0px;
 	width:95px;
 }
@@ -5373,7 +5373,7 @@ ol li::before {
 		font-size:1.5rem;
 	}
 
-	.img-250>img {
+	.img-250 img {
 		height:250px !important;
 		width:auto;
 	}
