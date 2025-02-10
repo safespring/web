@@ -14,11 +14,11 @@
 {{ partial "explorer.html" . }}
 {{ else }}
 {{ partial "head.html" . }}
-<!-- NAVBAR 
-{{ partial "header.html" . }}-->
+<!-- NAVBAR -->
+{{ partial "header.html" . }}
 <!-- HEADING -->
 
-<<div class="heading-default-single" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}'); background-size: cover; background-position: center;">
+<div class="heading-default-single" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>
 
