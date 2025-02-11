@@ -217,6 +217,11 @@ p, ol {
   {{ $fa2CSS := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
   {{ $fa3CSS := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
   {{ $combinedCSS := resources.Concat "css/combined.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
+
+<!-- Preload CSS and load asynchronously -->
+<link rel="preload" href="{{ $combinedCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
+</noscript>
 <!-- END - CSS -->
 </head>

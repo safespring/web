@@ -68,7 +68,7 @@ Lagra och distribuera stora mediefiler, dokument och andra digitala tillgångar 
 
 #### Stordataanalys
 
-Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/tjanster/case/scilifelab/.
+Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/tjanster/case/scilifelab/).
 
 #### Databackup och återställning
 
