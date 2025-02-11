@@ -745,6 +745,6 @@
 {{ $fa2CSS := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
 {{ $fa3CSS := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
 {{ $combinedCSS := resources.Concat "css/combined-css.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
 <!-- END - CSS -->
 </head>
