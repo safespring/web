@@ -10,7 +10,7 @@
   data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"
   defer>
 </script>
-<link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml">
+<link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml" importance="high">
 {{ if .Params.background }}
 <link rel="preload" as="image" href="/img/background/{{ .Params.background }}" fetchpriority="high" type="image/{{ (index (split .Params.background ".") 1) }}">
 {{ else }}
