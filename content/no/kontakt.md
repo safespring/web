@@ -19,19 +19,18 @@ pageimage: ""
 ### Våre ansatte
 Her finner du kontaktinformasjon til noen av våre ansatte. Ikke nøl med å ta kontakt hvis du har spørsmål eller trenger hjelp med noe spesifikt.
 
-{{< contact picture="/img/kontakt/petter-hylin.jpg" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
-{{< contact picture="/img/kontakt/safespring-daniel-melin-2024.webp" title="Forretningsutvikling" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
-{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
-{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
-{{< contact picture="/img/kontakt/marcus-boberg.jpg" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
+{{< contact picture="petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
+{{< contact picture="daniel-m.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
+{{< contact picture="gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
+{{< contact picture="/marcus.webp" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
 
 {{< distance >}}
 
 ### Adresser
 Nedenfor finner du adressene til våre kontorer i Sverige og Norge. Klikk på lenkene for å få veibeskrivelser via Google Maps.
 
-{{< contact picture="/img/kontakt/stockholm.png" title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
-{{< contact picture="/img/kontakt/bergen.png" title="Norge" name="Bergen" phone="+4735688870" address="Lars Hilles gate 30, 5008 BERGEN" address-link="https://maps.app.goo.gl/bpo9Urkys5sEYHDt7">}}
+{{< contact title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
+{{< contact title="Norge" name="Bergen" phone="+4735688870" address="Lars Hilles gate 30, 5008 BERGEN" address-link="https://maps.app.goo.gl/bpo9Urkys5sEYHDt7">}}
 
 {{< distance >}}
 

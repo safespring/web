@@ -1,41 +1,41 @@
 - name: "Anders Trier-Vaage"
   title: "Senior Infrastructure Engineer"
-  image_happy: "anders-trier-vaage.jpeg"
+  image_happy: "anders.webp"
 
 - name: "Amelia Andersdotter"
   title: "Risk & Compliance Manager"
-  image_happy: "amelia-safespring-1.webp"
+  image_happy: "amelia-1.webp"
   image_firm: "amelia-safespring-2.webp"
 
 - name: "Daniel de Oquiñena"
   title: "Cloud Architect"
-  image_happy: "daniel.webp"
+  image_happy: "daniel-o.webp"
 
 - name: "Gabriel Paues"
   title: "Cloud Architect"
-  image_happy: "gabriel-paues.webp"
+  image_happy: "gabriel.webp"
 
 - name: "Jarle Bjørgeengen"
   title: "Former Chief Product Officer"
-  image_happy: "jarle-bjorgeengen.webp"
+  image_happy: "jarle.webp"
 
 - name: "Øyvind Christiansen"
   title: "Senior Infrastructure Engineer"
-  image_happy: "oyvind-christiansen.webp"
+  image_happy: "oyvind.webp"
 
 - name: "Fredric Wallsten"
   title: "CEO, Safespring"
-  image_happy: "fredric-wallsten-1.webp"
-  image_firm: "fredric-wallsten-2.webp"
+  image_happy: "fredric-1.webp"
+  image_firm: "fredric-2.webp"
 
 - name: "Niklas Hagman"
   title: "OpenShift Platform Specialist"
-  image_happy: "safespring-niklas-hagman.webp"
+  image_happy: "niklas.webp"
 
 - name: "Jon Ander Novella de Miguel"
   title: "Safespring Engineer"
-  image_happy: "jon-ander.webp"
+  image_happy: "jon.webp"
 
 - name: "Jan Ivar Beddari"
   title: "Head of Research & Development"
-  image_happy: "jan-ivar-beddari.webp"
+  image_happy: "jan-ivar.webp"

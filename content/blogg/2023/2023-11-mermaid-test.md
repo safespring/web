@@ -94,21 +94,6 @@ nosidebar: ""
 
 <button id="openModalButton">Se större bild</button>
 
-
-{{% 700 %}}
-Lorem ipsum is a type of placeholder text, commonly used in the graphic, print, and web design industries. It is derived from parts of Cicero's "De Finibus Bonorum et Malorum" (The Extremes of Good and Evil) written in 45 BC. The text became popular as a nonsensical placeholder in the 1960s with Letraset transfer sheets, which contained passages from "De Finibus Bonorum et Malorum" for use by graphic designers.
-
-The purpose of lorem ipsum is to create a natural-looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not uncommon in the printing and typesetting industry before the widespread adoption of computers, it helps designers plan out visual elements without the distraction of meaningful content. 
-
-Over time, the original Latin text has been modified, often resulting in versions that are more nonsensical than the original, but the core purpose remains the same: to provide a visually balanced and neutral backdrop for design layouts.
-
-{{< distance >}}
-
-
-Lorem ipsum is a type of placeholder text, commonly used in the graphic, print, and web design industries. It is derived from parts of Cicero's "De Finibus Bonorum et Malorum" (The Extremes of Good and Evil) written in 45 BC. The text became popular as a nonsensical placeholder in the 1960s with Letraset transfer sheets, which contained passages from "De Finibus Bonorum et Malorum" for use by graphic designers.
-
-{{% /700 %}}
-
 {{< distance >}}
 
 

@@ -3,8 +3,8 @@
       {{ if .Params.toplogo }}
       <img src="/img/logos/{{ .Params.toplogo }}" alt="Logotyp" class="toplogo">
       {{ end }}
-      <a class="{{ if .Params.sectionhighlight }}sectionhighlight{{end}}" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
-        {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
+      <a class="{{ if .Params.sectionhighlight }}sectionhighlight{{end}}" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #195F8C;{{ end }}'>
+        {{ if eq .Section "om-safespring" }}Om Safespring{{ else if eq .Section "referenser" }}Kundreferenser{{ else if .Params.sectiontext }}{{ .Params.sectiontext }}{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
       </a>
     </div>
     {{ if .Params.sectionhighlight }}<div style="margin-bottom: 40px;"></div>{{end}}
@@ -22,7 +22,7 @@
         <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Params.sidebarlinkname }}
       </a>
       {{ if .Params.sidebarlinkurl2 }}
-      <a style="margin:25px 0 0 0; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_blank" class="text-button">
+      <a style="margin:25px 0 0 0; padding: 1px 0 0 0;" href="{{ .Params.sidebarlinkurl2 }}" target="_self" class="text-button">
         {{ .Params.sidebarlinkname2 }}
       </a>
       {{ end }}
