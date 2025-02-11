@@ -746,6 +746,6 @@
 {{ $combinedCSS := resources.Concat "css/combined.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
 
 <!-- Preload CSS and load asynchronously -->
-<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
+<!-- <link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}"> -->
 <!-- END - CSS -->
 </head>
