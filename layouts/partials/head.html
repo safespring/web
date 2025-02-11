@@ -749,9 +749,9 @@
 {{ $fa2CSS := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
 {{ $fa3CSS := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
 
-<link rel="preload" as="style" href="{{ $fa1CSS.RelPermalink }}" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" as="style" href="{{ $fa2CSS.RelPermalink }}" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" as="style" href="{{ $fa3CSS.RelPermalink }}" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ $fa1CSS.RelPermalink }}" as="style" media="all" />
+<link rel="preload" href="{{ $fa2CSS.RelPermalink }}" as="style" media="all" />
+<link rel="preload" href="{{ $fa3CSS.RelPermalink }}" as="style" media="all" />
 
 <!-- Fallback för äldre webbläsare -->
 <noscript>
