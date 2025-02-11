@@ -452,11 +452,6 @@ font-variant-numeric:normal;
 scroll-behavior:smooth;
 }*/
 
-body {
-	margin:0;
-	background-color:#fafefe;
-}
-
 .light-backround {
 	color:#323232 !important;
 }
