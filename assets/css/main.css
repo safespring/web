@@ -1493,6 +1493,14 @@ color:var(--unCheckedColor);
 		border-radius:10px;
 		width:100%;
 	}
+	    .safespring-footer-information-menu>a{
+      display:initial;
+      font:400 16px/1 var(--mon-font);
+  }
+  	    .safespring-footer-information-menu>ul {
+      display:initial;
+      font:400 16px/1 var(--mon-font);
+  }
 
 	.safespring-footer-third {
 		align-items:flex-start;
