@@ -45,15 +45,42 @@
     src: url('/fonts/hind-semibold.woff2') format('woff2');
     font-display: swap;
   }
+  @media (min-width: 900px) { 
+    .site-header-button-mail::before {
+      font:var(--fa-font-solid);
+      content:"\f0e0";
+      margin-right:10px;
+    }
+
+    .site-header-button-mail:hover::before {
+      content:"\f044";
+    }
+  }
   @media only screen and (max-width:900px) {
     .heading-default-single {
       flex-flow:row wrap !important;
-      padding:max(200px, 10%) 10% 10% 10% !important;
+      padding: max(200px, 10%) 10% 10% 10% !important;
     }
 
     .heading-default-single h1{
       max-width:90%;
       font:300 40px/1.1 hind,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !important;
+    }
+    .site-header-wrapper {
+      flex-flow:column nowrap;
+      justify-content:center;
+      align-items:center;
+    }
+    .site-header-logo img {
+      margin:0 auto;
+    }
+    .site-header-nav {
+      flex-flow:row wrap;
+      justify-content:center;
+      margin-top:30px;
+    }
+    .site-header-logo {
+      justify-content:center;
     }
   }
   .heading-default-single {
@@ -198,7 +225,10 @@
     font:16px var(--hind-font-semibold) !important;
   }
 
-  .navbar>* {}
+  .navbar>* {
+
+  }
+  
   .site-header {
     position:fixed;
     top:0;
@@ -208,32 +238,31 @@
     background: rgb(250,254,254);
     background: radial-gradient(circle, rgba(250,254,254,0.8) 42%, rgba(250,254,254,0) 100%);
   }
-  @media only screen and (max-width:900px) {
-    .site-header-wrapper {
-      flex-flow:column nowrap;
-      justify-content:center;
-      align-items:center;
-    }
-    .site-header-logo img {
-      margin:0 auto;
-    }
-    .site-header-nav {
-      flex-flow:row wrap;
-      justify-content:center !important;
-      margin-top:30px;
-    }
-    .site-header-logo {
-      justify-content:center !important;
-    }
-  }
   .site-header {
     transition:top cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
   }
+  @media only screen and (min-width:900px) {
+
   .site-header-wrapper {
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-evenly;
     align-items:end;
+    gap:5%;
+    padding:5% 5% 1% 5%;
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    margin-bottom: -2px;
+  }
+    .site-header-logo {
+    justify-content:flex-start;
+  }
+    .site-header-nav {
+    justify-content:flex-end;
+  }
+}
+    .site-header-wrapper {
+    display:flex;
     gap:5%;
     padding:5% 5% 1% 5%;
     -webkit-backdrop-filter:blur(20px);
@@ -252,7 +281,6 @@
   .site-header-logo {
     display:flex;
     width:350px;
-    justify-content:flex-start;
   }
 
   .site-header-logo img {
@@ -262,7 +290,6 @@
   .site-header-nav {
     display:flex;
     flex-flow:row nowrap;
-    justify-content:flex-end;
     gap:30px;
     width:700px;
   }
@@ -307,17 +334,6 @@
     padding:8px 20px 6px 20px;
   }
 
-  @media (min-width: 768px) { 
-    .site-header-button-mail::before {
-      font:var(--fa-font-solid);
-      content:"\f0e0";
-      margin-right:10px;
-    }
-
-    .site-header-button-mail:hover::before {
-      content:"\f044";
-    }
-  }
 /* ======= MEGA MENU ======= */
 
 @media (max-width: 768px) { 
@@ -616,6 +632,7 @@
     margin-top:25px;
   }
   .site-header-wrapper {
+    flex-flow:column nowrap;
     align-items:flex-start;
     justify-content:center;
 
@@ -688,6 +705,6 @@
 {{ $combinedCSS := resources.Concat "css/combined.css" (slice $mainCSS $fa1CSS $fa2CSS $fa3CSS) | minify | fingerprint }}
 
 <!-- Preload CSS and load asynchronously -->
-  <link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
+<link rel="stylesheet" href="{{ $combinedCSS.RelPermalink }}">
 <!-- END - CSS -->
 </head>
