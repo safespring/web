@@ -12,9 +12,9 @@
 </script>
 <link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml" importance="high">
 {{ if .Params.background }}
-<link rel="preload" as="image" href="/img/background/{{ .Params.background }}" fetchpriority="high" type="image/{{ (index (split .Params.background ".") 1) }}">
+<link rel="preload" as="image" href="/img/background/{{ .Params.background }}" fetchpriority="high" type="image/{{ (index (split .Params.background ".") 1) }}" importance="high">
 {{ else }}
-<link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" fetchpriority="high" type="image/svg+xml">
+<link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" fetchpriority="high" type="image/svg+xml" importance="high">
 {{ end }}
 
 <style>
