@@ -6,6 +6,8 @@ draft: false
 language: "No"
 section: "Safespring"
 Language: "No"
+aliases:
+   - /no/takk-di/
 ---
 <div class="ingress"><p>Safespring har kontorer i Sverige og i Norge med hovedkontor i Stockholm, Sverige.</p></div>
 
