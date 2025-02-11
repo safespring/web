@@ -2,7 +2,7 @@
   <div class="site-header-wrapper">
     <div class="site-header-logo">
       <a href='{{ if eq .Params.language "En" }}/en/{{ else if eq .Params.language "No" }}/no/{{ else }}/{{ end }}'>
-        <img src="/img/logos/safespring_logotype_blue_svg.svg" width="140" height="30" alt="Safespring logotype">
+        <img fetchpriority="high" src="/img/logos/safespring_logotype_blue_svg.svg" width="140" height="30" alt="Safespring logotype">
       </a>
     </div>
     <nav class="site-header-nav">
