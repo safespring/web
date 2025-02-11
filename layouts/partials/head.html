@@ -742,7 +742,7 @@
 <!-- CSS -->
 <!-- Ladda kritisk CSS direkt -->
 {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="preload" href="{{ $mainCSS.RelPermalink }}" as="style" media="(max-width: 600px)" onload="this.onload=null;this.rel='stylesheet'" />
+<link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" media="print" onload="this.media='all'" />
 <link href="{{ $mainCSS.RelPermalink }}" rel="stylesheet" media="(min-width: 600px)" />
 
 {{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) | minify | fingerprint }}
