@@ -4599,12 +4599,6 @@ ol li::before {
 
 	}
 
-	h1 {
-		margin:0;
-		padding:0;
-	}
-
-
 	.body, .text-light-black {
 		color:rgba(50, 50, 50, 0.8);
 	}
