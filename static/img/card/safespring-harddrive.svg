@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="250" viewBox="0 0 350 250">
-  <defs>
-    <clipPath id="clip-safespring_card_45_1">
-      <rect width="350" height="250"/>
-    </clipPath>
-  </defs>
-  <g id="safespring_card_45_1" data-name="safespring_card_45 – 1" clip-path="url(#clip-safespring_card_45_1)">
-    <rect width="350" height="250" fill="#e7eff3"/>
-    <path id="hard-drive-solid_1_" data-name="hard-drive-solid (1)" d="M0,47.32A15.334,15.334,0,0,1,15.32,32h91.917a15.334,15.334,0,0,1,15.32,15.32v44.14a22.888,22.888,0,0,0-15.32-5.841H15.32A22.888,22.888,0,0,0,0,91.459ZM15.32,93.278h91.917a15.334,15.334,0,0,1,15.32,15.32v15.32a15.334,15.334,0,0,1-15.32,15.32H15.32A15.334,15.334,0,0,1,0,123.917V108.6A15.334,15.334,0,0,1,15.32,93.278ZM76.6,123.917a7.66,7.66,0,1,0-7.66-7.66A7.66,7.66,0,0,0,76.6,123.917Zm30.639-7.66a7.66,7.66,0,1,0-7.66,7.66A7.66,7.66,0,0,0,107.237,116.258Z" transform="translate(114 39)" fill="#195f8c"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="250" viewBox="0 0 350 250"><defs><clipPath id="clip-safespring_card_45_1"><path d="M0 0h350v250H0z"/></clipPath></defs><g id="safespring_card_45_1" clip-path="url(#clip-safespring_card_45_1)"><path fill="#e7eff3" d="M0 0h350v250H0z"/><path id="hard-drive-solid_1_" fill="#195f8c" d="M0 47.32A15.33 15.33 0 0 1 15.32 32h91.92a15.33 15.33 0 0 1 15.32 15.32v44.14a23 23 0 0 0-15.32-5.84H15.32A23 23 0 0 0 0 91.46Zm15.32 45.96h91.92a15.33 15.33 0 0 1 15.32 15.32v15.32a15.33 15.33 0 0 1-15.32 15.32H15.32A15.33 15.33 0 0 1 0 123.92V108.6a15.33 15.33 0 0 1 15.32-15.32m61.28 30.64a7.66 7.66 0 1 0-7.66-7.66 7.66 7.66 0 0 0 7.66 7.66m30.64-7.66a7.66 7.66 0 1 0-7.66 7.66 7.66 7.66 0 0 0 7.66-7.66" transform="translate(114 39)"/></g></svg>
