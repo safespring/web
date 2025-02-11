@@ -744,20 +744,9 @@
 {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
 
-<!-- Ladda FontAwesome och ikoner asynkront -->
-{{ $fa1CSS := resources.Get "css/solid.min.css" | minify | fingerprint }}
-{{ $fa2CSS := resources.Get "css/custom-icons.min.css" | minify | fingerprint }}
-{{ $fa3CSS := resources.Get "css/fontawesome.min.css" | minify | fingerprint }}
-
-<link rel="preload" href="{{ $fa1CSS.RelPermalink }}" as="style" media="all" />
-<link rel="preload" href="{{ $fa2CSS.RelPermalink }}" as="style" media="all" />
-<link rel="preload" href="{{ $fa3CSS.RelPermalink }}" as="style" media="all" />
-
-<!-- Fallback för äldre webbläsare -->
+{{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) | minify | fingerprint }}
+<link rel="preload" href="{{ $faCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" />
 <noscript>
-    <link rel="stylesheet" href="{{ $fa1CSS.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $fa2CSS.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $fa3CSS.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $faCSS.RelPermalink }}">
 </noscript>
-<!-- END - CSS -->
 </head>
