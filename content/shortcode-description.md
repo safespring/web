@@ -1,3 +1,10 @@
+---
+title: "Descriptions of short codes"
+date: 2024-08-20
+draft: true
+language: "En"
+---
+
 ## {{ < services >}}
 To include a page in the `services` shortcode, you can add the `cardorder` parameter to each service page's front matter that you want to include in the collection of cards. The value of the "cardorder" parameter determines the order in which the card appears in the collection. This shortcode is a flexible and customizable way to display a visually appealing summary of Safespring's services on your website.
 
