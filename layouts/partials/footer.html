@@ -403,9 +403,64 @@
     });
   </script>
   {{ end }}
-<script src="/js/safespring-cookie-consent.js"
+  <style type="text/css">#CookieConsent .cookie-popup {
+  background:#fafefe00 !important;
+  backdrop-filter:blur(20px) !important;
+  transition:300ms;
+}
+
+#CookieConsent .cookie-popup > div {
+  box-shadow:2px 3px 9px 0 rgba(0, 0, 0, 0.10);
+}
+
+#CookieConsent .cookie-popup h1 {
+  font:300 30px/1 var(--hind-font) !important;
+  color:var(--main-color);
+}
+
+#CookieConsent .cookie-popup h2 {
+  font:300 20px/1 var(--hind-font) !important;
+  color:var(--clear-blue-color);
+}
+
+#CookieConsent .cookie-popup p{
+  font:300 16px/1.2 var(--mon-font);
+}
+
+#CookieConsent .cookie-popup .details {
+  background-color:var(--cloud-blue-color) !important;
+}
+
+#CookieConsent .cookie-popup .details > button {
+  background-color:var(--cloud-blue-color) !important;
+}
+
+#cc-footer a {
+  display:none !important;
+}
+
+#CookieConsent .cookie-popup th {
+  font:599 14px/1 var(--mon-font) !important;
+}
+
+#CookieConsent .cookie-popup td {
+  font:300 14px/1 var(--mon-font);
+}
+
+#CookieConsent .cookie-popup label {
+  font:599 16px/1 var(--mon-font) !important;
+}
+
+#CookieConsent .cookie-popup .details > button span {
+  font:500 16px/1 var(--mon-font) !important;
+  color: var(--main-color);
+}
+
+#CookieConsent .cookie-popup .details > button span:before {
+  background-color: var(--main-color) !important;
+}</style>
+<script src="https://cdn.cookietractor.com/cookietractor-declaration.js"
   data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}'
   data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"
   defer>
 </script>
-<div id="CookieDeclaration"></div>
