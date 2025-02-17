@@ -73,7 +73,7 @@ We're aiming to launch this platform in 2026, but we're already on the lookout f
 I'm incredibly proud to be working for a company with such diverse and meaningful customers. 2025 is a year of large investments and challenging projects for Safespring. I'm looking forward to working through it together with our incredibly skilled teams and ensure to deliver the best Open, Sovereign and Compliant cloud solutions for our customers.
 
 ## Links
-Deep-dive in more information with these links.
+Deep-dive in more information with these links..
 
 [^1]: **Red Hat.** *CentOS Linux End of Life (EOL*). Red Hat explains the transition away from CentOS Linux, what it means for users, and alternative options moving forward. Retrieved February 17, 2025, from [redhat.com](https://www.redhat.com/en/topics/linux/centos-linux-eol).
 [^2]: **Safespring and EOSC.** Brief look at Safespring’s involvement in the European Open Science Cloud. Retrieved February 17, 2025, from https://www.safespring.com/eosc/.
