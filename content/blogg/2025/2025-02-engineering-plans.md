@@ -62,19 +62,20 @@ These GPUs will be available starting in early April in our new compute site STO
 
 ### **Building a Scalable Kubernetes PaaS**
 
-We're not just stopping at infrastructure. We're also developing a [highly scalable Kubernetes Platform-as-a-Service (PaaS)](/en/services/containerplatform/) on top of Talos Linux. This initiative will empower customers to deploy, manage, and scale containerized applications with ease. Talos Linux, known for its security and efficiency, will provide a solid base for our Kubernetes offerings, ensuring that our PaaS is both powerful and secure.
+We're not just stopping at infrastructure. We're also developing a [highly scalable Kubernetes Platform-as-a-Service (PaaS)](/en/services/containerplatform/) on top of Talos Linux[^3]. This initiative will empower customers to deploy, manage, and scale containerized applications with ease. Talos Linux, known for its security and efficiency, will provide a solid base for our Kubernetes offerings, ensuring that our PaaS is both powerful and secure.
 
 One of our key features is that we can offer this in our public cloud sites as well as in our private cloud sites that we maintain for customers.
 
-We're aiming to launch this platform in 2026, but we're already on the lookout for alpha testers soon. If you're interested in getting early access and helping us shape the future of this platform, stay tuned for more information on how to get involved[^3].
+We're aiming to launch this platform in 2026, but we're already on the lookout for alpha testers soon. If you're interested in getting early access and helping us shape the future of this platform, stay tuned for more information on how to get involved[^4].
 
 ### **Looking Ahead** 
 
 I'm incredibly proud to be working for a company with such diverse and meaningful customers. 2025 is a year of large investments and challenging projects for Safespring. I'm looking forward to working through it together with our incredibly skilled teams and ensure to deliver the best Open, Sovereign and Compliant cloud solutions for our customers.
 
 ## Links
-Deep-dive in more information with these links..
+Deep-dive in more information with these links.
 
 [^1]: **Red Hat.** *CentOS Linux End of Life (EOL*). Red Hat explains the transition away from CentOS Linux, what it means for users, and alternative options moving forward. Retrieved February 17, 2025, from [redhat.com](https://www.redhat.com/en/topics/linux/centos-linux-eol).
 [^2]: **Safespring and EOSC.** Brief look at Safespring’s involvement in the European Open Science Cloud. Retrieved February 17, 2025, from https://www.safespring.com/eosc/.
-[^3]: **Safespring Container platform.** Service description of our container platform. Retrieved February 17, 2025, from [safespring.com/containerplatform](/en/services/containerplatform/)
+[^3]: **Talos Linux.** *A Modern Secure Kubernetes OS.* Talos Linux is a minimal, immutable operating system designed for Kubernetes, focusing on security and automation. Retrieved February 17, 2025, from https://www.talos.dev/.
+[^4]: **Safespring Container platform.** Service description of our container platform. Retrieved February 17, 2025, from [safespring.com/containerplatform](/en/services/containerplatform/)
