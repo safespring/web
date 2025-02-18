@@ -7,9 +7,6 @@ intro: "Get help setting up your own cloud infrastructure, which we maintain. Th
 background: ""
 form: ""
 socialmedia: "safespring-private-cloud.jpg"
-aliases:
-    - /private-cloud/
-    - /services/managed-private-cloud/
 section: "Private Cloud"
 toc: "On this page"
 ---
@@ -94,7 +91,7 @@ Simplify database management by adding a managed database to your On-Premise Clo
 Maximize the potential of your machine learning and AI projects by adding a Scalout ML platform to your On-Premise Cloud. This add-on service provides a scalable and flexible platform optimized for handling and deploying machine learning models, making it easier for you to train, predict, and analyze data.
 {{% /accordion %}}
 
-{{< icon-block-horisontal icon="fa-kit fa-ntt" color="#195F8C" text="Cyber Threat Detection and Response" description="When a threat is detected, Samurai MDR takes immediate action to isolate and manage the threat." link="https://www.safespring.com/services/samurai/" >}}
+{{< icon-block-horisontal icon="fa-kit fa-ntt" color="#195F8C" text="Cyber Threat Detection and Response" description="When a threat is detected, Samurai MDR takes immediate action to isolate and manage the threat." >}}
 
 ## Support and Availability
 
