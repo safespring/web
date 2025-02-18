@@ -39,3 +39,7 @@
 - name: "Jan Ivar Beddari"
   title: "Head of Research & Development"
   image_happy: "jan-ivar.webp"
+
+- name: "Rob Haverkamp"
+  title: "Head of Engineering"
+  image_happy: "rob.webp"
