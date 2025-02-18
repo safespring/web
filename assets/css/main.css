@@ -90,8 +90,13 @@
 	color:blue;
 }
 
+html, body {
+    -webkit-text-size-adjust: 100%;
+}
+
 pre {
 	font-family: "safespring mono";
+	font-size: 13px !important;
 }
 
 pre > code {
