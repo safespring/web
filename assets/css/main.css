@@ -100,7 +100,7 @@ pre > code {
 
 p>code {
 	white-space: nowrap;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 @media only screen and (max-width:900px) {
@@ -121,7 +121,7 @@ code {
 }
 
 code>span {
-	font-size: 13px;
+	font-size: 15px;
 }
 
 pre {
