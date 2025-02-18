@@ -41,12 +41,14 @@ Securing communication between Cinder CSI volume provisioner and OpenStack is pa
 
 ### 1. Creating an application credential
 Initiate the creation of a new application credential tailored for your requirements. If you have previously generated credentials, consider reusing them for the Cinder CSI plugin. To manage your credentials effectively, use the command below to create a new set or list existing ones:
+
 ```bash
 openstack application credential create <app-cred-name>
 openstack application credential list
 ```
 
 Upon creation, extract the `auth_url`, `Application ID`, and `Application secret` to enable OpenStack authentication:
+
 ```bash
 auth_url=$(openstack configuration show -f json | jq .auth_url)
 
@@ -103,16 +105,20 @@ EOF
 Match the Cinder CSI provisioner version with your Kubernetes version. Retrieve your Kubernetes version and list available Helm chart versions to ensure compatibility.
 
 Obtain your OpenShift version:
+
 ```bash
 oc version
 ```
+
 ```
 Client Version: 4.15.0
 Kustomize Version: v5.0.4-0.20230601165947-6ce0bf390ce3
 Server Version: 4.15.0
 Kubernetes Version: v1.28.6+6216ea1
 ```
+
 List available Cinder CSI versions:
+
 ```bash
 namespace="${namespace:-csi}"
 helm repo -n ${namespace} add cpo https://kubernetes.github.io/cloud-provider-openstack
@@ -135,6 +141,7 @@ Match your kubernetes version with the version in app_version column. When searc
 ```bash
 helm search -n ${namespace} repo cpo/openstack-cinder-csi --version '~2.28'
 ```
+
 | name                     | version | app_version | description                    |
 | ------------------------ | ------- | ----------- | ------------------------------ |
 | cpo/openstack-cinder-csi | 2.28.2  | v1.28.2     | Cinder CSI Chart for OpenStack |
@@ -165,6 +172,7 @@ helm install -n ${namespace} cinder-csi .
 ```
 
 Verify with `oc -n ${namespace} get pods` that you have one `controllerplugin` pod and `nodeplugin` pods for each node in your cluster.
+
 ```bash
 oc -n ${namespace} get pods
 ```
@@ -179,9 +187,11 @@ oc -n ${namespace} get pods
 | openstack-cinder-csi-nodeplugin-vp8qg                  | 3/3   | Running | 0        | 151m |
 
 You now have two different storage classes to use.
+
 ```bash
 oc get storageclass -o custom-columns=Name:.metadata.name,Provisoner:.provisioner
 ```
+
 | Name                 | Provisoner               |
 |----------------------|--------------------------|
 | csi-cinder-sc-delete | cinder.csi.openstack.org |
@@ -194,6 +204,7 @@ Test Cinder CSI volume provisioner by creating a Persistent Volume Claim and the
 namespace_test="csi-test"
 oc create namespace ${namespace_test}
 ```
+
 ```yaml
 oc apply -f - <<EOF
 apiVersion: v1
@@ -210,6 +221,7 @@ spec:
   storageClassName: csi-cinder-sc-delete
 EOF
 ```
+
 ```yaml
 oc apply -f - <<EOF
 apiVersion: v1
@@ -236,10 +248,13 @@ spec:
 EOF
 
 ```
+
 The persistent volume claim should be "Bound" when successful.
+
 ```bash
 oc -n ${namespace_test} get pvc -o custom-columns=Name:.metadata.name,Status:.status.phase,Volume:.spec.volumeName
 ```
+
 | Name                 | Status | Volume                                   |
 |----------------------|--------|------------------------------------------|
 | csi-pvc-cinderplugin | Bound  | pvc-ed60e725-93e8-447c-bc18-ca33546f2ce8 |
@@ -247,17 +262,20 @@ oc -n ${namespace_test} get pvc -o custom-columns=Name:.metadata.name,Status:.st
 If you have any problems, start by looking into the events table with `oc -n ${namespace_test} events`.
 
 In Openstack you can use openstack cli to see your volume.
+
 ```bash
 openstack volume show pvc-ed60e725-93e8-447c-bc18-ca33546f2ce8
 ```
 
 Finally delete your test:
+
 ```bash
 oc delete namespace ${namespace_test}
 ```
 
 ## Updating your installation
 Should there be updates available for the Cinder CSI provisioner, use the following command to apply them:
+
 ```bash
 namespace="${namespace:-csi}"
 helm upgrade -n ${namespace} cinder-csi .
@@ -265,6 +283,7 @@ helm upgrade -n ${namespace} cinder-csi .
 
 ## Uninstalling
 If you need to uninstall the Cinder CSI provisioner, execute these commands:
+
 ```bash
 namespace="${namespace:-csi}"
 helm install -n ${namespace} cinder-csi .
