@@ -11,14 +11,7 @@ sidebarwhitepaper: "yes"
 nolist: "n"
 ---
 
-{{< icon-block-container >}}
-	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
-	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
-	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
-	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
-	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
-{{< /icon-block-container >}}
+![Safespring pyramid](/img/graphics/safespring-pyramid-2025.svg)
 
 {{< ingress >}}
 Safespring förstår att era kunder har höga krav på att ni hanterar känslig data korrekt och att era kunders förtroende för er är viktigt.
@@ -36,6 +29,15 @@ Safespring är en svensk publik molnplattform som kraftigt förenklar för er at
 I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen (GDPR). När t.ex. amerikanska underleverantörer används är det mycket krångligare att uppfylla kraven, mer analys krävs och kunderna kommer ställa fler frågor. Om ni istället använder Safespring blir hela analysen trivial i jämförelse vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället för att diskutera tredjelandsöverföringar, Schrems m.m.
 
 Om det förekommer sekretessreglerade uppgifter i er SaaS, vare sig det är uppgifter som omfattas av offentlighets- och sekretesslagen, advokatsekretess eller kommersiell sekretess krävs det att ni kan garantera att sekretessen bibehålls. Amerikanska molntjänstleverantörer kan aldrig garantera sekretessen, vilket framgår av deras avtalsvillkor. Safespring har inga sådana avtalsvillkor och kommer inte lämna ut våra kunders information förutom när svensk domstol kräver det.
+
+{{< icon-block-container >}}
+	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
+	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
+	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
+{{< /icon-block-container >}}
 
 ## Teknisk information relevant för SaaS
 Safespring tillhandahåller en driftsäker och flexibel infrastruktur som gör det enklare för er som SaaS-leverantör att leverera era tjänster med hög prestanda och tillgänglighet. Nätverksstacken är byggd med Calico, vilket ger er en säker, skalbar och högpresterande kommunikation mellan era tjänster samtidigt som stabilitet och driftsäkerhet säkerställs. OpenStack-plattformen ger er tillgång till ett brett utbud av instans-typer, vilket gör det enkelt att anpassa kapaciteten efter era behov och optimera kostnaden.
