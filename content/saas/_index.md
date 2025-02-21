@@ -33,7 +33,9 @@ nolist: "n"
 Safespring förstår att era kunder har höga krav på att ni hanterar känslig data korrekt och att era kunders förtroende för er är viktigt.
 {{< /ingress >}}
 
-Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige. I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen. Om ni använder Safespring för er IaaS/PaaS blir era kunders analys gällande personuppgiftsbehandling trivial i jämförelse med om ni använder amerikanska molntjänster vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället.
+Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige. 
+
+I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen. Om ni använder Safespring för er IaaS/PaaS blir era kunders analys gällande personuppgiftsbehandling trivial i jämförelse med om ni använder amerikanska molntjänster vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället.
 
 ## Juridik information relevant för SaaS 
 Både ni och vi på Safespring agerar i en förtroendebransch där det blir allt mer kritiskt att se över våra beroenden och partners. Våra kunder kommer ställa allt högre krav på politisk och juridisk säkerhet utöver traditionell IT-säkerhet och driftsäkerhet.
