@@ -31,7 +31,7 @@ nolist: "n"
 
 {{< ingress >}}
 Safespring förstår att era kunder har höga krav på att ni hanterar känslig data korrekt och att era kunders förtroende för er är viktigt.
-{{≤ /ingress >}}
+{{< /ingress >}}
 
 Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige. I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen. Om ni använder Safespring för er IaaS/PaaS blir era kunders analys gällande personuppgiftsbehandling trivial i jämförelse med om ni använder amerikanska molntjänster vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället.
 
