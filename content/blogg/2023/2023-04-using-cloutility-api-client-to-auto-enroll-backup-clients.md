@@ -151,15 +151,16 @@ func (c *AuthenticatedClient) CreateNode(bUnitID, consumerID, osTypeID, nodeType
 
 The `CreateNode()` method creates a backup node associated with a consumer and returns a new `Node` struct. It requires the following parameters:
 
-| Parameter         | Type     | Description                                                  |
-|-------------------|----------|--------------------------------------------------------------|
-`bUnitID`|integer| As before we'll be using the current user's business-unit.|
-`consumerID`|integer| The consumer in which to place the backup node. We'll pass the ID of the consumer we just created.|
-`osType`|integer| Here we pass the constant `osTypeID`that we, further up, declared. At Safespring Backup a linux server has ID 3. A Windows server would have the ID 2. |
-`clientType`|integer| The ID of the type of client we are enrolling, we'll be passing the value of `nodeTypeID` which for a Fileserver has the ID of 1.|
-`domain`|integer| The domain determines the retention period. We will be using the STANDARD domain with ID 1, which at Safespring Backup retains 180 days of backup.|
-`clientOptionSetID`|integer| Backup client Optionset to use. We'll use the DEDUP_AND_COMPRESS Optionset|
-`contact`|integer| Contact regarding the backup node. Typically the departament responsible for managing the backup node.|
+| Parameter           | Type    | Description                                                                                                                                            |
+|---------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `bUnitID`           | integer | As before we'll be using the current user's business-unit.                                                                                             |
+| `consumerID`        | integer | The consumer in which to place the backup node. We'll pass the ID of the consumer we just created.                                                     |
+| `osType`            | integer | Here we pass the constant `osTypeID`that we, further up, declared. At Safespring Backup a linux server has ID 3. A Windows server would have the ID 2. |
+| `clientType`        | integer | The ID of the type of client we are enrolling, we'll be passing the value of `nodeTypeID` which for a Fileserver has the ID of 1.                      |
+| `domain`            | integer | The domain determines the retention period. We will be using the STANDARD domain with ID 1, which at Safespring Backup retains 180 days of backup.     |
+| `clientOptionSetID` | integer | Backup client Optionset to use. We'll use the DEDUP_AND_COMPRESS Optionset                                                                             |
+| `contact`           | integer | Contact regarding the backup node. Typically the departament responsible for managing the backup node.                                                 |
+
 
 {{< distance >}}
 
