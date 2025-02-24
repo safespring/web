@@ -1,53 +1,49 @@
 ---
 title: "SaaS tjänster blir allt mer attraktiva, men hur hanteras personuppgifterna?"
-date: 2019-01-07T13:58:58+01:00
+date: 2025-02-20
 draft: false
-intro: "Fredric Wallsten som är VD på Safespring har följt lagstiftningen för personuppgifter under lång tid och beskriver de skärpta kraven på mjukvarubolagen i Sverige."
+intro: "Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige."
 background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: ""
-sidebarlinkurl: ""
-sidebarsection: "White Paper"
-sidebarimage: ""
-sidebartitle: "EU-domstolens ogiltigförklarande av Privacy Shield"
-sidebartext: "Läs förutsättningar och rekommendationer för offentlig sektor och deras leverantörer"
-sidebardate: "Dataskydd"
-sidebarknapp: "test"
-sidebarlink: "test"
 saas: "yes"
 sidebarwhitepaper: "yes"
 nolist: "n"
 ---
 
-## Behöver er SaaS tjänst ta hänsyn till dataskyddsförordningen och GDPR?
+![Safespring pyramid](/img/graphics/safespring-pyramid-2025.svg)
 
 {{< ingress >}}
-SaaS tjänster utvecklas snabbt och de flesta innehåller personuppgifter som namn, telefonnummer, hemadresser och e-mail som behöver hanteras med stor försiktighet.
-{{</ ingress >}}
+Safespring förstår att era kunder har höga krav på att ni hanterar känslig data korrekt och att era kunders förtroende för er är viktigt.
+{{< /ingress >}}
 
-Personuppgifter regleras av dataskyddsförordningen i Sverige och GDPR. SaaS bolaget är ansvarig för att personuppgifterna hanteras korrekt och lagras i en molnplattform som följer dataskyddsförordningen. Hanterar ni personuppgifter utan att följa GDPR?
+Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige. 
 
-{{% question question="Kan personuppgifter ligga i en utländsk molntjänst?" %}}
-Om tjänsten som hanterar personuppgifter och ligger i en amerikansk molntjänst bryter SaaS bolaget mot Dataskyddsförordningen (GDPR) enligt EU domstolens utslag i juli 2020.  Därför ställer Sveriges regioner och kommuner tydliga krav att personuppgifterna ligger hos svenska molntjänstleverantörer med samma kapacitet och flexibilitet som de stora internationella alternativen. SaaS bolag har krav kring hur personuppgifter lagras och behandlas. Svenska molnplattformar som Safespring lagrar data i Sverige och sorterar under svenska lag. Med rätt molntjänst kan ni öka er konkurrenskraft inom Europa och öka er försäljning.
-{{% /question %}}
-{{% question question="Kan skolplattformar ligga i en utländsk molntjänst?" %}}
-Med en säker molnplattform utformad för compliance blir er tjänst mer tillgänglig. Vi är ett svenskt bolag som garanterar att ert data stannar i Sverige utan att tumma på utvecklingstakten. Hantera data säkert samtidigt som ni utvecklar er tjänst i en flexibel plattform. Bli det självklara valet.
-{{% /question %}}
-{{% question question="Hur ni kan behålla era svenska kunder" %}}
-På Safesprings plattform bygger många SaaS-bolag idag sina säkra molntjänster för att kunna erbjuda sina kunder säker datahantering. Vår juridiska säkerhet är bara en av fördelarna. Om ni kan utveckla er tjänst i en säker molnplattform kommer ni öka er kundbas inom Sverige.
+I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen. Om ni använder Safespring för er IaaS/PaaS blir era kunders analys gällande personuppgiftsbehandling trivial i jämförelse med om ni använder amerikanska molntjänster vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället.
 
-Våra tjänster gör det möjligt att uppfylla alla lagar och regler och samtidigt få alla fördelarna som moln- och infrastrukturtjänster har: flexibilitet, skapa servrar, skala upp och ner efter behov och betala enbart för det du använder. En kraftfull svensk molnplattform för SaaS tjänster som hanterar personuppgifter
+## Juridik information relevant för SaaS 
+Både ni och vi på Safespring agerar i en förtroendebransch där det blir allt mer kritiskt att se över våra beroenden och partners. Våra kunder kommer ställa allt högre krav på politisk och juridisk säkerhet utöver traditionell IT-säkerhet och driftsäkerhet.
 
-Kör din SaaS-tjänst på en säker molnplattform utformad för compliance med den svenska lagstiftningen. Vi är ett svenskt bolag som garanterar att ert data stannar i Sverige utan att tumma på utvecklingstakten. Bli en SaaS tjänst som följer GDPR och därav bredda er myndigheter och kommuner kommer kunna köpa från er framöver.
-{{% /question %}}
-{{% question question="Vad har svenska kommuner för krav?" %}}
-I fall en svensk kommun överför personuppgifter med stöd av Privacy Shield, är det sedan den 16/7 2020 en olaglig överföring. Om standardklausulerna (SCC) används krävs det att myndigheten göra en analys för varje land där personuppgiftsbehandlingen kommer ske. Analys för USA görs mestadels av EU-domstolen, då Privacy Shield inte uppfyllde kraven i GDPR och EU-stadgan. Detta resulterar i att det är väldigt svårt att anlita amerikanska företag för personuppgiftbehandling oavsett var i världen personuppgiftbehandlingen sker.
+Safespring är en svensk publik molnplattform som kraftigt förenklar för er att uppfylla svensk och europeisk lagstiftning. Med fokus på öppna standarder och digital suveränitet erbjuder Safespring tjänster som virtuella servrar, storskalig lagring, container-plattformar och backup som tjänst. Med datacenter i Sverige och Norge är Safespring en beprövad och säker plattform för SaaS-bolag, myndigheter, datadrivna bolag och den akademiska sektorn.
 
-eSamverkanprogrammet, eSam (28 svenka myndigheter och SKR) hade i september ett webbinarium tillsammans med molntjänstleverantörer i Sverige där de största myndigheterna i Sverige beskrev hur det här utfallet i EU-domstolen kommer påverka dem. eSam jobbar för att etablera en ny plan för molntjänster för sina medlemmar som bygger på att deras data ligger hos svenska eller europeiska företag.
+I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen (GDPR). När t.ex. amerikanska underleverantörer används är det mycket krångligare att uppfylla kraven, mer analys krävs och kunderna kommer ställa fler frågor. Om ni istället använder Safespring blir hela analysen trivial i jämförelse vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället för att diskutera tredjelandsöverföringar, Schrems m.m.
 
-Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
+Om det förekommer sekretessreglerade uppgifter i er SaaS, vare sig det är uppgifter som omfattas av offentlighets- och sekretesslagen, advokatsekretess eller kommersiell sekretess krävs det att ni kan garantera att sekretessen bibehålls. Amerikanska molntjänstleverantörer kan aldrig garantera sekretessen, vilket framgår av deras avtalsvillkor. Safespring har inga sådana avtalsvillkor och kommer inte lämna ut våra kunders information förutom när svensk domstol kräver det.
 
-{{< localbutton text="Kontakta Safespring" link="/kontakt/" >}}
-{{% /question %}}
-{{< accordion-script >}}
+{{< icon-block-container >}}
+	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
+	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
+	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
+	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
+{{< /icon-block-container >}}
+
+## Teknisk information relevant för SaaS
+Safespring tillhandahåller en driftsäker och flexibel infrastruktur som gör det enklare för er som SaaS-leverantör att leverera era tjänster med hög prestanda och tillgänglighet. Nätverksstacken är byggd med Calico, vilket ger er en säker, skalbar och högpresterande kommunikation mellan era tjänster samtidigt som stabilitet och driftsäkerhet säkerställs. OpenStack-plattformen ger er tillgång till ett brett utbud av instans-typer, vilket gör det enkelt att anpassa kapaciteten efter era behov och optimera kostnaden.
+
+Lagringen är anpassad för att möta era varierande krav, med både lokal NVMe-lagring för extremt snabb dataåtkomst och Ceph-baserad central lagring. Ceph-lösningen finns i två varianter: en SSD-baserad för höga prestandakrav och en kostnadseffektiv lagring baserad på traditionell disk för stora datamängder såsom loggar och backup. Ceph är dessutom en självläkande och distribuerad lösning som säkerställer hög tillgänglighet och redundans, vilket ger er trygghet och stabilitet i ert datahanteringsflöde.
+
+Safespring är en idealisk plattform för er som arbetar med container-baserade applikationer och Kubernetes-miljöer. Den stabila infrastrukturen och moderna nätverkslösningen gör det enkelt för er att driftsätta och hantera container-baserade tjänster på ett smidigt sätt. Vi arbetar dessutom aktivt med att utveckla en egen Kubernetes-baserad plattform för att ytterligare förenkla hantering och skalning, allt för att ni ska kunna fokusera på att utveckla era tjänster utan onödig teknisk komplexitet.
+
+Genom att välja Safespring får ni en trygg, flexibel och högpresterande infrastruktur som är optimerad för era behov som SaaS-leverantör. Vår plattform ger er möjligheten att fokusera på er kärnverksamhet istället för tekniska begränsningar, samtidigt som ni säkerställer att era tjänster kan växa och anpassas efter framtida krav.

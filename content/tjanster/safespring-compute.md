@@ -11,13 +11,13 @@ date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "Med molntjänster från Safespring får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt från säkra datahallar i Sverige."
 cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, svensk IaaS."
-background: ""
+background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
-socialmedia: ""
+socialmedia: "safespring-compute.jpg"
 aliases:
     - /compute/
     - /safespring-compute/
@@ -76,7 +76,7 @@ För organisationer som söker en ännu mer skalbar VPN-lösning är ZeroTier et
 
 På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter integrerade direkt i vår Compute-plattform. Med bara några få klick kan du konfigurera och deploya en fullständig VPN-lösning som stöder både WireGuard och ZeroTier, vilket säkerställer att din organisation alltid har tillgång till säkra och flexibla nätverksalternativ.
 
-[Läs mer i vår dokumentation. ](https://docs.safespring.com/new/vpn)
+[Läs mer i vår dokumentation](https://docs.safespring.com/new/vpn).
 
 {{% /accordion %}}
 
