@@ -1,0 +1,633 @@
+WEBVTT
+
+00:04.200 --> 00:05.600
+Hej och välkomna!
+
+00:05.600 --> 00:08.700
+Mitt namn är Gabriel Paues och jag jobbar
+på Safespring och med mig idag har
+
+00:08.700 --> 00:11.700
+jag Christian Petersson från IssTech
+
+00:11.933 --> 00:14.666
+och tillsammans levererar vi
+
+00:14.666 --> 00:17.766
+Safespring Backup som en av de
+tjänsterna som vi har i vårt utbud.
+
+00:18.566 --> 00:22.233
+Om du bara kan säga
+lite korthur skiljer sig
+
+00:22.233 --> 00:26.100
+Safespring Backup från andra
+tjänster inom backup-marknaden?
+
+00:26.433 --> 00:29.366
+Ja, rent krasst, Safesprings backup är
+
+00:29.366 --> 00:32.533
+först och främst automatiskt alltid off-site.
+
+00:32.733 --> 00:36.300
+Och ni har ju en helt self
+
+00:36.300 --> 00:40.200
+service hantering av backup
+helt enkelt och fullt API driven.
+
+00:41.033 --> 00:44.733
+Det gör ju att ni är väldigt
+unika på marknaden.
+
+00:44.733 --> 00:46.566
+På så sätt.
+
+00:46.566 --> 00:47.366
+Det är ju Backup-som-tjänst.
+
+00:47.366 --> 00:50.800
+Ja precis, och
+
+00:50.800 --> 00:56.366
+att kunden kan hantera sina
+backuper med hjälp av experter
+
+00:56.366 --> 01:03.166
+från både er och oss, med väldigt
+unika möjligheter helt enkelt.
+
+01:03.733 --> 01:07.266
+Ni hjälper oss med spetskompetens,
+håller radarn ute på backup-marknaden.
+
+01:07.333 --> 01:10.333
+Men om man pratar lite mer
+grundläggande om vad backup:er är så
+
+01:10.666 --> 01:15.600
+har vi 3-2-1 regeln till exempel, den
+pratar så mycket om i backup-sammanhang.
+
+01:16.166 --> 01:17.033
+Vad var det för något?
+
+01:17.033 --> 01:21.233
+Ja precis, om man tittar på den
+här, 3-2-1 har ju funnits i många,
+
+01:21.233 --> 01:25.000
+många år helt enkelt inom backup-världen
+och de som har hållt på med backup:er i
+
+01:26.066 --> 01:28.633
+20 år så har det alltid
+funnits med helt enkelt.
+
+01:28.633 --> 01:33.466
+Vad 3-2-1 står för egentligen
+att det är tre kopior av datat.
+
+01:34.133 --> 01:37.066
+Du har en kopia som är
+det datat du jobbar med.
+
+01:37.066 --> 01:39.433
+Det är två kopior i
+
+01:39.433 --> 01:42.166
+backup-miljön så det innebär att en
+
+01:42.166 --> 01:46.733
+kopia ska ligga on-site,
+
+01:47.133 --> 01:50.133
+så nära din produktion som möjligt.
+
+01:50.433 --> 01:52.433
+för att kunna hantera snabba restore:er
+
+01:52.433 --> 01:54.766
+och sedan en som ska ligga off-site helt enkelt.
+
+01:54.766 --> 01:58.700
+Och den där sista ettan,
+den ska ligga utanför huset.
+
+01:58.700 --> 02:02.700
+Sen har ju vissa leverantörer
+lagt till siffror på det här också
+
+02:03.200 --> 02:06.933
+som till exempel ytterligare en
+etta för att det ska vara en offline så
+
+02:06.966 --> 02:10.000
+att du inte kan modifiera backupen,
+
+02:10.866 --> 02:14.500
+och sedan en nolla för att de
+ska vara 100 %
+
+02:15.033 --> 02:19.500
+error-fria backuper med noll error.
+
+02:19.500 --> 02:21.200
+Det har man
+
+02:21.200 --> 02:24.933
+tagit för givet en gång i tiden men sen så
+har traditionella band och etc.
+
+02:24.933 --> 02:26.800
+kanske haft skriv fel.
+
+02:26.800 --> 02:29.033
+Därför har det här
+med extra siffra dykt upp.
+
+02:31.666 --> 02:34.233
+On-site är i det primära datacenteret
+
+02:34.233 --> 02:35.433
+och off-site är i
+ett helt annat datacenter.
+
+02:35.433 --> 02:38.166
+Det är egentligen primära
+
+02:38.166 --> 02:41.166
+datacenter där
+du jobbar med datat helt enkelt.
+
+02:41.266 --> 02:45.400
+Och med tanke på lite grann
+att nu har ju
+
+02:45.766 --> 02:51.500
+IT-världen förändrats radikalt med nätverk
+och internet de senaste 20 åren.
+
+02:51.500 --> 02:52.533
+Helt enkelt.
+
+02:52.533 --> 02:55.266
+Och hastighet mellan olika
+
+02:55.266 --> 02:58.266
+datacenter är inget problem längre
+
+02:59.000 --> 03:03.500
+och därför är er lösning
+blivit väldigt populär.
+
+03:03.500 --> 03:07.066
+Kunden kan ju ringa er
+
+03:07.333 --> 03:10.666
+och skicka datat med samma hastighet
+
+03:11.466 --> 03:14.433
+mellan sitt datacenter till er
+
+03:14.433 --> 03:18.933
+och därför blir den här 3-2-1 regeln
+kanske lite annorlunda nuförtiden.
+
+03:18.933 --> 03:22.266
+Så jag kan snarare säga att vi har 3-2-2.
+
+03:22.266 --> 03:25.766
+Att det är tre kopia av datat, två
+
+03:25.766 --> 03:30.000
+är i backup-miljön och två av dem
+är även off-site helt enkelt.
+
+03:31.266 --> 03:32.133
+Men det finns andra
+
+03:32.133 --> 03:35.133
+uttryck också, RTO och RPO,
+vad står de för?
+
+03:35.933 --> 03:38.933
+Så RTO står för Recovery Time Objective
+
+03:38.933 --> 03:42.766
+och det är hur lång tid tar det
+att återläsa datan?
+
+03:43.400 --> 03:46.400
+Och det beror
+självklart på hur mycket data du har
+
+03:47.200 --> 03:49.033
+och hur snabb lina du har
+
+03:49.033 --> 03:53.533
+till Safespring till exempel.
+
+03:53.533 --> 03:54.766
+Vilka rutiner har du.
+
+03:54.766 --> 03:59.100
+Behöver du ominstallera någonting eller
+behöver du göra någonting alls etcetera.
+
+03:59.900 --> 04:03.333
+RPO som står för Recovery Point Objektiv
+
+04:03.466 --> 04:06.966
+är hur ofta du tar backup:er .
+
+04:07.300 --> 04:11.933
+Och där kan det ju vara så att du
+tar backup var femte minut,
+
+04:11.933 --> 04:16.033
+en gång om dagen,
+en gång i veckan eller en gång i månaden.
+
+04:16.033 --> 04:19.033
+Hur ofta du egentligen tar en
+
+04:19.266 --> 04:22.066
+kopia av din data helt enkelt .
+
+04:22.066 --> 04:25.066
+En fotografisk kopia
+kan man ju kalla det för.
+
+04:25.200 --> 04:25.800
+Hur många
+
+04:28.566 --> 04:30.766
+dagars data kan du tänka dig att förlora?
+
+04:30.766 --> 04:31.800
+Ja, precis.
+
+04:31.800 --> 04:37.466
+Eller hur mycket data mellan varje
+backup kopia kan du tänka dig förlora.
+
+04:37.466 --> 04:40.466
+Data som rör sig lite, där kanske man
+inte behöver en jätteaggressiv RPO?
+
+04:40.900 --> 04:43.033
+Data som rör sig så mycket så
+kanske det blir mer.
+
+04:43.033 --> 04:48.533
+Precis, och i vissa fall kanske du behöver
+ha det i realtid, du måste ha noll RPO.
+
+04:48.533 --> 04:50.300
+Det innebär att så fort det skrivs en
+
+04:50.300 --> 04:53.700
+ändring i databaen till exempel så skickas
+det direkt tillbaka till backup-miljön.
+
+04:54.166 --> 04:59.033
+En av alla extra features med Safespring
+Backup är att vi inte har
+
+04:59.033 --> 05:03.133
+några egress-kostnader, egress
+är det data som går ut från vår tjänst.
+
+05:03.200 --> 05:03.766
+Precis.
+
+05:03.766 --> 05:07.833
+och där kan man ju springa på
+kanske otrevliga överraskningar om
+
+05:07.833 --> 05:11.633
+det är så att det kostar att återställa,
+inte bara själva tjänsten utan även
+
+05:11.900 --> 05:12.933
+hur mycket data kommer att
+
+05:12.933 --> 05:16.633
+tanka ut kostar så här mycket och det
+kanske man inte hade med i beräkningarna.
+
+05:16.900 --> 05:17.833
+Nej precis.
+
+05:17.833 --> 05:20.500
+Ofta när man pratar
+
+05:20.500 --> 05:23.700
+om motsvarande eller
+liknande tjänster som ni har mot
+
+05:24.033 --> 05:28.766
+andra globala aktörer så är det så att de
+tar ju betalt för allting de skickar ut.
+
+05:28.766 --> 05:32.333
+De tar gärna emot ditt bakup-data
+men när de skickar ut datat
+
+05:32.800 --> 05:36.000
+då kan det komma en rejäl saftig nota.
+
+05:36.000 --> 05:41.033
+Men den är helt bortblåst
+med er helt enkelt.
+
+05:41.033 --> 05:42.800
+Notan finns inte där över huvudtaget.
+
+05:42.800 --> 05:45.333
+Så det innebär att kunden
+kan ju verkligen
+
+05:45.333 --> 05:48.633
+återläsa datan hur ofta de vill
+helt enkelt.
+
+05:49.300 --> 05:52.200
+Det är en
+av era funktioner idag som är just att
+
+05:53.500 --> 05:54.633
+vi tillsammans har satt
+
+05:54.633 --> 05:57.633
+upp en automatiserad restore-test.
+
+05:57.666 --> 06:00.466
+Så vi kan ju återläsa data och verifiera
+
+06:00.466 --> 06:03.933
+den här sista nollan vi pratar om,
+att det finns noll error hela tiden.
+
+06:04.400 --> 06:07.766
+Att det verkligen alltid återläser datan
+
+06:07.766 --> 06:12.166
+kanske dagligen, veckovis, månadsvis
+eller vad vi nu vill ha för något,
+
+06:12.166 --> 06:15.333
+och får rapporter som säger
+att om vi har återläst
+
+06:16.300 --> 06:20.600
+100 % av er data med noll error
+helt enkelt, eller om vi hittat error,
+
+06:21.100 --> 06:24.933
+då kan vi reparera det innan en
+riktig katastrof händer.
+
+06:25.600 --> 06:28.400
+Men om det är stora mängder data kan
+man ju också göra det på statistisk nivå.
+
+06:28.400 --> 06:30.300
+Att du återställer 30 %.
+
+06:30.300 --> 06:31.600
+Ja, precis.
+
+06:31.600 --> 06:33.966
+så. Och även verifierar datat.
+
+06:33.966 --> 06:36.966
+Har det blivit krypterat, eller det
+
+06:38.200 --> 06:39.466
+hänt något med filen helt enkelt.
+
+06:39.466 --> 06:40.066
+Kan vi bara göra.
+
+06:41.800 --> 06:43.366
+Men vi har ju också portalen.
+
+06:43.366 --> 06:44.866
+Den är ju väldigt uppdelad.
+
+06:44.866 --> 06:48.366
+Den är helt hierarkiskt.
+
+06:48.366 --> 06:51.100
+Så du har ett företag och som har
+olika underavdelningar.
+
+06:51.100 --> 06:52.733
+Hur kan man använder det här?
+
+06:52.733 --> 06:57.300
+Det här är en funktion som vi kallar
+för multitenancy i vår värld.
+
+06:57.300 --> 07:00.500
+Det innebär att IT
+
+07:00.500 --> 07:03.500
+avdelning äger kostnad av backup:erna
+
+07:03.666 --> 07:09.466
+och sedan vill de dela ut kostnaden
+på olika divisioner så att till exempel
+
+07:09.466 --> 07:15.133
+marknadsföring eller ett universitet
+får en egen faktura bara för det
+
+07:15.133 --> 07:19.000
+de backup:ar
+och en annan får en nästa faktura
+
+07:20.033 --> 07:21.166
+för deras del.
+
+07:21.166 --> 07:25.033
+Men däremot så
+kanske vi utnyttjar deduplicering
+
+07:25.033 --> 07:28.000
+för att reducera datamängderna.
+
+07:28.000 --> 07:31.500
+Deduplicering
+är att om datan du skickar upp
+
+07:31.500 --> 07:34.600
+redan finns i tjänsten
+så sparas det inte en gång till.
+
+07:35.566 --> 07:39.266
+Vi tar ett exempel operativsystemet
+Windows som många använder
+
+07:39.266 --> 07:43.433
+eller Linux eller liknande så delar man
+ut den kostnaden för en kopia
+
+07:43.433 --> 07:46.933
+på alla divisioner så alla får betala
+en mindre del av det operativsystemet.
+
+07:47.266 --> 07:52.133
+För det som ligger i Windows katalogen
+är Är samma i sort sett, till 99 %.
+
+07:54.566 --> 07:57.066
+Exempel från verkliga världen.
+
+07:57.066 --> 08:00.766
+Det händer saker med backup, kan vi pratar
+
+08:00.866 --> 08:03.766
+om när Backup har inte funkat,
+och när backup har funkat?
+
+08:03.766 --> 08:07.033
+Backup är jätteviktigt helt enkelt.
+
+08:07.033 --> 08:10.633
+För saker händer hela tiden,
+men det som är ännu
+
+08:10.633 --> 08:13.633
+viktigare än själva backup:en är
+“restore”.
+
+08:13.666 --> 08:19.766
+När någonting händer,
+att det verkligen fungerar
+
+08:21.266 --> 08:24.766
+Under min karriär så har det hänt
+massvis med saker.
+
+08:24.766 --> 08:26.433
+Allt från att elen har gått.
+
+08:26.433 --> 08:29.433
+Det har varit
+
+08:29.966 --> 08:33.533
+översvämningar,
+brand det har till och med varit så att
+
+08:34.633 --> 08:38.166
+själva brandsläckningssystemet
+har tagit kål på hårddiskar
+
+08:38.166 --> 08:41.166
+för att det låter för mycket bra.
+
+08:42.566 --> 08:45.400
+Brandsläckningssystemet slog sönder
+hela miljön.
+
+08:45.400 --> 08:48.400
+Det som har blivit mer aktuellt
+på senaste
+
+08:48.400 --> 08:51.400
+som många pratar om är “ransomware”.
+
+08:51.666 --> 08:54.966
+När någon extern
+part kommer in i ens miljö och
+
+08:57.033 --> 08:57.466
+tar bort
+
+08:57.466 --> 09:00.533
+dina backup:er och
+sedan börjar kryptera hela filsystemet.
+
+09:01.366 --> 09:03.200
+Där har vi en
+viktig feature i Safespring Backup.
+
+09:03.200 --> 09:06.066
+där är ju att att man
+kan ju låsa datan så att det inte går
+
+09:06.066 --> 09:07.533
+att ta bort över huvud taget.
+
+09:07.533 --> 09:12.000
+Där det finns en möjlighet i portalen
+att som kund begränsa så
+
+09:12.000 --> 09:15.166
+att en person inte kan göra alltihopa
+utan man
+
+09:15.166 --> 09:18.900
+måste vara minst två för gör en operation
+för att ta bort data till exempel.
+
+09:19.300 --> 09:23.733
+För det kan ju finnas behov av GDPR skäl
+eller andra anledningar
+
+09:23.866 --> 09:26.866
+som finns diverse olika direktiv som gör
+
+09:26.866 --> 09:29.866
+att man måste manuellt kan ta bort datan,
+men då gäller det
+
+09:31.200 --> 09:36.600
+att flera personer måste vara involverade.
+
+09:36.933 --> 09:39.900
+Om ditt konto skulle bli hackat så kan
+
+09:39.900 --> 09:44.200
+inte du radera allt data utan det
+måste vara minst två personer.
+
+09:44.200 --> 09:48.300
+Det är väldigt viktigt att
+kunna ha båda alternativen.
+
+09:50.600 --> 09:53.700
+Det är inte
+
+09:53.700 --> 09:57.066
+frågan om det kommer hända någonting
+utan när det kommer hända.
+
+09:57.566 --> 10:01.833
+Tyvärr är det ju så idag till skillnad
+från förr i tiden då var ju backupen
+
+10:02.200 --> 10:05.533
+försäkring i stort sett, det kanske aldrig
+behövdes användas över huvud uttaget.
+
+10:05.966 --> 10:09.566
+Nu börjar det nästan närma sig mot till
+“när kommer vi behöva använda det här?”,
+
+10:09.566 --> 10:12.800
+“När ska vi behöva
+återläsa data?” helt enkelt.
+
+10:14.300 --> 10:16.900
+Ja, det finns så mycket att prata
+om när det gäller det här och vi kommer
+
+10:16.900 --> 10:20.000
+i nästa video göra en djupdykning
+och vi hoppas att vi ses där.
