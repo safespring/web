@@ -19,7 +19,7 @@ tjänsterna som vi har i vårt utbud.
 
 00:18.566 --> 00:22.233
 Om du bara kan säga
-lite korthur skiljer sig
+lite kort hur skiljer sig
 
 00:22.233 --> 00:26.100
 Safespring Backup från andra
@@ -32,11 +32,11 @@ Ja, rent krasst, Safesprings backup är
 först och främst automatiskt alltid off-site.
 
 00:32.733 --> 00:36.300
-Och ni har ju en helt self
+Och ni har ju en helt self-service
 
 00:36.300 --> 00:40.200
-service hantering av backup
-helt enkelt och fullt API driven.
+hantering av backup helt 
+enkelt och fullt API driven.
 
 00:41.033 --> 00:44.733
 Det gör ju att ni är väldigt
@@ -138,8 +138,8 @@ error-fria backuper med noll error.
 Det har man
 
 02:21.200 --> 02:24.933
-tagit för givet en gång i tiden men sen så
-har traditionella band och etc.
+tagit för givet en gång i tiden men 
+sen så har traditionella band och etc.
 
 02:24.933 --> 02:26.800
 kanske haft skriv fel.
@@ -167,8 +167,8 @@ Och med tanke på lite grann
 att nu har ju
 
 02:45.766 --> 02:51.500
-IT-världen förändrats radikalt med nätverk
-och internet de senaste 20 åren.
+IT-världen förändrats radikalt med
+nätverk och internet de senaste 20 åren.
 
 02:51.500 --> 02:52.533
 Helt enkelt.
@@ -221,8 +221,8 @@ och det är hur lång tid tar det
 att återläsa datan?
 
 03:43.400 --> 03:46.400
-Och det beror
-självklart på hur mycket data du har
+Och det beror självklart 
+på hur mycket data du har
 
 03:47.200 --> 03:49.033
 och hur snabb lina du har
@@ -241,21 +241,21 @@ behöver du göra någonting alls etcetera.
 RPO som står för Recovery Point Objektiv
 
 04:03.466 --> 04:06.966
-är hur ofta du tar backup:er .
+är hur ofta du tar backup:er.
 
 04:07.300 --> 04:11.933
 Och där kan det ju vara så att du
 tar backup var femte minut,
 
 04:11.933 --> 04:16.033
-en gång om dagen,
-en gång i veckan eller en gång i månaden.
+en gång om dagen, en gång i veckan 
+eller en gång i månaden.
 
 04:16.033 --> 04:19.033
 Hur ofta du egentligen tar en
 
 04:19.266 --> 04:22.066
-kopia av din data helt enkelt .
+kopia av din data helt enkelt.
 
 04:22.066 --> 04:25.066
 En fotografisk kopia
@@ -356,8 +356,8 @@ kan ju verkligen
 helt enkelt.
 
 05:49.300 --> 05:52.200
-Det är en
-av era funktioner idag som är just att
+Det är en av era funktioner 
+idag som är just att
 
 05:53.500 --> 05:54.633
 vi tillsammans har satt
@@ -384,7 +384,7 @@ och får rapporter som säger
 att om vi har återläst
 
 06:16.300 --> 06:20.600
-100 % av er data med noll error
+100 % av er data med noll error
 helt enkelt, eller om vi hittat error,
 
 06:21.100 --> 06:24.933
@@ -423,8 +423,8 @@ Den är ju väldigt uppdelad.
 Den är helt hierarkiskt.
 
 06:48.366 --> 06:51.100
-Så du har ett företag och som har
-olika underavdelningar.
+Så du har ett företag och som 
+har olika underavdelningar.
 
 06:51.100 --> 06:52.733
 Hur kan man använder det här?
@@ -448,34 +448,33 @@ marknadsföring eller ett universitet
 får en egen faktura bara för det
 
 07:15.133 --> 07:19.000
-de backup:ar
-och en annan får en nästa faktura
+de backup:ar och en annan 
+får en nästa faktura
 
 07:20.033 --> 07:21.166
 för deras del.
 
 07:21.166 --> 07:25.033
-Men däremot så
-kanske vi utnyttjar deduplicering
+Men däremot så kanske vi 
+utnyttjar deduplicering
 
 07:25.033 --> 07:28.000
 för att reducera datamängderna.
 
 07:28.000 --> 07:31.500
-Deduplicering
-är att om datan du skickar upp
+Deduplicering är att om datan du skickar upp
 
 07:31.500 --> 07:34.600
-redan finns i tjänsten
-så sparas det inte en gång till.
+redan finns i tjänsten så 
+sparas det inte en gång till.
 
 07:35.566 --> 07:39.266
 Vi tar ett exempel operativsystemet
 Windows som många använder
 
 07:39.266 --> 07:43.433
-eller Linux eller liknande så delar man
-ut den kostnaden för en kopia
+eller Linux eller liknande så delar 
+man ut den kostnaden för en kopia
 
 07:43.433 --> 07:46.933
 på alla divisioner så alla får betala
@@ -483,7 +482,7 @@ en mindre del av det operativsystemet.
 
 07:47.266 --> 07:52.133
 För det som ligger i Windows katalogen
-är Är samma i sort sett, till 99 %.
+är Är samma i sort sett, till 99 %.
 
 07:54.566 --> 07:57.066
 Exempel från verkliga världen.
@@ -503,8 +502,7 @@ För saker händer hela tiden,
 men det som är ännu
 
 08:10.633 --> 08:13.633
-viktigare än själva backup:en är
-“restore”.
+viktigare än själva backup:en är “restore”.
 
 08:13.666 --> 08:19.766
 När någonting händer,
@@ -521,8 +519,8 @@ Allt från att elen har gått.
 Det har varit
 
 08:29.966 --> 08:33.533
-översvämningar,
-brand det har till och med varit så att
+översvämningar, brand det har 
+till och med varit så att
 
 08:34.633 --> 08:38.166
 själva brandsläckningssystemet
@@ -532,19 +530,18 @@ har tagit kål på hårddiskar
 för att det låter för mycket bra.
 
 08:42.566 --> 08:45.400
-Brandsläckningssystemet slog sönder
-hela miljön.
+Brandsläckningssystemet 
+slog sönder hela miljön.
 
 08:45.400 --> 08:48.400
-Det som har blivit mer aktuellt
-på senaste
+Det som har blivit mer aktuellt på senaste
 
 08:48.400 --> 08:51.400
 som många pratar om är “ransomware”.
 
 08:51.666 --> 08:54.966
-När någon extern
-part kommer in i ens miljö och
+När någon extern part 
+kommer in i ens miljö och
 
 08:57.033 --> 08:57.466
 tar bort
