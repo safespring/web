@@ -20,6 +20,10 @@ nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/demo-backup-1/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/demo-backup-1.webp"
+subtitles:
+  - src: "/subtitles/demo-backup/vtt-demo-backup-1.vtt"
+    srclang: "sv"
+    label: "Svenska"
 chaptersTitle: "Avsnitt"
 chapters:
   - title: "Vad skiljer oss åt?"
