@@ -22,8 +22,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-1.webp"
 subtitles:
   - src: "/subtitles/demo-backup/srt-demo-backup-1.srt"
-  - srclang: "Se"
-  - label: "Svenska"
+    srclang: "Se"
+    label: "Svenska"
 chaptersTitle: "Avsnitt"
 chapters:
   - title: "Vad skiljer oss åt?"
