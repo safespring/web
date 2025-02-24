@@ -1,8 +1,8 @@
 ---
-title: "SaaS tjänster blir allt mer attraktiva, men hur hanteras personuppgifterna?"
+title: "Programvara som tjänst blir allt mer attraktivt, men hur hanteras personuppgifterna?"
 date: 2025-02-20
 draft: false
-intro: "Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige."
+intro: "Safespring erbjuder molntjänster med fullständig integritet. Våra datacenter, som är belägna i Sverige, säkerställer att dina data hanteras enbart av dig – och aldrig exporteras utanför landet."
 background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -21,7 +21,7 @@ Safespring är en svensk molntjänstleverantör med svenska datacenter och med f
 
 I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen. Om ni använder Safespring för er IaaS/PaaS blir era kunders analys gällande personuppgiftsbehandling trivial i jämförelse med om ni använder amerikanska molntjänster vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället.
 
-## Juridik information relevant för SaaS 
+## Juridiken 
 Både ni och vi på Safespring agerar i en förtroendebransch där det blir allt mer kritiskt att se över våra beroenden och partners. Våra kunder kommer ställa allt högre krav på politisk och juridisk säkerhet utöver traditionell IT-säkerhet och driftsäkerhet.
 
 Safespring är en svensk publik molnplattform som kraftigt förenklar för er att uppfylla svensk och europeisk lagstiftning. Med fokus på öppna standarder och digital suveränitet erbjuder Safespring tjänster som virtuella servrar, storskalig lagring, container-plattformar och backup som tjänst. Med datacenter i Sverige och Norge är Safespring en beprövad och säker plattform för SaaS-bolag, myndigheter, datadrivna bolag och den akademiska sektorn.
@@ -39,7 +39,7 @@ Om det förekommer sekretessreglerade uppgifter i er SaaS, vare sig det är uppg
 	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
 {{< /icon-block-container >}}
 
-## Teknisk information relevant för SaaS
+## Tekniken
 Safespring tillhandahåller en driftsäker och flexibel infrastruktur som gör det enklare för er som SaaS-leverantör att leverera era tjänster med hög prestanda och tillgänglighet. Nätverksstacken är byggd med Calico, vilket ger er en säker, skalbar och högpresterande kommunikation mellan era tjänster samtidigt som stabilitet och driftsäkerhet säkerställs. OpenStack-plattformen ger er tillgång till ett brett utbud av instans-typer, vilket gör det enkelt att anpassa kapaciteten efter era behov och optimera kostnaden.
 
 Lagringen är anpassad för att möta era varierande krav, med både lokal NVMe-lagring för extremt snabb dataåtkomst och Ceph-baserad central lagring. Ceph-lösningen finns i två varianter: en SSD-baserad för höga prestandakrav och en kostnadseffektiv lagring baserad på traditionell disk för stora datamängder såsom loggar och backup. Ceph är dessutom en självläkande och distribuerad lösning som säkerställer hög tillgänglighet och redundans, vilket ger er trygghet och stabilitet i ert datahanteringsflöde.

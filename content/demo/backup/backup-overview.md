@@ -22,15 +22,30 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-1.webp"
 chaptersTitle: "Avsnitt"
 chapters:
-- title: "kapitel  1"
-  time: 84
-  timeFormatted: "1:24"
-- title: "Kapitel 2"
-  time: 312
-  timeFormatted: "5:12"
-- title: "Kapitel 3"
-  time: 384
-  timeFormatted: "6:24"
+  - title: "Vad skiljer oss åt?"
+    time: 26
+    timeFormatted: "0:26"
+  - title: "3-2-1 regeln"
+    time: 67
+    timeFormatted: "1:07"
+  - title: "RPO och RTO"
+    time: 211
+    timeFormatted: "3:31"
+  - title: "Inga egress-kostnader"
+    time: 294
+    timeFormatted: "4:54"
+  - title: "Portalen"
+    time: 401
+    timeFormatted: "6:41"
+  - title: "deduplicering"
+    time: 441
+    timeFormatted: "7:21"
+  - title: "Verkliga exempel"
+    time: 474
+    timeFormatted: "7:54"
+  - title: "Ransomware"
+    time: 564
+    timeFormatted: "9:24"
 ---
 
 {{< ingress >}}
