@@ -8,7 +8,7 @@ cardorder: "4"
 date: 2022-04-29T11:58:58+01:00
 draft: false
 section: "DBaaS"
-toplogo: "arkivit"
+toplogo: "severalninses-logo.png"
 intro: "Med bara några enkla klick kan du distribuera ett fullt hanterat, lastbalanserat, högtillgängligt databaskluster för MySQL, MariaDB eller PostgreSQL som ger prestanda, drifttid och enkelhet. "
 cardintro: "Med några få klick kan du distribuera ett fullt hanterat, databaskluster."
 background: "safespring-background-dbaas.svg"
