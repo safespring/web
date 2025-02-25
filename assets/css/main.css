@@ -82,6 +82,18 @@
 	color:#195F8C;
 	background:#EAF0F4;
 }
+
+video::cue {
+	color: #fff;
+	font-family: var(--mon-font);
+	border-radius: 10px;
+	padding: 10px 20px !important;
+}
+
+video::-webkit-media-text-track-display {
+	font-family: var(--mon-font);
+}
+
 .br-5 {
 	border-radius:10px !important;
 }
