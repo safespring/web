@@ -761,7 +761,7 @@ color:var(--unCheckedColor);
 
 
 .sidebar-image {
-	width: 350px;
+	width: 100%;
 	height: 200px;
 	background-size: cover;
 	background-position: center;
@@ -920,7 +920,8 @@ color:var(--unCheckedColor);
 }
 
 .content-default-single-full-width {
-	padding:5%;
+	padding:;
+	width: 100%;
 }
 
 .content-default-single {
@@ -1763,11 +1764,15 @@ body.no-scroll {
 
 /* END - MOBILE TOC BUTTON */
 
+.sidebar-default-single {
+	width: min(350px, 100%);
+}
+
 .sidebar-container {
 	background-color:white;
 	border-radius:10px;
 	overflow:hidden;
-	width:350px;
+	width: min(350px, 100%);
 	box-shadow:var(--tran-shadow);
 	height:fit-content;
 }
