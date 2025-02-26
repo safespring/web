@@ -37,3 +37,4 @@ Safespring is a European public cloud platform built to meet compliance needs wi
 {{< /icon-block-container >}}
 
 {{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Open Presentation" text="Take a closer look at Safespring and our European cloud platform focused on compliance, sensitive data handling, and GDPR." >}}
+

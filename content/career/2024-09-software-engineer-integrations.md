@@ -13,7 +13,7 @@ language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 TOC: "On this page"
-sidebarimage: ""
+sidebarimage: " "
 ---
 
 {{< ingress >}}
