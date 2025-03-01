@@ -78,6 +78,10 @@
 	font-display: swap;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 ::selection {
 	color:#195F8C;
 	background:#EAF0F4;
@@ -1772,9 +1776,15 @@ body.no-scroll {
 	background-color:white;
 	border-radius:10px;
 	overflow:hidden;
-	width: min(350px, 100%);
+	width: 350px;
 	box-shadow:var(--tran-shadow);
 	height:fit-content;
+}
+
+@media screen and (max-width: 600px) {
+	.sidebar-container {
+		width: min(350px, 100%);
+}
 }
 
 .sidebar-content {
