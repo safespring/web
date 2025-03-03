@@ -78,10 +78,6 @@
 	font-display: swap;
 }
 
-@view-transition {
-  navigation: auto;
-}
-
 ::selection {
 	color:#195F8C;
 	background:#EAF0F4;
