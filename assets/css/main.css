@@ -108,6 +108,8 @@ video::-webkit-media-text-track-display {
 
 html, body {
 	-webkit-text-size-adjust: 100%;
+	scroll-behavior:smooth;
+	scroll-padding: 5rem;
 }
 
 pre > code {
@@ -227,7 +229,6 @@ a::selection {
 
 .index {
 	background:#FAFEFE;
-	scroll-behavior:smooth;
 }
 
 li {
@@ -281,6 +282,7 @@ h2 {
 	color:var(--heading-color);
 	line-height:30px;
 	margin-bottom:7px;
+	text-wrap: balance;
 }
 
 h2:first-child {
@@ -404,20 +406,6 @@ h4 {
 	max-width:700px;
 	background-color:#E8EFF3;
 }
-
-/*html {
-overflow:hidden;
--webkit-overflow-scrolling:touch;
-height:100%;
-}
-
-body {
-margin:0;
-overflow:auto;
-height:inherit;
-font-variant-numeric:normal;
-scroll-behavior:smooth;
-}*/
 
 p>a:hover {
 	color:var(--main-color);
