@@ -1,7 +1,7 @@
 ---
-title: "Safesprings White Papes"
+title: "Safesprings White Papers"
 language: "Se"
-date: 2022-12-09T10:47:25+01:00
+date: 2025-03-03
 draft: false
 intro: "Safesprings publikationer syftar till att sprida kunskap och intresse för datasäkerhet och cloud computing."
 background: ""
