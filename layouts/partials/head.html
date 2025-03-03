@@ -160,6 +160,7 @@
     color:#195F8C;
     line-height:50px;
     margin-bottom:10px;
+    text-wrap: balance;
   }
   h1:first-child {
     padding-top:0;
@@ -246,6 +247,7 @@
     font:300 1.125rem montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     color:#323232;
     line-height:1.5;
+    text-wrap: pretty;
   }
   .navbar {
     letter-spacing:0.2px;
@@ -708,9 +710,8 @@
 </style>
 
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}
-{{ $js2 := resources.Get "js/ancor-scroll.js" }}
 {{ $js3 := resources.Get "js/text-balancer.js" }}
-{{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1 $js2) | minify | fingerprint }}
+{{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1) | minify | fingerprint }}
 
 <script src="{{ $scripts.RelPermalink }}" defer></script>
 
