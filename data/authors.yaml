@@ -43,3 +43,7 @@
 - name: "Rob Haverkamp"
   title: "Head of Engineering"
   image_happy: "rob.webp"
+
+- name: "Anders Johansson"
+  title: "Platform Engineer"
+  image_happy: "anders-j.webp"
