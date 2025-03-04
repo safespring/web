@@ -32,9 +32,7 @@ We consider that this is the holy trinity for a robust kubernetes platform offer
 
 With that in mind, we choose Talos Linux from Sidero Labs, as it comes with a sane secure-by-default implementation. Things like no SSH access to nodes and an extensible API with support for the common use cases when it comes to modern container-based operations.  
 
-And also a really small footprint with resources — the minimals are: [System Requirements](https://www.talos.dev/v1.9/introduction/system-requirements/#minimum-requirements)  
-
-With such a small footprint, it was a given.
+And also a really small footprint with resources[^1]. With such a small footprint, it was a given.
 
 And the Talos Linux system only has 12 unique binaries, whereas a common distribution like Ubuntu server 22.04 has a minimum of 1,500 binaries. Less binaries means less exposure equals more secure. And ease of maintenance.
    
@@ -48,7 +46,7 @@ There are a few prerequisites to get this going, we will keep this at a high lev
 - Talos image present in OpenStack.
 {{% /note %}}
     
-To configure and upload[^1] a talos[^2] image to openstack use the following guide:  
+To configure and upload[^2] a talos[^3] image to openstack use the following guide:  
 ```bash
 inputs_schematic: 376567988ad370138ad8b2698212367b8edcb69b5fd68c80be1f2ec7d603b4ba
 inputs_version: v1.9.4
@@ -58,10 +56,6 @@ unxz openstack-amd64.raw.xz
 openstack image create --disk-format raw --container-format bare --community --file ./openstack-amd64.raw talos-image-${inputs_version}
 rm -f openstack-amd64.raw.xz openstack-amd64.raw
 ```
-[^1]: Read more about how to upload an image in the [Safespring documentation about images](https://docs.safespring.com/compute/image/#uploading-an-image-by-customer)  
-
-[^2]: More information about the [Talos Image Factory](https://factory.talos.dev/)
-
 
 *With the tooling prerequisites in place we also will need to have created a HaProxy load balancer and a DNS entry for the cluster.*
 
@@ -230,4 +224,8 @@ Does this sound like a good fit for your needs?
 Don't hesitate to reach out if you have any questions at hello@safespring.com.
 {{% /note %}}
 
-## References and links 
+## References and link
+
+[^1]: Read more about [Talos System Requirements](https://www.talos.dev/v1.9/introduction/system-requirements/#minimum-requirements). 
+[^2]: Read more about how to upload an image in the [Safespring documentation about images](https://docs.safespring.com/compute/image/#uploading-an-image-by-customer).
+[^3]: More information about the [Talos Image Factory](https://factory.talos.dev/).
