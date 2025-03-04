@@ -176,7 +176,7 @@ talosctl patch mc --nodes 1.2.3.4 --patch @patches/patch.yaml
 
 
 {{% note "retrieve kubconfig" %}}
-When we set the *rotate-server-certificates* option to true, the new kubconfig can retrieved by using:
+When we set the `rotate-server-certificates` option to true, the new kubconfig can retrieved by using:
 ```bash
 talosctl kubeconfig kubeconfig_<path>
 ```
