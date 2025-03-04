@@ -1,7 +1,7 @@
 ---
 title: "Using Talos Linux and kubernetes bootstrap on OpenStack"
 date: 2025-03-03
-intro: "We consider that automation, security and common IaC is the holy trinity for a robust kubernetes platform offering. "
+intro: "We consider that automation, security and common IaC to be the holy trinity for a robust kubernetes platform offering. "
 draft: false
 tags: ["English"]
 showthedate: true
