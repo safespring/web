@@ -287,7 +287,8 @@ h2:first-child {
   height: auto;
 }
 
-p > img {
+p > img,
+p > picture, img {
   border-radius: 10px;
 }
 
@@ -2790,7 +2791,8 @@ ol li ol li::before {
   font-size: 1.5rem;
 }
 
-.img-250 > img {
+.img-250 > img,
+.img-250 > picture > img  {
   height: 250px !important;
   width: auto;
 }
