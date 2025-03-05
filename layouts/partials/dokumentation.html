@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 
 <!-- NAVBAR -->
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 
 <!-- HEADING -->
 <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
@@ -197,4 +197,4 @@
 </div>
 </div> -->
 
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

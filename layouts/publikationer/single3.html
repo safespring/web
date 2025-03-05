@@ -9,8 +9,8 @@
   <title>Safespring | {{ .Title }}</title>
 </head>
 <body>
-  {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
-   {{ partial "header.html" . }} <!-- HEADING -->
+  {{ partialCached "g-tag-manager.html" . }} <!-- NAVBAR -->
+   {{ partialCached "header.html" . }} <!-- HEADING -->
    <div class="heading-sub">
      <div class="heading-content">
        <h1>Senaste nytt från Safespring</h1>
@@ -68,4 +68,4 @@
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

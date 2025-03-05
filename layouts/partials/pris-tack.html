@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-	 {{ partial "header.html" . }} <!-- HEADING -->
+	 {{ partialCached "header.html" . }} <!-- HEADING -->
 	 <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_72.jpg) no-repeat; background-size: cover; background-position: center;">
 		<div class="heading-content">
 			<a class="content-category-blogg">Kostnadseffektivitet</a><br><br>
@@ -28,4 +28,4 @@
 </main>
 
 	<!-- FOOTER -->
-	{{ partial "footer.html" . }}
+	{{ partialCached "footer.html" . }}

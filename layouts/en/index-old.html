@@ -3,7 +3,7 @@
 <body>
 
   <!-- NAVBAR -->
-  {{ partial "header.html" . }}
+  {{ partialCached "header.html" . }}
   <!-- HEADING -->
   <div class="white-blue-fade">
     <div class="heading-index">
@@ -52,5 +52,5 @@
     </div>
   </div>
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>

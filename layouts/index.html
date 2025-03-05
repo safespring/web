@@ -2,7 +2,7 @@
 
 <body>
   <!-- NAVBAR -->
-  {{ partial "header.html" . }}
+  {{ partialCached "header.html" . }}
   <!-- HEADING -->
   <main class="white-blue-fade">
     <section class="heading-index">
@@ -197,7 +197,7 @@
           </section>
         </main>
         <!-- FOOTER -->
-        {{ partial "footer.html" . }}
+        {{ partialCached "footer.html" . }}
         <script>
           var video = document.getElementById('myVideo');
           var customCursor = document.getElementById('custom-cursor');

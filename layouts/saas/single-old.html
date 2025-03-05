@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
-    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+    {{ partialCached "g-tag-manager.html" . }} <!-- NAVBAR -->
     <body>
-     {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partial "header.html" . }}{{ end }}
+     {{ if eq .Params.language "En" }}{{ partial "en-header.html" . }}{{ else if eq .Params.language "No" }}{{ partial "no-header.html" . }}{{ else }}{{ partialCached "header.html" . }}{{ end }}
 
      <!-- HEADING -->
      <div class="heading-sub" style="background: url(/img/saas/backgrounds/{{ .Params.background }}); background-size: cover; background-position: center;">
@@ -21,5 +21,5 @@
       {{partial "side-bar.html" . }}
     </main>
     <!-- FOOTER -->
-    {{ partial "footer.html" . }}
+    {{ partialCached "footer.html" . }}
 </body>

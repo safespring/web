@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 
 <!-- NAVBAR -->
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 
 <!-- HEADING -->
 <div class="heading-default-single" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
@@ -42,8 +42,8 @@
   <div class="w250"></div>
 </div>
 <!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
-{{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
+{{ if .Params.logobanner }}{{ partialCached "logobanner2.html" . }}{{ end }}
+{{ if .Params.logobannersaas }}{{ partialCached "logobanner-saas.html" . }}{{ end }}
 <!-- Lista utvalda serier (huvudsidor för varje serie) -->
 <div class="flexcontainer-webinar-series-backplate">
 <div class="webinar-scrolling-wrapper-flexbox">
@@ -131,4 +131,4 @@ document.getElementById('scrollRight').addEventListener('click', function() {
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
