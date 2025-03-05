@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 <!-- HEADING -->
 <div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
   <div style="max-width: 800px;">
@@ -34,4 +34,4 @@
     {{ partial "sidebar-default-single.html" . }}
   </div>
 </main>
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

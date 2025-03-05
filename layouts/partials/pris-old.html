@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <body>
-	 {{ partial "header.html" . }} <!-- HEADING -->
+	 {{ partialCached "header.html" . }} <!-- HEADING -->
 	 <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_72.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
 		<div class="heading-content">
 			<h1>Pris</h1>
@@ -1424,6 +1424,6 @@
 </script>
 -->
 	<!-- FOOTER -->
-	{{ partial "footer.html" . }}
+	{{ partialCached "footer.html" . }}
 </body>
 </html>

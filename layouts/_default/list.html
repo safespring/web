@@ -40,7 +40,7 @@
 {{ partial "head.html" . }}
 
 <!-- NAVBAR -->
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 
 <!-- HEADING -->
 <div class="heading-default-single" >
@@ -48,8 +48,8 @@
     {{ .Render "li3" }}
 </div>
 <!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
-{{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
+{{ if .Params.logobanner }}{{ partialCached "logobanner2.html" . }}{{ end }}
+{{ if .Params.logobannersaas }}{{ partialCached "logobanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
@@ -138,9 +138,9 @@
 <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
 {{ if $isWebinar }}
 <!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
-{{ partial "webinar-side-bar.html" . }}
+{{ partialCached "webinar-side-bar.html" . }}
 {{ end }}
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 {{ end }}

@@ -58,9 +58,9 @@ _paq.push(['enableLinkTracking']);
   {{ partial "telavox.html" }}
 </head>
 <body>
-  {{ partial "g-tag-manager.html" . }}
-  {{ partial "header.html" . }} <!-- NAVBAR -->
-  <!-- {{ partial "header.html" . }} <!-- HEADING -->
+  {{ partialCached "g-tag-manager.html" . }}
+  {{ partialCached "header.html" . }} <!-- NAVBAR -->
+  <!-- {{ partialCached "header.html" . }} <!-- HEADING -->
    <div class="heading-sub" style="background: url({{ if.Params.background }}/img/blogg/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position:center;">
      <div class="heading-content">
        {{ if .Params.tack }}{{ .Render "li2" }}{{ else }}{{ .Render "li3" }}{{ end }}
@@ -151,5 +151,5 @@ _paq.push(['enableLinkTracking']);
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>

@@ -15,7 +15,7 @@
 {{ else }}
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 <!-- HEADING -->
 
 <!--
@@ -29,8 +29,8 @@
 </div>
 
 <!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
-{{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
+{{ if .Params.logobanner }}{{ partialCached "logobanner2.html" . }}{{ end }}
+{{ if .Params.logobannersaas }}{{ partialCached "logobanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ $pageParams := .Params }}
@@ -47,7 +47,7 @@
 
     {{ end }}
     {{ .Content }}
-    {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
+    {{ if eq .Params.form "yes" }}{{ partialCached "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
   </div>
   <!-- SIDEBAR -->
@@ -84,9 +84,9 @@
 <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
 {{ if $isWebinar }}
 <!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
-{{ partial "webinar-side-bar.html" . }}
+{{ partialCached "webinar-side-bar.html" . }}
 {{ end }}
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 {{ end }}

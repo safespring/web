@@ -46,3 +46,18 @@ fractions = false
 
 [minify]
   minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      # Remove extra whitespace, comments, and optional tags
+      keepWhitespace = false
+      keepComments = false
+      keepConditionalComments = false
+      keepDocumentTags = false
+    [minify.tdewolff.css]
+      inline = true
+      precision = 3
+    [minify.tdewolff.svg]
+      inline = true
+    [minify.tdewolff.js]
+      # Enable JS mangling if your code is compatible. This reduces variable names and file size.
+      mangle = true

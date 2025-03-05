@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <body>
-  {{ partial "g-tag-manager.html" . }}
+  {{ partialCached "g-tag-manager.html" . }}
   <div class="ipad-form-start">
     <div class="flexcontainer-ipad" style="align-items: baseline;">
                 {{ range where (where .Pages "Section" "ipad") ".Params.hide" "!=" true }}

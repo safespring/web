@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
 <body>
- {{ partial "header.html" . }}
+ {{ partialCached "header.html" . }}
  <!-- HEADING -->
  <div class="heading-default-single" style="background: url('/img/background/safespring-blue-fade2.svg'); background-size: cover; background-position: center;">
    {{ .Render "li3" }}
@@ -134,7 +134,7 @@
         </div>
       </div>
       <!-- SIDEBAR -->
-      {{ partial "webinar-side-bar.html" . }}
+      {{ partialCached "webinar-side-bar.html" . }}
     </main>
     <!-- FOOTER -->
-    {{ partial "footer.html" . }}
+    {{ partialCached "footer.html" . }}

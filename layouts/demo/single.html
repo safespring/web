@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
 <body>
- {{ partial "header.html" . }}
+ {{ partialCached "header.html" . }}
  <!-- HEADING -->
  <div class="heading-default-single">
       <img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">
@@ -191,4 +191,4 @@ function setCurrentTime(time) {
 <!-- SIDEBAR -->
 </main>
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

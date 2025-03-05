@@ -1,9 +1,9 @@
 {{ partial "head.html" . }}
 
 <body>
-  {{ partial "g-tag-manager.html" . }}
+  {{ partialCached "g-tag-manager.html" . }}
   <div class="main">
-    {{ partial "header.html" . }}
+    {{ partialCached "header.html" . }}
     <div class="terms">
       {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
       <div class="term">
@@ -15,7 +15,7 @@
       {{ end }}
     </div>
     <!-- terms -->
-    {{ partial "footer.html" . }}
+    {{ partialCached "footer.html" . }}
   </div>
   <!-- main end -->
 </body>

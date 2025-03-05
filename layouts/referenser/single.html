@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
-    {{ partial "g-tag-manager.html" . }} <!-- NAVBAR -->
+    {{ partialCached "g-tag-manager.html" . }} <!-- NAVBAR -->
     <body>
-    {{ partial "header.html" . }}
+    {{ partialCached "header.html" . }}
     {{ partial "svg-filter.html" . }}
      <!-- HEADING -->
      <img class="heading-background safespring_blue" style="background: url({{ if.Params.background }}/referenser/images/background/{{ .Params.background }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
@@ -23,5 +23,5 @@
 
     </main>
     <!-- FOOTER -->
-    {{ partial "footer.html" . }}
+    {{ partialCached "footer.html" . }}
 </body>

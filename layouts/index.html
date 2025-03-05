@@ -2,7 +2,7 @@
 
 <body>
   <!-- NAVBAR -->
-  {{ partial "header.html" . }}
+  {{ partialCached "header.html" . }}
   <!-- HEADING -->
   <main class="white-blue-fade">
     <section class="heading-index">
@@ -28,7 +28,7 @@
       <div id="scaleout-usecase">
       </div>
       <div class="index-video video-container">
-        <video id="myVideo" controls poster="/img/card/safespring_use-case_scaleout-1080p.jpg">
+        <video id="myVideo" controls poster="/img/card/safespring_use-case_scaleout-1080.webp">
           <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt" kind="subtitles" srclang="sv" label="Swedish">
             <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt" kind="subtitles" srclang="en" label="English">
               <track src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt" kind="subtitles" srclang="no" label="Norwegian">
@@ -197,7 +197,7 @@
           </section>
         </main>
         <!-- FOOTER -->
-        {{ partial "footer.html" . }}
+        {{ partialCached "footer.html" . }}
         <script>
           var video = document.getElementById('myVideo');
           var customCursor = document.getElementById('custom-cursor');

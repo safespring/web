@@ -1,6 +1,6 @@
 	{{ partial "head.html" . }}
 <!-- NAVBAR -->
-	 {{ partial "header.html" . }} <!-- HEADING -->
+	 {{ partialCached "header.html" . }} <!-- HEADING -->
 	 <div class="heading-sub" style="background: url(/img/blue/{{ if .Params.background }}{{ .Params.background }}{{ else }}safespring_bilder_9.jpg{{ end }}); background-size: cover; background-position: center;">
 	 	<div class="heading-content">
 			<div class="content-meta-post">
@@ -49,7 +49,7 @@ men du är naturligtvis även välkommen att kontakta någon av våra medarbetar
 					Norge</p><br>
 					<iframe frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2299012175845!2d10.633605316302893!3d59.91173178186637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416cfa39be1a6b%3A0x328bf62a2a8f42cc!2sLysaker+Torg+12%2C+1366+Lysaker%2C+Norge!5e0!3m2!1ssv!2sse!4v1530192586614" style="border:0" width="300"></iframe>
 				</div>
-				{{ partial "form.html" . }}
+				{{ partialCached "form.html" . }}
 			</div>
   </div>
 			<!-- SIDEBAR -->
@@ -110,4 +110,4 @@ men du är naturligtvis även välkommen att kontakta någon av våra medarbetar
 			</div>
 	</main>
 	<!-- FOOTER -->
-	{{ partial "footer.html" . }}
+	{{ partialCached "footer.html" . }}

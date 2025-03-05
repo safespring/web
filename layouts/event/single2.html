@@ -3,7 +3,7 @@
   {{ else if eq $.Params.title "1" }}
     {{ "1.html" . }}
   {{ else }}
-    {{ partial "header.html" . }}
+    {{ partialCached "header.html" . }}
 
 <!DOCTYPE html>
 <html
@@ -77,8 +77,8 @@ _paq.push(['enableLinkTracking']);
   {{ partial "telavox.html" }}
 </head>
 <body>
-  {{ partial "g-tag-manager.html" . }} <!--  NAVBAR -->
-   {{ partial "header.html" . }} <!--  HEADING -->
+  {{ partialCached "g-tag-manager.html" . }} <!--  NAVBAR -->
+   {{ partialCached "header.html" . }} <!--  HEADING -->
   <div class="heading-sub">
     <div class="heading-content">
       <h1>{{ .Title }}</h1>
@@ -134,5 +134,5 @@ _paq.push(['enableLinkTracking']);
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 {{ end }}

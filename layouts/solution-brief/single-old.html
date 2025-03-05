@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <body>
-   {{ partial "header.html" . }} <!-- HEADING -->
+   {{ partialCached "header.html" . }} <!-- HEADING -->
 <div class="heading-sub" style="background: {{ if.Params.background }}url(/img/background/{{ .Params.background }}){{ else }}#E8EFF3{{ end }}; background-size: cover; background-position: center">
 <div class="heading-content">
        {{ .Render "li3" }}
@@ -25,5 +25,5 @@
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>
