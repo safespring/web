@@ -48,9 +48,9 @@ _paq.push(['enableLinkTracking']);
 <title>Safespring | {{ .Title }}</title>
 {{ partial "telavox.html" }}
 </head>
-{{ partial "g-tag-manager.html" . }}
+{{ partialCached "g-tag-manager.html" . }}
 <!-- NAVBAR -->
- {{ partial "header.html" . }} <!-- HEADING -->
+ {{ partialCached "header.html" . }} <!-- HEADING -->
  <div class="heading-sub" style="background: url(/img/blue/safespring_bilder_9.jpg); background-size: cover; background-position: center;">
    <div class="heading-content">
      <div class="content-meta-post">
@@ -76,7 +76,7 @@ _paq.push(['enableLinkTracking']);
 <div class="ch-content">
   <div class="content-body">
     {{ .Content }}
-    {{ if .Params.form }}{{ partial "form.html" . }}{{ else }}{{ end }}
+    {{ if .Params.form }}{{ partialCached "form.html" . }}{{ else }}{{ end }}
   </div>
 </div>
 
@@ -86,4 +86,4 @@ _paq.push(['enableLinkTracking']);
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

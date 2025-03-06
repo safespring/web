@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 
 <!-- NAVBAR -->
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 
 <!-- HEADING -->
 <div class="heading-sub" style="background: url(/img/chalmers.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
@@ -89,4 +89,4 @@
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

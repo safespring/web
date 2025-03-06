@@ -60,7 +60,7 @@ _paq.push(['enableLinkTracking']);
   <title>Safespring | {{ .Title }}</title>
 </head>
 <body>
-  <!-- {{ partial "header.html" . }} <!-- HEADING -->
+  <!-- {{ partialCached "header.html" . }} <!-- HEADING -->
    <div class="heading-sub-event" style="background: url({{ if.Params.eventbild }}/event/image/background/{{ .Params.eventbild }}{{ else }}/blogg/images/background/background.jpg{{ end }}); background-size: cover; background-position: center;">
      <div class="heading-content">
        <a class="logo" href="{{ .Site.BaseURL }}">
@@ -161,4 +161,4 @@ _paq.push(['enableLinkTracking']);
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}

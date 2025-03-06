@@ -1,5 +1,5 @@
 	<!--{{ partial "head.html" . }}
-	 {{ partial "header.html" . }} <!-- HEADING
+	 {{ partialCached "header.html" . }} <!-- HEADING
 		<div class="heading-sub" style="background: url(/img/blue/safespring_bilder_9.jpg); background-size: cover; background-position: center;">
 	   <div class="heading-content">
 	     <div class="content-meta-post"><a class="content-category-blogg" href="/om-safespring">Om Safespring</a></div><br>
@@ -24,11 +24,11 @@
     <!-- SIDEBAR
 	{{ partial "side-bar.html" . }}
 	</main><!-- FOOTER
-	{{ partial "footer.html" . }}-->
+	{{ partialCached "footer.html" . }}-->
 	{{ partial "head.html" . }}
-	{{ partial "g-tag-manager.html" . }}
+	{{ partialCached "g-tag-manager.html" . }}
 	<body>
-	 {{ partial "header.html" . }} <!-- HEADING -->
+	 {{ partialCached "header.html" . }} <!-- HEADING -->
 	<div class="heading-sub" style="background: url(/img/blue/safespring_bilder_3.jpg) no-repeat, fixed; background-size: cover; background-position: center;">
 		<div class="heading-content">
 			<h1>Kundreferenser</h1>
@@ -77,5 +77,5 @@
 </main>
 
 	<!-- FOOTER -->
-	{{ partial "footer.html" . }}
+	{{ partialCached "footer.html" . }}
 	</body>

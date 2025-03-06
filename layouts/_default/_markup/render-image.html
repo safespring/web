@@ -1,0 +1,32 @@
+<picture>
+  {{/* Check if the image is a JPG */}}
+  {{ $isJPG := eq (path.Ext .Destination) ".jpg" }}
+  {{/* Check if the image is a PNG */}}
+  {{ $isPNG := eq (path.Ext .Destination) ".png" }}
+
+  {{ if $isJPG }}
+    {{/* Construct the expected AVIF filename by replacing .jpg with .avif */}}
+    {{ $avifPath := replace .Destination ".jpg" ".avif" }}
+    {{ $avifPathStatic := printf "static/%s" $avifPath }}
+    {{ if fileExists $avifPathStatic }}
+      <source srcset="{{ $avifPath | safeURL }}" type="image/avif">
+    {{ end }}
+  {{ end }}
+
+  {{ if $isPNG }}
+    {{/* Construct the expected AVIF filename by replacing .png with .avif */}}
+    {{ $avifPath := replace .Destination ".png" ".avif" }}
+    {{ $avifPathStatic := printf "static/%s" $avifPath }}
+    {{ if fileExists $avifPathStatic }}
+      <source srcset="{{ $avifPath | safeURL }}" type="image/avif">
+    {{ end }}
+  {{ end }}
+
+
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ .Text }}"
+    loading="lazy"
+    decoding="async"
+  >
+</picture>

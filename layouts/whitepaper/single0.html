@@ -75,8 +75,8 @@ _paq.push(['enableLinkTracking']);
   <title>Safespring White Paper</title>
 </head>
 <body>
-  {{ partial "g-tag-manager.html" . }} <!--  NAVBAR -->
-   {{ partial "header.html" . }} <!--  HEADING -->
+  {{ partialCached "g-tag-manager.html" . }} <!--  NAVBAR -->
+   {{ partialCached "header.html" . }} <!--  HEADING -->
   <div class="heading-sub">
     <div class="heading-content">
       <h1>{{ .Title }}</h1>
@@ -137,4 +137,4 @@ _paq.push(['enableLinkTracking']);
 </main>
 
 <!-- FOOTER -->
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
