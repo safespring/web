@@ -55,34 +55,7 @@
     margin:0;
     background-color:#fafefe;
   }
-  @media only screen and (max-width:900px) {
-    .heading-default-single {
-      flex-flow:row wrap !important;
-      padding: max(150px, 10%) 10% 10% 10% !important;
-    }
 
-    .heading-default-single h1{
-      max-width:90%;
-      font:300 40px/1.1 hind;
-    }
-    .site-header-wrapper {
-      flex-flow:column nowrap;
-      justify-content:center;
-      align-items:center;
-    }
-    .site-header-logo img {
-      margin:0 auto;
-      margin-left: 15px;
-    }
-    .site-header-nav {
-      flex-flow:row wrap;
-      justify-content:center;
-      margin-top:30px;
-    }
-    .site-header-logo {
-      justify-content:center;
-    }
-  }
   .heading-default-single {
     padding:15% 5% 5% 5%;
     display:flex;
@@ -709,6 +682,34 @@
 }
 
 /* END - MOBILE MENU */
+
+  @media only screen and (max-width:900px) {
+    .heading-default-single {
+      flex-flow:row wrap !important;
+      padding: max(150px, 10%) 10% 10% 10% !important;
+    }
+    .heading-default-single h1 {
+      font: 2.75rem/1 hind;
+    }
+    .site-header-wrapper {
+      flex-flow:column nowrap;
+      justify-content:center;
+      align-items:center;
+    }
+    .site-header-logo img {
+      margin:0 auto;
+      margin-left: 15px;
+    }
+    .site-header-nav {
+      flex-flow:row wrap;
+      justify-content:center;
+      margin-top:30px;
+    }
+    .site-header-logo {
+      justify-content:center;
+    }
+  }
+  
 </style>
 
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}
