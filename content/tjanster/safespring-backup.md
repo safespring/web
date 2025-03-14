@@ -34,6 +34,7 @@ Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkel
 Att ta Backup genom Safespring betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
 
 Med vår webbportal kan du enkelt hantera dina backup:er, få rapporter och status samt hantera användare och roller i din organisation.
+
 {{< distance >}}
 
 {{< icon-block-container >}}
@@ -44,6 +45,7 @@ Med vår webbportal kan du enkelt hantera dina backup:er, få rapporter och stat
     {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-pen-to-square" text="Flexibel Administration" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
+
 {{< distance >}}
 
 1. {{< inline "Hög säkerhet:" >}} Våra säkerhetskopior krypteras under transit med TLS 1.2 och kan också konfigureras för att krypteras klientsidan för ännu högre säkerhet automatiskt.
