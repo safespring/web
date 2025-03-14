@@ -1,0 +1,612 @@
+WEBVTT
+
+00:04.200 --> 00:05.600
+Hello and welcome!
+
+00:05.600 --> 00:08.700
+My name is Gabriel Paues and I work
+at Safespring, and with me today I have
+
+00:08.700 --> 00:11.700
+Christian Petersson from IssTech
+
+00:11.933 --> 00:14.666
+and together we deliver
+
+00:14.666 --> 00:17.766
+Safespring Backup as one of the
+services in our portfolio.
+
+00:18.566 --> 00:22.233
+If you could just briefly explain
+how
+
+00:22.233 --> 00:26.100
+Safespring Backup differs from other
+backup services on the market?
+
+00:26.433 --> 00:29.366
+Well, to be blunt, Safespring's backup is
+
+00:29.366 --> 00:32.533
+first and foremost automatically always off-site.
+
+00:32.733 --> 00:36.300
+And you have a completely self-service
+
+00:36.300 --> 00:40.200
+management of backups that is
+simply and fully API-driven.
+
+00:41.033 --> 00:44.733
+That makes you very unique
+in the market.
+
+00:44.733 --> 00:46.566
+In that way.
+
+00:46.566 --> 00:47.366
+It’s Backup-as-a-Service.
+
+00:47.366 --> 00:50.800
+Exactly, and
+
+00:50.800 --> 00:56.366
+the customer can manage their
+backups with the help of experts
+
+00:56.366 --> 01:03.166
+from both you and us, with very
+unique possibilities, simply put.
+
+01:03.733 --> 01:07.266
+You help us with your expertise,
+keeping an eye on the backup market.
+
+01:07.333 --> 01:10.333
+But if we talk a bit more
+basically about what backups are,
+
+01:10.666 --> 01:15.600
+we have the 3-2-1 rule, for example, which
+is talked about so much in backup contexts.
+
+01:16.166 --> 01:17.033
+What was that again?
+
+01:17.033 --> 01:21.233
+Exactly, if you look at it,
+the 3-2-1 rule has been around for many,
+
+01:21.233 --> 01:25.000
+many years in the backup world,
+and those who have been working with backups for
+
+01:26.066 --> 01:28.633
+20 years have always used it.
+
+01:28.633 --> 01:33.466
+What 3-2-1 really stands for is that there are three copies of the data.
+
+01:34.133 --> 01:37.066
+You have one copy which is
+the data you work with.
+
+01:37.066 --> 01:39.433
+There are two copies in
+
+01:39.433 --> 01:42.166
+the backup environment, meaning that one
+
+01:42.166 --> 01:46.733
+copy should be kept on-site,
+
+01:47.133 --> 01:50.133
+as close to your production as possible,
+
+01:50.433 --> 01:52.433
+to enable fast restores,
+
+01:52.433 --> 01:54.766
+and then one that is kept off-site, simply put.
+
+01:54.766 --> 01:58.700
+And that last one,
+it should be stored off-premises.
+
+01:58.700 --> 02:02.700
+Then some vendors have
+added extra digits to this as well,
+
+02:03.200 --> 02:06.933
+for example an extra one to ensure it is offline so
+
+02:06.966 --> 02:10.000
+that you cannot modify the backup,
+
+02:10.866 --> 02:14.500
+and then a zero to indicate that the
+backups are 100%
+
+02:15.033 --> 02:19.500
+error-free with zero errors.
+
+02:19.500 --> 02:21.200
+That used to be
+
+02:21.200 --> 02:24.933
+taken for granted once upon a time, but then traditional tapes and such
+
+02:24.933 --> 02:26.800
+might have had write errors.
+
+02:26.800 --> 02:29.033
+That’s why this extra digit has emerged.
+
+02:31.666 --> 02:34.233
+On-site is in the primary data center
+
+02:34.233 --> 02:35.433
+and off-site is in
+a completely different data center.
+
+02:35.433 --> 02:38.166
+It is essentially the primary
+
+02:38.166 --> 02:41.166
+data center where
+you work with the data, simply put.
+
+02:41.266 --> 02:45.400
+And considering that
+
+02:45.766 --> 02:51.500
+the IT world has radically changed with
+networks and the internet over the past 20 years,
+
+02:51.500 --> 02:52.533
+simply put.
+
+02:52.533 --> 02:55.266
+And the speed between different
+
+02:55.266 --> 02:58.266
+data centers is no longer an issue,
+
+02:59.000 --> 03:03.500
+and that’s why your solution
+has become very popular.
+
+03:03.500 --> 03:07.066
+The customer can call you
+
+03:07.333 --> 03:10.666
+and transfer data at the same speed
+
+03:11.466 --> 03:14.433
+between their data center and you,
+
+03:14.433 --> 03:18.933
+and therefore the 3-2-1 rule
+might be a bit different these days.
+
+03:18.933 --> 03:22.266
+So I might rather say that we have 3-2-2.
+
+03:22.266 --> 03:25.766
+That is, there are three copies of the data, two
+
+03:25.766 --> 03:30.000
+in the backup environment and two of them
+are also off-site, simply put.
+
+03:31.266 --> 03:32.133
+But there are other
+
+03:32.133 --> 03:35.133
+terms as well, RTO and RPO,
+what do they stand for?
+
+03:35.933 --> 03:38.933
+So RTO stands for Recovery Time Objective,
+
+03:38.933 --> 03:42.766
+and that is how long it takes to restore the data?
+
+03:43.400 --> 03:46.400
+And it naturally depends
+on how much data you have
+
+03:47.200 --> 03:49.033
+and how fast your connection is
+
+03:49.033 --> 03:53.533
+to Safespring, for example.
+
+03:53.533 --> 03:54.766
+What routines do you have?
+
+03:54.766 --> 03:59.100
+Do you need to reinstall anything or
+do you need to do anything at all, etc.?
+
+03:59.900 --> 04:03.333
+RPO, which stands for Recovery Point Objective,
+
+04:03.466 --> 04:06.966
+is how often you take backups.
+
+04:07.300 --> 04:11.933
+And it might be that you take a backup every five minutes,
+
+04:11.933 --> 04:16.033
+once a day, once a week,
+or once a month.
+
+04:16.033 --> 04:19.033
+How often you actually make
+
+04:19.266 --> 04:22.066
+a copy of your data, simply put.
+
+04:22.066 --> 04:25.066
+You could call it a photographic copy.
+
+04:25.200 --> 04:25.800
+How many
+
+04:28.566 --> 04:30.766
+days' worth of data can you afford to lose?
+
+04:30.766 --> 04:31.800
+Exactly.
+
+04:31.800 --> 04:37.466
+Or how much data between each
+backup copy can you afford to lose.
+
+04:37.466 --> 04:40.466
+Data that changes a little, where you might
+not need a very aggressive RPO,
+
+04:40.900 --> 04:43.033
+or data that changes so much that
+maybe you need more.
+
+04:43.033 --> 04:48.533
+Exactly, and in some cases you might need
+real-time backup, meaning you must have zero RPO.
+
+04:48.533 --> 04:50.300
+That means that as soon as a
+
+04:50.300 --> 04:53.700
+change is written to the database, for example, it is immediately sent back to the backup environment.
+
+04:54.166 --> 04:59.033
+One of the extra features of Safespring Backup is that we don't have
+
+04:59.033 --> 05:03.133
+any egress costs; egress is the data that leaves our service.
+
+05:03.200 --> 05:03.766
+Exactly.
+
+05:03.766 --> 05:07.833
+And there you might encounter
+unpleasant surprises if
+
+05:07.833 --> 05:11.633
+it turns out that restoring data costs,
+not just the service itself but also
+
+05:11.900 --> 05:12.933
+how much data will be
+
+05:12.933 --> 05:16.633
+transferred out, costing this much, which
+you might not have factored in.
+
+05:16.900 --> 05:17.833
+No, exactly.
+
+05:17.833 --> 05:20.500
+Often when you talk
+
+05:20.500 --> 05:23.700
+about equivalent or
+similar services that you have compared to
+
+05:24.033 --> 05:28.766
+other global players, they charge for everything they send out.
+
+05:28.766 --> 05:32.333
+They gladly accept your backup data,
+but when they send the data out,
+
+05:32.800 --> 05:36.000
+a hefty, juicy bill can arrive.
+
+05:36.000 --> 05:41.033
+But with you, that's completely a non-issue.
+
+05:41.033 --> 05:42.800
+The bill simply doesn't exist.
+
+05:42.800 --> 05:45.333
+So that means the customer
+can really
+
+05:45.333 --> 05:48.633
+restore data as often as they want,
+simply put.
+
+05:49.300 --> 05:52.200
+It is one of your features today,
+which is that
+
+05:53.500 --> 05:54.633
+we have together set
+
+05:54.633 --> 05:57.633
+up an automated restore test.
+
+05:57.666 --> 06:00.466
+So we can restore data and verify
+
+06:00.466 --> 06:03.933
+that last zero we talk about,
+that there are zero errors all the time.
+
+06:04.400 --> 06:07.766
+That it always restores the data
+
+06:07.766 --> 06:12.166
+perhaps daily, weekly, monthly,
+or whatever schedule we choose,
+
+06:12.166 --> 06:15.333
+and we receive reports stating
+that we have restored
+
+06:16.300 --> 06:20.600
+100% of your data with zero errors,
+or if we have found errors,
+
+06:21.100 --> 06:24.933
+then we can fix them before a
+real disaster occurs.
+
+06:25.600 --> 06:28.400
+But if there is a large amount of data,
+you can also do it on a statistical basis.
+
+06:28.400 --> 06:30.300
+That you restore 30%.
+
+06:30.300 --> 06:31.600
+Yes, exactly.
+
+06:31.600 --> 06:33.966
+And also verify the data.
+
+06:33.966 --> 06:36.966
+Whether it has been encrypted, or
+
+06:38.200 --> 06:39.466
+if something has happened to the file, simply put.
+
+06:39.466 --> 06:40.066
+We can just do that.
+
+06:41.800 --> 06:43.366
+But we also have the portal.
+
+06:43.366 --> 06:44.866
+It is very segmented.
+
+06:44.866 --> 06:48.366
+It is completely hierarchical.
+
+06:48.366 --> 06:51.100
+So you have a company that has
+various subdivisions.
+
+06:51.100 --> 06:52.733
+How can you use this?
+
+06:52.733 --> 06:57.300
+This is a feature we call
+multitenancy in our world.
+
+06:57.300 --> 07:00.500
+It means that the IT
+
+07:00.500 --> 07:03.500
+department bears the cost of the backups
+
+07:03.666 --> 07:09.466
+and then wants to distribute the cost
+across different divisions so that, for example,
+
+07:09.466 --> 07:15.133
+marketing or a university
+receives its own invoice just for the
+
+07:15.133 --> 07:19.000
+backups, and another
+receives the next invoice
+
+07:20.033 --> 07:21.166
+for their part.
+
+07:21.166 --> 07:25.033
+But on the other hand, we might
+utilize deduplication
+
+07:25.033 --> 07:28.000
+to reduce the amount of data.
+
+07:28.000 --> 07:31.500
+Deduplication means that if the data you upload
+
+07:31.500 --> 07:34.600
+already exists in the service,
+it isn’t stored again.
+
+07:35.566 --> 07:39.266
+Take the example of the operating system
+Windows, which many use,
+
+07:39.266 --> 07:43.433
+or Linux or similar, where you share
+the cost for one copy
+
+07:43.433 --> 07:46.933
+across all divisions so that everyone pays
+a smaller share of that operating system.
+
+07:47.266 --> 07:52.133
+Because what is in the Windows directory
+is essentially the same, up to 99%.
+
+07:54.566 --> 07:57.066
+A real-world example.
+
+07:57.066 --> 08:00.766
+Things happen with backups, can we talk
+
+08:00.866 --> 08:03.766
+about when a backup has failed,
+and when a backup has succeeded?
+
+08:03.766 --> 08:07.033
+Backup is extremely important, simply put.
+
+08:07.033 --> 08:10.633
+Because things happen all the time,
+but what is even
+
+08:10.633 --> 08:13.633
+more important than the backup itself is the “restore.”
+
+08:13.666 --> 08:19.766
+When something happens,
+that the restore really works
+
+08:21.266 --> 08:24.766
+During my career, countless things have happened.
+
+08:24.766 --> 08:26.433
+Everything from power outages.
+
+08:26.433 --> 08:29.433
+There have been
+
+08:29.966 --> 08:33.533
+floods, fires, and there have even been instances where
+
+08:34.633 --> 08:38.166
+the fire suppression system itself
+has taken out hard drives
+
+08:38.166 --> 08:41.166
+because it sounded too good.
+
+08:42.566 --> 08:45.400
+The fire suppression system
+broke the entire environment.
+
+08:45.400 --> 08:48.400
+What has become more current recently,
+
+08:48.400 --> 08:51.400
+and what many are talking about is “ransomware.”
+
+08:51.666 --> 08:54.966
+When an external party
+enters your environment and
+
+08:57.033 --> 08:57.466
+removes
+
+08:57.466 --> 09:00.533
+your backups and
+then starts encrypting the entire file system.
+
+09:01.366 --> 09:03.200
+That’s where we have an
+important feature in Safespring Backup.
+
+09:03.200 --> 09:06.066
+That is, you can lock the data
+so that it cannot be
+
+09:06.066 --> 09:07.533
+deleted at all.
+
+09:07.533 --> 09:12.000
+There is an option in the portal
+for customers to restrict access so
+
+09:12.000 --> 09:15.166
+that one person cannot do everything
+alone, but
+
+09:15.166 --> 09:18.900
+at least two must be involved to perform an operation
+to delete data, for example.
+
+09:19.300 --> 09:23.733
+Because there may be GDPR reasons
+or other reasons
+
+09:23.866 --> 09:26.866
+with various directives that require
+
+09:26.866 --> 09:29.866
+that data can only be deleted manually,
+and in that case
+
+09:31.200 --> 09:36.600
+several people must be involved.
+
+09:36.933 --> 09:39.900
+If your account were to be hacked, you couldn’t
+
+09:39.900 --> 09:44.200
+delete all the data yourself; at least two people
+must be involved.
+
+09:44.200 --> 09:48.300
+It is very important to have both options available.
+
+09:50.600 --> 09:53.700
+It’s not
+
+09:53.700 --> 09:57.066
+a question of if something will happen,
+but when it will happen.
+
+09:57.566 --> 10:01.833
+Unfortunately, that’s how it is today, unlike in the past when the backup
+
+10:02.200 --> 10:05.533
+was essentially insurance that might never
+need to be used.
+
+10:05.966 --> 10:09.566
+Now it’s almost approaching the point of
+“when will we need to use this?”
+
+10:09.566 --> 10:12.800
+“When will we need
+to restore data?” simply put.
+
+10:14.300 --> 10:16.900
+Yes, there’s so much to talk about
+when it comes to this, and in our next video
+
+10:16.900 --> 10:20.000
+we will do a deep dive,
+and we hope to see you there.

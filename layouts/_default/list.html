@@ -47,6 +47,7 @@
     <img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">
     {{ .Render "li3" }}
 </div>
+
 <!-- CONTENT -->
 {{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}

@@ -61,10 +61,6 @@
       padding: max(150px, 10%) 10% 10% 10% !important;
     }
 
-    .heading-default-single h1{
-      max-width:90%;
-      font:300 40px/1.1 hind;
-    }
     .site-header-wrapper {
       flex-flow:column nowrap;
       justify-content:center;
@@ -313,7 +309,6 @@
     position:absolute;
     bottom:0;
     width: 90vw;
-    left: 5vw;
     max-width:1550px;
     border-bottom:solid 1px #195f8c29;
 
@@ -709,6 +704,15 @@
 }
 
 /* END - MOBILE MENU */
+
+  @media only screen and (max-width:900px) {
+
+    .heading-default-single h1{
+      max-width:90%;
+      font: 2.75rem / 1 hind;
+    }
+
+  }
 </style>
 
 {{ $js1 := resources.Get "js/lazysizes.min.js" }}

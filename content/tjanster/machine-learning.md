@@ -1,41 +1,78 @@
 ---
-title: "Machine learning och AI med GPU-resurser"
-section: "Public Cloud"
-language: "Se"
-cardtitle: "AI- & ML-tjänster"
+title: "Federerad AI med FEDn på Safespring"
+toplogo: "safespring_partners_scaleout-systems.svg"
+section: ""
+language: "Sv"
+cardtitle: "AI & ML"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
 cardorder: "6"
-date: 2019-04-30T08:58:58+01:00
+date: 2025-03-13
 draft: false
-intro: "Bygg moderna lösningar som nyttjar maskininlärning och artificiell intelligens."
-form: "yes"
+intro: "Utnyttja säkert federerad maskininlärning med FEDn på Safesprings GDPR-kompatibla molninfrastruktur."
+cardintro: "Utnyttja säkert federerad maskininlärning med FEDn på Safespring"
+form: ""
 background: "safespring-ai-background.svg"
-sidebarlinkname: "Se demo"
-sidebarlinkurl: "/demo/compute/"
+sidebarlinkname: "Boka demo"
+sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakta Safespring"
-sidebarlinkurl2: "/kontakt"
-socialmedia: "safespring-managed-database.jpg"
+sidebarlinkurl2: "/en/contact"
+socialmedia: ""
 ---
 
+
+{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna–talarslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
+{{< distance >}}
+
 {{< ingress >}}
-Safespring tillhandahåller STACKn som är en helt managerad PostgreSQL-tjänst som kör på vår infrastruktur.
+Utnyttja kraften i federerad maskininlärning för att utveckla robusta AI-modeller utan att kompromissa med datasekretessen. Skala sömlöst med FEDn, säkert drivet av Safesprings infrastruktur.
 {{< /ingress >}}
 
-STACKn är en lätt maskininlärningsplattform för datavetenskap som låter forskare samarbeta i ML-projekt där de kan dela datamängder, arbeta i Notebook-miljöer, spåra experiment och servera ML-modeller. STACKn låter också användare distribuera modeller och appar i offentliga eller privata kataloger för att dela modelländpunkter och anpassade dashboardar. STACKn är en molntjänst som byggs på Safespring Compute.
+## Skala säkert med FEDn på Safespring
 
-STACKn är ett Django-ramverk som implementerar projektbaserat fleranvändarhantering, autentisering, auktorisering och objektnivåbehörigheter för populära datavetenskapliga verktyg baserade på open source. En intuitiv användargränssnitt låter användare skapa privata eller delade projekt där olika tillgångar distribueras:
+FEDn är ett open source-ramverk för federerad maskininlärning från Scaleout Systems, utformat för att möjliggöra samarbetsbaserad maskininlärningsträning samtidigt som datasekretess och GDPR-efterlevnad respekteras fullt ut. Safespring erbjuder den säkra, robusta infrastruktur som krävs för att distribuera och skala FEDn, och säkerställer att dina AI-initiativ förblir kompatibla, säkra och effektiva.
 
-{{% column-two %}}
+Genom att utnyttja Safespring molntjänst i kombination med FEDns federerade maskininlärning, kan din organisation:
 
-- **Lagring**: hantera privata och delade lagringsvolymer och objektlagring. Kontrollera åtkomst på projekt- och användarnivå.
-- **Miljöer**: konfigurera Docker-miljöer och projektmallar för att skapa anpassade arbetsplatser för ML-utveckling.
-- **Anteckningsböcker**: Jupyter-anteckningsböcker, RStudio
-- **Experimentuppföljning**: MLFlow
-- **Modellregister och servering**: MLFlow, Tensorflow Serving, PyTorch Serve och MLFlow Serve.
-- **Modellkatalog**: publicera och organisera modeller i en katalog, med behörighetskontroll på modellnivå.
-- **Dashboards/appar**: distribuera och värd Dash, Flask och RShiny UI:er och appar enkelt.
+- Bevara datasekretessen med lokal träning av data.
+- Skala från pilotprojekt till full produktion sömlöst.
+- Säkerställa full GDPR- och dataskyddsefterlevnad.
+- Lätt integrera med befintliga maskininlärningsarbetsflöden.
 
-{{% /column-two %}}
+{{< distance >}}
 
-STACKn är mycket anpassningsbart och är den bästa plattformen för maskininlärning i molnet för datavetenskap i Sverige, med fokus på GDPR-överensstämmelse eftersom den är byggd på Safespring IaaS.
+{{< horisontal-card 
+    image="/img/card/safespring-scaleut_use-case-ebba.webp" 
+    cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data" 
+    link="/tjanster/case/scaleout/" 
+    linktext="Läs Use Case" 
+    text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" 
+>}}
+
+{{< distance >}}
+
+## Vanliga frågor (FAQ)
+
+{{% question question="Vad är federerad maskininlärning, och varför är det viktigt?" %}}
+Federerad maskininlärning möjliggör att maskininlärningsmodeller tränas på decentraliserade dataset utan att överföra rådata, vilket säkerställer sekretess och efterlevnad – avgörande för känsliga sektorer som hälso- och sjukvård, finans samt offentlig förvaltning.
+{{% /question %}}
+
+{{% question question="Hur säkerställer FEDn GDPR-efterlevnad?" %}}
+FEDn möjliggör att modeller tränas lokalt på kunddata, och skickar endast krypterade modellparametrar tillbaka till den centrala aggregeraren. Detta förhindrar överföring av rådata och säkerställer full GDPR-efterlevnad.
+{{% /question %}}
+
+{{% question question="Kan FEDn integreras med befintliga AI-ramverk?" %}}
+Ja, FEDn stöder populära maskininlärningsramverk såsom TensorFlow, PyTorch, Keras, Hugging Face och scikit-learn, vilket möjliggör sömlös integration i dina befintliga AI-utvecklingsprocesser.
+{{% /question %}}
+
+{{< accordion-script >}}
+
+{{< distance >}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-network-wired" text="Distribuerad & Skalbar" description="FEDns hierarkiska design med flera aggregeringsservrar säkerställer effektiv arbetsbelastningsfördelning och skalbarhet, vilket stöder tusentals klienter sömlöst." >}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-chart-line" text="Övervakning och analys i realtid" description="Dra nytta av inbyggd övervakning, analys och systemåterställning i realtid, vilket förbättrar den operativa tillförlitligheten och ger insyn i dina federerade experiment." >}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Sömlös integration" description="Integrera enkelt FEDn med populära AI-ramverk som TensorFlow och PyTorch, och distribuera flexibelt över Safesprings säkra molninfrastruktur." >}}
+
+{{< distance >}}
