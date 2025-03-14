@@ -30,9 +30,9 @@ Utnyttja kraften i federerad maskininlärning för att utveckla robusta AI-model
 
 ## Skala säkert med FEDn på Safespring
 
-FEDn är ett företagsklart, open source-ramverk för federerad maskininlärning från Scaleout Systems, utformat för att möjliggöra samarbetsbaserad maskininlärningsträning samtidigt som datasekretess och GDPR-efterlevnad respekteras fullt ut. Safespring erbjuder den säkra, robusta infrastruktur som krävs för att distribuera och skala FEDn, och säkerställer att dina AI-initiativ förblir kompatibla, säkra och effektiva.
+FEDn är ett open source-ramverk för federerad maskininlärning från Scaleout Systems, utformat för att möjliggöra samarbetsbaserad maskininlärningsträning samtidigt som datasekretess och GDPR-efterlevnad respekteras fullt ut. Safespring erbjuder den säkra, robusta infrastruktur som krävs för att distribuera och skala FEDn, och säkerställer att dina AI-initiativ förblir kompatibla, säkra och effektiva.
 
-Genom att utnyttja Safesprings säkra molnplattform i kombination med FEDns kraftfulla möjligheter inom federerad maskininlärning, kan din organisation:
+Genom att utnyttja Safespring molntjänst i kombination med FEDns federerade maskininlärning, kan din organisation:
 
 - Bevara datasekretessen med lokal träning av data.
 - Skala från pilotprojekt till full produktion sömlöst.
@@ -43,10 +43,11 @@ Genom att utnyttja Safesprings säkra molnplattform i kombination med FEDns kraf
 
 {{< horisontal-card 
     image="/img/card/safespring-scaleut_use-case-ebba.webp" 
-    cardtitle="Ebba från Scaleout delar med sig av insikter om vikten av att hantera känslig data" 
-    link="/en/services/case/scaleout/" 
-    linktext="Läs fallstudie" 
-    text="“Eftersom maskininlärning involverar känslig data, blir säker hantering och förlitning på en pålitlig infrastruktur som Safespring avgörande.”" >}}
+    cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data" 
+    link="/tjanster/case/scaleout/" 
+    linktext="Läs Use Case" 
+    text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" 
+>}}
 
 {{< distance >}}
 
