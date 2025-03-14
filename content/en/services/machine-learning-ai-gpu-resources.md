@@ -29,11 +29,12 @@ socialmedia: ""
     {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
+## Scale Securely with FEDn on Safespring
+
 {{< ingress >}}
 Unlock the power of federated learning to develop robust AI models without compromising data privacy. Scale seamlessly with FEDn, powered securely by Safespring's infrastructure.
 {{< /ingress >}}
 
-## Scale Securely with FEDn on Safespring
 
 FEDn is an enterprise-ready, open-source federated learning framework from Scaleout Systems, designed to allow collaborative machine learning training while fully respecting data privacy and GDPR compliance. Safespring provides the secure, resilient infrastructure necessary for deploying and scaling FEDn, ensuring your AI initiatives remain compliant, secure, and efficient.
 
