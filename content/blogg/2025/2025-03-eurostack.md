@@ -40,3 +40,11 @@ Join Safespring and about 100 other companies in the push for a healthy and comp
         link="https://euro-stackletter.eu/wp-content/uploads/2025/03/EuroStack_Initiative_Letter_14-March-.pdf" 
         color="#195F8C">}}
 {{< /icon-block-small-container >}}
+
+
+{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
+I'm Safespring's Business Development Manager. Whether you’re interested in procuring our services or learn more about initiatives like EuroStack, I’m here to help you navigate and leverage our offerings.
+
+{{< inline "Call" >}} +46 (0)76 868 00 59 
+[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
+{{% /custom-card %}}
