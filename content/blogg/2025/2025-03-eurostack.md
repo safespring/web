@@ -11,6 +11,7 @@ socialmediabild: ""
 language: "En"
 sectiontext: "Blog"
 section: "blogg"
+author: "Daniel Melin"
 ---
 
 {{< ingress >}}
