@@ -18,11 +18,13 @@ sidebarimage: "safespring-image.svg"
 You’ve spent time designing and running networks in datacenters. You know your way around BGP, and you’ve configured more routers than you can count.
 {{< /ingress >}}
 
-Maybe you’ve automated network deployments with infrastructure-as-code, or you’ve spent late nights debugging weird routing issues that shouldn’t have happened in the first place.v
+Who are you? 
 
-As a Technical Sales Development Representative, you’ll be at the forefront of these conversations by engaging directly with technical buyers, understanding their challenges, and guiding them towards the right solutions. This is more than a sales role: it’s a chance to connect deeply with customers, demo our services, and collaborate with engineering to ensure a smooth onboarding experience.
+Maybe you’ve automated network deployments with infrastructure-as-code, or you’ve spent late nights debugging weird routing issues that shouldn’t have happened in the first place.
 
-If you’re someone with a technical background, a passion for clear communication, and a drive to grow, this is your opportunity to shape the future of European cloud technology - while shaping your own career in the process.
+Now, you want to do something that actually matters. Work on infrastructure that’s open-source, sovereign and built with sustainability in mind. 
+
+At Safespring, we’re giving European organizations an alternative to the hyperscalers - open-source-powered, sustainable, and European-based cloud infrastructure that puts security, transparency, and digital sovereignty first. We are looking for a Network Engineer who can help us build, improve, and scale it.
 
 ## What will you do?
 
