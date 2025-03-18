@@ -715,9 +715,7 @@
   }
 </style>
 
-{{ $js1 := resources.Get "js/lazysizes.min.js" }}
-{{ $js3 := resources.Get "js/text-balancer.js" }}
-{{ $scripts := resources.Concat "js/combined-scripts.js" (slice $js1) | minify | fingerprint }}
+
 
 <script src="{{ $scripts.RelPermalink }}" defer></script>
 
