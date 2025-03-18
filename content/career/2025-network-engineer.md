@@ -20,7 +20,7 @@ You’ve spent time designing and running networks in datacenters. You know your
 
 Who are you? 
 
-You’ve spent time designing and running networks in datacenters. You know your way around BGP, and you’ve configured more routers than you can count. Maybe you’ve automated network deployments with infrastructure-as-code, or you’ve spent late nights debugging weird routing issues that shouldn’t have happened in the first place.
+Maybe you’ve automated network deployments with infrastructure-as-code, or you’ve spent late nights debugging weird routing issues that shouldn’t have happened in the first place.
 
 Now, you want to do something that actually matters. Work on infrastructure that’s open-source, sovereign and built with sustainability in mind. 
 
