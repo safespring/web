@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Safespring – Paket med kombination av flavors</title>
-  <!-- Länka till Font Awesome för ikoner -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-2yEmk2w8kVWD3su2tJTXG+VwVXuTRI3WSrQJic+VQkDwCjmwBgF82ZC3AV5W46i0YWFNfXrPE3J7NDQKQ5C1hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* Grundläggande reset */
     * {
@@ -70,6 +68,7 @@
     /* Dashboard styling */
     .dashboard {
       margin-top: 20px;
+      text-align: center;
     }
     .card {
       background: #e9f5ff;
@@ -82,30 +81,11 @@
       margin-bottom: 15px;
       color: #00509e;
       font-size: 1.3rem;
-      text-align: center;
     }
-    /* Bento-box layout */
-    .bento-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-    }
-    .bento-box {
-      background: #fff;
-      border: 1px solid #cce0ff;
-      border-radius: 8px;
-      padding: 15px;
-      text-align: center;
-    }
-    .bento-box i {
-      font-size: 1.5rem;
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 8px;
       color: #007acc;
-      margin-bottom: 5px;
-    }
-    .bento-box span {
-      display: block;
-      font-weight: bold;
-      color: #00509e;
     }
     .disclaimer {
       font-size: 0.85rem;
@@ -117,11 +97,11 @@
       input[type="number"] {
         font-size: 0.9rem;
       }
-      .bento-box i {
-        font-size: 1.3rem;
-      }
       .card h3 {
         font-size: 1.1rem;
+      }
+      .card p {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -129,7 +109,7 @@
 <body>
   <div class="container">
     <h1>Skapa ditt paket</h1>
-    <!-- Steg 1: Ange din totala miljö -->
+    <!-- Steg 1: Användaren anger sin totala miljö -->
     <div id="step1" class="step active">
       <div class="form-group">
         <label for="totalCpu">Total CPU (antal kärnor):</label>
@@ -161,6 +141,7 @@
 
   <script>
     // Data för Safespring Compute-flavors
+    // Flavors med lokal NVMe-disk
     const nvmeFlavours = [
       { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
       { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, price: 880 },
@@ -177,6 +158,7 @@
       { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, price: 5300 },
       { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, price: 7080 }
     ];
+    // Flavors utan lokal disk
     const noDiskFlavours = [
       { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, price: 190 },
       { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, price: 300 },
@@ -189,7 +171,7 @@
       { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
       { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
     ];
-    // Vid positiv lagringskrav filtreras bort flavors utan lokal disk.
+    // Vid ett positivt lagringskrav filtrerar vi bort de flavors utan lokal disk.
     let validFlavours = [];
     
     // Navigering mellan steg
@@ -204,6 +186,7 @@
       const totalRam = parseInt(document.getElementById("totalRam").value) || 0;
       const totalDisk = parseInt(document.getElementById("totalDisk").value) || 0;
       
+      // Om ett lagringskrav ställs, använd endast flavors med lokal disk
       validFlavours = totalDisk > 0 
         ? nvmeFlavours 
         : nvmeFlavours.concat(noDiskFlavours);
@@ -217,7 +200,7 @@
         for (let j = i; j < validFlavours.length; j++) {
           for (let a = 0; a <= maxCount; a++) {
             for (let b = 0; b <= maxCount; b++) {
-              if (a + b === 0) continue;
+              if (a + b === 0) continue; // Måste finnas minst en instans
               const sumCpu = a * validFlavours[i].cpu + b * validFlavours[j].cpu;
               const sumRam = a * validFlavours[i].ram + b * validFlavours[j].ram;
               const sumDisk = a * validFlavours[i].disk + b * validFlavours[j].disk;
@@ -244,40 +227,20 @@
       
       let html = "";
       if (bestCombo) {
-        html += `<div class="card">
-          <h3>Paketrekommendation</h3>`;
+        html += `<div class="card">`;
         if (bestCombo.flavor1.id === bestCombo.flavor2.id) {
-          html += `<p><strong>Flavor:</strong> ${bestCombo.flavor1.name}</p>
-                   <p><strong>Antal instanser:</strong> ${bestCombo.count1 + bestCombo.count2}</p>`;
+          html += `<h3>Paket: ${bestCombo.flavor1.name}</h3>
+                   <p>Antal instanser: ${bestCombo.count1 + bestCombo.count2}</p>`;
         } else {
-          html += `<p><strong>Kombination:</strong></p>
+          html += `<h3>Paket: Kombination</h3>
                    <p>${bestCombo.flavor1.name} × ${bestCombo.count1}</p>
                    <p>${bestCombo.flavor2.name} × ${bestCombo.count2}</p>`;
         }
-        // Bento-box layout med ikoner för CPU, RAM, Disk och kostnad
-        html += `<div class="bento-grid">
-                   <div class="bento-box">
-                     <i class="fa-solid fa-microchip"></i>
-                     <span>${bestCombo.totalCpu}</span>
-                     <small>kärnor</small>
-                   </div>
-                   <div class="bento-box">
-                     <i class="fa-solid fa-memory"></i>
-                     <span>${bestCombo.totalRam}</span>
-                     <small>GB RAM</small>
-                   </div>
-                   <div class="bento-box">
-                     <i class="fa-solid fa-hard-drive"></i>
-                     <span>${bestCombo.totalDisk}</span>
-                     <small>GB disk</small>
-                   </div>
-                   <div class="bento-box">
-                     <i class="fa-solid fa-dollar-sign"></i>
-                     <span>${bestCombo.totalCost.toLocaleString("sv-SE")}</span>
-                     <small>SEK/30 dagar</small>
-                   </div>
-                 </div>
-                </div>`;
+        html += `<p>Total CPU: ${bestCombo.totalCpu} kärnor</p>
+                 <p>Total RAM: ${bestCombo.totalRam} GB</p>
+                 <p>Total lokal disk: ${bestCombo.totalDisk} GB</p>
+                 <p>Total kostnad: ${bestCombo.totalCost.toLocaleString("sv-SE")} SEK/30 dagar</p>
+                 </div>`;
       } else {
         html = `<p style="text-align:center;">Inga giltiga paket hittades – kontrollera dina värden.</p>`;
       }
