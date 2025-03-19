@@ -3,421 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bygg din inkorg – Välj flavor</title>
-  <!-- Google Fonts: Hind Light (rubriker) och Montserrat (brödtext) -->
-  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-2yEmk2w8kVWD3su2tJTXG+VwVXuTRI3WSrQJic+VQkDwCjmwBgF82ZC3AV5W46i0YWFNfXrPE3J7NDQKQ5C1hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Filtera efter CPU, RAM och Lagring</title>
+  <!-- Google Fonts (valfritt för en modern känsla) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Reset och grundstilar */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: #f0f4f8;
+      background: #f4f4f4;
       padding: 20px;
       color: #333;
     }
-    h1, h2 {
-      font-family: 'Hind', sans-serif;
-      font-weight: 300;
-      color: #00509e;
+    h1 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      color: #444;
     }
-    .semibold { font-weight: 600; }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px 30px 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    /* Filter och toggle för flavors */
+    /* Container för filterfälten */
     .filter-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      gap: 20px;
+      justify-content: center;
       margin-bottom: 20px;
     }
-    .filter-container input[type="text"] {
-      flex: 1;
-      padding: 8px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-right: 10px;
-    }
-    .toggle-container {
+    .filter-box {
       display: flex;
-      gap: 10px;
-    }
-    .toggle-container button {
-      padding: 8px 12px;
-      border: 1px solid #00509e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 10px 20px;
       background: #fff;
-      color: #00509e;
-      border-radius: 4px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s ease, color 0.3s ease;
+      min-width: 90px; /* för att se en "knapp-liknande" layout */
+      text-align: center;
     }
-    .toggle-container button.active {
+    /* Inspirerat av bilden: liten överskrift och större text för värdet */
+    .filter-box label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 4px;
+    }
+    .filter-box input {
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 1.2rem;
+      width: 60px; /* anpassa efter önskat utseende */
+      color: #333;
+    }
+    .filter-box input::placeholder {
+      color: #bbb;
+    }
+    .filter-box input:focus {
+      outline: none;
+    }
+    /* Knapp för att trigga filtrering */
+    .filter-button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 25px;
       background: #00509e;
       color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
     }
-    /* Flavor-lista */
+    .filter-button:hover {
+      background: #003f7f;
+    }
+    /* Exempel på flavor-lista */
     .flavor-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
       gap: 15px;
-      margin-bottom: 20px;
+      justify-content: center;
     }
     .flavor-card {
-      background: #e9f5ff;
-      border: 1px solid #cce0ff;
+      background: #fff;
+      border: 1px solid #ddd;
       border-radius: 8px;
       padding: 15px;
+      width: 180px;
       text-align: center;
-      font-family: 'Montserrat', sans-serif;
     }
     .flavor-card h3 {
-      font-family: 'Hind', sans-serif;
-      font-weight: 300;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      color: #00509e;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #444;
     }
     .flavor-card p {
       font-size: 0.9rem;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    .flavor-card button {
-      padding: 6px 12px;
-      background: #00509e;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .flavor-card button:hover {
-      background: #003f7f;
-    }
-    /* Inkorgstabell */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    thead {
-      background: #e9f5ff;
-      border: 1px solid #cce0ff;
-    }
-    th, td {
-      padding: 10px;
-      text-align: center;
-      border: 1px solid #cce0ff;
-      font-size: 0.9rem;
-    }
-    th {
-      font-family: 'Hind', sans-serif;
-      font-weight: 300;
-      color: #00509e;
-    }
-    td { font-family: 'Montserrat', sans-serif; }
-    select, input[type="number"] {
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      font-family: 'Montserrat', sans-serif;
-    }
-    .deleteRow {
-      background: #e74c3c;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      padding: 4px 8px;
-      font-size: 0.8rem;
-    }
-    /* Sammanfattning – Bento-box layout */
-    .bento-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .bento-box {
-      background: #fff;
-      border: 1px solid #cce0ff;
-      border-radius: 8px;
-      padding: 10px;
-      text-align: center;
-    }
-    .bento-box i {
-      font-size: 1.5rem;
-      color: #007acc;
+      color: #666;
       margin-bottom: 5px;
-    }
-    .bento-box span {
-      display: block;
-      font-weight: 600;
-      color: #00509e;
-    }
-    .bento-box small {
-      display: block;
-      font-size: 0.8rem;
-      color: #555;
-    }
-    @media (max-width: 600px) {
-      .flavor-list {
-        grid-template-columns: 1fr;
-      }
-      th, td {
-        font-size: 0.8rem;
-        padding: 8px;
-      }
-      .bento-box i {
-        font-size: 1.3rem;
-      }
-      .toggle-container button {
-        padding: 6px 10px;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bygg din inkorg</h1>
-    <!-- Filter och storage-toggle -->
-    <div class="filter-container">
-      <input type="text" id="flavorFilter" placeholder="Filtrera flavors...">
-      <div class="toggle-container">
-        <button id="toggleNVME" class="active">Local Storage (NVMe)</button>
-        <button id="toggleBlock">Central Blocklagring</button>
-      </div>
+  <h1>Filtrera Flavors</h1>
+  
+  <!-- Filter-rad med 3 "boxar" inspirerade av referensbilden -->
+  <div class="filter-container">
+    <div class="filter-box">
+      <label for="cpuFilter">CPU</label>
+      <input type="number" id="cpuFilter" placeholder="2">
     </div>
-    <!-- Lista med flavors -->
-    <div class="flavor-list" id="flavorList">
-      <!-- Dynamiskt genererade flavor cards -->
+    <div class="filter-box">
+      <label for="ramFilter">RAM</label>
+      <input type="number" id="ramFilter" placeholder="4">
     </div>
-    
-    <!-- Inkorg -->
-    <h2>Din inkorg</h2>
-    <table id="orderTable">
-      <thead>
-        <tr>
-          <th>Flavor</th>
-          <th>Antal</th>
-          <th>CPU</th>
-          <th>RAM</th>
-          <th>Lagring</th>
-          <th>Pris/instans</th>
-          <th>Ta bort</th>
-        </tr>
-      </thead>
-      <tbody id="orderRows">
-        <!-- Rader läggs till dynamiskt -->
-      </tbody>
-    </table>
-    
-    <!-- Sammanfattning -->
-    <div class="bento-grid" id="summary">
-      <div class="bento-box">
-        <i class="fa-solid fa-microchip"></i>
-        <span id="totalCpu">0</span>
-        <small>kärnor</small>
-      </div>
-      <div class="bento-box">
-        <i class="fa-solid fa-memory"></i>
-        <span id="totalRam">0</span>
-        <small>GB RAM</small>
-      </div>
-      <div class="bento-box">
-        <i class="fa-solid fa-hard-drive"></i>
-        <span id="totalDisk">0</span>
-        <small>Lagring</small>
-      </div>
-      <div class="bento-box">
-        <i class="fa-solid fa-dollar-sign"></i>
-        <span id="totalCost">0</span>
-        <small>SEK</small>
-      </div>
+    <div class="filter-box">
+      <label for="diskFilter">STORAGE</label>
+      <input type="number" id="diskFilter" placeholder="100">
     </div>
   </div>
   
+  <button class="filter-button" id="filterButton">Filtrera</button>
+  
+  <!-- Exempel-lista på flavors -->
+  <div class="flavor-list" id="flavorList"></div>
+  
   <script>
-    // Data: Flavors för NVMe (Local Storage) och Block (Central Blocklagring)
-    const nvmeFlavours = [
-      { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
-      { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, price: 880 },
-      { id: 'FLAVOR-l2-c2r4-1000', name: 'FLAVOR-l2. c2 r4. 1000', cpu: 2, ram: 4, disk: 1000, price: 1380 },
-      { id: 'FLAVOR-l2-c4r8-100', name: 'FLAVOR-l2. c4 r8. 100', cpu: 4, ram: 8, disk: 100, price: 860 },
-      { id: 'FLAVOR-l2-c4r8-500', name: 'FLAVOR-l2. c4 r8. 500', cpu: 4, ram: 8, disk: 500, price: 1260 },
-      { id: 'FLAVOR-l2-c4r8-1000', name: 'FLAVOR-l2. c4 r8. 1000', cpu: 4, ram: 8, disk: 1000, price: 1760 },
-      { id: 'FLAVOR-l2-c8r16-100', name: 'FLAVOR-l2. c8 r16. 100', cpu: 8, ram: 16, disk: 100, price: 1620 },
-      { id: 'FLAVOR-l2-c8r16-500', name: 'FLAVOR-l2. c8 r16. 500', cpu: 8, ram: 16, disk: 500, price: 2020 },
-      { id: 'FLAVOR-l2-c8r16-1000', name: 'FLAVOR-l2. c8 r16. 1000', cpu: 8, ram: 16, disk: 1000, price: 2520 },
-      { id: 'FLAVOR-l2-c16r32-100', name: 'FLAVOR-l2. c16 r32. 100', cpu: 16, ram: 32, disk: 100, price: 3140 },
-      { id: 'FLAVOR-l2-c16r32-500', name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500, price: 3540 },
-      { id: 'FLAVOR-l2-c16r32-1000', name: 'FLAVOR-l2. c16 r32. 1000', cpu: 16, ram: 32, disk: 1000, price: 4040 },
-      { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, price: 5300 },
-      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, price: 7080 }
-    ];
-    const blockFlavours = [
-      { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, price: 190 },
-      { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, price: 300 },
-      { id: 'FLAVOR-b2-c2r4', name: 'FLAVOR-b2. c2 r4', cpu: 2, ram: 4, disk: 0, price: 380 },
-      { id: 'FLAVOR-b2-c2r8', name: 'FLAVOR-b2. c2 r8', cpu: 2, ram: 8, disk: 0, price: 600 },
-      { id: 'FLAVOR-b2-c4r8', name: 'FLAVOR-b2. c4 r8', cpu: 4, ram: 8, disk: 0, price: 760 },
-      { id: 'FLAVOR-b2-c4r16', name: 'FLAVOR-b2. c4 r16', cpu: 4, ram: 16, disk: 0, price: 1200 },
-      { id: 'FLAVOR-b2-c8r16', name: 'FLAVOR-b2. c8 r16', cpu: 8, ram: 16, disk: 0, price: 1520 },
-      { id: 'FLAVOR-b2-c8r32', name: 'FLAVOR-b2. c8 r32', cpu: 8, ram: 32, disk: 0, price: 2400 },
-      { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
-      { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
+    // Exempeldata: blandade flavors
+    const allFlavours = [
+      { name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100 },
+      { name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500 },
+      { name: 'FLAVOR-l2. c4 r8. 100', cpu: 4, ram: 8, disk: 100 },
+      { name: 'FLAVOR-l2. c8 r16. 100', cpu: 8, ram: 16, disk: 100 },
+      { name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0 },
+      { name: 'FLAVOR-b2. c8 r16', cpu: 8, ram: 16, disk: 0 },
+      { name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500 },
+      { name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500 },
+      { name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000 }
     ];
     
-    // Global variabel för vald lagringstyp ("nvme" eller "block")
-    let selectedStorage = "nvme";
+    const flavorListEl = document.getElementById('flavorList');
+    const cpuFilterEl = document.getElementById('cpuFilter');
+    const ramFilterEl = document.getElementById('ramFilter');
+    const diskFilterEl = document.getElementById('diskFilter');
+    const filterButton = document.getElementById('filterButton');
     
-    // DOM-referenser
-    const flavorFilterInput = document.getElementById("flavorFilter");
-    const flavorListContainer = document.getElementById("flavorList");
-    const toggleNVMEButton = document.getElementById("toggleNVME");
-    const toggleBlockButton = document.getElementById("toggleBlock");
-    const orderRows = document.getElementById("orderRows");
-    const totalCpuEl = document.getElementById("totalCpu");
-    const totalRamEl = document.getElementById("totalRam");
-    const totalDiskEl = document.getElementById("totalDisk");
-    const totalCostEl = document.getElementById("totalCost");
-    
-    // Rendera flavor-listan baserat på vald lagringstyp och filtertext
-    function renderFlavorList() {
-      let flavorsToDisplay = selectedStorage === "nvme" ? nvmeFlavours : blockFlavours;
-      const filterText = flavorFilterInput.value.toLowerCase();
-      if (filterText) {
-        flavorsToDisplay = flavorsToDisplay.filter(flavor => flavor.name.toLowerCase().includes(filterText));
-      }
-      flavorListContainer.innerHTML = "";
-      if (flavorsToDisplay.length === 0) {
-        flavorListContainer.innerHTML = "<p style='text-align:center;'>Inga flavors hittades.</p>";
+    // Funktion: rendera flavor-lista
+    function renderFlavors(flavors) {
+      flavorListEl.innerHTML = '';
+      if (flavors.length === 0) {
+        flavorListEl.innerHTML = '<p style="text-align:center;">Inga flavors matchade din sökning.</p>';
         return;
       }
-      flavorsToDisplay.forEach(flavor => {
-        const card = document.createElement("div");
-        card.className = "flavor-card";
+      flavors.forEach(flavor => {
+        const card = document.createElement('div');
+        card.className = 'flavor-card';
         card.innerHTML = `
           <h3>${flavor.name}</h3>
-          <p>${flavor.cpu} vCPU, ${flavor.ram} GB RAM, ${selectedStorage === "nvme" ? flavor.disk + " GB disk" : "Central Blocklagring"}</p>
-          <p><strong>${flavor.price.toLocaleString("sv-SE")} SEK</strong></p>
-          <button class="btn" onclick="addFlavorToOrder('${flavor.id}')"><i class="fa-solid fa-plus"></i> Lägg till</button>
+          <p>${flavor.cpu} vCPU, ${flavor.ram} GB RAM, ${flavor.disk > 0 ? flavor.disk + ' GB disk' : 'Ingen disk'}</p>
         `;
-        flavorListContainer.appendChild(card);
+        flavorListEl.appendChild(card);
       });
-    }
-    
-    // Eventlyssnare för filterinput
-    flavorFilterInput.addEventListener("input", renderFlavorList);
-    
-    // Toggle-knappar
-    toggleNVMEButton.addEventListener("click", () => {
-      selectedStorage = "nvme";
-      toggleNVMEButton.classList.add("active");
-      toggleBlockButton.classList.remove("active");
-      renderFlavorList();
-    });
-    toggleBlockButton.addEventListener("click", () => {
-      selectedStorage = "block";
-      toggleBlockButton.classList.add("active");
-      toggleNVMEButton.classList.remove("active");
-      renderFlavorList();
-    });
-    
-    // Funktion: Lägg till flavor i inkorgen
-    function addFlavorToOrder(flavorId) {
-      const flavor = (selectedStorage === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
-      // Kolla om flavor redan finns (baserat på id och storage)
-      const existingRow = Array.from(orderRows.children).find(row => row.getAttribute("data-id") === flavorId && row.getAttribute("data-storage") === selectedStorage);
-      if (existingRow) {
-        const qtyInput = existingRow.querySelector(".quantity");
-        qtyInput.value = parseInt(qtyInput.value) + 1;
-        updateRow(existingRow);
-      } else {
-        const tr = document.createElement("tr");
-        tr.setAttribute("data-id", flavor.id);
-        tr.setAttribute("data-storage", selectedStorage);
-        tr.innerHTML = `
-          <td>${flavor.name}</td>
-          <td><input type="number" class="quantity" value="1" min="1" style="width:60px;"></td>
-          <td class="rowCpu">${flavor.cpu}</td>
-          <td class="rowRam">${flavor.ram}</td>
-          <td class="rowDisk">${selectedStorage === "nvme" ? flavor.disk + " GB" : "Central Blocklagring"}</td>
-          <td class="rowPrice">${flavor.price.toLocaleString("sv-SE")} SEK</td>
-          <td><button class="btn deleteRow" title="Ta bort rad"><i class="fa-solid fa-trash"></i></button></td>
-        `;
-        orderRows.appendChild(tr);
-        const qtyInput = tr.querySelector(".quantity");
-        qtyInput.addEventListener("input", () => updateRow(tr));
-        tr.querySelector(".deleteRow").addEventListener("click", () => {
-          tr.remove();
-          updateSummary();
-        });
-      }
-      updateSummary();
-    }
-    
-    // Uppdatera en rad baserat på kvantitet
-    function updateRow(row) {
-      const qty = parseInt(row.querySelector(".quantity").value) || 0;
-      const flavorId = row.getAttribute("data-id");
-      const storageType = row.getAttribute("data-storage");
-      const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
-      row.querySelector(".rowCpu").textContent = qty * flavor.cpu;
-      row.querySelector(".rowRam").textContent = qty * flavor.ram;
-      row.querySelector(".rowDisk").textContent = storageType === "nvme" ? (qty * flavor.disk) + " GB" : "Central Blocklagring";
-      row.querySelector(".rowPrice").textContent = (qty * flavor.price).toLocaleString("sv-SE") + " SEK";
-      updateSummary();
-    }
-    
-    // Summera totalsumman över inkorgen
-    function updateSummary() {
-      let totalCpu = 0, totalRam = 0, totalDisk = 0, totalCost = 0;
-      const rows = Array.from(orderRows.children);
-      let storageType = null;
-      if (rows.length > 0) {
-        storageType = rows[0].getAttribute("data-storage");
-      }
-      rows.forEach(row => {
-        const qty = parseInt(row.querySelector(".quantity").value) || 0;
-        const flavorId = row.getAttribute("data-id");
-        const rowStorage = row.getAttribute("data-storage");
-        const flavor = (rowStorage === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
-        totalCpu += qty * flavor.cpu;
-        totalRam += qty * flavor.ram;
-        if (rowStorage === "nvme") {
-          totalDisk += qty * flavor.disk;
-        }
-        totalCost += qty * flavor.price;
-      });
-      totalCpuEl.textContent = totalCpu;
-      totalRamEl.textContent = totalRam;
-      if (storageType === "block") {
-        totalDiskEl.textContent = "Central Blocklagring";
-      } else {
-        totalDiskEl.textContent = totalDisk + " GB";
-      }
-      totalCostEl.textContent = totalCost.toLocaleString("sv-SE");
     }
     
     // Initial rendering
-    renderFlavorList();
+    renderFlavors(allFlavours);
+    
+    // Filtrera
+    filterButton.addEventListener('click', () => {
+      const minCpu = parseInt(cpuFilterEl.value) || 0;
+      const minRam = parseInt(ramFilterEl.value) || 0;
+      const minDisk = parseInt(diskFilterEl.value) || 0;
+      const filtered = allFlavours.filter(f => 
+        f.cpu >= minCpu &&
+        f.ram >= minRam &&
+        f.disk >= minDisk
+      );
+      renderFlavors(filtered);
+    });
   </script>
 </body>
 </html>
