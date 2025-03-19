@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Safespring – Paket med kombination av flavors</title>
+  <title>Safespring Prisrekommendation</title>
   <style>
     /* Grundläggande reset */
     * {
@@ -25,7 +25,7 @@
       padding: 30px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+    h1 {
       text-align: center;
       margin-bottom: 20px;
       color: #00509e;
@@ -46,70 +46,61 @@
     }
     input[type="number"] {
       width: 100%;
-      padding: 10px;
+      padding: 8px;
       font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
     .btn {
       display: inline-block;
-      padding: 12px 25px;
+      padding: 10px 20px;
       background: #00509e;
       color: #fff;
+      text-align: center;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: background 0.3s ease;
-      margin-top: 10px;
     }
     .btn:hover {
       background: #003f7f;
     }
-    /* Dashboard styling */
-    .dashboard {
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
       text-align: center;
+      font-size: 0.9rem;
     }
-    .card {
-      background: #e9f5ff;
-      border: 1px solid #b3d7ff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .card h3 {
-      margin-bottom: 15px;
-      color: #00509e;
-      font-size: 1.3rem;
-    }
-    .card p {
-      font-size: 1rem;
-      margin-bottom: 8px;
-      color: #007acc;
+    th {
+      background: #f5f5f5;
     }
     .disclaimer {
+      margin-top: 15px;
       font-size: 0.85rem;
       color: #666;
       text-align: center;
-      margin-top: 10px;
     }
     @media (max-width: 600px) {
       input[type="number"] {
         font-size: 0.9rem;
       }
-      .card h3 {
-        font-size: 1.1rem;
-      }
-      .card p {
-        font-size: 0.9rem;
+      th, td {
+        font-size: 0.8rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Skapa ditt paket</h1>
-    <!-- Steg 1: Användaren anger sin totala miljö -->
+    <h1>Matcha din nuvarande miljö</h1>
+    <!-- Steg 1: Användaren anger sin nuvarande miljö -->
     <div id="step1" class="step active">
       <div class="form-group">
         <label for="totalCpu">Total CPU (antal kärnor):</label>
@@ -123,24 +114,23 @@
         <label for="totalDisk">Total lagring (GB):</label>
         <input type="number" id="totalDisk" min="0" value="0">
       </div>
-      <button class="btn" id="nextButton">Visa paketrekommendation</button>
+      <button class="btn" id="nextButton">Visa matchande alternativ</button>
     </div>
-    
-    <!-- Steg 2: Visa paketet som en dashboard med kombinerade flavors -->
+
+    <!-- Steg 2: Visa rekommenderade Safespring-alternativ -->
     <div id="step2" class="step">
-      <h2>Ditt rekommenderade paket</h2>
-      <div class="dashboard" id="dashboard">
-        <!-- Paketet visas här -->
-      </div>
+      <h2>Rekommenderade Alternativ</h2>
+      <div id="results"></div>
       <div class="disclaimer">
-        Observera: Rekommendationen är en ungefärlig matchning med en kombination av flavors.
+        Observera: Matchningen är en ungefärlig uppskattning. I praktiken kan en blandning av servrar vara optimal.
       </div>
+      <br>
       <button class="btn" id="backButton">Gå tillbaka</button>
     </div>
   </div>
 
   <script>
-    // Data för Safespring Compute-flavors
+    // Exempeldata för Safespring Compute-flavors
     // Flavors med lokal NVMe-disk
     const nvmeFlavours = [
       { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
@@ -171,89 +161,67 @@
       { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
       { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
     ];
-    // Vid ett positivt lagringskrav filtrerar vi bort de flavors utan lokal disk.
-    let validFlavours = [];
-    
+    const allFlavours = nvmeFlavours.concat(noDiskFlavours);
+
     // Navigering mellan steg
     const step1 = document.getElementById("step1");
     const step2 = document.getElementById("step2");
     const nextButton = document.getElementById("nextButton");
     const backButton = document.getElementById("backButton");
-    const dashboard = document.getElementById("dashboard");
-    
+
     nextButton.addEventListener("click", () => {
+      // Hämta användarens angivna totalspecifikationer
       const totalCpu = parseInt(document.getElementById("totalCpu").value) || 0;
       const totalRam = parseInt(document.getElementById("totalRam").value) || 0;
       const totalDisk = parseInt(document.getElementById("totalDisk").value) || 0;
-      
-      // Om ett lagringskrav ställs, använd endast flavors med lokal disk
-      validFlavours = totalDisk > 0 
-        ? nvmeFlavours 
-        : nvmeFlavours.concat(noDiskFlavours);
-      
-      // Hitta den bästa kombinationen av upp till två olika flavors
-      const maxCount = 20;
-      let bestCost = Infinity;
-      let bestCombo = null;
-      
-      for (let i = 0; i < validFlavours.length; i++) {
-        for (let j = i; j < validFlavours.length; j++) {
-          for (let a = 0; a <= maxCount; a++) {
-            for (let b = 0; b <= maxCount; b++) {
-              if (a + b === 0) continue; // Måste finnas minst en instans
-              const sumCpu = a * validFlavours[i].cpu + b * validFlavours[j].cpu;
-              const sumRam = a * validFlavours[i].ram + b * validFlavours[j].ram;
-              const sumDisk = a * validFlavours[i].disk + b * validFlavours[j].disk;
-              if (sumCpu >= totalCpu && sumRam >= totalRam && sumDisk >= totalDisk) {
-                const cost = a * validFlavours[i].price + b * validFlavours[j].price;
-                if (cost < bestCost) {
-                  bestCost = cost;
-                  bestCombo = {
-                    flavor1: validFlavours[i],
-                    flavor2: validFlavours[j],
-                    count1: a,
-                    count2: b,
-                    totalCpu: sumCpu,
-                    totalRam: sumRam,
-                    totalDisk: sumDisk,
-                    totalCost: cost
-                  };
-                }
-              }
-            }
-          }
-        }
-      }
-      
-      let html = "";
-      if (bestCombo) {
-        html += `<div class="card">`;
-        if (bestCombo.flavor1.id === bestCombo.flavor2.id) {
-          html += `<h3>Paket: ${bestCombo.flavor1.name}</h3>
-                   <p>Antal instanser: ${bestCombo.count1 + bestCombo.count2}</p>`;
-        } else {
-          html += `<h3>Paket: Kombination</h3>
-                   <p>${bestCombo.flavor1.name} × ${bestCombo.count1}</p>
-                   <p>${bestCombo.flavor2.name} × ${bestCombo.count2}</p>`;
-        }
-        html += `<p>Total CPU: ${bestCombo.totalCpu} kärnor</p>
-                 <p>Total RAM: ${bestCombo.totalRam} GB</p>
-                 <p>Total lokal disk: ${bestCombo.totalDisk} GB</p>
-                 <p>Total kostnad: ${bestCombo.totalCost.toLocaleString("sv-SE")} SEK/30 dagar</p>
-                 </div>`;
-      } else {
-        html = `<p style="text-align:center;">Inga giltiga paket hittades – kontrollera dina värden.</p>`;
-      }
-      
-      dashboard.innerHTML = html;
+      // Gå till steg 2 och beräkna matchande alternativ
+      showResults(totalCpu, totalRam, totalDisk);
       step1.classList.remove("active");
       step2.classList.add("active");
     });
-    
     backButton.addEventListener("click", () => {
       step2.classList.remove("active");
       step1.classList.add("active");
     });
+
+    // Funktion för att beräkna antal servrar och total kostnad för varje flavor
+    function showResults(totalCpu, totalRam, totalDisk) {
+      let html = `<table>
+        <thead>
+          <tr>
+            <th>Flavor</th>
+            <th>Specifikation</th>
+            <th>Antal servrar</th>
+            <th>Total kostnad (SEK/30 dagar)</th>
+          </tr>
+        </thead>
+        <tbody>`;
+      
+      allFlavours.forEach(flavor => {
+        // Beräkna antal servrar som krävs för varje resurs
+        const countCpu = totalCpu > 0 ? Math.ceil(totalCpu / flavor.cpu) : 0;
+        const countRam = totalRam > 0 ? Math.ceil(totalRam / flavor.ram) : 0;
+        let countDisk;
+        if(flavor.disk > 0) {
+          countDisk = totalDisk > 0 ? Math.ceil(totalDisk / flavor.disk) : 0;
+        } else {
+          // Om flavor inte har lokal disk så kan inte lagringskravet uppfyllas
+          countDisk = totalDisk > 0 ? Infinity : 0;
+        }
+        const serverCount = Math.max(countCpu, countRam, countDisk);
+        const totalCost = serverCount * flavor.price;
+        
+        html += `<tr>
+          <td>${flavor.name}</td>
+          <td>${flavor.cpu} vCPU, ${flavor.ram}GB RAM, ${flavor.disk > 0 ? flavor.disk + "GB lokal disk" : "Ingen lokal disk"}</td>
+          <td>${serverCount === Infinity ? "Ej tillämplig" : serverCount}</td>
+          <td>${serverCount === Infinity ? "Ej tillämplig" : totalCost.toLocaleString("sv-SE")}</td>
+        </tr>`;
+      });
+      
+      html += `</tbody></table>`;
+      document.getElementById("results").innerHTML = html;
+    }
   </script>
 </body>
 </html>
