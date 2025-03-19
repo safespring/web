@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Safespring Prisrekommendation</title>
+  <title>Bygg din inkorg – Välj flavor</title>
+  <!-- Google Fonts: Hind Light for rubriker, Montserrat for brödtext -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-2yEmk2w8kVWD3su2tJTXG+VwVXuTRI3WSrQJic+VQkDwCjmwBgF82ZC3AV5W46i0YWFNfXrPE3J7NDQKQ5C1hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* Grundläggande reset */
     * {
@@ -11,128 +15,179 @@
       padding: 0;
       box-sizing: border-box;
     }
+    /* Använd Montserrat för brödtext */
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background: #f0f4f8;
       padding: 20px;
       color: #333;
+    }
+    /* Rubriker med Hind Light, semibold vid behov */
+    h1, h2 {
+      font-family: 'Hind', sans-serif;
+      font-weight: 300;
+      color: #00509e;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .semibold {
+      font-weight: 600;
     }
     .container {
       max-width: 800px;
       margin: 0 auto;
       background: #fff;
       border-radius: 10px;
-      padding: 30px;
+      padding: 20px 30px 30px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    h1 {
-      text-align: center;
+    /* Inkorgstabell styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-bottom: 20px;
+    }
+    thead {
+      background: #e9f5ff;
+      border: 1px solid #cce0ff;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #cce0ff;
+      font-size: 0.9rem;
+    }
+    th {
+      font-family: 'Hind', sans-serif;
+      font-weight: 300;
       color: #00509e;
     }
-    .step {
-      display: none;
+    td {
+      font-family: 'Montserrat', sans-serif;
     }
-    .step.active {
-      display: block;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    input[type="number"] {
-      width: 100%;
-      padding: 8px;
-      font-size: 1rem;
+    /* Select och input styling */
+    select, input[type="number"] {
+      padding: 5px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: 'Montserrat', sans-serif;
     }
+    /* Knapp */
     .btn {
       display: inline-block;
       padding: 10px 20px;
       background: #00509e;
       color: #fff;
-      text-align: center;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
       transition: background 0.3s ease;
+      margin: 10px 0;
     }
     .btn:hover {
       background: #003f7f;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    /* Bento-box layout inuti resultatrutan */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
       margin-top: 20px;
     }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 12px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    th {
-      background: #f5f5f5;
-    }
-    .disclaimer {
-      margin-top: 15px;
-      font-size: 0.85rem;
-      color: #666;
+    .bento-box {
+      background: #fff;
+      border: 1px solid #cce0ff;
+      border-radius: 8px;
+      padding: 10px;
       text-align: center;
     }
+    .bento-box i {
+      font-size: 1.5rem;
+      color: #007acc;
+      margin-bottom: 5px;
+    }
+    .bento-box span {
+      display: block;
+      font-weight: 600;
+      color: #00509e;
+    }
+    .bento-box small {
+      display: block;
+      font-size: 0.8rem;
+      color: #555;
+    }
+    /* Responsiv design för mobiler */
     @media (max-width: 600px) {
-      input[type="number"] {
-        font-size: 0.9rem;
-      }
       th, td {
         font-size: 0.8rem;
+        padding: 8px;
+      }
+      .btn {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .bento-box i {
+        font-size: 1.3rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Matcha din nuvarande miljö</h1>
-    <!-- Steg 1: Användaren anger sin nuvarande miljö -->
-    <div id="step1" class="step active">
-      <div class="form-group">
-        <label for="totalCpu">Total CPU (antal kärnor):</label>
-        <input type="number" id="totalCpu" min="0" value="0">
+    <h1>Bygg din inkorg</h1>
+    <p class="semibold" style="text-align:center; margin-bottom:20px;">Lägg till en rad för varje flavor du vill beställa</p>
+    
+    <!-- Inkorgstabell -->
+    <table id="orderTable">
+      <thead>
+        <tr>
+          <th>Flavor</th>
+          <th>Antal</th>
+          <th>CPU</th>
+          <th>RAM</th>
+          <th>Lagring</th>
+          <th>Pris/instans</th>
+          <th>Raderat</th>
+        </tr>
+      </thead>
+      <tbody id="orderRows">
+        <!-- Rader läggs till dynamiskt -->
+      </tbody>
+    </table>
+    <button class="btn" id="addRowButton"><i class="fa-solid fa-plus"></i> Lägg till rad</button>
+    
+    <!-- Resultat sammanfattning -->
+    <h2>Sammanfattning</h2>
+    <div class="bento-grid" id="summary">
+      <div class="bento-box">
+        <i class="fa-solid fa-microchip"></i>
+        <span id="totalCpu">0</span>
+        <small>kärnor</small>
       </div>
-      <div class="form-group">
-        <label for="totalRam">Total RAM (GB):</label>
-        <input type="number" id="totalRam" min="0" value="0">
+      <div class="bento-box">
+        <i class="fa-solid fa-memory"></i>
+        <span id="totalRam">0</span>
+        <small>GB RAM</small>
       </div>
-      <div class="form-group">
-        <label for="totalDisk">Total lagring (GB):</label>
-        <input type="number" id="totalDisk" min="0" value="0">
+      <div class="bento-box">
+        <i class="fa-solid fa-hard-drive"></i>
+        <span id="totalDisk">0</span>
+        <small>GB lagring</small>
       </div>
-      <button class="btn" id="nextButton">Visa matchande alternativ</button>
-    </div>
-
-    <!-- Steg 2: Visa rekommenderade Safespring-alternativ -->
-    <div id="step2" class="step">
-      <h2>Rekommenderade Alternativ</h2>
-      <div id="results"></div>
-      <div class="disclaimer">
-        Observera: Matchningen är en ungefärlig uppskattning. I praktiken kan en blandning av servrar vara optimal.
+      <div class="bento-box">
+        <i class="fa-solid fa-dollar-sign"></i>
+        <span id="totalCost">0</span>
+        <small>SEK</small>
       </div>
-      <br>
-      <button class="btn" id="backButton">Gå tillbaka</button>
     </div>
   </div>
 
   <script>
-    // Exempeldata för Safespring Compute-flavors
-    // Flavors med lokal NVMe-disk
-    const nvmeFlavours = [
+    // Exempeldata för Safespring Compute-flavors (båda grupper kombinerade)
+    const flavors = [
       { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
       { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, price: 880 },
       { id: 'FLAVOR-l2-c2r4-1000', name: 'FLAVOR-l2. c2 r4. 1000', cpu: 2, ram: 4, disk: 1000, price: 1380 },
@@ -146,10 +201,7 @@
       { id: 'FLAVOR-l2-c16r32-500', name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500, price: 3540 },
       { id: 'FLAVOR-l2-c16r32-1000', name: 'FLAVOR-l2. c16 r32. 1000', cpu: 16, ram: 32, disk: 1000, price: 4040 },
       { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, price: 5300 },
-      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, price: 7080 }
-    ];
-    // Flavors utan lokal disk
-    const noDiskFlavours = [
+      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, price: 7080 },
       { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, price: 190 },
       { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, price: 300 },
       { id: 'FLAVOR-b2-c2r4', name: 'FLAVOR-b2. c2 r4', cpu: 2, ram: 4, disk: 0, price: 380 },
@@ -161,67 +213,109 @@
       { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
       { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
     ];
-    const allFlavours = nvmeFlavours.concat(noDiskFlavours);
+    
+    // Referenser till DOM-element
+    const orderRows = document.getElementById("orderRows");
+    const addRowButton = document.getElementById("addRowButton");
+    const totalCpuEl = document.getElementById("totalCpu");
+    const totalRamEl = document.getElementById("totalRam");
+    const totalDiskEl = document.getElementById("totalDisk");
+    const totalCostEl = document.getElementById("totalCost");
 
-    // Navigering mellan steg
-    const step1 = document.getElementById("step1");
-    const step2 = document.getElementById("step2");
-    const nextButton = document.getElementById("nextButton");
-    const backButton = document.getElementById("backButton");
-
-    nextButton.addEventListener("click", () => {
-      // Hämta användarens angivna totalspecifikationer
-      const totalCpu = parseInt(document.getElementById("totalCpu").value) || 0;
-      const totalRam = parseInt(document.getElementById("totalRam").value) || 0;
-      const totalDisk = parseInt(document.getElementById("totalDisk").value) || 0;
-      // Gå till steg 2 och beräkna matchande alternativ
-      showResults(totalCpu, totalRam, totalDisk);
-      step1.classList.remove("active");
-      step2.classList.add("active");
-    });
-    backButton.addEventListener("click", () => {
-      step2.classList.remove("active");
-      step1.classList.add("active");
-    });
-
-    // Funktion för att beräkna antal servrar och total kostnad för varje flavor
-    function showResults(totalCpu, totalRam, totalDisk) {
-      let html = `<table>
-        <thead>
-          <tr>
-            <th>Flavor</th>
-            <th>Specifikation</th>
-            <th>Antal servrar</th>
-            <th>Total kostnad (SEK/30 dagar)</th>
-          </tr>
-        </thead>
-        <tbody>`;
-      
-      allFlavours.forEach(flavor => {
-        // Beräkna antal servrar som krävs för varje resurs
-        const countCpu = totalCpu > 0 ? Math.ceil(totalCpu / flavor.cpu) : 0;
-        const countRam = totalRam > 0 ? Math.ceil(totalRam / flavor.ram) : 0;
-        let countDisk;
-        if(flavor.disk > 0) {
-          countDisk = totalDisk > 0 ? Math.ceil(totalDisk / flavor.disk) : 0;
-        } else {
-          // Om flavor inte har lokal disk så kan inte lagringskravet uppfyllas
-          countDisk = totalDisk > 0 ? Infinity : 0;
-        }
-        const serverCount = Math.max(countCpu, countRam, countDisk);
-        const totalCost = serverCount * flavor.price;
-        
-        html += `<tr>
-          <td>${flavor.name}</td>
-          <td>${flavor.cpu} vCPU, ${flavor.ram}GB RAM, ${flavor.disk > 0 ? flavor.disk + "GB lokal disk" : "Ingen lokal disk"}</td>
-          <td>${serverCount === Infinity ? "Ej tillämplig" : serverCount}</td>
-          <td>${serverCount === Infinity ? "Ej tillämplig" : totalCost.toLocaleString("sv-SE")}</td>
-        </tr>`;
+    // Skapa options för flavor-selecten
+    function createFlavorOptions() {
+      let options = '<option value="">-- Välj flavor --</option>';
+      flavors.forEach(flavor => {
+        options += `<option value="${flavor.id}" data-cpu="${flavor.cpu}" data-ram="${flavor.ram}" data-disk="${flavor.disk}" data-price="${flavor.price}">
+                      ${flavor.name} (${flavor.cpu} vCPU, ${flavor.ram}GB RAM, ${flavor.disk ? flavor.disk + 'GB disk' : 'Ingen disk'} - ${flavor.price} SEK)
+                    </option>`;
       });
-      
-      html += `</tbody></table>`;
-      document.getElementById("results").innerHTML = html;
+      return options;
     }
+
+    // Lägg till en ny rad i inkorgen
+    function addRow() {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>
+          <select class="flavorSelect">
+            ${createFlavorOptions()}
+          </select>
+        </td>
+        <td>
+          <input type="number" class="quantity" value="0" min="0" style="width: 60px;">
+        </td>
+        <td class="rowCpu">-</td>
+        <td class="rowRam">-</td>
+        <td class="rowDisk">-</td>
+        <td class="rowPrice">-</td>
+        <td><button class="btn deleteRow" title="Ta bort rad"><i class="fa-solid fa-trash"></i></button></td>
+      `;
+      orderRows.appendChild(tr);
+      
+      // Lägg till eventlyssnare
+      const flavorSelect = tr.querySelector(".flavorSelect");
+      const quantityInput = tr.querySelector(".quantity");
+      flavorSelect.addEventListener("change", () => updateRow(tr));
+      quantityInput.addEventListener("input", () => updateRow(tr));
+      tr.querySelector(".deleteRow").addEventListener("click", () => {
+        tr.remove();
+        updateSummary();
+      });
+    }
+
+    // Uppdatera en enskild rad baserat på valt flavor och kvantitet
+    function updateRow(row) {
+      const select = row.querySelector(".flavorSelect");
+      const quantity = parseInt(row.querySelector(".quantity").value) || 0;
+      const selectedOption = select.options[select.selectedIndex];
+      
+      if (select.value === "") {
+        row.querySelector(".rowCpu").textContent = "-";
+        row.querySelector(".rowRam").textContent = "-";
+        row.querySelector(".rowDisk").textContent = "-";
+        row.querySelector(".rowPrice").textContent = "-";
+      } else {
+        const cpu = parseInt(selectedOption.getAttribute("data-cpu"));
+        const ram = parseInt(selectedOption.getAttribute("data-ram"));
+        const disk = parseInt(selectedOption.getAttribute("data-disk"));
+        const price = parseInt(selectedOption.getAttribute("data-price"));
+        
+        row.querySelector(".rowCpu").textContent = quantity * cpu;
+        row.querySelector(".rowRam").textContent = quantity * ram;
+        row.querySelector(".rowDisk").textContent = disk ? (quantity * disk) : 0;
+        row.querySelector(".rowPrice").textContent = (quantity * price) + " SEK";
+      }
+      updateSummary();
+    }
+
+    // Summera totalerna över alla rader
+    function updateSummary() {
+      let totalCpu = 0, totalRam = 0, totalDisk = 0, totalCost = 0;
+      document.querySelectorAll("#orderRows tr").forEach(row => {
+        const select = row.querySelector(".flavorSelect");
+        const quantity = parseInt(row.querySelector(".quantity").value) || 0;
+        if (select.value !== "" && quantity > 0) {
+          const option = select.options[select.selectedIndex];
+          const cpu = parseInt(option.getAttribute("data-cpu"));
+          const ram = parseInt(option.getAttribute("data-ram"));
+          const disk = parseInt(option.getAttribute("data-disk"));
+          const price = parseInt(option.getAttribute("data-price"));
+          totalCpu += quantity * cpu;
+          totalRam += quantity * ram;
+          totalDisk += disk ? (quantity * disk) : 0;
+          totalCost += quantity * price;
+        }
+      });
+      totalCpuEl.textContent = totalCpu;
+      totalRamEl.textContent = totalRam;
+      totalDiskEl.textContent = totalDisk;
+      totalCostEl.textContent = totalCost.toLocaleString("sv-SE");
+    }
+
+    // Lägg till första raden vid sidladdning
+    addRow();
+    addRowButton.addEventListener("click", addRow);
   </script>
 </body>
 </html>
