@@ -7,7 +7,7 @@
   <!-- Google Fonts: Hind Light (rubriker) och Montserrat (brödtext) -->
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-2yEmk2w8kVWD3su2tJTXG+VwVXuTRI3WSrQJic+VQkDwCjmwBgF82ZC3AV5W46i0YWFNfXrPE3J7NDQKQ5C1hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a1af44f30e.js" crossorigin="anonymous"></script>  
   <style>
     /* Reset och grundstilar */
     * {
@@ -15,12 +15,14 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Montserrat', sans-serif;
       background: #f0f4f8;
       padding: 20px;
       color: #333;
     }
+
     h1, h2 {
       font-family: 'Hind', sans-serif;
       font-weight: 300;
@@ -28,9 +30,11 @@
       text-align: center;
       margin-bottom: 20px;
     }
+
     .semibold {
       font-weight: 600;
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -39,6 +43,7 @@
       padding: 20px 30px 30px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     /* Filter-rad med 3 boxar för CPU, RAM, STORAGE + toggles */
     .filter-container {
       display: flex;
@@ -48,11 +53,13 @@
       margin-bottom: 20px;
       justify-content: space-between;
     }
+
     .filter-boxes {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
+
     .filter-box {
       display: flex;
       flex-direction: column;
@@ -90,6 +97,7 @@
       display: flex;
       gap: 10px;
     }
+
     .toggle-container button {
       padding: 8px 12px;
       border: 1px solid #00509e;
@@ -101,10 +109,12 @@
       cursor: pointer;
       transition: background 0.3s ease, color 0.3s ease;
     }
+
     .toggle-container button.active {
       background: #00509e;
       color: #fff;
     }
+
     /* Filtrera-knapp */
     .filter-button {
       display: block;
@@ -120,49 +130,101 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
+
     .filter-button:hover {
       background: #003f7f;
     }
+
     /* Lista med flavors */
     .flavor-list {
+      margin-top: 60px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 15px;
+      gap: 45px;
       margin-bottom: 20px;
     }
     .flavor-card {
-      background: #e9f5ff;
-      border: 1px solid #cce0ff;
-      border-radius: 8px;
+      display: flex;
+      background: #EBF2F6;
+      border-radius: 20px;
       padding: 15px;
       text-align: center;
-    }
-    .flavor-card h3 {
-      font-family: 'Hind', sans-serif;
-      font-weight: 300;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      color: #00509e;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
     }
     .flavor-card p {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       margin-bottom: 10px;
-      color: #333;
+      color: #195f8c82;
+     font-weight: 600;
     }
-    .flavor-card button {
-      padding: 6px 12px;
-      background: #00509e;
-      color: #fff;
+    .flavor-card-button {
+      display: flex;
+      background-color: #32CD32;
       border: none;
-      border-radius: 4px;
-      font-family: 'Montserrat', sans-serif;
+      border-radius: 50%;
+      color: white;
+      font-size: 60px;
       font-weight: 600;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -40px;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
-    .flavor-card button:hover {
-      background: #003f7f;
+
+    .flavor-card button i {
+      font-size: 30px;
     }
+
+
+    .flavor-card:hover {
+      transform: scale(1.02); /* +2% på hover */
+    }
+
+    .flavor-card:active {
+      transform: scale(0.98); /* -2% på klick */
+    }
+
+    .price-card {
+      padding: 14px;
+      background-color: #195F8C20;
+      border-radius: 13px;
+      font: 600 15px Montserrat;
+      color: #195F8C;
+    }
+
+
+    .price-card-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .price-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 90px;
+    }
+
+    .flavor-number {
+      font-size: 1.6rem;
+    }
+    .flavor-text {
+      font-size: 0.8rem;
+    }
+
+    .price-card-storage {
+      margin-block: 20px;
+      font: 600 15px Montserrat;
+      color: #195F8C;
+    }
+
     /* Inkorgstabell */
     table {
       width: 100%;
@@ -273,6 +335,7 @@
         font-size: 1.3rem;
       }
     }
+
   </style>
 </head>
 <body>
@@ -303,7 +366,7 @@
       </div>
     </div>
 
-    <button class="filter-button" id="filterButton">Filtrera</button>
+<button class="filter-button" id="filterButton">Filtrera</button>
 
     <!-- Lista med flavors -->
     <div class="flavor-list" id="flavorList">
@@ -314,17 +377,6 @@
     <h2>Din inkorg</h2>
     <table id="orderTable">
       <thead>
-        <!-- Kolumnordning:
-          1. Flavor
-          2. Antal
-          3. CPU
-          4. RAM
-          5. Lagring GB Boot disk
-          6. Lagring GB Extra
-          7. Fast / Large
-          8. Pris/instans
-          9. Ta bort
-        -->
         <tr>
           <th>Flavor</th>
           <th>Antal</th>
@@ -372,34 +424,16 @@
      * - "fast" (SSD) = 3.60 kr/GB
      * - "large" (HDD) = 1.20 kr/GB
      ****************************************************/
-    const nvmeFlavours = [
-      { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, basePrice: 480 },
-      { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, basePrice: 880 },
-      { id: 'FLAVOR-l2-c2r4-1000', name: 'FLAVOR-l2. c2 r4. 1000', cpu: 2, ram: 4, disk: 1000, basePrice: 1380 },
-      { id: 'FLAVOR-l2-c4r8-100', name: 'FLAVOR-l2. c4 r8. 100', cpu: 4, ram: 8, disk: 100, basePrice: 860 },
-      { id: 'FLAVOR-l2-c4r8-500', name: 'FLAVOR-l2. c4 r8. 500', cpu: 4, ram: 8, disk: 500, basePrice: 1260 },
-      { id: 'FLAVOR-l2-c4r8-1000', name: 'FLAVOR-l2. c4 r8. 1000', cpu: 4, ram: 8, disk: 1000, basePrice: 1760 },
-      { id: 'FLAVOR-l2-c8r16-100', name: 'FLAVOR-l2. c8 r16. 100', cpu: 8, ram: 16, disk: 100, basePrice: 1620 },
-      { id: 'FLAVOR-l2-c8r16-500', name: 'FLAVOR-l2. c8 r16. 500', cpu: 8, ram: 16, disk: 500, basePrice: 2020 },
-      { id: 'FLAVOR-l2-c8r16-1000', name: 'FLAVOR-l2. c8 r16. 1000', cpu: 8, ram: 16, disk: 1000, basePrice: 2520 },
-      { id: 'FLAVOR-l2-c16r32-100', name: 'FLAVOR-l2. c16 r32. 100', cpu: 16, ram: 32, disk: 100, basePrice: 3140 },
-      { id: 'FLAVOR-l2-c16r32-500', name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500, basePrice: 3540 },
-      { id: 'FLAVOR-l2-c16r32-1000', name: 'FLAVOR-l2. c16 r32. 1000', cpu: 16, ram: 32, disk: 1000, basePrice: 4040 },
-      { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, basePrice: 5300 },
-      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, basePrice: 7080 },
-    ];
-    const blockFlavours = [
-      { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, basePrice: 190 },
-      { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, basePrice: 300 },
-      { id: 'FLAVOR-b2-c2r4', name: 'FLAVOR-b2. c2 r4', cpu: 2, ram: 4, disk: 0, basePrice: 380 },
-      { id: 'FLAVOR-b2-c2r8', name: 'FLAVOR-b2. c2 r8', cpu: 2, ram: 8, disk: 0, basePrice: 600 },
-      { id: 'FLAVOR-b2-c4r8', name: 'FLAVOR-b2. c4 r8', cpu: 4, ram: 8, disk: 0, basePrice: 760 },
-      { id: 'FLAVOR-b2-c4r16', name: 'FLAVOR-b2. c4 r16', cpu: 4, ram: 16, disk: 0, basePrice: 1200 },
-      { id: 'FLAVOR-b2-c8r16', name: 'FLAVOR-b2. c8 r16', cpu: 8, ram: 16, disk: 0, basePrice: 1520 },
-      { id: 'FLAVOR-b2-c8r32', name: 'FLAVOR-b2. c8 r32', cpu: 8, ram: 32, disk: 0, basePrice: 2400 },
-      { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, basePrice: 3040 },
-      { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, basePrice: 4800 },
-    ];
+    fetch('flavours.json')
+    .then(response => response.json())
+    .then(data => {
+      // Gör dessa variabler globala (eller uppdatera din logik därefter)
+      window.nvmeFlavours = data.nvmeFlavours;
+      window.blockFlavours = data.blockFlavours;
+      // Uppdatera UI med de hämtade data
+      renderFlavors();
+    })
+    .catch(error => console.error('Fel vid hämtning av flavours-data:', error));
 
     // Kostnader per GB för block-lagring
     const PRICE_FAST = 3.60;   // VOLUME-fast
@@ -443,6 +477,10 @@
     });
 
     // Filtrera-knapp
+    cpuFilterEl.addEventListener("input", renderFlavors);
+ramFilterEl.addEventListener("input", renderFlavors);
+diskFilterEl.addEventListener("input", renderFlavors);
+
     filterButton.addEventListener("click", () => {
       renderFlavors();
     });
@@ -456,10 +494,10 @@
 
       // Filtrera baserat på CPU >= minCpu, RAM >= minRam, DISK >= minDisk
       const filtered = flavorsToCheck.filter(f => 
-        f.cpu >= minCpu &&
-        f.ram >= minRam &&
-        f.disk >= minDisk
-      );
+                                             f.cpu >= minCpu &&
+                                             f.ram >= minRam &&
+                                             f.disk >= minDisk
+                                             );
 
       flavorListEl.innerHTML = "";
       if (filtered.length === 0) {
@@ -469,20 +507,21 @@
       filtered.forEach(flavor => {
         const card = document.createElement("div");
         card.className = "flavor-card";
+        card.onclick = function() {
+          addFlavorToOrder(flavor.id);
+        };
         // Om NVMe: disk-siffra. Om block: "Valfri blockvolym"
         const storageText = (selectedStorage === "nvme")
-          ? `${flavor.disk} GB disk`
-          : "Valfri blockvolym";
+        ? `${flavor.disk} GB disk`
+        : "Valfri blockvolym";
         card.innerHTML = `
           <p>${flavor.name}</p>
           <div class="price-card-wrapper">
-            <div class="price-card-flavor">${flavor.cpu} vCPU</div>
-            <div class="price-card-ram">${flavor.ram} GB RAM</div>
-            <div class="price-card-storage">${storageText}</div>
+            <div class="price-card"><span class="flavor-number">${flavor.cpu}</span><span class="flavor-text">vCPU</span></div>
+            <div class="price-card"><span class="flavor-number">${flavor.ram}</span><span class="flavor-text">GB RAM</span></div>
           </div>
-          <div class="price-card-price">${flavor.basePrice.toLocaleString("sv-SE")} SEK</div>
-          <button onclick="addFlavorToOrder('${flavor.id}')">
-            <i class="fa-solid fa-plus"></i> Add flavor
+            <div class="price-card-storage">${storageText}</div>
+          <button class="flavor-card-button"><i class="fa-solid fa-plus"></i>
           </button>
         `;
         flavorListEl.appendChild(card);
@@ -494,9 +533,9 @@
       const flavor = (selectedStorage === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
       // Kolla om flavor redan finns i ordern
       const existingRow = Array.from(orderRows.children).find(row => 
-        row.getAttribute("data-id") === flavorId && 
-        row.getAttribute("data-storage") === selectedStorage
-      );
+                                                              row.getAttribute("data-id") === flavorId && 
+                                                              row.getAttribute("data-storage") === selectedStorage
+                                                              );
       if (existingRow) {
         // Öka antal med 1
         const qtyInput = existingRow.querySelector(".quantity");
@@ -596,7 +635,7 @@
 
       // Hämta flavor
       const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours)
-        .find(f => f.id === flavorId);
+      .find(f => f.id === flavorId);
 
       // CPU, RAM = en instans
       row.querySelector(".rowCpu").textContent = flavor.cpu;
@@ -638,7 +677,7 @@
         const flavorId = row.getAttribute("data-id");
         const storageType = row.getAttribute("data-storage");
         const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours)
-          .find(f => f.id === flavorId);
+        .find(f => f.id === flavorId);
 
         // CPU & RAM
         totalCpu += flavor.cpu * qty;
