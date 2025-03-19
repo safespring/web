@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>L2 & B2 Flavors – Lagring Boot & Extra</title>
-  <!-- Exempeltypsnitt och font-awesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- Google Fonts för exempel -->
   <link
     href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@400;600&display=swap"
     rel="stylesheet"
   />
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -19,24 +19,92 @@
   />
 
   <style>
-    /* Reset och grundläggande styling */
+    /* Reset och grundstilar */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       background: #f4f7f9;
       color: #333;
       padding: 20px;
     }
     h1 {
       text-align: center;
-      font-family: 'Hind', sans-serif;
+      font-family: "Hind", sans-serif;
       font-weight: 300;
       color: #00509e;
       margin-bottom: 30px;
+    }
+
+    /* Filter-sektionen överst */
+    .filter-container {
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .filter-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .filter-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 10px 20px;
+      background: #fff;
+      min-width: 80px;
+      text-align: center;
+    }
+    .filter-box label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .filter-box input {
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 1rem;
+      width: 60px;
+      color: #333;
+    }
+    .filter-box input::placeholder {
+      color: #bbb;
+    }
+    .filter-box input:focus {
+      outline: none;
+    }
+    .filter-button {
+      padding: 10px 25px;
+      background: #00509e;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .filter-button:hover {
+      background: #003f7f;
     }
 
     /* Bordets layout */
@@ -60,13 +128,13 @@
       font-size: 0.9rem;
     }
     .flavor-table th {
-      font-family: 'Hind', sans-serif;
+      font-family: "Hind", sans-serif;
       font-weight: 300;
       color: #00509e;
       white-space: nowrap;
     }
     .flavor-table td {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: #555;
       vertical-align: middle;
     }
@@ -143,34 +211,43 @@
     .deleteRowBtn:hover {
       background: #c0392b;
     }
-    /* Rubriker i kolumnerna */
-    .boot-col {
-      background: #e6f1f7;
-      color: #0077b6;
-      font-weight: 600;
-    }
-    .extra-col {
-      background: #d7eef7;
-      color: #0077b6;
-      font-weight: 600;
-    }
   </style>
 </head>
 <body>
   <h1>L2 & B2 Flavors – Lagring Boot & Extra</h1>
 
+  <!-- Filter-sektion -->
+  <div class="filter-container">
+    <div class="filter-boxes">
+      <div class="filter-box">
+        <label for="cpuFilter">CPU</label>
+        <input type="number" id="cpuFilter" placeholder="2" />
+      </div>
+      <div class="filter-box">
+        <label for="ramFilter">RAM</label>
+        <input type="number" id="ramFilter" placeholder="4" />
+      </div>
+      <div class="filter-box">
+        <label for="diskFilter">STORAGE</label>
+        <input type="number" id="diskFilter" placeholder="100" />
+      </div>
+    </div>
+    <button class="filter-button" id="filterButton">Filtrera</button>
+  </div>
+
+  <!-- Tabell: kolumnordning enligt önskemål -->
   <table class="flavor-table" id="flavorTable">
     <thead>
       <tr>
-        <th>Flavor</th>
-        <th>vCPU</th>
-        <th>RAM (GB)</th>
-        <th class="boot-col">Lagring GB Boot Disk</th>
-        <th class="extra-col">Lagring GB Extra</th>
-        <th>Fast / Large</th>
-        <th>Antal</th>
-        <th>Pris/instans</th>
-        <th>Ta bort</th>
+        <th>Flavor</th>               <!-- 1 -->
+        <th>Antal</th>               <!-- 2 -->
+        <th>vCPU</th>                <!-- 3 -->
+        <th>RAM</th>                 <!-- 4 -->
+        <th>Lagring GB Boot Disk</th><!-- 5 -->
+        <th>Lagring GB Extra</th>    <!-- 6 -->
+        <th>Fast / Large</th>        <!-- 7 -->
+        <th>Pris/instans</th>        <!-- 8 -->
+        <th>Ta bort</th>             <!-- 9 -->
       </tr>
     </thead>
     <tbody id="flavorTbody"></tbody>
@@ -179,16 +256,16 @@
   <script>
     /********************************************
      * Priser för blocklagring
-     * Boot-lagring för B2 = Alltid "fast" (3.60 kr/GB)
-     * Extra-lagring = Välj "fast" (3.60 kr/GB) eller "large" (1.20 kr/GB)
+     * Boot-lagring för B2 = alltid "fast" (3.60 kr/GB)
+     * Extra-lagring = kan vara "fast" (3.60 kr/GB) eller "large" (1.20 kr/GB)
      ********************************************/
     const PRICE_FAST = 3.60;
     const PRICE_LARGE = 1.20;
 
     /********************************************
-     * L2 flavors – har en inbyggd lokal disk (NVMe).
-     * Denna disk är redan inräknad i flavor-priset.
-     * Boot-lagring = flavor.disk (endast visuell, ingen extra kostnad).
+     * L2 flavors – har inbyggd lokal disk (NVMe).
+     * Denna disk är redan inräknad i basePrice (CPU+RAM+NVMe).
+     * Boot-lagring = flavor.disk (visas men ingen extra kostnad).
      ********************************************/
     const l2Flavours = [
       { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, basePrice: 480 },
@@ -208,8 +285,8 @@
     ];
 
     /********************************************
-     * B2 flavors – ingen lokal disk.
-     * Boot-lagring: användaren matar in GB (alltid fast-lagring = 3.60 kr/GB).
+     * B2 flavors – ingen lokal disk (0).
+     * Boot-lagring: användaren skriver in GB (kostar 3.60 kr/GB).
      ********************************************/
     const b2Flavours = [
       { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, basePrice: 190 },
@@ -224,45 +301,90 @@
       { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, basePrice: 4800 },
     ];
 
-    // Kombinera i en array för enkel rendering
-    // Ange property "type" = "l2" eller "b2"
+    // Samlad array, med property type: "l2" eller "b2"
     const allFlavours = [
-      ...l2Flavours.map(fl => ({ ...fl, type: 'l2' })),
-      ...b2Flavours.map(fl => ({ ...fl, type: 'b2' })),
+      ...l2Flavours.map(f => ({ ...f, type: "l2" })),
+      ...b2Flavours.map(f => ({ ...f, type: "b2" })),
     ];
 
-    // Rendera tabellen
-    function renderTable() {
-      const tbody = document.getElementById('flavorTbody');
-      tbody.innerHTML = '';
+    // DOM-referenser
+    const cpuFilterEl = document.getElementById("cpuFilter");
+    const ramFilterEl = document.getElementById("ramFilter");
+    const diskFilterEl = document.getElementById("diskFilter");
+    const filterButton = document.getElementById("filterButton");
+    const flavorTbody = document.getElementById("flavorTbody");
 
-      allFlavours.forEach(flavor => {
-        const tr = document.createElement('tr');
+    // Filtrera-knapp
+    filterButton.addEventListener("click", () => {
+      renderFlavors();
+    });
+
+    // Vid sidladdning
+    document.addEventListener("DOMContentLoaded", () => {
+      renderFlavors();
+    });
+
+    function renderFlavors() {
+      // Hämta filtervärden
+      const minCpu = parseInt(cpuFilterEl.value) || 0;
+      const minRam = parseInt(ramFilterEl.value) || 0;
+      const minDisk = parseInt(diskFilterEl.value) || 0;
+
+      // Filtrera
+      const filtered = allFlavours.filter(f => {
+        // Om l2 => f.disk >= minDisk
+        // Om b2 => 0 >= minDisk => om minDisk > 0 => b2 syns ej (kan justeras om du vill)
+        // Här kör vi en enkel logik:
+        return f.cpu >= minCpu && f.ram >= minRam && f.disk >= minDisk;
+      });
+
+      flavorTbody.innerHTML = "";
+
+      if (filtered.length === 0) {
+        flavorTbody.innerHTML = `
+          <tr><td colspan="9" style="padding:20px; text-align:center;">
+            Inga flavors matchar din sökning.
+          </td></tr>
+        `;
+        return;
+      }
+
+      // Skapa en rad för varje flavor
+      filtered.forEach(flavor => {
+        const tr = document.createElement("tr");
+
+        // Bygger kolumner i ordning:
+        // 1. Flavor
+        // 2. Antal
+        // 3. vCPU
+        // 4. RAM
+        // 5. Lagring GB Boot disk
+        // 6. Lagring GB Extra
+        // 7. Fast / Large
+        // 8. Pris/instans
+        // 9. Ta bort
 
         // Boot-lagring
-        let bootCellContent = '';
-        if (flavor.type === 'l2') {
-          // L2: visa disk read-only
-          bootCellContent = `
-            <span style="display:inline-block; min-width:40px;">
-              ${flavor.disk}
-            </span>
+        let bootCell = "";
+        if (flavor.type === "l2") {
+          // L2: disk read-only, ingen extra kostnad
+          bootCell = `
+            <span class="bootSpan">${flavor.disk}</span>
           `;
         } else {
-          // B2: användare matar in
-          bootCellContent = `
+          // B2: input
+          bootCell = `
             <input type="number" class="bootInput" value="50" min="0" style="width:60px;" />
           `;
         }
 
-        // Extra-lagring (kolumn) – gäller båda
-        // Standard = 0
-        let extraCellContent = `
+        // Extra-lagring
+        const extraCell = `
           <input type="number" class="extraInput extra-storage-input" value="0" min="0" />
         `;
 
-        // Switch fast/large
-        let switchContent = `
+        // Switch
+        const switchCell = `
           <div class="switch-container">
             <label>Fast</label>
             <input type="checkbox" class="switch-toggle" />
@@ -270,91 +392,79 @@
           </div>
         `;
 
-        // Bygg rad
         tr.innerHTML = `
           <td>${flavor.name}</td>
-          <td>${flavor.cpu}</td>
-          <td>${flavor.ram}</td>
-          <td class="boot-col">${bootCellContent}</td>
-          <td class="extra-col">${extraCellContent}</td>
-          <td>${switchContent}</td>
           <td>
             <input type="number" class="qtyInput" value="1" min="1" style="width:50px;" />
           </td>
+          <td class="cpuCell">${flavor.cpu}</td>
+          <td class="ramCell">${flavor.ram}</td>
+          <td class="bootCell">${bootCell}</td>
+          <td class="extraCell">${extraCell}</td>
+          <td class="switchCell">${switchCell}</td>
           <td class="priceCell">0 SEK</td>
           <td>
-            <button class="deleteRowBtn">
-              <i class="fa-solid fa-trash"></i>
-            </button>
+            <button class="deleteRowBtn"><i class="fa-solid fa-trash"></i></button>
           </td>
         `;
 
-        tbody.appendChild(tr);
+        flavorTbody.appendChild(tr);
 
         // Event-lyssnare
-        const qtyEl = tr.querySelector('.qtyInput');
-        const bootEl = tr.querySelector('.bootInput');  // kan vara null för l2
-        const extraEl = tr.querySelector('.extraInput');
-        const toggleEl = tr.querySelector('.switch-toggle');
-        const deleteBtn = tr.querySelector('.deleteRowBtn');
+        const qtyEl = tr.querySelector(".qtyInput");
+        const bootEl = tr.querySelector(".bootInput"); // kan vara null om L2
+        const extraEl = tr.querySelector(".extraInput");
+        const switchEl = tr.querySelector(".switch-toggle");
+        const delBtn = tr.querySelector(".deleteRowBtn");
 
-        // Recalc varje gång man ändrar
-        qtyEl.addEventListener('input', () => recalcRow(tr, flavor));
+        qtyEl.addEventListener("input", () => recalcRow(tr, flavor));
+        extraEl.addEventListener("input", () => recalcRow(tr, flavor));
+        switchEl.addEventListener("change", () => recalcRow(tr, flavor));
+
         if (bootEl) {
-          bootEl.addEventListener('input', () => recalcRow(tr, flavor));
+          bootEl.addEventListener("input", () => recalcRow(tr, flavor));
         }
-        extraEl.addEventListener('input', () => recalcRow(tr, flavor));
-        toggleEl.addEventListener('change', () => recalcRow(tr, flavor));
-        deleteBtn.addEventListener('click', () => {
+
+        delBtn.addEventListener("click", () => {
           tr.remove();
         });
 
-        // Init beräkning
+        // Init
         recalcRow(tr, flavor);
       });
     }
 
-    // Räkna ut priset för en rad
+    // Räkna ut "pris/instans" för en rad
     function recalcRow(tr, flavor) {
-      const qtyEl = tr.querySelector('.qtyInput');
-      const priceCell = tr.querySelector('.priceCell');
-      const toggleEl = tr.querySelector('.switch-toggle');
-      const extraEl = tr.querySelector('.extraInput');
+      const qtyEl = tr.querySelector(".qtyInput");
+      const bootEl = tr.querySelector(".bootInput");
+      const extraEl = tr.querySelector(".extraInput");
+      const switchEl = tr.querySelector(".switch-toggle");
+      const priceCell = tr.querySelector(".priceCell");
 
-      const qty = parseInt(qtyEl.value) || 0;
-      const isLarge = toggleEl.checked; // om true => "large", false => "fast"
+      const qty = parseInt(qtyEl.value) || 1;
+      const isLarge = switchEl.checked; // true => "large", false => "fast"
 
-      let bootSize = 0;
+      // Baspris för CPU+RAM (+NVMe för L2)
+      let singlePrice = flavor.basePrice;
+
       // Boot-lagring
-      if (flavor.type === 'l2') {
-        // L2: boot disk = flavor.disk, redan inräknad i basePrice => ingen extra kostnad
-        bootSize = flavor.disk; 
-      } else {
-        // B2: hämta boot storlek, kostnad = fast-lagring
-        const bootEl = tr.querySelector('.bootInput');
-        bootSize = parseInt(bootEl.value) || 0;
+      if (flavor.type === "b2") {
+        // B2 => boot-lagring = always fast-lagring
+        const bootSize = bootEl ? parseInt(bootEl.value) || 0 : 0;
+        singlePrice += bootSize * PRICE_FAST;
       }
+      // L2 => ingen extra kostnad för boot-lagring (disk redan i basePrice)
 
       // Extra-lagring
       const extraSize = parseInt(extraEl.value) || 0;
-
-      // Beräkna "pris per instans"
-      let singlePrice = flavor.basePrice; // CPU+RAM+ev. NVMe (L2)
-      if (flavor.type === 'b2') {
-        // B2: boot-lagring = always fast
-        singlePrice += bootSize * PRICE_FAST;
-      }
-      // Extra-lagring: toggla fast/large
       const extraCostPerGB = isLarge ? PRICE_LARGE : PRICE_FAST;
       singlePrice += extraSize * extraCostPerGB;
 
-      // Pris total = "pris per instans" * antal
-      const totalPrice = singlePrice * qty;
-      priceCell.textContent = `${totalPrice.toLocaleString('sv-SE')} SEK`;
+      // Pris per instans
+      // OBS: "Pris/instans" är enhetskostnaden för 1 instans, inte multiplicerat med "antal"
+      priceCell.textContent = `${singlePrice.toLocaleString("sv-SE")} SEK`;
     }
-
-    // När sidan laddas
-    document.addEventListener('DOMContentLoaded', renderTable);
   </script>
 </body>
 </html>
