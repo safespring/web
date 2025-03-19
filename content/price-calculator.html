@@ -314,19 +314,30 @@
     <h2>Din inkorg</h2>
     <table id="orderTable">
       <thead>
+        <!-- Kolumnordning:
+          1. Flavor
+          2. Antal
+          3. CPU
+          4. RAM
+          5. Lagring GB Boot disk
+          6. Lagring GB Extra
+          7. Fast / Large
+          8. Pris/instans
+          9. Ta bort
+        -->
         <tr>
           <th>Flavor</th>
           <th>Antal</th>
           <th>CPU</th>
           <th>RAM</th>
-          <th>Lagring</th>
+          <th>Lagring GB Boot</th>
+          <th>Lagring GB Extra</th>
+          <th>Fast / Large</th>
           <th>Pris/instans</th>
           <th>Ta bort</th>
         </tr>
       </thead>
-      <tbody id="orderRows">
-        <!-- Rader läggs till dynamiskt -->
-      </tbody>
+      <tbody id="orderRows"></tbody>
     </table>
 
     <!-- Sammanfattning -->
@@ -362,32 +373,32 @@
      * - "large" (HDD) = 1.20 kr/GB
      ****************************************************/
     const nvmeFlavours = [
-      { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
-      { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, price: 880 },
-      { id: 'FLAVOR-l2-c2r4-1000', name: 'FLAVOR-l2. c2 r4. 1000', cpu: 2, ram: 4, disk: 1000, price: 1380 },
-      { id: 'FLAVOR-l2-c4r8-100', name: 'FLAVOR-l2. c4 r8. 100', cpu: 4, ram: 8, disk: 100, price: 860 },
-      { id: 'FLAVOR-l2-c4r8-500', name: 'FLAVOR-l2. c4 r8. 500', cpu: 4, ram: 8, disk: 500, price: 1260 },
-      { id: 'FLAVOR-l2-c4r8-1000', name: 'FLAVOR-l2. c4 r8. 1000', cpu: 4, ram: 8, disk: 1000, price: 1760 },
-      { id: 'FLAVOR-l2-c8r16-100', name: 'FLAVOR-l2. c8 r16. 100', cpu: 8, ram: 16, disk: 100, price: 1620 },
-      { id: 'FLAVOR-l2-c8r16-500', name: 'FLAVOR-l2. c8 r16. 500', cpu: 8, ram: 16, disk: 500, price: 2020 },
-      { id: 'FLAVOR-l2-c8r16-1000', name: 'FLAVOR-l2. c8 r16. 1000', cpu: 8, ram: 16, disk: 1000, price: 2520 },
-      { id: 'FLAVOR-l2-c16r32-100', name: 'FLAVOR-l2. c16 r32. 100', cpu: 16, ram: 32, disk: 100, price: 3140 },
-      { id: 'FLAVOR-l2-c16r32-500', name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500, price: 3540 },
-      { id: 'FLAVOR-l2-c16r32-1000', name: 'FLAVOR-l2. c16 r32. 1000', cpu: 16, ram: 32, disk: 1000, price: 4040 },
-      { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, price: 5300 },
-      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, price: 7080 }
+      { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, basePrice: 480 },
+      { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, basePrice: 880 },
+      { id: 'FLAVOR-l2-c2r4-1000', name: 'FLAVOR-l2. c2 r4. 1000', cpu: 2, ram: 4, disk: 1000, basePrice: 1380 },
+      { id: 'FLAVOR-l2-c4r8-100', name: 'FLAVOR-l2. c4 r8. 100', cpu: 4, ram: 8, disk: 100, basePrice: 860 },
+      { id: 'FLAVOR-l2-c4r8-500', name: 'FLAVOR-l2. c4 r8. 500', cpu: 4, ram: 8, disk: 500, basePrice: 1260 },
+      { id: 'FLAVOR-l2-c4r8-1000', name: 'FLAVOR-l2. c4 r8. 1000', cpu: 4, ram: 8, disk: 1000, basePrice: 1760 },
+      { id: 'FLAVOR-l2-c8r16-100', name: 'FLAVOR-l2. c8 r16. 100', cpu: 8, ram: 16, disk: 100, basePrice: 1620 },
+      { id: 'FLAVOR-l2-c8r16-500', name: 'FLAVOR-l2. c8 r16. 500', cpu: 8, ram: 16, disk: 500, basePrice: 2020 },
+      { id: 'FLAVOR-l2-c8r16-1000', name: 'FLAVOR-l2. c8 r16. 1000', cpu: 8, ram: 16, disk: 1000, basePrice: 2520 },
+      { id: 'FLAVOR-l2-c16r32-100', name: 'FLAVOR-l2. c16 r32. 100', cpu: 16, ram: 32, disk: 100, basePrice: 3140 },
+      { id: 'FLAVOR-l2-c16r32-500', name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500, basePrice: 3540 },
+      { id: 'FLAVOR-l2-c16r32-1000', name: 'FLAVOR-l2. c16 r32. 1000', cpu: 16, ram: 32, disk: 1000, basePrice: 4040 },
+      { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, basePrice: 5300 },
+      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, basePrice: 7080 },
     ];
     const blockFlavours = [
-      { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, price: 190 },
-      { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, price: 300 },
-      { id: 'FLAVOR-b2-c2r4', name: 'FLAVOR-b2. c2 r4', cpu: 2, ram: 4, disk: 0, price: 380 },
-      { id: 'FLAVOR-b2-c2r8', name: 'FLAVOR-b2. c2 r8', cpu: 2, ram: 8, disk: 0, price: 600 },
-      { id: 'FLAVOR-b2-c4r8', name: 'FLAVOR-b2. c4 r8', cpu: 4, ram: 8, disk: 0, price: 760 },
-      { id: 'FLAVOR-b2-c4r16', name: 'FLAVOR-b2. c4 r16', cpu: 4, ram: 16, disk: 0, price: 1200 },
-      { id: 'FLAVOR-b2-c8r16', name: 'FLAVOR-b2. c8 r16', cpu: 8, ram: 16, disk: 0, price: 1520 },
-      { id: 'FLAVOR-b2-c8r32', name: 'FLAVOR-b2. c8 r32', cpu: 8, ram: 32, disk: 0, price: 2400 },
-      { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
-      { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
+      { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, basePrice: 190 },
+      { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, basePrice: 300 },
+      { id: 'FLAVOR-b2-c2r4', name: 'FLAVOR-b2. c2 r4', cpu: 2, ram: 4, disk: 0, basePrice: 380 },
+      { id: 'FLAVOR-b2-c2r8', name: 'FLAVOR-b2. c2 r8', cpu: 2, ram: 8, disk: 0, basePrice: 600 },
+      { id: 'FLAVOR-b2-c4r8', name: 'FLAVOR-b2. c4 r8', cpu: 4, ram: 8, disk: 0, basePrice: 760 },
+      { id: 'FLAVOR-b2-c4r16', name: 'FLAVOR-b2. c4 r16', cpu: 4, ram: 16, disk: 0, basePrice: 1200 },
+      { id: 'FLAVOR-b2-c8r16', name: 'FLAVOR-b2. c8 r16', cpu: 8, ram: 16, disk: 0, basePrice: 1520 },
+      { id: 'FLAVOR-b2-c8r32', name: 'FLAVOR-b2. c8 r32', cpu: 8, ram: 32, disk: 0, basePrice: 2400 },
+      { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, basePrice: 3040 },
+      { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, basePrice: 4800 },
     ];
 
     // Kostnader per GB för block-lagring
@@ -465,7 +476,7 @@
         card.innerHTML = `
           <h3>${flavor.name}</h3>
           <p>${flavor.cpu} vCPU, ${flavor.ram} GB RAM, ${storageText}</p>
-          <p><strong>${flavor.price.toLocaleString("sv-SE")} SEK</strong></p>
+          <p><strong>${flavor.basePrice.toLocaleString("sv-SE")} SEK</strong></p>
           <button onclick="addFlavorToOrder('${flavor.id}')">
             <i class="fa-solid fa-plus"></i> Lägg till
           </button>
@@ -491,25 +502,41 @@
         const tr = document.createElement("tr");
         tr.setAttribute("data-id", flavor.id);
         tr.setAttribute("data-storage", selectedStorage);
-        
-        // Om NVMe -> visa disk som text
-        // Om block -> användaren kan skriva in storlek + välja "fast" / "large"
-        let storageCellContent = "";
+
+        /* Kolumnordning:
+            1. Flavor
+            2. Antal
+            3. CPU
+            4. RAM
+            5. Lagring GB Boot
+            6. Lagring GB Extra
+            7. Fast / Large
+            8. Pris/instans
+            9. Ta bort
+        */
+
+        // Lagring Boot:
+        // - L2: read-only
+        // - B2: input
+        let bootCell = '';
         if (selectedStorage === "nvme") {
-          storageCellContent = `${flavor.disk} GB`;
+          bootCell = `<span>${flavor.disk}</span>`;
         } else {
-          // Standard = 50 GB "fast"
-          storageCellContent = `
-            <div>
-              <input type="number" class="blockStorageInput" value="50" min="0" style="width:60px;">
-              <div class="storage-switch">
-                <span>Fast</span>
-                <input type="checkbox" class="storageToggle" />
-                <span>Large</span>
-              </div>
-            </div>
-          `;
+          // default 50 GB
+          bootCell = `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`;
         }
+
+        // Lagring Extra: input
+        const extraCell = `<input type="number" class="extraInput" value="0" min="0" style="width:60px;">`;
+
+        // Switch
+        const switchCell = `
+          <div class="storage-switch">
+            <span>Fast</span>
+            <input type="checkbox" class="storageToggle" />
+            <span>Large</span>
+          </div>
+        `;
 
         tr.innerHTML = `
           <td>${flavor.name}</td>
@@ -518,14 +545,16 @@
           </td>
           <td class="rowCpu">${flavor.cpu}</td>
           <td class="rowRam">${flavor.ram}</td>
-          <td class="rowDisk">${storageCellContent}</td>
-          <td class="rowPrice">${flavor.price.toLocaleString("sv-SE")} SEK</td>
+          <td class="rowBoot">${bootCell}</td>
+          <td class="rowExtra">${extraCell}</td>
+          <td class="rowSwitch">${switchCell}</td>
+          <td class="rowPrice">0 SEK</td>
           <td><button class="deleteRow"><i class="fa-solid fa-trash"></i></button></td>
         `;
 
         orderRows.appendChild(tr);
 
-        // Event: ändra kvantitet
+        // Event: kvantitet
         const qtyInput = tr.querySelector(".quantity");
         qtyInput.addEventListener("input", () => updateRow(tr));
 
@@ -535,13 +564,22 @@
           updateSummary();
         });
 
-        // Om block -> lyssna på ändring av blockStorageInput och toggle
-        if (selectedStorage === "block") {
-          const blockInput = tr.querySelector(".blockStorageInput");
-          const storageToggle = tr.querySelector(".storageToggle");
-          blockInput.addEventListener("input", () => updateRow(tr));
-          storageToggle.addEventListener("change", () => updateRow(tr));
+        // Boot-lagring (b2) om block
+        const bootInput = tr.querySelector(".bootInput");
+        if (bootInput) {
+          bootInput.addEventListener("input", () => updateRow(tr));
         }
+
+        // Extra-lagring
+        const extraInput = tr.querySelector(".extraInput");
+        extraInput.addEventListener("input", () => updateRow(tr));
+
+        // Switch
+        const toggle = tr.querySelector(".storageToggle");
+        toggle.addEventListener("change", () => updateRow(tr));
+
+        // init
+        updateRow(tr);
       }
       updateSummary();
     };
@@ -551,29 +589,38 @@
       const qty = parseInt(row.querySelector(".quantity").value) || 0;
       const flavorId = row.getAttribute("data-id");
       const storageType = row.getAttribute("data-storage");
-      // Hämta flavor-data
-      const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
 
-      // Visar i tabellen CPU, RAM, disk enbart för 1 instans
+      // Hämta flavor
+      const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours)
+        .find(f => f.id === flavorId);
+
+      // CPU, RAM = en instans
       row.querySelector(".rowCpu").textContent = flavor.cpu;
       row.querySelector(".rowRam").textContent = flavor.ram;
 
-      // Beräkna pris/instans
-      let singleInstanceCost = flavor.price; // baserat på CPU+RAM
-      if (storageType === "nvme") {
-        // NVMe: disk är redan inräknat i flavor.price
-      } else {
-        // block-lagring: användaren anger storlek + togglar fast/large
-        const blockInput = row.querySelector(".blockStorageInput");
-        const storageToggle = row.querySelector(".storageToggle");
-        const blockSize = parseInt(blockInput.value) || 0;
-        const isLarge = storageToggle.checked; 
-        const costPerGB = isLarge ? PRICE_LARGE : PRICE_FAST;
-        singleInstanceCost += (blockSize * costPerGB); 
-      }
-      row.querySelector(".rowPrice").textContent = singleInstanceCost.toLocaleString("sv-SE") + " SEK";
+      // Pris per instans
+      let singlePrice = flavor.basePrice;  // CPU + RAM (+NVMe om L2)
 
-      // Summering av allt i tabellen
+      // Boot-lagring
+      if (storageType === "block") {
+        const bootEl = row.querySelector(".bootInput");
+        const bootSize = parseInt(bootEl.value) || 0;
+        // Boot-lagring = always fast (3.60 kr/GB) i B2
+        singlePrice += bootSize * PRICE_FAST;
+      }
+
+      // Extra-lagring
+      const extraEl = row.querySelector(".extraInput");
+      const extraSize = parseInt(extraEl.value) || 0;
+      const toggle = row.querySelector(".storageToggle");
+      const isLarge = toggle.checked; // true => "large"
+      const costPerGB = isLarge ? PRICE_LARGE : PRICE_FAST;
+      singlePrice += extraSize * costPerGB;
+
+      // Skriv ut i "Pris/instans"
+      row.querySelector(".rowPrice").textContent = singlePrice.toLocaleString("sv-SE") + " SEK";
+
+      // uppdatera totalsummering
       updateSummary();
     }
 
@@ -585,38 +632,45 @@
       rows.forEach(row => {
         const qty = parseInt(row.querySelector(".quantity").value) || 0;
         const flavorId = row.getAttribute("data-id");
-        const rowStorage = row.getAttribute("data-storage");
-        const flavor = (rowStorage === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
+        const storageType = row.getAttribute("data-storage");
+        const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours)
+          .find(f => f.id === flavorId);
 
-        // CPU & RAM summeras = flavor.cpu * quantity, flavor.ram * quantity
+        // CPU & RAM
         totalCpu += flavor.cpu * qty;
         totalRam += flavor.ram * qty;
 
         // Disk
-        if (rowStorage === "nvme") {
+        if (storageType === "nvme") {
+          // boot-lagring = flavor.disk
           totalDisk += flavor.disk * qty;
         } else {
-          const blockInput = row.querySelector(".blockStorageInput");
-          if (blockInput) {
-            totalDisk += (parseInt(blockInput.value) || 0) * qty;
+          // boot-lagring
+          const bootEl = row.querySelector(".bootInput");
+          if (bootEl) {
+            totalDisk += (parseInt(bootEl.value) || 0) * qty;
           }
         }
+        // extra-lagring
+        const extraEl = row.querySelector(".extraInput");
+        if (extraEl) {
+          totalDisk += (parseInt(extraEl.value) || 0) * qty;
+        }
 
-        // Pris
+        // radens "Pris/instans"
         const rowPriceText = row.querySelector(".rowPrice").textContent.replace(" SEK", "").replace(/\s/g, '');
-        const singleInstanceCost = parseFloat(rowPriceText) || 0; 
+        const singleInstanceCost = parseFloat(rowPriceText) || 0;
         const rowCost = singleInstanceCost * qty;
         totalCost += rowCost;
       });
 
-      // Uppdatera summary
       totalCpuEl.textContent = totalCpu;
       totalRamEl.textContent = totalRam;
       totalDiskEl.textContent = totalDisk + " GB";
       totalCostEl.textContent = totalCost.toLocaleString("sv-SE");
     }
 
-    // Initiera första rendering
+    // init
     renderFlavors();
   </script>
 </body>
