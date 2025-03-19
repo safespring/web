@@ -554,42 +554,26 @@
       // Hämta flavor-data
       const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
 
-      let rowCpu = qty * flavor.cpu;
-      let rowRam = qty * flavor.ram;
-      let rowDiskText = "";
-      let rowCost = 0;
+      // Visar i tabellen CPU, RAM, disk enbart för 1 instans
+      row.querySelector(".rowCpu").textContent = flavor.cpu;
+      row.querySelector(".rowRam").textContent = flavor.ram;
 
-      // Bas-kostnad för flavor (CPU+RAM) – multiplicerat med antal
-      const baseCost = qty * flavor.price;
-
+      // Beräkna pris/instans
+      let singleInstanceCost = flavor.price; // baserat på CPU+RAM
       if (storageType === "nvme") {
-        // NVMe: disk är redan i flavor
-        rowDiskText = (qty * flavor.disk) + " GB";
-        rowCost = baseCost; // Ingen extra kostnad för disk
+        // NVMe: disk är redan inräknat i flavor.price
       } else {
-        // Block: användaren anger disk + "fast" eller "large"
+        // block-lagring: användaren anger storlek + togglar fast/large
         const blockInput = row.querySelector(".blockStorageInput");
         const storageToggle = row.querySelector(".storageToggle");
         const blockSize = parseInt(blockInput.value) || 0;
-
-        // Om togglen är ikryssad -> "large" = 1.20 kr/GB
-        // Om togglen inte är ikryssad -> "fast" = 3.60 kr/GB
-        const isLarge = storageToggle.checked;
+        const isLarge = storageToggle.checked; 
         const costPerGB = isLarge ? PRICE_LARGE : PRICE_FAST;
-        // Lagringstext i tabellen
-        rowDiskText = blockSize + " GB";
-
-        // Totalkostnad = baseCost + ( blockSize * costPerGB * antal )
-        const blockStorageCost = blockSize * costPerGB * qty;
-        rowCost = baseCost + blockStorageCost;
+        singleInstanceCost += (blockSize * costPerGB); 
       }
+      row.querySelector(".rowPrice").textContent = singleInstanceCost.toLocaleString("sv-SE") + " SEK";
 
-      // Uppdatera celler
-      row.querySelector(".rowCpu").textContent = rowCpu;
-      row.querySelector(".rowRam").textContent = rowRam;
-      row.querySelector(".rowDisk").textContent = rowDiskText;
-      row.querySelector(".rowPrice").textContent = rowCost.toLocaleString("sv-SE") + " SEK";
-
+      // Summering av allt i tabellen
       updateSummary();
     }
 
@@ -604,25 +588,25 @@
         const rowStorage = row.getAttribute("data-storage");
         const flavor = (rowStorage === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
 
-        // CPU & RAM
-        totalCpu += qty * flavor.cpu;
-        totalRam += qty * flavor.ram;
-
-        // Hämta radens kostnad
-        const rowPriceText = row.querySelector(".rowPrice").textContent.replace(" SEK", "").replace(/\s/g, '');
-        const rowPrice = parseInt(rowPriceText) || 0;
-        totalCost += rowPrice;
+        // CPU & RAM summeras = flavor.cpu * quantity, flavor.ram * quantity
+        totalCpu += flavor.cpu * qty;
+        totalRam += flavor.ram * qty;
 
         // Disk
         if (rowStorage === "nvme") {
-          totalDisk += qty * flavor.disk;
+          totalDisk += flavor.disk * qty;
         } else {
-          // B2-flavor – hämta blockstorlek
           const blockInput = row.querySelector(".blockStorageInput");
           if (blockInput) {
-            totalDisk += qty * (parseInt(blockInput.value) || 0);
+            totalDisk += (parseInt(blockInput.value) || 0) * qty;
           }
         }
+
+        // Pris
+        const rowPriceText = row.querySelector(".rowPrice").textContent.replace(" SEK", "").replace(/\s/g, '');
+        const singleInstanceCost = parseFloat(rowPriceText) || 0; 
+        const rowCost = singleInstanceCost * qty;
+        totalCost += rowCost;
       });
 
       // Uppdatera summary
