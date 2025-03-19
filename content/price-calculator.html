@@ -62,7 +62,7 @@
       border-radius: 8px;
       padding: 10px 20px;
       background: #fff;
-      min-width: 90px; 
+      min-width: 90px;
       text-align: center;
     }
     .filter-box label {
@@ -76,7 +76,7 @@
       outline: none;
       text-align: center;
       font-size: 1.2rem;
-      width: 60px; 
+      width: 60px;
       color: #333;
     }
     .filter-box input::placeholder {
@@ -85,7 +85,7 @@
     .filter-box input:focus {
       outline: none;
     }
-    /* Toggle-knappar för NVMe vs Block */
+    /* Toggle-knappar för NVMe / Block */
     .toggle-container {
       display: flex;
       gap: 10px;
@@ -195,6 +195,42 @@
       cursor: pointer;
       padding: 4px 8px;
       font-size: 0.8rem;
+    }
+    /* Switch-knapp för "fast" vs "large" */
+    .storage-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      margin-left: 5px;
+    }
+    .storage-switch input[type="checkbox"] {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      -webkit-appearance: none;
+      background: #ccc;
+      outline: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .storage-switch input[type="checkbox"]::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      top: 1px;
+      left: 1px;
+      background: #fff;
+      transition: transform 0.3s ease;
+    }
+    .storage-switch input[type="checkbox"]:checked {
+      background: #007acc;
+    }
+    .storage-switch input[type="checkbox"]:checked::after {
+      transform: translateX(20px);
     }
     /* Sammanfattning – Bento-box layout */
     .bento-grid {
@@ -319,7 +355,12 @@
   </div>
 
   <script>
-    // Data: NVMe (Local Storage) & Block (Central Blocklagring)
+    /****************************************************
+     * DATA: NVMe (Local Storage) & Block (Central Blocklagring)
+     * Priser för blocklagring:
+     * - "fast" (SSD) = 3.60 kr/GB
+     * - "large" (HDD) = 1.20 kr/GB
+     ****************************************************/
     const nvmeFlavours = [
       { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
       { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, price: 880 },
@@ -348,6 +389,10 @@
       { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
       { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
     ];
+
+    // Kostnader per GB för block-lagring
+    const PRICE_FAST = 3.60;   // VOLUME-fast
+    const PRICE_LARGE = 1.20;  // VOLUME-large
 
     // Vald lagringstyp (NVMe eller block)
     let selectedStorage = "nvme";
@@ -399,8 +444,8 @@
       const minDisk = parseInt(diskFilterEl.value) || 0;
 
       // Filtrera baserat på CPU >= minCpu, RAM >= minRam, DISK >= minDisk
-      // (För block-lagring är disk = 0, så endast minDisk = 0 matchar, om man vill att block ska synas oavsett diskkrav
-      //  kan man anpassa logiken, men här kör vi >= minDisk)
+      // (För block-lagring disk = 0, så om minDisk > 0 kommer b2-flavors normalt inte matcha,
+      //  men du kan justera logiken om du vill tillåta block-lagring för valfritt disk-krav.)
       const filtered = flavorsToCheck.filter(f => 
         f.cpu >= minCpu &&
         f.ram >= minRam &&
@@ -415,9 +460,10 @@
       filtered.forEach(flavor => {
         const card = document.createElement("div");
         card.className = "flavor-card";
+        // Om NVMe: disk-siffra. Om block: "Central Blocklagring"
         const storageText = (selectedStorage === "nvme")
           ? `${flavor.disk} GB disk`
-          : "Central Blocklagring";
+          : "Valfri blockvolym";
         card.innerHTML = `
           <h3>${flavor.name}</h3>
           <p>${flavor.cpu} vCPU, ${flavor.ram} GB RAM, ${storageText}</p>
@@ -439,6 +485,7 @@
         row.getAttribute("data-storage") === selectedStorage
       );
       if (existingRow) {
+        // Öka antal med 1
         const qtyInput = existingRow.querySelector(".quantity");
         qtyInput.value = parseInt(qtyInput.value) + 1;
         updateRow(existingRow);
@@ -446,6 +493,26 @@
         const tr = document.createElement("tr");
         tr.setAttribute("data-id", flavor.id);
         tr.setAttribute("data-storage", selectedStorage);
+        
+        // Om NVMe -> visa disk som text
+        // Om block -> användaren kan skriva in storlek + välja "fast" / "large"
+        let storageCellContent = "";
+        if (selectedStorage === "nvme") {
+          storageCellContent = `${flavor.disk} GB`;
+        } else {
+          // Standard = 50 GB "fast"
+          storageCellContent = `
+            <div>
+              <input type="number" class="blockStorageInput" value="50" min="0" style="width:60px;">
+              <div class="storage-switch">
+                <span>Fast</span>
+                <input type="checkbox" class="storageToggle" />
+                <span>Large</span>
+              </div>
+            </div>
+          `;
+        }
+
         tr.innerHTML = `
           <td>${flavor.name}</td>
           <td>
@@ -453,21 +520,30 @@
           </td>
           <td class="rowCpu">${flavor.cpu}</td>
           <td class="rowRam">${flavor.ram}</td>
-          <td class="rowDisk">${selectedStorage === "nvme" ? flavor.disk + " GB" : "Central Blocklagring"}</td>
+          <td class="rowDisk">${storageCellContent}</td>
           <td class="rowPrice">${flavor.price.toLocaleString("sv-SE")} SEK</td>
           <td><button class="deleteRow"><i class="fa-solid fa-trash"></i></button></td>
         `;
+
         orderRows.appendChild(tr);
 
         // Event: ändra kvantitet
         const qtyInput = tr.querySelector(".quantity");
         qtyInput.addEventListener("input", () => updateRow(tr));
-        
+
         // Event: ta bort rad
         tr.querySelector(".deleteRow").addEventListener("click", () => {
           tr.remove();
           updateSummary();
         });
+
+        // Om block -> lyssna på ändring av blockStorageInput och toggle
+        if (selectedStorage === "block") {
+          const blockInput = tr.querySelector(".blockStorageInput");
+          const storageToggle = tr.querySelector(".storageToggle");
+          blockInput.addEventListener("input", () => updateRow(tr));
+          storageToggle.addEventListener("change", () => updateRow(tr));
+        }
       }
       updateSummary();
     };
@@ -477,15 +553,45 @@
       const qty = parseInt(row.querySelector(".quantity").value) || 0;
       const flavorId = row.getAttribute("data-id");
       const storageType = row.getAttribute("data-storage");
+      // Hämta flavor-data
       const flavor = (storageType === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
-      row.querySelector(".rowCpu").textContent = qty * flavor.cpu;
-      row.querySelector(".rowRam").textContent = qty * flavor.ram;
-      row.querySelector(".rowDisk").textContent = 
-        (storageType === "nvme") 
-          ? (qty * flavor.disk) + " GB" 
-          : "Central Blocklagring";
-      row.querySelector(".rowPrice").textContent = 
-        (qty * flavor.price).toLocaleString("sv-SE") + " SEK";
+
+      let rowCpu = qty * flavor.cpu;
+      let rowRam = qty * flavor.ram;
+      let rowDiskText = "";
+      let rowCost = 0;
+
+      // Bas-kostnad för flavor (CPU+RAM) – multiplicerat med antal
+      const baseCost = qty * flavor.price;
+
+      if (storageType === "nvme") {
+        // NVMe: disk är redan i flavor
+        rowDiskText = (qty * flavor.disk) + " GB";
+        rowCost = baseCost; // Ingen extra kostnad
+      } else {
+        // Block: användaren anger disk + "fast" eller "large"
+        const blockInput = row.querySelector(".blockStorageInput");
+        const storageToggle = row.querySelector(".storageToggle");
+        const blockSize = parseInt(blockInput.value) || 0;
+
+        // Om togglen är ikryssad -> "large" = 1.20 kr/GB
+        // Om togglen inte är ikryssad -> "fast" = 3.60 kr/GB
+        const isLarge = storageToggle.checked;
+        const costPerGB = isLarge ? PRICE_LARGE : PRICE_FAST;
+        // Lagringstext i tabellen
+        rowDiskText = blockSize + " GB";
+
+        // Totalkostnad = baseCost + ( blockSize * costPerGB * antal )
+        const blockStorageCost = blockSize * costPerGB * qty;
+        rowCost = baseCost + blockStorageCost;
+      }
+
+      // Uppdatera celler
+      row.querySelector(".rowCpu").textContent = rowCpu;
+      row.querySelector(".rowRam").textContent = rowRam;
+      row.querySelector(".rowDisk").textContent = rowDiskText;
+      row.querySelector(".rowPrice").textContent = rowCost.toLocaleString("sv-SE") + " SEK";
+
       updateSummary();
     }
 
@@ -493,29 +599,42 @@
     function updateSummary() {
       let totalCpu = 0, totalRam = 0, totalDisk = 0, totalCost = 0;
       const rows = Array.from(orderRows.children);
+
       rows.forEach(row => {
         const qty = parseInt(row.querySelector(".quantity").value) || 0;
         const flavorId = row.getAttribute("data-id");
         const rowStorage = row.getAttribute("data-storage");
         const flavor = (rowStorage === "nvme" ? nvmeFlavours : blockFlavours).find(f => f.id === flavorId);
+
+        // CPU & RAM
         totalCpu += qty * flavor.cpu;
         totalRam += qty * flavor.ram;
+
+        // Pris
+        const rowPriceText = row.querySelector(".rowPrice").textContent.replace(" SEK", "").replace(/\s/g, '');
+        const rowPrice = parseInt(rowPriceText) || 0;
+        totalCost += rowPrice;
+
+        // Disk
         if (rowStorage === "nvme") {
           totalDisk += qty * flavor.disk;
+        } else {
+          // B2-flavor – hämta blockstorlek
+          const blockInput = row.querySelector(".blockStorageInput");
+          if (blockInput) {
+            totalDisk += qty * (parseInt(blockInput.value) || 0);
+          }
         }
-        totalCost += qty * flavor.price;
       });
+
+      // Uppdatera summary
       totalCpuEl.textContent = totalCpu;
       totalRamEl.textContent = totalRam;
-      // Om ALLA rader är block, totalDisk blir 0 => "Central Blocklagring"?
-      // Här visar vi "XX GB" om det finns NVMe i ordern, annars "Central Blocklagring" om det enbart är block.
-      // Men i en blandad order kan man göra en anpassning. Vi kör enkel logik:
-      const hasNVMe = rows.some(r => r.getAttribute("data-storage") === "nvme");
-      if (!hasNVMe && rows.length > 0) {
-        totalDiskEl.textContent = "Central Blocklagring";
-      } else {
-        totalDiskEl.textContent = totalDisk + " GB";
-      }
+
+      // Om ALLA rader är block, totalDisk > 0 men är "block"? 
+      // Här visar vi bara summan av "GB" för block. Du kan anpassa logik om du vill skilja dem åt.
+      totalDiskEl.textContent = totalDisk + " GB";
+
       totalCostEl.textContent = totalCost.toLocaleString("sv-SE");
     }
 
