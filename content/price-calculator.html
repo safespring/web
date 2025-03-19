@@ -340,8 +340,6 @@
 </head>
 <body>
   <div class="container">
-    <h1>Bygg din inkorg</h1>
-
     <!-- Filter + toggle-lagring -->
     <div class="filter-container">
       <!-- Filterboxar för CPU, RAM, STORAGE -->
@@ -362,7 +360,7 @@
       <!-- Toggle-knappar för NVMe / Block -->
       <div class="toggle-container">
         <button id="toggleNVME" class="active">Local Storage (NVMe)</button>
-        <button id="toggleBlock">Central Blocklagring</button>
+        <button id="toggleBlock">Central Blockstorage</button>
       </div>
     </div>
 
@@ -374,19 +372,19 @@
     </div>
 
     <!-- Inkorg -->
-    <h2>Din inkorg</h2>
+    <h2> </h2>
     <table id="orderTable">
       <thead>
         <tr>
           <th>Flavor</th>
-          <th>Antal</th>
+          <th>No.</th>
           <th>CPU</th>
           <th>RAM</th>
-          <th>Lagring GB Boot</th>
-          <th>Lagring GB Extra</th>
+          <th>Storage GB Boot</th>
+          <th>Storage GB Extra</th>
           <th>Fast / Large</th>
-          <th>Pris/instans</th>
-          <th>Ta bort</th>
+          <th>Price/instance</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody id="orderRows"></tbody>
@@ -397,7 +395,7 @@
       <div class="bento-box">
         <i class="fa-solid fa-microchip"></i>
         <span id="totalCpu">0</span>
-        <small>kärnor</small>
+        <small>cors</small>
       </div>
       <div class="bento-box">
         <i class="fa-solid fa-memory"></i>
@@ -407,7 +405,7 @@
       <div class="bento-box">
         <i class="fa-solid fa-hard-drive"></i>
         <span id="totalDisk">0</span>
-        <small>Lagring</small>
+        <small>Storage</small>
       </div>
       <div class="bento-box">
         <i class="fa-solid fa-dollar-sign"></i>
