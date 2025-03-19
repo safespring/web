@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safespring – Paket med kombination av flavors</title>
+  <!-- Länkar till Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Länka till Font Awesome för ikoner -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-2yEmk2w8kVWD3su2tJTXG+VwVXuTRI3WSrQJic+VQkDwCjmwBgF82ZC3AV5W46i0YWFNfXrPE3J7NDQKQ5C1hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Grundläggande reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Använd Montserrat för brödtext */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+      color: #333;
+    }
+    /* Använd Hind för rubriker */
+    h1, h2, h3 {
+      font-family: 'Hind', sans-serif;
+      font-weight: 300;
+      color: #00509e;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    /* Om fetstil krävs, använd semibold (600) */
+    strong, .semibold {
+      font-weight: 600;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .step {
+      display: none;
+    }
+    .step.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00509e;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background: #003f7f;
+    }
+    /* Dashboard styling */
+    .dashboard {
+      margin-top: 20px;
+    }
+    .card {
+      background: #e9f5ff;
+      border: 1px solid #b3d7ff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    /* Bento-box layout */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .bento-box {
+      background: #fff;
+      border: 1px solid #cce0ff;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+    .bento-box i {
+      font-size: 1.5rem;
+      color: #007acc;
+      margin-bottom: 5px;
+    }
+    .bento-box span {
+      display: block;
+      font-weight: 600;
+      color: #00509e;
+    }
+    .bento-box small {
+      display: block;
+      font-size: 0.8rem;
+      color: #555;
+    }
+    .disclaimer {
+      font-size: 0.85rem;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      input[type="number"] {
+        font-size: 0.9rem;
+      }
+      .bento-box i {
+        font-size: 1.3rem;
+      }
+      h1, h2, h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Skapa ditt paket</h1>
+    <!-- Steg 1: Ange din totala miljö -->
+    <div id="step1" class="step active">
+      <div class="form-group">
+        <label for="totalCpu">Total CPU (antal kärnor):</label>
+        <input type="number" id="totalCpu" min="0" value="0">
+      </div>
+      <div class="form-group">
+        <label for="totalRam">Total RAM (GB):</label>
+        <input type="number" id="totalRam" min="0" value="0">
+      </div>
+      <div class="form-group">
+        <label for="totalDisk">Total lagring (GB):</label>
+        <input type="number" id="totalDisk" min="0" value="0">
+      </div>
+      <button class="btn" id="nextButton">Visa paketrekommendation</button>
+    </div>
+    
+    <!-- Steg 2: Visa paketet som en dashboard med kombinerade flavors -->
+    <div id="step2" class="step">
+      <h2>Ditt rekommenderade paket</h2>
+      <div class="dashboard" id="dashboard">
+        <!-- Paketet visas här -->
+      </div>
+      <div class="disclaimer">
+        Observera: Rekommendationen är en ungefärlig matchning med en kombination av flavors.
+      </div>
+      <button class="btn" id="backButton">Gå tillbaka</button>
+    </div>
+  </div>
+
+  <script>
+    // Data för Safespring Compute-flavors
+    const nvmeFlavours = [
+      { id: 'FLAVOR-l2-c2r4-100', name: 'FLAVOR-l2. c2 r4. 100', cpu: 2, ram: 4, disk: 100, price: 480 },
+      { id: 'FLAVOR-l2-c2r4-500', name: 'FLAVOR-l2. c2 r4. 500', cpu: 2, ram: 4, disk: 500, price: 880 },
+      { id: 'FLAVOR-l2-c2r4-1000', name: 'FLAVOR-l2. c2 r4. 1000', cpu: 2, ram: 4, disk: 1000, price: 1380 },
+      { id: 'FLAVOR-l2-c4r8-100', name: 'FLAVOR-l2. c4 r8. 100', cpu: 4, ram: 8, disk: 100, price: 860 },
+      { id: 'FLAVOR-l2-c4r8-500', name: 'FLAVOR-l2. c4 r8. 500', cpu: 4, ram: 8, disk: 500, price: 1260 },
+      { id: 'FLAVOR-l2-c4r8-1000', name: 'FLAVOR-l2. c4 r8. 1000', cpu: 4, ram: 8, disk: 1000, price: 1760 },
+      { id: 'FLAVOR-l2-c8r16-100', name: 'FLAVOR-l2. c8 r16. 100', cpu: 8, ram: 16, disk: 100, price: 1620 },
+      { id: 'FLAVOR-l2-c8r16-500', name: 'FLAVOR-l2. c8 r16. 500', cpu: 8, ram: 16, disk: 500, price: 2020 },
+      { id: 'FLAVOR-l2-c8r16-1000', name: 'FLAVOR-l2. c8 r16. 1000', cpu: 8, ram: 16, disk: 1000, price: 2520 },
+      { id: 'FLAVOR-l2-c16r32-100', name: 'FLAVOR-l2. c16 r32. 100', cpu: 16, ram: 32, disk: 100, price: 3140 },
+      { id: 'FLAVOR-l2-c16r32-500', name: 'FLAVOR-l2. c16 r32. 500', cpu: 16, ram: 32, disk: 500, price: 3540 },
+      { id: 'FLAVOR-l2-c16r32-1000', name: 'FLAVOR-l2. c16 r32. 1000', cpu: 16, ram: 32, disk: 1000, price: 4040 },
+      { id: 'FLAVOR-l2-c16r64-500', name: 'FLAVOR-l2. c16 r64. 500', cpu: 16, ram: 64, disk: 500, price: 5300 },
+      { id: 'FLAVOR-l2-c32r64-1000', name: 'FLAVOR-l2. c32 r64.1000', cpu: 32, ram: 64, disk: 1000, price: 7080 }
+    ];
+    const noDiskFlavours = [
+      { id: 'FLAVOR-b2-c1r2', name: 'FLAVOR-b2. c1 r2', cpu: 1, ram: 2, disk: 0, price: 190 },
+      { id: 'FLAVOR-b2-c1r4', name: 'FLAVOR-b2. c1 r4', cpu: 1, ram: 4, disk: 0, price: 300 },
+      { id: 'FLAVOR-b2-c2r4', name: 'FLAVOR-b2. c2 r4', cpu: 2, ram: 4, disk: 0, price: 380 },
+      { id: 'FLAVOR-b2-c2r8', name: 'FLAVOR-b2. c2 r8', cpu: 2, ram: 8, disk: 0, price: 600 },
+      { id: 'FLAVOR-b2-c4r8', name: 'FLAVOR-b2. c4 r8', cpu: 4, ram: 8, disk: 0, price: 760 },
+      { id: 'FLAVOR-b2-c4r16', name: 'FLAVOR-b2. c4 r16', cpu: 4, ram: 16, disk: 0, price: 1200 },
+      { id: 'FLAVOR-b2-c8r16', name: 'FLAVOR-b2. c8 r16', cpu: 8, ram: 16, disk: 0, price: 1520 },
+      { id: 'FLAVOR-b2-c8r32', name: 'FLAVOR-b2. c8 r32', cpu: 8, ram: 32, disk: 0, price: 2400 },
+      { id: 'FLAVOR-b2-c16r32', name: 'FLAVOR-b2. c16 r32', cpu: 16, ram: 32, disk: 0, price: 3040 },
+      { id: 'FLAVOR-b2-c16r64', name: 'FLAVOR-b2. c16 r64', cpu: 16, ram: 64, disk: 0, price: 4800 }
+    ];
+    // Vid positiv lagringskrav filtreras bort flavors utan lokal disk.
+    let validFlavours = [];
+    
+    // Navigering mellan steg
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const nextButton = document.getElementById("nextButton");
+    const backButton = document.getElementById("backButton");
+    const dashboard = document.getElementById("dashboard");
+    
+    nextButton.addEventListener("click", () => {
+      const totalCpu = parseInt(document.getElementById("totalCpu").value) || 0;
+      const totalRam = parseInt(document.getElementById("totalRam").value) || 0;
+      const totalDisk = parseInt(document.getElementById("totalDisk").value) || 0;
+      
+      validFlavours = totalDisk > 0 
+        ? nvmeFlavours 
+        : nvmeFlavours.concat(noDiskFlavours);
+      
+      // Hitta den bästa kombinationen av upp till två olika flavors
+      const maxCount = 20;
+      let bestCost = Infinity;
+      let bestCombo = null;
+      
+      for (let i = 0; i < validFlavours.length; i++) {
+        for (let j = i; j < validFlavours.length; j++) {
+          for (let a = 0; a <= maxCount; a++) {
+            for (let b = 0; b <= maxCount; b++) {
+              if (a + b === 0) continue;
+              const sumCpu = a * validFlavours[i].cpu + b * validFlavours[j].cpu;
+              const sumRam = a * validFlavours[i].ram + b * validFlavours[j].ram;
+              const sumDisk = a * validFlavours[i].disk + b * validFlavours[j].disk;
+              if (sumCpu >= totalCpu && sumRam >= totalRam && sumDisk >= totalDisk) {
+                const cost = a * validFlavours[i].price + b * validFlavours[j].price;
+                if (cost < bestCost) {
+                  bestCost = cost;
+                  bestCombo = {
+                    flavor1: validFlavours[i],
+                    flavor2: validFlavours[j],
+                    count1: a,
+                    count2: b,
+                    totalCpu: sumCpu,
+                    totalRam: sumRam,
+                    totalDisk: sumDisk,
+                    totalCost: cost
+                  };
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      let html = "";
+      if (bestCombo) {
+        html += `<div class="card">
+          <h3>Paketrekommendation</h3>`;
+        if (bestCombo.flavor1.id === bestCombo.flavor2.id) {
+          html += `<p><strong>Flavor:</strong> ${bestCombo.flavor1.name}</p>
+                   <p><strong>Antal instanser:</strong> ${bestCombo.count1 + bestCombo.count2}</p>`;
+        } else {
+          html += `<p><strong>Kombination:</strong></p>
+                   <p>${bestCombo.flavor1.name} × ${bestCombo.count1}</p>
+                   <p>${bestCombo.flavor2.name} × ${bestCombo.count2}</p>`;
+        }
+        // Bento-box layout med ikoner för CPU, RAM, Disk och kostnad
+        html += `<div class="bento-grid">
+                   <div class="bento-box">
+                     <i class="fa-solid fa-microchip"></i>
+                     <span>${bestCombo.totalCpu}</span>
+                     <small>kärnor</small>
+                   </div>
+                   <div class="bento-box">
+                     <i class="fa-solid fa-memory"></i>
+                     <span>${bestCombo.totalRam}</span>
+                     <small>GB RAM</small>
+                   </div>
+                   <div class="bento-box">
+                     <i class="fa-solid fa-hard-drive"></i>
+                     <span>${bestCombo.totalDisk}</span>
+                     <small>GB disk</small>
+                   </div>
+                   <div class="bento-box">
+                     <i class="fa-solid fa-dollar-sign"></i>
+                     <span>${bestCombo.totalCost.toLocaleString("sv-SE")}</span>
+                     <small>SEK/30 dagar</small>
+                   </div>
+                 </div>
+                </div>`;
+      } else {
+        html = `<p style="text-align:center;">Inga giltiga paket hittades – kontrollera dina värden.</p>`;
+      }
+      
+      dashboard.innerHTML = html;
+      step1.classList.remove("active");
+      step2.classList.add("active");
+    });
+    
+    backButton.addEventListener("click", () => {
+      step2.classList.remove("active");
+      step1.classList.add("active");
+    });
+  </script>
+</body>
+</html>
