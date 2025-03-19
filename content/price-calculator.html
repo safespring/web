@@ -444,8 +444,6 @@
       const minDisk = parseInt(diskFilterEl.value) || 0;
 
       // Filtrera baserat på CPU >= minCpu, RAM >= minRam, DISK >= minDisk
-      // (För block-lagring disk = 0, så om minDisk > 0 kommer b2-flavors normalt inte matcha,
-      //  men du kan justera logiken om du vill tillåta block-lagring för valfritt disk-krav.)
       const filtered = flavorsToCheck.filter(f => 
         f.cpu >= minCpu &&
         f.ram >= minRam &&
@@ -460,7 +458,7 @@
       filtered.forEach(flavor => {
         const card = document.createElement("div");
         card.className = "flavor-card";
-        // Om NVMe: disk-siffra. Om block: "Central Blocklagring"
+        // Om NVMe: disk-siffra. Om block: "Valfri blockvolym"
         const storageText = (selectedStorage === "nvme")
           ? `${flavor.disk} GB disk`
           : "Valfri blockvolym";
@@ -567,7 +565,7 @@
       if (storageType === "nvme") {
         // NVMe: disk är redan i flavor
         rowDiskText = (qty * flavor.disk) + " GB";
-        rowCost = baseCost; // Ingen extra kostnad
+        rowCost = baseCost; // Ingen extra kostnad för disk
       } else {
         // Block: användaren anger disk + "fast" eller "large"
         const blockInput = row.querySelector(".blockStorageInput");
@@ -610,7 +608,7 @@
         totalCpu += qty * flavor.cpu;
         totalRam += qty * flavor.ram;
 
-        // Pris
+        // Hämta radens kostnad
         const rowPriceText = row.querySelector(".rowPrice").textContent.replace(" SEK", "").replace(/\s/g, '');
         const rowPrice = parseInt(rowPriceText) || 0;
         totalCost += rowPrice;
@@ -630,11 +628,7 @@
       // Uppdatera summary
       totalCpuEl.textContent = totalCpu;
       totalRamEl.textContent = totalRam;
-
-      // Om ALLA rader är block, totalDisk > 0 men är "block"? 
-      // Här visar vi bara summan av "GB" för block. Du kan anpassa logik om du vill skilja dem åt.
       totalDiskEl.textContent = totalDisk + " GB";
-
       totalCostEl.textContent = totalCost.toLocaleString("sv-SE");
     }
 
