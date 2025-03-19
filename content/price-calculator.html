@@ -513,7 +513,7 @@ diskFilterEl.addEventListener("input", renderFlavors);
         // Om NVMe: disk-siffra. Om block: "Valfri blockvolym"
         const storageText = (selectedStorage === "nvme")
         ? `${flavor.disk} GB disk`
-        : "Valfri blockvolym";
+        : "Optional block storage";
         card.innerHTML = `
           <p>${flavor.name}</p>
           <div class="price-card-wrapper">
