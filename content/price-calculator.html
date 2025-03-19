@@ -474,11 +474,15 @@
           ? `${flavor.disk} GB disk`
           : "Valfri blockvolym";
         card.innerHTML = `
-          <h3>${flavor.name}</h3>
-          <p>${flavor.cpu} vCPU, ${flavor.ram} GB RAM, ${storageText}</p>
-          <p><strong>${flavor.basePrice.toLocaleString("sv-SE")} SEK</strong></p>
+          <p>${flavor.name}</p>
+          <div class="price-card-wrapper">
+            <div class="price-card-flavor">${flavor.cpu} vCPU</div>
+            <div class="price-card-ram">${flavor.ram} GB RAM</div>
+            <div class="price-card-storage">${storageText}</div>
+          </div>
+          <div class="price-card-price">${flavor.basePrice.toLocaleString("sv-SE")} SEK</div>
           <button onclick="addFlavorToOrder('${flavor.id}')">
-            <i class="fa-solid fa-plus"></i> Lägg till
+            <i class="fa-solid fa-plus"></i> Add flavor
           </button>
         `;
         flavorListEl.appendChild(card);
