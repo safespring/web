@@ -117,6 +117,7 @@
 
     /* Filtrera-knapp */
     .filter-button {
+      opacity: 0;
       display: block;
       margin: 0 auto;
       padding: 10px 25px;
@@ -129,6 +130,7 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       transition: background 0.3s ease;
+      opacity: 0;
     }
 
     .filter-button:hover {
@@ -360,11 +362,11 @@
       <!-- Toggle-knappar för NVMe / Block -->
       <div class="toggle-container">
         <button id="toggleNVME" class="active">Local Storage (NVMe)</button>
-        <button id="toggleBlock">Central Blockstorage</button>
+        <button id="toggleBlock">Central Block Storage</button>
       </div>
     </div>
 
-<button class="filter-button" id="filterButton">Filtrera</button>
+<button class="filter-button" id="filterButton">Filter</button>
 
     <!-- Lista med flavors -->
     <div class="flavor-list" id="flavorList">
