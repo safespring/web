@@ -611,7 +611,7 @@
           <td class="rowCpu">${cpu}</td>
           <td class="rowRam">${ram}</td>
           <td class="rowBoot">
-            ${(selectedStorage === "nvme" && parseInt(selectedDisk) > 0) ? `<span>${selectedDisk} GB</span>` : `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`}
+            ${selectedStorage === "nvme" ? `<span>${selectedDisk} GB</span>` : `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`}
           </td>
           <td class="rowExtra">
             <input type="number" class="extraInput" value="0" min="0" style="width:60px;">
