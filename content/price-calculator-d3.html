@@ -477,7 +477,14 @@
     <!-- Sidofält för valda flavors (ersätter tabellen) -->
 
     <!-- Sammanfattning -->
-    <div class="bento-grid" id="summary">
+  </div>
+<div class="container-sidebar">
+    <div class="order-sidebar" id="orderSidebar">
+      <h2>Your Selections</h2>
+      <div class="order-cards" id="orderCards">
+        <!-- Dynamiskt skapade "cards" för varje vald flavor -->
+      </div>
+          <div class="bento-grid" id="summary">
       <div class="bento-box">
         <i class="fa-solid fa-microchip"></i>
         <span id="totalCpu">0</span>
@@ -499,13 +506,6 @@
         <small>SEK per 30 days</small>
       </div>
     </div>
-  </div>
-<div class="container-sidebar">
-    <div class="order-sidebar" id="orderSidebar">
-      <h2>Your Selections</h2>
-      <div class="order-cards" id="orderCards">
-        <!-- Dynamiskt skapade "cards" för varje vald flavor -->
-      </div>
     </div>
   </div>
   <script>
