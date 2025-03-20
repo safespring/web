@@ -456,6 +456,8 @@
     const ramFilterEl = document.getElementById("ramFilter");
     const diskFilterEl = document.getElementById("diskFilter");
     const filterButton = document.getElementById("filterButton");
+    const toggleNVMEButton = document.getElementById("toggleNVME");
+    const toggleBlockButton = document.getElementById("toggleBlock");
     const flavorListEl = document.getElementById("flavorList");
     const orderRows = document.getElementById("orderRows");
     const totalCpuEl = document.getElementById("totalCpu");
@@ -623,8 +625,8 @@
           tr.remove();
           updateSummary();
         });
-        if (selectedStorage === "block") {
-          const bootInput = tr.querySelector(".bootInput");
+        const bootInput = tr.querySelector(".bootInput");
+        if (bootInput) {
           bootInput.addEventListener("input", () => updateRow(tr));
         }
         const extraInput = tr.querySelector(".extraInput");
@@ -643,8 +645,8 @@
       let singlePrice = basePrice;
 
       // För B2-flavors, lägg till boot storage-kostnad (alltid fast med PRICE_FAST)
-      if (selectedStorage === "block") {
-        const bootEl = row.querySelector(".bootInput");
+            const bootEl = row.querySelector(".bootInput");
+      if (bootEl) {
         const bootSize = parseInt(bootEl.value) || 0;
         singlePrice += bootSize * PRICE_FAST;
       }
