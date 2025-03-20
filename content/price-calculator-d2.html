@@ -604,14 +604,14 @@
         // Store the base price for one instance in a data attribute
         tr.setAttribute("data-basePrice", selectedPrice);
         tr.innerHTML = `
-          <td>${selectedStorage === "nvme" ? "L2 Flavor" : "B2 Flavor"}</td>
+          <td>${(selectedStorage === "nvme" && parseInt(selectedDisk) > 0) ? "L2 Flavor" : "B2 Flavor"}</td>
           <td>
             <input type="number" class="quantity" value="1" min="1" style="width:60px;">
           </td>
           <td class="rowCpu">${cpu}</td>
           <td class="rowRam">${ram}</td>
           <td class="rowBoot">
-            ${selectedStorage === "nvme" ? `<span>${selectedDisk} GB</span>` : `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`}
+            ${(selectedStorage === "nvme" && parseInt(selectedDisk) > 0) ? `<span>${selectedDisk} GB</span>` : `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`}
           </td>
           <td class="rowExtra">
             <input type="number" class="extraInput" value="0" min="0" style="width:60px;">
