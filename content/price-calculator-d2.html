@@ -379,10 +379,6 @@
           <input type="number" id="diskFilter" placeholder="100">
         </div>
       </div>
-      <div class="toggle-container">
-        <button id="toggleNVME" class="active">Local Storage (NVMe)</button>
-        <button id="toggleBlock">Central Block Storage</button>
-      </div>
     </div>
 
     <button class="filter-button" id="filterButton">Filter</button>
@@ -455,13 +451,11 @@
     const PRICE_LARGE = 1.20;
     let selectedStorage = "nvme";
 
-    // DOM references for filters and toggles
+    // DOM-referenser för filter och toggles
     const cpuFilterEl = document.getElementById("cpuFilter");
     const ramFilterEl = document.getElementById("ramFilter");
     const diskFilterEl = document.getElementById("diskFilter");
     const filterButton = document.getElementById("filterButton");
-    const toggleNVMEButton = document.getElementById("toggleNVME");
-    const toggleBlockButton = document.getElementById("toggleBlock");
     const flavorListEl = document.getElementById("flavorList");
     const orderRows = document.getElementById("orderRows");
     const totalCpuEl = document.getElementById("totalCpu");
@@ -469,25 +463,12 @@
     const totalDiskEl = document.getElementById("totalDisk");
     const totalCostEl = document.getElementById("totalCost");
 
-    toggleNVMEButton.addEventListener("click", () => {
-      selectedStorage = "nvme";
-      toggleNVMEButton.classList.add("active");
-      toggleBlockButton.classList.remove("active");
-      renderFlavors();
-    });
-    toggleBlockButton.addEventListener("click", () => {
-      selectedStorage = "block";
-      toggleBlockButton.classList.add("active");
-      toggleNVMEButton.classList.remove("active");
-      renderFlavors();
-    });
-
     cpuFilterEl.addEventListener("input", renderFlavors);
     ramFilterEl.addEventListener("input", renderFlavors);
     diskFilterEl.addEventListener("input", renderFlavors);
     filterButton.addEventListener("click", renderFlavors);
 
-    // Render flavors (grouped by CPU and RAM, sorted, with storage selector if multiple options)
+    // Rendera flavors (grupperade efter CPU och RAM, sorterade, med storage-selector om det finns flera alternativ)
     function renderFlavors() {
       const allFlavors = [...nvmeFlavours, ...blockFlavours];
       const minCpu = parseInt(cpuFilterEl.value) || 0;
@@ -519,11 +500,11 @@
           if (flavorGroup.length > 1) {
             storageSelectorHTML = `<select class="storage-selector">`;
             flavorGroup.forEach(flavor => {
-              storageSelectorHTML += `<option value="${flavor.basePrice}" data-disk="${flavor.disk}" data-name="${flavor.name}">${flavor.disk} GB</option>`;
+              storageSelectorHTML += `<option value="${flavor.basePrice}" data-disk="${flavor.disk}" data-name="${flavor.name}" data-id="${flavor.id}">${flavor.disk} GB</option>`;
             });
             storageSelectorHTML += `</select>`;
           } else {
-            storageSelectorHTML = `<p class="fixed-storage">${flavorGroup[0].disk} GB</p>`;
+            storageSelectorHTML = `<p class="fixed-storage" data-id="${flavorGroup[0].id}">${flavorGroup[0].disk} GB</p>`;
           }
 
           card.innerHTML = `
@@ -539,7 +520,7 @@
               </div>
             </div>
             ${storageSelectorHTML}
-            <span class="flavor-text-storage">LOCAL STORAGE</span>
+            <span class="flavor-text-storage">${selectedStorage === "nvme" ? "LOCAL STORAGE" : "BLOCK STORAGE"}</span>
             <p class="flavor-price"><strong>${flavorGroup[0].basePrice.toLocaleString("sv-SE")} SEK</strong></p>
             <button class="flavor-card-button"><i class="fa-solid fa-plus"></i></button>
           `;
@@ -555,7 +536,7 @@
             });
           }
 
-          // Clicking the card (if not clicking an inner interactive element)
+          // Klick på kortet (om inte en inner interaktiv del klickas)
           card.addEventListener("click", function (e) {
             if (e.target.closest("select") || e.target.closest("button")) return;
             const selectedDisk = storageDropdown 
@@ -564,7 +545,10 @@
             const selectedPrice = storageDropdown 
               ? parseFloat(storageDropdown.value)
               : flavorGroup[0].basePrice;
-            addFlavorToOrder(cpu, ram, selectedDisk, selectedPrice);
+            const flavorId = storageDropdown 
+              ? storageDropdown.options[storageDropdown.selectedIndex].dataset.id
+              : flavorGroup[0].id;
+            addFlavorToOrder(cpu, ram, selectedDisk, selectedPrice, flavorId);
           });
 
           const addButton = card.querySelector(".flavor-card-button");
@@ -576,7 +560,10 @@
             const selectedPrice = storageDropdown 
               ? parseFloat(storageDropdown.value)
               : flavorGroup[0].basePrice;
-            addFlavorToOrder(cpu, ram, selectedDisk, selectedPrice);
+            const flavorId = storageDropdown 
+              ? storageDropdown.options[storageDropdown.selectedIndex].dataset.id
+              : flavorGroup[0].id;
+            addFlavorToOrder(cpu, ram, selectedDisk, selectedPrice, flavorId);
           });
 
           flavorListEl.appendChild(card);
@@ -584,13 +571,14 @@
       });
     }
 
-    // Add flavor to order table and store base price in data attribute
-    window.addFlavorToOrder = function(cpu, ram, selectedDisk, selectedPrice) {
-      // Check if a row already exists for the given configuration
+    // Lägg till flavor i ordertabellen och lagra base price i ett data-attribut
+    window.addFlavorToOrder = function(cpu, ram, selectedDisk, selectedPrice, flavorId) {
+      // Kolla om en rad redan finns för denna konfiguration med samma flavor-ID
       const existingRow = Array.from(orderRows.children).find(row =>
         row.getAttribute("data-cpu") === cpu.toString() &&
         row.getAttribute("data-ram") === ram.toString() &&
-        row.getAttribute("data-storage") === selectedDisk.toString()
+        row.getAttribute("data-storage") === selectedDisk.toString() &&
+        row.getAttribute("data-flavor-id") === flavorId
       );
       if (existingRow) {
         const qtyInput = existingRow.querySelector(".quantity");
@@ -601,17 +589,18 @@
         tr.setAttribute("data-cpu", cpu);
         tr.setAttribute("data-ram", ram);
         tr.setAttribute("data-storage", selectedDisk);
-        // Store the base price for one instance in a data attribute
+        tr.setAttribute("data-flavor-id", flavorId);
+        // Spara base price för en instans i ett data-attribut
         tr.setAttribute("data-basePrice", selectedPrice);
         tr.innerHTML = `
-          <td>${(selectedStorage === "nvme" && parseInt(selectedDisk) > 0) ? "L2 Flavor" : "B2 Flavor"}</td>
+          <td>${flavorId}</td>
           <td>
             <input type="number" class="quantity" value="1" min="1" style="width:60px;">
           </td>
           <td class="rowCpu">${cpu}</td>
           <td class="rowRam">${ram}</td>
           <td class="rowBoot">
-            ${selectedStorage === "nvme" ? `<span>${selectedDisk} GB</span>` : `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`}
+            ${(selectedStorage === "nvme" && parseInt(selectedDisk) > 0) ? `<span>${selectedDisk} GB</span>` : `<input type="number" class="bootInput" value="50" min="0" style="width:60px;">`}
           </td>
           <td class="rowExtra">
             <input type="number" class="extraInput" value="0" min="0" style="width:60px;">
@@ -647,19 +636,19 @@
       updateSummary();
     };
 
-    // Update the price per instance in the order row
+    // Uppdatera priset per instans i orderraden
     function updateRow(row) {
       const qty = parseInt(row.querySelector(".quantity").value) || 0;
       const basePrice = parseFloat(row.getAttribute("data-basePrice")) || 0;
       let singlePrice = basePrice;
 
-      // For B2 flavors, add boot storage cost (always fast at PRICE_FAST)
+      // För B2-flavors, lägg till boot storage-kostnad (alltid fast med PRICE_FAST)
       if (selectedStorage === "block") {
         const bootEl = row.querySelector(".bootInput");
         const bootSize = parseInt(bootEl.value) || 0;
         singlePrice += bootSize * PRICE_FAST;
       }
-      // Extra storage cost
+      // Extra storage-kostnad
       const extraEl = row.querySelector(".extraInput");
       const extraSize = parseInt(extraEl.value) || 0;
       const toggle = row.querySelector(".storageToggle");
@@ -667,13 +656,13 @@
       const costPerGB = isLarge ? PRICE_LARGE : PRICE_FAST;
       singlePrice += extraSize * costPerGB;
 
-      // Update the row price and store it for summary calculations
+      // Uppdatera raden med priset och spara för summering
       row.querySelector(".rowPrice").textContent = singlePrice.toLocaleString("sv-SE") + " SEK";
       row.setAttribute("data-singlePrice", singlePrice);
       updateSummary();
     }
 
-    // Sum totals from order table
+    // Summera totalsummor från ordertabellen
     function updateSummary() {
       let totalCpu = 0, totalRam = 0, totalDisk = 0, totalCost = 0;
       const rows = Array.from(orderRows.children);
