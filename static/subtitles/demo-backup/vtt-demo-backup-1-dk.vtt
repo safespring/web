@@ -4,18 +4,22 @@ WEBVTT
 Hej og velkommen!
 
 00:05.600 --> 00:08.700
-Mit navn er Gabriel Paues, og jeg arbejder hos Safespring, og i dag har jeg
+Mit navn er Gabriel Paues, og jeg 
+arbejder hos Safespring, og i dag har jeg
+
 00:08.700 --> 00:11.700
 jeg Christian Petersson fra IssTech
 00:11.933 --> 00:14.666
 og sammen leverer vi
 00:14.666 --> 00:17.766
-Safespring Backup som en af de tjenester, vi har i vores udbud.
+Safespring Backup som en af de 
+tjenester, vi har i vores udbud.
 
 00:18.566 --> 00:22.233
 Hvis du kort kan sige, hvordan adskiller sig
 00:22.233 --> 00:26.100
-Safespring Backup fra andre tjenester inden for backup-markedet?
+Safespring Backup fra andre tjenester 
+inden for backup-markedet?
 
 00:26.433 --> 00:29.366
 Ja, helt ærligt, Safesprings backup er
@@ -34,28 +38,38 @@ Det er jo Backup-som-tjeneste.
 00:47.366 --> 00:50.800
 Ja, præcis, og
 00:50.800 --> 00:56.366
-at kunden kan håndtere sine backups med hjælp fra eksperter
+at kunden kan håndtere sine 
+backups med hjælp fra eksperter
 00:56.366 --> 01:03.166
-fra både jer og os, med meget unikke muligheder, helt enkelt.
+fra både jer og os, med meget 
+unikke muligheder, helt enkelt.
 
 01:03.733 --> 01:07.266
-I hjælper os med spidskompetence og holder øje med backup-markedet.
+I hjælper os med spidskompetence 
+og holder øje med backup-markedet.
 01:07.333 --> 01:10.333
-Men hvis man taler lidt mere grundlæggende om, hvad backups er, så
+Men hvis man taler lidt mere 
+grundlæggende om, hvad backups er, så
 01:10.666 --> 01:15.600
-har vi 3-2-1-reglen for eksempel, som der tales så meget om i backup-sammenhænge.
+har vi 3-2-1-reglen for eksempel, 
+som der tales så meget om i backup-sammenhænge.
 01:16.166 --> 01:17.033
 Hvad var det for noget?
 01:17.033 --> 01:21.233
-Ja, præcis, hvis man ser på den her, har 3-2-1 jo eksisteret i mange,
+Ja, præcis, hvis man ser på den her, 
+har 3-2-1 jo eksisteret i mange,
 01:21.233 --> 01:25.000
-mange år, helt enkelt, inden for backup-verdenen, og de der har arbejdet med backups i
+mange år, helt enkelt, inden for 
+backup-verdenen, og de der har arbejdet med backups i
 01:26.066 --> 01:28.633
-20 år, så har det altid været med, helt enkelt.
+20 år, så har det altid 
+været med, helt enkelt.
 01:28.633 --> 01:33.466
-Hvad 3-2-1 står for, egentlig at det er tre kopier af dataen.
+Hvad 3-2-1 står for, egentlig 
+at det er tre kopier af dataen.
 01:34.133 --> 01:37.066
-Du har en kopi, som er det data, du arbejder med.
+Du har en kopi, som er det 
+data, du arbejder med.
 01:37.066 --> 01:39.433
 Der er to kopier i
 01:39.433 --> 01:42.166
@@ -67,13 +81,17 @@ så tæt på din produktion som muligt.
 01:50.433 --> 01:52.433
 for at kunne håndtere hurtige restore:er
 01:52.433 --> 01:54.766
-og derefter en, der skal ligge off-site, helt enkelt.
+og derefter en, der skal 
+ligge off-site, helt enkelt.
 01:54.766 --> 01:58.700
-Og den der sidste, den skal ligge udenfor huset.
+Og den der sidste, den skal 
+ligge udenfor huset.
 01:58.700 --> 02:02.700
-Så har jo visse leverandører lagt til tal på dette også,
+Så har jo visse leverandører 
+lagt til tal på dette også,
 02:03.200 --> 02:06.933
-som for eksempel yderligere en for at det skal være offline, så
+som for eksempel yderligere 
+en for at det skal være offline, så
 02:06.966 --> 02:10.000
 at du ikke kan modificere backupen,
 02:10.866 --> 02:14.500
@@ -83,11 +101,13 @@ error-frie backups med nul error.
 02:19.500 --> 02:21.200
 Det har man
 02:21.200 --> 02:24.933
-taget for givet engang i tiden, men så har traditionelle bånd og osv.
+taget for givet engang i tiden, 
+men så har traditionelle bånd og osv.
 02:24.933 --> 02:26.800
 måske haft skrivefejl.
 02:26.800 --> 02:29.033
-Derfor er der dukket et ekstra tal op her.
+Derfor er der dukket et 
+ekstra tal op her.
 02:31.666 --> 02:34.233
 On-site er i det primære datacenter
 02:34.233 --> 02:35.433
@@ -97,7 +117,8 @@ et helt andet datacenter.
 02:38.166 --> 02:41.166
 Det er egentlig det primære
 02:41.266 --> 02:45.400
-datacenter, hvor du arbejder med data, helt enkelt.
+datacenter, hvor du arbejder 
+med data, helt enkelt.
 02:45.766 --> 02:51.500
 Og i betragtning af, at nu har jo
 02:51.500 --> 02:52.533
@@ -107,7 +128,8 @@ netværk og internet de sidste 20 år.
 02:55.266 --> 02:58.266
 Helt enkelt.
 02:59.000 --> 03:03.500
-Og hastigheden mellem forskellige datacentre er ikke længere et problem.
+Og hastigheden mellem forskellige 
+datacentre er ikke længere et problem.
 03:07.333 --> 03:10.666
 Kunden kan jo ringe til jer
 03:11.466 --> 03:14.433
@@ -115,7 +137,8 @@ og sende data med samme hastighed
 03:14.433 --> 03:18.933
 mellem sit datacenter til jer
 03:18.933 --> 03:22.266
-og derfor bliver denne 3-2-1-regel måske en smule anderledes i dag.
+og derfor bliver denne 3-2-1-regel 
+måske en smule anderledes i dag.
 03:22.266 --> 03:25.766
 Så jeg kan snarere sige, at vi har 3-2-2.
 03:25.766 --> 03:30.000
@@ -141,15 +164,18 @@ til Safespring for eksempel.
 03:53.533 --> 03:54.766
 Hvilke rutiner har du.
 03:54.766 --> 03:59.100
-Skal du geninstallere noget, eller skal du gøre noget overhovedet, osv.
+Skal du geninstallere noget, eller 
+skal du gøre noget overhovedet, osv.
 03:59.900 --> 04:03.333
 RPO, som står for Recovery Point Objective,
 04:03.466 --> 04:06.966
 er, hvor ofte du tager backups.
 04:07.300 --> 04:11.933
-Og der kan det jo være, at du tager backup hver femte minut,
+Og der kan det jo være, at du 
+tager backup hver femte minut,
 04:11.933 --> 04:16.033
-en gang om dagen, en gang om ugen eller en gang om måneden.
+en gang om dagen, en gang om 
+ugen eller en gang om måneden.
 04:16.033 --> 04:19.033
 Hvor ofte du egentlig tager en
 04:19.266 --> 04:22.066
@@ -163,13 +189,17 @@ dages data kan du forestille dig at miste?
 04:30.766 --> 04:31.800
 Ja, præcis.
 04:31.800 --> 04:37.466
-Eller hvor meget data mellem hver backup-kopi kan du forestille dig at miste.
+Eller hvor meget data mellem 
+hver backup-kopi kan du forestille dig at miste.
 04:37.466 --> 04:40.466
-Data, der bevæger sig lidt, hvor man måske ikke har brug for en kæmpeaggressiv RPO?
+Data, der bevæger sig lidt, hvor man 
+måske ikke har brug for en kæmpeaggressiv RPO?
 04:40.900 --> 04:43.033
-Data, der bevæger sig så meget, så måske bliver det mere.
+Data, der bevæger sig så meget, 
+så måske bliver det mere.
 04:43.033 --> 04:48.533
-Præcis, og i visse tilfælde har du måske brug for det i realtid, du skal have nul RPO.
+Præcis, og i visse tilfælde har du måske 
+brug for det i realtid, du skal have nul RPO.
 04:48.533 --> 04:50.300
 Det betyder, at så snart der skrives en
 04:50.300 --> 04:53.700
@@ -177,7 +207,8 @@ Det betyder, at så snart der skrives en
 04:54.166 --> 04:59.033
 det direkte tilbage til backup-miljøet.
 04:59.033 --> 05:03.133
-En af alle de ekstra features med Safespring Backup er, at vi ikke har
+En af alle de ekstra features med 
+Safespring Backup er, at vi ikke har
 05:03.133 --> 05:03.766
 nogle egress-kostnader, egress
 er det data, der forlader vores tjeneste.
@@ -188,13 +219,15 @@ måske ubehagelige overraskelser, hvis
 05:11.900 --> 05:12.933
 det er sådan, at det koster at gendanne,
 05:12.933 --> 05:16.633
-hvor meget data der belastes og koster så meget, og det
+hvor meget data der belastes og 
+koster så meget, og det
 05:16.900 --> 05:17.833
 måske havde man ikke regnet med.
 05:17.833 --> 05:20.500
 Ofte, når man taler
 05:20.500 --> 05:23.700
-om tilsvarende eller lignende tjenester, som I har mod
+om tilsvarende eller lignende 
+tjenester, som I har mod
 05:23.700 --> 05:28.766
 andre globale aktører, så er det sådan, at de
 05:28.766 --> 05:32.333
@@ -204,7 +237,8 @@ De tager gerne imod din backup-data,
 05:36.000 --> 05:41.033
 men når de sender data ud,
 05:41.033 --> 05:42.800
-så kan der komme en ordentlig saftig regning.
+så kan der komme en ordentlig 
+saftig regning.
 05:42.800 --> 05:45.333
 Regningen findes slet ikke.
 05:45.333 --> 05:48.633
@@ -212,9 +246,11 @@ Så det betyder, at kunden virkelig kan
 05:49.300 --> 05:52.200
 restore data, så ofte de vil, helt enkelt.
 05:53.500 --> 05:54.633
-Det er en af jeres funktioner i dag, som netop er, at
+Det er en af jeres funktioner 
+i dag, som netop er, at
 05:54.633 --> 05:57.633
-vi sammen har sat op en automatiseret restore-test.
+vi sammen har sat op en automatiseret 
+restore-test.
 05:57.666 --> 06:00.466
 Så vi kan jo restore data og verificere
 06:00.466 --> 06:03.933
@@ -222,15 +258,20 @@ den her sidste nul, vi taler om,
 06:04.400 --> 06:07.766
 at den virkelig altid restore dataen,
 06:07.766 --> 06:12.166
-måske dagligt, ugentligt, månedligt eller hvad vi nu ønsker,
+måske dagligt, ugentligt, månedligt 
+eller hvad vi nu ønsker,
 06:12.166 --> 06:15.333
-og får rapporter, der siger, at hvis vi har restore'et
+og får rapporter, der siger, at 
+hvis vi har restore'et
 06:16.300 --> 06:20.600
-100 % af jeres data med nul error, helt enkelt, eller om vi har fundet error,
+100 % af jeres data med nul error, 
+helt enkelt, eller om vi har fundet error,
 06:21.100 --> 06:24.933
-så kan vi reparere det, inden en rigtig katastrofe indtræffer.
+så kan vi reparere det, inden en 
+rigtig katastrofe indtræffer.
 06:25.600 --> 06:28.400
-Men hvis det er store mængder data, kan man også gøre det på statistisk niveau.
+Men hvis det er store mængder data, kan 
+man også gøre det på statistisk niveau.
 06:28.400 --> 06:30.300
 At du restore 30 %.
 06:30.300 --> 06:31.600
@@ -250,17 +291,22 @@ Den er jo meget opdelt.
 06:44.866 --> 06:48.366
 Den er helt hierarkisk.
 06:48.366 --> 06:51.100
-Så du har en virksomhed, som har forskellige underafdelinger.
+Så du har en virksomhed, som har 
+forskellige underafdelinger.
 06:51.100 --> 06:52.733
 Hvordan kan man bruge dette?
 06:52.733 --> 06:57.300
-Dette er en funktion, som vi kalder multitenancy i vores verden.
+Dette er en funktion, som vi kalder 
+multitenancy i vores verden.
 06:57.300 --> 07:00.500
-Det betyder, at IT-afdelingen bærer omkostningerne for backups,
+Det betyder, at IT-afdelingen bærer 
+mkostningerne for backups,
 07:00.500 --> 07:03.500
-og derefter vil de fordele omkostningerne på forskellige divisioner, så at for eksempel
+og derefter vil de fordele omkostningerne 
+på forskellige divisioner, så at for eksempel
 07:03.666 --> 07:09.466
-marketing eller et universitet får en egen faktura kun for de backups, og en anden
+marketing eller et universitet får en 
+egen faktura kun for de backups, og en anden
 07:09.466 --> 07:15.133
 får en anden faktura for deres del.
 07:15.133 --> 07:19.000
@@ -268,23 +314,30 @@ Men derimod, så udnytter vi deduplicering
 07:19.000 --> 07:21.166
 for at reducere datamængderne.
 07:21.166 --> 07:25.033
-Deduplicering er, at hvis den data, du sender op,
+Deduplicering er, at hvis den data, 
+du sender op,
 07:25.033 --> 07:28.000
-allerede findes i tjenesten, så gemmes den ikke en gang til.
+allerede findes i tjenesten, så 
+gemmes den ikke en gang til.
 07:28.000 --> 07:31.500
-Vi tager et eksempel: operativsystemet Windows, som mange bruger,
+Vi tager et eksempel: operativsystemet 
+Windows, som mange bruger,
 07:31.500 --> 07:34.600
-eller Linux eller lignende, så fordeler man omkostningerne for en kopi
+eller Linux eller lignende, så 
+fordeler man omkostningerne for en kopi
 07:35.566 --> 07:39.266
-på alle divisioner, så alle skal betale en mindre del af det operativsystem.
+på alle divisioner, så alle skal betale 
+en mindre del af det operativsystem.
 07:39.266 --> 07:43.433
-For det, der ligger i Windows-katalogen, er stort set det samme, til 99 %.
+For det, der ligger i Windows-katalogen, 
+er stort set det samme, til 99 %.
 07:43.433 --> 07:46.933
 Eksempel fra den virkelige verden.
 07:47.266 --> 07:52.133
 Der sker ting med backup, kan vi tale om, 
 07:52.133 --> 07:57.033
-om hvornår backup ikke har virket, og hvornår backup har virket?
+om hvornår backup ikke har virket, og 
+hvornår backup har virket?
 07:57.066 --> 08:00.766
 Backup er supervigtigt, helt enkelt.
 08:00.866 --> 08:03.766
@@ -332,7 +385,8 @@ Der er jo, at man kan låse dataen, så den ikke kan
 09:12.000 --> 09:15.166
 fjernes overhovedet.
 09:15.166 --> 09:18.900
-Der, hvor der er en mulighed i portalen, at man som kunde kan begrænse, så
+Der, hvor der er en mulighed i portalen,
+ at man som kunde kan begrænse, så
 09:19.300 --> 09:23.733
 at en person ikke kan gøre det hele
 09:23.733 --> 09:26.866
@@ -352,18 +406,25 @@ Det er meget vigtigt, at man kan have begge alternativer.
 09:50.600 --> 09:53.700
 Det er ikke
 09:53.700 --> 09:57.066
-spørgsmålet om, hvorvidt der vil ske noget, men hvornår det vil ske.
+spørgsmålet om, hvorvidt der vil ske 
+noget, men hvornår det vil ske.
 09:57.566 --> 10:01.833
-Desværre er det sådan i dag, i modsætning fra tidligere, hvor backupen
+Desværre er det sådan i dag, i 
+modsætning fra tidligere, hvor backupen
 10:02.200 --> 10:05.533
-i det store hele var en forsikring, den blev stort set aldrig brugt.
+i det store hele var en forsikring, 
+den blev stort set aldrig brugt.
 10:05.966 --> 10:09.566
-Nu begynder det næsten at nærme sig: "Hvornår kommer vi til at skulle bruge dette?",
+Nu begynder det næsten at nærme sig: 
+"Hvornår kommer vi til at skulle bruge dette?",
 10:09.566 --> 10:12.800
-"Hvornår skal vi have brug for at restore data?" helt enkelt.
+"Hvornår skal vi have brug for at 
+restore data?" helt enkelt.
 10:14.300 --> 10:16.900
-Ja, der er så meget at tale om, når det gælder dette, og vi vil
+Ja, der er så meget at tale om, 
+når det gælder dette, og vi vil
 10:16.900 --> 10:20.000
-i den næste video lave en dybdegående gennemgang
+i den næste video lave en 
+dybdegående gennemgang
 10:20.000 --> 10:24.933
 og vi håber, at vi ses der.
