@@ -35,11 +35,11 @@ Designed with scalability, compliance, and affordability in mind, our platform s
     {{< icon-block icon="fa-kit fa-eu-flag" text="Jurisdictional Security" link="/en/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
-## Safespring Container Platform: <br>Open, Sovereign, and Flexible
+## Safespring Container Platform: Open, Sovereign, and Self-service
 
-Our compliant Kubernetes Platform, powered by Safespring Compute, allows you to deploy, scale, and manage cloud-native applications easily, all within a cost-efficient environment. Ideal for SaaS providers, research institutions, and public sector entities, Safespring's infrastructure combines scalability, security, and sovereignty under EU jurisdiction.
+Our compliant Kubernetes Platform, powered by Safespring Compute, allows you to deploy, scale, and easily manage both the cluster as well as cloud-native applications running on it, all within a cost-efficient environment. Ideal for SaaS providers, research institutions, and public sector entities, Safespring's infrastructure combines scalability, security, and sovereignty under EU jurisdiction.
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Start with a single namespace" description="Start with a dedicated project of just one namespace that can scale to multiple as your needs grow, from small setups to full clusters." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Tailored to your needs" description="Start with a dedicated cluster that can scale with your needs, and grow to multiple manged clusters." >}}
 {{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Cloud native" description="Scale your cloud native application as your business grows with competitive, pay-as-you-go pricing." >}}
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Secure & Compliant" description="Safeguard data with full compliance to EU security and jurisdictional requirements." >}}
 
