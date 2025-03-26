@@ -35,7 +35,8 @@ Here is a list of some of the things you could consider in the Exit process:
 3. Document what kind of data that is stored and processed in the services.
 4. Try to read the contract(s), they are often very long, very complex, very unfriendly to the customer and not always complete though. 
     1. What kinds of rights do you have to your data and metadata? 
-    1. Can you extract everything? In which formats can you get the data and metadata? 
+    1. Can you extract everything? 
+    1. In which formats can you get the data and metadata? 
     1. Is it possible to reuse the data and metadata without loss?
 5. If you use compute instances and S3 storage, the process should be quite straightforward and there should not be any data loss.
 6. If you use Kubernetes and containers, there are some pitfalls, but you should be able to migrate without data loss.
