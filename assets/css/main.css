@@ -109,7 +109,7 @@ html, body {
 }
 
 pre > code {
-	padding:0;
+	padding:0 0 15px 0;
 }
 
 p>code {
@@ -144,7 +144,7 @@ pre {
 	position:relative;
 	background:#EAF0F4 !important;
 	max-width:800px !important;
-	padding:60px 30px 20px 30px !important;
+	padding:60px 30px 5px 30px !important;
 	border-radius:10px !important;
 	overflow: auto;
 	font-family: "safespring mono";
