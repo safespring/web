@@ -114,7 +114,7 @@ pre > code {
 
 p>code {
 	white-space: nowrap;
-	font-size: 13px;
+	font-size: 1rem;
 }
 
 @media only screen and (max-width:900px) {
@@ -125,9 +125,9 @@ p>code {
 
 code {
 	font-style:normal;
-	font-size:13px !important;
+	font-size: 0.9rem !important;
 	background:#EAF0F4;
-	padding:3px 8px;
+	padding:0 8px 2px 8px;
 	border-radius:7px;
 	color:#195F8C;
 	overflow: auto;
@@ -135,8 +135,10 @@ code {
 }
 
 code>span {
-	font-size: 15px;
+	font-size: 0.9rem;
 }
+
+/* === CODE BLOCK  === */
 
 pre {
 	position:relative;
@@ -146,13 +148,15 @@ pre {
 	border-radius:10px !important;
 	overflow: auto;
 	font-family: "safespring mono";
-	font-size: 15px !important;
+	font-size: 0.9rem !important;
+	  scrollbar-width: thin;
+	  scrollbar-color: var(--main-color) var(--cloud-blue-color);
 }
 
 pre[data-lang]::before {
 	content:attr(data-lang);
 	font-weight:599;
-	font-size:13px;
+	font-size: 0.9rem;
 	background-color:#195F8C10;
 	color:#195F8C;
 	padding:15px 0px 15px 30px;
@@ -163,6 +167,25 @@ pre[data-lang]::before {
 	z-index:1;
 	font-family: "safespring mono";
 }
+
+/* WebKit-baserade webbläsare (Chrome, Safari, m.fl.) */
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--middle-blue-color); /* Bakgrundsfärg i spåret */
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* Färg på "tummen" */
+  border-radius: 50px;     /* Rundade hörn */
+  border: 2px solid var(--cloud-blue-color); /* Ger lite space runt tummen */
+}
+
+/* === END: CODE BLOCK === */
+
 
 strong {
 	font-weight: var(--heavy-weight);
@@ -202,7 +225,7 @@ strong {
 .highlight {
 	margin:15px 0;
 	max-width:80vw;
-	font-size: 13px;
+	font-size: 0.9px;
 }
 
 hr {
@@ -214,8 +237,8 @@ hr {
 
 .inline-rubrik {
 	text-transform:uppercase;
-	font-weight:599;
-	font-size:15px;
+	font-weight:600;
+	font-size:1rem;
 }
 
 a::selection {
@@ -228,7 +251,7 @@ a::selection {
 }
 
 li {
-	line-height:1.2;
+	line-height:1.4;
 }
 
 #TableOfContents ul>li {
@@ -274,9 +297,9 @@ p.url {
 
 h2 {
 	padding-top:30px;
-	font:1.875rem var(--hind-font);
+	font:2.1rem var(--hind-font);
 	color:var(--heading-color);
-	line-height:30px;
+	line-height: 1;
 	margin-bottom:7px;
 	text-wrap: balance;
 }
@@ -2328,6 +2351,8 @@ margin:0;
 	padding: 0 12px 0 0;
 	background: #fafefe;
 	width: fit-content;
+	padding-left: 3em;
+    text-indent: -3em;
 
 }
 
