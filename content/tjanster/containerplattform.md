@@ -2,7 +2,7 @@
 title: "Safespring Containerplattform"
 section: "Vintern 2025"
 sectionhighlight: "x"
-cardtitle: "Containerplattform"
+cardtitle: "Containers"
 cardintro: "Managerad Kubernetes med inbyggd skalbarhet och robust plattformssäkerhet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"

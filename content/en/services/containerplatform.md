@@ -2,7 +2,7 @@
 title: "Safespring Container Platform"
 section: "Available late 2025"
 sectionhighlight: "x"
-cardtitle: "Container Platform"
+cardtitle: "Containers"
 cardintro: "Kubernetes management with built-in scalability and robust platform security."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
