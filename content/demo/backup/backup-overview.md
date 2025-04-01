@@ -24,6 +24,12 @@ subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-1.vtt"
     srclang: "sv"
     label: "Svenska"
+  - src: "/subtitles/demo-backup/vtt-demo-backup-1-en.vtt"
+    srclang: "en"
+    label: "English"
+  - src: "/subtitles/demo-backup/vtt-demo-backup-1-dk.vtt"
+    srclang: "dk"
+    label: "Dansk"
 chaptersTitle: "Avsnitt"
 chapters:
   - title: "Vad skiljer oss åt?"
