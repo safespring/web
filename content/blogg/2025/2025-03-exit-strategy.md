@@ -5,7 +5,7 @@ intro: "No matter why you leave, you are faced with the Exit-dilemma."
 draft: false
 tags: ["English"]
 showthedate: true
-card: ""
+card: "safespring_card_54.svg"
 eventbild: ""
 socialmediabild: ""
 language: "En"
@@ -54,3 +54,7 @@ I'm Safespring's Business Development Manager. Whether you’re interested in pr
 {{< inline "Call" >}} +46 (0)76 868 00 59 
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
+
+
+
+

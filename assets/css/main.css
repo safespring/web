@@ -132,6 +132,7 @@ code {
 	color:#195F8C;
 	overflow: auto;
 	font-family: "safespring mono";
+	
 }
 
 code>span {
@@ -149,8 +150,8 @@ pre {
 	overflow: auto;
 	font-family: "safespring mono";
 	font-size: 0.9rem !important;
-	  scrollbar-width: thin;
-	  scrollbar-color: var(--main-color) var(--cloud-blue-color);
+	scrollbar-width: thin;
+	scrollbar-color: var(--main-color) var(--cloud-blue-color);
 }
 
 pre[data-lang]::before {
