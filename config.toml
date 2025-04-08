@@ -1,8 +1,89 @@
 baseURL = "https://www.safespring.com/"
-languageCode = "sv"
-title = "Empowering European Innovation"
 author = "Safespring"
 copyright = "2025 Safespring"
+
+
+#------------------------------------------------------------------------------
+# Languages
+#------------------------------------------------------------------------------
+defaultContentLanguage = 'sv'
+
+[languages.sv]
+languageCode = 'sv-SE'
+languageName = 'Svenska'
+title = 'Stärk europeisk innovation'
+weight = 1
+
+[languages.en]
+languageCode = 'en-GB'
+languageName = 'English'
+title = 'Empowering European Innovation'
+weight = 2
+
+[languages.nb]
+languageCode = 'nb-NO'
+languageName = 'Norsk (Bokmål)'
+title = 'Styrke europeisk innovasjon'
+weight = 3
+
+[languages.da]
+languageCode = 'da-DK'
+languageName = 'Dansk'
+title = 'Styrkelse af europæisk innovation'
+weight = 4
+
+#------------------------------------------------------------------------------
+# Content mounts
+#------------------------------------------------------------------------------
+
+# SV content
+[[module.mounts]]
+source = 'content/sv'
+target = 'content'
+lang = 'sv'
+
+# EN content
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'en'
+
+# NB content
+[[module.mounts]]
+source = 'content/nb'
+target = 'content'
+lang = 'nb'
+
+# DA content
+[[module.mounts]]
+source = 'content/da'
+target = 'content'
+lang = 'da'
+
+#------------------------------------------------------------------------------
+# Fill in the missing translations
+#------------------------------------------------------------------------------
+
+# This fills in the gaps in SV content with EN content
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'sv'
+
+# This fills in the gaps in NB content with EN content.
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'nb'
+
+# This fills in the gaps in DA content with EN content.
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'da'
+
+
+
 
 # Pagination
 paginate = 10
