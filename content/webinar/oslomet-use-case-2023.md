@@ -18,7 +18,6 @@ sidebar: "x"
 sidebarimage: ""
 ---
 
-{{< author-jarle >}}
 
 {{< ingress>}}
 Fra gjør-det-selv til as-a-service i IT-undervisningen; OsloMET deler erfaringer med overgangen fra hjemmlaget automatisering av VM-administrasjon  til "Safespring Compute (managed Openstack)". 
