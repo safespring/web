@@ -132,7 +132,7 @@ code {
 	color:#195F8C;
 	overflow: auto;
 	font-family: "safespring mono";
-	
+	line-height: 1;
 }
 
 code>span {
