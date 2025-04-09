@@ -14,8 +14,6 @@ sectiontext: "Blog"
 section: "Tech update"
 author: "Anders Johansson"
 TOC: "In this post"
-aliases:
-    - /blogg/2025/2024-02-engineering-plans/
 ---
 
 {{< ingress >}}
