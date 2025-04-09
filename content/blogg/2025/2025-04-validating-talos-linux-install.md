@@ -1,7 +1,7 @@
 ---
 title: "Validating Talos Linux Install and Maintenance Operations"
 date: 2025-04-09
-intro: "We consider that automation, security and common IaC tools to be the holy trinity for a robust kubernetes platform offering. "
+intro: "An accessible approach to operations on a Kubernetes platform, represents a compelling  option for PaaS operators."
 draft: false
 tags: ["English"]
 showthedate: true
