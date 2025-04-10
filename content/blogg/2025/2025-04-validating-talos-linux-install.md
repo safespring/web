@@ -207,6 +207,14 @@ spec:
 
 Let us create a script that will help us validate important aspects of the Talos installation, namely the CNI, CSI as well as Talos API. The script below `validate.sh` includes such parts.
 
+In the code below, notice the storage class name, fast , this needs to be adjusted to your own storage classes. To see storage classes use:
+```bash
+➜ kubectl get storageclass -o custom-columns=Name:.metadata.name,Provisoner:.provisioner
+Name    Provisoner
+fast    cinder.csi.openstack.org
+large   cinder.csi.openstack.org
+```
+
 ```bash
 #!/usr/bin/env bash
 
