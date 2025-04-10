@@ -40,7 +40,7 @@ Onward with the hands-on steps:
 
 ## Building a Container Image
 
-As we want to test the cluster installation we would need to run in a container the cli tools required to validate the cluster installation. For this purpose we prepared the `Dockerfile-talos` below that we need to build and push to a registry.
+As we want to test the cluster installation, we would need to run in a container the command line tools required to validate the cluster installation. For this purpose we prepared the `Dockerfile-talos` below that we need to build and push to a registry.
 
 Thus create a file named `Dockerfile-talos` with the contents:
 
@@ -90,7 +90,7 @@ podman push docker.io/blankdots/talosctl:minimal
 
 ## Creating a Validate Job
 
-In order to be able to validate the cluster via a job that runs inside our newly created Talos cluster, we need to be able to have both a [Service Account](https://kubernetes.io/docs/concepts/security/service-accounts/) with permissions to the right api resources as we as [Talos Service Account](https://www.talos.dev/v1.9/advanced/talos-api-access-from-k8s/).
+In order to be able to validate the cluster via a job that runs inside our newly created Talos cluster, we need to be able to have both a [Service Account](https://kubernetes.io/docs/concepts/security/service-accounts/) with permissions to the right kubernetes API resources as we as [Talos Service Account](https://www.talos.dev/v1.9/advanced/talos-api-access-from-k8s/).
 
 Before that we will create a namespace where to do our validation check:
 ```bash
@@ -443,7 +443,7 @@ Upgrading a Talos cluster is pretty straight forward following the instructions 
 
 ### Upgrading Talos Linux
 
-Following the [instructions for upgrading talos](https://www.talos.dev/v1.9/talos-guides/upgrading-talos/#talosctl-upgrade) is as easy as applying the `talosctl upgrade` command.
+Following the [instructions for upgrading Talos Linux](https://www.talos.dev/v1.9/talos-guides/upgrading-talos/#talosctl-upgrade) is as easy as applying the `talosctl upgrade` command.
 
 ```bash
 talosctl --talosconfig .talos/talosconfig upgrade --image ghcr.io/siderolabs/installer:v1.9.5
@@ -500,14 +500,14 @@ where `remove-inlinemanifests.json` contains
 ]
 ```
 
-An alternative to this solution would be making use of [`extraManifests`](https://www.talos.dev/v1.9/reference/configuration/v1alpha1/config/#Config.cluster) as detailed in [talos helm install of cilium](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/#method-1-helm-install), however the URLs need to either public or access via basic auth e.g. `https://username:password@url` due [limitations in the golang library](https://github.com/siderolabs/talos/blob/main/internal/app/machined/pkg/controllers/k8s/extra_manifest.go#L168-L173).
+An alternative to this solution would be making use of [`extraManifests`](https://www.talos.dev/v1.9/reference/configuration/v1alpha1/config/#Config.cluster) as detailed in [Talos helm install of Cilium](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/#method-1-helm-install), however the URLs need to either public or access via basic auth e.g. `https://username:password@url`.
 
 ## Troubleshooting
 
 A few notes on installing Cilium CNI to consider:
 
-- Enabling `bpf.hostLegacyRouting=true` for cilium to work with talos installation documented in [cilium on talos linux](https://docs.cilium.io/en/stable/installation/k8s-install-helm/#install-cilium).
-- One of the reasons we need to validate the internet connectivity was started from making cilium DNS work as there seems to be is an issue with version `1.6.5` see [this comment](https://github.com/cilium/cilium/issues/36761#issuecomment-2560353729) in [issue 66](https://github.com/isejalabs/homelab/issues/66): 
+- Enabling `bpf.hostLegacyRouting=true` for Cilium to work with Talos Linux installation documented in official [Cilium docs](https://docs.cilium.io/en/stable/installation/k8s-install-helm/#install-cilium).
+- One of the reasons we need to validate the internet connectivity was started from making Cilium DNS work as there seems to be is an issue with version `1.6.5` see [this comment](https://github.com/cilium/cilium/issues/36761#issuecomment-2560353729) and [issue 66](https://github.com/isejalabs/homelab/issues/66): 
   - "Cilium now uses BPF Host Routing in `1.16.5`, which is conflicting with `forwardKubeDNSToHost` in Talos. Setting `bpf.hostLegacyRouting=true` in your Cilium reverts to the behaviour used in `1.16.4` and earlier. This eliminates the need for disabling `forwardKubeDNSToHost` in Talos".
 
 
