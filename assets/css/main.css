@@ -109,7 +109,7 @@ html, body {
 }
 
 pre > code {
-	padding:0 0 15px 0;
+	padding:10px 0 18px 0;
 }
 
 p>code {
@@ -132,7 +132,7 @@ code {
 	color:#195F8C;
 	overflow: auto;
 	font-family: "safespring mono";
-	
+	line-height: 1;
 }
 
 code>span {
@@ -1195,16 +1195,22 @@ color:var(--unCheckedColor);
 .safespring-footer-language-icon img {
 	width:31px;
 	height:31px;
+}
+
+@media only screen and (min-width:900px) {
+.safespring-footer-language-icon img {
 	transition-timing-function:ease-out;
 	transition:0.2s;
 	transform:scale(1);
 }
+}
 
+@media only screen and (min-width:900px) {
 .safespring-footer-language-icon img:hover {
-	width:31px;
 	transition-timing-function:ease-out;
 	transition:0.2s;
 	transform:scale(1.1);
+}
 }
 
 .safespring-footer-menu {
@@ -1250,10 +1256,12 @@ color:var(--unCheckedColor);
 	transition:0.1s;
 }
 
+@media only screen and (min-width:900px) {
 .safespring-footer-menu a:hover {
 	color:var(--link-color) !important;
 	transition:0.1s;
 	cursor:pointer;
+}
 }
 
 .safespring-footer-menu ul>li:first-child {
@@ -1272,11 +1280,14 @@ color:var(--unCheckedColor);
 	justify-content:center;
 }
 
+@media only screen and (min-width:900px) {
 .safespring-footer-social img:hover {
 	transition-timing-function:ease-out;
 	transition:0.2s;
 	transform:translateY(-5px);
 }
+}
+
 .safespring-footer-social img {
 	transition-timing-function:ease-out;
 	transition:0.2s;
