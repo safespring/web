@@ -1,0 +1,17 @@
+[readMore]
+other = "Läs mer"
+
+[publishedOn]
+other = "Publicerad"
+
+[tags]
+other = "Taggar"
+
+[categories]
+other = "Kategorier"
+
+[pageNotFound]
+other = "Sidan hittades inte"
+
+[searchTitle]
+other = "Sök" 

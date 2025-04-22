@@ -1,0 +1,17 @@
+[readMore]
+other = "Læs mere"
+
+[publishedOn]
+other = "Udgivet"
+
+[tags]
+other = "Tags"
+
+[categories]
+other = "Kategorier"
+
+[pageNotFound]
+other = "Siden blev ikke fundet"
+
+[searchTitle]
+other = "Søg" 
