@@ -2,22 +2,26 @@ baseURL = "https://www.safespring.com/"
 author = "Safespring"
 copyright = "2025 Safespring"
 
+# Pagination
+paginate = 10
+paginatePath = "latest"
 
 #------------------------------------------------------------------------------
 # Languages
 #------------------------------------------------------------------------------
-defaultContentLanguage = 'sv'
+defaultContentLanguage = 'en'
 
-[languages.sv]
-languageCode = 'sv-SE'
-languageName = 'Svenska'
-title = 'Stärk europeisk innovation'
-weight = 1
 
 [languages.en]
 languageCode = 'en-GB'
 languageName = 'English'
 title = 'Empowering European Innovation'
+weight = 1
+
+[languages.sv]
+languageCode = 'sv-SE'
+languageName = 'Svenska'
+title = 'Stärk europeisk innovation'
 weight = 2
 
 [languages.nb]
@@ -81,13 +85,6 @@ lang = 'nb'
 source = 'content/en'
 target = 'content'
 lang = 'da'
-
-
-
-
-# Pagination
-paginate = 10
-paginatePath = "blog"
 
 [params]
   mainSections = ['blogg', 'webinar', 'whitepaper', 'solution-brief']

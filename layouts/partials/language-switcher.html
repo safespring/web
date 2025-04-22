@@ -2,7 +2,7 @@
     {{ range .Site.Languages }}
         {{ if eq .Lang $currentLang }}
             <span title="{{ .LanguageName }}" style="display: flex;align-items: center;">
-                <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .LanguageName }}" style="filter: opacity(0.5);" />
+                <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .LanguageName }}" style="filter: opacity(0.5); transform: scale(1)" />
             </span>
         {{ end }}
         {{ if ne .Lang $currentLang }}
