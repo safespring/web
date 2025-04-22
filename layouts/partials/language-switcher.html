@@ -1,0 +1,13 @@
+{{ $currentLang := .Site.Language.Lang }}
+    {{ range .Site.Languages }}
+        {{ if eq .Lang $currentLang }}
+            <span title="{{ .LanguageName }}" style="display: flex;align-items: center;">
+                <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .LanguageName }}" style="filter: opacity(0.5);" />
+            </span>
+        {{ end }}
+        {{ if ne .Lang $currentLang }}
+            <a href="{{ delimit (slice "/" .Lang (strings.TrimPrefix (print "/" $currentLang) $.RelPermalink)) "" }}" title="{{ .LanguageName }}">
+                <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .LanguageName }}" />
+            </a>
+        {{ end }}
+    {{ end }}
