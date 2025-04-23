@@ -17,24 +17,29 @@ languageCode = 'en-GB'
 languageName = 'English'
 title = 'Empowering European Innovation'
 weight = 1
+#baseURL = 'https://safespring.com/'
+
 
 [languages.sv]
 languageCode = 'sv-SE'
 languageName = 'Svenska'
 title = 'Stärk europeisk innovation'
 weight = 2
+#baseURL = 'https://safespring.se/'
 
 [languages.nb]
 languageCode = 'nb-NO'
 languageName = 'Norsk (Bokmål)'
 title = 'Styrke europeisk innovasjon'
 weight = 3
+#baseURL = 'https://safespring.no/'
 
 [languages.da]
 languageCode = 'da-DK'
 languageName = 'Dansk'
 title = 'Styrkelse af europæisk innovation'
 weight = 4
+#baseURL = 'https://safespring.dk/'
 
 #------------------------------------------------------------------------------
 # Content mounts
