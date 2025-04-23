@@ -10,22 +10,26 @@ There are two options for previewing the site locally: using the Hugo binary or 
 
 1. Download and install the Hugo binary from the [official Hugo website](https://gohugo.io/overview/installing/).
 2. Clone the repository and run Hugo:
+
 ```
 git clone git@github.com:safespring/web
 cd web
 hugo serve
 ```
+
 3. Open http://localhost:1313/ in your web browser to view the site.
 
 ### Using Docker as a server
 
 1. Make sure you have [Docker installed](https://www.docker.com/products/container-runtime#/download).
 2. Clone the repository and run Docker:
+
 ```
 git clone git@github.com:safespring/web
 cd web
 docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo server
 ```
+
 3. Open http://localhost:1313/ in your web browser to view the site.
 
 ## Notes for theme development
@@ -45,3 +49,7 @@ aliases = [
 ```
 
 This way, if the structure of the page changes, users will still be able to use their old links.
+
+## Clearing old files
+
+Use `hugo --printUnusedTemplates` to identify unused templates.
