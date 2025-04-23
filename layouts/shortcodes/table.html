@@ -1,5 +1,0 @@
-{{ $class := .Get "class" }}
-{{ $table := .Inner | markdownify }}
-<table {{ with $class }} class="{{ . }}"{{ end }}>
-  {{ $table }}
-</table>
