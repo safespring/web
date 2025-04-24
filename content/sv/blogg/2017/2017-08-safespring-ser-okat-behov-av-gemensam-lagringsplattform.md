@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring ser ökat behov av gemensam lagringsplattform"
 date: "2017-08-28"
 draft: false

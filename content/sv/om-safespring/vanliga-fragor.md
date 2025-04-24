@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Vanliga frågor om Safespring, Datacenter och vår verksamhet"
 section: "Om Safespring"
 date: 2023-01-07T13:58:58+01:00

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Tidslinje över lagarna som format EU:s och USA:s dataskydd"  
 date: "2018-08-02T09:22:53+02:00"  
 draft: false  

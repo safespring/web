@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring är en helt svensk molnplattform"
 cardtitle: "Safespring för myndigheter"
 date: 2022-03-03T10:47:25+01:00

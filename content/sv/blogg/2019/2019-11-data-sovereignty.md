@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Articles about digital sovereignty, GDPR and CLOUD Act"
 date: "2019-11-19T08:03:13+02:00"
 draft: false

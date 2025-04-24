@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Programvara som tjänst blir allt mer attraktivt, men hur hanteras personuppgifterna?"
 date: 2025-02-20
 draft: false

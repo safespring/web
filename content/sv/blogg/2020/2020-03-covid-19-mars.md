@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Information om Safesprings drift under covid-19 pandemin"
 date: "2020-03-13T10:39:43+02:00"
 draft: false

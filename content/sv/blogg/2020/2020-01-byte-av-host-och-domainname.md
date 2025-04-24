@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Byte av host- och domännamn på Support- & Backuptjänsten"
 intro: "Vi fasar ut vårt tidigare moderbolags varumärke IPnett från våra tjänster."
 date: "2020-01-07T10:16:45+01:00"

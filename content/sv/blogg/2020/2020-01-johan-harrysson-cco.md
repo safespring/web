@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Johan Harrysson blir Safesprings nya CCO"
 date: "2020-01-28T08:03:13+02:00"
 draft: false

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring lanserar flera nya tjänster"
 intro: "Behovet av säkra svenska infrastrukturtjänster ökar snabbt. Hos oss är öppen källkod och öppna standarder två av grundstenarna."
 date: "2019-06-19T08:52:06+02:00"

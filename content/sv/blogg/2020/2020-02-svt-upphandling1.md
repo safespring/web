@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring har blivit utvald att leverera tjänster till SVT och UR"
 date: "2020-02-05T10:39:43+02:00"
 draft: true

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Strategiskt samarbete inom AI med Scaleout"
 date: "2020-10-29T09:46:45+01:00"
 draft: false

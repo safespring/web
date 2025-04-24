@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "EUs nya digitala strategi förespråkar öppen källkod"
 date: "2018-11-30T12:41:37+01:00"
 draft: false

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring lanserar ny webb"
 date: "2017-11-22"
 draft: true

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Enögda slutsatser av Åsa Zetterberg kring staten och molnet"
 date: "2020-11-03T10:11:27+01:00"
 draft: false

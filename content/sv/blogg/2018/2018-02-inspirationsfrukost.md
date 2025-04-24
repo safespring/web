@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring bjuder in till inspirations-frukost"
 date: "2018-02-19"
 draft: false

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Alla ska kunna arbeta säkert med webbaserade kontorsstöd"
 date: "2019-02-22T14:51:25+01:00"
 draft: false

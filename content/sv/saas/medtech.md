@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Låt era utvecklare fokusera på kärnverksamheten"
 date: 2024-05-08
 draft: false

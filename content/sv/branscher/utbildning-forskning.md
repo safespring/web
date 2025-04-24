@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safesprings molntjänster för forskning och utbildning"
 cardtitle: "Safespring for Reserach and Education"
 card: "safespring_card_11.svg"

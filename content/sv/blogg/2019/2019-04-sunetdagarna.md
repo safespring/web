@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring presenterade två projekt på SUNET-dagarna"
 date: "2019-04-03T14:55:39+02:00"
 draft: false

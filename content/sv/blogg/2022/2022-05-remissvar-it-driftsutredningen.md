@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Remissvar på It-driftsutredningen"
 date: "2022-05-11"
 intro: "Vårt svar adresserar inte specialsystem i första hand utan myndigheters behov av innovativa, standardiserade IT system och tjänster för att fortsätta digitalisera och utveckla verksamheten."

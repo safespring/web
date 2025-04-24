@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Självklart producerar vi våra tjänster lokalt"
 date: 2019-01-07T13:58:58+01:00
 draft: false

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safespring tecknar ramavtal med SVT och UR för svenska molntjänster"
 intro: "Safespring har tecknat ett ramavtal med SVT och UR för att leverera säkra, flexibla och väldokumenterade molntjänster."
 date: "2020-03-11T10:39:43+02:00"

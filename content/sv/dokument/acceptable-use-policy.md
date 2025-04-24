@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Safesprings Acceptable Use Policy"
 date: 2024-05-17
 draft: false

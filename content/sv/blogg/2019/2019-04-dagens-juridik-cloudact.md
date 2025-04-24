@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Amerikanska moln-leverantörer kan behöva välja lag att bryta mot"
 date: "2019-04-05T12:00:13+02:00"
 draft: false

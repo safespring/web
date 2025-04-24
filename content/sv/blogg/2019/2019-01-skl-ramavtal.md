@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Ramavtalet med SKL Kommentus för e-arkiv som tjänst är påskrivet"
 date: "2019-01-14T10:16:45+01:00"
 draft: false

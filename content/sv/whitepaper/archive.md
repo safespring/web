@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Fördelarna med ett digitalt arkiv"
 date: "2018-06-25T14:04:37+02:00"
 draft: true

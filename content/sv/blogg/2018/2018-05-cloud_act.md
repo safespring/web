@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "Med CLOUD act kan USA begära data från svenska och norska verksamheter"
 date: "2018-05-15"
 draft: false

@@ -1,4 +1,5 @@
 ---
+language: "sv"
 title: "TechAW med SUSE"
 date: "2018-10-24"
 draft: false
