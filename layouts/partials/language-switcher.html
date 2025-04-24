@@ -1,16 +1,17 @@
-{{ $currentLang := .Site.Language.Lang }} {{ range .Site.Languages }} {{ if eq .Lang $currentLang }}
-<span title="{{ .LanguageName }}" style="display: flex; align-items: center">
+{{ $currentLang := .Site.Language.Lang }}
+
+<!-- Current language -->
+<span title="{{ .Language.LanguageName }}" style="display: flex; align-items: center">
   <img
-    src="/img/flags/{{ .Lang }}.svg"
-    alt="Safespring {{ .LanguageName }}"
+    src="/img/flags/{{ $currentLang }}.svg"
+    alt="Safespring {{ .Language.LanguageName }}"
     style="filter: opacity(0.5); transform: scale(1)"
   />
 </span>
-{{ end }} {{ if ne .Lang $currentLang }} {{ $targetPath := "" }} {{ if eq .Lang "en" }} {{
-$targetPath = strings.TrimPrefix (print "/" $currentLang) $.RelPermalink }} {{ else }} {{
-$targetPath = delimit (slice "/" .Lang (strings.TrimPrefix (print "/" $currentLang) $.RelPermalink))
-"" }} {{ end }}
-<a href="{{ $targetPath }}" title="{{ .LanguageName }}">
-  <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .LanguageName }}" />
+
+<!-- Other languages -->
+{{ range .Translations }}
+<a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+  <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .Language.LanguageName }}" />
 </a>
-{{ end }} {{ end }}
+{{ end }}
