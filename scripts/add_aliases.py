@@ -69,37 +69,59 @@ def update_or_add_aliases(content, url_path):
     # Parse existing aliases and their format
     aliases_list, format_type = parse_aliases(frontmatter)
     
-    # Add new url_path if not present
-    if url_path not in aliases_list:
-        aliases_list.append(url_path)
+    # If url_path already exists, don't modify anything
+    if url_path in aliases_list:
+        return content
     
-    # Format the aliases section based on original format
+    # Find the position to insert the new alias
     if format_type == 'dash':
-        new_aliases = 'aliases:\n' + '\n'.join(f'- {alias}' for alias in aliases_list)
-        # Replace the entire aliases section including any existing dash list items
-        frontmatter = re.sub(
-            r'^aliases:\s*(?:\[.*?\]|.*?)$(?:\n(?:[ \t]*-.*?\n)*)?',
-            new_aliases + '\n',
-            frontmatter,
-            flags=re.MULTILINE | re.DOTALL
-        )
+        # Find the last alias entry to determine indentation
+        lines = frontmatter.splitlines()
+        aliases_start = None
+        last_alias_line = None
+        last_indent = ''
+        
+        for i, line in enumerate(lines):
+            if line.strip().startswith('aliases:'):
+                aliases_start = i
+            if line.strip().startswith('-') and aliases_start is not None:
+                last_alias_line = i
+                last_indent = re.match(r'^(\s*)', line).group(1)
+        
+        if last_alias_line is not None:
+            # Insert after the last alias with same indentation
+            new_line = f"{last_indent}- {url_path}"
+            lines.insert(last_alias_line + 1, new_line)
+            frontmatter = '\n'.join(lines) + '\n'  # Add newline at end
+        else:
+            # No existing dash entries, append to aliases: line
+            frontmatter = frontmatter.rstrip() + f"\n- {url_path}\n"
+    
     elif format_type == 'array':
-        new_aliases = 'aliases: [' + ', '.join('"{}"'.format(alias) for alias in aliases_list) + ']'
-        frontmatter = re.sub(
-            r'^aliases:\s*\[.*?\]',
-            new_aliases,
-            frontmatter,
-            flags=re.MULTILINE | re.DOTALL
-        )
+        # Find the array closing bracket and insert before it
+        array_match = re.search(r'aliases:\s*\[(.*?)\]', frontmatter, re.MULTILINE | re.DOTALL)
+        if array_match:
+            start, end = array_match.span(1)
+            existing_content = array_match.group(1)
+            separator = ',' if existing_content.strip() else ''
+            new_content = f'{existing_content}{separator} "{url_path}"'
+            frontmatter = frontmatter[:start] + new_content + frontmatter[end:]
+            if not frontmatter.endswith('\n'):
+                frontmatter += '\n'
+    
     elif format_type == 'single':
-        # Convert to dash list format when adding multiple aliases
-        new_aliases = 'aliases:\n' + '\n'.join(f'- {alias}' for alias in aliases_list)
-        frontmatter = re.sub(
-            r'^aliases:.*$',
-            new_aliases,
-            frontmatter,
-            flags=re.MULTILINE
-        )
+        # Find the single alias line and convert to dash list
+        lines = frontmatter.splitlines()
+        for i, line in enumerate(lines):
+            if line.strip().startswith('aliases:'):
+                indent = re.match(r'^(\s*)', line).group(1)
+                old_alias = line.replace('aliases:', '').strip().strip('"\'')
+                lines[i] = f"{indent}aliases:"
+                lines.insert(i + 1, f"{indent}- {old_alias}")
+                lines.insert(i + 2, f"{indent}- {url_path}")
+                frontmatter = '\n'.join(lines) + '\n'  # Add newline at end
+                break
+    
     else:
         # No existing aliases, add new ones in dash list format
         frontmatter = frontmatter.rstrip() + f'\naliases:\n- {url_path}\n'
