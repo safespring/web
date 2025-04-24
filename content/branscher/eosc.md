@@ -13,7 +13,6 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "Sv"
-aliases:
 ---
 
 {{< ingress >}}
@@ -21,19 +20,19 @@ Safespring är en del av European Open Science Cloud (EOSC). Initiativet leverer
 {{</ ingress >}}
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring infrastruktur" link="" color="#417DA5">}}
-    {{< icon-block icon="fas fa-cubes" text="Container-plattform" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-shield-alt" text="Säkerhet & Efterlevnad" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-sync" text="Interoperabilitet" link="" color="#FA690F">}}
-    {{< icon-block icon="fas fa-project-diagram" text="Samarbetsverktyg" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-globe" text="Global Tillgänglighet" link="" color="#195F8C">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring infrastruktur" link="" color="#417DA5">}}
+{{< icon-block icon="fas fa-cubes" text="Container-plattform" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-shield-alt" text="Säkerhet & Efterlevnad" link="" color="#32CD32">}}
+{{< icon-block icon="fas fa-sync" text="Interoperabilitet" link="" color="#FA690F">}}
+{{< icon-block icon="fas fa-project-diagram" text="Samarbetsverktyg" link="" color="#32CD32">}}
+{{< icon-block icon="fas fa-globe" text="Global Tillgänglighet" link="" color="#195F8C">}}
 {{< /icon-block-container >}}
 
 ## Safesprings engagemang i European Open Science Cloud (EOSC)
 
-Som en avgörande partner i EOSC-initiativet tillhandahåller Safespring viktiga infrastrukturtjänster under kategorierna **Exchange Infrastructure Services** och **Exchange Application Services**. 
+Som en avgörande partner i EOSC-initiativet tillhandahåller Safespring viktiga infrastrukturtjänster under kategorierna **Exchange Infrastructure Services** och **Exchange Application Services**.
 
-I samarbete med Poznan Supercomputing and Networking Center (PSNC) erbjuder Safespring hanterad databehandling och en containerplattform som används direkt av forskare, men också som "motorn" för organisationers filsynkronisering och delning av data samt Jupyter-notebooks. Även filöverföringstjänster som tillhandahålls av andra partners till PSNC. 
+I samarbete med Poznan Supercomputing and Networking Center (PSNC) erbjuder Safespring hanterad databehandling och en containerplattform som används direkt av forskare, men också som "motorn" för organisationers filsynkronisering och delning av data samt Jupyter-notebooks. Även filöverföringstjänster som tillhandahålls av andra partners till PSNC.
 
 Dessa tjänster stödjer europeiska forskningsinsatser, möjliggöra effektiv databehandling, delning och samarbete mellan institutioner.
 
@@ -48,7 +47,7 @@ Dessa tjänster stödjer europeiska forskningsinsatser, möjliggöra effektiv da
 Vårt engagemang i EOSC-initiativet är en del av vår vision att förbättra forskning och utbildning genom innovativa digitala tjänster. "Empowering European Innovation".
 {{< /ingress >}}
 
-Safespring stödjer principerna för öppen vetenskap genom att tillhandahålla säkra, GDPR-kompatibla molninfrastrukturlösningar. 
+Safespring stödjer principerna för öppen vetenskap genom att tillhandahålla säkra, GDPR-kompatibla molninfrastrukturlösningar.
 
 Genom att delta i detta europeiska initiativ hjälper Safespring till att säkerställa att forskningsdata och verktyg är Findable, Accessible, Interoperable och Reusable (FAIR), vilket främjar en mer samarbetsvillig och transparent vetenskaplig miljö.
 
@@ -57,6 +56,6 @@ Vi är glada över att bidra till EOSC EU Node och ser fram emot att fortsätta 
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 Jag är affärsutvecklingschef för akademiska och offentliga sektorer och kan hjälpa dig att använda våra tjänster som redan har upphandlats under OCRE-avtalet.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59 
+{{< inline "Ring" >}} +46 (0)76 868 00 59
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}

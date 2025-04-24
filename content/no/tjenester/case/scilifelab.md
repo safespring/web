@@ -18,7 +18,6 @@ sidebarimage: "scilifelab.svg"
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Private Cloud"
-aliases:
 toc: "I denne artikkelen"
 ---
 
@@ -38,7 +37,7 @@ SciLifeLab har høye krav til ytelse og nettverk samt lagring og sikkerhet for �
 
 Safespring tilbyr en rekke forskjellige compute-flavors på en fleksibel IaaS-plattform som enkelt kan tilpasses etter kundenes krav. Compute-flavors strekker seg fra 1 vCPU til 128 vCPU og RAM fra 1 GB til 256 GB. Safespring har også mulighet til å legge til nye compute-flavors etter hvert som kundenes krav endrer seg over tid.
 
-For å forbedre ytelse og stabilitet  nettverket benytter Safespring Calico nettverksplugin for OpenStack, noe som gir førsteklasses separasjon mellom kundens infrastrukturer og reduserer belastningen på nettverket. Dette øker også sikkerheten for sensitive data som ofte brukes innen bioinformatikk.
+For å forbedre ytelse og stabilitet nettverket benytter Safespring Calico nettverksplugin for OpenStack, noe som gir førsteklasses separasjon mellom kundens infrastrukturer og reduserer belastningen på nettverket. Dette øker også sikkerheten for sensitive data som ofte brukes innen bioinformatikk.
 
 Calico gjør det mulig å håndtere all nettverkstrafikk på lag 3 ved hjelp av den veletablerte BGP-protokollen, som også benyttes til å gjøre kjernen av internett robust og redundant. Dette reduserer belastningen og kompleksiteten sammenlignet med tradisjonell lag 2-bridging og gir optimal nettverksytelse. Safespring tilbyr også security groups (virtuelle brannmurregler) som kan benyttes til å styre nettverkstilgang mot grupper av kundens compute instanser, noe som igjen er et lag i perimeter-sikringen av kundens data.
 
@@ -59,7 +58,7 @@ Safespring svarer raskt på alle support henvendelser, noe som sikrer at forsker
 ## Forskning som utføres på Safesprings skyplattform
 
 {{< ingress >}}
-SciLifeLab har flere forskningsprogrammer som er avhengige av høy-ytelse databehandling og lagring av store datamengder for å bygge egne forskningsplattformer på Safesprings elastiske infrastruktur. 
+SciLifeLab har flere forskningsprogrammer som er avhengige av høy-ytelse databehandling og lagring av store datamengder for å bygge egne forskningsplattformer på Safesprings elastiske infrastruktur.
 {{< /ingress >}}
 
 Safesprings compute tjeneste gjør også at forskerne selv kan be om ressurser på en enkel måte og tilfredsstille deres spesifikke behov for å drive forskningsprosjektene sine på en effektiv måte.
@@ -134,7 +133,7 @@ Safespring er en nordisk skytjenesteleverandør, med datasentre i Sverige og Nor
 
 For å håndtere forholdet til SciLifeLab og sikre at deres forretningsbehov blir møtt og at servicenivåene overholdes, har Safespring og SciLifeLab regelmessige driftsmøter der de diskuterer åpne saker, nye funksjoner og funksjonelle forbedringer, utnyttelse av tjenester, planlagte prosjekter og andre forretningsrelaterte spørsmål. Disse møtene muliggjør god kvalitet i levering av skytjenester og gir Safespring mulighet til å samarbeide med SciLifeLab for å identifisere og planlegge tekniske endringsforespørsler som støtter deres forretningsbehov.
 
-Safespring har også en prosess for å kontinuerlig forbedre våre tjenester og servicenivåer ved å lære fra hendelser og identifisere og implementere muligheter for forbedring. 
+Safespring har også en prosess for å kontinuerlig forbedre våre tjenester og servicenivåer ved å lære fra hendelser og identifisere og implementere muligheter for forbedring.
 
 ## Alle tjenestene er kjøpt inn gjennom rammeavtaler
 
@@ -173,7 +172,6 @@ Jeg er din kontakt i Norge og hjelper deg med å bruke våre tjenester.
 petter.hylin@safespring.com
 
 {{% /custom-card %}}
-
 
 ## Ordliste
 

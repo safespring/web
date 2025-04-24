@@ -17,14 +17,13 @@ sidebarsection: "MedTech"
 sidebarimage: "findout-logo.svg"
 saas: ""
 sidebarwhitepaper: ""
-aliases:
 ---
 
 <!--{{< ingress >}}
-FindOut Diagnostics, ett medicintekniskt företag som arbetar med diagnostiska lösningar för att förbättra hälsan för patienter, valde att flytta från en amerikansk molntjänstleverantör till Safespring för att följa GDPR. 
+FindOut Diagnostics, ett medicintekniskt företag som arbetar med diagnostiska lösningar för att förbättra hälsan för patienter, valde att flytta från en amerikansk molntjänstleverantör till Safespring för att följa GDPR.
 {{< /ingress >}}
 
-Med en stor mängd patientuppgifter är FindOut Diagnostic ett av många bolag som ser riskerna med amerikanska molntjänster. De amerikanska lagarna CLOUD Act och FISA 702 innebär att amerikanska myndigheter kan begära ut data lagrad av amerikanska företag, oavsett var i världen datan lagras. 
+Med en stor mängd patientuppgifter är FindOut Diagnostic ett av många bolag som ser riskerna med amerikanska molntjänster. De amerikanska lagarna CLOUD Act och FISA 702 innebär att amerikanska myndigheter kan begära ut data lagrad av amerikanska företag, oavsett var i världen datan lagras.
 
 Detta kan skapa en juridisk konflikt för svenska företag som hanterar patientdata och personuppgifter, eftersom de måste följa EU-lagstiftningen, såsom GDPR. Detta leder till att svenska företag riskerar att bryta mot sekretesslagar och dataskyddsförordningar när de använder amerikanska molntjänster som lyder under amerikansk jurisdiktion.
 
@@ -45,7 +44,7 @@ Denise Luxenburg Stuifbergen, VD på FindOut Diagnostics, betonade vikten av att
 
 {{< distance >}}
 
-<!-- 
+<!--
 
 Safespring erbjuder många fördelar som hjälpte FindOut Diagnostics att fatta beslutet att välja dem som deras IaaS-leverantör. En av de största fördelarna var att de kan erbjuda fullständig kontroll över patientuppgifter. Med Safespring har FindOut Diagnostics möjlighet att skydda patienternas integritet genom att säkerställa att all deras data lagras och hanteras i Sverige, utan att någon obehörig kan få tillgång till den genom tredjelandsöverföring.
 
@@ -55,4 +54,5 @@ SGenom att välja Safespring kunde FindOut Diagnostics få tillgång till expert
 
 {{< 2calltoaction "Compliant Kubernetes" "/tjanster/compliant-kubernetes/" "Mer om Findout" "https://findout.se/om-oss" >}}
 -->
+
 ![FindOut Diagnostic](/img/findout-kundcase-2.svg)

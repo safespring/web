@@ -17,14 +17,14 @@ sidebarsection: ""
 sidebarimage: "scilifelab.svg"
 saas: ""
 sidebarwhitepaper: ""
-aliases:
 toc: "In this article"
 service: "Safespring Private Cloud"
 ---
 
-## 
+##
+
 {{< ingress >}}
-Safespring delivers a cloud-based VM and storage service to SciLifeLab, Sweden's largest national research infrastructure for life sciences. 
+Safespring delivers a cloud-based VM and storage service to SciLifeLab, Sweden's largest national research infrastructure for life sciences.
 {{< /ingress >}}
 
 Safespring's virtual machines and storage can be automated through APIs, providing SciLifeLab with the flexibility to adjust resources as needed and optimize costs and performance in real time.
@@ -78,14 +78,13 @@ Two major research environments and platforms built on Safespring's infrastructu
 </div>
 </div>
 
-
 ## Relevant for EOSC
+
 EOSC stands for [European Open Science Cloud](/eosc) and is a cloud-based platform aimed at providing researchers and other users with simple and secure access to research data, tools, and infrastructure across Europe.
 
 Safespring's services support SciLifeLab's projects to deliver life science to researchers across Sweden. Researchers can use virtual machines and storage directly, as well as build virtual research environments at SciLifeLab. Safespring has also recently begun developing [GPU](#gpu)-backed virtual machines for Protein Folding and image data analysis.
 
 The EOSC platform will facilitate collaboration and data sharing among researchers and institutions in different countries and disciplines, expected to lead to increased innovation and the discovery of new insights. EOSC will consist of various services and tools provided by both public and private organizations and will adhere to FAIR (Findable, Accessible, Interoperable, Reusable) data management principles.
-
 
 {{% accordion title="What is a GPU?" id="gpu"%}}
 GPU stands for Graphics Processing Unit and is a processor designed specifically for handling graphically intensive tasks, such as computer games and image or video editing.
@@ -93,12 +92,13 @@ In this context, GPUs are used for Protein Folding and image data analysis in re
 {{% /accordion %}}
 
 ## Strategic Goals
+
 {{< ingress >}}
-Safespring and SciLifeLab have jointly created a plan for service delivery through several overarching requirement sessions to fine-tune the service and meet SciLifeLab's specific needs. 
+Safespring and SciLifeLab have jointly created a plan for service delivery through several overarching requirement sessions to fine-tune the service and meet SciLifeLab's specific needs.
 {{< /ingress >}}
 
-
 ### Digital Sovereignty
+
 Safespring offers several advantages that make it a reliable cloud service provider for compliance, open standards, and digital sovereignty. In this section, we will take a closer look at these three aspects and explain why Safespring is a secure partner for organizations looking for a cloud service provider that can reliably handle their needs. We will examine Safespring's commitment to following regulations relevant to cloud services, their support for open standards, and their solutions for ensuring digital sovereignty for their customers.
 
 {{% accordion title="Compliance" %}}
@@ -120,6 +120,7 @@ To manage the relationship with SciLifeLab and ensure their business needs are m
 Safespring also has a process for continuously improving our services and service delivery levels by learning from incidents and identifying opportunities for improvement. We implement changes that support customer business needs.
 
 ## Everything is Purchased Through Framework Agreements
+
 {{< ingress >}}
 Safespring has a framework agreement through Open Clouds for Research Environments (OCRE) that research and educational institutions can use.
 {{< /ingress >}}
@@ -143,12 +144,13 @@ GÉANT's role within OCRE involves helping to negotiate agreements with cloud se
 {{% /accordion %}}
 
 ## Power Your Project from the Cloud
+
 Large-scale storage and computing capacity are in high demand. Safespring has long worked with the academic sector to ensure that digital infrastructure, storage, and backup meet Sunet's requirements.
 
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 I am the Business Development Manager for the academic and public sectors and can assist you in using our services already procured under the OCRE agreement.
 
-{{< inline "Call" >}} +46 (0)76 868 00 59 
+{{< inline "Call" >}} +46 (0)76 868 00 59
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
 

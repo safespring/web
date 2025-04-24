@@ -18,7 +18,6 @@ sidebartext: "Alex shares insights on Asker's collaboration with Safespring and 
 saas: ""
 sidebarwhitepaper: ""
 service: "Compliant Kubernetes"
-aliases:
 ---
 
 {{< ingress >}}
@@ -30,6 +29,7 @@ But with smart solutions comes great responsibility: to store personal informati
 Alex Tidgård, founder and CPO of Asker and a licensed psychologist, shares more about the collaboration with Safespring.
 
 ### Better Candidate Selection with AI-Driven Platform at Safespring
+
 With its AI-driven interview platform, Asker helps managers and recruitment teams find the right person for the job. Asker's automatic interview notes, AI-based interview guides, and an interview structure based on the latest research ensure their clients save time, reduce biases, and build efficient interview processes. For each interview conducted, data is collected which Asker then uses to help clients make more objective decisions – and all data is stored at Safespring.
 
 In the public sector, Swedish data storage is often a requirement, but even in the private sector, awareness of compliance and information security is increasing. That's why we wanted to work with the safest option we could find – and that's Safespring.
@@ -43,11 +43,12 @@ Alex talks about how the demands for data security have increased among their cl
 {{< distance >}}
 
 ### No news is good news – the collaboration runs smoothly on its own
+
 Safespring is the foundation for Asker. On the GDPR-secure servers, all sensitive data, personal information, and even the AI platform itself are stored. Asker also collaborates with Elastisys, a Kubernetes platform service provider, and together the companies have made Asker completely independent of underlying suppliers.
 
 Onboarding and implementation were easy. Alex explains:
 
-*"The move to Elastisys involved some manual work, but the collaboration with Safespring was just a button press. We haven't heard from them since then, and 'no news is good news'. It runs on its own."*
+_"The move to Elastisys involved some manual work, but the collaboration with Safespring was just a button press. We haven't heard from them since then, and 'no news is good news'. It runs on its own."_
 
 {{< distance >}}
 
@@ -64,21 +65,26 @@ When questions about information security do arise, Safespring is readily availa
 {{< distance >}}
 
 {{% note "Alex's best tips for those considering a Swedish cloud" %}}
+
 ### 1. Transfer Data Early
+
 Even though the law surrounding data storage is still split between the EU and the Patriot Act, you can expect it to continue being regulated. Make the move before you suddenly realize you are breaking new laws and regulations.
 
 ### 2. Think Long-Term
+
 The longer you wait to make the move, the larger and more burdensome the work becomes. So don't wait too long.
 
 ### 3. Keep an Eye on the AI Act
+
 Right now,
 
- there are no EU-specific regulations related to AI, but it's only a matter of time before there are laws you need to comply with. Therefore, stay up to date with the regulations and choose a solution that helps you meet the requirements. The safest thing you can do is to choose Swedish!
+there are no EU-specific regulations related to AI, but it's only a matter of time before there are laws you need to comply with. Therefore, stay up to date with the regulations and choose a solution that helps you meet the requirements. The safest thing you can do is to choose Swedish!
 {{% /note %}}
 
 {{< distance >}}
 
 ## Want a Secure and Long-Term Partner for Your Data Storage?
+
 It should be easy for you to manage large amounts of data in an efficient and secure way. That's why Safespring has made it easy to compile common questions about IT security and compliance. And if you want recommendations specific to your business, get in touch!
 
 {{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}

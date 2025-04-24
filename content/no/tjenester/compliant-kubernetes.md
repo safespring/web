@@ -17,7 +17,6 @@ sidebarlinkname2: "Bestill demo"
 sidebarlinkurl2: "/demo/compute/"
 sidebarwhitepaper: ""
 startpage: "yes"
-aliases:
 Language: "No"
 ---
 
@@ -28,6 +27,7 @@ Kjører du Kubernetes i dag, eller planlegger du å gjøre det? Dette er en muli
 ![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-pyramid.svg)
 
 ### Styrk teamet ditt med ekstern kompetanse innen DevOps og Kubernetes
+
 Sammen med vår partner tilbyr Safespring en Kubernetes-plattform som gjør det enkelt å være i samsvar med regelverk angående sikkerhet og personvern. Vi tilbyr en omfattende driftsløsning hvor du som kunde kan fokusere på din egen forretning og la automatikken ta seg av rapporteringskrav i henhold til regelverk.
 
 Partneren vår er sertifisert "{{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}}" via CNCF og leverer en sikkerhetsherdet Kubernetes-distribusjon som følger "upstream" Kubernetes-versjoner tett og er et aktivt medlem av Cloud Native-fellesskapet. I tillegg til administrerte Kuberntes-tjenester, tilbyr vi opplæring og konsulenttjenester.
@@ -61,6 +61,7 @@ Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Welkin"
 </div>
 
 ## Forskjellen på lokal og utenlandsk skytjeneste for SaaS-selskaper
+
 {{< ingress >}}Det finnes mange grunner til at SaaS-selskaper velger å flytte personopplysningene sine tilbake til Europa.{{< /ingress >}}
 
 Mange tjenester som håndterer personlig informasjon, som navn, telefonnumre, hjemmeadresser og i mange tilfeller sensitive helsedata, må håndteres med stor forsiktighet. Det finnes mange regler og lover som må følges når det gjelder slik informasjon. "Welkin" reduserer byrden med å være i samsvar med en rekke lover og sikkerhetsstandarder, som GDPR, HIPAA, PCI-DSS og andre standarder som overlapper med ISO-27001.

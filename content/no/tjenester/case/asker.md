@@ -18,7 +18,6 @@ sidebartext: "Alex deler innsikt om Askers samarbeid med Safespring og viktighet
 saas: ""
 sidebarwhitepaper: ""
 service: "Compliant Kubernetes"
-aliases:
 ---
 
 {{< ingress >}}
@@ -30,6 +29,7 @@ Men med smarte løsninger kommer et stort ansvar: å lagre personopplysninger og
 Alex Tidgård er grunnlegger og CPO i Asker samt autorisert psykolog. Her forteller han mer om samarbeidet med Safespring.
 
 ### Bedre kandidatvalg med AI-drevet plattform hos Safespring
+
 Med sin AI-drevne intervjuplattform hjelper Asker ledere og rekrutteringsteam med å finne den rette personen for jobben. Askers automatiske intervjunotater, AI-baserte intervjuguides og en intervjustruktur basert på den nyeste forskningen sikrer at deres kunder sparer tid, reduserer fordommer og bygger effektive intervjuprosesser. For hver intervju som utføres, samles det inn data som Asker deretter hjelper kundene med å ta mer objektive beslutninger basert på – og all data lagres hos Safespring.
 
 Innen offentlig sektor er svensk datalagring ofte et krav, men også innen privat sektor øker bevisstheten om overholdelse og informasjonssikkerhet. Derfor ønsket vi å jobbe med det sikreste vi kunne finne – og det er Safespring.
@@ -43,11 +43,12 @@ Alex forteller om hvordan kravene til datasikkerhet har økt hos deres kunder, o
 {{< distance >}}
 
 ### No news is good news – samarbeidet går av seg selv
+
 Safespring er fundamentet for Asker. På de GDPR-sikre serverne lagres all sensitiv data, personopplysninger og også AI-plattformen selv. Asker samarbeider også med Elastisys, en Kubernetes platform service provider, og sammen har selskapene gjort Asker helt uavhengig av underliggende leverandører.
 
 Onboarding og implementering gikk lett. Alex forteller:
 
-*"Flyttingen til Elastisys involverte litt manuelt arbeid, men samarbeidet med Safespring var bare et tastetrykk unna. Vi har ikke hørt fra dem siden, og ‘no news is good news’. Det går av seg selv."*
+_"Flyttingen til Elastisys involverte litt manuelt arbeid, men samarbeidet med Safespring var bare et tastetrykk unna. Vi har ikke hørt fra dem siden, og ‘no news is good news’. Det går av seg selv."_
 
 {{< distance >}}
 
@@ -64,19 +65,24 @@ Når det likevel oppstår spørsmål om informasjonssikkerhet, er Safespring næ
 {{< distance >}}
 
 {{% note "Alex beste tips for deg som vurderer en svensk sky" %}}
+
 ### 1. Flytt over dataen tidlig
+
 Selv om juridiske aspekter rundt datalagring fortsatt er delt mellom EU og Patriot Act, kan du forvente at det vil fortsette å bli regulert. Gjør flyttingen før du plutselig innser at du bryter nye lover og regler.
 
 ### 2. Tenk langsiktig
+
 Jo lengre du venter med å gjøre flyttingen, desto større og mer belastende blir arbeidet. Vent derfor ikke for lenge.
 
 ### 3. Hold øye med AI Act
+
 For øyeblikket er det mangel på EU-spesifikke bestemmelser knyttet til AI, men det er bare et spørsmål om tid før det er lover du må forholde deg til. Hold deg derfor oppdatert med regelverket og velg en løsning som hjelper deg med å oppfylle kravene. Det sikreste du kan gjøre er å velge svensk!
 {{% /note %}}
 
 {{< distance >}}
 
 ## Ønsker du også en sikker og langsiktig partner for din datalagring?
+
 Det skal være enkelt for deg å håndtere store mengder data på en effektiv og sikker måte. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og compliance. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 
 {{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}

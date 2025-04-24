@@ -18,7 +18,6 @@ sidebartext: "Andreas deler innsikt om Scaleouts samarbeid med Safespring og vik
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
-aliases:
 ---
 
 {{< ingress >}}
@@ -30,6 +29,7 @@ Er det i det hele tatt mulig å bruke hvis man skal følge GDPR? Scaleout System
 Andreas Hellander er en av de fem grunnleggerne av Scaleout Systems. Her forteller han mer om samarbeidet med Safespring.
 
 ### Føderert maskinlæring som oppfyller databeskyttelseskrav
+
 Etterspørselen etter Scaleouts løsninger fortsetter å øke. Selskapet utvikler ML-plattformen Scaleout Studio som tilbyr verktøy for maskinlæring. En helt unik funksjon er at Studio tilbyr økt datasikkerhet og forbedret privatlivsnivå gjennom føderert maskinlæring. Resultatet er muligheten til å samarbeide om AI uten å risikere eksponering av privat eller sensitiv data. Dette er spesielt viktig i en tid når regulative krav, som for eksempel GDPR, stiller høye krav til databeskyttelse. Derfor har de valgt å samarbeide med Safespring. Andreas forteller:
 
 {{< quote "Andreas Hellander, CEO i Scaleout" >}}
@@ -39,6 +39,7 @@ Etterspørselen etter Scaleouts løsninger fortsetter å øke. Selskapet utvikle
 {{< distance >}}
 
 ### Felles verdier er et sterkt fundament i samarbeidet
+
 Safesprings fokus på datasikkerhet spiller en sentral rolle i partnerskapet fordi Scaleout Systems verdsetter en sikker og pålitelig skyinfrastruktur. Siden de opererer internasjonalt og også mot andre leverandører, ser de store fordeler med en svensk offentlig skyplattform – så mye at de nå kjører både sin egen utvikling og produksjon på Safespring.
 
 I tillegg er det felles verdier som styrker forståelsen mellom selskapene. Begge selskapene bruker åpen kildekode og deler visjonen om et mer lokalt, samarbeidende og sikkert sky-miljø.
@@ -50,6 +51,7 @@ I tillegg er det felles verdier som styrker forståelsen mellom selskapene. Begg
 {{< distance >}}
 
 ### Store mengder data stiller høye krav til lagring
+
 Siden maskinlæring krever store mengder data for å kunne trene og utvikle modeller, stiller Scaleout Systems høye krav til Safespring. Skalerbarhet, tilgjengelighet av datalagring og beregningskraft er avgjørende faktorer.
 
 Spørsmålet om digital suverenitet spiller også en rolle når det gjelder valg av datasenter og skytjenesteleverandør. Andreas forteller:
@@ -61,17 +63,22 @@ Spørsmålet om digital suverenitet spiller også en rolle når det gjelder valg
 {{< distance >}}
 
 {{% note "3 tips fra Andreas til deg som vurderer svensk sky" %}}
+
 ### 1. Ha felles verdier
+
 I et samarbeid hvor dere deler den samme grunntanken rundt programvareutviklingsideologi, kan dere sparre hverandre til utvikling i riktig retning.
 
 ### 2. Velg en leverandør med åpen kildekode
+
 Da får du tilgang til en fleksibel, transparent og tilpassbar infrastruktur. Dessuten er det lettere å jobbe videre og gjøre kontinuerlige forbedringer i stedet for å være bundet til leverandørens utvikling.
 
 ### 3. Unngå potensielle låsningseffekter
+
 Overforbruk av tjenester og APIer spesifikke for en leverandør kan føre til låsningseffekter. Det samme kan "skjulte" kostnader som egresskostnader. I dag er alle forutsetningene til stede for å jobbe "cloud native" på en måte som gir deg fleksibilitet og dermed unngår låsninger. Dette er spesielt viktig når du jobber med ny teknologi som maskinlæring, der verktøy utvikles raskt og innovativt.
 {{% /note %}}
 
 ## Vil du også ha en sikker og langsiktig partner for din datalagring?
+
 Det skal være enkelt for deg å håndtere store mengder data på en effektiv og sikker måte. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og overensstemmelse. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 
 {{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}

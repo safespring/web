@@ -18,16 +18,15 @@ sidebartext: "Göteborgs Universitet beskriver vinsten av att följa upp förbru
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Backup"
-aliases:
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Backup av 30 servrar" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-file-shield" text="23 Terabyte data säkrat" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-network-wired" text="Egen org. uppsättning" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-pen-paintbrush" text="Eget utseende på tjänsten" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-sunet" text="Snabb fiber-uppkoppling" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-clock-rotate-left" text="Backup av 30 servrar" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-file-shield" text="23 Terabyte data säkrat" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-network-wired" text="Egen org. uppsättning" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-pen-paintbrush" text="Eget utseende på tjänsten" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-sunet" text="Snabb fiber-uppkoppling" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}
