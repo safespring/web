@@ -11,7 +11,8 @@ socialmediabild: "safespring_social_31.jpg"
 section: "blogg"
 author: "Fredric Wallsten"
 aliases:
-    - /blogg/svt-upphandling
+- /blogg/svt-upphandling
+- /blogg/2020/2020-03-svt-upphandling/
 ---
 
 {{< ingress >}}

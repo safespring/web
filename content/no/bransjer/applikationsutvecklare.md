@@ -8,6 +8,8 @@ intro: "MedTech, EdTech eller andre moderne selskaper som søker Compliant Kuber
 background: "safespring_bilder_10.jpg"
 logobannersaas: "yes"
 language: "Nei"
+aliases:
+- /no/bransjer/applikationsutvecklare/
 ---
 <div class="ingress"><p>Safesprings skyplattform er allsidig og et veldig godt fundament for mange forskjellige typer applikasjoner. Plattformen er godt designet for SaaS-tjenester siden skalérbarhet og fleksibilitet er viktige komponenter.</p></div>
 

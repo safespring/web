@@ -56,6 +56,8 @@ chapters:
   - title: "Ransomware"
     time: 564
     timeFormatted: "9:24"
+aliases:
+- /demo/backup/backup-overview/
 ---
 
 {{< ingress >}}

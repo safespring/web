@@ -15,6 +15,8 @@ card: "safespring_card_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
 toc: "Innhold"
 language: "No"
+aliases:
+- /whitepaper/schrems-ii-norwegian/
 ---
 
 

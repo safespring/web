@@ -11,6 +11,8 @@ sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
+aliases:
+- /career/ceph-engineer/
 ---
 
 ## Join our Infrastructure team as Ceph Engineer!

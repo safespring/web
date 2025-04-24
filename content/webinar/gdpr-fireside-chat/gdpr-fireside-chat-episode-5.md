@@ -16,9 +16,10 @@ audience: "saas"
 sidebarlinkurl: ""
 sidebarlinkname: ""
 aliases:
-    - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/&#xA0/
-    - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/
-    - /webinar/gdpr-fireside-chat/fifth-fireside-chat-it-sakerhetsbolaget/
+- /webinar/fifth-fireside-chat-it-sakerhetsbolaget/&#xA0/
+- /webinar/fifth-fireside-chat-it-sakerhetsbolaget/
+- /webinar/gdpr-fireside-chat/fifth-fireside-chat-it-sakerhetsbolaget/
+- /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-5/
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-5/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-5.jpg"
 chaptersTitle: "I detta avsnitt"

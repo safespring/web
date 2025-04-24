@@ -9,6 +9,8 @@ background: "safespring-government-background.svg"
 startpage: "yes"
 language: "No"
 section: "Safespring"
+aliases:
+- /no/bransjer/myndigheter/
 ---
 
  ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)

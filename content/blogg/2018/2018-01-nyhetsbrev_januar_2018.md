@@ -9,7 +9,8 @@ section: "Tech update"
 language: "No"
 documentation: "Backup"
 aliases:
-    - /blogg/nyhetsbrev_januar_2018
+- /blogg/nyhetsbrev_januar_2018
+- /blogg/2018/2018-01-nyhetsbrev_januar_2018/
 ---
 
 Våre backuptjenester finnes i tre ulike varianter, og med guiden får dere en veiledning i når de passer best ut fra et kostnadsperspektiv.

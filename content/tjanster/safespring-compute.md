@@ -19,8 +19,9 @@ sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
 aliases:
-    - /compute/
-    - /safespring-compute/
+- /compute/
+- /safespring-compute/
+- /tjanster/safespring-compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"

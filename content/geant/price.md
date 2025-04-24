@@ -15,6 +15,8 @@ sidebarlinkurl: "/pricelist/geant/geant_safespring_pricelist.xlsx"
 sidebarlinkname2: "Service Catalogue"
 sidebarlinkurl2: "/geant/service-catalogue/"
 noindex: "x"
+aliases:
+- /geant/price/
 ---
 
 {{% note "Information" %}}

@@ -12,6 +12,8 @@ sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
+aliases:
+- /tjanster/dockyards/
 ---
 
 {{< icon-block-container >}}

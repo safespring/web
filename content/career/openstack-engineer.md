@@ -11,6 +11,8 @@ sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
+aliases:
+- /career/openstack-engineer/
 ---
 
 ## Safespring is hiring OpenStack engineers!

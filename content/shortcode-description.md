@@ -3,6 +3,8 @@ title: "Descriptions of short codes"
 date: 2024-08-20
 draft: true
 language: "En"
+aliases:
+- /shortcode-description/
 ---
 
 ## {{ < services >}}

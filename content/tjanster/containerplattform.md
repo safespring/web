@@ -18,6 +18,8 @@ sidebarlinkurl: "#intresserad-av-att-testa-plattformen"
 showthedate: false
 banner: "blue-hover-tech"
 language: "Sv"
+aliases:
+- /tjanster/containerplattform/
 ---
 
 {{< ingress >}}

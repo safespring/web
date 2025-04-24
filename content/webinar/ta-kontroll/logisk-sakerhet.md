@@ -29,6 +29,8 @@ chapters:
 - title: "Migration"
   time: 748
   timeFormatted: "12:28"
+aliases:
+- /webinar/ta-kontroll/logisk-sakerhet/
 ---
 
 

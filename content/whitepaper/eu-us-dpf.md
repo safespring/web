@@ -16,6 +16,8 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 toc: "Innehåll"
+aliases:
+- /whitepaper/eu-us-dpf/
 ---
 
 {{< ingress >}}

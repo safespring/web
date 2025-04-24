@@ -18,6 +18,8 @@ sidebartext: "Andreas deler innsikt om Scaleouts samarbeid med Safespring og vik
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
+aliases:
+- /no/tjenester/case/scaleout/
 ---
 
 {{< ingress >}}

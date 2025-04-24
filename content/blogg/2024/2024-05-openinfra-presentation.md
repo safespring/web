@@ -16,6 +16,8 @@ sidebarlinkname: "Presentation"
 sidebarlinkurl: ""
 sidebarlinkicon: ""
 sidebarimage: "jon-openinfra-2024.webp"
+aliases:
+- /blogg/2024/2024-05-openinfra-presentation/
 ---
 
 {{< ingress >}}

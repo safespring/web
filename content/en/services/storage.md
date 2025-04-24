@@ -22,6 +22,8 @@ section: "Public Cloud"
 documentation: "Storage"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
+aliases:
+- /en/services/storage/
 ---
 
 

@@ -6,6 +6,8 @@ draft: false
 document image: "safespring_card_22.jpg"
 general: "yes"
 language: "En"
+aliases:
+- /dokument/cookies-en/
 ---
 
 ## About the Use of Cookies

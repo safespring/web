@@ -16,7 +16,8 @@ card: "safespring_card_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
 toc: "Innehåll"
 aliases:
-    - /schrems/
+- /schrems/
+- /whitepaper/schrems-ii/
 ---
 
 {{< ingress >}}

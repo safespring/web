@@ -7,7 +7,8 @@ draft: false
 intro: "Safespring tillhandahåller säkra och hållbara molntjänster utan inlåsning"
 background: "safespring-government-background.svg"
 aliases:
-    - /myndighet/
+- /myndighet/
+- /branscher/myndigheter/
 sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
 sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"

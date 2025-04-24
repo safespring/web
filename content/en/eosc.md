@@ -14,8 +14,9 @@ banner: "blue-hover-tech"
 section: ""
 language: "En"
 aliases:
-    - /eosc
-    - /EOSC
+- /eosc
+- /EOSC
+- /en/eosc/
 ---
 
 {{< ingress >}}

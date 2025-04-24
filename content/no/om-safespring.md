@@ -6,6 +6,8 @@ draft: false
 language: "No"
 section: "Safespring"
 Language: "No"
+aliases:
+- /no/om-safespring/
 ---
 
 {{< ingress >}}

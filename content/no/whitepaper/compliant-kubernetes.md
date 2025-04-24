@@ -11,6 +11,8 @@ socialmedia: "safespring-compute.jpg"
 devops: ""
 section: "Public Cloud"
 language: "No"
+aliases:
+- /no/whitepaper/compliant-kubernetes/
 ---
 
 {{% ingress %}}

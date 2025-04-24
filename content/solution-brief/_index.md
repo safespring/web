@@ -17,4 +17,6 @@ link: "#"
 audience: "saas"
 nosidebar: "x"
 fullwidth: "x"
+aliases:
+- /solution-brief/
 ---

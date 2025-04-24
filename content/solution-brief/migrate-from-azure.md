@@ -15,6 +15,8 @@ toc: "Innehåll"
 background: "safespring-azure.png"
 socialmediabild: ""
 language: "Se"
+aliases:
+- /solution-brief/migrate-from-azure/
 ---
 
 ## Migrering till Compliant Kubernetes

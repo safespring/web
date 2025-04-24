@@ -7,6 +7,8 @@ intro: "Safespring har verksamhet i Sverige och i Norge med huvudkontor i Solna.
 tags: ""
 showthedate: false
 pageimage: ""
+aliases:
+- /kontakt/
 ---
 
 

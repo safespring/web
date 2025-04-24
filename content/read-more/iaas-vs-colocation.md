@@ -1,3 +1,10 @@
+---
+title: ""
+date: ""
+draft: false
+aliases:
+- /read-more/iaas-vs-colocation/
+---
 ## Infrastruktur som en tjänst (IaaS) - Moderna lösningar för dina IT-behov
 
 Infrastruktur som en tjänst (IaaS) är en molnbaserad tjänst som erbjuder hög nivå av flexibilitet och skalbarhet för företag. I stället för att investera i fysiska datacenter och servrar, hyr företag istället dessa resurser som en fullständigt skalbar tjänst. Detta innebär att du kan anpassa din IT-infrastruktur efter dina specifika behov och endast betalar för de resurser du faktiskt använder.

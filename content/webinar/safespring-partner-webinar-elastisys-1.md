@@ -16,7 +16,8 @@ chaptersTitle: "I detta avsnitt"
 chapters:
 sidebar: "x"
 aliases:
-    - /webinar/fireside-chat-cloud-migration/
+- /webinar/fireside-chat-cloud-migration/
+- /webinar/safespring-partner-webinar-elastisys-1/
 ---
 
 {{< ingress>}}

@@ -10,6 +10,8 @@ sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01.pdf"
 general: "yes"
 toc: ""
 language: "No"
+aliases:
+- /dokument/acceptable-use-policy-no/
 ---
 
 {{< ingress >}}

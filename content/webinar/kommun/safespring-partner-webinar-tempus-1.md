@@ -16,7 +16,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-tempus-1.jpg"
 sidebar: "x"
 aliases:
-   - /webinar/kommun/tempus
+- /webinar/kommun/tempus
+- /webinar/kommun/safespring-partner-webinar-tempus-1/
 ---
 
 ### Om webbinariet

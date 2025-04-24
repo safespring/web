@@ -9,6 +9,8 @@ sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
+aliases:
+- /tjanster/utbildning/introduction-to-cloud-computing/
 ---
 
 ## Description

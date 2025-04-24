@@ -9,6 +9,8 @@ sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
+aliases:
+- /tjanster/utbildning/modern-devops/
 ---
 ## Description
 For technical professionals that wants to learn how to build infrastructure for the cloud. We will cover what it means to build and support cloud environments for your organization microservices need based on Kubernetes. We learn how to build production ready microservice cluster that are secure, observable and supporting Continuous Integration/Deployment and Delivery, accelerating your organization's time to market for your development efforts.

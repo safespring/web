@@ -15,7 +15,8 @@ section: "blogg"
 author: "Rob Haverkamp"
 TOC: "In this post"
 aliases:
-    - /blogg/2025/2024-02-engineering-plans/
+- /blogg/2025/2024-02-engineering-plans/
+- /blogg/2025/2025-02-engineering-plans/
 ---
 
 

@@ -6,7 +6,8 @@ draft: true
 showthedate: true
 section: "tech update"
 aliases:
-    - /blogg/meltdown
+- /blogg/meltdown
+- /blogg/2018/2018-01-meltdown/
 ---
 
 Safespring er kjent med flere sårbarheter ("Meltdown" og "Spectre") som rammer alle operativsystemer på moderne mikroprosessorer, og som kan gjøre det mulig for en prosess å lese andre prosessers minne. Sårbarhetene rammer både personlige datamaskiner, mobile enheter og skytjenester.

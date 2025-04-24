@@ -43,7 +43,8 @@ chapters:
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-ocre/master.m3u8"
 thumbnail: "/img/event/cards/safespring_card_44.jpg"
 aliases:
-   - /webinar/dfn
+- /webinar/dfn
+- /webinar/safespring-demo-ocre/
 ---
 
 {{< ingress>}}

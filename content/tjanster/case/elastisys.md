@@ -18,6 +18,8 @@ sidebartext: "Rob McCuaig delar insikter om Elastisys' samarbete med Safespring 
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
+aliases:
+- /tjanster/case/elastisys/
 ---
 
 {{< ingress >}}

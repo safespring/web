@@ -1,3 +1,10 @@
+---
+title: ""
+date: ""
+draft: false
+aliases:
+- /read-more/2024-06-ocre-news/
+---
 
 ### Ny Containertjänst Baserad på OKD Kubernetes
 Safespring lanserar en ny containertjänst som bygger på OKD, en variant av Kubernetes. Tjänsten stödjer Single Sign-On (SSO) och erbjuder ett självbetjänings-API där du kan administrera nya projekt och användare. Den levereras som en delad tjänst där du styr kapaciteten genom att lägga till arbetsnoder till klustret. Målet är att ge enkel tillgång till en komplett containermiljö till ett förutsägbart pris. Prissättningen kommer att vara per arbetsnod och timme, liknande vår nuvarande modell för compute- och lagringsresurser.

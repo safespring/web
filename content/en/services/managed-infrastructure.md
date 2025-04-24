@@ -9,6 +9,8 @@ form: ""
 socialmedia: "safespring-private-cloud.jpg"
 section: "Private Cloud"
 toc: "On this page"
+aliases:
+- /en/services/managed-infrastructure/
 ---
 
 {{< ingress >}}

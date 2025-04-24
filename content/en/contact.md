@@ -8,6 +8,8 @@ intro: "Safespring operates in Sweden and Norway with its head office in Solna. 
 tags: ""
 showthedate: false
 pageimage: ""
+aliases:
+- /en/contact/
 ---
 
 {{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="+46 8-55 10 73 70" text="Call us" link="tel:+46855107370" >}}

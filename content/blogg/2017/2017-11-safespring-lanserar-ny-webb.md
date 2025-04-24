@@ -9,7 +9,8 @@ eventbild: "safespring_background_0.jpg"
 socialmediabild: "safespring_social_0.jpg"
 section: "blogg"
 aliases:
-    - /blogg/safespring-lanserar-ny-webb
+- /blogg/safespring-lanserar-ny-webb
+- /blogg/2017/2017-11-safespring-lanserar-ny-webb/
 ---
 
 Safespring har nu lanserat en ny webb för att tydligare beskriva vårt erbjudande och våra tjänster. Sidan kommer att uppdateras kontinuerligt för att spegla våra lanseringar och nyheter.

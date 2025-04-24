@@ -14,6 +14,8 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
+aliases:
+- /no/tjenester/machine-learning/
 ---
 
 {{< ingress >}}

@@ -6,6 +6,8 @@ intro: "Safespring mottar og lagrer opplysningene som skrives inn i kontaktskjem
 dokumentbilde: "safespring_card_20.jpg"
 general: "yes"
 language: "No"
+aliases:
+- /dokument/personuppgiftshantering-no/
 ---
 
 {{< ingress >}}

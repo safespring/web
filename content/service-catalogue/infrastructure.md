@@ -17,6 +17,8 @@ socialmedia: "safespring-compute.jpg"
 section: "Safespring Service Catalogue"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
+aliases:
+- /service-catalogue/infrastructure/
 ---
 
 

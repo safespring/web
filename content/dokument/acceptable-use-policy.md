@@ -9,6 +9,8 @@ sidebarlinkicon: "fa-file-lines"
 sidebarlinkurl: "/documents/safespring-acceptable_use_policy.pdf"
 general: "yes"
 toc: ""
+aliases:
+- /dokument/acceptable-use-policy/
 ---
 
 

@@ -10,6 +10,8 @@ nosidebar: "none"
 fullwidth: "x"
 language: "En"
 nolist: "x"
+aliases:
+- /service-catalogue/
 ---
 
 {{< service-catalogue >}}

@@ -37,6 +37,8 @@ chapters:
 - title: "Info: befintliga kunder"
   time: 1425
   timeFormatted: "23:45"
+aliases:
+- /webinar/sunet-backup-demo/
 ---
 
 

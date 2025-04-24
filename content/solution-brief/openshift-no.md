@@ -16,6 +16,8 @@ socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Innholdsfortegnelse"
 language: "No"
+aliases:
+- /solution-brief/openshift-no/
 ---
 
 ![Safespring OpenShift benefits](/img/safespring_key-points-openshift-2.svg)

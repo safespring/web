@@ -9,7 +9,8 @@ eventbild: "safespring_background_0.jpg"
 socialmediabild: "safespring_social_0.jpg"
 section: "blogg"
 aliases:
-    - /blogg/ebook_vd_guide
+- /blogg/ebook_vd_guide
+- /blogg/2017/2017-12-ebook_vd_guide/
 ---
 
 Safespring har författat en [guide][ebook] till dig som står i begrepp att ta

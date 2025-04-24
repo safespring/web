@@ -13,7 +13,8 @@ sidebarlinkurl: "/demo"
 sidebarlinkname2: "Kontaka Safespring"
 sidebarlinkurl2: "/kontakt"
 saas: ""
-aliases: ""
+aliases:
+- /gdpr/
 TOC: "På denna sida"
 ---
 

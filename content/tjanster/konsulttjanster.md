@@ -8,7 +8,8 @@ background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
 aliases:
-    - /konsulttjanster/
+- /konsulttjanster/
+- /tjanster/konsulttjanster/
 ---
 <div class="ingress"><p>Att skapa säkra och väl fungerande molntjänster med öppen källkod kräver expertis med hög kompetens eftersom att det är många delar som skall fogas ihop. Vi på Safespring har den kompetensen och kan på så vis kan erbjuda avancerade konsulttjänster för att hjälpa ert företag med er molnstrategi.</p></div>
 

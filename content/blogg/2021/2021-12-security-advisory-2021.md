@@ -11,7 +11,8 @@ socialmediabild: ""
 language: "en"
 section: "Tech update"
 aliases:
-    - /blogg/security-advisory-2021
+- /blogg/security-advisory-2021
+- /blogg/2021/2021-12-security-advisory-2021/
 ---
 
 {{% ingress %}}

@@ -10,8 +10,9 @@ card: "safespring_card_12.jpg"
 eventbild: "safespring_background_12.jpg"  
 socialmediabild: "safespring_social_12.jpg"  
 section: "blogg"
-aliases: 
-   - /blogg/tidslinje
+aliases:
+- /blogg/tidslinje
+- /blogg/2018/2018-08-tidslinje/
 ---
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}

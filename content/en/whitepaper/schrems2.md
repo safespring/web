@@ -14,6 +14,8 @@ eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33-2.gif"
 toc: "Table of contents"
 language: "En"
+aliases:
+- /en/whitepaper/schrems2/
 ---
 
 ## Background

@@ -17,7 +17,8 @@ sidebarlinkurl: "/en/services/containerplatform/"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact"
 saas: ""
-aliases: ""
+aliases:
+- /schedule-demo-success/
 noindex: "yes"
 ---
 

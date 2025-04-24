@@ -20,6 +20,8 @@ section: "Safespring Compute"
 Language: "No"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
+aliases:
+- /no/tjenester/compute/
 ---
 
 {{< icon-block-container >}}

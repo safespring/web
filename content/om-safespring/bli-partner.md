@@ -4,6 +4,8 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Kul att du är intresserad av att höra mer kring vad ett partnerskap med oss innebär. Vi söker ständigt nya spännande vägar att bära ut våra tjänster!"
 background: ""
+aliases:
+- /om-safespring/bli-partner/
 ---
 Kul att du är intresserad av att höra mer kring vad ett partnerskap med oss innebär. Vi söker ständigt nya spännande vägar att bära ut våra tjänster!
 

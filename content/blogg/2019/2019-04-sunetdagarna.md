@@ -9,7 +9,8 @@ eventbild: "safespring_background_5.jpg"
 socialmediabild: "safespring_social_5.jpg"
 section: "blogg"
 aliases:
-    - /blogg/sunetdagarna
+- /blogg/sunetdagarna
+- /blogg/2019/2019-04-sunetdagarna/
 ---
 
 ### Ladda ner Safesprings presentationer

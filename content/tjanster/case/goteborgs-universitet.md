@@ -18,6 +18,8 @@ sidebartext: "Göteborgs Universitet beskriver vinsten av att följa upp förbru
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Backup"
+aliases:
+- /tjanster/case/goteborgs-universitet/
 ---
 
 {{< icon-block-container >}}

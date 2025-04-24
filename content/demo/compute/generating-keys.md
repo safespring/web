@@ -28,6 +28,8 @@ chapters:
 - title: "Upload key"
   time: 92
   timeFormatted: "1:32"
+aliases:
+- /demo/compute/generating-keys/
 ---
 
 {{< ingress >}}

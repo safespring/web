@@ -12,6 +12,8 @@ language: "En"
 sectiontext: "Blog"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+- /blogg/2025/2025-03-eurostack/
 ---
 
 {{< ingress >}}

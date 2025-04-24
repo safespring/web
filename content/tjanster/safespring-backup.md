@@ -18,8 +18,9 @@ sidebarlinkname2: "Pris för Backup"
 sidebarlinkurl2: "/pris/#safespring-backup"
 socialmedia: "safespring-backup.jpg"
 aliases:
-    - /backup/
-    - /safespring-backup/
+- /backup/
+- /safespring-backup/
+- /tjanster/safespring-backup/
 section: "Public Cloud" 
 megamenu: "yes"
 ---

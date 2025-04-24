@@ -9,6 +9,8 @@ socialmedia: "safespring_social_01.jpg"
 saas: "yes"
 sidebarwhitepaper: "yes"
 nolist: "n"
+aliases:
+- /saas/
 ---
 
 ![Safespring pyramid](/img/graphics/safespring-pyramid-2025.svg)

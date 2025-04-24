@@ -18,7 +18,8 @@ sidebarimage: ""
 nosidebar: "invisible"
 toc: "Avsnitt"
 aliases:
-    - /kubernetes-webcast
+- /kubernetes-webcast
+- /webinar/kubernetes-15-principles/
 ---
 
 {{< ingress >}}

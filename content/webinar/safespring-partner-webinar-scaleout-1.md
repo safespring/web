@@ -30,7 +30,8 @@ chapters:
   time: 2173
   timeFormatted: "36:13"
 aliases:
-    - /webinar/scaleout/
+- /webinar/scaleout/
+- /webinar/safespring-partner-webinar-scaleout-1/
 ---
 
 ### Om webbinariet

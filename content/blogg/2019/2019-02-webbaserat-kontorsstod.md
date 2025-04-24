@@ -9,7 +9,8 @@ eventbild: "safespring_background_1.jpg"
 socialmediabild: "safespring_social_1.jpg"
 section: "blogg"
 aliases:
-    - /blogg/webbaserat-kontorsstod
+- /blogg/webbaserat-kontorsstod
+- /blogg/2019/2019-02-webbaserat-kontorsstod/
 ---
 
 

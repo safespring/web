@@ -31,6 +31,8 @@ chapters:
 - title: "Allow SSH"
   time: 322
   timeFormatted: "5:22"
+aliases:
+- /demo/compute/boot-instance-from-image/
 ---
 
 {{< ingress >}}

@@ -13,6 +13,8 @@ sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute"
 socialmedia: ""
 devops: ""
+aliases:
+- /tjanster/tloop/
 ---
 
 {{< icon-block-container >}}

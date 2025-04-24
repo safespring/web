@@ -42,6 +42,8 @@ chapters:
   - title: "Zero-day-attack"
     time: 776
     timeFormatted: "12:56"
+aliases:
+- /webinar/kubernetes-15-principles/avsnitt-6/
 ---
 
 ## Avsnitt 6

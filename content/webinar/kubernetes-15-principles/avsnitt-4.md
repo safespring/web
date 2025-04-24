@@ -33,6 +33,8 @@ chapters:
   - title: "Failing hard, fast, and loudly"
     time: 576
     timeFormatted: "9:36"
+aliases:
+- /webinar/kubernetes-15-principles/avsnitt-4/
 ---
 
 ## Avsnitt 4
