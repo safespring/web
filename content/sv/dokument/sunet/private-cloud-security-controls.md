@@ -1,4 +1,5 @@
 ---
+language: "en"
 title: "Sunet - Safespring Private Cloud Security Controls"
 date: 2020-11-11T14:29:26+02:00
 draft: false

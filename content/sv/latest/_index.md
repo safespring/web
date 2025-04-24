@@ -1,4 +1,5 @@
 ---
+language: "en"
 title: "Safespring Knowledge Hub"
 section: "News and content"
 date: 2022-12-07T13:58:58+01:00

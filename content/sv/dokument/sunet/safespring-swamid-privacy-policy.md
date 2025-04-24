@@ -1,4 +1,5 @@
 ---
+language: "en"
 title: "Safespring SWAMID privacy policy"
 date: 2022-12-07T08:29:26+02:00
 draft: false
