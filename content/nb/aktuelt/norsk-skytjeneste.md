@@ -13,7 +13,8 @@ section: "Fredric Wallsten"
 article: "DN.no"
 socialmedia: "/socialmedia/fredric-social-article.jpg"
 aliases:
-- /no/aktuelt/norsk-skytjeneste/
+  - /no/aktuelt/norsk_skytjeneste/
+  - /no/aktuelt/norsk-skytjeneste/
 ---
 
 ## Norsk statligt skytjeneste?
