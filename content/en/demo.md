@@ -20,7 +20,6 @@ sidebarknapp: ""
 sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
-aliases: ""
 ---
 
 {{< ingress >}}

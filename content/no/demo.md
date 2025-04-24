@@ -20,7 +20,6 @@ sidebarknapp: ""
 sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
-aliases: ""
 ---
 
 {{< ingress >}}
@@ -28,7 +27,6 @@ Hvilken verdi tilfører vårt medlemskap i Gaia-X, moderne infrastruktur og eksp
 {{< /ingress >}}
 
 Med Safespring får du tilgang til en rekke verktøy og ressurser som hjelper deg å bygge, distribuere og skalere applikasjonene dine raskt og enkelt. Plattformen vår bygger på noen av de mest pålitelige og sikre infrastrukturene i bransjen, så du kan være trygg på at dataene og applikasjonene dine er sikre.
-
 
 ### Dette er inkludert
 
