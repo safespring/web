@@ -10,8 +10,6 @@ pageimage: ""
 intro: "Tillsammans skapar vi en säkrare, och mer kostnadseffektiv digital infrastruktur."
 toc: "På denna sida"
 nosidebar: ""
-aliases:
-- /pris/
 ---
 
 {{< icon-block-container >}}

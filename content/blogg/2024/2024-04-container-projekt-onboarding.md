@@ -15,8 +15,6 @@ TOC: "In this guide"
 sidebarlinkname: "GitHub repository"
 sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/project-onboarding"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
-aliases:
-- /blogg/2024/2024-04-container-projekt-onboarding/
 ---
 
 

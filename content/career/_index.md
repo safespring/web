@@ -12,8 +12,6 @@ sidebarlinkicon: "fa-arrow-down"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 list: "horisontal"
-aliases:
-- /career/
 ---
 
 {{< ingress >}}

@@ -18,8 +18,6 @@ section: "Safespring Service Catalogue"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
-aliases:
-- /service-catalogue/third-party-software-licenses/
 ---
 
 {{< ingress >}}

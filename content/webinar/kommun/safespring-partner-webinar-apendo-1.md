@@ -16,8 +16,7 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-apendo-1.jpg"
 sidebar: "x"
 aliases:
-- /webinar/kommun/apendo.md
-- /webinar/kommun/safespring-partner-webinar-apendo-1/
+   - /webinar/kommun/apendo.md
 ---
 
 {{< icon-block-horisontal icon="fa-kit fa-safespring-icon" text="Safespring Service" description="Compute" color="#3C9BCD">}}

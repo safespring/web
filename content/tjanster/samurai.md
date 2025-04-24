@@ -17,8 +17,6 @@ socialmedia: ""
 sidebartext: ""
 devops: ""
 section: "Tjänster"
-aliases:
-- /tjanster/samurai/
 ---
 
 ## NTT Securitys Cyberhotdetektion och respons för ditt företag, byggd på Safesprings molnplattform

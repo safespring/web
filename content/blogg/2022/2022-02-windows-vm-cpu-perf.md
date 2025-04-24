@@ -13,8 +13,7 @@ author: "Øyvind Christiansen"
 language: "En"
 toc: ""
 aliases:
-- /blogg/2022-02-windows-vm-cpu-perf
-- /blogg/2022/2022-02-windows-vm-cpu-perf/
+    - /blogg/2022-02-windows-vm-cpu-perf
 ---
 
 {{< ingress >}}

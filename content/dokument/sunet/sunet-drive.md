@@ -12,8 +12,6 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring_solution-brief_sunet-drive.pdf"
 noindex: ""
 toc: "Table of contents"
-aliases:
-- /dokument/sunet/sunet-drive/
 ---
 
 {{< ingress >}}

@@ -8,8 +8,6 @@ background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår säkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring_information-security-guidelines_2024.pdf"
 socialmedia: "safespring-datacenter.jpg"
-aliases:
-- /om-safespring/Datacenter/
 ---
 
 ![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)

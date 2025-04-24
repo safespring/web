@@ -14,8 +14,6 @@ background: "safespring-storage.png"
 socialmediabild: "safespring_social_27.gif"
 socialmedia: "/blogg/socialmedia/safespring_social_27.gif"
 toc: "Innehållsförteckning"
-aliases:
-- /solution-brief/objektlagring/
 ---
 
 {{< ingress >}}

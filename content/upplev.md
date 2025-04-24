@@ -8,8 +8,6 @@ showthedate: false
 pageimage: ""
 intro: "With Safespring's cloud-based infrastructure service, you can scale up and down your infrastructure as needed. The service is flexible, fully automated, and based on self-service through a portal."
 form: "no"
-aliases:
-- /upplev/
 ---
 ## Access your resources
 Stable infrastructure and resource consumption as needed. With Safespring, you get an efficient model for service delivery without losing control over your data.

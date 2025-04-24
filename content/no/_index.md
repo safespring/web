@@ -5,6 +5,4 @@ date: "2020-09-25"
 draft: false
 language: "No"
 layout: "index"
-aliases:
-- /no/
 ---

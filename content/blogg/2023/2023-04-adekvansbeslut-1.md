@@ -17,8 +17,6 @@ sidebarlinkname: ""
 sidebarlinkurl: ""
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
-aliases:
-- /blogg/2023/2023-04-adekvansbeslut-1/
 ---
  
 {{< ingress >}}

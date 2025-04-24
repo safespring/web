@@ -8,8 +8,6 @@ cardtitle: "IT-leverantörer"
 cardicon: "fa-solid fa-person-chalkboard"
 cardcolor: "#417DA5"
 cardintro: "Är ni en IT-partner eller systemintegratör som har behov av en kompetent molnleverantör?"
-aliases:
-- /branscher/it-leverantorer/
 ---
 <div class="ingress"><p>Vi är ju själva i IT-branschen, så vi har mycket god förståelse för de utmaningar som finns. Exempelvis att kunna tillhandahålla rätt typ av tjänster och ha en rättvis marginal på det man bidrar med.</p></div>
 

@@ -14,8 +14,6 @@ eventbild: "safespring_background_37.jpg"
 socialmediabild: "safespring_social_37-2.gif"
 toc: "Table of contents"
 language: "En"
-aliases:
-- /en/whitepaper/migrate-from-azure/
 ---
 
 ## Migration to Compliant Kubernetes

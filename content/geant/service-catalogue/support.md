@@ -21,8 +21,6 @@ socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 nosidebar: ""
 noindex: "x"
-aliases:
-- /geant/service-catalogue/support/
 ---
 
 {{< ingress >}}

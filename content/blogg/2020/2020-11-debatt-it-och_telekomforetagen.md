@@ -11,8 +11,7 @@ section: "blogg"
 author: "Fredric Wallsten"
 author_image: "firm"
 aliases:
-- /blogg/debatt-it-och_telekomforetagen
-- /blogg/2020/2020-11-debatt-it-och_telekomforetagen/
+    - /blogg/debatt-it-och_telekomforetagen
 ---
 
 {{< ingress >}}

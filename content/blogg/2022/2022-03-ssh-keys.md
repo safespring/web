@@ -13,8 +13,7 @@ author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
-- /blogg/2022-03-ssh-keys
-- /blogg/2022/2022-03-ssh-keys/
+    - /blogg/2022-03-ssh-keys
 ---
 
 

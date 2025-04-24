@@ -17,8 +17,6 @@ sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Läs Solution Brief"
 sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
-aliases:
-- /tjanster/containerplattform-old/
 ---
 
 {{< icon-block-container >}}

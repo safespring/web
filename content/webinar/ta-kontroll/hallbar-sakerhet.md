@@ -29,8 +29,6 @@ chapters:
 - title: "Grön Kod"
   time: 310
   timeFormatted: "5:10"
-aliases:
-- /webinar/ta-kontroll/hallbar-sakerhet/
 ---
 
 

@@ -7,8 +7,6 @@ draft: false
 section: "Safespring"
 Language: "En"
 socialmedia: "/safespring-start.jpg"
-aliases:
-- /en/about/
 ---
 <div class="ingress"><p>Safespring delivers a locally based Cloud built for the apps of tomorrow. It enables our customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency and retaining data sovereignty. With our platform, we help our customers improve competitiveness to delivery excellence.</p></div>
 <p>Flexible consumption model includes services by the hour or GB/month. All services are billed monthly based on your consumption. From our professional data centers in Sweden and Norway, our delivery of infrastructure-as-a-Service include:</p>

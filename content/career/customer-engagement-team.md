@@ -11,8 +11,6 @@ sidebarlinkicon: "fa-external-link-alt"
 language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
-aliases:
-- /career/customer-engagement-team/
 ---
 
 ## Job description

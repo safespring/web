@@ -19,8 +19,6 @@ sidebarlinkurl2: "/en/price/#safespring-backup"
 socialmedia: "safespring-backup.jpg"
 section: "Public Cloud"
 megamenu: "yes"
-aliases:
-- /en/services/backup/
 ---
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-en/master.m3u8" >}}

@@ -5,8 +5,6 @@ date: 2022-12-26T09:24:38+02:00
 draft: false
 dokumentbild: "safespring_card_22.jpg"
 general: "yes"
-aliases:
-- /dokument/cookies/
 ---
 
 ## Om användandet av Cookies

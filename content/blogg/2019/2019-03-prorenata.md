@@ -10,8 +10,7 @@ socialmediabild: "safespring_social_6.jpg"
 section: "blogg"
 author: "Fredric Wallsten"
 aliases:
-- /blogg/prorenata
-- /blogg/2019/2019-03-prorenata/
+    - /blogg/prorenata
 ---
 
 **ProReNata** erbjuder ett digitalt journalsystem för hälso- och sjukvårdspersonal med inriktning på skolhälsovården. De hanterar många patientjournaler och under 2018 ökade kundernas frågor om var deras journaler lagras.

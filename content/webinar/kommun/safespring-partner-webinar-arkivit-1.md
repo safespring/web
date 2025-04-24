@@ -25,8 +25,7 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-arkivit-1.jpg"
 sidebar: "x"
 aliases:
-- /webinar/kommun/arkivit.md
-- /webinar/kommun/safespring-partner-webinar-arkivit-1/
+   - /webinar/kommun/arkivit.md
 ---
 
 ### Om webbinariet

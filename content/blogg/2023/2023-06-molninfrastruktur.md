@@ -14,8 +14,6 @@ author: "Fredric Wallsten"
 toc: ""
 sidebarlinkname: "Läs bilagan"
 sidebarlinkurl: "/publications/safespring-svd-kritisk-infrastruktur.pdf"
-aliases:
-- /blogg/2023/2023-06-molninfrastruktur/
 ---
 
 *Denna text är publicerad i Svenska Dagbladets bilaga "Kritisk infrastruktur".*

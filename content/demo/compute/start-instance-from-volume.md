@@ -37,8 +37,6 @@ chapters:
 - title: "Mount volume"
   time: 532
   timeFormatted: "8:52"
-aliases:
-- /demo/compute/start-instance-from-volume/
 ---
 
 {{< ingress >}}

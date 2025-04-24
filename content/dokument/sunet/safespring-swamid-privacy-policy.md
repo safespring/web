@@ -8,8 +8,6 @@ sidebarlinkname: "Download PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring-swamid-privacy-policy.pdf"
 noindex: "noindex"
-aliases:
-- /dokument/sunet/safespring-swamid-privacy-policy/
 ---
 
 ### Scope

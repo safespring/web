@@ -11,8 +11,6 @@ sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
 devops: ""
 section: "Public Cloud"
-aliases:
-- /en/services/compliant-kubernetesold/
 ---
 
 {{% ingress %}}

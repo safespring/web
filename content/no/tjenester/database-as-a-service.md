@@ -25,8 +25,6 @@ sidebarwhitepaper: ""
 darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
-aliases:
-- /no/tjenester/database-as-a-service/
 ---
 
 ![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)

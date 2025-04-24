@@ -19,8 +19,6 @@ form: ""
 toc: ""
 language: "En"
 author: "Gabriel Paues"
-aliases:
-- /solution-brief/repartitioning-root-fs-on-nvme-instances-safesprin/
 ---
 
 {{< ingress >}}

@@ -19,8 +19,6 @@ saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Private Cloud"
 toc: "I denne artikkelen"
-aliases:
-- /no/tjenester/case/scilifelab/
 ---
 
 ##

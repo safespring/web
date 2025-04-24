@@ -17,8 +17,6 @@ sidebarsection: "MedTech"
 sidebarimage: "findout-logo.svg"
 saas: ""
 sidebarwhitepaper: ""
-aliases:
-- /tjanster/case/findout/
 ---
 
 <!--{{< ingress >}}

@@ -9,8 +9,7 @@ eventbild: "safespring_background_14.jpg"
 socialmediabild: "safespring_social_14.jpg"
 section: "blogg"
 aliases:
-- /blogg/dagens-juridik-cloudact
-- /blogg/2019/2019-04-dagens-juridik-cloudact/
+    - /blogg/dagens-juridik-cloudact
 ---
 <div class="ingress"><p>Adam Odmark, biträdande jurist, advokatfirman Delphi, har skrivit en analys i Dagens juridik den 28 mars</p></div>
 

@@ -31,8 +31,6 @@ chapters:
 - title: "Create instance"
   time: 155
   timeFormatted: "2:35"
-aliases:
-- /demo/compute/server-groups/
 ---
 
 {{< ingress >}}

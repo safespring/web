@@ -8,8 +8,6 @@ alias:
   "/om-safespring"
 nosidebar: "invisible"
 list: "horisontal"
-aliases:
-- /om-safespring/
 ---
 
 {{< ingress >}} 

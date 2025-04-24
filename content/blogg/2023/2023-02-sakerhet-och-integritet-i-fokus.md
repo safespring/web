@@ -16,8 +16,6 @@ sidebarlinkname: "Läs debattartikel"
 sidebarlinkurl: "https://www.altinget.se/artikel/europas-sjalvforsorjning-paa-techomraadet-maaste-bli-lika-prioriterad-som-elen"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
-aliases:
-- /blogg/2023/2023-02-sakerhet-och-integritet-i-fokus/
 ---
 
 ## Säkerhet och integritet i fokus - Safespring stödjer Europas självförsörjning på tech-området

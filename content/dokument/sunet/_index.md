@@ -6,6 +6,5 @@ intro: "The purpose of these documents is to clarify the security principles in 
 dokumentbild: "safespring_card_21.jpg"
 noindex: "noindex"
 aliases:
-- /sunet/
-- /dokument/sunet/
+    - /sunet/
 ---

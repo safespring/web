@@ -13,8 +13,7 @@ section: ""
 language: "En"
 toc: ""
 aliases:
-- /blogg/2022-08-openstack-port-preserve_on_delete
-- /blogg/2022/2022-08-openstack-port-preserve_on_delete/
+    - /blogg/2022-08-openstack-port-preserve_on_delete
 ---
 
 {{< ingress >}}

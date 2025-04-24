@@ -19,8 +19,6 @@ saas: ""
 sidebarwhitepaper: ""
 list: "horisontal"
 service: "Compliant Kubernetes"
-aliases:
-- /tjanster/case/asker/
 ---
 
 {{< ingress >}}

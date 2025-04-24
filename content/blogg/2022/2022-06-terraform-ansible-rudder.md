@@ -13,8 +13,7 @@ author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
 aliases:
-- /blogg/2022-06-terraform-ansible-rudder
-- /blogg/2022/2022-06-terraform-ansible-rudder/
+    - /blogg/2022-06-terraform-ansible-rudder
 ---
 
 {{< ingress >}}

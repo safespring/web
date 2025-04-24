@@ -31,8 +31,6 @@ chapters:
 - title: "Allow SSH"
   time: 384
   timeFormatted: "6:24"
-aliases:
-- /demo/compute/advanced-security-groups/
 ---
 
 {{< ingress >}}

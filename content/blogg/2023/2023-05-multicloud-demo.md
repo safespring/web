@@ -12,8 +12,6 @@ section: "Tech update"
 author: "Jarle Bjørgeengen"
 language: "En"
 toc: "Table of contents"
-aliases:
-- /blogg/2023/2023-05-multicloud-demo/
 ---
 
 {{< ingress >}}

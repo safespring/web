@@ -13,8 +13,6 @@ section: "Fredric Wallsten"
 Language: "No"
 article: "DN.no"
 socialmedia: "/socialmedia/fredric-social-article.jpg"
-aliases:
-- /no/aktuelt/norsk-skytjeneste/
 ---
 
 

@@ -9,8 +9,7 @@ eventbild: "safespring_background_2.jpg"
 socialmediabild: "safespring_social_2.jpg"
 section: "blogg"
 aliases:
-- /blogg/valkommen_pa-techaw_21-11
-- /blogg/2018/2018-10-valkommen_pa-techaw_21-11/
+    - /blogg/valkommen_pa-techaw_21-11
 ---
 
 

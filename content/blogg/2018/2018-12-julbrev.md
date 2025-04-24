@@ -10,8 +10,7 @@ socialmediabild: "safespring_social_17.jpg"
 section: "blogg"
 author: "Fredric Wallsten"
 aliases:
-- /blogg/julbrev
-- /blogg/2018/2018-12-julbrev/
+    - /blogg/julbrev
 ---
 
 ## Hoppas du också haft ett händelserikt år

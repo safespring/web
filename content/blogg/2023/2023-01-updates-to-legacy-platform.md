@@ -16,8 +16,6 @@ sidebarlinkname: "How to migrate"
 sidebarlinkurl: "https://docs.safespring.com/new/migrate-from-legacy/"
 sidebarlinkname2: "Contact support"
 sidebarlinkurl2: "mailto:support@safespring.com"
-aliases:
-- /blogg/2023/2023-01-updates-to-legacy-platform/
 ---
 
 {{< ingress >}}

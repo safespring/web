@@ -13,8 +13,6 @@ author: "Fredric Wallsten"
 section: "blogg"
 language: "Se"
 toc: ""
-aliases:
-- /blogg/2023/2023-05-digitaliseringsradet/
 ---
 
 

@@ -10,8 +10,7 @@ socialmediabild: "safespring_social_16.jpg"
 section: "blogg"
 author: "Fredric Wallsten"
 aliases:
-- /blogg/skl-ramavtal
-- /blogg/2019/2019-01-skl-ramavtal/
+    - /blogg/skl-ramavtal
 ---
 
 ## Nytt ramavtal för e-arkiv som tjänst.

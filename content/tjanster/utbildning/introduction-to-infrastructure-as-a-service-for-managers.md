@@ -9,8 +9,6 @@ sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
-aliases:
-- /tjanster/utbildning/introduction-to-infrastructure-as-a-service-for-managers/
 ---
 ## Description
 Aimed for Managers with overall technical understanding but no expertise. Overview and understanding from a management point of view enabling management and technical staff to form a common understanding with regards to current situation, path going forward, long- and short-term targets, processes, methodology and strategy.

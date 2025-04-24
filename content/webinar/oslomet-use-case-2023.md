@@ -16,8 +16,6 @@ sidebarlinkurl: "/no/demo"
 sidebarlinkname: "demo av Safesprings skyplattform"
 sidebar: "x"
 sidebarimage: ""
-aliases:
-- /webinar/oslomet-use-case-2023/
 ---
 
 

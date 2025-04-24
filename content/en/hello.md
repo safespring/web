@@ -13,8 +13,7 @@ sidebarphone: "+46 73-533 65 21"
 sidebarmail: "petter.hylin@safespring.com"
 socialmedia: ""
 saas: ""
-aliases:
-- /en/hello/
+aliases: ""
 sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact us"

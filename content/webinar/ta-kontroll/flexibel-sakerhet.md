@@ -29,8 +29,6 @@ chapters:
 - title: "Applikationssäkerhet"
   time: 397
   timeFormatted: "6:37"
-aliases:
-- /webinar/ta-kontroll/flexibel-sakerhet/
 ---
 
 

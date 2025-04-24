@@ -10,8 +10,6 @@ socialmediabild: "Safespring_WhitePaper_Commvault_social-media.jpg"
 intro: "This white paper describes how to configure Safespring Storage as a “Disk Library” in Commvault."
 background: "Safespring_WhitePaper_Commvault_web.jpg"
 language: "En"
-aliases:
-- /solution-brief/commvault/
 ---
 
 ## Introduction

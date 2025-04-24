@@ -13,8 +13,7 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/en/contact"
 saas: ""
-aliases:
-- /en/gdpr/
+aliases: ""
 TOC: "On this page"
 ---
 

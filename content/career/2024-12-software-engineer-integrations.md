@@ -14,8 +14,6 @@ socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 TOC: "On this page"
 sidebarimage: "safespring-gabriel-demo.webp"
-aliases:
-- /career/2024-12-software-engineer-integrations/
 ---
 
 ## Are you our next colleague?

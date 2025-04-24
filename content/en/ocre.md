@@ -18,10 +18,9 @@ cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
 TOC: "On this page"
 aliases:
-- /OCRE
-- /ocre
-- /en/ocre-2024
-- /en/ocre/
+    - /OCRE
+    - /ocre
+    - /en/ocre-2024
 ---
 
 

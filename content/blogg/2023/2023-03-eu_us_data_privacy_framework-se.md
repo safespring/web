@@ -11,8 +11,6 @@ socialmediabild: ""
 section: "blogg"
 language: "Se"
 toc: ""
-aliases:
-- /blogg/2023/2023-03-eu_us_data_privacy_framework-se/
 ---
 
 {{< ingress >}}

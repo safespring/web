@@ -16,8 +16,6 @@ sidebarlinkname: "GitHub repository"
 sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 sidebarlinkname2: "GitHub repository"
 sidebarlinkurl2: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
-aliases:
-- /blogg/2024/2024-03-cinder-csi-volume-provisioner/
 ---
 
 

@@ -17,8 +17,7 @@ cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
 TOC: "På den här sidan"
 aliases:
-- /branscher/ocre-2024/
-- /branscher/utbildning-forskning/
+    - /branscher/ocre-2024/
 ---
 
 

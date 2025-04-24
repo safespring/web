@@ -18,8 +18,6 @@ sidebartext: "Andreas delar insikter om Scaleouts samarbete med Safespring och v
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
-aliases:
-- /tjanster/case/scaleout/
 ---
 
 {{< ingress >}}

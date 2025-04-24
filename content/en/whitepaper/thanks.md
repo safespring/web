@@ -8,8 +8,6 @@ background: ""
 dontshow: "yes"
 section: "Confirmation"
 Language: "En"
-aliases:
-- /en/whitepaper/thanks/
 ---
 
 {{% ingress %}}

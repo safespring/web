@@ -56,9 +56,8 @@ intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka prakt
 partner: "it-sakerhetsbolaget.png"
 audience: "saas"
 aliases:
-- /webinar/gdpr-fireside-chat/fireside-chat-it-sakerhetsbolaget/
-- /webinar/fireside-chat-it-sakerhetsbolaget/
-- /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-1/
+    - /webinar/gdpr-fireside-chat/fireside-chat-it-sakerhetsbolaget/
+    - /webinar/fireside-chat-it-sakerhetsbolaget/
 ---
 
 {{< ingress >}}

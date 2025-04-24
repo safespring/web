@@ -19,8 +19,6 @@ audience: "saas"
 knapp: "Registrera"
 english: ""
 formid: ""
-aliases:
-- /webinar/safespring-hybrid-cloud/
 ---
 
 

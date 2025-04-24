@@ -13,8 +13,6 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "Sv"
-aliases:
-- /branscher/eosc/
 ---
 
 {{< ingress >}}

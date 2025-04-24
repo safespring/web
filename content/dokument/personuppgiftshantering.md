@@ -6,8 +6,6 @@ intro: "På den här sidan får du reda på hur vi samlar in och använder perso
 dokumentbild: "safespring_card_20.jpg"
 general: "yes"
 TOC: "På denna sida"
-aliases:
-- /dokument/personuppgiftshantering/
 ---
 
 *För information om hur vi arbetar med dataskyddsåtgärder i våra tjänster, besök i stället [vår sida om GDPR i molnet](/gdpr).*

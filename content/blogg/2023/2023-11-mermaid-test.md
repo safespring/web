@@ -13,8 +13,6 @@ author: ""
 language: "En"
 fullwidth: ""
 nosidebar: ""
-aliases:
-- /blogg/2023/2023-11-mermaid-test/
 ---
 
 <style>

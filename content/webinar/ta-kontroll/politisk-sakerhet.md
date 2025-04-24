@@ -29,8 +29,6 @@ chapters:
 - title: "Geopolitisk risk"
   time: 568
   timeFormatted: "9:28"
-aliases:
-- /webinar/ta-kontroll/politisk-sakerhet/
 ---
 
 

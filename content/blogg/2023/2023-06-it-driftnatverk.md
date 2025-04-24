@@ -16,8 +16,6 @@ sidebarlinkname: "Kontakta oss"
 sidebarlinkurl: "/kontakt/"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
-aliases:
-- /blogg/2023/2023-06-it-driftnatverk/
 ---
 
 {{< ingress >}}

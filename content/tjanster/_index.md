@@ -10,8 +10,6 @@ socialmedia: "safespring-tjanster.jpg"
 nolist: "x"
 fullwidth: ""
 nosidebar: ""
-aliases:
-- /tjanster/
 ---
 
 {{< services >}}

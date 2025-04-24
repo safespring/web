@@ -18,8 +18,6 @@ sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/en/contact"
 socialmedia: ""
-aliases:
-- /en/services/machine-learning-ai-gpu-resources/
 ---
 
 {{< icon-block-container >}}

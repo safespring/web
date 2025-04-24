@@ -8,8 +8,6 @@ intro: "The Safespring Knowledge Hub is a comprehensive collection of Safespring
 section: "Safespring"
 nosidebar: ""
 fullwidth: ""
-aliases:
-- /latest/safespring-knowledge-hub-success/
 ---
 
 {{< ingress >}}

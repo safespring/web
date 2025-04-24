@@ -20,8 +20,7 @@ sidebarknapp: ""
 sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
-aliases:
-- /en/demo/
+aliases: ""
 ---
 
 {{< ingress >}}

@@ -9,8 +9,6 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/safespring-acceptable_use_policy.pdf"
 general: "yes"
 toc: "Contents"
-aliases:
-- /en/documents/acceptable-use-policy/
 ---
 
 <div class="ingress"><p>This policy sets forth the principles governing the use of any of Safespring’s cloud services by its customers or partners.</p></div>

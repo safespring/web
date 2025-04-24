@@ -11,8 +11,6 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 language: "En"
-aliases:
-- /blogg/2024/2024-08-vmware-exit/
 ---
 
 

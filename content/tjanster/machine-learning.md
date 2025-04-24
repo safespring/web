@@ -18,8 +18,6 @@ sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/en/contact"
 socialmedia: ""
-aliases:
-- /tjanster/machine-learning/
 ---
 
 

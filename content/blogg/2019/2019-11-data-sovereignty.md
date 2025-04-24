@@ -10,8 +10,7 @@ socialmediabild: "safespring_social_20.jpg"
 section: "blogg"
 toc: "Innehållsförteckning"
 aliases:
-- /blogg/data-sovereignty
-- /blogg/2019/2019-11-data-sovereignty/
+    - /blogg/data-sovereignty
 ---
 
 <div class="ingress"><p>We’ve gathered some articles about GDPR and the US Cloud Act to make it easier to get a greater picture about the two regulations.</p></div>

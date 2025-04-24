@@ -13,8 +13,7 @@ audience: "saas"
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-4.jpg"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-elastisys-4/master.m3u8"
 aliases:
-- /webinar/elastisys2/
-- /webinar/safespring-partner-webinar-elastisys-4/
+    - /webinar/elastisys2/
 sidebar: "x"
 ---
 

@@ -14,8 +14,6 @@ sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: " Elastisys Welkin gör det enkelt att skapa kluster med hög regelefterlevnad, medan vi ser till att er infrastruktur är optimerad för era specifika behov."
-aliases:
-- /tjanster/compliant-kubernetes/
 ---
 
 {{< icon-block-container >}}

@@ -10,8 +10,7 @@ socialmediabild: "safespring_social_34.jpg"
 section: "blogg"
 author: "Fredric Wallsten"
 aliases:
-- /blogg/scaleout-samarbete
-- /blogg/2020/2020-10-scaleout-samarbete/
+    - /blogg/scaleout-samarbete
 ---
 
 ## Strategiskt samarbete inom AI för att främja den svenska digitaliserings­strategin

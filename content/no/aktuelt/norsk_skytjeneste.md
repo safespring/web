@@ -13,8 +13,6 @@ section: "Fredric Wallsten"
 Language: "No"
 article: "Safespring"
 socialmedia: "/socialmedia/fredric-social-article.jpg"
-aliases:
-- /no/aktuelt/norsk_skytjeneste/
 ---
 
 

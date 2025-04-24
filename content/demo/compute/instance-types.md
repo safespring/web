@@ -31,8 +31,6 @@ chapters:
 - title: "NVME storage"
   time: 62
   timeFormatted: "1:02"
-aliases:
-- /demo/compute/instance-types/
 ---
 
 {{< ingress >}}

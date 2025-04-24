@@ -9,8 +9,7 @@ eventbild: "safespring_background_22.jpg"
 socialmediabild: "safespring_social_28.jpg"
 section: "blogg"
 aliases:
-- /blogg/johan-harrysson-cco
-- /blogg/2020/2020-01-johan-harrysson-cco/
+    - /blogg/johan-harrysson-cco
 ---
 
 ![Johan Harrysson, CCO, utanför Safesprings huvudkontor i Stockholm.](/img/blogg/safespring-johan-harrysson_2020-01-27.jpg)

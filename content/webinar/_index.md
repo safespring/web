@@ -20,8 +20,7 @@ english: ""
 formid: ""
 explorer: ""
 aliases:
-- /event/
-- /webinars/
-- /webinar/
+    - /event/
+    - /webinars/
 fullwidth: "x"
 ---

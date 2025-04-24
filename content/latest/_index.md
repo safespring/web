@@ -8,8 +8,6 @@ section: "Safespring"
 nosidebar: "none"
 fullwidth: "yes"
 nolist: "x"
-aliases:
-- /latest/
 ---
 
 {{< latest-content-filter >}}

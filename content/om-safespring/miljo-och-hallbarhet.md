@@ -6,8 +6,6 @@ intro: "Att värna om miljön är för oss en självklarhet. Våra tjänster pro
 background: "safespring-environment-2022.webp"
 socialmedia: "safespring-miljo.jpg"
 TOC: "På denna sida"
-aliases:
-- /om-safespring/miljo-och-hallbarhet/
 ---
 
 {{< icon-block-container >}}

@@ -9,8 +9,6 @@ background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-datacenter.jpg"
-aliases:
-- /en/data-centers/
 ---
 
 ![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)

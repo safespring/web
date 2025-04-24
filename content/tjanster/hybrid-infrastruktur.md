@@ -8,9 +8,8 @@ background: ""
 socialmedia: "safespring-hybrid-cloud.jpg"
 form: "yes"
 aliases:
-- /hybrid-cloud/
-- /tjanster/hybrid-cloud/
-- /tjanster/hybrid-infrastruktur/
+    - /hybrid-cloud/
+    - /tjanster/hybrid-cloud/
 ---
 <div class="ingress"><p>Att behöva investera i infrastruktur som bara behövs vid trafikspikar, några få gånger om året, kan bli en dyr historia. Samtidigt så finns det anledningar till att själv behålla kontrollen över de tjänster som man som företag erbjuder sina kunder.</p></div>
 

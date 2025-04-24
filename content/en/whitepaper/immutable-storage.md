@@ -15,8 +15,6 @@ eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"
 toc: "Table of Contents"
 language: "En"
-aliases:
-- /en/whitepaper/immutable-storage/
 ---
 
 

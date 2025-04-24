@@ -8,8 +8,6 @@ dokumentnamn: "test.pdf"
 huvudbildnamn: "Safespring_archive.jpg"
 socialmediabild: "Safespring_Linkedin_archive.jpg"
 intro: ""
-aliases:
-- /whitepaper/archive/
 ---
 
 ## author

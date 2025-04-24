@@ -37,8 +37,6 @@ chapters:
 - title: "Instance - Default NW"
   time: 169
   timeFormatted: "2:49"
-aliases:
-- /demo/compute/create-instance-in-default-network/
 ---
 
 {{< ingress >}}

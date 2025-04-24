@@ -29,8 +29,6 @@ chapters:
 - title: "IT-infrastruktur"
   time: 448
   timeFormatted: "7:28"
-aliases:
-- /webinar/ta-kontroll/juridisk-sakerhet/
 ---
 
 

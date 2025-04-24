@@ -10,8 +10,6 @@ language: "No"
 section: "Informasjonsguide "
 Language: "No"
 socialmedia: "/safespring-schremsii.jpg"
-aliases:
-- /no/whitepaper/schremsii/
 ---
 
 ## Informasjonsguide om EU-domstolens ugyldigforklaring av Privacy Shield

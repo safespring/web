@@ -10,8 +10,6 @@ sidebarlinkname: "Apply now"
 sidebarlinkicon: "fa-external-link-alt"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
-aliases:
-- /career/cfo/
 ---
 
 {{< ingress >}}

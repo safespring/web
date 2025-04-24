@@ -8,8 +8,6 @@ sidebarlinkname: "Create another account"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
 noindex: "yes"
-aliases:
-- /onboarding/success/
 ---
 
 ## Here are a few steps to help you get started

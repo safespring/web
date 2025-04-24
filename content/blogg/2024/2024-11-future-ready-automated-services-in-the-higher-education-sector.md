@@ -12,8 +12,6 @@ eventbild: ""
 socialmediabild: ""
 language: "En"
 toc: "In this post"
-aliases:
-- /blogg/2024/2024-11-future-ready-automated-services-in-the-higher-education-sector/
 ---
 
 {{< ingress >}}

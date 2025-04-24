@@ -8,8 +8,7 @@ card: "safespring_card_42.jpg"
 eventbild: "safespring_background_42.jpg"
 section: "blogg"
 aliases:
-- /blogg/sunet-drive
-- /blogg/2021/2021-05-sunet-drive/
+    - /blogg/sunet-drive
 ---
 
 {{< ingress >}}

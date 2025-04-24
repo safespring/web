@@ -12,8 +12,6 @@ cardtitle: "SaaS-bolag"
 cardicon: "fa-solid fa-code"
 cardcolor: "#417DA5"
 cardintro: "Bygg och skala dina SaaS-lösningar på en säker och flexibel infrastruktur med stöd för moderna DevOps-principer."
-aliases:
-- /branscher/applikationsutvecklare/
 ---
 
 {{< ingress >}}

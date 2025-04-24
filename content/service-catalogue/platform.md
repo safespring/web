@@ -17,8 +17,6 @@ socialmedia: "safespring-compute.jpg"
 section: "Safespring Service Catalogue"
 socialmedia: "/safespring-start.jpg"
 toc: ""
-aliases:
-- /service-catalogue/platform/
 ---
 
 {{< ingress >}}

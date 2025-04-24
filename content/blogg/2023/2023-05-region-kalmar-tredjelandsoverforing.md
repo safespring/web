@@ -14,8 +14,6 @@ author_image: "firm"
 section: "blogg"
 language: "Se"
 toc: ""
-aliases:
-- /blogg/2023/2023-05-region-kalmar-tredjelandsoverforing/
 ---
 
 {{% ingress %}}

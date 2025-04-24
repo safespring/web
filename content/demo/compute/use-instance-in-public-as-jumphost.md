@@ -31,8 +31,6 @@ chapters:
 - title: "Access the instance"
   time: 205
   timeFormatted: "3:25"
-aliases:
-- /demo/compute/use-instance-in-public-as-jumphost/
 ---
 
 {{< ingress >}}

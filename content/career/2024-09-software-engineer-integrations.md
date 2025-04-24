@@ -14,8 +14,6 @@ socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 TOC: "On this page"
 sidebarimage: " "
-aliases:
-- /career/2024-09-software-engineer-integrations/
 ---
 
 {{< ingress >}}

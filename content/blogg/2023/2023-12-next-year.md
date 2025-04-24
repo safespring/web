@@ -15,8 +15,6 @@ fullwidth: ""
 nosidebar: ""
 author: "Fredric Wallsten"
 author_image: "happy"
-aliases:
-- /blogg/2023/2023-12-next-year/
 ---
 
 {{< ingress >}}

@@ -8,8 +8,6 @@ cardtitle: "Kommuner"
 cardicon: "fa-solid fa-building-flag"
 cardcolor: "#417DA5"
 cardintro: ""
-aliases:
-- /branscher/kommuner/
 ---
 
 <video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">

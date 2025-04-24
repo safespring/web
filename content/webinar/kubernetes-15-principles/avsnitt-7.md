@@ -36,8 +36,6 @@ chapters:
   - title: "Compliant Kubernetes"
     time: 973
     timeFormatted: "16:13"
-aliases:
-- /webinar/kubernetes-15-principles/avsnitt-7/
 ---
 
 ## Avsnitt 7

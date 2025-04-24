@@ -11,8 +11,7 @@ socialmediabild: "safespring_social_18.jpg"
 section: "blogg"
 author: "Fredric Wallsten"
 aliases:
-- /blogg/nya-tjanster
-- /blogg/2019/2019-06-nya-tjanster/
+    - /blogg/nya-tjanster
 ---
 
 <div class="ingress"><p>Behovet av säkra svenska infrastrukturtjänster ökar snabbt. Hos oss är öppen källkod och öppna standarder två av grundstenarna.</p></div>
