@@ -13,9 +13,9 @@ card: "safespring_card_37.jpg"
 eventbild: "safespring_background_37.jpg"
 socialmediabild: "safespring_social_37-2.gif"
 toc: "Table of contents"
-language: "En"
+language: "en"
 aliases:
-- /en/whitepaper/migrate-from-azure/
+  - /en/whitepaper/migrate-from-azure/
 ---
 
 ## Migration to Compliant Kubernetes
@@ -45,6 +45,7 @@ These different bases create a legal sticking point that’s not entirely easy t
 There are now several companies and organizations that have adopted new ways of working that are rooted in cloud services, but a legal basis for their use is lacking. This is a difficult position to be in, as it’s not easy to go back. Meanwhile, organizations must adhere to the law.
 
 ### The ability to become independent
+
 Frameworks have been developed that remove dependencies on the underlying cloud service provider. One such framework is Kubernetes, which is an orchestration platform for container technology with standardized interfaces for the commissioning and maintenance of applications. Kubernetes creates a base plate on which applications can be managed by way of standardized definitions. In less technical terms, Kubernetes helps organizations to manage their applications and services in a standardized way with a high level of reliability. Because the systems and their dependencies are defined by code, it’s possible to leverage the knowledge available online and easily commission complex systems to replace the services of established cloud service providers. Consequently, it’s easier to run the services yourself that your organization has become dependent on.
 
 In addition, there are more and more applications that are replacing the more user-friendly services like Office 365, OneDrive, or Dropbox. If an organization uses Kubernetes to run its applications and services, the commissioning and maintenance of these applications become more manageable.
@@ -54,11 +55,13 @@ Safespring is a cloud service provider with data centers in Sweden, which makes 
 This white paper describes the migration process from Microsoft Azure Kubernetes Service (AKS). The starting point is that the organization is already running Kubernetes in Azure. Several of the steps apply even to organizations that don’t currently use Azure Kubernetes Service. Assuming that Kubernetes continues to be the lingua franca for the operation of containerized applications, there is an obvious advantage in running it in the organization. All the effort that goes into migrating to a standardized platform can be reused should the organization wish to move its infrastructure elsewhere, as the same infrastructure definitions can be used as long as the receiving platform is also Kubernetes. This creates a level of flexibility and independence that’s otherwise difficult to achieve.
 
 ### The benefits of open source
+
 A big reason why many people use cloud services is that they provide useful additional services that reduce the time to market. Although these services reduce production times, they increase dependence on the cloud service providers’ ecosystems. One way of reducing production times for your services while also reducing dependency on a supplier is to implement open-source systems that are outside your core delivery. Although both approaches allow you to focus on your application and put support systems to one side, the open-source approach reduces dependency instead of increasing it.
 
 Open source is based on collaboration. By getting involved in the projects you use (primarily by posting back the bug fixes and improvements you make), what you contribute is reviewed to ensure greater security and reliability. The fact that others using the projects are doing the same thing ensures that there is a continuously updated codebase, reviewed by many and without licensing costs. Since many people use the projects, there’s also a lot of code and several solutions are just a few searches away when commissioning and maintaining the systems.
 
 ### Compliant Kubernetes
+
 Compliant Kubernetes is certified by the Cloud Native Computing Foundation (CNCF) for Kubernetes distribution that is freely available both as open source and as a fully managed service at Safespring. The open-source solution is suitable for organizations that are happy to operate Kubernetes and the surrounding technology stacks by themselves, but which also want to take advantage of Kubernetes distribution with toughened security that is specially adapted for regulated industries, all while not having to worry about maintenance and being able to leverage quarterly updates of Kubernetes packages and ancillary projects. The open-source option is also a good complement to a managed service for those who need to deliver their software via their server halls, out at their customers, and in public clouds, and who want to do this seamlessly with full regulatory compliance. For interested customers, our partner Elastisys provides both 8/17 and 24/7 support.
 
 ### Compliant Kubernetes as open-source code
@@ -67,6 +70,7 @@ Compliant Kubernetes is certified by the Cloud Native Computing Foundation (CNCF
 - Documentation: https://compliantkubernetes.io
 
 ### Conditions
+
 To be able to run applications in Compliant Kubernetes, the following conditions apply:
 
 - Account for Safespring Compute and possibly Safespring Storage if object storage is to be used.
@@ -75,7 +79,6 @@ To be able to run applications in Compliant Kubernetes, the following conditions
 Compliant Kubernetes uses external-DNS and cert-manager to dynamically take care of the applications’ domain names as well as automatic certificate management, so a registrar supported by external-DNS is preferable. As domain name management does not involve the exposure of personal data, it is possible to remain with your registrar from a GDPR point of view, provided that the registrar has a compatible API.
 
 Find out which version of Kubernetes is currently being run in Azure Kubernetes Service (AKS). To avoid surprises, it’s important to run the same version in Compliant Kubernetes.
-
 
 ## Migration plan
 
@@ -91,8 +94,7 @@ Each migration project starts with an inventory of the services and systems that
 - {{< inline "Databases" >}} These are often used by many systems and depending on the stringency of the division between different domains, databases can be called from systems that don’t belong to the system domain where the database is located. By going through database connections and logs, you can get an idea of how the databases are used in the organization. If this hasn’t already been done, database consolidation can be a project that is run before the actual migration takes place to simplify the process.
 - {{< inline "E-mail systems" >}} There are very many systems that use e-mail to communicate statuses or if something goes wrong. Some of these e-mails can even be read mechanically by other systems, making them a link in a process flow. It may be that these accounts are registered in domains other than those for public e-mail accounts. By going through the domains and accounts used for this type of communication, nasty surprises can be avoided.
 - {{< inline "Support functions" >}} Systems in this category include DNS (name lookup), NTP (time synchronization), and various types of service discovery systems. Although many of these are securely run in Azure today, it’s important to identify if they’re also run internally somewhere.
-- {{< inline "Internal applications" >}} Not all systems may have migrated to Azure (perhaps time reporting or internal web). There may be various dependencies hidden in these systems that are important to identify.    
-
+- {{< inline "Internal applications" >}} Not all systems may have migrated to Azure (perhaps time reporting or internal web). There may be various dependencies hidden in these systems that are important to identify.
 
 Make an inventory of how securely communication between systems is handled. There are two typical choices:
 
@@ -104,16 +106,18 @@ If a VPN is used, a new VPN tunnel will need to be set up between the internal e
 It will be easier if the second option is used as this is just a matter of re-directing communication to Safespring’s environment with a change of a DNS record. It may be worthwhile looking at this option even if a VPN tunnel is currently used, as all types of migrations will be easier if the applications handle secure communication themselves.
 
 ### Inventory of services running in Azure
+
 Make an inventory of dependencies for the services running in Azure.
 
 - {{< inline "Identity management" >}} How are identity management and rights-managed? Is Azure AD used? If it is, is it called from the services running in Azure Kubernetes Service (AKS)? One step that can make things easier, later on, is the enabling of Secure LDAP (a standardized protocol) on Azure AD and customization of the services to use this instead. This will make the migration from Azure AD much easier when the time comes.
 - {{< inline "Object storage" >}} is a practical way to cheaply store files used by systems. If object storage is already in use in the form of Azure Blob Storage, the data can be migrated to Safespring Storage, which is S3 compatible. Adjustments may need to be made for the systems to use Safespring’s service instead. It may be worth checking if the systems are designed to enable the simple changing of the object storage service’s URI in one place with one variable. If not, it may be worthwhile spending some time on making sure that the systems are adapted in such a way that it will be much easier to redirect them later on. If object storage is not currently used in the organization, it may be worth considering starting to do so, even if such a project is added after migration takes place to minimize the degrees of freedom.
 - {{< inline "Virtual machines" >}} Are all systems in Azure run as containers or are there some systems that are run as separate virtual machines? If so, it’s a good idea to look at how these machines are set up and if there’s an easy way to replicate their configuration. Although there are different ways to migrate virtual machines “as is” with snapshots, the recommendation is to set the machines up with Safespring from the outset to ensure better integration with the platform.
-- {{< inline "Database services" >}} with Azure. If these are used, it’s a good idea to look at which variant is running (MySQL, MariaDB, PostgreSQL, or Microsoft SQL). You can run all these yourself on Safespring’s infrastructure. MariaDB and PostgreSQL can be obtained as a database as a service through the Ck8s offer.  To ensure their high levels of availability, it is recommended that some form of cluster is used. Galera is used for MySQL and MariaDB. PostgreSQL and Microsoft SQL have their built-in solutions.
+- {{< inline "Database services" >}} with Azure. If these are used, it’s a good idea to look at which variant is running (MySQL, MariaDB, PostgreSQL, or Microsoft SQL). You can run all these yourself on Safespring’s infrastructure. MariaDB and PostgreSQL can be obtained as a database as a service through the Ck8s offer. To ensure their high levels of availability, it is recommended that some form of cluster is used. Galera is used for MySQL and MariaDB. PostgreSQL and Microsoft SQL have their built-in solutions.
 - {{< inline "Secret management" >}} A good way of removing passwords and keys from the systems themselves is to use a central secret management system. By being Kubernetes-based, Azure Kubernetes Service (AKS) provides the management of Secrets. These can be used in the same way in Compliant Kubernetes. Azure also has a specific Key Vault service. An equivalent service is the Vault software by the company Hashicorp. Adjustments need to be made in the services to switch to Hashicorp Vault, and it’s important to identify other systems that also use this functionality.
 - {{< inline "Message bus" >}} or message queues. Asynchronous communication between services is often handled using a message bus system or a message queue system. Azure has the Service Bus service. Although Safespring does not offer a similar service, we recommend that customers install a RabbitMQ cluster. This can be run within Compliant Kubernetes, and RabbitMQ is compatible with Azure Service Bus as both support the same API (AMQP 1.0). Consequently, migration should be relatively uncomplicated and primarily require that the new service be pointed out in the application configuration. A modern alternative with superior performance and advanced functionality are NATS, but it is not API compatible with Azure Service Bus.
 
 ### Establish a dependency matrix
+
 A controlled migration requires complete knowledge of the dependencies that exist between the systems. It shows the order in which the systems are migrated and which systems are more central than others. Dependencies can sometimes creep into unexpected places, so a thorough review of how Azure’s services are configured, and which services are used in proprietary systems will pay off when it’s time to migrate.
 
 Hidden dependencies are usually found around central systems, such as identity management (Azure AD), messaging buses, and/or databases.
@@ -121,14 +125,17 @@ Hidden dependencies are usually found around central systems, such as identity m
 In addition, it’s important to make an inventory of proprietary systems and whether they have dependencies in the form of development libraries. If a library adapted for Azure has been used, it needs to be replaced with something that is agnostic to the underlying platform. This can give rise to adaptations in the application itself.
 
 ### Services in Azure as Open Source
+
 Many embedded systems have an equivalent built with open-source code. There is a list of around 20 on page 10. In this step, a list is compiled of the tests to be performed to define what a successful migration is.
 
 {{< localbutton text="See the list" link="#aks-counterparts-as-open-source" >}}
 
 ### Planning and ranking
-After the dependency analysis has been completed, the migration of the systems can be planned.  Migration will often include some form of service window for when the services are down, so it’s important to plan everything to be done and in what order. Input values for this step also come from the testing and assurance phase.
+
+After the dependency analysis has been completed, the migration of the systems can be planned. Migration will often include some form of service window for when the services are down, so it’s important to plan everything to be done and in what order. Input values for this step also come from the testing and assurance phase.
 
 ### Testing and assurance
+
 The first thing to be tested is the services themselves that are running in the new platform. When this works, the target image is then ready and migration to the test environment is tested to get an idea of what steps are needed for a successful migration.
 
 After this, load tests that reflect the production load must also be performed as far as this is possible. Of course, the closer the test load is to the production load, the less risk there is of surprises when migration takes place.
@@ -142,12 +149,15 @@ If the tests have been carried out, the actual migration won’t be too difficul
 During migration, unexpected events can occur that could not have been foreseen. These typically include a test database that is not identical to the production database, which can have unexpected effects. Other common problems include keys and secrets being set up for use differently in production than in tests, which may need to be updated if the services do not fully use central secret management (e.g., Hasicorp Vault).
 
 ### Implementation load balancer
+
 To ensure a high level of availability for production loads, a solution for load balancers will need to be set up. Safespring can provide a solution where you get access to two or more virtual machines that can balance the load over specific instances running on the platform. Although the service as such includes some manual steps in setting up, the service is easy to manage once in operation. There’s a choice of load balancer software, but the most popular is HAProxy or Traefik. You can also install MetalLB to get a system that offers a Kubernetes-delivered and compatible service that provides dynamic load-balancing functionality.
 
 ### Follow-up
+
 Once migration is complete, tests are performed from the list that defines a successful migration. Device tests created to test the systems before and after migration must be run to ensure that all functionality works properly. Any deviations are reviewed to find out if any further adjustments are needed before commissioning.
 
 ### Documentation
+
 Although documentation must be kept throughout the process, a separate step is also needed to compile the documentation that has been produced. In addition to documentation on how things are set up and how the systems interact, it’s important to have learning experiences.
 
 ## Once migration is complete
@@ -157,25 +167,26 @@ Operation and monitoring of your applications post-migration ensure that you hav
 {{< /ingress >}}
 
 ### Operation and monitoring
+
 Applications in Compliant Kubernetes are monitored in two ways:
 
 1. Metrics and monitoring data are saved in Prometheus and visualized in Grafana.
 2. Application logs are saved in an Elasticsearch cluster and visualized and processed in Kibana.
-These programs enjoy good support from the global DevOps community, and it is widely seen as best practice to use them for these tasks in the context of Kubernetes.
-
+   These programs enjoy good support from the global DevOps community, and it is widely seen as best practice to use them for these tasks in the context of Kubernetes.
 
 Many programs expose metrics in a Prometheus-specific format precisely because the system is so entrenched in the community. Adapters are available for different contexts to ensure smooth data collection, such as for Java applications that expose data via Java Management Extensions (JMX), where data can be automatically imported into Prometheus. Grafana allows system administrators to create dashboards via Prometheus’s query language, PromQL, and thus get a graphical overview of the state of the infrastructure (e.g., hard disk space, network traffic, and processor usage), as well as key values for application performance (e.g., the number of logged-in users or active database transactions).
 
 In this way, engineers can keep track of the four golden signs in monitoring:
 
 - Latency
--	Traffic
--	Errors
--	System saturation
+- Traffic
+- Errors
+- System saturation
 
 Application logs are retrieved from the containers automatically and their content is made searchable in Kibana by way of tagged metadata. This allows administrators to quickly determine which node in the Compliant Kubernetes cluster a certain log extract came from and to perform root cause analysis for effective troubleshooting. If the log data consistently follows a certain structure, or even if it is in a hierarchical format such as JSON, this structure can be made into regular fields in Elasticsearch and thereby further simplify the processing of the data.
 
 ### Continuous Integration and Deployment
+
 To enable an agile way of working, many organizations rely on systems that allow them to automatically build, test, and deploy software in a CI/CD process, preferably directly when checking code into a version control system. Azure offers Azure DevOps Pipelines as a complete solution. Other popular alternatives are Gitlab, CircleCI, ArgoCD, Octopus Deploy, TeamCity, and Jenkins, where organizations administer at least some of these themselves.
 
 As the systems for building and deploying software in a CI/CD process are not typically dependent on the user’s data, it’s likely that, even under the GDPR, they will continue to use the systems the organization already has for this. Organizations that therefore have processes and a lot of knowledge within a certain series of products or services may therefore want to stay with these.
@@ -185,6 +196,7 @@ Neither Safespring as such nor Compliant Kubernetes dictates a specific CI/CD so
 As an official CNCF-certified Kubernetes distribution solution, Compliant Kubernetes is fully compatible with all CI/CD systems that support Kubernetes.
 
 ### Policy as Code
+
 Continuous security and compliance via Policy as Code. Compliant Kubernetes is a Kubernetes distribution solution with an emphasis on security. Ensuring system security is not a one-time event but a continuous process. Compliant Kubernetes supports this process as follows:
 
 - {{< inline "Security scanning" >}} of container images for known errors is performed continuously by the Trivy software integrated with the container image register Harbor.

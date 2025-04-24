@@ -1,6 +1,6 @@
 ---
 title: "Med Safespring kan Elastisys' kunder fokusere på å utvikle sine digitale tjenester"
-language: "No"
+language: "nb"
 date: 2023-09-18
 draft: false
 section: "Brukercase"
@@ -19,7 +19,7 @@ saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
 aliases:
-- /no/tjenester/case/elastisys/
+  - /no/tjenester/case/elastisys/
 ---
 
 {{< ingress >}}

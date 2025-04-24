@@ -1,6 +1,6 @@
 ---
 section: "OCRE 2024 framework"
-language: "En"
+language: "en"
 title: "Price List and Calculator"
 date: "2025-01-20"
 draft: false
@@ -16,7 +16,7 @@ sidebarlinkname2: "Service Catalogue"
 sidebarlinkurl2: "/geant/service-catalogue/"
 noindex: "x"
 aliases:
-- /geant/price/
+  - /geant/price/
 ---
 
 {{% note "Information" %}}
@@ -30,11 +30,12 @@ Infrastructure as a service can run on an open source license or with a Windows 
 {{< /ingress >}}
 
 ### Flavors with local NVMe storage
+
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
 See configurations for flavors with local NVMe storage in the [service catalogue](/geant/service-catalogue/infrastructure/#configurations).
 
-| Product   ID             | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
-|--------------------------|------|----------|-----------------|--------|----------|
+| Product ID               | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
+| ------------------------ | ---- | -------- | --------------- | ------ | -------- |
 | FLAVOR-l2. c2 r4. 100    | 2    | 4        | 100             | 0,06 € | 42,72 €  |
 | FLAVOR-l2. c2 r4. 500    | 2    | 4        | 500             | 0,11 € | 78,32 €  |
 | FLAVOR-l2. c2 r4. 1000   | 2    | 4        | 1 000           | 0,17 € | 122,82 € |
@@ -51,11 +52,12 @@ See configurations for flavors with local NVMe storage in the [service catalogue
 | FLAVOR-l2. c32 r64. 1000 | 32   | 64       | 1 000           | 0,88 € | 630,12 € |
 
 ### Flavors without local storage
+
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
 See configurations for flavors without local storage in the [service catalogue](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
 
 | Product ID         | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
-|--------------------|------|----------|-----------------|--------|----------|
+| ------------------ | ---- | -------- | --------------- | ------ | -------- |
 | FLAVOR-b2. c1 r2   | 1    | 2        | 0               | 0,02 € | 16,91 €  |
 | FLAVOR-b2. c1 r4   | 1    | 4        | 0               | 0,04 € | 26,70 €  |
 | FLAVOR-b2. c2 r4   | 2    | 4        | 0               | 0,05 € | 33,82 €  |
@@ -68,17 +70,17 @@ See configurations for flavors without local storage in the [service catalogue](
 | FLAVOR-b2. c16 r64 | 16   | 64       | 0               | 0,59 € | 427,20 € |
 
 ### Central Block Storage
+
 Central block storage provides three copies of the data distributed in a robust CEPH cluster.
 See configurations in the [service catalogue](/geant/service-catalogue/infrastructure/#central-block-storage).
 
 | Product ID      | Description               | Hourly   | 30 days  |
-|-----------------|---------------------------|----------|----------|
+| --------------- | ------------------------- | -------- | -------- |
 | VOLUME-large    | HDD-backed 3-replica Ceph | 0,0001 € | 0,1068 € |
 | VOLUME-fast     | SSD-backed 3-replica Ceph | 0,0004 € | 0,3204 € |
 | VOLUME-snapshot | Snapshot of image         | 0,0001 € | 0,1068 € |
 
 {{< distance >}}
-
 
 ## Safespring Storage (S3)
 
@@ -89,13 +91,11 @@ Contact us for discounts on larger storage quantities. Pricing model based on th
 See configurations for object storage in the [service catalogue](/geant/service-catalogue/storage/#configurations).
 
 | Product ID | Per TB for 30 days |
-|------------|--------------------|
+| ---------- | ------------------ |
 | S3-archive | 31,15 €            |
 | S3-storage | 44,50 €            |
 
 {{< distance >}}
-
-
 
 ## Safespring Backup
 
@@ -110,7 +110,7 @@ See configurations for backup in the [service catalogue](/geant/service-catalogu
 {{% accordion title="Which plan is best?" %}}
 
 | Data Usage (GB) | Most Cost-effective Service |
-|-----------------|-----------------------------|
+| --------------- | --------------------------- |
 | 0 - 5 000       | Backup on Demand            |
 | 5 001 - 7 000   | Backup Small                |
 | 7 001           | Backup Large                |
@@ -118,13 +118,11 @@ See configurations for backup in the [service catalogue](/geant/service-catalogu
 {{% /accordion %}}
 {{< accordion-script >}}
 
-| Product ID       | Fixed monthly price | Per GB / 30 days |
-|------------------|---------------------|------------------|
+| Product ID         | Fixed monthly price | Per GB / 30 days |
+| ------------------ | ------------------- | ---------------- |
 | BAAS-on.demand[^2] | N/A                 | 0,22 €           |
 | BAAS-small[^3]     | 490 €               | 0,16 €           |
 | BAAS-large[^4]     | 846 €               | 0,08 €           |
-
-
 
 ## Network and Software
 
@@ -133,25 +131,27 @@ Safespring offers various software and licenses that can run on top of Safesprin
 {{< /ingress >}}
 
 ### Network
+
 Safespring offers several network services.  
 See network alternatives in the [service catalogue](/geant/service-catalogue/network/).
 
-| Product ID   | Type                       | Description                             | Billing per | Monthly  |
-|--------------|----------------------------|-----------------------------------------|-------------|----------|
-| NET-publicv4 | IPv4                       | Public                                  | IP-address  | 2,23 €   |
-| NET-publicv6 | IPv6                       | Public                                  | N/A         | 0,00 €   |
-| NET-ingress  | Data transfer              |                                         | N/A         | 0,00 €   |
-| NET-egress   | Data transfer              |                                         | N/A         | 0,00 €   |
+| Product ID   | Type                       | Description                               | Billing per | Monthly  |
+| ------------ | -------------------------- | ----------------------------------------- | ----------- | -------- |
+| NET-publicv4 | IPv4                       | Public                                    | IP-address  | 2,23 €   |
+| NET-publicv6 | IPv6                       | Public                                    | N/A         | 0,00 €   |
+| NET-ingress  | Data transfer              |                                           | N/A         | 0,00 €   |
+| NET-egress   | Data transfer              |                                           | N/A         | 0,00 €   |
 | NET-mgn.slb  | Managed SLB                | Load balancer based on two `l2.c4.r8.100` | Instance    | 186,00 € |
-| NET-rdns     | Reverse DNS names          |                                         | N/A         | 0,00 €   |
-| NET-byoip    | Bring your own IP prefixes |                                         | N/A         | 0,00 €   |
+| NET-rdns     | Reverse DNS names          |                                           | N/A         | 0,00 €   |
+| NET-byoip    | Bring your own IP prefixes |                                           | N/A         | 0,00 €   |
 
 ### Software and Licenses
+
 Safespring offers several software and licenses.  
 See third-party software licenses in the [service catalogue](/geant/service-catalogue/third-party-software-licenses/).
 
 | Product ID        | Description                     | Billing per | Monthly  |
-|-------------------|---------------------------------|-------------|----------|
+| ----------------- | ------------------------------- | ----------- | -------- |
 | SW-win.ser.2022   | Microsoft Windows Server        | vCPU        | 15,58 €  |
 | SW-ms.sql.ser     | Microsoft SQL Server Standard   | vCPU        | 109,38 € |
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU        | 424,17 € |
@@ -179,11 +179,11 @@ Support applies to Safespring Compute, Safespring Storage and Safespring Backup.
 
 See support alternatives in the [service catalogue](/service-catalogue/support/).
 
-| Product ID       | Description                                                  | Billing per  | Monthly               |
-|------------------|--------------------------------------------------------------|--------------|-----------------------|
-| SUPPORT-base     | Support for Safespring's services                            | N/A          | 0,00 €                |
+| Product ID       | Description                                                  | Billing per  | Monthly                  |
+| ---------------- | ------------------------------------------------------------ | ------------ | ------------------------ |
+| SUPPORT-base     | Support for Safespring's services                            | N/A          | 0,00 €                   |
 | SUPPORT-standard | Access to chat room with support and engineering             | Total volume | 3 % of total volume [^5] |
-| SUPPORT-premium  | Dedicated Service Manager with quarterly operations meetings | Month        | 2 140,00 €            |
+| SUPPORT-premium  | Dedicated Service Manager with quarterly operations meetings | Month        | 2 140,00 €               |
 
 <!--### Consulting Services
 Access our experienced consultants and project managers to optimize your cloud infrastructure at competitive prices, with junior experts starting at €100.43 per hour and senior experts reaching up to €122.38 per hour.
@@ -199,17 +199,18 @@ Access our experienced consultants and project managers to optimize your cloud i
 -->
 
 ### Educations
+
 Safespring offers several courses in IaaS and cloud services.  
 Read the course descriptions in the [service catalogue](/geant/service-catalogue/courses/).
 
 | Product ID                  | Description                                     | Duration  | Billing per | Price      |
-|-----------------------------|-------------------------------------------------|-----------|-------------|------------|
+| --------------------------- | ----------------------------------------------- | --------- | ----------- | ---------- |
 | COURSE-intro.iaas           | Introduction to "infrastructure as a service"   | One day   | Occasion    | 560,00 €   |
 | COURSE-cxo.strategy         | Cloud strategy for management teams             | One day   | Occasion    | 560,00 €   |
 | COURSE-intro.cloud          | Introduction to cloud infrastructure technology | Four days | Occasion    | 2 230,00 € |
 | COURSE-devops.microservices | Modern DevOps and "microservices"               | Four days | Occasion    | 2 230,00 € |
 
-___
+---
 
 ### Notes
 

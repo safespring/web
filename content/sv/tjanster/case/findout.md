@@ -1,6 +1,6 @@
 ---
 title: "Från Google Cloud till Safespring med Compliant Kubernetes"
-language: "Se"
+language: "sv"
 date: 2019-01-07T13:58:58+01:00
 draft: true
 darkmode: "off"
@@ -18,7 +18,7 @@ sidebarimage: "findout-logo.svg"
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-- /tjanster/case/findout/
+  - /tjanster/case/findout/
 ---
 
 <!--{{< ingress >}}

@@ -1,6 +1,6 @@
 ---
 title: "Hello, glad you want to learn more about Safespring"
-language: "En"
+language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Book demo"
@@ -18,7 +18,7 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/en/contact"
 aliases:
-- /en/hello/
+  - /en/hello/
 ---
 
 {{< ingress >}}

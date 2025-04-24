@@ -8,18 +8,17 @@ showthedate: true
 card: "safespring_card_54.svg"
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 sectiontext: "Blog"
 section: "blogg"
 author: "Daniel Melin"
 aliases:
-- /blogg/2025/2025-03-exit-strategy/
+  - /blogg/2025/2025-03-exit-strategy/
 ---
 
 {{< ingress >}}
 In today’s geopolitical landscape where USA quickly tries to become more like China and Russia, customers to American cloud providers are faced with difficult decisions.
 {{< /ingress >}}
-
 
 **Do you want to leave?** Maybe you feel that USA is too far gone destroying their democracy, or that things in general are going haywire.
 
@@ -35,11 +34,11 @@ Here is a list of some of the things you could consider in the Exit process:
 1. Document which American cloud services you use.
 2. Document which kind of services you buy. IaaS, PaaS, SaaS or other XaaS?
 3. Document what kind of data is stored and processed in the services.
-4. Try to read the contract(s). They are often very long, very complex, very unfriendly to the customer and not always complete though. 
-    1. What kinds of rights do you have to your data and metadata? 
-    1. Can you extract everything? 
-    1. In which formats can you get the data and metadata? 
-    1. Is it possible to reuse the data and metadata without loss?
+4. Try to read the contract(s). They are often very long, very complex, very unfriendly to the customer and not always complete though.
+   1. What kinds of rights do you have to your data and metadata?
+   1. Can you extract everything?
+   1. In which formats can you get the data and metadata?
+   1. Is it possible to reuse the data and metadata without loss?
 5. If you use compute instances and S3 storage, the process should be quite straightforward and there should not be any data loss.
 6. If you use Kubernetes and containers, there are some pitfalls, but you should be able to migrate without data loss.
 7. If you are the developer behind a SaaS that uses someone else’s Iaas/PaaS then your mileage will vary a lot depending on how locked in you are to functions only available from one cloud provider. In this case it might be necessary to change your application so that it can run in any standard cloud environment. This will be beneficial for you in the long run anyway. :)
@@ -49,14 +48,9 @@ Here is a list of some of the things you could consider in the Exit process:
 
 No matter your situation, talk to us at Safespring and we will guide you through your Exit.
 
-
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 I'm Safespring's Business Development Manager. Whether you’re interested in procuring our services or learn more about initiatives like EuroStack, I’m here to help you navigate and leverage our offerings.
 
-{{< inline "Call" >}} +46 (0)76 868 00 59 
+{{< inline "Call" >}} +46 (0)76 868 00 59
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}
-
-
-
-

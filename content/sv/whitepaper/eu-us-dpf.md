@@ -1,7 +1,7 @@
 ---
 title: "Läget efter EU-US Data Protection Framework (DPF)"
 section: "White Paper"
-language: "Se"
+language: "sv"
 date: "2024-03-13"
 intro: "Med anledning av EU-kommissionens senaste beslut om dataöverföringar till amerikanska molntjänst­leverantörer i juli 2023 finns anledning att återigen se över de förändrade omständigheterna."
 draft: false
@@ -24,7 +24,7 @@ aliases:
 EU-kommissionens senaste beslut om dataöverföringar till USA har återigen satt fokus på de rättsliga och tekniska utmaningar som europeiska organisationer.
 {{< /ingress >}}
 
-I två tidigare white papers, 2018[^1] och 2020[^2], har Safespring gått igenom det rättsliga och tekniska läget för organisationer som planerar sin IT-infrastruktur. 
+I två tidigare white papers, 2018[^1] och 2020[^2], har Safespring gått igenom det rättsliga och tekniska läget för organisationer som planerar sin IT-infrastruktur.
 
 Med anledning av EU-kommissionens senaste beslut om dataöverföringar till amerikanska molnleverantörer i juli 2023[^3] finns anledning att återigen se över de förändrade omständigheterna.
 
@@ -34,7 +34,8 @@ I huvudsak förblir rekommendationerna samma. Vi har i vissa delar uppdaterat sp
 Som anmärkts av andra än Safespring finns egentligen få anledningar att tro att förändringarna i nya data­överförings­beslutet innebär “väsentligen samma skydd” som europeisk rätt.
 {{< /quote >}}
 
-## Bakgrund 
+## Bakgrund
+
 ### Europeiska dataöverförings­beslut
 
 Den 10 juli 2023 offentliggjorde EU-kommissionen sitt senaste beslut med avseende på rättslig säkerhet vid överföring av personuppgifter till aktörer som lyder under amerikansk rätt: EU-US Data Protection Framework (DPF). Detta är en uppföljare till besluten Safe Harbor och Privacy Shield som tidigare förklarats ogiltiga av EU-domstolen. Till grund för EU-US DPF ligger förhandlingar mellan EU:s medlemsländer och EU-kommissionen, å ena sidan, och EU-kommissionen och federala myndigheter i USA, å andra sidan. Förhandlingarna har resulterat i en överenskommelse mellan USA och EU som ligger i ett appendix till beslutet.
@@ -69,62 +70,64 @@ I allmänhet blir det allt vanligare att inom en viss industri samarbetar kring 
 
 Att källkoden är öppen minskar möjligheterna för leverantörer och implementatörer att dölja säkerhetsfel som upptäcks efter eventuell certifiering. Det skapar också möjlighet för samhällelig styrning av resurser som går in i de konsortier som ansvarar för gränssnitts­utvecklingen. Hur exakt styrningen kommer utvecklas återstår att se, men som synes finns både säkerhetsskäl och samverkansskäl att orientera sig mot öppen källkodslösningar.
 
- 
 ## Rekommendationer
 
 ### Etablera den tidshorisont ni vill jobba på
+
 - Bestäm på vilken tidshorisont ni planerar er infrastruktur och hur ofta ni vill eftersöka och upphandla nya tjänster. Jämför denna tidshorisont med hur snabbt rättsläget, teknikläget och er organisation i övrigt kan förändras.
-- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång. 
-    - Notera: Vid användning av leverantörers standardavtal är det vanligt att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
+- Gör en analys av förändringstakten för avtalsvillkor och vilket inflytande ni kan utöva över denna. Det kan exempelvis röra villkor om prissättning och tjänstetillgång.
+  - Notera: Vid användning av leverantörers standardavtal är det vanligt att villkoren kan förändras även vid passivt medgivande av kunden. Att inte godta standardavtals­förändringar är i dessa situationer likställt med att påbörja ett migrationsprojekt.
 - Testa och modellera olika scenarier. Sätt siffror på era sannolikhets­bedömningar och konsekvensanalyser. {{< note "Exempel på scenario" >}}<p>Om det till exempel antas vara 20 % risk för ett fullt stopp av överföring av personuppgifter till amerikanska tjänster under tolv månader med start om nio månader, hur skulle detta påverka verksamheten och beslutsprocessen kring IT-strategi gällande val av leverantörer?</p>{{< /note >}}
 
 ### Skapa förutsättningar för enkel migration
+
 - Att bygga sin miljö med containrar (t ex Kubernetes eller Docker) underlättar migration av utvecklings- och produktionsmiljöer mellan leverantörer i förhållande till virtuella servrar eller fysiska servrar.
-- Räkna på hur dataöverförings­kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänst­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data. 
-    - Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
-- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform. 
-    - Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva i alla S3-leverantörers tjänster.
+- Räkna på hur dataöverförings­kostnaderna skulle slå den dagen ni vill flytta ut. Många molntjänst­leverantörer tar inte betalt för att lägga upp data. Desto fler tar betalt av kunderna för att hämta hem data.
+  - Notera: Detta kallas ofta för ingress (ladda upp) och egress (hämta hem).
+- Separera data från tjänster med öppna (eller standardiserade) gränssnitt för enklare kunna byta datalagrings­plattform.
+  - Fallgrop: Amazons S3-protokoll är en de facto-standard för storskalig lagring av ostruktuerad data i molnet. Dessvärre går det inte alltid att digitalt samverka med samtliga funktionaliteter Amazon bygger in i sin version av S3. Om du ska använda S3 bör du se till att bara använda sådana funktionaliteter som går att införliva i alla S3-leverantörers tjänster.
 - Investera i egen identitetshantering istället för att lita på molntjänst-leverantörens. Startsträckan blir lite längre men migration blir mycket enklare.
 - Säkerställ att tjänsteleverantören vid utformingen av sin tjänst använt öppet specificerade API:er och dataformat.
 
 ### Personuppgiftsskydd
+
 - Gör grundarbetet med GDPR kring hantering av personuppgifter. Se över:
-    - var ni geografiskt lagrar era personuppgifter,
-    - vad ni har för rättslig grund för behandlingen, 
-    - hur känsliga personuppgifter det är som behandlas,
-    - om det finns någon gallringsrutin implementerad,
-    - hur ni informerar privatpersoner om behandlingen, och
-    - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit. {{< note "Gallring" >}}<p>Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.</p>{{< /note >}}
-- Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster. 
-    - Är det känsliga personuppgifter? 
-    - Offentliga uppgifter? 
-    - Privat kommunikation? 
+  - var ni geografiskt lagrar era personuppgifter,
+  - vad ni har för rättslig grund för behandlingen,
+  - hur känsliga personuppgifter det är som behandlas,
+  - om det finns någon gallringsrutin implementerad,
+  - hur ni informerar privatpersoner om behandlingen, och
+  - om personuppgifterna lagras utanför EU/EES, vilken rättslig grund ni har för överföringen dit. {{< note "Gallring" >}}<p>Gallringsrutiner är särskilt viktiga om uppgifterna lagras i USA eftersom organisationer då minskar mängden uppgifter som skulle kunna komma att behöva lämnas ut.</p>{{< /note >}}
+- Bedöm säkerhetsklassningen av den datan som behandlas inom organisationen. Denna bedömning är nödvändig för att kunna göra korrekt lämplighets- och riskanalys kring användandet av olika molntjänster.
+  - Är det känsliga personuppgifter?
+  - Offentliga uppgifter?
+  - Privat kommunikation?
 
 ### Säkerhet
+
 - Kommer er verksamhet träffas av krav på säkerhetsstandarder? I sådana fall, vilka?
-    - Hur kommer ni verifiera leverantörer? 
-    - Vilka certifikat kommer ni vilja godkänna?
-    - Kommer ni kunna samarbeta med andra vid utvärdering av certifikat?
-    - Hur ska ni bevaka utveckling som sker efter certifikatens utfärdande?
+  - Hur kommer ni verifiera leverantörer?
+  - Vilka certifikat kommer ni vilja godkänna?
+  - Kommer ni kunna samarbeta med andra vid utvärdering av certifikat?
+  - Hur ska ni bevaka utveckling som sker efter certifikatens utfärdande?
 - Hur ska ni hantera löpande säkerhets­uppdateringar?
 
 ### Hantering av försörjningskedjan
+
 - Ha koll på hela försörjningskedjan:
-    - Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av andra molntjänstleverantörer.
-    - Verifiera att det finns avtal mellan tjänsteleverantören och underleverantören, samt att avtalet överensstämmer med de dataskyddsrättsliga kraven.
-    - Kontrollera ifall antingen tjänsteleverantören som sådan eller tjänsteleverantörens underleverantörer har sin legala hemvist i tredjeland. Gör en bedömning av om detta riskerar innebära att tredjelandets myndigheter kan ålägga antingen underleverantören eller tjänsteleverantören att överlämna uppgifter till tredjelandets myndigheter.
+  - Kontrollera ifall tjänsteleverantörer i rakt nedstigande led använder underleverantörer i form av andra molntjänstleverantörer.
+  - Verifiera att det finns avtal mellan tjänsteleverantören och underleverantören, samt att avtalet överensstämmer med de dataskyddsrättsliga kraven.
+  - Kontrollera ifall antingen tjänsteleverantören som sådan eller tjänsteleverantörens underleverantörer har sin legala hemvist i tredjeland. Gör en bedömning av om detta riskerar innebära att tredjelandets myndigheter kan ålägga antingen underleverantören eller tjänsteleverantören att överlämna uppgifter till tredjelandets myndigheter.
 
 ## Källförteckning
 
-[^1]: Safespring. (2018). *Cloud Act White Paper*. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/cloudact/)
-[^2]: Safespring. (2020). *Schrems II White Paper*. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/schrems-ii/)
-[^3]: Europeiska kommissionen. (2023). *C(2023) 4745 final*. Hämtad från [commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
-[^4]: Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 131*. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
-[^5]: Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 138*. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
-[^6]: Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 134-135*. Dataskydds­förordningen (GDPR), 679/2016, Artikel 6.1.f.
-[^7]: Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 126*.
-[^8]: Europeiska kommissionen. (2023). *C(2023) 4745 final, Rec. 184*.
-[^9]: noyb. (2023, 10 juli). *European Commission gives EU-US data transfers third round at CJEU*. Hämtad från [noyb.eu](https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu)
-[^10]: Europeiska dataskydds­ombudsmannen. (2024). *EDPS/2024/05*. European Commission’s use of Microsoft 365 infringes data protection law for EU institutions and bodies. Hämtad från [edps.europa.eu](https://www.edps.europa.eu/system/files/2024-03)
-
-
+[^1]: Safespring. (2018). _Cloud Act White Paper_. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/cloudact/)
+[^2]: Safespring. (2020). _Schrems II White Paper_. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/schrems-ii/)
+[^3]: Europeiska kommissionen. (2023). _C(2023) 4745 final_. Hämtad från [commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
+[^4]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 131_. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
+[^5]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 138_. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
+[^6]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 134-135_. Dataskydds­förordningen (GDPR), 679/2016, Artikel 6.1.f.
+[^7]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 126_.
+[^8]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 184_.
+[^9]: noyb. (2023, 10 juli). _European Commission gives EU-US data transfers third round at CJEU_. Hämtad från [noyb.eu](https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu)
+[^10]: Europeiska dataskydds­ombudsmannen. (2024). _EDPS/2024/05_. European Commission’s use of Microsoft 365 infringes data protection law for EU institutions and bodies. Hämtad från [edps.europa.eu](https://www.edps.europa.eu/system/files/2024-03)

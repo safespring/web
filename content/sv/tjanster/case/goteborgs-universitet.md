@@ -1,6 +1,6 @@
 ---
 title: "Göteborgs Universitet tar kontroll över sina backuper"
-language: "Se"
+language: "sv"
 date: 2024-04-02
 draft: false
 section: "Use case"
@@ -19,7 +19,7 @@ saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Backup"
 aliases:
-- /tjanster/case/goteborgs-universitet/
+  - /tjanster/case/goteborgs-universitet/
 ---
 
 {{< icon-block-container >}}

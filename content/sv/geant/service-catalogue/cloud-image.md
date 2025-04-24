@@ -1,6 +1,6 @@
 ---
 title: "Cloud Image Service"
-language: "En"
+language: "en"
 cardtitle: "Cloud Images"
 cardicon: "fa-solid fa-compact-disc"
 cardcolor: "#195F8C"
@@ -27,6 +27,7 @@ The Compute service additionally contains a cloud image service (OpenStack Glanc
 {{< /ingress >}}
 
 ## Cloud Images
+
 Cloud images are prepared OS images that are deployable in a cloud environment where, for example the server-to-be’s name, IP or MAC address is not known in advance. The images need to have the framework cloud-init installed, which provides OpenStack with an API to interact with the created instances to set these variables in the instance.
 
 The image service allows users to create, read, update and delete their own images, which users either have authored on their own or copied from another source. The service also contains a list of public images that are updated regularly by the provider.
@@ -44,14 +45,13 @@ The image service base offer is the image service itself, which stores images fo
 Safespring offers the following public cloud images, based on upstream project releases. These images are regularly updated within their major versions:
 
 | Operating System Images        |
-|--------------------------------|
+| ------------------------------ |
 | CentOS                         |
 | Cirros                         |
 | Debian                         |
 | RedHat Enterprise Linux Server |
 | Windows Server Datacenter      |
 | Ubuntu                         |
-
 
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}

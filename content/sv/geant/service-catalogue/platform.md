@@ -1,6 +1,6 @@
 ---
 title: "Platform as a service"
-language: "En"
+language: "en"
 cardtitle: "Platform services"
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#195F8C"
@@ -23,9 +23,11 @@ aliases:
 ---
 
 ## Managed Compliant Kubernetes
+
 The managed Compliant Kubernetes platform includes the following features and capabilities:
 
 ### Security and compliance
+
 - Private container registry
 - Intrusion detection systems (IDS) for alerting in case of breaches
 - Automated image vulnerability scanning
@@ -39,12 +41,14 @@ The managed Compliant Kubernetes platform includes the following features and ca
 - Network isolation and restrictive firewalls, allowing only permitted network traffic into the platform. Inbound traffic to the cluster is securely handled using the Nginx ingress controller
 
 ### Platform observability
+
 - Monitoring of Compliant Kubernetes platform resource usage
 - Alerting based on monitoring data
 - Log aggregation
 - Analytics based on collected logs
 
 ### Automation and management
+
 - Continuous updates/patches of the Kubernetes platform
 - Continuous updates/patches of Cluster Services and External Services
 - Backups and disaster recovery
@@ -53,27 +57,33 @@ The managed Compliant Kubernetes platform includes the following features and ca
 ## Managed OpenSearch
 
 ### Updates and upgrades
+
 - OpenSearch and Kibana instances are kept up to date with security patches and new versions.
 
 ### Backups and disaster recovery
+
 - A full backup of the database is taken every day. In addition to this, point-in-time recovery is provided by means of a Write-Ahead-Log.
 - Disaster recovery is committed to be completed within four hours.
 
 ### Log aggregation
-- All logs are stored in OpenSearch and can be viewed in Kibana. 
+
+- All logs are stored in OpenSearch and can be viewed in Kibana.
 - Logs are kept for a maximum of 30 days (GDPR compliance) or up to 50 GB, whichever comes first.
 
 ## Managed NATS
 
 ### Updates and upgrades
-- NATS is kept up to date with security patches and new versions. 
+
+- NATS is kept up to date with security patches and new versions.
 
 ### Backups and disaster recovery
-- A full backup is taken every day. 
+
+- A full backup is taken every day.
 - Disaster recovery is committed to be completed within four hours.
 
 ### Log aggregation
-- All logs are stored in OpenSearch and can be viewed in Kibana. 
+
+- All logs are stored in OpenSearch and can be viewed in Kibana.
 - Logs are kept for a maximum of 30 days (GDPR compliance) or up to 50 GB, whichever comes first.
 
 {{< distance >}}
@@ -81,4 +91,3 @@ The managed Compliant Kubernetes platform includes the following features and ca
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}
-

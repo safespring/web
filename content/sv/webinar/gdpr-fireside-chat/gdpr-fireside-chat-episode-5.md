@@ -2,7 +2,7 @@
 title: "Kan EU & USAs nya avtal leda till Schrems III?"
 episode: "5"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2022-05-10"
 publishDate: "2022-05-02"
 draft: false

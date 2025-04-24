@@ -1,6 +1,6 @@
 ---
 title: "Maskininlärning - från idé till pilot och produktion"
-language: "Se"
+language: "sv"
 publishDate: "2020-09-03T13:58:35+02:00"
 draft: false
 tags: ["Svenska"]
@@ -14,24 +14,24 @@ thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-scaleout-1.jpg"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-scaleout-1/master.m3u8"
 chaptersTitle: "I detta avsnitt"
 chapters:
-- title: "Intro Safespring"
-  time: 165
-  timeFormatted: "02:45"
-- title: "Scaleout"
-  time: 452
-  timeFormatted: "07:32"
-- title: "Demo av STACKn"
-  time: 1089
-  timeFormatted: "18:09"
-- title: "Sammanfattning"
-  time: 2010
-  timeFormatted: "33:30"
-- title: "Frågor"
-  time: 2173
-  timeFormatted: "36:13"
+  - title: "Intro Safespring"
+    time: 165
+    timeFormatted: "02:45"
+  - title: "Scaleout"
+    time: 452
+    timeFormatted: "07:32"
+  - title: "Demo av STACKn"
+    time: 1089
+    timeFormatted: "18:09"
+  - title: "Sammanfattning"
+    time: 2010
+    timeFormatted: "33:30"
+  - title: "Frågor"
+    time: 2173
+    timeFormatted: "36:13"
 aliases:
-    - /webinar/scaleout/
-    - /webinar/safespring-partner-webinar-scaleout-1/
+  - /webinar/scaleout/
+  - /webinar/safespring-partner-webinar-scaleout-1/
 ---
 
 ### Om webbinariet
@@ -50,4 +50,5 @@ Utifrån sina erfarenheter att stödja och driftsätta maskininlärning i allt f
 - Hur arbete med maskininlärning är en förlängning av DevOps och integreras med övrig utveckling på företaget.
 
 ### Vad är STACKn?
-STACKn är en ny kraftfull tech-stack som integrerar de mest använda öppna lösningarna för att skapa en skalbar maskininlärningsmiljö byggd på cloud-native principer. STACKn täcker hela livscykelhanteringen för en maskininlärningsmodell samt sköter automatisering och orkestrering. Det är flexibelt och kan anpassas till olika miljöer på ett smidigt sätt. Det är byggt för att man snabbt ska kunna komma igång med maskininlärning och ta AI till produktion."									
+
+STACKn är en ny kraftfull tech-stack som integrerar de mest använda öppna lösningarna för att skapa en skalbar maskininlärningsmiljö byggd på cloud-native principer. STACKn täcker hela livscykelhanteringen för en maskininlärningsmodell samt sköter automatisering och orkestrering. Det är flexibelt och kan anpassas till olika miljöer på ett smidigt sätt. Det är byggt för att man snabbt ska kunna komma igång med maskininlärning och ta AI till produktion."

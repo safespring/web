@@ -1,6 +1,6 @@
 ---
 title: "Maximise Your Productivity with Welkin"
-language: "En"
+language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
@@ -15,16 +15,16 @@ sidebarlinkurl2: "/demo/compute/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: "Elastisys Welkin makes it easy to create clusters with high regulatory compliance, while we ensure your infrastructure is optimised for your specific needs."
 aliases:
-- /en/services/compliant-kubernetes/
+  - /en/services/compliant-kubernetes/
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-person-chalkboard" text="Certified Experts" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-file-shield" text="GDPR Compliant" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-code" text="Open Source" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Digital Sovereignty" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-life-ring" text="Swedish Support" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-person-chalkboard" text="Certified Experts" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-file-shield" text="GDPR Compliant" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-code" text="Open Source" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Digital Sovereignty" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-life-ring" text="Swedish Support" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}
@@ -41,11 +41,13 @@ Our partner, Elastisys, is not only certified Kubernetes service providers but a
 ![Welkin on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
 ## Why Choose Welkin?
+
 Kubernetes in its purest form is not secure. Welkin is tailored to ISO27001 standards, which means it is designed for maximum security and observability from the start.
 
 ![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
 ## Background
+
 {{< ingress >}}
 There are many reasons why companies choose to bring their data home to Europe.
 {{< /ingress >}}

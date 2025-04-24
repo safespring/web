@@ -1,6 +1,6 @@
 ---
 title: "Welkin"
-language: "En"
+language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: true
 intro: "Welkin gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
@@ -12,7 +12,7 @@ socialmedia: "safespring-compute.jpg"
 devops: ""
 section: "Public Cloud"
 aliases:
-- /en/services/compliant-kubernetesold/
+  - /en/services/compliant-kubernetesold/
 ---
 
 {{% ingress %}}
@@ -36,7 +36,7 @@ Although historically known as hard to set up, getting a Kubernetes cluster up a
 
 ![Welkin on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
 
-*A process has started to connect Safespring's cloud platform to Sjunet in Sweden.*
+_A process has started to connect Safespring's cloud platform to Sjunet in Sweden._
 
 In addition to monitoring the clusters 24/7 for both health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management - upgrading, testing and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
 

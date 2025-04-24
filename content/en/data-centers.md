@@ -1,6 +1,6 @@
 ---
 title: "Safespring Data Centers"
-language: "En"
+language: "en"
 section: "About Safespring"
 date: 2022-12-22T13:58:58+01:00
 draft: false
@@ -10,11 +10,10 @@ sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-datacenter.jpg"
 aliases:
-- /en/data-centers/
+  - /en/data-centers/
 ---
 
 ![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)
-
 
 ## Safespring Stockholm Norr
 
@@ -42,4 +41,3 @@ The data center's responsible person can provide extracts of the pass system and
 ## Safespring Oslo
 
 The data center in Oslo is the largest existing data center in Norway and is powered by hydropower. It will collaborate with several parties to provide hydropower-generated data centers to national and international customers. The data center is the largest existing one in Norway, with leading international data center operators renting approximately 6,000 sqm in the building. The property has 22 MW of installed power capacity and is designed to operate at over 90% efficiency, with a PUE of 1.1.
-

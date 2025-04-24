@@ -1,6 +1,6 @@
 ---
 title: "Kör Sudo's Dockyards på Safesprings optimerade servrar"
-language: "Se"
+language: "sv"
 date: 2023-05-19
 draft: false
 section: "Public Cloud"
@@ -13,15 +13,15 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
 aliases:
-- /tjanster/dockyards/
+  - /tjanster/dockyards/
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-docker" text="Cloud-native Kubernetes" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-automation" text="Powerful automation" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-kit fa-expert" text="Expertise at your service" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-server" text="High-performance infrastructure" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-shield" text="Compliant Kubernetes" link="" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-docker" text="Cloud-native Kubernetes" link="" color="#32cd32">}}
+{{< icon-block icon="fa-kit fa-automation" text="Powerful automation" link="" color="#195F8C">}}
+{{< icon-block icon="fa-kit fa-expert" text="Expertise at your service" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-server" text="High-performance infrastructure" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-shield" text="Compliant Kubernetes" link="" color="#FA690F">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}

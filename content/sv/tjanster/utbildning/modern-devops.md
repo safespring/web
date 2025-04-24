@@ -1,6 +1,6 @@
 ---
 title: "Modern DevOps & Microservices"
-language: "En"
+language: "en"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "For technical professionals that wants to learn how to build infrastructure for the cloud."
@@ -10,20 +10,25 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 aliases:
-- /tjanster/utbildning/modern-devops/
+  - /tjanster/utbildning/modern-devops/
 ---
+
 ## Description
+
 For technical professionals that wants to learn how to build infrastructure for the cloud. We will cover what it means to build and support cloud environments for your organization microservices need based on Kubernetes. We learn how to build production ready microservice cluster that are secure, observable and supporting Continuous Integration/Deployment and Delivery, accelerating your organization's time to market for your development efforts.
 
 This course can be divided into several lectures. Download the course description for more information.
 
 ### Level
+
 Intermediate
 
 ### Who should attend?
+
 Software Developers, Technical Project Managers, Software Architects, Operations Support professionals, Deployment engineers, IT Managers, Development Managers, Technical Managers, Line managers, QA and Testing professionals, Domain Experts, etc. From all industry sectors.
 
 ### Duration
+
 4 days (or 2 + 2 days)
 
 ### Content
@@ -105,6 +110,7 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 ## How to apply
+
 Let us know that you're interested in the course "Modern DevOps & Microservices". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>

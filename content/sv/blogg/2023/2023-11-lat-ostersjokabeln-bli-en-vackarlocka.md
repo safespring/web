@@ -11,14 +11,13 @@ socialmediabild: ""
 section: "blogg"
 author: "Fredric Wallsten"
 author_image: "firm"
-language: "Se"
+language: "sv"
 aliases:
-- /blogg/2023/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
+  - /blogg/2023/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
 ---
 
-
 {{< ingress >}}
-I en tid där digital infrastruktur har blivit lika avgörande som traditionella nyttofunktioner, belyser de senaste händelserna med Östersjökabeln och andra sårbarheter ett brådskande behov av åtgärder. 
+I en tid där digital infrastruktur har blivit lika avgörande som traditionella nyttofunktioner, belyser de senaste händelserna med Östersjökabeln och andra sårbarheter ett brådskande behov av åtgärder.
 {{< /ingress >}}
 
 På Safespring har vårt åtagande alltid varit att inte bara innovera inom molnteknologi, utan också se till att dessa innovationer bidrar till en motståndskraftig och säker digital miljö för Sverige och Europa.
@@ -45,5 +44,3 @@ Sammanfattningsvis är vår linje tydlig, och på Safespring är vi redo att bid
 {{< localbutton text="Läs artikel" target="_blank" link="https://www.nyteknik.se/debatt/lat-ostersjokabeln-bli-en-vackarklocka-digital-infrastruktur-behover-ett-beredskapslyft/4208118" icon="fa-up-right-from-square" >}}
 
 {{% /custom-card %}}
-
-

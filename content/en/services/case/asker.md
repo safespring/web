@@ -1,6 +1,6 @@
 ---
 title: "How Asker Shapes the Future of Recruitment Processes with Safespring"
-language: "En"
+language: "en"
 date: 2023-10-18
 draft: true
 section: "Use case"
@@ -19,7 +19,7 @@ saas: ""
 sidebarwhitepaper: ""
 service: "Compliant Kubernetes"
 aliases:
-- /en/services/case/asker/
+  - /en/services/case/asker/
 ---
 
 {{< ingress >}}

@@ -1,6 +1,6 @@
 ---
 title: "Safespring On-Premise Cloud"
-language: "Se"
+language: "sv"
 date: 2023-05-10
 draft: false
 intro: "Få hjälp med att sätta upp din egen molninfrastruktur som vi underhåller. Då får du kraften från molnet - i ditt datacenter."
@@ -8,31 +8,32 @@ background: ""
 form: ""
 socialmedia: "safespring-private-cloud.jpg"
 aliases:
-    - /private-cloud/
-    - /tjanster/managed-private-cloud/
-    - /tjanster/managed-infrastructure/
+  - /private-cloud/
+  - /tjanster/managed-private-cloud/
+  - /tjanster/managed-infrastructure/
 section: "Private Cloud"
 toc: "På denna sida"
 ---
 
 {{< ingress >}}
-Safespring On-Premise Cloud är en säker och anpassningsbar privat molnlösning, speciellt utformad för att möta kraven från myndigheter och större organisationer. 
+Safespring On-Premise Cloud är en säker och anpassningsbar privat molnlösning, speciellt utformad för att möta kraven från myndigheter och större organisationer.
 {{< /ingress >}}
 
 Tjänsten erbjuder en kombination av molnteknikens flexibilitet och kontrollen över en lokal, on-premise infrastruktur. Safespring On-Premise Cloud är en idealisk lösning för de som vill dra nytta av molnteknikens många fördelar samtidigt som de behåller full kontroll över sin data och infrastruktur.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="#sakerhetsatgarder" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-headset" text="Professionell support" link="#support" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Säkerhet/ efterlevnad" link="#sakerhetsatgarder" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög tillgänglighet" link="#tillg%C3%A4nglighet" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Flexibel skalbarhet" link="#skalning-av-resurser" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-users-cog" text="Tekniskt kontoansvarig" link="#technical-account-manager-tam" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="#sakerhetsatgarder" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-headset" text="Professionell support" link="#support" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-shield-alt" text="Säkerhet/ efterlevnad" link="#sakerhetsatgarder" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög tillgänglighet" link="#tillg%C3%A4nglighet" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Flexibel skalbarhet" link="#skalning-av-resurser" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-users-cog" text="Tekniskt kontoansvarig" link="#technical-account-manager-tam" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< distance >}}
 
 ## Fördelar med Safespring On-Premise Cloud
+
 När du väljer Safespring On-Premise Cloud får du en rad fördelar som hjälper din organisation att utnyttja förmånerna med molnteknologi samtidigt som du behåller kontroll över dina resurser och data.
 
 {{% accordion title="Dedikerad infrastruktur" %}}
@@ -63,7 +64,6 @@ Safespring On-Premise Cloud är utformad med fokus på säkerhet och regelefterl
 Ni får tillgång till snabb och professionell support med en Technical Account Manager (TAM). TAM:en hjälper er med kapacitetsplanering, incidentrapportering och ger insikt i Safesprings nuvarande och kommande produktutbud.
 {{% /accordion %}}
 
-
 ### Tilläggstjänster för On-Premise Cloud
 
 Börja arbeta med hybrid cloud med följande tilläggstjänster för att anpassa det efter dina behov och optimera prestanda.
@@ -71,11 +71,11 @@ Börja arbeta med hybrid cloud med följande tilläggstjänster för att anpassa
 {{% accordion title="Kombinera med Safesprings publika molnplattform" %}}
 Förbättra din infrastruktur genom att kombinera din On-Premise Cloud med en Public Cloud. Dra nytta av följande fördelar:
 
-* {{< inline "Redundans" >}} Öka systemets tillgänglighet genom att fördela lasten mellan on-premise och Public Cloud, vilket minskar risken för driftstopp.
-* {{< inline "Backup" >}} Säkerställ dina data genom att lagra säkerhetskopior i Public Cloud, vilket ger en extra skyddsnivå vid oförutsedda händelser.
-* {{< inline "Compute" >}} Fördela beräkningsresurser mellan on-premise och Public Cloud för att optimera prestanda och minska kostnader.
-* {{< inline "Storage" >}} Expandera ditt lagringsutrymme med Public Cloud, vilket gör det enkelt att lagra och hantera data på flera platser.
-* {{< inline "Skala ut vid hög belastning" >}} Använd Public Cloud för att enkelt skala ut kapaciteten när belastningen är hög och undvik flaskhalsar och prestandaproblem.
+- {{< inline "Redundans" >}} Öka systemets tillgänglighet genom att fördela lasten mellan on-premise och Public Cloud, vilket minskar risken för driftstopp.
+- {{< inline "Backup" >}} Säkerställ dina data genom att lagra säkerhetskopior i Public Cloud, vilket ger en extra skyddsnivå vid oförutsedda händelser.
+- {{< inline "Compute" >}} Fördela beräkningsresurser mellan on-premise och Public Cloud för att optimera prestanda och minska kostnader.
+- {{< inline "Storage" >}} Expandera ditt lagringsutrymme med Public Cloud, vilket gör det enkelt att lagra och hantera data på flera platser.
+- {{< inline "Skala ut vid hög belastning" >}} Använd Public Cloud för att enkelt skala ut kapaciteten när belastningen är hög och undvik flaskhalsar och prestandaproblem.
 
 Genom att kombinera din On-Premise Cloud med en Public Cloud får du en mer robust och flexibel lösning som kan anpassas efter dina växande behov.
 {{% /accordion %}}
@@ -104,12 +104,13 @@ Denna tjänst kan levereras med en tillgänglighet på upp till 99,9 procent und
 Utöver detta gäller standardstödprocessen som beskrivs i [Safesprings dokumentation](https://docs.safespring.com/service/policies).
 
 ### Kundens ansvar
+
 Kunderna ansvarar för att övervaka sina egna instanser och säkerställa att deras tjänster fungerar efter ett avbrott. Kunden ansvarar för följande:
 
-* Datacenter med strömförsörjning och kylning
-* Internetaccess
-* Fysisk installation på platsen, Safespring kan tillhandahålla specifikationer och/eller installationstjänst
-* Fysiskt underhåll på platsen (byte av reservdelar såsom hårddiskar, nätaggregat, RAM, etc.)
+- Datacenter med strömförsörjning och kylning
+- Internetaccess
+- Fysisk installation på platsen, Safespring kan tillhandahålla specifikationer och/eller installationstjänst
+- Fysiskt underhåll på platsen (byte av reservdelar såsom hårddiskar, nätaggregat, RAM, etc.)
 
 ## Technical Account Manager (TAM)
 
@@ -145,48 +146,48 @@ Presentation och diskussion kring Safesprings aktuella och planerade produktutve
 
 {{< chart >}}
 timeline
-    section Vecka 0
-    Avtal signerat: Förbereda avtalsdokument
-           : Skicka avtalsdokument för granskning
-           : Få avtalet signerat av alla parter
-           : Arkivera det signerade avtalet
-    section Vecka 1
-    Beställning av hårdvara: Identifiera och specificera nödvändig hårdvara
-           : Samla in offerter från leverantörer
-           : Granska och jämföra offerter
-           : Placera en beställning för godkänd hårdvara
-           : Följ upp leveranstiden och leveransstatus
-    section Vecka 4
-    Arbetsplanering: Identifiera projektresurser
-           : Allokera resurser till specifika uppgifter
-           : Skapa en detaljerad projektplan
-           : Dela ut uppgifter och ansvarsområden
-    Uppföljningsmöte 1: Förbereda statusrapport inför mötet
-           : Diskutera och säkerställa access
-           : Planera för kundens resurser
-    section Vecka 8
-    Utbildning plattform: Planera och schemalägga utbildningstillfällen
-           : Skapa utbildningsmaterial
-           : Genomföra utbildningstillfällen
-           : Samla in feedback och utvärdera
-    Uppföljningsmöte 2: Förbereda statusrapport
-           : Utses kundens resurser
-           : Diskutera problem och lösningar
-    section  Vecka 12-18
+section Vecka 0
+Avtal signerat: Förbereda avtalsdokument
+: Skicka avtalsdokument för granskning
+: Få avtalet signerat av alla parter
+: Arkivera det signerade avtalet
+section Vecka 1
+Beställning av hårdvara: Identifiera och specificera nödvändig hårdvara
+: Samla in offerter från leverantörer
+: Granska och jämföra offerter
+: Placera en beställning för godkänd hårdvara
+: Följ upp leveranstiden och leveransstatus
+section Vecka 4
+Arbetsplanering: Identifiera projektresurser
+: Allokera resurser till specifika uppgifter
+: Skapa en detaljerad projektplan
+: Dela ut uppgifter och ansvarsområden
+Uppföljningsmöte 1: Förbereda statusrapport inför mötet
+: Diskutera och säkerställa access
+: Planera för kundens resurser
+section Vecka 8
+Utbildning plattform: Planera och schemalägga utbildningstillfällen
+: Skapa utbildningsmaterial
+: Genomföra utbildningstillfällen
+: Samla in feedback och utvärdera
+Uppföljningsmöte 2: Förbereda statusrapport
+: Utses kundens resurser
+: Diskutera problem och lösningar
+section Vecka 12-18
 Leverans hårdvara: Följ upp leveransstatus
-           : Informera kund om leveransdatum
-           : Säkerställ mottagande av hårdvaran
-    Installation hårdvara (v18): Planera installationsprocessen
-           : Genomföra installation
-           : Funktionalitetstester
-    section  Vecka 18-19
+: Informera kund om leveransdatum
+: Säkerställ mottagande av hårdvaran
+Installation hårdvara (v18): Planera installationsprocessen
+: Genomföra installation
+: Funktionalitetstester
+section Vecka 18-19
 Installation mjukvara: Samla in nödvändig mjukvara
-           : Installera och konfigurera mjukvara
-           Utföra tester : Utföra tester
-    section     Vecka 20
+: Installera och konfigurera mjukvara
+Utföra tester : Utföra tester
+section Vecka 20
 Leveransmöte: Förbereda statusrapport
-           : Genomgång av användargränssnitt
-           : Genomgång av plattformens funktioner
+: Genomgång av användargränssnitt
+: Genomgång av plattformens funktioner
 {{< /chart >}}
 
 {{< distance >}}

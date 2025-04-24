@@ -1,7 +1,7 @@
 ---
 title: "Molntjänster och GDPR: Myter och realiteter"
 section: ""
-language: "Se"
+language: "sv"
 date: "2023-09-18"
 draft: false
 tags: ["Svenska"]

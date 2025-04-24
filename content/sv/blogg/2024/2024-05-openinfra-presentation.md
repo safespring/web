@@ -10,18 +10,18 @@ showthedate: true
 card: "safespring_card_52.webp"
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 TOC: ""
 sidebarlinkname: "Presentation"
 sidebarlinkurl: ""
 sidebarlinkicon: ""
 sidebarimage: "jon-openinfra-2024.webp"
 aliases:
-- /blogg/2024/2024-05-openinfra-presentation/
+  - /blogg/2024/2024-05-openinfra-presentation/
 ---
 
 {{< ingress >}}
-I recently had the opportunity to present at OpenInfra Day Sweden 2024, and I'm excited to share the insights and developments from our team at Safespring. 
+I recently had the opportunity to present at OpenInfra Day Sweden 2024, and I'm excited to share the insights and developments from our team at Safespring.
 {{< /ingress >}}
 
 Over the past three months, we've been working on a new tool designed to enhance self-service access to open source infrastructure for our B2B and European research community customers. This tool leverages the power of NATS and Huma technologies.
@@ -34,10 +34,10 @@ Over the past three months, we've been working on a new tool designed to enhance
 
 {{< icon-block-horisontal icon="fa-solid fa-download" color="#3C9BCD" description="Click here to download the presentation as a PDF." text="Download presentation" link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" >}}
 
-
 {{< distance >}}
 
 ### Project Overview
+
 Our project addresses the need for automated provisioning of resources such as projects, users, networks, and access control lists across multiple open stack installations. We developed a self-service API using two key technologies:
 
 1. **NATS** - A messaging system for microservices.
@@ -70,21 +70,27 @@ To overcome the limitations of HTTP in dynamic service discovery and load balanc
 {{% /accordion %}}
 
 ### Architecture
+
 Our architecture comprises:
+
 1. **Self-Service HTTP API**: The main interface for user interactions.
 2. **NATS Microservices**: Distributed across various data centers, listening to subjects and performing operations like creating projects and users.
 3. **Central Services**: Including a quota and ACL controller to manage resource allocation and access control.
 
 ### Messaging Patterns
+
 We implemented several NATS messaging patterns, including:
+
 - **Fan-In and Fan-Out**: Distributing messages from the self-service API to multiple services.
 - **Scatter and Gather**: Aggregating responses from multiple services to provide comprehensive results to the client.
 
 ### Challenges and Solutions
+
 1. **Unified API for OKD and OpenStack**: Developing an abstraction that works across different platforms while managing user and group complexities.
 2. **Integration Testing**: Ensuring robust testing against recyclable OpenStack and OKD environments, despite challenges with nested virtualization.
 
 ### Conclusion
+
 This project represents a significant step forward in providing scalable, self-service access to open source infrastructure for our customers. By leveraging NATS and Huma, we have created a robust, efficient, and secure tool that meets the growing demands of our B2B and European research communities.
 
 Feel free to reach out if you have any questions or would like more detailed information about our project!

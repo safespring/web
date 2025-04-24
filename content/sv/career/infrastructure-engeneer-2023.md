@@ -9,20 +9,18 @@ date: "2022-03-16"
 sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
 sidebarlinkname: "Upload CV"
 sidebarlinkicon: "fa-external-link-alt"
-language: "En"
+language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-Language: "En"
+language: "en"
 toc: "On this page"
 aliases:
 - /career/infrastructure-engeneer-2023/
 ---
 
-
-
 ## About Safespring
 
 {{< ingress >}}
-Safespring is a rapidly growing Nordic startup delivering locally-based Infrastructure as a Service (IaaS) using open-source software. 
+Safespring is a rapidly growing Nordic startup delivering locally-based Infrastructure as a Service (IaaS) using open-source software.
 {{< /ingress >}}
 
 Our mission is to empower customers to innovate swiftly, reduce time to market, remove technical constraints, increase efficiency, and maintain data sovereignty.
@@ -65,7 +63,7 @@ We bring our team together approximately every quarter, usually in Scandinavia. 
 
 ### Compensation and Benefits
 
-Safespring is affiliated with Kollektivavtalet (https://www.techsverige.se) and adheres to their rules in both Sweden and Norway, including local regulations for working hours, vacation, wellness benefits, and competitive salaries. 
+Safespring is affiliated with Kollektivavtalet (https://www.techsverige.se) and adheres to their rules in both Sweden and Norway, including local regulations for working hours, vacation, wellness benefits, and competitive salaries.
 
 Compensation includes a base salary, variable salary based on company targets, overtime and on-call rotation compensation, and an opportunity to invest in the company. Compensation is individually negotiated, with guidelines provided for Senior Engineers in Norway and Sweden. The total compensation is typically 750 000 - 825 000 NOK, while for a Senior engineer in Sweden total compensation is typically 636 000 - 700 000 SEK.
 
@@ -74,7 +72,6 @@ Compensation includes a base salary, variable salary based on company targets, o
 If you are ready to join a fast-paced, innovative company and play a vital role in the development of cutting-edge infrastructure services, please submit your application today! We look forward to hearing from you.
 
 {{% localbutton text="upload application" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}
-
 
 ### Contact Information
 

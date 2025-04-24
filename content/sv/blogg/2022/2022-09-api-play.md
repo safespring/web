@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-09-api-play
-    - /blogg/2022/2022-09-api-play/
+  - /blogg/2022-09-api-play
+  - /blogg/2022/2022-09-api-play/
 ---
 
 {{< ingress >}}
@@ -24,12 +24,14 @@ deeper in order to find some missing pieces of information in order to create a 
 {{< /ingress >}}
 
 ## Introduction (Problem statement)
+
 In the Safespring platform, the S3 compatible storage service and the OpenStack
 based compute service are now integrated. It means that once you have access to the
 compute platform you also can fetch credentials for accessing the integrated S3
 service through the web GUI and/or the command line interface (CLI).
 
 ### Openshift installer
+
 We have created an [Openshift installer][okdinstaller] that makes it easy to
 install Openshift on Safespring by wrapping some tooling around the official
 [UPI installer][okdupi].
@@ -47,6 +49,7 @@ compute service and it was a bit cumbersome that the installer depended on a
 manually maintained S3 service, which was the method used previously.
 
 ### Fetch credentials
+
 Now that S3 is integrated the installer should automatically fetch credentials
 and S3 endpoint URL and create a bucket, upload the ignition file to the
 bucket, presign it and inject the presign url into the ignition file for the
@@ -115,6 +118,7 @@ Next, we'll use curl to fetch some JSON data from the OpenStack API:
 ```shell
 $ curl  -s -H "Content-Type: application/json" -d"$(gen_os_auth_data_project_scope)" "${OS_AUTH_URL}/auth/tokens"
 ```
+
 The environment variable `OS_AUTH_URL` contains the same as you would put when
 using the [OpenStack CLI][osclidoc]. The command above will give you what the
 OpenStack CLI transparently uses to find endpoints for all the Openstack
@@ -130,7 +134,7 @@ So to get exactly that, we can do:
 curl  -s -H "Content-Type: application/json" -d"$(gen_os_auth_data_project_scope)" "${OS_AUTH_URL}/auth/tokens"|jq '.token.catalog[]|select(.type=="s3").endpoints[0].url' -r
 ```
 
-Now we have seen how to get the  S3 endpoint URL when authenticating as an
+Now we have seen how to get the S3 endpoint URL when authenticating as an
 OpenStack personal user. However, the recommended way of authenticating with
 OpenStack from scripts, or any form of automation code, is to use [OpenStack
 application credentials][appcred]. Application credentials allow access only
@@ -214,11 +218,11 @@ necessary information; the same as if you would use the [OpenStack CLI][osclidoc
 [okdinstaller]: https://github.com/safespring-community/utilities/tree/main/okd
 [ksparams]: https://github.com/kubernetes-sigs/kubespray/blob/master/docs/vars.md
 [kubespray]: https://github.com/kubernetes-sigs/kubespray
-[sftfmodules]:https://github.com/safespring-community/terraform-modules
-[sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]:https://www.safespring.com/blogg/2022-03-network/
-[tfdocs]:https://www.terraform.io/docs
-[tfreleases]:https://releases.hashicorp.com/terraform/
-[osclidoc]:https://docs.safespring.com/new/api/
+[sftfmodules]: https://github.com/safespring-community/terraform-modules
+[sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
+[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
+[netblog]: https://www.safespring.com/blogg/2022-03-network/
+[tfdocs]: https://www.terraform.io/docs
+[tfreleases]: https://releases.hashicorp.com/terraform/
+[osclidoc]: https://docs.safespring.com/new/api/
 [appcred]: https://docs.safespring.com/new/app-creds/

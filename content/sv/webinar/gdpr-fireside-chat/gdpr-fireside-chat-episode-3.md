@@ -4,7 +4,7 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 episode: "3"
 series: "true"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-3.jpg"
-language: "Se"
+language: "sv"
 date: "2021-08-25"
 publishDate: "2021-06-17"
 draft: false

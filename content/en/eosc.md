@@ -12,11 +12,11 @@ toplogo: "eosc.svg"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
-language: "En"
+language: "en"
 aliases:
-    - /eosc
-    - /EOSC
-    - /en/eosc/
+  - /eosc
+  - /EOSC
+  - /en/eosc/
 ---
 
 {{< ingress >}}
@@ -24,12 +24,12 @@ Safespring is a proud partner in the European Open Science Cloud (EOSC), deliver
 {{</ ingress >}}
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-cloud" text="Cloud Infrastructure" link="" color="#32cd32">}}
-    {{< icon-block icon="fas fa-cubes" text="Container platform" link="" color="#195F8C">}}
-    {{< icon-block icon="fas fa-shield-alt" text="Security & Compliance" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-sync" text="Interoperability" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-project-diagram" text="Collaboration Tools" link="" color="#FA690F">}}
-    {{< icon-block icon="fas fa-globe" text="Global Accessibility" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-cloud" text="Cloud Infrastructure" link="" color="#32cd32">}}
+{{< icon-block icon="fas fa-cubes" text="Container platform" link="" color="#195F8C">}}
+{{< icon-block icon="fas fa-shield-alt" text="Security & Compliance" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-sync" text="Interoperability" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-project-diagram" text="Collaboration Tools" link="" color="#FA690F">}}
+{{< icon-block icon="fas fa-globe" text="Global Accessibility" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Safespring's Involvement in the European Open Science Cloud (EOSC)
@@ -50,6 +50,6 @@ We are excited to contribute to the EOSC EU Node and look forward to continuing 
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 I am the Business Development Manager for the academic and public sectors and can assist you in using our services already procured under the OCRE agreement.
 
-{{< inline "Call" >}} +46 (0)76 868 00 59 
+{{< inline "Call" >}} +46 (0)76 868 00 59
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}

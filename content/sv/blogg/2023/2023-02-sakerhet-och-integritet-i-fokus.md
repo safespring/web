@@ -10,20 +10,20 @@ card: "safespring_card_43.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Se"
+language: "sv"
 toc: ""
 sidebarlinkname: "Läs debattartikel"
 sidebarlinkurl: "https://www.altinget.se/artikel/europas-sjalvforsorjning-paa-techomraadet-maaste-bli-lika-prioriterad-som-elen"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
 aliases:
-- /blogg/2023/2023-02-sakerhet-och-integritet-i-fokus/
+  - /blogg/2023/2023-02-sakerhet-och-integritet-i-fokus/
 ---
 
 ## Säkerhet och integritet i fokus - Safespring stödjer Europas självförsörjning på tech-området
 
 {{< ingress >}}
-I takt med den snabba teknikutvecklingen står vi inför allt större utmaningar när det gäller säkerhet och integritet. 
+I takt med den snabba teknikutvecklingen står vi inför allt större utmaningar när det gäller säkerhet och integritet.
 {{< /ingress >}}
 
 Europeiska företag och organisationer är alltmer beroende av tech-tjänster från länder utanför vår egen intressesfär. Detta innebär att vi riskerar att förlora kontrollen över våra data och vårt informationsflöde. För att säkra vår digitala suveränitet måste vi öka vår självförsörjningsgrad inom tech-sektorn, och detta bör vara lika prioriterat som el och metaller.
@@ -41,7 +41,6 @@ Vi stödjer fullt ut den debattartikel som nyligen publicerades på Altinget.se,
 - För att säkra Europas digitala suveränitet måste vi öka vår självförsörjningsgrad inom tech-sektorn.
 - Tech-sektorn bör prioriteras lika högt som el och metaller.
 - Ett ökat samarbete mellan europeiska företag och organisationer är nyckeln till att uppnå en hög självständighet.
-
 
 {{< distance >}}
 

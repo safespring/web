@@ -3,36 +3,35 @@ title: "Fysisk säkerhet"
 section: "Ta kontroll"
 episode: "3"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2024-05-13"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_fysisk-sakerhet.jpg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Hur fysisk säkerhet påverkar datadrivna företag och deras molntjänster'
+intro: "Hur fysisk säkerhet påverkar datadrivna företag och deras molntjänster"
 nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_ta-kontroll_2024_fysisk-sakerhet_final/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_fysisk-sakerhet.jpg"
 chaptersTitle: "I detta avsnitt"
 chapters:
-- title: "Fysisk säkerhet"
-  time: 27
-  timeFormatted: "0:27"
-- title: "Certifieringar"
-  time: 92
-  timeFormatted: "1:32"
-- title: "Släcksystemet"
-  time: 190
-  timeFormatted: "3:10"
-- title: "Integration"
-  time: 274
-  timeFormatted: "4:34"
+  - title: "Fysisk säkerhet"
+    time: 27
+    timeFormatted: "0:27"
+  - title: "Certifieringar"
+    time: 92
+    timeFormatted: "1:32"
+  - title: "Släcksystemet"
+    time: 190
+    timeFormatted: "3:10"
+  - title: "Integration"
+    time: 274
+    timeFormatted: "4:34"
 aliases:
-- /webinar/ta-kontroll/fysisk-sakerhet/
+  - /webinar/ta-kontroll/fysisk-sakerhet/
 ---
-
 
 ## Förstå fysisk säkerhet
 
@@ -49,8 +48,8 @@ Amelia och Gabriel utforskar hur certifieringar som ISO 27001 kan verifiera att 
 {{< distance >}}
 
 ### I detta avsnitt
+
 1. **Fysisk säkerhet definieras:** Diskussion om vad fysisk säkerhet innebär och dess grundläggande komponenter i skyddet av datacenter.
 2. **Certifieringars roll:** Hur Safespring använder certifieringar för att garantera säkerhetsstandarder hos sina leverantörer.
 3. **Konsekvenser av fysiska säkerhetssystem:** Berättelse om hur ett brandsläckningssystem oavsiktligt skadade data genom vibrationer, illustrerande vikten av noggrann planering och installation.
 4. **Integration av fysisk och logisk säkerhet:** Diskussion om hur fysisk säkerhet integreras med logisk säkerhet för att skapa ett omfattande skydd.
-

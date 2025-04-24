@@ -12,9 +12,9 @@ toplogo: "eosc.svg"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
-language: "Sv"
+language: "sv"
 aliases:
-- /branscher/eosc/
+  - /branscher/eosc/
 ---
 
 {{< ingress >}}

@@ -1,6 +1,6 @@
 ---
 title: "Cloud Compute Service"
-language: "En"
+language: "en"
 cardtitle: "Cloud Compute"
 cardicon: "fa-solid fa-server"
 cardcolor: "#195F8C"
@@ -24,11 +24,9 @@ aliases:
 - /geant/service-catalogue/infrastructure/
 ---
 
-
 {{< ingress >}}
 On this page, you'll find information about our Infrastructure as a Service (IaaS) cloud compute services, including detailed configurations and categories of compute services available.
 {{< /ingress >}}
-
 
 Cloud compute services contains the following categories (OpenStack flavors):
 
@@ -39,15 +37,16 @@ Base disks are default root disk sizes unless a volume with a different size is 
 
 ## Compute with local NVMe storage
 
-The compute with local NVMe disk profile has both 1:2 and 1:4 vCPU:RAM ratio profiles. It comes with choices of local ephemeral NVMe storage.  The term ephemeral means that the storage has the life time of the instance and is only stored with one copy on the local disk on the compute node where the instance is running. This makes the instances well suited for automated setup, where a loss of a separate instance is easily handled with provisioning or cluster member for databases or Kubernetes worker nodes.
+The compute with local NVMe disk profile has both 1:2 and 1:4 vCPU:RAM ratio profiles. It comes with choices of local ephemeral NVMe storage. The term ephemeral means that the storage has the life time of the instance and is only stored with one copy on the local disk on the compute node where the instance is running. This makes the instances well suited for automated setup, where a loss of a separate instance is easily handled with provisioning or cluster member for databases or Kubernetes worker nodes.
 
 ### Prerequisites
+
 None.
 
 ### Configurations
 
 | Product Code             | vCPU | Memory | Ephemeral disk |
-|--------------------------|------|--------|----------------|
+| ------------------------ | ---- | ------ | -------------- |
 | FLAVOR-l2. c2 r4. 100    | 2    | 4 GiB  | 100 GB         |
 | FLAVOR-l2. c2 r4. 500    | 2    | 4 GiB  | 500 GB         |
 | FLAVOR-l2. c2 r4. 1000   | 2    | 4 GiB  | 1000 GB        |
@@ -65,15 +64,16 @@ None.
 
 ### Compute without local storage
 
-The basic compute profile comes with both 1:2 and 1:4 vCPU:RAM ratio profiles. It does not have ephemeral storage and must be created with a backing volume from the central storage service.  
+The basic compute profile comes with both 1:2 and 1:4 vCPU:RAM ratio profiles. It does not have ephemeral storage and must be created with a backing volume from the central storage service.
 
 #### Prerequisites
+
 None.
 
 #### Configuration
 
 | Product Code        | vCPU | Memory |
-|---------------------|------|--------|
+| ------------------- | ---- | ------ |
 | FLAVOR-b2. c1 r2    | 1    | 2 GiB  |
 | FLAVOR-b2. c1 r4    | 1    | 4 GiB  |
 | FLAVOR-b2. c2 r4    | 2    | 4 GiB  |
@@ -90,19 +90,19 @@ None.
 Central block storage is provided by Ceph HDD and SSD clusters.
 
 #### Prerequisites
+
 Server instance to attach volume to, including as a root disk volume.
 
 #### Configurations
 
-| Product Code    | Characteristics                                                                                                  |
-|-----------------|------------------------------------------------------------------------------------------------------------------|
-| VOLUME-large    | HDD-backed 3-replica Ceph                                                                                        |
-| VOLUME-fast     | SSD-backed 3-replica Ceph                                                                                        |
-| VOLUME-snapshot | SDD or HDD based on source.   Copy on write, which only saves the difference from when the snapshot was   taken. |
+| Product Code    | Characteristics                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------ |
+| VOLUME-large    | HDD-backed 3-replica Ceph                                                                                    |
+| VOLUME-fast     | SSD-backed 3-replica Ceph                                                                                    |
+| VOLUME-snapshot | SDD or HDD based on source. Copy on write, which only saves the difference from when the snapshot was taken. |
 
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}
-

@@ -3,9 +3,9 @@ title: "Om Safespring"
 intro: "Safespring leverer en lokalt basert sky bygget for morgendagens apper."
 date: "2020-07-03"
 draft: false
-language: "No"
+language: "nb"
 section: "Safespring"
-Language: "No"
+language: "nb"
 aliases:
 - /no/om-safespring/
 ---

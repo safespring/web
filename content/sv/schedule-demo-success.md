@@ -1,6 +1,6 @@
 ---
 title: "Thank You for Scheduling a Demo with Safespring"
-language: "En"
+language: "en"
 date: 2024-08-20
 draft: false
 section: "Demo Scheduled"
@@ -19,7 +19,7 @@ sidebarlinkurl2: "/contact"
 saas: ""
 noindex: "yes"
 aliases:
-- /schedule-demo-success/
+  - /schedule-demo-success/
 ---
 
 {{< ingress >}}

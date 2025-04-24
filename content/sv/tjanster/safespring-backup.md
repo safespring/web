@@ -1,6 +1,6 @@
 ---
 title: "Safespring Backup"
-language: "Se"
+language: "sv"
 documentation: "Backup"
 cardtitle: "Backup"
 cardicon: "fa-solid fa-cloud-arrow-up"
@@ -18,10 +18,10 @@ sidebarlinkname2: "Pris för Backup"
 sidebarlinkurl2: "/pris/#safespring-backup"
 socialmedia: "safespring-backup.jpg"
 aliases:
-    - /backup/
-    - /safespring-backup/
-    - /tjanster/safespring-backup/
-section: "Public Cloud" 
+  - /backup/
+  - /safespring-backup/
+  - /tjanster/safespring-backup/
+section: "Public Cloud"
 megamenu: "yes"
 ---
 
@@ -32,19 +32,19 @@ megamenu: "yes"
 Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data.
 {{< /ingress >}}
 
-Att ta Backup genom Safespring betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
+Att ta Backup genom Safespring betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. _Cloud Act_ gör att du kan känna dig ännu tryggare.
 
 Med vår webbportal kan du enkelt hantera dina backup:er, få rapporter och status samt hantera användare och roller i din organisation.
 
 {{< distance >}}
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-clipboard-list-check" text="Avancerad Rapportering" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-gauge-high" text="Hög Säkerhet" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-arrow-up-right-and-arrow-down-left-from-center" text="Utmärkt Skalbarhet" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Multi Tenancy" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-pen-to-square" text="Flexibel Administration" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-clipboard-list-check" text="Avancerad Rapportering" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-gauge-high" text="Hög Säkerhet" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-arrow-up-right-and-arrow-down-left-from-center" text="Utmärkt Skalbarhet" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Multi Tenancy" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-pen-to-square" text="Flexibel Administration" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 {{< distance >}}
@@ -63,6 +63,7 @@ Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Ba
 {{< readfile "Solution Brief" "/content/read-more/safespring-backup-portal-sv-more.md" >}}
 
 ### Lösning för offsite backup
+
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Backuptjänst om ni kör TSM lokalt, eller Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.
 
 {{< distance >}}

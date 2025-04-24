@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 author: "Jarle Bjørgeengen"
 section: ""
-language: "En"
+language: "en"
 toc: ""
 aliases:
-    - /blogg/2022-08-openstack-port-preserve_on_delete
-    - /blogg/2022/2022-08-openstack-port-preserve_on_delete/
+  - /blogg/2022-08-openstack-port-preserve_on_delete
+  - /blogg/2022/2022-08-openstack-port-preserve_on_delete/
 ---
 
 {{< ingress >}}
@@ -26,16 +26,19 @@ A network port that is added automatically to an instance, either upon creation 
 This can be avoided by creating the port manually before creating the instance or attaching the interface. Still, suppose the port is already automatically created. In that case, there is no way to retroactively keep OpenStack from deleting it on detachment.
 
 ## Background
+
 After a quite hasty migration to Safesprings newer OpenStack platform, some of the instances ended up on a different datastore than what would be optimal for these instances. To fix this, we would typically just take a snapshot of the instance and create a new instance based on the snapshot on the desired datastore.
 
 This would, however, cause the assigned IP addresses to be lost as these were added to the creation of the instances. Handling IP address changes would add quite a bit of downtime to what should be a pretty simple and quick migration, so we decided to spend some time looking into how to avoid losing the original IP addresses.
 
 ## Investigations
+
 Looking at both the GUI (horizon) and CLI side of things, there seems to be no way of knowing if the port is going to be deleted on detach or not, other than comparing the creation date of the port (via CLI) vs. the creation date of the instance. If the port is older than the instance, there is a good chance it will not be deleted on detach. However, this is not a 100% way of deciding if it will be deleted or not, as it is also possible to create a port after an instance is created and attach it manually.
 
 Finding no way of deciding if an interface will be deleted or not from the user- (and admin) facing side of things but seeing that there is a noticeable difference in the handling of automatically added vs. manually added ports, it was time to look at how this process is handled in code.
 
 ### Digging into the code
+
 Taking an educated guess, there was a good chance there was some flag being set at the time when a port was attached to an instance. After digging quite a bit this was found in the [neutron(v2) code][1].
 
 It seems that if the port already exists on connection, it gets the `preserve_on_delete` flag set to `true`; if it did not exist, the flag gets set to `false`.

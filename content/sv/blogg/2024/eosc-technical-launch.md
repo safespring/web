@@ -10,13 +10,13 @@ showthedate: true
 card: "safespring_background_43.webp"
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 aliases:
-- /blogg/2024/eosc-technical-launch/
+  - /blogg/2024/eosc-technical-launch/
 ---
 
 {{< ingress >}}
-We’re excited to share that the technical launch of the EOSC EU Node took place on 10 October 2024, and our CEO, Fredric, was present at the event in Brussels. 
+We’re excited to share that the technical launch of the EOSC EU Node took place on 10 October 2024, and our CEO, Fredric, was present at the event in Brussels.
 {{< /ingress >}}
 
 This milestone brings Europe one step closer to a fully operational platform for advancing Open Science and fostering collaboration across the research community.

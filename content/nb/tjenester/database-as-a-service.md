@@ -1,6 +1,6 @@
 ---
 title: "Database som tjeneste med høy tilgjengelighet"
-language: "No"
+language: "nb"
 cardtitle: "Database-tjeneste"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
@@ -26,7 +26,7 @@ darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
 aliases:
-- /no/tjenester/database-as-a-service/
+  - /no/tjenester/database-as-a-service/
 ---
 
 ![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)

@@ -3,36 +3,35 @@ title: "Flexibel säkerhet"
 section: "Ta kontroll"
 episode: "4"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2024-05-13"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_flexibel-sakerhet.jpg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Hur applikationers flexibilitet förbättrar säkerheten.'
+intro: "Hur applikationers flexibilitet förbättrar säkerheten."
 nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_ta-kontroll_2024_flexibel-sakerhet_final/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_flexibel-sakerhet.jpg"
 chaptersTitle: "I detta avsnitt"
 chapters:
-- title: "Flexibel Säkerhet"
-  time: 30
-  timeFormatted: "0:30"
-- title: "Containrar"
-  time: 106
-  timeFormatted: "1:46"
-- title: "Migrationskostnader"
-  time: 170
-  timeFormatted: "2:50"
-- title: "Applikationssäkerhet"
-  time: 397
-  timeFormatted: "6:37"
+  - title: "Flexibel Säkerhet"
+    time: 30
+    timeFormatted: "0:30"
+  - title: "Containrar"
+    time: 106
+    timeFormatted: "1:46"
+  - title: "Migrationskostnader"
+    time: 170
+    timeFormatted: "2:50"
+  - title: "Applikationssäkerhet"
+    time: 397
+    timeFormatted: "6:37"
 aliases:
-- /webinar/ta-kontroll/flexibel-sakerhet/
+  - /webinar/ta-kontroll/flexibel-sakerhet/
 ---
-
 
 ## Utforska flexibel säkerhet
 
@@ -49,9 +48,8 @@ De inleder med att förklara hur moderna programvaru­utvecklings­tekniker, som
 {{< distance >}}
 
 ### I detta avsnitt
+
 1. **Definition av flexibel säkerhet:** Diskussion om vad flexibel säkerhet innebär och dess fördelar för datadrivna företag.
 2. **Containerteknologi:** Hur containrar revolutionerar flexibel säkerhet genom att isolera applikationer från den underliggande infrastrukturen.
 3. **Migrationskostnader:** Diskussion om utmaningar med migration trots användning av flexibel säkerhetsteknik som containrar.
 4. **Säkerhetsstrategier i applikationen:** Utforskning av hur applikations­baserad säkerhet kan möjliggöra större flexibilitet och mobilitet för tjänster.
-
-

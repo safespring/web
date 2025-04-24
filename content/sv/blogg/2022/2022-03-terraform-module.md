@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-03-terraform-module
-    - /blogg/2022/2022-03-terraform-module/
+  - /blogg/2022-03-terraform-module
+  - /blogg/2022/2022-03-terraform-module/
 ---
 
 {{< ingress >}}
@@ -29,7 +29,7 @@ from terraform/OpenStack to configure services on the provisioned
 instances.
 
 {{% note "Read more" %}}
-If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy: 
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
 
 1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
 2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
@@ -38,12 +38,12 @@ If you found this post useful, be sure to check out the rest of the series on us
 
 {{% /note %}}
 
-
 ## Prerequisites
+
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
-verify their integrity.  
+verify their integrity.
 
 Unless otherwise explained, all the examples presuppose that you put the code
 in a `.tf` in a separate directory and run `plan`, `init`, `apply` and `destroy`
@@ -65,6 +65,7 @@ become widely accepted over the last three decades and is based on ideas and
 research by [Mark Burgess during the early nineties and later][mbcfengine].
 
 ### Terraform providers
+
 The superpower of Terraform comes from all of its providers. The Terraform
 providers are binary extensions of Terraform that, as the name indicates,
 «provide» resources of different kinds using the APIs of the cloud provider
@@ -79,6 +80,7 @@ infrastructure. Every time it is run, it will turn the desired state into the
 actual state for cloud resources.
 
 ### Reducing the level of «lock-in»
+
 Terraform has tons of battle-tested providers available to use, thus easing the
 burden of provisioning cloud resources from all kinds of cloud APIs within the
 same (or different) configurations.
@@ -96,6 +98,7 @@ and best practices to understand the nature of the tool before using it for
 the important stuff.{{< /disclaimer >}}
 
 ## The new «v2-compute-instance» module
+
 In [the previous blog post][firstblog] we showcased basic usage of the initial
 version of the Safespring Terraform modules. These modules are now deprecated
 and are replaced by a single module that does more than the deprecated ones. The
@@ -112,11 +115,13 @@ at the code, comments, and variable definitions to get the whole picture.
 Especially at a later point in time. {{< /note >}}
 
 ## Examples
+
 We'll use the code [examples][sftfexamples] in the Terraform module [git
 repo][sftfmodules] as a reference and explain each of them underneath the code.
 
 ### [Ex1][ex1]: One instance with default parameters
-[ex1]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
+
+[ex1]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
 
 ```
 module my_sf_instance {
@@ -164,6 +169,7 @@ for, you can safely leave the default (false). For the `role` and `wg_ip`
 parameters, we'll leave the explanation until later.
 
 ### [Ex2][ex2]: A set of 3 instances using count
+
 [ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
 
 ```
@@ -174,6 +180,7 @@ module my_sf_instances {
    key_pair_name   = "an-existing-keypair"
 }
 ```
+
 Here we added a count of 3, and we use the count index to differentiate the names
 of the 3 instances created (you can't create more than one instance with the
 same name). Applying this will yield 3 instances named
@@ -184,6 +191,7 @@ will have the same properties, and these properties are the same default values
 as in the first example.
 
 ### [Ex3][ex3]: Security group(s) and keypair as part of the code
+
 [ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
 
 ```
@@ -236,6 +244,7 @@ module my_sf_instances {
    key_pair_name   = openstack_compute_keypair_v2.skp.name
 }
 ```
+
 Now we've added code to create the keypair `hello-pubkey` and the security group
 `puff`. Those names are used to name the objects within OpenStack. There are
 also the Terraform internal names which are used only for referencing back and
@@ -270,6 +279,7 @@ thin wrapper around the resources and names in our platform as seen from a
 Terraform perspective.
 
 ### [Ex4][ex4]: Maps define instances and security group rules
+
 [ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf
 
 ```
@@ -343,6 +353,7 @@ module my_sf_instances {
    key_pair_name   = an-existing-keypair-or-id-of-one-in-terraform-config
 }
 ```
+
 Here we iterate over a local map of maps that define all aspects of the
 instances to be created (see the line `for_each = local.instances`). Then we
 override the defaults of the `v2-compute-instance`-module using the individual
@@ -386,6 +397,7 @@ create your own security groups that you attach instances to and use the
 module.{{< /note >}}
 
 ### [Ex5][ex5]: Combining count and map for instances and map for disks
+
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 
 It would be nice if you could combine iteration with `for_each` (map) and count,
@@ -396,7 +408,7 @@ public network with flavor X, and 2 backend servers on the default network with 
 
 ```
 The "count" and "for_each" meta-arguments are mutually-exclusive, only one
-should be used to be explicit about the number of resources to be created.  
+should be used to be explicit about the number of resources to be created.
 ```
 
 However it can be done by wrapping one of them into its own module.
@@ -419,6 +431,7 @@ module my_sf_instances {
 ```
 
 `variables.tf`
+
 ```
 variable "i_count" {
   description = "Count"
@@ -456,6 +469,7 @@ variable "data_disks" {
 ```
 
 `providers.tf`
+
 ```
 terraform {
   required_version = ">= 0.14.0"
@@ -468,6 +482,7 @@ terraform {
 ```
 
 And then this code in our `main.tf`:
+
 ```
 locals {
   instances = {
@@ -518,13 +533,13 @@ the count index in the local module; hence, we with one map entry we can create 
 set of as many instances we want with the same properties. If we need different
 properties, we create another set with its own parameters and `i_count`. The
 naming of the `i_count` parameter is chosen so it will not collide with the
-internal, reserved `count` parameter.  
+internal, reserved `count` parameter.
 
 So here we have combined methods of examples 2 and 4 to make the same thing as
 example 4 but in a more generic way that can scale up sets without
 duplicating lots of map entries. To scale up the number of web servers now you
 only increase `i_count` field in the map entry for web servers instead of
-creating as many new map entries as new servers needed.  
+creating as many new map entries as new servers needed.
 
 In addition, we have defined another map inside the map entry of the `db`
 instance that will create and attach a volume of type `fast` and size 5GB.
@@ -536,15 +551,14 @@ for the sum/union of all parameters to be specified.
 
 [tftry]: https://www.terraform.io/language/functions/try
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
-[diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
-[newflavors]:https://docs.safespring.com/new/flavors/
-[firstblog]:https://www.safespring.com/blogg/2022-01-terraform-modules/
-[mbcfengine]:https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
-[tfdl]:https://www.terraform.io/downloads
-[sftfmodules]:https://github.com/safespring-community/terraform-modules
-[sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]:https://www.safespring.com/blogg/2022-03-network/
-
+[diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
+[newflavors]: https://docs.safespring.com/new/flavors/
+[firstblog]: https://www.safespring.com/blogg/2022-01-terraform-modules/
+[mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
+[tfdl]: https://www.terraform.io/downloads
+[sftfmodules]: https://github.com/safespring-community/terraform-modules
+[sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
+[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
+[netblog]: https://www.safespring.com/blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/

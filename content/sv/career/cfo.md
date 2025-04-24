@@ -9,9 +9,9 @@ sidebarlinkurl: "#down"
 sidebarlinkname: "Apply now"
 sidebarlinkicon: "fa-external-link-alt"
 socialmedia: "/socialmedia/safespring-work.jpg"
-Language: "En"
+language: "en"
 aliases:
-- /career/cfo/
+  - /career/cfo/
 ---
 
 {{< ingress >}}
@@ -25,11 +25,13 @@ Safespring is a Nordic company delivering EU-compliant Infrastructure-as-a-Servi
 {{< localtextbutton "Learn more" "#info">}}
 
 ## Job description
+
 We are looking for a person who is motivated by being a part of a dynamic environment in rapid development and change. In your roll as CFO, you will be responsible for further developing our financial function to support our business and growth in the best way.
 
 You will be an active and central member of the management group. The reporting line is to the CEO and the board. The roll will be located in Solna, Sweden with the flexibility to work remote from home.
 
 ### Responsibilities
+
 Responsibilities that come with the roll as CFO at Safespring include:
 
 - Provide leadership, direction and management of the finance and accounting team
@@ -43,12 +45,13 @@ Responsibilities that come with the roll as CFO at Safespring include:
 - Ensure quality control (ISO), establish and document internal processes and accounting policies
 
 ### Tasks
+
 You will be an active and central function of the management group carrying out a number of tasks including:
 
 - Establish and execute on development plans to strive towards operational excellence.
 - Strategically establish relevant internal processes and secure quality in professionalism in the organization
 - Build an effective and high-quality finance department fit for execution on all related tasks coordinated for the group
-- Develop financial models enabling control and monitoring of margins and profits per service delivered from our technical platform. Analyze potential and development per service. 	
+- Develop financial models enabling control and monitoring of margins and profits per service delivered from our technical platform. Analyze potential and development per service.
 - Manage and follow up on the company’s performance related to Compliance
 - Ensure quality control in the company (ISO)
 
@@ -73,6 +76,7 @@ For the right person we are happy to offer an interesting roll, good salary and 
 <div id="info"></div>
 
 ## How to apply
+
 You're welcome to apply contacting Safespring directly or through LinkedIn. If you have any questions don't hesitate to contact Mikael Schütt, VP at Safespring.
 
 {{< 2calltoaction "Apply on LinkedIn" "https://www.linkedin.com/jobs/view/2427471416/?refId=p1QRACgI5RVRBWS72znboQ%3D%3D&trackingId=tjaJpzWhRyH8qYtafCzOpQ%3D%3D" "Contact Mikael Schütt" "mailto:mikael.schutt@safespring.se" >}}
@@ -84,7 +88,6 @@ Safespring started developing a modern cloud platform in 2014. Since the initial
 From our professional data centers in Sweden and Norway and from customer premises data center (so called private clouds) our delivery of Infrastructure-as-a-Service include Compute, Storage and Backup. The services are flexible, fully automated and based on self-service through API or our portal. Our value proposition includes open standards, privacy and compliance to local laws.
 
 Our customers include some of the largest research and education organizations, government authorities and Software-as-a-service companies in Sweden and Norway. Safespring holds framework agreements, directly or through partners, with [Géant](/ocre) (including Sunet, Sikt and NORDUnet), SKR and Kammarkollegiet, to mention the most important ones.
-
 
 ## For more information
 

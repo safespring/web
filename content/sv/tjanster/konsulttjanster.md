@@ -1,6 +1,6 @@
 ---
 title: "Konsulttjänster"
-language: "Se"
+language: "sv"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Safespring har stor kompetens inom molntjänster och molnapplikationer. Vi har också ett nätverk av partners som kan hjälpa dig komma igång."
@@ -8,9 +8,10 @@ background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
 aliases:
-    - /konsulttjanster/
-    - /tjanster/konsulttjanster/
+  - /konsulttjanster/
+  - /tjanster/konsulttjanster/
 ---
+
 <div class="ingress"><p>Att skapa säkra och väl fungerande molntjänster med öppen källkod kräver expertis med hög kompetens eftersom att det är många delar som skall fogas ihop. Vi på Safespring har den kompetensen och kan på så vis kan erbjuda avancerade konsulttjänster för att hjälpa ert företag med er molnstrategi.</p></div>
 
 Vi på Safespring brinner för att skapa värde kring de tjänster vi producerar. Vi erbjuder därför gärna vår kompetens kring hur ni ska använda våra tjänster på bästa sätt. Detta gäller alltifrån kapacitetsplanering till fullfjädrade strategier för hur ni skall bygga er lösning så att den blir skalbar och utnyttjar kraften i våra kapacitetstjänster maximalt.
@@ -26,9 +27,11 @@ Vi har även konsulttjänster inom AI och ML (Machine Learning). Genom vår star
 ## Exempel på konsulttjänster
 
 ### Inför ett projekt
+
 Safespring, hjälper er genom att genomföra en grundläggande förstudie för att kartlägga er nuvarande lösning. Vi visar även hur en inventering av ert data bör göras för att säkerställa att ni får den bästa lösningen anpassat till era förutsättningar. Resultatet från förstudien ger en riktlinje för hur arbetet och er nya lösning skall designas.
 
 ### Under ett projekt
+
 Är ni påväg att skaffa kapacitetstjänster, eller behöver bygga ut ett nuvarande system? Vi har erfarenhet av Hybrid Cloud där våra tjänster kan vara en del av er totala infrastruktur. Genom implementering och onboarding ser vi till att våra plattformar friktionsfritt bidrar till en lokal, flexibel och säker del av er nuvarande lösning. Vi kan erbjuda projektledning för att säkerställa att arbetet följer planen och att inga tekniska milstolpar faller mellan stolarna. Läs mer om vad våra kunder säger om tidigare projekt:
 
 <a href="/referenser" id="text-button">Läs våra kundreferenser</a></br></br>

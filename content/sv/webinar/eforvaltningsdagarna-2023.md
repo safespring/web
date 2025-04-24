@@ -1,14 +1,14 @@
 ---
 title: "AI nära oss: En brobyggare mellan innovation och ansvar"
 section: "eFörvaltninsdagarna 2023"
-language: "Se"
+language: "sv"
 date: "2023-11-07"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg"
 eventbild: ""
 socialmediabild: ""
-intro: 'I en värld där artificiell intelligens (AI) förändrar landskapet för nästan varje industri, finns viktiga frågor att besvara: hur säkerställer vi att AI:s kraft används på ett sätt som är effektivt och hållbart, utan att riskera att data hamnar i fel händer?'
+intro: "I en värld där artificiell intelligens (AI) förändrar landskapet för nästan varje industri, finns viktiga frågor att besvara: hur säkerställer vi att AI:s kraft används på ett sätt som är effektivt och hållbart, utan att riskera att data hamnar i fel händer?"
 sidebarlinkurl: "/hello"
 sidebarlinkname: "Läs mer om Safespring"
 sidebarlinkurl2: "/kontakt"
@@ -18,27 +18,27 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg"
 chaptersTitle: "I detta seminarie"
 chapters:
-- title: "Är det en katt?"
-  time: 29
-  timeFormatted: "0:29"
-- title: "Vad är AI?"
-  time: 179
-  timeFormatted: "2:59"
-- title: "Lite om oss"
-  time: 281
-  timeFormatted: "4:41"
-- title: "Träna AI utan att flytta data"
-  time: 490
-  timeFormatted: "8:10"
-- title: "Exempel från verkligheten"
-  time: 845
-  timeFormatted: "14:05"
-- title: "Att ta med sig från seminariet"
-  time: 1227
-  timeFormatted: "20:27"
+  - title: "Är det en katt?"
+    time: 29
+    timeFormatted: "0:29"
+  - title: "Vad är AI?"
+    time: 179
+    timeFormatted: "2:59"
+  - title: "Lite om oss"
+    time: 281
+    timeFormatted: "4:41"
+  - title: "Träna AI utan att flytta data"
+    time: 490
+    timeFormatted: "8:10"
+  - title: "Exempel från verkligheten"
+    time: 845
+    timeFormatted: "14:05"
+  - title: "Att ta med sig från seminariet"
+    time: 1227
+    timeFormatted: "20:27"
 aliases:
-    - /eforvaltningsdagarna2023
-    - /webinar/eforvaltningsdagarna-2023/
+  - /eforvaltningsdagarna2023
+  - /webinar/eforvaltningsdagarna-2023/
 ---
 
 {{< ingress >}}

@@ -3,12 +3,13 @@ title: "Kontakt oss på Safespring"
 intro: "Safespring leverer en lokalt basert sky bygget for morgendagens apper."
 date: "2020-09-25"
 draft: false
-language: "No"
+language: "nb"
 section: "Safespring"
-Language: "No"
+language: "nb"
 aliases:
 - /no/no-kontakt-old/
 ---
+
 <div class="ingress"><p>Safespring har kontorer i Sverige og i Norge med hovedkontor i Stockholm, Sverige.</p></div>
 
 Den enkleste måten er å kontakte oss på telefon eller post. Hvis du har generelle spørsmål, kan du ringe oss eller sende oss en e-post på info-adressen vår, men selvfølgelig er du også velkommen til å kontakte noen av våre ansatte direkte.

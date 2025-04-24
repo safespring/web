@@ -9,24 +9,24 @@ card: "safespring_card_47.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Se"
+language: "sv"
 toc: ""
 aliases:
-- /blogg/2023/2023-03-eu_us_data_privacy_framework-se/
+  - /blogg/2023/2023-03-eu_us_data_privacy_framework-se/
 ---
 
 {{< ingress >}}
-Europeiska dataskyddsstyrelsen (EDPB) stöder EU-US Data Privacy Framework (DPF), men det finns betänkligheter kring dataskyddet. 
-{{< /ingress >}} 
+Europeiska dataskyddsstyrelsen (EDPB) stöder EU-US Data Privacy Framework (DPF), men det finns betänkligheter kring dataskyddet.
+{{< /ingress >}}
 
 DPF har förbättrats med krav på nödvändighghet och proportionalitet för amerikansk underrättelseinsamling, men vidareöverföringar av data och skydd av EU-medborgares rättigheter kräver förtydliganden.
 
 EDPB uppmanar Europeiska kommissionen att säkerställa att skydden för dataöverföringar till tredjeland är effektiva och att övervaka genomförandet av principerna om nödvändighet och proportionalitet. Företag bör vara försiktiga med dataöverföringar till tredjeland och se över sina dataskyddsstrategier för att minska risken för rättsliga utmaningar.
 
 {{% note "Fredric Wallsten, Safesprings VD:" %}}
-Jag tror att EDPB kommer att godkänna detta förslag, vilket innebär att dataöverföringar till USA kommer att bli lagliga. 
+Jag tror att EDPB kommer att godkänna detta förslag, vilket innebär att dataöverföringar till USA kommer att bli lagliga.
 
-Dock kommer Max Schrems med största sannolikhet lämna in en ny stämning, kallad "Schrems-III", så snart godkännandet är på plats. Därefter kan vi förvänta oss en period på cirka 1-2 år innan EU-domstolen tar upp ärendet igen och eventuellt fäller beslutet. 
+Dock kommer Max Schrems med största sannolikhet lämna in en ny stämning, kallad "Schrems-III", så snart godkännandet är på plats. Därefter kan vi förvänta oss en period på cirka 1-2 år innan EU-domstolen tar upp ärendet igen och eventuellt fäller beslutet.
 
 Anledningen till detta är att det nya avtalet huvudsakligen grundar sig på ett presidentdekret och att insynen fortfarande är begränsad. Detta är mina personliga reflektioner, men jag har även diskuterat dem med flera andra personer, vilket gör mig övertygad om att denna utveckling är ganska trolig.
 {{% /note %}}

@@ -1,6 +1,6 @@
 ---
 title: "Discover a world-class local cloud service with our experts"
-language: "En"
+language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Book demo"
@@ -21,7 +21,7 @@ sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-- /en/demo/
+  - /en/demo/
 ---
 
 {{< ingress >}}

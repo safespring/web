@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-05-terraform-ansible
-    - /blogg/2022/2022-05-terraform-ansible/
+  - /blogg/2022-05-terraform-ansible
+  - /blogg/2022/2022-05-terraform-ansible/
 ---
 
 {{< ingress >}}
@@ -25,7 +25,7 @@ Ansible inventory.
 {{< /ingress >}}
 
 {{% note "Read more" %}}
-If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy: 
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
 
 1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
 2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
@@ -34,8 +34,8 @@ If you found this post useful, be sure to check out the rest of the series on us
 
 {{% /note %}}
 
-
 ## Prerequisites
+
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
@@ -63,6 +63,7 @@ become widely accepted over the last three decades and is based on ideas and
 research by [Mark Burgess during the early nineties and later][mbcfengine].
 
 ### Terraform providers
+
 The superpower of Terraform comes from all of its providers. The Terraform
 providers are binary extensions of Terraform that, as the name indicates,
 «provide» resources of different kinds using the APIs of the cloud provider
@@ -77,6 +78,7 @@ infrastructure. Every time it is run, it will turn the desired state into the
 actual state for cloud resources.
 
 ### Reducing the level of «lock-in»
+
 Terraform has tons of battle-tested providers available to use, thus easing the
 burden of provisioning cloud resources from all kinds of cloud APIs within the
 same (or different) configurations.
@@ -95,6 +97,7 @@ and best practices to understand the nature of the tool before using it for
 the important stuff.{{< /disclaimer >}}
 
 ## Ansible introduction
+
 [Ansible][ansible] is a suite of tools for orchestration and configuration management
 mainly by using so-called playbooks. Playbooks are written in YAML and describe the
 desired state for operating system properties like files, services, filesystems
@@ -112,13 +115,14 @@ provided by scripts.
 
 When working with OpenStack, it is possible to use inventory scripts that
 queries the OpenStack API directly and produces a complete inventory of all
-instances with metadata, all the  group memberships and so on, but oftentimes
+instances with metadata, all the group memberships and so on, but oftentimes
 these scripts take a long time to run, and they generally need to run every
 time you run a playbook, thus making playbook runs orders of magnitude more
 time-consuming than static inventories. Also, they can put a heavy load on the
 OpenStack APIs if the inventory is frequently queried.
 
 ## Terraform and Ansible
+
 It must be "Terrible" then ;-) ? Actually, it is not terrible at all.
 
 Terraform keeps its own account of all objects it provisions together with
@@ -142,11 +146,12 @@ can also combine information from the dynamic inventory provided by the script
 with static inventory files that further enrich or transform the dynamic
 inventory. For instance, if you use an Ansible role or playbook that requires a
 specific host group name, you can use a static inventory to define a new host
-group that you choose the name of and specify a host group  from the dynamic
+group that you choose the name of and specify a host group from the dynamic
 inventory as `children` to the group you created, and then use that group with
 your role or playbook. We'll look at that in a later example.
 
 ## Examples
+
 We'll use the code [examples][sftfexamples] in the Terraform module [git
 repo][sftfmodules] as a reference and explain each of them underneath the code.
 
@@ -224,6 +229,7 @@ module my_sf_instances {
    key_pair_name   = openstack_compute_keypair_v2.skp.name
 }
 ```
+
 First, we create two instances on the `public` network, from flavor
 `l2.c2r4.100` and the `ubuntu-20.04` image. Notably, we specify `role=webserver`.
 When we run `terraform apply` on this, the instances, key pairs, and security
@@ -241,6 +247,7 @@ ansible-playbook -i ati example.yml
 ```
 
 The contents of `example.yml`
+
 ```
 - hosts: os_metadata_role=webserver
   gather_facts: no
@@ -274,7 +281,7 @@ playbook straight after provisioning (in a script, for instance) instead of
 waiting an unknown number of seconds before the instances are available and
 ready to be configured by Ansible over ssh. We set `gather_facts: no` to
 prevent playbook failure before instances are available, then we use `setup:`
-in its own task after we waited for instances to be available.  
+in its own task after we waited for instances to be available.
 
 The two following tasks are to install the Nginx package and to create an
 `index.html` with a welcome message that inserts the hostname of each instance
@@ -365,6 +372,7 @@ module my_clients {
    key_pair_name   = openstack_compute_keypair_v2.skp.name
 }
 ```
+
 Here we declare a key pair (public key), two security groups, a Wireguard
 gateway instance, and a set of 2 Wireguard client instances. The `ingress`
 security group allows access from the world on IPv4 to port 22/tcp (ssh), the
@@ -387,6 +395,7 @@ docs for the Terraform `cidrhost()` function can be found in the [Terraform
 docs][tfdocs]
 
 And now over to Ansible. We created an inventory directory with the following contents:
+
 ```
 $ ls -l inventory
 total 4
@@ -399,10 +408,11 @@ reason it starts with an underscore is that the stuff that is defined in the
 static inventory (the `hosts ` file) refers to stuff produced by the dynamic
 inventory. Files in the inventory directory are processed in alphabetical order,
 thus the dynamic inventory must be processed before the static inventory
-otherwise, the referenced child groups in the  static inventory do
+otherwise, the referenced child groups in the static inventory do
 not yet exists when it is processed.
 
 The content of the `hosts` file:
+
 ```
 [wireguard_gateway]
 [wireguard_gateway:children]
@@ -425,6 +435,7 @@ Also we define the static variables `wireguard_forward_interface` and
 `wireguard_connect_interface`
 
 The playbook looks like this:
+
 ```
 - hosts: wireguard_gateway
   become: yes
@@ -444,7 +455,6 @@ The playbook looks like this:
     - include_role:
         name: ansible-role-wireguard
 ```
-
 
 First, we run a play applying the Wireguard role to the Wireguard gateway and
 then we run another play applying the same role to Wireguard clients. This is
@@ -471,6 +481,7 @@ $ openstack server list |grep wire
 
 The IP-address of the gateway is `185.189.28.40`. If we log in to the clients
 and ask what is our source address as perceived from the Internet.
+
 ```
 $ ssh ubuntu@185.189.29.84
 (..)
@@ -484,20 +495,18 @@ $ curl ifconfig.me
 
 Voila!
 
-
 [ati]: https://github.com/safespring-community/utilities/blob/main/ati/terraform.py
 [ansible]: https://github.com/ansible/ansible
 [tftry]: https://www.terraform.io/language/functions/try
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
-[diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
-[newflavors]:https://docs.safespring.com/new/flavors/
-[firstblog]:https://www.safespring.com/blogg/2022-01-terraform-modules/
-[mbcfengine]:https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
-[tfdl]:https://www.terraform.io/downloads
-[sftfmodules]:https://github.com/safespring-community/terraform-modules
-[sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]:https://www.safespring.com/blogg/2022-03-network/
-
+[diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
+[newflavors]: https://docs.safespring.com/new/flavors/
+[firstblog]: https://www.safespring.com/blogg/2022-01-terraform-modules/
+[mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
+[tfdl]: https://www.terraform.io/downloads
+[sftfmodules]: https://github.com/safespring-community/terraform-modules
+[sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
+[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
+[netblog]: https://www.safespring.com/blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/

@@ -2,7 +2,7 @@
 title: "Federerad AI med FEDn på Safespring"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
-language: "Sv"
+language: "sv"
 cardtitle: "AI & ML"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
@@ -19,9 +19,8 @@ sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/en/contact"
 socialmedia: ""
 aliases:
-- /tjanster/machine-learning/
+  - /tjanster/machine-learning/
 ---
-
 
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna–talarslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
 {{< distance >}}
@@ -43,13 +42,14 @@ Genom att utnyttja Safespring molntjänst i kombination med FEDns federerade mas
 
 {{< distance >}}
 
-{{< horisontal-card 
-    image="/img/card/safespring-scaleut_use-case-ebba.webp" 
-    cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data" 
-    link="/tjanster/case/scaleout/" 
-    linktext="Läs Use Case" 
-    text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" 
->}}
+{{< horisontal-card
+image="/img/card/safespring-scaleut_use-case-ebba.webp"
+cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data"
+link="/tjanster/case/scaleout/"
+linktext="Läs Use Case"
+text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”"
+
+> }}
 
 {{< distance >}}
 

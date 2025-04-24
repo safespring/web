@@ -1,6 +1,6 @@
 ---
 title: "Utforska våra kunders molntjänster byggda på Safespring"
-language: "Se"
+language: "sv"
 date: "2018-06-03"
 draft: false
 author: ""
@@ -12,13 +12,12 @@ intro: "En webcast-serie där vi dyker ner i våra kunders digitala framsteg med
 audience: "kommun"
 episodetype: "Use Case"
 aliases:
-- /webinar/kommun/
+  - /webinar/kommun/
 ---
 
 {{< ingress >}}
 Upptäck hur våra kunder har navigerat i den digitala eran och integrerat innovativa lösningar för att förbättra effektiviteten och tjänsterna i deras organisationer. Varje avsnitt erbjuder en unik inblick i praktiska tillämpningar av Safespring-teknologier.
 {{< /ingress >}}
-
 
 ### Use Case 1: Digital Assistent i Kommunen
 

@@ -15,9 +15,9 @@ sidebarlinkname: "Bestill demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/no/pris/#safespring-compute"
-language: "No"
+language: "nb"
 section: "Safespring Compute"
-Language: "No"
+language: "nb"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
@@ -25,12 +25,12 @@ aliases:
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimised" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-door-open" text="Open standards" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimised" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-door-open" text="Open standards" link="" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}

@@ -7,9 +7,9 @@ intro: "The white paper you just downloaded will be sent to the email address yo
 background: ""
 dontshow: "yes"
 section: "Confirmation"
-Language: "En"
+language: "en"
 aliases:
-- /en/whitepaper/thanks/
+  - /en/whitepaper/thanks/
 ---
 
 {{% ingress %}}

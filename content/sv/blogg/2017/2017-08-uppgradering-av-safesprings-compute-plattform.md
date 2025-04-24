@@ -10,10 +10,10 @@ card: "safespring_card_0.jpg"
 eventbild: "safespring_background_0.jpg"
 socialmediabild: "safespring_social_0.jpg"
 section: "Tech update"
-language: "Se"
+language: "sv"
 aliases:
-    - /blogg/uppgradering-av-safesprings-compute-plattform
-    - /blogg/2017/2017-08-uppgradering-av-safesprings-compute-plattform/
+  - /blogg/uppgradering-av-safesprings-compute-plattform
+  - /blogg/2017/2017-08-uppgradering-av-safesprings-compute-plattform/
 ---
 
 I enlighet med Safesprings mål att ligga i fas med OpenStacks officiella versioner (med en fördröjning på 3 månader för att säkerställa stabilitet) är nu arbetet med att uppgradera till den senaste versionen Ocata i full gång.

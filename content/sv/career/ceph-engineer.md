@@ -8,9 +8,9 @@ date: "2021-02-05"
 sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
 sidebarlinkname: "Upload CV"
 sidebarlinkicon: "fa-external-link-alt"
-language: "En"
+language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-Language: "En"
+language: "en"
 aliases:
 - /career/ceph-engineer/
 ---
@@ -50,14 +50,14 @@ We deliver infrastructure services based on open-source software like Openstack 
 
 ### What do we expect from you?
 
-* We expect that you can communicate concisely and clearly in English and a Scandinavian language.
-* You have deep knowledge about building, operating optimizing and troubleshooting Ceph clusters at a large scale.
-* You have experience with Continuous Delivery, Containers, and automating infrastructure.
-* You have experience with infrastructure as code - we use mostly Ansible, but experience with other tools is also valuable.
-* You have skills in at least one programming language (for instance Python or Golang)
-* You enjoy working with a variety of people and organizations and are a good listener and communicator.
-* Most important: You should be willing and able to learn, grow and share. We need your knowledge to work to improve our customers, teams, and organization - what you learn, combined with what you already know, is our most valuable asset.
-* You must be a resident of Norway or Sweden
+- We expect that you can communicate concisely and clearly in English and a Scandinavian language.
+- You have deep knowledge about building, operating optimizing and troubleshooting Ceph clusters at a large scale.
+- You have experience with Continuous Delivery, Containers, and automating infrastructure.
+- You have experience with infrastructure as code - we use mostly Ansible, but experience with other tools is also valuable.
+- You have skills in at least one programming language (for instance Python or Golang)
+- You enjoy working with a variety of people and organizations and are a good listener and communicator.
+- Most important: You should be willing and able to learn, grow and share. We need your knowledge to work to improve our customers, teams, and organization - what you learn, combined with what you already know, is our most valuable asset.
+- You must be a resident of Norway or Sweden
 
 ### Will there be any traveling?
 
@@ -70,6 +70,7 @@ Safespring is affiliated to Kollektivavtalet (https://www.itot.se/) and applies 
 <div id="down"></div>
 
 ## How to apply
+
 To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
 
 {{% localbutton text="upload application" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}

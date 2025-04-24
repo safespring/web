@@ -9,9 +9,9 @@ sidebarlinkicon: "fa-file-lines"
 sidebarlinkurl: "/documents/safespring-acceptable-use-policy_20191654-01.pdf"
 general: "yes"
 toc: ""
-language: "No"
+language: "nb"
 aliases:
-- /dokument/acceptable-use-policy-no/
+  - /dokument/acceptable-use-policy-no/
 ---
 
 {{< ingress >}}

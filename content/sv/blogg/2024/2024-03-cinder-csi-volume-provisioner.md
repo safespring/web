@@ -10,17 +10,15 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 TOC: "In this guide"
 sidebarlinkname: "GitHub repository"
 sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 sidebarlinkname2: "GitHub repository"
 sidebarlinkurl2: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 aliases:
-- /blogg/2024/2024-03-cinder-csi-volume-provisioner/
+  - /blogg/2024/2024-03-cinder-csi-volume-provisioner/
 ---
-
-
 
 {{< ingress >}}
 Have you configured your OKD or OpenShift cluster with the platform option set to "none" and, as a result, are missing the OpenStack Cinder CSI Driver Operator?
@@ -42,6 +40,7 @@ This guide is accompanied by a complete set of code examples available on our Gi
 Securing communication between Cinder CSI volume provisioner and OpenStack is paramount. Utilizing an application credential facilitates this by providing the necessary authentication details for interactions with OpenStack services.
 
 ### 1. Creating an application credential
+
 Initiate the creation of a new application credential tailored for your requirements. If you have previously generated credentials, consider reusing them for the Cinder CSI plugin. To manage your credentials effectively, use the command below to create a new set or list existing ones:
 
 ```bash
@@ -64,6 +63,7 @@ echo "Application secret: ${app_secret}"
 ```
 
 ### 2. Create a namespace for storage CSI
+
 Establish a dedicated namespace for the CSI, enhancing organizational clarity and security:
 
 ```bash
@@ -72,6 +72,7 @@ oc create namespace ${namespace}
 ```
 
 ### 3. Prepare Your cloud configuration
+
 Generate a configuration file encoded in base64 for Kubernetes secret storage. This configuration allows your application to authenticate with OpenStack:
 
 ```bash
@@ -85,6 +86,7 @@ echo -e "${cloud_config_encoded}" | base64 -d
 ```
 
 ### 4. Deploy the encoded configuration as your secret
+
 Utilize this Kubernetes manifest to securely store your OpenStack credentials within the created namespace:
 
 ```yaml
@@ -155,11 +157,12 @@ In `Chart.yaml`, update the dependencies so it searching for the same version
 ```yaml
 dependencies:
   - name: openstack-cinder-csi
-    version: '~2.28'
+    version: "~2.28"
     repository: "https://kubernetes.github.io/cloud-provider-openstack"
 ```
 
 Update dependencies
+
 ```bash
 helm dependency update
 ```
@@ -180,7 +183,7 @@ oc -n ${namespace} get pods
 ```
 
 | NAME                                                   | READY | STATUS  | RESTARTS | AGE  |
-|--------------------------------------------------------|-------|---------|----------|------|
+| ------------------------------------------------------ | ----- | ------- | -------- | ---- |
 | openstack-cinder-csi-controllerplugin-544fc6fc4c-cnjft | 6/6   | Running | 0        | 151m |
 | openstack-cinder-csi-nodeplugin-5t54r                  | 3/3   | Running | 0        | 151m |
 | openstack-cinder-csi-nodeplugin-dc5hc                  | 3/3   | Running | 0        | 151m |
@@ -195,11 +198,12 @@ oc get storageclass -o custom-columns=Name:.metadata.name,Provisoner:.provisione
 ```
 
 | Name                 | Provisoner               |
-|----------------------|--------------------------|
+| -------------------- | ------------------------ |
 | csi-cinder-sc-delete | cinder.csi.openstack.org |
 | csi-cinder-sc-retain | cinder.csi.openstack.org |
 
 ## Test Cinder CSI volume provisioner
+
 Test Cinder CSI volume provisioner by creating a Persistent Volume Claim and then a application that's using this PVC.
 
 ```bash
@@ -258,7 +262,7 @@ oc -n ${namespace_test} get pvc -o custom-columns=Name:.metadata.name,Status:.st
 ```
 
 | Name                 | Status | Volume                                   |
-|----------------------|--------|------------------------------------------|
+| -------------------- | ------ | ---------------------------------------- |
 | csi-pvc-cinderplugin | Bound  | pvc-ed60e725-93e8-447c-bc18-ca33546f2ce8 |
 
 If you have any problems, start by looking into the events table with `oc -n ${namespace_test} events`.
@@ -276,6 +280,7 @@ oc delete namespace ${namespace_test}
 ```
 
 ## Updating your installation
+
 Should there be updates available for the Cinder CSI provisioner, use the following command to apply them:
 
 ```bash
@@ -284,6 +289,7 @@ helm upgrade -n ${namespace} cinder-csi .
 ```
 
 ## Uninstalling
+
 If you need to uninstall the Cinder CSI provisioner, execute these commands:
 
 ```bash

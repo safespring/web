@@ -17,24 +17,24 @@ sidebarlinkname: "Gå med i Beta-programmet"
 sidebarlinkurl: "#intresserad-av-att-testa-plattformen"
 showthedate: false
 banner: "blue-hover-tech"
-language: "Sv"
+language: "sv"
 aliases:
-- /tjanster/containerplattform/
+  - /tjanster/containerplattform/
 ---
 
 {{< ingress >}}
-    Safesprings Containerplattform är en managerad Kubernetes-tjänst byggd på vår kraftfulla infrastruktur, optimerad för snabba, tillförlitliga och säkra containerbaserade applikationer.
+Safesprings Containerplattform är en managerad Kubernetes-tjänst byggd på vår kraftfulla infrastruktur, optimerad för snabba, tillförlitliga och säkra containerbaserade applikationer.
 {{</ ingress >}}
 
 Utformad med skalbarhet, efterlevnad och kostnadseffektivitet i åtanke, stöder vår plattform molnbaserade applikationer i en säker, EU-suverän miljö.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-cubes" text="Baserad på CNCF-projekt" link="" color="#195F8C">}}
-    {{< icon-block icon="fak fa-safespring-icon" text="Drivs av Safespring Compute" link="/tjanster/safespring-compute/" color="#417DA5">}}
-    {{< icon-block icon="fas fa-sparkles" text="GPU för ML och AI" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-sync" text="Dynamisk skalbarhet" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-forward" text="Snabb start, låg tröskel" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk säkerhet" link="/gdpr/" color="#417DA5">}}
+{{< icon-block icon="fas fa-cubes" text="Baserad på CNCF-projekt" link="" color="#195F8C">}}
+{{< icon-block icon="fak fa-safespring-icon" text="Drivs av Safespring Compute" link="/tjanster/safespring-compute/" color="#417DA5">}}
+{{< icon-block icon="fas fa-sparkles" text="GPU för ML och AI" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-sync" text="Dynamisk skalbarhet" link="" color="#32CD32">}}
+{{< icon-block icon="fas fa-forward" text="Snabb start, låg tröskel" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk säkerhet" link="/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
 ## Safespring Containerplattform: <br>Öppen, suverän och flexibel

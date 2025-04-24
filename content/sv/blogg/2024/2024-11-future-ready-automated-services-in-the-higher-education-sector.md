@@ -10,10 +10,10 @@ showthedate: true
 card: "safespring_card_0.svg"
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 toc: "In this post"
 aliases:
-- /blogg/2024/2024-11-future-ready-automated-services-in-the-higher-education-sector/
+  - /blogg/2024/2024-11-future-ready-automated-services-in-the-higher-education-sector/
 ---
 
 {{< ingress >}}
@@ -39,6 +39,7 @@ At Safespring, we believe in putting APIs to work in ways that simplify IT manag
 ### State Validation: Ensuring IT Works for You
 
 APIs offer tools to check and set the state of your resources. Imagine you need a specific server configuration and have it available using an API call:
+
 - A `GET` request retrieves the current setup.
 - A `PUT` request updates it to match your desired configuration.
 
@@ -53,21 +54,27 @@ Using a configuration-based approach, it’s possible to deploy identical setups
 Automation isn’t just theory—it delivers real results. Here are two scenarios from the higher education sector that show how Safespring’s API-driven approach transforms IT operations:
 
 {{% note "Scenario 1" %}}
+
 ### Streamlining IT Operations
+
 A university was managing an application with five servers for about 100 users, hosted in its own data center. The customer wanted to migrate to an external provider, with one non-negotiable requirement: the solution had to remain within Norway.
 
 By leveraging Safespring’s API ecosystem, we helped them:
+
 - Automate the deployment of test and production environments.
 - Establish robust access controls and backup routines.
-- Build a solution that could grow with their needs—whether the service stayed small or expanded dramatically.  
+- Build a solution that could grow with their needs—whether the service stayed small or expanded dramatically.
 
 {{% /note %}}
 
 {{% note "Scenario 2" %}}
+
 ### Secure Data Handling for Research
+
 A research team was facing exponential growth in data—up to 5 TB per day—and needed a secure, scalable solution for storage and processing. Their Kubernetes clusters and storage were becoming difficult to manage, and they wanted to focus on research, not infrastructure.
 
 Safespring delivered:
+
 - A private S3 storage solution built on open-source Ceph technology.
 - Managed Kubernetes clusters to reduce maintenance burdens.
 - Long-term storage plans to ensure data integrity for over a decade.
@@ -93,6 +100,7 @@ Once your platform automation is running smoothly, bring in external partners or
 ## The Payoff: What You’ll Gain
 
 By embracing APIs and automation you will unlock a host of benefits:
+
 - Faster delivery: Deploy resources quickly without manual intervention.
 - Increased security: Automated logging and monitoring reduce risks.
 - Better efficiency: Focus staff time on innovation instead of maintenance.

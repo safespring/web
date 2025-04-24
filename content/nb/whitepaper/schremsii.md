@@ -6,9 +6,9 @@ intro: "Forutsetninger og anbefalinger for offentlig sektor og leverandører til
 form: "no"
 sidebarlinkname: "Les direkte"
 sidebarlinkurl: "#down"
-language: "No"
+language: "nb"
 section: "Informasjonsguide "
-Language: "No"
+language: "nb"
 socialmedia: "/safespring-schremsii.jpg"
 aliases:
 - /no/whitepaper/schremsii/

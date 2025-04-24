@@ -5,9 +5,9 @@ draft: false
 intro: "Safespring mottar og lagrer opplysningene som skrives inn i kontaktskjemaene som finnes på nettstedet safespring.com"
 dokumentbilde: "safespring_card_20.jpg"
 general: "yes"
-language: "No"
+language: "nb"
 aliases:
-- /dokument/personuppgiftshantering-no/
+  - /dokument/personuppgiftshantering-no/
 ---
 
 {{< ingress >}}
@@ -21,9 +21,11 @@ Safespring AB, org. nr. 559075–0245, er ansvarlig for behandlingen av Personop
 {{% /note %}}
 
 ### Lovlig grunnlag
+
 Det lovlige grunnlaget for behandlingen av Personopplysningene for Formålet er vår berettigede interesse i å kunne markedsføre tjenestene vi tilbyr på en effektiv måte. Personopplysningene lagres på en sikker måte i tråd med vår forretningsmodell, og du har rett til når som helst å be oss slette Personopplysningene og/eller angi at du ikke ønsker å bli kontaktet av oss. Vi vil behandle Personopplysningene så lenge du godkjenner det. Når behandlingen opphører, slettes Personopplysningene.
 
 ### Dine rettigheter
+
 Hvis du har noen spørsmål angående vår behandling av Personopplysningene, bør disse stilles til oss via e-postadresse gdpr@safespring.com. Disse kontaktinformasjonene kan også brukes hvis du ønsker å utøve noen av dine rettigheter i henhold til personvernforordningen (2016/679). Disse rettighetene er ikke absolutte, og en anmodning om utøvelse av rettighetene fører derfor ikke alltid til noen handling. Rettighetene i personvernforordningen inkluderer:
 
 - {{< inline "Rett til tilgang" >}} Ifølge artikkel 15 i personvernforordningen har du rett til å få tilgang til Personopplysningene samt viss informasjon angående behandlingen av Personopplysningene. Denne informasjonen fremgår av dette dokumentet.
@@ -36,9 +38,12 @@ Hvis du har noen spørsmål angående vår behandling av Personopplysningene, b�
 Til slutt har du rett til å klage til Datatilsynet.
 
 ## Kontaktinformasjon
+
 ### Safespring
+
 [gdpr@safespring.com](mailto:gdpr@safespring.com)
 
 ### Datatilsynet
+
 [datainspektionen@datainspektionen.se](mailto:datainspektionen@datainspektionen.se)</br>
 Telefon: [+46(0)‭8-657 61 00](tel:+4686576100).‬

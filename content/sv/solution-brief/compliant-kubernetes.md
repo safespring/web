@@ -14,7 +14,7 @@ background: "safespring-kubernetes.png"
 sidebarimage: ""
 background: "safespring-kubernetes-background.svg"
 socialmediabild: "safespring_social_21.gif"
-language: "En"
+language: "en"
 aliases:
 - /solution-brief/compliant-kubernetes/
 ---
@@ -40,7 +40,7 @@ Although historically known as hard to set up, getting a Kubernetes cluster up a
 
 ![Welkin on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
 
-*A process has started to connect Safespring's cloud platform to Sjunet in Sweden.*
+_A process has started to connect Safespring's cloud platform to Sjunet in Sweden._
 
 In addition to monitoring the clusters 24/7 for both health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management - upgrading, testing, and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups, and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
 

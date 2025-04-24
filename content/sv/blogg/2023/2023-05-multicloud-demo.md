@@ -10,17 +10,17 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-- /blogg/2023/2023-05-multicloud-demo/
+  - /blogg/2023/2023-05-multicloud-demo/
 ---
 
 {{< ingress >}}
-Explore the power of infrastructure as code (IAC) with this guide on 
-creating a scalable web application using multiple OpenStack sites. 
-Learn how to utilize Terraform for infrastructure provisioning, Ansible 
-for system configuration, and how these tools, in combination with DNS 
+Explore the power of infrastructure as code (IAC) with this guide on
+creating a scalable web application using multiple OpenStack sites.
+Learn how to utilize Terraform for infrastructure provisioning, Ansible
+for system configuration, and how these tools, in combination with DNS
 round-robin, can offer a dynamic and scalable solution for your web services.
 {{< /ingress >}}
 
@@ -30,7 +30,7 @@ the instances in the infrastructure. In this blog post, we take it one step
 further. We will show a minimal example of how to scale up web service backends
 across multiple sites and use an API programmable DNS servcie (Gandi) to
 maintain A records for those backends, effectively scaling the service by means
-of DNS round-robin (RR). 
+of DNS round-robin (RR).
 
 This is the simplest possible approach for such an
 implementation, however, this can be expanded by replacing the simple DNS RR
@@ -43,10 +43,12 @@ microservices and applications that scale horizontally; in fact this is exactly
 what our partner Elastisys does.
 
 ## Prerequisites
+
 This blog post assumes you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
 verify their integrity. There is also the official [Terraform documentation][tfdocs].
+
 - A basic understanding of Ansible playbooks and inventories is also necessary.
 - Some basic usage of the [OpenStack CLI][osclidoc] will also be required.
 - A basic understanding of DNS and round-robin (RR) behavior.
@@ -68,11 +70,13 @@ the drawing to cycle through the screens.
 <iframe src="/img/eosc-multicloud-demo.sozi.html"  width="100%" height="500" style="border:0"></iframe>
 
 ## TL;DR
+
 <div style="margin-bottom:50px;"></div>
 
 <script data-autoplay="true" data-loop="true" data-speed="2" async id="asciicast-kCn38aGPomo6FvSCjqCDAukoM" src="https://asciinema.org/a/kCn38aGPomo6FvSCjqCDAukoM.js"></script>
 
 ## Start scale up web service backends
+
 All the files in the demo is available on [the Safespring community Github
 repository][mcdemo]. Keep reading to understand what happens in further detail.
 
@@ -83,6 +87,7 @@ the same type of provider and use aliases to differentiate which one will be use
 when declaring the desired state for resources.
 
 In our case, this code does that:
+
 ```hcl
 provider "openstack" {
   alias               = "sto1-sandbox"
@@ -119,6 +124,7 @@ terraform {
 }
 
 ```
+
 Note also that the aliases of the OpenStack provider instances need to be
 declared in the `configuration_aliases` field.
 
@@ -257,6 +263,7 @@ this (`configure.yaml`):
         dest: "/var/www/html/index.html"
         content: "<html><h1>Welcome to {{ansible_hostname}}</h1></html>"
 ```
+
 First, we wait for instances to be available. Then we install Nginx, a minimal web
 server, and template a minimal html home page that returns a greeting together
 with the hostname of the instance the service runs on.
@@ -270,35 +277,35 @@ So we now run the playbook like this:
 
 ```shell
 $ ansible-playbook -i ati configure.yaml
-[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details                                 
-                                                                                                                                   
+[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
 PLAY [Configure back ends] ********************************************************************************************************
-                                                                                                                                   
+
 TASK [Gathering Facts] ************************************************************************************************************
-ok: [mc-safespring-sto1-1.saft.in]                                                                                                 
-                                                                                                                                   
+ok: [mc-safespring-sto1-1.saft.in]
+
 TASK [wait for nodes to come up] **************************************************************************************************
-ok: [mc-safespring-sto1-1.saft.in]                                                                                                 
-                                                                                                                                   
+ok: [mc-safespring-sto1-1.saft.in]
+
 TASK [Install nginx] **************************************************************************************************************
-changed: [mc-safespring-sto1-1.saft.in]                                                                                            
-                                                                                                                                   
+changed: [mc-safespring-sto1-1.saft.in]
+
 TASK [An example index.html file] *************************************************************************************************
-changed: [mc-safespring-sto1-1.saft.in]                                                                                            
-                                                                                                                                   
+changed: [mc-safespring-sto1-1.saft.in]
+
 PLAY RECAP ************************************************************************************************************************
-mc-safespring-sto1-1.saft.in : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0               
+mc-safespring-sto1-1.saft.in : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
 What happens is this:
 
-* The Terraform module takes the `role` parameter and creates a metadata record
+- The Terraform module takes the `role` parameter and creates a metadata record
   with the key `role` and the value `http_backend` in the underlying OpenStack
   Terraform provider.
-* Since the metadata is part of the state for what Terraform creates in
+- Since the metadata is part of the state for what Terraform creates in
   OpenStack. This information also is present in the Terraform state file
   (`terraform.tfstate`) which the inventory script reads.
-* Through the inventory script Ansible finds the group called
+- Through the inventory script Ansible finds the group called
   `os_metadata_role=http_backend` in the inventory, and executes the tasks on
   the hosts in that group.
 
@@ -425,29 +432,29 @@ host group now contains both the Safespring and the the other European Cloud pro
 
 ```shell
 $ ansible-playbook -i ati configure.yaml
-ansible-playbook -i ati configure.yaml                                                                                         
-[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details                                 
-                                                                                                                                   
+ansible-playbook -i ati configure.yaml
+[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
 PLAY [Configure back ends] ********************************************************************************************************
-                                                                                                                                   
+
 TASK [Gathering Facts] ************************************************************************************************************
-ok: [mc-safespring-sto1-1.saft.in]                                                                                                 
-ok: [mc-psnc-dcw-1.saft.in]                                                                                                        
-                                                                                                                                   
+ok: [mc-safespring-sto1-1.saft.in]
+ok: [mc-psnc-dcw-1.saft.in]
+
 TASK [wait for nodes to come up] **************************************************************************************************
-ok: [mc-safespring-sto1-1.saft.in]                                                                                                 
-ok: [mc-psnc-dcw-1.saft.in]                                                                                                        
-                                                                                                                                   
+ok: [mc-safespring-sto1-1.saft.in]
+ok: [mc-psnc-dcw-1.saft.in]
+
 TASK [Install nginx] **************************************************************************************************************
-ok: [mc-safespring-sto1-1.saft.in]                                                                                                 
-changed: [mc-psnc-dcw-1.saft.in]                                                                                                   
-                                                                                                                                   
+ok: [mc-safespring-sto1-1.saft.in]
+changed: [mc-psnc-dcw-1.saft.in]
+
 TASK [An example index.html file] *************************************************************************************************
-ok: [mc-safespring-sto1-1.saft.in]                                                                                                 
-changed: [mc-psnc-dcw-1.saft.in]                                                                                                   
-                                                                                                                                   
+ok: [mc-safespring-sto1-1.saft.in]
+changed: [mc-psnc-dcw-1.saft.in]
+
 PLAY RECAP ************************************************************************************************************************
-mc-psnc-dcw-1.saft.in      : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0                 
+mc-psnc-dcw-1.saft.in      : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 mc-safespring-sto1-1.saft.in : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
@@ -488,12 +495,12 @@ will load balance across all those IPv4 addresses in a round-robin fashion.
 We can test this using `curl`:
 
 ```shell
-for i in `seq 1 100`                                                                                                           
-do                                                                                                                                 
-echo "$(curl -s www.mcdemo.saft.in)"                                                                                               
-done|sort |uniq                                                                                                                    
-                                                                                                                                   
-<html><h1>Welcome to mc-psnc-dcw-1-saft-in</h1></html>                                                                             
+for i in `seq 1 100`
+do
+echo "$(curl -s www.mcdemo.saft.in)"
+done|sort |uniq
+
+<html><h1>Welcome to mc-psnc-dcw-1-saft-in</h1></html>
 <html><h1>Welcome to mc-safespring-sto1-1</h1></html>
 ```
 
@@ -517,28 +524,29 @@ After applying this and running the Ansible playbook again, our test with `curl`
 yields the following.
 
 ```shell
-for i in `seq 1 100`                                                                                                           
-do                                                                                                                                 
-echo "$(curl -s www.mcdemo.saft.in)"                                                                                               
-done|sort |uniq                                                                                                                    
-<html><h1>Welcome to mc-psnc-dcw-1-saft-in</h1></html>                                                                             
-<html><h1>Welcome to mc-psnc-dcw-2-saft-in</h1></html>                                                                             
-<html><h1>Welcome to mc-safespring-sto1-1</h1></html>                                                                              
-<html><h1>Welcome to mc-safespring-sto1-2</h1></html>                                                                              
+for i in `seq 1 100`
+do
+echo "$(curl -s www.mcdemo.saft.in)"
+done|sort |uniq
+<html><h1>Welcome to mc-psnc-dcw-1-saft-in</h1></html>
+<html><h1>Welcome to mc-psnc-dcw-2-saft-in</h1></html>
+<html><h1>Welcome to mc-safespring-sto1-1</h1></html>
+<html><h1>Welcome to mc-safespring-sto1-2</h1></html>
 <html><h1>Welcome to mc-safespring-sto1-3</h1></html>
 ```
-
-
 
 ## Summary
 
 ### Harnessing the Power of Infrastructure as Code
+
 In conclusion, the power of Infrastructure as Code (IAC) lies in its ability to seamlessly scale web applications across multiple OpenStack sites. By leveraging tools like Terraform and Ansible, we can automate the provisioning of infrastructure and system configuration, respectively. The integration of these tools with DNS round-robin for load balancing allows us to create a dynamic and scalable solution for web services.
 
 ### Enhancing Scalability and Resilience
+
 While this guide presented a simple implementation, it’s possible to introduce more sophisticated elements such as service discovery mechanisms and health checks for further optimization. Ultimately, these methodologies can be applied to provision and scale Kubernetes clusters, supporting continuous delivery and other cloud-native features.
 
 ### Final Thoughts
+
 As we continue to explore the possibilities of IAC, we hope this guide serves as a valuable stepping stone in your journey to building scalable, resilient, and efficient web services.
 
 {{% note "Read more" %}}
@@ -547,7 +555,7 @@ If you found this post useful, be sure to check out the rest of the series on us
 -- [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)  
 -- [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)  
 -- [Integrating Terraform and ansible for efficient resource management](/blogg/2022-05-terraform-ansible)  
--- [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)  
+-- [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)
 
 {{% /note %}}
 
@@ -555,12 +563,12 @@ If you found this post useful, be sure to check out the rest of the series on us
 [ati]: https://github.com/safespring-community/utilities/blob/main/ati/terraform.py
 [ksparams]: https://github.com/kubernetes-sigs/kubespray/blob/master/docs/vars.md
 [kubespray]: https://github.com/kubernetes-sigs/kubespray
-[sftfmodules]:https://github.com/safespring-community/terraform-modules
-[sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]:https://www.safespring.com/blogg/2022-03-network/
-[tfdocs]:https://www.terraform.io/docs
-[tfreleases]:https://releases.hashicorp.com/terraform/
-[osclidoc]:https://docs.safespring.com/new/api/
+[sftfmodules]: https://github.com/safespring-community/terraform-modules
+[sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
+[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
+[netblog]: https://www.safespring.com/blogg/2022-03-network/
+[tfdocs]: https://www.terraform.io/docs
+[tfreleases]: https://releases.hashicorp.com/terraform/
+[osclidoc]: https://docs.safespring.com/new/api/
 [appcred]: https://docs.safespring.com/new/app-creds/
 [mcdemo]: https://github.com/safespring-community/terraform-modules/tree/main/examples/openstack-multicloud

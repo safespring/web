@@ -8,9 +8,9 @@ date: "2021-02-05"
 sidebarlinkurl: "https://next.safespring.com/s/64fzktwr5tFpMQz"
 sidebarlinkname: "Upload CV"
 sidebarlinkicon: "fa-external-link-alt"
-language: "En"
+language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-Language: "En"
+language: "en"
 aliases:
 - /career/openstack-engineer/
 ---
@@ -78,6 +78,7 @@ We compensate with a combination of salary, variable salary based on the monthly
 Compensation is individually negotiated. As a guideline, for a Senior engineer in Norway, total compensation is typically 750 000 - 825 000 NOK, while for a Senior engineer in Sweden total compensation is typically 636 000 - 700 000 SEK.
 
 ## How to apply
+
 To apply, send please send your CV and cover letter in PDF format to [career@safespring.com](mailto:career@safespring.com), or upload them Nextcloud by clicking on the button below labeled "Upload application".
 
 {{% localbutton text="upload application" link="https://next.safespring.com/s/64fzktwr5tFpMQz" %}}

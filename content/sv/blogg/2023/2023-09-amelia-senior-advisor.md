@@ -9,11 +9,11 @@ card: "safespring_card_50.jpg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Se"
+language: "sv"
 author: "Fredric Wallsten"
 toc: ""
 aliases:
-- /blogg/2023/2023-09-amelia-senior-advisor/
+  - /blogg/2023/2023-09-amelia-senior-advisor/
 ---
 
 {{% ingress %}}
@@ -29,10 +29,10 @@ Amelia har tidigare arbetat inom en rad industridrivna och mellanstatliga standa
 Med Amelia ombord ser Safespring fram emot att stärka sin position på marknaden, driva innovationen framåt och ytterligare förbättra kundupplevelsen.
 
 ### Om Safespring
+
 Sedan starten 2017 har Safespring etablerat sig som ett av Sveriges mest framstående företag inom cloud infrastrukturlösningar.
 
 **För mer information, kontakta:**  
 Fredric Wallsten, VD, Safespring  
 E-post: fredric.wallsten@safespring.com  
 Mobil: +46 766-292502
-

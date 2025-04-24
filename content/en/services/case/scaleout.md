@@ -1,6 +1,6 @@
 ---
 title: "Scaleout Systems delivers GDPR-secure machine learning with Safespring"
-language: "En"
+language: "en"
 date: 2023-10-16
 draft: false
 section: "Use case"
@@ -18,7 +18,7 @@ sidebartext: "Andreas shares insights about Scaleout's collaboration with Safesp
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-- /en/services/case/scaleout/
+  - /en/services/case/scaleout/
 ---
 
 {{< ingress >}}

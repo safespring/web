@@ -9,15 +9,15 @@ showthedate: true
 card: "web-safespring-daniel-melin-2024-02.jpg"
 eventbild: ""
 socialmediabild: ""
-language: "Se"
+language: "sv"
 aliases:
-- /blogg/2024/2024-02-daniel-melin/
+  - /blogg/2024/2024-02-daniel-melin/
 ---
 
 ![Daniel Malin på Safespring](/img/blogg/cards/web-safespring-daniel-melin-2024-02.jpg)
 
 {{< ingress >}}
-På Safespring är vi stolta över att välkomna Daniel Melin till vårt team, en framstående förespråkare för öppen källkod och molntjänster. 
+På Safespring är vi stolta över att välkomna Daniel Melin till vårt team, en framstående förespråkare för öppen källkod och molntjänster.
 {{< /ingress >}}
 
 Daniels gedigna bakgrund stärker vår mission att sprida kunskap inom molntjänster. Med erfarenhet från Skatteverket och Kammarkollegiet har Daniel en unik insikt i utmaningarna och möjligheterna för offentlig sektors användande av molntjänster

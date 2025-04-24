@@ -1,7 +1,7 @@
 ---
 title: "Hållbart Private Cloud i T.Loops Data Energy Center"
 section: "Managed Infrastructure"
-language: "Se"
+language: "sv"
 date: 2024-02-06
 draft: false
 intro: "Integrera Safespring On-Premise Cloud i T.Loops svenska hållbara anläggningar för en suverän och anpassningsbar IT-miljö som främjar både innovation och miljöansvar."
@@ -14,16 +14,16 @@ sidebarlinkurl2: "/demo/compute"
 socialmedia: ""
 devops: ""
 aliases:
-- /tjanster/tloop/
+  - /tjanster/tloop/
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-leaf" text="100% CO2-minskning" link="#" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-tank-water" text="Vätske­kylning" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lägre energikostnader" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-recycle" text="Klimatneutralt" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-scale-balanced" text="Nätbalansering" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-house-chimney-heart" text="Värme-återvinning" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100% CO2-minskning" link="#" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-tank-water" text="Vätske­kylning" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lägre energikostnader" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-recycle" text="Klimatneutralt" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-scale-balanced" text="Nätbalansering" link="" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-house-chimney-heart" text="Värme-återvinning" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}
@@ -39,7 +39,7 @@ Kontakta oss gärna om du vill veta mer eller om du har några frågor. Vi ser f
 {{< distance >}}
 
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
+Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.
 
 {{< inline "Ring" >}} +46 (0)76 868 00 59  
 [Skicka mail](mailto:daniel.melin@safespring.com)
@@ -50,15 +50,15 @@ Jag är ansvarig affärsutvecklare för akademisk- och offentlig sektor och hjä
 ## Hållbarhet i EU:s digitala decennium
 
 {{< ingress >}}
-Enligt EU:s vision för det digitala decenniet är hållbarhet en central del av den digitala omställningen. 
+Enligt EU:s vision för det digitala decenniet är hållbarhet en central del av den digitala omställningen.
 {{< /ingress >}}
 
 Safespring och T.Loop, i linje med denna vision, prioriterar hållbarhetsaspekter i sina tjänster. Genom att samarbeta för att leverera molntjänster i T.Loop's Data Energy Centers®, arbetar Safespring och T.Loop för att främja EU:s vision för ett hållbart digitalt decennium.
 
 {{< distance >}}
-  {{< icon-block-horisontal icon="fa-kit fa-safespring-icon" color="#3C9BCD" description="Safespring använder energieffektiva tekniker och förnyelsebara energikällor. Genom att använda våra hållbara molntjänster minskar behovet av lokala lösningar eller globala molntjänster som har ett väsentligt högre klimatavtryck." text="Safespring's hållbarhetsfokus" >}}
-  {{< icon-block-horisontal icon="fa-kit fa-tloop" color="#3C9BCD" description="Data Energy Centers® är designade för att vara klimatneutrala genom att minska CO2-utsläppen och maximera energieffektiviteten samt återvinna värmen." text="T.Loop's bidrag till hållbarhet" >}}
-  {{< icon-block-horisontal icon="fa-kit fa-eu-flag" color="#195F8C" description="Det digitala decenniet inkluderar hållbarhetsmål som omfattar bland annat ökad användning av klimatneutrala teknologier och minskning av energiförbrukningen inom den digitala sektorn." text="EU:s vision för digital hållbarhet" >}}
+{{< icon-block-horisontal icon="fa-kit fa-safespring-icon" color="#3C9BCD" description="Safespring använder energieffektiva tekniker och förnyelsebara energikällor. Genom att använda våra hållbara molntjänster minskar behovet av lokala lösningar eller globala molntjänster som har ett väsentligt högre klimatavtryck." text="Safespring's hållbarhetsfokus" >}}
+{{< icon-block-horisontal icon="fa-kit fa-tloop" color="#3C9BCD" description="Data Energy Centers® är designade för att vara klimatneutrala genom att minska CO2-utsläppen och maximera energieffektiviteten samt återvinna värmen." text="T.Loop's bidrag till hållbarhet" >}}
+{{< icon-block-horisontal icon="fa-kit fa-eu-flag" color="#195F8C" description="Det digitala decenniet inkluderar hållbarhetsmål som omfattar bland annat ökad användning av klimatneutrala teknologier och minskning av energiförbrukningen inom den digitala sektorn." text="EU:s vision för digital hållbarhet" >}}
 {{< distance >}}
 
 ## Frågor och svar om T.Loop
@@ -111,7 +111,7 @@ Data Energy Centers® är belägna inuti befintliga byggnader, vilket ger extra 
 - Miljö­kontrollsystem för brandsläckning, temperatur och luftfuktighet samt läckage­varningssystem.
 - Robusta nätverks­säkerhets­åtgärder såsom brandväggar, intrångs- och förebyggande system samt DDoS-mitigerings­tjänster.
 - Åtkomst­kontrollsystem, säkerhetskameror och eskorterade besök för att ge möjlighet för kunder att säkert komma åt sin utrustning.
-{{% /question %}}
+  {{% /question %}}
 
 {{% question question="Hur tillförlitlig är T.Loops kraft- och kylinfrastruktur?" %}}
 Genom att erbjuda vätskekylda serverlösningar så kan T.Loop säkerställa driftsäkerhet även vid höga utomhus­temperaturer.

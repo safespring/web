@@ -1,6 +1,6 @@
 ---
 title: "Introduction to “Infrastructure as a Service” for managers"
-language: "En"
+language: "en"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "Overview and understanding from a management point of view enabling management and technical staff to form a common understanding."
@@ -10,24 +10,29 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 aliases:
-- /tjanster/utbildning/introduction-to-infrastructure-as-a-service-for-managers/
+  - /tjanster/utbildning/introduction-to-infrastructure-as-a-service-for-managers/
 ---
+
 ## Description
+
 Aimed for Managers with overall technical understanding but no expertise. Overview and understanding from a management point of view enabling management and technical staff to form a common understanding with regards to current situation, path going forward, long- and short-term targets, processes, methodology and strategy.
 
 ### Level
+
 Beginner (with no or limited technical knowledge).
 
 ### Who should attend?
+
 CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.
 
 ### Duration
+
 1 day.
 
 ### Content
+
 Safespring Cloud Infrastructure with OpenStack.
 Short introduction to Cloud Infrastructure with OpenStack with Safesprings cloud platform. You will first get a theoretical orientation of cloud infrastructure as a whole and then more specific about OpenStack. The day will end with exercises in Safesprings platform where your will set up some instances and an application in Safesprings platform.
-
 
 <div class="accordion-box">
 <button class="accordion">Topics Covered</button>
@@ -89,6 +94,7 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 ## How to apply
+
 Let us know that you're interested in the course "Introduction to “Infrastructure as a Service” for managers". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>

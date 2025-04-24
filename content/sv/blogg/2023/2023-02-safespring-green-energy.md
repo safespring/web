@@ -10,18 +10,18 @@ card: "safespring_card_44.svg"
 eventbild: ""
 socialmediabild: ""
 section: "blogg"
-language: "Se"
+language: "sv"
 toc: ""
 sidebarlinkname: "Läs om våra datacenter"
 sidebarlinkurl: "/om-safespring/datacenter"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "/kontakt"
 aliases:
-- /blogg/2023/2023-02-safespring-green-energy/
+  - /blogg/2023/2023-02-safespring-green-energy/
 ---
 
 {{< ingress >}}
-Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan. 
+Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan.
 {{< /ingress >}}
 
 Ett viktigt steg vi har tagit är att säkerställa att våra datacenter använder 100% förnyelsebar energi. Genom att välja förnyelsebar energi undviker vi koldioxidutsläpp som annars skulle vara skadliga för miljön.

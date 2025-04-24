@@ -1,6 +1,6 @@
 ---
 title: "Database as a service is fully-managed, highly-available, open source"
-language: "En"
+language: "en"
 cardtitle: "Database"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
@@ -28,7 +28,7 @@ sidebarwhitepaper: ""
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
 aliases:
-- /en/services/database-as-a-service/
+  - /en/services/database-as-a-service/
 ---
 
 {{< icon-block-container >}}

@@ -1,6 +1,6 @@
 ---
 title: "En flexibel och säker molntjänst för life science forskning"
-language: "Se"
+language: "sv"
 date: 2023-06-01
 draft: false
 darkmode: "off"
@@ -20,7 +20,7 @@ sidebarwhitepaper: ""
 toc: "I denna artikel"
 service: "Safespring Private Cloud"
 aliases:
-- /tjanster/case/scilifelab/
+  - /tjanster/case/scilifelab/
 ---
 
 ##

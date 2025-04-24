@@ -1,7 +1,7 @@
 ---
 title: "Skalbarhet med Kubernetes och Open Shift på optimerade servrar"
 metatitle: "Skalbarhet med Kubernetes och Open Shift på optimerade servrar"
-language: "Se"
+language: "sv"
 cardtitle: "Containerplattform"
 cardintro: "Blixtsnabb NVMe-lagring och optimerad nätverksdesign anpassade för containers."
 cardicon: "fa-solid fa-container-storage"
@@ -18,32 +18,32 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Läs Solution Brief"
 sidebarlinkurl2: "/solution-brief/compliant-kubernetes/"
 aliases:
-- /tjanster/containerplattform-old/
+  - /tjanster/containerplattform-old/
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP för last­balanserare" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-kit fa-nvme" text="Snabb lokal disk till ETCD" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-api" text="Powerful automation" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-network-wired" text="Stabilt nätverk" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Data Suveränitet" link="" color="#32cd32">}}
+{{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP för last­balanserare" link="" color="#195F8C">}}
+{{< icon-block icon="fa-kit fa-nvme" text="Snabb lokal disk till ETCD" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-api" text="Powerful automation" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-network-wired" text="Stabilt nätverk" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastruktur" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Kraftfulla virtuella servrar med NVMe
 
 {{< ingress >}}
-NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency för Kubernetes jämfört med traditionella lagringstekniker. 
+NVMe är ett höghastighetsgränssnitt för lagring som erbjuder snabbare åtkomsttider och lägre latency för Kubernetes jämfört med traditionella lagringstekniker.
 {{< /ingress >}}
 
-Din cloud native applikation kommer köra smidigt. NVMe är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata. 
+Din cloud native applikation kommer köra smidigt. NVMe är ett utmärkt val för användning i etcd, en distribuerad och konsistent nyckellagringstjänst som är grundläggande för Kubernetes. Etcd används för att lagra data över ett kluster av maskiner och är användbart för att lagra och hämta konfigurationsdata, samordning mellan tjänster och lagring av metadata.
 
 Genom att använda NVMe-lagring för etcd förbättras prestanda och tillförlitlighet i systemet, så att det kan hantera stora mängder data och trafik med lätthet samtidigt som det stödjer Kubernetes kraftfulla containerhantering.
 
 {{< distance >}}
 
 {{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys applikation Welkin" %}}
-Rob McCuaig delar insikter om Elastisys samarbete med Safespring och vikten av databehandling inom EU. 
+Rob McCuaig delar insikter om Elastisys samarbete med Safespring och vikten av databehandling inom EU.
 
 {{< 2calltoaction "Läs Use Case" "/tjanster/case/elastisys" "Mer om tjänsten" "/tjanster/compliant-kubernetes">}}
 {{% /custom-card %}}
@@ -64,8 +64,6 @@ Sammanfattningsvis har Safespring en effektiv nätverksstack, en skalbar nätver
 
 ## Kör Kubernetes som en tjänst på Safespring
 
-Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret. 
+Med styrkan av Safesprings infrastruktur har våra partners byggt kraftfulla managerade tjänster. Låt era tekniker managera era tjänster och låt oss fokusera på infrastrukturen och plattformslagret.
 
 {{< custom-card image="/img/graphics/compliant-kubernetes-on-safespring.svg" text="Kör Kubernetes som en tjänst. Med omfattande säkerhetsmekanismer är Welkin en helhetslösning för säker hantering av ert behov av Kubernetes." cardtitle="Welkin som managerad tjänst på Safespring" linktext="Kom igång!" link="/tjanster/compliant-kubernetes/" >}}{{< /custom-card >}}
-
-

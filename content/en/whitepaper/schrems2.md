@@ -13,9 +13,9 @@ card: "safespring_card_33.jpg"
 eventbild: "safespring_background_33.jpg"
 socialmediabild: "safespring_social_33-2.gif"
 toc: "Table of contents"
-language: "En"
+language: "en"
 aliases:
-- /en/whitepaper/schrems2/
+  - /en/whitepaper/schrems2/
 ---
 
 ## Background
@@ -64,7 +64,6 @@ Standardized data protection provisions must provide protection that is material
 
 The ruling has consequences for companies and authorities that process the personal data of European citizens in the sense that there is now much more limited scope for agreements and cooperation with actors that are at risk of being subjected to obligations under US legislation in respect of data disclosure to authorities.
 
-
 {{< inline "The European court of justice">}} has ruled explicitly that:
 
 - third-country legislation on security does not affect the application of European rights for citizens, even if the European citizen interacts with traders from the third country (paragraph 89 of C-311/18);
@@ -90,6 +89,7 @@ The Schrems II ruling clarifies that it is the location of the supplier rather t
 These conclusions are not new in European law. In complementary legislation SOU 2017:74 on data storage for law enforcement purposes, it is stated that data storage under European legal practice is subject to location requirements.
 
 {{% /accordion %}}
+
 ## Part II - The Cloud <br>Local infrastructure with local adaptation
 
 {{< ingress >}}

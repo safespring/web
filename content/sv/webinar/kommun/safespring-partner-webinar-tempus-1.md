@@ -1,6 +1,6 @@
 ---
 title: "Lätthanterlig närvaro­hantering och resursplanering i förskolan"
-language: "Se"
+language: "sv"
 episode: "5"
 series: "true"
 publishDate: "2020-04-27"
@@ -16,8 +16,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-tempus-1.jpg"
 sidebar: "x"
 aliases:
-   - /webinar/kommun/tempus
-   - /webinar/kommun/safespring-partner-webinar-tempus-1/
+  - /webinar/kommun/tempus
+  - /webinar/kommun/safespring-partner-webinar-tempus-1/
 ---
 
 ### Om webbinariet
@@ -42,4 +42,4 @@ Tempus är ett beprövat och lättanvänt system för schemaläggning, närvaroh
 
 **För vårdnadshavare** - Digital schemaläggning, faktisk närvaro, automatiska påminnelser och kommunikation med personalen är bara några av Tempus fördelar för vårdnadshavare. Det har aldrig varit enklare att schemalägga för förskolan!
 
-*Tänk förskola. Det gör vi.*
+_Tänk förskola. Det gör vi._

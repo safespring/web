@@ -15,12 +15,11 @@ background: "safespring-storage.png"
 sidebarimage: "safespring-storage.svg"
 socialmediabild: "safespring_social_38.gif"
 toc: "Table of Contents"
-language: "En"
+language: "en"
 aliases:
-    - /whitepaper/immutable-storage/
-    - /solution-brief/immutable-storage/
+  - /whitepaper/immutable-storage/
+  - /solution-brief/immutable-storage/
 ---
-
 
 {{< ingress >}}
 In this solution brief, we'll walk through the Safespring Storage service based on S3 object storage. With immutable objects, Safespring Storage is a great way of creating an offsite backup that is secure and reliable.
@@ -30,9 +29,9 @@ To backup, your data is important in all IT environments. Most modern backup sys
 
 By using the solution described in this brief, the organization can achieve these benefits:
 
-* A modern and complete backup solution that is easy to manage.
-* A secure off-site storage for critical backup data.
-* A cost-efficient solution that meets all security requirements from a demanding organization.
+- A modern and complete backup solution that is easy to manage.
+- A secure off-site storage for critical backup data.
+- A cost-efficient solution that meets all security requirements from a demanding organization.
 
 ## The 3-2-1 rule
 
@@ -73,4 +72,3 @@ When that is done you finish the wizard and now the function is enabled on the o
 ## Conclusion
 
 We have explained the importance of offsite backups and why object locking is an important feature. By using it disasters can be avoided at the same time as recovery time (RTO) can be shortened since a restore from tapes can take a long time. With object locking, the best from two worlds can be achieved.
-

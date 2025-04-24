@@ -10,15 +10,14 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 aliases:
-- /blogg/2024/2024-08-vmware-exit/
+  - /blogg/2024/2024-08-vmware-exit/
 ---
-
 
 {{< ingress >}}
 Broadcom's acquisition of VMware has had significant impacts on customers,
-causing concern and prompting some to consider alternatives. This post will 
+causing concern and prompting some to consider alternatives. This post will
 address these challenges and describe one solution to the challenges.
 {{< /ingress >}}
 
@@ -26,12 +25,12 @@ These changes, after Broadcom's acquisition of VMware, have led to higher long-t
 costs for many customers, especially smaller businesses that may see dramatic
 increases in their annual renewal fees.
 
-
 {{% note "Key effects of Broadcom's acquisition of VMware" %}}
+
 1. Shifted from perpetual licenses to a subscription-based model.
 2. Eliminated the free version of VMware's vSphere Hypervisor (ESXi).
 3. Implemented price increases, with some customers reporting 5-10x higher costs.
-{{% /note %}}
+   {{% /note %}}
 
 ## Background
 
@@ -60,12 +59,11 @@ to manage upgrades and migrations.
 While this seems like a good approach in the short term, we think it only
 postpones the need to manage VMs, disks, and networks separate from VM
 operating systems and with operating system configuration management tools like
-Cfengine, Puppet, Chef and orchestration tools like  Salt and Ansible, commonly
+Cfengine, Puppet, Chef and orchestration tools like Salt and Ansible, commonly
 referred to as "infrastructure as code", or IAC. This approach allowed for IAC
 to be managed using the same kind of version control systems seen in cloud-native
 application development, thus improving flexibility, stability and automation
 level also on the infrastructure side of things.
-
 
 So, to be blunt, the usefulness of any IaaS service as a replacement for VMware, or
 similar kinds of on-premise virtual infrastructure management tools, depends
@@ -97,12 +95,12 @@ activity list outlines the evaluation:
 1. Identify which VMware products are in use.
 2. Identify which features of the products are used, for which purposes, and to what extent.
 3. Identify the distribution of operating systems for VM workloads and the level
-  of automation and tools in use for managing operating systems and their workloads.
+   of automation and tools in use for managing operating systems and their workloads.
 4. Identify container workloads and tools used to deploy them.
 5. For workloads evaluated to be reasonably easy to migrate, create a proof of
-  concept (POC) to try out Safespring as a new destination for the workloads.
+   concept (POC) to try out Safespring as a new destination for the workloads.
 6. Based on the POC outcome, create a complete migration plan for all workloads
-  verified to be compatible with Safespring.
+   verified to be compatible with Safespring.
 
 The service is free, and the only requirement from you is to first qualify by
 [answering a short survey][survey] about your current in-house experience with

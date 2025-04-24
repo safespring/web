@@ -1,6 +1,6 @@
 ---
 title: "Database as a service"
-language: "En"
+language: "en"
 cardtitle: "Database service"
 cardicon: "fa-solid fa-database"
 cardcolor: "#195F8C"
@@ -23,13 +23,16 @@ aliases:
 ---
 
 ## Database as a Service
+
 Safespring provides MariaDB, MySQL, Redis, PostgreSQL and MongoDB as services on top of the Compute platform.
 
 ### Updates and upgrades
+
 - The DBaaS is kept up to date with security patches and new versions. This includes the database application.
 
 ### Backups and disaster recovery
-- A full backup of the database is taken every day. The time when the backup should be performed as well as retention time can be set in the service. 
+
+- A full backup of the database is taken every day. The time when the backup should be performed as well as retention time can be set in the service.
 - Backups stored in Safespring’s S3 Storage service in another datacenter.
 
 {{< distance >}}

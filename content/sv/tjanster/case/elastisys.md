@@ -1,6 +1,6 @@
 ---
 title: "Med Safespring kan Elastisys kunder fokusera på att utveckla sina digitala tjänster"
-language: "Se"
+language: "sv"
 date: 2023-09-18
 draft: false
 section: "Use case"
@@ -19,7 +19,7 @@ saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
 aliases:
-- /tjanster/case/elastisys/
+  - /tjanster/case/elastisys/
 ---
 
 {{< ingress >}}

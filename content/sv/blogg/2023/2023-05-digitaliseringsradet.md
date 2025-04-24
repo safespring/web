@@ -11,12 +11,11 @@ eventbild: ""
 socialmediabild: ""
 author: "Fredric Wallsten"
 section: "blogg"
-language: "Se"
+language: "sv"
 toc: ""
 aliases:
-- /blogg/2023/2023-05-digitaliseringsradet/
+  - /blogg/2023/2023-05-digitaliseringsradet/
 ---
-
 
 {{% ingress %}}
 
@@ -24,7 +23,7 @@ Diskussionerna om relationen mellan statliga IT-system och offentlighets- och se
 
 {{% /ingress %}}
 
-Vår tolkning är att grunden till [proposition 2022/23:97](#proposition)  är en ovilja hos många svenska myndigheter att begränsa användningen av amerikanska molntjänster. EU:s dataskyddsregler, och svenska sekretessregler, kräver att även personuppgifter som behandlas automatiskt i ett datorsystem skyddas mot godtycklig insyn av tredje makt, oavsett om denna insyn sker enligt en i tredje landet juridiskt definierad process. En grundsyn i Sverige och i EU är att det är svensk och europeisk lag som reglerar svenska och europeiska myndigheters relationer med svenska och europeiska medborgare. En på senare år allt tydligare konflikt är att amerikansk lagstiftning för amerikanska företag inte tillgodoser denna grundsyn. Det finns få andra slutsatser att dra än att svensk och europeisk lagstiftning kräver att vår förvaltning använder inhemskt byggda och driftade tjänster.
+Vår tolkning är att grunden till [proposition 2022/23:97](#proposition) är en ovilja hos många svenska myndigheter att begränsa användningen av amerikanska molntjänster. EU:s dataskyddsregler, och svenska sekretessregler, kräver att även personuppgifter som behandlas automatiskt i ett datorsystem skyddas mot godtycklig insyn av tredje makt, oavsett om denna insyn sker enligt en i tredje landet juridiskt definierad process. En grundsyn i Sverige och i EU är att det är svensk och europeisk lag som reglerar svenska och europeiska myndigheters relationer med svenska och europeiska medborgare. En på senare år allt tydligare konflikt är att amerikansk lagstiftning för amerikanska företag inte tillgodoser denna grundsyn. Det finns få andra slutsatser att dra än att svensk och europeisk lagstiftning kräver att vår förvaltning använder inhemskt byggda och driftade tjänster.
 
 {{% ingress %}}
 
@@ -42,13 +41,9 @@ Det är en utmaning att bita i för regeringens digitaliseringsråd, som precis 
 
 Det har nu gått så pass många år sedan EU-domstolen ogiltigförklarade EU-kommissionens Privacy Shield-beslut att det knappast längre kan ses som en akut angelägenhet att ändra svensk lagstiftning för att tillåta dataöverföringar till USA trots EU-rätten. Riksdagen kommer tyvärr, i och med denna proposition, tvingas ta ställning till om man ska sätta alldeles för små plåster på en redan alldeles för sårad och visionslös IT-driftsstrategi för det offentliga. Regeringen och digitaliseringsrådet behöver i stället lägga sin värdefulla energi på att bedöma de större strategiska utmaningarna för inhemsk industri, framtida kompetensförsörjning och Sveriges plats i Europa.
 
-
-
-
-
 {{% accordion title="Vad är proposition 2022/23:97?" id="proposition" %}}
 
-Proposition 2022/23:97 föreslår en ny regel som tillåter myndigheter att dela sekretessbelagda uppgifter med en individ eller en annan myndighet för teknisk bearbetning eller lagring på uppdrag av den ursprungliga myndigheten. 
+Proposition 2022/23:97 föreslår en ny regel som tillåter myndigheter att dela sekretessbelagda uppgifter med en individ eller en annan myndighet för teknisk bearbetning eller lagring på uppdrag av den ursprungliga myndigheten.
 
 Dock ska uppgifter inte delas om det anses olämpligt givet omständigheterna, och det föreslås även en begränsning av yttrandefriheten för dem som omfattas av sekretesskrav vid outsourcing av teknisk bearbetning eller lagring av uppgifter.
 

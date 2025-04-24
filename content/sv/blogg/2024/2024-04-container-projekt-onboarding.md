@@ -10,15 +10,14 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 TOC: "In this guide"
 sidebarlinkname: "GitHub repository"
 sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/project-onboarding"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 aliases:
-- /blogg/2024/2024-04-container-projekt-onboarding/
+  - /blogg/2024/2024-04-container-projekt-onboarding/
 ---
-
 
 {{< ingress >}}
 Welcome to Project Onboarding - a transformative approach to simplifying namespace management in Kubernetes for multi-tenant environments.
@@ -52,13 +51,13 @@ metadata:
 This YAML snippet exemplifies how a new namespace `glassproj-appname-acc` can be created with comprehensive configurations using labels. It's a testament to how Project Onboarding empowers teams to define complex settings effortlessly, focusing on application development and deployment.
 
 ### Key Features
+
 - **Simplified Namespace Management**: Streamline the creation and maintenance of Kubernetes namespaces using labels.
 - **Automation First**: Utilize the Namespace Configuration Operator to automate the enforcement of policies, roles, and quotas based on specified labels.
 - **Multi-Tenancy Made Easy**: Ensure secure and isolated multi-tenant environments with customizable network policies and resource quotas.
 - **OpenShift & Kubernetes Compatibility**: Designed for flexibility, Project Onboarding seamlessly integrates with both Kubernetes and OpenShift environments, supported by Helm and Kustomize for a smooth setup experience.
 
 Project Onboarding is more than just a tool; it's a new perspective on Kubernetes management, inviting you to rethink how namespaces are handled within your infrastructure. It's about enabling teams, enhancing security and promoting efficiency through intelligent automation.
-
 
 ## Namespace configurations
 
@@ -96,8 +95,6 @@ Here's a glimpse into how these resource definitions for Namespace Configuration
             └── GroupConfig
                 └── group-shared-namespace.yaml
 ```
-
-
 
 With Project Onboarding you only have to create a new namespace with labels that define everything. Below are a complete example for namespace [glassproj-appname-acc](namespace-configuration/examples/clustertypeZ/glassproj-appname-acc/namespace.yaml) with all possible labels currently possible.
 
@@ -293,7 +290,6 @@ Ensuring the security of critical system-owned namespaces, especially those pref
 Further strengthening this security posture, Kubernetes 1.29 introduces an advanced mechanism for in-process validation of requests to the Kubernetes API server, marking the "Validating Admission Policy" as a beta feature. This policy leverages the Common Expression Language (CEL) to articulate validation rules, allowing for highly configurable policies that can be tailored and parameterized according to the needs of cluster administrators. With the advent of the Validating Admission Policy, specific CEL scripts can be crafted to outright deny any modifications against system-owned namespaces, providing a robust layer of protection.
 
 Additionally, there are several tools available that specialize in validating Kubernetes API requests, including K-Rail, Kyverno, Kubewarden, and OPA/Gatekeeper. These tools offer versatile and powerful means to enforce security policies and validate requests, further ensuring that system-owned namespaces remain secure from unauthorized changes.
-
 
 ## Growing to manage more than just the namespace object
 

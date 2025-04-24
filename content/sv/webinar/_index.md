@@ -1,6 +1,6 @@
 ---
 title: "Safespring Webcasts"
-language: "Se"
+language: "sv"
 date: "2020-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"
 eventdatum: "10 nov. 2020"
@@ -20,8 +20,8 @@ english: ""
 formid: ""
 explorer: ""
 aliases:
-    - /event/
-    - /webinars/
-    - /webinar/
+  - /event/
+  - /webinars/
+  - /webinar/
 fullwidth: "x"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "With Safespring, Elastisys’ customers can focus on developing their digital services"
-language: "En"
+language: "en"
 date: 2023-09-18
 draft: false
 section: "Use case"
@@ -18,7 +18,7 @@ sidebartext: "Rob McCuaig shares insights about Elastisys' collaboration with Sa
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-- /en/services/case/elastisys/
+  - /en/services/case/elastisys/
 ---
 
 {{< ingress >}}

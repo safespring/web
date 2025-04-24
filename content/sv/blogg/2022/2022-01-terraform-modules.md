@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-01-terraform-modules
-    - /blogg/2022/2022-01-terraform-modules/
+  - /blogg/2022-01-terraform-modules
+  - /blogg/2022/2022-01-terraform-modules/
 ---
 
 {{< ingress >}}
@@ -24,7 +24,7 @@ In this blog post, we'll showcase just how easy it is by the example of our comm
 It has never been easier to provision compute and block storage resources in Safespring's infrastructure platform. Modules can be sourced directly from GitHub using a minimum of Terraform code.
 
 {{% note "Read more" %}}
-If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy: 
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
 
 1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
 2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
@@ -33,8 +33,8 @@ If you found this post useful, be sure to check out the rest of the series on us
 
 {{% /note %}}
 
-
 ## Terraform introduction
+
 Terraform has become the de-facto industry standard for «Infrastructure As Code - IAC». It is written in Golang, is open source, and you can download it as a single executable file from the [Terraform download page][tfdl].
 
 Terraform takes plain text files with «HCL - Hashicorp Configuration Language» as input and provides servers and storage as output. HCL is a declarative language, i.e., it does not specify any actions to be taken but rather a desired state - or outcome.
@@ -42,6 +42,7 @@ Terraform takes plain text files with «HCL - Hashicorp Configuration Language»
 The idea that configuration languages should be declarative, and that convergence of real state into the declared desired state, has become widely accepted over the last three decades and is based on ideas and research by [Mark Burgess during the early nineties and later][mbcfengine].
 
 ### Terraform providers
+
 The superpower of Terraform comes from all of it's providers. The Terraform providers are binary extensions of Terraform that, as the name indicates, «provide» resources of different kinds using the APIs of the cloud provider reflected by the extension's name.
 
 These extensions do all the heavy lifting towards the cloud provider APIs and ensure that the actual state (the cloud resources) is converged to what is specified as the desired state.
@@ -49,6 +50,7 @@ These extensions do all the heavy lifting towards the cloud provider APIs and en
 Terraform can be viewed as a desired state configuration agent for infrastructure. Every time it is run, it will turn the desired state into the actual state for cloud resources.
 
 ### Reducing the level of «lock-in»
+
 Terraform has tons of battle-tested providers available to use, thus easing the burden of provisioning cloud resources from all kinds of cloud APIs within the same (or different) configurations.
 
 Let's say you need resources in other clouds (or on-premise) for the same multi-cloud or hybrid environments. Then you can do that using one Terraform config, and you can even scale up and down the number of resources by changing some variables in your Terraform code.
@@ -56,6 +58,7 @@ Let's say you need resources in other clouds (or on-premise) for the same multi-
 Terraform is cloud-agnostic and thus is excellent insurance that your resources are as portable as possible, thus reducing the level of "lock-in" to a minimum.
 
 ## Examples using the Safespring Terraform modules
+
 The Safespring Openstack platform provides two categories of instance flavors:
 
 1. Flavors with local NVMe disk. Flavor names start with `l`, for example, `lm.small`.
@@ -64,16 +67,17 @@ The Safespring Openstack platform provides two categories of instance flavors:
 Thus the modules ar divided into to major types according to instance types with or without local disk. In addition, both instances with or without local disk can have a central disk (data disk) attached to it. That makes four modules in total:
 
 1. `v2-compute-local-disk`<br>
-Module for flavor with local disk and no central extra data disk.
+   Module for flavor with local disk and no central extra data disk.
 2. `v2-compute-central-disk`<br>
-Module for flavor with central disk and no central extra data disk
+   Module for flavor with central disk and no central extra data disk
 3. `v2-compute-local-disk-and-attached-disk`<br>
-Module for flavor with local disk and central extra data disk
+   Module for flavor with local disk and central extra data disk
 4. `v2-compute-central-disk-and-attached-disk`<br>
-Module for flavor with central disk and extra central data disk:
+   Module for flavor with central disk and extra central data disk:
 
 ### 1. The smallest possible example
- A local disk flavor instance with default values.
+
+A local disk flavor instance with default values.
 
 Parameters for flavor, image, name-prefix, suffix, count, and so on are the default unless specified. The only mandatory parameter is `key_pair_name` which can be a pre-existing key , or it can be created as part of the Terraform config. First, we'll create one with OpenStack CLI and reference it in the Terraform config.
 
@@ -86,7 +90,6 @@ First, we destroy what we created in the previous example. Then we add code to c
 The Safespring modules contain references to which providers/versions they depend on. When creating resources directly in the config (like the key pair in the example below), we must also include config for the OpenStack provider in the root module (main.tf)
 
 <script data-theme="solarized-dark" id="asciicast-P36Q7BaY9sktSzTbS7uhASjGj" src="https://asciinema.org/a/P36Q7BaY9sktSzTbS7uhASjGj.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
-
 
 ### 3. Now with security groups
 
@@ -103,9 +106,11 @@ Let's apply our newly added security group to our existing config without destro
 So how do I magically know which parameters are available for a module and what they do? Easy, I look at the `variables.tf` file in the module directory on GitHub. For instance, the `v2-compute-local-disk` module used so far (among others) is located on [Safespring Community at GitHub](https://github.com/safespring-community/terraform-modules/tree/main/v2-compute-local-disk). There are some `.tf` files in that directory. The `variables.tf` contains all the variables/parameters that the module accepts, their description, and default values.
 
 Lets try to use that to expand our configuration a bit more.
+
 <script data-theme="solarized-dark" id="asciicast-rfkA04x6QfSkGaIMJOS1rTGJE" src="https://asciinema.org/a/rfkA04x6QfSkGaIMJOS1rTGJE.js" data-autoplay="true" data-loop="true" data-speed="2" async></script>
 
 ### 5. Wrap up
+
 We have found out how little code is necessary to deploy groups of resources in the Safespring compute platform using a minimal amount of Terraform code that reuses Safespring specific modules directly from GitHub to specify the desired state of Safespring resources.
 
 Also, we have pointed to the modules' source code, which you can examine to see what they do and how they do it. The source code can inspire you to create your modules for your particular purpose.

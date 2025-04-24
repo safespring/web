@@ -1,6 +1,6 @@
 ---
 title: "A Flexible and Secure Cloud Service for Life Science Research"
-language: "En"
+language: "en"
 date: 2023-06-01
 draft: false
 darkmode: "off"
@@ -20,7 +20,7 @@ sidebarwhitepaper: ""
 toc: "In this article"
 service: "Safespring Private Cloud"
 aliases:
-- /en/services/case/scilifelab/
+  - /en/services/case/scilifelab/
 ---
 
 ##

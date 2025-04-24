@@ -1,6 +1,6 @@
 ---
 title: "Kontakt oss"
-language: "No"
+language: "nb"
 section: "Safespring"
 date: "2024-05-16"
 draft: false
@@ -9,7 +9,7 @@ tags: ""
 showthedate: false
 pageimage: ""
 aliases:
-- /no/kontakt/
+  - /no/kontakt/
 ---
 
 {{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="08-55 10 73 70" text="Ring oss" link="tel:+46855107370" >}}
@@ -19,6 +19,7 @@ aliases:
 {{< distance >}}
 
 ### Våre ansatte
+
 Her finner du kontaktinformasjon til noen av våre ansatte. Ikke nøl med å ta kontakt hvis du har spørsmål eller trenger hjelp med noe spesifikt.
 
 {{< contact picture="petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
@@ -29,6 +30,7 @@ Her finner du kontaktinformasjon til noen av våre ansatte. Ikke nøl med å ta 
 {{< distance >}}
 
 ### Adresser
+
 Nedenfor finner du adressene til våre kontorer i Sverige og Norge. Klikk på lenkene for å få veibeskrivelser via Google Maps.
 
 {{< contact title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
@@ -37,6 +39,7 @@ Nedenfor finner du adressene til våre kontorer i Sverige og Norge. Klikk på le
 {{< distance >}}
 
 ### Ledelse
+
 Vårt lederteam jobber for å sikre at vi leverer høy kvalitet og innovative tjenester. Her finner du kontaktinformasjon til vår ledelse.
 
 {{< flexbox >}}
@@ -51,6 +54,7 @@ Vårt lederteam jobber for å sikre at vi leverer høy kvalitet og innovative tj
 {{< distance >}}
 
 ### Styret
+
 Vårt styre består av erfarne medlemmer som styrer og veileder selskapets strategiske retning.
 
 {{< flexbox >}}
@@ -62,6 +66,7 @@ Vårt styre består av erfarne medlemmer som styrer og veileder selskapets strat
 {{< distance >}}
 
 ### Firmainformasjon
+
 Safespring leverer IT-tjenester som er effektive, sikre og kostnadseffektive. Her er grunnleggende informasjon om vårt selskap.
 
 {{< infobox >}}

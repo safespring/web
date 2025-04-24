@@ -3,14 +3,14 @@ title: "Konfiguration, skalning och containerlivscykel"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "3"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2023-09-18"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-3.jpeg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Vi diskuterar vikten av att separera hemliga och icke-hemliga konfigurationer samt hur du förbereder en komponent för att både skala ut och skala in på ett kontrollerat och bra sätt.'
+intro: "Vi diskuterar vikten av att separera hemliga och icke-hemliga konfigurationer samt hur du förbereder en komponent för att både skala ut och skala in på ett kontrollerat och bra sätt."
 sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
@@ -34,11 +34,13 @@ chapters:
     time: 591
     timeFormatted: "9:51"
 aliases:
-- /webinar/kubernetes-15-principles/avsnitt-3/
+  - /webinar/kubernetes-15-principles/avsnitt-3/
 ---
 
 ## Avsnitt 3
+
 ### Konfiguration, skalning och containerlivscykel
+
 I detta avsnitt fokuserar Gabriel Paues från Safespring och Lars Larsson från Elastisys på konfiguration och livscykelhantering av containers i Kubernetes. Du lär dig om vikten av att separera hemliga och icke-hemliga konfigurationer samt hur du förbereder en komponent för att både skala ut och skala in på ett kontrollerat och bra sätt.
 
 {{< inline "Princip 02" >}} Separate secret from non-secret configuration  

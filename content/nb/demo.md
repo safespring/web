@@ -3,7 +3,7 @@ title: "Oppdag en lokal skytjeneste i verdensklasse med våre eksperter"
 date: 2022-12-07T13:58:58+01:00
 draft: false
 Section: "Bestill demo"
-language: "No"
+language: "nb"
 intro: "Gratis demo av Safesprings skyplattform"
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
@@ -21,7 +21,7 @@ sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-- /no/demo/
+  - /no/demo/
 ---
 
 {{< ingress >}}

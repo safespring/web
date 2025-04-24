@@ -3,14 +3,14 @@ title: "Sammanfattning och nästa steg"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "7"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2023-09-18"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-7.jpeg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Vi sammanfattar och diskuterar ytterligare resurser och rekommendationer för att fortsätta förbättra dina Kubernetes- och molnbaserade applikationer'
+intro: "Vi sammanfattar och diskuterar ytterligare resurser och rekommendationer för att fortsätta förbättra dina Kubernetes- och molnbaserade applikationer"
 sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
@@ -37,9 +37,11 @@ chapters:
     time: 973
     timeFormatted: "16:13"
 aliases:
-- /webinar/kubernetes-15-principles/avsnitt-7/
+  - /webinar/kubernetes-15-principles/avsnitt-7/
 ---
 
 ## Avsnitt 7
+
 ### Sammanfattning och nästa steg
+
 I det sista avsnitt sammanfattar Gabriel Paues från Safespring och Lars Larsson från Elastisys allt material från webbserien och diskuterar ytterligare resurser och rekommendationer för att fortsätta förbättra dina Kubernetes- och molnbaserade applikationer. Vi täcker viktiga lärdomar och tips som hjälper dig att lyckas i din fortsatta resa med att designa, bygga och driftsätta skalbara och robusta applikationer på Kubernetes. Vi går även igenom vad vi anser är bra nästa steg för att öka dina kunskaper inom området.

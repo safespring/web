@@ -17,24 +17,24 @@ sidebarlinkname: "Join the Beta Program"
 sidebarlinkurl: "#interested-in-trying-out-the-platform"
 showthedate: false
 banner: "blue-hover-tech"
-language: "En"
+language: "en"
 aliases:
-- /en/services/containerplatform/
+  - /en/services/containerplatform/
 ---
 
 {{< ingress >}}
-    Safespring's Container Platform is a Managed Kubernetes service built on our powerful compute infrastructure, optimized for fast, reliable, and secure containerized applications. 
+Safespring's Container Platform is a Managed Kubernetes service built on our powerful compute infrastructure, optimized for fast, reliable, and secure containerized applications.
 {{</ ingress >}}
 
 Designed with scalability, compliance, and affordability in mind, our platform supports cloud-native applications in a secure, EU-sovereign environment.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-cubes" text="Based on CNCF projects" link="" color="#195F8C">}}
-    {{< icon-block icon="fak fa-safespring-icon" text="Powered by Safespring Compute" link="/en/services/compute/" color="#417DA5">}}
-    {{< icon-block icon="fas fa-sparkles" text="GPU for ML and AI" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-sync" text="Dynamic Scalability" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-forward" text="Quick start, Low entry point " link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-eu-flag" text="Jurisdictional Security" link="/en/gdpr/" color="#417DA5">}}
+{{< icon-block icon="fas fa-cubes" text="Based on CNCF projects" link="" color="#195F8C">}}
+{{< icon-block icon="fak fa-safespring-icon" text="Powered by Safespring Compute" link="/en/services/compute/" color="#417DA5">}}
+{{< icon-block icon="fas fa-sparkles" text="GPU for ML and AI" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-sync" text="Dynamic Scalability" link="" color="#32CD32">}}
+{{< icon-block icon="fas fa-forward" text="Quick start, Low entry point " link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-eu-flag" text="Jurisdictional Security" link="/en/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
 ## Safespring Container Platform: Open, Sovereign, and Self-service

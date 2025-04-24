@@ -1,6 +1,6 @@
 ---
 title: "Contact Us"
-language: "En"
+language: "en"
 section: "Safespring"
 date: "2024-05-16"
 draft: false
@@ -9,7 +9,7 @@ tags: ""
 showthedate: false
 pageimage: ""
 aliases:
-- /en/contact/
+  - /en/contact/
 ---
 
 {{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="+46 8-55 10 73 70" text="Call us" link="tel:+46855107370" >}}
@@ -19,6 +19,7 @@ aliases:
 {{< distance >}}
 
 ### Our Team
+
 Here you can find contact information for some of our team members. Don't hesitate to get in touch if you have any questions or need assistance with anything specific.
 
 {{< contact picture="petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
@@ -29,6 +30,7 @@ Here you can find contact information for some of our team members. Don't hesita
 {{< distance >}}
 
 ### Addresses
+
 Below you can find the addresses of our offices in Sweden and Norway. Click the links to get directions via Google Maps.
 
 {{< contact title="Sweden" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
@@ -37,6 +39,7 @@ Below you can find the addresses of our offices in Sweden and Norway. Click the 
 {{< distance >}}
 
 ### Management
+
 Our management team works to ensure we deliver high-quality and innovative services. Here you can find contact information for our management team.
 
 {{< flexbox >}}
@@ -51,6 +54,7 @@ Our management team works to ensure we deliver high-quality and innovative servi
 {{< distance >}}
 
 ### Board of Directors
+
 Our board consists of experienced members who guide and direct the company's strategic direction.
 
 {{< flexbox >}}
@@ -62,6 +66,7 @@ Our board consists of experienced members who guide and direct the company's str
 {{< distance >}}
 
 ### Company Information
+
 Safespring delivers IT services that are efficient, secure, and cost-effective. Here is basic information about our company.
 
 {{< infobox >}}

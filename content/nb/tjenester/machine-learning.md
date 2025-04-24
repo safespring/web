@@ -1,7 +1,7 @@
 ---
 title: "Maskinlæring og AI med GPU-ressurser"
 section: "Public Cloud"
-language: "No"
+language: "nb"
 cardtitle: "AI & ML-tjenester"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
@@ -15,7 +15,7 @@ sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
 aliases:
-- /no/tjenester/machine-learning/
+  - /no/tjenester/machine-learning/
 ---
 
 {{< ingress >}}

@@ -17,9 +17,9 @@ sidebarlinkname2: "Bestill demo"
 sidebarlinkurl2: "/demo/compute/"
 sidebarwhitepaper: ""
 startpage: "yes"
-Language: "No"
+language: "nb"
 aliases:
-- /no/tjenester/compliant-kubernetes/
+  - /no/tjenester/compliant-kubernetes/
 ---
 
 {{< ingress >}}

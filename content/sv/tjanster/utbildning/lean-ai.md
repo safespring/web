@@ -1,6 +1,6 @@
 ---
 title: "Lean Artificial Intelligence"
-language: "En"
+language: "en"
 date: 2019-10-01T16:07:06+02:00
 draft: true
 intro: "Vi tror att adoptera AI är en smidig startprocess. Som sådan handlar det lika mycket om människor som det handlar om teknik."
@@ -10,8 +10,9 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 aliases:
-- /tjanster/utbildning/lean-ai/
+  - /tjanster/utbildning/lean-ai/
 ---
+
 <div class="ingress"><p>Målet med Lean AI-programmet är att skapa processer och teknik som integrerar kunskap, processer och data i arbetsflöden som stöder kontinuerlig innovation.</p></div>
 
 Vi tror att adoptera AI är en smidig startprocess. Som sådan handlar det lika mycket om människor som det handlar om teknik.
@@ -24,9 +25,11 @@ Lean AI-konceptet är utformat för att påskynda adoption av AI genom att ge de
 Den tar itu med utmaningen att sätta och hålla verkliga AI i produktionen i sin kärna genom att ge organisationen både den kunskap, de verktyg och det stöd som behövs för att upprepade gånger lyckas med AI-projekt.
 
 ## Programöversikt
+
 Lean AI-programmet har tre huvudfaser
 
 ### 1. Lagbildnings- och inriktningsfas
+
 Denna fas introducerar Lean AI-processen och den associerade tekniken och anpassar lagmedlemskunskapen i kärnområdena cloud native computing och datavetenskap.
 Detta görs som en serie teman som vi går igenom under 6 veckor:
 
@@ -39,16 +42,19 @@ Detta görs som en serie teman som vi går igenom under 6 veckor:
 1. Open source-verktyg för ML-modellering från ett IT-perspektiv
 
 ### 2. Projektarbete
-Den centrala delen av programmet är att arbeta på ett “use case” som ett team, att ta ett “use case” från första data till en produktionstjänst. Teamet ska i samarbete med vårt team välja ett “use case” med teknisk komplexitet som är anpassad till gruppmedlemmarnas  erfarenheter.
+
+Den centrala delen av programmet är att arbeta på ett “use case” som ett team, att ta ett “use case” från första data till en produktionstjänst. Teamet ska i samarbete med vårt team välja ett “use case” med teknisk komplexitet som är anpassad till gruppmedlemmarnas erfarenheter.
 
 Målet är att få en holistisk förståelse för de processer som tar ett “use case” till produktionen.
 
 ### 3. Avslutande verkstad
+
 Programmet avslutas med en halvdag workshop som börjar med laget som presenterar projektet för kollegor / ledarskap i egen organisation.
 
 Vi engagerar oss sedan i fokuserade diskussioner om hur vi kan utnyttja den kunskap som erhölls i din organisation och på nästa steg i din AI-resa.
 
 ## Anmäl ditt intresse
+
 Skicka in en förfrågan så ta vi kontakt med er och sätter ihop ett program som passar er verksamhet och organiation.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>

@@ -4,7 +4,7 @@ episode: "4"
 series: "true"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-4.jpg"
 card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-4.jpg"
-language: "Se"
+language: "sv"
 date: "2021-12-16"
 publishDate: "2021-11-29"
 draft: false
@@ -18,30 +18,29 @@ sidebarlinkurl: ""
 sidebarlinkname: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-4/master.m3u8"
 chapters:
-- title: "Intro"
-  time: 0
-  timeFormatted: "00:00"
-- title: "Trender i rapporterna"
-  time: 249
-  timeFormatted: "04:09"
-- title: "eSams rapport"
-  time: 350
-  timeFormatted: "05:50"
-- title: "It-driftsutredningen"
-  time: 970
-  timeFormatted: "16:10"
-- title: "Gaia-X"
-  time: 2372
-  timeFormatted: "39:32"
-- title: "Trenderna 2022"
-  time: 2587
-  timeFormatted: "43:07"
+  - title: "Intro"
+    time: 0
+    timeFormatted: "00:00"
+  - title: "Trender i rapporterna"
+    time: 249
+    timeFormatted: "04:09"
+  - title: "eSams rapport"
+    time: 350
+    timeFormatted: "05:50"
+  - title: "It-driftsutredningen"
+    time: 970
+    timeFormatted: "16:10"
+  - title: "Gaia-X"
+    time: 2372
+    timeFormatted: "39:32"
+  - title: "Trenderna 2022"
+    time: 2587
+    timeFormatted: "43:07"
 aliases:
-    - /webinar/gdpr-fireside-chat/forth-fireside-chat-it-sakerhetsbolaget/
-    - /webinar/forth-fireside-chat-it-sakerhetsbolaget/
-    - /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-4/
+  - /webinar/gdpr-fireside-chat/forth-fireside-chat-it-sakerhetsbolaget/
+  - /webinar/forth-fireside-chat-it-sakerhetsbolaget/
+  - /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-4/
 ---
-
 
 {{< ingress>}}
 Vad säger IT-driftsutredningen, eSam och Skatteverket om molntjänster? Var med och diskutera med oss!

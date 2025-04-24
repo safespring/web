@@ -1,6 +1,6 @@
 ---
 title: "Cloud Image Service"
-language: "En"
+language: "en"
 cardtitle: "Cloud Images"
 cardicon: "fa-solid fa-compact-disc"
 cardcolor: "#195F8C"
@@ -44,7 +44,7 @@ The image service base offer is the image service itself, which stores images fo
 Safespring provides the following public cloud images, based on upstream project’s publication. They are regularly updated with newer releases within their major versions.
 
 | OS                             | Version               |
-|--------------------------------|-----------------------|
+| ------------------------------ | --------------------- |
 | CentOS                         | 7                     |
 | CentOS                         | 8                     |
 | Cirros                         | 0.3.6                 |
@@ -58,5 +58,3 @@ Safespring provides the following public cloud images, based on upstream project
 | Ubuntu                         | 18.04 (Bionic Beaver) |
 | Ubuntu                         | 20.04 (Focal Fossa)   |
 | Scaleout STACKn                | 2020.6                |
-
-

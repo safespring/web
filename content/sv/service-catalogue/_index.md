@@ -4,11 +4,11 @@ section: "Safespring Cloud Platform"
 intro: "GDPR compliant, Nordic provider selling great cloud solutions, not data."
 date: "2023-02-28"
 draft: false
-language: "En"
+language: "en"
 socialmedia: "/safespring-start.jpg"
 nosidebar: "none"
 fullwidth: "x"
-language: "En"
+language: "en"
 nolist: "x"
 aliases:
 - /service-catalogue/

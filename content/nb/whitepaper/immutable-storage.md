@@ -14,11 +14,10 @@ card: "safespring_card_38.jpg"
 eventbild: "safespring_background_38.jpg"
 socialmediabild: "safespring_social_38.gif"
 toc: "Table of Contents"
-Language: "No"
+language: "nb"
 aliases:
-- /no/whitepaper/immutable-storage/
+  - /no/whitepaper/immutable-storage/
 ---
-
 
 {{< ingress >}}
 In this solution brief, we'll walk through the Safespring Storage service based on S3 object storage. With immutable objects, Safespring Storage is a great way of creating an offside backup that is secure and reliable.
@@ -28,9 +27,9 @@ To backup your data is important in all IT environments. Most modern backup syst
 
 By using the solution described in this brief, the organization can achieve these benefits:
 
-* A modern and complete backup solution that is easy to manage.
-* A secure off-site storage for critical backup data.
-* A cost efficient solution that meet all security requirements from a demanding organisation.
+- A modern and complete backup solution that is easy to manage.
+- A secure off-site storage for critical backup data.
+- A cost efficient solution that meet all security requirements from a demanding organisation.
 
 ## The 3-2-1 rule
 

@@ -1,6 +1,6 @@
 ---
 title: "Safespring S3: Skalerbar og høyytelses objektlagring"
-language: "No"
+language: "nb"
 documentation: "Storage"
 cardtitle: "Lagring i stor skala"
 cardicon: "fak fa-safespring-s3"
@@ -26,14 +26,13 @@ aliases:
     - /no/tjenester/storage/
 ---
 
-
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Europeiske sikkerhets­verdier" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-layer-group" text="Skalerbar lagring" link="" color="#417DA5">}}
-    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Høy ytelse" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-sync-alt" text="Høy tilgjengelighet" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnadseffektivt" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-shield-alt" text="Europeiske sikkerhets­verdier" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-layer-group" text="Skalerbar lagring" link="" color="#417DA5">}}
+{{< icon-block icon="fa-solid fa-tachometer-alt" text="Høy ytelse" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-sync-alt" text="Høy tilgjengelighet" link="" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnadseffektivt" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## S3 Storage – lagring i skyen
@@ -49,6 +48,7 @@ Skybaserte applikasjoner er avhengige av dataaksess med lav forsinkelse og raske
 I tillegg tilbyr vår løsning enkel integrasjon med eksisterende S3-verktøy og applikasjoner, uten behov for endringer. Med bred applikasjonsstøtte er Safespring Storage kompatibel med populære programmer som Veeam Backup, Nextcloud, Cyberduck og flere.
 
 ## Safespring Storage finnes i to versjoner
+
 Trenger applikasjonen din rask tilgang til lagrede data, eller ser du etter en langsiktig lagringsløsning for sikkerhetskopiering utenfor stedet?
 
 {{< icon-block-horisontal icon="fa-solid fa-rabbit-running" color="#3C9BCD" text="S3 Standardlagring" description="Vår standard S3-tjeneste med lav forsinkelse og høy ytelse. Optimalisert for applikasjoner som krever rask og pålitelig dataaksess." >}}
@@ -82,13 +82,13 @@ Oppfyll regulatoriske krav ved å lagre og arkivere data sikkert med uforanderli
 ## Kom i gang med våre konfigurasjonsguider
 
 {{< icon-block-small-container >}}
-    {{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/s3fs" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/cloudberry" color="#417DA5">}}
-    {{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/cyberduck" color="#3C9BCD">}}
-    {{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/duck-cli" color="#3C9BCD">}}
-    {{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/minio-client" color="#FA690F">}}
-    {{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/aws-cli" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/nextcloud-s3" color="#32cd32">}}
+{{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/s3fs" color="#32cd32">}}
+{{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/cloudberry" color="#417DA5">}}
+{{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/cyberduck" color="#3C9BCD">}}
+{{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/duck-cli" color="#3C9BCD">}}
+{{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/minio-client" color="#FA690F">}}
+{{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/aws-cli" color="#32cd32">}}
+{{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/nextcloud-s3" color="#32cd32">}}
 {{< /icon-block-small-container >}}
 
 ## Ofte stilte spørsmål

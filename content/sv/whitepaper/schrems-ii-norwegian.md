@@ -14,11 +14,10 @@ sidebarlinkurl: ""
 card: "safespring_card_33.jpg"
 socialmediabild: "safespring_social_33.jpg"
 toc: "Innhold"
-language: "No"
+language: "nb"
 aliases:
-- /whitepaper/schrems-ii-norwegian/
+  - /whitepaper/schrems-ii-norwegian/
 ---
-
 
 {{< ingress >}}
 Denne stortingsmeldingen tar for seg forholdene etter kjennelsen og anbefalinger til organisasjoner innen EU, den er delt inn i tre kapitler.{{< /ingress >}}
@@ -65,7 +64,6 @@ Dataoverføringsavtaler kan være standardiserte personvernbestemmelser (GDPR ar
 Standardiserte personvernbestemmelser skal gi et i hovedsak likeverdig beskyttelsesnivå som den interne europeiske lovgivningen.
 {{% /accordion %}}
 
-
 ### EU-domstolens beslutt
 
 Eu-domstolen har uttrykkelig besluttet
@@ -77,7 +75,6 @@ Eu-domstolen har uttrykkelig besluttet
 - At tilsynsmyndigheter plikter å agere når det ikke er mulig å etablere en i hovedsak likeverdig beskyttelse, særlig når en beslutning om tilstrekkelig beskyttelsesnivå mangler (C-311/18 paragraf 120-121)
 - At en beslutning fra EU-kommisjonen om standardavtaleklausuler, ikke påvirker forpliktelser som ansvarlige for personopplysninger og mottakere av personopplysninger har til å avbryte overføringer, hvis det viser seg at beskyttelsen som klausulene gjelder, ikke kan realiseres (C-311/18 paragraf 142).
 - At EU-kommisjonens beslutning om tilstrekkelig beskyttelsesnivå, Privacy Shield, er ugyldig (C-311/18 paragraf 201)
-
 
 EU-domstolen har i hovedsak bekreftet konklusjonene som allerede framgikk av Safesprings hvitebok fra 2018 om hvordan den usikre situasjonen pga CLOUD Act og GDPR bør håndteres («Hur du hanterar det osäkra läget i och med CLOUD Act och GDPR»). Mens det økonomiske stresset forårsaket av ytterligere spenninger mellom USA og EU i personvernspørsmål, ikke har avtatt verken på grunn av de politiske reaksjonene på Schrems I eller nå Schrems-II-dommen, er den juridiske situasjonen klarere nå.
 
@@ -110,7 +107,6 @@ En viktig forskjell er at skymarkedet allerede i stor grad utgår fra grenseover
 
 Et tysk prosjekt som prøver å sammenføre erfaringer fra telekomindustrien med fordelene fra skyindustrien, er GAIA-X6. Det er et rammeverk for kostnadsdeling mellom aktører med geografisk tilknytning og som tilbyr interoperable tjenester.7 I Frankrike har man i nesten ti år framhevet at anskaffelsesinstrument kan være særlig egnet for å styrke europeiske småbedrifters rolle i digitale økosystemer, med særlig vekt på nettopp løsninger for åpne data og skytjenester.(8)
 
-
 ### Fleksibilitet krever økt ansvar
 
 Skytjenester betyr i praksis at data som en anskaffende organisasjon har ansvaret for, og applikasjoner som bruker slike data som input, vil befinne seg på infrastruktur som ikke administreres av organisasjonen selv. Uansett hvilket verdiøkningsnivå organisasjoner velger til skytjenestene sine, er mange av stordriftsfordelene avhengige av at administratøren for infrastrukturen til skytjenesten har tilgang til nok informasjon om dataene som behandles, for at det skal være mulig å gjøre ressursene tilgjengelige og tilby det sikkerhetsnivået som kunden krever. Det er i dette tekniske kravet som anskaffende organisasjoners plikter i henhold til Schrems II-dommen i EU-domstolen oppstår.
@@ -135,10 +131,9 @@ Det betyr i praksis at anskaffende organisasjoner bør begrense sine valg av tje
 4. Kontroller at underleverandøren tilbyr dokumentasjon for de åpne standardene og spesifikasjonene som underleverandøren har brukt til infrastrukturløsningene sine. Kontroller også at tjenesteleverandøren har forsikret seg om at de har mulighet til å migrere til en annen underleverandør ved behov.
 5. Kontroller om enten selve tjenesteleverandøren eller underleverandøren til tjenesteleverandøren har sin juridiske base i et tredjeland. Vurder om dette kan medføre at myndighetene i tredjelandet kan pålegge enten underleverandøren eller tjenesteleverandøren å overlevere opplysninger til myndighetene i tredjelandet.
 
-
 ### Åpenhet er en beskyttelse mot politisk instabilitet
 
-På både europeisk(14)  och svensk(15)  nivå har det understrukits att starkare fokus på öppet tillgänglig programkod och öppna standarder skapar både insyn och överskådlighet på det sätt som den europeiska dataskyddsrätten nu förefaller kräva. Svenska myndigheter rekommenderas av Myndigheten för digitalisering att publicera all egenproducerad kod under öppna mjukvarulicenser.(16)
+På både europeisk(14) och svensk(15) nivå har det understrukits att starkare fokus på öppet tillgänglig programkod och öppna standarder skapar både insyn och överskådlighet på det sätt som den europeiska dataskyddsrätten nu förefaller kräva. Svenska myndigheter rekommenderas av Myndigheten för digitalisering att publicera all egenproducerad kod under öppna mjukvarulicenser.(16)
 
 Öppna standarder och öppna kodbaser är inte rekommendationer som härrör från den europeiska dataskyddsrätten. Däremot skapar de större rörlighet för slutkonsumentBåde på europeisk14 og svensk15 nivå har man understreket at mer fokus på åpen tilgjengelig programkode og åpne standarder gir både innsyn og oversiktlige forhold, slik som det nå ser ut til at de europeiske personvernreglene vil kreve. Svenske myndigheter anbefales av Myndigheten for digitalisering å offentliggjøre all egenprodusert kode under åpne programvarelisenser.16
 
@@ -160,29 +155,28 @@ Organisasjoner i Norge kan per i dag være forhindret fra å velge skytjenester 
 - Se over hvordan den egne organisasjonen allerede jobber med eksisterende retningslinjer fra Statens inköpscentral, eSam og ISA2 (for eksempel ved å evaluere pågående prosjekter med utgangspunkt i eksisterende anbefalinger).
 - Aktivt engasjere regjeringen i utviklingen av en svensk plan for skytjenester som er forenelig med europeisk rett.
 
-
 ## Kildehenvisning
 
 {{< ingress >}}
 Hviteboken er skrevet av Amelia Andersdotter. Safespring tilbyr svenskproduserte skytjenester.
 {{< /ingress >}}
 
-1. 1.	ECLI:EU:C:2020:559
-2.	Safespring, hvitebok: Hur du hanterar det osäkra läget i och med CLOUD Act och GDPR, fra 2018.
-3.	EU-kommisjonen, 10. augusti 2020, Joint Press Statement from European Commissioner for Justice Didier Reynders and U.S. Secretary of Commerce Wilbur Ross. https://ec.europa.eu/info/news/joint-press-statement-european-commissioner-justice-didier-reynders-and-us-secretary-commerce-wilbur-ross-7-august-2020-2020-aug-07_en
-4.	Statens servicecenter: En gemensam statlig molntjänst för myndigheternas it-drift, delrapport 2017.
-5.	Jfr OpenStack Foundation (OSF) och Cloud Native Computing Foundation (CNCF).
-6.	GAIA-X: a federated data infrastructure for Europe. https://www.data-infrastructure.eu/GAIAX/Navigation/EN/Home/home.html
-7.	Interoperabilitet: samverkan mellan olika komponenter. Se også SOU 2007:47, s. 133 ff.
-8.	Rapport d’Information No 443, Union européenne -- colonie du monde numérique ?, 20 mars 2013, s. 115-116.
-9.	SOU 2007:47, Den osynliga infrastrukturen, s. 64.
-10.	Jfr. fotnote 2 over.
-11.	Både Safe Harbor-vedtaket fa 2001 og Privacy Shield-vedtaket fra 2016 har EU-domstolen kjent ugyldige.
-12.	Jfr kommittéedirektiv 2019:64 med tillegg i dir. 2020:73.
-13.	Se Rekommendationer för organisation i fotnote 2 over.
-14.	C(2018) 7118, European Commission Digital Strategy - A digitally transformed, user-focused and data-driven Commission, 2018.
-15.	E-delegationen, Vägledning för digital samverkan, Version 4.1, 2015-05-28.
-16.	DIGG, 2019-136, Policy för utveckling av programvara.
-17.	Spørsmål 5 i del II må egentlig alltid besvares med «ja» ved bruken av amerikanske skytjenester, så lenge USA ikke endrer sin lovgivning.
+1. 1. ECLI:EU:C:2020:559
+2. Safespring, hvitebok: Hur du hanterar det osäkra läget i och med CLOUD Act och GDPR, fra 2018.
+3. EU-kommisjonen, 10. augusti 2020, Joint Press Statement from European Commissioner for Justice Didier Reynders and U.S. Secretary of Commerce Wilbur Ross. https://ec.europa.eu/info/news/joint-press-statement-european-commissioner-justice-didier-reynders-and-us-secretary-commerce-wilbur-ross-7-august-2020-2020-aug-07_en
+4. Statens servicecenter: En gemensam statlig molntjänst för myndigheternas it-drift, delrapport 2017.
+5. Jfr OpenStack Foundation (OSF) och Cloud Native Computing Foundation (CNCF).
+6. GAIA-X: a federated data infrastructure for Europe. https://www.data-infrastructure.eu/GAIAX/Navigation/EN/Home/home.html
+7. Interoperabilitet: samverkan mellan olika komponenter. Se også SOU 2007:47, s. 133 ff.
+8. Rapport d’Information No 443, Union européenne -- colonie du monde numérique ?, 20 mars 2013, s. 115-116.
+9. SOU 2007:47, Den osynliga infrastrukturen, s. 64.
+10. Jfr. fotnote 2 over.
+11. Både Safe Harbor-vedtaket fa 2001 og Privacy Shield-vedtaket fra 2016 har EU-domstolen kjent ugyldige.
+12. Jfr kommittéedirektiv 2019:64 med tillegg i dir. 2020:73.
+13. Se Rekommendationer för organisation i fotnote 2 over.
+14. C(2018) 7118, European Commission Digital Strategy - A digitally transformed, user-focused and data-driven Commission, 2018.
+15. E-delegationen, Vägledning för digital samverkan, Version 4.1, 2015-05-28.
+16. DIGG, 2019-136, Policy för utveckling av programvara.
+17. Spørsmål 5 i del II må egentlig alltid besvares med «ja» ved bruken av amerikanske skytjenester, så lenge USA ikke endrer sin lovgivning.
 
 {{< accordion-script >}}

@@ -1,6 +1,6 @@
 ---
 title: "Backup as a service – BaaS"
-language: "En"
+language: "en"
 cardtitle: "Backup"
 cardicon: "fa-solid fa-cloud-arrow-up"
 cardcolor: "#195F8C"
@@ -20,7 +20,6 @@ toc: ""
 aliases:
 - /service-catalogue/backup/
 ---
-
 
 {{< ingress >}}
 Cloud backup services contains the following categories:
@@ -51,7 +50,7 @@ Encryption is only as secure as the encryption key management, and the backup op
 For all levels it is possible to schedule up to four (4) backups per day. There are several predefined start times to choose from (every second hour).
 
 | Product Code   | Type     | Site | Version                |
-|----------------|----------|------|------------------------|
+| -------------- | -------- | ---- | ---------------------- |
 | BAAS-on.demand | OnDemand | STO1 | Spectrum Protect 7 & 8 |
 | BAAS-small     | Small    | STO1 | Spectrum Protect 7 & 8 |
 | BAAS-large     | Large    | STO1 | Spectrum Protect 7 & 8 |
@@ -59,13 +58,13 @@ For all levels it is possible to schedule up to four (4) backups per day. There 
 #### Schedule (file systems)
 
 | Schedule            | Description                                                                          |
-|---------------------|--------------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------------------------------------ |
 | Incremental forever | Incremental backup of file systems. One schedule every two (2) hours to choose from. |
 
 #### Schedule (application)
 
 | Schedule                | Description                                                                                         |
-|-------------------------|-----------------------------------------------------------------------------------------------------|
+| ----------------------- | --------------------------------------------------------------------------------------------------- |
 | Full backup             | Full backup of the application. One schedule every two (2) hours to choose from.                    |
 | Incremental/ Log backup | Incremental or log backup depending of application. One schedule every one (1) hour to choose from. |
 
@@ -76,7 +75,7 @@ In addition to the standard retention policies, we offer a number of version lim
 These policies have the advantage of offering a price cap. For example. if a five-version policy is chosen the amount stored (and billed) will never exceed five (5) times the client size. In most cases the amount stored will be less, since only changed files are backed up. A file that never changes will still only be one version in the backup system.
 
 | Retention | Description                                                                    |
-|-----------|--------------------------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------ |
 | 30 days   | Keeps all backup data for 30 days, up to five (5) versions per file are kept.  |
 | 30 days   | Keeps all backup data for 30 days, up to ten (10) versions per file are kept.  |
 | 90 days   | Keeps all backup data for 90 days, up to ten (10) versions per file are kept.  |
@@ -85,18 +84,20 @@ These policies have the advantage of offering a price cap. For example. if a fiv
 
 It is possible to request other version limited policies if needed (e.g. 17 or 42 versions).
 
-
 ## Snapshot (image) backup for virtual servers
-The same encryption and scheduling policies applies to snapshots for virtual servers. 
+
+The same encryption and scheduling policies applies to snapshots for virtual servers.
 
 ### Retention Policy
+
 | Retention | Description                                                                                                 |
-|-----------|-------------------------------------------------------------------------------------------------------------|
+| --------- | ----------------------------------------------------------------------------------------------------------- |
 | 14 days   | Keeps all backup data for 14 days, all versions are kept. This is the equivalent of ten (10) business days. |
 
 ## BaaS Professional Services
 
 ### General Backup Consultancy
+
 A professional consultancy service offering is available. This service can be delivered on-site, or remotely depending on the work to be done. This service can be used for, but not limited to:
 
 - Design of more complex backup/restore scenarios
@@ -108,7 +109,7 @@ A professional consultancy service offering is available. This service can be de
 - Restore testing
 
 | Product Code               | Professional Service                                                             |
-|----------------------------|----------------------------------------------------------------------------------|
+| -------------------------- | -------------------------------------------------------------------------------- |
 | BAASPS-generic.consultancy | General backup consultancy service to configure certain applications and similar |
 | BAASPS-migration           | Backup migration and validation service                                          |
 | BAASPS-offsite             | Offsite backup target services                                                   |
@@ -118,23 +119,25 @@ A professional consultancy service offering is available. This service can be de
 | BAASPS-exit                | Exit backup services                                                             |
 
 ### Backup Migration and Validation Services
+
 Safespring will assist the Customer in converting data from old/existing backup systems to Safespring's cloud backup service. After backups are migrated Safespring assists the Customer in validation of all transferred data.
 
 ### Offsite Backup Target Services
+
 Safespring will assist the Customer in setting up off-site equipment and mobile devices to make backup to Safespring's backup service BaaS.
 
 ### Restore Test Services
+
 Safespring assist the customers to verify that all test restoration jobs work as they should. Safespring uses restore testing software to restore any type of machine into a virtual machine just to verify.
 
 ### Backup Onboarding Program
+
 General consultant assistance helping the customers with onboarding processes, and how they migrate to Safespring's cloud services. Safespring assists the customer according to customers own competence and demands.
 
 ### Backup Feature and Services Additions
+
 General consultant assistance helping the customers to understand how to add new features or services to existing cloud services.
 
 ### Exit Backup Services
+
 Safespring will assist the Customer with transferring stored backup data from Safespring to the Customer after expiring of contract.
-
-
-
-

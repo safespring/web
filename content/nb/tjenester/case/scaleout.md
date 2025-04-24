@@ -1,6 +1,6 @@
 ---
 title: "Scaleout Systems leverer GDPR-sikker maskinlæring med Safespring"
-language: "No"
+language: "nb"
 date: 2023-10-16
 draft: false
 section: "Use Case"
@@ -19,7 +19,7 @@ saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
 aliases:
-- /no/tjenester/case/scaleout/
+  - /no/tjenester/case/scaleout/
 ---
 
 {{< ingress >}}

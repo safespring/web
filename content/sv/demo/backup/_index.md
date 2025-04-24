@@ -1,13 +1,13 @@
 ---
 title: "Introduktion till Safespring Backup"
-language: "Sv"
+language: "sv"
 date: "2025-02-24"
 publishDate: "2025-02-24"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/demo-episode-series.webp"
 socialmediabild: ""
-intro: 'Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data.'
+intro: "Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data."
 partner: ""
 audience: "saas"
 explorer: ""
@@ -18,9 +18,8 @@ sidebarimage: ""
 nosidebar: "invisible"
 toc: "Episode"
 aliases:
-- /demo/backup/
+  - /demo/backup/
 ---
-
 
 # Boka in ett möte med Gabriel!
 
@@ -36,8 +35,6 @@ At Safespring, we provide a cloud service that supports your business's need for
 - A walkthrough of how our platform can support your business's digital transformation
 - Guidance on optimizing your cloud strategy to better suit your specific business needs
 
-
-
 {{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
 
 {{< distance >}}
@@ -47,7 +44,6 @@ At Safespring, we provide a cloud service that supports your business's need for
 {{< ingress >}}
 Through focused demonstrations, we cover essential tasks and configurations necessary for managing and optimizing the Safespring OpenStack environment.
 {{< /ingress >}}
-
 
 ### Series Overview
 

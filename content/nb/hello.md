@@ -1,6 +1,6 @@
 ---
 title: "Hei, hyggelig at du vil vite mer om Safespring"
-language: "No"
+language: "nb"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Bestill demo"
@@ -18,7 +18,7 @@ sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/no/kontakt"
 saas: ""
 aliases:
-- /no/hello/
+  - /no/hello/
 ---
 
 {{< ingress >}}

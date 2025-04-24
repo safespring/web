@@ -1,7 +1,6 @@
 ---
-
 title: "Strengthen Your Business with Safespring Compute"
-language: "En"
+language: "en"
 documentation: "Compute"
 cardtitle: "Compute"
 cardicon: "fa-solid fa-server"
@@ -19,9 +18,9 @@ sidebarlinkname2: "Compute Pricing"
 sidebarlinkurl2: "/en/price/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
 aliases:
-    - /compute/
-    - /safespring-compute/
-    - /en/services/compute/
+  - /compute/
+  - /safespring-compute/
+  - /en/services/compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
@@ -40,12 +39,12 @@ With Safespring, you can create, start, and stop virtual machines with just a fe
 {{< distance >}}
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-lock-open" text="No Vendor Lock-In" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimized" link="/en/services/containerplatform/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-code" text="Open Source" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-door-open" text="Open Standards" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-webhook" text="Powerful Automation" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-lock-open" text="No Vendor Lock-In" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimized" link="/en/services/containerplatform/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-code" text="Open Source" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-door-open" text="Open Standards" link="" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-webhook" text="Powerful Automation" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< distance >}}
@@ -55,7 +54,6 @@ With Safespring, you can create, start, and stop virtual machines with just a fe
 We offer the highest level of security and availability with our data centers located within Sweden's borders. Safespring Compute is flexible, automated, and simplifies compliance with data storage laws and regulations. All data is stored on encrypted hard drives.
 
 With Safespring Compute, you gain access to market-leading cloud technology directly from our secure and reliable data centers in Sweden. Your data stays within the country's borders, providing extra data security.
-
 
 {{% accordion title="VPN Option" %}}
 
@@ -77,12 +75,15 @@ At Safespring, we are proud to offer these advanced VPN capabilities integrated 
 {{< distance >}}
 
 ### Collaborate Effectively with Safespring Compute
+
 Our service facilitates collaboration between different departments or groups, simplifies IT management, and brings efficiency to your organization.
 
 ### Built on Open Source
+
 Safespring Compute is built on Open Source, allowing companies and organizations to share in product development and innovation. This benefits all parties - companies, organizations, and end-users.
 
 ### OpenStack and Kubernetes
+
 OpenStack and Kubernetes make it easy to automate and scale your application setup. No matter where you choose to run your applications, Safespring offers a unified and seamless solution.
 
 Although our platform is based on open source and Linux, we also support Windows on our virtual machines. Safespring collaborates with CloudBase to offer ready-to-use Windows images, so you can get started quickly.

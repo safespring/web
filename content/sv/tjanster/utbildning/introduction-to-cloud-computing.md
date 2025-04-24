@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Cloud Computing"
-language: "En"
+language: "en"
 date: 2019-10-01T16:07:06+02:00
 draft: false
 intro: "For technical professionals that wants to learn how to build infrastructure for the cloud."
@@ -10,24 +10,29 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 aliases:
-- /tjanster/utbildning/introduction-to-cloud-computing/
+  - /tjanster/utbildning/introduction-to-cloud-computing/
 ---
 
 ## Description
+
 For management or tech savvy employees that wants to get a hands-on experience of cloud computing and understand the cloud landscape. We dig into enabling technologies and surrounding strategic concerns when deploying to the cloud. This course can help you get started with public cloud providers and understand the components needed to run your workloads in the cloud.
 
 This course can be divided into several lectures. Download the course description for more information.
 
 ### Level
+
 Beginner (with some technical knowledge).
 
 ### Who should attend?
+
 Software Developers, Technical Project Managers, Software Architects, Operations Support professionals, Deployment engineers, IT Managers, Development Managers, Technical Managers, Line managers, QA and Testing professionals, Domain Experts, etc. From all industry sectors.
 
 ### Duration
+
 4 days (or 2 + 2 days).
 
 ### Content
+
 8-9 lectures + 1 Workshop
 
 <div class="accordion-box">
@@ -96,8 +101,8 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
-
 ## How to apply
+
 Let us know that you're interested in the course "Introduction to Cloud Computing". Fill in the form below and we'll contact you.
 
 <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>

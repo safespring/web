@@ -1,6 +1,6 @@
 ---
 title: "En fleksibel og sikker skyløsning for forskning innen livsvitenskap "
-language: "No"
+language: "nb"
 date: 2023-06-01
 draft: false
 darkmode: "off"
@@ -20,7 +20,7 @@ sidebarwhitepaper: ""
 service: "Safespring Private Cloud"
 toc: "I denne artikkelen"
 aliases:
-- /no/tjenester/case/scilifelab/
+  - /no/tjenester/case/scilifelab/
 ---
 
 ##

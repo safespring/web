@@ -3,14 +3,14 @@ title: "Hantering av Pods, Deployments & StatefulSets"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "2"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2023-09-18"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-2.jpeg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Vi ger dig en grund i att hantera applikationer som involverar både tillståndslösa och tillståndsbaserade komponenter.'
+intro: "Vi ger dig en grund i att hantera applikationer som involverar både tillståndslösa och tillståndsbaserade komponenter."
 sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
@@ -40,11 +40,13 @@ chapters:
     time: 672
     timeFormatted: "11:12"
 aliases:
-- /webinar/kubernetes-15-principles/avsnitt-2/
+  - /webinar/kubernetes-15-principles/avsnitt-2/
 ---
 
 ## Avsnitt 2
+
 ### Hantering av Pods, Deployments och StatefulSets
+
 Gabriel Paues från Safespring och Lars Larsson från Elastisys ger dig en djupare förståelse för hur Pods, Deployments och StatefulSets fungerar, och hur du kan använda dem för att bygga och skala dina applikationer på Kubernetes. Efter att ha tittat på detta avsnitt kommer du att ha en stark grund i att hantera applikationer som involverar både tillståndslösa och tillståndsbaserade komponenter.
 
 {{< inline "Princip 01" >}} Using Controllers for Pods  

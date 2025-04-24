@@ -15,7 +15,7 @@ background: "safespring-openshift.png"
 socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Table of Contents"
-language: "En"
+language: "en"
 aliases:
 - /solution-brief/openshift-en/
 ---
@@ -46,28 +46,30 @@ On Safespring's Openstack-based infrastructure platform, you can quickly deploy 
 
 {{< 2calltoaction "Download OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
-
 ### You need this to get started
 
 - A project on [Safespring Compute](/en/services/compute/) with the following resources:
-    - Memory: 60GB
-    - VCPUs: 16
-    - Security group rules: 40
-    - Storage access to S3 in STO2 site
-    - A liveDNS domain @ gandi.net
-    - An API key for your gandi.net user
+  - Memory: 60GB
+  - VCPUs: 16
+  - Security group rules: 40
+  - Storage access to S3 in STO2 site
+  - A liveDNS domain @ gandi.net
+  - An API key for your gandi.net user
 
 ### The Terraform module
+
 The core of our developed tool is the Terraform module, which provides all the necessary resources that an OKD cluster needs to assemble itself, ie. calculate nodes with different roles (boot, control plane, worker), block storage, security, groups, networks, DNS records, key pairs, and so on. The module is as general as it can be. The installation tools use the terraform module for all infrastructure provisioning. The module is called directly to GitHub in the installation tools, in the cluster configuration template `cluster.tf.js`.
 
 ### Input parameters
+
 The cluster setup needs a large amount of input parameters. You can choose to provide these parameters to suit your needs, but we created an abstraction layer withe sane default values for many of the parameters to make this as easy as possible. The tool we have developed ensures that you have all the dependencies in place and make the necessary configuration from templates.
 
 The tool takes a few inputs such as cluster name, DNS domain, S3 bucket (for the large ignition file for the start node) and converts these to useful parameters for the Terraform module. A template-generated `cluster.tf` contains these parameters and references to the module. The file `cluster.tf` is used for the provisioning.
 
 ## The result
+
 The installation provides a minimal OKD cluster with control plane nodes and two working nodes with a minimum instance size. You can override the instance size and other parameters (such as the number of different nodes) through the `settings.yml` file.
 
 {{< 2calltoaction "Download OKD-installer" "https://github.com/safespring-community/utilities/tree/main/okd" >}}
 
-[1]:https://github.com/safespring-community/utilities/tree/main/okd
+[1]: https://github.com/safespring-community/utilities/tree/main/okd

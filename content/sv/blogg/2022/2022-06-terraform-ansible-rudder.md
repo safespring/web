@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-06-terraform-ansible-rudder
-    - /blogg/2022/2022-06-terraform-ansible-rudder/
+  - /blogg/2022-06-terraform-ansible-rudder
+  - /blogg/2022/2022-06-terraform-ansible-rudder/
 ---
 
 {{< ingress >}}
@@ -29,7 +29,7 @@ Updated to fix an inconsistency on 2022-08-22
 {{% /disclaimer %}}
 
 {{% note "Read more" %}}
-If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy: 
+If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
 
 1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
 2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
@@ -38,8 +38,8 @@ If you found this post useful, be sure to check out the rest of the series on us
 
 {{% /note %}}
 
-
 ## Prerequisites
+
 This blog post assumes that you use the open source Terraform CLI. Terraform CLI
 is just a binary program that you download from the [releases page][tfreleases],
 for your architecture/platform. Here you also find checksums for the files to
@@ -67,6 +67,7 @@ become widely accepted over the last three decades and is based on ideas and
 research by [Mark Burgess during the early nineties and later][mbcfengine].
 
 ### Terraform providers
+
 The superpower of Terraform comes from all of its providers. The Terraform
 providers are binary extensions of Terraform that, as the name indicates,
 «provide» resources of different kinds using the APIs of the cloud provider
@@ -81,6 +82,7 @@ infrastructure. Every time it is run, it will turn the desired state into the
 actual state for cloud resources.
 
 ### Reducing the level of «lock-in»
+
 Terraform has tons of battle-tested providers available to use, thus easing the
 burden of provisioning cloud resources from all kinds of cloud APIs within the
 same (or different) configurations.
@@ -99,6 +101,7 @@ and best practices to understand the nature of the tool before using it for
 the important stuff.{{< /disclaimer >}}
 
 ## Ansible introduction
+
 [Ansible][ansible] is a suite of tools for orchestration and configuration management
 mainly by using so-called playbooks. Playbooks are written in YAML and describe the
 desired state for operating system properties like files, services, filesystems
@@ -108,6 +111,7 @@ systems. In this post, we will show how to use Ansible to configure services on
 a Linux based operating system (Ubuntu 20.04).
 
 ### Ansible inventories
+
 Ansible inventories are lists of hosts, groups of hosts, and variables for those
 hosts and groups. Hosts and groups are used to tell Ansible where a certain
 desired state (task) is applicable. When working with static hosts in a
@@ -117,13 +121,14 @@ provided by scripts.
 
 When working with OpenStack, it is possible to use inventory scripts that
 queries the OpenStack API directly and produces a complete inventory of all
-instances with metadata, all the  group memberships and so on, but oftentimes
+instances with metadata, all the group memberships and so on, but oftentimes
 these scripts take a long time to run, and they generally need to run every
 time you run a playbook, thus making playbook runs orders of magnitude more
 time-consuming than static inventories. Also, they can put a heavy load on the
 OpenStack APIs if the inventory is frequently queried.
 
 ## Terraform and Ansible
+
 It must be "Terrible" then ;-) ? Actually, it is not terrible at all.
 
 Terraform keeps its own account of all objects it provisions together with
@@ -141,6 +146,7 @@ but we'll use a simple [python script][ati] developed initially by Cisco
 Systems.
 
 ### Get started
+
 In order to use it, copy or symlink the script somewhere convenient and
 use the path as the `--inventory` option to `ansible-*` commands. If you
 put the script in a directory, and use the directory name as `--inventory`, you
@@ -148,11 +154,12 @@ can also combine information from the dynamic inventory provided by the script
 with static inventory files that further enrich or transform the dynamic
 inventory. For instance, if you use an Ansible role or playbook that requires a
 specific host group name, you can use a static inventory to define a new host
-group that you choose the name of and specify a host group  from the dynamic
+group that you choose the name of and specify a host group from the dynamic
 inventory as `children` to the group you created, and then use that group with
 your role or playbook. We'll look at that in a later example.
 
 ## Rudder introduction
+
 [Rudder][rudder] is an open source configuration and security management tool.
 It comes with a multi tenant-control plane for managing and monitoring groups
 of nodes/agents in a central place. Because Rudder is built on the highly
@@ -200,7 +207,7 @@ You can choose to purchase a Rudder subscription support plan from Normation,
 the company behind Rudder, in order to get predictability for product
 development and maintenance and different support SLAs. Normation also offers
 training and consulting regarding Rudder. Or you can choose to install and
-support it yourself by means of the friendly souls at Normation et.  al that
+support it yourself by means of the friendly souls at Normation et. al that
 provides ready to use software packages, Ansible collection etc. for the most
 common platforms.
 
@@ -212,7 +219,6 @@ collection][rudder-ansible] maintained by Normation for installing Rudder
 server and agents and bootstrap those agents to said server.
 
 ## Installing and bootstrapping Rudder using Ansible
-
 
 We'll use the code [examples][sftfexamples] in the Terraform module [git
 repo][sftfmodules] as a reference and explain each of them underneath the code.
@@ -316,7 +322,7 @@ clients/agents using the v2-compute-instance with `count=2` and
 `role=rudder_client` and attach them to the default network. The default network
 is a private (RFC1918) network where instances can reach the Internet through
 NAT via the compute host, for things like package installs, etc. However,
-instances on this network can not be reached directly *from* the Internet,
+instances on this network can not be reached directly _from_ the Internet,
 obviously.
 
 We create two security groups: one «interconnect» security group where all
@@ -355,7 +361,6 @@ $ ansible-galaxy install -r requirements.yml
 
 ```yaml
 ---
-
 - name: Install Rudder Server
   hosts: os_metadata_role=rudder_server
   become: yes
@@ -383,7 +388,7 @@ $ ansible-galaxy install -r requirements.yml
 Here we reuse our previously defined `role` from the Terraform code as host
 groups directly in the Ansible playbook, `os_metadata_role=rudder_server` and
 `os_metadata_role=rudder_client` respectively. Note that we specify the
-`policy_server` parameter of the `rudder_agent` role  as IP address of the
+`policy_server` parameter of the `rudder_agent` role as IP address of the
 server from the Ansible inventory of that instance (which in the end is
 provided by the ATI dynamic inventory script).
 
@@ -458,6 +463,7 @@ root@rudder-server:~#
 ```
 
 Observe the ID of the pending agent on the agent itself
+
 ```console
 root@rudder-client-2:~# rudder agent info |grep UUID
                UUID: bdfbd21c-d46d-403b-9836-06e2d282b704
@@ -465,6 +471,7 @@ root@rudder-client-2:~#
 ```
 
 Then accept the the node
+
 ```console
 root@rudder-server:~# rudder-cli node accept bdfbd21c-d46d-403b-9836-06e2d282b704  -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 bdfbd21c-d46d-403b-9836-06e2d282b704
@@ -472,6 +479,7 @@ root@rudder-server:~#
 ```
 
 And then observe that the node has moved to "pending" list to the "node" list:
+
 ```console
 root@rudder-server:~# rudder-cli node list -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 root
@@ -482,7 +490,7 @@ root@rudder-server:~#
 
 From now on the two clients is under continuous management from the Rudder server
 and verified every 5th minute by default. No actions are taken to configure
-anything on the agent instances before you create rules for node groups.  
+anything on the agent instances before you create rules for node groups.
 
 Usage of Rudder to keep your instances continuously in compliance with your
 policy (desired state) is a large topic by itself, and it is outside the scope
@@ -495,16 +503,15 @@ of this blog post. Head over to Normation's [Rudder page][rudder] to learn more.
 [ansible]: https://github.com/ansible/ansible
 [tftry]: https://www.terraform.io/language/functions/try
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
-[diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
-[newflavors]:https://docs.safespring.com/new/flavors/
-[firstblog]:https://www.safespring.com/blogg/2022-01-terraform-modules/
-[mbcfengine]:https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
-[tfdl]:https://www.terraform.io/downloads
-[sftfmodules]:https://github.com/safespring-community/terraform-modules
-[sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]:https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]:https://www.safespring.com/blogg/2022-03-network/
-
+[diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
+[newflavors]: https://docs.safespring.com/new/flavors/
+[firstblog]: https://www.safespring.com/blogg/2022-01-terraform-modules/
+[mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
+[tfdl]: https://www.terraform.io/downloads
+[sftfmodules]: https://github.com/safespring-community/terraform-modules
+[sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
+[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
+[netblog]: https://www.safespring.com/blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
 

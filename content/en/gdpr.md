@@ -1,6 +1,6 @@
 ---
 title: "Safespring: Comprehensive GDPR Protection Beyond Third-Country Transfer"
-language: "En"
+language: "en"
 date: 2024-01-01T13:58:58+01:00
 draft: false
 section: "Compliance"
@@ -15,7 +15,7 @@ sidebarlinkurl2: "/en/contact"
 saas: ""
 TOC: "On this page"
 aliases:
-- /en/gdpr/
+  - /en/gdpr/
 ---
 
 {{< icon-block-container >}}

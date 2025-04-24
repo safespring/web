@@ -11,7 +11,7 @@ toplogo: "ocre-safespring-service-providor-2024.svg"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
-language: "No"
+language: "nb"
 cardtitle: "Academic Sector"
 cardicon: "fa-solid fa-graduation-cap"
 cardcolor: "#417DA5"
@@ -22,11 +22,9 @@ aliases:
    - /no/bransjer/Utdanning-og-forskning/
 ---
 
-
 {{< ingress >}}
 Siden 2014 har Safespring levert pålitelige skytjenester til forsknings- og utdanningssektoren. Vår kjernevirksomhet er å styrke forskning og utdanning med beregningsressurser, containerplattformer, skalerbar lagring og fleksible backupløsninger.
 {{</ ingress >}}
-
 
 ## Hvorfor anvende OCRE 2024?
 
@@ -37,8 +35,8 @@ Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte Safespr
 3. Prisene er allerede rabatterte, men kan forhandles ytterligere.
 
 {{< icon-block-small-container >}}
-    {{< icon-block-small icon="fa-solid fa-table" text="Tjenestekatalog" link="/geant/service-catalogue/" color="#195F8C">}}
-    {{< icon-block-small icon="fa-solid fa-coins" text="Prisliste" link="/geant/price/" color="#3C9BCD" >}}
+{{< icon-block-small icon="fa-solid fa-table" text="Tjenestekatalog" link="/geant/service-catalogue/" color="#195F8C">}}
+{{< icon-block-small icon="fa-solid fa-coins" text="Prisliste" link="/geant/price/" color="#3C9BCD" >}}
 {{< /icon-block-small-container >}}
 
 {{< distance >}}
@@ -56,10 +54,10 @@ Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte Safespr
 </div>
 </div>
 
-
 {{< distance >}}
 
 ### Om OCRE
+
 OCRE 2024 er en europeisk rammeavtale for skytjenester som er anskaffet av GÉANT, paraplyorganisasjonen for nasjonale forsknings- og utdanningsnettverk.
 
 OCRE 2024 er den tredje iterasjonen av GÉANTs rammeavtale for skytjenester, som siden 2016 har muliggjort digital transformasjon i Europa ved å koble sammen tilbudet av innovative skytjenesteleverandører med behovene til ulike deler av forsknings- og utdanningssektoren. OCRE 2024 er anskaffet for hele Europa med støtte fra GN5-1-prosjektet og gjelder i 39 land i fem år, fra 2025 til 2030.
@@ -85,6 +83,6 @@ Safesprings tjenester er klare til bruk. Hvis du tilhører forsknings- og utdann
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 Jeg er ansvarlig for forretningsutvikling for akademisk og offentlig sektor, og hjelper deg med å bruke tjenestene våre som allerede er anskaffet under OCRE 2024.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59 
+{{< inline "Ring" >}} +46 (0)76 868 00 59
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}

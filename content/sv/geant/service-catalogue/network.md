@@ -1,6 +1,6 @@
 ---
 title: "Network services"
-language: "En"
+language: "en"
 cardtitle: "Network"
 cardicon: "fa-solid fa-network-wired"
 cardcolor: "#195F8C"
@@ -24,7 +24,6 @@ aliases:
 - /geant/service-catalogue/network/
 ---
 
-
 {{< ingress >}}
 Mandatory and optional network services when using the IaaS platforms.
 {{< /ingress >}}
@@ -44,37 +43,38 @@ Safespring supports both {{< inline "SAML2" >}} and {{< inline "OIDC" >}} for fe
 - Bring your own IP prefixes (for large customers).
 - Reverse DNS Configuration (for large customers, own prefixes).
 
-
-| Product Code | Description                                                    |
-|--------------|----------------------------------------------------------------|
-| NET-publicv4 | Public IPv4 address                                            |
-| NET-publicv6 | Public IPv6 address                                            |
-| NET-ingress  | Ingress traffic into an   instance from outside the datacenter |
-| NET-egress   | Egress traffic from an instance to outside the datacenter      |
-| NET-mgn.slb  | Service to cater for load   balancing applications             |
-| NET-rdns     | Reverse DNS records (PTR)                                      |
-| NET-byoip    | Bring your own IP prefixes                                     |
-
+| Product Code | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| NET-publicv4 | Public IPv4 address                                          |
+| NET-publicv6 | Public IPv6 address                                          |
+| NET-ingress  | Ingress traffic into an instance from outside the datacenter |
+| NET-egress   | Egress traffic from an instance to outside the datacenter    |
+| NET-mgn.slb  | Service to cater for load balancing applications             |
+| NET-rdns     | Reverse DNS records (PTR)                                    |
+| NET-byoip    | Bring your own IP prefixes                                   |
 
 ## Public IP addresses
+
 Safespring provides public IPv4 and IPv6 addresses to the services. By default, each instance receives one of each.
 
 ## Ingress and egress traffic
+
 Safespring measures ingress and egress traffic for each customer instance at the network border of each datacenter. Safespring does not bill for ingress or egress traffic. Safespring is directly connected to SUNET, SIKT and NORDUNET networks.
 
 ## Load balancing
+
 Safespring offers functionality to give the customer means to set up load balancers in the platform. The solution is based on iBGP with anycast routing functionality that enables a secure and stable load balancing solution.
 
 ## Reverse DNS Configuration
+
 Safespring offers the option to configure reverse DNS names (PTR records) for public IP addresses, tailored to customer needs. This service is particularly relevant for use cases such as hosting SMTP servers or other services where reverse DNS is critical. Requests are evaluated on a case-by-case basis, and we will provide an estimated cost based on the specific requirements.
 
 ## Bring your own IP prefix(es)
-Customers can allocate their own IPv4 prefixes to the platform for their own use in the platform (minimum size /24). Safespring configures these prefixes in the platform and announce them to its peers using BGP.
 
+Customers can allocate their own IPv4 prefixes to the platform for their own use in the platform (minimum size /24). Safespring configures these prefixes in the platform and announce them to its peers using BGP.
 
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}
-

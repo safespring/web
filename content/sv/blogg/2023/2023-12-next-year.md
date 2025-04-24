@@ -10,7 +10,7 @@ card: "safespring_card_51.webp"
 eventbild: ""
 socialmediabild: ""
 author: ""
-language: "Se"
+language: "sv"
 fullwidth: ""
 nosidebar: ""
 author: "Fredric Wallsten"
@@ -20,7 +20,7 @@ aliases:
 ---
 
 {{< ingress >}}
-När 2023 nu går mot sitt slut, vill vi på Safespring ta tillfället i akt att blicka tillbaka på årets framsteg och se framåt mot vad 2024 kan erbjuda. 
+När 2023 nu går mot sitt slut, vill vi på Safespring ta tillfället i akt att blicka tillbaka på årets framsteg och se framåt mot vad 2024 kan erbjuda.
 {{< /ingress >}}
 
 Året har präglats av viktiga framsteg inom molntjänster, där varje nytt steg tagits med visionen att erbjuda nyskapande och högkvalitativa lösningar.

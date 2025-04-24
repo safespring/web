@@ -1,17 +1,20 @@
 ---
 title: "Opplev Safespring"
-language: "No"
+language: "nb"
 date: 2018-12-18T13:03:45+01:00
 draft: false
 intro: "Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre tjenester er designet med sikkerhet i fokus og dine data forlater aldri landet."
 english: "yes"
 aliases:
-    - /opplev
-    - /no/opplev/
+  - /opplev
+  - /no/opplev/
 ---
+
 ## Create a free demo account
+
 Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre tjenester er designet med sikkerhet i fokus og dine data forlater aldri landet.
 <br><br>
+
 <form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
   <div class="form">
         <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;

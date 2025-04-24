@@ -1,6 +1,6 @@
 ---
 title: "Network services"
-language: "En"
+language: "en"
 cardtitle: "Network"
 cardicon: "fa-solid fa-network-wired"
 cardcolor: "#195F8C"
@@ -20,7 +20,6 @@ toc: ""
 aliases:
 - /service-catalogue/network/
 ---
-
 
 {{< ingress >}}
 Mandatory and optional network services when using the IaaS platforms.
@@ -79,23 +78,26 @@ The network design of the IaaS platform is based on L3 (IP) and hardware-based r
   </tbody>
 </table>
 
-
-
 ## Public IP addresses
+
 Safespring provides public IPv4 and IPv6 addresses to your services. By default, each instance receives one of each.
 
 ## Bring your own IP prefix(es)
+
 Customers can allocate their own IPv4 prefixes to the platform for their own use in the platform (minimum size /24). Safespring configures these prefixes in the platform and announce them to its peers using BGP.
 
 ## Ingress / Egress traffic
+
 Safespring measures ingress and egress traffic for each customer instance at the network border of each datacenter.
 
 ## Managed SLB
+
 Safespring manages a Service Load Balancer for customers. It is hosted on a server instance in the customers environment. The load balancer is a subscription service and is charged monthly. Included in the cost is configuration and management. Additional IPv4 addresses are charged as an extra.
 
 ## Saferoute
+
 Safespring provides an MPLS based IP-VPN service with the local NREN allowing separate traffic from regular Internet traffic, such that customers can connect an environment in the Safespring datacenters to their own local infrastructure, e.g. behind firewalls, etc. This product depends on network integration with the local NREN its peers and is not generally available to any customer, but other VPN solutions can be delivered using standard Professional Services instead in those cases.
 
 ## Reverse DNS Configuration
-Safespring offers the option to configure reverse DNS names (PTR records) for public IP addresses, tailored to customer needs. This service is particularly relevant for use cases such as hosting SMTP servers or other services where reverse DNS is critical. Requests are evaluated on a case-by-case basis, and we will provide an estimated cost based on the specific requirements.
 
+Safespring offers the option to configure reverse DNS names (PTR records) for public IP addresses, tailored to customer needs. This service is particularly relevant for use cases such as hosting SMTP servers or other services where reverse DNS is critical. Requests are evaluated on a case-by-case basis, and we will provide an estimated cost based on the specific requirements.

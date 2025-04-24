@@ -11,18 +11,18 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Daniel de Oquiñena"
-language: "En"
+language: "en"
 toc: ""
 sidebarlinkname: "Cloutility-api-client Repository"
 sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
-- /blogg/2023/2023-04-creating-an-opensource-backup-client-library/
+  - /blogg/2023/2023-04-creating-an-opensource-backup-client-library/
 ---
 
 {{< ingress >}}
-At Safespring, we are passionate about open source technologies. Our platform relies on multiple open source products, and we are committed to giving back to the community whenever possible. 
+At Safespring, we are passionate about open source technologies. Our platform relies on multiple open source products, and we are committed to giving back to the community whenever possible.
 {{< /ingress >}}
 
 Sometimes, however, we find ourselves in need of a solution that does not yet exist. As was the case when we wanted to create a tool to simplify the enrollment process for backup clients to our backup solution.
@@ -31,17 +31,17 @@ Safesprings backup solution is based on IBM Spectrum Protect fronted by Auwau's 
 
 Consequently, we decided to take on the challenge ourself in the hope of benefiting not only Safespring, but also other organizations and users that utilize a similar setup. Which is why, a few weeks ago, we began working on the project "cloutility-api-client". The library is far from feature-complete but allows for consumption of the Cloutility API and includes around 15 methods for working with business-units, consumers, and nodes. These methods provide the ability to perform tasks such as creating and deleting business-units and consumers, as well as managing nodes and their associated data.
 
-In addition, we also wrote a simple CLI tool that can be used for generic purposes, allowing operators to quickly and easily interact with the Cloutility API, implementing all methods currently available in the cloutapi-package. 
+In addition, we also wrote a simple CLI tool that can be used for generic purposes, allowing operators to quickly and easily interact with the Cloutility API, implementing all methods currently available in the cloutapi-package.
 
 However, the power of a library lies in its ability to be extended with custom tools and integrations and we hope to see tools created by the community that can further simplify the enrollment process and improve the life-cycle management of backup-nodes.
 
 As such, we welcome contributions from the community to expand the available features and provide specialized tools that meet specific needs. Our goal, as always, is to create a robust and flexible solution that can be easily adapted to different environments and use cases and hope that our work on the Cloutility API client will allow for this.
 
 {{% note "Recommended reading" %}}
-Dive deeper into the world of open-source backup client management by checking out our recent article on [Automating backup node enrollment with Cloutility API-client.](/blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/)  Happy reading!
+Dive deeper into the world of open-source backup client management by checking out our recent article on [Automating backup node enrollment with Cloutility API-client.](/blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/) Happy reading!
 {{% /note %}}
 
-## Understanding Key Terms 
+## Understanding Key Terms
 
 Explore a concise guide that explains essential terminology found in our article on the open-source Cloutility API client library. Gain a deeper understanding of the concepts and technologies discussed to better appreciate their significance in backup client management and enrollment.
 

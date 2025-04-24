@@ -11,17 +11,15 @@ showthedate: true
 card: "safespring_card_52.webp"
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 TOC: ""
 sidebarlinkname: "Presentation"
 sidebarlinkurl: ""
 sidebarlinkicon: ""
 sidebarimage: "jon-openinfra-2024.webp"
 aliases:
-- /blogg/2024/2024-05-openinfra/
+  - /blogg/2024/2024-05-openinfra/
 ---
-
-
 
 Hello everyone,
 

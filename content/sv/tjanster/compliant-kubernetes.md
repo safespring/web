@@ -1,6 +1,6 @@
 ---
 title: "Maximera er produktivitet med Welkin"
-language: "Se"
+language: "sv"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
@@ -15,17 +15,17 @@ sidebarlinkurl2: "/demo/compute/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: " Elastisys Welkin gör det enkelt att skapa kluster med hög regelefterlevnad, medan vi ser till att er infrastruktur är optimerad för era specifika behov."
 aliases:
-- /tjanster/compliant-kubernetes/
+  - /tjanster/compliant-kubernetes/
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-person-chalkboard" text="Certifierade experter" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-file-shield" text="GDPR Compliant" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-life-ring" text="Svensk support" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Byggd på Safespring" link="" color="#3C9BCD">}}
-{{< /icon-block-container >}} 
+{{< icon-block icon="fa-solid fa-person-chalkboard" text="Certifierade experter" link="" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-file-shield" text="GDPR Compliant" link="" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-life-ring" text="Svensk support" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Byggd på Safespring" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
 Redo att gå över till Welkin? Låt experter från Elastisys ta hand om driften medan ni behåller full kontroll och säkerhet på Safesprings robusta infrastruktur.
@@ -41,11 +41,13 @@ Vår partner, Elastisys, är inte bara certifierade Kubernetes service providers
 ![Welkin on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
 ## Varför välja Welkin?
+
 Kubernetes i sin renaste form är inte säkert. Welkin är skräddarsydd enligt ISO27001-standarder, vilket innebär att det är förberett för maximal säkerhet och observerbarhet från start.
 
 ![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
 ## Bakgrund
+
 {{< ingress >}}
 Det finns många skäl till varför företag väljer att föra hem sina data till Europa.
 {{< /ingress >}}

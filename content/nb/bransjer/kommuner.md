@@ -4,9 +4,9 @@ date: 2019-01-09T10:47:25+01:00
 draft: true
 intro: "Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla eSams rekommendationer."
 background: "safespring_bilder_10.jpg"
-language: "No"
+language: "nb"
 aliases:
-- /no/bransjer/kommuner/
+  - /no/bransjer/kommuner/
 ---
 
 <video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
@@ -20,7 +20,7 @@ Våra tjänster gör det möjligt att både uppfylla dessa och samtidigt dra nyt
 
 Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla eSams rekommendationer.
 
- <a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
+<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 

@@ -1,6 +1,6 @@
 ---
 title: "Safesspring Solution Briefs"
-language: "Se"
+language: "sv"
 date: "2020-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"
 eventdatum: "10 nov. 2020"
@@ -18,5 +18,5 @@ audience: "saas"
 nosidebar: "x"
 fullwidth: "x"
 aliases:
-- /solution-brief/
+  - /solution-brief/
 ---

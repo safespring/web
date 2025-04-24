@@ -1,6 +1,6 @@
 ---
 title: "Support"
-language: "En"
+language: "en"
 cardtitle: "Support"
 cardicon: "fa-solid fa-cloud-question"
 cardcolor: "#195F8C"
@@ -26,21 +26,20 @@ aliases:
 ---
 
 {{< ingress >}}
-Safespring offers support in several different ways for the platform and related services. 
+Safespring offers support in several different ways for the platform and related services.
 {{< /ingress >}}
 
-|     Product Code        |     Support service                                                   |
-|-------------------------|-----------------------------------------------------------------------|
-|     SUPPORT-base        |     Base Compute Support                                              |
-|     SUPPORT-standard    |     Access to backchannel chat room with support and engineering      |
-|     SUPPORT-premium     |     Dedicated Service Manager with   quarterly operations meetings    |
+| Product Code     | Support service                                              |
+| ---------------- | ------------------------------------------------------------ |
+| SUPPORT-base     | Base Compute Support                                         |
+| SUPPORT-standard | Access to backchannel chat room with support and engineering |
+| SUPPORT-premium  | Dedicated Service Manager with quarterly operations meetings |
 
+## Base Support
 
-
-## Base Support 
 Safespring offers support for it’s core service Compute, Storage and Backup. Safespring has one unified support model for all its services. Safespring is operating an expert level support organization that is part of the technical DevOps team. Requests and incidents are handled by personnel with deep technical knowledge of the services provided. Written support requests are handled in English for all customers.
 
-In order to maintain a structured and well documented process, each request to support is handled by a ticketing system. 
+In order to maintain a structured and well documented process, each request to support is handled by a ticketing system.
 
 For handling and resolution of incidents, e-mail is used for communications. E-mails sent to the support email address are automatically added to the ticket history for the incident.
 
@@ -59,16 +58,18 @@ Examples of configurations are also provided in the online documentation.
 Safespring’s web site contains sections with updated videos with guidelines and tutorials for all services. The web site is updated with new material based on user requests or when a new product is launched.
 
 | Resource              | Address                       |
-|-----------------------|-------------------------------|
+| --------------------- | ----------------------------- |
 | Service documentation | https://docs.safespring.com   |
 | Serrvice status       | https://status.safespring.com |
 
 ## Standard support
+
 Access to dedicated chat room with support and engineering.
 
 Users can request access to a community chat room where users of Safespring services can meet each other as well as Safespring support and engineering.
 
 ## Premium support
+
 The premium support includes a dedicated technical account manager that is available to develop the delivered service. The technical account manager is also a resource for planning the roll-out of new services based on years of experience working with infrastructure for very demanding customers. Safespring's cloud architects are also available for design of new projects and migration resources into Safespring’s resources.
 
 The technical account manager can be dedicated to a customer organization or shared depending on the resource need. Meetings, technical service review, and design activities are performed in online web meetings.

@@ -10,13 +10,12 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
-language: "En"
+language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-03-ssh-keys
-    - /blogg/2022/2022-03-ssh-keys/
+  - /blogg/2022-03-ssh-keys
+  - /blogg/2022/2022-03-ssh-keys/
 ---
-
 
 {{< ingress >}}
 For Linux-/Unix-based cloud instances, the initial root access to the instances is enabled employing SSH keys. In this post, we'll go through some best practices and things to keep in mind when managing ssh-keys to enable root access to instances.
@@ -24,28 +23,29 @@ For Linux-/Unix-based cloud instances, the initial root access to the instances 
 
 ## Summary (TL;DR)
 
-* The poorly named "OpenStack keypair" contains no secrets, only an SSH pubkey.
-* SSH keypairs are not the same as an OpenStack keypair.
-* SSH keypairs should be created in a trusted environment on the user's computer. It should be of type RSA. The private key should be kept in an encrypted secret store and never be exposed outside the user's local site/environment.
-* An "OpenStack keypair" is tied to the user creating it, not a specific project.
-* Nobody cares about SSH host keys, but they should.
+- The poorly named "OpenStack keypair" contains no secrets, only an SSH pubkey.
+- SSH keypairs are not the same as an OpenStack keypair.
+- SSH keypairs should be created in a trusted environment on the user's computer. It should be of type RSA. The private key should be kept in an encrypted secret store and never be exposed outside the user's local site/environment.
+- An "OpenStack keypair" is tied to the user creating it, not a specific project.
+- Nobody cares about SSH host keys, but they should.
 
 ## Background
+
 When you provision instances in any cloud platform, you get a virtual server with a base operating system like Centos, Ubuntu, Debian, FreeBSD, etc., based on which cloud image the instance is provisioned from. You can use images available in the Infrastructure as a Service (IaaS) platform or upload your own, as long as the image is prepared for being used with the IaaS-platform you use. In Safespring's case, the image must be made for the OpenStack IaaS.
 
 The mechanism that automates the configuration of a cloud image into a cloud instance must grant operating system root access to the user owning the provisioned instance. This is to let the user to further configure the instance to do something useful (installing packages, configuring services, etc.).
 
 For Linux-/Unix-based systems, this access is granted via secure shell daemon (SSHD), a service that all Linux-/Unix-based systems have included and is always part of a Linux-/Unix-based cloud image. Although SSHD can allow users to log in with a password, this option is turned off in all cloud images meant for production use since [passwords pose a security risk][sshpw].
 
-[sshpw]:https://blog.runcloud.io/why-authentication-using-ssh-public-key-is-better-than-using-password-and-how-do-they-work/
+[sshpw]: https://blog.runcloud.io/why-authentication-using-ssh-public-key-is-better-than-using-password-and-how-do-they-work/
 
-Instead, the access is granted by means of a public SSH key which is placed in the `authorized_keys` file of the cloud user of the image. The cloud user is the local user ( in the instance'  `/etc/passwd|shadow`) that is used for logging in to the instance with, and then become root using `su` or `sudo`.
+Instead, the access is granted by means of a public SSH key which is placed in the `authorized_keys` file of the cloud user of the image. The cloud user is the local user ( in the instance' `/etc/passwd|shadow`) that is used for logging in to the instance with, and then become root using `su` or `sudo`.
 
 In order to gain operating system access to a cloud instance with an SSH client, you must:
 
-* Make sure to have the public key injected into the cloud users' `authorized_keys` file in the instance
-* Use the correct cloud user name for the image: i.e., centos for Centos, Ubuntu for Ubuntu, etc. (Google is your friend here.)
-* Have the private key matching the public key in the instance' `authorized_keys` file available to your client.
+- Make sure to have the public key injected into the cloud users' `authorized_keys` file in the instance
+- Use the correct cloud user name for the image: i.e., centos for Centos, Ubuntu for Ubuntu, etc. (Google is your friend here.)
+- Have the private key matching the public key in the instance' `authorized_keys` file available to your client.
 
 Injection of the public key into the cloud user's `authorized_keys` file is done by "cloud-init" when you tell OpenStack which public SSH key (Openstack keypair) to use with the instance.
 
@@ -54,6 +54,7 @@ So we can appreciate that a lot of stuff happens behind the scenes for the users
 ## Best practice
 
 ### Public vs private
+
 A keypair consists of a public and a private key. The names are just as descriptive as they seem. The private key should be kept confidential as it contains the secret you use to log in with.
 
 The public key contains no secrets. Knowledge of this key can not grant access to anything anywhere.
@@ -67,6 +68,7 @@ Needless to say, the private key should be exposed solely to subjects (users, sc
 A consequence of this approach is that you should not use OpenStack (GUI, API, CLI) to generate the keypair, just because the private key will not be as private as possible.
 
 ### Public keys are tied to Openstack users
+
 Openstack keypairs, which contains the public part of the keypair, is owned by the user that created them, regardless of the project. So the OpenStack keypair is not a project resource but a user resource. Thus a user can see (GUI) or list (CLI) their keys regardless of which OpenStack project the user is in.
 
 **Once again: OpenStack keypairs contain only the public key, and sharing it with the world is not a problem if you choose to do so.**
@@ -76,6 +78,7 @@ A user can import as many keypairs (public keys) to OpenStack as they wish. This
 Another way of separating and/or taking complete control over access is to use the OpenStack provided keypair only to configure your own authentication/authorization mechanism and then remove access via the cloud user by removing its `authorized_keys`. To prevent it from being re-injected to the `authorized_keys` file upon instance rebuild, one can also remove the keypair (public key) from Openstack. This will also remove the fallback access if the auth method the user set up is misconfigured or malfunctioning and the user is permanently locked out.
 
 ### SSH public host key
+
 In addition to the SSH keypairs that are used to grant access to users, there is also the SSH host key. This is the method a host uniquely identifies itself to connecting clients with. It is up to the client to trust this host key upon the first contact. We have all seen this message:
 
 ```
@@ -97,6 +100,7 @@ More on [SSH MITM][ssh-mitm]
 [ssh-mitm]: https://github.com/ssh-mitm/ssh-mitm
 
 ## Key management
+
 To keep control of SSH keys as an access mechanism, one must establish good tools and routines. Your mileage will vary, but [this blog post][kmgmt] goes through some important things to think about.
 
 [kmgmt]: https://www.beyondtrust.com/blog/entry/ssh-key-management-overview-6-best-practices

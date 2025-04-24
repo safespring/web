@@ -1,6 +1,6 @@
 ---
 title: "Storage as a service"
-language: "En"
+language: "en"
 cardtitle: "Object Storage"
 cardicon: "fa-solid fa-database"
 cardcolor: "#195F8C"
@@ -38,15 +38,13 @@ None.
 
 ### Configurations
 
-| Product Code | Characteristics                      |
-|--------------|--------------------------------------|
-| S3-archive   | HDD-backed with Erasure-coded   Ceph |
-| S3 -storage  | HDD -backed with 3-replica Ceph      |
-
+| Product Code | Characteristics                    |
+| ------------ | ---------------------------------- |
+| S3-archive   | HDD-backed with Erasure-coded Ceph |
+| S3 -storage  | HDD -backed with 3-replica Ceph    |
 
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Info:" >}} +46855107370 or ocre@safespring.com
 {{% /custom-card %}}
-

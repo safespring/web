@@ -1,6 +1,6 @@
 ---
 title: "Kontakta oss"
-language: "Se"
+language: "sv"
 date: "2024-05-16"
 draft: false
 intro: "Safespring har verksamhet i Sverige och i Norge med huvudkontor i Solna. Enklast kommer du i kontakt med oss via telefon eller mail."
@@ -8,9 +8,8 @@ tags: ""
 showthedate: false
 pageimage: ""
 aliases:
-- /kontakt/
+  - /kontakt/
 ---
-
 
 {{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="08-55 10 73 70" text="Ring oss" link="tel:+46855107370" >}}
 
@@ -19,6 +18,7 @@ aliases:
 {{< distance >}}
 
 ### Våra medarbetare
+
 Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte att ta kontakt om du har frågor eller behöver hjälp med något specifikt.
 
 {{< contact picture="petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
@@ -29,6 +29,7 @@ Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte a
 {{< distance >}}
 
 ### Adresser
+
 Nedan hittar du adresser till våra kontor i Sverige och Norge. Klicka på länkarna för att få vägbeskrivningar via Google Maps.
 
 {{< contact title="Sverige" name="Stockholm" phone="+46855107370" address="Rättarvägen 3, 169 68 Solna" address-link="https://g.page/safespring?share">}}
@@ -37,6 +38,7 @@ Nedan hittar du adresser till våra kontor i Sverige och Norge. Klicka på länk
 {{< distance >}}
 
 ### Ledning
+
 Vår ledningsgrupp arbetar för att säkerställa att vi levererar högkvalitativa och innovativa tjänster. Här hittar du kontaktinformation till vår ledning.
 
 {{< flexbox >}}
@@ -51,6 +53,7 @@ Vår ledningsgrupp arbetar för att säkerställa att vi levererar högkvalitati
 {{< distance >}}
 
 ### Styrelse
+
 Vår styrelse består av erfarna ledamöter som styr och vägleder företagets strategiska riktning.
 
 {{< flexbox >}}
@@ -62,6 +65,7 @@ Vår styrelse består av erfarna ledamöter som styr och vägleder företagets s
 {{< distance >}}
 
 ### Företagsinformation
+
 Safespring levererar IT-tjänster som är både effektiva, säkra och kostnadseffektiva. Här är grundläggande information om vårt företag.
 
 {{< infobox >}}

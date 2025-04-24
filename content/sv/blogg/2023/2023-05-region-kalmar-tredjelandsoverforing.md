@@ -12,10 +12,10 @@ socialmediabild: ""
 author: "Fredric Wallsten"
 author_image: "firm"
 section: "blogg"
-language: "Se"
+language: "sv"
 toc: ""
 aliases:
-- /blogg/2023/2023-05-region-kalmar-tredjelandsoverforing/
+  - /blogg/2023/2023-05-region-kalmar-tredjelandsoverforing/
 ---
 
 {{% ingress %}}
@@ -36,4 +36,4 @@ Så fort en myndighet utkontrakterar IT-tjänster på en molnleverantör sker ö
 
 När verksamhet faller under europeisk rätt finns en skyldighet att kunna redovisa för medborgaren när ett utlämnande skett och varför. Amerikanska molntjänster har få möjligheter att samtidigt efterleva bägge lagarna. Under lång tid har EU och Sverige hanterat detta genom att strunta i de egna lagarna. Bara efter Donald Trumps tid som president har EU-länderna börjat se att och när amerikanska säkerhetsintressen inte alltid sammanfaller med de egna.
 
-Det är där värdet i Meta-boten kommer fram, både för europeisk lagstiftning, europeiska medborgares rättigheter, europeiska myndigheters funktionssätt och, naturligtvis, för oss som europeiska leverantörer av förtrolig och modern IT-infrastruktur. Amerikanska konkurrenter ska inte ges fördelar av att europeisk och svensk lagstiftning inte efterlevs. Och vår lagstiftning här på hemmaplan är legitim, både ur det demokratiska styrets perspektiv och för medborgares rättigheter. 
+Det är där värdet i Meta-boten kommer fram, både för europeisk lagstiftning, europeiska medborgares rättigheter, europeiska myndigheters funktionssätt och, naturligtvis, för oss som europeiska leverantörer av förtrolig och modern IT-infrastruktur. Amerikanska konkurrenter ska inte ges fördelar av att europeisk och svensk lagstiftning inte efterlevs. Och vår lagstiftning här på hemmaplan är legitim, både ur det demokratiska styrets perspektiv och för medborgares rättigheter.

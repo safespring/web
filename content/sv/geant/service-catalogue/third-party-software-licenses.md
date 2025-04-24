@@ -1,6 +1,6 @@
 ---
 title: "Third-party software licenses"
-language: "En"
+language: "en"
 cardtitle: "Software"
 cardicon: "fa-solid fa-code"
 cardcolor: "#195F8C"
@@ -29,12 +29,12 @@ aliases:
 Safespring provides several third-party software licenses for use on our IaaS platforms.
 {{< /ingress >}}
 
-|     Product Code         |     Software                              |     Partner      |
-|--------------------------|-------------------------------------------|------------------|
-|     SW-win.ser.2022      |     Windows Server 2022 Datacenter        |     Microsoft    |
-|     SW-ms.sql.ser        |     Microsoft SQL Server Standard         |     Microsoft    |
-|     SW-ms.sql.ser.ent    |     Microsoft SQL Server Enterprise       |     Microsoft    |
-|     SW-nextcloud         |     Nextcloud Hub                         |     Nextcloud    |
+| Product Code      | Software                        | Partner   |
+| ----------------- | ------------------------------- | --------- |
+| SW-win.ser.2022   | Windows Server 2022 Datacenter  | Microsoft |
+| SW-ms.sql.ser     | Microsoft SQL Server Standard   | Microsoft |
+| SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | Microsoft |
+| SW-nextcloud      | Nextcloud Hub                   | Nextcloud |
 
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}

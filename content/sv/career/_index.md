@@ -9,11 +9,11 @@ date: "2021-02-05"
 sidebarlinkurl: "#open-positions"
 sidebarlinkname: "Open positions"
 sidebarlinkicon: "fa-arrow-down"
-language: "En"
+language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
 list: "horisontal"
 aliases:
-- /career/
+  - /career/
 ---
 
 {{< ingress >}}
@@ -33,12 +33,13 @@ If you're ready to take your career to the next level, we encourage you to apply
 
 At Safespring we're not just building systems; we're building relationships. We understand that applying for a new role is a big step, and we aim to make it a smooth, transparent, and engaging experience for you.
 
-1.	**Intro chat** - this is a great opportunity for both of us to get to know each other and decide if we have a match. 
-2.	**Meet your future manager** - deep dive into your engineering experiences.  
-3.	**Tech interviews** focused on system design and programming skills with your future team.
-4.	**Sync with your recruiter** - all your interviewers will make a collaborative decision and will either present you with an employment offer and **celebrate**, or provide you with constructive feedback and encourage to stay connected! 
- 
+1. **Intro chat** - this is a great opportunity for both of us to get to know each other and decide if we have a match.
+2. **Meet your future manager** - deep dive into your engineering experiences.
+3. **Tech interviews** focused on system design and programming skills with your future team.
+4. **Sync with your recruiter** - all your interviewers will make a collaborative decision and will either present you with an employment offer and **celebrate**, or provide you with constructive feedback and encourage to stay connected!
+
 #### Flexibility in Every Step
+
 We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
 {{% /accordion %}}
 

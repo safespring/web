@@ -5,9 +5,9 @@ draft: false
 intro: "Safespring receives and stores the information entered in the contact forms available on the website safespring.com"
 documentimage: "safespring_card_20.jpg"
 general: "yes"
-language: "En"
+language: "en"
 aliases:
-- /dokument/personuppgiftshantering-en/
+  - /dokument/personuppgiftshantering-en/
 ---
 
 {{< ingress >}}
@@ -21,9 +21,11 @@ Safespring AB, org. no. 559075–0245, is responsible for the processing of The 
 {{% /note %}}
 
 ### Legal Basis
+
 The legal basis for the processing of The Personal Data for The Purpose is our legitimate interest in being able to market the services we offer effectively. The Personal Data is stored securely in line with our business model, and you have the right to ask us to delete The Personal Data and/or indicate that you do not wish to be contacted by us. We will process The Personal Data as long as you consent to it. When the processing ends, The Personal Data will be deleted.
 
 ### Your Rights
+
 If you have any questions regarding our processing of The Personal Data, they should be addressed to us via the email address gdpr@safespring.com. This contact information can also be used if you wish to exercise any of your rights under the General Data Protection Regulation (2016/679). These rights are not absolute, and a request to exercise the rights does not necessarily lead to any action. The rights under the General Data Protection Regulation include:
 
 - {{< inline "Right of Access" >}} Under Article 15 of the General Data Protection Regulation, you have the right to access The Personal Data and certain information concerning the processing of The Personal Data. This information is provided in this document.
@@ -36,9 +38,12 @@ If you have any questions regarding our processing of The Personal Data, they sh
 Finally, you have the right to lodge a complaint with the Data Inspection Authority.
 
 ## Contact Information
+
 ### Safespring
+
 [gdpr@safespring.com](mailto:gdpr@safespring.com)
 
 ### Data Inspection Authority
+
 [datainspektionen@datainspektionen.se](mailto:datainspektionen@datainspektionen.se)</br>
 Phone: [+46(0)‭8-657 61 00](tel:+4686576100).‬

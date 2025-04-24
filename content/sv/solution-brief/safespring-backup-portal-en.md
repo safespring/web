@@ -17,17 +17,16 @@ background: "safespring-backup.svg"
 socialmediabild: ""
 form: ""
 toc: "In this article"
-language: "En"
+language: "en"
 author: "Gabriel Paues"
 aliases:
 - /solution-brief/safespring-backup-portal-en/
 ---
 
-
 ## Introduction
 
-{{< ingress >}} 
-Safespring Backup is based on the very well-established Spectrum Protect from IBM. It has many strengths, such as high security, excellent scalability and data lifecycle automation. 
+{{< ingress >}}
+Safespring Backup is based on the very well-established Spectrum Protect from IBM. It has many strengths, such as high security, excellent scalability and data lifecycle automation.
 {{< /ingress >}}
 
 Spectrum Protect can protect countless Terabytes of data with minimal administration effort.
@@ -71,7 +70,3 @@ With our relaunch of Safespring Backup, Safespring takes a giant leap forward to
 With Safespring Backup you will get a secure yet easy-to-use solution for handling all your backups.
 
 {{< horisontal-card image="/img/card/safespring-backup.svg" cardtitle="Read more about Safespring Backup" text="Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect.Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect." linktext="To the service" link="/en/services/backup">}}
-
-
-
-

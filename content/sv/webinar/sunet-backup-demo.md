@@ -1,6 +1,6 @@
 ---
 title: "Demo av Sunet Backuptjänst"
-language: "Se"
+language: "sv"
 date: "2023-02-08"
 publishDate: "2023-02-08"
 draft: false
@@ -19,28 +19,27 @@ thumbnail: "/img/webinar/thumbnails/demo-backup-1.jpg"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safepsinrg-demo-backup-1/master.m3u8"
 chaptersTitle: "I detta avsnitt"
 chapters:
-- title: "Om tjänsten"
-  time: 62
-  timeFormatted: "01:02"
-- title: "Demonstration"
-  time: 255
-  timeFormatted: "04:12"
-- title: "Skapa avdelningar"
-  time: 820
-  timeFormatted: "13:50"
-- title: "Fråga om S3 Endpoint"
-  time: 1090
-  timeFormatted: "18:10"
-- title: "Hur du skaffar tjänsten"
-  time: 1425
-  timeFormatted: "21:56"
-- title: "Info: befintliga kunder"
-  time: 1425
-  timeFormatted: "23:45"
+  - title: "Om tjänsten"
+    time: 62
+    timeFormatted: "01:02"
+  - title: "Demonstration"
+    time: 255
+    timeFormatted: "04:12"
+  - title: "Skapa avdelningar"
+    time: 820
+    timeFormatted: "13:50"
+  - title: "Fråga om S3 Endpoint"
+    time: 1090
+    timeFormatted: "18:10"
+  - title: "Hur du skaffar tjänsten"
+    time: 1425
+    timeFormatted: "21:56"
+  - title: "Info: befintliga kunder"
+    time: 1425
+    timeFormatted: "23:45"
 aliases:
-- /webinar/sunet-backup-demo/
+  - /webinar/sunet-backup-demo/
 ---
-
 
 {{< ingress>}}
 Gabriel Paues från Safespring går igenom Sunet Backuptjänst BaaS tillsammans med Anders Nilsson, tjänsteförvaltare från Sunet och Christian Pettersson.
@@ -61,4 +60,4 @@ Gabriel Paues från Safespring går igenom Sunet Backuptjänst BaaS tillsammans 
 anders@sunet.se
 
 **Gabriel Paues**, Safespring  
-gabriel.paues@safespring.com 
+gabriel.paues@safespring.com

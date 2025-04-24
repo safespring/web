@@ -1,6 +1,6 @@
 ---
 title: "Databas som tjänst med hög tillgänglighet"
-language: "Se"
+language: "sv"
 cardtitle: "Databas som tjänst"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
@@ -31,7 +31,7 @@ darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
 aliases:
-- /tjanster/database-as-a-service/
+  - /tjanster/database-as-a-service/
 ---
 
 {{< icon-block-container >}}

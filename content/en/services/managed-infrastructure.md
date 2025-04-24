@@ -1,6 +1,6 @@
 ---
 title: "Safespring On-Premise Cloud"
-language: "En"
+language: "en"
 date: 2023-05-10
 draft: false
 intro: "Get help setting up your own cloud infrastructure, which we maintain. This way, you get the power of the cloud—in your own data center."
@@ -10,7 +10,7 @@ socialmedia: "safespring-private-cloud.jpg"
 section: "Private Cloud"
 toc: "On this page"
 aliases:
-- /en/services/managed-infrastructure/
+  - /en/services/managed-infrastructure/
 ---
 
 {{< ingress >}}
@@ -20,17 +20,18 @@ Safespring On-Premise Cloud is a secure and customizable private cloud solution 
 The service offers a combination of the flexibility of cloud technology and the control of a local, on-premise infrastructure. Safespring On-Premise Cloud is an ideal solution for those who want to benefit from the many advantages of cloud technology while maintaining full control over their data and infrastructure.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Digital Sovereignty" link="#security-measures" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-headset" text="Professional Support" link="#support" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Security / Compliance" link="#security-measures" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-tachometer-alt" text="High Availability" link="#availability" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Flexible Scalability" link="#resource-scaling" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-users-cog" text="Technical Account Manager" link="#technical-account-manager-tam" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Digital Sovereignty" link="#security-measures" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-headset" text="Professional Support" link="#support" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-shield-alt" text="Security / Compliance" link="#security-measures" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-tachometer-alt" text="High Availability" link="#availability" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Flexible Scalability" link="#resource-scaling" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-users-cog" text="Technical Account Manager" link="#technical-account-manager-tam" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< distance >}}
 
 ## Benefits of Safespring On-Premise Cloud
+
 When you choose Safespring On-Premise Cloud, you gain several benefits that help your organization leverage the advantages of cloud technology while maintaining control over your resources and data.
 
 {{% accordion title="Dedicated Infrastructure" %}}
@@ -68,11 +69,11 @@ Start working with hybrid cloud using the following add-on services to customize
 {{% accordion title="Combine with Safespring’s Public Cloud Platform" %}}
 Enhance your infrastructure by combining your On-Premise Cloud with a Public Cloud. Take advantage of the following benefits:
 
-* {{< inline "Redundancy" >}} Increase system availability by distributing the load between on-premise and Public Cloud, reducing the risk of downtime.
-* {{< inline "Backup" >}} Secure your data by storing backups in the Public Cloud, providing an extra layer of protection in case of unforeseen events.
-* {{< inline "Compute" >}} Allocate computing resources between on-premise and Public Cloud to optimize performance and reduce costs.
-* {{< inline "Storage" >}} Expand your storage space with Public Cloud, making it easy to store and manage data across multiple locations.
-* {{< inline "Scale Out Under Heavy Load" >}} Use the Public Cloud to easily scale out capacity during peak demand, avoiding bottlenecks and performance issues.
+- {{< inline "Redundancy" >}} Increase system availability by distributing the load between on-premise and Public Cloud, reducing the risk of downtime.
+- {{< inline "Backup" >}} Secure your data by storing backups in the Public Cloud, providing an extra layer of protection in case of unforeseen events.
+- {{< inline "Compute" >}} Allocate computing resources between on-premise and Public Cloud to optimize performance and reduce costs.
+- {{< inline "Storage" >}} Expand your storage space with Public Cloud, making it easy to store and manage data across multiple locations.
+- {{< inline "Scale Out Under Heavy Load" >}} Use the Public Cloud to easily scale out capacity during peak demand, avoiding bottlenecks and performance issues.
 
 By combining your On-Premise Cloud with a Public Cloud, you get a more robust and flexible solution that can adapt to your growing needs.
 {{% /accordion %}}
@@ -100,12 +101,13 @@ Maximize the potential of your machine learning and AI projects by adding a Scal
 This service can be delivered with up to 99.9 percent availability, provided the customer meets our data center specifications and capacity usage requirements. Details are included in the standard contract, which is made available during the sales process. Additionally, the standard support process described in [Safespring’s documentation](https://docs.safespring.com/service/policies) applies.
 
 ### Customer Responsibilities
+
 Customers are responsible for monitoring their own instances and ensuring their services function after an outage. The customer is responsible for:
 
-* Data center power supply and cooling
-* Internet access
-* Physical on-site installation, for which Safespring can provide specifications and/or installation services
-* On-site physical maintenance (replacement of spare parts such as hard drives, power supplies, RAM, etc.)
+- Data center power supply and cooling
+- Internet access
+- Physical on-site installation, for which Safespring can provide specifications and/or installation services
+- On-site physical maintenance (replacement of spare parts such as hard drives, power supplies, RAM, etc.)
 
 ## Technical Account Manager (TAM)
 
@@ -141,48 +143,48 @@ Presentation and discussion of Safespring’s current and planned product develo
 
 {{< chart >}}
 timeline
-    section Week 0
-    Contract Signed: Prepare contract documents
-           : Send contract documents for review
-           : Get the contract signed by all parties
-           : Archive the signed contract
-    section Week 1
-    Hardware Order: Identify and specify required hardware
-           : Collect quotes from suppliers
-           : Review and compare quotes
-           : Place an order for approved hardware
-           : Follow up on delivery time and status
-    section Week 4
-    Work Planning: Identify project resources
-           : Allocate resources to specific tasks
-           : Create a detailed project plan
-           : Assign tasks and responsibilities
-    Follow-up Meeting 1: Prepare status report for the meeting
-           : Discuss and ensure access
-           : Plan for customer resources
-    section Week 8
-    Platform Training: Plan and schedule training sessions
-           : Create training materials
-           : Conduct training sessions
-           : Collect feedback and evaluate
-    Follow-up Meeting 2: Prepare status report
-           : Assign customer resources
-           : Discuss issues and solutions
-    section Week 12-18
+section Week 0
+Contract Signed: Prepare contract documents
+: Send contract documents for review
+: Get the contract signed by all parties
+: Archive the signed contract
+section Week 1
+Hardware Order: Identify and specify required hardware
+: Collect quotes from suppliers
+: Review and compare quotes
+: Place an order for approved hardware
+: Follow up on delivery time and status
+section Week 4
+Work Planning: Identify project resources
+: Allocate resources to specific tasks
+: Create a detailed project plan
+: Assign tasks and responsibilities
+Follow-up Meeting 1: Prepare status report for the meeting
+: Discuss and ensure access
+: Plan for customer resources
+section Week 8
+Platform Training: Plan and schedule training sessions
+: Create training materials
+: Conduct training sessions
+: Collect feedback and evaluate
+Follow-up Meeting 2: Prepare status report
+: Assign customer resources
+: Discuss issues and solutions
+section Week 12-18
 Hardware Delivery: Follow up on delivery status
-           : Inform customer of delivery date
-           : Ensure hardware receipt
-    Hardware Installation (Week 18): Plan installation process
-           : Perform installation
-           : Conduct functionality tests
-    section Week 18-19
+: Inform customer of delivery date
+: Ensure hardware receipt
+Hardware Installation (Week 18): Plan installation process
+: Perform installation
+: Conduct functionality tests
+section Week 18-19
 Software Installation: Gather required software
-           : Install and configure software
-           Perform Tests : Conduct tests
-    section Week 20
+: Install and configure software
+Perform Tests : Conduct tests
+section Week 20
 Delivery Meeting: Prepare status report
-           : Review user interface
-           : Go through platform functionalities
+: Review user interface
+: Go through platform functionalities
 {{< /chart >}}
 
 {{< distance >}}

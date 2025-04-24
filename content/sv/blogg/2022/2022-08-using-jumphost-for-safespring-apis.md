@@ -10,11 +10,11 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Anders Trier-Vaage"
-language: "En"
+language: "en"
 toc: ""
 aliases:
-    - /blogg/2022-08-using-jumphost-for-safespring-apis
-    - /blogg/2022/2022-08-using-jumphost-for-safespring-apis/
+  - /blogg/2022-08-using-jumphost-for-safespring-apis
+  - /blogg/2022/2022-08-using-jumphost-for-safespring-apis/
 ---
 
 {{< ingress >}}
@@ -62,7 +62,7 @@ example, there's no way to use multi-factor authentication between e.g.
 Terraform and OpenStack APIs, or with the OpenStack CLI for that matter.
 Credentials are often stored in clear text. The implications of a stolen laptop
 or credentials gone astray could be disastrous - a single command could wipe out
-an entire infrastructure.  
+an entire infrastructure.
 
 Using a jump host is not a perfect solution to the above-mentioned challenges,
 but an excellent first step to better security - and there are other benefits as
@@ -110,7 +110,7 @@ entirely based on SSH, is very simple to use, is reasonably fast, and requires n
 server-side configuration besides a working SSH server. Not only is sshuttle
 leveraging the security benefits of OpenSSH but also its in-built tunneling
 capabilities - without needing to set up individual forwarding for every
-host/port on the remote network.  
+host/port on the remote network.
 
 The downside of sshuttle is that it currently only runs on macOS, Linux, and BSD.
 There's currently no support for Windows, including WSL (although there is a

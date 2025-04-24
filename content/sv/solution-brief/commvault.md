@@ -9,15 +9,17 @@ huvudbildnamn: "Safespring_WhitePaper_Commvault_web.jpg"
 socialmediabild: "Safespring_WhitePaper_Commvault_social-media.jpg"
 intro: "This white paper describes how to configure Safespring Storage as a “Disk Library” in Commvault."
 background: "Safespring_WhitePaper_Commvault_web.jpg"
-language: "En"
+language: "en"
 aliases:
-- /solution-brief/commvault/
+  - /solution-brief/commvault/
 ---
 
 ## Introduction
+
 This White Paper describes how to configure Safespring Storage as a “Disk Library” in Commvault. The only prerequisite is that you have a storage account at Safespring and a running Commvault solution. With that, you will be able to be up and running with a disaster backup solution in minutes.
 
 ### Customer benefits of moving data to Safespring
+
 Offsite backups are primarily is used in data backup and disaster recovery measures. The core objective behind storing and maintaining data at a backup facility is to:
 
 - Secure data from malicious attacks
@@ -30,7 +32,6 @@ S3 is becoming the de-facto standard interface for object storage with increasin
 ## Download White Paper today
 
 <iframe src="https://pages.upsales.com/9549ud958ab6767c34e7c843fe5585ca7e9ac-frame" class="linked-form" style="border:0"></iframe>
-
 
 <!-- COMMVAULT -->
 

@@ -11,18 +11,18 @@ socialmediabild: ""
 section: "blogg"
 author: "Fredric Wallsten"
 author_image: "firm"
-language: "Se"
+language: "sv"
 toc: ""
 sidebarlinkname: ""
 sidebarlinkurl: ""
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
-- /blogg/2023/2023-04-adekvansbeslut-1/
+  - /blogg/2023/2023-04-adekvansbeslut-1/
 ---
- 
+
 {{< ingress >}}
-Den 13 december 2022 annonserade EU-kommissionens ordförande Ursula von der Leyen ett utkast till ett så kallat adekvansbeslut för dataöverföringar till USA under Dataskyddsförordningen, en åtgärd EU-kommission kan vidta för att garantera lagligheten i behandlingen av personuppgifter på tredje lands (i detta fall USA:s) territorium. 
+Den 13 december 2022 annonserade EU-kommissionens ordförande Ursula von der Leyen ett utkast till ett så kallat adekvansbeslut för dataöverföringar till USA under Dataskyddsförordningen, en åtgärd EU-kommission kan vidta för att garantera lagligheten i behandlingen av personuppgifter på tredje lands (i detta fall USA:s) territorium.
 {{< /ingress >}}
 
 Det nya utkastet är en uppdatering av tidigare [adekvansbeslut](#ordlista), [Privacy Shield](#ordlista) (Dataskölden), som av EU-domstolen funnits strida mot europeisk dataskyddsrätt. Men är det också en uppgradering?
@@ -37,9 +37,10 @@ Men EU-domstolen säger samtidigt att EU-kommissionen, och EU:s medlemsländer, 
 
 IT-miljön hos ett företag eller en myndighet i EU ska fortsätta vara laglig, möjlig att underhålla, förfina, förändra och utveckla även efter att EU-kommissionens adekvansbeslut prövats i domstol. Både för medarbetare och medborgare är det långsiktigt förtroendeskadande att se hur investeringar görs i IT-system som bara håller så länge de inte utsätts för granskning. Det finns hållbarare sätt att gå till väga.
 
-Våra principer och rekommendationer för upphandlingar av IT-system och IT-infrastruktur som goda verktyg för myndigheter och privata aktörer att förhålla sig till, oavsett vad som rör sig på den högsta politiska nivån. 
+Våra principer och rekommendationer för upphandlingar av IT-system och IT-infrastruktur som goda verktyg för myndigheter och privata aktörer att förhålla sig till, oavsett vad som rör sig på den högsta politiska nivån.
 
 ## Ordlista
+
 {{< ingress >}}
 Följande begrepp är viktiga för att förstå EU:s dataskyddslagstiftning och dess påverkan på dataöverföringar till tredje länder som USA.
 {{< /ingress >}}

@@ -1,6 +1,6 @@
 ---
 title: "Safespring: Omfattende GDPR-beskyttelse utover tredjelands­overføring"
-language: "No"
+language: "nb"
 date: 2024-01-01T13:58:58+01:00
 draft: false
 section: "Compliance"
@@ -15,7 +15,7 @@ sidebarlinkurl2: "/no/kontakt"
 saas: ""
 TOC: "På denne siden"
 aliases:
-- /no/gdpr/
+  - /no/gdpr/
 ---
 
 {{< icon-block-container >}}

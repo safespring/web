@@ -17,9 +17,9 @@ sidebarlinkname: "Bli med i Beta-programmet"
 sidebarlinkurl: "#interessert-i-å-teste-plattformen"
 showthedate: false
 banner: "blue-hover-tech"
-language: "No"
+language: "nb"
 aliases:
-- /no/tjenester/containerplattform/
+  - /no/tjenester/containerplattform/
 ---
 
 {{< ingress >}}
@@ -29,12 +29,12 @@ Safesprings Containerplattform er en administrert Kubernetes-tjeneste som kan by
 Utformet for skalerbarhet og kostnadseffektivitet, trygt forankret i norske verdier og lovverk, kan vår plattform levere moderne cloud-native applikasjoner på samme måte som de store, globale leverandørene.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-cubes" text="Basert på CNCF-prosjekter" link="" color="#195F8C">}}
-    {{< icon-block icon="fak fa-safespring-icon" text="Drevet av Safespring Compute" link="/tjanster/safespring-compute/" color="#417DA5">}}
-    {{< icon-block icon="fas fa-sparkles" text="GPU for ML og AI" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-sync" text="Dynamisk skalerbarhet" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-forward" text="Rask oppstart, lav terskel" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk sikkerhet" link="/gdpr/" color="#417DA5">}}
+{{< icon-block icon="fas fa-cubes" text="Basert på CNCF-prosjekter" link="" color="#195F8C">}}
+{{< icon-block icon="fak fa-safespring-icon" text="Drevet av Safespring Compute" link="/tjanster/safespring-compute/" color="#417DA5">}}
+{{< icon-block icon="fas fa-sparkles" text="GPU for ML og AI" link="" color="#3C9BCD">}}
+{{< icon-block icon="fas fa-sync" text="Dynamisk skalerbarhet" link="" color="#32CD32">}}
+{{< icon-block icon="fas fa-forward" text="Rask oppstart, lav terskel" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk sikkerhet" link="/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
 ## Safespring Containerplattform: <br>Åpen, suveren og fleksibel

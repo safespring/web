@@ -1,6 +1,6 @@
 ---
 title: "Avställa byggprojekt: Går det att ställa av alla ÄTA i 12 år?"
-language: "Se"
+language: "sv"
 episode: "2"
 series: "true"
 date: "2020-12-16"
@@ -25,8 +25,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-arkivit-2.jpg"
 sidebar: "x"
 aliases:
-   - /webinar/kommun/arkivit-byggprojekt.md
-   - /webinar/kommun/safespring-partner-webinar-arkivit-2/
+  - /webinar/kommun/arkivit-byggprojekt.md
+  - /webinar/kommun/safespring-partner-webinar-arkivit-2/
 ---
 
 {{< ingress>}}

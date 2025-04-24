@@ -1,6 +1,6 @@
 ---
 title: "API Access"
-language: "En"
+language: "en"
 cardtitle: "API Access"
 cardicon: "fa-kit fa-api"
 cardcolor: "#195F8C"
@@ -22,8 +22,6 @@ aliases:
 - /geant/service-catalogue/api/
 ---
 
-
-
 {{< ingress >}}
 All Safespring’s services have APIs to enable the user to use the services in a more automated fashion.
 {{< /ingress >}}
@@ -31,11 +29,12 @@ All Safespring’s services have APIs to enable the user to use the services in 
 ## Compute API
 
 Safespring Compute is built upon OpenStack which comes with an extensible API. The services that Safespring provides API access for are:
-1.	[Nova Compute](https://docs.openstack.org/api-ref/compute/). This API supports creation, deletion and modification of instances (virtual machines) in the platform.
-2.	[Keystone Identity](https://docs.openstack.org/api-ref/identity/v3/). The API handles all identity handling and RBAC in the platform. This is the API to which a user login in order to get an authentication token which then can be used to subsequent calls to other APIs in the platform.
-3.	[Glance Image handling](https://docs.openstack.org/api-ref/image/v2/). This API handles images and snapshots, from which an instance can be created. The used can also use this API to upload custom images to the platform. 
-4.	[Neutron Network](https://docs.openstack.org/api-ref/network/v2/). This API handles networking. Since Safespring is using the networking engine Calico, this API is restricted since not all operations can be done when using this networking engine. 
-5.	[Cinder Block Storage](https://docs.openstack.org/api-ref/block-storage/v3/). This API gives access to block storage operation such as creating and attaching volumes to instances.
+
+1. [Nova Compute](https://docs.openstack.org/api-ref/compute/). This API supports creation, deletion and modification of instances (virtual machines) in the platform.
+2. [Keystone Identity](https://docs.openstack.org/api-ref/identity/v3/). The API handles all identity handling and RBAC in the platform. This is the API to which a user login in order to get an authentication token which then can be used to subsequent calls to other APIs in the platform.
+3. [Glance Image handling](https://docs.openstack.org/api-ref/image/v2/). This API handles images and snapshots, from which an instance can be created. The used can also use this API to upload custom images to the platform.
+4. [Neutron Network](https://docs.openstack.org/api-ref/network/v2/). This API handles networking. Since Safespring is using the networking engine Calico, this API is restricted since not all operations can be done when using this networking engine.
+5. [Cinder Block Storage](https://docs.openstack.org/api-ref/block-storage/v3/). This API gives access to block storage operation such as creating and attaching volumes to instances.
 
 ## Storage API
 

@@ -1,6 +1,6 @@
 ---
 title: "Kundservice och ärende­hantering med åtkomst från valfri enhet"
-language: "Se"
+language: "sv"
 episode: "4"
 series: "true"
 date: "2020-06-24"
@@ -25,10 +25,9 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-artvise-1.jpg"
 sidebar: "x"
 aliases:
-   - /webinar/kommun/artvise.md
-   - /webinar/kommun/safespring-partner-webinar-artvise-1/
+  - /webinar/kommun/artvise.md
+  - /webinar/kommun/safespring-partner-webinar-artvise-1/
 ---
-
 
 {{< ingress >}}
 Äntligen ett riktigt kontaktcenter som utöver att vara intelligent och skalbart även innehåller helt integrerad ärendehantering och lättillgängliga telefonifunktioner.

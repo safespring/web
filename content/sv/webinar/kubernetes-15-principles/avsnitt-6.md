@@ -3,14 +3,14 @@ title: "Säkerhet och begränsningar för Pods och nätverk"
 section: "Design och driftsättning av skalbara applikationer på Kubernetes"
 episode: "6"
 series: "true"
-language: "Se"
+language: "sv"
 date: "2023-09-18"
 draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-6.jpeg"
 eventbild: ""
 socialmediabild: ""
-intro: 'Vi diskuterar vikten av att begränsa behörigheter och åtkomst för Pods, hur du hanterar nätverkspolicyer och förbättrar säkerheten för dina applikationer.'
+intro: "Vi diskuterar vikten av att begränsa behörigheter och åtkomst för Pods, hur du hanterar nätverkspolicyer och förbättrar säkerheten för dina applikationer."
 sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-series"
 sidebarlinkname: "Till gitrepo"
 sidebarlinkurl2: "/demo"
@@ -43,11 +43,13 @@ chapters:
     time: 776
     timeFormatted: "12:56"
 aliases:
-- /webinar/kubernetes-15-principles/avsnitt-6/
+  - /webinar/kubernetes-15-principles/avsnitt-6/
 ---
 
 ## Avsnitt 6
+
 ### Säkerhet och begränsningar för Pods och nätverk
+
 I det här avsnittet undersöker Gabriel Paues från Safespring och Lars Larsson från Elastisys säkerhetsaspekter av att köra applikationer på Kubernetes. Du kommer att lära dig om vikten av att begränsa behörigheter och åtkomst för Pods, hur du hanterar nätverkspolicyer och förbättrar säkerheten för dina applikationer genom att följa bästa praxis.
 
 {{< inline "Princip 14" >}} Restrict permissions  

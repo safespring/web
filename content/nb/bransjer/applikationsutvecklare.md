@@ -7,10 +7,11 @@ draft: false
 intro: "MedTech, EdTech eller andre moderne selskaper som søker Compliant Kubernetes, databasetjenester og mer."
 background: "safespring_bilder_10.jpg"
 logobannersaas: "yes"
-language: "Nei"
+language: "nb"
 aliases:
-- /no/bransjer/applikationsutvecklare/
+  - /no/bransjer/applikationsutvecklare/
 ---
+
 <div class="ingress"><p>Safesprings skyplattform er allsidig og et veldig godt fundament for mange forskjellige typer applikasjoner. Plattformen er godt designet for SaaS-tjenester siden skalérbarhet og fleksibilitet er viktige komponenter.</p></div>
 
 <br>

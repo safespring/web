@@ -1,6 +1,6 @@
 ---
 title: "Safespring Cloud Platform and OCRE"
-language: "En"
+language: "en"
 date: "2022-09-08"
 publishDate: "2022-09-08"
 draft: false
@@ -16,35 +16,35 @@ sidebarlinkurl: ""
 sidebarlinkname: ""
 chaptersTitle: "Agenda"
 chapters:
-- title: "Safespring Compute"
-  time: 455
-  timeFormatted: "07:25"
-- title: "Automate your IaaS"
-  time: 2082
-  timeFormatted: "34:42"
-- title: "Compliant Kubernetes"
-  time: 4551
-  timeFormatted: "1:15:51"
-- title: "Database as a Service (1)"
-  time: 4819
-  timeFormatted: "1:20:19"
-- title: "File sync and share for researchers"
-  time: 5073
-  timeFormatted: "1:24:33"
-- title: "Database as a service (2)"
-  time: 5672
-  timeFormatted: "1:34:32"
-- title: "Safespring Backup"
-  time: 5929
-  timeFormatted: "1:38:49"
-- title: "References"
-  time: 6335
-  timeFormatted: "1:45:35"
+  - title: "Safespring Compute"
+    time: 455
+    timeFormatted: "07:25"
+  - title: "Automate your IaaS"
+    time: 2082
+    timeFormatted: "34:42"
+  - title: "Compliant Kubernetes"
+    time: 4551
+    timeFormatted: "1:15:51"
+  - title: "Database as a Service (1)"
+    time: 4819
+    timeFormatted: "1:20:19"
+  - title: "File sync and share for researchers"
+    time: 5073
+    timeFormatted: "1:24:33"
+  - title: "Database as a service (2)"
+    time: 5672
+    timeFormatted: "1:34:32"
+  - title: "Safespring Backup"
+    time: 5929
+    timeFormatted: "1:38:49"
+  - title: "References"
+    time: 6335
+    timeFormatted: "1:45:35"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-ocre/master.m3u8"
 thumbnail: "/img/event/cards/safespring_card_44.jpg"
 aliases:
-   - /webinar/dfn
-   - /webinar/safespring-demo-ocre/
+  - /webinar/dfn
+  - /webinar/safespring-demo-ocre/
 ---
 
 {{< ingress>}}
@@ -58,7 +58,9 @@ Safespring is the preferred cloud platform for research and education. Welcome t
 {{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
 
 ## References
+
 ### Database as a service
+
 - [About the service](https://severalnines.com/ccx/)
 - [Sovereign DBaaS White paper](https://severalnines.com/sovereign-dbaas/)
 
@@ -69,6 +71,7 @@ Safespring is the preferred cloud platform for research and education. Welcome t
 - [Safespring Terraform Modules](https://github.com/safespring-community/terraform-modules)
 
 ### Read more
+
 - [All blog posts](/blogg/)
 - Solution Brief: [OpenShift runs smoothly on Safespring's platform](/solution-brief/openshift-en/)
 - Teach update: [Get started with Kubespray](/blogg/2022-08-kubespray-minimal/)

@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes: Praktisk guide till compliance"
-language: "Se"
+language: "sv"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: false
 tags: ["Svenska"]
@@ -13,8 +13,8 @@ audience: "saas"
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-4.jpg"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-elastisys-4/master.m3u8"
 aliases:
-    - /webinar/elastisys2/
-    - /webinar/safespring-partner-webinar-elastisys-4/
+  - /webinar/elastisys2/
+  - /webinar/safespring-partner-webinar-elastisys-4/
 sidebar: "x"
 ---
 
@@ -31,6 +31,7 @@ Vi går bland annat igenom:
 **Johan Tordsson**, CTO på Elastisys och cloud-forskare på Umeå Universitet och **Gabriel Paues**, Cloud Architect på Safespring går igenom hur regelefterlevnad kan uppnås i dina Kubernetes initiativ. Genom lokal moln-infrastruktur och cloud nativ-verktyg presenterar de en praktisk guide till compliance.
 
 ### Del I: Kort introduktion
+
 1. Schrems II och regelefterlevnad
 
 ### Del II: Compliant Kubernetes

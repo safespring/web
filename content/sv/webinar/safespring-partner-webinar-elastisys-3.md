@@ -1,6 +1,6 @@
 ---
 title: "Lär dig lyckas med containers och Kubernetes"
-language: "Se"
+language: "sv"
 publishDate: "2020-05-05"
 draft: false
 tags: ["Svenska"]
@@ -14,12 +14,12 @@ thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-elastisys-3.jpg"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-elastisys-3/master.m3u8"
 sidebar: "x"
 aliases:
-    - /webinar/elastisys/
-    - /webinar/safespring-partner-webinar-elastisys-3/
+  - /webinar/elastisys/
+  - /webinar/safespring-partner-webinar-elastisys-3/
 ---
 
 {{< ingress>}}
-Johan Tordsson, CTO på Elastisys och cloud-forskare på Umeå Universitet, går igenom grunderna för containers, cloud-native och Kubernetes. 
+Johan Tordsson, CTO på Elastisys och cloud-forskare på Umeå Universitet, går igenom grunderna för containers, cloud-native och Kubernetes.
 {{< /ingress >}}
 
 Utifrån Elastisys erfarenhet av transformations-resor i en mängd olika branscher och CNCFs cloud native trail map tar Johan upp bland annat:

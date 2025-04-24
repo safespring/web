@@ -1,6 +1,6 @@
 ---
 title: "Run Kubernetes and Open Shift on Optimized Servers"
-language: "En"
+language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: true
 section: "Public Cloud"
@@ -13,16 +13,16 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Prices"
 sidebarlinkurl2: "/en/price/"
 aliases:
-- /en/services/containerplatform-old/
+  - /en/services/containerplatform-old/
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP for Load Balancers" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-kit fa-nvme" text="Fast Local Disk for ETCD" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-api" text="Powerful Automation" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-network-wired" text="Stable Network" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-safespring" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
+{{< icon-block icon="fa-kit fa-lock-ip" text="Elastic IP for Load Balancers" link="" color="#195F8C">}}
+{{< icon-block icon="fa-kit fa-nvme" text="Fast Local Disk for ETCD" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-api" text="Powerful Automation" link="" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-network-wired" text="Stable Network" link="" color="#FA690F">}}
+{{< icon-block icon="fa-kit fa-safespring" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Powerful Virtual Servers with NVMe

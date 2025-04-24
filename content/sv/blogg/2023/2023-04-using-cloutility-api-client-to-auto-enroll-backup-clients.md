@@ -11,7 +11,7 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: "Daniel de Oquiñena"
-language: "En"
+language: "en"
 toc: ""
 sidebarlinkname: "Cloutility-api-client Repository"
 sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
@@ -27,7 +27,7 @@ In this tutorial, we will explore Safespring's cloutility-backup-client library 
 {{< /ingress >}}
 
 {{% note "Recommended reading" %}}
-Dive deeper into the world of open-source backup client management by checking out our recent article on [Creating an Open-Source Backup Client Library.](/blogg/2023/2023-04-creating-an-opensource-backup-client-library/)  Happy reading!
+Dive deeper into the world of open-source backup client management by checking out our recent article on [Creating an Open-Source Backup Client Library.](/blogg/2023/2023-04-creating-an-opensource-backup-client-library/) Happy reading!
 {{% /note %}}
 
 ## Prerequisites
@@ -35,6 +35,7 @@ Dive deeper into the world of open-source backup client management by checking o
 If you wish to follow along, make sure you have Go installed on your machine. You will also need to set up an account with Safespring Backup and have access to your API keys and credentials.
 
 We will also be making a few assumptions on which to base our use-case:
+
 - We want to enroll a large number of servers with similar setup.
 - The backup nodes should be identified as their hostname.
 - We already manage these servers using a configuration management tool such as Puppet or Ansible.
@@ -43,8 +44,10 @@ We will also be making a few assumptions on which to base our use-case:
 {{< distance >}}
 
 ## 1. Declaring default values and retrieving hostname
+
 Set default values and retrieve the server's hostname, which will be used as the identifier for backup nodes.
 We will begin by setting a few default values:
+
 ```go
 const (
     // Set the OS to Linux, ID = 3
@@ -59,12 +62,15 @@ const (
     contact = "Company IT Department"
 )
 ```
+
 As we will see later in the tutorial, we will pass these values when creating our backup node to ensure we set the correct settings for this particular server type. These settings can easily be adapted to a variety of server / workstation setups. For a complete list of all available combinations supported by Safespring Backup you can use the cli-tool included in the cloutilty-api-client project.
 
-Prior to accessing the API we will also retrieve the hostname of the server which will be used as the identifier for backup nodes. 
+Prior to accessing the API we will also retrieve the hostname of the server which will be used as the identifier for backup nodes.
+
 ```go
 hostname, _ := os.Hostname()
 ```
+
 In this example we will make sure that no two consumers (backup nodes) is identified by the same hostname.
 
 {{< distance >}}
@@ -79,14 +85,14 @@ func Init(ctx context.Context, clientID, apiKeyOrigin, username, password, baseU
 
 The `Init()` function initializes a Cloutility API client and returns a pointer to an `AuthenticatedClient` struct. It takes the following parameters:
 
-| Parameter   | Type            | Description                                                                                                 |
-|-------------|-----------------|-------------------------------------------------------------------------------------------------------------|
-| `ctx`       | context.Context | A context.Context object for the API client                                  |
-| `client_id` | string          | Provide the Safespring client ID (APIKey)                                                                   |
-| `origin`    | string          | The origin of the client ID, specified upon creation                                                        |
-| `username`  | string          | Input the username for the Safespring Backup service                                                        |
-| `password`  | string          | Enter the password for the Safespring Backup service                                                        |
-| `baseURL`   | string          | Base URL for Cloutility API: `https://portal-api.backup.sto2.safedc.net` (for Safespring Backup interaction)|
+| Parameter   | Type            | Description                                                                                                  |
+| ----------- | --------------- | ------------------------------------------------------------------------------------------------------------ |
+| `ctx`       | context.Context | A context.Context object for the API client                                                                  |
+| `client_id` | string          | Provide the Safespring client ID (APIKey)                                                                    |
+| `origin`    | string          | The origin of the client ID, specified upon creation                                                         |
+| `username`  | string          | Input the username for the Safespring Backup service                                                         |
+| `password`  | string          | Enter the password for the Safespring Backup service                                                         |
+| `baseURL`   | string          | Base URL for Cloutility API: `https://portal-api.backup.sto2.safedc.net` (for Safespring Backup interaction) |
 
 In our example we will look for these values in environment variables present in the execution environment but, they could just as well be made available from a configuration file, a deployment tool such as ansible or some other source.
 
@@ -114,11 +120,11 @@ func (c *AuthenticatedClient) GetConsumers(bUnitID int) ([]Consumer, error)
 
 The `GetConsumers()` method retrieves a list of consumers within a given business-unit and returns a slice of `Consumer` structs. It takes the following parameters:
 
-| Parameter         | Type     | Description                                                  |
-|-------------------|----------|--------------------------------------------------------------|
-|`bUnitID` |integer |We will be passing the ID of the current user's business-unit.|
+| Parameter | Type    | Description                                                    |
+| --------- | ------- | -------------------------------------------------------------- |
+| `bUnitID` | integer | We will be passing the ID of the current user's business-unit. |
 
-To make sure we are creating a new consumer using a unique hostname identifier we will also need to loop over the result and abort execution if the hostname matches an already present consumer. 
+To make sure we are creating a new consumer using a unique hostname identifier we will also need to loop over the result and abort execution if the hostname matches an already present consumer.
 
 {{% note "Duplicate Consumer Names Allowed" %}}
 There is no inherit limitation within the service that prevents setting up consumers with the same name. The actual identifier will be the ID generated upon creation.
@@ -134,12 +140,12 @@ If no consumer with the current hostname exists, we'll proceed to create one wit
 func (c *AuthenticatedClient) CreateConsumer(bUnitID int, name string) (Consumer, error)
 ```
 
-The `CreateConsumer()` method creates a new consumer within a business-unit and returns a  `Consumer` struct containing ID, name, creation date etc. It takes the following parameters:
+The `CreateConsumer()` method creates a new consumer within a business-unit and returns a `Consumer` struct containing ID, name, creation date etc. It takes the following parameters:
 
-| Parameter         | Type     | Description                                                  |
-|-------------------|----------|--------------------------------------------------------------|
-|`bUnitID`|integer| We will (once again) pass the ID of the current user's business-unit.|
-|`name`|string| The consumer name, we will use the hostname of the current server.|
+| Parameter | Type    | Description                                                           |
+| --------- | ------- | --------------------------------------------------------------------- |
+| `bUnitID` | integer | We will (once again) pass the ID of the current user's business-unit. |
+| `name`    | string  | The consumer name, we will use the hostname of the current server.    |
 
 {{< distance >}}
 
@@ -154,7 +160,7 @@ func (c *AuthenticatedClient) CreateNode(bUnitID, consumerID, osTypeID, nodeType
 The `CreateNode()` method creates a backup node associated with a consumer and returns a new `Node` struct. It requires the following parameters:
 
 | Parameter           | Type    | Description                                                                                                                                            |
-|---------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `bUnitID`           | integer | As before we'll be using the current user's business-unit.                                                                                             |
 | `consumerID`        | integer | The consumer in which to place the backup node. We'll pass the ID of the consumer we just created.                                                     |
 | `osType`            | integer | Here we pass the constant `osTypeID`that we, further up, declared. At Safespring Backup a linux server has ID 3. A Windows server would have the ID 2. |
@@ -163,22 +169,23 @@ The `CreateNode()` method creates a backup node associated with a consumer and r
 | `clientOptionSetID` | integer | Backup client Optionset to use. We'll use the DEDUP_AND_COMPRESS Optionset                                                                             |
 | `contact`           | integer | Contact regarding the backup node. Typically the departament responsible for managing the backup node.                                                 |
 
-
 {{< distance >}}
 
 ## 7. Activating the server
 
 Having created both a consumer (consumption-unit) and a backup node at the server level we now have to activate the node in order to retrieve the username and password to pass along to the IBM Spectrum Protect Backup-Archive Client that will be running on the server and which will actually be performing the backups. This is done using the `ActivateNode()` method:
+
 ```go
 func (c *AuthenticatedClient) ActivateNode(bUnitID, consumerID int) (Node, error)
 ```
+
 The `ActivateNode()` method returns a `Node` struct where the values `Node.TsmName` and `Node.TsmPassword` are retrieved when the backup node is activated. These values will allow the IBM Spectrum Protect Backup-Archive Client to correctly identify itself when connecting to the backup server. We'll call the `ActivateNode()` method using the same business-unit ID and consumer ID as before.
 
 {{< distance >}}
 
 ## 8. Finished application
 
-Now let's put everything together and take a look at the complete application: 
+Now let's put everything together and take a look at the complete application:
 
 ```go
 package main
@@ -253,7 +260,8 @@ func main() {
     fmt.Printf("%s\n%s\n", backupNode.TsmName, backupNode.TsmPassword)
 }
 ```
-The code above will result in a standalone binary at ~7Mb which is easily distributable and can be executed from a shell script exporting the required environment variables. Upon activation the username and password needed by the IBM Spectrum Protect Backup-Archive Client is in our example code printed to stdout and can be used within the executing script to finish the installation.  
+
+The code above will result in a standalone binary at ~7Mb which is easily distributable and can be executed from a shell script exporting the required environment variables. Upon activation the username and password needed by the IBM Spectrum Protect Backup-Archive Client is in our example code printed to stdout and can be used within the executing script to finish the installation.
 
 {{% note "Recommendation" %}}
 The example code above has for the sake of simplicity omitted any error handling. In a production environment exception handling is recommended
@@ -261,6 +269,6 @@ The example code above has for the sake of simplicity omitted any error handling
 
 In just over 35 lines of code, we have successfully developed a fully functional tool to automate backup client enrollment utilizing Safespring's cloutility-api-client library.
 
-To summarize, the cloutility-api-client library by Safespring has enabled us to create an automated backup client enrollment tool that can be effortlessly integrated into your existing processes. This showcases Safespring's dedication to preventing vendor lock-in and advocating for seamless integration with our services. 
+To summarize, the cloutility-api-client library by Safespring has enabled us to create an automated backup client enrollment tool that can be effortlessly integrated into your existing processes. This showcases Safespring's dedication to preventing vendor lock-in and advocating for seamless integration with our services.
 
 We are committed to offering our customers the flexibility and liberty to select and modify their solutions based on their requirements. If you have any questions or need support with implementation, please do not hesitate to contact our support team. Happy coding!

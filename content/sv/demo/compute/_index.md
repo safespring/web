@@ -1,13 +1,13 @@
 ---
 title: "Introduction to Safespring Cloud Platform"
-language: "En"
+language: "en"
 date: "2024-04-19"
 publishDate: "2024-04-19"
 draft: false
 tags: ["English"]
 card: "/img/webinar/thumbnails/demo-episode-series.webp"
 socialmediabild: ""
-intro: 'This series offers a structured sequence of in-depth tutorials aimed at engineers looking to enhance their practical skills with Safespring platform. '
+intro: "This series offers a structured sequence of in-depth tutorials aimed at engineers looking to enhance their practical skills with Safespring platform. "
 partner: ""
 audience: "saas"
 explorer: ""
@@ -18,11 +18,11 @@ sidebarimage: ""
 nosidebar: "invisible"
 toc: "Episode"
 aliases:
-- /demo/compute/
+  - /demo/compute/
 ---
 
-
 # Schedule a private demo
+
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?
 {{< /ingress >}}
@@ -35,8 +35,6 @@ At Safespring, we provide a cloud service that supports your business's need for
 - A walkthrough of how our platform can support your business's digital transformation
 - Guidance on optimizing your cloud strategy to better suit your specific business needs
 
-
-
 {{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
 
 {{< distance >}}
@@ -46,7 +44,6 @@ At Safespring, we provide a cloud service that supports your business's need for
 {{< ingress >}}
 Through focused demonstrations, we cover essential tasks and configurations necessary for managing and optimizing the Safespring OpenStack environment.
 {{< /ingress >}}
-
 
 ### Series Overview
 

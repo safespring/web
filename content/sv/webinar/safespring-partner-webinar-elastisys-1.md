@@ -1,6 +1,6 @@
 ---
 title: "Cloud to cloud migration"
-language: "En"
+language: "en"
 publishDate: "2020-09-18T07:37:39+02:00"
 draft: false
 tags: ["English"]
@@ -16,8 +16,8 @@ chaptersTitle: "I detta avsnitt"
 chapters:
 sidebar: "x"
 aliases:
-    - /webinar/fireside-chat-cloud-migration/
-    - /webinar/safespring-partner-webinar-elastisys-1/
+  - /webinar/fireside-chat-cloud-migration/
+  - /webinar/safespring-partner-webinar-elastisys-1/
 ---
 
 {{< ingress>}}
@@ -27,7 +27,6 @@ Listen in to the fireside chat between two Senior Cloud Architects, Lars Larsson
 Listen in to the firechat between two Senior Cloud Architects, Lars Larsson (Elastisys) and Gabriel Paus (Safespring), who both have helped companies move from one cloud to another several times before.
 
 During the Live chat, you will learn about the top five things you need to consider when migrating from one cloud to another and get hands-on advise. The session ends with an AMA-session where you have the chance to get their advise on your specific use case.
-
 
 They will walk you through how:
 

@@ -1,7 +1,7 @@
 ---
 title: "Safespring är den föredragna moln-plattformen"
 section: "Public cloud"
-language: "Se"
+language: "sv"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Molntjänster med hög säkerhet! Stabil infrastruktur och resurskonsumering efter behov utan att förlora kontroll över din data."
@@ -11,7 +11,7 @@ nolist: "x"
 fullwidth: ""
 nosidebar: ""
 aliases:
-- /tjanster/
+  - /tjanster/
 ---
 
 {{< services >}}
@@ -32,7 +32,7 @@ Safespring lever upp till lokala lagar och regler kring datalagring såsom GDPR 
 Genom självbetjäning kan din miljö i Safespring skalas upp och ned efter era behov.
 {{< /ingress >}}
 
-I Safespring skalar du enkelt upp och ner och betalar bara för det ni  använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
+I Safespring skalar du enkelt upp och ner och betalar bara för det ni använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
 
 ### En miljö i Safespring ger:
 

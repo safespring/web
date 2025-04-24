@@ -5,7 +5,7 @@ date: 2020-07-06T09:42:10+02:00
 draft: false
 language: En
 section: "Safespring tjenester"
-Language: "No"
+language: "nb"
 aliases:
 - /no/tjenester/
 ---

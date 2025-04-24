@@ -1,7 +1,7 @@
 ---
 title: "Stärk ditt projekt med cloud computing"
 metatitle: "Stärk ditt företag med cloud computing och lägg till VPN i Safespring"
-language: "Se"
+language: "sv"
 documentation: "Compute"
 cardtitle: "Compute"
 cardicon: "fa-solid fa-server"
@@ -19,23 +19,22 @@ sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
 aliases:
-    - /compute/
-    - /safespring-compute/
-    - /tjanster/safespring-compute/
+  - /compute/
+  - /safespring-compute/
+  - /tjanster/safespring-compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-server" text="Central blocklagring" link="#central-blocklagring" color="#195F8C" >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32" >}}
-    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C" >}}
-    {{< icon-block icon="fa-solid fa-chart-line" text="Skalbar infrastruktur" link="" color="#3C9BCD" >}}
-    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD" >}}
-    {{< icon-block icon="fa-solid fa-cloud-upload-alt" text="99,9% tillgänglighet" link="" color="#32cd32" >}}
+{{< icon-block icon="fa-solid fa-server" text="Central blocklagring" link="#central-blocklagring" color="#195F8C" >}}
+{{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32" >}}
+{{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C" >}}
+{{< icon-block icon="fa-solid fa-chart-line" text="Skalbar infrastruktur" link="" color="#3C9BCD" >}}
+{{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD" >}}
+{{< icon-block icon="fa-solid fa-cloud-upload-alt" text="99,9% tillgänglighet" link="" color="#32cd32" >}}
 {{< /icon-block-container >}}
-
 
 ## Infrastructure cloud services
 
@@ -63,10 +62,11 @@ Safespring hjälper dig migrera från VMware till Safespring, kostnadsfritt och 
 {{< distance >}}
 
 ### Samarbeta effektivt med Safespring Compute
+
 Vår tjänst underlättar samarbete mellan olika avdelningar eller grupper, förenklar IT-hantering och tillför effektivitet till din organisation.
 
-
 ### Byggt på öppen källkod
+
 Safespring Compute är byggd på Open Source, vilket möjliggör för företag och organisationer att dela på produktutvecklingen och innovation. Detta gynnar alla parter - företag, organisationer och slutanvändare.
 
 {{% accordion title="VPN tjänster" %}}
@@ -86,7 +86,7 @@ På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter
 ## Central blocklagring
 
 {{< ingress >}}
-Vår centraliserade blocklagring erbjuder säker och flexibel lagringskapacitet som är separerad från de noder där dina instanser körs. 
+Vår centraliserade blocklagring erbjuder säker och flexibel lagringskapacitet som är separerad från de noder där dina instanser körs.
 {{< /ingress >}}
 
 Detta möjliggör hög tillgänglighet och tillförlitlighet. Genom ett distribuerat Ceph-kluster kan vi garantera optimal prestanda och skalbarhet för dina specifika behov. Våra blocklagringsalternativ finns i två varianter, anpassade för olika användnings­områden: FAST och LARGE.
@@ -100,20 +100,16 @@ Detta möjliggör hög tillgänglighet och tillförlitlighet. Genom ett distribu
 
 {{< horisontal-card image="/img/card/safespring-amelia-small.jpg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet. Det innebär också att ledningen ansvarar för efterlevnaden av säkerhetsåtgärder, inklusive användning av kryptering och säkerhetsteknologier." >}}
 
-
 ## OpenStack och Kubernetes
+
 OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.
 
 Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
 
 {{< readfile "Vad är IaaS?" "/content/read-more/iaas-vs-colocation.md" >}}
 
-
 {{< distance >}}
 
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data " link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 
 {{< distance >}}
-
-
-

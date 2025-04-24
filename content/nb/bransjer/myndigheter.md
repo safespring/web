@@ -7,13 +7,13 @@ draft: false
 intro: "Safesprings tjenester kan anskaffes direkte eller via vår rammeavtale med Sikt."
 background: "safespring-government-background.svg"
 startpage: "yes"
-language: "No"
+language: "nb"
 section: "Safespring"
 aliases:
-- /no/bransjer/myndigheter/
+  - /no/bransjer/myndigheter/
 ---
 
- ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
+![Safespring benefits](/img/safespring-myndigheter-key-points.svg)
 
 ## Rammeavtale
 
