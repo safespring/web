@@ -33,6 +33,8 @@ chapters:
   - title: "Livscykelhantering"
     time: 591
     timeFormatted: "9:51"
+aliases:
+- /webinar/kubernetes-15-principles/avsnitt-3/
 ---
 
 ## Avsnitt 3

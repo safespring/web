@@ -26,6 +26,7 @@ thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-arkivit-2.jpg"
 sidebar: "x"
 aliases:
    - /webinar/kommun/arkivit-byggprojekt.md
+   - /webinar/kommun/safespring-partner-webinar-arkivit-2/
 ---
 
 {{< ingress>}}

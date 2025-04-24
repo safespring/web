@@ -14,6 +14,8 @@ sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/en/contact"
 saas: ""
 TOC: "On this page"
+aliases:
+- /en/gdpr/
 ---
 
 {{< icon-block-container >}}

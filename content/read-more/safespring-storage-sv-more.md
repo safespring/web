@@ -1,3 +1,10 @@
+---
+title: ""
+date: ""
+draft: false
+aliases:
+- /read-more/safespring-storage-sv-more/
+---
 ## Vad är IaaS Storage?
 IaaS Storage (Infrastructure as a Service Storage) är en typ av molnlagringstjänst som erbjuder företag skalbara och flexibla lagringsmöjligheter i molnet. IaaS Storage gör det enkelt att lagra och hantera data på molnservern, vilket ger dig möjligheten att komma åt dina data var som helst och när som helst, så länge du har en internetuppkoppling.
 

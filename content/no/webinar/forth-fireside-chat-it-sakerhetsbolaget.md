@@ -13,6 +13,8 @@ explorer: "https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6
 sidebarlinkurl: "https://us02web.zoom.us/webinar/register/2716382806738/WN_vW1gXAspTT6etTbV68d6tA"
 sidebarlinkname: "SE DIREKTE"
 language: "No"
+aliases:
+- /no/webinar/forth-fireside-chat-it-sakerhetsbolaget/
 ---
 
 {{< calendar month="des" day="16" type="Fireside Chat" platform="Plattform: Zoom" time="klokken 13.00" >}}

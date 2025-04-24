@@ -18,6 +18,7 @@ toc: "Table of Contents"
 language: "En"
 aliases:
     - /whitepaper/immutable-storage/
+    - /solution-brief/immutable-storage/
 ---
 
 

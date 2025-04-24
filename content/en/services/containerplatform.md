@@ -18,6 +18,8 @@ sidebarlinkurl: "#interested-in-trying-out-the-platform"
 showthedate: false
 banner: "blue-hover-tech"
 language: "En"
+aliases:
+- /en/services/containerplatform/
 ---
 
 {{< ingress >}}

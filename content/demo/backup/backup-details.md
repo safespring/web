@@ -41,6 +41,8 @@ chapters:
   - title: "Backup: Containermiljö"
     time: 675
     timeFormatted: "11:15"
+aliases:
+- /demo/backup/backup-details/
 ---
 
 {{< ingress >}}

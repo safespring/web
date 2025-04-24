@@ -31,6 +31,7 @@ chapters:
   timeFormatted: "44:21"
 aliases:
    - /webinar/fireside-chat-compliant-kubernetes
+   - /webinar/safespring-partner-webinar-elastisys-2/
 ---
 
 {{< ingress>}}

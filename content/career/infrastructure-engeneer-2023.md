@@ -13,6 +13,8 @@ language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 toc: "On this page"
+aliases:
+- /career/infrastructure-engeneer-2023/
 ---
 
 

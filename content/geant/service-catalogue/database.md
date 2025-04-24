@@ -18,6 +18,8 @@ section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: "x"
+aliases:
+- /geant/service-catalogue/database/
 ---
 
 ## Database as a Service

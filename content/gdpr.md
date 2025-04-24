@@ -14,6 +14,8 @@ sidebarlinkname2: "Kontaka Safespring"
 sidebarlinkurl2: "/kontakt"
 saas: ""
 TOC: "På denna sida"
+aliases:
+- /gdpr/
 ---
 
 {{< icon-block-container >}}

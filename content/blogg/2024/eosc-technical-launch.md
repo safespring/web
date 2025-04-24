@@ -11,6 +11,8 @@ card: "safespring_background_43.webp"
 eventbild: ""
 socialmediabild: ""
 language: "En"
+aliases:
+- /blogg/2024/eosc-technical-launch/
 ---
 
 {{< ingress >}}

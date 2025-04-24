@@ -17,6 +17,8 @@ sidebarlinkurl: "/demo"
 sidebarlinkname2: "Kontaka Safespring"
 sidebarlinkurl2: "/kontakt"
 saas: ""
+aliases:
+- /hello/
 ---
 
 {{< ingress >}}

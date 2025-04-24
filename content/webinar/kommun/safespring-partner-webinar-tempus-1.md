@@ -17,6 +17,7 @@ thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-tempus-1.jpg"
 sidebar: "x"
 aliases:
    - /webinar/kommun/tempus
+   - /webinar/kommun/safespring-partner-webinar-tempus-1/
 ---
 
 ### Om webbinariet

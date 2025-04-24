@@ -16,6 +16,7 @@ language: "En"
 aliases:
     - /eosc
     - /EOSC
+    - /en/eosc/
 ---
 
 {{< ingress >}}

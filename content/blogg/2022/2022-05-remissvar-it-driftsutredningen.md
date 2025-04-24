@@ -14,6 +14,7 @@ author_image: "firm"
 toc: "Innehåll"
 aliases:
     - /blogg/remissvar-it-driftsutredningen
+    - /blogg/2022/2022-05-remissvar-it-driftsutredningen/
 ---
 
 {{< ingress >}}

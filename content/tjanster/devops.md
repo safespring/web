@@ -11,6 +11,7 @@ sidebarlinkurl: "#kontaktad"
 socialmedia: "safespring-devops.jpg"
 aliases:
     - /devops/
+    - /tjanster/devops/
 ---
 
 <div class="ingress"><p>För att kunna utnyttja den nya teknikens fördelar fullt ut så handlar det inte bara om att använda rätt tjänst utan också att anpassa sina arbetsprocesser.</p></div>

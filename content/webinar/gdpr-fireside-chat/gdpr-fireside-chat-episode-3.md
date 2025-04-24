@@ -21,6 +21,7 @@ aliases:
 chaptersTitle: "I detta avsnitt"
 chapters:
 - title: "Intro"
+- /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-3/
   time: 0
   timeFormatted: "0:00"
 ---

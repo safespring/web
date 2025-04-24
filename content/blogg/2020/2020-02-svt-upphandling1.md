@@ -11,6 +11,7 @@ section: "blogg"
 author: "Fredric Wallsten"
 aliases:
     - /blogg/svt-upphandling1
+    - /blogg/2020/2020-02-svt-upphandling1/
 ---
 
 {{< ingress >}}

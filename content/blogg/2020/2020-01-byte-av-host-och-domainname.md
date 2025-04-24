@@ -11,6 +11,7 @@ socialmediabild: "safespring_social_25.jpg"
 section: "Tech update"
 aliases:
     - /blogg/byte-av-host-och-domainname
+    - /blogg/2020/2020-01-byte-av-host-och-domainname/
 ---
 
 <a id="text-button" href="#english">Read the English version</a>

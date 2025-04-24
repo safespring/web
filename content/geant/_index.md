@@ -11,4 +11,6 @@ fullwidth: "x"
 language: "En"
 nolist: ""
 noindex: "x"
+aliases:
+- /geant/
 ---

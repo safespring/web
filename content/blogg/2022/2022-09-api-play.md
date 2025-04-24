@@ -14,6 +14,7 @@ language: "En"
 toc: "Table of contents"
 aliases:
     - /blogg/2022-09-api-play
+    - /blogg/2022/2022-09-api-play/
 ---
 
 {{< ingress >}}

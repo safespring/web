@@ -44,6 +44,7 @@ chapters:
   time: 3111
   timeFormatted: "51:51"
 - title: "Avslutning"
+- /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-2/
   time: 3734
   timeFormatted: "1:02:14"
 ---

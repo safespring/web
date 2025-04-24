@@ -39,6 +39,7 @@ chapters:
   time: 2675
   timeFormatted: "44:35"
 - title: "Esams arbete"
+- /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-5/
   time: 2840
   timeFormatted: "47:20"
 ---

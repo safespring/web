@@ -4,6 +4,8 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Vår djupa kompetens och våra egenproducerade tjänster tillsammans med samarbeten gör oss mycket flexibla. Vi kan den nordiska marknaden."
 background: ""
+aliases:
+- /om-safespring/samarbeten-och-partners/
 ---
 
 {{< ingress >}}

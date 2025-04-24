@@ -23,6 +23,7 @@ megamenu: "yes"
 aliases:
     - /storage/
     - /safespring-storage/
+    - /tjanster/safespring-storage/
 ---
 
 

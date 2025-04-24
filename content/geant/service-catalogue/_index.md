@@ -11,6 +11,8 @@ fullwidth: "x"
 language: "En"
 nolist: "x"
 noindex: ""
+aliases:
+- /geant/service-catalogue/
 ---
 
 {{< geant-service-catalogue >}}

@@ -17,6 +17,8 @@ sidebarlinkname: ""
 sidebarimage: ""
 nosidebar: "invisible"
 toc: "Avsnitt"
+aliases:
+- /webinar/gdpr-fireside-chat/
 ---
 
 

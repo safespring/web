@@ -11,6 +11,7 @@ noindex: "yes"
 language: "En"
 aliases:
     - /create-account
+    - /onboarding/new-account/
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">

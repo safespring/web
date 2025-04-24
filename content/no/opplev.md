@@ -7,6 +7,7 @@ intro: "Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg
 english: "yes"
 aliases:
     - /opplev
+    - /no/opplev/
 ---
 ## Create a free demo account
 Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre tjenester er designet med sikkerhet i fokus og dine data forlater aldri landet.

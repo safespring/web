@@ -17,6 +17,7 @@ chapters:
 sidebar: "x"
 aliases:
     - /webinar/fireside-chat-cloud-migration/
+    - /webinar/safespring-partner-webinar-elastisys-1/
 ---
 
 {{< ingress>}}

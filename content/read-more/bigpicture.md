@@ -1,3 +1,10 @@
+---
+title: ""
+date: ""
+draft: false
+aliases:
+- /read-more/bigpicture/
+---
 # Safespring Solution Brief for Research Projects
 
 {{< ingress >}}

@@ -7,4 +7,5 @@ dokumentbild: "safespring_card_21.jpg"
 noindex: "noindex"
 aliases:
     - /sunet/
+    - /dokument/sunet/
 ---

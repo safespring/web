@@ -18,6 +18,8 @@ sidebartext: "Alex shares insights on Asker's collaboration with Safespring and 
 saas: ""
 sidebarwhitepaper: ""
 service: "Compliant Kubernetes"
+aliases:
+- /en/services/case/asker/
 ---
 
 {{< ingress >}}

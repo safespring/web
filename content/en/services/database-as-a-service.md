@@ -27,6 +27,8 @@ saas: ""
 sidebarwhitepaper: ""
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
+aliases:
+- /en/services/database-as-a-service/
 ---
 
 {{< icon-block-container >}}

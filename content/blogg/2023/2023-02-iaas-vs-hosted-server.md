@@ -15,6 +15,8 @@ sidebarlinkname: "Utforska Safespring"
 sidebarlinkurl: "/"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "/kontakt/"
+aliases:
+- /blogg/2023/2023-02-iaas-vs-hosted-server/
 ---
 
 {{< ingress >}} 

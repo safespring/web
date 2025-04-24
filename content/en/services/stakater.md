@@ -16,6 +16,8 @@ socialmedia: ""
 sidebartext: ""
 devops: ""
 section: "Public Cloud"
+aliases:
+- /en/services/stakater/
 ---
 
 {{< icon-block-container >}}

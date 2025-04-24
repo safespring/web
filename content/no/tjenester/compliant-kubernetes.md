@@ -18,6 +18,8 @@ sidebarlinkurl2: "/demo/compute/"
 sidebarwhitepaper: ""
 startpage: "yes"
 Language: "No"
+aliases:
+- /no/tjenester/compliant-kubernetes/
 ---
 
 {{< ingress >}}

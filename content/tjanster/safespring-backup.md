@@ -20,6 +20,7 @@ socialmedia: "safespring-backup.jpg"
 aliases:
     - /backup/
     - /safespring-backup/
+    - /tjanster/safespring-backup/
 section: "Public Cloud" 
 megamenu: "yes"
 ---

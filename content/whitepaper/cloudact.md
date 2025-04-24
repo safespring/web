@@ -18,6 +18,7 @@ socialmediabild: "safespring_social_26.jpg"
 aliases:
     - /whitepapers/cloudact
     - /cloudact
+    - /whitepaper/cloudact/
 toc: "Innehåll"
 ---
 

@@ -19,6 +19,8 @@ saas: ""
 sidebarwhitepaper: ""
 toc: "In this article"
 service: "Safespring Private Cloud"
+aliases:
+- /en/services/case/scilifelab/
 ---
 
 ##

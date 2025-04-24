@@ -14,6 +14,8 @@ socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 TOC: "On this page"
 sidebarimage: "safespring-kubernetes.svg"
+aliases:
+- /career/team-lead-containerplatform/
 ---
 
 {{< ingress >}}

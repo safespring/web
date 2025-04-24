@@ -19,6 +19,7 @@ cardintro: "With direct connection to research networks and OCRE, you can get st
 TOC: "På denne siden"
 aliases:
    - /no/bransjer/ocre-2024
+   - /no/bransjer/Utdanning-og-forskning/
 ---
 
 

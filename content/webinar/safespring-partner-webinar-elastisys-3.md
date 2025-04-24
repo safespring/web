@@ -15,6 +15,7 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 sidebar: "x"
 aliases:
     - /webinar/elastisys/
+    - /webinar/safespring-partner-webinar-elastisys-3/
 ---
 
 {{< ingress>}}

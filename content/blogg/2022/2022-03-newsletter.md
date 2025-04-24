@@ -13,6 +13,7 @@ language: "En"
 toc: ""
 aliases:
     - /blogg/2022-03-newsletter
+    - /blogg/2022/2022-03-newsletter/
 ---
 
 {{< ingress >}}

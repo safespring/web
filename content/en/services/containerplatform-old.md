@@ -12,6 +12,8 @@ sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Prices"
 sidebarlinkurl2: "/en/price/"
+aliases:
+- /en/services/containerplatform-old/
 ---
 
 {{< icon-block-container >}}

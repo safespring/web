@@ -39,6 +39,8 @@ chapters:
   - title: "Vad är etiketter?"
     time: 672
     timeFormatted: "11:12"
+aliases:
+- /webinar/kubernetes-15-principles/avsnitt-2/
 ---
 
 ## Avsnitt 2

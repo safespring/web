@@ -14,6 +14,8 @@ sectiontext: "Blog"
 section: "Tech update"
 author: "Gabriel Paues"
 TOC: "In this post"
+aliases:
+- /blogg/2025/2025-02-vmware-exit/
 ---
 
 

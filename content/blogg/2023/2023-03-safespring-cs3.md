@@ -15,6 +15,8 @@ sidebarlinkname: "Läs presentationen"
 sidebarlinkurl: "https://indico.cern.ch/event/1210538/contributions/5207911/"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
+aliases:
+- /blogg/2023/2023-03-safespring-cs3/
 ---
 
 {{< ingress >}}

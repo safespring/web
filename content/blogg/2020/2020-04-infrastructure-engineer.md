@@ -10,6 +10,7 @@ socialmediabild: ""
 section: "blogg"
 aliases:
     - /blogg/infrastructure-engineer
+    - /blogg/2020/2020-04-infrastructure-engineer/
 ---
 
 ## Apply as an Infrastructure Engineer

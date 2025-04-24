@@ -8,6 +8,8 @@ sidebarlinkname: "Download PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring-sunet-private-cloud-security-controls.pdf"
 noindex: "noindex"
+aliases:
+- /dokument/sunet/private-cloud-security-controls/
 ---
 
 ### Scope

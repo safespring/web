@@ -6,6 +6,7 @@ intro: "We believe in building scalable software and infrastructure, and with th
 background: ""
 aliases:
     - /utbildning/
+    - /tjanster/utbildning/
 ---
 
 <div class="ingress"><p>Safespring provides learning experiences for companies that want to leverage the power of the cloud.</p></div>

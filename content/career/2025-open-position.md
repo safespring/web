@@ -10,6 +10,8 @@ language: "En"
 socialmedia: "/socialmedia/safespring-work.jpg"
 Language: "En"
 sidebarimage: "safespring-image.svg"
+aliases:
+- /career/2025-open-position/
 ---
 
 ## Get Discovered

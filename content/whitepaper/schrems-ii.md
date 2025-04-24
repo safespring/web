@@ -17,6 +17,7 @@ socialmediabild: "safespring_social_33.jpg"
 toc: "Innehåll"
 aliases:
     - /schrems/
+    - /whitepaper/schrems-ii/
 ---
 
 {{< ingress >}}

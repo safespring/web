@@ -37,6 +37,7 @@ chapters:
 aliases:
     - /webinar/gdpr-fireside-chat/sixth-fireside-chat-it-sakerhetsbolaget/
     - /webinar/sixth-fireside-chat-it-sakerhetsbolaget/
+    - /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-6/
 ---
 
 

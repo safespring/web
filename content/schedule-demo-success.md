@@ -18,6 +18,8 @@ sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact"
 saas: ""
 noindex: "yes"
+aliases:
+- /schedule-demo-success/
 ---
 
 {{< ingress >}}

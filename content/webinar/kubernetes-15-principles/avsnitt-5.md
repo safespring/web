@@ -39,6 +39,8 @@ chapters:
   - title: "Pod Disruption Budgets"
     time: 828
     timeFormatted: "13:48"
+aliases:
+- /webinar/kubernetes-15-principles/avsnitt-5/
 ---
 
 ## Avsnitt 5

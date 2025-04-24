@@ -10,6 +10,7 @@ socialmedia: "safespring-private-cloud.jpg"
 aliases:
     - /private-cloud/
     - /tjanster/managed-private-cloud/
+    - /tjanster/managed-infrastructure/
 section: "Private Cloud"
 toc: "På denna sida"
 ---

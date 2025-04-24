@@ -22,5 +22,6 @@ explorer: ""
 aliases:
     - /event/
     - /webinars/
+    - /webinar/
 fullwidth: "x"
 ---

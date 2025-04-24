@@ -16,6 +16,8 @@ sidebarlinkname: "Läs om våra datacenter"
 sidebarlinkurl: "/om-safespring/datacenter"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "/kontakt"
+aliases:
+- /blogg/2023/2023-02-safespring-green-energy/
 ---
 
 {{< ingress >}}

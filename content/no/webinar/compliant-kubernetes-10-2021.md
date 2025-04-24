@@ -11,6 +11,8 @@ partner: "elastisys.svg"
 language: "No"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-complaint-kubernetes-no/master.m3u8"
 thumbnail: "/img/event/card/safespring_card_18.jpg"
+aliases:
+- /no/webinar/compliant-kubernetes-10-2021/
 ---
 
 

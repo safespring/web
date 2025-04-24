@@ -15,6 +15,8 @@ sidebarimage: ""
 background: "safespring-kubernetes-background.svg"
 socialmediabild: "safespring_social_21.gif"
 language: "En"
+aliases:
+- /solution-brief/compliant-kubernetes/
 ---
 
 {{% ingress %}}

@@ -8,6 +8,8 @@ background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Vår säkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
+aliases:
+- /om-safespring/vanliga-fragor/
 ---
 
 <div itemscope itemtype="https://schema.org/FAQPage">

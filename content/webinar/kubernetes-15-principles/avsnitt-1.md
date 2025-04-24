@@ -39,6 +39,8 @@ chapters:
 - title: "Compliant Kubernetes"
   time: 1120
   timeFormatted: "18:40"
+aliases:
+- /webinar/kubernetes-15-principles/avsnitt-1/
 ---
 
 ## Avsnitt 1

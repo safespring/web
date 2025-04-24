@@ -38,6 +38,7 @@ chapters:
   timeFormatted: "20:27"
 aliases:
     - /eforvaltningsdagarna2023
+    - /webinar/eforvaltningsdagarna-2023/
 ---
 
 {{< ingress >}}

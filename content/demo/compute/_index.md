@@ -17,6 +17,8 @@ sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "invisible"
 toc: "Episode"
+aliases:
+- /demo/compute/
 ---
 
 

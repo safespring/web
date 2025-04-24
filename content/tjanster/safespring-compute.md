@@ -21,6 +21,7 @@ socialmedia: "safespring-compute.jpg"
 aliases:
     - /compute/
     - /safespring-compute/
+    - /tjanster/safespring-compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"

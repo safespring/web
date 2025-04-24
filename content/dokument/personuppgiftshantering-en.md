@@ -6,6 +6,8 @@ intro: "Safespring receives and stores the information entered in the contact fo
 documentimage: "safespring_card_20.jpg"
 general: "yes"
 language: "En"
+aliases:
+- /dokument/personuppgiftshantering-en/
 ---
 
 {{< ingress >}}

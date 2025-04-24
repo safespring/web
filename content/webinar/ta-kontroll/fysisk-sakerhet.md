@@ -29,6 +29,8 @@ chapters:
 - title: "Integration"
   time: 274
   timeFormatted: "4:34"
+aliases:
+- /webinar/ta-kontroll/fysisk-sakerhet/
 ---
 
 

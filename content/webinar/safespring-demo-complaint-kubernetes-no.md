@@ -16,6 +16,7 @@ sidebar: "x"
 aliases:
    - /webinar/compliant-kubernetes-10-2021
    - /no/webinar/compliant-kubernetes-10-2021/
+   - /webinar/safespring-demo-complaint-kubernetes-no/
 ---
 
 

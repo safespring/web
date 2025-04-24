@@ -17,6 +17,8 @@ sidebarlinkname: "Cloutility-api-client Repository"
 sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
+aliases:
+- /blogg/2023/2023-04-creating-an-opensource-backup-client-library/
 ---
 
 {{< ingress >}}

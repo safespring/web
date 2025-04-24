@@ -12,6 +12,8 @@ section: "blogg"
 language: "Se"
 author: "Fredric Wallsten"
 toc: ""
+aliases:
+- /blogg/2023/2023-09-amelia-senior-advisor/
 ---
 
 {{% ingress %}}

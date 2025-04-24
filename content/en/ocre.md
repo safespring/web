@@ -21,6 +21,7 @@ aliases:
     - /OCRE
     - /ocre
     - /en/ocre-2024
+    - /en/ocre/
 ---
 
 
