@@ -8,10 +8,9 @@ sidebarlinkname: "Apply now"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-language: "en"
 sidebarimage: "safespring-image.svg"
 aliases:
-- /career/2025-network-engineer/
+  - /career/2025-network-engineer/
 ---
 
 ## Who are you?

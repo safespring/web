@@ -11,11 +11,10 @@ sidebarlinkname: "Email your Resume"
 sidebarlinkicon: "fa-paper-plane-top"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-language: "en"
 TOC: "On this page"
 sidebarimage: " "
 aliases:
-- /career/2024-09-software-engineer-integrations/
+  - /career/2024-09-software-engineer-integrations/
 ---
 
 {{< ingress >}}

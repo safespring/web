@@ -11,11 +11,10 @@ sidebarlinkname: "Apply now"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-language: "en"
 TOC: "On this page"
 sidebarimage: "safespring-gabriel-demo.webp"
 aliases:
-- /career/2024-12-software-engineer-integrations/
+  - /career/2024-12-software-engineer-integrations/
 ---
 
 ## Are you our next colleague?

@@ -5,9 +5,8 @@ date: "2020-07-03"
 draft: false
 language: "nb"
 section: "Safespring"
-language: "nb"
 aliases:
-- /no/om-safespring/
+  - /no/om-safespring/
 ---
 
 {{< ingress >}}

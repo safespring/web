@@ -5,10 +5,9 @@ intro: "Safespring delivers a locally based Cloud built for the apps of tomorr
 date: "2020-07-03"
 draft: false
 section: "Safespring"
-language: "en"
 socialmedia: "/safespring-start.jpg"
 aliases:
-- /en/about/
+  - /en/about/
 ---
 
 <div class="ingress"><p>Safespring delivers a locally based Cloud built for the apps of tomorrow. It enables our customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency and retaining data sovereignty. With our platform, we help our customers improve competitiveness to delivery excellence.</p></div>

@@ -10,7 +10,6 @@ sidebarlinkurl: "#down"
 socialmedia: "safespring-compute.jpg"
 language: "nb"
 section: "Fredric Wallsten"
-language: "nb"
 article: "DN.no"
 socialmedia: "/socialmedia/fredric-social-article.jpg"
 aliases:

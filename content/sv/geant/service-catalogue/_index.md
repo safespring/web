@@ -8,11 +8,10 @@ language: "en"
 socialmedia: "/safespring-start.jpg"
 nosidebar: "none"
 fullwidth: "x"
-language: "en"
 nolist: "x"
 noindex: ""
 aliases:
-- /geant/service-catalogue/
+  - /geant/service-catalogue/
 ---
 
 {{< geant-service-catalogue >}}

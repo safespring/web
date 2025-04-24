@@ -11,10 +11,9 @@ sidebarlinkname: "Upload CV"
 sidebarlinkicon: "fa-external-link-alt"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-language: "en"
 toc: "On this page"
 aliases:
-- /career/infrastructure-engeneer-2023/
+  - /career/infrastructure-engeneer-2023/
 ---
 
 ## About Safespring

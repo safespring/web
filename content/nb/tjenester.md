@@ -3,11 +3,10 @@ title: "Safespring Infrastructure Service Catalog"
 intro: "Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge"
 date: 2020-07-06T09:42:10+02:00
 draft: false
-language: En
 section: "Safespring tjenester"
 language: "nb"
 aliases:
-- /no/tjenester/
+  - /no/tjenester/
 ---
 
 <div class="ingress"><p>Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge.</p></div>

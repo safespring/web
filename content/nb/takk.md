@@ -5,10 +5,9 @@ date: "2020-09-25"
 draft: false
 language: "nb"
 section: "Safespring"
-language: "nb"
 aliases:
-   - /no/takk-di/
-   - /no/takk/
+  - /no/takk-di/
+  - /no/takk/
 ---
 
 <div class="ingress"><p>Safespring har kontorer i Sverige og i Norge med hovedkontor i Stockholm, Sverige.</p></div>

@@ -11,11 +11,10 @@ sidebarlinkname: "Send Resume"
 sidebarlinkicon: "fa-paper-plane-top"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-language: "en"
 TOC: "On this page"
 sidebarimage: "safespring-kubernetes.svg"
 aliases:
-- /career/engineer-containerplatform/
+  - /career/engineer-containerplatform/
 ---
 
 {{< ingress >}}

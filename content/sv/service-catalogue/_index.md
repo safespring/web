@@ -8,10 +8,9 @@ language: "en"
 socialmedia: "/safespring-start.jpg"
 nosidebar: "none"
 fullwidth: "x"
-language: "en"
 nolist: "x"
 aliases:
-- /service-catalogue/
+  - /service-catalogue/
 ---
 
 {{< service-catalogue >}}

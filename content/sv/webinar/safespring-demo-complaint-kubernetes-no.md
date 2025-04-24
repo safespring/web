@@ -10,13 +10,12 @@ eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"
 intro: "Vi vil gå gjennom Kubernetes med høy sikkerhet under tre punkter. Gjennom webinaret kan du stille spørsmål til våre eksperter på Kubernetes og sikre skytjenester."
 partner: "elastisys.svg"
-language: "nb"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-complaint-kubernetes-no/master.m3u8"
 sidebar: "x"
 aliases:
-   - /webinar/compliant-kubernetes-10-2021
-   - /no/webinar/compliant-kubernetes-10-2021/
-   - /webinar/safespring-demo-complaint-kubernetes-no/
+  - /webinar/compliant-kubernetes-10-2021
+  - /no/webinar/compliant-kubernetes-10-2021/
+  - /webinar/safespring-demo-complaint-kubernetes-no/
 ---
 
 {{< ingress>}}

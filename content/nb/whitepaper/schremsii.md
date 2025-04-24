@@ -8,10 +8,9 @@ sidebarlinkname: "Les direkte"
 sidebarlinkurl: "#down"
 language: "nb"
 section: "Informasjonsguide "
-language: "nb"
 socialmedia: "/safespring-schremsii.jpg"
 aliases:
-- /no/whitepaper/schremsii/
+  - /no/whitepaper/schremsii/
 ---
 
 ## Informasjonsguide om EU-domstolens ugyldigforklaring av Privacy Shield

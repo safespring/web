@@ -8,9 +8,8 @@ language: "en"
 socialmedia: "/safespring-start.jpg"
 nosidebar: "none"
 fullwidth: "x"
-language: "en"
 nolist: ""
 noindex: "x"
 aliases:
-- /geant/
+  - /geant/
 ---

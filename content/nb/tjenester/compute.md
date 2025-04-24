@@ -17,11 +17,10 @@ sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/no/pris/#safespring-compute"
 language: "nb"
 section: "Safespring Compute"
-language: "nb"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
-- /no/tjenester/compute/
+  - /no/tjenester/compute/
 ---
 
 {{< icon-block-container >}}

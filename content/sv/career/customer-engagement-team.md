@@ -10,9 +10,8 @@ sidebarlinkname: "Upload CV"
 sidebarlinkicon: "fa-external-link-alt"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
-language: "en"
 aliases:
-- /career/customer-engagement-team/
+  - /career/customer-engagement-team/
 ---
 
 ## Job description
