@@ -1,5 +1,5 @@
 ---
-language: "sv"
+language: "en"
 title: "Safespring courses"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -45,6 +45,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
 </div>
 
 ## Cloud computing, DevOps and microservices
+
 We’re currently offering two technical course packages that covers working with the cloud, from different roles. Each of these packages could be divided into two separate courses (3-4 topics per 2-day course), or even shorter and with deeper content for more experienced technical staff (1-2 topics per day).
 
 These two packages are developed to give you an overview and good understanding on a high level, what opportunities and advantages cloud services can offer your operations and businesses in terms of higher security, lower cost production, flexibility, shorter time to market, compliance with local laws and regulations, and more…
@@ -91,6 +92,7 @@ These two packages are developed to give you an overview and good understanding 
 </div>-->
 
 ## Before course start
+
 To ensure that participants gain maximum benefits from the training, detailed questionnaires will be sent to all course participants to establish exactly where their training needs lie. The completed forms will be analyzed by the course trainer. We also provide online studies to prepare you for the course.
 
 As a result, we ensure deliverance at the appropriate level and issues participants regard as relevant are addressed. The comprehensive course materials will enable them to digest the subject matter in their own time.
@@ -98,6 +100,7 @@ After the course
 A second Questionnaire will be sent out for a Post Training Effectiveness Assessment. The purpose of this questionnaire would be to measure and assess the learning outcomes with the participants a month after the training to gauge their level of understanding in implementing what they have learnt. Thus, identifying further areas for improvement.
 
 ## The training program methodology
+
 Our courses are thoroughly researched and structured to provide intense and intimate practical training to your organization. Our format consists in:
 
 - Pre-course questionnaires
@@ -108,18 +111,20 @@ Our courses are thoroughly researched and structured to provide intense and inti
 - Hands-on “learning by doing”
 
 ## About the instructors
+
 The curriculum is designed by experts and our instructors are all experienced professionals. The courseware is always current and updated with the latest tech advancements.
 
 ### Max Andersson
-*Technical PM & Software engineer*
+
+_Technical PM & Software engineer_
 
 Max has a background in both computer science and business studies. He specializes in distributed application development and business development. Previous work has been related to migrating legacy systems to become cloud native and build cloud infrastructure to handle large scale deployments in hybrid cloud environments.
 
 ### Gabriel Paues
-*Cloud Architect*
+
+_Cloud Architect_
 
 Gabriel has a background in networking and cloud services and has several years of experience in professional training. Gabriel’s energetic attitude makes sure you will learn what you need while also having fun.
-
 
 <script>
 var acc = document.getElementsByClassName("accordion");

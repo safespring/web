@@ -10,7 +10,7 @@ eventbild: ""
 socialmediabild: ""
 section: "Tech update"
 author: ""
-language: "en"
+language: "sv"
 fullwidth: ""
 nosidebar: ""
 aliases:

@@ -1,19 +1,18 @@
 ---
-language: "sv"
+language: "en"
 title: ""
 date: ""
 draft: false
 aliases:
 - /read-more/safespring-backup-portal-en-more/
 ---
-##
 
 {{< author-gabriel >}}
 
 ## Safespring Backup: A complete rehaul of the user portals
 
-{{< ingress >}} 
-Safespring Backup is based on the very well-established Spectrum Protect from IBM. It has many strengths, such as high security, excellent scalability and data lifecycle automation. 
+{{< ingress >}}
+Safespring Backup is based on the very well-established Spectrum Protect from IBM. It has many strengths, such as high security, excellent scalability and data lifecycle automation.
 {{< /ingress >}}
 
 Spectrum Protect can protect countless Terabytes of data with minimal administration effort.
@@ -55,6 +54,3 @@ Overall, the use of this mechanism helps us to provide a more secure and reliabl
 With our relaunch of Safespring Backup, Safespring takes a giant leap forward to improve the user experience and ease of use to handle your backups with Safespring. With the reliability of Spectrum Protect combined with a fully-fledged self-service portal running your backups has never been easier. With a complete REST API, automation of different administrative tasks is possible.
 
 With Safespring Backup you will get a secure yet easy-to-use solution for handling all your backups.
-
-
-
