@@ -47,9 +47,7 @@ image="/img/card/safespring-scaleut_use-case-ebba.webp"
 cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data"
 link="/tjanster/case/scaleout/"
 linktext="Läs Use Case"
-text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”"
-
-> }}
+text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 
 {{< distance >}}
 
