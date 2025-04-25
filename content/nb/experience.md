@@ -8,6 +8,7 @@ english: "yes"
 aliases:
   - /opplev
   - /no/opplev/
+slug: "opplev"
 ---
 
 ## Create a free demo account
