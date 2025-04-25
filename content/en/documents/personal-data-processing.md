@@ -8,6 +8,7 @@ general: "yes"
 language: "en"
 aliases:
   - /dokument/personuppgiftshantering-en/
+slug: "personal-data-processing"
 ---
 
 {{< ingress >}}

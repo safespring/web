@@ -12,6 +12,7 @@ fullwidth: ""
 nosidebar: ""
 aliases:
   - /tjanster/
+slug: "tjanster"
 ---
 
 {{< services >}}

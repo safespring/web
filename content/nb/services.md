@@ -7,6 +7,7 @@ section: "Safespring tjenester"
 language: "nb"
 aliases:
   - /no/tjenester/
+slug: "tjenester"
 ---
 
 <div class="ingress"><p>Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge.</p></div>

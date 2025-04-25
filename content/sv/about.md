@@ -5,16 +5,15 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Safespring är en svensk molnplattform. Med datacenter i Sverige håller du din data inom landets gränser."
 background: "safespring-blue-fade2.svg"
-alias:
-  "/om-safespring"
 nosidebar: "invisible"
 list: "horisontal"
 aliases:
-- /om-safespring/
+  - /om-safespring/
+slug: "om-safespring"
 ---
 
-{{< ingress >}} 
-Vi på Safespring tycker det är självklart att producera våra tjänster lokalt i Sverige och Norge. 
+{{< ingress >}}
+Vi på Safespring tycker det är självklart att producera våra tjänster lokalt i Sverige och Norge.
 {{< /ingress >}}
 
 Detta har många fördelar, såsom bättre prestanda och närhet till våra kunder. Dessutom uppfyller vi lagar och regler såsom GDPR och Arkivlagen som kräver att data inte lämnar landet.
@@ -64,8 +63,8 @@ Safespring grundades 2014 som en del av IPnett och vann en upphandling för att 
 {{< distance >}}
 
 ## Utforska våra tjänster
-Som svenskt bolag omfattas vi inte av Cloud Act och kan därför inte tvingas att lämna ut din data till tredje part. Vi erbjuder bland annat backup, storskalig molnlagring och infrastruktur som tjänst.
 
+Som svenskt bolag omfattas vi inte av Cloud Act och kan därför inte tvingas att lämna ut din data till tredje part. Vi erbjuder bland annat backup, storskalig molnlagring och infrastruktur som tjänst.
 
 {{< distance >}}
 

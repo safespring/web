@@ -10,30 +10,33 @@ sidebarlinkname: "Vår säkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring_information-security-guidelines_2024.pdf"
 socialmedia: "safespring-datacenter.jpg"
 aliases:
-- /om-safespring/Datacenter/
+  - /om-safespring/Datacenter/
+slug: "datacenter"
 ---
 
 ![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)
 
-
 ## Safespring Stockholm Norr
+
 <div class="ingress"><p>Datacentret återvinner värmen som genereras från produktionen tillbaka till fjärrvärmenätet vilket årligen värmer upp tusentals lägenheter i stockholmsområdet.</p></div>
 
 Datacentret är säkrat och byggt som en byggnad, inom en byggnad. Övervakning med CCTV sker dygnet runt alla dagar i veckan och säkerhetsvakter patrullerar området. Det finns flera åtkomsthinder, inklusive slussar, kontaktlösa nyckelkort och biometriska läsare.
 
 ### Hållbarhet
+
 Safespring Stockholm Norr använder enbart 100 procent grön energi, och har gjort det sedan 2012.
 
-Datacentret har sedan 2015 ett unikt projekt tillsammans med Stockholm Exergi (tidigare Fortum Värme) där de  återvinner värme från datacentret till fjärrvärmenätet. Årligen värmen detta upp tusentals lägenheter i Stockholm.
+Datacentret har sedan 2015 ett unikt projekt tillsammans med Stockholm Exergi (tidigare Fortum Värme) där de återvinner värme från datacentret till fjärrvärmenätet. Årligen värmen detta upp tusentals lägenheter i Stockholm.
 
 Utvecklingen för mer energieffektiva datacenter pågår ständigt vilket medför att det genomförs löpande förändringar i designen av datacenter, detta inkluderar bland annat: Höjt golvet i datacentren från 60 cm till 120 centimeter för att minska behovet av kylning.
 
 ## Safespring Stockholm Syd
+
 <div class="ingress"><p>Safespring Stockholm Syd matchar höga krav på driftsäkerhet och tillgänglighet.</p></div>
 
 Datacentret i är idag 2800 kvm stort varav 1100 kvm är datazoner. Datacentret drivs till 100 procent med el från förnyelsebara energikällor och ständigt arbetas det med att hitta nya sätt att öka energieffektiviteten.
 
-Datacentrets ansvarige kan göra utdrag på passersystem och kameramaterial om vi skulle önska det. Safesprings utrymmen är låsta så det går inte att påverka eller manipuleras av någon utomstående. 
+Datacentrets ansvarige kan göra utdrag på passersystem och kameramaterial om vi skulle önska det. Safesprings utrymmen är låsta så det går inte att påverka eller manipuleras av någon utomstående.
 
 Byggstandarden är designad för tillgänglighetskrav enligt Tier-3 som är Safesprings policy. Det finns även ett reservkraftsystem som gör datacentret oberoende av elnätet.
 Datacentret har branddetektering med luftanalys. Serverhallar med IT-vänliga släcksystem och brandlarm direktkopplat till brandstation och inbrottslarm direktkopplat till larmcentral samt övervakning 24⁄7 av egen NOC.
@@ -46,6 +49,7 @@ Datacentret har branddetektering med luftanalys. Serverhallar med IT-vänliga sl
 - Förberedda för energiåtervinning
 
 ## Safespring Oslo
+
 <div class="ingress"><p>Den här fastigheten är det största befintliga datacentret i Norge och drivs av vattenkraft.</p></div>
 
 Datacentret kommer att samarbeta med flera parter för att underlätta vattenkraftgenererade datacenter till nationella och internationella kunder.

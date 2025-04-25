@@ -8,6 +8,7 @@ general: "yes"
 language: "nb"
 aliases:
   - /dokument/personuppgiftshantering-no/
+slug: "behandling-av-personopplysninger"
 ---
 
 {{< ingress >}}

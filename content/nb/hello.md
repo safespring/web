@@ -19,6 +19,7 @@ sidebarlinkurl2: "/no/kontakt"
 saas: ""
 aliases:
   - /no/hello/
+slug: "hei"
 ---
 
 {{< ingress >}}
