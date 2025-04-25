@@ -12,6 +12,7 @@ toc: "På denne siden"
 nosidebar: ""
 aliases:
   - /no/pris/
+slug: "pris"
 ---
 
 {{< icon-block-container >}}

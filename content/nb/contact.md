@@ -10,6 +10,7 @@ showthedate: false
 pageimage: ""
 aliases:
   - /no/kontakt/
+slug: "kontakt"
 ---
 
 {{< icon-block-horisontal icon="fa-solid fa-phone" color="#3C9BCD" description="08-55 10 73 70" text="Ring oss" link="tel:+46855107370" >}}

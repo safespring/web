@@ -1,6 +1,6 @@
 ---
 title: "Introduktion till Safespring Backup"
-language: "sv"
+language: "en"
 date: "2025-02-24"
 publishDate: "2025-02-24"
 draft: false

@@ -7,6 +7,7 @@ language: "nb"
 section: "Safespring"
 aliases:
   - /no/om-safespring/
+slug: "om-safespring"
 ---
 
 {{< ingress >}}
