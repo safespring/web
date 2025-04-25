@@ -16,6 +16,7 @@ socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Table of Contents"
 language: "en"
+section: "Solution Brief"
 aliases:
 - /solution-brief/openshift-en/
 ---

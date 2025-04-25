@@ -36,6 +36,7 @@ chapters:
   - title: "Trenderna 2022"
     time: 2587
     timeFormatted: "43:07"
+section: "Webinar"
 aliases:
   - /webinar/gdpr-fireside-chat/forth-fireside-chat-it-sakerhetsbolaget/
   - /webinar/forth-fireside-chat-it-sakerhetsbolaget/

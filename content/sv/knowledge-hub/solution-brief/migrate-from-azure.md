@@ -15,6 +15,7 @@ toc: "Innehåll"
 background: "safespring-azure.png"
 socialmediabild: ""
 language: "sv"
+section: "Solution Brief"
 aliases:
   - /solution-brief/migrate-from-azure/
 ---

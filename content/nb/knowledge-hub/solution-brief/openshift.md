@@ -16,6 +16,7 @@ socialmediabild: "safespring_social_21.gif"
 form: "yes"
 toc: "Innholdsfortegnelse"
 language: "nb"
+section: "Solution Brief"
 aliases:
 - /solution-brief/openshift-no/
 ---

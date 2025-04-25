@@ -15,6 +15,7 @@ sidebarimage: ""
 background: "safespring-kubernetes-background.svg"
 socialmediabild: "safespring_social_21.gif"
 language: "en"
+section: "Solution Brief"
 aliases:
 - /solution-brief/compliant-kubernetes/
 ---

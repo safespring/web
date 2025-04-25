@@ -34,6 +34,7 @@ chapters:
   - title: "Digital suveränitet?"
     time: 706
     timeFormatted: "11:46"
+section: "Webinar"
 aliases:
   - /webinar/gdpr-fireside-chat/sixth-fireside-chat-it-sakerhetsbolaget/
   - /webinar/sixth-fireside-chat-it-sakerhetsbolaget/

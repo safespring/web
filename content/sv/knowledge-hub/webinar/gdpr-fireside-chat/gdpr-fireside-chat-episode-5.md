@@ -15,6 +15,7 @@ partner: "it-sakerhetsbolaget.png"
 audience: "saas"
 sidebarlinkurl: ""
 sidebarlinkname: ""
+section: "Webinar"
 aliases:
   - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/&#xA0/
   - /webinar/fifth-fireside-chat-it-sakerhetsbolaget/

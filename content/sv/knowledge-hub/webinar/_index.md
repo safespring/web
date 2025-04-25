@@ -19,6 +19,7 @@ knapp: "Starta webinar"
 english: ""
 formid: ""
 explorer: ""
+section: "Webinar"
 aliases:
   - /event/
   - /webinars/

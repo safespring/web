@@ -17,6 +17,7 @@ sidebarlinkname: ""
 sidebarimage: ""
 nosidebar: "invisible"
 toc: "Avsnitt"
+section: "Webinar"
 aliases:
   - /kubernetes-webcast
   - /webinar/kubernetes-15-principles/

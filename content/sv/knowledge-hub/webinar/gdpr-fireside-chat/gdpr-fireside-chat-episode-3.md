@@ -15,6 +15,7 @@ socialmediabild: "safespring_social_39.gif"
 intro: "Hur ska man tolka de olika budskapen från leverantörer och vilka praktiska metoder kan bolag redan nu börja jobba med utan att behöva byta molntjänst helt och hållet?"
 partner: "it-sakerhetsbolaget.png"
 audience: "saas"
+section: "Webinar"
 aliases:
   - /webinar/gdpr-fireside-chat/third-fireside-chat-it-sakerhetsbolaget/
   - /webinar/third-fireside-chat-it-sakerhetsbolaget/

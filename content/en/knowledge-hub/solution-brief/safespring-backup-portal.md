@@ -19,6 +19,7 @@ form: ""
 toc: "In this article"
 language: "en"
 author: "Gabriel Paues"
+section: "Solution Brief"
 aliases:
 - /solution-brief/safespring-backup-portal-en/
 ---

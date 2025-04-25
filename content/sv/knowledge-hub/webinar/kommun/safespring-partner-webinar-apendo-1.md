@@ -15,6 +15,7 @@ audience: "kommun"
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-partner-webinar-apendo-1/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/safespring-partner-webinar-apendo-1.jpg"
 sidebar: "x"
+section: "Webinar"
 aliases:
   - /webinar/kommun/apendo.md
   - /webinar/kommun/safespring-partner-webinar-apendo-1/

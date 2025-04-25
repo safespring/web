@@ -47,6 +47,8 @@ chapters:
   - title: "Avslutning"
     time: 3734
     timeFormatted: "1:02:14"
+
+section: "Webinar"
 ---
 
 {{< ingress>}}

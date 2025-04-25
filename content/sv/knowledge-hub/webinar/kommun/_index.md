@@ -11,6 +11,7 @@ socialmediabild: "safespring_social_26.jpg"
 intro: "En webcast-serie där vi dyker ner i våra kunders digitala framsteg med Safespring."
 audience: "kommun"
 episodetype: "Use Case"
+section: "Webinar"
 aliases:
   - /webinar/kommun/
 ---
