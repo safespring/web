@@ -31,4 +31,4 @@ ProReNata gör bedömningen att regelefterlevnad blir enklare genom att använda
 
 ### Läs mer om ProReNata
 
-<div class="partner-grid"><a href="https://www.prorenata.se/"><div class="partner-container"><img class="partnerlogo" src="/blogg/images/safespring_prorenata.svg"></div></a></div>
+<div class="partner-grid"><a href="https://www.prorenata.se/"><div class="partner-container"><img class="partnerlogo" src="../safespring_prorenata.svg"></div></a></div>

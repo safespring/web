@@ -36,4 +36,4 @@ Samtidigt har det kommit fram att de ramavtal som finns idag inte är tillräckl
 
 Safespring kommer följa utvecklingen på nära håll och kommer bidra i dialogen med vår kompetens om säkra, moderna och lokala molntjänster. I skrivande stund är vi på plats under presentationen av förstudien. På bilden syns Daniel Melin som är IT-upphandlare på Kammarkollegiet.
 
-![Safespring på plats under presentaionena av förstudien: webbaserade kontorsstöd](/blogg/images/safespring-webbaserat-kontorsstod.jpg)
+![Safespring på plats under presentaionena av förstudien: webbaserade kontorsstöd](../safespring-webbaserat-kontorsstod.jpg)

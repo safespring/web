@@ -23,7 +23,7 @@ Många beräknar molnkostnader med samma köpmönster som de använde i sina dat
 
 En studie från Gartner säger att “molntjänsterna i början kan vara dyrare än att driva datacenter lokalt. [Det visar dock också att] molntjänster blir kostnadseffektiva över tid och ännu mer besparingar kan göras när organisationer lär sig att använda och driva dem mer effektivt. (Uttalandet stöds av ett exempel på migration av arbetsbelastning för 2500 virtuella maskiner från ett lokalt datacenter till en publik molntjänst).
 
-</br></br><img src="/blogg/images/Safespring_Gartner_molntjanst.png" style="width:100%;"></img></br></br>
+</br></br><img src="../Safespring_Gartner_molntjanst.png" style="width:100%;"></img></br></br>
 
 Exemplet ovan visar ett initialt upptag i molnkostnader och en stadig minskning så snart organisationerna lärt sig hur de tillämpar de bästa metoderna för optimering och kostnadseffektivitet.
 
