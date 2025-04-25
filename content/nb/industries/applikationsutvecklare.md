@@ -10,6 +10,7 @@ logobannersaas: "yes"
 language: "nb"
 aliases:
   - /no/bransjer/applikationsutvecklare/
+slug: "applikationsutvecklare"
 ---
 
 <div class="ingress"><p>Safesprings skyplattform er allsidig og et veldig godt fundament for mange forskjellige typer applikasjoner. Plattformen er godt designet for SaaS-tjenester siden skalérbarhet og fleksibilitet er viktige komponenter.</p></div>

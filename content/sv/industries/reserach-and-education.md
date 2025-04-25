@@ -20,13 +20,12 @@ TOC: "På den här sidan"
 aliases:
     - /branscher/ocre-2024/
     - /branscher/utbildning-forskning/
+slug: "utbildning-och-forskning"
 ---
-
 
 {{< ingress >}}
 Safespring har levererat pålitliga molntjänster till forskning och utbildningssektorn sedan bolagets grundande. Att stärka forskning och utbildning med compute, container-plattformar, skalbar lagring och flexibla backup-lösningar tillhör vår kärnverksamhet.
 {{</ ingress >}}
-
 
 ## Varför använda OCRE 2024?
 
@@ -37,8 +36,8 @@ Det finns många sätt som en organisation inom forskning och utbildning kan upp
 3. Priserna är redan rabatterade men kan förhandlas ytterligare.
 
 {{< icon-block-small-container >}}
-    {{< icon-block-small icon="fa-solid fa-table" text="Tjänstekatalog" link="/geant/service-catalogue/" color="#195F8C">}}
-    {{< icon-block-small icon="fa-solid fa-coins" text="Prislista" link="/geant/price/" color="#3C9BCD" >}}
+{{< icon-block-small icon="fa-solid fa-table" text="Tjänstekatalog" link="/geant/service-catalogue/" color="#195F8C">}}
+{{< icon-block-small icon="fa-solid fa-coins" text="Prislista" link="/geant/price/" color="#3C9BCD" >}}
 {{< /icon-block-small-container >}}
 
 {{< distance >}}
@@ -56,10 +55,10 @@ Det finns många sätt som en organisation inom forskning och utbildning kan upp
 </div>
 </div>
 
-
 {{< distance >}}
 
 ### Om OCRE
+
 Ramavtalet OCRE 2024 är ett europeiskt ramavtal för molntjänster som är upphandlat av GÉANT, samarbetsorganet för nationella forsknings och utbildningsnätverk.
 
 OCRE 2024 är den tredje iterationen av GÉANT’s ramavtal för molntjänster som, sedan 2016, har möjliggjort digital transformation i Europa genom att överbrygga utbudet från innovativa leverantörer av molntjänster med behovet hos olika delar av forskning och utbildningssektorn. OCRE 2024 har upphandlats för hela Europa med stöd från GN5-1 projektet och gäller i 39 länder under 5 år, från 2025 till 2030.
@@ -85,6 +84,6 @@ Safesprings tjänster är redo att användas. Om du tillhör forskning och utbil
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 Jag är ansvarig affärsutvecklare för akademisk och offentlig sektor och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE 2024.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59 
+{{< inline "Ring" >}} +46 (0)76 868 00 59
 [daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
 {{% /custom-card %}}

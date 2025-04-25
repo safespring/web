@@ -19,6 +19,7 @@ cardintro: "With direct connection to research networks and OCRE, you can get st
 TOC: "På denne side"
 aliases:
 - /dk/geant/ocre-2024/
+slug: "forskning-og-uddannelse"
 ---
 
 {{< ingress >}}
