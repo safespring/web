@@ -8,7 +8,7 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 language: "sv"
 toc: ""
 sidebarlinkname: ""

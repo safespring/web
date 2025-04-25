@@ -92,7 +92,7 @@ target = 'content'
 lang = 'da'
 
 [params]
-  mainSections = ['blogg', 'webinar', 'whitepaper', 'solution-brief']
+  mainSections = ['blog', 'webinar', 'whitepaper', 'solution-brief']
 
 [sitemap]
     changefreq = "daily"

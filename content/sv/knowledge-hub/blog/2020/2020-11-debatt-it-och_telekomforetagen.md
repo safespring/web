@@ -8,19 +8,19 @@ showthedate: true
 card: "safespring_card_35.jpg"
 eventbild: "safespring_background_35.jpg"
 socialmediabild: "safespring_social_35.jpg"
-section: "blogg"
+section: "blog"
 author: "Fredric Wallsten"
 author_image: "firm"
 aliases:
-    - /blogg/debatt-it-och_telekomforetagen
-    - /blogg/2020/2020-11-debatt-it-och_telekomforetagen/
+  - /blogg/debatt-it-och_telekomforetagen
+  - /blogg/2020/2020-11-debatt-it-och_telekomforetagen/
 ---
 
 {{< ingress >}}
 IT & Telekomföretagens förbundsordförande Åsa Zetterberg behöver lyfta blicken, skriver företrädare för fyra svenska molntjänstleverantörer i en replik till förra veckans debattartikel.
 {{</ ingress >}}
 
-*Denna artikel skriven tillsammans med City Network, Binero, och Elastx.*
+_Denna artikel skriven tillsammans med City Network, Binero, och Elastx._
 
 Vår branschorganisation IT & Telekomföretagen menar i en [debattartikel den 29 oktober i Computer Sweden](https://computersweden.idg.se/2.2683/1.741729/osakerheten-pa-molnmarknaden-kostar-skattebetalarna-miljarder), att statliga organisationer i Sverige har hamnat rejält på efterkälken beträffande digitalisering och att orsaken är att ”den offentliga marknaden för molntjänster stått still sedan 2018 på grund av juridiska oklarheter”. Konsekvensen av detta, menar artikelförfattarna, är att Sverige endast hamnar på plats 14 av 36 med EU-mått mätt avseende digitaliseringen av offentlig förvaltning och att skattebetalarna fått stå för en nota på 4,6 miljarder hittills i form av uteblivna effektiviseringar.
 
@@ -39,6 +39,7 @@ Som representanter för svenska molntjänstleverantörer tycker vi att det är h
 ...vill vi också poängtera att utvecklingen inte har stått still i offentlig sektor sedan 2018. Vi jobbar i flera projekt med offentlig sektor som vi anser är både progressiv och nytänkande i sin approach att utveckla nya tjänster. Men utvecklingen skulle förstås kunna gå ännu snabbare om vi gemensamt krokar arm både mellan myndigheter och svenska molnföretag men även med de pågående projekten i EU. Där spelar IT & Telekomföretagen en viktig roll att samordna och få ihop alla dessa delar som företrädare för branschen. Dessutom är det ju så att IT & Telekomföretagen representerar även oss svenska leverantörer, och vi förstår inte varför de svenska alternativen inte lyfts som en möjlighet för offentlig sektor där full regelefterlevnad redan är integrerat?
 
 ### Regional innovation
+
 Vi håller med om att Sverige borde kunna inta en bättre position på EU-rankningen av offentliga digitala tjänster. Men vägen dit måste också innefatta regional innovation och utveckling av nya molntjänster som klarar våra svenska lagar och värderingar. Det skulle främja både Sverige och Europa med såväl arbetstillfällen, skattepengar som långsiktig innovation. Det skulle också skapa en balans i en marknad som är helt styrd av utländska bolag och som sätter våra myndigheter i en mycket svår sits.
 
 Men ska vi nå dit behövs en mer framåtlutad hållning av IT & Telekomföretagen i de här frågorna. Vår uppmaning till Åsa Zetterberg är därför att lyfta blicken och ta taktpinnen för Sveriges räkning och de svenska molnföretagen i de här initiativen på EU-nivå, och att samordna branschens intressen och möjligheter med regeringens ambitioner i molnfrågan. Det är först då vi gemensamt kan stötta och snabba på offentlig sektors digitalisering, och ge medborgarna ännu bättre service och valuta för sina skattepengar.

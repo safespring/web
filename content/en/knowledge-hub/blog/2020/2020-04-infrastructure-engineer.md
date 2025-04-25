@@ -8,10 +8,10 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 aliases:
-    - /blogg/infrastructure-engineer
-    - /blogg/2020/2020-04-infrastructure-engineer/
+  - /blogg/infrastructure-engineer
+  - /blogg/2020/2020-04-infrastructure-engineer/
 ---
 
 ## Apply as an Infrastructure Engineer
@@ -83,7 +83,8 @@ In addition, there is a budget for traveling to at least a few conferences or me
 
 ### How is the salary?
 
-Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including local rules for working hours, vacation, wellness benefits and market salary.   
+Safespring is affiliated to [Kollektivavtalet](https://www.itot.se/) and applies to their rules in both Sweden and Norway, including local rules for working hours, vacation, wellness benefits and market salary.
+
 <div id="apply"></div>
 
 ### How do I apply?

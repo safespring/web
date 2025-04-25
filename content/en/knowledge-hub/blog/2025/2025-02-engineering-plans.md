@@ -11,7 +11,7 @@ eventbild: ""
 socialmediabild: ""
 language: "en"
 sectiontext: "Blog"
-section: "blogg"
+section: "blog"
 author: "Rob Haverkamp"
 TOC: "In this post"
 aliases:

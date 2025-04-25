@@ -10,7 +10,7 @@ card: "safespring_card_48.svg"
 eventbild: ""
 socialmediabild: ""
 author: "Fredric Wallsten"
-section: "blogg"
+section: "blog"
 language: "sv"
 toc: ""
 aliases:

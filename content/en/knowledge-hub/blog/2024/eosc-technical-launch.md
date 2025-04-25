@@ -3,7 +3,7 @@ title: "Driving Open Science Forward: Safespring’s Role in the EOSC EU Node La
 date: 2024-10-11
 intro: "On 10 October 2024, Safespring’s CEO, Fredric, participated in the EOSC EU Node technical launch in Brussels, where Europe took a major step towards enhancing Open Science and research collaboration."
 draft: false
-section: "blogg"
+section: "blog"
 author: ""
 tags: ["English"]
 showthedate: true

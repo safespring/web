@@ -11,7 +11,7 @@ eventbild: ""
 socialmediabild: ""
 author: "Fredric Wallsten"
 author_image: "firm"
-section: "blogg"
+section: "blog"
 language: "sv"
 toc: ""
 aliases:

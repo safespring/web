@@ -8,7 +8,7 @@ showthedate: true
 card: "safespring-debattartikel-2023.webp"
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 author: "Fredric Wallsten"
 author_image: "firm"
 language: "sv"

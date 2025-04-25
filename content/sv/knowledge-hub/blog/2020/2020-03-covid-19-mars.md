@@ -8,12 +8,12 @@ showthedate: true
 card: "safespring_card_31.jpg"
 eventbild: "safespring_background_31.jpg"
 socialmediabild: "safespring_social_31-1.jpg"
-section: "blogg"
+section: "blog"
 author: "Fredric Wallsten"
 author_image: "firm"
 aliases:
-    - /blogg/covid-19-mars
-    - /blogg/2020/2020-03-covid-19-mars/
+  - /blogg/covid-19-mars
+  - /blogg/2020/2020-03-covid-19-mars/
 ---
 
 <div class="ingress"><p>Safespring planerar för fortsatt kontinuerlig drift.</p></div>
@@ -24,17 +24,15 @@ Safesprings personal har möjligheten att arbeta hemifrån och har de verktyg so
 
 Dagliga möten och drift sker genom videosamtal som standard. Att personalen arbetar hemifrån påverkar inte driften av vår plattform.
 
-
 ### Åtgärder som vidtagits
 
 **Den 27 februari** fick anställda information om att de skulle förbereda sig för en eventuellt längre tid av arbete hemifrån.
 
 **Den 11 mars** gick Safespring in i ett beredskapsläge där anställda kan begäras att arbeta hemifrån med kort varsel. Teknisk personal rekommenderas att jobba hemifrån för isolation från varandra.
 
-* Vi har nära dialog med våra underleverantörer för att säkerställa att de har en plan för fortsatt drift.
-* Anställda som varit i ett riskområde har fått jobba hemifrån i minst två veckor enligt folkhälsomyndighetens rekommendationer.
-* Vi har tills vidare ställt in resor och deltagande på konferenser, oavsett storlek.
-
+- Vi har nära dialog med våra underleverantörer för att säkerställa att de har en plan för fortsatt drift.
+- Anställda som varit i ett riskområde har fått jobba hemifrån i minst två veckor enligt folkhälsomyndighetens rekommendationer.
+- Vi har tills vidare ställt in resor och deltagande på konferenser, oavsett storlek.
 
 ### Har du frågor?
 

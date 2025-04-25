@@ -9,7 +9,7 @@ showthedate: true
 card: "safespring-itdrift.svg"
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 language: "sv"
 toc: ""
 sidebarlinkname: "Kontakta oss"

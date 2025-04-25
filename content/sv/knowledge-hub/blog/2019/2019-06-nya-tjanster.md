@@ -9,15 +9,14 @@ showthedate: true
 card: "safespring_card_18.jpg"
 eventbild: "safespring_background_18.jpg"
 socialmediabild: "safespring_social_18.jpg"
-section: "blogg"
+section: "blog"
 author: "Fredric Wallsten"
 aliases:
-    - /blogg/nya-tjanster
-    - /blogg/2019/2019-06-nya-tjanster/
+  - /blogg/nya-tjanster
+  - /blogg/2019/2019-06-nya-tjanster/
 ---
 
 <div class="ingress"><p>Behovet av säkra svenska infrastrukturtjänster ökar snabbt. Hos oss är öppen källkod och öppna standarder två av grundstenarna.</p></div>
-
 
 Vi har haft ett spännande halvår med många nya kunder. Bland annat har vi fått flera kunder inom hälsa- sjukvård och life-science. Det är många som ställer högre krav på juridisk säkerhet samtidigt som öppen källkod och öppna standarder står i fokus.
 
@@ -31,9 +30,7 @@ Hör av dig om några av våra nya tjänster låter intressanta. Under sommaren 
 - **Managerade** tjänster för Windows och Linux.
 - **Utbildningar** i allt från att sätta upp instanser, managera infrastruktur, skapa pipelines med mera. Schema kommer upp på safespring.com efter sommaren.
 
-
 Ha en trevlig sommar och kontakta oss om du har några frågor om våra tjänster. Vi kommer kunna svara på era frågor under hela sommaren.
-
 
 Hälsningar,<br>
 **Fredric Wallsten**

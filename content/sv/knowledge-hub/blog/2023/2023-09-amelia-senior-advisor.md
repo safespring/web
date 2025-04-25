@@ -8,7 +8,7 @@ showthedate: true
 card: "safespring_card_50.jpg"
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 language: "sv"
 author: "Fredric Wallsten"
 toc: ""

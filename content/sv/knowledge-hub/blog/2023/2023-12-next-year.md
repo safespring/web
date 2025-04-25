@@ -3,7 +3,7 @@ title: "Vi ser fram emot 2024 – en sammanfattning av årets framsteg och framt
 date: "2023-12-19"
 intro: "Året har präglats av viktiga framsteg inom molntjänster, där varje nytt steg tagits med visionen att erbjuda nyskapande och högkvalitativa lösningar."
 draft: false
-section: "blogg"
+section: "blog"
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_51.webp"

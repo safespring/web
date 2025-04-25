@@ -1,6 +1,6 @@
 ---
 title: "Hosted Server vs IaaS"
-section: "blogg"
+section: "blog"
 date: "2023-02-15"
 publishDate: "2023-02-15"
 intro: "Lär dig om skillnaden mellan hosted server och IaaS (Infrastructure as a Service) och upptäck varför IaaS kan vara en bättre lösning för dina behov."

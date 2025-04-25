@@ -8,7 +8,7 @@ showthedate: true
 card: "safespring_card_46.svg"
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 language: "sv"
 toc: ""
 sidebarlinkname: "Boka demo"

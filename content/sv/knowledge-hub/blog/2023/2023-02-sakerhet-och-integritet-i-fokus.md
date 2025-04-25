@@ -9,7 +9,7 @@ showthedate: true
 card: "safespring_card_43.svg"
 eventbild: ""
 socialmediabild: ""
-section: "blogg"
+section: "blog"
 language: "sv"
 toc: ""
 sidebarlinkname: "Läs debattartikel"

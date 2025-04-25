@@ -3,7 +3,7 @@ title: "Daniel Melin tar steget från Skatteverket till Safespring"
 date: "2024-02-14"
 intro: "Som ansvarig för affärsutveckling inom akademisk- och offentlig sektor blir Daniel en viktig del i Safeprings arbete mot myndigheter, Europen Open Science Cloud och mer."
 draft: false
-section: "blogg"
+section: "blog"
 tags: ["Svenska"]
 showthedate: true
 card: "web-safespring-daniel-melin-2024-02.jpg"

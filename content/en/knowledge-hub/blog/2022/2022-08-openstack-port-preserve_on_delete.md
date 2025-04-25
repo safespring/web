@@ -9,7 +9,7 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 author: "Jarle Bjørgeengen"
-section: ""
+section: "blog"
 language: "en"
 toc: ""
 aliases:

@@ -8,18 +8,17 @@ showthedate: true
 card: "safespring_card_1.jpg"
 eventbild: "safespring_background_1.jpg"
 socialmediabild: "safespring_social_1.jpg"
-section: "blogg"
+section: "blog"
 aliases:
-    - /blogg/webbaserat-kontorsstod
-    - /blogg/2019/2019-02-webbaserat-kontorsstod/
+  - /blogg/webbaserat-kontorsstod
+  - /blogg/2019/2019-02-webbaserat-kontorsstod/
 ---
-
 
 {{< ingress >}}
 Med webbaserat kontorsstöd avses helt integrerad och webbaserad e-post, ordbehandling, kalkylark, presentation, chatt, fillagring och dokumenthantering.
 {{< /ingress >}}
 
-Idag släpptes *”[Förstudierapport Webbaserade kontorsstöd](https://www.avropa.se/globalassets/forstudierapporter-vt--it/forstudierapport-webbaserat-kontorsstod2.pdf?_t_id=1B2M2Y8AsgTpgAmY7PhCfg%3d%3d&_t_q=%22forstudierapport-webbaserat-kontorsstod%22&_t_tags=language%3asv%2csiteid%3a95d515a5-23ca-47bf-87a9-07b10d8ac360&_t_ip=109.238.132.56&_t_hit.id=Avropa_Core_Models_Media_GenericMedia/_ba5d22e5-3a3a-4719-a772-ee0e89e9f617&_t_hit.pos=1) "*. Statens inköpscentral inledde en förstudie i september förra året som ska resultera i en eventuellt kommande upphandling av webbaserat kontorsstöd.
+Idag släpptes _”[Förstudierapport Webbaserade kontorsstöd](https://www.avropa.se/globalassets/forstudierapporter-vt--it/forstudierapport-webbaserat-kontorsstod2.pdf?_t_id=1B2M2Y8AsgTpgAmY7PhCfg%3d%3d&_t_q=%22forstudierapport-webbaserat-kontorsstod%22&_t_tags=language%3asv%2csiteid%3a95d515a5-23ca-47bf-87a9-07b10d8ac360&_t_ip=109.238.132.56&_t_hit.id=Avropa_Core_Models_Media_GenericMedia/_ba5d22e5-3a3a-4719-a772-ee0e89e9f617&_t_hit.pos=1) "_. Statens inköpscentral inledde en förstudie i september förra året som ska resultera i en eventuellt kommande upphandling av webbaserat kontorsstöd.
 
 Det är positivt att den här debatten börjar ta fart. Det politiska läget har gjort att många står med ett ben i utländska molntjänster som inte längre följer de regler och lagar som gäller. Bland annat har Cloud Act i USA gjort att de filer och data som lagras i amerikanska molntjänster skall anses vara röjd enligt eSam.
 

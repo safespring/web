@@ -9,11 +9,11 @@ showthedate: true
 card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"
 socialmediabild: "safespring_social_31.jpg"
-section: "blogg"
+section: "blog"
 author: "Fredric Wallsten"
 aliases:
-    - /blogg/svt-upphandling
-    - /blogg/2020/2020-03-svt-upphandling/
+  - /blogg/svt-upphandling
+  - /blogg/2020/2020-03-svt-upphandling/
 ---
 
 {{< ingress >}}
@@ -28,7 +28,7 @@ I upphandlingen skriver SVT att det är viktigt för dem att leverantören har s
 Öppna standarder, öppen källkod och hög juridisk säkerhet är grunden i vår plattform. Vi är stolta över att ingå i SVTs ramavtal för molntjänster och ser fram emot möjligheten att utveckla public service digitala infrastruktur”.
 {{< /quote >}}
 
-. 
+.
 
 {{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="För mer information, vänligen kontakta:" %}}
 {{< inline "Fredric Wallsten" >}}, VD på Safespring  
@@ -37,6 +37,7 @@ I upphandlingen skriver SVT att det är viktigt för dem att leverantören har s
 {{% /custom-card %}}
 
 ### Om Safespring
+
 Safespring levererar säkra, snabba och flexibla moln- och IT-infrastrukturtjänster baserade på öppen källkod och öppna standarder. Safespring är ett svenskt företag där tjänster produceras och data lagras lokalt för att säkerställa våra kunders datasuveränitet. Med hög grad av automatisering bidrar vi till våra kunders digitala transformation.
 
 Med öppna standarder erbjuder vi ett enkelt insteg utan inlåsningsmekanismer. Vår plattform är från grunden designad med fokus på säkerhet och regelefterlevnad. Safespring har datacenter i Sverige och Norge varifrån de levererar sina egenproducerade tjänster.

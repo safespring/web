@@ -1,6 +1,6 @@
 ---
 title: "Molntjänster och GDPR: Myter och realiteter"
-section: ""
+section: "webinar"
 language: "sv"
 date: "2023-09-18"
 draft: false

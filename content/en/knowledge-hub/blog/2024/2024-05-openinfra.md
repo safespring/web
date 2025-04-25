@@ -2,7 +2,7 @@
 title: "Greetings from OpenInfra Days Gothenburg 2024!"
 date: "2024-05-07"
 intro: "Our session, titled 'Using NATS and Huma to Enhance Open Source Infrastructure', was designed to empower both B2B and European research communities with robust self-service access."
-section: "blogg"
+section: "blog"
 sectiontext: "Blog"
 draft: false
 author: "Jon Ander Novella de Miguel"
