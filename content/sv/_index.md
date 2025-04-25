@@ -8,4 +8,6 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
+aliases:
+  - /se/
 ---
