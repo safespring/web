@@ -1,73 +1,136 @@
 <a href="{{ .RelPermalink }}">
-  <div class='fill-available-space img-250 pointer {{ if eq .Section "webinar" }}blue-hover-webinar flex-center{{ else }}{{ if eq .Section "solution-brief" }}blue-hover-whitepaper flex-center{{ else }}{{ if eq $.Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex{{ else }}blue-hover-blogg flex-center{{ end }}{{ end }}{{ end }}'>
-    {{ if eq $.Params.section "blogg" }}
-    <img class="lazyload" loading="lazy" src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">
+  {{ $relativePath := strings.TrimSuffix "/" .File.Dir }} {{ $pathSegments := split $relativePath
+  "/" }} {{ $typeFolder := "" }} {{ if ge (len $pathSegments) 2 }} {{ $typeFolder = index
+  $pathSegments 1 }} {{ end }}
+  <div
+    class='fill-available-space img-250 pointer
+    {{ if eq $typeFolder "webinar" }}blue-hover-webinar flex-center
+    {{ else if eq $typeFolder "solution-brief" }}blue-hover-whitepaper flex-center
+    {{ else if eq $.Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex
+    {{ else if eq $typeFolder "white-paper" }}blue-hover-whitepaper flex-center
+    {{ else if eq $.Params.section "blog" }}blue-hover-blogg flex-center
+    {{ else }}blue-hover-blogg flex-center
+    {{ end }}'
+  >
+    {{ if eq $.Params.section "blog" }}
+    <img
+      class="lazyload"
+      loading="lazy"
+      src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}"
+      alt="{{ .Title }}"
+    />
     <div class="blogg-card-tagg-container">
-      <img class="blogg-card-flag" loading="lazy" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
-      <span class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px">{{ if (eq .Params.language "En") }}Blog{{ else if (eq .Params.language "No") }}Blogg{{ else }}Blogg{{ end }}</span>
+      <img
+        class="blogg-card-flag"
+        loading="lazy"
+        alt="Safespring language flag"
+        src="/img/flags/{{ .Params.language }}.svg"
+      />
+      <span class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+        >{{ T "knowledgehub.blog" }}</span
+      >
     </div>
     <div class="blogg-card-wapper">
       <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
       <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-      <span class="text-button">{{ if (eq .Params.language "En") }}Read post{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs inlägg{{ end }}</span>
+      <span class="text-button">{{ T "knowledgehub.read_post" }}</span>
     </div>
-    {{ else }}{{ if eq $.Params.section "Tech update" }}
-    <img class="lazyload tech-card-image" loading="lazy" src="/img/blogg/cards/safespring-tech-update.svg" alt="{{ .Title }}">
+    {{ else if eq $.Params.section "Tech update" }}
+    <img
+      class="lazyload tech-card-image"
+      loading="lazy"
+      src="/img/blogg/cards/safespring-tech-update.svg"
+      alt="{{ .Title }}"
+    />
     <div class="tech-update-card-content">
       <div class="blogg-card-tagg-container-tech">
-        <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
-        <span class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">Tech update</span>    </div>
-        <div>
-          <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-          <p class="mb-1">{{ .Params.intro }}</p>
-        </div>
-        <div>
-          <span class="text-button">{{ if (eq .Params.language "En") }}Read article{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs artikeln{{ end }}</span>
-        </div>
+        <img
+          class="blogg-card-flag"
+          alt="Safespring language flag"
+          src="/img/flags/{{ .Params.language }}.svg"
+        />
+        <span
+          class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+          >Tech update</span
+        >
       </div>
-      {{ else }}{{ if eq .Section "webinar" }}
-      <img class="lazyload" loading="lazy" src="{{ .Params.card }}" alt="{{ .Title }}">
-      <div class="blogg-card-tagg-container-webinar">
-        <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
-        <span class="blogg-card-section-webinar mb-0 font-weight-medium text-uppercase text-muted lts-1px">Webcast</span>
-        <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
+      <div>
+        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">
+          {{ .Title }}
+        </h1>
+        <p class="mb-1">{{ .Params.intro }}</p>
       </div>
-      <div class="blogg-card-wapper">
-        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-        <div class="webinar-card-link">Play</div>
+      <div>
+        <span class="text-button">{{ T "knowledgehub.read_article" }}</span>
       </div>
-      {{ else }}{{ if eq .Section "solution-brief" }}
-      <img class="lazyload" loading="lazy" src="/img/card/{{ .Params.card }}" alt="{{ .Title }}">
-      <div class="blogg-card-tagg-container-solution-brief">
-        <img class="blogg-card-flag" loading="lazy" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
-        <span class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px">Solution brief</span>
-      </div>
-      <div class="blogg-card-wapper">
-        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-        <span class="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
-      </div>
-      {{ else }}{{ if eq .Section "whitepaper" }}
-      <div class="padding-15">
-        <div>
-          <span class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px">White Paper</span>
-          <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-          <p class="mb-1">{{ .Params.intro }}</p>
-        </div>
-        <div>
-          <span class="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
-        </div>
-      </div>
-      {{ else }}
-      <div class="padding-15">
-        <div>
-          <span class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px">{{ .Params.section }}</span>
-          <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
-          <p class="mb-1">{{ .Params.intro }}</p>
-        </div>
-        <div>
-          <span class="text-button">{{ if (eq .Params.language "En") }}Learn more{{ else if (eq .Params.language "No") }}Les mer{{ else }}Läs mer{{ end }}</span>
-        </div>
-      </div>
-      {{ end }}{{ end }}{{ end }}{{ end }}{{ end }}
     </div>
+    {{ else if eq $typeFolder "webinar" }}
+    <img class="lazyload" loading="lazy" src="{{ .Params.card }}" alt="{{ .Title }}" />
+    <div class="blogg-card-tagg-container-webinar">
+      <img
+        class="blogg-card-flag"
+        alt="Safespring language flag"
+        src="/img/flags/{{ .Params.language }}.svg"
+      />
+      <span
+        class="blogg-card-section-webinar mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+        >Webcast</span
+      >
+      <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
+    </div>
+    <div class="blogg-card-wapper">
+      <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
+      <div class="webinar-card-link">Play</div>
+    </div>
+    {{ else if eq $typeFolder "solution-brief" }}
+    <img class="lazyload" loading="lazy" src="/img/card/{{ .Params.card }}" alt="{{ .Title }}" />
+    <div class="blogg-card-tagg-container-solution-brief">
+      <img
+        class="blogg-card-flag"
+        loading="lazy"
+        alt="Safespring language flag"
+        src="/img/flags/{{ .Params.language }}.svg"
+      />
+      <span class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px"
+        >Solution brief</span
+      >
+    </div>
+    <div class="blogg-card-wapper">
+      <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
+      <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
+    </div>
+    {{ else if eq $typeFolder "white-paper" }}
+    <div class="padding-15">
+      <div>
+        <span
+          class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+          >White Paper</span
+        >
+        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">
+          {{ .Title }}
+        </h1>
+        <p class="mb-1">{{ .Params.intro }}</p>
+      </div>
+      <div>
+        <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
+      </div>
+    </div>
+    {{ else }}
+    <div class="padding-15">
+      <div>
+        <span
+          class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+          >{{ .Params.section }}</span
+        >
+        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">
+          {{ .Title }}
+        </h1>
+        <p class="mb-1">{{ .Params.intro }}</p>
+      </div>
+      <div>
+        <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
+      </div>
+    </div>
+    {{ end }}
+  </div>
 </a>
