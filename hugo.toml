@@ -50,6 +50,34 @@ weight = 4
 source = 'content/sv'
 target = 'content'
 lang = 'sv'
+# This fills in the gaps in SV content with EN content
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'sv'
+
+# NB content
+[[module.mounts]]
+source = 'content/nb'
+target = 'content'
+lang = 'nb'
+# This fills in the gaps in NB content with EN content.
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'nb'
+
+
+# DA content
+[[module.mounts]]
+source = 'content/da'
+target = 'content'
+lang = 'da'
+# This fills in the gaps in DA content with EN content.
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'da'
 
 # EN content
 [[module.mounts]]
@@ -57,41 +85,10 @@ source = 'content/en'
 target = 'content'
 lang = 'en'
 
-# NB content
-[[module.mounts]]
-source = 'content/nb'
-target = 'content'
-lang = 'nb'
 
-# DA content
-[[module.mounts]]
-source = 'content/da'
-target = 'content'
-lang = 'da'
-
-#------------------------------------------------------------------------------
-# Fill in the missing translations
-#------------------------------------------------------------------------------
-
-# This fills in the gaps in SV content with EN content
-[[module.mounts]]
-source = 'content/en'
-target = 'content'
-lang = 'sv'
-
-# This fills in the gaps in NB content with EN content.
-[[module.mounts]]
-source = 'content/en'
-target = 'content'
-lang = 'nb'
-
-# This fills in the gaps in DA content with EN content.
-[[module.mounts]]
-source = 'content/en'
-target = 'content'
-lang = 'da'
 
 [params]
+
   mainSections = ['blog', 'webinar', 'whitepaper', 'solution-brief']
 
 [sitemap]

@@ -10,6 +10,4 @@ nosidebar: "none"
 fullwidth: "x"
 nolist: ""
 noindex: "x"
-aliases:
-  - /geant/
 ---

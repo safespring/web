@@ -9,8 +9,6 @@ socialmedia: "/safespring-start.jpg"
 nosidebar: "none"
 fullwidth: "x"
 nolist: "x"
-aliases:
-  - /service-catalogue/
 ---
 
 {{< service-catalogue >}}

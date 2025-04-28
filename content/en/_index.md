@@ -6,6 +6,4 @@ draft: false
 language: "en"
 socialmedia: "/safespring-start.jpg"
 layout: "index"
-aliases:
-  - /en/
 ---

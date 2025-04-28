@@ -17,8 +17,6 @@ sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "invisible"
 toc: "Episode"
-aliases:
-  - /demo/backup/
 ---
 
 # Boka in ett möte med Gabriel!

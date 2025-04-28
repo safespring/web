@@ -10,8 +10,6 @@ nosidebar: "none"
 fullwidth: "x"
 nolist: "x"
 noindex: ""
-aliases:
-  - /geant/service-catalogue/
 ---
 
 {{< geant-service-catalogue >}}
