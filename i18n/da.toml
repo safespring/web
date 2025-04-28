@@ -3,3 +3,10 @@ learn_more = "Læs mere"
 read_article = "Læs artiklen"
 read_post = "Læs indlæg"
 blog = "Blog"
+
+[footer]
+platform = "Platformen"
+compute = "Compute"
+storage = "Storage (S3)"
+kubernetes = "Kubernetes"
+backup = "Backup"

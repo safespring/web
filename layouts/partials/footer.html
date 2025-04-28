@@ -4,50 +4,85 @@
       <a href="/"
         ><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"
       /></a>
-      <p>Safespring är en snabb och flexibel moln- och It-infrastrukturtjänst.</p>
-      <a class="button" href="/kontakt">Kontakt</a>
+      <p>{{ i18n "footer.tagline" }}</p>
+      <a class="button" href='{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}'
+        >{{ T "footer.contact" }}</a
+      >
     </div>
     <div class="safespring-footer-menu">
       <ul>
-        <li>Plattformen</li>
-        <li><a href="/tjanster/safespring-compute/">Compute</a></li>
-        <li><a href="/tjanster/safespring-storage/">Storage (S3)</a></li>
-        <li><a href="/tjanster/containerplattform/">Kubernetes</a></li>
-        <li><a href="/tjanster/safespring-backup/">Backup</a></li>
-        <li><a href="/tjanster/machine-learning/">AI och ML</a></li>
-        <li><a href="/tjanster/database-as-a-service/">Database</a></li>
+        <li>{{ T "footer.platform" }}</li>
+        <li>
+          <a href='{{ with .GetPage "services/compute" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.platform_compute" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "services/storage" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.platform_storage" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "services/containerplatform" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.platform_container" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "services/backup" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.platform_backup" }}</a
+          >
+        </li>
+        <li>
+          <a
+            href='{{ with .GetPage "services/machine-learning-ai-gpu-resources" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.platform_ai" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "services/database-as-a-service" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.platform_database" }}</a
+          >
+        </li>
       </ul>
     </div>
     <div class="safespring-footer-menu">
       <ul>
-        <li>Branscher</li>
-        <li><a href="/branscher/utbildning-forskning/">Akademin</a></li>
-        <li><a href="/branscher/myndigheter/">Myndigheter</a></li>
-        <li><a href="/branscher/applikationsutvecklare/">SaaS-bolag</a></li>
-        <li><a href="/branscher/applikationsutvecklare/">PaaS-bolag</a></li>
-        <li><a href="/saas/medtech/">Medtech</a></li>
+        <li>{{ T "footer.industries" }}</li>
+        <li>
+          <a href="/branscher/utbildning-forskning/">{{ T "footer.industries_education" }}</a>
+        </li>
+        <li><a href="/branscher/myndigheter/">{{ T "footer.industries_government" }}</a></li>
+        <li><a href="/branscher/applikationsutvecklare/">{{ T "footer.industries_saas" }}</a></li>
+        <li><a href="/branscher/applikationsutvecklare/">{{ T "footer.industries_paas" }}</a></li>
+        <li><a href="/saas/medtech/">{{ T "footer.industries_medtech" }}</a></li>
       </ul>
     </div>
     <div class="safespring-footer-menu">
       <ul>
-        <li>Aktuellt</li>
-        <li><a href="/tjanster/case/">Use Case</a></li>
-        <li><a href="/whitepaper/">White Paper</a></li>
-        <li><a href="/solution-brief/">Solution Briefs</a></li>
-        <li><a href="/blogg/">Tech update</a></li>
-        <li><a href="/webinar/">Webcast</a></li>
-        <li><a href="/blogg/">Blogg</a></li>
+        <li>{{ T "footer.knowledgehub" }}</li>
+        <li><a href="/tjanster/case/">{{ T "footer.knowledgehub_use_case" }}</a></li>
+        <li><a href="/whitepaper/">{{ T "footer.knowledgehub_whitepaper" }}</a></li>
+        <li><a href="/solution-brief/">{{ T "footer.knowledgehub_solution_brief" }}</a></li>
+        <li><a href="/blogg/">{{ T "footer.knowledgehub_tech_update" }}</a></li>
+        <li><a href="/webinar/">{{ T "footer.knowledgehub_webcast" }}</a></li>
+        <li><a href="/blogg/">{{ T "footer.knowledgehub_blog" }}</a></li>
       </ul>
     </div>
     <div class="safespring-footer-menu">
       <ul>
-        <li>Safespring</li>
-        <li><a href="/om-safespring/">Om bolaget</a></li>
-        <li><a href="/career/">Jobba hos oss</a></li>
-        <li><a href="/om-safespring/datacenter/">Våra datacenter</a></li>
-        <li><a href="/om-safespring/samarbeten-och-partners/">Partnerskap</a></li>
-        <li><a href="/om-safespring/miljo-och-hallbarhet/">Hållbarhet</a></li>
-        <li><a href="/om-safespring/vanliga-fragor/">Vanliga frågor</a></li>
+        <li>{{ T "footer.safespring" }}</li>
+        <li><a href="/om-safespring/">{{ T "footer.safespring_about" }}</a></li>
+        <li><a href="/career/">{{ T "footer.safespring_careers" }}</a></li>
+        <li><a href="/om-safespring/datacenter/">{{ T "footer.safespring_datacenters" }}</a></li>
+        <li>
+          <a href="/om-safespring/samarbeten-och-partners/">{{ T "footer.safespring_partners" }}</a>
+        </li>
+        <li>
+          <a href="/om-safespring/miljo-och-hallbarhet/"
+            >{{ T "footer.safespring_sustainability" }}</a
+          >
+        </li>
+        <li><a href="/om-safespring/vanliga-fragor/">{{ T "footer.safespring_faq" }}</a></li>
       </ul>
     </div>
   </div>
@@ -72,7 +107,7 @@
     </div>
     <div class="safespring-footer-language">
       <div class="safespring-footer-language-icon">
-        <p>Choose language</p>
+        <p>{{ T "footer.choose_language" }}</p>
         {{ partial "language-switcher.html" . }}
       </div>
     </div>
@@ -84,19 +119,23 @@
     </div>
     <div class="safespring-footer-information-menu">
       <ul>
-        <li><a href="/dokument/personuppgiftshantering/">Personuppgiftshantering</a></li>
-        <li><a href="/dokument/cookies/">Cookiepolicy</a></li>
+        <li>
+          <a href="/dokument/personuppgiftshantering/">{{ T "footer.personal_data_policy" }}</a>
+        </li>
+        <li><a href="/dokument/cookies/">{{ T "footer.cookies" }}</a></li>
         <li>
           <a
             href="javascript:cookieTractor.openConsentSettings()"
             class="cookie-consent-settings"
             rel="nofollow"
-            >Inställningar för cookies</a
+            >{{ T "footer.cookie_settings" }}</a
           >
         </li>
-        <li><a href="/dokument/acceptable-use-policy/">Acceptable use policy</a></li>
-        <li><a href="/kontakt/#företagsinformation">Bolagsinformation</a></li>
-        <li><a href="/om-safespring/fr2000">FR2000</a></li>
+        <li>
+          <a href="/dokument/acceptable-use-policy/">{{ T "footer.acceptable_use_policy" }}</a>
+        </li>
+        <li><a href="/kontakt/#företagsinformation">{{ T "footer.company_information" }}</a></li>
+        <li><a href="/om-safespring/fr2000">{{ T "footer.fr2000" }}</a></li>
       </ul>
     </div>
   </div>
