@@ -3,7 +3,7 @@ title: "En hands-on demo av Backup-portalen"
 section: ""
 episode: "3"
 series: "true"
-language: "En"
+language: "Se"
 date: "2025-02-24"
 draft: false
 tags: ["Svenska"]

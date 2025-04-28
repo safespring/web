@@ -3,7 +3,7 @@ title: "En överblick av Safespring Backup"
 section: ""
 episode: "1"
 series: "true"
-language: "En"
+language: "Se"
 date: "2025-02-24"
 draft: false
 tags: ["Svenska"]

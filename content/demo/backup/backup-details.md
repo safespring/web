@@ -3,7 +3,7 @@ title: "Teknisk djupdykning av Safespring Backup"
 section: ""
 episode: "2"
 series: "true"
-language: "En"
+language: "Se"
 date: "2025-03-01"
 draft: false
 tags: ["Svenska"]
