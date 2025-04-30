@@ -115,14 +115,21 @@
 
   <div class="safespring-footer-third">
     <div class="safespring-footer-copyright">
-      <p>© Safespring AB (559075-0245) 2017-{{ now.Format "2006"}}</p>
+      <p>© {{ T "footer.safespring_legal_name" }} 2017-{{ now.Format "2006"}}</p>
     </div>
     <div class="safespring-footer-information-menu">
       <ul>
         <li>
-          <a href="/dokument/personuppgiftshantering/">{{ T "footer.personal_data_policy" }}</a>
+          <a
+            href='{{ with .GetPage "documents/personal-data-processing" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.personal_data_policy" }}</a
+          >
         </li>
-        <li><a href="/dokument/cookies/">{{ T "footer.cookies" }}</a></li>
+        <li>
+          <a href='{{ with .GetPage "documents/cookies" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.cookies" }}</a
+          >
+        </li>
         <li>
           <a
             href="javascript:cookieTractor.openConsentSettings()"
@@ -132,10 +139,22 @@
           >
         </li>
         <li>
-          <a href="/dokument/acceptable-use-policy/">{{ T "footer.acceptable_use_policy" }}</a>
+          <a
+            href='{{ with .GetPage "documents/acceptable-use-policy" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.acceptable_use_policy" }}</a
+          >
         </li>
-        <li><a href="/kontakt/#företagsinformation">{{ T "footer.company_information" }}</a></li>
-        <li><a href="/om-safespring/fr2000">{{ T "footer.fr2000" }}</a></li>
+        <li>
+          <a
+            href='{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}#{{ T "footer.company_information_hash" }}'
+            >{{ T "footer.company_information" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "fr2000" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.fr2000" }}</a
+          >
+        </li>
       </ul>
     </div>
   </div>

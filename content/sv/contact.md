@@ -76,4 +76,4 @@ Safespring levererar IT-tjänster som är både effektiva, säkra och kostnadsef
 {{< info title="Styrelsens säte" name="Solna, Sverige" >}}
 {{< info title="Ägare" name="Privat, ej börsnoterat" >}}
 {{< info title="Grundat" name="2016-09-05" >}}
-{{< /infobox >}}.
+{{< /infobox >}}
