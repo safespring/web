@@ -15,12 +15,18 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/en/contact"
 ---
-
+<!--
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-table" text="Price list with calculator" link="/pricelist/EUR/safespring-price-list-eur.xlsx" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-file-pdf" text="Price list as PDF" link="/pricelist/EUR/safespring-price-list-eur.pdf" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-file-csv" text="Price list as CSV (coming soon)" link="" color="#EBEBEB">}}
 {{< /icon-block-container >}}
+-->
+
+## Download the price calculator
+Set up your current environment to see how much you save by moving to Safespring. The price calculator is an Excel file with built-in logic to calculate a monthly cost based on your selections.
+
+{{< price-list language="En" >}}
 
 {{< distance >}}
 
@@ -79,6 +85,19 @@ Safespring offers a range of cost-effective virtual machines with varying vCPUs 
 | FLAVOR-b2. c8 r32  |   8  |    32    |        0        |                 0,30 €  |               213,60 €  |
 | FLAVOR-b2. c16 r32 |  16  |    32    |        0        |                 0,38 €  |               270,56 €  |
 | FLAVOR-b2. c16 r64 |  16  |    64    |        0        |                 0,59 €  |               427,20 €  |
+
+
+### GPU Flavors
+Safespring offers several virtual machine options with GPU, both with and without local storage (NVMe).
+
+| Product ID               | vCPU | RAM (GB) | Local Disk (GB) | GPU (A2) | Per Hour | Per 30 Days |
+|--------------------------|:----:|:--------:|----------------:|:--------:|---------------:|------------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | 1        |  0,41 €           |  297,71 €      |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | 1        |  0,58 €           |  415,63 €      |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | 1        |  0,34 €           |  247,42 €      |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | 1        |  0,44 €           |  315,06 €      |
+
+
 
 ### Central Block Storage
 Central block storage provides three copies of data spread out in a robust CEPH cluster. Get fast and reliable storage with Safespring from only €0.107 per GB per 30 days.
