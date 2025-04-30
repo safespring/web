@@ -6,7 +6,8 @@ draft: false
 intro: "Vår djupa kompetens och våra egenproducerade tjänster tillsammans med samarbeten gör oss mycket flexibla. Vi kan den nordiska marknaden."
 background: ""
 aliases:
-- /om-safespring/samarbeten-och-partners/
+  - /samarbeten-och-partners/
+slug: "samarbeten-och-partners"
 ---
 
 {{< ingress >}}
@@ -40,7 +41,7 @@ Vår plattform har aldrig behövt kompromissa med svensk- eller europeisk lagsti
 Som partners till Safespring kan ni garantera era kunder en korrekt hantering av personuppgifter och annan känslig data utan kompromiss. Med datacenter i Sverige och som ett helt svenskt bolag garanterar vår plattform trygghet, både tekniskt och juridiskt, att data stannar i Sverige och hanteras korrekt.
 
 {{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
+Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.
 
 {{< inline "Ring" >}} +46 (0)73 533 65 21  
 [petter.hylin @safespring.com](petter.hylin@safespring.com)
@@ -49,12 +50,12 @@ Jag är försäljningschef i Sverige och hjälper dig att använda våra tjänst
 ## Några av våra partners
 
 <div class="partner-grid">
-<a href="https://nextcloud.com"><div class="partner-container"><img style="max-height:70px;" class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_nextcloud.svg"></div></a><a href="https://elastisys.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_elastisys.svg"></div></a>
-<a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_severalnines.svg"></div></a>
-<a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_piql.png"></div></a>
-<a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_scaleout-systems.svg"></div></a>
-<a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_arkivit.png"></div></a>
-<a href="https://www.cristie.dk/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_cristie-nordic.webp"></div></a>
-<a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_sunet.png"></div></a>
-<a href="https://sikt.no"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/sikt.svg"></div></a>
+<a href="https://nextcloud.com"><div class="partner-container"><img style="max-height:70px;" class="partnerlogo" src="/images/partners/safespring_partners_nextcloud.svg"></div></a><a href="https://elastisys.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_elastisys.svg"></div></a>
+<a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_severalnines.svg"></div></a>
+<a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_piql.png"></div></a>
+<a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_scaleout-systems.svg"></div></a>
+<a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_arkivit.png"></div></a>
+<a href="https://www.cristie.dk/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_cristie-nordic.webp"></div></a>
+<a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_sunet.png"></div></a>
+<a href="https://sikt.no"><div class="partner-container"><img class="partnerlogo" src="/images/partners/sikt.svg"></div></a>
 </div>

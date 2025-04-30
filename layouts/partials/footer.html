@@ -59,10 +59,19 @@
           >
         </li>
         <li>
-          <a href="">{{ T "footer.industries_government" }}</a>
+          <a href='{{ with .GetPage "industries/government" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_government" }}</a
+          >
         </li>
         <li>
-          <a href="">{{ T "footer.industries_saas" }}</a>
+          <a href='{{ with .GetPage "saas" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_saas" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "saas/application-developers" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_application_developers" }}</a
+          >
         </li>
         <li>
           <a href='{{ with .GetPage "services/compliant-kubernetes" }}{{ .RelPermalink }}{{ end }}'
@@ -70,7 +79,9 @@
           >
         </li>
         <li>
-          <a href="">{{ T "footer.industries_medtech" }}</a>
+          <a href='{{ with .GetPage "saas/medtech" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_medtech" }}</a
+          >
         </li>
       </ul>
     </div>
@@ -83,18 +94,8 @@
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub/whitepaper" }}{{ .RelPermalink }}{{ end }}'
-            >{{ T "footer.knowledgehub_whitepaper" }}</a
-          >
-        </li>
-        <li>
           <a href='{{ with .GetPage "knowledge-hub/solution-brief" }}{{ .RelPermalink }}{{ end }}'
             >{{ T "footer.knowledgehub_solution_brief" }}</a
-          >
-        </li>
-        <li>
-          <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
-            >{{ T "footer.knowledgehub_tech_update" }}</a
           >
         </li>
         <li>
@@ -105,6 +106,16 @@
         <li>
           <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
             >{{ T "footer.knowledgehub_blog" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub/whitepaper" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_whitepaper" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_tech_update" }}</a
           >
         </li>
       </ul>
@@ -128,13 +139,24 @@
           >
         </li>
         <li>
-          <a href="">{{ T "footer.safespring_partners" }}</a>
+          <a href='{{ with .GetPage "environment" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_sustainability" }}</a
+          >
         </li>
         <li>
-          <a href="">{{ T "footer.safespring_sustainability" }}</a>
+          <a href='{{ with .GetPage "our-partners" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_partners" }}</a
+          >
         </li>
         <li>
-          <a href="">{{ T "footer.safespring_faq" }}</a>
+          <a href='{{ with .GetPage "become-partner" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_become_partner" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_faq" }}</a
+          >
         </li>
       </ul>
     </div>

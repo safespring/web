@@ -15,6 +15,7 @@ cardcolor: "#417DA5"
 cardintro: "Bygg och skala dina SaaS-lösningar på en säker och flexibel infrastruktur med stöd för moderna DevOps-principer."
 aliases:
 - /branscher/applikationsutvecklare/
+slug: "applikationsutvecklare"
 ---
 
 {{< ingress >}}
@@ -26,12 +27,12 @@ Safespring är en mångsidig plattform och ett idealiskt fundament för SaaS-bol
 Med Safesprings molntjänster kan ni enkelt utveckla och driva skalbara applikationer. Vi erbjuder en komplett lösning för SaaS-företag, oavsett om ni driver en MedTech-, EdTech- eller någon annan SaaS-tjänst. Våra tjänster erbjuder hög säkerhet och efterlevnad av lokala datalagringskrav, vilket gör det lättare att uppfylla lagkrav såsom GDPR.
 
 {{< icon-block-container >}}
-	{{< icon-block icon="fa-solid fa-cloud" text="Infrastruktur som tjänst" link="" color="#417DA5" >}}
-	{{< icon-block icon="fa-solid fa-shield-alt" text="Datasäkerhet" link="" color="#32cd32" >}}
-	{{< icon-block icon="fa-solid fa-server" text="Compliant Kubernetes" link="" color="#3C9BCD" >}}
-	{{< icon-block icon="fa-solid fa-lock-open" text="Ingen leverantörs-inlåsning" link="" color="#FA690F" >}}
-	{{< icon-block icon="fa-solid fa-cogs" text="Automatisering & DevOps-stöd" link="" color="#195F8C" >}}
-	{{< icon-block icon="fa-solid fa-sync" text="Skalbarhet & flexibilitet" link="" color="#32cd32" >}}
+{{< icon-block icon="fa-solid fa-cloud" text="Infrastruktur som tjänst" link="" color="#417DA5" >}}
+{{< icon-block icon="fa-solid fa-shield-alt" text="Datasäkerhet" link="" color="#32cd32" >}}
+{{< icon-block icon="fa-solid fa-server" text="Compliant Kubernetes" link="" color="#3C9BCD" >}}
+{{< icon-block icon="fa-solid fa-lock-open" text="Ingen leverantörs-inlåsning" link="" color="#FA690F" >}}
+{{< icon-block icon="fa-solid fa-cogs" text="Automatisering & DevOps-stöd" link="" color="#195F8C" >}}
+{{< icon-block icon="fa-solid fa-sync" text="Skalbarhet & flexibilitet" link="" color="#32cd32" >}}
 {{< /icon-block-container >}}
 
 ---

@@ -10,8 +10,6 @@ socialmedia: "safespring_social_01.jpg"
 saas: "yes"
 sidebarwhitepaper: "yes"
 nolist: "n"
-aliases:
-- /saas/
 ---
 
 ![Safespring pyramid](/img/graphics/safespring-pyramid-2025.svg)
@@ -20,11 +18,12 @@ aliases:
 Safespring förstår att era kunder har höga krav på att ni hanterar känslig data korrekt och att era kunders förtroende för er är viktigt.
 {{< /ingress >}}
 
-Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige. 
+Safespring är en svensk molntjänstleverantör med svenska datacenter och med fokus på att våra kunders data endast hanteras av våra kunder samt alltid stannar i Sverige.
 
 I nästan alla SaaS förekommer det personuppgifter varför både ni och era underleverantörer behöver uppfylla kraven i dataskyddsförordningen. Om ni använder Safespring för er IaaS/PaaS blir era kunders analys gällande personuppgiftsbehandling trivial i jämförelse med om ni använder amerikanska molntjänster vilket bl.a. innebär att ni kan fokusera på att sälja värdet av er tjänst istället.
 
-## Juridiken 
+## Juridiken
+
 Både ni och vi på Safespring agerar i en förtroendebransch där det blir allt mer kritiskt att se över våra beroenden och partners. Våra kunder kommer ställa allt högre krav på politisk och juridisk säkerhet utöver traditionell IT-säkerhet och driftsäkerhet.
 
 Safespring är en svensk publik molnplattform som kraftigt förenklar för er att uppfylla svensk och europeisk lagstiftning. Med fokus på öppna standarder och digital suveränitet erbjuder Safespring tjänster som virtuella servrar, storskalig lagring, container-plattformar och backup som tjänst. Med datacenter i Sverige och Norge är Safespring en beprövad och säker plattform för SaaS-bolag, myndigheter, datadrivna bolag och den akademiska sektorn.
@@ -34,15 +33,16 @@ I nästan alla SaaS förekommer det personuppgifter varför både ni och era und
 Om det förekommer sekretessreglerade uppgifter i er SaaS, vare sig det är uppgifter som omfattas av offentlighets- och sekretesslagen, advokatsekretess eller kommersiell sekretess krävs det att ni kan garantera att sekretessen bibehålls. Amerikanska molntjänstleverantörer kan aldrig garantera sekretessen, vilket framgår av deras avtalsvillkor. Safespring har inga sådana avtalsvillkor och kommer inte lämna ut våra kunders information förutom när svensk domstol kräver det.
 
 {{< icon-block-container >}}
-	{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
-	{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
-	{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
-	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
-	{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Tekniken
+
 Safespring tillhandahåller en driftsäker och flexibel infrastruktur som gör det enklare för er som SaaS-leverantör att leverera era tjänster med hög prestanda och tillgänglighet. Nätverksstacken är byggd med Calico, vilket ger er en säker, skalbar och högpresterande kommunikation mellan era tjänster samtidigt som stabilitet och driftsäkerhet säkerställs. OpenStack-plattformen ger er tillgång till ett brett utbud av instans-typer, vilket gör det enkelt att anpassa kapaciteten efter era behov och optimera kostnaden.
 
 Lagringen är anpassad för att möta era varierande krav, med både lokal NVMe-lagring för extremt snabb dataåtkomst och Ceph-baserad central lagring. Ceph-lösningen finns i två varianter: en SSD-baserad för höga prestandakrav och en kostnadseffektiv lagring baserad på traditionell disk för stora datamängder såsom loggar och backup. Ceph är dessutom en självläkande och distribuerad lösning som säkerställer hög tillgänglighet och redundans, vilket ger er trygghet och stabilitet i ert datahanteringsflöde.
