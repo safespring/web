@@ -156,29 +156,13 @@
 	</div>
 	<div class="inputGroup">
         <input type="checkbox" name="singleOptIn.odbjxu1e5b9" id="accept-terms" required>
-        <label for="accept-terms">
-  {{ if eq (.Get "language") "En" }}
-    I accept <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering-en/" target="_blank">terms <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-  {{ else if eq (.Get "language") "No" }}
-    Jeg aksepterer <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering-no/" target="_blank">vilkårene <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-  {{ else }}
-    Jag accepterar <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering/" target="_blank">villkoren <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-  {{ end }}
-</label>
+        <label for="accept-terms">{{ if eq (.Get "language") "En" }}I accept <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering-en/" target="_blank">terms <i class="fa-solid fa-arrow-up-right-from-square"></i></a>{{ else if eq (.Get "language") "No" }}Jeg aksepterer <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering-no/" target="_blank">vilkårene <i class="fa-solid fa-arrow-up-right-from-square"></i></a>{{ else }}Jag accepterar <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering/" target="_blank">villkoren <i class="fa-solid fa-arrow-up-right-from-square"></i></a>{{ end }}</label>
     </div>
 	<input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u01b0d951917c4e668692e72d4d9ae899">
 	<input type="hidden" name="isFrame" value="false">
 	<input type="text" value="" name="validation" style="display: none;">
-	<div class="submit-button"><button class="submit-button button pt-1 pb-1 mt-2" type="submit">
-  {{ if eq (.Get "language") "En" }}
-    Download the price list
-  {{ else if eq (.Get "language") "No" }}
-    Last ned prislisten
-  {{ else }}
-    Hämta prislistan
-  {{ end }}
-</button></div>
+	<div class="submit-button"><button class="submit-button button pt-1 pb-1 mt-2" type="submit">{{ if eq (.Get "language") "En" }}Download the price list{{ else if eq (.Get "language") "No" }}Last ned prislisten{{ else }}Hämta prislistan{{ end }}</button></div>
 </form>
 <script>
 	(function() {
