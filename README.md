@@ -70,22 +70,19 @@ Which would link to `/contact`, `/sv/kontakt` and `/nb/kontakt` depending on the
 
 ### Translation variables
 
-1. `{{ T "" }}` is a shorthand function that is equivalent to `{{ i18n "" }}`. They are functionally identical and can be used interchangeably. Both functions are used to translate strings in Hugo templates.
+To find missing translations, run `hugo --printI18nWarnings` and look for the keys that are not translated.
 
-2. The main difference is in their usage and convention:
+`{{ T "" }}` is a shorthand function that is equivalent to `{{ i18n "" }}`. They are functionally identical and can be used interchangeably.
+How it works:
 
-   - `T` is shorter and more commonly used in templates for brevity
-   - `i18n` is the full name of the function and is more explicit about its purpose (i18n stands for internationalization)
+- Look up translations in the i18n files (the `.toml` files in the `i18n/` directory)
+- Use the current language context to determine which translation to use
+- Return the translated string for the given key
 
-3. Both functions:
-   - Look up translations in your i18n files (like the `.toml` files in your `i18n/` directory)
-   - Use the current language context to determine which translation to use
-   - Return the translated string for the given key
-
-For example, in your codebase, you can see both being used in similar contexts:
+Example:
 
 ```html
-<span class="text-button"> {{ T "knowledgehub.read_post" }} </span>
+<span> {{ T "knowledgehub.read_post" }} </span>
 ```
 
-This would look up the translation for the key "knowledgehub.read_post" in your i18n files (like `i18n/en.toml`, `i18n/sv.toml`, etc.) and return the appropriate translation based on the current language.
+This would look up the translation for the key "knowledgehub.read_post" in the i18n files (like `i18n/en.toml`, `i18n/sv.toml`, etc.) and return the appropriate translation based on the current language.
