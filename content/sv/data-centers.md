@@ -11,6 +11,7 @@ sidebarlinkurl: "/documents/safespring_information-security-guidelines_2024.pdf"
 socialmedia: "safespring-datacenter.jpg"
 aliases:
   - /om-safespring/Datacenter/
+  - /om-safespring/datacenter/
 slug: "datacenter"
 ---
 

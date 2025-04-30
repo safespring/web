@@ -20,6 +20,7 @@ TOC: "På denne siden"
 aliases:
    - /no/bransjer/ocre-2024
    - /no/bransjer/Utdanning-og-forskning/
+   - /no/bransjer/utdanning-og-forskning/
 slug: "utdanning-og-forskning"
 ---
 
