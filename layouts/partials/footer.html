@@ -1,7 +1,7 @@
 <div class="safespring-footer-container">
   <div class="safespring-footer">
     <div class="safespring-footer-logo">
-      <a href="/"
+      <a href='{{ with .GetPage "/" }}{{ .RelPermalink }}{{ end }}'
         ><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"
       /></a>
       <p>{{ i18n "footer.tagline" }}</p>
@@ -54,13 +54,24 @@
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "industries/government" }}{{ .RelPermalink }}{{ end }}'
-            >{{ T "footer.industries_government" }}</a
+          <a href='{{ with .GetPage "industries/eosc" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_science" }}</a
           >
         </li>
-        <li><a href="/branscher/applikationsutvecklare/">{{ T "footer.industries_saas" }}</a></li>
-        <li><a href="/branscher/applikationsutvecklare/">{{ T "footer.industries_paas" }}</a></li>
-        <li><a href="/saas/medtech/">{{ T "footer.industries_medtech" }}</a></li>
+        <li>
+          <a href="">{{ T "footer.industries_government" }}</a>
+        </li>
+        <li>
+          <a href="">{{ T "footer.industries_saas" }}</a>
+        </li>
+        <li>
+          <a href='{{ with .GetPage "services/compliant-kubernetes" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_paas" }}</a
+          >
+        </li>
+        <li>
+          <a href="">{{ T "footer.industries_medtech" }}</a>
+        </li>
       </ul>
     </div>
     <div class="safespring-footer-menu">
@@ -87,7 +98,7 @@
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub/webcast" }}{{ .RelPermalink }}{{ end }}'
+          <a href='{{ with .GetPage "knowledge-hub/webinar" }}{{ .RelPermalink }}{{ end }}'
             >{{ T "footer.knowledgehub_webcast" }}</a
           >
         </li>
@@ -107,7 +118,7 @@
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "careers" }}{{ .RelPermalink }}{{ end }}'
+          <a href='{{ with .GetPage "career" }}{{ .RelPermalink }}{{ end }}'
             >{{ T "footer.safespring_careers" }}</a
           >
         </li>
@@ -117,19 +128,13 @@
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "samarbeten-och-partners" }}{{ .RelPermalink }}{{ end }}'
-            >{{ T "footer.safespring_partners" }}</a
-          >
+          <a href="">{{ T "footer.safespring_partners" }}</a>
         </li>
         <li>
-          <a href='{{ with .GetPage "environment" }}{{ .RelPermalink }}{{ end }}'
-            >{{ T "footer.safespring_sustainability" }}</a
-          >
+          <a href="">{{ T "footer.safespring_sustainability" }}</a>
         </li>
         <li>
-          <a href='{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}'
-            >{{ T "footer.safespring_faq" }}</a
-          >
+          <a href="">{{ T "footer.safespring_faq" }}</a>
         </li>
       </ul>
     </div>
