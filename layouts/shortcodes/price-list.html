@@ -1,0 +1,262 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css">
+<style>
+    /* Formulärcontainer */
+    form {
+        width: min(100%, 500px);
+    }
+
+    /* Rubriker */
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Textfält och andra inputfält */
+    .form-field {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .form-field label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+        pointer-events: none;
+        font-size: 16px;
+        font-weight: 400;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        padding: 0 8px;
+        margin: 0 -8px;
+        font-family: 'Montserrat';
+        line-height: 16px;
+        color: var(--middle-blue-color);
+    }
+
+    .form-field input[type="text"],
+    .form-field input[type="email"],
+    .form-field input[type="tel"],
+    .form-field select {
+        width: 100%;
+        line-height: 16px;
+        padding: 10px;
+        border: solid 0.5px var(--main-color);
+        border-radius: 100px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: var(--main-color);
+        padding: 15px 25px;
+        background-color: transparent;
+        font-family: 'Montserrat';
+
+    }
+
+    .form-field input[type="text"]:focus,
+    .form-field input[type="email"]:focus,
+    .form-field input[type="tel"]:focus,
+    .form-field select:focus {
+        outline: none;
+        box-shadow: none;
+        border: solid 0.5px var(--main-color) !important;       
+    }
+
+    .form-field input[type="text"]:valid ~ label,
+    .form-field input[type="email"]:valid ~ label,
+    .form-field input[type="tel"]:valid ~ label,
+    .form-field select:valid ~ label {
+        transform: translateY(-205%);
+        -webkit-transform: translateY(-205%);
+        color: #3C9BCD;
+        font: 400 12px/16px 'Hind';
+        letter-spacing: 0.5px;
+        background-color: #fafefe;
+        border-radius: 100px;
+    }
+
+
+    .form-field input[type="text"]:focus ~ label,
+    .form-field input[type="email"]:focus ~ label,
+    .form-field input[type="tel"]:focus ~ label,
+    .form-field select:focus ~ label {
+        transform: translateY(-205%);
+        -webkit-transform: translateY(-205%);
+        color: #3C9BCD;
+        font: 400 12px/16px 'Hind';
+        letter-spacing: 0.5px;
+        background-color: #fafefe;
+        border-radius: 100px;
+    }
+
+    .form-field.invalid.has-content input {
+        border-color: red;
+    }
+
+    .form-field.invalid.has-content label {
+        transform: translateY(-205%);
+        -webkit-transform: translateY(-205%);
+        color: red;
+        font: 400 12px/16px 'Hind';
+        letter-spacing: 0.5px;
+        background-color: #fafefe;
+        border-radius: 100px;
+    }
+
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .selection-icon {
+        position: absolute;
+        right: 11px;
+        top: 8px;
+        padding: 10px 9px 6px 9px;
+        border-radius: 100px;
+        background-color: var(--cloud-blue-color);
+        color: var(--middle-blue-color);
+        z-index: -2;
+    }
+
+    /* Checkboxar */
+    .form-field label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-field input[type="checkbox"] {
+        margin-right: 10px;
+        transform: translateY(2px);
+    }
+
+    .form-field.has-content label {
+        color: #3C9BCD;
+        font: 400 12px/16px 'Hind';
+        letter-spacing: 0.5px;
+        background-color: #fafefe;
+    }
+
+    .form-field.has-content.invalid label {
+        color: red;
+        font: 400 12px/16px 'Hind';
+        letter-spacing: 0.5px;
+        background-color: #fafefe;
+    }
+</style>
+<form id="up-form" name="form_9549u01b0d951917c4e668692e72d4d9ae899" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+	<div class="form-field">
+		<input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
+		<label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+	</div>
+	<div class="inputGroup">
+        <input type="checkbox" name="singleOptIn.odbjxu1e5b9" id="accept-terms" required>
+        <label for="accept-terms">
+  {{ if eq (.Get "language") "En" }}
+    I accept <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering-en/" target="_blank">terms <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  {{ else if eq (.Get "language") "No" }}
+    Jeg aksepterer <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering-no/" target="_blank">vilkårene <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  {{ else }}
+    Jag accepterar <a style="font:17px var(--hind-font);" href="/dokument/personuppgiftshantering/" target="_blank">villkoren <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  {{ end }}
+</label>
+    </div>
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549u01b0d951917c4e668692e72d4d9ae899">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<div class="submit-button"><button class="submit-button button pt-1 pb-1 mt-2" type="submit">
+  {{ if eq (.Get "language") "En" }}
+    Download the price list
+  {{ else if eq (.Get "language") "No" }}
+    Last ned prislisten
+  {{ else }}
+    Hämta prislistan
+  {{ end }}
+</button></div>
+</form>
+<script>
+	(function() {
+		var form = document.getElementById("up-form");
+		if (form) {
+			form.addEventListener("submit", function(ev) {
+				var button = ev.target.querySelector("button[type=submit]");
+				if (button) {
+					button.disabled = true;
+				}
+			});
+		}
+	})();
+</script>
+<script>
+	function onSubmit(e) {
+		var t;
+		"function" != typeof window._bEmValid || !0 === window.__validEmail ? validateForm(e, "https://www.safespring.com/hello/") : (e.preventDefault(), t = setInterval(function() {
+			void 0 !== window.__validEmail && (clearInterval(t), !0 === window.__validEmail) && validateForm(e, "https://www.safespring.com/hello/")
+		}, 300))
+	}
+	function validateForm(e, n) {
+		e.preventDefault();
+		for (var e = document.getElementsByName("formId")[0].value, e = document.forms["form_" + e], t = e.querySelectorAll("input, textarea, select"), o = 0; o < t.length; o++) "text" === t[o].type && (t[o].value = t[o].value.trim());
+		var a = e.querySelectorAll("input[name*=phone], input[name*=Phone]");
+		if ([].forEach.call(a, function(e) {
+				e.iti && (e.value = e.iti.getNumber())
+			}), void 0 === window.grecaptcha || "" !== window.grecaptcha.getResponse()) {
+			for (var l = [], o = 0; o < t.length; o++) "checkbox" === t[o].type ? l.push(t[o].name + "=" + encodeURIComponent(t[o].checked ? t[o].value : "off")) : l.push(t[o].name + "=" + encodeURIComponent(t[o].value));
+			var a = l.join("&"),
+				s = (a += "&isAjax=true", window._paq || null),
+				i = new XMLHttpRequest;
+			i.open("POST", e.action), i.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), i.send(a), i.onload = function() {
+				var e, t;
+				200 === i.status ? n ? (s && s.push && s.push(["trackLink", "https://post.upsales.com/" + i.responseText, "link"]), "undefined" != typeof _uaq && _uaq("form=" + i.responseText), setTimeout(function() {
+					window.top.location.href = n
+				}, 333)) : (e = document.getElementById("up-form"), t = document.getElementById("up-form-thanks"), e.style.display = "none", t.style.display = "block", s && s.push && s.push(["trackLink", "https://post.upsales.com/" + i.responseText, "link"]), _uaq && _uaq("form=" + i.responseText)) : console.log("AJAX ERROR", i.status)
+			}
+		} else {
+			e = document.getElementById("recaptcha-error"), a = document.getElementsByClassName("g-recaptcha");
+			e.style.display = "none", a && a.length && console.log("handle this later")
+		}
+	}
+	var form = document.getElementById("up-form");
+	form.addEventListener("submit", onSubmit);
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#checkBtn').click(function() {
+            checked = $("input[type=checkbox]:checked").length;
+            if (!checked) {
+                alert("You must accept our terms our conditions");
+                return false;
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        const ids = ["#up-email-input", "#billing", "#gatekeeper-email"];
+        ids.forEach(id => {
+            const element = document.querySelector(id);
+            if (element) {
+                element.addEventListener("input", function (event) {
+                    var emailField = event.target;
+                    if (emailField.checkValidity()) {
+                        emailField.parentElement.classList.remove("invalid");
+                    } else {
+                        emailField.parentElement.classList.add("invalid");
+                    }
+                    if (emailField.value) {
+                        emailField.parentElement.classList.add("has-content");
+                    } else {
+                        emailField.parentElement.classList.remove("has-content");
+                    }
+                });
+            }
+        });
+    });
+</script>
+
