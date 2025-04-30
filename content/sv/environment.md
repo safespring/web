@@ -8,21 +8,21 @@ background: "safespring-environment-2022.webp"
 socialmedia: "safespring-miljo.jpg"
 TOC: "På denna sida"
 aliases:
-- /om-safespring/miljo-och-hallbarhet/
+  - /om-safespring/miljo-och-hallbarhet/
+slug: "miljo-och-hallbarhet"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-leaf" text="100% Förnyelsebara energikällor" link="#safesprings-hållbarhetsarbete" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-recycle" text="Hållbar återvinning" link="#resursutnyttjande-och-återanvändning" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-thermometer-three-quarters" text="Värme­återvinning" link="#safespring-stockholm-norr" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-route" text="Resurs­effektivisering" link="#miljöhänsyn-vid-inköp-och-upphandling" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-award" text="ISO 14001 ramverk" link="#iso-14001-ramverk-för-vår-miljöpolicy" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-hand-holding-water" text="Adiabatisk kylsystems­teknologi" link="#safespring-oslo" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100% Förnyelsebara energikällor" link="#safesprings-hållbarhetsarbete" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-recycle" text="Hållbar återvinning" link="#resursutnyttjande-och-återanvändning" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-thermometer-three-quarters" text="Värme­återvinning" link="#safespring-stockholm-norr" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-route" text="Resurs­effektivisering" link="#miljöhänsyn-vid-inköp-och-upphandling" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-award" text="ISO 14001 ramverk" link="#iso-14001-ramverk-för-vår-miljöpolicy" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-hand-holding-water" text="Adiabatisk kylsystems­teknologi" link="#safespring-oslo" color="#195F8C">}}
 {{< /icon-block-container >}}
 
-
 {{< ingress >}}
-Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan. Ett viktigt steg vi har tagit är att säkerställa att våra datacenter använder 100% förnyelsebar energi. 
+Vi på Safespring är stolta över att vara ett företag som arbetar hårt för att minska vår miljöpåverkan. Ett viktigt steg vi har tagit är att säkerställa att våra datacenter använder 100% förnyelsebar energi.
 {{< /ingress >}}
 
 Genom att välja förnyelsebar energi undviker vi koldioxidutsläpp som annars skulle vara skadliga för miljön.
@@ -69,7 +69,7 @@ Safespring fokuserar med avseende på ISO 14001 främst på minskade koldioxidav
 
 ### Miljöhänsyn vid inköp och upphandling
 
-I den utsträckning som är möjligt använder vi moderna energieffektiva lösningar för att producera våra tjänster. Den hårdvara som används i våra datacenter moderniseras löpande för att vara så energisnål och effektiv som möjligt.  Vid inköp och upphandling tas alltid miljöaspekten med i beslutsfattandet för att säkerställa att vi når våra satta miljömål.
+I den utsträckning som är möjligt använder vi moderna energieffektiva lösningar för att producera våra tjänster. Den hårdvara som används i våra datacenter moderniseras löpande för att vara så energisnål och effektiv som möjligt. Vid inköp och upphandling tas alltid miljöaspekten med i beslutsfattandet för att säkerställa att vi når våra satta miljömål.
 
 ### Resursutnyttjande och återanvändning
 
@@ -133,7 +133,7 @@ Byggstandarden är designad för tillgänglighetskrav Tier-3 enligt Safesprings 
 
 ### Safespring Oslo
 
-Safespring Oslo utmärker sig genom sin hållbarhetsprofil och avancerade teknik. Anläggningen drivs helt av förnybar energi från vattenkraft, vilket speglar vårt åtagande att minimera miljöpåverkan. Med kapacitet för 200 serverrack och en effektförmåga på 1 MW, säkerställer vi både tillförlitlighet och skalbarhet för våra kunders behov. 
+Safespring Oslo utmärker sig genom sin hållbarhetsprofil och avancerade teknik. Anläggningen drivs helt av förnybar energi från vattenkraft, vilket speglar vårt åtagande att minimera miljöpåverkan. Med kapacitet för 200 serverrack och en effektförmåga på 1 MW, säkerställer vi både tillförlitlighet och skalbarhet för våra kunders behov.
 
 Datacentret är också förberett för att bidra till fjärrvärmesystem, vilket ytterligare bekräftar vår strävan efter hållbarhet. Certifieringar som Eco-Lighthouse och ISO 27001:2022 understryker vårt fokus på både miljö och säkerhet.
 
@@ -141,7 +141,6 @@ Datacentret är också förberett för att bidra till fjärrvärmesystem, vilket
 - Solpaneler för nätverksutrustning
 - Värmeåteranvändning för uppvärmning av byggnader
 - Certifieringar:
-	- Eco-Lighthouse Foundation, 
-	- Climate Neutral Data Center Pact, 
-	- ISO 27001:2022
-
+  - Eco-Lighthouse Foundation,
+  - Climate Neutral Data Center Pact,
+  - ISO 27001:2022

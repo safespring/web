@@ -33,8 +33,7 @@
           >
         </li>
         <li>
-          <a
-            href='{{ with .GetPage "services/machine-learning-ai-gpu-resources" }}{{ .RelPermalink }}{{ end }}'
+          <a href='{{ with .GetPage "services/machine-learning" }}{{ .RelPermalink }}{{ end }}'
             >{{ T "footer.platform_ai" }}</a
           >
         </li>
@@ -49,9 +48,16 @@
       <ul>
         <li>{{ T "footer.industries" }}</li>
         <li>
-          <a href="/branscher/utbildning-forskning/">{{ T "footer.industries_education" }}</a>
+          <a
+            href='{{ with .GetPage "industries/research-and-education" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_education" }}</a
+          >
         </li>
-        <li><a href="/branscher/myndigheter/">{{ T "footer.industries_government" }}</a></li>
+        <li>
+          <a href='{{ with .GetPage "industries/government" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.industries_government" }}</a
+          >
+        </li>
         <li><a href="/branscher/applikationsutvecklare/">{{ T "footer.industries_saas" }}</a></li>
         <li><a href="/branscher/applikationsutvecklare/">{{ T "footer.industries_paas" }}</a></li>
         <li><a href="/saas/medtech/">{{ T "footer.industries_medtech" }}</a></li>
@@ -60,29 +66,71 @@
     <div class="safespring-footer-menu">
       <ul>
         <li>{{ T "footer.knowledgehub" }}</li>
-        <li><a href="/tjanster/case/">{{ T "footer.knowledgehub_use_case" }}</a></li>
-        <li><a href="/whitepaper/">{{ T "footer.knowledgehub_whitepaper" }}</a></li>
-        <li><a href="/solution-brief/">{{ T "footer.knowledgehub_solution_brief" }}</a></li>
-        <li><a href="/blogg/">{{ T "footer.knowledgehub_tech_update" }}</a></li>
-        <li><a href="/webinar/">{{ T "footer.knowledgehub_webcast" }}</a></li>
-        <li><a href="/blogg/">{{ T "footer.knowledgehub_blog" }}</a></li>
+        <li>
+          <a href='{{ with .GetPage "services/case" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_use_case" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub/whitepaper" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_whitepaper" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub/solution-brief" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_solution_brief" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_tech_update" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub/webcast" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_webcast" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.knowledgehub_blog" }}</a
+          >
+        </li>
       </ul>
     </div>
     <div class="safespring-footer-menu">
       <ul>
         <li>{{ T "footer.safespring" }}</li>
-        <li><a href="/om-safespring/">{{ T "footer.safespring_about" }}</a></li>
-        <li><a href="/career/">{{ T "footer.safespring_careers" }}</a></li>
-        <li><a href="/om-safespring/datacenter/">{{ T "footer.safespring_datacenters" }}</a></li>
         <li>
-          <a href="/om-safespring/samarbeten-och-partners/">{{ T "footer.safespring_partners" }}</a>
+          <a href='{{ with .GetPage "about" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_about" }}</a
+          >
         </li>
         <li>
-          <a href="/om-safespring/miljo-och-hallbarhet/"
+          <a href='{{ with .GetPage "careers" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_careers" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "data-centers" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_datacenters" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "samarbeten-och-partners" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_partners" }}</a
+          >
+        </li>
+        <li>
+          <a href='{{ with .GetPage "environment" }}{{ .RelPermalink }}{{ end }}'
             >{{ T "footer.safespring_sustainability" }}</a
           >
         </li>
-        <li><a href="/om-safespring/vanliga-fragor/">{{ T "footer.safespring_faq" }}</a></li>
+        <li>
+          <a href='{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}'
+            >{{ T "footer.safespring_faq" }}</a
+          >
+        </li>
       </ul>
     </div>
   </div>

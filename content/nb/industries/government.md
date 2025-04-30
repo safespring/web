@@ -11,6 +11,7 @@ language: "nb"
 section: "Safespring"
 aliases:
   - /no/bransjer/myndigheter/
+slug: "myndigheter"
 ---
 
 ![Safespring benefits](/img/safespring-myndigheter-key-points.svg)

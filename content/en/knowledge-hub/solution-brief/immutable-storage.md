@@ -20,6 +20,7 @@ section: "Solution Brief"
 aliases:
   - /whitepaper/immutable-storage/
   - /solution-brief/immutable-storage/
+  - /en/whitepaper/immutable-storage/
 ---
 
 {{< ingress >}}

@@ -10,7 +10,8 @@ sidebarlinkname: "Vår säkerhet (pdf)"
 sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
 aliases:
-- /om-safespring/vanliga-fragor/
+  - /om-safespring/vanliga-fragor/
+slug: "vanliga-fragor"
 ---
 
 <div itemscope itemtype="https://schema.org/FAQPage">
@@ -66,11 +67,11 @@ För mer information om Safesprings säkerhet för datacentra, vänligen läs v�
 {{% /question %}}
 
 {{% question question="Redundans för strömförsörjning, kyling och nät?" %}}
-Ja. Datahallarna har reservkraftsystem som gör datacentret oberoende av elnätet . Branddetektering med luftanalys, serverhallar med IT-vänliga släcksystem och brandalarm direktkopplat till larmcentral. Drivs på 100% grön el. 
+Ja. Datahallarna har reservkraftsystem som gör datacentret oberoende av elnätet . Branddetektering med luftanalys, serverhallar med IT-vänliga släcksystem och brandalarm direktkopplat till larmcentral. Drivs på 100% grön el.
 
-Utrymmets temperatur ska inte tillåtas variera utanför temperaturgränserna +18 °C till +23 °C. Utrymmet ska förses med ventilations- och kylanordning (av typ precisionskyla). Underblåsande kyla ska användas. Ventilations- och/ eller klimatanläggning ska producera ett övertryck. Temperaturlarm, kopplat till verksamhetens ordinarie larmövervakning, ska finnas. 
+Utrymmets temperatur ska inte tillåtas variera utanför temperaturgränserna +18 °C till +23 °C. Utrymmet ska förses med ventilations- och kylanordning (av typ precisionskyla). Underblåsande kyla ska användas. Ventilations- och/ eller klimatanläggning ska producera ett övertryck. Temperaturlarm, kopplat till verksamhetens ordinarie larmövervakning, ska finnas.
 
-En anordning för reglering av utrymmets luftfuktighet ska användas. Risker för vätskeläckage från kylanordning ska tas hänsyn till. Tilluft samt luft som passerar klimatutrustning ska filtreras. Dessa filter ska bytas regelbundet. Tilluftskanaler ska förses med rökdetektorer anslutna till brandspjäll eller automatiska fläktstopp. Luftomsättningen ska dimensioneras utifrån arbetsmiljökraven för att det antal personer som är tänkta att kunna vistas kontinuerligt i utrymmet. Nödkyla (ytterligare köldbärare) ska finnas tillgänglig för att säkerställa kontinuerlig drift. Kyleffekten hos kylanordningen för utrymmet ska utredas men bör dimensioneras med minst 2 kilowatt per kvadratmeter yta. 
+En anordning för reglering av utrymmets luftfuktighet ska användas. Risker för vätskeläckage från kylanordning ska tas hänsyn till. Tilluft samt luft som passerar klimatutrustning ska filtreras. Dessa filter ska bytas regelbundet. Tilluftskanaler ska förses med rökdetektorer anslutna till brandspjäll eller automatiska fläktstopp. Luftomsättningen ska dimensioneras utifrån arbetsmiljökraven för att det antal personer som är tänkta att kunna vistas kontinuerligt i utrymmet. Nödkyla (ytterligare köldbärare) ska finnas tillgänglig för att säkerställa kontinuerlig drift. Kyleffekten hos kylanordningen för utrymmet ska utredas men bör dimensioneras med minst 2 kilowatt per kvadratmeter yta.
 
 Läs mer om [Safespring Datacenter Security](/documents/safespring-datacenter-security.pdf).
 {{% /question %}}

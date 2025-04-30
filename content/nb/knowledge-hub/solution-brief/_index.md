@@ -1,6 +1,6 @@
 ---
-title: "Safespring Webcasts"
-language: "sv"
+title: "Safesspring Solution Briefs"
+language: "nb"
 date: "2020-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"
 eventdatum: "10 nov. 2020"
@@ -11,18 +11,12 @@ dokumentnamn: ""
 card: "safespring_card_26.jpg"
 eventbild: ""
 socialmediabild: "safespring_social_26.jpg"
-intro: "Se våra serier om Kubernetes och cloud native, eller dyk ner i regelverken kring molntjänster och digital suveränitet."
+intro: "Ta del i inspirerende materiale fra Safespring."
 partner: ""
 link: "#"
 audience: "saas"
-knapp: "Starta webinar"
-english: ""
-formid: ""
-explorer: ""
-section: "Webinar"
-aliases:
-  - /event/
-  - /webinars/
-  - /webinar/
+nosidebar: "x"
 fullwidth: "x"
+aliases:
+  - /nb/solution-brief/
 ---
