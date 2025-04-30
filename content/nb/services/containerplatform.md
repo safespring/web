@@ -18,6 +18,7 @@ sidebarlinkurl: "#interessert-i-å-teste-plattformen"
 showthedate: false
 banner: "blue-hover-tech"
 language: "nb"
+slug: "containerplattform"
 aliases:
   - /no/tjenester/containerplattform/
 ---
