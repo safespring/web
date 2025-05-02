@@ -1,11 +1,3 @@
----
-language: "sv"
-title: ""
-date: ""
-draft: false
-aliases:
-- /read-more/lifescience/
----
 # Vad är Life Science?
 
 Life science, eller livsvetenskap på svenska, är ett brett och mångsidigt forskningsfält som inbegriper studiet av allt levande. Detta område omfattar en rad olika discipliner och ämnen, varav några inkluderar:
@@ -20,13 +12,13 @@ Life science, eller livsvetenskap på svenska, är ett brett och mångsidigt for
 
 Life science är viktigt för många områden, inklusive medicin, jordbruk, miljövetenskap och bioteknik. Forskningen inom detta fält bidrar till att förbättra hälsan och livskvaliteten för människor, samt till att förstå och bevara vår naturliga miljö.
 
-## SciLifeLab *(Science for Life Laboratory)* 
+## SciLifeLab _(Science for Life Laboratory)_
 
-SciLifeLab är ett svenskt nationellt centrum för molekylär biovetenskap och life science-forskning. Det grundades 2010 av fyra ledande universitet i Sverige: 
+SciLifeLab är ett svenskt nationellt centrum för molekylär biovetenskap och life science-forskning. Det grundades 2010 av fyra ledande universitet i Sverige:
 
-- Karolinska Institutet, 
-- Kungliga Tekniska högskolan, 
-- Stockholms universitet och 
-- Uppsala universitet. 
+- Karolinska Institutet,
+- Kungliga Tekniska högskolan,
+- Stockholms universitet och
+- Uppsala universitet.
 
- SciLifeLab stöder och driver forskning i life science genom att tillhandahålla avancerad teknologi, infrastruktur och expertis. De fokuserar på ett brett spektrum av forskningsområden, inklusive genetik, biomedicin, infektionssjukdomar och bioinformatik. SciLifeLab spelar också en viktig roll i samarbeten mellan akademi, industri och hälsovård för att främja innovation och tillämpning av forskningsresultat inom life science.
+SciLifeLab stöder och driver forskning i life science genom att tillhandahålla avancerad teknologi, infrastruktur och expertis. De fokuserar på ett brett spektrum av forskningsområden, inklusive genetik, biomedicin, infektionssjukdomar och bioinformatik. SciLifeLab spelar också en viktig roll i samarbeten mellan akademi, industri och hälsovård för att främja innovation och tillämpning av forskningsresultat inom life science.

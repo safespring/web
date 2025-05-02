@@ -29,7 +29,7 @@ aliases:
 Safespring levererar en molnbaserad VM- och lagringstjänst till SciLifeLab, den största nationella forskningsinfrastrukturen för life science i Sverige.
 {{< /ingress >}}
 
-{{< readfile "Vad är Life Science?" "/content/read-more/lifescience.md" >}}
+{{< readfile "Vad är Life Science?" "/content/sv/read-more/lifescience.md" >}}
 
 Safesprings virtuella maskiner och lagring går att automatisera genom API. Det ger SciLifeLab flexibilitet att anpassa resurserna vid varje givet tillfälle och optimerar kostnader och prestanda i realtid.
 
