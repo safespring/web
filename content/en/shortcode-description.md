@@ -9,20 +9,24 @@ aliases:
 
 ## {{ < services >}}
 
-To include a page in the `services` shortcode, you can add the `cardorder` parameter to each service page's front matter that you want to include in the collection of cards. The value of the "cardorder" parameter determines the order in which the card appears in the collection. This shortcode is a flexible and customizable way to display a visually appealing summary of Safespring's services on your website.
+To include a page in the `services` shortcode, you can add the `cardorder` parameter to each service page's front matter
+that you want to include in the collection of cards. The value of the "cardorder" parameter determines the order in
+which the card appears in the collection. This shortcode is a flexible and customizable way to display a visually
+appealing summary of Safespring's services on your website.
 
-The card's appearance is described in `layouts/_default/li-index` and can be customized using parameters in the page's front matter. For example, the `cardcolor` parameter determines the color of the card's border and icon, while the `cardicon` parameter determines the icon displayed on the card. Additionally, the cardtitle and `cardintro` parameters can be used to customize the text displayed on the card.
-{{% accordion title="Html code for services" %}}
+The card's appearance is described in `layouts/_default/li-index` and can be customized using parameters in the page's
+front matter. For example, the `cardcolor` parameter determines the color of the card's border and icon, while the
+`cardicon` parameter determines the icon displayed on the card. Additionally, the cardtitle and `cardintro` parameters
+can be used to customize the text displayed on the card. {{% accordion title="Html code for services" %}}
 
 ```html
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where $.Site.RegularPages "Section"
-  "en").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }}
-  {{ end }} {{ end }} {{ else if eq $language "No" }} {{ range (where $.Site.RegularPages "Section"
-  "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }}
-  {{ end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam
-  "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{
-  end }} {{ end }}
+  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where $.Site.RegularPages "Section" "en").ByParam
+  "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else if eq
+  $language "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }} {{ if isset .Params
+  "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages
+  "Section" "tjanster").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{
+  end }} {{ end }} {{ end }}
 </div>
 ```
 
@@ -45,25 +49,18 @@ The card's appearance is described in `layouts/_default/li-index` and can be cus
     </style>
     <div class="cardtitle">
       <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10">
-        <i
-          class="{{ .Params.cardicon }} icon"
-          style="color: {{ .Params.cardcolor }} !important"
-        ></i>
+        <i class="{{ .Params.cardicon }} icon" style="color: {{ .Params.cardcolor }} !important"></i>
       </div>
       <h2 style="color: {{ .Params.cardcolor }}">
         {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
       </h2>
     </div>
-    <p class="mb-0">
-      {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{ .Params.intro }}{{ end }}
-    </p>
+    <p class="mb-0">{{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{ .Params.intro }}{{ end }}</p>
   </div>
 </a>
 ```
 
-{{% /accordion %}}
-{{< distance >}}
-{{< services >}}
+{{% /accordion %}} {{< distance >}} {{< services >}}
 
 {{< accordion-script >}}
 
@@ -84,18 +81,15 @@ Nedan finns en översiktlig dokumentation av alla våra shortcodes för Hugo-web
 
 ### Beskrivning
 
-Skapar en call-to-action-sektion med två knappar. Den första knappen tar två parametrar (text och URL) medan den andra knappen tar två parametrar (text och URL).
+Skapar en call-to-action-sektion med två knappar. Den första knappen tar två parametrar (text och URL) medan den andra
+knappen tar två parametrar (text och URL).
 
 ### Kod
 
 ```html
 <br />
 <a class="button" target="_self" href="{{ .Get 1 | safeURL }}">{{ .Get 0 }}</a>
-<a
-  style="margin-top: 25px; padding: 1px 0 0 0;"
-  class="text-button"
-  target="_blank"
-  href="{{ .Get 3 | safeURL }}"
+<a style="margin-top: 25px; padding: 1px 0 0 0;" class="text-button" target="_blank" href="{{ .Get 3 | safeURL }}"
   >{{ .Get 2 }}</a
 >
 <br />
@@ -107,7 +101,8 @@ Skapar en call-to-action-sektion med två knappar. Den första knappen tar två 
 
 ### Renderat resultat
 
-En primär knapp med texten "Call Us" (länkad till `/contact`) och en sekundär textlänk "Learn More" (länkad till `https://example.com/learn-more`).
+En primär knapp med texten "Call Us" (länkad till `/contact`) och en sekundär textlänk "Learn More" (länkad till
+`https://example.com/learn-more`).
 
 ---
 
@@ -115,7 +110,8 @@ En primär knapp med texten "Call Us" (länkad till `/contact`) och en sekundär
 
 ### Beskrivning
 
-Infogar JavaScript som behövs för att aktivera funktionaliteten hos accordion-element (toggle, smidig scroll, öppning av accordion via länkar).
+Infogar JavaScript som behövs för att aktivera funktionaliteten hos accordion-element (toggle, smidig scroll, öppning av
+accordion via länkar).
 
 ### Kod
 
@@ -180,14 +176,11 @@ Skapar ett accordion-element med en klickbar rubrik som visar eller döljer dess
 
 ### Kod
 
-{{< accordion id="acc1" title="Mer information" >}}
-Detta är innehållet som döljs i accordionen.
-{{< /accordion >}}
+{{< accordion id="acc1" title="Mer information" >}} Detta är innehållet som döljs i accordionen. {{< /accordion >}}
 
 ### Exempel
 
-&#123;&#123;&lt; accordion id="acc1" title="Mer information"
-Detta är innehållet som döljs i accordionen.
+&#123;&#123;&lt; accordion id="acc1" title="Mer information" Detta är innehållet som döljs i accordionen.
 &#123;&#123;&lt;/accordion &gt;&#125;&#125;
 
 ### Renderat resultat
@@ -233,7 +226,7 @@ Visar en tabell som jämför Azure-tjänster med open source-alternativ samt ang
 ### Exempel
 
 ```
-{{< aks-alternatives >}}
+{{< en-aks-alternatives >}}
 ```
 
 ### Renderat resultat
@@ -246,7 +239,8 @@ En tabell med olika Azure-tjänster, motsvarande open source-alternativ och huru
 
 ### Beskrivning
 
-Skapar en knapp som länkar antingen till en extern URL (definierad i `.Params.link`) eller en sidebar-länk (definierad i `.Params.sidebarlinkurl`).
+Skapar en knapp som länkar antingen till en extern URL (definierad i `.Params.link`) eller en sidebar-länk (definierad i
+`.Params.sidebarlinkurl`).
 
 ### Kod
 
@@ -301,7 +295,7 @@ En variant av `button.html` med samma beteende, men som kan användas separat vi
 ### Exempel
 
 ```
-{{< button0 link="https://example.com" knapp="Klicka här" >}}
+{{< button link="https://example.com" knapp="Klicka här" >}}
 ```
 
 ### Renderat resultat
@@ -459,65 +453,6 @@ Visar en eventkort-stil med datum, typ av event, plattform och tid, formaterad s
 </div>
 ```
 
-### Exempel
-
-```
-{{< calendar month="Sep" day="15" type="Webinar" platform="Zoom" time="10:00 AM" >}}
-```
-
-### Renderat resultat
-
-En liten eventruta med månad, dag, typ av event, plattform och tid.
-
----
-
-## calendly.html
-
-### Beskrivning
-
-Skapar en horisontell kortkomponent med en bild, titel, text och en Calendly-knapp som öppnar en popup för bokning.
-
-### Kod
-
-```html
-<div
-  class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
->
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
-    <img src="{{ .Get `image` }}" alt="{{ .Get `cardtitle` }}" />
-  </div>
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
-    <h3>{{ .Get "cardtitle" }}</h3>
-    <p>{{ .Get "text" }}</p>
-    <br /><br />
-    <!-- Calendly link widget begin -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript"
-      async
-    ></script>
-    <a
-      class="button"
-      href=""
-      onclick="Calendly.initPopupWidget({url: '{{ .Get `link` }}'});return false;"
-      >{{ .Get "linktext" }}</a
-    >
-    <!-- Calendly link widget end -->
-  </div>
-</div>
-```
-
-### Exempel
-
-```
-{{< calendly image="/img/calendly.png" cardtitle="Boka ett möte" text="Välj en tid som passar dig" link="https://calendly.com/din-lank" linktext="Boka nu" >}}
-```
-
-### Renderat resultat
-
-Ett horisontellt kort med en bild, titel, text och en knapp **Boka nu** som öppnar Calendly i en popup.
-
 ---
 
 ## chart.html
@@ -546,81 +481,6 @@ B -- Nej --> D[Gör inget]
 ### Renderat resultat
 
 Ett Mermaid-diagram enligt den definierade syntaxen.
-
----
-
-## checkbox.html
-
-### Beskrivning
-
-Skapar en interaktiv checkbox som kan klickas på för att toggla en check-ikon.
-
-### Kod
-
-```html
-<!-- Checkbox Shortcode -->
-<div class="checkbox-wrapper" onclick="toggleCheckbox(this)">
-  <div class="checkbox-circle"><i class="fa fa-check checkbox-icon"></i></div>
-  <p class="checkbox-text">{{ .Inner }}</p>
-</div>
-
-<!-- Stylar för Checkbox -->
-<style>
-  .checkbox-wrapper {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-
-  .checkbox-circle {
-    background-color: #e8eff3;
-    transition: all 0.2s;
-    height: 50px;
-    padding-inline: 16px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: transparent;
-  }
-
-  .checkbox-circle.checked {
-    background-color: #32cd3240;
-    color: #32cd32;
-  }
-
-  .checkbox-text {
-    padding-left: 30px;
-  }
-
-  .checkbox-wrapper:hover .checkbox-circle {
-    transform: scale(1.1);
-  }
-
-  .checkbox-wrapper:active .checkbox-circle {
-    transform: scale(1.2);
-  }
-</style>
-
-<!-- JavaScript för att hantera klick -->
-<script>
-  function toggleCheckbox(element) {
-    const circle = element.querySelector(".checkbox-circle");
-    circle.classList.toggle("checked");
-  }
-</script>
-```
-
-### Exempel
-
-```
-{{< checkbox >}}Jag godkänner villkoren.{{< /checkbox >}}
-```
-
-### Renderat resultat
-
-En checkbox med texten "Jag godkänner villkoren." som kan klickas för att visa eller dölja check-ikonen.
 
 ---
 
@@ -666,15 +526,11 @@ Visar ett kompakt kontaktkort med titel, namn och e-postlänk.
       <h3 style="color: #9A9A9A; font-size: 16px; line-height: 1 !important; margin:0 !important;">
         {{ .Get "title" }}
       </h3>
-      <h2
-        style="color: #323232; margin:0; font-size: 20px; line-height: 1 !important; padding-top: 5px !important;"
-      >
+      <h2 style="color: #323232; margin:0; font-size: 20px; line-height: 1 !important; padding-top: 5px !important;">
         {{ .Get "name" }}
       </h2>
       <p style="line-height: 1 !important; margin:0px !important;">
-        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{.Get `email`}}"
-          >{{ .Get "email" }}</a
-        >
+        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
       </p>
     </div>
   </div>
@@ -704,10 +560,7 @@ Visar ett mer detaljerat kontaktkort med valfri bild, telefon, e-post och adress
 ```html
 <div class="contact-container">
   {{ if .Params.picture }}
-  <div
-    class="contact-image"
-    style="aspect-ratio: 1 / 1; background-image: url(/img/people/{{.Get `picture` }});"
-  ></div>
+  <div class="contact-image" style="aspect-ratio: 1 / 1; background-image: url(/img/people/{{.Get `picture` }});"></div>
   {{ end }}
   <div class="contact-text-container">
     <div class="contact-text">
@@ -741,34 +594,22 @@ Visar ett mer detaljerat kontaktkort med valfri bild, telefon, e-post och adress
 
     // Svenska mobilnummer (ex: +46762117309)
     if (cleaned.startsWith("46") && cleaned.length === 11) {
-      return `+46 ${cleaned.slice(2, 4)}-${cleaned.slice(4, 7)} ${cleaned.slice(
-        7,
-        9
-      )} ${cleaned.slice(9, 11)}`;
+      return `+46 ${cleaned.slice(2, 4)}-${cleaned.slice(4, 7)} ${cleaned.slice(7, 9)} ${cleaned.slice(9, 11)}`;
     }
 
     // Svenska fastnummer (ex: +46855107370)
     if (cleaned.startsWith("46") && cleaned.length === 10) {
-      return `+46 ${cleaned.slice(2, 3)}-${cleaned.slice(3, 6)} ${cleaned.slice(
-        6,
-        8
-      )} ${cleaned.slice(8, 10)}`;
+      return `+46 ${cleaned.slice(2, 3)}-${cleaned.slice(3, 6)} ${cleaned.slice(6, 8)} ${cleaned.slice(8, 10)}`;
     }
 
     // Norska mobilnummer (ex: +4747123456)
     if (cleaned.startsWith("47") && cleaned.length === 11) {
-      return `+47 ${cleaned.slice(2, 4)} ${cleaned.slice(4, 6)} ${cleaned.slice(
-        6,
-        8
-      )} ${cleaned.slice(8, 11)}`;
+      return `+47 ${cleaned.slice(2, 4)} ${cleaned.slice(4, 6)} ${cleaned.slice(6, 8)} ${cleaned.slice(8, 11)}`;
     }
 
     // Norska fastnummer (ex: +4722345678)
     if (cleaned.startsWith("47") && cleaned.length === 10) {
-      return `+47 ${cleaned.slice(2, 4)} ${cleaned.slice(4, 6)} ${cleaned.slice(
-        6,
-        8
-      )} ${cleaned.slice(8, 10)}`;
+      return `+47 ${cleaned.slice(2, 4)} ${cleaned.slice(4, 6)} ${cleaned.slice(6, 8)} ${cleaned.slice(8, 10)}`;
     }
 
     return phoneNumber;
@@ -864,45 +705,6 @@ En ruta med rubriken "Varning" och meddelandet "Informationen på denna sida kan
 
 ---
 
-## flavour.html
-
-### Beskrivning
-
-Visar resursspecifikationer (CPU, RAM, disk) med hjälp av ikoner och numeriska värden.
-
-### Kod
-
-```html
-{{ $cpu := .Get "cpu" }} {{ $ram := .Get "ram" }} {{ $disk := .Get "disk" }}
-<div class="disk-container">
-  <div class="disk">{{ $disk }}</div>
-</div>
-<div class="flavour-container">
-  <div class="cpu-container">
-    {{ with $cpu }} {{ range $index, $e := seq 1 $cpu }}
-    <div class="cpu"></div>
-    {{ end }} {{ end }}
-  </div>
-  <div class="ram-container">
-    {{ with $ram }} {{ range $index, $e := seq 1 $ram }}
-    <div class="ram"></div>
-    {{ end }} {{ end }}
-  </div>
-</div>
-```
-
-### Exempel
-
-```
-{{< flavour cpu="4" ram="8" disk="100GB" >}}
-```
-
-### Renderat resultat
-
-Visuella indikationer för 4 CPU, 8 RAM och en disk på 100GB.
-
----
-
 ## flexbox.html
 
 ### Beskrivning
@@ -929,41 +731,6 @@ Visar innehållet horisontellt i en flex-layout.
 
 ---
 
-## half-image.html
-
-### Beskrivning
-
-Skapar en kortkomponent med en bild på ena sidan och text på den andra.
-
-### Kod
-
-```html
-<div
-  class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
->
-  {{ if ne .Get "image" }}
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
-    <img src="{{ .Get 0 }}" alt="" />
-  </div>
-  {{ end }}
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">{{ .Inner }}</div>
-</div>
-```
-
-### Exempel
-
-```
-{{< half-image "https://example.com/image.jpg" >}}
-Textinnehåll på höger sida.
-{{< /half-image >}}
-```
-
-### Renderat resultat
-
-En horisontell kortkomponent med en bild till vänster och text till höger.
-
----
-
 ## horisontal-card.html
 
 ### Beskrivning
@@ -973,9 +740,7 @@ Skapar ett horisontellt kort med bakgrundsbild, rubrik, text och en knapp.
 ### Kod
 
 ```html
-<div
-  class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
->
+<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2">
   <div
     class="safespring-horisontal-card-col safespring-horisontal-card-image"
     style="background-image: url({{ .Get `image` }});"
@@ -1041,15 +806,12 @@ Skapar ett horisontellt ikonblock med färgad bakgrund, ikon och text. Kan valfr
 <a class="icon-block-link" href="{{ . | safeURL }}"
   >{{ end }}
   <div class="icon-block-horisontal" style='background-color: {{ .Get "color" }}10;'>
-    <div
-      class="icon-block-color"
-      style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'
-    >
+    <div class="icon-block-color" style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'>
       <i class='{{ .Get "icon" }} icon'></i>
     </div>
     <p>
-      <span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span
-      ><br />{{ .Get "description" }}
+      <span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br />{{ .Get
+      "description" }}
     </p>
   </div>
   {{ with .Get "link" }}</a
@@ -1106,10 +868,7 @@ Skapar ett litet ikonblock med ikon, text och beskrivning. Kan omges av en länk
 {{ with .Get "link" }}
 <a class="icon-block-link" href="{{ . }}"
   >{{ end }}
-  <div
-    class="icon-block-small"
-    style='color: {{ .Get "color" }};border-color: {{ .Get "color" }}30;'
-  >
+  <div class="icon-block-small" style='color: {{ .Get "color" }};border-color: {{ .Get "color" }}30;'>
     <div class="icon-block-small-icon" style='background-color: {{ .Get "color" }}10;'>
       <i class='{{ .Get "icon" }} icon'></i>
     </div>
@@ -1145,12 +904,7 @@ Visar ett ikonblock som kan innehålla antingen en bild eller en ikon samt text 
   >{{ end }}
   <div class="icon-block" style='color: {{ .Get "color" }};'>
     {{ if .Get "image" }}
-    <img
-      src='{{ .Get "image" }}'
-      alt='{{ .Get "alt" | default "Icon" }}'
-      class="icon-svg"
-      style="height: 70px;"
-    />
+    <img src='{{ .Get "image" }}' alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;" />
     {{ else }}
     <i class='{{ .Get "icon" }} icon'></i>
     {{ end }}
@@ -1193,42 +947,6 @@ Renderar en enkel ikon med vald färg.
 ### Renderat resultat
 
 En röd hjärtikon.
-
----
-
-## impact.html
-
-### Beskrivning
-
-Visar svårighetsgrad och påverkan i form av repetitiva ikoner eller symboler.
-
-### Kod
-
-```html
-{{ $difficulty := .Get "difficulty" }} {{ $impact := .Get "impact" }}
-<div class="impact-container">
-  <div class="difficulty-column">
-    {{ with $difficulty }} {{ range $index, $e := seq 1 $difficulty }}
-    <div class="difficulty"></div>
-    {{ end }} {{ end }}
-  </div>
-  <div class="impact-column">
-    {{ with $impact }} {{ range $index, $e := seq 1 $impact }}
-    <div class="impact"></div>
-    {{ end }} {{ end }}
-  </div>
-</div>
-```
-
-### Exempel
-
-```
-{{< impact difficulty="3" impact="4" >}}
-```
-
-### Renderat resultat
-
-3 ikoner för svårighetsgrad och 4 ikoner för påverkan.
 
 ---
 
@@ -1319,30 +1037,6 @@ En kort inledning i en distinkt stil.
 
 ---
 
-## inline_rubrik.html
-
-### Beskrivning
-
-Visar en rubrik eller label inline.
-
-### Kod
-
-```html
-<span class="inline-rubrik">{{ .Get 0 }}</span>
-```
-
-### Exempel
-
-```
-{{< inline_rubrik "Viktigt:" >}}
-```
-
-### Renderat resultat
-
-Inline-text "Viktigt:" i en rubrik-stil.
-
----
-
 ## inline.html
 
 ### Beskrivning
@@ -1358,7 +1052,7 @@ Visar inline-innehåll i en paragraf med en särskild rubrikstil.
 ### Exempel
 
 ```
-{{< inline >}}Observera: Detta är ett meddelande.{{< /inline >}}
+{{< inline "Observera: Detta är ett meddelande." >}}
 ```
 
 ### Renderat resultat
@@ -1527,12 +1221,12 @@ Renderar en lista med tjänstekort beroende på vilket språk som anges (En, No 
 
 ```html
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where $.Site.RegularPages "Section"
-  "en").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }}
-  {{ end }} {{ else if eq $language "No" }} {{ range (where $.Site.RegularPages "Section"
-  "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }}
-  {{ end }} {{ else }} {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam "cardorder"
-  }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{ end }}
+  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where $.Site.RegularPages "Section" "en").ByParam
+  "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{ else if eq $language
+  "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }}
+  {{ .Render "li-index"}} {{ end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages "Section"
+  "tjanster").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{
+  end }}
 </div>
 ```
 
@@ -1558,13 +1252,7 @@ Visar en videospelare som stödjer HLS-strömmar. Använder Hls.js för att init
 
 ```html
 <div class="webinarvideo">
-  <video
-    class="webinar-videoplayer"
-    id="myVideo"
-    controls
-    preload="none"
-    poster="{{ .Get 1 | safeURL }}"
-  >
+  <video class="webinar-videoplayer" id="myVideo" controls preload="none" poster="{{ .Get 1 | safeURL }}">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -1641,37 +1329,6 @@ Visar en videospelare som stödjer HLS-strömmar. Använder Hls.js för att init
 ### Renderat resultat
 
 En videospelare med stöd för HLS-strömning och en förhandsbild (poster).
-
----
-
-## table.html
-
-### Beskrivning
-
-Omger tabell-innehåll (Markdown) i ett HTML-table med valfri CSS-klass.
-
-### Kod
-
-```html
-{{ $class := .Get "class" }} {{ $table := .Inner | markdownify }}
-<table {{ with $class }} class="{{ . }}" {{ end }}>
-  {{ $table }}
-</table>
-```
-
-### Exempel
-
-```
-{{< table class="my-table" >}}
-| Rubrik 1 | Rubrik 2 |
-|----------|----------|
-| Cell 1   | Cell 2   |
-{{< /table >}}
-```
-
-### Renderat resultat
-
-En HTML-tabell med klassen "my-table", renderad från markdown.
 
 ---
 
