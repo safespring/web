@@ -3,8 +3,8 @@ author = "Safespring"
 copyright = "2025 Safespring"
 
 # Pagination
-paginate = 10
-paginatePath = "latest"
+pagination.pagerSize = 10
+pagination.path = "latest"
 
 #------------------------------------------------------------------------------
 # Languages
