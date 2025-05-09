@@ -1,4 +1,4 @@
-baseURL = "https://www.safespring.com/"
+baseURL = "https://beta.safespring.com/"
 author = "Safespring"
 copyright = "2025 Safespring"
 
@@ -17,7 +17,7 @@ languageCode = 'en-GB'
 languageName = 'English'
 title = 'Empowering European Innovation'
 weight = 1
-baseURL = 'https://safespring.com/'
+baseURL = 'https://beta.safespring.com/'
 
 
 [languages.sv]
@@ -25,21 +25,21 @@ languageCode = 'sv-SE'
 languageName = 'Svenska'
 title = 'Stärk europeisk innovation'
 weight = 2
-baseURL = 'https://safespring.se/'
+baseURL = 'https://beta.safespring.se/'
 
 [languages.nb]
 languageCode = 'nb-NO'
 languageName = 'Norsk (Bokmål)'
 title = 'Styrke europeisk innovasjon'
 weight = 3
-baseURL = 'https://safespring.no/'
+baseURL = 'https://beta.safespring.no/'
 
 [languages.da]
 languageCode = 'da-DK'
 languageName = 'Dansk'
 title = 'Styrkelse af europæisk innovation'
 weight = 4
-baseURL = 'https://safespring.dk/'
+baseURL = 'https://beta.safespring.dk/'
 
 #------------------------------------------------------------------------------
 # Content mounts
