@@ -118,7 +118,6 @@ Editing the machine can be done with:
 talosctl --talosconfig .talos/talosconfig edit mc --nodes 10.5.0.2
 ```
 
-
 Patching the machine can be done using:
 ```bash
 talosctl --talosconfig .talos/talosconfig --nodes 10.5.0.2 patch mc --patch @patch-rbac.json

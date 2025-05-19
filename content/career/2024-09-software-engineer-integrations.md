@@ -21,9 +21,9 @@ Are you a Golang-driven software engineer who is looking for a new challenge? Jo
 {{< /ingress >}}
 
 Safespring is growing and we are now looking for a talented **Software Engineer** specialised in **Integrations** who will help us advance the user experience for our cloud users by refining business logic and maximizing self-service features. 
- 
+
 You'll be building APIs, leveraging event-based messaging, and maintaining supporting technologies like Terraform, Pulumi, or other kinds of commonly used API abstraction layers that power our services.
- 
+
 We are an open-source-driven company which means  we not only consume open-source software, but also contribute back to open source projects, in a good community spirit. We believe that giving back to upstream projects is key to our growth, sustainability, and influence in shaping their future.
 
 ## Your Team 
@@ -66,10 +66,6 @@ Safespring is a pioneer in providing cloud services that emphasize digital sover
 
 ## Apply Now
 If you're ready to make a significant impact in a dynamic team, apply today to join us at Safespring. Got questions? Contact Marietta at marietta@safespring.com
-
-
-
-
 
 
 
