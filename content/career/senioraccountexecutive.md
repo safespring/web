@@ -1,5 +1,5 @@
 ---
-Title: "Senior Account Executive"
+Title: "Senior Account Manager"
 intro: "Build trust. Grow business. Help Nordic companies break free from hyperscaler dependency!"
 Team: "Commercial"
 Location: "Sweden"
