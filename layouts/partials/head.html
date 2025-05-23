@@ -717,6 +717,12 @@
     en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs
     mer!{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}" />
+    {{- if .IsTranslated -}} {{ range .AllTranslations }} {{- if eq .Language.Lang "en" -}}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end -}}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- end -}} {{ end }}
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{ if isset .Params "noindex" }}
