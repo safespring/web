@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html
-  lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}sv{{end}}'
->
+<html lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}sv{{end}}'>
   <head>
     <!-- Site Title changes according to current page . -->
     <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
@@ -20,9 +18,8 @@
       type="image/svg+xml"
       importance="high"
     />
-    {{ if .Params.background }} <link rel="preload" as="image" href="/img/background/{{
-    .Params.background }}" fetchpriority="high" type="image/{{ (index (split .Params.background ".")
-    1) }}" importance="high"> {{ else }}
+    {{ if .Params.background }} <link rel="preload" as="image" href="/img/background/{{ .Params.background }}"
+    fetchpriority="high" type="image/{{ (index (split .Params.background ".") 1) }}" importance="high"> {{ else }}
     <link
       rel="preload"
       as="image"
@@ -280,11 +277,7 @@
         width: 100%;
         z-index: 999;
         background: rgb(250, 254, 254);
-        background: radial-gradient(
-          circle,
-          rgba(250, 254, 254, 0.8) 42%,
-          rgba(250, 254, 254, 0) 100%
-        );
+        background: radial-gradient(circle, rgba(250, 254, 254, 0.8) 42%, rgba(250, 254, 254, 0) 100%);
         transition: top cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
       }
       @media only screen and (min-width: 900px) {
@@ -438,11 +431,7 @@
           left: 0;
           right: 0;
           height: 0.5px;
-          background: radial-gradient(
-            circle,
-            rgba(25, 95, 140, 0.3) 50%,
-            rgba(25, 95, 140, 0) 100%
-          );
+          background: radial-gradient(circle, rgba(25, 95, 140, 0.3) 50%, rgba(25, 95, 140, 0) 100%);
         }
 
         .megamenu-wrapper {
@@ -606,8 +595,8 @@
 
           transform-origin: 4px 0px;
 
-          transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+          transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+            opacity 0.55s ease;
         }
 
         #menuToggle span:first-child {
@@ -716,20 +705,17 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <!--<meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'> -->
-    <meta
-      property="og:image"
-      content="https://www.safespring.com/img/socialmedia/safespring-start.png"
-    />
-    <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro"
-    }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga
-    datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
+    <meta property="og:image" content="https://www.safespring.com/img/socialmedia/safespring-start.png" />
+    <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else
+    }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom
+    landets gränser. Läs mer!{{ end }}">
     <meta property="og:site_name" content="Safespring" />
     <meta name="author" content="{{ .Params.author }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
-    <meta name="description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{
-    else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter
-    håller du din data inom landets gränser. Läs mer!{{ end }}">
+    <meta name="description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är
+    en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs
+    mer!{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -740,17 +726,11 @@
     <!-- CSS -->
     <!-- Ladda kritisk CSS direkt -->
     {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
-    <link
-      rel="stylesheet"
-      href="{{ $mainCSS.RelPermalink }}"
-      media="print"
-      onload="this.media='all'"
-    />
+    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" media="print" onload="this.media='all'" />
     <link href="{{ $mainCSS.RelPermalink }}" rel="stylesheet" media="(min-width: 600px)" />
 
-    {{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice (resources.Get
-    "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get
-    "css/fontawesome.min.css")) | minify | fingerprint }}
+    {{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice (resources.Get "css/solid.min.css")
+    (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) | minify | fingerprint }}
     <link
       rel="preload"
       href="{{ $faCSS.RelPermalink }}"
