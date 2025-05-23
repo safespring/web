@@ -1,0 +1,4 @@
+{
+  "plugins": ["prettier-plugin-go-template"],
+  "goTemplateBracketSpacing": true
+}
