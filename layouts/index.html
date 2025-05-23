@@ -11,11 +11,13 @@
         <h1 class="post-heading-firstpage balance-text">{{ .Title }}</h1>
         <p class="content-summary-index">{{ .Params.intro }}</p>
         <a
-          href="/gdpr"
+          href="{{ with .GetPage "gdpr" }}{{ .RelPermalink }}{{ end }}"
           data-track-content
-          data-content-name="SE GDPR Banner"
+          data-content-name="GDPR Banner"
           data-content-piece="/img/safespring-gdpr-compliant-badge2025.svg"
-          data-content-target="http://www.safespring.com/gdpr"
+          data-content-target="{{ with .GetPage "gdpr" }}
+            {{ .RelPermalink }}
+          {{ end }}"
         >
           <img
             class="badge"
@@ -27,16 +29,7 @@
     </section>
     <section class="background-bright">
       <div class="flexcontainer-three">
-        {{ $language := .Params.language }}
-        {{ $sections := (dict "Se"
-          "tjanster" "En" "en" "No" "no")
-        }}
-        {{ $section := index $sections
-          $language
-        }}
-        {{ range (where $.Site.RegularPages "Section"
-          $section).ByParam "cardorder"
-        }}
+        {{ range (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
           {{ if isset .Params "cardorder" }}{{ .Render "li-index" }}{{ end }}
         {{ end }}
       </div>
@@ -65,9 +58,11 @@
             srclang="no"
             label="Norwegian"
           />
-          Your browser does not support the video tag.
+          {{ T "landing.scaleout_not_supported" }}
         </video>
-        <div id="custom-cursor" class="custom-cursor">Play</div>
+        <div id="custom-cursor" class="custom-cursor">
+          {{ T "landing.scaleout_play" }}
+        </div>
         <script>
           document.addEventListener("DOMContentLoaded", function () {
             var video = document.getElementById("myVideo");
@@ -203,14 +198,16 @@
           style="max-width: 250px; margin-bottom: 20px"
         />
         <p>
-          Scaleout bygger en AI-plattform på Safesprings infrastruktur.
-          Intresset och efterfrågan för maskininlärning och AI har exploderat
-          den senaste tiden. Samtidigt pågår en diskussion kring insyn i vilken
-          data modellerna är tränade på och vad man ger ifrån sig när man
-          använder tjänsterna.
+          {{ T "landing.scaleout_description" }}
         </p>
         <p>
-          <a href="/tjanster/case/scaleout/" class="button">Till Use case</a>
+          <a
+            href="{{ with .GetPage "services/case/scaleout" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            class="button"
+            >{{ T "landing.scaleout_to_use_case" }}</a
+          >
         </p>
       </div>
       <!--<img class="lazyload index-image" src="/img/safespring-portal3.svg" data-src="/img/safespring-portal3.svg" alt="Safespring är en molnleverantör som gör det enkelt för dig att starta nya instanser på ett smidigt sätt. Genom vår portal kan du med ett enkelt klick snabbt och enkelt skapa nya instanser och börja använda dina molntjänster. Med Safespring kan du snabbt och enkelt hantera och skala upp dina resurser i molnet, vilket ger dig flexibilitet och effektivitet i ditt arbete.">-->
@@ -218,15 +215,17 @@
     <section class="two-field-background">
       <div class="two-field-container-1">
         <h2 class="balance-text">
-          Är du van att arbeta i en amerikansk molntjänst?
+          {{ T "landing.compute_title" }}
         </h2>
         <div class="ingress" id="down">
           <p>
-            Du kommer direkt känna dig hemma i Safespring. Starta virtuella
-            servrar med ett knapptryck, eller lagra storskalig data genom S3 och
-            så mycket mer.
+            {{ T "landing.compute_description" }}
           </p>
-          <a href="/tjanster/safespring-compute/" class="button"
+          <a
+            href="{{ with .GetPage "services/compute" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            class="button"
             >Safespring compute</a
           >
         </div>
@@ -240,21 +239,25 @@
         />
       </div>
       <div class="two-field-container">
-        <h2 class="balance-text">Safesprings datacenter ligger i Norden</h2>
+        <h2 class="balance-text">{{ T "landing.datacenters_title" }}</h2>
         <div class="ingress">
           <p>
-            Våra datacenter matchar högt ställda krav på driftsäkerhet och
-            tillgänglighet. Datacentren drivs till 100 procent av el från
-            förnyelsebara energikällor.
+            {{ T "landing.datacenters_description" }}
           </p>
-          <a href="/om-safespring/datacenter" class="button"
-            >Om våra datacenter</a
+          <a
+            href="{{ with .GetPage "data-centers" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            class="button"
+            >{{ T "landing.datacenters_button" }}</a
           >
           <a
+            href="{{ with .GetPage "about" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             style="margin: 25px 0 0 0; padding: 1px 0 0 0"
             class="text-button"
-            href="/om-safespring"
-            >Om Safespring</a
+            >{{ T "landing.about_us_button" }}</a
           >
         </div>
       </div>

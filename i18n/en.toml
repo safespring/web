@@ -1,3 +1,15 @@
+[landing]
+scaleout_description = "Scaleout is building an AI platform on Safespring's infrastructure. The interest and demand for machine learning and AI have exploded recently. At the same time, a discussion is ongoing about the transparency of the data the models are trained on and what one discloses when using the services."
+scaleout_to_use_case = "Read use case"
+scaleout_play = "Play video"
+scaleout_not_supported = "Your browser does not support the video tag."
+compute_title = "Are you used to working in an American cloud service?"
+compute_description = "You'll feel right at home in Safespring. Launch virtual servers with a single click, or store large amounts of data through S3 and much more."
+datacenters_title = "Safesprings Data Center is Located in the Nordics"
+datacenters_description = "Our data centers meet high demands for reliability and availability. The data centers are powered 100% by electricity from renewable energy sources."
+datacenters_button = "About our data centers"
+about_us_button = "About Safespring"
+
 [knowledgehub]
 learn_more = "Learn more"
 read_article = "Read article"
