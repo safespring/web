@@ -11,9 +11,8 @@ sidebarlinkurl: "/documents/safespring-acceptable_use_policy.pdf"
 general: "yes"
 toc: ""
 aliases:
-- /dokument/acceptable-use-policy/
+  - /dokument/acceptable-use-policy/
 ---
-
 
 {{< ingress >}}
 Safesprings "Acceptable Use Policy" anger vad som anses vara acceptabelt och vad som inte är det för att förhindra missbruk, kränkningar eller skador på användare, leverantör eller andra parter.

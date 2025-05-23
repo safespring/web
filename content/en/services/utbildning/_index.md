@@ -6,8 +6,8 @@ draft: false
 intro: "We believe in building scalable software and infrastructure, and with the help of our courses you can learn what that means for you and your organization and how it can support your operations and further development as a successful company."
 background: ""
 aliases:
-    - /utbildning/
-    - /tjanster/utbildning/
+  - /utbildning/
+  - /tjanster/utbildning/
 ---
 
 <div class="ingress"><p>Safespring provides learning experiences for companies that want to leverage the power of the cloud.</p></div>
@@ -17,6 +17,7 @@ We believe in building scalable software and infrastructure, and with the help o
 We’re currently offering five courses at different technical levels to give you both an overview of cloud computing and an in-depth dive into advanced cloud computing and Microservices.
 
 ## Cloud computing and introduction for managers
+
 Two of our course packages is aimed for staff with overall technical overview but with no expertise level. The goal of these courses it to strengthen the understanding and knowledge at management level, both of cloud computing and the benefits a company can gain from adapting to modern cloud computing practices.
 
 <div class="accordion-box">

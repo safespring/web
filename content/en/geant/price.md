@@ -215,7 +215,11 @@ Read the course descriptions in the [service catalogue](/geant/service-catalogue
 ### Notes
 
 [^1]: Deduplication is a data reduction done in the service. Depending on the data, it usually varies between 45% -90%.
+
 [^2]: The price is per protected GB on the client.
+
 [^3]: The price is per GB stored in the service after deduplication and compression.
+
 [^4]: The price is per GB stored in the service after deduplication and compression. The service includes 1000 GB in the fixed monthly price.
+
 [^5]: The support fee is charged at 3 % of the total volume with a minimum fee of 150 EUR per month.

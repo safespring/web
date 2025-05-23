@@ -11,8 +11,8 @@ eventbild: "safespring_background_25.jpg"
 socialmediabild: "safespring_social_25.jpg"
 section: "Tech update"
 aliases:
-    - /blogg/byte-av-host-och-domainname
-    - /blogg/2020/2020-01-byte-av-host-och-domainname/
+  - /blogg/byte-av-host-och-domainname
+  - /blogg/2020/2020-01-byte-av-host-och-domainname/
 ---
 
 <a id="text-button" href="#english">Read the English version</a>
@@ -79,7 +79,7 @@ Change of host name and DNS needs to be done today (2020-01-14). When you have d
 
 In line with our work to replace the former parent company name from our services, at the time of renewal of the certificates that protect the Backup traffic, we will be renaming the endpoint to our own domain to match the Storage and Compute services.
 
-*“tsm1.cloud.ipnett.se”* will change to `tsm1.backup.sto2.safedc.net` on the 14 of January 2020. You may update the domain name at any time. It's already active.
+_“tsm1.cloud.ipnett.se”_ will change to `tsm1.backup.sto2.safedc.net` on the 14 of January 2020. You may update the domain name at any time. It's already active.
 
 Since the DNS name is tied to the certificate used for TLS, the clients will need to update the root certificate in the IBM TSM keystore. We will be updating the client installers and provide simple scripts to help perform the edits for Win/Mac/Linux, but the changes will have to be done on every client.
 
@@ -118,6 +118,7 @@ This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se)
 </div>
 
 ### New support address for all services
+
 We will also be adding a new address for tickets, <a href="mailto:support@safespring.com">support@safespring.com</a> to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
 
 <script>

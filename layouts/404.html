@@ -2,44 +2,87 @@
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 <!-- HEADING -->
-<div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
-  <div style="max-width: 800px;">
+<div
+  class="heading-default-single"
+  style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;"
+>
+  <div style="max-width: 800px">
     <div class="section">
       {{ if .Params.toplogo }}
-      <img src="/img/logos/{{ .Params.toplogo }}" alt="Logo" class="toplogo">
+      <img src="/img/logos/{{ .Params.toplogo }}" alt="Logo" class="toplogo" />
       {{ end }}
-      <a class="" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
-        {{ if eq .Section "om-safespring" }}About Safespring{{ else if eq .Section "referenser" }}Customer References{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
+      <a
+        class=""
+        href="/{{ .Section }}"
+        style="{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}"
+      >
+        {{ if eq .Section "om-safespring" }}About Safespring{{ else if eq
+        .Section "referenser" }}Customer References{{ else if .Params.section
+        }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{
+        .Section }}{{ end }}
       </a>
     </div>
-    <h1 class="balance-text" style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{else}}var(--main-color){{end}}">
+    <h1
+      class="balance-text"
+      style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{else}}var(--main-color){{end}}"
+    >
       404 error
     </h1>
     <p>
-      "404 error" or "error 404" is a standard error code in the HTTP protocol that indicates that the requested webpage does not exist or cannot be found.
+      "404 error" or "error 404" is a standard error code in the HTTP protocol
+      that indicates that the requested webpage does not exist or cannot be
+      found.
     </p>
   </div>
   <div class="w250"></div>
 </div>
 <main class="main-default-single">
-  <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
+  <div
+    {{
+    if
+    .Params.fullwidth
+    }}class="main-default-single-full-width"
+    {{else}}class="content-default-single"
+    {{end}}
+  >
     <h2>The page you are looking for seems to not exist</h2>
-    <p>This may be due to an incorrect link. If the page has moved or has been removed, it can happen that the old link stops working and directs you to this page instead. Please contact us if you believe that this page should still exist under this link.</p>
-    <div class="icon-block-horisontal" style='background-color: #eed70010;'>
-      <div class="icon-block-color" style='color: #eed700;background-color: #eed70010;'>
+    <p>
+      This may be due to an incorrect link. If the page has moved or has been
+      removed, it can happen that the old link stops working and directs you to
+      this page instead. Please contact us if you believe that this page should
+      still exist under this link.
+    </p>
+    <div class="icon-block-horisontal" style="background-color: #eed70010">
+      <div
+        class="icon-block-color"
+        style="color: #eed700; background-color: #eed70010"
+      >
         <i class="fa-solid fa-triangle-exclamation icon"></i>
       </div>
-      <div style="padding: 15px 0;">
-      <p class="inline_rubrik" style='color: #eed700; margin-bottom: 0;'>The page you tried to reach</p>
-      <p id="requested-url" class="url" style="margin-top: 0;"></p>
-    </div>
+      <div style="padding: 15px 0">
+        <p class="inline_rubrik" style="color: #eed700; margin-bottom: 0">
+          The page you tried to reach
+        </p>
+        <p id="requested-url" class="url" style="margin-top: 0"></p>
+      </div>
     </div>
     <h3>What does 404 mean?</h3>
-    <p>"404 error" or "error 404" is a standard error code in the HTTP protocol that indicates that the requested webpage does not exist or cannot be found.</p>
-    <p>The term 404 is common and in a transferred sense, it can sometimes be used instead of "does not exist" or "error", mostly in technical contexts.</p>
-    <p>The 404-error code should not be confused with "server not found", "server crashed", or similar errors.</p>
+    <p>
+      "404 error" or "error 404" is a standard error code in the HTTP protocol
+      that indicates that the requested webpage does not exist or cannot be
+      found.
+    </p>
+    <p>
+      The term 404 is common and in a transferred sense, it can sometimes be
+      used instead of "does not exist" or "error", mostly in technical contexts.
+    </p>
+    <p>
+      The 404-error code should not be confused with "server not found", "server
+      crashed", or similar errors.
+    </p>
     <script>
-      document.getElementById('requested-url').textContent = window.location.href;
+      document.getElementById("requested-url").textContent =
+        window.location.href;
     </script>
   </div>
   <div class="sidebar-default-single">

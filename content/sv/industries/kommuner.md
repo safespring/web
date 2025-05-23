@@ -10,7 +10,7 @@ cardicon: "fa-solid fa-building-flag"
 cardcolor: "#417DA5"
 cardintro: ""
 aliases:
-- /branscher/kommuner/
+  - /branscher/kommuner/
 ---
 
 <video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
@@ -24,7 +24,7 @@ Våra tjänster gör det möjligt att både uppfylla dessa och samtidigt dra nyt
 
 Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att du kan uppfylla eSams rekommendationer.
 
- <a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
+<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Läs eSams rekommendationer</a>
 
 Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att tryggt nyttja en molnlösning och samtidigt uppfylla lagar och regler.
 

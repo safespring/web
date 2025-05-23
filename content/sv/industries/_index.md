@@ -7,8 +7,9 @@ intro: "Utforska mångfalden av branscher som drar nytta av Safesprings innovati
 background: ""
 list: "indexcard"
 aliases:
-- /branscher/
+  - /branscher/
 ---
+
 {{< ingress >}}
 Safespring erbjuder IaaS-tjänster som är utformade för att vara flexibla och kraftfulla, vilket möjliggör olika tillämpningar över flera branscher. Vår erfarenhet sträcker sig över många sektorer, vilket gör oss till en pålitlig partner för dina molnbaserade behov.
 {{< /ingress >}}

@@ -75,6 +75,9 @@ I'm incredibly proud to be working for a company with such diverse and meaningfu
 Deep-dive in more information with these links.
 
 [^1]: **Red Hat.** _CentOS Linux End of Life (EOL_). Red Hat explains the transition away from CentOS Linux, what it means for users, and alternative options moving forward. Retrieved February 17, 2025, from [redhat.com](https://www.redhat.com/en/topics/linux/centos-linux-eol).
+
 [^2]: **Safespring and EOSC.** Brief look at Safespring’s involvement in the European Open Science Cloud. Retrieved February 17, 2025, from https://www.safespring.com/eosc/.
+
 [^3]: **Talos Linux.** _A Modern Secure Kubernetes OS._ Talos Linux is a minimal, immutable operating system designed for Kubernetes, focusing on security and automation. Retrieved February 17, 2025, from https://www.talos.dev/.
+
 [^4]: **Safespring Container platform.** Service description of our container platform. Retrieved February 17, 2025, from [safespring.com/containerplatform](/en/services/containerplatform/)

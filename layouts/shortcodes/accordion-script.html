@@ -1,41 +1,40 @@
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("accordion-active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      panel.style.marginBottom = 0 + "px";
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.marginBottom = 10 + "px";
-    }
-  });
-}
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("accordion-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.marginBottom = 0 + "px";
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.marginBottom = 10 + "px";
+      }
+    });
+  }
 
-function openAccordion(id) {
-  var accordionBox = document.getElementById(id);
-  if (accordionBox) {
-    var button = accordionBox.getElementsByClassName("accordion")[0];
-    if (button) {
-      button.click();
-      accordionBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
+  function openAccordion(id) {
+    var accordionBox = document.getElementById(id);
+    if (accordionBox) {
+      var button = accordionBox.getElementsByClassName("accordion")[0];
+      if (button) {
+        button.click();
+        accordionBox.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   }
-}
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    var targetId = this.getAttribute('href').substr(1);
-    var targetElement = document.getElementById(targetId);
-    if (targetElement && targetElement.classList.contains('accordion-box')) {
-      e.preventDefault();
-      openAccordion(targetId);
-    }
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      var targetId = this.getAttribute("href").substr(1);
+      var targetElement = document.getElementById(targetId);
+      if (targetElement && targetElement.classList.contains("accordion-box")) {
+        e.preventDefault();
+        openAccordion(targetId);
+      }
+    });
   });
-});
 </script>

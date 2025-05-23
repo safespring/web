@@ -11,15 +11,15 @@ socialmediabild: ""
 language: "en"
 section: "Tech update"
 aliases:
-    - /blogg/security-advisory-2021
-    - /blogg/2021/2021-12-security-advisory-2021/
+  - /blogg/security-advisory-2021
+  - /blogg/2021/2021-12-security-advisory-2021/
 ---
 
 {{% ingress %}}
 A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that handles logging for Java programs.{{< /tooltip >}} was announced on the 10th of December 2021. Reports worldwide show that the vulnerability is used actively and successfully in attacks.
 {{% / ingress %}}
 
- Log4j is a Java-based logging utility widely used in popular software systems.
+Log4j is a Java-based logging utility widely used in popular software systems.
 
 ### Key Takeaways
 
@@ -27,7 +27,6 @@ A vulnerability in {{< tooltip "Log4j" >}}Log4j is a small internal module that 
 - Safespring customers should stop their services that might be affected.
 
 <div style="margin-bottom:50px;"></div>
-
 
 ## What we've done so far
 
@@ -45,7 +44,6 @@ However, we must point out that we do not have, and should not have, any knowled
 - Upgrade to the safe version of Log4j or apply mitigations for the Log4j exploit
 
 <div style="margin-bottom:50px;"></div>
-
 
 If you think you are not vulnerable, please check to be on the safe side one more time.
 

@@ -246,5 +246,7 @@ Don't hesitate to reach out if you have any questions at hello@safespring.com.
 ## References and link
 
 [^1]: Read more about [Talos System Requirements](https://www.talos.dev/v1.9/introduction/system-requirements/#minimum-requirements).
+
 [^2]: Read more about how to upload an image in the [Safespring documentation about images](https://docs.safespring.com/compute/image/#uploading-an-image-by-customer).
+
 [^3]: More information about the [Talos Image Factory](https://factory.talos.dev/).

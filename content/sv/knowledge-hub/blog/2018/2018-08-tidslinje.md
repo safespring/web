@@ -109,20 +109,37 @@ Lagen öppnar också för att presidenten kan ingå bilaterala avtal med andra l
 ## Källor
 
 [^1]: Europaparlamentets och rådets direktiv 95/46/EG av den 24 oktober 1995
+
 [^2]: Personuppgiftslagen (1998:204)
+
 [^3]: [Dataskyddsdirektivet](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/datalag-1973289_sfs-1973-289 "Dataskyddsdirektivet")
+
 [^4]: [Beslut om Safe Harbor-procedurens duglighet](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1533044732340&uri=CELEX:32000D0520 "Beslut om Safe Harbor-procedurens duglighet som skydd för överföring till tredje land")
+
 [^5]: [EU-kommissionen ang Safe Harbor](https://web.archive.org/web/20060724174359/http://www.ec.europa.eu/justice_home/fsj/privacy/docs/adequacy/sec-2002-196/sec-2002-196_en.pdf "Arbetsdokument från EU-kommissionen ang Safe Harbors efterlevnad med mera, 2002")
+
 [^6]: [The USA Patriot Act](https://www.mayerbrown.com/publications/the-usa-patriot-act-and-the-privacy-of-data-stored-in-the-cloud-01-18-2012/ "The USA Patriot Act")
+
 [^7]: [Galexia, 2008](http://www.galexia.com/public/research/assets/safe_harbor_fact_or_fiction_2008/ "Galexia, 2008")
+
 [^8]: [Beslut om Standard Contractual Clauses](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32010D0087 "Beslut om Standard Contractual Clauses")
+
 [^9]: [ZDNet, 2011](https://www.zdnet.com/article/microsoft-admits-patriot-act-can-access-eu-based-cloud-data/ "ZDNet, 2011")
+
 [^10]: [Original complaints by Max Schrems](http://www.europe-v-facebook.org/EN/Complaints/complaints.html "Original complaints by Max Schrems regarding Facebook’s violation of EU data privacy regulation")
+
 [^11]: [Timeline of Edward Snowden’s revelations, Al Jazeera](http://america.aljazeera.com/articles/multimedia/timeline-edward-snowden-revelations.html "Timeline of Edward Snowden’s revelations, Al Jazeera")
+
 [^12]: [CDT, 2014](https://www.zdnet.com/article/microsoft-admits-patriot-act-can-access-eu-based-cloud-data/ "CDT, 2014")
+
 [^13]: [C‐362/14, EU:C:2015:650](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1533050122404&uri=CELEX:62014CA0362 "C‐362/14, EU:C:2015:650")
+
 [^14]: [European Parliament - From Safe Harbour to Privacy Shield](https://bit.ly/2opMh9G "European Parliament - From Safe Harbour to Privacy Shield")
+
 [^15]: [Uttalande av Artikel 29 arbetsgruppen](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1533050143992&uri=CELEX:62014CJ0362 "Uttalande av Artikel 29 arbetsgruppen")
+
 [^16]: [Max Schrems uppdaterade klagomål ang Facebook och PRISM](http://www.europe-v-facebook.org/comp_fb_ie.pdf "Max Schrems uppdaterade klagomål ang Facebook och PRISM")
+
 [^17]: [EU-kommissionens beslut om EU-US Privacy Shield](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1533053249836&uri=CELEX:32016D1250 "EU-kommissionens beslut om att EU-US Privacy Shield ger tillräckligt skydd av EU-medborgares rättigheter vid överföringar av data till USA")
+
 [^18]: [Rebecca Hill, The Register](https://www.theregister.co.uk/2018/04/12/schrems_facebook_data_flow_eu_us_cjeu_questions/ "Rebecca Hill, The Register")

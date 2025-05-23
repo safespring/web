@@ -21,12 +21,15 @@ can be used to customize the text displayed on the card. {{% accordion title="Ht
 
 ```html
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where $.Site.RegularPages "Section" "en").ByParam
-  "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else if eq
-  $language "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }} {{ if isset .Params
-  "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages
-  "Section" "tjanster").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{
-  end }} {{ end }} {{ end }}
+  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where
+  $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
+  "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else
+  if eq $language "No" }} {{ range (where $.Site.RegularPages "Section"
+  "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render
+  "li-index"}} {{ else }} {{ end }} {{ end }} {{ else }} {{ range (where
+  $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }} {{ if isset
+  .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }}
+  {{ end }}
 </div>
 ```
 
@@ -49,13 +52,20 @@ can be used to customize the text displayed on the card. {{% accordion title="Ht
     </style>
     <div class="cardtitle">
       <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10">
-        <i class="{{ .Params.cardicon }} icon" style="color: {{ .Params.cardcolor }} !important"></i>
+        <i
+          class="{{ .Params.cardicon }} icon"
+          style="color: {{ .Params.cardcolor }} !important"
+        ></i>
       </div>
       <h2 style="color: {{ .Params.cardcolor }}">
-        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
+        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title
+        }}{{ end }}
       </h2>
     </div>
-    <p class="mb-0">{{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{ .Params.intro }}{{ end }}</p>
+    <p class="mb-0">
+      {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{
+      .Params.intro }}{{ end }}
+    </p>
   </div>
 </a>
 ```
@@ -89,7 +99,11 @@ knappen tar två parametrar (text och URL).
 ```html
 <br />
 <a class="button" target="_self" href="{{ .Get 1 | safeURL }}">{{ .Get 0 }}</a>
-<a style="margin-top: 25px; padding: 1px 0 0 0;" class="text-button" target="_blank" href="{{ .Get 3 | safeURL }}"
+<a
+  style="margin-top: 25px; padding: 1px 0 0 0;"
+  class="text-button"
+  target="_blank"
+  href="{{ .Get 3 | safeURL }}"
   >{{ .Get 2 }}</a
 >
 <br />
@@ -209,7 +223,9 @@ Visar en tabell som jämför Azure-tjänster med open source-alternativ samt ang
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Tjänst i Azure">Azure Kubernetes Service (AKS)</div>
+        <div class="cell" data-title="Tjänst i Azure">
+          Azure Kubernetes Service (AKS)
+        </div>
         <div class="cell" data-title="Funktion">Managerad Kubernetes</div>
         <div class="cell" data-title="Open source alternativ">
           <a href="https://compliantkubernetes.io">Compliant Kubernetes</a>
@@ -247,13 +263,14 @@ Skapar en knapp som länkar antingen till en extern URL (definierad i `.Params.l
 ```html
 <br />
 {{ if $.Page.Params.link }}
-<a class="button" target="_blank" href="{{ $.Page.Params.link }}">{{ $.Page.Params.knapp }}</a>
+<a class="button" target="_blank" href="{{ $.Page.Params.link }}"
+  >{{ $.Page.Params.knapp }}</a
+>
 {{ else }}
 <a href="{{ $.Page.Params.sidebarlinkurl }}" target="_blank" id="button">
-  {{ $.Page.Params.sidebarlinkname }} {{ if $.Page.Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i
-    class="fas {{ $.Page.Params.sidebarlinkicon }}"
-  ></i
-  >{{ end }}
+  {{ $.Page.Params.sidebarlinkname }} {{ if $.Page.Params.sidebarlinkicon
+  }}&nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>{{
+  end }}
 </a>
 {{ end }}
 ```
@@ -281,13 +298,14 @@ En variant av `button.html` med samma beteende, men som kan användas separat vi
 ```html
 <br />
 {{ if $.Page.Params.link }}
-<a class="button" target="_blank" href="{{ $.Page.Params.link }}">{{ $.Page.Params.knapp }}</a>
+<a class="button" target="_blank" href="{{ $.Page.Params.link }}"
+  >{{ $.Page.Params.knapp }}</a
+>
 {{ else }}
 <a href="{{ $.Page.Params.sidebarlinkurl }}" target="_blank" id="button">
-  {{ $.Page.Params.sidebarlinkname }} {{ if $.Page.Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i
-    class="fas {{ $.Page.Params.sidebarlinkicon }}"
-  ></i
-  >{{ end }}
+  {{ $.Page.Params.sidebarlinkname }} {{ if $.Page.Params.sidebarlinkicon
+  }}&nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>{{
+  end }}
 </a>
 {{ end }}
 ```
@@ -330,12 +348,24 @@ Visar en eventkort-stil med datum, typ av event, plattform och tid, formaterad s
       color: #323232 !important;
       font-size: 15px;
       line-height: 100%;
-      -webkit-box-shadow: 0 0 0 0.5px rgba(50, 50, 93, 0.17), 0 2px 5px 0 rgba(50, 50, 93, 0.1),
-        0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent !important;
-      -moz-box-shadow: 0 0 0 0.5px rgba(50, 50, 93, 0.17), 0 2px 5px 0 rgba(50, 50, 93, 0.1),
-        0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent !important;
-      box-shadow: 0 0 0 0.5px rgba(50, 50, 93, 0.17), 0 2px 5px 0 rgba(50, 50, 93, 0.1),
-        0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent !important;
+      -webkit-box-shadow:
+        0 0 0 0.5px rgba(50, 50, 93, 0.17),
+        0 2px 5px 0 rgba(50, 50, 93, 0.1),
+        0 1px 1.5px 0 rgba(0, 0, 0, 0.07),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08),
+        0 0 0 0 transparent !important;
+      -moz-box-shadow:
+        0 0 0 0.5px rgba(50, 50, 93, 0.17),
+        0 2px 5px 0 rgba(50, 50, 93, 0.1),
+        0 1px 1.5px 0 rgba(0, 0, 0, 0.07),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08),
+        0 0 0 0 transparent !important;
+      box-shadow:
+        0 0 0 0.5px rgba(50, 50, 93, 0.17),
+        0 2px 5px 0 rgba(50, 50, 93, 0.1),
+        0 1px 1.5px 0 rgba(0, 0, 0, 0.07),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08),
+        0 0 0 0 transparent !important;
       -webkit-border-radius: 4px;
       border-radius: 4px;
     }
@@ -523,14 +553,22 @@ Visar ett kompakt kontaktkort med titel, namn och e-postlänk.
   <div class="body p-relative bg-white shadow-1">
     <div class="d-block w-full"></div>
     <div class="px-2 py-2">
-      <h3 style="color: #9A9A9A; font-size: 16px; line-height: 1 !important; margin:0 !important;">
+      <h3
+        style="color: #9A9A9A; font-size: 16px; line-height: 1 !important; margin:0 !important;"
+      >
         {{ .Get "title" }}
       </h3>
-      <h2 style="color: #323232; margin:0; font-size: 20px; line-height: 1 !important; padding-top: 5px !important;">
+      <h2
+        style="color: #323232; margin:0; font-size: 20px; line-height: 1 !important; padding-top: 5px !important;"
+      >
         {{ .Get "name" }}
       </h2>
       <p style="line-height: 1 !important; margin:0px !important;">
-        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
+        <a
+          style="color: #9A9A9A; font-size: 14px;"
+          href="mailto:{{.Get `email`}}"
+          >{{ .Get "email" }}</a
+        >
       </p>
     </div>
   </div>
@@ -560,7 +598,10 @@ Visar ett mer detaljerat kontaktkort med valfri bild, telefon, e-post och adress
 ```html
 <div class="contact-container">
   {{ if .Params.picture }}
-  <div class="contact-image" style="aspect-ratio: 1 / 1; background-image: url(/img/people/{{.Get `picture` }});"></div>
+  <div
+    class="contact-image"
+    style="aspect-ratio: 1 / 1; background-image: url(/img/people/{{.Get `picture` }});"
+  ></div>
   {{ end }}
   <div class="contact-text-container">
     <div class="contact-text">
@@ -646,13 +687,17 @@ Skapar ett horisontellt kort med en bakgrundsbild, rubrik, text (eller inre inne
 ### Kod
 
 ```html
-<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
+<div
+  class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row"
+>
   <div
     class="safespring-horisontal-card-col safespring-horisontal-card-image"
     style="background-image: url({{ .Get `image` }});"
     alt="{{ or (.Get `alt`) (.Get `cardtitle`) }}"
   ></div>
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+  <div
+    class="safespring-horisontal-card-col safespring-horisontal-card-content"
+  >
     <h3>{{ .Get "cardtitle" }}</h3>
     {{ if isset .Params "text" }}
     <p>{{ .Get "text" }}</p>
@@ -740,13 +785,17 @@ Skapar ett horisontellt kort med bakgrundsbild, rubrik, text och en knapp.
 ### Kod
 
 ```html
-<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2">
+<div
+  class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
+>
   <div
     class="safespring-horisontal-card-col safespring-horisontal-card-image"
     style="background-image: url({{ .Get `image` }});"
     alt="{{ or (.Get `alt`) (.Get `cardtitle`) }}"
   ></div>
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+  <div
+    class="safespring-horisontal-card-col safespring-horisontal-card-content"
+  >
     <h3>{{ .Get "cardtitle" }}</h3>
     <p>{{ .Get "text" }}</p>
     <br /><br />
@@ -805,13 +854,20 @@ Skapar ett horisontellt ikonblock med färgad bakgrund, ikon och text. Kan valfr
 {{ with .Get "link" }}
 <a class="icon-block-link" href="{{ . | safeURL }}"
   >{{ end }}
-  <div class="icon-block-horisontal" style='background-color: {{ .Get "color" }}10;'>
-    <div class="icon-block-color" style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'>
+  <div
+    class="icon-block-horisontal"
+    style='background-color: {{ .Get "color" }}10;'
+  >
+    <div
+      class="icon-block-color"
+      style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'
+    >
       <i class='{{ .Get "icon" }} icon'></i>
     </div>
     <p>
-      <span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br />{{ .Get
-      "description" }}
+      <span class="inline_rubrik" style='color: {{ .Get "color" }};'
+        >{{ .Get "text" }} </span
+      ><br />{{ .Get "description" }}
     </p>
   </div>
   {{ with .Get "link" }}</a
@@ -868,11 +924,20 @@ Skapar ett litet ikonblock med ikon, text och beskrivning. Kan omges av en länk
 {{ with .Get "link" }}
 <a class="icon-block-link" href="{{ . }}"
   >{{ end }}
-  <div class="icon-block-small" style='color: {{ .Get "color" }};border-color: {{ .Get "color" }}30;'>
-    <div class="icon-block-small-icon" style='background-color: {{ .Get "color" }}10;'>
+  <div
+    class="icon-block-small"
+    style='color: {{ .Get "color" }};border-color: {{ .Get "color" }}30;'
+  >
+    <div
+      class="icon-block-small-icon"
+      style='background-color: {{ .Get "color" }}10;'
+    >
       <i class='{{ .Get "icon" }} icon'></i>
     </div>
-    <p><span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}</p>
+    <p>
+      <span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get
+      "description" }}
+    </p>
   </div>
   {{ with .Get "link" }}</a
 >{{ end }}
@@ -904,11 +969,19 @@ Visar ett ikonblock som kan innehålla antingen en bild eller en ikon samt text 
   >{{ end }}
   <div class="icon-block" style='color: {{ .Get "color" }};'>
     {{ if .Get "image" }}
-    <img src='{{ .Get "image" }}' alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;" />
+    <img
+      src='{{ .Get "image" }}'
+      alt='{{ .Get "alt" | default "Icon" }}'
+      class="icon-svg"
+      style="height: 70px;"
+    />
     {{ else }}
     <i class='{{ .Get "icon" }} icon'></i>
     {{ end }}
-    <p><span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}</p>
+    <p>
+      <span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get
+      "description" }}
+    </p>
   </div>
   {{ with .Get "link" }} </a
 >{{ end }}
@@ -966,7 +1039,9 @@ Visar en kompakt informationsruta med en titel, ett namn och en e-postlänk.
       <h3 style="font-size: 16px;">{{ .Get "title" }}</h3>
       <h2 style="font-size: 20px;">{{ .Get "name" }}</h2>
       <p>
-        <a style="color:#323232" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
+        <a style="color:#323232" href="mailto:{{.Get `email`}}"
+          >{{ .Get "email" }}</a
+        >
       </p>
     </div>
   </div>
@@ -1157,7 +1232,11 @@ Skapar en FAQ-liknande accordion med en fråga som rubrik och svaret i det dolda
   <div class="panel content-body">
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <h3 itemprop="name">{{ .Get "question" }}</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div
+        itemscope
+        itemprop="acceptedAnswer"
+        itemtype="https://schema.org/Answer"
+      >
         <div itemprop="text">
           <p style="padding:0;">{{ .Inner }}</p>
         </div>
@@ -1221,12 +1300,14 @@ Renderar en lista med tjänstekort beroende på vilket språk som anges (En, No 
 
 ```html
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where $.Site.RegularPages "Section" "en").ByParam
-  "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{ else if eq $language
-  "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }}
-  {{ .Render "li-index"}} {{ end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages "Section"
-  "tjanster").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{
-  end }}
+  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where
+  $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
+  "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{ else if eq
+  $language "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam
+  "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{
+  end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages "Section"
+  "tjanster").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{
+  .Render "li-index"}} {{ end }} {{ end }} {{ end }}
 </div>
 ```
 
@@ -1252,7 +1333,13 @@ Visar en videospelare som stödjer HLS-strömmar. Använder Hls.js för att init
 
 ```html
 <div class="webinarvideo">
-  <video class="webinar-videoplayer" id="myVideo" controls preload="none" poster="{{ .Get 1 | safeURL }}">
+  <video
+    class="webinar-videoplayer"
+    id="myVideo"
+    controls
+    preload="none"
+    poster="{{ .Get 1 | safeURL }}"
+  >
     Your browser does not support the video tag.
   </video>
 </div>
@@ -1290,7 +1377,10 @@ Visar en videospelare som stödjer HLS-strömmar. Använder Hls.js för att init
         // För Safari
         video.src = "{{ .Get 0 | safeURL }}";
         videoInitialized = true;
-      } else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+      } else if (
+        /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+        !window.MSStream
+      ) {
         video.src = "{{ .Get 0 | safeURL }}";
         video.load();
       } else {

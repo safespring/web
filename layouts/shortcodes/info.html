@@ -1,16 +1,26 @@
 <div class="flex-content">
   <div class="body p-relative">
-    <div class="d-block w-full">
-    </div>
+    <div class="d-block w-full"></div>
     <div class="px-2 py-2">
-      <h3 style="font-size: 16px; line-height: 1 !important; margin: 0 !important;">
+      <h3
+        style="font-size: 16px; line-height: 1 !important; margin: 0 !important"
+      >
         {{ .Get "title" }}
       </h3>
-      <h2 style="margin: 0; font-size: 20px; line-height: 1 !important; padding-top: 5px !important;">
+      <h2
+        style="
+          margin: 0;
+          font-size: 20px;
+          line-height: 1 !important;
+          padding-top: 5px !important;
+        "
+      >
         {{ .Get "name" }}
       </h2>
-      <p style="line-height: 1 !important; margin: 0 !important;">
-        <a style="color:#323232" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
+      <p style="line-height: 1 !important; margin: 0 !important">
+        <a style="color: #323232" href="mailto:{{.Get `email`}}"
+          >{{ .Get "email" }}</a
+        >
       </p>
     </div>
   </div>

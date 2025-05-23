@@ -1,234 +1,289 @@
 <p id="test-safespring"></p>
 
 <div>
-	<h2 id="testa-safespring">Testa molntjänsten - Upplev Safespring</h2>
-	<p>Hos safespring betalar du endast för de resurser du konsumerar vilket gör att du slipper licenskostnader. Du får även testa våra tjänster utan kostnad under en period för att enkelt komma igång. Ta första steget och fyll i formuläret nedan.</p>
-	<br>
+  <h2 id="testa-safespring">Testa molntjänsten - Upplev Safespring</h2>
+  <p>
+    Hos safespring betalar du endast för de resurser du konsumerar vilket gör
+    att du slipper licenskostnader. Du får även testa våra tjänster utan kostnad
+    under en period för att enkelt komma igång. Ta första steget och fyll i
+    formuläret nedan.
+  </p>
+  <br />
 
-	<style>
-		/* Formulärcontainer */
-		form {
-			width: min(100%, 500px);
-		}
+  <style>
+    /* Formulärcontainer */
+    form {
+      width: min(100%, 500px);
+    }
 
-		/* Rubriker */
-		h2 {
-			font-size: 1.5rem;
-			font-weight: 500;
-			margin-top: 20px;
-			margin-bottom: 10px;
-		}
+    /* Rubriker */
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
 
-		/* Textfält och andra inputfält */
-		.form-field {
-			position: relative;
-			margin-bottom: 15px;
-		}
+    /* Textfält och andra inputfält */
+    .form-field {
+      position: relative;
+      margin-bottom: 15px;
+    }
 
-		.form-field label {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			left: 25px;
-			pointer-events: none;
-			font-size: 16px;
-			font-weight: 400;
-			transition: all 0.2s ease;
-			background-color: transparent;
-			padding: 0 8px;
-			margin: 0 -8px;
-			font-family: 'Montserrat';
-			line-height: 16px;
-			color: var(--middle-blue-color);
-		}
+    .form-field label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 25px;
+      pointer-events: none;
+      font-size: 16px;
+      font-weight: 400;
+      transition: all 0.2s ease;
+      background-color: transparent;
+      padding: 0 8px;
+      margin: 0 -8px;
+      font-family: "Montserrat";
+      line-height: 16px;
+      color: var(--middle-blue-color);
+    }
 
-		.form-field input[type="text"],
-		.form-field input[type="email"],
-		.form-field input[type="tel"],
-		.form-field select {
-			width: 100%;
-			line-height: 16px;
-			padding: 10px;
-			border: solid 0.5px var(--main-color);
-			border-radius: 100px;
-			box-sizing: border-box;
-			font-size: 16px;
-			color: var(--main-color);
-			padding: 15px 25px;
-			background-color: transparent;
-			font-family: 'Montserrat';
+    .form-field input[type="text"],
+    .form-field input[type="email"],
+    .form-field input[type="tel"],
+    .form-field select {
+      width: 100%;
+      line-height: 16px;
+      padding: 10px;
+      border: solid 0.5px var(--main-color);
+      border-radius: 100px;
+      box-sizing: border-box;
+      font-size: 16px;
+      color: var(--main-color);
+      padding: 15px 25px;
+      background-color: transparent;
+      font-family: "Montserrat";
+    }
 
-		}
+    .form-field input[type="text"]:focus,
+    .form-field input[type="email"]:focus,
+    .form-field input[type="tel"]:focus,
+    .form-field select:focus {
+      outline: none;
+      box-shadow: none;
+      border: solid 0.5px var(--main-color) !important;
+    }
 
-		.form-field input[type="text"]:focus,
-		.form-field input[type="email"]:focus,
-		.form-field input[type="tel"]:focus,
-		.form-field select:focus {
-			outline: none;
-			box-shadow: none;
-			border: solid 0.5px var(--main-color) !important;       
-		}
+    .form-field input[type="text"]:valid ~ label,
+    .form-field input[type="email"]:valid ~ label,
+    .form-field input[type="tel"]:valid ~ label,
+    .form-field select:valid ~ label {
+      transform: translateY(-205%);
+      -webkit-transform: translateY(-205%);
+      color: #3c9bcd;
+      font: 400 12px/16px "Hind";
+      letter-spacing: 0.5px;
+      background-color: #fafefe;
+      border-radius: 100px;
+    }
 
-		.form-field input[type="text"]:valid ~ label,
-		.form-field input[type="email"]:valid ~ label,
-		.form-field input[type="tel"]:valid ~ label,
-		.form-field select:valid ~ label {
-			transform: translateY(-205%);
-			-webkit-transform: translateY(-205%);
-			color: #3C9BCD;
-			font: 400 12px/16px 'Hind';
-			letter-spacing: 0.5px;
-			background-color: #fafefe;
-			border-radius: 100px;
-		}
+    .form-field input[type="text"]:focus ~ label,
+    .form-field input[type="email"]:focus ~ label,
+    .form-field input[type="tel"]:focus ~ label,
+    .form-field select:focus ~ label {
+      transform: translateY(-205%);
+      -webkit-transform: translateY(-205%);
+      color: #3c9bcd;
+      font: 400 12px/16px "Hind";
+      letter-spacing: 0.5px;
+      background-color: #fafefe;
+      border-radius: 100px;
+    }
 
+    .form-field.invalid.has-content input {
+      border-color: red;
+    }
 
-		.form-field input[type="text"]:focus ~ label,
-		.form-field input[type="email"]:focus ~ label,
-		.form-field input[type="tel"]:focus ~ label,
-		.form-field select:focus ~ label {
-			transform: translateY(-205%);
-			-webkit-transform: translateY(-205%);
-			color: #3C9BCD;
-			font: 400 12px/16px 'Hind';
-			letter-spacing: 0.5px;
-			background-color: #fafefe;
-			border-radius: 100px;
-		}
+    .form-field.invalid.has-content label {
+      transform: translateY(-205%);
+      -webkit-transform: translateY(-205%);
+      color: red;
+      font: 400 12px/16px "Hind";
+      letter-spacing: 0.5px;
+      background-color: #fafefe;
+      border-radius: 100px;
+    }
 
-		.form-field.invalid.has-content input {
-			border-color: red;
-		}
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
 
-		.form-field.invalid.has-content label {
-			transform: translateY(-205%);
-			-webkit-transform: translateY(-205%);
-			color: red;
-			font: 400 12px/16px 'Hind';
-			letter-spacing: 0.5px;
-			background-color: #fafefe;
-			border-radius: 100px;
-		}
+    .selection-icon {
+      position: absolute;
+      right: 11px;
+      top: 8px;
+      padding: 10px 9px 6px 9px;
+      border-radius: 100px;
+      background-color: var(--cloud-blue-color);
+      color: var(--middle-blue-color);
+      z-index: -2;
+    }
 
+    /* Checkboxar */
+    .form-field label {
+      display: block;
+      margin-bottom: 10px;
+    }
 
-		select {
-			appearance: none;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-		}
+    .form-field input[type="checkbox"] {
+      margin-right: 10px;
+      transform: translateY(2px);
+    }
 
-		.selection-icon {
-			position: absolute;
-			right: 11px;
-			top: 8px;
-			padding: 10px 9px 6px 9px;
-			border-radius: 100px;
-			background-color: var(--cloud-blue-color);
-			color: var(--middle-blue-color);
-			z-index: -2;
-		}
+    .form-field.has-content label {
+      color: #3c9bcd;
+      font: 400 12px/16px "Hind";
+      letter-spacing: 0.5px;
+      background-color: #fafefe;
+    }
 
-		/* Checkboxar */
-		.form-field label {
-			display: block;
-			margin-bottom: 10px;
-		}
+    .form-field.has-content.invalid label {
+      color: red;
+      font: 400 12px/16px "Hind";
+      letter-spacing: 0.5px;
+      background-color: #fafefe;
+    }
+  </style>
 
-		.form-field input[type="checkbox"] {
-			margin-right: 10px;
-			transform: translateY(2px);
-		}
-
-		.form-field.has-content label {
-			color: #3C9BCD;
-			font: 400 12px/16px 'Hind';
-			letter-spacing: 0.5px;
-			background-color: #fafefe;
-		}
-
-		.form-field.has-content.invalid label {
-			color: red;
-			font: 400 12px/16px 'Hind';
-			letter-spacing: 0.5px;
-			background-color: #fafefe;
-		}
-
-
-</style>
-
-<form id="up-form" name="form_9549u5325684f3ca44641b1ebb4d4a8cd2e22" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-	<div class="column-two">
-		<div class="form-field">
-			<input type="text" id="firstname" name="Contact.firstname" required>
-			<label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label>
-		</div>
-		<div class="form-field">
-			<input type="text" id="lastname" name="Contact.lastname" required>
-			<label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label>
-			</div>
-		</div>
-			<div class="column-two">
-		<div class="form-field">
-			<input type="tel" id="phone" name="Contact.cellPhone" required>
-			<label for="phone"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;Mobilnummer</label>
-		</div>
-		<div class="form-field">
-			<input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-			<label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
-		</div>
-	</div>
-		<div class="form-field">
-			<input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required">
-			<label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
-		</div>
-		<div class="inputGroup">
-			<input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
-			<label for="accept-terms">
-				Personuppgiftshantering&nbsp;&nbsp;&nbsp;<a target="_blank" href="/dokument/personuppgiftshantering/"><i class="fas fa-up-right-from-square"></i></a>
-				</label>
-		</div>
-		<!-- REQUIRED FIELDS -->
-		<input type="hidden" name="formCid" value="9549">
-		<input type="hidden" name="formId" value="9549u5325684f3ca44641b1ebb4d4a8cd2e22">
-		<input type="hidden" name="isFrame" value="false">
-		<input type="text" value="" name="validation" style="display: none;">
-		<!-- END OF REQUIRED FIELDS -->
-		<button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Bli kontaktad</button>
-	</form>
-	<script type="text/javascript">
-	    document.addEventListener('DOMContentLoaded', function() {
-	        var checkBtn = document.getElementById('checkBtn');
-	        if (checkBtn) {
-	            checkBtn.addEventListener('click', function() {
-	                var checked = document.querySelectorAll('input[type=checkbox]:checked').length;
-	                if (!checked) {
-	                    alert("You must accept our terms and conditions");
-	                    return false;
-	                }
-	            });
-	        }
-	    });
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function(){
-			const ids = ["#up-email-input", "#billing", "#gatekeeper-email"];
-			ids.forEach(id => {
-				const element = document.querySelector(id);
-				if (element) {
-					element.addEventListener("input", function (event) {
-						var emailField = event.target;
-						if (emailField.checkValidity()) {
-							emailField.parentElement.classList.remove("invalid");
-						} else {
-							emailField.parentElement.classList.add("invalid");
-						}
-						if (emailField.value) {
-							emailField.parentElement.classList.add("has-content");
-						} else {
-							emailField.parentElement.classList.remove("has-content");
-						}
-					});
-				}
-			});
-		});
-	</script></div>
+  <form
+    id="up-form"
+    name="form_9549u5325684f3ca44641b1ebb4d4a8cd2e22"
+    action="https://power.upsales.com/api/external/formSubmit"
+    method="POST"
+  >
+    <div class="column-two">
+      <div class="form-field">
+        <input type="text" id="firstname" name="Contact.firstname" required />
+        <label for="name"
+          ><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label
+        >
+      </div>
+      <div class="form-field">
+        <input type="text" id="lastname" name="Contact.lastname" required />
+        <label for="name"
+          ><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label
+        >
+      </div>
+    </div>
+    <div class="column-two">
+      <div class="form-field">
+        <input type="tel" id="phone" name="Contact.cellPhone" required />
+        <label for="phone"
+          ><i class="fas fa-mobile-screen-button"></i
+          >&nbsp;&nbsp;&nbsp;Mobilnummer</label
+        >
+      </div>
+      <div class="form-field">
+        <input
+          maxlength="512"
+          type="email"
+          placeholder=""
+          pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$"
+          title="Please enter a valid email"
+          id="up-email-input"
+          autocomplete="off"
+          name="Contact.email"
+          required="required"
+        />
+        <label for="email"
+          ><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label
+        >
+      </div>
+    </div>
+    <div class="form-field">
+      <input
+        maxlength="512"
+        type="text"
+        placeholder=""
+        id="up-client-name-input"
+        name="Client.name"
+        required="required"
+      />
+      <label for="organization"
+        ><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label
+      >
+    </div>
+    <div class="inputGroup">
+      <input
+        type="checkbox"
+        name="singleOptIn.qptjh8v9er"
+        id="accept-terms"
+        required
+      />
+      <label for="accept-terms">
+        Personuppgiftshantering&nbsp;&nbsp;&nbsp;<a
+          target="_blank"
+          href="/dokument/personuppgiftshantering/"
+          ><i class="fas fa-up-right-from-square"></i
+        ></a>
+      </label>
+    </div>
+    <!-- REQUIRED FIELDS -->
+    <input type="hidden" name="formCid" value="9549" />
+    <input
+      type="hidden"
+      name="formId"
+      value="9549u5325684f3ca44641b1ebb4d4a8cd2e22"
+    />
+    <input type="hidden" name="isFrame" value="false" />
+    <input type="text" value="" name="validation" style="display: none" />
+    <!-- END OF REQUIRED FIELDS -->
+    <button
+      class="button pt-1 pb-1 mt-2 submit-button"
+      id="checkBtn"
+      type="submit"
+    >
+      Bli kontaktad
+    </button>
+  </form>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      var checkBtn = document.getElementById("checkBtn");
+      if (checkBtn) {
+        checkBtn.addEventListener("click", function () {
+          var checked = document.querySelectorAll(
+            "input[type=checkbox]:checked",
+          ).length;
+          if (!checked) {
+            alert("You must accept our terms and conditions");
+            return false;
+          }
+        });
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ids = ["#up-email-input", "#billing", "#gatekeeper-email"];
+      ids.forEach((id) => {
+        const element = document.querySelector(id);
+        if (element) {
+          element.addEventListener("input", function (event) {
+            var emailField = event.target;
+            if (emailField.checkValidity()) {
+              emailField.parentElement.classList.remove("invalid");
+            } else {
+              emailField.parentElement.classList.add("invalid");
+            }
+            if (emailField.value) {
+              emailField.parentElement.classList.add("has-content");
+            } else {
+              emailField.parentElement.classList.remove("has-content");
+            }
+          });
+        }
+      });
+    });
+  </script>
+</div>

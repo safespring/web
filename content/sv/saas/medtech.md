@@ -21,7 +21,7 @@ darkmode: ""
 saas: ""
 sidebarwhitepaper: ""
 aliases:
-- /saas/medtech/
+  - /saas/medtech/
 ---
 
 {{< ingress >}}

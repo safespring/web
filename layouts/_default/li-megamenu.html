@@ -1,13 +1,23 @@
 <a href="{{ .RelPermalink }}" class="matomo-track">
   <div class="megamenu-main-service-card">
     <div class="cardtitle">
-      <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10"><i class="{{ .Params.cardicon }} icon" style="color: {{ .Params.cardcolor }} !important"></i></div>
-      <span class="megamenu-main-service-card-title" style="color: {{ .Params.cardcolor }}">
-        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title }}{{ end }}
+      <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10">
+        <i
+          class="{{ .Params.cardicon }} icon"
+          style="color: {{ .Params.cardcolor }} !important"
+        ></i>
+      </div>
+      <span
+        class="megamenu-main-service-card-title"
+        style="color: {{ .Params.cardcolor }}"
+      >
+        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title
+        }}{{ end }}
       </span>
     </div>
-      <p class="mb-0">
-        {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{ .Params.intro }}{{ end }}
-      </p>
-</div>
+    <p class="mb-0">
+      {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{
+      .Params.intro }}{{ end }}
+    </p>
+  </div>
 </a>

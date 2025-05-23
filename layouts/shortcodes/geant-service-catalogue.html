@@ -1,7 +1,4 @@
 <div class="flexcontainer-three">
-    {{ range (where $.Site.RegularPages "Section" "geant").ByParam "cardorder" }}
-      {{ if isset .Params "cardorder" }}
-        {{ .Render "li-index"}}
-      {{ end }}
-    {{ end }}
+  {{ range (where $.Site.RegularPages "Section" "geant").ByParam "cardorder" }}
+  {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }}
 </div>

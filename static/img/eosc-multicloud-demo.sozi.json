@@ -1713,9 +1713,7 @@
   ],
   "elementsToHide": [],
   "customFiles": [],
-  "selectedFrames": [
-    "frame2540"
-  ],
+  "selectedFrames": ["frame2540"],
   "selectedLayers": [
     "layer2",
     "layer3",

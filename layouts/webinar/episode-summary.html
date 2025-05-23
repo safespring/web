@@ -1,26 +1,26 @@
 <div class="webinar-card-episode">
   <a href="{{ .RelPermalink }}">
     <div class="webinar-highlist-card-episode shadow-1">
-      <div class="webinar-highlist-image-episode" style="background-image: url('{{ .Params.card }}');"></div>
-      <div class="webinar-series-text-container-episode" data-href="{{ .RelPermalink }}">
+      <div
+        class="webinar-highlist-image-episode"
+        style="background-image: url('{{ .Params.card }}');"
+      ></div>
+      <div
+        class="webinar-series-text-container-episode"
+        data-href="{{ .RelPermalink }}"
+      >
         <p class="episode-counter-episode">{{ .Params.episode }}</p>
         <div>
           <h2>{{ .Title }}</h2>
           <span class="text-button">
-              Till 
-              {{ with .Parent }}
-                  {{ if .Params.episodetype }}
-                      {{ .Params.episodetype }}
-                  {{ else }}
-                      avsnitt
-                  {{ end }}
-              {{ else }}
-                  avsnitt
-              {{ end }}
-              &nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
-          </span>       
-        </div>
+            Till {{ with .Parent }} {{ if .Params.episodetype }} {{
+            .Params.episodetype }} {{ else }} avsnitt {{ end }} {{ else }}
+            avsnitt {{ end }} &nbsp;&nbsp;&nbsp;<i
+              class="fas fa-arrow-right"
+            ></i>
+          </span>
         </div>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
+</div>

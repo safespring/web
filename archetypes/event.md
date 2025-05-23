@@ -29,6 +29,7 @@ texter
 {{< /ingress >}}
 
 ### Hur deltar jag på webbinariet?
+
 Du registrera dig genom länken med din mailadress. Du kommer få ett bekräftelsemeddelande skickat till din mail. En timme innan webbinariet får du även en påminnelse.
 
 Boka enkelt in webbinariet i din kalender med de färdiga länkarna i mailet.

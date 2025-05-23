@@ -122,12 +122,21 @@ Att källkoden är öppen minskar möjligheterna för leverantörer och implemen
 ## Källförteckning
 
 [^1]: Safespring. (2018). _Cloud Act White Paper_. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/cloudact/)
+
 [^2]: Safespring. (2020). _Schrems II White Paper_. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/schrems-ii/)
+
 [^3]: Europeiska kommissionen. (2023). _C(2023) 4745 final_. Hämtad från [commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
+
 [^4]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 131_. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
+
 [^5]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 138_. Europeiska unionens stadga för grundläggande rättigheter, Artikel 52.1.
+
 [^6]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 134-135_. Dataskydds­förordningen (GDPR), 679/2016, Artikel 6.1.f.
+
 [^7]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 126_.
+
 [^8]: Europeiska kommissionen. (2023). _C(2023) 4745 final, Rec. 184_.
+
 [^9]: noyb. (2023, 10 juli). _European Commission gives EU-US data transfers third round at CJEU_. Hämtad från [noyb.eu](https://noyb.eu/en/european-commission-gives-eu-us-data-transfers-third-round-cjeu)
+
 [^10]: Europeiska dataskydds­ombudsmannen. (2024). _EDPS/2024/05_. European Commission’s use of Microsoft 365 infringes data protection law for EU institutions and bodies. Hämtad från [edps.europa.eu](https://www.edps.europa.eu/system/files/2024-03)

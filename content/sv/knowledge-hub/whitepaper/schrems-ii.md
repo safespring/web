@@ -186,29 +186,55 @@ Detta white paper är skrivet av Amelia Andersdotter. Safespring erbjuder svensk
 {{< accordion-script >}}
 
 [^1]: ECLI:EU:C:2020:559
+
 [^2]: Safespring, White paper: Hur du hanterar det osäkra läget i och med CLOUD Act och GDPR, 2018
+
 [^3]: [EU-kommissionen, 10 augusti 2020, Joint Press Statement from European Commissioner for Justice Didier Reynders and U.S. Secretary of Commerce Wilbur Ross](https://ec.europa.eu/info/news/joint-press-statement-european-commissioner-justice-didier-reynders-and-us-secretary-commerce-wilbur-ross-7-august-2020-2020-aug-07_en)
+
 [^4]: Statens servicecenter, En gemensam statlig molntjänst för myndigheternas it-drift, delrapport 2017.
+
 [^5]: Jfr OpenStack Foundation (OSF) och Cloud Native Computing Foundation (CNCF).
+
 [^6]: [GAIA-X: a federated data infrastructure for Europe](https://www.data-infrastructure.eu/GAIAX/Navigation/EN/Home/home.html)
+
 [^7]: Interoperabilitet: samverkan mellan olika komponenter. Se också SOU 2007:47, s. 133 ff.
+
 [^8]: Rapport d’Information No 443, Union européenne -- colonie du monde numérique ?, 20 mars 2013, s. 115-116.
+
 [^9]: SOU 2007:47, Den osynliga infrastrukturen, s. 64.
+
 [^10]: Jfr ovan fotnot 2.
+
 [^11]: Både Safe Harbor-beslutet från 2001 och Privacy Shield-beslutet från 2016 har funnits ogiltiga av EU-domstolen.
+
 [^12]: Jfr kommittédirektiv 2019:64 med tillägg i dir. 2020:73.
+
 [^13]: C(2018) 7118, European Commission Digital Strategy - A digitally transformed, user-focused and data-driven Commission, 2018.
+
 [^14]: E-delegationen, Vägledning för digital samverkan, Version 4.1, 2015-05-28.
+
 [^15]: DIGG, 2019-136, Policy för utveckling av programvara.
+
 [^16]: [Slovenian State Cloud DRO](https://nio.gov.si/nio/asset/drzavni+racunalniski+oblak+dro?lang=en)
+
 [^17]: Se ovan, fotnot 8.
+
 [^18]: Enligt grundlagsenhetens diarium, efterfrågat hösten 2016 av författaren.
+
 [^19]: Justitiedepartementets instruktion inför sammanträde i kommittén för skydd av enskilda med avseende på behandling av personuppgifter av 2016–06–20.
+
 [^20]: Statskontoret 2020:14, Myndighetsanalys av Datainspektionen.
+
 [^21]: Datainspektionen DI-2019-841, 15 mars 2019.
+
 [^22]: [Kammarkollegiet, Statens inköpscentral, ramavtal på IT- och telekomområdet](https://www.avropa.se/ramavtal/ramavtalsomraden/it-och-telekom/)
+
 [^23]: Se ovan fotnot 6.
+
 [^24]: [Open Stack Foundation](https://osf.dev)
+
 [^25]: [Cloud Native Computing Foundation (Linux Foundation)](https://cncf.io)
+
 [^26]: [Europakommissionen, Interoperability solutions for public administrations, businesses and citizens](https://ec.europa.eu/isa2/)
+
 [^27]: Fråga 5 i del II kommer i princip alltid att behöva besvaras jakande vid användning av amerikanska

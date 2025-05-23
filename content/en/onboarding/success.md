@@ -10,13 +10,13 @@ sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
 noindex: "yes"
 aliases:
-- /onboarding/success/
+  - /onboarding/success/
 ---
 
 ## Here are a few steps to help you get started
 
-1.	[Explore our demo videos](/demo/) – Get an overview of your settings and services.
-2.	[Read our documentation](https://docs.safespring.com/) – Customize the services to fit your specific needs.
-3.	[Reach out to support](mailto:support@safespring.com) – If you have any questions or need assistance, don’t hesitate to contact us.
+1. [Explore our demo videos](/demo/) – Get an overview of your settings and services.
+2. [Read our documentation](https://docs.safespring.com/) – Customize the services to fit your specific needs.
+3. [Reach out to support](mailto:support@safespring.com) – If you have any questions or need assistance, don’t hesitate to contact us.
 
 Welcome to Safespring! We look forward to supporting you on your journey.

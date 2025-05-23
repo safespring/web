@@ -1,2 +1,14 @@
-<br>
-{{ if $.Page.Params.link }}<a class="button" target="_blank" href="{{ $.Page.Params.link }}">{{ $.Page.Params.knapp }}</a>{{ else }}<a href="{{ $.Page.Params.sidebarlinkurl }}" target="_blank" id="button">{{ $.Page.Params.sidebarlinkname }}{{ if $.Page.Params.sidebarlinkicon }}&nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>{{ end }}</a>{{ end }}
+<br />
+{{ if $.Page.Params.link }}<a
+  class="button"
+  target="_blank"
+  href="{{ $.Page.Params.link }}"
+  >{{ $.Page.Params.knapp }}</a
+>{{ else }}<a
+  href="{{ $.Page.Params.sidebarlinkurl }}"
+  target="_blank"
+  id="button"
+  >{{ $.Page.Params.sidebarlinkname }}{{ if $.Page.Params.sidebarlinkicon
+  }}&nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>{{
+  end }}</a
+>{{ end }}

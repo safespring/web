@@ -1,7 +1,10 @@
 {{ $currentLang := .Site.Language.Lang }}
 
 <!-- Current language -->
-<span title="{{ .Language.LanguageName }}" style="display: flex; align-items: center">
+<span
+  title="{{ .Language.LanguageName }}"
+  style="display: flex; align-items: center"
+>
   <img
     src="/img/flags/{{ $currentLang }}.svg"
     alt="Safespring {{ .Language.LanguageName }}"
@@ -12,7 +15,10 @@
 <!-- Other languages -->
 {{ range .Translations }}
 <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
-  <img src="/img/flags/{{ .Lang }}.svg" alt="Safespring {{ .Language.LanguageName }}" />
+  <img
+    src="/img/flags/{{ .Lang }}.svg"
+    alt="Safespring {{ .Language.LanguageName }}"
+  />
 </a>
 {{ end }}
 <!-- TODO: add language switcher that links to home page where translations don't exist -->

@@ -1,7 +1,7 @@
 <a href="{{ .RelPermalink }}">
-  {{ $relativePath := strings.TrimSuffix "/" .File.Dir }} {{ $pathSegments := split $relativePath
-  "/" }} {{ $typeFolder := "" }} {{ if ge (len $pathSegments) 2 }} {{ $typeFolder = index
-  $pathSegments 1 }} {{ end }}
+  {{ $relativePath := strings.TrimSuffix "/" .File.Dir }} {{ $pathSegments :=
+  split $relativePath "/" }} {{ $typeFolder := "" }} {{ if ge (len
+  $pathSegments) 2 }} {{ $typeFolder = index $pathSegments 1 }} {{ end }}
   <div
     class='fill-available-space img-250 pointer
     {{ if eq $typeFolder "webinar" }}blue-hover-webinar flex-center
@@ -26,13 +26,18 @@
         alt="Safespring language flag"
         src="/img/flags/{{ .Params.language }}.svg"
       />
-      <span class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+      <span
+        class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px"
         >{{ T "knowledgehub.blog" }}</span
       >
     </div>
     <div class="blogg-card-wapper">
       <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
-      <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
+      <h1
+        class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
+      >
+        {{ .Title }}
+      </h1>
       <span class="text-button">{{ T "knowledgehub.read_post" }}</span>
     </div>
     {{ else if eq $.Params.section "Tech update" }}
@@ -55,7 +60,9 @@
         >
       </div>
       <div>
-        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">
+        <h1
+          class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
+        >
           {{ .Title }}
         </h1>
         <p class="mb-1">{{ .Params.intro }}</p>
@@ -65,7 +72,12 @@
       </div>
     </div>
     {{ else if eq $typeFolder "webinar" }}
-    <img class="lazyload" loading="lazy" src="{{ .Params.card }}" alt="{{ .Title }}" />
+    <img
+      class="lazyload"
+      loading="lazy"
+      src="{{ .Params.card }}"
+      alt="{{ .Title }}"
+    />
     <div class="blogg-card-tagg-container-webinar">
       <img
         class="blogg-card-flag"
@@ -79,11 +91,20 @@
       <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
     </div>
     <div class="blogg-card-wapper">
-      <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
+      <h1
+        class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
+      >
+        {{ .Title }}
+      </h1>
       <div class="webinar-card-link">Play</div>
     </div>
     {{ else if eq $typeFolder "solution-brief" }}
-    <img class="lazyload" loading="lazy" src="/img/card/{{ .Params.card }}" alt="{{ .Title }}" />
+    <img
+      class="lazyload"
+      loading="lazy"
+      src="/img/card/{{ .Params.card }}"
+      alt="{{ .Title }}"
+    />
     <div class="blogg-card-tagg-container-solution-brief">
       <img
         class="blogg-card-flag"
@@ -91,12 +112,17 @@
         alt="Safespring language flag"
         src="/img/flags/{{ .Params.language }}.svg"
       />
-      <span class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px"
+      <span
+        class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px"
         >Solution brief</span
       >
     </div>
     <div class="blogg-card-wapper">
-      <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h1>
+      <h1
+        class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
+      >
+        {{ .Title }}
+      </h1>
       <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
     </div>
     {{ else if eq $typeFolder "white-paper" }}
@@ -106,7 +132,9 @@
           class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
           >White Paper</span
         >
-        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">
+        <h1
+          class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
+        >
           {{ .Title }}
         </h1>
         <p class="mb-1">{{ .Params.intro }}</p>
@@ -122,7 +150,9 @@
           class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
           >{{ .Params.section }}</span
         >
-        <h1 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">
+        <h1
+          class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
+        >
           {{ .Title }}
         </h1>
         <p class="mb-1">{{ .Params.intro }}</p>

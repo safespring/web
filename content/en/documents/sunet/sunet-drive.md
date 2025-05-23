@@ -14,7 +14,7 @@ sidebarlinkurl: "/documents/sunet/safespring_solution-brief_sunet-drive.pdf"
 noindex: ""
 toc: "Table of contents"
 aliases:
-- /dokument/sunet/sunet-drive/
+  - /dokument/sunet/sunet-drive/
 ---
 
 {{< ingress >}}
@@ -72,6 +72,7 @@ Sunet Drive is a managed storage solution which is physically installed in the u
 It is designed to solve the needs and requirements listed above to become a smart and long-term solution for Swedish universities to handle their increasing storage demands without compromising on legislative issues such as Schrems II.
 
 ### Design
+
 Sunet Drive enables universities to provide a storage solution with the same flexibility as many researchers have grown accustomed to, while still being compliant with local, national, and international requirements. This is achieved through a federated global scale architecture that implements a co-management between Sunet and the local university.
 
 Each organization joining the solution will be able to manage their own Nextcloud node in accordance with commonly agreed standards, while still being able to support local processes and procedures. The federated login through a global site selector binds a user to their respective Nextcloud nodes. This guarantees that users from one organization will only operate on their own node.
@@ -89,11 +90,13 @@ By using S3 as backend it is always possible to reach the core data directly fro
 Sunet Drive is built with separation of access and ownership of the data in mind. That means that it is possible for a researcher to move to another university with another Nextcloud node without complex migration procedures. Even after changing their affiliation, researchers will be able to access their data with minimal administrative effort.
 
 ## Building Blocks
+
 {{< ingress >}}
 There are a number of components that combined make Sunet Drive.
 {{< /ingress >}}
 
 ### Collaboration platform - Nextcloud
+
 Nextcloud is an on-premises collaboration platform. It uniquely combines the convenience and ease of use of consumer-grade solutions like Dropbox, OneDrive and Google Drive with the security, privacy and control large organizations need.
 
 Users gain access to their documents and can share them with others within and outside their organization with an easy to use web interface or clients for Windows, Mac, Linux, Android and iOS.
@@ -109,6 +112,7 @@ With advanced functionality to handle access to files, directories or external d
 If the sharing settings allow, all files in Nextcloud could be shared with standardized protocols such as WebDAV. This adds a flexibility that standard S3 does not have and makes it easier to build archiving piplines or other kind of data flows.
 
 ### Object Storage - Ceph
+
 Primary storage requirements for Sunet have been defined as:
 
 - Availability
@@ -121,15 +125,17 @@ It is significantly cheaper to provide guarantees that meet these requirements p
 Ceph, with the RadosGW implementation, is a proven solution for high scale object storage solutions. By providing the same underlying solution to different universities in Sweden possibilities for federation or even a boundless data lake for research opens up.
 
 ### Compute – OpenStack
+
 The OpenStack installation is small in comparison with the Ceph installation since it is primarily used to be able to run the virtual machines needed for Nextcloud and the Galera Cluster. If the university needs further resources for data processing the capacity can easily be increased.
 
 By having compute power close to the data, researchers will have the ability to process and do calculations on the data. The resources will be assigned with flavors, where some will be regular CPU resources and some GPU resources if the university has need for it and has GPU-cards installed in the instance. The instances will also come with fast, local NVMe storage for high performance when processing the data.
 
 ### Hardware Infrastructure
+
 The hardware infrastructure is based on standard i386 nodes placed in the university’s IT-environment. Most of the management is done remotely but in the case of physical work such as drive swaps and replacements the local IT-staff perform these assignments.
 
-
 ## Implementation
+
 {{< ingress >}}
 There are a number of components that combined make Sunet Drive.
 {{< /ingress >}}
@@ -152,17 +158,21 @@ Not in the picture is the test-environment, which is a replicate of the architec
 At the top of the picture, we see the users at the different institutions accessing the service by logging in through the Global Site Selector and being redirected to their university’s Nextcloud node, respectively.
 
 ### Operations
+
 Most of the components of Sunet Drive are managed as code (infrastructure as code), enabling immutable infrastructure divided between stateful and stateless components. Nextcloud frontend servers are a good example for stateless components, they can easily be scaled out by adding more instances. But even the database instances, which are clustered, stateful instances, are mostly decoupled from the underlying S3-storage, containing only general information about operations on files, rather than actual research data.
 
 ### Compliance
+
 Data compliance is achieved on multiple levels, incorporating processes that support, but are not limited to, processes frameworks like ISO 27001, ITIL, or the Swedish MSBFS 2020:7, which determines regulations on security measures in information systems for state authorities. This is done through a clear distinction of responsibilities of the involved parties. Users and operators gain access to their respective parts of the federated architecture, which then can be aligned with local processes.
 
 ### User-perspective
+
 The perspective of an end user is as simple as it can get while using an Enterprise File Sync and Share (EFSS) solution. A user logs on through their institutional account and will be delegated to the federated node which is co-managed between Sunet/Safespring and their institution. This means for example that a user can apply for project-specific storage (an S3-bucket), which will then show as a regular folder in Nextcloud and can be synchronized using Nextcloud’s standard applications.
 
 Collaborations with other researchers can easily be established by inviting them into Sunet Drive. Once a project has finished, the properties of the S3 bucket can be changed, and the ownership of the data can be transferred. This also includes the integration of metadata for publications, e.g., through the DORIS from the Swedish National Data service (SND).
 
 ## Conclusion
+
 {{< ingress >}}
 Increased international cooperation has become one of the driving factors to influencing the success of our innovation ecosystem.
 {{< /ingress >}}

@@ -1,17 +1,23 @@
 <div class="webinar-side-bar">
   <div>
-    <img class="logo" src="/img/safespring_cloud.svg" alt="Safespring Logotyp" />
+    <img
+      class="logo"
+      src="/img/safespring_cloud.svg"
+      alt="Safespring Logotyp"
+    />
   </div>
   <div class="webinar-side-bar-text">
     <h3 class="">Fortsätt se nästa webbinarium</h3>
-    <p class="">Många bolag och myndigheter väljer att bygga sina säkra molntjänster på Safesprings plattform. Ta del av flera informativa webbinarium.</p>
-    <br>
+    <p class="">
+      Många bolag och myndigheter väljer att bygga sina säkra molntjänster på
+      Safesprings plattform. Ta del av flera informativa webbinarium.
+    </p>
+    <br />
   </div>
   <div class="webinar-side-bar-cards">
-{{ range where (where .Site.RegularPages "Params.series" "ne" "true") "Section" "eq" "webinar" }}
-    <div class="content-container">
-    {{ .Render "li-latest" }}
-    </div>
-{{ end }}
+    {{ range where (where .Site.RegularPages "Params.series" "ne" "true")
+    "Section" "eq" "webinar" }}
+    <div class="content-container">{{ .Render "li-latest" }}</div>
+    {{ end }}
   </div>
 </div>

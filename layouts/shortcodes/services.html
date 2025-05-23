@@ -1,25 +1,11 @@
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }}
-  {{ if eq $language "En"}}
-    {{ range (where $.Site.RegularPages "Section" "en").ByParam "cardorder" }}
-      {{ if isset .Params "cardorder" }}
-        {{ .Render "li-index"}}
-        {{ else }}
-      {{ end }}
-  {{ end }}
-  {{ else if eq $language "No" }}
-    {{ range (where $.Site.RegularPages "Section" "no").ByParam "cardorder" }}
-      {{ if isset .Params "cardorder" }}
-        {{ .Render "li-index"}}
-        {{ else }}
-      {{ end }}
-    {{ end }}
-  {{ else }}
-    {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }}
-      {{ if isset .Params "cardorder" }}
-        {{ .Render "li-index"}}
-        {{ else }}
-      {{ end }}
-    {{ end }}
+  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where
+  $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
+  "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else
+  if eq $language "No" }} {{ range (where $.Site.RegularPages "Section"
+  "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render
+  "li-index"}} {{ else }} {{ end }} {{ end }} {{ else }} {{ range (where
+  $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }} {{ if isset
+  .Params "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }}
   {{ end }}
 </div>
