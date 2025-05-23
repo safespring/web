@@ -182,9 +182,9 @@ when installing K8S.
 1. Go to the Terraform Openstack contrib directory of the kubespray repo and run
    terraform init and apply from there.
    `   $ cd ~/git/kubespray/contrib/terraform/openstack/
- $ terraform init
- $ terraform apply -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvars  -state=$HOME/kubespray-clusters/minimal-k8s/terraform.tfstate
- (...)`
+$ terraform init
+$ terraform apply -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvars  -state=$HOME/kubespray-clusters/minimal-k8s/terraform.tfstate
+(...)`
 1. Observe that we got the infrastructure as promised by the terraform code with for example:
    ```
    $ openstack server list |grep mini
@@ -198,9 +198,9 @@ when installing K8S.
 1. Copy the inventory script from the kubespray git repo to your cluster
    config/state directory and make sure it is executable.
    `bash
- $ cp ~/git/kubespray/contrib/terraform/terraform.py ~/kubespray-clusters/minimal-k8s
- $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
- `
+$ cp ~/git/kubespray/contrib/terraform/terraform.py ~/kubespray-clusters/minimal-k8s
+$ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
+`
 1. Go to the Kubespray repo, create a python virtualenv, activate it and install
    the Kubespray requirements.
    ```bash

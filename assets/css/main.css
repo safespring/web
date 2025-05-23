@@ -1546,14 +1546,12 @@ color:var(--unCheckedColor);
   min-height: 61%;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: [full-start] minmax(2em, 1fr) [main-start] minmax(
-      0,
-      39rem
-    ) [main-end] minmax(2em, 1fr) [full-end];
-  grid-template-rows: [full-start] minmax(4em, 1fr) [main-start] minmax(
-      30em,
-      auto
-    ) [main-end] minmax(4em, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(2em, 1fr) [main-start] minmax(0, 39rem)
+    [main-end] minmax(2em, 1fr) [full-end];
+  grid-template-rows:
+    [full-start] minmax(4em, 1fr) [main-start] minmax(30em, auto)
+    [main-end] minmax(4em, 1fr) [full-end];
   justify-items: center;
 }
 @media only screen and (max-width: 900px) {
@@ -2326,14 +2324,12 @@ margin:0;
   background-color: var(--text-color);
   display: -ms-grid;
   display: grid;
-  grid-template-columns: [full-start] minmax(2em, 1fr) [main-start] minmax(
-      auto,
-      65rem
-    ) [main-end] minmax(2em, 1fr) [full-end];
-  grid-template-rows: [full-start] minmax(4em, 1fr) [main-start] minmax(
-      20em,
-      auto
-    ) [main-end] minmax(4em, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(2em, 1fr) [main-start] minmax(auto, 65rem)
+    [main-end] minmax(2em, 1fr) [full-end];
+  grid-template-rows:
+    [full-start] minmax(4em, 1fr) [main-start] minmax(20em, auto)
+    [main-end] minmax(4em, 1fr) [full-end];
   justify-items: center;
 }
 
