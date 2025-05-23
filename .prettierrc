@@ -1,4 +1,12 @@
 {
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template"
+      }
+    }
+  ],
   "plugins": ["prettier-plugin-go-template"],
   "goTemplateBracketSpacing": true
 }
