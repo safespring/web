@@ -6,7 +6,7 @@
   <div class="heading-default-single">
     <img
       class="heading-default-single-img"
-      src='/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}'
+      src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}"
       fetchpriority="high"
       alt="Background Image"
       class="background-img"
@@ -17,25 +17,26 @@
   <div class="main-default-single">
     <div class="content-default-single">
       {{ if .Params.videoURL }}
-      <div class="webinarvideo">
-        <video
-          id="player"
-          class="webinar-videoplayer"
-          poster="{{ .Params.thumbnail }}"
-          controls
-          preload="none"
-        >
-          <!-- Removed src to prevent automatic loading -->
-          {{ range .Params.subtitles }}
-          <track
-            kind="subtitles"
-            src="{{ .src }}"
-            srclang="{{ .srclang }}"
-            label="{{ .label }}"
-          />
-          {{ end }} Your browser does not support the video tag.
-        </video>
-      </div>
+        <div class="webinarvideo">
+          <video
+            id="player"
+            class="webinar-videoplayer"
+            poster="{{ .Params.thumbnail }}"
+            controls
+            preload="none"
+          >
+            <!-- Removed src to prevent automatic loading -->
+            {{ range .Params.subtitles }}
+              <track
+                kind="subtitles"
+                src="{{ .src }}"
+                srclang="{{ .srclang }}"
+                label="{{ .label }}"
+              />
+            {{ end }}
+            Your browser does not support the video tag.
+          </video>
+        </div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           var video = document.getElementById("player");
@@ -217,36 +218,48 @@
           player.play();
         }
       </script>
-      {{ end }} {{ .Content }} {{ if and (isset .Params "episode")
-      (.Params.episode) }} {{ partial "demo-serie.html" . }} {{ end }}
+      {{ end }}
+      {{ .Content }}
+      {{ if and (isset .Params "episode")
+        (.Params.episode)
+      }}
+        {{ partial "demo-serie.html" . }}
+      {{ end }}
     </div>
     <div class="sidebar-default-single">
       {{ if .Params.chapters }}
-      <div class="sidebar-container">
-        <div class="sidebar-content">
-          <h3>
-            {{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else
-            }}Avsnitt{{ end }}
-          </h3>
-          <div class="webinarplaylist">
-            <ul>
-              {{ range $index, $element := .Params.chapters }}
-              <a
-                href="javascript:void(0);"
-                onclick="setCurrentTime({{ $element.time }})"
-              >
-                <li>
-                  <span>{{ $element.title }}</span>
-                  <span class="timer">{{ $element.timeFormatted }}</span>
-                </li>
-              </a>
+        <div class="sidebar-container">
+          <div class="sidebar-content">
+            <h3>
+              {{ if .Params.chaptersTitle }}
+                {{ .Params.chaptersTitle }}
+              {{ else }}
+                Avsnitt
               {{ end }}
-            </ul>
+            </h3>
+            <div class="webinarplaylist">
+              <ul>
+                {{ range $index, $element := .Params.chapters }}
+                  <a
+                    href="javascript:void(0);"
+                    onclick="setCurrentTime({{ $element.time }})"
+                  >
+                    <li>
+                      <span>{{ $element.title }}</span>
+                      <span class="timer">{{ $element.timeFormatted }}</span>
+                    </li>
+                  </a>
+                {{ end }}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      {{ end }} {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html"
-      . }}{{ end }}
+      {{ end }}
+      {{ if .Params.sidebar }}
+        {{ partial "sidebar-default-single.html"
+          .
+        }}
+      {{ end }}
     </div>
   </div>
   <!-- SIDEBAR -->

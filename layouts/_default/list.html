@@ -1,116 +1,167 @@
-{{ if eq $.Params.title "Aktuellt" }} {{ partial "aktuellt.html" . }} {{ else if
-eq $.Params.title "Kontakt oss på Safespring" }} {{ partial "no-kontakt.html" .
-}} {{ else if eq $.Params.title "Pris" }} {{ partial "pris.html" . }} {{ else if
-eq $.Params.title "Price" }} {{ partial "price.html" . }} {{ else if eq
-$.Params.title "Pris tack" }} {{ partial "pris-tack.html" . }} {{ else if eq
-$.Params.title "Pris-old" }} {{ partial "pris-old.html" . }} {{ else if eq
-$.Params.title "Dokumentation" }} {{ partial "dokumentation.html" . }} {{ else
-if eq $.Params.title "Tack för ditt meddelande" }} {{ partial "tack.html" . }}
-{{ else if eq $.Params.title "tack-event" }} {{ partial "tack-event.html" . }}
-{{ else if eq $.Params.title "opplev" }} {{ partial "opplev.html" . }} {{ else
-if eq $.Params.title "start" }} {{ partial "start.html" . }} {{ else if eq
-$.Params.title "Svenska molntjänster (Explorer)" }} {{ partial "explorer.html" .
-}} {{ else }} {{ partial "head.html" . }}
+{{ if eq $.Params.title "Aktuellt" }}
+  {{ partial "aktuellt.html" . }}
+{{ else if
+  eq $.Params.title "Kontakt oss på Safespring"
+}}
+  {{ partial "no-kontakt.html" . }}
+{{ else if eq $.Params.title "Pris" }}
+  {{ partial "pris.html" . }}
+{{ else if
+  eq $.Params.title "Price"
+}}
+  {{ partial "price.html" . }}
+{{ else if eq
+  $.Params.title "Pris tack"
+}}
+  {{ partial "pris-tack.html" . }}
+{{ else if eq
+  $.Params.title "Pris-old"
+}}
+  {{ partial "pris-old.html" . }}
+{{ else if eq
+  $.Params.title "Dokumentation"
+}}
+  {{ partial "dokumentation.html" . }}
+{{ else
+  if eq $.Params.title "Tack för ditt meddelande"
+}}
+  {{ partial "tack.html" . }}
+{{ else if eq $.Params.title "tack-event" }}
+  {{ partial "tack-event.html" . }}
+{{ else if eq $.Params.title "opplev" }}
+  {{ partial "opplev.html" . }}
+{{ else
+  if eq $.Params.title "start"
+}}
+  {{ partial "start.html" . }}
+{{ else if eq
+  $.Params.title "Svenska molntjänster (Explorer)"
+}}
+  {{ partial "explorer.html" . }}
+{{ else }}
+  {{ partial "head.html" . }}
 
-<!-- NAVBAR -->
-{{ partial "header.html" . }}
 
-<!-- HEADING -->
-<div class="heading-default-single">
-  <img
-    class="heading-default-single-img"
-    src='/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}'
-    fetchpriority="high"
-    alt="Background Image"
-    class="background-img"
-  />
-  {{ .Render "li3" }}
-</div>
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
 
-<!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }} {{ if
-.Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
-<main class="main-default-single">
-  <div
-    {{
-    if
-    .Params.fullwidth
-    }}class="content-default-single-full-width"
-    {{else}}class="content-default-single"
-    {{end}}
-  >
-    {{ .Content }} {{ if eq .Section "webinar" }}
-    <!-- Lista utvalda serier (huvudsidor för varje serie) -->
-    <div class="series-container">
-      {{ range where .Site.RegularPages "Section" "webinar" }} {{ if .IsSection
+
+  <!-- HEADING -->
+  <div class="heading-default-single">
+    <img
+      class="heading-default-single-img"
+      src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}"
+      fetchpriority="high"
+      alt="Background Image"
+      class="background-img"
+    />
+    {{ .Render "li3" }}
+  </div>
+
+  <!-- CONTENT -->
+  {{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
+  {{ if
+    .Params.logobannersaas
+  }}
+    {{ partial "LogoBanner-saas.html" . }}
+  {{ end }}
+  <main class="main-default-single">
+    <div
+      {{ if
+        .Params.fullwidth
       }}
-      <div class="flexcontainer">{{ .Render "series-summary" }}</div>
-      {{ end }} {{ end }}
-    </div>
-    <div class="flexcontainer">
-      {{ range .Pages }}
-      <div class="content-container">{{ .Render "li-latest"}}</div>
+        class="content-default-single-full-width"
+      {{ else }}
+        class="content-default-single"
+      {{ end }}
+    >
+      {{ .Content }}
+      {{ if eq .Section "webinar" }}
+        <!-- Lista utvalda serier (huvudsidor för varje serie) -->
+        <div class="series-container">
+          {{ range where .Site.RegularPages "Section" "webinar" }}
+            {{ if .IsSection }}
+              <div class="flexcontainer">{{ .Render "series-summary" }}</div>
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="flexcontainer">
+          {{ range .Pages }}
+            <div class="content-container">{{ .Render "li-latest" }}</div>
+          {{ end }}
+        </div>
+      {{ else }}
+        <!-- Den ursprungliga listan av sidor, förbehållen för andra typer av innehåll -->
+        {{ if not .Params.nolist }}
+          {{ if eq .Params.list "indexcard" }}
+            <div class="flexcontainer-three">
+              {{ range .Pages }}{{ .Render "li-index" }}{{ end }}
+              <!-- Stänger 'range .Pages' -->
+            </div>
+          {{ end }}
+          <!-- Stänger 'if eq .Params.list "indexcard"' -->
+
+          {{ if eq .Params.list "horisontal" }}
+            {{ range .Pages }}
+              {{ .Render
+                "horisontal-list"
+              }}
+            {{ end }}
+            <!-- Stänger 'range .Pages' -->
+          {{ else }}
+            <div class="flexcontainer">
+              {{ range .Pages }}
+                <div class="content-container">{{ .Render "li-latest" }}</div>
+              {{ end }}
+              <!-- Stänger 'range .Pages' -->
+            </div>
+          {{ end }}
+          <!-- Stänger 'if eq .Params.list "horisontal"' och dess 'else' -->
+        {{ end }}
       {{ end }}
     </div>
 
-    {{ else }}
-    <!-- Den ursprungliga listan av sidor, förbehållen för andra typer av innehåll -->
-    {{ if not .Params.nolist }} {{ if eq .Params.list "indexcard" }}
-    <div class="flexcontainer-three">
-      {{ range .Pages }} {{ .Render "li-index" }} {{ end }}
-      <!-- Stänger 'range .Pages' -->
-    </div>
-    {{ end }}
-    <!-- Stänger 'if eq .Params.list "indexcard"' -->
+    <!-- SIDEBAR -->
+    <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
+    <!-- Kontrollera om aktuell sektion är "webinar" -->
+    {{ $isWebinar := eq $.Section "webinar" }}
+    <!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
+    {{ $isNoSidebar := eq .Params.nosidebar "none" }}
+    <!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
+    {{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
+    <!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
+    {{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
 
-    {{ if eq .Params.list "horisontal" }} {{ range .Pages }} {{ .Render
-    "horisontal-list" }} {{ end }}
-    <!-- Stänger 'range .Pages' -->
-    {{ else }}
-    <div class="flexcontainer">
-      {{ range .Pages }}
-      <div class="content-container">{{ .Render "li-latest" }}</div>
+
+    <!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
+    {{ if $isSidebarInvisible }}
+      <div class="w350"></div>
+    {{ else if not $isNoSidebar }}
+      <!-- Om sidebar inte ska döljas helt och sidan inte är 'webinar', inkludera standard-sidebar -->
+      {{ if not $isWebinar }}
+        <div class="sidebar-default-single">
+          <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
+          {{ partial "sidebar-default-single.html" . }}
+        </div>
       {{ end }}
-      <!-- Stänger 'range .Pages' -->
-    </div>
+
     {{ end }}
-    <!-- Stänger 'if eq .Params.list "horisontal"' och dess 'else' -->
-    {{ end }} {{ end }}
-  </div>
 
-  <!-- SIDEBAR -->
-  <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
-  <!-- Kontrollera om aktuell sektion är "webinar" -->
-  {{ $isWebinar := eq $.Section "webinar" }}
-  <!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
-  {{ $isNoSidebar := eq .Params.nosidebar "none" }}
-  <!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
-  {{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
-  <!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
-  {{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
 
-  <!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
-  {{ if $isSidebarInvisible }}
-  <div class="w350"></div>
-  {{ else if not $isNoSidebar }}
-  <!-- Om sidebar inte ska döljas helt och sidan inte är 'webinar', inkludera standard-sidebar -->
-  {{ if not $isWebinar }}
-  <div class="sidebar-default-single">
-    <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
-    {{ partial "sidebar-default-single.html" . }}
-  </div>
-  {{ end }} {{ end }}
+    <!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
+    {{ if $isFullWidthWidgetSet }}
+      <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
+      {{ partial (printf "%s" .Params.fullwidthwidget) . }}
+    {{ end }}
+  </main>
 
-  <!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
-  {{ if $isFullWidthWidgetSet }}
-  <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
-  {{ partial (printf "%s" .Params.fullwidthwidget) . }} {{ end }}
-</main>
+  <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
+  {{ if $isWebinar }}
+    <!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
+    {{ partial "webinar-side-bar.html" . }}
+  {{ end }}
 
-<!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
-{{ if $isWebinar }}
-<!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
-{{ partial "webinar-side-bar.html" . }} {{ end }}
 
-<!-- FOOTER -->
-{{ partial "footer.html" . }} {{ end }}
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
+{{ end }}

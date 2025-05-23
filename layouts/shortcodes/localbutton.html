@@ -1,11 +1,14 @@
 <br />
 <a
-  href='{{ .Get "link" }}'
-  target='{{ .Get "target" | default "_self" }}'
+  href="{{ .Get "link" }}"
+  target="{{ .Get "target" | default "_self" }}"
   class="button"
 >
   {{ if .Get "icon" }}
-  <i class='fa-solid {{ .Get "icon" }}'></i>&nbsp;&nbsp;&nbsp; {{ end }} {{ .Get
-  "text" }}</a
+    <i class="fa-solid {{ .Get "icon" }}"></i>&nbsp;&nbsp;&nbsp;
+  {{ end }}
+  {{ .Get
+    "text"
+  }}</a
 >
 <br />

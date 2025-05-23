@@ -11,13 +11,19 @@
         class="megamenu-main-service-card-title"
         style="color: {{ .Params.cardcolor }}"
       >
-        {{ if .Params.cardtitle }}{{ .Params.cardtitle }}{{ else }}{{ .Title
-        }}{{ end }}
+        {{ if .Params.cardtitle }}
+          {{ .Params.cardtitle }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
       </span>
     </div>
     <p class="mb-0">
-      {{ if .Params.cardintro }}{{ .Params.cardintro }}{{ else }}{{
-      .Params.intro }}{{ end }}
+      {{ if .Params.cardintro }}
+        {{ .Params.cardintro }}
+      {{ else }}
+        {{ .Params.intro }}
+      {{ end }}
     </p>
   </div>
 </a>

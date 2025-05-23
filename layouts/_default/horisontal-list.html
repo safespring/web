@@ -3,7 +3,15 @@
 >
   <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
     <img
-      src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}{{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}{{ end }}
+      src="{{ if .Params.sidebarimage }}
+        /img/card/{{ .Params.sidebarimage }}
+      {{ else }}
+        {{ if .Params.background }}
+          /img/background/{{ .Params.background }}
+        {{ else }}
+          /img/background/safespring-blue-fade2.svg
+        {{ end }}
+      {{ end }}
   "
       alt="{{ .Params.title }}"
     />

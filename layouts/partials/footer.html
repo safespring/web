@@ -1,11 +1,15 @@
 <div class="safespring-footer-container">
   <div class="safespring-footer">
     <div class="safespring-footer-logo">
-      <a href='{{ with .GetPage "/" }}{{ .RelPermalink }}{{ end }}'
-        ><img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype"
+      <a href="{{ with .GetPage "/" }}{{ .RelPermalink }}{{ end }}"
+        ><img
+          src="/img/logos/safespring_logotype_blue_svg.svg"
+          alt="Safespring logotype"
       /></a>
       <p>{{ i18n "footer.tagline" }}</p>
-      <a class="button" href='{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}'
+      <a
+        class="button"
+        href="{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}"
         >{{ T "footer.contact" }}</a
       >
     </div>
@@ -13,32 +17,50 @@
       <ul>
         <li>{{ T "footer.platform" }}</li>
         <li>
-          <a href='{{ with .GetPage "services/compute" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/compute" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.platform_compute" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "services/storage" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/storage" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.platform_storage" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "services/containerplatform" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/containerplatform" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.platform_container" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "services/backup" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/backup" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.platform_backup" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "services/machine-learning" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/machine-learning" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.platform_ai" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "services/database-as-a-service" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/database-as-a-service" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.platform_database" }}</a
           >
         </li>
@@ -49,37 +71,54 @@
         <li>{{ T "footer.industries" }}</li>
         <li>
           <a
-            href='{{ with .GetPage "industries/research-and-education" }}{{ .RelPermalink }}{{ end }}'
+            href="{{ with .GetPage "industries/research-and-education" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.industries_education" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "industries/eosc" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "industries/eosc" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.industries_science" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "industries/government" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "industries/government" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.industries_government" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "saas" }}{{ .RelPermalink }}{{ end }}'
+          <a href="{{ with .GetPage "saas" }}{{ .RelPermalink }}{{ end }}"
             >{{ T "footer.industries_saas" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "saas/application-developers" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "saas/application-developers" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.industries_application_developers" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "services/compliant-kubernetes" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/compliant-kubernetes" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.industries_paas" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "saas/medtech" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "saas/medtech" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.industries_medtech" }}</a
           >
         </li>
@@ -89,32 +128,50 @@
       <ul>
         <li>{{ T "footer.knowledgehub" }}</li>
         <li>
-          <a href='{{ with .GetPage "services/case" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "services/case" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.knowledgehub_use_case" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub/solution-brief" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "knowledge-hub/solution-brief" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.knowledgehub_solution_brief" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub/webinar" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "knowledge-hub/webinar" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.knowledgehub_webcast" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "knowledge-hub" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.knowledgehub_blog" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub/whitepaper" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "knowledge-hub/whitepaper" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.knowledgehub_whitepaper" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "knowledge-hub" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.knowledgehub_tech_update" }}</a
           >
         </li>
@@ -124,37 +181,47 @@
       <ul>
         <li>{{ T "footer.safespring" }}</li>
         <li>
-          <a href='{{ with .GetPage "about" }}{{ .RelPermalink }}{{ end }}'
+          <a href="{{ with .GetPage "about" }}{{ .RelPermalink }}{{ end }}"
             >{{ T "footer.safespring_about" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "career" }}{{ .RelPermalink }}{{ end }}'
+          <a href="{{ with .GetPage "career" }}{{ .RelPermalink }}{{ end }}"
             >{{ T "footer.safespring_careers" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "data-centers" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "data-centers" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.safespring_datacenters" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "environment" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "environment" }}{{ .RelPermalink }}{{ end }}"
             >{{ T "footer.safespring_sustainability" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "our-partners" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "our-partners" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.safespring_partners" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "become-partner" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "become-partner" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.safespring_become_partner" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}'
+          <a href="{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}"
             >{{ T "footer.safespring_faq" }}</a
           >
         </li>
@@ -165,19 +232,27 @@
   <div class="safespring-footer-second">
     <div class="safespring-footer-social">
       <a href="https://www.linkedin.com/company/safespring/"
-        ><img src="/img/logos/social-media/safespring-linkedin.svg" alt="Safespring Linkedin"
+        ><img
+          src="/img/logos/social-media/safespring-linkedin.svg"
+          alt="Safespring Linkedin"
       /></a>
       <a href="https://www.x.com/safespring/"
         ><img src="/img/logos/social-media/safespring-x.svg" alt="Safespring X"
       /></a>
       <a href="https://github.com/safespring/"
-        ><img src="/img/logos/social-media/safespring-github.svg" alt="Safespring GitHub"
+        ><img
+          src="/img/logos/social-media/safespring-github.svg"
+          alt="Safespring GitHub"
       /></a>
       <a href="https://www.youtube.com/@safespring8922/"
-        ><img src="/img/logos/social-media/safespring-youtube.svg" alt="Safespring YouTube"
+        ><img
+          src="/img/logos/social-media/safespring-youtube.svg"
+          alt="Safespring YouTube"
       /></a>
       <a href="https://www.facebook.com/Safespring-147994442601302/"
-        ><img src="/img/logos/social-media/safespring-facebook.svg" alt="Safespring Facebook"
+        ><img
+          src="/img/logos/social-media/safespring-facebook.svg"
+          alt="Safespring Facebook"
       /></a>
     </div>
     <div class="safespring-footer-language">
@@ -190,18 +265,25 @@
 
   <div class="safespring-footer-third">
     <div class="safespring-footer-copyright">
-      <p>© {{ T "footer.safespring_legal_name" }} 2017-{{ now.Format "2006"}}</p>
+      <p>
+        © {{ T "footer.safespring_legal_name" }} 2017-{{ now.Format "2006" }}
+      </p>
     </div>
     <div class="safespring-footer-information-menu">
       <ul>
         <li>
           <a
-            href='{{ with .GetPage "documents/personal-data-processing" }}{{ .RelPermalink }}{{ end }}'
+            href="{{ with .GetPage "documents/personal-data-processing" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.personal_data_policy" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "documents/cookies" }}{{ .RelPermalink }}{{ end }}'
+          <a
+            href="{{ with .GetPage "documents/cookies" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.cookies" }}</a
           >
         </li>
@@ -215,18 +297,22 @@
         </li>
         <li>
           <a
-            href='{{ with .GetPage "documents/acceptable-use-policy" }}{{ .RelPermalink }}{{ end }}'
+            href="{{ with .GetPage "documents/acceptable-use-policy" }}
+              {{ .RelPermalink }}
+            {{ end }}"
             >{{ T "footer.acceptable_use_policy" }}</a
           >
         </li>
         <li>
           <a
-            href='{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}#{{ T "footer.company_information_hash" }}'
+            href="{{ with .GetPage "contact" }}
+              {{ .RelPermalink }}
+            {{ end }}#{{ T "footer.company_information_hash" }}"
             >{{ T "footer.company_information" }}</a
           >
         </li>
         <li>
-          <a href='{{ with .GetPage "fr2000" }}{{ .RelPermalink }}{{ end }}'
+          <a href="{{ with .GetPage "fr2000" }}{{ .RelPermalink }}{{ end }}"
             >{{ T "footer.fr2000" }}</a
           >
         </li>
@@ -236,151 +322,155 @@
 </div>
 
 {{ if (findRE "<pre" .Content 1) }}
-<script>
-  function addLanguageLabels() {
-    document.querySelectorAll('pre > code[class*="language-"]').forEach(function (codeBlock) {
-      var languageMatch = codeBlock.className.match(/language-(\w+)/);
-      if (languageMatch) {
-        var language = languageMatch[1];
-        var pre = codeBlock.parentNode;
-        if (language === "fallback") {
-          language = " ";
-        }
-        pre.setAttribute("data-lang", language);
-      }
-    });
-  }
-
-  addLanguageLabels();
-
-  document.querySelectorAll("pre").forEach((pre) => {
-    const button = document.createElement("button");
-    button.className = "copy-code-button";
-    button.innerHTML = "Copy code";
-
-    button.addEventListener("click", () => {
-      const code = pre.querySelector("code").textContent;
-      navigator.clipboard
-        .writeText(code)
-        .then(() => {
-          button.innerHTML = "Copied!";
-          setTimeout(() => {
-            button.innerHTML = "Copy code";
-          }, 4000);
-        })
-        .catch(() => {
-          button.innerHTML = "Error";
-        });
-
-      // Ta bort fokus från knappen efter 4 sekunder
-      setTimeout(() => {
-        button.blur();
-      }, 4000);
-    });
-
-    pre.style.position = "relative";
-    pre.style.display = "flex";
-    button.style.position = "absolute";
-    button.style.top = "0";
-    button.style.right = "0";
-
-    pre.appendChild(button);
-  });
-</script>
-{{ end }} {{ if (findRE "<table" .Content 1) }}
-<script>
-  // Hämta alla tabeller på sidan
-  const tables = document.querySelectorAll("table");
-
-  // Kör funktionen när sidan laddas
-  window.addEventListener("load", function () {
-    // Iterera över tabellerna
-    tables.forEach(function (table) {
-      // Iterera över tabellens rader
-      const rows = table.querySelectorAll("tr");
-      rows.forEach(function (row, rowIndex) {
-        // Iterera över radens celler
-        const cells = row.querySelectorAll("td");
-        cells.forEach(function (cell, cellIndex) {
-          // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
-          const headerCells = table.querySelectorAll("th");
-          if (headerCells && headerCells.length > cellIndex) {
-            const label = headerCells[cellIndex].textContent;
-            // Lägg till data-label attributet till cellen med rubriktexten som värde
-            cell.setAttribute("data-label", label);
+  <script>
+    function addLanguageLabels() {
+      document
+        .querySelectorAll('pre > code[class*="language-"]')
+        .forEach(function (codeBlock) {
+          var languageMatch = codeBlock.className.match(/language-(\w+)/);
+          if (languageMatch) {
+            var language = languageMatch[1];
+            var pre = codeBlock.parentNode;
+            if (language === "fallback") {
+              language = " ";
+            }
+            pre.setAttribute("data-lang", language);
           }
+        });
+    }
+
+    addLanguageLabels();
+
+    document.querySelectorAll("pre").forEach((pre) => {
+      const button = document.createElement("button");
+      button.className = "copy-code-button";
+      button.innerHTML = "Copy code";
+
+      button.addEventListener("click", () => {
+        const code = pre.querySelector("code").textContent;
+        navigator.clipboard
+          .writeText(code)
+          .then(() => {
+            button.innerHTML = "Copied!";
+            setTimeout(() => {
+              button.innerHTML = "Copy code";
+            }, 4000);
+          })
+          .catch(() => {
+            button.innerHTML = "Error";
+          });
+
+        // Ta bort fokus från knappen efter 4 sekunder
+        setTimeout(() => {
+          button.blur();
+        }, 4000);
+      });
+
+      pre.style.position = "relative";
+      pre.style.display = "flex";
+      button.style.position = "absolute";
+      button.style.top = "0";
+      button.style.right = "0";
+
+      pre.appendChild(button);
+    });
+  </script>
+{{ end }}
+{{ if (findRE "<table" .Content 1) }}
+  <script>
+    // Hämta alla tabeller på sidan
+    const tables = document.querySelectorAll("table");
+
+    // Kör funktionen när sidan laddas
+    window.addEventListener("load", function () {
+      // Iterera över tabellerna
+      tables.forEach(function (table) {
+        // Iterera över tabellens rader
+        const rows = table.querySelectorAll("tr");
+        rows.forEach(function (row, rowIndex) {
+          // Iterera över radens celler
+          const cells = row.querySelectorAll("td");
+          cells.forEach(function (cell, cellIndex) {
+            // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
+            const headerCells = table.querySelectorAll("th");
+            if (headerCells && headerCells.length > cellIndex) {
+              const label = headerCells[cellIndex].textContent;
+              // Lägg till data-label attributet till cellen med rubriktexten som värde
+              cell.setAttribute("data-label", label);
+            }
+          });
         });
       });
     });
-  });
-</script>
-{{ end }} {{ if (findRE "<div class=\"mermaid\"" .Content 1) }}
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const safespringTheme = {
-      theme: "base",
-      themeVariables: {
-        primaryColor: "#E8EFF3",
-        primaryTextColor: "#417DA5",
-        primaryBorderColor: "#FFFFFF00",
-        lineColor: "#417DA5",
-        secondaryColor: "#FAFEFE",
-        secondaryTextColor: "#FAFEFE",
-        fontFamily: "var(--mon-font)",
-        labelColor: "#FFFFFF",
-        actorBorder: "#FFFFFF",
-        actorBkg: "#E8EFF3",
-        actorTextColor: "#417DA5",
-        actorLineColor: "#417DA5",
-        signalColor: "#417DA5",
-        labelBoxBkgColor: "#E8EFF3",
-        labelBoxBorderColor: "#417DA5",
-        arrowheadColor: "#417DA5",
-        flowchartBackground: "#E8EFF3",
-        todayLineColor: "#417DA5",
-        classText: "#417DA5",
-        classBackground: "#E8EFF3",
-        classBorder: "#FFFFFF",
-        tableNodeTextColor: "#417DA5",
-        tableNodeBackground: "#E8EFF3",
-        tableNodeBorderColor: "#FFFFFF",
-        quadrantTitleFill: "var(--clear-blue-color)",
-        quadrantPointFill: "var(--link-color)",
-        quadrantPointTextFill: "var(--link-color)",
-        pieOuterStrokeWidth: "0px",
-        cScale0: "#E8EFF3",
-        cScaleLabel0: "#417DA5",
-        cScale1: "#E8EFF3",
-        cScaleLabel1: "#417DA5",
-        cScale2: "#E8EFF3",
-        cScaleLabel2: "#417DA5",
-        cScale3: "#E8EFF3",
-        cScaleLabel3: "#417DA5",
-        cScale4: "#E8EFF3",
-        cScaleLabel4: "#417DA5",
-        cScale5: "#E8EFF3",
-        cScaleLabel5: "#417DA5",
-        cScale6: "#E8EFF3",
-        cScaleLabel6: "#417DA5",
-        cScale7: "#E8EFF3",
-        cScaleLabel7: "#417DA5",
-        cScale8: "#E8EFF3",
-        cScaleLabel8: "#417DA5",
-        cScale9: "#E8EFF3",
-        cScaleLabel9: "#417DA5",
-        cScale10: "#E8EFF3",
-        cScaleLabel10: "#417DA5",
-        cScale11: "#E8EFF3",
-        cScaleLabel11: "#417DA5",
-        cScale12: "#E8EFF3",
-        cScaleLabel12: "#417DA5",
-      },
-    };
+  </script>
+{{ end }}
+{{ if (findRE "<div class=\"mermaid\"" .Content 1) }}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const safespringTheme = {
+        theme: "base",
+        themeVariables: {
+          primaryColor: "#E8EFF3",
+          primaryTextColor: "#417DA5",
+          primaryBorderColor: "#FFFFFF00",
+          lineColor: "#417DA5",
+          secondaryColor: "#FAFEFE",
+          secondaryTextColor: "#FAFEFE",
+          fontFamily: "var(--mon-font)",
+          labelColor: "#FFFFFF",
+          actorBorder: "#FFFFFF",
+          actorBkg: "#E8EFF3",
+          actorTextColor: "#417DA5",
+          actorLineColor: "#417DA5",
+          signalColor: "#417DA5",
+          labelBoxBkgColor: "#E8EFF3",
+          labelBoxBorderColor: "#417DA5",
+          arrowheadColor: "#417DA5",
+          flowchartBackground: "#E8EFF3",
+          todayLineColor: "#417DA5",
+          classText: "#417DA5",
+          classBackground: "#E8EFF3",
+          classBorder: "#FFFFFF",
+          tableNodeTextColor: "#417DA5",
+          tableNodeBackground: "#E8EFF3",
+          tableNodeBorderColor: "#FFFFFF",
+          quadrantTitleFill: "var(--clear-blue-color)",
+          quadrantPointFill: "var(--link-color)",
+          quadrantPointTextFill: "var(--link-color)",
+          pieOuterStrokeWidth: "0px",
+          cScale0: "#E8EFF3",
+          cScaleLabel0: "#417DA5",
+          cScale1: "#E8EFF3",
+          cScaleLabel1: "#417DA5",
+          cScale2: "#E8EFF3",
+          cScaleLabel2: "#417DA5",
+          cScale3: "#E8EFF3",
+          cScaleLabel3: "#417DA5",
+          cScale4: "#E8EFF3",
+          cScaleLabel4: "#417DA5",
+          cScale5: "#E8EFF3",
+          cScaleLabel5: "#417DA5",
+          cScale6: "#E8EFF3",
+          cScaleLabel6: "#417DA5",
+          cScale7: "#E8EFF3",
+          cScaleLabel7: "#417DA5",
+          cScale8: "#E8EFF3",
+          cScaleLabel8: "#417DA5",
+          cScale9: "#E8EFF3",
+          cScaleLabel9: "#417DA5",
+          cScale10: "#E8EFF3",
+          cScaleLabel10: "#417DA5",
+          cScale11: "#E8EFF3",
+          cScaleLabel11: "#417DA5",
+          cScale12: "#E8EFF3",
+          cScaleLabel12: "#417DA5",
+        },
+      };
 
-    mermaid.initialize(safespringTheme);
-  });
-</script>
+      mermaid.initialize(safespringTheme);
+    });
+  </script>
 {{ end }}
 <style type="text/css">
   #CookieConsent .cookie-popup {
@@ -442,7 +532,13 @@
 </style>
 <script
   src="https://cdn.cookietractor.com/cookietractor-declaration.js"
-  data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}'
+  data-lang="{{ if eq .Params.language "En" }}
+    en-GB
+  {{ else if eq .Params.language "No" }}
+    nb-NO
+  {{ else }}
+    sv-SE
+  {{ end }}"
   data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"
   defer
 ></script>

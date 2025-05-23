@@ -1,6 +1,12 @@
 <!doctype html>
 <html
-  lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.lanuage "No"}}no{{else}}sv{{end}}'
+  lang="{{ if eq .Params.language "En" }}
+    en
+  {{ else if eq .Params.lanuage "No" }}
+    no
+  {{ else }}
+    sv
+  {{ end }}"
 >
   <head>
     <!-- Site Title changes according to current page . -->
@@ -8,7 +14,13 @@
     <meta charset="utf-8" />
     <script
       src="https://cdn.cookietractor.com/cookietractor.js"
-      data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}'
+      data-lang="{{ if eq .Params.language "En" }}
+        en-GB
+      {{ else if eq .Params.language "No" }}
+        nb-NO
+      {{ else }}
+        sv-SE
+      {{ end }}"
       data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"
       defer
     ></script>
@@ -21,24 +33,25 @@
       importance="high"
     />
     {{ if .Params.background }}
-    <link
-      rel="preload"
-      as="image"
-      href="/img/background/{{ .Params.background }}"
-      fetchpriority="high"
-      type='image/{{ (index (split .Params.background ".") 1) }}'
-      importance="high"
-    />
+      <link
+        rel="preload"
+        as="image"
+        href="/img/background/{{ .Params.background }}"
+        fetchpriority="high"
+        type="image/{{ (index (split .Params.background ".") 1) }}"
+        importance="high"
+      />
     {{ else }}
-    <link
-      rel="preload"
-      as="image"
-      href="/img/background/safespring-blue-fade2.svg"
-      fetchpriority="high"
-      type="image/svg+xml"
-      importance="high"
-    />
+      <link
+        rel="preload"
+        as="image"
+        href="/img/background/safespring-blue-fade2.svg"
+        fetchpriority="high"
+        type="image/svg+xml"
+        importance="high"
+      />
     {{ end }}
+
 
     <style>
       @font-face {
@@ -742,16 +755,23 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <!--<meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'> -->
+    <!--<meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}
+      img/{{ index .Params "socialmedia" }}
+    {{ else }}
+      img/socialmedia/safespring-start.png
+    {{ end }}'> -->
     <meta
       property="og:image"
       content="https://www.safespring.com/img/socialmedia/safespring-start.png"
     />
     <meta
       property="og:description"
-      content='{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else
-    }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom
-    landets gränser. Läs mer!{{ end }}'
+      content="{{ if isset .Params "intro" }}
+        {{ index .Params "intro" }}
+      {{ else }}
+        Safespring är en publik molnplattform som är lokalt producerad. Med
+        trygga datacenter håller du din data inom landets gränser. Läs mer!
+      {{ end }}"
     />
     <meta property="og:site_name" content="Safespring" />
     <meta name="author" content="{{ .Params.author }}" />
@@ -759,27 +779,40 @@
     <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
     <meta
       name="description"
-      content='{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är
-    en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs
-    mer!{{ end }}'
+      content="{{ if isset .Params "intro" }}
+        {{ index .Params "intro" }}
+      {{ else }}
+        Safespring är en publik molnplattform som är lokalt producerad. Med
+        trygga datacenter håller du din data inom landets gränser. Läs mer!
+      {{ end }}"
     />
     <link rel="canonical" href="{{ .Permalink }}" />
-    {{- if .IsTranslated -}} {{ range .AllTranslations }} {{- if eq
-    .Language.Lang "en" -}}
-    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-    {{- end -}}
-    <link
-      rel="alternate"
-      hreflang="{{ .Language.Lang }}"
-      href="{{ .Permalink }}"
-    />
-    {{- end -}} {{ end }}
+    {{- if .IsTranslated -}}
+      {{ range .AllTranslations }}
+        {{- if eq
+          .Language.Lang "en"
+        -}}
+          <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+        {{- end -}}
+        <link
+          rel="alternate"
+          hreflang="{{ .Language.Lang }}"
+          href="{{ .Permalink }}"
+        />
+      {{- end -}}
+
+    {{ end }}
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{ if isset .Params "noindex" }}
-    <meta name="robots" content="noindex" />
-    {{ else }}{{ end }} {{ partial "favicons.html" . }}
+      <meta name="robots" content="noindex" />
+    {{ else }}
+    {{ end }}
+
+    {{ partial "favicons.html" . }}
+
 
     <!-- CSS -->
     <!-- Ladda kritisk CSS direkt -->
@@ -797,9 +830,10 @@
     />
 
     {{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice
-    (resources.Get "css/solid.min.css") (resources.Get
-    "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) |
-    minify | fingerprint }}
+      (resources.Get "css/solid.min.css") (resources.Get
+      "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) |
+      minify | fingerprint
+    }}
     <link
       rel="preload"
       href="{{ $faCSS.RelPermalink }}"

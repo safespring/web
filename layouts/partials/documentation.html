@@ -1,264 +1,278 @@
 <ul class="sidebar-documentation">
   {{ if eq .Params.documentation "Compute" }}
-  <li>
-    <a href="https://docs.safespring.com/new/overview" target="_blank"
-      >Overview</a
-    >
-  </li>
-  <li>
-    <a href="https://docs.safespring.com/new/getting-started" target="_blank"
-      >Getting Started</a
-    >
-  </li>
-  <li>
-    <a href="https://docs.safespring.com/new/vpn" target="_blank"
-      >VPN options</a
-    >
-  </li>
-  <li>
-    <a href="https://docs.safespring.com/new/api" target="_blank">API Access</a>
-  </li>
-  <li>
-    <a href="https://docs.safespring.com/new/flavors" target="_blank"
-      >Flavors</a
-    >
-  </li>
-  <li>
-    <a href="https://docs.safespring.com/new/app-creds" target="_blank"
-      >Application credentials</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://docs.safespring.com/new/persistent-ip-address"
-      target="_blank"
-      >Persistent IP address</a
-    >
-  </li>
-  <li>
-    <a href="https://docs.safespring.com/new/elastic-ip" target="_blank"
-      >Elastic IP address</a
-    >
-  </li>
-  <li>
-    HOWTOs:
-    <ul>
-      <li>
-        <a href="https://docs.safespring.com/compute/connecting" target="_blank"
-          >Connecting to Safespring</a
-        >
-      </li>
-      <li>
-        <a href="https://docs.safespring.com/compute/windows" target="_blank"
-          >Windows images</a
-        >
-      </li>
-      <li>
-        <a href="https://docs.safespring.com/new/s3-credentials" target="_blank"
-          >S3 credentials (sto3)</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://docs.safespring.com/compute/vmware-import"
-          target="_blank"
-          >VMware import</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://docs.safespring.com/compute/migrate-between-projects"
-          target="_blank"
-          >Migrate instance to another project</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://docs.safespring.com/compute/snapshotting-instances"
-          target="_blank"
-          >Taking snapshots of instances</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://docs.safespring.com/new/migrate-from-legacy"
-          target="_blank"
-          >Migrate instances from legacy</a
-        >
-      </li>
-    </ul>
-  </li>
+    <li>
+      <a href="https://docs.safespring.com/new/overview" target="_blank"
+        >Overview</a
+      >
+    </li>
+    <li>
+      <a href="https://docs.safespring.com/new/getting-started" target="_blank"
+        >Getting Started</a
+      >
+    </li>
+    <li>
+      <a href="https://docs.safespring.com/new/vpn" target="_blank"
+        >VPN options</a
+      >
+    </li>
+    <li>
+      <a href="https://docs.safespring.com/new/api" target="_blank"
+        >API Access</a
+      >
+    </li>
+    <li>
+      <a href="https://docs.safespring.com/new/flavors" target="_blank"
+        >Flavors</a
+      >
+    </li>
+    <li>
+      <a href="https://docs.safespring.com/new/app-creds" target="_blank"
+        >Application credentials</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://docs.safespring.com/new/persistent-ip-address"
+        target="_blank"
+        >Persistent IP address</a
+      >
+    </li>
+    <li>
+      <a href="https://docs.safespring.com/new/elastic-ip" target="_blank"
+        >Elastic IP address</a
+      >
+    </li>
+    <li>
+      HOWTOs:
+      <ul>
+        <li>
+          <a
+            href="https://docs.safespring.com/compute/connecting"
+            target="_blank"
+            >Connecting to Safespring</a
+          >
+        </li>
+        <li>
+          <a href="https://docs.safespring.com/compute/windows" target="_blank"
+            >Windows images</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.safespring.com/new/s3-credentials"
+            target="_blank"
+            >S3 credentials (sto3)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.safespring.com/compute/vmware-import"
+            target="_blank"
+            >VMware import</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.safespring.com/compute/migrate-between-projects"
+            target="_blank"
+            >Migrate instance to another project</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.safespring.com/compute/snapshotting-instances"
+            target="_blank"
+            >Taking snapshots of instances</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.safespring.com/new/migrate-from-legacy"
+            target="_blank"
+            >Migrate instances from legacy</a
+          >
+        </li>
+      </ul>
+    </li>
+  {{ end }}
 
-  {{ end }} {{ if eq .Params.documentation "Storage" }}
+  {{ if eq .Params.documentation "Storage" }}
 
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/generalinfo"
-      >General S3 Info</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/s3cmd"
-      >Example s3cmd config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/s3-advanced"
-      >S3 Advanced Features</a
-    >
-  </li>
-  <li>
-    <a
-      target="_blank"
-      href="https://docs.safespring.com/storage/usage-statistics"
-      >S3 Usage Report</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/s3fs"
-      >Example s3fs config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/cloudberry"
-      >Example CloudBerry config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/cyberduck"
-      >Example CyberDuck config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/duck-cli"
-      >Example Duck CLI config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/minio-client"
-      >Example Minio Client config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/aws-cli"
-      >Example AWS-CLI config</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/nextcloud-s3"
-      >Example NextCloud S3 integration</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/tips-n-tricks"
-      >Tips and Tricks</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/backup-exec"
-      >Backup Exec and Safespring Storage</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/other-backends"
-      >Other Backends</a
-    >
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/storage/object-locking"
-      >Object Locking</a
-    >
-  </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/generalinfo"
+        >General S3 Info</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/s3cmd"
+        >Example s3cmd config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/s3-advanced"
+        >S3 Advanced Features</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://docs.safespring.com/storage/usage-statistics"
+        >S3 Usage Report</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/s3fs"
+        >Example s3fs config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/cloudberry"
+        >Example CloudBerry config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/cyberduck"
+        >Example CyberDuck config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/duck-cli"
+        >Example Duck CLI config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/minio-client"
+        >Example Minio Client config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/aws-cli"
+        >Example AWS-CLI config</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/nextcloud-s3"
+        >Example NextCloud S3 integration</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://docs.safespring.com/storage/tips-n-tricks"
+        >Tips and Tricks</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/storage/backup-exec"
+        >Backup Exec and Safespring Storage</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://docs.safespring.com/storage/other-backends"
+        >Other Backends</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://docs.safespring.com/storage/object-locking"
+        >Object Locking</a
+      >
+    </li>
+  {{ end }}
 
-  {{ end }} {{ if eq .Params.documentation "Backup" }}
+  {{ if eq .Params.documentation "Backup" }}
 
-  <li>
-    <a
-      target="_blank"
-      href="https://docs.safespring.com/backup/quickstart-guide"
-      >Quick-Start Guide</a
-    >
-  </li>
-  <li>
-    Installation:
-    <ul>
-      <li>
-        <a
-          target="_blank"
-          href="https://docs.safespring.com/backup/install/overview"
-          >Overview</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://docs.safespring.com/backup/install/linux"
-          >Linux</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://docs.safespring.com/backup/install/windows"
-          >Windows</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://docs.safespring.com/backup/install/apple-macos"
-          >macOS</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://docs.safespring.com/backup/install/freebsd-other"
-          >freeBSD</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a target="_blank" href="https://docs.safespring.com/backup/faq">FAQ</a>
-  </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://docs.safespring.com/backup/quickstart-guide"
+        >Quick-Start Guide</a
+      >
+    </li>
+    <li>
+      Installation:
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://docs.safespring.com/backup/install/overview"
+            >Overview</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://docs.safespring.com/backup/install/linux"
+            >Linux</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://docs.safespring.com/backup/install/windows"
+            >Windows</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://docs.safespring.com/backup/install/apple-macos"
+            >macOS</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://docs.safespring.com/backup/install/freebsd-other"
+            >freeBSD</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a target="_blank" href="https://docs.safespring.com/backup/faq">FAQ</a>
+    </li>
+  {{ end }}
 
-  {{ end }} {{ if eq .Params.documentation "Samurai" }}
+  {{ if eq .Params.documentation "Samurai" }}
 
-  <li>
-    <a
-      target="_blank"
-      href="https://support.samurai.security.ntt/hc/en-001/articles/5261322562321-Managed-Detection-Response-MDR-Service-Description"
-      >Service Description</a
-    >
-  </li>
-  <li>
-    <a
-      target="_blank"
-      href="https://support.samurai.security.ntt/hc/en-001/articles/5258182875409-Onboarding-Managed-Detection-and-Response-MDR-"
-      >Onboarding (MDR)</a
-    >
-  </li>
-  <li>
-    <a
-      target="_blank"
-      href="https://support.samurai.security.ntt/hc/en-001/articles/6325124376593-MDR-Threat-Reviews"
-      >MDR Threat Reviews</a
-    >
-  </li>
-  <li>
-    <a
-      target="_blank"
-      href="https://support.samurai.security.ntt/hc/en-001/articles/6842444982673-MDR-Incident-Management"
-      >MDR Incident Management</a
-    >
-  </li>
-  <li>
-    <a
-      target="_blank"
-      href="https://support.samurai.security.ntt/hc/en-001/articles/6897625525905-MDR-Security-Incident-Report-explained"
-      >MDR Security Incident Report explained</a
-    >
-  </li>
-
+    <li>
+      <a
+        target="_blank"
+        href="https://support.samurai.security.ntt/hc/en-001/articles/5261322562321-Managed-Detection-Response-MDR-Service-Description"
+        >Service Description</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://support.samurai.security.ntt/hc/en-001/articles/5258182875409-Onboarding-Managed-Detection-and-Response-MDR-"
+        >Onboarding (MDR)</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://support.samurai.security.ntt/hc/en-001/articles/6325124376593-MDR-Threat-Reviews"
+        >MDR Threat Reviews</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://support.samurai.security.ntt/hc/en-001/articles/6842444982673-MDR-Incident-Management"
+        >MDR Incident Management</a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://support.samurai.security.ntt/hc/en-001/articles/6897625525905-MDR-Security-Incident-Report-explained"
+        >MDR Security Incident Report explained</a
+      >
+    </li>
   {{ end }}
 </ul>

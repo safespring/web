@@ -13,11 +13,17 @@
         <div>
           <h2>{{ .Title }}</h2>
           <span class="text-button">
-            Till {{ with .Parent }} {{ if .Params.episodetype }} {{
-            .Params.episodetype }} {{ else }} avsnitt {{ end }} {{ else }}
-            avsnitt {{ end }} &nbsp;&nbsp;&nbsp;<i
-              class="fas fa-arrow-right"
-            ></i>
+            Till
+            {{ with .Parent }}
+              {{ if .Params.episodetype }}
+                {{ .Params.episodetype }}
+              {{ else }}
+                avsnitt
+              {{ end }}
+            {{ else }}
+              avsnitt
+            {{ end }}
+            &nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
           </span>
         </div>
       </div>

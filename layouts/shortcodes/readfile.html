@@ -2,8 +2,14 @@
   <summary id="summary">{{ .Get 0 }}</summary>
   <!--<button id="print-button">Skriv ut</button>-->
   <div id="content-to-print">
-    {{ with .Get 1 }} {{ $path := . }} {{ with (readFile $path) }} {{ . |
-    markdownify | safeHTML}} {{ end }} {{ end }}
+    {{ with .Get 1 }}
+      {{ $path := . }}
+      {{ with (readFile $path) }}
+        {{ . |
+          markdownify | safeHTML
+        }}
+      {{ end }}
+    {{ end }}
   </div>
 </details>
 <!--<script type="text/javascript">

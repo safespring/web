@@ -1,92 +1,127 @@
 {{ if eq $.Params.title "Aktuellt" }}
-{{ partial "aktuellt.html" . }}
+  {{ partial "aktuellt.html" . }}
 {{ else if eq $.Params.title "Pris tack" }}
-{{ partial "pris-tack.html" . }}
+  {{ partial "pris-tack.html" . }}
 {{ else if eq $.Params.title "Pris-old" }}
-{{ partial "pris-old.html" . }}
+  {{ partial "pris-old.html" . }}
 {{ else if eq $.Params.title "tack-event" }}
-{{ partial "tack-event.html" . }}
+  {{ partial "tack-event.html" . }}
 {{ else if eq $.Params.title "opplev" }}
-{{ partial "opplev.html" . }}
+  {{ partial "opplev.html" . }}
 {{ else if eq $.Params.title "start" }}
-{{ partial "start.html" . }}
+  {{ partial "start.html" . }}
 {{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
-{{ partial "explorer.html" . }}
+  {{ partial "explorer.html" . }}
 {{ else }}
-{{ partial "head.html" . }}
-<!-- NAVBAR -->
-{{ partial "header.html" . }}
-<!-- HEADING -->
+  {{ partial "head.html" . }}
+  <!-- NAVBAR -->
+  {{ partial "header.html" . }}
+  <!-- HEADING -->
 
-<!--
-<div class="heading-default-single" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}'); background-size: cover; background-position: center;">
+  <!--
+<div class="heading-default-single" style="background: url('{{ if.Params.eventbild }}
+    /img/blogg/background/{{ .Params.eventbild }}
+  {{ else if .Params.background }}
+    /img/background/{{ .Params.background }}
+  {{ else }}
+    /img/background/safespring-blue-fade2.svg
+  {{ end }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>-->
 
-<div class="heading-default-single" >
-    <img class="heading-default-single-img" src='/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}' fetchpriority="high" alt="Background Image" class="background-img">
+  <div class="heading-default-single">
+    <img
+      class="heading-default-single-img"
+      src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}"
+      fetchpriority="high"
+      alt="Background Image"
+      class="background-img"
+    />
     {{ .Render "li3" }}
-</div>
+  </div>
 
-<!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
-{{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
-<main class="main-default-single">
-  <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
-    {{ $pageParams := .Params }}
-    {{ range where .Site.Data.authors "name" $pageParams.author }}
-    <div itemscope itemtype="http://schema.org/Person" class="author-container">
-      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})">
-        <img itemprop="image" src="/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }}" alt="{{ .name }}" style="display:none;">
-      </div>
-      <div class="author-info">
-        <p class="author-name" itemprop="name">{{ .name }}</p>
-        <p class="author-title" itemprop="jobTitle">{{ .title }}</p>
-      </div>
+  <!-- CONTENT -->
+  {{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
+  {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
+  <main class="main-default-single">
+    <div
+      {{ if .Params.fullwidth }}
+        class='main-default-single-full-width'
+      {{ else }}
+        class='content-default-single'
+      {{ end }}
+    >
+      {{ $pageParams := .Params }}
+      {{ range where .Site.Data.authors "name" $pageParams.author }}
+        <div
+          itemscope
+          itemtype="http://schema.org/Person"
+          class="author-container"
+        >
+          <div
+            class="author-image"
+            style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})"
+          >
+            <img
+              itemprop="image"
+              src="/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }}"
+              alt="{{ .name }}"
+              style="display:none;"
+            />
+          </div>
+          <div class="author-info">
+            <p class="author-name" itemprop="name">{{ .name }}</p>
+            <p class="author-title" itemprop="jobTitle">{{ .title }}</p>
+          </div>
+        </div>
+      {{ end }}
+      {{ .Content }}
+      {{ if eq .Params.form "yes" }}
+        {{ partial "form.html" . }}
+      {{ else }}
+      {{ end }}
+      {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
     </div>
+    <!-- SIDEBAR -->
+    <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
+    <!-- Kontrollera om aktuell sektion är "webinar" -->
+    {{ $isWebinar := eq $.Section "webinar" }}
+    <!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
+    {{ $isNoSidebar := eq .Params.nosidebar "none" }}
+    <!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
+    {{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
+    <!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
+    {{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
 
+
+    <!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
+    {{ if $isSidebarInvisible }}
+      <div class="w350"></div>
+    {{ else if not $isNoSidebar }}
+      <!-- Om sidebar inte ska döljas helt och sidan inte är 'webinar', inkludera standard-sidebar -->
+      {{ if not $isWebinar }}
+        <div class="sidebar-default-single">
+          <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
+          {{ partial "sidebar-default-single.html" . }}
+        </div>
+      {{ end }}
     {{ end }}
-    {{ .Content }}
-    {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
-    {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
-  </div>
-  <!-- SIDEBAR -->
-  <!-- Definiera variabler för att förenkla och klargöra villkorskontroller -->
-  <!-- Kontrollera om aktuell sektion är "webinar" -->
-  {{ $isWebinar := eq $.Section "webinar" }}
-  <!-- Kontrollera om 'nosidebar' parametern är satt till "none" -->
-  {{ $isNoSidebar := eq .Params.nosidebar "none" }}
-  <!-- Kontrollera om 'nosidebar' parametern är satt till "invisible" -->
-  {{ $isSidebarInvisible := eq .Params.nosidebar "invisible" }}
-  <!-- Kontrollera om en 'fullwidthwidget' är definierad i parametrarna -->
-  {{ $isFullWidthWidgetSet := isset .Params "fullwidthwidget" }}
 
-  <!-- Om sidebar ska vara osynlig, visa en tom div-platshållare -->
-  {{ if $isSidebarInvisible }}
-  <div class="w350"></div>
-  {{ else if not $isNoSidebar }}
-  <!-- Om sidebar inte ska döljas helt och sidan inte är 'webinar', inkludera standard-sidebar -->
-  {{ if not $isWebinar }}
-  <div class="sidebar-default-single">
-    <!-- Använd partial för att inkludera innehållet i standard-sidebar -->
-    {{ partial "sidebar-default-single.html" . }}
-  </div>
-  {{ end }}
+
+    <!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
+    {{ if $isFullWidthWidgetSet }}
+      <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
+      {{ partial (printf "%s" .Params.fullwidthwidget) . }}
+    {{ end }}
+  </main>
+
+  <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
+  {{ if $isWebinar }}
+    <!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
+    {{ partial "webinar-side-bar.html" . }}
   {{ end }}
 
-  <!-- Om en fullwidthwidget är satt, inkludera den angivna widgeten via partial -->
-  {{ if $isFullWidthWidgetSet }}
-  <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
-  {{ partial (printf "%s" .Params.fullwidthwidget) . }}
-  {{ end }}
-</main>
 
-<!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
-{{ if $isWebinar }}
-<!-- Använd partial för att inkludera den specifika sidebaren för webinar -->
-{{ partial "webinar-side-bar.html" . }}
-{{ end }}
-
-<!-- FOOTER -->
-{{ partial "footer.html" . }}
+  <!-- FOOTER -->
+  {{ partial "footer.html" . }}
 {{ end }}

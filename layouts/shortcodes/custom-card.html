@@ -11,10 +11,14 @@
   >
     <h3>{{ .Get "cardtitle" }}</h3>
     {{ if isset .Params "text" }}
-    <p>{{ .Get "text" }}</p>
-    {{ else }}{{ .Inner | safeHTML }}{{ end }} {{ if isset .Params "link" }}<br />
-    <br />
-    <a class="button" href="{{ .Get `link` }}">{{ .Get "linktext" }}</a>
+      <p>{{ .Get "text" }}</p>
+    {{ else }}
+      {{ .Inner | safeHTML }}
+    {{ end }}
+    {{ if isset .Params "link" }}
+      <br />
+      <br />
+      <a class="button" href="{{ .Get `link` }}">{{ .Get "linktext" }}</a>
     {{ end }}
   </div>
 </div>

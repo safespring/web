@@ -78,15 +78,16 @@
   />
   <button id="toggleButton">Show all</button>
   <div id="universityContainer">
-    {{ $order := .Get "order" | default "Sweden,Norway,Denmark" }} {{
-    $orderedCountries := split $order "," }} {{ range $orderedCountries }} {{
-    $country := . }}
-    <ul id="dataList-{{ $country | urlize }}" class="universitylist">
-      <p>Eligible organisations in {{ $country }}:</p>
-      {{ range index site.Data.universities $country }}
-      <li class="country-{{ $country | urlize }}">{{ . }}</li>
-      {{ end }}
-    </ul>
+    {{ $order := .Get "order" | default "Sweden,Norway,Denmark" }}
+    {{ $orderedCountries := split $order "," }}
+    {{ range $orderedCountries }}
+      {{ $country := . }}
+      <ul id="dataList-{{ $country | urlize }}" class="universitylist">
+        <p>Eligible organisations in {{ $country }}:</p>
+        {{ range index site.Data.universities $country }}
+          <li class="country-{{ $country | urlize }}">{{ . }}</li>
+        {{ end }}
+      </ul>
     {{ end }}
   </div>
   <div id="noMatchMessage">
