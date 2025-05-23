@@ -1,14 +1,30 @@
-<div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2">
+<div
+  class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
+>
   <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
-    <img src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}{{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}{{ end }}
-  " alt="{{ .Params.title }}">
+    <img
+      src="{{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}{{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}{{ end }}
+  "
+      alt="{{ .Params.title }}"
+    />
   </div>
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
-  	      <p style="margin: 25px 0 0 0; font-weight: 599; font-size: 13px; text-transform: uppercase; color: var(--middle-blue-color);">{{ .Params.service }}</p>
+  <div
+    class="safespring-horisontal-card-col safespring-horisontal-card-content"
+  >
+    <p
+      style="
+        margin: 25px 0 0 0;
+        font-weight: 599;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: var(--middle-blue-color);
+      "
+    >
+      {{ .Params.service }}
+    </p>
     <h3>{{ .Title }}</h3>
-      <p>{{ .Params.intro }}
-      </p><br><br>
-        <a class="button" href="{{ .RelPermalink }}">Read more</a>
-      </a>
-    </div>
+    <p>{{ .Params.intro }}</p>
+    <br /><br />
+    <a class="button" href="{{ .RelPermalink }}">Read more</a>
   </div>
+</div>
