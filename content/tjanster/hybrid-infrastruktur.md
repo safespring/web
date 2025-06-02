@@ -7,6 +7,10 @@ intro: "Safesprings lösningar inom hybrid infrastruktur gör det möjligt för 
 background: ""
 socialmedia: "safespring-hybrid-cloud.jpg"
 form: "yes"
+sidebarimage: "safespring-petter.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "073-533 65 21"
+sidebarmail: "hello@safespring.com"
 aliases:
     - /hybrid-cloud/
     - /tjanster/hybrid-cloud/

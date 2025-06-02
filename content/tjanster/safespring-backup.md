@@ -17,6 +17,10 @@ sidebarlinkurl: "/demo/backup/"
 sidebarlinkname2: "Pris för Backup"
 sidebarlinkurl2: "/pris/#safespring-backup"
 socialmedia: "safespring-backup.jpg"
+sidebarimage: "safespring-petter.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "073-533 65 21"
+sidebarmail: "hello@safespring.com"
 aliases:
     - /backup/
     - /safespring-backup/

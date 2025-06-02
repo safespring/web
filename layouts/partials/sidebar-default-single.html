@@ -49,12 +49,13 @@
         <a style="margin: 50px 0;" class="" href="mailto:{{ .Params.sidebarmail }}">{{ .Params.sidebarmail }}</a>
         {{ end }}
       </div>
+
       {{ $currentPage := . }}
       <div class="sidebar-services">
         <span class="sidebar-services-h4">
-          {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
-          {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
-          {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
+          {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med: {{ else }} Utforska{{ end }}
+          {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med: {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
+          {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with: {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
           {{else}}{{ if eq .Params.language "En"}}Optimize your service with:{{else if eq .Params.lanuage "No"}}Lær mer om{{else}}Utforska{{end}}
           {{ end }}
         </span>
@@ -114,7 +115,7 @@
       <div>
         <p class="card-section">{{ .Params.documentation }}</p>
         <span class="card-heading">
-          {{ if eq .Params.language "No" }}Boka demo
+          {{ if eq .Params.language "No" }}Boka Demo
           {{ else if eq .Params.language "En" }}Schedule demo
           {{ else }}Boka demo
           {{ end }}
@@ -126,11 +127,11 @@
           {{ end }}
         </p>
         {{ if eq .Params.language "No" }}
-        <a class="button" href="/demo/compute">Se demo</a>
+        <a class="button" href="/demo/compute">Boka demo</a>
         {{ else if eq .Params.language "En" }}
-        <a class="button" href="/demo/compute">Watch demo</a>
+        <a class="button" href="/demo/compute">Schedule demo</a>
         {{ else }}
-        <a class="button" href="/demo/compute">Se demo</a>
+        <a class="button" href="/demo/compute">Boka demo</a>
         {{ end }}
       </div>
     </div>
