@@ -2,7 +2,7 @@
 title: "Federerad AI med FEDn på Safespring"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
-language: "Sv"
+language: "Se"
 cardtitle: "AI & ML"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"

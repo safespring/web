@@ -19,6 +19,10 @@ sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
+sidebarimage: "safespring-petter.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "073-533 65 21"
+sidebarmail: "hello@safespring.com"
 megamenu: "yes"
 aliases:
     - /storage/

@@ -949,11 +949,13 @@ color:var(--unCheckedColor);
 }
 
 .sidebar-services {
+	border-top: solid 1px var(--cloud-blue-color);
 	margin-top: 30px;
+	padding-top: 30px;
 }
 
 .sidebar-services ul {
-	padding-left:0;
+	padding-left:0px;
 }
 
 .sidebar-services ul li::before {
@@ -962,7 +964,7 @@ color:var(--unCheckedColor);
 
 .sidebar-services-h4 {
 	margin:30px 0 10px 0;
-	font:var(--hind-light-weight) 16px var(--hind-font);
+	font:var(--hind-light-weight) 18px var(--hind-font);
 	color:var(--main-color);
 	line-height:21px;
 }
