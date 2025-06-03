@@ -1,3 +1,4 @@
+
 ---
 Title: "Senior Account Manager"
 intro: "Build trust. Grow business. Help Nordic companies break free from hyperscaler dependency!"
