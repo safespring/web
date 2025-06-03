@@ -1,3 +1,10 @@
+[topnav]
+platform = "Platformen"
+price = "Pris"
+news = "Nyheder & Videnshub"
+contact = "Kontakt"
+built_on_safespring = "Bygget på Safespring"
+
 [landing]
 scaleout_description = "Scaleout bygger en AI-platform på Safesprings infrastruktur. Interessen og efterspørgslen efter maskinlæring og AI er eksploderet på det seneste. Samtidig pågår en diskussion om indsigt i hvilke data modellerne er trænet på, og hvad man afgiver, når man bruger tjenesterne."
 scaleout_to_use_case = "Til use case"

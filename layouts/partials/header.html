@@ -2,13 +2,7 @@
   <div class="site-header-wrapper">
     <div class="site-header-logo">
       <a
-        href="{{ if eq .Params.language "En" }}
-          /en/
-        {{ else if eq .Params.language "No" }}
-          /no/
-        {{ else }}
-          /
-        {{ end }}"
+        href="/"
       >
         <img
           src="/img/logos/safespring_logotype_blue_svg.svg"
@@ -25,87 +19,33 @@
         <span></span>
         <span></span>
         <ul id="menu" class="site-header-links">
-          {{ $language := .Params.language }}
           <li>
             <a
               id="main-menu-link-platform"
               style="padding-bottom: 30px; margin-bottom: -30px"
-              href="/{{ if eq $language "En" }}
-                en/services
-              {{ else if eq $language "No" }}
-                no/tjenester
-              {{ else }}
-                tjanster
-              {{ end }}/"
-              >{{ if eq $language "En" }}
-                Platform
-              {{ else if eq $language "No" }}
-                Plattformen
-              {{ else }}
-                Plattformen
-              {{ end }}</a
+              href="{{ with .GetPage "services" }}{{ .RelPermalink }}{{ end }}"
+              >{{ T "topnav.platform" }}</a
             >
           </li>
           <li>
             <a
               id="main-menu-link-1"
-              href="/{{ if eq $language "En" }}
-                en/price
-              {{ else if eq $language "No" }}
-                no/pris
-              {{ else }}
-                pris
-              {{ end }}"
-              >{{ if eq $language "En" }}
-                Price
-              {{ else if eq $language "No" }}
-                Pris
-              {{ else }}
-                Pris
-              {{ end }}</a
+              href="{{ with .GetPage "price" }}{{ .RelPermalink }}{{ end }}"
+              >{{ T "topnav.price" }}</a
             >
           </li>
           <li>
-            <a id="main-menu-link-2" href="/latest/"
-              >{{ if eq $language "En" }}
-                News
-              {{ else if eq $language "No" }}
-                Aktuelt
-              {{ else }}
-                Aktuellt
-              {{ end }}</a
+            <a id="main-menu-link-2" href="{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}"
+              >{{ T "topnav.news" }}</a
             >
           </li>
           <li>
             <a
               id="main-menu-link-3"
-              href="/{{ if eq $language "En" }}
-                en/contact
-              {{ else if eq $language "No" }}
-                no/kontakt
-              {{ else }}
-                kontakt
-              {{ end }}/"
-              >{{ if eq $language "En" }}
-                Contact
-              {{ else if eq $language "No" }}
-                Kontakt
-              {{ else }}
-                Kontakt
-              {{ end }}</a
+              href="{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}"
+              >{{ T "topnav.contact" }}</a
             >
           </li>
-          <!--<li><a id="main-menu-link-4" href='{{ if eq $language "No" }}
-            tel:+4735688870
-          {{ else }}
-            tel:+46855107370
-          {{ end }}' class="site-header-button" onclick="_paq.push(['trackEvent', 'Knapptryck', 'Telefonknapp']);">{{ if eq $language "No" }}
-            35 68 88 70
-          {{ else if eq $language "En" }}
-            +46 855 107 370
-          {{ else }}
-            08-55 10 73 70
-          {{ end }}</a></li>-->
           <li>
             <a
               id="main-menu-link-5"
@@ -121,33 +61,16 @@
   </div>
   <div class="megamenu-wrapper">
     <div class="megamenu-main-service">
-      {{ $language := default "Se" .Params.language }}
-      {{ $sections := (dict
-        "Se" "tjanster" "En" "en" "No" "no")
-      }}
-      {{ $section := index $sections
-        $language
-      }}
       {{ range (where $.Site.RegularPages "Section"
-        $section).ByParam "cardorder"
+        "services").ByParam "cardorder"
       }}
         {{ if isset .Params "megamenu" }}{{ .Render "li-megamenu" }}{{ end }}
       {{ end }}
     </div>
     <div class="megamenu-service-card">
-      <span class="megamenu-service-card-title-small"
-        >{{ if eq $language "En" }}
-          Built on Safespring
-        {{ else if eq $language
-          "No"
-        }}
-          Bygget på Safespring
-        {{ else }}
-          Byggt på Safespring
-        {{ end }}</span
-      >
+      <span class="megamenu-service-card-title-small">{{ T "topnav.built_on_safespring" }}</span>
       <ul class="megamenu-service-card-list">
-        {{ range (where $.Site.RegularPages "Section" $section).ByParam
+        {{ range (where $.Site.RegularPages "Section" "services").ByParam
           "cardorder"
         }}
           {{ if and (not (isset .Params "megamenu")) (isset .Params
