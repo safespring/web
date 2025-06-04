@@ -6,10 +6,11 @@
   <meta charset="utf-8">
   <script src="https://cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"defer></script> 
 <link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml" importance="high">
+{{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
 {{ if .Params.background }}
-{{ $ext := replace (path.Ext .Params.background) "." "" }}
+{{ $ext := replace (path.Ext $bg) "." "" }}
 <link rel="preload" as="image"
-      href="/img/background/{{ .Params.background }}"
+      href="/img/background/{{ $bg }}"
       fetchpriority="high"
       {{ if eq $ext "svg" }}
       type="image/svg+xml"
@@ -89,6 +90,7 @@
     }
   }
   .heading-default-single {
+    background-image: url('/img/background/{{ $bg }}');
     padding:15% 5% 5% 5%;
     display:flex;
     flex-flow:row nowrap;
@@ -97,17 +99,9 @@
     background-size: cover; 
     background-position: center;
     position: relative;
-    overflow: hidden;
-  }
-
-  .heading-default-single-img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    height: 100%
+    overflow: hidden;
   }
 
   @media only screen and (min-width:1500px) {
