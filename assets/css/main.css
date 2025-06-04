@@ -1812,6 +1812,20 @@ body.no-scroll {
 	margin:50px;
 }
 
+.sidebar-content-button {
+	padding: 15px 20px;
+  background: var(--cloud-blue-color);
+  border-radius: 10px;
+  color: var(--middle-blue-color);
+  font-weight: 600;
+}
+
+.sidebar-content-button a {
+  color: var(--main-color);
+  font-weight: 600;
+  margin-left: 15px;
+}
+
 .demo-sticky {
 	position: sticky;
 	top: 20px;
