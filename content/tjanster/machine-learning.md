@@ -17,6 +17,10 @@ sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/en/contact"
+sidebarimage: "safespring-petter.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "073-533 65 21"
+sidebarmail: "hello@safespring.com"
 socialmedia: ""
 ---
 
