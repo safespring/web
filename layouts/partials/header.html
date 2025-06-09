@@ -389,7 +389,8 @@
       transform var(--shiftTime) var(--easeFunction);
   }
 
-  .mobile-menu-wrapper.visible .menu-screen {
+  /* Only show the main menu by default when wrapper is visible */
+  .mobile-menu-wrapper.visible #mobileMainMenu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -408,7 +409,6 @@
 
   #mobileMainMenu {
     z-index: 2;
-    opacity: 1;
     transform: translateX(var(--initialMain));
     transition-delay: 0s;
   }
@@ -430,6 +430,7 @@
 
   .mobile-menu-wrapper.show-submenu .submenu.active {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     transform: translateX(calc(var(--initialSub) - var(--shiftAmount)));
     transition-delay: var(--fadeOutTime);
@@ -437,12 +438,15 @@
 
   .mobile-menu-wrapper:not(.show-submenu) #mobileMainMenu {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     transform: translateX(var(--initialMain));
     transition-delay: var(--fadeInTime);
   }
 
   .mobile-menu-wrapper:not(.show-submenu) .submenu {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateX(var(--initialSub));
     transition-delay: 0s;
