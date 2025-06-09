@@ -18,6 +18,11 @@ docs = "Safespring Docs"
 our_history = "Our history"
 company_info = "Company info"
 vendor = "Safespring as a vendor"
+service_catalogue = "Service Catalogue"
+safespring_status = "Safespring Status"
+corporate_governance = "Corporate Governance"
+certifications = "Certifications"
+welkin = "Welkin"
 
 [landing]
 scaleout_description = "Scaleout is building an AI platform on Safespring's infrastructure. The interest and demand for machine learning and AI have exploded recently. At the same time, a discussion is ongoing about the transparency of the data the models are trained on and what one discloses when using the services."
