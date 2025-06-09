@@ -1,7 +1,7 @@
 #
 
 <div class="author-container">
-  <div class="author-image" style="background-image: url(/img/author/gabriel-paues.jpg)"></div>
+  <div class="author-image" style="background-image: url(/img/people/gabriel.webp)"></div>
   <div class="author-info">
     <p class="author-name">Gabriel Paues</p>
     <p class="author-title">Cloud Architect</p>

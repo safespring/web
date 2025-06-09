@@ -4,22 +4,22 @@
  {{ partial "header.html" . }}
  <!-- HEADING -->
 <div class="heading-default-single" >
-    <img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">
-    {{ .Render "li3" }}
+  {{ .Render "li3" }}
+</div>
 </div>
  <!-- CONTENT -->
  <div class="main-default-single">
   <div class="content-default-single">
     {{ if .Params.videoURL }}
-    <div class="webinarvideo">
-      <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls preload="none">
-        <!-- Removed src to prevent automatic loading -->
-        {{ range .Params.subtitles }}
-        <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
-          {{ end }}
-          Your browser does not support the video tag.
-        </video>
-      </div>
+        <div class="webinarvideo">
+          <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls preload="none">
+          <!-- Removed src to prevent automatic loading -->
+          {{ range .Params.subtitles }}
+          <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
+            {{ end }}
+            Your browser does not support the video tag.
+          </video>
+        </div>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           var video = document.getElementById('player');
