@@ -1,9 +1,7 @@
 <header id="navbar" class="site-header">
   <div class="site-header-wrapper">
     <div class="site-header-logo">
-      <a
-        href="/"
-      >
+      <a href="/">
         <img
           src="/img/logos/safespring_logotype_blue_svg.svg"
           width="140"
@@ -13,11 +11,8 @@
       </a>
     </div>
     <nav class="site-header-nav">
-      <div id="menuToggle">
-        <input id="menuCheckbox" aria-label="Safespring menu" type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
+      <!-- Desktop menu (hidden on mobile) -->
+      <div class="desktop-menu">
         <ul id="menu" class="site-header-links">
           <li>
             <a
@@ -35,7 +30,11 @@
             >
           </li>
           <li>
-            <a id="main-menu-link-2" href="{{ with .GetPage "knowledge-hub" }}{{ .RelPermalink }}{{ end }}"
+            <a
+              id="main-menu-link-2"
+              href="{{ with .GetPage "knowledge-hub" }}
+                {{ .RelPermalink }}
+              {{ end }}"
               >{{ T "topnav.news" }}</a
             >
           </li>
@@ -57,9 +56,17 @@
           </li>
         </ul>
       </div>
+      <!-- Mobile menu button (always visible on mobile) -->
+      <div id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </div>
-  <div class="megamenu-wrapper">
+
+  <!-- Desktop megamenu -->
+  <div class="megamenu-wrapper desktop-only">
     <div class="megamenu-main-service">
       {{ range (where $.Site.RegularPages "Section"
         "services").ByParam "cardorder"
@@ -68,7 +75,9 @@
       {{ end }}
     </div>
     <div class="megamenu-service-card">
-      <span class="megamenu-service-card-title-small">{{ T "topnav.built_on_safespring" }}</span>
+      <span class="megamenu-service-card-title-small"
+        >{{ T "topnav.built_on_safespring" }}</span
+      >
       <ul class="megamenu-service-card-list">
         {{ range (where $.Site.RegularPages "Section" "services").ByParam
           "cardorder"
@@ -86,7 +95,449 @@
       </ul>
     </div>
   </div>
+
+  <!-- Mobile menu wrapper (inside header) -->
+  <div class="mobile-menu-wrapper" id="mobileMenuWrapper">
+    <!-- Main menu screen -->
+    <div class="menu-screen" id="mobileMainMenu">
+      <ul>
+        <li class="menu-item-featured">
+          <a href="#" data-submenu="mobilePlatformSubMenu"
+            >{{ T "topnav.platform" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a href="#" data-submenu="mobileNewsSubMenu">{{ T "topnav.news" }}</a>
+        </li>
+        <li class="menu-item-featured">
+          <a href="#" data-submenu="mobileAboutSubMenu"
+            >{{ T "topnav.about" }}</a
+          >
+        </li>
+        <br />
+        <li>
+          <a href="{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}"
+            >{{ T "topnav.contact" }}</a
+          >
+        </li>
+        <li><a href="/support">{{ T "topnav.support" }}</a></li>
+        <li>
+          <a href="{{ with .GetPage "career" }}{{ .RelPermalink }}{{ end }}"
+            >{{ T "topnav.career" }}</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Platform submenu -->
+    <div class="menu-screen submenu" id="mobilePlatformSubMenu">
+      <div class="submenu-header">
+        <span class="back-button">&larr;</span>
+        <span class="submenu-title"></span>
+      </div>
+      <ul>
+        {{ range (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
+          {{ if isset .Params "megamenu" }}
+            <li class="menu-item-featured">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+      <ul>
+        <li>
+          <a href="{{ with .GetPage "price" }}{{ .RelPermalink }}{{ end }}"
+            >{{ T "topnav.price" }}</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ with .GetPage "data-centers" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.datacenters" }}</a
+          >
+        </li>
+        <br />
+        <p class="submenu-heading">{{ T "topnav.solutions_for" }}:</p>
+        {{ range (where $.Site.RegularPages "Section" "industries") }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Knowledge Hub submenu -->
+    <div class="menu-screen submenu" id="mobileNewsSubMenu">
+      <div class="submenu-header">
+        <span class="back-button">&larr;</span>
+        <span class="submenu-title"></span>
+      </div>
+      <ul>
+        <li class="menu-item-featured">
+          <a
+            href="{{ with .GetPage "knowledge-hub/webinar" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.webinars" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a
+            href="{{ with .GetPage "knowledge-hub/blog" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.tech_updates" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a
+            href="{{ with .GetPage "knowledge-hub/whitepaper" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.whitepapers" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a href="/services/case">{{ T "topnav.use_cases" }}</a>
+        </li>
+        <li>
+          <a
+            href="{{ with .GetPage "knowledge-hub/solution-brief" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.solution_briefs" }}</a
+          >
+        </li>
+        <li><a href="https://docs.safespring.com">{{ T "topnav.docs" }}</a></li>
+      </ul>
+    </div>
+
+    <!-- About submenu -->
+    <div class="menu-screen submenu" id="mobileAboutSubMenu">
+      <div class="submenu-header">
+        <span class="back-button">&larr;</span>
+        <span class="submenu-title"></span>
+      </div>
+      <ul>
+        <li class="menu-item-featured">
+          <a href="{{ with .GetPage "about" }}{{ .RelPermalink }}{{ end }}"
+            >{{ T "topnav.our_history" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a
+            href="{{ with .GetPage "data-centers" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.datacenters" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a
+            href="{{ with .GetPage "about" }}
+              {{ .RelPermalink }}
+            {{ end }}#company-info"
+            >{{ T "topnav.company_info" }}</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ with .GetPage "become-partner" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "topnav.vendor" }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
+
+<style>
+  /* Desktop menu styling */
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Mobile menu button - hidden on desktop */
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1002;
+    flex-shrink: 0;
+  }
+
+  /* Mobile layout */
+  @media only screen and (max-width: 940px) {
+    .desktop-menu {
+      display: none !important;
+    }
+
+    .desktop-only {
+      display: none !important;
+    }
+
+    .mobile-menu-wrapper {
+      display: block !important;
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      position: relative;
+      background: var(--main-color);
+      border-radius: 3px;
+      z-index: 100;
+      transform-origin: 2px 2px;
+      transition:
+        transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.55s ease;
+    }
+
+    .mobile-menu-btn span:first-child {
+      margin-bottom: 6.25px;
+    }
+
+    .mobile-menu-btn span:nth-child(2) {
+      margin-bottom: 6.25px;
+    }
+
+    /* Transform hamburger to X when menu is open */
+    .mobile-menu-btn.active span {
+      opacity: 1;
+      transform: rotate(45deg);
+      background: var(--link-color);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  /* Hide mobile menu completely on desktop */
+  @media only screen and (min-width: 941px) {
+    .mobile-menu-wrapper {
+      display: none !important;
+    }
+  }
+
+  /* Mobile menu styles */
+  :root {
+    --initialMain: 5px;
+    --initialSub: 10px;
+    --shiftAmount: 5px;
+    --shiftTime: 0.3s;
+    --easeFunction: ease;
+    --fadeOutTime: 0.15s;
+    --fadeInTime: 0.15s;
+    --fadeEase: ease-in-out;
+    --bgFadeTime: 0.3s;
+  }
+
+  .mobile-menu-wrapper {
+    position: fixed;
+    top: 92px; /* Start below the header bar */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px); /* Adjust height to account for header */
+    background: transparent;
+    pointer-events: none;
+    transition: background var(--bgFadeTime) ease;
+    color: #195f8c;
+    z-index: 1000;
+    display: none; /* Hidden by default, shown only on mobile */
+  }
+
+  .mobile-menu-wrapper.visible {
+    background: rgb(250, 254, 254);
+    pointer-events: auto;
+  }
+
+  /* Menu button should always be visible and interactive */
+  .mobile-menu-wrapper .mobile-menu-btn {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  /* Menu screens are hidden when menu is closed */
+  .mobile-menu-wrapper .menu-screen {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity var(--fadeEase) var(--fadeOutTime),
+      visibility var(--fadeEase) var(--fadeOutTime),
+      transform var(--shiftTime) var(--easeFunction);
+  }
+
+  .mobile-menu-wrapper.visible .menu-screen {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .menu-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 2rem;
+  }
+
+  #mobileMainMenu {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(var(--initialMain));
+    transition-delay: 0s;
+  }
+
+  .submenu {
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(var(--initialSub));
+    transition-delay: 0s;
+  }
+
+  .mobile-menu-wrapper.show-submenu #mobileMainMenu {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(calc(var(--initialMain) - var(--shiftAmount)));
+    transition-delay: 0s;
+  }
+
+  .mobile-menu-wrapper.show-submenu .submenu.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(calc(var(--initialSub) - var(--shiftAmount)));
+    transition-delay: var(--fadeOutTime);
+  }
+
+  .mobile-menu-wrapper:not(.show-submenu) #mobileMainMenu {
+    opacity: 1;
+    transform: translateX(var(--initialMain));
+    transition-delay: var(--fadeInTime);
+  }
+
+  .mobile-menu-wrapper:not(.show-submenu) .submenu {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(var(--initialSub));
+    transition-delay: 0s;
+  }
+
+  /* Menu item animations */
+  #mobileMainMenu li {
+    transform: translateY(-5px);
+    opacity: 0;
+    transition:
+      transform 0.3s ease-out,
+      opacity 0.3s ease-out;
+  }
+
+  .mobile-menu-wrapper.visible #mobileMainMenu li {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  #mobileMainMenu li:nth-child(1) {
+    transition-delay: 0.05s;
+  }
+  #mobileMainMenu li:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  #mobileMainMenu li:nth-child(3) {
+    transition-delay: 0.15s;
+  }
+  #mobileMainMenu li:nth-child(4) {
+    transition-delay: 0.2s;
+  }
+  #mobileMainMenu li:nth-child(5) {
+    transition-delay: 0.25s;
+  }
+  #mobileMainMenu li:nth-child(6) {
+    transition-delay: 0.3s;
+  }
+  #mobileMainMenu li:nth-child(7) {
+    transition-delay: 0.35s;
+  }
+
+  .menu-screen ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  .menu-screen li {
+    padding: 0.2rem 0;
+  }
+
+  .menu-screen a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #417da5;
+  }
+
+  .menu-item-featured a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #195f8c;
+  }
+
+  .submenu-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .back-button {
+    font-size: 24px;
+    margin-right: 1rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .submenu-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .submenu-heading {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 5px;
+    opacity: 0.6;
+  }
+
+  /* Prevent body scroll when menu is open */
+  body.mobile-menu-open {
+    overflow: hidden;
+  }
+</style>
+
 <script>
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
@@ -119,5 +570,96 @@
   megaMenuWrapper.addEventListener("mouseout", handleMouseOut);
   megaMenuWrapper.addEventListener("mouseover", function () {
     clearTimeout(hideTimeout);
+  });
+</script>
+
+<script>
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenuWrapper = document.getElementById("mobileMenuWrapper");
+  const mobileSubmenuLinks = document.querySelectorAll(
+    "#mobileMainMenu a[data-submenu]",
+  );
+  const mobileBackButtons = document.querySelectorAll(
+    ".mobile-menu-wrapper .back-button",
+  );
+
+  // Function to close the menu
+  function closeMobileMenu() {
+    mobileMenuWrapper.classList.remove("visible");
+    mobileMenuBtn.classList.remove("active");
+    document.body.classList.remove("mobile-menu-open");
+
+    // Reset menu state
+    mobileMenuWrapper.classList.remove("show-submenu");
+    document
+      .querySelectorAll(".mobile-menu-wrapper .submenu")
+      .forEach((sub) => {
+        sub.classList.remove("active");
+      });
+  }
+
+  // Toggle mobile menu
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", function () {
+      mobileMenuWrapper.classList.toggle("visible");
+      mobileMenuBtn.classList.toggle("active");
+      document.body.classList.toggle("mobile-menu-open");
+
+      // Reset menu state when closing
+      if (!mobileMenuWrapper.classList.contains("visible")) {
+        mobileMenuWrapper.classList.remove("show-submenu");
+        document
+          .querySelectorAll(".mobile-menu-wrapper .submenu")
+          .forEach((sub) => {
+            sub.classList.remove("active");
+          });
+      }
+    });
+  }
+
+  // Handle submenu navigation
+  mobileSubmenuLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      mobileMenuWrapper.classList.add("show-submenu");
+
+      // Remove active from all submenus
+      document
+        .querySelectorAll(".mobile-menu-wrapper .submenu")
+        .forEach((sub) => {
+          sub.classList.remove("active");
+        });
+
+      // Add active to target submenu
+      const targetId = link.getAttribute("data-submenu");
+      const targetSubmenu = document.getElementById(targetId);
+      if (targetSubmenu) {
+        targetSubmenu.classList.add("active");
+      }
+    });
+  });
+
+  // Handle back button
+  mobileBackButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      mobileMenuWrapper.classList.remove("show-submenu");
+      document
+        .querySelectorAll(".mobile-menu-wrapper .submenu")
+        .forEach((sub) => {
+          sub.classList.remove("active");
+        });
+    });
+  });
+
+  // Close menu when clicking outside (optional)
+  document.addEventListener("click", function (e) {
+    if (
+      mobileMenuWrapper.classList.contains("visible") &&
+      !mobileMenuWrapper.contains(e.target) &&
+      !mobileMenuBtn.contains(e.target)
+    ) {
+      closeMobileMenu();
+    }
   });
 </script>
