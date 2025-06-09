@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "purgecss": "purgecss --css static/css/main-v2.css --output static/css/main-v2.css --content layouts/**/*.html content/**/*.md"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
-    "prettier-plugin-go-template": "^0.0.15"
+    "prettier-plugin-go-template": "^0.0.15",
+    "purgecss": "^7.0.2"
   }
 }
