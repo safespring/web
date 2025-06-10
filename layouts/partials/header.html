@@ -19,14 +19,14 @@
               id="main-menu-link-platform"
               style="padding-bottom: 30px; margin-bottom: -30px"
               href="{{ with .GetPage "services" }}{{ .RelPermalink }}{{ end }}"
-              >{{ T "topnav.platform" }}</a
+              >{{ T "menu.platform" }}</a
             >
           </li>
           <li>
             <a
               id="main-menu-link-1"
               href="{{ with .GetPage "price" }}{{ .RelPermalink }}{{ end }}"
-              >{{ T "topnav.price" }}</a
+              >{{ T "menu.price" }}</a
             >
           </li>
           <li>
@@ -35,14 +35,14 @@
               href="{{ with .GetPage "knowledge-hub" }}
                 {{ .RelPermalink }}
               {{ end }}"
-              >{{ T "topnav.news" }}</a
+              >{{ T "knowledgehub.news" }}</a
             >
           </li>
           <li>
             <a
               id="main-menu-link-3"
               href="{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}"
-              >{{ T "topnav.contact" }}</a
+              >{{ T "menu.contact" }}</a
             >
           </li>
           <li>
@@ -76,7 +76,7 @@
     </div>
     <div class="megamenu-service-card">
       <span class="megamenu-service-card-title-small"
-        >{{ T "topnav.built_on_safespring" }}</span
+        >{{ T "menu.built_on_safespring" }}</span
       >
       <ul class="megamenu-service-card-list">
         {{ range (where $.Site.RegularPages "Section" "services").ByParam
@@ -103,27 +103,33 @@
       <ul>
         <li class="menu-item-featured">
           <a href="#" data-submenu="mobilePlatformSubMenu"
-            >{{ T "topnav.platform" }}</a
+            >{{ T "menu.platform" }}</a
           >
         </li>
         <li class="menu-item-featured">
-          <a href="#" data-submenu="mobileNewsSubMenu">{{ T "topnav.news" }}</a>
+          <a href="#" data-submenu="mobileNewsSubMenu"
+            >{{ T "knowledgehub.news" }}</a
+          >
         </li>
         <li class="menu-item-featured">
           <a href="#" data-submenu="mobileAboutSubMenu"
-            >{{ T "topnav.about" }}</a
+            >{{ T "menu.safespring_about" }}</a
           >
         </li>
         <br />
         <li>
           <a href="{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "topnav.contact" }}</a
+            >{{ T "menu.contact" }}</a
           >
         </li>
-        <li><a href="/support">{{ T "topnav.support" }}</a></li>
+        <li>
+          <a href="{{ with .GetPage "price" }}{{ .RelPermalink }}{{ end }}"
+            >{{ T "menu.price" }}</a
+          >
+        </li>
         <li>
           <a href="{{ with .GetPage "career" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "topnav.career" }}</a
+            >{{ T "menu.safespring_careers" }}</a
           >
         </li>
       </ul>
@@ -132,8 +138,10 @@
     <!-- Platform submenu -->
     <div class="menu-screen submenu" id="mobilePlatformSubMenu">
       <div class="submenu-header">
-        <span class="back-button">&larr;</span>
-        <span class="submenu-title">{{ T "topnav.platform" }}</span>
+        <span class="back-button"
+          >&larr;
+          <span class="submenu-title">{{ T "menu.platform" }}</span></span
+        >
       </div>
       <ul>
         <li class="menu-item-featured">
@@ -141,15 +149,15 @@
             href="{{ with .GetPage "services/compute" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.platform_compute" }}</a
+            >{{ T "menu.platform_compute" }}</a
           >
         </li>
         <li class="menu-item-featured">
           <a
-            href="{{ with .GetPage "services/compliant-kubernetes" }}
+            href="{{ with .GetPage "services/containerplatform" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.platform_container" }}</a
+            >{{ T "menu.platform_container" }}</a
           >
         </li>
         <li class="menu-item-featured">
@@ -157,7 +165,7 @@
             href="{{ with .GetPage "services/storage" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.platform_storage" }}</a
+            >{{ T "menu.platform_storage" }}</a
           >
         </li>
         <li class="menu-item-featured">
@@ -165,7 +173,7 @@
             href="{{ with .GetPage "services/backup" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.platform_backup" }}</a
+            >{{ T "menu.platform_backup" }}</a
           >
         </li>
         <li>
@@ -173,41 +181,41 @@
             href="{{ with .GetPage "data-centers" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.datacenters" }}</a
+            >{{ T "menu.safespring_datacenters" }}</a
           >
         </li>
         <li>
           <a
-            href="{{ with .GetPage "services/acceptable-use-policy" }}
+            href="{{ with .GetPage "documents/acceptable-use-policy" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.acceptable_use_policy" }}</a
+            >{{ T "menu.acceptable_use_policy" }}</a
           >
         </li>
         <br />
-        <p class="submenu-heading">{{ T "topnav.solutions_for" }}:</p>
+        <p class="submenu-heading">{{ T "menu.solutions_for" }}:</p>
         <li>
           <a
-            href="{{ with .GetPage "services/gpu" }}
+            href="{{ with .GetPage "services/database-as-a-service" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.platform_ai" }}</a
+            >{{ T "menu.platform_database" }}</a
           >
         </li>
         <li>
           <a
-            href="{{ with .GetPage "services/databases" }}
+            href="{{ with .GetPage "services/compliant-kubernetes" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.platform_database" }}</a
+            >{{ T "menu.welkin" }}</a
           >
         </li>
         <li>
           <a
-            href="{{ with .GetPage "services/welkin" }}
+            href="{{ with .GetPage "services/machine-learning" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.welkin" }}</a
+            >{{ T "menu.platform_ai" }}</a
           >
         </li>
       </ul>
@@ -216,27 +224,34 @@
     <!-- Knowledge Hub submenu -->
     <div class="menu-screen submenu" id="mobileNewsSubMenu">
       <div class="submenu-header">
-        <span class="back-button">&larr;</span>
-        <span class="submenu-title">{{ T "topnav.news" }}</span>
+        <span class="back-button"
+          >&larr;
+          <span class="submenu-title">{{ T "knowledgehub.news" }}</span></span
+        >
       </div>
       <ul>
         <li class="menu-item-featured">
-          <a href="/services/case">{{ T "topnav.use_cases" }}</a>
+          <a
+            href="{{ with .GetPage "services/case" }}
+              {{ .RelPermalink }}
+            {{ end }}"
+            >{{ T "knowledgehub.use_case" }}</a
+          >
         </li>
         <li class="menu-item-featured">
           <a
             href="{{ with .GetPage "knowledge-hub/webinar" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.webinars" }}</a
+            >{{ T "knowledgehub.webcast" }}</a
           >
         </li>
         <li class="menu-item-featured">
           <a
-            href="{{ with .GetPage "knowledge-hub/blog" }}
+            href="{{ with .GetPage "knowledge-hub" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.tech_updates" }}</a
+            >{{ T "knowledgehub.tech_update" }}</a
           >
         </li>
         <li class="menu-item-featured">
@@ -244,39 +259,39 @@
             href="{{ with .GetPage "knowledge-hub/whitepaper" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.whitepapers" }}</a
+            >{{ T "knowledgehub.whitepaper" }}</a
           >
         </li>
-        <li>
+        <li class="menu-item-featured">
           <a
-            href="{{ with .GetPage "knowledge-hub/blog" }}
+            href="{{ with .GetPage "knowledge-hub" }}
               {{ .RelPermalink }}
             {{ end }}"
             >{{ T "knowledgehub.blog" }}</a
           >
         </li>
-        <li>
+        <li class="menu-item-featured">
           <a
             href="{{ with .GetPage "knowledge-hub/solution-brief" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.solution_briefs" }}</a
+            >{{ T "knowledgehub.solution_brief" }}</a
           >
         </li>
         <li>
-          <a href="https://docs.safespring.com">{{ T "topnav.docs" }}</a>
+          <a href="https://docs.safespring.com">{{ T "menu.docs" }}</a>
         </li>
         <li>
           <a
             href="{{ with .GetPage "service-catalogue" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.service_catalogue" }}</a
+            >{{ T "menu.service_catalogue" }}</a
           >
         </li>
         <li>
           <a href="https://status.safespring.com"
-            >{{ T "topnav.safespring_status" }}</a
+            >{{ T "menu.safespring_status" }}</a
           >
         </li>
         <li>
@@ -284,7 +299,7 @@
             href="{{ with .GetPage "data-centers" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.datacenters" }}</a
+            >{{ T "menu.safespring_datacenters" }}</a
           >
         </li>
       </ul>
@@ -293,13 +308,17 @@
     <!-- About submenu -->
     <div class="menu-screen submenu" id="mobileAboutSubMenu">
       <div class="submenu-header">
-        <span class="back-button">&larr;</span>
-        <span class="submenu-title">{{ T "topnav.about" }}</span>
+        <span class="back-button"
+          >&larr;
+          <span class="submenu-title"
+            >{{ T "menu.safespring_about" }}</span
+          ></span
+        >
       </div>
       <ul>
         <li class="menu-item-featured">
           <a href="{{ with .GetPage "about" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "topnav.our_history" }}</a
+            >{{ T "menu.company_in_brief" }}</a
           >
         </li>
         <li class="menu-item-featured">
@@ -307,36 +326,36 @@
             href="{{ with .GetPage "data-centers" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.datacenters" }}</a
+            >{{ T "menu.safespring_datacenters" }}</a
           >
         </li>
         <li class="menu-item-featured">
           <a
-            href="{{ with .GetPage "sustainability" }}
+            href="{{ with .GetPage "environment" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "footer.safespring_sustainability" }}</a
+            >{{ T "menu.safespring_sustainability" }}</a
           >
         </li>
-        <li class="menu-item-featured">
+        <li>
           <a
             href="{{ with .GetPage "corporate-governance" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.corporate_governance" }}</a
+            >{{ T "menu.corporate_governance" }}</a
           >
         </li>
         <li>
           <a href="{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "footer.safespring_faq" }}</a
+            >{{ T "menu.safespring_faq" }}</a
           >
         </li>
         <li>
           <a
-            href="{{ with .GetPage "certifications" }}
+            href="{{ with .GetPage "fr2000" }}
               {{ .RelPermalink }}
             {{ end }}"
-            >{{ T "topnav.certifications" }}</a
+            >{{ T "menu.certifications" }}</a
           >
         </li>
       </ul>
@@ -597,6 +616,7 @@
     margin-top: 0.5rem;
     padding: 0;
     font-family: var(--hind-font);
+    margin-bottom: 4rem;
   }
 
   .menu-screen li {
