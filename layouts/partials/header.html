@@ -469,21 +469,22 @@
     width: 100%;
     height: calc(100% - 80px); /* Adjust height to account for header */
     background: transparent;
-    pointer-events: none;
-    transition: background var(--bgFadeTime) ease;
     color: #195f8c;
     z-index: 1000;
-    display: none; /* Hidden by default, shown only on mobile */
     font-family: var(--hind-font) !important;
+    display: none; /* Hidden by default, shown only on mobile */
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s,
+      background 0.3s ease;
   }
 
   .mobile-menu-wrapper.visible {
     background: rgb(250, 254, 254);
-    pointer-events: auto;
-  }
-
-  /* Menu button should always be visible and interactive */
-  .mobile-menu-wrapper .mobile-menu-btn {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -500,13 +501,6 @@
       transform var(--shiftTime) var(--easeFunction);
   }
 
-  /* Only show the main menu by default when wrapper is visible */
-  .mobile-menu-wrapper.visible #mobileMainMenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
   .menu-screen {
     position: absolute;
     top: 0;
@@ -519,7 +513,6 @@
   }
 
   #mobileMainMenu {
-    z-index: 2;
     transform: translateX(var(--initialMain));
     transition-delay: 0s;
   }
@@ -547,7 +540,7 @@
     transition-delay: var(--fadeOutTime);
   }
 
-  .mobile-menu-wrapper:not(.show-submenu) #mobileMainMenu {
+  .mobile-menu-wrapper.visible:not(.show-submenu) #mobileMainMenu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -741,18 +734,14 @@
   // Toggle mobile menu
   if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener("click", function () {
-      mobileMenuWrapper.classList.toggle("visible");
-      mobileMenuBtn.classList.toggle("active");
-      document.body.classList.toggle("mobile-menu-open");
-
-      // Reset menu state when closing
-      if (!mobileMenuWrapper.classList.contains("visible")) {
-        mobileMenuWrapper.classList.remove("show-submenu");
-        document
-          .querySelectorAll(".mobile-menu-wrapper .submenu")
-          .forEach((sub) => {
-            sub.classList.remove("active");
-          });
+      if (mobileMenuWrapper.classList.contains("visible")) {
+        // Closing menu
+        closeMobileMenu();
+      } else {
+        // Opening menu
+        mobileMenuWrapper.classList.add("visible");
+        mobileMenuBtn.classList.add("active");
+        document.body.classList.add("mobile-menu-open");
       }
     });
   }
