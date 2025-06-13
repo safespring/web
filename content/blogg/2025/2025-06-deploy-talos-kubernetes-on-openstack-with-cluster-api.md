@@ -119,7 +119,7 @@ See more details at [The Cluster API Book](https://cluster-api.sigs.k8s.io/user/
 ## Creating a Workload Cluster
 
 {{% note "Note" %}}
-The [Cluster API Quickstart Guide](https://cluster-api.sigs.k8s.io/user/quick-start#create-your-first-workload-cluster) as well as the [SideroLabs Cluster API templates](https://github.com/siderolabs/cluster-api-templates) provide a very good basis for creating and understanding the required configuration for a workload cluster we recommend to go over them.*
+The [Cluster API Quickstart Guide](https://cluster-api.sigs.k8s.io/user/quick-start#create-your-first-workload-cluster) as well as the [SideroLabs Cluster API templates](https://github.com/siderolabs/cluster-api-templates) provide a very good basis for creating and understanding the required configuration for a workload cluster we recommend to go over them.
 {{% /note %}}
 
 Our strategy for creating a Workload Cluster includes first creating `ClusterResourceSet`s which provide the mechanism to automatically apply a set of resources (such as CNI/CSI/CCM) to workload clusters. `ClusterResourceSet` CRD provides a basic solution for installing & managing resources, whilst for advanced use cases the general recommendation is to use the addon provider such as the [Cluster API Add-on Provider Helm](https://github.com/kubernetes-sigs/cluster-api-addon-provider-helm).
@@ -138,8 +138,9 @@ Another important part are the labels which allow to target installing the `Clus
 We will make use of the `safespring` namespace to create the cluster an store all the required CRD for creating a Workload Cluster.
 
 {{% note "Note" %}}
-As the `ClusterResourceSet` get applied with labels, thus we recommend for the to be namespaced otherwise there is a risk of upgrading all clusters when updating them.*
+As the `ClusterResourceSet` get applied with labels, thus we recommend for the to be namespaced otherwise there is a risk of upgrading all clusters when updating them.
 {{% /note %}}
+
 ```bash
 kubectl create ns safespring
 ```
@@ -880,7 +881,7 @@ kube-system   openstack-cloud-controller-manager-zbf9p                      1/1 
 ```
 
 {{% note "Note" %}}
-We will make use of labels to demonstrate how the `ClusterResourceSet` get applied, to **all the clusters** in that namespace that have those labels.*
+We will make use of labels to demonstrate how the `ClusterResourceSet` get applied, to **all the clusters** in that namespace that have those labels.
 {{% /note %}}
 
 ```bash
