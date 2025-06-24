@@ -357,10 +357,8 @@ clouds:
 EOF
 ```
 
-For more information on getting application credentials see our documentation on how to [create application credentials](https://docs.safespring.com/new/app-creds/#creating-application-credentials-using-the-dashboard).
-
-
 In order for the `cloud-config` to be used as `kind: Secret` in a `ClusterResourceSet` it needs to be stored as kubernetes secret thus we will make use of `--dry-run=client` to create the YAML.
+
 ```bash
 kubectl create secret generic safespring-demo-cloud-config --from-file=clouds.yaml='clouds.yaml' --from-literal=cacert="" -n safespring
 
@@ -417,7 +415,7 @@ spec:
       talosVersion: 1.10.3
 ```
 
-For the purpose of this tutorial we would need two [elastic IPS](https://docs.safespring.com/new/elastic-ip/). At the same time notice tha the Cilium CNI installation is done via `inlineManifests`with the `bgpControlPlane.enabled=true` flag so that [BGP Peering Policy](https://docs.cilium.io/en/latest/network/bgp-control-plane/bgp-control-plane-v1/) is enabled.
+For the purpose of this tutorial we would need two [elastic IPS](https://docs.safespring.com/new/elastic-ip/). At the same time notice that the Cilium CNI installation is done via `inlineManifests`with the `bgpControlPlane.enabled=true` flag so that [BGP Peering Policy](https://docs.cilium.io/en/latest/network/bgp-control-plane/bgp-control-plane-v1/) is enabled.
 
 {{% note "Note" %}}
 Long term we recommend migrating to [BGP Control Plane Resources](https://docs.cilium.io/en/stable/network/bgp-control-plane/bgp-control-plane-v2/).
@@ -951,7 +949,7 @@ default     csi-pvc-test   Bound    pvc-feac6f5f-9137-4ab0-9b77-3032483a7828   1
 
 **Consistent Automation**: Avoid hand-crafted automation scripts and embrace community-tested controllers and APIs that ensure reliable cluster creation and upgrades.
 
-**Advanced Features**: If we CAPO supports a range of OpenStack features such as: *Multiple availability zones*, *Custom image and flavor support*, *Cinder-based storage*, *Floating IPs for control planes and worker nodes* (if the OpenStack installation allows that) as well as [auto scaling](https://cluster-api.sigs.k8s.io/tasks/automated-machine-management/autoscaling).
+**Advanced Features**: CAPO supports a range of OpenStack features such as: *Multiple availability zones*, *Custom image and flavor support*, *Cinder-based storage*, *Floating IPs for control planes and worker nodes* (if the OpenStack installation allows that) as well as [auto scaling](https://cluster-api.sigs.k8s.io/tasks/automated-machine-management/autoscaling).
 
 
 {{% note "liked what you just read?" %}}
