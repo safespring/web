@@ -20,8 +20,7 @@ Share some basic information and submit your resume. If there’s a role that mi
 
  
 Would you like to join us? Send your CV by clicking the apply button. 
-Questions? Get in touch with Marietta by sending an email to marietta@safespring.com 
-We will contact all candidates after winter holidays e.i. second week of January 2025. 
+Questions? Get in touch with Marietta by sending an email to marietta@safespring.com  
 
 
 
