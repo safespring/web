@@ -19,9 +19,9 @@ aliases:
 Share some basic information and submit your resume. If there’s a role that might be a good match, an Safespring recruiter will be in touch.
 {{< /ingress >}}
 
-Would you like to join us? Send your CV by clicking the apply button.
-Questions? Get in touch with Marietta by sending an email to marietta@safespring.com
-We will contact all candidates after winter holidays e.i. second week of January 2025.
+ 
+Would you like to join us? Send your CV by clicking the apply button. 
+Questions? Get in touch with Marietta by sending an email to marietta@safespring.com  
 
 {{% accordion title="Our recruitment process" %}}
 

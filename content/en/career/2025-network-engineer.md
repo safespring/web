@@ -1,7 +1,7 @@
 ---
 Title: "Join us as a Cloud Network Engineer!"
 intro: "Work on infrastructure that’s open-source, sovereign and built with sustainability in mind"
-draft: false
+draft: true
 date: "2025-03-14"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/640302ca-01e7-48a5-87d1-16789f38ca7c/788936c8-da55-4733-87e9-327fece96707#applyNow"
 sidebarlinkname: "Apply now"

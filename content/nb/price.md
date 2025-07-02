@@ -14,12 +14,18 @@ aliases:
   - /no/pris/
 slug: "pris"
 ---
-
+<!--
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-table" text="Prisliste med kalkulator" link="/pricelist/NOK/safespring-price-list-nok.xlsx" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-file-pdf" text="Prisliste som PDF" link="/pricelist/NOK/safespring-price-list-nok.pdf" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-file-csv" text="Prisliste som CSV (kommer)" link="" color="#EBEBEB">}}
 {{< /icon-block-container >}}
+-->
+
+## Last ned priskalkulator
+Bygg opp ditt nåværende miljø for å se hvor mye du sparer ved å flytte til Safespring. Priskalkulatoren er en Excel-fil med innebygd logikk for å beregne en månedskostnad basert på dine valg.
+
+{{< price-list language="No" >}}
 
 {{< distance >}}
 
@@ -81,8 +87,19 @@ Safespring tilbyr et utvalg kostnadseffektive virtuelle maskiner med variert vCP
 | FLAVOR-b2. c16 r32 |  16  |    32    |               0 |  4,22 kr |     3 040 kr |
 | FLAVOR-b2. c16 r64 |  16  |    64    |               0 |  6,67 kr |     4 800 kr |
 
-### Sentral blokk-lagring
+### GPU-varianter
+Safespring tilbyr flere alternativer for virtuelle maskiner med GPU, både med og uten lokal lagring (NVMe).
 
+| Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) | Per time | Per 30 dager |
+|--------------------------|:----:|:--------:|----------------:|:--------:|---------:|-------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 | 1        | 4,65 kr  | 3 345 kr     |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | 1        | 6,49 kr  | 4 670 kr     |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | 1        | 3,86 kr  | 2 780 kr     |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | 1        | 4,92 kr  | 3 540 kr     |
+
+
+
+### Sentral blokk-lagring		
 Sentral blokk-lagring gir tre kopier av dataen spredt over en robust CEPH-klynge. Få rask og pålitelig lagring med Safespring fra kun 1,20 kr per GB per 30 dager.
 
 | Produkt ID      | Beskrivelse               | Per timme  | Per 30 dagar |

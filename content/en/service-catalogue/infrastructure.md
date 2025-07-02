@@ -111,11 +111,18 @@ None.
 
 ### 4.2. Configurations
 
-| Product Code             | Instance type  | vCPU | Memory | Base Disk | Provisioned IOPs (R/W) |
-| ------------------------ | -------------- | ---- | ------ | --------- | ---------------------- |
-| FLAVOR-g2 .c4 r8. 100    | g2.c4r8.100    | 4    | 16 GiB | 100 GB    | 4k/8k, 8.5k/17k        |
-| FLAVOR-g2 .c8 r32. 500   | g2.c8r32.500   | 8    | 32 GiB | 500 GB    | 4k/8k, 21k/42k         |
-| FLAVOR-g2 .c16 r64. 1000 | g2.c16r64.1000 | 16   | 64 GiB | 1000 GB   | 4k/8k, 46k/92k         |
+| Product Code               | vCPU | RAM (GB) | Local Disk (GB) | GPU (A2)
+|--------------------------|:----:|:--------:|----------------:|:--------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | 1        |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | 1        |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | 1        |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | 1        |
+
+| Product Code         | Instance type  | vCPU | Memory | Base Disk | Provisioned IOPs (R/W)  |
+|----------------------|----------------|------|--------|-----------|-------------------------|
+| FLAVOR-g2 .c4 r8. 100   | g2.c4r8.100    | 4    | 16 GiB | 100 GB    | 4k/8k, 8.5k/17k      |
+| FLAVOR-g2 .c8 r32. 500  | g2.c8r32.500   | 8    | 32 GiB | 500 GB    | 4k/8k, 21k/42k       |
+| FLAVOR-g2 .c16 r64. 1000 | g2.c16r64.1000 | 16   | 64 GiB | 1000 GB   | 4k/8k, 46k/92k      |
 
 ## 5. Bare Metal Compute
 

@@ -15,21 +15,28 @@ aliases:
 slug: "pris"
 ---
 
+
+<!--
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-table" text="Prislista med kalkylator" link="/pricelist/SEK/safespring-price-list-sek.xlsx" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-file-pdf" text="Prislista som PDF" link="/pricelist/SEK/safespring-price-list-sek.pdf" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-file-csv" text="Prislista som CSV (kommer)" link="" color="#EBEBEB">}}
 {{< /icon-block-container >}}
+{{< distance >}}
+-->
+
+
+# Ladda ner priskalkylator
+Bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safespring. Priskalkylatorn är en Excel-fil med inbyggd logik för att räkna ut en månadskostnad baserad på dina val.
+
+
+{{< price-list >}}
 
 {{< distance >}}
 
-{{< ingress >}}
-Se våra priser längre ner på den här sidan eller få priskalkylatorn nedladdad till din dator. Priskalkylatorn är en Excel-fil med inbyggd logik för att räkna ut en månadskostnad baserad på dina val.
-{{< /ingress >}}
-
 Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till längre kostnad slipper du investeria i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
 
-Ladda ner vår priskalkulator och bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safespring. I priset ingår hög säkerhet såväl fysisk, logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäsningsportal där du kan managera dina instanser efter behov.
+I priset ingår hög säkerhet såväl fysisk, logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäsningsportal där du kan managera dina instanser efter behov.
 
 ## Ingen trafikkostnad
 
@@ -37,14 +44,14 @@ Safespring tar inte ut någon trafikkostnad för den data som skickas till eller
 
 {{< distance >}}
 
-## Safespring Compute
+# Safespring Compute
 
 {{< ingress >}}
 Flavor är en förkonfigurerad instans av en virtuell maskin med en specifik kombination av CPU, RAM och lagring.
 {{< /ingress >}}
 
-### Flavors med lokal NVMe-disk
 
+## Flavors med lokal NVMe-disk
 Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU och 64 GB RAM, med NVMe lagring upp till 1 000 GB - prissatta från endast 0,67 kr per timme eller 480 kr per 30 dagar!
 
 | Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | Per timme | Per 30 dagar |
@@ -81,8 +88,19 @@ Safesprings erbjuder en rad kostnadseffektiva virtuella maskiner med varierande 
 | FLAVOR-b2. c16 r32 |  16  |    32    |        0        |   4,22 kr |     3 040 kr |
 | FLAVOR-b2. c16 r64 |  16  |    64    |        0        |   6,67 kr |     4 800 kr |
 
-### Central blocklagring
 
+## Flavors med GPU
+Safesprings erbjuder flera alternativ virtuella maskiner med GPU. Både med och utan lokal lagring (NVME).
+
+| Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) | Per timme | Per 30 dagar |
+|--------------------------|:----:|:--------:|----------------:|:---:|----------:|-------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 |  1  | 4,65 kr   | 3 345 kr     |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 |  1  | 6,49 kr   | 4 670 kr     |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 |  1  | 3,86 kr   | 2 780 kr     |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 |  1  | 4,92 kr   | 3 540 kr     |
+
+
+## Central blocklagring		
 Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster. Få snabb och pålitlig lagring med Safesprings från endast 1,20 kr per GB per 30 dagar.
 
 | Produkt ID      | Beskrivning               | Per timme  | Per 30 dagar |
@@ -93,7 +111,7 @@ Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster.
 
 {{< distance >}}
 
-## Safespring Storage (S3)
+# Safespring Storage (S3)
 
 {{< ingress >}}
 Safespring erbjuder två anpassade S3-produkter för olika lagringsbehov: S3-archive för större volymer över längre tid och S3-storage för applikationer som aktivt använder S3-protokollet.
@@ -106,7 +124,7 @@ Safespring erbjuder två anpassade S3-produkter för olika lagringsbehov: S3-arc
 
 {{< distance >}}
 
-## Safespring Backup
+# Safespring Backup
 
 {{< ingress >}}
 Safespring erbjuder tre olika backuplösningar. Priserna per GB börjar så lågt som 0,92 kr, vilket ger dig högkvalitativ backup till ett överkomligt pris.
@@ -194,14 +212,13 @@ Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelef
 | PAAS-man.mariadb      | Managed MariaDB                                   | Begär offert |
 | PAAS-man.redis        | Managed Redis                                     | Begär offert |
 
-## Support och konsulttjänster
+# Support och konsulttjänster
 
 {{< ingress >}}
 Vi erbjuder olika nivåer av support för molninfrastruktur. Dessutom erbjuder vi erfarna konsulter och projektledare till konkurrenskraftiga priser.
 {{< /ingress >}}
 
-### Support
-
+## Support
 Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.
 
 | Produkt ID       | Beskrivning                                        | Debitering per |                            Pris |
@@ -210,8 +227,7 @@ Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, me
 | SUPPORT-standard | Tillgång till chatt-rum med support och tekniker   | Total volym    | 3 % av total volym <sup>5</sup> |
 | SUPPORT-premium  | Dedikerad servicechef med kvartalsvisa driftsmöten | Timme          |                    Begär offert |
 
-### Konsulttjänster
-
+## Konsulttjänster
 Få tillgång till våra erfarna konsulter och projektledare för att optimera din molninfrastruktur till konkurrenskraftiga priser, med juniora experter som börjar på 1 127 kr/timme och seniora experter som når upp till 1 374 kr/timme.
 
 | Produkt ID       | Beskrivning                                                       | Debitering per |     Pris |
@@ -223,8 +239,7 @@ Få tillgång till våra erfarna konsulter och projektledare för att optimera d
 | PS-pm.jun        | Project Manager, junior expertise level                           | Timme          | 1 139 kr |
 | PS-pm.sen        | Project Manager, senior expertise level                           | Timme          | 1 374 kr |
 
-### Utbildningar
-
+## Utbildningar
 Lär dig allt om moderna IT-tjänster med Safesprings kurspaket, inklusive introduktioner till "infrastruktur som tjänst" och moln-infrastrukturteknik, samt fördjupade kurser om molnstrategi och modern DevOps med "microservices". Begär offert idag för att ta din verksamhet till nästa nivå!
 
 | Produkt ID                  | Beskrivning                                  | Längd      | Debitering per |         Pris |

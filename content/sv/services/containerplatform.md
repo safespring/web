@@ -1,6 +1,6 @@
 ---
 title: "Safespring Containerplattform"
-section: "Vintern 2025"
+section: "Hösten 2025"
 sectionhighlight: "x"
 cardtitle: "Containers"
 cardintro: "Managerad Kubernetes med inbyggd skalbarhet och robust plattformssäkerhet."
@@ -15,6 +15,12 @@ intro: "Upptäck Safesprings högskalbara Kubernetes-molnplattform, utformad fö
 background: ""
 sidebarlinkname: "Gå med i Beta-programmet"
 sidebarlinkurl: "#intresserad-av-att-testa-plattformen"
+sidebarlinkname2: "Maila oss"
+sidebarlinkurl2: "mailto@hello@safespring.com"
+sidebarimage: "safespring-petter.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "073-533 65 21"
+sidebarmail: "hello@safespring.com"
 showthedate: false
 banner: "blue-hover-tech"
 language: "sv"

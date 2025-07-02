@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="{{ .Get "language" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prislista</title>
+
+  <!-- Material-CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css">
+
+  <style>
+    /* --- Allmän form-layout --- */
+    form { width: min(100%, 500px); }
+    h2 { font-size:1.5rem; font-weight:500; margin:20px 0 10px; }
+
+    .form-field { position:relative; margin-bottom:15px; }
+    .form-field label {
+      position:absolute; top:50%; left:25px; transform:translateY(-50%);
+      pointer-events:none; padding:0 8px; margin:0 -8px;
+      font:16px/16px 'Montserrat'; color:var(--middle-blue-color);
+      transition:all .2s ease;
+    }
+    .form-field input,
+    .form-field select {
+      width:100%; padding:15px 25px; font:16px 'Montserrat';
+      color:var(--main-color); background:transparent;
+      border:0.5px solid var(--main-color);
+      border-radius:100px; box-sizing:border-box;
+    }
+    .form-field input:focus,
+    .form-field select:focus { outline:none; box-shadow:none; }
+
+    /* Floatande etikett */
+    .form-field input:focus ~ label,
+    .form-field input:valid ~ label,
+    .form-field select:focus ~ label,
+    .form-field select:valid ~ label {
+      transform:translateY(-205%); background:#fafefe;
+      font:400 12px/16px 'Hind'; letter-spacing:.5px;
+      color:#3C9BCD; border-radius:100px;
+    }
+
+    /* Varna vid ogiltigt innehåll */
+    .form-field.invalid.has-content input { border-color:red; }
+    .form-field.invalid.has-content label {
+      transform:translateY(-205%); background:#fafefe;
+      font:400 12px/16px 'Hind'; letter-spacing:.5px;
+      color:red; border-radius:100px;
+    }
+
+    /* Select-pilen */
+    select { appearance:none; }
+    .selection-icon {
+      position:absolute; right:11px; top:8px;
+      padding:10px 9px 6px; border-radius:100px;
+      background:var(--cloud-blue-color);
+      color:var(--middle-blue-color); z-index:-2;
+    }
+
+    /* Checkbox */
+    .form-field input[type="checkbox"] { margin-right:10px; transform:translateY(2px); }
+    .form-field label { display:block; margin-bottom:10px; }
+
+    /* Varningstext under e-postfältet */
+    #email-domain-warning {
+      display:none; margin-top:4px; color:#e74c3c;
+      font:400 12px/16px 'Hind';
+    }
+  </style>
+</head>
+<body>
+
+  <form id="up-form"
+        name="form_9549u01b0d951917c4e668692e72d4d9ae899"
+        action="https://power.upsales.com/api/external/formSubmit"
+        method="POST">
+
+    <div class="form-field">
+      <input maxlength="512"
+             type="email"
+             id="up-email-input"
+             name="Contact.email"
+             autocomplete="email"
+             required
+             pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$"
+             title="Please enter a valid email">
+      <label for="up-email-input">
+        <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email
+      </label>
+    </div>
+
+    <small id="email-domain-warning">
+      {{ if eq (.Get "language") "En" }}
+        Please use your work email.
+      {{ else if eq (.Get "language") "No" }}
+        Bruk gjerne din jobbe-epost.
+      {{ else }}
+        Använd gärna din jobbmail.
+      {{ end }}
+    </small>
+
+    <div class="inputGroup">
+      <input type="checkbox"
+             id="accept-terms"
+             name="singleOptIn.odbjxu1e5b9"
+             required>
+      <label for="accept-terms">
+        {{ if eq (.Get "language") "En" }}
+          I accept <a style="font:17px var(--hind-font)"
+                      href="/dokument/personuppgiftshantering-en/"
+                      target="_blank">terms <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        {{ else if eq (.Get "language") "No" }}
+          Jeg aksepterer <a style="font:17px var(--hind-font)"
+                           href="/dokument/personuppgiftshantering-no/"
+                           target="_blank">vilkårene <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        {{ else }}
+          Jag accepterar <a style="font:17px var(--hind-font)"
+                           href="/dokument/personuppgiftshantering/"
+                           target="_blank">villkoren <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        {{ end }}
+      </label>
+    </div>
+    <input type="hidden" name="formCid"  value="9549">
+    <input type="hidden" name="formId"   value="9549u01b0d951917c4e668692e72d4d9ae899">
+    <input type="hidden" name="isFrame"  value="false">
+    <input type="text"   name="validation" style="display:none;">
+    <div class="submit-button">
+      <button class="button pt-1 pb-1 mt-2" type="submit">
+        {{ if eq (.Get "language") "En" }}
+          Download the price list
+        {{ else if eq (.Get "language") "No" }}
+          Last ned prislisten
+        {{ else }}
+          Hämta prislistan
+        {{ end }}
+      </button>
+    </div>
+  </form>
+  <script>
+    // Disable-knapp vid submit för att förhindra dubbelklick
+    (function(){
+      const form = document.getElementById("up-form");
+      form && form.addEventListener("submit", function(ev){
+        const btn = ev.target.querySelector("button[type=submit]");
+        btn && (btn.disabled = true);
+      });
+    })();
+  </script>
+  <script>
+    // Din befintliga Ajax-logik
+    function onSubmit(e) {
+      var t;
+      "function" != typeof window._bEmValid || !0 === window.__validEmail
+        ? validateForm(e, "https://www.safespring.com/hello/")
+        : (e.preventDefault(),
+          t = setInterval(function(){
+            void 0 !== window.__validEmail &&
+              (clearInterval(t),
+              !0 === window.__validEmail &&
+                validateForm(e, "https://www.safespring.com/hello/"));
+          },300));
+    }
+    function validateForm(e, n) {
+      e.preventDefault();
+      // trimma textvärden
+      var formId = document.getElementsByName("formId")[0].value,
+          f      = document.forms["form_" + formId],
+          inputs = f.querySelectorAll("input, textarea, select");
+      for(var i=0;i<inputs.length;i++){
+        if(inputs[i].type==="text") inputs[i].value = inputs[i].value.trim();
+      }
+      // telefonnummer-omvandling om du använder intl-tel-input
+      var phones = f.querySelectorAll("input[name*=phone], input[name*=Phone]");
+      [].forEach.call(phones, function(el){
+        el.iti && (el.value = el.iti.getNumber());
+      });
+      // Skicka Ajax
+      var payload = [], xhr;
+      if(void 0===window.grecaptcha || ""!==window.grecaptcha.getResponse()){
+        for(var j=0;j<inputs.length;j++){
+          var inp = inputs[j];
+          if(inp.type==="checkbox"){
+            payload.push(inp.name+"="+encodeURIComponent(inp.checked?inp.value:"off"));
+          } else {
+            payload.push(inp.name+"="+encodeURIComponent(inp.value));
+          }
+        }
+        payload.push("isAjax=true");
+        xhr = new XMLHttpRequest();
+        xhr.open("POST", f.action);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send(payload.join("&"));
+        xhr.onload = function(){
+          if(xhr.status===200){
+            window.top.location.href = n;
+          } else {
+            console.log("AJAX ERROR", xhr.status);
+          }
+        };
+      }
+    }
+  </script>
+  <script>
+    // Globala init: sätt custom-validation + hoppa över Ajax om invalid
+    document.addEventListener("DOMContentLoaded", function(){
+      const personalDomains = [
+        'gmail.com','hotmail.com','yahoo.com','icloud.com','outlook.com','live.com','live.no','live.se','aol.com','simplelogin.com', 'msn.com'
+      ];
+      const emailField = document.querySelector("#up-email-input");
+      const warning    = document.querySelector("#email-domain-warning");
+      const form       = document.querySelector("#up-form");
+
+      // 1) Varje input: sätt customValidity om personlig domän
+      emailField.addEventListener("input", function(){
+        const parts = emailField.value.trim().toLowerCase().split("@");
+        if(parts.length===2 && personalDomains.includes(parts[1])){
+          warning.style.display = "block";
+          emailField.setCustomValidity(
+            '{{ if eq (.Get "language") "En" }}Please use your work email.{{ else if eq (.Get "language") "No" }}Bruk gjerne din jobbe-epost.{{ else }}Använd gärna din jobbmail.{{ end }}'
+          );
+        } else {
+          warning.style.display = "none";
+          emailField.setCustomValidity("");
+        }
+      });
+
+      // 2) Submit: kolla validity innan din Ajax körs
+      form.addEventListener("submit", function(e){
+        if(!form.checkValidity()){
+          e.preventDefault();
+          warning.style.display = "block";
+          return;
+        }
+        // Om valid: gå vidare till onSubmit (Ajax)
+        onSubmit(e);
+      });
+    });
+  </script>
+
+  <!-- jQuery-bit för terms-checkbox, om du vill behålla den -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+      $('#checkBtn').click(function(){
+        if(!$("input[type=checkbox]:checked").length){
+          alert("You must accept our terms our conditions");
+          return false;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

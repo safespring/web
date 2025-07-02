@@ -43,18 +43,19 @@
         {{ end }}
         {{ end }}
         {{ if .Params.sidebarphone }}
-        <a style="margin: 50px 0;" class="" href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a><br>
+        <p class="sidebar-content-button"><i class="fa-solid fa-phone"></i><a href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a></p>
         {{ end }}
         {{ if .Params.sidebarmail }}
-        <a style="margin: 50px 0;" class="" href="mailto:{{ .Params.sidebarmail }}">{{ .Params.sidebarmail }}</a>
+        <p class="sidebar-content-button"><i class="fa-solid fa-at"></i><a href="mailto:{{ .Params.sidebarmail }}">{{ if eq .Params.language "En"}}Send email{{else if eq .Params.language "No"}}Send e-post{{else}}Skicka epost{{end}}</a></p>
         {{ end }}
       </div>
+
       {{ $currentPage := . }}
       <div class="sidebar-services">
         <span class="sidebar-services-h4">
-          {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med {{ else }} Utforska{{ end }}
-          {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
-          {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
+          {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med: {{ else }} Utforska{{ end }}
+          {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med: {{ else if eq .Params.language "No" }}Lær mer om{{ end }}
+          {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with: {{ else if eq .Params.language "En" }}Optimize your service with:{{ end }}
           {{else}}{{ if eq .Params.language "En"}}Optimize your service with:{{else if eq .Params.lanuage "No"}}Lær mer om{{else}}Utforska{{end}}
           {{ end }}
         </span>
@@ -114,9 +115,9 @@
       <div>
         <p class="card-section">{{ .Params.documentation }}</p>
         <span class="card-heading">
-          {{ if eq .Params.language "No" }}Boka demo
-          {{ else if eq .Params.language "En" }}Schedule demo
-          {{ else }}Boka demo
+          {{ if eq .Params.language "No" }}Se demo
+          {{ else if eq .Params.language "En" }}Watch demo
+          {{ else }}Se demo
           {{ end }}
         </span>
         <p class="mb-2">
