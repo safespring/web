@@ -8,7 +8,7 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 sectiontext: "Blog"
 section: "blogg"
 author: "Daniel Melin"
