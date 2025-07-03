@@ -1,6 +1,6 @@
 <div class="flexcontainer-three">
   {{ $language := .Get 0 }}
-  {{ if eq $language "En" }}
+  {{ if eq $language "en" }}
     {{ range (where
       $.Site.RegularPages "Section" "en").ByParam "cardorder"
     }}
@@ -12,7 +12,7 @@
       {{ end }}
     {{ end }}
   {{ else
-    if eq $language "No"
+    if eq $language "nb"
   }}
     {{ range (where $.Site.RegularPages "Section"
       "no").ByParam "cardorder"

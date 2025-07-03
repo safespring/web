@@ -22,6 +22,6 @@ Safespring delivers a locally based Cloud built for the apps of tomorrow. It ena
 
 <div class="flexcontainer-shortcode" style="">
 
-{{< services "En" >}}
+{{< services "en" >}}
 
 </div>

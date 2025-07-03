@@ -92,9 +92,9 @@
     </div>
 
     <small id="email-domain-warning">
-      {{ if eq (.Get "language") "En" }}
+      {{ if eq (.Get "language") "en" }}
         Please use your work email.
-      {{ else if eq (.Get "language") "No" }}
+      {{ else if eq (.Get "language") "nb" }}
         Bruk gjerne din jobbe-epost.
       {{ else }}
         Använd gärna din jobbmail.
@@ -107,11 +107,11 @@
              name="singleOptIn.odbjxu1e5b9"
              required>
       <label for="accept-terms">
-        {{ if eq (.Get "language") "En" }}
+        {{ if eq (.Get "language") "en" }}
           I accept <a style="font:17px var(--hind-font)"
                       href="/dokument/personuppgiftshantering-en/"
                       target="_blank">terms <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        {{ else if eq (.Get "language") "No" }}
+        {{ else if eq (.Get "language") "nb" }}
           Jeg aksepterer <a style="font:17px var(--hind-font)"
                            href="/dokument/personuppgiftshantering-no/"
                            target="_blank">vilkårene <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -128,9 +128,9 @@
     <input type="text"   name="validation" style="display:none;">
     <div class="submit-button">
       <button class="button pt-1 pb-1 mt-2" type="submit">
-        {{ if eq (.Get "language") "En" }}
+        {{ if eq (.Get "language") "en" }}
           Download the price list
-        {{ else if eq (.Get "language") "No" }}
+        {{ else if eq (.Get "language") "nb" }}
           Last ned prislisten
         {{ else }}
           Hämta prislistan
@@ -218,7 +218,7 @@
         if(parts.length===2 && personalDomains.includes(parts[1])){
           warning.style.display = "block";
           emailField.setCustomValidity(
-            '{{ if eq (.Get "language") "En" }}Please use your work email.{{ else if eq (.Get "language") "No" }}Bruk gjerne din jobbe-epost.{{ else }}Använd gärna din jobbmail.{{ end }}'
+            '{{ if eq (.Get "language") "en" }}Please use your work email.{{ else if eq (.Get "language") "No" }}Bruk gjerne din jobbe-epost.{{ else }}Använd gärna din jobbmail.{{ end }}'
           );
         } else {
           warning.style.display = "none";

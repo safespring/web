@@ -28,7 +28,7 @@ aliases:
 ## Download the price calculator
 Set up your current environment to see how much you save by moving to Safespring. The price calculator is an Excel file with built-in logic to calculate a monthly cost based on your selections.
 
-{{< price-list language="En" >}}
+{{< price-list language="en" >}}
 
 {{< distance >}}
 

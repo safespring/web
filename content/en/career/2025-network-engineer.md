@@ -9,8 +9,6 @@ sidebarlinkicon: "fa-arrow-up-right-from-square"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
 sidebarimage: "safespring-image.svg"
-aliases:
-  - /career/2025-network-engineer/
 ---
 
 ## Who are you?

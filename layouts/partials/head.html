@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang='{{ if eq .Params.language "En"}}en{{else if eq .Params.language "No"}}no{{else}}sv{{end}}'>
+<html lang='{{ if eq .Params.language "en"}}en{{else if eq .Params.language "No"}}no{{else}}sv{{end}}'>
 <head>
   <!-- Site Title changes according to current page . -->
   <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
   <meta charset="utf-8">
-  <script src="https://cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"defer></script> 
+  <script src="https://cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "en"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"defer></script> 
 <link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml" importance="high">
 {{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
 {{ if .Params.background }}

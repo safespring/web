@@ -21,7 +21,7 @@ can be used to customize the text displayed on the card. {{% accordion title="Ht
 
 ```html
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where
+  {{ $language := .Get 0 }} {{ if eq $language "en"}} {{ range (where
   $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
   "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else
   if eq $language "No" }} {{ range (where $.Site.RegularPages "Section"
@@ -1300,7 +1300,7 @@ Renderar en lista med tjänstekort beroende på vilket språk som anges (En, No 
 
 ```html
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }} {{ if eq $language "En"}} {{ range (where
+  {{ $language := .Get 0 }} {{ if eq $language "en"}} {{ range (where
   $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
   "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{ else if eq
   $language "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam
@@ -1314,7 +1314,7 @@ Renderar en lista med tjänstekort beroende på vilket språk som anges (En, No 
 ### Exempel
 
 ```
-{{< services "En" >}}
+{{< services "en" >}}
 ```
 
 ### Renderat resultat
