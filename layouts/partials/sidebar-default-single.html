@@ -56,7 +56,7 @@
           {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med: {{ else }} Utforska{{ end }}
           {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med: {{ else if eq .Params.language "nb" }}Lær mer om{{ end }}
           {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with: {{ else if eq .Params.language "en" }}Optimize your service with:{{ end }}
-          {{else}}{{ if eq .Params.language "en"}}Optimize your service with:{{else if eq .Params.lanuage "No"}}Lær mer om{{else}}Utforska{{end}}
+          {{else}}{{ if eq .Params.language "en"}}Optimize your service with:{{else if eq .Params.lanuage "nb"}}Lær mer om{{else}}Utforska{{end}}
           {{ end }}
         </span>
         <ul>

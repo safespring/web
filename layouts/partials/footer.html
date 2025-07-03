@@ -536,8 +536,10 @@
   src="https://cdn.cookietractor.com/cookietractor-declaration.js"
   data-lang="{{ if eq .Params.language "en" }}
     en-GB
-  {{ else if eq .Params.language "No" }}
+  {{ else if eq .Params.language "nb" }}
     nb-NO
+  {{ else if eq .Params.language "da" }}
+    da-DK
   {{ else }}
     sv-SE
   {{ end }}"

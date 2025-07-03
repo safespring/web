@@ -24,7 +24,7 @@ can be used to customize the text displayed on the card. {{% accordion title="Ht
   {{ $language := .Get 0 }} {{ if eq $language "en"}} {{ range (where
   $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
   "cardorder" }} {{ .Render "li-index"}} {{ else }} {{ end }} {{ end }} {{ else
-  if eq $language "No" }} {{ range (where $.Site.RegularPages "Section"
+  if eq $language "nb" }} {{ range (where $.Site.RegularPages "Section"
   "no").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render
   "li-index"}} {{ else }} {{ end }} {{ end }} {{ else }} {{ range (where
   $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }} {{ if isset
@@ -1303,7 +1303,7 @@ Renderar en lista med tjänstekort beroende på vilket språk som anges (En, No 
   {{ $language := .Get 0 }} {{ if eq $language "en"}} {{ range (where
   $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
   "cardorder" }} {{ .Render "li-index"}} {{ end }} {{ end }} {{ else if eq
-  $language "No" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam
+  $language "nb" }} {{ range (where $.Site.RegularPages "Section" "no").ByParam
   "cardorder" }} {{ if isset .Params "cardorder" }} {{ .Render "li-index"}} {{
   end }} {{ end }} {{ else }} {{ range (where $.Site.RegularPages "Section"
   "tjanster").ByParam "cardorder" }} {{ if isset .Params "cardorder" }} {{

@@ -218,7 +218,7 @@
         if(parts.length===2 && personalDomains.includes(parts[1])){
           warning.style.display = "block";
           emailField.setCustomValidity(
-            '{{ if eq (.Get "language") "en" }}Please use your work email.{{ else if eq (.Get "language") "No" }}Bruk gjerne din jobbe-epost.{{ else }}Använd gärna din jobbmail.{{ end }}'
+            '{{ if eq (.Get "language") "en" }}Please use your work email.{{ else if eq (.Get "language") "nb" }}Bruk gjerne din jobbe-epost.{{ else }}Använd gärna din jobbmail.{{ end }}'
           );
         } else {
           warning.style.display = "none";

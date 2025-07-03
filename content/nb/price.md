@@ -25,7 +25,7 @@ slug: "pris"
 ## Last ned priskalkulator
 Bygg opp ditt nåværende miljø for å se hvor mye du sparer ved å flytte til Safespring. Priskalkulatoren er en Excel-fil med innebygd logikk for å beregne en månedskostnad basert på dine valg.
 
-{{< price-list language="No" >}}
+{{< price-list language="nb" >}}
 
 {{< distance >}}
 

@@ -19,6 +19,6 @@ Safespring leverer en lokalt basert sky bygget for morgendagens apper. Det gjør
 
 <div class="flexcontainer-shortcode" style="">
 
-{{< services "No" >}}
+{{< services "nb" >}}
 
 </div>
