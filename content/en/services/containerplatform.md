@@ -15,6 +15,12 @@ intro: "Explore Safespring’s highly scalable, Kubernetes cloud platform, desig
 background: ""
 sidebarlinkname: "Join the Beta Program"
 sidebarlinkurl: "#interested-in-trying-out-the-platform"
+sidebarlinkname2: "Email us"
+sidebarlinkurl2: "mailto:hello@safespring.com"
+sidebarimage: "safespring-petter.webp"
+sidebartext: "Would you like to talk about the service? My name is Petter Hylin, please contact me if you have any questions."
+sidebarphone: "073-533 65 21"
+sidebarmail: "hello@safespring.com"
 showthedate: false
 banner: "blue-hover-tech"
 language: "en"
