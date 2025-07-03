@@ -153,7 +153,7 @@ Et av hovedmålene med OCRE er å forenkle og standardisere prosessen for å ska
 
 Open Clouds for Research Environments (OCRE) er et EU-finansiert prosjekt som har som mål å fremme bruken av skytjenester og Earth Observation (EO) tjenester innen forskningssamfunnet. OCRE-prosjektet sikter mot å lette og aksellerere bruken av kommersielle skytjenester innen forskning ved å fungere som en bro mellom forskningssamfunnet og skytjenesteleverandørene.
 
-[Les mer om OCRE](/no/bransjer/utdanning-og-forskning/).
+[Les mer om OCRE](/bransjer/utdanning-og-forskning/).
 
 {{% /accordion %}}
 

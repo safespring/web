@@ -6,7 +6,7 @@ tags: ["Norsk"]
 intro: "Med OKD-community-installer kan du raskt spinne opp et OpenShift-cluster."
 background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakt oss"
-sidebarlinkurl: "/no/kontakt"
+sidebarlinkurl: "/kontakt"
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-openshift.svg"
@@ -51,7 +51,7 @@ På Safesprings Openstack-baserte infrastrukturplattform (IaaS) kan du raskt dis
 
 ### Du trenger dette for å komme i gang
 
-- Et prosjekt på [Safespring Compute](/no/tjenester/compute/) med følgende ressurser:
+- Et prosjekt på [Safespring Compute](/services/compute/) med følgende ressurser:
   - Memory: 60GB
   - VCPUs: 16
   - Security group rules: 40

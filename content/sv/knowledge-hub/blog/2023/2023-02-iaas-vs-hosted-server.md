@@ -46,4 +46,4 @@ Det finns många fördelar med IaaS jämfört med en hosted server:
 
 Med IaaS kan du dra nytta av dessa fördelar och få en "best server for hosting". Så, om du letar efter den bästa hosted servern, överväg att välja en cloud service istället. Du kommer inte att ångra dig!
 
-{{< horisontal-card image="/img/card/safespring-compute-icon.svg" cardtitle="Kom igång med Safespring Compute" text="Safespring Compute ger dig en flexibel och skalbar virtuell maskintjänst med automatisering och självbetjäning och levereras från säkra datahallar i Sverige." linktext="Läs mer" link="/tjanster/safespring-compute">}}
+{{< horisontal-card image="/img/card/safespring-compute-icon.svg" cardtitle="Kom igång med Safespring Compute" text="Safespring Compute ger dig en flexibel och skalbar virtuell maskintjänst med automatisering och självbetjäning och levereras från säkra datahallar i Sverige." linktext="Läs mer" link="/services/safespring-compute">}}

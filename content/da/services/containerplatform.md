@@ -37,11 +37,11 @@ Designet med skalerbarhed, compliance og omkostningseffektivitet for øje, under
 
 {{< icon-block-container >}}
 {{< icon-block icon="fas fa-cubes" text="Baseret på CNCF-projekter" link="" color="#195F8C">}}
-{{< icon-block icon="fak fa-safespring-icon" text="Drevet af Safespring Compute" link="/da/tjenester/safespring-compute/" color="#417DA5">}}
+{{< icon-block icon="fak fa-safespring-icon" text="Drevet af Safespring Compute" link="/services/safespring-compute/" color="#417DA5">}}
 {{< icon-block icon="fas fa-sparkles" text="GPU til ML og AI" link="" color="#3C9BCD">}}
 {{< icon-block icon="fas fa-sync" text="Dynamisk skalerbarhed" link="" color="#32CD32">}}
 {{< icon-block icon="fas fa-forward" text="Hurtig start, lav tærskel" link="" color="#FA690F">}}
-{{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk sikkerhed" link="/da/gdpr/" color="#417DA5">}}
+{{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk sikkerhed" link="/gdpr/" color="#417DA5">}}
 {{< /icon-block-container >}}
 
 ## Safespring Containerplatform: <br>Åben, suveræn og fleksibel

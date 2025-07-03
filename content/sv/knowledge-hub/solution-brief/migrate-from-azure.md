@@ -8,7 +8,7 @@ socialmedia: "/blogg/socialmedia/safespring_social_37.gif"
 intro: "Detta dokument sammanställer de steg som bör tas för att migrera från Azure Kubernetes Service."
 sidebarlinkname: "Läs som PDF"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "https://www.safespring.com/publications/safespring-migrering-fran-microsoft-azure-kubernetes-service-2021.pdf"
+sidebarlinkurl: "/publications/safespring-migrering-fran-microsoft-azure-kubernetes-service-2021.pdf"
 card: "safespring-azure.svg"
 sidebarimage: "safespring-azure.svg"
 toc: "Innehåll"
@@ -42,7 +42,7 @@ Flexibiliteten i att som tjänst kunna köpa funktioner som förut inte fanns el
 
 Majoriteten av de molnplattformar som företag använder idag är amerikanska. Dessa aktörer har växt till stora jättar med enorm innovationskraft och är en stor anledning till att vi idag arbetar på ett helt nytt sätt i organisationerna. Problemet är att lagrummet inom EU och USA inte är kompatibla när det kommer till hur persondata ska hanteras. Inom EU bygger GDPR (Dataskyddsförordningen) och andra lagar inom informationssäkerhet på EU:s grundlag som ger individen stor kontroll över sin data. I USA är utgångspunkten istället lagar som ger amerikanska myndigheter stora möjligheter att infiltrera det data som användarna lämnar ifrån sig för att upprätthålla nationens säkerhet.
 
-De skilda utgångspunkterna skapar en krock som juridiskt inte är helt lätt att reda ut. För mer information om det här ämnet rekommenderars [Safesprings white paper om Schrems II](https://www.safespring.com/schrems) som beskriver den senaste utvecklingen i samband med EU domstolens ogiltigförklarande av Privacy Shield, som de senaste åren har varit den överenskommelse som användandet av amerikanska molntjänster inom EU har vilat på.
+De skilda utgångspunkterna skapar en krock som juridiskt inte är helt lätt att reda ut. För mer information om det här ämnet rekommenderars [Safesprings white paper om Schrems II](/schrems) som beskriver den senaste utvecklingen i samband med EU domstolens ogiltigförklarande av Privacy Shield, som de senaste åren har varit den överenskommelse som användandet av amerikanska molntjänster inom EU har vilat på.
 
 Kvar står nu ett antal företag och organisationer som med ett fundament av molntjänster har anammat ett nytt sätt att arbeta utan laglig grund att använda dem. Det är en svår sits eftersom det inte är enkelt att gå tillbaka samtidigt som organisationer måste följa lagen.
 
@@ -232,7 +232,7 @@ När migreringen väl är genomförd väntar systemadministration och övervakni
 
 | Tjänst i Azure                               | Funktion                                                               | Open Source                                                                                                    | Managerat hos Safespring                          |
 | -------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Azure Kubernetes Service (AKS)               | Managerad Kubernetes                                                   | [Compliant Kubernetes](/tjanster/compliant-kubernetes)                                                         | {{< icon "fa-solid fa-circle-check" "#32CD32" >}} |
+| Azure Kubernetes Service (AKS)               | Managerad Kubernetes                                                   | [Compliant Kubernetes](/services/compliant-kubernetes)                                                         | {{< icon "fa-solid fa-circle-check" "#32CD32" >}} |
 | Azure Virtual Machine                        | Virtuella maskiner där Kubernetes kör (master och worker noder)        | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}} |
 | Azure Blob Storage                           | Objektlagring                                                          | N/A                                                                                                            | {{< icon "fa-solid fa-circle-check" "#32CD32" >}} |
 | Azure Mysql, Azure MariaDB, Azure PostgreSQL | Databaser                                                              | Galera-kluster (för MySQL eller MariaDB) med ProxySQL som kör i Kubernetes eller i separata virtuella maskiner | {{< icon "fa-solid fa-circle-check" "#32CD32" >}} |

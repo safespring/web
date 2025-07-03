@@ -553,12 +553,12 @@ for the sum/union of all parameters to be specified.
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]: https://docs.safespring.com/new/flavors/
-[firstblog]: https://www.safespring.com/blogg/2022-01-terraform-modules/
+[firstblog]: /blogg/2022-01-terraform-modules/
 [mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]: https://www.terraform.io/downloads
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
 [sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]: https://www.safespring.com/blogg/2022-03-network/
+[sshblog]: /blogg/2022-03-ssh-keys/
+[netblog]: /blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/

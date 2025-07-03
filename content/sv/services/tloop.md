@@ -8,7 +8,7 @@ intro: "Integrera Safespring On-Premise Cloud i T.Loops svenska hållbara anläg
 background: ""
 form: ""
 sidebarlinkname: "Läs om Private Cloud"
-sidebarlinkurl: "/tjanster/managed-infrastructure"
+sidebarlinkurl: "/services/managed-infrastructure"
 sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute"
 socialmedia: ""

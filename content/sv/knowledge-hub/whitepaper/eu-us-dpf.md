@@ -121,9 +121,9 @@ Att källkoden är öppen minskar möjligheterna för leverantörer och implemen
 
 ## Källförteckning
 
-[^1]: Safespring. (2018). _Cloud Act White Paper_. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/cloudact/)
+[^1]: Safespring. (2018). _Cloud Act White Paper_. Hämtad från [safespring.com](/whitepaper/cloudact/)
 
-[^2]: Safespring. (2020). _Schrems II White Paper_. Hämtad från [safespring.com](https://www.safespring.com/whitepaper/schrems-ii/)
+[^2]: Safespring. (2020). _Schrems II White Paper_. Hämtad från [safespring.com](/whitepaper/schrems-ii/)
 
 [^3]: Europeiska kommissionen. (2023). _C(2023) 4745 final_. Hämtad från [commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
 

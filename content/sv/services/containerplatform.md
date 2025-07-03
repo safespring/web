@@ -37,7 +37,7 @@ Utformad med skalbarhet, efterlevnad och kostnadseffektivitet i åtanke, stöder
 
 {{< icon-block-container >}}
 {{< icon-block icon="fas fa-cubes" text="Baserad på CNCF-projekt" link="" color="#195F8C">}}
-{{< icon-block icon="fak fa-safespring-icon" text="Drivs av Safespring Compute" link="/tjanster/safespring-compute/" color="#417DA5">}}
+{{< icon-block icon="fak fa-safespring-icon" text="Drivs av Safespring Compute" link="/services/safespring-compute/" color="#417DA5">}}
 {{< icon-block icon="fas fa-sparkles" text="GPU för ML och AI" link="" color="#3C9BCD">}}
 {{< icon-block icon="fas fa-sync" text="Dynamisk skalbarhet" link="" color="#32CD32">}}
 {{< icon-block icon="fas fa-forward" text="Snabb start, låg tröskel" link="" color="#FA690F">}}

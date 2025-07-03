@@ -46,8 +46,8 @@ There are many ways that a research and education organisation can do public pro
 Safespring's services are available via the OCRE 2024 framework in Denmark, Norway and Sweden. Choose your country below to reach the page in your language.
 
 {{< icon-block-container >}}
-{{< icon-block image="/img/flags/flag-denmark.svg" text="Denmark" link="/dk/geant/ocre-2024/" color="#195F8C">}}
-{{< icon-block image="/img/flags/flag-norway.svg" text="Norway" link="/no/bransjer/utdanning-og-forskning/" color="#195F8C">}}
+{{< icon-block image="/img/flags/flag-denmark.svg" text="Denmark" link="/geant/ocre-2024/" color="#195F8C">}}
+{{< icon-block image="/img/flags/flag-norway.svg" text="Norway" link="/bransjer/utdanning-og-forskning/" color="#195F8C">}}
 {{< icon-block image="/img/flags/flag-sweden.svg" text="Sweden" link="/branscher/utbildning-forskning/" color="#195F8C">}}
 {{< /icon-block-container >}}
 
@@ -84,7 +84,7 @@ Read more at the [GÉANT official website](https://geant.org/)
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="Safespring used in Research" link="/en/services/case/scilifelab/" linktext="Read More" text="Safespring Compute service plays a crucial role in supporting scientific research. A prominent example is our collaboration with SciLifeLab, where we assist in Compute resources and Storage capacity." >}}
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="Safespring used in Research" link="/services/case/scilifelab/" linktext="Read More" text="Safespring Compute service plays a crucial role in supporting scientific research. A prominent example is our collaboration with SciLifeLab, where we assist in Compute resources and Storage capacity." >}}
 
 {{< distance >}}
 

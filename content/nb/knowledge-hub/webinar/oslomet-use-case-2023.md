@@ -12,7 +12,7 @@ intro: 'OsloMET deler sine erfaringer med overgangen fra hjemmelaget automatiser
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "/no/demo"
+sidebarlinkurl: "/demo"
 sidebarlinkname: "demo av Safesprings skyplattform"
 sidebar: "x"
 sidebarimage: ""

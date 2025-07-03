@@ -559,14 +559,14 @@ If you found this post useful, be sure to check out the rest of the series on us
 
 {{% /note %}}
 
-[tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
+[tfmodulesblog]: /blogg/2022/2022-03-terraform-module/
 [ati]: https://github.com/safespring-community/utilities/blob/main/ati/terraform.py
 [ksparams]: https://github.com/kubernetes-sigs/kubespray/blob/master/docs/vars.md
 [kubespray]: https://github.com/kubernetes-sigs/kubespray
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
 [sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]: https://www.safespring.com/blogg/2022-03-network/
+[sshblog]: /blogg/2022-03-ssh-keys/
+[netblog]: /blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
 [osclidoc]: https://docs.safespring.com/new/api/

@@ -12,9 +12,9 @@ section: "blog"
 language: "nb"
 toc: ""
 sidebarlinkname: "Book demo"
-sidebarlinkurl: "/no/demo/"
+sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakt oss"
-sidebarlinkurl2: "/no/kontakt/"
+sidebarlinkurl2: "/kontakt/"
 aliases:
   - /blogg/2023/2023-03-egress-cost-no/
 ---
@@ -41,4 +41,4 @@ Safespring tror også på viktigheten av digital suverenitet, noe som betyr at b
 
 Ved å fokusere på åpne standarder, åpen kildekode-programvare og data suverenitet kan Safespring tilby en skytjeneste som er pålitelig og fleksibel, samtidig som kundene har kontroll over sine egne data.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/no/tjenester/compute/" linktext="Les mer" cardtitle="Vår skybaserte infrastrukturtjeneste" text="Vår infrastrukturtjeneste kjører i sikre datasentre innenfor EU og påvirkes ikke av utenlandske lover som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/compute/" linktext="Les mer" cardtitle="Vår skybaserte infrastrukturtjeneste" text="Vår infrastrukturtjeneste kjører i sikre datasentre innenfor EU og påvirkes ikke av utenlandske lover som CLOUD Act eller FISA 702." %}}

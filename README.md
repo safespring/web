@@ -66,7 +66,7 @@ To link to the correct translated page, use the following syntax:
 {{ end }}
 ```
 
-Which would link to `/contact`, `/sv/kontakt` and `/nb/kontakt` depending on the current language.
+Which would link to `/contact`, `https://safespring.se/kontakt` and `https://safespring.no/kontakt` assuming current language is english.
 
 ### Translation variables
 

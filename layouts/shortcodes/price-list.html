@@ -153,13 +153,13 @@
     function onSubmit(e) {
       var t;
       "function" != typeof window._bEmValid || !0 === window.__validEmail
-        ? validateForm(e, "https://www.safespring.com/hello/")
+        ? validateForm(e, "/hello/")
         : (e.preventDefault(),
           t = setInterval(function(){
             void 0 !== window.__validEmail &&
               (clearInterval(t),
               !0 === window.__validEmail &&
-                validateForm(e, "https://www.safespring.com/hello/"));
+                validateForm(e, "/hello/"));
           },300));
     }
     function validateForm(e, n) {

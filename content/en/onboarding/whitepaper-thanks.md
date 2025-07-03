@@ -18,4 +18,4 @@ We will send the White paper you just downloaded to the email address you provid
 
 If you need help or need to get in touch with us, please send an email to info@safespring.com.
 
-{{% localbutton text="Contact Safespring" link="/en/contact" %}}
+{{% localbutton text="Contact Safespring" link="/contact" %}}

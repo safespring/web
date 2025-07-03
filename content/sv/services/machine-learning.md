@@ -16,7 +16,7 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakta Safespring"
-sidebarlinkurl2: "/en/contact"
+sidebarlinkurl2: "/contact"
 sidebarimage: "safespring-petter.webp"
 sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "073-533 65 21"
@@ -49,7 +49,7 @@ Genom att utnyttja Safespring molntjänst i kombination med FEDns federerade mas
 {{< horisontal-card
 image="/img/card/safespring-scaleut_use-case-ebba.webp"
 cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data"
-link="/tjanster/case/scaleout/"
+link="/services/case/scaleout/"
 linktext="Läs Use Case"
 text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 

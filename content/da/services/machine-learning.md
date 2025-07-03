@@ -16,7 +16,7 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: "Book demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakt Safespring"
-sidebarlinkurl2: "/da/contact"
+sidebarlinkurl2: "/contact"
 socialmedia: ""
 aliases:
   - /da/tjenester/machine-learning/
@@ -51,7 +51,7 @@ Ved at udnytte Safesprings sikre cloud-platform kombineret med FEDns kraftfulde 
 {{< horisontal-card
     image="/img/card/safespring-scaleut_use-case-ebba.webp"
     cardtitle="Ebba fra Scaleout deler indsigt om vigtigheden af at håndtere følsomme data"
-    link="/da/services/case/scaleout/"
+    link="/services/case/scaleout/"
     linktext="Læs Use Case"
     text="Da maskinlæring involverer følsomme data, bliver sikker håndtering og at stole på pålidelig infrastruktur som Safesprings kritisk." >}}
 

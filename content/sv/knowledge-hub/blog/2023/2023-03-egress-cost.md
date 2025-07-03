@@ -41,4 +41,4 @@ Safespring tror också på vikten av digital suveränitet, vilket innebär att a
 
 Genom att fokusera på öppna standarder, open source-programvara och data suveränitet, kan Safespring erbjuda en molnlösning som är både pålitlig och flexibel, samtidigt som kunderna har kontroll över sin egen data.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-compute/" linktext="Läs mer" cardtitle="En svensk publik molnplattform" text="Vår infrastrukturtjänst kör i säkra datacenters inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/safespring-compute/" linktext="Läs mer" cardtitle="En svensk publik molnplattform" text="Vår infrastrukturtjänst kör i säkra datacenters inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}

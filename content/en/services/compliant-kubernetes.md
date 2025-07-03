@@ -62,4 +62,4 @@ Therefore, Sweden's regions and municipalities set clear requirements that perso
 
 Boost your competitiveness in Europe with the right cloud service and increase your sales.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/en/services/compute/" linktext="Read more" cardtitle="Safespring Compute: The Foundation for Welkin" text="Our infrastructure service is run in state-of-the-art data centers within the EU, protected from laws like the CLOUD Act or FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/compute/" linktext="Read more" cardtitle="Safespring Compute: The Foundation for Welkin" text="Our infrastructure service is run in state-of-the-art data centers within the EU, protected from laws like the CLOUD Act or FISA 702." %}}

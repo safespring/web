@@ -120,6 +120,6 @@ Safespring offers a free assessment service to help you migrate workloads from V
 
 {{< distance >}}
 
-[tfmodulesblog]: https://www.safespring.com/blogg/2022/2022-03-terraform-module/
+[tfmodulesblog]: /blogg/2022/2022-03-terraform-module/
 [survey]: https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd
 [openstackmig]: https://www.openstack.org/vmware-migration-to-openstack-white-paper

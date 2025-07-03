@@ -16,7 +16,7 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: "Schedule demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Contact Safespring"
-sidebarlinkurl2: "/en/contact"
+sidebarlinkurl2: "/contact"
 socialmedia: ""
 aliases:
   - /en/services/machine-learning-ai-gpu-resources/
@@ -51,7 +51,7 @@ By leveraging Safespring’s secure cloud platform combined with FEDn's powerful
 {{< horisontal-card
     image="/img/card/safespring-scaleut_use-case-ebba.webp"
     cardtitle="Ebba from Scaleout shares insights on the importance of managing sensitive data"
-    link="/en/services/case/scaleout/"
+    link="/services/case/scaleout/"
     linktext="Read Use Case"
     text="“Since machine learning involves sensitive data, secure management and relying on trusted infrastructure like Safespring's becomes critical.”" >}}
 

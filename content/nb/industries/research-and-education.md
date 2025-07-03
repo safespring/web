@@ -74,7 +74,7 @@ Finn ut mer på [GÉANTs nettsted](https://geant.org/).
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="Safespring i forskning" link="/no/tjenester/case/scilifelab/" linktext="Les use case" text="Safesprings skytjenester spiller en avgjørende rolle i vitenskapelig forskning. Et godt eksempel er samarbeidet vårt med SciLifeLab, der vi leverer compute og lagring." >}}
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="Safespring i forskning" link="/services/case/scilifelab/" linktext="Les use case" text="Safesprings skytjenester spiller en avgjørende rolle i vitenskapelig forskning. Et godt eksempel er samarbeidet vårt med SciLifeLab, der vi leverer compute og lagring." >}}
 
 {{< distance >}}
 

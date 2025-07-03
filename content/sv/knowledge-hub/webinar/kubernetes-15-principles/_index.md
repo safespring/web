@@ -140,5 +140,5 @@ Oavsett om du är nybörjare eller erfaren användare av Kubernetes, så finns d
 
 Tillsammans kan vi fortsätta att utveckla och förbättra våra färdigheter för att skapa framtidens molnbaserade applikationer.
 
-{{< 2calltoaction "Ta kontakt" "/demo" "Läs mer om Kubernetes på Safespring" "/tjanster/compliant-kubernetes" >}}
+{{< 2calltoaction "Ta kontakt" "/demo" "Läs mer om Kubernetes på Safespring" "/services/compliant-kubernetes" >}}
 {{% /note %}}

@@ -7,7 +7,7 @@ intro: "Overview and understanding from a management point of view enabling mana
 background: ""
 sidebarlinkname: "Course description"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "https://www.safespring.com/marketing/safespring-service-description-courses-english.pdf"
+sidebarlinkurl: "/marketing/safespring-service-description-courses-english.pdf"
 socialmedia: "safespring-devops.jpg"
 aliases:
   - /tjanster/utbildning/introduction-to-infrastructure-as-a-service-for-managers/

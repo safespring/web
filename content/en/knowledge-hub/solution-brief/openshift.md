@@ -6,7 +6,7 @@ tags: ["English"]
 intro: "With the OKD community installer, you can quickly get an OpenShift cluster up-and-running."
 background: "safespring-compute.jpg"
 sidebarlinkname: "Contact Us"
-sidebarlinkurl: "/en/contact"
+sidebarlinkurl: "/contact"
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-openshift.svg"
@@ -49,7 +49,7 @@ On Safespring's Openstack-based infrastructure platform, you can quickly deploy 
 
 ### You need this to get started
 
-- A project on [Safespring Compute](/en/services/compute/) with the following resources:
+- A project on [Safespring Compute](/services/compute/) with the following resources:
   - Memory: 60GB
   - VCPUs: 16
   - Security group rules: 40

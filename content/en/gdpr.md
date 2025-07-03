@@ -11,7 +11,7 @@ socialmedia: ""
 sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact us"
-sidebarlinkurl2: "/en/contact"
+sidebarlinkurl2: "/contact"
 saas: ""
 TOC: "On this page"
 aliases:

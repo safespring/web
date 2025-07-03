@@ -62,4 +62,4 @@ Derfor stiller Sveriges regioner og kommuner klare krav om, at persondata skal o
 
 Øg jeres konkurrenceevne i Europa med den rigtige cloud-tjeneste og øg jeres salg.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/da/services/compute/" linktext="Læs mere" cardtitle="Safespring Compute: Fundamentet for Welkin" text="Vores infrastrukturtjeneste drives i state-of-the-art datacentre inden for EU, beskyttet mod love som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/compute/" linktext="Læs mere" cardtitle="Safespring Compute: Fundamentet for Welkin" text="Vores infrastrukturtjeneste drives i state-of-the-art datacentre inden for EU, beskyttet mod love som CLOUD Act eller FISA 702." %}}

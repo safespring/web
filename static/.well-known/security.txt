@@ -2,7 +2,7 @@
 Contact: hello@safespring.com
 
 # Our security policy
-Policy: https://www.safespring.com/en/documents/data-protection-policy/
+Policy: https://www.safespring.com/documents/data-protection-policy/
 
 # Our status page
 Acknowledgments: https://status.safespring.com

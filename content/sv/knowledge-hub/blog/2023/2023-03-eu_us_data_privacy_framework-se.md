@@ -37,6 +37,6 @@ En lösning som redan finns idag är att välja europeiska IaaS (Infrastructure-
 
 {{< distance >}}
 
-{{% custom-card cardtitle="Se webcast" image="/img/card/safespring-image.svg" link="https://www.safespring.com/webinar/sixth-fireside-chat-it-sakerhetsbolaget/" linktext="Se webcast" %}}
+{{% custom-card cardtitle="Se webcast" image="/img/card/safespring-image.svg" link="/webinar/sixth-fireside-chat-it-sakerhetsbolaget/" linktext="Se webcast" %}}
 President Biden har undertecknat en presidentorder om förbättrade skyddsåtgärder för USA:s signalspaningsverksamhet. Vad innebär det?
 {{% /custom-card %}}

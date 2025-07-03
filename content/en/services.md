@@ -9,7 +9,7 @@ socialmedia: "/safespring-start.jpg"
 sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Price"
-sidebarlinkurl2: "/en/price/"
+sidebarlinkurl2: "/price/"
 aliases:
   - /en/services/
 ---

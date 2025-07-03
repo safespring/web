@@ -88,7 +88,7 @@ API-based provisioning (e.g. Terraform).
 There are other benefits as well. For example, if you want to deploy to
 instances on the private (RFC1918) network, the only way to do that is through a
 public instance in the same site. We've written about that in detail in
-[another blog post](https://www.safespring.com/blogg/2022-03-network/).
+[another blog post](/blogg/2022-03-network/).
 You could of course create a specific jump for this purpose alone, however,
 doing all provisioning and deployments from a single host is far more
 convenient.

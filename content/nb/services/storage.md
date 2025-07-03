@@ -15,7 +15,7 @@ form: "yes"
 sidebarlinkname: "Kom i gang"
 sidebarlinkurl: "#contact"
 sidebarlinkname2: "Pris for Storage"
-sidebarlinkurl2: "/no/pris/#safespring-storage-s3"
+sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
@@ -58,7 +58,7 @@ Trenger applikasjonen din rask tilgang til lagrede data, eller ser du etter en l
 
 1. Ingen trafikkostnad belastes fra tjenesten, det som kalles egress-cost og ingress-cost. Du kan lese mer om denne funksjonen i vår artikkel: [Safespring tar ikke ut noen trafikkavgifter](/blogg/2023/2023-03-egress-cost/).
 1. Safespring Storage prioriterer datasikkerheten din. Med funksjoner som objektlåsning og ACL-er har du full kontroll over dataenes tilgjengelighet og beskyttelse.
-1. Betal kun for lagringen du bruker. Safespring Storage tilbyr [fleksible prismodeller](/no/pris/#safespring-storage-s3) som kan tilpasses dine spesifikke behov, noe som gir kostnadsbesparelser når du skalerer.
+1. Betal kun for lagringen du bruker. Safespring Storage tilbyr [fleksible prismodeller](/pris/#safespring-storage-s3) som kan tilpasses dine spesifikke behov, noe som gir kostnadsbesparelser når du skalerer.
 1. Vårt erfarne kundestøtteteam er tilgjengelig for å hjelpe deg med alle spørsmål eller utfordringer, noe som sikrer en smidig Safespring-opplevelse.
 
 ### Bruksområder
@@ -69,7 +69,7 @@ Lagre og distribuer store mediefiler, dokumenter og andre digitale eiendeler eff
 
 #### Stordataanalyse
 
-Utnytt Safespring Storage til å lagre store datasett som kreves for analyse- og maskinlæringsapplikasjoner. Les mer om hvordan [SciLifeLab bruker Safespring til forskning innen livsvitenskap](/tjanster/case/scilifelab/.
+Utnytt Safespring Storage til å lagre store datasett som kreves for analyse- og maskinlæringsapplikasjoner. Les mer om hvordan [SciLifeLab bruker Safespring til forskning innen livsvitenskap](/services/case/scilifelab/.
 
 #### Databackup og gjenoppretting
 

@@ -45,4 +45,4 @@ En av presentationerna som Safespring kommer att medverka i under CS3 är om den
 
 Vi är stolta över att vara med och presentera Sunet Drive på CS3-konferensen och ser fram emot att diskutera de senaste trenderna inom vetenskapligt samarbete med våra kollegor. Du kan redan nu ta del av [presentationen om Sunet Drive](https://indico.cern.ch/event/1210538/contributions/5207911/attachments/2603770/4496553/SunetDrive-SiteReport-CS3-2023.pptx.pdf).
 
-För att läsa mer om Safesprings molnbaserade tjänster för forskning och utbildning, besök gärna [vår sida om den akademiska sektorn](https://www.safespring.com/branscher/utbildning-forskning). Vi ser fram emot att träffa er på CS3-konferensen!
+För att läsa mer om Safesprings molnbaserade tjänster för forskning och utbildning, besök gärna [vår sida om den akademiska sektorn](/branscher/utbildning-forskning). Vi ser fram emot att träffa er på CS3-konferensen!

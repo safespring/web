@@ -85,8 +85,8 @@ Detta kan göra det svårt för organisationen att byta levererantör. [Läs mer
 
 {{% note "Läs mer" %}}
 
-1. [Vitpapper om amerikansk polisiär och underrättelselagstiftning och Dataskyddsförordningen.](https://www.safespring.com/whitepaper/cloudact/)
-2. [Vitpapper om tekniska och rättsliga effekter av EU-domstolens så kallade “Schrems II”-mål, där Dataskölden ogiltigförklarades, med rekommendationer till offentliga aktörer.](https://www.safespring.com/whitepaper/schrems-ii/)
+1. [Vitpapper om amerikansk polisiär och underrättelselagstiftning och Dataskyddsförordningen.](/whitepaper/cloudact/)
+2. [Vitpapper om tekniska och rättsliga effekter av EU-domstolens så kallade “Schrems II”-mål, där Dataskölden ogiltigförklarades, med rekommendationer till offentliga aktörer.](/whitepaper/schrems-ii/)
 
 {{% /note %}}
 

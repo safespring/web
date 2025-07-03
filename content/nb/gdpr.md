@@ -9,9 +9,9 @@ background: "safespring-blue-fade2.svg"
 darkmode: "off"
 socialmedia: ""
 sidebarlinkname: "Bestill demo"
-sidebarlinkurl: "/no/demo"
+sidebarlinkurl: "/demo"
 sidebarlinkname2: "Kontakt Safespring"
-sidebarlinkurl2: "/no/kontakt"
+sidebarlinkurl2: "/kontakt"
 saas: ""
 TOC: "På denne siden"
 aliases:
@@ -128,7 +128,7 @@ Sentral blokklagring for økt redundans: Som en del av vår tjeneste tilbyr vi s
 {{% /accordion %}}
 {{< accordion-script >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Føderert maskinlæring" link="/tjenester/case/scaleout/" linktext="Les Use Case" text="“Det er verdi i å ha kritisk infrastruktur plassert i Sverige hvor vi ikke er avhengige av andre lands lovgivning...“ – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Føderert maskinlæring" link="/services/case/scaleout/" linktext="Les Use Case" text="“Det er verdi i å ha kritisk infrastruktur plassert i Sverige hvor vi ikke er avhengige av andre lands lovgivning...“ – Ebba Kreamer, Scaleout" >}}
 
 ## Interne databeskyttelsestiltak
 

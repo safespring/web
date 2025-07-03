@@ -14,7 +14,7 @@ documentation: "Compute"
 sidebarlinkname: "Bestill demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
-sidebarlinkurl2: "/no/pris/#safespring-compute"
+sidebarlinkurl2: "/pris/#safespring-compute"
 language: "nb"
 section: "Safespring Compute"
 socialmedia: "/safespring-start.jpg"
@@ -43,12 +43,12 @@ Safespring Compute tilbyr en skybasert infrastrukturtjeneste som gir deg fleksib
 1. Full kontroll over dine data: Safespring Compute sikrer at dine data forblir i Norge, og alle datasentrene er fysisk plassert i landet. Dette garanterer optimal datasikkerhet og overholdelse av norske lover og regler.
 1. Selvbetjening og automatisering: Safespring Compute skytjeneste tilbyr en brukervennlig portal hvor du enkelt kan starte og stoppe servere. Du kan også programmere serverstyring med standardiserte API-kommandoer, noe som gjør tjenesten svært automatiserbar og effektiv.
 1. Kostnadseffektivitet: Med Safespring Compute betaler du kun for de ressursene du faktisk bruker, og minste kostnadsbelastning er per time. Dette gir deg full kontroll over IT-kostnadene og unngår store investeringer i ny maskinvare.
-1. Fleksible lagringsalternativer: Safespring tilbyr to ulike [lagringstjenester](/no/tjenester/storage/) – slik at du kan balansere dine behov mellom beste ytelse og laveste kostnad.
+1. Fleksible lagringsalternativer: Safespring tilbyr to ulike [lagringstjenester](/services/storage/) – slik at du kan balansere dine behov mellom beste ytelse og laveste kostnad.
 1. Støtte for akademiske sektorer: Safespring Compute er en pålitelig partner for universiteter, høyskoler og forskningsmiljøer i Sverige og Norge, og tilbyr tjenester som er spesielt utviklet for å møte kravene til forsknings- og utdannelsessektoren.
 
 Safespring Compute kan forbedre din organisasjons IT-infrastruktur gjennom sin skybaserte løsning. Besøk vår nettside og bestill en demo i dag.
 
-{{< localbutton text="Kom i gang" link="/no/demo/" >}}
+{{< localbutton text="Kom i gang" link="/demo/" >}}
 {{< distance >}}
 
 Oppdag fordelene ved Safespring Compute og la oss hjelpe deg med å skape en fleksibel, sikker og kostnadseffektiv IT-løsning for din organisasjon. Invester i en norsk skytjeneste som gir deg den beste balansen mellom ytelse og sikkerhet.

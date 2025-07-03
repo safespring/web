@@ -93,7 +93,7 @@ https://nextcloud.com
 
 Safesprings S3-tjänst är designad med hög säkerhet och flexibilitet i fokus. Det finns vissa fall då men kan behöva ännu större möjligheter.
 
-Initiativet Minio är ett öppen källkodsprojekt med vilket du kan sätta upp din alldeles egna privata installation av en S3-komplativa tjänst. För att säkerställa åtkomst och tillgänglighet så går det utmärkt att sätta upp det i [Safesprings Compute tjänst](/tjanster/safespring-compute).
+Initiativet Minio är ett öppen källkodsprojekt med vilket du kan sätta upp din alldeles egna privata installation av en S3-komplativa tjänst. För att säkerställa åtkomst och tillgänglighet så går det utmärkt att sätta upp det i [Safesprings Compute tjänst](/services/safespring-compute).
 
 Fördelarna med en sådan lösning är att du får full kontroll på alla inställningar för S3-tjänsten och att den blir privat för ditt företag. Du kan själv styra policies för åtkomst, inloggning och lagring. Filerna som lagras i tjänsten läggs på Safesprings Computetjänst av typen Large, vilket ger en något högre kostnad men å andra sidan så kan du styra precis allting själv.
 

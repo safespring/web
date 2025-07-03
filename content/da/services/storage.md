@@ -15,7 +15,7 @@ form: "yes"
 sidebarlinkname: "Kom i gang"
 sidebarlinkurl: "#contact"
 sidebarlinkname2: "Pris for Storage"
-sidebarlinkurl2: "/da/pris/#safespring-storage-s3"
+sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
@@ -58,7 +58,7 @@ Har din applikation brug for hurtig adgang til lagrede data, eller leder du efte
 
 1. Ingen trafikomkostninger opkræves fra tjenesten, det der kaldes egress-cost og ingress-cost. Du kan læse mere om denne funktion i vores artikel: [Safespring tager ikke trafikafgifter](/blogg/2023/2023-03-egress-cost/).
 1. Safespring Storage prioriterer din datasikkerhed. Med funktioner som objektlåsning og ACL'er har du fuld kontrol over dine datas tilgængelighed og beskyttelse.
-1. Betal kun for den lagring, du bruger. Safespring Storage tilbyder [fleksible prismodeller](/da/pris/#safespring-storage-s3), der kan tilpasses dine specifikke behov og giver omkostningsbesparelser, når du skalerer.
+1. Betal kun for den lagring, du bruger. Safespring Storage tilbyder [fleksible prismodeller](/pris/#safespring-storage-s3), der kan tilpasses dine specifikke behov og giver omkostningsbesparelser, når du skalerer.
 1. Vores erfarne kundesupportteam er tilgængeligt til at hjælpe dig med alle spørgsmål eller udfordringer og sikrer en smidig Safespring-oplevelse.
 
 ### Anvendelsesområder
@@ -69,7 +69,7 @@ Lagre og distribuer store mediefiler, dokumenter og andre digitale aktiver effek
 
 #### Big Data-analyse
 
-Udnyt Safespring Storage til at lagre store datasæt, der kræves til analyse- og machine learning-applikationer. Læs mere om, hvordan [SciLifeLab bruger Safespring til forskning inden for livsvidenskab](/tjanster/case/scilifelab/).
+Udnyt Safespring Storage til at lagre store datasæt, der kræves til analyse- og machine learning-applikationer. Læs mere om, hvordan [SciLifeLab bruger Safespring til forskning inden for livsvidenskab](/services/case/scilifelab/).
 
 #### Databackup og gendannelse
 

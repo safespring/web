@@ -38,7 +38,7 @@ Om det förekommer sekretessreglerade uppgifter i er SaaS, vare sig det är uppg
 {{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/containerplattform/" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Tekniken

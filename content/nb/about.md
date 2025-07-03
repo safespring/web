@@ -28,4 +28,4 @@ Fra våre profesjonelle datasentre i Sverige og Norge inkluderer leveransen av i
 
 Våre tjenester er basert på Open Source. De siste tiårene har vist at programvare med åpen kildekode gir et ekstremt kraftig økosystem av selskaper og organisasjoner som har de samme behovene, men samtidig behovet for tilpassede løsninger.
 
-<br><br><a href="/no/tjenester" id="button">Våre tjenester</a>
+<br><br><a href="/services" id="button">Våre tjenester</a>

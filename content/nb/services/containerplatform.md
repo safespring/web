@@ -37,7 +37,7 @@ Utformet for skalerbarhet og kostnadseffektivitet, trygt forankret i norske verd
 
 {{< icon-block-container >}}
 {{< icon-block icon="fas fa-cubes" text="Basert på CNCF-prosjekter" link="" color="#195F8C">}}
-{{< icon-block icon="fak fa-safespring-icon" text="Drevet av Safespring Compute" link="/tjanster/safespring-compute/" color="#417DA5">}}
+{{< icon-block icon="fak fa-safespring-icon" text="Drevet av Safespring Compute" link="/services/safespring-compute/" color="#417DA5">}}
 {{< icon-block icon="fas fa-sparkles" text="GPU for ML og AI" link="" color="#3C9BCD">}}
 {{< icon-block icon="fas fa-sync" text="Dynamisk skalerbarhet" link="" color="#32CD32">}}
 {{< icon-block icon="fas fa-forward" text="Rask oppstart, lav terskel" link="" color="#FA690F">}}

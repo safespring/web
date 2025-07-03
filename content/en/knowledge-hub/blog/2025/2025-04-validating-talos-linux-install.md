@@ -18,7 +18,7 @@ aliases:
   - /blogg/2025/2025-04-validating-talos-linux-intstall/
 ---
 
-In a [previous article](https://www.safespring.com/blogg/2025/2025-03-talos-linux-on-openstack/) we started to explore Talos Linux and what that could mean for us, and how we can automate the installation on Safespring OpenStack, but we wanted to go a few steps further in our investigation and look into confirming two more aspects:
+In a [previous article](/blogg/2025/2025-03-talos-linux-on-openstack/) we started to explore Talos Linux and what that could mean for us, and how we can automate the installation on Safespring OpenStack, but we wanted to go a few steps further in our investigation and look into confirming two more aspects:
 
 1. Validate that Kubernetes cluster and underlying CNI installed correctly.
 2. Upgrade both the Operating system and the Kubernetes version.
@@ -33,7 +33,7 @@ There are a few prerequisites to to be able to replicate the steps and while we 
 - Kubernetes Command line tool `kubectl`.
 - Podman/Docker.
 - OpenStack credentials (also include OpenStack ec2 credentials for state s3 store).
-- Talos cluster provisioned with [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) as well as [Cinder CSI](https://www.safespring.com/blogg/2024/2024-03-cinder-csi-volume-provisioner/).
+- Talos cluster provisioned with [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) as well as [Cinder CSI](/blogg/2024/2024-03-cinder-csi-volume-provisioner/).
 {{% /note %}}
 
 Onward with the hands-on steps:

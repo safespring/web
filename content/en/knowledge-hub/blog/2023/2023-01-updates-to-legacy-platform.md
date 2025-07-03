@@ -50,4 +50,4 @@ Thank you for your understanding and cooperation.
 Best regards,  
 Safespring Support Team
 
-{{< 2calltoaction "Contact support" "mailto:support@safespring.com" "More about our platform" "/en/services/" >}}
+{{< 2calltoaction "Contact support" "mailto:support@safespring.com" "More about our platform" "/services/" >}}

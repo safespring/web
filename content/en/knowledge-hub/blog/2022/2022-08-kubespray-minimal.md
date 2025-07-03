@@ -502,8 +502,8 @@ $ terraform destroy -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvar
 [kubespray]: https://github.com/kubernetes-sigs/kubespray
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
 [sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]: https://www.safespring.com/blogg/2022-03-ssh-keys/
-[netblog]: https://www.safespring.com/blogg/2022-03-network/
+[sshblog]: /blogg/2022-03-ssh-keys/
+[netblog]: /blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
 [osclidoc]: https://docs.safespring.com/new/api/

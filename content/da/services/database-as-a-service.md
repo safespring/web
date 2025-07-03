@@ -17,7 +17,7 @@ socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakt Safespring"
-sidebarlinkurl2: "/da/kontakt"
+sidebarlinkurl2: "/kontakt"
 sidebarsection: ""
 sidebarimage: "safespring-petter.webp"
 sidebartext: "Vil du tale om tjenesten? Mit navn er Petter Hylin, kontakt mig venligst, hvis du har spørgsmål."
@@ -45,7 +45,7 @@ Database-som-service tager sig af alt og giver dig tilgængelige databaser med h
 
 Tjenesten bygges af vores partner Severalnines på Safespring. At administrere et komplekst, klustret databasemiljø er tidskrævende og ofte skræmmende. Med blot nogle få enkle klik kan du implementere et fuldt administreret, lastbalanceret, højtilgængeligt databasekluster til MySQL, MariaDB eller PostgreSQL, der leverer ydeevne, oppetid og enkelhed.
 
-{{< 2calltoaction "Book demo" "/demo" "Kontakt os" "/da/kontakt" >}}
+{{< 2calltoaction "Book demo" "/demo" "Kontakt os" "/kontakt" >}}
 
 {{< distance >}}
 
@@ -83,4 +83,4 @@ Priskomponenterne er antallet af server-vCPU'er og tilhørende RAM, mængden af 
 | Første 1024GB | GRATIS      |
 | Over 1024 GB  | 0,95 DKK/GB |
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/da/tjenester/safespring-compute/" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Database as a service" text="Safespring kører i datacentre i Europa og påvirkes ikke af udenlandsk lovgivning som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/safespring-compute/" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Database as a service" text="Safespring kører i datacentre i Europa og påvirkes ikke af udenlandsk lovgivning som CLOUD Act eller FISA 702." %}}

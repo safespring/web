@@ -58,7 +58,7 @@ Safespring grundades 2014 som en del av IPnett och vann en upphandling för att 
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="SciLifeLabs forskning på Safespring" link="/tjanster/case/scilifelab/" linktext="Läs mer" text="Vår Compute-tjänst spelar en avgörande roll i att stödja vetenskaplig forskning. Ett framstående exempel är vårt samarbete med SciLifeLab, där vi hjälper till att driva genombrott inom livsvetenskaperna." >}}
+{{< horisontal-card image="/img/background/safespring-scilifelab.webp" cardtitle="SciLifeLabs forskning på Safespring" link="/services/case/scilifelab/" linktext="Läs mer" text="Vår Compute-tjänst spelar en avgörande roll i att stödja vetenskaplig forskning. Ett framstående exempel är vårt samarbete med SciLifeLab, där vi hjälper till att driva genombrott inom livsvetenskaperna." >}}
 
 {{< distance >}}
 

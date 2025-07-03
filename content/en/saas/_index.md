@@ -41,7 +41,7 @@ If your SaaS contains confidential information, whether it is information covere
 {{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" link="/om-safespring/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Read Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Read about Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/tjanster/containerplattform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/containerplattform/" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Technology

@@ -15,7 +15,7 @@ form: "no"
 sidebarlinkname: "Get started"
 sidebarlinkurl: "#contact"
 sidebarlinkname2: "Price for Storage"
-sidebarlinkurl2: "/en/price/#safespring-storage-s3"
+sidebarlinkurl2: "/price/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public Cloud"
 documentation: "Storage"
@@ -55,7 +55,7 @@ Do your application need high speed access to the stored data or are you looking
 
 1. No traffic cost is charged from the service, what is called egress-cost and ingress-cost.
 1. Safespring Storage prioritizes your data security. With features like Object Locking and ACLs, you have full control over your data's accessibility and protection.
-1. Only pay for the storage you use. Safespring Storage offers [flexible pricing](/en/price/#safespring-storage-s3) models that can be tailored to your specific needs, providing cost savings as you scale.
+1. Only pay for the storage you use. Safespring Storage offers [flexible pricing](/price/#safespring-storage-s3) models that can be tailored to your specific needs, providing cost savings as you scale.
 1. Our expert customer experience team is available to assist you with any questions or issues, ensuring a smooth experience with Safespring Storage.
 
 ### Use cases
@@ -66,7 +66,7 @@ Store and distribute large media files, documents, and other digital assets effi
 
 #### Big Data Analytics
 
-Leverage Safespring Storage for storing large datasets required for analytics and machine learning applications. Read more about how [SciLifeLab uses Safespring to reasearch life science](http://localhost:1313/en/services/case/scilifelab/).
+Leverage Safespring Storage for storing large datasets required for analytics and machine learning applications. Read more about how [SciLifeLab uses Safespring to reasearch life science](/services/case/scilifelab/).
 
 #### Data Backup and Recovery
 
