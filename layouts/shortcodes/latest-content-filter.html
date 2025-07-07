@@ -1,110 +1,169 @@
-  <section class="tf-buttons-container-center">
-    {{ $pages := where .Site.RegularPages "Section" "knowledge-hub" }}
-    {{ $pages = $pages | union (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
-    {{ $sections := .Site.Params.mainSections }}
-    {{ $.Scratch.Set "authors" (slice ) }}
-    {{ $.Scratch.Set "noAuthors" 0 }}
-    {{ range $pages }}
-    {{ with .Params.author }}
-    {{ if eq ( printf "%T" . ) "string"  }}
-      {{ if ( not ( in ($.Scratch.Get "authors") . ) ) }}
-        {{ $.Scratch.Add "authors" . }}
-      {{ end }}
-    {{ else if ( printf "%T" . ) "[]string" }}
-      {{ range . }}
-        {{ if ( not ( in ($.Scratch.Get "authors") . ) ) }}
-          {{ $.Scratch.Add "authors" . }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-    {{ else }}
-      {{ $.Scratch.Add "noAuthors" 1 }}
-    {{ end }}
-    {{ end }}
-    {{ $tags := $.Site.Taxonomies.tags.ByCount }}
-    {{ $.Scratch.Set "untagged" 0 }}
-    {{ range $pages }}
-    {{ with .Params.tags }}{{ else }}{{ $.Scratch.Add "untagged" 1 }}{{ end }}
-    {{ end }}
-      <div class="tf-buttons-container">
-        <button xx id="selectAllSections" onclick="htf.showAll('section')"> All </button>
-        {{ range $sections }}
-        <button xx class="sect-button" id="sect-{{ . | urlize }}" onclick="htf.checkFilter('{{ . | urlize }}', 'sect-')">
-          {{ . | title }}
-          <span class="filter-number">(</span>
-          <span class="filter-number" id="ssect-{{ . | urlize }}">-count-</span>
-          <span class="filter-number">/</span>
-          <span class="filter-number" id="csect-{{ . | urlize }}"> -count-</span>
-          <span class="filter-number">)</span>
-        </button>
-        {{ end }}
-        </div>
-        <div class="line">
-          <button xx class="text" id="selectAllTags" onclick="htf.showAll('tags')"> All languages </button>
-          {{ range $tags }}
-          {{ if .Term }}
-          <button xx class="tag-button text" id="tag-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'tag-')">
-            <span>{{.Term | humanize | title }}</span>
-            <span class="filter-number">(</span>
-            <span class="filter-number" id="stags-{{ .Term | urlize }}"> -count-</span>
-            <span class="filter-number">/</span>
-            <span class="filter-number" id="ctags-{{ .Term | urlize }}">-count-</span>
-            <span class="filter-number">)</span>
-          </button>
-          {{ end }}
-          {{ end }}
-        </div>
-        {{ if gt ( $.Scratch.Get "untagged") 0 }}
-        <button xx class="tag-button" id="tag-tfuntagged" onclick="htf.checkFilter('tfuntagged', 'tag-')"> Untagged <span id="stags-tfuntagged"> -count-</span> | <span id="ctags-tfuntagged"> -count-</span>
-        </button>
-        {{ end }}
+{{ $knowledgeHub := where .Site.RegularPages "Section" "knowledge-hub" }}
+{{ $currentLang := .Site.Language.Lang }}
 
-      <div class="tf-items-container">
-        {{ range $pages.ByPublishDate.Reverse }}
-        <div class="content-container tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}" data-section="{{ .Section }}" data-authors="{{ with .Params.author }}{{ if eq ( printf "%T" . ) "string" }}{{ . | replaceRE "[.]" "_" | urlize }}{{ else if eq ( printf "%T" . ) "[]string" }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{end}}{{end}}{{else}}no-author{{end}}">
-          {{ .Render "li-latest"}}
-        </div>
+{{/* Initialize counters */}}
+{{ $blogCount := 0 }}
+{{ $webinarCount := 0 }}
+{{ $solutionBriefCount := 0 }}
+{{ $whitepaperCount := 0 }}
+
+{{/* Count items by checking their file path */}}
+{{ range $knowledgeHub }}
+  {{ $path := .File.Path }}
+  {{ if (findRE "knowledge-hub/blog/" $path) }}
+    {{ $blogCount = add $blogCount 1 }}
+  {{ else if (findRE "knowledge-hub/webinar/" $path) }}
+    {{ $webinarCount = add $webinarCount 1 }}
+  {{ else if (findRE "knowledge-hub/solution-brief/" $path) }}
+    {{ $solutionBriefCount = add $solutionBriefCount 1 }}
+  {{ else if (findRE "knowledge-hub/whitepaper/" $path) }}
+    {{ $whitepaperCount = add $whitepaperCount 1 }}
+  {{ end }}
+{{ end }}
+
+
+<section class="tf-buttons-container-center">
+  {{/* Category filter buttons */}}
+  <div class="tf-buttons-container">
+    <button class="active" data-category="all">
+      All <span class="filter-number">({{ len $knowledgeHub }})</span>
+    </button>
+    <button data-category="blog">
+      Blog / Tech Updates <span class="filter-number">({{ $blogCount }})</span>
+    </button>
+    <button data-category="webinar">
+      Webinars <span class="filter-number">({{ $webinarCount }})</span>
+    </button>
+    <button data-category="solution-brief">
+      Solution Briefs
+      <span class="filter-number">({{ $solutionBriefCount }})</span>
+    </button>
+    <button data-category="whitepaper">
+      Whitepapers <span class="filter-number">({{ $whitepaperCount }})</span>
+    </button>
+  </div>
+  {{/* Language buttons */}}
+  <div class="line">
+    <div class="tf-buttons-container">
+      {{/* Current language button (active) */}}
+      <button class="text active" style="cursor: default;">
+        <img
+          src="/img/flags/{{ $currentLang }}.svg"
+          alt="{{ .Site.Language.LanguageName }}"
+          style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
+        />
+        {{ .Site.Language.LanguageName }}&nbsp;
+        <span class="filter-number">({{ len $knowledgeHub }})</span>
+      </button>
+
+      {{/* Other languages */}}
+      {{ range $.Site.Home.AllTranslations }}
+        {{ if ne .Language.Lang $currentLang }}
+          {{ $langPages := where .Site.RegularPages "Section" "knowledge-hub" }}
+          {{ $langCount := len $langPages }}
+          {{ if gt $langCount 0 }}
+            <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+              <button class="text">
+                <img
+                  src="/img/flags/{{ .Language.Lang }}.svg"
+                  alt="{{ .Language.LanguageName }}"
+                  style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
+                />
+                {{ .Language.LanguageName }}&nbsp;
+                <span class="filter-number">({{ $langCount }})</span>
+              </button>
+            </a>
+          {{ end }}
         {{ end }}
-      </div>
+      {{ end }}
     </div>
-  <script src="{{ "/filter/hugotagsfilter-1.2.2.js" | relURL}}"></script>
-  <script>
-    var htfConfig = {
-      filters: [{
-        name: 'tags',
-        prefix: 'tag-',
-        buttonClass: 'tag-button',
-        allSelector: '#selectAllTags',
-        attrName: 'data-tags',
-        selectedPrefix: 'stags-',
-        countPrefix: 'ctags-'
-      }, {
-        name: 'section',
-        prefix: 'sect-',
-        buttonClass: 'sect-button',
-        allSelector: '#selectAllSections',
-        attrName: 'data-section',
-        selectedPrefix: 'ssect-',
-        countPrefix: 'csect-'
-      }, ],
-      showItemClass: "show-item",
-      filterItemClass: "tf-filter-item",
-      activeButtonClass: "active",
-      counterSelector: "selectedItemCount",
-      populateCount: true,
-      setDisabledButtonClass: "disable-button"
-    }
-    var htf = new HugoTagsFilter(htfConfig);
-  </script>
-  <script>
-    function toggleAcc(el) {
-      el.classList.toggle("active")
-      var panel = el.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    }
-  </script>
+  </div>
+
+  <div class="tf-items-container">
+    {{ range $knowledgeHub.ByPublishDate.Reverse }}
+      {{ $path := .File.Path }}
+      {{ $category := "unknown" }}
+      {{ if (findRE "knowledge-hub/blog/" $path) }}
+        {{ $category = "blog" }}
+      {{ else if (findRE "knowledge-hub/webinar/" $path) }}
+        {{ $category = "webinar" }}
+      {{ else if (findRE "knowledge-hub/solution-brief/" $path) }}
+        {{ $category = "solution-brief" }}
+      {{ else if (findRE "knowledge-hub/whitepaper/" $path) }}
+        {{ $category = "whitepaper" }}
+      {{ end }}
+      <div
+        class="content-container tf-filter-item tf-item show-item"
+        data-category="{{ $category }}"
+      >
+        {{ .Render "li-latest" }}
+      </div>
+    {{ end }}
+  </div>
 </section>
+
+<style>
+  /* Override default tf-filter-item display */
+  .tf-filter-item {
+    display: block !important;
+  }
+
+  .tf-filter-item.hidden {
+    display: none !important;
+  }
+
+  /* Ensure buttons have pointer cursor */
+  .tf-buttons-container button {
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+
+  /* Style adjustments for language buttons */
+  .tf-buttons-container a {
+    text-decoration: none;
+  }
+
+  .tf-buttons-container button:hover {
+    border-color: var(--button-color);
+  }
+
+  .tf-buttons-container button.text {
+    display: inline-flex;
+    align-items: center;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(
+      ".tf-buttons-container button[data-category]",
+    );
+    const contentItems = document.querySelectorAll(".tf-filter-item");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Remove active class from all category buttons
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+        // Add active class to clicked button
+        this.classList.add("active");
+
+        // Get selected category
+        const selectedCategory = this.getAttribute("data-category");
+
+        // Show/hide content items
+        contentItems.forEach((item) => {
+          const itemCategory = item.getAttribute("data-category");
+
+          if (selectedCategory === "all" || itemCategory === selectedCategory) {
+            item.classList.remove("hidden");
+            item.classList.add("show-item");
+          } else {
+            item.classList.add("hidden");
+            item.classList.remove("show-item");
+          }
+        });
+      });
+    });
+  });
+</script>
