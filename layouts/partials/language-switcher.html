@@ -1,14 +1,11 @@
-{{ $currentLang := .Site.Language.Lang }}
-
-
 <!-- Current language -->
 <span
   title="{{ .Language.LanguageName }}"
   style="display: flex; align-items: center"
 >
   <img
-    src="/img/flags/{{ $currentLang }}.svg"
-    alt="Safespring {{ .Language.LanguageName }}"
+    src="/img/flags/{{ .Site.Language.Lang }}.svg"
+    alt="{{ .Language.LanguageName }} flag"
     style="filter: opacity(0.5); transform: scale(1)"
   />
 </span>
@@ -18,7 +15,7 @@
   <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
     <img
       src="/img/flags/{{ .Lang }}.svg"
-      alt="Safespring {{ .Language.LanguageName }}"
+      alt="{{ .Language.LanguageName }} flag"
     />
   </a>
 {{ end }}

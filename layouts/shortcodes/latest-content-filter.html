@@ -46,10 +46,10 @@
   <div class="line">
     <div class="tf-buttons-container">
       {{/* Current language button (active) */}}
-      <button class="text active" style="cursor: default;">
+      <button class="text active" style="cursor: default;" title="{{ .Site.Language.LanguageName }}">
         <img
           src="/img/flags/{{ $currentLang }}.svg"
-          alt="{{ .Site.Language.LanguageName }}"
+          alt="{{ .Site.Language.LanguageName }} flag"
           style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
         />
         {{ .Site.Language.LanguageName }}&nbsp;
@@ -57,24 +57,20 @@
       </button>
 
       {{/* Other languages */}}
-      {{ range $.Site.Home.AllTranslations }}
-        {{ if ne .Language.Lang $currentLang }}
-          {{ $langPages := where .Site.RegularPages "Section" "knowledge-hub" }}
-          {{ $langCount := len $langPages }}
-          {{ if gt $langCount 0 }}
-            <a href="{{ .RelPermalink }}" style="text-decoration: none;">
-              <button class="text">
-                <img
-                  src="/img/flags/{{ .Language.Lang }}.svg"
-                  alt="{{ .Language.LanguageName }}"
-                  style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
-                />
-                {{ .Language.LanguageName }}&nbsp;
-                <span class="filter-number">({{ $langCount }})</span>
-              </button>
-            </a>
-          {{ end }}
-        {{ end }}
+      {{ range .Site.Home.Translations }}
+          <a href="{{ with .GetPage "knowledge-hub" }}{{ .Permalink }}{{ end }}"
+            style="text-decoration: none;" 
+            title="{{ .Language.LanguageName }}">
+            <button class="text">
+              <img
+                src="/img/flags/{{ .Lang }}.svg"
+                alt="{{ .Language.LanguageName }} flag"
+                style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
+              />
+              {{ .Language.LanguageName }}&nbsp;
+              <span class="filter-number">({{ len (where .Site.RegularPages "Section" "knowledge-hub") }})</span>
+            </button>
+          </a>
       {{ end }}
     </div>
   </div>
