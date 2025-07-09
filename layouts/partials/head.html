@@ -23,71 +23,48 @@
 {{ end }}
 
 
-    <style>
-      @font-face {
-        font-family: "montserrat";
-        src: url("/fonts/montserrat.woff2") format("woff2");
-        font-weight: 100 900;
-        font-style: normal;
-        font-display: swap;
-      }
+<style>
+  @font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
 
-      @font-face {
-        font-family: "montserrat";
-        src: url("/fonts/montserrat-italic.woff2") format("woff2");
-        font-weight: 100 900;
-        font-style: italic;
-        font-display: swap;
-      }
+  @font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat-italic.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
 
-      @font-face {
-        font-family: "hind";
-        src: url("/fonts/hind-light.woff2") format("woff2");
-        font-display: swap;
-      }
+  @font-face {
+    font-family: "hind";
+    src: url("/fonts/hind-light.woff2") format("woff2");
+    font-display: swap;
+  }
 
-      @font-face {
-        font-family: "hind semibold";
-        src: url("/fonts/hind-semibold.woff2") format("woff2");
-        font-display: swap;
-      }
-      @media (min-width: 900px) {
-        .site-header-button-mail::before {
-          font: var(--fa-font-solid);
-          content: "\f0e0";
-          margin-right: 10px;
-        }
+  @font-face {
+    font-family: "hind semibold";
+    src: url("/fonts/hind-semibold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @media (min-width: 900px) {
+    .site-header-button-mail::before {
+      font: var(--fa-font-solid);
+      content: "\f0e0";
+      margin-right: 10px;
+    }
 
-        .site-header-button-mail:hover::before {
-          content: "\f044";
-        }
-      }
-      body {
-        margin: 0;
-        background-color: #fafefe;
-      }
-      @media only screen and (max-width: 940px) {
-        .heading-default-single {
-          flex-flow: row wrap !important;
-          padding: max(150px, 10%) 10% 10% 10% !important;
-        }
-    .site-header-wrapper {
-      flex-flow:column nowrap;
-      justify-content:center;
-      align-items:center;
+    .site-header-button-mail:hover::before {
+      content: "\f044";
     }
-    .site-header-logo img {
-      margin:0 auto;
-      margin-left: 15px;
-    }
-    .site-header-nav {
-      flex-flow:row wrap;
-      justify-content:center;
-      margin-top:30px;
-    }
-    .site-header-logo {
-      justify-content:center;
-    }
+  }
+  body {
+    margin: 0;
+    background-color: #fafefe;
   }
   .heading-default-single {
     background-image: url('/img/background/{{ $bg }}');
@@ -271,13 +248,9 @@
         );
         transition: top cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
       }
-      @media only screen and (min-width: 941px) {
-        .site-header-wrapper {
-          flex-flow: row nowrap;
-          justify-content: space-evenly;
-        }
-      }
       .site-header-wrapper {
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
         display: flex;
         gap: 5%;
         padding: 2em 4em 1em;
@@ -655,6 +628,22 @@
         }
       }
 
+      @media only screen and (max-width: 940px) {
+        .heading-default-single {
+          flex-flow: row wrap !important;
+          padding: max(150px, 10%) 10% 10% 10% !important;
+        }
+        .site-header-wrapper {
+          padding: 2em 2em 1em !important;
+        }
+        .site-header-logo img {
+          margin:0 auto;
+          margin-left: 15px;
+        }
+        .site-header-nav {
+          flex-flow:row wrap;
+        }
+      }
       /* END - MOBILE MENU */
 
       @media only screen and (max-width: 900px) {
