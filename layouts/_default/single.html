@@ -51,9 +51,11 @@
           itemtype="http://schema.org/Person"
           class="author-container"
         >
+          {{ $imageField := printf "image_%s" (default "happy" $pageParams.author_image) }}
+          {{ $imagePath := index . $imageField }}
           <div
             class="author-image"
-            style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})"
+            style="{{ printf "aspect-ratio: 1/1; background-image: url(/img/people/%s)" $imagePath | safeCSS }}"
           >
             <img
               itemprop="image"
@@ -107,6 +109,207 @@
       {{ partial (printf "%s" .Params.fullwidthwidget) . }}
     {{ end }}
   </main>
+
+
+    <!-- JSON-LD Structured Data for Blog Posts -->
+
+    {{ $relativePath := strings.TrimSuffix "/" .File.Dir }}
+    {{ $pathSegments := split $relativePath "/" }}
+    {{ $typeFolder := "" }}
+    {{ if ge (len $pathSegments) 2 }}
+      {{ $typeFolder = index $pathSegments 1 }}
+    {{ end }}
+
+    {{ if eq $typeFolder "webinar" }}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "name": "{{ .Title }}",
+        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
+        "startDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "endDate": "{{ if .Params.endDate }}{{ .Params.endDate.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": "{{ .Permalink }}"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}{{ .Params.card }}{{ else if .Params.eventbild }}img/event/{{ .Params.eventbild }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "url": "{{ .Site.BaseURL }}"
+        },
+        "performer": {
+          "@type": "Person",
+          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Safespring Team{{ end }}"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "{{ .Permalink }}",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
+        }
+      }
+      </script>
+    {{ else if eq $typeFolder "solution-brief" }}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "{{ .Title }}",
+        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
+        },
+        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+        "author": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "url": "{{ .Site.BaseURL }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ .Permalink }}"
+        },
+        "articleSection": "Solution Brief",
+        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
+        "url": "{{ .Permalink }}"
+      }
+      </script>
+    {{ else if eq $.Params.section "Tech update" }}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "{{ .Title }}",
+        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}/img/socialmedia/safespring-start.png{{ end }}"
+        },
+        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Safespring Tech Team{{ end }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ .Permalink }}"
+        },
+        "articleSection": "Tech Update",
+        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
+        "url": "{{ .Permalink }}",
+        "about": {
+          "@type": "Thing",
+          "name": "Cloud Computing Technology"
+        }
+      }
+      </script>
+    {{ else if eq $typeFolder "whitepaper" }}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Report",
+        "name": "{{ .Title }}",
+        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
+        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+        "author": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "url": "{{ .Site.BaseURL }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
+        },
+        "url": "{{ .Permalink }}",
+        "inLanguage": "{{ if .Params.language }}{{ .Params.language }}{{ else }}en{{ end }}",
+        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
+        "about": {
+          "@type": "Thing",
+          "name": "Cloud Services and Data Security"
+        }
+      }
+      </script>
+    {{ else if eq $typeFolder "blog" }}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ .Title }}",
+        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}/img/socialmedia/safespring-start.png{{ end }}"
+        },
+        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Safespring{{ end }}",
+          {{ range where .Site.Data.authors "name" .Params.author }}
+          "image": "{{ $.Site.BaseURL }}img/people/{{ index . (printf "image_%s" (default "happy" $.Params.author_image)) }}",
+          "jobTitle": "{{ .title }}",
+          {{ end }}
+          "url": "{{ .Site.BaseURL }}about/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Safespring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ .Permalink }}"
+        },
+        "articleSection": "{{ if .Params.section }}{{ .Params.section }}{{ else }}Blog{{ end }}",
+        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
+        "url": "{{ .Permalink }}",
+        "inLanguage": "{{ if .Params.language }}{{ .Params.language }}{{ else }}en{{ end }}",
+        "wordCount": "{{ .WordCount }}",
+        "commentCount": 0
+      }
+      </script>
+    {{ end }}
+
 
   <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
   {{ if $isWebinar }}
