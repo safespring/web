@@ -19,7 +19,6 @@ pageimage: ""
 ### Våra medarbetare
 Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte att ta kontakt om du har frågor eller behöver hjälp med något specifikt.
 
-{{< contact picture="petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
 {{< contact picture="daniel-m.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
 {{< contact picture="gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
 {{< contact picture="/marcus.webp" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
