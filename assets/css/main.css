@@ -109,8 +109,7 @@ html, body {
 }
 
 pre > code {
-	/*padding:10px 0 18px 0;*/
-	padding: 30px;
+	padding:10px 0 18px 0;
 }
 
 p>code {
@@ -146,15 +145,13 @@ pre {
 	position:relative;
 	background:#EAF0F4 !important;
 	max-width:800px !important;
-	/*padding:60px 30px 5px 30px !important;*/
+	padding:60px 30px 5px 30px !important;
 	border-radius:10px !important;
 	overflow: auto;
 	font-family: "safespring mono";
 	font-size: 0.9rem !important;
 	scrollbar-width: thin;
 	scrollbar-color: var(--main-color) var(--cloud-blue-color);
-	display: flex;
-	flex-direction: column;
 }
 
 pre[data-lang]::before {
@@ -170,22 +167,7 @@ pre[data-lang]::before {
 	left:0;
 	z-index:1;
 	font-family: "safespring mono";
-	display: block;        /* pseudo-elementet måste vara block för sticky */
-  position: sticky;
-  top: 0;
 }
-
-pre[data-lang] {
-  /* overflow: visible;  om du inte vill ha intern scroll */
-  position: relative; /* behåll om du har absoluta barn, annars kan du ta bort */
-}
-
-
-
-
-
-
-
 
 /* WebKit-baserade webbläsare (Chrome, Safari, m.fl.) */
 pre::-webkit-scrollbar {
