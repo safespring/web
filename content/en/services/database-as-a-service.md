@@ -78,7 +78,7 @@ Pricing components are the number of server vCPUs and associated RAM, amount of 
 | X-Large  | 16vCPU | 32GB     | 500       | 1.338 EUR           |
 | XX-Large | 16vCPU | 32GB     | 1000      | 1.543 EUR           |
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Contact us" %}}
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Contact us" %}}
 Have questions about our Database-as-a-Service platform? Contact us for in-depth technical information and personalized guidance.
 
 {{< inline "Call" >}} [+46 855 10 73 70](tel:+46855107370)  

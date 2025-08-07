@@ -74,9 +74,9 @@ Då får du tillgång till en flexibel, transparent och anpassningsbar infrastru
 ## Vill du också ha en säker och långsiktig partner för din datalagring?
 Det ska vara enkelt för dig att hantera stora mängder data på ett effektivt och säkert sätt. Därför har Safespring sett till att enkelt sammanställa vanliga frågor om IT-säkerhet och compliance. Och vill du ha rekommendationer specifika för din verksamhet, hör av dig!
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef för Safespring i Sverige och hjälper dig gärna att komma igång.
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Daniel Melin" %}}
+Jag är affärsutvecklare för Safespring i Sverige och hjälper dig gärna att komma igång.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21
+{{< inline "Ring" >}} +46855107370
 petter.hylin@safespring.com
 {{% /custom-card %}}

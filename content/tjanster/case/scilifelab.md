@@ -134,11 +134,11 @@ GÉANTs roll inom OCRE innebär att de hjälper till att förhandla fram avtal m
 ## Ge ditt projekt kraft från molnet
 Storskalig lagring och compute-kapacitet är det många som efterfrågar. Safespring har länge jobbat med den akademiska sektorn för att se till att digital infrastruktur, lagring och backup efterlever Sunets krav.
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jag är kontaktperson för den akademiska sektorn i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Daniel Melin" %}}
+Jag är affärsutvecklare för Safespring i Sverige och hjälper dig gärna att komma igång.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21
-hello@safespring.com
+{{< inline "Ring" >}} +46855107370
+daniel.melin@safespring.com
 {{% /custom-card %}}
 
 {{< accordion-script >}}
