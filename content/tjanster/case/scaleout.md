@@ -78,5 +78,5 @@ Det ska vara enkelt för dig att hantera stora mängder data på ett effektivt o
 Jag är affärsutvecklare för Safespring i Sverige och hjälper dig gärna att komma igång.
 
 {{< inline "Ring" >}} +46855107370
-petter.hylin@safespring.com
+daniel.melin@safespring.com
 {{% /custom-card %}}
