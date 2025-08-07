@@ -19,7 +19,7 @@ sidebarlinkname2: "Maila oss"
 sidebarlinkurl2: "mailto@hello@safespring.com"
 sidebarimage: "safespring-daniel.webp"
 sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
-sidebarphone: "073-533 65 21"
+sidebarphone: "076 868 00 59"
 sidebarmail: "hello@safespring.com"
 showthedate: false
 banner: "blue-hover-tech"
