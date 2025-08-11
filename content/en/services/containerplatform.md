@@ -61,7 +61,7 @@ By managing the IaaS and PaaS layers, we empower you to focus on developing and 
 
 Join our beta program and explore the full functionality of the Safespring Container Platform as it launches! We’re excited to onboard our first beta users in early 2025. Be among the first to experience a powerful, scalable, and secure environment tailored for your needs.
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Contact us" %}}
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Contact us" %}}
 Have questions about our Managed Kubernetes Platform? Contact us for in-depth technical information and personalized guidance.
 
 {{< inline "Call" >}} [+46 855 10 73 70](tel:+46855107370)  

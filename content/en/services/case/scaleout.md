@@ -73,9 +73,9 @@ Overuse of services and APIs specific to a provider can lead to lock-in effects.
 ## Do you also want a secure and long-term partner for your data storage?
 It should be easy for you to manage large amounts of data efficiently and securely. Therefore, Safespring has made sure to easily compile common questions about IT security and compliance. And if you want recommendations specific to your business, get in touch!
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-I am the sales manager for Safespring in Sweden and will gladly help you get started.
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Daniel Melin" %}}
+I am the Business developer at Safespring in Sweden and will be happy to help you get started.
 
-{{< inline "Call" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+{{< inline "Call" >}} +46 (0)76 868 00 59
+daniel.melin@safespring.com
 {{% /custom-card %}}

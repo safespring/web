@@ -18,7 +18,6 @@ author: "Daniel Melin"
 In today’s geopolitical landscape where USA quickly tries to become more like China and Russia, customers to American cloud providers are faced with difficult decisions.
 {{< /ingress >}}
 
-
 **Do you want to leave?** Maybe you feel that USA is too far gone destroying their democracy, or that things in general are going haywire.
 
 **Do you need to leave?** Maybe your customer demands that your service is free from American connections or your employees refuse to work with American cloud providers or the Trans-Atlantic Data Privacy Framework disappears. If you are in the public sector or primarily sell to the public sector then you may need to reassess whether you can store and process personal data and/or secret information.
@@ -46,7 +45,6 @@ Here is a list of some of the things you could consider in the Exit process:
 {{% /note %}}
 
 No matter your situation, talk to us at Safespring and we will guide you through your Exit.
-
 
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 I'm Safespring's Business Development Manager. Whether you’re interested in procuring our services or learn more about initiatives like EuroStack, I’m here to help you navigate and leverage our offerings.

@@ -17,9 +17,9 @@ sidebarlinkname: "Gå med i Beta-programmet"
 sidebarlinkurl: "#intresserad-av-att-testa-plattformen"
 sidebarlinkname2: "Maila oss"
 sidebarlinkurl2: "mailto@hello@safespring.com"
-sidebarimage: "safespring-petter.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
-sidebarphone: "073-533 65 21"
+sidebarimage: "safespring-daniel.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "076 868 00 59"
 sidebarmail: "hello@safespring.com"
 showthedate: false
 banner: "blue-hover-tech"
@@ -67,7 +67,7 @@ Safespring hanterar IaaS- och PaaS-lagren vilket möjliggör att du endast fokus
 
 Gå med i vårt beta-program och utforska delar av funktionaliteten hos Safespring Containerplattform innan lansering! Vi ser fram emot att välkomna våra första betaanvändare i början av 2025. Var bland de första att uppleva en kraftfull, skalbar och säker miljö anpassad efter dina behov.
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Kontakta oss" alt="Petter Hylin på Safespring" %}}
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakta oss" alt="Daniel Melin på Safespring" %}}
 Har du frågor om vår managerade Kubernetes-plattform? Kontakta oss för djupgående teknisk information och personlig rådgivning".
 
 {{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  
