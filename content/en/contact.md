@@ -38,7 +38,7 @@ Our management team works to ensure we deliver high-quality and innovative servi
 
 {{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Risk & Compliance" name="Amelia Andersdotter" email="amelia.andersdotter@safespring.com" >}}
+{{< contact-small title="People & Culture" name="Marietta Wasilewska" email="marietta.wasilewska@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="Marketing Manager" name="Marcus Boberg" email="marcus.boberg@safespring.com" >}}
 {{< contact-small title="Head of Engineering" name="Rob Haverkamp" email="rob.haverkamp@safespring.com" >}}
