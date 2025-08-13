@@ -100,7 +100,7 @@ Yes, Safespring Storage is fully S3-compatible, allowing you to leverage your ex
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Contact us today" alt="Contact Safespring" %}}
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Contact us today" alt="Contact Safespring" %}}
 Unlock the full potential of your data with Safespring Storage. Our team is ready to assist you in finding the perfect storage solution for your business needs.
 
 [hello@safespring.com](mailto:hello@safespring.com)

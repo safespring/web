@@ -28,11 +28,13 @@
   {{ end }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>-->
-
+<body>
 <div class="heading-default-single">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
     {{ .Render "li3" }}
   </div>
 
+<!-- Pagefind search UI -->
+<div data-pagefind-search-ui></div>
   <!-- CONTENT -->
   {{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
   {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
@@ -321,3 +323,5 @@
   <!-- FOOTER -->
   {{ partial "footer.html" . }}
 {{ end }}
+
+</body>

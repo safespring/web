@@ -20,9 +20,9 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
-sidebarimage: "safespring-petter.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Petter Hylin, ta gärna kontakt med mig om du har några frågor."
-sidebarphone: "073-533 65 21"
+sidebarimage: "safespring-daniel.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
+sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 aliases:
   - /compute/

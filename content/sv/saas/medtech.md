@@ -60,7 +60,7 @@ Welkin är inte bara säker från start, utan också designad enligt ISO27001 f�
 
 Vi förstår utmaningarna ni står inför och är här för att hjälpa er. Boka en kostnadsfri 30-minuters konsultation med vårt team för att diskutera era specifika behov och hur vi kan stötta er väg framåt.
 
-{{< horisontal-card image="/img/kontakt/petter-hylin.jpg" cardtitle="Boka ett möte om Welkin" link="mailto:hello@safespring.com" linktext="Boka här" text="Kontakta oss på hello@safespring.com för att boka ett möte eller få svar på era frågor." >}}
+{{< horisontal-card image="/img/card/safespring-daniel.webp" cardtitle="Boka ett möte om Welkin" link="mailto:hello@safespring.com" linktext="Boka här" text="Kontakta oss på hello@safespring.com för att boka ett möte eller få svar på era frågor." >}}
 
 ## Bakgrund
 

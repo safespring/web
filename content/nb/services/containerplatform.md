@@ -70,7 +70,7 @@ Safespring håndterer IaaS- og PaaS-lagene, slik at du kun kan fokusere på utvi
 
 Bli med i vårt beta-program og utforsk deler av funksjonaliteten i Safespring Containerplattform før lansering! Vi ser frem til å ønske våre første betatestere velkommen tidlig i 2025. Vær blant de første til sammen med oss å bygge et skalerbart og sikkert miljø, tilpasset dine behov og din suverenitet.
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Kontakt oss" alt="Petter Hylin på Safespring" %}}
+{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakt oss" alt="Daniel Melin på Safespring" %}}
 Har du spørsmål om vår administrerte Kubernetes-plattform? Kontakt oss for dyptgående teknisk informasjon og personlig rådgivning.
 
 {{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  

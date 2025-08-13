@@ -22,7 +22,6 @@ slug: "kontakt"
 
 Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte att ta kontakt om du har frågor eller behöver hjälp med något specifikt.
 
-{{< contact picture="petter.webp" title="Sales Executive" name="Petter Hylin" phone="+46735336521" email="petter.hylin@safespring.com" >}}
 {{< contact picture="daniel-m.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
 {{< contact picture="gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
 {{< contact picture="/marcus.webp" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
@@ -44,7 +43,7 @@ Vår ledningsgrupp arbetar för att säkerställa att vi levererar högkvalitati
 
 {{< flexbox >}}
 {{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
-{{< contact-small title="Risk & Compliance" name="Amelia Andersdotter" email="amelia.andersdotter@safespring.com" >}}
+{{< contact-small title="People & Culture" name="Marietta Wasilewska" email="marietta.wasilewska@safespring.com" >}}
 {{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
 {{< contact-small title="Marketing Manager" name="Marcus Boberg" email="marcus.boberg@safespring.com" >}}
 {{< contact-small title="Head of Engineering" name="Rob Haverkamp" email="rob.haverkamp@safespring.com" >}}
