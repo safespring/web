@@ -45,7 +45,7 @@ Please click the ‘Apply’ button. Don’t worry if your CV isn’t up to date
 
 Small company - big impact of your work - join us!
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/640302ca-01e7-48a5-87d1-16789f38ca7c/788936c8-da55-4733-87e9-327fece96707#applyNow" >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/c9fc224c-49f3-4da3-86a4-3365c9266acc/5aa7a7b5-2d74-4947-880c-da07f6f35696#applyNow" >}}
 
 
 ## FAQ
