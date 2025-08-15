@@ -74,4 +74,8 @@ knowledgehub = "Knowledge Hub"
 whitepaper = "White Papers"
 tech_update = "Tekniska uppdateringar"
 webcast = "Videor"
-  
+
+[sidebar]
+service_combine = "Kombinera"
+service_with = "med"
+service_explore = "Utforska"

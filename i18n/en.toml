@@ -74,3 +74,8 @@ knowledgehub = "Knowledge Hub"
 whitepaper = "White Papers"
 tech_update = "Tech updates"
 webcast = "Videos"
+
+[sidebar]
+service_combine = "Combine"
+service_with = "with"
+service_explore = "Optimize your service with:"

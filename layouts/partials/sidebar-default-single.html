@@ -53,31 +53,21 @@
       {{ $currentPage := . }}
       <div class="sidebar-services">
         <span class="sidebar-services-h4">
-          {{ if strings.HasPrefix .RelPermalink "/tjanster" }}{{ if .Params.cardtitle }} Kombinera {{ .Params.cardtitle }} med: {{ else }} Utforska{{ end }}
-          {{ else if strings.HasPrefix .RelPermalink "/no/tjenester" }}{{ if .Params.cardtitle }} Kombiner {{ .Params.cardtitle }} med: {{ else if eq .Params.language "nb" }}Lær mer om{{ end }}
-          {{ else if strings.HasPrefix .RelPermalink "/en/services" }}{{ if .Params.cardtitle }} Combine {{ .Params.cardtitle }} with: {{ else if eq .Params.language "en" }}Optimize your service with:{{ end }}
-          {{else}}{{ if eq .Params.language "en"}}Optimize your service with:{{else if eq .Params.lanuage "nb"}}Lær mer om{{else}}Utforska{{end}}
+          {{ if strings.HasPrefix .RelPermalink "/services" }}
+            {{ if .Params.cardtitle }}
+              {{T "sidebar.service_combine"}} {{ .Params.cardtitle }} {{T "sidebar.service_with"}}:
+            {{ else }}
+              {{T "sidebar.service_explore"}}
+          {{ end }}
+          {{else}}
+            {{T "sidebar.service_explore"}}
           {{ end }}
         </span>
         <ul>
-          {{ if eq .Params.language "nb" }}
-          {{ range (where $.Site.RegularPages "Section" "nb").ByParam "cardorder" }}
-          {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
-          <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
-          {{ end }}
-          {{ end }}
-          {{ else if eq .Params.language "en" }}
-          {{ range (where $.Site.RegularPages "Section" "en").ByParam "cardorder" }}
-          {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
-          <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
-          {{ end }}
-          {{ end }}
-          {{ else}}
-          {{ range (where $.Site.RegularPages "Section" "tjanster").ByParam "cardorder" }}
-          {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
-          <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
-          {{ end }}
-          {{ end }}
+          {{ range (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
+            {{ if and (isset .Params "cardorder") (ne $currentPage.Title .Title) }}
+              <li><a href="{{ .Permalink }}">{{ .Params.cardtitle }}</a></li>
+            {{ end }}
           {{ end }}
         </ul>
       </div>
