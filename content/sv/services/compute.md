@@ -61,14 +61,15 @@ datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra d
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Få en kostnadsfri bedömning för att migrera dina VMware-workloads till Safespring" %}}
-Safespring hjälper dig migrera från VMware till Safespring, kostnadsfritt och anpassat efter dina behov. Bedömningen
-inkluderar att identifiera era nuvarande VMware-produkter, bedöma automationsnivåer och skapa ett koncepttest för
-migration.
+{{< custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Få en kostnadsfri bedömning för att migrera dina VMware-workloads till Safespring" >}}
+
+<p>Safespring hjälper dig migrera från VMware till Safespring, kostnadsfritt och anpassat efter dina behov. Bedömningen
+inkluderar att identifiera era nuvarande VMware-produkter, bedöma automationsnivåer och skapa ett koncepttest för migration.
+</p>
 
 {{< localbutton icon="fa fa-external-link" text="Starta bedömningen" link="https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd" >}}
 
-{{% /custom-card %}}
+{{< /custom-card >}}
 
 {{< distance >}}
 
