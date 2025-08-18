@@ -96,7 +96,7 @@ Here's a glimpse into how these resource definitions for Namespace Configuration
                 └── group-shared-namespace.yaml
 ```
 
-With Project Onboarding you only have to create a new namespace with labels that define everything. Below are a complete example for namespace [glassproj-appname-acc](namespace-configuration/examples/clustertypeZ/glassproj-appname-acc/namespace.yaml) with all possible labels currently possible.
+With Project Onboarding you only have to create a new namespace with labels that define everything. Below are a complete example for namespace [glassproj-appname-acc (GitHub)](https://github.com/safespring-community/utilities/blob/main/okd/project-onboarding/namespace-configuration/examples/clustertypeZ/glassproj-appname-acc/namespace.yaml) with all possible labels currently possible.
 
 ```yaml
 kind: Namespace
