@@ -11,34 +11,59 @@ pagination.path = "latest"
 #------------------------------------------------------------------------------
 defaultContentLanguage = 'sv'
 
+[languages]
+  [languages.en]
+  languageCode = 'en-GB'
+  languageName = 'English'
+  title = 'Empowering European Innovation'
+  weight = 1
+  baseURL = 'https://beta.safespring.eu/'
+  [languages.en.permalinks]
+    [languages.en.permalinks.page]
+      books = '/books/:slug/'
+    [languages.en.permalinks.section]
+      books = '/books/'
 
-[languages.en]
-languageCode = 'en-GB'
-languageName = 'English'
-title = 'Empowering European Innovation'
-weight = 1
-baseURL = 'https://beta.safespring.eu/'
+  [languages.sv]
+  languageCode = 'sv-SE'
+  languageName = 'Svenska'
+  title = 'Stärk europeisk innovation'
+  weight = 2
+  baseURL = 'https://beta.safespring.se/'
+  [languages.sv.permalinks]
+    [languages.sv.permalinks.page]
+      documents = '/dokument/:contentbasename/'
+      industries = '/branscher/:contentbasename/'
+      knowledge-hub = 'kunskapshubb/:contentbasename/'
+      services = '/tjanster/:contentbasename/'
+    [languages.sv.permalinks.section]
+      documents = '/dokument/'
+      industries = '/branscher/'
+      services = '/tjanster/'
 
-[languages.sv]
-languageCode = 'sv-SE'
-languageName = 'Svenska'
-title = 'Stärk europeisk innovation'
-weight = 2
-baseURL = 'https://beta.safespring.se/'
+  [languages.nb]
+  languageCode = 'nb-NO'
+  languageName = 'Norsk (Bokmål)'
+  title = 'Styrke europeisk innovasjon'
+  weight = 3
+  baseURL = 'https://beta.safespring.no/'
+  [languages.nb.permalinks]
+    [languages.nb.permalinks.page]
+      books = '/books/:slug/'
+    [languages.nb.permalinks.section]
+      books = '/books/'
 
-[languages.nb]
-languageCode = 'nb-NO'
-languageName = 'Norsk (Bokmål)'
-title = 'Styrke europeisk innovasjon'
-weight = 3
-baseURL = 'https://beta.safespring.no/'
-
-[languages.da]
-languageCode = 'da-DK'
-languageName = 'Dansk'
-title = 'Styrkelse af europæisk innovation'
-weight = 4
-baseURL = 'https://beta.safespring.dk/'
+  [languages.da]
+  languageCode = 'da-DK'
+  languageName = 'Dansk'
+  title = 'Styrkelse af europæisk innovation'
+  weight = 4
+  baseURL = 'https://beta.safespring.dk/'
+  [languages.da.permalinks]
+    [languages.da.permalinks.page]
+      books = '/books/:slug/'
+    [languages.da.permalinks.section]
+      books = '/books/'
 
 #------------------------------------------------------------------------------
 # Content mounts
