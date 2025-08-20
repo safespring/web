@@ -5,7 +5,7 @@ intro: "Molnfrågan är långt ifrån enkel. Den kräver förståelse för jurid
 draft: false
 tags: ["Svenska"]
 showthedate: true
-card: ""
+card: "safespring-puzzle.webp"
 eventbild: ""
 socialmediabild: "safespring-puzzle.webp"
 language: "Se"
