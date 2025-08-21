@@ -38,7 +38,7 @@ chapters:
 Detta avsnitt ger en djupgående analys av hur politiska rörelser och beslut kan påverka företagens operativa och strategiska beslut. Det understryker vikten av att förstå och navigera i det politiska landskapet för att säkerställa långsiktig stabilitet och framgång.
 {{< /ingress >}}
 
-I detta avsnitt diskuterar Gabriel Paues, molnarkitekt på Safespring, och Amelia Andersdotter, ansvarig för risk och regelefterlevnad på Safespring, den komplexa dynamiken mellan politisk och juridisk säkerhet. De utforskar hur politiska beslut snabbt kan ändra de juridiska ramverken som företag måste navigera inom, särskilt i en EU-kontext.
+I detta avsnitt diskuterar Gabriel Paues, molnarkitekt på Safespring, och Amelia Andersdotter, risk och regelefterlevnads­rådgivare, den komplexa dynamiken mellan politisk och juridisk säkerhet. De utforskar hur politiska beslut snabbt kan ändra de juridiska ramverken som företag måste navigera inom, särskilt i en EU-kontext.
 
 Samtalet börjar med en diskussion om sambandet mellan politiska och juridiska osäkerheter. Gabriel och Amelia förklarar hur dessa faktorer är sammanflätade men ändå skiljer sig åt i stabilitet och förutsägbarhet. Amelia ger exempel från EU där politiska beslut snabbt kan förändras, vilket skapar utmaningar för företag som måste anpassa sig till nya regelverk.
 

@@ -24,7 +24,7 @@ toc: "Avsnitt"
 Välkommen till vår webbserie "Ta Kontroll" där vi djupdyker i olika aspekter av säkerhet för datadrivna företag och organisationer. 
 {{< /ingress >}}
 
-Följ med Amelia Andersdotter, risk- och regelefterlevnadsansvarig, och Gabriel Paues, molnarkitekt på Safespring, när de utforskar strategier och teknologier för att säkra era data.
+Följ med Amelia Andersdotter och Gabriel Paues, molnarkitekt på Safespring, när de utforskar strategier och teknologier för att säkra era data.
 
 ### Avsnittsöversikt
 Upptäck varje avsnitt i vår serie och lär dig mer om de specifika säkerhetsutmaningar och lösningar som varje tema behandlar.
