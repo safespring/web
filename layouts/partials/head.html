@@ -712,8 +712,7 @@
 <meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
-<!--<meta property="og:image" content='https://www.safespring.com/{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'> -->   
-<meta property="og:image" content="https://www.safespring.com/img/socialmedia/safespring-start.png">
+<meta property="og:image" content='{{ .Site.BaseURL }}{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'>
 <meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
 <meta property="og:site_name" content="Safespring">
 <meta name="author" content="{{ .Params.author }}">
