@@ -7,7 +7,7 @@ tags: ["Svenska"]
 showthedate: true
 card: "safespring-puzzle.webp"
 eventbild: ""
-socialmediabild: "blogg/socialmedia/safespring-puzzle.jpg"
+socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "Se"
 section: "blogg"
 author: "Daniel Melin"
