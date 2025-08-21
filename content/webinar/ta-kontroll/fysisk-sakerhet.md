@@ -38,7 +38,7 @@ chapters:
 Detta avsnitt ger en grundlig översikt över hur datadrivna företag kan skydda sin fysiska infrastruktur mot olika hot. Att säkra den fysiska miljön är avgörande för att skydda känslig information och upprätthålla verksamhetens kontinuitet.
 {{< /ingress >}}
 
-I detta avsnitt diskuterar Amelia Andersdotter, ansvarig för risk och regelefterlevnad på Safespring, och Gabriel Paus, molnarkitekt på Safespring, vikten av fysisk säkerhet för datadrivna företag. De betonar kritiska aspekter som säkerhet i datacenter, biometriska åtkomstsystem, samt tillförlitliga system för kyla, ström och brandbekämpning.
+I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterlevnads­rådgivare på Safespring, och Gabriel Paus, molnarkitekt på Safespring, vikten av fysisk säkerhet för datadrivna företag. De betonar kritiska aspekter som säkerhet i datacenter, biometriska åtkomstsystem, samt tillförlitliga system för kyla, ström och brandbekämpning.
 
 Amelia och Gabriel utforskar hur certifieringar som ISO 27001 kan verifiera att underleverantörer uppfyller höga standarder för fysisk säkerhet. De diskuterar också hur fysisk säkerhet fungerar som en grundpelare för dataskydd i molnbaserade miljöer, där både fysiskt och logiskt skydd måste samverka för att skapa en robust säkerhetsstruktur.
 
