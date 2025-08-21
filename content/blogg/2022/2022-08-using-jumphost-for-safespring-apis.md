@@ -136,5 +136,5 @@ Other options include more full-fledged VPN solutions like
 or [OpenVPN](https://openvpn.net/) which are all a lot simpler to configure than
 traditional protocols like IPSec, GRE, PPTP, etc. If you're going to set up a VPN
 in Safespring Compute anyway the gateway can serve as a jump host has well. We've
-created some [documentation on how to get started](https://docs.safespring.com/new/vpn/) and we also provide an [automated setup of a
+created some [documentation on how to get started](https://docs.safespring.com/compute/vpn/) and we also provide an [automated setup of a
 Wireguard gateway](https://github.com/safespring-community/wireguard-gateway) which can be used for this purpose and more, available here
