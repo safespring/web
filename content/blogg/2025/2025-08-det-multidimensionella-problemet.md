@@ -14,7 +14,7 @@ author: "Daniel Melin"
 ---
 
 {{< ingress >}}
-I både Sverige och EU finns det en ofta återkommande diskussion om bruket av amerikanska moln-tjänster.
+I både Sverige och EU finns det en ofta återkommande diskussion om bruket av amerikanska molntjänster.
 {{< /ingress >}}
 
 I dessa diskussioner är det inte ovanligt att ena parten för fram ett argument i stil med att det finns juridiska hinder varpå motparten hävdar att rätt IT-säkerhet löser det juridiska hindret. I slutändan är ingen klokare kring vad som gäller.
