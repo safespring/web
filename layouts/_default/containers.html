@@ -1,0 +1,1374 @@
+{{ partial "head.html" . }}
+<style>
+:root {
+  /* HERO */
+  --MORKBLA: #195f8c; /* dark blue */
+  --KLARBLA: #3c9bcd; /* clear blue */
+  --ORANGE: #fa690f;
+  --MOLNBLA: #e7eff3; /* cloud blue */
+  --ink: var(--MORKBLA);
+  --bg: var(--MOLNBLA);
+  --radius: 14px;
+
+  /* SCROLL CARD */
+  --brand: #3c9bcd; /* KLARBLÅ – rubriker */
+  --deep: #195f8c; /* MÖRKBLÅ – stöd */
+  --accent: #fa690f; /* ORANGE – pil */
+  --card: #f3f8fb;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  --gap: min(5vw, 48px);
+  --pad: clamp(18px, 3vw, 32px);
+  --stage-gap: 120vh; /* avstånd mellan steg-markörer */
+
+  /* TABS */
+  --card: #195f8c10;
+  --muted: #6b7280;
+  --line: rgba(0, 0, 0, 0.08);
+  --line-2: rgba(0, 0, 0, 0.06);
+  --accent: #007aff;
+  --radius: 16px;
+  --shadow: none;
+  --tab-h: 42px;
+  --dur: 260ms;
+  --ease: cubic-bezier(0.25, 0.8, 0.3, 1);
+
+  /* IKON box */
+  --ink: #0a0a0a;
+  --muted: #667085;
+  --line: rgba(0, 0, 0, 0.18);
+  --bg-top: #ffffff;
+  --bg-bottom: #e7eff3; /* molnblå */
+  --maxw: 1200px;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 10%;
+  font-family: var(--mon-font);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: clamp(3rem, 5vw, 6rem) !important;
+  line-height: 1;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 22px clamp(16px, 4vw, 32px);
+}
+
+/*@media (min-width: 1300px){
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 1;
+  }
+}*/
+/* Top brand row */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--MORKBLA);
+}
+.brand svg {
+  display: block;
+}
+.brand span {
+  font-size: 18px;
+}
+.brand img {
+  width: auto;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0;
+  align-items: center;
+  padding: clamp(20px, 5vh, 80px) 0 clamp(30px, 8vh, 120px);
+}
+
+.actions {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.btn-primary {
+  background: var(--cloud-blue);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(250, 105, 15, 0.25);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-link {
+  background: transparent;
+  color: var(--ORANGE);
+  padding: 8px 0;
+  border-radius: 8px;
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+/* Right-side image with soft circle */
+.hero-media {
+  position: relative;
+  min-height: 360px;
+}
+.hero-media::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #dfe9ef; /* slightly deeper than MOLNBLÅ for contrast */
+  z-index: -1;
+}
+.hero-media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(44vw, 520px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.06));
+  margin-left: auto; /* push to the right edge */
+}
+
+/* Accessibility focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--KLARBLA);
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .hero-media {
+    min-height: 280px;
+  }
+  .hero-media::before {
+    top: -5%;
+    left: 10%;
+    width: auto;
+    height: 50vw;
+    aspect-ratio: 1;
+    justify-content: center;
+  }
+  .hero-media img {
+    margin-inline: auto;
+    width: min(70vw, 520px);
+  }
+}
+
+.big-graphics {
+  width: clamp(300px, 40vw, 600px);
+  margin: 10vw 0;
+}
+
+/* END - HERO*/
+
+/* SCROLL BOX */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h2,
+h3 {
+  font-family: "Hind", system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-weight: 300;
+  margin: 0 0 0.35em;
+}
+
+/* === Scrollytelling wrapper (skapar höjd för steg) === */
+.scrolly {
+  position: relative;
+  min-height: calc(var(--stage-gap) * 2.2);
+  padding: 12vh 0;
+}
+.locked-section {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* === Sticky kapsel som ligger i mitten === */
+.capsule {
+  margin: 0 auto;
+  aspect-ratio: 21/9;
+  background: var(--card);
+  border: 2px solid rgba(25, 95, 140, 0.12);
+  border-radius: 60px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr; /* vänster: bild, höger: text */
+  gap: var(--gap);
+  padding: var(--pad);
+}
+
+/* vänster – bildyta */
+.figure {
+  position: relative;
+  border-radius: 0px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.figure img {
+  width: 86%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
+}
+
+/* höger – textstack (alla callouts finns här men vi visar 1 åt gången) */
+.right {
+  position: relative;
+  display: grid;
+  align-content: center;
+  padding-right: clamp(10px, 2vw, 24px);
+}
+.stack {
+  min-height: 56%;
+}
+.callout {
+  position: absolute;
+  inset: 0 0 auto 0;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.callout.active {
+  opacity: 1;
+  transform: none;
+}
+
+.callout h3 {
+  color: var(--brand);
+  font-size: clamp(22px, 2.3vw, 30px);
+}
+.callout p {
+  margin: 0.35rem 0 0;
+  font-size: clamp(15px, 1.1vw + 0.55rem, 18px);
+  max-width: 46ch;
+}
+
+/* pilar – ligger INUTI kapseln, absolut placerade från vänster mot höger */
+.arrow {
+  position: absolute;
+  left: calc(var(--pad) + 25%); /* start approx. inne i bilden */
+  width: 36%;
+  max-width: 430px;
+  height: 38px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.arrow.active {
+  opacity: 1;
+  transform: none;
+}
+/* vertikalt läge för varje pil */
+.arrow[data-id="1"] {
+  top: 37%;
+}
+.arrow[data-id="2"] {
+  top: 53%;
+}
+.arrow[data-id="3"] {
+  top: 71%;
+}
+
+.callout[data-step="1"] {
+  top: 23%;
+}
+.callout[data-step="2"] {
+  top: 45%;
+}
+.callout[data-step="3"] {
+  top: 68%;
+}
+
+.arrow svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.arrow path {
+  stroke: var(--accent);
+  stroke-width: 8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* steg-markörer (osynliga boxar som triggar bytena) */
+.scrolly .stage {
+  height: var(--stage-gap);
+}
+
+/* rubrik ovanför */
+.lead {
+  text-align: center;
+  margin: 8vh auto 10vh;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+/* === STICKY NAV – ligger i scrolly och hamnar alltid ovanför kapseln === */
+.nav {
+  position: sticky;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2.2vw, 24px);
+  width: fit-content;
+  margin: 0 auto 18px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.nav a {
+  text-decoration: none;
+  color: var(--deep);
+  font-weight: 600;
+  font-size: 14.5px;
+  letter-spacing: 0.2px;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+.nav a:hover {
+  background: rgba(60, 155, 205, 0.12);
+  color: #0d3850;
+}
+.nav a.active {
+  background: rgba(60, 155, 205, 0.12);
+  color: #0d3850;
+}
+
+/* END - Scroll box */
+/* TAb box */
+* {
+  box-sizing: border-box;
+}
+/* —— minimal, calm, “system” aesthetics —— */
+:root {
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0c0e;
+    --card: #0f1115;
+    --ink: #f5f7fb;
+    --muted: #9aa3af;
+    --line: rgba(255, 255, 255, 0.12);
+    --line-2: rgba(255, 255, 255, 0.08);
+    --shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.card {
+  width: min(1136px, 100%);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  border: 0px solid var(--line);
+  overflow: clip;
+  margin: auto;
+}
+
+.header {
+  padding: 16px 18px 0;
+}
+.panel-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  border-bottom: 1px solid var(--line-2);
+  padding: 0 2px;
+}
+.title {
+  margin: 0;
+  padding: 12px 10px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-size: clamp(18px, 2.2vw, 22px);
+}
+
+.tabs {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  gap: 4px;
+}
+.tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  height: var(--tab-h);
+  padding: 0 12px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: color var(--dur) var(--ease);
+}
+.tab:hover {
+  color: color-mix(in oklab, var(--ink), var(--muted) 40%);
+}
+.tab.is-active {
+  color: var(--ink);
+}
+
+.indicator {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 0;
+  border-radius: 2px;
+  background: currentColor;
+  color: var(--ink);
+  transform: translateX(0);
+  transition: transform var(--dur) var(--ease), width var(--dur) var(--ease);
+  will-change: transform, width;
+  pointer-events: none;
+}
+
+/* —— fixed-height stage —— */
+#tabsBox .stage {
+  position: relative;
+  padding: 18px;
+}
+
+.tab-panel {
+  position: absolute;
+  inset: 18px; /* respect stage padding visually */
+  overflow: auto;
+  border-radius: 0;
+  padding: 10px;
+  margin: 0;
+  color: color-mix(in oklab, var(--ink), var(--muted) 16%);
+  line-height: 1.65;
+  font-size: clamp(15px, 1.6vw, 17px);
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  will-change: opacity, transform;
+  background: transparent;
+}
+.tab-panel.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.tab-panel h3 {
+  margin: 0 0 8px;
+}
+.tab-panel p {
+  margin: 0 0 12px;
+}
+.tab-panel ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.tab-panel li {
+  margin: 6px 0;
+}
+
+.cta {
+  margin-top: 12px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: linear-gradient(#fff, #f5f6f7);
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform var(--dur) var(--ease);
+}
+.cta:hover {
+  transform: translateY(-1px);
+}
+@media (prefers-color-scheme: dark) {
+  .cta {
+    background: linear-gradient(#1a1d22, #13161b);
+  }
+}
+
+.tab:focus-visible,
+.cta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 680px) {
+  .panel-row {
+    flex-wrap: wrap;
+  }
+  .tabs {
+    width: 100%;
+    order: 2;
+    justify-content: space-between;
+  }
+  .tab {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .title {
+    order: 1;
+    width: 100%;
+    padding-left: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .indicator,
+  .tab-panel {
+    transition: none !important;
+  }
+}
+/* END - TAB BOX */
+/* IKON box */
+.bullet-section {
+  max-width: var(--maxw);
+  margin: 10vw 0;
+  padding: 48px 20px 64px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  align-items: start;
+}
+
+.col {
+  text-align: center;
+  padding: 36px 28px 28px;
+  position: relative;
+  /* vertikal avdelare till vänster på kolumner 2 och 3 */
+  border-left: 1px solid transparent;
+}
+.col + .col {
+  border-left-color: var(--line);
+}
+
+.icon-wrap {
+  width: 132px;
+  height: 132px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+}
+.icon-wrap i {
+  font-size: 54px; /* triangelstorlek */
+  line-height: 1;
+  color: #000;
+  transform: translateY(-2px); /* optisk centrering */
+}
+
+h3 {
+  margin: 10px 0 10px;
+  font-family: var(--h-font);
+  font-weight: 300; /* Hind Light */
+  font-size: 44px;
+  letter-spacing: 0.2px;
+}
+
+/* Responsiv: stapla på smala skärmar */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .col {
+    border-left: none;
+    padding: 28px 12px 36px;
+  }
+  .col:not(:last-child) {
+    border-bottom: 1px solid var(--line);
+  }
+  h3 {
+    font-size: 36px;
+  }
+  .icon-wrap {
+    width: 112px;
+    height: 112px;
+  }
+  .icon-wrap i {
+    font-size: 48px;
+  }
+}
+/* modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    /* Modal innehåll */
+    .modal-content {
+      position: relative;
+      margin: 5% auto;
+      width: 80%;
+      height: 80%;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* iframe fyller hela modal */
+    .modal-content iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Stängknapp */
+    .close {
+      position: absolute;
+      top: 10px; right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    /* END modal */
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Brand -->
+    <div class="brand" aria-label="Safespring">
+    	<a href="/">
+    		<img src="/img/logos/safespring_logotype_blue_svg.svg" width="140" height="30" alt="Safespring logotype">
+    	</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Kubernetes offering">
+      <div class="hero-text">
+        <h1>{{ .Title }}</h1>
+        <p class="">
+          {{ .Params.intro }}
+        </p>
+
+        <div class="actions">
+          <a href="#" id="openModal" class="button">
+            BOOK DEMO
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+        <img src="/img/people/safespring-p.png" alt="Safespring Cloud Experts" />
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <div style="margin-top:200px;"></div>
+
+
+  <style>
+    :root{
+
+    }
+
+
+  </style>
+
+  <div class="scrolly" id="scene">
+    <!-- Sticky kapsel (ALLT inuti) -->
+    <div class="locked-section">
+
+      <nav class="nav" aria-label="Sektioner">
+        <a href="#control">Control plane</a>
+        <a href="#workers">Worker nodes</a>
+        <a href="#infra">Infrastructure</a>
+      </nav>
+
+      <section class="capsule" aria-label="Kubernetes-kluster">
+        <!-- Vänster: Bild -->
+        <div class="figure">
+          <img src="/img/graphics/controlplane-2.svg" alt="Kubernetes cluster schematic" />
+        </div>
+
+        <!-- Höger: Textstack -->
+        <div class="right">
+          <div class="stack">
+            <article class="callout" data-step="1">
+              <h3>Safesprings kontrollplan</h3>
+              <p>Managed control plane med olika konfigurationer. I single-node är den omanagerad – övriga alternativ är fullt hanterade av Safespring.</p>
+            </article>
+
+            <article class="callout" data-step="2">
+              <h3>Worker-noder</h3>
+              <p>Alltid kundhanterade. Varje nod kör som egen VM storleksatt från vår flavor-katalog.</p>
+            </article>
+
+            <article class="callout" data-step="3">
+              <h3>Infrastruktur</h3>
+              <p>Compute-lagret under klustret driftas av Safespring – du behöver inte tänka på den nivån.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Pilar (ligger ovanpå och pekar horisontellt från bild mot text) -->
+        <div class="arrow" data-id="1" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="arrow" data-id="2" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="arrow" data-id="3" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+            </g>
+          </svg>
+        </div>
+      </section>
+    </div>
+    <!-- Steg-markörer (osynliga, bara för scroll-logik) -->
+    <div id="control" class="anchor"></div>
+    <div class="stage" data-target="1"></div>
+
+    <div id="workers" class="anchor"></div>
+    <div class="stage" data-target="2"></div>
+
+    <div id="infra" class="anchor"></div>
+    <div class="stage" data-target="3"></div>
+  </div>
+
+<!--<script>
+/* Kopplar scroll-position (stage-divar) till vad som visas inne i kapseln */
+const stages  = [...document.querySelectorAll('.stage')];
+const callouts = [...document.querySelectorAll('.callout')];
+const arrows = [...document.querySelectorAll('.arrow')];
+
+function activate(step){
+  callouts.forEach(el => el.classList.toggle('active', +el.dataset.step === step));
+  arrows.forEach(el => el.classList.toggle('active', +el.dataset.id === step));
+}
+
+const links = {
+  1: document.querySelector('.nav a[href="#control"]'),
+  2: document.querySelector('.nav a[href="#workers"]'),
+  3: document.querySelector('.nav a[href="#infra"]')
+};
+
+function highlight(step) {
+  Object.values(links).forEach(link => link.classList.remove('active'));
+  links[step]?.classList.add('active');
+}
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const step = +entry.target.dataset.target;
+      activate(step);     // visar rätt callout/pil
+      highlight(step);    // markerar rätt nav-länk
+    }
+  });
+},{threshold:0.55});
+
+stages.forEach(s => io.observe(s));
+
+/* Sätt initialt steg (1) */
+activate(1);
+</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+	
+</style>
+
+<article class="card" id="tabsBox" aria-label="Tabbed content">
+  <header class="header">
+    <div class="panel-row" role="tablist" aria-label="Sections">
+      <h2 class="title" id="boxTitle">Overview</h2>
+
+      <div class="tabs" id="tabs">
+        <button class="tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0">Overview</button>
+        <button class="tab" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Features</button>
+        <button class="tab" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">Pricing</button>
+        <span class="indicator" aria-hidden="true"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fixed-height stage; panels are stacked and cross-faded -->
+  <section class="stage" id="stage">
+    <div class="tab-panel is-active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+      <h3>Secure, simple, self-service</h3>
+      <p>Spin up clusters on demand, manage lifecycle with ease, and stay compliant with EU regulations.</p> 
+      <ul><li>You own the cluster,</li><li>We manage the complexity.</li></ul>
+    </div>
+
+    <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+      <ul>
+        <li>Cluster Overview
+          <ul><li>Select talos Linux base (more info)</li>
+            <li>Select kubernetes version (2 * Elastic Ips)</li></ul>
+          </li>
+          <li>Access:
+            <ul><li>Base domain `*.apps.<domain>.paas.safedc.net`
+              <li>Each cluster comes in isolated Openstack</li></ul>
+            </li>
+            <li>Project/Environment
+              <ul><li>Access can be configured with IDP or by admins</li></ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+          <h3>Predictable pricing, no hidden costs</h3>
+          <ul>
+            <li><strong>Managed control plane:</strong> 4,900 SEK/month (SLA, support, guidance included).</li>
+            <li><strong>Workers:</strong> pay only for chosen VM flavors. Full management available on request.</li>
+          </ul><p></p>
+          <p><span style="font-style:italic;">Looking for full management? For customers who want Safespring to manage both control plane and workers, a fully managed cluster can be offered on request.</p>
+            <a class="cta" href="#" role="button">View license</a>
+          </div>
+        </section>
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+
+      <style>
+        :root{
+          --ink:#0a0a0a;
+          --muted:#667085;
+          --line: rgba(0,0,0,.18);
+          --bg-top:#ffffff;
+          --bg-bottom:#E7EFF3; /* molnblå */
+          --maxw:1200px;
+
+          /* Safespring-typsnitt */
+          --h-font:"Hind", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+          --p-font:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+        .bullet-section{
+          max-width: var(--maxw);
+          margin: 10vw 0;
+          padding: 48px 20px 64px;
+        }
+
+        .grid{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0;
+          align-items: start;
+        }
+
+        .col{
+          text-align: center;
+          padding: 36px 28px 28px;
+          position: relative;
+          /* vertikal avdelare till vänster på kolumner 2 och 3 */
+          border-left: 1px solid transparent;
+        }
+        .col + .col{
+          border-left-color: var(--line);
+        }
+
+        .icon-wrap{
+          width: 132px;
+          height: 132px;
+          margin: 0 auto 18px;
+          border-radius: 50%;
+          background: #fff;
+          border: 2px solid rgba(0,0,0,.12);
+          display: grid;
+          place-items: center;
+        }
+        .icon-wrap i{
+          font-size: 54px; /* triangelstorlek */
+          line-height: 1;
+          color: #000;
+          transform: translateY(-2px); /* optisk centrering */
+        }
+
+        h3{
+          margin: 10px 0 10px;
+          font-family: var(--h-font);
+          font-weight: 300; /* Hind Light */
+          font-size: 44px;
+          letter-spacing: .2px;
+        }
+
+        /* Responsiv: stapla på smala skärmar */
+        @media (max-width: 900px){
+          .grid{ grid-template-columns: 1fr; }
+          .col{ border-left: none; padding: 28px 12px 36px; }
+          .col:not(:last-child){ border-bottom: 1px solid var(--line); }
+          h3{ font-size: 36px; }
+          .icon-wrap{ width: 112px; height: 112px; }
+          .icon-wrap i{ font-size: 48px; }
+        }
+      </style>
+      <section class="bullet-section">
+        <div class="grid">
+          <!-- 1. Tailored -->
+          <article class="col">
+            <div class="icon-wrap" aria-hidden="true">
+              <!-- Triangel: Font Awesome caret-up -->
+              <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <h3>Tailored</h3>
+            <p>
+              Start with a dedicated cluster that can scale with your needs, and grow
+              to multiple managed clusters.
+            </p>
+          </article>
+
+          <!-- 2. Compliant -->
+          <article class="col">
+            <div class="icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <h3>Compliant</h3>
+            <p>
+              Safeguard data with full compliance to EU security and jurisdictional
+              requirements.
+            </p>
+          </article>
+
+          <!-- 3. Cloud -->
+          <article class="col">
+            <div class="icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <h3>Cloud</h3>
+            <p>
+              Scale your cloud native application as your business grows with
+              competitive, pay-as-you-go pricing.
+            </p>
+          </article>
+        </div>
+      </section>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm"></iframe>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("openModal");
+    const closeBtn = document.querySelector(".close");
+
+    btn.onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    }
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(e) {
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+<!--<script>
+(() => {
+  const root = document.getElementById('tabsBox');
+  const title = root.querySelector('#boxTitle');
+  const tabsWrap = root.querySelector('#tabs');
+  const tabs = Array.from(root.querySelectorAll('.tab'));
+  const panels = Array.from(root.querySelectorAll('.tab-panel'));
+  const indicator = root.querySelector('.indicator');
+  const stage = root.querySelector('#stage');
+
+  let active = Math.max(0, tabs.findIndex(t => t.classList.contains('is-active')));
+
+  /** Measure and fix the stage height to the tallest panel */
+  function fixStageHeight(){
+    // Temporarily make all panels measurable without flashing:
+    const prev = panels.map(p => p.style.visibility);
+    panels.forEach(p => { p.style.visibility = 'hidden'; p.classList.add('is-active'); });
+
+    // Measure tallest scrollHeight (inside padding)
+    const tallest = Math.max(...panels.map(p => p.scrollHeight));
+
+    // Restore visibility and active state
+    panels.forEach((p,i) => {
+      p.style.visibility = prev[i] || '';
+      if (i !== active) p.classList.remove('is-active');
+    });
+
+    // Set stage explicit height (includes inset padding via absolute panels)
+    stage.style.height = tallest + 36 + 'px'; // + some breathing room if content grows slightly
+  }
+
+  /** Place underline under a given tab (FLIP-style) */
+  function placeIndicator(i){
+    const t = tabs[i];
+    const tb = t.getBoundingClientRect();
+    const rb = tabsWrap.getBoundingClientRect();
+    indicator.style.width = tb.width + 'px';
+    indicator.style.transform = `translateX(${tb.left - rb.left}px)`;
+  }
+
+  /** Update ARIA + visual states */
+  function setStates(i){
+    tabs.forEach((t,idx) => {
+      const on = idx === i;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+    });
+    panels.forEach((p,idx) => {
+      const on = idx === i;
+      p.classList.toggle('is-active', on);
+      p.toggleAttribute('aria-hidden', !on);
+    });
+    title.textContent = tabs[i].textContent.trim();
+  }
+
+  function activate(i){
+    if (i === active) return;
+
+    const run = () => {
+      setStates(i);
+      placeIndicator(i);
+      active = i;
+      // height is fixed already → no jank; still re-measure if fonts wrap
+      // (rare, but safe)
+    };
+
+    // View Transitions where supported for extra polish
+    if (document.startViewTransition &&
+        !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.startViewTransition(run);
+    } else {
+      run();
+    }
+  }
+
+  // Init
+  function init(){
+    fixStageHeight();
+    setStates(active);
+    placeIndicator(active);
+  }
+  window.addEventListener('load', init);
+  if (document.readyState === 'complete') init();
+
+  // Interactions
+  tabs.forEach((t,i) => t.addEventListener('click', () => activate(i)));
+
+  // Keyboard (roving)
+  tabsWrap.addEventListener('keydown', (e) => {
+    const k = e.key;
+    let next = active;
+    if (k === 'ArrowRight' || k === 'ArrowDown'){ next = (active + 1) % tabs.length; e.preventDefault(); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp'){ next = (active - 1 + tabs.length) % tabs.length; e.preventDefault(); }
+    else if (k === 'Home'){ next = 0; e.preventDefault(); }
+    else if (k === 'End'){ next = tabs.length - 1; e.preventDefault(); }
+    if (next !== active){ tabs[next].focus(); activate(next); }
+  });
+
+  // Keep underline aligned and height correct on resize / font metric changes
+  const ro = new ResizeObserver(() => {
+    placeIndicator(active);
+    // Recalculate tallest height in case lines reflow
+    fixStageHeight();
+  });
+  ro.observe(tabsWrap);
+  ro.observe(stage);
+
+  // Extra safety: re-place after fonts settle
+  setTimeout(() => { placeIndicator(active); fixStageHeight(); }, 250);
+  setTimeout(() => { placeIndicator(active); fixStageHeight(); }, 800);
+})();
+</script>
+
+<script>
+const links = {
+  1: document.querySelector('.nav a[href="#control"]'),
+  2: document.querySelector('.nav a[href="#workers"]'),
+  3: document.querySelector('.nav a[href="#infra"]')
+};
+
+function highlight(step) {
+  Object.values(links).forEach(link => link.classList.remove('active'));
+  links[step]?.classList.add('active');
+}
+
+// uppdatera i IntersectionObserver (där du redan har activate(step))
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const step = +entry.target.dataset.target;
+      activate(step);     // visar rätt callout/pil
+      highlight(step);    // markerar rätt nav-länk
+    }
+  });
+},{threshold:0.55});
+
+stages.forEach(s => io.observe(s));
+</script>-->
+
+<script>
+  (() => {
+  /* === SCROLLYTELLING NAV / CAPSULE === */
+    const scrollyEl = document.querySelector('#scene');
+    const stages = [...scrollyEl.querySelectorAll('.stage')];
+    const callouts = [...document.querySelectorAll('.callout')];
+    const arrows = [...document.querySelectorAll('.arrow')];
+
+    function activate(step){
+      callouts.forEach(el => el.classList.toggle('active', +el.dataset.step === step));
+      arrows.forEach(el => el.classList.toggle('active', +el.dataset.id === step));
+    }
+
+    const links = {
+      1: document.querySelector('.nav a[href="#control"]'),
+      2: document.querySelector('.nav a[href="#workers"]'),
+      3: document.querySelector('.nav a[href="#infra"]')
+    };
+
+    function highlight(step) {
+      Object.values(links).forEach(link => link.classList.remove('active'));
+      links[step]?.classList.add('active');
+    }
+
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const step = +entry.target.dataset.target;
+          activate(step);     
+          highlight(step);    
+        }
+      });
+    },{threshold:0.55});
+
+    stages.forEach(s => io.observe(s));
+  activate(1); // initialt
+
+  // Smooth scroll på nav-klick
+  document.querySelector('.nav').addEventListener('click', (e)=>{
+    const a = e.target.closest('a[href^="#"]');
+    if(!a) return;
+    e.preventDefault();
+    const id = a.getAttribute('href').slice(1);
+    const map = { control: 1, workers: 2, infra: 3 };
+    const stage = document.querySelector(`.stage[data-target="${map[id]}"]`);
+    stage?.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  /* === TABS === */
+  const root = document.getElementById('tabsBox');
+  if (root) {
+    const title = root.querySelector('#boxTitle');
+    const tabsWrap = root.querySelector('#tabs');
+    const tabs = Array.from(root.querySelectorAll('.tab'));
+    const panels = Array.from(root.querySelectorAll('.tab-panel'));
+    const indicator = root.querySelector('.indicator');
+    const stage = root.querySelector('#stage');
+
+    let active = Math.max(0, tabs.findIndex(t => t.classList.contains('is-active')));
+
+    function fixStageHeight(){
+      const prev = panels.map(p => p.style.visibility);
+      panels.forEach(p => { p.style.visibility = 'hidden'; p.classList.add('is-active'); });
+      const tallest = Math.max(...panels.map(p => p.scrollHeight));
+      panels.forEach((p,i) => {
+        p.style.visibility = prev[i] || '';
+        if (i !== active) p.classList.remove('is-active');
+      });
+      stage.style.height = tallest + 36 + 'px';
+    }
+
+    function placeIndicator(i){
+      const t = tabs[i];
+      const tb = t.getBoundingClientRect();
+      const rb = tabsWrap.getBoundingClientRect();
+      indicator.style.width = tb.width + 'px';
+      indicator.style.transform = `translateX(${tb.left - rb.left}px)`;
+    }
+
+    function setStates(i){
+      tabs.forEach((t,idx) => {
+        const on = idx === i;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+      });
+      panels.forEach((p,idx) => {
+        const on = idx === i;
+        p.classList.toggle('is-active', on);
+        p.toggleAttribute('aria-hidden', !on);
+      });
+      title.textContent = tabs[i].textContent.trim();
+    }
+
+    function activateTab(i){
+      if (i === active) return;
+      const run = () => {
+        setStates(i);
+        placeIndicator(i);
+        active = i;
+      };
+      if (document.startViewTransition &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.startViewTransition(run);
+    } else {
+      run();
+    }
+  }
+
+  function initTabs(){
+    fixStageHeight();
+    setStates(active);
+    placeIndicator(active);
+  }
+  window.addEventListener('load', initTabs);
+  if (document.readyState === 'complete') initTabs();
+
+  tabs.forEach((t,i) => t.addEventListener('click', () => activateTab(i)));
+
+  tabsWrap.addEventListener('keydown', (e) => {
+    const k = e.key;
+    let next = active;
+    if (k === 'ArrowRight' || k === 'ArrowDown'){ next = (active + 1) % tabs.length; e.preventDefault(); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp'){ next = (active - 1 + tabs.length) % tabs.length; e.preventDefault(); }
+    else if (k === 'Home'){ next = 0; e.preventDefault(); }
+    else if (k === 'End'){ next = tabs.length - 1; e.preventDefault(); }
+    if (next !== active){ tabs[next].focus(); activateTab(next); }
+  });
+
+  const ro = new ResizeObserver(() => {
+    placeIndicator(active);
+    fixStageHeight();
+  });
+  ro.observe(tabsWrap);
+  ro.observe(stage);
+
+  setTimeout(() => { placeIndicator(active); fixStageHeight(); }, 250);
+  setTimeout(() => { placeIndicator(active); fixStageHeight(); }, 800);
+}
+})();
+</script>
+
+
+</body>
+</html>
