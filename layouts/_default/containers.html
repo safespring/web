@@ -263,6 +263,7 @@ h3 {
   height: auto;
   display: block;
   transition: opacity .25s ease;
+  opacity: 0;
 }
 
 /* höger – textstack (alla callouts finns här men vi visar 1 åt gången) */
@@ -716,6 +717,9 @@ h3 {
 .arrow {
   display: none;
 }
+.locked-section {
+  top: 30%;
+}
 }
 </style>
 </head>
@@ -1102,146 +1106,6 @@ activate(1);
       }
     }
   </script>
-
-<!--<script>
-(() => {
-  const root = document.getElementById('tabsBox');
-  const title = root.querySelector('#boxTitle');
-  const tabsWrap = root.querySelector('#tabs');
-  const tabs = Array.from(root.querySelectorAll('.tab'));
-  const panels = Array.from(root.querySelectorAll('.tab-panel'));
-  const indicator = root.querySelector('.indicator');
-  const stage = root.querySelector('#stage');
-
-  let active = Math.max(0, tabs.findIndex(t => t.classList.contains('is-active')));
-
-  /** Measure and fix the stage height to the tallest panel */
-  function fixStageHeight(){
-    // Temporarily make all panels measurable without flashing:
-    const prev = panels.map(p => p.style.visibility);
-    panels.forEach(p => { p.style.visibility = 'hidden'; p.classList.add('is-active'); });
-
-    // Measure tallest scrollHeight (inside padding)
-    const tallest = Math.max(...panels.map(p => p.scrollHeight));
-
-    // Restore visibility and active state
-    panels.forEach((p,i) => {
-      p.style.visibility = prev[i] || '';
-      if (i !== active) p.classList.remove('is-active');
-    });
-
-    // Set stage explicit height (includes inset padding via absolute panels)
-    stage.style.height = tallest + 36 + 'px'; // + some breathing room if content grows slightly
-  }
-
-  /** Place underline under a given tab (FLIP-style) */
-  function placeIndicator(i){
-    const t = tabs[i];
-    const tb = t.getBoundingClientRect();
-    const rb = tabsWrap.getBoundingClientRect();
-    indicator.style.width = tb.width + 'px';
-    indicator.style.transform = `translateX(${tb.left - rb.left}px)`;
-  }
-
-  /** Update ARIA + visual states */
-  function setStates(i){
-    tabs.forEach((t,idx) => {
-      const on = idx === i;
-      t.classList.toggle('is-active', on);
-      t.setAttribute('aria-selected', String(on));
-      t.tabIndex = on ? 0 : -1;
-    });
-    panels.forEach((p,idx) => {
-      const on = idx === i;
-      p.classList.toggle('is-active', on);
-      p.toggleAttribute('aria-hidden', !on);
-    });
-    title.textContent = tabs[i].textContent.trim();
-  }
-
-  function activate(i){
-    if (i === active) return;
-
-    const run = () => {
-      setStates(i);
-      placeIndicator(i);
-      active = i;
-      // height is fixed already → no jank; still re-measure if fonts wrap
-      // (rare, but safe)
-    };
-
-    // View Transitions where supported for extra polish
-    if (document.startViewTransition &&
-        !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.startViewTransition(run);
-    } else {
-      run();
-    }
-  }
-
-  // Init
-  function init(){
-    fixStageHeight();
-    setStates(active);
-    placeIndicator(active);
-  }
-  window.addEventListener('load', init);
-  if (document.readyState === 'complete') init();
-
-  // Interactions
-  tabs.forEach((t,i) => t.addEventListener('click', () => activate(i)));
-
-  // Keyboard (roving)
-  tabsWrap.addEventListener('keydown', (e) => {
-    const k = e.key;
-    let next = active;
-    if (k === 'ArrowRight' || k === 'ArrowDown'){ next = (active + 1) % tabs.length; e.preventDefault(); }
-    else if (k === 'ArrowLeft' || k === 'ArrowUp'){ next = (active - 1 + tabs.length) % tabs.length; e.preventDefault(); }
-    else if (k === 'Home'){ next = 0; e.preventDefault(); }
-    else if (k === 'End'){ next = tabs.length - 1; e.preventDefault(); }
-    if (next !== active){ tabs[next].focus(); activate(next); }
-  });
-
-  // Keep underline aligned and height correct on resize / font metric changes
-  const ro = new ResizeObserver(() => {
-    placeIndicator(active);
-    // Recalculate tallest height in case lines reflow
-    fixStageHeight();
-  });
-  ro.observe(tabsWrap);
-  ro.observe(stage);
-
-  // Extra safety: re-place after fonts settle
-  setTimeout(() => { placeIndicator(active); fixStageHeight(); }, 250);
-  setTimeout(() => { placeIndicator(active); fixStageHeight(); }, 800);
-})();
-</script>
-
-<script>
-const links = {
-  1: document.querySelector('.nav a[href="#control"]'),
-  2: document.querySelector('.nav a[href="#workers"]'),
-  3: document.querySelector('.nav a[href="#infra"]')
-};
-
-function highlight(step) {
-  Object.values(links).forEach(link => link.classList.remove('active'));
-  links[step]?.classList.add('active');
-}
-
-// uppdatera i IntersectionObserver (där du redan har activate(step))
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const step = +entry.target.dataset.target;
-      activate(step);     // visar rätt callout/pil
-      highlight(step);    // markerar rätt nav-länk
-    }
-  });
-},{threshold:0.55});
-
-stages.forEach(s => io.observe(s));
-</script>-->
 
 <script>
   (() => {
