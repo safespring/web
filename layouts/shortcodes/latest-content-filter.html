@@ -1,32 +1,30 @@
-{{ $knowledgeHub := where .Site.RegularPages "Section" "knowledge-hub" }}
+{{/* Get content from top-level sections */}}
+{{ $blogPages := where .Site.RegularPages "Section" "blog" }}
+{{ $webinarPages := where .Site.RegularPages "Section" "webinar" }}
+{{ $solutionBriefPages := where .Site.RegularPages "Section" "solution-brief" }}
+{{ $whitepaperPages := where .Site.RegularPages "Section" "whitepaper" }}
+
+{{/* Combine all content */}}
+{{ $allContent := slice }}
+{{ $allContent = $allContent | append $blogPages }}
+{{ $allContent = $allContent | append $webinarPages }}
+{{ $allContent = $allContent | append $solutionBriefPages }}
+{{ $allContent = $allContent | append $whitepaperPages }}
+
 {{ $currentLang := .Site.Language.Lang }}
 
-{{/* Initialize counters */}}
-{{ $blogCount := 0 }}
-{{ $webinarCount := 0 }}
-{{ $solutionBriefCount := 0 }}
-{{ $whitepaperCount := 0 }}
-
-{{/* Count items by checking their file path */}}
-{{ range $knowledgeHub }}
-  {{ $path := .File.Path }}
-  {{ if (findRE "knowledge-hub/blog/" $path) }}
-    {{ $blogCount = add $blogCount 1 }}
-  {{ else if (findRE "knowledge-hub/webinar/" $path) }}
-    {{ $webinarCount = add $webinarCount 1 }}
-  {{ else if (findRE "knowledge-hub/solution-brief/" $path) }}
-    {{ $solutionBriefCount = add $solutionBriefCount 1 }}
-  {{ else if (findRE "knowledge-hub/whitepaper/" $path) }}
-    {{ $whitepaperCount = add $whitepaperCount 1 }}
-  {{ end }}
-{{ end }}
+{{/* Use the actual counts from sections */}}
+{{ $blogCount := len $blogPages }}
+{{ $webinarCount := len $webinarPages }}
+{{ $solutionBriefCount := len $solutionBriefPages }}
+{{ $whitepaperCount := len $whitepaperPages }}
 
 
 <section class="tf-buttons-container-center">
   {{/* Category filter buttons */}}
   <div class="tf-buttons-container">
     <button class="active" data-category="all">
-      All <span class="filter-number">({{ len $knowledgeHub }})</span>
+      All <span class="filter-number">({{ len $allContent }})</span>
     </button>
     <button data-category="blog">
       Blog / Tech Updates <span class="filter-number">({{ $blogCount }})</span>
@@ -46,46 +44,58 @@
   <div class="line">
     <div class="tf-buttons-container">
       {{/* Current language button (active) */}}
-      <button class="text active" style="cursor: default;" title="{{ .Site.Language.LanguageName }}">
+      <button
+        class="text active"
+        style="cursor: default;"
+        title="{{ .Site.Language.LanguageName }}"
+      >
         <img
           src="/img/flags/{{ $currentLang }}.svg"
           alt="{{ .Site.Language.LanguageName }} flag"
           style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
         />
         {{ .Site.Language.LanguageName }}&nbsp;
-        <span class="filter-number">({{ len $knowledgeHub }})</span>
+        <span class="filter-number">({{ len $allContent }})</span>
       </button>
 
       {{/* Other languages */}}
       {{ range .Site.Home.Translations }}
-          <a href="{{ with .GetPage "knowledge-hub" }}{{ .Permalink }}{{ end }}"
-            style="text-decoration: none;" 
-            title="{{ .Language.LanguageName }}">
-            <button class="text">
-              <img
-                src="/img/flags/{{ .Lang }}.svg"
-                alt="{{ .Language.LanguageName }} flag"
-                style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
-              />
-              {{ .Language.LanguageName }}&nbsp;
-              <span class="filter-number">({{ len (where .Site.RegularPages "Section" "knowledge-hub") }})</span>
-            </button>
-          </a>
+        <a
+          href="{{ with .GetPage "knowledge-hub" }}{{ .Permalink }}{{ end }}"
+          style="text-decoration: none;"
+          title="{{ .Language.LanguageName }}"
+        >
+          <button class="text">
+            <img
+              src="/img/flags/{{ .Lang }}.svg"
+              alt="{{ .Language.LanguageName }} flag"
+              style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
+            />
+            {{ .Language.LanguageName }}&nbsp;
+            <span class="filter-number"
+              >({{ len (where .Site.RegularPages "Section" "blog") |
+                add (len (where .Site.RegularPages "Section" "webinar")) |
+                add (len (where .Site.RegularPages "Section" "solution-brief")) |
+                add (len (where .Site.RegularPages "Section" "whitepaper"))
+              }})</span
+            >
+          </button>
+        </a>
       {{ end }}
     </div>
   </div>
 
   <div class="tf-items-container">
-    {{ range $knowledgeHub.ByPublishDate.Reverse }}
-      {{ $path := .File.Path }}
+    {{ range $allContent.ByPublishDate.Reverse }}
+      {{ $section := .Section }}
       {{ $category := "unknown" }}
-      {{ if (findRE "knowledge-hub/blog/" $path) }}
+      {{ if eq $section "blog" }}
         {{ $category = "blog" }}
-      {{ else if (findRE "knowledge-hub/webinar/" $path) }}
+      {{ else if eq $section "webinar" }}
         {{ $category = "webinar" }}
-      {{ else if (findRE "knowledge-hub/solution-brief/" $path) }}
+      {{ else if eq $section "solution-brief" }}
         {{ $category = "solution-brief" }}
-      {{ else if (findRE "knowledge-hub/whitepaper/" $path) }}
+      {{ else if eq $section "whitepaper" }}
         {{ $category = "whitepaper" }}
       {{ end }}
       <div

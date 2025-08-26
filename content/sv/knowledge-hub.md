@@ -1,6 +1,7 @@
 ---
 language: "sv"
 title: "Safespring Kunskapshubb"
+slug: "kunskapshubb"
 section: "Nyheter och innehåll"
 date: 2022-12-07T13:58:58+01:00
 draft: false

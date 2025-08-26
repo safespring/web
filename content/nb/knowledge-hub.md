@@ -1,6 +1,7 @@
 ---
 language: "nb"
 title: "Safespring Kunnskapshub"
+slug: "kunnskapsbase"
 section: "Nyheter og innhold"
 date: 2022-12-07T13:58:58+01:00
 draft: false

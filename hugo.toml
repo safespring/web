@@ -3,8 +3,9 @@ author = "Safespring"
 copyright = "2025 Safespring"
 
 # Pagination
-pagination.pagerSize = 10
-pagination.path = "latest"
+[pagination]
+  pagerSize = 10
+  path = "latest"
 
 #------------------------------------------------------------------------------
 # Languages
@@ -21,8 +22,32 @@ defaultContentLanguage = 'sv'
   [languages.en.permalinks]
     [languages.en.permalinks.page]
       books = '/books/:slug/'
+      services = '/services/:slug/'
+      blog = '/blog/:slug/'
+      webinar = '/webinar/:slug/'
+      whitepaper = '/whitepaper/:slug/'
+      'solution-brief' = '/solution-brief/:slug/'
+      industries = '/industries/:slug/'
+      documents = '/documents/:slug/'
+      career = '/career/:slug/'
+      demo = '/demo/:slug/'
+      geant = '/geant/:slug/'
+      onboarding = '/onboarding/:slug/'
+      saas = '/saas/:slug/'
     [languages.en.permalinks.section]
       books = '/books/'
+      services = '/services/'
+      blog = '/blog/'
+      webinar = '/webinar/'
+      whitepaper = '/whitepaper/'
+      'solution-brief' = '/solution-brief/'
+      industries = '/industries/'
+      documents = '/documents/'
+      career = '/career/'
+      demo = '/demo/'
+      geant = '/geant/'
+      onboarding = '/onboarding/'
+      saas = '/saas/'
 
   [languages.sv]
   languageCode = 'sv-SE'
@@ -32,14 +57,31 @@ defaultContentLanguage = 'sv'
   baseURL = 'https://beta.safespring.se/'
   [languages.sv.permalinks]
     [languages.sv.permalinks.page]
-      documents = '/dokument/:contentbasename/'
-      industries = '/branscher/:contentbasename/'
-      knowledge-hub = 'kunskapshubb/:contentbasename/'
-      services = '/tjanster/:contentbasename/'
+      documents = '/dokument/:slug/'
+      industries = '/branscher/:slug/'
+      blog = '/blogg/:slug/'
+      webinar = '/webinar/:slug/'
+      whitepaper = '/vitbok/:slug/'
+      'solution-brief' = '/losningsfaktablad/:slug/'
+      services = '/tjanster/:slug/'
+      career = '/karriar/:slug/'
+      demo = '/demo/:slug/'
+      geant = '/geant/:slug/'
+      onboarding = '/onboarding/:slug/'
+      saas = '/saas/:slug/'
     [languages.sv.permalinks.section]
       documents = '/dokument/'
       industries = '/branscher/'
+      blog = '/blogg/'
+      webinar = '/webinar/'
+      whitepaper = '/vitbok/'
+      'solution-brief' = '/losningsfaktablad/'
       services = '/tjanster/'
+      career = '/karriar/'
+      demo = '/demo/'
+      geant = '/geant/'
+      onboarding = '/onboarding/'
+      saas = '/saas/'
 
   [languages.nb]
   languageCode = 'nb-NO'
@@ -50,8 +92,28 @@ defaultContentLanguage = 'sv'
   [languages.nb.permalinks]
     [languages.nb.permalinks.page]
       books = '/books/:slug/'
+      services = '/tjenester/:slug/'
+      blog = '/blogg/:slug/'
+      webinar = '/webinar/:slug/'
+      whitepaper = '/hvitbok/:slug/'
+      'solution-brief' = '/losningsfaktablad/:slug/'
+      industries = '/industrier/:slug/'
+      documents = '/dokumenter/:slug/'
+      demo = '/demo/:slug/'
+      onboarding = '/onboarding/:slug/'
+      saas = '/saas/:slug/'
     [languages.nb.permalinks.section]
       books = '/books/'
+      services = '/tjenester/'
+      blog = '/blogg/'
+      webinar = '/webinar/'
+      whitepaper = '/hvitbok/'
+      'solution-brief' = '/losningsfaktablad/'
+      industries = '/industrier/'
+      documents = '/dokumenter/'
+      demo = '/demo/'
+      onboarding = '/onboarding/'
+      saas = '/saas/'
 
   [languages.da]
   languageCode = 'da-DK'
@@ -62,8 +124,28 @@ defaultContentLanguage = 'sv'
   [languages.da.permalinks]
     [languages.da.permalinks.page]
       books = '/books/:slug/'
+      services = '/tjenester/:slug/'
+      blog = '/blog/:slug/'
+      webinar = '/webinar/:slug/'
+      whitepaper = '/hvidbog/:slug/'
+      'solution-brief' = '/losningsfaktablad/:slug/'
+      industries = '/industrier/:slug/'
+      documents = '/dokumenter/:slug/'
+      demo = '/demo/:slug/'
+      onboarding = '/onboarding/:slug/'
+      saas = '/saas/:slug/'
     [languages.da.permalinks.section]
       books = '/books/'
+      services = '/tjenester/'
+      blog = '/blog/'
+      webinar = '/webinar/'
+      whitepaper = '/hvidbog/'
+      'solution-brief' = '/losningsfaktablad/'
+      industries = '/industrier/'
+      documents = '/dokumenter/'
+      demo = '/demo/'
+      onboarding = '/onboarding/'
+      saas = '/saas/'
 
 #------------------------------------------------------------------------------
 # Content mounts
