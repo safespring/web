@@ -1,5 +1,6 @@
 {{/* Get content from top-level sections */}}
 {{ $blogPages := where .Site.RegularPages "Section" "blog" }}
+{{ $techUpdatePages := where .Site.RegularPages "Section" "tech-update" }}
 {{ $webinarPages := where .Site.RegularPages "Section" "webinar" }}
 {{ $solutionBriefPages := where .Site.RegularPages "Section" "solution-brief" }}
 {{ $whitepaperPages := where .Site.RegularPages "Section" "whitepaper" }}
@@ -7,6 +8,7 @@
 {{/* Combine all content */}}
 {{ $allContent := slice }}
 {{ $allContent = $allContent | append $blogPages }}
+{{ $allContent = $allContent | append $techUpdatePages }}
 {{ $allContent = $allContent | append $webinarPages }}
 {{ $allContent = $allContent | append $solutionBriefPages }}
 {{ $allContent = $allContent | append $whitepaperPages }}
@@ -15,6 +17,7 @@
 
 {{/* Use the actual counts from sections */}}
 {{ $blogCount := len $blogPages }}
+{{ $techUpdateCount := len $techUpdatePages }}
 {{ $webinarCount := len $webinarPages }}
 {{ $solutionBriefCount := len $solutionBriefPages }}
 {{ $whitepaperCount := len $whitepaperPages }}
@@ -27,7 +30,10 @@
       All <span class="filter-number">({{ len $allContent }})</span>
     </button>
     <button data-category="blog">
-      Blog / Tech Updates <span class="filter-number">({{ $blogCount }})</span>
+      Blog <span class="filter-number">({{ $blogCount }})</span>
+    </button>
+    <button data-category="tech-update">
+      Tech Updates <span class="filter-number">({{ $techUpdateCount }})</span>
     </button>
     <button data-category="webinar">
       Webinars <span class="filter-number">({{ $webinarCount }})</span>
@@ -74,6 +80,7 @@
             {{ .Language.LanguageName }}&nbsp;
             <span class="filter-number"
               >({{ len (where .Site.RegularPages "Section" "blog") |
+                add (len (where .Site.RegularPages "Section" "tech-update")) |
                 add (len (where .Site.RegularPages "Section" "webinar")) |
                 add (len (where .Site.RegularPages "Section" "solution-brief")) |
                 add (len (where .Site.RegularPages "Section" "whitepaper"))
@@ -91,6 +98,8 @@
       {{ $category := "unknown" }}
       {{ if eq $section "blog" }}
         {{ $category = "blog" }}
+      {{ else if eq $section "tech-update" }}
+        {{ $category = "tech-update" }}
       {{ else if eq $section "webinar" }}
         {{ $category = "webinar" }}
       {{ else if eq $section "solution-brief" }}
