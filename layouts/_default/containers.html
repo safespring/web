@@ -262,7 +262,7 @@ h3 {
   width: 86%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
+  transition: opacity .25s ease;
 }
 
 /* höger – textstack (alla callouts finns här men vi visar 1 åt gången) */
@@ -707,9 +707,16 @@ h3 {
   border: none;
   border-radius: 0px;
   box-shadow: none;
-  overflow: auto;
-  padding: none;
+  padding: 0;
+  overflow: visible;
   flex-direction: column;
+}
+.figure img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.arrow {
+  display: none;
 }
 }
 </style>
@@ -771,7 +778,7 @@ h3 {
       <section class="capsule" aria-label="Kubernetes-kluster">
         <!-- Vänster: Bild -->
         <div class="figure">
-          <img src="/img/graphics/controlplane-2.svg" alt="Kubernetes cluster schematic" />
+          <img src="/img/graphics/safespring-container-platform-image-1.svg" alt="Kubernetes cluster schematic" />
         </div>
 
         <!-- Höger: Textstack -->
@@ -1245,11 +1252,29 @@ stages.forEach(s => io.observe(s));
     const stages = [...scrollyEl.querySelectorAll('.stage')];
     const callouts = [...document.querySelectorAll('.callout')];
     const arrows = [...document.querySelectorAll('.arrow')];
+    const figureImg = document.querySelector('.figure img');
+    const imgMap = {
+    1: { src: '/img/graphics/safespring-container-platform-image-1.svg', alt: 'Control plane' },
+    2: { src: '/img/graphics/safespring-container-platform-image-2.svg', alt: 'Worker nodes' },
+    3: { src: '/img/graphics/safespring-container-platform-image-3.svg', alt: 'Infrastructure' }
+  };
 
-    function activate(step){
-      callouts.forEach(el => el.classList.toggle('active', +el.dataset.step === step));
-      arrows.forEach(el => el.classList.toggle('active', +el.dataset.id === step));
+  Object.values(imgMap).forEach(({src}) => { const i = new Image(); i.src = src; });
+
+  function activate(step){
+    callouts.forEach(el => el.classList.toggle('active', +el.dataset.step === step));
+    arrows.forEach(el   => el.classList.toggle('active', +el.dataset.id   === step));
+
+    const next = imgMap[step];
+    if (next && figureImg && figureImg.getAttribute('src') !== next.src) {
+      figureImg.style.opacity = '0';
+      requestAnimationFrame(() => {
+        figureImg.src = next.src;
+        figureImg.alt = next.alt;
+        requestAnimationFrame(() => { figureImg.style.opacity = '1'; });
+      });
     }
+  }
 
     const links = {
       1: document.querySelector('.nav a[href="#control"]'),
