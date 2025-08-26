@@ -16,7 +16,7 @@
   --accent: #fa690f; /* ORANGE – pil */
   --card: #f3f8fb;
   --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-  --gap: min(5vw, 48px);
+  --gap: 0;
   --pad: clamp(18px, 3vw, 32px);
   --stage-gap: 120vh; /* avstånd mellan steg-markörer */
 
@@ -300,8 +300,7 @@ h3 {
 /* pilar – ligger INUTI kapseln, absolut placerade från vänster mot höger */
 .arrow {
   position: absolute;
-  left: calc(var(--pad) + 25%); /* start approx. inne i bilden */
-  width: 36%;
+  left: -70px; /* start approx. inne i bilden */
   max-width: 430px;
   height: 38px;
   pointer-events: none;
@@ -315,13 +314,13 @@ h3 {
 }
 /* vertikalt läge för varje pil */
 .arrow[data-id="1"] {
-  top: 37%;
+  top: 5px;
 }
 .arrow[data-id="2"] {
-  top: 53%;
+  top: 5px;
 }
 .arrow[data-id="3"] {
-  top: 71%;
+  top: 5px;
 }
 
 .callout[data-step="1"] {
@@ -719,7 +718,7 @@ h3 {
         </p>
 
         <div class="actions">
-          <a href="#" id="openModal" class="button">
+          <a href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm" class="button">
             BOOK DEMO
           </a>
         </div>
@@ -765,16 +764,43 @@ h3 {
         <div class="right">
           <div class="stack">
             <article class="callout" data-step="1">
+                      <div class="arrow" data-id="1" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+            </g>
+          </svg>
+        </div>
               <h3>Safesprings kontrollplan</h3>
               <p>Managed control plane med olika konfigurationer. I single-node är den omanagerad – övriga alternativ är fullt hanterade av Safespring.</p>
             </article>
 
             <article class="callout" data-step="2">
+                      <div class="arrow" data-id="2" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+            </g>
+          </svg>
+        </div>
               <h3>Worker-noder</h3>
               <p>Alltid kundhanterade. Varje nod kör som egen VM storleksatt från vår flavor-katalog.</p>
             </article>
 
             <article class="callout" data-step="3">
+                      <div class="arrow" data-id="3" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+            </g>
+          </svg>
+        </div>
               <h3>Infrastruktur</h3>
               <p>Compute-lagret under klustret driftas av Safespring – du behöver inte tänka på den nivån.</p>
             </article>
@@ -782,35 +808,6 @@ h3 {
         </div>
 
         <!-- Pilar (ligger ovanpå och pekar horisontellt från bild mot text) -->
-        <div class="arrow" data-id="1" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
-            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
-              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-            </g>
-          </svg>
-        </div>
-
-        <div class="arrow" data-id="2" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
-            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
-              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-            </g>
-          </svg>
-        </div>
-
-        <div class="arrow" data-id="3" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
-            <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
-              <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-              <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-              <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-            </g>
-          </svg>
-        </div>
       </section>
     </div>
     <!-- Steg-markörer (osynliga, bara för scroll-logik) -->
