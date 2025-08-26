@@ -91,8 +91,6 @@ Simplify database management by adding a managed database to your On-Premise Clo
 Maximize the potential of your machine learning and AI projects by adding a Scalout ML platform to your On-Premise Cloud. This add-on service provides a scalable and flexible platform optimized for handling and deploying machine learning models, making it easier for you to train, predict, and analyze data.
 {{% /accordion %}}
 
-{{< icon-block-horisontal icon="fa-kit fa-ntt" color="#195F8C" text="Cyber Threat Detection and Response" description="When a threat is detected, Samurai MDR takes immediate action to isolate and manage the threat." >}}
-
 ## Support and Availability
 
 This service can be delivered with up to 99.9 percent availability, provided the customer meets our data center specifications and capacity usage requirements. Details are included in the standard contract, which is made available during the sales process. Additionally, the standard support process described in [Safespring’s documentation](https://docs.safespring.com/service/policies) applies.
@@ -137,6 +135,7 @@ Presentation and discussion of Safespring’s current and planned product develo
 
 {{< distance >}}
 
+<!--
 {{< chart >}}
 timeline
     section Week 0
@@ -182,6 +181,6 @@ Delivery Meeting: Prepare status report
            : Review user interface
            : Go through platform functionalities
 {{< /chart >}}
-
+-->
 {{< distance >}}
 {{< accordion-script >}}
