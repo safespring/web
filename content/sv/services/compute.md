@@ -31,6 +31,7 @@ aliases:
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
+slug: "safespring-cloud-compute"
 ---
 
 {{< icon-block-container >}}
