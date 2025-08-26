@@ -323,10 +323,10 @@ p > img {
 }
 
 h3 {
-	margin:40px 0 10px 0;
+	margin:40px 0 0px 0;
 	font:var(--hind-light-weight) 1.25rem var(--hind-font);
 	color:var(--clear-blue-color);
-	line-height:21px;
+	line-height: 1;
 }
 
 h2 + h3 {
