@@ -41,11 +41,18 @@
     --maxw: 1200px;
   }
 
+
+}
   html,
   body {
     height: 100%;
     scroll-behavior: smooth;          /* keeps it silky */
     scroll-snap-type: y proximity;    /* try 'mandatory' if you want harder snaps */
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: balance;
   }
   body {
     margin: 10%;
@@ -702,18 +709,28 @@ h3 {
 
 .two-fields-div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 100px;
+
 }
 .first-fields-div {
   flex: 2;
+  order: 1;
 }
 
 .second-fields-div {
   flex: 1;
   padding: 10%;
+  order: 2;
+}
+
+@media (max-width: 500px) {
+  .second-fields-div {
+  padding: 0%;
+}
 }
 
 .blue-box {
@@ -778,6 +795,7 @@ h3 {
           <a href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm" class="button">
             BOOK DEMO
           </a>
+          <a class="text-button" href="#get-started">Get started</a>
         </div>
       </div>
 
@@ -988,7 +1006,7 @@ activate(1);
 }
 </style>
 
-<section class="two-fields-div hero hero--with-arrow">
+<section class="two-fields-div hero hero--with-arrow" id="get-started">
   <div class="first-fields-div hero-text">
     <h1>Get started with Safespring Kubernete<span class="arrow-src" aria-hidden="true">s</span></h1>
     <div style="margin:50px 0;">
@@ -1169,6 +1187,29 @@ activate(1);
       border-radius: 100px;
     }
 
+    /* Visa fel först efter att användaren interagerat med fältet */
+#up-email-input:user-invalid {
+  border-color: red !important;
+}
+
+/* Flytta/tona labeln röd när fel */
+.form-field:has(#up-email-input:user-invalid) > label {
+  color: red;
+  transform: translateY(-205%);
+  background: var(--cloud-blue-color);
+  font: 400 12px/16px 'Hind';
+  letter-spacing: .5px;
+  border-radius: 100px;
+}
+
+/* Ta bort fel så fort det blir giltigt igen */
+#up-email-input:user-valid {
+  border-color: var(--main-color) !important;
+}
+.form-field:has(#up-email-input:user-valid) > label {
+  color: #3C9BCD;
+}
+
     .iti__selected-flag {
       padding: 0 6px 0 25px !important;
       border-radius: 500px 0 0 500px;
@@ -1344,6 +1385,9 @@ preview.document.write(html);
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
         <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
       </div>
+          <small id="email-domain-warning">
+        Please use your work email.
+    </small>
       <!-- </div> -->
       <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
@@ -1400,6 +1444,42 @@ preview.document.write(html);
     <script>
       function onSubmit(e){var t;"function"!=typeof window._bEmValid||!0===window.__validEmail?validateForm(e,"https://www.safespring.com/container-thanks/"):(e.preventDefault(),t=setInterval(function(){void 0!==window.__validEmail&&(clearInterval(t),!0===window.__validEmail)&&validateForm(e,"https://www.safespring.com/container-thanks/")},300))}function validateForm(e,t){e.preventDefault();e=document.getElementsByName("formId")[0].value;for(var n=(e=document.forms["form_"+e]).querySelectorAll("input, textarea, select"),o=0;o<n.length;o++)"text"===n[o].type&&(n[o].value=n[o].value.trim());var a=e.querySelectorAll("input[name*=phone], input[name*=Phone]");if([].forEach.call(a,function(e){e.iti&&(e.value=e.iti.getNumber())}),void 0===window.grecaptcha||""!==window.grecaptcha.getResponse()){var l=[];for(o=0;o<n.length;o++)"checkbox"===n[o].type?l.push(n[o].name+"="+encodeURIComponent(n[o].checked?n[o].value:"off")):l.push(n[o].name+"="+encodeURIComponent(n[o].value));a=l.join("&");var s=(a+="&isAjax=true",window._paq||null),i=new XMLHttpRequest;i.open("POST",e.action),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.send(a),i.onload=function(){var e,n;200===i.status?t?(s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),"undefined"!=typeof _uaq&&_uaq("form="+i.responseText),setTimeout(function(){window.top.location.href=t},333)):(e=document.getElementById("up-form"),n=document.getElementById("up-form-thanks"),e.style.display="none",n.style.display="block",s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),_uaq&&_uaq("form="+i.responseText)):console.log("AJAX ERROR",i.status)}}else e=document.getElementById("recaptcha-error"),a=document.getElementsByClassName("g-recaptcha"),e.style.display="none",a&&a.length&&console.log("handle this later")}var form=document.getElementById("up-form");form.addEventListener("submit",onSubmit);
     </script>
+      <script>
+    // Globala init: sätt custom-validation + hoppa över Ajax om invalid
+    document.addEventListener("DOMContentLoaded", function(){
+      const personalDomains = [
+        'gmail.com','hotmail.com','yahoo.com','icloud.com','outlook.com','live.com','live.no','live.se','aol.com','simplelogin.com', 'msn.com', 'nespf.com'
+      ];
+      const emailField = document.querySelector("#up-email-input");
+      const warning    = document.querySelector("#email-domain-warning");
+      const form       = document.querySelector("#up-form");
+
+      // 1) Varje input: sätt customValidity om personlig domän
+      emailField.addEventListener("input", function(){
+        const parts = emailField.value.trim().toLowerCase().split("@");
+        if(parts.length===2 && personalDomains.includes(parts[1])){
+          warning.style.display = "block";
+          emailField.setCustomValidity(
+            'Please use your work email.'
+          );
+        } else {
+          warning.style.display = "none";
+          emailField.setCustomValidity("");
+        }
+      });
+
+      // 2) Submit: kolla validity innan din Ajax körs
+      form.addEventListener("submit", function(e){
+        if(!form.checkValidity()){
+          e.preventDefault();
+          warning.style.display = "block";
+          return;
+        }
+        // Om valid: gå vidare till onSubmit (Ajax)
+        onSubmit(e);
+      });
+    });
+  </script>
   </div>
   <script>// Ritar en kurvad pil mellan .arrow-src och .cta-start
 (function(){

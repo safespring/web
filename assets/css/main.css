@@ -80,7 +80,12 @@
 
 ::selection {
 	color:#195F8C;
-	background:#EAF0F4;
+	background:color-mix(in srgb, var(--main-color) 20%, transparent);
+}
+
+a::selection {
+	color:#FFF;
+	background:#FA690F;
 }
 
 video::cue {
@@ -242,10 +247,7 @@ hr {
 	font-size:1rem;
 }
 
-a::selection {
-	color:#FFF;
-	background:#FA690F;
-}
+
 
 .index {
 	background:#FAFEFE;
