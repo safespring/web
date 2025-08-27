@@ -41,8 +41,6 @@
     --maxw: 1200px;
   }
 
-
-}
   html,
   body {
     height: 100%;
@@ -1056,20 +1054,24 @@ activate(1);
       color: #6B7C93;
     }
 
+    .twitter-typeahead {
+      width: 100%;
+    }
+
     .twitter-typeahead .tt-menu {
-      background-color: #fff;
+      background-color: #d7e3eb;
       max-height: 300px;
       overflow: auto;
-      border: 1px solid #66afe9;
-      border-top: none;
-      border-radius: 0 0 4px 4px;
+      border: 1px solid #99b6cb;
+      border-radius: 20px 20px;
       width: 100%;
-      margin-top: -2px;
+      margin-top: -9px;
     }
 
     .twitter-typeahead .tt-suggestion {
-      padding: 5px 10px;
+      padding: 10px 20px;
       color: #4B5562;
+      border-bottom: .5px solid #99b6cb;
     }
 
     .twitter-typeahead .tt-suggestion:hover {
@@ -1103,7 +1105,6 @@ activate(1);
     .iti--allow-dropdown input {
       padding-left: 65px !important;
     }
-
     .form-field label {
       position: absolute;
       top: 50%;
@@ -1283,6 +1284,11 @@ activate(1);
       font: 400 12px/16px 'Hind';
       letter-spacing: 0.5px;
       background-color: var(--cloud-blue-color);
+    }
+    #email-domain-warning {
+      display:none; margin-top:-20px; color:#e74c3c;
+      font:600 12px/16px var(--mon-font);
+      text-align: center;
     }
   </style>
   <script>
