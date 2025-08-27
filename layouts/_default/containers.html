@@ -300,9 +300,8 @@ h3 {
 
 /* pilar – ligger INUTI kapseln, absolut placerade från vänster mot höger */
 .arrow {
-  display: none;
   position: absolute;
-  left: -70px; /* start approx. inne i bilden */
+  left: -85px; /* start approx. inne i bilden */
   max-width: 430px;
   height: 38px;
   pointer-events: none;
@@ -316,13 +315,13 @@ h3 {
 }
 /* vertikalt läge för varje pil */
 .arrow[data-id="1"] {
-  top: 5px;
+  top: 0px;
 }
 .arrow[data-id="2"] {
-  top: 5px;
+  top: 0px;
 }
 .arrow[data-id="3"] {
-  top: 5px;
+  top: 0px;
 }
 
 .callout[data-step="1"] {
@@ -385,10 +384,12 @@ h3 {
   padding: 8px 12px;
   border-radius: 999px;
 }
+
 .nav a:hover {
   background: rgba(60, 155, 205, 0.12);
   color: #0d3850;
 }
+
 .nav a.active {
   background: rgba(60, 155, 205, 0.12);
   color: #0d3850;
@@ -416,6 +417,7 @@ h3 {
 .header {
   padding: 16px 18px 0;
 }
+
 .panel-row {
   display: flex;
   align-items: flex-end;
@@ -423,6 +425,7 @@ h3 {
   border-bottom: 1px solid var(--line-2);
   padding: 0 2px;
 }
+
 .title {
   margin: 0;
   padding: 12px 10px;
@@ -437,6 +440,7 @@ h3 {
   display: flex;
   gap: 4px;
 }
+
 .tab {
   appearance: none;
   border: 0;
@@ -456,9 +460,11 @@ h3 {
   position: relative;
   transition: color var(--dur) var(--ease);
 }
+
 .tab:hover {
   color: color-mix(in oklab, var(--ink), var(--muted) 40%);
 }
+
 .tab.is-active {
   color: var(--ink);
 }
