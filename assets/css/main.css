@@ -5164,7 +5164,10 @@ details[open] summary {
 }
 
 .column-two {
-	column-count:2;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 10px;
 }
 
 .column-two li {
