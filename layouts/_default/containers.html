@@ -18,7 +18,7 @@
     --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
     --gap: 0;
     --pad: clamp(18px, 3vw, 32px);
-    --stage-gap: 120vh; /* avstånd mellan steg-markörer */
+    --stage-gap: 90vh; /* avstånd mellan steg-markörer */
 
     /* TABS */
     --card: #195f8c10;
@@ -44,6 +44,8 @@
   html,
   body {
     height: 100%;
+    scroll-behavior: smooth;          /* keeps it silky */
+    scroll-snap-type: y proximity;    /* try 'mandatory' if you want harder snaps */
   }
   body {
     margin: 10%;
@@ -350,6 +352,10 @@ h3 {
 /* steg-markörer (osynliga boxar som triggar bytena) */
 .scrolly .stage {
   height: var(--stage-gap);
+}
+
+.stage[data-target="1"] {
+  height: 10vh; /* try 35–50vh until it feels right */
 }
 
 /* rubrik ovanför */
