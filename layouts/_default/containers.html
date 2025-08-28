@@ -234,7 +234,7 @@ h3 {
 .scrolly {
   position: relative;
   min-height: calc(var(--stage-gap) * 2.2);
-  padding: 12vh 0;
+  padding: 15vh 0 0 0;
 }
 .locked-section {
   position: sticky;
@@ -322,20 +322,20 @@ h3 {
 }
 /* vertikalt läge för varje pil */
 .arrow[data-id="1"] {
-  top: 0px;
+  top: 6px;
 }
 .arrow[data-id="2"] {
-  top: 0px;
+  top: 8px;
 }
 .arrow[data-id="3"] {
-  top: 0px;
+  top: 15px;
 }
 
 .callout[data-step="1"] {
   top: 23%;
 }
 .callout[data-step="2"] {
-  top: 45%;
+  top: 43%;
 }
 .callout[data-step="3"] {
   top: 68%;
@@ -595,78 +595,63 @@ h3 {
 }
 /* END - TAB BOX */
 /* IKON box */
-.bullet-section {
-  max-width: var(--maxw);
-  margin: 10vw 0;
-  padding: 48px 20px 64px;
-}
+        .bullet-section{
+          max-width: var(--maxw);
+          margin: 0 auto 10vw auto;
+        }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  align-items: start;
-}
+        .grid{
+          display: flex;
+          gap: 0;
+          align-items: start;
+          flex-wrap: wrap;
+        }
 
-.col {
-  text-align: center;
-  padding: 36px 28px 28px;
-  position: relative;
-  /* vertikal avdelare till vänster på kolumner 2 och 3 */
-  border-left: 1px solid transparent;
-}
-.col + .col {
-  border-left-color: var(--line);
-}
+        .col{
+          flex: 1;
+          text-align: center;
+          padding: 36px 28px 28px;
+          position: relative;
+          /* vertikal avdelare till vänster på kolumner 2 och 3 */
+          border-left: 1px solid transparent;
+        }
+        .col + .col{
+          border-left-color: var(--line);
+        }
 
-.icon-wrap {
-  width: 132px;
-  height: 132px;
-  margin: 0 auto 18px;
-  border-radius: 50%;
-  background: #fff;
-  border: 2px solid rgba(0, 0, 0, 0.12);
-  display: grid;
-  place-items: center;
-}
-.icon-wrap i {
-  font-size: 54px; /* triangelstorlek */
-  line-height: 1;
-  color: #000;
-  transform: translateY(-2px); /* optisk centrering */
-}
+        .icon-wrap{
+          width: 132px;
+          height: 132px;
+          margin: 0 auto 25px;
+          border-radius: 50%;
+          background: #d0dde6;
+          border: 0px solid #d0dde6;
+          display: grid;
+          place-items: center;
+        }
+        .icon-wrap i{
+          font-size: 54px; /* triangelstorlek */
+          line-height: 1;
+          color: #417da5;
+          transform: translateY(-1px); /* optisk centrering */
+        }
 
-h3 {
-  margin: 10px 0 10px;
-  font-family: var(--h-font);
-  font-weight: 300; /* Hind Light */
-  font-size: 44px;
-  letter-spacing: 0.2px;
-}
+        h3{
+          margin: 10px 0 10px;
+          font-family: var(--hind-font);
+          font-weight: 300; /* Hind Light */
+          font-size: 44px;
+          letter-spacing: .2px;
+        }
 
-/* Responsiv: stapla på smala skärmar */
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .col {
-    border-left: none;
-    padding: 28px 12px 36px;
-  }
-  .col:not(:last-child) {
-    border-bottom: 1px solid var(--line);
-  }
-  h3 {
-    font-size: 36px;
-  }
-  .icon-wrap {
-    width: 112px;
-    height: 112px;
-  }
-  .icon-wrap i {
-    font-size: 48px;
-  }
-}
+        /* Responsiv: stapla på smala skärmar */
+        @media (max-width: 900px){
+          .grid{ grid-template-columns: 1fr; }
+          .col{ border-left: none; padding: 28px 12px 36px; }
+          .col:not(:last-child){ border-bottom: 1px solid var(--line); }
+          h3{ font-size: 36px; }
+          .icon-wrap{ width: 112px; height: 112px; }
+        }
 /* modal */
 .modal {
   display: none;
@@ -727,8 +712,8 @@ h3 {
 
 @media (max-width: 500px) {
   .second-fields-div {
-  padding: 0%;
-}
+    padding: 0%;
+  }
 }
 
 .blue-box {
@@ -806,7 +791,7 @@ h3 {
 
 
 
-  <div style="margin-top:200px;"></div>
+  <div style="margin-top:10%;"></div>
 
   <div class="scrolly" id="scene">
     <!-- Sticky kapsel (ALLT inuti) -->
@@ -837,7 +822,7 @@ h3 {
                   </g>
                 </svg>
               </div>
-              <p><strong>Safespring’s Kubernetes clusters</strong> provide a managed control plane with different configurations. In a single node configuration the control plane is unmanaged, while other options are fully managed by Safespring.</p>
+              <p><strong>Safespring’s Kubernetes clusters</strong> provide a managed control plane with different configurations of nodes.</p>
             </article>
 
             <article class="callout" data-step="2">
@@ -863,7 +848,7 @@ h3 {
                   </g>
                 </svg>
               </div>
-              <p><strong>The infrastructure layer</strong> is managed by Safespring on our own data centers. Safespring Compute is the core of the service.</p>
+              <p><strong>The infrastructure layer</strong> is managed by Safespring on our own nordic data centers.</p>
             </article>
           </div>
         </div>
@@ -882,43 +867,127 @@ h3 {
     <div class="stage" data-target="3"></div>
   </div>
 
-<!--<script>
-/* Kopplar scroll-position (stage-divar) till vad som visas inne i kapseln */
-const stages  = [...document.querySelectorAll('.stage')];
-const callouts = [...document.querySelectorAll('.callout')];
-const arrows = [...document.querySelectorAll('.arrow')];
 
-function activate(step){
-  callouts.forEach(el => el.classList.toggle('active', +el.dataset.step === step));
-  arrows.forEach(el => el.classList.toggle('active', +el.dataset.id === step));
-}
 
-const links = {
-  1: document.querySelector('.nav a[href="#control"]'),
-  2: document.querySelector('.nav a[href="#workers"]'),
-  3: document.querySelector('.nav a[href="#infra"]')
-};
 
-function highlight(step) {
-  Object.values(links).forEach(link => link.classList.remove('active'));
-  links[step]?.classList.add('active');
-}
 
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const step = +entry.target.dataset.target;
-      activate(step);     // visar rätt callout/pil
-      highlight(step);    // markerar rätt nav-länk
-    }
-  });
-},{threshold:0.55});
 
-stages.forEach(s => io.observe(s));
+      <style>
+        :root{
+          --ink:#0a0a0a;
+          --muted:#667085;
+          --line: #d0dde6;
+          --bg-top:#ffffff;
+          --bg-bottom:#E7EFF3; /* molnblå */
+          --maxw:1200px;
 
-/* Sätt initialt steg (1) */
-activate(1);
-</script>-->
+          /* Safespring-typsnitt */
+          --h-font:"Hind", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+          --p-font:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+
+      </style>
+      <section class="bullet-section">
+        <div class="grid">
+          <article class="col">
+            <div class="icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-forward-fast"></i>
+            </div>
+            <h3>Fast</h3>
+            <p>
+              Provision Kubernetes clusters in minutes. Self-service portal or API access, with a managed control plane ready to use.
+            </p>
+          </article>
+
+          <article class="col">
+            <div class="icon-wrap" aria-hidden="true">
+              <i style="font-size:45px" class="fa-kit fa-eu-flag"></i>
+            </div>
+            <h3>Sovereign</h3>
+            <p>
+              Run workloads fully within EU jurisdiction. Built on Nordic data centers with strict compliance and security by design.
+            </p>
+          </article>
+
+          <article class="col">
+            <div class="icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <h3>Scalable</h3>
+            <p>
+              Start small and grow. Add worker nodes on-demand, choose from compute or GPU flavors, and pay only for the resources you use.
+            </p>
+          </article>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="card" id="tabsBox" aria-label="Tabbed content">
+  <header class="header">
+    <div class="panel-row" role="tablist" aria-label="Sections">
+      <h2 class="title" id="boxTitle">Overview</h2>
+
+      <div class="tabs" id="tabs">
+        <button class="tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0">Overview</button>
+        <button class="tab" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Features</button>
+        <button class="tab" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">Pricing</button>
+        <span class="indicator" aria-hidden="true"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fixed-height stage; panels are stacked and cross-faded -->
+  <section class="stage" id="stage">
+    <div class="tab-panel is-active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+      <h3>Secure, simple, self-service</h3>
+      <p>Spin up clusters on demand, manage lifecycle with ease, and stay compliant with EU regulations.</p> 
+      <ul><li>You own the cluster,</li><li>We manage the complexity.</li></ul>
+    </div>
+
+    <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+      <ul>
+        <li>Cluster Overview
+          <ul><li>Select talos Linux base (more info)</li>
+            <li>Select kubernetes version (2 * Elastic Ips)</li></ul>
+          </li>
+          <li>Access:
+            <ul><li>Base domain `*.apps.<domain>.paas.safedc.net`
+              <li>Each cluster comes in isolated Openstack</li></ul>
+            </li>
+            <li>Project/Environment
+              <ul><li>Access can be configured with IDP or by admins</li></ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+          <h3>Predictable pricing, no hidden costs</h3>
+          <ul>
+            <li><strong>Managed control plane:</strong> 4,900 SEK/month (SLA, support, guidance included).</li>
+            <li><strong>Workers:</strong> pay only for chosen VM flavors. Full management available on request.</li>
+          </ul><p></p>
+          <p><span style="font-style:italic;">Looking for full management? For customers who want Safespring to manage both control plane and workers, a fully managed cluster can be offered on request.</p>
+            <a class="cta" href="#" role="button">View license</a>
+          </div>
+        </section>
+      </article>
+
+
+
+
+
+
 
 <style>
   /* ==== Safespring palette (customize if needed) ==== */
@@ -1016,30 +1085,30 @@ activate(1);
     </div>
     <p class="blue-box">Prefer to talk first? You can always <a href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">book a demo</a> instead.</p>
   </div>
-<svg class="arrow-layer" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-  <defs>
-    <marker id="chevHead"
-            viewBox="0 0 20 20"
-            refX="18" refY="10"
-            markerWidth=".5" markerHeight=".5"
-            orient="auto"
-            markerUnits="strokeWidth">
+  <svg class="arrow-layer" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <marker id="chevHead"
+      viewBox="0 0 20 20"
+      refX="18" refY="10"
+      markerWidth=".5" markerHeight=".5"
+      orient="auto"
+      markerUnits="strokeWidth">
       <polyline points="9,2 18,10 9,18"
-                fill="none"
-                stroke="#FA690F"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="4"/>
+      fill="none"
+      stroke="#FA690F"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="4"/>
     </marker>
   </defs>
   <path id="arrowPath"
-        d=""
-        fill="none"
-        stroke="#FA690F"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        style="vector-effect: non-scaling-stroke; stroke-width: 4px;"
-        marker-end="url(#chevHead)"/>
+  d=""
+  fill="none"
+  stroke="#FA690F"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  style="vector-effect: non-scaling-stroke; stroke-width: 4px;"
+  marker-end=""/>
 </svg>
 
 <div class="second-fields-div hero-form">
@@ -1186,9 +1255,9 @@ activate(1);
     }
 
     /* Visa fel först efter att användaren interagerat med fältet */
-#up-email-input:user-invalid {
-  border-color: red !important;
-}
+    #up-email-input:user-invalid {
+      border-color: red !important;
+    }
 
 /* Flytta/tona labeln röd när fel */
 .form-field:has(#up-email-input:user-invalid) > label {
@@ -1208,165 +1277,165 @@ activate(1);
   color: #3C9BCD;
 }
 
-    .iti__selected-flag {
-      padding: 0 6px 0 25px !important;
-      border-radius: 500px 0 0 500px;
-    }
-
-    .phone-input {
-      padding-left: 65px !important;
-    }
-
-    .active-input label {
-      transform: translateY(-205%);
-      -webkit-transform: translateY(-205%);
-      color: #3C9BCD;
-      font: 400 12px/16px 'Hind';
-      letter-spacing: 0.5px;
-      background-color: var(--cloud-blue-color);
-      border-radius: 100px;
-    } 
-
-    .form-field.invalid.has-content input {
-      border-color: red;
-    }
-
-    .form-field.invalid.has-content label {
-      transform: translateY(-205%);
-      -webkit-transform: translateY(-205%);
-      color: red;
-      font: 400 12px/16px 'Hind';
-      letter-spacing: 0.5px;
-      background-color: var(--cloud-blue-color);
-      border-radius: 100px;
-    }
-
-    select {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-
-    .selection-icon {
-      position: absolute;
-      right: 11px;
-      top: 8px;
-      padding: 10px 9px 6px 9px;
-      border-radius: 100px;
-      background-color: var(--cloud-blue-color);
-      color: var(--middle-blue-color);
-      z-index: -2;
-    }
-
-    /* Checkboxar */
-    .form-field label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .form-field input[type="checkbox"] {
-      margin-right: 10px;
-      transform: translateY(2px);
-    }
-
-    .form-field.has-content label {
-      color: #3C9BCD;
-      font: 400 12px/16px 'Hind';
-      letter-spacing: 0.5px;
-      background-color: var(--cloud-blue-color);;
-    }
-
-    .form-field.has-content.invalid label {
-      color: red;
-      font: 400 12px/16px 'Hind';
-      letter-spacing: 0.5px;
-      background-color: var(--cloud-blue-color);
-    }
-    #email-domain-warning {
-      display:none; margin-top:-20px; color:#e74c3c;
-      font:600 12px/16px var(--mon-font);
-      text-align: center;
-    }
-  </style>
-  <script>
-    jQuery(document).ready(function() {
-      var matchClientsTimeout = null;
-      var matchClients = function(q, sync, cb) {
-        if (matchClientsTimeout) {
-          clearTimeout(matchClientsTimeout);
-        }
-        matchClientsTimeout = setTimeout(function() {
-          $.ajax({
-            type: "GET",
-            url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&country=NO&country=DK&country=FI&country=GB&country=BE&country=FR&country=IE&country=IT&country=LU&country=NL&country=DE&country=AT&name=" + q,
-            success: function(res) {
-              cb(res.data);
-            },
-            error: function(res) {},
-          });
-        }, 200);
-      };
-      var getSuggestTemplate = function(c) {
-        return "<div><div>" + c.name + "</div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "</span></div>";
-      };
-      var nameField = jQuery("#up-client-name-input");
-      if (nameField.length) {
-        var selectedClientName = "";
-        var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
-        var spinner = jQuery("<b id='up-client-spinner'><svg class='spinner' viewBox='0 0 50 50'><circle class='path' cx='25' cy='25' r='20' fill='none' stroke-width='5'></circle></svg></b>");
-        spinner.css("display", "none");
-        nameField.after(dunsField);
-        nameField.after(spinner);
-        nameField.typeahead({
-          hint: true,
-          highlight: true,
-          minLength: 3
-        }, {
-          name: "clients",
-          limit: 25,
-          source: matchClients,
-          templates: {
-            suggestion: getSuggestTemplate
-          }
-        }).bind("typeahead:autocompleted", function(ev, client) {
-          nameField.typeahead("val", client.name);
-          dunsField.val(client.dunsNo);
-          selectedClientName = client.name;
-          nameField.blur();
-        }).bind("typeahead:select", function(ev, client) {
-          nameField.typeahead("val", client.name);
-          dunsField.val(client.dunsNo);
-          selectedClientName = client.name;
-        }).bind("typeahead:cursorchange", function(ev, client) {
-          if (client) {
-            nameField.typeahead("val", client.name);
-            dunsField.val(client.dunsNo);
-            selectedClientName = client.name;
-          }
-        }).bind("typeahead:change", function(ev, value) {
-          if (value !== selectedClientName) {
-            dunsField.val("");
-          }
-        }).on("typeahead:asyncrequest", function() {
-          spinner.css("display", "inline");
-        }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
-          spinner.css("display", "none");
-        });
-      }
-    });
-  </script>
-  <script type="text/javascript">
-    function openTerms(id) {
-      var terms = {
-        "1": "",
-        "2": "",
-"3": null,
-"4": null
-};
-var preview = window.open("", "", "height=700,width=800,scrollbars=yes,resizable=yes,toolbar=no,status=no,menu=no,titlebar=no,location=no,addressbar=no");
-var html = "<head><meta charset=\"UTF-8\"><style>body {margin: 0; padding: 20px;color: #333;font-family: Helvetica;font-size: 14px;}</style></head><body>" + terms[id] + "</body>";
-preview.document.write(html);
+.iti__selected-flag {
+  padding: 0 6px 0 25px !important;
+  border-radius: 500px 0 0 500px;
 }
+
+.phone-input {
+  padding-left: 65px !important;
+}
+
+.active-input label {
+  transform: translateY(-205%);
+  -webkit-transform: translateY(-205%);
+  color: #3C9BCD;
+  font: 400 12px/16px 'Hind';
+  letter-spacing: 0.5px;
+  background-color: var(--cloud-blue-color);
+  border-radius: 100px;
+} 
+
+.form-field.invalid.has-content input {
+  border-color: red;
+}
+
+.form-field.invalid.has-content label {
+  transform: translateY(-205%);
+  -webkit-transform: translateY(-205%);
+  color: red;
+  font: 400 12px/16px 'Hind';
+  letter-spacing: 0.5px;
+  background-color: var(--cloud-blue-color);
+  border-radius: 100px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.selection-icon {
+  position: absolute;
+  right: 11px;
+  top: 8px;
+  padding: 10px 9px 6px 9px;
+  border-radius: 100px;
+  background-color: var(--cloud-blue-color);
+  color: var(--middle-blue-color);
+  z-index: -2;
+}
+
+/* Checkboxar */
+.form-field label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-field input[type="checkbox"] {
+  margin-right: 10px;
+  transform: translateY(2px);
+}
+
+.form-field.has-content label {
+  color: #3C9BCD;
+  font: 400 12px/16px 'Hind';
+  letter-spacing: 0.5px;
+  background-color: var(--cloud-blue-color);;
+}
+
+.form-field.has-content.invalid label {
+  color: red;
+  font: 400 12px/16px 'Hind';
+  letter-spacing: 0.5px;
+  background-color: var(--cloud-blue-color);
+}
+#email-domain-warning {
+  display:none; margin-top:-20px; color:#e74c3c;
+  font:600 12px/16px var(--mon-font);
+  text-align: center;
+}
+</style>
+<script>
+  jQuery(document).ready(function() {
+    var matchClientsTimeout = null;
+    var matchClients = function(q, sync, cb) {
+      if (matchClientsTimeout) {
+        clearTimeout(matchClientsTimeout);
+      }
+      matchClientsTimeout = setTimeout(function() {
+        $.ajax({
+          type: "GET",
+          url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&country=NO&country=DK&country=FI&country=GB&country=BE&country=FR&country=IE&country=IT&country=LU&country=NL&country=DE&country=AT&name=" + q,
+          success: function(res) {
+            cb(res.data);
+          },
+          error: function(res) {},
+        });
+      }, 200);
+    };
+    var getSuggestTemplate = function(c) {
+      return "<div><div>" + c.name + "</div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "</span></div>";
+    };
+    var nameField = jQuery("#up-client-name-input");
+    if (nameField.length) {
+      var selectedClientName = "";
+      var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
+      var spinner = jQuery("<b id='up-client-spinner'><svg class='spinner' viewBox='0 0 50 50'><circle class='path' cx='25' cy='25' r='20' fill='none' stroke-width='5'></circle></svg></b>");
+      spinner.css("display", "none");
+      nameField.after(dunsField);
+      nameField.after(spinner);
+      nameField.typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 3
+      }, {
+        name: "clients",
+        limit: 25,
+        source: matchClients,
+        templates: {
+          suggestion: getSuggestTemplate
+        }
+      }).bind("typeahead:autocompleted", function(ev, client) {
+        nameField.typeahead("val", client.name);
+        dunsField.val(client.dunsNo);
+        selectedClientName = client.name;
+        nameField.blur();
+      }).bind("typeahead:select", function(ev, client) {
+        nameField.typeahead("val", client.name);
+        dunsField.val(client.dunsNo);
+        selectedClientName = client.name;
+      }).bind("typeahead:cursorchange", function(ev, client) {
+        if (client) {
+          nameField.typeahead("val", client.name);
+          dunsField.val(client.dunsNo);
+          selectedClientName = client.name;
+        }
+      }).bind("typeahead:change", function(ev, value) {
+        if (value !== selectedClientName) {
+          dunsField.val("");
+        }
+      }).on("typeahead:asyncrequest", function() {
+        spinner.css("display", "inline");
+      }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
+        spinner.css("display", "none");
+      });
+    }
+  });
+</script>
+<script type="text/javascript">
+  function openTerms(id) {
+    var terms = {
+      "1": "",
+      "2": "",
+      "3": null,
+      "4": null
+    };
+    var preview = window.open("", "", "height=700,width=800,scrollbars=yes,resizable=yes,toolbar=no,status=no,menu=no,titlebar=no,location=no,addressbar=no");
+    var html = "<head><meta charset=\"UTF-8\"><style>body {margin: 0; padding: 20px;color: #333;font-family: Helvetica;font-size: 14px;}</style></head><body>" + terms[id] + "</body>";
+    preview.document.write(html);
+  }
 </script>
 <form id="up-form" name="form_9549u4d6655796cf741c5aab400e441c49e50" action="https://power.upsales.com/api/external/formSubmit" method="POST">
   <!-- <div class="column-two"> -->
@@ -1388,9 +1457,9 @@ preview.document.write(html);
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
         <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
       </div>
-          <small id="email-domain-warning">
+      <small id="email-domain-warning">
         Please use your work email.
-    </small>
+      </small>
       <!-- </div> -->
       <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
@@ -1447,45 +1516,45 @@ preview.document.write(html);
     <script>
       function onSubmit(e){var t;"function"!=typeof window._bEmValid||!0===window.__validEmail?validateForm(e,"https://www.safespring.com/container-thanks/"):(e.preventDefault(),t=setInterval(function(){void 0!==window.__validEmail&&(clearInterval(t),!0===window.__validEmail)&&validateForm(e,"https://www.safespring.com/container-thanks/")},300))}function validateForm(e,t){e.preventDefault();e=document.getElementsByName("formId")[0].value;for(var n=(e=document.forms["form_"+e]).querySelectorAll("input, textarea, select"),o=0;o<n.length;o++)"text"===n[o].type&&(n[o].value=n[o].value.trim());var a=e.querySelectorAll("input[name*=phone], input[name*=Phone]");if([].forEach.call(a,function(e){e.iti&&(e.value=e.iti.getNumber())}),void 0===window.grecaptcha||""!==window.grecaptcha.getResponse()){var l=[];for(o=0;o<n.length;o++)"checkbox"===n[o].type?l.push(n[o].name+"="+encodeURIComponent(n[o].checked?n[o].value:"off")):l.push(n[o].name+"="+encodeURIComponent(n[o].value));a=l.join("&");var s=(a+="&isAjax=true",window._paq||null),i=new XMLHttpRequest;i.open("POST",e.action),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.send(a),i.onload=function(){var e,n;200===i.status?t?(s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),"undefined"!=typeof _uaq&&_uaq("form="+i.responseText),setTimeout(function(){window.top.location.href=t},333)):(e=document.getElementById("up-form"),n=document.getElementById("up-form-thanks"),e.style.display="none",n.style.display="block",s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),_uaq&&_uaq("form="+i.responseText)):console.log("AJAX ERROR",i.status)}}else e=document.getElementById("recaptcha-error"),a=document.getElementsByClassName("g-recaptcha"),e.style.display="none",a&&a.length&&console.log("handle this later")}var form=document.getElementById("up-form");form.addEventListener("submit",onSubmit);
     </script>
-      <script>
+    <script>
     // Globala init: sätt custom-validation + hoppa över Ajax om invalid
-    document.addEventListener("DOMContentLoaded", function(){
-      const personalDomains = [
-        'gmail.com','hotmail.com','yahoo.com','icloud.com','outlook.com','live.com','live.no','live.se','aol.com','simplelogin.com', 'msn.com', 'nespf.com'
-      ];
-      const emailField = document.querySelector("#up-email-input");
-      const warning    = document.querySelector("#email-domain-warning");
-      const form       = document.querySelector("#up-form");
+      document.addEventListener("DOMContentLoaded", function(){
+        const personalDomains = [
+          'gmail.com','hotmail.com','yahoo.com','icloud.com','outlook.com','live.com','live.no','live.se','aol.com','simplelogin.com', 'msn.com', 'nespf.com'
+        ];
+        const emailField = document.querySelector("#up-email-input");
+        const warning    = document.querySelector("#email-domain-warning");
+        const form       = document.querySelector("#up-form");
 
       // 1) Varje input: sätt customValidity om personlig domän
-      emailField.addEventListener("input", function(){
-        const parts = emailField.value.trim().toLowerCase().split("@");
-        if(parts.length===2 && personalDomains.includes(parts[1])){
-          warning.style.display = "block";
-          emailField.setCustomValidity(
-            'Please use your work email.'
-          );
-        } else {
-          warning.style.display = "none";
-          emailField.setCustomValidity("");
-        }
-      });
+        emailField.addEventListener("input", function(){
+          const parts = emailField.value.trim().toLowerCase().split("@");
+          if(parts.length===2 && personalDomains.includes(parts[1])){
+            warning.style.display = "block";
+            emailField.setCustomValidity(
+                                         'Please use your work email.'
+                                         );
+          } else {
+            warning.style.display = "none";
+            emailField.setCustomValidity("");
+          }
+        });
 
       // 2) Submit: kolla validity innan din Ajax körs
-      form.addEventListener("submit", function(e){
-        if(!form.checkValidity()){
-          e.preventDefault();
-          warning.style.display = "block";
-          return;
-        }
+        form.addEventListener("submit", function(e){
+          if(!form.checkValidity()){
+            e.preventDefault();
+            warning.style.display = "block";
+            return;
+          }
         // Om valid: gå vidare till onSubmit (Ajax)
-        onSubmit(e);
+          onSubmit(e);
+        });
       });
-    });
-  </script>
+    </script>
   </div>
   <script>// Ritar en kurvad pil mellan .arrow-src och .cta-start
-(function(){
+  (function(){
   const startMargin = 8;   // move away from the S
   const endMargin   = 12;  // move away from the button
   const section = document.querySelector('.hero--with-arrow');
@@ -1538,173 +1607,17 @@ preview.document.write(html);
 
 
 
-<article class="card" id="tabsBox" aria-label="Tabbed content">
-  <header class="header">
-    <div class="panel-row" role="tablist" aria-label="Sections">
-      <h2 class="title" id="boxTitle">Overview</h2>
-
-      <div class="tabs" id="tabs">
-        <button class="tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0">Overview</button>
-        <button class="tab" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Features</button>
-        <button class="tab" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">Pricing</button>
-        <span class="indicator" aria-hidden="true"></span>
-      </div>
-    </div>
-  </header>
-
-  <!-- Fixed-height stage; panels are stacked and cross-faded -->
-  <section class="stage" id="stage">
-    <div class="tab-panel is-active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
-      <h3>Secure, simple, self-service</h3>
-      <p>Spin up clusters on demand, manage lifecycle with ease, and stay compliant with EU regulations.</p> 
-      <ul><li>You own the cluster,</li><li>We manage the complexity.</li></ul>
-    </div>
-
-    <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
-      <ul>
-        <li>Cluster Overview
-          <ul><li>Select talos Linux base (more info)</li>
-            <li>Select kubernetes version (2 * Elastic Ips)</li></ul>
-          </li>
-          <li>Access:
-            <ul><li>Base domain `*.apps.<domain>.paas.safedc.net`
-              <li>Each cluster comes in isolated Openstack</li></ul>
-            </li>
-            <li>Project/Environment
-              <ul><li>Access can be configured with IDP or by admins</li></ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
-          <h3>Predictable pricing, no hidden costs</h3>
-          <ul>
-            <li><strong>Managed control plane:</strong> 4,900 SEK/month (SLA, support, guidance included).</li>
-            <li><strong>Workers:</strong> pay only for chosen VM flavors. Full management available on request.</li>
-          </ul><p></p>
-          <p><span style="font-style:italic;">Looking for full management? For customers who want Safespring to manage both control plane and workers, a fully managed cluster can be offered on request.</p>
-            <a class="cta" href="#" role="button">View license</a>
-          </div>
-        </section>
-      </article>
 
 
 
 
 
-      <style>
-        :root{
-          --ink:#0a0a0a;
-          --muted:#667085;
-          --line: rgba(0,0,0,.18);
-          --bg-top:#ffffff;
-          --bg-bottom:#E7EFF3; /* molnblå */
-          --maxw:1200px;
 
-          /* Safespring-typsnitt */
-          --h-font:"Hind", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-          --p-font:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        }
 
-        .bullet-section{
-          max-width: var(--maxw);
-          margin: 10vw 0;
-          padding: 48px 20px 64px;
-        }
 
-        .grid{
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 0;
-          align-items: start;
-        }
 
-        .col{
-          text-align: center;
-          padding: 36px 28px 28px;
-          position: relative;
-          /* vertikal avdelare till vänster på kolumner 2 och 3 */
-          border-left: 1px solid transparent;
-        }
-        .col + .col{
-          border-left-color: var(--line);
-        }
 
-        .icon-wrap{
-          width: 132px;
-          height: 132px;
-          margin: 0 auto 18px;
-          border-radius: 50%;
-          background: #fff;
-          border: 2px solid rgba(0,0,0,.12);
-          display: grid;
-          place-items: center;
-        }
-        .icon-wrap i{
-          font-size: 54px; /* triangelstorlek */
-          line-height: 1;
-          color: #000;
-          transform: translateY(-2px); /* optisk centrering */
-        }
 
-        h3{
-          margin: 10px 0 10px;
-          font-family: var(--h-font);
-          font-weight: 300; /* Hind Light */
-          font-size: 44px;
-          letter-spacing: .2px;
-        }
-
-        /* Responsiv: stapla på smala skärmar */
-        @media (max-width: 900px){
-          .grid{ grid-template-columns: 1fr; }
-          .col{ border-left: none; padding: 28px 12px 36px; }
-          .col:not(:last-child){ border-bottom: 1px solid var(--line); }
-          h3{ font-size: 36px; }
-          .icon-wrap{ width: 112px; height: 112px; }
-          .icon-wrap i{ font-size: 48px; }
-        }
-      </style>
-      <section class="bullet-section">
-        <div class="grid">
-          <!-- 1. Tailored -->
-          <article class="col">
-            <div class="icon-wrap" aria-hidden="true">
-              <!-- Triangel: Font Awesome caret-up -->
-              <i class="fa-solid fa-caret-up"></i>
-            </div>
-            <h3>Tailored</h3>
-            <p>
-              Start with a dedicated cluster that can scale with your needs, and grow
-              to multiple managed clusters.
-            </p>
-          </article>
-
-          <!-- 2. Compliant -->
-          <article class="col">
-            <div class="icon-wrap" aria-hidden="true">
-              <i class="fa-solid fa-caret-up"></i>
-            </div>
-            <h3>Compliant</h3>
-            <p>
-              Safeguard data with full compliance to EU security and jurisdictional
-              requirements.
-            </p>
-          </article>
-
-          <!-- 3. Cloud -->
-          <article class="col">
-            <div class="icon-wrap" aria-hidden="true">
-              <i class="fa-solid fa-caret-up"></i>
-            </div>
-            <h3>Cloud</h3>
-            <p>
-              Scale your cloud native application as your business grows with
-              competitive, pay-as-you-go pricing.
-            </p>
-          </article>
-        </div>
-      </section>
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
