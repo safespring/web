@@ -1,31 +1,22 @@
 <a href="{{ .RelPermalink }}">
-  {{ $relativePath := strings.TrimSuffix "/" .File.Dir }}
-  {{ $pathSegments :=
-    split $relativePath "/"
-  }}
-  {{ $typeFolder := "" }}
-  {{ if ge (len
-    $pathSegments) 2
-  }}
-    {{ $typeFolder = index $pathSegments 1 }}
-  {{ end }}
+  {{ $section := .Section }}
   <div
     class="fill-available-space img-250 pointer
-    {{ if eq $typeFolder "webinar" }}
+    {{ if eq $section "webinar" }}
       blue-hover-webinar flex-center
-    {{ else if eq $typeFolder "solution-brief" }}
+    {{ else if eq $section "solution-brief" }}
       blue-hover-whitepaper flex-center
-    {{ else if eq $.Params.section "Tech update" }}
+    {{ else if eq $section "tech-update" }}
       bg-blue-white-fade blue-hover-tech tech-card-flex
-    {{ else if eq $typeFolder "white-paper" }}
+    {{ else if eq $section "whitepaper" }}
       blue-hover-whitepaper flex-center
-    {{ else if eq $.Params.section "blog" }}
+    {{ else if eq $section "blog" }}
       blue-hover-blogg flex-center
     {{ else }}
       blue-hover-blogg flex-center
     {{ end }}"
   >
-    {{ if eq $.Params.section "blog" }}
+    {{ if eq $section "blog" }}
       <img
         class="lazyload"
         loading="lazy"
@@ -57,7 +48,7 @@
         </h1>
         <span class="text-button">{{ T "knowledgehub.read_post" }}</span>
       </div>
-    {{ else if eq $.Params.section "Tech update" }}
+    {{ else if eq $section "tech-update" }}
       <img
         class="lazyload tech-card-image"
         loading="lazy"
@@ -73,7 +64,7 @@
           />
           <span
             class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px"
-            >Tech update</span
+            >{{ T "knowledgehub.tech_update" }}</span
           >
         </div>
         <div>
@@ -88,7 +79,7 @@
           <span class="text-button">{{ T "knowledgehub.read_article" }}</span>
         </div>
       </div>
-    {{ else if eq $typeFolder "webinar" }}
+    {{ else if eq $section "webinar" }}
       <img
         class="lazyload"
         loading="lazy"
@@ -103,7 +94,7 @@
         />
         <span
           class="blogg-card-section-webinar mb-0 font-weight-medium text-uppercase text-muted lts-1px"
-          >Webcast</span
+          >{{ T "knowledgehub.webcast" }}</span
         >
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
       </div>
@@ -115,7 +106,7 @@
         </h1>
         <div class="webinar-card-link">Play</div>
       </div>
-    {{ else if eq $typeFolder "solution-brief" }}
+    {{ else if eq $section "solution-brief" }}
       <img
         class="lazyload"
         loading="lazy"
@@ -131,7 +122,7 @@
         />
         <span
           class="blogg-card-section-solution-brief mb-0 font-weight-medium text-uppercase lts-1px"
-          >Solution brief</span
+          >{{ T "knowledgehub.solution_brief" }}</span
         >
       </div>
       <div class="blogg-card-wapper">
@@ -142,12 +133,12 @@
         </h1>
         <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
       </div>
-    {{ else if eq $typeFolder "white-paper" }}
+    {{ else if eq $section "whitepaper" }}
       <div class="padding-15">
         <div>
           <span
             class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
-            >White Paper</span
+            >{{ T "knowledgehub.whitepaper" }}</span
           >
           <h1
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
