@@ -1236,7 +1236,7 @@ h3{
       const firstOK = Object.keys(computeCatalog).find(k => computeCatalog[k].l2);
       if(firstOK){ state.compute = firstOK; computeSel.value = firstOK; }
     }
-    compatEl.textContent = wantsL2 ? 'Storage requires an l2-capable flavor: 4c/8GB, 8c/16GB or 16c/32GB.' : '';
+    compatEl.textContent = wantsL2 ? 'Local storage (NVME) requires an l2 flavor.' : '';
   }
 
   function renderSelects(){
