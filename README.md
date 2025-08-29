@@ -8,7 +8,7 @@ There are two options for previewing the site locally: using the Hugo binary or 
 
 ### Using the Hugo binary
 
-1. Download and install the Hugo binary from the [official Hugo website](https://gohugo.io/overview/installing/).
+1. Download and install the Hugo binary from the [official Hugo website](https://gohugo.io/installation/).
 2. Clone the repository and run Hugo:
 ```
 git clone git@github.com:safespring/web
