@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "=== Language Analysis for Safespring Web Content ==="
 echo

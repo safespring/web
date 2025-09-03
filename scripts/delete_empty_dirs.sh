@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script to delete empty directories
 # Usage: ./delete_empty_dirs.sh [directory]
