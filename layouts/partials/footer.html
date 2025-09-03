@@ -1,15 +1,13 @@
 <div class="safespring-footer-container">
   <div class="safespring-footer">
     <div class="safespring-footer-logo">
-      <a href="{{ with .GetPage "/" }}{{ .RelPermalink }}{{ end }}"
+      <a href="{{ relref . "/" }}"
         ><img
           src="/img/logos/safespring_logotype_blue_svg.svg"
           alt="Safespring logotype"
       /></a>
       <p>{{ i18n "menu.tagline" }}</p>
-      <a
-        class="button"
-        href="{{ with .GetPage "contact" }}{{ .RelPermalink }}{{ end }}"
+      <a class="button" href="{{ relref . "contact" }}"
         >{{ T "menu.contact" }}</a
       >
     </div>
@@ -17,50 +15,32 @@
       <ul>
         <li>{{ T "menu.platform" }}</li>
         <li>
-          <a
-            href="{{ with .GetPage "services/compute" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/compute" }}"
             >{{ T "menu.platform_compute" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "services/storage" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/storage" }}"
             >{{ T "menu.platform_storage" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "services/containerplatform" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/containerplatform" }}"
             >{{ T "menu.platform_container" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "services/backup" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/backup" }}"
             >{{ T "menu.platform_backup" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "services/machine-learning" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/machine-learning" }}"
             >{{ T "menu.platform_ai" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "services/database-as-a-service" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/database-as-a-service" }}"
             >{{ T "menu.platform_database" }}</a
           >
         </li>
@@ -70,55 +50,35 @@
       <ul>
         <li>{{ T "menu.industries" }}</li>
         <li>
-          <a
-            href="{{ with .GetPage "industries/research-and-education" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "industries/research-and-education" }}"
             >{{ T "menu.industries_education" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "industries/eosc" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "industries/eosc" }}"
             >{{ T "menu.industries_science" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "industries/government" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "industries/government" }}"
             >{{ T "menu.industries_government" }}</a
           >
         </li>
         <li>
-          <a href="{{ with .GetPage "saas" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "menu.industries_saas" }}</a
-          >
+          <a href="{{ relref . "saas" }}">{{ T "menu.industries_saas" }}</a>
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "saas/application-developers" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "saas/application-developers" }}"
             >{{ T "menu.industries_application_developers" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "services/compliant-kubernetes" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/compliant-kubernetes" }}"
             >{{ T "menu.industries_paas" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "saas/medtech" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "saas/medtech" }}"
             >{{ T "menu.industries_medtech" }}</a
           >
         </li>
@@ -128,50 +88,28 @@
       <ul>
         <li>{{ T "knowledgehub.knowledgehub" }}</li>
         <li>
-          <a
-            href="{{ with .GetPage "services/case" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "services/case" }}"
             >{{ T "knowledgehub.use_case" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "solution-brief" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "solution-brief" }}"
             >{{ T "knowledgehub.solution_brief" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "webinar" }}
-              {{ .RelPermalink }}
-            {{ end }}"
-            >{{ T "knowledgehub.webcast" }}</a
-          >
+          <a href="{{ relref . "webinar" }}">{{ T "knowledgehub.webcast" }}</a>
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "blog" }}
-              {{ .RelPermalink }}
-            {{ end }}"
-            >{{ T "knowledgehub.blog" }}</a
-          >
+          <a href="{{ relref . "blog" }}">{{ T "knowledgehub.blog" }}</a>
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "whitepaper" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "whitepaper" }}"
             >{{ T "knowledgehub.whitepaper" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "tech-update" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "tech-update" }}"
             >{{ T "knowledgehub.tech_update" }}</a
           >
         </li>
@@ -181,49 +119,35 @@
       <ul>
         <li>{{ T "menu.safespring" }}</li>
         <li>
-          <a href="{{ with .GetPage "about" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "menu.safespring_about" }}</a
-          >
+          <a href="{{ relref . "about" }}">{{ T "menu.safespring_about" }}</a>
         </li>
         <li>
-          <a href="{{ with .GetPage "career" }}{{ .RelPermalink }}{{ end }}"
+          <a href="{{ relref . "career" }}"
             >{{ T "menu.safespring_careers" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "data-centers" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "data-centers" }}"
             >{{ T "menu.safespring_datacenters" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "environment" }}{{ .RelPermalink }}{{ end }}"
+          <a href="{{ relref . "environment" }}"
             >{{ T "menu.safespring_sustainability" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "our-partners" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "our-partners" }}"
             >{{ T "menu.safespring_partners" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "become-partner" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "become-partner" }}"
             >{{ T "menu.safespring_become_partner" }}</a
           >
         </li>
         <li>
-          <a href="{{ with .GetPage "faq" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "menu.safespring_faq" }}</a
-          >
+          <a href="{{ relref . "faq" }}">{{ T "menu.safespring_faq" }}</a>
         </li>
       </ul>
     </div>
@@ -274,18 +198,12 @@
     <div class="safespring-footer-information-menu">
       <ul>
         <li>
-          <a
-            href="{{ with .GetPage "documents/personal-data-processing" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "documents/personal-data-processing" }}"
             >{{ T "menu.personal_data_policy" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "documents/cookies" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "documents/cookies" }}"
             >{{ T "menu.cookies" }}</a
           >
         </li>
@@ -298,25 +216,18 @@
           >
         </li>
         <li>
-          <a
-            href="{{ with .GetPage "documents/acceptable-use-policy" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+          <a href="{{ relref . "documents/acceptable-use-policy" }}"
             >{{ T "menu.acceptable_use_policy" }}</a
           >
         </li>
         <li>
           <a
-            href="{{ with .GetPage "contact" }}
-              {{ .RelPermalink }}
-            {{ end }}#{{ T "menu.company_information_hash" }}"
+            href="{{ relref . "contact" }}#{{ T "menu.company_information_hash" }}"
             >{{ T "menu.company_information" }}</a
           >
         </li>
         <li>
-          <a href="{{ with .GetPage "fr2000" }}{{ .RelPermalink }}{{ end }}"
-            >{{ T "menu.fr2000" }}</a
-          >
+          <a href="{{ relref . "fr2000" }}">{{ T "menu.fr2000" }}</a>
         </li>
       </ul>
     </div>

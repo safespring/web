@@ -1,6 +1,7 @@
 baseURL = "https://beta.safespring.eu/"
 author = "Safespring"
 copyright = "2025 Safespring"
+refLinksErrorLevel = 'warning'
 
 # Pagination
 [pagination]

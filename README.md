@@ -61,9 +61,7 @@ Use `hugo --printUnusedTemplates` to identify unused templates.
 To link to the correct translated page, use the following syntax:
 
 ```
-{{ with .GetPage "contact" }}
-   {{ .RelPermalink }}
-{{ end }}
+{{ relref . "contact" }}
 ```
 
 Which would link to `/contact`, `https://safespring.se/kontakt` and `https://safespring.no/kontakt` assuming current language is english.

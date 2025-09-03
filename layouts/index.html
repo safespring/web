@@ -11,13 +11,11 @@
         <h1 class="post-heading-firstpage balance-text">{{ .Title }}</h1>
         <p class="content-summary-index">{{ .Params.intro }}</p>
         <a
-          href="{{ with .GetPage "gdpr" }}{{ .RelPermalink }}{{ end }}"
+          href="{{ relref . "gdpr" }}"
           data-track-content
           data-content-name="GDPR Banner"
           data-content-piece="/img/safespring-gdpr-compliant-badge2025.svg"
-          data-content-target="{{ with .GetPage "gdpr" }}
-            {{ .RelPermalink }}
-          {{ end }}"
+          data-content-target="{{ relref . "gdpr" }}"
         >
           <img
             class="badge"
@@ -201,11 +199,7 @@
           {{ T "landing.scaleout_description" }}
         </p>
         <p>
-          <a
-            href="{{ with .GetPage "services/case/scaleout" }}
-              {{ .RelPermalink }}
-            {{ end }}"
-            class="button"
+          <a href="{{ relref . "services/case/scaleout" }}" class="button"
             >{{ T "landing.scaleout_to_use_case" }}</a
           >
         </p>
@@ -221,11 +215,7 @@
           <p>
             {{ T "landing.compute_description" }}
           </p>
-          <a
-            href="{{ with .GetPage "services/compute" }}
-              {{ .RelPermalink }}
-            {{ end }}"
-            class="button"
+          <a href="{{ relref . "services/compute" }}" class="button"
             >Safespring compute</a
           >
         </div>
@@ -244,17 +234,11 @@
           <p>
             {{ T "landing.datacenters_description" }}
           </p>
-          <a
-            href="{{ with .GetPage "data-centers" }}
-              {{ .RelPermalink }}
-            {{ end }}"
-            class="button"
+          <a href="{{ relref . "data-centers" }}" class="button"
             >{{ T "landing.datacenters_button" }}</a
           >
           <a
-            href="{{ with .GetPage "about" }}
-              {{ .RelPermalink }}
-            {{ end }}"
+            href="{{ relref . "about" }}"
             style="margin: 25px 0 0 0; padding: 1px 0 0 0"
             class="text-button"
             >{{ T "landing.about_us_button" }}</a
