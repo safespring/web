@@ -1,5 +1,5 @@
 ---
-title: "Safesspring Solution Briefs"
+title: "Safespring Solution Briefs"
 language: "en"
 date: "2020-11-10"
 publishDate: "2020-07-29T10:30:14+02:00"

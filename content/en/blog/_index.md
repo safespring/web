@@ -1,5 +1,5 @@
 ---
-title: "Safesspring Blog"
+title: "Safespring Blog"
 language: "en"
 date: "2020-11-10"
 draft: false
