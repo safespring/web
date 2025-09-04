@@ -16,7 +16,7 @@ window.addEventListener('CookieConsentGiven', function (event) {
 
     if (!document.getElementById("r2b2-script")) {
       var r2b2 = document.createElement('script');
-      r2b2.src = "https://cdn.r2b2.io/r2b2.js"; // ändra till rätt URL om du har egen
+      r2b2.src = "/js/r2b2.js";
       r2b2.id = "r2b2-script";
       document.getElementsByTagName('head')[0].appendChild(r2b2); 
     }
