@@ -5,23 +5,35 @@ window.addEventListener('CookieConsentGiven', function (event) {
       analytics.src = "/js/matomo.js";
       analytics.id = "analytics-script";
       document.getElementsByTagName('head')[0].appendChild(analytics); 
+    }
 
+    if (!document.getElementById("tagmanager-script")) {
       var tagmanager = document.createElement('script');
       tagmanager.src = "/js/matomo-tagmanager.js";
       tagmanager.id = "tagmanager-script";
       document.getElementsByTagName('head')[0].appendChild(tagmanager); 
     }
+
+    if (!document.getElementById("r2b2-script")) {
+      var r2b2 = document.createElement('script');
+      r2b2.src = "https://cdn.r2b2.io/r2b2.js"; // ändra till rätt URL om du har egen
+      r2b2.id = "r2b2-script";
+      document.getElementsByTagName('head')[0].appendChild(r2b2); 
+    }
   }
 }, false);
 
-// Radera statistiskt script
+// Radera statistiska script
 window.addEventListener('CookieConsentRevoked', function (event) {
   var revokedStatistical = event.detail.consents.indexOf('statistical') > -1;
   if (revokedStatistical) {
     var analytics = document.getElementById("analytics-script");
     var tagmanager = document.getElementById("tagmanager-script");
-    analytics.parentNode.removeChild(analytics);
-    tagmanager.parentNode.removeChild(tagmanager);
+    var r2b2 = document.getElementById("r2b2-script");
+
+    if (analytics) analytics.parentNode.removeChild(analytics);
+    if (tagmanager) tagmanager.parentNode.removeChild(tagmanager);
+    if (r2b2) r2b2.parentNode.removeChild(r2b2);
   }
 }, false);
 

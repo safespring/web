@@ -52,6 +52,12 @@
   p {
     text-wrap: balance;
   }
+
+  .safespring-footer-container {
+    border-radius: 20px;
+    margin-bottom: 100px;
+  }
+
   body {
     margin: 10%;
     font-family: var(--mon-font);
@@ -1089,7 +1095,7 @@ h3{
 
 <style>
   /* ===== Minimal styling (scoped) ===== */
-  #price-calculator { --line:#d7e3eb; --ink:var(--MORKBLA); }
+  #price-calculator { --line:#d7e3eb; --ink:var(--MORKBLA); width: min(1136px,100%); margin: auto;}
 
   /* Two-column layout with equal heights on desktop */
   #price-calculator .pc-layout {
@@ -2124,6 +2130,8 @@ select {
 })();
 </script>
 
-
+{{ partial "footer.html" . }}
+<div style="margin-top:10%">.</div>
 </body>
+
 </html>
