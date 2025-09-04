@@ -378,6 +378,11 @@ h3 {
 }
 
 /* === STICKY NAV – ligger i scrolly och hamnar alltid ovanför kapseln === */
+.nav-box {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
 .nav {
   position: sticky;
   z-index: 50;
@@ -387,7 +392,7 @@ h3 {
   justify-content: center;
   gap: clamp(10px, 2.2vw, 24px);
   width: fit-content;
-  margin: 0 auto 40px;
+  margin: 40px 10px;
   padding: 8px;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 999px;
@@ -829,13 +834,16 @@ h3{
   <div class="scrolly" id="scene">
     <!-- Sticky kapsel (ALLT inuti) -->
     <div class="locked-section">
-
+<div class="nav-box">
       <nav class="nav" aria-label="Sektioner">
         <a href="#control">Control plane</a>
         <a href="#workers">Worker nodes</a>
         <a href="#infra">Infrastructure</a>
       </nav>
-
+      <nav class="nav" aria-label="Sektioner">
+        <a href="#bullet-section">Skip <i class="fa-solid fa-arrow-down"></i></a>
+      </nav>
+</div>
       <section class="capsule" aria-label="Kubernetes-kluster">
         <!-- Vänster: Bild -->
         <div class="figure">
@@ -909,7 +917,7 @@ h3{
 
 
   </style>
-  <section class="bullet-section">
+  <section class="bullet-section" id="bullet-section">
     <div class="grid">
       <article class="col">
         <div class="icon-wrap" aria-hidden="true">
