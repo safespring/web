@@ -21,14 +21,11 @@
       </div>
 
       <div class="pc-inline">
-        <label for="pc-compute" class="pc-label">CPU and RAM</label>
-        <select id="pc-compute" class="pc-select" aria-label="Control plane CPU and RAM"></select>
+        <label for="pc-compute" class="pc-label">CPU and RAM (B2)</label>
+        <select id="pc-compute" class="pc-select" aria-label="Control plane CPU and RAM (B2 only)"></select>
       </div>
 
-      <div class="pc-inline">
-        <label for="pc-storage" class="pc-label">Local NVMe (required)</label>
-        <select id="pc-storage" class="pc-select" aria-label="Control plane local storage"></select>
-      </div>
+      <div class="pc-hint">Includes mandatory 240&nbsp;GB central block storage (SSD) for the control plane.</div>
     </div>
 
     <!-- ===== Totals card ===== -->
@@ -87,7 +84,7 @@
       </div>
     </div>
 
-    <!-- ===== Central storage card (tighter, fewer rows) ===== -->
+    <!-- ===== Central storage card (GB picker) ===== -->
     <div class="pc-card pc-card--tight" id="pc-card-central">
       <h4 class="pc-box-title">Central block storage (optional)</h4>
 
@@ -99,13 +96,13 @@
             <option value="large">VOLUME-large (HDD)</option>
           </select>
           <div class="pc-central-qty">
-            <input id="pc-storage-tb" type="number" min="0" step="0.1" value="0" aria-label="Central storage TB" class="pc-input" />
-            <span class="pc-suffix">TB</span>
+            <input id="pc-storage-gb" type="number" min="0" step="1" value="0" aria-label="Central storage GB" class="pc-input" />
+            <span class="pc-suffix">GB</span>
           </div>
         </div>
       </div>
 
-      <div class="pc-hint">Pricing per GB (1&nbsp;TB = 1000&nbsp;GB): SSD 3.60 SEK/GB • HDD 1.20 SEK/GB</div>
+      <div class="pc-hint">Pricing per GB: SSD 3.60 SEK/GB • HDD 1.20 SEK/GB</div>
     </div>
   </div>
 
@@ -146,7 +143,7 @@
   #price-calculator .pc-radio{ border:1px solid var(--line); border-radius:999px; padding:8px 12px; cursor:pointer; background:#fff; font-weight:600; }
   #price-calculator .pc-choice input:checked + .pc-radio{ background: rgba(60,155,205,.12); border-color:#99b6cb; color:#0d3850; }
 
-  /* Totals list: borders ONLY between main blocks */
+  /* Totals list */
   #price-calculator .pc-list{ border:1px solid var(--line); border-radius:16px; padding:22px 18px 26px; }
   #price-calculator .pc-row{ display:grid; grid-template-columns:1fr auto; align-items:center; gap:12px; padding:8px 2px; font-weight:600; }
   #price-calculator .pc-row--no-border{ padding-top:0; font-weight:400; }
@@ -158,38 +155,31 @@
   #price-calculator #pc-card-workers .pc-inline.pc-inline--stack > .pc-label{ align-self:start; padding-top:6px; }
   #price-calculator .pc-workers{ display:grid; gap:10px; }
 
-  /* Worker row: select looks like control-plane select. Reveal (×) on hover/focus by shrinking row ~40px */
+  /* Worker row reveal (×) */
   #price-calculator .pc-worker-row{
     display:grid;
-    grid-template-columns: 1fr 0px; /* second column hidden at rest */
+    grid-template-columns: 1fr 0px;
     gap:10px; align-items:center;
     transition: grid-template-columns .18s ease;
-    overflow:hidden; /* hide the (×) "behind" the row */
-    border-radius:14px; /* matches select radius so the reveal feels clean */
+    overflow:hidden;
+    border-radius:14px;
   }
   #price-calculator .pc-worker-row:hover,
   #price-calculator .pc-worker-row:focus-within{
-    grid-template-columns: 1fr 40px; /* shorten the select by ~40px */
+    grid-template-columns: 1fr 40px;
   }
-
-  /* The select is just the standard .pc-select */
-  #price-calculator .pc-worker-sel{ /* no extra styling: inherits .pc-select */ }
-
-  /* Remove button */
   #price-calculator .pc-worker-remove{
-    width:36px; height:36px;
-    border:none; padding:0; background:transparent;
+    width:36px; height:36px; border:none; padding:0; background:transparent;
     color:#8a2530; font-size:20px; font-weight:900; line-height:1;
     display:flex; align-items:center; justify-content:center;
-    cursor:pointer; opacity:0; pointer-events:none;
-    transition: opacity .12s ease;
+    cursor:pointer; opacity:0; pointer-events:none; transition: opacity .12s ease;
   }
   #price-calculator .pc-worker-row:hover .pc-worker-remove,
   #price-calculator .pc-worker-row:focus-within .pc-worker-remove{
     opacity:1; pointer-events:auto;
   }
 
-  /* Add flavor – no border, enforced color */
+  /* Add flavor */
   #price-calculator #pc-add-worker.button.ghost{ border:none !important; color:#244c66 !important; background:transparent; display:inline-flex; align-items:center; gap:6px; border-radius:12px; padding:10px 12px; font-weight:700; }
   #price-calculator #pc-add-worker.button.ghost:hover{ background: rgba(60,155,205,.08); }
   #price-calculator #pc-add-worker.button.ghost span[aria-hidden="true"]{ font-size:18px; line-height:1; margin-right:2px; }
@@ -197,35 +187,40 @@
   /* Central storage combo */
   #price-calculator .pc-central-combo{ display:flex; gap:8px; align-items:center; flex-wrap:nowrap; }
   #price-calculator .pc-central-qty{ position:relative; width:160px; }
-  #price-calculator .pc-central-qty .pc-suffix{ position:absolute; right:10px; top:50%; transform:translateY(-50%); font-size:13px; color:#667085; }
+  #price-calculator .pc-central-qty .pc-suffix{ position:absolute; right:30px; top:50%; transform:translateY(-50%); font-size:13px; color:#667085; }
 
   /* CTA row */
   #price-calculator .pc-cta{ margin-top:16px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
   #price-calculator .button.small{ padding:8px 10px; font-size:14px; border-radius:12px; }
   #price-calculator .pc-hint{ font-size:12px; color:#8aa0af; }
+  #price-calculator .pc-worker-remove[disabled]{ opacity:.15!important; cursor:not-allowed;}
 </style>
 
 <script>
 (function(){
   const MANAGED_CP_FEE = 4900;
-  const TB_TO_GB = 1000;
 
-  // Control plane options
+  // ---- Prices ----
+  // Control plane uses B2 (no local disk) prices per node
+  const b2Prices = {
+    c4r8:  760,
+    c8r16: 1520,
+    c16r32:3040
+  };
+
+  // Offer these B2 sizes for control plane
   const computeCatalog = {
     c4r8:   { label:'4 vCPU / 8 GB'  },
     c8r16:  { label:'8 vCPU / 16 GB' },
     c16r32: { label:'16 vCPU / 32 GB'}
   };
-  const l2Prices = {
-    c4r8:   {100:  860, 500: 1260, 1000: 1760},
-    c8r16:  {100: 1620, 500: 2020, 1000: 2520},
-    c16r32: {100: 3140, 500: 3540, 1000: 4040}
-  };
-  const storageOptions = [
-    { gb: 100,  label:'100 GB NVMe' },
-    { gb: 500,  label:'500 GB NVMe' },
-    { gb: 1000, label:'1000 GB NVMe' }
-  ];
+
+  // Central storage (per GB)
+  const CENTRAL_PRICES = { fast: 3.60, large: 1.20 };
+
+  // Mandatory control-plane central storage (SSD/fast)
+  const CP_MANDATORY_CENTRAL_GB = 240;
+  const CP_MANDATORY_CENTRAL_TYPE = 'fast';
 
   // Worker flavors (monthly)
   const workerGroups = [
@@ -265,20 +260,15 @@
   ];
   const workerFlavors = workerGroups.flatMap(g => g.items);
 
-  // Central storage (per GB)
-  const CENTRAL_PRICES = { fast: 3.60, large: 1.20 };
-
   // DOM refs
   const $ = (s, r=document)=>r.querySelector(s);
-
   const computeSel   = $('#pc-compute');
-  const storageSel   = $('#pc-storage');
 
   const workersWrap  = $('#pc-workers');
   const addWorkerBtn = $('#pc-add-worker');
 
   const centralType  = $('#pc-storage-type');
-  const centralTB    = $('#pc-storage-tb');
+  const centralGB    = $('#pc-storage-gb');
 
   const cpSubtotalEl = $('#pc-cp-subtotal');
   const cpBreakdownEl= $('#pc-cp-breakdown');
@@ -293,23 +283,44 @@
   const hourlyEl     = $('#pc-hourly');
 
   // State
-  const state = { nodes: 3, compute: 'c4r8', storage: 100, workers: [], central: { type:'fast', tb:0 } };
+  const state = {
+    nodes: 3,
+    compute: 'c4r8',           // CP compute (B2)
+    workers: [],
+    central: { type:'fast', gb:0 } // optional central storage in GB
+  };
   window.state = state;
+
+const MIN_WORKERS = 3;
+
+function updateRemoveButtons(){
+  // Disable the (×) if we're at or below the minimum
+  document.querySelectorAll('.pc-worker-row .pc-worker-remove').forEach(btn=>{
+    btn.disabled = (state.workers.length <= MIN_WORKERS);
+  });
+}
+
+function ensureMinWorkers(){
+  while (state.workers.length < MIN_WORKERS){
+    addWorkerLine('b2.c4r8');
+  }
+  updateRemoveButtons();
+}
 
   // Helpers
   const fmtInt  = n => n.toLocaleString('sv-SE', { maximumFractionDigits: 0 });
-  const moneyPM = n => `${fmtInt(n)} SEK per month`;
-  const moneyMo = n => `${fmtInt(n)} SEK / mo`;
+  const moneyPM = n => `${fmtInt(n)} SEK / month`;
+  const moneyMo = n => `${fmtInt(n)} SEK / month`;
   function findWorker(id){ return workerFlavors.find(f=>f.id===id) || {monthly:0,label:id}; }
 
-  function perNodeMonthlyCP({compute, storage}){ const t=l2Prices[compute]; return t ? (t[storage]||0) : 0; }
+  function perNodeMonthlyCP({compute}){ return b2Prices[compute] || 0; }
   function optionPriceTextCP(key){
     const base = computeCatalog[key];
-    const price = l2Prices[key]?.[state.storage] ?? 0;
-    return `${base.label} • ${state.storage} GB NVMe — ${fmtInt(price)} SEK`;
+    const price = b2Prices[key] ?? 0;
+    return `${base.label} — ${fmtInt(price)} SEK`;
   }
 
-  // Strip L2/B2 for display (keep GPU if present) and add price in label
+  // Strip L2/B2 for display
   function stripPrefixes(label){
     return label
       .replace(/\bL2\s*•\s*/i, '')
@@ -320,7 +331,8 @@
       .trim();
   }
 
-  function renderCPSelects(){
+  // Build CP select
+  (function renderCPSelect(){
     computeSel.innerHTML = '';
     Object.keys(computeCatalog).forEach(key=>{
       const opt = document.createElement('option');
@@ -328,15 +340,7 @@
       computeSel.appendChild(opt);
     });
     computeSel.value = state.compute;
-
-    storageSel.innerHTML = '';
-    storageOptions.forEach(s=>{
-      const opt = document.createElement('option');
-      opt.value = s.gb; opt.textContent = s.label;
-      storageSel.appendChild(opt);
-    });
-    storageSel.value = String(state.storage);
-  }
+  })();
 
   // Workers UI
   function buildWorkerSelect(selectEl){
@@ -347,8 +351,8 @@
         const display = stripPrefixes(f.label);
         const opt = document.createElement('option');
         opt.value = f.id;
-        opt.textContent = `${display} — ${fmtInt(f.monthly)} SEK`; // price in label
-        og.appendChild(opt); // append to the optgroup (fixed)
+        opt.textContent = `${display} — ${fmtInt(f.monthly)} SEK`;
+        og.appendChild(opt);
       });
       selectEl.appendChild(og);
     });
@@ -361,7 +365,6 @@
       <select class="pc-select pc-worker-sel" aria-label="Worker flavor"></select>
       <button class="pc-worker-remove" type="button" title="Remove flavor" aria-label="Remove worker flavor">×</button>
     `;
-
     const sel = row.querySelector('.pc-worker-sel');
     buildWorkerSelect(sel);
     sel.value = worker.id;
@@ -372,35 +375,46 @@
     });
 
     row.querySelector('.pc-worker-remove').addEventListener('click', ()=>{
+      if (state.workers.length <= MIN_WORKERS) return; // block removal at min
       const idx = state.workers.indexOf(worker);
       if (idx > -1) state.workers.splice(idx,1);
       row.remove();
       updateTotals();
+      updateRemoveButtons();
     });
 
     return row;
   }
 
-  function addWorkerLine(defaultId='b2.c4r8'){
-    const worker = { id: defaultId };
-    state.workers.push(worker);
-    workersWrap.appendChild(workerRowTemplate(worker));
-    updateTotals();
-  }
+    function addWorkerLine(defaultId='b2.c4r8'){
+      const worker = { id: defaultId };
+      state.workers.push(worker);
+      workersWrap.appendChild(workerRowTemplate(worker));
+      updateTotals();
+      updateRemoveButtons();
+    }
+
+
 
   // Totals
   function workersSubtotal(){ return state.workers.reduce((s,w)=> s + (findWorker(w.id).monthly), 0); }
   function workersCount(){ return state.workers.length; }
   function centralSubtotal(){
-    const gb = Math.max(0, Number(state.central.tb||0)) * TB_TO_GB;
+    const gb = Math.max(0, Number(state.central.gb||0));
     return gb * (CENTRAL_PRICES[state.central.type] || 0);
   }
 
   function updateTotals(){
+    // Control plane
     const perNode = perNodeMonthlyCP(state);
     const cpNodesTotal = perNode * state.nodes;
-    const cpSubtotal = MANAGED_CP_FEE + cpNodesTotal;
 
+    const mandatoryCentralPerGB = CENTRAL_PRICES[CP_MANDATORY_CENTRAL_TYPE] || 0;
+    const mandatoryCentralSum = CP_MANDATORY_CENTRAL_GB * mandatoryCentralPerGB;
+
+    const cpSubtotal = MANAGED_CP_FEE + cpNodesTotal + mandatoryCentralSum;
+
+    // Others
     const wSum = workersSubtotal();
     const wCount = workersCount();
     const cSum = centralSubtotal();
@@ -408,65 +422,50 @@
     const total = cpSubtotal + wSum + cSum;
     const hourly = total / (30*24);
 
-    cpSubtotalEl.textContent = moneyPM(cpSubtotal);
-    const cpFlavorLabel = `${computeCatalog[state.compute].label} • ${state.storage} GB NVMe`;
+    // Render CP breakdown
     const feeLine = `Managed Control plane fee — ${moneyMo(MANAGED_CP_FEE)}`;
-    const nodesLine = `${state.nodes}× ${cpFlavorLabel} — ${moneyMo(perNode)}`;
-    cpBreakdownEl.innerHTML = `${feeLine}<br>${nodesLine}`;
+    const nodesLine = `${state.nodes}× ${computeCatalog[state.compute].label} (B2) — ${moneyMo(perNode)}`;
+    const centralLine = `Control plane central storage ${CP_MANDATORY_CENTRAL_GB} GB (SSD) — ${moneyMo(mandatoryCentralSum)}`;
+    cpSubtotalEl.textContent = moneyPM(cpSubtotal);
+    cpBreakdownEl.innerHTML = `${feeLine}<br>${nodesLine}<br>${centralLine}`;
 
+    // Workers
     workersSumEl.textContent = moneyPM(wSum);
     workersCountEl.textContent = String(wCount);
     workersBreakdownEl.innerHTML = state.workers.length
       ? state.workers.map(w=>{
           const f = findWorker(w.id);
           const base = stripPrefixes(f.label);
-          return `1× ${base} — ${fmtInt(f.monthly)} SEK / mo`;
+          return `1× ${base} — ${fmtInt(f.monthly)} SEK / month`;
         }).join('<br>')
       : 'No worker flavors added yet.';
 
+    // Optional central storage
     centralSumEl.textContent = moneyPM(cSum);
 
+    // Totals
     totalEl.textContent = moneyPM(total);
     hourlyEl.textContent = hourly.toLocaleString('sv-SE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-    // keep CP select price texts in sync with storage
+    // keep CP select price texts fresh (not strictly needed now, but safe)
     Array.from(computeSel.options).forEach(opt=> opt.textContent = optionPriceTextCP(opt.value));
   }
   window.updateTotals = updateTotals;
 
   // Init
-  (function initCP(){
-    computeSel.innerHTML = '';
-    Object.keys(computeCatalog).forEach(key=>{
-      const opt = document.createElement('option');
-      opt.value = key; opt.textContent = optionPriceTextCP(key);
-      computeSel.appendChild(opt);
-    });
-    computeSel.value = state.compute;
-
-    storageSel.innerHTML = '';
-    storageOptions.forEach(s=>{
-      const opt = document.createElement('option');
-      opt.value = s.gb; opt.textContent = s.label;
-      storageSel.appendChild(opt);
-    });
-    storageSel.value = String(state.storage);
-  })();
-
   updateTotals();
-  addWorkerLine('b2.c4r8'); // starter row
+  ensureMinWorkers();
 
   // Events
   document.querySelectorAll('input[name="pc-nodes"]').forEach(r=>{
     r.addEventListener('change', e=>{ state.nodes = Number(e.target.value); updateTotals(); });
   });
   computeSel.addEventListener('change', e=>{ state.compute = e.target.value; updateTotals(); });
-  storageSel.addEventListener('change', e=>{ state.storage = Number(e.target.value); updateTotals(); });
 
   addWorkerBtn.addEventListener('click', ()=> addWorkerLine('b2.c4r8'));
 
   centralType.addEventListener('change', e=>{ state.central.type = e.target.value; updateTotals(); });
-  centralTB.addEventListener('input', e=>{ state.central.tb = Number(e.target.value || 0); updateTotals(); });
+  centralGB.addEventListener('input', e=>{ state.central.gb = Number(e.target.value || 0); updateTotals(); });
 })();
 </script>
 <!-- end of price calculator -->
