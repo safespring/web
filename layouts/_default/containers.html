@@ -827,142 +827,7 @@ h3{
   </div>
 
 
-
-
-  <div style="margin-top:10%;"></div>
-
-  <div class="scrolly" id="scene">
-    <!-- Sticky kapsel (ALLT inuti) -->
-    <div class="locked-section">
-<div class="nav-box">
-      <nav class="nav" aria-label="Sektioner">
-        <a href="#control">Control plane</a>
-        <a href="#workers">Worker nodes</a>
-        <a href="#infra">Infrastructure</a>
-      </nav>
-      <nav class="nav" aria-label="Sektioner">
-        <a href="#bullet-section">Skip <i class="fa-solid fa-arrow-down"></i></a>
-      </nav>
-</div>
-      <section class="capsule" aria-label="Kubernetes-kluster">
-        <!-- Vänster: Bild -->
-        <div class="figure">
-          <img src="/img/graphics/safespring-container-platform-image-1.svg" alt="Kubernetes cluster schematic" />
-        </div>
-
-        <!-- Höger: Textstack -->
-        <div class="right">
-          <div class="stack">
-            <article class="callout" data-step="1">
-              <div class="arrow" data-id="1" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">                   <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">                     <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                   </g>                 </svg>
-              </div>
-              <p><strong>Safespring’s Kubernetes clusters</strong> provide a managed control plane with different configurations of nodes.</p>
-            </article>
-
-            <article class="callout" data-step="2">
-              <div class="arrow" data-id="2" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">                   <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">                     <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                   </g>                 </svg>
-              </div>
-              <p><strong>Worker nodes</strong> are always customer-managed, but each runs as its own virtual machine sized from our flavor catalog. </p>
-            </article>
-
-            <article class="callout" data-step="3">
-              <div class="arrow" data-id="3" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
-                  <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
-                    <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-                    <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-                    <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
-                  </g>
-                </svg>
-              </div>
-              <p><strong>The infrastructure layer</strong> is managed by Safespring on our own nordic data centers.</p>
-            </article>
-          </div>
-        </div>
-
-        <!-- Pilar (ligger ovanpå och pekar horisontellt från bild mot text) -->
-      </section>
-    </div>
-    <!-- Steg-markörer (osynliga, bara för scroll-logik) -->
-    <div id="control" class="anchor"></div>
-    <div class="stage" data-target="1"></div>
-
-    <div id="workers" class="anchor"></div>
-    <div class="stage" data-target="2"></div>
-
-    <div id="infra" class="anchor"></div>
-    <div class="stage" data-target="3"></div>
-  </div>
-
-
-
-
-
-
-  <style>
-    :root{
-      --ink:#0a0a0a;
-      --muted:#667085;
-      --line: #d0dde6;
-      --bg-top:#ffffff;
-      --bg-bottom:#E7EFF3; /* molnblå */
-      --maxw:1200px;
-
-      /* Safespring-typsnitt */
-      --h-font:"Hind", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      --p-font:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    }
-
-
-  </style>
-  <section class="bullet-section" id="bullet-section">
-    <div class="grid">
-      <article class="col">
-        <div class="icon-wrap" aria-hidden="true">
-          <i class="fa-solid fa-forward-fast"></i>
-        </div>
-        <h3>Fast</h3>
-        <p>
-          Provision Kubernetes clusters in minutes. Self-service portal or API access, with a managed control plane ready to use.
-        </p>
-      </article>
-
-      <article class="col">
-        <div class="icon-wrap" aria-hidden="true">
-          <i style="font-size:45px" class="fa-kit fa-eu-flag"></i>
-        </div>
-        <h3>Sovereign</h3>
-        <p>
-          Run workloads fully within EU jurisdiction. Built on Nordic data centers with strict compliance and security by design.
-        </p>
-      </article>
-
-      <article class="col">
-        <div class="icon-wrap" aria-hidden="true">
-          <i class="fa-solid fa-cloud-arrow-up"></i>
-        </div>
-        <h3>Scalable</h3>
-        <p>
-          Start small and grow. Add worker nodes on-demand, choose from compute or GPU flavors, and pay only for the resources you use.
-        </p>
-      </article>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-  <article class="card" id="tabsBox" aria-label="Tabbed content">
+<article class="card" id="tabsBox" aria-label="Tabbed content">
     <header class="header">
       <div class="panel-row" role="tablist" aria-label="Sections">
         <h2 class="title" id="boxTitle">Overview</h2>
@@ -1041,284 +906,141 @@ h3{
     </article>
 
 <!-- end of tab box -->
+  <div style="margin-top:10%;"></div>
+
+  <style>
+    :root{
+      --ink:#0a0a0a;
+      --muted:#667085;
+      --line: #d0dde6;
+      --bg-top:#ffffff;
+      --bg-bottom:#E7EFF3; /* molnblå */
+      --maxw:1200px;
+
+      /* Safespring-typsnitt */
+      --h-font:"Hind", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      --p-font:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+
+  </style>
+  <section class="bullet-section" id="bullet-section">
+    <div class="grid">
+      <article class="col">
+        <div class="icon-wrap" aria-hidden="true">
+          <i class="fa-solid fa-forward-fast"></i>
+        </div>
+        <h3>Fast</h3>
+        <p>
+          Provision Kubernetes clusters in minutes. Self-service portal or API access, with a managed control plane ready to use.
+        </p>
+      </article>
+
+      <article class="col">
+        <div class="icon-wrap" aria-hidden="true">
+          <i style="font-size:45px" class="fa-kit fa-eu-flag"></i>
+        </div>
+        <h3>Sovereign</h3>
+        <p>
+          Run workloads fully within EU jurisdiction. Built on Nordic data centers with strict compliance and security by design.
+        </p>
+      </article>
+
+      <article class="col">
+        <div class="icon-wrap" aria-hidden="true">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <h3>Scalable</h3>
+        <p>
+          Start small and grow. Add worker nodes on-demand, choose from compute or GPU flavors, and pay only for the resources you use.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+  <div style="margin-top:20%;"></div>
+
+  <div class="scrolly" id="scene">
+    <!-- Sticky kapsel (ALLT inuti) -->
+    <div class="locked-section">
+<div class="nav-box">
+      <nav class="nav" aria-label="Sektioner">
+        <a href="#control">Control plane</a>
+        <a href="#workers">Worker nodes</a>
+        <a href="#infra">Infrastructure</a>
+      </nav>
+      <nav class="nav" aria-label="Sektioner">
+        <a href="#bullet-section">Skip <i class="fa-solid fa-arrow-down"></i></a>
+      </nav>
+</div>
+      <section class="capsule" aria-label="Kubernetes-kluster">
+        <!-- Vänster: Bild -->
+        <div class="figure">
+          <img src="/img/graphics/safespring-container-platform-image-1.svg" alt="Kubernetes cluster schematic" />
+        </div>
+
+        <!-- Höger: Textstack -->
+        <div class="right">
+          <div class="stack">
+            <article class="callout" data-step="1">
+              <div class="arrow" data-id="1" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">                   <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">                     <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                   </g>                 </svg>
+              </div>
+              <p><strong>Safespring’s Kubernetes clusters</strong> provide a managed control plane with different configurations of nodes.</p>
+            </article>
+
+            <article class="callout" data-step="2">
+              <div class="arrow" data-id="2" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">                   <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">                     <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                     <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>                   </g>                 </svg>
+              </div>
+              <p><strong>Worker nodes</strong> are always customer-managed, but each runs as its own virtual machine sized from our flavor catalog. </p>
+            </article>
+
+            <article class="callout" data-step="3">
+              <div class="arrow" data-id="3" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="82.203" height="52.006" viewBox="0 0 82.203 52.006">
+                  <g id="Group_47" data-name="Group 47" transform="translate(-830 -9267.724)">
+                    <line id="Line_12" data-name="Line 12" x2="66.441" transform="translate(835.5 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+                    <line id="Line_13" data-name="Line 13" x2="19.055" y2="18.227" transform="translate(885.371 9275.5)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+                    <line id="Line_14" data-name="Line 14" y1="18.227" x2="19.055" transform="translate(885.371 9293.727)" fill="none" stroke="#fa690f" stroke-linecap="round" stroke-width="11"/>
+                  </g>
+                </svg>
+              </div>
+              <p><strong>The infrastructure layer</strong> is managed by Safespring on our own nordic data centers.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Pilar (ligger ovanpå och pekar horisontellt från bild mot text) -->
+      </section>
+    </div>
+    <!-- Steg-markörer (osynliga, bara för scroll-logik) -->
+    <div id="control" class="anchor"></div>
+    <div class="stage" data-target="1"></div>
+
+    <div id="workers" class="anchor"></div>
+    <div class="stage" data-target="2"></div>
+
+    <div id="infra" class="anchor"></div>
+    <div class="stage" data-target="3"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
 
 <div id="price" style="padding-top: 200px;"></div>
-<!-- === Safespring – Single-Choice Cluster Price Calculator (HTML+CSS+JS) === -->
-<section id="price-calculator" aria-labelledby="pc-title" style="margin-top:22px">
-  <h3 id="pc-title" style="margin:0 0 8px">Price calculator</h3>
-  <p style="margin:0 0 18px">Choose node count, one CPU+RAM flavor for all workers, and one storage size. Pricing updates automatically.</p>
 
-  <div class="pc-layout">
-    <!-- Selection card -->
-    <div class="pc-card">
-      <!-- Node count -->
-      <div class="pc-inline">
-        <span class="pc-label">Nodes</span>
-        <div class="pc-choice" role="group" aria-label="Node count">
-          <input type="radio" id="pc-n3" name="pc-nodes" value="3" checked>
-          <label for="pc-n3" class="pc-radio">3</label>
-          <input type="radio" id="pc-n5" name="pc-nodes" value="5">
-          <label for="pc-n5" class="pc-radio">5</label>
-        </div>
-      </div>
-
-      <!-- Compute -->
-      <div class="pc-inline">
-        <label for="pc-compute" class="pc-label">CPU and RAM</label>
-        <select id="pc-compute" class="pc-select"></select>
-      </div>
-
-      <!-- Storage -->
-      <div class="pc-inline">
-        <label for="pc-storage" class="pc-label">Local storage</label>
-        <select id="pc-storage" class="pc-select" aria-describedby="pc-compat"></select>
-      </div>
-
-      <div id="pc-compat" class="pc-hint"></div>
-    </div>
-
-    <!-- Totals card -->
-    <div class="pc-list" role="region" aria-live="polite">
-      <div class="pc-row">
-        <div>Workers (<span id="pc-workers-count">3</span> nodes)</div>
-        <div><strong id="pc-workers-sum">— SEK per month</strong></div>
-      </div>
-      <div class="pc-row">
-        <div>Control plane</div>
-        <div><strong id="pc-cp">4,900 SEK per month</strong></div>
-      </div>
-      <div class="pc-row total">
-        <div>Total</div>
-        <div><strong id="pc-total">— SEK per month</strong></div>
-      </div>
-      <div class="pc-sub">≈ <span id="pc-hourly">—</span> SEK per hour (estimate)</div>
-    </div>
-  </div>
-
-  <div class="pc-cta">
-    <a class="button" href="#get-started">Get started</a>
-    <a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">Book a demo</a>
-  </div>
-</section>
-
-<style>
-  /* ===== Minimal styling (scoped) ===== */
-  #price-calculator { --line:#d7e3eb; --ink:var(--MORKBLA); width: min(1136px,100%); margin: auto;}
-
-  /* Two-column layout with equal heights on desktop */
-  #price-calculator .pc-layout {
-    display: grid;
-    gap: 16px;
-    align-items: stretch; /* let children stretch */
-  }
-  @media (min-width:900px){
-    #price-calculator .pc-layout {
-      grid-template-columns: 1fr 1fr;
-    }
-    /* Make cards fill the same height */
-    #price-calculator .pc-card,
-    #price-calculator .pc-list {
-      height: 100%;
-      display: grid;             /* allow internal growth */
-      align-content: start;      /* content packs at the top */
-    }
-  }
-
-  #price-calculator .pc-card{
-    background:#fff; border:1px solid var(--line); border-radius:12px;
-    padding:14px; display:grid; gap:12px;
-  }
-
-  #price-calculator .pc-inline{
-    display:grid; grid-template-columns: 140px 1fr; gap:10px; align-items:center;
-  }
-  @media (max-width:560px){ #price-calculator .pc-inline{ grid-template-columns: 1fr; } }
-
-  #price-calculator .pc-label{ font-weight:600; font-size:13px; color:var(--ink); }
-  #price-calculator .pc-select{
-    appearance:none; border:1px solid var(--line); border-radius:10px;
-    background:#fff; padding:10px 12px; width:100%;
-    font:500 15px/1.3 var(--p-font, 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif);
-  }
-
-  /* Radio pills */
-  #price-calculator .pc-choice{ display:flex; gap:8px; flex-wrap:wrap; }
-  #price-calculator .pc-choice input{ position:absolute; opacity:0; pointer-events:none; }
-  #price-calculator .pc-radio{
-    border:1px solid var(--line); border-radius:999px; padding:8px 12px; cursor:pointer;
-    background:#fff; font-weight:600;
-  }
-  #price-calculator .pc-choice input:checked + .pc-radio{
-    background: rgba(60,155,205,.12); border-color:#99b6cb; color:#0d3850;
-  }
-
-  #price-calculator .pc-hint{ font-size:12px; color:#667085; min-height:1.1em; }
-
-  /* Summary box */
-  #price-calculator .pc-list{
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:30px;
-  }
-  #price-calculator .pc-row{
-    display:grid; grid-template-columns:1fr auto;
-    align-items:center; gap:12px; padding:10px 2px;
-    border-bottom:1px solid color-mix(in oklab, var(--line), transparent 60%);
-  }
-  #price-calculator .pc-row:last-child{ border-bottom:none; }
-  #price-calculator .pc-row.total strong{ font-size:1.1em; color: var(--green-color);}
-  #price-calculator .pc-sub{ margin-top:6px; font-size:13px; color:#566b7a; }
-
-  #price-calculator .pc-cta{ margin-top:16px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
-</style>
-
-<script>
-(function(){
-  const CONTROL_PLANE = 4900; // SEK / 30 days
-
-  // Compute flavor catalog (user-facing). Base price = b2 (no local disk).
-  const computeCatalog = {
-    c4r8:   { label:'4 vCPU and 8 GB',  b2:  760, l2: true  },
-    c4r16:  { label:'4 vCPU and 16 GB', b2: 1200, l2: false },
-    c8r16:  { label:'8 vCPU and 16 GB', b2: 1520, l2: true  },
-    c8r32:  { label:'8 vCPU and 32 GB', b2: 2400, l2: false },
-    c16r32: { label:'16 vCPU and 32 GB',b2: 3040, l2: true  }
-  };
-  // l2 monthly prices per storage size (only for l2-capable flavors)
-  const l2Prices = {
-    c4r8:   {100:  860, 500: 1260, 1000: 1760},
-    c8r16:  {100: 1620, 500: 2020, 1000: 2520},
-    c16r32: {100: 3140, 500: 3540, 1000: 4040}
-  };
-  const storageOptions = [
-    { gb: 0,    label:'No local disk' },
-    { gb: 100,  label:'100 GB NVMe' },
-    { gb: 500,  label:'500 GB NVMe' },
-    { gb: 1000, label:'1,000 GB NVMe' }
-  ];
-
-  const $ = (s, r=document)=>r.querySelector(s);
-  const computeSel  = $('#pc-compute');
-  const storageSel  = $('#pc-storage');
-  const compatEl    = $('#pc-compat');
-
-  const workersCountEl = $('#pc-workers-count');
-  const workersSumEl   = $('#pc-workers-sum');
-  const totalEl        = $('#pc-total');
-  const hourlyEl       = $('#pc-hourly');
-  const cpEl           = $('#pc-cp');
-
-  let state = { nodes: 3, compute: 'c4r8', storage: 0 };
-
-  const fmtInt  = n => n.toLocaleString('sv-SE', { maximumFractionDigits: 0 });
-  const money   = n => `${fmtInt(n)} SEK per month`;
-
-  function perNodeMonthly({compute, storage}){
-    if(storage === 0){
-      return computeCatalog[compute]?.b2 ?? 0; // b2 price (no local disk)
-    }
-    const table = l2Prices[compute];
-    return table ? (table[storage] || 0) : 0;  // l2 price for selected storage
-  }
-
-  function optionPriceText(key){
-    // Build the label text for a compute option based on current storage
-    const base = computeCatalog[key];
-    if(!base) return '';
-    if(state.storage === 0){
-      // Relevant to say it's the no-storage price (b2)
-      return `${base.label} — ${fmtInt(base.b2)} SEK`;
-    }
-    // With storage: show the l2 price for this storage if available
-    const l2 = l2Prices[key];
-    if(l2 && l2[state.storage]){
-      return `${base.label} — ${fmtInt(l2[state.storage])} SEK`;
-    }
-    // Not available with storage → just show label (option will be disabled)
-    return base.label;
-  }
-
-  function enforceCompatibility(){
-    const wantsL2 = state.storage > 0;
-    Array.from(computeSel.options).forEach(opt => {
-      const key = opt.value;
-      const ok = wantsL2 ? !!computeCatalog[key]?.l2 : true;
-      opt.disabled = !ok;
-      // Refresh text so labels always reflect current pricing context
-      opt.textContent = optionPriceText(key);
-    });
-    if(wantsL2 && !computeCatalog[state.compute]?.l2){
-      const firstOK = Object.keys(computeCatalog).find(k => computeCatalog[k].l2);
-      if(firstOK){ state.compute = firstOK; computeSel.value = firstOK; }
-    }
-    compatEl.textContent = wantsL2 ? 'Local storage (NVME) requires an l2 flavor.' : '';
-  }
-
-  function renderSelects(){
-    // Compute
-    computeSel.innerHTML = '';
-    Object.keys(computeCatalog).forEach(key=>{
-      const opt = document.createElement('option');
-      opt.value = key;
-      opt.textContent = optionPriceText(key);
-      computeSel.appendChild(opt);
-    });
-    computeSel.value = state.compute;
-
-    // Storage
-    storageSel.innerHTML = '';
-    storageOptions.forEach(s=>{
-      const opt = document.createElement('option');
-      opt.value = s.gb;
-      opt.textContent = s.label;
-      storageSel.appendChild(opt);
-    });
-    storageSel.value = String(state.storage);
-
-    enforceCompatibility();
-  }
-
-  function updateTotals(){
-    const perNode = perNodeMonthly(state);
-    const workers = perNode * state.nodes;
-    const total   = CONTROL_PLANE + workers;
-    const hourly  = total / (30*24);
-
-    workersCountEl.textContent = String(state.nodes);
-    workersSumEl.textContent   = money(workers);
-    cpEl.textContent           = money(CONTROL_PLANE);
-    totalEl.textContent        = money(total);
-    hourlyEl.textContent       = hourly.toLocaleString('sv-SE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  }
-
-  // Init
-  renderSelects(); updateTotals();
-
-  // Events
-  document.querySelectorAll('input[name="pc-nodes"]').forEach(r=>{
-    r.addEventListener('change', e=>{
-      state.nodes = Number(e.target.value);
-      updateTotals();
-    });
-  });
-  computeSel.addEventListener('change', e=>{
-    state.compute = e.target.value;
-    enforceCompatibility();
-    updateTotals();
-  });
-  storageSel.addEventListener('change', e=>{
-    state.storage = Number(e.target.value);
-    enforceCompatibility();
-    updateTotals();
-  });
-})();
-</script>
-
-
-<!-- end of price calculator -->
+{{ partial "paas-price-calculator-v7.html" . }}
 
 <div id="" style="padding-top: 200px;"></div>
-
 
 
     <style>
@@ -1934,19 +1656,6 @@ select {
   setTimeout(updateArrow, 150);
 })();</script>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
