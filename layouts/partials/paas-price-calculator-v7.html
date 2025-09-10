@@ -133,7 +133,12 @@
   #price-calculator .pc-inline--combo{ align-items:start; }
   @media (max-width:560px){ #price-calculator .pc-inline{ grid-template-columns: 1fr; } }
   #price-calculator .pc-label{ font-weight:600; font-size:13px; color:#244c66; }
-  #price-calculator .pc-select, #price-calculator .pc-input{ appearance:none; border:1px solid #cfe0ea; border-radius:14px; background:#fff; padding:10px 12px; width:100%; font:500 13px/1.3 var(--p-font, 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif); box-shadow: inset 0 1px 0 rgba(0,0,0,.02); }
+  #price-calculator .pc-select, #price-calculator .pc-input{
+    appearance:none; border:1px solid #cfe0ea; border-radius:14px; background:#fff;
+    padding:10px 12px; width:100%;
+    font:500 13px/1.3 var(--p-font, 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.02);
+  }
 
   /* Radio pills */
   #price-calculator .pc-choice{ display:flex; gap:8px; flex-wrap:wrap; }
@@ -143,8 +148,8 @@
 
   /* Totals list: borders ONLY between main blocks */
   #price-calculator .pc-list{ border:1px solid var(--line); border-radius:16px; padding:22px 18px 26px; }
-  #price-calculator .pc-row{ display:grid; grid-template-columns:1fr auto; align-items:center; gap:12px; padding:8px 2px; font-weight: 600;}
-  #price-calculator .pc-row--no-border{ padding-top:0; font-weight: 400}
+  #price-calculator .pc-row{ display:grid; grid-template-columns:1fr auto; align-items:center; gap:12px; padding:8px 2px; font-weight:600; }
+  #price-calculator .pc-row--no-border{ padding-top:0; font-weight:400; }
   #price-calculator .pc-row.total strong{ font-size:1.1em; color: var(--green-color); }
   #price-calculator .pc-breakdown{ font-size:13px; color:#566b7a; line-height:1.35; }
   #price-calculator .pc-divider{ height:1px; border:0; margin:8px 0 6px; background: color-mix(in oklab, var(--line), transparent 25%); }
@@ -153,20 +158,36 @@
   #price-calculator #pc-card-workers .pc-inline.pc-inline--stack > .pc-label{ align-self:start; padding-top:6px; }
   #price-calculator .pc-workers{ display:grid; gap:10px; }
 
-  /* Row: ONLY Flavor pill (wide) | erase (30x30) */
-  #price-calculator .pc-worker-row{ display:grid; grid-template-columns: 1fr 30px; gap:10px; align-items:center; }
-  /* Flavor pill + two-line overlay on narrow screens */
-  #price-calculator .pc-flavor-wrap{ position:relative; }
-  #price-calculator .pc-worker-sel{ border-radius:22px; padding:12px 14px; font-weight:700; min-height:48px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  #price-calculator .pc-flavor-display{ display:none; position:absolute; inset:0; pointer-events:none; border-radius:22px; padding:8px 14px; line-height:1.18; font-weight:700; color:#1f4861; }
-  #price-calculator .pc-flavor-display .sub{ display:block; font-weight:600; opacity:.75; }
-  @media (max-width:720px){
-    #price-calculator .pc-flavor-display{ display:block; }
-    #price-calculator .pc-worker-sel{ color:transparent; text-shadow:none; }
+  /* Worker row: select looks like control-plane select. Reveal (×) on hover/focus by shrinking row ~40px */
+  #price-calculator .pc-worker-row{
+    display:grid;
+    grid-template-columns: 1fr 0px; /* second column hidden at rest */
+    gap:10px; align-items:center;
+    transition: grid-template-columns .18s ease;
+    overflow:hidden; /* hide the (×) "behind" the row */
+    border-radius:14px; /* matches select radius so the reveal feels clean */
   }
-  /* Erase button: 30x30, no border/padding */
-  #price-calculator .pc-worker-remove{ width:30px; height:30px; border:none; padding:0; background:transparent; color:#8a2530; font-size:20px; font-weight:900; line-height:1; display:flex; align-items:center; justify-content:center; cursor:pointer; }
-  #price-calculator .pc-worker-remove:hover{ opacity:.85; }
+  #price-calculator .pc-worker-row:hover,
+  #price-calculator .pc-worker-row:focus-within{
+    grid-template-columns: 1fr 40px; /* shorten the select by ~40px */
+  }
+
+  /* The select is just the standard .pc-select */
+  #price-calculator .pc-worker-sel{ /* no extra styling: inherits .pc-select */ }
+
+  /* Remove button */
+  #price-calculator .pc-worker-remove{
+    width:36px; height:36px;
+    border:none; padding:0; background:transparent;
+    color:#8a2530; font-size:20px; font-weight:900; line-height:1;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; opacity:0; pointer-events:none;
+    transition: opacity .12s ease;
+  }
+  #price-calculator .pc-worker-row:hover .pc-worker-remove,
+  #price-calculator .pc-worker-row:focus-within .pc-worker-remove{
+    opacity:1; pointer-events:auto;
+  }
 
   /* Add flavor – no border, enforced color */
   #price-calculator #pc-add-worker.button.ghost{ border:none !important; color:#244c66 !important; background:transparent; display:inline-flex; align-items:center; gap:6px; border-radius:12px; padding:10px 12px; font-weight:700; }
@@ -320,62 +341,34 @@
   // Workers UI
   function buildWorkerSelect(selectEl){
     workerGroups.forEach(group=>{
-      const og = document.createElement('optgroup'); og.label = group.label;
+      const og = document.createElement('optgroup');
+      og.label = group.label;
       group.items.forEach(f=>{
         const display = stripPrefixes(f.label);
         const opt = document.createElement('option');
         opt.value = f.id;
         opt.textContent = `${display} — ${fmtInt(f.monthly)} SEK`; // price in label
-        opt.dataset.base = display;                                     // for overlay
-        selectEl.appendChild(opt);
+        og.appendChild(opt); // append to the optgroup (fixed)
       });
       selectEl.appendChild(og);
     });
-  }
-
-  function twoLineParts(baseLabel){
-    const parts = baseLabel.split('•').map(t=>t.trim());
-    const cpuRam = parts.find(p => /vCPU/i.test(p)) || baseLabel;
-    let disk = parts.find(p => /\bGB\b|disk/i.test(p) && !/vCPU/i.test(p));
-    if (!disk && /\bno local disk\b/i.test(baseLabel)) disk = 'No local disk';
-    const hasGpu = /^\s*GPU\b/i.test(baseLabel);
-    return {
-      main: hasGpu ? `GPU • ${cpuRam.replace(/^GPU\s*•\s*/i,'')}` : cpuRam,
-      sub:  disk || ''
-    };
   }
 
   function workerRowTemplate(worker){
     const row = document.createElement('div');
     row.className = 'pc-worker-row';
     row.innerHTML = `
-      <div class="pc-flavor-wrap">
-        <select class="pc-select pc-worker-sel" aria-label="Worker flavor"></select>
-        <div class="pc-flavor-display" aria-hidden="true"><span class="main"></span><span class="sub"></span></div>
-      </div>
+      <select class="pc-select pc-worker-sel" aria-label="Worker flavor"></select>
       <button class="pc-worker-remove" type="button" title="Remove flavor" aria-label="Remove worker flavor">×</button>
     `;
 
-    const sel   = row.querySelector('.pc-worker-sel');
-    const disp  = row.querySelector('.pc-flavor-display');
-    const main  = disp.querySelector('.main');
-    const sub   = disp.querySelector('.sub');
-
+    const sel = row.querySelector('.pc-worker-sel');
     buildWorkerSelect(sel);
     sel.value = worker.id;
 
-    function refreshLabel(){
-      const opt = sel.selectedOptions[0];
-      const base = opt?.dataset.base || opt?.textContent || '';
-      const parts = twoLineParts(base);
-      main.textContent = parts.main;
-      sub.textContent  = parts.sub ? `• ${parts.sub}` : '';
-      sub.style.display = parts.sub ? 'block' : 'none';
-    }
-
     sel.addEventListener('change', ()=>{
       worker.id = sel.value;
-      refreshLabel(); updateTotals();
+      updateTotals();
     });
 
     row.querySelector('.pc-worker-remove').addEventListener('click', ()=>{
@@ -385,7 +378,6 @@
       updateTotals();
     });
 
-    refreshLabel();
     return row;
   }
 
