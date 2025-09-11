@@ -41,7 +41,6 @@
     --maxw: 1200px;
   }
 
-  html,
   body {
     height: 100%;
     scroll-behavior: smooth;          /* keeps it silky */
@@ -110,10 +109,6 @@
   gap: 0;
   align-items: center;
   padding: clamp(20px, 5vh, 80px) 0 clamp(30px, 8vh, 120px);
-}
-
-.actions {
-  margin: 20px 0;
 }
 
 .btn {
@@ -224,10 +219,7 @@ button:focus-visible {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
+
 h2,
 h3 {
   font-family: "Hind", system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
@@ -603,7 +595,7 @@ h3 {
   margin: 0 auto 10vw auto;
 }
 
-.grid{
+.grid {
   display: flex;
   gap: 0;
   align-items: start;
@@ -793,6 +785,19 @@ h3{
   border-bottom: none;
   margin-bottom: 0;
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 40px 30px 5px 30px;
+  }
+  .tab-panel {
+    padding: 30px !important;
+  }
+  .grid {
+    flex-direction: column;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -811,13 +816,10 @@ h3{
         <p class="">
           {{ .Params.intro }}
         </p>
-
-        <div class="actions">
           <a id="openModal" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm" class="button">
             BOOK DEMO
           </a>
           <a class="text-button" href="#get-started">Get started</a>
-        </div>
       </div>
 
       <div class="hero-media" aria-hidden="true">
@@ -908,7 +910,7 @@ h3{
   <tbody>
     <tr>
       <td>On-Demand Kubernetes</td>
-      <td>Unmanaged*</td>
+      <td>Unmanage</td>
       <td>From 0 kr</td>
     </tr>
     <tr>
@@ -1872,7 +1874,3 @@ select {
 </script>
 
 {{ partial "footer.html" . }}
-<div style="margin-top:10%">.</div>
-</body>
-
-</html>
