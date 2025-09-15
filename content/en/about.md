@@ -1,7 +1,7 @@
 ---
 title: "About Safespring"
 language: "en"
-intro: "Safespring delivers a locally based Cloud built for the apps of tomorrow."
+intro: "Safespring delivers a locally based Cloud built for the apps of tomorrow."
 date: "2020-07-03"
 draft: false
 section: "Safespring"
