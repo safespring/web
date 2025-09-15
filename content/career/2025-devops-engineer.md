@@ -1,7 +1,7 @@
 ---
 Title: "DevOps Engineer with a networking edge"
 intro: "Work on infrastructure that’s open-source, sovereign and built with sustainability in mind"
-draft: false
+draft: true
 date: "2025-03-14"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/c9fc224c-49f3-4da3-86a4-3365c9266acc/5aa7a7b5-2d74-4947-880c-da07f6f35696#applyNow"
 sidebarlinkname: "Apply now"
