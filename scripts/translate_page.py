@@ -302,6 +302,50 @@ def _strip_quotes(s: str) -> Tuple[str, bool]:
     return s, False
 
 
+def _strip_enclosing_quote_pairs(text: str) -> str:
+    """Remove one set of enclosing quotes if present (supports straight and typographic)."""
+    pairs = [
+        ('"', '"'),
+        ("'", "'"),
+        ('“', '”'),
+        ('”', '“'),  # be tolerant of reversed order
+        ('«', '»'),
+        ('„', '”'),
+        ('‚', '’'),
+    ]
+    t = text.strip()
+    for left, right in pairs:
+        if t.startswith(left) and t.endswith(right) and len(t) >= len(left) + len(right):
+            return t[len(left) : len(t) - len(right)].strip()
+    return t
+
+
+def _collapse_whitespace(text: str) -> str:
+    """Collapse all runs of whitespace (including newlines) to a single space."""
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def sanitize_translated_scalar(text: str) -> str:
+    """Best-effort cleanup for translated scalar values used in YAML frontmatter.
+
+    - Trim surrounding whitespace
+    - Remove one layer of enclosing quotes if present
+    - Collapse internal newlines and excessive spaces
+    """
+    t = text if text is not None else ""
+    t = _strip_enclosing_quote_pairs(t)
+    t = _collapse_whitespace(t)
+    return t
+
+
+def escape_for_yaml_double_quoted(text: str) -> str:
+    """Escape a string for safe inclusion inside YAML double quotes.
+
+    Escapes backslashes and double quotes.
+    """
+    return text.replace('\\', '\\\\').replace('"', '\\"')
+
+
 def value_seems_translatable_scalar(value: str) -> bool:
     v, _ = _strip_quotes(value.strip())
     if not v:
@@ -327,9 +371,11 @@ def auto_translate_frontmatter_fields(
         raw_val = m.group(2)
         # Title/description/summary always translated
         if key in ALWAYS_TRANSLATE_FIELDS:
-            text, was_quoted = _strip_quotes(raw_val.strip())
+            text, _ = _strip_quotes(raw_val.strip())
             translated = translator.translate(text, target_lang)
-            updated[idx] = f'{key}: "{translated}"'
+            cleaned = sanitize_translated_scalar(translated)
+            safe = escape_for_yaml_double_quoted(cleaned)
+            updated[idx] = f'{key}: "{safe}"'
             continue
         # Skip non-user-facing keys
         if key in NON_USER_FACING_FIELDS:
@@ -338,7 +384,9 @@ def auto_translate_frontmatter_fields(
         if value_seems_translatable_scalar(raw_val):
             text, _ = _strip_quotes(raw_val.strip())
             translated = translator.translate(text, target_lang)
-            updated[idx] = f'{key}: "{translated}"'
+            cleaned = sanitize_translated_scalar(translated)
+            safe = escape_for_yaml_double_quoted(cleaned)
+            updated[idx] = f'{key}: "{safe}"'
     return updated
 
 
@@ -448,7 +496,9 @@ def translate_frontmatter_fields(
             continue
         idx, value = found
         translated_value = translator.translate(value, target_lang)
-        updated[idx] = f'{field}: "{translated_value}"'
+        cleaned = sanitize_translated_scalar(translated_value)
+        safe = escape_for_yaml_double_quoted(cleaned)
+        updated[idx] = f'{field}: "{safe}"'
     return updated
 
 
