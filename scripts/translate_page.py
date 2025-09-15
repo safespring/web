@@ -10,7 +10,7 @@ Behavior:
 - Detect target language from the path segment after `content/` (sv|en|nb|da).
 - Translate the Markdown body (preserves code blocks/inline code/URLs).
 - Translate user-facing frontmatter fields.
-- Ensure `ai: "true"` exists in frontmatter. Also set `language: "<lang>"`.
+- Ensure `ai: true` exists in frontmatter. Also set `language: "<lang>"`.
 - Write changes back in-place.
 
 Environment variables:
@@ -183,22 +183,24 @@ def build_frontmatter_from_lines(lines: List[str]) -> str:
 
 
 def ensure_key_value_in_frontmatter_lines(
-    lines: List[str], key: str, value: str
+    lines: List[str], key: str, value: str, quote: bool = True
 ) -> List[str]:
-    """Ensure YAML key exists with the given quoted value, updating or inserting.
+    """Ensure YAML key exists with the given value (optionally quoted), updating or inserting.
 
     We do minimal YAML handling: if a line starts with the key followed by ':', we replace
-    that line with key: "value". Otherwise, we insert a new line just after the start
-    (preserving overall simplicity). We do not attempt nested YAML.
+    that line with key: value (quoted when quote=True). Otherwise, we insert a new line just
+    after the start (preserving overall simplicity). We do not attempt nested YAML.
     """
     key_pattern = re.compile(rf"^\s*{re.escape(key)}\s*:\s*(.*)$")
     new_lines = list(lines)
     for idx, line in enumerate(new_lines):
         if key_pattern.match(line):
-            new_lines[idx] = f'{key}: "{value}"'
+            formatted_value = f'"{value}"' if quote else value
+            new_lines[idx] = f"{key}: {formatted_value}"
             return new_lines
     # Not found -> insert at top of frontmatter content
-    return [f'{key}: "{value}"'] + new_lines
+    formatted_value = f'"{value}"' if quote else value
+    return [f"{key}: {formatted_value}"] + new_lines
 
 
 def update_frontmatter_for_ai_and_language(
@@ -211,7 +213,7 @@ def update_frontmatter_for_ai_and_language(
         inner_lines = parse_frontmatter_lines(existing_frontmatter)
 
     # Ensure keys
-    inner_lines = ensure_key_value_in_frontmatter_lines(inner_lines, "ai", "true")
+    inner_lines = ensure_key_value_in_frontmatter_lines(inner_lines, "ai", "true", quote=False)
     inner_lines = ensure_key_value_in_frontmatter_lines(
         inner_lines, "language", target_lang
     )
@@ -504,7 +506,7 @@ def process_file(
 def build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         description=(
-            "Translate a Markdown page to the language implied by its path and ensure frontmatter ai: \"true\"."
+            "Translate a Markdown page to the language implied by its path and ensure frontmatter ai: true."
         )
     )
     p.add_argument(
