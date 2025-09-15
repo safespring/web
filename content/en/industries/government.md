@@ -14,7 +14,7 @@ cardtitle: "Government Agencies"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
 cardintro: ""
-ai: "true"
+ai: true
 TOC: "On this page"
 
 ---

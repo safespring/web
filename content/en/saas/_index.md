@@ -10,7 +10,7 @@ socialmedia: "safespring_social_01.jpg"
 saas: "yes"
 sidebarwhitepaper: "yes"
 nolist: "n"
-ai: "true"
+ai: true
 aliases:
   - /en/saas/
 ---

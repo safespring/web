@@ -6,7 +6,7 @@ draft: false
 intro: "Our deep expertise and our self-produced services, together with collaborations, make us very flexible. We know the Nordic market."
 background: ""
 slug: "collaborations-and-partners"
-ai: "true"
+ai: true
 ---
 
 {{< ingress >}}

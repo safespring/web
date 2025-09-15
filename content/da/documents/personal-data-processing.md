@@ -1,5 +1,5 @@
 ---
-ai: "true"
+ai: true
 language: "da"
 title: "Information om behandling af personoplysninger"
 date: 2024-01-05
@@ -12,6 +12,7 @@ aliases:
   - /dokument/personuppgiftshantering/
 slug: "personuppgiftshantering"
 ---
+
 _For information om, hvordan vi arbejder med databeskyttelsestiltag i vores tjenester, besøg i stedet [vores side om GDPR i skyen](/gdpr)._
 
 ### Vores virksomhed

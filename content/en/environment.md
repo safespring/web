@@ -7,7 +7,7 @@ intro: "Caring for the environment is a given for us. Our services are produced 
 background: "safespring-environment-2022.webp"
 socialmedia: "safespring-miljo.jpg"
 TOC: "On this page"
-ai: "true"
+ai: true
 slug: "environment-and-sustainability"
 ---
 

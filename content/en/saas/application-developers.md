@@ -13,7 +13,7 @@ cardtitle: "SaaS Companies"
 cardicon: "fa-solid fa-code"
 cardcolor: "#417DA5"
 cardintro: "Build and scale your SaaS solutions on a secure and flexible infrastructure with support for modern DevOps principles."
-ai: "true"
+ai: true
 ---
 
 {{< ingress >}}

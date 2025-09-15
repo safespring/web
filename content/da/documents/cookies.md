@@ -1,5 +1,5 @@
 ---
-ai: "true"
+ai: true
 language: "da"
 title: "Om webstedet"
 intro: "Safesprings websteder anvender cookies for at forbedre brugervenligheden. Statistik- og analyseværktøjer anvendes til at forbedre webstedet."
@@ -10,6 +10,7 @@ general: "yes"
 aliases:
   - /dokument/cookies/
 ---
+
 ## Om brugen af cookies
 
 Ifølge loven skal alle, der besøger et websted, informeres om såkaldte cookies.

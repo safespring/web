@@ -20,7 +20,7 @@ sidebarlink: ""
 darkmode: ""
 saas: ""
 sidebarwhitepaper: ""
-ai: "true"
+ai: true
 ---
 
 {{< ingress >}}

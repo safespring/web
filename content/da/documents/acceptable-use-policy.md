@@ -12,8 +12,9 @@ general: "yes"
 toc: ""
 aliases:
   - /dokument/acceptable-use-policy/
-ai: "true"
+ai: true
 ---
+
 {{< ingress >}}
 Safesprings "Acceptable Use Policy" angiver, hvad der anses for acceptabelt, og hvad der ikke er det, for at forhindre misbrug, krænkelser eller skader på brugere, leverandøren eller andre parter.
 {{< /ingress >}}

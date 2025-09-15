@@ -9,7 +9,7 @@ intro: "Safespring Kunskapshubb är en omfattande samling av Safesprings materia
 nosidebar: "none"
 fullwidth: "yes"
 nolist: "x"
-ai: "true"
+ai: true
 ---
 
 {{< latest-content-filter >}}

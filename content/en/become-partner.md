@@ -5,7 +5,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Great that you are interested in learning more about what a partnership with us entails. We are constantly looking for new and exciting ways to deliver our services!"
 background: ""
-ai: "true"
+ai: true
 ---
 
 Great that you are interested in learning more about what a partnership with us entails. We are constantly looking for new and exciting ways to deliver our services!

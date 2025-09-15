@@ -9,7 +9,7 @@ background: "/safespring-datacenter-map-background.svg"
 sidebarlinkname: "Our Security (pdf)"
 sidebarlinkurl: "/documents/safespring-datacenter-security.pdf"
 socialmedia: "safespring-datacenter.jpg"
-ai: "true"
+ai: true
 slug: "frequently-asked-questions"
 ---
 
