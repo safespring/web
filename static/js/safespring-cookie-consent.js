@@ -13,13 +13,6 @@ window.addEventListener('CookieConsentGiven', function (event) {
       tagmanager.id = "tagmanager-script";
       document.getElementsByTagName('head')[0].appendChild(tagmanager); 
     }
-
-    if (!document.getElementById("r2b2-script")) {
-      var r2b2 = document.createElement('script');
-      r2b2.src = "/js/r2b2.js";
-      r2b2.id = "r2b2-script";
-      document.getElementsByTagName('head')[0].appendChild(r2b2); 
-    }
   }
 }, false);
 
@@ -29,11 +22,9 @@ window.addEventListener('CookieConsentRevoked', function (event) {
   if (revokedStatistical) {
     var analytics = document.getElementById("analytics-script");
     var tagmanager = document.getElementById("tagmanager-script");
-    var r2b2 = document.getElementById("r2b2-script");
 
     if (analytics) analytics.parentNode.removeChild(analytics);
     if (tagmanager) tagmanager.parentNode.removeChild(tagmanager);
-    if (r2b2) r2b2.parentNode.removeChild(r2b2);
   }
 }, false);
 
