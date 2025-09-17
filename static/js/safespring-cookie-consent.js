@@ -1,50 +1,73 @@
+function addScript(id, src, attrs) {
+  if (document.getElementById(id)) return;
+  var s = document.createElement('script');
+  s.id = id;
+  s.src = src;
+  s.async = true;
+  if (attrs && typeof attrs === 'object') {
+    Object.keys(attrs).forEach(function (k) { s.setAttribute(k, attrs[k]); });
+  }
+  document.head.appendChild(s);
+}
+
+function removeScript(id) {
+  var el = document.getElementById(id);
+  if (el && el.parentNode) el.parentNode.removeChild(el);
+}
+
+var CATEGORY_SCRIPTS = {
+  statistical: [
+    { id: 'analytics-script',   src: '/js/matomo.js' },
+    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js' },
+    { id: 'r2b2-script',        src: '/js/r2b2.js' }
+  ],
+  marketing: [
+    { id: 'upsales-script',     src: 'https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js' }
+  ]
+};
+
+function syncCategory(category) {
+  var hasConsent = false;
+  try {
+    hasConsent = !!cookieTractor && typeof cookieTractor.consentGivenFor === 'function'
+      ? cookieTractor.consentGivenFor(category)
+      : false;
+  } catch (e) {
+    hasConsent = false;
+  }
+
+  var list = CATEGORY_SCRIPTS[category] || [];
+  if (hasConsent) {
+    list.forEach(function (item) { addScript(item.id, item.src, item.attrs); });
+  } else {
+    list.forEach(function (item) { removeScript(item.id); });
+  }
+}
+
+(function initConsentSync() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      syncCategory('statistical');
+      syncCategory('marketing');
+    });
+  } else {
+    syncCategory('statistical');
+    syncCategory('marketing');
+  }
+})();
+
 window.addEventListener('CookieConsentGiven', function (event) {
-  if (cookieTractor.consentGivenFor('statistical')) {
-    if (!document.getElementById("analytics-script")) {
-      var analytics = document.createElement('script');
-      analytics.src = "/js/matomo.js";
-      analytics.id = "analytics-script";
-      document.getElementsByTagName('head')[0].appendChild(analytics); 
-    }
-
-    if (!document.getElementById("tagmanager-script")) {
-      var tagmanager = document.createElement('script');
-      tagmanager.src = "/js/matomo-tagmanager.js";
-      tagmanager.id = "tagmanager-script";
-      document.getElementsByTagName('head')[0].appendChild(tagmanager); 
-    }
-  }
+  // If one category is granted we can resync both cheaply
+  syncCategory('statistical');
+  syncCategory('marketing');
 }, false);
 
-// Radera statistiska script
 window.addEventListener('CookieConsentRevoked', function (event) {
-  var revokedStatistical = event.detail.consents.indexOf('statistical') > -1;
-  if (revokedStatistical) {
-    var analytics = document.getElementById("analytics-script");
-    var tagmanager = document.getElementById("tagmanager-script");
-
-    if (analytics) analytics.parentNode.removeChild(analytics);
-    if (tagmanager) tagmanager.parentNode.removeChild(tagmanager);
+  var revoked = Array.isArray(event?.detail?.consents) ? event.detail.consents : [];
+  if (revoked.indexOf('statistical') > -1) {
+    (CATEGORY_SCRIPTS.statistical || []).forEach(function (item) { removeScript(item.id); });
   }
-}, false);
-
-// Lägg till marknadsföringsscript
-window.addEventListener('CookieConsentGiven', function (event) {
-  if (cookieTractor.consentGivenFor('marketing')) {
-    if (!document.getElementById("upsales-script")) {
-      var upsales = document.createElement('script');
-      upsales.src = "https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js";
-      upsales.id = "upsales-script";
-      document.getElementsByTagName('head')[0].appendChild(upsales);
-    }
-  }
-}, false);
-
-// Radera marknadsföringsscript
-window.addEventListener('CookieConsentRevoked', function (event) {
-  var revokedMarketing = event.detail.consents.indexOf('marketing') > -1;
-  if (revokedMarketing) {
-    var upsales = document.getElementById('upsales-script');
-    upsales.parentNode.removeChild(upsales);
+  if (revoked.indexOf('marketing') > -1) {
+    (CATEGORY_SCRIPTS.marketing || []).forEach(function (item) { removeScript(item.id); });
   }
 }, false);
