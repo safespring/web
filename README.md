@@ -84,3 +84,72 @@ Example:
 ```
 
 This would look up the translation for the key "knowledgehub.read_post" in the i18n files (like `i18n/en.toml`, `i18n/sv.toml`, etc.) and return the appropriate translation based on the current language.
+
+### AI Translating content pages (quick start)
+
+- **What these scripts do**
+
+  - `scripts/batch_translate_missing.py`: Finds pages missing in some languages, copies from a preferred source language, then auto-translates them.
+  - `scripts/translate_page.py`: Translates a single Markdown page in place, preserving code blocks and URLs. Ensures frontmatter has `ai: true` and the correct `language`.
+
+- **Prerequisites**
+  - Python 3 installed.
+  - An OpenAI API key available to the scripts.
+  - From the repo root, create a `.env.local` (or `.env`) with your key:
+    ```bash
+    echo 'OPENAI_API_KEY="sk-..."' >> .env.local
+    ```
+  - Supported languages: `sv`, `en`, `nb`, `da`.
+
+### Batch translate missing pages
+
+- **Plan what will happen (no changes)**
+
+  ```bash
+  python3 scripts/batch_translate_missing.py --plan-only
+  ```
+
+- **Dry run a small sample (prints actions only)**
+
+  ```bash
+  python3 scripts/batch_translate_missing.py --dry-run --limit 5
+  ```
+
+- **Run for real (creates files and translates)**
+
+  ```bash
+  python3 scripts/batch_translate_missing.py --workers 6
+  ```
+
+- **Useful options**
+  - `--langs sv,en,nb,da`: Which languages to consider.
+  - `--prefer-source en,sv,nb,da`: Source language order when copying.
+  - `--limit 20`: Cap how many jobs to run.
+  - `--verbose`: Extra logs.
+  - `--content-root content`: Change content directory if needed.
+
+What it does: scans `content/<lang>/`, builds the union of page paths, creates any missing language files by copying from the first available preferred source, then calls `scripts/translate_page.py` to translate them.
+
+Tip: Commit your work before running (the script overwrites newly created target files without backup).
+
+### Translate a single page
+
+- **Basic usage**
+
+  ```bash
+  ./scripts/translate_page.py content/da/path/to/page.md
+  ```
+
+  The language is inferred from the path segment after `content/` (e.g., `da`).
+
+- **Optional flags**
+  - `--target-lang da`: Override detected language.
+  - `--model gpt-5`: Model name (default is `gpt-5`).
+
+What it does: updates/creates frontmatter with `ai: true` and `language: "<lang>"`, translates user-facing frontmatter fields (`title`, `description`, `summary`, etc.), and translates the Markdown body while preserving fenced code blocks, inline code, and link targets.
+
+### Common issues
+
+- **Missing API key**: Set `OPENAI_API_KEY` in `.env.local` or your environment.
+- **Unsupported path**: Ensure the file lives under `content/<sv|en|nb|da>/...`.
+- **Costs**: Translations call OpenAI and may incur usage charges.
