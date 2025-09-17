@@ -1,0 +1,56 @@
+---
+ai: true
+title: "Hvad siger myndighedsrapporterne om skytjenester?"
+episode: "4"
+series: "true"
+thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-4.jpg"
+card: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-4.jpg"
+language: "da"
+date: "2021-12-16"
+publishDate: "2021-11-29"
+draft: false
+tags: ["Svenska"]
+eventbild: "safespring_background_39.jpg"
+socialmediabild: "safespring_social_41.gif"
+intro: "Hvordan skal man tolke de forskellige budskaber fra leverandører, og hvilke praktiske metoder kan virksomheder allerede nu begynde at arbejde med uden at skulle skifte skytjeneste helt og holdent?"
+partner: "it-sakerhetsbolaget.png"
+audience: "SaaS"
+sidebarlinkurl: ""
+sidebarlinkname: ""
+videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/gdpr-fireside-chat-episode-4/master.m3u8"
+chapters:
+  - title: "Intro"
+    time: 0
+    timeFormatted: "00:00"
+  - title: "Trender i rapporterna"
+    time: 249
+    timeFormatted: "04:09"
+  - title: "eSams rapport"
+    time: 350
+    timeFormatted: "05:50"
+  - title: "It-driftsutredningen"
+    time: 970
+    timeFormatted: "16:10"
+  - title: "Gaia-X"
+    time: 2372
+    timeFormatted: "39:32"
+  - title: "Trenderna 2022"
+    time: 2587
+    timeFormatted: "43:07"
+section: "Webinar"
+aliases:
+  - /webinar/gdpr-fireside-chat/forth-fireside-chat-it-sakerhetsbolaget/
+  - /webinar/forth-fireside-chat-it-sakerhetsbolaget/
+  - /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-4/
+---
+{{< ingress>}}
+Hvad siger IT-driftsutredningen, eSam og Skatteverket om cloudtjenester? Vær med og diskuter med os!
+{{< /ingress >}}
+
+I slutningen af året kommer tre omfattende rapporter om cloudtjenester. Vi gennemgår, hvad de egentlig siger, og hvordan det påvirker det eksisterende og kommende arbejde. Hvordan ser tendenserne ud for 2022?
+
+1. eSams rapport om tjenester baseret på åben kildekode.
+2. IT-driftsutredningen
+3. Skatteverkets analyse af Gaia-X
+
+Stil dine spørgsmål direkte til Patrik Jonasson (databeskyttelsesrådgiver) og Gabriel Paues (Senior Cloud Architect).
