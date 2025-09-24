@@ -9,10 +9,11 @@ background: ""
 sidebarlinkname: "Opprett en ny konto"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
-noindex: "Please paste the Markdown you want translated to Norwegian Bokmål. I’ll preserve the Markdown structure and leave code blocks, inline code, URLs, slugs, file names, and frontmatter keys unchanged."
+noindex: "yes"
 aliases:
   - /onboarding/success/
 ---
+
 ## Her er noen trinn for å komme i gang
 
 1. [Utforsk våre demovideoer](/demo/) – Få oversikt over innstillingene og tjenestene dine.

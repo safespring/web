@@ -7,7 +7,7 @@ draft: false
 intro: "Safesprings løsninger inden for hybridinfrastruktur gør det muligt for dig at kombinere kraften i skyen med din egen 'on-prem' eller administreret infrastruktur."
 background: ""
 socialmedia: "safespring-hybrid-cloud.jpg"
-form: "ja"
+form: "yes"
 sidebarimage: "safespring-daniel.webp"
 sidebartext: "Vil du tale om tjenesten? Jeg hedder Daniel Melin, kontakt mig endelig, hvis du har spørgsmål."
 sidebarphone: "+46855107370"
@@ -17,6 +17,7 @@ aliases:
   - /tjanster/hybrid-cloud/
   - /tjanster/hybrid-infrastruktur/
 ---
+
 <div class="ingress"><p>At skulle investere i infrastruktur, som kun er nødvendig ved trafikspidser, nogle få gange om året, kan blive en dyr affære. Samtidig er der gode grunde til selv at bevare kontrollen over de ydelser, man som virksomhed tilbyder sine kunder.</p></div>
 
 <a href="#testa-safespring" id="text-button">Prøv Safespring</a>

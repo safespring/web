@@ -23,14 +23,14 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-1.webp"
 subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-1.vtt"
-srclang: "sv"
-label: "Svensk"
+    srclang: "sv"
+    label: "Svenska"
   - src: "/subtitles/demo-backup/vtt-demo-backup-1-en.vtt"
-srclang: "Send venligst den Markdown-tekst, du vil have oversat til dansk."
-label: "Engelsk"
+    srclang: "en"
+    label: "English"
   - src: "/subtitles/demo-backup/vtt-demo-backup-1-dk.vtt"
-srclang: "dk"
-label: "Dansk"
+    srclang: "dk"
+    label: "Dansk"
 chaptersTitle: "Afsnit"
 chapters:
   - title: "Vad skiljer oss åt?"
@@ -60,6 +60,7 @@ chapters:
 aliases:
   - /demo/backup/backup-overview/
 ---
+
 {{< ingress >}}
 Vi gennemgår Safespring Backup i denne oversigtsvideo – en demo, der viser, hvordan vores banebrydende backup-som-tjeneste kombinerer automatiske offsite-løsninger, selvbetjening og fuld API-integration.
 {{< /ingress >}}

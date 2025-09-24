@@ -7,13 +7,14 @@ intro: "Safespring tilbyder cloud-tjenester med fuldstændig integritet. Vores d
 background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
-saas: "Please provide the Markdown content you’d like me to translate into Danish."
-sidebarwhitepaper: "Please paste the Markdown you’d like translated to Danish. I’ll preserve the Markdown structure, won’t translate code blocks, inline code, URLs, slugs, file names, or frontmatter keys, and will translate link texts while keeping link targets unchanged."
+saas: "yes"
+sidebarwhitepaper: "yes"
 nolist: "n"
 ai: true
 aliases:
   - /en/saas/
 ---
+
 ![Safespring-pyramiden](/img/graphics/safespring-pyramid-2025.svg)
 
 {{< ingress >}}

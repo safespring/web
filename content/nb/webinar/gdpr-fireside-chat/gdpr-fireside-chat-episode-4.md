@@ -37,12 +37,13 @@ chapters:
   - title: "Trenderna 2022"
     time: 2587
     timeFormatted: "43:07"
-section: "Nettseminar"
+section: "Webinar"
 aliases:
   - /webinar/gdpr-fireside-chat/forth-fireside-chat-it-sakerhetsbolaget/
   - /webinar/forth-fireside-chat-it-sakerhetsbolaget/
   - /webinar/gdpr-fireside-chat/gdpr-fireside-chat-episode-4/
 ---
+
 {{< ingress>}}
 Hva sier IT-driftsutredningen, eSam og Skatteverket om skytjenester? Bli med og diskuter med oss!
 {{< /ingress >}}

@@ -9,10 +9,11 @@ background: ""
 sidebarlinkname: "Skapa ett annat konto"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
-noindex: "ja"
+noindex: "yes"
 aliases:
   - /onboarding/success/
 ---
+
 ## Här är några steg för att komma igång
 
 1. [Utforska våra demovideor](/demo/) – Få en överblick över dina inställningar och tjänster.

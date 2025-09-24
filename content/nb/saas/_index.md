@@ -7,13 +7,14 @@ intro: "Safespring tilbyr skytjenester med full integritet. Våre datasentre, so
 background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
-saas: "Send meg Markdown-teksten du vil ha oversatt til norsk bokmål."
-sidebarwhitepaper: "ja"
+saas: "yes"
+sidebarwhitepaper: "yes"
 nolist: "n"
 ai: true
 aliases:
   - /en/saas/
 ---
+
 ![Safespring-pyramiden](/img/graphics/safespring-pyramid-2025.svg)
 
 {{< ingress >}}

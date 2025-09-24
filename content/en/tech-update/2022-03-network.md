@@ -1,8 +1,7 @@
 ---
 title: "The Safespring network model explained"
 date: "2022-03-24"
-intro: "People are puzzled by the network stack of the Safespring OpenStack
-compute platform. Let's check it out and do some explanation."
+intro: "People are puzzled by the network stack of the Safespring OpenStack compute platform. Let's check it out and do some explanation."
 draft: false
 tags: ["English"]
 showthedate: true
@@ -14,8 +13,8 @@ author: "Jarle Bjørgeengen"
 language: "en"
 toc: "Table of contents"
 aliases:
-    - /blogg/2022-03-network
-    - /blogg/2022/2022-03-network/
+  - /blogg/2022-03-network
+  - /blogg/2022/2022-03-network/
 ---
 
 {{< ingress >}}

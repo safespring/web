@@ -23,14 +23,14 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-1.webp"
 subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-1.vtt"
-srclang: "Skicka Markdown-innehållet du vill översätta till engelska. Jag bevarar strukturen och översätter inte kodblock, inline-kod, URL:er, slugs, filnamn eller frontmatter-nycklar; länktexter översätts men målen behålls."
-label: "Swedish"
+    srclang: "sv"
+    label: "Svenska"
   - src: "/subtitles/demo-backup/vtt-demo-backup-1-en.vtt"
-srclang: "Please provide the Markdown content you’d like me to translate to English."
-label: "English"
+    srclang: "en"
+    label: "English"
   - src: "/subtitles/demo-backup/vtt-demo-backup-1-dk.vtt"
-srclang: "dk"
-label: "Please paste the Danish Markdown you’d like translated to English. I’ll preserve the Markdown structure, keep code blocks, inline code, URLs, slugs, file names, and frontmatter keys unchanged, and translate link texts while keeping their targets."
+    srclang: "dk"
+    label: "Dansk"
 chaptersTitle: "Section"
 chapters:
   - title: "Vad skiljer oss åt?"
@@ -60,6 +60,7 @@ chapters:
 aliases:
   - /demo/backup/backup-overview/
 ---
+
 {{< ingress >}}
 We walk through Safespring Backup in this overview video—a demo showing how our cutting-edge backup-as-a-service combines automatic off-site solutions, self-service, and full API integration.
 {{< /ingress >}}

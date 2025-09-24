@@ -9,10 +9,11 @@ background: ""
 sidebarlinkname: "Opret endnu en konto"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
-noindex: "ja"
+noindex: "yes"
 aliases:
   - /onboarding/success/
 ---
+
 ## Her er et par trin, der hjælper dig i gang
 
 1. [Udforsk vores demovideoer](/demo/) – Få et overblik over dine indstillinger og tjenester.

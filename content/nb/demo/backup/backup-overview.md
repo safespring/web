@@ -23,14 +23,14 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-1.webp"
 subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-1.vtt"
-srclang: "sv"
-label: "Svensk"
+    srclang: "sv"
+    label: "Svenska"
   - src: "/subtitles/demo-backup/vtt-demo-backup-1-en.vtt"
-srclang: "Vennligst lim inn Markdown-innholdet du vil ha oversatt fra engelsk til norsk bokmål. Jeg bevarer Markdown-strukturen, oversetter ikke kodeblokker, inline-kode, URL-er, slugs, filnavn eller frontmatter-nøkler, og jeg oversetter lenketekster men lar måladressene være uendret."
-label: "Engelsk"
+    srclang: "en"
+    label: "English"
   - src: "/subtitles/demo-backup/vtt-demo-backup-1-dk.vtt"
-srclang: "dk"
-label: "Klart. Lim inn Markdown-teksten på dansk som du vil ha oversatt til norsk bokmål. Jeg beholder strukturen, oversetter ikke kodeblokker, inline-kode, URL-er, slugs, filnavn eller frontmatter-nøkler, og oversetter bare lenketekster (mål-URLer forblir uendret)."
+    srclang: "dk"
+    label: "Dansk"
 chaptersTitle: "Avsnitt"
 chapters:
   - title: "Vad skiljer oss åt?"
@@ -60,6 +60,7 @@ chapters:
 aliases:
   - /demo/backup/backup-overview/
 ---
+
 {{< ingress >}}
 Vi går gjennom Safespring Backup i denne oversiktsvideoen – en demo som viser hvordan vår banebrytende backup-som-tjeneste kombinerer automatiske offsite-løsninger, selvbetjening og full API-integrasjon.
 {{< /ingress >}}

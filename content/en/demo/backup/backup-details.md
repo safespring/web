@@ -23,8 +23,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-2.webp"
 subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-2.vtt"
-srclang: "Please paste the Swedish Markdown you want translated to English. I’ll preserve the Markdown structure and won’t translate code blocks, inline code, URLs, slugs, file names, or frontmatter keys; link texts will be translated while keeping their targets unchanged."
-label: "Swedish"
+    srclang: "sv"
+    label: "Svenska"
 chaptersTitle: "Section"
 chapters:
   - title: "Fördelar med off-site"
@@ -45,6 +45,7 @@ chapters:
 aliases:
   - /demo/backup/backup-details/
 ---
+
 {{< ingress >}}
 In this technical deep dive, we examine Safespring Backup, focusing on how automated recovery testing, API integration, and modern infrastructure ensure your data is protected, available, and cost-effective.
 {{< /ingress >}}

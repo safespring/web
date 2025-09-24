@@ -2,8 +2,7 @@
 ai: true
 title: "Safesprings nettverksmodell forklart"
 date: "2022-03-24"
-intro: "\"Folk er forvirret over nettverksstakken i Safespring OpenStack"
-compute platform. Let's check it out and do some explanation."
+intro: "Folk er forvirret over nettverksstakken til Safesprings OpenStack-beregningsplattform. La oss se nærmere på den og forklare."
 draft: false
 tags: ["English"]
 showthedate: true
@@ -15,9 +14,10 @@ author: "Jarle Bjørgeengen"
 language: "nb"
 toc: "Innholdsfortegnelse"
 aliases:
-    - /blogg/2022-03-network
-    - /blogg/2022/2022-03-network/
+  - /blogg/2022-03-network
+  - /blogg/2022/2022-03-network/
 ---
+
 {{< ingress >}}
 Dette blogginnlegget forklarer de ulike aspektene ved Safespring-nettverksstakken fra et brukerperspektiv.
 {{< /ingress >}}

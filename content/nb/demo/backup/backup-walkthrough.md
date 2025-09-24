@@ -17,7 +17,7 @@ sidebarlinkname: "Bestill videosamtale"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
-nosidebar: "Vennligst lim inn Markdown-teksten du vil at jeg skal oversette til norsk bokmål."
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/demo-backup-3/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/demo-backup-3.webp"
@@ -42,13 +42,15 @@ chapters:
     time: 350
     timeFormatted: "5:50"
 ---
+
 {{< ingress >}}
-Vi går gjennom Safespring Backup i denne hands-on-videoen – en demo som viser hvordan vår backup som tjeneste kombinerer automatiserte offsite-løsninger, selvbetjening og full API-integrasjon. 
+Vi går gjennom Safespring Backup i denne hands-on-videoen – en demo som viser hvordan vår backup som tjeneste kombinerer automatiserte offsite-løsninger, selvbetjening og full API-integrasjon.
 {{< /ingress >}}
 
 I videoen forklarer Gabriel hvordan du i praksis går frem for å opprette sikkerhetskopier, sette opp hierarkier og kontrollere helsen til dine beskyttede data.
 
 ### Book et møte med Gabriel
+
 Book et videomøte og still spørsmålene dine direkte til Gabriel! Du velger enkelt et tidspunkt via lenken nedenfor eller sender en e-post til hello@safespring.com
 
 {{< localbutton text="Book videosamtale" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}

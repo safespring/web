@@ -7,7 +7,7 @@ draft: false
 intro: "Safespring’s hybrid infrastructure solutions enable you to combine the power of the cloud with your own “on-prem” or managed infrastructure."
 background: ""
 socialmedia: "safespring-hybrid-cloud.jpg"
-form: "Please paste the Markdown you’d like translated to English. I’ll keep code blocks, inline code, URLs, slugs, file names, and frontmatter keys unchanged, and translate link texts while keeping their targets."
+form: "yes"
 sidebarimage: "safespring-daniel.webp"
 sidebartext: "Would you like to discuss the position? My name is Daniel Melin; feel free to contact me if you have any questions."
 sidebarphone: "+46855107370"
@@ -17,6 +17,7 @@ aliases:
   - /tjanster/hybrid-cloud/
   - /tjanster/hybrid-infrastruktur/
 ---
+
 <div class="ingress"><p>Having to invest in infrastructure that’s only needed during traffic spikes a few times a year can get expensive. At the same time, there are good reasons to keep control of the services your company offers its customers.</p></div>
 
 <a href="#testa-safespring" id="text-button">Try Safespring</a>

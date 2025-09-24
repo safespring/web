@@ -7,11 +7,12 @@ draft: false
 intro: "Safespring har stor ekspertise inden for cloudtjenester og cloudapplikationer. Vi har også et netværk af partnere, der kan hjælpe dig i gang."
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
-form: "ja"
+form: "yes"
 aliases:
   - /konsulttjanster/
   - /tjanster/konsulttjanster/
 ---
+
 <div class="ingress"><p>At skabe sikre og velfungerende cloudtjenester med open source kræver ekspertise på højt niveau, fordi mange dele skal sættes sammen. Vi hos Safespring har den kompetence og kan derfor tilbyde avancerede konsulentydelser for at hjælpe jeres virksomhed med jeres cloudstrategi.</p></div>
 
 Vi hos Safespring brænder for at skabe værdi omkring de tjenester, vi leverer. Vi deler derfor gerne vores viden om, hvordan I bedst bruger vores tjenester. Det gælder alt fra kapacitetsplanlægning til fuldt udviklede strategier for, hvordan I skal bygge jeres løsning, så den bliver skalerbar og udnytter kraften i vores kapacitetsydelser maksimalt.

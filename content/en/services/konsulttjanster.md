@@ -7,11 +7,12 @@ draft: false
 intro: "Safespring has extensive expertise in cloud services and cloud applications. We also have a network of partners who can help you get started."
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
-form: "Please paste the Markdown you want translated to English."
+form: "yes"
 aliases:
   - /konsulttjanster/
   - /tjanster/konsulttjanster/
 ---
+
 <div class="ingress"><p>Creating secure and well-functioning cloud services with open source requires high-level expertise, as many components need to be integrated. At Safespring, we have that expertise and can therefore offer advanced consulting services to help your company with its cloud strategy.</p></div>
 
 At Safespring, we are passionate about creating value around the services we deliver. We are happy to share our expertise on how to make the best use of our services. This covers everything from capacity planning to comprehensive strategies for building your solution so that it scales and fully leverages the power of our capacity services.

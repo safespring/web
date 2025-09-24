@@ -23,8 +23,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-2.webp"
 subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-2.vtt"
-srclang: "sv"
-label: "Svensk"
+    srclang: "sv"
+    label: "Svenska"
 chaptersTitle: "Afsnit"
 chapters:
   - title: "Fördelar med off-site"
@@ -45,6 +45,7 @@ chapters:
 aliases:
   - /demo/backup/backup-details/
 ---
+
 {{< ingress >}}
 I denne tekniske dybdegennemgang gennemgår vi Safespring Backup med fokus på, hvordan automatiserede gendannelsestests, API-integration og moderne infrastruktur sikrer, at dine data er beskyttede, tilgængelige og omkostningseffektive.
 {{< /ingress >}}

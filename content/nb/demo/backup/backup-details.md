@@ -23,8 +23,8 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: "/img/webinar/thumbnails/demo-backup-2.webp"
 subtitles:
   - src: "/subtitles/demo-backup/vtt-demo-backup-2.vtt"
-srclang: "Hvilken Markdown vil du oversette fra svensk? Lim den inn her, så oversetter jeg til bokmål. Jeg beholder strukturen, oversetter lenketekster, men lar lenkemål, kodeblokker, inline-kode, URL-er, slugs, filnavn og frontmatter-nøkler være uendret."
-label: "svensk"
+    srclang: "sv"
+    label: "Svenska"
 chaptersTitle: "Avsnitt"
 chapters:
   - title: "Fördelar med off-site"
@@ -45,6 +45,7 @@ chapters:
 aliases:
   - /demo/backup/backup-details/
 ---
+
 {{< ingress >}}
 I dette tekniske dypdykket ser vi nærmere på Safespring Backup, med fokus på hvordan automatiserte gjenopprettingstester, API-integrasjon og moderne infrastruktur sørger for at dataene dine er beskyttet, tilgjengelige og kostnadseffektive.
 {{< /ingress >}}

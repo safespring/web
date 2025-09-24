@@ -7,11 +7,12 @@ draft: false
 intro: "Safespring har stor kompetanse innen skytjenester og skyapplikasjoner. Vi har også et nettverk av partnere som kan hjelpe deg med å komme i gang."
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
-form: "Kan du sende Markdown-teksten du vil ha oversatt til norsk bokmål?"
+form: "yes"
 aliases:
   - /konsulttjanster/
   - /tjanster/konsulttjanster/
 ---
+
 <div class="ingress"><p>Å skape sikre og velfungerende skytjenester med åpen kildekode krever høykompetent ekspertise, fordi mange deler skal settes sammen. Vi i Safespring har den kompetansen og kan dermed tilby avanserte konsulenttjenester for å hjelpe virksomheten deres med skystrategien.</p></div>
 
 Vi i Safespring brenner for å skape verdi rundt tjenestene vi leverer. Vi deler derfor gjerne vår kompetanse om hvordan dere best kan bruke tjenestene våre. Dette gjelder alt fra kapasitetsplanlegging til fullverdige strategier for hvordan dere skal bygge løsningen deres slik at den blir skalerbar og utnytter kraften i våre kapasitetstjenester maksimalt.
