@@ -263,7 +263,12 @@ def _looks_like_date(s: str) -> bool:
 
 
 def _looks_like_url_or_path(s: str) -> bool:
-    return s.startswith(("http://", "https://", "mailto:", "tel:")) or s.startswith("/")
+    # Treat absolute/relative URLs, mail/tel links, and hash anchors as non-translatable
+    return (
+        s.startswith(("http://", "https://", "mailto:", "tel:"))
+        or s.startswith("/")
+        or s.startswith("#")
+    )
 
 
 def _looks_like_file_ref(s: str) -> bool:
@@ -278,6 +283,8 @@ NON_USER_FACING_FIELDS = {
     "draft",
     "slug",
     "url",
+    # Content taxonomy/section-like fields
+    "section",
     "aliases",
     "categories",
     "tags",
@@ -293,6 +300,28 @@ NON_USER_FACING_FIELDS = {
     "cover",
     "thumbnail",
     "icon",
+    # Media/subtitles and timing fields
+    "src",
+    "srclang",
+    "videoURL",
+    "time",
+    "timeFormatted",
+    # Author and sidebar meta
+    "author_image",
+    "sidebarlinkurl",
+    "sidebarlinkurl2",
+}
+
+# Fields stored as yes/no flags that should be normalized and never translated
+YES_NO_FIELDS = {
+    "form",
+    "noindex",
+    "dontshow",
+    "logobanner",
+    "general",
+    # Common site toggles
+    "saas",
+    "sidebarwhitepaper",
 }
 
 
@@ -349,6 +378,9 @@ def escape_for_yaml_double_quoted(text: str) -> str:
 def value_seems_translatable_scalar(value: str) -> bool:
     v, _ = _strip_quotes(value.strip())
     if not v:
+        return False
+    # Skip short tokens or control-like values
+    if len(v) <= 3 and not re.search(r"\s", v):
         return False
     if _looks_like_boolean(v) or _looks_like_number(v) or _looks_like_date(v):
         return False
@@ -425,7 +457,12 @@ def build_translation_prompt(target_lang: str) -> str:
         "You are a professional translator. Translate the provided Markdown to "
         f"{target_lang.upper()} with natural, fluent style. Preserve Markdown structure, "
         "do NOT translate code blocks, inline code, URLs, slugs, file names, or frontmatter keys. "
-        "Translate link texts but keep link targets unchanged. Return only the translated text."
+        "Translate link texts but keep link targets unchanged. "
+        "Do not translate short control values (yes/no/none), hash anchors like #form, or fields like srclang. "
+        "Return only the translated text."
+        "Do not ask for clarification or follow up questions."
+        "Your response will be used directly as is, so do not include any additional text or comments."
+        "If all else fails, return the original text."
     )
 
 
