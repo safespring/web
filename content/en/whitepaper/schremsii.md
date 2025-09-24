@@ -4,7 +4,7 @@ title: "The EU Court’s invalidation of the Privacy Shield"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Prerequisites and recommendations for the public sector and public-sector suppliers."
-form: "I don’t see any Markdown to translate. Please paste the Markdown you want translated to English, and I’ll preserve the structure, code blocks, and link targets."
+form: "no"
 sidebarlinkname: "Read live"
 sidebarlinkurl: "#down"
 language: "en"
@@ -13,6 +13,7 @@ socialmedia: "/safespring-schremsii.jpg"
 aliases:
   - /no/whitepaper/schremsii/
 ---
+
 ## Information guide on the EU Court of Justice’s invalidation of Privacy Shield
 
 {{< ingress >}}

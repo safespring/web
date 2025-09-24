@@ -4,15 +4,16 @@ title: "EU-domstolens ogiltigförklaring av Privacy Shield"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Förutsättningar och rekommendationer för offentlig sektor och leverantörer till offentlig sektor."
-form: "nej"
+form: "no"
 sidebarlinkname: "Läs direkt"
-sidebarlinkurl: "#ned"
+sidebarlinkurl: "#down"
 language: "sv"
 section: "Informationsguide"
 socialmedia: "/safespring-schremsii.jpg"
 aliases:
   - /no/whitepaper/schremsii/
 ---
+
 ## Informationsguide om EU-domstolens ogiltigförklaring av Privacy Shield
 
 {{< ingress >}}

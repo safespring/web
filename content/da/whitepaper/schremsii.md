@@ -4,15 +4,16 @@ title: "EU-Domstolens ugyldiggørelse af Privacy Shield"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Forudsætninger og anbefalinger for den offentlige sektor og leverandører til den offentlige sektor."
-form: "nej"
+form: "no"
 sidebarlinkname: "Læs direkte"
-sidebarlinkurl: "#ned"
+sidebarlinkurl: "#down"
 language: "da"
 section: "Informationsguide"
 socialmedia: "/safespring-schremsii.jpg"
 aliases:
   - /no/whitepaper/schremsii/
 ---
+
 ## Informationsguide om EU-Domstolens ugyldigkendelse af Privacy Shield
 
 {{< ingress >}}
