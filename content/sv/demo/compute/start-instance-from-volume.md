@@ -17,7 +17,7 @@ sidebarlinkname: "Schemalägg ett videosamtal"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
-nosidebar: "Skicka den Markdown-text du vill översätta till svenska."
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-episode-4-start-instance-from-volume/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/demo-episode-4.webp"
@@ -41,6 +41,7 @@ chapters:
 aliases:
   - /demo/compute/start-instance-from-volume/
 ---
+
 {{< ingress >}}
 Den här guiden går igenom hur du startar en OpenStack‑instans från en volym i stället för från standardavbildningen, vilket ger en mer robust lösning för datalagring.
 {{< /ingress >}}

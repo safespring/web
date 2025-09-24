@@ -17,7 +17,7 @@ sidebarlinkname: "Planlegg en videosamtale"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
-nosidebar: "ingen"
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-episode-4-start-instance-from-volume/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/demo-episode-4.webp"
@@ -41,6 +41,7 @@ chapters:
 aliases:
   - /demo/compute/start-instance-from-volume/
 ---
+
 {{< ingress >}}
 Denne veiledningen går i dybden på prosessen med å starte en OpenStack-instans ved å bruke et volum i stedet for den vanlige bildekilden, noe som gir en mer robust løsning for datalagring.
 {{< /ingress >}}

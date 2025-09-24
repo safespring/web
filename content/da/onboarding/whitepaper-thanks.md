@@ -6,12 +6,13 @@ draft: false
 socialmediabild: ""
 intro: "Whitepaperet, du netop har downloadet, bliver sendt til den e-mailadresse, du angav i formularen."
 background: ""
-dontshow: "ja"
+dontshow: "yes"
 section: "Bekræftelse"
 language: "da"
 aliases:
   - /en/whitepaper/thanks/
 ---
+
 {{% ingress %}}
 Vi sender hvidbogen, som du lige har downloadet, til den e-mailadresse, du angav i formularen.
 {{% /ingress %}}

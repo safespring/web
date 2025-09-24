@@ -12,7 +12,7 @@ socialmediabild: ""
 intro: "Utforsk de vanligste mytene rundt GDPR og skytjenester med innsikt fra Gabriel Paues hos Safespring og Lars Larsson hos Elastisys"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Bestill en demo"
-nosidebar: "ingen"
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-elastisys-4-myter-x-4-minuter/master.m3u8"
 thumbnail: ""
@@ -34,6 +34,7 @@ chapters:
 aliases:
 - /webinar/fyra-myter-om-kubernetes/
 ---
+
 ## Innsikt og ekspertanalyse i skytjenestenes verden
 
 {{< ingress >}}

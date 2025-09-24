@@ -6,12 +6,13 @@ draft: false
 socialmediabild: ""
 intro: "Whitepaperet du nettopp lastet ned sendes til e-postadressen du oppga i skjemaet."
 background: ""
-dontshow: "ja"
+dontshow: "yes"
 section: "Bekreftelse"
 language: "nb"
 aliases:
   - /en/whitepaper/thanks/
 ---
+
 {{% ingress %}}
 Vi sender whitepaperet du nettopp lastet ned til e-postadressen du oppga i skjemaet.
 {{% /ingress %}}

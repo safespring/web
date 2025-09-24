@@ -12,7 +12,7 @@ card: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_flexibel-sakerhet.jpg
 eventbild: ""
 socialmediabild: ""
 intro: "Hvordan applikationers fleksibilitet forbedrer sikkerheden."
-nosidebar: "ingen"
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring_ta-kontroll_2024_flexibel-sakerhet_final/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/safespring_ta-kontroll_2024_flexibel-sakerhet.jpg"
@@ -33,6 +33,7 @@ chapters:
 aliases:
   - /webinar/ta-kontroll/flexibel-sakerhet/
 ---
+
 ## Udforsk fleksibel sikkerhed
 
 {{< ingress >}}

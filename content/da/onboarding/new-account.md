@@ -6,14 +6,15 @@ draft: false
 intro: "Velkommen til Safesprings onboarding-side! Vi er rigtig glade for, at du er her, og vi glæder os til at hjælpe dig godt i gang med vores tjenester."
 background: ""
 sidebarlinkname: "Opret konto"
-sidebarlinkurl: "# formular"
+sidebarlinkurl: "#form"
 socialmedia: ""
-noindex: "Send venligst den Markdown-tekst, du vil have oversat til dansk. Jeg bevarer Markdown-strukturen, oversætter ikke kodeblokke, inline-kode, URL’er, slugs, filnavne eller frontmatter-nøgler. Linktekster oversættes, men linkmål forbliver uændrede."
+noindex: "yes"
 language: "da"
 aliases:
   - /create-account
   - /onboarding/new-account/
 ---
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css">

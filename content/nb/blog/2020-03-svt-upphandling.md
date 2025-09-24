@@ -10,12 +10,13 @@ showthedate: true
 card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"
 socialmediabild: "safespring_social_31.jpg"
-section: "blogg"
+section: "blog"
 author: "Fredric Wallsten"
 aliases:
   - /blogg/svt-upphandling
   - /blogg/2020/2020-03-svt-upphandling/
 ---
+
 {{< ingress >}}
 I dag blir Safespring en av fem leverandører som får mulighet til å levere skytjenester til Sveriges Television og Utbildningsradion gjennom rammeavtale.
 {{< /ingress >}}

@@ -8,7 +8,7 @@ date: 2024-10-09
 draft: false
 intro: "Oppdag Safesprings viktige rolle i European Open Science Cloud (EOSC)-initiativet, som tilbyr administrerte tjenester for databehandling, containere, dataoverføring og filsynkronisering for å støtte åpen vitenskap og forskningssamarbeid på tvers av Europa."
 background: "safespring-akademisk-sektor-2024.webp"
-logobanner: "Kan du sende Markdown-teksten du vil ha oversatt til norsk bokmål? Jeg beholder strukturen og oversetter ikke kodeblokker, inline-kode, URL-er, slugs, filnavn eller frontmatter-nøkler. Lenketekster oversettes, men lenkemålene forblir uendret."
+logobanner: "yes"
 toplogo: "eosc.svg"
 showthedate: false
 banner: "blue-hover-tech"
@@ -19,6 +19,7 @@ aliases:
   - /EOSC
   - /en/eosc/
 ---
+
 {{< ingress >}}
 Safespring er en stolt partner i European Open Science Cloud (EOSC) og leverer essensielle infrastrukturtjenester som legger til rette for sikkert og effektivt forskningssamarbeid i hele Europa.
 {{</ ingress >}}

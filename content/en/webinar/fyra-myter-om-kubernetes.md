@@ -12,7 +12,7 @@ socialmediabild: ""
 intro: "Explore the most common myths around GDPR and cloud services with insights from Gabriel Paues at Safespring and Lars Larsson at Elastisys"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Book a demo"
-nosidebar: "Please provide the Markdown content you’d like me to translate to English."
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-elastisys-4-myter-x-4-minuter/master.m3u8"
 thumbnail: ""
@@ -34,6 +34,7 @@ chapters:
 aliases:
 - /webinar/fyra-myter-om-kubernetes/
 ---
+
 ## Insights and Expert Analysis in the World of Cloud Services
 
 {{< ingress >}}

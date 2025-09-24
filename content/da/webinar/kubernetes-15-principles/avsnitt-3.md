@@ -16,7 +16,7 @@ sidebarlinkurl: "https://github.com/elastisys/kubernetes-principles-webinar-seri
 sidebarlinkname: "Til gitrepo"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Book en demo"
-nosidebar: "Angiv venligst den Markdown-tekst, du vil have oversat til dansk."
+nosidebar: "none"
 sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-elastisys_webcast_episode_3/master.m3u8"
 thumbnail: "/img/webinar/thumbnails/kubernetes-prinicples-series-avsnitt-3.jpeg"
@@ -37,6 +37,7 @@ chapters:
 aliases:
   - /webinar/kubernetes-15-principles/avsnitt-3/
 ---
+
 ## Afsnit 3
 
 ### Konfiguration, skalering og containerlivscyklus

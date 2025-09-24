@@ -7,7 +7,7 @@ card: "safespring_card_21.svg"
 draft: false
 intro: "Medtech-, EdTech- og andre moderne SaaS-virksomheder, der søger sikker, fleksibel og lovmedholdelig infrastruktur til at skalere og drifte deres applikationer."
 background: "safespring-kubernetes-background.svg"
-logobannersaas: "Indsæt venligst den Markdown, der skal oversættes til dansk."
+logobannersaas: "yes"
 banner: "blue-hover-webinar"
 cardtitle: "SaaS-virksomheder"
 cardicon: "fa-solid fa-code"
@@ -15,6 +15,7 @@ cardcolor: "#417DA5"
 cardintro: "Byg og skaler dine SaaS-løsninger på en sikker og fleksibel infrastruktur med understøttelse af moderne DevOps-principper."
 ai: true
 ---
+
 {{< ingress >}}
 Safespring er en alsidig platform og et ideelt fundament for SaaS-virksomheder, der vil kombinere skalerbarhed, sikkerhed og bæredygtighed. Ved at tilbyde en løsning uden leverandørbinding kan du trygt bygge, drifte og skalere dine applikationer med fuld kontrol over dine tjenester.
 {{< /ingress >}}

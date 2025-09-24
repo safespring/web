@@ -6,14 +6,15 @@ draft: false
 intro: "Velkommen til Safesprings onboarding-side! Vi er glade for å ha deg her og ser frem til å hjelpe deg i gang med tjenestene våre."
 background: ""
 sidebarlinkname: "Opprett konto"
-sidebarlinkurl: "#skjema"
+sidebarlinkurl: "#form"
 socialmedia: ""
-noindex: "ja"
+noindex: "yes"
 language: "nb"
 aliases:
   - /create-account
   - /onboarding/new-account/
 ---
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css">

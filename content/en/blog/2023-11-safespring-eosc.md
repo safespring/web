@@ -4,7 +4,7 @@ title: "Safespring: A key player in Europe’s new scientific cloud platform wor
 date: "2023-11-27"
 intro: "European Open Science Cloud (EOSC) is an initiative aimed at improving and revolutionizing scientific research collaboration in Europe."
 draft: false
-section: "Could you provide the Markdown content you want translated to English? If you meant just the word “blog,” it’s the same in English: “blog.”"
+section: "blog"
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_eosc.svg"
@@ -19,6 +19,7 @@ author_image: "happy"
 aliases:
 - /blogg/2023/2023-11-safespring-eosc/
 ---
+
 Safespring, as a subcontractor to Poznań Supercomputing and Networking Center (PSNC), is proud to announce our role on the winning team for the European Open Science Cloud (EOSC) procurement, an initiative aimed at enhancing and facilitating scientific research collaboration in Europe. The contract has an estimated value of approximately €32 million over three years.
 
 In this project, our task is to provide infrastructure and platform services to the European Open Science Cloud (EOSC), a platform that facilitates the sharing of scientific data and research resources across Europe. Safespring’s involvement spans two main areas:

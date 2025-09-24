@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "You're welcome! If you have more Markdown to translate, feel free to share it."
+title: "Thanks!"
 intro: "If you’d like to learn more, you can easily contact us at Safespring."
 date: "2020-09-25"
 draft: false
@@ -10,6 +10,7 @@ aliases:
   - /no/takk-di/
   - /no/takk/
 ---
+
 <div class="ingress"><p>Safespring has offices in Sweden and Norway, with its headquarters in Stockholm, Sweden.</p></div>
 
 The easiest way to reach us is by phone or email. If you have general questions, you can call us or send an email to our info address, and of course you are also welcome to contact any of our staff directly.

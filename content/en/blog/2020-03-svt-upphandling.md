@@ -10,12 +10,13 @@ showthedate: true
 card: "safespring_card_30.jpg"
 eventbild: "safespring_background_30.jpg"
 socialmediabild: "safespring_social_31.jpg"
-section: "Please provide the Markdown content you’d like translated to English."
+section: "blog"
 author: "Fredric Wallsten"
 aliases:
   - /blogg/svt-upphandling
   - /blogg/2020/2020-03-svt-upphandling/
 ---
+
 {{< ingress >}}
 Today, Safespring becomes one of five providers given the opportunity, via a framework agreement, to deliver cloud services to Sveriges Television (SVT) and Utbildningsradion (UR).
 {{< /ingress >}}

@@ -5,7 +5,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Compliant Kubernetes delivers all the benefits of a modern container platform, hosted in Nordic data centers, without you having to worry about operations."
 background: "safespring-compute.jpg"
-form: "Please provide the Markdown content you’d like me to translate into English."
+form: "yes"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
@@ -15,6 +15,7 @@ language: "en"
 aliases:
   - /no/whitepaper/compliant-kubernetes/
 ---
+
 {{% ingress %}}
 Organizations across all industries are adopting containers for greater agility, developer productivity, availability, and performance.
 {{% /ingress %}}

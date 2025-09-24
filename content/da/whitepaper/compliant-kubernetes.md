@@ -5,7 +5,7 @@ date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Compliant Kubernetes giver dig alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at du behøver at bekymre dig om driften."
 background: "safespring-compute.jpg"
-form: "ja"
+form: "yes"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
@@ -15,6 +15,7 @@ language: "da"
 aliases:
   - /no/whitepaper/compliant-kubernetes/
 ---
+
 {{% ingress %}}
 Organisationer på tværs af alle brancher tager containere i brug for at opnå større agilitet, højere udviklerproduktivitet samt øget tilgængelighed og ydeevne.
 {{% /ingress %}}
