@@ -8,11 +8,11 @@ Batch-translate missing Hugo content pages by orchestrating scripts/translate_pa
 - For each missing language file, copies from a preferred source language file and
   invokes the single-file translator to translate in-place
 - Runs translation jobs in parallel with a bounded worker pool
+- Defaults to plan-only mode for safety (use --execute to run translations)
 
 Example usage:
-    python3 scripts/batch_translate_missing.py --plan-only
-    python3 scripts/batch_translate_missing.py --workers 6
-    python3 scripts/batch_translate_missing.py --limit 5 --dry-run
+    python3 scripts/batch_translate_missing.py --execute --workers 6
+    python3 scripts/batch_translate_missing.py --execute --limit 5 --dry-run
 
 No external dependencies beyond the Python standard library.
 """
@@ -208,7 +208,7 @@ def print_plan(plan: Plan, *, verbose: bool) -> None:
         source_rel = rel_from_repo(job.source_abs)
         log(f"  CREATE {job.target_lang}: {target_rel}  <- from {job.source_lang}: {source_rel}")
     verbose_log(verbose, f"Total bases: {plan.total_bases}")
-    log(f"Missing before: {plan.missing_before}; to create: {len(plan.jobs)}")
+    log(f"Missing before: {plan.missing_before}; to create: {len(plan.jobs)}. Run with --execute to run translations.")
 
 
 def run_plan(
@@ -268,7 +268,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         description=(
             "Batch-translate missing Hugo pages by copying from a preferred source language "
-            "and invoking scripts/translate_page.py on each created file."
+            "and invoking scripts/translate_page.py on each created file. "
+            "Defaults to plan-only mode for safety."
         )
     )
     p.add_argument(
@@ -303,9 +304,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help="Limit the number of translation jobs executed (useful for testing).",
     )
     p.add_argument(
-        "--plan-only",
+        "--execute",
         action="store_true",
-        help="Compute and print the plan without executing any jobs.",
+        help="Execute the translation plan (default: \"plan-only\" mode for safety).",
     )
     p.add_argument(
         "--verbose",
@@ -352,8 +353,8 @@ def main(argv: List[str]) -> int:
 
     print_plan(plan, verbose=args.verbose)
 
-    if args.plan_only:
-        # Summary only, no execution
+    if not args.execute:
+        # Summary only, no execution (default plan-only mode)
         print(
             f"Summary: bases={plan.total_bases}, missing_before={plan.missing_before}, created=0, translated=0, skipped=0, failures=0"
         )
