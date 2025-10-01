@@ -8,7 +8,7 @@ showthedate: true
 card: "safespring-puzzle.webp"
 eventbild: ""
 socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
-language: "Se"
+language: "sv"
 section: "blogg"
 author: "Daniel Melin"
 ---
