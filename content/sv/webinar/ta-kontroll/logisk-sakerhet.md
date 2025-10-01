@@ -39,7 +39,7 @@ aliases:
 Detta avsnitt ger en djupgående förståelse för hur företag kan använda logisk säkerhet för att stärka sin totala säkerhetsstruktur, vilket är avgörande för att skydda känslig information i en alltmer osäker digital miljö.
 {{< /ingress >}}
 
-I detta avsnitt diskuterar Amelia Andersdotter, ansvarig för risk och regelefterlevnad på Safespring, och Gabriel Paues, molnarkitekt, konceptet logisk säkerhet och dess betydelse för datadrivna företag. De utforskar hur logiska säkerhetsåtgärder kan komplettera fysiska säkerhetsåtgärder för att erbjuda ett omfattande skydd.
+I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterlevnads­rådgivare, och Gabriel Paues, molnarkitekt, konceptet logisk säkerhet och dess betydelse för datadrivna företag. De utforskar hur logiska säkerhetsåtgärder kan komplettera fysiska säkerhetsåtgärder för att erbjuda ett omfattande skydd.
 
 Amelia och Gabriel belyser olika aspekter av logisk säkerhet, inklusive kryptering, datalagring och redundanta system som skyddar data även vid fysiska fel. De diskuterar också moderna tekniker som containerisering och konfidentiell databehandling, som skyddar data både under bearbetning och i vila, vilket minskar risken för obehörig åtkomst.
 

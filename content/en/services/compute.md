@@ -63,7 +63,7 @@ For organizations seeking an even more scalable VPN solution, ZeroTier is an exc
 
 At Safespring, we are proud to offer these advanced VPN capabilities integrated directly into our Compute platform. With just a few clicks, you can configure and deploy a complete VPN solution that supports both WireGuard and ZeroTier, ensuring that your organization always has access to secure and flexible network options.
 
-[Read more in our documentation.](https://docs.safespring.com/new/vpn)
+[Read more in our documentation.](https://docs.safespring.com/compute/vpn/)
 
 {{% /accordion %}}
 {{< accordion-script >}}

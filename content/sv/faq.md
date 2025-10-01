@@ -24,8 +24,8 @@ slug: "vanliga-fragor"
 Safespring följer Europeisk lagstiftning och hjälper våra kunder att undvika personuppgift­överföringar till tredjeland.
 {{% /question %}}
 
-{{% question question="Vem är kontaktperson för informations­säkerhetsfrågor?" %}}
-Amelia Andersdotter är din kontaktperson för alla frågor om informations­säkerhet. Du når henne på amelia.andersdotter @safespring.com.
+{{% question question="Vem kontaktar jag för informations­säkerhetsfrågor?" %}}
+info@safespring.com är adressen för alla frågor om informations­säkerhet.
 {{% /question %}}
 
 {{% question question="Kan jag granska ert säkerhetsarbete?" %}}

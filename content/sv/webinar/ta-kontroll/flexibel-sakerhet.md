@@ -39,7 +39,7 @@ aliases:
 Detta avsnitt belyser vikten av att bygga system med inbyggda säkerhetsmekanismer på applikationsnivå för att hantera och minimera risker i en alltmer flexibel och dynamisk digital miljö.
 {{< /ingress >}}
 
-I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterl­evnadsansvarig på Safespring, tillsammans med Gabriel Paues, molnarkitekt på Safespring, hur flexibel säkerhet kan tillämpas för att stärka skyddet av applikationer. De utforskar flexibilitetens roll i att skapa robusta och säkra miljöer, där applikationer kan anpassa sig snabbt utan att kompromissa med säkerheten.
+I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterl­evnadskunnig, tillsammans med Gabriel Paues, molnarkitekt på Safespring, hur flexibel säkerhet kan tillämpas för att stärka skyddet av applikationer. De utforskar flexibilitetens roll i att skapa robusta och säkra miljöer, där applikationer kan anpassa sig snabbt utan att kompromissa med säkerheten.
 
 De inleder med att förklara hur moderna programvaru­utvecklings­tekniker, som containerisering, ger applikationer möjligheten att köras oberoende av den underliggande hårdvaran och infrastrukturen. Gabriel betonar hur containrar kan minska beroendet av specifika operativsystem och hårdvaru­resurser, vilket leder till att uppdateringar och underhåll kan utföras mer effektivt och med mindre störningar.
 

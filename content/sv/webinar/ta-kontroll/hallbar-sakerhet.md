@@ -39,7 +39,7 @@ aliases:
 Detta avsnitt ger en översikt över hur tekniska lösningar inte bara kan säkra data utan också bidra till en mer hållbar och miljövänlig drift. Det understryker vikten av att designa system som är robusta, effektiva och anpassade för att minska deras ekologiska fotavtryck.
 {{< /ingress >}}
 
-I detta avsnitt utforskar Gabriel Paues, molnarkitekt på Safespring, och Amelia Andersdotter, risk och regelefterlevnads­ansvarig, hur företag kan använda teknik för att främja hållbar säkerhet. De diskuterar hur hållbarhet inte enbart är ett miljömässigt begrepp utan också ett viktigt aspekt av teknologiska system, speciellt inom molntjänster och container-teknologi.
+I detta avsnitt utforskar Gabriel Paues, molnarkitekt på Safespring, och Amelia Andersdotter, risk och regelefterlevnads­rådgivare, hur företag kan använda teknik för att främja hållbar säkerhet. De diskuterar hur hållbarhet inte enbart är ett miljömässigt begrepp utan också ett viktigt aspekt av teknologiska system, speciellt inom molntjänster och container-teknologi.
 
 Diskussionen inleds med en definition av hållbarhet i tekniska termer—inte bara miljömässig påverkan utan också effektiv användning av resurser och långsiktigt hållbara investeringar i teknik. Gabriel och Amelia betonar vikten av att använda molntjänster och moderna teknologier som containrar för att minska överflödig infrastruktur och öka systemens effektivitet.
 

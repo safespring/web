@@ -101,7 +101,7 @@ På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter
 Med bara några få klick kan du konfigurera och deploya en fullständig VPN-lösning som stöder både WireGuard och
 ZeroTier, vilket säkerställer att din organisation alltid har tillgång till säkra och flexibla nätverksalternativ.
 
-[Läs mer i vår dokumentation](https://docs.safespring.com/new/vpn).
+[Läs mer i vår dokumentation](https://docs.safespring.com/compute/vpn/).
 
 {{% /accordion %}}
 
@@ -123,7 +123,7 @@ olika användnings­områden: FAST och LARGE.
 {{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" "/img/card/safespring-demo-instans-svenska.webp" >}}
 {{< distance >}}
 
-{{< horisontal-card image="/img/card/safespring-amelia-small.jpg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet. Det innebär också att ledningen ansvarar för efterlevnaden av säkerhetsåtgärder, inklusive användning av kryptering och säkerhetsteknologier." >}}
+{{< horisontal-card image="/img/card/safespring-image.svg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet." >}}
 
 ## OpenStack och Kubernetes
 

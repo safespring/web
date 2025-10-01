@@ -84,8 +84,13 @@
 }
 
 ::selection {
-  color: #195f8c;
-  background: #eaf0f4;
+	color:#195F8C;
+	background:color-mix(in srgb, var(--main-color) 20%, transparent);
+}
+
+a::selection {
+	color:#FFF;
+	background:#FA690F;
 }
 
 video::cue {
@@ -245,10 +250,7 @@ hr {
   font-size: 1rem;
 }
 
-a::selection {
-  color: #fff;
-  background: #fa690f;
-}
+
 
 .index {
   background: #fafefe;
@@ -326,10 +328,10 @@ p > img {
 }
 
 h3 {
-  margin: 40px 0 10px 0;
-  font: var(--hind-light-weight) 1.25rem var(--hind-font);
-  color: var(--clear-blue-color);
-  line-height: 21px;
+	margin:40px 0 0px 0;
+	font:var(--hind-light-weight) 1.25rem var(--hind-font);
+	color:var(--clear-blue-color);
+	line-height: 1;
 }
 
 h2 + h3 {
@@ -5203,7 +5205,10 @@ details[open] summary {
 }
 
 .column-two {
-  column-count: 2;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 10px;
 }
 
 .column-two li {
