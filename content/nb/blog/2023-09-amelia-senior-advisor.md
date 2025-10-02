@@ -3,7 +3,7 @@ ai: true
 title: "Amelia Andersdotter tiltrer som seniorrådgiver"
 date: "2023-09-01"
 intro: "Med sin lange erfaring innen politikk, teknologi og kommunikasjon er Amelia en strategisk ressurs som vil bidra sterkt til Safesprings videre utvikling."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_50.jpg"
@@ -16,6 +16,7 @@ toc: ""
 aliases:
   - /blogg/2023/2023-09-amelia-senior-advisor/
 ---
+
 {{% ingress %}}
 Vi i Safespring kan stolt meddele at Amelia Andersdotter nå går inn i rollen som Senior Advisor.
 {{% /ingress %}}

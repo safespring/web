@@ -3,7 +3,7 @@ ai: true
 title: "Amelia Andersdotter joins as Senior Advisor"
 date: "2023-09-01"
 intro: "With her extensive background in politics, technology, and communications, Amelia is a strategic asset who will significantly contribute to Safespring’s continued development."
-draft: false
+draft: true
 tags: ["Svenska"]
 showthedate: true
 card: "safespring_card_50.jpg"
@@ -16,6 +16,7 @@ toc: ""
 aliases:
   - /blogg/2023/2023-09-amelia-senior-advisor/
 ---
+
 {{% ingress %}}
 We at Safespring are proud to announce that Amelia Andersdotter is stepping into the role of Senior Advisor.
 {{% /ingress %}}
