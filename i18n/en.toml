@@ -82,3 +82,9 @@ service_explore = "Optimize your service with:"
 
 [meta]
 desc = "Safespring is a public cloud platform that is locally produced. With secure data centers, you keep your data within the country's borders. Read more!"
+
+[price_list]
+email_warning = "Please use your work email."
+terms_accept = "I accept"
+terms = "the terms"
+download_price_list = "Download the price list"

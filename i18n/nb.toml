@@ -82,3 +82,9 @@ service_explore = "Lær mer om"
 
 [meta]
 desc = "Safespring er en offentlig skyplattform som er lokalt produsert. Med sikre datasentre holder du dine data innenfor landets grenser. Les mer!"
+
+[price_list]
+email_warning = "Bruk gjerne din jobbe-epost."
+terms_accept = "Jeg aksepterer"
+terms = "vilkårene"
+download_price_list = "Last ned prislisten"

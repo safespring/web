@@ -82,3 +82,9 @@ service_explore = "Utforska"
 
 [meta]
 desc = "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
+
+[price_list]
+email_warning = "Använd gärna din jobbmail."
+terms_accept = "Jag accepterar"
+terms = "villkoren"
+download_price_list = "Hämta prislistan"
