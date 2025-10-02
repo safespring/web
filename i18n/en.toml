@@ -76,9 +76,18 @@ tech_update = "Tech updates"
 webcast = "Videos"
 
 [sidebar]
+main_text1 = "Safespring offers flexible and high-performance cloud infrastructure services."
+main_text2 = "Our Nordic solution provides you with the confidence that you can meet legal and regulatory requirements, such as GDPR, with ease."
+send_email = "Send email"
 service_combine = "Combine"
 service_with = "with"
 service_explore = "Optimize your service with:"
+documentation = "Documentation"
+documentation_desc = "Safespring's portal gives you an overview of the project and account statistics. This documentation will get you started."
+documentation_desc_samurai = "Samurai gives you real-time insights into your company's cybersecurity status. Get started with this documentation."
+demo = "Watch demo"
+demo_show = "Let one of our Cloud Architects show you our platform."
+
 
 [meta]
 desc = "Safespring is a public cloud platform that is locally produced. With secure data centers, you keep your data within the country's borders. Read more!"
@@ -88,3 +97,4 @@ email_warning = "Please use your work email."
 terms_accept = "I accept"
 terms = "the terms"
 download_price_list = "Download the price list"
+

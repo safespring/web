@@ -31,22 +31,14 @@
         {{ if .Params.sidebartext }}
         <p>{{ .Params.sidebartext }}</p> 
         {{ else }}
-        {{ if eq .Language "en" }}
-        <p>Safespring offers flexible and high-performance cloud infrastructure services.</p>
-        <p>Our Nordic solution provides you with the confidence that you can meet legal and regulatory requirements, such as GDPR, with ease.</p>
-        {{ else if eq .Language "nb" }}
-        <p>Safespring er en rask og fleksibel sky- og IT-infrastrukturtjeneste.</p>
-        <p>Som en nordisk løsning gjør Safespring det enklere for deg å oppfylle lover og regler, som GDPR.</p>
-        {{ else }}
-        <p>Safespring är en snabb och flexibel moln- och IT-infrastrukturtjänst.</p>
-        <p>Som en svensk lösning gör Safespring det enklare för dig att uppfylla lagar och regler, som GDPR.</p>
-        {{ end }}
+          <p>{{ T "sidebar.main_text1" }}</p>
+          <p>{{ T "sidebar.main_text2" }}</p>
         {{ end }}
         {{ if .Params.sidebarphone }}
-        <p class="sidebar-content-button"><i class="fa-solid fa-phone"></i><a href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a></p>
+          <p class="sidebar-content-button"><i class="fa-solid fa-phone"></i><a href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a></p>
         {{ end }}
         {{ if .Params.sidebarmail }}
-        <p class="sidebar-content-button"><i class="fa-solid fa-at"></i><a href="mailto:{{ .Params.sidebarmail }}">{{ if eq .Language "en"}}Send email{{else if eq .Language "nb"}}Send e-post{{else}}Skicka epost{{end}}</a></p>
+          <p class="sidebar-content-button"><i class="fa-solid fa-at"></i><a href="mailto:{{ .Params.sidebarmail }}">{{ T "sidebar.send_email" }}</a></p>
         {{ end }}
       </div>
 
@@ -81,18 +73,14 @@
       <div>
         <p class="card-section">{{ .Params.documentation }}</p>
         <span class="card-heading">
-          {{ if eq .Params.documentation "Samurai" }}Samurai Documentation
-          {{ else if eq .Language "sv" }}Safespring Dokumentation
-          {{ else if eq .Language "nb" }}Safespring Dokumentasjon
-          {{ else if eq .Language "en" }}Safespring Documentation
-          {{ else }}Hej
+          {{ if eq .Params.documentation "Samurai" }}Samurai {{ T "sidebar.documentation" }}
+          {{ else }}Safespring {{ T "sidebar.documentation" }}
           {{ end }}
         </span>
         <p class="mb-2">
-          {{ if eq .Params.documentation "Samurai" }}Samurai ger dig realtidsinsikter i ditt företags cybersäkerhetsstatus. Kom igång med denna dokumentation.
-          {{ else if eq .Language "sv" }}Safesprings portal ger dig en översikt över projektet och kontostatistiken. Genom den här dokumentationen kommer du i gång.
-          {{ else if eq .Language "nb" }}Safesprings portal gir deg oversikt over prosjekt- og kontostatistikken. Denne dokumentasjonen vil hjelpe deg i gang.
-          {{ else if eq .Language "en" }}Safespring's portal gives you an overview of the project and account statistics. This documentation will get you started.{{ end }}
+          {{ if eq .Params.documentation "Samurai" }}{{ T "sidebar.documentation_desc_samurai" }}
+          {{ else }}{{ T "sidebar.documentation_desc" }}
+          {{ end }}
         </p>
         {{ partial "documentation.html" . }}
       </div>
@@ -105,24 +93,12 @@
       <div>
         <p class="card-section">{{ .Params.documentation }}</p>
         <span class="card-heading">
-          {{ if eq .Language "nb" }}Se demo
-          {{ else if eq .Language "en" }}Watch demo
-          {{ else }}Se demo
-          {{ end }}
+          {{ T "sidebar.demo" }}
         </span>
         <p class="mb-2">
-          {{ if eq .Language "nb" }}La en av våre Cloud Architects vise deg vår plattform.
-          {{ else if eq .Language "en" }}Let one of our Cloud Architects show you our platform.
-          {{ else  }}Låt en av våra Cloud Architects visa dig vår plattform.
-          {{ end }}
+          {{ T "sidebar.demo_show" }}
         </p>
-        {{ if eq .Language "nb" }}
-        <a class="button" href="/demo/compute">Se demo</a>
-        {{ else if eq .Language "en" }}
-        <a class="button" href="/demo/compute">Watch demo</a>
-        {{ else }}
-        <a class="button" href="/demo/compute">Se demo</a>
-        {{ end }}
+        <a class="button" href="/demo/compute">{{ T "sidebar.demo" }}</a>
       </div>
     </div>
     <div class="close-btn">&times;</div>

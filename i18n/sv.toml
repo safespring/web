@@ -76,9 +76,17 @@ tech_update = "Tekniska uppdateringar"
 webcast = "Videor"
 
 [sidebar]
+main_text1 = "Safespring är en snabb och flexibel moln- och IT-infrastrukturtjänst."
+main_text2 = "Som en svensk lösning gör Safespring det enklare för dig att uppfylla lagar och regler, som GDPR."
+send_email = "Skicka epost"
 service_combine = "Kombinera"
 service_with = "med"
 service_explore = "Utforska"
+documentation = "Dokumentation"
+documentation_desc = "Safesprings portal ger dig en översikt över projektet och kontostatistiken. Genom den här dokumentationen kommer du i gång."
+documentation_desc_samurai = "Samurai ger dig realtidsinsikter i ditt företags cybersäkerhetsstatus. Kom igång med denna dokumentation."
+demo = "Se demo"
+demo_show = "Låt en av våra Cloud Architects visa dig vår plattform."
 
 [meta]
 desc = "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"

@@ -76,9 +76,17 @@ tech_update = "Tekniske opdateringer"
 webcast = "Videoer"
 
 [sidebar]
+main_text1 = "Safespring er en hurtig og fleksibel sky- og IT-infrastrukturtjeneste."
+main_text2 = "Som en nordisk løsning gjør Safespring det enklere for deg å oppfylle lover og regler, som GDPR."
+send_email = "Skicka epost"
 service_combine = "Kombinera"
 service_with = "med"
 service_explore = "Utforska"
+documentation = "Dokumentasjon"
+documentation_desc = "Safesprings portal gir deg oversikt over prosjektet og kontostatistikken. Denne dokumentasjonen vil hjelpe deg i gang."
+documentation_desc_samurai = "Samurai gir deg reelltidsinsikter i din bedriftens cybersikkerhet. Kom i gang med denne dokumentasjonen."
+demo = "Se demo"
+demo_show = "Låt en af våre Cloud Architects vise dig vår plattform."
 
 [meta]
 desc = "Safespring er en offentlig skyplattform som er lokalt produkt. Med sikre datacentre holder du dine data innenfor landets grenser. Læs mere!"
