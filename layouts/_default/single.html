@@ -258,7 +258,7 @@
           "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
         },
         "url": "{{ .Permalink }}",
-        "inLanguage": "{{ .Language }}",
+        "inLanguage": "{{ .Language.Lang }}",
         "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
         "about": {
           "@type": "Thing",
@@ -303,7 +303,7 @@
         "articleSection": "{{ if .Params.section }}{{ .Params.section }}{{ else }}Blog{{ end }}",
         "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
         "url": "{{ .Permalink }}",
-        "inLanguage": "{{ .Language }}",
+        "inLanguage": "{{ .Language.Lang }}",
         "wordCount": "{{ .WordCount }}",
         "commentCount": 0
       }
