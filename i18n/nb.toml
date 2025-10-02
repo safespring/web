@@ -79,3 +79,6 @@ webcast = "Videoer"
 service_combine = "Kombiner"
 service_with = "med"
 service_explore = "Lær mer om"
+
+[meta]
+desc = "Safespring er en offentlig skyplattform som er lokalt produsert. Med sikre datasentre holder du dine data innenfor landets grenser. Les mer!"

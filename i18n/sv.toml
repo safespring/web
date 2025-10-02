@@ -79,3 +79,6 @@ webcast = "Videor"
 service_combine = "Kombinera"
 service_with = "med"
 service_explore = "Utforska"
+
+[meta]
+desc = "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"

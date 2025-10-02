@@ -79,3 +79,6 @@ webcast = "Videos"
 service_combine = "Combine"
 service_with = "with"
 service_explore = "Optimize your service with:"
+
+[meta]
+desc = "Safespring is a public cloud platform that is locally produced. With secure data centers, you keep your data within the country's borders. Read more!"

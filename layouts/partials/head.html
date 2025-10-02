@@ -1,27 +1,48 @@
-<!DOCTYPE html>
-<html lang='{{ if eq .Params.language "en"}}en{{else if eq .Params.language "nb"}}no{{else}}sv{{end}}'>
-<head>
-  <!-- Site Title changes according to current page . -->
-  <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
-  <meta charset="utf-8">
-  <script src="https://cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "en"}}en-GB{{else if eq .Params.language "nb"}}nb-NO{{else if eq .Params.language "da"}}da-DK{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"defer></script> 
-<link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml" importance="high">
-{{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
-{{ if .Params.background }}
-{{ $ext := replace (path.Ext $bg) "." "" }}
-<link rel="preload" as="image"
-      href="/img/background/{{ $bg }}"
+<!doctype html>
+<html lang="{{ .Language }}">
+  <head>
+    <!-- Site Title changes according to current page . -->
+    <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
+    <meta charset="utf-8" />
+    <script
+      src="https://cdn.cookietractor.com/cookietractor.js"
+      data-lang="{{ .Language.LanguageCode }}"
+      data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"
+      defer
+    ></script>
+    <link
+      rel="preload"
+      as="image"
+      href="/img/logos/safespring_logotype_blue_svg.svg"
       fetchpriority="high"
-      {{ if eq $ext "svg" }}
       type="image/svg+xml"
-      {{ else }}
-      type="image/{{ $ext }}"
-      {{ end }}
-      importance="high">
-{{ else }}
-<link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" fetchpriority="high" type="image/svg+xml" importance="high">
-{{ end }}
-
+      importance="high"
+    />
+    {{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
+    {{ if .Params.background }}
+      {{ $ext := replace (path.Ext $bg) "." "" }}
+      <link
+        rel="preload"
+        as="image"
+        href="/img/background/{{ $bg }}"
+        fetchpriority="high"
+        {{ if eq $ext "svg" }}
+          type="image/svg+xml"
+        {{ else }}
+          type="image/{{ $ext }}"
+        {{ end }}
+        importance="high"
+      />
+    {{ else }}
+      <link
+        rel="preload"
+        as="image"
+        href="/img/background/safespring-blue-fade2.svg"
+        fetchpriority="high"
+        type="image/svg+xml"
+        importance="high"
+      />
+    {{ end }}
 
 <style>
   @font-face {
@@ -73,7 +94,7 @@
     flex-flow:row nowrap;
     justify-content:space-evenly;
     gap:5%;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
@@ -660,14 +681,20 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content='{{ .Site.BaseURL }}{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'>
+    <meta
+      property="og:image"
+      content="{{ .Site.BaseURL }}{{ if isset .Params "socialmedia" }}
+        img/{{ index .Params "socialmedia" }}
+      {{ else }}
+        img/socialmedia/safespring-start.png
+      {{ end }}"
+    />
     <meta
       property="og:description"
       content="{{ if isset .Params "intro" }}
         {{ index .Params "intro" }}
       {{ else }}
-        Safespring är en publik molnplattform som är lokalt producerad. Med
-        trygga datacenter håller du din data inom landets gränser. Läs mer!
+        {{ T "meta.desc" }}
       {{ end }}"
     />
     <meta property="og:site_name" content="Safespring" />
@@ -679,8 +706,7 @@
       content="{{ if isset .Params "intro" }}
         {{ index .Params "intro" }}
       {{ else }}
-        Safespring är en publik molnplattform som är lokalt producerad. Med
-        trygga datacenter håller du din data inom landets gränser. Läs mer!
+        {{ T "meta.desc" }}
       {{ end }}"
     />
     <link rel="canonical" href="{{ .Permalink }}" />
