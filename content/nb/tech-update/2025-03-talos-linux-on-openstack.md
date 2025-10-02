@@ -19,6 +19,7 @@ aliases:
   - /blogg/2025/2024-02-engineering-plans/
   - /blogg/2025/2025-03-talos-linux-on-openstack/
 ---
+
 {{< ingress >}}
 Når det kommer til container-orkestrering, er Kubernetes de facto-standarden. Og det finnes mange ulike varianter av Kubernetes-distribusjoner og måter å provisjonere dem på. Så vi begynte å utforske hva Talos Linux kunne bety for oss.  
 {{< /ingress >}}
@@ -49,7 +50,9 @@ Det er noen forutsetninger for å komme i gang; vi holder det på et overordnet 
 - Talos-image tilgjengelig i OpenStack.
   {{% /note %}}
 
-For å konfigurere og laste opp[^2] et Talos[^3]-image til OpenStack, bruk følgende veiledning:```bash
+For å konfigurere og laste opp[^2] et Talos[^3]-image til OpenStack, bruk følgende veiledning:
+
+```bash
 inputs_schematic: 376567988ad370138ad8b2698212367b8edcb69b5fd68c80be1f2ec7d603b4ba
 inputs_version: v1.9.4
 
@@ -58,9 +61,12 @@ unxz openstack-amd64.raw.xz
 openstack image create --disk-format raw --container-format bare --community --file ./openstack-amd64.raw talos-image-${inputs_version}
 rm -f openstack-amd64.raw.xz openstack-amd64.raw
 ```
+
 _Når forutsetningene for verktøyene er på plass, må vi også ha opprettet en HaProxy-lastbalanserer og en DNS-oppføring for klyngen._
 
-La oss nå generere en Talos-konfigurasjon:_```bash
+La oss nå generere en Talos-konfigurasjon:\_
+
+```bash
 talosctl gen config \
     "name-of-cluster" \
     "fqdn_endpoint:6443" \
@@ -72,19 +78,25 @@ talosctl gen config \
     --with-examples=false \
     --with-docs=false
 ```
+
 {{% note "Merk" %}}
 Alternativene `with-example` og `with-docs` brukes for å holde konfigurasjonen ren, uten eksempler eller dokumentasjon.
 {{% /note %}}
 
 Ovenstående vil generere en Talos-konfigurasjon og legge den i `talosconfig_dir`. Det vil også generere 3 patch-filer: én for hver nodetype (controlplane, worker) og én generell for klyngen.
 
-Før vi fortsetter, la oss sette API-endepunktet for klyngen og hvilken node vi skal kommunisere med.```bash
+Før vi fortsetter, la oss sette API-endepunktet for klyngen og hvilken node vi skal kommunisere med.
+
+```bash
 talosctl config endpoint "https://fqdn"
 talosctl config node "https://fdqn"
 ```
+
 _Følgende er et eksempel på en konfigurasjon som også viser hvordan du installerer en egendefinert CNI (Cilium i dette tilfellet) med en Kubernetes-jobb._
 
-Klyngekonfigurasjon:_```yaml
+Klyngekonfigurasjon:\_
+
+```yaml
 machine:
   seccompProfiles:
     - name: audit.json
@@ -127,7 +139,10 @@ cluster:
         ---
         # https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/#method-5-using-a-job
 ```
-Deretter oppretter vi en for kontrollplanet:```yaml
+
+Deretter oppretter vi en for kontrollplanet:
+
+```yaml
 # control plane config
 machine:
   type: controlplane
@@ -144,27 +159,42 @@ machine:
       allowedKubernetesNamespaces:
         - kube-system
 ```
-Og til slutt oppretter vi en for arbeiderne:```yaml
+
+Og til slutt oppretter vi en for arbeiderne:
+
+```yaml
 # separate worker node config
 machine:
   type: worker
   nodeLabels:
     node-role.kubernetes.io/worker: worker
 ```
-En maskinkonfigurasjon kan også patches i etterkant:```bash
+
+En maskinkonfigurasjon kan også patches i etterkant:
+
+```bash
 talosctl machineconfig patch worker.yaml --patch @patches/patch.yaml -o worker1.yaml
 ```
-Og på en kjørende Talos-node kan du patche maskinkonfigurasjonen ved å bruke følgende:```bash
+
+Og på en kjørende Talos-node kan du patche maskinkonfigurasjonen ved å bruke følgende:
+
+```bash
 talosctl patch mc --nodes 1.2.3.4 --patch @patches/patch.yaml
 ```
+
 {{% note "hent kubconfig" %}}
-Når vi setter alternativet `rotate-server-certificates` til `true`, kan den nye kubconfig hentes ved å bruke:```bash
+Når vi setter alternativet `rotate-server-certificates` til `true`, kan den nye kubconfig hentes ved å bruke:
+
+```bash
 talosctl kubeconfig kubeconfig_<path>
 ```
+
 {{% /note %}}
 
 Noder kan provisjoneres med OpenStack- og Opentofu-providerne.
-Forutsatt at vi har OpenStack-infrastrukturen satt opp med Opentofu, kan vi nå opprette en Kubernetes-klynge med Talos Linux ved å bruke provisionerne `null_resource` og `local-exec`:```yaml
+Forutsatt at vi har OpenStack-infrastrukturen satt opp med Opentofu, kan vi nå opprette en Kubernetes-klynge med Talos Linux ved å bruke provisionerne `null_resource` og `local-exec`:
+
+```yaml
 resource "null_resource" "talos_bootstrap" {
   depends_on = [null_resource.a_records, null_resource.apply_haproxy_config]
   provisioner "local-exec" {
@@ -190,10 +220,14 @@ EOT
   }
 }
 ```
+
 Dette vil gi deg en klar til bruk, minimal Kubernetes-klynge.  
-Kjør følgende for å bekrefte tilgang til klyngen.```
+Kjør følgende for å bekrefte tilgang til klyngen.
+
+```
 kubectl get nodes -o wide
 ```
+
 ## Konklusjon: Hvorfor Talos Linux?
 
 Talos Linux tilbyr en moderne tilnærming til Kubernetes-infrastruktur ved å:
