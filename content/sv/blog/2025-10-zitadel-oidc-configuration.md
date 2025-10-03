@@ -1,7 +1,8 @@
 ---
-title: "Zitadel OIDC Configuration for Talos Kubernetes API Server"
+ai: true
+title: "Zitadel OIDC-konfiguration för Talos Kubernetes API-servern"
 date: 2025-10-03
-intro: "The integration uses Zitadel as the identity provider, enabling secure, centralized authentication and authorization."
+intro: "Integrationen använder Zitadel som identitetsleverantör, vilket möjliggör säker, centraliserad autentisering och auktorisering."
 draft: false
 tags: ["English"]
 showthedate: true
@@ -9,115 +10,113 @@ card: ""
 sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
-language: "en"
-sectiontext: "Tech Update"
+language: "sv"
+sectiontext: "Teknikuppdatering"
 section: "Tech update"
 author: "Anders Johansson, Ahmet Balci"
-TOC: "In this post"
+TOC: "I det här inlägget"
 ---
-
 {{< ingress >}}
-In this guide, we walk through configuring OpenID Connect (OIDC) authentication for the Kubernetes API Server in Talos-managed clusters. 
+I den här guiden går vi igenom hur du konfigurerar OpenID Connect (OIDC)-autentisering för Kubernetes API-servern i Talos-hanterade kluster.
 {{</ ingress >}}
 
-The integration uses [Zitadel](https://zitadel.com/) as the identity provider, enabling secure, centralized authentication and authorization.
+Integrationen använder [Zitadel](https://zitadel.com/) som identitetsleverantör, vilket möjliggör säker, centraliserad autentisering och auktorisering.
 
-We will also leverage the [kubectl OIDC plugin](https://github.com/int128/kubelogin) `kubelogin` for handling OIDC-based logins seamlessly from the command line.
-
----
-
-## Key Components
-
-* **Identity Provider**: [Zitadel](https://zitadel.com/)
-* **Kubernetes API Server**: OIDC-enabled authentication
-* **RBAC**: Role-based access control using OIDC claims
-* **Cluster Management**: Talos Linux
+Vi kommer också att använda [kubectl OIDC-plugin](https://github.com/int128/kubelogin) `kubelogin` för att smidigt hantera OIDC-baserade inloggningar från kommandoraden.
 
 ---
 
-{{% note "Prerequisites" %}}
+## Nyckelkomponenter
 
-Before starting, ensure the following are in place.
+* **Identitetsleverantör**: [Zitadel](https://zitadel.com/)
+* **Kubernetes API-server**: OIDC-aktiverad autentisering
+* **RBAC**: Rollbaserad åtkomstkontroll med OIDC-claims
+* **Klusterhantering**: Talos Linux
 
-### Required Tools
+---
 
-* `talosctl` - Talos management CLI
-* `kubectl` - Kubernetes CLI with [`kubectl OIDC plugin`](https://github.com/int128/kubelogin) installed
-* Access to Zitadel Admin Console
-* Cluster admin privileges
+{{% note "Förutsättningar" %}}
 
-### Required Information
+Innan du börjar, säkerställ följande.
 
-* Zitadel URL (self-hosted or ZITADEL Cloud)
-* **Resource ID** (used in Kubernetes API server configuration instead of Client ID)
-* OIDC Client ID (from Zitadel [application config](#2-create-oidc-applications))
-* Cluster API server endpoints
-* Target user `ClusterRoleBindings` and `RoleBindings`
+### Krävs verktyg
 
-### Network Requirements
+* `talosctl` - Talos hanterings-CLI
+* `kubectl` - Kubernetes CLI med [`kubectl OIDC-plugin`](https://github.com/int128/kubelogin) installerat
+* Åtkomst till Zitadel Admin Console
+* Behörigheter som klusteradministratör
 
-* The Kubernetes API server must be able to reach Zitadel
-* Users must be able to reach both Zitadel and the API server
+### Nödvändig information
+
+* Zitadel-URL (egenhostad eller ZITADEL Cloud)
+* **Resurs-ID** (används i Kubernetes API-serverns konfiguration i stället för Client ID)
+* OIDC Client ID (från Zitadels [applikationskonfiguration](#2-create-oidc-applications))
+* API-serverns slutpunkter för klustret
+* Målanvändarens `ClusterRoleBindings` och `RoleBindings`
+
+### Nätverkskrav
+
+* Kubernetes API-servern måste kunna nå Zitadel
+* Användare måste kunna nå både Zitadel och API-servern
 
 {{%/ note %}}
 
-## Zitadel Configuration Procedure
+## Zitadel-konfiguration
 
-### 1. Create a Project
+### 1. Skapa ett projekt
 
-We recommend creating a **dedicated project** (or even an organization, depending on your requirements) per cluster or customer.
+Vi rekommenderar att du skapar ett **dedikerat projekt** (eller till och med en organisation, beroende på dina behov) per kluster eller kund.
 
-Once created, note the **Resource ID** of the project it will be used in Kubernetes API server configuration. We make use of **Resource ID** and not the **Client ID** of the applications, so that the we allow other applications (e.g. [Headlamp](https://headlamp.dev/)) to be registered under the same project and make use of the OIDC login.
+När projektet har skapats, notera projektets **Resurs-ID** – det kommer att användas i Kubernetes API-serverns konfiguration. Vi använder **Resurs-ID** och inte applikationernas **Client ID**, så att andra applikationer (t.ex. [Headlamp](https://headlamp.dev/)) kan registreras under samma projekt och använda OIDC-inloggningen.
 
-* In project settings, enable the following:
-  * Assert Roles on Authentication
-  * Check Authorization on Authentication
-  * Check for Project on Authentication
-* See official guides for details:
-  * [Creating Organizations](https://zitadel.com/docs/guides/manage/console/organizations)
-  * [Creating Projects](https://zitadel.com/docs/guides/manage/console/projects)
-
----
-
-### 2. Create OIDC Applications
-
-Depending on your environment, set up one (or both) of the following applications:
-
-{{% note "Option A" %}}
-**Web Application** (browser-based login)
-
-* Application type: `Web Application`
-* Authentication method: **PKCE**
-* Redirect URI: `http://localhost:8000`
-* Enable **Development Mode** (required for `kubelogin`)
-* Token settings:
-  * Use **JWT**
-  * Enable: Add user roles to the access token
-  * Enable: User roles inside ID Token
-  * Enable: User Info inside ID Token
-{{%/ note %}}
-
-{{% note "Option B" %}}
-**Native Application** (no browser access)
-
-* Application type: `Native`
-* Authentication method: **Device Code**
-* Token settings same as above
-
-{{%/ note %}}
-
-### 3. Configure Claims
-
-* Ensure `email` claim is present
-* Configure `groups` claim for RBAC integration
-* Verify correct mapping of user attributes
+* I projektinställningarna, aktivera följande:
+  * Verifiera roller vid autentisering
+  * Kontrollera auktorisering vid autentisering
+  * Kontrollera projekt vid autentisering
+* Se officiella guider för detaljer:
+  * [Skapa organisationer](https://zitadel.com/docs/guides/manage/console/organizations)
+  * [Skapa projekt](https://zitadel.com/docs/guides/manage/console/projects)
 
 ---
 
-## Update Talos Control Plane Configuration
+### 2. Skapa OIDC-applikationer
 
-Update the Talos machine configuration with OIDC settings:
+Beroende på din miljö, konfigurera en (eller båda) av följande applikationer:
 
+{{% note "Alternativ A" %}}
+**Webbapplikation** (webbläsarbaserad inloggning)
+
+* Applikationstyp: `Web Application`
+* Autentiseringsmetod: **PKCE**
+* Omdirigerings-URI: `http://localhost:8000`
+* Aktivera **Development Mode** (krävs för `kubelogin`)
+* Tokeninställningar:
+  * Använd **JWT**
+  * Aktivera: Lägg till användarroller i åtkomsttoken
+  * Aktivera: Användarroller i ID-token
+  * Aktivera: Användarinformation i ID-token
+{{%/ note %}}
+
+{{% note "Alternativ B" %}}
+**Native-applikation** (ingen webbläsaråtkomst)
+
+* Applikationstyp: `Native`
+* Autentiseringsmetod: **Device Code**
+* Tokeninställningarna samma som ovan
+
+{{%/ note %}}
+
+### 3. Konfigurera claims
+
+* Säkerställ att `email`-claim finns
+* Konfigurera `groups`-claim för RBAC-integration
+* Verifiera korrekt mappning av användarattribut
+
+---
+
+## Uppdatera konfigurationen för Talos-kontrollplanet
+
+Uppdatera Talos maskinkonfiguration med OIDC-inställningar:
 ```yaml
 cluster:
   apiServer:
@@ -129,24 +128,20 @@ cluster:
       oidc-username-claim: email
       oidc-username-prefix: "zitadel:"
 ```
+Redigera konfigurationerna enligt [Talos maskinkonfigurationsguide](https://www.talos.dev/v1.11/talos-guides/configuration/editing-machine-configuration/).
 
-Edit configs as per [Talos machine configuration guide](https://www.talos.dev/v1.11/talos-guides/configuration/editing-machine-configuration/).
-
-Restart API server if required:
-
+Starta om API-servern vid behov:
 ```bash
 talosctl service kube-apiserver status --nodes <control-plane-node-ip>
 talosctl service kube-apiserver restart --nodes <control-plane-node-ip>
 ```
-
 ---
 
-## Configure RBAC
+## Konfigurera RBAC
 
-Now map Zitadel roles to Kubernetes RBAC.
+Mappa nu Zitadel-roller till Kubernetes RBAC.
 
-### Admin Role Mapping
-
+### Mappning av administratörsrollen
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -161,11 +156,9 @@ subjects:
   kind: Group
   name: zitadel:administrators
 ```
+### Mappning av visningsrollen
 
-### Viewer Role Mapping
-
-Create a `ClusterRole` and bind Zitadel group `users` to it.
-
+Skapa en `ClusterRole` och koppla Zitadel-gruppen `users` till den.
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -194,15 +187,13 @@ roleRef:
   name: oidc-viewer
   apiGroup: rbac.authorization.k8s.io
 ```
-
 ---
 
-## Create Kubeconfig for Login
+## Skapa kubeconfig för inloggning
 
-In order to make use of the roles against the Kubernetes API, we need to follow the [kubelogin OIDC setup](https://github.com/int128/kubelogin?tab=readme-ov-file#setup) and create an `kubeconfig` with oidc-login options.
+För att kunna använda rollerna mot Kubernetes-API:et behöver vi följa [inställningen för kubelogin OIDC](https://github.com/int128/kubelogin?tab=readme-ov-file#setup) och skapa en `kubeconfig` med oidc-login-alternativ.
 
-Whilst the [Kubernetes OpenID Connection authentication guide](https://github.com/int128/kubelogin/blob/master/docs/setup.md) assumes an existing `kubeconfig` with a cluster context, for generating a new config we provide the following script:
-
+Även om [guiden för Kubernetes OpenID Connection-autentisering](https://github.com/int128/kubelogin/blob/master/docs/setup.md) förutsätter en befintlig `kubeconfig` med ett klusterkontext, tillhandahåller vi följande skript för att generera en ny konfiguration:
 ```bash
 
 #!/usr/bin/env bash
@@ -350,11 +341,9 @@ echo "Wrote kubeconfig to ${config_file}"
 echo "To use now: export KUBECONFIG=\$PWD/${config_file}"
 rm ca.crt
 ```
+Använd skriptet `make-kubeconfig.sh` ovan för att generera en kubeconfig som stödjer OIDC-inloggning via `kubelogin`.
 
-Use the above `make-kubeconfig.sh` script to generate a kubeconfig that supports OIDC login via `kubelogin`.
-
-{{% note "Example" %}}
-
+{{% note "Exempel" %}}
 ```bash
 ./make_kubeconfig.sh -c <client_id> -i zitadel.apps.cluster.safespring.com -k api.demo.safespring.com
 kubectl --kubeconfig=demo-kubeconfig cluster-info
@@ -364,29 +353,28 @@ CoreDNS is running at https://api.demo.safespring.com:6443/api/v1/namespaces/kub
 
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
-
 {{%/ note %}}
 
-* With **Auth Code Flow** → a browser window opens
-* With **Device Code Flow** → a login URL is displayed
+* Med **Auth Code Flow** → ett webbläsarfönster öppnas
+* Med **Device Code Flow** → en inloggnings-URL visas
 
 ---
 
-## Conclusion
+## Slutsats
 
-By integrating **Zitadel OIDC authentication** with the **Talos Kubernetes API server**, you can centralize identity management, strengthen access security, and simplify user workflows. With properly mapped claims and RBAC bindings, administrators and users can seamlessly authenticate via Zitadel, while Kubernetes maintains fine-grained control through its native RBAC system.
+Genom att integrera **Zitadel OIDC-autentisering** med **Talos Kubernetes API-server** kan du centralisera identitetshanteringen, stärka åtkomstsäkerheten och förenkla användarnas arbetsflöden. Med korrekt mappade claims och RBAC-bindningar kan administratörer och användare sömlöst autentisera via Zitadel, samtidigt som Kubernetes upprätthåller finmaskig kontroll genom sitt inbyggda RBAC-system.
 
-This setup provides:
+Den här konfigurationen ger:
 
-* Strong, standards-based authentication
-* Centralized identity & group management via Zitadel
-* Fine-grained authorization using Kubernetes RBAC
-* A smooth developer/admin login experience through `kubelogin`
+* Stark, standardbaserad autentisering
+* Centraliserad identitets- och grupphantering via Zitadel
+* Finmaskig auktorisering med Kubernetes RBAC
+* En smidig inloggningsupplevelse för utvecklare/administratörer via `kubelogin`
 
-With this foundation in place, your Talos-managed clusters gain a scalable and secure access control model, aligning identity management across your infrastructure.
+Med denna grund på plats får dina Talos-hanterade kluster en skalbar och säker åtkomstkontrollmodell som harmoniserar identitetshanteringen i hela din infrastruktur.
 
 
-{{% note "liked what you just read?" %}}
-Does this sound like a good fit for your needs?
-Don't hesitate to reach out if you have any questions at hello@safespring.com.
+{{% note "Gillade du vad du just läste?" %}}
+Verkar det här passa dina behov?
+Tveka inte att höra av dig om du har frågor på hello@safespring.com.
 {{% /note %}}
