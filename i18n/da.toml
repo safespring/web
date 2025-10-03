@@ -90,6 +90,7 @@ demo_show = "Låt en af våre Cloud Architects vise dig vår plattform."
 
 [meta]
 desc = "Safespring er en offentlig skyplattform som er lokalt produkt. Med sikre datacentre holder du dine data innenfor landets grenser. Læs mere!"
+matomo_id = "6"
 
 [price_list]
 email_warning = "Brug gerne din arbejdsmail."

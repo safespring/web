@@ -4,6 +4,9 @@
     <!-- Site Title changes according to current page . -->
     <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
     <meta charset="utf-8" />
+    <script>
+      var matomoSiteId = {{ T "meta.matomo_id" }};
+    </script>
     <script
       src="https://cdn.cookietractor.com/cookietractor.js"
       data-lang="{{ .Language.LanguageCode }}"

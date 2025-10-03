@@ -90,6 +90,7 @@ demo_show = "Låt en av våra Cloud Architects visa dig vår plattform."
 
 [meta]
 desc = "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
+matomo_id = "3"
 
 [price_list]
 email_warning = "Använd gärna din jobbmail."
