@@ -98,7 +98,7 @@ Depending on your environment, set up one (or both) of the following application
 {{%/ note %}}
 
 {{% note "Option B" %}}
-**Native Application** (no browser access)
+**Native Application** (no direct browser access). *You will be given an url, but still need a browser to login*
 
 * Application type: `Native`
 * Authentication method: **Device Code**
