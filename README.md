@@ -101,6 +101,8 @@ This would look up the translation for the key "knowledgehub.read_post" in the i
     ```
   - Supported languages: `sv`, `en`, `nb`, `da`.
 
+- For a step-by-step, foolproof guide with exact commands, see `TRANSLATION.md`.
+
 ### Batch translate missing pages
 
 - **Plan what will happen (no changes)**
@@ -146,7 +148,7 @@ Tip: Commit your work before running (the script overwrites newly created target
   - `--target-lang da`: Override detected language.
   - `--model gpt-5`: Model name (default is `gpt-5`).
 
-What it does: updates/creates frontmatter with `ai: true` and `language: "<lang>"`, translates user-facing frontmatter fields (`title`, `description`, `summary`, etc.), and translates the Markdown body while preserving fenced code blocks, inline code, and link targets.
+What it does: updates/creates frontmatter with `ai: true` and `language: "<lang>"`, translates the Markdown body while preserving fenced code blocks, inline code, and link targets.
 
 ### Common issues
 
