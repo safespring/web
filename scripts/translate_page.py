@@ -423,7 +423,25 @@ def auto_translate_frontmatter_fields(
 
 
 def is_code_block_fence(line: str) -> bool:
-    return line.lstrip().startswith("```")
+    """Check if a line is a valid markdown code fence (```) that starts at beginning of line.
+
+    This ensures that only properly formatted code fences are detected and preserved
+    during translation, which helps maintain valid markdown structure.
+
+    A valid code fence must:
+    1. Start with ``` (after optional whitespace)
+    2. Have nothing before the ``` except whitespace
+    3. Be followed only by optional language identifier and whitespace
+    """
+    stripped = line.lstrip()
+    if not stripped.startswith("```"):
+        return False
+
+    # Extract the part after ```
+    after_ticks = stripped[3:].strip()
+
+    # Should be empty or contain only a language identifier (word characters, hyphens, underscores)
+    return not after_ticks or all(c.isalnum() or c in "-_" for c in after_ticks)
 
 
 def simple_markdown_body_chunks(text: str) -> List[Tuple[str, bool]]:
@@ -431,6 +449,8 @@ def simple_markdown_body_chunks(text: str) -> List[Tuple[str, bool]]:
 
     We mark fenced code blocks as non-translatable. Everything else is translatable.
     This is a conservative approach and avoids accidental translation inside code.
+
+    Preserves exact line structure to ensure code fences remain valid.
     """
     lines = text.splitlines(keepends=True)
     chunks: List[Tuple[str, bool]] = []
@@ -440,7 +460,9 @@ def simple_markdown_body_chunks(text: str) -> List[Tuple[str, bool]]:
         if is_code_block_fence(line):
             # Flush current buffer with its current mode
             if buf:
-                chunks.append(("".join(buf), not in_code))
+                # Join with empty string to preserve exact line endings
+                chunk_text = "".join(buf)
+                chunks.append((chunk_text, not in_code))
                 buf = []
             # Toggle code mode and include the fence line in its own chunk
             in_code = not in_code
@@ -448,18 +470,22 @@ def simple_markdown_body_chunks(text: str) -> List[Tuple[str, bool]]:
             continue
         buf.append(line)
     if buf:
-        chunks.append(("".join(buf), not in_code))
+        # Join with empty string to preserve exact line endings
+        chunk_text = "".join(buf)
+        chunks.append((chunk_text, not in_code))
     return chunks
 
 
 def build_translation_prompt(target_lang: str) -> str:
     return (
         "You are a professional translator. Translate the provided Markdown to "
-        f"{target_lang.upper()} with natural, fluent style. Preserve Markdown structure, "
-        "do NOT translate code blocks, inline code, URLs, slugs, file names, or frontmatter keys. "
+        f"{target_lang.upper()} with natural, fluent style. "
+        "CRITICAL: Preserve exact line breaks, whitespace, and Markdown structure. "
+        "Do NOT translate code blocks, inline code, URLs, slugs, file names, or frontmatter keys. "
         "Translate link texts but keep link targets unchanged. "
         "Do not translate short control values (yes/no/none), hash anchors like #form, or fields like srclang. "
-        "Return only the translated text."
+        "Maintain exact paragraph breaks, list formatting, and code fence positioning. "
+        "Return only the translated text with identical structure."
         "Do not ask for clarification or follow up questions."
         "Your response will be used directly as is, so do not include any additional text or comments."
         "If all else fails, return the original text."
