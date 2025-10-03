@@ -9,7 +9,7 @@
     {{ if ( not ( in ($.Scratch.Get "authors") . ) ) }}
     {{ $.Scratch.Add "authors" . }}
     {{ end }}
-    {{ else if ( printf "%T" . ) "[]string" }}
+    {{ else if eq ( printf "%T" . ) "[]string" }}
     {{ range . }}
     {{ if ( not ( in ($.Scratch.Get "authors") . ) ) }}
     {{ $.Scratch.Add "authors" . }}

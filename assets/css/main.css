@@ -4816,6 +4816,22 @@ th:last-child {
 	text-transform:uppercase;
 }
 
+.authors {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  align-items: space-between;
+}
+
+@media screen and (max-width: 800px){
+	.authors { 
+	  display: flex;
+	  gap: 1rem;
+	  flex-wrap: wrap;
+	  align-items: space-between;
+	}
+}
+
 
 /* Flavour */
 

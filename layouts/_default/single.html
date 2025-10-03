@@ -32,19 +32,20 @@
 {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
-    {{ $pageParams := .Params }}
-    {{ range where .Site.Data.authors "name" $pageParams.author }}
+{{ $pageParams := .Params }}
+<div class="authors">
+  {{ range where .Site.Data.authors "name" "in" .Params.author }}
     <div itemscope itemtype="http://schema.org/Person" class="author-container">
-      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }})">
-        <img itemprop="image" src="/img/people/{{ index . (printf "image_%s" (default "happy" $pageParams.author_image)) }}" alt="{{ .name }}" style="display:none;">
+      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $.Params.author_image)) }})">
+        <img itemprop="image" src="/img/people/{{ index . (printf "image_%s" (default "happy" $.Params.author_image)) }}" alt="{{ .name }}" style="display:none;">
       </div>
       <div class="author-info">
         <p class="author-name" itemprop="name">{{ .name }}</p>
         <p class="author-title" itemprop="jobTitle">{{ .title }}</p>
       </div>
     </div>
-
-    {{ end }}
+  {{ end }}
+</div>
     {{ .Content }}
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
