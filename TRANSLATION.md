@@ -79,3 +79,7 @@ git commit -m "feat(i18n): add and translate missing pages"
 - Links/URLs: targets should remain unchanged; spot-check a few pages.
 - Paths must be under `content/<sv|en|nb|da>/...` or scripts won’t process them.
 - Costs: translations call OpenAI and may incur usage charges.
+- Should codefences end up on the previous rather than a new line, use this RegEx to fix them.
+  - Find: (^|[\r\n])([^\r\n]*\S[^\r\n]*?)(?=```(?!`)[^\r\n]*$)
+  - Replace: $1$2\n
+  - Note: In vscode you may have to open each result for the replace to apply properly.
