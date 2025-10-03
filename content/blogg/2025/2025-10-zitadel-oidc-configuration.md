@@ -12,7 +12,7 @@ socialmediabild: ""
 language: "En"
 sectiontext: "Tech Update"
 section: "Tech update"
-author: "Anders Johansson"
+author: "Anders Johansson, Ahmet Balci"
 TOC: "In this post"
 ---
 
