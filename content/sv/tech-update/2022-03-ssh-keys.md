@@ -79,7 +79,8 @@ Ett annat sätt att separera och/eller ta full kontroll över åtkomsten är att
 
 ### Publik SSH-värdnyckel
 
-Utöver de SSH-nyckelpar som används för att ge användare åtkomst finns också SSH-värdnyckeln. Det är det sätt på vilket en värd unikt identifierar sig för anslutande klienter. Det är upp till klienten att lita på denna värdnyckel vid första kontakten. Vi har alla sett detta meddelande:```
+Utöver de SSH-nyckelpar som används för att ge användare åtkomst finns också SSH-värdnyckeln. Det är det sätt på vilket en värd unikt identifierar sig för anslutande klienter. Det är upp till klienten att lita på denna värdnyckel vid första kontakten. Vi har alla sett detta meddelande:
+```
 The authenticity of host 'foo.example.net (x.x.x.x)' can't be established.
 ECDSA key fingerprint is SHA256:bbFasR3yR1ellOSPnLOjYTWkAdGNnhNnUybkbrf5apc.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?

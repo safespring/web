@@ -225,7 +225,8 @@ Vi använder [exemplen][sftfexamples] i Terraform‑modulens [git‑repo][sftfmo
 
 Exempel i https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-rudder-minimal-poc
 
-#### Terraform-kod```terraform
+#### Terraform-kod
+```terraform
 
 terraform {
   required_version = ">= 0.14.0"
@@ -319,17 +320,20 @@ Vi skapar två säkerhetsgrupper: en «interconnect»-säkerhetsgrupp där alla 
 Ingen av instanserna har mer än ett gränssnitt. Detta är avsiktligt. Om du inte vet varför, läs inlägget om [Safespring-nätverksmodellen][netblog]
 {{% /note %}}
 
-#### Konfiguration av Rudder Ansible-kollektionen (requirements.yml)```yaml
+#### Konfiguration av Rudder Ansible-kollektionen (requirements.yml)
+```yaml
 collections:
   - name: https://github.com/Normation/rudder-ansible.git
     type: git
     version: master
 ```
 För att kunna använda kollektionen rudder-ansible måste vi installera den lokalt.
-Detta görs genom att skapa filen `requirements.yml` som visats ovan och köra:```shell
+Detta görs genom att skapa filen `requirements.yml` som visats ovan och köra:
+```shell
 $ ansible-galaxy install -r requirements.yml
 ```
-#### Ansible-playbooken (configure.yml)```yaml
+#### Ansible-playbooken (configure.yml)
+```yaml
 ---
 - name: Install Rudder Server
   hosts: os_metadata_role=rudder_server
@@ -366,7 +370,8 @@ Detta är ett omfattande ämne och vi går bara igenom grunderna för att komma 
 
 När Ansible-playbooken körs och rollerna i den tillämpas får vi en Rudder-server på instansen `rudder-server`, och Rudder-agenter på instanserna `rudder-client`. Rudder-agenterna konfigureras att använda Rudder-serverns IP-adress som sin policyserver via variabeln `policy_server:` i Ansible-rollen rudder_agent. Rudder-servern startas med ett självsignerat certifikat för webbgränssnittet och API:t. Dessa måste förstås ersättas med giltiga certifikat innan Rudder-servern tas i produktion. Här fokuserar vi bara på ett minimalt proof-of-concept utan produktionsdata, så vi väljer att använda det självsignerade certifikatet och ignorera varningarna för det när vi interagerar med Rudder-servern.
 
-Rudder-servern behöver ett administratörskonto för att kunna ställas in för användning. Detta görs genom att logga in på Rudder-serverns instans och köra följande kommando:```console
+Rudder-servern behöver ett administratörskonto för att kunna ställas in för användning. Detta görs genom att logga in på Rudder-serverns instans och köra följande kommando:
+```console
 root@rudder-server:~# rudder server create-user -u  admin
 New password:
 Re-type new password:
@@ -377,7 +382,8 @@ Efter detta kan du logga in på Rudder-serverns webbgränssnitt på `https://<ip
 
 De två `rudder-client`-instanserna kan nu ses under "Node Management/Pending Nodes" i GUI:t. Det innebär att de två nya klienterna/agenterna behöver accepteras av policyservern för att servern ska kunna hantera dem. Du kan göra detta i webbgränssnittet genom att markera den och trycka på knappen "accept". När noder accepteras flyttas de från listan "Pending Nodes" till listan "Nodes".
 
-Om du klickar på en nod i listan "Pending Nodes" får du mer information. "Node ID" är ett unikt ID för varje nod/agent. Du kan verifiera den väntande nodens "Node ID" genom att jämföra det med utdata från följande kommando på själva noden/agenten/klienten.```console
+Om du klickar på en nod i listan "Pending Nodes" får du mer information. "Node ID" är ett unikt ID för varje nod/agent. Du kan verifiera den väntande nodens "Node ID" genom att jämföra det med utdata från följande kommando på själva noden/agenten/klienten.
+```console
 root@rudder-client-1:~# rudder agent info |grep UUID
                UUID: c9e80279-00d3-4ee3-a7e1-8491955ebd3c
 root@rudder-client-1:~#
@@ -385,23 +391,27 @@ root@rudder-client-1:~#
 Eller så kan du göra det med verktyget "rudder-cli" via API:et som visas nedan.
 
 Observera listan över väntande noder med `rudder-cli` och `jq`. (Det finns bara
-en nod kvar i väntande tillstånd eftersom den andra redan har accepterats.)```console
+en nod kvar i väntande tillstånd eftersom den andra redan har accepterats.)
+```console
 root@rudder-server:~# rudder-cli node list_pending -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 bdfbd21c-d46d-403b-9836-06e2d282b704
 root@rudder-server:~#
 ```
 
-Notera ID:t för den väntande agenten på agenten själv```console
+Notera ID:t för den väntande agenten på agenten själv
+```console
 root@rudder-client-2:~# rudder agent info |grep UUID
                UUID: bdfbd21c-d46d-403b-9836-06e2d282b704
 root@rudder-client-2:~#
 ```
-Acceptera sedan noden```console
+Acceptera sedan noden
+```console
 root@rudder-server:~# rudder-cli node accept bdfbd21c-d46d-403b-9836-06e2d282b704  -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 bdfbd21c-d46d-403b-9836-06e2d282b704
 root@rudder-server:~#
 ```
-Och observera sedan att noden har flyttats från listan "pending" till listan "node":```console
+Och observera sedan att noden har flyttats från listan "pending" till listan "node":
+```console
 root@rudder-server:~# rudder-cli node list -t erpaNdoBe4A96VpIlWrCpUEs93LTvVBf  --skip-verify |jq '.nodes[].id' -r
 root
 c9e80279-00d3-4ee3-a7e1-8491955ebd3c

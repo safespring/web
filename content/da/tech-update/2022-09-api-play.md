@@ -41,7 +41,8 @@ Dette blogindlæg beskriver læringspunkterne (som også kan være nyttige i and
 
 ## Indhentning af information via kommandolinjegrænsefladen (CLI)
 
-For at kunne uploade og efterfølgende downloade via presign-metoden skal man programmæssigt indhente tre informationer: S3 access key, S3 secret key og S3 endpoint URL. Jeg forventede, at dette ville være trivielt, og for S3 access key og S3 secret key var det rigtigt. Det er så enkelt som:```shell
+For at kunne uploade og efterfølgende downloade via presign-metoden skal man programmæssigt indhente tre informationer: S3 access key, S3 secret key og S3 endpoint URL. Jeg forventede, at dette ville være trivielt, og for S3 access key og S3 secret key var det rigtigt. Det er så enkelt som:
+```shell
 $ export AWS_ACCESS_KEY_ID="$(openstack ec2 credential list -c Access  -f value)"
 $ export AWS_SECRET_ACCESS_KEY="$(openstack ec2 credential list -c Secret  -f value)"
 ```
@@ -51,7 +52,8 @@ Så for automatisk at bruge den integrerede S3-tjeneste har vi kun brug for én 
 
 Lad os starte med den rene API-tilgang for at forstå, hvad der foregår. Disse eksempler er stærkt inspireret af OpenStack API curl [eksempler][oscurlexamples].
 
-Først autentificerer vi med projektscope. Lad os oprette en shell-funktion til at forberede JSON-data, som vi senere kan POST'e med curl:```shell
+Først autentificerer vi med projektscope. Lad os oprette en shell-funktion til at forberede JSON-data, som vi senere kan POST'e med curl:
+```shell
 function gen_os_auth_data_project_scope {
 cat <<EOF
 { "auth": {
@@ -78,18 +80,21 @@ EOF
 ```
 For at denne funktion virker, skal du sikre, at miljøvariablerne i funktionen er korrekt sat, før brug (på samme måde som når du bruger Openstack CLI eller Terraform)..
 
-Herefter bruger vi curl til at hente JSON-data fra OpenStack API'et:```shell
+Herefter bruger vi curl til at hente JSON-data fra OpenStack API'et:
+```shell
 $ curl  -s -H "Content-Type: application/json" -d"$(gen_os_auth_data_project_scope)" "${OS_AUTH_URL}/auth/tokens"
 ```
 Miljøvariablen `OS_AUTH_URL` indeholder det samme, som du ville angive, når du bruger [OpenStack CLI][osclidoc]. Kommandoen ovenfor giver dig det, som OpenStack CLI gennemsigtigt bruger til at finde endepunkter for alle de OpenStack-tjenester, som `OS_AUTH_URL` «annoncerer», nemlig tjenestekataloget, sammen med et kortlivet token til at få adgang til dem. Du er velkommen til at udforske datastrukturen, men for nu er vi kun interesserede i vores manglende oplysning: S3-endepunktets URL, som bør være den samme som den, der er angivet i GUI’en under «API Access / view credentials».
 
-Så for at få netop det, kan vi gøre:```shell
+Så for at få netop det, kan vi gøre:
+```shell
 curl  -s -H "Content-Type: application/json" -d"$(gen_os_auth_data_project_scope)" "${OS_AUTH_URL}/auth/tokens"|jq '.token.catalog[]|select(.type=="s3").endpoints[0].url' -r
 ```
 Nu har vi set, hvordan man får S3-endpointets URL, når man autentificerer som en personlig OpenStack-bruger. Den anbefalede måde at autentificere mod OpenStack fra scripts eller anden automationskode er dog at bruge [OpenStack
 applikationslegitimationsoplysninger][appcred]. Applikationslegitimationsoplysninger giver kun adgang til det projekt, de blev oprettet i. Personlige legitimationsoplysninger kan have langt bredere adgang og udgør derfor en langt større konsekvens ved et brud. Applikationslegitimationsoplysninger er lette at rotere og bør have en anden (kortere) livscyklus end dine personlige legitimationsoplysninger, og sidst men ikke mindst risikerer du ikke at eksponere dine personlige legitimationsoplysninger, når du bruger applikationslegitimationsoplysninger fra kørende kode.
 
-Så lad os se, hvordan vi kan få S3-endpointets URL ved at autentificere med et sæt applikationslegitimationsoplysninger. Fremgangsmåden er ikke meget anderledes. Forskellen er, at vi nu vil autentificere med «globalt scope». Sådan her:```shell
+Så lad os se, hvordan vi kan få S3-endpointets URL ved at autentificere med et sæt applikationslegitimationsoplysninger. Fremgangsmåden er ikke meget anderledes. Forskellen er, at vi nu vil autentificere med «globalt scope». Sådan her:
+```shell
 function gen_os_auth_data_appcred_global_scope {
 cat <<EOF
 { "auth": {
@@ -107,19 +112,22 @@ EOF
 ```
 Du skal naturligvis igen sætte miljøvariablerne i overensstemmelse med de
 oplysninger, du fik, da du oprettede [applikationslegitimationsoplysninger][appcred]. Ellers er det
-det samme:```shell
+det samme:
+```shell
 curl  -s -H "Content-Type: application/json" -d"$(gen_os_auth_data_appcred_global_scope)" "${OS_AUTH_URL}/auth/tokens"|jq '.token.catalog[]|select(.type=="s3").endpoints[0].url' -r
 ```
 ## Hent S3-endpoint-URL'en med Python eller Ansible
 
 Det er også muligt at hente servicekataloget både direkte fra Python ved hjælp af [OpenStack Python-SDK][pysdk] og med [Ansible][ansibleosauth].
 
-For at hente S3-endpoint-URL'en med Python-SDK'et kan du gøre følgende:```python
+For at hente S3-endpoint-URL'en med Python-SDK'et kan du gøre følgende:
+```python
 # cloud is an entry in your clouds.yaml containing the other necessary parameters for talking to the Openstack API
 conn = openstack.connect(cloud=cloud, username=os.environ['OS_USERNAME'], password=os.environ['OS_PASSWORD'])
 print(conn.endpoint_for('s3'))
 ```
-For at få S3-endpointets URL med Ansible kan du gøre sådan her:```ansible
+For at få S3-endpointets URL med Ansible kan du gøre sådan her:
+```ansible
   - name: Authenticate to the cloud and retrieve the service catalog
       openstack.cloud.auth:
 

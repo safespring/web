@@ -76,7 +76,8 @@ Vi bruger [eksemplerne][sftfexamples] i Terraform-modulets [git-repo][sftfmodule
 
 ### [Eksempel 1][ex1]: Én instans med standardparametre
 
-[ex1]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf```
+[ex1]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
+```
 module my_sf_instance {
    source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
    # name          = "hello-safespring"
@@ -109,7 +110,8 @@ Parameteren `config_drive` bruges sjældent. Hvis du ikke ved, hvad den bruges t
 
 ### [Eksempel 2][ex2]: Et sæt på 3 instanser ved hjælp af count
 
-[ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf```
+[ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
+```
 module my_sf_instances {
    count           = 3
    source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
@@ -121,7 +123,8 @@ Her har vi tilføjet en count på 3, og vi bruger count-indekset til at skelne m
 
 ### [Eksempel 3][ex3]: Sikkerhedsgruppe(r) og nøglepar som en del af koden
 
-[ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf```
+[ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
+```
 # This is needed when creating resources directly. When using modules
 # the modules will have this included.
 terraform {
@@ -185,7 +188,8 @@ Det er helt op til dig, om du vil bruge vores modulbibliotek, oprette dine egne 
 
 ### [Eksempel 4][ex4]: Maps definerer instanser og regler for sikkerhedsgrupper
 
-[ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf```
+[ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf
+```
 module ingress {
    source = "github.com/safespring-community/terraform-modules/v2-compute-security-group"
    name = "ingress"
@@ -272,7 +276,8 @@ Det er værd at bemærke, at parameteren `delete_default_rules = true` fjerner s
 
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 
-Det ville være rart, hvis du kunne kombinere iteration med `for_each` (map) og count, ikke? På den måde kunne du sige: «Giv mig 10 webservere uden datadisk på det offentlige netværk med flavor X, og 2 backend-servere på default-netværket med en 100GB datadisk». Men hvis du forsøger at kombinere dem i det samme kald til `v2-compute-instance`, får du en fejl, der siger:```
+Det ville være rart, hvis du kunne kombinere iteration med `for_each` (map) og count, ikke? På den måde kunne du sige: «Giv mig 10 webservere uden datadisk på det offentlige netværk med flavor X, og 2 backend-servere på default-netværket med en 100GB datadisk». Men hvis du forsøger at kombinere dem i det samme kald til `v2-compute-instance`, får du en fejl, der siger:
+```
 The "count" and "for_each" meta-arguments are mutually-exclusive, only one
 should be used to be explicit about the number of resources to be created.
 ```
@@ -280,7 +285,8 @@ Det kan dog gøres ved at indkapsle en af dem i sit eget modul.
 Lad os sige, at vi opretter følgende lokale modul i en mappe med navnet
 `./a-set-of-instances`:
 
-`main.tf````
+`main.tf`
+```
 module my_sf_instances {
    source          = "github.com/safespring-community/terraform-modules/v2-compute-instance"
    name            = "${var.prefix}-${count.index + 1}.example.com"
@@ -292,7 +298,8 @@ module my_sf_instances {
    flavor          = var.flavor
 }
 ```
-`variables.tf````
+`variables.tf`
+```
 variable "i_count" {
   description = "Count"
   type        = number
@@ -327,7 +334,8 @@ variable "data_disks" {
   )
 }
 ```
-`providers.tf````
+`providers.tf`
+```
 terraform {
   required_version = ">= 0.14.0"
     required_providers {
@@ -337,7 +345,8 @@ terraform {
   }
 }
 ```
-Og så denne kode i vores `main.tf`:```
+Og så denne kode i vores `main.tf`:
+```
 locals {
   instances = {
     "web" = {

@@ -35,10 +35,12 @@ For å provisjonere virtuell infrastruktur på OpenStack bruker Kubespray Terraf
 
 ## Provisjoner infrastrukturen
 
-1. Opprett først en katalog der du legger lokal klyngekonfigurasjon og tilstandsfiler:   ```bash
+1. Opprett først en katalog der du legger lokal klyngekonfigurasjon og tilstandsfiler:   
+```bash
      $ mkdir -p ~/kubespray-clusters/minimal-k8s
    ```
-1. Klon kubespray-repositoriet til din foretrukne plassering, og sjekk ut den nyeste versjonen:   ```bash
+1. Klon kubespray-repositoriet til din foretrukne plassering, og sjekk ut den nyeste versjonen:   
+```bash
    $ cd ~/git/
    $ git clone https://github.com/kubernetes-sigs/kubespray.git
    $ cd kubespray
@@ -46,7 +48,8 @@ For å provisjonere virtuell infrastruktur på OpenStack bruker Kubespray Terraf
    (....)
    $ git checkout v2.19
    ```
-1. Opprett en Terraform-variabelfil for infrastrukturen (eksempel):   ```hcl
+1. Opprett en Terraform-variabelfil for infrastrukturen (eksempel):   
+```hcl
    $ cat ~/kubespray-clusters/minimal-k8s/cluster.tfvars
    use_existing_network = "true"
    force_null_port_security = "true"
@@ -116,7 +119,8 @@ Flavors må angis som flavor-ID-er. De kan finnes ved å bruke OpenStack CLI med
 
 Kubespray-installasjonen som vi skal bruke senere, vil konfigurere en skyleverandørkonfigurasjon i klyngen for å bruke dynamisk provisjonert lagring og koble til podder i klyngen. Installasjonen vil kopiere miljøvariablene som brukes til å provisjonere infrastrukturen, og lagre dem i klyngen for dette formålet. For å unngå å lekke din personlige OpenStack-påloggingsinformasjon inn i klyngens cloud-config, bør du heller opprette en [applikasjonslegitimasjon][appcred] og bruke den både til infrastrukturprovisjonering med Terraform og slik at Ansible-playbookene kan plukke den opp og kopiere den ved installasjon av K8S.
 
-1. Kort fortalt, gjør dette:   ```bash
+1. Kort fortalt, gjør dette:   
+```bash
    $ openstack application credential create dummy
    +--------------+----------------------------------------------------------------------------------------+
    | Field        | Value                                                                                  |
@@ -133,7 +137,8 @@ Kubespray-installasjonen som vi skal bruke senere, vil konfigurere en skyleveran
    | user_id      | 9956b53cf1ca4967a7a945b4e6657cf6                                                       |
    +--------------+----------------------------------------------------------------------------------------+
    ```
-1. Opprett deretter en miljøfil med følgende informasjon og `source` den:   ```bash
+1. Opprett deretter en miljøfil med følgende informasjon og `source` den:   
+```bash
    export OS_AUTH_URL=<same-as-in-your-personal-openstack-cli-config>
    export OS_REGION_NAME=<same-as-in-your-personal-openstack-cli-config>
    export OS_APPLICATION_CREDENTIAL_SECRET=fWtpQpR1-HShPkjjCa8pdMoI6oTWPQtB38qQVR-fjTJyynnLMjexY0T7M-2CQjqZMjLv4hct15leIRA4up4WWA
@@ -148,7 +153,8 @@ Kubespray-installasjonen som vi skal bruke senere, vil konfigurere en skyleveran
 $ terraform init
 $ terraform apply -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvars  -state=$HOME/kubespray-clusters/minimal-k8s/terraform.tfstate
 (...)`
-1. Legg merke til at vi fikk infrastrukturen som lovet av terraform-koden, for eksempel:   ```
+1. Legg merke til at vi fikk infrastrukturen som lovet av terraform-koden, for eksempel:   
+```
    $ openstack server list |grep mini
    | 0ac5616f-aff7-4d5a-849b-54cbec614137 | minimal-k8s-k8s-master-nf-1 | ACTIVE  | public=212.162.146.113, 2a09:d400:0:1::296 | ubuntu-20.04             | l2.c4r8.500  |
    | 169d54b5-995b-4271-9b18-87547097d295 | minimal-k8s-k8s-node-nf-1   | ACTIVE  | public=212.162.147.139, 2a09:d400:0:1::221 | ubuntu-20.04             | l2.c4r8.500  |
@@ -161,12 +167,14 @@ $ terraform apply -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvars 
 $ cp ~/git/kubespray/contrib/terraform/terraform.py ~/kubespray-clusters/minimal-k8s
 $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
 `
-1. Gå til Kubespray-repoet, opprett et Python-virtualenv, aktiver det og installer Kubespray-avhengighetene.   ```bash
+1. Gå til Kubespray-repoet, opprett et Python-virtualenv, aktiver det og installer Kubespray-avhengighetene.   
+```bash
    $ python3 -m venv venv
    $ source venv/bin/activate
    $ pip install -r requirements.txt
    ```
-1. Sjekk at du har ssh-tilgang og at inventory fungerer.   ```bash
+1. Sjekk at du har ssh-tilgang og at inventory fungerer.   
+```bash
    $ ansible -i ~/kubespray-clusters/minimal-k8s/terraform.py -m ping all
    [WARNING]: Skipping callback plugin 'ara_default', unable to load
    minimal-k8s-k8s-master-nf-1 | SUCCESS => {
@@ -182,7 +190,8 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
        "ping": "pong"
    }
    ```
-1. Opprett en konfigurasjonsfil for Kubespray Ansible-oppsettet, for eksempel slik:   ```yaml
+1. Opprett en konfigurasjonsfil for Kubespray Ansible-oppsettet, for eksempel slik:   
+```yaml
    mkdir -p ~/kubespray-clusters/minimal-k8s-old/group_vars/k8s_cluster
    vi ~/kubespray-clusters/minimal-k8s-old/group_vars/k8s_cluster/ck8s-k8s-cluster.yaml
    (edit stuff)
@@ -213,7 +222,8 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
    ```
    En omfattende veiledning for tilgjengelige parametere finnes i [Kubespray-
    dokumentasjonen][ksparams]
-1. Nå er det på tide å installere Kubernetes med Kubespray-playbooken og rollene.   ```
+1. Nå er det på tide å installere Kubernetes med Kubespray-playbooken og rollene.   
+```
    $ .venv/bin/ansible-playbook -i ~/kubespray-clusters/minimal-k8s/terraform.py cluster.yml -b
    ```
 1. Ta deg en kaffe eller to ..... eller kanskje til og med tre :-)
@@ -226,11 +236,13 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
    `kubeconfig_localhost: true` og `artifacts_dir: "{{ inventory_dir
 }}/artifacts"`. Denne filen gir full administratortilgang til klyngen (root) og bør
    beskyttes deretter.
-1. Sett miljøvariabelen `KUBECONFIG` til å peke på kubeconfigen for cluster-admin:   ```
+1. Sett miljøvariabelen `KUBECONFIG` til å peke på kubeconfigen for cluster-admin:   
+```
    $ cd ~/kubespray-clusters/minimal-k8s
    $ export KUBECONFIG=artifacts/admin.conf
    ```
-1. Undersøk noen egenskaper med kubectl:   ```bash
+1. Undersøk noen egenskaper med kubectl:   
+```bash
    $ kubectl get nodes
    NAME                          STATUS   ROLES                  AGE     VERSION
    minimal-k8s-k8s-master-nf-1   Ready    control-plane,master   6m40s   v1.23.7
@@ -269,7 +281,8 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
    NAME                   PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
    cinder-csi (default)   cinder.csi.openstack.org   Delete          WaitForFirstConsumer   true                   20m
    ```
-1. Test at lagringsklassen fungerer:   ```bash
+1. Test at lagringsklassen fungerer:   
+```bash
    cat pod-with-pvc.yml
    apiVersion: v1
    kind: Pod
@@ -324,7 +337,8 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
    $ kubectl get pods
    No resources found in default namespace.
    ```
-1. Test at ingressen fungerer:   ```bash
+1. Test at ingressen fungerer:   
+```bash
    $ cat apple.yml
    kind: Pod
    apiVersion: v1
@@ -417,7 +431,8 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
    på alle arbeidsnoder, via nginx ingress-kontrolleren som ble installert
    fordi `ingress_nginx_enabled: true` og `ngress_nginx_host_network: true`
 
-1. La oss se om vi kan nå dem utenfra klyngen:   ```bash
+1. La oss se om vi kan nå dem utenfra klyngen:   
+```bash
    $ openstack server list |grep node
    | 169d54b5-995b-4271-9b18-87547097d295 | minimal-k8s-k8s-node-nf-1   | ACTIVE  | public=212.162.147.139, 2a09:d400:0:1::221 | ubuntu-20.04             | l2.c4r8.500  |
    | a757b87c-03e1-4dd9-813b-8e40fd575196 | minimal-k8s-k8s-node-nf-2   | ACTIVE  | public=212.162.147.52, 2a09:d400:0:1::17b  | ubuntu-20.04             | l2.c4r8.500  |
@@ -431,7 +446,8 @@ $ chmod +x ~/kubespray-clusters/minimal-k8s/terraform.py
 
 Da runder vi av dette blogginnlegget. Husk at dette oppsettet på ingen måte er egnet for produksjonsbruk. Ta gjerne kontakt med oss på [info@safespring.com](mailto:info@safespring.com), så hjelper vi deg med å finne riktig løsning for Kubernetes i produksjon også.
 
-Når du er ferdig med å teste, kan du fjerne hele oppsettet med:```bash
+Når du er ferdig med å teste, kan du fjerne hele oppsettet med:
+```bash
 $ cd ~/git/kubespray/contrib/terraform/openstack
 $ terraform destroy -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvars  -state=$HOME/kubespray-clusters/minimal-k8s/terraform.tfstate
 ```

@@ -153,7 +153,8 @@ din roll eller playbook. Vi tittar på det i ett senare exempel.
 
 Vi använder koden [exempel][sftfexamples] i Terraform-modulens [git-repo][sftfmodules] som referens och förklarar var och en under koden.
 
-### Två webbservrar med Nginx```
+### Två webbservrar med Nginx
+```
 terraform {
   required_version = ">= 0.14.0"
   required_providers {
@@ -227,10 +228,12 @@ module my_sf_instances {
 ```
 Först skapar vi två instanser på nätverket `public`, med flavorn `l2.c2r4.100` och avbilden `ubuntu-20.04`. Observera att vi anger `role=webserver`. När vi kör `terraform apply` på detta skapas instanser, nyckelpar och säkerhetsgrupper. Det finns ännu ingen webbserver installerad eller konfigurerad. Det är det vi ska använda Ansible till.
 
-För att återanvända rollen som vi angav i Terraform-koden för instanserna behöver vi ett inventeringsskript som läser Terraform-statefil(er) och genererar ett inventory i ett format som Ansible kan använda. [Ansible Terraform Inventory-skriptet][ati] kommer att användas för detta ändamål. Vi kopierar skriptet till en katalog som heter `ati` och kör denna playbook.```
+För att återanvända rollen som vi angav i Terraform-koden för instanserna behöver vi ett inventeringsskript som läser Terraform-statefil(er) och genererar ett inventory i ett format som Ansible kan använda. [Ansible Terraform Inventory-skriptet][ati] kommer att användas för detta ändamål. Vi kopierar skriptet till en katalog som heter `ati` och kör denna playbook.
+```
 ansible-playbook -i ati example.yml
 ```
-Innehållet i `example.yml````
+Innehållet i `example.yml`
+```
 - hosts: os_metadata_role=webserver
   gather_facts: no
   become: true
@@ -262,7 +265,8 @@ De två följande uppgifterna installerar Nginx-paketet och skapar en `index.htm
 
 I det här exemplet visar vi hur man kombinerar statiskt och dynamiskt inventory för att koppla ihop gruppnamn som en Ansible-roll förväntar sig med gruppnamn som tillhandahålls av OpenStack-metadata-rollen i Terraform-state.
 
-Den praktiska poängen med exemplet är också att visa en automatiserad installation av Wireguard på en uppsättning klienter för att dirigera deras trafik genom en gateway. Detta kan vara användbart om klienter behöver komma åt en extern tjänst med en stabil källadress, till exempel om den externa tjänsten använder IP-baserade ACL:er.```
+Den praktiska poängen med exemplet är också att visa en automatiserad installation av Wireguard på en uppsättning klienter för att dirigera deras trafik genom en gateway. Detta kan vara användbart om klienter behöver komma åt en extern tjänst med en stabil källadress, till exempel om den externa tjänsten använder IP-baserade ACL:er.
+```
 terraform {
   required_version = ">= 0.14.0"
   required_providers {
@@ -342,7 +346,8 @@ Vi lade också till en ny parameter i Safesprings compute-instansmodul, nämlige
 
 Vi tilldelar Wireguard-IP-adressen för gatewayinstansen till den första adressen i intervallet `192.168.45.0/24`, och sedan tilldelar vi klienternas adresser till den andra, tredje och så vidare genom att använda funktionen `cidrhost("192.168.45.0/24",count.index + 2)`. Count-indexet börjar på 0 och dokumentation för Terraform-funktionen `cidrhost()` finns i [Terraform-dokumentationen][tfdocs]
 
-Och nu över till Ansible. Vi skapade en inventory-katalog med följande innehåll:```
+Och nu över till Ansible. Vi skapade en inventory-katalog med följande innehåll:
+```
 $ ls -l inventory
 total 4
 -rw-rw-r-- 1 jarle jarle 241 May 25 13:36 hosts
@@ -350,7 +355,8 @@ lrwxrwxrwx 1 jarle jarle  22 May 25 13:32 _terraform.py -> ../../ati/terraform.p
 ```
 Filen `_terraform.py` är en symbolisk länk till det dynamiska inventory-skriptet. Anledningen till att den börjar med ett understreck är att det som definieras i den statiska inventoryn (filen `hosts `) hänvisar till sådant som produceras av den dynamiska inventoryn. Filer i inventory-katalogen bearbetas i alfabetisk ordning, därför måste den dynamiska inventoryn bearbetas före den statiska; annars finns de refererade undergrupperna i den statiska inventoryn ännu inte när den bearbetas.
 
-Innehållet i filen `hosts`:```
+Innehållet i filen `hosts`:
+```
 [wireguard_gateway]
 [wireguard_gateway:children]
 os_metadata_role=wg_gw
@@ -370,7 +376,8 @@ från de respektive grupperna i det dynamiska inventoryt, nämligen
 Dessutom definierar vi de statiska variablerna `wireguard_forward_interface` och
 `wireguard_connect_interface`
 
-Playbooken ser ut så här:```
+Playbooken ser ut så här:
+```
 - hosts: wireguard_gateway
   become: yes
   remote_user: ubuntu
@@ -391,18 +398,21 @@ Playbooken ser ut så här:```
 ```
 Först kör vi ett play som tillämpar Wireguard-rollen på Wireguard-gatewayn och sedan kör vi ytterligare ett play som tillämpar samma roll på Wireguard-klienter. Detta eftersom klienterna behöver information som skapades av playet för gatewayn. Att värdvariabeln `wireguard_address` fylls i förväntas av rollen utifrån värdet `{{metadata.wg_ip}}`, som kommer från det dynamiska inventory-skriptet och pekar tillbaka på `wg_ip` som definierades i Terraform.
 
-Sedan kör vi playbooken med det blandade statiska och dynamiska inventoryt:```
+Sedan kör vi playbooken med det blandade statiska och dynamiska inventoryt:
+```
 ansible-playbook -i inventory wg.yml
 ```
 Detta kommer att installera Wireguard och konfigurera klienter att dirigera all trafik via
-Wireguard-gatewayn över det Wireguard-krypterade överlagringsnätverket. Så här:```
+Wireguard-gatewayn över det Wireguard-krypterade överlagringsnätverket. Så här:
+```
 $ openstack server list |grep wire
 | 666bc025-3c86-4bc8-9278-66600a49f522 | wireguard-client-2.example.com | ACTIVE | public=185.189.29.84, 2a0a:bcc0:40::40c  | ubuntu-20.04                   | l2.c2r4.100 |
 | 9c260891-954b-418c-9be5-aff2b8482164 | wireguard-gw.example.com       | ACTIVE | public=185.189.28.40, 2a0a:bcc0:40::d3   | ubuntu-20.04                   | l2.c2r4.100 |
 | f3f361c3-19f8-45dd-887e-ca2dd7fa98f2 | wireguard-client-1.example.com | ACTIVE | public=185.189.29.118, 2a0a:bcc0:40::326 | ubuntu-20.04                   | l2.c2r4.100 |
 ```
 Gatewayns IP-adress är `185.189.28.40`. Om vi loggar in på klienterna
-och frågar vad som är vår källadress sedd från Internet.```
+och frågar vad som är vår källadress sedd från Internet.
+```
 $ ssh ubuntu@185.189.29.84
 (..)
 $ curl ifconfig.me

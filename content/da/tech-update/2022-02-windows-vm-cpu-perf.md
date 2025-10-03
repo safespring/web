@@ -52,7 +52,8 @@ Da vi søgte i emnet Windows og KVM (som vi bruger til virtualisering), fandt vi
 
 Løsningen, vi fandt, var pinligt enkel. Tilføj blot image-egenskaben `os_type=windows`, og OpenStack tilføjer nogle «Hyper-V Enlightenments» til KVM-XML-konfigurationen for den VM, der oprettes ud fra det image ([4][4]).
 
-Den konfiguration, der tilføjes som følge af denne egenskab, er:```
+Den konfiguration, der tilføjes som følge af denne egenskab, er:
+```
 <features>
     <acpi/>
     <apic/>

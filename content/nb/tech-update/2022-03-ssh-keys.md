@@ -79,7 +79,8 @@ En annen måte å separere og/eller ta full kontroll over tilgangen på er å br
 
 ### SSH offentlig vertsnøkkel
 
-I tillegg til SSH-nøkkelparene som brukes for å gi brukere tilgang, finnes også SSH-vertsnøkkelen. Dette er metoden en vert identifiserer seg entydig overfor tilkoblede klienter med. Det er opp til klienten å stole på denne vertsnøkkelen ved første kontakt. Vi har alle sett denne meldingen:```
+I tillegg til SSH-nøkkelparene som brukes for å gi brukere tilgang, finnes også SSH-vertsnøkkelen. Dette er metoden en vert identifiserer seg entydig overfor tilkoblede klienter med. Det er opp til klienten å stole på denne vertsnøkkelen ved første kontakt. Vi har alle sett denne meldingen:
+```
 The authenticity of host 'foo.example.net (x.x.x.x)' can't be established.
 ECDSA key fingerprint is SHA256:bbFasR3yR1ellOSPnLOjYTWkAdGNnhNnUybkbrf5apc.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?

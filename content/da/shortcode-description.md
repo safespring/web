@@ -11,7 +11,8 @@ aliases:
 
 For at inkludere en side i `services`-shortcoden kan du tilføje parameteren `cardorder` til front matter på hver tjenesteside, som du vil have med i samlingen af kort. Værdien af parameteren "cardorder" bestemmer den rækkefølge, hvori kortet vises i samlingen. Denne shortcode er en fleksibel og tilpasningsbar måde at vise en visuelt tiltalende oversigt over Safesprings tjenester på dit websted.
 
-Kortets udseende er beskrevet i `layouts/_default/li-index` og kan tilpasses ved hjælp af parametre i sidens front matter. For eksempel bestemmer parameteren `cardcolor` farven på kortets kant og ikon, mens parameteren `cardicon` bestemmer det ikon, der vises på kortet. Derudover kan parametrene cardtitle og `cardintro` bruges til at tilpasse den tekst, der vises på kortet. {{% accordion title="HTML-kode for tjenester" %}}```html
+Kortets udseende er beskrevet i `layouts/_default/li-index` og kan tilpasses ved hjælp af parametre i sidens front matter. For eksempel bestemmer parameteren `cardcolor` farven på kortets kant og ikon, mens parameteren `cardicon` bestemmer det ikon, der vises på kortet. Derudover kan parametrene cardtitle og `cardintro` bruges til at tilpasse den tekst, der vises på kortet. {{% accordion title="HTML-kode for tjenester" %}}
+```html
 <div class="flexcontainer-three">
   {{ $language := .Get 0 }} {{ if eq $language "en"}} {{ range (where
   $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
@@ -24,7 +25,8 @@ Kortets udseende er beskrevet i `layouts/_default/li-index` og kan tilpasses ved
   {{ end }}
 </div>
 ```
-### HTML-kode for `li-index````html
+### HTML-kode for `li-index`
+```html
 <a href="{{ .RelPermalink }}">
   <div class="flex-item shadow-1 border-hover-{{ .Params.cardorder }}">
     <style>
@@ -82,7 +84,8 @@ Nedenfor finder du en overordnet dokumentation af alle vores shortcodes til Hugo
 Opretter en call-to-action-sektion med to knapper. Den første knap tager to parametre (tekst og URL), mens den anden
 knap tager to parametre (tekst og URL).
 
-### Kode```html
+### Kode
+```html
 <br />
 <a class="button" target="_self" href="{{ .Get 1 | safeURL }}">{{ .Get 0 }}</a>
 <a
@@ -112,7 +115,8 @@ En primær knap med teksten "Ring til os" (linket til `/contact`) og et sekundæ
 Indsætter det JavaScript, der er nødvendigt for at aktivere funktionaliteten for accordion-elementer (åbne/lukke, glidende rulning, åbning af
 accordion via links).
 
-### Kode```html
+### Kode
+```html
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
@@ -191,7 +195,8 @@ Et klikbart element med overskriften "Mere information", som viser/skjuler sit i
 
 Viser en tabel, der sammenligner Azure-tjenester med open source-alternativer og angiver, om de er administreret af Safespring.
 
-### Kode```html
+### Kode
+```html
 <div class="container-table-wp mt-2">
   <div class="price-table">
     <div class="table">
@@ -218,7 +223,8 @@ Viser en tabel, der sammenligner Azure-tjenester med open source-alternativer og
   </div>
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< en-aks-alternatives >}}
 ```
 ### Renderet resultat
@@ -234,7 +240,8 @@ En tabel med forskellige Azure-tjenester, tilsvarende open source-alternativer o
 Opretter en knap, der linker enten til en ekstern URL (defineret i `.Params.link`) eller et sidebar-link (defineret i
 `.Params.sidebarlinkurl`).
 
-### Kode```html
+### Kode
+```html
 <br />
 {{ if $.Page.Params.link }}
 <a class="button" target="_blank" href="{{ $.Page.Params.link }}"
@@ -248,7 +255,8 @@ Opretter en knap, der linker enten til en ekstern URL (defineret i `.Params.link
 </a>
 {{ end }}
 ```
-### Eksempler```
+### Eksempler
+```
 {{ < button link="https://example.com" knapp="Klicka här" >}}
 ```
 ### Gengivet resultat
@@ -263,7 +271,8 @@ En klikbar knap med teksten "Klik her", der fører til `https://example.com`.
 
 En variant af `button.html` med samme adfærd, men som kan bruges separat efter behov.
 
-### Kode```html
+### Kode
+```html
 <br />
 {{ if $.Page.Params.link }}
 <a class="button" target="_blank" href="{{ $.Page.Params.link }}"
@@ -277,7 +286,8 @@ En variant af `button.html` med samme adfærd, men som kan bruges separat efter 
 </a>
 {{ end }}
 ```
-### Eksempel```
+### Eksempel
+```
 {{< button link="https://example.com" knapp="Klicka här" >}}
 ```
 ### Renderet resultat
@@ -292,7 +302,8 @@ En klikbar knap med teksten "Klik her", der leder til `https://example.com`, i s
 
 Viser et begivenhedskort med dato, begivenhedstype, platform og tidspunkt, formateret som en minikalender.
 
-### Kode```html
+### Kode
+```html
 <div>
   <style>
     .safespring-event .desc .des,
@@ -452,10 +463,12 @@ Viser et begivenhedskort med dato, begivenhedstype, platform og tidspunkt, forma
 
 Bruges til at omslutte indhold, der skal gengives af Mermaid (diagrammer, flowdiagrammer osv.).
 
-### Kode```html
+### Kode
+```html
 <div class="mermaid">{{ .Inner }}</div>
 ```
-### Eksempler```
+### Eksempler
+```
 {{< chart >}}
 graph LR
 A[Start] --> B{Beslut}
@@ -475,10 +488,12 @@ Et Mermaid-diagram efter den definerede syntaks.
 
 Omslutter indhold i et layout med to kolonner.
 
-### Kode```html
+### Kode
+```html
 <div class="column-two">{{ .Inner }}</div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< column-two >}}
 Kolumn 1 innehåll
 {{< /column-two >}}
@@ -495,7 +510,8 @@ Viser indhold i to kolonner (kræver supplerende CSS).
 
 Viser et kompakt kontaktkort med titel, navn og e-mail-link.
 
-### Kode```html
+### Kode
+```html
 <div class="flex-content">
   <div class="body p-relative bg-white shadow-1">
     <div class="d-block w-full"></div>
@@ -521,7 +537,8 @@ Viser et kompakt kontaktkort med titel, navn og e-mail-link.
   </div>
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< contact-small title="Support" name="Jane Doe" email="jane@example.com" >}}
 ```
 ### Gengivet resultat
@@ -536,7 +553,8 @@ Et lille kontaktkort med "Support", "Jane Doe" og et e-mail-link.
 
 Viser et mere detaljeret kontaktkort med valgfrit billede, telefon, e-mail og adresse.
 
-### Kode```html
+### Kode
+```html
 <div class="contact-container">
   {{ if .Params.picture }}
   <div
@@ -606,7 +624,8 @@ Viser et mere detaljeret kontaktkort med valgfrit billede, telefon, e-mail og ad
   });
 </script>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< contact picture="jane.jpg" name="Jane Doe" title="CEO" phone="+46701234567" email="jane@example.com" address="123 Main St" address-link="/contact" >}}
 ```
 ### Renderet resultat
@@ -621,7 +640,8 @@ Et kontaktkort med billede, navn, titel, telefon, e-mail og adresse.
 
 Opretter et horisontalt kort med et baggrundsbillede, overskrift, tekst (eller indre indhold) og et valgfrit knaplink.
 
-### Kode```html
+### Kode
+```html
 <div
   class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row"
 >
@@ -643,7 +663,8 @@ Opretter et horisontalt kort med et baggrundsbillede, overskrift, tekst (eller i
   </div>
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< custom-card image="/img/card.jpg" cardtitle="Vår tjänst" text="Läs mer om vår tjänst." link="https://example.com" linktext="Läs mer" />}}
 ```
 ### Gengivet resultat
@@ -658,13 +679,15 @@ Et horisontalt kort med baggrundsbillede, overskrift og en knap til videre læsn
 
 Viser en 'disclaimer'-boks med en titel og tekst.
 
-### Kode```html
+### Kode
+```html
 <div class="disclaimer shadow-1">
   <p class="disclaimer-title">{{ .Get 0 }}</p>
   <p>{{ .Inner }}</p>
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< disclaimer "Varning" >}}
 Informationen på denna sida kan ändras utan förvarning.
 {{< /disclaimer >}}
@@ -681,10 +704,12 @@ En boks med overskriften "Advarsel" og meddelelsen "Oplysningerne på denne side
 
 Omslutter indhold i en flex-container til et fleksibelt layout.
 
-### Kode```html
+### Kode
+```html
 <div class="flex-container">{{ .Inner }}</div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< flexbox >}}
 Innehåll 1 | Innehåll 2 | Innehåll 3
 {{< /flexbox >}}
@@ -701,7 +726,8 @@ Viser indholdet horisontalt i et flex-layout.
 
 Opretter et horisontalt kort med baggrundsbillede, overskrift, tekst og en knap.
 
-### Kode```html
+### Kode
+```html
 <div
   class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
 >
@@ -720,7 +746,8 @@ Opretter et horisontalt kort med baggrundsbillede, overskrift, tekst og en knap.
   </div>
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< horisontal-card image="/img/card.jpg" cardtitle="Nyhet" text="Detta är en nyhet." link="https://example.com" linktext="Läs mer" >}}
 ```
 ### Renderet resultat
@@ -735,10 +762,12 @@ Et horisontalt kort med billede, overskrift, tekst og en knap til at læse mere.
 
 Omslutter flere "icon-block" i en container.
 
-### Kode```html
+### Kode
+```html
 <div class="icon-block-container">{{ .Inner }}</div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< icon-block-container >}}
 {{< icon-block icon="fas fa-star" color="#FFD700" text="Utvald" description="Topprankad" >}}
 {{< /icon-block-container >}}
@@ -755,7 +784,8 @@ En container, der rummer et eller flere "icon-block".
 
 Opretter en horisontal ikonblok med farvet baggrund, ikon og tekst. Kan valgfrit omsluttes af et link.
 
-### Kode```html
+### Kode
+```html
 {{ with .Get "link" }}
 <a class="icon-block-link" href="{{ . | safeURL }}"
   >{{ end }}
@@ -778,7 +808,8 @@ Opretter en horisontal ikonblok med farvet baggrund, ikon og tekst. Kan valgfrit
   {{ with .Get "link" }}</a
 >{{ end }}
 ```
-### Eksempel```
+### Eksempel
+```
 {{< icon-block-horisontal link="https://example.com" icon="fas fa-info" color="#00AEEF" text="Info" description="Mer information" >}}
 ```
 ### Renderet resultat
@@ -793,10 +824,12 @@ En vandret ikonblok med ikon, farve og teksten "Info" samt "Mere information".
 
 Omslutter små ikonblokke i en container.
 
-### Kode```html
+### Kode
+```html
 <div class="icon-block-small-container">{{ .Inner }}</div>
 ```
-### Eksempler```
+### Eksempler
+```
 {{< icon-block-small-container >}}
 {{< icon-block-small icon="fas fa-check" color="#28a745" text="OK" description="Allt bra" >}}
 {{< /icon-block-small-container >}}
@@ -813,7 +846,8 @@ En container til små ikonblokke.
 
 Opretter en lille ikonblok med ikon, tekst og beskrivelse. Kan omgives af et link.
 
-### Kode```html
+### Kode
+```html
 {{ with .Get "link" }}
 <a class="icon-block-link" href="{{ . }}"
   >{{ end }}
@@ -835,7 +869,8 @@ Opretter en lille ikonblok med ikon, tekst og beskrivelse. Kan omgives af et lin
   {{ with .Get "link" }}</a
 >{{ end }}
 ```
-### Eksempler```
+### Eksempler
+```
 {{< icon-block-small link="https://example.com" icon="fas fa-check" color="#28a745" text="OK" description="Allt bra" >}}
 ```
 ### Gengivet resultat
@@ -850,7 +885,8 @@ En lille ikonblok med teksten "OK" og beskrivelsen "Alt er godt", eventuelt link
 
 Viser en ikonblok, der kan indeholde enten et billede eller et ikon samt tekst og beskrivelse. Kan omgives af et link.
 
-### Kode```html
+### Kode
+```html
 {{ with .Get "link" }}
 <a class="icon-block-link" href="{{ . }}"
   >{{ end }}
@@ -873,7 +909,8 @@ Viser en ikonblok, der kan indeholde enten et billede eller et ikon samt tekst o
   {{ with .Get "link" }} </a
 >{{ end }}
 ```
-### Eksempel```
+### Eksempel
+```
 {{< icon-block link="https://example.com" icon="fas fa-star" color="#FFD700" text="Utvald" description="Topprankad" >}}
 ```
 ### Gengivet resultat
@@ -888,10 +925,12 @@ En ikonblok med et ikon eller billede samt overskrift og beskrivelse.
 
 Gengiver et enkelt ikon med den valgte farve.
 
-### Kode```html
+### Kode
+```html
 <i style="color: {{ .Get 1 | safeHTML }}" class="{{ .Get 0 }}"></i>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< icon "fas fa-heart" "#FF0000" >}}
 ```
 ### Renderet resultat
@@ -906,7 +945,8 @@ Et rødt hjerteikon.
 
 Viser en kompakt informationsboks med en titel, et navn og et e-mail-link.
 
-### Kode```html
+### Kode
+```html
 <div class="flex-content">
   <div class="body p-relative">
     <div class="d-block w-full"></div>
@@ -922,7 +962,8 @@ Viser en kompakt informationsboks med en titel, et navn og et e-mail-link.
   </div>
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< info title="Kontakt" name="John Smith" email="john@example.com" >}}
 ```
 ### Renderet resultat
@@ -937,10 +978,12 @@ En enkel informationsboks med titel, navn og e-mail-link.
 
 Omslutter indhold i en stylet informationsboks.
 
-### Kode```html
+### Kode
+```html
 <div class="flex-container bg-white shadow-1 br-5">{{ .Inner }}</div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< infobox >}}
 Detta är viktig information.
 {{< /infobox >}}
@@ -957,10 +1000,12 @@ En hvid boks med skygge (shadow-1), som indeholder valgfrit tekstindhold.
 
 Formaterer indledende eller ledende tekst i en særlig stil, ofte større eller mere fremtrædende.
 
-### Kode```html
+### Kode
+```html
 <div class="ingress"><p>{{ .Inner }}</p></div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< ingress >}}
 Välkommen till vår webbplats! Detta är inledande text.
 {{< /ingress >}}
@@ -977,10 +1022,12 @@ En kort indledning i en distinkt stil.
 
 Viser inline-indhold i et afsnit med en særlig overskriftsstil.
 
-### Kode```html
+### Kode
+```html
 <p><span class="inline_rubrik">{{ .Inner }}</span></p>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< inline "Observera: Detta är ett meddelande." >}}
 ```
 ### Renderet resultat
@@ -995,7 +1042,8 @@ Et afsnit med tekst i overskriftsstil.
 
 Opretter en knap til lokal navigation med tilpasset link, target, ikon og tekst.
 
-### Kode```html
+### Kode
+```html
 <br>
 <a href='{{ .Get "link" }}' {{ with .Get "target" }}target='{{ . }}'{{ else }}target='_self'{{ end }} class='button'>
   {{ with .Get "icon" }}<i class='fa-solid {{ . }}'></i>&nbsp;&nbsp;&nbsp;{{ end }}
@@ -1003,7 +1051,8 @@ Opretter en knap til lokal navigation med tilpasset link, target, ikon og tekst.
 </a>
 <br>
 ```
-### Eksempler```
+### Eksempler
+```
 {{< localbutton link="/about" target="_self" icon="fa-info" text="Mer info" >}}
 ```
 ### Renderet resultat
@@ -1018,10 +1067,12 @@ En knap med teksten "Mere info" og et ikon, som linker til `/about`.
 
 Opretter et tekstlink med en knaplignende stil (eller et enkelt tekstlink) uden baggrund.
 
-### Kode```html
+### Kode
+```html
 <a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
 ```
-### Eksempler```
+### Eksempler
+```
 {{< localtextbutton "Klicka här" "/page" >}}
 ```
 ### Renderet resultat
@@ -1036,13 +1087,15 @@ Et tekstlink med teksten "Klik her", som leder til `/page`.
 
 Viser en punktmarkeret notitsboks med en titel og en besked.
 
-### Kode```html
+### Kode
+```html
 <div class="note-dotted">
   <p class="note-dotted-title">{{ .Get 0 }}</p>
   {{ .Inner }}
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< note "Notis" >}}
 Glöm inte att uppdatera sidan.
 {{< /note >}}
@@ -1059,7 +1112,8 @@ En beskedboks med overskriften "Notits" og teksten "Glem ikke at opdatere siden.
 
 Opretter en FAQ-lignende accordion med et spørgsmål som overskrift og svaret i det skjulte indhold.
 
-### Kode```html
+### Kode
+```html
 <div class="accordion-box">
   <button class="accordion">{{ .Get "question" }}</button>
   <div class="panel content-body">
@@ -1079,7 +1133,8 @@ Opretter en FAQ-lignende accordion med et spørgsmål som overskrift og svaret i
   </div>
 </div>
 ```
-### Eksempler```
+### Eksempler
+```
 {{< question question="Vad är er returpolicy?" >}}
 Vi erbjuder 30 dagars returrätt.
 {{< /question >}}
@@ -1096,13 +1151,15 @@ Et klikbart spørgsmål med et skjult svar, der udfoldes ved klik.
 
 Viser et citat i blokformat med en valgfri person eller kilde.
 
-### Kode```html
+### Kode
+```html
 <div class="quote">
   <p>{{ .Inner }}</p>
   <p class="quote-person">{{ .Get 0 }}</p>
 </div>
 ```
-### Eksempler```
+### Eksempler
+```
 {{< quote "Albert Einstein" >}}
 Fantasi är viktigare än kunskap.
 {{< /quote >}}
@@ -1119,7 +1176,8 @@ Et blokcitat med teksten og personen "Albert Einstein" nedenunder.
 
 Gengiver en liste med tjenestekort afhængigt af hvilket sprog der angives (EN, NO eller standard).
 
-### Kode```html
+### Kode
+```html
 <div class="flexcontainer-three">
   {{ $language := .Get 0 }} {{ if eq $language "en"}} {{ range (where
   $.Site.RegularPages "Section" "en").ByParam "cardorder" }} {{ if isset .Params
@@ -1131,7 +1189,8 @@ Gengiver en liste med tjenestekort afhængigt af hvilket sprog der angives (EN, 
   .Render "li-index"}} {{ end }} {{ end }} {{ end }}
 </div>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< services "en" >}}
 ```
 ### Gengivet resultat
@@ -1146,7 +1205,8 @@ En liste med servicekort fra sektionen "en" (hvis cardorder er defineret).
 
 Viser en videospiller, der understøtter HLS-strømme. Bruger Hls.js til at initialisere videoen, hvis browseren understøtter det.
 
-### Kode```html
+### Kode
+```html
 <div class="webinarvideo">
   <video
     class="webinar-videoplayer"
@@ -1224,7 +1284,8 @@ Viser en videospiller, der understøtter HLS-strømme. Bruger Hls.js til at init
   });
 </script>
 ```
-### Eksempler```
+### Eksempler
+```
 {{< streamed-video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" >}}
 ```
 ### Renderet resultat
@@ -1239,13 +1300,15 @@ En videoafspiller med understøttelse af HLS-streaming og et forhåndsbillede (p
 
 Viser tekst med en tooltip, der dukker op ved hover.
 
-### Kode```html
+### Kode
+```html
 <span class="text-tooltip"
   >{{ .Get 0 }}
   <span class="text-tooltiptext shadow-1">{{ .Inner }}</span>
 </span>
 ```
-### Eksempel```
+### Eksempel
+```
 {{< tooltip "Håll musen över mig" >}}Detta är tooltip-texten.{{< /tooltip >}}
 ```
 ### Renderet resultat

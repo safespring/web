@@ -79,7 +79,8 @@ En anden måde at adskille og/eller overtage fuld kontrol over adgangen på er a
 
 ### Offentlig SSH-værtsnøgle
 
-Ud over de SSH-nøglepar, der bruges til at give brugere adgang, findes også SSH-værtsnøglen. Dette er metoden, en vært bruger til entydigt at identificere sig over for tilsluttede klienter. Det er op til klienten at stole på denne værtsnøgle ved første kontakt. Den besked har vi alle set:```
+Ud over de SSH-nøglepar, der bruges til at give brugere adgang, findes også SSH-værtsnøglen. Dette er metoden, en vært bruger til entydigt at identificere sig over for tilsluttede klienter. Det er op til klienten at stole på denne værtsnøgle ved første kontakt. Den besked har vi alle set:
+```
 The authenticity of host 'foo.example.net (x.x.x.x)' can't be established.
 ECDSA key fingerprint is SHA256:bbFasR3yR1ellOSPnLOjYTWkAdGNnhNnUybkbrf5apc.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?

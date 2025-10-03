@@ -113,7 +113,8 @@ Det finnes foreløpig ingen støtte for Windows, inkludert WSL (selv om det finn
 [omgåelsesløsning](https://sshuttle.readthedocs.io/en/stable/windows.html)).
 
 Å bruke sshuttle med en Safespring Compute-instans krever knapt noe oppsett.
-Start bare en instans, legg til SSH-nøkkelen din og kjør:```
+Start bare en instans, legg til SSH-nøkkelen din og kjør:
+```
 sshuttle -r <username>@<instance ip> <range you want to forward>
 ```
 Omfanget kan være så smalt eller bredt du vil, men for OpenStack-API-ene er det tilstrekkelig å videresende IP-adressen som auth_url i OpenStack-konfigurasjonen din peker til.

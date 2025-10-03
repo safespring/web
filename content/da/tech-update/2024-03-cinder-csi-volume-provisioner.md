@@ -41,11 +41,13 @@ At sikre kommunikationen mellem Cinder CSI Volume Provisioner og OpenStack er al
 
 ### 1. Opret et Application Credential
 
-Start med at oprette et nyt Application Credential, der er tilpasset dine behov. Hvis du tidligere har oprettet legitimationsoplysninger, kan du overveje at genbruge dem til Cinder CSI-plugin’et. For at administrere dine legitimationsoplysninger effektivt kan du bruge kommandoen nedenfor til at oprette et nyt sæt eller liste eksisterende:```bash
+Start med at oprette et nyt Application Credential, der er tilpasset dine behov. Hvis du tidligere har oprettet legitimationsoplysninger, kan du overveje at genbruge dem til Cinder CSI-plugin’et. For at administrere dine legitimationsoplysninger effektivt kan du bruge kommandoen nedenfor til at oprette et nyt sæt eller liste eksisterende:
+```bash
 openstack application credential create <app-cred-name>
 openstack application credential list
 ```
-Efter oprettelsen skal du hente `auth_url`, `Application ID` og `Application secret` for at aktivere OpenStack-godkendelse:```bash
+Efter oprettelsen skal du hente `auth_url`, `Application ID` og `Application secret` for at aktivere OpenStack-godkendelse:
+```bash
 auth_url=$(openstack configuration show -f json | jq .auth_url)
 
 json_output=$(openstack application credential create cinder-csi --format json)
@@ -58,13 +60,15 @@ echo "Application secret: ${app_secret}"
 ```
 ### 2. Opret et namespace til Storage CSI
 
-Opret et dedikeret namespace til CSI'en for at styrke overblik og sikkerhed:```bash
+Opret et dedikeret namespace til CSI'en for at styrke overblik og sikkerhed:
+```bash
 namespace="csi"
 oc create namespace ${namespace}
 ```
 ### 3. Forbered din cloud-konfiguration
 
-Generer en base64-kodet konfigurationsfil til lagring i en Kubernetes Secret. Denne konfiguration gør det muligt for din applikation at autentificere sig over for OpenStack:```bash
+Generer en base64-kodet konfigurationsfil til lagring i en Kubernetes Secret. Denne konfiguration gør det muligt for din applikation at autentificere sig over for OpenStack:
+```bash
 cloud_config="[Global]
 auth-url=${auth_url}
 application-credential-id=${app_id}
@@ -75,7 +79,8 @@ echo -e "${cloud_config_encoded}" | base64 -d
 ```
 ### 4. Udrul den kodede konfiguration som din Secret
 
-Brug dette Kubernetes-manifest til sikkert at gemme dine OpenStack-legitimationsoplysninger i det oprettede namespace:```yaml
+Brug dette Kubernetes-manifest til sikkert at gemme dine OpenStack-legitimationsoplysninger i det oprettede namespace:
+```yaml
 oc apply -f - <<EOF
 kind: Secret
 apiVersion: v1
@@ -93,7 +98,8 @@ EOF
 
 Match Cinder CSI-provisionerens version med din Kubernetes-version. Hent din Kubernetes-version og oplist de tilgængelige Helm chart-versioner for at sikre kompatibilitet.
 
-Hent din OpenShift-version:```bash
+Hent din OpenShift-version:
+```bash
 oc version
 ```
 
@@ -103,7 +109,8 @@ Kustomize Version: v5.0.4-0.20230601165947-6ce0bf390ce3
 Server Version: 4.15.0
 Kubernetes Version: v1.28.6+6216ea1
 ```
-Vis tilgængelige Cinder CSI-versioner:```bash
+Vis tilgængelige Cinder CSI-versioner:
+```bash
 namespace="${namespace:-csi}"
 helm repo -n ${namespace} add cpo https://kubernetes.github.io/cloud-provider-openstack
 helm search -n ${namespace} repo cpo/openstack-cinder-csi --versions
@@ -119,7 +126,8 @@ helm search -n ${namespace} repo cpo/openstack-cinder-csi --versions
 | cpo/openstack-cinder-csi | 2.27.1  | v1.27.1     | Cinder CSI-chart til OpenStack |
 | cpo/openstack-cinder-csi | 2.27.0  | v1.27.0     | Cinder CSI-chart til OpenStack |
 
-Sørg for, at din Kubernetes-version matcher versionen i kolonnen app_version. Når du søger efter en specifik version, skal du huske, at det er Helm chart-versionen, du angiver, ikke Kubernetes-versionen.```bash
+Sørg for, at din Kubernetes-version matcher versionen i kolonnen app_version. Når du søger efter en specifik version, skal du huske, at det er Helm chart-versionen, du angiver, ikke Kubernetes-versionen.
+```bash
 helm search -n ${namespace} repo cpo/openstack-cinder-csi --version '~2.28'
 ```
 | navn                     | version | app_version | beskrivelse                    |
@@ -128,22 +136,26 @@ helm search -n ${namespace} repo cpo/openstack-cinder-csi --version '~2.28'
 
 Når vi søger efter den rette version, bruger vi tilde-intervalsammenligninger. Tilde-operatoren (~) bruges til patch-niveauintervaller, når en minorversion er angivet, og til major-niveauintervaller, når minor-tallet mangler. I vores eksempel svarer `~2.28` til `>= 2.28, < 2.29`.
 
-I `Chart.yaml` skal du opdatere afhængighederne, så der søges efter den samme version.```yaml
+I `Chart.yaml` skal du opdatere afhængighederne, så der søges efter den samme version.
+```yaml
 dependencies:
   - name: openstack-cinder-csi
     version: "~2.28"
     repository: "https://kubernetes.github.io/cloud-provider-openstack"
 ```
-Opdater afhængigheder```bash
+Opdater afhængigheder
+```bash
 helm dependency update
 ```
 Hvis du har ændringer, så push dem til dit Git-repository.
 
-### Installering af Cinder CSI-volumenklargører```bash
+### Installering af Cinder CSI-volumenklargører
+```bash
 namespace="${namespace:-csi}"
 helm install -n ${namespace} cinder-csi .
 ```
-Kontrollér med `oc -n ${namespace} get pods`, at du har én `controllerplugin`-pod og `nodeplugin`-pods for hver node i din klynge.```bash
+Kontrollér med `oc -n ${namespace} get pods`, at du har én `controllerplugin`-pod og `nodeplugin`-pods for hver node i din klynge.
+```bash
 oc -n ${namespace} get pods
 ```
 | NAVN                                                   | KLAR | STATUS | GENSTARTER | ALDER |
@@ -155,7 +167,8 @@ oc -n ${namespace} get pods
 | openstack-cinder-csi-nodeplugin-kxzr8                  | 3/3  | Kører  | 0          | 151m  |
 | openstack-cinder-csi-nodeplugin-vp8qg                  | 3/3  | Kører  | 0          | 151m  |
 
-Du har nu to forskellige lagringsklasser, du kan bruge.```bash
+Du har nu to forskellige lagringsklasser, du kan bruge.
+```bash
 oc get storageclass -o custom-columns=Name:.metadata.name,Provisoner:.provisioner
 ```
 | Navn                 | Provisioner              |
@@ -165,7 +178,8 @@ oc get storageclass -o custom-columns=Name:.metadata.name,Provisoner:.provisione
 
 ## Test Cinder CSI-volume-provisioner
 
-Test Cinder CSI-volume-provisioner ved at oprette en Persistent Volume Claim og derefter en applikation, der bruger denne PVC.```bash
+Test Cinder CSI-volume-provisioner ved at oprette en Persistent Volume Claim og derefter en applikation, der bruger denne PVC.
+```bash
 namespace_test="csi-test"
 oc create namespace ${namespace_test}
 ```
@@ -213,7 +227,8 @@ spec:
 EOF
 
 ```
-Persistent Volume Claim'en bør være "Bound", når den er oprettet med succes.```bash
+Persistent Volume Claim'en bør være "Bound", når den er oprettet med succes.
+```bash
 oc -n ${namespace_test} get pvc -o custom-columns=Name:.metadata.name,Status:.status.phase,Volume:.spec.volumeName
 ```
 | Navn                | Status | Volumen                                  |
@@ -222,21 +237,25 @@ oc -n ${namespace_test} get pvc -o custom-columns=Name:.metadata.name,Status:.st
 
 Hvis du har problemer, så start med at kigge i events-tabellen med `oc -n ${namespace_test} events`.
 
-I OpenStack kan du bruge OpenStack CLI til at se dit volumen.```bash
+I OpenStack kan du bruge OpenStack CLI til at se dit volumen.
+```bash
 openstack volume show pvc-ed60e725-93e8-447c-bc18-ca33546f2ce8
 ```
-Til sidst skal du slette din test:```bash
+Til sidst skal du slette din test:
+```bash
 oc delete namespace ${namespace_test}
 ```
 ## Opdatering af din installation
 
-Hvis der er opdateringer til Cinder CSI-provisioneren, skal du bruge følgende kommando til at anvende dem:```bash
+Hvis der er opdateringer til Cinder CSI-provisioneren, skal du bruge følgende kommando til at anvende dem:
+```bash
 namespace="${namespace:-csi}"
 helm upgrade -n ${namespace} cinder-csi .
 ```
 ## Afinstallation
 
-Hvis du skal afinstallere Cinder CSI-provisioneren, skal du køre disse kommandoer:```bash
+Hvis du skal afinstallere Cinder CSI-provisioneren, skal du køre disse kommandoer:
+```bash
 namespace="${namespace:-csi}"
 helm install -n ${namespace} cinder-csi .
 oc delete namespace ${namespace}
@@ -247,7 +266,8 @@ oc delete namespace ${namespace}
 
 Selvom Helm-charts gør det nemt at automatisere udrulninger, inklusive oprettelse af Secrets via `values.yaml`-filen, medfører denne metode betydelige sikkerhedsudfordringer, især i en GitOps-arbejdsgang med ArgoCD.
 
-For eksempel kan man, når man konfigurerer `openstack-cinder-csi`-chartet, blive fristet til at indlejre følsomme adgangsoplysninger direkte i `values.yaml`-filen, således:```yaml
+For eksempel kan man, når man konfigurerer `openstack-cinder-csi`-chartet, blive fristet til at indlejre følsomme adgangsoplysninger direkte i `values.yaml`-filen, således:
+```yaml
 openstack-cinder-csi:
   secret:
     enabled: true

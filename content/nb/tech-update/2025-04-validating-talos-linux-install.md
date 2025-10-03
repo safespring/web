@@ -42,7 +42,8 @@ Videre med de praktiske stegene:
 
 Siden vi vil teste klyngeinstallasjonen, må vi kjøre kommandolinjeverktøyene som kreves for å validere klyngen, i en container. For dette formålet har vi forberedt `Dockerfile-talos` nedenfor, som vi må bygge og pushe til et register.
 
-Opprett derfor en fil med navnet `Dockerfile-talos` med følgende innhold:```dockerfile
+Opprett derfor en fil med navnet `Dockerfile-talos` med følgende innhold:
+```dockerfile
 FROM docker.io/alpine:3
 
 RUN apk add --no-cache bash wget tar curl linux-headers openssl
@@ -78,7 +79,8 @@ RUN kubectl version --client && \
 RUN apk add --update ca-certificates
 
 ```
-Bygge og pushe til et register, f.eks. `docker.io`:```bash
+Bygge og pushe til et register, f.eks. `docker.io`:
+```bash
 # substitute docker.io/blankdots/talosctl:minimal with your own registry 
 podman build -t docker.io/blankdots/talosctl:minimal -f Dockerfile-talos --no-cache
 podman push docker.io/blankdots/talosctl:minimal
@@ -87,12 +89,14 @@ podman push docker.io/blankdots/talosctl:minimal
 
 For å kunne validere klyngen via en jobb som kjører inne i vår nyopprettede Talos-klynge, trenger vi både en [tjenestekonto](https://kubernetes.io/docs/concepts/security/service-accounts/) med tillatelser til de riktige Kubernetes API-ressursene, samt en [Talos‑tjenestekonto](https://www.talos.dev/v1.9/advanced/talos-api-access-from-k8s/).
 
-Før det oppretter vi et namespace der vi skal gjøre selve valideringssjekken:```bash
+Før det oppretter vi et namespace der vi skal gjøre selve valideringssjekken:
+```bash
 kubectl create ns safespring
 ```
 ### Konfigurere tilgang til Kubernetes-API-ressurser
 
-Sørg for at Talos-servicekontoen er aktivert, enten ved å redigere maskinkonfigurasjonen direkte og legge til:```yaml
+Sørg for at Talos-servicekontoen er aktivert, enten ved å redigere maskinkonfigurasjonen direkte og legge til:
+```yaml
 machine:
   features:
     rbac: true
@@ -104,13 +108,16 @@ machine:
         - safespring
         - kube-system
 ```
-Maskinen kan redigeres med:```bash
+Maskinen kan redigeres med:
+```bash
 talosctl --talosconfig .talos/talosconfig edit mc --nodes 10.5.0.2
 ```
-Patching av maskinen kan gjøres ved hjelp av:```bash
+Patching av maskinen kan gjøres ved hjelp av:
+```bash
 talosctl --talosconfig .talos/talosconfig --nodes 10.5.0.2 patch mc --patch @patch-rbac.json
 ```
-Der `patch-rbac.json` har følgende innhold:```json
+Der `patch-rbac.json` har følgende innhold:
+```json
 [
   {"op": "add", "path": "/machine/features/rbac", "value": true},
   {"op": "add", "path": "/machine/features/kubernetesTalosAPIAccess", "value": {"enabled": true}},
@@ -118,10 +125,12 @@ Der `patch-rbac.json` har følgende innhold:```json
   {"op": "add", "path": "/machine/features/kubernetesTalosAPIAccess/allowedKubernetesNamespaces", "value": ["kube-system", "safespring"]}
 ]
 ```
-Deretter introduserer vi tjenestekontoene og rollene:```bash
+Deretter introduserer vi tjenestekontoene og rollene:
+```bash
 kubectl apply -f service-account.yaml
 ```
-Der `service-account.yaml` har følgende innhold:```yaml
+Der `service-account.yaml` har følgende innhold:
+```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -185,7 +194,8 @@ spec:
 
 La oss lage et skript som hjelper oss å validere viktige aspekter ved Talos-installasjonen, nemlig CNI, CSI samt Talos API. Skriptet nedenfor, `validate.sh`, dekker dette.
 
-I koden nedenfor, legg merke til navnet på lagringsklassen, `fast`. Dette må justeres til dine egne lagringsklasser. For å se lagringsklasser, bruk:```bash
+I koden nedenfor, legg merke til navnet på lagringsklassen, `fast`. Dette må justeres til dine egne lagringsklasser. For å se lagringsklasser, bruk:
+```bash
 ➜ kubectl get storageclass -o custom-columns=Name:.metadata.name,Provisoner:.provisioner
 Name    Provisoner
 fast    cinder.csi.openstack.org
@@ -298,13 +308,16 @@ else
   exit 1
 fi
 ```
-Deretter legger vi til skriptet som en ConfigMap for å bruke det i jobben:```bash
+Deretter legger vi til skriptet som en ConfigMap for å bruke det i jobben:
+```bash
 kubectl create configmap -n safespring validate-script --from-file=validate.sh
 ```
-Siden skriptet krever utvidede rettigheter, må vi overstyre pod-sikkerhetsstandardene på navneromsnivå for navnerommet `safespring`.```bash
+Siden skriptet krever utvidede rettigheter, må vi overstyre pod-sikkerhetsstandardene på navneromsnivå for navnerommet `safespring`.
+```bash
 kubectl label --overwrite ns safespring pod-security.kubernetes.io/audit=privileged pod-security.kubernetes.io/warn=privileged
 ```
-### Opprette jobben```yaml
+### Opprette jobben
+```yaml
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -341,7 +354,8 @@ spec:
           secret:
             secretName: validate-install-job-talos-secrets
 ```
-Du kan se resultatene av jobben:```bash
+Du kan se resultatene av jobben:
+```bash
 ➜ kubectl apply -f job.yaml                                                     
 job.batch/validate-install-job created
 
@@ -415,7 +429,8 @@ Server:
 
 ### Oppgradere Talos Linux
 
-Å følge [instruksjonene for å oppgradere Talos Linux](https://www.talos.dev/v1.9/talos-guides/upgrading-talos/#talosctl-upgrade) er så enkelt som å kjøre kommandoen `talosctl upgrade`.```bash
+Å følge [instruksjonene for å oppgradere Talos Linux](https://www.talos.dev/v1.9/talos-guides/upgrading-talos/#talosctl-upgrade) er så enkelt som å kjøre kommandoen `talosctl upgrade`.
+```bash
 talosctl --talosconfig .talos/talosconfig upgrade --image ghcr.io/siderolabs/installer:v1.9.5
 # add --nodes <node> to target a specific node
 ```
@@ -423,13 +438,15 @@ talosctl --talosconfig .talos/talosconfig upgrade --image ghcr.io/siderolabs/ins
 
 Å oppgradere Kubernetes-versjonen er [enkelt ved å følge instruksjonene](https://www.talos.dev/v1.9/kubernetes-guides/upgrading-kubernetes/), men i vårt tilfelle installerte vi Cilium CNI med en jobb, og det byr på en utfordring ved oppgradering.
 
-Demoklyngen vår har Kubernetes-versjon `1.31.5`, og vi vil oppgradere til `1.32.3`:```bash
+Demoklyngen vår har Kubernetes-versjon `1.31.5`, og vi vil oppgradere til `1.32.3`:
+```bash
 ➜ kubectl get nodes        
 NAME                              STATUS   ROLES           AGE   VERSION
 dev-taloscluster-controlplane-1   Ready    control-plane   57m   v1.31.5
 dev-taloscluster-worker-1         Ready    <none>          57m   v1.31.5
 ```
-La oss prøve oppgraderingskommandoen:```bash
+La oss prøve oppgraderingskommandoen:
+```bash
 # we try to run the upgrade with dry-run to see if it possible
 ➜ talosctl --talosconfig .talos/talosconfig --nodes 10.5.0.2 upgrade-k8s --to 1.32.3 --dry-run
 automatically detected the lowest Kubernetes version 1.31.5
@@ -448,10 +465,12 @@ updating "kube-apiserver" to version "1.32.3"
   Job.batch "cilium-install" is invalid: <snip>.... field is immutable]
 
 ```
-Vi ser at Job-ressursen vi har brukt i `inlineManifest` vanskeliggjør oppgraderingen; en enkel løsning er å redigere Talos-konfigurasjonen og fjerne den problematiske delen.```bash
+Vi ser at Job-ressursen vi har brukt i `inlineManifest` vanskeliggjør oppgraderingen; en enkel løsning er å redigere Talos-konfigurasjonen og fjerne den problematiske delen.
+```bash
 talosctl --talosconfig talosconfig --nodes 10.5.0.2 patch mc --patch @remove-inlinemanifests.json
 ```
-der `remove-inlinemanifests.json` inneholder```json
+der `remove-inlinemanifests.json` inneholder
+```json
 [
   {
     "op": "remove",

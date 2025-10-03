@@ -34,7 +34,8 @@ Nogle gange vil du gerne ompartitionere disken i flere partitioner, hvis den app
 
 1. Start med at oprette en ny instans i OpenStack med en flavor i l2-serien for at sikre, at noden har lokal NVMe.
 2. Under oprettelsen af instansen skal du på fanen "Configuration" vælge "Manual" for diskpartitioneringsindstillingen.
-3. I feltet "Customization Script" skal du indtaste følgende cloud-config-kode:   ```yaml
+3. I feltet "Customization Script" skal du indtaste følgende cloud-config-kode:   
+```yaml
    #cloud-config
    # Ubuntu 18.04+
    resize_rootfs: false
@@ -53,14 +54,17 @@ Nogle gange vil du gerne ompartitionere disken i flere partitioner, hvis den app
 4. Tilpas ovenstående kode efter dine behov. Du kan ændre partitionsstørrelse og filsystem efter behov.
 5. Klik på "Launch Instance" for at oprette instansen.
 6. Når instansen er oprettet, SSH ind på instansen med et værktøj som PuTTY.
-7. Kontrollér diskpartitionerne ved at køre følgende kommando. Opret det nye filsystem på partitionen; i dette tilfælde er det XFS. Sørg for, at enhedsnummeret X nedenfor svarer til det fra fdisk-udskriften.   ```shell
+7. Kontrollér diskpartitionerne ved at køre følgende kommando. Opret det nye filsystem på partitionen; i dette tilfælde er det XFS. Sørg for, at enhedsnummeret X nedenfor svarer til det fra fdisk-udskriften.   
+```shell
    bash# sudo fdisk -l
    bash# sudo mkfs.xfs /dev/sdaX
    ```
-8. Monter den nye partition ved at køre følgende kommando:   ```shell
+8. Monter den nye partition ved at køre følgende kommando:   
+```shell
    bash# sudo mount /dev/sdaX /mnt
    ```
-9. Kontroller, at partitionen er blevet monteret, ved at køre følgende kommando:   ```shell
+9. Kontroller, at partitionen er blevet monteret, ved at køre følgende kommando:   
+```shell
    bash# df -h
    ```
 10. Tillykke! Du har med succes ompartitioneret rodfilsystemet og aktiveret XFS på den anden partition ved hjælp af cloud-config.

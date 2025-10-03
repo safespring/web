@@ -70,7 +70,8 @@ Det er noen forutsetninger for å kunne gjenta stegene, og vi går ikke i detalj
 {{% /note %}}
 
 1. **Sett opp administrasjonsklyngen**: Dette kan være hvilken som helst Kubernetes-klynge, til og med [`kind`](https://kind.sigs.k8s.io/), eller se hvordan vi satte opp en klynge i en [tidligere artikkel](/blogg/2025/2025-03-talos-linux-on-openstack/).
-2. **Installer Cluster API-komponenter** ved hjelp av [Cluster API-CLI `clusterctl`](https://cluster-api.sigs.k8s.io/clusterctl/overview.html).```bash
+2. **Installer Cluster API-komponenter** ved hjelp av [Cluster API-CLI `clusterctl`](https://cluster-api.sigs.k8s.io/clusterctl/overview.html).
+```bash
 export KUBECONFIG=<kubeconfig_for_management_cluster>
 CAPO_VERSION=v0.12.3
 # Install ORC (needed for CAPO >=v0.12)
@@ -84,7 +85,8 @@ clusterctl init -c talos -b talos --infrastructure openstack:$CAPO_VERSION -v 5
 # if we want to install with Cluster API Add-on Provider Helm 
 clusterctl init -c talos -b talos --infrastructure openstack:$CAPO_VERSION --addon helm -v 5 
 ```
-Etter en vellykket installasjon bør du kunne se følgende pods kjøre:```bash
+Etter en vellykket installasjon bør du kunne se følgende pods kjøre:
+```bash
 NAMESPACE                       NAME                                                  READY   STATUS      RESTARTS   AGE
 ...
 # caaph-system only present if the Cluster API Add-on Provider Helm  was installed
@@ -130,10 +132,12 @@ Vi vil bruke navnerommet `safespring` til å opprette klyngen og lagre alle nød
 
 {{% note "Merk" %}}
 Siden `ClusterResourceSet` brukes via etiketter, anbefaler vi at de er navneromsbundne; ellers risikerer du å oppgradere alle klynger når du oppdaterer dem.
-{{% /note %}}```bash
+{{% /note %}}
+```bash
 kubectl create ns safespring
 ```
-Som første steg i klyngen skal vi konfigurere Cinder CSI sammen med de nødvendige lagringsklassene, slik at vi har persistente volumer tilgjengelige når klyngen opprettes:```bash
+Som første steg i klyngen skal vi konfigurere Cinder CSI sammen med de nødvendige lagringsklassene, slik at vi har persistente volumer tilgjengelige når klyngen opprettes:
+```bash
 cat > cloud.conf <<EOF
 [Global]
 auth-url="<your_auth_url>"
@@ -213,7 +217,8 @@ spec:
       kind: ConfigMap
 EOF
 ```
-Vi skal også konfigurere Nginx Ingress samt Cert-manager med helm template for å generere nødvendig YAML i en `ConfigMap`.```bash
+Vi skal også konfigurere Nginx Ingress samt Cert-manager med helm template for å generere nødvendig YAML i en `ConfigMap`.
+```bash
 helm template ingress-nginx ingress-nginx/ingress-nginx --namespace ingress-nginx --create-namespace --version $NGINX_VERSION  --set controller.metrics.enabled=true --set controller.hostNetwork=true --set controller.hostPort.enabled=true --set controller.kind=DaemonSet --set controller.service.enabled=false --set controller.admissionWebhooks.enabled=false > nginx-ingress.yaml
 
 kubectl create configmap -n safespring nginx-install --from-file=nginx-ingress.yaml
@@ -255,7 +260,8 @@ spec:
   strategy: Reconcile
 EOF
 ```
-Med cert-manager vil vi også opprette en `ClusterIssuer` for å gjøre det enklere å be om sertifikater.```bash
+Med cert-manager vil vi også opprette en `ClusterIssuer` for å gjøre det enklere å be om sertifikater.
+```bash
 helm template cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.17.2 --set crds.enabled=true > cert-manager-v1.17.2.yaml
 
 kubectl create configmap -n safespring cert-manager --from-file=cert-manager-v1.17.2.yaml
@@ -317,7 +323,8 @@ spec:
   strategy: Reconcile
 EOF
 ```
-### 2. Opprett maskinmaler og egendefinerte klyngeressurser```bash
+### 2. Opprett maskinmaler og egendefinerte klyngeressurser
+```bash
 cat > clouds.yaml <<EOF
 clouds:
   openstack:
@@ -333,7 +340,8 @@ clouds:
     region_name: <region_name>
 EOF
 ```
-For at `cloud-config` skal kunne brukes som `kind: Secret` i en `ClusterResourceSet`, må den lagres som en Kubernetes Secret, derfor bruker vi `--dry-run=client` for å opprette YAML-en.```bash
+For at `cloud-config` skal kunne brukes som `kind: Secret` i en `ClusterResourceSet`, må den lagres som en Kubernetes Secret, derfor bruker vi `--dry-run=client` for å opprette YAML-en.
+```bash
 kubectl create secret generic safespring-demo-cloud-config --from-file=clouds.yaml='clouds.yaml' --from-literal=cacert="" -n safespring
 
 kubectl label secret -n safespring safespring-demo-cloud-config clusterctl.cluster.x-k8s.io/move=true
@@ -341,7 +349,8 @@ kubectl label secret -n safespring safespring-demo-cloud-config clusterctl.clust
 # https://cluster-api-openstack.sigs.k8s.io/clusteropenstack/configuration.html
 #  Set clusterctl.cluster.x-k8s.io/move label for the secret created from OPENSTACK_CLOUD_YAML_B64 in order to successfully move objects from bootstrap cluster to target cluster. 
 ```
-For mer informasjon om å skaffe applikasjonslegitimasjon, se dokumentasjonen vår om hvordan du [oppretter applikasjonslegitimasjon](https://docs.safespring.com/new/app-creds/#creating-application-credentials-using-the-dashboard).```yaml
+For mer informasjon om å skaffe applikasjonslegitimasjon, se dokumentasjonen vår om hvordan du [oppretter applikasjonslegitimasjon](https://docs.safespring.com/new/app-creds/#creating-application-credentials-using-the-dashboard).
+```yaml
 apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
 kind: OpenStackMachineTemplate
 metadata:
@@ -388,7 +397,8 @@ I denne veiledningen trenger vi to [elastiske IP-adresser](https://docs.safespri
 
 {{% note "Note" %}}
 På sikt anbefaler vi å migrere til [BGP Control Plane-ressurser](https://docs.cilium.io/en/stable/network/bgp-control-plane/bgp-control-plane-v2/).
-{{% /note %}}```yaml
+{{% /note %}}
+```yaml
 
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: MachineDeployment
@@ -690,7 +700,8 @@ spec:
   # adjust to the desired kubernetes version
   version: v1.32.4
 ```
-Så til selve klynjespesifikasjonen, merk at vi for denne klyngen setter én etikett `cloud=openstack` som standard, for å illustrere det andre `ClusterResourceSet` etter at klyngen er installert.```yaml
+Så til selve klynjespesifikasjonen, merk at vi for denne klyngen setter én etikett `cloud=openstack` som standard, for å illustrere det andre `ClusterResourceSet` etter at klyngen er installert.
+```yaml
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: Cluster
 metadata:
@@ -805,7 +816,8 @@ spec:
 ```
 Lagre konfigurasjonen ovenfor og ta den i bruk med `kubectl apply -f adjusted-cluster-config.yaml`.
 
-### 3. Resultatet```bash
+### 3. Resultatet
+```bash
 ➜  kubectl get cluster -A
 NAMESPACE         NAME              CLUSTERCLASS   PHASE         AGE     VERSION
 safespring        safespring-demo                  Provisioned   3m55s   
@@ -839,7 +851,8 @@ kube-system   openstack-cloud-controller-manager-zbf9p                      1/1 
 ```
 {{% note "Merk" %}}
 Vi vil bruke etiketter for å demonstrere hvordan `ClusterResourceSet` blir anvendt på **alle klyngene** i det navnerommet som har disse etikettene.
-{{% /note %}}```bash
+{{% /note %}}
+```bash
 ➜  kubectl label cluster -n safespring safespring-demo component=cert-manager 
 cluster.cluster.x-k8s.io/safespring-demo labeled
 ➜  kubectl label cluster -n safespring safespring-demo ingress=nginx
@@ -872,7 +885,8 @@ kube-system     kube-scheduler-safespring-demo-control-plane-8gfwb            1/
 kube-system     openstack-cloud-controller-manager-p6nlw                      1/1     Running     0             8m15s
 
 ```
-Opprette et persistent volum:```bash
+Opprette et persistent volum:
+```bash
 ➜  kubectl --kubeconfig=./capi-quickstart.kubeconfig apply -f - <<EOF
 apiVersion: v1
 kind: PersistentVolumeClaim

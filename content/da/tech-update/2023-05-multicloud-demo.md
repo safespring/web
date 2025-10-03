@@ -86,7 +86,8 @@ Terraform har en praktisk funktion, der lader os konfigurere flere instanser af
 samme type provider og bruge aliasser til at skelne, hvilken der skal bruges,
 når vi erklærer den ønskede tilstand for ressourcer.
 
-I vores tilfælde gør denne kode netop det:```hcl
+I vores tilfælde gør denne kode netop det:
+```hcl
 provider "openstack" {
   alias               = "sto1-sandbox"
   cloud = "safespring-sto1"
@@ -100,7 +101,8 @@ provider "openstack" {
 ```
 Her definerer vi to deklarationer af Terraform OpenStack-provider, som peger på forskellige poster i vores `clouds.yaml`-fil, og som vi kan referere til via deres `alias`.
 
-Vi skal også angive, hvilke versioner af providers vi har brug for, for alle de providers, der bruges i koden. Sådan her:```hcl
+Vi skal også angive, hvilke versioner af providers vi har brug for, for alle de providers, der bruges i koden. Sådan her:
+```hcl
 terraform {
   required_providers {
     openstack = {
@@ -120,7 +122,8 @@ Bemærk også, at aliaserne for OpenStack-providerinstanserne skal angives i fel
 
 ### Web-backend-instanser i cloud nummer et (Safespring sto1)
 
-Vi starter med at definere den ønskede tilstand i Terraform for instanser i sto1 Safespring-datacenteret, sådan her (`safespring.tf`):```hcl
+Vi starter med at definere den ønskede tilstand i Terraform for instanser i sto1 Safespring-datacenteret, sådan her (`safespring.tf`):
+```hcl
 resource "openstack_compute_keypair_v2" "sto1kp" {
   name       = "mc-sto1-pubkey"
   public_key = chomp(file("~/.ssh/id_rsa_jump.pub"))
@@ -172,7 +175,8 @@ module "sto1_instances" {
   key_pair_name   = openstack_compute_keypair_v2.sto1kp.name
 }
 ```
-Vi bruger ganske enkelt de Safespring-leverede Terraform-moduler direkte fra Github (`source`-feltet) til nemt at deklarere både de nødvendige sikkerhedsgrupper (til at åbne portene for hhv. ssh, http og https) og, ved at bruge count med et præfiks, et sæt instanser, hvor antallet og navnet styres af variablen `var.count_safespring`. Variablen er defineret i filen `variables.tf` med en standardværdi på `1`, sådan her:```hcl
+Vi bruger ganske enkelt de Safespring-leverede Terraform-moduler direkte fra Github (`source`-feltet) til nemt at deklarere både de nødvendige sikkerhedsgrupper (til at åbne portene for hhv. ssh, http og https) og, ved at bruge count med et præfiks, et sæt instanser, hvor antallet og navnet styres af variablen `var.count_safespring`. Variablen er defineret i filen `variables.tf` med en standardværdi på `1`, sådan her:
+```hcl
 variable "count_safespring" {
   description = "Instance count Safespring"
   type        = number
@@ -221,7 +225,8 @@ sæt instanser med et Ansible-playbook.
 ### Konfiguration af webtjenesten på backend-instanser i Safespring
 
 Vi konfigurerer en minimal backend-http-tjeneste med et Ansible-playbook som
-dette (`configure.yaml`):```yaml
+dette (`configure.yaml`):
+```yaml
 - name: Configure back ends
   hosts: os_metadata_role=http_backend
   become: yes
@@ -243,7 +248,8 @@ Først venter vi på, at instanserne bliver tilgængelige. Derefter installerer 
 
 Bemærk feltet `hosts:`, som fortæller Ansible, hvor de efterfølgende opgaver skal køres. Det er her, forbindelsen sker mellem det, vi angav som en `role` i den ønskede tilstand (Terraform) for klargøring af instanserne, og den værtsgruppe, vi vil konfigurere i Ansible-playbooken.
 
-Så nu kører vi playbooken sådan her:```shell
+Så nu kører vi playbooken sådan her:
+```shell
 $ ansible-playbook -i ati configure.yaml
 [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
 
@@ -278,7 +284,8 @@ I Polen arbejder vi sammen med en anden europæisk cloud-udbyder. De leverer ogs
 
 I vores demo vil vi vise, at Safespring-communityets Terraform-moduler også kan bruges til at klargøre instanser på den anden europæiske cloud-udbyders OpenStack-IaaS med kun få ekstra linjer Terraform-kode til at allokere og tilknytte floating IP-adresser til instanser. Hvis vi i stedet brugte et andet Safespring-site som den anden (eller flere) OpenStack-IaaS, ville det kun være variation i providers og aliasser, der var nødvendig.
 
-Koden for ssh-nøgle, sikkerhedsgruppe med regler og instans er faktisk identisk, bortset fra at der bruges et andet provider-alias, som peger på den anden europæiske cloud-udbyders OpenStack-cloud-post i den lokale `clouds.yaml`-fil, sådan her:```hcl
+Koden for ssh-nøgle, sikkerhedsgruppe med regler og instans er faktisk identisk, bortset fra at der bruges et andet provider-alias, som peger på den anden europæiske cloud-udbyders OpenStack-cloud-post i den lokale `clouds.yaml`-fil, sådan her:
+```hcl
 resource "openstack_compute_keypair_v2" "psncdcwkp" {
   name       = "mc-psnc-bst-pubkey"
   public_key = chomp(file("~/.ssh/id_ecdsa.pub"))
@@ -340,7 +347,8 @@ module "psnc_dcw_instances" {
 ```
 Bemærk, at parametrene `image` og `flavor` skal angives, da de indbyggede standardværdier for Safespring-modulerne specificerer Safespring-specifikke image og flavor. Og tilsvarende, som hos Safespring, er standardantallet af instanser hos den anden europæiske cloud-udbyder `1`.
 
-Denne kode er dog ikke tilstrækkelig til at gøre instanser tilgængelige på internettet på samme måde, som det var ved brug af Safespring IaaS. For at gøre det skal vi også tilføje:```hcl
+Denne kode er dog ikke tilstrækkelig til at gøre instanser tilgængelige på internettet på samme måde, som det var ved brug af Safespring IaaS. For at gøre det skal vi også tilføje:
+```hcl
 resource "openstack_networking_floatingip_v2" "floatip_1" {
   provider = openstack.psnc-dcw
   count    = var.count_psnc
@@ -358,7 +366,8 @@ Denne kode vil tildele en offentlig IPv4-adresse fra en pulje af flydende IP-adr
 
 ### Konfiguration af webtjenesten på back-end-instanser
 
-Og nu betaler automatiseringen sig, for det eneste, der er nødvendigt nu, er at køre Ansible-playbooken igen med det opdaterede inventory, som den nye Terraform-state repræsenterer. Det vil sige, at værtsgruppen `os_metadata_role=http_backend` nu indeholder både Safespring-instans(er) og instans(er) hos den anden europæiske cloududbyder.```shell
+Og nu betaler automatiseringen sig, for det eneste, der er nødvendigt nu, er at køre Ansible-playbooken igen med det opdaterede inventory, som den nye Terraform-state repræsenterer. Det vil sige, at værtsgruppen `os_metadata_role=http_backend` nu indeholder både Safespring-instans(er) og instans(er) hos den anden europæiske cloududbyder.
+```shell
 $ ansible-playbook -i ati configure.yaml
 ansible-playbook -i ati configure.yaml
 [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
@@ -391,7 +400,8 @@ Og playbooket vil konstatere, at i Safespring-instansen er alt allerede sat korr
 
 Man kan i princippet bruge enhver DNS-udbyder; for at undgå potentielt problematiske amerikansk-ejede tjenester er det dog bedst at vælge en europæisk virksomhed. Derfor valgte vi Gandi.net. Da Gandi.net er en fransk virksomhed, elimineres overførsel af data til tredjelande i henhold til GDPR helt, præcis som når man bruger Safespring og vores partneres tjenester.
 
-For automatisk at vedligeholde et sæt DNS A-records, der lastbalancerer på tværs af instanser i begge (eller alle) OpenStack-sites, kan vi bruge følgende Terraform-kode (`gandi-dns.tf`), som igen bruger den officielle Gandi.net Terraform-provider, som igen bruger Gandi.net automation API.```hcl
+For automatisk at vedligeholde et sæt DNS A-records, der lastbalancerer på tværs af instanser i begge (eller alle) OpenStack-sites, kan vi bruge følgende Terraform-kode (`gandi-dns.tf`), som igen bruger den officielle Gandi.net Terraform-provider, som igen bruger Gandi.net automation API.
+```hcl
 resource "gandi_livedns_record" "rrlb" {
   zone   = "saft.in"
   name   = "www.mcdemo"
@@ -402,7 +412,8 @@ resource "gandi_livedns_record" "rrlb" {
 ```
 Her opretter vi A-records for alle IPv4-adresser til instanser i både Safespring og de andre europæiske cloud-udbyderes OpenStack-IaaS'er ved at sammenkæde listerne over IPv4-adresser fra Safespring-modulets outputværdier og de andre europæiske cloud-udbyderes floating IP-adresser, henholdsvis. Alle A-records peger på navnet `www.mcdemo.saft.in`; derfor vil DNS fordele trafikken på tværs af alle disse IPv4-adresser ved round-robin.
 
-Det kan vi teste med `curl`:```shell
+Det kan vi teste med `curl`:
+```shell
 for i in `seq 1 100`
 do
 echo "$(curl -s www.mcdemo.saft.in)"
@@ -415,11 +426,13 @@ Her laver vi 100 curl-anmodninger mod www.mcdemo.saft.in, sorterer dem og samler
 
 ### Opskalering (og nedskalering)
 
-Med et setup som dette er det eneste, vi behøver for at skalere, at ændre nogle count-parametre, køre `terraform apply` og genkøre det samme Ansible-playbook, efterhånden som inventory ændrer sig. For at gøre dette kan vi oprette en variabelfil (`terraform.tfvars`) med følgende indhold.```hcl
+Med et setup som dette er det eneste, vi behøver for at skalere, at ændre nogle count-parametre, køre `terraform apply` og genkøre det samme Ansible-playbook, efterhånden som inventory ændrer sig. For at gøre dette kan vi oprette en variabelfil (`terraform.tfvars`) med følgende indhold.
+```hcl
 count_psnc=2
 count_safespring=3
 ```
-Efter at have anvendt dette og kørt Ansible-playbooken igen, giver vores test med `curl` følgende.```shell
+Efter at have anvendt dette og kørt Ansible-playbooken igen, giver vores test med `curl` følgende.
+```shell
 for i in `seq 1 100`
 do
 echo "$(curl -s www.mcdemo.saft.in)"

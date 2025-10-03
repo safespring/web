@@ -46,7 +46,8 @@ Vi gjør også noen antakelser som grunnlag for brukstilfellet vårt:
 ## 1. Deklarere standardverdier og hente vertsnavn
 
 Angi standardverdier og hent serverens vertsnavn, som skal brukes som identifikator for sikkerhetskopinoder.
-Vi begynner med å angi noen standardverdier:```go
+Vi begynner med å angi noen standardverdier:
+```go
 const (
     // Set the OS to Linux, ID = 3
     osTypeID = int(3)
@@ -62,7 +63,8 @@ const (
 ```
 Som vi skal se senere i veiledningen, sender vi med disse verdiene når vi oppretter backup-noden vår for å sikre at vi setter riktige innstillinger for denne spesifikke servertypen. Disse innstillingene kan enkelt tilpasses en rekke server-/arbeidsstasjonsoppsett. For en komplett liste over alle tilgjengelige kombinasjoner som støttes av Safespring Backup kan du bruke cli-tool som er inkludert i cloutilty-api-client-prosjektet.
 
-Før vi får tilgang til API-et henter vi også vertsnavnet til serveren, som vil bli brukt som identifikator for backup-noder.```go
+Før vi får tilgang til API-et henter vi også vertsnavnet til serveren, som vil bli brukt som identifikator for backup-noder.
+```go
 hostname, _ := os.Hostname()
 ```
 I dette eksemplet sørger vi for at ingen to konsumenter (backup-noder) har samme vertsnavn.
@@ -71,7 +73,8 @@ I dette eksemplet sørger vi for at ingen to konsumenter (backup-noder) har samm
 
 ## 2. Sette opp miljøet
 
-For å kunne bruke API-et trenger vi en autentisert klient for å utføre de ulike operasjonene. Initialisering gjøres med funksjonen `cloutapi.Init()`. Slik ser det ut:```go
+For å kunne bruke API-et trenger vi en autentisert klient for å utføre de ulike operasjonene. Initialisering gjøres med funksjonen `cloutapi.Init()`. Slik ser det ut:
+```go
 func Init(ctx context.Context, clientID, apiKeyOrigin, username, password, baseURL string) (*Client, error)
 ```
 Funksjonen `Init()` initialiserer en Cloutility API-klient og returnerer en peker til en `AuthenticatedClient`-struktur. Den tar følgende parametere:
@@ -91,7 +94,8 @@ I eksemplet vårt henter vi disse verdiene fra miljøvariabler i kjøremiljøet,
 
 ## 3. Hente brukerinformasjon
 
-Når API-klienten er initialisert, begynner vi med å hente informasjon om brukertilgang for å avgjøre hvilken forretningsenhet vi skal plassere backup-noden i. Dette gjøres ved å bruke metoden `GetUser()`, som er definert slik:```go
+Når API-klienten er initialisert, begynner vi med å hente informasjon om brukertilgang for å avgjøre hvilken forretningsenhet vi skal plassere backup-noden i. Dette gjøres ved å bruke metoden `GetUser()`, som er definert slik:
+```go
 func (c *AuthenticatedClient) GetUser() (*User, error)
 ```
 Metoden `GetUser()` henter informasjon om den gjeldende brukeren (bestemt av brukernavn/passord brukt til å initialisere klienten) og returnerer en peker til en `User`-struct. Videre vil vi bruke denne verdien av `User.UserBunit.ID` som ID-en til forretningsenheten der vi plasserer backup-klienten vår.
@@ -100,7 +104,8 @@ Metoden `GetUser()` henter informasjon om den gjeldende brukeren (bestemt av bru
 
 ## 4. Hente informasjon om konsumenter
 
-Neste steg er å hente en liste over konsumenter som allerede finnes i den valgte forretningsenheten. Til dette bruker vi metoden `GetConsumers()`, som ser slik ut:```go
+Neste steg er å hente en liste over konsumenter som allerede finnes i den valgte forretningsenheten. Til dette bruker vi metoden `GetConsumers()`, som ser slik ut:
+```go
 func (c *AuthenticatedClient) GetConsumers(bUnitID int) ([]Consumer, error)
 ```
 Metoden `GetConsumers()` henter en liste over konsumenter innenfor en gitt forretningsenhet og returnerer en slice av `Consumer`-strukturer. Den tar følgende parametere:
@@ -119,7 +124,8 @@ Det finnes ingen innebygd begrensning i tjenesten som hindrer at man oppretter k
 
 ## 5. Opprette en ny konsument
 
-Hvis det ikke finnes noen konsument med det gjeldende vertsnavnet, fortsetter vi med å opprette en innenfor brukerens forretningsenhet, ved å bruke metoden `CreateConsumer()`:```go
+Hvis det ikke finnes noen konsument med det gjeldende vertsnavnet, fortsetter vi med å opprette en innenfor brukerens forretningsenhet, ved å bruke metoden `CreateConsumer()`:
+```go
 func (c *AuthenticatedClient) CreateConsumer(bUnitID int, name string) (Consumer, error)
 ```
 Metoden `CreateConsumer()` oppretter en ny konsument i en forretningsenhet og returnerer en `Consumer`-struktur som inneholder ID, navn, opprettelsesdato osv. Den tar følgende parametere:
@@ -133,7 +139,8 @@ Metoden `CreateConsumer()` oppretter en ny konsument i en forretningsenhet og re
 
 ## 6. Opprette en sikkerhetskopinode
 
-En konsument (eller forbruksenhet, som det kalles i nettportalen) er en enhet som inneholder metadata som visningsnavn, tagger og faktureringsdata. Men vi må fortsatt opprette en faktisk sikkerhetskopinode i vår nyopprettede konsument. Til dette bruker vi metoden `CreateNode()`:```go
+En konsument (eller forbruksenhet, som det kalles i nettportalen) er en enhet som inneholder metadata som visningsnavn, tagger og faktureringsdata. Men vi må fortsatt opprette en faktisk sikkerhetskopinode i vår nyopprettede konsument. Til dette bruker vi metoden `CreateNode()`:
+```go
 func (c *AuthenticatedClient) CreateNode(bUnitID, consumerID, osTypeID, nodeTypeID, domainID, clientOptionSetID int, contact string) (Node, error)
 ```
 Metoden `CreateNode()` oppretter en backupnode knyttet til en forbruksenhet og returnerer en ny `Node`-struktur. Den krever følgende parametere:
@@ -152,7 +159,8 @@ Metoden `CreateNode()` oppretter en backupnode knyttet til en forbruksenhet og r
 
 ## 7. Aktivere serveren
 
-Når vi har opprettet både en forbruksenhet (consumption-unit) og en backupnode på servernivå, må vi aktivere noden for å hente brukernavn og passord som skal gis videre til IBM Spectrum Protect Backup-Archive Client som vil kjøre på serveren og faktisk utføre sikkerhetskopiene. Dette gjøres med metoden `ActivateNode()`:```go
+Når vi har opprettet både en forbruksenhet (consumption-unit) og en backupnode på servernivå, må vi aktivere noden for å hente brukernavn og passord som skal gis videre til IBM Spectrum Protect Backup-Archive Client som vil kjøre på serveren og faktisk utføre sikkerhetskopiene. Dette gjøres med metoden `ActivateNode()`:
+```go
 func (c *AuthenticatedClient) ActivateNode(bUnitID, consumerID int) (Node, error)
 ```
 Metoden `ActivateNode()` returnerer en `Node`-struktur som inneholder verdiene `Node.TsmName` og `Node.TsmPassword` som hentes når backup-noden aktiveres. Disse verdiene gjør at IBM Spectrum Protect Backup-Archive Client kan identifisere seg korrekt når den kobler til backup-serveren. Vi kaller metoden `ActivateNode()` med samme forretningsenhets-ID og konsument-ID som tidligere.
@@ -161,7 +169,8 @@ Metoden `ActivateNode()` returnerer en `Node`-struktur som inneholder verdiene `
 
 ## 8. Ferdig applikasjon
 
-La oss nå sette alt sammen og se på den komplette applikasjonen:```go
+La oss nå sette alt sammen og se på den komplette applikasjonen:
+```go
 package main
 
 import (

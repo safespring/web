@@ -86,7 +86,8 @@ Terraform har en praktisk funksjon som lar oss konfigurere flere instanser av
 samme type provider og bruke aliaser for å skille hvilken som skal brukes
 når vi erklærer ønsket tilstand for ressurser.
 
-I vårt tilfelle gjør denne koden nettopp det:```hcl
+I vårt tilfelle gjør denne koden nettopp det:
+```hcl
 provider "openstack" {
   alias               = "sto1-sandbox"
   cloud = "safespring-sto1"
@@ -100,7 +101,8 @@ provider "openstack" {
 ```
 Her definerer vi to deklarasjoner av Terraform OpenStack-leverandøren som peker til ulike oppføringer i `clouds.yaml`-filen og som kan refereres til med deres `alias`.
 
-Vi må også angi hvilke versjoner av leverandører vi trenger for alle leverandørene som brukes i koden. Slik:```hcl
+Vi må også angi hvilke versjoner av leverandører vi trenger for alle leverandørene som brukes i koden. Slik:
+```hcl
 terraform {
   required_providers {
     openstack = {
@@ -120,7 +122,8 @@ Merk også at aliasene til OpenStack-providerinstansene må angis i feltet `conf
 
 ### Web-backend-instanser i den første skyen (Safespring sto1)
 
-Vi starter med å definere ønsket tilstand i Terraform for instanser i Safespring-datasenteret sto1, slik (`safespring.tf`):```hcl
+Vi starter med å definere ønsket tilstand i Terraform for instanser i Safespring-datasenteret sto1, slik (`safespring.tf`):
+```hcl
 resource "openstack_compute_keypair_v2" "sto1kp" {
   name       = "mc-sto1-pubkey"
   public_key = chomp(file("~/.ssh/id_rsa_jump.pub"))
@@ -177,7 +180,8 @@ Vi bruker enkelt og greit Safespring-leverte Terraform-moduler direkte fra Githu
 åpning av portene for ssh, http og https henholdsvis) og bruke count med
 et prefiks for å deklarere et sett med instanser der antallet og navnet styres
 av variabelen `var.count_safespring`. Variabelen er definert i filen
-`variables.tf` med en standardverdi på `1`, slik:```hcl
+`variables.tf` med en standardverdi på `1`, slik:
+```hcl
 variable "count_safespring" {
   description = "Instance count Safespring"
   type        = number
@@ -226,7 +230,8 @@ Ansible-playbook.
 ### Konfigurere webtjenesten på backend-instansene i Safespring
 
 Vi konfigurerer en minimal backend HTTP-tjeneste med en Ansible-playbook som dette
-(`configure.yaml`):```yaml
+(`configure.yaml`):
+```yaml
 - name: Configure back ends
   hosts: os_metadata_role=http_backend
   become: yes
@@ -252,7 +257,8 @@ Merk `hosts:`-feltet som forteller Ansible hvor de påfølgende oppgavene skal k
 Det er her koblingen skjer mellom det vi spesifiserte som en `role` i ønsket tilstand (Terraform) for
 klargjøring av instanser og vertsgruppen vi vil konfigurere i Ansible-playbooken.
 
-Så kjører vi nå playbooken slik:```shell
+Så kjører vi nå playbooken slik:
+```shell
 $ ansible-playbook -i ati configure.yaml
 [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
 
@@ -310,7 +316,8 @@ være nødvendig med variasjon av providere og aliaser.
 Koden for SSH-nøkkel, security group med regler og instans er faktisk
 identisk, bortsett fra at den bruker et annet provider-alias som peker til den
 andre europeiske skyleverandørens OpenStack-skyoppføring i den lokale
-`clouds.yaml`-filen, slik:```hcl
+`clouds.yaml`-filen, slik:
+```hcl
 resource "openstack_compute_keypair_v2" "psncdcwkp" {
   name       = "mc-psnc-bst-pubkey"
   public_key = chomp(file("~/.ssh/id_ecdsa.pub"))
@@ -372,7 +379,8 @@ module "psnc_dcw_instances" {
 ```
 Merk at parameterne `image` og `flavor` må spesifiseres, ettersom de innebygde standardverdiene for Safespring-modulene angir Safespring-spesifikke image og flavor. Tilsvarende som hos Safespring er standardantallet for instanser hos den andre europeiske skyleverandøren `1`.
 
-Denne koden er imidlertid ikke tilstrekkelig for å gjøre instanser tilgjengelige på Internett på samme måte som med Safespring IaaS. For å få til det må vi også legge til:```hcl
+Denne koden er imidlertid ikke tilstrekkelig for å gjøre instanser tilgjengelige på Internett på samme måte som med Safespring IaaS. For å få til det må vi også legge til:
+```hcl
 resource "openstack_networking_floatingip_v2" "floatip_1" {
   provider = openstack.psnc-dcw
   count    = var.count_psnc
@@ -390,7 +398,8 @@ Denne koden vil tildele en offentlig IPv4-adresse fra en pulje med flytende IP-a
 
 ### Konfigurere webtjenesten på back-end-instansene
 
-Og nå kommer gevinsten av automatiseringen: Det eneste som trengs nå er å kjøre Ansible-playbooken på nytt med det oppdaterte inventoryet som den nye Terraform-tilstanden representerer. Nærmere bestemt inneholder vertgruppen `os_metadata_role=http_backend` nå både Safespring- og den andre europeiske skyleverandørens instans(er).```shell
+Og nå kommer gevinsten av automatiseringen: Det eneste som trengs nå er å kjøre Ansible-playbooken på nytt med det oppdaterte inventoryet som den nye Terraform-tilstanden representerer. Nærmere bestemt inneholder vertgruppen `os_metadata_role=http_backend` nå både Safespring- og den andre europeiske skyleverandørens instans(er).
+```shell
 $ ansible-playbook -i ati configure.yaml
 ansible-playbook -i ati configure.yaml
 [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
@@ -423,7 +432,8 @@ Og playbooken vil oppdage at i Safespring-instansen var alt allerede satt opp ri
 
 Man kan i praksis bruke hvilken som helst DNS-leverandør, men for å styre unna potensielt problematiske amerikansk-eide tjenester er det best å velge et europeisk selskap. Derfor valgte vi Gandi.net. Siden Gandi.net er et fransk selskap, er overføring av data til tredjeland etter GDPR helt eliminert, slik det også er når man bruker Safespring og våre partneres tjenester.
 
-For å automatisk vedlikeholde et sett med DNS A-poster som lastbalanserer på tvers av instanser i begge (eller alle) OpenStack-lokasjoner, kan vi bruke følgende Terraform-kode (`gandi-dns.tf`), som igjen bruker den offisielle Terraform-leverandøren for Gandi.net, som i sin tur bruker Gandi.net-automatiserings-API-et.```hcl
+For å automatisk vedlikeholde et sett med DNS A-poster som lastbalanserer på tvers av instanser i begge (eller alle) OpenStack-lokasjoner, kan vi bruke følgende Terraform-kode (`gandi-dns.tf`), som igjen bruker den offisielle Terraform-leverandøren for Gandi.net, som i sin tur bruker Gandi.net-automatiserings-API-et.
+```hcl
 resource "gandi_livedns_record" "rrlb" {
   zone   = "saft.in"
   name   = "www.mcdemo"
@@ -434,7 +444,8 @@ resource "gandi_livedns_record" "rrlb" {
 ```
 Her oppretter vi A-poster for alle IPv4-adresser til instanser i både Safespring og den andre europeiske skyleverandørens OpenStack-IaaS ved å slå sammen listene over IPv4-adresser fra Safespring-modulenes utdata og den andre leverandørens flytende IP-adresser, henholdsvis. Alle A-postene peker til navnet `www.mcdemo.saft.in`, dermed vil DNS lastbalansere på tvers av alle disse IPv4-adressene i en round-robin-måte.
 
-Vi kan teste dette med `curl`:```shell
+Vi kan teste dette med `curl`:
+```shell
 for i in `seq 1 100`
 do
 echo "$(curl -s www.mcdemo.saft.in)"
@@ -452,11 +463,13 @@ instanser er med på å betjene webforespørsler.
 Med et slikt oppsett trenger vi bare å
 endre noen count-parametere, kjøre `terraform apply` og kjøre den samme
 Ansible-playbooken på nytt etter hvert som inventoryet endres. For å gjøre dette kan vi opprette en
-variabelfil (`terraform.tfvars`) med følgende innhold.```hcl
+variabelfil (`terraform.tfvars`) med følgende innhold.
+```hcl
 count_psnc=2
 count_safespring=3
 ```
-Etter å ha tatt dette i bruk og kjørt Ansible-playbooken på nytt, gir testen vår med `curl` følgende resultat.```shell
+Etter å ha tatt dette i bruk og kjørt Ansible-playbooken på nytt, gir testen vår med `curl` følgende resultat.
+```shell
 for i in `seq 1 100`
 do
 echo "$(curl -s www.mcdemo.saft.in)"
