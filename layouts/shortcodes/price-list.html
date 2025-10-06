@@ -180,28 +180,27 @@
       });
       // Skicka Ajax
       var payload = [], xhr;
-      if(void 0===window.grecaptcha || ""!==window.grecaptcha.getResponse()){
-        for(var j=0;j<inputs.length;j++){
-          var inp = inputs[j];
-          if(inp.type==="checkbox"){
-            payload.push(inp.name+"="+encodeURIComponent(inp.checked?inp.value:"off"));
-          } else {
-            payload.push(inp.name+"="+encodeURIComponent(inp.value));
-          }
+      for (var j = 0; j < inputs.length; j++) {
+        var inp = inputs[j];
+        if (inp.type === "checkbox") {
+          payload.push(inp.name + "=" + encodeURIComponent(inp.checked ? inp.value : "off"));
+        } else {
+          payload.push(inp.name + "=" + encodeURIComponent(inp.value));
         }
-        payload.push("isAjax=true");
-        xhr = new XMLHttpRequest();
-        xhr.open("POST", f.action);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send(payload.join("&"));
-        xhr.onload = function(){
-          if(xhr.status===200){
-            window.top.location.href = n;
-          } else {
-            console.log("AJAX ERROR", xhr.status);
-          }
-        };
       }
+      payload.push("isAjax=true");
+
+      xhr = new XMLHttpRequest();
+      xhr.open("POST", f.action);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.send(payload.join("&"));
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          window.top.location.href = n;
+        } else {
+          console.log("AJAX ERROR", xhr.status);
+        }
+      };
     }
   </script>
   <script>
