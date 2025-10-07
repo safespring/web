@@ -23,7 +23,7 @@ toc: ""
 The IaaS service additionally contains a cloud image service (Openstack Glance).
 {{< /ingress >}}
 
-## Cloud Images
+## What is a cloud image
 
 Cloud images are prepared OS images that are deployable in a cloud environment where, for example the server-to-be’s name, IP or MAC address is not known in advance. These images are commonly relying on a popular piece of software called cloud-init.
 
