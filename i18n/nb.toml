@@ -88,6 +88,18 @@ documentation_desc_samurai = "Samurai gir deg reelltidsinsikter i din bedriftens
 demo = "Se demo"
 demo_show = "La en av våre Cloud Architects vise deg vår plattform."
 
+[form]
+title = "Test skytjenesten - Opplev Safespring"
+description = "Hos Safespring betaler du bare for ressursene du bruker, noe som gjør at du slipper lisenskostnader. Du kan også teste tjenestene våre kostnadsfritt i en periode for å komme raskt i gang. Ta første steg og fyll ut skjemaet nedenfor."
+f_name = "Fornavn"
+l_name = "Etternavn"
+phone = "Mobilnummer"
+email = "E-post"
+org = "Organisasjon"
+privacy = "Behandling av personopplysninger"
+submit = "Bli kontaktet"
+not_accepted = "Du må acceptere våre vilkår og betingelser"
+
 [meta]
 desc = "Safespring er en offentlig skyplattform som er lokalt produsert. Med sikre datasentre holder du dine data innenfor landets grenser. Les mer!"
 matomo_id = "4"

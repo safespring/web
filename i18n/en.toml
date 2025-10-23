@@ -88,6 +88,19 @@ documentation_desc_samurai = "Samurai gives you real-time insights into your com
 demo = "Watch demo"
 demo_show = "Let one of our Cloud Architects show you our platform."
 
+[form]
+title = "Try the cloud service - Experience Safespring"
+description = "At Safespring, you only pay for the resources you use, which means you avoid license costs. You can also try our services free of charge for a period to get started easily. Take the first step and fill out the form below."
+f_name = "First name"
+l_name = "Last name"
+phone = "Mobile number"
+email = "Email"
+org = "Organization"
+privacy = "Personal Data Processing"
+submit = "Contact me"
+not_accepted = "You must accept our terms and conditions"
+
+
 
 [meta]
 desc = "Safespring is a public cloud platform that is locally produced. With secure data centers, you keep your data within the country's borders. Read more!"

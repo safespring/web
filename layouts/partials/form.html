@@ -1,13 +1,8 @@
 <p id="test-safespring"></p>
 
 <div>
-  <h2 id="testa-safespring">Testa molntjänsten - Upplev Safespring</h2>
-  <p>
-    Hos safespring betalar du endast för de resurser du konsumerar vilket gör
-    att du slipper licenskostnader. Du får även testa våra tjänster utan kostnad
-    under en period för att enkelt komma igång. Ta första steget och fyll i
-    formuläret nedan.
-  </p>
+  <h2 id="testa-safespring">{{ T "form.title" }}</h2>
+  <p>{{ T "form.description" }}</p>
   <br />
 
   <style>
@@ -24,12 +19,12 @@
       margin-bottom: 10px;
     }
 
-		/* Textfält och andra inputfält */
-		.form-field {
-			position: relative;
-			margin-bottom: 15px;
-			width: 100%;
-		}
+    /* Textfält och andra inputfält */
+    .form-field {
+      position: relative;
+      margin-bottom: 15px;
+      width: 100%;
+    }
 
     .form-field label {
       position: absolute;
@@ -167,13 +162,15 @@
       <div class="form-field">
         <input type="text" id="firstname" name="Contact.firstname" required />
         <label for="name"
-          ><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label
+          ><i class="fas fa-user"></i
+          >&nbsp;&nbsp;&nbsp;{{ T "form.f_name" }}</label
         >
       </div>
       <div class="form-field">
         <input type="text" id="lastname" name="Contact.lastname" required />
         <label for="name"
-          ><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label
+          ><i class="fas fa-user"></i
+          >&nbsp;&nbsp;&nbsp;{{ T "form.l_name" }}</label
         >
       </div>
     </div>
@@ -182,7 +179,7 @@
         <input type="tel" id="phone" name="Contact.cellPhone" required />
         <label for="phone"
           ><i class="fas fa-mobile-screen-button"></i
-          >&nbsp;&nbsp;&nbsp;Mobilnummer</label
+          >&nbsp;&nbsp;&nbsp;{{ T "form.phone" }}</label
         >
       </div>
       <div class="form-field">
@@ -198,7 +195,8 @@
           required="required"
         />
         <label for="email"
-          ><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label
+          ><i class="fas fa-envelope"></i
+          >&nbsp;&nbsp;&nbsp;{{ T "form.email" }}</label
         >
       </div>
     </div>
@@ -212,7 +210,8 @@
         required="required"
       />
       <label for="organization"
-        ><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label
+        ><i class="fas fa-briefcase"></i
+        >&nbsp;&nbsp;&nbsp;{{ T "form.org" }}</label
       >
     </div>
     <div class="inputGroup">
@@ -223,7 +222,7 @@
         required
       />
       <label for="accept-terms">
-        Personuppgiftshantering&nbsp;&nbsp;&nbsp;<a
+        {{ T "form.privacy" }}&nbsp;&nbsp;&nbsp;<a
           target="_blank"
           href="/dokument/personuppgiftshantering/"
           ><i class="fas fa-up-right-from-square"></i
@@ -245,7 +244,7 @@
       id="checkBtn"
       type="submit"
     >
-      Bli kontaktad
+      {{ T "form.submit" }}
     </button>
   </form>
   <script type="text/javascript">
@@ -257,7 +256,7 @@
             "input[type=checkbox]:checked",
           ).length;
           if (!checked) {
-            alert("You must accept our terms and conditions");
+            alert('{{ T "form.not_accepted" }}');
             return false;
           }
         });
