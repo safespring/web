@@ -90,7 +90,7 @@ demo_show = "La en av våre Cloud Architects vise deg vår plattform."
 
 [form]
 title = "Test skytjenesten - Opplev Safespring"
-description = "Hos Safespring betaler du bare for ressursene du bruker, noe som gjør at du slipper lisenskostnader. Du kan også teste tjenestene våre kostnadsfritt i en periode for å komme raskt i gang. Ta første steg og fyll ut skjemaet nedenfor."
+desc = "Hos Safespring betaler du bare for ressursene du bruker, noe som gjør at du slipper lisenskostnader. Du kan også teste tjenestene våre kostnadsfritt i en periode for å komme raskt i gang. Ta første steg og fyll ut skjemaet nedenfor."
 f_name = "Fornavn"
 l_name = "Etternavn"
 phone = "Mobilnummer"
