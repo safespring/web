@@ -50,7 +50,7 @@ Det finns många sätt som en organisation inom forskning och utbildning kan upp
     <h3>Kontrollera om din organisation kan använda OCRE 2024</h3>
     <p>Skriv namnet på din organisation för att kontrollera om ni kan använda ramavtalet OCRE 2024 för att avropa Safesprings tjänster.</p>
     <br>
-    {{< university-filter-local >}}
+    {{< university-filter >}}
     <br>
 </div>
 </div>

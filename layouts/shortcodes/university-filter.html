@@ -73,26 +73,38 @@
   <input
     type="text"
     id="filterInput"
-    placeholder="Name of organisation..."
+    placeholder="{{ T "university_filter.placeholder" }}"
     style="width: 80%"
   />
-  <button id="toggleButton">Show all</button>
+  <button id="toggleButton">{{ T "university_filter.show_all" }}</button>
   <div id="universityContainer">
-    {{ $order := .Get "order" | default "sweden,norway,denmark" }}
-    {{ $orderedCountries := split $order "," }}
-    {{ range $orderedCountries }}
-      {{ $country := . }}
-      <ul id="dataList-{{ $country | urlize }}" class="universitylist">
-        <p>Eligible organisations in {{ $country }}:</p>
-        {{ range index site.Data.universities $country }}
-          <li class="country-{{ $country | urlize }}">{{ . }}</li>
+    {{ if eq (T "university_filter.country") "none" }}
+      {{ $order := .Get "order" | default "sweden,norway,denmark" }}
+      {{ $orderedCountries := split $order "," }}
+      {{ range $orderedCountries }}
+        {{ $country := . }}
+        <ul id="dataList-{{ $country | urlize }}" class="universitylist">
+          <p>{{ T "university_filter.title" }} {{ $country }}:</p>
+          {{ range index site.Data.universities $country }}
+            <li class="country-{{ $country | urlize }}">{{ . }}</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ else }}
+      <ul
+        id="dataList-{{ T "university_filter.country" }}"
+        class="universitylist"
+      >
+        <p>{{ T "university_filter.title" }}</p>
+        {{ range index site.Data.universities  (T "university_filter.country") }}
+          <li class="country-{{ T "university_filter.country" }}">{{ . }}</li>
         {{ end }}
       </ul>
     {{ end }}
   </div>
   <div id="noMatchMessage">
     <ul class="noMatchMessage">
-      <li>No match was found.</li>
+      <li>{{ T "university_filter.no_match" }}</li>
     </ul>
   </div>
   <script>
@@ -157,7 +169,7 @@
       toggleButton.addEventListener("click", function () {
         if (showingAll) {
           lists.forEach((list) => (list.style.display = "none"));
-          toggleButton.textContent = "Show all";
+          toggleButton.textContent = '{{ T "university_filter.show_all" }}';
         } else {
           lists.forEach((list) => {
             list.style.display = "flex";
@@ -165,7 +177,7 @@
               .querySelectorAll("li")
               .forEach((item) => (item.style.display = ""));
           });
-          toggleButton.textContent = "Hide all";
+          toggleButton.textContent = '{{ T "university_filter.hide_all" }}';
         }
         showingAll = !showingAll;
       });

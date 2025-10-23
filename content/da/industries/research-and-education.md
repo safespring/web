@@ -49,7 +49,7 @@ Der er mange måder, hvorpå en forsknings- og uddannelsesorganisation kan købe
     <h3>Tjek om din organisation kan bruge OCRE 2024</h3>
     <p>Indtast navnet på din organisation for at tjekke, om du kan bruge OCRE 2024-rammeaftalen til at rekvirere Safesprings tjenester.</p>
     <br>
-    {{< university-filter-local >}}
+    {{< university-filter >}}
     <br>
 </div>
 </div>

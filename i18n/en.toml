@@ -102,6 +102,7 @@ not_accepted = "You must accept our terms and conditions"
 
 [university_filter]
 title = "Eligible organisations in"
+country = "none"
 placeholder = "Name of organisation..."
 show_all = "Show all"
 hide_all = "Hide all"
