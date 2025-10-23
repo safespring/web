@@ -100,6 +100,12 @@ privacy = "Personal Data Processing"
 submit = "Contact me"
 not_accepted = "You must accept our terms and conditions"
 
+[university_filter]
+title = "Eligible organisations in"
+placeholder = "Name of organisation..."
+show_all = "Show all"
+hide_all = "Hide all"
+no_match = "No match was found."
 
 
 [meta]

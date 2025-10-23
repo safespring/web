@@ -51,7 +51,7 @@ Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte Safespr
     <h3>Sjekk om organisasjonen din kan bruke OCRE 2024</h3>
     <p>Skriv inn navnet på organisasjonen din for å sjekke om du kan bruke OCRE 2024-avtalen til å benytte Safesprings tjenester.</p>
     <br>
-    {{< university-filter-norway >}}
+    {{< university-filter-local >}}
     <br>
 </div>
 </div>

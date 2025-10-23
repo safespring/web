@@ -100,6 +100,14 @@ privacy = "Behandling av personopplysninger"
 submit = "Bli kontaktet"
 not_accepted = "Du må acceptere våre vilkår og betingelser"
 
+[university_filter]
+title = "Avropsberettigede organisasjoner i Norge:"
+country = "norway"
+placeholder = "Navn på organisasjonen..."
+show_all = "Vis alle"
+hide_all = "Skjul alle"
+no_match = "Ingen organisasjoner ble funnet."
+
 [meta]
 desc = "Safespring er en offentlig skyplattform som er lokalt produsert. Med sikre datasentre holder du dine data innenfor landets grenser. Les mer!"
 matomo_id = "4"

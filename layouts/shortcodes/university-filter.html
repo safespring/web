@@ -78,7 +78,7 @@
   />
   <button id="toggleButton">Show all</button>
   <div id="universityContainer">
-    {{ $order := .Get "order" | default "Sweden,Norway,Denmark" }}
+    {{ $order := .Get "order" | default "sweden,norway,denmark" }}
     {{ $orderedCountries := split $order "," }}
     {{ range $orderedCountries }}
       {{ $country := . }}

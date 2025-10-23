@@ -100,6 +100,14 @@ privacy = "Personuppgiftshantering"
 submit = "Bli kontaktad"
 not_accepted = "Du måste acceptera våra villkor"
 
+[university_filter]
+title = "Avropsberättigade organisationer i Sverige:"
+country = "sweden"
+placeholder = "Namn på organisation..."
+show_all = "Visa alla"
+hide_all = "Dölj alla"
+no_match = "Inga organisationer hittades."
+
 [meta]
 desc = "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
 matomo_id = "3"

@@ -61,7 +61,7 @@ Safespring's services are available via the OCRE 2024 framework in Denmark, Norw
     <h3>Check if you can use the OCRE 2024 framework</h3>
     <p>Write the name of your organisation to see if you can use the OCRE 2024 framework to buy Safespring services.</p>
     <br>
-    {{< university-filter order="Sweden,Norway,Denmark" >}}
+    {{< university-filter order="sweden,norway,denmark" >}}
     <br>
 </div>
 </div>

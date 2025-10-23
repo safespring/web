@@ -73,21 +73,24 @@
   <input
     type="text"
     id="filterInput"
-    placeholder="Navn på organisasjonen..."
+    placeholder="{{ T "university_filter.placeholder" }}"
     style="width: 80%"
   />
-  <button id="toggleButton">Vis alle</button>
+  <button id="toggleButton">{{ T "university_filter.show_all" }}</button>
   <div id="universityContainer">
-    <ul id="dataList-norway" class="universitylist">
-      <p>Avropsberettigede organisasjoner i Norge:</p>
-      {{ range index site.Data.universities "Norway" }}
-        <li class="country-norway">{{ . }}</li>
+    <ul
+      id="dataList-{{ T "university_filter.country" }}"
+      class="universitylist"
+    >
+      <p>{{ T "university_filter.title" }}</p>
+      {{ range index site.Data.universities  (T "university_filter.country") }}
+        <li class="country-{{ T "university_filter.country" }}">{{ . }}</li>
       {{ end }}
     </ul>
   </div>
   <div id="noMatchMessage">
     <ul class="noMatchMessage">
-      <li>Ingen organisasjoner ble funnet.</li>
+      <li>{{ T "university_filter.no_match" }}</li>
     </ul>
   </div>
   <script>
@@ -152,7 +155,7 @@
       toggleButton.addEventListener("click", function () {
         if (showingAll) {
           lists.forEach((list) => (list.style.display = "none"));
-          toggleButton.textContent = "Vis alle";
+          toggleButton.textContent = '{{ T "university_filter.show_all" }}';
         } else {
           lists.forEach((list) => {
             list.style.display = "flex";
@@ -160,7 +163,7 @@
               .querySelectorAll("li")
               .forEach((item) => (item.style.display = ""));
           });
-          toggleButton.textContent = "Skjul alle";
+          toggleButton.textContent = '{{ T "university_filter.hide_all" }}';
         }
         showingAll = !showingAll;
       });
