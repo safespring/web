@@ -9,7 +9,7 @@ tags: ["Norsk"]
 card: "/img/event/cards/safespring_card_47.svg"
 eventbild: ""
 socialmediabild: ""
-intro: "OsloMET shares its experience of the transition from homegrown automation of VM management to Safespring Compute at a seminar titled \"From DIY to as-a-service in IT education\""
+intro: 'OsloMET shares its experience of the transition from homegrown automation of VM management to Safespring Compute at a seminar titled "From DIY to as-a-service in IT education"'
 partner: ""
 audience: "Software as a Service"
 explorer: ""
@@ -17,10 +17,12 @@ sidebarlinkurl: "/demo"
 sidebarlinkname: "demo of Safespring's cloud platform"
 sidebar: "x"
 sidebarimage: ""
+author: "Jarle Bjørgeengen"
 section: "Webinar"
 aliases:
   - /webinar/oslomet-use-case-2023/
 ---
+
 {{< ingress>}}
 From DIY to as-a-service in IT education; OsloMET shares experiences transitioning from homegrown automation of VM management to "Safespring Compute (managed Openstack)".
 {{< /ingress >}}

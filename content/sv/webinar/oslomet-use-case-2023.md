@@ -9,7 +9,7 @@ tags: ["Norsk"]
 card: "/img/event/cards/safespring_card_47.svg"
 eventbild: ""
 socialmediabild: ""
-intro: "OsloMET delar med sig av sina erfarenheter av övergången från egenutvecklad automatisering av VM-administration till Safespring Compute i ett seminarium om \"Från gör-det-själv till as-a-service i IT-undervisningen\""
+intro: 'OsloMET delar med sig av sina erfarenheter av övergången från egenutvecklad automatisering av VM-administration till Safespring Compute i ett seminarium om "Från gör-det-själv till as-a-service i IT-undervisningen"'
 partner: ""
 audience: "SaaS"
 explorer: ""
@@ -17,10 +17,12 @@ sidebarlinkurl: "/demo"
 sidebarlinkname: "Demo av Safesprings molnplattform"
 sidebar: "x"
 sidebarimage: ""
+author: "Jarle Bjørgeengen"
 section: "Webbinarium"
 aliases:
   - /webinar/oslomet-use-case-2023/
 ---
+
 {{< ingress>}}
 Från gör-det-själv till as-a-service i IT‑undervisningen; OsloMET delar erfarenheter av övergången från hemmagjord automatisering av VM‑administration till "Safespring Compute (managed Openstack)".
 {{< /ingress >}}
