@@ -16,24 +16,24 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris för support"
 sidebarlinkurl2: "/geant/price/#support-and-consulting-services"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverket"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/support/
+  - /geant/service-catalogue/support/
 ---
+
 {{< ingress >}}
 Safespring erbjuder support på flera olika sätt för plattformen och relaterade tjänster.
 {{< /ingress >}}
 
-| Produktkod        | Supporttjänst                                                   |
-| ----------------- | ---------------------------------------------------------------- |
-| SUPPORT-base      | Grundsupport för Compute                                        |
-| SUPPORT-standard  | Åtkomst till en särskild chattkanal med support och teknikteamet |
-| SUPPORT-premium   | Dedikerad Service Manager med kvartalsvisa driftmöten           |
+| Produktkod       | Supporttjänst                                                    |
+| ---------------- | ---------------------------------------------------------------- |
+| SUPPORT-base     | Grundsupport för Compute                                         |
+| SUPPORT-standard | Åtkomst till en särskild chattkanal med support och teknikteamet |
+| SUPPORT-premium  | Dedikerad Service Manager med kvartalsvisa driftmöten            |
 
 ## Grundsupport
 

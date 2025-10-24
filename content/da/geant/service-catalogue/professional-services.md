@@ -14,27 +14,27 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeaftale"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/professional-services/
+  - /geant/service-catalogue/professional-services/
 ---
+
 {{< ingress >}}
 Safespring tilbyder yderligere valgfrie professionelle ydelser, så kunderne kan få endnu mere værdi ud af de tjenester, der er implementeret på platformen.
 {{< /ingress >}}
 
-| Produktkode      | Ydelse                                                            |
-| ---------------- | ----------------------------------------------------------------- |
-| PS-consult.jun   | Cloud-infrastrukturkonsulent, juniorniveau                       |
-| PS-consult.sen   | Cloud-infrastrukturkonsulent, seniorniveau                       |
-| PS-cloudarch.jun | Cloud-infrastrukturarkitektkonsulent, juniorniveau               |
-| PS-cloudarch.sen | Cloud-infrastrukturarkitektkonsulent, seniorniveau               |
-| PS-pm.jun        | Projektleder, juniorniveau                                        |
-| PS-pm.sen        | Projektleder, seniorniveau                                        |
+| Produktkode      | Ydelse                                             |
+| ---------------- | -------------------------------------------------- |
+| PS-consult.jun   | Cloud-infrastrukturkonsulent, juniorniveau         |
+| PS-consult.sen   | Cloud-infrastrukturkonsulent, seniorniveau         |
+| PS-cloudarch.jun | Cloud-infrastrukturarkitektkonsulent, juniorniveau |
+| PS-cloudarch.sen | Cloud-infrastrukturarkitektkonsulent, seniorniveau |
+| PS-pm.jun        | Projektleder, juniorniveau                         |
+| PS-pm.sen        | Projektleder, seniorniveau                         |
 
 ## Cloud-infrastrukturkonsulent, juniorniveau
 

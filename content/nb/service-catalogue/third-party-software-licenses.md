@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safesprings tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/third-party-software-licenses/
+  - /service-catalogue/third-party-software-licenses/
 ---
+
 {{< ingress >}}
 Safespring tilbyr flere tredjeparts programvarelisenser for bruk på våre IaaS-plattformer.
 {{< /ingress >}}
@@ -209,18 +209,18 @@ ClusterControl er det komplette administrasjonssystemet for åpne kildekode-data
 
 ### Cluster Control – støttede databaser
 
-| Databasetype                        | Klyngetype                                   | Versjon                                                                    | Minste anbefalte noder                                                           |
-| ----------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| MySQL / MariaDB                     | MySQL Cluster (NDB)                          | 7.1 og nyere                                                               | 5 verter (2 datanoder + 2 API-/mgmd-noder + 1 ClusterControl-node)               |
-|                                     | MySQL/MariaDB-replikering                    | 5.1/5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB) | 3 verter (1 masternode + 1 standby master/slave + 1 ClusterControl-node)         |
-|                                     | Percona XtraDB Cluster MariaDB Galera Cluster | 5.5/5.6/5.7 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)         | 4 verter (3 Galera-noder + 1 ClusterControl-node)                                |
-|                                     | Enkel instans                                | 5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)     | 2 verter (1 databasenode + 1 ClusterControl-node)                                |
-| MongoDB / Percona Server for MongoDB | Shardet klynge                               | 3.4/3.6/4.0/4.2                                                            | 4 verter (3 konfigservere / 3 shard-servere / 2 mongos + 1 ClusterControl-node)  |
-|                                     | Replika-sett                                 |                                                                            | 4 verter (3 replika-servere + 1 ClusterControl-node)                             |
-| PostgreSQL                          | Enkel instans                                | >9.6/10.x/11.x/12.x                                                        | 2 verter (1 PostgreSQL-node + 1 ClusterControl-node)                             |
-|                                     | Streaming-replikering                        |                                                                            | 3 verter (1 masternode + 1 slavenode + 1 ClusterControl                          |
-| TimeScaleDB                         | Enkel instans                                | >9.6/10.x/11.x/12.x                                                        | 2 verter (1 TimeScaleDB-node + 1 ClusterControl-node)                            |
-|                                     | Streaming-replikering                        |                                                                            | 3 verter (1 masternode + 1 slavenode + 1 ClusterControl-node)                    |
+| Databasetype                         | Klyngetype                                    | Versjon                                                                    | Minste anbefalte noder                                                          |
+| ------------------------------------ | --------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| MySQL / MariaDB                      | MySQL Cluster (NDB)                           | 7.1 og nyere                                                               | 5 verter (2 datanoder + 2 API-/mgmd-noder + 1 ClusterControl-node)              |
+|                                      | MySQL/MariaDB-replikering                     | 5.1/5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB) | 3 verter (1 masternode + 1 standby master/slave + 1 ClusterControl-node)        |
+|                                      | Percona XtraDB Cluster MariaDB Galera Cluster | 5.5/5.6/5.7 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)         | 4 verter (3 Galera-noder + 1 ClusterControl-node)                               |
+|                                      | Enkel instans                                 | 5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)     | 2 verter (1 databasenode + 1 ClusterControl-node)                               |
+| MongoDB / Percona Server for MongoDB | Shardet klynge                                | 3.4/3.6/4.0/4.2                                                            | 4 verter (3 konfigservere / 3 shard-servere / 2 mongos + 1 ClusterControl-node) |
+|                                      | Replika-sett                                  |                                                                            | 4 verter (3 replika-servere + 1 ClusterControl-node)                            |
+| PostgreSQL                           | Enkel instans                                 | >9.6/10.x/11.x/12.x                                                        | 2 verter (1 PostgreSQL-node + 1 ClusterControl-node)                            |
+|                                      | Streaming-replikering                         |                                                                            | 3 verter (1 masternode + 1 slavenode + 1 ClusterControl                         |
+| TimeScaleDB                          | Enkel instans                                 | >9.6/10.x/11.x/12.x                                                        | 2 verter (1 TimeScaleDB-node + 1 ClusterControl-node)                           |
+|                                      | Streaming-replikering                         |                                                                            | 3 verter (1 masternode + 1 slavenode + 1 ClusterControl-node)                   |
 
 ## Backup Ninja
 
@@ -245,10 +245,10 @@ Backup Ninja gir brukeren ett sted å administrere sikkerhetskopier for flere da
 ### Støttede databaser
 
 | Databasetype             | Støttede sikkerhetskopier           | Databaseversjon |
-| ------------------------ | ------------------------------------ | --------------- |
-| MySQL                    | Logiske og fysiske sikkerhetskopier  | 5.6, 5.7, 8.x   |
-| MariaDB                  | Fysiske sikkerhetskopier             | 10.x            |
-| Percona Server for MySQL | Fysiske sikkerhetskopier             | 5.6, 5.7, 8.x   |
-| PostgreSQL               | Logiske og fysiske sikkerhetskopier  | 9.4, 10.x, 11.x |
-| TimescaleDB              | Logiske og fysiske sikkerhetskopier  | 9.4, 10.x, 11.x |
-| MongoDB                  | Logiske sikkerhetskopier             | 4.x             |
+| ------------------------ | ----------------------------------- | --------------- |
+| MySQL                    | Logiske og fysiske sikkerhetskopier | 5.6, 5.7, 8.x   |
+| MariaDB                  | Fysiske sikkerhetskopier            | 10.x            |
+| Percona Server for MySQL | Fysiske sikkerhetskopier            | 5.6, 5.7, 8.x   |
+| PostgreSQL               | Logiske og fysiske sikkerhetskopier | 9.4, 10.x, 11.x |
+| TimescaleDB              | Logiske og fysiske sikkerhetskopier | 9.4, 10.x, 11.x |
+| MongoDB                  | Logiske sikkerhetskopier            | 4.x             |

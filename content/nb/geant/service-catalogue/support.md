@@ -16,24 +16,24 @@ sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris på kundestøtte"
 sidebarlinkurl2: "/geant/price/#support-and-consulting-services"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/support/
+  - /geant/service-catalogue/support/
 ---
+
 {{< ingress >}}
 Safespring tilbyr støtte på flere ulike måter for plattformen og tilhørende tjenester.
 {{< /ingress >}}
 
-| Produktkode      | Støttetjeneste                                                 |
-| ---------------- | -------------------------------------------------------------- |
-| SUPPORT-base     | Basisstøtte for Compute                                       |
+| Produktkode      | Støttetjeneste                                                   |
+| ---------------- | ---------------------------------------------------------------- |
+| SUPPORT-base     | Basisstøtte for Compute                                          |
 | SUPPORT-standard | Tilgang til et backchannel-chatrom med støtte- og ingeniørteamet |
-| SUPPORT-premium  | Dedikert Service Manager med kvartalsvise driftsmøter         |
+| SUPPORT-premium  | Dedikert Service Manager med kvartalsvise driftsmøter            |
 
 ## Basisstøtte
 
@@ -57,9 +57,9 @@ Eksempler på konfigurasjoner finnes også i den nettbaserte dokumentasjonen.
 
 Safesprings nettsted inneholder seksjoner med oppdaterte videoer med retningslinjer og veiledninger for alle tjenester. Nettstedet oppdateres med nytt materiale basert på brukerønsker eller når et nytt produkt lanseres.
 
-| Ressurs               | Adresse                     |
-| --------------------- | --------------------------- |
-| Tjenestedokumentasjon | https://docs.safespring.com |
+| Ressurs               | Adresse                       |
+| --------------------- | ----------------------------- |
+| Tjenestedokumentasjon | https://docs.safespring.com   |
 | Tjenestestatus        | https://status.safespring.com |
 
 ## Standardstøtte

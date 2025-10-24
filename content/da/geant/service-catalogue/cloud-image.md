@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/cloud-image/
+  - /geant/service-catalogue/cloud-image/
 ---
+
 {{< ingress >}}
 Compute-tjenesten indeholder desuden en cloud-image-tjeneste (OpenStack Glance).
 {{< /ingress >}}

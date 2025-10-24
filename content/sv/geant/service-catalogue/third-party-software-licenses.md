@@ -16,15 +16,15 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se licenspriser"
 sidebarlinkurl2: "/geant/price/#software-and-licenses"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverket"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/third-party-software-licenses/
+  - /geant/service-catalogue/third-party-software-licenses/
 ---
+
 {{< ingress >}}
 Safespring tillhandahåller flera licenser för tredjepartsprogramvara för användning på våra IaaS-plattformar.
 {{< /ingress >}}

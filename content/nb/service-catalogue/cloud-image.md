@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/cloud-image/
+  - /service-catalogue/cloud-image/
 ---
+
 {{< ingress >}}
 IaaS-tjenesten inneholder i tillegg en bildetjeneste (Openstack Glance).
 {{< /ingress >}}

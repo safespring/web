@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/private-cloud/
+  - /geant/service-catalogue/private-cloud/
 ---
+
 {{< ingress >}}
 Komplett tilbud for utrulling av privat sky, inkludert maskinvare, drift og programvarevedlikehold. Maskinvaren eies av kunden, som stiller med rackplass i datasenteret for installasjonen.
 {{< /ingress >}}

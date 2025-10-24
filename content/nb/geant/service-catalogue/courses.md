@@ -16,20 +16,20 @@ sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris for utdanningsinstitusjoner"
 sidebarlinkurl2: "/geant/price/#educations"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/courses/
+  - /geant/service-catalogue/courses/
 ---
+
 {{< ingress >}}
 Safespring tilbyr følgende kurs og leverer i tillegg flere plattform som en tjeneste (PaaS) på toppen av Compute-plattformen.
 {{< /ingress >}}
 
-| Produktkode               | Tjeneste                                             |
+| Produktkode                | Tjeneste                                           |
 | -------------------------- | -------------------------------------------------- |
 | TRAIN-intro.iaaS           | Introduksjon til IaaS for ledere, 1 dag            |
 | TRAIN-cxo.strategy         | Skystrategi for toppledere, 1 dag                  |

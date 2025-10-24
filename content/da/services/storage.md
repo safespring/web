@@ -16,14 +16,13 @@ sidebarlinkname: "Kom i gang"
 sidebarlinkurl: "#contact"
 sidebarlinkname2: "Pris for Storage"
 sidebarlinkurl2: "/pris/#safespring-storage-s3"
-socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
-    - /da/storage/
-    - /da/safespring-storage/
-    - /da/tjenester/storage/
+  - /da/storage/
+  - /da/safespring-storage/
+  - /da/tjenester/storage/
 ---
 
 {{< icon-block-container >}}

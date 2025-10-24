@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/byol/
+  - /service-catalogue/byol/
 ---
+
 {{< ingress >}}
 Safespring stiller flere tredjeparts-softwarelicenser til rådighed til brug på vores IaaS-platforme.
 {{< /ingress >}}
@@ -38,11 +38,11 @@ Eventuelle angivelser af tilladelighed her er kun vejledende. Kunden er ansvarli
 
 Leverandører med kommerciel support og kendte vilkår for tilladelighed er angivet i tabellen nedenfor.
 
-| Leverandør | Software                                               | Kommentar                                                                                                                                                    |
-| ---------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Microsoft  | Applikationer, ikke operativsystemer som Windows/Windows Server. | På nuværende tidspunkt muligt med Software Assurance og License Mobility                                                                                     |
-| RedHat     | Red Hat Enterprise Linux                               | Tilladt via SLA-klausul for tredjepartssoftware.                                                                                                            |
-| SUSE       | SUSE Enterprise Linux                                  | Tilladt.                                                                                                                                                     |
-| Oracle     | Oracle Database                                        | Tilladt på Safesprings virtuelle IaaS med risiko for manglende support, hvis Oracle vurderer, at årsagen ikke er Oracle-software. Bare-metal-udrulninger får fuld support. |
+| Leverandør | Software                                                         | Kommentar                                                                                                                                                                  |
+| ---------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft  | Applikationer, ikke operativsystemer som Windows/Windows Server. | På nuværende tidspunkt muligt med Software Assurance og License Mobility                                                                                                   |
+| RedHat     | Red Hat Enterprise Linux                                         | Tilladt via SLA-klausul for tredjepartssoftware.                                                                                                                           |
+| SUSE       | SUSE Enterprise Linux                                            | Tilladt.                                                                                                                                                                   |
+| Oracle     | Oracle Database                                                  | Tilladt på Safesprings virtuelle IaaS med risiko for manglende support, hvis Oracle vurderer, at årsagen ikke er Oracle-software. Bare-metal-udrulninger får fuld support. |
 
 Safespring begrænser ikke på nogen måde, hvilken software kunderne bruger, ud over via sin [Politik for acceptabel brug](/documents/safespring-acceptable_use_policy.pdf). Det betyder, at enhver Linux-distribution, der kan køre på x86-platforme på moderne standard KVM-hypervisorer, er teknisk understøttet, herunder stort set alle community-udgaver.

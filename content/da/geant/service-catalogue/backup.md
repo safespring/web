@@ -16,14 +16,14 @@ sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris på beregningskapacitet"
 sidebarlinkurl2: "/geant/price/#safespring-backup"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/backup/
+  - /geant/service-catalogue/backup/
 ---
+
 {{< ingress >}}
 Agentbaserede cloud-backup-tjenester med deduplikering og sikker off-site-lagring.
 {{< /ingress >}}
@@ -38,11 +38,11 @@ Ingen.
 
 ### Konfigurationer
 
-| Produktkode   | Tjeneste                                               |
-| ------------- | ------------------------------------------------------ |
-| BAAS-on.demand | Abonnement egnet til mindre on-demand-behov.          |
-| BAAS-small     | Abonnement egnet til mellemstore behov.               |
-| BAAS-large     | Abonnement egnet til store behov.                     |
+| Produktkode    | Tjeneste                                     |
+| -------------- | -------------------------------------------- |
+| BAAS-on.demand | Abonnement egnet til mindre on-demand-behov. |
+| BAAS-small     | Abonnement egnet til mellemstore behov.      |
+| BAAS-large     | Abonnement egnet til store behov.            |
 
 ### Backup til applikationer og filsystemer
 
@@ -72,8 +72,8 @@ Ud over standard-retentionspolitikkerne tilbyder vi en række versionsbegrænsed
 
 Disse politikker har fordelen, at de giver et prisloft. Hvis der f.eks. vælges en politik med fem versioner, vil den lagrede (og fakturerede) mængde aldrig overstige fem gange klientens datamængde. I de fleste tilfælde vil den lagrede mængde være mindre, da kun ændrede filer sikkerhedskopieres. En fil, der aldrig ændrer sig, vil stadig kun findes i én version i backupsystemet.
 
-| Opbevaring | Beskrivelse                                                                |
-| ---------- | -------------------------------------------------------------------------- |
+| Opbevaring | Beskrivelse                                                               |
+| ---------- | ------------------------------------------------------------------------- |
 | 30 dage    | Bevarer alle backupdata i 30 dage, op til fem versioner pr. fil bevares.  |
 | 30 dage    | Bevarer alle backupdata i 30 dage, op til ti versioner pr. fil bevares.   |
 | 90 dage    | Bevarer alle backupdata i 90 dage, op til fem versioner pr. fil bevares.  |

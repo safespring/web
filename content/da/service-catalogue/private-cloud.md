@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/private-cloud/
+  - /service-catalogue/private-cloud/
 ---
+
 {{< ingress >}}
 Komplet tilbud til Private Cloud-udrulning, inklusive hardware, drift og softwarevedligeholdelse.
 {{< /ingress >}}
@@ -94,22 +94,22 @@ IaaS-baskonfiguration.
 
 ### Private Cloud – IaaS Volumes-tilvalg
 
-| Nodetype             | Noder    | Rack Units                              |
-| -------------------- | -------- | --------------------------------------- |
-| Top-of-rack-switch   | 2        | 0 (genbrug af IaaS ToR)                 |
-| Management-switch    | 2        | 0 (genbrug af IaaS Mgm-switch)          |
+| Nodetype             | Noder    | Rack Units                               |
+| -------------------- | -------- | ---------------------------------------- |
+| Top-of-rack-switch   | 2        | 0 (genbrug af IaaS ToR)                  |
+| Management-switch    | 2        | 0 (genbrug af IaaS Mgm-switch)           |
 | Kontrolplan          | 3        | 0 (samme placering som IaaS-kontrolplan) |
-| Lagringsnoder – NVME | 0 / 6..n | 0 / 6..n                                |
-| Lagringsnoder – HDD  | 0 / 6..n | 0 / 12..2n                              |
+| Lagringsnoder – NVME | 0 / 6..n | 0 / 6..n                                 |
+| Lagringsnoder – HDD  | 0 / 6..n | 0 / 12..2n                               |
 
 ### Private Cloud IaaS Volume-produktkomponenter
 
-| Produktkode                    | Komponent                                   | Rack Units |
-| ----------------------------- | ------------------------------------------- | ---------- |
-| PRIVATECLOUD-volume.nvme.base | IaaS Volumes-baskonfiguration, NVME-klasse  | 6          |
-| PRIVATECLOUD-volume.nvme.add  | IaaS yderligere lagringsnode, NVME-klasse   | 1          |
-| PRIVATECLOUD-volume.hdd.base  | IaaS Volumes-baskonfiguration, HDD-klasse   | 12         |
-| PRIVATECLOUD-volume.hdd.add   | IaaS yderligere lagringsnode, HDD-klasse    | 2          |
+| Produktkode                   | Komponent                                  | Rack Units |
+| ----------------------------- | ------------------------------------------ | ---------- |
+| PRIVATECLOUD-volume.nvme.base | IaaS Volumes-baskonfiguration, NVME-klasse | 6          |
+| PRIVATECLOUD-volume.nvme.add  | IaaS yderligere lagringsnode, NVME-klasse  | 1          |
+| PRIVATECLOUD-volume.hdd.base  | IaaS Volumes-baskonfiguration, HDD-klasse  | 12         |
+| PRIVATECLOUD-volume.hdd.add   | IaaS yderligere lagringsnode, HDD-klasse   | 2          |
 
 ### Private Cloud – STaaS
 
@@ -133,10 +133,10 @@ Ingen.
 
 ### Private Cloud STaaS-produktkomponenter
 
-| Produktkode                 | Komponent                               | Rack Units |
-| --------------------------- | --------------------------------------- | ---------- |
-| PRIVATECLOUD-staas.base     | STaaS-baskonfiguration                  | 6          |
-| PRIVATECLOUD-staas.nvme.base| STaaS-basis lagringsklynge, NVME-klasse | 4          |
-| PRIVATECLOUD-staas.nvme.add | STaaS lagringsklynge, NVME-klasse       | 1          |
-| PRIVATECLOUD-staas.hdd.base | STaaS-basis lagringsklynge, HDD-klasse  | 8          |
-| PRIVATECLOUD-staas.hdd.add  | STaaS lagringsklynge, HDD-klasse        | 2          |
+| Produktkode                  | Komponent                               | Rack Units |
+| ---------------------------- | --------------------------------------- | ---------- |
+| PRIVATECLOUD-staas.base      | STaaS-baskonfiguration                  | 6          |
+| PRIVATECLOUD-staas.nvme.base | STaaS-basis lagringsklynge, NVME-klasse | 4          |
+| PRIVATECLOUD-staas.nvme.add  | STaaS lagringsklynge, NVME-klasse       | 1          |
+| PRIVATECLOUD-staas.hdd.base  | STaaS-basis lagringsklynge, HDD-klasse  | 8          |
+| PRIVATECLOUD-staas.hdd.add   | STaaS lagringsklynge, HDD-klasse        | 2          |

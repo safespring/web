@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/storage/
+  - /service-catalogue/storage/
 ---
+
 {{< ingress >}}
 IaaS-plattformen inneholder en lagringstjeneste basert på Ceph-objektlagringsklyngen, som tilbyr objektlagring som en tjeneste via et S3-API-kompatibelt grensesnitt.
 {{< /ingress >}}

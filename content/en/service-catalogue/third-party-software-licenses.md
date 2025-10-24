@@ -13,13 +13,12 @@ background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Back to all categories"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Service Catalogue"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/third-party-software-licenses/
+  - /service-catalogue/third-party-software-licenses/
 ---
 
 {{< ingress >}}

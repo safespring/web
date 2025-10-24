@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeaftale"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/database/
+  - /geant/service-catalogue/database/
 ---
+
 ## Database som en tjeneste
 
 Safespring leverer MariaDB, MySQL, Redis, PostgreSQL og MongoDB som tjenester oven på Compute-platformen.

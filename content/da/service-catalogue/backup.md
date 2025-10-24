@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/backup/
+  - /service-catalogue/backup/
 ---
+
 {{< ingress >}}
 Cloud-backup-tjenesterne omfatter følgende kategorier:
 {{< /ingress >}}
@@ -49,24 +49,24 @@ Kryptering er kun lige så sikker som nøglehåndteringen, og backupmulighederne
 
 På alle niveauer er det muligt at planlægge op til fire (4) backups pr. dag. Der er flere foruddefinerede starttidspunkter at vælge imellem (hver anden time).
 
-| Produktkode     | Type     | Site | Version                |
-| --------------- | -------- | ---- | ---------------------- |
-| BAAS-on.demand  | OnDemand | STO1 | Spectrum Protect 7 & 8 |
-| BAAS-small      | Small    | STO1 | Spectrum Protect 7 & 8 |
-| BAAS-large      | Large    | STO1 | Spectrum Protect 7 & 8 |
+| Produktkode    | Type     | Site | Version                |
+| -------------- | -------- | ---- | ---------------------- |
+| BAAS-on.demand | OnDemand | STO1 | Spectrum Protect 7 & 8 |
+| BAAS-small     | Small    | STO1 | Spectrum Protect 7 & 8 |
+| BAAS-large     | Large    | STO1 | Spectrum Protect 7 & 8 |
 
 #### Planlægning (filsystemer)
 
-| Plan                | Beskrivelse                                                                                 |
+| Plan                | Beskrivelse                                                                                  |
 | ------------------- | -------------------------------------------------------------------------------------------- |
 | Incremental forever | Inkrementel backup af filsystemer. Der kan vælges starttidspunkter for hver anden (2.) time. |
 
 #### Planlægning (applikation)
 
-| Plan                     | Beskrivelse                                                                                       |
-| ------------------------ | ------------------------------------------------------------------------------------------------- |
-| Full backup              | Fuld backup af applikationen. Der kan vælges starttidspunkter for hver anden (2.) time.           |
-| Incremental/ Log backup  | Inkrementel- eller log-backup afhængigt af applikationen. Der kan vælges starttidspunkter hver (1.) time. |
+| Plan                    | Beskrivelse                                                                                               |
+| ----------------------- | --------------------------------------------------------------------------------------------------------- |
+| Full backup             | Fuld backup af applikationen. Der kan vælges starttidspunkter for hver anden (2.) time.                   |
+| Incremental/ Log backup | Inkrementel- eller log-backup afhængigt af applikationen. Der kan vælges starttidspunkter hver (1.) time. |
 
 ### Tilvalg til backup-tjenesten
 
@@ -74,13 +74,13 @@ Ud over standardpolitikkerne for opbevaring tilbyder vi en række versionsbegræ
 
 Disse politikker har fordelen af at tilbyde et prisloft. For eksempel, hvis der vælges en politik med fem versioner, vil den lagrede (og fakturerede) mængde aldrig overstige fem (5) gange klientstørrelsen. I de fleste tilfælde vil den lagrede mængde være mindre, da kun ændrede filer sikkerhedskopieres. En fil, der aldrig ændres, vil stadig kun findes i én version i backup-systemet.
 
-| Opbevaring | Beskrivelse                                                                        |
-| ---------- | ----------------------------------------------------------------------------------- |
-| 30 dage    | Bevarer alle backupdata i 30 dage, der gemmes op til fem (5) versioner pr. fil.    |
-| 30 dage    | Bevarer alle backupdata i 30 dage, der gemmes op til ti (10) versioner pr. fil.    |
-| 90 dage    | Bevarer alle backupdata i 90 dage, der gemmes op til ti (10) versioner pr. fil.    |
-| 365 dage   | Bevarer alle backupdata i 365 dage, der gemmes op til fem (5) versioner pr. fil.   |
-| 365 dage   | Bevarer alle backupdata i 365 dage, der gemmes op til ti (10) versioner pr. fil.   |
+| Opbevaring | Beskrivelse                                                                      |
+| ---------- | -------------------------------------------------------------------------------- |
+| 30 dage    | Bevarer alle backupdata i 30 dage, der gemmes op til fem (5) versioner pr. fil.  |
+| 30 dage    | Bevarer alle backupdata i 30 dage, der gemmes op til ti (10) versioner pr. fil.  |
+| 90 dage    | Bevarer alle backupdata i 90 dage, der gemmes op til ti (10) versioner pr. fil.  |
+| 365 dage   | Bevarer alle backupdata i 365 dage, der gemmes op til fem (5) versioner pr. fil. |
+| 365 dage   | Bevarer alle backupdata i 365 dage, der gemmes op til ti (10) versioner pr. fil. |
 
 Det er muligt at anmode om andre versionsbegrænsede politikker efter behov (fx 17 eller 42 versioner).
 
@@ -90,9 +90,9 @@ De samme krypterings- og planlægningspolitikker gælder for snapshots til virtu
 
 ### Opbevaringspolitik
 
-| Opbevaring | Beskrivelse                                                                                                  |
-| ---------- | ------------------------------------------------------------------------------------------------------------ |
-| 14 dage    | Bevarer alle backupdata i 14 dage, alle versioner bevares. Dette svarer til ti (10) arbejdsdage.            |
+| Opbevaring | Beskrivelse                                                                                      |
+| ---------- | ------------------------------------------------------------------------------------------------ |
+| 14 dage    | Bevarer alle backupdata i 14 dage, alle versioner bevares. Dette svarer til ti (10) arbejdsdage. |
 
 ## BaaS Professional Services
 
@@ -108,15 +108,15 @@ Et professionelt konsulenttilbud er tilgængeligt. Denne tjeneste kan leveres on
 - Bistand på stedet under genopretning efter katastrofe
 - Test af gendannelse
 
-| Produktkode               | Professionel tjeneste                                                                 |
-| ------------------------- | ------------------------------------------------------------------------------------- |
-| BAASPS-generic.consultancy| Generel backup-rådgivning til konfiguration af visse applikationer og lignende       |
-| BAASPS-migration          | Tjeneste til backup-migrering og validering                                           |
-| BAASPS-offsite            | Offsite-backupmål-tjenester                                                           |
-| BAASPS-restore.test       | Tjenester til gendannelsestest                                                        |
-| BAASPS-onboarding         | Program for backup-onboarding                                                         |
-| BAASPS-feature            | Tilføjelse af backup-funktioner og -tjenester                                         |
-| BAASPS-exit               | Exit-backup-tjenester                                                                 |
+| Produktkode                | Professionel tjeneste                                                          |
+| -------------------------- | ------------------------------------------------------------------------------ |
+| BAASPS-generic.consultancy | Generel backup-rådgivning til konfiguration af visse applikationer og lignende |
+| BAASPS-migration           | Tjeneste til backup-migrering og validering                                    |
+| BAASPS-offsite             | Offsite-backupmål-tjenester                                                    |
+| BAASPS-restore.test        | Tjenester til gendannelsestest                                                 |
+| BAASPS-onboarding          | Program for backup-onboarding                                                  |
+| BAASPS-feature             | Tilføjelse af backup-funktioner og -tjenester                                  |
+| BAASPS-exit                | Exit-backup-tjenester                                                          |
 
 ### Tjenester til backup-migrering og -validering
 

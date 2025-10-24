@@ -16,14 +16,14 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris för lagring"
 sidebarlinkurl2: "/geant/price/#safespring-storage"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/storage/
+  - /geant/service-catalogue/storage/
 ---
+
 {{< ingress >}}
 Compute-plattformen innehåller en lagringstjänst baserad på Cephs objektlagringskluster och tillhandahåller objektlagring som en tjänst via ett S3-API-kompatibelt gränssnitt.
 {{< /ingress >}}
@@ -38,10 +38,10 @@ Inga.
 
 ### Konfigurationer
 
-| Produktkod  | Egenskaper                         |
-| ----------- | ---------------------------------- |
+| Produktkod  | Egenskaper                            |
+| ----------- | ------------------------------------- |
 | S3-archive  | HDD-baserad med erasure coding i Ceph |
-| S3 -storage | HDD-baserad med 3 repliker i Ceph  |
+| S3 -storage | HDD-baserad med 3 repliker i Ceph     |
 
 {{< distance >}}
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakta Safespring" %}}

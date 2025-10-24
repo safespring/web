@@ -14,15 +14,15 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/byol/
+  - /geant/service-catalogue/byol/
 ---
+
 {{< ingress >}}
 Safesprings Compute-tjenester er tilgjengelige uten medfølgende betalte programvarelisenser fra programvareleverandører, noe som gjør Safesprings Compute-tjenester til et perfekt valg for kunder som har eksisterende lisensavtaler som tillater utrulling i en offentlig sky.
 {{< /ingress >}}
@@ -39,14 +39,14 @@ Eventuelle indikasjoner på at noe er tillatt her, er kun ment som veiledning fo
 
 Programvareleverandører med kommersiell støtte og kjente vilkår for tillatt bruk er listet i tabellen nedenfor.
 
-| Leverandør | Programvare                             |
-| ---------- | --------------------------------------- |
-| Adobe      | Adobe Creative Suite                    |
-| Mathworks  | Matlab                                  |
-| Microsoft  | Windows Server, SQL Server, Windows [^1]|
-| Oracle     | Oracle Database                         |
-| Red Hat    | Red Hat Enterprise Linux                |
-| SUSE       | SUSE Enterprise Linux                   |
+| Leverandør | Programvare                              |
+| ---------- | ---------------------------------------- |
+| Adobe      | Adobe Creative Suite                     |
+| Mathworks  | Matlab                                   |
+| Microsoft  | Windows Server, SQL Server, Windows [^1] |
+| Oracle     | Oracle Database                          |
+| Red Hat    | Red Hat Enterprise Linux                 |
+| SUSE       | SUSE Enterprise Linux                    |
 
 Safespring begrenser ikke på noen måte hvilken programvare kundene bruker, annet enn gjennom sine [Retningslinjer for akseptabel bruk](/documents/safespring-acceptable_use_policy.pdf). Dette betyr at enhver Linux-distribusjon som kan kjøre på x86-plattformer på en standard, moderne KVM-hypervisor, er teknisk støttet, inkludert i praksis alle community-utgaver.
 

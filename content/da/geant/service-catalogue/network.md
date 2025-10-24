@@ -16,14 +16,14 @@ sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se prisen for netværk"
 sidebarlinkurl2: "/geant/price/#network"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/network/
+  - /geant/service-catalogue/network/
 ---
+
 {{< ingress >}}
 Obligatoriske og valgfrie netværkstjenester ved brug af IaaS-platformene.
 {{< /ingress >}}
@@ -43,15 +43,15 @@ Safespring understøtter både {{< inline "SAML2" >}} og {{< inline "OIDC" >}} t
 - Egne IP-præfikser (for større kunder).
 - Reverse DNS-konfiguration (for større kunder, egne præfikser).
 
-| Product Code | Beskrivelse                                                  |
-| ------------ | ------------------------------------------------------------ |
-| NET-publicv4 | Offentlig IPv4-adresse                                       |
-| NET-publicv6 | Offentlig IPv6-adresse                                       |
-| NET-ingress  | Ingress-trafik ind i en instans fra uden for datacentret     |
-| NET-egress   | Egress-trafik fra en instans til uden for datacentret        |
-| NET-mgn.slb  | Tjeneste til lastbalancering af applikationer                 |
-| NET-rdns     | Reverse DNS-poster (PTR)                                     |
-| NET-byoip    | Egne IP-præfikser                                            |
+| Product Code | Beskrivelse                                              |
+| ------------ | -------------------------------------------------------- |
+| NET-publicv4 | Offentlig IPv4-adresse                                   |
+| NET-publicv6 | Offentlig IPv6-adresse                                   |
+| NET-ingress  | Ingress-trafik ind i en instans fra uden for datacentret |
+| NET-egress   | Egress-trafik fra en instans til uden for datacentret    |
+| NET-mgn.slb  | Tjeneste til lastbalancering af applikationer            |
+| NET-rdns     | Reverse DNS-poster (PTR)                                 |
+| NET-byoip    | Egne IP-præfikser                                        |
 
 ## Offentlige IP-adresser
 

@@ -14,15 +14,15 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/byol/
+  - /geant/service-catalogue/byol/
 ---
+
 {{< ingress >}}
 Safesprings Compute-tjenester leveres uden medfølgende betalte softwarelicenser fra softwareleverandører, hvilket gør Safespring Compute til et perfekt valg for kunder, der har eksisterende licensaftaler, som tillader udrulning i en offentlig cloud.
 {{< /ingress >}}

@@ -16,14 +16,14 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris för nätverk"
 sidebarlinkurl2: "/geant/price/#network"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverket"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/network/
+  - /geant/service-catalogue/network/
 ---
+
 {{< ingress >}}
 Obligatoriska och valfria nätverkstjänster vid användning av IaaS-plattformarna.
 {{< /ingress >}}
@@ -43,15 +43,15 @@ Safespring stödjer både {{< inline "SAML2" >}} och {{< inline "OIDC" >}} för 
 - Ta med egna IP-prefix (för större kunder).
 - Reverse DNS-konfiguration (för större kunder, egna prefix).
 
-| Produktkod   | Beskrivning                                                  |
-| ------------ | ------------------------------------------------------------ |
-| NET-publicv4 | Publik IPv4-adress                                           |
-| NET-publicv6 | Publik IPv6-adress                                           |
+| Produktkod   | Beskrivning                                                   |
+| ------------ | ------------------------------------------------------------- |
+| NET-publicv4 | Publik IPv4-adress                                            |
+| NET-publicv6 | Publik IPv6-adress                                            |
 | NET-ingress  | Ingress-trafik in till en instans från utsidan av datacentret |
-| NET-egress   | Egress-trafik från en instans till utsidan av datacentret    |
-| NET-mgn.slb  | Tjänst för lastbalansering av applikationer                  |
-| NET-rdns     | Reverse DNS-poster (PTR)                                     |
-| NET-byoip    | Ta med egna IP-prefix                                        |
+| NET-egress   | Egress-trafik från en instans till utsidan av datacentret     |
+| NET-mgn.slb  | Tjänst för lastbalansering av applikationer                   |
+| NET-rdns     | Reverse DNS-poster (PTR)                                      |
+| NET-byoip    | Ta med egna IP-prefix                                         |
 
 ## Publika IP-adresser
 

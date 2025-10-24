@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/private-cloud/
+  - /geant/service-catalogue/private-cloud/
 ---
+
 {{< ingress >}}
 Komplett erbjudande för Private Cloud-implementering, inklusive hårdvara, drift och programvaruunderhåll. Hårdvaran ägs av kunden, som även tillhandahåller rackplats i datacenter för installationen.
 {{< /ingress >}}

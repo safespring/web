@@ -16,25 +16,25 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se priser för utbildningar"
 sidebarlinkurl2: "/geant/price/#educations"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/courses/
+  - /geant/service-catalogue/courses/
 ---
+
 {{< ingress >}}
 Safespring erbjuder följande utbildningar och tillhandahåller flera tjänster av typen plattform som tjänst (PaaS) ovanpå Compute-plattformen.
 {{< /ingress >}}
 
-| Produktkod                | Tjänst                                               |
-| ------------------------- | ---------------------------------------------------- |
-| TRAIN-intro.iaaS          | Introduktion till IaaS för chefer, 1 dag            |
-| TRAIN-cxo.strategy        | Molnstrategi för högsta ledningen, 1 dag            |
-| TRAIN-intro.cloud         | Introduktion till molnteknik, teknisk, 4 dagar      |
-| TRAIN-devops.microservices| Modern DevOps & mikrotjänster, teknisk, 4 dagar     |
+| Produktkod                 | Tjänst                                          |
+| -------------------------- | ----------------------------------------------- |
+| TRAIN-intro.iaaS           | Introduktion till IaaS för chefer, 1 dag        |
+| TRAIN-cxo.strategy         | Molnstrategi för högsta ledningen, 1 dag        |
+| TRAIN-intro.cloud          | Introduktion till molnteknik, teknisk, 4 dagar  |
+| TRAIN-devops.microservices | Modern DevOps & mikrotjänster, teknisk, 4 dagar |
 
 ## Introduktion till IaaS för chefer
 

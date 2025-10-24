@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 aliases:
-- /service-catalogue/infrastructure/
+  - /service-catalogue/infrastructure/
 ---
+
 {{< ingress >}}
 På denne siden finner du informasjon om våre Infrastructure as a Service (IaaS) cloud compute-tjenester, inkludert detaljerte konfigurasjoner og kategorier av compute-tjenester som er tilgjengelige.
 {{< /ingress >}}
@@ -85,21 +85,21 @@ Ingen.
 
 ### 3.2. Konfigurasjoner
 
-| Produktkode                | vCPU | RAM (GB) | Lokal disk (GB) |
-| -------------------------- | ---- | -------- | --------------- |
-| FLAVOR-l2. c2 r4. 100      | 2    | 4        | 100             |
-| FLAVOR-l2. c2 r4. 500      | 2    | 4        | 500             |
-| FLAVOR-l2. c2 r4. 1000     | 2    | 4        | 1 000           |
-| FLAVOR-l2. c4 r8. 100      | 4    | 8        | 100             |
-| FLAVOR-l2. c4 r8. 500      | 4    | 8        | 500             |
-| FLAVOR-l2. c4 r8. 1000     | 4    | 8        | 1 000           |
-| FLAVOR-l2. c8 r16. 100     | 8    | 16       | 100             |
-| FLAVOR-l2. c8 r16. 500     | 8    | 16       | 500             |
-| FLAVOR-l2. c8 r16. 1000    | 8    | 16       | 1 000           |
-| FLAVOR-l2. c16 r32. 100    | 16   | 32       | 100             |
-| FLAVOR-l2. c16 r32. 500    | 16   | 32       | 500             |
-| FLAVOR-l2. c16 r32. 1000   | 16   | 32       | 1 000           |
-| FLAVOR-l2. c32 r64.1000    | 32   | 64       | 1 000           |
+| Produktkode              | vCPU | RAM (GB) | Lokal disk (GB) |
+| ------------------------ | ---- | -------- | --------------- |
+| FLAVOR-l2. c2 r4. 100    | 2    | 4        | 100             |
+| FLAVOR-l2. c2 r4. 500    | 2    | 4        | 500             |
+| FLAVOR-l2. c2 r4. 1000   | 2    | 4        | 1 000           |
+| FLAVOR-l2. c4 r8. 100    | 4    | 8        | 100             |
+| FLAVOR-l2. c4 r8. 500    | 4    | 8        | 500             |
+| FLAVOR-l2. c4 r8. 1000   | 4    | 8        | 1 000           |
+| FLAVOR-l2. c8 r16. 100   | 8    | 16       | 100             |
+| FLAVOR-l2. c8 r16. 500   | 8    | 16       | 500             |
+| FLAVOR-l2. c8 r16. 1000  | 8    | 16       | 1 000           |
+| FLAVOR-l2. c16 r32. 100  | 16   | 32       | 100             |
+| FLAVOR-l2. c16 r32. 500  | 16   | 32       | 500             |
+| FLAVOR-l2. c16 r32. 1000 | 16   | 32       | 1 000           |
+| FLAVOR-l2. c32 r64.1000  | 32   | 64       | 1 000           |
 
 ## 4. Compute med GPU og lokal NVME-disk
 
@@ -111,18 +111,18 @@ Ingen.
 
 ### 4.2. Konfigurasjoner
 
-| Produktkode               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2)
-|--------------------------|:----:|:--------:|----------------:|:--------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | 1        |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | 1        |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | 1        |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | 1        |
+| Produktkode             | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) |
+| ----------------------- | :--: | :------: | --------------: | :------: |
+| FLAVOR-l2.c4r16.125.gA2 |  4   |    16    |             125 |    1     |
+| FLAVOR-l2.c8r32.250.gA2 |  8   |    32    |             250 |    1     |
+| FLAVOR-b2.c4r8.gA2      |  4   |    8     |               0 |    1     |
+| FLAVOR-b2.c8r16.gA2     |  8   |    16    |               0 |    1     |
 
-| Produktkode              | Instanstype      | vCPU | Minne  | Basisdisk | Provisjonerte IOPs (les/skriv) |
-|--------------------------|------------------|------|--------|-----------|--------------------------------|
-| FLAVOR-g2 .c4 r8. 100    | g2.c4r8.100      | 4    | 16 GiB | 100 GB    | 4k/8k, 8.5k/17k                |
-| FLAVOR-g2 .c8 r32. 500   | g2.c8r32.500     | 8    | 32 GiB | 500 GB    | 4k/8k, 21k/42k                 |
-| FLAVOR-g2 .c16 r64. 1000 | g2.c16r64.1000   | 16   | 64 GiB | 1000 GB   | 4k/8k, 46k/92k                 |
+| Produktkode              | Instanstype    | vCPU | Minne  | Basisdisk | Provisjonerte IOPs (les/skriv) |
+| ------------------------ | -------------- | ---- | ------ | --------- | ------------------------------ |
+| FLAVOR-g2 .c4 r8. 100    | g2.c4r8.100    | 4    | 16 GiB | 100 GB    | 4k/8k, 8.5k/17k                |
+| FLAVOR-g2 .c8 r32. 500   | g2.c8r32.500   | 8    | 32 GiB | 500 GB    | 4k/8k, 21k/42k                 |
+| FLAVOR-g2 .c16 r64. 1000 | g2.c16r64.1000 | 16   | 64 GiB | 1000 GB   | 4k/8k, 46k/92k                 |
 
 ## 5. Bare metal-compute
 
@@ -134,11 +134,11 @@ Ingen.
 
 ### 5.2. Konfigurasjoner
 
-| Produktkode               | Instanstype       | CPU (fysiske kjerner) | Minne   | NVMe-disk |
-| ------------------------- | ----------------- | --------------------- | ------- | --------- |
-| FLAVOR-p1. c16 r128. 4000 | p1.c16r128.4000   | 16                    | 128 GiB | 3,8 TB    |
-| FLAVOR-p1. c32 r256. 4000 | p1.c32r256.4000   | 32                    | 256 GiB | 3,8 TB    |
-| FLAVOR-p1. c64 r512. 8000 | p1.c64r512.8000   | 2 x 32                | 512 GiB | 2 x 3,8 TB|
+| Produktkode               | Instanstype     | CPU (fysiske kjerner) | Minne   | NVMe-disk  |
+| ------------------------- | --------------- | --------------------- | ------- | ---------- |
+| FLAVOR-p1. c16 r128. 4000 | p1.c16r128.4000 | 16                    | 128 GiB | 3,8 TB     |
+| FLAVOR-p1. c32 r256. 4000 | p1.c32r256.4000 | 32                    | 256 GiB | 3,8 TB     |
+| FLAVOR-p1. c64 r512. 8000 | p1.c64r512.8000 | 2 x 32                | 512 GiB | 2 x 3,8 TB |
 
 ## 6. Volumlager
 
@@ -150,10 +150,10 @@ Du kan koble et volum til en serverinstans, også som et rotdiskvolum.
 
 ### 6.2. Konfigurasjoner
 
-| Produktkode     | Volumtype          | Lokasjon | Egenskaper                 |
-| --------------- | ------------------ | -------- | -------------------------- |
-| VOLUME-fast     | Fast               | osl1     | SSD-basert Ceph med 3 replikaer |
-| VOLUME-large    | Large              | osl1     | HDD-basert Ceph med 3 replikaer |
-| VOLUME-fast     | Fast               | sto1     | SSD-basert Ceph med 3 replikaer |
-| VOLUME-large    | Large              | sto1     | HDD-basert Ceph med 3 replikaer |
-| VOLUME-snapshot | Snapshot av image  | -        | -                          |
+| Produktkode     | Volumtype         | Lokasjon | Egenskaper                      |
+| --------------- | ----------------- | -------- | ------------------------------- |
+| VOLUME-fast     | Fast              | osl1     | SSD-basert Ceph med 3 replikaer |
+| VOLUME-large    | Large             | osl1     | HDD-basert Ceph med 3 replikaer |
+| VOLUME-fast     | Fast              | sto1     | SSD-basert Ceph med 3 replikaer |
+| VOLUME-large    | Large             | sto1     | HDD-basert Ceph med 3 replikaer |
+| VOLUME-snapshot | Snapshot av image | -        | -                               |

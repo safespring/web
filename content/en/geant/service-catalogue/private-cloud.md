@@ -13,13 +13,12 @@ background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Back to all categories"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/private-cloud/
+  - /geant/service-catalogue/private-cloud/
 ---
 
 {{< ingress >}}

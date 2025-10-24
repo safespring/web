@@ -14,27 +14,27 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/professional-services/
+  - /geant/service-catalogue/professional-services/
 ---
+
 {{< ingress >}}
 Safespring tilbyr valgfrie tilleggstjenester som gjør det mulig for kunder å hente ut mer verdi av tjenestene som er tatt i bruk på plattformen.
 {{< /ingress >}}
 
-| Produktkode      | Tjeneste                                                         |
-| ---------------- | ---------------------------------------------------------------- |
-| PS-consult.jun   | Konsulent innen skyinfrastruktur, juniornivå                    |
-| PS-consult.sen   | Konsulent innen skyinfrastruktur, seniornivå                    |
-| PS-cloudarch.jun | Arkitektkonsulent innen skyinfrastruktur, juniornivå            |
-| PS-cloudarch.sen | Arkitektkonsulent innen skyinfrastruktur, seniornivå            |
-| PS-pm.jun        | Prosjektleder, juniornivå                                        |
-| PS-pm.sen        | Prosjektleder, seniornivå                                        |
+| Produktkode      | Tjeneste                                             |
+| ---------------- | ---------------------------------------------------- |
+| PS-consult.jun   | Konsulent innen skyinfrastruktur, juniornivå         |
+| PS-consult.sen   | Konsulent innen skyinfrastruktur, seniornivå         |
+| PS-cloudarch.jun | Arkitektkonsulent innen skyinfrastruktur, juniornivå |
+| PS-cloudarch.sen | Arkitektkonsulent innen skyinfrastruktur, seniornivå |
+| PS-pm.jun        | Prosjektleder, juniornivå                            |
+| PS-pm.sen        | Prosjektleder, seniornivå                            |
 
 ## Konsulent innen skyinfrastruktur, juniornivå
 

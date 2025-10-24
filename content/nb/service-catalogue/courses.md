@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/courses/
+  - /service-catalogue/courses/
 ---
+
 {{< ingress >}}
 Safespring tilbyr fire kurs, blant annet en introduksjon til IaaS og skydatabehandling, et kurs i skystrategi, og to tekniske kurs om DevOps og mikrotjenester.
 {{< /ingress >}}

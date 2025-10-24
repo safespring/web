@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/professional-services/
+  - /service-catalogue/professional-services/
 ---
+
 {{< ingress >}}
 Safespring tilbyder yderligere valgfrie professionelle ydelser, som gør det muligt for kunder at få mere værdi ud af de tjenester, der er implementeret på platformen.
 {{< /ingress >}}

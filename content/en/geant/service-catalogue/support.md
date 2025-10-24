@@ -15,14 +15,13 @@ sidebarlinkname: "Back to all categories"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "See price for support"
 sidebarlinkurl2: "/geant/price/#support-and-consulting-services"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/support/
+  - /geant/service-catalogue/support/
 ---
 
 {{< ingress >}}

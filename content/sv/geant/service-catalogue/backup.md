@@ -16,14 +16,14 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris för beräkningskapacitet"
 sidebarlinkurl2: "/geant/price/#safespring-backup"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/backup/
+  - /geant/service-catalogue/backup/
 ---
+
 {{< ingress >}}
 Agentbaserade molnbackup-tjänster med deduplicering och säker offsite-lagring.
 {{< /ingress >}}
@@ -38,11 +38,11 @@ Inga.
 
 ### Konfigurationer
 
-| Produktkod    | Tjänst                                                 |
-| -------------- | ------------------------------------------------------ |
-| BAAS-on.demand | Abonnemang som passar små on-demand-behov.            |
-| BAAS-small     | Abonnemang som passar medelstora behov.               |
-| BAAS-large     | Abonnemang som passar stora behov.                    |
+| Produktkod     | Tjänst                                     |
+| -------------- | ------------------------------------------ |
+| BAAS-on.demand | Abonnemang som passar små on-demand-behov. |
+| BAAS-small     | Abonnemang som passar medelstora behov.    |
+| BAAS-large     | Abonnemang som passar stora behov.         |
 
 ### Backup för applikationer och filsystem
 
@@ -72,14 +72,14 @@ Utöver standardretentionspolicyerna erbjuder vi ett antal versionsbegränsade p
 
 Dessa policyer har fördelen att ge ett pristak. Till exempel, om en femversionspolicy väljs kommer den lagrade (och debiterade) mängden aldrig att överstiga fem gånger klientens datamängd. I de flesta fall blir den lagrade mängden mindre, eftersom bara ändrade filer säkerhetskopieras. En fil som aldrig ändras finns fortfarande endast i en version i backupsystemet.
 
-| Retentionstid | Beskrivning                                                                   |
-| ------------- | ----------------------------------------------------------------------------- |
-| 30 dagar      | Behåller all backupdata i 30 dagar, upp till fem versioner per fil sparas.    |
-| 30 dagar      | Behåller all backupdata i 30 dagar, upp till tio versioner per fil sparas.    |
-| 90 dagar      | Behåller all backupdata i 90 dagar, upp till fem versioner per fil sparas.    |
-| 90 dagar      | Behåller all backupdata i 90 dagar, upp till tio versioner per fil sparas.    |
-| 365 dagar     | Behåller all backupdata i 365 dagar, upp till fem versioner per fil sparas.   |
-| 365 dagar     | Behåller all backupdata i 365 dagar, upp till tio versioner per fil sparas.   |
+| Retentionstid | Beskrivning                                                                 |
+| ------------- | --------------------------------------------------------------------------- |
+| 30 dagar      | Behåller all backupdata i 30 dagar, upp till fem versioner per fil sparas.  |
+| 30 dagar      | Behåller all backupdata i 30 dagar, upp till tio versioner per fil sparas.  |
+| 90 dagar      | Behåller all backupdata i 90 dagar, upp till fem versioner per fil sparas.  |
+| 90 dagar      | Behåller all backupdata i 90 dagar, upp till tio versioner per fil sparas.  |
+| 365 dagar     | Behåller all backupdata i 365 dagar, upp till fem versioner per fil sparas. |
+| 365 dagar     | Behåller all backupdata i 365 dagar, upp till tio versioner per fil sparas. |
 
 Det går att beställa andra versionsbegränsade policyer vid behov (t.ex. 17 eller 42 versioner).
 

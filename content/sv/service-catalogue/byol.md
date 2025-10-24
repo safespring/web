@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/byol/
+  - /service-catalogue/byol/
 ---
+
 {{< ingress >}}
 Safespring tillhandahåller flera licenser för tredjepartsprogramvara för användning på våra IaaS-plattformar.
 {{< /ingress >}}
@@ -38,11 +38,11 @@ All information om tillåtlighet som lämnas här är endast avsedd som vägledn
 
 Leverantörer med kommersiellt stöd och kända licensvillkor som medger användning listas i tabellen nedan.
 
-| Leverantör | Programvara                                           | Kommentar                                                                                                                                                     |
-| ---------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft  | Applikationer, inte operativsystem såsom Windows/Windows Server. | För närvarande möjligt med Software Assurance och License Mobility                                                                                             |
-| RedHat     | Red Hat Enterprise Linux                               | Tillåtet enligt klausulen om SLA för tredjepartsprogramvara.                                                                                                  |
-| SUSE       | SUSE Enterprise Linux                                  | Tillåtet.                                                                                                                                                     |
-| Oracle     | Oracle Database                                        | Tillåtet på Safesprings virtuella IaaS, med risk för uteblivet stöd om Oracle anser att orsaken inte ligger i Oracles programvara. Installationer på bare metal får fullt stöd. |
+| Leverantör | Programvara                                                      | Kommentar                                                                                                                                                                       |
+| ---------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft  | Applikationer, inte operativsystem såsom Windows/Windows Server. | För närvarande möjligt med Software Assurance och License Mobility                                                                                                              |
+| RedHat     | Red Hat Enterprise Linux                                         | Tillåtet enligt klausulen om SLA för tredjepartsprogramvara.                                                                                                                    |
+| SUSE       | SUSE Enterprise Linux                                            | Tillåtet.                                                                                                                                                                       |
+| Oracle     | Oracle Database                                                  | Tillåtet på Safesprings virtuella IaaS, med risk för uteblivet stöd om Oracle anser att orsaken inte ligger i Oracles programvara. Installationer på bare metal får fullt stöd. |
 
 Safespring begränsar inte på något sätt vilken programvara kunderna använder, annat än via sin [Policy för acceptabel användning](/documents/safespring-acceptable_use_policy.pdf). Detta innebär att alla Linux-distributioner som kan köras på x86-plattformar på moderna standardhypervisorer baserade på KVM är tekniskt stödda, inklusive i princip samtliga communityutgåvor.

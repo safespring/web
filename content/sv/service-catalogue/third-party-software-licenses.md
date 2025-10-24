@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/third-party-software-licenses/
+  - /service-catalogue/third-party-software-licenses/
 ---
+
 {{< ingress >}}
 Safespring tillhandahåller flera tredjepartsprogramvarulicenser för användning på våra IaaS-plattformar.
 {{< /ingress >}}
@@ -209,18 +209,18 @@ ClusterControl är det kompletta systemet för hantering av databaser med öppen
 
 ### Cluster Control – stödda databaser
 
-| Databastyp                        | Klustertyp                                     | Version                                                                    | Minsta rekommenderade antal noder                                              |
-| --------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| MySQL / MariaDB                   | MySQL Cluster (NDB)                            | 7.1 och senare                                                             | 5 värdar (2 datanoder + 2 API/mgmd-noder + 1 ClusterControl-nod)               |
-|                                   | MySQL/MariaDB-replikering                      | 5.1/5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB) | 3 värdar (1 masternod + 1 standby master/slav + 1 ClusterControl-nod)          |
-|                                   | Percona XtraDB Cluster MariaDB Galera Cluster  | 5.5/5.6/5.7 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)         | 4 värdar (3 Galera-noder + 1 ClusterControl-nod)                               |
-|                                   | Enkel instans                                  | 5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)     | 2 värdar (1 databasnod + 1 ClusterControl-nod)                                 |
-| MongoDB / Percona Server for MongoDB | Shardat kluster                              | 3.4/3.6/4.0/4.2                                                            | 4 värdar (3 konfigurationsservrar / 3 shard-servrar / 2 mongos + 1 ClusterControl-nod) |
-|                                   | Replika­set                                    |                                                                            | 4 värdar (3 replikaservrar + 1 ClusterControl-nod)                             |
-| PostgreSQL                        | Enkel instans                                  | >9.6/10.x/11.x/12.x                                                        | 2 värdar (1 PostgreSQL-nod + 1 ClusterControl-nod)                             |
-|                                   | Streaming-replikering                          |                                                                            | 3 värdar (1 masternod + 1 slavnod + 1 ClusterControl                           |
-| TimeScaleDB                       | Enkel instans                                  | >9.6/10.x/11.x/12.x                                                        | 2 värdar (1 TimeScaleDB-nod + 1 ClusterControl-nod)                            |
-|                                   | Streaming-replikering                          |                                                                            | 3 värdar (1 masternod + 1 slavnod + 1 ClusterControl-nod)                      |
+| Databastyp                           | Klustertyp                                    | Version                                                                    | Minsta rekommenderade antal noder                                                      |
+| ------------------------------------ | --------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| MySQL / MariaDB                      | MySQL Cluster (NDB)                           | 7.1 och senare                                                             | 5 värdar (2 datanoder + 2 API/mgmd-noder + 1 ClusterControl-nod)                       |
+|                                      | MySQL/MariaDB-replikering                     | 5.1/5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB) | 3 värdar (1 masternod + 1 standby master/slav + 1 ClusterControl-nod)                  |
+|                                      | Percona XtraDB Cluster MariaDB Galera Cluster | 5.5/5.6/5.7 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)         | 4 värdar (3 Galera-noder + 1 ClusterControl-nod)                                       |
+|                                      | Enkel instans                                 | 5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)     | 2 värdar (1 databasnod + 1 ClusterControl-nod)                                         |
+| MongoDB / Percona Server for MongoDB | Shardat kluster                               | 3.4/3.6/4.0/4.2                                                            | 4 värdar (3 konfigurationsservrar / 3 shard-servrar / 2 mongos + 1 ClusterControl-nod) |
+|                                      | Replika­set                                   |                                                                            | 4 värdar (3 replikaservrar + 1 ClusterControl-nod)                                     |
+| PostgreSQL                           | Enkel instans                                 | >9.6/10.x/11.x/12.x                                                        | 2 värdar (1 PostgreSQL-nod + 1 ClusterControl-nod)                                     |
+|                                      | Streaming-replikering                         |                                                                            | 3 värdar (1 masternod + 1 slavnod + 1 ClusterControl                                   |
+| TimeScaleDB                          | Enkel instans                                 | >9.6/10.x/11.x/12.x                                                        | 2 värdar (1 TimeScaleDB-nod + 1 ClusterControl-nod)                                    |
+|                                      | Streaming-replikering                         |                                                                            | 3 värdar (1 masternod + 1 slavnod + 1 ClusterControl-nod)                              |
 
 ## Backup Ninja
 
@@ -244,11 +244,11 @@ Backup Ninja ger användaren en enda plats för att hantera säkerhetskopior fö
 
 ### Stödda databaser
 
-| Databastyp            | Stödda säkerhetskopieringar          | Databasversion |
-| --------------------- | ------------------------------------ | -------------- |
-| MySQL                 | Logiska och fysiska säkerhetskopior  | 5.6, 5.7, 8.x  |
-| MariaDB               | Fysiska säkerhetskopior              | 10.x           |
-| Percona Server for MySQL | Fysiska säkerhetskopior           | 5.6, 5.7, 8.x  |
-| PostgreSQL            | Logiska och fysiska säkerhetskopior  | 9.4, 10.x, 11.x|
-| TimescaleDB           | Logiska och fysiska säkerhetskopior  | 9.4, 10.x, 11.x|
-| MongoDB               | Logiska säkerhetskopior              | 4.x            |
+| Databastyp               | Stödda säkerhetskopieringar         | Databasversion  |
+| ------------------------ | ----------------------------------- | --------------- |
+| MySQL                    | Logiska och fysiska säkerhetskopior | 5.6, 5.7, 8.x   |
+| MariaDB                  | Fysiska säkerhetskopior             | 10.x            |
+| Percona Server for MySQL | Fysiska säkerhetskopior             | 5.6, 5.7, 8.x   |
+| PostgreSQL               | Logiska och fysiska säkerhetskopior | 9.4, 10.x, 11.x |
+| TimescaleDB              | Logiska och fysiska säkerhetskopior | 9.4, 10.x, 11.x |
+| MongoDB                  | Logiska säkerhetskopior             | 4.x             |

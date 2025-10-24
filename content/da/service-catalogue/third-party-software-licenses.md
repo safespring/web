@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/third-party-software-licenses/
+  - /service-catalogue/third-party-software-licenses/
 ---
+
 {{< ingress >}}
 Safespring tilbyder flere tredjepartssoftwarelicenser til brug på vores IaaS-platforme.
 {{< /ingress >}}
@@ -209,18 +209,18 @@ ClusterControl er det altomfattende open source-databaseadministrationssystem ti
 
 ### Cluster Control – Understøttede databaser
 
-| Databasetype                         | Klyngetype                                     | Version                                                                    | Minimum anbefalede noder                                                         |
-| ------------------------------------ | ---------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| MySQL / MariaDB                      | MySQL Cluster (NDB)                            | 7.1 og nyere                                                               | 5 værter (2 datanoder + 2 API/mgmd-noder + 1 ClusterControl-node)               |
-|                                      | MySQL/MariaDB-replikering                      | 5.1/5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB) | 3 værter (1 master-node + 1 standby master/slave + 1 ClusterControl-node)       |
-|                                      | Percona XtraDB Cluster MariaDB Galera Cluster  | 5.5/5.6/5.7 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)         | 4 værter (3 Galera-noder + 1 ClusterControl-node)                                |
-|                                      | Single Instance                                | 5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)     | 2 værter (1 database-node + 1 ClusterControl-node)                               |
-| MongoDB / Percona Server for MongoDB | Sharded cluster                                | 3.4/3.6/4.0/4.2                                                            | 4 værter (3 config-servere / 3 shard-servere / 2 mongos + 1 ClusterControl-node) |
-|                                      | Replica set                                    |                                                                            | 4 værter (3 replika-servere + 1 ClusterControl-node)                             |
-| PostgreSQL                           | Single Instance                                | >9.6/10.x/11.x/12.x                                                        | 2 værter (1 PostgreSQL-node + 1 ClusterControl-node)                             |
-|                                      | Streaming Replication                          |                                                                            | 3 værter (1 master-node + 1 slave-node + 1 ClusterControl                        |
-| TimeScaleDB                          | Single Instance                                | >9.6/10.x/11.x/12.x                                                        | 2 værter (1 TimeScaleDB-node + 1 ClusterControl-node)                            |
-|                                      | Streaming Replication                          |                                                                            | 3 værter (1 master-node + 1 slave-node + 1 ClusterControl-node)                  |
+| Databasetype                         | Klyngetype                                    | Version                                                                    | Minimum anbefalede noder                                                         |
+| ------------------------------------ | --------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| MySQL / MariaDB                      | MySQL Cluster (NDB)                           | 7.1 og nyere                                                               | 5 værter (2 datanoder + 2 API/mgmd-noder + 1 ClusterControl-node)                |
+|                                      | MySQL/MariaDB-replikering                     | 5.1/5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB) | 3 værter (1 master-node + 1 standby master/slave + 1 ClusterControl-node)        |
+|                                      | Percona XtraDB Cluster MariaDB Galera Cluster | 5.5/5.6/5.7 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)         | 4 værter (3 Galera-noder + 1 ClusterControl-node)                                |
+|                                      | Single Instance                               | 5.5/5.6/5.7/8.0 (MySQL/Percona) 5.5/10.0/10.1/10.2/10.3/10.4 (MariaDB)     | 2 værter (1 database-node + 1 ClusterControl-node)                               |
+| MongoDB / Percona Server for MongoDB | Sharded cluster                               | 3.4/3.6/4.0/4.2                                                            | 4 værter (3 config-servere / 3 shard-servere / 2 mongos + 1 ClusterControl-node) |
+|                                      | Replica set                                   |                                                                            | 4 værter (3 replika-servere + 1 ClusterControl-node)                             |
+| PostgreSQL                           | Single Instance                               | >9.6/10.x/11.x/12.x                                                        | 2 værter (1 PostgreSQL-node + 1 ClusterControl-node)                             |
+|                                      | Streaming Replication                         |                                                                            | 3 værter (1 master-node + 1 slave-node + 1 ClusterControl                        |
+| TimeScaleDB                          | Single Instance                               | >9.6/10.x/11.x/12.x                                                        | 2 værter (1 TimeScaleDB-node + 1 ClusterControl-node)                            |
+|                                      | Streaming Replication                         |                                                                            | 3 værter (1 master-node + 1 slave-node + 1 ClusterControl-node)                  |
 
 ## Backup Ninja
 
@@ -244,11 +244,11 @@ Backup Ninja giver brugeren ét sted at administrere backups for flere databaser
 
 ### Understøttede databaser
 
-| Databasetype             | Understøttede backups                | Databaseversion |
-| ------------------------ | ------------------------------------ | ---------------- |
-| MySQL                    | Logiske backups og fysiske backups   | 5.6, 5.7, 8.x    |
-| MariaDB                  | Fysiske backups                      | 10.x             |
-| Percona Server for MySQL | Fysiske backups                      | 5.6, 5.7, 8.x    |
-| PostgreSQL               | Logiske backups og fysiske backups   | 9.4, 10.x, 11.x  |
-| TimescaleDB              | Logiske backups og fysiske backups   | 9.4, 10.x, 11.x  |
-| MongoDB                  | Logiske backups                      | 4.x              |
+| Databasetype             | Understøttede backups              | Databaseversion |
+| ------------------------ | ---------------------------------- | --------------- |
+| MySQL                    | Logiske backups og fysiske backups | 5.6, 5.7, 8.x   |
+| MariaDB                  | Fysiske backups                    | 10.x            |
+| Percona Server for MySQL | Fysiske backups                    | 5.6, 5.7, 8.x   |
+| PostgreSQL               | Logiske backups og fysiske backups | 9.4, 10.x, 11.x |
+| TimescaleDB              | Logiske backups og fysiske backups | 9.4, 10.x, 11.x |
+| MongoDB                  | Logiske backups                    | 4.x             |

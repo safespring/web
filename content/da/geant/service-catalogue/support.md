@@ -16,24 +16,24 @@ sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris på support"
 sidebarlinkurl2: "/geant/price/#support-and-consulting-services"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/support/
+  - /geant/service-catalogue/support/
 ---
+
 {{< ingress >}}
 Safespring tilbyder support på flere forskellige måder for platformen og relaterede tjenester.
 {{< /ingress >}}
 
-| Produktkode      | Supportydelse                                                |
-| ---------------- | ------------------------------------------------------------ |
-| SUPPORT-base     | Basis Compute-support                                        |
-| SUPPORT-standard | Adgang til backchannel-chatrum med support og engineering    |
-| SUPPORT-premium  | Dedikeret Service Manager med kvartalsvise driftsmøder       |
+| Produktkode      | Supportydelse                                             |
+| ---------------- | --------------------------------------------------------- |
+| SUPPORT-base     | Basis Compute-support                                     |
+| SUPPORT-standard | Adgang til backchannel-chatrum med support og engineering |
+| SUPPORT-premium  | Dedikeret Service Manager med kvartalsvise driftsmøder    |
 
 ## Basis-support
 
@@ -57,10 +57,10 @@ Eksempler på konfigurationer findes også i den online dokumentation.
 
 Safesprings hjemmeside indeholder sektioner med opdaterede videoer med vejledninger og tutorials til alle tjenester. Hjemmesiden opdateres med nyt materiale baseret på brugerønsker eller når et nyt produkt lanceres.
 
-| Ressource             | Adresse                      |
-| --------------------- | ---------------------------- |
-| Servicedokumentation  | https://docs.safespring.com  |
-| Servicestatus         | https://status.safespring.com |
+| Ressource            | Adresse                       |
+| -------------------- | ----------------------------- |
+| Servicedokumentation | https://docs.safespring.com   |
+| Servicestatus        | https://status.safespring.com |
 
 ## Standard-support
 

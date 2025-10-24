@@ -14,27 +14,27 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/professional-services/
+  - /geant/service-catalogue/professional-services/
 ---
+
 {{< ingress >}}
 Safespring tillhandahåller ytterligare valfria professionella tjänster som gör det möjligt för kunder att få ut mer värde av de tjänster som driftsatta på plattformen.
 {{< /ingress >}}
 
-| Produktkod       | Tjänst                                                          |
-| ---------------- | ---------------------------------------------------------------- |
-| PS-consult.jun   | Molninfrastrukturskonsult, junior kompetensnivå                 |
-| PS-consult.sen   | Molninfrastrukturskonsult, senior kompetensnivå                 |
-| PS-cloudarch.jun | Molninfrastrukturarkitekt, konsult, junior kompetensnivå        |
-| PS-cloudarch.sen | Molninfrastrukturarkitekt, konsult, senior kompetensnivå        |
-| PS-pm.jun        | Projektledare, junior kompetensnivå                             |
-| PS-pm.sen        | Projektledare, senior kompetensnivå                             |
+| Produktkod       | Tjänst                                                   |
+| ---------------- | -------------------------------------------------------- |
+| PS-consult.jun   | Molninfrastrukturskonsult, junior kompetensnivå          |
+| PS-consult.sen   | Molninfrastrukturskonsult, senior kompetensnivå          |
+| PS-cloudarch.jun | Molninfrastrukturarkitekt, konsult, junior kompetensnivå |
+| PS-cloudarch.sen | Molninfrastrukturarkitekt, konsult, senior kompetensnivå |
+| PS-pm.jun        | Projektledare, junior kompetensnivå                      |
+| PS-pm.sen        | Projektledare, senior kompetensnivå                      |
 
 ## Molninfrastrukturskonsult, junior kompetensnivå
 

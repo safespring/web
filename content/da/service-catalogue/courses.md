@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/courses/
+  - /service-catalogue/courses/
 ---
+
 {{< ingress >}}
 Safespring tilbyder fire kursusforløb, herunder en introduktion til IaaS og cloud computing, et kursus i cloud-strategi samt to tekniske kurser i DevOps og mikrotjenester.
 {{< /ingress >}}

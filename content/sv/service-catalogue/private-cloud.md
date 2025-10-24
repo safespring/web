@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safesprings tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/private-cloud/
+  - /service-catalogue/private-cloud/
 ---
+
 {{< ingress >}}
 Komplett erbjudande för driftsättning av privat moln (Private Cloud), inklusive hårdvara, drift och programvaruunderhåll.
 {{< /ingress >}}
@@ -77,7 +77,7 @@ Inga.
 
 ### Privat moln – IaaS baskomponenter
 
-| Produktkod                 | Komponent                                     | Rackenheter |
+| Produktkod                | Komponent                                     | Rackenheter |
 | ------------------------- | --------------------------------------------- | ----------- |
 | PRIVATECLOUD-compute.base | IaaS Compute baskonfiguration                 | 12          |
 | PRIVATECLOUD-compute.add  | IaaS Compute ytterligare noder (4 per chassi) | 2           |
@@ -94,22 +94,22 @@ IaaS-baskonfiguration.
 
 ### Privat moln – IaaS Volymer (tillval)
 
-| Nodtyp               | Noder    | Rackenheter                            |
-| -------------------- | -------- | -------------------------------------- |
-| Top-of-Rack-switch   | 2        | 0 (återanvändning av IaaS ToR)         |
-| Management-switch    | 2        | 0 (återanvändning av IaaS Mgm-switch)  |
+| Nodtyp               | Noder    | Rackenheter                              |
+| -------------------- | -------- | ---------------------------------------- |
+| Top-of-Rack-switch   | 2        | 0 (återanvändning av IaaS ToR)           |
+| Management-switch    | 2        | 0 (återanvändning av IaaS Mgm-switch)    |
 | Kontrollplan         | 3        | 0 (samlokaliserad med IaaS-kontrollplan) |
-| Lagringsnoder – NVME | 0 / 6..n | 0 / 6..n                               |
-| Lagringsnoder – HDD  | 0 / 6..n | 0 / 12..2n                             |
+| Lagringsnoder – NVME | 0 / 6..n | 0 / 6..n                                 |
+| Lagringsnoder – HDD  | 0 / 6..n | 0 / 12..2n                               |
 
 ### Produktkomponenter för Privat moln – IaaS Volymer
 
-| Produktkod                   | Komponent                                   | Rackenheter |
-| ---------------------------- | ------------------------------------------- | ----------- |
-| PRIVATECLOUD-volume.nvme.base | IaaS Volymer baskonfiguration, NVME-klass  | 6           |
-| PRIVATECLOUD-volume.nvme.add  | IaaS ytterligare lagringsnod, NVME-klass   | 1           |
-| PRIVATECLOUD-volume.hdd.base  | IaaS Volymer baskonfiguration, HDD-klass   | 12          |
-| PRIVATECLOUD-volume.hdd.add   | IaaS ytterligare lagringsnod, HDD-klass    | 2           |
+| Produktkod                    | Komponent                                 | Rackenheter |
+| ----------------------------- | ----------------------------------------- | ----------- |
+| PRIVATECLOUD-volume.nvme.base | IaaS Volymer baskonfiguration, NVME-klass | 6           |
+| PRIVATECLOUD-volume.nvme.add  | IaaS ytterligare lagringsnod, NVME-klass  | 1           |
+| PRIVATECLOUD-volume.hdd.base  | IaaS Volymer baskonfiguration, HDD-klass  | 12          |
+| PRIVATECLOUD-volume.hdd.add   | IaaS ytterligare lagringsnod, HDD-klass   | 2           |
 
 ### Privat moln – STaaS
 
@@ -123,20 +123,20 @@ Inga.
 
 ### Privat moln – STaaS baskonfiguration
 
-| Nodtyp            | Noder    | Rackenheter/enhet |
-| ----------------- | -------- | ----------------- |
-| Top-of-Rack-switch | 2       | 1                 |
-| Management-switch | 2        | 1                 |
-| Kontrollplan      | 3        | 2                 |
-| Lagringsnod – NVME | 0 / 4..n | 1                |
-| Lagringsnod – HDD  | 0 / 4..n | 2                |
+| Nodtyp             | Noder    | Rackenheter/enhet |
+| ------------------ | -------- | ----------------- |
+| Top-of-Rack-switch | 2        | 1                 |
+| Management-switch  | 2        | 1                 |
+| Kontrollplan       | 3        | 2                 |
+| Lagringsnod – NVME | 0 / 4..n | 1                 |
+| Lagringsnod – HDD  | 0 / 4..n | 2                 |
 
 ### Produktkomponenter för Privat moln – STaaS
 
-| Produktkod                 | Komponent                               | Rackenheter |
-| -------------------------- | --------------------------------------- | ----------- |
-| PRIVATECLOUD-staas.base    | STaaS baskonfiguration                  | 6           |
-| PRIVATECLOUD-staas.nvme.base | STaaS baslagringskluster, NVME-klass  | 4           |
-| PRIVATECLOUD-staas.nvme.add  | STaaS lagringskluster, NVME-klass     | 1           |
-| PRIVATECLOUD-staas.hdd.base  | STaaS baslagringskluster, HDD-klass   | 8           |
-| PRIVATECLOUD-staas.hdd.add   | STaaS lagringskluster, HDD-klass      | 2           |
+| Produktkod                   | Komponent                            | Rackenheter |
+| ---------------------------- | ------------------------------------ | ----------- |
+| PRIVATECLOUD-staas.base      | STaaS baskonfiguration               | 6           |
+| PRIVATECLOUD-staas.nvme.base | STaaS baslagringskluster, NVME-klass | 4           |
+| PRIVATECLOUD-staas.nvme.add  | STaaS lagringskluster, NVME-klass    | 1           |
+| PRIVATECLOUD-staas.hdd.base  | STaaS baslagringskluster, HDD-klass  | 8           |
+| PRIVATECLOUD-staas.hdd.add   | STaaS lagringskluster, HDD-klass     | 2           |

@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/platform/
+  - /geant/service-catalogue/platform/
 ---
+
 ## Administreret Compliant Kubernetes
 
 Den administrerede Compliant Kubernetes-platform omfatter følgende funktioner og muligheder:

@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/backup/
+  - /service-catalogue/backup/
 ---
+
 {{< ingress >}}
 Molnbackup-tjänsterna omfattar följande kategorier:
 {{< /ingress >}}
@@ -57,16 +57,16 @@ För alla nivåer går det att schemalägga upp till fyra (4) säkerhetskopior p
 
 #### Schema (filsystem)
 
-| Schema              | Beskrivning                                                                           |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| Incremental forever | Inkrementell backup av filsystem. Det finns ett schema varannan (2) timme att välja.  |
+| Schema              | Beskrivning                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| Incremental forever | Inkrementell backup av filsystem. Det finns ett schema varannan (2) timme att välja. |
 
 #### Schema (applikation)
 
-| Schema                    | Beskrivning                                                                                          |
-| ------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Fullständig backup        | Fullständig backup av applikationen. Det finns ett schema varannan (2) timme att välja.             |
-| Inkrementell/loggbackup   | Inkrementell eller loggbackup beroende på applikation. Det finns ett schema varje timme (1) att välja. |
+| Schema                  | Beskrivning                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------ |
+| Fullständig backup      | Fullständig backup av applikationen. Det finns ett schema varannan (2) timme att välja.                |
+| Inkrementell/loggbackup | Inkrementell eller loggbackup beroende på applikation. Det finns ett schema varje timme (1) att välja. |
 
 ### Tillägg till backuptjänsten
 
@@ -76,10 +76,10 @@ Dessa policys har fördelen att erbjuda ett pristak. Till exempel, om en policy 
 
 | Lagringstid | Beskrivning                                                                       |
 | ----------- | --------------------------------------------------------------------------------- |
-| 30 dagar    | Behåller all backupdata i 30 dagar, upp till fem (5) versioner per fil behålls.  |
-| 30 dagar    | Behåller all backupdata i 30 dagar, upp till tio (10) versioner per fil behålls. |
-| 90 dagar    | Behåller all backupdata i 90 dagar, upp till tio (10) versioner per fil behålls. |
-| 365 dagar   | Behåller all backupdata i 365 dagar, upp till fem (5) versioner per fil behålls. |
+| 30 dagar    | Behåller all backupdata i 30 dagar, upp till fem (5) versioner per fil behålls.   |
+| 30 dagar    | Behåller all backupdata i 30 dagar, upp till tio (10) versioner per fil behålls.  |
+| 90 dagar    | Behåller all backupdata i 90 dagar, upp till tio (10) versioner per fil behålls.  |
+| 365 dagar   | Behåller all backupdata i 365 dagar, upp till fem (5) versioner per fil behålls.  |
 | 365 dagar   | Behåller all backupdata i 365 dagar, upp till tio (10) versioner per fil behålls. |
 
 Det går att beställa andra versionsbegränsade policys vid behov (t.ex. 17 eller 42 versioner).
@@ -90,9 +90,9 @@ Samma krypterings- och schemapolicys gäller för snapshots för virtuella servr
 
 ### Lagringspolicy
 
-| Lagringstid | Beskrivning                                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------ |
-| 14 dagar    | Behåller all backupdata i 14 dagar, alla versioner behålls. Detta motsvarar tio (10) arbetsdagar.           |
+| Lagringstid | Beskrivning                                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------------- |
+| 14 dagar    | Behåller all backupdata i 14 dagar, alla versioner behålls. Detta motsvarar tio (10) arbetsdagar. |
 
 ## BaaS professionella tjänster
 
@@ -108,15 +108,15 @@ Ett professionellt konsultutbud finns tillgängligt. Tjänsten kan levereras på
 - Assistans på plats vid katastrofåterställning
 - Test av återställning
 
-| Produktkod               | Professionell tjänst                                                              |
-| ------------------------ | ---------------------------------------------------------------------------------- |
-| BAASPS-generic.consultancy | Allmän backupkonsultation för att konfigurera vissa applikationer m.m.           |
-| BAASPS-migration         | Tjänst för migrering och validering av backup                                      |
-| BAASPS-offsite           | Offsite-tjänster för backupmål                                                     |
-| BAASPS-restore.test      | Tjänster för återställningstest                                                    |
-| BAASPS-onboarding        | Onboardingprogram för backup                                                       |
-| BAASPS-feature           | Tillägg av backupfunktioner och -tjänster                                          |
-| BAASPS-exit              | Exit-tjänster för backup                                                           |
+| Produktkod                 | Professionell tjänst                                                   |
+| -------------------------- | ---------------------------------------------------------------------- |
+| BAASPS-generic.consultancy | Allmän backupkonsultation för att konfigurera vissa applikationer m.m. |
+| BAASPS-migration           | Tjänst för migrering och validering av backup                          |
+| BAASPS-offsite             | Offsite-tjänster för backupmål                                         |
+| BAASPS-restore.test        | Tjänster för återställningstest                                        |
+| BAASPS-onboarding          | Onboardingprogram för backup                                           |
+| BAASPS-feature             | Tillägg av backupfunktioner och -tjänster                              |
+| BAASPS-exit                | Exit-tjänster för backup                                               |
 
 ### Tjänster för migrering och validering av backup
 

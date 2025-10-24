@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/api/
+  - /geant/service-catalogue/api/
 ---
+
 {{< ingress >}}
 Alle Safesprings tjenester har API-er som gjør det mulig for brukeren å benytte tjenestene på en mer automatisert måte.
 {{< /ingress >}}

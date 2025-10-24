@@ -16,14 +16,14 @@ sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris på beregningskapacitet"
 sidebarlinkurl2: "/geant/price/#safespring-compute"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/infrastructure/
+  - /geant/service-catalogue/infrastructure/
 ---
+
 {{< ingress >}}
 På denne side finder du information om vores Infrastructure as a Service (IaaS) cloud compute-tjenester, inklusive detaljerede konfigurationer og kategorier af tilgængelige compute-tjenester.
 {{< /ingress >}}
@@ -95,10 +95,10 @@ Serverinstans, der kan få tilknyttet et volumen, herunder som roddisk-volumen.
 
 #### Konfigurationer
 
-| Produktkode     | Egenskaber                                                                                                   |
-| --------------- | ------------------------------------------------------------------------------------------------------------ |
-| VOLUME-large    | HDD-understøttet Ceph med 3 replikaer                                                                        |
-| VOLUME-fast     | SSD-understøttet Ceph med 3 replikaer                                                                        |
+| Produktkode     | Egenskaber                                                                                                          |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| VOLUME-large    | HDD-understøttet Ceph med 3 replikaer                                                                               |
+| VOLUME-fast     | SSD-understøttet Ceph med 3 replikaer                                                                               |
 | VOLUME-snapshot | SDD eller HDD baseret på kilde. Copy-on-write, som kun gemmer forskellen fra det tidspunkt, snapshot’et blev taget. |
 
 {{< distance >}}

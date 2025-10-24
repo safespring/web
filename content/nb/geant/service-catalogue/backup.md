@@ -16,14 +16,14 @@ sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se prisen på databehandling"
 sidebarlinkurl2: "/geant/price/#safespring-backup"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/backup/
+  - /geant/service-catalogue/backup/
 ---
+
 {{< ingress >}}
 Agentbaserte skybackup-tjenester med deduplisering og sikker, ekstern lagring.
 {{< /ingress >}}
@@ -38,11 +38,11 @@ Ingen.
 
 ### Konfigurasjoner
 
-| Produktkode    | Tjeneste                                                |
-| -------------- | ------------------------------------------------------- |
-| BAAS-on.demand | Abonnement egnet for små, on-demand-behov.              |
-| BAAS-small     | Abonnement egnet for mellomstore behov.                 |
-| BAAS-large     | Abonnement egnet for store behov.                       |
+| Produktkode    | Tjeneste                                   |
+| -------------- | ------------------------------------------ |
+| BAAS-on.demand | Abonnement egnet for små, on-demand-behov. |
+| BAAS-small     | Abonnement egnet for mellomstore behov.    |
+| BAAS-large     | Abonnement egnet for store behov.          |
 
 ### Sikkerhetskopiering for applikasjoner og filsystemer
 
@@ -73,7 +73,7 @@ I tillegg til standard oppbevaringsregler tilbyr vi en rekke versjonsbegrensede 
 Disse reglene har fordelen at de gir et pristak. For eksempel, hvis en fem-versjoners regel velges vil mengden lagret (og fakturert) aldri overstige fem ganger klientstørrelsen. I de fleste tilfeller vil mengden som lagres være mindre, siden bare endrede filer sikkerhetskopieres. En fil som aldri endres vil fortsatt bare være én versjon i backup-systemet.
 
 | Oppbevaring | Beskrivelse                                                                 |
-| ----------- | ---------------------------------------------------------------------------- |
+| ----------- | --------------------------------------------------------------------------- |
 | 30 dager    | Beholder alle sikkerhetskopidata i 30 dager, opptil fem versjoner per fil.  |
 | 30 dager    | Beholder alle sikkerhetskopidata i 30 dager, opptil ti versjoner per fil.   |
 | 90 dager    | Beholder alle sikkerhetskopidata i 90 dager, opptil fem versjoner per fil.  |

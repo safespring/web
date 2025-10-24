@@ -15,13 +15,12 @@ sidebarlinkname: "Back to all categories"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "See price for network"
 sidebarlinkurl2: "/geant/price/#network"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/network/
+  - /geant/service-catalogue/network/
 ---
 
 {{< ingress >}}

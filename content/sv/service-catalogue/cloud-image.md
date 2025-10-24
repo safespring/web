@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/cloud-image/
+  - /service-catalogue/cloud-image/
 ---
+
 {{< ingress >}}
 IaaS-tjänsten innehåller dessutom en molnavbildningstjänst (OpenStack Glance).
 {{< /ingress >}}
@@ -44,17 +44,17 @@ Basutbudet för avbildningstjänsten är själva tjänsten, som lagrar avbilder 
 Safespring tillhandahåller följande publika molnavbilder, baserade på upstream-projektens publiceringar. De uppdateras regelbundet med nya utgåvor inom respektive huvudversion.
 
 | Operativsystem                 | Version               |
-| ----------------------------- | --------------------- |
-| CentOS                        | 7                     |
-| CentOS                        | 8                     |
-| Cirros                        | 0.3.6                 |
-| Debian                        | 9 (Stretch)           |
-| Debian                        | 10 (Buster)           |
-| RedHat Enterprise Linux Server| 7                     |
-| RedHat Enterprise Linux Server| 8                     |
-| Windows Server                | 2016 Datacenter       |
-| Windows Server                | 2019 Datacenter       |
-| Ubuntu                        | 16.04 (Xenial Xerus)  |
-| Ubuntu                        | 18.04 (Bionic Beaver) |
-| Ubuntu                        | 20.04 (Focal Fossa)   |
-| Scaleout STACKn               | 2020.6                |
+| ------------------------------ | --------------------- |
+| CentOS                         | 7                     |
+| CentOS                         | 8                     |
+| Cirros                         | 0.3.6                 |
+| Debian                         | 9 (Stretch)           |
+| Debian                         | 10 (Buster)           |
+| RedHat Enterprise Linux Server | 7                     |
+| RedHat Enterprise Linux Server | 8                     |
+| Windows Server                 | 2016 Datacenter       |
+| Windows Server                 | 2019 Datacenter       |
+| Ubuntu                         | 16.04 (Xenial Xerus)  |
+| Ubuntu                         | 18.04 (Bionic Beaver) |
+| Ubuntu                         | 20.04 (Focal Fossa)   |
+| Scaleout STACKn                | 2020.6                |

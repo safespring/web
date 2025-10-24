@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/platform/
+  - /service-catalogue/platform/
 ---
+
 {{< ingress >}}
 Safespring leverer flere plattformtjenester på toppen av IaaS-plattformen.
 {{< /ingress >}}

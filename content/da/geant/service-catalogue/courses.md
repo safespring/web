@@ -16,21 +16,21 @@ sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se priser for uddannelser"
 sidebarlinkurl2: "/geant/price/#educations"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeaftale"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/courses/
+  - /geant/service-catalogue/courses/
 ---
+
 {{< ingress >}}
 Safespring tilbyder følgende kursusforløb og leverer flere platform‑som‑en‑tjeneste‑løsninger oven på Compute‑platformen.
 {{< /ingress >}}
 
-| Produktkode                | Ydelse                                             |
-| -------------------------- | -------------------------------------------------- |
+| Produktkode                | Ydelse                                            |
+| -------------------------- | ------------------------------------------------- |
 | TRAIN-intro.iaaS           | Introduktion til IaaS for ledere, 1 dag           |
 | TRAIN-cxo.strategy         | Cloud-strategi for topledere, 1 dag               |
 | TRAIN-intro.cloud          | Introduktion til cloud computing, teknisk, 4 dage |

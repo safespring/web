@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/backup/
+  - /service-catalogue/backup/
 ---
+
 {{< ingress >}}
 Tjenester for sikkerhetskopiering i skyen omfatter følgende kategorier:
 {{< /ingress >}}
@@ -49,23 +49,23 @@ Kryptering er bare så sikker som nøkkelhåndteringen, og sikkerhetskopieringsa
 
 For alle nivåer er det mulig å planlegge opptil fire (4) sikkerhetskopier per dag. Det finnes flere forhåndsdefinerte starttidspunkter å velge mellom (annenhver time).
 
-| Produktkode     | Type     | Sted | Versjon                 |
-| --------------- | -------- | ---- | ----------------------- |
-| BAAS-on.demand  | OnDemand | STO1 | Spectrum Protect 7 & 8  |
-| BAAS-small      | Small    | STO1 | Spectrum Protect 7 & 8  |
-| BAAS-large      | Large    | STO1 | Spectrum Protect 7 & 8  |
+| Produktkode    | Type     | Sted | Versjon                |
+| -------------- | -------- | ---- | ---------------------- |
+| BAAS-on.demand | OnDemand | STO1 | Spectrum Protect 7 & 8 |
+| BAAS-small     | Small    | STO1 | Spectrum Protect 7 & 8 |
+| BAAS-large     | Large    | STO1 | Spectrum Protect 7 & 8 |
 
 #### Plan (filsystemer)
 
-| Plan                 | Beskrivelse                                                                                  |
-| -------------------- | -------------------------------------------------------------------------------------------- |
+| Plan                      | Beskrivelse                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------ |
 | Kontinuerlig inkrementell | Inkrementell sikkerhetskopiering av filsystemer. Starttidspunkter å velge mellom annenhver time. |
 
 #### Plan (applikasjoner)
 
-| Plan                      | Beskrivelse                                                                                      |
-| ------------------------- | ------------------------------------------------------------------------------------------------ |
-| Full sikkerhetskopi       | Full sikkerhetskopiering av applikasjonen. Starttidspunkter å velge mellom annenhver time.      |
+| Plan                             | Beskrivelse                                                                                 |
+| -------------------------------- | ------------------------------------------------------------------------------------------- |
+| Full sikkerhetskopi              | Full sikkerhetskopiering av applikasjonen. Starttidspunkter å velge mellom annenhver time.  |
 | Inkrementell-/loggsikkerhetskopi | Inkrementell- eller loggsikkerhetskopi avhengig av applikasjon. Starttidspunkter hver time. |
 
 ### Tilvalg i sikkerhetskopieringstjenesten
@@ -74,8 +74,8 @@ I tillegg til standard oppbevaringsregler tilbyr vi en rekke versjonsbegrensede 
 
 Disse reglene har fordelen at de gir et pristak. For eksempel, hvis en fem-versjonsregel velges, vil lagret (og fakturert) mengde aldri overstige fem (5) ganger klientstørrelsen. I de fleste tilfeller vil lagret mengde være lavere, siden bare endrede filer sikkerhetskopieres. En fil som aldri endres, vil fortsatt bare ha én versjon i backup-systemet.
 
-| Oppbevaring | Beskrivelse                                                                     |
-| ----------- | ------------------------------------------------------------------------------- |
+| Oppbevaring | Beskrivelse                                                                              |
+| ----------- | ---------------------------------------------------------------------------------------- |
 | 30 dager    | Beholder alle sikkerhetskopidata i 30 dager, opptil fem (5) versjoner per fil beholdes.  |
 | 30 dager    | Beholder alle sikkerhetskopidata i 30 dager, opptil ti (10) versjoner per fil beholdes.  |
 | 90 dager    | Beholder alle sikkerhetskopidata i 90 dager, opptil ti (10) versjoner per fil beholdes.  |
@@ -90,9 +90,9 @@ De samme krypterings- og planleggingsreglene gjelder for snapshots av virtuelle 
 
 ### Oppbevaringspolicy
 
-| Oppbevaring | Beskrivelse                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------- |
-| 14 dager    | Beholder alle sikkerhetskopidata i 14 dager, alle versjoner beholdes. Dette tilsvarer ti (10) virkedager.    |
+| Oppbevaring | Beskrivelse                                                                                               |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| 14 dager    | Beholder alle sikkerhetskopidata i 14 dager, alle versjoner beholdes. Dette tilsvarer ti (10) virkedager. |
 
 ## Profesjonelle tjenester for BaaS
 
@@ -108,15 +108,15 @@ En profesjonell rådgivningstjeneste er tilgjengelig. Tjenesten kan leveres på 
 - Bistand på stedet under katastrofegjenoppretting
 - Testing av gjenoppretting
 
-| Produktkode               | Profesjonell tjeneste                                                               |
-| ------------------------- | ----------------------------------------------------------------------------------- |
+| Produktkode                | Profesjonell tjeneste                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- |
 | BAASPS-generic.consultancy | Generell rådgivningstjeneste for sikkerhetskopiering for å konfigurere bestemte applikasjoner og lignende |
-| BAASPS-migration          | Tjeneste for migrering og validering av sikkerhetskopier                            |
-| BAASPS-offsite            | Tjenester for eksternt backup-mål                                                   |
-| BAASPS-restore.test       | Tjenester for gjenopprettingstester                                                 |
-| BAASPS-onboarding         | Program for onboarding til backup                                                   |
-| BAASPS-feature            | Tillegg av backup-funksjoner og -tjenester                                          |
-| BAASPS-exit               | Exit-tjenester for backup                                                           |
+| BAASPS-migration           | Tjeneste for migrering og validering av sikkerhetskopier                                                  |
+| BAASPS-offsite             | Tjenester for eksternt backup-mål                                                                         |
+| BAASPS-restore.test        | Tjenester for gjenopprettingstester                                                                       |
+| BAASPS-onboarding          | Program for onboarding til backup                                                                         |
+| BAASPS-feature             | Tillegg av backup-funksjoner og -tjenester                                                                |
+| BAASPS-exit                | Exit-tjenester for backup                                                                                 |
 
 ### Tjenester for backup-migrering og -validering
 

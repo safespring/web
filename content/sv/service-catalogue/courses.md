@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safesprings tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/courses/
+  - /service-catalogue/courses/
 ---
+
 {{< ingress >}}
 Safespring erbjuder fyra utbildningar, inklusive en introduktion till IaaS och molnberäkning, en kurs i molnstrategi samt två tekniska kurser om DevOps och mikrotjänster.
 {{< /ingress >}}

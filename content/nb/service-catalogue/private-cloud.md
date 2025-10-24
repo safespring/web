@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring tjenestekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/private-cloud/
+  - /service-catalogue/private-cloud/
 ---
+
 {{< ingress >}}
 Komplett tilbud for utrulling av privat sky, inkludert maskinvare, drift og programvarevedlikehold.
 {{< /ingress >}}
@@ -77,9 +77,9 @@ Ingen.
 
 ### Privat sky – IaaS grunnproduktkomponenter
 
-| Produktkode               | Komponent                                  | Rack-enheter |
-| ------------------------- | ------------------------------------------ | ------------ |
-| PRIVATECLOUD-compute.base | IaaS Compute-grunnkonfigurasjon            | 12           |
+| Produktkode               | Komponent                                   | Rack-enheter |
+| ------------------------- | ------------------------------------------- | ------------ |
+| PRIVATECLOUD-compute.base | IaaS Compute-grunnkonfigurasjon             | 12           |
 | PRIVATECLOUD-compute.add  | IaaS Compute – ekstra noder (4 per chassis) | 2            |
 
 ## Privat sky – IaaS Volumer-alternativ
@@ -94,22 +94,22 @@ IaaS-grunnkonfigurasjon.
 
 ### Privat sky – IaaS Volumer-alternativ
 
-| Nodetype             | Noder    | Rack-enheter                           |
-| -------------------- | -------- | -------------------------------------- |
-| Top-of-Rack-svitsj   | 2        | 0 (gjenbruk av IaaS ToR)               |
-| Administrasjonssvitsj | 2        | 0 (gjenbruk av IaaS Mgm-svitsj)        |
-| Kontrollplan         | 3        | 0 (samlokalisert med IaaS-kontrollplan) |
-| Lagringsnoder – NVME | 0 / 6..n | 0 / 6..n                               |
-| Lagringsnoder – HDD  | 0 / 6..n | 0 / 12..2n                             |
+| Nodetype              | Noder    | Rack-enheter                            |
+| --------------------- | -------- | --------------------------------------- |
+| Top-of-Rack-svitsj    | 2        | 0 (gjenbruk av IaaS ToR)                |
+| Administrasjonssvitsj | 2        | 0 (gjenbruk av IaaS Mgm-svitsj)         |
+| Kontrollplan          | 3        | 0 (samlokalisert med IaaS-kontrollplan) |
+| Lagringsnoder – NVME  | 0 / 6..n | 0 / 6..n                                |
+| Lagringsnoder – HDD   | 0 / 6..n | 0 / 12..2n                              |
 
 ### Produktkomponenter for Privat sky – IaaS Volumer
 
-| Produktkode                   | Komponent                                     | Rack-enheter |
-| ----------------------------- | --------------------------------------------- | ------------ |
+| Produktkode                   | Komponent                                      | Rack-enheter |
+| ----------------------------- | ---------------------------------------------- | ------------ |
 | PRIVATECLOUD-volume.nvme.base | IaaS Volumer – grunnkonfigurasjon, NVME-klasse | 6            |
-| PRIVATECLOUD-volume.nvme.add  | IaaS – ekstra lagringsnode, NVME-klasse       | 1            |
-| PRIVATECLOUD-volume.hdd.base  | IaaS Volumer – grunnkonfigurasjon, HDD-klasse | 12           |
-| PRIVATECLOUD-volume.hdd.add   | IaaS – ekstra lagringsnode, HDD-klasse        | 2            |
+| PRIVATECLOUD-volume.nvme.add  | IaaS – ekstra lagringsnode, NVME-klasse        | 1            |
+| PRIVATECLOUD-volume.hdd.base  | IaaS Volumer – grunnkonfigurasjon, HDD-klasse  | 12           |
+| PRIVATECLOUD-volume.hdd.add   | IaaS – ekstra lagringsnode, HDD-klasse         | 2            |
 
 ### Privat sky – STaaS
 
@@ -123,20 +123,20 @@ Ingen.
 
 ### Privat sky – STaaS grunnkonfigurasjon
 
-| Nodetype            | Noder    | Rack-enheter/element |
-| ------------------- | -------- | -------------------- |
-| Top-of-Rack-svitsj  | 2        | 1                    |
+| Nodetype              | Noder    | Rack-enheter/element |
+| --------------------- | -------- | -------------------- |
+| Top-of-Rack-svitsj    | 2        | 1                    |
 | Administrasjonssvitsj | 2        | 1                    |
-| Kontrollplan        | 3        | 2                    |
-| Lagringsnode – NVME | 0 / 4..n | 1                    |
-| Lagringsnode – HDD  | 0 / 4..n | 2                    |
+| Kontrollplan          | 3        | 2                    |
+| Lagringsnode – NVME   | 0 / 4..n | 1                    |
+| Lagringsnode – HDD    | 0 / 4..n | 2                    |
 
 ### Privat sky – STaaS produktkomponenter
 
-| Produktkode                  | Komponent                              | Rack-enheter |
-| ---------------------------- | -------------------------------------- | ------------ |
-| PRIVATECLOUD-staas.base      | STaaS grunnkonfigurasjon               | 6            |
+| Produktkode                  | Komponent                                | Rack-enheter |
+| ---------------------------- | ---------------------------------------- | ------------ |
+| PRIVATECLOUD-staas.base      | STaaS grunnkonfigurasjon                 | 6            |
 | PRIVATECLOUD-staas.nvme.base | STaaS – grunnlagringsklynge, NVME-klasse | 4            |
-| PRIVATECLOUD-staas.nvme.add  | STaaS – lagringsklynge, NVME-klasse    | 1            |
-| PRIVATECLOUD-staas.hdd.base  | STaaS – grunnlagringsklynge, HDD-klasse | 8            |
-| PRIVATECLOUD-staas.hdd.add   | STaaS – lagringsklynge, HDD-klasse     | 2            |
+| PRIVATECLOUD-staas.nvme.add  | STaaS – lagringsklynge, NVME-klasse      | 1            |
+| PRIVATECLOUD-staas.hdd.base  | STaaS – grunnlagringsklynge, HDD-klasse  | 8            |
+| PRIVATECLOUD-staas.hdd.add   | STaaS – lagringsklynge, HDD-klasse       | 2            |

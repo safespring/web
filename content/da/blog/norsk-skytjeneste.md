@@ -8,7 +8,6 @@ background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-bob
 form: "nej"
 sidebarlinkname: "Hent whitepaper"
 sidebarlinkurl: "#ned"
-socialmedia: "safespring-compute.jpg"
 language: "da"
 section: "Fredric Wallsten"
 article: "DN.no"
@@ -17,6 +16,7 @@ aliases:
   - /no/aktuelt/norsk_skytjeneste/
   - /no/aktuelt/norsk-skytjeneste/
 ---
+
 ## Norsk statslig cloudtjeneste?
 
 {{< ingress >}}

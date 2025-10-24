@@ -16,21 +16,21 @@ sidebarlinkname: "Tilbake til alle kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris på lisenser"
 sidebarlinkurl2: "/geant/price/#software-and-licenses"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/third-party-software-licenses/
+  - /geant/service-catalogue/third-party-software-licenses/
 ---
+
 {{< ingress >}}
 Safespring tilbyr flere tredjeparts programvarelisenser for bruk på våre IaaS-plattformer.
 {{< /ingress >}}
 
 | Produktkode       | Programvare                     | Partner   |
-| ----------------- | --------------------------------| --------- |
+| ----------------- | ------------------------------- | --------- |
 | SW-win.ser.2022   | Windows Server 2022 Datacenter  | Microsoft |
 | SW-ms.sql.ser     | Microsoft SQL Server Standard   | Microsoft |
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | Microsoft |

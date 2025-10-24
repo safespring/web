@@ -15,14 +15,13 @@ sidebarlinkname: "Back to all categories"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "See price for licenses"
 sidebarlinkurl2: "/geant/price/#software-and-licenses"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 nosidebar: ""
 noindex: "x"
 aliases:
-- /geant/service-catalogue/third-party-software-licenses/
+  - /geant/service-catalogue/third-party-software-licenses/
 ---
 
 {{< ingress >}}

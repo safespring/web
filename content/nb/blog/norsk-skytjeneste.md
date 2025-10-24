@@ -7,7 +7,6 @@ background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-bob
 form: "no"
 sidebarlinkname: "Last ned White Paper"
 sidebarlinkurl: "#down"
-socialmedia: "safespring-compute.jpg"
 language: "nb"
 section: "Fredric Wallsten"
 article: "DN.no"

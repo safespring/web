@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safespring Servicekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 nosidebar: ""
 aliases:
-- /service-catalogue/support/
+  - /service-catalogue/support/
 ---
+
 {{< ingress >}}
 Safespring tilbyder support på flere forskellige måder til platformen og relaterede tjenester.
 {{< /ingress >}}

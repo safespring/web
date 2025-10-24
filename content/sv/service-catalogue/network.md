@@ -14,13 +14,13 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "Safesprings tjänstekatalog"
 socialmedia: "/safespring-start.jpg"
 toc: ""
 aliases:
-- /service-catalogue/network/
+  - /service-catalogue/network/
 ---
+
 {{< ingress >}}
 Obligatoriska och valfria nätverkstjänster vid användning av IaaS-plattformarna.
 {{< /ingress >}}

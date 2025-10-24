@@ -16,14 +16,14 @@ sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
 sidebarlinkname2: "Se pris för beräkningsresurser"
 sidebarlinkurl2: "/geant/price/#safespring-compute"
-socialmedia: "safespring-compute.jpg"
 section: "Ramverket OCRE 2024"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/infrastructure/
+  - /geant/service-catalogue/infrastructure/
 ---
+
 {{< ingress >}}
 På den här sidan hittar du information om våra molnberäkningstjänster för Infrastructure as a Service (IaaS), inklusive detaljerade konfigurationer och kategorier av tillgängliga beräkningstjänster.
 {{< /ingress >}}
@@ -45,22 +45,22 @@ Inga.
 
 ### Konfigurationer
 
-| Produktkod               | vCPU | Minne | Tillfällig disk |
-| ------------------------ | ---- | ----- | --------------- |
-| FLAVOR-l2. c2 r4. 100    | 2    | 4 GiB | 100 GB          |
-| FLAVOR-l2. c2 r4. 500    | 2    | 4 GiB | 500 GB          |
-| FLAVOR-l2. c2 r4. 1000   | 2    | 4 GiB | 1000 GB         |
-| FLAVOR-l2. c4 r8. 100    | 4    | 8 GiB | 100 GB          |
-| FLAVOR-l2. c4 r8. 500    | 4    | 8 GiB | 500 GB          |
-| FLAVOR-l2. c4 r8. 1000   | 4    | 8 GiB | 1000 GB         |
-| FLAVOR-l2. c8 r16. 100   | 8    | 16 GiB| 100 GB          |
-| FLAVOR-l2. c8 r16. 500   | 8    | 16 GiB| 500 GB          |
-| FLAVOR-l2. c8 r16. 1000  | 8    | 16 GiB| 1000 GB         |
-| FLAVOR-l2. c16 r32. 100  | 16   | 32 GiB| 100 GB          |
-| FLAVOR-l2. c16 r32. 500  | 16   | 32 GiB| 500 GB          |
-| FLAVOR-l2. c16 r32. 1000 | 16   | 32 GiB| 1000 GB         |
-| FLAVOR-l2. c16 r64. 500  | 16   | 64 GiB| 500 GB          |
-| FLAVOR-l2. c32 r64. 1000 | 32   | 64 GiB| 1000 GB         |
+| Produktkod               | vCPU | Minne  | Tillfällig disk |
+| ------------------------ | ---- | ------ | --------------- |
+| FLAVOR-l2. c2 r4. 100    | 2    | 4 GiB  | 100 GB          |
+| FLAVOR-l2. c2 r4. 500    | 2    | 4 GiB  | 500 GB          |
+| FLAVOR-l2. c2 r4. 1000   | 2    | 4 GiB  | 1000 GB         |
+| FLAVOR-l2. c4 r8. 100    | 4    | 8 GiB  | 100 GB          |
+| FLAVOR-l2. c4 r8. 500    | 4    | 8 GiB  | 500 GB          |
+| FLAVOR-l2. c4 r8. 1000   | 4    | 8 GiB  | 1000 GB         |
+| FLAVOR-l2. c8 r16. 100   | 8    | 16 GiB | 100 GB          |
+| FLAVOR-l2. c8 r16. 500   | 8    | 16 GiB | 500 GB          |
+| FLAVOR-l2. c8 r16. 1000  | 8    | 16 GiB | 1000 GB         |
+| FLAVOR-l2. c16 r32. 100  | 16   | 32 GiB | 100 GB          |
+| FLAVOR-l2. c16 r32. 500  | 16   | 32 GiB | 500 GB          |
+| FLAVOR-l2. c16 r32. 1000 | 16   | 32 GiB | 1000 GB         |
+| FLAVOR-l2. c16 r64. 500  | 16   | 64 GiB | 500 GB          |
+| FLAVOR-l2. c32 r64. 1000 | 32   | 64 GiB | 1000 GB         |
 
 ### Beräkning utan lokal lagring
 
@@ -72,18 +72,18 @@ Inga.
 
 #### Konfiguration
 
-| Produktkod          | vCPU | Minne |
-| ------------------- | ---- | ----- |
-| FLAVOR-b2. c1 r2    | 1    | 2 GiB |
-| FLAVOR-b2. c1 r4    | 1    | 4 GiB |
-| FLAVOR-b2. c2 r4    | 2    | 4 GiB |
-| FLAVOR- b2. c2 r8   | 2    | 8 GiB |
-| FLAVOR- b2. c4 r8   | 4    | 8 GiB |
-| FLAVOR- b2. c4 r16  | 4    | 16 GiB|
-| FLAVOR- b2. c8 r16  | 8    | 16 GiB|
-| FLAVOR- b2. c8 r32  | 8    | 32 GiB|
-| FLAVOR- b2. c16 r32 | 16   | 32 GiB|
-| FLAVOR- b2. c16 r64 | 16   | 64 GiB|
+| Produktkod          | vCPU | Minne  |
+| ------------------- | ---- | ------ |
+| FLAVOR-b2. c1 r2    | 1    | 2 GiB  |
+| FLAVOR-b2. c1 r4    | 1    | 4 GiB  |
+| FLAVOR-b2. c2 r4    | 2    | 4 GiB  |
+| FLAVOR- b2. c2 r8   | 2    | 8 GiB  |
+| FLAVOR- b2. c4 r8   | 4    | 8 GiB  |
+| FLAVOR- b2. c4 r16  | 4    | 16 GiB |
+| FLAVOR- b2. c8 r16  | 8    | 16 GiB |
+| FLAVOR- b2. c8 r32  | 8    | 32 GiB |
+| FLAVOR- b2. c16 r32 | 16   | 32 GiB |
+| FLAVOR- b2. c16 r64 | 16   | 64 GiB |
 
 ### Central blocklagring
 

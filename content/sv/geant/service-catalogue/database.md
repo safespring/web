@@ -14,14 +14,14 @@ background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
 sidebarlinkurl: "/geant/service-catalogue"
-socialmedia: "safespring-compute.jpg"
 section: "OCRE 2024-ramverket"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: "x"
 aliases:
-- /geant/service-catalogue/database/
+  - /geant/service-catalogue/database/
 ---
+
 ## Databas som tjänst (DBaaS)
 
 Safespring tillhandahåller MariaDB, MySQL, Redis, PostgreSQL och MongoDB som tjänster på Compute-plattformen.

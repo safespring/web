@@ -8,7 +8,6 @@ background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-bob
 form: "no"
 sidebarlinkname: "Download White Paper"
 sidebarlinkurl: "#down"
-socialmedia: "safespring-compute.jpg"
 language: "en"
 section: "Fredric Wallsten"
 article: "DN.no"
@@ -17,6 +16,7 @@ aliases:
   - /no/aktuelt/norsk_skytjeneste/
   - /no/aktuelt/norsk-skytjeneste/
 ---
+
 ## Norwegian state cloud service?
 
 {{< ingress >}}
