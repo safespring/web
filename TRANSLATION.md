@@ -3,20 +3,24 @@
 Use `scripts/batch_translate_missing.py` to create and translate missing language pages. Follow these steps.
 
 ## 1) Prereqs
+
 - Check Python: `python3 --version` (need 3.x). On Debian/Ubuntu: `sudo apt-get install -y python3 python3-venv`.
 - Ensure Git is installed and this repo is cloned.
 
 ## 2) Get an OpenAI API key
+
 - Sign in and create a key: [OpenAI platform](https://platform.openai.com/)
 - Copy the key (`sk-...`).
 
 ## 3) Provide the key to the scripts (choose ONE)
+
 - Create `.env.local` in the repo root:
   ```bash
   echo 'OPENAI_API_KEY="sk-PASTE_YOUR_KEY_HERE"' >> .env.local
   ```
 
 ## 4) Recommended run order
+
 - Snapshot current work (safe point):
   ```bash
   git add -A && git commit -m "chore: snapshot before translation" || true
@@ -41,6 +45,7 @@ Use `scripts/batch_translate_missing.py` to create and translate missing languag
 Useful flags: `--langs sv,en,nb,da`, `--prefer-source en,sv,nb,da`, `--content-root content`, `--verbose`.
 
 ## 5) Review changes quickly
+
 - See changes:
   ```bash
   git status
@@ -56,6 +61,7 @@ Useful flags: `--langs sv,en,nb,da`, `--prefer-source en,sv,nb,da`, `--content-r
   ```
 
 ## 6) Fix or redo specific pages
+
 - If AI made a mistake, edit the file manually.
 - Re-translate a single page:
   ```bash
@@ -68,18 +74,21 @@ Useful flags: `--langs sv,en,nb,da`, `--prefer-source en,sv,nb,da`, `--content-r
   ```
 
 ## 7) Commit when satisfied
+
 ```bash
 git add -A
 git commit -m "feat(i18n): add and translate missing pages"
 ```
 
 ## Notes and gotchas
+
 - Frontmatter: translator sets `ai: true` and `language: <lang>`. Verify.
 - Code fences and inline code: should remain intact. Rarely they change—fix by hand.
 - Links/URLs: targets should remain unchanged; spot-check a few pages.
 - Paths must be under `content/<sv|en|nb|da>/...` or scripts won’t process them.
 - Costs: translations call OpenAI and may incur usage charges.
+- Make sure the OpenAI has sufficient funds before starting a translation.
 - Should codefences end up on the previous rather than a new line, use this RegEx to fix them.
-  - Find: (^|[\r\n])([^\r\n]*\S[^\r\n]*?)(?=```(?!`)[^\r\n]*$)
+  - Find: (^|[\r\n])([^\r\n]_\S[^\r\n]_?)(?=```(?!`)[^\r\n]\*$)
   - Replace: $1$2\n
   - Note: In vscode you may have to open each result for the replace to apply properly.
