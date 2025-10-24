@@ -5,8 +5,9 @@ author = "Safespring"
 copyright = "2025 Safespring"
 
 # Pagination
-paginate = 10
-paginatePath = "blog"
+[pagination]
+  pagerSize = 10
+  path = "latest"
 
 [params]
   mainSections = ['blogg', 'webinar', 'whitepaper', 'solution-brief']
