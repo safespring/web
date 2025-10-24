@@ -15,13 +15,13 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "#hent"
 card: "safespring_card_26.jpg"
 eventbild: ""
-socialmediabild: "safespring_social_26.jpg"
 aliases:
-    - /whitepapers/cloudact
-    - /cloudact
-    - /whitepaper/cloudact/
+  - /whitepapers/cloudact
+  - /cloudact
+  - /whitepaper/cloudact/
 toc: "Indhold"
 ---
+
 {{< ingress >}}
 Dette white paper handler om EU's og amerikansk rets bestemmelser om grænseoverskridende dataoverførsler samt aktuelle retssager, som kan komme til at påvirke dette.
 {{< /ingress >}}

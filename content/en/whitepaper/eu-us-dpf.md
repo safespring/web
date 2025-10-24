@@ -15,11 +15,11 @@ sidebarlinkicon: ""
 sidebarlinkurl: ""
 card: ""
 eventbild: ""
-socialmediabild: ""
 toc: "Contents"
 aliases:
-- /whitepaper/eu-us-dpf/
+  - /whitepaper/eu-us-dpf/
 ---
+
 {{< ingress >}}
 The European Commission’s latest decision on data transfers to the United States has once again drawn attention to the legal and technical challenges faced by European organizations.
 {{< /ingress >}}

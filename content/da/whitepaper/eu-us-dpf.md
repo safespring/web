@@ -15,11 +15,11 @@ sidebarlinkicon: ""
 sidebarlinkurl: ""
 card: ""
 eventbild: ""
-socialmediabild: ""
 toc: "Indhold"
 aliases:
-- /whitepaper/eu-us-dpf/
+  - /whitepaper/eu-us-dpf/
 ---
+
 {{< ingress >}}
 Europa-Kommissionens seneste beslutning om dataoverførsler til USA har igen sat fokus på de retlige og tekniske udfordringer som europæiske organisationer.
 {{< /ingress >}}

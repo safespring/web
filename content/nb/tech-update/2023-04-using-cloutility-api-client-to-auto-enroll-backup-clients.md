@@ -13,15 +13,15 @@ socialmediabild: ""
 section: "Teknologioppdatering"
 author: "Daniel de Oquiñena"
 language: "nb"
-toc: ""
 sidebarlinkname: "Cloutility-api-client-repo"
 sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
 sidebarlinkname2: "Fullstendig kodeeksempel"
 sidebarlinkurl2: "https://github.com/safespring-community/cloutility-api-client/tree/main/examples/enroll"
 toc: "I denne veiledningen"
 aliases:
-- /blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/
+  - /blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/
 ---
+
 {{< ingress >}}
 I denne veiledningen skal vi utforske Safesprings bibliotek cloutility-backup-client skrevet i Go. Vi lager et lite, lett å distribuere verktøy for å automatisere registreringsprosedyren for sikkerhetskopinoder og ser nærmere på noen av metodene som er tilgjengelige i biblioteket cloutility-api-client.
 {{< /ingress >}}
@@ -47,6 +47,7 @@ Vi gjør også noen antakelser som grunnlag for brukstilfellet vårt:
 
 Angi standardverdier og hent serverens vertsnavn, som skal brukes som identifikator for sikkerhetskopinoder.
 Vi begynner med å angi noen standardverdier:
+
 ```go
 const (
     // Set the OS to Linux, ID = 3
@@ -61,12 +62,15 @@ const (
     contact = "Company IT Department"
 )
 ```
+
 Som vi skal se senere i veiledningen, sender vi med disse verdiene når vi oppretter backup-noden vår for å sikre at vi setter riktige innstillinger for denne spesifikke servertypen. Disse innstillingene kan enkelt tilpasses en rekke server-/arbeidsstasjonsoppsett. For en komplett liste over alle tilgjengelige kombinasjoner som støttes av Safespring Backup kan du bruke cli-tool som er inkludert i cloutilty-api-client-prosjektet.
 
 Før vi får tilgang til API-et henter vi også vertsnavnet til serveren, som vil bli brukt som identifikator for backup-noder.
+
 ```go
 hostname, _ := os.Hostname()
 ```
+
 I dette eksemplet sørger vi for at ingen to konsumenter (backup-noder) har samme vertsnavn.
 
 {{< distance >}}
@@ -74,18 +78,20 @@ I dette eksemplet sørger vi for at ingen to konsumenter (backup-noder) har samm
 ## 2. Sette opp miljøet
 
 For å kunne bruke API-et trenger vi en autentisert klient for å utføre de ulike operasjonene. Initialisering gjøres med funksjonen `cloutapi.Init()`. Slik ser det ut:
+
 ```go
 func Init(ctx context.Context, clientID, apiKeyOrigin, username, password, baseURL string) (*Client, error)
 ```
+
 Funksjonen `Init()` initialiserer en Cloutility API-klient og returnerer en peker til en `AuthenticatedClient`-struktur. Den tar følgende parametere:
 
-| Parameter   | Type            | Beskrivelse                                                                                                   |
-| ----------- | --------------- | ------------------------------------------------------------------------------------------------------------- |
-| `ctx`       | context.Context | Et context.Context-objekt for API-klienten                                                                    |
-| `client_id` | string          | Oppgi Safespring-klient-ID (APIKey)                                                                           |
-| `origin`    | string          | Opprinnelsen til klient-ID-en, angitt ved opprettelse                                                        |
-| `username`  | string          | Oppgi brukernavnet for Safespring Backup-tjenesten                                                            |
-| `password`  | string          | Oppgi passordet for Safespring Backup-tjenesten                                                               |
+| Parameter   | Type            | Beskrivelse                                                                                                       |
+| ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `ctx`       | context.Context | Et context.Context-objekt for API-klienten                                                                        |
+| `client_id` | string          | Oppgi Safespring-klient-ID (APIKey)                                                                               |
+| `origin`    | string          | Opprinnelsen til klient-ID-en, angitt ved opprettelse                                                             |
+| `username`  | string          | Oppgi brukernavnet for Safespring Backup-tjenesten                                                                |
+| `password`  | string          | Oppgi passordet for Safespring Backup-tjenesten                                                                   |
 | `baseURL`   | string          | Basis-URL for Cloutility API: `https://portal-api.backup.sto2.safedc.net` (for interaksjon med Safespring Backup) |
 
 I eksemplet vårt henter vi disse verdiene fra miljøvariabler i kjøremiljøet, men de kan like gjerne gjøres tilgjengelige fra en konfigurasjonsfil, et utrullingsverktøy som Ansible eller en annen kilde.
@@ -95,9 +101,11 @@ I eksemplet vårt henter vi disse verdiene fra miljøvariabler i kjøremiljøet,
 ## 3. Hente brukerinformasjon
 
 Når API-klienten er initialisert, begynner vi med å hente informasjon om brukertilgang for å avgjøre hvilken forretningsenhet vi skal plassere backup-noden i. Dette gjøres ved å bruke metoden `GetUser()`, som er definert slik:
+
 ```go
 func (c *AuthenticatedClient) GetUser() (*User, error)
 ```
+
 Metoden `GetUser()` henter informasjon om den gjeldende brukeren (bestemt av brukernavn/passord brukt til å initialisere klienten) og returnerer en peker til en `User`-struct. Videre vil vi bruke denne verdien av `User.UserBunit.ID` som ID-en til forretningsenheten der vi plasserer backup-klienten vår.
 
 {{< distance >}}
@@ -105,14 +113,16 @@ Metoden `GetUser()` henter informasjon om den gjeldende brukeren (bestemt av bru
 ## 4. Hente informasjon om konsumenter
 
 Neste steg er å hente en liste over konsumenter som allerede finnes i den valgte forretningsenheten. Til dette bruker vi metoden `GetConsumers()`, som ser slik ut:
+
 ```go
 func (c *AuthenticatedClient) GetConsumers(bUnitID int) ([]Consumer, error)
 ```
+
 Metoden `GetConsumers()` henter en liste over konsumenter innenfor en gitt forretningsenhet og returnerer en slice av `Consumer`-strukturer. Den tar følgende parametere:
 
-| Parameter | Type    | Beskrivelse                                                     |
-| --------- | ------- | ---------------------------------------------------------------- |
-| `bUnitID` | heltall | Vi sender ID-en til den gjeldende brukerens forretningsenhet.    |
+| Parameter | Type    | Beskrivelse                                                   |
+| --------- | ------- | ------------------------------------------------------------- |
+| `bUnitID` | heltall | Vi sender ID-en til den gjeldende brukerens forretningsenhet. |
 
 For å sikre at vi oppretter en ny konsument med et unikt vertsnavn må vi også iterere over resultatet og avbryte kjøringen hvis vertsnavnet samsvarer med en allerede eksisterende konsument.
 
@@ -125,44 +135,50 @@ Det finnes ingen innebygd begrensning i tjenesten som hindrer at man oppretter k
 ## 5. Opprette en ny konsument
 
 Hvis det ikke finnes noen konsument med det gjeldende vertsnavnet, fortsetter vi med å opprette en innenfor brukerens forretningsenhet, ved å bruke metoden `CreateConsumer()`:
+
 ```go
 func (c *AuthenticatedClient) CreateConsumer(bUnitID int, name string) (Consumer, error)
 ```
+
 Metoden `CreateConsumer()` oppretter en ny konsument i en forretningsenhet og returnerer en `Consumer`-struktur som inneholder ID, navn, opprettelsesdato osv. Den tar følgende parametere:
 
-| Parameter | Type   | Beskrivelse                                                               |
-| --------- | ------ | ------------------------------------------------------------------------- |
-| `bUnitID` | heltall | Vi sender (igjen) ID-en til den nåværende brukerens forretningsenhet.    |
-| `name`    | streng | Konsumentnavnet; vi bruker vertsnavnet til den gjeldende serveren.        |
+| Parameter | Type    | Beskrivelse                                                           |
+| --------- | ------- | --------------------------------------------------------------------- |
+| `bUnitID` | heltall | Vi sender (igjen) ID-en til den nåværende brukerens forretningsenhet. |
+| `name`    | streng  | Konsumentnavnet; vi bruker vertsnavnet til den gjeldende serveren.    |
 
 {{< distance >}}
 
 ## 6. Opprette en sikkerhetskopinode
 
 En konsument (eller forbruksenhet, som det kalles i nettportalen) er en enhet som inneholder metadata som visningsnavn, tagger og faktureringsdata. Men vi må fortsatt opprette en faktisk sikkerhetskopinode i vår nyopprettede konsument. Til dette bruker vi metoden `CreateNode()`:
+
 ```go
 func (c *AuthenticatedClient) CreateNode(bUnitID, consumerID, osTypeID, nodeTypeID, domainID, clientOptionSetID int, contact string) (Node, error)
 ```
+
 Metoden `CreateNode()` oppretter en backupnode knyttet til en forbruksenhet og returnerer en ny `Node`-struktur. Den krever følgende parametere:
 
-| Parameter           | Type    | Beskrivelse                                                                                                                                              |
-| ------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `bUnitID`           | integer | Som før bruker vi gjeldende brukers forretningsenhet.                                                                                                    |
-| `consumerID`        | integer | Forbruksenheten der backupnoden skal plasseres. Vi sender ID-en til forbruksenheten vi nettopp opprettet.                                               |
-| `osType`            | integer | Her sender vi konstanten `osTypeID` som vi deklarerte lenger opp. Hos Safespring Backup har en Linux-server ID 3. En Windows-server har ID 2.           |
-| `clientType`        | integer | ID-en til klienttypen vi registrerer; vi sender verdien av `nodeTypeID`, som for en filserver har ID 1.                                                 |
-| `domain`            | integer | Domenet bestemmer retensjonsperioden. Vi bruker STANDARD-domenet med ID 1, som hos Safespring Backup beholder 180 dager med sikkerhetskopi.             |
-| `clientOptionSetID` | integer | Alternativsettet for backupklienten som skal brukes. Vi bruker alternativsettet DEDUP_AND_COMPRESS                                                       |
-| `contact`           | integer | Kontakt vedrørende backupnoden. Typisk avdelingen som har ansvar for å administrere backupnoden.                                                         |
+| Parameter           | Type    | Beskrivelse                                                                                                                                   |
+| ------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bUnitID`           | integer | Som før bruker vi gjeldende brukers forretningsenhet.                                                                                         |
+| `consumerID`        | integer | Forbruksenheten der backupnoden skal plasseres. Vi sender ID-en til forbruksenheten vi nettopp opprettet.                                     |
+| `osType`            | integer | Her sender vi konstanten `osTypeID` som vi deklarerte lenger opp. Hos Safespring Backup har en Linux-server ID 3. En Windows-server har ID 2. |
+| `clientType`        | integer | ID-en til klienttypen vi registrerer; vi sender verdien av `nodeTypeID`, som for en filserver har ID 1.                                       |
+| `domain`            | integer | Domenet bestemmer retensjonsperioden. Vi bruker STANDARD-domenet med ID 1, som hos Safespring Backup beholder 180 dager med sikkerhetskopi.   |
+| `clientOptionSetID` | integer | Alternativsettet for backupklienten som skal brukes. Vi bruker alternativsettet DEDUP_AND_COMPRESS                                            |
+| `contact`           | integer | Kontakt vedrørende backupnoden. Typisk avdelingen som har ansvar for å administrere backupnoden.                                              |
 
 {{< distance >}}
 
 ## 7. Aktivere serveren
 
 Når vi har opprettet både en forbruksenhet (consumption-unit) og en backupnode på servernivå, må vi aktivere noden for å hente brukernavn og passord som skal gis videre til IBM Spectrum Protect Backup-Archive Client som vil kjøre på serveren og faktisk utføre sikkerhetskopiene. Dette gjøres med metoden `ActivateNode()`:
+
 ```go
 func (c *AuthenticatedClient) ActivateNode(bUnitID, consumerID int) (Node, error)
 ```
+
 Metoden `ActivateNode()` returnerer en `Node`-struktur som inneholder verdiene `Node.TsmName` og `Node.TsmPassword` som hentes når backup-noden aktiveres. Disse verdiene gjør at IBM Spectrum Protect Backup-Archive Client kan identifisere seg korrekt når den kobler til backup-serveren. Vi kaller metoden `ActivateNode()` med samme forretningsenhets-ID og konsument-ID som tidligere.
 
 {{< distance >}}
@@ -170,6 +186,7 @@ Metoden `ActivateNode()` returnerer en `Node`-struktur som inneholder verdiene `
 ## 8. Ferdig applikasjon
 
 La oss nå sette alt sammen og se på den komplette applikasjonen:
+
 ```go
 package main
 
@@ -243,6 +260,7 @@ func main() {
     fmt.Printf("%s\n%s\n", backupNode.TsmName, backupNode.TsmPassword)
 }
 ```
+
 Koden ovenfor vil resultere i en selvstendig binærfil på ~7Mb som er enkel å distribuere og kan kjøres fra et shell-skript som eksporterer de nødvendige miljøvariablene. Ved aktivering skrives brukernavnet og passordet som trengs av IBM Spectrum Protect Backup-Archive Client i eksempel­koden vår ut til stdout og kan brukes i det kjørende skriptet for å fullføre installasjonen.
 
 {{% note "Anbefaling" %}}

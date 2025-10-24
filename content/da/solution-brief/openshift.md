@@ -5,7 +5,6 @@ date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "Med OKD-community-installationsprogrammet kan du hurtigt få en OpenShift-klynge op at køre."
-background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakt os"
 sidebarlinkurl: "/contact"
 socialmedia: "safespring-compute.jpg"
@@ -19,8 +18,9 @@ toc: "Indholdsfortegnelse"
 language: "da"
 section: "Løsningsoversigt"
 aliases:
-- /solution-brief/openshift-en/
+  - /solution-brief/openshift-en/
 ---
+
 ![Safespring OpenShift-fordele](/img/safespring_key-points-openshift-3.svg)
 
 {{% ingress %}}

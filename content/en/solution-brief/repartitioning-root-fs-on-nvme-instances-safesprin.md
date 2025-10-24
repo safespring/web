@@ -13,7 +13,6 @@ socialmedia: ""
 devops: ""
 card: "safespring-harddrive.svg"
 sidebarimage: ""
-background: ""
 socialmediabild: ""
 form: ""
 toc: ""
@@ -21,7 +20,7 @@ language: "en"
 author: "Gabriel Paues"
 section: "Solution Brief"
 aliases:
-- /solution-brief/repartitioning-root-fs-on-nvme-instances-safesprin/
+  - /solution-brief/repartitioning-root-fs-on-nvme-instances-safesprin/
 ---
 
 {{< ingress >}}

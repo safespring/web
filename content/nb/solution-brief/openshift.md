@@ -4,7 +4,6 @@ date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["Norsk"]
 intro: "Med OKD-community-installer kan du raskt spinne opp et OpenShift-cluster."
-background: "safespring-compute.jpg"
 sidebarlinkname: "Kontakt oss"
 sidebarlinkurl: "/kontakt"
 socialmedia: "safespring-compute.jpg"
@@ -18,7 +17,7 @@ toc: "Innholdsfortegnelse"
 language: "nb"
 section: "Solution Brief"
 aliases:
-- /solution-brief/openshift-no/
+  - /solution-brief/openshift-no/
 ---
 
 ![Safespring OpenShift benefits](/img/safespring_key-points-openshift-2.svg)

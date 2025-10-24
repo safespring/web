@@ -17,7 +17,7 @@ sidebarlinkurl: "#contact"
 sidebarlinkname2: "Pris for Storage"
 sidebarlinkurl2: "/pris/#safespring-storage-s3"
 section: "Public cloud"
-socialmedia: "/safespring-start.jpg"
+socialmedia: "safespring-storage.jpg"
 megamenu: "yes"
 aliases:
   - /no/storage/

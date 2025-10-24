@@ -11,15 +11,15 @@ sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-kubernetes.svg"
-background: "safespring-kubernetes.png"
 sidebarimage: ""
 background: "safespring-kubernetes-background.svg"
 socialmediabild: "safespring_social_21.gif"
 language: "da"
 section: "Løsningsoversigt"
 aliases:
-- /solution-brief/compliant-kubernetes/
+  - /solution-brief/compliant-kubernetes/
 ---
+
 {{% ingress %}}
 Organisationer på tværs af alle brancher tager containere i brug for at opnå større agilitet, højere udviklerproduktivitet samt øget tilgængelighed og ydeevne.
 {{% /ingress %}}

@@ -14,10 +14,9 @@ sidebarlinkicon: ""
 sidebarlinkurl: ""
 card: ""
 eventbild: ""
-socialmediabild: ""
 toc: "Innehåll"
 aliases:
-- /whitepaper/eu-us-dpf/
+  - /whitepaper/eu-us-dpf/
 ---
 
 {{< ingress >}}

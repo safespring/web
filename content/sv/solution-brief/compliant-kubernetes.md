@@ -11,15 +11,15 @@ sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-kubernetes.svg"
-background: "safespring-kubernetes.png"
 sidebarimage: ""
 background: "safespring-kubernetes-background.svg"
 socialmediabild: "safespring_social_21.gif"
 language: "sv"
 section: "Lösningsöversikt"
 aliases:
-- /solution-brief/compliant-kubernetes/
+  - /solution-brief/compliant-kubernetes/
 ---
+
 {{% ingress %}}
 Organisationer i alla branscher tar i bruk containrar för ökad agilitet, utvecklarproduktivitet samt högre tillgänglighet och prestanda.
 {{% /ingress %}}

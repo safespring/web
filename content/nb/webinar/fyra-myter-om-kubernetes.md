@@ -18,7 +18,6 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: ""
 chaptersTitle: "I dette avsnittet"
 chapters:
-chapters:
   - title: "Myt 1"
     time: 30
     timeFormatted: "0:36"
@@ -32,7 +31,7 @@ chapters:
     time: 788
     timeFormatted: "13:14"
 aliases:
-- /webinar/fyra-myter-om-kubernetes/
+  - /webinar/fyra-myter-om-kubernetes/
 ---
 
 ## Innsikt og ekspertanalyse i skytjenestenes verden

@@ -14,7 +14,6 @@ socialmedia: ""
 devops: ""
 card: "safespring-harddrive.svg"
 sidebarimage: ""
-background: ""
 socialmediabild: ""
 form: ""
 toc: ""
@@ -22,8 +21,9 @@ language: "sv"
 author: "Gabriel Paues"
 section: "Lösningsöversikt"
 aliases:
-- /solution-brief/repartitioning-root-fs-on-nvme-instances-safesprin/
+  - /solution-brief/repartitioning-root-fs-on-nvme-instances-safesprin/
 ---
+
 {{< ingress >}}
 Standardrotfilsystemet på en NVMe-instans i l2-serien på Safesprings plattform är ext4, men i vissa fall kan du behöva skapa ytterligare partitioner eller använda ett annat filsystem.
 {{< /ingress >}}

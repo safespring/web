@@ -10,14 +10,13 @@ sidebarlinkurl: ""
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-kubernetes.svg"
-background: "safespring-kubernetes.png"
 sidebarimage: ""
 background: "safespring-kubernetes-background.svg"
 socialmediabild: "safespring_social_21.gif"
 language: "en"
 section: "Solution Brief"
 aliases:
-- /solution-brief/compliant-kubernetes/
+  - /solution-brief/compliant-kubernetes/
 ---
 
 {{% ingress %}}

@@ -8,7 +8,7 @@ tags: ["Svenska"]
 card: "/img/event/cards/safespring_card_47.webp"
 eventbild: "/img/event/cards/safespring_card_47.webp"
 socialmediabild: ""
-intro: 'Utforska de vanligaste myterna kring GDPR och molntjänster med insikter från Gabriel Paues på Safespring och Lars Larsson på Elastisys'
+intro: "Utforska de vanligaste myterna kring GDPR och molntjänster med insikter från Gabriel Paues på Safespring och Lars Larsson på Elastisys"
 sidebarlinkurl2: "/demo"
 sidebarlinkname2: "Boka demo"
 nosidebar: "none"
@@ -16,7 +16,6 @@ sidebarimage: ""
 videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-elastisys-4-myter-x-4-minuter/master.m3u8"
 thumbnail: ""
 chaptersTitle: "I detta avsnitt"
-chapters:
 chapters:
   - title: "Myt 1"
     time: 30
@@ -31,7 +30,7 @@ chapters:
     time: 788
     timeFormatted: "13:14"
 aliases:
-- /webinar/fyra-myter-om-kubernetes/
+  - /webinar/fyra-myter-om-kubernetes/
 ---
 
 ## Insikter och expertanalys i molntjänsternas värld

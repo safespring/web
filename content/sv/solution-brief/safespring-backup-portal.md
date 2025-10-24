@@ -5,7 +5,6 @@ date: 2023-01-12T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "Safespring har utvecklat en användarportal och en API-brygga i samband med lanseringen av vår tjänst Safespring Backup."
-background: "safespring-compute.jpg"
 sidebarlinkname: "Till tjänsten"
 sidebarlinkurl: "/services/backup"
 sidebarlinkname2: "Kom igång"
@@ -22,8 +21,9 @@ language: "sv"
 author: "Gabriel Paues"
 section: "Lösningsöversikt"
 aliases:
-- /solution-brief/safespring-backup-portal-en/
+  - /solution-brief/safespring-backup-portal-en/
 ---
+
 ## Introduktion
 
 {{< ingress >}}

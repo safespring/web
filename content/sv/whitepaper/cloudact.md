@@ -14,11 +14,10 @@ sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "#download"
 card: "safespring_card_26.jpg"
 eventbild: ""
-socialmediabild: "safespring_social_26.jpg"
 aliases:
-    - /whitepapers/cloudact
-    - /cloudact
-    - /whitepaper/cloudact/
+  - /whitepapers/cloudact
+  - /cloudact
+  - /whitepaper/cloudact/
 toc: "Innehåll"
 ---
 

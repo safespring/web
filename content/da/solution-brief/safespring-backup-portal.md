@@ -5,7 +5,6 @@ date: 2023-01-12T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "Safespring har i forbindelse med lanceringen af vores Safespring Backup-tjeneste udviklet en brugerportal og en API-bro."
-background: "safespring-compute.jpg"
 sidebarlinkname: "Til tjenesten"
 sidebarlinkurl: "/services/backup"
 sidebarlinkname2: "Kom i gang"
@@ -22,8 +21,9 @@ language: "da"
 author: "Gabriel Paues"
 section: "Løsningsoversigt"
 aliases:
-- /solution-brief/safespring-backup-portal-en/
+  - /solution-brief/safespring-backup-portal-en/
 ---
+
 ## Introduktion
 
 {{< ingress >}}

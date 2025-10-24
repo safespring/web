@@ -18,11 +18,9 @@ sidebarlinkname2: "Price for Storage"
 sidebarlinkurl2: "/price/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public Cloud"
-documentation: "Storage"
-socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
-- /en/services/storage/
+  - /en/services/storage/
 ---
 
 {{< icon-block-container >}}
@@ -79,13 +77,13 @@ Meet regulatory compliance requirements by securely storing and archiving data w
 ## Get started with our configuration guides
 
 {{< icon-block-small-container >}}
-    {{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/howto/configs/s3fs/" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/howto/configs/cloudberry/" color="#417DA5">}}
-    {{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/howto/configs/cyberduck/" color="#3C9BCD">}}
-    {{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/howto/configs/duck-cli/" color="#3C9BCD">}}
-    {{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/howto/configs/minio-client/" color="#FA690F">}}
-    {{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/howto/configs/aws-cli/" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/howto/configs/nextcloud-s3/" color="#32cd32">}}
+{{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/howto/configs/s3fs/" color="#32cd32">}}
+{{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/howto/configs/cloudberry/" color="#417DA5">}}
+{{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/howto/configs/cyberduck/" color="#3C9BCD">}}
+{{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/howto/configs/duck-cli/" color="#3C9BCD">}}
+{{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/howto/configs/minio-client/" color="#FA690F">}}
+{{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/howto/configs/aws-cli/" color="#32cd32">}}
+{{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/howto/configs/nextcloud-s3/" color="#32cd32">}}
 {{< /icon-block-small-container >}}
 
 ## Frequently Asked Questions

@@ -4,7 +4,6 @@ date: 2023-01-12T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "Safespring has developed a user portal and API bridge when launching our Safespring Backup service"
-background: "safespring-compute.jpg"
 sidebarlinkname: "To the service"
 sidebarlinkurl: "/services/backup"
 sidebarlinkname2: "Get started"
@@ -21,7 +20,7 @@ language: "en"
 author: "Gabriel Paues"
 section: "Solution Brief"
 aliases:
-- /solution-brief/safespring-backup-portal-en/
+  - /solution-brief/safespring-backup-portal-en/
 ---
 
 ## Introduction

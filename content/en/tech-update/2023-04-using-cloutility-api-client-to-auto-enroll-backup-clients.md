@@ -12,14 +12,13 @@ socialmediabild: ""
 section: "Tech update"
 author: "Daniel de Oquiñena"
 language: "en"
-toc: ""
 sidebarlinkname: "Cloutility-api-client Repository"
 sidebarlinkurl: "https://github.com/safespring-community/cloutility-api-client"
 sidebarlinkname2: "Complete code example"
 sidebarlinkurl2: "https://github.com/safespring-community/cloutility-api-client/tree/main/examples/enroll"
 toc: "In this guide"
 aliases:
-- /blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/
+  - /blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/
 ---
 
 {{< ingress >}}
