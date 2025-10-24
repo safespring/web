@@ -664,7 +664,7 @@ Skapar ett horisontellt kort med en bakgrundsbild, rubrik, text (eller inre inne
 
 ### Exempel
 ```
-{{< custom-card image="/img/card.jpg" cardtitle="Vår tjänst" text="Läs mer om vår tjänst." link="https://example.com" linktext="Läs mer" >}}
+{{< custom-card image="/img/card.jpg" cardtitle="Vår tjänst" text="Läs mer om vår tjänst." link="https://example.com" linktext="Läs mer" />}}
 ```
 
 ### Renderat resultat
