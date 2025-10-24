@@ -16,9 +16,8 @@ sidebarlinkurl: "/no/demo"
 sidebarlinkname: "demo av Safesprings skyplattform"
 sidebar: "x"
 sidebarimage: ""
+author: "Jarle Bjørgeengen"
 ---
-
-{{< author-jarle >}}
 
 {{< ingress>}}
 Fra gjør-det-selv til as-a-service i IT-undervisningen; OsloMET deler erfaringer med overgangen fra hjemmlaget automatisering av VM-administrasjon  til "Safespring Compute (managed Openstack)". 
