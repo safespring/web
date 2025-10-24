@@ -9,12 +9,11 @@ intro: "Medtech, EdTech och andra moderna SaaS-bolag som söker säker, flexibel
 background: "safespring-kubernetes-background.svg"
 logobannersaas: "yes"
 banner: "blue-hover-webinar"
-cardtitle: "SaaS-bolag"
 cardicon: "fa-solid fa-code"
 cardcolor: "#417DA5"
 cardintro: "Bygg och skala dina SaaS-lösningar på en säker och flexibel infrastruktur med stöd för moderna DevOps-principer."
 aliases:
-- /branscher/applikationsutvecklare/
+  - /branscher/applikationsutvecklare/
 slug: "applikationsutvecklare"
 ---
 

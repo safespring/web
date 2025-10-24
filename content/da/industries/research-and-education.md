@@ -1,6 +1,6 @@
 ---
 title: "Safesprings cloud-tjenester til forskning og uddannelse"
-cardtitle: "Safespring for Reserach and Education"
+cardtitle: "Safespring til forskning og uddannelse"
 card: "safespring_card_11.svg"
 date: 2025-01-27
 draft: false
@@ -12,13 +12,12 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "da"
-cardtitle: "Academic Sector"
 cardicon: "fa-solid fa-graduation-cap"
 cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
 TOC: "På denne side"
 aliases:
-- /dk/geant/ocre-2024/
+  - /dk/geant/ocre-2024/
 slug: "forskning-og-uddannelse"
 ---
 

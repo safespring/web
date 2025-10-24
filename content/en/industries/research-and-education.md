@@ -1,6 +1,6 @@
 ---
 title: "Safespring Cloud Platform for Research and Education"
-cardtitle: "Safespring for Reserach and Education"
+cardtitle: "Safespring for Research and Education"
 card: "safespring_card_11.svg"
 date: 2023-04-27
 draft: false
@@ -12,16 +12,15 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "en"
-cardtitle: "Academic Sector"
 cardicon: "fa-solid fa-graduation-cap"
 cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
 TOC: "On this page"
 aliases:
-    - /OCRE
-    - /ocre
-    - /en/ocre-2024
-    - /en/ocre/
+  - /OCRE
+  - /ocre
+  - /en/ocre-2024
+  - /en/ocre/
 ---
 
 {{< ingress >}}

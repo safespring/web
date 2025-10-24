@@ -1,7 +1,7 @@
 ---
 language: "sv"
 title: "Safesprings molntjänster för forskning och utbildning"
-cardtitle: "Safespring for Reserach and Education"
+cardtitle: "Safespring för forskning och utbildning"
 card: "safespring_card_11.svg"
 date: 2025-01-27
 draft: false
@@ -12,14 +12,13 @@ toplogo: "ocre-safespring-service-providor-2024.svg"
 showthedate: false
 banner: "blue-hover-tech"
 section: ""
-cardtitle: "Academic Sector"
 cardicon: "fa-solid fa-graduation-cap"
 cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
 TOC: "På den här sidan"
 aliases:
-    - /branscher/ocre-2024/
-    - /branscher/utbildning-forskning/
+  - /branscher/ocre-2024/
+  - /branscher/utbildning-forskning/
 slug: "utbildning-och-forskning"
 ---
 

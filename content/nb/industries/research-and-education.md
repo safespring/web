@@ -1,6 +1,6 @@
 ---
 title: "Safesprings skytjenester for forskning og utdanning"
-cardtitle: "Safespring for Reserach and Education"
+cardtitle: "Safespring for forskning og utdanning"
 card: "safespring_card_11.svg"
 date: 2025-01-27
 draft: false
@@ -12,15 +12,14 @@ showthedate: false
 banner: "blue-hover-tech"
 section: ""
 language: "nb"
-cardtitle: "Academic Sector"
 cardicon: "fa-solid fa-graduation-cap"
 cardcolor: "#417DA5"
 cardintro: "With direct connection to research networks and OCRE, you can get started quickly."
 TOC: "På denne siden"
 aliases:
-   - /no/bransjer/ocre-2024
-   - /no/bransjer/Utdanning-og-forskning/
-   - /no/bransjer/utdanning-og-forskning/
+  - /no/bransjer/ocre-2024
+  - /no/bransjer/Utdanning-og-forskning/
+  - /no/bransjer/utdanning-og-forskning/
 slug: "utdanning-og-forskning"
 ---
 

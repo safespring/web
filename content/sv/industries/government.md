@@ -8,13 +8,12 @@ draft: false
 intro: "Safespring tillhandahåller säkra och hållbara molntjänster utan inlåsning"
 background: "safespring-government-background.svg"
 aliases:
-    - /myndighet/
-    - /branscher/myndigheter/
+  - /myndighet/
+  - /branscher/myndigheter/
 slug: "myndigheter"
 sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
 sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"
-cardtitle: "Myndigheter"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
 cardintro: ""

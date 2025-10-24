@@ -10,14 +10,13 @@ background: "safespring-government-background.svg"
 sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
 sidebarlinkname: "Se fireside-samtalen"
 banner: "blue-hover-blogg"
-cardtitle: "Offentlige myndigheder"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
 cardintro: ""
 ai: true
 TOC: "På denne side"
-
 ---
+
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-balance-scale" text="Juridisk sikkerhed" link="#legal-security" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-leaf" text="Bæredygtighed" link="#sustainability" color="#32cd32">}}

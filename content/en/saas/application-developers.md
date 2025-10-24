@@ -9,7 +9,6 @@ intro: "Medtech, EdTech, and other modern SaaS companies seeking secure, flexibl
 background: "safespring-kubernetes-background.svg"
 logobannersaas: "yes"
 banner: "blue-hover-webinar"
-cardtitle: "SaaS Companies"
 cardicon: "fa-solid fa-code"
 cardcolor: "#417DA5"
 cardintro: "Build and scale your SaaS solutions on a secure and flexible infrastructure with support for modern DevOps principles."

@@ -10,13 +10,11 @@ background: "safespring-government-background.svg"
 sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
 sidebarlinkname: "Watch fireside chat"
 banner: "blue-hover-blogg"
-cardtitle: "Government Agencies"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
 cardintro: ""
 ai: true
 TOC: "On this page"
-
 ---
 
 {{< icon-block-container >}}
