@@ -10,15 +10,15 @@ showthedate: true
 card: "safespring_card_51.webp"
 eventbild: ""
 socialmediabild: ""
-author: ""
 language: "da"
 fullwidth: ""
 nosidebar: ""
 author: "Fredric Wallsten"
 author_image: "glad"
 aliases:
-- /blogg/2023/2023-12-next-year/
+  - /blogg/2023/2023-12-next-year/
 ---
+
 {{< ingress >}}
 Når 2023 nu går på hæld, vil vi hos Safespring benytte lejligheden til at se tilbage på årets fremskridt og se frem mod, hvad 2024 kan bringe.
 {{< /ingress >}}

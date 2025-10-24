@@ -9,14 +9,13 @@ showthedate: true
 card: "safespring_card_51.webp"
 eventbild: ""
 socialmediabild: ""
-author: ""
 language: "sv"
 fullwidth: ""
 nosidebar: ""
 author: "Fredric Wallsten"
 author_image: "happy"
 aliases:
-- /blogg/2023/2023-12-next-year/
+  - /blogg/2023/2023-12-next-year/
 ---
 
 {{< ingress >}}

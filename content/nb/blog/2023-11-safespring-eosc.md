@@ -10,14 +10,13 @@ showthedate: true
 card: "safespring_eosc.svg"
 eventbild: ""
 socialmediabild: ""
-author: ""
 language: "nb"
 fullwidth: ""
 nosidebar: ""
 author: "Fredric Wallsten"
 author_image: "happy"
 aliases:
-- /blogg/2023/2023-11-safespring-eosc/
+  - /blogg/2023/2023-11-safespring-eosc/
 ---
 
 Safespring, som underleverandør til Poznań Supercomputing and Networking Center (PSNC), er stolte av å kunngjøre vår rolle i vinnerteamet for anskaffelsen av European Open Science Cloud (EOSC), et initiativ som har som mål å forbedre og legge til rette for vitenskapelig forskningssamarbeid i Europa. Kontrakten har en estimert verdi på ca. 32 millioner euro over 3 år.
