@@ -304,14 +304,14 @@ button:focus-visible {
 
 /* —— fixed-height stage —— */
 #tabsBox .stage {
-  position: relative;
-  padding: 0px;
+  height: auto !important;
+  min-height: 0 !important;
+  display: block; /* avoid residual fixed height on some mobile browsers */
 }
 
 .tab-panel {
-  position: absolute;
+  position: relative;
   width: 100%;
-  overflow: auto;
   border-radius: 0;
   padding: 30px 62px 30px 62px;
   margin: 0;
@@ -320,15 +320,16 @@ button:focus-visible {
   font-size: clamp(15px, 1.6vw, 17px);
   opacity: 0;
   transform: translateY(4px);
-  pointer-events: none;
+  /* pointer-events: none;       removed — we hide with display instead */
   transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
   will-change: opacity, transform;
   background: transparent;
+  display: none;                 /* hide by default so only the active panel shows */
 }
 .tab-panel.is-active {
+  display: block;                /* show active panel so container height adapts */
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto;
 }
 .tab-panel h3 {
   margin: 0 0 8px;
@@ -788,19 +789,9 @@ h3{
   </div>
 </section>
 
-
 <div style="margin-top:20%;"></div>
 
-
 {{ partial "container-scroll-story.html" . }}
-
-
-
-
-
-
-
-
 
 <div id="price" style="padding-top: 0px;"></div>
 
@@ -1451,5 +1442,45 @@ select {
     }
   }
 </script> -->
+<script>
+(function(){
+  const box = document.getElementById('tabsBox');
+  if (!box) return;
+
+  const stage  = box.querySelector('.stage');
+  const tabs   = Array.from(box.querySelectorAll('.tab'));
+  const panels = Array.from(box.querySelectorAll('.tab-panel'));
+
+  function activate(idx){
+    tabs.forEach((t,i) => {
+      const on = i === idx;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+    });
+
+    panels.forEach((p,i) => {
+      const on = i === idx;
+      p.classList.toggle('is-active', on);
+      p.style.display = on ? 'block' : 'none';
+    });
+
+    /* Clear any fixed height a previous script/CSS might have left behind */
+    stage.style.height = 'auto';
+    stage.style.minHeight = '0px';
+  }
+
+  tabs.forEach((t,i) => {
+    t.addEventListener('click', (e) => { e.preventDefault(); activate(i); });
+    t.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); activate((i + 1) % tabs.length); tabs[(i + 1) % tabs.length].focus(); }
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); activate((i - 1 + tabs.length) % tabs.length); tabs[(i - 1 + tabs.length) % tabs.length].focus(); }
+    });
+  });
+
+  const initial = tabs.findIndex(t => t.classList.contains('is-active'));
+  activate(initial >= 0 ? initial : 0);
+})();
+</script>
 
 {{ partial "footer.html" . }}
