@@ -194,6 +194,77 @@ h3 {
 }
 
 /* END - Scroll box */
+/* ---------- Mobile optimizations (<=768px) ---------- */
+@media (max-width: 768px) {
+  .scrolly {
+    padding-top: 8vh;
+    min-height: auto;
+  }
+
+  .locked-section {
+    top: 12px;                 /* keep sticky near top */
+    transform: none;           /* avoid vertical centering which clips content */
+  }
+
+  .capsule {
+    grid-template-columns: 1fr; /* stack image over text */
+    aspect-ratio: auto;         /* let content decide height */
+    border-radius: 28px;
+    gap: clamp(10px, 3vw, 14px);
+    padding: clamp(12px, 4vw, 18px);
+  }
+
+  .nav {
+    background: none;
+    flex-direction: column;
+  }
+
+  .figure {
+    order: 1;
+  }
+  .figure img {
+    width: 100%;
+  }
+
+  .right {
+    order: 2;
+    padding-right: 0;
+  }
+
+  /* Put callouts into normal flow on mobile so height adapts per step */
+  .stack {
+    min-height: 0;
+  }
+  .callout {
+    position: static;
+    opacity: 1;
+    transform: none;
+    display: none;             /* only show the active one */
+  }
+  .callout.active {
+    display: block;
+  }
+
+  /* Hide decorative arrows on mobile */
+  .arrow {
+    display: none !important;
+  }
+
+  /* Make the sticky nav compact */
+  .nav a {
+    padding: 12px 20px;
+    font-size: 14px;
+    background-color: #FFFFFF90;
+  }
+
+  /* Give stages more height so IO triggers reliably while capsule is sticky */
+  .scrolly .stage {
+    height: 60vh;
+  }
+  .stage[data-target="1"] {
+    height: 40vh;
+  }
+}
 </style>
   <div class="scrolly" id="scene">
     <!-- Sticky kapsel (ALLT inuti) -->
@@ -301,6 +372,7 @@ h3 {
       links[step]?.classList.add('active');
     }
 
+    const mobile = window.matchMedia('(max-width: 768px)').matches;
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
         if(entry.isIntersecting){
@@ -309,7 +381,10 @@ h3 {
           highlight(step);    
         }
       });
-    },{threshold:0.55});
+    },{
+      threshold: mobile ? 0.30 : 0.55,
+      rootMargin: mobile ? '-20% 0px -60% 0px' : '0px'
+    });
 
     stages.forEach(s => io.observe(s));
   activate(1); // initialt
