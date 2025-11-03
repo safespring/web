@@ -3,7 +3,7 @@ title: "Zitadel OIDC Configuration for Talos Kubernetes API Server"
 date: 2025-10-03
 intro: "The integration uses Zitadel as the identity provider, enabling secure, centralized authentication and authorization."
 draft: false
-tags: ["English"]
+tags: "container"
 showthedate: true
 card: ""
 sidebarimage: ""

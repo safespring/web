@@ -1,0 +1,36 @@
+{{ $posts := slice }}
+{{ range .Site.RegularPages }}
+{{ if and (isset .Params "tags") (in .Params.tags "container") }}
+{{ $posts = $posts | append . }}
+{{ end }}
+{{ end }}
+<div class="flexcontainer">
+    {{ range $posts }}
+    <div class="content-container">
+        <a href="{{ .RelPermalink }}">
+            <div
+                class='fill-available-space img-250 pointer bg-blue-white-fade blue-hover-tech tech-card-flex'>
+                <img class="lazyload tech-card-image" loading="lazy" src="/img/blogg/cards/safespring-tech-update.svg"
+                    alt="{{ .Title }}">
+                <div class="tech-update-card-content">
+                    <div class="blogg-card-tagg-container-tech">
+                        <img class="blogg-card-flag" alt="Safespring language flag"
+                            src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
+                        <span
+                            class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">Tech
+                            update</span>
+                    </div>
+                    <div>
+                        <h3 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h3>
+                        <p class="mb-1">{{ .Params.intro }}</p>
+                    </div>
+                    <div>
+                        <span class="text-button">{{ if (eq .Params.language "En") }}Read article{{ else if (eq
+                            .Params.language "No") }}Les mer{{ else }}Läs artikeln{{ end }}</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    {{ end }}
+</div>
