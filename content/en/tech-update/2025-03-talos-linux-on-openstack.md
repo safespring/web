@@ -3,7 +3,7 @@ title: "Using Talos Linux and Kubernetes bootstrap on OpenStack"
 date: 2025-03-03
 intro: "We consider that automation, security and common IaC tools to be the holy trinity for a robust kubernetes platform offering. "
 draft: false
-tags: ["English"]
+tags: "container"
 showthedate: true
 card: ""
 sidebarimage: ""

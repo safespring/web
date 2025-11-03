@@ -3,7 +3,7 @@ title: "Validating Talos Linux Install and Maintenance Operations"
 date: 2025-04-09
 intro: "An accessible approach to operations on a Kubernetes platform, represents a compelling  option for PaaS operators."
 draft: false
-tags: ["English"]
+tags: "container"
 showthedate: true
 card: ""
 sidebarimage: ""
