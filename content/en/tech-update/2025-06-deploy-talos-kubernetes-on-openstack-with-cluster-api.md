@@ -3,7 +3,7 @@ title: "Deploy Talos Kubernetes on OpenStack with Cluster API"
 date: 2025-06-12
 intro: "Making Use of Cluster API to Create Talos-based Kubernetes Clusters On Openstack."
 draft: false
-tags: "container"
+tags: ["container"]
 showthedate: true
 card: ""
 sidebarimage: ""
