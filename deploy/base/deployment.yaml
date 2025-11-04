@@ -21,7 +21,15 @@ spec:
       initContainers:
         - name: fetch-src
           image: alpine/git:latest
-          args: ["clone","--depth=1","--branch","main","https://github.com/marcusboberg/web.git","/src"]
+          args: ["clone","--depth=1","--branch","main","https://github.com/safespring/web.git","/src"]
+              - git config --global url."https://oauth2:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/" &&
+                git clone --depth=1 --branch main https://github.com/safespring/web.git /src
+            env:
+              - name: GITHUB_TOKEN
+                valueFrom:
+                  secretKeyRef:
+                    name: github-pat
+                    key: token
           volumeMounts:
             - { name: src, mountPath: /src }
         - name: build-hugo
