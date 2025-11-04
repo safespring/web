@@ -1,5 +1,5 @@
 ---
-title: "Safespring Onboarding Instructions for RISE"
+title: "Safespring Onboarding Instructions for SciLifeLab"
 date: 2024-09-23T13:05:26+02:00
 draft: false
 intro: "Follow these steps to set up and manage new projects in Safespring. Using the correct project naming and credential handling ensures correct quota and access."
@@ -200,7 +200,7 @@ aliases:
     <h2>Account information</h2>
     <p></p>
     <div class="form-field">
-        <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="RISE">
+        <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="SciLifeLab">
         <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organization</label>
     </div>
     <div class="form-field">
@@ -208,28 +208,18 @@ aliases:
             <optgroup label="Public cloud">
                 <option value="STO 1">STO 1</option>
                 <option value="STO 2">STO 2</option>
-                <option value="OSL 1">OSL 1</option>
             </optgroup>
         </select>
         <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Choose your site</label><i class="fas fa-angle-down selection-icon"></i>
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name (Eg. project1.rise.se)</label>
+        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name (Eg. project.scilifelab.se)</label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>
-            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Quota</label>
+            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Budget</label>
         </div>
-{{% accordion title="How to name a project" %}}
-RISE should name their projects with the following nomenclature:
-
-`project01.rise.se`  
-`project02.rise.se`  
-`project03.rise.se`  
-
-This way, we can maintain a good overview of which costs that should go to which project in the billing files.
-{{% /accordion %}}
 <h2>Acceptence</h2>
     <p>By submitting this form, you agree to our terms and policies. We take the privacy of our customers seriously and will only use your information for the purpose of fulfilling your order. If you have any questions or concerns, please do not hesitate to contact us. Thank you for choosing our services!</p>
     <div class="inputGroup">
