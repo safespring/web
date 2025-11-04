@@ -23,6 +23,7 @@ spec:
       initContainers:
         - name: fetch-src
           image: alpine/git:latest
+          imagePullPolicy: Always
           command: ["/bin/sh","-ceu"]
           args:
             - |
@@ -44,7 +45,8 @@ spec:
             - name: src
               mountPath: /src
         - name: build-hugo
-          image: klakegg/hugo:ext-alpine
+          image: ghcr.io/gohugoio/hugo:latest
+          imagePullPolicy: Always
           workingDir: /src
           command: ["hugo","--minify","-d","/site"]
           volumeMounts:
