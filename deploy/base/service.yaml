@@ -2,12 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: web
+  namespace: web-hugo
 spec:
   selector:
     app: web
   ports:
   - name: http
     port: 80
-    targetPort: 8080
+    targetPort: 80
     protocol: TCP
   type: ClusterIP
