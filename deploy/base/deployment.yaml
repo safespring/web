@@ -10,6 +10,9 @@ spec:
   selector:
     matchLabels:
       app: web
+  strategy:
+    type: Recreate
+  revisionHistoryLimit: 2
   template:
     metadata:
       labels:
