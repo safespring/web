@@ -31,6 +31,8 @@ spec:
               : "${GIT_BRANCH:=production}"
               git config --global url."https://oauth2:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
               git clone --depth=1 --branch "${GIT_BRANCH}" "${GIT_REPO}" /src
+              rm -f /src/.hugo_build.lock
+              chmod -R a+rwX /src
           env:
             - name: GITHUB_TOKEN
               valueFrom:
@@ -47,6 +49,9 @@ spec:
         - name: build-hugo
           image: ghcr.io/gohugoio/hugo:latest
           imagePullPolicy: Always
+          securityContext:
+            runAsUser: 0
+            runAsGroup: 0
           workingDir: /src
           command: ["hugo","--minify","-d","/site"]
           volumeMounts:
