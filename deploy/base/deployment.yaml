@@ -2,29 +2,42 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web
+  namespace: web-hugo
+labels:
+  app: web
 spec:
   replicas: 2
   selector:
-    matchLabels:
-      app: web
+    matchLabels: { app: web }
   template:
     metadata:
-      labels:
-        app: web
+      labels: { app: web }
     spec:
+      volumes:
+        - name: src
+          emptyDir: {}
+        - name: site
+          emptyDir: {}
+      initContainers:
+        - name: fetch-src
+          image: alpine/git:latest
+          args: ["clone","--depth=1","--branch","main","https://github.com/marcusboberg/web.git","/src"]
+          volumeMounts:
+            - { name: src, mountPath: /src }
+        - name: build-hugo
+          image: klakegg/hugo:ext-alpine
+          workingDir: /src
+          command: ["hugo","--minify","-d","/site"]
+          volumeMounts:
+            - { name: src,  mountPath: /src }
+            - { name: site, mountPath: /site }
       containers:
-      - name: nginx
-        image: nginxdemos/nginx-hello:plain-text
-        ports:
-        - containerPort: 8080
-        readinessProbe:
-          httpGet: { path: /, port: 8080 }
-          initialDelaySeconds: 3
-          periodSeconds: 5
-        livenessProbe:
-          httpGet: { path: /, port: 8080 }
-          initialDelaySeconds: 10
-          periodSeconds: 10
-        resources:
-          requests: { cpu: 50m, memory: 64Mi }
-          limits:   { cpu: 200m, memory: 256Mi }
+        - name: nginx
+          image: nginx:stable-alpine
+          ports: [{ containerPort: 80 }]
+          volumeMounts:
+            - { name: site, mountPath: /usr/share/nginx/html, readOnly: true }
+          readinessProbe:
+            httpGet: { path: "/", port: 80 }
+            initialDelaySeconds: 5
+            periodSeconds: 10
