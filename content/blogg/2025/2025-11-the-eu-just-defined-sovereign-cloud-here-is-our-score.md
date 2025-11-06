@@ -1,7 +1,7 @@
 ---
 title: "The EU just defined Sovereign Cloud, here is our score"
 date: 2025-11-06
-intro: "The Cloud Sovereignty Framework is now the reference for European-grade cloud. It sets hard requirements on ownership, control, law, and infrastructure. Here is what it means and how Safespring measures up."
+intro: "The Cloud Sovereignty Framework is now the reference for grading European clouds. It sets hard requirements on ownership, control, law, and infrastructure. Here is what it means and how Safespring measures up."
 draft: false
 tags: ["English"]
 showthedate: true
