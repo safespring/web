@@ -5,7 +5,7 @@ intro: "The Cloud Sovereignty Framework is now the reference for European-grade 
 draft: false
 tags: ["English"]
 showthedate: true
-card: ""
+card: "safespring_card_55.png"
 eventbild: ""
 socialmedia: ""
 language: "En"
@@ -14,12 +14,12 @@ author: "Daniel Melin"
 ---
 
 {{% ingress %}}
-On 20 October 2025, the European Commission published a reference framework for assessing the sovereignty of cloud solutions: the Cloud Sovereignty Framework.
+On 20 October 2025, the European Commission published a reference for grading European clouds: the Cloud Sovereignty Framework.
 {{% /ingress %}}
 
 Inspired by initiatives from France[^1], Germany[^2], and European regulations[^3], as well as international practices in export controls, supply chain resilience, and security auditability, this framework[^4] offers a new approach to objectify a topic that has been hard to quantify and compare.
 
-This new framework echoes the white paper that the EuroStack industry initiative published just weeks prior, titled ”*A Proposed Framework for a 'Buy European' Regulation of Strategic Digital Procurement*[^5]".
+This new framework echoes the white paper that the EuroStack industry initiative published just weeks prior, titled ”*A Proposed Framework for a 'Buy European' Regulation of Strategic Digital Procurement*”[^5].
 
 ## Eight criteria to measure clouds with
 The framework defines eight cloud sovereignty objectives, each graded from 0 to 4 (the SEAL level – Sovereignty Effectiveness Assurance Level). The criteria cover all key dimensions of digital independence.
@@ -59,7 +59,7 @@ We own, manage and control our entire tech stack, from server hardware to Kubern
 5. **SOV-5** Supply *Chain Sovereignty score: 2*  
 Server and networking hardware is impossible to buy without Chinese, Korean and/or American components and firmware. Since that’s how the market is we are highly dependent on non-EU/EES hardware. The software we use is open source and therefore global. We are not dependent on any company our country for the software stack we use. The datacenters we use are owned and operated by companies and staff from EU/EES. 
 6. **SOV-6** *Technology Sovereignty score: 3*  
-We only use open source components and open API:s and protocols. Our entire stack can technically and legally be deployed at customer site where the customer can further develop the stack without Safespring. All components, architecture and dependencies are documented and open. We lack server hardware, CPU:s, GPU:s and switches from EU/EES vendors. 
+We only use open source components, open API:s and open protocols. Our entire stack can technically and legally be deployed at customer site where the customer can further develop the stack without Safespring. All components, architecture and dependencies are documented and open. We lack server hardware, CPU:s, GPU:s and switches from EU/EES vendors. 
 7. **SOV-7** *Security & Compliance Sovereignty score: 4*  
 We are compliant with all relevant Swedish and EU law like GDPR, NIS2 and OSL. We are certified according to FR2000 and very soon ISO 27001. All security operations are within EU/EES. We are fully transparent about bugs, security breaches and fixes with our customers. Our customers can audit our datacenters, operations and compliance measures. 
 8. **SOV-8** *Environmental Sustainability score: 4*  
