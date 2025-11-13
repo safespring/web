@@ -9,7 +9,6 @@ showthedate: true
 card: "safespring_eosc.svg"
 eventbild: ""
 socialmediabild: ""
-author: ""
 language: "Se"
 fullwidth: ""
 nosidebar: ""
