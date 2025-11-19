@@ -1,0 +1,58 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-nginx-conf
+  namespace: web-hugo
+data:
+  default.conf: |
+    # Svenska – 8081
+    server {
+      listen 8081;
+      server_name _;
+
+      root /usr/share/nginx/html/sv;
+      index index.html index.htm;
+
+      location / {
+        try_files $uri $uri/ =404;
+      }
+    }
+
+    # Engelska – 8082
+    server {
+      listen 8082;
+      server_name _;
+
+      root /usr/share/nginx/html/en;
+      index index.html index.htm;
+
+      location / {
+        try_files $uri $uri/ =404;
+      }
+    }
+
+    # Norska bokmål – 8083
+    server {
+      listen 8083;
+      server_name _;
+
+      root /usr/share/nginx/html/nb;
+      index index.html index.htm;
+
+      location / {
+        try_files $uri $uri/ =404;
+      }
+    }
+
+    # Danska – 8084
+    server {
+      listen 8084;
+      server_name _;
+
+      root /usr/share/nginx/html/da;
+      index index.html index.htm;
+
+      location / {
+        try_files $uri $uri/ =404;
+      }
+    }
