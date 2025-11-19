@@ -37,11 +37,6 @@ spec:
               rm -f /src/.hugo_build.lock
               chmod -R a+rwX /src
           env:
-            - name: GITHUB_TOKEN
-              valueFrom:
-                secretKeyRef:
-                  name: github-pat
-                  key: token
             - name: GIT_REPO
               value: https://github.com/safespring/web.git
             - name: GIT_BRANCH
