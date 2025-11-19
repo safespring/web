@@ -1,0 +1,177 @@
+{{- $id := printf "ai-disc-%d" (now.UnixNano) -}}
+{{- $translations := .Page.AllTranslations -}}
+{{- $original := index (where $translations ".Params.ai" "ne" true) 0 | default .Page -}}
+{{- $english := index (where $translations "Lang" "en") 0 | default .Page -}}
+{{- $originalLangName := $original.Language.LanguageName -}}
+{{- $href := $english.Permalink -}}
+
+<div class="ai-disclaimer-container" id="{{ $id }}">
+  <button
+    class="ai-disclaimer-header"
+    type="button"
+    aria-expanded="false"
+    aria-controls="{{ $id }}-panel"
+  >
+      <i class="fa-solid fa-language" aria-hidden="true"></i>
+      <p>{{ T "ai_disclaimer.title" }}</p>
+    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+  </button>
+
+  <div
+    class="ai-disclaimer-panel"
+    id="{{ $id }}-panel"
+    role="region"
+    aria-label="{{ T "ai_disclaimer.title" }}"
+  >
+    <p>{{ T "ai_disclaimer.intro" }}</p>
+    <div class="ai-disclaimer-cta">
+      <a href="{{ $english.Permalink }}"><strong>{{ T "ai_disclaimer.english" }}</strong></a>
+      <a href="{{ $original.Permalink }}"><strong>{{ $originalLangName }} ({{ T "ai_disclaimer.original" }})</strong></a>
+      <a href='mailto:web@safespring.com
+?subject={{ T "ai_disclaimer.mail_subject" }}{{ .Title }}
+&amp;body={{ T "ai_disclaimer.mail_body" (dict "Permalink" .Page.Permalink) }}'>
+        <small>{{ T "ai_disclaimer.feedback" }}</small>
+      </a>
+    </div>
+  </div>
+</div>
+<div style="margin: 40px;">.</div>
+
+<style>
+  .ai-disclaimer-container {
+    margin: 20px 0;
+    margin-left: -30px;
+    padding: 30px;
+    background-color: #fafefe;
+    border-radius: 40px;
+    max-width: 350px;
+    position: absolute;
+    transition: box-shadow 300ms ease-in;
+    width: 65vw;
+    border: solid 2px #fafefe
+  }
+
+  .ai-disclaimer-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    font: var(--mon-font);
+    margin: 0;
+    color: var(--main-color);
+  }
+
+  .ai-disclaimer-header p {
+    margin: 0 30px;
+    font-weight: 600;
+    color: var(--main-color);
+    line-height: 1;
+    text-wrap: balance;
+    text-transform: none;
+    font-size: 1rem;
+  }
+
+  .ai-disclaimer-header i {
+    font-size: 20px;
+    transition: transform 200ms ease-in;
+  }
+
+  .ai-disclaimer-headline {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Panel – stängd som default (utan hidden-attribut; styrs av CSS/klass) */
+  .ai-disclaimer-panel {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 600ms ease, opacity 200ms ease;
+  }
+
+  .ai-disclaimer-cta {
+  	display: flex;
+  	justify-content: space-between;
+  }
+
+  /* ÖPPEN via klass (mobil/klick) */
+  .ai-disclaimer-container.is-open .ai-disclaimer-panel {
+    max-height: 300px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .ai-disclaimer-container.is-open .ai-disclaimer-header .fa-caret-down {
+    transform: rotate(180deg);
+  }
+
+  /* ÖPPEN via hover/fokus (desktop/laptop) */
+  @media (hover:hover) and (pointer:fine) {
+    .ai-disclaimer-container:hover .ai-disclaimer-panel,
+    .ai-disclaimer-container:focus-within .ai-disclaimer-panel {
+      max-height: 300px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .ai-disclaimer-container:hover .fa-caret-down,
+    .ai-disclaimer-container:focus-within .fa-caret-down {
+      transform: rotate(180deg);
+    }
+    .ai-disclaimer-container:hover {
+    	box-shadow: #00365842 0 25px 50px -12px;    	
+    	transition: all 300ms ease-out;
+      border: solid 2px #195f8c0f;
+      background-color: var(--cloud-blue-color);
+    }
+  }
+</style>
+
+<script>
+(() => {
+  const root  = document.getElementById('{{ $id }}');
+  const btn   = root.querySelector('.ai-disclaimer-header');
+  const panel = root.querySelector('.ai-disclaimer-panel');
+
+  // Hjälpare: sätt aria-expanded baserat på öppet läge
+  const setExpanded = (expanded) => {
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  };
+
+  // 1) Desktop/laptop (hover + keyboard): uppdatera aria vid hover/fokus
+  const isFineHover = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  if (isFineHover) {
+    // hover
+    root.addEventListener('mouseenter', () => setExpanded(true));
+    root.addEventListener('mouseleave', () => {
+      // bara stäng om den inte är manuellt öppnad via mobil-klass
+      if (!root.classList.contains('is-open')) setExpanded(false);
+    });
+    // keyboard focus
+    btn.addEventListener('focus', () => setExpanded(true));
+    btn.addEventListener('blur', () => {
+      if (!root.classList.contains('is-open')) setExpanded(false);
+    });
+    // Klick på desktop ska inte toggla (önskat beteende: hover öppnar)
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      // gör inget – hover/focus sköter öppningen
+    });
+  } else {
+    // 2) Mobil/surfplatta (touch): toggla på klick
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const nowOpen = !root.classList.contains('is-open');
+      root.classList.toggle('is-open', nowOpen);
+      setExpanded(nowOpen);
+    });
+  }
+
+  // Init aria (stängt)
+  setExpanded(false);
+})();
+</script>

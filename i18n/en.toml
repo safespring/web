@@ -119,3 +119,21 @@ terms_accept = "I accept"
 terms = "the terms"
 download_price_list = "Download the price list"
 
+[ai_disclaimer]
+title = "Automatically translated"
+intro = "This text is automatically translated for your convenience. You can read the text in:"
+english = "English"
+original = "original"
+feedback = "Give feedback"
+mail_subject = "Translation feedback – "
+mail_body = """Hi Safespring team,
+
+I'd like to report an issue with the translation on this page:
+{{ .Permalink }}
+
+My comments:
+"""
+lang_sv = "Swedish"
+lang_en = "English"
+lang_no = "Norwegian"
+lang_da = "Danish"

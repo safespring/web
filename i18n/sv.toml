@@ -117,3 +117,22 @@ email_warning = "Använd gärna din jobbmail."
 terms_accept = "Jag accepterar"
 terms = "villkoren"
 download_price_list = "Hämta prislistan"
+
+[ai_disclaimer]
+title = "Automatiskt översatt"
+intro = "Texten är automatiskt översatt för din bekvämlighet, du kan läsa texten på:"
+english = "Engelska"
+original = "original"
+feedback = "Ge feedback"
+mail_subject = "Feedback på översättning – "
+mail_body = """Hej Safespring-team!
+
+Jag vill rapportera ett problem med översättningen på denna sida:
+{{ .Permalink }}
+
+Mina kommentarer:
+"""
+lang_sv = "Svenska"
+lang_en = "Engelska"
+lang_no = "Norska"
+lang_da = "Danska"

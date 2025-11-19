@@ -117,3 +117,22 @@ email_warning = "Bruk gjerne din jobbe-epost."
 terms_accept = "Jeg aksepterer"
 terms = "vilkårene"
 download_price_list = "Last ned prislisten"
+
+[ai_disclaimer]
+title = "Automatisk oversatt"
+intro = "Denne tekst er automatisk oversat for din bekvemmelighed. Du kan læse teksten på:"
+english = "Engelsk"
+original = "original"
+feedback = "Giv feedback"
+mail_subject = "Feedback på oversættelse – "
+mail_body = """Hej Safespring-team!
+
+Jeg vil gerne rapportere et problem med oversættelsen på denne side:
+{{ .Permalink }}
+
+Mine kommentarer:
+"""
+lang_sv = "Svensk"
+lang_en = "Engelsk"
+lang_no = "Norsk"
+lang_da = "Dansk"
