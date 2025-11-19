@@ -31,7 +31,7 @@ spec:
           args:
             - |
               : "${GIT_REPO:=https://github.com/safespring/web.git}"
-              : "${GIT_BRANCH:=production}"
+              : "${GIT_BRANCH:=kube-dev}"
               git clone --depth=1 --branch "${GIT_BRANCH}" "${GIT_REPO}" /src
               rm -f /src/.hugo_build.lock
               chmod -R a+rwX /src
@@ -39,7 +39,7 @@ spec:
             - name: GIT_REPO
               value: https://github.com/safespring/web.git
             - name: GIT_BRANCH
-              value: production
+              value: kube-dev
           volumeMounts:
             - name: src
               mountPath: /src
