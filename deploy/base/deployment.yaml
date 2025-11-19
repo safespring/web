@@ -32,7 +32,6 @@ spec:
             - |
               : "${GIT_REPO:=https://github.com/safespring/web.git}"
               : "${GIT_BRANCH:=production}"
-              git config --global url."https://oauth2:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
               git clone --depth=1 --branch "${GIT_BRANCH}" "${GIT_REPO}" /src
               rm -f /src/.hugo_build.lock
               chmod -R a+rwX /src
