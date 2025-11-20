@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hugo-web-beta
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/safespring/web.git
+    targetRevision: kube-dev
+    path: deploy/overlays/beta
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: web-hugo
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
