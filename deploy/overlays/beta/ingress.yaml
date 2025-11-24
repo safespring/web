@@ -20,6 +20,9 @@ spec:
     - hosts:
         - beta.safespring.dk
       secretName: tls-beta-safespring-dk
+    - hosts:
+        - beta.safespring.com
+      secretName: tls-beta-safespring-com
   rules:
     - host: beta.safespring.se
       http:
@@ -61,3 +64,13 @@ spec:
                 name: web
                 port:
                   number: 8084
+    - host: beta.safespring.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web
+                port:
+                  number: 8081
