@@ -11,7 +11,7 @@ spec:
     matchLabels:
       app: web
   strategy:
-    type: Recreate
+    type: RollingUpdate
   revisionHistoryLimit: 2
   template:
     metadata:
