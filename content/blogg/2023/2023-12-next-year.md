@@ -9,7 +9,6 @@ showthedate: true
 card: "safespring_card_51.webp"
 eventbild: ""
 socialmediabild: ""
-author: ""
 language: "Se"
 fullwidth: ""
 nosidebar: ""
