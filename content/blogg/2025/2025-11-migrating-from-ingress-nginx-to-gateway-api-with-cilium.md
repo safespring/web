@@ -14,6 +14,10 @@ sectiontext: "Tech Update"
 section: "Tech update"
 author: "Anders Johansson"
 TOC: "In this post"
+sidebarlinkurl: "/containers"
+sidebarlinkname: "Explore on-demand kubernetes"
+sidebarlinkurl2: "/containers#get-started"
+sidebarlinkname2: "Book demo"
 ---
 
 ## TL;DR
