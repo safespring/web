@@ -1,7 +1,7 @@
 ---
 title: "Ingress-Nginx Retires in March 2026: Here’s How to Move to Gateway API and  Cilium Gateway"
 date: 2025-11-27
-intro: "This article gives platform teams a concrete migration playbook: how to design a shared Cilium Gateway, handle certificates and cross-namespace access with Gateway API, and reduce annotation sprawl while tightening security and simplifying long-term ingress operations."
+intro: "This article gives platform teams a concrete migration playbook: how to design a shared Cilium Gateway, handle certificates and cross-namespace access with Gateway API."
 draft: false
 tags: ["container"]
 showthedate: true
