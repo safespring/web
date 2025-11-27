@@ -27,23 +27,23 @@
   {{/* Category filter buttons */}}
   <div class="tf-buttons-container">
     <button class="active" data-category="all">
-      All <span class="filter-number">({{ len $allContent }})</span>
+      {{ T "filter.all" }} <span class="filter-number">({{ len $allContent }})</span>
     </button>
     <button data-category="blog">
-      Blog <span class="filter-number">({{ $blogCount }})</span>
+      {{ T "filter.blog" }} <span class="filter-number">({{ $blogCount }})</span>
     </button>
     <button data-category="tech-update">
-      Tech Updates <span class="filter-number">({{ $techUpdateCount }})</span>
+      {{ T "filter.tech_updates" }} <span class="filter-number">({{ $techUpdateCount }})</span>
     </button>
     <button data-category="webinar">
-      Webinars <span class="filter-number">({{ $webinarCount }})</span>
+      {{ T "filter.webinars" }} <span class="filter-number">({{ $webinarCount }})</span>
     </button>
     <button data-category="solution-brief">
-      Solution Briefs
+      {{ T "filter.solution_briefs" }}
       <span class="filter-number">({{ $solutionBriefCount }})</span>
     </button>
     <button data-category="whitepaper">
-      Whitepapers <span class="filter-number">({{ $whitepaperCount }})</span>
+      {{ T "filter.whitepapers" }} <span class="filter-number">({{ $whitepaperCount }})</span>
     </button>
   </div>
   {{/* Language buttons */}}

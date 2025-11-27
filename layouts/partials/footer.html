@@ -4,7 +4,7 @@
       <a href="{{ relref . "/" }}"
         ><img
           src="/img/logos/safespring_logotype_blue_svg.svg"
-          alt="Safespring logotype"
+          alt="{{ T "footer.logo_alt" }}"
       /></a>
       <p>{{ i18n "menu.tagline" }}</p>
       <a class="button" href="{{ relref . "contact" }}"
@@ -158,25 +158,25 @@
       <a href="https://www.linkedin.com/company/safespring/"
         ><img
           src="/img/logos/social-media/safespring-linkedin.svg"
-          alt="Safespring Linkedin"
+          alt="{{ T "footer.social_linkedin_alt" }}"
       /></a>
       <a href="https://www.x.com/safespring/"
-        ><img src="/img/logos/social-media/safespring-x.svg" alt="Safespring X"
+        ><img src="/img/logos/social-media/safespring-x.svg" alt="{{ T "footer.social_x_alt" }}"
       /></a>
       <a href="https://github.com/safespring/"
         ><img
           src="/img/logos/social-media/safespring-github.svg"
-          alt="Safespring GitHub"
+          alt="{{ T "footer.social_github_alt" }}"
       /></a>
       <a href="https://www.youtube.com/@safespring8922/"
         ><img
           src="/img/logos/social-media/safespring-youtube.svg"
-          alt="Safespring YouTube"
+          alt="{{ T "footer.social_youtube_alt" }}"
       /></a>
       <a href="https://www.facebook.com/Safespring-147994442601302/"
         ><img
           src="/img/logos/social-media/safespring-facebook.svg"
-          alt="Safespring Facebook"
+          alt="{{ T "footer.social_facebook_alt" }}"
       /></a>
     </div>
     <div class="safespring-footer-language">
@@ -257,20 +257,20 @@
     document.querySelectorAll("pre").forEach((pre) => {
       const button = document.createElement("button");
       button.className = "copy-code-button";
-      button.innerHTML = "Copy code";
+      button.innerHTML = "{{ T "footer.copy_code" }}";
 
       button.addEventListener("click", () => {
         const code = pre.querySelector("code").textContent;
         navigator.clipboard
           .writeText(code)
           .then(() => {
-            button.innerHTML = "Copied!";
+            button.innerHTML = "{{ T "footer.copied" }}";
             setTimeout(() => {
-              button.innerHTML = "Copy code";
+              button.innerHTML = "{{ T "footer.copy_code" }}";
             }, 4000);
           })
           .catch(() => {
-            button.innerHTML = "Error";
+            button.innerHTML = "{{ T "footer.error" }}";
           });
 
         // Ta bort fokus från knappen efter 4 sekunder

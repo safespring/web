@@ -20,7 +20,7 @@
           <img
             class="badge"
             src="/img/safespring-gdpr-compliant-badge2025.svg"
-            alt="GDPR compliant badge"
+            alt="{{ T "landing.gdpr_badge_alt" }}"
           />
         </a>
       </div>
@@ -42,19 +42,19 @@
             src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-sv.vtt"
             kind="subtitles"
             srclang="sv"
-            label="Swedish"
+            label="{{ T "landing.video_label_sv" }}"
           />
           <track
             src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-en.vtt"
             kind="subtitles"
             srclang="en"
-            label="English"
+            label="{{ T "landing.video_label_en" }}"
           />
           <track
             src="/subtitles/scaleout-usecase/safespring_use-case_scaleout-no.vtt"
             kind="subtitles"
             srclang="no"
-            label="Norwegian"
+            label="{{ T "landing.video_label_no" }}"
           />
           {{ T "landing.scaleout_not_supported" }}
         </video>
@@ -62,6 +62,10 @@
           {{ T "landing.scaleout_play" }}
         </div>
         <script>
+          var i18n = {
+            play: "{{ T "landing.play" }}",
+            pause: "{{ T "landing.pause" }}"
+          };
           document.addEventListener("DOMContentLoaded", function () {
             var video = document.getElementById("myVideo");
             var videoSrc =
@@ -115,9 +119,9 @@
 
           function updateCursorText() {
             if (video.paused) {
-              customCursor.textContent = video.muted ? "Play" : "Play";
+              customCursor.textContent = video.muted ? i18n.play : i18n.play;
             } else {
-              customCursor.textContent = "Pause";
+              customCursor.textContent = i18n.pause;
             }
           }
 
@@ -216,7 +220,7 @@
             {{ T "landing.compute_description" }}
           </p>
           <a href="{{ relref . "services/compute" }}" class="button"
-            >Safespring compute</a
+            >{{ T "landing.compute_button" }}</a
           >
         </div>
       </div>
@@ -290,14 +294,14 @@
           video.muted = false;
           video.currentTime = 0;
           video.play();
-          customCursor.innerText = "Pause";
+          customCursor.innerText = i18n.pause;
         } else {
           if (video.paused) {
             video.play();
-            customCursor.innerText = "Pause";
+            customCursor.innerText = i18n.pause;
           } else {
             video.pause();
-            customCursor.innerText = "Play";
+            customCursor.innerText = i18n.play;
           }
         }
       });
@@ -311,12 +315,12 @@
           video.muted = false;
           video.currentTime = 0;
           video.play();
-          customCursor.innerText = "Pause";
+          customCursor.innerText = i18n.pause;
         } else {
           if (video.paused) {
-            customCursor.innerText = "Play";
+            customCursor.innerText = i18n.play;
           } else {
-            customCursor.innerText = "Pause";
+            customCursor.innerText = i18n.pause;
           }
         }
       });

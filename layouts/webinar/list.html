@@ -31,11 +31,11 @@
         style="{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}"
       >
         {{ if eq .Section "om-safespring" }}
-          Om Safespring
+          {{ T "menu.safespring_about" }}
         {{ else if eq .Section
           "referenser"
         }}
-          Kundreferenser
+          {{ T "menu.customer_references" }}
         {{ else if .Params.section }}
           {{ .Params.section }}
         {{ else if .Params.toplogo }}
@@ -78,7 +78,7 @@
       </div>
     {{ end }}
     {{ if .Params.logo }}
-      <img src="{{ .Params.logo }}" alt="Logotyp" class="logo" />
+      <img src="{{ .Params.logo }}" alt="{{ T "general.logo_alt" }}" class="logo" />
     {{ else }}
     {{ end }}
   </div>

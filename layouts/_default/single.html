@@ -124,7 +124,7 @@
         },
         "performer": {
           "@type": "Person",
-          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Safespring Team{{ end }}"
+          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ T "json_ld.safespring_team" }}{{ end }}"
         },
         "offers": {
           "@type": "Offer",
@@ -166,7 +166,7 @@
           "@type": "WebPage",
           "@id": "{{ .Permalink }}"
         },
-        "articleSection": "Solution Brief",
+        "articleSection": "{{ T "json_ld.solution_brief" }}",
         "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
         "url": "{{ .Permalink }}"
       }
@@ -186,7 +186,7 @@
         "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
         "author": {
           "@type": "Person",
-          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Safespring Tech Team{{ end }}"
+          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ T "json_ld.safespring_tech_team" }}{{ end }}"
         },
         "publisher": {
           "@type": "Organization",
@@ -200,12 +200,12 @@
           "@type": "WebPage",
           "@id": "{{ .Permalink }}"
         },
-        "articleSection": "Tech Update",
+        "articleSection": "{{ T "json_ld.tech_update" }}",
         "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
         "url": "{{ .Permalink }}",
         "about": {
           "@type": "Thing",
-          "name": "Cloud Computing Technology"
+          "name": "{{ T "json_ld.cloud_computing" }}"
         }
       }
       </script>
@@ -240,7 +240,7 @@
         "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
         "about": {
           "@type": "Thing",
-          "name": "Cloud Services and Data Security"
+          "name": "{{ T "json_ld.cloud_services" }}"
         }
       }
       </script>
@@ -278,7 +278,7 @@
           "@type": "WebPage",
           "@id": "{{ .Permalink }}"
         },
-        "articleSection": "{{ if .Params.section }}{{ .Params.section }}{{ else }}Blog{{ end }}",
+        "articleSection": "{{ if .Params.section }}{{ .Params.section }}{{ else }}{{ T "json_ld.blog" }}{{ end }}",
         "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
         "url": "{{ .Permalink }}",
         "inLanguage": "{{ .Language.Lang }}",

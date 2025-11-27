@@ -24,11 +24,11 @@
         style="{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}"
       >
         {{ if eq .Section "om-safespring" }}
-          About Safespring
+          {{ T "menu.safespring_about" }}
         {{ else if eq
           .Section "referenser"
         }}
-          Customer References
+          {{ T "menu.customer_references" }}
         {{ else if .Params.section }}
           {{ .Params.section }}
         {{ else if .Params.toplogo }}
@@ -45,12 +45,10 @@
         var(--main-color)
       {{ end }}"
     >
-      404 error
+      {{ T "error404.title" }}
     </h1>
     <p>
-      "404 error" or "error 404" is a standard error code in the HTTP protocol
-      that indicates that the requested webpage does not exist or cannot be
-      found.
+      {{ T "error404.desc" }}
     </p>
   </div>
   <div class="w250"></div>
@@ -65,12 +63,9 @@
       class="content-default-single"
     {{ end }}
   >
-    <h2>The page you are looking for seems to not exist</h2>
+    <h2>{{ T "error404.heading" }}</h2>
     <p>
-      This may be due to an incorrect link. If the page has moved or has been
-      removed, it can happen that the old link stops working and directs you to
-      this page instead. Please contact us if you believe that this page should
-      still exist under this link.
+      {{ T "error404.body" }}
     </p>
     <div class="icon-block-horisontal" style="background-color: #eed70010">
       <div
@@ -81,24 +76,20 @@
       </div>
       <div style="padding: 15px 0">
         <p class="inline_rubrik" style="color: #eed700; margin-bottom: 0">
-          The page you tried to reach
+          {{ T "error404.page_tried" }}
         </p>
         <p id="requested-url" class="url" style="margin-top: 0"></p>
       </div>
     </div>
-    <h3>What does 404 mean?</h3>
+    <h3>{{ T "error404.what_means" }}</h3>
     <p>
-      "404 error" or "error 404" is a standard error code in the HTTP protocol
-      that indicates that the requested webpage does not exist or cannot be
-      found.
+      {{ T "error404.explanation_1" }}
     </p>
     <p>
-      The term 404 is common and in a transferred sense, it can sometimes be
-      used instead of "does not exist" or "error", mostly in technical contexts.
+      {{ T "error404.explanation_2" }}
     </p>
     <p>
-      The 404-error code should not be confused with "server not found", "server
-      crashed", or similar errors.
+      {{ T "error404.explanation_3" }}
     </p>
     <script>
       document.getElementById("requested-url").textContent =

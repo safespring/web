@@ -2,186 +2,186 @@
   <div class="price-table">
     <div class="table">
       <div class="row header">
-        <div class="cell">Service in Azure</div>
-        <div class="cell">Function</div>
-        <div class="cell">Open Source</div>
-        <div class="cell">Managed by Safespring</div>
+        <div class="cell">{{ T "aks_table.service_azure" }}</div>
+        <div class="cell">{{ T "aks_table.function" }}</div>
+        <div class="cell">{{ T "aks_table.open_source" }}</div>
+        <div class="cell">{{ T "aks_table.managed_safespring" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Kubernetes Service (AKS)
         </div>
-        <div class="cell" data-title="Function">Managed Kubernetes</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.managed_k8s" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://compliantkubernetes.io">Compliant Kubernetes</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Virtual Machine
         </div>
-        <div class="cell" data-title="Function">
-          Virtual machines where Kubernetes runs (master and worker nodes)
+        <div class="cell" data-title="{{ T "aks_table.function" }}">
+          {{ T "aks_table.vm_k8s" }}
         </div>
-        <div class="cell" data-title="Open source alternativ">N/A</div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">{{ T "aks_table.na" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">Azure Blob Storage</div>
-        <div class="cell" data-title="Function">Object storage</div>
-        <div class="cell" data-title="Open source alternativ">N/A</div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">Azure Blob Storage</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.object_storage" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">{{ T "aks_table.na" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Mysql,<br />
           Azure MariaDB,<br />
           Azure PostgreSQL
         </div>
-        <div class="cell" data-title="Function">Databases</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.databases" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://galeracluster.com">Galera-kluster</a> (for MySQL or
           MariaDB) with ProxySQL that runs in Kubernetes or in separate virtual
           machines.
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">Azure Service Bus</div>
-        <div class="cell" data-title="Function">
-          Message function for communication between services
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">Azure Service Bus</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">
+          {{ T "aks_table.message_function" }}
         </div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.rabbitmq.com">RabbitMQ</a> or
           <a href="https://nats.io">NATS</a> that runs in Kubernetes or in
           separate virtual machines.
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">Azure Monitor</div>
-        <div class="cell" data-title="Function">Monitoring</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">Azure Monitor</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.monitoring" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://prometheus.io">Prometheus</a> +
           <a href="https://grafana.com">Grafana</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">Azure Monitor</div>
-        <div class="cell" data-title="Function">Loging</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">Azure Monitor</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.logging" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Container Registry
         </div>
-        <div class="cell" data-title="Function">Container register</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.container_registry" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://goharbor.io">Harbor</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">N/A</div>
-        <div class="cell" data-title="Function">Breach detection</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">{{ T "aks_table.na" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.breach_detection" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://falco.org">Falco</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Active Directory
         </div>
-        <div class="cell" data-title="Function">Identity Provider</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.identity_provider" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://dexidp.io">Dex</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">Yes</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">{{ T "aks_table.yes" }}</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure AD Domain Services
         </div>
-        <div class="cell" data-title="Function">
-          Handles the organisations users, resources and their rights
+        <div class="cell" data-title="{{ T "aks_table.function" }}">
+          {{ T "aks_table.handles_org" }}
         </div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.openldap.org">OpenLDAP</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">-</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">-</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">Azure Key Vault</div>
-        <div class="cell" data-title="Function">
-          Handles secrets in a central and secure way
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">Azure Key Vault</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">
+          {{ T "aks_table.handles_secrets" }}
         </div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.vaultproject.io">Hashicorp Vault</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">-</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">-</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Cosmos DB (Table API)
         </div>
-        <div class="cell" data-title="Function">Key-value store</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.kv_store" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://tikv.org">TiKV</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">-</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">-</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">Azure Functions</div>
-        <div class="cell" data-title="Function">Serverless runtime</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">Azure Functions</div>
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.serverless" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.openfaas.com">OpenFaaS</a> /
           <a href="https://openwhisk.apache.org">OpenWhisk</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">-</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">-</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure Virtual Network
         </div>
-        <div class="cell" data-title="Function">Private networking</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.private_networking" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.projectcalico.org">Calico</a>
         </div>
-        <div class="cell" data-title="Managed by Safespring">-</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">-</div>
       </div>
 
       <div class="row">
-        <div class="cell" data-title="Service in Azure">
+        <div class="cell" data-title="{{ T "aks_table.service_azure" }}">
           Azure DevOps Pipelines
         </div>
-        <div class="cell" data-title="Function">CI/CD</div>
-        <div class="cell" data-title="Open source alternativ">
+        <div class="cell" data-title="{{ T "aks_table.function" }}">{{ T "aks_table.ci_cd" }}</div>
+        <div class="cell" data-title="{{ T "aks_table.open_source" }}">
           <a href="https://www.jenkins.io">Jenkins</a>,
           <a href="https://argoproj.github.io/argo-cd/">ArgoCD</a>, among
           others.
         </div>
-        <div class="cell" data-title="Managed by Safespring">-</div>
+        <div class="cell" data-title="{{ T "aks_table.managed_safespring" }}">-</div>
       </div>
     </div>
   </div>

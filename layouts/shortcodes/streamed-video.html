@@ -6,7 +6,7 @@
     preload="none"
     poster="{{ .Get 1 | safeURL }}"
   >
-    Your browser does not support the video tag.
+    {{ T "video.browser_tag_error" }}
   </video>
 </div>
 
@@ -50,7 +50,7 @@
         video.src = "{{ .Get 0 | safeURL }}";
         video.load();
       } else {
-        alert("Your browser does not support this video format.");
+        alert("{{ T "video.browser_support_error" }}");
       }
     }
     // Attach event listener to the video element
