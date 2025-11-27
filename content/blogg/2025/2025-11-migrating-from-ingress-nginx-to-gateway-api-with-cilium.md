@@ -350,7 +350,7 @@ The shared gateway approach shows improved performance by:
     image="/img/graphics/safespring-image.svg"
     alt="Safespring on-demand Kubernetes cluster overview"
     cardtitle="Ready to try this in a real cluster?"
-    text="Safespring on-demand Kubernetes lets you test-drive Gateway API and Cilium in a managed environment with Talos, observability, and storage already wired up. Perfect for piloting your Ingress-Nginx migration before rolling it into production."
+    text="Safespring on-demand Kubernetes lets you test-drive Gateway API and Cilium in a managed environment with Talos, observability, and storage already prepared. Perfect for piloting your Ingress-Nginx migration before rolling it into production."
     link="/containers/"
     linktext="Discover on-demand Kubernetes"
 >}}
