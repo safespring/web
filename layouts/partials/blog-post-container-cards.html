@@ -1,36 +1,148 @@
 {{ $posts := slice }}
 {{ range .Site.RegularPages }}
-{{ if and (isset .Params "tags") (in .Params.tags "container") }}
-{{ $posts = $posts | append . }}
+  {{ if and (isset .Params "tags") (in .Params.tags "container") }}
+    {{ $posts = $posts | append . }}
+  {{ end }}
 {{ end }}
-{{ end }}
-<div class="flexcontainer">
+
+{{/* Sort by date (newest first) and limit how many we show in the carousel */}}
+{{ $posts = sort $posts "Date" "desc" }}
+{{ $posts = first 9 $posts }}
+
+<style>
+    /* Base carousel styling */
+.blog-carousel {
+  position: relative;
+}
+
+/* The horizontal track: force one row and horizontal scroll */
+.blog-carousel__track {
+  display: flex;
+  flex-wrap: nowrap;        /* override any generic flex-wrap: wrap; */
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+/* Make each card a full “page” on mobile */
+.blog-carousel__track .content-container.blog-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  scroll-snap-align: start;
+}
+
+/* On desktop, show 3 at a time */
+@media (min-width: 992px) {
+  .blog-carousel__track .content-container.blog-card {
+    flex: 0 0 calc((100% - 4rem) / 4); /* 3 cards wide with 1.5rem gaps */
+    max-width: calc((100% - 4rem) / 4);
+  }
+}
+
+/* Navigation arrows (optional styling) */
+.blog-carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.blog-carousel__nav--prev { left: 0; }
+.blog-carousel__nav--next { right: 0; }
+</style>
+
+<div class="blog-carousel" data-carousel>
+  <div class="blog-carousel__track flexcontainer" data-carousel-track>
     {{ range $posts }}
-    <div class="content-container">
+      <div class="content-container blog-card">
         <a href="{{ .RelPermalink }}">
-            <div
-                class='fill-available-space img-250 pointer bg-blue-white-fade blue-hover-tech tech-card-flex'>
-                <img class="lazyload tech-card-image" loading="lazy" src="/img/blogg/cards/safespring-tech-update.svg"
-                    alt="{{ .Title }}">
-                <div class="tech-update-card-content">
-                    <div class="blogg-card-tagg-container-tech">
-                        <img class="blogg-card-flag" alt="Safespring language flag"
-                            src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
-                        <span
-                            class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">Tech
-                            update</span>
-                    </div>
-                    <div>
-                        <h3 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h3>
-                        <p class="mb-1">{{ .Params.intro }}</p>
-                    </div>
-                    <div>
-                        <span class="text-button">{{ if (eq .Params.language "En") }}Read article{{ else if (eq
-                            .Params.language "No") }}Les mer{{ else }}Läs artikeln{{ end }}</span>
-                    </div>
-                </div>
+          <div class='fill-available-space img-250 pointer bg-blue-white-fade blue-hover-tech tech-card-flex'>
+            <img class="lazyload tech-card-image" loading="lazy" src="/img/blogg/cards/safespring-tech-update.svg"
+              alt="{{ .Title }}">
+            <div class="tech-update-card-content">
+              <div class="blogg-card-tagg-container-tech">
+                <img class="blogg-card-flag" alt="Safespring language flag"
+                  src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
+                <span
+                  class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">Tech
+                  update</span>
+              </div>
+              <div>
+                <h3 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h3>
+                <p class="mb-1">{{ .Params.intro }}</p>
+              </div>
+              <div>
+                <span class="text-button">{{ if (eq .Params.language "En") }}Read article{{ else if (eq
+                  .Params.language "No") }}Les mer{{ else }}Läs artikeln{{ end }}</span>
+              </div>
             </div>
+          </div>
         </a>
-    </div>
+      </div>
     {{ end }}
+  </div>
+
+  <button
+    class="blog-carousel__nav blog-carousel__nav--prev"
+    type="button"
+    data-carousel-prev
+    aria-label="Previous tech update">
+    ‹
+  </button>
+
+  <button
+    class="blog-carousel__nav blog-carousel__nav--next"
+    type="button"
+    data-carousel-next
+    aria-label="Next tech update">
+    ›
+  </button>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("[data-carousel]").forEach(function (carousel) {
+    var track = carousel.querySelector("[data-carousel-track]");
+    var cards = carousel.querySelectorAll(".blog-card");
+    var prevBtn = carousel.querySelector("[data-carousel-prev]");
+    var nextBtn = carousel.querySelector("[data-carousel-next]");
+
+    if (!track || cards.length === 0) return;
+
+    function getStep() {
+      var card = cards[0];
+      var cardRect = card.getBoundingClientRect();
+      var styles = window.getComputedStyle(track);
+      var gap = parseFloat(styles.columnGap || styles.gap || "0");
+      return cardRect.width + gap;
+    }
+
+    function scrollByStep(direction) {
+      var step = getStep();
+      track.scrollBy({
+        left: direction * step,
+        behavior: "smooth"
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function () {
+        scrollByStep(-1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        scrollByStep(1);
+      });
+    }
+  });
+});
+</script>
