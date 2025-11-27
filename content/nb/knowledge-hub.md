@@ -9,7 +9,6 @@ intro: "Safespring Kunnskapshub er en omfattende samling av Safesprings materiel
 nosidebar: "none"
 fullwidth: "yes"
 nolist: "x"
-ai: true
 ---
 
 {{< latest-content-filter >}}
