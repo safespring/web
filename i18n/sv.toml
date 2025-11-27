@@ -121,7 +121,6 @@ download_price_list = "Hämta prislistan"
 [ai_disclaimer]
 title = "Automatiskt översatt"
 intro = "Texten är automatiskt översatt för din bekvämlighet, du kan läsa texten på:"
-english = "Engelska"
 original = "original"
 feedback = "Ge feedback"
 mail_subject = "Feedback på översättning – "

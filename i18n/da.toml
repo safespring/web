@@ -121,7 +121,6 @@ download_price_list = "Hent prislisten"
 [ai_disclaimer]
 title = "Automatisk oversat"
 intro = "Denne tekst er automatisk oversat for din bekvemmelighed. Du kan læse teksten på:"
-english = "Engelsk"
 original = "original"
 feedback = "Giv feedback"
 mail_subject = "Feedback på oversættelse – "

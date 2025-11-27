@@ -25,8 +25,10 @@
   >
     <p>{{ T "ai_disclaimer.intro" }}</p>
     <div class="ai-disclaimer-cta">
-      <a href="{{ $english.Permalink }}"><strong>{{ T "ai_disclaimer.english" }}</strong></a>
-      <a href="{{ $original.Permalink }}"><strong>{{ $originalLangName }} ({{ T "ai_disclaimer.original" }})</strong></a>
+      {{- if ne $original.Lang "en" }}
+        <a href="{{ $english.Permalink }}"><strong>{{ T "ai_disclaimer.lang_en" }}</strong></a>
+      {{- end }}
+      <a href="{{ $original.Permalink }}"><strong>{{ T (printf "ai_disclaimer.lang_%s" $original.Lang) }} ({{ T "ai_disclaimer.original" }})</strong></a>
       <a href='mailto:web@safespring.com
 ?subject={{ T "ai_disclaimer.mail_subject" }}{{ .Title }}
 &amp;body={{ T "ai_disclaimer.mail_body" (dict "Permalink" .Page.Permalink) }}'>
