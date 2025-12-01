@@ -8,7 +8,7 @@ showthedate: true
 card: "safespring_card_55.png"
 eventbild: ""
 socialmedia: ""
-language: "En"
+language: "en"
 section: "blogg"
 author: "Daniel Melin"
 ---
