@@ -1,15 +1,15 @@
 ---
 ai: true
-title: "Safesprings onboarding-instruktioner för RISE"
+title: "Safespring onboarding-vejledning for SciLifeLab"
 date: 2024-09-23T13:05:26+02:00
 draft: false
-intro: "Följ dessa steg för att skapa och hantera nya projekt i Safespring. Korrekt projektnamngivning och hantering av autentiseringsuppgifter säkerställer rätt kvoter och åtkomst."
+intro: "Følg disse trin for at oprette og administrere nye projekter i Safespring. Brug af korrekt projektnavngivning og håndtering af adgangsoplysninger sikrer korrekt kvote og adgang."
 background: ""
-sidebarlinkname: "Skapa konto"
+sidebarlinkname: "Opret konto"
 sidebarlinkurl: "#form"
 socialmedia: ""
 noindex: "yes"
-language: "sv"
+language: "da"
 aliases:
     - /create-account
 ---
@@ -173,75 +173,65 @@ aliases:
 </style>
 
 <form id="up-form" name="form_9549u6488cf25775f4e62b6d09de546b45f5f" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-    <h2 id="form">Användare</h2>
+    <h2 id="form">Bruger</h2>
     <p></p>
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label>
+            <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Fornavn</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label>
+            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternavn</label>
         </div>
     </div>
     <div class="form-field">
         <input type="text" id="Contact.cellPhone" name="Contact.cellPhone" required>
-        <label for="cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Mobilnummer</label>
+        <label for="cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Mobiltelefon</label>
     </div>
     <div class="form-field">
-        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Ange en giltig e-postadress" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
+        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Indtast venligst en gyldig e-mail" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
+        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-mail</label>
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
             <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID</label>
         </div>
-    <h2>Kontouppgifter</h2>
+    <h2>Kontooplysninger</h2>
     <p></p>
     <div class="form-field">
-        <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="RISE">
+        <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="SciLifeLab">
         <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
-            <optgroup label="Publikt moln">
+            <optgroup label="Offentlig cloud">
                 <option value="STO 1">STO 1</option>
                 <option value="STO 2">STO 2</option>
-                <option value="OSL 1">OSL 1</option>
             </optgroup>
         </select>
-        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Välj din site</label><i class="fas fa-angle-down selection-icon"></i>
+        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Vælg dit site</label><i class="fas fa-angle-down selection-icon"></i>
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Projektnamn (t.ex. project1.rise.se)</label>
+        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Projektnavn (F.eks. project.scilifelab.se)</label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>
-            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Kvot</label>
+            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Budget</label>
         </div>
-{{% accordion title="Hur man namnger ett projekt" %}}
-RISE bör namnge sina projekt enligt följande nomenklatur:
-
-`project01.rise.se`  
-`project02.rise.se`  
-`project03.rise.se`  
-
-På så sätt kan vi behålla en bra överblick över vilka kostnader som ska gå till vilket projekt i faktureringsfilerna.
-{{% /accordion %}}
-<h2>Godkännande</h2>
-    <p>Genom att skicka in detta formulär godkänner du våra villkor och policyer. Vi tar våra kunders integritet på största allvar och använder din information endast för att kunna fullfölja din beställning. Om du har några frågor eller funderingar, tveka inte att kontakta oss. Tack för att du väljer våra tjänster!</p>
+<h2>Accept</h2>
+    <p>Ved at indsende denne formular accepterer du vores vilkår og politikker. Vi tager vores kunders privatliv alvorligt og bruger kun dine oplysninger til at opfylde din bestilling. Hvis du har spørgsmål eller bekymringer, er du velkommen til at kontakte os. Tak fordi du valgte vores tjenester!</p>
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Policy för acceptabel användning <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Politik for acceptabel brug <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Allmänna villkor <a class="label-link" href="/documents/safespring-general_terms _and_conditions.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Generelle vilkår og betingelser <a class="label-link" href="/documents/safespring-general_terms_and_conditions.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->
@@ -250,14 +240,14 @@ På så sätt kan vi behålla en bra överblick över vilka kostnader som ska g�
     <input type="hidden" name="isFrame" value="false">
     <input type="text" value="" name="validation" style="display: none;">
     <!-- END OF REQUIRED FIELDS -->
-    <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Skapa konto</button>
+    <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opret konto</button>
 </form>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#checkBtn').click(function() {
             checked = $("input[type=checkbox]:checked").length;
             if (!checked) {
-                alert("You must accept our terms our conditions");
+                alert("Du skal acceptere vores vilkår og betingelser");
                 return false;
             }
         });

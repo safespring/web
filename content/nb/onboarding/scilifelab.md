@@ -1,15 +1,15 @@
 ---
 ai: true
-title: "Safespring onboarding-instruktioner til RISE"
+title: "Onboarding-instruksjoner for Safespring for SciLifeLab"
 date: 2024-09-23T13:05:26+02:00
 draft: false
-intro: "Følg disse trin for at oprette og administrere nye projekter i Safespring. Brug af korrekt projektnavngivning og håndtering af legitimationsoplysninger sikrer korrekt kvote og adgang."
+intro: "Følg disse trinnene for å sette opp og administrere nye prosjekter i Safespring. Riktig navngivning av prosjekter og håndtering av påloggingsopplysninger sikrer korrekt kvote og tilgang."
 background: ""
-sidebarlinkname: "Opret konto"
+sidebarlinkname: "Opprett konto"
 sidebarlinkurl: "#form"
 socialmedia: ""
 noindex: "yes"
-language: "da"
+language: "nb"
 aliases:
     - /create-account
 ---
@@ -173,7 +173,7 @@ aliases:
 </style>
 
 <form id="up-form" name="form_9549u6488cf25775f4e62b6d09de546b45f5f" action="https://power.upsales.com/api/external/formSubmit" method="POST">
-    <h2 id="form">Bruger</h2>
+    <h2 id="form">Bruker</h2>
     <p></p>
     <div class="column-two">
         <div class="form-field">
@@ -182,7 +182,7 @@ aliases:
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternavn</label>
+            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Etternavn</label>
         </div>
     </div>
     <div class="form-field">
@@ -190,58 +190,48 @@ aliases:
         <label for="cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Mobiltelefon</label>
     </div>
     <div class="form-field">
-        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Indtast en gyldig e-mail" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-mail</label>
+        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Vennligst oppgi en gyldig e-postadresse" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
+        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
             <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID</label>
         </div>
-    <h2>Kontooplysninger</h2>
+    <h2>Kontoinformasjon</h2>
     <p></p>
     <div class="form-field">
-        <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="RISE">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
+        <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="SciLifeLab">
+        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisasjon</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
-            <optgroup label="Offentlig cloud">
+            <optgroup label="Offentlig sky">
                 <option value="STO 1">STO 1</option>
                 <option value="STO 2">STO 2</option>
-                <option value="OSL 1">OSL 1</option>
             </optgroup>
         </select>
-        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Vælg dit site</label><i class="fas fa-angle-down selection-icon"></i>
+        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Velg lokasjonen din</label><i class="fas fa-angle-down selection-icon"></i>
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Projektnavn (Fx. project1.rise.se)</label>
+        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Prosjektnavn (f.eks. project.scilifelab.se)</label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>
-            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Kvote</label>
+            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Budsjett</label>
         </div>
-{{% accordion title="Sådan navngiver du et projekt" %}}
-RISE bør navngive deres projekter efter følgende navngivningskonvention:
-
-`project01.rise.se`  
-`project02.rise.se`  
-`project03.rise.se`  
-
-På den måde kan vi bevare et godt overblik over, hvilke omkostninger der skal tilskrives hvilket projekt i faktureringsfilerne.
-{{% /accordion %}}
-<h2>Accept</h2>
-    <p>Ved at indsende denne formular accepterer du vores vilkår og politikker. Vi tager vores kunders privatliv alvorligt og vil kun bruge dine oplysninger med henblik på at opfylde din bestilling. Hvis du har spørgsmål eller bekymringer, er du velkommen til at kontakte os. Tak, fordi du vælger vores tjenester!</p>
+<h2>Godkjenning</h2>
+    <p>Ved å sende inn dette skjemaet godtar du våre vilkår og retningslinjer. Vi tar kundenes personvern på alvor og vil kun bruke opplysningene dine for å oppfylle bestillingen din. Hvis du har spørsmål eller bekymringer, ikke nøl med å kontakte oss. Takk for at du velger tjenestene våre!</p>
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Politik for acceptabel brug <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Generelle vilkår og betingelser <a class="label-link" href="/documents/safespring-general_terms _and_conditions.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Generelle vilkår og betingelser <a class="label-link" href="/documents/safespring-general_terms_and_conditions.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->
@@ -250,7 +240,7 @@ På den måde kan vi bevare et godt overblik over, hvilke omkostninger der skal 
     <input type="hidden" name="isFrame" value="false">
     <input type="text" value="" name="validation" style="display: none;">
     <!-- END OF REQUIRED FIELDS -->
-    <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opret konto</button>
+    <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opprett konto</button>
 </form>
 <script type="text/javascript">
     $(document).ready(function() {
