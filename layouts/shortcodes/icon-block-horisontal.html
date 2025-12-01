@@ -1,21 +1,7 @@
 {{ with .Get "link" }}
-<a class="icon-block-link" href="{{ . | safeURL }}"
-  >{{ end }}
-  <div
-    class="icon-block-horisontal"
-    style='background-color: {{ .Get "color" }}10;'
-  >
-    <div
-      class="icon-block-color"
-      style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'
-    >
-      <i class='{{ .Get "icon" }} icon'></i>
-    </div>
-    <p>
-      <span class="inline_rubrik" style='color: {{ .Get "color" }};'
-        >{{ .Get "text" }} </span
-      ><br />{{ .Get "description" }}
-    </p>
-  </div>
-  {{ with .Get "link" }}</a
->{{ end }}
+<a class="icon-block-link" href='{{ . | safeURL }}'>{{ end }}
+	<div class="icon-block-horisontal" style='background-color: {{ .Get "color" }}10;'>
+		<div class="icon-block-color" style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'>
+	<i class='{{ .Get "icon" }} icon'></i>
+	</div>
+	<p><span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br>{{ .Get "description" | safeHTML }}</p></div>{{ with .Get "link" }}</a>{{ end }}
