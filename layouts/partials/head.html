@@ -81,6 +81,12 @@
       content: "\f0e0";
       margin-right: 10px;
     }
+    @media (min-width: 900px) { 
+      .site-header-button-mail::before {
+        font:var(--fa-font-solid);
+        content:"\f0e0";
+        margin-right:10px;
+      }
 
     .site-header-button-mail:hover::before {
       content: "\f044";
@@ -103,15 +109,9 @@
     overflow: hidden;
   }
 
-  @media only screen and (min-width:1500px) {
-    .heading-default-single {
-      padding:12% 5% 3% 5%;
+    .heading-default-single p {
+      font:300 1.125rem montserrat;
     }
-  }
-  .heading-default-single h1 {
-    color:#195F8C;
-    font: 3.75rem/1 hind;
-  }
 
       .heading-default-single p {
         font: 300 1.125rem montserrat;
