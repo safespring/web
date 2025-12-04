@@ -52,7 +52,7 @@
     </div>
   {{ end }}
 </div>
-{{ if .Params.ai }}{{ partial "ai-discplaimer.html" . }}{{ end }}
+{{ if .Params.ai }}{{ partial "ai-disclaimer.html" . }}{{ end }}
     {{ .Content }}
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}

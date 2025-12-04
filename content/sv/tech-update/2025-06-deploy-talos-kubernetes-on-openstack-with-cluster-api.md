@@ -37,7 +37,7 @@ Saker vi ville illustrera i den här tekniska genomgången:
 
 ## Vad är Cluster API?
 
-I takt med att Kubernetes har mognat har behovet av standardiserad livscykelhantering för infrastruktur blivit tydligare. Projektet **Cluster API (CAPI)**, utvecklat av Kubernetes SIG Cluster Lifecycle, adresserar detta behov. Det tillhandahåller ett Kubernetes-stilat deklarativt API för att hantera livscykeln för Kubernetes-kluster—från skapande, skalning och uppgradering till borttagning—över olika infrastrukturleverantörer.
+I takt med att Kubernetes har mognat har behovet av standardiserad livscykelhantering för infrastruktur blivit tydligare. Projektet **Cluster API (CAPI)**, utvecklat av Kubernetes SIG Cluster Lifecycle, adresserar detta behov. Det tillhandahåller ett Kubernetes-stilat deklarativt API för att hantera livscykeln för Kubernetes-kluster, från skapande, skalning och uppgradering till borttagning, över olika infrastrukturleverantörer.
 
 I korthet låter Cluster API dig hantera hela Kubernetes-kluster ungefär som du hanterar applikationer med Kubernetes-manifest. Det frikopplar infrastrukturetablering från kärnlogiken i dina arbetslaster och standardiserar hur Kubernetes-kluster skapas och hanteras i olika miljöer.
 
@@ -104,8 +104,8 @@ orc-system                      orc-controller-manager-594d544cd7-25qlr         
 Därmed avslutar vi genomgången av komponenterna i management-klustret, nämligen:
 
 - **Cluster API Core Manager**: Denna controller (*CAPI*) ansvarar för att orkestrera den övergripande livscykeln för Kubernetes-kluster. Den hanterar kärnresurserna i Cluster API såsom `Cluster`, `Machine`, `MachineDeployment` och `MachineSet`, vilka definierar det önskade tillståndet för ett Kubernetes-kluster på ett leverantörsneutralt sätt. Dessa kärnresurser refererar till ytterligare leverantörsspecifika resurser för att färdigställa klusterkonfigurationen. Den faktiska infrastrukturen och bootstrap-logiken hanteras av separata provider-komponenter.
-- **Bootstrap Provider**: *Talos Bootstrap Provider (CABPT)* ansvarar för att generera maskinkonfigurationer anpassade för Talos Linux. Dessa konfigurationer—inkapslade i anpassade resurser av typen TalosConfig—konsumeras av Talos-noder under initieringsprocessen. CABPT omvandlar abstrakta `Machine`-definitioner till Talos-baserade Kubernetes-noder och möjliggör säker och oföränderlig bootstrap av klustret. I samarbete med CABPT hanterar *Talos Control Plane Provider (CACPPT)* hela livscykeln för Talos-baserade kontrollplansnoder. Den använder Talos API:er för att etablera och konfigurera kontrollplanet enligt det önskade tillstånd som definieras av Cluster API. CACPPT säkerställer korrekt etcd-klusterbildning, hög tillgänglighet och konsekvent tillstånd över kontrollplansnoder.
-- **Infrastructure Provider**: Infrastrukturprovidern (*CAPO*) ansvarar för att provisionera den underliggande moln- eller on-prem-infrastrukturen—såsom virtuella maskiner, nätverk och lagring—baserat på klusterspecifikationen. Den utnyttjar maskinkonfigurationen som genereras av bootstrap-providern (dvs. `TalosConfigTemplate`) för att initiera noder med korrekt roll och konfiguration. När de väl är provisionerade startar dessa maskiner in i Talos och går automatiskt med i klustret.
+- **Bootstrap Provider**: *Talos Bootstrap Provider (CABPT)* ansvarar för att generera maskinkonfigurationer anpassade för Talos Linux. Dessa konfigurationer, inkapslade i anpassade resurser av typen TalosConfig, konsumeras av Talos-noder under initieringsprocessen. CABPT omvandlar abstrakta `Machine`-definitioner till Talos-baserade Kubernetes-noder och möjliggör säker och oföränderlig bootstrap av klustret. I samarbete med CABPT hanterar *Talos Control Plane Provider (CACPPT)* hela livscykeln för Talos-baserade kontrollplansnoder. Den använder Talos API:er för att etablera och konfigurera kontrollplanet enligt det önskade tillstånd som definieras av Cluster API. CACPPT säkerställer korrekt etcd-klusterbildning, hög tillgänglighet och konsekvent tillstånd över kontrollplansnoder.
+- **Infrastructure Provider**: Infrastrukturprovidern (*CAPO*) ansvarar för att provisionera den underliggande moln- eller on-prem-infrastrukturen, såsom virtuella maskiner, nätverk och lagring, baserat på klusterspecifikationen. Den utnyttjar maskinkonfigurationen som genereras av bootstrap-providern (dvs. `TalosConfigTemplate`) för att initiera noder med korrekt roll och konfiguration. När de väl är provisionerade startar dessa maskiner in i Talos och går automatiskt med i klustret.
 
 Läs mer i [Cluster API-boken](https://cluster-api.sigs.k8s.io/user/concepts).
 
@@ -912,7 +912,7 @@ default     csi-pvc-test   Bound    pvc-feac6f5f-9137-4ab0-9b77-3032483a7828   1
 
 ## Slutsats – varför använda Cluster API med CAPO?
 
-**Deklarativ livscykelhantering**: Definiera klustrets tillstånd i YAML‑manifest och tillämpa ändringar över tid efter behov—precis som du gör med poddar och tjänster.
+**Deklarativ livscykelhantering**: Definiera klustrets tillstånd i YAML‑manifest och tillämpa ändringar över tid efter behov, precis som du gör med poddar och tjänster.
 
 **Molnagnostisk**: Att använda CAPI med CAPO abstraherar klustrets livscykeloperationer. Om du senare flyttar till ett annat moln kan du byta infrastrukturleverantör (t.ex. AWS, Azure) med minimala förändringar i ditt arbetsflöde.
 
