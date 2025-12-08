@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Build artifacts
+public/
+resources/
+.hugo_build.lock
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Deploy (keep nginx.conf, ignore the rest)
+deploy/base/
+deploy/overlays/
+deploy/infra/
+
+# Misc
+*.log
+.DS_Store
+
