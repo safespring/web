@@ -18,50 +18,9 @@ spec:
       labels:
         app: web
     spec:
-      volumes:
-        - name: src
-          emptyDir: {}
-        - name: site
-          emptyDir: {}
-        - name: nginx-conf
-          configMap:
-            name: web-nginx-conf
-      initContainers:
-        - name: fetch-src
-          image: alpine/git:latest
-          imagePullPolicy: Always
-          command: ["/bin/sh","-ceu"]
-          args:
-            - |
-              : "${GIT_REPO:=https://github.com/safespring/web.git}"
-              : "${GIT_BRANCH:=kube-dev}"
-              git clone --depth=1 --branch "${GIT_BRANCH}" "${GIT_REPO}" /src
-              rm -f /src/.hugo_build.lock
-              chmod -R a+rwX /src
-          env:
-            - name: GIT_REPO
-              value: https://github.com/safespring/web.git
-            - name: GIT_BRANCH
-              value: kube-dev
-          volumeMounts:
-            - name: src
-              mountPath: /src
-        - name: build-hugo
-          image: ghcr.io/gohugoio/hugo:latest
-          imagePullPolicy: Always
-          securityContext:
-            runAsUser: 0
-            runAsGroup: 0
-          workingDir: /src
-          command: ["hugo","--minify","-d","/site"]
-          volumeMounts:
-            - name: src
-              mountPath: /src
-            - name: site
-              mountPath: /site
       containers:
-        - name: nginx
-          image: nginx:stable-alpine
+        - name: web
+          image: ghcr.io/safespring/web:latest
           ports:
             - containerPort: 8081
               name: sv
@@ -71,13 +30,6 @@ spec:
               name: nb
             - containerPort: 8084
               name: da
-          volumeMounts:
-            - name: site
-              mountPath: /usr/share/nginx/html
-              readOnly: false
-            - name: nginx-conf
-              mountPath: /etc/nginx/conf.d/default.conf
-              subPath: default.conf
           readinessProbe:
             httpGet:
               path: /

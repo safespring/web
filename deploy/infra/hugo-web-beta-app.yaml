@@ -3,6 +3,9 @@ kind: Application
 metadata:
   name: hugo-web-beta
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: web=ghcr.io/safespring/web:beta
+    argocd-image-updater.argoproj.io/web.update-strategy: digest
 spec:
   project: default
 

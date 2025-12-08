@@ -3,6 +3,9 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
-  - web-nginx-conf.yaml
-commonLabels:
-  app.kubernetes.io/name: safespring-web
+images:
+  - name: ghcr.io/safespring/web
+    newTag: beta
+labels:
+  - pairs:
+      app.kubernetes.io/name: safespring-web
