@@ -30,7 +30,7 @@ spec:
         - name: fetch-src
           image: alpine/git:latest
           imagePullPolicy: Always
-          command: ["/bin/sh", "-ceu"]
+          command: ["/bin/sh","-ceu"]
           args:
             - |
               : "${GIT_REPO:=https://github.com/safespring/web.git}"
@@ -53,7 +53,7 @@ spec:
             runAsUser: 0
             runAsGroup: 0
           workingDir: /src
-          command: ["hugo", "--minify", "-d", "/site"]
+          command: ["hugo","--minify","-d","/site"]
           volumeMounts:
             - name: src
               mountPath: /src
@@ -71,12 +71,6 @@ spec:
               name: nb
             - containerPort: 8084
               name: da
-          env:
-            - name: CONTENT_REVISION
-              valueFrom:
-                configMapKeyRef:
-                  name: content-revision
-                  key: revision
           volumeMounts:
             - name: site
               mountPath: /usr/share/nginx/html

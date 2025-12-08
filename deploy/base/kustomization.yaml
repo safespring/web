@@ -4,9 +4,5 @@ resources:
   - deployment.yaml
   - service.yaml
   - web-nginx-conf.yaml
-configMapGenerator:
-  - name: content-revision
-    files:
-      - revision=../../.git/refs/heads/kube-dev
 commonLabels:
   app.kubernetes.io/name: safespring-web
