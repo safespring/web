@@ -5,6 +5,7 @@ namePrefix: beta-
 labels:
   - pairs:
       env: beta
+    includeSelectors: true
 resources:
   - ../../base
   - ingress.yaml
