@@ -11,3 +11,6 @@ resources:
 replicas:
   - name: web
     count: 2
+images:
+  - name: ghcr.io/safespring/web
+    newTag: beta
