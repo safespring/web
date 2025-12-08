@@ -26,6 +26,9 @@ spec:
         - name: nginx-conf
           configMap:
             name: web-nginx-conf
+        - name: content-revision-trigger
+          configMap:
+            name: content-revision
       initContainers:
         - name: fetch-src
           image: alpine/git:latest
@@ -71,12 +74,6 @@ spec:
               name: nb
             - containerPort: 8084
               name: da
-          env:
-            - name: CONTENT_REVISION
-              valueFrom:
-                configMapKeyRef:
-                  name: content-revision
-                  key: revision
           volumeMounts:
             - name: site
               mountPath: /usr/share/nginx/html

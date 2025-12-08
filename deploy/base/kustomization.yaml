@@ -7,6 +7,6 @@ resources:
 configMapGenerator:
   - name: content-revision
     files:
-      - revision=../../.git/refs/heads/kube-dev
+      - ../../.git/index
 commonLabels:
   app.kubernetes.io/name: safespring-web
