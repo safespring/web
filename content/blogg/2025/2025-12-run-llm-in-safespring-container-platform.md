@@ -171,7 +171,6 @@ sudo usermod -aG docker "$USER"
 In order to run Docker commands from you local ubuntu user you need to logut from your instance and login again to get the correct group ownerships. We will also at the same time set up a port forward that we will use later to reach the Open-WebUI:
 
 ```bash
-logout
 ssh -L 8080:localhost:8080 ubuntu@<IP of your host>
 ```
 
