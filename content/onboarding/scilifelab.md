@@ -195,7 +195,7 @@ aliases:
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
-            <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID</label>
+            <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID <small>(leave empty for local account)</small></label>
         </div>
     <h2>Account information</h2>
     <p></p>
@@ -214,7 +214,7 @@ aliases:
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name (Eg. project.scilifelab.se)</label>
+        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name <small>(project.department.nbis.se)</small></label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>

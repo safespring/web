@@ -172,7 +172,7 @@ In order to run Docker commands from you local ubuntu user you need to logut fro
 
 ```bash
 logout
-ssh -L 8080:localhost:8080 ubuntu@<IP of you host>
+ssh -L 8080:localhost:8080 ubuntu@<IP of your host>
 ```
 
 Now it is time to start the Open-WebUI container. We will use host networking to ensure that the container can speak to the ollama API at http://localhost:11434:
