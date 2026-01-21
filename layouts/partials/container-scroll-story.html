@@ -17,6 +17,9 @@ h3 {
   position: relative;
   min-height: calc(var(--stage-gap) * 2.2);
   padding: 15vh 0 0 0;
+  --grid-shift: 0px;
+  --flow-dot: 8%;
+  --flow-x: 88%;
 }
 .locked-section {
   position: sticky;
@@ -26,6 +29,7 @@ h3 {
 
 /* === Sticky kapsel som ligger i mitten === */
 .capsule {
+  position: relative;
   margin: 0 auto;
   aspect-ratio: 21/9;
   background: var(--card);
@@ -38,6 +42,39 @@ h3 {
   gap: var(--gap);
   padding: var(--pad);
 }
+.capsule::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image:
+    linear-gradient(90deg, rgba(60, 155, 205, 0.22) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(60, 155, 205, 0.22) 1px, transparent 1px),
+    radial-gradient(circle at 18% 20%, rgba(60, 155, 205, 0.12), transparent 45%);
+  background-size: 46px 46px, 46px 46px, 100% 100%;
+  background-position:
+    0px calc(var(--grid-shift, 0px) * -1),
+    0px calc(var(--grid-shift, 0px) * -1),
+    center;
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: 0;
+}
+.capsule::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image:
+    radial-gradient(circle at var(--flow-x, 88%) var(--flow-dot, 8%), rgba(250, 105, 15, 0.7) 0 5px, transparent 6px),
+    linear-gradient(180deg, rgba(60, 155, 205, 0.0) 0%, rgba(60, 155, 205, 0.35) 45%, rgba(60, 155, 205, 0.0) 70%);
+  background-size: 100% 100%, 2px 24px;
+  background-repeat: no-repeat, repeat-y;
+  background-position: 0 0, var(--flow-x, 88%) calc(var(--grid-shift, 0px) * -1);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
 
 /* vänster – bildyta */
 .figure {
@@ -46,6 +83,7 @@ h3 {
   display: grid;
   place-items: center;
   overflow: hidden;
+  z-index: 1;
 }
 .figure img {
   width: 86%;
@@ -61,6 +99,7 @@ h3 {
   display: grid;
   align-content: center;
   padding-right: clamp(10px, 2vw, 24px);
+  z-index: 1;
 }
 .stack {
   min-height: 56%;
@@ -213,6 +252,14 @@ h3 {
     gap: clamp(10px, 3vw, 14px);
     padding: clamp(12px, 4vw, 18px);
   }
+  .capsule::before {
+    background-size: 36px 36px, 36px 36px, 100% 100%;
+    opacity: 0.18;
+  }
+  .capsule::after {
+    background-size: 100% 100%, 2px 18px;
+    opacity: 0.3;
+  }
 
   .nav {
     background: none;
@@ -334,6 +381,7 @@ h3 {
   (() => {
   /* === SCROLLYTELLING NAV / CAPSULE === */
     const scrollyEl = document.querySelector('#scene');
+    if (!scrollyEl) return;
     const stages = [...scrollyEl.querySelectorAll('.stage')];
     const callouts = [...document.querySelectorAll('.callout')];
     const arrows = [...document.querySelectorAll('.arrow')];
@@ -345,6 +393,30 @@ h3 {
     };
 
     Object.values(imgMap).forEach(({src}) => { const i = new Image(); i.src = src; });
+
+    let lastShift = null;
+    function updateGridShift() {
+      const max = scrollyEl.offsetHeight - window.innerHeight;
+      const current = Math.min(Math.max(window.scrollY - scrollyEl.offsetTop, 0), Math.max(0, max));
+      const shift = Math.round(current * 0.28);
+      const progress = max > 0 ? current / max : 0;
+      const dot = 8 + (progress * 84);
+      if (shift !== lastShift) {
+        scrollyEl.style.setProperty('--grid-shift', `${shift}px`);
+        lastShift = shift;
+      }
+      scrollyEl.style.setProperty('--flow-dot', `${dot.toFixed(1)}%`);
+    }
+
+    let ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        updateGridShift();
+        ticking = false;
+      });
+    }
 
     function activate(step){
       callouts.forEach(el => el.classList.toggle('active', +el.dataset.step === step));
@@ -388,6 +460,9 @@ h3 {
 
     stages.forEach(s => io.observe(s));
   activate(1); // initialt
+  updateGridShift();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
 
   // Smooth scroll på nav-klick
   document.querySelector('.nav').addEventListener('click', (e)=>{
