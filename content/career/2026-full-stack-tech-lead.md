@@ -24,7 +24,7 @@ Built heavily on open‑source technologies, our platform can scale from a singl
 
 Being a small company means we have to be smart with our time and money: we aim to build things once, build them well, and make them work for many customers.
 
-The Self-service API and portal are central to that. The platform is built on an event driven architecture (some details can be found in the blog post here). They should make it simple for customers to see and manage their resources,  robust enough to scale, and boring enough that our support and infra team doesn’t get 3 a.m. pages.
+The Self-service API and portal are central to that. The platform is built on an event driven architecture (some details can be found in this [blog post](https://www.safespring.com/blogg/2024/2024-05-openinfra-presentation/)). They should make it simple for customers to see and manage their resources,  robust enough to scale, and boring enough that our support and infra team doesn’t get 3 a.m. pages.
 
 ## What you’ll work on
 
