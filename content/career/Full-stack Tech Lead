@@ -1,13 +1,4 @@
-name: "Pull request"
-about: Merge a pull request
-
-Summary
-
-Closes #[issue number]
-References jira issue FAC-[issue-number]
-Relates to [link to RT issue]
-Details
-
+---
 Title: "Full-stack Tech Lead"
 intro: "Lead our development team!"
 draft: true
@@ -24,7 +15,7 @@ sidebarimage: "safespring-image.svg"
 Safespring is hiring a Full‑stack Tech Lead to help build our Self-service API and a new customer portal that make our cloud easy to understand, easy to use, and ready to scale. This is a hands‑on role where you work across backend and frontend, and help a small team get a lot done.​
 {{< /ingress >}}
 
-##Why this role matters
+## Why this role matters
 
 We’re building the cloud Europe deserves - open, trustworthy, and competitive.
 
@@ -34,7 +25,7 @@ Being a small company means we have to be smart with our time and money: we aim 
 
 The Self-service API and portal are central to that. The platform is built on an event driven architecture (some details can be found in the blog post here). They should make it simple for customers to see and manage their resources,  robust enough to scale, and boring enough that our support and infra team doesn’t get 3 a.m. pages.
 
-##What you’ll work on
+## What you’ll work on
 
 - Design and evolve the Golang based Self-service API so that customers and internal teams have a clear, consistent way to work with compute, storage, backup, and container services.​ Our platform is event-driven, build on-top of NATS.
 - Lead the development of a (new) self‑service portal: from frontend architecture with Next.js and React to how it talks to the backend and external systems. 
@@ -44,7 +35,7 @@ The Self-service API and portal are central to that. The platform is built on an
 - Mentor and support teammates through design discussions, pairing, and thoughtful code reviews.
 - You will spend most of your time building and improving the product, not just coordinating work.
 
-##Who we think might enjoy this?
+## Who we think might enjoy this?
 
 Working at a small company means living with ambiguity. Priorities shift, context is incomplete, and there is no neatly scoped ticket every morning handed in. 
 
@@ -52,7 +43,7 @@ If you like finding the real problem, owning it, and shipping solutions that las
 
 If you prefer very narrow responsibilities or large, highly specialized teams, this may not be the right opportunity. 
 
-##What’s in it for you?
+## What’s in it for you?
 
 - A real chance to shape user-facing services that makes European tech autonomous! 
 - Flexible, remote-friendly working conditions, with a possibility to work from the Stockholm office
@@ -61,7 +52,7 @@ If you prefer very narrow responsibilities or large, highly specialized teams, t
 - The stability of a collective bargaining agreement (or comparable benefits outside of Sweden)
 - Teammates who’ll push you forward by questioning your solutions, contributing new perspectives, and exploring the tech rabbit holes that lead to better answers.
 
-##Your team and ways of working 
+## Your team and ways of working 
 
 Your team works on what customers touch first - the APIs and portal. You’ll collaborate closely with infrastructure engineers and customer‑facing colleagues who translate real‑world insights from customers directly into what we build.
 
@@ -75,11 +66,11 @@ Some of the projects in our 2026 roadmap include:
 - Prototype a terraform provider for the external API
 - Introduce upgrade schedules for on-demand Kubernetes into our self-service portal
 
-##About Safespring
+## About Safespring
 
 Safespring isn’t a typical cloud provider. Not chasing hyperscale or locking anyone in, we are building a European alternative focused on security, privacy and independence. Behind that mission are people who care about their craft, their customers and each other.
 
-##How to apply
+## How to apply
 
 If this sounds interesting, you can send in your application by clicking the apply button.
 
