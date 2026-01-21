@@ -83,5 +83,12 @@ Please, notice that for this role you will need to be based within European Unio
 
 As we provide services to some of the public research institutions we will conduct background and reference checks as part of the recruitment process for candidates who get offer of employment with us. 
 
-**Starting date: April 
-Salary range: €70,000 - €90,000 annually**
+{{% note "info" %}}
+**Starting date:**  
+April 2026
+
+**Salary range:**  
+€70,000 - €90,000 annually
+{{% /note %}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/d35e4001-c0a8-4418-82dc-369560cedb9f/37666b61-6cd4-4808-8369-de6e4614b7ab#applyNow" >}}
