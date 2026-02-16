@@ -32,7 +32,7 @@ You can work fully remotely, from our Stockholm office, or anywhere in EU. We’
 
 - Design, run, and improve Ceph‑based storage systems - keeping performance, reliability, and data safety top‑of‑mind.
 - Work with hypervisors, automation tools, and orchestration to deliver resilient compute and storage platforms.
-- Contribute to our Kubernetes‑based stack, integrating and scaling storage workloads across clusters.
+- Contribute to our Kubernetes‑based stack, integrating and scaling vm as well as storage workloads across clusters.
 - Automate deployments, upgrades, and monitoring - prefer Terraform, Ansible, or your own clever approach? Great.
 - Work in a highly collaborative team, where experimentation and iteration are part of the job.
 
