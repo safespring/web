@@ -76,6 +76,21 @@ If you prefer very narrow responsibilities or large, highly specialized teams, t
 
 We care more about how you solve problems than how polished your CV looks. Click Apply, drop us what you have, and we’ll take it from there.
 
+{{% accordion title="Our recruitment process" %}}
+
+At Safespring we're not just building systems; we're building relationships. We understand that applying for a new role is a big step, and we aim to make it a smooth, transparent, and engaging experience for you.
+
+1.	**Intro chat** - this is a great opportunity for both of us to get to know each other and decide if we have a match. 
+2.	**Meet your future manager** - deep dive into your engineering experiences.  
+3.	**Tech interviews** focused on system design and programming skills with your future team.
+4.	**Sync with your recruiter** - all your interviewers will make a collaborative decision and will either present you with an employment offer and **celebrate**, or provide you with constructive feedback and encourage to stay connected! 
+ 
+### Flexibility in Every Step
+We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
+{{% /accordion %}}
+
+{{< accordion-script >}}
+
 {{% note "info" %}}
 **Starting date:**  
 As soon as possible, we will interview candidates on rolling basis
