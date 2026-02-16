@@ -1,6 +1,6 @@
 ---
 title: "Safespring Containerplattform"
-section: "Vinteren 2025"
+section: "Beta"
 sectionhighlight: "x"
 cardtitle: "Containers"
 cardintro: "Administrert Kubernetes med innebygd skalerbarhet og robust plattformsikkerhet."

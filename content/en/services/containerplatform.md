@@ -1,6 +1,6 @@
 ---
 title: "Safespring Container Platform"
-section: "Available late 2025"
+section: "Beta"
 sectionhighlight: "x"
 cardtitle: "Containers"
 cardintro: "Kubernetes management with built-in scalability and robust platform security."
