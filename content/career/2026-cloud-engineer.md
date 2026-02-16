@@ -83,7 +83,8 @@ At Safespring we're not just building systems; we're building relationships. We 
 1.	**Intro chat** - this is a great opportunity for both of us to get to know each other and decide if we have a match. 
 2.	**Meet your future manager** - deep dive into your engineering experiences.  
 3.	**Tech interviews** focused on system design and programming skills with your future team.
-4.	**Sync with your recruiter** - all your interviewers will make a collaborative decision and will either present you with an employment offer and **celebrate**, or provide you with constructive feedback and encourage to stay connected! 
+4.	**Sync with your recruiter** - all your interviewers will make a collaborative decision and will either present you with an employment offer and **celebrate**, or provide you with constructive feedback and encourage to stay connected!
+5. Candidates who get offer of employment with us will need to go through reference and background check
  
 ### Flexibility in Every Step
 We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
