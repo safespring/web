@@ -76,6 +76,8 @@ If you prefer very narrow responsibilities or large, highly specialized teams, t
 
 We care more about how you solve problems than how polished your CV looks. Click Apply, drop us what you have, and we’ll take it from there.
 
+For this role you need to be based in EU. 
+
 {{% accordion title="Our recruitment process" %}}
 
 At Safespring we're not just building systems; we're building relationships. We understand that applying for a new role is a big step, and we aim to make it a smooth, transparent, and engaging experience for you.
