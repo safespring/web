@@ -6,7 +6,7 @@ draft: false
 section: "blogg"
 tags: ["English"]
 showthedate: true
-card: ""
+card: "safespring-harrysson-1.jpg"
 eventbild: ""
 socialmediabild: ""
 language: "En"
