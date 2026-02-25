@@ -1,5 +1,6 @@
 ---
-title: "Safespring får en ny VD: Johan Harrysson"
+title: "Safespring positionerar sig för vidare tillväxt: Utnämner Johan Harrysson till ny VD 
+"
 date: "2026-02-05"
 intro: "I samband med VD-skiftet tar Safesprings grundare och tidigare VD, Fredric Wallsten, över som Chief Commercial Officer (CCO)"
 draft: false
@@ -15,10 +16,6 @@ author: ""
 
 ![Johan Harrysson, VD på Safespring](/img/people/harrysson/safespring-harrysson-1.jpg)
 *Ladda ner [högupplöst bild](/img/people/harrysson/safespring-harrysson-2.jpg).*
-
-{{< ingress >}}
-Safespring positionerar sig för vidare tillväxt: Utnämner Johan Harrysson till ny VD 
-{{< /ingress >}}
 
 Den svenska molnleverantören Safespring meddelar idag att de förstärker sin ledningsgrupp. Johan Harrysson rekryteras som ny verkställande direktör (VD) i ett strategiskt steg för att leda bolaget vidare efter en stark tillväxt under de senaste fem åren.
 
