@@ -495,8 +495,7 @@ def build_translation_prompt(target_lang: str) -> str:
 @dataclass
 class TranslationConfig:
     backend: str = "openai"  # enforced
-    model: str = "gpt-5"
-    # No temperature support for gpt-5
+    model: str = "gpt-5.2"
 
 
 class Translator:
@@ -629,10 +628,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
     # Backend is enforced to openai; exposing flag is unnecessary
     p.add_argument(
         "--model",
-        default="gpt-5",
+        default="gpt-5.2",
         help="Model to use with the chosen backend (if applicable).",
     )
-    # Temperature not supported for gpt-5; option removed
     p.add_argument(
         "--target-lang",
         dest="target_lang",
