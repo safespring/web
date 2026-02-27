@@ -51,6 +51,10 @@ Useful flags: `--langs sv,en,nb,da`, `--prefer-source en,sv,nb,da`, `--content-r
   git status
   git diff
   ```
+- Detect broken opening code fences (for example: Text followed by ```bash on the same line):
+  ```bash
+  rg -n --pcre2 -g '*.md' '^(?!\s*```)(?=.*```[A-Za-z0-9_-]+)' content
+  ```
 - Inspect a file:
   ```bash
   git diff -- content/da/path/to/page.md
@@ -88,7 +92,7 @@ git commit -m "feat(i18n): add and translate missing pages"
 - Paths must be under `content/<sv|en|nb|da>/...` or scripts won’t process them.
 - Costs: translations call OpenAI and may incur usage charges.
 - Make sure the OpenAI has sufficient funds before starting a translation.
-- Should codefences end up on the previous rather than a new line, use this RegEx to fix them.
-  - Find: (^|[\r\n])([^\r\n]_\S[^\r\n]_?)(?=```(?!`)[^\r\n]\*$)
-  - Replace: $1$2\n
-  - Note: In vscode you may have to open each result for the replace to apply properly.
+- If opening code fences end up on the same line as prose, use this RegEx fix in VS Code.
+  - Find: ^([^\r\n]*\S)\s*```([A-Za-z0-9_-]+)\s*$
+  - Replace: $1\n```$2
+  - Note: This targets lines where prose is immediately followed by ```bash.
