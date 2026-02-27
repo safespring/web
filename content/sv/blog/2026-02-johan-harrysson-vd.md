@@ -10,7 +10,7 @@ showthedate: true
 card: "safespring-harrysson-1.jpg"
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "sv"
 author: ""
 ---
 
