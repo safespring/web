@@ -172,7 +172,7 @@ aliases:
 
 </style>
 
-<form id="up-form" name="form_9549u6488cf25775f4e62b6d09de546b45f5f" action="https://power.upsales.com/api/external/formSubmit" method="POST">
+<form id="up-form" name="form_9549ufdca76241b764729b0c8c6e4e76ab3e8" action="https://power.upsales.com/api/external/formSubmit" method="POST">
     <h2 id="form">User</h2>
     <p></p>
     <div class="column-two">
@@ -195,7 +195,7 @@ aliases:
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
-            <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID</label>
+            <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID <small>(leave empty for local account)</small></label>
         </div>
     <h2>Account information</h2>
     <p></p>
@@ -214,7 +214,7 @@ aliases:
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name (Eg. project.scilifelab.se)</label>
+        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name <small>(project.department.nbis.se)</small></label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>
@@ -236,7 +236,7 @@ aliases:
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">
-    <input type="hidden" name="formId" value="9549u9137f829b062435d86812dd1f90c13f8">
+    <input type="hidden" name="formId" value="9549ufdca76241b764729b0c8c6e4e76ab3e8">
     <input type="hidden" name="isFrame" value="false">
     <input type="text" value="" name="validation" style="display: none;">
     <!-- END OF REQUIRED FIELDS -->
