@@ -49,8 +49,8 @@
 </div>
 
 <!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
-{{ if .Params.logobannersaas }}{{ partial "LogoBanner-saas.html" . }}{{ end }}
+{{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
+{{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}

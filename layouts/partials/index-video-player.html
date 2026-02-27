@@ -1,0 +1,756 @@
+{{- $videoConfig := .Site.Data.indexvideo | default dict -}}
+{{- $language := .Params.language | default "Se" -}}
+{{- $videoSrc := index $videoConfig "src" | default "" -}}
+{{- $videoPoster := index $videoConfig "poster" | default "/img/card/safespring_use-case_scaleout-1080p.jpg" -}}
+{{- $trackList := index $videoConfig "tracks" | default (slice) -}}
+{{- $playTextMap := index $videoConfig "playText" | default (dict) -}}
+{{- $pauseText := index $videoConfig "pauseText" | default "Pause" -}}
+{{- $pageSubtitleLangMap := dict "Se" "" "En" "en" "No" "no" -}}
+{{- $cursorTextPaused := index $playTextMap $language | default (index $playTextMap "Se") | default "Play" -}}
+{{- $initialSubtitleLang := "" -}}
+{{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
+{{- if ne $language "Se" -}}
+  {{- $initialSubtitleLang = $pageSubtitleLang -}}
+{{- end -}}
+
+<div class="index-video video-container">
+  <video id="myVideo" muted poster="{{ $videoPoster }}">
+    {{ range $trackList }}
+    <track src="{{ .src }}" kind="subtitles" srclang="{{ .language }}" label="{{ .label }}">
+    {{ end }}
+    Your browser does not support the video tag.
+  </video>
+  <div id="video-caption-overlay" class="video-caption-overlay" aria-live="polite"></div>
+  <div id="custom-cursor" class="custom-cursor">
+    {{ $cursorTextPaused }}
+  </div>
+  <div class="video-timeline" id="video-timeline">
+    <div class="video-timeline-fill" id="video-timeline-fill"></div>
+  </div>
+  <div class="video-subtitles" id="video-subtitles">
+    <button type="button" id="video-subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false">CC</button>
+    <select id="video-subtitle-select" class="video-subtitle-select" aria-label="Subtitle language"></select>
+  </div>
+  <div id="video-time" class="video-time">00:00 / 00:00</div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.getElementById('myVideo');
+      var customCursor = document.getElementById('custom-cursor');
+      var videoContainer = video ? video.parentElement : null;
+      var videoTimeline = document.getElementById('video-timeline');
+      var videoTimelineFill = document.getElementById('video-timeline-fill');
+      var videoTimeText = document.getElementById('video-time');
+      var captionOverlay = document.getElementById('video-caption-overlay');
+      var subtitleControls = document.getElementById('video-subtitles');
+      var subtitleToggle = document.getElementById('video-subtitle-toggle');
+      var subtitleSelect = document.getElementById('video-subtitle-select');
+      var videoSrc = "{{ $videoSrc | safeURL }}";
+      var cursorTextPaused = {{ $cursorTextPaused | jsonify }};
+      var cursorTextPlaying = {{ $pauseText | jsonify }};
+      var initialSubtitleLang = {{ $initialSubtitleLang | jsonify }};
+      var pageSubtitleLang = {{ $pageSubtitleLang | jsonify }};
+      var htmlLang = (document.documentElement && document.documentElement.lang ? document.documentElement.lang : '').toLowerCase();
+      var autoSubtitleLang = '';
+      if (htmlLang === 'en') {
+        autoSubtitleLang = 'en';
+      } else if (htmlLang === 'no' || htmlLang === 'nb' || htmlLang === 'nn') {
+        autoSubtitleLang = 'no';
+      } else {
+        autoSubtitleLang = '';
+      }
+      var initialized = false;
+      var initPromise = null;
+      var isToggleInProgress = false;
+      var isTimelineScrubbing = false;
+      var subtitlesInitialized = false;
+      var activeSubtitleTrack = null;
+      var activeSubtitleListener = null;
+      var subtitleState = {
+        enabled: !!autoSubtitleLang,
+        language: (autoSubtitleLang || initialSubtitleLang || '').toLowerCase()
+      };
+
+      if (!video) {
+        return;
+      }
+
+      function normalizeCursorLabel(label, fallback) {
+        var text = (label == null ? '' : String(label)).trim();
+        if (!text) {
+          text = fallback || '';
+        }
+        text = text.replace(/^["']+|["']+$/g, '');
+        if (text.toLowerCase() === 'play') {
+          return 'Play';
+        }
+        if (text.toLowerCase() === 'pause') {
+          return 'Pause';
+        }
+        return text || fallback || '';
+      }
+
+      cursorTextPaused = normalizeCursorLabel(cursorTextPaused, 'Play');
+      cursorTextPlaying = normalizeCursorLabel(cursorTextPlaying, 'Pause');
+
+      function logPlaybackError(error) {
+        if (!error) {
+          console.warn('Video playback could not start. Verify stream availability.');
+          return;
+        }
+        if (typeof error === 'string') {
+          console.warn('Video playback could not start. ' + error);
+          return;
+        }
+        if (error.name || error.message) {
+          console.warn('Video playback could not start:', error.name || 'Error', error.message || '');
+          return;
+        }
+        console.warn('Video playback could not start. Verify stream availability.', error);
+      }
+
+      function setCursorText() {
+        if (!customCursor) {
+          return;
+        }
+        var stateText = video.paused ? cursorTextPaused : cursorTextPlaying;
+        customCursor.textContent = stateText;
+      }
+
+      function updateTimelineProgress() {
+        if (!videoTimelineFill) {
+          return;
+        }
+        if (!video.duration || video.duration <= 0 || !isFinite(video.duration) || !isFinite(video.currentTime)) {
+          videoTimelineFill.style.width = '0%';
+          updateTimeText();
+          return;
+        }
+        var progress = (video.currentTime / video.duration) * 100;
+        videoTimelineFill.style.width = Math.min(Math.max(progress, 0), 100) + '%';
+        updateTimeText();
+      }
+
+      function formatTime(seconds) {
+        if (!isFinite(seconds)) {
+          return "00:00";
+        }
+        var totalSeconds = Math.max(0, Math.floor(seconds));
+        var minutes = Math.floor(totalSeconds / 60);
+        var remainingSeconds = totalSeconds % 60;
+        return (minutes < 10 ? '0' : '') + minutes + ":" + (remainingSeconds < 10 ? '0' : '') + remainingSeconds;
+      }
+
+      function updateTimeText() {
+        if (!videoTimeText) {
+          return;
+        }
+        var current = isFinite(video.currentTime) ? video.currentTime : 0;
+        var duration = isFinite(video.duration) ? video.duration : 0;
+        videoTimeText.textContent = formatTime(current) + " / " + formatTime(duration);
+      }
+
+      function showTimeline() {
+        if (!videoTimeline) {
+          return;
+        }
+        videoTimeline.style.opacity = '1';
+        if (videoTimeText) {
+          videoTimeText.style.opacity = '1';
+        }
+        if (captionOverlay) {
+          captionOverlay.classList.add('is-lifted');
+        }
+        if (subtitleControls) {
+          subtitleControls.style.opacity = '1';
+        }
+      }
+
+      function hideTimeline() {
+        if (!videoTimeline) {
+          return;
+        }
+        videoTimeline.style.opacity = '0';
+        if (videoTimeText) {
+          videoTimeText.style.opacity = '0';
+        }
+        if (captionOverlay) {
+          captionOverlay.classList.remove('is-lifted');
+        }
+        if (subtitleControls) {
+          subtitleControls.style.opacity = '0';
+        }
+      }
+
+      function getTimelineClientX(event) {
+        if (event.touches && event.touches.length) {
+          return event.touches[0].clientX;
+        }
+        if (event.changedTouches && event.changedTouches.length) {
+          return event.changedTouches[0].clientX;
+        }
+        return event.clientX;
+      }
+
+      function seekFromTimeline(event) {
+        if (!video || !videoTimeline) {
+          return;
+        }
+        if (!video.duration || video.duration <= 0 || !isFinite(video.duration)) {
+          return;
+        }
+        var rect = videoTimeline.getBoundingClientRect();
+        if (!rect.width || !isFinite(rect.width)) {
+          return;
+        }
+        var clientX = getTimelineClientX(event);
+        if (!isFinite(clientX)) {
+          return;
+        }
+        var ratio = (clientX - rect.left) / rect.width;
+        if (ratio < 0) {
+          ratio = 0;
+        }
+        if (ratio > 1) {
+          ratio = 1;
+        }
+        video.currentTime = ratio * video.duration;
+        updateTimelineProgress();
+      }
+
+      function stopTimelineScrub() {
+        isTimelineScrubbing = false;
+      }
+
+      function startTimelineScrub(event) {
+        if (!videoTimeline) {
+          return;
+        }
+        event.preventDefault();
+        event.stopPropagation();
+        isTimelineScrubbing = true;
+        ensureVideoInitialized().then(function () {
+          seekFromTimeline(event);
+        }).catch(function () {
+          isTimelineScrubbing = false;
+        });
+      }
+
+      function moveTimelineScrub(event) {
+        if (!isTimelineScrubbing) {
+          return;
+        }
+        seekFromTimeline(event);
+      }
+
+      function showCustomCursor() {
+        if (!customCursor) {
+          return;
+        }
+        customCursor.style.display = 'block';
+        customCursor.style.visibility = 'visible';
+        setCursorText();
+      }
+
+      function hideCustomCursor() {
+        if (!customCursor) {
+          return;
+        }
+        customCursor.style.display = 'none';
+      }
+
+      function initializeVideo() {
+        if (initialized) {
+          return Promise.resolve();
+        }
+
+        // Prefer native HLS support first to avoid unnecessary XHR/CORS issues.
+        if (video.canPlayType('application/vnd.apple.mpegurl') || video.canPlayType('application/x-mpegURL')) {
+          video.src = videoSrc;
+          initialized = true;
+          return Promise.resolve();
+        }
+
+        if (window.Hls && Hls.isSupported && Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoSrc);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.ERROR, function (event, data) {
+            console.error('HLS.js error:', data);
+            if (data && data.fatal) {
+              logPlaybackError(data.details || data.type || 'Fatal HLS error');
+            }
+          });
+          initialized = true;
+          return Promise.resolve();
+        }
+
+        return new Promise(function (resolve, reject) {
+          var script = document.createElement('script');
+          script.src = '/js/hls.min.js';
+          script.onload = function () {
+            if (video.canPlayType('application/vnd.apple.mpegurl') || video.canPlayType('application/x-mpegURL')) {
+              video.src = videoSrc;
+              initialized = true;
+              resolve();
+              return;
+            }
+
+            if (window.Hls && Hls.isSupported && Hls.isSupported()) {
+              var hls = new Hls();
+              hls.loadSource(videoSrc);
+              hls.attachMedia(video);
+              hls.on(Hls.Events.ERROR, function (event, data) {
+                console.error('HLS.js error:', data);
+              });
+              initialized = true;
+              resolve();
+              return;
+            }
+
+            reject(new Error('This browser does not support HLS playback.'));
+          };
+          script.onerror = function () {
+            reject(new Error('Failed to load hls.min.js'));
+          };
+          document.head.appendChild(script);
+        });
+      }
+
+      function ensureVideoInitialized() {
+        if (initialized) {
+          return Promise.resolve();
+        }
+        if (initPromise) {
+          return initPromise;
+        }
+
+        initPromise = initializeVideo()
+              .then(function () {
+            initPromise = null;
+            return;
+          })
+          .catch(function (error) {
+            console.error(error);
+            initPromise = null;
+            throw error;
+          });
+
+        return initPromise;
+      }
+
+      function getSubtitleTracks() {
+        var tracks = [];
+        if (!video.textTracks) {
+          return tracks;
+        }
+        for (var i = 0; i < video.textTracks.length; i++) {
+          tracks.push(video.textTracks[i]);
+        }
+        return tracks;
+      }
+
+      function clearCaptionOverlay() {
+        if (!captionOverlay) {
+          return;
+        }
+        captionOverlay.textContent = '';
+        captionOverlay.classList.remove('is-visible');
+      }
+
+      function renderActiveCues() {
+        if (!captionOverlay || !activeSubtitleTrack || !subtitleState.enabled) {
+          clearCaptionOverlay();
+          return;
+        }
+        var activeCues = activeSubtitleTrack.activeCues;
+        if (!activeCues || !activeCues.length) {
+          clearCaptionOverlay();
+          return;
+        }
+
+        var lines = [];
+        for (var i = 0; i < activeCues.length; i++) {
+          lines.push(activeCues[i].text || '');
+        }
+        var captionText = lines.join('\n');
+        captionOverlay.textContent = captionText;
+        captionOverlay.classList.add('is-visible');
+      }
+
+      function detachActiveSubtitleTrack() {
+        if (activeSubtitleTrack && activeSubtitleListener && activeSubtitleTrack.removeEventListener) {
+          activeSubtitleTrack.removeEventListener('cuechange', activeSubtitleListener);
+        }
+        activeSubtitleTrack = null;
+        activeSubtitleListener = null;
+        clearCaptionOverlay();
+      }
+
+      function getLanguageCandidates(language) {
+        if (!language) {
+          return [];
+        }
+        var normalized = language.toLowerCase();
+        if (normalized === 'no' || normalized === 'nb' || normalized === 'nn') {
+          return ['no', 'nb', 'nn'];
+        }
+        if (normalized === 'sv' || normalized === 'se') {
+          return ['sv', 'se'];
+        }
+        return [normalized];
+      }
+
+      function findTrackLanguage(language) {
+        if (!language) {
+          return '';
+        }
+        var tracks = getSubtitleTracks();
+        var candidates = getLanguageCandidates(language);
+        for (var i = 0; i < tracks.length; i++) {
+          var trackLang = (tracks[i].language || '').toLowerCase();
+          for (var j = 0; j < candidates.length; j++) {
+            var candidate = candidates[j];
+            if (trackLang === candidate || trackLang.indexOf(candidate + '-') === 0) {
+              return trackLang;
+            }
+          }
+        }
+        return '';
+      }
+
+      function getPreferredSubtitleLanguage() {
+        var tracks = getSubtitleTracks();
+        if (!tracks.length) {
+          return '';
+        }
+
+        var selected = findTrackLanguage(subtitleState.language);
+        if (selected) {
+          return selected;
+        }
+
+        var pageLanguage = findTrackLanguage(pageSubtitleLang);
+        if (pageLanguage) {
+          return pageLanguage;
+        }
+
+        var english = findTrackLanguage('en');
+        if (english) {
+          return english;
+        }
+
+        return (tracks[0].language || '').toLowerCase();
+      }
+
+      function applySubtitleState() {
+        var tracks = getSubtitleTracks();
+        for (var i = 0; i < tracks.length; i++) {
+          tracks[i].mode = 'disabled';
+        }
+        detachActiveSubtitleTrack();
+
+        if (!tracks.length || !subtitleState.enabled) {
+          return;
+        }
+
+        var targetLang = getPreferredSubtitleLanguage();
+        if (!targetLang) {
+          return;
+        }
+        subtitleState.language = targetLang;
+
+        for (var j = 0; j < tracks.length; j++) {
+          var trackLang = (tracks[j].language || '').toLowerCase();
+          if (trackLang === targetLang) {
+            tracks[j].mode = 'hidden';
+            if (tracks[j].addEventListener) {
+              activeSubtitleTrack = tracks[j];
+              activeSubtitleListener = function () {
+                renderActiveCues();
+              };
+              activeSubtitleTrack.addEventListener('cuechange', activeSubtitleListener);
+            }
+            renderActiveCues();
+            break;
+          }
+        }
+      }
+
+      function updateSubtitleControls() {
+        if (!subtitleControls || !subtitleToggle || !subtitleSelect) {
+          return;
+        }
+
+        var tracks = getSubtitleTracks();
+        var hasTracks = tracks.length > 0;
+        subtitleControls.style.display = hasTracks ? 'flex' : 'none';
+        subtitleToggle.disabled = !hasTracks;
+        subtitleSelect.disabled = !hasTracks || !subtitleState.enabled;
+        subtitleToggle.classList.toggle('is-on', !!subtitleState.enabled);
+        subtitleToggle.setAttribute('aria-pressed', subtitleState.enabled ? 'true' : 'false');
+        if (subtitleState.language) {
+          subtitleSelect.value = subtitleState.language;
+        }
+      }
+
+      function populateSubtitleOptions() {
+        if (!subtitleSelect) {
+          return;
+        }
+
+        var tracks = getSubtitleTracks();
+        var existing = {};
+        subtitleSelect.innerHTML = '';
+
+        for (var i = 0; i < tracks.length; i++) {
+          var lang = (tracks[i].language || '').toLowerCase();
+          if (!lang || existing[lang]) {
+            continue;
+          }
+          existing[lang] = true;
+          var option = document.createElement('option');
+          option.value = lang;
+          option.textContent = tracks[i].label || lang.toUpperCase();
+          subtitleSelect.appendChild(option);
+        }
+      }
+
+      function initializeSubtitles() {
+        if (subtitlesInitialized) {
+          updateSubtitleControls();
+          return;
+        }
+        subtitlesInitialized = true;
+        populateSubtitleOptions();
+        if (subtitleState.enabled) {
+          subtitleState.language = getPreferredSubtitleLanguage();
+        }
+        applySubtitleState();
+        updateSubtitleControls();
+      }
+
+      function togglePlayback() {
+        if (video.paused) {
+          var playResult = video.play();
+          if (playResult && playResult.catch) {
+            playResult.catch(function (error) {
+              logPlaybackError(error);
+            });
+          }
+          return;
+        }
+        video.pause();
+      }
+
+      if (customCursor) {
+        var isHoveringVideo = false;
+        var isHoveringControls = false;
+        var cursorContainer = customCursor.parentElement;
+        var hoverHost = videoContainer || video;
+
+        function setHoverState(isHovering) {
+          if (isHoveringVideo === isHovering) {
+            return;
+          }
+          isHoveringVideo = isHovering;
+          if (videoContainer) {
+            if (isHoveringVideo) {
+              videoContainer.classList.add('is-hovering-video');
+            } else {
+              videoContainer.classList.remove('is-hovering-video');
+            }
+          }
+
+          if (isHoveringVideo) {
+            showTimeline();
+            if (!isHoveringControls) {
+              showCustomCursor();
+            } else {
+              hideCustomCursor();
+              video.style.cursor = 'auto';
+            }
+          } else {
+            hideCustomCursor();
+            hideTimeline();
+            video.style.cursor = 'auto';
+          }
+        }
+
+        function setControlHoverState(isHovering) {
+          isHoveringControls = isHovering;
+          if (!isHoveringVideo) {
+            return;
+          }
+          if (isHoveringControls) {
+            hideCustomCursor();
+            showTimeline();
+            video.style.cursor = 'auto';
+            return;
+          }
+          if (video.matches(':hover')) {
+            showCustomCursor();
+          }
+        }
+
+        hoverHost.addEventListener('mouseenter', function () {
+          setHoverState(true);
+        });
+
+        hoverHost.addEventListener('mouseleave', function () {
+          setControlHoverState(false);
+          setHoverState(false);
+        });
+
+        if (videoTimeline) {
+          videoTimeline.addEventListener('mouseenter', function () {
+            setControlHoverState(true);
+          });
+          videoTimeline.addEventListener('mouseleave', function () {
+            setControlHoverState(false);
+           });
+        }
+
+        if (subtitleControls) {
+          subtitleControls.addEventListener('mouseenter', function () {
+            setControlHoverState(true);
+          });
+          subtitleControls.addEventListener('mouseleave', function () {
+            setControlHoverState(false);
+          });
+        }
+
+        video.addEventListener('mousemove', function (e) {
+          if (!isHoveringVideo || isHoveringControls) {
+            return;
+          }
+
+          showCustomCursor();
+          var bounds = video.getBoundingClientRect();
+          var cursorBounds = cursorContainer ? cursorContainer.getBoundingClientRect() : bounds;
+          customCursor.style.top = (e.clientY - cursorBounds.top) + 'px';
+          customCursor.style.left = (e.clientX - cursorBounds.left) + 'px';
+
+          if (e.clientY - bounds.top > video.offsetHeight - 100) {
+            customCursor.style.visibility = 'hidden';
+            video.style.cursor = 'auto';
+          } else {
+            customCursor.style.visibility = 'visible';
+            video.style.cursor = 'none';
+          }
+        });
+      }
+
+      if (videoTimeline) {
+        videoTimeline.addEventListener('mousedown', startTimelineScrub);
+        videoTimeline.addEventListener('mousemove', moveTimelineScrub);
+        videoTimeline.addEventListener('mouseup', stopTimelineScrub);
+        videoTimeline.addEventListener('mouseleave', stopTimelineScrub);
+        videoTimeline.addEventListener('touchstart', startTimelineScrub);
+        videoTimeline.addEventListener('touchmove', moveTimelineScrub);
+        videoTimeline.addEventListener('touchend', stopTimelineScrub);
+        videoTimeline.addEventListener('touchcancel', stopTimelineScrub);
+      }
+
+      document.addEventListener('mouseup', stopTimelineScrub);
+      document.addEventListener('touchend', stopTimelineScrub);
+      document.addEventListener('touchcancel', stopTimelineScrub);
+
+      video.addEventListener('play', function () {
+        if (customCursor) {
+          setCursorText();
+        }
+        if (video.muted) {
+          video.muted = false;
+        }
+      });
+
+      video.addEventListener('pause', function () {
+        setCursorText();
+        if (customCursor) {
+          showCustomCursor();
+        }
+      });
+
+      video.addEventListener('loadedmetadata', function () {
+        initializeSubtitles();
+        updateTimelineProgress();
+        updateTimeText();
+      });
+
+      video.addEventListener('timeupdate', function () {
+        updateTimelineProgress();
+        updateTimeText();
+        if (subtitleState.enabled) {
+          renderActiveCues();
+        }
+      });
+
+      video.addEventListener('ended', function () {
+        setCursorText();
+        updateTimelineProgress();
+        updateTimeText();
+        if (customCursor) {
+          showCustomCursor();
+        }
+      });
+
+      video.addEventListener('error', function () {
+        var mediaError = video.error;
+        if (mediaError) {
+          logPlaybackError({
+            name: 'MediaError',
+            message: 'code=' + mediaError.code + ', message=' + mediaError.message
+          });
+        }
+      });
+
+      if (subtitleToggle) {
+        subtitleToggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          subtitleState.enabled = !subtitleState.enabled;
+          if (subtitleState.enabled && !subtitleState.language) {
+            subtitleState.language = getPreferredSubtitleLanguage();
+          }
+          applySubtitleState();
+          updateSubtitleControls();
+        });
+      }
+
+      if (subtitleSelect) {
+        subtitleSelect.addEventListener('change', function (event) {
+          event.stopPropagation();
+          subtitleState.language = (subtitleSelect.value || '').toLowerCase();
+          subtitleState.enabled = true;
+          applySubtitleState();
+          updateSubtitleControls();
+        });
+      }
+
+      function toggleWithCustomInteraction(event) {
+        if (isToggleInProgress) {
+          return;
+        }
+        isToggleInProgress = true;
+        event.preventDefault();
+        event.stopPropagation();
+        if (video.muted) {
+          video.muted = false;
+        }
+
+        ensureVideoInitialized().then(function () {
+          togglePlayback();
+          isToggleInProgress = false;
+        }).catch(function (error) {
+          console.error(error);
+          isToggleInProgress = false;
+          togglePlayback();
+        });
+      }
+
+      video.addEventListener('click', function (event) {
+        toggleWithCustomInteraction(event);
+      });
+    });
+  </script>
+</div>
