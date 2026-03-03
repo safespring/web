@@ -5,7 +5,7 @@
 {{- $trackList := index $videoConfig "tracks" | default (slice) -}}
 {{- $playTextMap := index $videoConfig "playText" | default (dict) -}}
 {{- $pauseText := index $videoConfig "pauseText" | default "Pause" -}}
-{{- $pageSubtitleLangMap := dict "Se" "" "En" "en" "No" "no" -}}
+{{- $pageSubtitleLangMap := dict "Se" "sv" "En" "en" "No" "no" -}}
 {{- $cursorTextPaused := index $playTextMap $language | default (index $playTextMap "Se") | default "Play" -}}
 {{- $initialSubtitleLang := "" -}}
 {{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
@@ -246,7 +246,6 @@
         if (!customCursor) {
           return;
         }
-        customCursor.style.display = 'block';
         customCursor.style.visibility = 'visible';
         setCursorText();
       }
@@ -255,7 +254,7 @@
         if (!customCursor) {
           return;
         }
-        customCursor.style.display = 'none';
+        customCursor.style.visibility = 'hidden';
       }
 
       function initializeVideo() {
@@ -601,6 +600,11 @@
           setHoverState(false);
         });
 
+        video.addEventListener('mouseleave', function () {
+          hideCustomCursor();
+          video.style.cursor = 'auto';
+        });
+
         if (videoTimeline) {
           videoTimeline.addEventListener('mouseenter', function () {
             setControlHoverState(true);
@@ -619,22 +623,29 @@
           });
         }
 
-        video.addEventListener('mousemove', function (e) {
+        hoverHost.addEventListener('mousemove', function (e) {
           if (!isHoveringVideo || isHoveringControls) {
             return;
           }
 
-          showCustomCursor();
           var bounds = video.getBoundingClientRect();
+          var isOutsideVideo = e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom;
+          if (isOutsideVideo) {
+            hideCustomCursor();
+            video.style.cursor = 'auto';
+            return;
+          }
+
+          showCustomCursor();
           var cursorBounds = cursorContainer ? cursorContainer.getBoundingClientRect() : bounds;
           customCursor.style.top = (e.clientY - cursorBounds.top) + 'px';
           customCursor.style.left = (e.clientX - cursorBounds.left) + 'px';
 
           if (e.clientY - bounds.top > video.offsetHeight - 100) {
-            customCursor.style.visibility = 'hidden';
+            hideCustomCursor();
             video.style.cursor = 'auto';
           } else {
-            customCursor.style.visibility = 'visible';
+            showCustomCursor();
             video.style.cursor = 'none';
           }
         });
