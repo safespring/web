@@ -86,7 +86,7 @@
         "url": "{{ .Permalink }}"
       }
       </script>
-  {{ else if eq $.Params.section "Tech update" }}
+  {{ else if or (eq $typeFolder "tech-update") (eq $.Params.section "Tech update") (eq $.Params.section "Teknisk oppdatering") (eq $.Params.section "Teknologioppdatering") (eq $.Params.section "Teknisk uppdatering") }}
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
