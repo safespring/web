@@ -13,193 +13,207 @@
     {{ end }}
   {{ end }}
 
+  {{/* Helper for image URL to prevent double slashes */}}
+  {{ $imageUrl := "" }}
+  {{ if .Params.card }}
+    {{ if or (strings.HasPrefix .Params.card "img/") (strings.HasPrefix .Params.card "/img/") }}
+      {{ $imageUrl = .Params.card | absURL }}
+    {{ else }}
+      {{ $imageUrl = printf "img/blogg/cards/%s" .Params.card | absURL }}
+    {{ end }}
+  {{ else if .Params.eventbild }}
+    {{ $imageUrl = printf "img/event/%s" .Params.eventbild | absURL }}
+  {{ else }}
+    {{ $imageUrl = "img/socialmedia/safespring-start.png" | absURL }}
+  {{ end }}
+
+  {{ $schema := dict }}
+
   {{ if eq $typeFolder "webinar" }}
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "name": "{{ .Title }}",
-        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
-        "startDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-        "endDate": "{{ if .Params.endDate }}{{ .Params.endDate.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}",
-        "location": {
-          "@type": "VirtualLocation",
-          "url": "{{ .Permalink }}"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}{{ .Params.card }}{{ else if .Params.eventbild }}img/event/{{ .Params.eventbild }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
-        },
-        "organizer": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "url": "{{ .Site.BaseURL }}"
-        },
-        "performer": {
-          "@type": "Person",
-          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ T "json_ld.safespring_team" }}{{ end }}"
-        },
-        "offers": {
-          "@type": "Offer",
-          "url": "{{ .Permalink }}",
-          "price": "0",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock",
-          "validFrom": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
-        }
-      }
-      </script>
+      {{ $performerType := "Person" }}
+      {{ $performerName := (or .Params.author (T "json_ld.safespring_team")) }}
+      {{ if eq $performerName "Safespring Team" }}{{ $performerType = "Organization" }}{{ end }}
+
+      {{ $endDate := .Date.Format "2006-01-02T15:04:05Z07:00" }}
+      {{ if .Params.endDate }}
+        {{ $endDate = .Params.endDate.Format "2006-01-02T15:04:05Z07:00" }}
+      {{ end }}
+
+      {{ $schema = dict
+        "@context" "https://schema.org"
+        "@type" "Event"
+        "eventAttendanceMode" "https://schema.org/OnlineEventAttendanceMode"
+        "eventStatus" "https://schema.org/EventScheduled"
+        "name" .Title
+        "description" (or .Params.intro .Summary)
+        "startDate" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "endDate" $endDate
+        "location" (dict
+          "@type" "VirtualLocation"
+          "url" .Permalink
+        )
+        "image" (slice $imageUrl)
+        "organizer" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "url" (.Site.BaseURL | absURL)
+        )
+        "performer" (dict
+          "@type" $performerType
+          "name" $performerName
+        )
+        "offers" (dict
+          "@type" "Offer"
+          "url" .Permalink
+          "price" "0"
+          "priceCurrency" "EUR"
+          "availability" "https://schema.org/InStock"
+          "validFrom" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        )
+      }}
+
   {{ else if eq $typeFolder "solution-brief" }}
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "headline": "{{ .Title }}",
-        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
-        },
-        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-        "author": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "url": "{{ .Site.BaseURL }}"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
-          }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ .Permalink }}"
-        },
-        "articleSection": "{{ T "json_ld.solution_brief" }}",
-        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
-        "url": "{{ .Permalink }}"
-      }
-      </script>
+      {{ $schema = dict
+        "@context" "https://schema.org"
+        "@type" "TechArticle"
+        "headline" .Title
+        "description" (or .Params.intro .Summary)
+        "image" (slice $imageUrl)
+        "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+        "author" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "url" (.Site.BaseURL | absURL)
+        )
+        "publisher" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "logo" (dict
+            "@type" "ImageObject"
+            "url" ("img/logos/safespring_logotype_blue_svg.svg" | absURL)
+          )
+        )
+        "mainEntityOfPage" (dict
+          "@type" "WebPage"
+          "@id" .Permalink
+        )
+        "articleSection" (T "json_ld.solution_brief")
+        "keywords" .Params.tags
+        "url" .Permalink
+      }}
+
   {{ else if or (eq $typeFolder "tech-update") (eq $.Params.section "Tech update") (eq $.Params.section "Teknisk oppdatering") (eq $.Params.section "Teknologioppdatering") (eq $.Params.section "Teknisk uppdatering") }}
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "headline": "{{ .Title }}",
-        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
-        },
-        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-        "author": {
-          "@type": "Person",
-          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ T "json_ld.safespring_tech_team" }}{{ end }}"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
-          }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ .Permalink }}"
-        },
-        "articleSection": "{{ T "json_ld.tech_update" }}",
-        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
-        "url": "{{ .Permalink }}",
-        "about": {
-          "@type": "Thing",
-          "name": "{{ T "json_ld.cloud_computing" }}"
-        }
-      }
-      </script>
+      {{ $schema = dict
+        "@context" "https://schema.org"
+        "@type" "TechArticle"
+        "headline" .Title
+        "description" (or .Params.intro .Summary)
+        "image" (slice $imageUrl)
+        "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+        "author" (dict
+          "@type" "Person"
+          "name" (or .Params.author (T "json_ld.safespring_tech_team"))
+        )
+        "publisher" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "logo" (dict
+            "@type" "ImageObject"
+            "url" ("img/logos/safespring_logotype_blue_svg.svg" | absURL)
+          )
+        )
+        "mainEntityOfPage" (dict
+          "@type" "WebPage"
+          "@id" .Permalink
+        )
+        "articleSection" (T "json_ld.tech_update")
+        "keywords" .Params.tags
+        "url" .Permalink
+        "about" (dict
+          "@type" "Thing"
+          "name" (T "json_ld.cloud_computing")
+        )
+      }}
+
   {{ else if eq $typeFolder "whitepaper" }}
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Report",
-        "name": "{{ .Title }}",
-        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
-        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-        "author": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "url": "{{ .Site.BaseURL }}"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
-          }
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
-        },
-        "url": "{{ .Permalink }}",
-        "inLanguage": "{{ .Language.Lang }}",
-        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
-        "about": {
-          "@type": "Thing",
-          "name": "{{ T "json_ld.cloud_services" }}"
-        }
-      }
-      </script>
+      {{ $schema = dict
+        "@context" "https://schema.org"
+        "@type" "Report"
+        "name" .Title
+        "description" (or .Params.intro .Summary)
+        "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+        "author" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "url" (.Site.BaseURL | absURL)
+        )
+        "publisher" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "logo" (dict
+            "@type" "ImageObject"
+            "url" ("img/logos/safespring_logotype_blue_svg.svg" | absURL)
+          )
+        )
+        "image" (slice $imageUrl)
+        "url" .Permalink
+        "inLanguage" .Language.Lang
+        "keywords" .Params.tags
+        "about" (dict
+          "@type" "Thing"
+          "name" (T "json_ld.cloud_services")
+        )
+      }}
+
   {{ else if eq $typeFolder "blog" }}
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "{{ .Title }}",
-        "description": "{{ if .Params.intro }}{{ .Params.intro }}{{ else }}{{ .Summary }}{{ end }}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.BaseURL }}{{ if .Params.card }}img/blogg/cards/{{ .Params.card }}{{ else }}img/socialmedia/safespring-start.png{{ end }}"
-        },
-        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-        "author": {
-          "@type": "Person",
-          "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Safespring{{ end }}",
-          {{ range where .Site.Data.authors "name" .Params.author }}
-          "image": "{{ $.Site.BaseURL }}img/people/{{ index . (printf "image_%s" (default "happy" $.Params.author_image)) }}",
-          "jobTitle": "{{ .title }}",
-          {{ end }}
-          "url": "{{ .Site.BaseURL }}about/"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Safespring",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ .Site.BaseURL }}img/logos/safespring_logotype_blue_svg.svg"
-          }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ .Permalink }}"
-        },
-        "articleSection": "{{ if .Params.section }}{{ .Params.section }}{{ else }}{{ T "json_ld.blog" }}{{ end }}",
-        "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
-        "url": "{{ .Permalink }}",
-        "inLanguage": "{{ .Language.Lang }}",
-        "wordCount": "{{ .WordCount }}",
-        "commentCount": 0
-      }
-      </script>
+      {{ $authorName := (or .Params.author "Safespring") }}
+      {{ $authorDict := dict "@type" "Person" "name" $authorName "url" ("about/" | absURL) }}
+      
+      {{ $matchedAuthor := false }}
+      {{ range where .Site.Data.authors "name" .Params.author }}
+        {{ $matchedAuthor = true }}
+        {{ $authorDict = merge $authorDict (dict 
+          "image" (printf "img/people/%s" (index . (printf "image_%s" (default "happy" $.Params.author_image))) | absURL)
+          "jobTitle" .title
+        ) }}
+      {{ end }}
+
+      {{ $schema = dict
+        "@context" "https://schema.org"
+        "@type" "BlogPosting"
+        "headline" .Title
+        "description" (or .Params.intro .Summary)
+        "image" (slice $imageUrl)
+        "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+        "author" $authorDict
+        "publisher" (dict
+          "@type" "Organization"
+          "name" "Safespring"
+          "logo" (dict
+            "@type" "ImageObject"
+            "url" ("img/logos/safespring_logotype_blue_svg.svg" | absURL)
+          )
+        )
+        "mainEntityOfPage" (dict
+          "@type" "WebPage"
+          "@id" .Permalink
+        )
+        "articleSection" (or .Params.section (T "json_ld.blog"))
+        "keywords" .Params.tags
+        "url" .Permalink
+        "inLanguage" .Language.Lang
+        "wordCount" .WordCount
+        "commentCount" 0
+      }}
+
+  {{ end }}
+
+  {{ if $schema }}
+    {{ $jsonString := $schema | jsonify }}
+    {{ printf "<script type=\"application/ld+json\" class=\"structured-data\">\n%s\n</script>" $jsonString | safeHTML }}
   {{ end }}
 {{ end }}
