@@ -81,7 +81,7 @@
       content: "\f0e0";
       margin-right: 10px;
     }
-    @media (min-width: 900px) { 
+    @media (min-width: 900px) {
       .site-header-button-mail::before {
         font:var(--fa-font-solid);
         content:"\f0e0";
@@ -770,5 +770,6 @@
     <noscript>
       <link rel="stylesheet" href="{{ $faCSS.RelPermalink }}" />
     </noscript>
+    {{ partial "jsonld.html" . }}
   </head>
 </html>
