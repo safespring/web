@@ -91,11 +91,18 @@
 
     <!-- JSON-LD Structured Data for Blog Posts -->
 
-    {{ $relativePath := strings.TrimSuffix "/" .File.Dir }}
-    {{ $pathSegments := split $relativePath "/" }}
     {{ $typeFolder := "" }}
-    {{ if ge (len $pathSegments) 2 }}
-      {{ $typeFolder = index $pathSegments 1 }}
+    {{ if .File }}
+      {{ $relativePath := strings.TrimSuffix "/" .File.Dir }}
+      {{ $pathSegments := split $relativePath "/" }}
+      {{ $languageRoots := slice "sv" "en" "nb" "da" }}
+      {{ range $index, $segment := $pathSegments }}
+        {{ if or (eq $segment "") (eq $segment "content") (in $languageRoots $segment) }}
+          {{ continue }}
+        {{ end }}
+        {{ $typeFolder = $segment }}
+        {{ break }}
+      {{ end }}
     {{ end }}
 
     {{ if eq $typeFolder "webinar" }}
