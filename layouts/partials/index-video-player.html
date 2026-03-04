@@ -7,14 +7,11 @@
 {{- $pauseText := index $videoConfig "pauseText" | default "Pause" -}}
 {{- $pageSubtitleLangMap := dict "Se" "sv" "En" "en" "No" "no" -}}
 {{- $cursorTextPaused := index $playTextMap $language | default (index $playTextMap "Se") | default "Play" -}}
-{{- $initialSubtitleLang := "" -}}
 {{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
-{{- if ne $language "Se" -}}
-  {{- $initialSubtitleLang = $pageSubtitleLang -}}
-{{- end -}}
+{{- $initialSubtitleLang := $pageSubtitleLang -}}
 
 <div class="index-video video-container">
-  <video id="myVideo" muted poster="{{ $videoPoster }}">
+  <video id="myVideo" poster="{{ $videoPoster }}">
     {{ range $trackList }}
     <track src="{{ .src }}" kind="subtitles" srclang="{{ .language }}" label="{{ .label }}">
     {{ end }}
@@ -28,7 +25,8 @@
     <div class="video-timeline-fill" id="video-timeline-fill"></div>
   </div>
   <div class="video-subtitles" id="video-subtitles">
-    <button type="button" id="video-subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false">CC</button>
+    <button type="button" id="video-subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="Slå på undertexter" title="Slå på undertexter"><i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i></button>
+    <button type="button" id="video-mute-toggle" class="video-mute-toggle" aria-pressed="false" aria-label="Ljud av" title="Ljud av"><i class="fa-solid fa-volume" aria-hidden="true"></i></button>
     <select id="video-subtitle-select" class="video-subtitle-select" aria-label="Subtitle language"></select>
   </div>
   <div id="video-time" class="video-time">00:00 / 00:00</div>
@@ -43,6 +41,7 @@
       var captionOverlay = document.getElementById('video-caption-overlay');
       var subtitleControls = document.getElementById('video-subtitles');
       var subtitleToggle = document.getElementById('video-subtitle-toggle');
+      var muteToggle = document.getElementById('video-mute-toggle');
       var subtitleSelect = document.getElementById('video-subtitle-select');
       var videoSrc = "{{ $videoSrc | safeURL }}";
       var cursorTextPaused = {{ $cursorTextPaused | jsonify }};
@@ -65,6 +64,25 @@
       var subtitlesInitialized = false;
       var activeSubtitleTrack = null;
       var activeSubtitleListener = null;
+      var muteLabels = {
+        mute: 'Ljud av',
+        unmute: 'Ljud på'
+      };
+      var subtitleToggleLabels = {
+        enable: 'Slå på undertexter',
+        disable: 'Slå av undertexter'
+      };
+      if (htmlLang === 'en') {
+        muteLabels.mute = 'Mute';
+        muteLabels.unmute = 'Unmute';
+        subtitleToggleLabels.enable = 'Enable subtitles';
+        subtitleToggleLabels.disable = 'Disable subtitles';
+      } else if (htmlLang === 'no' || htmlLang === 'nb' || htmlLang === 'nn') {
+        muteLabels.mute = 'Demp';
+        muteLabels.unmute = 'Lyd på';
+        subtitleToggleLabels.enable = 'Slå på undertekster';
+        subtitleToggleLabels.disable = 'Slå av undertekster';
+      }
       var subtitleState = {
         enabled: !!autoSubtitleLang,
         language: (autoSubtitleLang || initialSubtitleLang || '').toLowerCase()
@@ -476,20 +494,44 @@
       }
 
       function updateSubtitleControls() {
-        if (!subtitleControls || !subtitleToggle || !subtitleSelect) {
+        if (!subtitleControls) {
           return;
         }
 
         var tracks = getSubtitleTracks();
         var hasTracks = tracks.length > 0;
-        subtitleControls.style.display = hasTracks ? 'flex' : 'none';
-        subtitleToggle.disabled = !hasTracks;
-        subtitleSelect.disabled = !hasTracks || !subtitleState.enabled;
-        subtitleToggle.classList.toggle('is-on', !!subtitleState.enabled);
-        subtitleToggle.setAttribute('aria-pressed', subtitleState.enabled ? 'true' : 'false');
-        if (subtitleState.language) {
+        subtitleControls.style.display = (hasTracks || !!muteToggle) ? 'flex' : 'none';
+        if (subtitleToggle) {
+          var subtitlesEnabled = !!subtitleState.enabled;
+          subtitleToggle.disabled = !hasTracks;
+          subtitleToggle.classList.toggle('is-on', subtitlesEnabled);
+          subtitleToggle.setAttribute('aria-pressed', subtitlesEnabled ? 'true' : 'false');
+          subtitleToggle.setAttribute('aria-label', subtitlesEnabled ? subtitleToggleLabels.disable : subtitleToggleLabels.enable);
+          subtitleToggle.setAttribute('title', subtitlesEnabled ? subtitleToggleLabels.disable : subtitleToggleLabels.enable);
+          subtitleToggle.innerHTML = subtitlesEnabled
+            ? '<i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i>'
+            : '<i class="fa-solid fa-closed-captioning" aria-hidden="true"></i>';
+        }
+        if (subtitleSelect) {
+          subtitleSelect.disabled = !hasTracks || !subtitleState.enabled;
+        }
+        if (subtitleState.language && subtitleSelect) {
           subtitleSelect.value = subtitleState.language;
         }
+      }
+
+      function updateMuteButton() {
+        if (!muteToggle) {
+          return;
+        }
+        var isMuted = !!video.muted;
+        muteToggle.classList.toggle('is-muted', isMuted);
+        muteToggle.setAttribute('aria-pressed', isMuted ? 'true' : 'false');
+        muteToggle.setAttribute('aria-label', isMuted ? muteLabels.unmute : muteLabels.mute);
+        muteToggle.setAttribute('title', isMuted ? muteLabels.unmute : muteLabels.mute);
+        muteToggle.innerHTML = isMuted
+          ? '<i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>'
+          : '<i class="fa-solid fa-volume" aria-hidden="true"></i>';
       }
 
       function populateSubtitleOptions() {
@@ -670,9 +712,7 @@
         if (customCursor) {
           setCursorText();
         }
-        if (video.muted) {
-          video.muted = false;
-        }
+        updateMuteButton();
       });
 
       video.addEventListener('pause', function () {
@@ -714,6 +754,9 @@
           });
         }
       });
+      video.addEventListener('volumechange', function () {
+        updateMuteButton();
+      });
 
       if (subtitleToggle) {
         subtitleToggle.addEventListener('click', function (event) {
@@ -738,6 +781,15 @@
         });
       }
 
+      if (muteToggle) {
+        muteToggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          video.muted = !video.muted;
+          updateMuteButton();
+        });
+      }
+
       function toggleWithCustomInteraction(event) {
         if (isToggleInProgress) {
           return;
@@ -745,9 +797,6 @@
         isToggleInProgress = true;
         event.preventDefault();
         event.stopPropagation();
-        if (video.muted) {
-          video.muted = false;
-        }
 
         ensureVideoInitialized().then(function () {
           togglePlayback();
@@ -762,6 +811,8 @@
       video.addEventListener('click', function (event) {
         toggleWithCustomInteraction(event);
       });
+
+      updateMuteButton();
     });
   </script>
 </div>
