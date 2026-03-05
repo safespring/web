@@ -9,7 +9,7 @@ language: "En"
 TOC: "Table of contents"
 ---
 {{< ingress >}}
-Safespring AB is a Swedish cloud infrastructure provider, proudly Swedish owned and operated.
+Safespring is a Swedish cloud infrastructure provider, proudly Swedish owned and operated.
 {{< /ingress >}}
 
 We deliver Public Cloud and Private Cloud services for organisations that require secure, reliable, and high-performance infrastructure. Safespring operates through legal entities in Sweden and Norway and provides services from data centres located within these jurisdictions.
@@ -22,9 +22,10 @@ This Privacy Policy describes how Safespring (“we”, “us”, “our”) pro
 
 ## 1. Data Controller
 Data Controller:
-- Safespring AB
-- 559075-0245
-- Rättarvägen 3 Pl9, 169 68 Solna
+
+**Safespring AB**  
+559075-0245
+Rättarvägen 3, 169 68 Solna  
 Sweden
 
 ## 2. Your Rights Under GDPR
