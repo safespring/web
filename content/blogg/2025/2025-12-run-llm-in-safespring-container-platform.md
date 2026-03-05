@@ -36,7 +36,7 @@ We’ll start from a fresh instance, install the recommended NVIDIA server drive
 >}}
 {{< distance >}}
 
-{{% note "Prerequisites" %}}
+{{% note title="Prerequisites" icon="fa-solid fa-list-check" color="clear-blue" %}}
 
 First launch an instance in Safesprings platform with GPU support. This means choosing a flavor with the suffix gA2, such as b2.c4r8.gA2.
 
