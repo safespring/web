@@ -85,8 +85,8 @@ Where possible, IP addresses are truncated or anonymised immediately upon collec
 
 ### 4.3 Legal Basis (GDPR Art. 6)
 We rely on:
-- **Art. 6(1)(f)** — Legitimate interest (analytics, security monitoring)
-- **Art. 6(1)(a)** — Consent (where required for non-essential cookies or tracking)
+- Art. 6(1)(f) — Legitimate interest (analytics, security monitoring)
+- Art. 6(1)(a) — Consent (where required for non-essential cookies or tracking)
 A documented Legitimate Interest Assessment (LIA) is maintained where required.
 
 ### 4.4 Retention
@@ -106,7 +106,7 @@ Where legally required, we obtain prior consent before placing non-essential coo
 
 ## 5. Business Contact Data
 
-### 5.1 Purpose
+### 5.1 Purpose of Processing
 We process business contact data for:
 - Commercial discussions
 - Contract fulfilment
@@ -132,7 +132,7 @@ We process business contact data for:
 
 ## 6. Recruitment
 
-### 6.1 Purpose
+### 6.1 Purpose of Processing
 Processing job applications and candidate evaluation.
 
 ### 6.2 Categories of Personal Data
