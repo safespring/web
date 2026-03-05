@@ -13,7 +13,7 @@ TOC: "Table of contents"
 Safespring may collect and process business contact information, recruitment-related information, and website user information, including information submitted through contact forms on our website and landing pages.
 {{< /ingress >}}
 
-This means that we process your personal data to be able to get in touch with you, and/or create user accounts related to our services. The data we process for The Purpose is usually your name, your email address, your phone number, your title, and your employer.
+This means that we process your personal data to be able to get in touch with you, and/or create user accounts related to our services. The data we process is usually your name, your email address, your phone number, your title, and your employer.
 
 This Privacy Policy describes how Safespring (“we”, “us”, “our”) processes personal data in accordance with:
 - General Data Protection Regulation (“GDPR”)
