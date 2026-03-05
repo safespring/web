@@ -1,21 +1,32 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
 <body>
- {{ partial "header.html" . }}
- <!-- HEADING -->
-<div class="heading-default-single" >
-  {{ .Render "li3" }}
-</div>
-</div>
- <!-- CONTENT -->
- <div class="main-default-single">
-  <div class="content-default-single">
-    {{ if .Params.videoURL }}
+  {{ partial "header.html" . }}
+  <!-- HEADING -->
+  <div class="heading-default-single">
+    {{ .Render "li3" }}
+  </div>
+
+  <!-- CONTENT -->
+  <div class="main-default-single">
+    <div class="content-default-single">
+      {{ if .Params.videoURL }}
         <div class="webinarvideo">
-          <video id="player" class="webinar-videoplayer" poster="{{ .Params.thumbnail }}" controls preload="none">
-          <!-- Removed src to prevent automatic loading -->
-          {{ range .Params.subtitles }}
-          <track kind="subtitles" src="{{ .src }}" srclang="{{ .srclang }}" label="{{ .label }}">
+          <video
+            id="player"
+            class="webinar-videoplayer"
+            poster="{{ .Params.thumbnail }}"
+            controls
+            preload="metadata"
+            src="{{ .Params.videoURL }}"
+          >
+            {{ range .Params.subtitles }}
+              <track
+                kind="subtitles"
+                src="{{ .src }}"
+                srclang="{{ .srclang }}"
+                label="{{ .label }}"
+              />
             {{ end }}
             {{ T "video.browser_tag_error" }}
           </video>
@@ -27,6 +38,8 @@
           var isFullScreen = false;
           var hlsScriptLoaded = false;
           var videoInitialized = false;
+          var isHlsSource = "{{ path.Ext .Params.videoURL }}" === ".m3u8";
+          var hasNativeHls = video.canPlayType("application/vnd.apple.mpegurl");
 
           function loadHlsScript(callback) {
             if (hlsScriptLoaded) {
@@ -49,57 +62,63 @@
           function initializeVideo() {
             if (videoInitialized) return;
 
-            if (window.Hls && Hls.isSupported()) {
-              var hls = new Hls();
-              hls.loadSource(videoSrc);
-              hls.attachMedia(video);
-              videoInitialized = true;
+            if (isHlsSource) {
+              if (window.Hls && Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+                videoInitialized = true;
 
-              // HLS.js event listeners
-              hls.on(Hls.Events.MANIFEST_PARSED, function () {
-                _paq.push(["trackEvent", "Video", "Loaded", videoSrc]);
-              });
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                  _paq.push(["trackEvent", "Video", "Loaded", videoSrc]);
+                });
 
-              hls.on(Hls.Events.ERROR, function (event, data) {
-                console.error("HLS.js error:", data);
-                if (data.fatal) {
-                  switch (data.type) {
-                    case Hls.ErrorTypes.NETWORK_ERROR:
-                      _paq.push([
-                        "trackEvent",
-                        "Video",
-                        "Error",
-                        "Network Error",
-                        video.currentSrc,
-                      ]);
-                      break;
-                    case Hls.ErrorTypes.MEDIA_ERROR:
-                      _paq.push([
-                        "trackEvent",
-                        "Video",
-                        "Error",
-                        "Media Error",
-                        video.currentSrc,
-                      ]);
-                      break;
-                    default:
-                      _paq.push([
-                        "trackEvent",
-                        "Video",
-                        "Error",
-                        "Other Error",
-                        video.currentSrc,
-                      ]);
-                      break;
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                  console.error("HLS.js error:", data);
+                  if (data.fatal) {
+                    switch (data.type) {
+                      case Hls.ErrorTypes.NETWORK_ERROR:
+                        _paq.push([
+                          "trackEvent",
+                          "Video",
+                          "Error",
+                          "Network Error",
+                          video.currentSrc,
+                        ]);
+                        break;
+                      case Hls.ErrorTypes.MEDIA_ERROR:
+                        _paq.push([
+                          "trackEvent",
+                          "Video",
+                          "Error",
+                          "Media Error",
+                          video.currentSrc,
+                        ]);
+                        break;
+                      default:
+                        _paq.push([
+                          "trackEvent",
+                          "Video",
+                          "Error",
+                          "Other Error",
+                          video.currentSrc,
+                        ]);
+                        break;
+                    }
                   }
-                }
-              });
-            } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-              // För Safari
+                });
+              } else if (hasNativeHls) {
+                video.src = videoSrc;
+                videoInitialized = true;
+                _paq.push(["trackEvent", "Video", "Loaded", videoSrc]);
+              } else {
+                alert("{{ T "video.browser_support_error" }}");
+                return;
+              }
+            } else {
               video.src = videoSrc;
               videoInitialized = true;
-            } else {
-              alert("{{ T "video.browser_support_error" }}");
+              _paq.push(["trackEvent", "Video", "Loaded", videoSrc]);
             }
 
             // Video event listeners
@@ -133,36 +152,11 @@
             });
           }
 
-          // Event listener för 'play' event
-          video.addEventListener("play", function () {
-            if (!videoInitialized) {
-              if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
-                loadHlsScript(function () {
-                  initializeVideo();
-                  video.play(); // Se till att videon startar direkt efter initiering
-                });
-              } else {
-                video.src = videoSrc;
-                initializeVideo();
-                video.play(); // Se till att videon startar direkt efter initiering
-              }
-            }
-          });
-
-          video.addEventListener("click", function () {
-            if (!videoInitialized) {
-              if ("{{ path.Ext .Params.videoURL }}" === ".m3u8") {
-                loadHlsScript(function () {
-                  initializeVideo();
-                  video.play(); // Se till att videon startar direkt efter initiering
-                });
-              } else {
-                video.src = videoSrc;
-                initializeVideo();
-                video.play(); // Se till att videon startar direkt efter initiering
-              }
-            }
-          });
+          if (isHlsSource && !hasNativeHls) {
+            loadHlsScript(initializeVideo);
+          } else {
+            initializeVideo();
+          }
 
           // Funktion för att hantera fullskärmsläget
           function handleFullScreenChange() {
@@ -212,7 +206,7 @@
     <div class="sidebar-default-single">
       {{ if .Params.chapters }}
         <button class="mobile-toc" id="mobile-toc-webinar">
-          <i class="fa-solid fa-list-ul"></i>          {{ if .Params.chaptersTitle }}
+          <i class="fa-solid fa-list-ul"></i> {{ if .Params.chaptersTitle }}
             {{ .Params.chaptersTitle }}
           {{ else }}
             {{ T "webinar.chapters" }}

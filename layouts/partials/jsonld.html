@@ -30,11 +30,12 @@
   {{ $schema := dict }}
 
   {{ if eq $typeFolder "webinar" }}
+    {{ $webinarDescription := or (.Plain | strings.TrimSpace) .Params.intro .Summary }}
     {{ $schema = dict
       "@context" "https://schema.org"
       "@type" "VideoObject"
       "name" .Title
-      "description" (or .Params.intro .Summary)
+      "description" $webinarDescription
       "thumbnailUrl" (slice $imageUrl)
       "uploadDate" (.Date.Format "2006-01-02T15:04:05Z07:00")
     }}
