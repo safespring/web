@@ -8,12 +8,11 @@ general: "yes"
 language: "En"
 TOC: "Table of contents"
 ---
-
 {{< ingress >}}
-Safespring may collect and process business contact information, recruitment-related information, and website user information, including information submitted through contact forms on our website and landing pages.
+Safespring AB is a Swedish cloud infrastructure provider, proudly Swedish owned and operated.
 {{< /ingress >}}
 
-This means that we process your personal data to be able to get in touch with you, and/or create user accounts related to our services. The data we process is usually your name, your email address, your phone number, your title, and your employer.
+We deliver Public Cloud and Private Cloud services for organisations that require secure, reliable, and high-performance infrastructure. Safespring operates through legal entities in Sweden and Norway and provides services from data centres located within these jurisdictions.
 
 This Privacy Policy describes how Safespring (“we”, “us”, “our”) processes personal data in accordance with:
 - General Data Protection Regulation (“GDPR”)
