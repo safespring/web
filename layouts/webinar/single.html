@@ -41,6 +41,25 @@
           var isHlsSource = "{{ path.Ext .Params.videoURL }}" === ".m3u8";
           var hasNativeHls = video.canPlayType("application/vnd.apple.mpegurl");
 
+          function applyTimecodeFromUrl() {
+            var startTime = getTimecodeFromQuery();
+            if (startTime === null) {
+              return;
+            }
+
+            var seekToStartTime = function () {
+              video.currentTime = startTime;
+            };
+
+            if (video.readyState >= 1) {
+              seekToStartTime();
+            } else {
+              video.addEventListener("loadedmetadata", seekToStartTime, {
+                once: true,
+              });
+            }
+          }
+
           function loadHlsScript(callback) {
             if (hlsScriptLoaded) {
               callback();
@@ -150,6 +169,8 @@
                 ]);
               }
             });
+
+            applyTimecodeFromUrl();
           }
 
           if (isHlsSource && !hasNativeHls) {
@@ -190,9 +211,34 @@
         });
 
         function setCurrentTime(time) {
+          updateVideoTimecodeInUrl(time);
           var player = document.getElementById("player");
+          if (!player) {
+            return;
+          }
           player.currentTime = time;
           player.play();
+        }
+
+        function getTimecodeFromQuery() {
+          var params = new URLSearchParams(window.location.search);
+          var rawTimecode = params.get("t");
+          if (rawTimecode === null) {
+            return null;
+          }
+
+          var parsedTimecode = Number.parseInt(rawTimecode, 10);
+          if (Number.isNaN(parsedTimecode) || parsedTimecode < 0) {
+            return null;
+          }
+
+          return parsedTimecode;
+        }
+
+        function updateVideoTimecodeInUrl(time) {
+          var nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.set("t", time);
+          window.history.replaceState({}, "", nextUrl.toString());
         }
       </script>
       {{ end }}
@@ -225,8 +271,8 @@
               <ul class="mobile-webinar-list">
                 {{ range $index, $element := .Params.chapters }}
                   <a
-                    href="javascript:void(0);"
-                    onclick="setCurrentTime({{ $element.time }})"
+                    href="{{ $.Permalink }}?t={{ $element.time }}"
+                    onclick="setCurrentTime({{ $element.time }}); return false;"
                   >
                     <li>
                       <span>{{ $element.title }}</span>
@@ -254,8 +300,8 @@
               <ul>
                 {{ range $index, $element := .Params.chapters }}
                   <a
-                    href="javascript:void(0);"
-                    onclick="setCurrentTime({{ $element.time }})"
+                    href="{{ $.Permalink }}?t={{ $element.time }}"
+                    onclick="setCurrentTime({{ $element.time }}); return false;"
                   >
                     <li>
                       <span>{{ $element.title }}</span>
