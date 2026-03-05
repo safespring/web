@@ -24,7 +24,7 @@ This Privacy Policy describes how Safespring (“we”, “us”, “our”) pro
 Data Controller:
 
 **Safespring AB**  
-559075-0245
+559075-0245  
 Rättarvägen 3, 169 68 Solna  
 Sweden
 
