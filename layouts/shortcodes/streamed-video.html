@@ -1,69 +1,25 @@
-<div class="webinarvideo">
-  <video class="webinar-videoplayer" id="myVideo" controls
-  preload="none"
-  poster="{{ .Get 1 | safeURL }}">
-  Your browser does not support the video tag.
-</video>
-</div>
+{{- $src := .Get "src" | default (.Get 0) | default "" -}}
+{{- $poster := .Get "poster" | default (.Get 1) | default "" -}}
+{{- $tracks := slice -}}
+{{- $ccDefaultOn := .Get "cc_on" | default "false" -}}
+{{- $playText := .Get "play_text" | default "Play" -}}
+{{- $pauseText := .Get "pause_text" | default "Pause" -}}
+{{- $language := .Page.Params.language | default "Se" -}}
+{{- $pageSubtitleLangMap := dict "Se" "sv" "En" "en" "No" "no" -}}
+{{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
+{{- $defaultCCLang := .Get "default_cc_lang" | default $pageSubtitleLang -}}
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('myVideo');
-        var hlsScriptLoaded = false;
-        var videoInitialized = false;
-
-        function loadHlsScript(callback) {
-            if (hlsScriptLoaded) {
-                callback();
-                return;
-            }
-
-            var script = document.createElement('script');
-            script.src = '/js/hls.min.js';
-            script.onload = function() {
-                hlsScriptLoaded = true;
-                callback();
-            };
-            document.body.appendChild(script);
-        }
-
-        function initializeVideo() {
-            if (videoInitialized) return;
-
-            if (window.Hls && Hls.isSupported()) {
-                var hls = new Hls();
-                hls.loadSource('{{ .Get 0 | safeURL }}');
-                hls.attachMedia(video);
-                videoInitialized = true;
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            // For Safari
-                video.src = '{{ .Get 0 | safeURL }}';
-                videoInitialized = true;
-            } else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-                video.src = '{{ .Get 0 | safeURL }}';
-                video.load();
-            } else {
-                alert('Your browser does not support this video format.');
-            }
-        }
-    // Attach event listener to the video element
-        video.addEventListener('play', function() {
-            if (!videoInitialized) {
-                loadHlsScript(function() {
-                    initializeVideo();
-                    video.play();
-                });
-            }
-        });
-
-    // Attach event listener to the video element
-        video.addEventListener('click', function() {
-            if (!videoInitialized) {
-                loadHlsScript(function() {
-                    initializeVideo();
-                    video.play();
-                });
-            }
-        });
-    });
-</script>
+{{ partial "components/video-player.html" (dict
+  "page" .Page
+  "src" $src
+  "poster" $poster
+  "tracks" $tracks
+  "containerClass" "webinarvideo index-video video-container-streamed"
+  "videoClass" "webinar-videoplayer"
+  "preload" "none"
+  "cursorTextPaused" $playText
+  "cursorTextPlaying" $pauseText
+  "initialSubtitleLang" $defaultCCLang
+  "pageSubtitleLang" $pageSubtitleLang
+  "ccDefaultOn" $ccDefaultOn
+) }}
