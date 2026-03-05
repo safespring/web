@@ -9,6 +9,12 @@ language: "En"
 TOC: "Table of contents"
 ---
 
+{{< ingress >}}
+Safespring may collect and process business contact information, recruitment-related information, and website user information, including information submitted through contact forms on our website and landing pages.
+{{< /ingress >}}
+
+This means that we process your personal data to be able to get in touch with you, and/or create user accounts related to our services (“The Purpose”). The data we process for The Purpose is usually your name, your email address, your phone number, your title, and your employer (“The Personal Data”).
+
 This Privacy Policy describes how Safespring (“we”, “us”, “our”) processes personal data in accordance with:
 - General Data Protection Regulation (“GDPR”)
 - ePrivacy Directive
@@ -91,7 +97,7 @@ A documented Legitimate Interest Assessment (LIA) is maintained where required.
 
 ### 4.4 Retention
 - Raw analytics and log data: maximum 12 months
-- Aggregated/anonymised data: may be retained indefinitely
+
 Retention periods are defined in accordance with ISO 27001 control requirements for information lifecycle management.
 
 ### 4.5 Cookies and Similar Technologies
@@ -100,7 +106,7 @@ Cookies may include:
 - Strictly necessary cookies
 - Functional cookies
 - Analytics technologies
-- Consent management cookies (see Inställningar för cookies on website for list and retention) 
+- Consent management cookies (read more about our cookies in the <a href="javascript:cookieTractor.openConsentSettings()" class="cookie-consent-settings" rel="nofollow">Cookies setting</a>) 
 
 Where legally required, we obtain prior consent before placing non-essential cookies.
 
@@ -138,7 +144,7 @@ Processing job applications and candidate evaluation.
 ### 6.2 Categories of Personal Data
 - Contact details
 - CV and application documents
-- Interview notes
+- Assessment notes
 
 ### 6.3 Legal Basis
 - Art. 6(1)(a) — Consent
