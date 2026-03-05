@@ -241,6 +241,15 @@ hr {
 	margin:50px 0;
 }
 
+.shortcode-divider {
+	width:min(100%, 700px);
+	border:0;
+	border-top:1px solid #195F8C70;
+	float:none;
+	clear:both;
+	margin:50px 0;
+}
+
 .inline-rubrik {
 	text-transform:uppercase;
 	font-weight:600;
@@ -363,7 +372,7 @@ h4 {
 }
 
 @media only screen and (min-width:900px) {
-	#custom-cursor {
+	.custom-cursor {
 		display:flex !important;
 		width:100px;
 		height:100px;
@@ -395,7 +404,7 @@ h4 {
 }
 
 @media only screen and (max-width:900px) {
-	#custom-cursor {
+	.custom-cursor {
 		display:none;
 	}
 	.index-video video:hover {
@@ -413,6 +422,21 @@ h4 {
 	position:relative;
 	max-width:80vw;
 	min-width:330px;
+}
+
+.video-player {
+	display:flex;
+	position:relative;
+	justify-content:center;
+	align-items:stretch;
+	flex-direction:column;
+	flex-wrap:nowrap;
+}
+
+.video-container-streamed {
+	margin-block:0;
+	max-width:100%;
+	min-width:0;
 }
 
 .index-video {
@@ -2541,7 +2565,7 @@ margin:0;
 }
 
 .note-dotted {
-	border: 1px dashed var(--green-color);
+	border: 1px dashed var(--note-accent, var(--green-color));
 	max-width: 600px;
 	/* background: white; */
 	margin: 2.5625em 0;
@@ -2551,7 +2575,7 @@ margin:0;
 }
 
 .note-dotted-title {
-	color:var(--green-color);
+	color:var(--note-accent, var(--green-color));
 	font:var(--heavy-weight) 15px var(--mon-font);
 	text-transform:uppercase;
 	margin: -34px 0 30px -10px;
@@ -2559,17 +2583,67 @@ margin:0;
 	background: #fafefe;
 	width: fit-content;
 	padding-left: 3em;
-    text-indent: -3em;
-
+	text-indent: -3em;
 }
 
 .note-dotted-title::before {
 	margin-right:10px;
 	background:#EAFAEA;
 	padding:7px 14px;
-	color:var(--green-color);
+	color:var(--note-accent, var(--green-color));
 	border-radius:50%;
 	content:"!";
+}
+
+.note-dotted-icon {
+	background:color-mix(in srgb, var(--note-accent, var(--green-color)) 16%, white);
+	color:var(--note-accent, var(--green-color));
+	border-radius:50%;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:34px;
+	height:34px;
+	flex-shrink:0;
+}
+
+.note-dotted-icon i {
+	font-size:14px;
+}
+
+.note-dotted-title--custom {
+	display:flex;
+	align-items:center;
+	gap:10px;
+	margin-top:-42px;
+	padding-left:0;
+	text-indent:0;
+}
+
+.note-dotted-title--custom::before {
+	content:none;
+}
+
+.note-dotted-content {
+	color:var(--alt-color);
+	line-height:1.4;
+}
+
+.note-dotted-content p {
+	color:inherit;
+	margin:0 0 1em 0;
+}
+
+.note-dotted-content p:last-child {
+	margin-bottom:0;
+}
+
+.note-dotted-content > :first-child {
+	margin-top:0;
+}
+
+.note-dotted-content > :last-child {
+	margin-bottom:0;
 }
 
 

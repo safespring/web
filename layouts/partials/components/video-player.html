@@ -1,0 +1,47 @@
+{{- $page := .page | default .Page -}}
+{{- $containerClass := .containerClass | default "index-video video-container" -}}
+{{- $videoPoster := .poster | default "" -}}
+{{- $videoClass := .videoClass | default "" -}}
+{{- $preload := .preload | default "" -}}
+{{- $videoSrc := .src | default "" -}}
+{{- $trackList := .tracks | default (slice) -}}
+{{- $cursorTextPaused := .cursorTextPaused | default "Play" -}}
+{{- $cursorTextPlaying := .cursorTextPlaying | default "Pause" -}}
+{{- $initialSubtitleLang := .initialSubtitleLang | default "" -}}
+{{- $pageSubtitleLang := .pageSubtitleLang | default "" -}}
+{{- $ccDefaultOn := .ccDefaultOn | default "" -}}
+
+<div class="video-player {{ $containerClass }}" data-video-player
+  {{ printf "data-video-src=%q" ($videoSrc | safeURL) | safeHTMLAttr }}
+  {{ printf "data-cursor-paused=%q" $cursorTextPaused | safeHTMLAttr }}
+  {{ printf "data-cursor-playing=%q" $cursorTextPlaying | safeHTMLAttr }}
+  {{ printf "data-initial-subtitle-lang=%q" (lower $initialSubtitleLang) | safeHTMLAttr }}
+  {{ printf "data-page-subtitle-lang=%q" (lower $pageSubtitleLang) | safeHTMLAttr }}
+  {{ if ne $ccDefaultOn "" }}{{ printf "data-cc-default-on=%q" (lower $ccDefaultOn) | safeHTMLAttr }}{{ end }}>
+  <video data-role="video"
+    {{ if $videoClass }}class="{{ $videoClass }}"{{ end }}
+    {{ if $videoPoster }}poster="{{ $videoPoster }}"{{ end }}
+    {{ if $preload }}preload="{{ $preload }}"{{ end }}>
+    {{ range $trackList }}
+    {{- $lang := .language | default .srclang | default "" -}}
+    <track src="{{ .src }}" kind="subtitles" srclang="{{ $lang }}" label="{{ .label | default (upper $lang) }}">
+    {{ end }}
+    Your browser does not support the video tag.
+  </video>
+  <div data-role="caption-overlay" class="video-caption-overlay" aria-live="polite"></div>
+  <div data-role="custom-cursor" class="custom-cursor">{{ $cursorTextPaused }}</div>
+  <div data-role="timeline" class="video-timeline">
+    <div data-role="timeline-fill" class="video-timeline-fill"></div>
+  </div>
+  <div data-role="subtitle-controls" class="video-subtitles">
+    <button type="button" data-role="subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="Slå på undertexter" title="Slå på undertexter"><i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i></button>
+    <button type="button" data-role="mute-toggle" class="video-mute-toggle" aria-pressed="false" aria-label="Ljud av" title="Ljud av"><i class="fa-solid fa-volume" aria-hidden="true"></i></button>
+    <select data-role="subtitle-select" class="video-subtitle-select" aria-label="Subtitle language"></select>
+  </div>
+  <div data-role="time" class="video-time">00:00 / 00:00</div>
+</div>
+
+{{- if and $page (not ($page.Scratch.Get "videoPlayerScriptIncluded")) -}}
+<script src="/js/video-player.js" defer></script>
+{{- $page.Scratch.Set "videoPlayerScriptIncluded" true -}}
+{{- end -}}

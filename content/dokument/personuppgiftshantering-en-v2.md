@@ -39,8 +39,10 @@ Under the GDPR, you have the right to:
 - Withdraw consent at any time (Art. 7(3))
 - Lodge a complaint with your national supervisory authority
 
-{{% note %}}
+{{% note "Contact information" %}}
+
 ### Local Authorities
+
 #### Sweden
 Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten, IMY)  
 website: https://www.imy.se/
