@@ -30,7 +30,7 @@
   {{ $schema := dict }}
 
   {{ if eq $typeFolder "webinar" }}
-    {{ $webinarDescription := or (.Plain | strings.TrimSpace) .Params.intro .Summary }}
+    {{ $webinarDescription := or (trim .Plain " \n\r\t") .Params.intro .Summary }}
     {{ $schema = dict
       "@context" "https://schema.org"
       "@type" "VideoObject"
