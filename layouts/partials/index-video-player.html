@@ -1,23 +1,18 @@
 {{- $videoConfig := .Site.Data.indexvideo | default dict -}}
 {{- $language := .Params.language | default "Se" -}}
-{{- $videoSrc := index $videoConfig "src" | default "" -}}
-{{- $videoPoster := index $videoConfig "poster" | default "/img/card/safespring_use-case_scaleout-1080p.jpg" -}}
-{{- $trackList := index $videoConfig "tracks" | default (slice) -}}
-{{- $playTextMap := index $videoConfig "playText" | default (dict) -}}
-{{- $pauseText := index $videoConfig "pauseText" | default "Pause" -}}
 {{- $pageSubtitleLangMap := dict "Se" "sv" "En" "en" "No" "no" -}}
-{{- $cursorTextPaused := index $playTextMap $language | default (index $playTextMap "Se") | default "Play" -}}
 {{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
-{{- $initialSubtitleLang := $pageSubtitleLang -}}
+{{- $playTextMap := index $videoConfig "playText" | default (dict) -}}
+{{- $cursorTextPaused := index $playTextMap $language | default (index $playTextMap "Se") | default "Play" -}}
 
 {{ partial "components/video-player.html" (dict
   "page" .Page
-  "src" $videoSrc
-  "poster" $videoPoster
-  "tracks" $trackList
+  "src" (index $videoConfig "src" | default "")
+  "poster" (index $videoConfig "poster" | default "/img/card/safespring_use-case_scaleout-1080p.jpg")
+  "tracks" (index $videoConfig "tracks" | default (slice))
   "containerClass" "index-video video-container"
   "cursorTextPaused" $cursorTextPaused
-  "cursorTextPlaying" $pauseText
-  "initialSubtitleLang" $initialSubtitleLang
+  "cursorTextPlaying" (index $videoConfig "pauseText" | default "Pause")
+  "initialSubtitleLang" $pageSubtitleLang
   "pageSubtitleLang" $pageSubtitleLang
 ) }}

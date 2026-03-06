@@ -14,7 +14,7 @@ aliases:
    - /blogg/tidslinje
 ---
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
 
 {{< ingress >}}  
 En sammanfattning av händelserna som ledde fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna för bland annat personuppgiftsskydd och utlämning av data.  
@@ -111,4 +111,3 @@ Lagen öppnar också för att presidenten kan ingå bilaterala avtal med andra l
 [^16]: [Max Schrems uppdaterade klagomål ang Facebook och PRISM](http://www.europe-v-facebook.org/comp_fb_ie.pdf "Max Schrems uppdaterade klagomål ang Facebook och PRISM")
 [^17]: [EU-kommissionens beslut om EU-US Privacy Shield](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1533053249836&uri=CELEX:32016D1250 "EU-kommissionens beslut om att EU-US Privacy Shield ger tillräckligt skydd av EU-medborgares rättigheter vid överföringar av data till USA")
 [^18]: [Rebecca Hill, The Register](https://www.theregister.co.uk/2018/04/12/schrems_facebook_data_flow_eu_us_cjeu_questions/ "Rebecca Hill, The Register")
-

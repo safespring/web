@@ -40,6 +40,15 @@
   </div>
   <div data-role="time" class="video-time">00:00 / 00:00</div>
 </div>
+<script>
+  (function () {
+    var script = document.currentScript;
+    var root = script && script.previousElementSibling;
+    if (root && root.hasAttribute('data-video-player')) {
+      root.__videoSrc = "{{ ($videoSrc | safeURL) | safeJSStr }}";
+    }
+  })();
+</script>
 
 {{- if and $page (not ($page.Scratch.Get "videoPlayerScriptIncluded")) -}}
 <script src="/js/video-player.js" defer></script>
