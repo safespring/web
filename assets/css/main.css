@@ -418,6 +418,7 @@ h4 {
 
 .video-container {
 	display:flex;
+	width:100%;
 	margin-block:10%;
 	position:relative;
 	max-width:80vw;
@@ -435,6 +436,7 @@ h4 {
 
 .video-container-streamed {
 	margin-block:0;
+	width:100%;
 	max-width:100%;
 	min-width:0;
 }

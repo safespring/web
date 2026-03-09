@@ -166,6 +166,8 @@
     var initialSubtitleLang = (root.getAttribute('data-initial-subtitle-lang') || '').toLowerCase();
     var pageSubtitleLang = (root.getAttribute('data-page-subtitle-lang') || '').toLowerCase();
     var ccDefaultOnAttr = normalizeBool(root.getAttribute('data-cc-default-on'));
+    var unmuteOnInteraction = normalizeBool(root.getAttribute('data-unmute-on-interaction')) === true;
+    var unmuteOnPlay = normalizeBool(root.getAttribute('data-unmute-on-play')) === true;
     var debugContext = {
       src: videoSrc,
       normalizedSrc: normalizedVideoSrc,
@@ -538,6 +540,14 @@
         : '<i class="fa-solid fa-volume" aria-hidden="true"></i>';
     }
 
+    function maybeUnmuteVideo() {
+      if (!video.muted) {
+        return;
+      }
+      video.muted = false;
+      updateMuteButton();
+    }
+
     function populateSubtitleOptions() {
       if (!subtitleSelect) {
         return;
@@ -710,17 +720,6 @@
         return;
       }
       video.pause();
-    }
-
-    function requestVideoPlay() {
-      var playResult = video.play();
-      if (playResult && playResult.catch) {
-        return playResult.catch(function (error) {
-          logPlaybackError(error);
-          throw error;
-        });
-      }
-      return Promise.resolve();
     }
 
     if (customCursor) {
@@ -941,6 +940,9 @@
       if (initialized) {
         event.preventDefault();
         event.stopPropagation();
+        if (unmuteOnInteraction) {
+          maybeUnmuteVideo();
+        }
         togglePlayback();
         return;
       }
@@ -948,9 +950,15 @@
       isToggleInProgress = true;
       event.preventDefault();
       event.stopPropagation();
+      if (unmuteOnInteraction) {
+        maybeUnmuteVideo();
+      }
 
       ensureVideoInitialized().then(function () {
-        return requestVideoPlay();
+        togglePlayback();
+      }).catch(function (error) {
+        console.error(error);
+        togglePlayback();
       }).finally(function () {
         isToggleInProgress = false;
       });
@@ -962,6 +970,9 @@
 
     video.addEventListener('play', function () {
       setCursorText();
+      if (unmuteOnPlay) {
+        maybeUnmuteVideo();
+      }
       updateMuteButton();
     });
 

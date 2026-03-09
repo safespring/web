@@ -17,11 +17,14 @@
   {{ printf "data-cursor-playing=%q" $cursorTextPlaying | safeHTMLAttr }}
   {{ printf "data-initial-subtitle-lang=%q" (lower $initialSubtitleLang) | safeHTMLAttr }}
   {{ printf "data-page-subtitle-lang=%q" (lower $pageSubtitleLang) | safeHTMLAttr }}
+  {{ with (index . "unmuteOnInteraction") }}data-unmute-on-interaction="true"{{ end }}
+  {{ with (index . "unmuteOnPlay") }}data-unmute-on-play="true"{{ end }}
   {{ if ne $ccDefaultOn "" }}{{ printf "data-cc-default-on=%q" (lower $ccDefaultOn) | safeHTMLAttr }}{{ end }}>
   <video data-role="video"
     {{ if $videoClass }}class="{{ $videoClass }}"{{ end }}
     {{ if $videoPoster }}poster="{{ $videoPoster }}"{{ end }}
-    {{ if $preload }}preload="{{ $preload }}"{{ end }}>
+    {{ if $preload }}preload="{{ $preload }}"{{ end }}
+    {{ with (index . "muted") }}muted{{ end }}>
     {{ range $trackList }}
     {{- $lang := .language | default .srclang | default "" -}}
     <track src="{{ .src }}" kind="subtitles" srclang="{{ $lang }}" label="{{ .label | default (upper $lang) }}">
