@@ -25,7 +25,7 @@ socialmedia: ""
 ---
 
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna–talarslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna-talkslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
 {{< distance >}}
 
 {{< ingress >}}

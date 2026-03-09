@@ -1,4 +1,33 @@
-<div class="note-dotted">
-  <p class="note-dotted-title">{{ .Get 0 }}</p>
-  {{ .Inner }}
+{{ $title := or (.Get "title") (.Get 0) }}
+{{ $icon := .Get "icon" | default "fa-solid fa-exclamation" }}
+{{ $colorInput := .Get "color" | default "green" | lower }}
+{{ $palette := dict
+  "main" "#195F8C"
+  "heading" "#195F8C"
+  "button" "#f4670f"
+  "link" "#f4670f"
+  "alt" "#323232"
+  "text" "#FFF"
+  "content" "#EEF2F4"
+  "web-green" "#19F064"
+  "middle-blue" "#417DA5"
+  "green" "#32CD32"
+  "clear-blue" "#3C9BCD"
+  "cloud-blue" "#E8EFF3"
+}}
+{{ $accent := index $palette $colorInput }}
+{{ if not $accent }}
+  {{ $accent = $colorInput }}
+{{ end }}
+{{ $inner := trim .Inner " \n\r\t" }}
+{{ $content := $inner | $.Page.RenderString (dict "display" "block") }}
+
+<div class="note-dotted" style="--note-accent: {{ $accent }};">
+  {{ if $title }}
+  <p class="note-dotted-title note-dotted-title--custom">
+    <span class="note-dotted-icon" aria-hidden="true"><i class="{{ $icon }}"></i></span>
+    <span>{{ $title }}</span>
+  </p>
+  {{ end }}
+  <div class="note-dotted-content">{{- $content -}}</div>
 </div>

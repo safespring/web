@@ -2,7 +2,7 @@
 title: "Safespring positionerar sig för vidare tillväxt: Utnämner Johan Harrysson till ny VD 
 "
 date: "2026-02-05"
-intro: "I samband med VD-skiftet tar Safesprings grundare och tidigare VD, Fredric Wallsten, över som Chief Commercial Officer (CCO)"
+intro: "I samband med VD-skiftet tar Safesprings grundare och tidigare VD, Fredric Wallsten, över som Chief Commercial Officer (CCO)."
 draft: false
 section: "blogg"
 tags: ["English"]

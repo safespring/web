@@ -28,7 +28,7 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/demo-backup-2/master.m3u8" "/img/webinar/thumbnails/demo-backup-2.webp" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/demo-backup-2/master.m3u8" "/img/webinar/thumbnails/demo-backup-2.webp" >}}
 {{< distance >}}
 
 {{< ingress >}}

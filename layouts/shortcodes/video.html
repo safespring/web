@@ -1,0 +1,25 @@
+{{- $src := .Get "src" | default (.Get 0) | default "" -}}
+{{- $poster := .Get "poster" | default (.Get 1) | default "" -}}
+{{- $tracks := slice -}}
+{{- with .Get "subtitles" -}}
+  {{- $tracks = transform.Unmarshal . -}}
+{{- end -}}
+{{- $language := .Page.Params.language | default "Se" -}}
+{{- $pageSubtitleLangMap := dict "Se" "sv" "En" "en" "No" "no" -}}
+{{- $pageSubtitleLang := .Get "page_cc_lang" | default (index $pageSubtitleLangMap $language | default "") -}}
+{{- $initialSubtitleLang := .Get "default_cc_lang" | default $pageSubtitleLang -}}
+
+{{ partial "components/video-player.html" (dict
+  "page" .Page
+  "src" $src
+  "poster" $poster
+  "tracks" $tracks
+  "containerClass" (.Get "class" | default "webinarvideo index-video video-container-streamed")
+  "videoClass" (.Get "video_class" | default "webinar-videoplayer")
+  "preload" (.Get "preload" | default "none")
+  "cursorTextPaused" (.Get "play_text" | default "Play")
+  "cursorTextPlaying" (.Get "pause_text" | default "Pause")
+  "initialSubtitleLang" $initialSubtitleLang
+  "pageSubtitleLang" $pageSubtitleLang
+  "ccDefaultOn" (.Get "cc_on" | default "false")
+) }}
