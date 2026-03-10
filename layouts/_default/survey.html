@@ -301,6 +301,11 @@
       text-align: left;
     }
 
+    .survey-page[data-survey-started="false"] .survey-sidebar-panel {
+      max-height: none;
+      overflow: visible;
+    }
+
     .survey-sidebar-top {
       display: flex;
       align-items: center;
@@ -1371,6 +1376,21 @@
 
       .survey-page[data-survey-started="false"] .survey-shell {
         width: 100%;
+      }
+
+      .survey-page[data-survey-started="false"] .survey-sidebar-panel {
+        padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 10vw);
+      }
+
+      .survey-page[data-survey-started="false"] .survey-sections {
+        margin-top: 5.25rem;
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+        border-top: 0;
+      }
+
+      .survey-page[data-survey-started="false"] .survey-section-tab:last-child {
+        border-bottom: 0;
       }
 
       .survey-form-top,
