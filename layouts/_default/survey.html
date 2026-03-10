@@ -1362,10 +1362,15 @@
       }
 
       .survey-page[data-survey-started="false"] {
+        display: block;
         padding:
-          calc(env(safe-area-inset-top, 0px) + 1.5rem)
+          calc(env(safe-area-inset-top, 0px) + 2rem)
           10vw
-          calc(env(safe-area-inset-bottom, 0px) + 2rem);
+          calc(env(safe-area-inset-bottom, 0px) + 3rem);
+      }
+
+      .survey-page[data-survey-started="false"] .survey-shell {
+        width: 100%;
       }
 
       .survey-form-top,
