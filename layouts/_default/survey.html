@@ -20,14 +20,16 @@
         <div class="survey-sidebar-panel" id="survey-sidebar-panel">
           <h1>{{ .Title }}</h1>
           <p class="survey-lead">By Safespring - Swedish cloud nerds since 2006.</p>
-          <p class="survey-copy">We want to hear from the engineers, platform leads, and CTOs who actually run things.</p>
-          <p class="survey-copy survey-copy-muted">Complete all 28 questions and we will ship this bag of excellent coffee to your home or office. No pitch decks. No follow-up calls unless you want them.</p>
+          <p class="survey-copy">We're a small Swedish IaaS/PaaS team (20 people, datacenters in Sweden and Norway) that's been building cloud infrastructure since before &quot;cloud&quot; was cool. We compete with AWS, Azure, and Google &mdash; not on budget, but on sovereignty, control, and not sending your data to another continent.</p>
+          <p class="survey-copy"><strong>We made this survey</strong> because we genuinely want to hear from the people who actually run things: the engineers, the platform leads, the CTOs who still write Terraform on weekends. You know who you are.</p>
+          <p class="survey-copy">Fill out the whole thing and we'll ship you a bag of excellent single-origin whole-bean coffee &mdash; to your home or office, wherever your terminal lives.</p>
+          <p class="survey-copy survey-copy-muted">(No pitch decks. No follow-up calls unless you want them. Promise.)</p>
           <section class="survey-reward-card" aria-label="Survey reward">
             <img src="/img/survey/coffee-reward.webp" alt="Bag of coffee from Lykke Kaffegardar on a yellow background">
             <div class="survey-reward-copy">
               <p class="survey-kicker">Complete The Survey</p>
-              <h2>Get coffee.</h2>
-              <p>Finish all 28 questions and we'll send a bag of Lykke coffee. Choose whole beans or ground when you submit.</p>
+              <h2>Get coffee</h2>
+              <p>Fill out the whole thing and we'll ship you a bag of excellent single-origin coffee to your home or office, wherever your terminal lives.</p>
             </div>
           </section>
           <button type="button" class="button survey-sidebar-start-button" id="survey-start-button">Start survey</button>
@@ -124,7 +126,7 @@
           <div class="survey-submit-panel-top">
             <div>
               <p class="survey-top-label">Send whenever you like</p>
-              <p class="survey-submit-panel-copy">Preferably at the end, but partial answers are fine. Add an email if you want coffee or a reply.</p>
+              <p class="survey-submit-panel-copy">Preferably at the end, but partial answers are fine. Add an email if you want coffee or a reply. No pitch decks. No follow-up calls unless you want them.</p>
               <p class="survey-submit-panel-note">If you'd like coffee, tell us whether you prefer whole beans or ground and we'll take it from there.</p>
             </div>
             <button type="button" class="survey-submit-close" id="survey-submit-close">Close</button>
@@ -482,6 +484,8 @@
 
     .survey-reward-copy p {
       margin: 0;
+      font-size: 0.94rem;
+      line-height: 1.5;
     }
 
     .survey-page[data-theme="dark"] .survey-sidebar h1 {
