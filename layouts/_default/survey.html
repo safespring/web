@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <body>
-  <main class="survey-page" data-survey-started="false" data-sidebar-open="true">
+  <main class="survey-page" data-survey-started="false" data-sidebar-open="true" data-survey-entering="false">
     <section class="survey-shell">
       <aside class="survey-sidebar">
         <div class="survey-sidebar-top">
@@ -11,8 +11,9 @@
             <button type="button" class="survey-info-toggle" id="survey-info-toggle" aria-expanded="true">
               <span class="survey-info-toggle-label">Hide info</span>
             </button>
-            <button type="button" class="survey-theme-toggle" id="survey-theme-toggle" aria-pressed="false">
-              <span class="survey-theme-toggle-label">Dark mode</span>
+            <button type="button" class="survey-theme-toggle" id="survey-theme-toggle" aria-pressed="false" aria-label="Dark mode" title="Dark mode">
+              <i class="fa-solid fa-moon" aria-hidden="true"></i>
+              <span class="survey-sr-only survey-theme-toggle-label">Dark mode</span>
             </button>
           </div>
         </div>
@@ -20,40 +21,48 @@
           <h1>{{ .Title }}</h1>
           <p class="survey-lead">By Safespring - Swedish cloud nerds since 2006.</p>
           <p class="survey-copy">We want to hear from the engineers, platform leads, and CTOs who actually run things.</p>
-          <p class="survey-copy survey-copy-muted">Finish the survey and we will ship a bag of excellent single-origin whole-bean coffee. No pitch decks. No follow-up calls unless you want them.</p>
+          <p class="survey-copy survey-copy-muted">Complete all 28 questions and we will ship this bag of excellent coffee to your home or office. No pitch decks. No follow-up calls unless you want them.</p>
+          <section class="survey-reward-card" aria-label="Survey reward">
+            <img src="/img/survey/coffee-reward.webp" alt="Bag of coffee from Lykke Kaffegardar on a yellow background">
+            <div class="survey-reward-copy">
+              <p class="survey-kicker">Complete The Survey</p>
+              <h2>Get coffee.</h2>
+              <p>Finish all 28 questions and we'll send a bag of Lykke coffee. Choose whole beans or ground when you submit.</p>
+            </div>
+          </section>
           <button type="button" class="button survey-sidebar-start-button" id="survey-start-button">Start survey</button>
 
           <nav class="survey-sections" aria-label="Survey sections">
-            <button type="button" class="survey-section-tab" data-section-target="who">
+            <div class="survey-section-tab" data-section-target="who" aria-current="false">
               <span>01</span>
               <strong>Who Are You?</strong>
               <small>Questions 1-6</small>
-            </button>
-            <button type="button" class="survey-section-tab" data-section-target="cloud">
+            </div>
+            <div class="survey-section-tab" data-section-target="cloud" aria-current="false">
               <span>02</span>
               <strong>Cloud Decisions</strong>
               <small>Questions 7-12</small>
-            </button>
-            <button type="button" class="survey-section-tab" data-section-target="buying">
+            </div>
+            <div class="survey-section-tab" data-section-target="buying" aria-current="false">
               <span>03</span>
               <strong>Discovery &amp; Buying</strong>
               <small>Questions 13-15</small>
-            </button>
-            <button type="button" class="survey-section-tab" data-section-target="brand">
+            </div>
+            <div class="survey-section-tab" data-section-target="brand" aria-current="false">
               <span>04</span>
               <strong>Brand &amp; Mascot</strong>
               <small>Questions 16-21</small>
-            </button>
-            <button type="button" class="survey-section-tab" data-section-target="community">
+            </div>
+            <div class="survey-section-tab" data-section-target="community" aria-current="false">
               <span>05</span>
               <strong>Value &amp; Community</strong>
               <small>Questions 22-25</small>
-            </button>
-            <button type="button" class="survey-section-tab" data-section-target="wrap">
+            </div>
+            <div class="survey-section-tab" data-section-target="wrap" aria-current="false">
               <span>06</span>
               <strong>Wrap-Up</strong>
               <small>Questions 26-28</small>
-            </button>
+            </div>
           </nav>
         </div>
       </aside>
@@ -116,6 +125,7 @@
             <div>
               <p class="survey-top-label">Send whenever you like</p>
               <p class="survey-submit-panel-copy">Preferably at the end, but partial answers are fine. Add an email if you want coffee or a reply.</p>
+              <p class="survey-submit-panel-note">If you'd like coffee, tell us whether you prefer whole beans or ground and we'll take it from there.</p>
             </div>
             <button type="button" class="survey-submit-close" id="survey-submit-close">Close</button>
           </div>
@@ -125,6 +135,23 @@
               <span>Reply email</span>
               <input type="email" name="email" placeholder="you@company.com" autocomplete="email" form="safespring-survey-form">
             </label>
+            <div class="survey-choice-group">
+              <span class="survey-choice-label">Coffee preference</span>
+              <div class="survey-choice-options">
+                <label class="survey-choice-option">
+                  <input type="radio" name="coffee_preference" value="Whole beans" form="safespring-survey-form">
+                  <span>Whole beans</span>
+                </label>
+                <label class="survey-choice-option">
+                  <input type="radio" name="coffee_preference" value="Ground" form="safespring-survey-form">
+                  <span>Ground</span>
+                </label>
+                <label class="survey-choice-option">
+                  <input type="radio" name="coffee_preference" value="Skip for now" form="safespring-survey-form">
+                  <span>Skip for now</span>
+                </label>
+              </div>
+            </div>
             <label class="survey-consent">
               <input type="checkbox" name="privacy_consent" required form="safespring-survey-form">
               <span>I agree that Safespring may process my answers and contact details to respond and send the coffee.</span>
@@ -240,6 +267,7 @@
       grid-template-columns: minmax(16rem, 24rem) minmax(0, 1fr);
       gap: clamp(1.5rem, 2.5vw, 3rem);
       align-items: start;
+      transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1), gap 0.45s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .survey-page[data-survey-started="false"] {
@@ -267,8 +295,8 @@
       width: min(100%, 40rem);
       padding: 0;
       display: grid;
-      justify-items: center;
-      text-align: center;
+      justify-items: start;
+      text-align: left;
     }
 
     .survey-sidebar-top {
@@ -281,8 +309,9 @@
 
     .survey-page[data-survey-started="false"] .survey-sidebar-top {
       width: 100%;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 1.5rem;
     }
 
@@ -293,7 +322,7 @@
     }
 
     .survey-page[data-survey-started="false"] .survey-sidebar-controls {
-      justify-content: center;
+      justify-content: flex-end;
     }
 
     .survey-sidebar-logo {
@@ -322,6 +351,21 @@
       transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
     }
 
+    .survey-theme-toggle {
+      width: 3rem;
+      height: 3rem;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+    }
+
+    .survey-theme-toggle i {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
     .survey-theme-toggle:hover,
     .survey-info-toggle:hover {
       border-color: var(--survey-line-strong);
@@ -331,10 +375,27 @@
     .survey-sidebar-panel {
       display: grid;
       width: 100%;
+      overflow: hidden;
+      transform-origin: top center;
+      transition: opacity 0.38s cubic-bezier(0.22, 1, 0.36, 1), transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), max-height 0.46s cubic-bezier(0.22, 1, 0.36, 1), margin 0.38s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .survey-sidebar-panel[hidden] {
       display: none !important;
+    }
+
+    .survey-page[data-sidebar-open="false"] .survey-sidebar-panel {
+      opacity: 0.08;
+      transform: translateY(-0.85rem) scale(0.985);
+      max-height: 0;
+      margin: 0;
+      pointer-events: none;
+    }
+
+    .survey-page[data-sidebar-open="true"] .survey-sidebar-panel {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 80rem;
     }
 
     .survey-page[data-survey-started="false"] .survey-info-toggle {
@@ -362,8 +423,8 @@
 
     .survey-page[data-survey-started="false"] .survey-sidebar h1 {
       max-width: 14ch;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .survey-lead {
@@ -384,6 +445,103 @@
       color: var(--survey-soft-text);
     }
 
+    .survey-reward-card {
+      display: grid;
+      grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
+      gap: 1.1rem;
+      align-items: center;
+      margin: 1rem 0 0.25rem;
+      padding: 1rem;
+      border: 1px solid var(--survey-line);
+      border-radius: 2.5rem;
+      background: linear-gradient(135deg, rgba(244, 103, 15, 0.1), rgba(255, 215, 0, 0.1));
+    }
+
+    .survey-reward-card img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      display: block;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+      justify-self: start;
+      align-self: center;
+    }
+
+    .survey-reward-copy {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .survey-reward-copy h2 {
+      margin: 0;
+      font-size: clamp(1.65rem, 3vw, 2.3rem);
+      line-height: 0.95;
+    }
+
+    .survey-reward-copy p {
+      margin: 0;
+    }
+
+    .survey-page[data-theme="dark"] .survey-sidebar h1 {
+      color: var(--survey-accent);
+    }
+
+    .survey-page[data-theme="dark"] .survey-lead {
+      color: var(--survey-text);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-card {
+      background:
+        linear-gradient(135deg, rgba(255, 138, 29, 0.14), rgba(122, 200, 255, 0.08)),
+        rgba(16, 29, 40, 0.96);
+      border-color: rgba(133, 179, 211, 0.3);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-copy h2 {
+      color: var(--survey-text);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-copy p {
+      color: var(--survey-muted);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-copy .survey-kicker {
+      color: #8fd0ff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .survey-page:not([data-theme="light"]) .survey-sidebar h1 {
+        color: var(--survey-accent);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-lead {
+        color: var(--survey-text);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-card {
+        background:
+          linear-gradient(135deg, rgba(255, 138, 29, 0.14), rgba(122, 200, 255, 0.08)),
+          rgba(16, 29, 40, 0.96);
+        border-color: rgba(133, 179, 211, 0.3);
+        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-copy h2 {
+        color: var(--survey-text);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-copy p {
+        color: var(--survey-muted);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-copy .survey-kicker {
+        color: #8fd0ff;
+      }
+    }
+
     .survey-sidebar-start-button {
       justify-self: start;
       margin: 0.45rem 0 0.15rem;
@@ -394,7 +552,7 @@
     }
 
     .survey-page[data-survey-started="false"] .survey-sidebar-start-button {
-      justify-self: center;
+      justify-self: start;
       margin-top: 1rem;
     }
 
@@ -409,6 +567,7 @@
     .survey-page[data-survey-started="false"] .survey-sections {
       margin-top: 1.75rem;
       padding-top: 1.5rem;
+      width: 100%;
     }
 
     .survey-section-tab {
@@ -423,7 +582,6 @@
       background: transparent;
       color: var(--survey-text);
       text-align: left;
-      cursor: pointer;
       transition: color 0.2s ease, border-color 0.2s ease;
     }
 
@@ -451,8 +609,7 @@
       text-align: right;
     }
 
-    .survey-section-tab.is-active,
-    .survey-section-tab:hover {
+    .survey-section-tab.is-active {
       color: var(--survey-accent);
       border-color: var(--survey-line-strong);
     }
@@ -461,10 +618,25 @@
       min-width: 0;
       width: min(100%, 70rem);
       margin: 0 auto;
+      transition: opacity 0.46s cubic-bezier(0.22, 1, 0.36, 1), transform 0.46s cubic-bezier(0.22, 1, 0.36, 1), max-height 0.46s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .survey-page[data-survey-started="false"] .survey-main {
-      display: none;
+      opacity: 0;
+      transform: translateY(2rem) scale(0.985);
+      max-height: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .survey-page[data-survey-started="true"] .survey-main {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 200rem;
+    }
+
+    .survey-page[data-survey-entering="true"] .survey-main {
+      transition-delay: 80ms;
     }
 
     .survey-form {
@@ -561,6 +733,99 @@
 
     .survey-card[hidden] {
       display: none !important;
+    }
+
+    .survey-card.is-animating {
+      animation: survey-step-in 420ms cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+
+    .survey-card.is-animating h2,
+    .survey-card.is-animating .survey-question-help,
+    .survey-card.is-animating .survey-transition-copy,
+    .survey-card.is-animating #survey-fields,
+    .survey-card.is-animating .survey-card-kicker {
+      animation: survey-copy-in 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .survey-card.is-animating .survey-question-help,
+    .survey-card.is-animating .survey-transition-copy,
+    .survey-card.is-animating #survey-fields {
+      animation-delay: 60ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *,
+    .survey-card.is-animating .survey-choice-option {
+      animation: survey-item-in 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(1),
+    .survey-card.is-animating .survey-choice-option:nth-child(1) {
+      animation-delay: 100ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(2),
+    .survey-card.is-animating .survey-choice-option:nth-child(2) {
+      animation-delay: 150ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(3),
+    .survey-card.is-animating .survey-choice-option:nth-child(3) {
+      animation-delay: 200ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(4),
+    .survey-card.is-animating .survey-choice-option:nth-child(4) {
+      animation-delay: 250ms;
+    }
+
+    @keyframes survey-step-in {
+      from {
+        opacity: 0;
+        transform: translateY(26px) scale(0.985);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes survey-copy-in {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes survey-item-in {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .survey-card.is-animating,
+      .survey-card.is-animating h2,
+      .survey-card.is-animating .survey-question-help,
+      .survey-card.is-animating .survey-transition-copy,
+      .survey-card.is-animating #survey-fields,
+      .survey-card.is-animating .survey-card-kicker,
+      .survey-card.is-animating .survey-step-fields > *,
+      .survey-card.is-animating .survey-choice-option {
+        animation: none !important;
+      }
     }
 
     .survey-card-intro {
@@ -791,6 +1056,12 @@
       max-width: 42rem;
     }
 
+    .survey-submit-panel-note {
+      margin: 0.5rem 0 0;
+      color: var(--survey-soft-text);
+      font-size: 0.94rem;
+    }
+
     .survey-submit-close {
       border: 0;
       background: transparent;
@@ -868,6 +1139,178 @@
       transform: none;
     }
 
+    .survey-page[data-theme="dark"] .survey-form {
+      background: rgba(13, 24, 34, 0.96);
+      border-color: rgba(143, 208, 255, 0.18);
+    }
+
+    .survey-page[data-theme="dark"] .survey-form-top,
+    .survey-page[data-theme="dark"] .survey-card,
+    .survey-page[data-theme="dark"] .survey-actions {
+      border-color: rgba(143, 208, 255, 0.12);
+    }
+
+    .survey-page[data-theme="dark"] .survey-top-label,
+    .survey-page[data-theme="dark"] .survey-progress p {
+      color: #8fd0ff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-top-meta {
+      color: rgba(237, 247, 251, 0.78);
+    }
+
+    .survey-page[data-theme="dark"] .survey-question-card h2,
+    .survey-page[data-theme="dark"] .survey-transition-card h2 {
+      color: #f5fbff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-question-help,
+    .survey-page[data-theme="dark"] .survey-transition-copy,
+    .survey-page[data-theme="dark"] .survey-submit-panel-copy,
+    .survey-page[data-theme="dark"] .survey-submit-panel-note {
+      color: rgba(237, 247, 251, 0.8);
+    }
+
+    .survey-page[data-theme="dark"] .survey-field input,
+    .survey-page[data-theme="dark"] .survey-field textarea,
+    .survey-page[data-theme="dark"] .survey-file-input {
+      background: rgba(20, 34, 46, 0.98);
+      border-color: rgba(143, 208, 255, 0.16);
+      color: #f5fbff;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    }
+
+    .survey-page[data-theme="dark"] .survey-field input::placeholder,
+    .survey-page[data-theme="dark"] .survey-field textarea::placeholder {
+      color: rgba(237, 247, 251, 0.3);
+    }
+
+    .survey-page[data-theme="dark"] .survey-field input:focus,
+    .survey-page[data-theme="dark"] .survey-field textarea:focus,
+    .survey-page[data-theme="dark"] .survey-file-input:focus,
+    .survey-page[data-theme="dark"] .survey-choice-option input:focus + span {
+      border-color: #8fd0ff;
+      box-shadow: 0 0 0 4px rgba(143, 208, 255, 0.14);
+    }
+
+    .survey-page[data-theme="dark"] .survey-choice-option span {
+      background: rgba(20, 34, 46, 0.98);
+      border-color: rgba(143, 208, 255, 0.14);
+      color: rgba(245, 251, 255, 0.92);
+    }
+
+    .survey-page[data-theme="dark"] .survey-choice-option input:checked + span {
+      border-color: #8fd0ff;
+      background: linear-gradient(135deg, rgba(122, 200, 255, 0.18), rgba(50, 205, 50, 0.1));
+      color: #f5fbff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-consent {
+      color: rgba(237, 247, 251, 0.82);
+    }
+
+    .survey-page[data-theme="dark"] .survey-submit-panel {
+      background: rgba(12, 22, 31, 0.96);
+      border-color: rgba(143, 208, 255, 0.16);
+    }
+
+    .survey-page[data-theme="dark"] .survey-nav-button {
+      border-color: rgba(143, 208, 255, 0.2);
+      color: #8fd0ff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-send-button {
+      border-color: rgba(255, 138, 29, 0.32);
+      color: #ffb066;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .survey-page:not([data-theme="light"]) .survey-form {
+        background: rgba(13, 24, 34, 0.96);
+        border-color: rgba(143, 208, 255, 0.18);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-form-top,
+      .survey-page:not([data-theme="light"]) .survey-card,
+      .survey-page:not([data-theme="light"]) .survey-actions {
+        border-color: rgba(143, 208, 255, 0.12);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-top-label,
+      .survey-page:not([data-theme="light"]) .survey-progress p {
+        color: #8fd0ff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-top-meta {
+        color: rgba(237, 247, 251, 0.78);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-question-card h2,
+      .survey-page:not([data-theme="light"]) .survey-transition-card h2 {
+        color: #f5fbff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-question-help,
+      .survey-page:not([data-theme="light"]) .survey-transition-copy,
+      .survey-page:not([data-theme="light"]) .survey-submit-panel-copy,
+      .survey-page:not([data-theme="light"]) .survey-submit-panel-note {
+        color: rgba(237, 247, 251, 0.8);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-field input,
+      .survey-page:not([data-theme="light"]) .survey-field textarea,
+      .survey-page:not([data-theme="light"]) .survey-file-input {
+        background: rgba(20, 34, 46, 0.98);
+        border-color: rgba(143, 208, 255, 0.16);
+        color: #f5fbff;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-field input::placeholder,
+      .survey-page:not([data-theme="light"]) .survey-field textarea::placeholder {
+        color: rgba(237, 247, 251, 0.3);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-field input:focus,
+      .survey-page:not([data-theme="light"]) .survey-field textarea:focus,
+      .survey-page:not([data-theme="light"]) .survey-file-input:focus,
+      .survey-page:not([data-theme="light"]) .survey-choice-option input:focus + span {
+        border-color: #8fd0ff;
+        box-shadow: 0 0 0 4px rgba(143, 208, 255, 0.14);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-choice-option span {
+        background: rgba(20, 34, 46, 0.98);
+        border-color: rgba(143, 208, 255, 0.14);
+        color: rgba(245, 251, 255, 0.92);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-choice-option input:checked + span {
+        border-color: #8fd0ff;
+        background: linear-gradient(135deg, rgba(122, 200, 255, 0.18), rgba(50, 205, 50, 0.1));
+        color: #f5fbff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-consent {
+        color: rgba(237, 247, 251, 0.82);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-submit-panel {
+        background: rgba(12, 22, 31, 0.96);
+        border-color: rgba(143, 208, 255, 0.16);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-nav-button {
+        border-color: rgba(143, 208, 255, 0.2);
+        color: #8fd0ff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-send-button {
+        border-color: rgba(255, 138, 29, 0.32);
+        color: #ffb066;
+      }
+    }
+
     .survey-noscript {
       margin-top: 1rem;
       padding: 1rem;
@@ -941,7 +1384,7 @@
       }
 
       .survey-page[data-survey-started="false"] .survey-sidebar-controls {
-        justify-content: center;
+        justify-content: flex-end;
       }
 
       .survey-form-top,
@@ -950,6 +1393,10 @@
       .survey-actions {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
+      }
+
+      .survey-reward-card {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -987,6 +1434,7 @@
       const submitPanel = document.getElementById("survey-submit-panel");
       const submitClose = document.getElementById("survey-submit-close");
       const themeToggle = document.getElementById("survey-theme-toggle");
+      const themeToggleIcon = themeToggle.querySelector("i");
       const themeToggleLabel = themeToggle.querySelector(".survey-theme-toggle-label");
       const sectionTabs = Array.from(document.querySelectorAll(".survey-section-tab"));
 
@@ -1454,12 +1902,14 @@
         const resolvedTheme = resolveTheme(themeChoice);
         page.dataset.theme = resolvedTheme;
         themeToggle.setAttribute("aria-pressed", String(resolvedTheme === "dark"));
+        themeToggleIcon.className = resolvedTheme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
         themeToggleLabel.textContent = resolvedTheme === "dark" ? "Light mode" : "Dark mode";
+        themeToggle.setAttribute("aria-label", resolvedTheme === "dark" ? "Light mode" : "Dark mode");
+        themeToggle.setAttribute("title", resolvedTheme === "dark" ? "Light mode" : "Dark mode");
       }
 
       function setSidebarOpen(isOpen) {
         page.dataset.sidebarOpen = isOpen ? "true" : "false";
-        sidebarPanel.hidden = !isOpen;
         infoToggle.setAttribute("aria-expanded", String(isOpen));
         infoToggleLabel.textContent = isOpen ? "Hide info" : "Info";
       }
@@ -1469,6 +1919,18 @@
         if (!isStarted) {
           setSidebarOpen(true);
         }
+      }
+
+      function enterSurvey(stepIndex) {
+        page.dataset.surveyEntering = "true";
+        setSurveyStarted(true);
+        setSidebarOpen(true);
+        renderStep(stepIndex);
+
+        window.setTimeout(function () {
+          setSidebarOpen(false);
+          page.dataset.surveyEntering = "false";
+        }, 280);
       }
 
       function escapeHtml(value) {
@@ -1638,6 +2100,7 @@
         sectionTabs.forEach(function (tab) {
           const matches = tab.dataset.sectionTarget === activeSection;
           tab.classList.toggle("is-active", matches);
+          tab.setAttribute("aria-current", matches ? "true" : "false");
         });
       }
 
@@ -1647,6 +2110,16 @@
         progressBarFill.style.width = completion + "%";
         progressText.textContent = completion + "%";
         progressField.value = answeredCount + " of " + questions.length;
+      }
+
+      function triggerCardAnimation(card) {
+        card.classList.remove("is-animating");
+        window.requestAnimationFrame(function () {
+          card.classList.add("is-animating");
+          window.setTimeout(function () {
+            card.classList.remove("is-animating");
+          }, 720);
+        });
       }
 
       function scrollSurveyToViewportCenter() {
@@ -1690,6 +2163,7 @@
         transitionCopy.textContent = "Let's move on to " + section.headline + ". " + section.blurb;
         updateSectionTabs(question.section);
         window.localStorage.setItem(stepStorageKey, String(stepIndex));
+        triggerCardAnimation(transitionCard);
         scrollSurveyToViewportCenter();
       }
 
@@ -1714,6 +2188,7 @@
           nextButton.textContent = "Next question";
           sectionField.value = "Introduction";
           updateSectionTabs("");
+          triggerCardAnimation(introCard);
           scrollSurveyToViewportCenter();
           return;
         }
@@ -1743,6 +2218,7 @@
 
         nextButton.hidden = stepIndex === questions.length - 1;
         window.localStorage.setItem(stepStorageKey, String(stepIndex));
+        triggerCardAnimation(questionCard);
         scrollSurveyToViewportCenter();
       }
 
@@ -1763,28 +2239,9 @@
         });
       }
 
-      function jumpToSection(sectionKey) {
-        const targetIndex = questions.findIndex(function (question) {
-          return question.section === sectionKey;
-        });
-
-        if (targetIndex >= 0) {
-          setSurveyStarted(true);
-          setSidebarOpen(false);
-          if (targetIndex > 0) {
-            renderTransition(targetIndex, targetIndex);
-            return;
-          }
-
-          renderStep(targetIndex);
-        }
-      }
-
       startButton.addEventListener("click", function () {
         const storedStep = getStoredStep();
-        setSurveyStarted(true);
-        setSidebarOpen(false);
-        renderStep(storedStep >= 0 ? storedStep : 0);
+        enterSurvey(storedStep >= 0 ? storedStep : 0);
       });
 
       infoToggle.addEventListener("click", function () {
@@ -1838,12 +2295,6 @@
 
       submitClose.addEventListener("click", function () {
         submitPanel.hidden = true;
-      });
-
-      sectionTabs.forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          jumpToSection(tab.dataset.sectionTarget);
-        });
       });
 
       themeToggle.addEventListener("click", function () {
