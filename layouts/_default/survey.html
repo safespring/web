@@ -664,12 +664,15 @@
     .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-sidebar-top {
       flex-direction: column;
       align-items: flex-start;
+      justify-content: flex-start;
     }
 
     .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-sidebar-controls {
       width: 100%;
-      flex-direction: column;
-      align-items: stretch;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
 
     .survey-form-top,
@@ -1385,6 +1388,9 @@
       .survey-sidebar-controls {
         width: 100%;
         justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
       }
 
       .survey-page[data-survey-started="false"] .survey-sidebar-controls {
