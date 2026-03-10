@@ -24,6 +24,7 @@
           <p class="survey-copy"><strong>We made this survey</strong> because we genuinely want to hear from the people who actually run things: the engineers, the platform leads, the CTOs who still write Terraform on weekends. You know who you are.</p>
           <p class="survey-copy">Fill out the whole thing and we'll ship you a bag of excellent single-origin whole-bean coffee &mdash; to your home or office, wherever your terminal lives.</p>
           <p class="survey-copy survey-copy-muted">(No pitch decks. No follow-up calls unless you want them. Promise.)</p>
+          <button type="button" class="button survey-sidebar-start-button" id="survey-start-button">Start survey</button>
           <section class="survey-reward-card" aria-label="Survey reward">
             <img src="/img/survey/coffee-reward.webp" alt="Bag of coffee from Lykke Kaffegardar on a yellow background">
             <div class="survey-reward-copy">
@@ -32,7 +33,6 @@
               <p>Fill out the whole thing and we'll ship you a bag of excellent single-origin coffee to your home or office, wherever your terminal lives.</p>
             </div>
           </section>
-          <button type="button" class="button survey-sidebar-start-button" id="survey-start-button">Start survey</button>
 
           <nav class="survey-sections" aria-label="Survey sections">
             <div class="survey-section-tab" data-section-target="who" aria-current="false">
@@ -454,9 +454,8 @@
       align-items: center;
       margin: 1rem 0 0.25rem;
       padding: 1rem;
-      border: 1px solid var(--survey-line);
       border-radius: 2.5rem;
-      background: linear-gradient(135deg, rgba(244, 103, 15, 0.1), rgba(255, 215, 0, 0.1));
+      background: linear-gradient(180deg, rgb(252 210 60), rgb(250 219 73));
     }
 
     .survey-reward-card img {
@@ -466,7 +465,6 @@
       object-fit: cover;
       border-radius: 1.5rem;
       display: block;
-      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
       justify-self: start;
       align-self: center;
     }
@@ -1129,6 +1127,16 @@
       transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
     }
 
+    .survey-actions .button,
+    .survey-send-button {
+      min-height: auto;
+      padding: 0.95rem 1.25rem 0.82rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
     .survey-send-button {
       border-color: rgba(244, 103, 15, 0.32);
       color: var(--survey-action);
@@ -1347,11 +1355,17 @@
 
     @media (max-width: 720px) {
       .survey-page {
-        padding: 8.75rem 0.75rem 3rem;
+        padding:
+          calc(env(safe-area-inset-top, 0px) + 8.75rem)
+          0.75rem
+          calc(env(safe-area-inset-bottom, 0px) + 3rem);
       }
 
       .survey-page[data-survey-started="false"] {
-        padding: 1.5rem 0.75rem;
+        padding:
+          calc(env(safe-area-inset-top, 0px) + 1.5rem)
+          0.75rem
+          calc(env(safe-area-inset-bottom, 0px) + 2rem);
       }
 
       .survey-form-top,
@@ -1407,6 +1421,17 @@
 
       .survey-reward-card {
         grid-template-columns: 1fr;
+        gap: 0.9rem;
+        padding: 2rem;
+      }
+
+      .survey-reward-card img {
+        width: min(100%);
+        height: auto;
+      }
+
+      .survey-reward-copy h2 {
+        font-size: clamp(1.9rem, 10vw, 2.5rem);
       }
     }
   </style>
