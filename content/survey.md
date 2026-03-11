@@ -8,5 +8,6 @@ url: "/survey/mascot/"
 aliases:
   - "/survey/"
 intro: "A multi-step survey for engineers, platform leads, and CTOs who actually run cloud infrastructure."
+socialmedia: "survey/mascot-og.png"
 background: "safespring-blue-fade2.svg"
 ---
