@@ -21,7 +21,7 @@ Here you can find contact information for some of our team members. Don't hesita
 
 {{< contact picture="daniel-m.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
 {{< contact picture="gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
-{{< contact picture="/marcus.webp" title="Marketing Manager" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
+{{< contact picture="/marcus.webp" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
 
 {{< distance >}}
 
@@ -37,12 +37,10 @@ Below you can find the addresses of our offices in Sweden and Norway. Click the 
 Our management team works to ensure we deliver high-quality and innovative services. Here you can find contact information for our management team.
 
 {{< flexbox >}}
-{{< contact-small title="CEO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
+{{< contact-small title="CEO" name="Johan Harrysson" email="johan.harrysson@safespring.com" >}}
 {{< contact-small title="People & Culture" name="Marietta Wasilewska" email="marietta.wasilewska@safespring.com" >}}
-{{< contact-small title="CFO" name="Peter Marklund" email="peter.marklund@safespring.com" >}}
-{{< contact-small title="Marketing Manager" name="Marcus Boberg" email="marcus.boberg@safespring.com" >}}
+{{< contact-small title="CCO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
 {{< contact-small title="Head of Engineering" name="Rob Haverkamp" email="rob.haverkamp@safespring.com" >}}
-{{< contact-small title="Head of Research and Development" name="Jan Ivar Beddari" email="beddari@safespring.com" >}}
 {{< /flexbox >}}
 
 {{< distance >}}
