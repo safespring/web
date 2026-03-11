@@ -24,6 +24,10 @@
           <p class="survey-copy"><strong>We made this survey</strong> because we genuinely want to hear from the people who actually run things: the engineers, the platform leads, the CTOs who still write Terraform on weekends. You know who you are.</p>
           <p class="survey-copy">Fill out the whole thing and we'll ship you a bag of excellent single-origin whole-bean coffee &mdash; to your home or office, wherever your terminal lives.</p>
           <p class="survey-copy survey-copy-muted">(No pitch decks. No follow-up calls unless you want them. Promise.)</p>
+          <p class="survey-language-note">
+            <img src="/img/flags/sweden.svg" alt="" aria-hidden="true">
+            <span>You can answer in Swedish too, if that is easier.</span>
+          </p>
           <button type="button" class="button survey-sidebar-start-button" id="survey-start-button">Start survey</button>
           <section class="survey-reward-card" aria-label="Survey reward">
             <img src="/img/survey/coffee-reward.webp" alt="Bag of coffee from Lykke Kaffegardar on a yellow background">
@@ -450,6 +454,22 @@
 
     .survey-copy-muted {
       color: var(--survey-soft-text);
+    }
+
+    .survey-language-note {
+      margin: 0.2rem 0 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.94rem;
+      color: var(--survey-muted);
+    }
+
+    .survey-language-note img {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 999px;
+      flex: 0 0 auto;
     }
 
     .survey-reward-card {
