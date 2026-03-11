@@ -2230,6 +2230,7 @@
       function renderStep(stepIndex) {
         currentStep = stepIndex;
         const isIntro = stepIndex < 0;
+        const isLastStep = stepIndex === questions.length - 1;
         currentMode = isIntro ? "intro" : "question";
         pendingStep = null;
         setSurveyStarted(!isIntro);
@@ -2258,7 +2259,7 @@
 
         sectionLabel.textContent = section.label;
         setProgress(question.number);
-        nextButton.textContent = "Next question";
+        nextButton.textContent = isLastStep ? "Send survey" : "Next question";
         questionTitle.textContent = question.title;
 
         if (question.help) {
@@ -2276,7 +2277,7 @@
         sectionField.value = section.label;
         updateSectionTabs(question.section);
 
-        nextButton.hidden = stepIndex === questions.length - 1;
+        nextButton.hidden = false;
         window.localStorage.setItem(stepStorageKey, String(stepIndex));
         triggerCardAnimation(questionCard);
         scrollSurveyToViewportCenter();
@@ -2331,6 +2332,12 @@
 
         if (currentStep < 0) {
           renderStep(0);
+          return;
+        }
+
+        if (currentStep === questions.length - 1) {
+          submitPanel.hidden = false;
+          submitPanel.scrollIntoView({ behavior: "smooth", block: "start" });
           return;
         }
 
