@@ -1,0 +1,2421 @@
+{{ partial "head.html" . }}
+<body>
+  <main class="survey-page" data-survey-started="false" data-sidebar-open="true" data-survey-entering="false">
+    <section class="survey-shell">
+      <aside class="survey-sidebar">
+        <div class="survey-sidebar-top">
+          <a class="survey-sidebar-logo" href="/en/" aria-label="Safespring home">
+            <img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring logotype">
+          </a>
+          <div class="survey-sidebar-controls">
+            <button type="button" class="survey-info-toggle" id="survey-info-toggle" aria-expanded="true">
+              <span class="survey-info-toggle-label">Hide info</span>
+            </button>
+            <button type="button" class="survey-theme-toggle" id="survey-theme-toggle" aria-pressed="false" aria-label="Dark mode" title="Dark mode">
+              <i class="fa-solid fa-moon" aria-hidden="true"></i>
+              <span class="survey-sr-only survey-theme-toggle-label">Dark mode</span>
+            </button>
+          </div>
+        </div>
+        <div class="survey-sidebar-panel" id="survey-sidebar-panel">
+          <h1>{{ .Title }}</h1>
+          <p class="survey-lead">By Safespring - Swedish cloud nerds since 2006.</p>
+          <p class="survey-copy">We're a small Swedish IaaS/PaaS team (20 people, datacenters in Sweden and Norway) that's been building cloud infrastructure since before &quot;cloud&quot; was cool. We compete with AWS, Azure, and Google &mdash; not on budget, but on sovereignty, control, and not sending your data to another continent.</p>
+          <p class="survey-copy"><strong>We made this survey</strong> because we genuinely want to hear from the people who actually run things: the engineers, the platform leads, the CTOs who still write Terraform on weekends. You know who you are.</p>
+          <p class="survey-copy">Fill out the whole thing and we'll ship you a bag of excellent single-origin whole-bean coffee &mdash; to your home or office, wherever your terminal lives.</p>
+          <p class="survey-copy survey-copy-muted">(No pitch decks. No follow-up calls unless you want them. Promise.)</p>
+          <button type="button" class="button survey-sidebar-start-button" id="survey-start-button">Start survey</button>
+          <section class="survey-reward-card" aria-label="Survey reward">
+            <img src="/img/survey/coffee-reward.webp" alt="Bag of coffee from Lykke Kaffegardar on a yellow background">
+            <div class="survey-reward-copy">
+              <p class="survey-kicker">Complete The Survey</p>
+              <h2>Get coffee</h2>
+              <p>Fill out the whole thing and we'll ship you a bag of excellent single-origin coffee to your home or office, wherever your terminal lives.</p>
+            </div>
+          </section>
+
+          <nav class="survey-sections" aria-label="Survey sections">
+            <div class="survey-section-tab" data-section-target="who" aria-current="false">
+              <span>01</span>
+              <strong>Who Are You?</strong>
+              <small>Questions 1-6</small>
+            </div>
+            <div class="survey-section-tab" data-section-target="cloud" aria-current="false">
+              <span>02</span>
+              <strong>Cloud Decisions</strong>
+              <small>Questions 7-12</small>
+            </div>
+            <div class="survey-section-tab" data-section-target="buying" aria-current="false">
+              <span>03</span>
+              <strong>Discovery &amp; Buying</strong>
+              <small>Questions 13-15</small>
+            </div>
+            <div class="survey-section-tab" data-section-target="brand" aria-current="false">
+              <span>04</span>
+              <strong>Brand &amp; Mascot</strong>
+              <small>Questions 16-21</small>
+            </div>
+            <div class="survey-section-tab" data-section-target="community" aria-current="false">
+              <span>05</span>
+              <strong>Value &amp; Community</strong>
+              <small>Questions 22-25</small>
+            </div>
+            <div class="survey-section-tab" data-section-target="wrap" aria-current="false">
+              <span>06</span>
+              <strong>Wrap-Up</strong>
+              <small>Questions 26-28</small>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <section class="survey-main">
+        <form
+          id="safespring-survey-form"
+          class="survey-form"
+          action="https://formsubmit.co/e85de7a09addf1bf2cbdb52291295e86"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" name="_subject" value="Safespring survey response">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" id="survey-next-url" value="">
+          <input type="text" name="_honey" class="survey-hidden-field" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="survey_progress" id="survey-progress-field" value="">
+          <input type="hidden" name="survey_current_section" id="survey-section-field" value="">
+          <input type="hidden" name="submission_origin" id="survey-origin-field" value="">
+          <input type="hidden" name="submitted_at" id="survey-timestamp-field" value="">
+
+          <div class="survey-form-top">
+            <div>
+              <p class="survey-top-label" id="survey-section-label">Introduction</p>
+              <p class="survey-top-meta" id="survey-step-label">0 / 27 questions answered</p>
+            </div>
+            <div class="survey-progress">
+              <div class="survey-progress-bar">
+                <span id="survey-progress-bar-fill"></span>
+              </div>
+              <p id="survey-progress-text">0%</p>
+            </div>
+          </div>
+
+          <section class="survey-card survey-card-intro" id="survey-intro-card"></section>
+
+          <section class="survey-card survey-question-card" id="survey-question-card" hidden>
+            <h2 id="survey-question-title"></h2>
+            <p class="survey-question-help" id="survey-question-help" hidden></p>
+            <div id="survey-fields"></div>
+          </section>
+
+          <section class="survey-card survey-transition-card" id="survey-transition-card" hidden>
+            <p class="survey-card-kicker">Great work.</p>
+            <h2 id="survey-transition-title"></h2>
+            <p class="survey-transition-copy" id="survey-transition-copy"></p>
+          </section>
+
+          <div class="survey-actions">
+            <button type="button" class="survey-nav-button" id="survey-back-button" disabled>Back</button>
+            <div class="survey-actions-right">
+              <button type="button" class="survey-send-button" id="survey-send-button">Send now</button>
+              <button type="button" class="button" id="survey-next-button">Next question</button>
+            </div>
+          </div>
+        </form>
+        <section class="survey-submit-panel" id="survey-submit-panel" hidden>
+          <div class="survey-submit-panel-top">
+            <div>
+              <p class="survey-top-label">Send whenever you like</p>
+              <p class="survey-submit-panel-copy">Preferably at the end, but partial answers are fine. Add an email if you want coffee or a reply. No pitch decks. No follow-up calls unless you want them.</p>
+              <p class="survey-submit-panel-note">If you'd like coffee, tell us whether you prefer whole beans or ground and we'll take it from there.</p>
+            </div>
+            <button type="button" class="survey-submit-close" id="survey-submit-close">Close</button>
+          </div>
+
+          <div class="survey-submit-grid">
+            <label class="survey-field">
+              <span>Reply email</span>
+              <input type="email" name="email" placeholder="you@company.com" autocomplete="email" form="safespring-survey-form">
+            </label>
+            <div class="survey-choice-group">
+              <span class="survey-choice-label">Coffee preference</span>
+              <div class="survey-choice-options">
+                <label class="survey-choice-option">
+                  <input type="radio" name="coffee_preference" value="Whole beans" form="safespring-survey-form">
+                  <span>Whole beans</span>
+                </label>
+                <label class="survey-choice-option">
+                  <input type="radio" name="coffee_preference" value="Ground" form="safespring-survey-form">
+                  <span>Ground</span>
+                </label>
+                <label class="survey-choice-option">
+                  <input type="radio" name="coffee_preference" value="Skip for now" form="safespring-survey-form">
+                  <span>Skip for now</span>
+                </label>
+              </div>
+            </div>
+            <label class="survey-consent">
+              <input type="checkbox" name="privacy_consent" required form="safespring-survey-form">
+              <span>I agree that Safespring may process my answers and contact details to respond and send the coffee.</span>
+            </label>
+          </div>
+
+          <div class="survey-submit-panel-actions">
+            <button type="submit" class="button" form="safespring-survey-form">Send survey</button>
+          </div>
+        </section>
+        <noscript>
+          <p class="survey-noscript">This survey needs JavaScript enabled to render one question at a time.</p>
+        </noscript>
+      </section>
+    </section>
+  </main>
+
+  <style>
+    .survey-hidden-field {
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .survey-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .survey-page {
+      --survey-bg: #edf4f6;
+      --survey-bg-accent: rgba(60, 155, 205, 0.18);
+      --survey-surface: rgba(252, 254, 255, 0.88);
+      --survey-surface-strong: #ffffff;
+      --survey-line: rgba(25, 95, 140, 0.12);
+      --survey-line-strong: rgba(25, 95, 140, 0.18);
+      --survey-text: #16384a;
+      --survey-muted: rgba(22, 56, 74, 0.72);
+      --survey-soft-text: rgba(22, 56, 74, 0.56);
+      --survey-placeholder: rgba(76, 104, 124, 0.18);
+      --survey-accent: #195f8c;
+      --survey-accent-soft: rgba(60, 155, 205, 0.12);
+      --survey-accent-softer: rgba(50, 205, 50, 0.08);
+      --survey-action: #f4670f;
+      --survey-shadow: 0 24px 70px rgba(11, 54, 83, 0.08);
+      min-height: 100vh;
+      padding: 10.75rem 1.25rem 4rem;
+      background:
+        radial-gradient(circle at top left, rgba(50, 205, 50, 0.12), transparent 22%),
+        radial-gradient(circle at top right, var(--survey-bg-accent), transparent 30%),
+        linear-gradient(180deg, #e8f0f3 0%, var(--survey-bg) 100%);
+      color: var(--survey-text);
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .survey-page[data-theme="dark"] {
+      --survey-bg: #0d1720;
+      --survey-bg-accent: rgba(25, 95, 140, 0.26);
+      --survey-surface: rgba(14, 25, 34, 0.9);
+      --survey-surface-strong: #101d28;
+      --survey-line: rgba(133, 179, 211, 0.14);
+      --survey-line-strong: rgba(133, 179, 211, 0.24);
+      --survey-text: #edf7fb;
+      --survey-muted: rgba(237, 247, 251, 0.8);
+      --survey-soft-text: rgba(237, 247, 251, 0.6);
+      --survey-placeholder: rgba(237, 247, 251, 0.18);
+      --survey-accent: #7ac8ff;
+      --survey-accent-soft: rgba(122, 200, 255, 0.12);
+      --survey-accent-softer: rgba(50, 205, 50, 0.12);
+      --survey-action: #ff8a1d;
+      --survey-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+      background:
+        radial-gradient(circle at top left, rgba(50, 205, 50, 0.1), transparent 22%),
+        radial-gradient(circle at top right, rgba(25, 95, 140, 0.25), transparent 30%),
+        linear-gradient(180deg, #08121a 0%, var(--survey-bg) 100%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .survey-page:not([data-theme="light"]) {
+        --survey-bg: #0d1720;
+        --survey-bg-accent: rgba(25, 95, 140, 0.26);
+        --survey-surface: rgba(14, 25, 34, 0.9);
+        --survey-surface-strong: #101d28;
+        --survey-line: rgba(133, 179, 211, 0.14);
+        --survey-line-strong: rgba(133, 179, 211, 0.24);
+        --survey-text: #edf7fb;
+        --survey-muted: rgba(237, 247, 251, 0.8);
+        --survey-soft-text: rgba(237, 247, 251, 0.6);
+        --survey-accent: #7ac8ff;
+        --survey-accent-soft: rgba(122, 200, 255, 0.12);
+        --survey-accent-softer: rgba(50, 205, 50, 0.12);
+        --survey-action: #ff8a1d;
+        --survey-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+        background:
+          radial-gradient(circle at top left, rgba(50, 205, 50, 0.1), transparent 22%),
+          radial-gradient(circle at top right, rgba(25, 95, 140, 0.25), transparent 30%),
+          linear-gradient(180deg, #08121a 0%, var(--survey-bg) 100%);
+      }
+    }
+
+    .survey-shell {
+      width: min(100%, 86rem);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(16rem, 24rem) minmax(0, 1fr);
+      gap: clamp(1.5rem, 2.5vw, 3rem);
+      align-items: start;
+      transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1), gap 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .survey-page[data-survey-started="false"] {
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.25rem;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-shell {
+      width: min(100%, 44rem);
+      grid-template-columns: minmax(0, 1fr);
+      justify-items: center;
+      gap: 0;
+    }
+
+    .survey-sidebar {
+      position: sticky;
+      top: 8rem;
+      padding: 0.5rem 0;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sidebar {
+      position: static;
+      top: auto;
+      width: min(100%, 40rem);
+      padding: 0;
+      display: grid;
+      justify-items: start;
+      text-align: left;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sidebar-panel {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .survey-sidebar-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sidebar-top {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .survey-sidebar-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sidebar-controls {
+      justify-content: flex-end;
+    }
+
+    .survey-sidebar-logo {
+      display: inline-flex;
+      align-items: center;
+      max-width: 9.5rem;
+    }
+
+    .survey-sidebar-logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .survey-theme-toggle,
+    .survey-info-toggle {
+      border: 1px solid var(--survey-line);
+      background: transparent;
+      color: var(--survey-text);
+      border-radius: 999px;
+      padding: 0.65rem 0.95rem 0.55rem;
+      font: 600 0.78rem/1 var(--hind-font-semibold);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .survey-theme-toggle {
+      width: 3rem;
+      height: 3rem;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+    }
+
+    .survey-theme-toggle i {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .survey-theme-toggle:hover,
+    .survey-info-toggle:hover {
+      border-color: var(--survey-line-strong);
+      background: var(--survey-accent-soft);
+    }
+
+    .survey-sidebar-panel {
+      display: grid;
+      width: 100%;
+      overflow: hidden;
+      transform-origin: top center;
+      transition: opacity 0.38s cubic-bezier(0.22, 1, 0.36, 1), transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), max-height 0.46s cubic-bezier(0.22, 1, 0.36, 1), margin 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .survey-sidebar-panel[hidden] {
+      display: none !important;
+    }
+
+    .survey-page[data-sidebar-open="false"] .survey-sidebar-panel {
+      opacity: 0.08;
+      transform: translateY(-0.85rem) scale(0.985);
+      max-height: 0;
+      margin: 0;
+      pointer-events: none;
+    }
+
+    .survey-page[data-sidebar-open="true"] .survey-sidebar-panel {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 80rem;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-info-toggle {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .survey-kicker,
+    .survey-top-label,
+    .survey-card-kicker {
+      margin: 0;
+      font: 600 0.8rem/1.2 "safespring mono", monospace;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clear-blue-color);
+    }
+
+    .survey-sidebar h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.9rem, 2.35vw, 2.85rem);
+      line-height: 1.02;
+      max-width: 12ch;
+      text-wrap: balance;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sidebar h1 {
+      max-width: 14ch;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .survey-lead {
+      margin: 0 0 1rem;
+      font: 600 0.92rem/1.45 var(--hind-font-semibold);
+      color: var(--survey-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .survey-copy {
+      margin: 0 0 0.85rem;
+      font-size: 1rem;
+      color: var(--survey-muted);
+    }
+
+    .survey-copy-muted {
+      color: var(--survey-soft-text);
+    }
+
+    .survey-reward-card {
+      display: grid;
+      grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
+      gap: 1.1rem;
+      align-items: center;
+      margin: 1rem 0 0.25rem;
+      padding: 1rem;
+      border-radius: 2.5rem;
+      background: linear-gradient(180deg, rgb(252 210 60), rgb(250 219 73));
+    }
+
+    .survey-reward-card img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      display: block;
+      justify-self: start;
+      align-self: center;
+    }
+
+    .survey-reward-copy {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .survey-reward-copy h2 {
+      margin: 0;
+      font-size: clamp(1.65rem, 3vw, 2.3rem);
+      line-height: 0.95;
+    }
+
+    .survey-reward-copy p {
+      margin: 0;
+      font-size: 0.94rem;
+      line-height: 1.5;
+    }
+
+    .survey-page[data-theme="dark"] .survey-sidebar h1 {
+      color: var(--survey-accent);
+    }
+
+    .survey-page[data-theme="dark"] .survey-lead {
+      color: var(--survey-text);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-card {
+      background:
+        linear-gradient(135deg, rgba(255, 138, 29, 0.14), rgba(122, 200, 255, 0.08)),
+        rgba(16, 29, 40, 0.96);
+      border-color: rgba(133, 179, 211, 0.3);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-copy h2 {
+      color: var(--survey-text);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-copy p {
+      color: var(--survey-muted);
+    }
+
+    .survey-page[data-theme="dark"] .survey-reward-copy .survey-kicker {
+      color: #8fd0ff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .survey-page:not([data-theme="light"]) .survey-sidebar h1 {
+        color: var(--survey-accent);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-lead {
+        color: var(--survey-text);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-card {
+        background:
+          linear-gradient(135deg, rgba(255, 138, 29, 0.14), rgba(122, 200, 255, 0.08)),
+          rgba(16, 29, 40, 0.96);
+        border-color: rgba(133, 179, 211, 0.3);
+        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-copy h2 {
+        color: var(--survey-text);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-copy p {
+        color: var(--survey-muted);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-reward-copy .survey-kicker {
+        color: #8fd0ff;
+      }
+    }
+
+    .survey-sidebar-start-button {
+      justify-self: start;
+      margin: 0.45rem 0 0.15rem;
+    }
+
+    .survey-page[data-survey-started="true"] .survey-sidebar-start-button {
+      display: none;
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sidebar-start-button {
+      justify-self: start;
+      margin-top: 1rem;
+    }
+
+    .survey-sections {
+      display: grid;
+      gap: 0.2rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--survey-line);
+    }
+
+    .survey-page[data-survey-started="false"] .survey-sections {
+      margin-top: 1.75rem;
+      padding-top: 1.5rem;
+      width: 100%;
+    }
+
+    .survey-section-tab {
+      width: 100%;
+      padding: 0.85rem 0;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 0.85rem;
+      align-items: center;
+      border: 0;
+      border-bottom: 1px solid var(--survey-line);
+      background: transparent;
+      color: var(--survey-text);
+      text-align: left;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .survey-section-tab span {
+      font: 600 0.78rem/1 "safespring mono", monospace;
+      color: var(--survey-accent);
+    }
+
+    .survey-section-tab strong,
+    .survey-section-tab small {
+      display: block;
+    }
+
+    .survey-section-tab strong {
+      font: 600 0.95rem/1.2 var(--hind-font-semibold);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: inherit;
+    }
+
+    .survey-section-tab small {
+      font: 400 0.86rem/1.2 var(--mon-font);
+      color: var(--survey-soft-text);
+      justify-self: end;
+      text-align: right;
+    }
+
+    .survey-section-tab.is-active {
+      color: var(--survey-accent);
+      border-color: var(--survey-line-strong);
+    }
+
+    .survey-main {
+      min-width: 0;
+      width: min(100%, 70rem);
+      margin: 0 auto;
+      transition: opacity 0.46s cubic-bezier(0.22, 1, 0.36, 1), transform 0.46s cubic-bezier(0.22, 1, 0.36, 1), max-height 0.46s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .survey-page[data-survey-started="false"] .survey-main {
+      opacity: 0;
+      transform: translateY(2rem) scale(0.985);
+      max-height: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .survey-page[data-survey-started="true"] .survey-main {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 200rem;
+    }
+
+    .survey-page[data-survey-entering="true"] .survey-main {
+      transition-delay: 80ms;
+    }
+
+    .survey-form {
+      border: 1px solid var(--survey-line);
+      background: var(--survey-surface);
+      box-shadow: var(--survey-shadow);
+      border-radius: 2rem;
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+    }
+
+    .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-shell {
+      grid-template-columns: 10rem minmax(0, 1fr);
+      gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-main {
+      width: min(100%, 62rem);
+    }
+
+    .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-sidebar-top {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-sidebar-controls {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+
+    .survey-form-top,
+    .survey-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .survey-form-top {
+      padding: 1.5rem 2.25rem;
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+
+    .survey-top-meta {
+      margin: 0.25rem 0 0;
+      font: 400 0.95rem/1.4 var(--mon-font);
+      color: var(--survey-muted);
+    }
+
+    .survey-progress {
+      min-width: min(12rem, 40%);
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .survey-progress-bar {
+      width: 100%;
+      height: 0.45rem;
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--survey-line);
+    }
+
+    .survey-progress-bar span {
+      display: block;
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--survey-accent) 0%, #3c9bcd 60%, #32cd32 100%);
+      transition: width 0.25s ease;
+    }
+
+    .survey-progress p {
+      min-width: 3rem;
+      margin: 0;
+      font: 600 0.9rem/1 "safespring mono", monospace;
+      color: var(--survey-accent);
+      text-align: right;
+    }
+
+    .survey-card {
+      margin: 0;
+      padding: 1.75rem 2.25rem 2rem;
+      background: transparent;
+      border-top: 1px solid var(--survey-line);
+      max-width: 56rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .survey-card[hidden] {
+      display: none !important;
+    }
+
+    .survey-card.is-animating {
+      animation: survey-step-in 420ms cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+
+    .survey-card.is-animating h2,
+    .survey-card.is-animating .survey-question-help,
+    .survey-card.is-animating .survey-transition-copy,
+    .survey-card.is-animating #survey-fields,
+    .survey-card.is-animating .survey-card-kicker {
+      animation: survey-copy-in 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .survey-card.is-animating .survey-question-help,
+    .survey-card.is-animating .survey-transition-copy,
+    .survey-card.is-animating #survey-fields {
+      animation-delay: 60ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *,
+    .survey-card.is-animating .survey-choice-option {
+      animation: survey-item-in 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(1),
+    .survey-card.is-animating .survey-choice-option:nth-child(1) {
+      animation-delay: 100ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(2),
+    .survey-card.is-animating .survey-choice-option:nth-child(2) {
+      animation-delay: 150ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(3),
+    .survey-card.is-animating .survey-choice-option:nth-child(3) {
+      animation-delay: 200ms;
+    }
+
+    .survey-card.is-animating .survey-step-fields > *:nth-child(4),
+    .survey-card.is-animating .survey-choice-option:nth-child(4) {
+      animation-delay: 250ms;
+    }
+
+    @keyframes survey-step-in {
+      from {
+        opacity: 0;
+        transform: translateY(26px) scale(0.985);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes survey-copy-in {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes survey-item-in {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .survey-card.is-animating,
+      .survey-card.is-animating h2,
+      .survey-card.is-animating .survey-question-help,
+      .survey-card.is-animating .survey-transition-copy,
+      .survey-card.is-animating #survey-fields,
+      .survey-card.is-animating .survey-card-kicker,
+      .survey-card.is-animating .survey-step-fields > *,
+      .survey-card.is-animating .survey-choice-option {
+        animation: none !important;
+      }
+    }
+
+    .survey-card-intro {
+      min-height: clamp(18rem, 48vh, 24rem);
+      display: grid;
+      place-content: center;
+      text-align: center;
+      border-top: 0;
+    }
+
+    .survey-card-intro h2,
+    .survey-question-card h2 {
+      margin: 0.75rem 0 1rem;
+      font-size: clamp(2rem, 3.4vw, 3.1rem);
+      line-height: 0.98;
+      text-wrap: balance;
+    }
+
+    .survey-card-intro h2 {
+      max-width: 14ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .survey-question-card h2 {
+      max-width: min(100%, 24ch);
+      font-size: clamp(1.85rem, 2.8vw, 2.9rem);
+      line-height: 1.02;
+    }
+
+    .survey-transition-card {
+      display: grid;
+      gap: 0.9rem;
+      align-content: center;
+      min-height: 22rem;
+    }
+
+    .survey-transition-card[hidden] {
+      display: none !important;
+    }
+
+    .survey-transition-card h2 {
+      max-width: 13ch;
+      font-size: clamp(2.3rem, 4vw, 4.2rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+
+    .survey-transition-copy {
+      max-width: 42rem;
+      color: var(--survey-muted);
+      font-size: 1.05rem;
+    }
+
+    .survey-card-intro p,
+    .survey-question-card p {
+      max-width: 44rem;
+    }
+
+    .survey-card-intro p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .survey-card-points {
+      display: grid;
+      gap: 0.75rem;
+      margin: 1.25rem 0 1.75rem;
+    }
+
+    .survey-card-points p {
+      margin: 0;
+      padding: 0.25rem 0 0.25rem 1rem;
+      border-left: 3px solid var(--survey-action);
+      background: transparent;
+      border-radius: 0;
+    }
+
+    .survey-question-help {
+      margin: 0 0 0.75rem;
+      padding: 0 0 0 1rem;
+      border-left: 3px solid var(--survey-accent);
+      color: var(--survey-muted);
+    }
+
+    #survey-fields {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .survey-step-fields {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .survey-step-fields[hidden] {
+      display: none !important;
+    }
+
+    .survey-field,
+    .survey-choice-group,
+    .survey-file-group {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .survey-field > span,
+    .survey-choice-label,
+    .survey-file-group > span {
+      font: 600 0.88rem/1.2 var(--hind-font-semibold);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--survey-accent);
+    }
+
+    .survey-field input,
+    .survey-field textarea {
+      width: 100%;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--survey-line);
+      border-radius: 1rem;
+      background: var(--survey-surface-strong);
+      color: var(--survey-text);
+      font: 400 1rem/1.5 var(--mon-font);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      box-sizing: border-box;
+    }
+
+    .survey-field input::placeholder,
+    .survey-field textarea::placeholder {
+      color: var(--survey-placeholder);
+      opacity: 1;
+    }
+
+    .survey-field textarea {
+      min-height: 10rem;
+      resize: vertical;
+    }
+
+    .survey-field input:focus,
+    .survey-field textarea:focus,
+    .survey-file-input:focus {
+      outline: none;
+      border-color: var(--survey-accent);
+      box-shadow: 0 0 0 4px rgba(60, 155, 205, 0.12);
+    }
+
+    .survey-choice-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .survey-choice-option {
+      position: relative;
+    }
+
+    .survey-choice-option input {
+      position: absolute;
+      opacity: 0;
+      inset: 0;
+      cursor: pointer;
+    }
+
+    .survey-choice-option span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 3.2rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--survey-line);
+      border-radius: 1rem;
+      background: var(--survey-surface-strong);
+      font: 500 0.98rem/1.3 var(--mon-font);
+      color: var(--survey-text);
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+    }
+
+    .survey-choice-option input:checked + span {
+      border-color: var(--survey-accent);
+      background: linear-gradient(135deg, var(--survey-accent-soft), var(--survey-accent-softer));
+      color: var(--survey-accent);
+    }
+
+    .survey-choice-option input:focus + span {
+      box-shadow: 0 0 0 4px rgba(60, 155, 205, 0.12);
+    }
+
+    .survey-file-input {
+      padding: 1rem 1.1rem;
+      border: 1px dashed var(--survey-line-strong);
+      border-radius: 1rem;
+      background: var(--survey-surface-strong);
+      color: var(--survey-text);
+      font: 400 1rem/1.5 var(--mon-font);
+    }
+
+    .survey-submit-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .survey-submit-panel {
+      margin-top: 1rem;
+      border: 1px solid var(--survey-line);
+      background: var(--survey-surface);
+      border-radius: 1.5rem;
+      box-shadow: var(--survey-shadow);
+      padding: 1.5rem;
+    }
+
+    .survey-submit-panel[hidden] {
+      display: none !important;
+    }
+
+    .survey-submit-panel-top {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 1rem;
+    }
+
+    .survey-submit-panel-copy {
+      margin: 0.35rem 0 0;
+      color: var(--survey-muted);
+      max-width: 42rem;
+    }
+
+    .survey-submit-panel-note {
+      margin: 0.5rem 0 0;
+      color: var(--survey-soft-text);
+      font-size: 0.94rem;
+    }
+
+    .survey-submit-close {
+      border: 0;
+      background: transparent;
+      color: var(--survey-accent);
+      font: 600 0.84rem/1 var(--hind-font-semibold);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 0.25rem 0;
+    }
+
+    .survey-submit-panel-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+    }
+
+    .survey-consent {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      font: 400 0.95rem/1.5 var(--mon-font);
+      color: var(--survey-muted);
+    }
+
+    .survey-consent input {
+      margin-top: 0.2rem;
+      accent-color: var(--survey-accent);
+    }
+
+    .survey-actions {
+      padding: 1.5rem 2.25rem 2rem;
+      border-top: 1px solid var(--survey-line);
+      flex-wrap: wrap;
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+
+    .survey-actions-right {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .survey-nav-button,
+    .survey-send-button {
+      appearance: none;
+      border: 1px solid var(--survey-line-strong);
+      border-radius: 999px;
+      padding: 0.95rem 1.25rem 0.82rem;
+      background: transparent;
+      color: var(--survey-accent);
+      font: 600 0.84rem/1 var(--hind-font-semibold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+
+    .survey-actions .button,
+    .survey-send-button {
+      min-height: auto;
+      padding: 0.95rem 1.25rem 0.82rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .survey-send-button {
+      border-color: rgba(244, 103, 15, 0.32);
+      color: var(--survey-action);
+    }
+
+    .survey-nav-button:hover,
+    .survey-send-button:hover {
+      transform: translateY(-1px);
+      background: var(--survey-accent-soft);
+    }
+
+    .survey-nav-button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .survey-page[data-theme="dark"] .survey-form {
+      background: rgba(13, 24, 34, 0.96);
+      border-color: rgba(143, 208, 255, 0.18);
+    }
+
+    .survey-page[data-theme="dark"] .survey-form-top,
+    .survey-page[data-theme="dark"] .survey-card,
+    .survey-page[data-theme="dark"] .survey-actions {
+      border-color: rgba(143, 208, 255, 0.12);
+    }
+
+    .survey-page[data-theme="dark"] .survey-top-label,
+    .survey-page[data-theme="dark"] .survey-progress p {
+      color: #8fd0ff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-top-meta {
+      color: rgba(237, 247, 251, 0.78);
+    }
+
+    .survey-page[data-theme="dark"] .survey-question-card h2,
+    .survey-page[data-theme="dark"] .survey-transition-card h2 {
+      color: #f5fbff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-question-help,
+    .survey-page[data-theme="dark"] .survey-transition-copy,
+    .survey-page[data-theme="dark"] .survey-submit-panel-copy,
+    .survey-page[data-theme="dark"] .survey-submit-panel-note {
+      color: rgba(237, 247, 251, 0.8);
+    }
+
+    .survey-page[data-theme="dark"] .survey-field input,
+    .survey-page[data-theme="dark"] .survey-field textarea,
+    .survey-page[data-theme="dark"] .survey-file-input {
+      background: rgba(20, 34, 46, 0.98);
+      border-color: rgba(143, 208, 255, 0.16);
+      color: #f5fbff;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    }
+
+    .survey-page[data-theme="dark"] .survey-field input::placeholder,
+    .survey-page[data-theme="dark"] .survey-field textarea::placeholder {
+      color: rgba(237, 247, 251, 0.3);
+    }
+
+    .survey-page[data-theme="dark"] .survey-field input:focus,
+    .survey-page[data-theme="dark"] .survey-field textarea:focus,
+    .survey-page[data-theme="dark"] .survey-file-input:focus,
+    .survey-page[data-theme="dark"] .survey-choice-option input:focus + span {
+      border-color: #8fd0ff;
+      box-shadow: 0 0 0 4px rgba(143, 208, 255, 0.14);
+    }
+
+    .survey-page[data-theme="dark"] .survey-choice-option span {
+      background: rgba(20, 34, 46, 0.98);
+      border-color: rgba(143, 208, 255, 0.14);
+      color: rgba(245, 251, 255, 0.92);
+    }
+
+    .survey-page[data-theme="dark"] .survey-choice-option input:checked + span {
+      border-color: #8fd0ff;
+      background: linear-gradient(135deg, rgba(122, 200, 255, 0.18), rgba(50, 205, 50, 0.1));
+      color: #f5fbff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-consent {
+      color: rgba(237, 247, 251, 0.82);
+    }
+
+    .survey-page[data-theme="dark"] .survey-submit-panel {
+      background: rgba(12, 22, 31, 0.96);
+      border-color: rgba(143, 208, 255, 0.16);
+    }
+
+    .survey-page[data-theme="dark"] .survey-nav-button {
+      border-color: rgba(143, 208, 255, 0.2);
+      color: #8fd0ff;
+    }
+
+    .survey-page[data-theme="dark"] .survey-send-button {
+      border-color: rgba(255, 138, 29, 0.32);
+      color: #ffb066;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .survey-page:not([data-theme="light"]) .survey-form {
+        background: rgba(13, 24, 34, 0.96);
+        border-color: rgba(143, 208, 255, 0.18);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-form-top,
+      .survey-page:not([data-theme="light"]) .survey-card,
+      .survey-page:not([data-theme="light"]) .survey-actions {
+        border-color: rgba(143, 208, 255, 0.12);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-top-label,
+      .survey-page:not([data-theme="light"]) .survey-progress p {
+        color: #8fd0ff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-top-meta {
+        color: rgba(237, 247, 251, 0.78);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-question-card h2,
+      .survey-page:not([data-theme="light"]) .survey-transition-card h2 {
+        color: #f5fbff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-question-help,
+      .survey-page:not([data-theme="light"]) .survey-transition-copy,
+      .survey-page:not([data-theme="light"]) .survey-submit-panel-copy,
+      .survey-page:not([data-theme="light"]) .survey-submit-panel-note {
+        color: rgba(237, 247, 251, 0.8);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-field input,
+      .survey-page:not([data-theme="light"]) .survey-field textarea,
+      .survey-page:not([data-theme="light"]) .survey-file-input {
+        background: rgba(20, 34, 46, 0.98);
+        border-color: rgba(143, 208, 255, 0.16);
+        color: #f5fbff;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-field input::placeholder,
+      .survey-page:not([data-theme="light"]) .survey-field textarea::placeholder {
+        color: rgba(237, 247, 251, 0.3);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-field input:focus,
+      .survey-page:not([data-theme="light"]) .survey-field textarea:focus,
+      .survey-page:not([data-theme="light"]) .survey-file-input:focus,
+      .survey-page:not([data-theme="light"]) .survey-choice-option input:focus + span {
+        border-color: #8fd0ff;
+        box-shadow: 0 0 0 4px rgba(143, 208, 255, 0.14);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-choice-option span {
+        background: rgba(20, 34, 46, 0.98);
+        border-color: rgba(143, 208, 255, 0.14);
+        color: rgba(245, 251, 255, 0.92);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-choice-option input:checked + span {
+        border-color: #8fd0ff;
+        background: linear-gradient(135deg, rgba(122, 200, 255, 0.18), rgba(50, 205, 50, 0.1));
+        color: #f5fbff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-consent {
+        color: rgba(237, 247, 251, 0.82);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-submit-panel {
+        background: rgba(12, 22, 31, 0.96);
+        border-color: rgba(143, 208, 255, 0.16);
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-nav-button {
+        border-color: rgba(143, 208, 255, 0.2);
+        color: #8fd0ff;
+      }
+
+      .survey-page:not([data-theme="light"]) .survey-send-button {
+        border-color: rgba(255, 138, 29, 0.32);
+        color: #ffb066;
+      }
+    }
+
+    .survey-noscript {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      background: rgba(244, 103, 15, 0.08);
+      border: 1px solid rgba(244, 103, 15, 0.2);
+    }
+
+    @media (max-width: 1080px) {
+      .survey-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .survey-sidebar {
+        position: static;
+        padding-top: 0;
+      }
+
+      .survey-page[data-survey-started="true"][data-sidebar-open="false"] .survey-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .survey-form {
+        margin-top: 0.5rem;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .survey-page {
+        padding:
+          calc(env(safe-area-inset-top, 0px) + 8.75rem)
+          10vw
+          calc(env(safe-area-inset-bottom, 0px) + 3rem);
+      }
+
+      .survey-page[data-survey-started="false"] {
+        display: block;
+        padding:
+          calc(env(safe-area-inset-top, 0px) + 2rem)
+          10vw
+          calc(env(safe-area-inset-bottom, 0px) + 3rem);
+      }
+
+      .survey-page[data-survey-started="false"] .survey-shell {
+        width: 100%;
+      }
+
+      .survey-page[data-survey-started="false"] .survey-sidebar-panel {
+        padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 10vw);
+      }
+
+      .survey-page[data-survey-started="false"] .survey-sections {
+        margin-top: 5.25rem;
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+        border-top: 0;
+      }
+
+      .survey-page[data-survey-started="false"] .survey-section-tab:last-child {
+        border-bottom: 0;
+      }
+
+      .survey-form-top,
+      .survey-actions,
+      .survey-submit-strip {
+        align-items: stretch;
+      }
+
+      .survey-form-top,
+      .survey-progress,
+      .survey-actions,
+      .survey-actions-right {
+        flex-direction: column;
+      }
+
+      .survey-progress {
+        min-width: 0;
+        align-items: stretch;
+      }
+
+      .survey-actions-right > * {
+        width: 100%;
+      }
+
+      .survey-question-card h2,
+      .survey-card-intro h2 {
+        max-width: none;
+      }
+
+      .survey-sidebar h1 {
+        max-width: 100%;
+      }
+
+      .survey-sidebar-controls {
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+
+      .survey-page[data-survey-started="false"] .survey-sidebar-controls {
+        justify-content: flex-end;
+      }
+
+      .survey-form-top,
+      .survey-card,
+      .survey-submit-strip,
+      .survey-actions {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      .survey-reward-card {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        padding: 2rem;
+      }
+
+      .survey-reward-card img {
+        width: min(100%);
+        height: auto;
+      }
+
+      .survey-reward-copy h2 {
+        font-size: clamp(1.9rem, 10vw, 2.5rem);
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("safespring-survey-form");
+      const page = document.querySelector(".survey-page");
+      const sidebarPanel = document.getElementById("survey-sidebar-panel");
+      const introCard = document.getElementById("survey-intro-card");
+      const questionCard = document.getElementById("survey-question-card");
+      const transitionCard = document.getElementById("survey-transition-card");
+      const startButton = document.getElementById("survey-start-button");
+      const infoToggle = document.getElementById("survey-info-toggle");
+      const infoToggleLabel = infoToggle.querySelector(".survey-info-toggle-label");
+      const backButton = document.getElementById("survey-back-button");
+      const nextButton = document.getElementById("survey-next-button");
+      const sendButton = document.getElementById("survey-send-button");
+      const formTop = form.querySelector(".survey-form-top");
+      const formActions = form.querySelector(".survey-actions");
+      const fieldsContainer = document.getElementById("survey-fields");
+      const sectionLabel = document.getElementById("survey-section-label");
+      const stepLabel = document.getElementById("survey-step-label");
+      const progressBarFill = document.getElementById("survey-progress-bar-fill");
+      const progressText = document.getElementById("survey-progress-text");
+      const questionTitle = document.getElementById("survey-question-title");
+      const questionHelp = document.getElementById("survey-question-help");
+      const transitionTitle = document.getElementById("survey-transition-title");
+      const transitionCopy = document.getElementById("survey-transition-copy");
+      const progressField = document.getElementById("survey-progress-field");
+      const sectionField = document.getElementById("survey-section-field");
+      const originField = document.getElementById("survey-origin-field");
+      const timestampField = document.getElementById("survey-timestamp-field");
+      const nextField = document.getElementById("survey-next-url");
+      const submitPanel = document.getElementById("survey-submit-panel");
+      const submitClose = document.getElementById("survey-submit-close");
+      const themeToggle = document.getElementById("survey-theme-toggle");
+      const themeToggleIcon = themeToggle.querySelector("i");
+      const themeToggleLabel = themeToggle.querySelector(".survey-theme-toggle-label");
+      const sectionTabs = Array.from(document.querySelectorAll(".survey-section-tab"));
+
+      const storageKey = "safespring-survey-draft-v1";
+      const stepStorageKey = "safespring-survey-step-v1";
+      const themeStorageKey = "safespring-survey-theme-v1";
+      const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+
+      const sections = {
+        who: {
+          label: "01 - Who Are You?",
+          headline: "Who Are You?",
+          blurb: "Here we ask about who you are, what you work on, your team size, and the platforms you run today."
+        },
+        cloud: {
+          label: "02 - Cloud Decisions",
+          headline: "Cloud Decisions",
+          blurb: "Here we ask about buying influence, cloud decision-making, day-to-day friction, and what may change next."
+        },
+        buying: {
+          label: "03 - Discovery & Buying",
+          headline: "Discovery & Buying",
+          blurb: "Here we ask how engineers actually research, evaluate, and compare cloud or Kubernetes platforms."
+        },
+        brand: {
+          label: "04 - Brand & Mascot",
+          headline: "Brand & Mascot",
+          blurb: "Here we ask about memorable brands, mascots, and whether this idea lands or feels like noise."
+        },
+        community: {
+          label: "05 - Value & Community",
+          headline: "Value & Community",
+          blurb: "Here we ask about open standards, practitioner-first communities, events, and what would be worth joining."
+        },
+        wrap: {
+          label: "06 - Wrap-Up",
+          headline: "Wrap-Up",
+          blurb: "Here we ask for final thoughts, how you found Safespring, and where the coffee should go."
+        }
+      };
+
+      const questions = [
+        {
+          id: "q01",
+          section: "who",
+          number: 1,
+          title: "Name & country",
+          help: "Let's start simple. We want to know who's on the other side of this form.",
+          fields: [
+            { type: "text", name: "01_name_country", label: "Name & country", placeholder: "Jane Doe, Sweden", hideLabel: true }
+          ]
+        },
+        {
+          id: "q02",
+          section: "who",
+          number: 2,
+          title: "What do you actually work on day-to-day?",
+          help: "Job title is fine, but \"what did you ship last week\" tells us more.",
+          fields: [
+            { type: "textarea", name: "02_day_to_day_work", label: "What do you actually work on day-to-day?", placeholder: "Platform engineering, Kubernetes operations, Terraform modules, incident response..." }
+          ]
+        },
+        {
+          id: "q03",
+          section: "who",
+          number: 3,
+          title: "Company size - roughly how many engineers are in your org?",
+          fields: [
+            { type: "text", name: "03_engineering_org_size", label: "Company size", placeholder: "Around 25 engineers" }
+          ]
+        },
+        {
+          id: "q04",
+          section: "who",
+          number: 4,
+          title: "Which operating system do you spend most of your working day in?",
+          help: "Linux, macOS, Windows, or \"it depends\".",
+          fields: [
+            {
+              type: "radio",
+              name: "04_daily_driver_os",
+              label: "Which operating system do you spend most of your working day in?",
+              hideLabel: true,
+              options: [
+                { value: "Linux", label: "Linux" },
+                { value: "macOS", label: "macOS" },
+                { value: "Windows", label: "Windows" },
+                { value: "it depends", label: "it depends" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "q05",
+          section: "who",
+          number: 5,
+          title: "Which cloud platforms are you running workloads on today?",
+          fields: [
+            {
+              type: "checkbox",
+              name: "05_current_cloud_platforms",
+              label: "Which cloud platforms are you running workloads on today?",
+              hideLabel: true,
+              options: [
+                { value: "AWS", label: "AWS" },
+                { value: "Azure", label: "Azure" },
+                { value: "Google Cloud", label: "Google Cloud" },
+                { value: "OpenStack or private cloud", label: "OpenStack or private cloud" },
+                { value: "On-prem", label: "On-prem" },
+                { value: "Other", label: "Other" }
+              ]
+            },
+            { type: "text", name: "05_current_cloud_platforms_other", label: "Anything missing?", placeholder: "Hetzner, OVHcloud, colo, local cloud..." }
+          ]
+        },
+        {
+          id: "q06",
+          section: "who",
+          number: 6,
+          title: "Your laptop tells a story",
+          help: "You know how the stickers on a laptop at a KubeCon booth tell you more about a person than their LinkedIn? The CNCF landscape on someone's lid, a Nix snowflake, a Wireguard lock - it's a whole biography. We'd love to see yours.",
+          fields: [
+            { type: "file", name: "06_laptop_stickers_photo", label: "Upload option", accept: "image/*" },
+            { type: "url", name: "06_laptop_stickers_photo_url", label: "Or paste a public image URL", placeholder: "https://..." },
+            { type: "textarea", name: "06_laptop_stickers_story", label: "Add a line or two", placeholder: "Tell us your stack story, or what the stickers say about your infra life." }
+          ]
+        },
+        {
+          id: "q07",
+          section: "cloud",
+          number: 7,
+          title: "Were you involved in choosing (and buying) your current cloud setup?",
+          fields: [
+            {
+              type: "radio",
+              name: "07_involved_in_current_cloud_choice",
+              label: "Were you involved in choosing (and buying) your current cloud setup?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "Partly", label: "Partly" },
+                { value: "No", label: "No" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "q08",
+          section: "cloud",
+          number: 8,
+          title: "Do you influence or sign off on new cloud or Kubernetes platform decisions?",
+          fields: [
+            {
+              type: "radio",
+              name: "08_influence_new_platform_decisions",
+              label: "Do you influence or sign off on new cloud or Kubernetes platform decisions?",
+              hideLabel: true,
+              options: [
+                { value: "Yes, directly", label: "Yes, directly" },
+                { value: "Sometimes", label: "Sometimes" },
+                { value: "No", label: "No" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "q09",
+          section: "cloud",
+          number: 9,
+          title: "How would you describe your role in cloud decisions?",
+          help: "User / Influencer / Decision-maker / Buyer - or some chaotic mix of all four?",
+          fields: [
+            {
+              type: "checkbox",
+              name: "09_role_in_cloud_decisions",
+              label: "How would you describe your role in cloud decisions?",
+              hideLabel: true,
+              options: [
+                { value: "User", label: "User" },
+                { value: "Influencer", label: "Influencer" },
+                { value: "Decision-maker", label: "Decision-maker" },
+                { value: "Buyer", label: "Buyer" }
+              ]
+            },
+            { type: "text", name: "09_role_in_cloud_decisions_other", label: "Add nuance", placeholder: "Or some chaotic mix of all four." }
+          ]
+        },
+        {
+          id: "q10",
+          section: "cloud",
+          number: 10,
+          title: "What do you wish your current cloud provider would just fix already?",
+          fields: [
+            { type: "textarea", name: "10_cloud_provider_fix", label: "What do you wish your current cloud provider would just fix already?", placeholder: "Pricing, support, networking, docs, APIs, roadmap clarity..." }
+          ]
+        },
+        {
+          id: "q11",
+          section: "cloud",
+          number: 11,
+          title: "What's the biggest thing causing friction in your day-to-day infrastructure work right now?",
+          fields: [
+            { type: "textarea", name: "11_day_to_day_friction", label: "What's the biggest thing causing friction?", placeholder: "What slows you down or makes the work messier than it should be?" }
+          ]
+        },
+        {
+          id: "q12",
+          section: "cloud",
+          number: 12,
+          title: "Do you expect to run workloads outside your current cloud in 2026 - on-prem, colo, a local cloud, or a different provider?",
+          help: "If yes: why, and where?",
+          fields: [
+            {
+              type: "radio",
+              name: "12_expect_workloads_elsewhere",
+              label: "Do you expect to run workloads outside your current cloud in 2026?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "Maybe", label: "Maybe" },
+                { value: "No", label: "No" }
+              ]
+            },
+            { type: "textarea", name: "12_expect_workloads_elsewhere_details", label: "If yes: why, and where?", placeholder: "Tell us what is pushing the change and what destinations you are considering." }
+          ]
+        },
+        {
+          id: "q13",
+          section: "buying",
+          number: 13,
+          title: "Do you do most of your cloud research before you ever talk to a vendor?",
+          help: "Where does vendor input actually help?",
+          fields: [
+            { type: "textarea", name: "13_research_before_vendor", label: "Do you do most of your cloud research before you ever talk to a vendor?", placeholder: "Docs, peers, GitHub, Slack groups, benchmarks, reference calls..." }
+          ]
+        },
+        {
+          id: "q14",
+          section: "buying",
+          number: 14,
+          title: "If you had to pick a new cloud or Kubernetes platform today - walk us through how you'd approach it.",
+          fields: [
+            { type: "textarea", name: "14_how_to_evaluate_new_platform", label: "Walk us through how you'd approach it", placeholder: "How would you shortlist, test, compare, and decide?" }
+          ]
+        },
+        {
+          id: "q15",
+          section: "buying",
+          number: 15,
+          title: "What makes evaluating a local or alternative cloud platform hard?",
+          help: "What would make it easier?",
+          fields: [
+            { type: "textarea", name: "15_barriers_to_local_cloud", label: "What makes evaluating a local or alternative cloud platform hard?", placeholder: "Missing benchmarks, unclear migration path, weak docs, limited references..." }
+          ]
+        },
+        {
+          id: "q16",
+          section: "brand",
+          number: 16,
+          title: "Are there any cloud or tech brands that have actually stood out to you - not just the logos, but the vibe?",
+          help: "What made them land?",
+          fields: [
+            { type: "textarea", name: "16_brands_that_stood_out", label: "Are there any cloud or tech brands that have actually stood out to you?", placeholder: "Which brands do you remember, and why?" }
+          ]
+        },
+        {
+          id: "q17",
+          section: "brand",
+          number: 17,
+          title: "Do mascots help projects or platforms stand out in the Kubernetes/cloud-native world?",
+          help: "Or is it mostly noise?",
+          fields: [
+            {
+              type: "radio",
+              name: "17_do_mascots_help",
+              label: "Do mascots help projects or platforms stand out?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "No", label: "No" },
+                { value: "Depends", label: "Depends" }
+              ]
+            },
+            { type: "textarea", name: "17_do_mascots_help_details", label: "Why?", placeholder: "What makes them useful, forgettable, or mostly noise?" }
+          ]
+        },
+        {
+          id: "q18",
+          section: "brand",
+          number: 18,
+          title: "Any mascots you actually remember or have a soft spot for?",
+          fields: [
+            { type: "text", name: "18_memorable_mascots", label: "Any mascots you actually remember?", placeholder: "Tux, Kubernaut, Docker whale..." }
+          ]
+        },
+        {
+          id: "q19",
+          section: "brand",
+          number: 19,
+          title: "Honestly - do mascots bring any real value, or is it just marketing fluff?",
+          fields: [
+            { type: "textarea", name: "19_mascot_value", label: "Honestly - do mascots bring any real value?", placeholder: "Feel free to be blunt." }
+          ]
+        },
+        {
+          id: "q20",
+          section: "brand",
+          number: 20,
+          title: "We're thinking about a mascot that represents the platform engineers and infrastructure folks who keep everything running.",
+          help: "The ones who never get credit when things work, only when things break. Does that feel right to you?",
+          fields: [
+            {
+              type: "radio",
+              name: "20_platform_engineer_mascot",
+              label: "Does that feel right to you?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "No", label: "No" },
+                { value: "Maybe", label: "Maybe" }
+              ]
+            },
+            { type: "textarea", name: "20_platform_engineer_mascot_details", label: "Tell us why", placeholder: "What resonates, or what feels off?" }
+          ]
+        },
+        {
+          id: "q21",
+          section: "brand",
+          number: 21,
+          title: "We think the deep, unglamorous work of running platforms deserves more visibility.",
+          help: "We'd want our mascot to be a way to give that work - and the people doing it - a real voice. Is that something you'd want to exist?",
+          fields: [
+            {
+              type: "radio",
+              name: "21_more_visibility_for_platform_work",
+              label: "Is that something you'd want to exist?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "No", label: "No" },
+                { value: "Maybe", label: "Maybe" }
+              ]
+            },
+            { type: "textarea", name: "21_more_visibility_for_platform_work_details", label: "What would make it meaningful?", placeholder: "Community, storytelling, content, practical help..." }
+          ]
+        },
+        {
+          id: "q22",
+          section: "community",
+          number: 22,
+          title: "Would you be interested in a brand or community built around open standards, a free and open internet, and a practitioner-first mindset?",
+          fields: [
+            {
+              type: "radio",
+              name: "22_interest_in_open_community",
+              label: "Would you be interested in a brand or community built around open standards, a free and open internet, and a practitioner-first mindset?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "No", label: "No" },
+                { value: "Maybe", label: "Maybe" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "q23",
+          section: "community",
+          number: 23,
+          title: "If yes - what would you actually want to get out of it?",
+          help: "Be specific. \"Better networking\" is fine. \"A Slack where people actually answer questions\" is better.",
+          fields: [
+            { type: "textarea", name: "23_community_value", label: "If yes - what would you actually want to get out of it?", placeholder: "Peer support, migration war stories, local meetups, technical office hours..." }
+          ]
+        },
+        {
+          id: "q24",
+          section: "community",
+          number: 24,
+          title: "Do you go to tech events?",
+          help: "KubeCon, platform summits, local meetups? What's missing from the ones you attend?",
+          fields: [
+            { type: "textarea", name: "24_tech_events", label: "Do you go to tech events?", placeholder: "Which events matter to you, and what is missing?" }
+          ]
+        },
+        {
+          id: "q25",
+          section: "community",
+          number: 25,
+          title: "Would you want to be part of a smaller, more focused community of people doing this kind of infrastructure work?",
+          fields: [
+            {
+              type: "radio",
+              name: "25_interest_in_smaller_community",
+              label: "Would you want to be part of a smaller, more focused community?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "No", label: "No" },
+                { value: "Maybe", label: "Maybe" }
+              ]
+            },
+            { type: "text", name: "25_interest_in_smaller_community_details", label: "Optional detail", placeholder: "What would make it worth joining?" }
+          ]
+        },
+        {
+          id: "q26",
+          section: "wrap",
+          number: 26,
+          title: "We're a team of technical marketers - ex-PMs who've been building clouds and infrastructure since 2006.",
+          help: "We built this survey ourselves (yes, on our own infra). Would you be willing to share a photo of your laptop stickers? And if you want to tell us your stack story - the CNCF landscape version of your biography - we'd genuinely love to read it.",
+          fields: [
+            { type: "file", name: "26_laptop_stickers_photo", label: "Upload a photo", accept: "image/*" },
+            { type: "url", name: "26_laptop_stickers_photo_url", label: "Or paste a public image URL", placeholder: "https://..." },
+            { type: "textarea", name: "26_stack_story", label: "Your stack story", placeholder: "What do the stickers say about your stack, your journey, or your infra taste?" }
+          ]
+        },
+        {
+          id: "q27",
+          section: "wrap",
+          number: 27,
+          title: "Had you heard of Safespring before this?",
+          help: "If yes - where did you come across us?",
+          fields: [
+            {
+              type: "radio",
+              name: "27_heard_of_safespring_before",
+              label: "Had you heard of Safespring before this?",
+              hideLabel: true,
+              options: [
+                { value: "Yes", label: "Yes" },
+                { value: "No", label: "No" },
+                { value: "Not sure", label: "Not sure" }
+              ]
+            },
+            { type: "text", name: "27_heard_of_safespring_where", label: "Where did you come across us?", placeholder: "Event, colleague, search, blog post, social media..." }
+          ]
+        },
+        {
+          id: "q28",
+          section: "wrap",
+          number: 28,
+          title: "Any final thoughts, strong opinions, or hot takes?",
+          help: "Use the space below - and while you're at it, tell us where to send the coffee.",
+          fields: [
+            { type: "textarea", name: "28_final_thoughts", label: "Any final thoughts, strong opinions, or hot takes?", placeholder: "Anything else we should know?" },
+            { type: "textarea", name: "28_coffee_shipping_address", label: "Where should we send the coffee?", placeholder: "Home or office address, care of, delivery notes..." }
+          ]
+        }
+      ];
+
+      let currentStep = -1;
+      let currentMode = "intro";
+      let pendingStep = null;
+
+      function resolveTheme(themeChoice) {
+        if (themeChoice === "dark" || themeChoice === "light") {
+          return themeChoice;
+        }
+
+        return themeMedia.matches ? "dark" : "light";
+      }
+
+      function applyTheme(themeChoice) {
+        const resolvedTheme = resolveTheme(themeChoice);
+        page.dataset.theme = resolvedTheme;
+        themeToggle.setAttribute("aria-pressed", String(resolvedTheme === "dark"));
+        themeToggleIcon.className = resolvedTheme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
+        themeToggleLabel.textContent = resolvedTheme === "dark" ? "Light mode" : "Dark mode";
+        themeToggle.setAttribute("aria-label", resolvedTheme === "dark" ? "Light mode" : "Dark mode");
+        themeToggle.setAttribute("title", resolvedTheme === "dark" ? "Light mode" : "Dark mode");
+      }
+
+      function setSidebarOpen(isOpen) {
+        page.dataset.sidebarOpen = isOpen ? "true" : "false";
+        infoToggle.setAttribute("aria-expanded", String(isOpen));
+        infoToggleLabel.textContent = isOpen ? "Hide info" : "Info";
+      }
+
+      function setSurveyStarted(isStarted) {
+        page.dataset.surveyStarted = isStarted ? "true" : "false";
+        if (!isStarted) {
+          setSidebarOpen(true);
+        }
+      }
+
+      function enterSurvey(stepIndex) {
+        page.dataset.surveyEntering = "true";
+        setSurveyStarted(true);
+        setSidebarOpen(true);
+        renderStep(stepIndex);
+
+        window.setTimeout(function () {
+          setSidebarOpen(false);
+          page.dataset.surveyEntering = "false";
+        }, 280);
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function getStoredDraft() {
+        try {
+          return JSON.parse(window.localStorage.getItem(storageKey) || "{}");
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function getStoredStep() {
+        const rawStep = window.localStorage.getItem(stepStorageKey);
+        if (rawStep === null) {
+          return -1;
+        }
+        const numericStep = Number(rawStep);
+        return Number.isNaN(numericStep) ? -1 : Math.max(-1, Math.min(questions.length - 1, numericStep));
+      }
+
+      function saveDraft() {
+        const draft = {};
+        Array.from(form.elements).forEach(function (element) {
+          if (!element.name || element.type === "hidden" || element.type === "submit" || element.type === "button") {
+            return;
+          }
+
+          if (element.type === "file") {
+            draft[element.name] = "";
+            return;
+          }
+
+          if (element.type === "checkbox") {
+            if (!draft[element.name]) {
+              draft[element.name] = [];
+            }
+
+            if (element.checked) {
+              draft[element.name].push(element.value || "checked");
+            }
+            return;
+          }
+
+          if (element.type === "radio") {
+            if (element.checked) {
+              draft[element.name] = element.value;
+            }
+            return;
+          }
+
+          draft[element.name] = element.value;
+        });
+
+        window.localStorage.setItem(storageKey, JSON.stringify(draft));
+        window.localStorage.setItem(stepStorageKey, String(currentStep));
+      }
+
+      function restoreDraft() {
+        const draft = getStoredDraft();
+
+        Array.from(form.elements).forEach(function (element) {
+          if (!element.name || !(element.name in draft)) {
+            return;
+          }
+
+          if (element.type === "checkbox") {
+            const storedValues = Array.isArray(draft[element.name]) ? draft[element.name] : [];
+            const compareValue = element.value || "checked";
+            element.checked = storedValues.includes(compareValue);
+            return;
+          }
+
+          if (element.type === "radio") {
+            element.checked = draft[element.name] === element.value;
+            return;
+          }
+
+          if (element.type !== "file") {
+            element.value = draft[element.name];
+          }
+        });
+      }
+
+      function renderLabel(field, context) {
+        const labelClass = (field.hideLabel || context.hideVisibleLabel) ? "survey-sr-only" : "";
+        return '<span class="' + labelClass + '">' + field.label + "</span>";
+      }
+
+      function renderField(field, context) {
+        if (field.type === "textarea") {
+          return [
+            '<label class="survey-field">',
+            renderLabel(field, context),
+            '<textarea name="' + field.name + '" placeholder="' + escapeHtml(field.placeholder || "") + '">' + escapeHtml(getStoredDraft()[field.name] || "") + "</textarea>",
+            "</label>"
+          ].join("");
+        }
+
+        if (field.type === "text" || field.type === "email" || field.type === "url") {
+          return [
+            '<label class="survey-field">',
+            renderLabel(field, context),
+            '<input type="' + field.type + '" name="' + field.name + '" placeholder="' + escapeHtml(field.placeholder || "") + '" value="' + escapeHtml(getStoredDraft()[field.name] || "") + '">',
+            "</label>"
+          ].join("");
+        }
+
+        if (field.type === "file") {
+          return [
+            '<label class="survey-file-group">',
+            renderLabel(field, context),
+            '<input class="survey-file-input" type="file" name="' + field.name + '" accept="' + (field.accept || "") + '">',
+            "</label>"
+          ].join("");
+        }
+
+        if (field.type === "radio" || field.type === "checkbox") {
+          const storedDraft = getStoredDraft();
+          const isCheckbox = field.type === "checkbox";
+          const values = isCheckbox && Array.isArray(storedDraft[field.name]) ? storedDraft[field.name] : [];
+
+          const options = field.options.map(function (option, index) {
+            const checked = isCheckbox
+              ? values.includes(option.value)
+              : storedDraft[field.name] === option.value;
+
+            return [
+              '<label class="survey-choice-option">',
+              '<input type="' + field.type + '" name="' + field.name + '" value="' + escapeHtml(option.value) + '"' + (checked ? " checked" : "") + '>',
+              "<span>" + escapeHtml(option.label) + "</span>",
+              "</label>"
+            ].join("");
+          }).join("");
+
+          return [
+            '<div class="survey-choice-group">',
+            '<span class="survey-choice-label ' + ((field.hideLabel || context.hideVisibleLabel) ? "survey-sr-only" : "") + '">' + field.label + "</span>",
+            '<div class="survey-choice-options">' + options + "</div>",
+            "</div>"
+          ].join("");
+        }
+
+        return "";
+      }
+
+      function renderQuestionFields() {
+        fieldsContainer.innerHTML = questions.map(function (question, stepIndex) {
+          return [
+            '<div class="survey-step-fields" data-step-index="' + stepIndex + '" hidden>',
+            question.fields.map(function (field) {
+              return renderField(field, { hideVisibleLabel: true });
+            }).join(""),
+            "</div>"
+          ].join("");
+        }).join("");
+      }
+
+      function updateSectionTabs(activeSection) {
+        sectionTabs.forEach(function (tab) {
+          const matches = tab.dataset.sectionTarget === activeSection;
+          tab.classList.toggle("is-active", matches);
+          tab.setAttribute("aria-current", matches ? "true" : "false");
+        });
+      }
+
+      function setProgress(answeredCount) {
+        const completion = Math.round((answeredCount / questions.length) * 100);
+        stepLabel.textContent = answeredCount + " / " + questions.length + " questions answered";
+        progressBarFill.style.width = completion + "%";
+        progressText.textContent = completion + "%";
+        progressField.value = answeredCount + " of " + questions.length;
+      }
+
+      function triggerCardAnimation(card) {
+        card.classList.remove("is-animating");
+        window.requestAnimationFrame(function () {
+          card.classList.add("is-animating");
+          window.setTimeout(function () {
+            card.classList.remove("is-animating");
+          }, 720);
+        });
+      }
+
+      function scrollSurveyToViewportCenter() {
+        window.requestAnimationFrame(function () {
+          const rect = form.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          const visibleHeight = Math.min(rect.height, viewportHeight - 48);
+          const offset = Math.max((viewportHeight - visibleHeight) / 2, 24);
+          const top = window.scrollY + rect.top - offset;
+
+          window.scrollTo({
+            top: Math.max(0, top),
+            behavior: "smooth"
+          });
+        });
+      }
+
+      function renderTransition(stepIndex, answeredCountOverride) {
+        const question = questions[stepIndex];
+        const section = sections[question.section];
+        const answeredCount = typeof answeredCountOverride === "number" ? answeredCountOverride : question.number - 1;
+
+        currentMode = "transition";
+        pendingStep = stepIndex;
+        currentStep = stepIndex;
+        setSurveyStarted(true);
+
+        introCard.hidden = true;
+        questionCard.hidden = true;
+        transitionCard.hidden = false;
+        formTop.hidden = false;
+        formActions.hidden = false;
+        backButton.disabled = stepIndex <= 0;
+        nextButton.hidden = false;
+        nextButton.textContent = "Continue";
+
+        sectionLabel.textContent = section.label;
+        setProgress(answeredCount);
+        sectionField.value = section.label;
+        transitionTitle.textContent = section.headline;
+        transitionCopy.textContent = "Let's move on to " + section.headline + ". " + section.blurb;
+        updateSectionTabs(question.section);
+        window.localStorage.setItem(stepStorageKey, String(stepIndex));
+        triggerCardAnimation(transitionCard);
+        scrollSurveyToViewportCenter();
+      }
+
+      function renderStep(stepIndex) {
+        currentStep = stepIndex;
+        const isIntro = stepIndex < 0;
+        const isLastStep = stepIndex === questions.length - 1;
+        currentMode = isIntro ? "intro" : "question";
+        pendingStep = null;
+        setSurveyStarted(!isIntro);
+
+        introCard.hidden = !isIntro;
+        questionCard.hidden = isIntro;
+        transitionCard.hidden = true;
+        formTop.hidden = isIntro;
+        formActions.hidden = isIntro;
+        backButton.disabled = stepIndex <= 0;
+
+        if (isIntro) {
+          sectionLabel.textContent = "Introduction";
+          setProgress(0);
+          nextButton.hidden = false;
+          nextButton.textContent = "Next question";
+          sectionField.value = "Introduction";
+          updateSectionTabs("");
+          triggerCardAnimation(introCard);
+          scrollSurveyToViewportCenter();
+          return;
+        }
+
+        const question = questions[stepIndex];
+        const section = sections[question.section];
+
+        sectionLabel.textContent = section.label;
+        setProgress(question.number);
+        nextButton.textContent = isLastStep ? "Send survey" : "Next question";
+        questionTitle.textContent = question.title;
+
+        if (question.help) {
+          questionHelp.hidden = false;
+          questionHelp.textContent = question.help;
+        } else {
+          questionHelp.hidden = true;
+          questionHelp.textContent = "";
+        }
+
+        Array.from(fieldsContainer.querySelectorAll(".survey-step-fields")).forEach(function (stepBlock) {
+          const matches = Number(stepBlock.dataset.stepIndex) === stepIndex;
+          stepBlock.hidden = !matches;
+        });
+        sectionField.value = section.label;
+        updateSectionTabs(question.section);
+
+        nextButton.hidden = false;
+        window.localStorage.setItem(stepStorageKey, String(stepIndex));
+        triggerCardAnimation(questionCard);
+        scrollSurveyToViewportCenter();
+      }
+
+      function bindAutosaveHandlers() {
+        Array.from(form.elements).forEach(function (element) {
+          if (!element.name || element.dataset.autosaveBound === "true") {
+            return;
+          }
+
+          if (element.type === "file") {
+            element.dataset.autosaveBound = "true";
+            return;
+          }
+
+          element.addEventListener("input", saveDraft);
+          element.addEventListener("change", saveDraft);
+          element.dataset.autosaveBound = "true";
+        });
+      }
+
+      startButton.addEventListener("click", function () {
+        const storedStep = getStoredStep();
+        enterSurvey(storedStep >= 0 ? storedStep : 0);
+      });
+
+      infoToggle.addEventListener("click", function () {
+        const isOpen = page.dataset.sidebarOpen !== "false";
+        setSidebarOpen(!isOpen);
+      });
+
+      backButton.addEventListener("click", function () {
+        if (currentMode === "transition" && pendingStep !== null) {
+          renderStep(pendingStep - 1);
+          return;
+        }
+
+        if (currentStep <= 0) {
+          renderStep(-1);
+          return;
+        }
+
+        renderStep(currentStep - 1);
+      });
+
+      nextButton.addEventListener("click", function () {
+        if (currentMode === "transition" && pendingStep !== null) {
+          renderStep(pendingStep);
+          return;
+        }
+
+        if (currentStep < 0) {
+          renderStep(0);
+          return;
+        }
+
+        if (currentStep === questions.length - 1) {
+          submitPanel.hidden = false;
+          submitPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+          return;
+        }
+
+        if (currentStep < questions.length - 1) {
+          const currentQuestion = questions[currentStep];
+          const nextStep = currentStep + 1;
+          const nextQuestion = questions[nextStep];
+
+          if (currentQuestion.section !== nextQuestion.section) {
+            renderTransition(nextStep, currentQuestion.number);
+            return;
+          }
+
+          renderStep(nextStep);
+        }
+      });
+
+      sendButton.addEventListener("click", function () {
+        submitPanel.hidden = false;
+        submitPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      submitClose.addEventListener("click", function () {
+        submitPanel.hidden = true;
+      });
+
+      themeToggle.addEventListener("click", function () {
+        const currentTheme = resolveTheme(window.localStorage.getItem(themeStorageKey) || "system");
+        const nextTheme = currentTheme === "dark" ? "light" : "dark";
+        window.localStorage.setItem(themeStorageKey, nextTheme);
+        applyTheme(nextTheme);
+      });
+
+      themeMedia.addEventListener("change", function () {
+        const storedTheme = window.localStorage.getItem(themeStorageKey) || "system";
+        if (storedTheme === "system") {
+          applyTheme("system");
+        }
+      });
+
+      form.addEventListener("keydown", function (event) {
+        if (event.key !== "Enter" || event.shiftKey || event.metaKey || event.ctrlKey || event.altKey) {
+          return;
+        }
+
+        const tagName = event.target.tagName.toLowerCase();
+        if (tagName === "textarea" || tagName === "button") {
+          return;
+        }
+
+        if (currentStep < questions.length - 1 && currentStep >= 0) {
+          event.preventDefault();
+          const currentQuestion = questions[currentStep];
+          const nextStep = currentStep + 1;
+          const nextQuestion = questions[nextStep];
+
+          if (currentQuestion.section !== nextQuestion.section) {
+            renderTransition(nextStep, currentQuestion.number);
+            return;
+          }
+
+          renderStep(nextStep);
+        }
+      });
+
+      form.addEventListener("submit", function () {
+        saveDraft();
+        nextField.value = window.location.origin + "/survey/thanks/";
+        originField.value = window.location.href;
+        timestampField.value = new Date().toISOString();
+      });
+
+      applyTheme(window.localStorage.getItem(themeStorageKey) || "system");
+      renderQuestionFields();
+      restoreDraft();
+      bindAutosaveHandlers();
+      setSurveyStarted(false);
+      renderStep(-1);
+    });
+  </script>
+</body>
