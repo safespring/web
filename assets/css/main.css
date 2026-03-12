@@ -5128,20 +5128,15 @@ th:last-child {
 /* Balanced text */
 
 @media screen and (min-width:500px) {
-	.balance-text {
-		visibility:hidden;
-	}
-
-	@media (scripting:none) {
-		.balance-text {
-			visibility:visible;
-		}
+	.balance-text,
+	.balanced-text {
+		visibility:visible;
 	}
 
 	@supports (text-wrap:balance) {
-		.balance-text {
+		.balance-text,
+		.balanced-text {
 			text-wrap:balance;
-			visibility:visible;
 		}
 	}
 }
