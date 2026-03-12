@@ -567,6 +567,7 @@
       .survey-page:not([data-theme="light"]) .survey-reward-copy .survey-kicker {
         color: #8fd0ff;
       }
+
     }
 
     .survey-sidebar-start-button {
@@ -1981,6 +1982,7 @@
       function applyTheme(themeChoice) {
         const resolvedTheme = resolveTheme(themeChoice);
         page.dataset.theme = resolvedTheme;
+        document.body.style.backgroundColor = resolvedTheme === "dark" ? "#0a141c" : "#fafefe";
         themeToggle.setAttribute("aria-pressed", String(resolvedTheme === "dark"));
         themeToggleIcon.className = resolvedTheme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
         themeToggleLabel.textContent = resolvedTheme === "dark" ? "Light mode" : "Dark mode";
