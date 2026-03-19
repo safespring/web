@@ -14,7 +14,6 @@ language: "En"
 author: "Gabriel Paues"
 ---
 
-
 When you spin up a Windows Server instance in a cloud environment like Safespring Compute, you get a blank slate, no password, no SSH, no remote access at all. 
 
 This post walks through the full automation chain: using cloudbase-init to bootstrap the instance at first boot, then running an Ansible playbook to apply a security baseline.
@@ -93,7 +92,7 @@ Or launch via the CLI:
 
 ```bash
 openstack server create \
-  --image "Windows Server 2022" \
+  --image “windows-server-2022” \
   --flavor l2.c4r8 \
   --user-data windows-bootstrap.ps1 \
   my-windows-server
