@@ -231,7 +231,9 @@ activities announced by Safespring in advance; or emergency System
 maintenance activities which could not reasonably have been foreseen by
 Safespring or its third-party program product developers.
 
-> COMPANY SHALL NOT BE LIABLE TO THE CUSTOMER IN CONNECTION WIT THE AGREEMENT FOR ANY INDIRECT OR CONSEQUENTIAL DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PRODUCTION, LOSS OF DATA, LOSS OF BUSINESS, LOSS OF INVESTMENT, LOSS OF REVENUE AND LOSS OF GOODWILL.
+{{% note color="clear-blue" %}}
+COMPANY SHALL NOT BE LIABLE TO THE CUSTOMER IN CONNECTION WIT THE AGREEMENT FOR ANY INDIRECT OR CONSEQUENTIAL DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PRODUCTION, LOSS OF DATA, LOSS OF BUSINESS, LOSS OF INVESTMENT, LOSS OF REVENUE AND LOSS OF GOODWILL.
+{{% /note %}}
 
 Safespring's aggregate and total liability in respect of any one or more
 events or series of events (whether connected or unconnected) occurring

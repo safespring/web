@@ -13,12 +13,10 @@ language: "En"
 noindex: "x"
 ---
 
-## Acceptable Use Policy
+*Users are responsible for any information or content uploaded or
+otherwise inserted to the Services.*
 
-Users are responsible for any information or content uploaded or
-otherwise inserted to the Services.
-
-### 1. Introduction
+## 1. Introduction
 
 Safespring offers its customers a variety of infrastructure cloud services.
 This policy sets forth the principles governing the use of any of
@@ -36,7 +34,7 @@ Users are responsible for any information or content uploaded or
 otherwise inserted to the Services and Users must at all times adhere to
 all applicable legislation when using the Services.
 
-### 2. Authorization
+## 2. Authorization
 
 Users must be authorized as determined by Safespring. Users may not permit
 any person other than its authorized personnel or authorized users to
@@ -55,7 +53,7 @@ shared. All Users must have effective routines to identify unauthorized
 access to the Services and/or compromised passwords or security and to
 minimize the impact of such incidents.
 
-### 3. Using the Services
+## 3. Using the Services
 
 The Services are owned by Safespring with the intention of being used only
 by the Users for the Services' intended and agreed purposes. Users may
@@ -124,7 +122,7 @@ they
     or export or resell the Services without the required export
     licenses and approvals.
 
-### 4. Safespring's monitoring
+## 4. Safespring's monitoring
 
 Safespring continuously monitors the Services and may monitor Users'
 running applications' level of rudimentary protection against
@@ -143,7 +141,7 @@ the application cannot be hacked and to protect the overall integrity of
 the Services. Once the application has been secured and public access
 has been suspended, the User will be informed thereof.
 
-### 5. Information obligation
+## 5. Information obligation
 
 If the User becomes aware of a breach of this policy, the User must
 promptly notify Safespring and upon request provide Safespring with reasonable

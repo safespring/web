@@ -247,7 +247,6 @@ organization.
 Each party have the responsibility to perform escalation within its own
 organization.
 
-{{% note color="clear-blue" title="ESCALATION LEVELS" %}}
 #### Escalation level ONE
 
 Safespring Support manager -- Duty Manager  
@@ -262,8 +261,6 @@ Phone: +31 637 17 46 61
 #### Escalation level THREE 
 
 CEO -- Phone: +46 708 37 55 66
-
-{{% /note %}}
 
 ## Incident level description and response time
 
