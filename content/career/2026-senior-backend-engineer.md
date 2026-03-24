@@ -1,0 +1,103 @@
+---
+Title: "Senior Backend Engineer"
+intro: "Build the cloud Europe deserves!"
+draft: false
+date: "2026-03-24"
+sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/c51659c2-c518-478f-8d51-c8afa458bd19/8dcd1b4f-5fc7-4d82-8d06-b3738b1c66a3#applyNow"
+sidebarlinkname: "Apply now"
+sidebarlinkicon: "fa-arrow-up-right-from-square"
+language: "En"
+socialmedia: "/socialmedia/safespring-work.jpg"
+Language: "En"
+sidebarimage: "safespring-image.svg"
+---
+
+{{< ingress >}}
+We are hiring a Senior Backend Engineer to help build our Self-service API and a new customer portal that make our cloud easy to understand, easy to use, and ready to scale. This is a hands‑on role where you work across backend and help a small team get a lot done.​
+{{< /ingress >}}
+
+## Why this role matters
+
+We’re building the cloud Europe deserves - open, trustworthy, and competitive.
+
+Built heavily on open‑source technologies, our platform can scale from a single VM in public cloud to multiple racks in a customer’s private cloud. 
+
+Being a small company means we have to be smart with our time and money: we aim to build things once, build them well, and make them work for many customers.
+
+The Self-service API and portal are central to that. The platform is built on an event driven architecture (some details can be found in the blog post here). They should make it simple for customers to see and manage their resources,  robust enough to scale, and boring enough that our support and infra team doesn’t get 3 a.m. pages.
+
+## What you’ll work on
+
+- Design and evolve the **Golang** based Self-service API so that customers and internal teams have a clear, consistent way to work with compute, storage, backup, and container services.​ Our platform is event-driven, build on-top of **NATS**.
+- Drive our continuous delivery journey: pipelines, trunk-based development, and everything in between, while improving developer experience through better testing, CI/CD, observability, and documentation so every engineer can ship safely and quickly.
+- Make practical choices that balance “nice engineering” with what we can actually build and maintain as a small team, while still preparing for more users and more data.
+- Use and contribute to open‑source tools and libraries wherever it makes sense, and avoid reinventing things that the community already solved well.​
+
+## Who we think might enjoy this?
+
+- You take strong **ownership** of what you build 
+- You care about **open source**, understand how to evaluate and integrate libraries and projects, and know when to build versus adopt.
+- You are comfortable thinking about **performance**, **reliability**, and **security** from the start, and you design for growth even when today’s numbers are small.
+- You like to solve recurring problems with **automation**, better patterns, or tooling, instead of adding more meetings or layers of process.
+- You **communicate** clearly, write things down, and can explain trade‑offs to both engineers and non‑engineers.
+
+## Reality check 
+
+Working at a small company means living with ambiguity. Priorities shift, context is incomplete, and there is no neatly scoped ticket every morning handed in. 
+
+If you like finding the real problem, owning it, and shipping solutions that last - you’ll thrive here. 
+
+If you prefer very narrow responsibilities or large, highly specialized teams, this may not be the right opportunity. 
+
+## What’s in it for you?
+
+- A real chance to shape user-facing services that makes European tech autonomous! 
+- Flexible, remote-friendly working conditions, with a possibility to work from the Stockholm office
+- Tech gear of your choice
+- Training opportunities to keep you growing
+- The stability of a collective bargaining agreement with all its perks (or comparable benefits outside of Sweden)
+- Teammates who’ll push you forward by questioning your solutions, contributing new perspectives, and exploring the tech rabbit holes that lead to better answers.
+
+## Your team and ways of working 
+
+Your team works on what customers touch first - the APIs and portal. You’ll collaborate closely with software and infrastructure engineers as well as customer‑facing colleagues who translate real‑world insights from customers directly into what we build.
+
+We work in two‑week sprints with demos and retros that actually improve how we work.
+
+We are remote-friendly team, however we value time spent together. We meet for company offsites in May, and travel for tech conferences together (e.g. KubeCon or OpenInfra). 
+
+Some of the projects in our 2026 roadmap include:
+
+1. Introducing an external API and golang SDK for our customers
+2. Prototype a terraform provider for the external API
+3. Introduce upgrade schedules for on-demand Kubernetes into our self-service portal
+
+## About Safespring
+
+At Safespring, we’re giving European organizations an alternative to the hyperscalers. Powered by open source our sustainable and European-based cloud infrastructure puts security, transparency, and digital sovereignty first.
+
+
+## How to apply
+
+If this sounds interesting, you can send in your application by clicking the apply button.
+
+You don’t have to tick every box. If the problems described here sound like the ones you want to work on, it’s worth a conversation.
+
+Questions about this role? Send a message to Marietta, our friendly people lead at marietta@safespring.com. 
+
+
+## Location and timeline
+
+Please, notice that for this role you will need to be based in European Union. 
+
+As we provide services to some of the public research institutions we will conduct background and reference checks as part of the recruitment process for candidates who get offer of employment with us. 
+
+{{% note "info" %}}
+**Starting date:**  
+May 2026
+
+**Salary range:**  
+65,000 - 85,000 EUR / Yearly
+{{% /note %}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/c51659c2-c518-478f-8d51-c8afa458bd19/8dcd1b4f-5fc7-4d82-8d06-b3738b1c66a3#applyNow" >}}
