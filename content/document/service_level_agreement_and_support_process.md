@@ -191,7 +191,7 @@ Safespring:
 
 When communicating with Safespring staff regarding support case via other
 communication channels (e.g. phone or chat) please always refer to
-registered ticket reference number (e.g. RT#1234) obtained from Safespring
+registered ticket reference number (e.g. `RT#1234`) obtained from Safespring
 ticketing system when registered a support case via support@safespring.com
 
 In order to facilitate the best possible support experience please
