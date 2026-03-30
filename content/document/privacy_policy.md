@@ -29,6 +29,8 @@ This Privacy Policy describes how Safespring (“we”, “us”, “our”) pro
 Rättarvägen 3, 169 68 Solna  
 Sweden
 
+For privacy-related matters, including the exercise of data subject rights, you may contact us at gdpr@safespring.com
+
 ## 2. Your Rights Under GDPR
 Under the GDPR, you have the right to:
 - Access your personal data (Art. 15)
@@ -67,8 +69,7 @@ We may process personal data relating to:
 - Website visitors
 - Business contacts
 - Job applicants
-
-
+- Authorized Users of our services
 
 ## 4. Website Privacy
 
@@ -136,8 +137,9 @@ We process business contact data for:
 - Art. 6(1)(a) — Consent (surveys/newsletters)
 
 ### 5.4 Retention
-- Active business relationship duration
-- Legal retention obligations 
+- Personal data is retained for the duration of the active 
+business relationship, and thereafter in accordance with 
+applicable legal retention obligations or until consent is withdrawn.
 
 ## 6. Recruitment
 
@@ -160,16 +162,56 @@ Processing job applications and candidate evaluation.
 ### 6.5. Processors and International Transfers
 We use subprocessors for specific services.
 
-| Name of Subprocessor  | Location of Processing         | Corporate Location | DPA                                                         |
-|-----------------------|--------------------------------|--------------------|-------------------------------------------------------------|
-| Linkedin – Recuitment | USA. EU operations in Ireland. | USA                | https://www.linkedin.com/legal/l/dpa                        |
+| Name of Subprocessor | Location of Processing      | Description of Processing                  | Corporate Location | DPA                                                                 |
+|---------------------|----------------------------|--------------------------------------------|------------------|---------------------------------------------------------------------|
+| LinkedIn – Recruitment | USA, EU operations in Ireland | Used to link candidate CVs to ATS         | USA              | [LinkedIn DPA](https://www.linkedin.com/legal/l/dpa?utm_source=chatgpt.com) |
+| Hailey HR           | Finland, Sweden             | ATS used to evaluate candidates           | Sweden           | [Hailey HR DPA](https://haileyhr.com/de/data-processing-agreement/) |
 
-Where personal data is transferred outside the EU/EEA:
-- Adequacy decisions are relied upon where applicable
+Where personal data is transferred outside the EU/EEA, we rely on adequacy decisions, Standard Contractual Clauses (SCCs), or other legally recognised safeguards.
 
 Records of processing activities (ROPA) are maintained in accordance with GDPR Art. 30.
 
-## 7. Information Security Measures 
+## 7. Authorized Users of our services
+
+### 7.1 Purpose
+To deliver contracted services, including. 
+- Provide and manage access to our systems and services
+- Ensure security and compliance with internal policies
+- Monitor and audit usage to prevent unauthorised access or misuse
+
+### 7.2 Categories of Personal Data
+- IP addresses 
+- Usernames 
+- Business Emails 
+- Business Phone 
+
+### 7.3 Legal Basis
+- Art. 6(1)(a) - Consent
+- Art. 6(1)(b) - Contractual Necessity
+- Art. 6(1)(c) - Legal Obligation
+
+### 7.4 Retention
+- Duration of engagement period
+- Duration of engagement plus 7 years for financial reporting
+
+### 7.5 Processors and International Transfers
+We use subprocessors for specific services.
+
+| Name of Subprocessor | Location of Processing | Description of Processing             | Corporate Location | DPA                                                                 |
+|---------------------|----------------------|--------------------------------------|------------------|---------------------------------------------------------------------|
+| Atlassian (JIRA)    | Global               | Ticketing System                      | USA              | [Atlassian DPA](https://www.atlassian.com/legal/data-processing-addendum#scope-and-term) |
+| NextCloud           | Sweden               | File workspace and storage            | Germany          | [NextCloud Privacy](https://nextcloud.com/privacy/)                 |
+| Runbox              | Norway               | Email Communication                   | Norway           | [Runbox Privacy](https://runbox.com/about/privacy-policy/)          |
+| IssTech AB          | Sweden               | Backup Administration and Support     | Sweden           | Stored Internally                                                    |
+
+#### Optional Use of Shared Slack Workspace
+We may offer access to a shared workspace in Slack as an optional way to communicate.
+
+Use of Slack is voluntary and based on your consent. It is not required to receive our services, which are available through other communication channels.
+
+By using the shared Slack workspace, you understand that messages may be visible to other authorised participants and are handled through a third-party platform under its own terms and privacy practices. 
+
+## 8. Information Security Measures 
 In accordance with ISO/IEC 27001, we maintain an Information Security Management System (ISMS) and apply appropriate technical and organisational measures, including:
 - Risk assessment and risk treatment processes
 - Access control based on least privilege
@@ -182,11 +224,11 @@ In accordance with ISO/IEC 27001, we maintain an Information Security Management
 - Regular internal audits and management reviews
 Personal data protection is integrated into our security governance framework.
 
-## 8. Automated Decision-Making
+## 9. Automated Decision-Making
 We do not engage in automated decision-making or profiling within the meaning of GDPR Art. 22, unless explicitly stated and legally permitted.
 
-## 9. Third-Party Websites
+## 10. Third-Party Websites
 Our website may contain links to third-party websites. When you leave our site, their privacy policies apply. We are not responsible for their data processing practices.
 
-## 10. Contact Us
+## 11. Contact Us
 If you have any questions about your rights, please feel free to contact us at gdpr@safespring.com
