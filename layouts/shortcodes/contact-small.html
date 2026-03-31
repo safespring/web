@@ -12,7 +12,7 @@
       {{ with .Get "email" }}
       <p style="line-height: 1 !important; margin:0px !important;">
         {{ if in . "@" }}
-        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
+        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{ . }}">{{ . }}</a>
         {{ else }}
         <span style="color: #9A9A9A; font-size: 14px;">{{ . }}</span>
         {{ end }}
