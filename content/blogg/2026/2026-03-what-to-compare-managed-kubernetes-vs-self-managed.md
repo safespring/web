@@ -70,7 +70,7 @@ Based on the current Safespring documentation, On-demand Kubernetes is documente
 - **A managed control plane** with support for `3` or `5` control plane nodes depending on availability requirements.
 - **Talos Linux** as the underlying operating system for the Kubernetes nodes.
 - **Cilium as the default CNI**, with Gateway API enabled in the network model.
-- **Support for NGINX Ingress** for teams that prefer a more familiar ingress pattern.
+- **Support for Traefik** for teams that prefer a familiar ingress pattern.
 - **Persistent volumes through Cinder CSI**, with `fast` and `large` storage classes available when the CSI component is enabled.
 - **OIDC-based authentication**, using portal-generated kubeconfig and `kubelogin`.
 - **GPU-capable worker nodes** for teams with ML, AI, or other accelerated workloads.
@@ -111,7 +111,7 @@ A clearer way to think about it is topic by topic:
 
 {{< boundary-row
   topic="Ingress and traffic"
-  service="NGINX Ingress is supported in addition to the default network direction."
+  service="Traefik is supported in addition to the default network direction."
   responsibility="Which traffic pattern you standardize on internally and how you operate it across teams."
 >}}
 
