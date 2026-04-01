@@ -33,12 +33,12 @@ Built on Safespring Compute, the service combines self-service provisioning, a m
 The practical value is that engineering teams get a platform that is ready to use, while the organization keeps control over jurisdiction, security posture, and long-term platform direction without having to own every layer of platform operations internally.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-rocket" text="Self-service clusters" link="" color="#195F8C">}}
-    {{< icon-block icon="fas fa-layer-group" text="Managed control plane" link="" color="#417DA5">}}
-    {{< icon-block icon="fas fa-shield-check" text="Immutable node foundation" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-arrows-up-down-left-right" text="Modern traffic model" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-rocket" text="Deploy anywhere" link="" color="#195F8C">}}
+    {{< icon-block icon="fas fa-link-slash" text="No vendor lock-in" link="" color="#417DA5">}}
+    {{< icon-block icon="fas fa-layer-group" text="Cloud-native technologies" link="" color="#32CD32">}}
     {{< icon-block icon="fas fa-lock" text="Digital sovereignty" link="/en/gdpr/" color="#FA690F">}}
     {{< icon-block icon="fas fa-leaf" text="100% renewable energy" link="" color="#417DA5">}}
+    {{< icon-block icon="fas fa-sliders" text="You are in control" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Why the architecture matters
