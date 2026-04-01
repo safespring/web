@@ -74,7 +74,7 @@ Based on the current Safespring documentation, On-demand Kubernetes is documente
 - **Persistent volumes through Cinder CSI**, with `fast` and `large` storage classes available when the CSI component is enabled.
 - **OIDC-based authentication**, using portal-generated kubeconfig and `kubelogin`.
 - **GPU-capable worker nodes** for teams with ML, AI, or other accelerated workloads.
-- **A managed control plane SLA of 99.5%**, measured against Kubernetes API availability.
+- **A managed control plane**, measured against Kubernetes API availability.
 
 That is a meaningful amount of platform surface area to have defined up front. It means the service is not only about getting nodes to boot. It is also about giving teams a known way to think about access, networking, storage, and platform operations.
 
