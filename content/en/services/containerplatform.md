@@ -27,8 +27,10 @@ language: "En"
 ---
 
 {{< ingress >}}
-Built on Safespring Compute, the service combines self-service provisioning, a managed control plane, modern traffic management, and digital sovereignty in a platform delivered from Safespring data centers in Sweden and Norway powered by 100% renewable energy.
+Safespring On-demand Kubernetes is a managed Kubernetes service for running containerized applications on Safespring infrastructure, with self-service provisioning and a managed control plane.
 {{</ ingress >}}
+
+It is designed for organizations that need stronger control over data location, jurisdiction, and operational boundaries, including environments with GDPR, compliance, and digital sovereignty requirements.
 
 The practical value is that engineering teams get a platform that is ready to use, while the organization keeps control over jurisdiction, security posture, and long-term platform direction without having to own every layer of platform operations internally.
 

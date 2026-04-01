@@ -27,8 +27,10 @@ language: "No"
 ---
 
 {{< ingress >}}
-Bygget på Safespring Compute kombinerer tjenesten selvbetjent provisjonering, administrert kontrollplan, moderne trafikkhåndtering og digital suverenitet i en plattform som leveres fra Safesprings datasentre i Sverige og Norge med 100% fornybar energi.
+Safespring On-demand Kubernetes er en administrert Kubernetes-tjeneste for å kjøre containeriserte applikasjoner på Safesprings infrastruktur, med selvbetjent provisjonering og administrert kontrollplan.
 {{</ ingress >}}
+
+Tjenesten er utformet for virksomheter som trenger sterkere kontroll over dataplacering, jurisdiksjon og operative grenser, inkludert miljøer med krav til GDPR, compliance og digital suverenitet.
 
 Den praktiske verdien er at ingeniørteam får en plattform som er klar til bruk, samtidig som virksomheten beholder kontroll over jurisdiksjon, sikkerhetsprofil og langsiktig plattformretning uten å måtte eie hvert lag av plattformdriften internt.
 
