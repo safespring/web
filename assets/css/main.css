@@ -4822,6 +4822,14 @@ margin-bottom:2rem;
 	padding:3px 0 0 0;
 }
 
+.flex-item > p {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .cardicon {
 	display:flex;
 	height:40px;

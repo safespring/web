@@ -5,7 +5,7 @@ documentation: "Backup"
 cardtitle: "Backup"
 cardicon: "fa-solid fa-cloud-arrow-up"
 cardcolor: "#29a929"
-cardorder: "5"
+cardorder: "6"
 date: 2022-12-22T13:58:58+01:00
 draft: false
 intro: "With Safesprings cloud-based backup service, you don't need to invest in any hardware or software. Just pay for the amount of data stored in the service!"

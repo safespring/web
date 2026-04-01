@@ -6,7 +6,7 @@ cardtitle: "Containers"
 cardintro: "Managerad Kubernetes för verksamheter som vill minska driftansvar, öka kontrollen och välja en digitalt suverän tjänst från datahallar med 100% förnybar energi."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
-cardorder: "3"
+cardorder: "1"
 metatitle: "Managerad Kubernetes i Sverige och EU | Safespring On-demand Kubernetes"
 card: "safespring_card_12.svg"
 date: 2026-03-30

@@ -6,7 +6,7 @@ cardtitle: "Containers"
 cardintro: "Managed Kubernetes built for organizations that need a digitally sovereign platform, clear operational boundaries, and delivery from Safespring data centers in Sweden and Norway powered by 100% renewable energy."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
-cardorder: "3"
+cardorder: "1"
 metatitle: "Managed Kubernetes in Sweden and the EU | Safespring On-demand Kubernetes"
 card: "safespring_card_12.svg"
 date: 2026-04-01
