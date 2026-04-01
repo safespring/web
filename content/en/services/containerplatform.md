@@ -1,6 +1,6 @@
 ---
 title: "Safespring On-demand Kubernetes"
-section: "Managed Kubernetes"
+section: "Platform"
 sectionhighlight: ""
 cardtitle: "Containers"
 cardintro: "Managed Kubernetes built for organizations that need a digitally sovereign platform, clear operational boundaries, and delivery from Safespring data centers in Sweden and Norway powered by 100% renewable energy."
