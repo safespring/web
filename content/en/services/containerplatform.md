@@ -1,68 +1,77 @@
 ---
-title: "Safespring Container Platform"
-section: "Beta"
-sectionhighlight: "x"
+title: "Safespring On-demand Kubernetes"
+section: "Managed Kubernetes"
+sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Kubernetes management with built-in scalability and robust platform security."
+cardintro: "Managed Kubernetes for organizations that want to reduce operational overhead, increase control, and get new services into production faster."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "3"
-metatitle: "Safespring Managed Kubernetes Platform: Fast, Secure, and Scalable Cloud Solutions"
+metatitle: "Managed Kubernetes in Sweden and the EU | Safespring On-demand Kubernetes"
 card: "safespring_card_12.svg"
-date: 2024-12-12
+date: 2026-04-01
 draft: false
-intro: "Explore Safespring’s highly scalable, Kubernetes cloud platform, designed for SaaS, research, and public sector organizations needing cost-effective, high-performance container management with EU-based security and compliance."
+intro: "Safespring On-demand Kubernetes is a managed Kubernetes service for organizations that want to modernize application operations, reduce internal platform ownership, and retain control over data and operations in Europe."
 background: ""
-sidebarlinkname: "Join the Beta Program"
-sidebarlinkurl: "#interested-in-trying-out-the-platform"
+sidebarlinkname: "Contact us"
+sidebarlinkurl: "/en/contact/"
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Want to discuss the service? Feel free to reach out if you have any questions."
+sidebarphone: "+46 76-629 25 02"
+sidebarmail: "hello@safespring.com"
+sidebarlinkname2: "Technical deep dive"
+sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
 language: "En"
 ---
 
 {{< ingress >}}
-    Safespring's Container Platform is a Managed Kubernetes service built on our powerful compute infrastructure, optimized for fast, reliable, and secure containerized applications. 
+Safespring On-demand Kubernetes helps organizations get new services into production faster, reduce internal platform ownership, and retain control over data and operations in Europe.
 {{</ ingress >}}
 
-Designed with scalability, compliance, and affordability in mind, our platform supports cloud-native applications in a secure, EU-sovereign environment.
+The service is built for organizations that want to modernize how applications run without having to build up the full platform capability internally. For many teams, the value is shorter lead time, clearer responsibility boundaries, and a stronger foundation for secure growth.
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-cubes" text="Based on CNCF projects" link="" color="#195F8C">}}
-    {{< icon-block icon="fak fa-safespring-icon" text="Powered by Safespring Compute" link="/en/services/compute/" color="#417DA5">}}
-    {{< icon-block icon="fas fa-sparkles" text="GPU for ML and AI" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-sync" text="Dynamic Scalability" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-forward" text="Quick start, Low entry point " link="" color="#FA690F">}}
-    {{< icon-block icon="fa-kit fa-eu-flag" text="Jurisdictional Security" link="/en/gdpr/" color="#417DA5">}}
+    {{< icon-block icon="fas fa-rocket" text="Production faster" link="" color="#195F8C">}}
+    {{< icon-block icon="fas fa-layer-group" text="Less platform work" link="" color="#417DA5">}}
+    {{< icon-block icon="fas fa-shield-check" text="Operational control" link="" color="#32CD32">}}
+    {{< icon-block icon="fas fa-arrows-up-down-left-right" text="Built to scale" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fas fa-lock" text="EU jurisdiction" link="/en/gdpr/" color="#FA690F">}}
+    {{< icon-block icon="fa-kit fa-eu-flag" text="Regulated sectors" link="" color="#417DA5">}}
 {{< /icon-block-container >}}
 
-## Safespring Container Platform: Open, Sovereign, and Self-service
+## Why organizations choose the service
 
-Our compliant Kubernetes Platform, powered by Safespring Compute, allows you to deploy, scale, and easily manage both the cluster as well as cloud-native applications running on it, all within a cost-efficient environment. Ideal for SaaS providers, research institutions, and public sector entities, Safespring's infrastructure combines scalability, security, and sovereignty under EU jurisdiction.
+Safespring On-demand Kubernetes is a strong fit for organizations that want to get more business value out of modern applications without increasing the internal burden of platform and operations work. For many teams, the gain is more time for delivery and development, while the organization gets stronger control over data, responsibility, and compliance.
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Tailored to your needs" description="Start with a dedicated cluster that can scale with your needs, and grow to multiple manged clusters." >}}
-{{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Cloud native" description="Scale your cloud native application as your business grows with competitive, pay-as-you-go pricing." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Secure & Compliant" description="Safeguard data with full compliance to EU security and jurisdictional requirements." >}}
+{{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="When the service creates value" %}}
+Safespring On-demand Kubernetes is especially relevant when you want to:
+
+- get new digital services from development to production faster
+- reduce dependence on internal specialist work for platform and operations
+- meet requirements around security, data location, and European jurisdiction
+- establish a modern foundation for growth, modernization, and long-term control
+{{% /custom-card %}}
 
 {{< distance >}}
 
-## Why Choose Safespring Container Platform?
+## What you get with the service
 
-Safespring Container Platform is a flexible, secure, and high-performance solution tailored to organizations with strict compliance requirements and evolving needs. Whether you're deploying microservices, CI/CD workflows, or data-heavy applications, Safespring’s Container platform provides:
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-rocket" text="A faster path to business value" description="Spend less time building and maintaining the platform and more time launching, improving, and scaling the applications that create value in your business." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Stronger control and less risk" description="Meet requirements around security, data location, and European jurisdiction in a solution built for organizations where control is not negotiable." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="A platform that grows with you" description="Create a foundation for new services, growing products, and changing needs without each step requiring you to build more platform capability yourself." >}}
 
-- **Dynamic Scalability**: Start with a small namespace and grow to full clusters as your requirements increase.
-- **Cost-Effective Pricing**: Our platform allows you to scale cost-efficiently with flexible pay-as-you-go options.
-- **High Performance**: Built on Safespring Compute, the platform guarantees reliable, low-latency infrastructure for uninterrupted operations.
-- **EU Compliance & Security**: Enjoy GDPR-compliant infrastructure with digital sovereignty for sensitive workloads.
-- **Comming 2026: Integration**: Support for streamlining DevOps practices by automating application provisioning, as well as support for monitoring and logging.
+Safespring combines open technology with local presence, technical competence, and infrastructure built for organizations that do not want to compromise on control, data location, or long-term independence. The result is a managed Kubernetes service that increases your room to act without adding unnecessary complexity.
 
-By managing the IaaS and PaaS layers, we empower you to focus on developing and deploying your applications, with Safespring taking care of the infrastructure and compliance.
+If you want to understand the technical service boundary in more detail, for example around the control plane, networking, storage, and responsibility split, we have described that in our [technical walkthrough of Safespring On-demand Kubernetes](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/).
 
-## Interested in trying out the platform?
+{{< distance >}}
 
-Join our beta program and explore the full functionality of the Safespring Container Platform as it launches! We’re excited to onboard our first beta users in early 2025. Be among the first to experience a powerful, scalable, and secure environment tailored for your needs.
+## Talk to us about your needs
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Contact us" %}}
-Have questions about our Managed Kubernetes Platform? Contact us for in-depth technical information and personalized guidance.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Contact us" %}}
+Do you have questions about how Safespring On-demand Kubernetes can support your modernization, security, or digital sovereignty goals? Contact us for an initial discussion about your needs, target state, and next steps.
 
 {{< inline "Call" >}} [+46 855 10 73 70](tel:+46855107370)  
 {{< inline "Mail" >}} [hello@safespring.com](mailto:hello@safespring.com)
