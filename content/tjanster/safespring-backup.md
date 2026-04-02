@@ -5,7 +5,7 @@ documentation: "Backup"
 cardtitle: "Backup"
 cardicon: "fa-solid fa-cloud-arrow-up"
 cardcolor: "#29a929"
-cardorder: "5"
+cardorder: "6"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Med Safesprings molnbaserad backuptjänst behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"

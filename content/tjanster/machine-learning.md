@@ -6,7 +6,7 @@ language: "Se"
 cardtitle: "AI & ML"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
-cardorder: "6"
+cardorder: "2"
 date: 2025-03-13
 draft: false
 intro: "Utnyttja säkert federerad maskininlärning med FEDn på Safesprings GDPR-kompatibla molninfrastruktur."

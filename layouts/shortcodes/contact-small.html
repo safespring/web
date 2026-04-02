@@ -9,9 +9,15 @@
       <h2 style="color: #323232; margin:0; font-size: 20px; line-height: 1 !important; padding-top: 5px !important;">
         {{ .Get "name" }}
       </h2>
+      {{ with .Get "email" }}
       <p style="line-height: 1 !important; margin:0px !important;">
-        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{.Get `email`}}">{{ .Get "email" }}</a>
+        {{ if in . "@" }}
+        <a style="color: #9A9A9A; font-size: 14px;" href="mailto:{{ . }}">{{ . }}</a>
+        {{ else }}
+        <span style="color: #9A9A9A; font-size: 14px;">{{ . }}</span>
+        {{ end }}
       </p>
+      {{ end }}
     </div>
   </div>
 </div>

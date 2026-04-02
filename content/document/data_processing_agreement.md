@@ -20,7 +20,7 @@ This Data Processing Agreement (the "DPA") between the Customer (below,
 the "Controller") and Safespring AB (559075-0245) (below, the "Processor")
 constitutes a part of the Agreement, under which the Processor will
 process personal data on behalf of the Controller when supplying the
-Service (including any Professional Services). The Controller is the
+Service. The Controller is the
 data controller in relation to the processing of the Personal Data. The
 Processor is data processor.
 
@@ -48,7 +48,7 @@ Legislation), specified in Appendix 1 hereto.
 
 ## 3. Instructions
 
-**3.1** The Processor shall process the Personal Data in accordance with
+**3.1** The Processor shall process the Personal Data in accordance with Article 28(3) and
 the Controller's written instructions set forth in Appendix 1.
 
 **3.2** The Processor may not process the Personal Data for any other
@@ -81,9 +81,10 @@ Personal Data and the means by which it acquired the Personal Data.
 
 ## 5. Security measures
 
-**5.1** The Processor shall maintain adequate security measures to
-ensure that the Personal Data is protected against destruction,
-modification and proliferation. The Processor shall further ensure that
+**5.1** The Processor shall maintain appropriate technical and organisational 
+measures in accordance with Article 32 of the GDPR to ensure that 
+the Personal Data is protected against destruction, modification
+ and proliferation. The Processor shall further ensure that
 Personal Data is protected against unauthorized access and that access
 events are logged and traceable.
 
@@ -95,17 +96,21 @@ events are logged and traceable.
 3.  that each authorized employee is bound by a confidentiality
     undertaking towards the Processor in relation to the Personal Data.
 
-**5.3** The Processor shall notify the Controller without undue delay
-after becoming aware of a personal data breach. Such notification shall,
+**5.3** The Processor shall notify the Controller without undue delay and, 
+where feasible, within 48 hours after becoming aware of a personal data breach. Such notification shall,
 where possible, at least contain the information described in Article
 33.3 of the GDPR.
+
+**5.4** The Processor shall maintain an information security management
+system aligned with ISO 27001 or an equivalent standard.
 
 ## 6. The processor's obligations to assist
 
 **6.1** The Processor shall assist the Controller with the fulfilment of
 the Controller's obligation to ensure that the data subjects may
 exercise their rights under Applicable Legislation by ensuring
-appropriate technical and organizational measures. The Processor shall
+appropriate technical and organizational measures. The Processor shall 
+without undue delay and taking into account the nature of the processing
 further assist the Controller in relation to the Controller's
 obligations under Articles 32-36 of the GDPR.
 
@@ -139,11 +144,19 @@ entitled either to
 ## 8. Transfers to third countries
 
 **8.1** The Processor is entitled to transfer personal data outside the
-EU/EEA, or engage a SubProcessor to process Personal Data outside of the
-EU/EEA, provided that the Controller has given its prior written consent
-and that the Processor has an applicable legal ground for such transfer.
-The Processor shall upon the Controller's request provide documented
-evidence showing the applicable legal ground for the transfer.
+EU/EEA, or engage a Sub-Processor to process Personal Data outside of the
+EU/EEA, The Processor may transfer Personal Data outside the EU/EEA 
+where appropriate safeguards are in place in accordance with Applicable 
+Legislation and that the Processor has an applicable legal ground for 
+such transfer. The Processor shall upon the Controller's request provide 
+documented evidence showing the applicable legal ground for the transfer.
+
+**8.2** The Parties acknowledge that laws, practices, and other relevant 
+circumstances in third countries, including requests from public authorities, 
+may change during the term of this Agreement. Where such changes occur, the 
+adequacy of the technical and organisational measures in place shall be reassessed 
+to ensure that Personal Data continues to be protected in accordance with EU data 
+protection standards.
 
 ## 9. Audit
 
@@ -157,10 +170,11 @@ Section 9.1 above, has a legitimate reason to suspect that the Processor
 does not fulfill its obligations under Applicable Legislation and this
 DPA, the Controller shall be entitled on 30 days' written notice to
 carry out an audit of the Processor's processing of the Personal Data
-and information relevant in that respect. The Processor shall assist the
-Controller and disclose any information necessary in order for the
-Controller to carry out such audit. The Controller shall carry the costs
-for such audit.
+and information relevant in that respect. Audits shall be limited to once
+per year and shall not disrupt the Processor’s operations. The Processor
+shall assist the Controller and disclose any information necessary in order 
+for the Controller to carry out such audit. The Controller shall carry the 
+costs for such audit.
 
 **9.3** If a data protection authority carries out an audit of the
 Processor which may involve the processing of Personal Data, the
@@ -198,14 +212,19 @@ arises, the Processor shall promptly notify the Controller in writing
 before disclosure, unless restricted from doing so under Applicable
 Legislation.
 
+**12.3** The Processor shall make available a contact point for data protection and security matters.
+
+gdpr@safespring.com
+
 ## 13. Return and deletion of data 
 
 **13.1** The Controller shall upon termination of the Agreement or this
 DPA instruct the Processor in writing whether or not to transfer the
 Personal Data to the Controller (such transfer to be made in a common
-machinereadable format). The Processor will erase the Personal Data from
+machine-readable format). The Processor will erase the Personal Data from
 its systems no earlier than 30 days and no later than 40 days after the
-effective date of termination of the Agreement.
+effective date of termination of the Agreement. The Processor shall confirm 
+deletion in writing upon request.
 
 ## 14. Term
 
