@@ -1,0 +1,127 @@
+{{ $topic := .Get "topic" | default "" }}
+{{ $service := .Get "service" | default "" }}
+{{ $responsibility := .Get "responsibility" | default "" }}
+{{ $first := .Get "first" | default "false" }}
+{{ $last := .Get "last" | default "false" }}
+
+{{ if not ($.Page.Scratch.Get "boundary-row-style-loaded") }}
+<style>
+  .ss-boundary-table {
+    margin: 1.25rem 0 1.5rem 0;
+    border-top: 1px solid #E8EFF3;
+    font-family: var(--mon-font);
+  }
+
+  .ss-boundary-head {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.75fr) minmax(270px, 1.45fr) minmax(270px, 1.45fr);
+    gap: 1rem;
+    align-items: end;
+    margin: 0;
+    padding: 0.75rem 0.25rem 0.6rem 0.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: #fafefe;
+    border-bottom: 1px solid #E8EFF3;
+  }
+
+  .ss-boundary-head-label {
+    color: #3C9BCD;
+    font-family: var(--mon-font);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  .ss-boundary-row {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.75fr) minmax(270px, 1.45fr) minmax(270px, 1.45fr);
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem 0.25rem;
+    margin: 0;
+    border-top: 1px solid #E8EFF3;
+  }
+
+  .ss-boundary-topic {
+    color: #195F8C;
+    font: 16px/1.25 var(--hind-font-semibold);
+  }
+
+  .ss-boundary-col {
+    min-width: 0;
+  }
+
+  .ss-boundary-label {
+    display: none;
+    margin: 0 0 0.45rem 0;
+    color: #3C9BCD;
+    font: 600 0.9rem/1.2 var(--hind-font-semibold);
+  }
+
+  .ss-boundary-content {
+    font: 400 16px/1.45 var(--mon-font);
+    color: #323232;
+  }
+
+  .ss-boundary-content > *:first-child {
+    margin-top: 0;
+  }
+
+  .ss-boundary-content > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 1100px) {
+    .ss-boundary-head {
+      display: none;
+    }
+
+    .ss-boundary-table {
+      border-top: 0;
+    }
+
+    .ss-boundary-row {
+      grid-template-columns: 1fr;
+      gap: 0.9rem;
+      padding: 1rem 0;
+    }
+
+    .ss-boundary-label {
+      display: block;
+    }
+  }
+</style>
+{{ $.Page.Scratch.Set "boundary-row-style-loaded" true }}
+{{ end }}
+
+{{ if eq $first "true" }}
+<div class="ss-boundary-table">
+<div class="ss-boundary-head">
+  <div class="ss-boundary-head-label">Topic</div>
+  <div class="ss-boundary-head-label">Part of the service today</div>
+  <div class="ss-boundary-head-label">Still your responsibility</div>
+</div>
+{{ end }}
+
+{{ $topicRendered := $topic | $.Page.RenderString (dict "display" "inline") }}
+{{ $serviceRendered := $service | $.Page.RenderString (dict "display" "block") }}
+{{ $responsibilityRendered := $responsibility | $.Page.RenderString (dict "display" "block") }}
+
+<div class="ss-boundary-row">
+  <div class="ss-boundary-topic">{{ $topicRendered }}</div>
+  <div class="ss-boundary-col">
+    <p class="ss-boundary-label">Part of the service today</p>
+    <div class="ss-boundary-content">{{ $serviceRendered }}</div>
+  </div>
+  <div class="ss-boundary-col">
+    <p class="ss-boundary-label">Still your responsibility</p>
+    <div class="ss-boundary-content">{{ $responsibilityRendered }}</div>
+  </div>
+</div>
+
+{{ if eq $last "true" }}
+</div>
+{{ end }}

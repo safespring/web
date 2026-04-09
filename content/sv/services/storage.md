@@ -5,7 +5,7 @@ documentation: "Storage"
 cardtitle: "Storskalig lagring"
 cardicon: "fak fa-safespring-s3"
 cardcolor: "#f4670f"
-cardorder: "2"
+cardorder: "4"
 date: 2024-09-22T10:50:10+02:00
 draft: false
 intro: "Molnbaserad lagring som tillhandahålls från våra datacenter i Norden och bygger på den marknadsledande lagringsteknologin Ceph."

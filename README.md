@@ -1,54 +1,100 @@
 # Safespring Website
 
-This repository contains the source code and Markdown content for the Safespring website, which can be found at https://www.safespring.com/.
+This repository contains the Hugo source for [safespring.com](https://www.safespring.com/): page content, templates, shortcodes, data files, and static assets.
 
-## Previewing the site locally
+## Tech stack
 
-There are two options for previewing the site locally: using the Hugo binary or using Docker as a server.
+- [Hugo](https://gohugo.io/) static site generator
+- In-repo custom layouts and partials under `layouts/`
+- Markdown content under `content/`
+- Static assets under `static/`
+- Shared data under `data/`
 
-### Using the Hugo binary
+This repo does not use a Hugo theme directory. The site is rendered from the custom templates and partials checked into this repository.
 
-1. Download and install the Hugo binary from the [official Hugo website](https://gohugo.io/installation/).
-2. Clone the repository and run Hugo:
+## Local development
 
-```
-git clone git@github.com:safespring/web
+### Run with a local Hugo install
+
+1. Install Hugo from the [official Hugo installation guide](https://gohugo.io/installation/).
+2. Clone the repository:
+
+```bash
+git clone git@github.com:safespring/web.git
 cd web
+```
+
+3. Start the development server:
+
+```bash
 hugo serve
 ```
 
-3. Open http://localhost:1313/ in your web browser to view the site.
+4. Open [http://localhost:1313/](http://localhost:1313/).
 
-### Using Docker as a server
+### Run with Docker
 
-1. Make sure you have [Docker installed](https://www.docker.com/products/container-runtime#/download).
-2. Clone the repository and run Docker:
+If you prefer not to install Hugo locally, you can run the site in Docker:
 
-```
-git clone git@github.com:safespring/web
+```bash
+git clone git@github.com:safespring/web.git
 cd web
-docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo server
+docker run --rm -it -v "$(pwd):/src" -p 1313:1313 klakegg/hugo server
 ```
 
-3. Open http://localhost:1313/ in your web browser to view the site.
+Then open [http://localhost:1313/](http://localhost:1313/).
 
-## Notes for theme development
+## Build the site
 
-- The current theme for the Safespring website is located in `themes/safespring` and is based on the [Type theme](https://github.com/digitalcraftsman/hugo-type-theme).
-- More information about customizing and creating themes and templates can be found in the [Hugo documentation](https://gohugo.io/themes/customizing/).
+To create a production build locally:
 
-## Redirecting old links to new ones
-
-Hugo has a feature that allows you to redirect old links to new ones. To do this, add the following code to the front matter of the Markdown file for the blog post:
-
+```bash
+hugo
 ```
+
+Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
+
+## Repository structure
+
+The most important directories are:
+
+- `content/`: site content in Markdown
+- `layouts/`: page templates, partials, list templates, and shortcodes
+- `static/`: images, PDFs, fonts, JavaScript, and other files copied as-is
+- `assets/`: processed frontend assets such as CSS and JavaScript
+- `data/`: shared structured data used by templates
+- `archetypes/`: Hugo content archetypes
+
+## Content and languages
+
+The site is multilingual and includes Swedish, English, and Norwegian content. A few common patterns in the repo:
+
+- `content/_index.md`: Swedish homepage content
+- `content/en/`: English pages and English homepage
+- `content/no/`: Norwegian pages and Norwegian homepage
+- Section-specific content such as `content/tjanster/`, `content/blogg/`, `content/webinar/`, `content/whitepaper/`, and `content/solution-brief/`
+
+## Templates and shortcodes
+
+Most site behavior lives in `layouts/`, including:
+
+- `layouts/index.html` for the homepage layout
+- `layouts/_default/` for shared single and list templates
+- `layouts/partials/` for reusable page fragments
+- `layouts/shortcodes/` for custom content components embedded in Markdown
+
+## Redirecting old URLs
+
+Hugo supports aliases for redirects. Add them to a page's front matter like this:
+
+```toml
 aliases = [
-"/old-link/",
-"/new-link/"
+  "/old-link/",
+  "/new-link/"
 ]
 ```
 
-This way, if the structure of the page changes, users will still be able to use their old links.
+This is useful when page URLs change and you want old links to keep working.
 
 ## Clearing old files
 

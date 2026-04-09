@@ -1,0 +1,72 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<body>
+  <main class="survey-thanks">
+    <section class="survey-thanks-card">
+      <p class="survey-thanks-kicker">Safespring survey</p>
+      <h1>{{ .Title }}</h1>
+      <p>Thank you - seriously. Your answers are on their way to the Safespring team and we will read them ourselves.</p>
+      <p>If you shared contact details, we will use them only to follow up on your response and to send the coffee.</p>
+      <div class="survey-thanks-actions">
+        <a class="button" href="/survey/mascot/">Back to the survey</a>
+        <a class="survey-thanks-link" href="/en/contact/">Contact Safespring</a>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .survey-thanks {
+      min-height: 100vh;
+      padding: 10rem 1.5rem 4rem;
+      background:
+        radial-gradient(circle at top left, rgba(50, 205, 50, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(60, 155, 205, 0.22), transparent 32%),
+        linear-gradient(180deg, #eef5f8 0%, #fafefe 100%);
+      display: grid;
+      place-items: center;
+    }
+
+    .survey-thanks-card {
+      width: min(100%, 42rem);
+      padding: clamp(2rem, 4vw, 3rem);
+      border: 1px solid rgba(25, 95, 140, 0.12);
+      border-radius: 2rem;
+      background: rgba(250, 254, 254, 0.94);
+      box-shadow: 0 32px 80px rgba(25, 95, 140, 0.12);
+    }
+
+    .survey-thanks-kicker {
+      margin: 0 0 1rem;
+      font: 600 0.82rem/1 "safespring mono", monospace;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clear-blue-color);
+    }
+
+    .survey-thanks-card h1 {
+      margin-bottom: 1rem;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 0.95;
+    }
+
+    .survey-thanks-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .survey-thanks-link {
+      font: 600 0.95rem/1 var(--hind-font-semibold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+
+  <script>
+    window.localStorage.removeItem("safespring-survey-draft-v1");
+    window.localStorage.removeItem("safespring-survey-step-v1");
+  </script>
+  {{ partial "footer.html" . }}
+</body>

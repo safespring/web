@@ -4,7 +4,7 @@ language: "sv"
 cardtitle: "Databas som tjänst"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
-cardorder: "4"
+cardorder: "5"
 date: 2022-04-29T11:58:58+01:00
 draft: false
 section: "DBaaS"

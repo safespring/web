@@ -5,7 +5,7 @@ documentation: "Compute"
 cardtitle: "Compute"
 cardicon: "fa-solid fa-server"
 cardcolor: "#417DA5"
-cardorder: "1"
+cardorder: "3"
 date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "With Safespring's cloud services, your company gains the flexibility to adapt IT infrastructure to your needs. Everything is delivered from secure data centers within Sweden."
@@ -26,7 +26,7 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-episode-2-instance-type-2/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-episode-2-instance-type-2/master.m3u8" >}}
 
 ## Swedish Cloud Services
 

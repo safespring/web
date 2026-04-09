@@ -1,0 +1,21 @@
+{{- $videoConfig := .Site.Data.indexvideo | default dict -}}
+{{- $language := .Params.language | default "Se" -}}
+{{- $pageSubtitleLangMap := dict "Se" "sv" "En" "en" "No" "no" -}}
+{{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
+{{- $playTextMap := index $videoConfig "playText" | default (dict) -}}
+{{- $cursorTextPaused := index $playTextMap $language | default (index $playTextMap "Se") | default "Play" -}}
+
+{{ partial "components/video-player.html" (dict
+  "page" .Page
+  "src" (index $videoConfig "src" | default "")
+  "poster" (index $videoConfig "poster" | default "/img/card/safespring_use-case_scaleout-1080p.jpg")
+  "tracks" (index $videoConfig "tracks" | default (slice))
+  "containerClass" "index-video video-container"
+  "cursorTextPaused" $cursorTextPaused
+  "cursorTextPlaying" (index $videoConfig "pauseText" | default "Pause")
+  "initialSubtitleLang" $pageSubtitleLang
+  "pageSubtitleLang" $pageSubtitleLang
+  "muted" true
+  "unmuteOnInteraction" true
+  "unmuteOnPlay" true
+) }}

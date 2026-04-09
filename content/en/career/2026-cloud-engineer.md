@@ -1,7 +1,7 @@
 ---
 Title: "Join Safespring as Cloud Engineer"
 intro: "We’re building the cloud Europe deserves - open, trustworthy, and competitive. The market and opportunity for EU-made tech has never been better."
-draft: false
+draft: true
 date: "2026-02-16"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/7bbde761-7cf1-4d4b-82d8-be98e295af2f/7f01421e-3cfd-43ec-9754-e82e01c1831f#applyNow"
 sidebarlinkname: "Apply now"

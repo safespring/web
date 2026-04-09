@@ -6,7 +6,7 @@ language: "sv"
 cardtitle: "AI & ML"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
-cardorder: "6"
+cardorder: "2"
 date: 2025-03-13
 draft: false
 intro: "Utnyttja säkert federerad maskininlärning med FEDn på Safesprings GDPR-kompatibla molninfrastruktur."
@@ -26,7 +26,8 @@ aliases:
   - /tjanster/machine-learning/
 ---
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna–talarslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
+
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna-talkslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
 {{< distance >}}
 
 {{< ingress >}}

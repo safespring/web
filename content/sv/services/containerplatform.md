@@ -1,26 +1,26 @@
 ---
-title: "Safespring Containerplattform"
-section: "Hösten 2025"
-sectionhighlight: "x"
+title: "Safespring On-demand Kubernetes"
+section: "Platform"
+sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Managerad Kubernetes med inbyggd skalbarhet och robust plattformssäkerhet."
+cardintro: "Managerad Kubernetes för verksamheter som behöver en digitalt suverän plattform, tydliga operativa gränser och leverans från Safesprings datahallar i Sverige och Norge med 100% förnybar energi."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
-cardorder: "3"
-metatitle: "Safespring Containerplattform: Snabba, säkra och skalbara molnlösningar"
+cardorder: "1"
+metatitle: "Managerad Kubernetes i Sverige och EU | Safespring On-demand Kubernetes"
 card: "safespring_card_12.svg"
-date: 2024-12-12
+date: 2026-04-01
 draft: false
-intro: "Upptäck Safesprings högskalbara Kubernetes-molnplattform, utformad för SaaS, forskning och offentlig sektor som behöver kostnadseffektiv och högpresterande containerhantering med EU-baserad säkerhet och efterlevnad."
+intro: "En managerad Kubernetes-tjänst som kombinerar self-service-provisionering, managerad kontrollplan, modern nätverkshantering och digital suveränitet för verksamheter som behöver både tempo och kontroll."
 background: ""
-sidebarlinkname: "Gå med i Beta-programmet"
-sidebarlinkurl: "#intresserad-av-att-testa-plattformen"
-sidebarlinkname2: "Maila oss"
-sidebarlinkurl2: "mailto:hello@safespring.com"
-sidebarimage: "safespring-daniel.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
-sidebarphone: "076 868 00 59"
+sidebarlinkname: "Kontakta oss"
+sidebarlinkurl: "/kontakt/"
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Vill du prata om tjänsten? Hör gärna av dig om du har några frågor."
+sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
+sidebarlinkname2: "Teknisk fördjupning"
+sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
 language: "sv"
@@ -30,49 +30,65 @@ aliases:
 ---
 
 {{< ingress >}}
-Safesprings Containerplattform är en managerad Kubernetes-tjänst byggd på vår kraftfulla infrastruktur, optimerad för snabba, tillförlitliga och säkra containerbaserade applikationer.
+Safespring On-demand Kubernetes är en managerad Kubernetes-tjänst för att köra containeriserade applikationer på Safesprings infrastruktur, med self-service-provisionering och managerad kontrollplan.
 {{</ ingress >}}
 
-Utformad med skalbarhet, efterlevnad och kostnadseffektivitet i åtanke, stöder vår plattform molnbaserade applikationer i en säker, EU-suverän miljö.
+Tjänsten är utformad för verksamheter som behöver starkare kontroll över dataplacering, jurisdiktion och operativa gränser, inklusive miljöer med krav på GDPR, regelefterlevnad och digital suveränitet.
+
+Det praktiska värdet är att ingenjörsteam får en plattform som är redo att använda, samtidigt som verksamheten behåller kontroll över jurisdiktion, säkerhetshållning och långsiktig plattformsriktning utan att behöva äga varje lager av plattformsdrift internt.
 
 {{< icon-block-container >}}
-{{< icon-block icon="fas fa-cubes" text="Baserad på CNCF-projekt" link="" color="#195F8C">}}
-{{< icon-block icon="fak fa-safespring-icon" text="Drivs av Safespring Compute" link="/services/safespring-compute/" color="#417DA5">}}
-{{< icon-block icon="fas fa-sparkles" text="GPU för ML och AI" link="" color="#3C9BCD">}}
-{{< icon-block icon="fas fa-sync" text="Dynamisk skalbarhet" link="" color="#32CD32">}}
-{{< icon-block icon="fas fa-forward" text="Snabb start, låg tröskel" link="" color="#FA690F">}}
-{{< icon-block icon="fa-kit fa-eu-flag" text="Juridisk säkerhet" link="/gdpr/" color="#417DA5">}}
+    {{< icon-block icon="fas fa-rocket" text="Driftsätt var som helst" link="" color="#195F8C">}}
+    {{< icon-block icon="fas fa-link-slash" text="Ingen vendor lock-in" link="" color="#417DA5">}}
+    {{< icon-block icon="fas fa-layer-group" text="Cloud native-teknik" link="" color="#32CD32">}}
+    {{< icon-block icon="fas fa-lock" text="Digital suveränitet" link="/gdpr/" color="#FA690F">}}
+    {{< icon-block icon="fas fa-leaf" text="100% förnybar energi" link="" color="#417DA5">}}
+    {{< icon-block icon="fas fa-sliders" text="Du har kontrollen" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
-## Safespring Containerplattform: <br>Öppen, suverän och flexibel
+## Varför arkitekturen spelar roll
 
-Vår compliant Kubernetes-plattform, baserad på Safespring Compute, gör det enkelt att driftsätta, skala och hantera molnbaserade applikationer i en kostnadseffektiv miljö. Perfekt för SaaS-leverantörer, forskningsinstitutioner och offentliga verksamheter, kombinerar Safesprings infrastruktur skalbarhet, säkerhet och suveränitet under EU-lagstiftning.
+Den viktigaste tekniska fördelen är inte en enskild funktion. Det är att tjänsten är utformad som en användbar plattformsgräns från dag ett. Det spelar roll eftersom plattformsteam sällan fastnar i att skapa ett kluster. De fastnar i att göra klustret konsekvent, supportbart, säkert och redo för produktion.
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-grid-round-2-plus" text="Börja med ett enda namespace" description="Börja med ett dedikerat projekt bestående av endast ett namespace som kan skala till flera när behoven ökar, från små installationer till fullständiga kluster." >}}
-{{< icon-block-horisontal color="#32cd32" icon="fa-kit fa-solid-cloud-sparkle" text="Molnbaserad" description="Skala din molnbaserade applikation i takt med att ditt företag växer, med konkurrenskraftig betalning efter användning." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-user-lock" text="Säker & Compliant" description="Skydda data med full efterlevnad av EU:s säkerhets- och jurisdiktionskrav." >}}
+{{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Vad det här betyder i praktiken" %}}
+Arkitekturen är utformad för att ge er:
+
+- en self-service-modell via portal och API i stället för manuell klusteradministration
+- en managerad kontrollplan så att teamet inte behöver äga varje kontrollplansfråga internt
+- en immutable operativsystemsgrund med Talos Linux, vilket minskar driftavvikelser och attackyta
+- en modern nätverks- och trafikmodell baserad på Cilium, Gateway API och stöd för Traefik
+- en tydligare ansvarsfördelning mellan det Safespring driver och det ert eget team fortfarande äger
+{{% /custom-card %}}
 
 {{< distance >}}
 
-## Varför välja Safespring Containerplattform?
+## Tekniska fördelar, förklarade enkelt
 
-Safespring Containerplattform är en flexibel, säker och högpresterande lösning anpassad för organisationer med strikta efterlevnadskrav och föränderliga behov. Oavsett om du driftsätter mikrotjänster, CI/CD-arbetsflöden eller dataintensiva applikationer, erbjuder Safesprings Containerplattform följande:
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-rocket" text="Provisionering och kontroll är redan definierade" description="Kluster skapas via portal och API, och kontrollplanet är managerat som en del av tjänsten. Det kortar tiden till produktion och minskar mängden plattformsarbete som ert eget team annars måste upprepa för varje ny miljö." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Grunden är utformad för lägre operativ risk" description="Talos Linux ger en immutable, Kubernetes-fokuserad nodgrund, medan OIDC-baserad åtkomst, modern nätverkshantering och en tydlig tjänstegräns gör plattformen enklare att styra och enklare att förstå." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="Tjänsten stöder riktiga workloads, inte bara klusterskapande" description="Persistenta volymer via Cinder CSI, trafikhantering via Cilium Gateway API och Traefik-stöd samt GPU-kapabla workernoder betyder att plattformen kan bära produktionsapplikationer med olika körbehov." >}}
 
-- **Dynamisk skalbarhet**: Börja med ett namespace och väx till fullskaliga kluster när dina krav ökar.
-- **Kostnadseffektiv prissättning**: Vår plattform möjliggör kostnadseffektiv skalning med flexibla betalningsalternativ.
-- **Hög prestanda**: Byggd på Safespring Compute garanterar plattformen tillförlitlig, infrastruktur med låg-latens för oavbruten drift.
-- **EU-efterlevnad & säkerhet**: GDPR-efterlevande infrastruktur med digital suveränitet för arbetslaster med känslig data.
-- **Kommer 2026: Integration**: Stöd för att effektivisera DevOps genom att automatisera applikationsprovisionering, samt stöd för övervakning och loggning.
+Det är också här digital suveränitet blir praktisk i stället för abstrakt. Plattformen levereras från Safesprings datahallar i Sverige och Norge, drivs med 100% förnybar energi och är byggd för verksamheter som vill ha starkare kontroll över jurisdiktion, dataplacering och långsiktigt oberoende från hyperscaler-låsning.
 
-Safespring hanterar IaaS- och PaaS-lagren vilket möjliggör att du endast fokuserar på utveckling och driftsätting av dina applikationer, medan vi tar hand om infrastrukturen och compliance.
+## Fördjupa dig när du vill ha detaljerna
 
-## Intresserad av att testa plattformen?
+Om du vill förstå tjänsten mer tekniskt är det här de mest användbara nästa läsningarna:
 
-Gå med i vårt beta-program och utforska delar av funktionaliteten hos Safespring Containerplattform innan lansering! Vi ser fram emot att välkomna våra första betaanvändare i början av 2025. Var bland de första att uppleva en kraftfull, skalbar och säker miljö anpassad efter dina behov.
+- [Vad du får från dag ett](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one) för de dokumenterade plattformsstandarderna
+- [Tjänstegränsen i praktiken](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice) för ansvarsfördelningen
+- [Kom igång i den officiella dokumentationen](https://docs.safespring.com/kubernetes/getting-started/) för provisionering, kontrollplanslayouter och komponentstöd
+- [Trafikhantering](https://docs.safespring.com/kubernetes/manage-traffic/) för Gateway API och Traefik-relaterade trafikmönster
+- [Portalöversikt](https://docs.safespring.com/kubernetes/portal-overview/) för self-service-flödet och klusteråtkomst
+- [Persistenta volymer](https://docs.safespring.com/kubernetes/persistent-volumes/) för lagringsbeteende och klasser
+- [Loggning och övervakning](https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/) för den nuvarande observability-gränsen
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakta oss" alt="Daniel Melin på Safespring" %}}
-Har du frågor om vår managerade Kubernetes-plattform? Kontakta oss för djupgående teknisk information och personlig rådgivning".
+{{< distance >}}
 
-{{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  
+## Prata med oss om ert behov
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss" %}}
+Har du frågor om hur den här tjänsten kan stödja er modernisering, styrning, hållbarhet eller digitala suveränitet? Kontakta oss för en första dialog om behov, målbild och nästa steg.
+
+{{< inline "Ring" >}} [+46 76-629 25 02](tel:+46766292502)  
 {{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}

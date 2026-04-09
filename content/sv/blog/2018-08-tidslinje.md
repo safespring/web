@@ -16,7 +16,7 @@ aliases:
   - /blogg/2018/2018-08-tidslinje/
 ---
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
 
 {{< ingress >}}  
 En sammanfattning av händelserna som ledde fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna för bland annat personuppgiftsskydd och utlämning av data.  

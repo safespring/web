@@ -10,3 +10,5 @@ node_modules/
 .env.local
 
 scripts/__pycache__/
+
+deploy/.kubeconfig
