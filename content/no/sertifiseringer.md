@@ -43,7 +43,7 @@ Tjenestene våre er utviklet for regulerte og sikkerhetsbevisste miljøer der ro
 {{< flexbox >}}
 {{< contact-small title="Hovedkontor" name="Rättarvägen 3, 169 68 Solna" >}}
 {{< contact-small title="Eierskap" name="Svensk-eid skyleverandør" >}}
-{{< contact-small title="Dataplassering" name="Sverige og EU" >}}
+{{< contact-small title="Dataplassering" name="Sverige og Norge" >}}
 {{< contact-small title="Fokus" name="Sikkerhet, compliance og kontroll" >}}
 {{< /flexbox >}}
 

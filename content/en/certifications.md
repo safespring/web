@@ -43,7 +43,7 @@ Our services are designed for regulated and security-conscious environments wher
 {{< flexbox >}}
 {{< contact-small title="Headquarters" name="Rättarvägen 3, 169 68 Solna" >}}
 {{< contact-small title="Ownership" name="Swedish-owned cloud provider" >}}
-{{< contact-small title="Data location" name="Sweden and the EU" >}}
+{{< contact-small title="Data location" name="Sweden and Norway" >}}
 {{< contact-small title="Focus" name="Security, compliance and control" >}}
 {{< /flexbox >}}
 

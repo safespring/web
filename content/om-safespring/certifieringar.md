@@ -44,7 +44,7 @@ Våra tjänster är utformade för reglerade och säkerhetsmedvetna miljöer dä
 {{< flexbox >}}
 {{< contact-small title="Huvudkontor" name="Rättarvägen 3, 169 68 Solna" >}}
 {{< contact-small title="Ägande" name="Svenskägt molnbolag" >}}
-{{< contact-small title="Dataplacering" name="Sverige och EU" >}}
+{{< contact-small title="Dataplacering" name="Sverige och Norge" >}}
 {{< contact-small title="Fokus" name="Säkerhet, compliance och kontroll" >}}
 {{< /flexbox >}}
 
