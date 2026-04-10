@@ -6,11 +6,9 @@ date: 2026-04-09
 draft: false
 intro: "Safespring is certified according to ISO 27001 and FR2000. Here you can read how these certifications strengthen our work with security, governance, transparency and audits."
 background: "/safespring-datacenter-map-background.svg"
-sidebarlinkname: "Download certification package"
-sidebarlinkurl: "/documents/safespring-compliance-package-2026-v2.pdf"
+sidebarlinkname: "Contact us"
+sidebarlinkurl: "/en/contact/"
 sidebarlinkicon: "fa-solid fa-file-alt"
-sidebarlinkname2: "Contact us"
-sidebarlinkurl2: "/en/contact/"
 socialmedia: "safespring-datacenter.jpg"
 sidebarimage: "safespring-iso.svg"
 toc: "On this page"
