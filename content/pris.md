@@ -89,12 +89,13 @@ Safesprings erbjuder en rad kostnadseffektiva virtuella maskiner med varierande 
 ## Flavors med GPU
 Safesprings erbjuder flera alternativ virtuella maskiner med GPU. Både med och utan lokal lagring (NVME).
 
-| Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) | Per timme | Per 30 dagar |
-|--------------------------|:----:|:--------:|----------------:|:---:|----------:|-------------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 |  1  | 4,65 kr   | 3 345 kr     |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 |  1  | 6,49 kr   | 4 670 kr     |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 |  1  | 3,86 kr   | 2 780 kr     |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 |  1  | 4,92 kr   | 3 540 kr     |
+| Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU   | Per timme | Per 30 dagar |
+|--------------------------|:----:|:--------:|----------------:|:-----:|----------:|-------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 | A2    | 4,65 kr   | 3 345 kr     |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | A2    | 6,49 kr   | 4 670 kr     |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | A2    | 3,86 kr   | 2 780 kr     |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | A2    | 4,92 kr   | 3 540 kr     |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100  | 32,91 kr  | 24 024 kr    |
 
 
 ## Central blocklagring		

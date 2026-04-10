@@ -87,12 +87,13 @@ Safespring tilbyr et utvalg kostnadseffektive virtuelle maskiner med variert vCP
 ### GPU-varianter
 Safespring tilbyr flere alternativer for virtuelle maskiner med GPU, både med og uten lokal lagring (NVMe).
 
-| Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) | Per time | Per 30 dager |
-|--------------------------|:----:|:--------:|----------------:|:--------:|---------:|-------------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 | 1        | 4,65 kr  | 3 345 kr     |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | 1        | 6,49 kr  | 4 670 kr     |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | 1        | 3,86 kr  | 2 780 kr     |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | 1        | 4,92 kr  | 3 540 kr     |
+| Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU  | Per time | Per 30 dager |
+|--------------------------|:----:|:--------:|----------------:|:----:|---------:|-------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 | A2   | 4,65 kr  | 3 345 kr     |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | A2   | 6,49 kr  | 4 670 kr     |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | A2   | 3,86 kr  | 2 780 kr     |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | A2   | 4,92 kr  | 3 540 kr     |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100 | 32,91 kr | 24 024 kr    |
 
 
 
