@@ -90,12 +90,13 @@ Safespring offers a range of cost-effective virtual machines with varying vCPUs 
 ### GPU Flavors
 Safespring offers several virtual machine options with GPU, both with and without local storage (NVMe).
 
-| Product ID               | vCPU | RAM (GB) | Local Disk (GB) | GPU (A2) | Per Hour | Per 30 Days |
-|--------------------------|:----:|:--------:|----------------:|:--------:|---------------:|------------------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | 1        |  0,41 €           |  297,71 €      |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | 1        |  0,58 €           |  415,63 €      |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | 1        |  0,34 €           |  247,42 €      |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | 1        |  0,44 €           |  315,06 €      |
+| Product ID               | vCPU | RAM (GB) | Local Disk (GB) | GPU  | Per Hour | Per 30 Days |
+|--------------------------|:----:|:--------:|----------------:|:----:|---------:|------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | A2   | 0,41 €   | 297,71 €    |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | A2   | 0,58 €   | 415,63 €    |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | A2   | 0,34 €   | 247,42 €    |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | A2   | 0,44 €   | 315,06 €    |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      | 0               | H100 | 2,93 €   | 2 138,14 €  |
 
 
 
