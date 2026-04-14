@@ -15,9 +15,9 @@ toc: "On this page"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-globe" text="ISO 27001" link="" color="#3c9bcd">}}
-    {{< icon-block icon="fa-solid fa-globe" text="FR2000" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-kit fa-eu-flag" text="GDPR Compliance" link="" color="#3c9bcd">}}
+    {{< icon-block icon="fa-solid fa-globe" text="ISO 27001" link="/en/iso-27001/" color="#3c9bcd">}}
+    {{< icon-block icon="fa-solid fa-globe" text="FR2000" link="/en/fr2000/" color="#195F8C">}}
+    {{< icon-block icon="fa-kit fa-eu-flag" text="GDPR Compliance" link="/en/gdpr/" color="#3c9bcd">}}
 {{< /icon-block-container >}}
 
 ## Compliance package
