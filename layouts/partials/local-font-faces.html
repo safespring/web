@@ -1,0 +1,45 @@
+<style>
+  {{- range $weight := slice 100 200 300 400 500 600 700 }}
+  @font-face {
+    font-family: 'montserrat';
+    src: url('{{ printf "/fonts/montserrat-%d.woff2" $weight }}') format('woff2');
+    font-weight: {{ $weight }};
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'montserrat';
+    src: url('{{ printf "/fonts/montserrat-%d-italic.woff2" $weight }}') format('woff2');
+    font-weight: {{ $weight }};
+    font-style: italic;
+    font-display: swap;
+  }
+  {{- end }}
+
+  {{- range $weight := slice 300 400 500 600 700 }}
+  @font-face {
+    font-family: 'hind';
+    src: url('{{ printf "/fonts/hind-%d.woff2" $weight }}') format('woff2');
+    font-weight: {{ $weight }};
+    font-style: normal;
+    font-display: swap;
+  }
+  {{- end }}
+
+  @font-face {
+    font-family: 'hind light';
+    src: url('/fonts/hind-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'hind semibold';
+    src: url('/fonts/hind-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>

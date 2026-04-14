@@ -49,8 +49,7 @@ _paq.push(['enableLinkTracking']);
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <!-- CSS -->
       <link rel="stylesheet" href={{ "css/main.css" | relURL }} />
-      <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Hind:300,s600|Montserrat:500" rel="stylesheet">
+      {{ partial "local-font-faces.html" . }}
       <!-- RSS -->
       <link rel="canonical" href="{{ .Permalink }}">
       {{ if .RSSLink }}
