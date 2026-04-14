@@ -2,7 +2,7 @@
 title: "Service Level Agreement and Support Processes"
 date: 2026-03-23
 draft: false
-intro: "This SLA states customers sole and exclusive remedy for any failure by Safespring to meet the target."
+intro: "About uptime and help. Explains availability targets, incident handling, response expectations, and what remedy applies if targets are missed."
 documentimage: "safespring_card_21.jpg"
 sidebarlinkname: ""
 sidebarlinkicon: ""
@@ -11,6 +11,8 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+aliases:
+  - /document/service_level_agreement_and_support_process/
 ---
 
 *All information contained in this document is provided in confidence to

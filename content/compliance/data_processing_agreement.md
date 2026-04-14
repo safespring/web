@@ -2,7 +2,7 @@
 title: "Data Processing Agreement"
 date: 2026-03-23
 draft: false
-intro: "Processor will process personal data on behalf of the Controller when supplying the Service."
+intro: "For personal data. Explains how Safespring handles data on the customer’s behalf, which instructions apply, and which sub-processors may be involved."
 documentimage: "safespring_card_21.jpg"
 sidebarlinkname: ""
 sidebarlinkicon: ""
@@ -11,6 +11,8 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+aliases:
+  - /document/data_processing_agreement/
 ---
 
 **Processor** will process personal data on behalf of the **Controller** when

@@ -1,0 +1,38 @@
+{{ $pages := .Page.RegularPages }}
+{{ $label := default "Document" (.Get "label") }}
+
+{{ if gt (len $pages) 0 }}
+<div class="compliance-document-table">
+  <div class="compliance-document-table__body">
+    {{ range $page := $pages }}
+    <div class="compliance-document-table__row">
+      <a class="compliance-document-table__link" href="{{ $page.RelPermalink }}" aria-label="{{ $page.Title }}">
+        <div class="compliance-document-table__main">
+          <span class="compliance-document-table__file-icon" aria-hidden="true">
+            <i class="fa-solid fa-file-lines"></i>
+          </span>
+          <div class="compliance-document-table__title-wrap">
+            <h3 class="compliance-document-table__title">{{ $page.Title }}</h3>
+            <p class="compliance-document-table__description">{{ $page.Params.intro }}</p>
+          </div>
+        </div>
+      </a>
+
+      <div class="compliance-document-table__actions">
+        <span class="compliance-document-table__label">{{ $label }}</span>
+
+        <div class="compliance-document-table__info-wrap">
+          <button type="button" class="compliance-document-table__info" aria-label="Visa beskrivning för {{ $page.Title }}">
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <a class="compliance-document-table__arrow" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

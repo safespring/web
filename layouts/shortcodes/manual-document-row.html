@@ -1,0 +1,22 @@
+{{- if not .Parent -}}
+  {{- errorf "manual-document-row must be used inside manual-document-table: %s" .Position -}}
+{{- end -}}
+
+{{- $title := .Get "title" -}}
+{{- $href := .Get "href" -}}
+{{- if not $title -}}
+  {{- errorf "manual-document-row requires a title: %s" .Position -}}
+{{- end -}}
+{{- if not $href -}}
+  {{- errorf "manual-document-row requires an href: %s" .Position -}}
+{{- end -}}
+
+{{- $row := dict
+  "title" $title
+  "href" $href
+  "icon" (default "fa-solid fa-file-lines" (.Get "icon"))
+  "label" (default "Document" (.Get "label"))
+  "description" (default "" (.Get "description"))
+-}}
+
+{{- .Parent.Scratch.Add "rows" (slice $row) -}}

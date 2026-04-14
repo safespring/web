@@ -2,12 +2,14 @@
 title: "Privacy Policy"
 date: 2026-03-23
 draft: false
-intro: "Safespring receives and stores the information entered in the contact forms available on the website safespring.com"
+intro: "About your data. Describes what personal data we collect, why we collect it, how long we keep it, and which rights you have."
 documentimage: "safespring_card_20.jpg"
 general: "yes"
 language: "En"
 TOC: "Table of contents"
 noindex: "x"
+aliases:
+  - /document/privacy_policy/
 ---
 
 {{< ingress >}}

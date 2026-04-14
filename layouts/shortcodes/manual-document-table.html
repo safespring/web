@@ -1,0 +1,38 @@
+{{- .Inner -}}
+{{- $rows := .Scratch.Get "rows" | default (slice) -}}
+
+{{- if gt (len $rows) 0 -}}
+<div class="compliance-document-table compliance-document-table--manual">
+  <div class="compliance-document-table__body">
+    {{- range $row := $rows -}}
+    <div class="compliance-document-table__row">
+      <a class="compliance-document-table__link" href="{{ index $row "href" }}" aria-label="{{ index $row "title" }}">
+        <div class="compliance-document-table__main">
+          <span class="compliance-document-table__file-icon" aria-hidden="true">
+            <i class="{{ index $row "icon" }}"></i>
+          </span>
+          <div class="compliance-document-table__title-wrap">
+            <h3 class="compliance-document-table__title">{{ index $row "title" }}</h3>
+            <p class="compliance-document-table__description">{{ index $row "description" }}</p>
+          </div>
+        </div>
+      </a>
+
+      <div class="compliance-document-table__actions">
+        <span class="compliance-document-table__label">{{ index $row "label" }}</span>
+
+        <div class="compliance-document-table__info-wrap">
+          <button type="button" class="compliance-document-table__info" aria-label="Visa beskrivning för {{ index $row "title" }}">
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    {{- end -}}
+  </div>
+</div>
+{{- end -}}
