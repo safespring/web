@@ -475,7 +475,10 @@
 
     .megamenu-main-service-card {
       transition:all ease-in-out .3s;
-      width:250px;
+      width:300px;
+      box-sizing:border-box;
+      padding:20px;
+      border-radius:20px;
     }
 
     .megamenu-main-service-card p {
@@ -491,8 +494,8 @@
     .megamenu-main-service-card:hover {
       background-color:#FFFFFF90;
       border-radius:20px;
-      padding:10%;
-      margin:-10%;
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(25,95,140,0.12);
     }
 
     .megamenu-service-card-list {
@@ -507,17 +510,17 @@
       transition:all ease-in-out .3s;
       background-color:#ffffffad;
       border-radius:20px;
-      padding:30px 40px;
-      margin:-30px -40px;
+      padding:40px 50px;
+      margin:-40px -50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .megamenu-service-card:hover {
-      border-radius:25px;
-      padding:40px 50px;
-      margin:-40px -50px;
+      border-radius:20px;
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(25,95,140,0.12);
     }
 
     .megamenu-service-card-title-small {

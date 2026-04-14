@@ -9,7 +9,7 @@ cardorder: "4"
 date: 2024-09-20T10:50:10+02:00
 draft: false
 intro: "Cloud-based storage is provided from secure data centers in the nordics and is based on the market-leading Ceph storage technology."
-cardintro: "Cloud-based storage for large volumes is provided from secure Nordic data centers"
+cardintro: "Scalable object storage with control, performance, and Nordic operations."
 background: "safespring-storage-background.svg"
 form: "no"
 sidebarlinkname: "Get started"

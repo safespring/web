@@ -10,7 +10,7 @@ cardorder: "3"
 date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "With Safespring's cloud services, your company gains the flexibility to adapt IT infrastructure to your needs. Everything is delivered from secure data centers within Sweden."
-cardintro: "Empower your business with Secure, Nordic Infrastructure as a service"
+cardintro: "Nordic IaaS with robust server capacity, control, and flexibility."
 background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Watch demo"

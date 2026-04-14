@@ -17,6 +17,7 @@
   "icon" (default "fa-solid fa-file-lines" (.Get "icon"))
   "label" (default "Document" (.Get "label"))
   "description" (default "" (.Get "description"))
+  "newtab" (in (slice true "true" "yes" "1") (.Get "newtab"))
 -}}
 
 {{- .Parent.Scratch.Add "rows" (slice $row) -}}

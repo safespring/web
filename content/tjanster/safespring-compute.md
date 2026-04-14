@@ -10,7 +10,7 @@ cardorder: "3"
 date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "Med molntjänster från Safespring får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt från säkra datahallar i Sverige."
-cardintro: "Stärk ditt företag med robust serverkapacitet i molnet. Säker, svensk IaaS."
+cardintro: "Svensk IaaS med robust serverkapacitet, kontroll och hög flexibilitet."
 background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Se demo"
@@ -117,4 +117,3 @@ OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applik
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data " link="/tjanster/case/scaleout/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
 
 {{< distance >}}
-

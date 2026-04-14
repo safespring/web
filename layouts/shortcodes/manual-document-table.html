@@ -5,8 +5,11 @@
 <div class="compliance-document-table compliance-document-table--manual">
   <div class="compliance-document-table__body">
     {{- range $row := $rows -}}
+    {{- $newtab := index $row "newtab" -}}
+    {{- $target := cond $newtab "_blank" "_self" -}}
+    {{- $rel := cond $newtab "noopener noreferrer" "" -}}
     <div class="compliance-document-table__row">
-      <a class="compliance-document-table__link" href="{{ index $row "href" }}" aria-label="{{ index $row "title" }}">
+      <a class="compliance-document-table__link" href="{{ index $row "href" }}" aria-label="{{ index $row "title" }}" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}>
         <div class="compliance-document-table__main">
           <span class="compliance-document-table__file-icon" aria-hidden="true">
             <i class="{{ index $row "icon" }}"></i>
@@ -22,12 +25,12 @@
         <span class="compliance-document-table__label">{{ index $row "label" }}</span>
 
         <div class="compliance-document-table__info-wrap">
-          <button type="button" class="compliance-document-table__info" aria-label="Visa beskrivning för {{ index $row "title" }}">
+          <button type="button" class="compliance-document-table__info" aria-label="Show description for {{ index $row "title" }}">
             <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
           </button>
         </div>
 
-        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1">
+        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
