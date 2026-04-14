@@ -14,6 +14,7 @@
 {{ partial "explorer.html" . }}
 {{ else }}
 {{ partial "head.html" . }}
+<body>
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 <!-- HEADING -->
@@ -22,7 +23,6 @@
 <div class="heading-default-single" style="background: url('{{ if.Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>-->
-<body>
 <div class="heading-default-single">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
     {{ .Render "li3" }}
 </div>

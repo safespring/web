@@ -23,6 +23,7 @@ sidebarlinkname2: "Teknisk fordypning"
 sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
+fontawesomebundle: "containerplatform"
 language: "No"
 ---
 

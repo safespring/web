@@ -22,6 +22,10 @@
   <link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" fetchpriority="high" type="image/svg+xml" importance="high">
   {{ end }}
 
+  <link rel="preload" href="/fonts/hind-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/hind-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-600.woff2" as="font" type="font/woff2" crossorigin>
   {{ partial "local-font-faces.html" . }}
   <style>
     @media (min-width: 900px) { 
@@ -42,7 +46,11 @@
     @media only screen and (max-width:900px) {
       .heading-default-single {
         flex-flow:row wrap !important;
-        padding: max(150px, 10%) 10% 10% 10% !important;
+        min-height:34rem;
+        padding:170px 10% 64px !important;
+        align-items:flex-start;
+        align-content:flex-start;
+        row-gap:24px;
       }
 
       .site-header-wrapper {
@@ -69,7 +77,10 @@
       display:flex;
       flex-flow:row nowrap;
       justify-content:space-evenly;
+      align-items:flex-end;
       gap:5%;
+      min-height:clamp(32rem, 70vw, 44rem);
+      box-sizing:border-box;
       background-size: cover; 
       background-position: center;
       position: relative;
@@ -706,13 +717,21 @@
 {{ partial "favicons.html" . }}
 
 <!-- CSS -->
-<!-- Ladda kritisk CSS direkt -->
+<!-- Ladda huvud-CSS tidigt utan den tidigare dubbla länkningsstrategin -->
 {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" media="print" onload="this.media='all'" />
-<link href="{{ $mainCSS.RelPermalink }}" rel="stylesheet" media="(min-width: 600px)" />
+<link rel="preload" href="{{ $mainCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
+</noscript>
 
-{{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) | minify | fingerprint }}
-<link rel="preload" href="{{ $faCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" />
+{{ $faBundleTarget := "css/combined-font-awesome.css" }}
+{{ $faSources := slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css") }}
+{{ if eq .Params.fontawesomebundle "containerplatform" }}
+  {{ $faBundleTarget = "css/combined-font-awesome-containerplatform.css" }}
+  {{ $faSources = slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome-containerplatform.css") }}
+{{ end }}
+{{ $faCSS := resources.Concat $faBundleTarget $faSources | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $faCSS.RelPermalink }}" media="print" onload="this.media='all'" />
 <noscript>
   <link rel="stylesheet" href="{{ $faCSS.RelPermalink }}">
 </noscript>
