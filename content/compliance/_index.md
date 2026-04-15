@@ -21,43 +21,7 @@ toc: "På denna sida"
 
 ## Compliance package
 
-{{< manual-document-table >}}
-  {{< manual-document-row
-    title="Acceptable Use Policy"
-    href="/compliance/acceptable_use_policy/"
-    icon="fa-solid fa-file-lines"
-    label="Dokument"
-    description="Regler för användning. Förklarar kundens ansvar, otillåtet beteende och hur åtkomst, system och innehåll ska hanteras säkert och lagenligt."
-  >}}
-  {{< manual-document-row
-    title="Data Processing Agreement"
-    href="/compliance/data_processing_agreement/"
-    icon="fa-solid fa-file-lines"
-    label="Dokument"
-    description="Om personuppgifter. Beskriver hur Safespring behandlar data på kundens uppdrag, vilka instruktioner som gäller och vilka underbiträden som kan användas."
-  >}}
-  {{< manual-document-row
-    title="General Terms and Conditions"
-    href="/compliance/general_terms_and_conditions/"
-    icon="fa-solid fa-file-lines"
-    label="Dokument"
-    description="Den juridiska grunden. Beskriver ramarna för kundrelationen, inklusive ansvar, leveransvillkor, begränsningar och hur tjänsten styrs."
-  >}}
-  {{< manual-document-row
-    title="Privacy Policy"
-    href="/compliance/privacy_policy/"
-    icon="fa-solid fa-file-lines"
-    label="Dokument"
-    description="Om dina data. Beskriver vilka personuppgifter vi samlar in, varför vi gör det, hur länge de lagras och vilka rättigheter du har."
-  >}}
-  {{< manual-document-row
-    title="Service Level Agreement and Support Processes"
-    href="/compliance/service_level_agreement_and_support_process/"
-    icon="fa-solid fa-file-lines"
-    label="Dokument"
-    description="Om tillgänglighet och support. Förklarar tillgänglighetsmål, incidenthantering, förväntad respons och vilken kompensation som gäller om målen inte uppnås."
-  >}}
-{{< /manual-document-table >}}
+{{< document-table label="Dokument" >}}
 
 ## Våra certifieringar
 

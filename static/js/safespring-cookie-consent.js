@@ -22,6 +22,7 @@ var CATEGORY_SCRIPTS = {
     { id: 'r2b2-script',        src: '/js/r2b2.js' }
   ],
   marketing: [
+    { id: 'google-ads-script',  src: '/js/google-ads.js' },
     { id: 'upsales-script',     src: 'https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js' }
   ]
 };
