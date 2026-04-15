@@ -52,8 +52,8 @@ toc: "On this page"
     description="About your data. Describes what personal data we collect, why we collect it, how long we keep it, and which rights you have."
   >}}
   {{< manual-document-row
-    title="Service Level Agreement and Support Processes"
-    href="/compliance/service_level_agreement_and_support_process/"
+    title="Service Level Agreement"
+    href="/compliance/service_level_agreement"
     icon="fa-solid fa-file-lines"
     label="Document"
     description="About uptime and help. Explains availability targets, incident handling, response expectations, and what remedy applies if targets are missed."
