@@ -7,7 +7,7 @@ cardorder: "1"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge."
-cardintro: "Skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norden."
+cardintro: "Nordisk IaaS med robust serverkapasitet, kontroll og høy fleksibilitet."
 background: "safespring-compute-background.svg"
 form: "no"
 documentation: "Compute"

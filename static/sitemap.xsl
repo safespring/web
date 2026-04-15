@@ -26,7 +26,7 @@
           --green-color:#32CD32;
           --clear-blue-color:#3C9BCD;
           --cloud-blue-color:#E8EFF3;
-          --hind-font:"Hind", sans-serif;
+          --hind-font:"Hind Light", sans-serif;
           --hind-font-semibold:"Hind SemiBold", sans-serif;
           --mon-font:"Montserrat", sans-serif;
           --mon-font-italic:"Montserrat Italic", sans-serif;
@@ -47,65 +47,218 @@
           }
           @font-face {
           font-family: 'Montserrat';
-          src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+          src: url('/fonts/montserrat-100.woff2') format('woff2');
+          font-weight: 100;
+          font-style: normal;
+          font-display: swap;
           }
 
           @font-face {
           font-family: 'Montserrat';
-          src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+          src: url('/fonts/montserrat-100-italic.woff2') format('woff2');
+          font-weight: 100;
           font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-200.woff2') format('woff2');
+          font-weight: 200;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-200-italic.woff2') format('woff2');
+          font-weight: 200;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-300.woff2') format('woff2');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-300-italic.woff2') format('woff2');
+          font-weight: 300;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-400.woff2') format('woff2');
+          font-weight: 400;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-400-italic.woff2') format('woff2');
+          font-weight: 400;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-500.woff2') format('woff2');
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-500-italic.woff2') format('woff2');
+          font-weight: 500;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-600.woff2') format('woff2');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-600-italic.woff2') format('woff2');
+          font-weight: 600;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-700.woff2') format('woff2');
+          font-weight: 700;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Montserrat';
+          src: url('/fonts/montserrat-700-italic.woff2') format('woff2');
+          font-weight: 700;
+          font-style: italic;
+          font-display: swap;
           }
 
           @font-face {
           font-family: 'Hind';
-          src: url('/fonts/Hind-Light.ttf') format('truetype');
+          src: url('/fonts/hind-300.woff2') format('woff2');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Hind';
+          src: url('/fonts/hind-400.woff2') format('woff2');
+          font-weight: 400;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Hind';
+          src: url('/fonts/hind-500.woff2') format('woff2');
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Hind';
+          src: url('/fonts/hind-600.woff2') format('woff2');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Hind';
+          src: url('/fonts/hind-700.woff2') format('woff2');
+          font-weight: 700;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Hind Light';
+          src: url('/fonts/hind-300.woff2') format('woff2');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
           }
 
           @font-face {
           font-family: 'Hind SemiBold';
-          src: url('/fonts/Hind-SemiBold.ttf') format('truetype');
-          }
-
-          @font-face {
-          font-family: 'Safespring Mono';
-          src: url('/fonts/Safespring-Mono-Regular.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-          }
-
-          @font-face {
-          font-family: 'Safespring Mono';
-          src: url('/fonts/Safespring-Mono-Italic.ttf') format('truetype');
-          font-weight: normal;
-          font-style: italic;
-          }
-
-          @font-face {
-          font-family: 'Safespring Mono';
-          src: url('/fonts/Safespring-Mono-Medium.ttf') format('truetype');
-          font-weight: 500;
-          font-style: normal;
-          }
-
-          @font-face {
-          font-family: 'Safespring Mono';
-          src: url('/fonts/Safespring-Mono-MediumItalic.ttf') format('truetype');
-          font-weight: 500;
-          font-style: italic;
-          }
-
-          @font-face {
-          font-family: 'Safespring Mono';
-          src: url('/fonts/Safespring-Mono-SemiBold.ttf') format('truetype');
+          src: url('/fonts/hind-600.woff2') format('woff2');
           font-weight: 600;
           font-style: normal;
+          font-display: swap;
           }
 
           @font-face {
           font-family: 'Safespring Mono';
-          src: url('/fonts/Safespring-Mono-SemiBoldItalic.ttf') format('truetype');
+          src: url('/fonts/Safespring-Mono-Regular.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Safespring Mono';
+          src: url('/fonts/Safespring-Mono-Italic.woff2') format('woff2');
+          font-weight: normal;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Safespring Mono';
+          src: url('/fonts/Safespring-Mono-Medium.woff2') format('woff2');
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Safespring Mono';
+          src: url('/fonts/Safespring-Mono-MediumItalic.woff2') format('woff2');
+          font-weight: 500;
+          font-style: italic;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Safespring Mono';
+          src: url('/fonts/Safespring-Mono-SemiBold.woff2') format('woff2');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+          }
+
+          @font-face {
+          font-family: 'Safespring Mono';
+          src: url('/fonts/Safespring-Mono-SemiBoldItalic.woff2') format('woff2');
           font-weight: 600;
           font-style: italic;
+          font-display: swap;
           }
 
           body {

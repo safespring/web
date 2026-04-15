@@ -9,7 +9,7 @@ cardorder: "2"
 date: 2024-12-13
 draft: false
 intro: "Skybasert lagring levert fra våre datasentre i Norden, basert på den markedsledende lagringsteknologien Ceph."
-cardintro: "Skybasert lagring for store datavolumer levert fra våre egne datasentre"
+cardintro: "Skalerbar objektlagring med kontroll, ytelse og drift fra Norden."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Kom i gang"

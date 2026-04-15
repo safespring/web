@@ -2,7 +2,7 @@
 title: "General Terms and Conditions"
 date: 2026-03-23
 draft: false
-intro: "The Parties undertake to perform all their respective obligations in accordance with the Agreement, as set out herein."
+intro: "The legal baseline. Sets the framework for the customer relationship, including responsibilities, delivery terms, limitations, and how the service is governed."
 documentimage: "safespring_card_21.jpg"
 sidebarlinkname: ""
 sidebarlinkicon: ""
@@ -11,6 +11,8 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+aliases:
+  - /document/general_terms_and_conditions/
 ---
 
 

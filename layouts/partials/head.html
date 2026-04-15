@@ -22,34 +22,12 @@
   <link rel="preload" as="image" href="/img/background/safespring-blue-fade2.svg" fetchpriority="high" type="image/svg+xml" importance="high">
   {{ end }}
 
+  <link rel="preload" href="/fonts/hind-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/hind-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-600.woff2" as="font" type="font/woff2" crossorigin>
+  {{ partial "local-font-faces.html" . }}
   <style>
-    @font-face {
-      font-family: 'montserrat';
-      src: url('/fonts/montserrat.woff2') format('woff2');
-      font-weight: 100 900;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'montserrat';
-      src: url('/fonts/montserrat-italic.woff2') format('woff2');
-      font-weight: 100 900;
-      font-style: italic;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'hind';
-      src: url('/fonts/hind-light.woff2') format('woff2');
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'hind semibold';
-      src: url('/fonts/hind-semibold.woff2') format('woff2');
-      font-display: swap;
-    }
     @media (min-width: 900px) { 
       .site-header-button-mail::before {
         font:var(--fa-font-solid);
@@ -68,7 +46,10 @@
     @media only screen and (max-width:900px) {
       .heading-default-single {
         flex-flow:row wrap !important;
-        padding: max(150px, 10%) 10% 10% 10% !important;
+        padding:150px 10% 48px !important;
+        align-items:flex-start;
+        align-content:flex-start;
+        row-gap:24px;
       }
 
       .site-header-wrapper {
@@ -91,11 +72,13 @@
     }
     .heading-default-single {
       background-image: url('/img/background/{{ $bg }}');
-      padding:15% 5% 5% 5%;
+      padding:12% 5% 4% 5%;
       display:flex;
       flex-flow:row nowrap;
       justify-content:space-evenly;
+      align-items:flex-end;
       gap:5%;
+      box-sizing:border-box;
       background-size: cover; 
       background-position: center;
       position: relative;
@@ -109,7 +92,7 @@
     }
     .heading-default-single h1 {
       color:#195F8C;
-      font: 3.75rem/1 hind;
+      font: 300 3.75rem/1 var(--hind-font);
     }
 
     .heading-default-single p {
@@ -154,7 +137,7 @@
     }
     h1 {
       padding-top:60px;
-      font: 3.125rem hind;
+      font: 300 3.125rem var(--hind-font);
       color:#195F8C;
       line-height:50px;
       margin-bottom:10px;
@@ -475,7 +458,10 @@
 
     .megamenu-main-service-card {
       transition:all ease-in-out .3s;
-      width:250px;
+      width:300px;
+      box-sizing:border-box;
+      padding:20px;
+      border-radius:20px;
     }
 
     .megamenu-main-service-card p {
@@ -491,8 +477,8 @@
     .megamenu-main-service-card:hover {
       background-color:#FFFFFF90;
       border-radius:20px;
-      padding:10%;
-      margin:-10%;
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(25,95,140,0.12);
     }
 
     .megamenu-service-card-list {
@@ -507,17 +493,17 @@
       transition:all ease-in-out .3s;
       background-color:#ffffffad;
       border-radius:20px;
-      padding:30px 40px;
-      margin:-30px -40px;
+      padding:40px 50px;
+      margin:-40px -50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .megamenu-service-card:hover {
-      border-radius:25px;
-      padding:40px 50px;
-      margin:-40px -50px;
+      border-radius:20px;
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(25,95,140,0.12);
     }
 
     .megamenu-service-card-title-small {
@@ -702,7 +688,7 @@
 
   .heading-default-single h1{
     max-width:90%;
-    font: 2.75rem / 1 hind;
+    font: 300 2.75rem / 1 var(--hind-font);
   }
 
 }
@@ -729,13 +715,21 @@
 {{ partial "favicons.html" . }}
 
 <!-- CSS -->
-<!-- Ladda kritisk CSS direkt -->
+<!-- Ladda huvud-CSS tidigt utan den tidigare dubbla länkningsstrategin -->
 {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" media="print" onload="this.media='all'" />
-<link href="{{ $mainCSS.RelPermalink }}" rel="stylesheet" media="(min-width: 600px)" />
+<link rel="preload" href="{{ $mainCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
+</noscript>
 
-{{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) | minify | fingerprint }}
-<link rel="preload" href="{{ $faCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" />
+{{ $faBundleTarget := "css/combined-font-awesome.css" }}
+{{ $faSources := slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css") }}
+{{ if eq .Params.fontawesomebundle "containerplatform" }}
+  {{ $faBundleTarget = "css/combined-font-awesome-containerplatform.css" }}
+  {{ $faSources = slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome-containerplatform.css") }}
+{{ end }}
+{{ $faCSS := resources.Concat $faBundleTarget $faSources | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $faCSS.RelPermalink }}" media="print" onload="this.media='all'" />
 <noscript>
   <link rel="stylesheet" href="{{ $faCSS.RelPermalink }}">
 </noscript>

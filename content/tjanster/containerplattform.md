@@ -3,7 +3,8 @@ title: "Safespring On-demand Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Managerad Kubernetes för verksamheter som behöver en digitalt suverän plattform, tydliga operativa gränser och leverans från Safesprings datahallar i Sverige och Norge med 100% förnybar energi."
+megamenutitle: "Containrar"
+cardintro: "Managerad Kubernetes med kontroll, tydliga gränser och digital suveränitet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "1"
@@ -23,6 +24,7 @@ sidebarlinkname2: "Teknisk fördjupning"
 sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
+fontawesomebundle: "containerplatform"
 language: "Se"
 ---
 
@@ -71,13 +73,57 @@ Det är också här digital suveränitet blir praktisk i stället för abstrakt.
 
 Om du vill förstå tjänsten mer tekniskt är det här de mest användbara nästa läsningarna:
 
-- [Vad du får från dag ett](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one) för de dokumenterade plattformsstandarderna
-- [Tjänstegränsen i praktiken](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice) för ansvarsfördelningen
-- [Kom igång i den officiella dokumentationen](https://docs.safespring.com/kubernetes/getting-started/) för provisionering, kontrollplanslayouter och komponentstöd
-- [Trafikhantering](https://docs.safespring.com/kubernetes/manage-traffic/) för Gateway API och Traefik-relaterade trafikmönster
-- [Portalöversikt](https://docs.safespring.com/kubernetes/portal-overview/) för self-service-flödet och klusteråtkomst
-- [Persistenta volymer](https://docs.safespring.com/kubernetes/persistent-volumes/) för lagringsbeteende och klasser
-- [Loggning och övervakning](https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/) för den nuvarande observability-gränsen
+{{< manual-document-table >}}
+  {{< manual-document-row
+    title="Vad du får från dag ett"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
+    icon="fa-solid fa-list-check"
+    label="Blogg"
+    description="De dokumenterade plattformsstandarderna från start."
+  >}}
+  {{< manual-document-row
+    title="Tjänstegränsen i praktiken"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice"
+    icon="fa-solid fa-people-arrows"
+    label="Blogg"
+    description="Hur ansvar och operativa gränser är fördelade mellan Safespring och ert team."
+  >}}
+  {{< manual-document-row
+    title="Kom igång i den officiella dokumentationen"
+    href="https://docs.safespring.com/kubernetes/getting-started/"
+    icon="fa-solid fa-book-open"
+    label="Docs"
+    description="Provisionering, kontrollplanslayouter och komponentstöd."
+  >}}
+  {{< manual-document-row
+    title="Trafikhantering"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik och hur trafikflöden hanteras i plattformen."
+  >}}
+  {{< manual-document-row
+    title="Portalöversikt"
+    href="https://docs.safespring.com/kubernetes/portal-overview/"
+    icon="fa-solid fa-table-columns"
+    label="Guide"
+    description="Self-service-flödet, klusteröversikt och hur åtkomst fungerar i portalen."
+  >}}
+  {{< manual-document-row
+    title="Persistenta volymer"
+    href="https://docs.safespring.com/kubernetes/persistent-volumes/"
+    icon="fa-solid fa-hard-drive"
+    label="Guide"
+    description="Lagringsbeteende, volymtyper och tillgängliga klasser."
+  >}}
+  {{< manual-document-row
+    title="Loggning och övervakning"
+    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    icon="fa-solid fa-chart-line"
+    label="Guide"
+    description="Den nuvarande observability-gränsen för loggar, metrics och uppföljning."
+  >}}
+{{< /manual-document-table >}}
 
 {{< distance >}}
 

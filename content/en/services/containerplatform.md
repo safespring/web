@@ -3,7 +3,7 @@ title: "Safespring On-demand Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Managed Kubernetes built for organizations that need a digitally sovereign platform, clear operational boundaries, and delivery from Safespring data centers in Sweden and Norway powered by 100% renewable energy."
+cardintro: "Managed Kubernetes with control, clear boundaries, and digital sovereignty."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "1"
@@ -23,6 +23,7 @@ sidebarlinkname2: "Technical deep dive"
 sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
+fontawesomebundle: "containerplatform"
 language: "En"
 ---
 

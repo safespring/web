@@ -3,7 +3,7 @@ title: "Safespring On-demand Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Administrert Kubernetes for virksomheter som trenger en digitalt suveren plattform, tydelige operative grenser og levering fra Safesprings datasentre i Sverige og Norge med 100% fornybar energi."
+cardintro: "Administrert Kubernetes med kontroll, tydelige grenser og digital suverenitet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "3"
@@ -23,6 +23,7 @@ sidebarlinkname2: "Teknisk fordypning"
 sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
+fontawesomebundle: "containerplatform"
 language: "No"
 ---
 

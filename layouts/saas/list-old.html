@@ -39,8 +39,7 @@ _paq.push(['enableLinkTracking']);
    <!-- CSS -->
    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type="text/css"/>
 
-   <!-- Fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Hind:300,600|Montserrat:100,300,400,600" rel="stylesheet">
+   {{ partial "local-font-faces.html" . }}
    <!-- RSS -->
    <link rel="canonical" href="{{ .Permalink }}">
 <title>Safespring | {{ .Title }}</title>

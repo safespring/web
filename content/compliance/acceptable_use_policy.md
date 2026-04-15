@@ -2,7 +2,7 @@
 title: "Acceptable Use Policy"
 date: 2026-03-23
 draft: false
-intro: "Users are responsible for any information or content uploaded or otherwise inserted to the Services."
+intro: "Rules for use. Explains customer responsibilities, restricted behavior, and how access, systems, and content must be handled safely and lawfully."
 documentimage: "safespring_card_21.jpg"
 sidebarlinkname: ""
 sidebarlinkicon: ""
@@ -11,6 +11,8 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+aliases:
+  - /document/acceptable_use_policy/
 ---
 
 *Users are responsible for any information or content uploaded or
