@@ -5083,13 +5083,44 @@ margin-bottom:2rem;
 	gap:30px;
 }
 
+.homepage-service-grid {
+	display:grid;
+	grid-template-columns:repeat(3, minmax(0, 300px));
+	justify-content:center;
+	align-items:stretch;
+}
+
+.homepage-service-grid .flex-item {
+	max-width:none;
+}
+
+@media only screen and (max-width:1050px) {
+	.homepage-service-grid {
+		grid-template-columns:repeat(2, minmax(0, 300px));
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.homepage-service-grid {
+		grid-template-columns:minmax(0, 1fr);
+	}
+
+	.homepage-service-grid .flex-item {
+		max-width:420px;
+		justify-self:center;
+	}
+}
+
 /* FLEX ITEM */
 
 .flex-item {
+	box-sizing:border-box;
+	flex:1 1 300px;
+	width:100%;
 	padding:35px;
 	background-color:#FFFFFF;
 	border-radius:15px;
-	max-width:260px;
+	max-width:300px;
 }
 
 .cardtitle {
@@ -5098,12 +5129,22 @@ margin-bottom:2rem;
 	gap:10px;
 }
 
-.border-hover-1 {transition:all 0.2s ease-in; border-bottom:5px solid white;} .border-hover-1:hover {transform:translateY(-5px); border:none; border-bottom:5px solid #417DA5 !important;}
-.border-hover-2 {transition:all 0.2s ease-in; border-bottom:5px solid white;} .border-hover-2:hover {transform:translateY(-5px); border:none; border-bottom:5px solid #f4670f !important;}
-.border-hover-3 {transition:all 0.2s ease-in; border-bottom:5px solid white;} .border-hover-3:hover {transform:translateY(-5px); border:none; border-bottom:5px solid #3C9BCD !important;}
-.border-hover-4 {transition:all 0.2s ease-in; border-bottom:5px solid white;} .border-hover-4:hover {transform:translateY(-5px); border:none; border-bottom:5px solid #5C509D !important;}
-.border-hover-5 {transition:all 0.2s ease-in; border-bottom:5px solid white;} .border-hover-5:hover {transform:translateY(-5px); border:none; border-bottom:5px solid #29a929 !important;}
-.border-hover-6 {transition:all 0.2s ease-in; border-bottom:5px solid white;} .border-hover-6:hover {transform:translateY(-5px); border:none; border-bottom:5px solid #195F8C !important;}
+.border-hover-1,
+.border-hover-2,
+.border-hover-3,
+.border-hover-4,
+.border-hover-5,
+.border-hover-6 {
+	border-bottom:5px solid transparent;
+	transition:transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+}
+
+.border-hover-1:hover {transform:translateY(-5px); border-bottom-color:var(--card-accent, #195F8C);}
+.border-hover-2:hover {transform:translateY(-5px); border-bottom-color:var(--card-accent, #195F8C);}
+.border-hover-3:hover {transform:translateY(-5px); border-bottom-color:var(--card-accent, #195F8C);}
+.border-hover-4:hover {transform:translateY(-5px); border-bottom-color:var(--card-accent, #195F8C);}
+.border-hover-5:hover {transform:translateY(-5px); border-bottom-color:var(--card-accent, #195F8C);}
+.border-hover-6:hover {transform:translateY(-5px); border-bottom-color:var(--card-accent, #195F8C);}
 
 
 .cardtitle h2 {
