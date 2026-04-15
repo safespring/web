@@ -19,10 +19,6 @@ toc: "På denna sida"
     {{< icon-block icon="fa-kit fa-eu-flag" text="GDPR Compliance" link="/gdpr/" color="#3c9bcd">}}
 {{< /icon-block-container >}}
 
-## Compliance package
-
-{{< document-table label="Dokument" >}}
-
 ## Våra certifieringar
 
 ISO 27001 och FR2000 är de två certifieringar som tydligast visar hur Safespring arbetar med säkerhet, styrning och kontinuerlig förbättring.
