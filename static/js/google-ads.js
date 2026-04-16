@@ -120,7 +120,8 @@
     }
 
     var payload = {
-      send_to: sendTo
+      send_to: sendTo,
+      transport_type: 'beacon'
     };
 
     if (typeof opts.value === 'number') {
@@ -128,6 +129,10 @@
     }
     if (typeof opts.currency === 'string' && opts.currency.length > 0) {
       payload.currency = opts.currency;
+    }
+    if (typeof opts.eventCallback === 'function') {
+      payload.event_callback = opts.eventCallback;
+      payload.event_timeout = typeof opts.eventTimeout === 'number' ? opts.eventTimeout : 1000;
     }
 
     window.gtag('event', 'conversion', payload);
@@ -146,13 +151,53 @@
         return;
       }
 
-      trackGoogleAdsConversion({ conversionType: 'priceListDownload' });
+      if (!shouldDelayNavigation(event, link)) {
+        trackGoogleAdsConversion({ conversionType: 'priceListDownload' });
+        return;
+      }
+
+      delayNavigationForConversion(event, link);
     }, true);
   }
 
   function isPriceListLink(link) {
     var href = link.getAttribute('href') || '';
     return href.indexOf('/pricelist/') !== -1;
+  }
+
+  function shouldDelayNavigation(event, link) {
+    return event.button === 0 &&
+      !event.metaKey &&
+      !event.ctrlKey &&
+      !event.shiftKey &&
+      !event.altKey &&
+      !link.target &&
+      !!link.href;
+  }
+
+  function delayNavigationForConversion(event, link) {
+    var navigated = false;
+
+    function navigate() {
+      if (navigated) {
+        return;
+      }
+      navigated = true;
+      window.location.href = link.href;
+    }
+
+    event.preventDefault();
+
+    if (!trackGoogleAdsConversion({
+      conversionType: 'priceListDownload',
+      eventCallback: navigate,
+      eventTimeout: 1000
+    })) {
+      navigate();
+      return;
+    }
+
+    window.setTimeout(navigate, 1200);
   }
 
   function bindLeadFormTracking() {
