@@ -4795,6 +4795,11 @@ margin-bottom:2rem;
   gap: 30px;
 }
 
+.flexcontainer-three > a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* FLEX ITEM */
 
 .flex-item {
@@ -4872,11 +4877,14 @@ margin-bottom:2rem;
 }
 
 .flex-item > p {
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 3;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  color: #323232;
+  font: 300 1.125rem montserrat;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .cardicon {

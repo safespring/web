@@ -67,12 +67,24 @@
   @font-face {
     font-family: "hind";
     src: url("/fonts/hind-light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "hind";
+    src: url("/fonts/hind-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
     font-display: swap;
   }
 
   @font-face {
     font-family: "hind semibold";
     src: url("/fonts/hind-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
     font-display: swap;
   }
   @media (min-width: 900px) {
@@ -81,12 +93,6 @@
       content: "\f0e0";
       margin-right: 10px;
     }
-    @media (min-width: 900px) {
-      .site-header-button-mail::before {
-        font:var(--fa-font-solid);
-        content:"\f0e0";
-        margin-right:10px;
-      }
 
     .site-header-button-mail:hover::before {
       content: "\f044";
@@ -743,17 +749,7 @@
     <!-- CSS -->
     <!-- Ladda kritisk CSS direkt -->
     {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
-    <link
-      rel="stylesheet"
-      href="{{ $mainCSS.RelPermalink }}"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      href="{{ $mainCSS.RelPermalink }}"
-      rel="stylesheet"
-      media="(min-width: 600px)"
-    />
+    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" />
 
     {{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice
       (resources.Get "css/solid.min.css") (resources.Get
