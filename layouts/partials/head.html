@@ -47,46 +47,13 @@
       />
     {{ end }}
 
+<link rel="preload" href="/fonts/hind-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/hind-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/montserrat-600.woff2" as="font" type="font/woff2" crossorigin>
+{{ partial "local-font-faces.html" . }}
+
 <style>
-  @font-face {
-    font-family: "montserrat";
-    src: url("/fonts/montserrat.woff2") format("woff2");
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "montserrat";
-    src: url("/fonts/montserrat-italic.woff2") format("woff2");
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "hind";
-    src: url("/fonts/hind-light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "hind";
-    src: url("/fonts/hind-semibold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "hind semibold";
-    src: url("/fonts/hind-semibold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
   @media (min-width: 900px) {
     .site-header-button-mail::before {
       font: var(--fa-font-solid);
@@ -164,9 +131,8 @@
         margin-bottom: 2rem;
       }
       h1 {
-        font: 3.125rem hind;
+        font: 300 3.125rem/50px var(--hind-font);
         color: #195f8c;
-        line-height: 50px;
         text-wrap: balance;
         margin: 0;
         padding: 0;
@@ -479,7 +445,7 @@
         }
 
         .megamenu-main-service-card-title {
-          font: 21px var(--hind-font);
+          font: 300 21px/1 var(--hind-font);
           margin-top: 5px;
         }
 
@@ -679,7 +645,7 @@
       @media only screen and (max-width: 900px) {
         .heading-default-single h1 {
           max-width: 90%;
-          font: 2.75rem / 1 hind;
+          font: 300 2.75rem/1 var(--hind-font);
         }
       }
     </style>
@@ -751,11 +717,13 @@
     {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" />
 
-    {{ $faCSS := resources.Concat "css/combined-font-awesome.css" (slice
-      (resources.Get "css/solid.min.css") (resources.Get
-      "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css")) |
-      minify | fingerprint
-    }}
+    {{ $faBundleTarget := "css/combined-font-awesome.css" }}
+    {{ $faSources := slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css") }}
+    {{ if eq .Params.fontawesomebundle "containerplatform" }}
+      {{ $faBundleTarget = "css/combined-font-awesome-containerplatform.css" }}
+      {{ $faSources = slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome-containerplatform.css") }}
+    {{ end }}
+    {{ $faCSS := resources.Concat $faBundleTarget $faSources | minify | fingerprint }}
     <link
       rel="preload"
       href="{{ $faCSS.RelPermalink }}"

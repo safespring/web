@@ -16,7 +16,7 @@ section: "Tech update"
 author: "Anders Johansson"
 TOC: "I det här inlägget"
 sidebarlinkurl: "/containers"
-sidebarlinkname: "Utforska Kubernetes på begäran"
+sidebarlinkname: "Utforska On-demand Kubernetes"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Boka demo"
 ---
@@ -37,11 +37,11 @@ Med utfasningen av Ingress-Nginx är en migrering från Ingress-Nginx till Gatew
 
 {{< horisontal-card
     image="/img/graphics/safespring-image.svg"
-    alt="Safespring on-demand Kubernetes med Cilium Gateway API"
+    alt="Safespring On-demand Kubernetes med Cilium Gateway API"
     cardtitle="Gateway API på Cilium, hanterat åt dig"
     text="Starta Talos-baserade kluster med Cilium och Gateway API redo dag ett. Få ett hanterat kontrollplan och flexibel blocklagring, så att du kan fokusera på dina arbetslaster i stället för grundinfrastrukturen."
     link="/containers/"
-    linktext="Upptäck Kubernetes on-demand"
+    linktext="Upptäck On-demand Kubernetes"
 >}}
 
 {{< distance >}}
@@ -341,9 +341,9 @@ Det delade gateway-upplägget visar förbättrad prestanda genom:
 
 {{< horisontal-card
     image="/img/graphics/safespring-image.svg"
-    alt="Översikt över Safespring on-demand Kubernetes-kluster"
+    alt="Översikt över Safespring On-demand Kubernetes-kluster"
     cardtitle="Redo att testa detta i ett riktigt kluster?"
-    text="Safespring on-demand Kubernetes låter dig provköra Gateway API och Cilium i en hanterad miljö där Talos, observabilitet och lagring redan finns på plats. Perfekt för att pilottesta din Ingress-Nginx-migrering innan du rullar ut den i produktion."
+    text="Safespring On-demand Kubernetes låter dig provköra Gateway API och Cilium i en hanterad miljö där Talos, observabilitet och lagring redan finns på plats. Perfekt för att pilottesta din Ingress-Nginx-migrering innan du rullar ut den i produktion."
     link="/containers/"
-    linktext="Upptäck Kubernetes on-demand"
+    linktext="Upptäck On-demand Kubernetes"
 >}}

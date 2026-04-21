@@ -10,13 +10,16 @@ showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "en"
 author: ""
 TOC: "In this post"
 sidebarlinkname: "Talos on OpenStack"
-sidebarlinkurl: "/blogg/2025/2025-03-talos-linux-on-openstack/"
+sidebarlinkurl: "/tech-update/2025-03-talos-linux-on-openstack/"
 sidebarlinkname2: "Cluster API on OpenStack"
-sidebarlinkurl2: "/blogg/2025/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/"
+sidebarlinkurl2: "/tech-update/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/"
+aliases:
+  - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
+  - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
 ---
 
 {{< ingress >}}

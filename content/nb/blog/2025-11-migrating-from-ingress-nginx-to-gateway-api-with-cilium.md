@@ -339,9 +339,9 @@ Den delte gateway-tilnærmingen viser forbedret ytelse ved:
 
 {{< horisontal-card
     image="/img/graphics/safespring-image.svg"
-    alt="Oversikt over Safespring on-demand Kubernetes-klynge"
+    alt="Oversikt over Safespring On-demand Kubernetes-klynge"
     cardtitle="Klar til å prøve dette i en ekte klynge?"
-    text="Safespring on-demand Kubernetes lar deg testkjøre Gateway API og Cilium i et administrert miljø med Talos, observabilitet og lagring allerede på plass. Perfekt for å pilotere migreringen fra Ingress-Nginx før du ruller den ut i produksjon."
+    text="Safespring On-demand Kubernetes lar deg testkjøre Gateway API og Cilium i et administrert miljø med Talos, observabilitet og lagring allerede på plass. Perfekt for å pilotere migreringen fra Ingress-Nginx før du ruller den ut i produksjon."
     link="/containers/"
-    linktext="Oppdag on-demand Kubernetes"
+    linktext="Oppdag On-demand Kubernetes"
 >}}

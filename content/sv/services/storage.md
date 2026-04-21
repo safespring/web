@@ -3,21 +3,23 @@ title: "Safespring S3: Skalbar och högpresterande objektlagring"
 language: "sv"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
+megamenutitle: "Storage"
 cardicon: "fak fa-safespring-s3"
 cardcolor: "#f4670f"
 cardorder: "4"
 date: 2024-09-22T10:50:10+02:00
 draft: false
 intro: "Molnbaserad lagring som tillhandahålls från våra datacenter i Norden och bygger på den marknadsledande lagringsteknologin Ceph."
-cardintro: "Molnbaserad lagring för stora volymer tillhandahålls från våra egna datacenter"
+cardintro: "Skalbar objektlagring med kontroll, prestanda och drift från Norden."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Kom igång"
 sidebarlinkurl: "#contact"
 sidebarlinkname2: "Pris för Storage"
 sidebarlinkurl2: "/pris/#safespring-storage-s3"
-section: "Public cloud"
 socialmedia: "safespring-storage.jpg"
+section: "Public cloud"
+socialmedia: "/safespring-start.jpg"
 sidebarimage: "safespring-daniel.webp"
 sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
@@ -29,13 +31,14 @@ aliases:
   - /tjanster/safespring-storage/
 ---
 
+
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-shield-alt" text="Europeiska säkerhets­värden" link="" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-layer-group" text="Skalbar lagring" link="" color="#417DA5">}}
-{{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög prestanda" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-sync-alt" text="Hög tillgänglighet" link="" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnads­effektivt" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-shield-alt" text="Europeiska säkerhets­värden" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-layer-group" text="Skalbar lagring" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög prestanda" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-sync-alt" text="Hög tillgänglighet" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnads­effektivt" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## S3 Storage - lagring i molnet
@@ -51,7 +54,6 @@ Molnbaserade applikationer förlitar sig på dataåtkomst med låg latens och sn
 Dessutom erbjuder vår lösning enkel integration med befintliga S3-verktyg och applikationer, vilket eliminerar behovet av ändringar. Med brett applikationsstöd är Safespring Storage kompatibel med populära programvaror som Veeam Backup, Nextcloud, Cyberduck med flera.
 
 ## Safespring Storage finns i två versioner
-
 Behöver din applikation snabb åtkomst till lagrade data eller letar du efter en långsiktig lagringslösning för en offsite-backup?
 
 {{< icon-block-horisontal icon="fa-solid fa-rabbit-running" color="#3C9BCD" text="S3 Standardlagring" description="Vår standard S3-tjänst med låg latens och hög prestanda. Optimerad för applikationer som kräver snabb och tillförlitlig dataåtkomst." >}}
@@ -72,7 +74,7 @@ Lagra och distribuera stora mediefiler, dokument och andra digitala tillgångar 
 
 #### Stordataanalys
 
-Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/services/case/scilifelab/).
+Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/tjanster/case/scilifelab/).
 
 #### Databackup och återställning
 
@@ -85,13 +87,13 @@ Möt regulatoriska krav genom att säkert lagra och arkivera data med oförände
 ## Kom igång med våra konfigurationsguider
 
 {{< icon-block-small-container >}}
-{{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/howto/configs/s3fs/" color="#32cd32">}}
-{{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/howto/configs/cloudberry/" color="#417DA5">}}
-{{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/howto/configs/cyberduck/" color="#3C9BCD">}}
-{{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/howto/configs/duck-cli/" color="#3C9BCD">}}
-{{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/howto/configs/minio-client/" color="#FA690F">}}
-{{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/howto/configs/aws-cli/" color="#32cd32">}}
-{{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/howto/configs/nextcloud-s3/" color="#32cd32">}}
+    {{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/howto/configs/s3fs/" color="#32cd32">}}
+    {{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/howto/configs/cloudberry/" color="#417DA5">}}
+    {{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/howto/configs/cyberduck/" color="#3C9BCD">}}
+    {{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/howto/configs/duck-cli/" color="#3C9BCD">}}
+    {{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/howto/configs/minio-client/" color="#FA690F">}}
+    {{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/howto/configs/aws-cli/" color="#32cd32">}}
+    {{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/howto/configs/nextcloud-s3/" color="#32cd32">}}
 {{< /icon-block-small-container >}}
 
 ## Vanliga frågor

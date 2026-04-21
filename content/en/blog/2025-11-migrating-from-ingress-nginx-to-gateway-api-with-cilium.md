@@ -15,7 +15,7 @@ section: "Tech update"
 author: "Anders Johansson"
 TOC: "In this post"
 sidebarlinkurl: "/containers"
-sidebarlinkname: "Explore on-demand kubernetes"
+sidebarlinkname: "Explore On-demand Kubernetes"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Book demo"
 ---
@@ -36,11 +36,11 @@ With the retirement of Ingress Nginx migration from Ingress-Nginx to Gateway API
 
 {{< horisontal-card
     image="/img/graphics/safespring-image.svg"
-    alt="Safespring on-demand Kubernetes with Cilium Gateway API"
+    alt="Safespring On-demand Kubernetes with Cilium Gateway API"
     cardtitle="Gateway API on Cilium, managed for you"
     text="Spin up Talos-based clusters with Cilium and Gateway API ready on day one. Get a managed control plane and flexible block storage, so you focus on your workloads instead of the plumbing."
     link="/containers/"
-    linktext="Discover on-demand Kubernetes"
+    linktext="Discover On-demand Kubernetes"
 >}}
 
 {{< distance >}}
@@ -352,9 +352,9 @@ The shared gateway approach shows improved performance by:
 
 {{< horisontal-card
     image="/img/graphics/safespring-image.svg"
-    alt="Safespring on-demand Kubernetes cluster overview"
+    alt="Safespring On-demand Kubernetes cluster overview"
     cardtitle="Ready to try this in a real cluster?"
-    text="Safespring on-demand Kubernetes lets you test-drive Gateway API and Cilium in a managed environment with Talos, observability, and storage already prepared. Perfect for piloting your Ingress-Nginx migration before rolling it into production."
+    text="Safespring On-demand Kubernetes lets you test-drive Gateway API and Cilium in a managed environment with Talos, observability, and storage already prepared. Perfect for piloting your Ingress-Nginx migration before rolling it into production."
     link="/containers/"
-    linktext="Discover on-demand Kubernetes"
+    linktext="Discover On-demand Kubernetes"
 >}}

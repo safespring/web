@@ -188,7 +188,7 @@ lang = 'en'
 
 [params]
 
-  mainSections = ['blog', 'webinar', 'whitepaper', 'solution-brief']
+  mainSections = ['blog', 'tech-update', 'webinar', 'whitepaper', 'solution-brief']
 
 [sitemap]
     changefreq = "daily"

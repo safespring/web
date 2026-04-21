@@ -16,7 +16,7 @@ section: "Tech update"
 author: "Gabriel Paues"
 TOC: "I dette indlæg"
 sidebarlinkurl: "/containers"
-sidebarlinkname: "Udforsk on-demand Kubernetes"
+sidebarlinkname: "Udforsk On-demand Kubernetes"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Bogdemo"
 ---

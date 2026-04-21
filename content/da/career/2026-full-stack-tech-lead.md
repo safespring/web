@@ -65,7 +65,7 @@ Nogle af projekterne i vores 2026 roadmap inkluderer:
 
 - Introducere et eksternt API og en golang SDK til vores kunder
 - Prototype en terraform provider til det eksterne API
-- Introducere opgraderingsplaner for on-demand Kubernetes i vores self-service-portal
+- Introducere opgraderingsplaner for On-demand Kubernetes i vores self-service-portal
 
 ## Om Safespring
 

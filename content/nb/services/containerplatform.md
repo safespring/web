@@ -3,7 +3,7 @@ title: "Safespring On-demand Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Administrert Kubernetes for virksomheter som trenger en digitalt suveren plattform, tydelige operative grenser og levering fra Safesprings datasentre i Sverige og Norge med 100% fornybar energi."
+cardintro: "Administrert Kubernetes med kontroll, tydelige grenser og digital suverenitet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "3"
@@ -14,7 +14,7 @@ draft: false
 intro: "En administrert Kubernetes-tjeneste som kombinerer selvbetjent provisjonering, administrert kontrollplan, moderne nettverkshåndtering og digital suverenitet for virksomheter som trenger både fart og kontroll."
 background: ""
 sidebarlinkname: "Kontakt oss"
-sidebarlinkurl: "/no/kontakt/"
+sidebarlinkurl: "/kontakt/"
 sidebarimage: "safespring-fredric.webp"
 sidebartext: "Vil du snakke om tjenesten? Ta gjerne kontakt hvis du har spørsmål."
 sidebarphone: "+46 76-629 25 02"
@@ -23,15 +23,16 @@ sidebarlinkname2: "Teknisk fordypning"
 sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
+fontawesomebundle: "containerplatform"
 language: "nb"
-slug: "containerplattform"
 aliases:
   - /no/tjenester/containerplattform/
+slug: "containerplattform"
 ---
 
 {{< ingress >}}
 Safespring On-demand Kubernetes er en administrert Kubernetes-tjeneste for å kjøre containeriserte applikasjoner på Safesprings infrastruktur, med selvbetjent provisjonering og administrert kontrollplan.
-{{</ ingress >}}
+{{< /ingress >}}
 
 Tjenesten er utformet for virksomheter som trenger sterkere kontroll over dataplacering, jurisdiksjon og operative grenser, inkludert miljøer med krav til GDPR, compliance og digital suverenitet.
 
@@ -41,7 +42,7 @@ Den praktiske verdien er at ingeniørteam får en plattform som er klar til bruk
     {{< icon-block icon="fas fa-rocket" text="Deploy hvor som helst" link="" color="#195F8C">}}
     {{< icon-block icon="fas fa-link-slash" text="Ingen vendor lock-in" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-layer-group" text="Cloud native-teknologi" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-lock" text="Digital suverenitet" link="/no/gdpr/" color="#FA690F">}}
+    {{< icon-block icon="fas fa-lock" text="Digital suverenitet" link="/gdpr/" color="#FA690F">}}
     {{< icon-block icon="fas fa-leaf" text="100% fornybar energi" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-sliders" text="Du har kontrollen" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}

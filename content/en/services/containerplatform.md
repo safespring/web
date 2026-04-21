@@ -3,7 +3,7 @@ title: "Safespring On-demand Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Containers"
-cardintro: "Managed Kubernetes built for organizations that need a digitally sovereign platform, clear operational boundaries, and delivery from Safespring data centers in Sweden and Norway powered by 100% renewable energy."
+cardintro: "Managed Kubernetes with control, clear boundaries, and digital sovereignty."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "1"
@@ -14,7 +14,7 @@ draft: false
 intro: "A managed Kubernetes service that combines self-service provisioning, a managed control plane, modern networking, and digital sovereignty for organizations that need both speed and control."
 background: ""
 sidebarlinkname: "Contact us"
-sidebarlinkurl: "/en/contact/"
+sidebarlinkurl: "/contact/"
 sidebarimage: "safespring-fredric.webp"
 sidebartext: "Want to discuss the service? Feel free to reach out if you have any questions."
 sidebarphone: "+46 76-629 25 02"
@@ -23,6 +23,7 @@ sidebarlinkname2: "Technical deep dive"
 sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
 showthedate: false
 banner: "blue-hover-tech"
+fontawesomebundle: "containerplatform"
 language: "en"
 aliases:
   - /en/services/containerplatform/
@@ -30,7 +31,7 @@ aliases:
 
 {{< ingress >}}
 Safespring On-demand Kubernetes is a managed Kubernetes service for running containerized applications on Safespring infrastructure, with self-service provisioning and a managed control plane.
-{{</ ingress >}}
+{{< /ingress >}}
 
 It is designed for organizations that need stronger control over data location, jurisdiction, and operational boundaries, including environments with GDPR, compliance, and digital sovereignty requirements.
 
@@ -40,7 +41,7 @@ The practical value is that engineering teams get a platform that is ready to us
     {{< icon-block icon="fas fa-rocket" text="Deploy anywhere" link="" color="#195F8C">}}
     {{< icon-block icon="fas fa-link-slash" text="No vendor lock-in" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-layer-group" text="Cloud-native technologies" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-lock" text="Digital sovereignty" link="/en/gdpr/" color="#FA690F">}}
+    {{< icon-block icon="fas fa-lock" text="Digital sovereignty" link="/gdpr/" color="#FA690F">}}
     {{< icon-block icon="fas fa-leaf" text="100% renewable energy" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-sliders" text="You are in control" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}

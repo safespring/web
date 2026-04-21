@@ -7,7 +7,7 @@ cardorder: "1"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge."
-cardintro: "Skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norden."
+cardintro: "Nordisk IaaS med robust serverkapasitet, kontroll og høy fleksibilitet."
 background: "safespring-compute-background.svg"
 form: "no"
 documentation: "Compute"
@@ -17,6 +17,7 @@ sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
 language: "nb"
 section: "Safespring Compute"
+Language: "No"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
@@ -24,12 +25,12 @@ aliases:
 ---
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimised" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-door-open" text="Open standards" link="" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-gauge-max" text="Kubernetes Optimised" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-door-open" text="Open standards" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-webhook" text="Powerful automation" link="" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}
@@ -43,7 +44,7 @@ Safespring Compute tilbyr en skybasert infrastrukturtjeneste som gir deg fleksib
 1. Full kontroll over dine data: Safespring Compute sikrer at dine data forblir i Norge, og alle datasentrene er fysisk plassert i landet. Dette garanterer optimal datasikkerhet og overholdelse av norske lover og regler.
 1. Selvbetjening og automatisering: Safespring Compute skytjeneste tilbyr en brukervennlig portal hvor du enkelt kan starte og stoppe servere. Du kan også programmere serverstyring med standardiserte API-kommandoer, noe som gjør tjenesten svært automatiserbar og effektiv.
 1. Kostnadseffektivitet: Med Safespring Compute betaler du kun for de ressursene du faktisk bruker, og minste kostnadsbelastning er per time. Dette gir deg full kontroll over IT-kostnadene og unngår store investeringer i ny maskinvare.
-1. Fleksible lagringsalternativer: Safespring tilbyr to ulike [lagringstjenester](/services/storage/) – slik at du kan balansere dine behov mellom beste ytelse og laveste kostnad.
+1. Fleksible lagringsalternativer: Safespring tilbyr to ulike [lagringstjenester](/tjenester/safespring-s3-skalerbar-og-høyytelses-objektlagring/) – slik at du kan balansere dine behov mellom beste ytelse og laveste kostnad.
 1. Støtte for akademiske sektorer: Safespring Compute er en pålitelig partner for universiteter, høyskoler og forskningsmiljøer i Sverige og Norge, og tilbyr tjenester som er spesielt utviklet for å møte kravene til forsknings- og utdannelsessektoren.
 
 Safespring Compute kan forbedre din organisasjons IT-infrastruktur gjennom sin skybaserte løsning. Besøk vår nettside og bestill en demo i dag.

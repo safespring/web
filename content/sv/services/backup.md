@@ -25,7 +25,7 @@ aliases:
   - /backup/
   - /safespring-backup/
   - /tjanster/safespring-backup/
-section: "Public Cloud"
+section: "Public Cloud" 
 megamenu: "yes"
 ---
 
@@ -64,7 +64,7 @@ Tjänsten konsumeras över internet och du betalar för mängden data som sparas
 
 Förutom de rena backupfunktionerna finns mycket annan funktionalitet, ex. ”Bare Machine Recovery” vilket gör det möjligt att återskapa en maskin i sin helhet, antingen på en annan fysisk hårdvara, eller till en ny virtuell maskin exempelvis i vår Compute-miljö.
 
-{{< readfile "Solution Brief" "/content/sv/read-more/safespring-backup-portal-more.md" >}}
+{{< readfile "Solution Brief" "/content/read-more/safespring-backup-portal-sv-more.md" >}}
 
 ### Lösning för offsite backup
 I det fallet att ni redan har en backuplösning lokalt så går det också att använda vår Backuptjänst om ni kör TSM lokalt, eller Active Archive-lösning som komplement för att lagra offsite backuper hos oss. Vår lösning stödjer S3, en de-facto standard för objektlagring, som gör den kompatibel med många backuplösningar på marknaden. Med den lösningen så kan ni öka tryggheten kring backuper avsevärt till ett förhållandevis lågt pris. Installationen är också enkel eftersom att kopplingen till vår Active Archive-lösning bara behöver konfigureras centralt på den befintliga backup servern och inte på varje maskin separat.

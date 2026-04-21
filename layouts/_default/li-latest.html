@@ -1,5 +1,9 @@
 <a href="{{ .RelPermalink }}">
   {{ $section := .Section }}
+  {{ $sectionParam := lower (default "" .Params.section) }}
+  {{ if or (eq $section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
+    {{ $section = "tech-update" }}
+  {{ end }}
   <div
     class="fill-available-space img-250 pointer
     {{ if eq $section "webinar" }}

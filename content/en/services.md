@@ -10,8 +10,6 @@ sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Price"
 sidebarlinkurl2: "/price/"
-aliases:
-  - /en/services/
 ---
 
 <div class="ingress"><p>With cloud-based infrastructure as a service, you can scale your infrastructure up or down as needed. Provided from secure data centers in Sweden.</p></div>
@@ -20,8 +18,8 @@ Safespring delivers a locally based Cloud built for the apps of tomorrow. It ena
 
 {{< localbutton text="Service catalogue" link="/services/safespring-service-catalogue-2020.pdf" >}}
 
-<div class="flexcontainer-shortcode" style="">
+<div class="flexcontainer-shortcode" style=""> 
 
-{{< services "en" >}}
-
+{{< services "En" >}}
+ 
 </div>

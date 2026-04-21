@@ -1,0 +1,2 @@
+{{ $fontCSS := resources.Get "css/local-font-faces.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $fontCSS.RelPermalink }}">

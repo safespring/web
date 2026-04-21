@@ -16,9 +16,9 @@ section: "Tech update"
 author: "Gabriel Paues"
 TOC: "I det här inlägget"
 sidebarlinkurl: "/containers"
-sidebarlinkname: "Utforska Kubernetes på begäran"
+sidebarlinkname: "Utforska On-demand Kubernetes"
 sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Bokdemo"
+sidebarlinkname2: "Boka demo"
 ---
 {{< ingress >}}
 Att köra en LLM lokalt behöver inte vara komplicerat. Det här inlägget visar hur du förvandlar en GPU-aktiverad Ubuntu 24.04-instans i Safespring till en praktisk AI-arbetsstation med NVIDIA-drivrutiner, Ollama och Open-WebUI.

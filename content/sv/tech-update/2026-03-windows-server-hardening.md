@@ -1,52 +1,56 @@
 ---
-title: "Automating Windows Server Hardening on Safespring Compute: From Launch to Locked Down"
+ai: true
+title: "Automatisera härdning av Windows Server på Safespring Compute: från start till låst system"
 date: "2026-03-17"
-intro: "The result is a fully hardened Windows Server you can provision in one shot, hands-off, from the OpenStack CLI."
+intro: "Resultatet är en fullt härdad Windows Server som du kan provisionera i ett enda steg, utan handpåläggning, från OpenStack CLI."
 draft: false
-sectiontext: "Tech Update"
-section: "Tech update"
-tags: ["English"]
+sectiontext: "Teknikuppdatering"
+section: "Teknikuppdatering"
+tags: ["windows", "compute"]
 showthedate: true
 card: ""
 eventbild: ""
 socialmediabild: ""
-language: "En"
+language: "sv"
 author: "Gabriel Paues"
+aliases:
+  - /blogg/2026/2026-03-windows-server-hardening/
+  - /blogg/2026-03-windows-server-hardening/
 ---
 
-When you spin up a Windows Server instance in a cloud environment like Safespring Compute, you get a blank slate, no password, no SSH, no remote access at all. 
+När du startar en Windows Server-instans i en molnmiljö som Safespring Compute får du ett tomt utgångsläge: inget lösenord, ingen SSH och ingen fjärråtkomst alls.
 
-This post walks through the full automation chain: using cloudbase-init to bootstrap the instance at first boot, then running an Ansible playbook to apply a security baseline.
+Det här inlägget går igenom hela automationskedjan: först används cloudbase-init för att boota upp instansen vid första start, därefter körs en Ansible-playbook som applicerar en säkerhetsbaslinje.
 
-The result is a fully hardened Windows Server you can provision in one shot, hands-off, from the OpenStack CLI.
-
----
-
-## The Problem With Fresh Windows Instances
-
-Unlike Linux, a Windows instance launched without any User Data has:
-
-- **No Administrator password** — the account exists but is inaccessible
-- **No SSH** — only RDP and the OpenStack web console are available
-- **No hardening** — default Windows settings are permissive
-
-The only way in without automation is the Horizon web console, which is slow and does not scale. We need to fix all of this before the instance finishes booting.
+Resultatet är en fullt härdad Windows Server som du kan provisionera i ett enda steg, utan handpåläggning, från OpenStack CLI.
 
 ---
 
-## Step 1 — Bootstrap With Cloudbase-Init
+## Problemet med nya Windows-instanser
 
-Safespring Windows images ship with [cloudbase-init](https://cloudbase.it/cloudbase-init/) pre-installed. It works like cloud-init on Linux: it reads the User Data you supply at launch and executes it once on first boot.
+Till skillnad från Linux har en Windows-instans som startas utan User Data:
 
-Scripts must begin with `#ps1_sysnative` so cloudbase-init runs them in the 64-bit PowerShell host.
+- **Inget Administrator-lösenord** - kontot finns men går inte att använda.
+- **Ingen SSH** - bara RDP och OpenStacks webbkonsol är tillgängliga.
+- **Ingen härdning** - Windows standardinställningar är tillåtande.
 
-{{% disclaimer "Security note" %}} 
-Anything in User Data may appear in cloudbase-init log files on the instance. Treat the password you set here as a temporary bootstrap credential, rotate it after first login, or use key-based SSH exclusively.
+Utan automation är Horizon-konsolen den enda vägen in, och den är både långsam och svår att skala. Vi behöver lösa allt detta innan instansen har startat färdigt.
+
+---
+
+## Steg 1 - Bootstrappa med Cloudbase-Init
+
+Safesprings Windows-avbildningar levereras med [cloudbase-init](https://cloudbase.it/cloudbase-init/) förinstallerat. Det fungerar som cloud-init på Linux: det läser den User Data du skickar med vid start och kör den en gång vid första boot.
+
+Skript måste börja med `#ps1_sysnative` så att cloudbase-init kör dem i 64-bitars PowerShell.
+
+{{% disclaimer "Säkerhetsnotering" %}} 
+Allt i User Data kan hamna i cloudbase-init-loggar på instansen. Behandla lösenordet du sätter här som en tillfällig bootstrap-uppgift, rotera det efter första inloggningen eller använd enbart nyckelbaserad SSH.
 {{% /disclaimer %}}
 
-### The cloudbase-init script
+### cloudbase-init-skriptet
 
-Paste this into the **Configuration > Customization Script** field in Horizon, or save it as a file and pass it with `--user-data`:
+Klistra in detta i fältet **Configuration > Customization Script** i Horizon, eller spara det som en fil och skicka med den via `--user-data`:
 
 ```powershell
 #ps1_sysnative
@@ -86,9 +90,9 @@ try {
 }
 ```
 
-> **Before launching:** Open port 22 in your OpenStack Security Group, but restrict it to your own IP only. The first login uses password authentication (before your SSH key is in place), so exposing port 22 to the world at this stage is a significant risk. Find your current public IP with `curl ifconfig.me` and add a rule for `<your-ip>/32` on TCP port 22.
+> **Före start:** Öppna port 22 i din OpenStack Security Group, men begränsa den till din egen IP-adress. Första inloggningen använder lösenordsautentisering innan SSH-nyckeln är på plats, så att exponera port 22 mot internet i det här skedet är en tydlig risk. Hitta din publika IP med `curl ifconfig.me` och lägg till en regel för `<your-ip>/32` på TCP-port 22.
 
-Or launch via the CLI:
+Eller starta via CLI:
 
 ```bash
 openstack server create \
@@ -98,23 +102,23 @@ openstack server create \
   my-windows-server
 ```
 
-When the instance finishes booting, the Administrator account will have your password set and SSH will be listening on port 22.
+När instansen har startat färdigt har Administrator-kontot fått ditt lösenord och SSH lyssnar på port 22.
 
 ---
 
-## Step 2 — Set Up Key-Based SSH
+## Steg 2 - Sätt upp nyckelbaserad SSH
 
-Password-based SSH is only useful as a stepping stone. Before running Ansible, switch to key-based authentication so your automation never needs to handle plaintext credentials.
+Lösenordsbaserad SSH är bara användbar som ett första steg. Innan du kör Ansible bör du byta till nyckelbaserad autentisering så att automationen aldrig behöver hantera lösenord i klartext.
 
-> **Tip:** Generate your key without a passphrase (`ssh-keygen -t rsa -b 4096 -f ~/.ssh/your-key.pem` and press Enter when asked for a passphrase). Ansible runs unattended, a passphrase-protected key will cause it to hang waiting for input.
+> **Tips:** Skapa nyckeln utan lösenfras (`ssh-keygen -t rsa -b 4096 -f ~/.ssh/your-key.pem` och tryck Enter när du ombeds ange lösenfras). Ansible körs utan interaktiv inmatning, och en lösenfrasskyddad nyckel gör att körningen fastnar i väntan på input.
 
-### Log in with password and configure the key
+### Logga in med lösenord och konfigurera nyckeln
 
 ```bash
 ssh administrator@<server-ip>
 ```
 
-On the Windows server (PowerShell):
+På Windows-servern (PowerShell):
 
 ```powershell
 # Create the .ssh directory and authorized_keys file
@@ -128,27 +132,27 @@ Add-Content -Path "C:\Users\Administrator\.ssh\authorized_keys" -Value "ssh-rsa 
 icacls "C:\Users\Administrator\.ssh\authorized_keys" /inheritance:r /grant "Administrator:F" /grant "SYSTEM:F"
 ```
 
-### Check sshd_config
+### Kontrollera sshd_config
 
 ```powershell
 Get-Content "C:\ProgramData\ssh\sshd_config"
 ```
 
-Make sure these lines are present and **not** commented out:
+Kontrollera att de här raderna finns och **inte** är bortkommenterade:
 
 ```
 PubkeyAuthentication yes
 AuthorizedKeysFile .ssh/authorized_keys
 ```
 
-And make sure these lines at the bottom **are** commented out, they override the per-user `authorized_keys` for the Administrator account:
+Kontrollera också att de här raderna längst ned **är** bortkommenterade. De åsidosätter annars `authorized_keys` per användare för Administrator-kontot:
 
 ```
 # Match Group administrators
 #        AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 ```
 
-If they are not commented, fix them:
+Om de inte är bortkommenterade, rätta dem:
 
 ```powershell
 (Get-Content "C:\ProgramData\ssh\sshd_config") `
@@ -160,17 +164,17 @@ If they are not commented, fix them:
 Restart-Service sshd
 ```
 
-Test key-based login from your local machine:
+Testa nyckelbaserad inloggning från din lokala maskin:
 
 ```bash
 ssh -i ~/.ssh/your-key.pem administrator@<server-ip>
 ```
 
-Once you are in and have confirmed the key works, disable password authentication.
+När du är inne och har bekräftat att nyckeln fungerar, stäng av lösenordsautentisering.
 
-### Disable password login over SSH
+### Stäng av lösenordsinloggning via SSH
 
-Back on the Windows server (now connected with your key):
+Tillbaka på Windows-servern, nu ansluten med din nyckel:
 
 ```powershell
 (Get-Content "C:\ProgramData\ssh\sshd_config") `
@@ -181,19 +185,19 @@ Back on the Windows server (now connected with your key):
 Restart-Service sshd
 ```
 
-Verify that password login is now rejected by opening a second terminal and trying without the key:
+Verifiera att lösenordsinloggning nu nekas genom att öppna en andra terminal och försöka utan nyckeln:
 
 ```bash
 ssh administrator@<server-ip>
 ```
 
-You should get `Permission denied (publickey)`, that is the expected result. From this point on, only key holders can log in over SSH.
+Du ska få `Permission denied (publickey)`, vilket är det förväntade resultatet. Från och med nu kan bara nyckelinnehavare logga in via SSH.
 
-You can also tighten the Security Group rule now if you want: since Ansible will be connecting from a known host, you can restrict port 22 to just that machine instead of your workstation IP.
+Du kan också skärpa Security Group-regeln nu om du vill: eftersom Ansible ansluter från en känd host kan du begränsa port 22 till just den maskinen i stället för din arbetsstations IP.
 
 ---
 
-## Step 3 — Install Ansible
+## Steg 3 - Installera Ansible
 
 ### macOS
 
@@ -212,7 +216,7 @@ sudo apt install -y ansible
 pip3 install pywinrm --break-system-packages
 ```
 
-Verify:
+Verifiera:
 
 ```bash
 ansible --version
@@ -220,16 +224,16 @@ ansible --version
 
 ---
 
-## Step 4 — Create the Inventory File
+## Steg 4 - Skapa inventory-filen
 
-Clone or navigate to your `ansible-windows` project directory:
+Klona eller gå till din projektkatalog för `ansible-windows`:
 
 ```bash
 mkdir -p ~/ansible-windows
 cd ~/ansible-windows
 ```
 
-Create `inventory.ini`:
+Skapa `inventory.ini`:
 
 ```ini
 [windows]
@@ -242,17 +246,17 @@ ansible_shell_type=powershell
 ansible_ssh_private_key_file=~/.ssh/your-key.pem
 ```
 
-Replace `<your-server-ip>` with the instance's IP address and update the path to your SSH private key.
+Ersätt `<your-server-ip>` med instansens IP-adress och uppdatera sökvägen till din privata SSH-nyckel.
 
-### Verify connectivity
+### Verifiera anslutning
 
-Before running the hardening playbook, confirm Ansible can reach the host:
+Innan du kör härdnings-playbooken, bekräfta att Ansible når hosten:
 
 ```bash
 ansible windows -i inventory.ini -m ansible.windows.win_ping
 ```
 
-Expected output:
+Förväntad output:
 
 ```json
 192.168.x.x | SUCCESS => {
@@ -261,86 +265,86 @@ Expected output:
 }
 ```
 
-If this fails, check that:
-- The SSH key matches what you added to `authorized_keys`
-- The `sshd` service is running on the Windows host
-- Your OpenStack Security Group allows TCP port 22 from your IP
+Om detta misslyckas, kontrollera att:
+- SSH-nyckeln matchar det du lade till i `authorized_keys`
+- `sshd`-tjänsten kör på Windows-hosten
+- din OpenStack Security Group tillåter TCP-port 22 från din IP
 
 ---
 
-## Step 5 — Run the Hardening Playbook
+## Steg 5 - Kör härdnings-playbooken
 
-The `windows_baseline.yml` playbook applies a comprehensive security baseline in nine steps:
+Playbooken `windows_baseline.yml` applicerar en bred säkerhetsbaslinje i elva steg:
 
-| Step | What it does |
+| Steg | Vad det gör |
 |---|---|
-| **1. Windows Update** | Installs all security and critical updates, reboots if required |
-| **2. Services** | Disables dangerous/unnecessary services (Telnet, FTP, Remote Registry, Xbox, Print Spooler, etc.) |
-| **3. SMB hardening** | Disables SMBv1, disables compression (CVE-2020-0796 mitigation), requires SMB signing |
-| **4. Registry hardening** | Forces NTLMv2, disables LM hash storage, disables WDigest, enables LSA protection and UAC |
-| **5. Audit policy** | Enables logging for logon events, account management, privilege use, and process creation |
-| **6. Password policy** | Minimum 14 characters, 90-day expiry, lockout after 5 failed attempts |
-| **7. Windows Defender** | Starts the Defender service, enables real-time protection, updates signatures |
-| **8. TLS hardening** | Disables SSL 2.0/3.0 and TLS 1.0/1.1, enables TLS 1.2 and TLS 1.3 |
-| **9. PowerShell logging** | Enables script block logging and module logging — all PowerShell activity is written to the event log |
-| **10. Event log sizing** | Increases Security log to ~192 MB, System and Application logs to ~32 MB each |
-| **11. Final reboot** | Reboots to apply all changes |
+| **1. Windows Update** | Installerar alla säkerhets- och kritiska uppdateringar, startar om vid behov |
+| **2. Tjänster** | Stänger av farliga eller onödiga tjänster som Telnet, FTP, Remote Registry, Xbox, Print Spooler med flera |
+| **3. SMB-härdning** | Stänger av SMBv1, stänger av komprimering som mitigation för CVE-2020-0796 och kräver SMB-signering |
+| **4. Registry-härdning** | Tvingar NTLMv2, stänger av LM hash-lagring, stänger av WDigest och aktiverar LSA-skydd och UAC |
+| **5. Audit policy** | Aktiverar loggning för inloggningar, kontohantering, privilegieanvändning och processskapande |
+| **6. Lösenordspolicy** | Minst 14 tecken, 90 dagars giltighetstid och låsning efter 5 misslyckade försök |
+| **7. Windows Defender** | Startar Defender-tjänsten, aktiverar realtidsskydd och uppdaterar signaturer |
+| **8. TLS-härdning** | Stänger av SSL 2.0/3.0 och TLS 1.0/1.1, aktiverar TLS 1.2 och TLS 1.3 |
+| **9. PowerShell-loggning** | Aktiverar script block logging och module logging, så att all PowerShell-aktivitet skrivs till eventloggen |
+| **10. Storlek på eventloggar** | Ökar Security-loggen till cirka 192 MB och System/Application till cirka 32 MB vardera |
+| **11. Slutomstart** | Startar om för att applicera alla ändringar |
 
-{{% note "No Firewall" %}}
-Windows Firewall is disabled on this platform. Network-level access control is handled entirely by OpenStack Security Groups.
+{{% note "Ingen brandvägg" %}}
+Windows Firewall är avstängd på den här plattformen. Åtkomstkontroll på nätverksnivå hanteras helt av OpenStack Security Groups.
 {{% /note %}}
 
-### Run it
+### Kör den
 
 ```bash
 cd ~/ansible-windows
 ansible-playbook -i inventory.ini windows_baseline.yml
 ```
 
-### Useful options
+### Användbara alternativ
 
 ```bash
-# Verbose output, good for troubleshooting
+# Utförligare output, bra för felsökning
 ansible-playbook -i inventory.ini windows_baseline.yml -v
 
-# Maximum debug output
+# Maximal debug-output
 ansible-playbook -i inventory.ini windows_baseline.yml -vvv
 
-# Dry run, see what would change without making changes
+# Torrkörning, visa vad som skulle ändras utan att göra ändringar
 ansible-playbook -i inventory.ini windows_baseline.yml --check
 ```
 
-### Expected output
+### Förväntad output
 
-A successful run ends with a PLAY RECAP like this:
+En lyckad körning avslutas med en PLAY RECAP som denna:
 
 ```
 PLAY RECAP *******************************************************************
 192.168.x.x    : ok=28   changed=15   unreachable=0    failed=0    skipped=2
 ```
 
-- `ok` — tasks that ran without error
-- `changed` — tasks that actually modified something
-- `skipped` — tasks skipped (e.g., services not installed on this image)
-- `failed` — must be **0** for a clean run
+- `ok` - uppgifter som kördes utan fel
+- `changed` - uppgifter som faktiskt ändrade något
+- `skipped` - uppgifter som hoppades över, till exempel tjänster som inte finns i avbilden
+- `failed` - måste vara **0** för en ren körning
 
 ---
 
-## Troubleshooting
+## Felsökning
 
-| Problem | Solution |
+| Problem | Lösning |
 |---|---|
-| `win_ping` fails | Check that the SSH key is correct and `sshd` is running on the server |
-| `WinDefend` Access Denied | Defender may be policy-controlled. The playbook uses `ignore_errors` for this task |
-| Service not found | Normal — the playbook checks whether a service exists before attempting to stop it |
-| TLS changes not applying | Requires reboot — the playbook performs this automatically at the end |
-| `rc=1` on PowerShell tasks | Check `stderr` in the output — often an unexpected exit code from a PS command |
+| `win_ping` misslyckas | Kontrollera att SSH-nyckeln är korrekt och att `sshd` kör på servern |
+| `WinDefend` Access Denied | Defender kan vara policystyrt. Playbooken använder `ignore_errors` för den uppgiften |
+| Tjänst saknas | Normalt - playbooken kontrollerar om en tjänst finns innan den försöker stoppa den |
+| TLS-ändringar slår inte igenom | Kräver omstart - playbooken gör detta automatiskt i slutet |
+| `rc=1` på PowerShell-uppgifter | Kontrollera `stderr` i outputen, ofta handlar det om en oväntad exit code från ett PowerShell-kommando |
 
 ---
 
-## The Full Picture
+## Hela flödet
 
-Here is the complete flow, from zero to hardened:
+Här är hela flödet, från tom instans till härdad server:
 
 ```
 openstack server create --user-data bootstrap.ps1
@@ -375,13 +379,13 @@ The entire process, from a fresh instance to a hardened, patched, and auditable 
 
 ---
 
-## Going Further
+## Gå vidare
 
-The playbook in this guide covers a solid general-purpose baseline, but if you need to meet a specific compliance standard such as CIS Benchmark or DISA STIG, take a look at [Ansible Lockdown](https://github.com/ansible-lockdown). They maintain ready-made Ansible roles for Windows Server 2016, 2019, and 2022 that implement hundreds of controls across both CIS and STIG frameworks, with granular tagging so you can apply only the levels or categories relevant to your environment.
+Playbooken i den här guiden täcker en stabil generell baslinje. Om du behöver möta en specifik efterlevnadsstandard, till exempel CIS Benchmark eller DISA STIG, kan du titta på [Ansible Lockdown](https://github.com/ansible-lockdown). De underhåller färdiga Ansible-roller för Windows Server 2016, 2019 och 2022 som implementerar hundratals kontroller från både CIS- och STIG-ramverk, med granulär taggning så att du kan applicera just de nivåer eller kategorier som är relevanta för din miljö.
 
 ---
 
-## Appendix — windows_baseline.yml
+## Appendix - windows_baseline.yml
 
 ```yaml
 ---

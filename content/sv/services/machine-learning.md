@@ -4,6 +4,7 @@ toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
 language: "sv"
 cardtitle: "AI & ML"
+megamenulisttitle: "GPU (AI/ML)"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
 cardorder: "2"
@@ -16,7 +17,7 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakta Safespring"
-sidebarlinkurl2: "/contact"
+sidebarlinkurl2: "/en/contact"
 sidebarimage: "safespring-daniel.webp"
 sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
@@ -47,12 +48,13 @@ Genom att utnyttja Safespring molntjänst i kombination med FEDns federerade mas
 
 {{< distance >}}
 
-{{< horisontal-card
-image="/img/card/safespring-scaleut_use-case-ebba.webp"
-cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data"
-link="/services/case/scaleout/"
-linktext="Läs Use Case"
-text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
+{{< horisontal-card 
+    image="/img/card/safespring-scaleut_use-case-ebba.webp" 
+    cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data" 
+    link="/tjanster/case/scaleout/" 
+    linktext="Läs Use Case" 
+    text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" 
+>}}
 
 {{< distance >}}
 

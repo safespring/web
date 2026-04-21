@@ -3,11 +3,9 @@ title: "Safespring Infrastructure Service Catalog"
 intro: "Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge"
 date: 2020-07-06T09:42:10+02:00
 draft: false
-section: "Safespring tjenester"
 language: "nb"
-aliases:
-  - /no/tjenester/
-slug: "tjenester"
+section: "Safespring tjenester"
+Language: "No"
 ---
 
 <div class="ingress"><p>Med skybasert infrastruktur som en tjeneste kan du skalere infrastrukturen opp eller ned etter behov. Levert fra sikre datasentre i Norge.</p></div>
@@ -19,6 +17,6 @@ Safespring leverer en lokalt basert sky bygget for morgendagens apper. Det gjør
 
 <div class="flexcontainer-shortcode" style="">
 
-{{< services "nb" >}}
+{{< services "No" >}}
 
 </div>

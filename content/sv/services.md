@@ -10,9 +10,6 @@ socialmedia: "safespring-tjanster.jpg"
 nolist: "x"
 fullwidth: ""
 nosidebar: ""
-aliases:
-  - /tjanster/
-slug: "tjanster"
 ---
 
 {{< services >}}
@@ -33,7 +30,7 @@ Safespring lever upp till lokala lagar och regler kring datalagring såsom GDPR 
 Genom självbetjäning kan din miljö i Safespring skalas upp och ned efter era behov.
 {{< /ingress >}}
 
-I Safespring skalar du enkelt upp och ner och betalar bara för det ni använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
+I Safespring skalar du enkelt upp och ner och betalar bara för det ni  använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
 
 ### En miljö i Safespring ger:
 

@@ -17,11 +17,11 @@ aliases:
 ---
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-docker" text="Cloud-native Kubernetes" link="" color="#32cd32">}}
-{{< icon-block icon="fa-kit fa-automation" text="Powerful automation" link="" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-expert" text="Expertise at your service" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-kit fa-server" text="High-performance infrastructure" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-shield" text="Compliant Kubernetes" link="" color="#FA690F">}}
+    {{< icon-block icon="fa-solid fa-docker" text="Cloud-native Kubernetes" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-kit fa-automation" text="Powerful automation" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-kit fa-expert" text="Expertise at your service" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-kit fa-server" text="High-performance infrastructure" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-shield" text="Compliant Kubernetes" link="" color="#FA690F">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}

@@ -1,39 +1,8 @@
 <div class="flexcontainer-three">
-  {{ $language := .Get 0 }}
-  {{ if eq $language "en" }}
-    {{ range (where
-      $.Site.RegularPages "Section" "en").ByParam "cardorder"
-    }}
-      {{ if isset .Params
-        "cardorder"
-      }}
-        {{ .Render "li-index" }}
+  {{ range (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
+    {{ if isset .Params "cardorder" }}
+      {{ .Render "li-index"}}
       {{ else }}
-      {{ end }}
-    {{ end }}
-  {{ else
-    if eq $language "nb"
-  }}
-    {{ range (where $.Site.RegularPages "Section"
-      "no").ByParam "cardorder"
-    }}
-      {{ if isset .Params "cardorder" }}
-        {{ .Render
-          "li-index"
-        }}
-      {{ else }}
-      {{ end }}
-    {{ end }}
-  {{ else }}
-    {{ range (where
-      $.Site.RegularPages "Section" "tjanster").ByParam "cardorder"
-    }}
-      {{ if isset
-        .Params "cardorder"
-      }}
-        {{ .Render "li-index" }}
-      {{ else }}
-      {{ end }}
     {{ end }}
   {{ end }}
 </div>

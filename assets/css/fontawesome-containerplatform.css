@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-weight: var(--fa-style, 900);
+}
+
+.fas,
+.fa-solid,
+.fa {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+  font-style: normal;
+  line-height: 1;
+}
+
+.fas:before,
+.fa-solid:before,
+.fa:before {
+  content: var(--fa);
+}
+
+.fa-classic,
+.fas,
+.fa-solid {
+  font-family: "Font Awesome 6 Pro";
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+.fa-arrow-right {
+  --fa: "\f061";
+}
+
+.fa-arrow-up-right-dots {
+  --fa: "\e4b7";
+}
+
+.fa-at {
+  --fa: "@";
+}
+
+.fa-book-open {
+  --fa: "\f518";
+}
+
+.fa-chart-line {
+  --fa: "\f201";
+}
+
+.fa-circle-info {
+  --fa: "\f05a";
+}
+
+.fa-container-storage {
+  --fa: "\f4b7";
+}
+
+.fa-hard-drive {
+  --fa: "\f0a0";
+}
+
+.fa-layer-group {
+  --fa: "\f5fd";
+}
+
+.fa-leaf {
+  --fa: "\f06c";
+}
+
+.fa-link-slash {
+  --fa: "\f127";
+}
+
+.fa-list-check {
+  --fa: "\f0ae";
+}
+
+.fa-list-ul {
+  --fa: "\f0ca";
+}
+
+.fa-lock {
+  --fa: "\f023";
+}
+
+.fa-people-arrows {
+  --fa: "\e068";
+}
+
+.fa-phone {
+  --fa: "\f095";
+}
+
+.fa-rocket {
+  --fa: "\f135";
+}
+
+.fa-route {
+  --fa: "\f4d7";
+}
+
+.fa-server {
+  --fa: "\f233";
+}
+
+.fa-shield-check {
+  --fa: "\f2f7";
+}
+
+.fa-sliders {
+  --fa: "\f1de";
+}
+
+.fa-table-columns {
+  --fa: "\f0db";
+}
+
+.fa-xmark {
+  --fa: "\f00d";
+}
