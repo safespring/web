@@ -191,7 +191,7 @@ read_more = "Les mer"
 copy_code = "Kopier kode"
 copied = "Kopiert!"
 error = "Feil"
-logo_alt = "Safespring logotyp"
+logo_alt = "Safespring logo"
 social_linkedin_alt = "Safespring Linkedin"
 social_x_alt = "Safespring X"
 social_github_alt = "Safespring GitHub"
@@ -200,12 +200,12 @@ social_facebook_alt = "Safespring Facebook"
 
 [header]
 toggle_menu = "Veksle meny"
-logo_alt = "Safespring logotyp"
+logo_alt = "Safespring logo"
 
 [webinar_sidebar]
 title = "Fortsett å se neste webinar"
 desc = "Mange selskaper og myndigheter velger å bygge sine sikre skytjenester på Safesprings plattform. Ta del i flere informative webinarer."
-logo_alt = "Safespring Logotyp"
+logo_alt = "Safespring logo"
 
 [filter]
 all = "Alle"

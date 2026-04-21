@@ -74,13 +74,57 @@ This is also where digital sovereignty becomes practical rather than abstract. T
 
 If you want the technical detail behind the service, these are the most useful next reads:
 
-- [What you get on day one](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one) for the documented platform defaults
-- [The service boundary in practice](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice) for the responsibility split
-- [Getting started in the official docs](https://docs.safespring.com/kubernetes/getting-started/) for provisioning, control plane layouts, and supported components
-- [Traffic management](https://docs.safespring.com/kubernetes/manage-traffic/) for Gateway API and Traefik-related traffic patterns
-- [Portal overview](https://docs.safespring.com/kubernetes/portal-overview/) for the self-service workflow and cluster access
-- [Persistent volumes](https://docs.safespring.com/kubernetes/persistent-volumes/) for storage behavior and classes
-- [Logging and monitoring](https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/) for the current observability boundary
+{{< manual-document-table >}}
+  {{< manual-document-row
+    title="What you get on day one"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
+    icon="fa-solid fa-list-check"
+    label="Blog"
+    description="The documented platform defaults from the start."
+  >}}
+  {{< manual-document-row
+    title="The service boundary in practice"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice"
+    icon="fa-solid fa-people-arrows"
+    label="Blog"
+    description="How responsibilities and operational boundaries are split between Safespring and your team."
+  >}}
+  {{< manual-document-row
+    title="Getting started in the official docs"
+    href="https://docs.safespring.com/kubernetes/getting-started/"
+    icon="fa-solid fa-book-open"
+    label="Docs"
+    description="Provisioning, control plane layouts, and component support."
+  >}}
+  {{< manual-document-row
+    title="Traffic management"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik, and how traffic flows are handled in the platform."
+  >}}
+  {{< manual-document-row
+    title="Portal overview"
+    href="https://docs.safespring.com/kubernetes/portal-overview/"
+    icon="fa-solid fa-table-columns"
+    label="Guide"
+    description="The self-service flow, cluster overview, and how access works in the portal."
+  >}}
+  {{< manual-document-row
+    title="Persistent volumes"
+    href="https://docs.safespring.com/kubernetes/persistent-volumes/"
+    icon="fa-solid fa-hard-drive"
+    label="Guide"
+    description="Storage behavior, volume types, and available classes."
+  >}}
+  {{< manual-document-row
+    title="Logging and monitoring"
+    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    icon="fa-solid fa-chart-line"
+    label="Guide"
+    description="The current observability boundary for logs, metrics, and follow-up."
+  >}}
+{{< /manual-document-table >}}
 
 {{< distance >}}
 
@@ -89,6 +133,6 @@ If you want the technical detail behind the service, these are the most useful n
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Contact us" %}}
 Do you have questions about how this service can support your modernization, governance, sustainability, or digital sovereignty goals? Contact us for an initial discussion about your needs, target state, and next steps.
 
-{{< inline "Call" >}} [+46 855 10 73 70](tel:+46855107370)  
+{{< inline "Call" >}} [+46 76-629 25 02](tel:+46766292502)  
 {{< inline "Mail" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}

@@ -34,7 +34,7 @@ slug: "containerplattform"
 Safespring On-demand Kubernetes er en administrert Kubernetes-tjeneste for å kjøre containeriserte applikasjoner på Safesprings infrastruktur, med selvbetjent provisjonering og administrert kontrollplan.
 {{< /ingress >}}
 
-Tjenesten er utformet for virksomheter som trenger sterkere kontroll over dataplacering, jurisdiksjon og operative grenser, inkludert miljøer med krav til GDPR, compliance og digital suverenitet.
+Tjenesten er utformet for virksomheter som trenger sterkere kontroll over dataplassering, jurisdiksjon og operative grenser, inkludert miljøer med krav til GDPR, compliance og digital suverenitet.
 
 Den praktiske verdien er at ingeniørteam får en plattform som er klar til bruk, samtidig som virksomheten beholder kontroll over jurisdiksjon, sikkerhetsprofil og langsiktig plattformretning uten å måtte eie hvert lag av plattformdriften internt.
 
@@ -69,19 +69,63 @@ Arkitekturen er utformet for å gi dere:
 {{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Fundamentet er utformet for lavere operativ risiko" description="Talos Linux gir et immutabelt, Kubernetes-fokusert nodefundament, mens OIDC-basert tilgang, moderne nettverkshåndtering og en tydelig tjenestegrense gjør plattformen enklere å styre og enklere å forstå." >}}
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="Tjenesten støtter reelle workloads, ikke bare clusteropprettelse" description="Persistente volumer via Cinder CSI, trafikkhåndtering via Cilium Gateway API og Traefik-støtte samt GPU-kapable workernoder betyr at plattformen kan støtte produksjonsapplikasjoner med ulike kjøremønstre." >}}
 
-Dette er også stedet der digital suverenitet blir praktisk i stedet for abstrakt. Plattformen leveres fra Safesprings datasentre i Sverige og Norge, drives med 100% fornybar energi, og er bygget for virksomheter som ønsker sterkere kontroll over jurisdiksjon, dataplacering og langsiktig uavhengighet fra hyperscaler-låsning.
+Dette er også stedet der digital suverenitet blir praktisk i stedet for abstrakt. Plattformen leveres fra Safesprings datasentre i Sverige og Norge, drives med 100% fornybar energi, og er bygget for virksomheter som ønsker sterkere kontroll over jurisdiksjon, dataplassering og langsiktig uavhengighet fra hyperscaler-låsning.
 
 ## Fordyp deg når du vil ha detaljene
 
 Hvis du vil forstå tjenesten mer teknisk, er dette de mest nyttige neste lesningene:
 
-- [Hva du får fra dag én](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one) for de dokumenterte plattformstandardene
-- [Tjenestegrensen i praksis](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice) for ansvarsdelingen
-- [Kom i gang i den offisielle dokumentasjonen](https://docs.safespring.com/kubernetes/getting-started/) for provisjonering, kontrollplanoppsett og komponentstøtte
-- [Trafikkhåndtering](https://docs.safespring.com/kubernetes/manage-traffic/) for Gateway API og Traefik-relaterte trafikkmønstre
-- [Portaloversikt](https://docs.safespring.com/kubernetes/portal-overview/) for selvbetjeningsflyten og clustertilgang
-- [Persistente volumer](https://docs.safespring.com/kubernetes/persistent-volumes/) for lagringsatferd og klasser
-- [Logging og overvåking](https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/) for dagens observability-grense
+{{< manual-document-table >}}
+  {{< manual-document-row
+    title="Hva du får fra dag én"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
+    icon="fa-solid fa-list-check"
+    label="Blogg"
+    description="De dokumenterte plattformstandardene fra start."
+  >}}
+  {{< manual-document-row
+    title="Tjenestegrensen i praksis"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice"
+    icon="fa-solid fa-people-arrows"
+    label="Blogg"
+    description="Hvordan ansvar og operative grenser er fordelt mellom Safespring og teamet deres."
+  >}}
+  {{< manual-document-row
+    title="Kom i gang i den offisielle dokumentasjonen"
+    href="https://docs.safespring.com/kubernetes/getting-started/"
+    icon="fa-solid fa-book-open"
+    label="Docs"
+    description="Provisjonering, kontrollplanoppsett og komponentstøtte."
+  >}}
+  {{< manual-document-row
+    title="Trafikkhåndtering"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik og hvordan trafikkflyt håndteres i plattformen."
+  >}}
+  {{< manual-document-row
+    title="Portaloversikt"
+    href="https://docs.safespring.com/kubernetes/portal-overview/"
+    icon="fa-solid fa-table-columns"
+    label="Guide"
+    description="Selvbetjeningsflyten, clusteroversikt og hvordan tilgang fungerer i portalen."
+  >}}
+  {{< manual-document-row
+    title="Persistente volumer"
+    href="https://docs.safespring.com/kubernetes/persistent-volumes/"
+    icon="fa-solid fa-hard-drive"
+    label="Guide"
+    description="Lagringsatferd, volumtyper og tilgjengelige klasser."
+  >}}
+  {{< manual-document-row
+    title="Logging og overvåking"
+    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    icon="fa-solid fa-chart-line"
+    label="Guide"
+    description="Den nåværende observability-grensen for logger, metrics og oppfølging."
+  >}}
+{{< /manual-document-table >}}
 
 {{< distance >}}
 
