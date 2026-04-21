@@ -1286,7 +1286,7 @@ Viser en videospiller, der understøtter HLS-strømme. Bruger Hls.js til at init
 ```
 ### Eksempler
 ```
-{{< streamed-video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" >}}
+{{< video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" >}}
 ```
 ### Renderet resultat
 

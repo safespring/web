@@ -30,7 +30,7 @@ I løbet af de seneste tre måneder har vi arbejdet på et nyt værktøj, der sk
 
 {{< distance >}}
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-open-infra-days-2024/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-open-infra-days-2024/master.m3u8" >}}
 
 {{< icon-block-horisontal icon="fa-solid fa-download" color="#3C9BCD" description="Klik her for at downloade præsentationen som PDF." text="Download præsentation" link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" >}}
 

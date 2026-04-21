@@ -16,7 +16,7 @@ aliases:
   - /blogg/tidslinje
   - /blogg/2018/2018-08-tidslinje/
 ---
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
 
 {{< ingress >}}  
 En sammenfatning af begivenhederne, der førte frem til GDPR og CLOUD Act, som i dag er to af de gældende lovgivninger for blandt andet beskyttelse af personoplysninger og udlevering af data.  

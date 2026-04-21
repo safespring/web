@@ -1413,7 +1413,7 @@ Visar en videospelare som stödjer HLS-strömmar. Använder Hls.js för att init
 ### Exempel
 
 ```
-{{< streamed-video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" >}}
+{{< video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" >}}
 ```
 
 ### Renderat resultat

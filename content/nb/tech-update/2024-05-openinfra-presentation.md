@@ -30,7 +30,7 @@ De siste tre månedene har vi jobbet med et nytt verktøy som skal styrke selvbe
 
 {{< distance >}}
 
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-open-infra-days-2024/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-open-infra-days-2024/master.m3u8" >}}
 
 {{< icon-block-horisontal icon="fa-solid fa-download" color="#3C9BCD" description="Klikk her for å laste ned presentasjonen som PDF." text="Last ned presentasjonen" link="/publications/2024-safespring-nats-and-huma-presentation-openinfra-gothenburg.pdf" >}}
 

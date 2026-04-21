@@ -16,7 +16,7 @@ aliases:
   - /blogg/tidslinje
   - /blogg/2018/2018-08-tidslinje/
 ---
-{{< streamed-video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/eu-us-timeline-1995-2018/master.m3u8" >}}
 
 {{< ingress >}}  
 A summary of the events that led up to the GDPR and the CLOUD Act, which today are two of the applicable laws governing, among other things, personal data protection and disclosure of data.  
