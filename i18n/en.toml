@@ -79,6 +79,7 @@ datacenters_description = "Our data centers meet high demands for reliability an
 datacenters_button = "About our data centers"
 about_us_button = "About Safespring"
 gdpr_badge_alt = "GDPR compliant badge"
+platform_visual_alt = "Safespring offers European cloud services with local data centers, no lock-in, local support, API automation, and GDPR compliance."
 video_label_sv = "Swedish"
 video_label_en = "English"
 video_label_no = "Norwegian"

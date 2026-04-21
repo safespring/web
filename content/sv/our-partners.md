@@ -49,13 +49,16 @@ Jag är affärsutvecklare i Sverige och hjälper dig att använda våra tjänste
 
 ## Några av våra partners
 
+<p class="partner-grid-intro">Vi samarbetar med specialister inom öppna plattformar, säker datahantering och nordisk digital infrastruktur.</p>
+
 <div class="partner-grid">
-<a href="https://nextcloud.com"><div class="partner-container"><img style="max-height:70px;" class="partnerlogo" src="/images/partners/safespring_partners_nextcloud.svg"></div></a><a href="https://elastisys.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_elastisys.svg"></div></a>
-<a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_severalnines.svg"></div></a>
-<a href="https://www.piql.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_piql.png"></div></a>
-<a href="https://www.scaleoutsystems.com/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_scaleout-systems.svg"></div></a>
-<a href="https://www.arkivit.se/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_arkivit.png"></div></a>
-<a href="https://www.cristie.dk/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_cristie-nordic.webp"></div></a>
-<a href="https://www.sunet.se/"><div class="partner-container"><img class="partnerlogo" src="/images/partners/safespring_partners_sunet.png"></div></a>
-<a href="https://sikt.no"><div class="partner-container"><img class="partnerlogo" src="/images/partners/sikt.svg"></div></a>
+<a class="partner-container" href="https://nextcloud.com" aria-label="Besök Nextcloud"><img class="partnerlogo" src="/images/partners/safespring_partners_nextcloud.svg" alt="Nextcloud"></a>
+<a class="partner-container" href="https://elastisys.com/" aria-label="Besök Elastisys"><img class="partnerlogo" src="/images/partners/safespring_partners_elastisys.svg" alt="Elastisys"></a>
+<a class="partner-container" href="https://severalnines.com/" aria-label="Besök Severalnines"><img class="partnerlogo" src="/images/partners/safespring_partners_severalnines.svg" alt="Severalnines"></a>
+<a class="partner-container" href="https://www.piql.com/" aria-label="Besök Piql"><img class="partnerlogo" src="/images/partners/safespring_partners_piql.png" alt="Piql"></a>
+<a class="partner-container" href="https://www.scaleoutsystems.com/" aria-label="Besök Scaleout Systems"><img class="partnerlogo" src="/images/partners/safespring_partners_scaleout-systems.svg" alt="Scaleout Systems"></a>
+<a class="partner-container" href="https://www.arkivit.se/" aria-label="Besök ArkivIT"><img class="partnerlogo" src="/images/partners/safespring_partners_arkivit.png" alt="ArkivIT"></a>
+<a class="partner-container" href="https://www.cristie.dk/" aria-label="Besök Cristie Nordic"><img class="partnerlogo" src="/images/partners/safespring_partners_cristie-nordic.webp" alt="Cristie Nordic"></a>
+<a class="partner-container" href="https://www.sunet.se/" aria-label="Besök Sunet"><img class="partnerlogo" src="/images/partners/safespring_partners_sunet.png" alt="Sunet"></a>
+<a class="partner-container" href="https://sikt.no" aria-label="Besök Sikt"><img class="partnerlogo" src="/images/partners/sikt.svg" alt="Sikt"></a>
 </div>
