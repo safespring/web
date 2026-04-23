@@ -6,6 +6,30 @@
     <title>Color Library</title>
     <link rel="icon" href="data:," />
     <style>
+      @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("/fonts/montserrat-400.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("/fonts/montserrat-700.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Safespring Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("/fonts/Safespring-Mono-Regular.woff2") format("woff2");
+      }
+
       :root {
         color-scheme: light;
         --bg: #ffffff;
@@ -27,7 +51,7 @@
         background: var(--bg);
         color: var(--ink);
         font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", sans-serif;
       }
 
@@ -122,7 +146,7 @@
       .arc-label text {
         fill: var(--token-label, #313b40);
         font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", sans-serif;
         font-size: 18px;
         font-weight: 800;
@@ -241,7 +265,7 @@
       .copy-kind {
         color: var(--muted);
         font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", sans-serif;
         font-size: 0.56rem;
         font-weight: 800;
@@ -251,7 +275,7 @@
       }
 
       .copy-value {
-        font-family: "Aptos Mono", "SFMono-Regular", Consolas, monospace;
+        font-family: "Intel One Mono", "Safespring Mono", "SFMono-Regular", Consolas, monospace;
         font-size: 0.7rem;
         line-height: 1;
       }
