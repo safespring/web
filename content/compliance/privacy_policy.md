@@ -93,12 +93,14 @@ We may process:
 - Download/click behaviour
 - Error logs
 - Session interaction data (if applicable)
+
 Where possible, IP addresses are truncated or anonymised immediately upon collection.
 
 ### 4.3 Legal Basis (GDPR Art. 6)
 We rely on:
 - Art. 6(1)(f) — Legitimate interest (analytics, security monitoring)
 - Art. 6(1)(a) — Consent (where required for non-essential cookies or tracking)
+
 A documented Legitimate Interest Assessment (LIA) is maintained where required.
 
 ### 4.4 Retention
