@@ -242,6 +242,7 @@
       }
 
       .copy-button {
+        position: relative;
         display: grid;
         align-content: center;
         gap: 4px;
@@ -262,6 +263,10 @@
           transform 140ms ease;
       }
 
+      .copy-button.is-copied {
+        color: var(--accent);
+      }
+
       .copy-kind {
         color: var(--muted);
         font-family:
@@ -272,6 +277,11 @@
         letter-spacing: 0.06em;
         line-height: 1;
         text-transform: uppercase;
+        transition: color 140ms ease;
+      }
+
+      .copy-button.is-copied .copy-kind {
+        color: var(--accent);
       }
 
       .copy-value {
@@ -280,10 +290,54 @@
         line-height: 1;
       }
 
+      .copy-feedback {
+        position: absolute;
+        top: -4px;
+        left: 3px;
+        z-index: 1;
+        padding: 3px 5px;
+        border: 1px solid rgba(25, 95, 140, 0.22);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.96);
+        color: var(--accent);
+        font-size: 0.52rem;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        opacity: 0;
+        pointer-events: none;
+        text-transform: uppercase;
+        transform: translateY(-2px);
+        transition:
+          opacity 140ms ease,
+          transform 140ms ease;
+      }
+
+      .copy-button.is-copied .copy-feedback {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
       .copy-button:hover {
         color: var(--accent);
         background: transparent;
         transform: scale(1.06);
+      }
+
+      .dot.is-copied {
+        box-shadow: 0 0 0 4px rgba(25, 95, 140, 0.16);
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
 
       .code-hex {
@@ -377,6 +431,7 @@
       <main>
         <section class="palette-grid" id="paletteGrid" aria-label="Color library"></section>
       </main>
+      <div class="sr-only" id="copyStatus" aria-live="polite"></div>
     </div>
 
     <script>
@@ -421,6 +476,7 @@
       };
 
       const paletteGrid = document.querySelector("#paletteGrid");
+      const copyStatus = document.querySelector("#copyStatus");
 
       const tokens = Object.entries(palette.colors).flatMap(([family, variants]) =>
         Object.entries(variants).map(([variant, colors]) => {
@@ -643,6 +699,7 @@ CMYK ${tone.cmyk.c}%, ${tone.cmyk.m}%, ${tone.cmyk.y}%, ${tone.cmyk.k}%`;
             <button class="copy-button code-${kind}" type="button" data-copy="${escapeAttr(value)}" title="Copy ${escapeAttr(value)}">
               <span class="copy-kind">${copyLabel}</span>
               <span class="copy-value">${label}</span>
+              <span class="copy-feedback" aria-hidden="true">Copied</span>
             </button>
           </td>
         `;
@@ -656,14 +713,41 @@ CMYK ${tone.cmyk.c}%, ${tone.cmyk.m}%, ${tone.cmyk.y}%, ${tone.cmyk.k}%`;
           .replace(/>/g, "&gt;");
       }
 
+      async function writeClipboard(value) {
+        if (navigator.clipboard?.writeText && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+          return;
+        }
+
+        const textarea = document.createElement("textarea");
+        textarea.value = value;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.top = "-1000px";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        textarea.setSelectionRange(0, textarea.value.length);
+        const copied = document.execCommand("copy");
+        textarea.remove();
+        if (!copied) {
+          throw new Error("Copy failed");
+        }
+      }
+
       async function copyValue(button, value) {
-        await navigator.clipboard.writeText(value);
-        const old = button.textContent;
-        button.textContent = "Copied";
-        button.disabled = true;
-        setTimeout(() => {
-          button.textContent = old;
-          button.disabled = false;
+        await writeClipboard(value);
+        if (!button.dataset.copyTitle) {
+          button.dataset.copyTitle = button.title;
+        }
+        window.clearTimeout(button.copyResetTimer);
+        button.classList.add("is-copied");
+        button.title = "Copied";
+        copyStatus.textContent = `Copied ${value}`;
+        button.copyResetTimer = window.setTimeout(() => {
+          button.classList.remove("is-copied");
+          button.title = button.dataset.copyTitle;
         }, 850);
       }
 
@@ -672,7 +756,11 @@ CMYK ${tone.cmyk.c}%, ${tone.cmyk.m}%, ${tone.cmyk.y}%, ${tone.cmyk.k}%`;
         if (!copyTarget) {
           return;
         }
-        await copyValue(copyTarget, copyTarget.dataset.copy);
+        try {
+          await copyValue(copyTarget, copyTarget.dataset.copy);
+        } catch (error) {
+          copyStatus.textContent = "Could not copy";
+        }
       });
 
       render();
