@@ -248,6 +248,7 @@ Your personal data is generally only processed within the EU/EEA. In the event t
 | IssTech AB | Sweden | Backup Administration and Support | Sweden | Stored Internally |
 | Hailey HR | Finland, Sweden | ATS used to evaluate candidates | Sweden | [Hailey HR DPA](https://haileyhr.com/de/data-processing-agreement/) |
 | LinkedIn – Recruitment | USA, EU operations in Ireland | Used to link candidate CVs to ATS | USA | [LinkedIn DPA](https://www.linkedin.com/legal/l/dpa) |
+| Slack Technologies (optional) | USA, EU Operations | Communication tool | USA | [Slack Privacy Policy](https://slack.com/trust/privacy/privacy-policy) |
 
 ### Optional Use of Shared Slack Workspace
 
