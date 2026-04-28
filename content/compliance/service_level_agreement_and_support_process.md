@@ -85,7 +85,7 @@ The aggregate maximum number of Financial Credits to be issued by Safespring to 
 
 Downtime is defined as the actual time that a service or a product is not performing as agreed, and/or is not available to customer for normal use. Any period where the response time is noticeably slower than it would be in an optimized and fully operative technical environment, shall also be considered as Downtime.
 
-Unavailability for a service is measured from the service is interrupted, and until the service is accepting customer load. For Compute service, that means that a compute host is available when the instances that were running when the service became unavailable has been issued the boot command, or for a network interruption when they can recieve and send network traffic again. The customer is responsible for monitoring their own instances, and ensuring that their services is running after an interruption.
+Unavailability for a service is measured from the service is interrupted, and until the service is accepting customer load. For Compute service, that means that a compute host is available when the instances that were running when the service became unavailable has been issued the boot command, or for a network interruption when they can receive and send network traffic again. The customer is responsible for monitoring their own instances, and ensuring that their services are running after an interruption.
 
 Downtime is permitted in all agreed maintenance windows, provided however that Safespring has made reasonable efforts to limit the downtime during the agreed maintenance window. Safespring uses maintenance windows to maintain infrastructure platforms and the operational environment. Such maintenance windows shall be announced 5 working days in advance. One maintenance window per service/ month can be accepted, and each maintenance window shall be limited to as few hours as necessary, and shall be scheduled to such weeks/hours that has as little negative impact on Safespring and Customers businesses as possible.
 
@@ -143,7 +143,7 @@ for detailed template please see documention under chapter *status and support*:
 
 ### Customer support contact points
 
-For handling and resolution of incidents, E-mail is used for communications. E-mails sent to the support email address are automatically added to the ticket history for the incident.
+For handling and resolution of incidents, e-mail is used for communications. E-mails sent to the support e-mail address are automatically added to the ticket history for the incident.
 
 The Safespring support team is available 08-17 all workdays.
 
@@ -154,20 +154,20 @@ The Safespring support team is available 08-17 all workdays.
 -   **PHONE SWEDEN** **+46 8 551 073 74**  
     Used for critical incidents, 24/7 or escalations
 
-The Customer reports incidents to Safespring via email. Critical incidents shall be reported by phone in addition. The Customer applies severity level to the incident which determine further treatment of the incident.
+The Customer reports incidents to Safespring via e-mail. Critical incidents shall be reported by phone in addition. The Customer applies severity level to the incident which determine further treatment of the incident.
 
-If the incident is not solved within time limits or is in risk being exceeded, escalation routines will be initiated.
+If the incident is not solved within time limits or is in risk of being exceeded, escalation routines will be initiated.
 
 The escalation routines shall be initiated if:
 
 -   Customer has not received necessary feedback about the status of ongoing error correction within defined response time
 -   Incidents are not corrected or that solution time is not set within defined response time related to escalation level 3.
 
-Each party have the responsibility to perform escalation within its own organization.
+Each party has the responsibility to perform escalation within its own organization.
 
 ### Escalation level and contact information
 
-Each party have the responsibility to perform escalation within its own organization.
+Each party has the responsibility to perform escalation within its own organization.
 
 #### Escalation level ONE
 
@@ -244,7 +244,7 @@ In a coming software update.
     picture="rob.webp" 
     title="Head of Engineering" 
     name="Rob Haverkamp" 
-    phone="+31 637 17 46 61" 
+    phone="+31 637 17 46 61" 
     email="rob.haverkamp@safespring.com" 
 >}}
 

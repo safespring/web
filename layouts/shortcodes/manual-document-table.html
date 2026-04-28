@@ -1,5 +1,7 @@
 {{- .Inner -}}
 {{- $rows := .Scratch.Get "rows" | default (slice) -}}
+{{- $matomoAction := .Get "matomoAction" -}}
+{{- $matomoCategory := default "Navigation" (.Get "matomoCategory") -}}
 
 {{- if gt (len $rows) 0 -}}
 <div class="compliance-document-table compliance-document-table--manual">
@@ -8,8 +10,12 @@
     {{- $newtab := index $row "newtab" -}}
     {{- $target := cond $newtab "_blank" "_self" -}}
     {{- $rel := cond $newtab "noopener noreferrer" "" -}}
+    {{- $trackAttrs := "" -}}
+    {{- with $matomoAction -}}
+      {{- $trackAttrs = printf " data-matomo-category=%q data-matomo-action=%q data-matomo-name=%q" $matomoCategory . (index $row "title") -}}
+    {{- end -}}
     <div class="compliance-document-table__row">
-      <a class="compliance-document-table__link" href="{{ index $row "href" }}" aria-label="{{ index $row "title" }}" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}>
+      <a class="compliance-document-table__link" href="{{ index $row "href" }}" aria-label="{{ index $row "title" }}" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}{{ safeHTMLAttr $trackAttrs }}>
         <div class="compliance-document-table__main">
           <span class="compliance-document-table__file-icon" aria-hidden="true">
             <i class="{{ index $row "icon" }}"></i>
@@ -30,7 +36,7 @@
           </button>
         </div>
 
-        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}>
+        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}{{ safeHTMLAttr $trackAttrs }}>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
@@ -38,4 +44,22 @@
     {{- end -}}
   </div>
 </div>
+{{- with $matomoAction -}}
+<script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('.compliance-document-table--manual [data-matomo-action="{{ . }}"]');
+    if (!link) {
+      return;
+    }
+
+    var matomo = window._paq = window._paq || [];
+    matomo.push([
+      'trackEvent',
+      link.dataset.matomoCategory || 'Navigation',
+      link.dataset.matomoAction,
+      link.dataset.matomoName || link.textContent.replace(/\s+/g, ' ').trim()
+    ]);
+  });
+</script>
+{{- end -}}
 {{- end -}}

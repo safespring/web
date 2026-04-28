@@ -20,8 +20,11 @@ aliases:
 ## 1. Introduction
 Safespring provides infrastructure cloud services (the “Services”) to its customers and partners (the “Users”). This Acceptable Use Policy (“Policy”) sets out the rules governing the use of the Services. Users are responsible for configuring, operating, and maintaining their applications and systems in a secure manner. Users must ensure that their use of the Services complies with applicable laws and with any reasonable security instructions provided by Safespring. Users are responsible for all content and data processed, stored, or transmitted through the Services.
 
+Users shall ensure that all employees, consultants and other personnel who access or use the Services on the User’s behalf do so in accordance with this Acceptable Use Policy. Users are responsible for all content and data processed, stored, or transmitted through the Services.
+
 ## 2. Authorization
 Users must ensure that access to the Services is limited to authorized personnel. Access credentials are personal and may not be shared or transferred. Users are responsible for maintaining the confidentiality and security of authentication credentials and must implement appropriate measures to detect and respond to unauthorized access. Authorizations are valid only for the duration of the User’s agreement with Safespring and may be revoked if no longer required or if inactive for an extended period.
+
 Users are responsible for, and must inform its authorized personnel or authorized users to, keeping any and all passwords secure. Passwords or any other method of accessing the Services are personal and may not be shared. All Users must have effective routines to identify unauthorized access to the Services and/or compromised passwords or security and to minimize the impact of such incidents.
 
 ## 3. Using the Services
@@ -46,10 +49,9 @@ Users may not use or otherwise export or re-export the Services except as author
 
 ## 4. Safespring’s monitoring
 Safespring may monitor the Services to maintain their security, integrity, and performance. Such monitoring does not transfer responsibility for security to Safespring. Users remain solely responsible for the configuration and security of their applications and systems.If Safespring identifies a material security risk, it may notify the User and recommend corrective actions. If the User fails to address a significant security risk within a reasonable timeframe, Safespring reserves the right to take proportionate measures, including restricting access to affected services, to protect the overall integrity of the Services.
-## 5. Information obligation
 
+## 5. Information obligation
 Users must promptly notify Safespring of any actual or suspected breach of this Policy or security incident related to the Services. Users shall provide reasonable cooperation and assistance to investigate, mitigate, and remediate such incidents.
 
 ## 6. Enforcement / Suspension
 Safespring reserves the right to suspend or terminate access to the Services without prior notice if it reasonably determines that a User is in breach of this Policy or poses a risk to the security, integrity, or availability of the Services.
-
