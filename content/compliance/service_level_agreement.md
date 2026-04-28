@@ -37,8 +37,10 @@ service is measured independently on a calendar month basis.
 | **Object Storage (S3)** | **99.95%** |
 | **Backup Service** | **99.9%** |
 
-**Note:** Kubernetes SLO applies to the control plane only. Worker node
+{{% disclaimer title="Note" icon="fa-warning" %}}
+Kubernetes SLO applies to the control plane only. Worker node
 availability is governed by the underlying Compute SLO.
+{{% /disclaimer %}}
 
 ## 2. Latency Targets
 
