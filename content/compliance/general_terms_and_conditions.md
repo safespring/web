@@ -11,6 +11,15 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+outputs:
+  - HTML
+  - PRINT
+pdfcategory: "COMPLIANCE"
+pdfversion: "1.0"
+pdfpreparedby: "Safespring"
+pdfapprover: "Safespring"
+pdfclassification: "Public"
+downloadpdf: "/compliance/downloads/general_terms_and_conditions.pdf"
 aliases:
   - /document/general_terms_and_conditions/
 ---
@@ -228,7 +237,9 @@ If the Customer establishes that a modification is not solely an enhancement and
 
 Other modifications, amendments or other changes to the Agreement may only be made in writing by authorized representatives of both Parties.
 
-## EU Data Act Annex
+{{< distance >}}
+
+# EU Data Act Annex
 
 The following EU Data Act Annex governs all Switch and/or Erase Requests made by Customer pursuant to Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data and amending Regulation (EU) 2017/2394 and Directive (EU) 2020/1828 (“EU Data Act”).
 
@@ -240,50 +251,30 @@ The following EU Data Act Annex governs all Switch and/or Erase Requests made by
 
 Other terms used but not defined in this annex shall have the meanings given to them in Safespring’s general terms and conditions.
 
-1. Under the EU Data Act, the Customer has the right, at any time, to notify Safespring with at least two (2) months’ written notice (“Notification Period”) of its Switch Request and/or Erase Request. When exercising its rights in accordance with the foregoing, the Customer shall specify whether it wishes to (a) switch to a different provider of data processing services, and in which case the Customer shall provide the necessary details of that provider, (b) switch to its on-premises infrastructure, or (c) receive support with a Erase Request.
-
+1. Under the EU Data Act, the Customer has the right, at any time, to notify Safespring with at least two (2) months’ written notice (“Notification Period”) of its Switch Request and/or Erase Request. When exercising its rights in accordance with the foregoing, the Customer shall specify whether it wishes to
+   1. switch to a different provider of data processing services, and in which case the Customer shall provide the necessary details of that provider,
+   1. switch to its on-premises infrastructure, or
+   1. receive support with a Erase Request.
 2. For the avoidance of doubt, the Parties acknowledge that Safespring’s obligation to support a Switch Request does not:
-
-   **2.1** apply to Services provided solely as non‑production, test, trial, or evaluation versions and for a limited period, or
-
-   **2.2** entitle the Customer to obtain access to, or export of, data, software, or materials protected by Safespring’s or third parties’ intellectual property rights or trade secrets, except to the extent strictly required under the EU Data Act.
-
+   1. apply to Services provided solely as non‑production, test, trial, or evaluation versions and for a limited period, or
+   1. entitle the Customer to obtain access to, or export of, data, software, or materials protected by Safespring’s or third parties’ intellectual property rights or trade secrets, except to the extent strictly required under the EU Data Act.
 3. Upon receiving a Switch Request in accordance with Section 1, Safespring shall support the Customer´s switching process without undue delay and, in any event, no later than thirty (30) calendar days following the expiry of the Notification Period (“Transition Period”). During the Transition Period, Safespring shall:
-
-   **3.1** provide reasonable assistance to the Customer and any third parties authorized by the Customer in the switching process,
-
-   **3.2** act with due care to maintain business continuity, and continue the provision of the Service during the Transition Period,
-
-   **3.3** provide clear information concerning known risks to continuity in the provision of the Service (if any), and
-
-   **3.4** ensure that a high level of security is maintained throughout the switching process, in particular the security of the data during their transfer and the continued security of the data during the Retrieval Period, in accordance with laws applicable to Safespring.
-
+   1. provide reasonable assistance to the Customer and any third parties authorized by the Customer in the switching process,
+   1. act with due care to maintain business continuity, and continue the provision of the Service during the Transition Period,
+   1. provide clear information concerning known risks to continuity in the provision of the Service (if any), and
+   1. ensure that a high level of security is maintained throughout the switching process, in particular the security of the data during their transfer and the continued security of the data during the Retrieval Period, in accordance with laws applicable to Safespring.
 4. Where Safespring deems the standard Transition Period to be technically unfeasible, Safespring shall notify the Customer thereof within fourteen (14) business days of receiving the Switch Request and shall duly justify the technical unfeasibility and indicate an alternative transition period, which shall not exceed seven (7) months. Such an alternative transition period shall then constitute the applicable Transition Period hereunder.
-
 5. The Customer is entitled to extend the Transition Period once by written notice no later than fourteen (14) business days prior to its expiry. Any such extension shall be for a reasonable period proportionate to the switching requirements.
-
 6. Safespring shall reasonably support the Customer’s exit strategy related to the Service, which includes providing relevant information to the Customer as part of Safespring’s standard exit procedures.
-
 7. The scope, structure and format of the exported Customer Data shall be determined by Safespring in accordance with its standard data export procedures, provided that such format comply with the EU Data Act and enable the Customer to switch to a functionally equivalent service.
-
 8. Safespring shall make Customer Data available for retrieval for a period of thirty (30) days following the end of the Transition Period (the “Retrieval Period”).
-
 9. Upon receipt of an Erase Request submitted pursuant to Section 1 and provided that any applicable switching process has been successfully completed, Safespring shall erase Customer Data after the later of:
-
-   (a) expiry of the Retrieval Period; or
-
-   (b) expiry of any alternative period agreed between the Parties.
-
+   1. expiry of the Retrieval Period; or
+   1. expiry of any alternative period agreed between the Parties.
 10. The applicable Agreement (or affected parts thereof) shall be considered terminated upon either:
-
-    **10.1** where the Customer submits a Switch Request, upon the Customer’s notification to Safespring that the switching process has been successfully completed; failing such notification, upon expiry of the Transition Period; or
-
-    **10.2** where the Customer submits an Erase Request, the expiry of the Notification Period.
-
+    1. where the Customer submits a Switch Request, upon the Customer’s notification to Safespring that the switching process has been successfully completed; failing such notification, upon expiry of the Transition Period; or
+    1. where the Customer submits an Erase Request, the expiry of the Notification Period.
 11. The Parties acknowledge and agree that termination pursuant to Section 10 above does not entitle the Customer to receive a refund for any pre-paid fees or any unused portions thereof, including the Service Fee, under the applicable Agreement, and does not relieve the Customer from the payment of any other applicable fees that have been accrued or that are payable up until such a termination. Further, the Customer agrees to pay Safespring an early termination penalty, as permitted under the EU Data Act, corresponding to the remaining unpaid Service Fees for the Services terminated under the Agreement.
-
 12. Safespring reserves the right to charge the Customer:
-
-    **12.1** incurred costs for additional support services requested by the Customer in connection with a Switch Request that goes beyond Safespring’s statutory switching obligations and
-
-    **12.2** reduced switching charges imposed in connection with a Switch Request, provided that such charges are limited to Safespring’s costs that are directly related to enable the switching process and provided that such charges are permitted under the EU Data Act.
+    1. incurred costs for additional support services requested by the Customer in connection with a Switch Request that goes beyond Safespring’s statutory switching obligations and
+    1. reduced switching charges imposed in connection with a Switch Request, provided that such charges are limited to Safespring’s costs that are directly related to enable the switching process and provided that such charges are permitted under the EU Data Act.

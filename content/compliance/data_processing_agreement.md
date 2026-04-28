@@ -11,6 +11,15 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+outputs:
+  - HTML
+  - PRINT
+pdfcategory: "COMPLIANCE"
+pdfversion: "1.0"
+pdfpreparedby: "Safespring"
+pdfapprover: "Safespring"
+pdfclassification: "Public"
+downloadpdf: "/compliance/downloads/data_processing_agreement.pdf"
 aliases:
   - /document/data_processing_agreement/
 ---

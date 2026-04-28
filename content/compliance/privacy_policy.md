@@ -8,6 +8,15 @@ general: "yes"
 language: "En"
 TOC: "Table of contents"
 noindex: "x"
+outputs:
+  - HTML
+  - PRINT
+pdfcategory: "COMPLIANCE"
+pdfversion: "1.0"
+pdfpreparedby: "Safespring"
+pdfapprover: "Safespring"
+pdfclassification: "Public"
+downloadpdf: "/compliance/downloads/privacy_policy.pdf"
 aliases:
   - /document/privacy_policy/
 ---

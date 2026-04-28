@@ -11,6 +11,15 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+outputs:
+  - HTML
+  - PRINT
+pdfcategory: "COMPLIANCE"
+pdfversion: "1.0"
+pdfpreparedby: "Safespring"
+pdfapprover: "Safespring"
+pdfclassification: "Public"
+downloadpdf: "/compliance/downloads/service_level_agreement.pdf"
 aliases:
   - /document/service_level_agreement/
 ---
