@@ -343,6 +343,49 @@
       padding-right: 0;
     }
 
+    .agenda-item:has(.map-link) > div:not(.time) {
+      padding-right: 42px;
+    }
+
+    .map-link {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border: 0;
+      border-radius: 13px;
+      background: rgba(25, 95, 140, 0.08);
+      color: var(--accent);
+      transform: translateY(-50%);
+      transition: background-color 160ms ease, transform 160ms ease;
+    }
+
+    .map-link:hover,
+    .map-link:focus-visible {
+      background: rgba(25, 95, 140, 0.12);
+      transform: translateY(-50%) scale(1.04);
+      outline: none;
+    }
+
+    .green .map-link {
+      background: rgba(50, 205, 50, 0.1);
+    }
+
+    .green .map-link:hover,
+    .green .map-link:focus-visible {
+      background: rgba(50, 205, 50, 0.14);
+    }
+
+    .map-link svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.2;
+      transform: translateY(-0.5px);
+    }
+
     .agenda-item[data-kind]::after {
       display: none;
     }
@@ -676,6 +719,11 @@
               <div class="title">Take off (Happy bus)</div>
               <div class="description">Bus from central station, bus terminal</div>
             </div>
+            <a class="map-link" href="https://maps.app.goo.gl/Fnbdijr4u7D98TqC6?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="Open bus terminal in Google Maps">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 11 18-8-8 18-2-8Z"/>
+              </svg>
+            </a>
           </article>
 
           <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-04T13:00:00+02:00" data-end="2026-05-04T14:00:00+02:00">
@@ -684,6 +732,11 @@
               <div class="title">Lunch</div>
               <div class="description">Fågelbro Hotel</div>
             </div>
+            <a class="map-link" href="https://maps.app.goo.gl/K7BvAJu6HZpnDkmM6?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="Open Fågelbro Hotel in Google Maps">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 11 18-8-8 18-2-8Z"/>
+              </svg>
+            </a>
           </article>
 
           <section class="presentation-pack" aria-label="Presentations">
