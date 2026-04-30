@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="/img/favicons/favicon.ico">
   <title>Agenda Offsite 2026</title>
   <style>
@@ -70,10 +71,14 @@
       box-sizing: border-box;
     }
 
+    html {
+      background: var(--white);
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      background: #dfeff6;
+      background: var(--white);
       color: var(--text);
       font-family: "montserrat", Arial, sans-serif;
       font-weight: 400;
@@ -157,7 +162,7 @@
 
     .schedule-status {
       position: sticky;
-      top: 0;
+      top: 10px;
       z-index: 10;
       margin: 10px 14px 0;
       padding: 10px 12px;
@@ -169,16 +174,11 @@
     }
 
     .status-day {
-      color: var(--blue-dark);
-      font-size: 8pt;
-      line-height: 1;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
+      display: none;
     }
 
     .status-main {
-      margin-top: 6px;
+      margin-top: 0;
       color: var(--blue-dark);
       font-size: 10pt;
       line-height: 1.25;
@@ -188,6 +188,25 @@
     .status-label {
       color: var(--muted);
       font-weight: 400;
+    }
+
+    .status-upcoming {
+      display: none;
+      margin-top: 4px;
+      color: var(--text);
+      font-size: 8.5pt;
+      line-height: 1.2;
+      font-weight: 400;
+      overflow-wrap: anywhere;
+    }
+
+    .status-upcoming.is-visible {
+      display: block;
+    }
+
+    .status-upcoming strong {
+      color: var(--blue-dark);
+      font-weight: 600;
     }
 
     .day + .day {
@@ -590,6 +609,11 @@
     }
 
     @media (min-width: 700px) {
+      html,
+      body {
+        background: #dfeff6;
+      }
+
       .page {
         margin: 32px auto;
         border-radius: 18px;
@@ -635,6 +659,7 @@
     <div class="schedule-status" aria-live="polite">
       <div class="status-day" data-status-day>Schedule</div>
       <div class="status-main" data-status-main><span class="status-label">Next:</span> Loading agenda</div>
+      <div class="status-upcoming" data-status-upcoming></div>
     </div>
 
     <div class="days">
@@ -866,6 +891,7 @@
     (() => {
       const statusDay = document.querySelector("[data-status-day]");
       const statusMain = document.querySelector("[data-status-main]");
+      const statusUpcoming = document.querySelector("[data-status-upcoming]");
       const tracked = Array.from(document.querySelectorAll("[data-track]"))
         .map((element, index) => ({
           element,
@@ -898,9 +924,29 @@
         return Number.isNaN(parsed.valueOf()) ? new Date() : parsed;
       };
 
-      const setStatus = (label, day, title) => {
+      const escapeHtml = (value) => String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+
+      const formatMinutesUntil = (from, to) => {
+        const minutes = Math.max(1, Math.ceil((to - from) / 60000));
+        return `${minutes} min`;
+      };
+
+      const setStatus = (label, day, title, upcoming) => {
         statusDay.textContent = day;
-        statusMain.innerHTML = `<span class="status-label">${label}:</span> ${title}`;
+        statusMain.innerHTML = `<span class="status-label">${escapeHtml(label)}:</span> ${escapeHtml(title)}`;
+
+        if (upcoming) {
+          statusUpcoming.innerHTML = `In ${escapeHtml(upcoming.minutes)}: <strong>${escapeHtml(upcoming.title)}</strong>`;
+          statusUpcoming.classList.add("is-visible");
+        } else {
+          statusUpcoming.textContent = "";
+          statusUpcoming.classList.remove("is-visible");
+        }
       };
 
       const updateProgress = () => {
@@ -938,7 +984,10 @@
         if (current) {
           current.element.classList.add("is-current");
           current.element.setAttribute("aria-current", "true");
-          setStatus("Now", current.dayElement?.dataset.day || "Schedule", current.title);
+          setStatus("Now", current.dayElement?.dataset.day || "Schedule", current.title, next ? {
+            minutes: formatMinutesUntil(now, next.start),
+            title: next.title,
+          } : undefined);
           return;
         }
 
