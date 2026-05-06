@@ -41,7 +41,7 @@ Korta USP:er att komma ihåg:
 - bygger på öppna standarder
 - särskilt relevant för offentlig sektor, forskning och andra verksamheter med höga krav på kontroll
 
-## Fyra ord du behöver förstå
+## Några ord du behöver förstå
 
 Du behöver inte bli teknisk expert, men du ska veta ungefär vad orden betyder när de dyker upp.
 
@@ -69,6 +69,24 @@ Digital suveränitet betyder i enkel form att en organisation vill ha större ko
 Det här är viktigt eftersom behov av digital suveränitet ofta är en stark anledning att vilja prata med Safespring. Om kunden inte bryr sig om kontroll, dataplacering eller europeisk jurisdiktion blir dialogen ofta mindre träffsäker.
 {{% /accordion %}}
 
+{{% accordion title="Vad är private cloud?" id="ord-private-cloud" %}}
+Private cloud betyder i det här sammanhanget en molnliknande miljö som är mer dedikerad till kunden. Den kan vara relevant när kunden vill ha mer kontroll över infrastruktur, data och driftmiljö än i ett vanligt publikt moln.
+
+För mötesbokning räcker det att tänka: kunden vill ha molnets arbetssätt, men med mer egen kontroll.
+{{% /accordion %}}
+
+{{% accordion title="Vad är hybrid cloud?" id="ord-hybrid-cloud" %}}
+Hybrid cloud betyder att kundens egen miljö, till exempel ett eget datacenter eller co-location, används tillsammans med en molnplattform.
+
+Det viktiga i samtalet är inte exakt hur kopplingen byggs. Det viktiga är att höra om kunden vill kombinera kontroll över befintliga data med modernare drift, skalning eller applikationsplattform.
+{{% /accordion %}}
+
+{{% accordion title="Vad betyder GPU?" id="ord-gpu" %}}
+GPU är särskild beräkningskapacitet som ofta används för AI, maskininlärning, inferens, analys och andra tunga beräkningsjobb.
+
+Du behöver inte veta vilken GPU-modell kunden behöver. Lyssna bara efter om de har AI-, ML- eller analysbehov där vanlig serverkapacitet inte räcker.
+{{% /accordion %}}
+
 ## Vad tjänsten är, enkelt uttryckt
 
 Safespring On-demand Kubernetes är en tjänst för företag och organisationer som vill köra moderna affärskritiska applikationer på ett mer kontrollerat, säkert och framtidssäkert sätt.
@@ -93,6 +111,8 @@ Det viktiga i ett första samtal är inte att kunden förstår hur plattformen �
 - vill minska eget driftansvar
 - har krav på säkerhet, compliance eller dataplacering i Europa
 - har ett uttalat behov av digital suveränitet eller suveräna molntjänster
+- har data i eget datacenter eller co-location men vill modernisera applikationsdriften runt den
+- behöver GPU-kapacitet för AI, maskininlärning, inferens eller dataanalys
 - vill prata med någon som förstår både teknik och verksamhetskrav
 
 ## När tjänsten brukar vara relevant
@@ -100,6 +120,8 @@ Det viktiga i ett första samtal är inte att kunden förstår hur plattformen �
 {{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-code-branch" text="Moderna applikationer" description="Kunden utvecklar eller kör redan containerbaserade applikationer, eller planerar att gå i den riktningen." >}}
 {{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Säkerhet, kontroll och suveränitet" description="Kunden har frågor om dataplacering, compliance, ansvarsfördelning eller uttrycker behov av digital suveränitet." >}}
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-people-group" text="Suveränitet som drivkraft" description="Det finns ett verkligt behov av europeisk kontroll, dataplacering eller minskat beroende av stora utländska molnleverantörer." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-building-shield" text="Eget datacenter eller co-location" description="Kunden har data eller system som behöver ligga kvar i egen miljö, men vill ändå få mer molnliknande drift, automation eller Kubernetes kring applikationerna." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-microchip-ai" text="AI, ML och GPU-behov" description="Kunden behöver accelererad beräkning för exempelvis AI, maskininlärning, inferens, analys eller andra GPU-krävande workloads." >}}
 
 {{< distance >}}
 
@@ -110,6 +132,8 @@ Du kan säga:
 - "Det här är en tjänst för organisationer som vill köra moderna applikationer på ett mer kontrollerat och säkert sätt."
 - "Safespring hjälper företag som vill modernisera hur de driver viktiga applikationer."
 - "Det brukar vara relevant för team som vill lägga mindre tid på drift och mer tid på själva verksamheten eller utvecklingen."
+- "Om ni har data kvar i eget datacenter eller co-location behöver det inte utesluta Safespring. Det kan vara ett skäl att prata om private cloud eller hybrid cloud."
+- "Safespring kan också vara relevant när GPU-kapacitet behövs för AI, maskininlärning, inferens eller tyngre dataanalys."
 - "Jag vill inte ge dig en teknisk dragning nu, men jag tror att ett kort samtal med vår specialist kan vara relevant om ni tittar på modernisering, säkerhet, dataplacering eller digital suveränitet."
 
 Du kan också säga:
@@ -135,6 +159,13 @@ Men du behöver inte undvika orden `Kubernetes` och `containrar`. Det viktiga ä
 
 {{< icon-block-horisontal color="#E67E22" icon="fa-solid fa-triangle-exclamation" text="Säg inte så här" description="&ldquo;Det är som AWS fast svenskt.&rdquo;<br>&ldquo;Det är bara Kubernetes som tjänst.&rdquo;<br>&ldquo;Det blir billigare för er.&rdquo;<br>&ldquo;Det här ersätter allt ni har idag.&rdquo;<br>&ldquo;Jag kan förklara exakt hur plattformen fungerar.&rdquo;<br><br>Skälet är enkelt: det blir antingen för tekniskt, för förenklat eller för kategoriskt." >}}
 
+{{% disclaimer "Säg inte heller" %}}
+- "Ni kan behålla allt exakt som idag och bara lägga Kubernetes ovanpå."
+- "Vi kan koppla ihop allt utan teknisk genomgång."
+- "GPU finns alltid direkt i alla miljöer."
+- "Ni behöver inte tänka på dataflöden, nätverk eller ansvarsfördelning."
+{{% /disclaimer %}}
+
 ## Så kvalificerar du snabbt
 
 För att ett möte ska vara värt att boka bör minst två av de här tre sakerna finnas:
@@ -142,6 +173,8 @@ För att ett möte ska vara värt att boka bör minst två av de här tre sakern
 - kunden arbetar redan med moderna applikationer, containrar eller Kubernetes, eller planerar att göra det
 - kunden vill förändra hur de driver applikationer och minska eget driftansvar
 - kunden har ett tydligt behov av digital suveränitet eller suveräna molntjänster
+
+Ett möte kan också vara relevant om kunden har en tydlig hybridfråga, till exempel att viktiga data ligger i eget datacenter eller co-location men att de vill modernisera applikationer, automatisering, Kubernetes eller GPU-kapacitet runt den miljön.
 
 Om inget av detta finns är det ofta bättre att inte driva samtalet vidare.
 
@@ -174,6 +207,38 @@ Det betyder att kunden till exempel:
 
 Om sådana behov inte finns kan konkurrensen vara betydligt större och kunddialogen mindre träffsäker. Därför är det bra att tidigt lyssna efter just detta.
 
+## Om kunden har eget datacenter eller co-location
+
+Det är vanligt att en kund inte vill eller kan flytta all data direkt. Det behöver inte vara en invändning. Det kan tvärtom vara en bra anledning att boka ett samtal, om kunden samtidigt vill modernisera drift, applikationer eller plattform.
+
+Håll det enkelt:
+
+- private cloud betyder att kunden kan få en molnliknande miljö med mer kontroll, ofta nära eller i den egna datacentermiljön
+- hybrid cloud betyder att kundens egen miljö och Safesprings moln kan användas tillsammans
+- Kubernetes kan ibland vara den gemensamma grunden som gör applikationer mer flyttbara mellan miljöer
+- GPU kan vara relevant om kunden har AI-, ML-, inferens- eller analysbehov nära känsliga data
+
+{{% note "Bra vinkel i samtalet" %}}
+Säg hellre:
+
+- "Om data behöver ligga kvar hos er eller i co-location kan det ändå vara relevant att prata. Då handlar samtalet mer om hur ni kan modernisera runt den miljön."
+- "Det kan finnas olika vägar: private cloud, hybrid cloud eller att använda Safesprings publika moln för vissa delar. Det är just sådant en specialist bör resonera med er om."
+- "Om ni har AI- eller analysbehov kan GPU-kapacitet också vara en del av samtalet, men exakt upplägg behöver vi stämma av."
+{{% /note %}}
+
+{{% disclaimer "Lova inte i telefon" %}}
+- att all data kan ligga kvar utan förändringar
+- att alla system enkelt kan flyttas
+- att GPU-kapacitet finns i en viss region eller i exakt den form kunden vill ha
+- att private cloud eller hybrid cloud är rätt lösning innan en specialist har förstått miljön
+{{% /disclaimer %}}
+
+{{% note "Om GPU kommer upp" %}}
+Det är okej att säga att Safespring har ett GPU-erbjudande för AI, maskininlärning och dataanalys. Prislistan innehåller GPU-flavors, bland annat A2 och H100, och Kubernetes-dokumentationen beskriver GPU-kapabla worker-noder.
+
+Stanna där i telefon. Gå inte in på modellval, region, drivrutiner, pris eller tillgänglighet utan att boka vidare till en specialist.
+{{% /note %}}
+
 ## Bra frågor att ställa
 
 Du behöver inte ställa många frågor. Två till fyra räcker ofta.
@@ -183,6 +248,9 @@ Exempel:
 - "Är digital suveränitet eller behov av en europeisk molnleverantör viktigt för er?"
 - "Hur kör ni era applikationer idag?"
 - "Arbetar ni redan med containrar eller Kubernetes, eller är det något ni tittar på framåt?"
+- "Har ni data eller system som måste ligga kvar i eget datacenter eller co-location?"
+- "Tittar ni på private cloud eller hybrid cloud för att kombinera kontroll med mer modern drift?"
+- "Behöver ni GPU-kapacitet för AI, maskininlärning, inferens eller dataanalys?"
 - "Har ni börjat titta på hur ni vill modernisera drift eller applikationsmiljö framåt?"
 - "Är frågor som säkerhet, compliance eller dataplacering viktiga i det här arbetet?"
 - "Är det här något ni bygger och driftar helt själva idag?"
@@ -198,6 +266,9 @@ Positiva signaler:
 - kunden nämner offentlig sektor, forskning, känslig data eller regulatoriska krav
 - kunden uttrycker behov av digital suveränitet, europeisk kontroll eller mindre beroende av stora utländska moln
 - kunden vill undvika inlåsning eller ha bättre kontroll
+- kunden har data i eget datacenter eller co-location men vill modernisera applikationer eller drift
+- kunden nämner private cloud, hybrid cloud, on-prem, co-location eller egen datacentermiljö
+- kunden nämner AI, maskininlärning, inferens, dataanalys eller GPU
 - kunden är osäker på vad som är rätt väg framåt och vill prata med någon teknisk
 
 Svagare signaler:

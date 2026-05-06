@@ -1,0 +1,544 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js"></script>
+
+<style>
+	.schedule-demo-form {
+		width: min(100%, 500px);
+	}
+
+	.schedule-demo-form .form-field {
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	.schedule-demo-form .column-two > .form-field {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+
+	.schedule-demo-form .form-field label {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 25px;
+		pointer-events: none;
+		font-size: 16px;
+		font-weight: 400;
+		transition: all 0.2s ease;
+		background-color: transparent;
+		padding: 0 8px;
+		margin: 0 -8px;
+		font-family: 'Montserrat';
+		line-height: 16px;
+		color: var(--middle-blue-color);
+	}
+
+	.schedule-demo-form .form-field input[type="text"],
+	.schedule-demo-form .form-field input[type="email"],
+	.schedule-demo-form .form-field input[type="tel"],
+	.schedule-demo-form .form-field input[type="date"],
+	.schedule-demo-form .form-field select {
+		width: 100%;
+		line-height: 16px;
+		margin-block: 8px;
+		border: solid 0.5px var(--main-color);
+		border-radius: 100px;
+		box-sizing: border-box;
+		font-size: 16px;
+		color: var(--main-color);
+		padding: 15px 25px;
+		background-color: transparent;
+		font-family: 'Montserrat';
+	}
+
+	.schedule-demo-form .form-field input:focus,
+	.schedule-demo-form .form-field select:focus {
+		outline: none;
+		box-shadow: none;
+		border: solid 0.5px var(--main-color) !important;
+	}
+
+	.schedule-demo-form .form-field.has-content label,
+	.schedule-demo-form .form-field.is-focused label,
+	.schedule-demo-form .form-field.phone-field label {
+		transform: translateY(-205%);
+		-webkit-transform: translateY(-205%);
+		color: #3C9BCD;
+		font: 400 12px/16px 'Hind';
+		letter-spacing: 0.5px;
+		background-color: #fafefe;
+		border-radius: 100px;
+	}
+
+	.schedule-demo-form .form-field.invalid.has-content input {
+		border-color: red;
+	}
+
+	.schedule-demo-form .form-field.invalid.has-content label {
+		color: red;
+	}
+
+	.schedule-demo-form .twitter-typeahead {
+		display: block !important;
+		width: 100%;
+	}
+
+	.schedule-demo-form .twitter-typeahead input {
+		width: 100%;
+	}
+
+	.schedule-demo-form .twitter-typeahead .tt-hint {
+		color: #6B7C93;
+	}
+
+	.schedule-demo-form .twitter-typeahead .tt-menu {
+		background-color: #fff;
+		max-height: 300px;
+		overflow: auto;
+		border: solid 0.5px var(--main-color);
+		border-top: none;
+		border-radius: 0 0 18px 18px;
+		width: 100%;
+		margin-top: -8px;
+		z-index: 20 !important;
+		box-sizing: border-box;
+	}
+
+	.schedule-demo-form .twitter-typeahead .tt-suggestion {
+		padding: 8px 25px;
+		color: var(--main-color);
+		font-family: 'Montserrat';
+		cursor: pointer;
+	}
+
+	.schedule-demo-form .twitter-typeahead .tt-suggestion:hover,
+	.schedule-demo-form .twitter-typeahead .tt-suggestion.tt-cursor {
+		background-color: var(--cloud-blue-color);
+		color: var(--main-color);
+	}
+
+	.schedule-demo-form #up-client-spinner {
+		position: absolute;
+		right: 18px;
+		top: 50%;
+		width: 22px;
+		height: 22px;
+		transform: translateY(-50%);
+		color: var(--middle-blue-color);
+		z-index: 3;
+	}
+
+	.schedule-demo-form #up-client-spinner .spinner {
+		animation: schedule-demo-rotate 1s linear infinite;
+		width: 22px;
+		height: 22px;
+	}
+
+	.schedule-demo-form #up-client-spinner .path {
+		stroke: currentColor;
+		stroke-linecap: round;
+		animation: schedule-demo-dash 1.5s ease-in-out infinite;
+	}
+
+	.schedule-demo-form .iti {
+		display: block;
+		width: 100%;
+	}
+
+	.schedule-demo-form .iti input[type="tel"] {
+		padding-left: 88px;
+	}
+
+	.schedule-demo-form .phone-field .iti__flag-container {
+		left: 18px;
+	}
+
+	.schedule-demo-form .phone-field label,
+	.schedule-demo-form .date-field label {
+		pointer-events: none;
+	}
+
+	.schedule-demo-form .inputGroup {
+		background-color: transparent;
+		display: block;
+		margin: 10px 0;
+		position: relative;
+		border-radius: 50px;
+		max-width: 300px;
+	}
+
+	.schedule-demo-form .inputGroup label {
+		padding: 12px 12px 12px 60px;
+		border: 1px solid #D1D7DC;
+		display: block;
+		text-align: left;
+		color: var(--middle-blue-color);
+		cursor: pointer;
+		position: relative;
+		z-index: 2;
+		transition: color 200ms ease-in;
+		overflow: hidden;
+		border-radius: 50px;
+		max-width: 300px;
+		font-family: var(--hind-font);
+		font-size: 17px;
+		font-weight: var(--heavy-weight);
+	}
+
+	.schedule-demo-form .inputGroup label:before {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		content: "";
+		background-color: var(--cloud-blue-color);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale3d(1, 1, 1);
+		transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		opacity: 0;
+		z-index: -1;
+	}
+
+	.schedule-demo-form .inputGroup label:after {
+		width: 32px;
+		height: 32px;
+		content: "";
+		border: 1px solid #D1D7DC;
+		background-color: #fff;
+		background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+		background-repeat: no-repeat;
+		background-position: 4px 5px;
+		border-radius: 50%;
+		z-index: 2;
+		position: absolute;
+		left: 9px;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		transition: all 200ms ease-in;
+	}
+
+	.schedule-demo-form .inputGroup input:checked~label {
+		color: var(--main-color);
+		border: 1px solid var(--cloud-blue-color);
+	}
+
+	.schedule-demo-form .inputGroup input:checked~label:before {
+		transform: translate(-50%, -50%) scale3d(56, 56, 1);
+		opacity: 1;
+	}
+
+	.schedule-demo-form .inputGroup input:checked~label:after {
+		background-color: var(--web-green-color);
+		border: 2px solid var(--web-green-color);
+	}
+
+	.schedule-demo-form .inputGroup input {
+		width: 32px;
+		height: 32px;
+		order: 1;
+		z-index: 2;
+		position: absolute;
+		right: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		visibility: hidden;
+	}
+
+	@keyframes schedule-demo-rotate {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes schedule-demo-dash {
+		0% {
+			stroke-dasharray: 1, 150;
+			stroke-dashoffset: 0;
+		}
+
+		50% {
+			stroke-dasharray: 90, 150;
+			stroke-dashoffset: -35;
+		}
+
+		100% {
+			stroke-dasharray: 90, 150;
+			stroke-dashoffset: -124;
+		}
+	}
+</style>
+
+<form class="schedule-demo-form" id="up-form" name="form_9549u7794d4f86da545e6a442e233c24577d8" action="https://power.upsales.com/api/external/formSubmit" method="POST" data-accept-alert="{{ .acceptAlert }}">
+	<div class="column-two">
+		<div class="form-field">
+			<input maxlength="512" type="text" placeholder="" id="up-firstname-input" autocomplete="given-name" name="Contact.firstname" required="required">
+			<label for="up-firstname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ .firstName }}</label>
+		</div>
+		<div class="form-field">
+			<input maxlength="512" type="text" placeholder="" id="up-lastname-input" autocomplete="family-name" name="Contact.lastname" required="required">
+			<label for="up-lastname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ .lastName }}</label>
+		</div>
+	</div>
+	<div class="column-two">
+		<div class="form-field">
+			<input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
+			<label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+		</div>
+		<div class="form-field phone-field">
+			<input maxlength="512" type="tel" placeholder="" autocomplete="tel" name="Contact.cellPhone">
+			<label><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ .phone }}</label>
+		</div>
+	</div>
+	<div class="column-two">
+		<div class="form-field date-field">
+			<input type="text" placeholder="" name="Extra.1736325944675" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'">
+			<label><i class="fas fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;{{ .date }}</label>
+		</div>
+		<div class="form-field">
+			<input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
+			<label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;{{ .organization }}</label>
+		</div>
+	</div>
+	<div class="inputGroup">
+		<input type="checkbox" value="on" name="singleOptIn.4riingqjtdo" id="accept-usage">
+		<label for="accept-usage" class="opt-in-label">{{ .termsPrefix }} <a href="{{ .termsUrl }}">{{ .termsText }}</a></label>
+	</div>
+	<input type="hidden" name="formCid" value="9549">
+	<input type="hidden" name="formId" value="9549u7794d4f86da545e6a442e233c24577d8">
+	<input type="hidden" name="isFrame" value="false">
+	<input type="text" value="" name="validation" style="display: none;">
+	<div class="submit-button">
+		<button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">{{ .submit }}</button>
+	</div>
+</form>
+
+<script>
+	jQuery(document).ready(function() {
+		var matchClientsTimeout = null;
+		var matchClients = function(q, sync, cb) {
+			if (matchClientsTimeout) {
+				clearTimeout(matchClientsTimeout);
+			}
+			matchClientsTimeout = setTimeout(function() {
+				jQuery.ajax({
+					type: "GET",
+					url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&country=NO&country=DK&country=FI&country=GB&country=BE&country=FR&country=IE&country=IT&country=LU&country=NL&country=DE&country=AT&name=" + encodeURIComponent(q),
+					success: function(res) {
+						cb(res.data);
+					},
+					error: function() {}
+				});
+			}, 200);
+		};
+		var getSuggestTemplate = function(c) {
+			return "<div><div>" + c.name + "</div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "</span></div>";
+		};
+		var nameField = jQuery("#up-client-name-input");
+		if (nameField.length && typeof nameField.typeahead === "function") {
+			var selectedClientName = "";
+			var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
+			var spinner = jQuery("<b id='up-client-spinner'><svg class='spinner' viewBox='0 0 50 50'><circle class='path' cx='25' cy='25' r='20' fill='none' stroke-width='5'></circle></svg></b>");
+			spinner.css("display", "none");
+			nameField.after(dunsField);
+			nameField.after(spinner);
+			nameField.typeahead({ hint: true, highlight: true, minLength: 2 }, {
+				name: "clients",
+				limit: 25,
+				source: matchClients,
+				templates: { suggestion: getSuggestTemplate }
+			}).bind("typeahead:autocompleted", function(ev, client) {
+				nameField.typeahead("val", client.name);
+				dunsField.val(client.dunsNo);
+				selectedClientName = client.name;
+				nameField.blur();
+			}).bind("typeahead:select", function(ev, client) {
+				nameField.typeahead("val", client.name);
+				dunsField.val(client.dunsNo);
+				selectedClientName = client.name;
+			}).bind("typeahead:cursorchange", function(ev, client) {
+				if (client) {
+					nameField.typeahead("val", client.name);
+					dunsField.val(client.dunsNo);
+					selectedClientName = client.name;
+				}
+			}).bind("typeahead:change", function(ev, value) {
+				if (value !== selectedClientName) {
+					dunsField.val("");
+				}
+			}).on("typeahead:asyncrequest", function() {
+				spinner.css("display", "inline");
+			}).on("typeahead:asynccancel typeahead:asyncreceive", function() {
+				spinner.css("display", "none");
+			});
+		}
+	});
+</script>
+<script>
+	(function() {
+		var phoneFields = document.querySelectorAll('input[name*=phone], input[name*=Phone]');
+		[].forEach.call(phoneFields, function(element) {
+			if (!window.intlTelInput) {
+				return;
+			}
+			window.hasPhoneFields = true;
+			element.iti = window.intlTelInput(element, {
+				preferredCountries: [],
+				initialCountry: "auto",
+				utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/utils.js",
+				geoIpLookup: function(success) {
+					var xhr = new XMLHttpRequest();
+					xhr.open("GET", "https://power.upsales.com/api/external/whereAmI");
+					xhr.onload = function() {
+						var country = "";
+						if (xhr.status === 200 && xhr.responseText.indexOf("no-js") === -1) {
+							try {
+								country = JSON.parse(xhr.responseText).data || "";
+							} catch (e) {
+								country = "";
+							}
+						}
+						success(country);
+					};
+					xhr.send();
+				}
+			});
+		});
+	})();
+</script>
+<script>
+	(function() {
+		var form = document.getElementById("up-form");
+		if (!form) {
+			return;
+		}
+
+		var fields = form.querySelectorAll(".form-field");
+		[].forEach.call(fields, function(field) {
+			var input = field.querySelector("input, textarea, select");
+			if (!input) {
+				return;
+			}
+			var updateState = function() {
+				field.classList.toggle("has-content", !!input.value);
+				if (input.type === "email" && input.value) {
+					field.classList.toggle("invalid", !input.checkValidity());
+				} else {
+					field.classList.remove("invalid");
+				}
+			};
+			field.addEventListener("focusin", function() {
+				field.classList.add("is-focused");
+			});
+			field.addEventListener("focusout", function() {
+				field.classList.remove("is-focused");
+				updateState();
+			});
+			input.addEventListener("input", updateState);
+			input.addEventListener("change", updateState);
+			updateState();
+		});
+
+		form.addEventListener("submit", onSubmit);
+	})();
+
+	function onSubmit(e) {
+		var interval;
+		var form = e.target;
+		var terms = form.querySelector('input[name="singleOptIn.4riingqjtdo"]');
+		if (terms && !terms.checked) {
+			e.preventDefault();
+			alert(form.getAttribute("data-accept-alert"));
+			return;
+		}
+		if (typeof window._bEmValid !== "function" || window.__validEmail === true) {
+			validateForm(e, "https://www.safespring.com/schedule-demo-success/");
+			return;
+		}
+		e.preventDefault();
+		interval = setInterval(function() {
+			if (window.__validEmail !== undefined) {
+				clearInterval(interval);
+				if (window.__validEmail === true) {
+					validateForm(e, "https://www.safespring.com/schedule-demo-success/");
+				}
+			}
+		}, 300);
+	}
+
+	function validateForm(ev, redirectUrl) {
+		ev.preventDefault();
+		var formId = document.getElementsByName("formId")[0].value;
+		var form = document.forms["form_" + formId];
+		var fields = form.querySelectorAll("input, textarea, select");
+		var button = form.querySelector("button[type=submit]");
+		var phoneFields = form.querySelectorAll("input[name*=phone], input[name*=Phone]");
+
+		if (button) {
+			button.disabled = true;
+		}
+
+		for (var i = 0; i < fields.length; i++) {
+			if (fields[i].type === "text") {
+				fields[i].value = fields[i].value.trim();
+			}
+		}
+
+		[].forEach.call(phoneFields, function(field) {
+			if (field.iti && field.value) {
+				field.value = field.iti.getNumber();
+			}
+		});
+
+		if (window.grecaptcha !== undefined && window.grecaptcha.getResponse() === "") {
+			if (button) {
+				button.disabled = false;
+			}
+			return;
+		}
+
+		var payload = [];
+		for (var j = 0; j < fields.length; j++) {
+			if (fields[j].type === "checkbox") {
+				payload.push(fields[j].name + "=" + encodeURIComponent(fields[j].checked ? fields[j].value : "off"));
+			} else {
+				payload.push(fields[j].name + "=" + encodeURIComponent(fields[j].value));
+			}
+		}
+
+		var body = payload.join("&") + "&isAjax=true";
+		var paq = window._paq || null;
+		var request = new XMLHttpRequest();
+		request.open("POST", form.action);
+		request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		request.send(body);
+		request.onload = function() {
+			if (request.status === 200) {
+				if (paq && paq.push) {
+					paq.push(["trackLink", "https://post.upsales.com/" + request.responseText, "link"]);
+				}
+				if (typeof _uaq !== "undefined") {
+					_uaq("form=" + request.responseText);
+				}
+				setTimeout(function() {
+					window.top.location.href = redirectUrl;
+				}, 333);
+			} else {
+				if (button) {
+					button.disabled = false;
+				}
+				console.log("AJAX ERROR", request.status);
+			}
+		};
+		request.onerror = function() {
+			if (button) {
+				button.disabled = false;
+			}
+			console.log("AJAX ERROR");
+		};
+	}
+</script>

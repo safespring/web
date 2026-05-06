@@ -30,8 +30,8 @@ var CATEGORY_SCRIPTS = {
 function syncCategory(category) {
   var hasConsent = false;
   try {
-    hasConsent = !!cookieTractor && typeof cookieTractor.consentGivenFor === 'function'
-      ? cookieTractor.consentGivenFor(category)
+    hasConsent = !!window.cookieTractor && typeof window.cookieTractor.consentGivenFor === 'function'
+      ? window.cookieTractor.consentGivenFor(category)
       : false;
   } catch (e) {
     hasConsent = false;
@@ -45,30 +45,57 @@ function syncCategory(category) {
   }
 }
 
+function syncAllCategories() {
+  Object.keys(CATEGORY_SCRIPTS).forEach(function (category) {
+    syncCategory(category);
+  });
+}
+
+function scheduleConsentSync() {
+  syncAllCategories();
+  window.setTimeout(syncAllCategories, 0);
+  window.setTimeout(syncAllCategories, 250);
+  window.setTimeout(syncAllCategories, 1000);
+}
+
 (function initConsentSync() {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      syncCategory('statistical');
-      syncCategory('marketing');
-    });
+    document.addEventListener('DOMContentLoaded', scheduleConsentSync);
   } else {
-    syncCategory('statistical');
-    syncCategory('marketing');
+    scheduleConsentSync();
   }
 })();
 
 window.addEventListener('CookieConsentGiven', function (event) {
-  // If one category is granted we can resync both cheaply
-  syncCategory('statistical');
-  syncCategory('marketing');
+  scheduleConsentSync();
+}, false);
+
+window.addEventListener('CookieConsent', function (event) {
+  // CookieTractor emits this on pageload for existing consent choices.
+  scheduleConsentSync();
 }, false);
 
 window.addEventListener('CookieConsentRevoked', function (event) {
-  var revoked = Array.isArray(event?.detail?.consents) ? event.detail.consents : [];
+  var revoked = event && event.detail && Array.isArray(event.detail.consents)
+    ? event.detail.consents
+    : [];
   if (revoked.indexOf('statistical') > -1) {
     (CATEGORY_SCRIPTS.statistical || []).forEach(function (item) { removeScript(item.id); });
   }
   if (revoked.indexOf('marketing') > -1) {
     (CATEGORY_SCRIPTS.marketing || []).forEach(function (item) { removeScript(item.id); });
   }
+  scheduleConsentSync();
 }, false);
+
+document.addEventListener('click', function (event) {
+  var target = event.target;
+  var button = target && typeof target.closest === 'function'
+    ? target.closest('#cc-b-acceptall, #cc-b-custom')
+    : null;
+
+  if (button) {
+    button.setAttribute('aria-busy', 'true');
+    scheduleConsentSync();
+  }
+}, true);
