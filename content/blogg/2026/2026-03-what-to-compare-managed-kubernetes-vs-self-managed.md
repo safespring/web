@@ -1,7 +1,7 @@
 ---
-title: "Understanding Safespring On-demand Kubernetes if you usually run Kubernetes yourself"
+title: "Understanding Safespring Kubernetes Engine if you usually run Kubernetes yourself"
 date: "2026-03-30"
-intro: "A practical guide for platform teams who want to understand the service boundary, defaults, and engineering trade-offs in Safespring On-demand Kubernetes."
+intro: "A practical guide for platform teams who want to understand the service boundary, defaults, and engineering trade-offs in Safespring Kubernetes Engine."
 draft: false
 sectiontext: "Tech Update"
 section: "Tech update"
@@ -25,13 +25,13 @@ If you already know how to run Kubernetes yourself, the useful question is not w
 
 We have written quite a bit lately about building Kubernetes platforms with Talos, OpenStack, Cluster API, Cinder CSI, and modern traffic management. That is one side of the picture.
 
-The other side is understanding what a service like Safespring On-demand Kubernetes is actually trying to provide.
+The other side is understanding what a service like Safespring Kubernetes Engine is actually trying to provide.
 
-This post is aimed at engineers and platform teams who are perfectly capable of running Kubernetes themselves, but want to understand Safespring On-demand Kubernetes in more concrete terms than "managed Kubernetes".
+This post is aimed at engineers and platform teams who are perfectly capable of running Kubernetes themselves, but want to understand Safespring Kubernetes Engine in more concrete terms than "managed Kubernetes".
 
 {{% accordion title="TL;DR" %}}
 
-1. Safespring On-demand Kubernetes is designed to give teams a usable Kubernetes platform boundary from day one, rather than a raw cluster that still needs extensive assembly work.
+1. Safespring Kubernetes Engine is designed to give teams a usable Kubernetes platform boundary from day one, rather than a raw cluster that still needs extensive assembly work.
 2. The service currently documents portal and API-based cluster provisioning, a managed control plane, Talos Linux, Cilium as the default CNI, traffic management options, Cinder CSI-based storage, OIDC-based access, and GPU-capable worker nodes.
 3. The most useful way to evaluate the service is to look at what is already solved by default and what still remains part of your own platform design.
 4. For many teams, the value is not that Kubernetes becomes "easy", but that fewer recurring platform responsibilities need to be owned internally.
@@ -42,9 +42,9 @@ This post is aimed at engineers and platform teams who are perfectly capable of 
 {{% /accordion %}}
 {{< accordion-script >}}
 
-## What Safespring On-demand Kubernetes is trying to do
+## What Safespring Kubernetes Engine is trying to do
 
-At a high level, Safespring On-demand Kubernetes is a Kubernetes service built on Safespring Compute and exposed through a self-service model. The intent is not to replace engineering judgment or to hide Kubernetes behind a proprietary control layer. The intent is to provide a solid platform baseline so teams can spend less time assembling the cluster itself and more time working on workloads.
+At a high level, Safespring Kubernetes Engine is a Kubernetes service built on Safespring Compute and exposed through a self-service model. The intent is not to replace engineering judgment or to hide Kubernetes behind a proprietary control layer. The intent is to provide a solid platform baseline so teams can spend less time assembling the cluster itself and more time working on workloads.
 
 That distinction matters.
 
@@ -64,7 +64,7 @@ That makes it easier for platform teams to evaluate the offering as infrastructu
 
 ## What you get on day one
 
-Based on the current Safespring documentation, On-demand Kubernetes is documented with the following platform characteristics:
+Based on the current Safespring documentation, Kubernetes Engine is documented with the following platform characteristics:
 
 - **Cluster provisioning through portal and API** so clusters can be created and managed through a self-service workflow.
 - **A managed control plane** with support for `3` or `5` control plane nodes depending on availability requirements.
@@ -142,7 +142,7 @@ A clearer way to think about it is topic by topic:
 
 That final row is worth calling out clearly.
 
-Safespring does not present On-demand Kubernetes as if every operational concern is bundled into the service. The current documentation recommends deploying your own observability stack, and cluster logs are not stored or monitored by default for on-demand clusters.
+Safespring does not present Kubernetes Engine as if every operational concern is bundled into the service. The current documentation recommends deploying your own observability stack, and cluster logs are not stored or monitored by default for clusters in the service.
 
 For some teams, that may look like a gap. For others, it is a healthy and realistic boundary. It means the service takes responsibility for the cluster platform itself without pretending that workload-level observability can be solved generically for every customer.
 
@@ -152,7 +152,7 @@ The operational shape of a Kubernetes service matters more than the label attach
 
 A service can have a long feature list and still create a lot of platform work for the customer if the defaults are weak or the responsibility split is vague. Conversely, a service can be quite compelling even without trying to manage every layer, as long as the service boundary is coherent and documented.
 
-That is where Safespring On-demand Kubernetes becomes interesting for engineers.
+That is where Safespring Kubernetes Engine becomes interesting for engineers.
 
 It combines a few choices that fit well together:
 
@@ -182,7 +182,7 @@ In other words, the service may narrow the amount of cluster plumbing you need t
 
 That is usually a good trade.
 
-## A practical way to evaluate Safespring On-demand Kubernetes
+## A practical way to evaluate Safespring Kubernetes Engine
 
 For teams that want to assess the service seriously, we think the best questions are these:
 
@@ -196,7 +196,7 @@ Those questions tend to produce a more useful engineering discussion than generi
 
 ## Closing thought
 
-If you are used to building clusters yourself, Safespring On-demand Kubernetes is probably most useful to think of as a documented platform baseline.
+If you are used to building clusters yourself, Safespring Kubernetes Engine is probably most useful to think of as a documented platform baseline.
 
 It gives you a managed control plane, a self-service provisioning path, a chosen node operating model, a default network direction, storage integrations, identity integration, and support for GPU-capable workloads. At the same time, it still leaves enough of the upper platform layers in your hands that you can shape the workload experience according to your own needs.
 
@@ -208,9 +208,9 @@ Because it reduces the amount of Kubernetes platform assembly that has to be rep
 
 {{< horisontal-card
     image="/img/graphics/safespring-image.svg"
-    alt="Safespring On-demand Kubernetes for platform teams"
+    alt="Safespring Kubernetes Engine for platform teams"
     cardtitle="Walk through the platform boundary in your own terms"
-    text="If you want to evaluate Safespring On-demand Kubernetes for your own workloads, start with the documented service boundary: control plane, networking, storage, access, observability, and day-two operations."
+    text="If you want to evaluate Safespring Kubernetes Engine for your own workloads, start with the documented service boundary: control plane, networking, storage, access, observability, and day-two operations."
     link="/kontakt/"
     linktext="Discuss your requirements"
 >}}

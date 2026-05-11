@@ -1,17 +1,17 @@
 ---
-title: "Safespring On-demand Kubernetes"
+title: "Safespring Kubernetes Engine"
 section: "Platform"
 sectionhighlight: ""
-cardtitle: "Containers"
-cardintro: "Managed Kubernetes with control, clear boundaries, and digital sovereignty."
+cardtitle: "Kubernetes"
+cardintro: "Managed control plane, clear boundaries, and digital sovereignty."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "1"
-metatitle: "Managed Kubernetes in Sweden and the EU | Safespring On-demand Kubernetes"
+metatitle: "Kubernetes with managed control plane in Sweden and the EU | Safespring Kubernetes Engine"
 card: "safespring_card_12.svg"
 date: 2026-04-01
 draft: false
-intro: "A managed Kubernetes service that combines self-service provisioning, a managed control plane, modern networking, and digital sovereignty for organizations that need both speed and control."
+intro: "A Kubernetes service that combines self-service provisioning, a managed control plane, modern networking, and digital sovereignty for organizations that need both speed and control."
 background: ""
 sidebarlinkname: "Contact us"
 sidebarlinkurl: "/en/contact/"
@@ -28,7 +28,7 @@ language: "En"
 ---
 
 {{< ingress >}}
-Safespring On-demand Kubernetes is a managed Kubernetes service for running containerized applications on Safespring infrastructure, with self-service provisioning and a managed control plane.
+Safespring Kubernetes Engine is a Kubernetes service for running containerized applications on Safespring infrastructure, with self-service provisioning and a managed control plane.
 {{</ ingress >}}
 
 It is designed for organizations that need stronger control over data location, jurisdiction, and operational boundaries, including environments with GDPR, compliance, and digital sovereignty requirements.

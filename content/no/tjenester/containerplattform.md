@@ -1,17 +1,17 @@
 ---
-title: "Safespring On-demand Kubernetes"
+title: "Safespring Kubernetes Engine"
 section: "Platform"
 sectionhighlight: ""
-cardtitle: "Containers"
-cardintro: "Administrert Kubernetes med kontroll, tydelige grenser og digital suverenitet."
+cardtitle: "Kubernetes"
+cardintro: "Administrert kontrollplan, tydelige grenser og digital suverenitet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "3"
-metatitle: "Administrert Kubernetes i Sverige og EU | Safespring On-demand Kubernetes"
+metatitle: "Kubernetes med administrert kontrollplan i Sverige og EU | Safespring Kubernetes Engine"
 card: "safespring_card_12.svg"
 date: 2026-04-01
 draft: false
-intro: "En administrert Kubernetes-tjeneste som kombinerer selvbetjent provisjonering, administrert kontrollplan, moderne nettverkshåndtering og digital suverenitet for virksomheter som trenger både fart og kontroll."
+intro: "En Kubernetes-tjeneste som kombinerer selvbetjent provisjonering, administrert kontrollplan, moderne nettverkshåndtering og digital suverenitet for virksomheter som trenger både fart og kontroll."
 background: ""
 sidebarlinkname: "Kontakt oss"
 sidebarlinkurl: "/no/kontakt/"
@@ -28,7 +28,7 @@ language: "No"
 ---
 
 {{< ingress >}}
-Safespring On-demand Kubernetes er en administrert Kubernetes-tjeneste for å kjøre containeriserte applikasjoner på Safesprings infrastruktur, med selvbetjent provisjonering og administrert kontrollplan.
+Safespring Kubernetes Engine er en Kubernetes-tjeneste for å kjøre containeriserte applikasjoner på Safesprings infrastruktur, med selvbetjent provisjonering og administrert kontrollplan.
 {{</ ingress >}}
 
 Tjenesten er utformet for virksomheter som trenger sterkere kontroll over dataplacering, jurisdiksjon og operative grenser, inkludert miljøer med krav til GDPR, compliance og digital suverenitet.
