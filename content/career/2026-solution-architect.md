@@ -13,7 +13,7 @@ sidebarimage: "safespring-image.svg"
 ---
 
 {{< ingress >}}
-We are hiring a Senior Backend Engineer to help build our Self-service API and a new customer portal that make our cloud easy to understand, easy to use, and ready to scale. This is a hands‑on role where you work across backend and help a small team get a lot done.​
+Be the change Europe needs! Join Safespring as a Solution Architect!
 {{< /ingress >}}
 
 ## Why this role matters
