@@ -2,7 +2,7 @@
 Title: "Solution Architect"
 intro: "Be the change Europe needs! Join Safespring as a Solution Architect!"
 draft: false
-date: "2026-03-24"
+date: "2026-05-11"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/7f6f194c-ebb9-4c37-b13a-cc785165ff86/31c53cbf-51dc-4b7b-8542-7c9a5bde7ce5#applyNow"
 sidebarlinkname: "Apply now"
 sidebarlinkicon: "fa-arrow-up-right-from-square"
