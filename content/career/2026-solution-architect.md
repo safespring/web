@@ -34,7 +34,9 @@ You can draft a solution architecture and defend it. This isn't customer-success
 
 You write well. Most of our engineering team will only ever encounter the customer through your writing, so clear documentation is half the job.
 
-You speak Swedish English fluently. You can work fully remotely from anywhere in the EU, or from our Stockholm office. We'll sort you out with the gear you need, plus the stability of a collective bargaining agreement (or equivalent outside Sweden). 
+You speak Swedish and English fluently. 
+
+You can work fully remotely from anywhere in the EU, or from our Stockholm office. We'll sort you out with the gear you need, plus the stability of a collective bargaining agreement (or equivalent outside Sweden). 
 
 ## What you'll do
 
@@ -71,7 +73,7 @@ Working at a small company means living with ambiguity. Customers don't arrive w
 
 If you want narrow responsibilities or a large specialist team around you, this isn't the right fit. If you want to own the gap between customer and engineering end to end, you'll thrive here.
 
-Interested?
+## Interested?
 
 We care more about how you solve problems than how polished your CV looks. Click Apply, send us what you have, and we'll take it from there.
 
