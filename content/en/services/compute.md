@@ -18,9 +18,6 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Compute Pricing"
 sidebarlinkurl2: "/en/price/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
-aliases:
-    - /compute/
-    - /safespring-compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"

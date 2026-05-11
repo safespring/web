@@ -14,8 +14,6 @@ sectiontext: "Tech Update"
 section: "Tech update"
 author: "Stefan Negru"
 TOC: "In this post"
-aliases:
-  - /blogg/2025/2025-04-validating-talos-linux-intstall/
 ---
 
 # 
@@ -956,4 +954,3 @@ default     csi-pvc-test   Bound    pvc-feac6f5f-9137-4ab0-9b77-3032483a7828   1
 Does this sound like a good fit for your needs?
 Don't hesitate to reach out if you have any questions at hello@safespring.com.
 {{% /note %}}
-
