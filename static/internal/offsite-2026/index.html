@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/img/favicons/favicon.ico">
+  <title>Agenda Offsite 2026</title>
+  <style>
+    @font-face {
+      font-family: "montserrat";
+      src: url("/fonts/montserrat-300.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "montserrat";
+      src: url("/fonts/montserrat-400.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "montserrat";
+      src: url("/fonts/montserrat-400-italic.woff2") format("woff2");
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "montserrat";
+      src: url("/fonts/montserrat-600.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Hind";
+      src: url("/fonts/hind-300.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --blue-dark: #195f8c;
+      --blue: #3c9bcd;
+      --blue-soft: #e8eff3;
+      --green: #19c42e;
+      --surface: #f5f9fb;
+      --line: #d7e8f1;
+      --text: #417da5;
+      --muted: #86b2d0;
+      --white: #ffffff;
+      --food: #32CD32;
+      --talk: #3C9BCD;
+      --other: #195F8C;
+      --activity: var(--other);
+      --travel: var(--other);
+      --free: var(--other);
+      --fika: #7a8796;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--white);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--white);
+      color: var(--text);
+      font-family: "montserrat", Arial, sans-serif;
+      font-weight: 400;
+    }
+
+    .page {
+      width: min(430px, 100%);
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 0 0 34px;
+      background: var(--white);
+    }
+
+    .hero {
+      display: grid;
+      gap: 34px;
+      min-height: 178px;
+      padding: 30px 22px 26px;
+      border-bottom: 1px solid rgba(25, 95, 140, 0.1);
+      background: var(--white);
+      animation: fade-up 520ms ease-out both;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 142px;
+      height: auto;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--blue-dark);
+      font-family: "Hind", Arial, sans-serif;
+      font-size: 34px;
+      line-height: 0.95;
+      font-weight: 300;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      margin: 9px 0 0;
+      color: var(--text);
+      font-size: 10pt;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      padding: 24px 18px 0;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      padding: 14px 14px 0;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 9px 5px;
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--blue-dark);
+      font-size: 8pt;
+      line-height: 1;
+      font-weight: 600;
+    }
+
+    .legend-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .schedule-status {
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      margin: 10px 14px 0;
+      padding: 10px 12px;
+      border: 1px solid rgba(25, 95, 140, 0.14);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 8px 18px rgba(25, 95, 140, 0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .status-day {
+      display: none;
+    }
+
+    .status-main {
+      margin-top: 0;
+      color: var(--blue-dark);
+      font-size: 10pt;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    .status-label {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .status-upcoming {
+      display: none;
+      margin-top: 4px;
+      color: var(--text);
+      font-size: 8.5pt;
+      line-height: 1.2;
+      font-weight: 400;
+      overflow-wrap: anywhere;
+    }
+
+    .status-upcoming.is-visible {
+      display: block;
+    }
+
+    .status-upcoming strong {
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    .day + .day {
+      border-left: 0;
+      border-top: 0;
+      padding-left: 0;
+      padding-top: 0;
+    }
+
+    .day-label,
+    .unconference-label {
+      display: block;
+      width: 100%;
+      margin: 0 0 16px;
+      padding: 0;
+      border-bottom: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--blue-dark);
+      font-size: 12pt;
+      line-height: 1.15;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .day-progress {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 10px;
+      margin: -6px 0 12px;
+    }
+
+    .progress-track {
+      height: 4px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(25, 95, 140, 0.1);
+    }
+
+    .progress-fill {
+      width: var(--progress, 0%);
+      height: 100%;
+      border-radius: inherit;
+      background: var(--blue-dark);
+      transition: width 240ms ease;
+    }
+
+    .progress-state {
+      color: var(--muted);
+      font-size: 8pt;
+      line-height: 1;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .agenda-list {
+      display: grid;
+      gap: 0;
+      position: relative;
+    }
+
+    .fika-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 0;
+    }
+
+    .fika-chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 7px;
+      padding: 7px 12px 6px;
+      border: 1px solid rgba(122, 135, 150, 0.28);
+      border-radius: 999px;
+      background: rgba(122, 135, 150, 0.1);
+      color: var(--fika);
+      font-size: 9pt;
+      line-height: 1;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: border-color 160ms ease, background-color 160ms ease;
+    }
+
+    .fika-chip:hover {
+      border-color: rgba(122, 135, 150, 0.48);
+      background: rgba(122, 135, 150, 0.14);
+    }
+
+    .fika-chip .chip-time {
+      font-size: 10pt;
+      font-weight: 400;
+    }
+
+    .agenda-item {
+      --accent: var(--blue);
+      --tint: var(--surface);
+      --strong: var(--blue);
+      display: block;
+      align-items: start;
+      position: relative;
+      min-height: 0;
+      padding: 12px 0;
+      border-left: 0;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(134, 178, 208, 0.16);
+      background: transparent;
+      animation: fade-up 420ms ease-out both;
+    }
+
+    .agenda-item:last-child {
+      padding-bottom: 12px;
+    }
+
+    .agenda-item.green {
+      --accent: var(--food);
+      --tint: #effaf1;
+      --strong: var(--food);
+    }
+
+    .agenda-item:has(.fika-chip) {
+      display: block;
+      min-height: 0;
+      padding: 9px 0;
+      border-left: 0;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(134, 178, 208, 0.16);
+      background: transparent;
+    }
+
+    .agenda-item:not(:has(.fika-chip)) > div:last-child {
+      padding-right: 0;
+    }
+
+    .agenda-item:has(.map-link) > div:not(.time) {
+      padding-right: 42px;
+    }
+
+    .map-link {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border: 0;
+      border-radius: 13px;
+      background: rgba(25, 95, 140, 0.08);
+      color: var(--accent);
+      transform: translateY(-50%);
+      transition: background-color 160ms ease, transform 160ms ease;
+    }
+
+    .map-link:hover,
+    .map-link:focus-visible {
+      background: rgba(25, 95, 140, 0.12);
+      transform: translateY(-50%) scale(1.04);
+      outline: none;
+    }
+
+    .green .map-link {
+      background: rgba(50, 205, 50, 0.1);
+    }
+
+    .green .map-link:hover,
+    .green .map-link:focus-visible {
+      background: rgba(50, 205, 50, 0.14);
+    }
+
+    .map-link svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.2;
+      transform: translateY(-0.5px);
+    }
+
+    .agenda-item[data-kind]::after {
+      display: none;
+    }
+
+    .agenda-item.is-current {
+      border-bottom-color: rgba(134, 178, 208, 0.16);
+    }
+
+    .agenda-item.is-current::before,
+    .unconference.is-current::before {
+      content: "";
+      position: absolute;
+      left: -9px;
+      top: 12px;
+      bottom: 12px;
+      width: 3px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .agenda-item.is-current:has(.fika-chip)::before {
+      top: 9px;
+      bottom: 9px;
+      background: var(--fika);
+    }
+
+    .agenda-item.is-current .fika-chip {
+      border-color: rgba(122, 135, 150, 0.62);
+      background: rgba(122, 135, 150, 0.18);
+      font-weight: 600;
+    }
+
+    .agenda-item.is-next .time::after,
+    .unconference.is-next > .time::after {
+      content: "Next";
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 6px 2px;
+      border-radius: 999px;
+      background: rgba(25, 95, 140, 0.08);
+      color: var(--blue-dark);
+      font-size: 7.5pt;
+      line-height: 1;
+      font-weight: 600;
+      vertical-align: 1px;
+    }
+
+    .type-presentation {
+      --accent: var(--talk);
+      --tint: #eef8fd;
+      --strong: var(--talk);
+    }
+
+    .type-activity,
+    .type-workshop,
+    .type-team,
+    .type-session {
+      --accent: var(--activity);
+      --tint: #eef4f8;
+      --strong: var(--activity);
+    }
+
+    .type-travel {
+      --accent: var(--travel);
+      --tint: #eef4f8;
+      --strong: var(--travel);
+    }
+
+    .type-free {
+      --accent: var(--free);
+      --tint: #eef4f8;
+      --strong: var(--free);
+    }
+
+    .time {
+      color: var(--accent);
+      font-size: 10pt;
+      line-height: 1.12;
+      font-weight: 400;
+      white-space: normal;
+      margin: 0 0 4px;
+    }
+
+    .title {
+      color: var(--strong);
+      font-size: 11pt;
+      line-height: 1.12;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .description {
+      margin-top: 2px;
+      color: var(--strong);
+      font-size: 9pt;
+      line-height: 1.24;
+      font-weight: 400;
+      overflow-wrap: anywhere;
+    }
+
+    .green .time,
+    .green .title,
+    .green .description {
+      color: var(--strong);
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .spacer {
+      margin-top: 0;
+    }
+
+    .unconference {
+      position: relative;
+      margin: 0;
+      padding: 12px 0;
+      border: 0;
+      border-bottom: 1px solid rgba(134, 178, 208, 0.16);
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .unconference.is-current {
+      border-bottom-color: rgba(134, 178, 208, 0.16);
+    }
+
+    .unconference.is-current::before {
+      background: var(--talk);
+    }
+
+    .unconference-label {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      border-radius: 0;
+      color: var(--talk);
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    .unconference-kicker {
+      display: block;
+      margin-top: 2px;
+      color: var(--talk);
+      font-size: 9pt;
+      line-height: 1.1;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    .unconference-list {
+      display: grid;
+      gap: 8px;
+      padding: 0;
+    }
+
+    .unconference-detail {
+      margin-top: 10px;
+      display: grid;
+      gap: 14px;
+      padding: 2px 0 2px 14px;
+      border-left: 1px solid rgba(60, 155, 205, 0.35);
+    }
+
+    .talk-card {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .talk-type {
+      margin: 0 0 4px;
+      color: var(--talk);
+      font-size: 10pt;
+      line-height: 1.12;
+      font-weight: 400;
+    }
+
+    .presentation-pack {
+      margin: 0;
+      padding-left: 0;
+      border-left: 0;
+    }
+
+    .presentation-pack-label {
+      margin: 0 0 8px;
+      padding: 0 0 8px;
+      border-bottom: 1px solid rgba(60, 155, 205, 0.2);
+      color: var(--talk);
+      font-size: 9pt;
+      line-height: 1.1;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .presentation-pack .agenda-item {
+      padding-left: 0;
+      border-left: 0;
+    }
+
+    .presentation-pack .agenda-item:last-child {
+      border-bottom: 1px solid rgba(134, 178, 208, 0.16);
+    }
+
+    .talk-title {
+      color: var(--talk);
+      font-size: 11pt;
+      line-height: 1.08;
+      font-weight: 600;
+    }
+
+    .talk-title strong {
+      font-weight: 600;
+    }
+
+    .talk-description {
+      margin-top: 4px;
+      color: var(--talk);
+      font-size: 9pt;
+      line-height: 1.16;
+      font-weight: 400;
+    }
+
+    .talk-description ul {
+      margin: 4px 0 0;
+      padding-left: 16px;
+    }
+
+    .talk-description li::marker {
+      color: var(--green);
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    @keyframes fade-up {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero,
+      .agenda-item {
+        animation: none;
+      }
+
+      .fika-chip {
+        transition: none;
+      }
+    }
+
+    @media (min-width: 700px) {
+      html,
+      body {
+        background: #dfeff6;
+      }
+
+      .page {
+        margin: 32px auto;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 18px 44px rgba(25, 95, 140, 0.12);
+      }
+    }
+
+    @media (max-width: 460px) {
+      .hero {
+        min-height: 178px;
+        padding: 24px 24px 22px;
+      }
+
+      .schedule-status {
+        margin-inline: 22px;
+      }
+
+      .days {
+        padding-inline: 24px;
+      }
+
+      .unconference-list {
+        padding-inline: 0;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-labelledby="page-title">
+    <header class="hero">
+      <img class="brand-logo" src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring">
+      <div>
+        <h1 id="page-title">Agenda Offsite 2026</h1>
+        <p class="intro">Fågelbro Hotel, Sweden</p>
+      </div>
+    </header>
+
+    <div class="schedule-status" aria-live="polite">
+      <div class="status-day" data-status-day>Schedule</div>
+      <div class="status-main" data-status-main><span class="status-label">Next:</span> Loading agenda</div>
+      <div class="status-upcoming" data-status-upcoming></div>
+    </div>
+
+    <div class="days">
+      <section class="day" aria-labelledby="monday-title" data-day="Monday">
+        <h2 class="day-label" id="monday-title">Monday</h2>
+        <div class="day-progress" aria-hidden="true">
+          <div class="progress-track"><div class="progress-fill"></div></div>
+          <div class="progress-state">Upcoming</div>
+        </div>
+        <div class="agenda-list">
+          <article class="agenda-item type-travel" data-kind="Travel" data-track data-start="2026-05-04T11:45:00+02:00" data-end="2026-05-04T13:00:00+02:00">
+            <div class="time">11:45</div>
+            <div>
+              <div class="title">Take off (Happy bus)</div>
+              <div class="description">Bus from central station, bus terminal</div>
+            </div>
+            <a class="map-link" href="https://maps.app.goo.gl/Fnbdijr4u7D98TqC6?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="Open bus terminal in Google Maps">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 11 18-8-8 18-2-8Z"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-04T13:00:00+02:00" data-end="2026-05-04T14:00:00+02:00">
+            <div class="time">13:00</div>
+            <div>
+              <div class="title">Lunch</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+            <a class="map-link" href="https://maps.app.goo.gl/K7BvAJu6HZpnDkmM6?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="Open Fågelbro Hotel in Google Maps">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 11 18-8-8 18-2-8Z"/>
+              </svg>
+            </a>
+          </article>
+
+          <section class="presentation-pack" aria-label="Presentations">
+            <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-04T14:00:00+02:00" data-end="2026-05-04T15:00:00+02:00">
+              <div class="time">14:00</div>
+              <div>
+                <div class="title">State of the Union</div>
+                <div class="description">Presentation by Johan Harrysson</div>
+              </div>
+            </article>
+
+            <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-04T15:00:00+02:00" data-end="2026-05-04T16:00:00+02:00">
+              <div class="time">15:00</div>
+              <div>
+                <div class="title">The Market</div>
+                <div class="description">Presentation by Rob McCuaig</div>
+              </div>
+            </article>
+          </section>
+
+          <article class="agenda-item" data-track data-title="Fika" data-start="2026-05-04T15:00:00+02:00" data-end="2026-05-04T16:00:00+02:00">
+            <div class="fika-chips" aria-label="Fika">
+              <span class="fika-chip"><span class="chip-time">15:00</span> Fika</span>
+            </div>
+          </article>
+
+          <article class="agenda-item type-free spacer" data-kind="Free time" data-track data-start="2026-05-04T16:00:00+02:00" data-end="2026-05-04T18:00:00+02:00">
+            <div class="time">ca 16:00</div>
+            <div>
+              <div class="title">Free time</div>
+              <div class="description">Open time before dinner</div>
+            </div>
+          </article>
+
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-04T18:00:00+02:00" data-end="2026-05-04T20:00:00+02:00">
+            <div class="time">18:00</div>
+            <div>
+              <div class="title">Dinner</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="day" aria-labelledby="tuesday-title" data-day="Tuesday">
+        <h2 class="day-label" id="tuesday-title">Tuesday</h2>
+        <div class="day-progress" aria-hidden="true">
+          <div class="progress-track"><div class="progress-fill"></div></div>
+          <div class="progress-state">Upcoming</div>
+        </div>
+        <div class="agenda-list">
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-05T08:00:00+02:00" data-end="2026-05-05T08:45:00+02:00">
+            <div class="time">08:00</div>
+            <div>
+              <div class="title">Breakfast</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-05T08:45:00+02:00" data-end="2026-05-05T09:45:00+02:00">
+            <div class="time">08:45-09:45</div>
+            <div>
+              <div class="title">Roadmap and implications</div>
+              <div class="description">Presentation by Rob Hoverkamp</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-travel" data-kind="Activity" data-track data-start="2026-05-05T10:00:00+02:00" data-end="2026-05-05T12:00:00+02:00">
+            <div class="time">10:00</div>
+            <div>
+              <div class="title">Archipelago tour</div>
+              <div class="description">With &quot;Öppet Hav&quot;</div>
+            </div>
+          </article>
+
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-05T12:00:00+02:00" data-end="2026-05-05T13:00:00+02:00">
+            <div class="time">12:00-13:00</div>
+            <div>
+              <div class="title">Lunch</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+          </article>
+        </div>
+
+        <section class="unconference type-presentation" aria-labelledby="unconference-title" data-track data-start="2026-05-05T13:00:00+02:00" data-end="2026-05-05T14:30:00+02:00">
+          <div class="time">13:00 - 14:30</div>
+          <h3 class="unconference-label title" id="unconference-title">UNCONFERENCE</h3>
+          <div class="unconference-kicker description">Tech talks and more fireside chats</div>
+
+          <div class="unconference-detail">
+            <article class="talk-card">
+              <div class="talk-type">IaaS</div>
+              <div class="talk-title">What actually goes into Safespring cloud stack?</div>
+              <div class="talk-description">
+                10 mins lighting talks about each part of our cloud delivery: <span class="italic">BareMetal/OpenStack, Networking, Storage and Kubernetes.</span>
+              </div>
+            </article>
+
+            <article class="talk-card">
+              <div class="talk-type">IaaS</div>
+              <div class="talk-title">Carl-Talk</div>
+              <div class="talk-description">More details to be announced.</div>
+            </article>
+          </div>
+        </section>
+
+        <div class="agenda-list">
+          <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-05T14:30:00+02:00" data-end="2026-05-05T15:15:00+02:00">
+            <div class="time">14:30 - 15:15</div>
+            <div>
+              <div class="title">Workshop</div>
+              <div class="description">Around customer personas</div>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-track data-title="Fika" data-start="2026-05-05T15:00:00+02:00" data-end="2026-05-05T15:30:00+02:00">
+            <div class="fika-chips" aria-label="Fika">
+              <span class="fika-chip"><span class="chip-time">15:00</span> Fika</span>
+            </div>
+          </article>
+
+          <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-05T15:30:00+02:00" data-end="2026-05-05T17:00:00+02:00">
+            <div class="time">15:30 - 17:00</div>
+            <div>
+              <div class="title">Team time</div>
+              <div class="description">Group time</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-free" data-kind="Övrigt" data-track data-start="2026-05-05T17:00:00+02:00" data-end="2026-05-05T18:00:00+02:00">
+            <div class="time">17:00 - 18:00</div>
+            <div>
+              <div class="title">Free time</div>
+              <div class="description">Open time before dinner</div>
+            </div>
+          </article>
+
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-05T18:00:00+02:00" data-end="2026-05-05T20:00:00+02:00">
+            <div class="time">18:00</div>
+            <div>
+              <div class="title">Dinner</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="day" aria-labelledby="departure-title" data-day="Wednesday">
+        <h2 class="day-label" id="departure-title">Wednesday</h2>
+        <div class="day-progress" aria-hidden="true">
+          <div class="progress-track"><div class="progress-fill"></div></div>
+          <div class="progress-state">Upcoming</div>
+        </div>
+        <div class="agenda-list">
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-06T08:00:00+02:00" data-end="2026-05-06T09:00:00+02:00">
+            <div class="time">08:00 - 09:00</div>
+            <div>
+              <div class="title">Breakfast</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-06T09:00:00+02:00" data-end="2026-05-06T10:30:00+02:00">
+            <div class="time">09:00 - 10:30</div>
+            <div>
+              <div class="title">Team breakout sessions</div>
+              <div class="description">Team work sessions</div>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-track data-title="Fika" data-start="2026-05-06T10:30:00+02:00" data-end="2026-05-06T11:00:00+02:00">
+            <div class="fika-chips" aria-label="Fika">
+              <span class="fika-chip"><span class="chip-time">10:30</span> Fika</span>
+            </div>
+          </article>
+
+          <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-06T11:00:00+02:00" data-end="2026-05-06T12:00:00+02:00">
+            <div class="time">10:30 - 12:00</div>
+            <div>
+              <div class="title">Team breakout sessions</div>
+              <div class="description">Continues after fika</div>
+            </div>
+          </article>
+
+          <article class="agenda-item green" data-kind="Food" data-track data-start="2026-05-06T12:00:00+02:00" data-end="2026-05-06T13:00:00+02:00">
+            <div class="time">12:00 - 13:00</div>
+            <div>
+              <div class="title">Lunch</div>
+              <div class="description">Fågelbro Hotel</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-presentation" data-kind="Presentation" data-track data-start="2026-05-06T13:00:00+02:00" data-end="2026-05-06T13:30:00+02:00">
+            <div class="time">13:00 - 13:30</div>
+            <div>
+              <div class="title">Presentation by Carl Storm</div>
+              <div class="description">More details to be announced.</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-free" data-kind="Wrap-up" data-track data-start="2026-05-06T13:30:00+02:00" data-end="2026-05-06T14:00:00+02:00">
+            <div class="time">13:30</div>
+            <div>
+              <div class="title">Goodbyes</div>
+              <div class="description">Wrap-up before departure</div>
+            </div>
+          </article>
+
+          <article class="agenda-item type-travel" data-kind="Travel" data-track data-start="2026-05-06T14:00:00+02:00" data-end="2026-05-06T15:00:00+02:00">
+            <div class="time">14:00</div>
+            <div>
+              <div class="title">Bus back to Stockholm Central Station</div>
+              <div class="description">Departure from Fågelbro Hotel</div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    (() => {
+      const statusDay = document.querySelector("[data-status-day]");
+      const statusMain = document.querySelector("[data-status-main]");
+      const statusUpcoming = document.querySelector("[data-status-upcoming]");
+      const tracked = Array.from(document.querySelectorAll("[data-track]"))
+        .map((element, index) => ({
+          element,
+          index,
+          start: new Date(element.dataset.start),
+          end: new Date(element.dataset.end),
+          title: element.dataset.title || element.querySelector(".title, .unconference-label, .fika-chip")?.textContent.trim() || "Agenda item",
+          dayElement: element.closest(".day"),
+        }))
+        .filter((item) => !Number.isNaN(item.start.valueOf()) && !Number.isNaN(item.end.valueOf()))
+        .sort((a, b) => a.start - b.start || a.index - b.index);
+
+      const daySummaries = Array.from(document.querySelectorAll(".day")).map((dayElement) => {
+        const items = tracked.filter((item) => item.dayElement === dayElement);
+        return {
+          dayElement,
+          items,
+          label: dayElement.dataset.day || dayElement.querySelector(".day-label")?.textContent.trim() || "Schedule",
+          start: items[0]?.start,
+          end: items.reduce((latest, item) => item.end > latest ? item.end : latest, items[0]?.end),
+          fill: dayElement.querySelector(".progress-fill"),
+          state: dayElement.querySelector(".progress-state"),
+        };
+      });
+
+      const getNow = () => {
+        const params = new URLSearchParams(window.location.search);
+        const debugNow = params.get("now") || window.__agendaNow;
+        const parsed = debugNow ? new Date(debugNow) : new Date();
+        return Number.isNaN(parsed.valueOf()) ? new Date() : parsed;
+      };
+
+      const escapeHtml = (value) => String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+
+      const formatMinutesUntil = (from, to) => {
+        const minutes = Math.max(1, Math.ceil((to - from) / 60000));
+        return `${minutes} min`;
+      };
+
+      const setStatus = (label, day, title, upcoming) => {
+        statusDay.textContent = day;
+        statusMain.innerHTML = `<span class="status-label">${escapeHtml(label)}:</span> ${escapeHtml(title)}`;
+
+        if (upcoming) {
+          statusUpcoming.innerHTML = `In ${escapeHtml(upcoming.minutes)}: <strong>${escapeHtml(upcoming.title)}</strong>`;
+          statusUpcoming.classList.add("is-visible");
+        } else {
+          statusUpcoming.textContent = "";
+          statusUpcoming.classList.remove("is-visible");
+        }
+      };
+
+      const updateProgress = () => {
+        const now = getNow();
+        tracked.forEach((item) => {
+          item.element.classList.remove("is-current", "is-next");
+          item.element.removeAttribute("aria-current");
+        });
+
+        const currentItems = tracked.filter((item) => now >= item.start && now < item.end);
+        const current = currentItems[currentItems.length - 1];
+        const next = tracked.find((item) => item.start > now);
+        const first = tracked[0];
+        const last = tracked[tracked.length - 1];
+
+        daySummaries.forEach((day) => {
+          if (!day.start || !day.end || !day.fill || !day.state) {
+            return;
+          }
+
+          let progress = 0;
+          let state = "Upcoming";
+          if (now >= day.end) {
+            progress = 100;
+            state = "Done";
+          } else if (now >= day.start) {
+            progress = ((now - day.start) / (day.end - day.start)) * 100;
+            state = "Now";
+          }
+
+          day.fill.style.setProperty("--progress", `${Math.max(0, Math.min(100, progress))}%`);
+          day.state.textContent = state;
+        });
+
+        if (current) {
+          current.element.classList.add("is-current");
+          current.element.setAttribute("aria-current", "true");
+          setStatus("Now", current.dayElement?.dataset.day || "Schedule", current.title, next ? {
+            minutes: formatMinutesUntil(now, next.start),
+            title: next.title,
+          } : undefined);
+          return;
+        }
+
+        if (next) {
+          next.element.classList.add("is-next");
+          setStatus("Next", next.dayElement?.dataset.day || "Schedule", next.title);
+          return;
+        }
+
+        if (first && now < first.start) {
+          first.element.classList.add("is-next");
+          setStatus("Next", first.dayElement?.dataset.day || "Schedule", first.title);
+          return;
+        }
+
+        if (last && now >= last.end) {
+          setStatus("Done", "Offsite complete", "Thanks for joining");
+        }
+      };
+
+      updateProgress();
+      window.setInterval(updateProgress, 30000);
+      window.updateAgendaProgress = updateProgress;
+    })();
+  </script>
+</body>
+</html>

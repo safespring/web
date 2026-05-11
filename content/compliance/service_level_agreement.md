@@ -11,6 +11,15 @@ general: "yes"
 toc: "Table of contents"
 language: "En"
 noindex: "x"
+outputs:
+  - HTML
+  - PRINT
+pdfcategory: "COMPLIANCE"
+pdfversion: "1.0"
+pdfpreparedby: "Safespring"
+pdfapprover: "Safespring"
+pdfclassification: "Public"
+downloadpdf: "/compliance/downloads/service_level_agreement.pdf"
 aliases:
   - /document/service_level_agreement/
 ---
@@ -37,8 +46,10 @@ service is measured independently on a calendar month basis.
 | **Object Storage (S3)** | **99.95%** |
 | **Backup Service** | **99.9%** |
 
-**Note:** Kubernetes SLO applies to the control plane only. Worker node
+{{% note title="Kubernetes SLO Scope" color="clear-blue" icon="fa-kit fa-safespring-icon" %}}
+Kubernetes SLO applies to the control plane only. Worker node
 availability is governed by the underlying Compute SLO.
+{{% /note %}}
 
 ## 2. Latency Targets
 
@@ -187,21 +198,15 @@ Financial Credit was requested.
 
 This SLA does not apply to any:
 
-(a) Scheduled Downtime or pre-communicated Maintenance Windows;
-
-(b) Hardware failure affecting individual compute hosts;
-
-(c) Features designated as beta;
-
-(d) Errors caused by factors outside of Safespring's reasonable control;
-
-(e) Errors that resulted from Customer's software, hardware, or
+1. Scheduled Downtime or pre-communicated Maintenance Windows;
+2. Hardware failure affecting individual compute hosts;
+3. Features designated as beta;
+4. Errors caused by factors outside of Safespring's reasonable control;
+5. Errors that resulted from Customer's software, hardware, or
 third-party software or hardware;
-
-(f) Errors that resulted from abuses or other behaviors that violate the
+6. Errors that resulted from abuses or other behaviors that violate the
 Agreement or Acceptable Use Policy;
-
-(g) Errors caused by quotas or resource limits listed in the self-service
+7. Errors caused by quotas or resource limits listed in the self-service
 portal.
 
 ## 6. Measurement and Monitoring

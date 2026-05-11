@@ -1,7 +1,7 @@
 ---
 title: "Safesprings compliance"
-section: "Om Safespring"
-date: 2026-04-09
+section: "Compliance"
+date: 2026-04-28
 draft: false
 intro: "En samlad översikt över Safesprings compliance-material. Här finns centrala policys, juridiska dokument och certifieringar samlade för granskningar, revisioner och upphandlingar."
 background: "/safespring-datacenter-map-background.svg"
@@ -19,9 +19,11 @@ toc: "På denna sida"
     {{< icon-block icon="fa-kit fa-eu-flag" text="GDPR Compliance" link="/gdpr/" color="#3c9bcd">}}
 {{< /icon-block-container >}}
 
+<!--
 ## Compliance package
 
-{{< document-table label="Dokument" >}}
+{{</* document-table label="Dokument" */>}}
+-->
 
 ## Våra certifieringar
 

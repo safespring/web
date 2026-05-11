@@ -25,6 +25,43 @@ noindex: "yes"
 Your demo has been successfully scheduled! We’re looking forward to meeting with you and demonstrating how Safespring can enhance your data infrastructure. In the meantime, feel free to explore the resources below to learn more about what we offer.
 {{< /ingress >}}
 
+<script>
+	(function() {
+		var storageKey = "safespringScheduleDemoGoalTracked";
+
+		function hasTracked() {
+			try {
+				return window.sessionStorage.getItem(storageKey) === "true";
+			} catch (e) {
+				return window.__scheduleDemoGoalTracked === true;
+			}
+		}
+
+		function markTracked() {
+			window.__scheduleDemoGoalTracked = true;
+			try {
+				window.sessionStorage.setItem(storageKey, "true");
+			} catch (e) {}
+		}
+
+		function trackScheduleDemoGoal() {
+			if (hasTracked() || !window._paq || !window._paq.push) {
+				return;
+			}
+			window._paq.push(["trackGoal", 7]);
+			markTracked();
+		}
+
+		trackScheduleDemoGoal();
+		window.addEventListener("load", trackScheduleDemoGoal);
+		window.addEventListener("CookieConsent", trackScheduleDemoGoal);
+		window.addEventListener("CookieConsentGiven", trackScheduleDemoGoal);
+		window.setTimeout(trackScheduleDemoGoal, 250);
+		window.setTimeout(trackScheduleDemoGoal, 1000);
+		window.setTimeout(trackScheduleDemoGoal, 2000);
+	})();
+</script>
+
 Safespring is a European public cloud platform built to meet compliance needs within the EU. With a strong focus on digital sovereignty and open standards, Safespring offers services like virtual servers, large-scale storage, and backup as a service. Our datacenters in Sweden and Norway provide a secure and proven platform for government bodies, data-driven companies, and the academic sector.
 
 {{< icon-block-container >}}
@@ -37,4 +74,3 @@ Safespring is a European public cloud platform built to meet compliance needs wi
 {{< /icon-block-container >}}
 
 {{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Open Presentation" text="Take a closer look at Safespring and our European cloud platform focused on compliance, sensitive data handling, and GDPR." >}}
-

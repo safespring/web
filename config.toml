@@ -20,6 +20,12 @@ copyright = "2025 Safespring"
 [outputs]
     home = ["HTML", "RSS", "SITEMAP"]
 
+[outputFormats.PRINT]
+    mediaType = "text/html"
+    baseName = "print"
+    isPlainText = false
+    notAlternative = true
+
 [markup]
   [markup.highlight]
     anchorLineNos = true
