@@ -289,7 +289,9 @@ Svagare signaler:
 ## En enkel mötesöppning
 
 {{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Exempel på öppning" %}}
-Hej, jag ringer från Safespring. Jag ville stämma av hur ni tänker kring applikationsdrift och moln när kraven på dataplacering, driftåtkomst och europeisk kontroll blir viktiga. Många har redan valt svensk region hos en global molnleverantör. För er, räcker det att datan ligger i Sverige, eller behöver ni också kunna dokumentera vem som driver plattformen och har åtkomst?
+Hej, jag ringer från Safespring. Jag ville stämma av hur ni tänker kring applikationsdrift och moln när kraven på dataplacering, driftåtkomst och europeisk kontroll blir viktiga. 
+
+Många har redan valt svensk region hos en global molnleverantör. För er, räcker det att datan ligger i Sverige, eller behöver ni också kunna dokumentera vem som driver plattformen och har åtkomst?
 {{% /custom-card %}}
 
 ## När kunden säger att det redan är löst
