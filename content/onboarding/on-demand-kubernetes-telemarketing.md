@@ -207,6 +207,10 @@ Det betyder att kunden till exempel:
 
 Om sådana behov inte finns kan konkurrensen vara betydligt större och kunddialogen mindre träffsäker. Därför är det bra att tidigt lyssna efter just detta.
 
+{{% note "Jämför inte, precisera" %}}
+Försök inte vinna mot AWS, Azure eller Google i telefon. Få kunden att själv precisera om deras krav handlar om fysisk plats, kontroll, åtkomst, jurisdiktion eller dokumenterbarhet.
+{{% /note %}}
+
 ## Om kunden har eget datacenter eller co-location
 
 Det är vanligt att en kund inte vill eller kan flytta all data direkt. Det behöver inte vara en invändning. Det kan tvärtom vara en bra anledning att boka ett samtal, om kunden samtidigt vill modernisera drift, applikationer eller plattform.
@@ -245,6 +249,10 @@ Du behöver inte ställa många frågor. Två till fyra räcker ofta.
 
 Exempel:
 
+- "När ni säger att data ligger i Sverige, menar ni fysisk region, eller även vem som driver plattformen och har åtkomst?"
+- "Finns det krav på att data inte bara lagras inom Sverige/EU, utan också hanteras under europeisk eller nordisk kontroll?"
+- "Vem äger frågan hos er: IT, säkerhet, juridik eller verksamheten?"
+- "Har ni dokumenterat vad som gäller för driftåtkomst, support och incidenthantering?"
 - "Är digital suveränitet eller behov av en europeisk molnleverantör viktigt för er?"
 - "Hur kör ni era applikationer idag?"
 - "Arbetar ni redan med containrar eller Kubernetes, eller är det något ni tittar på framåt?"
@@ -281,8 +289,28 @@ Svagare signaler:
 ## En enkel mötesöppning
 
 {{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Exempel på öppning" %}}
-Hej, jag ringer från Safespring. Jag ville bara stämma av om ni arbetar med moderna applikationer eller ser över hur ni vill drifta dem framåt. Det brukar vara särskilt relevant för organisationer där dataplacering, europeisk kontroll eller digital suveränitet är viktigt. Är det en fråga ni tittar på just nu?
+Hej, jag ringer från Safespring. Jag ville stämma av hur ni tänker kring applikationsdrift och moln när kraven på dataplacering, driftåtkomst och europeisk kontroll blir viktiga. Många har redan valt svensk region hos en global molnleverantör. För er, räcker det att datan ligger i Sverige, eller behöver ni också kunna dokumentera vem som driver plattformen och har åtkomst?
 {{% /custom-card %}}
+
+## När kunden säger att det redan är löst
+
+Bekräfta först. Försök sedan precisera vad kunden menar med att frågan är löst.
+
+{{% note "Svar att använda" %}}
+Bra, då har ni redan gjort ett aktivt val kring dataplacering. Är det löst på nivån fysisk region, eller även kring driftåtkomst, support, incidenthantering och tredjelandsöverföringar?
+{{% /note %}}
+
+Om kunden svarar att de har data i Sverige, gå inte i argumentation mot deras leverantör. Försök i stället förstå om kravet handlar om plats, kontroll, åtkomst eller dokumentation.
+
+## När kunden säger att det inte är intressant
+
+Håll svaret kort och pressa inte vidare. Målet är att förstå om frågan saknas helt eller redan är hanterad.
+
+{{% note "Svar att använda" %}}
+Jag förstår. Är det för att ni inte har sådana krav, eller för att ni redan har en lösning som täcker dem?
+{{% /note %}}
+
+Om kunden tydligt säger att det inte finns något behov, avsluta professionellt och lämna dörren öppen.
 
 ## Om kunden frågar "Vad är Kubernetes?"
 
