@@ -1,10 +1,11 @@
 ---
-title: "Safespring: Omfattande GDPR-skydd utöver tredjelands­överföring"
+title: "GDPR och molntjänster med svensk och europeisk kontroll"
+metatitle: "GDPR och svenska molntjänster | Safespring"
+intro: "Safespring hjälper organisationer använda molntjänster med tydligare kontroll över personuppgifter, dataplacering, biträdesansvar och europeisk regelefterlevnad."
 language: "Se"
 date: 2024-01-01T13:58:58+01:00
 draft: false
 section: "Compliance"
-intro: "Här ger vi en djupgående översikt över hur vår svenska publika molnplattform inte bara uppfyller de stränga kraven i GDPR, men också går ett steg längre för att säkerställa ditt företags dataskydd. Med Safespring får du inte bara en lösning som skyddar mot dataöverföring till tredjeland, utan en omfattande strategi som täcker fler aspekter av dataskydd och säkerhet. "
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
 socialmedia: ""
@@ -34,6 +35,10 @@ I dataskydds- och GDPR-sammanhang pratas ofta om tredjelandsöverföringar. Ett 
 Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
 Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera om vilka möjligheter vår infrastruktur ger er att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
+
+{{% note %}}
+Läs även om hur [CLOUD Act och FISA 702 påverkar molnval](/whitepaper/cloudact/), och hur Safesprings svenska och nordiska drift minskar beroendet av tredjelandsleverantörer.
+{{% /note %}}
 
 
 

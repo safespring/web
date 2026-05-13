@@ -72,9 +72,9 @@ Välj en partner som värdesätter att ni jobbar nära varandra. Dina seniora ut
 ## Söker du en svensk partner för molnlagring som värdesätter regelefterlevnad inom Sverige och EU?
 Det ska vara enkelt att möta högt ställda krav på driftsäkerhet och tillgänglighet. Därför har Safespring sett till att enkelt sammanställa vanliga frågor om IT-säkerhet och compliance – och hur du möter dem. Och vill du ha rekommendationer specifika för din verksamhet, hör av dig!
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Daniel Melin" %}}
-Jag är affärsutvecklare för Safespring i Sverige och hjälper dig gärna att komma igång.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jag är CCO på Safespring och hjälper dig gärna att komma igång.
 
 {{< inline "Ring" >}} +46855107370
-daniel.melin@safespring.com
+fredric.wallsten@safespring.com
 {{% /custom-card %}}

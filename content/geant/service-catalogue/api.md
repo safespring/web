@@ -43,7 +43,7 @@ Safespring Storage support the S3 API. The S3 API is the de-facto standard for i
 
 Safespring Backup uses the product Cloutility from Aawau. The API specification can be found here: https://portal-api.backup.sto2.safedc.net/v1/help.
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

@@ -52,7 +52,7 @@ Safespring is the preferred cloud platform for research and education. Welcome t
 
 [Read more about our OCRE agreement](/ocre)
 
-{{< contact picture="/img/kontakt/safespring-daniel-melin-2024.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
+{{< contact picture="/img/kontakt/fredric-wallsten-2023.webp" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.com" >}}
 {{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
 {{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
 

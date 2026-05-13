@@ -1,7 +1,12 @@
 ---
-title: "Using Talos Linux and Kubernetes bootstrap on OpenStack"
+title: "Bootstrap Talos Linux Kubernetes on OpenStack"
+metatitle: "Talos Linux Kubernetes on OpenStack | Bootstrap guide"
+intro: "Build a secure and repeatable Talos Linux Kubernetes cluster on OpenStack using automation, OpenStack images and infrastructure-as-code workflows."
+sidebarlinkname: "Explore Kubernetes Engine"
+sidebarlinkurl: "/en/services/containerplatform/"
+sidebarlinkname2: "Explore OpenStack Compute"
+sidebarlinkurl2: "/en/services/compute/"
 date: 2025-03-03
-intro: "We consider that automation, security and common IaC tools to be the holy trinity for a robust kubernetes platform offering. "
 draft: false
 tags: ["container"]
 showthedate: true
@@ -17,8 +22,10 @@ TOC: "In this post"
 ---
 
 {{< ingress >}}
-When it comes to container orchestration, Kubernetes is the de facto standard. And there are many different flavors of Kubernetes distributions and ways of provisioning them. So we started to explore what Talos Linux could mean for us.  
+This guide walks through the first steps of bootstrapping Talos Linux Kubernetes on OpenStack, with a focus on automation, security and repeatable platform operations. 
 {{< /ingress >}}
+
+When it comes to container orchestration, Kubernetes is the de facto standard. And there are many different flavors of Kubernetes distributions and ways of provisioning them. So we started to explore what Talos Linux could mean for us. 
 
 Things we wanted to have answered while doing that:  
 

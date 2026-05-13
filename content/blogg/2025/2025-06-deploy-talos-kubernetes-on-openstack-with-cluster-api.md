@@ -1,7 +1,12 @@
 ---
 title: "Deploy Talos Kubernetes on OpenStack with Cluster API"
+metatitle: "Talos Kubernetes on OpenStack with Cluster API and CAPO"
+intro: "Provision Talos Linux Kubernetes clusters on Safespring OpenStack with Cluster API, CAPO and ClusterResourceSets in a declarative workflow."
+sidebarlinkname: "Explore Kubernetes Engine"
+sidebarlinkurl: "/en/services/containerplatform/"
+sidebarlinkname2: "Explore OpenStack Compute"
+sidebarlinkurl2: "/en/services/compute/"
 date: 2025-06-12
-intro: "Making Use of Cluster API to Create Talos-based Kubernetes Clusters On Openstack."
 draft: false
 tags: ["container"]
 showthedate: true
@@ -15,8 +20,6 @@ section: "Tech update"
 author: "Stefan Negru"
 TOC: "In this post"
 ---
-
-# 
 
 {{< ingress >}}
 A step-by-step guide to declaratively provision, configure, and manage Talos Linux Kubernetes clusters on Safespring’s OpenStack infrastructure using CAPO and ClusterResourceSets.

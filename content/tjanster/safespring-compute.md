@@ -1,16 +1,16 @@
 ---
-title: "Stärk ditt projekt med cloud computing"
-metatitle: "Stärk ditt företag med cloud computing och lägg till VPN i Safespring"
+title: "Svensk OpenStack IaaS för reglerade verksamheter"
+metatitle: "OpenStack IaaS i Sverige och Norden | Safespring Compute"
+intro: "Safespring Compute är en svensk och europeisk IaaS-plattform för virtuella servrar, automation och skalbar infrastruktur med dataplacering i Norden och tydlig kontroll."
+cardtitle: "Compute"
+cardintro: "OpenStack-baserad IaaS med kontroll, automation och drift från Norden."
 language: "Se"
 documentation: "Compute"
-cardtitle: "Compute"
 cardicon: "fa-solid fa-server"
 cardcolor: "#417DA5"
 cardorder: "3"
 date: 2022-12-07T13:58:58+01:00
 draft: false
-intro: "Med molntjänster från Safespring får ditt företag flexibiliteten att anpassa IT-infrastrukturen efter era behov. Allt från säkra datahallar i Sverige."
-cardintro: "Svensk IaaS med robust serverkapacitet, kontroll och hög flexibilitet."
 background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Se demo"
@@ -18,8 +18,8 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
-sidebarimage: "safespring-daniel.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 aliases:
@@ -40,10 +40,10 @@ megamenu: "yes"
 {{< /icon-block-container >}}
 
 
-## Infrastructure cloud services
+## OpenStack-baserad IaaS i Sverige
 
 {{< ingress >}}
-Upptäck en flexibel IT-lösning som skapar möjligheter istället för att binda upp kapital.
+Safespring Compute ger organisationer en flexibel infrastrukturplattform för virtuella servrar, automation och skalbar drift utan hyperscaler-inlåsning.
 {{< /ingress >}}
 
 Med Safespring kan du skapa, starta och stoppa virtuella maskiner med bara några få enkla steg. Det är enkelt att anpassa efter dina behov tack vare vår självbetjäning och fullständiga automation.

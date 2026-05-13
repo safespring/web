@@ -1,7 +1,12 @@
 ---
-title: "OpenStack Cinder CSI volume provisioner"
+title: "Install the OpenStack Cinder CSI driver for Kubernetes"
+metatitle: "OpenStack Cinder CSI driver for Kubernetes and OpenShift"
+intro: "Configure the OpenStack Cinder CSI driver for OKD, OpenShift or Kubernetes so clusters can provision persistent volumes backed by OpenStack block storage."
+sidebarlinkname: "Explore Kubernetes Engine"
+sidebarlinkurl: "/en/services/containerplatform/"
+sidebarlinkname2: "Explore OpenStack Compute"
+sidebarlinkurl2: "/en/services/compute/"
 date: "2024-03-13"
-intro: "This guide is designed to help you effortlessly integrate the Cinder CSI Volume Provisioner into your OKD or OpenShift cluster."
 draft: false
 section: "Tech update"
 author: "Niklas Hagman"
@@ -12,10 +17,6 @@ eventbild: ""
 socialmediabild: ""
 language: "En"
 TOC: "In this guide"
-sidebarlinkname: "GitHub repository"
-sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
-sidebarlinkname2: "GitHub repository"
-sidebarlinkurl2: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 ---
 
 
