@@ -1,8 +1,9 @@
 ---
-title: "Run your workloads in the cool, calm Swedish cloud"
-intro: "We manage the Kubernetes control plane; you focus on building and scaling. Deploy containers in minutes with built-in security, monitoring, and Swedish data privacy."
+title: "Safespring Kubernetes Engine"
+metatitle: "Managed Kubernetes in Sweden and the EU | Safespring Kubernetes Engine"
+intro: "Deploy containers on a managed Kubernetes control plane with Nordic operations, clear platform boundaries and control over where your workloads and data run."
 language: "En"
-date: 2024-01-01T13:58:58+01:00
+date: 2026-05-13
 draft: false
 layout: "containers"
 ---

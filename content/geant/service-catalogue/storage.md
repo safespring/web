@@ -43,7 +43,7 @@ None.
 
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Info:" >}} +46855107370 or ocre@safespring.com
 {{% /custom-card %}}

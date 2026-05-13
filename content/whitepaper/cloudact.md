@@ -1,9 +1,10 @@
 ---
-title: "Hur du hanterar det osäkra läget i och med GDPR och CLOUD Act"
+title: "CLOUD Act, FISA 702 och GDPR för svenska molntjänster"
+metatitle: "CLOUD Act, FISA 702 och GDPR | Juridisk risk i molnet"
+intro: "Förstå hur CLOUD Act och FISA 702 påverkar europeiska organisationers molnval, och varför svensk och europeisk drift kan minska juridisk och operativ risk."
 section: "White Paper"
 language: "Se"
 date: "2019-07-09"
-intro: "EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
 draft: false
 tags: ["Svenska"]
 author: "Martin Millnert"
@@ -23,7 +24,7 @@ toc: "Innehåll"
 
 
 {{< ingress >}}
-Detta white paper handlar om EUs- och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta.
+Amerikansk lagstiftning kan påverka europeiska organisationers molnval även när data lagras i Europa. Den här genomgången förklarar riskerna och vilka frågor som bör ställas vid val av molnleverantör.
 {{< /ingress >}}
 
 Allmänna dataskyddsförordningen (eng: GDPR) trädde i kraft den 25:e maj 2018 och ersatte Personuppgiftslagen (PUL). Den är varken början eller slutet på EU:s sedan länge pågående ansträngningar att förbättra skyddet av individens data samt rätt till privatliv. Dessa rättigheter är grundläggande mänskliga rättigheter i EU och samtliga medlemsstater är bundna av dem på områden som faller under EU:s kompetens i och med ikraftträdandet av Lissabonfördraget 20091. EU förstärker därmed sitt försprång över USA när det gäller rättsliga skydd för individers rätt till privatliv och data.

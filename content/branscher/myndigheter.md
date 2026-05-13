@@ -1,17 +1,20 @@
 ---
-title: "Safespring är en helt svensk molnplattform"
-cardtitle: "Safespring för myndigheter"
+title: "Molntjänster för svenska myndigheter"
+metatitle: "Molntjänster för myndigheter i Sverige | Safespring"
+intro: "Svensk molnplattform för myndigheter som behöver digital suveränitet, dataplacering i Sverige och Norden, öppna standarder och stöd för upphandling via ramavtal."
+cardtitle: "Myndigheter"
+cardintro: "Svenska molntjänster för offentlig sektor med kontroll, säkerhet och digital suveränitet."
+sidebarlinkname: "Prata med Fredric"
+sidebarlinkurl: "/kontakt/"
+sidebarlinkname2: "Läs om Cloud Act"
+sidebarlinkurl2: "/whitepaper/cloudact/"
 date: 2022-03-03T10:47:25+01:00
 card: "safespring_card_31.svg"
 draft: false
-intro: "Safespring tillhandahåller säkra och hållbara molntjänster utan inlåsning"
 background: "safespring-government-background.svg"
 aliases:
     - /myndighet/
-sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
-sidebarlinkname: "Se fireside chat"
 banner: "blue-hover-blogg"
-cardtitle: "Myndigheter"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
 cardintro: ""
@@ -31,7 +34,7 @@ TOC: "På denna sida"
 ## Svenska molntjänster
 
 {{< ingress >}}
-Digital suveränitet genom svenska molntjänster byggd med öppna standarder och öppen källkod.
+Safespring hjälper myndigheter använda molntjänster med större kontroll över dataplacering, jurisdiktion och leverantörsberoende. Plattformen bygger på öppna standarder och levereras från Sverige och Norden.
 {{</ ingress >}}
 
 Våra molntjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta av den kostnadseffektivitet och flexibilitet som moderna molntjänster ger.
@@ -43,8 +46,8 @@ Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att det l
 {{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
 Jag är ansvarig affärsutvecklare för akademisk och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.  
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59 
-[daniel.melin @safespring.com](daniel.melin@safespring.com)
+{{< inline "Ring" >}} +46 76-629 25 02
+[fredric.wallste n@safespring.com](fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< distance >}}

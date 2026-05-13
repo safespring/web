@@ -1,7 +1,12 @@
 ---
-title: "A step-by-step guide to running a GPU-accelerated local LLM on Safespring"
+title: "Run a local LLM on Safespring GPU infrastructure"
+metatitle: "Run a local LLM with Ollama on Safespring GPU instances"
+intro: "Set up NVIDIA drivers, Ollama and Open-WebUI on an Ubuntu GPU instance in Safespring to run a local LLM with browser access and full data control."
+sidebarlinkname: "Explore AI and GPU"
+sidebarlinkurl: "/en/services/machine-learning-ai-gpu-resources/"
+sidebarlinkname2: "Book demo"
+sidebarlinkurl2: "/en/contact/"
 date: 2025-12-16
-intro: "Install NVIDIA server drivers and Ollama on Ubuntu 24.04, then add Open-WebUI to run a local LLM with a browser chat interface."
 draft: false
 tags: ["container"]
 showthedate: true
@@ -14,10 +19,6 @@ sectiontext: "Tech Update"
 section: "Tech update"
 author: "Gabriel Paues"
 TOC: "In this post"
-sidebarlinkurl: "/containers"
-sidebarlinkname: "Explore Kubernetes Engine"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Book demo"
 ---
 
 {{< ingress >}}
@@ -30,7 +31,7 @@ We’ll start from a fresh instance, install the recommended NVIDIA server drive
     image="/img/graphics/safespring-image.svg"
     alt="Safespring GPU-enabled instances for running local LLMs with Ollama"
     cardtitle="Run local LLMs on Safespring GPUs"
-    text="Safespring’s container platform lets you provision GPU-enabled Ubuntu instances in minutes, with predictable performance and full control of your environment."
+    text="Need private AI infrastructure? Safespring gives teams GPU-capable cloud resources with Nordic operations and control over where workloads and data run."
     link="/containers/"
     linktext="Explore GPU instances"
 >}}

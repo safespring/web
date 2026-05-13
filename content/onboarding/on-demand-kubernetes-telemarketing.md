@@ -378,7 +378,7 @@ Då är det bättre att avsluta professionellt och lämna dörren öppen.
 
 {{< accordion-script >}}
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Behöver du hjälp inför ett samtal?" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Behöver du hjälp inför ett samtal?" %}}
 Om du är osäker på hur du ska formulera dig inför en specifik kund, kontakta Safespring så hjälper vi dig att förbereda rätt vinkel inför samtalet.
 
 {{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  

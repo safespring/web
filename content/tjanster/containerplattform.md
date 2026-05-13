@@ -1,18 +1,18 @@
 ---
-title: "Safespring On-demand Kubernetes"
+title: "Safespring Kubernetes Engine"
 section: "Platform"
 sectionhighlight: ""
-cardtitle: "Containers"
-megamenutitle: "Containrar"
-cardintro: "Managerad Kubernetes med kontroll, tydliga gränser och digital suveränitet."
+cardtitle: "Kubernetes"
+megamenutitle: "Kubernetes"
+cardintro: "Managerad kontrollplan, tydliga gränser och digital suveränitet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "1"
-metatitle: "Managerad Kubernetes i Sverige och EU | Safespring On-demand Kubernetes"
+metatitle: "Kubernetes med managerad kontrollplan i Sverige och EU | Safespring Kubernetes Engine"
 card: "safespring_card_12.svg"
 date: 2026-04-01
 draft: false
-intro: "En managerad Kubernetes-tjänst som kombinerar self-service-provisionering, managerad kontrollplan, modern nätverkshantering och digital suveränitet för verksamheter som behöver både tempo och kontroll."
+intro: "En Kubernetes för organisationer som behöver kontroll, regelefterlevnad och europeisk drift."
 background: ""
 sidebarlinkname: "Kontakta oss"
 sidebarlinkurl: "/kontakt/"
@@ -29,7 +29,7 @@ language: "Se"
 ---
 
 {{< ingress >}}
-Safespring On-demand Kubernetes är en managerad Kubernetes-tjänst för att köra containeriserade applikationer på Safesprings infrastruktur, med self-service-provisionering och managerad kontrollplan.
+Safespring Kubernetes Engine ger utvecklingsteam en färdig plattform för containeriserade workloads, driftad från Sverige och Norge. Ni får snabbare väg till produktion utan att ge upp kontroll över jurisdiktion, säkerhet och plattformsgränser.
 {{</ ingress >}}
 
 Tjänsten är utformad för verksamheter som behöver starkare kontroll över dataplacering, jurisdiktion och operativa gränser, inklusive miljöer med krav på GDPR, regelefterlevnad och digital suveränitet.
@@ -44,6 +44,27 @@ Det praktiska värdet är att ingenjörsteam får en plattform som är redo att 
     {{< icon-block icon="fas fa-leaf" text="100% förnybar energi" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-sliders" text="Du har kontrollen" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
+
+{{% note "Passar det här er?" %}}
+
+Safespring Kubernetes Engine passar särskilt bra när ni:
+
+- vill köra Kubernetes utan att själva äga hela kontrollplanet
+- har krav på GDPR, dataplacering eller digital suveränitet
+- behöver en tydligare gräns mellan plattformsteam och applikationsteam
+- vill undvika långsiktig inlåsning i hyperscaler-specifika tjänster
+- behöver en nordisk partner snarare än bara en global molnplattform
+{{% /note %}}
+
+## När Safespring är ett bättre val än hyperscaler Kubernetes
+
+| Behov | Safespring Kubernetes Engine |
+|---|---|
+| Data inom Norden/EU | Drift från Safesprings svenska och norska datahallar |
+| Tydlig plattformsgräns | Managerad kontrollplan och dokumenterat ansvar |
+| Mindre inlåsning | Kubernetes och öppna komponenter i stället för proprietära ekosystem |
+| Compliance-dialog | Svensk/nordisk leverantör med vana av reglerade miljöer |
+
 
 ## Varför arkitekturen spelar roll
 
@@ -69,11 +90,11 @@ Arkitekturen är utformad för att ge er:
 
 Det är också här digital suveränitet blir praktisk i stället för abstrakt. Plattformen levereras från Safesprings datahallar i Sverige och Norge, drivs med 100% förnybar energi och är byggd för verksamheter som vill ha starkare kontroll över jurisdiktion, dataplacering och långsiktigt oberoende från hyperscaler-låsning.
 
-## Fördjupa dig när du vill ha detaljerna
+## Fördjupa dig inför teknisk utvärdering
 
-Om du vill förstå tjänsten mer tekniskt är det här de mest användbara nästa läsningarna:
+När du vill validera arkitektur, ansvarsfördelning och driftmodell är det här de mest användbara nästa stegen.
 
-{{< manual-document-table >}}
+{{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="Vad du får från dag ett"
     href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
@@ -96,13 +117,6 @@ Om du vill förstå tjänsten mer tekniskt är det här de mest användbara näs
     description="Provisionering, kontrollplanslayouter och komponentstöd."
   >}}
   {{< manual-document-row
-    title="Trafikhantering"
-    href="https://docs.safespring.com/kubernetes/manage-traffic/"
-    icon="fa-solid fa-route"
-    label="Guide"
-    description="Gateway API, Traefik och hur trafikflöden hanteras i plattformen."
-  >}}
-  {{< manual-document-row
     title="Portalöversikt"
     href="https://docs.safespring.com/kubernetes/portal-overview/"
     icon="fa-solid fa-table-columns"
@@ -123,14 +137,32 @@ Om du vill förstå tjänsten mer tekniskt är det här de mest användbara näs
     label="Guide"
     description="Den nuvarande observability-gränsen för loggar, metrics och uppföljning."
   >}}
+  {{< manual-document-row
+    title="Trafikhantering"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik och hur trafikflöden hanteras i plattformen."
+  >}}
 {{< /manual-document-table >}}
 
 {{< distance >}}
 
-## Prata med oss om ert behov
+## Räkna på en ungefärlig månadskostnad
+
+Använd kalkylatorn för att uppskatta kostnaden för kontrollplan, worker-noder och central blocklagring. Den är tänkt som en snabb fingervisning inför teknisk och kommersiell utvärdering.
+
+{{< container-price-calculator >}}
+
+{{< distance >}}
+
+<div id="get-started"></div>
+
+## Vill du se hur plattformen fungerar i praktiken?
+Boka en kort genomgång med en cloud architect. Vi kan visa hur kluster skapas, hur ansvarsfördelningen ser ut och hur tjänsten passar era krav på drift, säkerhet och regelefterlevnad.
+
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss" %}}
-Har du frågor om hur den här tjänsten kan stödja er modernisering, styrning, hållbarhet eller digitala suveränitet? Kontakta oss för en första dialog om behov, målbild och nästa steg.
 
 {{< inline "Ring" >}} [+46 76-629 25 02](tel:+46766292502)  
 {{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)

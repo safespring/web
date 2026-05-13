@@ -31,7 +31,7 @@ Safespring provides MariaDB, MySQL, Redis, PostgreSQL and MongoDB as services on
 - Backups stored in Safespring’s S3 Storage service in another datacenter.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

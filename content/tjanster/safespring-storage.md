@@ -1,5 +1,8 @@
 ---
-title: "Safespring S3: Skalbar och högpresterande objektlagring"
+title: "S3-kompatibel objektlagring i Sverige och Norden"
+metatitle: "S3 Storage i Sverige och Norden | Safespring Storage"
+intro: "S3-kompatibel objektlagring för organisationer som behöver skalbar lagring, objektlåsning, låg latency och kontroll över data i svenska och nordiska datacenter."
+cardintro: "S3-kompatibel objektlagring med kontroll, objektlåsning och nordisk drift."
 language: "Se"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
@@ -9,8 +12,6 @@ cardcolor: "#f4670f"
 cardorder: "4"
 date: 2024-09-22T10:50:10+02:00
 draft: false
-intro: "Molnbaserad lagring som tillhandahålls från våra datacenter i Norden och bygger på den marknadsledande lagringsteknologin Ceph."
-cardintro: "Skalbar objektlagring med kontroll, prestanda och drift från Norden."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Kom igång"
@@ -20,8 +21,8 @@ sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
 socialmedia: "/safespring-start.jpg"
-sidebarimage: "safespring-daniel.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 megamenu: "yes"
@@ -43,7 +44,7 @@ aliases:
 ## S3 Storage - lagring i molnet
 
 {{< ingress >}}
-Safespring Storage är en S3-kompatibel objektlagrings&shy;lösning utformad för att möta europeiska organisationers behov. Med fokus på compliance, skalbarhet och prestanda erbjuder Safespring Storage en tillförlitlig grund för dina lagringsbehov.
+Safespring Storage är objektlagring för verksamheter som behöver S3-kompatibilitet, skalbarhet och kontroll över dataplacering utan att låsa sig till en global hyperscaler.
 {{< /ingress >}}
 
 Med **datakryptering** kan du skydda dina data med end-to-end-kryptering och säkerställa integritet och konfidentialitet under överföring och lagring. Vår funktion **objektlåsning** skyddar dina kritiska data från oavsiktlig radering eller ransomware-attacker genom att göra objekt oföränderliga under en specifik tidsperiod.
@@ -107,7 +108,7 @@ Ja, Safespring Storage är fullt S3-kompatibelt, vilket gör att du kan använda
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
 Upptäck den fulla potentialen i dina data med Safespring Storage. Vårt team är redo att hjälpa dig att hitta den perfekta lagringslösningen för ditt företags behov.
 
 [hello@safespring.com](mailto:hello@safespring.com)
