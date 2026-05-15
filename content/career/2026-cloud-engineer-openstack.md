@@ -85,6 +85,9 @@ Salary range: €50.000 - €80.000 annually
 
 We care more about how you solve problems than how polished your CV looks. Click *Apply*, drop us what you have, and we’ll take it from there. Looking forward to getting to know you!
 
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/fc1bd372-3fda-49d2-b19f-bc94c0a28b99/27ad59d4-2c20-4aba-8de6-69c3848bc457#applyNow" >}}
+
 ## About Safespring
 
 At Safespring, we’re giving European organizations an alternative to the hyperscalers. Powered by open source our sustainable and European-based cloud infrastructure puts security, transparency, and digital sovereignty first.
@@ -129,4 +132,3 @@ As soon as possible, we will interview candidates on rolling basis
 €50.000 - €80.000 annually
 {{% /note %}}
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/fc1bd372-3fda-49d2-b19f-bc94c0a28b99/27ad59d4-2c20-4aba-8de6-69c3848bc457#applyNow" >}}
