@@ -17,10 +17,7 @@ sidebarlinkurl: "#contact"
 sidebarlinkname2: "Price for Storage"
 sidebarlinkurl2: "/price/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
-section: "Service"
 section: "Public Cloud"
-documentation: "Storage"
-socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
   - /en/services/storage/
