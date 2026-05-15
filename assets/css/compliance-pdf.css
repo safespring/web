@@ -1,0 +1,330 @@
+@page {
+  size: A4;
+  margin: 36mm 0 24mm;
+}
+
+@page:first {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #fff;
+  color: #323232;
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pdf-document {
+  background: #fff;
+}
+
+.pdf-cover {
+  position: relative;
+  min-height: 297mm;
+  padding: 18mm 28mm 22mm;
+  page-break-after: always;
+  background: #e8eff3;
+}
+
+.pdf-cover__logo {
+  display: block;
+  width: 57mm;
+  height: auto;
+  margin-bottom: 21mm;
+}
+
+.pdf-cover__rule {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 27mm;
+  background: #417da5;
+}
+
+.pdf-cover__category {
+  margin: 0 0 3mm;
+  color: #19b832;
+  font: 600 11px/1 montserrat, Arial, sans-serif;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.pdf-cover h1 {
+  max-width: 150mm;
+  margin: 0 0 9mm;
+  color: #00679a;
+  font: 300 38px/1.08 hind, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.pdf-cover__intro {
+  max-width: 148mm;
+  margin: 0 0 20mm;
+  color: #4d5b63;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.pdf-meta {
+  width: 100%;
+  margin: 0;
+  color: #3d4549;
+}
+
+.pdf-meta div {
+  display: grid;
+  grid-template-columns: 43mm 1fr;
+  gap: 12mm;
+  padding: 2.8mm 0;
+  border-bottom: 1px solid rgba(65, 125, 165, .18);
+}
+
+.pdf-meta dt,
+.pdf-meta dd {
+  margin: 0;
+  font-weight: 300;
+}
+
+.pdf-cover__footer {
+  position: absolute;
+  left: 28mm;
+  right: 28mm;
+  bottom: 23mm;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7mm;
+  border-top: 1px solid #417da5;
+  color: #00679a;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.pdf-cover__footer div:last-child {
+  text-align: right;
+}
+
+.pdf-content {
+  padding: 7mm 25mm 10mm;
+}
+
+.pdf-content__header {
+  display: none;
+}
+
+.pdf-content__body {
+  max-width: 160mm;
+}
+
+.pdf-content h1,
+.pdf-content h2,
+.pdf-content h3,
+.pdf-content h4 {
+  color: #00679a;
+  font-family: hind, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  page-break-after: avoid;
+}
+
+.pdf-content h1 {
+  margin: 0 0 7mm;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.pdf-content h2 {
+  margin: 11mm 0 4mm;
+  font-size: 23px;
+  line-height: 1.15;
+}
+
+.pdf-content h3 {
+  margin: 7mm 0 3mm;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.pdf-content h4 {
+  margin: 5mm 0 2mm;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.pdf-content p {
+  margin: 0 0 4mm;
+}
+
+.pdf-content a {
+  color: #00679a;
+  text-decoration: none;
+}
+
+.pdf-content ul,
+.pdf-content ol {
+  margin: 0 0 5mm 8mm;
+  padding: 0;
+}
+
+.pdf-content ol {
+  counter-reset: list-item;
+  list-style: none;
+}
+
+.pdf-content li {
+  margin: 0 0 1.5mm;
+  padding-left: 1.5mm;
+}
+
+.pdf-content ol > li {
+  position: relative;
+  counter-increment: list-item;
+  padding-left: 8mm;
+}
+
+.pdf-content ol > li::before {
+  position: absolute;
+  left: 0;
+  min-width: 6mm;
+  color: #3c9bcd;
+  content: counters(list-item, ".") ".";
+  font-weight: 600;
+  text-align: right;
+}
+
+.pdf-content ol ol {
+  margin-top: 1.5mm;
+  margin-left: 0;
+}
+
+.pdf-content ol ol > li {
+  padding-left: 11mm;
+}
+
+.pdf-content ol ol > li::before {
+  min-width: 9mm;
+}
+
+.pdf-content li::marker {
+  color: #3c9bcd;
+  font-weight: 600;
+}
+
+.pdf-content blockquote {
+  margin: 6mm 0;
+  padding: 0 0 0 5mm;
+  border-left: 2px solid #3c9bcd;
+  color: #4d5b63;
+}
+
+.pdf-content table {
+  width: 100%;
+  margin: 6mm 0 8mm;
+  border-collapse: collapse;
+  break-inside: auto;
+  font-size: 9.5px;
+  line-height: 1.25;
+}
+
+.pdf-content thead {
+  display: table-header-group;
+}
+
+.pdf-content tr {
+  break-inside: avoid;
+}
+
+.pdf-content th,
+.pdf-content td {
+  padding: 3mm 3mm;
+  border-bottom: 1px solid rgba(65, 125, 165, .35);
+  vertical-align: top;
+  text-align: left;
+}
+
+.pdf-content th {
+  background: #e8eff3;
+  color: #323232;
+  font-weight: 600;
+}
+
+.pdf-content tbody tr:nth-child(even) {
+  background: rgba(232, 239, 243, .55);
+}
+
+.pdf-content em {
+  color: #4d5b63;
+}
+
+.note-dotted {
+  margin: 6mm 0;
+  padding: 4mm 5mm;
+  border-left: 2px solid var(--note-accent, #3c9bcd);
+  background: #f4f8fa;
+  break-inside: avoid;
+}
+
+.note-dotted-title {
+  margin: 0 0 2mm !important;
+  color: #00679a;
+  font-weight: 600;
+}
+
+.note-dotted-icon {
+  display: none;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 22mm 1fr;
+  gap: 5mm;
+  align-items: center;
+  margin: 6mm 0;
+  padding: 4mm 0;
+  border-top: 1px solid rgba(65, 125, 165, .2);
+  border-bottom: 1px solid rgba(65, 125, 165, .2);
+  break-inside: avoid;
+}
+
+.contact-image {
+  width: 22mm;
+  height: 22mm;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-name {
+  color: #00679a;
+  font: 300 17px/1.2 hind, Arial, sans-serif;
+}
+
+.contact-title,
+.contact-link {
+  color: #4d5b63;
+  font-size: 10px;
+}
+
+.contact-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3mm;
+  margin-top: 2mm;
+}
+
+.contact-link i {
+  display: none;
+}
+
+script,
+.pdf-content .button,
+.pdf-content #button,
+.pdf-content .text-button {
+  display: none !important;
+}

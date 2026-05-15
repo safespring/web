@@ -53,6 +53,37 @@
   {{ end }}
 </div>
 {{ if .Params.ai }}{{ partial "ai-disclaimer.html" . }}{{ end }}
+    {{ $documentMeta := dict }}
+    {{ with .File }}
+      {{ with index $.Site.Data.compliance_meta .BaseFileName }}
+        {{ $documentMeta = . }}
+      {{ end }}
+    {{ end }}
+    {{ $documentVersion := .Params.pdfversion | default "1.0" }}
+    {{ $documentID := "" }}
+    {{ with $documentMeta }}
+      {{ with .version }}{{ $documentVersion = . }}{{ end }}
+      {{ with .id }}{{ $documentID = . }}{{ end }}
+    {{ end }}
+    {{ with .Params.downloadpdf }}
+      <div class="document-download">
+        <a class="button document-download__button" href="{{ . }}" download>
+          <i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;{{ if eq $.Site.Language.Lang "sv" }}Ladda ner PDF{{ else if eq $.Site.Language.Lang "nb" }}Last ned PDF{{ else if eq $.Site.Language.Lang "da" }}Hent PDF{{ else }}Download PDF{{ end }}
+        </a>
+        <dl class="document-download__meta">
+          <div>
+            <dt>Version</dt>
+            <dd>{{ $documentVersion }}</dd>
+          </div>
+          {{ with $documentID }}
+          <div>
+            <dt>ID</dt>
+            <dd>{{ . }}</dd>
+          </div>
+          {{ end }}
+        </dl>
+      </div>
+    {{ end }}
     {{ .Content }}
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}

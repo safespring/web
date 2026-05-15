@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ .Params.language | default .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }} | Safespring</title>
+  {{ partial "local-font-faces.html" . }}
+  {{ $pdfCSS := resources.Get "css/compliance-pdf.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $pdfCSS.RelPermalink }}">
+  {{ $pdfDate := .Params.pdfdate }}
+  {{ if not $pdfDate }}
+    {{ with .GitInfo }}
+      {{ $pdfDate = .AuthorDate.Format "2006-01-02" }}
+    {{ end }}
+  {{ end }}
+  {{ if not $pdfDate }}
+    {{ $pdfDate = .Date.Format "2006-01-02" }}
+  {{ end }}
+  {{ $pdfMeta := dict }}
+  {{ with .File }}
+    {{ with index $.Site.Data.compliance_meta .BaseFileName }}
+      {{ $pdfMeta = . }}
+    {{ end }}
+  {{ end }}
+  {{ $pdfVersion := .Params.pdfversion | default "1.0" }}
+  {{ $pdfID := "" }}
+  {{ with $pdfMeta }}
+    {{ with .version }}{{ $pdfVersion = . }}{{ end }}
+    {{ with .id }}{{ $pdfID = . }}{{ end }}
+  {{ end }}
+</head>
+<body data-pdf-date="{{ $pdfDate }}" data-pdf-version="{{ $pdfVersion }}" data-pdf-id="{{ $pdfID }}">
+  <article class="pdf-document">
+    <section class="pdf-cover">
+      <img class="pdf-cover__logo" src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring">
+      <div class="pdf-cover__rule"></div>
+
+      <p class="pdf-cover__category">{{ .Params.pdfcategory | default "COMPLIANCE" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.intro }}<p class="pdf-cover__intro">{{ . }}</p>{{ end }}
+
+      <dl class="pdf-meta">
+        <div>
+          <dt>Version</dt>
+          <dd>{{ $pdfVersion }}</dd>
+        </div>
+        {{ with $pdfID }}
+        <div>
+          <dt>ID</dt>
+          <dd>{{ . }}</dd>
+        </div>
+        {{ end }}
+        <div>
+          <dt>Prepared by</dt>
+          <dd>{{ .Params.pdfpreparedby | default "Safespring" }}</dd>
+        </div>
+        <div>
+          <dt>Approver</dt>
+          <dd>{{ .Params.pdfapprover | default "Safespring" }}</dd>
+        </div>
+        <div>
+          <dt>Date</dt>
+          <dd>{{ $pdfDate }}</dd>
+        </div>
+        <div>
+          <dt>Classification</dt>
+          <dd>{{ .Params.pdfclassification | default "Public" }}</dd>
+        </div>
+      </dl>
+
+      <div class="pdf-cover__footer">
+        <div>
+          Safespring AB<br>
+          Rattarvagen 3, 169 68 Solna<br>
+          www.safespring.com
+        </div>
+        <div>
+          Tel: +46 (0)8-551 073 70<br>
+          hello@safespring.com
+        </div>
+      </div>
+    </section>
+
+    <section class="pdf-content">
+      <header class="pdf-content__header">
+        <span>{{ .Title }}</span>
+        <span>{{ $pdfDate }}</span>
+      </header>
+      <main class="pdf-content__body">
+        {{ .Content }}
+      </main>
+    </section>
+  </article>
+</body>
+</html>

@@ -184,6 +184,27 @@ source = 'content/en'
 target = 'content'
 lang = 'en'
 
+# English compliance documents rendered for every language.
+[[module.mounts]]
+source = 'content/compliance'
+target = 'content/compliance'
+lang = 'sv'
+
+[[module.mounts]]
+source = 'content/compliance'
+target = 'content/compliance'
+lang = 'en'
+
+[[module.mounts]]
+source = 'content/compliance'
+target = 'content/compliance'
+lang = 'nb'
+
+[[module.mounts]]
+source = 'content/compliance'
+target = 'content/compliance'
+lang = 'da'
+
 
 
 [params]
@@ -197,6 +218,12 @@ lang = 'en'
 
 [outputs]
     home = ["HTML", "RSS", "SITEMAP"]
+
+[outputFormats.PRINT]
+    mediaType = "text/html"
+    baseName = "pdf"
+    isPlainText = false
+    notAlternative = true
 
 [markup]
   [markup.highlight]

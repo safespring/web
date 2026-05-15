@@ -5843,6 +5843,46 @@ details[open] summary {
 
 /* DOCUMENT TABLE */
 
+.document-download {
+  margin: 0 0 2rem;
+}
+
+.document-download__button {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.document-download__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem 1.1rem;
+  margin: .8rem 0 0;
+  color: rgba(50, 50, 50, 0.72);
+  font: 400 .82rem/1.2 montserrat;
+}
+
+.document-download__meta div {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .35rem;
+}
+
+.document-download__meta dt,
+.document-download__meta dd {
+  margin: 0;
+}
+
+.document-download__meta dt {
+  color: rgba(25, 95, 140, 0.68);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.document-download__meta dd {
+  font-variant-numeric: tabular-nums;
+}
+
 .compliance-document-table {
   margin: 1.5rem 0 2.5rem;
   position: relative;
@@ -5980,6 +6020,27 @@ details[open] summary {
   color: rgba(25, 95, 140, 0.68);
   cursor: pointer;
   line-height: 1;
+}
+
+.compliance-document-table__download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background-color: rgba(244, 103, 15, 0.08);
+  color: #f4670f;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: background-color .18s ease, color .18s ease;
+}
+
+.compliance-document-table__download:hover,
+.compliance-document-table__download:focus-visible {
+  background-color: #f4670f;
+  color: #fff;
 }
 
 .compliance-document-table__arrow {

@@ -1,5 +1,17 @@
 {{ $pages := where .Page.RegularPages "Params.general" "yes" }}
 {{ $label := default "Document" (.Get "label") }}
+{{ $downloadLabel := "Download PDF" }}
+{{ $infoLabel := "Show description for" }}
+{{ if eq .Page.Site.Language.Lang "sv" }}
+  {{ $downloadLabel = "Ladda ner PDF" }}
+  {{ $infoLabel = "Visa beskrivning för" }}
+{{ else if eq .Page.Site.Language.Lang "nb" }}
+  {{ $downloadLabel = "Last ned PDF" }}
+  {{ $infoLabel = "Vis beskrivelse for" }}
+{{ else if eq .Page.Site.Language.Lang "da" }}
+  {{ $downloadLabel = "Hent PDF" }}
+  {{ $infoLabel = "Vis beskrivelse for" }}
+{{ end }}
 
 {{ if gt (len $pages) 0 }}
 <div class="compliance-document-table">
@@ -21,8 +33,14 @@
       <div class="compliance-document-table__actions">
         <span class="compliance-document-table__label">{{ $label }}</span>
 
+        {{ with $page.Params.downloadpdf }}
+        <a class="compliance-document-table__download" href="{{ . }}" download aria-label="{{ $downloadLabel }}: {{ $page.Title }}">
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+        </a>
+        {{ end }}
+
         <div class="compliance-document-table__info-wrap">
-          <button type="button" class="compliance-document-table__info" aria-label="Visa beskrivning för {{ $page.Title }}">
+          <button type="button" class="compliance-document-table__info" aria-label="{{ $infoLabel }} {{ $page.Title }}">
             <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
           </button>
         </div>

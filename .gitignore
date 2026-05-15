@@ -4,6 +4,8 @@ Thumbs.db
 
 public/
 
+data/compliance_meta.json
+
 
 node_modules/
 
