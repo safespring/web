@@ -22,7 +22,7 @@ aliases:
 
 Here you can find contact information for some of our team members. Don't hesitate to get in touch if you have any questions or need assistance with anything specific.
 
-{{< contact picture="daniel-m.webp" title="Business Development" name="Daniel Melin" phone="+46768680059" email="daniel.melin@safespring.com" >}}
+{{< contact picture="fredric.webp" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.com" >}}
 {{< contact picture="gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
 {{< contact picture="/marcus.webp" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
 

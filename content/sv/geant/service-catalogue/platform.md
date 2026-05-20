@@ -87,7 +87,7 @@ Den hanterade plattformen Compliant Kubernetes inkluderar följande funktioner o
 - Loggar sparas i högst 30 dagar (GDPR-efterlevnad) eller upp till 50 GB, beroende på vilket som inträffar först.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakta Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakta Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Försäljning:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

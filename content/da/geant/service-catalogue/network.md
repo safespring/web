@@ -74,7 +74,7 @@ Safespring tilbyder muligheden for at konfigurere reverse DNS-navne (PTR-poster)
 Kunder kan allokere deres egne IPv4-præfikser til platformen til eget brug i platformen (mindstestørrelse /24). Safespring konfigurerer disse præfikser i platformen og annoncerer dem til sine peers via BGP.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakt Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakt Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

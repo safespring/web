@@ -48,9 +48,9 @@ Safespring er dedikeret til at understøtte principperne for åben videnskab ved
 
 Vi er glade for at bidrage til EOSC EU Node og ser frem til fortsat at støtte det europæiske forskningsmiljø. Kontakt os gerne for mere information om vores tjenester, og hvordan vi kan støtte dine forsknings- og uddannelsesprojekter.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jeg er Business Development Manager for den akademiske og offentlige sektor og kan hjælpe dig med at bruge vores tjenester, som allerede er indkøbt under OCRE-aftalen.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og kan hjælpe dig med at bruge vores tjenester, som allerede er indkøbt under OCRE-aftalen.
 
-{{< inline "Call" >}} +46 (0)76 868 00 59
-[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
+{{< inline "Call" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}

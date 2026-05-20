@@ -51,7 +51,7 @@ Their discussion centered on reconciling technological innovation with the stric
 
 Watch our session and be inspired by how close partnerships can create tomorrow’s solutions.
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Learn more about Safespring" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Learn more about Safespring" %}}
 Safespring provides infrastructure as a service. Our customers build services and applications with digital sovereignty, no third-country transfers, and open standards.
 
 {{< 2calltoaction "About us" "/hello" "Contact Safespring" "/kontakt">}}

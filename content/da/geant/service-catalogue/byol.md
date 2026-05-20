@@ -50,7 +50,7 @@ Softwareleverandører med kommerciel support og kendte tilladelsesvilkår er lis
 
 Safespring begrænser ikke på nogen måde, hvilken software kunderne bruger, ud over via deres [Politik for acceptabel brug](/documents/safespring-acceptable_use_policy.pdf). Det betyder, at enhver Linux-distribution, der kan køre på x86-platforme på en standard, moderne KVM-hypervisor, teknisk set understøttes, hvilket i praksis omfatter stort set alle community-udgaver.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakt Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakt Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

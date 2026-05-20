@@ -84,7 +84,7 @@ Dessa policyer har fördelen att ge ett pristak. Till exempel, om en femversions
 Det går att beställa andra versionsbegränsade policyer vid behov (t.ex. 17 eller 42 versioner).
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakta Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakta Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Försäljning:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

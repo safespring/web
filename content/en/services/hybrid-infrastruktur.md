@@ -8,8 +8,8 @@ intro: "Safespring’s hybrid infrastructure solutions enable you to combine the
 background: ""
 socialmedia: "safespring-hybrid-cloud.jpg"
 form: "yes"
-sidebarimage: "safespring-daniel.webp"
-sidebartext: "Would you like to discuss the position? My name is Daniel Melin; feel free to contact me if you have any questions."
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Would you like to discuss the service? My name is Fredric Wallsten; feel free to contact me if you have any questions."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 aliases:

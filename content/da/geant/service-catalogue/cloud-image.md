@@ -54,7 +54,7 @@ Safespring tilbyder følgende offentlige cloud-images, baseret på upstream-proj
 | Ubuntu                         |
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kom i kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kom i kontakt med Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

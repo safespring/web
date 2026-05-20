@@ -7,8 +7,8 @@ card: "safespring_card_31.svg"
 draft: false
 intro: "Safespring leverer sikre og bæredygtige skytjenester uden leverandørlåsning"
 background: "safespring-government-background.svg"
-sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
-sidebarlinkname: "Se fireside-samtalen"
+sidebarlinkurl: "/kontakt/"
+sidebarlinkname: "Tal med Fredric"
 banner: "blue-hover-blogg"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
@@ -38,11 +38,11 @@ At vi er et svensk selskab, der leverer tjenesterne i Sverige, gør det på læn
 
 {{< distance >}}
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jeg er forretningsudviklingschef for akademi og offentlig sektor og kan hjælpe dig med at se, hvordan Safespring kan blive en del af din digitale infrastruktur.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og kan hjælpe dig med at se, hvordan Safespring kan blive en del af din digitale infrastruktur.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59
-[daniel.melin @safespring.com](daniel.melin@safespring.com)
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< distance >}}

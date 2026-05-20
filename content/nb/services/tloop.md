@@ -38,11 +38,11 @@ Ta gjerne kontakt dersom du vil vite mer eller har spørsmål. Vi ser frem til �
 
 {{< distance >}}
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jeg er ansvarlig forretningsutvikler for akademisk og offentlig sektor og hjelper deg å se hvordan Safespring kan bli en del av deres digitale infrastruktur.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO i Safespring og hjelper deg å se hvordan Safespring kan bli en del av deres digitale infrastruktur.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59  
-[Send e-post](mailto:daniel.melin@safespring.com)
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+[Send e-post](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< distance >}}
@@ -89,7 +89,7 @@ Oppsummert tilbyr de mindre karbon i databehandling, mindre karbon i bygg og et 
 {{% /question %}}
 
 {{% question question="Hvor mye lavere CO₂ kan Safespring Private Cloud hos T.Loop tilby sammenlignet med min nåværende installasjon?" %}}
-De kan hjelpe deg å beregne ditt nåværende klimaavtrykk hvis de får detaljer om bruken din. Hovedsakelig baseres den beregnede CO₂-en på din PUE og hvor mange kWh du bruker. Hvis du trenger hjelp, vennligst <a href="mailto:daniel.melin@safespring.com">kontakt Daniel Melin hos Safespring</a>.
+De kan hjelpe deg å beregne ditt nåværende klimaavtrykk hvis de får detaljer om bruken din. Hovedsakelig baseres den beregnede CO₂-en på din PUE og hvor mange kWh du bruker. Hvis du trenger hjelp, vennligst <a href="mailto:fredric.wallsten@safespring.com">kontakt Fredric Wallsten hos Safespring</a>.
 {{% /question %}}
 
 {{% question question="Tilbyr T.Loop også Data Energy Centers® for Safespring On-Prem Cloud?" %}}
@@ -101,7 +101,7 @@ T.Loop tilbyr en colocation-kundeavtale (kontrakt) der de inkluderer tjenesteomf
 {{% /question %}}
 
 {{% question question="Hvilken prismodell har T.Loop for colocation-tjenester?" %}}
-De tilbyr tilpasset prising for colocation-tjenestene sine basert på faktorer som nødvendig mengde plass, nivået på kraft og kjøling samt krav til nettverkskommunikasjon. Gjennom sin restvarmegjenvinning og effektiv energistyring kan T.Loop tilby svært konkurransedyktige priser på energikostnaden. For et spesifikt tilbud, vennligst kontakt Daniel Melin hos Safespring.
+De tilbyr tilpasset prising for colocation-tjenestene sine basert på faktorer som nødvendig mengde plass, nivået på kraft og kjøling samt krav til nettverkskommunikasjon. Gjennom sin restvarmegjenvinning og effektiv energistyring kan T.Loop tilby svært konkurransedyktige priser på energikostnaden. For et spesifikt tilbud, vennligst kontakt Fredric Wallsten hos Safespring.
 {{% /question %}}
 
 {{% question question="Hvilke sikkerhetstiltak har T.Loop på plass for å beskytte utstyret mitt?" %}}

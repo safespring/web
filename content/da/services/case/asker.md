@@ -89,9 +89,9 @@ er der ingen EU-specifik regulering relateret til AI, men det er kun et spørgsm
 
 Det skal være let for dig at håndtere store datamængder på en effektiv og sikker måde. Derfor har Safespring gjort det nemt at samle almindelige spørgsmål om it-sikkerhed og compliance. Og hvis du vil have anbefalinger, der er specifikke for din virksomhed, så tag endelig kontakt!
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jeg er salgschef for Safespring i Sverige og hjælper dig gerne i gang.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og hjælper dig gerne i gang.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+fredric.wallsten@safespring.com
 {{% /custom-card %}}

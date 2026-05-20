@@ -74,7 +74,7 @@ Safespring erbjuder möjlighet att konfigurera omvända DNS-namn (PTR-poster) f�
 Kunder kan tilldela egna IPv4-prefix i plattformen för eget bruk (minsta storlek /24). Safespring konfigurerar dessa prefix i plattformen och annonserar dem till sina peers med BGP.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kom i kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kom i kontakt med Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sälj:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

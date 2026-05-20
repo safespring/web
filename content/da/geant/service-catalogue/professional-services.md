@@ -61,7 +61,7 @@ Vores projektleder på juniorniveau fører tilsyn med og sikrer kontinuitet i ku
 Vores projektleder på seniorniveau fører tilsyn med og sikrer kontinuitet i kundernes cloud-infrastrukturprojekter, styrer ressourcer samt håndterer ændrede krav og holder relevante interessenter opdateret.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakt Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakt Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

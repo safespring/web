@@ -79,9 +79,9 @@ Find ud af mere på [GÉANTs hjemmeside](https://geant.org/).
 
 Safesprings tjenester er klar til brug. Hvis du tilhører forsknings- og uddannelsessektoren i Danmark, kan du nemt begynde at bruge vores cloud-tjenester via OCRE 2024.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jeg er ansvarlig for forretningsudvikling for den akademiske og offentlige sektor og hjælper dig med at bruge vores tjenester, der allerede er indkøbt under OCRE 2024.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og hjælper dig med at bruge vores tjenester, der allerede er indkøbt under OCRE 2024.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59
-[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}

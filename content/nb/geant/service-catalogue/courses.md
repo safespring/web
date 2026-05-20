@@ -101,7 +101,7 @@ Programvareutviklere, tekniske prosjektledere, programvarearkitekter, driftsstø
 4 dager (kan deles i 2+2 dager, eller også enkeltstående dypdykk på én dag i 1–2 temaer for senior ansatte).
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Ta kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Ta kontakt med Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

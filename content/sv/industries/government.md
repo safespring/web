@@ -11,8 +11,8 @@ aliases:
   - /myndighet/
   - /branscher/myndigheter/
 slug: "myndigheter"
-sidebarlinkurl: "/webinar/gdpr-fireside-chat/"
-sidebarlinkname: "Se fireside chat"
+sidebarlinkurl: "/kontakt/"
+sidebarlinkname: "Prata med Fredric"
 banner: "blue-hover-blogg"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
@@ -41,11 +41,11 @@ Att vi är ett svenskt bolag som producerar tjänsterna i Sverige gör att det l
 
 {{< distance >}}
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jag är ansvarig affärsutvecklare för akademisk och offentlig sektor och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+Jag är CCO på Safespring och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59
-[daniel.melin @safespring.com](daniel.melin@safespring.com)
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< distance >}}

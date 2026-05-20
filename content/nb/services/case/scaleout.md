@@ -83,7 +83,7 @@ Overforbruk av tjenester og APIer spesifikke for en leverandør kan føre til l�
 
 Det skal være enkelt for deg å håndtere store mengder data på en effektiv og sikker måte. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og overensstemmelse. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakt oss" alt="Daniel Melin på Safespring" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakt oss" alt="Fredric Wallsten på Safespring" %}}
 Har du spørsmål om vår skyplattform med GPU? Kontakt oss for dyptgående teknisk informasjon og personlig rådgivning.
 
 {{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  

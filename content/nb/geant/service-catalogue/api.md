@@ -44,7 +44,7 @@ Safespring Storage støtter S3-API-et. S3-API-et er de facto-standarden for å s
 
 Safespring Backup bruker produktet Cloutility fra Aawau. API-spesifikasjonen finnes her: https://portal-api.backup.sto2.safedc.net/v1/help.
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Ta kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Ta kontakt med Safespring" %}}
 {{< inline "Brukerstøtte:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

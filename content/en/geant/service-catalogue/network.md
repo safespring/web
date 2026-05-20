@@ -73,7 +73,7 @@ Safespring offers the option to configure reverse DNS names (PTR records) for pu
 Customers can allocate their own IPv4 prefixes to the platform for their own use in the platform (minimum size /24). Safespring configures these prefixes in the platform and announce them to its peers using BGP.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

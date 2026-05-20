@@ -51,7 +51,7 @@ Diskusjonen deres dreide seg om å forene teknologisk innovasjon med de strenge 
 
 Se vår talersesjon og la deg inspirere av hvordan tette samarbeid kan skape fremtidens løsninger.
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Les mer om Safespring" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Les mer om Safespring" %}}
 Safespring leverer infrastruktur som en tjeneste. Våre kunder bygger tjenester og applikasjoner med digital suverenitet, ingen overføring til tredjeland og åpne standarder.
 
 {{< 2calltoaction "Om oss" "/hello" "Kontakt Safespring" "/kontakt">}}

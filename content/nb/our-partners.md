@@ -38,11 +38,11 @@ Plattformen vår har aldri måttet gå på akkord med svensk eller europeisk lov
 
 Som Safespring-partner kan dere garantere kundene deres korrekt håndtering av personopplysninger og annen sensitiv informasjon uten kompromisser. Med datasentre i Sverige og som et helsvensk selskap garanterer plattformen vår sikkerhet, både teknisk og juridisk, for at data forblir i Sverige og håndteres riktig.
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jeg er salgsleder i Sverige og hjelper deg å ta i bruk våre tjenester som allerede er anskaffet i henhold til OCRE-avtalen.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO i Safespring og hjelper deg å ta i bruk våre tjenester som allerede er anskaffet i henhold til OCRE-avtalen.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21  
-[petter.hylin @safespring.com](petter.hylin@safespring.com)
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 ## Noen av våre partnere

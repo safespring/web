@@ -40,10 +40,10 @@ Vår plattform har aldrig behövt kompromissa med svensk- eller europeisk lagsti
 
 Som partners till Safespring kan ni garantera era kunder en korrekt hantering av personuppgifter och annan känslig data utan kompromiss. Med datacenter i Sverige och som ett helt svenskt bolag garanterar vår plattform trygghet, både tekniskt och juridiskt, att data stannar i Sverige och hanteras korrekt.
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Daniel Melin" %}}
-Jag är affärsutvecklare i Sverige och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.  
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jag är CCO på Safespring och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.
 
-{{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  
+{{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)
 {{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}
 

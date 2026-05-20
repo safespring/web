@@ -149,11 +149,11 @@ GÉANT's role within OCRE involves helping to negotiate agreements with cloud se
 
 Large-scale storage and computing capacity are in high demand. Safespring has long worked with the academic sector to ensure that digital infrastructure, storage, and backup meet Sunet's requirements.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-I am the Business Development Manager for the academic and public sectors and can assist you in using our services already procured under the OCRE agreement.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+I am Safespring's CCO and can assist you in using our services already procured under the OCRE agreement.
 
-{{< inline "Call" >}} +46 (0)76 868 00 59
-[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
+{{< inline "Call" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< accordion-script >}}

@@ -84,7 +84,7 @@ Disse reglene har fordelen at de gir et pristak. For eksempel, hvis en fem-versj
 Det er mulig å be om andre versjonsbegrensede regler ved behov (f.eks. 17 eller 42 versjoner).
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Ta kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Ta kontakt med Safespring" %}}
 {{< inline "Brukerstøtte:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

@@ -83,7 +83,7 @@ These policies have the advantage of offering a price cap. For example, if a fiv
 It is possible to request other version limited policies if needed (e.g. 17 or 42 versions).
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

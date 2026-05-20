@@ -37,7 +37,7 @@ Safespring tilbyr flere tredjeparts programvarelisenser for bruk på våre IaaS-
 | SW-nextcloud      | Nextcloud Hub                   | Nextcloud |
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Ta kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Ta kontakt med Safespring" %}}
 {{< inline "Brukerstøtte:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}
