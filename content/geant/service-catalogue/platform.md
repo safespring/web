@@ -18,6 +18,8 @@ section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: "x"
+layout: "redirect"
+redirecturl: "/tjanster/containerplattform/"
 ---
 
 ## Managed Compliant Kubernetes
@@ -79,4 +81,3 @@ The managed Compliant Kubernetes platform includes the following features and ca
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}
-

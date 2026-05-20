@@ -1,0 +1,16 @@
+{{- $target := .Params.redirecturl | default "/" -}}
+{{- $absoluteTarget := $target | absURL -}}
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "sv" }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }} | Safespring</title>
+    <link rel="canonical" href="{{ $absoluteTarget }}">
+    <meta http-equiv="refresh" content="0; url={{ $target }}">
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <script>window.location.replace("{{ $target }}");</script>
+    <p><a href="{{ $target }}">Continue to {{ $absoluteTarget }}</a></p>
+  </body>
+</html>
