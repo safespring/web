@@ -32,7 +32,16 @@
           </li>
           <li>
             <a id="main-menu-link-2" href="{{ relref . "knowledge-hub" }}"
-              >{{ T "knowledgehub.news" }}</a
+              >{{ T "menu.current" }}</a
+            >
+          </li>
+          <li>
+            <a
+              id="main-menu-link-demo"
+              data-matomo-location="header-nav"
+              data-matomo-label="{{ T "sidebar.demo" }}"
+              href="{{ relref . "demo/compute" }}"
+              >{{ T "sidebar.demo" }}</a
             >
           </li>
           <li>
@@ -423,6 +432,7 @@
 
     .site-header-logo {
       flex: 0 1 auto;
+      width: auto;
       max-width: calc(100% - 70px);
       min-width: 0;
     }
@@ -443,6 +453,7 @@
       flex-flow: row nowrap !important;
       justify-content: flex-end;
       gap: 0;
+      width: auto;
       min-width: auto;
     }
 

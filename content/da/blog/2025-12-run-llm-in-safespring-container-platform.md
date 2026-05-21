@@ -16,7 +16,7 @@ section: "Tech update"
 author: "Gabriel Paues"
 TOC: "I dette indlæg"
 sidebarlinkurl: "/containers"
-sidebarlinkname: "Udforsk On-demand Kubernetes"
+sidebarlinkname: "Udforsk Safespring Kubernetes Engine"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Bogdemo"
 ---

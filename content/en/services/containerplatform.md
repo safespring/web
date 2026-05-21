@@ -1,17 +1,18 @@
 ---
-title: "Safespring On-demand Kubernetes"
+title: "Safespring Kubernetes Engine"
 section: "Platform"
 sectionhighlight: ""
-cardtitle: "Containers"
-cardintro: "Managed Kubernetes with control, clear boundaries, and digital sovereignty."
+cardtitle: "Kubernetes"
+megamenutitle: "Kubernetes"
+cardintro: "Managed control plane, clear boundaries, and digital sovereignty."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "1"
-metatitle: "Managed Kubernetes in Sweden and the EU | Safespring On-demand Kubernetes"
+metatitle: "Kubernetes with a managed control plane in Sweden and the EU | Safespring Kubernetes Engine"
 card: "safespring_card_12.svg"
 date: 2026-04-01
 draft: false
-intro: "A managed Kubernetes service that combines self-service provisioning, a managed control plane, modern networking, and digital sovereignty for organizations that need both speed and control."
+intro: "Kubernetes for organizations that need control, compliance, and European operations."
 background: ""
 sidebarlinkname: "Contact us"
 sidebarlinkurl: "/contact/"
@@ -20,31 +21,52 @@ sidebartext: "Want to discuss the service? Feel free to reach out if you have an
 sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
 sidebarlinkname2: "Technical deep dive"
-sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
+sidebarlinkurl2: "/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/"
 showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
 language: "en"
+slug: "safespring-kubernetes-engine"
 aliases:
   - /en/services/containerplatform/
 ---
 
 {{< ingress >}}
-Safespring On-demand Kubernetes is a managed Kubernetes service for running containerized applications on Safespring infrastructure, with self-service provisioning and a managed control plane.
+Safespring Kubernetes Engine gives development teams a ready platform for containerized workloads, operated from Sweden and Norway. You get a faster path to production without giving up control over jurisdiction, security, and platform boundaries.
 {{< /ingress >}}
 
-It is designed for organizations that need stronger control over data location, jurisdiction, and operational boundaries, including environments with GDPR, compliance, and digital sovereignty requirements.
+The service is designed for organizations that need stronger control over data location, jurisdiction, and operational boundaries, including environments with GDPR, compliance, and digital sovereignty requirements.
 
 The practical value is that engineering teams get a platform that is ready to use, while the organization keeps control over jurisdiction, security posture, and long-term platform direction without having to own every layer of platform operations internally.
 
 {{< icon-block-container >}}
     {{< icon-block icon="fas fa-rocket" text="Deploy anywhere" link="" color="#195F8C">}}
     {{< icon-block icon="fas fa-link-slash" text="No vendor lock-in" link="" color="#417DA5">}}
-    {{< icon-block icon="fas fa-layer-group" text="Cloud-native technologies" link="" color="#32CD32">}}
+    {{< icon-block icon="fas fa-layer-group" text="Cloud-native technology" link="" color="#32CD32">}}
     {{< icon-block icon="fas fa-lock" text="Digital sovereignty" link="/gdpr/" color="#FA690F">}}
     {{< icon-block icon="fas fa-leaf" text="100% renewable energy" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-sliders" text="You are in control" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
+
+{{% note "Is this a good fit for you?" %}}
+
+Safespring Kubernetes Engine is a good fit when you:
+
+- want to run Kubernetes without owning the whole control plane yourself
+- have requirements for GDPR, data location, or digital sovereignty
+- need a clearer boundary between platform teams and application teams
+- want to avoid long-term lock-in to hyperscaler-specific services
+- need a Nordic partner rather than just a global cloud platform
+{{% /note %}}
+
+## When Safespring is a better choice than hyperscaler Kubernetes
+
+| Need | Safespring Kubernetes Engine |
+|---|---|
+| Data within the Nordics/EU | Operations from Safespring's Swedish and Norwegian data centers |
+| Clear platform boundary | Managed control plane and documented responsibility |
+| Less lock-in | Kubernetes and open components instead of proprietary ecosystems |
+| Compliance dialogue | Swedish/Nordic provider with experience from regulated environments |
 
 ## Why the architecture matters
 
@@ -70,21 +92,21 @@ The architecture is designed to give you:
 
 This is also where digital sovereignty becomes practical rather than abstract. The platform is delivered from Safespring data centers in Sweden and Norway, powered by 100% renewable energy, and built for organizations that want stronger control over jurisdiction, data location, and long-term independence from hyperscaler lock-in.
 
-## Go deeper when you need the detail
+## Go deeper before technical evaluation
 
-If you want the technical detail behind the service, these are the most useful next reads:
+When you want to validate architecture, responsibility split, and operating model, these are the most useful next steps.
 
-{{< manual-document-table >}}
+{{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="What you get on day one"
-    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
+    href="/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#what-you-get-on-day-one"
     icon="fa-solid fa-list-check"
     label="Blog"
     description="The documented platform defaults from the start."
   >}}
   {{< manual-document-row
     title="The service boundary in practice"
-    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice"
+    href="/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#the-service-boundary-in-practice"
     icon="fa-solid fa-people-arrows"
     label="Blog"
     description="How responsibilities and operational boundaries are split between Safespring and your team."
@@ -95,13 +117,6 @@ If you want the technical detail behind the service, these are the most useful n
     icon="fa-solid fa-book-open"
     label="Docs"
     description="Provisioning, control plane layouts, and component support."
-  >}}
-  {{< manual-document-row
-    title="Traffic management"
-    href="https://docs.safespring.com/kubernetes/manage-traffic/"
-    icon="fa-solid fa-route"
-    label="Guide"
-    description="Gateway API, Traefik, and how traffic flows are handled in the platform."
   >}}
   {{< manual-document-row
     title="Portal overview"
@@ -124,14 +139,32 @@ If you want the technical detail behind the service, these are the most useful n
     label="Guide"
     description="The current observability boundary for logs, metrics, and follow-up."
   >}}
+  {{< manual-document-row
+    title="Traffic management"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik, and how traffic flows are handled in the platform."
+  >}}
 {{< /manual-document-table >}}
 
 {{< distance >}}
 
-## Talk to us about your needs
+## Estimate an approximate monthly cost
+
+Use the calculator to estimate the cost of the control plane, worker nodes, and central block storage. It is intended as a quick indication before technical and commercial evaluation.
+
+{{< container-price-calculator >}}
+
+{{< distance >}}
+
+<div id="get-started"></div>
+
+## Want to see how the platform works in practice?
+
+Book a short walkthrough with a cloud architect. We can show how clusters are created, what the responsibility split looks like, and how the service fits your requirements for operations, security, and compliance.
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Contact us" %}}
-Do you have questions about how this service can support your modernization, governance, sustainability, or digital sovereignty goals? Contact us for an initial discussion about your needs, target state, and next steps.
 
 {{< inline "Call" >}} [+46 76-629 25 02](tel:+46766292502)  
 {{< inline "Mail" >}} [hello@safespring.com](mailto:hello@safespring.com)

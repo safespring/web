@@ -15,7 +15,7 @@ section: "Tech update"
 author: "Gabriel Paues"
 TOC: "In this post"
 sidebarlinkurl: "/containers"
-sidebarlinkname: "Explore On-demand Kubernetes"
+sidebarlinkname: "Explore Safespring Kubernetes Engine"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Book demo"
 ---
