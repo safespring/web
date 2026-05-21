@@ -91,20 +91,18 @@
 <div class="flexcontainer-webinar-series-backplate">
   <div class="webinar-scrolling-wrapper-flexbox">
     {{ if in .RelPermalink "demo/" }}
-      <!-- Kontrollerar om URL innehåller "webinar/" -->
+      <!-- Kontrollerar om URL innehåller "demo/" -->
       {{ if eq .RelPermalink "/demo/" }}
-        <!-- Vi är på root av "webinar" -->
-        {{ range .Pages }}
-          {{ if .IsSection }}{{ .Render "series-summary" }}{{ end }}
+        <!-- Vi är på root av "demo" -->
+        {{ range sort .Sections "Date" "desc" }}
+          {{ .Render "series-summary" }}
         {{ end }}
       {{ else }}
         <!-- Vi är inne i en sub-sektion -->
-        {{ range sort .Pages "Params.episode" }}
-          {{ if not .IsSection }}
-            {{ .Render
-              "episode-summary"
-            }}
-          {{ end }}
+        {{ range sort .RegularPages "Params.episode" }}
+          {{ .Render
+            "episode-summary"
+          }}
         {{ end }}
       {{ end }}
     {{ end }}
