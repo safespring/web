@@ -101,7 +101,7 @@ Mjukvaruutvecklare, tekniska projektledare, mjukvaruarkitekter, drift- och suppo
 4 dagar (kan delas upp i 2+2 dagar, eller endagsfördjupningar i 1–2 ämnen för senior personal).
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakta Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakta Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Försäljning:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

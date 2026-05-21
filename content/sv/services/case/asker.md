@@ -82,9 +82,9 @@ Just nu fattas EU-specificerade bestämmelser kopplat till AI, men det är bara 
 ## Vill du också ha en säker och långsiktig partner för din datalagring?
 Det ska vara enkelt för dig att hantera stora mängder data på ett effektivt och säkert sätt. Därför har Safespring sett till att enkelt sammanställa vanliga frågor om IT-säkerhet och compliance. Och vill du ha rekommendationer specifika för din verksamhet, hör av dig!
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jag är försäljningschef för Safespring i Sverige och hjälper dig gärna att komma igång.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jag är CCO på Safespring och hjälper dig gärna att komma igång.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+fredric.wallsten@safespring.com
 {{% /custom-card %}}

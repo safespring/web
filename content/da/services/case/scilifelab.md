@@ -148,11 +148,11 @@ GÉANTs rolle i OCRE indebærer at hjælpe med at forhandle aftaler med cloududb
 
 Der er stor efterspørgsel efter lagring og regnekraft i stor skala. Safespring har længe arbejdet sammen med den akademiske sektor for at sikre, at digital infrastruktur, lagring og backup opfylder Sunets krav.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-Jeg er Business Development Manager for den akademiske og offentlige sektor og kan hjælpe dig med at bruge vores tjenester, som allerede er indkøbt under OCRE-aftalen.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og kan hjælpe dig med at bruge vores tjenester, som allerede er indkøbt under OCRE-aftalen.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59
-[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 
 {{< accordion-script >}}

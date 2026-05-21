@@ -167,7 +167,7 @@ GÉANTs rolle innen OCRE innebærer at de hjelper til med å forhandle fram avta
 
 {{% /accordion %}}
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakt oss" alt="Daniel Melin på Safespring" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakt oss" alt="Fredric Wallsten på Safespring" %}}
 Har du spørsmål om vår skyplattform? Kontakt oss for dyptgående teknisk informasjon og personlig rådgivning.
 
 {{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  

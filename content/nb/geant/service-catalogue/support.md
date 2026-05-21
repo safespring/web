@@ -79,7 +79,7 @@ Kvartalsvise driftsmøter med fast agenda som blant annet dekker gjennomgang av 
 Safesprings Private Cloud-tilbud kan kombineres med Premiumstøtte.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Ta kontakt med Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Ta kontakt med Safespring" %}}
 {{< inline "Støtte:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

@@ -102,7 +102,7 @@ Serverinstans att ansluta volym till, inklusive som root-diskvolym.
 | VOLUME-snapshot | SDD eller HDD baserat på källan. Copy-on-write som endast sparar skillnaden från när ögonblicksbilden togs. |
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakta Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakta Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Försäljning:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

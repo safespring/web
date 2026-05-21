@@ -60,7 +60,7 @@ Our Project Manager, junior expertise level, supervises and provides continuum t
 Our Project Manager, senior expertise level, supervises and provides continuum to customer cloud infrastructure projects, manages resources as well as changing requirements and keeps relevant stakeholders up to date.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

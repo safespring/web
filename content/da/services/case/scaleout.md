@@ -83,9 +83,9 @@ Overforbrug af tjenester og API'er specifikke for en leverandør kan føre til l
 
 Det skal være nemt for dig at håndtere store mængder data på en effektiv og sikker måde. Derfor har Safespring sørget for nemt at sammenstille almindelige spørgsmål om IT-sikkerhed og compliance. Og vil du have anbefalinger specifikke for din virksomhed, så kontakt os!
 
-{{% custom-card image="/img/card/safespring-petter.webp" cardtitle="Petter Hylin" %}}
-Jeg er din kontakt i Danmark og hjælper dig gerne med at komme i gang.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og hjælper dig gerne med at komme i gang.
 
-{{< inline "Ring" >}} +46 (0)73 533 65 21
-petter.hylin@safespring.com
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+fredric.wallsten@safespring.com
 {{% /custom-card %}}

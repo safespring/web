@@ -49,7 +49,7 @@ Software vendors with commercial support with known permissibility terms are lis
 
 Safespring does not restrict in any way what software customers use, other than via its [Acceptable Use Policy](/documents/safespring-acceptable_use_policy.pdf). This means that any Linux distribution that can run on x86 platforms on a standard modern KVM hypervisor is technically supported, including essentially all community editions.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

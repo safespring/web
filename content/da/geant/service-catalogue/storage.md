@@ -44,7 +44,7 @@ Ingen.
 | S3 -storage | HDD-baseret med Ceph med 3 replikater |
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakt Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakt Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Info:" >}} +46855107370 eller ocre@safespring.com
 {{% /custom-card %}}

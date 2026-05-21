@@ -80,9 +80,9 @@ Vælg en partner, der værdsætter at arbejde tæt sammen med jer. Jeres senioru
 
 Det skal være let at leve op til høje krav til driftsikkerhed og tilgængelighed. Derfor har Safespring gjort det nemt at samle almindelige spørgsmål om IT-sikkerhed og compliance - og hvordan de imødekommes. Og hvis du vil have anbefalinger, der er specifikke for din virksomhed, så tag endelig kontakt!
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Daniel Melin" %}}
-Jeg er forretningsudvikler hos Safespring i Sverige og hjælper dig gerne i gang.
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Jeg er CCO hos Safespring og hjælper dig gerne i gang.
 
-{{< inline "Ring" >}} +46 (0)76 868 00 59
-daniel.melin@safespring.com
+{{< inline "Ring" >}} +46 (0)76 629 25 02
+fredric.wallsten@safespring.com
 {{% /custom-card %}}

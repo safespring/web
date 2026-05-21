@@ -19,8 +19,9 @@ sidebarlinkname2: "Pris för Storage"
 sidebarlinkurl2: "/pris/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
-sidebarimage: "safespring-daniel.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Daniel Melin, ta gärna kontakt med mig om du har några frågor."
+socialmedia: "/safespring-start.jpg"
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 megamenu: "yes"
@@ -107,7 +108,7 @@ Ja, Safespring Storage är fullt S3-kompatibelt, vilket gör att du kan använda
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/safespring-daniel.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
 Upptäck den fulla potentialen i dina data med Safespring Storage. Vårt team är redo att hjälpa dig att hitta den perfekta lagringslösningen för ditt företags behov.
 
 [hello@safespring.com](mailto:hello@safespring.com)

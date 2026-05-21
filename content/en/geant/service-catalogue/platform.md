@@ -86,7 +86,7 @@ The managed Compliant Kubernetes platform includes the following features and ca
 - Logs are kept for a maximum of 30 days (GDPR compliance) or up to 50 GB, whichever comes first.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

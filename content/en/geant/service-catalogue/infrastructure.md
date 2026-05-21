@@ -101,7 +101,7 @@ Server instance to attach volume to, including as a root disk volume.
 | VOLUME-snapshot | SDD or HDD based on source. Copy on write, which only saves the difference from when the snapshot was taken. |
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

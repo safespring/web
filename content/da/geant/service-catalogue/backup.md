@@ -84,7 +84,7 @@ Disse politikker har fordelen, at de giver et prisloft. Hvis der f.eks. vælges 
 Det er muligt at anmode om andre versionsbegrænsede politikker efter behov (f.eks. 17 eller 42 versioner).
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Kontakt Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Kontakt Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Salg:" >}} +46855107370 eller sales@safespring.se
 {{% /custom-card %}}

@@ -87,7 +87,7 @@ Den administrerte Compliant Kubernetes-plattformen inkluderer følgende funksjon
 - Logger beholdes i maks 30 dager (GDPR-etterlevelse) eller opptil 50 GB, avhengig av hva som kommer først.
 
 {{< distance >}}
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Get in contact with Safespring" %}}
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Get in contact with Safespring" %}}
 {{< inline "Support:" >}} support@safespring.com  
 {{< inline "Sales:" >}} +46855107370 or sales@safespring.se
 {{% /custom-card %}}

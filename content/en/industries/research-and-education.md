@@ -91,9 +91,9 @@ Read more at the [GÉANT official website](https://geant.org/)
 
 Safespring's services are ready to use. If you are in the research and education sector in Denmark, Norway or Sweden, you can easily use our cloud platform already procured under the OCRE 2024 framework.
 
-{{% custom-card image="/img/kontakt/safespring-daniel-melin-2024.webp" cardtitle="Daniel Melin" %}}
-I am the Head of Business Development and can assist you in using our services available under the OCRE 2024 framework.
+{{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
+I am Safespring's CCO and can assist you in using our services available under the OCRE 2024 framework.
 
-{{< inline "Call" >}} +46 (0)76 868 00 59
-[daniel.melin@safespring.com](mailto:daniel.melin@safespring.com)
+{{< inline "Call" >}} +46 (0)76 629 25 02
+[fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}

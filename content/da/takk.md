@@ -24,7 +24,7 @@ Den nemmeste måde er at kontakte os pr. telefon eller e-mail. Hvis du har gener
 <a href="mailto:support@safespring.com">support@safespring.com</a>
 
 <div class="flexcontainer-shortcode">
-{{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="Administrerende direktør" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
+{{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}
 {{< contact picture="/img/kontakt/mikael-schutt.jpg" title="Bestyrelsesformand" name="Mikael Schütt" phone="+46730935070" email="mikael.schutt@safespring.se" >}}
 {{< contact picture="/img/kontakt/marcus-boberg.jpg" title="Marketingdirektør" name="Marcus Boberg" phone="+46721864701‬" email="marcus.boberg@safespring.se" >}}
 </div>

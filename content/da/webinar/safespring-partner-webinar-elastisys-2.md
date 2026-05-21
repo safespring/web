@@ -46,4 +46,4 @@ Vi vil diskutere tre vigtige områder. Efter webinaret vil du også have mulighe
 
 ### Kontakt os
 
-Kontakt gerne Petter Hylin (petter.hylin@safespring.se), hvis du vil have et link tilsendt, eller har spørgsmål.
+Kontakt gerne Fredric Wallsten (fredric.wallsten@safespring.com), hvis du vil have et link tilsendt, eller har spørgsmål.
