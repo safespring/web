@@ -3,7 +3,7 @@ title: "Containerplattform för Medtech och Healthtech"
 date: 2026-04-01
 draft: false
 section: "Medtech"
-intro: "Safespring On-demand Kubernetes ger Medtech- och Healthtech-bolag en managerad containerplattform för applikationer och tjänster i miljöer där dataplacering, regelefterlevnad och digital suveränitet spelar roll."
+intro: "Safespring Kubernetes Engine ger Medtech- och Healthtech-bolag en managerad containerplattform för applikationer och tjänster i miljöer där dataplacering, regelefterlevnad och digital suveränitet spelar roll."
 background: "safespring-medtech-2022.webp"
 card: "safespring-kubernetes.svg"
 socialmedia: "safespring_social_01.jpg"
@@ -26,7 +26,7 @@ aliases:
 ---
 
 {{< ingress >}}
-Safespring On-demand Kubernetes är en managerad Kubernetes-tjänst för att köra containeriserade applikationer på Safesprings infrastruktur, med self-service-provisionering och managerad kontrollplan.
+Safespring Kubernetes Engine är en managerad Kubernetes-tjänst för att köra containeriserade applikationer på Safesprings infrastruktur, med self-service-provisionering och managerad kontrollplan.
 {{</ ingress >}}
 
 För Medtech- och Healthtech-bolag blir det relevant när ni behöver en modern plattform för applikationer, API:er och integrationer, men samtidigt måste ha starkare kontroll över dataplacering, jurisdiktion och operativa gränser. Tjänsten är utformad för miljöer med krav på GDPR, regelefterlevnad och digital suveränitet.
@@ -52,7 +52,7 @@ Det är ofta här huvudvärken uppstår:
 - integrationer, API:er och backend-tjänster blir affärskritiska, men driftmodellen känns inte tillräckligt robust
 - ni vill undvika att bygga upp ett helt internt Kubernetes- eller plattformsteam bara för att få ordning på grunden
 
-Safespring On-demand Kubernetes ger er en plattform där den tekniska grunden är modern, men där valet av plattform också stärker er position i frågor som dataskydd, leverantörsrisk och långsiktig kontroll.
+Safespring Kubernetes Engine ger er en plattform där den tekniska grunden är modern, men där valet av plattform också stärker er position i frågor som dataskydd, leverantörsrisk och långsiktig kontroll.
 
 {{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Typiska situationer där tjänsten skapar värde" %}}
 Tjänsten passar särskilt bra när ni vill:
@@ -80,7 +80,7 @@ Det betyder inte att alla regulatoriska frågor försvinner. Men det betyder att
 
 Om ni vill förstå tjänsten mer i detalj är detta bra nästa steg:
 
-- [Safespring On-demand Kubernetes](/tjanster/containerplattform/) för tjänstens övergripande upplägg
+- [Safespring Kubernetes Engine](/tjanster/containerplattform/) för tjänstens övergripande upplägg
 - [Den tekniska genomgången av tjänstens gränsdragning](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/) för kontrollplan, nätverk, lagring och ansvarsfördelning
 - [Vår GDPR-sida](/gdpr/) för perspektivet kring dataskydd, jurisdiktion och tredjelandsfrågor
 - [Kom igång i dokumentationen](https://docs.safespring.com/kubernetes/getting-started/) för provisionering, kontrollplanslayouter och komponentstöd
@@ -90,7 +90,7 @@ Om ni vill förstå tjänsten mer i detalj är detta bra nästa steg:
 ## Prata med oss om er målbild
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss" %}}
-Vill ni förstå om Safespring On-demand Kubernetes är rätt grund för er produkt, plattform eller nästa regulatoriska steg? Kontakta oss för en första dialog om behov, datakrav, integrationsmönster, målbild och nästa steg.
+Vill ni förstå om Safespring Kubernetes Engine är rätt grund för er produkt, plattform eller nästa regulatoriska steg? Kontakta oss för en första dialog om behov, datakrav, integrationsmönster, målbild och nästa steg.
 
 {{< inline "Ring" >}} [+46 76-629 25 02](tel:+46766292502)  
 {{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)

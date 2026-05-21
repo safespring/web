@@ -1,8 +1,8 @@
 ---
-title: "Safespring On-demand Kubernetes för mötesbokning"
+title: "Safespring Kubernetes Engine för mötesbokning"
 date: 2026-03-30
 draft: false
-intro: "Den här sidan är till för dig som ska boka möten om Safespring On-demand Kubernetes men inte arbetar tekniskt. Du behöver inte förstå tekniken. Du behöver bara känna igen rätt typ av kund och boka ett första relevant samtal."
+intro: "Den här sidan är till för dig som ska boka möten om Safespring Kubernetes Engine men inte arbetar tekniskt. Du behöver inte förstå tekniken. Du behöver bara känna igen rätt typ av kund och boka ett första relevant samtal."
 background: ""
 sidebarlinkname: "Kontakta Safespring"
 sidebarlinkurl: "/kontakt/"
@@ -71,7 +71,7 @@ Det här är viktigt eftersom behov av digital suveränitet ofta är en stark an
 
 ## Vad tjänsten är, enkelt uttryckt
 
-Safespring On-demand Kubernetes är en tjänst för företag och organisationer som vill köra moderna affärskritiska applikationer på ett mer kontrollerat, säkert och framtidssäkert sätt.
+Safespring Kubernetes Engine är en tjänst för företag och organisationer som vill köra moderna affärskritiska applikationer på ett mer kontrollerat, säkert och framtidssäkert sätt.
 
 Det är helt okej att säga orden `Kubernetes` och `containrar`, men använd dem enkelt:
 

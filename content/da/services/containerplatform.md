@@ -1,17 +1,18 @@
 ---
-title: "Safespring On-demand Kubernetes"
+title: "Safespring Kubernetes Engine"
 section: "Platform"
 sectionhighlight: ""
-cardtitle: "Containers"
-cardintro: "Administreret Kubernetes med kontrol, tydelige grænser og digital suverænitet."
+cardtitle: "Kubernetes"
+megamenutitle: "Kubernetes"
+cardintro: "Administreret kontrolplan, tydelige grænser og digital suverænitet."
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 cardorder: "3"
-metatitle: "Administreret Kubernetes i Sverige og EU | Safespring On-demand Kubernetes"
+metatitle: "Kubernetes med administreret kontrolplan i Sverige og EU | Safespring Kubernetes Engine"
 card: "safespring_card_12.svg"
 date: 2026-04-01
 draft: false
-intro: "En administreret Kubernetes-tjeneste, der kombinerer self-service-provisionering, administreret kontrolplan, moderne netværkshåndtering og digital suverænitet for organisationer, der har brug for både tempo og kontrol."
+intro: "Kubernetes til organisationer, der har brug for kontrol, compliance og europæisk drift."
 background: ""
 sidebarlinkname: "Kontakt os"
 sidebarlinkurl: "/kontakt/"
@@ -20,7 +21,7 @@ sidebartext: "Vil du tale om tjenesten? Kontakt os gerne, hvis du har spørgsmå
 sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
 sidebarlinkname2: "Teknisk fordybelse"
-sidebarlinkurl2: "/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/"
+sidebarlinkurl2: "/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/"
 showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
@@ -31,7 +32,7 @@ aliases:
 ---
 
 {{< ingress >}}
-Safespring On-demand Kubernetes er en administreret Kubernetes-tjeneste til at køre containeriserede applikationer på Safesprings infrastruktur med self-service-provisionering og administreret kontrolplan.
+Safespring Kubernetes Engine giver udviklingsteams en færdig platform til containeriserede workloads, driftet fra Sverige og Norge. I får en hurtigere vej til produktion uden at give afkald på kontrol over jurisdiktion, sikkerhed og platformsgrænser.
 {{< /ingress >}}
 
 Tjenesten er designet til organisationer, der har brug for stærkere kontrol over dataplacering, jurisdiktion og operationelle grænser, herunder miljøer med krav til GDPR, compliance og digital suverænitet.
@@ -46,6 +47,26 @@ Den praktiske værdi er, at engineering-teams får en platform, der er klar til 
     {{< icon-block icon="fas fa-leaf" text="100% vedvarende energi" link="" color="#417DA5">}}
     {{< icon-block icon="fas fa-sliders" text="Du har kontrollen" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
+
+{{% note "Passer det til jer?" %}}
+
+Safespring Kubernetes Engine passer særligt godt, når I:
+
+- vil køre Kubernetes uden selv at eje hele kontrolplanet
+- har krav til GDPR, dataplacering eller digital suverænitet
+- har brug for en tydeligere grænse mellem platformteams og applikationsteams
+- vil undgå langsigtet indlåsning i hyperscaler-specifikke tjenester
+- har brug for en nordisk partner snarere end blot en global cloudplatform
+{{% /note %}}
+
+## Når Safespring er et bedre valg end hyperscaler Kubernetes
+
+| Behov | Safespring Kubernetes Engine |
+|---|---|
+| Data i Norden/EU | Drift fra Safesprings svenske og norske datacentre |
+| Tydelig platformsgrænse | Administreret kontrolplan og dokumenteret ansvar |
+| Mindre indlåsning | Kubernetes og åbne komponenter i stedet for proprietære økosystemer |
+| Compliance-dialog | Svensk/nordisk leverandør med erfaring fra regulerede miljøer |
 
 ## Hvorfor arkitekturen betyder noget
 
@@ -71,21 +92,21 @@ Arkitekturen er designet til at give jer:
 
 Det er også her, digital suverænitet bliver praktisk i stedet for abstrakt. Platformen leveres fra Safesprings datacentre i Sverige og Norge, drives med 100% vedvarende energi og er bygget til organisationer, der ønsker stærkere kontrol over jurisdiktion, dataplacering og langsigtet uafhængighed fra hyperscaler-lock-in.
 
-## Fordyb dig, når du vil have detaljerne
+## Fordyb dig før teknisk evaluering
 
-Hvis du vil forstå tjenesten mere teknisk, er dette de mest nyttige næste læsninger:
+Når du vil validere arkitektur, ansvarsfordeling og driftsmodel, er dette de mest nyttige næste skridt.
 
-{{< manual-document-table >}}
+{{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="Hvad du får fra dag ét"
-    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
+    href="/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/#hvad-du-får-på-dag-ét"
     icon="fa-solid fa-list-check"
     label="Blog"
     description="De dokumenterede platformstandarder fra start."
   >}}
   {{< manual-document-row
     title="Tjenestegrænsen i praksis"
-    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice"
+    href="/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/#tjenestegrænsen-i-praksis"
     icon="fa-solid fa-people-arrows"
     label="Blog"
     description="Hvordan ansvar og operationelle grænser er fordelt mellem Safespring og jeres team."
@@ -96,13 +117,6 @@ Hvis du vil forstå tjenesten mere teknisk, er dette de mest nyttige næste læs
     icon="fa-solid fa-book-open"
     label="Docs"
     description="Provisionering, kontrolplanslayouts og understøttede komponenter."
-  >}}
-  {{< manual-document-row
-    title="Trafikhåndtering"
-    href="https://docs.safespring.com/kubernetes/manage-traffic/"
-    icon="fa-solid fa-route"
-    label="Guide"
-    description="Gateway API, Traefik og hvordan trafikflow håndteres i platformen."
   >}}
   {{< manual-document-row
     title="Portaloversigt"
@@ -125,14 +139,32 @@ Hvis du vil forstå tjenesten mere teknisk, er dette de mest nyttige næste læs
     label="Guide"
     description="Den nuværende observability-grænse for logs, metrics og opfølgning."
   >}}
+  {{< manual-document-row
+    title="Trafikhåndtering"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik og hvordan trafikflow håndteres i platformen."
+  >}}
 {{< /manual-document-table >}}
 
 {{< distance >}}
 
-## Tal med os om jeres behov
+## Beregn en omtrentlig månedlig omkostning
+
+Brug beregneren til at estimere omkostningen for kontrolplan, worker-noder og central bloklagring. Den er tænkt som en hurtig indikation før teknisk og kommerciel evaluering.
+
+{{< container-price-calculator >}}
+
+{{< distance >}}
+
+<div id="get-started"></div>
+
+## Vil du se, hvordan platformen fungerer i praksis?
+
+Book en kort gennemgang med en cloud architect. Vi kan vise, hvordan clusters oprettes, hvordan ansvarsfordelingen ser ud, og hvordan tjenesten passer til jeres krav til drift, sikkerhed og compliance.
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakt os" alt="Fredric Wallsten på Safespring" %}}
-Har du spørgsmål om, hvordan denne tjeneste kan understøtte jeres modernisering, styring, bæredygtighed eller digitale suverænitet? Kontakt os for en første dialog om behov, målbilledet og næste skridt.
 
 {{< inline "Ring" >}} [+46 76-629 25 02](tel:+46766292502)  
 {{< inline "E-mail" >}} [hello@safespring.com](mailto:hello@safespring.com)

@@ -1,8 +1,8 @@
 ---
 ai: true
-title: "Forstå Safespring On-demand Kubernetes, hvis du normalt kører Kubernetes selv"
+title: "Forstå Safespring Kubernetes Engine, hvis du normalt kører Kubernetes selv"
 date: "2026-03-30"
-intro: "En praktisk guide til platformsteams, der ønsker at forstå tjenestegrænsen, standardindstillingerne og tekniske kompromiser i Safespring On-demand Kubernetes."
+intro: "En praktisk guide til platformsteams, der ønsker at forstå tjenestegrænsen, standardindstillingerne og tekniske kompromiser i Safespring Kubernetes Engine."
 draft: false
 sectiontext: "Teknologiopdatering"
 section: "Teknologiopdatering"
@@ -33,16 +33,16 @@ formet, hvor grænsen går, og hvilke dele af platformen den allerede løser god
 Vi har skrevet en del på det seneste om at bygge Kubernetes-platforme med Talos, OpenStack,
 Cluster API, Cinder CSI og moderne trafikstyring. Det er den ene side af billedet.
 
-Den anden side er at forstå, hvad en tjeneste som Safespring On-demand Kubernetes faktisk
+Den anden side er at forstå, hvad en tjeneste som Safespring Kubernetes Engine faktisk
 forsøger at levere.
 
 Dette indlæg henvender sig til ingeniører og platformsteams, der er perfekt i stand til selv
-at køre Kubernetes, men ønsker at forstå Safespring On-demand Kubernetes i mere konkrete
+at køre Kubernetes, men ønsker at forstå Safespring Kubernetes Engine i mere konkrete
 termer end "administrerede Kubernetes".
 
 {{% accordion title="TL;DR" %}}
 
-1. Safespring On-demand Kubernetes er designet til at give teams en brugbar Kubernetes-platformsgrænse fra dag ét, snarere end en rå klynge, der stadig har brug for omfattende montagearbejde.
+1. Safespring Kubernetes Engine er designet til at give teams en brugbar Kubernetes-platformsgrænse fra dag ét, snarere end en rå klynge, der stadig har brug for omfattende montagearbejde.
 2. Tjenesten dokumenterer i øjeblikket portal- og API-baseret klyngeforsyning, et administreret kontrolplan, Talos Linux, Cilium som standard-CNI, trafikstyringsmuligheder, Cinder CSI-baseret lagring, OIDC-baseret adgang og GPU-kompatible arbejdsknudepunkter.
 3. Den mest nyttige måde at evaluere tjenesten på er at se på, hvad der allerede er løst som standard, og hvad der stadig er en del af dit eget platformdesign.
 4. For mange teams er værdien ikke, at Kubernetes bliver "nemme", men at færre tilbagevendende platformsansvar skal ejes internt.
@@ -53,9 +53,9 @@ termer end "administrerede Kubernetes".
 {{% /accordion %}}
 {{< accordion-script >}}
 
-## Hvad Safespring On-demand Kubernetes forsøger at gøre
+## Hvad Safespring Kubernetes Engine forsøger at gøre
 
-På et højt niveau er Safespring On-demand Kubernetes en Kubernetes-tjeneste bygget på
+På et højt niveau er Safespring Kubernetes Engine en Kubernetes-tjeneste bygget på
 Safespring Compute og eksponeret gennem en selvbetjeningsmodel. Hensigten er ikke at
 erstatte ingeniørmæssig vurdering eller at skjule Kubernetes bag et proprietært kontrollag.
 Hensigten er at give en solid platformsbaseline, så teams kan bruge mindre tid på at samle
@@ -83,7 +83,7 @@ produktmeddelelser.
 
 ## Hvad du får på dag ét
 
-Baseret på den aktuelle Safespring-dokumentation er On-demand Kubernetes dokumenteret med
+Baseret på den aktuelle Safespring-dokumentation er Safespring Kubernetes Engine dokumenteret med
 følgende platformsegenskaber:
 
 - **Klyngeklargøring via portal og API**, så klynger kan oprettes og administreres gennem en selvbetjeningsarbejdsgang.
@@ -165,10 +165,10 @@ En klarere måde at tænke det på er emne for emne:
 
 Den sidste række er værd at fremhæve klart.
 
-Safespring præsenterer ikke On-demand Kubernetes, som om enhver operationel bekymring er
-bundtet ind i tjenesten. Den aktuelle dokumentation anbefaler, at du implementerer din egen
+Safespring præsenterer ikke tjenesten, som om enhver operationel bekymring er
+bundtet ind i den. Den aktuelle dokumentation anbefaler, at du implementerer din egen
 observerbarhedsstak, og klyngelogfiler gemmes eller overvåges som standard for
-on-demand-klynger.
+Kubernetes Engine-klynger.
 
 For nogle hold kan det ligne et hul. For andre er det en sund og realistisk grænse. Det
 betyder, at tjenesten tager ansvar for selve klyngeplatformen uden at foregive, at
@@ -184,7 +184,7 @@ kunden, hvis standarderne er svage, eller ansvarsfordelingen er vag. Omvendt kan
 være ret overbevisende selv uden at forsøge at styre hvert lag, så længe servicegrænsen er
 sammenhængende og dokumenteret.
 
-Det er her, Safespring On-demand Kubernetes bliver interessant for ingeniører.
+Det er her, Safespring Kubernetes Engine bliver interessant for ingeniører.
 
 Den kombinerer et par valgmuligheder, der passer godt sammen:
 
@@ -219,7 +219,7 @@ ikke behovet for platformsteknik omkring arbejdsbelastninger og operationer.
 
 Det er normalt en god handel.
 
-## En praktisk måde at evaluere Safespring On-demand Kubernetes på
+## En praktisk måde at evaluere Safespring Kubernetes Engine på
 
 For teams, der ønsker at vurdere servicen seriøst, synes vi, at de bedste spørgsmål er
 disse:
@@ -236,7 +236,7 @@ Kubernetes.
 
 ## Afsluttende tanke
 
-Hvis du selv er vant til at bygge klynger, er Safespring On-demand Kubernetes nok mest
+Hvis du selv er vant til at bygge klynger, er Safespring Kubernetes Engine nok mest
 nyttig at tænke på som en dokumenteret platformsbaseline.
 
 Det giver dig et administreret kontrolplan, en selvbetjent leveringssti, en valgt
@@ -254,9 +254,9 @@ klynge.
 
 {{< horisontal-card
   image="/img/graphics/safespring-image.svg"
-  alt="Safespring On-demand Kubernetes til platformsteams"
+  alt="Safespring Kubernetes Engine til platformsteams"
   cardtitle="Gå gennem platformsgrænsen på dine egne vilkår"
-  text="Hvis du vil evaluere Safespring On-demand Kubernetes for egne workloads, skal du starte med den dokumenterede tjenestegrænse: provisioning, lagring, netværk, adgang og drift."
+  text="Hvis du vil evaluere Safespring Kubernetes Engine for egne workloads, skal du starte med den dokumenterede tjenestegrænse: provisioning, lagring, netværk, adgang og drift."
   link="/kontakt/"
   linktext="Diskuter dine krav"
 >}}
