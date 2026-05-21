@@ -138,6 +138,7 @@ no_match = "Inga organisationer hittades."
 [meta]
 desc = "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!"
 matomo_id = "3"
+matomo_cookie_domain = "*.safespring.se"
 
 [price_list]
 email_warning = "Använd gärna din jobbmail."

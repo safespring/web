@@ -139,6 +139,7 @@ no_match = "No match was found."
 [meta]
 desc = "Safespring is a public cloud platform that is locally produced. With secure data centers, you keep your data within the country's borders. Read more!"
 matomo_id = "5"
+matomo_cookie_domain = "*.safespring.eu"
 
 [price_list]
 email_warning = "Please use your work email."

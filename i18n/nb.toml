@@ -138,6 +138,7 @@ no_match = "Ingen organisasjoner ble funnet."
 [meta]
 desc = "Safespring er en offentlig skyplattform som er lokalt produsert. Med sikre datasentre holder du dine data innenfor landets grenser. Les mer!"
 matomo_id = "4"
+matomo_cookie_domain = "*.safespring.no"
 
 [price_list]
 email_warning = "Bruk gjerne din jobbe-epost."

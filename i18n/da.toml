@@ -138,6 +138,7 @@ no_match = "Ingen organisationer blev fundet."
 [meta]
 desc = "Safespring er en offentlig cloudplatform, der produceres lokalt. Med sikre datacentre holder du dine data inden for landets grænser. Læs mere!"
 matomo_id = "6"
+matomo_cookie_domain = "*.safespring.dk"
 
 [price_list]
 email_warning = "Brug gerne din arbejdsmail."
