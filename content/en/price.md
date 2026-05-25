@@ -50,10 +50,10 @@ Safespring does not charge any traffic cost for data sent to or from our service
 Safespring Kubernetes Engine provides a managed Kubernetes control plane on Safespring infrastructure.
 {{< /ingress >}}
 
-| Product ID            | Description                                      | Billing unit |   Per month |
-|-----------------------|--------------------------------------------------|--------------|------------:|
-| PAAS-man-controlplane | Managed control plane                           | Cluster      |    436,10 € |
-| PAAS-controlplane     | Unmanaged control plane                         | Cluster      |      0,00 € |
+| Product ID            | Description                                      |   Per month |
+|-----------------------|--------------------------------------------------|------------:|
+| PAAS-man-controlplane | Managed control plane                           |    436,10 € |
+| PAAS-controlplane     | Unmanaged control plane                         |      0,00 € |
 
 {{< distance >}}
 
