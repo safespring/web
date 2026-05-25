@@ -18,6 +18,7 @@
 price = "Pris"
 current = "Aktuelt"
 built_on_safespring = "Bygget på Safespring"
+more_services = "Flere tjenester"
 solutions_for = "Løsninger"
 docs = "Safespring Docs"
 company_info = "Virksomhedsinformation"

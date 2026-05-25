@@ -1,3 +1,7 @@
+{{ $servicePages := (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
+{{ $primaryServiceSlugs := slice "containerplatform" "compute" "storage" }}
+{{ $secondaryServiceSlugs := slice "machine-learning" "backup" "database-as-a-service" }}
+
 <header id="navbar" class="site-header">
   <div class="site-header-wrapper">
     <div class="site-header-logo">
@@ -84,28 +88,33 @@
     aria-label="{{ T "menu.platform" }}"
   >
     <div class="megamenu-main-service">
-      {{ range (where $.Site.RegularPages "Section"
-        "services").ByParam "cardorder"
-      }}
-        {{ if isset .Params "megamenu" }}{{ .Render "li-megamenu" }}{{ end }}
+      {{ range $slug := $primaryServiceSlugs }}
+        {{ range $servicePages }}
+          {{ if eq .File.BaseFileName $slug }}
+            {{ .Render "li-megamenu" }}
+          {{ end }}
+        {{ end }}
       {{ end }}
     </div>
     <div class="megamenu-service-card">
       <span class="megamenu-service-card-title-small"
-        >{{ T "menu.built_on_safespring" }}</span
+        >{{ T "menu.more_services" }}</span
       >
       <ul class="megamenu-service-card-list">
-        {{ range (where $.Site.RegularPages "Section" "services").ByParam
-          "cardorder"
-        }}
-          {{ if and (not (isset .Params "megamenu")) (isset .Params
-            "cardorder")
-          }}
-            <li>
-              <a href="{{ .RelPermalink }}" class="matomo-track"
-                >{{ .Params.cardtitle }}</a
-              >
-            </li>
+        {{ range $slug := $secondaryServiceSlugs }}
+          {{ range $servicePages }}
+            {{ if eq .File.BaseFileName $slug }}
+              {{ $label := .Params.megamenulisttitle | default (.Params.cardtitle | default .Title) }}
+              <li>
+                <a
+                  href="{{ .RelPermalink }}"
+                  class="matomo-track"
+                  data-matomo-label="{{ $label }}"
+                  data-matomo-location="mega-menu-secondary"
+                  >{{ $label }}</a
+                >
+              </li>
+            {{ end }}
           {{ end }}
         {{ end }}
       </ul>
@@ -373,6 +382,12 @@
   .desktop-menu {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .desktop-menu .site-header-links {
+    width: 100%;
   }
 
   .site-header-platform-link {

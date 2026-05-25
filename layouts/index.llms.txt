@@ -1,0 +1,114 @@
+{{- $site := .Site -}}
+# Safespring
+
+> Safespring is a Nordic public cloud and infrastructure provider for regulated organizations that need EU and GDPR-aligned services, Nordic data residency, open source infrastructure, and reduced hyperscaler lock-in.
+
+This file is a curated map for LLMs and AI agents. It summarizes the most important Safespring website areas and points to pages that explain the platform, services, compliance posture, documentation, and contact paths.
+
+Primary language for this build: {{ $site.Language.LanguageName }} ({{ $site.Language.Lang }}).
+
+Use robots.txt for crawl permissions and sitemap.xml for exhaustive URL discovery.
+
+## Discovery Files
+
+- [Robots.txt]({{ "robots.txt" | absURL }}): Crawler policy for this site.
+- [Sitemap]({{ "sitemap.xml" | absURL }}): Full generated sitemap for this language/domain.
+- [Technical documentation](https://docs.safespring.com/): Product documentation for compute, storage, backup, APIs, and platform operations.
+- [Status page](https://status.safespring.com/): Operational status and incident information.
+
+## Language Versions
+{{- range $site.Home.AllTranslations }}
+
+- [{{ .Language.LanguageName }}]({{ .Permalink }}): Safespring website in {{ .Language.LanguageName }}.
+{{- end }}
+
+## Core Pages
+{{- $corePages := slice
+  (dict "page" $site.Home "label" "Home" "note" "Overview of Safespring and the cloud platform.")
+  (dict "page" ($site.GetPage "about") "label" "About Safespring" "note" "Company overview, data center model, open source focus, and service background.")
+  (dict "page" ($site.GetPage "services") "label" "Services" "note" "Main cloud infrastructure service overview.")
+  (dict "page" ($site.GetPage "service-catalogue") "label" "Service Catalogue" "note" "Structured service catalogue and service level context.")
+  (dict "page" ($site.GetPage "price") "label" "Price List and Calculator" "note" "Pricing information and downloadable price calculator.")
+  (dict "page" ($site.GetPage "contact") "label" "Contact" "note" "Sales, support, office, and company contact information.")
+-}}
+{{- range $corePages }}
+{{- $item := . }}
+{{- with $item.page }}
+
+- [{{ $item.label }}]({{ .Permalink }}): {{ $item.note }}
+{{- end }}
+{{- end }}
+
+## Services
+{{- $servicePages := slice
+  (dict "page" ($site.GetPage "services/compute") "label" "Compute" "note" "OpenStack-based IaaS for virtual servers, automation, and scalable infrastructure.")
+  (dict "page" ($site.GetPage "services/storage") "label" "Storage" "note" "S3-compatible object storage with Nordic operations, performance, and data control.")
+  (dict "page" ($site.GetPage "services/backup") "label" "Backup" "note" "Cloud backup and recovery based on enterprise backup technology and self-service administration.")
+  (dict "page" ($site.GetPage "services/containerplatform") "label" "Kubernetes" "note" "Safespring Kubernetes Engine for managed control planes, compliance, and digital sovereignty.")
+  (dict "page" ($site.GetPage "services/database-as-a-service") "label" "Database as a Service" "note" "Managed open source database clusters with high availability and operational automation.")
+  (dict "page" ($site.GetPage "services/machine-learning") "label" "AI and Machine Learning" "note" "Federated machine learning and AI infrastructure with GDPR-aligned data handling.")
+  (dict "page" ($site.GetPage "services/managed-infrastructure") "label" "On-Premise Cloud" "note" "Private and managed cloud infrastructure for organizations needing dedicated control.")
+  (dict "page" ($site.GetPage "services/hybrid-infrastruktur") "label" "Hybrid Infrastructure" "note" "Hybrid infrastructure options combining public cloud with customer-controlled environments.")
+-}}
+{{- range $servicePages }}
+{{- $item := . }}
+{{- with $item.page }}
+
+- [{{ $item.label }}]({{ .Permalink }}): {{ $item.note }}
+{{- end }}
+{{- end }}
+
+## Compliance and Trust
+{{- $trustPages := slice
+  (dict "page" ($site.GetPage "compliance") "label" "Compliance Overview" "note" "Central page for policies, legal documents, certificates, audits, and procurement reviews.")
+  (dict "page" ($site.GetPage "compliance/iso-27001") "label" "ISO 27001" "note" "Certification scope, issuer, validity, and certificate details.")
+  (dict "page" ($site.GetPage "compliance/fr2000") "label" "FR2000" "note" "Management system certification details and scope.")
+  (dict "page" ($site.GetPage "gdpr") "label" "GDPR" "note" "How Safespring helps customers meet GDPR and data protection requirements.")
+  (dict "page" ($site.GetPage "environment") "label" "Environment and Sustainability" "note" "Renewable energy, efficient data centers, and sustainability practices.")
+  (dict "page" ($site.GetPage "faq") "label" "FAQ" "note" "Frequently asked questions about compliance, data centers, and operations.")
+-}}
+{{- range $trustPages }}
+{{- $item := . }}
+{{- with $item.page }}
+
+- [{{ $item.label }}]({{ .Permalink }}): {{ $item.note }}
+{{- end }}
+{{- end }}
+
+## Knowledge and Resources
+{{- $resourcePages := slice
+  (dict "page" ($site.GetPage "knowledge-hub") "label" "Knowledge Hub" "note" "Collected blogs, webinars, white papers, technical updates, and solution briefs.")
+  (dict "page" ($site.GetPage "blog") "label" "Blog" "note" "Company news, policy views, customer context, and cloud sovereignty articles.")
+  (dict "page" ($site.GetPage "tech-update") "label" "Tech Updates" "note" "Technical updates, platform changes, infrastructure examples, and engineering notes.")
+  (dict "page" ($site.GetPage "whitepaper") "label" "White Papers" "note" "Long-form publications about cloud, compliance, security, GDPR, and migration.")
+  (dict "page" ($site.GetPage "solution-brief") "label" "Solution Briefs" "note" "Concise practical guides and implementation summaries.")
+  (dict "page" ($site.GetPage "webinar") "label" "Webinars" "note" "Recorded and upcoming sessions about cloud services, compliance, Kubernetes, and backup.")
+-}}
+{{- range $resourcePages }}
+{{- $item := . }}
+{{- with $item.page }}
+
+- [{{ $item.label }}]({{ .Permalink }}): {{ $item.note }}
+{{- end }}
+{{- end }}
+
+## Technical Documentation
+
+- [Compute documentation](https://docs.safespring.com/compute/getting-started/): Getting started with Safespring Compute.
+- [Compute API access](https://docs.safespring.com/compute/api/): API access for the OpenStack-based compute platform.
+- [Storage documentation](https://docs.safespring.com/storage/getting-started/): Getting started with Safespring Storage.
+- [S3 configuration guides](https://docs.safespring.com/storage/howto/configs/aws-cli/): Configuration examples for common S3-compatible tools.
+- [Backup documentation](https://docs.safespring.com/backup/quickstart-guide/): Getting started with Safespring Backup.
+- [Backup API documentation](https://docs.safespring.com/backup/automation/rest-api/): Backup automation and API resources.
+
+## Contact Paths
+
+- [Contact Safespring]({{ with $site.GetPage "contact" }}{{ .Permalink }}{{ else }}{{ "contact/" | absURL }}{{ end }}): Use for sales, general questions, offices, and team contacts.
+- [Support process]({{ with $site.GetPage "compliance/support_process" }}{{ .Permalink }}{{ else }}mailto:support@safespring.com{{ end }}): Support process and support channel information.
+- [Email hello@safespring.com](mailto:hello@safespring.com): General contact address.
+- [Email support@safespring.com](mailto:support@safespring.com): Customer support address.
+
+## Optional
+
+- [Current careers]({{ with $site.GetPage "career" }}{{ .Permalink }}{{ else }}{{ "career/" | absURL }}{{ end }}): Open roles and recruitment information.
+- [GEANT and OCRE information]({{ with $site.GetPage "geant" }}{{ .Permalink }}{{ else }}{{ "geant/" | absURL }}{{ end }}): Service and procurement information for GEANT/OCRE contexts.

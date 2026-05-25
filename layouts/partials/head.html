@@ -72,16 +72,29 @@
   }
   .heading-default-single {
     background-image: url('/img/background/{{ $bg }}');
-    padding:15% 5% 5% 5%;
+    padding:12% 5% 4% 5%;
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-evenly;
+    align-items:flex-end;
     gap:5%;
+    box-sizing:border-box;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
   }
+
+    @media only screen and (min-width:1500px) {
+      .heading-default-single {
+        padding:12% 5% 3% 5%;
+      }
+    }
+
+    .heading-default-single h1 {
+      color: #195F8C;
+      font: 300 3.75rem/1 var(--hind-font);
+    }
 
     .heading-default-single p {
       font:300 1.125rem montserrat;
@@ -294,10 +307,10 @@
         font: 17px/1 var(--hind-font-semibold) !important;
         color: var(--clear-blue-color) !important;
         justify-content: flex-end;
-        gap: 7%;
+        gap: 49px;
         list-style: none;
         padding: 0 !important;
-        margin: 0;
+        margin: 0 0 3px 0;
       }
 
       .site-header-links a {
@@ -441,7 +454,10 @@
 
         .megamenu-main-service-card {
           transition: all ease-in-out 0.3s;
-          width: 250px;
+          width: 300px;
+          box-sizing: border-box;
+          padding: 20px;
+          border-radius: 20px;
         }
 
         .megamenu-main-service-card p {
@@ -450,15 +466,15 @@
         }
 
         .megamenu-main-service-card-title {
-          font: 300 21px/1 var(--hind-font);
+          font: 21px var(--hind-font);
           margin-top: 5px;
         }
 
         .megamenu-main-service-card:hover {
           background-color: #ffffff90;
           border-radius: 20px;
-          padding: 10%;
-          margin: -10%;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 24px rgba(25, 95, 140, 0.12);
         }
 
         .megamenu-service-card-list {
@@ -473,17 +489,17 @@
           transition: all ease-in-out 0.3s;
           background-color: #ffffffad;
           border-radius: 20px;
-          padding: 30px 40px;
-          margin: -30px -40px;
+          padding: 40px 50px;
+          margin: -40px -50px;
           display: flex;
           flex-direction: column;
           justify-content: center;
         }
 
         .megamenu-service-card:hover {
-          border-radius: 25px;
-          padding: 40px 50px;
-          margin: -40px -50px;
+          border-radius: 20px;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 24px rgba(25, 95, 140, 0.12);
         }
 
         .megamenu-service-card-title-small {
@@ -630,10 +646,6 @@
       }
 
       @media only screen and (max-width: 940px) {
-        .heading-default-single {
-          flex-flow: row wrap !important;
-          padding: max(150px, 10%) 10% 10% 10% !important;
-        }
         .site-header-wrapper {
           padding: 2em 2em 1em !important;
         }
@@ -648,6 +660,13 @@
       /* END - MOBILE MENU */
 
       @media only screen and (max-width: 900px) {
+        .heading-default-single {
+          flex-flow: row wrap !important;
+          padding: 150px 10% 48px !important;
+          align-items: flex-start;
+          align-content: flex-start;
+          row-gap: 24px;
+        }
         .heading-default-single h1 {
           max-width: 90%;
           font: 300 2.75rem/1 var(--hind-font);

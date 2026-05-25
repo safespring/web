@@ -1,4 +1,10 @@
-<a href="{{ .RelPermalink }}" class="matomo-track">
+{{ $label := .Params.megamenutitle | default (.Params.cardtitle | default .Title) }}
+<a
+  href="{{ .RelPermalink }}"
+  class="matomo-track"
+  data-matomo-label="{{ $label }}"
+  data-matomo-location="mega-menu-primary"
+>
   <div class="megamenu-main-service-card">
     <div class="cardtitle">
       <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10">
@@ -11,11 +17,7 @@
         class="megamenu-main-service-card-title"
         style="color: {{ .Params.cardcolor }}"
       >
-        {{ if .Params.cardtitle }}
-          {{ .Params.cardtitle }}
-        {{ else }}
-          {{ .Title }}
-        {{ end }}
+        {{ $label }}
       </span>
     </div>
     <p class="mb-0">
