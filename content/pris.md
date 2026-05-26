@@ -122,7 +122,7 @@ Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster.
 
 {{< distance >}}
 
-3# Safespring Storage (S3)
+## Safespring Storage (S3)
 
 {{< ingress >}}
 Safespring erbjuder två anpassade S3-produkter för olika lagringsbehov: S3-archive för större volymer över längre tid och S3-storage för applikationer som aktivt använder S3-protokollet.
