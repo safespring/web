@@ -126,7 +126,7 @@ As we provide services to some of the public research institutions we will condu
 As soon as possible. Rolling interviews.
 
 **Salary range:**  
-70 000 – 90 0000 EUR annually
+70 000 – 90 000 EUR annually
 {{% /note %}}
 
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/7f6f194c-ebb9-4c37-b13a-cc785165ff86/31c53cbf-51dc-4b7b-8542-7c9a5bde7ce5#applyNow" >}}
