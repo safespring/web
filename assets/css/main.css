@@ -4548,6 +4548,35 @@ padding-left:30px;
 		overflow: hidden;
 	}
 
+	.safespring-horisontal-card-image--logo {
+		align-items:center;
+		display:flex;
+		justify-content:center;
+		position:relative;
+	}
+
+	.safespring-horisontal-card-image img.safespring-horisontal-card-logo {
+		border-radius:0;
+		flex-shrink:0;
+		height:auto;
+		max-width:calc(100% - 64px);
+		min-height:0;
+		min-width:0;
+		object-fit:contain;
+		width:220px;
+	}
+
+	.safespring-horisontal-card-content li p {
+		display:inline;
+		margin:0;
+	}
+
+	@media only screen and (max-width:900px) {
+		.safespring-horisontal-card-image img.safespring-horisontal-card-logo {
+			width:180px;
+		}
+	}
+
 	/* DOCUMENT TABLE */
 	.compliance-document-table {
 		margin:1.5rem 0 2.5rem;

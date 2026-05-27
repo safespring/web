@@ -70,7 +70,7 @@ Safespring Kubernetes Engine passar särskilt bra när ni:
 
 Den viktigaste tekniska fördelen är inte en enskild funktion. Det är att tjänsten är utformad som en användbar plattformsgräns från dag ett. Det spelar roll eftersom plattformsteam sällan fastnar i att skapa ett kluster. De fastnar i att göra klustret konsekvent, supportbart, säkert och redo för produktion.
 
-{{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Vad det här betyder i praktiken" %}}
+{{< custom-card-logo image="/img/graphics/safespring-cloud.webp" logo="/img/graphics/safespring-byline-blue.svg" cardtitle="Vad det här betyder i praktiken" >}}
 Arkitekturen är utformad för att ge er:
 
 - en self-service-modell via portal och API i stället för manuell klusteradministration
@@ -78,7 +78,8 @@ Arkitekturen är utformad för att ge er:
 - en immutable operativsystemsgrund med Talos Linux, vilket minskar driftavvikelser och attackyta
 - en modern nätverks- och trafikmodell baserad på Cilium, Gateway API och stöd för Traefik
 - en tydligare ansvarsfördelning mellan det Safespring driver och det ert eget team fortfarande äger
-{{% /custom-card %}}
+
+{{< /custom-card-logo >}}
 
 {{< distance >}}
 
