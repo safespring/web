@@ -91,6 +91,20 @@
   <div class="sidebar-container demo-sticky">
     <div class="sidebar-content">
       <div>
+        {{ if and (eq .Section "career") .Params.sidebarlinkurl }}
+        <p class="card-section"></p>
+        <span class="card-heading">
+          {{ .Params.sidebarlinkname | default "Apply now" }}
+        </span>
+        <p class="mb-2">
+          {{ if eq .Lang "nb" }}Vil du jobbe med oss? Send CV-en din ved å klikke her.
+          {{ else if eq .Lang "da" }}Vil du arbejde hos os? Send dit CV ved at klikke her.
+          {{ else if eq .Lang "en" }}Would you like to join us? Send your CV by clicking here!
+          {{ else }}Vill du arbeta med oss? Skicka ditt CV genom att klicka här.
+          {{ end }}
+        </p>
+        <a class="button" href="{{ .Params.sidebarlinkurl }}">{{ .Params.sidebarlinkname | default "Apply now" }}</a>
+        {{ else }}
         <p class="card-section">{{ .Params.documentation }}</p>
         <span class="card-heading">
           {{ T "sidebar.demo" }}
@@ -99,6 +113,7 @@
           {{ T "sidebar.demo_show" }}
         </p>
         <a class="button" href="/demo/compute">{{ T "sidebar.demo" }}</a>
+        {{ end }}
       </div>
     </div>
     <div class="close-btn">&times;</div>

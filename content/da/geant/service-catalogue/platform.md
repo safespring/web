@@ -18,6 +18,8 @@ section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 noindex: "x"
+layout: "redirect"
+redirecturl: "/tjenester/containerplatform/"
 aliases:
   - /geant/service-catalogue/platform/
 ---

@@ -53,23 +53,7 @@ Kubernetes SLO applies to the control plane only. Worker node
 availability is governed by the underlying Compute SLO.
 {{% /note %}}
 
-## 2. Latency Targets
-
-In addition to availability, the following services have latency targets
-measured at the 95th percentile (p95) over a calendar month.
-
-| Service | Metric | Min | Avg (p50) | Max (p95) |
-|---|---|---|---|---|
-| **Network (intra-site)** | Round-trip | [TBD] | [TBD] | [TBD] |
-| **Block Storage (read)** | IOPS latency | [TBD] | [TBD] | [TBD] |
-| **Block Storage (write)** | IOPS latency | [TBD] | [TBD] | [TBD] |
-| **Object Storage (S3)** | First-byte | [TBD] | [TBD] | [TBD] |
-
-**Note:** Latency targets are informational and are not covered by
-Financial Credits. Persistent breach may be reported to Safespring
-support for investigation.
-
-## 3. Definitions
+## 2. Definitions
 
 The following definitions apply to the SLA:
 
@@ -144,7 +128,7 @@ standard. In exceptional cases involving external security threats,
 additional maintenance windows may be announced with as much notice as
 possible.
 
-## 4. Financial Credits
+## 3. Financial Credits
 
 Financial Credits are determined on a calendar month basis per Covered
 Service.
@@ -196,7 +180,7 @@ Credits will be made in the form of a monetary credit applied to future
 use of the Service and will be applied within 60 days after the
 Financial Credit was requested.
 
-## 5. SLA Exclusions
+## 4. SLA Exclusions
 
 This SLA does not apply to any:
 
@@ -211,7 +195,7 @@ Agreement or Acceptable Use Policy;
 7. Errors caused by quotas or resource limits listed in the self-service
 portal.
 
-## 6. Measurement and Monitoring
+## 5. Measurement and Monitoring
 
 Availability is measured at the connection point (delivery point) using
 Safespring's infrastructure monitoring systems at the datacenter.

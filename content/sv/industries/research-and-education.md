@@ -7,7 +7,7 @@ date: 2025-01-27
 draft: false
 intro: "Över 60 lärosäten använder Safespring genom Sunet, Sikt, DeiC eller direkt via ramavtalet GÉANT OCRE."
 background: "2safespring-akademisk-sektor-2022.webp"
-logobanner: "yes"
+logobannertransparent: "yes"
 toplogo: "ocre-safespring-service-providor-2024.svg"
 showthedate: false
 banner: "blue-hover-tech"

@@ -22,26 +22,35 @@ Försök inte förklara tekniken i detalj. Håll dig till enkla ord som drift, s
 Det viktigaste att kvalificera tidigt är om kunden faktiskt har ett behov av digital suveränitet eller suveräna molntjänster. Om det behovet inte finns blir Safespring ofta mindre tydligt relevant.
 {{% /note %}}
 
-## Vilka Safespring är
+## Kort om Safespring
 
-Safespring är en europeisk molnleverantör som hjälper företag och organisationer att köra viktiga IT-tjänster med fokus på säkerhet, kontroll och dataplacering i Europa.
+Safespring är en europeisk molnleverantör för organisationer som behöver mer rådighet över sin infrastruktur än vad ett generiskt publikt moln normalt ger. De viktigaste samtalsspåren är:
 
-Det enkla du behöver komma ihåg är att Safespring är mest relevant för kunder som inte bara letar efter "vilket moln som helst", utan som också bryr sig om frågor som digital suveränitet, jurisdiktion och minskat beroende av stora utländska molnleverantörer.
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-shield-check" text="Digital suveränitet" description="Relevant när kunden vill ha kontroll över data, åtkomst, drift, jurisdiktion och beroenden till utomeuropeiska leverantörer." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-code-branch" text="Öppna standarder" description="Plattformen bygger på öppna standarder, vilket minskar inlåsning och gör det lättare att resonera om långsiktig kontroll." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-leaf" text="Grön energi" description="Safesprings datacenter drivs med 100 procent förnyelsebar energi och har PUE under 1,2 (ett sätt att mäta energieffektivitet)." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-certificate" text="Certifiering och efterlevnad" description="Safespring är ISO 27001-certifierat, FR2000-certifierat och arbetar med GDPR-efterlevnad." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-location-dot" text="Svenska och norska datacenter" description="Datacenter i Sverige och Norge gör Safespring relevant när kunden bryr sig om var infrastrukturen finns och hur data hanteras." >}}
 
-Du behöver alltså inte beskriva hela bolaget. Det räcker ofta att kunna säga:
+## Vad tjänsten är
 
-- "Safespring är en europeisk molnleverantör med fokus på säkerhet, kontroll och dataplacering i Europa."
-- "Vi är särskilt relevanta för organisationer som bryr sig om digital suveränitet och vill ha mer kontroll över var deras data och tjänster ligger."
+Safespring Kubernetes Engine är relevant för organisationer som vill köra moderna applikationer med mer kontroll över drift, säkerhet, dataplacering och europeisk suveränitet.
 
-Korta USP:er att komma ihåg:
+{{% note "GPU för AI och analys" %}}
+Safespring har två typer av GPU-kort som kan kopplas: Nvidia **A2** och **H100**.
 
-- datacenter i Sverige och Norge
-- europeisk molnleverantör med fokus på digital suveränitet
-- dataplacering och drift i Europa
-- bygger på öppna standarder
-- särskilt relevant för offentlig sektor, forskning och andra verksamheter med höga krav på kontroll
+- `Nvidia A2` passar lättare AI-behov, till exempel att testa, utveckla eller köra färdiga AI-modeller.
+- `Nvidia H100` är ett kraftfullare kort för tyngre AI-, ML- och beräkningsjobb.
 
-## Fyra ord du behöver förstå
+{{% /note %}}
+
+Du kan säga:
+
+- "Det är en tjänst för organisationer som vill köra moderna applikationer på ett mer kontrollerat och säkert sätt."
+- "Det brukar vara relevant när kunder vill modernisera applikationsdrift utan att ge upp kontroll över data, drift och jurisdiktion."
+- "Jag vill inte ge en teknisk dragning i telefon, men ett kort samtal med en specialist kan visa om det här är relevant för er."
+
+## Några ord du behöver förstå
 
 Du behöver inte bli teknisk expert, men du ska veta ungefär vad orden betyder när de dyker upp.
 
@@ -69,83 +78,56 @@ Digital suveränitet betyder i enkel form att en organisation vill ha större ko
 Det här är viktigt eftersom behov av digital suveränitet ofta är en stark anledning att vilja prata med Safespring. Om kunden inte bryr sig om kontroll, dataplacering eller europeisk jurisdiktion blir dialogen ofta mindre träffsäker.
 {{% /accordion %}}
 
-## Vad tjänsten är, enkelt uttryckt
+{{% accordion title="Vad är private cloud?" id="ord-private-cloud" %}}
+Private cloud betyder i det här sammanhanget en molnliknande miljö som är mer dedikerad till kunden. Den kan vara relevant när kunden vill ha mer kontroll över infrastruktur, data och driftmiljö än i ett vanligt publikt moln.
 
-Safespring Kubernetes Engine är en tjänst för företag och organisationer som vill köra moderna affärskritiska applikationer på ett mer kontrollerat, säkert och framtidssäkert sätt.
+För mötesbokning räcker det att tänka: kunden vill ha molnets arbetssätt, men med mer egen kontroll.
+{{% /accordion %}}
 
-Det är helt okej att säga orden `Kubernetes` och `containrar`, men använd dem enkelt:
+{{% accordion title="Vad är hybrid cloud?" id="ord-hybrid-cloud" %}}
+Hybrid cloud betyder att kundens egen miljö, till exempel ett eget datacenter eller co-location, används tillsammans med en molnplattform.
 
-- containrar = ett modernt sätt att paketera och köra applikationer
-- Kubernetes = systemet som håller ordning på dem
-- plattform = miljön där allt körs
+Det viktiga i samtalet är inte exakt hur kopplingen byggs. Det viktiga är att höra om kunden vill kombinera kontroll över befintliga data med modernare drift, skalning eller applikationsplattform.
+{{% /accordion %}}
 
-När du pratar med kund kan du sedan koppla tillbaka till sådant de ofta bryr sig om:
+{{% accordion title="Vad betyder GPU?" id="ord-gpu" %}}
+GPU är särskild beräkningskapacitet som ofta används för AI, maskininlärning, inferens, analys och andra tunga beräkningsjobb.
 
-- hur kunden kör sina applikationer
-- om kunden vill modernisera sin IT-drift
-- om kunden vill ha bättre kontroll
-- om kunden har krav på säkerhet eller dataplacering i Europa
-- om kunden bryr sig om digital suveränitet
+Du behöver inte veta vilken GPU-modell kunden behöver. Lyssna bara efter om de har AI-, ML- eller analysbehov där vanlig serverkapacitet inte räcker.
+{{% /accordion %}}
 
-Det viktiga i ett första samtal är inte att kunden förstår hur plattformen är byggd. Det viktiga är att kunden förstår att Safespring kan vara relevant när de:
+{{< accordion-script >}}
 
-- vill modernisera hur de kör applikationer
-- vill minska eget driftansvar
-- har krav på säkerhet, compliance eller dataplacering i Europa
-- har ett uttalat behov av digital suveränitet eller suveräna molntjänster
-- vill prata med någon som förstår både teknik och verksamhetskrav
+## När kunden är relevant
 
-## När tjänsten brukar vara relevant
+Lyssna efter om kunden:
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-code-branch" text="Moderna applikationer" description="Kunden utvecklar eller kör redan containerbaserade applikationer, eller planerar att gå i den riktningen." >}}
-{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Säkerhet, kontroll och suveränitet" description="Kunden har frågor om dataplacering, compliance, ansvarsfördelning eller uttrycker behov av digital suveränitet." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-people-group" text="Suveränitet som drivkraft" description="Det finns ett verkligt behov av europeisk kontroll, dataplacering eller minskat beroende av stora utländska molnleverantörer." >}}
+- kör eller planerar moderna applikationer, containrar eller Kubernetes
+- vill modernisera applikationsdrift eller minska eget driftansvar
+- har krav på digital suveränitet, compliance, dataplacering eller europeisk kontroll
+- behöver kombinera eget datacenter eller co-location med private cloud eller hybrid cloud
+- behöver GPU-kapacitet för AI, maskininlärning, inferens eller dataanalys
 
-{{< distance >}}
+Svagare signaler:
 
-## Så kan du beskriva tjänsten
+- kunden vill bara ha ett pris utan sammanhang
+- kunden har inget pågående behov eller intern diskussion
+- kunden har inget krav på kontroll, dataplacering eller digital suveränitet
+- kunden söker enkel hosting för en server eller webbplats
 
-Du kan säga:
+## Snabb kvalificering
 
-- "Det här är en tjänst för organisationer som vill köra moderna applikationer på ett mer kontrollerat och säkert sätt."
-- "Safespring hjälper företag som vill modernisera hur de driver viktiga applikationer."
-- "Det brukar vara relevant för team som vill lägga mindre tid på drift och mer tid på själva verksamheten eller utvecklingen."
-- "Jag vill inte ge dig en teknisk dragning nu, men jag tror att ett kort samtal med vår specialist kan vara relevant om ni tittar på modernisering, säkerhet, dataplacering eller digital suveränitet."
-
-Du kan också säga:
-
-- "Det här är inte ett samtal för att köpa något direkt. Det är mer ett första avstämningsmöte för att se om det här ens är relevant för er."
-
-Om du blir osäker, använd hellre enklare ord än mer tekniska.
-
-{{% note "Säg hellre" %}}
-- "hur ni kör era applikationer"
-- "hur ni sköter driften idag"
-- "hur mycket ni gör själva"
-- "krav på säkerhet eller var data finns"
-- "om det är viktigt för er att ha kontroll inom Europa"
-{{% /note %}}
-
-{{% disclaimer "Än" %}}
-- "containerorkestrering", om du inte måste
-- "cloud native", om kunden inte själv använder ordet
-{{% /disclaimer %}}
-
-Men du behöver inte undvika orden `Kubernetes` och `containrar`. Det viktiga är bara att du säger dem på ett enkelt sätt.
-
-{{< icon-block-horisontal color="#E67E22" icon="fa-solid fa-triangle-exclamation" text="Säg inte så här" description="&ldquo;Det är som AWS fast svenskt.&rdquo;<br>&ldquo;Det är bara Kubernetes som tjänst.&rdquo;<br>&ldquo;Det blir billigare för er.&rdquo;<br>&ldquo;Det här ersätter allt ni har idag.&rdquo;<br>&ldquo;Jag kan förklara exakt hur plattformen fungerar.&rdquo;<br><br>Skälet är enkelt: det blir antingen för tekniskt, för förenklat eller för kategoriskt." >}}
-
-## Så kvalificerar du snabbt
-
-För att ett möte ska vara värt att boka bör minst två av de här tre sakerna finnas:
-
-- kunden arbetar redan med moderna applikationer, containrar eller Kubernetes, eller planerar att göra det
-- kunden vill förändra hur de driver applikationer och minska eget driftansvar
-- kunden har ett tydligt behov av digital suveränitet eller suveräna molntjänster
+Boka helst när minst två starka signaler finns från listan ovan. Om bara en signal finns behöver den vara konkret, till exempel ett pågående projekt, ett uttalat krav eller rätt beslutsfattare som vill diskutera vägval.
 
 Om inget av detta finns är det ofta bättre att inte driva samtalet vidare.
 
-## Vilka personer du helst vill boka med
+{{% note "Jämför inte, precisera" %}}
+Försök inte vinna mot AWS, Azure eller Google i telefon. Få kunden att själv precisera om kraven handlar om fysisk plats, kontroll, åtkomst, jurisdiktion eller dokumenterbarhet.
+{{% /note %}}
+
+## Vem du ska boka med
+
+Försök hitta någon som äger frågan om applikationsdrift, plattform, infrastruktur, säkerhet eller IT-strategi.
 
 {{< flexbox >}}
 {{< contact-small title="Affärs- och teknikansvar" name="CTO" email="om frågan rör strategi, modernisering eller vägval framåt" >}}
@@ -157,81 +139,66 @@ Om inget av detta finns är det ofta bättre att inte driva samtalet vidare.
 {{< contact-small title="Säkerhet och regelefterlevnad" name="Säkerhets- eller complianceansvarig" email="om dataplacering är en viktig fråga" >}}
 {{< /flexbox >}}
 
-Om du inte får exakt titel räcker det ofta att fråga:
+Om du inte får exakt titel, fråga:
 
 - "Vem hos er ansvarar för hur applikationer driftas eller för er tekniska plattform?"
+- "Vem äger frågor om dataplacering, driftåtkomst eller europeisk molnkontroll hos er?"
 
-## Extra viktigt att kvalificera
+## Frågor att ställa
 
-Safespring blir ofta mest relevant när kunden har ett behov av digital suveränitet eller suveräna molntjänster.
+Ställ inte alla frågor. Två till fyra räcker ofta.
 
-Det betyder att kunden till exempel:
-
-- vill ha större kontroll över var data hanteras
-- vill minska beroendet av stora utländska molnleverantörer
-- har krav kopplade till Europa, offentlig sektor, forskning eller känslig information
-- behöver prata om kontroll, jurisdiktion och långsiktigt oberoende
-
-Om sådana behov inte finns kan konkurrensen vara betydligt större och kunddialogen mindre träffsäker. Därför är det bra att tidigt lyssna efter just detta.
-
-## Bra frågor att ställa
-
-Du behöver inte ställa många frågor. Två till fyra räcker ofta.
-
-Exempel:
-
-- "Är digital suveränitet eller behov av en europeisk molnleverantör viktigt för er?"
 - "Hur kör ni era applikationer idag?"
 - "Arbetar ni redan med containrar eller Kubernetes, eller är det något ni tittar på framåt?"
-- "Har ni börjat titta på hur ni vill modernisera drift eller applikationsmiljö framåt?"
-- "Är frågor som säkerhet, compliance eller dataplacering viktiga i det här arbetet?"
-- "Är det här något ni bygger och driftar helt själva idag?"
-- "Skulle det vara relevant för er att ta ett kort första samtal med en specialist för att se om det finns en match?"
+- "Är digital suveränitet eller behov av en europeisk molnleverantör viktigt för er?"
+- "När ni säger att data ligger i Sverige, menar ni fysisk region, eller även vem som driver plattformen och har åtkomst?"
+- "Har ni data eller system som måste ligga kvar i eget datacenter eller co-location?"
+- "Tittar ni på private cloud eller hybrid cloud för att kombinera kontroll med mer modern drift?"
+- "Behöver ni GPU-kapacitet för AI, maskininlärning, inferens eller dataanalys?"
+- "Skulle det vara relevant med ett kort första samtal med en specialist för att se om det finns en match?"
 
-## Signaler att lyssna efter
-
-Positiva signaler:
-
-- kunden nämner containrar eller Kubernetes
-- kunden nämner modernisering, applikationsdrift eller att de vill förändra hur de kör system
-- kunden säger att de lägger mycket egen tid på drift
-- kunden nämner offentlig sektor, forskning, känslig data eller regulatoriska krav
-- kunden uttrycker behov av digital suveränitet, europeisk kontroll eller mindre beroende av stora utländska moln
-- kunden vill undvika inlåsning eller ha bättre kontroll
-- kunden är osäker på vad som är rätt väg framåt och vill prata med någon teknisk
-
-Svagare signaler:
-
-- kunden vill bara ha ett pris direkt utan sammanhang
-- kunden har inget tydligt behov just nu och ingen pågående diskussion internt
-- kunden har inget uttalat behov av kontroll i Europa, dataplacering eller digital suveränitet
-- kunden letar efter en ren hostingtjänst för en enskild server eller enkel webbplats
-
-## En enkel mötesöppning
+## Enkel öppning
 
 {{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Exempel på öppning" %}}
-Hej, jag ringer från Safespring. Jag ville bara stämma av om ni arbetar med moderna applikationer eller ser över hur ni vill drifta dem framåt. Det brukar vara särskilt relevant för organisationer där dataplacering, europeisk kontroll eller digital suveränitet är viktigt. Är det en fråga ni tittar på just nu?
+Hej, jag ringer från Safespring. Jag ville stämma av hur ni tänker kring applikationsdrift och moln när kraven på dataplacering, driftåtkomst och europeisk kontroll blir viktiga.
+
+Många har redan valt svensk region hos en global molnleverantör. För er, räcker det att datan ligger i Sverige, eller behöver ni också kunna dokumentera vem som driver plattformen och har åtkomst?
 {{% /custom-card %}}
 
-## Om kunden frågar "Vad är Kubernetes?"
+Om kunden verkar relevant:
 
-Du behöver inte undervisa.
+- "Det låter som att det här kan vara värt att titta närmare på. Ska vi boka ett kort första möte med en specialist så kan ni avgöra om det är relevant att gå vidare?"
 
-Säg hellre:
+## Vanliga svar från kunden
 
-- "Det är ett sätt att köra och hantera moderna applikationer, men det viktiga här är inte själva tekniken utan om ni har behov av en sådan typ av plattform."
+{{% note "Det är redan löst" %}}
+Bra, då har ni redan gjort ett aktivt val kring dataplacering. Är det löst på nivån fysisk region, eller även kring driftåtkomst, support, incidenthantering och tredjelandsöverföringar?
+{{% /note %}}
 
-eller:
+{{% note "Det är inte intressant" %}}
+Jag förstår. Är det för att ni inte har sådana krav, eller för att ni redan har en lösning som täcker dem?
+{{% /note %}}
 
-- "Jag vill inte förenkla det för mycket, därför är det bättre att vi bokar ett kort samtal med en specialist om det är relevant för er."
+{{% note "Vad är Kubernetes?" %}}
+Det är ett sätt att köra och hantera moderna applikationer. Det viktiga i det här samtalet är inte tekniken i sig, utan om ni har behov av en sådan typ av plattform med mer kontroll över drift, säkerhet och dataplacering.
+{{% /note %}}
 
-Om kunden frågar "Vad betyder container?" kan du säga:
+## Saker att inte lova
 
-- "Det är ett sätt att paketera och köra applikationer på ett mer standardiserat sätt."
+Lova inte:
 
-Om kunden frågar "Vad menar du med plattform?" kan du säga:
+- att allt blir billigare
+- att tjänsten ersätter allt kunden har idag
+- att all data kan ligga kvar utan förändringar
+- att alla system enkelt kan flyttas
+- att GPU-kapacitet finns i en viss region eller exakt modell
+- att private cloud eller hybrid cloud är rätt lösning innan en specialist förstått miljön
 
-- "Jag menar helt enkelt den tekniska miljö där applikationer körs och hanteras."
+Säg inte:
+
+- "Det är som AWS fast svenskt."
+- "Det är bara Kubernetes som tjänst."
+- "Jag kan förklara exakt hur plattformen fungerar."
 
 ## Målet med samtalet
 
@@ -240,42 +207,12 @@ Målet är inte att sälja tjänsten i telefon.
 Målet är att:
 
 1. förstå om kunden arbetar med rätt typ av problem
-2. höra om det finns ett faktiskt intresse eller behov
+2. höra om det finns ett faktiskt behov
 3. boka ett första möte med rätt specialist från Safespring
 
-{{% note "När du ska försöka boka möte" %}}
-Försök boka när kunden:
-
-- känner igen problemet
-- är rätt person eller kan hänvisa till rätt person
-- visar intresse för säkerhet, kontroll, modernisering, plattformsfrågor eller digital suveränitet
-- uttrycker ett verkligt behov av digital suveränitet eller suveräna molntjänster
-- vill förstå om Safespring kan vara relevant
-
-En enkel övergång kan vara:
-
-- "Det låter som att det här kan vara relevant att titta närmare på. Ska vi boka ett kort första möte med en av våra specialister så kan ni avgöra om det är värt att gå vidare?"
-{{% /note %}}
-
-{{% disclaimer "När du inte ska pressa vidare" %}}
-Pressa inte vidare om kunden:
-
-- tydligt säger att de inte arbetar med den här typen av frågor
-- saknar behov helt och hållet
-- redan är i ett låst spår där ett möte inte skulle skapa värde
-
-Då är det bättre att avsluta professionellt och lämna dörren öppen.
-{{% /disclaimer %}}
-
-## Avslut att använda
-
-- "Tack, då vet jag lite bättre hur ni tänker. Om det blir aktuellt framåt får ni gärna höra av er."
-- "Jag skickar gärna en kort sammanfattning och så kan ni avgöra om ett möte är relevant senare."
-- "Om du vill kan jag också försöka hitta rätt person hos er att ta en första dialog med."
+Pressa inte vidare om kunden tydligt saknar behov eller inte arbetar med den här typen av frågor. Avsluta professionellt och lämna dörren öppen.
 
 {{< distance >}}
-
-{{< accordion-script >}}
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Behöver du hjälp inför ett samtal?" %}}
 Om du är osäker på hur du ska formulera dig inför en specifik kund, kontakta Safespring så hjälper vi dig att förbereda rätt vinkel inför samtalet.
