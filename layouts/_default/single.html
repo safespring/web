@@ -29,12 +29,13 @@
   {{ .Render "li3" }}
 </div>-->
 <body>
-<div class="heading-default-single">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
+<div class="heading-default-single{{ if .Params.logobannertransparent }} heading-default-single--with-logo-banner{{ end }}">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
     {{ .Render "li3" }}
+    {{ if .Params.logobannertransparent }}{{ partial "logobanner-transparent.html" . }}{{ end }}
   </div>
 
 <!-- CONTENT -->
-{{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
+{{ if and (not .Params.logobannertransparent) .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
 <main class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>

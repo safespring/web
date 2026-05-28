@@ -17,6 +17,8 @@ section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: "x"
+layout: "redirect"
+redirecturl: "/services/safespring-kubernetes-engine/"
 aliases:
   - /geant/service-catalogue/platform/
 ---
