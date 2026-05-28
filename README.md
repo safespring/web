@@ -49,10 +49,18 @@ Then open [http://localhost:1313/](http://localhost:1313/).
 To create a production build locally:
 
 ```bash
-hugo
+npm run build
 ```
 
-Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
+The local build installs Node dependencies if needed, installs the Playwright Chromium runtime, regenerates compliance PDFs from the current Git checkout, and then runs Hugo. Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
+
+Compliance PDFs are generated before Hugo renders the site. The Caddy v2 repo watcher that publishes beta should run:
+
+```bash
+npm run build:beta
+```
+
+The beta build script runs `npm ci`, installs the Playwright Chromium runtime, regenerates compliance PDFs from the current Git checkout, and then runs `hugo --minify`. Pass Hugo destination arguments after `--`, for example `npm run build:beta -- -d /var/www/beta`.
 
 ## Repository structure
 

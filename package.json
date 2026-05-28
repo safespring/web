@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "npm run pdf:setup && npm run pdf:compliance && hugo",
+    "build": "scripts/build-site.sh",
+    "build:beta": "scripts/build-beta.sh",
     "dev:compliance": "node scripts/dev-compliance-pdfs.mjs",
     "format": "prettier --write .",
     "pdf:compliance": "node scripts/build-compliance-pdfs.mjs",
