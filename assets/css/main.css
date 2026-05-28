@@ -5229,6 +5229,7 @@ justify-content:flex-end;
 	position:absolute;
 	order:2;
 	width:13vw !important;
+	height:auto;
 	right:12%;
 	transition: transform 0.3s ease;
 }
