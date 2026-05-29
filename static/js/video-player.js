@@ -260,6 +260,7 @@
     function showTimeline() {
       if (videoTimeline) {
         videoTimeline.style.opacity = '1';
+        videoTimeline.style.pointerEvents = 'auto';
       }
       if (videoTimeText) {
         videoTimeText.style.opacity = '1';
@@ -269,12 +270,14 @@
       }
       if (subtitleControls) {
         subtitleControls.style.opacity = '1';
+        subtitleControls.style.pointerEvents = 'auto';
       }
     }
 
     function hideTimeline() {
       if (videoTimeline) {
         videoTimeline.style.opacity = '0';
+        videoTimeline.style.pointerEvents = 'none';
       }
       if (videoTimeText) {
         videoTimeText.style.opacity = '0';
@@ -284,6 +287,7 @@
       }
       if (subtitleControls) {
         subtitleControls.style.opacity = '0';
+        subtitleControls.style.pointerEvents = 'none';
       }
     }
 
@@ -1021,6 +1025,7 @@
       updateMuteButton();
     });
 
+    hideTimeline();
     updateMuteButton();
   }
 
