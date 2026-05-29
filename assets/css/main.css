@@ -490,8 +490,8 @@ h4 {
 	box-shadow:none;
 	transition:opacity 0.15s ease;
 	z-index:2;
-	opacity:1;
-	pointer-events:auto;
+	opacity:0;
+	pointer-events:none;
 	cursor:pointer;
 	touch-action:none;
 }
@@ -558,6 +558,7 @@ h4 {
 	align-items:center;
 	gap:8px;
 	opacity:0;
+	pointer-events:none;
 	transition:opacity 0.15s ease;
 }
 
