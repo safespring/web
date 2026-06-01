@@ -214,6 +214,28 @@ def extract_links(html: bytes) -> list[str]:
     return parser.links
 
 
+def find_output_violations(source: str, html: bytes) -> dict[str, list[dict[str, str]]]:
+    """Find unrendered Hugo link syntax in generated HTML."""
+    text = html.decode("utf-8", errors="replace")
+    violations: dict[str, list[dict[str, str]]] = {
+        "unrendered_relref": [],
+        "markdown_href": [],
+    }
+
+    if "relref" in text:
+        violations["unrendered_relref"].append({"source": source, "match": "relref"})
+
+    for raw_href in extract_links(html):
+        parsed_href = urlparse(raw_href)
+        source_host = urlparse(source).netloc.lower()
+        href_host = parsed_href.netloc.lower()
+        is_local_href = not href_host or href_host == source_host
+        if is_local_href and parsed_href.path.lower().endswith(".md"):
+            violations["markdown_href"].append({"source": source, "raw_href": raw_href})
+
+    return violations
+
+
 def load_sitemap(base_url: str, timeout: int) -> tuple[set[str], set[str]]:
     sitemap_url = urljoin(base_url, "/sitemap.xml")
     result = fetch_url(sitemap_url, timeout=timeout)
@@ -269,6 +291,10 @@ def crawl(base_url: str, timeout: int = 10, max_pages: int = 0) -> dict[str, obj
     external_links: DefaultDict[str, set[str]] = defaultdict(set)
     flagged_external_links: DefaultDict[str, set[str]] = defaultdict(set)
     internal_links: DefaultDict[str, set[str]] = defaultdict(set)
+    output_violations: dict[str, list[dict[str, str]]] = {
+        "unrendered_relref": [],
+        "markdown_href": [],
+    }
 
     while queue:
         page = queue.popleft()
@@ -288,6 +314,9 @@ def crawl(base_url: str, timeout: int = 10, max_pages: int = 0) -> dict[str, obj
 
         crawled.add(page)
         resolution_base = urldefrag(result.url or page)[0]
+        page_violations = find_output_violations(page, result.body)
+        for kind, violations in page_violations.items():
+            output_violations[kind].extend(violations)
         for raw_href in extract_links(result.body):
             target = resolve_href(resolution_base, raw_href)
             if target is None:
@@ -335,6 +364,7 @@ def crawl(base_url: str, timeout: int = 10, max_pages: int = 0) -> dict[str, obj
         "broken_internal_links": len(broken_internal),
         "pages_missing_from_sitemap": len(pages_missing_from_sitemap),
         "failed_pages": len(failed_pages),
+        "output_violations": sum(len(values) for values in output_violations.values()),
     }
 
     return {
@@ -347,6 +377,7 @@ def crawl(base_url: str, timeout: int = 10, max_pages: int = 0) -> dict[str, obj
         "external_links": {url: sorted(sources) for url, sources in sorted(external_links.items())},
         "flagged_external_links": {url: sorted(sources) for url, sources in sorted(flagged_external_links.items())},
         "broken_internal_links": broken_internal,
+        "output_violations": output_violations,
         "pages_missing_from_sitemap": pages_missing_from_sitemap,
     }
 
@@ -381,12 +412,28 @@ def print_list(title: str, values: list[str]) -> None:
         print(value)
 
 
+def print_output_violations(violations: dict[str, list[dict[str, str]]]) -> None:
+    print("\nOutput violations")
+    print("-----------------")
+    if not any(violations.values()):
+        print("None")
+        return
+    for kind, values in violations.items():
+        if not values:
+            continue
+        print(kind)
+        for value in values:
+            detail = value.get("raw_href") or value.get("match") or ""
+            print(f"  found on: {value['source']} {detail}".rstrip())
+
+
 def print_report(report: dict[str, object]) -> None:
     print("Summary")
     print("-------")
     for key, value in report["summary"].items():
         print(f"{key}: {value}")
     print_mapping("Broken internal links", report["broken_internal_links"])
+    print_output_violations(report["output_violations"])
     print_mapping("Flagged external links (safespring.com)", report["flagged_external_links"])
     print_mapping("External links", report["external_links"])
     print_list("Crawled pages missing from sitemap", report["pages_missing_from_sitemap"])
@@ -417,7 +464,8 @@ def main(argv: list[str] | None = None) -> int:
         write_json(args.json_output, report)
         print(f"\nJSON report written: {args.json_output}")
     broken_count = report["summary"]["broken_internal_links"]
-    return 1 if broken_count else 0
+    output_violation_count = report["summary"]["output_violations"]
+    return 1 if broken_count or output_violation_count else 0
 
 
 if __name__ == "__main__":

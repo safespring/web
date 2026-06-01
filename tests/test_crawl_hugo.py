@@ -85,6 +85,31 @@ class CrawlHugoTest(unittest.TestCase):
         self.assertFalse(crawl_hugo.is_flagged_external_url("https://beta.safespring.se/path"))
         self.assertFalse(crawl_hugo.is_flagged_external_url("https://evil-safespring.com/path"))
 
+    def test_output_violation_check_flags_literal_relref_and_markdown_hrefs(self):
+        self.assertTrue(hasattr(crawl_hugo, "find_output_violations"), "find_output_violations missing")
+        html = b'''
+            <a href="{{ relref . \"/contact.md\" }}">broken shortcode</a>
+            <a href="/services/compute.md">markdown path leaked</a>
+            <a href="https://github.com/org/repo/blob/main/README.md">external markdown ok</a>
+            <a href="/services/compute/">ok</a>
+        '''
+
+        result = crawl_hugo.find_output_violations("http://localhost:1313/source", html)
+
+        self.assertEqual(
+            result["unrendered_relref"],
+            [{"source": "http://localhost:1313/source", "match": "relref"}],
+        )
+        self.assertEqual(
+            result["markdown_href"],
+            [
+                {
+                    "source": "http://localhost:1313/source",
+                    "raw_href": "/services/compute.md",
+                }
+            ],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
