@@ -24,7 +24,7 @@ Bygget i høj grad på open‑source-teknologier kan vores platform skalere fra 
 
 At være en lille virksomhed betyder, at vi skal være smarte med vores tid og penge: vi sigter mod at bygge ting én gang, bygge dem godt og få dem til at fungere for mange kunder.
 
-Self-service API’et og portalen er centrale for det. Platformen er bygget på en event-drevet arkitektur (nogle detaljer kan findes i dette [blogindlæg](https://www.safespring.com/blogg/2024/2024-05-openinfra-presentation/)). De skal gøre det enkelt for kunder at se og administrere deres ressourcer, være robuste nok til at skalere og kedelige nok til, at vores support- og infra-team ikke får opkald kl. 3 om natten.
+Self-service API’et og portalen er centrale for det. Platformen er bygget på en event-drevet arkitektur (nogle detaljer kan findes i dette [blogindlæg]({{% relref "/tech-update/2024-05-openinfra-presentation.md" %}})). De skal gøre det enkelt for kunder at se og administrere deres ressourcer, være robuste nok til at skalere og kedelige nok til, at vores support- og infra-team ikke får opkald kl. 3 om natten.
 
 ## Hvad du kommer til at arbejde med
 
