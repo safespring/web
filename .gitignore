@@ -14,3 +14,5 @@ node_modules/
 scripts/__pycache__/
 
 deploy/.kubeconfig
+
+tests/__pycache__/
