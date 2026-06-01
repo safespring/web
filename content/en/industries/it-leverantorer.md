@@ -21,4 +21,4 @@ Our services are an excellent fit to complement your offering, and we provide fe
 
 Contact us to learn more about our partner services!
 
-{{< 2calltoaction "Become a partner" "/om-safespring/bli-partner" "Contact Safespring" "/kontakt" >}}
+{{< 2calltoaction "Become a partner" "/om-safespring/bli-partner" "Contact Safespring" "/contact.md" >}}

@@ -87,7 +87,7 @@ Safespring började utveckla en modern molnplattform 2014. Sedan den första lan
 
 Från våra professionella datacenter i Sverige och Norge samt från kunders egna datacenter (så kallade privata moln) levererar vi Infrastructure‑as‑a‑Service inklusive Compute, Storage och Backup. Tjänsterna är flexibla, helt automatiserade och baserade på självbetjäning via API eller vår portal. Vårt erbjudande omfattar öppna standarder, integritet och efterlevnad av lokala lagar.
 
-Bland våra kunder finns några av de största forsknings- och utbildningsorganisationerna, offentliga myndigheter och Software‑as‑a‑Service‑företag i Sverige och Norge. Safespring har ramavtal, direkt eller via partners, med [Géant](/ocre) (inklusive Sunet, Sikt och NORDUnet), SKR och Kammarkollegiet, för att nämna de viktigaste.
+Bland våra kunder finns några av de största forsknings- och utbildningsorganisationerna, offentliga myndigheter och Software‑as‑a‑Service‑företag i Sverige och Norge. Safespring har ramavtal, direkt eller via partners, med [Géant]({{% relref "/industries/research-and-education.md" %}}) (inklusive Sunet, Sikt och NORDUnet), SKR och Kammarkollegiet, för att nämna de viktigaste.
 
 ## För mer information
 

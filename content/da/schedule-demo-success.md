@@ -16,7 +16,7 @@ socialmedia: ""
 sidebarlinkname: "Udforsk vores løsninger"
 sidebarlinkurl: "/services/containerplatform/"
 sidebarlinkname2: "Kontakt Safespring"
-sidebarlinkurl2: "/contact"
+sidebarlinkurl2: "/contact.md"
 saas: ""
 noindex: "ja"
 aliases:

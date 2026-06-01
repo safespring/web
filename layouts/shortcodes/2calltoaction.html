@@ -1,4 +1,8 @@
+{{ $href1 := .Get 1 }}
+{{ $href2 := .Get 3 }}
+{{ if strings.HasSuffix $href1 ".md" }}{{ $href1 = relref .Page $href1 }}{{ end }}
+{{ if strings.HasSuffix $href2 ".md" }}{{ $href2 = relref .Page $href2 }}{{ end }}
 <br>
-<a class="button" target="_self" href="{{ .Get 1 | safeURL }}">{{ .Get 0 }}</a>
-<a style="margin-top: 25px; padding: 1px 0 0 0;" class="text-button" target="_blank" href="{{ .Get 3 | safeURL }}">{{ .Get 2 }}</a>
+<a class="button" target="_self" href="{{ $href1 | safeURL }}">{{ .Get 0 }}</a>
+<a style="margin-top: 25px; padding: 1px 0 0 0;" class="text-button" target="_blank" href="{{ $href2 | safeURL }}">{{ .Get 2 }}</a>
 <br>

@@ -19,7 +19,7 @@ Sammen med Sunet har vi udviklet en filhåndterings- og samarbejdstjeneste for u
 
 Tjenesten [Sunet Drive](/dokument/sunet/sunet-drive/) gør det nemmere for brugerne at overholde GDPR og leveres på Safespring Private Cloud fra svenske datacentre, hvor Sunet står for driften af løsningen og har #digitalsuverænitet.
 
-Læs vores solution brief og lær mere om vores løsning, klik på billedet nedenfor. For alle kunder i GÉANT er løsningen tilgængelig via OCRE-rammeaftalen. [Læs mere om OCRE her](/ocre).
+Læs vores solution brief og lær mere om vores løsning, klik på billedet nedenfor. For alle kunder i GÉANT er løsningen tilgængelig via OCRE-rammeaftalen. [Læs mere om OCRE her]({{% relref "/industries/research-and-education.md" %}}).
 
 <br>
 <a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive er en administreret lagringsløsning, som fysisk installeres i universitetets lokale datacentre" src="/img//blogg/socialmedia/safespring_social_41.gif"></a>

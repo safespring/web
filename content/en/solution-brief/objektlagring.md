@@ -93,7 +93,7 @@ https://nextcloud.com
 
 Safespring’s S3 service is designed with high security and flexibility in focus. There are cases, however, where you may need even greater possibilities.
 
-The Minio initiative is an open-source project with which you can set up your very own private installation of an S3-compatible service. To ensure access and availability, it works very well to deploy it in [Safespring’s Compute service](/services/safespring-compute).
+The Minio initiative is an open-source project with which you can set up your very own private installation of an S3-compatible service. To ensure access and availability, it works very well to deploy it in [Safespring’s Compute service]({{% relref "/services/compute.md" %}}).
 
 The advantages of such a solution are that you get full control over all settings for the S3 service and that it is private to your company. You can control policies for access, authentication, and storage yourself. The files stored in the service are placed on Safespring’s Compute service of the “Large” type, which results in a somewhat higher cost, but on the other hand, you can control absolutely everything yourself.
 

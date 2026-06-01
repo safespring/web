@@ -103,7 +103,9 @@
           {{ else }}Vill du arbeta med oss? Skicka ditt CV genom att klicka här.
           {{ end }}
         </p>
-        <a class="button" href="{{ .Params.sidebarlinkurl }}">{{ .Params.sidebarlinkname | default "Apply now" }}</a>
+        {{ $sidebarlinkurl := .Params.sidebarlinkurl }}
+        {{ if strings.HasSuffix $sidebarlinkurl ".md" }}{{ $sidebarlinkurl = relref . $sidebarlinkurl }}{{ end }}
+        <a class="button" href="{{ $sidebarlinkurl }}">{{ .Params.sidebarlinkname | default "Apply now" }}</a>
         {{ else }}
         <p class="card-section">{{ .Params.documentation }}</p>
         <span class="card-heading">

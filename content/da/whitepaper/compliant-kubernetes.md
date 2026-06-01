@@ -45,7 +45,7 @@ Kort sagt er udfordringen at øge softwareagiliteten via containerisering samtid
 
 Safespring Compliant Kubernetes (CK8s) er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudpakket med sikkerhedshærdede konfigurationer og open source-komponenter i henhold til best practices. Safespring leverer kvartalsvise udgivelser af Compliant Kubernetes – tester og hærder komponenterne for at sikre, at de efterlever de strenge sikkerheds- og regulatoriske krav, som vores kunder stiller til deres containerplatforme.
 
-{{% horisontal-card image="/img/blue/safespring_card_compute.jpg" link="/services/safespring-compute/" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Compliant Kubernetes" text="Vores infrastrukturservice er placeret i sikre datacentre inden for EU og bliver ikke påvirket af udenlandske love som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/blue/safespring_card_compute.jpg" linkref="/services/compute.md" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Compliant Kubernetes" text="Vores infrastrukturservice er placeret i sikre datacentre inden for EU og bliver ikke påvirket af udenlandske love som CLOUD Act eller FISA 702." %}}
 
 Compliant Kubernetes gør det muligt for organisationer at udnytte alle fordelene ved Kubernetes og samtidig opfylde regulatoriske krav – ikke kun ved udrulning af nye klynger, men gennem hele softwareudviklingslivscyklussen: udvikling, sammensætning og pakning, test og implementering samt drift og revisioner.
 

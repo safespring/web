@@ -16,7 +16,7 @@ toc: ""
 sidebarlinkname: "Learn about our data centers"
 sidebarlinkurl: "/om-safespring/datacenter"
 sidebarlinkname2: "Contact us"
-sidebarlinkurl2: "/kontakt"
+sidebarlinkurl2: "/contact.md"
 aliases:
   - /blogg/2023/2023-02-safespring-green-energy/
 ---

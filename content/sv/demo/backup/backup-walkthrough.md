@@ -56,7 +56,6 @@ Boka in ett videmöte och ställ dina frågor direkt till Gabriel! Du väljer sm
 {{< distance >}}
 
 {{% note "Extra smidigt för akademisk sektor" %}}
-För att ytterligare förenkla inköpsprocessen finns Safespring Backup att köpa genom OCRE-avtalet – ett avtal som eliminerar behovet av upphandling och konkurrensutsättning. Läs mer på vår [informationssida om OCRE](/branscher/utbildning-forskning/).
+För att ytterligare förenkla inköpsprocessen finns Safespring Backup att köpa genom OCRE-avtalet – ett avtal som eliminerar behovet av upphandling och konkurrensutsättning. Läs mer på vår [informationssida om OCRE]({{% relref "/industries/research-and-education.md" %}}).
 {{% /note %}}
-
 

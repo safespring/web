@@ -87,7 +87,7 @@ Safespring begynte å utvikle en moderne skyplattform i 2014. Siden den første 
 
 Fra våre profesjonelle datasentre i Sverige og Norge, og fra kunders egne datasentre (såkalte private skyer), omfatter vår leveranse av Infrastructure-as-a-Service Compute, Storage og Backup. Tjenestene er fleksible, fullt automatiserte og basert på selvbetjening via API eller portalen vår. Vårt verdiforslag inkluderer åpne standarder, personvern og etterlevelse av lokale lover.
 
-Blant kundene våre finnes noen av de største forsknings- og utdanningsinstitusjonene, offentlige myndigheter og Software-as-a-Service-selskaper i Sverige og Norge. Safespring har rammeavtaler, direkte eller gjennom partnere, med [Géant](/ocre) (inkludert Sunet, Sikt og NORDUnet), SKR og Kammarkollegiet, for å nevne de viktigste.
+Blant kundene våre finnes noen av de største forsknings- og utdanningsinstitusjonene, offentlige myndigheter og Software-as-a-Service-selskaper i Sverige og Norge. Safespring har rammeavtaler, direkte eller gjennom partnere, med [Géant]({{% relref "/industries/research-and-education.md" %}}) (inkludert Sunet, Sikt og NORDUnet), SKR og Kammarkollegiet, for å nevne de viktigste.
 
 ## For mer informasjon
 

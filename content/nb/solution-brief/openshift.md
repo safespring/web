@@ -50,7 +50,7 @@ På Safesprings Openstack-baserte infrastrukturplattform (IaaS) kan du raskt dis
 
 ### Du trenger dette for å komme i gang
 
-- Et prosjekt på [Safespring Compute](/services/compute/) med følgende ressurser:
+- Et prosjekt på [Safespring Compute]({{% relref "/services/compute.md" %}}) med følgende ressurser:
   - Memory: 60GB
   - VCPUs: 16
   - Security group rules: 40

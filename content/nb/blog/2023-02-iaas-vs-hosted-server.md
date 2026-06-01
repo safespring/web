@@ -46,4 +46,4 @@ Det finnes mange fordeler med IaaS sammenlignet med en hostet server:
 
 Med IaaS kan du dra nytte av disse fordelene og få en «best server for hosting». Så hvis du leter etter den beste hostede serveren, vurder heller en skytjeneste. Du vil ikke angre!
 
-{{< horisontal-card image="/img/card/safespring-compute-icon.svg" cardtitle="Kom i gang med Safespring Compute" text="Safespring Compute gir deg en fleksibel og skalerbar virtuell maskintjeneste med automatisering og selvbetjening, levert fra sikre datasentre i Sverige." linktext="Les mer" link="/services/safespring-compute">}}
+{{< horisontal-card image="/img/card/safespring-compute-icon.svg" cardtitle="Kom i gang med Safespring Compute" text="Safespring Compute gir deg en fleksibel og skalerbar virtuell maskintjeneste med automatisering og selvbetjening, levert fra sikre datasentre i Sverige." linktext="Les mer" linkref="/services/compute.md">}}

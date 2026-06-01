@@ -15,7 +15,7 @@ toc: ""
 sidebarlinkname: "Explore Safespring"
 sidebarlinkurl: "/"
 sidebarlinkname2: "Contact us"
-sidebarlinkurl2: "/kontakt/"
+sidebarlinkurl2: "/contact.md"
 aliases:
   - /blogg/2023/2023-02-iaas-vs-hosted-server/
 ---
@@ -46,4 +46,4 @@ There are many advantages to IaaS compared to a hosted server:
 
 With IaaS, you can take advantage of these benefits and get the best server for hosting. So if you’re looking for the best hosted server, consider choosing a cloud service instead. You won’t regret it!
 
-{{< horisontal-card image="/img/card/safespring-compute-icon.svg" cardtitle="Get started with Safespring Compute" text="Safespring Compute provides you with a flexible and scalable virtual machine service with automation and self-service, delivered from secure data centers in Sweden." linktext="Learn more" link="/services/safespring-compute">}}
+{{< horisontal-card image="/img/card/safespring-compute-icon.svg" cardtitle="Get started with Safespring Compute" text="Safespring Compute provides you with a flexible and scalable virtual machine service with automation and self-service, delivered from secure data centers in Sweden." linktext="Learn more" linkref="/services/compute.md">}}

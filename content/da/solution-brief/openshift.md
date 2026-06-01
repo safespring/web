@@ -6,7 +6,7 @@ draft: false
 tags: ["English"]
 intro: "Med OKD-community-installationsprogrammet kan du hurtigt få en OpenShift-klynge op at køre."
 sidebarlinkname: "Kontakt os"
-sidebarlinkurl: "/contact"
+sidebarlinkurl: "/contact.md"
 socialmedia: "safespring-compute.jpg"
 devops: ""
 card: "safespring-openshift.svg"
@@ -49,7 +49,7 @@ På Safesprings OpenStack-baserede infrastrukturplatform kan du hurtigt udrulle 
 
 ### Det skal du bruge for at komme i gang
 
-- Et projekt på [Safespring Compute](/services/compute/) med følgende ressourcer:
+- Et projekt på [Safespring Compute]({{% relref "/services/compute.md" %}}) med følgende ressourcer:
   - Hukommelse: 60 GB
   - vCPU'er: 16
   - Regler for sikkerhedsgrupper: 40

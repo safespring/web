@@ -15,7 +15,7 @@ toc: ""
 sidebarlinkname: "Book a demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Contact us"
-sidebarlinkurl2: "/kontakt/"
+sidebarlinkurl2: "/contact.md"
 aliases:
   - /blogg/2023/2023-03-egress-cost/
 ---
@@ -41,4 +41,4 @@ Safespring also believes in the importance of digital sovereignty, meaning users
 
 By focusing on open standards, open-source software, and data sovereignty, Safespring can offer a cloud solution that is both reliable and flexible, while ensuring customers retain control over their own data.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/safespring-compute/" linktext="Read more" cardtitle="A Swedish public cloud platform" text="Our infrastructure service runs in secure data centers within the EU and is not affected by foreign laws such as the CLOUD Act or FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" linkref="/services/compute.md" linktext="Read more" cardtitle="A Swedish public cloud platform" text="Our infrastructure service runs in secure data centers within the EU and is not affected by foreign laws such as the CLOUD Act or FISA 702." %}}

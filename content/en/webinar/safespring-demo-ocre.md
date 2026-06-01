@@ -52,7 +52,7 @@ aliases:
 Safespring is the preferred cloud platform for research and education. Welcome to participate in our webinar regarding our services under OCRE for the X-WIN community.
 {{< /ingress >}}
 
-[Read more about our OCRE agreement](/ocre)
+[Read more about our OCRE agreement]({{% relref "/industries/research-and-education.md" %}})
 
 {{< contact picture="/img/kontakt/fredric-wallsten-2023.webp" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.com" >}}
 {{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
@@ -73,7 +73,7 @@ Safespring is the preferred cloud platform for research and education. Welcome t
 
 ### Read more
 
-- [All blog posts](/blogg/)
-- Solution Brief: [OpenShift runs smoothly on Safespring's platform](/solution-brief/openshift-en/)
+- [All blog posts]({{% relref "/blog" %}})
+- Solution Brief: [OpenShift runs smoothly on Safespring's platform]({{% relref "/solution-brief/openshift.md" %}})
 - Teach update: [Get started with Kubespray](/blogg/2022-08-kubespray-minimal/)
 - Teach update: [Easy provisioning with Terraform, Ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder/)

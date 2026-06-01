@@ -83,4 +83,4 @@ Priskomponenterne er antallet af server-vCPU'er og tilhørende RAM, mængden af 
 | Første 1024GB | GRATIS      |
 | Over 1024 GB  | 0,95 DKK/GB |
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/safespring-compute/" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Database as a service" text="Safespring kører i datacentre i Europa og påvirkes ikke af udenlandsk lovgivning som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" linkref="/services/compute.md" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Database as a service" text="Safespring kører i datacentre i Europa og påvirkes ikke af udenlandsk lovgivning som CLOUD Act eller FISA 702." %}}

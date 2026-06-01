@@ -59,16 +59,20 @@
     {{ else }}
     {{ end }}
     {{ if .Params.sidebarlinkurl }}
+      {{ $sidebarlinkurl := .Params.sidebarlinkurl }}
+      {{ if strings.HasSuffix $sidebarlinkurl ".md" }}{{ $sidebarlinkurl = relref . $sidebarlinkurl }}{{ end }}
       <div class="header-button">
-        <a href="{{ .Params.sidebarlinkurl }}" target="_blank" class="button"
+        <a href="{{ $sidebarlinkurl }}" target="_blank" class="button"
           >{{ if .Params.sidebarlinkicon }}
             <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;
           {{ end }}{{ .Params.sidebarlinkname }}
         </a>
         {{ if .Params.sidebarlinkurl2 }}
+          {{ $sidebarlinkurl2 := .Params.sidebarlinkurl2 }}
+          {{ if strings.HasSuffix $sidebarlinkurl2 ".md" }}{{ $sidebarlinkurl2 = relref . $sidebarlinkurl2 }}{{ end }}
           <a
             style="margin: 25px 0 0 0; padding: 1px 0 0 0"
-            href="{{ .Params.sidebarlinkurl2 }}"
+            href="{{ $sidebarlinkurl2 }}"
             target="_blank"
             class="text-button"
           >

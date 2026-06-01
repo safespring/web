@@ -32,7 +32,7 @@ Kontakt Kristian Fjellhaug og benyt lejligheden til at gennemgå jeres behov for
 
 Med vores OKD community‑installer kan du hurtigt få en OpenShift‑klynge i gang. Containere kræver fleksibilitet. Safesprings platform er skabt til skalerbarhed og høj sikkerhed og er optimeret til en OpenShift‑klynges ressourcekrav.
 
-{{< localtextbutton "Løsningsbeskrivelse" "/solution-brief/openshift-en/" >}}
+{{< localtextbutton "Løsningsbeskrivelse" "/solution-brief/openshift.md" >}}
 
 ## Safespring Storage v2.0 er nu live!
 

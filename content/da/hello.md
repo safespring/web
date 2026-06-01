@@ -17,7 +17,7 @@ saas: ""
 sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakt os"
-sidebarlinkurl2: "/contact"
+sidebarlinkurl2: "/contact.md"
 aliases:
   - /en/hello/
 ---

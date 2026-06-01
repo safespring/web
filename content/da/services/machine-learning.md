@@ -16,7 +16,7 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: "Book demo"
 sidebarlinkurl: "/demo/"
 sidebarlinkname2: "Kontakt Safespring"
-sidebarlinkurl2: "/contact"
+sidebarlinkurl2: "/contact.md"
 socialmedia: ""
 aliases:
   - /da/tjenester/machine-learning/

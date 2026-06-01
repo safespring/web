@@ -1,4 +1,6 @@
-{{ with .Get "link" }}
+{{ $href := .Get "link" }}
+{{ with .Get "linkref" }}{{ $href = relref $.Page . }}{{ end }}
+{{ with $href }}
 <a class="icon-block-link" href='{{ . }}'>{{ end }}
     <div class="icon-block" style='color: {{ .Get "color" }};'>
         {{ if .Get "image" }}
@@ -10,5 +12,5 @@
             <span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}
         </p>
     </div>
-{{ with .Get "link" }}
+{{ with $href }}
 </a>{{ end }}

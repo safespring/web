@@ -52,7 +52,7 @@ aliases:
 Safespring er den foretrukne cloudplatform for forskning og uddannelse. Deltag gerne i vores webinar om vores tjenester under OCRE for X-WIN-fællesskabet.
 {{< /ingress >}}
 
-[Læs mere om vores OCRE-aftale](/ocre)
+[Læs mere om vores OCRE-aftale]({{% relref "/industries/research-and-education.md" %}})
 
 {{< contact picture="/img/kontakt/fredric-wallsten-2023.webp" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.com" >}}
 {{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloudarkitekt" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
@@ -73,7 +73,7 @@ Safespring er den foretrukne cloudplatform for forskning og uddannelse. Deltag g
 
 ### Læs mere
 
-- [Alle blogindlæg](/blogg/)
-- Løsningsoversigt: [OpenShift kører problemfrit på Safesprings platform](/solution-brief/openshift-en/)
+- [Alle blogindlæg]({{% relref "/blog" %}})
+- Løsningsoversigt: [OpenShift kører problemfrit på Safesprings platform]({{% relref "/solution-brief/openshift.md" %}})
 - Teach-opdatering: [Kom i gang med Kubespray](/blogg/2022-08-kubespray-minimal/)
 - Teach-opdatering: [Nem provisionering med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder/)

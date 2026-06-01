@@ -56,4 +56,4 @@ We are a Swedish company that produces all services within the country’s borde
 
 Contact us to learn more about how we can support your SaaS business with sustainable and scalable solutions.
 
-<a href="/kontakt" id="text-button">Contact Safespring</a>
+<a href="{{% relref "/contact.md" %}}" id="text-button">Contact Safespring</a>

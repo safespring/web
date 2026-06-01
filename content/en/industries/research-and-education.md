@@ -47,7 +47,7 @@ Safespring's services are available via the OCRE 2024 framework in Denmark, Norw
 {{< icon-block-container >}}
 {{< icon-block image="/img/flags/flag-denmark.svg" text="Denmark" link="/geant/ocre-2024/" color="#195F8C">}}
 {{< icon-block image="/img/flags/flag-norway.svg" text="Norway" link="/bransjer/utdanning-og-forskning/" color="#195F8C">}}
-{{< icon-block image="/img/flags/flag-sweden.svg" text="Sweden" link="/branscher/utbildning-forskning/" color="#195F8C">}}
+{{< icon-block image="/img/flags/flag-sweden.svg" text="Sweden" linkref="/industries/research-and-education.md" color="#195F8C">}}
 {{< /icon-block-container >}}
 
 {{< distance >}}

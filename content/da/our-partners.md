@@ -24,7 +24,7 @@ Cloud-tjenester vokser med over 20 procent om året og udgør i dag i gennemsnit
 
 Med Safespring som underleverandør kan du byde på flere udbud med mere specifikke krav. Vi hjælper gerne i sager, hvor disse spørgsmål efterspørges og er vigtige. Vi har mange års erfaring og et stærkt netværk inden for udbud. Du får også en dedikeret kontaktperson og supportkanal.
 
-{{< 2calltoaction "Ring til os" "tel:+46855107370" "Find kontaktperson" "/contact" >}}
+{{< 2calltoaction "Ring til os" "tel:+46855107370" "Find kontaktperson" "/contact.md" >}}
 
 ### Ingen tvivlsomme underleverandører
 

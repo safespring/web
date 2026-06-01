@@ -21,7 +21,7 @@ We also share our experience on how to structure processes to work according to 
 
 We also have partners who offer backup services—either as a local solution, our cloud-based solution, or a combination for increased security. In this area, we can also develop solutions for continuous recovery testing to ensure the backups you take actually work. These tests can be combined with our Compute platform so you only pay for resources when you run the tests—keeping costs down while maintaining peace of mind.
 
-{{< 2calltoaction "Our partners" "/om-safespring/samarbeten-och-partners/" "Contact us" "/kontakt" >}}
+{{< 2calltoaction "Our partners" "/om-safespring/samarbeten-och-partners/" "Contact us" "/contact.md" >}}
 
 We also offer consulting services in AI and ML (Machine Learning). Through our strong ties to academia, we have partners at the cutting edge of these fields. By combining these services with Safespring’s cloud services, you can find a way to leverage these technologies while keeping data within the country’s borders. If that’s not sufficient, we can also help set up a platform in your data center (managed by us) that gives you full control over where the data resides, while providing a short ramp-up time to get started with these technologies.
 
@@ -45,4 +45,4 @@ Ways of working that involve automation and APIs can streamline and reduce the c
 
 Contact us to specify your particular needs, and let’s see how we can make your use of capacity services more efficient.
 
-<a href="/kontakt" id="text-button">Contact Safespring</a>
+<a href="{{% relref "/contact.md" %}}" id="text-button">Contact Safespring</a>

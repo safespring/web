@@ -19,4 +19,4 @@ Vi skickar vitboken som du nyss laddade ner till den e-postadress du angav i for
 
 Om du behöver hjälp eller vill komma i kontakt med oss, skicka gärna ett e-postmeddelande till info@safespring.com.
 
-{{% localbutton text="Kontakta Safespring" link="/contact" %}}
+{{% localbutton text="Kontakta Safespring" linkref="/contact.md" %}}

@@ -28,7 +28,7 @@ Because we are a Swedish company that provides these services in Sweden, you can
 
 Contact us to discuss further how we can help you safely use a cloud solution while complying with laws and regulations.
 
-<a href="/kontakt" id="text-button">Contact Safespring</a><br><br>
+<a href="{{% relref "/contact.md" %}}" id="text-button">Contact Safespring</a><br><br>
 
 ## White paper
 

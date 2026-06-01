@@ -133,7 +133,7 @@ Et af hovedformålene med [OCRE](#ocre) er at forenkle og standardisere processe
 {{% accordion title="Hvad er OCRE?" id="ocre"%}}
 Open Clouds for Research Environments (OCRE) er et EU-finansieret projekt, der har til formål at fremme brugen af cloudtjenester og Earth Observation (EO)-tjenester i forskningsmiljøet. OCRE-projektet stræber efter at lette og accelerere brugen af kommercielle cloudtjenester i forskningen ved at fungere som bro mellem forskningsmiljøet og cloududbydere.
 
-Lær mere om [OCRE](/ocre/).
+Lær mere om [OCRE]({{% relref "/industries/research-and-education.md" %}}).
 {{% /accordion %}}
 
 {{% accordion title="Hvad er GÉANT?" %}}

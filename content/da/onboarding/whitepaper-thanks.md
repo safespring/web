@@ -19,4 +19,4 @@ Vi sender hvidbogen, som du lige har downloadet, til den e-mailadresse, du angav
 
 Hvis du har brug for hjælp eller vil i kontakt med os, så send en e-mail til info@safespring.com.
 
-{{% localbutton text="Kontakt Safespring" link="/contact" %}}
+{{% localbutton text="Kontakt Safespring" linkref="/contact.md" %}}

@@ -32,7 +32,7 @@ Kontakta Kristian Fjellhaug och passa på att gå igenom era behov av Compute, S
 
 Med vår OKD-communityinstallerare kan ni snabbt få ett OpenShift-kluster i drift. Containrar kräver flexibilitet. Safesprings plattform är skapad för skalbarhet och hög säkerhet och är optimerad för ett OpenShift-klusters resurskrav.
 
-{{< localtextbutton "Lösningsbeskrivning" "/solution-brief/openshift-en/" >}}
+{{< localtextbutton "Lösningsbeskrivning" "/solution-brief/openshift.md" >}}
 
 ## Safespring Storage v2.0 är nu live!
 

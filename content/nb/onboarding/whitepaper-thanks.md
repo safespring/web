@@ -19,4 +19,4 @@ Vi sender whitepaperet du nettopp lastet ned til e-postadressen du oppga i skjem
 
 Hvis du trenger hjelp eller vil komme i kontakt med oss, send en e-post til info@safespring.com.
 
-{{% localbutton text="Kontakt Safespring" link="/contact" %}}
+{{% localbutton text="Kontakt Safespring" linkref="/contact.md" %}}

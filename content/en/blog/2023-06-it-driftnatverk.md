@@ -14,7 +14,7 @@ section: "blog"
 language: "en"
 toc: ""
 sidebarlinkname: "Contact us"
-sidebarlinkurl: "/kontakt/"
+sidebarlinkurl: "/contact.md"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:

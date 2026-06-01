@@ -24,7 +24,7 @@ aliases:
 En trinnvis veiledning for å deklarativt provisjonere, konfigurere og administrere Talos Linux Kubernetes-klynger på Safesprings OpenStack-infrastruktur ved hjelp av CAPO og ClusterResourceSets.
 {{< /ingress >}}
 
-I denne artikkelen ønsker vi å ta noen skritt videre i utforskningen av Talos Linux og hvordan vi kan bruke det i [Safespring Compute-infrastruktur (OpenStack)](/services/compute/), og samtidig gå dypere inn i automatisk installasjon og bruk av [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/).
+I denne artikkelen ønsker vi å ta noen skritt videre i utforskningen av Talos Linux og hvordan vi kan bruke det i [Safespring Compute-infrastruktur (OpenStack)]({{% relref "/services/compute.md" %}}), og samtidig gå dypere inn i automatisk installasjon og bruk av [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/).
 
 {{% note "Fokusområder" %}}
 Ting vi ønsket å illustrere i denne tekniske utforskningen:

@@ -24,7 +24,7 @@ Skytjenester vokser med over 20 prosent per år og utgjør i dag i snitt elleve 
 
 Med Safespring som underleverandør kan du delta i flere anskaffelser med mer spesifikke krav. Vi bistår gjerne i saker der disse spørsmålene etterspørres og er viktige. Vi har lang erfaring og et sterkt nettverk innen anskaffelser. Vi gir deg også en dedikert kontaktperson og en egen støttekanal.
 
-{{< 2calltoaction "Ring oss" "tel:+46855107370" "Finn kontaktperson" "/contact" >}}
+{{< 2calltoaction "Ring oss" "tel:+46855107370" "Finn kontaktperson" "/contact.md" >}}
 
 ### Ingen tvilsomme underleverandører
 

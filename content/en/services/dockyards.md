@@ -12,7 +12,7 @@ socialmedia: "sudo_dockyards_social_01.jpg"
 sidebarlinkname: "View demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact Safespring"
-sidebarlinkurl2: "/kontakt"
+sidebarlinkurl2: "/contact.md"
 aliases:
   - /tjanster/dockyards/
 ---

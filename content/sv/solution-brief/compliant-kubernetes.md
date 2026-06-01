@@ -49,7 +49,7 @@ I korthet är utmaningen hur man ökar mjukvarans agilitet genom containeriserin
 
 Elastisys Welkin är en Cloud Native Computing Foundation (CNCF)-certifierad Kubernetes-distribution som levereras förpackad med säkerhetshärdade konfigurationer och open source‑komponenter enligt best practices. Safespring tillhandahåller kvartalsvisa utgåvor av Welkin – testar och härdar komponenterna för att säkerställa att de uppfyller de strikta säkerhets- och regulatoriska kraven som våra kunder ställer på sina containerplattformar.
 
-{{% horisontal-card image="/img/card/safespring-compute-icon.svg" link="/services/compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan i Welkin" text="Vår infrastrukturtjänst finns i säkra datacenter inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/card/safespring-compute-icon.svg" linkref="/services/compute.md" linktext="Läs mer" cardtitle="Safespring Compute är kärnan i Welkin" text="Vår infrastrukturtjänst finns i säkra datacenter inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}
 
 Welkin gör att organisationer kan dra full nytta av Kubernetes samtidigt som de uppfyller regulatoriska krav – inte bara vid driftsättning av nya kluster utan genom hela mjukvarans livscykel: utveckling, sammansättning och paketering, testning och driftsättning samt drift och revisioner.
 

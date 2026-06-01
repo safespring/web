@@ -214,6 +214,6 @@ Because it reduces the amount of Kubernetes platform assembly that has to be rep
     alt="Safespring Kubernetes Engine for platform teams"
     cardtitle="Walk through the platform boundary in your own terms"
     text="If you want to evaluate Safespring Kubernetes Engine for your own workloads, start with the documented service boundary: control plane, networking, storage, access, observability, and day-two operations."
-    link="/kontakt/"
+    linkref="/contact.md"
     linktext="Discuss your requirements"
 >}}

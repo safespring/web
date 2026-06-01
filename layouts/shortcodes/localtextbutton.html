@@ -1,2 +1,4 @@
-<a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a>
+{{ $href := .Get 1 }}
+{{ if strings.HasSuffix $href ".md" }}{{ $href = relref .Page $href }}{{ end }}
+<a id="text-button" target="_self" href="{{ $href }}">{{ .Get 0 }}</a>
 <br>

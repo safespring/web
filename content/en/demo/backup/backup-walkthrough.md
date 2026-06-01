@@ -56,5 +56,5 @@ Schedule a video meeting and ask your questions directly to Gabriel! Easily pick
 {{< distance >}}
 
 {{% note "Extra convenient for the academic sector" %}}
-To further simplify the procurement process, Safespring Backup is available through the OCRE framework agreement—an agreement that eliminates the need for tendering and competitive procurement. Read more on our [OCRE information page](/branscher/utbildning-forskning/).
+To further simplify the procurement process, Safespring Backup is available through the OCRE framework agreement—an agreement that eliminates the need for tendering and competitive procurement. Read more on our [OCRE information page]({{% relref "/industries/research-and-education.md" %}}).
 {{% /note %}}
