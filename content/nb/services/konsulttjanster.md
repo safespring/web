@@ -35,7 +35,7 @@ Safespring hjelper dere ved å gjennomføre en grunnleggende forstudie for å ka
 
 Er dere i ferd med å skaffe kapasitetstjenester, eller trenger å bygge ut et eksisterende system? Vi har erfaring med Hybrid Cloud der tjenestene våre kan være en del av deres totale infrastruktur. Gjennom implementering og onboarding sørger vi for at plattformene våre friksjonsfritt bidrar til en lokal, fleksibel og sikker del av deres nåværende løsning. Vi kan tilby prosjektledelse for å sikre at arbeidet følger planen, og at ingen tekniske milepæler faller mellom stolene. Les mer om hva kundene våre sier om tidligere prosjekter:
 
-<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Les våre kundereferanser</a></br></br>
+<a href="{{% relref "/services/case/" %}}" id="text-button">Les våre kundereferanser</a></br></br>
 
 ### Kundetilpasning
 

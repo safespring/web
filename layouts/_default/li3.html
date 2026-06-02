@@ -9,7 +9,7 @@
     {{ end }}
     <a
       class="{{ if .Params.sectionhighlight }}sectionhighlight{{ end }}"
-      href="{{ relref . .Section }}"
+      href="{{ if .Section }}{{ relref . .Section }}{{ else }}{{ relLangURL "/" }}{{ end }}"
       style="{{ if .Params.cardcolor }}color: #195F8C;{{ end }}"
     >
       {{ if eq .Section "om-safespring" }}

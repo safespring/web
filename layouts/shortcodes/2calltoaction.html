@@ -4,5 +4,7 @@
 {{ if strings.HasSuffix $href2 ".md" }}{{ $href2 = relref .Page $href2 }}{{ end }}
 <br>
 <a class="button" target="_self" href="{{ $href1 | safeURL }}">{{ .Get 0 }}</a>
-<a style="margin-top: 25px; padding: 1px 0 0 0;" class="text-button" target="_blank" href="{{ $href2 | safeURL }}">{{ .Get 2 }}</a>
+{{ if and (.Get 2) $href2 }}
+  <a style="margin-top: 25px; padding: 1px 0 0 0;" class="text-button" target="_blank" href="{{ $href2 | safeURL }}">{{ .Get 2 }}</a>
+{{ end }}
 <br>

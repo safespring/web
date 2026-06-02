@@ -45,9 +45,9 @@ There are many ways that a research and education organisation can do public pro
 Safespring's services are available via the OCRE 2024 framework in Denmark, Norway and Sweden. Choose your country below to reach the page in your language.
 
 {{< icon-block-container >}}
-{{< icon-block image="/img/flags/flag-denmark.svg" text="Denmark" linkref="/industries/research-and-education.md" color="#195F8C">}}
-{{< icon-block image="/img/flags/flag-norway.svg" text="Norway" linkref="/industries/research-and-education.md" color="#195F8C">}}
-{{< icon-block image="/img/flags/flag-sweden.svg" text="Sweden" linkref="/industries/research-and-education.md" color="#195F8C">}}
+{{< icon-block image="/img/flags/flag-denmark.svg" text="Denmark" link="https://beta.safespring.dk/industrier/forskning-og-uddannelse/" color="#195F8C">}}
+{{< icon-block image="/img/flags/flag-norway.svg" text="Norway" link="https://beta.safespring.no/industrier/utdanning-og-forskning/" color="#195F8C">}}
+{{< icon-block image="/img/flags/flag-sweden.svg" text="Sweden" link="https://beta.safespring.se/branscher/utbildning-och-forskning/" color="#195F8C">}}
 {{< /icon-block-container >}}
 
 {{< distance >}}

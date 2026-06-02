@@ -77,6 +77,21 @@ class LinkParser(HTMLParser):
                 self.links.append(value.strip())
 
 
+class EmptyHrefParser(HTMLParser):
+    """Collect empty anchor href attributes in rendered HTML."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.empty_hrefs: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "a":
+            return
+        for name, value in attrs:
+            if name.lower() == "href" and (value is None or value.strip() == ""):
+                self.empty_hrefs.append("")
+
+
 @dataclass(frozen=True)
 class FetchResult:
     url: str
@@ -220,10 +235,16 @@ def find_output_violations(source: str, html: bytes) -> dict[str, list[dict[str,
     violations: dict[str, list[dict[str, str]]] = {
         "unrendered_relref": [],
         "markdown_href": [],
+        "empty_href": [],
     }
 
     if "relref" in text:
         violations["unrendered_relref"].append({"source": source, "match": "relref"})
+
+    empty_href_parser = EmptyHrefParser()
+    empty_href_parser.feed(text)
+    for raw_href in empty_href_parser.empty_hrefs:
+        violations["empty_href"].append({"source": source, "raw_href": raw_href})
 
     for raw_href in extract_links(html):
         parsed_href = urlparse(raw_href)
@@ -294,6 +315,7 @@ def crawl(base_url: str, timeout: int = 10, max_pages: int = 0) -> dict[str, obj
     output_violations: dict[str, list[dict[str, str]]] = {
         "unrendered_relref": [],
         "markdown_href": [],
+        "empty_href": [],
     }
 
     while queue:

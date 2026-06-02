@@ -1,5 +1,6 @@
 ---
 title: "Innovative Use case: Utforsk potensialet i vår plattform"
+url: "/tjenester/case/"
 list: "horisontal"
 language: "nb"
 section: "Use Case"

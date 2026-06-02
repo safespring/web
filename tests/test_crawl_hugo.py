@@ -88,6 +88,8 @@ class CrawlHugoTest(unittest.TestCase):
     def test_output_violation_check_flags_literal_relref_and_markdown_hrefs(self):
         self.assertTrue(hasattr(crawl_hugo, "find_output_violations"), "find_output_violations missing")
         html = b'''
+            <a href>empty href leaked</a>
+            <a href="">empty href string leaked</a>
             <a href="{{ relref . \"/contact.md\" }}">broken shortcode</a>
             <a href="/services/compute.md">markdown path leaked</a>
             <a href="https://github.com/org/repo/blob/main/README.md">external markdown ok</a>
@@ -107,6 +109,13 @@ class CrawlHugoTest(unittest.TestCase):
                     "source": "http://localhost:1313/source",
                     "raw_href": "/services/compute.md",
                 }
+            ],
+        )
+        self.assertEqual(
+            result["empty_href"],
+            [
+                {"source": "http://localhost:1313/source", "raw_href": ""},
+                {"source": "http://localhost:1313/source", "raw_href": ""},
             ],
         )
 

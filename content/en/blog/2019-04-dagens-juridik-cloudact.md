@@ -28,7 +28,7 @@ One solution is to move sensitive data out of the American clouds and store it w
 
 Many companies and institutions have already taken this step, including by choosing our Swedish cloud service. Read more about our customers and their experience with Safespring here:
 
-<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Read Safespring’s customer references</a><br>
+<a href="{{% relref "/services/case/" %}}" id="text-button">Read Safespring’s customer references</a><br>
 
 Adam Odmark believes that the situation between the GDPR and the U.S. CLOUD Act requires urgent action.
 

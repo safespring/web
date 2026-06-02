@@ -35,7 +35,7 @@ Safespring helps by conducting an initial assessment to map your current solutio
 
 Are you about to procure capacity services, or do you need to expand an existing system? We have experience with Hybrid Cloud, where our services can form part of your overall infrastructure. Through implementation and onboarding, we ensure our platforms seamlessly contribute to a local, flexible, and secure part of your current solution. We can provide project management to ensure the work follows the plan and no technical milestones fall through the cracks. Read more about what our customers say about past projects:
 
-<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Read our customer references</a></br></br>
+<a href="{{% relref "/services/case/" %}}" id="text-button">Read our customer references</a></br></br>
 
 ### Customization
 
