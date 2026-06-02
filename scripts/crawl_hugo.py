@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -60,6 +61,11 @@ ASSET_EXTENSIONS = {
     ".xml",
     ".zip",
 }
+WINDOW_LOCATION_HREF_RE = re.compile(r"\bwindow\.location\.href\s*=\s*(['\"])(.*?)\1")
+
+
+def extract_window_location_hrefs(text: str) -> list[str]:
+    return [match.group(2).strip() for match in WINDOW_LOCATION_HREF_RE.finditer(text) if match.group(2).strip()]
 
 
 class LinkParser(HTMLParser):
@@ -68,13 +74,25 @@ class LinkParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.links: list[str] = []
+        self._in_script = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag.lower() != "a":
-            return
+        tag_name = tag.lower()
+        if tag_name == "script":
+            self._in_script = True
         for name, value in attrs:
-            if name.lower() == "href" and value is not None:
+            if tag_name == "a" and name.lower() == "href" and value is not None:
                 self.links.append(value.strip())
+            if value:
+                self.links.extend(extract_window_location_hrefs(value))
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "script":
+            self._in_script = False
+
+    def handle_data(self, data: str) -> None:
+        if self._in_script:
+            self.links.extend(extract_window_location_hrefs(data))
 
 
 class EmptyHrefParser(HTMLParser):

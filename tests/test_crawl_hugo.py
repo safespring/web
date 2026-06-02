@@ -30,6 +30,14 @@ class CrawlHugoTest(unittest.TestCase):
         parser.feed(html)
         self.assertEqual(parser.links, ["/one", "/two#frag", "https://x.test/three/"])
 
+    def test_extract_links_includes_window_location_href_assignments(self):
+        html = b'''
+            <button onclick="window.location.href='/demo'">Book demo</button>
+            <script>window.location.href = "/contact";</script>
+        '''
+
+        self.assertEqual(crawl_hugo.extract_links(html), ["/demo", "/contact"])
+
     def test_classify_keeps_source_for_external_and_broken_internal_links(self):
         self.assertTrue(hasattr(crawl_hugo, "classify"), "classify missing")
         classify = crawl_hugo.classify

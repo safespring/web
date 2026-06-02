@@ -29,7 +29,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
   <p>CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.</p>
   <h3>Duration</h3>
   <p>1 day</p>
-    <button id="button" onclick="window.location.href = '/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers';">Learn more</button>
+    <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}";'>Learn more</button>
 </div>
 </div>
 <div class="accordion-box">
@@ -60,7 +60,7 @@ These two packages are developed to give you an overview and good understanding 
   <p>Software Developers, Technical Project Managers, Software Architects, Operations Support professionals, Deployment engineers, IT Managers, Development Managers, Technical Managers, Line managers, QA and Testing professionals, Domain Experts. From all industry sectors. </p>
   <h3>Duration</h3>
   <p>4 days (or 2 + 2 days)</p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/introduction-to-cloud-computing/';">Learn more</button>
+  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}";'>Learn more</button>
 </div>
 </div>
 <div class="accordion-box">
@@ -73,7 +73,7 @@ These two packages are developed to give you an overview and good understanding 
   <h3>Duration</h3>
   <p>4 days (or 2 + 2 days)</p>
   <p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/modern-devops/';">Learn more</button>
+  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/modern-devops.md" %}}";'>Learn more</button>
   </p>
 </div>
 </div>
