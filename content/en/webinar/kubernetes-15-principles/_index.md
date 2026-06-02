@@ -140,5 +140,5 @@ Whether you are a beginner or an experienced Kubernetes user, there are always n
 
 Together, we can continue to develop and improve our skills to create the cloud-native applications of the future.
 
-{{< 2calltoaction "Get in touch" "/demo" "Learn more about Kubernetes at Safespring" "/services/compliant-kubernetes" >}}
+{{< 2calltoaction "Get in touch" "/demo" "Learn more about Kubernetes at Safespring" "/services/compliant-kubernetes.md" >}}
 {{% /note %}}

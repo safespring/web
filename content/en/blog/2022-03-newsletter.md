@@ -48,7 +48,7 @@ The core of Safespring's platform is our virtual machines that come in several d
 
 All our flavors follow this new name set, making it easier for everyone who uses our platform. In our price calculator, you can see the new names today.
 
-{{< localtextbutton "Price list" "/price/" >}}
+{{< localtextbutton "Price list" "/price.md" >}}
 
 ## How does Nextcloud work on Safespring's platform?
 

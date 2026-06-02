@@ -15,9 +15,9 @@ language: "nb"
 author: ""
 TOC: "I dette innlegget"
 sidebarlinkname: "Talos på OpenStack"
-sidebarlinkurl: "/tech-update/2025-03-talos-linux-on-openstack/"
+sidebarlinkurl: "/tech-update/2025-03-talos-linux-on-openstack.md"
 sidebarlinkname2: "Cluster API på OpenStack"
-sidebarlinkurl2: "/tech-update/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/"
+sidebarlinkurl2: "/tech-update/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api.md"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/

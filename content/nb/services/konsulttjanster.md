@@ -21,7 +21,7 @@ Erfaringene vi har med hvordan man bør tenke prosessmessig for å kunne arbeide
 
 Vi har også partnere som tilbyr tjenester rundt sikkerhetskopiering, både som en lokal løsning, vår skybaserte løsning eller en kombinasjon for økt sikkerhet. Innen dette området finnes det også muligheter for å utvikle løsninger for kontinuerlig å kunne gjøre gjenopprettingstester for å sikre at sikkerhetskopiene dere tar faktisk fungerer. Disse testene kan kombineres med vår Compute plattform slik at dere bare betaler for ressursene når dere gjør testene – for å holde kostnadene nede og samtidig kunne føle trygghet.
 
-{{< 2calltoaction "Våre partnere" "/om-safespring/samarbeten-och-partners/" "Kontakt oss" "/kontakt" >}}
+{{< 2calltoaction "Våre partnere" "/our-partners.md" "Kontakt oss" "/kontakt" >}}
 
 Vi tilbyr også konsulenttjenester innen AI og ML (Machine Learning). Gjennom vår sterke forankring i den akademiske verden har vi partnere som er helt i spissen innen disse områdene. Ved å kombinere disse tjenestene med Safesprings skytjenester kan dere finne en vei videre for å utnytte disse teknologiene med dataene fortsatt innenfor landets grenser. Om ikke landets grenser er godt nok, kan vi også hjelpe til med å sette opp en plattform i deres datasenter (som vi forvalter) som gir full kontroll over hvor dataene er, samtidig som dere får kort oppstartstid for å komme i gang med disse teknologiene.
 
@@ -35,7 +35,7 @@ Safespring hjelper dere ved å gjennomføre en grunnleggende forstudie for å ka
 
 Er dere i ferd med å skaffe kapasitetstjenester, eller trenger å bygge ut et eksisterende system? Vi har erfaring med Hybrid Cloud der tjenestene våre kan være en del av deres totale infrastruktur. Gjennom implementering og onboarding sørger vi for at plattformene våre friksjonsfritt bidrar til en lokal, fleksibel og sikker del av deres nåværende løsning. Vi kan tilby prosjektledelse for å sikre at arbeidet følger planen, og at ingen tekniske milepæler faller mellom stolene. Les mer om hva kundene våre sier om tidligere prosjekter:
 
-<a href="/referenser" id="text-button">Les våre kundereferanser</a></br></br>
+<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Les våre kundereferanser</a></br></br>
 
 ### Kundetilpasning
 

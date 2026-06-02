@@ -49,11 +49,11 @@ By leveraging Safespring’s secure cloud platform combined with FEDn's powerful
 
 {{< distance >}}
 
-{{< horisontal-card 
-    image="/img/card/safespring-scaleut_use-case-ebba.webp" 
-    cardtitle="Ebba from Scaleout shares insights on the importance of managing sensitive data" 
-    link="/services/case/scaleout/" 
-    linktext="Read Use Case" 
+{{< horisontal-card
+    image="/img/card/safespring-scaleut_use-case-ebba.webp"
+    cardtitle="Ebba from Scaleout shares insights on the importance of managing sensitive data"
+    linkref="/services/case/scaleout.md"
+    linktext="Read Use Case"
     text="“Since machine learning involves sensitive data, secure management and relying on trusted infrastructure like Safespring's becomes critical.”" >}}
 
 {{< distance >}}
@@ -83,6 +83,4 @@ Yes, FEDn supports popular machine learning frameworks including TensorFlow, PyT
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Seamless Integration" description="Easily integrate FEDn with popular AI frameworks like TensorFlow and PyTorch, and deploy flexibly across Safespring's secure cloud infrastructure." >}}
 
 {{< distance >}}
-
-
 

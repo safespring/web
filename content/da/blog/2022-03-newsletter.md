@@ -48,7 +48,7 @@ Kernen i Safesprings platform er vores virtuelle maskiner, som findes i flere fo
 
 Alle vores varianter følger dette nye navnesæt, hvilket gør det nemmere for alle, der bruger vores platform. I vores prisberegner kan du se de nye navne allerede i dag.
 
-{{< localtextbutton "Prisliste" "/price/" >}}
+{{< localtextbutton "Prisliste" "/price.md" >}}
 
 ## Hvordan fungerer Nextcloud på Safesprings platform?
 

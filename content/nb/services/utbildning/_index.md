@@ -41,7 +41,7 @@ To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk overs
   <p>CEO, CTO, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, toppledere osv.</p>
   <h3>Varighet</h3>
   <p>1 dag.
-  <a id="button" href='/services/utbildning/cloud-strategy-for-top-level-managers/'>Les mer</a></p>
+  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a></p>
 </div>
 </div>
 

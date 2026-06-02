@@ -18,7 +18,7 @@ TOC: "I dette indlæg"
 aliases:
   - /blogg/2025/2025-04-validating-talos-linux-intstall/
 ---
-I en [tidligere artikel](/blogg/2025/2025-03-talos-linux-on-openstack/) begyndte vi at udforske Talos Linux, hvad det kan betyde for os, og hvordan vi kan automatisere installationen på Safespring OpenStack. Vi ville dog gå et par skridt videre i vores undersøgelse og se på at få bekræftet to yderligere aspekter:
+I en [tidligere artikel]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}) begyndte vi at udforske Talos Linux, hvad det kan betyde for os, og hvordan vi kan automatisere installationen på Safespring OpenStack. Vi ville dog gå et par skridt videre i vores undersøgelse og se på at få bekræftet to yderligere aspekter:
 
 1. Validere, at Kubernetes-klyngen og den underliggende CNI er installeret korrekt.
 2. Opgradere både operativsystemet og Kubernetes-versionen.

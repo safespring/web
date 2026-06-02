@@ -5,7 +5,7 @@ draft: false
 tags: ["English"]
 intro: "Safespring has developed a user portal and API bridge when launching our Safespring Backup service"
 sidebarlinkname: "To the service"
-sidebarlinkurl: "/services/backup"
+sidebarlinkurl: "/services/backup.md"
 sidebarlinkname2: "Get started"
 sidebarlinkurl2: "/demo"
 socialmedia: ""
@@ -69,4 +69,4 @@ With our relaunch of Safespring Backup, Safespring takes a giant leap forward to
 
 With Safespring Backup you will get a secure yet easy-to-use solution for handling all your backups.
 
-{{< horisontal-card image="/img/card/safespring-backup.svg" cardtitle="Read more about Safespring Backup" text="Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect.Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect." linktext="To the service" link="/services/backup">}}
+{{< horisontal-card image="/img/card/safespring-backup.svg" cardtitle="Read more about Safespring Backup" text="Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect.Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect." linktext="To the service" linkref="/services/backup.md">}}

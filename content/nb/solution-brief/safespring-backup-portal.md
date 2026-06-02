@@ -6,7 +6,7 @@ draft: false
 tags: ["English"]
 intro: "Safespring har utviklet en brukerportal og en API-bro i forbindelse med lanseringen av vår Safespring Backup-tjeneste."
 sidebarlinkname: "Til tjenesten"
-sidebarlinkurl: "/services/backup"
+sidebarlinkurl: "/services/backup.md"
 sidebarlinkname2: "Kom i gang"
 sidebarlinkurl2: "/demo"
 socialmedia: ""
@@ -70,4 +70,4 @@ Med relanseringen av Safespring Backup tar Safespring et stort steg for å forbe
 
 Med Safespring Backup får du en sikker, men likevel brukervennlig løsning for å håndtere alle sikkerhetskopiene dine.
 
-{{< horisontal-card image="/img/card/safespring-backup.svg" cardtitle="Les mer om Safespring Backup" text="Safespring Backup er en neste generasjons løsning for sikkerhetskopiering og gjenoppretting av data som utnytter påliteligheten og skalerbarheten til IBM Spectrum Protect. Safespring Backup er en neste generasjons løsning for sikkerhetskopiering og gjenoppretting av data som utnytter påliteligheten og skalerbarheten til IBM Spectrum Protect." linktext="Til tjenesten" link="/services/backup">}}
+{{< horisontal-card image="/img/card/safespring-backup.svg" cardtitle="Les mer om Safespring Backup" text="Safespring Backup er en neste generasjons løsning for sikkerhetskopiering og gjenoppretting av data som utnytter påliteligheten og skalerbarheten til IBM Spectrum Protect. Safespring Backup er en neste generasjons løsning for sikkerhetskopiering og gjenoppretting av data som utnytter påliteligheten og skalerbarheten til IBM Spectrum Protect." linktext="Til tjenesten" linkref="/services/backup.md">}}

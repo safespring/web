@@ -36,4 +36,4 @@ Du er ekspert på et område der sky- og infrastrukturtjenester kan være en eff
 
 Kjenner du deg igjen i beskrivelsene over, eller har du egne idéer til en partnerskapsmodell? Ta kontakt med oss – vi er overbevist om at samarbeid er en vinnerstrategi!
 
-{{< 2calltoaction "Kontakt oss" "/contact.md" "Våre partnere" "/about-safespring/collaborations-and-partners/" >}}
+{{< 2calltoaction "Kontakt oss" "/contact.md" "Våre partnere" "/our-partners.md" >}}

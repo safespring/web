@@ -23,8 +23,8 @@ aliases:
 {{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsåtgärder" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-file-alt" text="White Paper om adekvansbeslutet" link="/whitepaper/eu-us-dpf/" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" link="/om-safespring/datacenter/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" link="/dokument/personuppgiftshantering/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" linkref="/data-centers.md" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Externa dataskyddsåtgärder
@@ -123,7 +123,7 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 {{% /accordion %}}
 {{< accordion-script >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" link="/services/case/scaleout/" linktext="Läs Use Case" text="“Det finns ett värde i att kritisk infratruktur finns på plats i Sverige där vi inte är beroende av andra länders lagtiftningar...“ – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" linkref="/services/case/scaleout.md" linktext="Läs Use Case" text="“Det finns ett värde i att kritisk infratruktur finns på plats i Sverige där vi inte är beroende av andra länders lagtiftningar...“ – Ebba Kreamer, Scaleout" >}}
 
 ## Interna dataskyddsåtgärder
 

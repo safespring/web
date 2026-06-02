@@ -117,7 +117,7 @@ Gi oss beskjed om at du er interessert i kurset «Introduksjon til ‘Infrastruc
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>Ved å sende inn dette skjemaet godtar du våre <a href="/dokument/personuppgiftshantering/" target="_blank">vilkår og betingelser</a> (svensk).</p>
+	<p>Ved å sende inn dette skjemaet godtar du våre <a href="{{% relref "/compliance/privacy_policy.md" %}}" target="_blank">vilkår og betingelser</a> (svensk).</p>
 	<button type="submit" class="button">Send forespørsel</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

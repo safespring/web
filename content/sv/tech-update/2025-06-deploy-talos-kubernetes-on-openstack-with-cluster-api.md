@@ -67,10 +67,10 @@ Det finns några förutsättningar för att kunna replikera stegen, och vi går 
 {{% note "Förutsättningar" %}}
 - `kubectl`, `clusterctl`, `helm` 
 - OpenStack-uppgifter (inkludera även OpenStack ec2-uppgifter för S3-butik av state), dessutom använder den här guiden [Safespring Elastic IP](https://docs.safespring.com/new/elastic-ip/) så se till att det är aktiverat.
-   - Talos-avbild `1.10.3` finns i OpenStack, se [tidigare artikel](/blogg/2025/2025-03-talos-linux-on-openstack/) för information om hur man skapar den
+   - Talos-avbild `1.10.3` finns i OpenStack, se [tidigare artikel]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}) för information om hur man skapar den
 {{% /note %}}
 
-1. **Sätt upp ditt management-kluster**: Detta kan vara vilket Kubernetes-kluster som helst, till och med [`kind`](https://kind.sigs.k8s.io/), eller se hur vi satte upp ett kluster i en [tidigare artikel](/blogg/2025/2025-03-talos-linux-on-openstack/).
+1. **Sätt upp ditt management-kluster**: Detta kan vara vilket Kubernetes-kluster som helst, till och med [`kind`](https://kind.sigs.k8s.io/), eller se hur vi satte upp ett kluster i en [tidigare artikel]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}).
 2. **Installera Cluster API-komponenter** med [Cluster API CLI `clusterctl`](https://cluster-api.sigs.k8s.io/clusterctl/overview.html).
 ```bash
 export KUBECONFIG=<kubeconfig_for_management_cluster>

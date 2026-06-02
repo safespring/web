@@ -22,7 +22,7 @@ Den siste tidens debatt om Cloud Act og utenlandske skytjenester har fått mange
 Med den nye rammeavtalen, der ArkivIT er avtalepart mot SKL, kan hele 952 avropsberettigede myndigheter bruke svenske, sikre skytjenester gjennom Safespring uten at data forlater landet. Les gjerne pressemeldingen for å se hva dette innebærer.
 
 <br>
-<a href="/publikationer/skl-ramavtal" id="button">Pressemelding</a>
+<a href="{{% relref "/blog/2019-01-skl-ramavtal.md" %}}" id="button">Pressemelding</a>
 <br><br>
 
 ### Ta gjerne kontakt med Fredric hvis dere har spørsmål,

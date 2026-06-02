@@ -125,7 +125,7 @@ Giv os besked om, at du er interesseret i kurset "Introduction to Cloud Computin
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>Ved at indsende denne formular accepterer du vores <a href="/dokument/personuppgiftshantering/" target="_blank">vilkår og betingelser</a> (svensk).</p>
+	<p>Ved at indsende denne formular accepterer du vores <a href="{{% relref "/compliance/privacy_policy.md" %}}" target="_blank">vilkår og betingelser</a> (svensk).</p>
 	<button type="submit" class="button">Send forespørgsel</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

@@ -28,7 +28,7 @@ En løsning er at flytte følsomme data ud af de amerikanske cloudmiljøer og la
 
 Mange virksomheder og institutioner har allerede taget skridtet og bruger blandt andet vores svenske cloudtjeneste. Læs mere om vores kunder og deres oplevelse af Safespring her:
 
-<a href="/referenser" id="text-button">Læs Safesprings kundereferencer</a><br>
+<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Læs Safesprings kundereferencer</a><br>
 
 Adam Odmark mener, at situationen mellem databeskyttelsesforordningen og USA's Cloud Act kræver hurtig handling.
 

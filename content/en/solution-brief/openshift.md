@@ -48,7 +48,7 @@ On Safespring's Openstack-based infrastructure platform, you can quickly deploy 
 
 ### You need this to get started
 
-- A project on [Safespring Compute](/services/compute/) with the following resources:
+- A project on [Safespring Compute]({{% relref "/services/compute.md" %}}) with the following resources:
   - Memory: 60GB
   - VCPUs: 16
   - Security group rules: 40

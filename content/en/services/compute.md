@@ -22,6 +22,7 @@ aliases:
   - /compute/
   - /safespring-compute/
   - /en/services/compute/
+  - /services/compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
@@ -112,4 +113,4 @@ Although our platform is based on open source and Linux, we also support Windows
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba from Scaleout explains the importance of handling sensitive data" link="/services/case/scaleout/" linktext="Read Use Case" text="“Because machine learning and AI initiatives of this kind require handling large amounts of sensitive data, it is important for companies to have control and be able to rely on a trusted provider with high data security and integrity.”" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba from Scaleout explains the importance of handling sensitive data" linkref="/services/case/scaleout.md" linktext="Read Use Case" text="“Because machine learning and AI initiatives of this kind require handling large amounts of sensitive data, it is important for companies to have control and be able to rely on a trusted provider with high data security and integrity.”" >}}

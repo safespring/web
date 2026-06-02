@@ -26,4 +26,4 @@ This notice addresses the situation after the judgment and recommendations for o
 - the market structure for cloud services and the interplay between technical requirements and law (Part II);
 - and a brief description of the way forward (Part III).
 
-{{< localbutton text="Read now" link="/whitepaper/schrems-ii-norwegian" >}}
+{{< localbutton text="Read now" linkref="/whitepaper/schrems-ii.md" >}}

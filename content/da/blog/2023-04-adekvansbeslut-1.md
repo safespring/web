@@ -86,7 +86,7 @@ Dette kan gøre det svært for organisationen at skifte leverandør. [Læs mere 
 {{% note "Læs mere" %}}
 
 1. [Hvidbog om amerikansk politi- og efterretningslovgivning og Databeskyttelsesforordningen.](/whitepaper/cloudact/)
-2. [Hvidbog om de tekniske og retlige virkninger af EU-Domstolens såkaldte “Schrems II”-sag, hvor Dataskjoldet blev kendt ugyldigt, med anbefalinger til offentlige aktører.](/whitepaper/schrems-ii/)
+2. [Hvidbog om de tekniske og retlige virkninger af EU-Domstolens såkaldte “Schrems II”-sag, hvor Dataskjoldet blev kendt ugyldigt, med anbefalinger til offentlige aktører.]({{% relref "/whitepaper/schrems-ii.md" %}})
 
 {{% /note %}}
 

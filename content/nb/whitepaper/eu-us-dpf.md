@@ -123,7 +123,7 @@ At kildekoden er åpen, reduserer muligheten for leverandører og implementatør
 
 [^1]: Safespring. (2018). _Cloud Act White Paper_. Hentet fra [safespring.com](/whitepaper/cloudact/)
 
-[^2]: Safespring. (2020). _Schrems II White Paper_. Hentet fra [safespring.com](/whitepaper/schrems-ii/)
+[^2]: Safespring. (2020). _Schrems II White Paper_. Hentet fra [safespring.com]({{% relref "/whitepaper/schrems-ii.md" %}})
 
 [^3]: Europakommisjonen. (2023). _C(2023) 4745 final_. Hentet fra [commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
 

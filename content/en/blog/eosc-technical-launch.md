@@ -30,6 +30,6 @@ Stay tuned for more updates as the EOSC EU Node approaches its public release!
 
 Discover Safespring’s vital role in the European Open Science Cloud initiative, providing managed compute and containers to support open science and research collaboration across Europe.
 
-{{< localbutton link="/eosc/" text="About EOSC" >}}
+{{< localbutton linkref="/industries/eosc.md" text="About EOSC" >}}
 
 {{% /custom-card %}}

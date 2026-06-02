@@ -36,12 +36,12 @@ I næsten al SaaS indgår personoplysninger, hvilket betyder, at både du og din
 Hvis din SaaS indeholder fortrolige oplysninger, uanset om det er oplysninger omfattet af loven om offentlighed og tavshedspligt, advokat–klient-fortrolighed eller erhvervsmæssig fortrolighed, skal du kunne garantere, at fortroligheden opretholdes. Amerikanske cloududbydere kan aldrig garantere fortrolighed, hvilket fremgår af deres vilkår. Safespring har ingen sådanne vilkår og vil ikke udlevere vores kunders oplysninger, medmindre det kræves af en svensk domstol.
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datacentre" link="/om-safespring/datacenter/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datacentre" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se vores webcasts" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Lær virksomheden at kende" link="/om-safespring/" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Lær virksomheden at kende" linkref="/about.md" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Læs løsningsbeskrivelser" link="/solution-brief/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-gavel" text="Læs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/containerplattform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-gavel" text="Læs om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Teknologi

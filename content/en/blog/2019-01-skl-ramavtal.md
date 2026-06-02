@@ -22,7 +22,7 @@ The recent debate about the Cloud Act and foreign cloud services has made many i
 With the new framework agreement, in which ArkivIT is the contracting party with SKL, as many as 952 call-off eligible authorities can use secure Swedish cloud services through Safespring without data leaving the country. Please read the press release to see what this means.
 
 <br>
-<a href="/publikationer/skl-ramavtal" id="button">Press release</a>
+<a href="{{% relref "/blog/2019-01-skl-ramavtal.md" %}}" id="button">Press release</a>
 <br><br>
 
 ### Feel free to contact Fredric if you have any questions,

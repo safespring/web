@@ -34,7 +34,7 @@ För Medtech- och Healthtech-bolag blir det relevant när ni behöver en modern 
 {{< icon-block-container >}}
     {{< icon-block icon="fas fa-file-shield" text="Byggd för reglerade miljöer" link="/gdpr/" color="#195F8C">}}
     {{< icon-block icon="fas fa-lock" text="Digital suveränitet" link="/gdpr/" color="#FA690F">}}
-    {{< icon-block icon="fas fa-location-dot" text="Dataplacering i Europa" link="/om-safespring/datacenter/" color="#417DA5">}}
+    {{< icon-block icon="fas fa-location-dot" text="Dataplacering i Europa" linkref="/data-centers.md" color="#417DA5">}}
     {{< icon-block icon="fas fa-layer-group" text="Öppen containerplattform" link="/tjanster/containerplattform/" color="#32CD32">}}
     {{< icon-block icon="fas fa-user-shield" text="Tydlig ansvarsfördelning" link="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/" color="#3C9BCD">}}
     {{< icon-block icon="fas fa-leaf" text="100% förnybar energi" link="/om-safespring/miljo-och-hallbarhet/" color="#417DA5">}}

@@ -26,4 +26,4 @@ Det här meddelandet behandlar förhållandena efter domslutet och rekommendatio
 - marknadsstrukturen för molntjänster och samspelet mellan tekniska krav och lag (del II);
 - och en kort beskrivning av vägen framåt (del III).
 
-{{< localbutton text="Läs direkt" link="/whitepaper/schrems-ii-norwegian" >}}
+{{< localbutton text="Läs direkt" linkref="/whitepaper/schrems-ii.md" >}}

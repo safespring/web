@@ -86,7 +86,7 @@ This can make it difficult for the organization to switch providers. [Read more 
 {{% note "Read more" %}}
 
 1. [White paper on US law enforcement and intelligence legislation and the General Data Protection Regulation.](/whitepaper/cloudact/)
-2. [White paper on the technical and legal effects of the CJEU’s so-called “Schrems II” case, in which the Privacy Shield was invalidated, with recommendations for public-sector actors.](/whitepaper/schrems-ii/)
+2. [White paper on the technical and legal effects of the CJEU’s so-called “Schrems II” case, in which the Privacy Shield was invalidated, with recommendations for public-sector actors.]({{% relref "/whitepaper/schrems-ii.md" %}})
 
 {{% /note %}}
 

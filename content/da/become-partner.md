@@ -36,4 +36,4 @@ Du er ekspert på et område, hvor infrastruktur- og cloudtjenester kan være en
 
 Kan du genkende dig selv i ovenstående eller har du egne idéer til en partnerskabsmodel? Kontakt os – vi er overbeviste om, at samarbejde er en vindende strategi!
 
-{{< 2calltoaction "Kontakt os" "/contact.md" "Vores partnere" "/about-safespring/collaborations-and-partners/" >}}
+{{< 2calltoaction "Kontakt os" "/contact.md" "Vores partnere" "/our-partners.md" >}}

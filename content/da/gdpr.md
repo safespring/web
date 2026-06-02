@@ -21,15 +21,15 @@ aliases:
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-shield-alt" text="Ekstern databeskyttelse" link="#external-data-protection-measures" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-lock" text="Intern databeskyttelse" link="#internal-data-protection-measures" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-file-alt" text="Schrems II-hvidbog" link="/whitepaper/schrems-ii/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-file-alt" text="Schrems II-hvidbog" linkref="/whitepaper/schrems-ii.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="GDPR-webcastserie" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-database" text="Om vores datacentre" link="/about-safespring/datacenter/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-user-shield" text="Behandling af personoplysninger" link="/documents/personal-data-processing/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-database" text="Om vores datacentre" linkref="/data-centers.md" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-shield" text="Behandling af personoplysninger" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Eksterne foranstaltninger til databeskyttelse
 
-I forbindelse med databeskyttelse og GDPR diskuteres overførsler til tredjelande ofte. Et helt kapitel i GDPR omhandler udelukkende begrænsningerne i mulighederne for at overføre data, og vi har tidligere udarbejdet [anbefalinger til organisationer](/whitepaper/schrems-ii/), der stadig kæmper med dette spørgsmål. Men dette er ikke de eneste krav til dataansvarlige, hvor databehandlere kan hjælpe.
+I forbindelse med databeskyttelse og GDPR diskuteres overførsler til tredjelande ofte. Et helt kapitel i GDPR omhandler udelukkende begrænsningerne i mulighederne for at overføre data, og vi har tidligere udarbejdet [anbefalinger til organisationer]({{% relref "/whitepaper/schrems-ii.md" %}}), der stadig kæmper med dette spørgsmål. Men dette er ikke de eneste krav til dataansvarlige, hvor databehandlere kan hjælpe.
 
 Safesprings forpligtelse som din databehandler er aktivt at bistå din efterlevelse (i henhold til artikel 28.3). Vi er her for at gøre dit arbejde lettere og mere effektivt, når det gælder opfyldelse af kravene til databeskyttelse. Vores cloudplatform sikrer, at du som dataansvarlig altid kan leve op til de krav, som GDPR stiller til dig.
 
@@ -125,7 +125,7 @@ Central bloklagring for øget redundans: Som en del af vores service tilbyder vi
 {{% /accordion %}}
 {{< accordion-script >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Fødereret maskinlæring" link="/services/case/scaleout/" linktext="Læs use case" text="“Det har værdi at have kritisk infrastruktur placeret i Sverige, hvor vi ikke er afhængige af andre landes lovgivning...” – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Fødereret maskinlæring" linkref="/services/case/scaleout.md" linktext="Læs use case" text="“Det har værdi at have kritisk infrastruktur placeret i Sverige, hvor vi ikke er afhængige af andre landes lovgivning...” – Ebba Kreamer, Scaleout" >}}
 
 ## Interne foranstaltninger til databeskyttelse
 

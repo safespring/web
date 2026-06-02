@@ -30,6 +30,6 @@ Følg med for flere oppdateringer etter hvert som EOSC EU Node nærmer seg offen
 
 Oppdag Safesprings viktige rolle i European Open Science Cloud-initiativet, der vi leverer administrert datakraft og containere for å støtte åpen vitenskap og forskningssamarbeid i hele Europa.
 
-{{< localbutton link="/eosc/" text="Om EOSC" >}}
+{{< localbutton linkref="/industries/eosc.md" text="Om EOSC" >}}
 
 {{% /custom-card %}}

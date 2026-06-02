@@ -10,7 +10,7 @@ card: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg
 eventbild: ""
 socialmediabild: ""
 intro: "In a world where artificial intelligence (AI) is transforming the landscape of nearly every industry, there are important questions to answer: How do we ensure that AIâ€™s power is used in a way that is effective and sustainable, without risking data ending up in the wrong hands?"
-sidebarlinkurl: "/hello"
+sidebarlinkurl: "/hello.md"
 sidebarlinkname: "Learn more about Safespring"
 sidebarlinkurl2: "/contact.md"
 sidebarlinkname2: "Contact us"
@@ -54,5 +54,5 @@ Watch our session and be inspired by how close partnerships can create tomorrowâ
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Learn more about Safespring" %}}
 Safespring provides infrastructure as a service. Our customers build services and applications with digital sovereignty, no third-country transfers, and open standards.
 
-{{< 2calltoaction "About us" "/hello" "Contact Safespring" "/contact.md">}}
+{{< 2calltoaction "About us" "/hello.md" "Contact Safespring" "/contact.md">}}
 {{% /custom-card %}}

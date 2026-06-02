@@ -10,7 +10,7 @@ card: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg
 eventbild: ""
 socialmediabild: ""
 intro: "I en verden, hvor kunstig intelligens (AI) forandrer landskabet i næsten alle brancher, er der vigtige spørgsmål at besvare: Hvordan sikrer vi, at AI's kraft bruges på en måde, der er effektiv og bæredygtig, uden at risikere, at data ender i de forkerte hænder?"
-sidebarlinkurl: "/hello"
+sidebarlinkurl: "/hello.md"
 sidebarlinkname: "Læs mere om Safespring"
 sidebarlinkurl2: "/kontakt"
 sidebarlinkname2: "Kontakt os"
@@ -54,5 +54,5 @@ Se vores talersession, og lad dig inspirere af, hvordan tætte samarbejder kan s
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Læs mere om Safespring" %}}
 Safespring leverer infrastruktur som en tjeneste. Vores kunder bygger tjenester og applikationer med digital suverænitet, ingen tredjelandsoverførsel og med åbne standarder.
 
-{{< 2calltoaction "Om os" "/hello" "Kontakt Safespring" "/kontakt">}}
+{{< 2calltoaction "Om os" "/hello.md" "Kontakt Safespring" "/kontakt">}}
 {{% /custom-card %}}

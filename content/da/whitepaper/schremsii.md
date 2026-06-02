@@ -26,4 +26,4 @@ Denne meddelelse omhandler forholdene efter kendelsen og anbefalinger til organi
 - markedsstrukturen for skytjenester og samspillet mellem tekniske krav og lovgivning (del II);
 - samt en kort beskrivelse af vejen frem (del III).
 
-{{< localbutton text="Læs direkte" link="/whitepaper/schrems-ii-norwegian" >}}
+{{< localbutton text="Læs direkte" linkref="/whitepaper/schrems-ii.md" >}}

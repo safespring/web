@@ -60,7 +60,7 @@ Disse GPU‑ene blir tilgjengelige fra tidlig i april i vårt nye beregningssent
 
 ### **Bygge en skalerbar Kubernetes‑PaaS**
 
-Vi stopper ikke ved infrastrukturen. Vi utvikler også en [svært skalerbar Kubernetes Platform‑as‑a‑Service (PaaS)](/services/containerplatform/) på toppen av Talos Linux[^3]. Dette initiativet vil gi kundene mulighet til å distribuere, administrere og skalere containeriserte applikasjoner med letthet. Talos Linux, kjent for sikkerhet og effektivitet, gir et solid fundament for våre Kubernetes‑tilbud og sikrer at PaaS‑en vår er både kraftig og sikker.
+Vi stopper ikke ved infrastrukturen. Vi utvikler også en [svært skalerbar Kubernetes Platform‑as‑a‑Service (PaaS)]({{% relref "/services/containerplatform.md" %}}) på toppen av Talos Linux[^3]. Dette initiativet vil gi kundene mulighet til å distribuere, administrere og skalere containeriserte applikasjoner med letthet. Talos Linux, kjent for sikkerhet og effektivitet, gir et solid fundament for våre Kubernetes‑tilbud og sikrer at PaaS‑en vår er både kraftig og sikker.
 
 En av våre nøkkelfunksjoner er at vi kan tilby dette både i våre offentlige skysentre og i private skysentre som vi drifter for kunder.
 
@@ -76,8 +76,8 @@ Fordyp deg i mer informasjon via disse lenkene.
 
 [^1]: **Red Hat.** _CentOS Linux End of Life (EOL_). Red Hat forklarer overgangen bort fra CentOS Linux, hva det betyr for brukere og alternative muligheter videre. Hentet 17. februar 2025 fra [redhat.com](https://www.redhat.com/en/topics/linux/centos-linux-eol).
 
-[^2]: **Safespring og EOSC.** En kort titt på Safesprings engasjement i European Open Science Cloud. Hentet 17. februar 2025 fra [EOSC Safespring](/eosc/).
+[^2]: **Safespring og EOSC.** En kort titt på Safesprings engasjement i European Open Science Cloud. Hentet 17. februar 2025 fra [EOSC Safespring]({{% relref "/industries/eosc.md" %}}).
 
 [^3]: **Talos Linux.** _A Modern Secure Kubernetes OS._ Talos Linux er et minimalt, uforanderlig operativsystem designet for Kubernetes, med fokus på sikkerhet og automatisering. Hentet 17. februar 2025 fra https://www.talos.dev/.
 
-[^4]: **Safespring Container platform.** Tjenestebeskrivelse av containerplattformen vår. Hentet 17. februar 2025 fra [safespring.com/containerplatform](/services/containerplatform/)
+[^4]: **Safespring Container platform.** Tjenestebeskrivelse av containerplattformen vår. Hentet 17. februar 2025 fra [safespring.com/containerplatform]({{% relref "/services/containerplatform.md" %}})

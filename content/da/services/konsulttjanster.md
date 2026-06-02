@@ -21,7 +21,7 @@ Den erfaring, vi har med de procesmæssige overvejelser, der skal til for at kun
 
 Vi har også partnere, der tilbyder tjenester omkring backup – både som en lokal løsning, vores cloudbaserede løsning eller en kombination for øget sikkerhed. Inden for dette område er der også mulighed for at udarbejde løsninger, der løbende kan gennemføre gendannelsestests for at sikre, at de backupper, I tager, faktisk fungerer. Disse tests kan kombineres med vores Compute-platform, så I kun betaler for ressourcerne, når I udfører testene – for at holde omkostningerne nede og samtidig skabe tryghed.
 
-{{< 2calltoaction "Vores partnere" "/om-safespring/samarbeten-och-partners/" "Kontakt os" "/kontakt" >}}
+{{< 2calltoaction "Vores partnere" "/our-partners.md" "Kontakt os" "/kontakt" >}}
 
 Vi tilbyder også konsulentydelser inden for AI og ML (Machine Learning). Med vores stærke forankring i den akademiske verden har vi partnere, der er den absolutte spydspids inden for disse områder. Ved at kombinere disse ydelser med Safesprings cloudtjenester kan I finde en vej til at udnytte disse teknologier med data placeret inden for landets grænser. Hvis landets grænser ikke er tilstrækkelige, kan vi også hjælpe med at sætte en platform op i jeres datacenter (som vi administrerer), der giver fuld kontrol over, hvor data befinder sig, samtidig med at I får en kort opstart for at komme i gang med disse teknologier.
 
@@ -35,7 +35,7 @@ Safespring hjælper jer ved at gennemføre en grundlæggende foranalyse for at k
 
 Er I på vej til at anskaffe kapacitetsydelser, eller har I brug for at udbygge et nuværende system? Vi har erfaring med Hybrid Cloud, hvor vores tjenester kan indgå som en del af jeres samlede infrastruktur. Gennem implementering og onboarding sikrer vi, at vores platforme friktionsfrit bidrager til en lokal, fleksibel og sikker del af jeres nuværende løsning. Vi kan tilbyde projektledelse for at sikre, at arbejdet følger planen, og at ingen tekniske milepæle falder mellem stolene. Læs mere om, hvad vores kunder siger om tidligere projekter:
 
-<a href="/referenser" id="text-button">Læs vores kundereferencer</a></br></br>
+<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Læs vores kundereferencer</a></br></br>
 
 ### Kundetilpasning
 

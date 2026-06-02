@@ -21,7 +21,7 @@ We also share our experience on how to structure processes to work according to 
 
 We also have partners who offer backup services—either as a local solution, our cloud-based solution, or a combination for increased security. In this area, we can also develop solutions for continuous recovery testing to ensure the backups you take actually work. These tests can be combined with our Compute platform so you only pay for resources when you run the tests—keeping costs down while maintaining peace of mind.
 
-{{< 2calltoaction "Our partners" "/om-safespring/samarbeten-och-partners/" "Contact us" "/contact.md" >}}
+{{< 2calltoaction "Our partners" "/our-partners.md" "Contact us" "/contact.md" >}}
 
 We also offer consulting services in AI and ML (Machine Learning). Through our strong ties to academia, we have partners at the cutting edge of these fields. By combining these services with Safespring’s cloud services, you can find a way to leverage these technologies while keeping data within the country’s borders. If that’s not sufficient, we can also help set up a platform in your data center (managed by us) that gives you full control over where the data resides, while providing a short ramp-up time to get started with these technologies.
 
@@ -35,7 +35,7 @@ Safespring helps by conducting an initial assessment to map your current solutio
 
 Are you about to procure capacity services, or do you need to expand an existing system? We have experience with Hybrid Cloud, where our services can form part of your overall infrastructure. Through implementation and onboarding, we ensure our platforms seamlessly contribute to a local, flexible, and secure part of your current solution. We can provide project management to ensure the work follows the plan and no technical milestones fall through the cracks. Read more about what our customers say about past projects:
 
-<a href="/referenser" id="text-button">Read our customer references</a></br></br>
+<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Read our customer references</a></br></br>
 
 ### Customization
 

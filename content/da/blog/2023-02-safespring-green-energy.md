@@ -14,7 +14,7 @@ section: "blog"
 language: "da"
 toc: ""
 sidebarlinkname: "Læs om vores datacentre"
-sidebarlinkurl: "/om-safespring/datacenter"
+sidebarlinkurl: "/data-centers.md"
 sidebarlinkname2: "Kontakt os"
 sidebarlinkurl2: "/kontakt"
 aliases:

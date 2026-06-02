@@ -21,15 +21,15 @@ aliases:
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-shield-alt" text="External Data Protection" link="#external-data-protection-measures" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-lock" text="Internal Data Protection" link="#internal-data-protection-measures" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" linkref="/whitepaper/schrems-ii.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="GDPR Webcast Series" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-database" text="About Our Data Centers" link="/about-safespring/datacenter/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-user-shield" text="Personal Data Processing" link="/documents/personal-data-processing/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-database" text="About Our Data Centers" linkref="/data-centers.md" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-shield" text="Personal Data Processing" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## External Data Protection Measures
 
-In the context of data protection and GDPR, third-country transfers are often discussed. An entire chapter in the GDPR deals exclusively with the limitations of the possibilities to transfer data, and we have previously developed [recommendations for organizations](/whitepaper/schrems-ii/) that are still grappling with this issue. But these are not the only requirements for data controllers where processors can help.
+In the context of data protection and GDPR, third-country transfers are often discussed. An entire chapter in the GDPR deals exclusively with the limitations of the possibilities to transfer data, and we have previously developed [recommendations for organizations]({{% relref "/whitepaper/schrems-ii.md" %}}) that are still grappling with this issue. But these are not the only requirements for data controllers where processors can help.
 
 Safespring's obligation as your data processor is to actively assist with your compliance (according to Article 28.3). We are here to make your work easier and more efficient when it comes to meeting data protection requirements. Our cloud platform ensures that you, as data controllers, can always meet the requirements GDPR imposes on you.
 
@@ -125,7 +125,7 @@ Central block storage for increased redundancy: As part of our service, we offer
 {{% /accordion %}}
 {{< accordion-script >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federated Machine Learning" link="/services/case/scaleout/" linktext="Read Use Case" text="“There is value in having critical infrastructure located in Sweden where we are not dependent on other countries' legislation...“ – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federated Machine Learning" linkref="/services/case/scaleout.md" linktext="Read Use Case" text="“There is value in having critical infrastructure located in Sweden where we are not dependent on other countries' legislation...“ – Ebba Kreamer, Scaleout" >}}
 
 ## Internal Data Protection Measures
 

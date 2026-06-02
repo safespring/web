@@ -33,12 +33,12 @@ I nästan alla SaaS förekommer det personuppgifter varför både ni och era und
 Om det förekommer sekretessreglerade uppgifter i er SaaS, vare sig det är uppgifter som omfattas av offentlighets- och sekretesslagen, advokatsekretess eller kommersiell sekretess krävs det att ni kan garantera att sekretessen bibehålls. Amerikanska molntjänstleverantörer kan aldrig garantera sekretessen, vilket framgår av deras avtalsvillkor. Safespring har inga sådana avtalsvillkor och kommer inte lämna ut våra kunders information förutom när svensk domstol kräver det.
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" link="/om-safespring/datacenter/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings Datacenter" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se våra webcasts" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" link="/om-safespring/" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna bolaget" linkref="/about.md" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/containerplattform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-gavel" text="Läs om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Tekniken

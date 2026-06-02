@@ -65,7 +65,7 @@ Store and distribute large media files, documents, and other digital assets effi
 
 #### Big Data Analytics
 
-Leverage Safespring Storage for storing large datasets required for analytics and machine learning applications. Read more about how [SciLifeLab uses Safespring to reasearch life science](/services/case/scilifelab/).
+Leverage Safespring Storage for storing large datasets required for analytics and machine learning applications. Read more about how [SciLifeLab uses Safespring to reasearch life science]({{% relref "/services/case/scilifelab.md" %}}).
 
 #### Data Backup and Recovery
 

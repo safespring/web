@@ -66,7 +66,7 @@ Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre 
     </div>
     <div class="inputGroup">
         <input id="villkor" type="checkbox" value="on" name="singleOptIn.1573113563490">
-        <label for="villkor">I accept the <a href="/dokument/acceptable-use-policy/">terms</a></label>
+        <label for="villkor">I accept the <a href="{{% relref "/documents/acceptable-use-policy.md" %}}">terms</a></label>
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">

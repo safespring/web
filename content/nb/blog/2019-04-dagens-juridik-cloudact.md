@@ -28,7 +28,7 @@ En løsning er å flytte ut sensitive data fra de amerikanske skyene og lagre de
 
 Mange virksomheter og institusjoner har allerede tatt steget inn i blant annet vår svenske skytjeneste. Les mer om våre kunder og deres opplevelse av Safespring her:
 
-<a href="/referenser" id="text-button">Les Safesprings kundereferanser</a><br>
+<a href="{{% relref "/services/case/_index.md" %}}" id="text-button">Les Safesprings kundereferanser</a><br>
 
 Adam Odmark mener at situasjonen mellom personvernforordningen og USAs Cloud Act krever rask handling.
 

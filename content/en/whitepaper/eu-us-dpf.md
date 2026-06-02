@@ -123,7 +123,7 @@ Open source code reduces the ability of vendors and implementers to hide securit
 
 [^1]: Safespring. (2018). _Cloud Act White Paper_. Retrieved from [safespring.com](/whitepaper/cloudact/)
 
-[^2]: Safespring. (2020). _Schrems II White Paper_. Retrieved from [safespring.com](/whitepaper/schrems-ii/)
+[^2]: Safespring. (2020). _Schrems II White Paper_. Retrieved from [safespring.com]({{% relref "/whitepaper/schrems-ii.md" %}})
 
 [^3]: European Commission. (2023). _C(2023) 4745 final_. Retrieved from [commission.europa.eu](https://commission.europa.eu/system/files/2023-07/Adequacy%20decision%20EU-US%20Data%20Privacy%20Framework_en.pdf)
 

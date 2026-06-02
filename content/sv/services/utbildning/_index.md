@@ -41,7 +41,7 @@ Två av våra kurspaket vänder sig till personal med övergripande teknisk öve
   <p>CEO, CTO, IT-chefer, utvecklingschefer, tekniska chefer, linjechefer, chefer på högsta nivå, med flera.</p>
   <h3>Längd</h3>
   <p>1 dag.
-  <a id="button" href='/services/utbildning/cloud-strategy-for-top-level-managers/'>Läs mer</a></p>
+  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Läs mer</a></p>
 </div>
 </div>
 

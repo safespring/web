@@ -21,4 +21,4 @@ Vores ydelser egner sig særdeles godt til at supplere jeres tilbud, og vi still
 
 Kontakt os for at høre mere om vores partnerydelser!
 
-{{< 2calltoaction "Bliv partner" "/om-safespring/bli-partner" "Kontakt Safespring" "/kontakt" >}}
+{{< 2calltoaction "Bliv partner" "/become-partner.md" "Kontakt Safespring" "/kontakt" >}}

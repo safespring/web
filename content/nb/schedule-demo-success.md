@@ -14,7 +14,7 @@ sidebarphone: "076 629 25 02"
 sidebarmail: "fredric.wallsten@safespring.com"
 socialmedia: ""
 sidebarlinkname: "Utforsk våre løsninger"
-sidebarlinkurl: "/services/containerplatform/"
+sidebarlinkurl: "/services/containerplatform.md"
 sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/contact.md"
 saas: ""
@@ -29,12 +29,12 @@ Demoen din er planlagt! Vi ser frem til å møte deg og vise hvordan Safespring 
 Safespring er en europeisk offentlig skyplattform bygget for å møte etterlevelseskrav innenfor EU. Med et sterkt fokus på digital suverenitet og åpne standarder tilbyr Safespring tjenester som virtuelle servere, lagring i stor skala og sikkerhetskopiering som en tjeneste. Våre datasentre i Sverige og Norge gir en sikker og velprøvd plattform for offentlige virksomheter, datadrevne selskaper og akademia.
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datasentre" link="/about/datacenter/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datasentre" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se våre webinarer" link="/webinars/" color="#195F8C">}}
 {{< icon-block icon="fa-kit fa-safespring-icon" text="Bli kjent med oss" link="/about-safespring/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Les løsningsbeskrivelser" link="/solution-brief/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-gavel" text="Lær mer om Schrems II" link="/whitepapers/schrems-ii/" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring og Kubernetes" link="/services/container-platform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-gavel" text="Lær mer om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring og Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentasjon" link="/publications/safespring-introduction.pdf" linktext="Åpne presentasjonen" text="Ta en nærmere titt på Safespring og vår europeiske skyplattform med fokus på etterlevelse, håndtering av sensitive data og GDPR." >}}

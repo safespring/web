@@ -140,5 +140,5 @@ Enten du er nybegynner eller erfaren bruker av Kubernetes, er det alltid nye tin
 
 Sammen kan vi fortsette å utvikle og forbedre ferdighetene våre for å skape fremtidens skybaserte applikasjoner.
 
-{{< 2calltoaction "Ta kontakt" "/demo" "Les mer om Kubernetes hos Safespring" "/services/compliant-kubernetes" >}}
+{{< 2calltoaction "Ta kontakt" "/demo" "Les mer om Kubernetes hos Safespring" "/services/compliant-kubernetes.md" >}}
 {{% /note %}}

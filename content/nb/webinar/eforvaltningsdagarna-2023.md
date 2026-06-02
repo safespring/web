@@ -10,7 +10,7 @@ card: "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg
 eventbild: ""
 socialmediabild: ""
 intro: "I en verden der kunstig intelligens (KI) endrer landskapet for nesten alle bransjer, er det viktige spørsmål som må besvares: Hvordan sikrer vi at KIens kraft brukes på en måte som er effektiv og bærekraftig, uten å risikere at data havner i feil hender?"
-sidebarlinkurl: "/hello"
+sidebarlinkurl: "/hello.md"
 sidebarlinkname: "Les mer om Safespring"
 sidebarlinkurl2: "/kontakt"
 sidebarlinkname2: "Kontakt oss"
@@ -54,5 +54,5 @@ Se vår talersesjon og la deg inspirere av hvordan tette samarbeid kan skape fre
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Les mer om Safespring" %}}
 Safespring leverer infrastruktur som en tjeneste. Våre kunder bygger tjenester og applikasjoner med digital suverenitet, ingen overføring til tredjeland og åpne standarder.
 
-{{< 2calltoaction "Om oss" "/hello" "Kontakt Safespring" "/kontakt">}}
+{{< 2calltoaction "Om oss" "/hello.md" "Kontakt Safespring" "/kontakt">}}
 {{% /custom-card %}}

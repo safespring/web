@@ -13,7 +13,7 @@ section: "blog"
 language: "sv"
 toc: ""
 sidebarlinkname: "Läs om våra datacenter"
-sidebarlinkurl: "/om-safespring/datacenter"
+sidebarlinkurl: "/data-centers.md"
 sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "/kontakt"
 aliases:

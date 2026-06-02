@@ -51,7 +51,7 @@ Ved at udnytte Safesprings sikre cloud-platform kombineret med FEDns kraftfulde 
 {{< horisontal-card
     image="/img/card/safespring-scaleut_use-case-ebba.webp"
     cardtitle="Ebba fra Scaleout deler indsigt om vigtigheden af at håndtere følsomme data"
-    link="/services/case/scaleout/"
+    linkref="/services/case/scaleout.md"
     linktext="Læs Use Case"
     text="Da maskinlæring involverer følsomme data, bliver sikker håndtering og at stole på pålidelig infrastruktur som Safesprings kritisk." >}}
 

@@ -82,7 +82,7 @@ Two major research environments and platforms built on Safespring's infrastructu
 
 ## Relevant for EOSC
 
-EOSC stands for [European Open Science Cloud](/eosc) and is a cloud-based platform aimed at providing researchers and other users with simple and secure access to research data, tools, and infrastructure across Europe.
+EOSC stands for [European Open Science Cloud]({{% relref "/industries/eosc.md" %}}) and is a cloud-based platform aimed at providing researchers and other users with simple and secure access to research data, tools, and infrastructure across Europe.
 
 Safespring's services support SciLifeLab's projects to deliver life science to researchers across Sweden. Researchers can use virtual machines and storage directly, as well as build virtual research environments at SciLifeLab. Safespring has also recently begun developing [GPU](#gpu)-backed virtual machines for Protein Folding and image data analysis.
 

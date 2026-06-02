@@ -55,7 +55,7 @@ Trenger applikasjonen din rask tilgang til lagrede data, eller ser du etter en l
 
 ## Nøkkelfunksjoner
 
-1. Ingen trafikkostnad belastes fra tjenesten, det som kalles egress-cost og ingress-cost. Du kan lese mer om denne funksjonen i vår artikkel: [Safespring tar ikke ut noen trafikkavgifter](/blogg/2023/2023-03-egress-cost/).
+1. Ingen trafikkostnad belastes fra tjenesten, det som kalles egress-cost og ingress-cost. Du kan lese mer om denne funksjonen i vår artikkel: [Safespring tar ikke ut noen trafikkavgifter]({{% relref "/blog/2023-03-egress-cost.md" %}}).
 1. Safespring Storage prioriterer datasikkerheten din. Med funksjoner som objektlåsning og ACL-er har du full kontroll over dataenes tilgjengelighet og beskyttelse.
 1. Betal kun for lagringen du bruker. Safespring Storage tilbyr [fleksible prismodeller](/pris/#safespring-storage-s3) som kan tilpasses dine spesifikke behov, noe som gir kostnadsbesparelser når du skalerer.
 1. Vårt erfarne kundestøtteteam er tilgjengelig for å hjelpe deg med alle spørsmål eller utfordringer, noe som sikrer en smidig Safespring-opplevelse.

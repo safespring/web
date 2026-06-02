@@ -38,4 +38,4 @@ Ni är experter inom något område där moln- och infrastrukturtjänster kan va
 
 Känner du igen dig i ovanstående eller har egna ideer på en partnerform, kontakta oss, vi är som sagt övertygade om att samarbeten är en vinnande strategi!
 
-{{< 2calltoaction "Kontakta oss" "/kontakt" "Våra partners" "/om-safespring/samarbeten-och-partners/" >}}
+{{< 2calltoaction "Kontakta oss" "/kontakt" "Våra partners" "/our-partners.md" >}}

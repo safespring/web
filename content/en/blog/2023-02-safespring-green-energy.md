@@ -14,7 +14,7 @@ section: "blog"
 language: "en"
 toc: ""
 sidebarlinkname: "Learn about our data centers"
-sidebarlinkurl: "/om-safespring/datacenter"
+sidebarlinkurl: "/data-centers.md"
 sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/contact.md"
 aliases:

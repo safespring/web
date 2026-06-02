@@ -36,12 +36,12 @@ In almost all SaaS, personal data is involved, which means that both you and you
 If your SaaS contains confidential information, whether it is information covered by the Public Access to Information and Secrecy Act, attorney-client privilege, or commercial confidentiality, you must be able to guarantee that confidentiality is maintained. American cloud service providers can never guarantee confidentiality, as is clear from their terms and conditions. Safespring has no such terms and will not disclose our customers’ information except when required by a Swedish court.
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-map-location-dot" text="Safespring’s Data Centers" link="/om-safespring/datacenter/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-map-location-dot" text="Safespring’s Data Centers" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Watch our webcasts" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" link="/om-safespring/" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" linkref="/about.md" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Read Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-gavel" text="Read about Schrems II" link="/whitepaper/schrems-ii/" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/containerplattform/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-gavel" text="Read about Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 ## Technology

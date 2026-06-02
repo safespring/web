@@ -24,7 +24,7 @@ aliases:
 A step-by-step guide to declaratively provision, configure, and manage Talos Linux Kubernetes clusters on Safespring’s OpenStack infrastructure using CAPO and ClusterResourceSets.
 {{< /ingress >}}
 
-In this article we want to take a few steps further our investigation into Talos Linux and how we can make use of it in [Safespring Compute Infrastructure (OpenStack)](/services/compute/), and at the same time have a more in depth exploration of the automate installation and make use of [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/).
+In this article we want to take a few steps further our investigation into Talos Linux and how we can make use of it in [Safespring Compute Infrastructure (OpenStack)]({{% relref "/services/compute.md" %}}), and at the same time have a more in depth exploration of the automate installation and make use of [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/).
 
 {{% note "Focus areas" %}}
 Things we wanted to illustrate in this technical exploration:
@@ -67,10 +67,10 @@ There are a few prerequisites to be able to replicate the steps and while we wil
 {{% note "Prerequisites" %}}
 - `kubectl`, `clusterctl`, `helm` 
 - OpenStack credentials (also include OpenStack ec2 credentials for state s3 store), additionally this tutorial makes use of [Safespring Elastic IP](https://docs.safespring.com/new/elastic-ip/) so make sure that is enabled.
-   - Talos image `1.10.3` present in OpenStack, see [previous article](/blogg/2025/2025-03-talos-linux-on-openstack/) for information how to create it
+   - Talos image `1.10.3` present in OpenStack, see [previous article]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}) for information how to create it
 {{% /note %}}
 
-1. **Set up your management cluster**: This can be any Kubernetes cluster even [`kind`](https://kind.sigs.k8s.io/), or see how we set up a cluster in a [previous article](/blogg/2025/2025-03-talos-linux-on-openstack/).
+1. **Set up your management cluster**: This can be any Kubernetes cluster even [`kind`](https://kind.sigs.k8s.io/), or see how we set up a cluster in a [previous article]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}).
 2. **Install Cluster API components** using the [Cluster API CLI `clusterctl`](https://cluster-api.sigs.k8s.io/clusterctl/overview.html).
 
 ```bash
@@ -956,4 +956,3 @@ default     csi-pvc-test   Bound    pvc-feac6f5f-9137-4ab0-9b77-3032483a7828   1
 Does this sound like a good fit for your needs?
 Don't hesitate to reach out if you have any questions at hello@safespring.com.
 {{% /note %}}
-

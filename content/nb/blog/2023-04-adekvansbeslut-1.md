@@ -78,7 +78,7 @@ Digital suverenitet er et viktig tema i EU, der man søker å sikre et felles di
 {{% /accordion %}}
 {{% accordion title="Innlåsningseffekter" %}}
 Innlåsningseffekter er en betegnelse som brukes for å beskrive situasjoner der en organisasjon blir avhengig av en spesifikk teknologileverandør eller plattform.
-Dette kan gjøre det vanskelig for organisasjonen å bytte leverandør. [Les mer om egress-cost](/blogg/2023/2023-03-egress-cost/) som er en vanlig innlåsningsmekanisme.
+Dette kan gjøre det vanskelig for organisasjonen å bytte leverandør. [Les mer om egress-cost]({{% relref "/blog/2023-03-egress-cost.md" %}}) som er en vanlig innlåsningsmekanisme.
 {{% /accordion %}}
 
 {{< accordion-script >}}
@@ -86,7 +86,7 @@ Dette kan gjøre det vanskelig for organisasjonen å bytte leverandør. [Les mer
 {{% note "Les mer" %}}
 
 1. [Hvitbok om amerikansk politi- og etterretningslovgivning og personvernforordningen.](/whitepaper/cloudact/)
-2. [Hvitbok om tekniske og rettslige virkninger av EU-domstolens såkalte “Schrems II”-sak, der Dataskjoldet ble kjent ugyldig, med anbefalinger til offentlige aktører.](/whitepaper/schrems-ii/)
+2. [Hvitbok om tekniske og rettslige virkninger av EU-domstolens såkalte “Schrems II”-sak, der Dataskjoldet ble kjent ugyldig, med anbefalinger til offentlige aktører.]({{% relref "/whitepaper/schrems-ii.md" %}})
 
 {{% /note %}}
 

@@ -36,4 +36,4 @@ You are experts in an area where cloud and infrastructure services can be an eff
 
 Do you recognize yourself in the above or have your own ideas for a partnership model? Contact us, as we are convinced that collaboration is a winning strategy!
 
-{{< 2calltoaction "Contact us" "/contact" "Our partners" "/about-safespring/collaborations-and-partners/" >}}
+{{< 2calltoaction "Contact us" "/contact" "Our partners" "/our-partners.md" >}}

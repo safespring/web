@@ -66,10 +66,10 @@ Der er nogle forudsætninger for at kunne replikere trinnene, og vi går ikke i 
 {{% note "Forudsætninger" %}}
 - `kubectl`, `clusterctl`, `helm` 
 - OpenStack-legitimationsoplysninger (inkluder også OpenStack ec2-legitimationsoplysninger til state s3-lager). Derudover anvender denne vejledning [Safespring Elastic IP](https://docs.safespring.com/new/elastic-ip/), så sørg for, at det er aktiveret.
-   - Talos-image `1.10.3` tilgængeligt i OpenStack; se [tidligere artikel](/blogg/2025/2025-03-talos-linux-on-openstack/) for information om, hvordan det oprettes
+   - Talos-image `1.10.3` tilgængeligt i OpenStack; se [tidligere artikel]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}) for information om, hvordan det oprettes
 {{% /note %}}
 
-1. **Opsæt din management-klynge**: Dette kan være enhver Kubernetes-klynge, endda [`kind`](https://kind.sigs.k8s.io/), eller se hvordan vi opsatte en klynge i en [tidligere artikel](/blogg/2025/2025-03-talos-linux-on-openstack/).
+1. **Opsæt din management-klynge**: Dette kan være enhver Kubernetes-klynge, endda [`kind`](https://kind.sigs.k8s.io/), eller se hvordan vi opsatte en klynge i en [tidligere artikel]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}).
 2. **Installer Cluster API-komponenter** ved hjælp af [Cluster API CLI `clusterctl`](https://cluster-api.sigs.k8s.io/clusterctl/overview.html).
 ```bash
 export KUBECONFIG=<kubeconfig_for_management_cluster>

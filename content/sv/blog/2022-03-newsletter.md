@@ -48,7 +48,7 @@ Kärnan i Safesprings plattform är våra virtuella maskiner som finns i flera o
 
 Alla våra flavors följer denna nya namnsättning, vilket gör det enklare för alla som använder vår plattform. I vår priskalkylator kan ni se de nya namnen redan idag.
 
-{{< localtextbutton "Prislista" "/price/" >}}
+{{< localtextbutton "Prislista" "/price.md" >}}
 
 ## Hur fungerar Nextcloud på Safesprings plattform?
 
