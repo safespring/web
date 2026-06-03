@@ -31,7 +31,7 @@ Safespring er en europæisk public cloud-platform, bygget til at imødekomme com
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datacentre" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se vores webcasts" link="/webinars/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Lær os at kende" link="/about-safespring/" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Lær os at kende" link="/about/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Læs løsningsbeskrivelser" link="/solution-brief/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Læs om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-code" text="Safespring og Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}

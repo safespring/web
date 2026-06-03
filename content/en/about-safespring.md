@@ -2,15 +2,17 @@
 title: "Safespring"
 metatitle: "About Safespring: our history"
 language: "en"
-translationKey: "about-safespring-new"
+translationKey: "about-safespring"
 layout: "about-history"
-slug: "about-safespring-new"
+slug: "about-safespring"
 date: 2026-06-01
 draft: false
 section: "Safespring"
 intro: "We run cloud services from data centers in Sweden and Norway, with open source technology and European jurisdiction."
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"
+aliases:
+  - /about-safespring-new/
 ---
 
 <section class="about-history-section about-history-intro" aria-labelledby="about-history-intro-title">
@@ -25,8 +27,8 @@ socialmedia: "safespring-start.jpg"
 
 <section class="about-history-section about-history-origin" aria-labelledby="about-history-origin-title">
   <figure class="about-history-origin__media">
-    <img src="/img/background/safespring_2019-10-24_fredric-wallsten_02-small.jpg" alt="Fredric Wallsten at Safespring." loading="lazy" decoding="async">
-    <figcaption class="about-history-origin__caption">Fredric Wallsten 2019, Founder</figcaption>
+    <img src="/img/background/safespring-fredric-wallsten-2023-portrait.webp" alt="Fredric Wallsten at Safespring." loading="lazy" decoding="async">
+    <figcaption class="about-history-origin__caption">Fredric Wallsten, Founder</figcaption>
   </figure>
   <div class="about-history-origin__copy">
     <h2 id="about-history-origin-title">The service history and the company record start at different points</h2>
@@ -160,28 +162,4 @@ Tier III facility with ISO 14001, ISO 27001 and Eco-Lighthouse certification.
     <img src="/img/logos/ocre-2024.svg" alt="OCRE 2024">
     <img class="about-history-logo-strip__wide" src="/img/logos/european-commission-horizontal-white.svg" alt="European Commission">
   </div>
-</section>
-
-<section class="about-history-section about-history-close" aria-labelledby="about-history-close-title">
-  <span class="about-history-close__label">Today</span>
-  <h2 id="about-history-close-title">The terms have changed, the requirements have not</h2>
-  <p>What began as academic infrastructure work is now often described through data location, open standards, jurisdiction and digital sovereignty. The sources below trace those claims back to Safespring service pages, procurement references and public articles.</p>
-</section>
-
-<section class="about-history-section about-history-sources" aria-labelledby="about-history-sources-title">
-  <h2 id="about-history-sources-title">Selected sources</h2>
-  <p>The sources below support the company details, data center statements, sustainability statements, research and education framework references, sovereignty articles, Kubernetes service information and CEO change mentioned on this page. The 2014-2022 operating milestones also use Safespring's internal timeline for this draft.</p>
-  <ol>
-    <li>Safespring internal timeline and co-location partner information for this draft</li>
-    <li><a href="https://www.safespring.com/om-safespring/">Safespring: About Safespring</a></li>
-    <li><a href="https://www.safespring.com/en/contact/">Safespring: Contact and company information</a></li>
-    <li><a href="https://www.safespring.com/en/data-centers/">Safespring: Data centers</a></li>
-    <li><a href="https://www.safespring.com/om-safespring/miljo-och-hallbarhet/">Safespring: Environment and sustainability</a></li>
-    <li><a href="https://www.safespring.com/en/ocre-2024/">Safespring: OCRE 2024 for research and education</a></li>
-    <li><a href="https://www.safespring.com/en/services/containerplatform/">Safespring: Kubernetes Engine</a></li>
-    <li><a href="https://www.safespring.com/blogg/2023/2023-11-safespring-eosc/">Safespring: EOSC procurement announcement</a></li>
-    <li><a href="https://www.safespring.com/blogg/2025/2025-03-eurostack/">Safespring: Why Safespring supports EuroStack</a></li>
-    <li><a href="https://www.safespring.com/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/">Safespring: EU Cloud Sovereignty Framework self-assessment</a></li>
-    <li><a href="https://www.safespring.com/blogg/2026/2026-02-johan-harrysson-vd/">Safespring: Johan Harrysson appointed CEO</a></li>
-  </ol>
 </section>

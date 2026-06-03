@@ -31,7 +31,7 @@ Safespring är en europeisk publik molnplattform byggd för att möta efterlevna
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datacenter" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se våra webbinarier" link="/webinars/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna oss" link="/about-safespring/" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Lär känna oss" link="/om-safespring/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Läs lösningsöversikter" link="/solution-brief/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Lär dig mer om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-code" text="Safespring och Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
