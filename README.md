@@ -62,6 +62,39 @@ npm run build:beta
 
 The beta build script runs `npm ci`, installs the Playwright Chromium runtime, regenerates compliance PDFs from the current Git checkout, and then runs `hugo --minify`. Pass Hugo destination arguments after `--`, for example `npm run build:beta -- -d /var/www/beta`.
 
+## Link crawler
+
+`scripts/crawl_hugo.py` crawls a rendered site and reports internal link problems that Hugo can miss. It checks for:
+
+- broken internal pages and assets (`broken_internal_links`)
+- rendered output problems (`output_violations`), including unrendered `relref`, local `.md` links, and empty anchor `href` values
+- `window.location.href` links in rendered HTML
+- links to old Safespring apex/www hosts (`flagged_external_links`)
+- crawled pages that are missing from the sitemap
+
+For a quick local check, start Hugo and crawl the local URL:
+
+```bash
+hugo server --disableFastRender
+python3 scripts/crawl_hugo.py --base-url http://localhost:1313/ --timeout 10 --json-output crawl-report.json
+```
+
+Use the base URL that Hugo prints for the language or host you want to check. With the current multihost language setup, Hugo can serve different languages on different localhost ports. A full crawl against only one of those ports can produce noisy `broken_internal_links`, because sitemap and cross-language URLs may be mapped to the wrong local port. In that mode, treat `output_violations` as useful and inspect broken-link results before acting on them.
+
+For an authoritative full broken-link crawl, use a production-like beta/local reverse proxy where all configured language hosts resolve the same way they do after deployment:
+
+```bash
+python3 scripts/crawl_hugo.py --base-url https://beta.safespring.eu/ --timeout 10 --json-output crawl-report.json
+```
+
+For a smaller smoke test during editing:
+
+```bash
+python3 scripts/crawl_hugo.py --base-url http://localhost:1313/ --max-pages 50
+```
+
+The script exits with status `1` when it finds `broken_internal_links` or `output_violations`. `flagged_external_links` and `pages_missing_from_sitemap` are printed for review but do not fail the run by themselves. `flagged_external_links` intentionally catches `safespring.com`, `www.safespring.com`, `safespring.se`, and `www.safespring.se`; service hosts such as `docs.safespring.com`, `status.safespring.com`, `next.safespring.com`, and beta hosts are not flagged.
+
 ## Repository structure
 
 The most important directories are:
