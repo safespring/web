@@ -22,8 +22,14 @@ Safespring, som en underleverantör till Poznań Supercomputing and Networking C
 
 I detta projekt är vår uppgift att tillhandahålla infrastruktur- och plattformstjänster till European Open Science Cloud (EOSC), en plattform som underlättar delning av vetenskapliga data och forskningsresurser över hela Europa. Safesprings engagemang sträcker sig över två huvudområden:
 
-1. {{< inline "Infrastrukturtjänster" >}} Vi bidrar med digital infrastruktur, som containertjänster, molnlagring och virtuella servrar, vilket underlättar säker och effektiv lagring och hantering av forskningsdata och drift av det öppna forskningsmolnet.
-2. {{< inline "Applikationstjänster" >}} Vi levererar infrastrukturen till de mjukvarulösningar som stödjer samarbete och dataanalys, vilket gör det enklare för forskare att analysera och visualisera sina resultat utan att tappa kontrollen över sitt data.
+{{< card-grid ariaLabel="Safesprings engagemang i EOSC" >}}
+{{< card-grid-item title="Infrastrukturtjänster" >}}
+Vi bidrar med digital infrastruktur, som containertjänster, molnlagring och virtuella servrar, vilket underlättar säker och effektiv lagring och hantering av forskningsdata och drift av det öppna forskningsmolnet.
+{{< /card-grid-item >}}
+{{< card-grid-item title="Applikationstjänster" >}}
+Vi levererar infrastrukturen till de mjukvarulösningar som stödjer samarbete och dataanalys, vilket gör det enklare för forskare att analysera och visualisera sina resultat utan att tappa kontrollen över sitt data.
+{{< /card-grid-item >}}
+{{< /card-grid >}}
 
 ### Syftet med ett gemensamt forskningsmoln
 

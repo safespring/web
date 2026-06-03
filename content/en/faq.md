@@ -90,7 +90,7 @@ Yes, we have regular tests for redundancy by our data center providers.
 <div>
 	
 {{% question question="Are you certified according to ISO 27001?" %}}
-Safespring works with information security controls according to ISO 27001. Our policy instructions and controls are collected in our platform. We are currently in the process of certifying according to ISO27001 and expect to be ready during the second half of 2025.
+Yes. Safespring is certified according to ISO 27001 and works systematically with information security through an information security management system. Read more on the <a href="/compliance/iso-27001/">ISO 27001 certification page</a>.
 {{% /question %}}
 
 {{% question question="Do you have a routine for handling changes in access rights?" %}}

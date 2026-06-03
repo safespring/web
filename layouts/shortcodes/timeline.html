@@ -1,0 +1,46 @@
+{{- .Inner -}}
+{{- $items := .Scratch.Get "items" | default (slice) -}}
+{{- if gt (len $items) 0 -}}
+  {{- $ariaLabel := .Get "ariaLabel" | default "Timeline" -}}
+  {{- $class := .Get "class" -}}
+<ol class="content-timeline{{ with $class }} {{ . }}{{ end }}" aria-label="{{ $ariaLabel }}">
+  {{- range $index, $item := $items }}
+    {{- $itemClass := index $item "class" -}}
+    {{- $label := index $item "label" | default (printf "%02d" (add $index 1)) -}}
+  <li class="content-timeline__item{{ with $itemClass }} {{ . }}{{ end }}">
+    <span class="content-timeline__label">{{ $label }}</span>
+    <div class="content-timeline__content">
+      {{- with index $item "date" }}
+        {{- $dateLabel := . -}}
+        {{- if findRE "^\\d{4}-\\d{2}-\\d{2}$" . -}}
+          {{- $date := time.AsTime . -}}
+          {{- $months := dict
+            "en" (slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December")
+            "sv" (slice "januari" "februari" "mars" "april" "maj" "juni" "juli" "augusti" "september" "oktober" "november" "december")
+            "da" (slice "januar" "februar" "marts" "april" "maj" "juni" "juli" "august" "september" "oktober" "november" "december")
+            "nb" (slice "januar" "februar" "mars" "april" "mai" "juni" "juli" "august" "september" "oktober" "november" "desember")
+          -}}
+          {{- $lang := $.Page.Language.Lang | default "en" -}}
+          {{- $langMonths := index $months $lang -}}
+          {{- if not $langMonths -}}
+            {{- $langMonths = index $months "en" -}}
+          {{- end -}}
+          {{- $day := dateFormat "2" $date -}}
+          {{- $month := index $langMonths (sub (int (dateFormat "1" $date)) 1) -}}
+          {{- if or (eq $lang "da") (eq $lang "nb") -}}
+            {{- $dateLabel = printf "%s. %s" $day $month -}}
+          {{- else -}}
+            {{- $dateLabel = printf "%s %s" $day $month -}}
+          {{- end -}}
+        {{- end -}}
+        <span class="inline-rubrik content-timeline__date">{{ $dateLabel }}</span>
+      {{- end }}
+      {{- with index $item "title" }}
+        <h3 class="content-timeline__title">{{ . }}</h3>
+      {{- end }}
+      {{ index $item "content" }}
+    </div>
+  </li>
+  {{- end }}
+</ol>
+{{- end -}}

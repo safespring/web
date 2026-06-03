@@ -113,6 +113,9 @@
             >{{ T "knowledgehub.tech_update" }}</a
           >
         </li>
+        <li>
+          <a href="{{ relref . "faq" }}">{{ T "knowledgehub.faq" }}</a>
+        </li>
       </ul>
     </div>
     <div class="safespring-footer-menu">
@@ -137,17 +140,14 @@
           >
         </li>
         <li>
+          <a href="{{ relref . "compliance" }}"
+            >{{ T "menu.safespring_terms_and_policies" }}</a
+          >
+        </li>
+        <li>
           <a href="{{ relref . "our-partners" }}"
             >{{ T "menu.safespring_partners" }}</a
           >
-        </li>
-        <li>
-          <a href="{{ relref . "become-partner" }}"
-            >{{ T "menu.safespring_become_partner" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "faq" }}">{{ T "menu.safespring_faq" }}</a>
         </li>
       </ul>
     </div>
@@ -206,7 +206,7 @@
     <div class="safespring-footer-information-menu">
       <ul>
         <li>
-          <a href="{{ relref . "documents/personal-data-processing" }}"
+          <a href="{{ relref . "compliance/privacy_policy" }}"
             >{{ T "menu.personal_data_policy" }}</a
           >
         </li>
@@ -224,18 +224,10 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "documents/acceptable-use-policy" }}"
-            >{{ T "menu.acceptable_use_policy" }}</a
-          >
-        </li>
-        <li>
           <a
             href="{{ relref . "contact" }}#{{ T "menu.company_information_hash" }}"
             >{{ T "menu.company_information" }}</a
           >
-        </li>
-        <li>
-          <a href="{{ relref . "compliance/fr2000" }}">{{ T "menu.fr2000" }}</a>
         </li>
       </ul>
     </div>

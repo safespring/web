@@ -41,22 +41,21 @@ Denna session belyser de juridiska och tekniska aspekterna av molntjänster i lj
 
 I denna webcast diskuterar Gabriel Paues från Safespring och Lars Larsson från Elastisys några av de mest spridda myterna kring molntjänster och GDPR. Samtalet fokuserar på att kritiskt granska och adressera dessa myter med praktiska och teoretiska insikter.
 
-### Myt 1: Amerikanska molntjänster och GDPR
-
-- Diskussionens kärna: Det är en vanlig uppfattning att amerikanska molntjänster snart åter kommer att vara helt kompatibla med GDPR, driven av önsketänkande från de som har investerat tid och resurser i dessa system.
-- Lagliga och praktiska perspektiv: Gabriel och Lars utforskar hur historiska och aktuella lagar, som de post-9/11 säkerhetslagarna i USA, skapar komplexa utmaningar för kompatibilitet med EU:s stränga dataskyddsregler.
-
-### Myt 2: Kryptering som lösning
-
-- Teknik kontra lagar: En annan frekvent myt är att kryptering ensamt kan lösa problemen med dataskydd i molnet. Diskussionen riktar in sig på krypteringens tekniska och juridiska begränsningar, speciellt när nycklarna är tillgängliga för molnleverantören.
-- Expertråd: Lars betonar vikten av att förstå vad kryptering faktiskt skyddar mot, och att tekniska lösningar inte alltid kan lösa juridiska problem.
-
-### Myt 3: Brister i europeiska molnalternativ
-
-- Perception och verklighet: Många tror att det inte finns några tillräckliga europeiska alternativ till de amerikanska molntjänsterna, en myt som grundar sig i de amerikanska leverantörernas breda tjänsteutbud och skalekonomi.
-- Möjligheter med europeiska leverantörer: Genomgång av hur europeiska molntjänster, som de som erbjuds av Safespring och Elastisys baserade på Kubernetes, kan vara både konkurrenskraftiga och fördelaktiga för företag som söker efter GDPR-kompatibla lösningar.
-
-### Myt 4: Kostnadsjämförelser
-
-- Ekonomiska överväganden: Slutligen tas den ekonomiska aspekten upp, där en jämförelse görs mellan kostnaderna för amerikanska och europeiska molntjänster. Diskussionen täcker dolda kostnader, skalbarhetsfördelar och den långsiktiga ekonomiska hållbarheten.
-- Innovation och anpassning: Gabriel avslutar med att betona vikten av att anpassa sig till nya teknologier och att inte underskatta värdet av öppen källkod och de tjänster europeiska molnleverantörer kan erbjuda.
+{{% timeline ariaLabel="Fyra myter om molntjänster och GDPR" class="content-timeline--topics" %}}
+{{% timeline-item label="Myt 1" title="Amerikanska molntjänster och GDPR" %}}
+<p>Diskussionens kärna: Det är en vanlig uppfattning att amerikanska molntjänster snart åter kommer att vara helt kompatibla med GDPR, driven av önsketänkande från de som har investerat tid och resurser i dessa system.</p>
+<p>Lagliga och praktiska perspektiv: Gabriel och Lars utforskar hur historiska och aktuella lagar, som de post-9/11 säkerhetslagarna i USA, skapar komplexa utmaningar för kompatibilitet med EU:s stränga dataskyddsregler.</p>
+{{% /timeline-item %}}
+{{% timeline-item label="Myt 2" title="Kryptering som lösning" %}}
+<p>Teknik kontra lagar: En annan frekvent myt är att kryptering ensamt kan lösa problemen med dataskydd i molnet. Diskussionen riktar in sig på krypteringens tekniska och juridiska begränsningar, speciellt när nycklarna är tillgängliga för molnleverantören.</p>
+<p>Expertråd: Lars betonar vikten av att förstå vad kryptering faktiskt skyddar mot, och att tekniska lösningar inte alltid kan lösa juridiska problem.</p>
+{{% /timeline-item %}}
+{{% timeline-item label="Myt 3" title="Brister i europeiska molnalternativ" %}}
+<p>Perception och verklighet: Många tror att det inte finns några tillräckliga europeiska alternativ till de amerikanska molntjänsterna, en myt som grundar sig i de amerikanska leverantörernas breda tjänsteutbud och skalekonomi.</p>
+<p>Möjligheter med europeiska leverantörer: Genomgång av hur europeiska molntjänster, som de som erbjuds av Safespring och Elastisys baserade på Kubernetes, kan vara både konkurrenskraftiga och fördelaktiga för företag som söker efter GDPR-kompatibla lösningar.</p>
+{{% /timeline-item %}}
+{{% timeline-item label="Myt 4" title="Kostnadsjämförelser" %}}
+<p>Ekonomiska överväganden: Slutligen tas den ekonomiska aspekten upp, där en jämförelse görs mellan kostnaderna för amerikanska och europeiska molntjänster. Diskussionen täcker dolda kostnader, skalbarhetsfördelar och den långsiktiga ekonomiska hållbarheten.</p>
+<p>Innovation och anpassning: Gabriel avslutar med att betona vikten av att anpassa sig till nya teknologier och att inte underskatta värdet av öppen källkod och de tjänster europeiska molnleverantörer kan erbjuda.</p>
+{{% /timeline-item %}}
+{{% /timeline %}}

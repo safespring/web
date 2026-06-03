@@ -1,0 +1,14 @@
+{{- if not .Parent -}}
+  {{- errorf "timeline-item must be used inside timeline: %s" .Position -}}
+{{- end -}}
+
+{{- $label := or (.Get "label") (.Get "year") (.Get "code") (.Get 0) -}}
+{{- $content := trim .Inner " \n\r\t" | safeHTML -}}
+{{- $item := dict
+  "label" $label
+  "date" (default "" (.Get "date"))
+  "title" (default "" (.Get "title"))
+  "content" $content
+  "class" (default "" (.Get "class"))
+-}}
+{{- .Parent.Scratch.Add "items" (slice $item) -}}

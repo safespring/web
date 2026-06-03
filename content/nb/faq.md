@@ -89,7 +89,7 @@ Ja, vi har jevnlige tester av redundans hos våre datasenterleverandører.
 <div>
 	
 {{% question question="Er dere sertifisert i henhold til ISO 27001?" %}}
-Safespring arbeider med kontroller for informasjonssikkerhet i henhold til ISO 27001. Våre retningslinjer, instrukser og kontroller er samlet i plattformen vår. Vi er for tiden i ferd med å sertifisere oss i henhold til ISO 27001 og forventer å være klare i løpet av andre halvår 2025.
+Ja. Safespring er sertifisert i henhold til ISO 27001 og arbeider systematisk med informasjonssikkerhet gjennom et ledelsessystem for informasjonssikkerhet. Les mer på siden om <a href="/compliance/iso-27001/">ISO 27001-sertifiseringen</a>.
 {{% /question %}}
 
 {{% question question="Har dere rutiner for å håndtere endringer i tilgangsrettigheter?" %}}

@@ -57,6 +57,7 @@ safespring_partners = "Partners"
 safespring_become_partner = "Become a partner"
 safespring_sustainability = "Sustainability"
 safespring_faq = "Frequently asked questions"
+safespring_terms_and_policies = "Terms and Policies"
 customer_references = "Customer References"
 choose_language = "Choose language"
 personal_data_policy = "Personal Data Processing"
@@ -68,6 +69,13 @@ company_information = "Company information"
 company_information_hash = "company-information"
 fr2000 = "FR2000"
 terms_of_service = "Terms of service"
+
+[document]
+version = "Version"
+updated = "Updated"
+document_id = "Document ID"
+pdf = "PDF"
+download_pdf = "Download PDF"
 
 [landing]
 scaleout_description = "Scaleout is building an AI platform on Safespring's infrastructure. The interest and demand for machine learning and AI have exploded recently. At the same time, a discussion is ongoing about the transparency of the data the models are trained on and what one discloses when using the services."
@@ -101,6 +109,7 @@ knowledgehub = "Knowledge Hub"
 whitepaper = "White Papers"
 tech_update = "Tech updates"
 webcast = "Videos"
+faq = "Frequently asked questions"
 
 [sidebar]
 main_text1 = "Safespring offers flexible and high-performance cloud infrastructure services."

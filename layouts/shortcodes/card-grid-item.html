@@ -1,0 +1,18 @@
+{{- if not .Parent -}}
+  {{- errorf "card-grid-item must be used inside card-grid: %s" .Position -}}
+{{- end -}}
+
+{{- $label := or (.Get "label") (.Get "code") -}}
+{{- $title := .Get "title" -}}
+{{- if not $title -}}
+  {{- errorf "card-grid-item requires a title: %s" .Position -}}
+{{- end -}}
+
+{{- $content := trim .Inner " \n\r\t" | $.Page.RenderString (dict "display" "block") -}}
+{{- $item := dict
+  "label" $label
+  "title" $title
+  "content" $content
+  "class" (default "" (.Get "class"))
+-}}
+{{- .Parent.Scratch.Add "items" (slice $item) -}}

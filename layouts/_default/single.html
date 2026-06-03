@@ -42,9 +42,13 @@
 {{ $pageParams := .Params }}
 <div class="authors">
   {{ range where .Site.Data.authors "name" "in" .Params.author }}
+    {{ $authorImageVariant := default "happy" $.Params.author_image }}
+    {{ if eq $authorImageVariant "firma" }}{{ $authorImageVariant = "firm" }}{{ end }}
+    {{ if eq $authorImageVariant "glad" }}{{ $authorImageVariant = "happy" }}{{ end }}
+    {{ $authorImage := index . (printf "image_%s" $authorImageVariant) | default .image_happy | default "safespring.png" }}
     <div itemscope itemtype="http://schema.org/Person" class="author-container">
-      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ index . (printf "image_%s" (default "happy" $.Params.author_image)) }})">
-        <img itemprop="image" src="/img/people/{{ index . (printf "image_%s" (default "happy" $.Params.author_image)) }}" alt="{{ .name }}" style="display:none;">
+      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ $authorImage }})">
+        <img itemprop="image" src="/img/people/{{ $authorImage }}" alt="{{ .name }}" style="display:none;">
       </div>
       <div class="author-info">
         <p class="author-name" itemprop="name">{{ .name }}</p>
@@ -61,27 +65,51 @@
       {{ end }}
     {{ end }}
     {{ $documentVersion := .Params.pdfversion | default "1.0" }}
+    {{ $documentUpdated := .Params.pdfdate }}
+    {{ if not $documentUpdated }}
+      {{ with .Lastmod }}
+        {{ $documentUpdated = .Format "2006-01-02" }}
+      {{ end }}
+    {{ end }}
+    {{ if not $documentUpdated }}
+      {{ $documentUpdated = .Date.Format "2006-01-02" }}
+    {{ end }}
+    {{ $documentVersionLabel := T "document.version" }}
+    {{ $documentUpdatedLabel := T "document.updated" }}
+    {{ $documentIDLabel := T "document.document_id" }}
     {{ $documentID := "" }}
     {{ with $documentMeta }}
       {{ with .version }}{{ $documentVersion = . }}{{ end }}
       {{ with .id }}{{ $documentID = . }}{{ end }}
     {{ end }}
+    {{ $documentPDFLabel := T "document.pdf" }}
+    {{ $documentDownloadLabel := T "document.download_pdf" }}
     {{ with .Params.downloadpdf }}
       <div class="document-download">
-        <a class="button document-download__button" href="{{ . }}" download>
-          <i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;{{ if eq $.Site.Language.Lang "sv" }}Ladda ner PDF{{ else if eq $.Site.Language.Lang "nb" }}Last ned PDF{{ else if eq $.Site.Language.Lang "da" }}Hent PDF{{ else }}Download PDF{{ end }}
-        </a>
         <dl class="document-download__meta">
           <div>
-            <dt>Version</dt>
+            <dt>{{ $documentVersionLabel }}</dt>
             <dd>{{ $documentVersion }}</dd>
           </div>
-          {{ with $documentID }}
           <div>
-            <dt>ID</dt>
-            <dd>{{ . }}</dd>
+            <dt>{{ $documentUpdatedLabel }}</dt>
+            <dd><time datetime="{{ $documentUpdated }}">{{ $documentUpdated }}</time></dd>
           </div>
+          {{ with $documentID }}
+            <div>
+              <dt>{{ $documentIDLabel }}</dt>
+              <dd>{{ . }}</dd>
+            </div>
           {{ end }}
+          <div>
+            <dt>{{ $documentPDFLabel }}</dt>
+            <dd>
+              <a class="document-download__link" href="{{ . }}" download>
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                {{ $documentDownloadLabel }}
+              </a>
+            </dd>
+          </div>
         </dl>
       </div>
     {{ end }}

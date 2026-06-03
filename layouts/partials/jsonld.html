@@ -167,9 +167,13 @@
 
     {{ $matchedAuthor := false }}
     {{ range where .Site.Data.authors "name" .Params.author }}
+      {{ $authorImageVariant := default "happy" $.Params.author_image }}
+      {{ if eq $authorImageVariant "firma" }}{{ $authorImageVariant = "firm" }}{{ end }}
+      {{ if eq $authorImageVariant "glad" }}{{ $authorImageVariant = "happy" }}{{ end }}
+      {{ $authorImage := index . (printf "image_%s" $authorImageVariant) | default .image_happy | default "safespring.png" }}
       {{ $matchedAuthor = true }}
       {{ $authorDict = merge $authorDict (dict
-        "image" (printf "img/people/%s" (index . (printf "image_%s" (default "happy" $.Params.author_image))) | absURL)
+        "image" (printf "img/people/%s" $authorImage | absURL)
         "jobTitle" .title
         )
       }}

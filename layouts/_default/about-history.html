@@ -1,0 +1,27 @@
+{{ partial "head.html" . }}
+<body class="about-history-page{{ if .Params.placeholder }} about-history-page--placeholder{{ end }}">
+  {{ partial "header.html" . }}
+
+  <div class="heading-default-single{{ if .Params.logobannertransparent }} heading-default-single--with-logo-banner{{ end }}">
+    {{ .Render "li3" }}
+    {{ if .Params.logobannertransparent }}{{ partial "logobanner-transparent.html" . }}{{ end }}
+  </div>
+
+  <main id="main-content" class="about-history-main">
+    {{ if .Params.placeholder }}
+      <section class="about-history-section about-history-placeholder" aria-labelledby="about-history-placeholder-title">
+        <h2 id="about-history-placeholder-title">{{ .Params.placeholderTitle | default .Title }}</h2>
+        {{ with .Params.placeholderText }}
+          <p>{{ . }}</p>
+        {{ end }}
+        {{ with .Params.placeholderLink }}
+          <a class="about-history-button about-history-button--primary" href="{{ . }}">{{ $.Params.placeholderLinkText | default "Read the English version" }}</a>
+        {{ end }}
+      </section>
+    {{ else }}
+      {{ .Content }}
+    {{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+</body>

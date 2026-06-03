@@ -24,6 +24,14 @@ pdfclassification: "Public"
 downloadpdf: "/compliance/downloads/acceptable_use_policy.pdf"
 aliases:
   - /document/acceptable_use_policy/
+  - /documents/safespring-acceptable-use-policy/
+  - /dokument/safesprings-acceptable-use-policy/
+  - /dokumenter/safesprings-akseptable-brukerpolitikk/
+  - /dokumenter/safesprings-politik-for-acceptabel-brug/
+  - /en/documents/acceptable-use-policy/
+  - /dokument/acceptable-use-policy/
+  - /dokument/acceptable-use-policy-en/
+  - /dokument/acceptable-use-policy-no/
 ---
 
 *Users are responsible for any information or content uploaded or otherwise inserted to the Services.*

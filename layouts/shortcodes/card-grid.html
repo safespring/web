@@ -1,0 +1,27 @@
+{{- .Inner -}}
+{{- $items := .Scratch.Get "items" | default (slice) -}}
+{{- $count := len $items -}}
+{{- if gt $count 0 -}}
+  {{- $columns := $count -}}
+  {{- with .Get "columns" -}}
+    {{- $columns = int . -}}
+  {{- end -}}
+  {{- if lt $columns 1 -}}
+    {{- $columns = 1 -}}
+  {{- else if gt $columns 4 -}}
+    {{- $columns = 4 -}}
+  {{- end -}}
+  {{- $ariaLabel := .Get "ariaLabel" | default "Cards" -}}
+  {{- $class := .Get "class" -}}
+<div class="card-grid card-grid--cols-{{ $columns }}{{ with $class }} {{ . }}{{ end }}" aria-label="{{ $ariaLabel }}">
+  {{- range $index, $item := $items }}
+  {{- $itemClass := index $item "class" -}}
+  {{- $label := index $item "label" | default (printf "%02d" (add $index 1)) -}}
+  <div class="card-grid__item{{ with $itemClass }} {{ . }}{{ end }}">
+    <span class="card-grid__label">{{ $label }}</span>
+    <h3 class="card-grid__title">{{ index $item "title" }}</h3>
+    <div class="card-grid__content">{{ index $item "content" }}</div>
+  </div>
+  {{- end }}
+</div>
+{{- end -}}

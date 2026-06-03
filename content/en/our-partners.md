@@ -25,6 +25,8 @@ Cloud services are growing by over 20 percent per year and currently account for
 
 With Safespring as a subcontractor, you can bid on more procurements with more specific requirements. We are happy to help you in cases where these issues are called for and are important. We have long experience and a strong network in procurement. We also provide you with a dedicated contact person and support channel.
 
+Want to explore partnership models? [Read more about becoming a Safespring partner]({{< relref "become-partner" >}}).
+
 {{< 2calltoaction "Call us" "tel:+46855107370" "Find contact person" "/contact" >}}
 
 ### No Questionable Subcontractors

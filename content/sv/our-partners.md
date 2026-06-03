@@ -26,6 +26,8 @@ Molntjänster växer över 20 procent per år och står i snitt för elva procen
 
 Med Safespring som underleverantör kan ni bjuda på flera upphandlingar med mera specifika krav. Vi vill gärna hjälpa er i de fallen där dessa frågor avropas och är viktiga. Vi har lång erfarenhet och ett starkt nätverk inom upphandling. Vi ger er även en dedikerat kontaktperson och supportväg.
 
+Vill du se vilka partnerformer vi arbetar med? [Läs mer om att bli partner med Safespring]({{< relref "become-partner" >}}).
+
 {{< 2calltoaction "Ring oss" "tel:+46855107370" "Hitta kontaktperson" "/kontakt" >}}
 
 ### Inga tveksamma underleverantörer
