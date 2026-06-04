@@ -206,17 +206,12 @@ Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattf
 | SW-win.ser.2022   | Microsoft Windows Server        | vCPU           |       175 kr |
 | SW-ms.sql.ser     | Microsoft SQL Server standard   | vCPU           |     1 229 kr |
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |     4 766 kr |
-| SW-nextcloud      | Nextcloud Hub                   | N/A            | Begär offert |
-| SW-suse.linux     | SUSE Linux Enterprise Server    | N/A            | Begär offert |
 
 ### Plattformstjänster
 Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelefterlevnad, med Compliant Kubernetes. Dessutom erbjuds Managed Elasticsearch, NATS, MariaDB och Redis. Begär en offert idag för att få tillgång till dessa tjänster!
 
 | Produkt ID            | Beskrivning                                       |    Per månad |
 |-----------------------|---------------------------------------------------|-------------:|
-| PAAS-man.kubernetes24 | Managed Compliant Kubernetes 24/7                 | Begär offert |
-| PAAS-man.kubernetes8  | Managed Compliant Kubernetes 8/5                  | Begär offert |
-| PAAS-man.opensearch   | Managed Opensearch (ingår i Compliant Kubernetes) | Begär offert |
 | PAAS-openshift        | Ingen support                                     | Begär offert |
 | PAAS-man.nats         | Managed NATS                                      | Begär offert |
 | PAAS-man.mariadb      | Managed MariaDB                                   | Begär offert |
