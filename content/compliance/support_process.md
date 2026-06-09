@@ -103,7 +103,7 @@ Safespring effectively manages all levels of incidents with continuous support a
 Incidents that cause loss of service or continuous instability of mission-critical functionality and have no workaround. The Incident causes or may cause a material adverse effect on Customer's business or material parts of the operational services are unavailable.
 
 ### Safespring Incident Handling
-The Safespring is working continuous 24/7 with the Incident until it is resolved or a satisfactory "work-around" is established. There is regular feedback to the Customer on the progression of the error handling. Safespring management will create a dialogue with the manufacturer's support department. If necessary, the Safespring will require on-site assistance from the manufacturer.
+Safespring is working continuous 24/7 with the Incident until it is resolved or a satisfactory "work-around" is established. There is regular feedback to the Customer on the progression of the error handling. Safespring management will create a dialogue with the manufacturer's support department. If necessary, the Safespring will require on-site assistance from the manufacturer.
 
 ### Response Time
 Phone call alert (24/7): Immediate  
