@@ -2,10 +2,12 @@
 
 Use this file as the canonical Safespring brand instruction for AI-generated images, slide decks, documents, diagrams, and similar communication material.
 
-Machine-readable manifest: https://www.safespring.com/brand/ai/brand-kit.json
-Design tokens: https://www.safespring.com/brand/ai/brand-tokens.css
-Correction register: https://www.safespring.com/brand/ai/brand-correction-register.md
-Human portal: https://www.safespring.com/brand/ai/
+Resolve root-relative links in this file against the host that served it, for example `www.safespring.com` or `www2.safespring.com`.
+
+Machine-readable manifest: /brand/ai/brand-kit.json
+Design tokens: /brand/ai/brand-tokens.css
+Correction register: /brand/ai/brand-correction-register.md
+Human portal: /brand/ai/
 
 ## Brand Character
 
@@ -173,7 +175,7 @@ Use an editorial, high-clarity slide style:
 - Prefer the existing Safespring slide grammar: top-left blue flag/ribbon brand mark where useful, white or cloud-blue slide surfaces, pale panels, soft hierarchy, icon-and-label systems, clear architecture diagrams, and generous whitespace.
 - Do not pack slides with generic SaaS cards or repeated feature boxes.
 
-Template: https://www.safespring.com/brand/ai/templates/safespring-presentation-template.pptx
+Template: /brand/ai/templates/safespring-presentation-template.pptx
 
 ## Documents
 
@@ -191,7 +193,7 @@ Use a formal, readable document style:
 - In fixed-format one-pagers, prefer readable text and balanced vertical distribution over tiny compressed content. Increase compact card-header height, body microcopy, card padding, and logo-grid vertical placement before accepting a large unused middle/lower page area.
 - Use local Safespring fonts and Font Awesome or approved Safespring symbols; do not use emoji icons in formal documents.
 
-Template: https://www.safespring.com/brand/ai/templates/safespring-document-template.docx
+Template: /brand/ai/templates/safespring-document-template.docx
 
 ## Do Not
 
@@ -215,4 +217,4 @@ Template: https://www.safespring.com/brand/ai/templates/safespring-document-temp
 
 ## Prompt Starter
 
-Create a Safespring-branded [image/deck/document] about [topic]. Follow the brand kit at https://www.safespring.com/brand/ai/ai-instructions.md and use the manifest at https://www.safespring.com/brand/ai/brand-kit.json. Use cloud blue `#E7EFF3` as the background for text boxes and graphics. Do not use main colors as backgrounds; use main blue `#195F8C`, green `#32CD32`, clear blue `#3C9BCD`, and orange `#FA690F` for text, icons, lines, and emphasis. Keep the result restrained, technically credible, and clear.
+Create a Safespring-branded [image/deck/document] about [topic]. Follow the brand kit at /brand/ai/ai-instructions.md and use the manifest at /brand/ai/brand-kit.json. Use cloud blue `#E7EFF3` as the background for text boxes and graphics. Do not use main colors as backgrounds; use main blue `#195F8C`, green `#32CD32`, clear blue `#3C9BCD`, and orange `#FA690F` for text, icons, lines, and emphasis. Keep the result restrained, technically credible, and clear.

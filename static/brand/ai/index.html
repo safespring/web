@@ -384,7 +384,7 @@
   </head>
   <body>
     <header class="shell topbar">
-      <a href="https://www.safespring.com/" aria-label="Safespring">
+      <a href="/" aria-label="Safespring">
         <img class="brand-logo" src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring" />
       </a>
       <nav class="nav" aria-label="Brand kit sections">
@@ -411,7 +411,7 @@
         <aside class="command-box" aria-label="Primary AI instruction URL">
           <p>Give this URL to an AI tool as the source of truth for Safespring visual style.</p>
           <div class="url-row">
-            <code id="instructionUrl">https://www.safespring.com/brand/ai/ai-instructions.md</code>
+            <code id="instructionUrl">/brand/ai/ai-instructions.md</code>
             <button type="button" data-copy="instructionUrl">Copy</button>
           </div>
         </aside>
@@ -666,6 +666,11 @@
     </footer>
 
     <script>
+      const instructionUrl = document.getElementById("instructionUrl");
+      if (instructionUrl) {
+        instructionUrl.textContent = `${window.location.origin}/brand/ai/ai-instructions.md`;
+      }
+
       async function copyText(text) {
         if (navigator.clipboard?.writeText && window.isSecureContext) {
           try {

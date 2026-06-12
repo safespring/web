@@ -2,10 +2,11 @@
   "name": "Safespring AI Brand Kit",
   "version": "2026-05-28",
   "language": "en",
-  "homepage": "https://www.safespring.com/brand/ai/",
-  "instructions": "https://www.safespring.com/brand/ai/ai-instructions.md",
-  "tokensCss": "https://www.safespring.com/brand/ai/brand-tokens.css",
-  "correctionRegister": "https://www.safespring.com/brand/ai/brand-correction-register.md",
+  "urlResolution": "Resolve root-relative URLs against the host that served this manifest.",
+  "homepage": "/brand/ai/",
+  "instructions": "/brand/ai/ai-instructions.md",
+  "tokensCss": "/brand/ai/brand-tokens.css",
+  "correctionRegister": "/brand/ai/brand-correction-register.md",
   "colors": {
     "blue": {
       "main": { "name": "Main blue", "hex": "#195F8C", "role": "Primary brand color for headings, text, icons, lines, logos, and the official flag mark; not for ordinary backgrounds" },
@@ -47,7 +48,7 @@
   },
   "designSystem": {
     "sourceCss": [
-      "https://www.safespring.com/css/main-v2.css"
+      "/css/main-v2.css"
     ],
     "surfaces": {
       "page": { "hex": "#FAFEFE", "usage": "Default page, slide, and document surface" },
@@ -88,7 +89,7 @@
       "usage": "Subtle movement only; no decorative or attention-seeking motion"
     },
     "artifactReview": {
-      "register": "https://www.safespring.com/brand/ai/brand-correction-register.md",
+      "register": "/brand/ai/brand-correction-register.md",
       "principle": "When adapting an existing artifact, preserve useful structure but replace generic visual systems with Safespring tokens, local fonts, approved icons, official assets, and verified claims.",
       "requiredChecks": [
         "Use local Montserrat for body text, compact UI labels, and card-header labels. Use local Hind Light or Hind 300 for larger expressive headings.",
@@ -154,31 +155,31 @@
       "family": "Hind",
       "weights": [300, 400, 500, 600, 700],
       "files": [
-        "https://www.safespring.com/fonts/hind-300.woff2",
-        "https://www.safespring.com/fonts/hind-400.woff2",
-        "https://www.safespring.com/fonts/hind-500.woff2",
-        "https://www.safespring.com/fonts/hind-600.woff2",
-        "https://www.safespring.com/fonts/hind-700.woff2"
+        "/fonts/hind-300.woff2",
+        "/fonts/hind-400.woff2",
+        "/fonts/hind-500.woff2",
+        "/fonts/hind-600.woff2",
+        "/fonts/hind-700.woff2"
       ]
     },
     "body": {
       "family": "Montserrat",
       "weights": [300, 400, 500, 600, 700],
       "files": [
-        "https://www.safespring.com/fonts/montserrat-300.woff2",
-        "https://www.safespring.com/fonts/montserrat-400.woff2",
-        "https://www.safespring.com/fonts/montserrat-500.woff2",
-        "https://www.safespring.com/fonts/montserrat-600.woff2",
-        "https://www.safespring.com/fonts/montserrat-700.woff2"
+        "/fonts/montserrat-300.woff2",
+        "/fonts/montserrat-400.woff2",
+        "/fonts/montserrat-500.woff2",
+        "/fonts/montserrat-600.woff2",
+        "/fonts/montserrat-700.woff2"
       ]
     },
     "mono": {
       "family": "Safespring Mono",
       "weights": [400, 500, 600],
       "files": [
-        "https://www.safespring.com/fonts/Safespring-Mono-Regular.woff2",
-        "https://www.safespring.com/fonts/Safespring-Mono-Medium.woff2",
-        "https://www.safespring.com/fonts/Safespring-Mono-SemiBold.woff2"
+        "/fonts/Safespring-Mono-Regular.woff2",
+        "/fonts/Safespring-Mono-Medium.woff2",
+        "/fonts/Safespring-Mono-SemiBold.woff2"
       ]
     }
   },
@@ -186,84 +187,84 @@
     {
       "id": "logotype-blue-svg",
       "name": "Safespring logotype blue SVG",
-      "url": "https://www.safespring.com/img/logos/safespring_logotype_blue_svg.svg",
+      "url": "/img/logos/safespring_logotype_blue_svg.svg",
       "format": "svg",
       "usage": "Default logo on light backgrounds"
     },
     {
       "id": "logotype-blue-png",
       "name": "Safespring logotype blue PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_logotype_blue_png.png",
+      "url": "/img/logos/safespring/png/safespring_logotype_blue_png.png",
       "format": "png",
       "usage": "Default logo where SVG is not supported"
     },
     {
       "id": "logotype-white-png",
       "name": "Safespring logotype white PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_logotype_white_png.png",
+      "url": "/img/logos/safespring/png/safespring_logotype_white_png.png",
       "format": "png",
       "usage": "Logo for approved dark contexts; do not create colored backgrounds just to use this asset"
     },
     {
       "id": "logotype-black-png",
       "name": "Safespring logotype black PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_logotype_black_png.png",
+      "url": "/img/logos/safespring/png/safespring_logotype_black_png.png",
       "format": "png",
       "usage": "Monochrome or low-color output"
     },
     {
       "id": "byline-blue-png",
       "name": "Safespring byline blue PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_byline_blue_png.png",
+      "url": "/img/logos/safespring/png/safespring_byline_blue_png.png",
       "format": "png",
       "usage": "Brand lockup with byline on light backgrounds"
     },
     {
       "id": "byline-white-png",
       "name": "Safespring byline white PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_byline_white_png.png",
+      "url": "/img/logos/safespring/png/safespring_byline_white_png.png",
       "format": "png",
       "usage": "Brand lockup with byline for approved dark contexts; do not create colored backgrounds just to use this asset"
     },
     {
       "id": "byline-black-png",
       "name": "Safespring byline black PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_byline_black_png.png",
+      "url": "/img/logos/safespring/png/safespring_byline_black_png.png",
       "format": "png",
       "usage": "Monochrome or low-color byline output"
     },
     {
       "id": "symbol-blue-png",
       "name": "Safespring symbol blue PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_symbol_blue_png.png",
+      "url": "/img/logos/safespring/png/safespring_symbol_blue_png.png",
       "format": "png",
       "usage": "Compact brand mark when full logotype appears elsewhere"
     },
     {
       "id": "symbol-white-png",
       "name": "Safespring symbol white PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_symbol_white_png.png",
+      "url": "/img/logos/safespring/png/safespring_symbol_white_png.png",
       "format": "png",
       "usage": "Compact mark for approved dark contexts and official flag/ribbon usage"
     },
     {
       "id": "symbol-black-png",
       "name": "Safespring symbol black PNG",
-      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_symbol_black_png.png",
+      "url": "/img/logos/safespring/png/safespring_symbol_black_png.png",
       "format": "png",
       "usage": "Compact mark for monochrome output"
     },
     {
       "id": "flag-svg",
       "name": "Safespring blue flag SVG",
-      "url": "https://www.safespring.com/brand/ai/assets/safespring-flag.svg",
+      "url": "/brand/ai/assets/safespring-flag.svg",
       "format": "svg",
       "usage": "Top-left presentation flag or ribbon brand mark; not a general background fill"
     },
     {
       "id": "flag-png",
       "name": "Safespring blue flag PNG",
-      "url": "https://www.safespring.com/brand/ai/assets/safespring-flag.png",
+      "url": "/brand/ai/assets/safespring-flag.png",
       "format": "png",
       "usage": "Raster fallback for the top-left presentation flag or ribbon brand mark"
     }
@@ -272,37 +273,37 @@
     {
       "id": "compute",
       "name": "Safespring Compute symbol",
-      "url": "https://www.safespring.com/img/safespring_compute_symbol.svg",
+      "url": "/img/safespring_compute_symbol.svg",
       "format": "svg"
     },
     {
       "id": "storage",
       "name": "Safespring Storage symbol",
-      "url": "https://www.safespring.com/img/safespring_storage_symbol.svg",
+      "url": "/img/safespring_storage_symbol.svg",
       "format": "svg"
     },
     {
       "id": "backup",
       "name": "Safespring Backup symbol",
-      "url": "https://www.safespring.com/img/safespring_backup_symbol.svg",
+      "url": "/img/safespring_backup_symbol.svg",
       "format": "svg"
     },
     {
       "id": "network",
       "name": "Safespring Network illustration",
-      "url": "https://www.safespring.com/img/safespring-network.svg",
+      "url": "/img/safespring-network.svg",
       "format": "svg"
     }
   ],
   "templates": {
     "presentation": {
       "name": "Safespring presentation template",
-      "url": "https://www.safespring.com/brand/ai/templates/safespring-presentation-template.pptx",
+      "url": "/brand/ai/templates/safespring-presentation-template.pptx",
       "format": "pptx"
     },
     "document": {
       "name": "Safespring document template",
-      "url": "https://www.safespring.com/brand/ai/templates/safespring-document-template.docx",
+      "url": "/brand/ai/templates/safespring-document-template.docx",
       "format": "docx"
     }
   },

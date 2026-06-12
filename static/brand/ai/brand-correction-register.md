@@ -2,8 +2,8 @@
 
 Use this register to preserve concrete brand corrections, recurring failure modes, and practical fixes discovered while reviewing Safespring artifacts. AI tools should read this file after `ai-instructions.md` and before creating or adapting images, presentations, one-pagers, documents, diagrams, or similar material.
 
-Canonical instructions: https://www.safespring.com/brand/ai/ai-instructions.md
-Machine-readable manifest: https://www.safespring.com/brand/ai/brand-kit.json
+Canonical instructions: /brand/ai/ai-instructions.md
+Machine-readable manifest: /brand/ai/brand-kit.json
 
 ## How To Use This Register
 
