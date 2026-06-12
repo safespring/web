@@ -2,7 +2,19 @@
   "name": "Safespring AI Brand Kit",
   "version": "2026-05-28",
   "language": "en",
-  "urlResolution": "Resolve root-relative URLs against the host that served this manifest.",
+  "urlResolution": "Resolve root-relative URLs against the origin of the URL used to fetch this manifest. If the manifest was pasted without its source URL, ask for the source URL or default to https://www.safespring.com.",
+  "urlResolutionExamples": {
+    "www2": {
+      "manifest": "https://www2.safespring.com/brand/ai/brand-kit.json",
+      "rootRelative": "/brand/ai/ai-instructions.md",
+      "absolute": "https://www2.safespring.com/brand/ai/ai-instructions.md"
+    },
+    "www": {
+      "manifest": "https://www.safespring.com/brand/ai/brand-kit.json",
+      "rootRelative": "/brand/ai/ai-instructions.md",
+      "absolute": "https://www.safespring.com/brand/ai/ai-instructions.md"
+    }
+  },
   "homepage": "/brand/ai/",
   "instructions": "/brand/ai/ai-instructions.md",
   "tokensCss": "/brand/ai/brand-tokens.css",

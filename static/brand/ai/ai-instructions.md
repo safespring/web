@@ -2,12 +2,29 @@
 
 Use this file as the canonical Safespring brand instruction for AI-generated images, slide decks, documents, diagrams, and similar communication material.
 
-Resolve root-relative links in this file against the host that served it, for example `www.safespring.com` or `www2.safespring.com`.
+## Document Location And Link Resolution
 
-Machine-readable manifest: /brand/ai/brand-kit.json
-Design tokens: /brand/ai/brand-tokens.css
-Correction register: /brand/ai/brand-correction-register.md
-Human portal: /brand/ai/
+Use the absolute URL set that matches the host you used to retrieve this file.
+
+If this file was loaded from `https://www2.safespring.com/brand/ai/ai-instructions.md`, use these URLs:
+
+- Machine-readable manifest: https://www2.safespring.com/brand/ai/brand-kit.json
+- Design tokens: https://www2.safespring.com/brand/ai/brand-tokens.css
+- Correction register: https://www2.safespring.com/brand/ai/brand-correction-register.md
+- Human portal: https://www2.safespring.com/brand/ai/
+- Presentation template: https://www2.safespring.com/brand/ai/templates/safespring-presentation-template.pptx
+- Document template: https://www2.safespring.com/brand/ai/templates/safespring-document-template.docx
+
+If this file was loaded from `https://www.safespring.com/brand/ai/ai-instructions.md`, use these URLs:
+
+- Machine-readable manifest: https://www.safespring.com/brand/ai/brand-kit.json
+- Design tokens: https://www.safespring.com/brand/ai/brand-tokens.css
+- Correction register: https://www.safespring.com/brand/ai/brand-correction-register.md
+- Human portal: https://www.safespring.com/brand/ai/
+- Presentation template: https://www.safespring.com/brand/ai/templates/safespring-presentation-template.pptx
+- Document template: https://www.safespring.com/brand/ai/templates/safespring-document-template.docx
+
+If this Markdown was pasted without its source URL, ask for the source URL or default to the `www.safespring.com` URLs.
 
 ## Brand Character
 
@@ -175,7 +192,9 @@ Use an editorial, high-clarity slide style:
 - Prefer the existing Safespring slide grammar: top-left blue flag/ribbon brand mark where useful, white or cloud-blue slide surfaces, pale panels, soft hierarchy, icon-and-label systems, clear architecture diagrams, and generous whitespace.
 - Do not pack slides with generic SaaS cards or repeated feature boxes.
 
-Template: /brand/ai/templates/safespring-presentation-template.pptx
+Template URLs:
+- Preview: https://www2.safespring.com/brand/ai/templates/safespring-presentation-template.pptx
+- Production: https://www.safespring.com/brand/ai/templates/safespring-presentation-template.pptx
 
 ## Documents
 
@@ -193,7 +212,9 @@ Use a formal, readable document style:
 - In fixed-format one-pagers, prefer readable text and balanced vertical distribution over tiny compressed content. Increase compact card-header height, body microcopy, card padding, and logo-grid vertical placement before accepting a large unused middle/lower page area.
 - Use local Safespring fonts and Font Awesome or approved Safespring symbols; do not use emoji icons in formal documents.
 
-Template: /brand/ai/templates/safespring-document-template.docx
+Template URLs:
+- Preview: https://www2.safespring.com/brand/ai/templates/safespring-document-template.docx
+- Production: https://www.safespring.com/brand/ai/templates/safespring-document-template.docx
 
 ## Do Not
 
@@ -217,4 +238,8 @@ Template: /brand/ai/templates/safespring-document-template.docx
 
 ## Prompt Starter
 
-Create a Safespring-branded [image/deck/document] about [topic]. Follow the brand kit at /brand/ai/ai-instructions.md and use the manifest at /brand/ai/brand-kit.json. Use cloud blue `#E7EFF3` as the background for text boxes and graphics. Do not use main colors as backgrounds; use main blue `#195F8C`, green `#32CD32`, clear blue `#3C9BCD`, and orange `#FA690F` for text, icons, lines, and emphasis. Keep the result restrained, technically credible, and clear.
+Preview/staging:
+Create a Safespring-branded [image/deck/document] about [topic]. Follow the brand kit at https://www2.safespring.com/brand/ai/ai-instructions.md and use the manifest at https://www2.safespring.com/brand/ai/brand-kit.json. Use cloud blue `#E7EFF3` as the background for text boxes and graphics. Do not use main colors as backgrounds; use main blue `#195F8C`, green `#32CD32`, clear blue `#3C9BCD`, and orange `#FA690F` for text, icons, lines, and emphasis. Keep the result restrained, technically credible, and clear.
+
+Production:
+Create a Safespring-branded [image/deck/document] about [topic]. Follow the brand kit at https://www.safespring.com/brand/ai/ai-instructions.md and use the manifest at https://www.safespring.com/brand/ai/brand-kit.json. Use cloud blue `#E7EFF3` as the background for text boxes and graphics. Do not use main colors as backgrounds; use main blue `#195F8C`, green `#32CD32`, clear blue `#3C9BCD`, and orange `#FA690F` for text, icons, lines, and emphasis. Keep the result restrained, technically credible, and clear.
