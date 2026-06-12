@@ -1,0 +1,340 @@
+{
+  "name": "Safespring AI Brand Kit",
+  "version": "2026-05-28",
+  "language": "en",
+  "homepage": "https://www.safespring.com/brand/ai/",
+  "instructions": "https://www.safespring.com/brand/ai/ai-instructions.md",
+  "tokensCss": "https://www.safespring.com/brand/ai/brand-tokens.css",
+  "correctionRegister": "https://www.safespring.com/brand/ai/brand-correction-register.md",
+  "colors": {
+    "blue": {
+      "main": { "name": "Main blue", "hex": "#195F8C", "role": "Primary brand color for headings, text, icons, lines, logos, and the official flag mark; not for ordinary backgrounds" },
+      "mainTint10": { "name": "10% main-blue tint", "hex": "#E8EFF3", "role": "Pale utility tint; prefer section-header blue #DAE5EE for compact section or card-header fields" },
+      "middle": { "name": "Middle blue", "hex": "#417DA5", "role": "Secondary foreground for text, icons, chart series, and supporting accents; not for backgrounds" },
+      "clear": { "name": "Clear blue", "hex": "#3C9BCD", "role": "Foreground for technical highlights, labels, icons, and diagram lines; not for backgrounds" }
+    },
+    "green": {
+      "primary": { "name": "Green", "hex": "#32CD32", "role": "Foreground for positive state and operational health text/icons; not for backgrounds" },
+      "web": { "name": "Web green", "hex": "#19F064", "role": "Foreground for sparse digital accents; not for backgrounds" }
+    },
+    "orange": {
+      "primary": { "name": "Orange", "hex": "#FA690F", "role": "Foreground for calls to action and one-point emphasis; not for ordinary backgrounds" }
+    },
+    "neutral": {
+      "cloudBlue": { "name": "Cloud blue", "hex": "#E7EFF3", "role": "Only approved colored background for text boxes, callouts, tables, diagrams, cards, and quiet panels" },
+      "sectionHeaderBlue": { "name": "Section-header blue", "hex": "#DAE5EE", "role": "Compact section and card-header field background when paired with main-blue text and icons" },
+      "charcoal": { "name": "Charcoal", "hex": "#323232", "role": "Primary text on light backgrounds" },
+      "cloudWhite": { "name": "Cloud white", "hex": "#FAFEFE", "role": "Default page and document background" },
+      "white": { "name": "White", "hex": "#FFFFFF", "role": "Page background and logo/symbol color inside the official blue flag mark" }
+    }
+  },
+  "componentColorRules": {
+    "principle": "Safespring does not use main colors as ordinary backgrounds. For text boxes, callouts, tables, diagrams, icon cards, and other graphic components, use cloud blue #E7EFF3 as the background and use main colors only for text, icons, lines, and labels.",
+    "pairs": [
+      { "name": "Blue", "background": "#E7EFF3", "foreground": "#195F8C", "usage": "Default component pair for panels, callouts, architecture nodes, and textbox backgrounds" },
+      { "name": "Middle blue", "background": "#E7EFF3", "foreground": "#417DA5", "usage": "Secondary labels, supporting diagram elements, and icon text on cloud-blue components" },
+      { "name": "Clear blue", "background": "#E7EFF3", "foreground": "#3C9BCD", "usage": "Technical highlights, connectors, and secondary diagram elements on cloud-blue components" },
+      { "name": "Green", "background": "#E7EFF3", "foreground": "#32CD32", "usage": "Positive status, operational health, sustainability, and completed-step labels on cloud-blue components" },
+      { "name": "Web green", "background": "#E7EFF3", "foreground": "#19F064", "usage": "Sparse digital accent text/icons on cloud-blue components" },
+      { "name": "Orange", "background": "#E7EFF3", "foreground": "#FA690F", "usage": "Primary emphasis, warnings, or next-action text/icons on cloud-blue components" },
+      { "name": "Neutral", "background": "#E7EFF3", "foreground": "#323232", "usage": "Subdued utility labels and low-emphasis information on cloud-blue components" }
+    ],
+    "exceptions": [
+      "The official blue Safespring flag/ribbon is a brand mark, not a layout background.",
+      "Do not use main blue, middle blue, clear blue, green, web green, orange, charcoal, or separate hue tints as slide, textbox, diagram, table, card, or document background fills.",
+      "Use white only as page background or inside official logo/flag assets."
+    ]
+  },
+  "designSystem": {
+    "sourceCss": [
+      "https://www.safespring.com/css/main-v2.css"
+    ],
+    "surfaces": {
+      "page": { "hex": "#FAFEFE", "usage": "Default page, slide, and document surface" },
+      "component": { "hex": "#E7EFF3", "usage": "Only approved colored background for boxes, diagrams, callouts, tables, and icon panels" },
+      "sectionHeader": { "hex": "#DAE5EE", "usage": "Pale section-header blue for compact section or card-header fields, paired with main-blue text/icons" },
+      "code": { "hex": "#EAF0F4", "usage": "Code blocks, inline code, terminal examples, and technical snippets" },
+      "content": { "hex": "#EEF2F4", "usage": "Quiet content areas when a slightly different pale blue is needed" }
+    },
+    "typographicRoles": {
+      "largeHeading": "Hind Light / Hind 300, normal letter spacing, main blue or clear blue",
+      "sectionHeading": "Hind 300 or Hind 600 for expressive section headings; Montserrat 600 for compact card-header labels",
+      "body": "Montserrat 400 or 500, generous line-height",
+      "label": "Montserrat 600, uppercase, compact, often clear blue or main blue",
+      "code": "Safespring Mono 400 or 500 on code-blue surfaces"
+    },
+    "shape": {
+      "imageRadius": "5px",
+      "defaultRadius": "10px",
+      "iconBlockRadius": "15px",
+      "largePanelRadius": "20px",
+      "pillRadius": "50px"
+    },
+    "layout": {
+      "maxTextWidth": "700px",
+      "maxCodeWidth": "800px",
+      "componentGap": "20px",
+      "sectionRhythm": "50px",
+      "panelPadding": "30px to 40px"
+    },
+    "elevation": {
+      "defaultShadow": "2px 3px 9px 0 rgba(0, 0, 0, 0.10)",
+      "elevatedShadow": "0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.10)",
+      "usage": "Use shadows sparingly; prefer flat cloud-blue surfaces and reserve elevation for hover, active state, or true overlays"
+    },
+    "interaction": {
+      "hoverScale": "101% to 102%",
+      "transition": "0.2s ease for component hover, up to 0.4s for shadow changes",
+      "usage": "Subtle movement only; no decorative or attention-seeking motion"
+    },
+    "artifactReview": {
+      "register": "https://www.safespring.com/brand/ai/brand-correction-register.md",
+      "principle": "When adapting an existing artifact, preserve useful structure but replace generic visual systems with Safespring tokens, local fonts, approved icons, official assets, and verified claims.",
+      "requiredChecks": [
+        "Use local Montserrat for body text, compact UI labels, and card-header labels. Use local Hind Light or Hind 300 for larger expressive headings.",
+        "Use Font Awesome 6 Pro or approved Safespring symbols for functional icons; do not use emoji icons.",
+        "Use canonical color tokens only; use cloud blue #E7EFF3 for ordinary component backgrounds.",
+        "Use section-header blue #DAE5EE for compact section or card-header fields, with main blue #195F8C text and icons.",
+        "Use Montserrat SemiBold / weight 600 for compact card-header label text. Keep Hind Light for expressive document titles and larger headings.",
+        "Use Montserrat SemiBold / weight 600 for compact service item labels when they function as UI-like labels inside service cards.",
+        "Keep compact service labels short and plain. Avoid parenthetical product acronyms such as (SKE) unless the acronym is required for disambiguation.",
+        "When a services card has four peer items, arrange them as a balanced 2x2 grid, center the grid within the available card body, and use enough row/column gap that each point reads as equally important.",
+        "Apply component backgrounds to full component containers as well as nested body areas, so empty or flexible space does not reveal accidental paper-white gaps.",
+        "In cloud-blue cards, small nested value tiles or sub-panels may use paper/cloud-white #FAFEFE to create subtle inset contrast.",
+        "For strict A4 artifacts, set 210mm x 297mm and verify no internal overflow or accidental second page.",
+        "For Word-like A4 one-pagers and formal documents, use a 1 inch / 25.4mm content margin grid unless another margin system is explicitly requested.",
+        "Header and footer background bands may bleed to the paper edges in formal one-pagers, but content inside them and all body content must align to the document margin grid horizontally; header and footer content may be vertically centered inside approved-height bands when that creates calmer document balance. Color choices must still follow the cloud-blue/main-color background rules unless explicitly approved.",
+        "Footer CTA bands in formal one-pagers should use a light cloud-white to cloud-blue treatment with main-blue text unless a dark special-case band is explicitly approved.",
+        "Footer CTA headings and contact labels in formal one-pagers should use Montserrat SemiBold / weight 600.",
+        "Prefer light Safespring image or cloud-white header fields over dark main-blue header fills in formal one-pagers; when using a light image header, add a transparent-to-cloud-white overlay fade and set all header text, metrics, and labels in main blue #195F8C.",
+        "On light image headers, use the official blue Safespring logotype; reserve white logotypes for approved dark contexts only.",
+        "Light image headers may place the logotype, headline, and proof-point block lower in the band to create calmer top whitespace, but keep those elements on a shared vertical offset and verify they do not collide with the intro content.",
+        "Header metrics and proof points should usually be grouped as compact right-aligned blocks, such as a 2x2 metric grid, rather than stretched across the header as a toolbar.",
+        "Avoid redundant eyebrow labels in compact document headers when the logo already establishes context. Keep the main headline clearly dominant and readable; restrained means not oversized marketing-hero styling, not compressed microcopy.",
+        "Avoid boxing short lead paragraphs by default in formal one-pagers. Let intro copy sit directly on the paper surface when it improves hierarchy; reserve cloud-blue boxes for grouped content, callouts, diagrams, and cards.",
+        "Unboxed intro paragraphs in A4 one-pagers should still be readable and visibly separated from surrounding sections; use larger Montserrat text than dense card microcopy and add clear vertical padding above and below the paragraph.",
+        "When a light image header is followed by unboxed intro copy, add enough top margin above the intro to make it read as a new document section rather than a continuation of the header.",
+        "Use a consistent 20px content padding for regular A4 card bodies when the cards are peer information boxes; reserve custom padding for special components such as note-style logo frames.",
+        "Avoid redundant subheadings inside compact card bodies when the card header already provides context; use direct evidence rows or bullets instead.",
+        "Use Montserrat SemiBold / weight 600 for compact value words inside small tiles; reserve Hind Light for expressive document titles and larger headings.",
+        "Avoid em dashes in compact one-pager copy. Prefer commas, colons, semicolons, or short sentence breaks.",
+        "Rectangular header proof-point tiles in compact A4 headers should have enough vertical padding for the number and label to breathe; in the current one-pager use 8px 4px.",
+        "Do not end short title-like header headlines with a period; reserve sentence punctuation for body copy and explanatory text.",
+        "Treat data residency, transfer, replication, processing location, legal, and compliance language as exact-scope claims. Use user-approved wording when supplied, and verify scope before reusing it in other artifacts.",
+        "Do not narrow approved jurisdictional risk wording to a single law when the approved claim is broader. For the current one-pager, the approved wording is no exposure to US regulation, laws, access, or surveillance.",
+        "When naming Safespring public cloud locations in compact infrastructure copy, use the approved codes STO1, STO2, and OSL2 and keep Tier III and green energy in the same data-center statement unless more detailed source-backed context is needed.",
+        "When referencing Safespring framework agreements for research and education, use the scoped wording GÉANT OCRE IaaS+ for the R&E sector unless a different source-backed procurement context is explicitly needed.",
+        "Avoid ready language for legal and compliance badges unless it is a verified formal status. Prefer neutral, evidence-led wording such as safeguards, documentation, contractual guarantees, or aligned.",
+        "Avoid using Schrems II as a short compliance badge in broad one-pagers. Include it only when the artifact explicitly needs that legal topic and the wording has been verified.",
+        "Do not use HIPAA language in Safespring Life Science or MedTech material unless it is explicitly verified and approved for the artifact. Prefer neutral workload wording such as sensitive research and clinical data.",
+        "In research and public-sector trust grids, include EOSC and European Commission logotypes when explicitly requested and relevant. Use curated local SVGs or approved official logo files; do not recreate institutional marks from text.",
+        "De-duplicate trust, customer, partner, and institutional logo grids. Show an organization once unless distinct sub-entities or separate verified roles are intentionally needed.",
+        "Keep dense trust and customer logo grids visually quiet. Avoid table-like border grids and separate box fills around logos unless a formal comparison table is explicitly intended.",
+        "When a trust-logo section needs framing, prefer a note-shortcode-inspired dashed border with the title integrated into the border line and an icon chip beside the title rather than a heavy filled card header.",
+        "Keep framed trust-logo sections tight around the logo grid. Match top/bottom inset to the side inset where possible; if the page layout has extra vertical space, center the framed section in that space instead of padding the inside of the frame.",
+        "Use Safespring's official general contact details in broad public-facing artifacts unless a role-specific contact is explicitly requested and verified: hello@safespring.com and +46 8-55 10 73 70.",
+        "Use established public Safespring CTA URLs in broad artifacts. Prefer Watch demo with safespring.com/demo/ over invented booking slugs unless a campaign-specific URL is explicitly supplied and verified.",
+        "Use cloud white #FAFEFE as the paper surface for document-like artifacts.",
+        "Avoid inline data: copies of logos or customer graphics when stable curated assets are available.",
+        "For one-pager trust grids, source customer, partner, and institutional logos from the curated /brand/logos/ directory and do not embed logos as data: URIs.",
+        "In dense trust grids, group logos by visual aspect ratio or dimensions so square marks, compact-wide marks, and ultra-wide marks do not alternate randomly in the same row.",
+        "Scale grouped logo rows by perceived visual weight, not only by a shared maximum size; square or icon-like logo rows may need roughly twice the image height of wide wordmark rows to feel equally legible.",
+        "When a wide or ultra-wide logo row feels crowded, split it into two centered rows rather than shrinking the marks until they become hard to read.",
+        "In fixed-format A4 one-pagers, avoid compressing middle content at the top while leaving a large empty lower area; use the available page area by increasing readable Montserrat microcopy, badge, service, industry, and value text sizes, increasing compact card-header row height, adding modest card padding/gaps, and vertically centering large trust-logo grids inside their section.",
+        "After increasing one-pager type scale or spacing, verify the rendered A4 page still has no internal overflow, no accidental second page, and no clipped text.",
+        "In compact compliance proof lists, avoid a single hard divider immediately below badges; if a key evidence row needs emphasis, place subtle separators above and below that row instead.",
+        "In compact evidence rows with icons, use a fixed icon column and text column so wrapped text aligns with the first line and icons center vertically across multi-line rows.",
+        "In compact industry lists, make the category names visibly larger than their supporting detail lines while keeping the list dense enough for A4.",
+        "Verify all customer, partner, certification, framework, SLA, sovereignty, region, and compliance claims."
+      ]
+    }
+  },
+  "typography": {
+    "heading": {
+      "family": "Hind",
+      "weights": [300, 400, 500, 600, 700],
+      "files": [
+        "https://www.safespring.com/fonts/hind-300.woff2",
+        "https://www.safespring.com/fonts/hind-400.woff2",
+        "https://www.safespring.com/fonts/hind-500.woff2",
+        "https://www.safespring.com/fonts/hind-600.woff2",
+        "https://www.safespring.com/fonts/hind-700.woff2"
+      ]
+    },
+    "body": {
+      "family": "Montserrat",
+      "weights": [300, 400, 500, 600, 700],
+      "files": [
+        "https://www.safespring.com/fonts/montserrat-300.woff2",
+        "https://www.safespring.com/fonts/montserrat-400.woff2",
+        "https://www.safespring.com/fonts/montserrat-500.woff2",
+        "https://www.safespring.com/fonts/montserrat-600.woff2",
+        "https://www.safespring.com/fonts/montserrat-700.woff2"
+      ]
+    },
+    "mono": {
+      "family": "Safespring Mono",
+      "weights": [400, 500, 600],
+      "files": [
+        "https://www.safespring.com/fonts/Safespring-Mono-Regular.woff2",
+        "https://www.safespring.com/fonts/Safespring-Mono-Medium.woff2",
+        "https://www.safespring.com/fonts/Safespring-Mono-SemiBold.woff2"
+      ]
+    }
+  },
+  "logos": [
+    {
+      "id": "logotype-blue-svg",
+      "name": "Safespring logotype blue SVG",
+      "url": "https://www.safespring.com/img/logos/safespring_logotype_blue_svg.svg",
+      "format": "svg",
+      "usage": "Default logo on light backgrounds"
+    },
+    {
+      "id": "logotype-blue-png",
+      "name": "Safespring logotype blue PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_logotype_blue_png.png",
+      "format": "png",
+      "usage": "Default logo where SVG is not supported"
+    },
+    {
+      "id": "logotype-white-png",
+      "name": "Safespring logotype white PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_logotype_white_png.png",
+      "format": "png",
+      "usage": "Logo for approved dark contexts; do not create colored backgrounds just to use this asset"
+    },
+    {
+      "id": "logotype-black-png",
+      "name": "Safespring logotype black PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_logotype_black_png.png",
+      "format": "png",
+      "usage": "Monochrome or low-color output"
+    },
+    {
+      "id": "byline-blue-png",
+      "name": "Safespring byline blue PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_byline_blue_png.png",
+      "format": "png",
+      "usage": "Brand lockup with byline on light backgrounds"
+    },
+    {
+      "id": "byline-white-png",
+      "name": "Safespring byline white PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_byline_white_png.png",
+      "format": "png",
+      "usage": "Brand lockup with byline for approved dark contexts; do not create colored backgrounds just to use this asset"
+    },
+    {
+      "id": "byline-black-png",
+      "name": "Safespring byline black PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_byline_black_png.png",
+      "format": "png",
+      "usage": "Monochrome or low-color byline output"
+    },
+    {
+      "id": "symbol-blue-png",
+      "name": "Safespring symbol blue PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_symbol_blue_png.png",
+      "format": "png",
+      "usage": "Compact brand mark when full logotype appears elsewhere"
+    },
+    {
+      "id": "symbol-white-png",
+      "name": "Safespring symbol white PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_symbol_white_png.png",
+      "format": "png",
+      "usage": "Compact mark for approved dark contexts and official flag/ribbon usage"
+    },
+    {
+      "id": "symbol-black-png",
+      "name": "Safespring symbol black PNG",
+      "url": "https://www.safespring.com/img/logos/safespring/png/safespring_symbol_black_png.png",
+      "format": "png",
+      "usage": "Compact mark for monochrome output"
+    },
+    {
+      "id": "flag-svg",
+      "name": "Safespring blue flag SVG",
+      "url": "https://www.safespring.com/brand/ai/assets/safespring-flag.svg",
+      "format": "svg",
+      "usage": "Top-left presentation flag or ribbon brand mark; not a general background fill"
+    },
+    {
+      "id": "flag-png",
+      "name": "Safespring blue flag PNG",
+      "url": "https://www.safespring.com/brand/ai/assets/safespring-flag.png",
+      "format": "png",
+      "usage": "Raster fallback for the top-left presentation flag or ribbon brand mark"
+    }
+  ],
+  "icons": [
+    {
+      "id": "compute",
+      "name": "Safespring Compute symbol",
+      "url": "https://www.safespring.com/img/safespring_compute_symbol.svg",
+      "format": "svg"
+    },
+    {
+      "id": "storage",
+      "name": "Safespring Storage symbol",
+      "url": "https://www.safespring.com/img/safespring_storage_symbol.svg",
+      "format": "svg"
+    },
+    {
+      "id": "backup",
+      "name": "Safespring Backup symbol",
+      "url": "https://www.safespring.com/img/safespring_backup_symbol.svg",
+      "format": "svg"
+    },
+    {
+      "id": "network",
+      "name": "Safespring Network illustration",
+      "url": "https://www.safespring.com/img/safespring-network.svg",
+      "format": "svg"
+    }
+  ],
+  "templates": {
+    "presentation": {
+      "name": "Safespring presentation template",
+      "url": "https://www.safespring.com/brand/ai/templates/safespring-presentation-template.pptx",
+      "format": "pptx"
+    },
+    "document": {
+      "name": "Safespring document template",
+      "url": "https://www.safespring.com/brand/ai/templates/safespring-document-template.docx",
+      "format": "docx"
+    }
+  },
+  "rules": {
+    "do": [
+      "Use a restrained, technically credible European cloud infrastructure style.",
+      "Use main blue as the dominant foreground brand color for text, icons, lines, and logos.",
+      "Use cloud blue #E7EFF3 as the colored background for text boxes, diagrams, tables, cards, callouts, and graphics.",
+      "Use section-header blue #DAE5EE for compact section or card-header fields, with main blue #195F8C text and icons.",
+      "Use orange for a single primary emphasis or call to action.",
+      "Use real Safespring logo assets from this manifest.",
+      "For fixed-format one-pagers, keep the middle page area readable and evenly distributed with adequate type size, card-header height, padding, and vertical logo-grid placement.",
+      "Keep documents and slides clear, readable, and evidence-led."
+    ],
+    "dont": [
+      "Do not invent certifications, customers, claims, regions, or capabilities.",
+      "Do not broaden data-residency, transfer, replication, processing-location, legal, or compliance statements beyond the verified or user-approved scope.",
+      "Do not narrow user-approved jurisdictional risk wording to one named law unless the user explicitly asks for that narrower scope.",
+      "Do not use sales-oriented readiness wording for legal or compliance claims unless the readiness is a verified formal status.",
+      "Do not use Schrems II as a short compliance badge in broad one-pagers unless that specific legal topic is explicitly required and verified.",
+      "Do not use HIPAA claims for Life Science or MedTech unless they are explicitly verified and approved.",
+      "Do not fake institutional logotypes or replace available official logotypes with generic text-only labels.",
+      "Do not show the same customer, partner, or institution twice in one trust grid unless there is a deliberate, verified reason.",
+      "Do not put table-like border grids or separate box fills around dense trust or customer logo sections unless the artifact is explicitly a formal comparison table.",
+      "Do not use sales-specific or outdated contact details in broad public-facing artifacts when Safespring's official general contact details are more appropriate.",
+      "Do not invent booking slugs or campaign URLs for broad public artifacts when an established Safespring URL such as safespring.com/demo/ is appropriate.",
+      "Do not redraw, recolor, distort, or decorate the logo.",
+      "Do not use main brand colors as ordinary slide, textbox, diagram, table, card, or document background fills.",
+      "Do not create separate green, orange, or blue-tint component backgrounds; use cloud blue for the shared component background.",
+      "Do not use cyberpunk, cartoon, luxury, dystopian, or consumer-app styling.",
+      "Do not place text over low-contrast imagery.",
+      "Do not expose broad image archives as approved brand assets."
+    ]
+  }
+}

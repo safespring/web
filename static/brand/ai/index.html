@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safespring AI Brand Kit</title>
+    <meta
+      name="description"
+      content="Safespring brand instructions, colors, logos, fonts, templates, and machine-readable assets for AI tools."
+    />
+    <link rel="stylesheet" href="/brand/ai/brand-tokens.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--ss-page-bg);
+        color: var(--ss-text);
+        font-family: var(--ss-font-body);
+        line-height: 1.5;
+      }
+
+      a {
+        color: var(--ss-link);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .shell {
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        padding: 26px 0;
+      }
+
+      .brand-logo {
+        width: 180px;
+        height: auto;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: flex-end;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+        align-items: end;
+        gap: clamp(34px, 6vw, 84px);
+        min-height: 520px;
+        padding: 72px 0 58px;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--ss-blue-clear);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        color: var(--ss-heading);
+        font-family: var(--ss-font-heading);
+        font-weight: 300;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 10ch;
+        font-size: clamp(3.5rem, 9vw, 7.2rem);
+        line-height: 0.86;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 5vw, 3.6rem);
+        line-height: 0.95;
+      }
+
+      h3 {
+        font-size: 1.45rem;
+        line-height: 1.05;
+      }
+
+      p {
+        line-height: 1.65;
+      }
+
+      .lead {
+        max-width: 60ch;
+        margin: 24px 0 0;
+        color: #40515a;
+        font-size: 1.06rem;
+      }
+
+      .command-box {
+        border: 1px solid var(--ss-border);
+        background: var(--ss-white);
+        box-shadow: var(--ss-shadow);
+        border-radius: var(--ss-radius-base);
+        padding: 28px;
+      }
+
+      .command-box p {
+        margin: 0 0 16px;
+        color: #52626a;
+        font-size: 0.92rem;
+      }
+
+      .url-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid #d8e6ec;
+        background: var(--ss-cloud-blue);
+        border-radius: var(--ss-radius-base);
+        padding: 10px 10px 10px 14px;
+      }
+
+      code {
+        color: var(--ss-blue-main);
+        font-family: var(--ss-font-mono);
+        font-size: 0.78rem;
+        overflow-wrap: anywhere;
+      }
+
+      .button,
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        border: 0;
+        border-radius: var(--ss-radius-pill);
+        border: 1px solid #c9dce6;
+        background: var(--ss-cloud-blue);
+        color: var(--ss-orange);
+        cursor: pointer;
+        font-family: var(--ss-font-body);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        padding: 0 17px;
+        text-transform: uppercase;
+        transition: transform var(--ss-transition), box-shadow var(--ss-transition);
+      }
+
+      .button:hover,
+      button:hover {
+        box-shadow: var(--ss-shadow);
+        text-decoration: none;
+        transform: scale(1.01);
+      }
+
+      .button.secondary {
+        border: 1px solid var(--ss-border);
+        background: var(--ss-white);
+        color: var(--ss-blue-main);
+      }
+
+      .section {
+        padding: 70px 0;
+        border-top: 1px solid #d7e5eb;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.75fr) minmax(280px, 0.8fr);
+        gap: 42px;
+        align-items: end;
+        margin-bottom: 34px;
+      }
+
+      .section-head p {
+        margin: 0;
+        color: #52626a;
+      }
+
+      .link-grid,
+      .asset-grid,
+      .color-grid,
+      .design-grid,
+      .pair-grid,
+      .rules-grid,
+      .template-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .template-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card {
+        border: 1px solid var(--ss-border);
+        background: var(--ss-white);
+        border-radius: var(--ss-radius-base);
+        padding: 22px;
+      }
+
+      .card p {
+        margin: 10px 0 0;
+        color: #52626a;
+        font-size: 0.92rem;
+      }
+
+      .card h3 {
+        color: var(--ss-blue-main);
+      }
+
+      .swatch {
+        height: 92px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: var(--ss-radius-image);
+        margin-bottom: 14px;
+      }
+
+      .pair-grid {
+        margin-bottom: 28px;
+      }
+
+      .pair-card {
+        display: grid;
+        min-height: 132px;
+        align-content: space-between;
+        border: 1px solid var(--ss-border);
+        border-radius: var(--ss-radius-base);
+        padding: 20px;
+      }
+
+      .design-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .design-card {
+        background: var(--ss-cloud-blue);
+        color: var(--ss-blue-main);
+      }
+
+      .design-card h3 {
+        color: currentColor;
+      }
+
+      .design-card code {
+        display: inline-block;
+        margin-top: 12px;
+        background: var(--ss-code-blue);
+        border-radius: var(--ss-radius-base);
+        padding: 7px 10px 5px;
+      }
+
+      .pair-card h3 {
+        color: currentColor;
+      }
+
+      .pair-card p {
+        margin: 10px 0 0;
+        color: currentColor;
+        font-size: 0.9rem;
+      }
+
+      .pair-card .meta {
+        color: currentColor;
+        opacity: 0.82;
+      }
+
+      .meta {
+        margin-top: 14px;
+        color: #66777e;
+        font-family: var(--ss-font-mono);
+        font-size: 0.72rem;
+      }
+
+      .logo-preview {
+        display: grid;
+        place-items: center;
+        min-height: 120px;
+        margin-bottom: 16px;
+        background: var(--ss-cloud-blue);
+        border-radius: var(--ss-radius-base);
+      }
+
+      .logo-preview.dark {
+        background: var(--ss-charcoal);
+      }
+
+      .logo-preview.flag {
+        background: var(--ss-white);
+      }
+
+      .logo-preview.flag img {
+        max-height: 92px;
+        width: auto;
+      }
+
+      .logo-preview img {
+        max-width: 82%;
+        max-height: 72px;
+      }
+
+      .rule-list {
+        margin: 0;
+        padding-left: 18px;
+        color: #40515a;
+        line-height: 1.65;
+      }
+
+      .template-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .footer {
+        padding: 32px 0 56px;
+        color: #66777e;
+        font-size: 0.86rem;
+      }
+
+      @media (max-width: 920px) {
+        .hero,
+        .section-head {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-top: 46px;
+        }
+
+        .link-grid,
+        .asset-grid,
+        .color-grid,
+        .design-grid,
+        .pair-grid,
+        .rules-grid,
+        .template-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .nav {
+          justify-content: flex-start;
+        }
+
+        .url-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a href="https://www.safespring.com/" aria-label="Safespring">
+        <img class="brand-logo" src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring" />
+      </a>
+      <nav class="nav" aria-label="Brand kit sections">
+        <a href="#files">Files</a>
+        <a href="#register">Register</a>
+        <a href="#colors">Colors</a>
+        <a href="#design">Design</a>
+        <a href="#assets">Assets</a>
+        <a href="#templates">Templates</a>
+        <a href="#rules">Rules</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shell hero">
+        <div>
+          <p class="eyebrow">Public AI brand kit</p>
+          <h1>Safespring AI Brand Kit</h1>
+          <p class="lead">
+            Stable instructions, tokens, curated core assets, and editable templates for AI tools creating Safespring
+            images, PowerPoint presentations, Word documents, and similar communication material.
+          </p>
+        </div>
+        <aside class="command-box" aria-label="Primary AI instruction URL">
+          <p>Give this URL to an AI tool as the source of truth for Safespring visual style.</p>
+          <div class="url-row">
+            <code id="instructionUrl">https://www.safespring.com/brand/ai/ai-instructions.md</code>
+            <button type="button" data-copy="instructionUrl">Copy</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="shell section" id="files">
+        <div class="section-head">
+          <h2>Machine-Readable Files</h2>
+          <p>
+            Use the Markdown instruction for general AI tools and the JSON manifest for automation, asset discovery,
+            and template retrieval.
+          </p>
+        </div>
+        <div class="link-grid">
+          <article class="card">
+            <h3>AI Instructions</h3>
+            <p>Canonical Markdown brief for images, decks, documents, and diagrams.</p>
+            <p class="meta"><a href="/brand/ai/ai-instructions.md">/brand/ai/ai-instructions.md</a></p>
+          </article>
+          <article class="card">
+            <h3>Manifest</h3>
+            <p>Structured colors, typography, logo URLs, icon URLs, templates, and usage rules.</p>
+            <p class="meta"><a href="/brand/ai/brand-kit.json">/brand/ai/brand-kit.json</a></p>
+          </article>
+          <article class="card">
+            <h3>Design Tokens</h3>
+            <p>CSS variables and web font declarations for Safespring-branded web output.</p>
+            <p class="meta"><a href="/brand/ai/brand-tokens.css">/brand/ai/brand-tokens.css</a></p>
+          </article>
+          <article class="card">
+            <h3>Correction Register</h3>
+            <p>Recorded brand corrections and practical review patterns for future AI-generated artifacts.</p>
+            <p class="meta"><a href="/brand/ai/brand-correction-register.md">/brand/ai/brand-correction-register.md</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section" id="register">
+        <div class="section-head">
+          <h2>Brand Correction Register</h2>
+          <p>
+            Use this as the learning log for concrete corrections, including why an artifact felt off-brand and what
+            changed to bring it closer to Safespring's visual system.
+          </p>
+        </div>
+        <article class="card">
+          <h3>Latest Learning Loop</h3>
+          <p>
+            The register currently captures one-pager corrections for strict A4 layout, local Safespring fonts, Font
+            Awesome icons, claim verification, and avoiding generic standalone styling.
+          </p>
+          <p class="meta"><a href="/brand/ai/brand-correction-register.md">Read the correction register</a></p>
+        </article>
+      </section>
+
+      <section class="shell section" id="colors">
+        <div class="section-head">
+          <h2>Core Colors</h2>
+          <p>Use cloud blue as the only colored background for text boxes and graphics. Main colors are for text, icons, lines, logos, and emphasis.</p>
+        </div>
+        <div class="pair-grid" aria-label="Safespring cloud-blue component pairs">
+          <article class="pair-card" style="background: #e7eff3; color: #195f8c">
+            <div>
+              <h3>Blue Component</h3>
+              <p>Default panels, callouts, architecture nodes, and text boxes.</p>
+            </div>
+            <p class="meta">BG #E7EFF3 / FG #195F8C</p>
+          </article>
+          <article class="pair-card" style="background: #e7eff3; color: #417da5">
+            <div>
+              <h3>Middle Blue Component</h3>
+              <p>Secondary information panels and supporting diagram elements.</p>
+            </div>
+            <p class="meta">BG #E7EFF3 / FG #417DA5</p>
+          </article>
+          <article class="pair-card" style="background: #e7eff3; color: #3c9bcd">
+            <div>
+              <h3>Clear Blue Component</h3>
+              <p>Technical highlights, connectors, and labelled infrastructure elements.</p>
+            </div>
+            <p class="meta">BG #E7EFF3 / FG #3C9BCD</p>
+          </article>
+          <article class="pair-card" style="background: #e7eff3; color: #32cd32">
+            <div>
+              <h3>Green Component</h3>
+              <p>Positive status, operational health, and completed steps.</p>
+            </div>
+            <p class="meta">BG #E7EFF3 / FG #32CD32</p>
+          </article>
+          <article class="pair-card" style="background: #e7eff3; color: #fa690f">
+            <div>
+              <h3>Orange Component</h3>
+              <p>Single-point emphasis, warnings, and next-action components.</p>
+            </div>
+            <p class="meta">BG #E7EFF3 / FG #FA690F</p>
+          </article>
+          <article class="pair-card" style="background: #e7eff3; color: #323232">
+            <div>
+              <h3>Neutral Component</h3>
+              <p>Subdued labels, utility panels, and low-emphasis information.</p>
+            </div>
+            <p class="meta">BG #E7EFF3 / FG #323232</p>
+          </article>
+        </div>
+        <div class="color-grid">
+          <article class="card"><div class="swatch" style="background: #195f8c"></div><h3>Main blue</h3><p class="meta">#195F8C</p></article>
+          <article class="card"><div class="swatch" style="background: #417da5"></div><h3>Middle blue</h3><p class="meta">#417DA5</p></article>
+          <article class="card"><div class="swatch" style="background: #3c9bcd"></div><h3>Clear blue</h3><p class="meta">#3C9BCD</p></article>
+          <article class="card"><div class="swatch" style="background: #32cd32"></div><h3>Green</h3><p class="meta">#32CD32</p></article>
+          <article class="card"><div class="swatch" style="background: #19f064"></div><h3>Web green</h3><p class="meta">#19F064</p></article>
+          <article class="card"><div class="swatch" style="background: #fa690f"></div><h3>Orange</h3><p class="meta">#FA690F</p></article>
+          <article class="card"><div class="swatch" style="background: #e7eff3"></div><h3>Cloud blue</h3><p class="meta">#E7EFF3</p></article>
+          <article class="card"><div class="swatch" style="background: #323232"></div><h3>Charcoal</h3><p class="meta">#323232</p></article>
+          <article class="card"><div class="swatch" style="background: #fafefe"></div><h3>Cloud white</h3><p class="meta">#FAFEFE</p></article>
+        </div>
+      </section>
+
+      <section class="shell section" id="design">
+        <div class="section-head">
+          <h2>CSS-Derived Design Cues</h2>
+          <p>
+            These rules mirror Safespring's production CSS: pale technical surfaces, restrained radius,
+            compact labels, and subtle interaction rather than decorative effects.
+          </p>
+        </div>
+        <div class="design-grid">
+          <article class="card design-card">
+            <h3>Surfaces</h3>
+            <p>Use cloud white for the canvas and cloud blue for component surfaces.</p>
+            <code>#FAFEFE / #E7EFF3</code>
+          </article>
+          <article class="card design-card">
+            <h3>Technical Blocks</h3>
+            <p>Use the code-blue surface for code snippets, terminal labels, and API examples.</p>
+            <code>#EAF0F4</code>
+          </article>
+          <article class="card design-card">
+            <h3>Radius</h3>
+            <p>Use 10 px for boxes, 15 px for icon tiles, 20 px for larger media, and pills for controls.</p>
+            <code>10 / 15 / 20 / 50</code>
+          </article>
+          <article class="card design-card">
+            <h3>Motion</h3>
+            <p>Use subtle hover states only: small scale, short transitions, and light shadow.</p>
+            <code>101-102%</code>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section" id="assets">
+        <div class="section-head">
+          <h2>Curated Core Assets</h2>
+          <p>The manifest exposes only core brand assets. Broad photo and campaign archives are intentionally excluded from this first version.</p>
+        </div>
+        <div class="asset-grid">
+          <article class="card">
+            <div class="logo-preview">
+              <img src="/img/logos/safespring_logotype_blue_svg.svg" alt="Safespring blue logotype" />
+            </div>
+            <h3>Blue Logotype</h3>
+            <p>Default logo for light backgrounds.</p>
+          </article>
+          <article class="card">
+            <div class="logo-preview dark">
+              <img src="/img/logos/safespring/png/safespring_logotype_white_png.png" alt="Safespring white logotype" />
+            </div>
+            <h3>White Logotype</h3>
+            <p>Use only in approved dark contexts, not as a reason to create colored backgrounds.</p>
+          </article>
+          <article class="card">
+            <div class="logo-preview">
+              <img src="/img/logos/safespring/png/safespring_symbol_blue_png.png" alt="Safespring blue symbol" />
+            </div>
+            <h3>Symbol</h3>
+            <p>Compact mark for constrained spaces.</p>
+          </article>
+          <article class="card">
+            <div class="logo-preview flag">
+              <img src="/brand/ai/assets/safespring-flag.svg" alt="Safespring blue flag" />
+            </div>
+            <h3>Presentation Flag</h3>
+            <p>Top-left brand mark for slides. Do not use main blue as a general background.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section" id="templates">
+        <div class="section-head">
+          <h2>Editable Templates</h2>
+          <p>Starting points for AI-assisted or manually edited Safespring presentation and document work.</p>
+        </div>
+        <div class="template-grid">
+          <article class="card">
+            <h3>PowerPoint Template</h3>
+            <p>16:9 editorial deck with title, section, agenda, diagram, and closing slide patterns.</p>
+            <div class="template-actions">
+              <a class="button" href="/brand/ai/templates/safespring-presentation-template.pptx">Download PPTX</a>
+              <a class="button secondary" href="/brand/ai/brand-kit.json">Manifest</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Word Template</h3>
+            <p>Branded document starter with title page, heading ladder, callout, table, and technical block.</p>
+            <div class="template-actions">
+              <a class="button" href="/brand/ai/templates/safespring-document-template.docx">Download DOCX</a>
+              <a class="button secondary" href="/brand/ai/ai-instructions.md">Instructions</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section" id="rules">
+        <div class="section-head">
+          <h2>Usage Rules</h2>
+          <p>These guardrails are intentionally simple so they work across image, slide, document, and diagram tools.</p>
+        </div>
+        <div class="rules-grid">
+          <article class="card">
+            <h3>Do</h3>
+            <ul class="rule-list">
+              <li>Use a restrained European cloud infrastructure style.</li>
+              <li>Use real logo assets from the manifest.</li>
+              <li>Use cloud-blue backgrounds with main-color text and icons.</li>
+              <li>Keep text readable and evidence-led.</li>
+              <li>Use orange for one primary emphasis.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Do Not</h3>
+            <ul class="rule-list">
+              <li>Invent certifications, customers, claims, or regions.</li>
+              <li>Redraw or distort the Safespring logo.</li>
+              <li>Use main colors as ordinary component or slide backgrounds.</li>
+              <li>Use cyberpunk, cartoon, luxury, or consumer-app styling.</li>
+              <li>Place text over low-contrast imagery.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>AI Prompt Starter</h3>
+            <p>
+              Create a Safespring-branded artifact about [topic]. Follow
+              <a href="/brand/ai/ai-instructions.md">the AI instructions</a> and use
+              <a href="/brand/ai/brand-kit.json">the manifest</a>.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <p>Safespring AI Brand Kit. Source of truth: existing Safespring web assets and brand colors.</p>
+    </footer>
+
+    <script>
+      async function copyText(text) {
+        if (navigator.clipboard?.writeText && window.isSecureContext) {
+          try {
+            await navigator.clipboard.writeText(text);
+            return true;
+          } catch (_) {
+            // Fall through to the selection-based copy path.
+          }
+        }
+
+        const helper = document.createElement("textarea");
+        helper.value = text;
+        helper.setAttribute("readonly", "");
+        helper.style.position = "fixed";
+        helper.style.top = "-1000px";
+        helper.style.left = "-1000px";
+        document.body.appendChild(helper);
+        helper.select();
+
+        let copied = false;
+        try {
+          copied = document.execCommand("copy");
+        } catch (_) {
+          copied = false;
+        }
+        helper.remove();
+        return copied;
+      }
+
+      function selectText(element) {
+        const range = document.createRange();
+        range.selectNodeContents(element);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+
+      document.querySelectorAll("[data-copy]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const target = document.getElementById(button.dataset.copy);
+          if (!target) return;
+          const copied = await copyText(target.textContent.trim());
+          if (!copied) selectText(target);
+          const original = button.textContent;
+          button.textContent = copied ? "Copied" : "Select URL";
+          setTimeout(() => {
+            button.textContent = original;
+          }, 1400);
+        });
+      });
+    </script>
+  </body>
+</html>

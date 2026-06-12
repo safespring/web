@@ -1,0 +1,50 @@
+{
+  "acceptable_use_policy": {
+    "id": "65d031118b1a",
+    "version": "1.0",
+    "majorVersion": "1",
+    "updateCount": 0,
+    "commit": "65d031118b1a9ae66f0d1029498faf3cfd126841",
+    "dirty": false
+  },
+  "data_processing_agreement": {
+    "id": "65d031118b1a",
+    "version": "1.0",
+    "majorVersion": "1",
+    "updateCount": 0,
+    "commit": "65d031118b1a9ae66f0d1029498faf3cfd126841",
+    "dirty": false
+  },
+  "general_terms_and_conditions": {
+    "id": "65d031118b1a",
+    "version": "1.0",
+    "majorVersion": "1",
+    "updateCount": 0,
+    "commit": "65d031118b1a9ae66f0d1029498faf3cfd126841",
+    "dirty": false
+  },
+  "privacy_policy": {
+    "id": "65d031118b1a",
+    "version": "1.0",
+    "majorVersion": "1",
+    "updateCount": 0,
+    "commit": "65d031118b1a9ae66f0d1029498faf3cfd126841",
+    "dirty": false
+  },
+  "service_level_agreement": {
+    "id": "b20321d2d0e5",
+    "version": "1.1",
+    "majorVersion": "1",
+    "updateCount": 1,
+    "commit": "b20321d2d0e5f3a155e144df934238863db5e5d9",
+    "dirty": false
+  },
+  "support_process": {
+    "id": "65d031118b1a",
+    "version": "1.0",
+    "majorVersion": "1",
+    "updateCount": 0,
+    "commit": "65d031118b1a9ae66f0d1029498faf3cfd126841",
+    "dirty": false
+  }
+}
