@@ -10,7 +10,7 @@ eventbild: ""
 socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "Se"
 section: "blogg"
-author: ""
+author: "Gabriel Paues"
 ---
 
 {{< ingress >}}
@@ -23,7 +23,7 @@ Begreppet är relativt nytt. Frågorna är det inte.
 
 På Safespring har vi under flera år skrivit om delar av samma problemområde, ofta från olika utgångspunkter. I vissa fall har diskussionen handlat om jurisdiktion och dataskydd. I andra fall har den handlat om molnarkitektur, AI eller offentlig upphandling. Gemensamt för många av dessa frågor är att de i grunden handlar om kontroll, beroenden och handlingsfrihet.
 
-Flera av resonemangen påminner om det vi tidigare beskrev i artikeln [Det multidimensionella problemet](/blogg/2025/2025-08-det-multidimensionella-problemet/), där juridik, säkerhet, drift, geopolitiska förutsättningar och verksamhetsrisk behandlas som delar av samma fråga.
+Flera av resonemangen påminner om det vi tidigare beskrev i artikeln [Det multidimensionella problemet](https://www2.safespring.com/blogg/2025/2025-08-det-multidimensionella-problemet/), där juridik, säkerhet, drift, geopolitiska förutsättningar och verksamhetsrisk behandlas som delar av samma fråga.
 
 ## När juridiken möter infrastrukturen
 
@@ -37,7 +37,7 @@ Vilken lagstiftning gäller för leverantören?
 
 Vilka möjligheter finns att flytta data om förutsättningarna förändras?
 
-I white paperet [Läget efter EU-US Data Protection Framework (DPF)](/whitepaper/eu-us-dpf/) beskrev vi hur dessa frågor påverkar riskbedömningen även när data lagras inom Europa.
+I white paperet [Läget efter EU-US Data Protection Framework (DPF)](https://www2.safespring.com/whitepaper/eu-us-dpf/) beskrev vi hur dessa frågor påverkar riskbedömningen även när data lagras inom Europa.
 
 ## Öppna standarder och möjligheten att byta väg
 
@@ -55,7 +55,7 @@ S3-kompatibla lagringsgränssnitt används för att minska beroendet av en speci
 
 Tekniken eliminerar inte leverantörsberoenden. Den kan däremot minska kostnaden för framtida förändringar.
 
-Vi har tidigare berört samma frågor i artikeln [Helhetsgrepp om molninfrastrukturen](/blogg/2023/2023-06-molninfrastruktur/) och i flera texter om OpenStack, Kubernetes och leverantörsoberoende arkitektur.
+Vi har tidigare berört samma frågor i artikeln [Helhetsgrepp om molninfrastrukturen](https://www2.safespring.com/blogg/2023/2023-06-molninfrastruktur/) och i flera texter om OpenStack, Kubernetes och leverantörsoberoende arkitektur.
 
 ## Samma frågor dyker nu upp inom AI
 
@@ -77,7 +77,29 @@ Vilka krav ställer AI Act på dokumentation och transparens?
 
 I rapporten behandlas detta som en del av digital rådighet. Vi ser samma frågor i samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor.
 
-Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där frågor om dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](/en/services/machine-learning-ai-gpu-resources/).
+Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där frågor om dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](https://www2.safespring.com/en/services/machine-learning-ai-gpu-resources/).
+
+Länge var detta en diskussion om risker som skulle kunna inträffa. I juni 2026 blev det en diskussion om något som faktiskt hade inträffat.
+
+Fredagen den 12 juni 2026 beordrade det amerikanska handelsdepartementet AI-företaget Anthropic att stänga av åtkomsten till sina två mest kapabla modeller, Fable 5 och den underliggande Mythos 5, för samtliga utländska medborgare, oavsett om de befann sig inom eller utanför USA. Enligt Axios skickades ordern som ett brev från handelsminister Howard Lutnick till företagets vd Dario Amodei, med modellerna placerade under exportkontroll och med hot om sanktioner vid bristande efterlevnad.
+
+Anthropic hade ingen praktisk möjlighet att skilja utländska användare från amerikanska. För att garantera efterlevnad stängde företaget därför av modellerna för alla kunder. Enligt Fortune gavs företaget 90 minuter på sig att genomföra avstängningen. Den mest kapabla AI-modell som dittills hade gjorts allmänt tillgänglig slutade fungera över hela världen på en eftermiddag.
+
+Det officiella skälet var säkerhet. Den utlösande händelsen var enligt flera medier att ett annat företag uppgav sig ha kringgått modellens skyddsmekanismer och fått ut känslig information om cyberangrepp. Oavsett om man läser det som en verklig säkerhetsincident eller som en lämplig förevändning är mekanismen densamma. Ett brev, en fredag, och en spjutspetstjänst försvann för alla utom dem inom en enda jurisdiktion.
+
+För en svensk eller europeisk verksamhet är poängen inte vilken leverantör eller modell det råkade gälla. Poängen är att de mest kapabla AI-verktygen på marknaden ligger inom en jurisdiktion som nu har visat att den använder sin kontroll över dem när det passar dess intressen. Ett beroende som en främmande stat kan återkalla per brev är inte en förmåga man äger. Det är en förmåga man hyr på villkor som kan ändras utan förvarning och utan samtycke.
+
+## Det är ett mönster, inte ett enskilt fall
+
+Avstängningen av Fable 5 och Mythos 5 var ovanligt dramatisk, men den var inte den första gången USA använt sin kontroll över amerikanska teknikföretag som ett utrikespolitiskt påtryckningsmedel.
+
+Redan 2019 ledde president Trumps Executive Order 13884 till att Adobe stängde av samtliga konton i Venezuela. Användare och företag förlorade tillgången till program som Photoshop, Illustrator och Acrobat, och Adobe meddelade inledningsvis att man inte ens fick återbetala betalda prenumerationer. Här var det inte en enskild person utan ett helt lands användare som kopplades bort, som en följd av amerikanska sanktioner.
+
+I februari 2025 sanktionerade Trump-administrationen Karim Khan, chefsåklagare vid Internationella brottmålsdomstolen i Haag, efter att domstolen utfärdat en arresteringsorder mot Israels premiärminister Benjamin Netanyahu. Enligt nederländska medier stängdes Khans e-postkonto hos Microsoft därefter av, och han fick övergå till den schweiziska tjänsten Proton Mail. Microsofts president Brad Smith har bestritt beskrivningen att företaget avbröt sina tjänster till domstolen, men kontot kopplades likväl bort. Händelsen fick den nederländska regeringen att inleda en översyn av sitt beroende av amerikansk teknik.
+
+Tre fall, tre olika administrationsperioder, tre olika delar av tekniksektorn. Grafikprogram, e-post, och nu en frontmodell inom AI. Mönstret är att USA inte tvekar att utnyttja sitt inflytande över de amerikanska leverantörerna, och att räckvidden för det inflytandet växer i takt med att tjänsterna blir mer centrala.
+
+Det här är kärnan i varför digital rådighet inte kan reduceras till en fråga om var data lagras. Det handlar om vem som ytterst kan fatta beslut om huruvida en tjänst ska finnas kvar.
 
 ## NIS2 förändrar diskussionen
 
@@ -91,7 +113,7 @@ För vissa organisationer leder det till nya krav i upphandlingar.
 
 För andra leder det till nya krav på dokumentation, arkitektur eller leverantörsstyrning.
 
-Samma utveckling ligger bakom flera av de resonemang vi tidigare fört kring digital rådighet, leverantörsrisk och europeisk infrastruktur, bland annat i artikeln [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/).
+Samma utveckling ligger bakom flera av de resonemang vi tidigare fört kring digital rådighet, leverantörsrisk och europeisk infrastruktur, bland annat i artikeln [EU har precis definierat det suveräna molnet, här är vårt resultat](https://www2.safespring.com/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/).
 
 ## Digital rådighet i praktiken
 
@@ -103,6 +125,7 @@ I praktiken handlar det ofta om ett antal konkreta frågor:
 - Finns dokumenterade exit-möjligheter?
 - Är infrastrukturen beroende av en specifik leverantör?
 - Finns alternativ om juridiska eller kommersiella förutsättningar förändras?
+- Kan en kritisk AI-funktion ersättas om åtkomsten plötsligt dras tillbaka?
 - Är arkitekturen byggd för förändring eller för permanenta beroenden?
 
 Svar på dessa frågor kommer att se olika ut för olika verksamheter.
@@ -115,4 +138,4 @@ Det är också därför digital rådighet inte är en produkt eller en certifier
 
 Det är resultatet av många tekniska, juridiska och organisatoriska beslut som fattas över tid.
 
-För den som vill fördjupa sig ytterligare i den europeiska dimensionen av frågan rekommenderar vi även artiklarna [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/) och [Varför Safespring stödjer EuroStack](/blogg/2025/2025-03-eurostack/).
+För den som vill fördjupa sig ytterligare i den europeiska dimensionen av frågan rekommenderar vi även artiklarna [EU har precis definierat det suveräna molnet, här är vårt resultat](https://www2.safespring.com/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/) och [Varför Safespring stödjer EuroStack](https://www2.safespring.com/blogg/2025/2025-03-eurostack/).
