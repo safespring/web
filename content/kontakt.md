@@ -40,6 +40,7 @@ Vår ledningsgrupp arbetar för att säkerställa att vi levererar högkvalitati
 {{< contact-small title="CEO" name="Johan Harrysson" email="johan.harrysson@safespring.com" >}}
 {{< contact-small title="People & Culture" name="Marietta Wasilewska" email="marietta.wasilewska@safespring.com" >}}
 {{< contact-small title="CCO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
+{{< contact-small title="CR&OO" name="Rob McCuaig" email="rob.mccuaig@safespring.com" >}}
 {{< contact-small title="Head of Engineering" name="Rob Haverkamp" email="rob.haverkamp@safespring.com" >}}
 {{< /flexbox >}}
 
