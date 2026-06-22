@@ -18,7 +18,7 @@ aliases:
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-leaf" text="100% CO2-minskning" link="#" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-leaf" text="100% CO2-minskning" link="" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-tank-water" text="Vätske­kylning" link="" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lägre energikostnader" link="" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-recycle" text="Klimatneutralt" link="" color="#3C9BCD">}}

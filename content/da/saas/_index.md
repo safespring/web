@@ -39,7 +39,7 @@ Hvis din SaaS indeholder fortrolige oplysninger, uanset om det er oplysninger om
 {{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datacentre" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se vores webcasts" link="/webinar/" color="#195F8C">}}
 {{< icon-block icon="fa-kit fa-safespring-icon" text="Lær virksomheden at kende" linkref="/about.md" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-lightbulb-on" text="Læs løsningsbeskrivelser" link="/solution-brief/" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-lightbulb-on" text="Læs løsningsbeskrivelser" link="/losningsfaktablad/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Læs om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
 {{< /icon-block-container >}}

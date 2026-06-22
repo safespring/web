@@ -21,6 +21,6 @@ You’re now part of a growing community receiving exclusive updates, insights, 
 
 ### Safspring in your own languge
 
-- [Visit the Swedish site](/)
-- [Visit the Norwegian site](/no)
-- [Visit the English site](/en)
+- [Visit the Swedish site](https://beta.safespring.se/)
+- [Visit the Norwegian site](https://beta.safespring.no/)
+- [Visit the English site](https://beta.safespring.eu/)

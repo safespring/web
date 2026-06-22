@@ -9,7 +9,7 @@ intro: "Integrer Safespring On-Premise Cloud i T.Loops' svenske bærekraftige an
 background: ""
 form: ""
 sidebarlinkname: "Les om Private Cloud"
-sidebarlinkurl: "/services/managed-infrastructure"
+sidebarlinkurl: "/tjenester/safesprings-lokale-sky/"
 sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute"
 socialmedia: ""
@@ -18,7 +18,7 @@ aliases:
   - /tjanster/tloop/
 ---
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-leaf" text="100 % CO₂-reduksjon" link="#" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100 % CO₂-reduksjon" link="" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-tank-water" text="Væskekjøling" link="" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30 % lavere energikostnader" link="" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-recycle" text="Klimanøytralt" link="" color="#3C9BCD">}}

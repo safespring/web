@@ -18,7 +18,7 @@ aliases:
   - /tjanster/tloop/
 ---
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-leaf" text="100% CO2 reduction" link="#" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100% CO2 reduction" link="" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-tank-water" text="Liquid cooling" link="" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lower energy costs" link="" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-recycle" text="Climate neutral" link="" color="#3C9BCD">}}

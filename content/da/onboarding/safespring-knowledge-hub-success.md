@@ -21,6 +21,6 @@ Du er nu en del af et voksende fællesskab, der får eksklusive opdateringer, in
 
 ### Safspring på dit eget sprog
 
-- [Besøg den svenske side](/)
-- [Besøg den norske side](/no)
-- [Besøg den engelske side](/en)
+- [Besøg den svenske side](https://beta.safespring.se/)
+- [Besøg den norske side](https://beta.safespring.no/)
+- [Besøg den engelske side](https://beta.safespring.eu/)

@@ -50,4 +50,4 @@ Tack för er förståelse och ert samarbete.
 Med vänliga hälsningar,  
 Safesprings supportteam
 
-{{< 2calltoaction "Kontakta supporten" "mailto:support@safespring.com" "Mer om vår plattform" "/services/" >}}
+{{< 2calltoaction "Kontakta supporten" "mailto:support@safespring.com" "Mer om vår plattform" "/tjanster/" >}}

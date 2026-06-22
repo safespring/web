@@ -26,7 +26,7 @@ Med Safespring som underleverandør kan du byde på flere udbud med mere specifi
 
 Vil du se, hvilke partnerformer vi arbejder med? [Læs mere om at blive partner med Safespring]({{< relref "become-partner" >}}).
 
-{{< 2calltoaction "Ring til os" "tel:+46855107370" "Find kontaktperson" "/contact" >}}
+{{< 2calltoaction "Ring til os" "tel:+46855107370" "Find kontaktperson" "/kontakt/" >}}
 
 ### Ingen tvivlsomme underleverandører
 
