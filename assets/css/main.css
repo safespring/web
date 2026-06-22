@@ -6276,14 +6276,9 @@ margin-bottom:2rem;
 }
 
 .flex-item > p {
-  display: -webkit-box;
-  overflow: hidden;
   color: #323232;
   font: 300 1.125rem montserrat;
   line-height: 1.5;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 
 @media screen and (max-width: 640px) {
