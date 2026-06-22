@@ -158,13 +158,13 @@ download_price_list = "Last ned prislisten"
 
 [ai_disclaimer]
 title = "Automatisk oversatt"
-intro = "Denne tekst er automatisk oversat for din bekvemmelighed. Du kan læse teksten på:"
+intro = "Denne teksten er automatisk oversatt for din bekvemmelighet. Du kan lese teksten på:"
 original = "original"
-feedback = "Giv feedback"
-mail_subject = "Feedback på oversættelse – "
-mail_body = """Hej Safespring-team!
+feedback = "Gi tilbakemelding"
+mail_subject = "Tilbakemelding på oversettelse – "
+mail_body = """Hei Safespring-team!
 
-Jeg vil gerne rapportere et problem med oversættelsen på denne side:
+Jeg vil gjerne rapportere et problem med oversettelsen på denne siden:
 {{ .Permalink }}
 
 Mine kommentarer:
