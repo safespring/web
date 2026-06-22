@@ -47,11 +47,11 @@
       </div>
       <div class="blogg-card-wapper">
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
-        <h1
+        <h2
           class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
         >
           {{ .Title }}
-        </h1>
+        </h2>
         <span class="text-button">{{ T "knowledgehub.read_post" }}</span>
       </div>
     {{ else if eq $section "tech-update" }}
@@ -76,11 +76,11 @@
           >
         </div>
         <div>
-          <h1
+          <h2
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
           >
             {{ .Title }}
-          </h1>
+          </h2>
           <p class="mb-1">{{ .Params.intro }}</p>
         </div>
         <div>
@@ -114,11 +114,11 @@
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
       </div>
       <div class="blogg-card-wapper">
-        <h1
+        <h2
           class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
         >
           {{ .Title }}
-        </h1>
+        </h2>
         <div class="webinar-card-link">{{ T "landing.play" }}</div>
       </div>
     {{ else if eq $section "solution-brief" }}
@@ -145,11 +145,11 @@
         >
       </div>
       <div class="blogg-card-wapper">
-        <h1
+        <h2
           class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
         >
           {{ .Title }}
-        </h1>
+        </h2>
         <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
       </div>
     {{ else if eq $section "whitepaper" }}
@@ -159,11 +159,11 @@
             class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
             >{{ T "knowledgehub.whitepaper" }}</span
           >
-          <h1
+          <h2
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
           >
             {{ .Title }}
-          </h1>
+          </h2>
           <p class="mb-1">{{ .Params.intro }}</p>
         </div>
         <div>
@@ -177,11 +177,11 @@
             class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
             >{{ .Params.section }}</span
           >
-          <h1
+          <h2
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
           >
             {{ .Title }}
-          </h1>
+          </h2>
           <p class="mb-1">{{ .Params.intro }}</p>
         </div>
         <div>

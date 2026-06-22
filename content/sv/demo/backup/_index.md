@@ -19,7 +19,7 @@ sidebarimage: ""
 nosidebar: "osynlig"
 toc: "Avsnitt"
 ---
-# Boka in ett möte med Gabriel!
+## Boka in ett möte med Gabriel!
 
 {{< ingress >}}
 Varför välja en svensk IaaS-leverantör som upprätthåller strikta krav på dataskydd och efterlevnad för dina programvarulösningar?

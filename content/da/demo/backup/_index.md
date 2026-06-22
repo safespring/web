@@ -19,7 +19,7 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Afsnit"
 ---
-# Book et møde med Gabriel!
+## Book et møde med Gabriel!
 
 {{< ingress >}}
 Hvorfor vælge en svensk IaaS-udbyder, der opretholder strenge krav til datakompliance for dine softwareløsninger?
