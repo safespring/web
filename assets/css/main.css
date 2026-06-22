@@ -1565,6 +1565,14 @@ blockquote p {
   transform: scale(1.2);
 }
 
+.form-field input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 3px solid var(--main-color) !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(232, 239, 243, 0.95) !important;
+}
+
 /* Checkbox toggle */
 
 .inputGroup {
