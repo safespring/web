@@ -2128,6 +2128,9 @@ color:var(--unCheckedColor);
 }
 
 .sidebar-documentation a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: #7d7d7d !important;
 }
 .sidebar-documentation a:hover {
