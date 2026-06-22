@@ -2319,6 +2319,8 @@ color:var(--unCheckedColor);
 }
 .safespring-footer-information-menu a,
 .safespring-footer-information-menu button {
+  align-items: center;
+  box-sizing: border-box;
   color: #195f8c90;
   display: flex;
   gap: 20px;
@@ -2330,6 +2332,7 @@ color:var(--unCheckedColor);
   padding-inline-start: 0;
   font: 12px/1 var(--mon-font);
   margin: 12px 0;
+  min-height: 44px;
   transition: 0.1s;
   cursor: pointer;
 }
@@ -2602,9 +2605,12 @@ color:var(--unCheckedColor);
 
   .safespring-footer-information-menu a,
   .safespring-footer-information-menu button {
-    font: 300 16px/45px var(--mon-font);
+    align-items: center;
+    display: inline-flex;
+    font: 300 16px/1.2 var(--mon-font);
+    max-width: 100%;
+    min-height: 44px;
     color: var(--main-color);
-    display: initial;
     background-color: #195f8c10;
     padding: 10px 15px;
     border-radius: 10px;
@@ -2758,6 +2764,14 @@ color:var(--unCheckedColor);
   border-radius: 500px;
   padding: 6px;
   font-size: 12px;
+}
+
+.contact-small-email {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
 }
 
 /* END – SAFESPRING CONACT CARD */
