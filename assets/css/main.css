@@ -3244,6 +3244,7 @@ body.no-scroll {
   cursor: pointer;
   display: flex;
   font: 16px var(--hind-font) !important;
+  min-height: 44px;
   padding: 0;
   text-align: left;
   width: 100%;
@@ -3270,8 +3271,11 @@ body.no-scroll {
 
 .webinarplaylist ul li a,
 .webinarplaylist ul li button {
+  align-items: center;
+  display: flex;
   font: 16px var(--hind-font) !important;
   color: var(--main-color) !important;
+  min-height: 44px;
 }
 
 .webinarplaylist li:hover {
