@@ -2,6 +2,7 @@
 {{ $label := default "Document" (.Get "label") }}
 {{ $downloadLabel := "Download PDF" }}
 {{ $infoLabel := "Show description for" }}
+{{ $tableOrdinal := .Ordinal }}
 {{ if eq .Page.Site.Language.Lang "sv" }}
   {{ $downloadLabel = "Ladda ner PDF" }}
   {{ $infoLabel = "Visa beskrivning för" }}
@@ -16,7 +17,8 @@
 {{ if gt (len $pages) 0 }}
 <div class="compliance-document-table">
   <div class="compliance-document-table__body">
-    {{ range $page := $pages }}
+    {{ range $index, $page := $pages }}
+    {{ $descriptionID := printf "document-table-%d-description-%d" $tableOrdinal $index }}
     <div class="compliance-document-table__row">
       <a class="compliance-document-table__link" href="{{ $page.RelPermalink }}" aria-label="{{ $page.Title }}">
         <div class="compliance-document-table__main">
@@ -25,7 +27,7 @@
           </span>
           <div class="compliance-document-table__title-wrap">
             <h3 class="compliance-document-table__title">{{ $page.Title }}</h3>
-            <p class="compliance-document-table__description">{{ $page.Params.intro }}</p>
+            <p class="compliance-document-table__description" id="{{ $descriptionID }}" aria-hidden="true">{{ $page.Params.intro }}</p>
           </div>
         </div>
       </a>
@@ -40,7 +42,7 @@
         {{ end }}
 
         <div class="compliance-document-table__info-wrap">
-          <button type="button" class="compliance-document-table__info" aria-label="{{ $infoLabel }} {{ $page.Title }}">
+          <button type="button" class="compliance-document-table__info" aria-label="{{ $infoLabel }} {{ $page.Title }}" aria-expanded="false" aria-controls="{{ $descriptionID }}">
             <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
           </button>
         </div>

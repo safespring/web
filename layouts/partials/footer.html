@@ -255,6 +255,69 @@
 {{ if (findRE "class=\"accordion" .Content 1) }}
   {{ partial "accordion-script.html" (dict "Page" .) }}
 {{ end }}
+{{ if (findRE "compliance-document-table__info" .Content 1) }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var rows = document.querySelectorAll(".compliance-document-table__row");
+
+      rows.forEach(function (row, rowIndex) {
+        var button = row.querySelector(".compliance-document-table__info");
+        var description = row.querySelector(".compliance-document-table__description");
+
+        if (!button || !description) {
+          return;
+        }
+
+        if (!description.id) {
+          description.id = "compliance-document-description-" + rowIndex;
+        }
+
+        button.setAttribute("aria-controls", description.id);
+        button.setAttribute("aria-expanded", "false");
+        description.setAttribute("aria-hidden", "true");
+
+        button.addEventListener("click", function () {
+          var isOpen = button.getAttribute("aria-expanded") === "true";
+          rows.forEach(function (otherRow) {
+            var otherButton = otherRow.querySelector(".compliance-document-table__info");
+            var otherDescription = otherRow.querySelector(".compliance-document-table__description");
+            otherRow.classList.remove("is-description-open");
+            if (otherButton) {
+              otherButton.setAttribute("aria-expanded", "false");
+            }
+            if (otherDescription) {
+              otherDescription.setAttribute("aria-hidden", "true");
+            }
+          });
+
+          if (!isOpen) {
+            row.classList.add("is-description-open");
+            button.setAttribute("aria-expanded", "true");
+            description.setAttribute("aria-hidden", "false");
+          }
+        });
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape") {
+          return;
+        }
+
+        rows.forEach(function (row) {
+          var button = row.querySelector(".compliance-document-table__info");
+          var description = row.querySelector(".compliance-document-table__description");
+          row.classList.remove("is-description-open");
+          if (button) {
+            button.setAttribute("aria-expanded", "false");
+          }
+          if (description) {
+            description.setAttribute("aria-hidden", "true");
+          }
+        });
+      });
+    });
+  </script>
+{{ end }}
 {{ if (findRE "<pre" .Content 1) }}
   <script>
     function addLanguageLabels() {
