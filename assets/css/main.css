@@ -1736,6 +1736,13 @@ blockquote p {
   opacity: 0;
 }
 
+#up-form .inputGroup label a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  vertical-align: middle;
+}
+
 .label-link {
   float: right;
   margin: 3px 0px 0 25px;
@@ -2066,6 +2073,9 @@ color:var(--unCheckedColor);
 }
 
 .sidebar-services a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--clear-blue-color);
 }
 
@@ -3686,6 +3696,9 @@ grid-template-columns:1.3fr 0.7fr */
 }
 
 .table-of-contents a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--alt-color);
 }
 
