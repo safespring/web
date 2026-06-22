@@ -4,6 +4,7 @@
   {{ if or (eq $section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
     {{ $section = "tech-update" }}
   {{ end }}
+  {{ $techUpdateCard := "/img/blogg/cards/safespring-tech-update.svg" }}
   <div
     class="fill-available-space img-250 pointer
     {{ if eq $section "webinar" }}
@@ -21,14 +22,13 @@
     {{ end }}"
   >
     {{ if eq $section "blog" }}
+      {{ $blogCard := "/img/blogg/cards/safespring_card_0.webp" }}
+      {{ with .Params.card }}{{ $blogCard = printf "/img/blogg/cards/%s" . }}{{ end }}
       <img
         class="lazyload"
         loading="lazy"
-        src="{{ if.Params.card }}
-          /img/blogg/cards/{{ .Params.card }}
-        {{ else }}
-          /img/blogg/cards/safespring_card_0.webp
-        {{ end }}"
+        src="{{ $blogCard }}"
+        {{ partial "image-dimensions.html" $blogCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="blogg-card-tagg-container">
@@ -57,7 +57,8 @@
     {{ else if eq $section "tech-update" }}
       <img
         class="tech-card-image"
-        src="/img/blogg/cards/safespring-tech-update.svg"
+        src="{{ $techUpdateCard }}"
+        {{ partial "image-dimensions.html" $techUpdateCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="tech-update-card-content">
@@ -95,6 +96,7 @@
         class="lazyload"
         loading="lazy"
         src="{{ $webinarCard }}"
+        {{ partial "image-dimensions.html" $webinarCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="blogg-card-tagg-container-webinar">
@@ -120,10 +122,12 @@
         <div class="webinar-card-link">{{ T "landing.play" }}</div>
       </div>
     {{ else if eq $section "solution-brief" }}
+      {{ $solutionCard := printf "/img/card/%s" .Params.card }}
       <img
         class="lazyload"
         loading="lazy"
-        src="/img/card/{{ .Params.card }}"
+        src="{{ $solutionCard }}"
+        {{ partial "image-dimensions.html" $solutionCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="blogg-card-tagg-container-solution-brief">

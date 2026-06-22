@@ -1,8 +1,10 @@
 <div class="webinar-side-bar">
   <div>
+    {{ $logo := "/img/safespring_cloud.svg" }}
     <img
       class="logo"
-      src="/img/safespring_cloud.svg"
+      src="{{ $logo }}"
+      {{ partial "image-dimensions.html" $logo | safeHTMLAttr }}
       alt="{{ T "webinar_sidebar.logo_alt" }}"
     />
   </div>

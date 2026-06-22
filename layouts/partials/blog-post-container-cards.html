@@ -64,7 +64,8 @@
       <div class="content-container blog-card">
         <a href="{{ .RelPermalink }}">
           <div class='fill-available-space img-250 pointer bg-blue-white-fade blue-hover-tech tech-card-flex'>
-            <img class="tech-card-image" src="/img/blogg/cards/safespring-tech-update.svg"
+            {{ $techUpdateCard := "/img/blogg/cards/safespring-tech-update.svg" }}
+            <img class="tech-card-image" src="{{ $techUpdateCard }}" {{ partial "image-dimensions.html" $techUpdateCard | safeHTMLAttr }}
               alt="{{ .Title }}">
             <div class="tech-update-card-content">
               <div class="blogg-card-tagg-container-tech">

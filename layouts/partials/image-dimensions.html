@@ -1,0 +1,32 @@
+{{- $src := replaceRE `^\s+|\s+$` "" . -}}
+{{- $cleanSrc := index (split $src "?") 0 -}}
+{{- if and $cleanSrc (not (or (strings.HasPrefix $cleanSrc "http://") (strings.HasPrefix $cleanSrc "https://") (strings.HasPrefix $cleanSrc "data:"))) -}}
+  {{- $path := strings.TrimPrefix "/" $cleanSrc -}}
+  {{- $file := printf "static/%s" $path -}}
+  {{- if fileExists $file -}}
+    {{- $ext := lower (path.Ext $file) -}}
+    {{- if eq $ext ".svg" -}}
+      {{- $svg := readFile $file -}}
+      {{- with findRE `(?is)<svg[^>]*>` $svg 1 -}}
+        {{- $tag := index . 0 -}}
+        {{- $width := replaceRE `(?is)^.*\swidth=["']?([0-9.]+).*$` `$1` $tag -}}
+        {{- $height := replaceRE `(?is)^.*\sheight=["']?([0-9.]+).*$` `$1` $tag -}}
+        {{- if or (eq $width $tag) (eq $height $tag) -}}
+          {{- $viewBox := replaceRE `(?is)^.*\sviewBox=["']([^"']+)["'].*$` `$1` $tag -}}
+          {{- if ne $viewBox $tag -}}
+            {{- $viewBox = replaceRE `[,]+` " " $viewBox -}}
+            {{- $viewBox = replaceRE `\s+` " " $viewBox -}}
+            {{- $parts := split $viewBox " " -}}
+            {{- if ge (len $parts) 4 -}}
+              {{- if eq $width $tag -}}{{- $width = index $parts 2 -}}{{- end -}}
+              {{- if eq $height $tag -}}{{- $height = index $parts 3 -}}{{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if and (ne $width $tag) (ne $height $tag) -}} width="{{ $width }}" height="{{ $height }}"{{- end -}}
+      {{- end -}}
+    {{- else -}}
+      {{- with imageConfig $file -}} width="{{ .Width }}" height="{{ .Height }}"{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

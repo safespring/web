@@ -46,9 +46,10 @@
     {{ if eq $authorImageVariant "firma" }}{{ $authorImageVariant = "firm" }}{{ end }}
     {{ if eq $authorImageVariant "glad" }}{{ $authorImageVariant = "happy" }}{{ end }}
     {{ $authorImage := index . (printf "image_%s" $authorImageVariant) | default .image_happy | default "safespring.png" }}
+    {{ $authorImageSrc := printf "/img/people/%s" $authorImage }}
     <div itemscope itemtype="http://schema.org/Person" class="author-container">
-      <div class="author-image" style="aspect-ratio: 1/1; background-image: url(/img/people/{{ $authorImage }})">
-        <img itemprop="image" src="/img/people/{{ $authorImage }}" alt="{{ .name }}" style="display:none;">
+      <div class="author-image" style="aspect-ratio: 1/1; background-image: url({{ $authorImageSrc }})">
+        <img itemprop="image" src="{{ $authorImageSrc }}" {{ partial "image-dimensions.html" $authorImageSrc | safeHTMLAttr }} alt="{{ .name }}" style="display:none;">
       </div>
       <div class="author-info">
         <p class="author-name" itemprop="name">{{ .name }}</p>
