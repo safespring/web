@@ -5970,6 +5970,13 @@ padding:1em 3em 3em 3em;
   gap: 10px;
 }
 
+.tf-buttons-container button:focus-visible,
+.tf-buttons-container a.text:focus-visible {
+  outline: 3px solid var(--main-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(232, 239, 243, 0.95);
+}
+
 button {
   background-color: #fafefe;
   border-radius: 50px;
