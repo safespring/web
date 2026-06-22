@@ -4,4 +4,8 @@ set -eu
 # Caddy's repo watcher should call this script after pulling updates.
 # It rebuilds compliance PDFs from the current Git checkout before Hugo publishes.
 
-FORCE_NPM_CI=1 exec "$(dirname -- "$0")/build-site.sh" --minify "$@"
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+root=$(CDPATH= cd -- "$script_dir/.." && pwd)
+
+rm -rf -- "$root/public"
+FORCE_NPM_CI=1 exec "$script_dir/build-site.sh" --cleanDestinationDir --minify "$@"
