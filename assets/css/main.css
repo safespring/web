@@ -1184,6 +1184,10 @@ h4 {
 	opacity:1;
 }
 
+.index-video:focus-within::after {
+	opacity:1;
+}
+
 .video-timeline {
 	width:100%;
 	max-width:100%;
@@ -1275,6 +1279,20 @@ h4 {
 	transition:opacity 0.15s ease;
 }
 
+.video-player:focus-within .video-timeline,
+.video-player:focus-within .video-subtitles {
+	opacity:1 !important;
+	pointer-events:auto !important;
+}
+
+.video-player:focus-within .video-time {
+	opacity:1 !important;
+}
+
+.video-player:focus-within .video-caption-overlay {
+	bottom:calc(5% + 28px);
+}
+
 .video-subtitle-toggle,
 .video-mute-toggle,
 .video-subtitle-select {
@@ -1316,6 +1334,13 @@ h4 {
 
 .video-mute-toggle.is-muted {
 	background:rgba(20, 94, 140, 0.85);
+}
+
+.video-subtitle-toggle:focus-visible,
+.video-mute-toggle:focus-visible {
+	outline:3px solid #F8FBFF;
+	outline-offset:3px;
+	box-shadow:0 0 0 5px rgba(20, 94, 140, 0.72);
 }
 
 .video-subtitle-select {
