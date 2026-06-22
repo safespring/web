@@ -221,6 +221,6 @@ En migrationsplan innehåller den nödvändiga inventeringsfasen, identifiering 
 
 När migreringen är klar väntar systemförvaltning och övervakning i en ny miljö. Verktygen för detta presenteras också i dokumentet, som även visar hur de samverkar för att ge en helhetslösning med fokus på säkerhet och smidiga, agila utvecklingsprocesser.
 
-## AKS‑motsvarigheter som öppen källkod
+## AKS‑motsvarigheter som öppen källkod {#aks-counterparts-as-open-source}
 
 {{< en-aks-alternatives >}}

@@ -83,7 +83,7 @@ Ved å bruke disse verktøyene kan tjenester konfigureres med redundans og robus
 
 Selv om denne tilnærmingen krever manuelt oppsett, gir den administratorer en bedre forståelse av løsningen, noe som skaper trygghet.
 
-## Konklusjon
+## Konklusjon {#conclusion}
 
 Safesprings tjenester setter organisasjoner i stand til å transformere intern IT til moderne skybaserte løsninger, samtidig som sikkerhet, tilgjengelighet og robusthet opprettholdes. I stedet for å lene seg på at en plattform håndterer dette automatisk, får administratorer kunnskapen og verktøyene til å håndtere potensielle problemer.
 

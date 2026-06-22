@@ -83,7 +83,7 @@ Med dessa verktyg kan tjänster konfigureras för redundans och resiliens. Till 
 
 Även om detta tillvägagångssätt kräver manuell uppsättning ger det administratörer en bättre förståelse för lösningen, vilket skapar trygghet och tillförsikt.
 
-## Slutsats
+## Slutsats {#conclusion}
 
 Safesprings tjänster ger organisationer möjlighet att omvandla sin interna IT till moderna molnbaserade lösningar samtidigt som säkerhet, tillgänglighet och resiliens bibehålls. I stället för att förlita sig på att en plattform sköter detta automatiskt får administratörer kunskap och verktyg för att hantera potentiella problem.
 

@@ -79,7 +79,7 @@ När projektet har skapats, notera projektets **Resurs-ID** – det kommer att a
 
 ---
 
-### 2. Skapa OIDC-applikationer
+### 2. Skapa OIDC-applikationer {#2-create-oidc-applications}
 
 Beroende på din miljö, konfigurera en (eller båda) av följande applikationer:
 

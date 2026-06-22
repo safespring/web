@@ -7,7 +7,7 @@ intro: "Fredric Wallsten har lång erfarenhet av arbete med dessa frågor i sin 
 background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 form: "nej"
 sidebarlinkname: "Ladda ner vitboken"
-sidebarlinkurl: "#ned"
+sidebarlinkurl: "#down"
 language: "sv"
 section: "Fredric Wallsten"
 article: "DN.no"

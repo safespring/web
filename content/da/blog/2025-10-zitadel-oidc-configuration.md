@@ -79,7 +79,7 @@ Når det er oprettet, skal du notere projektets **Ressource-ID**; det skal bruge
 
 ---
 
-### 2. Opret OIDC-applikationer
+### 2. Opret OIDC-applikationer {#2-create-oidc-applications}
 
 Afhængigt af dit miljø skal du opsætte en eller begge af følgende applikationer:
 
