@@ -236,17 +236,23 @@
 		border: 2px solid var(--web-green-color);
 	}
 
+	.schedule-demo-form .inputGroup input:focus-visible~label {
+		outline: 3px solid var(--cloud-blue-color);
+		outline-offset: 3px;
+	}
+
 	.schedule-demo-form .inputGroup input {
 		width: 32px;
 		height: 32px;
 		order: 1;
-		z-index: 2;
+		z-index: 3;
 		position: absolute;
-		right: 30px;
+		left: 9px;
 		top: 50%;
 		transform: translateY(-50%);
 		cursor: pointer;
-		visibility: hidden;
+		margin: 0;
+		opacity: 0;
 	}
 
 	@keyframes schedule-demo-rotate {
