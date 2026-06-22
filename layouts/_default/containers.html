@@ -613,6 +613,18 @@ h3{
 }
 
 @media (max-width: 500px) {
+  .two-fields-div {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .first-fields-div,
+  .second-fields-div {
+    box-sizing: border-box;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
   .second-fields-div {
     padding: 0%;
   }
@@ -627,7 +639,10 @@ h3{
 }
 
 .blue-box a{
+  align-items: center;
+  display: inline-flex;
   font-weight: 600;
+  min-height: 44px;
 }
 
 @media (max-width: 900px) {
