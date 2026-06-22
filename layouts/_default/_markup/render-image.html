@@ -1,0 +1,7 @@
+<img
+  src="{{ .Destination | safeURL }}"
+  {{ partial "image-dimensions.html" (dict "src" .Destination "page" .Page) | safeHTMLAttr }}
+  alt="{{ .Text }}"
+  {{ with .Title }}title="{{ . }}"{{ end }}
+  loading="lazy"
+/>

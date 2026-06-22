@@ -1,8 +1,20 @@
-{{- $src := replaceRE `^\s+|\s+$` "" . -}}
+{{- $src := . -}}
+{{- $page := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $src = .src -}}
+  {{- $page = .page -}}
+{{- end -}}
+{{- $src = replaceRE `^\s+|\s+$` "" $src -}}
 {{- $cleanSrc := index (split $src "?") 0 -}}
 {{- if and $cleanSrc (not (or (strings.HasPrefix $cleanSrc "http://") (strings.HasPrefix $cleanSrc "https://") (strings.HasPrefix $cleanSrc "data:"))) -}}
   {{- $path := strings.TrimPrefix "/" $cleanSrc -}}
   {{- $file := printf "static/%s" $path -}}
+  {{- if and (not (strings.HasPrefix $cleanSrc "/")) $page $page.File -}}
+    {{- $contentFile := path.Clean (path.Join (path.Dir $page.File.Path) $cleanSrc) -}}
+    {{- if fileExists (printf "content/%s" $contentFile) -}}
+      {{- $file = printf "content/%s" $contentFile -}}
+    {{- end -}}
+  {{- end -}}
   {{- if fileExists $file -}}
     {{- $ext := lower (path.Ext $file) -}}
     {{- if eq $ext ".svg" -}}

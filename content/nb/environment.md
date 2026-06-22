@@ -27,7 +27,7 @@ Ved å velge fornybar energi unngår vi karbonutslipp som ellers ville vært ska
 
 For å bekrefte vår bærekraftsprestasjon har vi valgt å få tjenestene våre sertifisert av «The Green Web Foundation». Denne organisasjonen arbeider for å gjøre internett til et grønnere sted og sertifiserer selskaper som bruker fornybar energi for sine nettsider og digitale tjenester. Å få tjenestene våre sertifisert av The Green Web Foundation er et skritt i riktig retning mot å bli en grønnere organisasjon.
 
-![Dette nettstedet er grønt hostet – verifisert av thegreenwebfoundation.org](https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true)
+<img src="https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true" alt="Dette nettstedet er grønt hostet – verifisert av thegreenwebfoundation.org" width="200" height="95">
 
 Men det er ikke bare bruken av fornybar energi som gjør oss til en bærekraftig virksomhet. Alle datasentrene våre er utformet for å ha en PUE under 1,2. PUE står for «Power Usage Effectiveness» og er en viktig faktor for å måle energieffektiviteten til et datasenter. En PUE under 1,2 betyr at vi bruker en minimal mengde energi for å drive datasentrene våre, noe som er en viktig del av å redusere vårt miljøavtrykk.
 

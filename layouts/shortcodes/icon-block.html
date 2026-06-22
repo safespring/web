@@ -4,7 +4,8 @@
 <a class="icon-block-link" href='{{ . }}'>{{ end }}
     <div class="icon-block" style='color: {{ .Get "color" }};'>
         {{ if .Get "image" }}
-            <img src='{{ .Get "image" }}' alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;"/>
+            {{ $image := .Get "image" }}
+            <img src='{{ $image }}' {{ partial "image-dimensions.html" $image | safeHTMLAttr }} alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;"/>
         {{ else }}
             <i class='{{ .Get "icon" }} icon'></i>
         {{ end }}

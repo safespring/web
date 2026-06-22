@@ -125,6 +125,7 @@
   }
   .header img.logo {
     height: 24px;
+    width: 112px;
     filter: none;
     margin-bottom: 5px;
     display: block;
@@ -561,6 +562,66 @@
     }
   }
 
+  @media screen and (max-width: 825px) {
+    body {
+      display: block;
+      overflow-x: hidden;
+      padding: 8px;
+    }
+
+    .page {
+      height: auto;
+      max-height: none;
+      max-width: 100%;
+      min-height: 0;
+      min-width: 0;
+      overflow: visible;
+      width: 100%;
+    }
+
+    .header {
+      align-items: flex-start;
+      flex-direction: column;
+      min-height: 0;
+      padding: 28px 16px 18px;
+    }
+
+    .header-left,
+    .header-stats {
+      transform: none;
+    }
+
+    .header-stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 100%;
+    }
+
+    .intro-band {
+      margin: 18px 16px 0;
+    }
+
+    .body {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin: 0 16px;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .trust-card {
+      padding: 0 10px 14px;
+    }
+
+    .cta-footer {
+      align-items: flex-start;
+      flex-direction: column;
+      min-height: 0;
+      padding: 18px 16px;
+    }
+  }
+
   @media print {
     html,
     body {
@@ -595,7 +656,7 @@
   <!-- HEADER -->
   <div class="header">
     <div class="header-left">
-      <img class="logo" src="/img/logos/safespring/png/safespring_logotype_blue_png.png" alt="Safespring" />
+      <img class="logo" src="/img/logos/safespring/png/safespring_logotype_blue_png.png" alt="Safespring" width="5600" height="1200"/>
       <div class="headline">Sovereign cloud built<br>for regulated Europe</div>
     </div>
     <div class="header-stats">
@@ -714,59 +775,59 @@
       <div class="card-body">
         <div class="logo-grid">
           <div class="logo-row square">
-            <div class="logo-cell"><img src="/brand/logos/rise.svg" alt="RISE" /></div>
-            <div class="logo-cell"><img src="/brand/logos/sunet.svg" alt="SUNET" /></div>
-            <div class="logo-cell"><img src="/brand/logos/kth.svg" alt="KTH" /></div>
-            <div class="logo-cell"><img src="/brand/logos/ku.svg" alt="University of Copenhagen" /></div>
-            <div class="logo-cell"><img src="/brand/logos/sipri.svg" alt="SIPRI" /></div>
-            <div class="logo-cell"><img src="/brand/logos/upu.svg" alt="UPU" /></div>
-            <div class="logo-cell"><img src="/brand/logos/uu.svg" alt="Uppsala University" /></div>
-            <div class="logo-cell"><img src="/brand/logos/hs.svg" alt="HS" /></div>
-            <div class="logo-cell"><img src="/brand/logos/nhr.svg" alt="Norwegian Health Registry" /></div>
-            <div class="logo-cell"><img src="/brand/logos/gu.svg" alt="University of Gothenburg" /></div>
+            <div class="logo-cell"><img src="/brand/logos/rise.svg" alt="RISE" width="139" height="178"/></div>
+            <div class="logo-cell"><img src="/brand/logos/sunet.svg" alt="SUNET" width="124" height="157"/></div>
+            <div class="logo-cell"><img src="/brand/logos/kth.svg" alt="KTH" width="190" height="213"/></div>
+            <div class="logo-cell"><img src="/brand/logos/ku.svg" alt="University of Copenhagen" width="200" height="200"/></div>
+            <div class="logo-cell"><img src="/brand/logos/sipri.svg" alt="SIPRI" width="178" height="178"/></div>
+            <div class="logo-cell"><img src="/brand/logos/upu.svg" alt="UPU" width="300" height="300"/></div>
+            <div class="logo-cell"><img src="/brand/logos/uu.svg" alt="Uppsala University" width="199" height="199"/></div>
+            <div class="logo-cell"><img src="/brand/logos/hs.svg" alt="HS" width="209" height="199"/></div>
+            <div class="logo-cell"><img src="/brand/logos/nhr.svg" alt="Norwegian Health Registry" width="229" height="199"/></div>
+            <div class="logo-cell"><img src="/brand/logos/gu.svg" alt="University of Gothenburg" width="249" height="199"/></div>
           </div>
           <div class="logo-row compact">
-            <div class="logo-cell"><img src="/brand/logos/ou.svg" alt="University of Oslo" /></div>
-            <div class="logo-cell"><img src="/brand/logos/oslomet.svg" alt="OsloMet" /></div>
-            <div class="logo-cell"><img src="/brand/logos/saas_gmv.svg" alt="GMV" /></div>
-            <div class="logo-cell"><img src="/brand/logos/Documaster-1.svg" alt="Documaster" /></div>
-            <div class="logo-cell"><img src="/brand/logos/nb.svg" alt="National Library of Sweden" /></div>
-            <div class="logo-cell"><img src="/brand/logos/kammarkollegiet.svg" alt="Kammarkollegiet" /></div>
-            <div class="logo-cell"><img src="/brand/logos/mu.svg" alt="Mid Sweden University" /></div>
-            <div class="logo-cell"><img src="/brand/logos/athena.svg" alt="Athena" /></div>
+            <div class="logo-cell"><img src="/brand/logos/ou.svg" alt="University of Oslo" width="275" height="198"/></div>
+            <div class="logo-cell"><img src="/brand/logos/oslomet.svg" alt="OsloMet" width="60" height="35"/></div>
+            <div class="logo-cell"><img src="/brand/logos/saas_gmv.svg" alt="GMV" width="347" height="200"/></div>
+            <div class="logo-cell"><img src="/brand/logos/Documaster-1.svg" alt="Documaster" width="400" height="224"/></div>
+            <div class="logo-cell"><img src="/brand/logos/nb.svg" alt="National Library of Sweden" width="255" height="137"/></div>
+            <div class="logo-cell"><img src="/brand/logos/kammarkollegiet.svg" alt="Kammarkollegiet" width="317" height="170"/></div>
+            <div class="logo-cell"><img src="/brand/logos/mu.svg" alt="Mid Sweden University" width="399" height="190"/></div>
+            <div class="logo-cell"><img src="/brand/logos/athena.svg" alt="Athena" width="47" height="21"/></div>
           </div>
           <div class="logo-row wide">
-            <div class="logo-cell"><img src="/brand/logos/geant.svg" alt="GEANT" /></div>
-            <div class="logo-cell"><img src="/brand/logos/drt.svg" alt="DRT" /></div>
-            <div class="logo-cell"><img src="/brand/logos/stu.svg" alt="University of Stuttgart" /></div>
-            <div class="logo-cell"><img src="/brand/logos/artvise.svg" alt="Artvise" /></div>
-            <div class="logo-cell"><img src="/brand/logos/piql.svg" alt="Piql" /></div>
-            <div class="logo-cell"><img src="/brand/logos/psnc.svg" alt="PSNC" /></div>
-            <div class="logo-cell"><img src="/brand/logos/su.svg" alt="Stockholm University" /></div>
-            <div class="logo-cell"><img src="/brand/logos/vr.svg" alt="Swedish Research Council" /></div>
+            <div class="logo-cell"><img src="/brand/logos/geant.svg" alt="GEANT" width="1910" height="831"/></div>
+            <div class="logo-cell"><img src="/brand/logos/drt.svg" alt="DRT" width="180" height="76"/></div>
+            <div class="logo-cell"><img src="/brand/logos/stu.svg" alt="University of Stuttgart" width="400" height="166"/></div>
+            <div class="logo-cell"><img src="/brand/logos/artvise.svg" alt="Artvise" width="284" height="115"/></div>
+            <div class="logo-cell"><img src="/brand/logos/piql.svg" alt="Piql" width="81" height="32"/></div>
+            <div class="logo-cell"><img src="/brand/logos/psnc.svg" alt="PSNC" width="95" height="35"/></div>
+            <div class="logo-cell"><img src="/brand/logos/su.svg" alt="Stockholm University" width="400" height="120"/></div>
+            <div class="logo-cell"><img src="/brand/logos/vr.svg" alt="Swedish Research Council" width="400" height="121"/></div>
           </div>
           <div class="logo-row wide">
-            <div class="logo-cell"><img src="/brand/logos/saas_arkivit.svg" alt="ArkivIT" /></div>
-            <div class="logo-cell"><img src="/brand/logos/saas_artvise.svg" alt="Artvise SaaS" /></div>
-            <div class="logo-cell"><img src="/brand/logos/sikt.svg" alt="Sikt" /></div>
-            <div class="logo-cell"><img src="/brand/logos/saas_elastisys.svg" alt="Elastisys" /></div>
-            <div class="logo-cell"><img src="/brand/logos/ec.svg" alt="European Commission" /></div>
-            <div class="logo-cell"><img src="/brand/logos/kn.svg" alt="Karolinska Institutet" /></div>
-            <div class="logo-cell"><img src="/brand/logos/synkzone.png" alt="Synkzone" /></div>
-            <div class="logo-cell"><img src="/brand/logos/sightic.png" alt="Sightic" /></div>
+            <div class="logo-cell"><img src="/brand/logos/saas_arkivit.svg" alt="ArkivIT" width="59" height="17"/></div>
+            <div class="logo-cell"><img src="/brand/logos/saas_artvise.svg" alt="Artvise SaaS" width="378" height="102"/></div>
+            <div class="logo-cell"><img src="/brand/logos/sikt.svg" alt="Sikt" width="400" height="107"/></div>
+            <div class="logo-cell"><img src="/brand/logos/saas_elastisys.svg" alt="Elastisys" width="62" height="16"/></div>
+            <div class="logo-cell"><img src="/brand/logos/ec.svg" alt="European Commission" width="291" height="72"/></div>
+            <div class="logo-cell"><img src="/brand/logos/kn.svg" alt="Karolinska Institutet" width="500" height="124"/></div>
+            <div class="logo-cell"><img src="/brand/logos/synkzone.png" alt="Synkzone" width="1030" height="250"/></div>
+            <div class="logo-cell"><img src="/brand/logos/sightic.png" alt="Sightic" width="1683" height="398"/></div>
           </div>
           <div class="logo-row ultra-top">
-            <div class="logo-cell"><img src="/brand/logos/cuviva.png" alt="Cuviva" /></div>
-            <div class="logo-cell"><img src="/brand/logos/severalninses-logo.png" alt="Severalnines" /></div>
-            <div class="logo-cell"><img src="/brand/logos/sll.svg" alt="Region Stockholm" /></div>
-            <div class="logo-cell"><img src="/brand/logos/sensivo.svg" alt="Sensivo" /></div>
-            <div class="logo-cell"><img src="/brand/logos/lu.svg" alt="Lund University" /></div>
+            <div class="logo-cell"><img src="/brand/logos/cuviva.png" alt="Cuviva" width="440" height="100"/></div>
+            <div class="logo-cell"><img src="/brand/logos/severalninses-logo.png" alt="Severalnines" width="790" height="171"/></div>
+            <div class="logo-cell"><img src="/brand/logos/sll.svg" alt="Region Stockholm" width="400" height="83"/></div>
+            <div class="logo-cell"><img src="/brand/logos/sensivo.svg" alt="Sensivo" width="149" height="30"/></div>
+            <div class="logo-cell"><img src="/brand/logos/lu.svg" alt="Lund University" width="501" height="103"/></div>
           </div>
           <div class="logo-row ultra-bottom">
-            <div class="logo-cell"><img src="/brand/logos/nordunet.svg" alt="NORDUnet" /></div>
-            <div class="logo-cell"><img src="/brand/logos/saas_energy-opticon.svg" alt="Energy Opticon" /></div>
-            <div class="logo-cell"><img src="/brand/logos/eosc.svg" alt="EOSC" /></div>
-            <div class="logo-cell"><img src="/brand/logos/nm.svg" alt="Nationalmuseum" /></div>
+            <div class="logo-cell"><img src="/brand/logos/nordunet.svg" alt="NORDUnet" width="399" height="73"/></div>
+            <div class="logo-cell"><img src="/brand/logos/saas_energy-opticon.svg" alt="Energy Opticon" width="445" height="81"/></div>
+            <div class="logo-cell"><img src="/brand/logos/eosc.svg" alt="EOSC" width="60" height="10"/></div>
+            <div class="logo-cell"><img src="/brand/logos/nm.svg" alt="Nationalmuseum" width="501" height="67"/></div>
           </div>
         </div>
       </div>

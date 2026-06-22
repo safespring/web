@@ -31,8 +31,8 @@ Flere og flere industrier som den offentlige sektor, bank, fintech, RegTech, iGa
 Håndtering af følsomme brugerdata og efterlevelse af regler som GDPR, ISO 27001 eller PCI DSS kan være vanskelig i et dynamisk, containerbaseret miljø på grund af flere lag af abstraktion og virtualisering, som er svære at oversætte til regulatoriske krav, der er skrevet med fysisk infrastruktur og single-tenancy for øje. Derfor har det i de seneste år været en udfordring at overbevise sikkerhedsteams om, at containere kan være lige så sikre – om ikke sikrere – end traditionelle VM'er. Desuden bliver angrebsoverfladen større, når der kommer flere bevægelige dele til.
 
 <br><br>
-<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile" alt="Compliant Kubernetes on Safespring illustration">
-<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop" alt="Compliant Kubernetes on Safespring illustration">
+<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile" alt="Compliant Kubernetes on Safespring illustration" width="318" height="721">
+<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop" alt="Compliant Kubernetes on Safespring illustration" width="582" height="457">
 <br><br>
 
 Hvis jeres nuværende miljø har bestået alle audits, skal DevOps-teams argumentere endnu tydeligere for containerisering, eftersom den nuværende opsætning – selv om den er ufleksibel og giver en langsommere softwareudviklingscyklus – er dokumenteret compliant. Elementer som netværkssegmentering, firewalls, rollebaseret adgangskontrol, håndtering af secrets, sårbarhedsscanning (antivirus) og opdateringer håndteres alle anderledes i containeriserede miljøer.

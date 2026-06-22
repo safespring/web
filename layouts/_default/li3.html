@@ -15,8 +15,10 @@
       {{ $sectionLabel = .Section }}
     {{ end }}
     {{ if .Params.toplogo }}
+      {{ $topLogo := printf "/img/logos/%s" .Params.toplogo }}
       <img
-        src="/img/logos/{{ .Params.toplogo }}"
+        src="{{ $topLogo }}"
+        {{ partial "image-dimensions.html" $topLogo | safeHTMLAttr }}
         alt="{{ T "general.logo_alt" }}"
         class="toplogo"
       />
@@ -66,7 +68,12 @@
     </div>
   {{ end }}
   {{ if .Params.logo }}
-    <img src="{{ .Params.logo }}" alt="{{ T "general.logo_alt" }}" class="logo" />
+    <img
+      src="{{ .Params.logo }}"
+      {{ partial "image-dimensions.html" .Params.logo | safeHTMLAttr }}
+      alt="{{ T "general.logo_alt" }}"
+      class="logo"
+    />
   {{ else }}
   {{ end }}
 </div>

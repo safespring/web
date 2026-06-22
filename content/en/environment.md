@@ -28,7 +28,7 @@ By choosing renewable energy, we avoid carbon emissions that would otherwise be 
 
 To confirm our sustainability performance, we have chosen to have our services certified by "The Green Web Foundation". This organization works to strengthen the internet as a green place and certifies companies that use renewable energy for their website and digital services. Having our services certified by The Green Web Foundation is a step in the right direction to becoming a greener organization.
 
-![This website is hosted Green - checked by thegreenwebfoundation.org](https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true)
+<img src="https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org" width="200" height="95">
 
 But it is not only our use of renewable energy that makes us a sustainable business. All our data centers are designed to have a PUE below 1.2. PUE stands for "Power Usage Effectiveness" and is an important factor in measuring the energy efficiency of a data center. A PUE below 1.2 means that we use a minimal amount of energy to run our data centers, which is an important part of reducing our environmental impact.
 

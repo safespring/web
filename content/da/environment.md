@@ -27,7 +27,7 @@ Ved at vælge vedvarende energi undgår vi CO2-udledninger, som ellers ville væ
 
 For at dokumentere vores bæredygtighedsindsats har vi valgt at få vores tjenester certificeret af "The Green Web Foundation". Denne organisation arbejder for at gøre internettet til et grønnere sted og certificerer virksomheder, der bruger vedvarende energi til deres website og digitale tjenester. At få vores tjenester certificeret af The Green Web Foundation er et skridt i den rigtige retning mod at blive en grønnere organisation.
 
-![Dette websted hostes grønt – kontrolleret af thegreenwebfoundation.org](https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true)
+<img src="https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true" alt="Dette websted hostes grønt – kontrolleret af thegreenwebfoundation.org" width="200" height="95">
 
 Men det er ikke kun vores brug af vedvarende energi, der gør os til en bæredygtig virksomhed. Alle vores datacentre er designet til at have en PUE under 1,2. PUE står for "Power Usage Effectiveness" og er en vigtig faktor i målingen af et datacenters energieffektivitet. En PUE under 1,2 betyder, at vi bruger en minimal mængde energi til at drive vores datacentre, hvilket er en vigtig del af at reducere vores miljøpåvirkning.
 

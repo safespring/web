@@ -27,7 +27,7 @@ aliases:
 
 <section class="about-history-section about-history-origin" aria-labelledby="about-history-origin-title">
   <figure class="about-history-origin__media">
-    <img src="/img/background/safespring-fredric-wallsten-2023-portrait.webp" alt="Fredric Wallsten hos Safespring." loading="lazy" decoding="async">
+    <img src="/img/background/safespring-fredric-wallsten-2023-portrait.webp" alt="Fredric Wallsten hos Safespring." loading="lazy" decoding="async" width="1400" height="2153">
     <figcaption class="about-history-origin__caption">Fredric Wallsten, grundlægger</figcaption>
   </figure>
   <div class="about-history-origin__copy">
@@ -109,7 +109,7 @@ aliases:
     <p>Vi bruger udvalgte colocation-partnere til høj tilgængelighed, ydeevne og datalokalitet. Disse faciliteter giver fysisk sikkerhed, redundant strøm og køling samt robust konnektivitet. Hver partner gennemgås i vores proces for leverandørrisikostyring.</p>
   </div>
   <div class="about-history-map__image">
-    <img src="/img/graphics/safespring-cloud-sites-map-container.svg" alt="Kort, der viser Safesprings offentlige og private cloudsites i Stockholm, Oslo og Kalix." loading="lazy" decoding="async">
+    <img src="/img/graphics/safespring-cloud-sites-map-container.svg" alt="Kort, der viser Safesprings offentlige og private cloudsites i Stockholm, Oslo og Kalix." loading="lazy" decoding="async" width="1000" height="1000">
   </div>
   {{< card-grid class="about-history-map__details" ariaLabel="Detaljer om colocation-partnere" >}}
     {{< card-grid-item code="STO1" title="Stockholm" >}}
@@ -155,11 +155,11 @@ Tier III-anlæg med ISO 14001-, ISO 27001- og Eco-Lighthouse-certificering.
     </div>
   </div>
   <div class="about-history-logo-strip" aria-label="Udvalgt forsknings- og uddannelseskontekst">
-    <img src="/img/logos/about-history/sunet.svg" alt="SUNET">
-    <img src="/img/logos/about-history/sikt.svg" alt="Sikt">
-    <img src="/img/logos/about-history/nordunet.svg" alt="NORDUnet">
-    <img src="/img/logos/about-history/eosc.svg" alt="EOSC">
-    <img src="/img/logos/ocre-2024.svg" alt="OCRE 2024">
-    <img class="about-history-logo-strip__wide" src="/img/logos/european-commission-horizontal-white.svg" alt="European Commission">
+    <img src="/img/logos/about-history/sunet.svg" alt="SUNET" width="124" height="157">
+    <img src="/img/logos/about-history/sikt.svg" alt="Sikt" width="400" height="107">
+    <img src="/img/logos/about-history/nordunet.svg" alt="NORDUnet" width="399" height="73">
+    <img src="/img/logos/about-history/eosc.svg" alt="EOSC" width="60" height="10">
+    <img src="/img/logos/ocre-2024.svg" alt="OCRE 2024" width="823" height="141">
+    <img class="about-history-logo-strip__wide" src="/img/logos/european-commission-horizontal-white.svg" alt="European Commission" width="576" height="207">
   </div>
 </section>

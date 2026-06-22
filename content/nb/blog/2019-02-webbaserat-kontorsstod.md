@@ -36,4 +36,4 @@ Samtidig kom det fram at de eksisterende rammeavtalene ikke er tilstrekkelige ti
 
 Safespring vil følge utviklingen tett og bidra i dialogen med vår kompetanse på sikre, moderne og lokale skytjenester. I skrivende stund er vi på plass under presentasjonen av forstudien. Bildet viser Daniel Melin, IT-innkjøper ved Kammarkollegiet.
 
-![Safespring på plass under presentasjonen av forstudien: webbaserte kontorpakker](../safespring-webbaserat-kontorsstod.jpg)
+![Safespring på plass under presentasjonen av forstudien: webbaserte kontorpakker](/img/blogg/socialmedia/safespring-webbaserat-kontorsstod.jpg)
