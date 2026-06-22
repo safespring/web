@@ -14,7 +14,7 @@ sidebarmail: "fredric.wallsten@safespring.com"
 socialmedia: ""
 sidebarlinkname: "Boka demo"
 sidebarlinkurl: "/demo"
-sidebarlinkname2: "Kontaka Safespring"
+sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
 saas: ""
 aliases:
@@ -37,4 +37,4 @@ Safespring är en svensk publik molnplattform och ett alternativ som uppfyller l
 {{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
 {{< /icon-block-container >}}
 
-{{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Öppna presentaion" text="Ta en närmare titt på Safespring och vår svenska molnplattform som fokuserar på compliance och hantering av känsliga data och GDPR." >}}
+{{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Öppna presentation" text="Ta en närmare titt på Safespring och vår svenska molnplattform som fokuserar på compliance och hantering av känsliga data och GDPR." >}}
