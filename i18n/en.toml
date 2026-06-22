@@ -123,6 +123,7 @@ documentation_desc = "Safespring's portal gives you an overview of the project a
 documentation_desc_samurai = "Samurai gives you real-time insights into your company's cybersecurity status. Get started with this documentation."
 demo = "Watch demo"
 demo_show = "Let one of our Cloud Architects show you our platform."
+close_demo = "Hide demo card"
 
 [form]
 title = "Try the cloud service - Experience Safespring"

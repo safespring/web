@@ -114,12 +114,17 @@
         {{ end }}
       </div>
     </div>
-    <div class="close-btn">&times;</div>
+    <button type="button" class="close-btn" aria-label="{{ T "sidebar.close_demo" }}" title="{{ T "sidebar.close_demo" }}">&times;</button>
   </div>
   <script>document.addEventListener('DOMContentLoaded', (event) => {
-    var closeBtn = document.querySelector('.close-btn');
-    closeBtn.addEventListener('click', function() {
-      this.parentElement.style.display = 'none';
+    var closeButtons = document.querySelectorAll('.close-btn');
+    closeButtons.forEach(function(closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        var demoCard = this.closest('.demo-sticky');
+        if (demoCard) {
+          demoCard.style.display = 'none';
+        }
+      });
     });
   });
 </script>

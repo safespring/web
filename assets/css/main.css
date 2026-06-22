@@ -1610,6 +1610,8 @@ blockquote p {
 }
 
 .close-btn {
+  appearance: none;
+  border: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1631,6 +1633,12 @@ blockquote p {
 
 .close-btn:hover {
   transform: scale(1.2);
+}
+
+.close-btn:focus-visible {
+  outline: 3px solid var(--main-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(232, 239, 243, 0.95);
 }
 
 .form-field input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):focus-visible,

@@ -123,6 +123,7 @@ documentation_desc = "Safesprings portal giver dig overblik over projekt- og kon
 documentation_desc_samurai = "Samurai giver dig realtidsindsigt i virksomhedens cybersikkerhedsstatus. Kom i gang med denne dokumentation."
 demo = "Se demo"
 demo_show = "Lad en af vores Cloud Architects vise dig vores platform."
+close_demo = "Skjul demokort"
 
 [form]
 title = "Test cloudtjenesten - Oplev Safespring"
