@@ -33,7 +33,7 @@ I dataskydds- och GDPR-sammanhang pratas ofta om tredjelandsöverföringar. Ett 
 
 Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
-Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera om vilka möjligheter vår infrastruktur ger er att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådvigning kring.
+Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera om vilka möjligheter vår infrastruktur ger er att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådgivning kring.
 
 {{% accordion title="Logghantering och säkerhetsåtgärder" id="1" %}}
 
@@ -123,7 +123,7 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 {{% /accordion %}}
 {{< accordion-script >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" linkref="/services/case/scaleout.md" linktext="Läs Use Case" text="“Det finns ett värde i att kritisk infratruktur finns på plats i Sverige där vi inte är beroende av andra länders lagtiftningar...“ – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" linkref="/services/case/scaleout.md" linktext="Läs Use Case" text="“Det finns ett värde i att kritisk infrastruktur finns på plats i Sverige där vi inte är beroende av andra länders lagstiftningar...“ – Ebba Kreamer, Scaleout" >}}
 
 ## Interna dataskyddsåtgärder
 
