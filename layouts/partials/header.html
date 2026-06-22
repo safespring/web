@@ -537,6 +537,10 @@
   }
 
   /* Mobile menu styles */
+  body.mobile-menu-open .site-header {
+    z-index: 2000;
+  }
+
   :root {
     --initialMain: 5px;
     --initialSub: 10px;
@@ -943,6 +947,36 @@
   /* Prevent body scroll when menu is open */
   body.mobile-menu-open {
     overflow: hidden;
+  }
+
+  body:not(.mobile-menu-open) .mobile-menu-wrapper,
+  body:not(.mobile-menu-open) .mobile-menu-wrapper .menu-screen {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: none;
+  }
+
+  body.mobile-menu-open .mobile-menu-wrapper {
+    background: rgb(250, 254, 254);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none;
+  }
+
+  body.mobile-menu-open .mobile-menu-wrapper:not(.show-submenu) #mobileMainMenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none;
+  }
+
+  body.mobile-menu-open .mobile-menu-wrapper.show-submenu .submenu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none;
   }
 </style>
 
