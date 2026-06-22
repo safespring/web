@@ -4,15 +4,12 @@ Thumbs.db
 
 public/
 
-data/compliance_meta.json
-
 
 node_modules/
 
 .env.local
 
-scripts/__pycache__/
+__pycache__/
+*.py[cod]
 
 deploy/.kubeconfig
-
-tests/__pycache__/

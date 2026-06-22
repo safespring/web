@@ -44,6 +44,7 @@ Vores ledelsesteam arbejder for at sikre, at vi leverer høj kvalitet og innovat
 
 {{< flexbox >}}
 {{< contact-small title="CCO" name="Fredric Wallsten" email="fredric.wallsten@safespring.com" >}}
+{{< contact-small title="CR&OO" name="Rob McCuaig" email="rob.mccuaig@safespring.com" >}}
 {{< contact-small title="Marketing Manager" name="Marcus Boberg" email="marcus.boberg@safespring.com" >}}
 {{< contact-small title="Head of Engineering" name="Rob Haverkamp" email="rob.haverkamp@safespring.com" >}}
 {{< /flexbox >}}

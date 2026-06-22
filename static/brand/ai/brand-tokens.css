@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/montserrat-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/montserrat-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/montserrat-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/montserrat-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/montserrat-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/hind-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/hind-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/hind-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/hind-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/hind-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Safespring Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Safespring-Mono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Safespring Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Safespring-Mono-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Safespring Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Safespring-Mono-SemiBold.woff2") format("woff2");
+}
+
+:root {
+  --ss-blue-main: #195f8c;
+  --ss-blue-main-tint-10: #e8eff3;
+  --ss-blue-middle: #417da5;
+  --ss-blue-clear: #3c9bcd;
+  --ss-green: #32cd32;
+  --ss-green-web: #19f064;
+  --ss-orange: #fa690f;
+  --ss-cloud-blue: #e7eff3;
+  --ss-section-header-blue: #dae5ee;
+  --ss-code-blue: #eaf0f4;
+  --ss-content-blue: #eef2f4;
+  --ss-charcoal: #323232;
+  --ss-cloud-white: #fafefe;
+  --ss-white: #ffffff;
+
+  --ss-component-bg: var(--ss-cloud-blue);
+  --ss-component-bg-blue: var(--ss-cloud-blue);
+  --ss-component-fg-blue: var(--ss-blue-main);
+  --ss-component-bg-middle-blue: var(--ss-cloud-blue);
+  --ss-component-fg-middle-blue: var(--ss-blue-middle);
+  --ss-component-bg-clear-blue: var(--ss-cloud-blue);
+  --ss-component-fg-clear-blue: var(--ss-blue-clear);
+  --ss-component-bg-green: var(--ss-cloud-blue);
+  --ss-component-fg-green: var(--ss-green);
+  --ss-component-bg-web-green: var(--ss-cloud-blue);
+  --ss-component-fg-web-green: var(--ss-green-web);
+  --ss-component-bg-orange: var(--ss-cloud-blue);
+  --ss-component-fg-orange: var(--ss-orange);
+  --ss-component-bg-neutral: var(--ss-cloud-blue);
+  --ss-component-fg-neutral: var(--ss-charcoal);
+  --ss-section-header-bg: var(--ss-section-header-blue);
+  --ss-section-header-fg: var(--ss-blue-main);
+
+  --ss-font-heading: "Hind", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ss-font-body: "Montserrat", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ss-font-mono: "Safespring Mono", "SFMono-Regular", Consolas, monospace;
+
+  --ss-page-bg: var(--ss-cloud-white);
+  --ss-text: var(--ss-charcoal);
+  --ss-heading: var(--ss-blue-main);
+  --ss-link: var(--ss-orange);
+  --ss-border: #c9dce6;
+  --ss-border-blue: #195f8c70;
+  --ss-panel: #ffffff;
+  --ss-radius-image: 5px;
+  --ss-radius-base: 10px;
+  --ss-radius-icon-block: 15px;
+  --ss-radius-panel: 20px;
+  --ss-radius-pill: 50px;
+  --ss-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.10);
+  --ss-shadow-elevated: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
+  --ss-max-text: 700px;
+  --ss-max-code: 800px;
+  --ss-space-component: 20px;
+  --ss-space-section: 50px;
+  --ss-transition: 0.2s ease;
+}
