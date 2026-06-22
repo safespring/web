@@ -1,8 +1,8 @@
 ---
 language: "nb"
+title: "Infrastruktur som en tjeneste (IaaS)"
 ai: true
 ---
-## Infrastruktur som en tjeneste (IaaS) - Moderne løsninger for dine IT-behov
 
 Infrastruktur som en tjeneste (IaaS) er en skybasert tjeneste som tilbyr høy grad av fleksibilitet og skalerbarhet for
 bedrifter. I stedet for å investere i fysiske datasentre og servere, leier bedrifter i stedet disse ressursene som en

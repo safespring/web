@@ -1,4 +1,8 @@
-## Infrastruktur som en tjänst (IaaS) - Moderna lösningar för dina IT-behov
+---
+language: "sv"
+title: "Infrastruktur som en tjänst (IaaS)"
+ai: true
+---
 
 Infrastruktur som en tjänst (IaaS) är en molnbaserad tjänst som erbjuder hög nivå av flexibilitet och skalbarhet för
 företag. I stället för att investera i fysiska datacenter och servrar, hyr företag istället dessa resurser som en

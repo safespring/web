@@ -1,8 +1,8 @@
 ---
 language: "da"
+title: "Hvad er Life Science?"
 ai: true
 ---
-# Hvad er Life Science?
 
 Life science, eller på svensk livsvetenskap, er et bredt og alsidigt forskningsfelt, der omfatter studiet af alt levende. Dette område dækker en række forskellige discipliner og emner, herunder blandt andet:
 

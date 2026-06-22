@@ -1,8 +1,8 @@
 ---
 language: "en"
+title: "Infrastructure as a Service (IaaS)"
 ai: true
 ---
-## Infrastructure as a Service (IaaS) - Modern solutions for your IT needs
 
 Infrastructure as a Service (IaaS) is a cloud-based service that offers a high level of flexibility and scalability for businesses. Instead of investing in physical data centers and servers, companies rent these resources as a fully scalable service. This means you can tailor your IT infrastructure to your specific needs and only pay for the resources you actually use.
 

@@ -117,6 +117,8 @@ body {
 }
 
 pre > code {
+  display: block;
+  min-width: max-content;
   padding: 10px 0 18px 0;
 }
 
@@ -814,8 +816,10 @@ pre > code {
 
 p > code,
 li > code {
-  white-space: nowrap;
   font-size: 1rem;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  word-break: break-word;
 }
 
 @media only screen and (max-width: 900px) {
@@ -848,10 +852,13 @@ code > span {
 pre {
   position: relative;
   background: #eaf0f4 !important;
-  max-width: 800px !important;
+  box-sizing: border-box;
+  display: block !important;
+  max-width: min(800px, 100%) !important;
   padding: 60px 30px 5px 30px !important;
   border-radius: 10px !important;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   font-family: "safespring mono";
   font-size: 0.9rem !important;
   scrollbar-width: thin;
@@ -4393,6 +4400,30 @@ ol li ol li::before {
   margin-bottom: 1rem;
 }
 
+.terms-index {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.terms-index .term a {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(25, 95, 140, 0.08);
+  color: var(--main-color);
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.terms-index .term a:hover {
+  color: var(--link-color);
+}
+
 .ml-2 {
   margin-left: 2rem;
 }
@@ -6030,6 +6061,14 @@ margin-bottom:2rem;
   -webkit-line-clamp: 3;
 }
 
+@media screen and (max-width: 640px) {
+  .flex-item > p {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
+}
+
 .cardicon {
   display: flex;
   height: 40px;
@@ -6125,6 +6164,16 @@ table {
 	background-color:white;
 	border-radius:10px;*/
   margin: 40px 0 80px 0;
+}
+
+.content-default-single table,
+.content-default-single-full-width table,
+.main-default-single-full-width table {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  width: 100%;
 }
 
 table.width100 {
