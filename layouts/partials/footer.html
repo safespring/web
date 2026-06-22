@@ -252,6 +252,9 @@
   </div>
 </div>
 
+{{ if (findRE "class=\"accordion" .Content 1) }}
+  {{ partial "accordion-script.html" (dict "Page" .) }}
+{{ end }}
 {{ if (findRE "<pre" .Content 1) }}
   <script>
     function addLanguageLabels() {
