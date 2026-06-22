@@ -86,6 +86,7 @@
     id="site-megamenu"
     aria-hidden="true"
     aria-label="{{ T "menu.platform" }}"
+    inert
   >
     <div class="megamenu-main-service">
       {{ range $slug := $primaryServiceSlugs }}
@@ -122,9 +123,9 @@
   </div>
 
   <!-- Mobile menu wrapper (inside header) -->
-  <div class="mobile-menu-wrapper" id="mobileMenuWrapper" aria-hidden="true">
+  <div class="mobile-menu-wrapper" id="mobileMenuWrapper" aria-hidden="true" inert>
     <!-- Main menu screen -->
-    <div class="menu-screen" id="mobileMainMenu">
+    <div class="menu-screen" id="mobileMainMenu" aria-hidden="false">
       <ul>
         <li class="menu-item-featured">
           <button
@@ -179,6 +180,7 @@
       class="menu-screen submenu"
       id="mobilePlatformSubMenu"
       aria-hidden="true"
+      inert
     >
       <div class="submenu-header">
         <button type="button" class="back-button">
@@ -238,7 +240,7 @@
     </div>
 
     <!-- Knowledge Hub submenu -->
-    <div class="menu-screen submenu" id="mobileNewsSubMenu" aria-hidden="true">
+    <div class="menu-screen submenu" id="mobileNewsSubMenu" aria-hidden="true" inert>
       <div class="submenu-header">
         <button type="button" class="back-button">
           &larr;
@@ -294,7 +296,7 @@
     </div>
 
     <!-- About submenu -->
-    <div class="menu-screen submenu" id="mobileAboutSubMenu" aria-hidden="true">
+    <div class="menu-screen submenu" id="mobileAboutSubMenu" aria-hidden="true" inert>
       <div class="submenu-header">
         <button type="button" class="back-button">
           &larr;
@@ -1027,12 +1029,14 @@
     clearTimeout(hideTimeout);
     megaMenuWrapper.classList.add("show");
     megaMenuWrapper.setAttribute("aria-hidden", "false");
+    megaMenuWrapper.removeAttribute("inert");
     platformLink.setAttribute("aria-expanded", "true");
   }
 
   function hideMegaMenu() {
     megaMenuWrapper.classList.remove("show");
     megaMenuWrapper.setAttribute("aria-hidden", "true");
+    megaMenuWrapper.setAttribute("inert", "");
     platformLink.setAttribute("aria-expanded", "false");
   }
 
@@ -1076,12 +1080,18 @@
   const mobileSubmenus = document.querySelectorAll(
     ".mobile-menu-wrapper .submenu",
   );
+  const mobileMainMenu = document.getElementById("mobileMainMenu");
 
   function resetMobileSubmenus() {
     mobileMenuWrapper.classList.remove("show-submenu");
+    if (mobileMainMenu) {
+      mobileMainMenu.setAttribute("aria-hidden", "false");
+      mobileMainMenu.removeAttribute("inert");
+    }
     mobileSubmenus.forEach((sub) => {
       sub.classList.remove("active");
       sub.setAttribute("aria-hidden", "true");
+      sub.setAttribute("inert", "");
     });
     mobileSubmenuLinks.forEach((link) => {
       link.setAttribute("aria-expanded", "false");
@@ -1094,6 +1104,7 @@
     mobileMenuBtn.classList.remove("active");
     mobileMenuBtn.setAttribute("aria-expanded", "false");
     mobileMenuWrapper.setAttribute("aria-hidden", "true");
+    mobileMenuWrapper.setAttribute("inert", "");
     document.body.classList.remove("mobile-menu-open");
     resetMobileSubmenus();
   }
@@ -1103,7 +1114,9 @@
     mobileMenuBtn.classList.add("active");
     mobileMenuBtn.setAttribute("aria-expanded", "true");
     mobileMenuWrapper.setAttribute("aria-hidden", "false");
+    mobileMenuWrapper.removeAttribute("inert");
     document.body.classList.add("mobile-menu-open");
+    resetMobileSubmenus();
   }
 
   // Toggle mobile menu
@@ -1122,9 +1135,14 @@
     link.addEventListener("click", function (e) {
       e.preventDefault();
       mobileMenuWrapper.classList.add("show-submenu");
+      if (mobileMainMenu) {
+        mobileMainMenu.setAttribute("aria-hidden", "true");
+        mobileMainMenu.setAttribute("inert", "");
+      }
       mobileSubmenus.forEach((sub) => {
         sub.classList.remove("active");
         sub.setAttribute("aria-hidden", "true");
+        sub.setAttribute("inert", "");
       });
       mobileSubmenuLinks.forEach((submenuLink) => {
         submenuLink.setAttribute("aria-expanded", "false");
@@ -1136,6 +1154,7 @@
       if (targetSubmenu) {
         targetSubmenu.classList.add("active");
         targetSubmenu.setAttribute("aria-hidden", "false");
+        targetSubmenu.removeAttribute("inert");
         link.setAttribute("aria-expanded", "true");
       }
     });

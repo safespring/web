@@ -36,9 +36,9 @@
           </button>
         </div>
 
-        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}{{ safeHTMLAttr $trackAttrs }}>
+        <span class="compliance-document-table__arrow" aria-hidden="true">
           <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </span>
       </div>
     </div>
     {{- end -}}

@@ -238,7 +238,7 @@ aliases:
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549ufdca76241b764729b0c8c6e4e76ab3e8">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Create account</button>
 </form>

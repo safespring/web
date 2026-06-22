@@ -277,7 +277,7 @@ Thank you for choosing Safespring's services. We're excited to work with you!
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u6488cf25775f4e62b6d09de546b45f5f">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Create account</button>
 </form>

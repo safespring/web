@@ -236,7 +236,7 @@ På denne måten kan vi opprettholde en god oversikt over hvilke kostnader som s
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u9137f829b062435d86812dd1f90c13f8">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opprett konto</button>
 </form>

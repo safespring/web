@@ -311,7 +311,7 @@
 	<input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u7794d4f86da545e6a442e233c24577d8">
 	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+	<input type="hidden" value="" name="validation">
 	<div class="submit-button">
 		<button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">{{ .submit }}</button>
 	</div>
@@ -346,7 +346,7 @@
 			spinner.css("display", "none");
 			nameField.after(dunsField);
 			nameField.after(spinner);
-			nameField.typeahead({ hint: true, highlight: true, minLength: 2 }, {
+			nameField.typeahead({ hint: false, highlight: true, minLength: 2 }, {
 				name: "clients",
 				limit: 25,
 				source: matchClients,
@@ -378,7 +378,8 @@
 			nameField.siblings(".tt-hint").attr({
 				"aria-hidden": "true",
 				"tabindex": "-1",
-				"autocomplete": "off"
+				"autocomplete": "off",
+				"inert": ""
 			});
 		}
 	});

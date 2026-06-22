@@ -327,7 +327,7 @@ Safespring Compute offers great advantages such as simplified collaboration betw
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u5325684f3ca44641b1ebb4d4a8cd2e22">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Create account</button>
 </form>

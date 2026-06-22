@@ -278,7 +278,7 @@ Tack för att du väljer Safesprings tjänster. Vi ser fram emot att arbeta med 
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u6488cf25775f4e62b6d09de546b45f5f">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Skapa konto</button>
 </form>

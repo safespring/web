@@ -732,7 +732,7 @@ h3{
         <a class="button" href="#get-started">{{ $containerFormCopy.joinBeta }}</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">{{ $containerFormCopy.bookDemo }}</a>
       </div>
 
-      <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+      <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true" inert>
         <h3>This is your toolbox</h3>
         <p>Get up-and-running quick with defined defaults for network, storage, igress, monetoring and more. Use our tools or bring your own. Either way you're in control.</p>
         <a class="button" href="#get-started">{{ $containerFormCopy.joinBeta }}</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">{{ $containerFormCopy.bookDemo }}</a>
@@ -773,7 +773,7 @@ h3{
             </div>
           </div>
         </div>
-        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true" inert>
           <h3>Predictable pricing, no hidden costs</h3>
           <p>Costs are transparent: a managed control plane is fixed at 4,900 SEK/month. Worker nodes are billed separately, based on selected VM flavor.</p>
           <p>Two <strong>ElasticIP</strong> is inlcluded in the price. <br>Calculate your cluster in our <a href="#price">price calculator</a></p>
@@ -1275,7 +1275,7 @@ select {
       nameField.after(dunsField);
       nameField.after(spinner);
       nameField.typeahead({
-        hint: true,
+        hint: false,
         highlight: true,
         minLength: 3
       }, {
@@ -1312,7 +1312,8 @@ select {
       nameField.siblings(".tt-hint").attr({
         "aria-hidden": "true",
         "tabindex": "-1",
-        "autocomplete": "off"
+        "autocomplete": "off",
+        "inert": ""
       });
     }
   });
@@ -1362,7 +1363,7 @@ select {
       <input type="hidden" name="formCid" value="9549">
       <input type="hidden" name="formId" value="9549u4d6655796cf741c5aab400e441c49e50">
       <input type="hidden" name="isFrame" value="false">
-      <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
+      <input type="hidden" value="" name="validation">
       <!-- END OF REQUIRED FIELDS -->
       <div class="submit-button"><button class="button pt-1 pb-1 cta-start" type="submit">{{ $containerFormCopy.startOnboarding }}</button></div>
     </form>
@@ -1550,6 +1551,12 @@ select {
       const on = i === idx;
       p.classList.toggle('is-active', on);
       p.style.display = on ? 'block' : 'none';
+      p.setAttribute('aria-hidden', on ? 'false' : 'true');
+      if (on) {
+        p.removeAttribute('inert');
+      } else {
+        p.setAttribute('inert', '');
+      }
     });
 
     /* Clear any fixed height a previous script/CSS might have left behind */

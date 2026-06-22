@@ -1,6 +1,8 @@
 <!-- Current language -->
 <span
   title="{{ .Language.LanguageName }}"
+  aria-label="{{ .Language.LanguageName }}"
+  aria-current="true"
   style="display: flex; align-items: center"
 >
   <img
@@ -12,10 +14,17 @@
 
 <!-- Other languages -->
 {{ range .Translations }}
-  <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+  <a
+    href="{{ .Permalink }}"
+    title="{{ .Language.LanguageName }}"
+    aria-label="{{ .Language.LanguageName }}"
+    hreflang="{{ .Lang }}"
+    lang="{{ .Lang }}"
+  >
     <img
       src="/img/flags/{{ .Lang }}.svg"
-      alt="{{ .Language.LanguageName }} flag"
+      alt=""
+      aria-hidden="true"
     />
   </a>
 {{ end }}

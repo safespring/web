@@ -112,10 +112,22 @@
     {{ end }}
   </div>
 
+  {{ $scrollLeftLabel := "Scroll left" }}
+  {{ $scrollRightLabel := "Scroll right" }}
+  {{ if eq .Site.Language.Lang "sv" }}
+    {{ $scrollLeftLabel = "Bläddra vänster" }}
+    {{ $scrollRightLabel = "Bläddra höger" }}
+  {{ else if eq .Site.Language.Lang "nb" }}
+    {{ $scrollLeftLabel = "Bla til venstre" }}
+    {{ $scrollRightLabel = "Bla til høyre" }}
+  {{ else if eq .Site.Language.Lang "da" }}
+    {{ $scrollLeftLabel = "Rul til venstre" }}
+    {{ $scrollRightLabel = "Rul til højre" }}
+  {{ end }}
   <div class="scroll-controls">
-    <button id="scrollLeft"><i class="fas fa-arrow-left"></i></button>
+    <button id="scrollLeft" aria-label="{{ $scrollLeftLabel }}"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
     <!-- Vänsterpil -->
-    <button id="scrollRight"><i class="fas fa-arrow-right"></i></button>
+    <button id="scrollRight" aria-label="{{ $scrollRightLabel }}"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
     <!-- Högerpil -->
   </div>
   <script type="text/javascript">
