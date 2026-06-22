@@ -1971,10 +1971,16 @@ color:var(--unCheckedColor);
 
   .heading-default-single .button {
     box-sizing: border-box;
+    display: inline-block;
+    line-height: 1.2;
     max-width: 100%;
     margin-right: 0;
     overflow-wrap: anywhere;
     white-space: normal;
+  }
+
+  .heading-default-single .button::after {
+    display: none;
   }
 
   .content-default-single .button:hover {
