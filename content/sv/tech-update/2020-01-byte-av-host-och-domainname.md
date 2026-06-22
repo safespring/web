@@ -15,7 +15,7 @@ aliases:
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
 ---
 
-<a class="text-button" href="#english">Read the English version</a>
+<a class="text-button" href="#english">Läs den engelska versionen</a>
 
 {{% note "14 januari" %}}
 Bytet av domännamn skedde den 2020-01-14. Det betyder att ändringen av host-namnet och DNS bör göras omgående. Gör ni ändringarna (nytt DNS-namn och in med extra root-ca-cert) så fungerar tjänsten 100% som innan och ni kan göra backup och restores precis som väntat. Läs mer under "tekniska detaljer".
