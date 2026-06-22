@@ -24,11 +24,11 @@ Vores tjenester gør det muligt både at opfylde disse og samtidig drage nytte a
 
 At vi er et svensk selskab, som leverer tjenesterne i Sverige, betyder, at du kan opfylde eSams anbefalinger.
 
-<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Læs eSams anbefalinger</a>
+<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" class="text-button">Læs eSams anbefalinger</a>
 
 Kontakt os for at drøfte, hvordan vi kan hjælpe dig med trygt at udnytte en skyløsning og samtidig opfylde love og regler.
 
-<a href="/kontakt" id="text-button">Kontakt Safespring</a><br><br>
+<a href="/kontakt" class="text-button">Kontakt Safespring</a><br><br>
 
 ## White paper
 

@@ -1174,7 +1174,7 @@ Skapar en text-länk med en knapp-liknande stil (eller enkel text-länk) utan ba
 ### Kod
 
 ```html
-<a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
+<a class="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
 ```
 
 ### Exempel

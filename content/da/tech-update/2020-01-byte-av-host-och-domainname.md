@@ -15,7 +15,7 @@ aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
 ---
-<a id="text-button" href="#english">Læs den engelske version</a>
+<a class="text-button" href="#english">Læs den engelske version</a>
 
 {{% note "14. januar" %}}
 Skiftet af domænenavn fandt sted den 2020-01-14. Det betyder, at ændringen af hostnavnet og DNS bør udføres omgående. Når I laver ændringerne (nyt DNS-navn og tilføjer et ekstra root-ca-certifikat), fungerer tjenesten 100% som før, og I kan tage backup og gendanne præcis som forventet. Læs mere under "tekniske detaljer".

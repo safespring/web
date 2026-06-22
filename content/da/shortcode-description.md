@@ -1069,7 +1069,7 @@ Opretter et tekstlink med en knaplignende stil (eller et enkelt tekstlink) uden 
 
 ### Kode
 ```html
-<a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
+<a class="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
 ```
 ### Eksempler
 ```

@@ -15,7 +15,7 @@ aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
 ---
-<a id="text-button" href="#english">Read the English version</a>
+<a class="text-button" href="#english">Read the English version</a>
 
 {{% note "14 January" %}}
 The domain name change took place on 2020-01-14. This means the host name and DNS should be updated immediately. Once you make the changes (new DNS name and add the extra root CA certificate), the service will work 100% as before and you can perform backups and restores exactly as expected. Read more under "Technical details".

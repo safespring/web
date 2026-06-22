@@ -1693,7 +1693,7 @@ padding:0 0 0 var(--width-Ckb/4);
 color:var(--unCheckedColor);
 }*/
 
-#text-button {
+.text-button {
   font: 15px var(--hind-font-semibold);
   color: var(--button-color);
   text-transform: uppercase;
@@ -1701,7 +1701,7 @@ color:var(--unCheckedColor);
   line-height: 5;
 }
 
-#text-button:hover {
+.text-button:hover {
   color: var(--main-color);
   transition: color 0.2s ease-out;
 }

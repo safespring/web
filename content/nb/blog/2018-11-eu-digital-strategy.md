@@ -33,6 +33,6 @@ Det er stadig flere stemmer som mener at dette også bør gjelde programkode. Fo
 
 Safespring forespråker åpen kildekode og at brukerne også bidrar med sine tillegg for i fellesskap å utvikle og legge til rette for andre. Ved å iterere kode sammen forbedres systemene raskere, de blir mer stabile og fremfor alt mer kostnadseffektive. Visjonen er et samfunn der myndigheter, bedrifter og privatpersoner jobber sammen for å forbedre koden og systemene som brukes.
 
-<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" id="text-button">EUROPAKOMMISJONENS DIGITALE STRATEGI</a>
+<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" class="text-button">EUROPAKOMMISJONENS DIGITALE STRATEGI</a>
 
 [strategi]: https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf

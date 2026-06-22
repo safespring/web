@@ -15,7 +15,7 @@ aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
 ---
-<a id="text-button" href="#english">Les den engelske versjonen</a>
+<a class="text-button" href="#english">Les den engelske versjonen</a>
 
 {{% note "14. januar" %}}
 Byttet av domenenavn skjedde 2020-01-14. Det betyr at endringen av vertsnavn og DNS bør gjøres umiddelbart. Gjør dere endringene (nytt DNS-navn og legg inn ekstra root-CA-sertifikat), vil tjenesten fungere 100 % som før og dere kan ta backup og gjenopprette akkurat som forventet. Les mer under "tekniske detaljer".

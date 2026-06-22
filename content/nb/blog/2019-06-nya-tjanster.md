@@ -20,7 +20,7 @@ aliases:
 
 Vi har hatt et spennende halvår med mange nye kunder. Blant annet har vi fått flere kunder innen helse og omsorg samt life-science. Mange stiller høyere krav til juridisk sikkerhet, samtidig som åpen kildekode og åpne standarder står i fokus.
 
-For å støtte kundene våre i deres transformasjonsreise og bistå med både kompetanse og plattformtjenester, utvider vi kontinuerlig vårt tjenestetilbud. For et par uker siden lanserte vi vår DevOps-støtte i to ulike pakker <a href="/devops/" id="text-button">LES MER</a>.
+For å støtte kundene våre i deres transformasjonsreise og bistå med både kompetanse og plattformtjenester, utvider vi kontinuerlig vårt tjenestetilbud. For et par uker siden lanserte vi vår DevOps-støtte i to ulike pakker <a href="/devops/" class="text-button">LES MER</a>.
 
 Safespring planlegger å lansere flere nye driftstjenester som gir dere mulighet til å fokusere ressursene deres på å skape størst mulig forretningsverdi.
 

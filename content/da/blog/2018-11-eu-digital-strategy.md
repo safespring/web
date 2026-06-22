@@ -33,6 +33,6 @@ Flere og flere stemmer mener, at dette også bør gælde programkode. Fordelene 
 
 Safespring går ind for åben kildekode samt at brugerne også bidrager med deres udvidelser for sammen at udvikle og lette for andre. Ved i fællesskab at iterere på koden forbedres systemerne hurtigere, de bliver mere stabile og frem for alt mere omkostningseffektive. Visionen er et samfund, hvor myndigheder, virksomheder og privatpersoner arbejder sammen for at forbedre den kode og de systemer, der anvendes.
 
-<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" id="text-button">EU-KOMMISSIONENS DIGITALE STRATEGI</a>
+<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" class="text-button">EU-KOMMISSIONENS DIGITALE STRATEGI</a>
 
 [strategi]: https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf

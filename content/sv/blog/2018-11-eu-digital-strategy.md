@@ -33,6 +33,6 @@ Det är fler och fler röster som menar att detta bör även gälla programkod. 
 
 Safespring förespråkar öppen källkod och att användarna även bidrar med sina tillägg för att tillsammans utveckla och underlätta för andra. Genom att tillsammans iterera kod förbättras systemen snabbare, de blir stabilare och framförallt mer kostnadseffektiva. Visionen är ett samhälle där myndigheter, företag och privatpersoner jobbar tillsammans för att förbättra den kod och de system som används.
 
-<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" id="text-button">EUROPEAN COMMISSION DIGITAL STRATEGY</a>
+<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" class="text-button">EUROPEAN COMMISSION DIGITAL STRATEGY</a>
 
 [strategi]: https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf

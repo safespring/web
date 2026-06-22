@@ -24,11 +24,11 @@ Our services make it possible to meet these requirements while benefiting from t
 
 Because we are a Swedish company that provides these services in Sweden, you can comply with eSam's recommendations.
 
-<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Read eSam's recommendations</a>
+<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" class="text-button">Read eSam's recommendations</a>
 
 Contact us to discuss further how we can help you safely use a cloud solution while complying with laws and regulations.
 
-<a href="{{% relref "/contact.md" %}}" id="text-button">Contact Safespring</a><br><br>
+<a href="{{% relref "/contact.md" %}}" class="text-button">Contact Safespring</a><br><br>
 
 ## White paper
 

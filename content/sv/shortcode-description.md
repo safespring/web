@@ -1068,7 +1068,7 @@ Skapar en textlänk med en knapp-liknande stil (eller en enkel textlänk) utan b
 
 ### Kod
 ```html
-<a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
+<a class="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
 ```
 ### Exempel
 ```
