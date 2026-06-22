@@ -200,8 +200,6 @@ Maksimer din infrastruktur med software, der er optimeret til at køre på Safes
 | SW-win.ser.2022   | Microsoft Windows Server         | vCPU            |          15,58 € |
 | SW-ms.sql.ser     | Microsoft SQL Server Standard    | vCPU            |         109,38 € |
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise  | vCPU            |         424,17 € |
-| SW-nextcloud      | Nextcloud Hub                    |                 | Anmod om et tilbud |
-| SW-suse.linux     | SUSE Linux Enterprise Server     |                 | Anmod om et tilbud |
 
 ### Platformtjenester
 
@@ -209,9 +207,6 @@ Vi tilbyder komplet administration af dine Kubernetes-miljøer, inklusive overho
 
 | Produkt-ID             | Beskrivelse                                            |         Månedligt |
 | --------------------- | ------------------------------------------------------ | ----------------: |
-| PAAS-man.kubernetes24 | Administreret Compliant Kubernetes 24/7               | Anmod om et tilbud |
-| PAAS-man.kubernetes8  | Administreret Compliant Kubernetes 8/5                | Anmod om et tilbud |
-| PAAS-man.opensearch   | Administreret Opensearch (inkluderet i Compliant Kubernetes) | Anmod om et tilbud |
 | PAAS-openshift        | Ingen support                                         | Anmod om et tilbud |
 | PAAS-man.nats         | Administreret NATS                                   | Anmod om et tilbud |
 | PAAS-man.mariadb      | Administreret MariaDB                                | Anmod om et tilbud |
