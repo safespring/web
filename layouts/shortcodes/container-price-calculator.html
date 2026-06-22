@@ -250,6 +250,7 @@
     color: var(--calc-blue);
     font: inherit;
     font-size: 14px;
+    min-height: 44px;
     min-width: 0;
     padding: 10px 12px;
     width: 100%;
@@ -278,8 +279,10 @@
     display: inline-flex;
     font-size: 14px;
     font-weight: 600;
-    min-height: 40px;
+    min-height: 44px;
+    min-width: 44px;
     align-items: center;
+    justify-content: center;
     padding: 9px 12px;
   }
 
@@ -312,11 +315,11 @@
     align-items: center;
     display: grid;
     gap: 6px;
-    grid-template-columns: 34px minmax(34px, 1fr) 34px;
+    grid-template-columns: 44px minmax(34px, 1fr) 44px;
   }
 
   .container-calculator__storage-gb .container-calculator__stepper {
-    grid-template-columns: 34px 110px max-content 34px;
+    grid-template-columns: 44px 110px max-content 44px;
     justify-content: start;
   }
 
@@ -334,7 +337,7 @@
     cursor: pointer;
     font: inherit;
     font-weight: 700;
-    min-height: 34px;
+    min-height: 44px;
   }
 
   .container-calculator__stepper button:disabled,
