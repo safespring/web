@@ -36,7 +36,7 @@ Programvareutviklere, tekniske prosjektledere, programvarearkitekter, driftsstø
 8–9 forelesninger + 1 workshop
 
 <div class="accordion-box">
-<button class="accordion">Temaer som dekkes</button>
+<button type="button" class="accordion">Temaer som dekkes</button>
 <div class="panel content-body">
 <p>Disse temaene vil bli dekket:</p>
 <ul>
@@ -55,7 +55,7 @@ Programvareutviklere, tekniske prosjektledere, programvarearkitekter, driftsstø
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Økter</button>
+<button type="button" class="accordion">Økter</button>
 <div class="panel content-body">
 <p>Eksempel på kursplan:</p>
 <ul>

@@ -34,7 +34,7 @@ Mjukvaruutvecklare, tekniska projektledare, mjukvaruarkitekter, drift- och suppo
 ### Innehåll
 
 <div class="accordion-box">
-<button class="accordion">Ämnen som tas upp</button>
+<button type="button" class="accordion">Ämnen som tas upp</button>
 <div class="panel content-body">
 <p>Dessa ämnen kommer att behandlas:</p>
 <ul>
@@ -57,7 +57,7 @@ Mjukvaruutvecklare, tekniska projektledare, mjukvaruarkitekter, drift- och suppo
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Sessioner</button>
+<button type="button" class="accordion">Sessioner</button>
 <div class="panel content-body">
 <p>Exempel på kursupplägg:</p>
 <ul>

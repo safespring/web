@@ -43,7 +43,7 @@ Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte Safespr
 {{< distance >}}
 
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url(/img/card/ocre-background-blue.svg); display: flex;justify-content: center; align-items: center;" alt="">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url(/img/card/ocre-background-blue.svg); display: flex;justify-content: center; align-items: center;">
         <img src="/img/card/ocre-logo-white.svg" alt="OCRE logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="113" height="43">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">

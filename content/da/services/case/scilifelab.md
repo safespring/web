@@ -54,7 +54,7 @@ SciLifeLab driver flere forskningsprogrammer, der er afhængige af højtydende d
 To store forskningsmiljøer og -platforme bygget på Safesprings infrastruktur er dataleveringsprojektet DDS og AI-projektet BigPicture.
 
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;" alt="">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;">
         <img src="/img/logos/bigpicture.svg" alt="BigPicture logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="220" height="102">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
@@ -67,7 +67,7 @@ To store forskningsmiljøer og -platforme bygget på Safesprings infrastruktur e
 </div>
 <br>
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;" alt="">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;">
         <img src="/img/logos/scilifelab-symbol.svg" alt="SciLifeLab logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="117" height="111">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">

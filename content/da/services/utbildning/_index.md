@@ -22,7 +22,7 @@ Vi tilbyder i øjeblikket fem kurser på forskellige tekniske niveauer, så du b
 To af vores kursuspakker henvender sig til medarbejdere med et overordnet teknisk overblik, men uden specialistniveau. Målet er at styrke forståelsen og viden på ledelsesniveau, både om cloud computing og de fordele, en virksomhed kan opnå ved at tage moderne cloud-praksis i brug.
 
 <div class="accordion-box">
-<button class="accordion">Introduktion til “Infrastructure as a Service” for ledere</button>
+<button type="button" class="accordion">Introduktion til “Infrastructure as a Service” for ledere</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Begynder (ingen eller begrænset teknisk viden)</p>
@@ -34,7 +34,7 @@ To af vores kursuspakker henvender sig til medarbejdere med et overordnet teknis
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Cloud-strategi for topledere</button>
+<button type="button" class="accordion">Cloud-strategi for topledere</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Begynder / ledelse (ingen eller begrænset teknisk baggrund).</p>
@@ -53,7 +53,7 @@ Vi tilbyder i øjeblikket to tekniske kursuspakker, der dækker arbejde med skye
 Disse to pakker er udviklet til at give dig et overblik og en god forståelse på højt niveau af, hvilke muligheder og fordele cloud-tjenester kan tilbyde din drift og forretning i form af højere sikkerhed, lavere omkostninger, fleksibilitet, kortere time-to-market, efterlevelse af lokale love og regler m.m.
 
 <div class="accordion-box">
-<button class="accordion">Introduktion til cloud computing</button>
+<button type="button" class="accordion">Introduktion til cloud computing</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Begynder (med noget teknisk viden)</p>
@@ -65,7 +65,7 @@ Disse to pakker er udviklet til at give dig et overblik og en god forståelse p�
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Moderne DevOps & microservices</button>
+<button type="button" class="accordion">Moderne DevOps & microservices</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Øvet</p>
@@ -79,7 +79,7 @@ Disse to pakker er udviklet til at give dig et overblik og en god forståelse p�
 </div>
 </div>
 <!--<div class="accordion-box">
-<button class="accordion">Lean Artificial Intelligence</button>
+<button type="button" class="accordion">Lean Artificial Intelligence</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Øvet</p>

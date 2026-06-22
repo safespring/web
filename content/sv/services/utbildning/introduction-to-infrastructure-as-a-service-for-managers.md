@@ -35,7 +35,7 @@ Safespring Cloud Infrastructure med OpenStack.
 Kort introduktion till molninfrastruktur med OpenStack på Safesprings molnplattform. Du får först en teoretisk orientering om molninfrastruktur som helhet och därefter mer specifikt om OpenStack. Dagen avslutas med övningar i Safesprings plattform där du sätter upp några instanser och en applikation i Safesprings plattform.
 
 <div class="accordion-box">
-<button class="accordion">Ämnen som behandlas</button>
+<button type="button" class="accordion">Ämnen som behandlas</button>
 <div class="panel content-body">
 <p>Dessa ämnen kommer att behandlas:</p>
 <ul>

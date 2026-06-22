@@ -22,7 +22,7 @@ We’re currently offering five courses at different technical levels to give yo
 Two of our course packages is aimed for staff with overall technical overview but with no expertise level. The goal of these courses it to strengthen the understanding and knowledge at management level, both of cloud computing and the benefits a company can gain from adapting to modern cloud computing practices.
 
 <div class="accordion-box">
-<button class="accordion">Introduction to “Infrastructure as a Service” for managers</button>
+<button type="button" class="accordion">Introduction to “Infrastructure as a Service” for managers</button>
 <div class="panel">
   <h3>Level</h3>
   <p>Beginner (with no or limited technical knowledge)</p>
@@ -34,7 +34,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Cloud strategy for top-level managers</button>
+<button type="button" class="accordion">Cloud strategy for top-level managers</button>
 <div class="panel">
   <h3>Level</h3>
   <p>Beginner / management (No or limited technical background).</p>
@@ -53,7 +53,7 @@ We’re currently offering two technical course packages that covers working wit
 These two packages are developed to give you an overview and good understanding on a high level, what opportunities and advantages cloud services can offer your operations and businesses in terms of higher security, lower cost production, flexibility, shorter time to market, compliance with local laws and regulations, and more…
 
 <div class="accordion-box">
-<button class="accordion">Introduction to cloud computing</button>
+<button type="button" class="accordion">Introduction to cloud computing</button>
 <div class="panel">
   <h3>Level</h3>
   <p>Beginner (with some technical knowledge)</p>
@@ -65,7 +65,7 @@ These two packages are developed to give you an overview and good understanding 
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Modern DevOps & Microservices</button>
+<button type="button" class="accordion">Modern DevOps & Microservices</button>
 <div class="panel">
   <h3>Level</h3>
   <p>Intermediate</p>
@@ -79,7 +79,7 @@ These two packages are developed to give you an overview and good understanding 
 </div>
 </div>
 <!--<div class="accordion-box">
-<button class="accordion">Lean Artificial Intelligence</button>
+<button type="button" class="accordion">Lean Artificial Intelligence</button>
 <div class="panel">
   <h3>Level</h3>
   <p>Intermediate</p>

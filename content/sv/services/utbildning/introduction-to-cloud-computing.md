@@ -36,7 +36,7 @@ Programvaruutvecklare, tekniska projektledare, mjukvaruarkitekter, drift- och su
 8–9 pass + 1 workshop
 
 <div class="accordion-box">
-<button class="accordion">Ämnen som ingår</button>
+<button type="button" class="accordion">Ämnen som ingår</button>
 <div class="panel content-body">
 <p>Följande ämnen behandlas:</p>
 <ul>
@@ -55,7 +55,7 @@ Programvaruutvecklare, tekniska projektledare, mjukvaruarkitekter, drift- och su
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Pass</button>
+<button type="button" class="accordion">Pass</button>
 <div class="panel content-body">
 <p>Exempel på kursupplägg:</p>
 <ul>

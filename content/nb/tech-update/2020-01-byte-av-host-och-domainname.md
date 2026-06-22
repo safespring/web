@@ -32,7 +32,7 @@ Siden DNS-navnet er knyttet til hvilket sertifikat som brukes for TLS, må klien
 Dette påvirker de kundene som tar backup mot TSM1 (tsm1.cloud.ipnett.se), de som har klienter som peker mot andre TSM-servere har allerede nytt root-sertifikat og korrekt navn.
 
 <div class="accordion-box">
-<button class="accordion">Tekniske detaljer</button>
+<button type="button" class="accordion">Tekniske detaljer</button>
 <div class="panel content-body">
 <p>Filen dsm.sys (Unix-lignende) eller dsm.opt (Win) må endre parameteren til TCPSERVERADDRESS fra `tsm1.cloud.ipnett.se` til `tsm1.backup.sto2.safedc.net`, og root-sertifikatet for safedc.net skal inn i den keystore som brukes av IBM TSM `dsmcert.kdb`. </p><p>Eksisterende gamle sertifikater i keystoren kan bli stående, det gjør ingen skade. </p><p>Byttet vil heller ikke påvirke operativsystemets egne sertifikater eller andre installerte applikasjoner som bruker sertifikater.</p>
 <h3>Mer informasjon</h3>
@@ -86,7 +86,7 @@ Siden DNS-navnet er knyttet til sertifikatet som brukes for TLS, må klientene o
 Dette påvirker kun kunder som tar backup mot TSM1 (tsm1.cloud.ipnett.se). Kunder som har klienter som peker til noen av våre andre TSM-servere har allerede riktig root-sertifikat og serverendepunkt og trenger ikke å gjøre noe.
 
 <div class="accordion-box">
-<button class="accordion">Tekniske detaljer</button>
+<button type="button" class="accordion">Tekniske detaljer</button>
 <div class="panel content-body">
 <p>Filen dsm.sys (Unix-lignende OS) eller dsm.opt (Win) må få TCPSERVERADDRESS oppdatert fra tsm1.cloud.ipnett.se til <b>tsm1.backup.sto2.safedc.net</b> og root-CA for safedc.net må legges inn i IBM TSM-keystore (dsmcert.kdb).</p><p>Det/de gamle sertifikatene i keystoren kan bli værende; det gjør ingen skade om de blir liggende. Dette vil ikke påvirke operativsystemets sertifikatlager eller andre applikasjoner som bruker sertifikater. </p>
 <h3>Mer informasjon</h3>

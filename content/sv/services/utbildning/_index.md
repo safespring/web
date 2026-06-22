@@ -22,7 +22,7 @@ Vi erbjuder för närvarande fem kurser på olika tekniska nivåer för att ge d
 Två av våra kurspaket vänder sig till personal med övergripande teknisk överblick men utan expertkunskaper. Målet med dessa kurser är att stärka förståelsen och kunskapen på ledningsnivå, både kring molntjänster och de fördelar ett företag kan vinna genom att anamma moderna molnpraktiker.
 
 <div class="accordion-box">
-<button class="accordion">Introduktion till ”infrastruktur som en tjänst” för chefer</button>
+<button type="button" class="accordion">Introduktion till ”infrastruktur som en tjänst” för chefer</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybörjare (utan eller med begränsad teknisk kunskap)</p>
@@ -34,7 +34,7 @@ Två av våra kurspaket vänder sig till personal med övergripande teknisk öve
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Molnstrategi för högsta ledningen</button>
+<button type="button" class="accordion">Molnstrategi för högsta ledningen</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybörjare / ledningsnivå (ingen eller begränsad teknisk bakgrund).</p>
@@ -53,7 +53,7 @@ Vi erbjuder för närvarande två tekniska kurspaket som täcker arbete med moln
 Dessa två paket är utformade för att ge dig en översikt och en god förståelse på hög nivå för vilka möjligheter och fördelar molntjänster kan ge din verksamhet och ditt företag, i form av högre säkerhet, lägre produktionskostnader, flexibilitet, kortare time-to-market, efterlevnad av lokala lagar och regler med mera.
 
 <div class="accordion-box">
-<button class="accordion">Introduktion till molntjänster</button>
+<button type="button" class="accordion">Introduktion till molntjänster</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybörjare (med viss teknisk kunskap)</p>
@@ -65,7 +65,7 @@ Dessa två paket är utformade för att ge dig en översikt och en god förståe
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Modern DevOps & mikrotjänster</button>
+<button type="button" class="accordion">Modern DevOps & mikrotjänster</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Medelnivå</p>
@@ -79,7 +79,7 @@ Dessa två paket är utformade för att ge dig en översikt och en god förståe
 </div>
 </div>
 <!--<div class="accordion-box">
-<button class="accordion">Lean Artificial Intelligence</button>
+<button type="button" class="accordion">Lean Artificial Intelligence</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Medelnivå</p>

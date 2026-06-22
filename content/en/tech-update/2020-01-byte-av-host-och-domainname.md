@@ -32,7 +32,7 @@ Because the DNS name is tied to the certificate used for TLS, clients must updat
 This affects customers who back up to TSM1 (tsm1.cloud.ipnett.se); those whose clients point to other TSM servers already have the new root certificate and correct name.
 
 <div class="accordion-box">
-<button class="accordion">Technical details</button>
+<button type="button" class="accordion">Technical details</button>
 <div class="panel content-body">
 <p>The dsm.sys (Unix-like) or dsm.opt (Windows) file needs the TCPSERVERADDRESS parameter changed from `tsm1.cloud.ipnett.se` to `tsm1.backup.sto2.safedc.net`, and the root certificate for safedc.net must be added to the IBM TSM keystore `dsmcert.kdb`.</p><p>Existing old certificates in the keystore can remain; they do no harm.</p><p>The change will also not affect the OS’s own certificates or other installed applications that use certificates.</p>
 <h3>More information</h3>
@@ -86,7 +86,7 @@ Since the DNS name is tied to the certificate used for TLS, the clients will nee
 This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se), customers whose clients point to any other of our TSM servers already have the correct root certificate and server endpoint domain names and need not do anything.
 
 <div class="accordion-box">
-<button class="accordion">Technical details</button>
+<button type="button" class="accordion">Technical details</button>
 <div class="panel content-body">
 <p>The dsm.sys (unix-like OSes) or dsm.opt (Win) file needs to get TCPSERVERADDRESS updated from tsm1.cloud.ipnett.se to <b>tsm1.backup.sto2.safedc.net</b> and the root-ca for safedc.net needs to get into the IBM TSM keystore (dsmcert.kdb).</p><p>The old cert(s) in the keystore can stay, it will not do any harm if they remain. This will not affect the OS certificate stores, or any other application using certificates. </p>
 <h3>More information</h3>

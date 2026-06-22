@@ -2,7 +2,7 @@
   {{ if .Params.toc }}
   {{ $toc = .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" }}
   {{ $toc = replace $toc "id=\"TableOfContents\"" "class=\"table-of-contents\"" }}
-  <button class="mobile-toc" id="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}</button>
+  <button type="button" class="mobile-toc" id="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}</button>
     <div class="sidebar-container-mobile">
       <div class="sidebar-content-mobile">  
         <h2 class="sidebar-toc">
@@ -16,7 +16,12 @@
     <div class="overlay"></div>
   {{ end }}
   <div class="sidebar-container">
-    <div class="sidebar-image" style="background-image: url({{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }})" alt="{{ .Title }}"></div>
+    <div
+      class="sidebar-image"
+      style="background-image: url({{ if .Params.sidebarimage }}/img/card/{{ .Params.sidebarimage }}{{ else }}/img/card/safespring_logotype_blue_svg.svg{{ end }})"
+      role="img"
+      aria-label="{{ .Title }}"
+    ></div>
     <div class="sidebar-content">
       {{ if .Params.toc }}
       <h2 class="sidebar-toc">

@@ -22,7 +22,7 @@ Vi tilbyr for øyeblikket fem kurs på ulike tekniske nivåer for å gi deg båd
 To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk oversikt, men uten spesialistnivå. Målet med disse kursene er å styrke forståelsen og kunnskapen på ledernivå, både om skytjenester og fordelene en virksomhet kan oppnå ved å ta i bruk moderne praksis for skytjenester.
 
 <div class="accordion-box">
-<button class="accordion">Introduksjon til «infrastruktur som en tjeneste» for ledere</button>
+<button type="button" class="accordion">Introduksjon til «infrastruktur som en tjeneste» for ledere</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybegynner (uten eller med begrenset teknisk kunnskap)</p>
@@ -34,7 +34,7 @@ To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk overs
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Skystrategi for toppledere</button>
+<button type="button" class="accordion">Skystrategi for toppledere</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybegynner / ledelse (ingen eller begrenset teknisk bakgrunn).</p>
@@ -53,7 +53,7 @@ Vi tilbyr for tiden to tekniske kurspakker som dekker arbeid med skyen, fra ulik
 Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på et overordnet nivå av hvilke muligheter og fordeler skytjenester kan gi virksomheten din i form av høyere sikkerhet, lavere produksjonskostnader, fleksibilitet, kortere tid til markedet, etterlevelse av lokale lover og forskrifter, og mer …
 
 <div class="accordion-box">
-<button class="accordion">Introduksjon til skytjenester</button>
+<button type="button" class="accordion">Introduksjon til skytjenester</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybegynner (med noe teknisk kunnskap)</p>
@@ -65,7 +65,7 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Moderne DevOps og mikrotjenester</button>
+<button type="button" class="accordion">Moderne DevOps og mikrotjenester</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Mellomnivå</p>
@@ -79,7 +79,7 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
 </div>
 </div>
 <!--<div class="accordion-box">
-<button class="accordion">Lean kunstig intelligens</button>
+<button type="button" class="accordion">Lean kunstig intelligens</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Mellomnivå</p>

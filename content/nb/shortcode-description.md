@@ -1114,7 +1114,7 @@ Oppretter en FAQ-lignende accordion med et spørsmål som overskrift og svaret i
 ### Kode
 ```html
 <div class="accordion-box">
-  <button class="accordion">{{ .Get "question" }}</button>
+  <button type="button" class="accordion">{{ .Get "question" }}</button>
   <div class="panel content-body">
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <h3 itemprop="name">{{ .Get "question" }}</h3>

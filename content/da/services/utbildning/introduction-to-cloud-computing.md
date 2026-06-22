@@ -36,7 +36,7 @@ Softwareudviklere, tekniske projektledere, softwarearkitekter, drifts- og suppor
 8-9 lektioner + 1 workshop
 
 <div class="accordion-box">
-<button class="accordion">Emner</button>
+<button type="button" class="accordion">Emner</button>
 <div class="panel content-body">
 <p>Følgende emner dækkes:</p>
 <ul>
@@ -55,7 +55,7 @@ Softwareudviklere, tekniske projektledere, softwarearkitekter, drifts- og suppor
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Sessioner</button>
+<button type="button" class="accordion">Sessioner</button>
 <div class="panel content-body">
 <p>Eksempel på kursusplan:</p>
 <ul>

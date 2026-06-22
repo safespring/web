@@ -34,7 +34,7 @@ Softwareudviklere, tekniske projektledere, softwarearkitekter, professionelle in
 ### Indhold
 
 <div class="accordion-box">
-<button class="accordion">Emner, der dækkes</button>
+<button type="button" class="accordion">Emner, der dækkes</button>
 <div class="panel content-body">
 <p>Disse emner vil blive gennemgået:</p>
 <ul>
@@ -57,7 +57,7 @@ Softwareudviklere, tekniske projektledere, softwarearkitekter, professionelle in
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Sessioner</button>
+<button type="button" class="accordion">Sessioner</button>
 <div class="panel content-body">
 <p>Eksempel på kursusplan:</p>
 <ul>

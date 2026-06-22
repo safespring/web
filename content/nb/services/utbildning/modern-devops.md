@@ -34,7 +34,7 @@ Programvareutviklere, tekniske prosjektledere, programvarearkitekter, drift- og 
 ### Innhold
 
 <div class="accordion-box">
-<button class="accordion">Temaer som dekkes</button>
+<button type="button" class="accordion">Temaer som dekkes</button>
 <div class="panel content-body">
 <p>Disse temaene vil bli dekket:</p>
 <ul>
@@ -57,7 +57,7 @@ Programvareutviklere, tekniske prosjektledere, programvarearkitekter, drift- og 
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Økter</button>
+<button type="button" class="accordion">Økter</button>
 <div class="panel content-body">
 <p>Eksempel på kursplan:</p>
 <ul>

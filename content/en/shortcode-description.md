@@ -1228,7 +1228,7 @@ Skapar en FAQ-liknande accordion med en fråga som rubrik och svaret i det dolda
 
 ```html
 <div class="accordion-box">
-  <button class="accordion">{{ .Get "question" }}</button>
+  <button type="button" class="accordion">{{ .Get "question" }}</button>
   <div class="panel content-body">
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <h3 itemprop="name">{{ .Get "question" }}</h3>

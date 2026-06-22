@@ -34,7 +34,7 @@ Software Developers, Technical Project Managers, Software Architects, Operations
 ### Content
 
 <div class="accordion-box">
-<button class="accordion">Topics Covered</button>
+<button type="button" class="accordion">Topics Covered</button>
 <div class="panel content-body">
 <p>These topcs will be covered:</p>
 <ul>
@@ -57,7 +57,7 @@ Software Developers, Technical Project Managers, Software Architects, Operations
 </div>
 
 <div class="accordion-box">
-<button class="accordion">Sessions</button>
+<button type="button" class="accordion">Sessions</button>
 <div class="panel content-body">
 <p>Example of course plan:</p>
 <ul>
