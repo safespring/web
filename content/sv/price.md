@@ -151,8 +151,8 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
 <table class="width100" style="margin-bottom:40px;">
     <thead>
         <tr>
-            <th>Data Usage (GB)</th>
-            <th>Most Cost-effective Service</th>
+            <th>Dataförbrukning (GB)</th>
+            <th>Mest kostnadseffektiva tjänst</th>
         </tr>
     </thead>
     <tbody>
@@ -165,7 +165,7 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
         <td>Backup Small</td>
     </tr>
     <tr>
-        <td>7 001</td>
+        <td>7 001+</td>
         <td>Backup Large</td>
     </tr>
 </tbody>

@@ -168,7 +168,7 @@ Safespring Backup offers data reduction technology <sup>1</sup> in the service w
         <td>Backup Small</td>
     </tr>
     <tr>
-        <td>7 001</td>
+        <td>7 001+</td>
         <td>Backup Large</td>
     </tr>
 </tbody>

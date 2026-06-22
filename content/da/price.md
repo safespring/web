@@ -156,7 +156,7 @@ Safespring Backup tilbyder datareduktionsteknologi <sup>1</sup> i tjenesten, som
         <td>Backup Small</td>
     </tr>
     <tr>
-        <td>7 001</td>
+        <td>7 001+</td>
         <td>Backup Large</td>
     </tr>
 </tbody>
