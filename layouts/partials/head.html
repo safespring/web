@@ -171,6 +171,18 @@
         width: fit-content;
         margin-right: 25px;
       }
+      @media only screen and (max-width: 600px) {
+        .button,
+        .text-button {
+          box-sizing: border-box;
+          max-width: 100%;
+          overflow-wrap: anywhere;
+          white-space: normal;
+        }
+        .button {
+          margin-right: 0;
+        }
+      }
       @media (min-width: 900px) {
         .button {
           transition: margin-right 0.3s ease, padding-right 0.3s ease;
@@ -204,6 +216,14 @@
         text-transform: uppercase;
         white-space: nowrap;
         line-height: 5;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .text-button {
+          display: inline-flex;
+          align-items: center;
+          line-height: 1.25;
+        }
       }
 
       .text-button:hover {
@@ -668,6 +688,10 @@
         .heading-default-single h1 {
           max-width: 90%;
           font: 300 2.75rem/1 var(--hind-font);
+        }
+        .heading-default-single .header-button,
+        .heading-default-single .button {
+          max-width: 100%;
         }
       }
       {{ if .Params.logobannertransparent }}
