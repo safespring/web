@@ -23,6 +23,7 @@
         document.addEventListener("DOMContentLoaded", function () {
           var video = document.getElementById("player");
           var videoSrc = "{{ .Params.videoURL }}";
+          var _paq = (window._paq = window._paq || []);
           var isFullScreen = false;
           var hlsScriptLoaded = false;
           var videoInitialized = false;

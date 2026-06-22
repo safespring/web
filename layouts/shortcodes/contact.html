@@ -41,10 +41,17 @@
 -->
 
 <div class="contact-container">
-  {{ if .Params.picture }}
+  {{ $picture := .Get "picture" }}
+  {{ $picturePath := "" }}
+  {{ if $picture }}
+    {{ if or (hasPrefix $picture "/img/") (hasPrefix $picture "http://") (hasPrefix $picture "https://") }}
+      {{ $picturePath = $picture }}
+    {{ else }}
+      {{ $picturePath = printf "/img/people/%s" (replaceRE "^/" "" $picture) }}
+    {{ end }}
     <div
       class="contact-image"
-      style="aspect-ratio: 1 / 1; background-image: url(/img/people/{{ .Get `picture` }});"
+      style="aspect-ratio: 1 / 1; background-image: url({{ $picturePath }});"
     ></div>
   {{ end }}
   <div class="contact-text-container">
@@ -60,7 +67,7 @@
         </a>
       {{ end }}
       {{ if .Params.email }}
-        <a class="contact-link" href="tel:{{ .Get `email` }}">
+        <a class="contact-link" href="mailto:{{ .Get `email` }}">
           <i class="fa-solid fa-envelope"></i>
           <span>{{ .Get "email" }}</span>
         </a>

@@ -66,4 +66,3 @@ Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre 
     <br>
     <input type="submit" name="submit_form" class="button" id="checkBtn" value="Send forespørsel" onclick="if (!document.querySelectorAll('input[name=&quot;Extra.1547719761203&quot;]:checked').length) { alert('Hei! Husk å fortelle oss hva du vil teste.'); return false; }" />
 </form>
-<script src="https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/be.js"></script>

@@ -282,16 +282,20 @@ Tak fordi du valgte Safesprings tjenester. Vi glæder os til at arbejde sammen m
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opret konto</button>
 </form>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#checkBtn').click(function() {
-            checked = $("input[type=checkbox]:checked").length;
-            if (!checked) {
-                alert("You must accept our terms our conditions");
-                return false;
-            }
-        });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var checkBtn = document.getElementById("checkBtn");
+    if (!checkBtn) {
+        return;
+    }
+    checkBtn.addEventListener("click", function (event) {
+        var checked = document.querySelectorAll("input[type=checkbox]:checked").length;
+        if (!checked) {
+            event.preventDefault();
+            alert("You must accept our terms our conditions");
+        }
     });
+});
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function(){
