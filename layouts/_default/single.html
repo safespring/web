@@ -59,6 +59,7 @@
   {{ end }}
 </div>
 {{ if .Params.ai }}{{ partial "ai-disclaimer.html" . }}{{ end }}
+    {{ partial "mobile-toc.html" . }}
     {{ $documentMeta := dict }}
     {{ with .File }}
       {{ with index $.Site.Data.compliance_meta .BaseFileName }}

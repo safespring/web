@@ -2,18 +2,6 @@
   {{ if .Params.toc }}
   {{ $toc = .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" }}
   {{ $toc = replace $toc "id=\"TableOfContents\"" "class=\"table-of-contents\"" }}
-  <button type="button" class="mobile-toc" id="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}</button>
-    <div class="sidebar-container-mobile">
-      <div class="sidebar-content-mobile">  
-        <h2 class="sidebar-toc">
-          {{ .Params.toc }}
-        </h2>
-        <div class="balance-text">
-          {{ $toc | safeHTML }}
-        </div>
-      </div>
-    </div>
-    <div class="overlay"></div>
   {{ end }}
   <div class="sidebar-container">
     <div
