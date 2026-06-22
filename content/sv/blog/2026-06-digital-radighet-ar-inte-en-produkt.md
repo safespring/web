@@ -11,6 +11,8 @@ socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "sv"
 section: "blogg"
 author: "Gabriel Paues"
+aliases:
+  - /blogg/2026/2026-06-digital-radighet-ar-inte-en-produkt/
 ---
 
 {{< ingress >}}
@@ -23,7 +25,7 @@ Begreppet är relativt nytt. Frågorna är det inte.
 
 På Safespring har vi under flera år skrivit om delar av samma problemområde, ofta från olika utgångspunkter. I vissa fall har diskussionen handlat om jurisdiktion och dataskydd. I andra fall har den handlat om molnarkitektur, AI eller offentlig upphandling. Gemensamt för många av dessa frågor är att de i grunden handlar om kontroll, beroenden och handlingsfrihet.
 
-Flera av resonemangen påminner om det vi tidigare beskrev i artikeln [Det multidimensionella problemet](/sv/blog/2025-08-det-multidimensionella-problemet/), där juridik, säkerhet, drift, geopolitiska förutsättningar och verksamhetsrisk behandlas som delar av samma fråga.
+Flera av resonemangen påminner om det vi tidigare beskrev i artikeln [Det multidimensionella problemet](/blogg/det-multidimensionella-problemet/), där juridik, säkerhet, drift, geopolitiska förutsättningar och verksamhetsrisk behandlas som delar av samma fråga.
 
 ## När juridiken möter infrastrukturen
 
@@ -35,7 +37,7 @@ Det blev tydligt efter Schrems II-domen 2020 och har fortsatt genom arbetet med 
 - Vilken lagstiftning gäller för leverantören?
 - Vilka möjligheter finns att flytta data om förutsättningarna förändras?
 
-I white paperet [Läget efter EU-US Data Protection Framework (DPF)](/sv/whitepaper/eu-us-dpf/) beskrev vi hur dessa frågor påverkar riskbedömningen även när data lagras inom Europa.
+I white paperet [Läget efter EU-US Data Protection Framework (DPF)](/whitepaper/eu-us-dpf/) beskrev vi hur dessa frågor påverkar riskbedömningen även när data lagras inom Europa.
 
 ## Öppna standarder och möjligheten att byta väg
 
@@ -53,7 +55,7 @@ S3-kompatibla lagringsgränssnitt används för att minska beroendet av en speci
 
 Tekniken eliminerar inte leverantörsberoenden. Den kan däremot minska kostnaden för framtida förändringar.
 
-Vi har tidigare berört samma frågor i artikeln [Helhetsgrepp om molninfrastrukturen](/sv/blog/2023-06-molninfrastruktur/) och i flera texter om OpenStack, Kubernetes och leverantörsoberoende arkitektur.
+Vi har tidigare berört samma frågor i artikeln [Helhetsgrepp om molninfrastrukturen](/blogg/helhetsgrepp-om-molninfrastrukturen/) och i flera texter om OpenStack, Kubernetes och leverantörsoberoende arkitektur.
 
 ## Samma frågor dyker nu upp inom AI
 
@@ -75,7 +77,7 @@ Vilka krav ställer AI Act på dokumentation och transparens?
 
 I rapporten behandlas detta som en del av digital rådighet. Vi ser samma frågor i samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor.
 
-Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där frågor om dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](/en/services/machine-learning/).
+Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där frågor om dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](/tjanster/machine-learning/).
 
 Länge var detta en diskussion om risker som skulle kunna inträffa. I juni 2026 blev det en diskussion om något som faktiskt hade inträffat.
 
@@ -111,7 +113,7 @@ För vissa organisationer leder det till nya krav i upphandlingar.
 
 För andra leder det till nya krav på dokumentation, arkitektur eller leverantörsstyrning.
 
-Samma utveckling ligger bakom flera av de resonemang vi tidigare fört kring digital rådighet, leverantörsrisk och europeisk infrastruktur, bland annat i artikeln [EU har precis definierat det suveräna molnet, här är vårt resultat](/sv/blog/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/).
+Samma utveckling ligger bakom flera av de resonemang vi tidigare fört kring digital rådighet, leverantörsrisk och europeisk infrastruktur, bland annat i artikeln [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/eu-har-precis-definierat-det-suveräna-molnet-här-är-vårt-resultat/).
 
 ## Digital rådighet i praktiken
 
@@ -136,4 +138,4 @@ Det är också därför digital rådighet inte är en produkt eller en certifier
 
 Det är resultatet av många tekniska, juridiska och organisatoriska beslut som fattas över tid.
 
-För den som vill fördjupa sig ytterligare i den europeiska dimensionen av frågan rekommenderar vi även artiklarna [EU har precis definierat det suveräna molnet, här är vårt resultat](/sv/blog/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/) och [Varför Safespring stödjer EuroStack](/sv/blog/2025-03-eurostack/).
+För den som vill fördjupa sig ytterligare i den europeiska dimensionen av frågan rekommenderar vi även artiklarna [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/eu-har-precis-definierat-det-suveräna-molnet-här-är-vårt-resultat/) och [Varför Safespring stödjer EuroStack](/blogg/varför-safespring-stödjer-eurostack/).
