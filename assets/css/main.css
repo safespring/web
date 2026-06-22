@@ -5554,7 +5554,9 @@ width:100vw;*/
   border: none !important;
   text-align: left !important;
   outline: none !important;
-  transition: 0.4s !important;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease !important;
   font: 300 16px/1.2 var(--hind-font) !important;
   /*border-radius:10px;*/
   text-transform: none;
@@ -5564,6 +5566,12 @@ width:100vw;*/
 
 .accordion:hover {
   color: var(--link-color);
+}
+
+.accordion:focus-visible {
+  outline: 3px solid var(--main-color) !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(232, 239, 243, 0.95);
 }
 
 .active-utbildning {
