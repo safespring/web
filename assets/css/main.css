@@ -1739,7 +1739,9 @@ blockquote p {
 #up-form .inputGroup label a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 44px;
+  min-width: 44px;
   vertical-align: middle;
 }
 
@@ -1810,6 +1812,15 @@ color:var(--unCheckedColor);
   text-transform: uppercase;
   white-space: nowrap;
   line-height: 5;
+}
+
+a.text-button {
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  line-height: 1.25;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2510,8 +2521,13 @@ color:var(--unCheckedColor);
 }
 
 .safespring-footer-menu li a {
+  align-items: center;
+  box-sizing: border-box;
   font: 300 16px/23px var(--mon-font);
   color: var(--main-color) !important;
+  display: inline-flex;
+  min-height: 44px;
+  padding: 10px 6px;
   transition: 0.1s;
 }
 
@@ -3149,9 +3165,12 @@ body.no-scroll {
 }
 
 .sidebar-content-button a {
+  align-items: center;
   color: var(--main-color);
+  display: inline-flex;
   font-weight: 600;
   margin-left: 15px;
+  min-height: 44px;
 }
 
 .demo-sticky {
@@ -6892,10 +6911,14 @@ details[open] > div {
 }
 
 summary {
+  align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   background-color: var(--link-color);
   border-radius: 50px;
   border: none;
+  display: inline-flex;
+  justify-content: center;
   padding: 14px 25px 12px 25px !important;
   text-align: center;
   font: 14px/1 var(--hind-font-semibold);
@@ -6903,6 +6926,8 @@ summary {
   text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: 0.2px;
+  min-height: 44px;
+  min-width: 44px;
   width: fit-content;
   margin: 3% 0;
 }
