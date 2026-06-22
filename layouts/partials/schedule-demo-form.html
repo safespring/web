@@ -290,14 +290,14 @@
 			<label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
 		</div>
 		<div class="form-field phone-field">
-			<input maxlength="512" type="tel" placeholder="" autocomplete="tel" name="Contact.cellPhone">
-			<label><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ .phone }}</label>
+			<input maxlength="512" type="tel" placeholder="" id="up-phone-input" autocomplete="tel" name="Contact.cellPhone">
+			<label for="up-phone-input"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ .phone }}</label>
 		</div>
 	</div>
 	<div class="column-two">
 		<div class="form-field date-field">
-			<input type="text" placeholder="" name="Extra.1736325944675" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'">
-			<label><i class="fas fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;{{ .date }}</label>
+			<input type="text" placeholder="" id="up-demo-date-input" name="Extra.1736325944675" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'">
+			<label for="up-demo-date-input"><i class="fas fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;{{ .date }}</label>
 		</div>
 		<div class="form-field">
 			<input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
@@ -311,7 +311,7 @@
 	<input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549u7794d4f86da545e6a442e233c24577d8">
 	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
+	<input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
 	<div class="submit-button">
 		<button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">{{ .submit }}</button>
 	</div>
@@ -374,6 +374,11 @@
 				spinner.css("display", "inline");
 			}).on("typeahead:asynccancel typeahead:asyncreceive", function() {
 				spinner.css("display", "none");
+			});
+			nameField.siblings(".tt-hint").attr({
+				"aria-hidden": "true",
+				"tabindex": "-1",
+				"autocomplete": "off"
 			});
 		}
 	});

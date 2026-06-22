@@ -130,7 +130,7 @@ Meddela att du är intresserad av kursen "Modern DevOps & Microservices". Fyll i
   <input type="hidden" name="formCid" value="9549">
 	<input type="hidden" name="formId" value="9549ue770a5b7152b4b9796393b0943084e71">
 	<input type="hidden" name="isFrame" value="false">
-	<input type="text" value="" name="validation" style="display: none;">
+	<input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
 	<p>Genom att skicka in det här formuläret godkänner du våra <a href="{{% relref "/compliance/privacy_policy.md" %}}" target="_blank">villkor</a> (på svenska).</p>

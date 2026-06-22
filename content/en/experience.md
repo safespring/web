@@ -284,11 +284,11 @@ Safespring Compute offers great advantages such as simplified collaboration betw
     <div class="column-two">
     <div class="form-field">
         <input type="text" id="firstname" name="Contact.firstname" required>
-        <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
+        <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
     </div>
         <div class="form-field">
         <input type="text" id="lastname" name="Contact.lastname" required>
-        <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Last name</label>
+        <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Last name</label>
     </div>
     </div>
     <div class="form-field">
@@ -297,13 +297,13 @@ Safespring Compute offers great advantages such as simplified collaboration betw
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
     </div>
     <h2>Account information</h2>
     <p></p>
         <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organization</label>
+        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organization</label>
     </div>
     <div class="form-field">
         <input type="text" id="gatekeeper-name" name="Extra.1695029810459" required>
@@ -327,7 +327,7 @@ Safespring Compute offers great advantages such as simplified collaboration betw
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u5325684f3ca44641b1ebb4d4a8cd2e22">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;">
+    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Create account</button>
 </form>

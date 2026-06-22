@@ -1309,6 +1309,11 @@ select {
       }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
         spinner.css("display", "none");
       });
+      nameField.siblings(".tt-hint").attr({
+        "aria-hidden": "true",
+        "tabindex": "-1",
+        "autocomplete": "off"
+      });
     }
   });
 </script>
@@ -1329,21 +1334,21 @@ select {
   <!-- <div class="column-two"> -->
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-firstname-input" autocomplete="given-name" name="Contact.firstname" required="required">
-      <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.f_name" }}</label>
+      <label for="up-firstname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.f_name" }}</label>
     </div>
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-lastname-input" autocomplete="family-name" name="Contact.lastname" required="required">
-      <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.l_name" }}</label>
+      <label for="up-lastname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.l_name" }}</label>
     </div>
     <!-- </div> -->
     <!-- <div class="column-two"> -->
       <div class="active-input form-field">
-        <input maxlength="512" type="text" placeholder="" name="Contact.cellPhone">
-        <label for="phone"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ T "form.phone" }}</label>
+        <input maxlength="512" type="text" placeholder="" id="up-phone-input" name="Contact.cellPhone">
+        <label for="up-phone-input"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ T "form.phone" }}</label>
       </div>
       <div class="email form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="{{ T "form.email_title" }}" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;{{ T "form.email" }}</label>
+        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;{{ T "form.email" }}</label>
       </div>
       <small id="email-domain-warning">
         {{ $containerFormCopy.workEmail }}
@@ -1351,13 +1356,13 @@ select {
       <!-- </div> -->
       <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;{{ T "form.org" }}</label>
+        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;{{ T "form.org" }}</label>
       </div>
       <!-- REQUIRED FIELDS -->
       <input type="hidden" name="formCid" value="9549">
       <input type="hidden" name="formId" value="9549u4d6655796cf741c5aab400e441c49e50">
       <input type="hidden" name="isFrame" value="false">
-      <input type="text" value="" name="validation" style="display: none;">
+      <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
       <!-- END OF REQUIRED FIELDS -->
       <div class="submit-button"><button class="button pt-1 pb-1 cta-start" type="submit">{{ $containerFormCopy.startOnboarding }}</button></div>
     </form>

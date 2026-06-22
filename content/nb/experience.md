@@ -61,7 +61,7 @@ Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre 
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549uf83546290004448380e8164ebe216d83">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;">
+    <input type="text" value="" name="validation" style="display: none;" autocomplete="off" tabindex="-1" aria-hidden="true">
     <!-- END OF REQUIRED FIELDS -->
     <br>
     <input type="submit" name="submit_form" class="button" id="checkBtn" value="Send forespørsel" onclick="if (!document.querySelectorAll('input[name=&quot;Extra.1547719761203&quot;]:checked').length) { alert('Hei! Husk å fortelle oss hva du vil teste.'); return false; }" />
