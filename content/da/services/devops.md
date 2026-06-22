@@ -39,5 +39,7 @@ Vi tilbyder vores tjenester ved at opkræve en fast månedlig afgift for nem adg
 - **Behold ejerskabet** over jeres projekter og applikationer. Da I får adgang til vores eksperter inden for DevOps og infrastruktur, kan I bevare ejerskabet over jeres projekter, selvom jeres team ikke har al viden eller de ressourcer, der kræves for at komme over svære tekniske barrierer.
 - **Undgå lock-in** til en specifik platform eller proprietære tjenester. Vi hjælper jer med en strategi, så jeres løsninger er agnostiske og kan flyttes.
 
+<div id="kontaktet"></div>
+
 {{< horisontal-card cardtitle="Standardplan for DevOps-support" image="/img/graphics/safespring-image.svg" link="/kontakt" linktext="Kontakt os" text="Besvarer henvendelser inden for et døgn (e-mail). Op til to timers videomøder (inden for 5 arbejdsdage efter forespørgslen). Adgang til yderligere hands-on hjælp for 1 250 kr / time (næstkommende måned)." >}}
 {{< horisontal-card cardtitle="Premiumplan for DevOps-support" image="/img/graphics/safespring-image.svg" link="/kontakt" linktext="Kontakt os" text="Specifik kontaktperson. Livechat med udviklings&shy;teamet (kontortid). Op til seks timers videomøder om måneden (inden for to dage efter forespørgslen). Op til 10 timers junior- og mid-senior hands-on hjælp til specifikke problemer (kodegennemgang, fejlfinding, container-tilpasning, automatisering, test m.m.). Yderligere hands-on hjælp for 950 kr / time (samme måned)." >}}

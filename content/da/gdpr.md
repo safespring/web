@@ -27,7 +27,7 @@ aliases:
 {{< icon-block icon="fa-solid fa-user-shield" text="Behandling af personoplysninger" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
-## Eksterne foranstaltninger til databeskyttelse
+## Eksterne foranstaltninger til databeskyttelse {#external-data-protection-measures}
 
 I forbindelse med databeskyttelse og GDPR diskuteres overførsler til tredjelande ofte. Et helt kapitel i GDPR omhandler udelukkende begrænsningerne i mulighederne for at overføre data, og vi har tidligere udarbejdet [anbefalinger til organisationer]({{% relref "/whitepaper/schrems-ii.md" %}}), der stadig kæmper med dette spørgsmål. Men dette er ikke de eneste krav til dataansvarlige, hvor databehandlere kan hjælpe.
 
@@ -127,7 +127,7 @@ Central bloklagring for øget redundans: Som en del af vores service tilbyder vi
 
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Fødereret maskinlæring" linkref="/services/case/scaleout.md" linktext="Læs use case" text="“Det har værdi at have kritisk infrastruktur placeret i Sverige, hvor vi ikke er afhængige af andre landes lovgivning...” – Ebba Kreamer, Scaleout" >}}
 
-## Interne foranstaltninger til databeskyttelse
+## Interne foranstaltninger til databeskyttelse {#internal-data-protection-measures}
 
 Interne databeskyttelsestiltag er dem, som Safespring implementerer for personoplysninger, som vi selv er ansvarlige for. Vi er et cloud-selskab, der leverer til andre virksomheder. Vores kommercielle aktivitet omfatter personoplysninger i meget begrænset omfang. I drift håndterer vi kun brugernavne og adgangskoder for brugere på platformen.
 

@@ -33,7 +33,7 @@ Men det er ikke kun vores brug af vedvarende energi, der gør os til en bæredyg
 
 Hos Safespring vil vi fortsætte arbejdet med at reducere vores miljøpåvirkning og fortsat være en bæredygtig virksomhed. Vi er stolte af vores miljøarbejde og fast besluttede på at gøre vores del for at beskytte vores planet.
 
-## Safesprings bæredygtighedsarbejde
+## Safesprings bæredygtighedsarbejde {#safesprings-sustainability-work}
 
 {{< ingress >}}
 Safesprings mål er at bidrage til en renere verden ved at levere infrastrukturydelser af høj kvalitet til vores kunder i Norden, så de kan levere deres tjenester uden selv at investere i hardware. Det vil betyde lavere CO2-udledninger.
@@ -52,7 +52,7 @@ Som en mellemstor virksomhed, der arbejder med produkter og tjenester, der ikke 
 - Safespring deltager i forskellige nationale ordninger for genanvendelse, såsom retur af brugt elektronisk udstyr og kildesortering.
 - Affald genanvendes så vidt muligt (kommuner og ejendomsejere forbereder og organiserer).
 
-### ISO 14001-rammeværk for vores miljøpolitik
+### ISO 14001-rammeværk for vores miljøpolitik {#iso-14001-framework-for-our-environmental-policy}
 
 Safespring anvender ISO 14001:2004 som ramme for vores miljøarbejde. Standarden fungerer som en ramme, der hjælper organisationer med at udvikle deres egne miljøledelsessystemer.
 
@@ -65,11 +65,11 @@ I forhold til ISO 14001 fokuserer Safespring primært på reduceret CO2-aftryk o
 {{< icon-block-horisontal icon="fa-solid fa-recycle" color="#195F8C" description="Genanvende alt materiale på en klimasmart og bæredygtig måde for at reducere vores affald og støtte en cirkulær økonomi." text="Bæredygtig genanvendelse" >}}
 {{< icon-block-horisontal icon="fa-solid fa-chalkboard-teacher" color="#195F8C" description="Kontinuerlig træning og information til Safesprings medarbejdere om vores miljøarbejde for at fremme en bæredygtig arbejdskultur." text="Uddannelse i bæredygtighed" >}}
 
-### Miljøhensyn ved indkøb og anskaffelser
+### Miljøhensyn ved indkøb og anskaffelser {#environmental-considerations-in-purchasing-and-procurement}
 
 I det omfang det er muligt, bruger vi moderne energieffektive løsninger til at levere vores tjenester. Hardwaren i vores datacentre moderniseres løbende for at være så energieffektiv som muligt. Ved indkøb og anskaffelser indgår miljøaspektet altid i beslutningsprocessen for at sikre, at vi når vores fastsatte miljømål.
 
-### Ressourceudnyttelse og genbrug
+### Ressourceudnyttelse og genbrug {#resource-utilization-and-reuse}
 
 Den hardware, der ligger til grund for vores platform, genbruges i vores interne udvikling, når den ikke længere er egnet til produktion, så vidt muligt, før den genanvendes på en klimasmart og bæredygtig måde.
 

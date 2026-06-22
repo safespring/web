@@ -21,9 +21,9 @@ The service offers a combination of the flexibility of cloud technology and the 
 
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-user-lock" text="Digital Sovereignty" link="#security-measures" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-headset" text="Professional Support" link="#support" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-headset" text="Professional Support" link="#support-and-availability" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-shield-alt" text="Security / Compliance" link="#security-measures" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-tachometer-alt" text="High Availability" link="#availability" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-tachometer-alt" text="High Availability" link="#support-and-availability" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Flexible Scalability" link="#resource-scaling" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-users-cog" text="Technical Account Manager" link="#technical-account-manager-tam" color="#32cd32">}}
 {{< /icon-block-container >}}

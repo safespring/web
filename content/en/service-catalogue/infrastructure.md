@@ -29,8 +29,8 @@ Cloud compute services contains the following categories (OpenStack flavors):
 1. [Basic compute](#1-basic-compute)
 1. [Memory Optimized compute](#2-memory-optimized-compute)
 1. [Basic compute with local NVMe disk](#3-basic-compute-with-local-nvme-disk)
-1. [Memory Optimized compute with GPU and local NVMe disk](#5-memory-optimized-compute-with-gpu-and-local-nvme-disk)
-1. [Bare Metal Compute](#6-bare-metal-compute)
+1. [Memory Optimized compute with GPU and local NVMe disk](#4-compute-with-gpu-and-local-nvme-disk)
+1. [Bare Metal Compute](#5-bare-metal-compute)
 
 Base disks are default root disk sizes unless a volume with a different size is specified when deploying an image. Ephemeral disks are extra local storage devices accessible to a virtual machine on a specific hypervisor, for flavor types where applicable.
 
