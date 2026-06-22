@@ -856,6 +856,13 @@ code > span {
   font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 900px) {
+  p > code,
+  li > code {
+    padding-inline: 3px;
+  }
+}
+
 /* === CODE BLOCK  === */
 
 pre {
@@ -1034,6 +1041,11 @@ h2:first-child {
 .content-default-single img {
   width: min(100%, 700px);
   height: auto;
+}
+
+.content-default-single a:has(> img) {
+  display: inline-block;
+  max-width: 100%;
 }
 
 p > img {
@@ -2365,14 +2377,20 @@ a.text-button {
 }
 
 .cookie-consent-settings-inline {
+  align-items: center;
   appearance: none;
   background: transparent;
   border: 0;
   color: var(--link-color);
   cursor: pointer;
+  display: inline-flex;
   font: inherit;
-  padding: 0;
+  line-height: 1.1;
+  margin: -0.65em 0;
+  min-height: 44px;
+  padding: 0 0.15em;
   text-decoration: underline;
+  vertical-align: middle;
 }
 
 .cookie-consent-settings-inline:hover {
@@ -3738,7 +3756,9 @@ grid-template-columns:1.3fr 0.7fr */
 .table-of-contents a {
   display: inline-flex;
   align-items: center;
+  box-sizing: border-box;
   min-height: 44px;
+  min-width: 44px;
   color: var(--alt-color);
 }
 
