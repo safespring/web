@@ -7214,7 +7214,8 @@ details[open] summary {
   top: 50%;
   left: 0;
   right: 0;
-  font: 300 1.16rem/1.15 hind;
+  height: 1.75rem;
+  font: 300 1.16rem/1.35 hind;
   color: #195F8C;
   white-space: nowrap;
   overflow: hidden;
@@ -7354,6 +7355,7 @@ details[open] summary {
 
   .compliance-document-table__title {
     position: static;
+    height: auto;
     font-size: 1rem;
     overflow: visible;
     overflow-wrap: anywhere;
