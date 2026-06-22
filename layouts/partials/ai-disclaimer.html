@@ -37,7 +37,7 @@
     </div>
   </div>
 </div>
-<div style="margin: 50px;">.</div>
+<div class="ai-disclaimer-spacer" aria-hidden="true"></div>
 
 <style>
   .ai-disclaimer-container {
@@ -51,6 +51,10 @@
     transition: box-shadow 300ms ease-in;
     width: 65vw;
     border: solid 2px #fafefe
+  }
+
+  .ai-disclaimer-spacer {
+    margin: 50px;
   }
 
   .ai-disclaimer-header {
@@ -100,6 +104,41 @@
   .ai-disclaimer-cta {
   	display: flex;
   	justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .ai-disclaimer-container {
+      box-sizing: border-box;
+      margin-left: 0;
+      max-width: 100%;
+      padding: 24px;
+      position: relative;
+      width: 100%;
+      border-radius: 24px;
+    }
+
+    .ai-disclaimer-header {
+      gap: 0.75rem;
+    }
+
+    .ai-disclaimer-header p {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+
+    .ai-disclaimer-cta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .ai-disclaimer-cta a {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .ai-disclaimer-spacer {
+      margin: 0 0 1.5rem;
+    }
   }
 
   /* ÖPPEN via klass (mobil/klick) */

@@ -433,11 +433,22 @@
 
   /* Mobile layout */
   @media only screen and (max-width: 940px) {
+    .site-header,
+    .mobile-menu-wrapper {
+      width: 100vw;
+      max-width: 100vw;
+      overflow-x: clip;
+      box-sizing: border-box;
+    }
+
     .site-header-wrapper {
       justify-content: space-between !important;
       flex-flow: row nowrap !important;
       gap: 1rem;
       padding: 1.25rem 1.5rem 1rem !important;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .site-header-wrapper::before {
@@ -877,7 +888,7 @@
     background: color-mix(in srgb, var(--main-color) 18%, transparent);
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 430px) {
     .mobile-language-label {
       position: absolute;
       width: 1px;
@@ -955,6 +966,11 @@
     visibility: hidden;
     pointer-events: none;
     transition: none;
+  }
+
+  body:not(.mobile-menu-open) .mobile-menu-wrapper #mobileMainMenu,
+  body:not(.mobile-menu-open) .mobile-menu-wrapper .menu-screen {
+    transform: translateX(0);
   }
 
   body.mobile-menu-open .mobile-menu-wrapper {
