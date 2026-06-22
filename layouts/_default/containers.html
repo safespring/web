@@ -100,7 +100,7 @@
     --accent: #007aff;
     --radius: 16px;
     --shadow: none;
-    --tab-h: 42px;
+    --tab-h: 44px;
     --dur: 260ms;
     --ease: cubic-bezier(0.25, 0.8, 0.3, 1);
 
@@ -195,6 +195,11 @@
 }
 .brand img {
   width: auto;
+}
+.brand a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 /* Hero */
@@ -360,6 +365,7 @@ button:focus-visible {
   background: transparent;
   color: var(--muted);
   height: var(--tab-h);
+  min-height: 44px;
   padding: 0 12px;
   border-radius: 10px;
   display: inline-flex;
