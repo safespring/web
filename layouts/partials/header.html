@@ -1031,8 +1031,12 @@
   const platformLink = document.getElementById("main-menu-link-platform");
   const megaMenuWrapper = document.getElementById("site-megamenu");
   let hideTimeout;
+  let suppressMegaMenuFocusOpen = false;
 
   function showMegaMenu() {
+    if (suppressMegaMenuFocusOpen) {
+      return;
+    }
     clearTimeout(hideTimeout);
     megaMenuWrapper.classList.add("show");
     megaMenuWrapper.setAttribute("aria-hidden", "false");
@@ -1059,6 +1063,7 @@
     platformLink.addEventListener("mouseenter", showMegaMenu);
     platformLink.addEventListener("focus", showMegaMenu);
     platformLink.addEventListener("mouseleave", scheduleMegaMenuClose);
+    platformLink.addEventListener("focusout", scheduleMegaMenuClose);
 
     megaMenuWrapper.addEventListener("mouseenter", showMegaMenu);
     megaMenuWrapper.addEventListener("mouseleave", scheduleMegaMenuClose);
@@ -1067,8 +1072,13 @@
 
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && megaMenuWrapper.classList.contains("show")) {
+        e.preventDefault();
         hideMegaMenu();
+        suppressMegaMenuFocusOpen = true;
         platformLink.focus();
+        window.requestAnimationFrame(function () {
+          suppressMegaMenuFocusOpen = false;
+        });
       }
     });
   }
