@@ -5932,7 +5932,9 @@ button {
   letter-spacing: 0.2px;
 }
 
-button.text.active {
+button.text.active,
+a.text.active,
+span.text.active {
   background-color: #fafefe;
   border-radius: 0;
   border: none;
@@ -5944,7 +5946,9 @@ button.text.active {
   white-space: nowrap;
 }
 
-button.text.disable-button {
+button.text.disable-button,
+a.text.disable-button,
+span.text.disable-button {
   background-color: #fafefe;
   border-radius: 0;
   border: none;
@@ -5956,7 +5960,9 @@ button.text.disable-button {
   white-space: nowrap;
 }
 
-button.text {
+button.text,
+a.text,
+span.text {
   background-color: #fafefe;
   border-radius: 0;
   border: none;
@@ -5966,6 +5972,7 @@ button.text {
   color: var(--main-color);
   text-transform: none;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 button.active {
@@ -6120,7 +6127,13 @@ white-space:nowrap;
 
   .tf-buttons-container button.text,
   .tf-buttons-container button.text.active,
-  .tf-buttons-container button.text.disable-button {
+  .tf-buttons-container button.text.disable-button,
+  .tf-buttons-container a.text,
+  .tf-buttons-container a.text.active,
+  .tf-buttons-container a.text.disable-button,
+  .tf-buttons-container span.text,
+  .tf-buttons-container span.text.active,
+  .tf-buttons-container span.text.disable-button {
     padding: 0.4rem 0.75rem;
     white-space: normal;
   }
