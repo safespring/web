@@ -1,5 +1,6 @@
 ---
 title: "Digital rådighet är inte en produkt"
+slug: "digital-radighet-ar-inte-en-produkt"
 date: "2026-06-10"
 intro: "CivSecs rapport Digital rådighet och strukturella beroenden visar hur kontroll, beroenden och handlingsfrihet behöver behandlas som långsiktiga verksamhetsfrågor."
 draft: false
@@ -75,7 +76,7 @@ Vilka krav ställer AI Act på dokumentation och transparens?
 
 I rapporten behandlas detta som en del av digital rådighet. Vi ser samma frågor i samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor.
 
-Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där frågor om dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](https://beta.safespring.eu/services/machine-learning-ai-gpu-resources/).
+Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där frågor om dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](/tjanster/federerad-ai-med-fedn-på-safespring/).
 
 Länge var detta en diskussion om risker som skulle kunna inträffa. I juni 2026 blev det en diskussion om något som faktiskt hade inträffat.
 
