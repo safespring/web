@@ -2483,7 +2483,11 @@ color:var(--unCheckedColor);
   }
 
   .safespring-footer-menu li a {
+    align-items: center;
     background-color: #d7e3eb;
+    box-sizing: border-box;
+    display: inline-flex;
+    min-height: 44px;
     padding: 10px 15px;
     border-radius: 10px;
   }
