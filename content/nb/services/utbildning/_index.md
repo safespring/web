@@ -30,7 +30,7 @@ To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk overs
   <p>CEO, CTO, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, toppledere osv.</p>
   <h3>Varighet</h3>
   <p>1 dag</p>
-    <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}";'>Les mer</button>
+    <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a>
 </div>
 </div>
 <div class="accordion-box">
@@ -42,7 +42,7 @@ To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk overs
   <p>CEO, CTO, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, toppledere osv.</p>
   <h3>Varighet</h3>
   <p>1 dag.
-  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a></p>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a></p>
 </div>
 </div>
 
@@ -61,7 +61,7 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
   <p>Programvareutviklere, tekniske prosjektledere, programvarearkitekter, drifts- og supportmedarbeidere, utrullingsingeniører, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, QA- og testspesialister, domeneeksperter. Fra alle bransjer. </p>
   <h3>Varighet</h3>
   <p>4 dager (eller 2 + 2 dager)</p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}";'>Les mer</button>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}'>Les mer</a>
 </div>
 </div>
 <div class="accordion-box">
@@ -74,7 +74,7 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
   <h3>Varighet</h3>
   <p>4 dager (eller 2 + 2 dager)</p>
   <p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/modern-devops.md" %}}";'>Les mer</button>
+  <a class="button" href='{{% relref "/services/utbildning/modern-devops.md" %}}'>Les mer</a>
   </p>
 </div>
 </div>
@@ -88,7 +88,7 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
   <h3>Varighet</h3>
   <p>6 uker</p>
   <p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/lean-ai/';">Les mer</button>
+  <a class="button" href="/services/utbildning/lean-ai/">Les mer</a>
   </p>
 </div>
 </div>-->

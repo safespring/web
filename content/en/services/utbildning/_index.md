@@ -30,7 +30,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
   <p>CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.</p>
   <h3>Duration</h3>
   <p>1 day</p>
-    <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}";'>Learn more</button>
+    <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Learn more</a>
 </div>
 </div>
 <div class="accordion-box">
@@ -42,7 +42,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
   <p>CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.</p>
   <h3>Duration</h3>
   <p>1 day.
-  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Learn more</a></p>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Learn more</a></p>
 </div>
 </div>
 
@@ -61,7 +61,7 @@ These two packages are developed to give you an overview and good understanding 
   <p>Software Developers, Technical Project Managers, Software Architects, Operations Support professionals, Deployment engineers, IT Managers, Development Managers, Technical Managers, Line managers, QA and Testing professionals, Domain Experts. From all industry sectors. </p>
   <h3>Duration</h3>
   <p>4 days (or 2 + 2 days)</p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}";'>Learn more</button>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}'>Learn more</a>
 </div>
 </div>
 <div class="accordion-box">
@@ -74,7 +74,7 @@ These two packages are developed to give you an overview and good understanding 
   <h3>Duration</h3>
   <p>4 days (or 2 + 2 days)</p>
   <p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/modern-devops.md" %}}";'>Learn more</button>
+  <a class="button" href='{{% relref "/services/utbildning/modern-devops.md" %}}'>Learn more</a>
   </p>
 </div>
 </div>
@@ -88,7 +88,7 @@ These two packages are developed to give you an overview and good understanding 
   <h3>Duration</h3>
   <p>6 weeks</p>
   <p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/lean-ai/';">Learn more</button>
+  <a class="button" href="/services/utbildning/lean-ai/">Learn more</a>
   </p>
 </div>
 </div>-->

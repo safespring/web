@@ -34,13 +34,13 @@ Sammen med vår partner tilbyr Safespring en Kubernetes-plattform som gjør det 
 
 Partneren vår er sertifisert "{{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}}" via CNCF og leverer en sikkerhetsherdet Kubernetes-distribusjon som følger "upstream" Kubernetes-versjoner tett og er et aktivt medlem av Cloud Native-fellesskapet. I tillegg til administrerte Kuberntes-tjenester, tilbyr vi opplæring og konsulenttjenester.
 
-<div id="contact"></div>
+<div></div>
 <div style="margin-bottom:100px;">
 </div>
 
 ![Safespring benefits](/img/saas/no-key-points-kubernetes.svg)
 
-<div id="contact"></div>
+<div></div>
 <div style="margin-bottom:100px;">
 </div>
 
@@ -52,13 +52,13 @@ Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Welkin"
 
 ![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)
 
-<div id="contact"></div>
+<div></div>
 <div style="margin-bottom:100px;">
 </div>
 
 {{< horisontal-card image="/img/kontakt/oslo.png" cardtitle="Kontakt oss" link="mailto:info@safespring.com" linktext="info@safespring.com" text="Send en e -post til vårt kontor i Norge med dine spørsmål. Våre eksperter er alltid raske til å svare." >}}
 
-<div id="contact"></div>
+<div></div>
 <div style="margin-bottom:100px;">
 </div>
 

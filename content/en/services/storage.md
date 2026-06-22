@@ -97,7 +97,7 @@ Object Locking is a feature that allows you to make objects immutable for a spec
 Yes, Safespring Storage is fully S3-compatible, allowing you to leverage your existing tools and applications without modification.
 {{% /question %}}
 
-{{< distance >}}
+{{< distance "contact" >}}
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Contact us today" alt="Contact Safespring" %}}
 Unlock the full potential of your data with Safespring Storage. Our team is ready to assist you in finding the perfect storage solution for your business needs.

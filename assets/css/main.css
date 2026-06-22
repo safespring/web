@@ -958,30 +958,30 @@ li {
   line-height: 1.4;
 }
 
-#TableOfContents ul > li {
+.table-of-contents ul > li {
   list-style: none;
   margin-top: 15px;
 }
 
-#TableOfContents ul > li::before {
+.table-of-contents ul > li::before {
   content: "";
   list-style: none;
   margin-top: 15px;
 }
 
-#TableOfContents ul > li > a {
+.table-of-contents ul > li > a {
   font: var(--hind-light-weight) 16px var(--hind-font);
   color: var(--clear-blue-color);
   margin: 10px 0 2px 0;
   line-height: 1;
 }
 
-#TableOfContents ul > li > ul > li > a {
+.table-of-contents ul > li > ul > li > a {
   font: var(--hind-light-weight) 15px var(--mon-font);
   color: var(--alt-color);
 }
 
-#TableOfContents ul li > ul li::before {
+.table-of-contents ul li > ul li::before {
   content: "";
   color: var(--link-color);
   font-weight: 900;
@@ -989,7 +989,7 @@ li {
   margin-top: 1px;
 }
 
-#TableOfContents ul > li > ul > li {
+.table-of-contents ul > li > ul > li {
   margin-left: 17px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1476,6 +1476,48 @@ blockquote p {
   color: var(--text-color);
   text-transform: uppercase;
   border: 0;
+}
+
+.button {
+  background-color: var(--link-color);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px 8px 25px;
+  text-align: center;
+  font: 13px/1 var(--hind-font-semibold);
+  color: var(--text-color) !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  width: fit-content;
+  margin-right: 25px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  padding-right: 20px;
+}
+
+.button::after {
+  content: "\f061";
+  margin-left: -10px;
+  font: var(--fa-font-solid);
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.button:hover::after {
+  content: "\f061";
+  transition: all 0.3s ease;
+  transform: scaleX(1);
+  opacity: 1;
+  margin-left: 10px;
+  visibility: visible;
 }
 
 .close-btn {
@@ -2633,37 +2675,37 @@ color:var(--unCheckedColor);
   margin: 20px;
 }
 
-.sidebar-content-mobile #TableOfContents a {
+.sidebar-content-mobile .table-of-contents a {
   font-size: 19px;
   font-weight: 400;
   color: var(--middle-blue-color);
   font-family: var(--mon-font);
 }
 
-.sidebar-content-mobile #TableOfContents ul > li > ul > li {
+.sidebar-content-mobile .table-of-contents ul > li > ul > li {
   padding: 5px 10px;
   margin: 0px 0 0 0;
 }
 
-.sidebar-content-mobile #TableOfContents ul ul {
+.sidebar-content-mobile .table-of-contents ul ul {
   padding: 0 20px;
 }
 
-.sidebar-content-mobile #TableOfContents ul > li > ul > li > a {
+.sidebar-content-mobile .table-of-contents ul > li > ul > li > a {
   margin-left: 0px;
   font-weight: 400 !important;
 }
 
-.sidebar-content-mobile #TableOfContents ul > li {
+.sidebar-content-mobile .table-of-contents ul > li {
   padding: 15px 0;
   margin: 0px 0 0 0;
 }
 
-.sidebar-content-mobile #TableOfContents ul > li > a {
+.sidebar-content-mobile .table-of-contents ul > li > a {
   font-weight: 599 !important;
 }
 
-.sidebar-content-mobile #TableOfContents ul li > ul li::before {
+.sidebar-content-mobile .table-of-contents ul li > ul li::before {
   content: "";
   font-size: 15px;
   margin-left: -25px;
@@ -3313,7 +3355,7 @@ grid-template-columns:1.3fr 0.7fr */
   color: var(--link-color);
 }
 
-#TableOfContents > * {
+.table-of-contents > * {
   padding: 0px;
   font-size: 15px;
   list-style: none;
@@ -3329,25 +3371,25 @@ grid-template-columns:1.3fr 0.7fr */
   font-variant-numeric: normal;
 }
 
-#TableOfContents a {
+.table-of-contents a {
   color: var(--alt-color);
 }
 
-#TableOfContents a:hover {
+.table-of-contents a:hover {
   color: var(--link-color);
 }
 
-#TableOfContents ul {
+.table-of-contents ul {
   padding: 0px;
   list-style: none;
 }
 
-#TableOfContents ul ul {
+.table-of-contents ul ul {
   padding: 0px;
   list-style: none;
 }
 
-#TableOfContents ul ul ul {
+.table-of-contents ul ul ul {
   padding: 0px;
   list-style: none;
 }

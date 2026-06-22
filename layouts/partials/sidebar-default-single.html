@@ -1,4 +1,7 @@
+  {{ $toc := "" }}
   {{ if .Params.toc }}
+  {{ $toc = .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" }}
+  {{ $toc = replace $toc "id=\"TableOfContents\"" "class=\"table-of-contents\"" }}
   <button class="mobile-toc" id="mobile-toc"><i class="fa-solid fa-list-ul"></i>{{ .Params.toc }}</button>
     <div class="sidebar-container-mobile">
       <div class="sidebar-content-mobile">  
@@ -6,7 +9,7 @@
           {{ .Params.toc }}
         </h2>
         <div class="balance-text">
-          {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+          {{ $toc | safeHTML }}
         </div>
       </div>
     </div>
@@ -20,7 +23,7 @@
         {{ .Params.toc }}
       </h2>
       <div>
-        {{ .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+        {{ $toc | safeHTML }}
       </div>
     </div>
   </div>

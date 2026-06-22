@@ -6,7 +6,7 @@
 {{ else }}
   {{ $href := $.Page.Params.sidebarlinkurl }}
   {{ if strings.HasSuffix $href ".md" }}{{ $href = relref $.Page $href }}{{ end }}
-  <a href="{{ $href }}" target="_blank" id="button"
+  <a href="{{ $href }}" target="_blank" class="button"
     >{{ $.Page.Params.sidebarlinkname }}{{ if $.Page.Params.sidebarlinkicon }}
       &nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>
     {{ end }}</a

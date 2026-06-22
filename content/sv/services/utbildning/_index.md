@@ -30,7 +30,7 @@ Två av våra kurspaket vänder sig till personal med övergripande teknisk öve
   <p>CEO, CTO, IT-chefer, utvecklingschefer, tekniska chefer, linjechefer, chefer på högsta nivå, med flera.</p>
   <h3>Längd</h3>
   <p>1 dag</p>
-    <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}";'>Läs mer</button>
+    <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Läs mer</a>
 </div>
 </div>
 <div class="accordion-box">
@@ -42,7 +42,7 @@ Två av våra kurspaket vänder sig till personal med övergripande teknisk öve
   <p>CEO, CTO, IT-chefer, utvecklingschefer, tekniska chefer, linjechefer, chefer på högsta nivå, med flera.</p>
   <h3>Längd</h3>
   <p>1 dag.
-  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Läs mer</a></p>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Läs mer</a></p>
 </div>
 </div>
 
@@ -61,7 +61,7 @@ Dessa två paket är utformade för att ge dig en översikt och en god förståe
   <p>Programutvecklare, tekniska projektledare, mjukvaruarkitekter, specialister inom driftstöd, driftsättningsingenjörer, IT-chefer, utvecklingschefer, tekniska chefer, linjechefer, QA- och testspecialister, domänexperter. Från alla branscher. </p>
   <h3>Längd</h3>
   <p>4 dagar (eller 2 + 2 dagar)</p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}";'>Läs mer</button>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}'>Läs mer</a>
 </div>
 </div>
 <div class="accordion-box">
@@ -74,7 +74,7 @@ Dessa två paket är utformade för att ge dig en översikt och en god förståe
   <h3>Längd</h3>
   <p>4 dagar (eller 2 + 2 dagar)</p>
   <p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/modern-devops.md" %}}";'>Läs mer</button>
+  <a class="button" href='{{% relref "/services/utbildning/modern-devops.md" %}}'>Läs mer</a>
   </p>
 </div>
 </div>
@@ -88,7 +88,7 @@ Dessa två paket är utformade för att ge dig en översikt och en god förståe
   <h3>Längd</h3>
   <p>6 veckor</p>
   <p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/lean-ai/';">Läs mer</button>
+  <a class="button" href="/services/utbildning/lean-ai/">Läs mer</a>
   </p>
 </div>
 </div>-->
