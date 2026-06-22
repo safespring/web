@@ -7369,6 +7369,7 @@ details[open] summary {
 .compliance-document-table__link {
   display: flex;
   align-items: center;
+  min-height: 2.75rem;
   min-width: 0;
   flex: 1 1 auto;
   color: inherit;
@@ -7465,8 +7466,8 @@ details[open] summary {
   align-items: center;
   justify-content: center;
   padding: 0;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2.75rem;
+  height: 2.75rem;
   flex: 0 0 auto;
   border-radius: 50%;
   appearance: none;
@@ -7482,8 +7483,8 @@ details[open] summary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2.75rem;
+  height: 2.75rem;
   flex: 0 0 auto;
   border-radius: 50%;
   background-color: rgba(244, 103, 15, 0.08);
@@ -7572,6 +7573,7 @@ details[open] summary {
     display: block !important;
     font: 300 .8rem/1.35 montserrat;
     height: auto !important;
+    position: static;
     margin: .35rem 0 0 !important;
     opacity: 1 !important;
     overflow: visible;
@@ -7579,6 +7581,20 @@ details[open] summary {
     transform: none !important;
     visibility: visible !important;
     white-space: normal;
+  }
+
+  .compliance-document-table__row.is-description-open {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .compliance-document-table__row.is-description-open .compliance-document-table__link {
+    flex-basis: 100%;
+  }
+
+  .compliance-document-table__row.is-description-open .compliance-document-table__actions {
+    margin-left: calc(2rem + .9rem);
+    margin-top: .35rem;
   }
 
   .compliance-document-table__label {
