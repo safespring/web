@@ -199,17 +199,26 @@
       enable: 'Slå på undertexter',
       disable: 'Slå av undertexter'
     };
+    var subtitleLanguageLabel = 'Undertextspråk';
 
     if (htmlLang === 'en') {
       muteLabels.mute = 'Mute';
       muteLabels.unmute = 'Unmute';
       subtitleToggleLabels.enable = 'Enable subtitles';
       subtitleToggleLabels.disable = 'Disable subtitles';
+      subtitleLanguageLabel = 'Subtitle language';
     } else if (htmlLang === 'no' || htmlLang === 'nb' || htmlLang === 'nn') {
       muteLabels.mute = 'Demp';
       muteLabels.unmute = 'Lyd på';
       subtitleToggleLabels.enable = 'Slå på undertekster';
       subtitleToggleLabels.disable = 'Slå av undertekster';
+      subtitleLanguageLabel = 'Undertekstspråk';
+    } else if (htmlLang === 'da') {
+      muteLabels.mute = 'Slå lyd fra';
+      muteLabels.unmute = 'Slå lyd til';
+      subtitleToggleLabels.enable = 'Slå undertekster til';
+      subtitleToggleLabels.disable = 'Slå undertekster fra';
+      subtitleLanguageLabel = 'Undertekstsprog';
     }
 
     var subtitleState = {
@@ -524,6 +533,8 @@
 
       if (subtitleSelect) {
         subtitleSelect.disabled = !hasTracks || !subtitleState.enabled;
+        subtitleSelect.setAttribute('aria-label', subtitleLanguageLabel);
+        subtitleSelect.setAttribute('title', subtitleLanguageLabel);
         if (subtitleState.language) {
           subtitleSelect.value = subtitleState.language;
         }
