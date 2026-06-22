@@ -258,6 +258,7 @@ at_safespring = "på Safespring"
 [video]
 browser_support_error = "Din webbläsare stöder inte detta videoformat."
 browser_tag_error = "Din webbläsare stöder inte videotaggen."
+load_error = "Videon kunde inte laddas. Försök igen senare."
 
 [webinar]
 chapters = "Avsnitt"

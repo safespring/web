@@ -259,6 +259,7 @@ at_safespring = "at Safespring"
 [video]
 browser_support_error = "Your browser does not support this video format."
 browser_tag_error = "Your browser does not support the video tag."
+load_error = "The video could not be loaded. Please try again later."
 
 [webinar]
 chapters = "Chapters"

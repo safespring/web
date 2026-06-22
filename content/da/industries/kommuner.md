@@ -13,7 +13,7 @@ cardintro: ""
 aliases:
   - /branscher/kommuner/
 ---
-<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
+<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true" preload="none">
 <source type="video/mp4" src="/branscher/images/safespring_esam.mp4">
 <track src="/branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
@@ -43,4 +43,4 @@ Dette white paper gennemgår forudsætningerne efter dommen og giver anbefalinge
 
 <h3 id="download">Hent white paper</h3>
 
-<br><iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" 		width="360" 		height="367" 		style="border:0"></iframe>
+<br><iframe data-src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" width="360" height="367" style="border:0" loading="lazy" title="Hent white paper"></iframe>

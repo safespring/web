@@ -258,6 +258,7 @@ at_safespring = "hos Safespring"
 [video]
 browser_support_error = "Nettleseren din støtter ikke dette videoformatet."
 browser_tag_error = "Nettleseren din støtter ikke videotaggen."
+load_error = "Videoen kunne ikke lastes. Prøv igjen senere."
 
 [webinar]
 chapters = "Avsnitt"

@@ -1892,6 +1892,14 @@ color:var(--unCheckedColor);
   min-width: 100%;
   border-radius: 20px;
 }
+
+.video-error {
+  width: 100%;
+  margin: 12px 0 0;
+  color: #9e2f1f;
+  font: 16px var(--hind-font);
+}
+
 @media only screen and (max-width: 900px) {
   .webinar-videoplayer {
     max-width: 100%;

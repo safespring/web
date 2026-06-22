@@ -350,6 +350,45 @@
     });
   </script>
 {{ end }}
+{{ if (findRE "data-src=" .Content 1) }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var lazyFrames = document.querySelectorAll("iframe[data-src]");
+      if (!lazyFrames.length) {
+        return;
+      }
+
+      function loadFrame(frame) {
+        if (!frame.dataset.src) {
+          return;
+        }
+
+        frame.src = frame.dataset.src;
+        frame.removeAttribute("data-src");
+      }
+
+      if (!("IntersectionObserver" in window)) {
+        lazyFrames.forEach(loadFrame);
+        return;
+      }
+
+      var frameObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          loadFrame(entry.target);
+          frameObserver.unobserve(entry.target);
+        });
+      });
+
+      lazyFrames.forEach(function (frame) {
+        frameObserver.observe(frame);
+      });
+    });
+  </script>
+{{ end }}
 {{ if (findRE "<div class=\"mermaid\"" .Content 1) }}
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
