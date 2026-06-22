@@ -198,6 +198,7 @@ blog = "Blogg"
 [general]
 logo_alt = "Logotyp"
 read_more = "Läs mer"
+footnote_backref = "Tillbaka till referens"
 
 [footer]
 copy_code = "Kopiera kod"
@@ -308,5 +309,7 @@ per_hour = "/timme"
 approx = "ca"
 worker_type_aria = "Instanstyp"
 worker_count_aria = "Antal worker-noder"
+worker_decrease_aria = "Minska antal worker-noder"
+worker_increase_aria = "Öka antal worker-noder"
 remove_row_aria = "Ta bort rad"
 local_disk = "Lokal disk"

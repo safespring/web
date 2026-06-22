@@ -62,7 +62,7 @@
       {{ $sidebarlinkurl := .Params.sidebarlinkurl }}
       {{ if strings.HasSuffix $sidebarlinkurl ".md" }}{{ $sidebarlinkurl = relref . $sidebarlinkurl }}{{ end }}
       <div class="header-button">
-        <a href="{{ $sidebarlinkurl }}" target="_blank" class="button"
+        <a href="{{ $sidebarlinkurl }}" target="_blank" rel="noopener noreferrer" class="button"
           >{{ if .Params.sidebarlinkicon }}
             <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;
           {{ end }}{{ .Params.sidebarlinkname }}
@@ -74,6 +74,7 @@
             style="margin: 25px 0 0 0; padding: 1px 0 0 0"
             href="{{ $sidebarlinkurl2 }}"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-button"
           >
             {{ .Params.sidebarlinkname2 }}

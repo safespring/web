@@ -2216,7 +2216,8 @@ color:var(--unCheckedColor);
   transition: 0.1s;
   cursor: pointer;
 }
-.safespring-footer-information-menu a {
+.safespring-footer-information-menu a,
+.safespring-footer-information-menu button {
   color: #195f8c90;
   display: flex;
   gap: 20px;
@@ -2232,7 +2233,30 @@ color:var(--unCheckedColor);
   cursor: pointer;
 }
 
-.safespring-footer-information-menu a:hover {
+.safespring-footer-information-menu button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  text-align: left;
+}
+
+.cookie-consent-settings-inline {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--link-color);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.cookie-consent-settings-inline:hover {
+  color: var(--main-color);
+}
+
+.safespring-footer-information-menu a:hover,
+.safespring-footer-information-menu button:hover {
   color: var(--main-color) !important;
   transition: 0.1s;
   cursor: pointer;
@@ -2444,7 +2468,8 @@ color:var(--unCheckedColor);
     font: 300 16px/1 var(--mon-font);
   }
 
-  .safespring-footer-information-menu a {
+  .safespring-footer-information-menu a,
+  .safespring-footer-information-menu button {
     font: 300 16px/45px var(--mon-font);
     color: var(--main-color);
     display: initial;

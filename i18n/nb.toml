@@ -198,6 +198,7 @@ blog = "Blogg"
 [general]
 logo_alt = "Logo"
 read_more = "Les mer"
+footnote_backref = "Tilbake til referanse"
 
 [footer]
 copy_code = "Kopier kode"
@@ -308,5 +309,7 @@ per_hour = "/time"
 approx = "ca."
 worker_type_aria = "Instanstype"
 worker_count_aria = "Antall worker-noder"
+worker_decrease_aria = "Reduser antall worker-noder"
+worker_increase_aria = "Øk antall worker-noder"
 remove_row_aria = "Fjern rad"
 local_disk = "Lokal disk"

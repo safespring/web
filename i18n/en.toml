@@ -199,6 +199,7 @@ blog = "Blog"
 [general]
 logo_alt = "Logo"
 read_more = "Read more"
+footnote_backref = "Back to reference"
 
 [footer]
 copy_code = "Copy code"
@@ -309,5 +310,7 @@ per_hour = "/hour"
 approx = "approx."
 worker_type_aria = "Instance type"
 worker_count_aria = "Number of worker nodes"
+worker_decrease_aria = "Decrease worker count"
+worker_increase_aria = "Increase worker count"
 remove_row_aria = "Remove row"
 local_disk = "Local disk"

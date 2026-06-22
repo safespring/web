@@ -474,6 +474,8 @@
       approx: "{{ T "container_calculator.approx" | safeJSStr }}",
       workerTypeAria: "{{ T "container_calculator.worker_type_aria" | safeJSStr }}",
       workerCountAria: "{{ T "container_calculator.worker_count_aria" | safeJSStr }}",
+      workerDecreaseAria: "{{ T "container_calculator.worker_decrease_aria" | safeJSStr }}",
+      workerIncreaseAria: "{{ T "container_calculator.worker_increase_aria" | safeJSStr }}",
       removeRowAria: "{{ T "container_calculator.remove_row_aria" | safeJSStr }}",
       localDisk: "{{ T "container_calculator.local_disk" | safeJSStr }}",
       presetStart: "{{ T "container_calculator.preset_start_label" | safeJSStr }}",
@@ -645,9 +647,9 @@
           '<select aria-label="' + text.workerTypeAria + '"></select>',
           '</div>',
           '<div class="container-calculator__stepper" aria-label="' + text.workerCountAria + '">',
-          '<button type="button" data-worker-minus="' + index + '">-</button>',
+          '<button type="button" data-worker-minus="' + index + '" aria-label="' + text.workerDecreaseAria + '">-</button>',
           '<span>' + worker.qty + '</span>',
-          '<button type="button" data-worker-plus="' + index + '">+</button>',
+          '<button type="button" data-worker-plus="' + index + '" aria-label="' + text.workerIncreaseAria + '">+</button>',
           '</div>',
           '<button class="container-calculator__remove" type="button" data-worker-remove="' + index + '" aria-label="' + text.removeRowAria + '">x</button>'
         ].join('');

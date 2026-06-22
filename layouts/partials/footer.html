@@ -220,11 +220,11 @@
           >
         </li>
         <li>
-          <a
-            href="javascript:cookieTractor.openConsentSettings()"
+          <button
+            type="button"
             class="cookie-consent-settings"
-            rel="nofollow"
-            >{{ T "menu.cookie_settings" }}</a
+            onclick="if (window.cookieTractor && cookieTractor.openConsentSettings) cookieTractor.openConsentSettings();"
+            >{{ T "menu.cookie_settings" }}</button
           >
         </li>
         <li>
@@ -317,6 +317,21 @@
             }
           });
         });
+      });
+    });
+  </script>
+{{ end }}
+{{ if (findRE "footnote-backref" .Content 1) }}
+  {{ $footnoteBackrefLabel := T "general.footnote_backref" }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var baseLabel = "{{ $footnoteBackrefLabel | safeJSStr }}";
+      document.querySelectorAll(".footnote-backref").forEach(function (link) {
+        var target = link.getAttribute("href") || "";
+        var reference = target.replace(/^#fnref:?/, "");
+        var label = reference ? baseLabel + " " + reference : baseLabel;
+        link.setAttribute("aria-label", label);
+        link.setAttribute("title", label);
       });
     });
   </script>
