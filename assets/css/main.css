@@ -2293,6 +2293,15 @@ color:var(--unCheckedColor);
   text-align: left;
 }
 
+.safespring-footer-information-menu button:focus-visible,
+.cookie-consent-settings-inline:focus-visible {
+  color: var(--main-color) !important;
+  outline: 2px solid var(--main-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(232, 239, 243, 0.95);
+}
+
 .cookie-consent-settings-inline {
   appearance: none;
   background: transparent;
