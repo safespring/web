@@ -27,10 +27,10 @@ Safespring lever upp till lokala lagar och regler kring datalagring såsom GDPR 
 ## Självbetjäning
 
 {{< ingress >}}
-Genom självbetjäning kan din miljö i Safespring skalas upp och ned efter era behov.
+Genom självbetjäning kan din miljö i Safespring skalas upp och ned efter dina behov.
 {{< /ingress >}}
 
-I Safespring skalar du enkelt upp och ner och betalar bara för det ni  använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
+I Safespring skalar du enkelt upp och ned och betalar bara för det du använder. Det är enkelt att sätta kvoter på exempelvis projekt, vilket ger dig full kontroll över nyttjandet av tjänsten och du får en förutsägbar kostnad.
 
 ### En miljö i Safespring ger:
 
@@ -38,5 +38,5 @@ I Safespring skalar du enkelt upp och ner och betalar bara för det ni  använde
 - Full kontroll på leveransen, självprovisionering via API.
 - Mer effektivt utnyttjande av IT-resurser.
 - Flexibilitet att skala upp och ner din infrastruktur efter behov.
-- Mycket hög säkerhet samt trygghet i du behåller kontrollen över datat.
+- Mycket hög säkerhet samt trygghet i att du behåller kontrollen över datat.
 - Säkerhetsfunktioner i plattformen som användaren kan styra själv.

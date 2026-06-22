@@ -30,7 +30,7 @@ Vårt samarbete med RISE (Research Institutes of Sweden) har varit en milstolpe 
 
 ### European Science Cloud byggs bland annat av Safespring
 
-En annan viktig del av vårt arbete under året har varit tilldelning i uphandlingen av infrastrukturen för European Open Science Cloud. I detta framstående samarbete med Polska PSNC kommer vi att leverera viktiga resurser och utveckla en ny managerad container-plattform. Denna satsning är inte bara en milstolpe för Safespring, utan utgör också en grund för nya möjligheter som kommer att gynna våra kunder och den bredare utvecklingen av våra tjänster.
+En annan viktig del av vårt arbete under året har varit tilldelning i upphandlingen av infrastrukturen för European Open Science Cloud. I detta framstående samarbete med Polska PSNC kommer vi att leverera viktiga resurser och utveckla en ny managerad container-plattform. Denna satsning är inte bara en milstolpe för Safespring, utan utgör också en grund för nya möjligheter som kommer att gynna våra kunder och den bredare utvecklingen av våra tjänster.
 
 ### Starkare container-erbjudande än någonsin
 
