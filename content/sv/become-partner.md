@@ -36,6 +36,6 @@ Ni är experter inom något område där moln- och infrastrukturtjänster kan va
 
 ## Bli partner
 
-Känner du igen dig i ovanstående eller har egna ideer på en partnerform, kontakta oss, vi är som sagt övertygade om att samarbeten är en vinnande strategi!
+Känner du igen dig i ovanstående eller har egna idéer på en partnerform? Kontakta oss, vi är som sagt övertygade om att samarbeten är en vinnande strategi!
 
 {{< 2calltoaction "Kontakta oss" "/kontakt" "Våra partners" "/our-partners.md" >}}
