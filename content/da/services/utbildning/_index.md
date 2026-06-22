@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Safespring-kurser"
+url: "/tjenester/utbildning/"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Vi tror på at bygge skalerbar software og infrastruktur, og ved hjælp af vores kurser kan du lære, hvad det betyder for dig og din organisation, og hvordan det kan understøtte driften og den videre udvikling af din virksomhed."

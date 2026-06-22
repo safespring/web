@@ -1,6 +1,7 @@
 ---
 language: "en"
 title: "Safespring courses"
+url: "/services/utbildning/"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "We believe in building scalable software and infrastructure, and with the help of our courses you can learn what that means for you and your organization and how it can support your operations and further development as a successful company."
