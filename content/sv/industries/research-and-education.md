@@ -43,7 +43,7 @@ Det finns många sätt som en organisation inom forskning och utbildning kan upp
 
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
     <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url(/img/card/ocre-background-blue.svg); display: flex;justify-content: center; align-items: center;" alt="">
-        <img src="/img/card/ocre-logo-white.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+        <img src="/img/card/ocre-logo-white.svg" alt="OCRE logo" style="max-width: 80%; min-width: 20%; min-height: 30px;">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <h3>Kontrollera om din organisation kan använda OCRE 2024</h3>
