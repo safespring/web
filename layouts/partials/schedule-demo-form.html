@@ -412,6 +412,11 @@
 					xhr.send();
 				}
 			});
+			var selectedFlag = element.parentNode && element.parentNode.querySelector(".iti__selected-flag");
+			if (selectedFlag) {
+				selectedFlag.setAttribute("aria-label", "{{ .phone }}");
+				selectedFlag.setAttribute("title", "{{ .phone }}");
+			}
 		});
 	})();
 </script>

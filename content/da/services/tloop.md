@@ -89,7 +89,7 @@ Sammenfattende tilbyder de mindre CO₂ i beregning, mindre CO₂ i ejendomme og
 {{% /question %}}
 
 {{% question question="Hvor meget lavere CO₂ kan Safespring Private Cloud hos T.Loop tilbyde sammenlignet med min nuværende installation?" %}}
-De kan hjælpe dig med at beregne dit nuværende klimaaftryk, hvis de får detaljer om dit forbrug. Den beregnede CO₂ baseres primært på din PUE og hvor mange kWh du bruger. Hvis du har brug for hjælp, venligst <a href="mailto:fredric.wallsten@safespring.com">kontakt Fredric Wallsten hos Safespring</a>.
+De kan hjælpe dig med at beregne dit nuværende klimaaftryk, hvis de får detaljer om dit forbrug. Den beregnede CO₂ baseres primært på din PUE og hvor mange kWh du bruger. Hvis du har brug for hjælp, venligst [kontakt Fredric Wallsten hos Safespring](mailto:fredric.wallsten@safespring.com).
 {{% /question %}}
 
 {{% question question="Tilbyder T.Loop også Data Energy Centers® til Safespring On-Prem Cloud?" %}}
@@ -120,7 +120,7 @@ Deres Data Energy Centers® er designet og bygget efter de højeste datacenterst
 {{% /question %}}
 
 {{% question question="Kan jeg besøge T.Loops datacenterfaciliteter, før jeg indgår en co-location‑aftale?" %}}
-For at booke en rundvisning, venligst <a href="mailto:hello@tloop.se">kontakt T.Loop</a>, så arrangerer de et besøgstidspunkt til dig.
+For at booke en rundvisning, venligst [kontakt T.Loop](mailto:hello@tloop.se), så arrangerer de et besøgstidspunkt til dig.
 {{% /question %}}
 
 {{< accordion-script >}}

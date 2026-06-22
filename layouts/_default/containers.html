@@ -1400,6 +1400,11 @@ select {
               xhr.send();
             }
           });
+          var selectedFlag = el.parentNode && el.parentNode.querySelector('.iti__selected-flag');
+          if (selectedFlag) {
+            selectedFlag.setAttribute('aria-label', '{{ T "form.phone" }}');
+            selectedFlag.setAttribute('title', '{{ T "form.phone" }}');
+          }
         });
       })();
     </script>

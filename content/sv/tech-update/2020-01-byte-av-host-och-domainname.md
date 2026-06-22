@@ -65,7 +65,7 @@ Detta påverkar de kunder som gör backup mot TSM1 (tsm1.cloud.ipnett.se), de va
 
 ### Ny adress för alla supportärenden
 
-Vi kommer även att addera en ny adress för tickets, <a href="mailto:support@safespring.com">support@safespring.com</a> för att ersätta de tidigare support-adresserna under cloud.ipnett.se/no.
+Vi kommer även att addera en ny adress för tickets, [support@safespring.com](mailto:support@safespring.com) för att ersätta de tidigare support-adresserna under cloud.ipnett.se/no.
 
 De gamla adresserna kommer fungera ett tag till framöver. Det kommer bli enklare med en supportingång oavsett tjänst.
 
@@ -119,7 +119,7 @@ This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se)
 
 ### New support address for all services
 
-We will also be adding a new address for tickets, <a href="mailto:support@safespring.com">support@safespring.com</a> to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
+We will also be adding a new address for tickets, [support@safespring.com](mailto:support@safespring.com) to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
 
 <script>
 var acc = document.getElementsByClassName("accordion");

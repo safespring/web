@@ -2946,6 +2946,20 @@ body.no-scroll {
   line-height: 1 !important;
   transition: all 0.2s ease;
 }
+
+.webinarplaylist-button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--main-color) !important;
+  cursor: pointer;
+  display: flex;
+  font: 16px var(--hind-font) !important;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
 .webinarplaylist ul li .timer {
   margin-left: auto;
   padding: 3px 15px 0 0;
@@ -2957,7 +2971,8 @@ body.no-scroll {
   padding: 3px 25px 0 0;
 }
 
-.webinarplaylist ul li a {
+.webinarplaylist ul li a,
+.webinarplaylist ul li button {
   font: 16px var(--hind-font) !important;
   color: var(--main-color) !important;
 }
@@ -4511,6 +4526,13 @@ ol li ol li::before {
     flex: 0 0 min(300px, calc(100vw - 2rem));
     margin-right: 10px;
     width: min(300px, calc(100vw - 2rem));
+  }
+
+  .webinar-scrolling-wrapper-flexbox .lazyload {
+    height: auto;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
   }
 
   .webinar-scrolling-wrapper-flexbox {

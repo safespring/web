@@ -74,7 +74,9 @@ I [det forrige blogindlæg][firstblog] viste vi grundlæggende brug af den førs
 
 Vi bruger [eksemplerne][sftfexamples] i Terraform-modulets [git-repo][sftfmodules] som reference og forklarer dem hver især under koden.
 
-### [Eksempel 1][ex1]: Én instans med standardparametre
+### Eksempel 1: Én instans med standardparametre
+
+[Eksempel 1][ex1]
 
 [ex1]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
 ```
@@ -108,7 +110,9 @@ Når den anvendes, vil denne kode oprette en compute-instans med navnet hello-sa
 
 Parameteren `config_drive` bruges sjældent. Hvis du ikke ved, hvad den bruges til, kan du trygt lade standardværdien (false) stå. For parametrene `role` og `wg_ip` gemmer vi forklaringen til senere.
 
-### [Eksempel 2][ex2]: Et sæt på 3 instanser ved hjælp af count
+### Eksempel 2: Et sæt på 3 instanser ved hjælp af count
+
+[Eksempel 2][ex2]
 
 [ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
 ```
@@ -121,7 +125,9 @@ module my_sf_instances {
 ```
 Her har vi tilføjet en count på 3, og vi bruger count-indekset til at skelne mellem navnene på de 3 oprettede instanser (du kan ikke oprette mere end én instans med samme navn). At anvende dette vil give 3 instanser med navnene `hello-safespring-{1,2,3}.example.com`. Kommenterede standardparametre blev forklaret i det første eksempel, så de er udeladt her. Som i det første eksempel bruges standardværdier, hvor der ikke er angivet noget, så alle 3 instanser får de samme egenskaber, og disse egenskaber er de samme standardværdier som i det første eksempel.
 
-### [Eksempel 3][ex3]: Sikkerhedsgruppe(r) og nøglepar som en del af koden
+### Eksempel 3: Sikkerhedsgruppe(r) og nøglepar som en del af koden
+
+[Eksempel 3][ex3]
 
 [ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
 ```
@@ -186,7 +192,9 @@ Specifikationen af reglerne for sikkerhedsgrupper sker med map-variabler direkte
 
 Det er helt op til dig, om du vil bruge vores modulbibliotek, oprette dine egne moduler eller blot oprette ressourcerne direkte i din konfiguration. Som minimum kan modulbiblioteket, med sine standardværdier, fungere som dokumentation eller som et tyndt lag (wrapper) omkring ressourcerne og navnene i vores platform set fra et Terraform-perspektiv.
 
-### [Eksempel 4][ex4]: Maps definerer instanser og regler for sikkerhedsgrupper
+### Eksempel 4: Maps definerer instanser og regler for sikkerhedsgrupper
+
+[Eksempel 4][ex4]
 
 [ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf
 ```
@@ -272,7 +280,9 @@ Det er værd at bemærke, at parameteren `delete_default_rules = true` fjerner s
 
 {{< note "Bemærk" >}}Hvis du opretter en instans, der ikke har nogen sikkerhedsgrupper tilknyttet, vil den stadig blive tilknyttet `default`-sikkerhedsgruppen, som indeholder egress-regler, der tillader instansen at forbinde til verden. For at forhindre dette skal du oprette dine egne sikkerhedsgrupper, som du knytter instanser til, og bruge parameteren «delete_default_rules = true» til «v2-compute-security-group»-modulet.{{< /note >}}
 
-### [Eksempel 5][ex5]: Kombination af count og map til instanser og map til diske
+### Eksempel 5: Kombination af count og map til instanser og map til diske
+
+[Eksempel 5][ex5]
 
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 

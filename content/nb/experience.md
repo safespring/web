@@ -19,19 +19,19 @@ Når du kjører dine applikasjoner hos Safespring kan du føle deg trygg. Våre 
 <form id="up-form" name="form_9549uf83546290004448380e8164ebe216d83" action="https://power.upsales.com/api/external/formSubmit" method="POST">
   <div class="form">
         <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" name="Contact.name" required="required" placeholder="Navn...">
+        <input maxlength="512" type="text" name="Contact.name" required="required" aria-label="Navn..." placeholder="Navn...">
     </div>
     <div class="form">
         <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" placeholder="E-post...">
+        <input maxlength="512" type="email" id="up-email-input" autocomplete="off" name="Contact.email" required="required" aria-label="E-post..." placeholder="E-post...">
     </div>
     <div class="form">
         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" placeholder="Organisasjon...">
+        <input maxlength="512" type="text" id="up-client-name-input" name="Client.name" required="required" aria-label="Organisasjon..." placeholder="Organisasjon...">
     </div>
     <div class="form">
         <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;
-        <input maxlength="512" type="text" name="Contact.cellPhone" required="required" placeholder="Mobiltelefon...">
+        <input maxlength="512" type="text" name="Contact.cellPhone" required="required" aria-label="Mobiltelefon..." placeholder="Mobiltelefon...">
     </div>
     <div>
         <h3>Hva vil du teste?</h3>

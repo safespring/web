@@ -225,13 +225,13 @@ aliases:
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Åpne retningslinjer for akseptabel bruk" title="Åpne retningslinjer for akseptabel bruk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Generelle vilkår og betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Generelle vilkår og betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Åpne generelle vilkår og betingelser" title="Åpne generelle vilkår og betingelser"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->

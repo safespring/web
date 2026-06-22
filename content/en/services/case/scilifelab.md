@@ -23,7 +23,6 @@ aliases:
   - /en/services/case/scilifelab/
 ---
 
-##
 
 {{< ingress >}}
 Safespring delivers a cloud-based VM and storage service to SciLifeLab, Sweden's largest national research infrastructure for life sciences.

@@ -1,5 +1,19 @@
 <div style="width: 800px; min-width: 100px;">
   <div class="section {{ if .Params.sectionhighlight }}mb-2{{ end }}">
+    {{ $sectionLabel := "" }}
+    {{ if eq .Section "om-safespring" }}
+      {{ $sectionLabel = T "menu.safespring_about" }}
+    {{ else if eq .Section
+      "referenser"
+    }}
+      {{ $sectionLabel = T "menu.customer_references" }}
+    {{ else if .Params.sectiontext }}
+      {{ $sectionLabel = .Params.sectiontext }}
+    {{ else if .Params.section }}
+      {{ $sectionLabel = .Params.section }}
+    {{ else if not .Params.toplogo }}
+      {{ $sectionLabel = .Section }}
+    {{ end }}
     {{ if .Params.toplogo }}
       <img
         src="/img/logos/{{ .Params.toplogo }}"
@@ -7,26 +21,15 @@
         class="toplogo"
       />
     {{ end }}
-    <a
-      class="{{ if .Params.sectionhighlight }}sectionhighlight{{ end }}"
-      href="{{ with .CurrentSection }}{{ .RelPermalink }}{{ else }}{{ relLangURL "/" }}{{ end }}"
-      style="{{ if .Params.cardcolor }}color: #195F8C;{{ end }}"
-    >
-      {{ if eq .Section "om-safespring" }}
-        {{ T "menu.safespring_about" }}
-      {{ else if eq .Section
-        "referenser"
-      }}
-        {{ T "menu.customer_references" }}
-      {{ else if .Params.sectiontext }}
-        {{ .Params.sectiontext }}
-      {{ else if .Params.section }}
-        {{ .Params.section }}
-      {{ else if .Params.toplogo }}
-      {{ else }}
-        {{ .Section }}
-      {{ end }}
-    </a>
+    {{ with $sectionLabel }}
+      <a
+        class="{{ if $.Params.sectionhighlight }}sectionhighlight{{ end }}"
+        href="{{ with $.CurrentSection }}{{ .RelPermalink }}{{ else }}{{ relLangURL "/" }}{{ end }}"
+        style="{{ if $.Params.cardcolor }}color: #195F8C;{{ end }}"
+      >
+        {{ . }}
+      </a>
+    {{ end }}
   </div>
   {{ if .Params.sectionhighlight }}
     <div style="margin-bottom: 40px"></div>

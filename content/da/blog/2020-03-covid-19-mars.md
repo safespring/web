@@ -40,7 +40,7 @@ Safesprings medarbejdere er tilgængelige som normalt. Kontakt din kundeansvarli
 
 **Fredric Wallsten**<br>
 +46 76-629 25 02<br>
-<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a>
+[fredric.wallsten@safespring.se](mailto:fredric.wallsten@safespring.se)
 
 **Support**<br>
-Har du spørgsmål om vores platform, henviser vi dig til vores supportadresse. <a href="mailto:support@safespring.com">support@safespring.com</a>
+Har du spørgsmål om vores platform, henviser vi dig til vores supportadresse. [support@safespring.com](mailto:support@safespring.com)

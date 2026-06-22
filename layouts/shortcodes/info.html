@@ -17,11 +17,11 @@
       >
         {{ .Get "name" }}
       </h2>
-      <p style="line-height: 1 !important; margin: 0 !important">
-        <a style="color: #323232" href="mailto:{{ .Get `email` }}"
-          >{{ .Get "email" }}</a
-        >
-      </p>
+      {{ with .Get "email" }}
+        <p style="line-height: 1 !important; margin: 0 !important">
+          <a style="color: #323232" href="mailto:{{ . }}">{{ . }}</a>
+        </p>
+      {{ end }}
     </div>
   </div>
 </div>

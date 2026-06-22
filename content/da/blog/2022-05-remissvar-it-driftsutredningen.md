@@ -113,6 +113,10 @@ Rådgiver: Amelia Andersdotter
 
 ## Links
 
-### [Samtlige høringssvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+### Samtlige høringssvar
 
-### [Slutbetænkning fra IT-driftsudredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)
+[Samtlige høringssvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+
+### Slutbetænkning fra IT-driftsudredningen
+
+[Slutbetænkning fra IT-driftsudredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)

@@ -40,7 +40,7 @@ Safespring’s staff are available as usual. Contact your account manager at Saf
 
 **Fredric Wallsten**<br>
 +46 76-629 25 02<br>
-<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a>
+[fredric.wallsten@safespring.se](mailto:fredric.wallsten@safespring.se)
 
 **Support**<br>
-If you have questions about our platform, please contact us at our support address. <a href="mailto:support@safespring.com">support@safespring.com</a>
+If you have questions about our platform, please contact us at our support address. [support@safespring.com](mailto:support@safespring.com)

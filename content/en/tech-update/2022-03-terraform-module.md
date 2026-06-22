@@ -119,7 +119,9 @@ Especially at a later point in time. {{< /note >}}
 We'll use the code [examples][sftfexamples] in the Terraform module [git
 repo][sftfmodules] as a reference and explain each of them underneath the code.
 
-### [Ex1][ex1]: One instance with default parameters
+### Ex1: One instance with default parameters
+
+[Ex1][ex1]
 
 [ex1]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
 
@@ -168,7 +170,9 @@ The `config_drive` parameter is rarely used. If you don't know what it is used
 for, you can safely leave the default (false). For the `role` and `wg_ip`
 parameters, we'll leave the explanation until later.
 
-### [Ex2][ex2]: A set of 3 instances using count
+### Ex2: A set of 3 instances using count
+
+[Ex2][ex2]
 
 [ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
 
@@ -190,7 +194,9 @@ example, default values will be used where none is given, so all 3 instances
 will have the same properties, and these properties are the same default values
 as in the first example.
 
-### [Ex3][ex3]: Security group(s) and keypair as part of the code
+### Ex3: Security group(s) and keypair as part of the code
+
+[Ex3][ex3]
 
 [ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
 
@@ -278,7 +284,9 @@ the module library, with its default values, can serve as documentation or a
 thin wrapper around the resources and names in our platform as seen from a
 Terraform perspective.
 
-### [Ex4][ex4]: Maps define instances and security group rules
+### Ex4: Maps define instances and security group rules
+
+[Ex4][ex4]
 
 [ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf
 
@@ -396,7 +404,9 @@ create your own security groups that you attach instances to and use the
 «delete_default_rules = true» parameter to the «v2-compute-security-group»
 module.{{< /note >}}
 
-### [Ex5][ex5]: Combining count and map for instances and map for disks
+### Ex5: Combining count and map for instances and map for disks
+
+[Ex5][ex5]
 
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 

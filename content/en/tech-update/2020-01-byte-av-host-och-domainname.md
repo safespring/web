@@ -65,7 +65,7 @@ This affects customers who back up to TSM1 (tsm1.cloud.ipnett.se); those whose c
 
 ### New address for all support tickets
 
-We will also add a new address for tickets, <a href="mailto:support@safespring.com">support@safespring.com</a>, to replace the previous support addresses under cloud.ipnett.se/no.
+We will also add a new address for tickets, [support@safespring.com](mailto:support@safespring.com), to replace the previous support addresses under cloud.ipnett.se/no.
 
 The old addresses will continue to work for a while. Having a single support entry point will make things simpler regardless of service.
 
@@ -119,7 +119,7 @@ This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se)
 
 ### New support address for all services
 
-We will also be adding a new address for tickets, <a href="mailto:support@safespring.com">support@safespring.com</a> to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
+We will also be adding a new address for tickets, [support@safespring.com](mailto:support@safespring.com) to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
 
 <script>
 var acc = document.getElementsByClassName("accordion");

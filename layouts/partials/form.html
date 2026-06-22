@@ -224,6 +224,9 @@
       <label for="accept-terms">
         {{ T "form.privacy" }}&nbsp;&nbsp;&nbsp;<a
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ T "menu.personal_data_policy" }}"
+          title="{{ T "menu.personal_data_policy" }}"
           href="{{ relref . "/compliance/privacy_policy.md" }}"
           ><i class="fas fa-up-right-from-square"></i
         ></a>

@@ -23,7 +23,6 @@ service: "Safespring Privat Cloud"
 aliases:
   - /en/services/case/scilifelab/
 ---
-##
 {{< ingress >}}
 Safespring leverer en skybaseret VM- og lagringstjeneste til SciLifeLab, Sveriges største nationale forskningsinfrastruktur for life science.
 {{< /ingress >}}
