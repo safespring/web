@@ -331,17 +331,6 @@ Safespring Compute giver store fordele såsom lettere samarbejde mellem forskell
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opret konto</button>
 </form>
-<script type="text/javascript">
-            $(document).ready(function() {
-                $('#checkBtn').click(function() {
-                    checked = $("input[type=checkbox]:checked").length;
-                    if (!checked) {
-                        alert("You must accept our terms our conditions");
-                        return false;
-                    }
-                });
-            });
-        </script>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
     const ids = ["#up-email-input", "#billing", "#gatekeeper-email"];
