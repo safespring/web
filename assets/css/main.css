@@ -1511,9 +1511,14 @@ blockquote p {
 }*/
 
 #button {
+  align-items: center;
   width: 175px;
   background-color: var(--button-color);
   border-radius: 50px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 44px;
   padding: 10px 25px 8px 25px;
   margin: 30px 0px;
   text-align: center;
@@ -1525,9 +1530,14 @@ blockquote p {
 }
 
 .button {
+  align-items: center;
   background-color: var(--link-color);
   border-radius: 50px;
   border: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 44px;
   padding: 10px 25px 8px 25px;
   text-align: center;
   font: 13px/1 var(--hind-font-semibold);
@@ -6049,6 +6059,15 @@ padding:1em 3em 3em 3em;
   align-content: center;
   flex-flow: row wrap;
   gap: 10px;
+}
+
+.tf-buttons-container button,
+.tf-buttons-container a.text {
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 44px;
 }
 
 .tf-buttons-container button:focus-visible,
