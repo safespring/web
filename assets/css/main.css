@@ -1206,7 +1206,7 @@ h4 {
 	-webkit-backdrop-filter:blur(8px);
 	box-shadow:none;
 	transition:opacity 0.15s ease;
-	z-index:2;
+	z-index:5;
 	opacity:0;
 	pointer-events:none;
 	cursor:pointer;
@@ -1263,14 +1263,14 @@ h4 {
 }
 
 .video-caption-overlay.is-lifted {
-	bottom:calc(5% + 28px);
+	bottom:calc(5% + 48px);
 }
 
 .video-subtitles {
 	position:absolute;
 	left:3%;
 	bottom:calc(5% + 14px);
-	z-index:3;
+	z-index:5;
 	display:flex;
 	align-items:center;
 	gap:8px;
@@ -1290,13 +1290,33 @@ h4 {
 }
 
 .video-player:focus-within .video-caption-overlay {
-	bottom:calc(5% + 28px);
+	bottom:calc(5% + 48px);
+}
+
+@media (hover:none), (pointer:coarse) {
+	.index-video::after {
+		opacity:1;
+	}
+
+	.video-timeline,
+	.video-subtitles {
+		opacity:1 !important;
+		pointer-events:auto !important;
+	}
+
+	.video-time {
+		opacity:1 !important;
+	}
+
+	.video-caption-overlay {
+		bottom:calc(5% + 48px);
+	}
 }
 
 .video-subtitle-toggle,
 .video-mute-toggle,
 .video-subtitle-select {
-	height:28px;
+	height:44px;
 	border-radius:999px;
 	border:none;
 	background:rgba(255, 255, 255, 0.35);
@@ -1311,7 +1331,7 @@ h4 {
 }
 
 .video-subtitle-toggle {
-	min-width:42px;
+	min-width:44px;
 	padding:0 12px;
 	cursor:pointer;
 }
@@ -1321,8 +1341,8 @@ h4 {
 }
 
 .video-mute-toggle {
-	width:28px;
-	min-width:28px;
+	width:44px;
+	min-width:44px;
 	padding:0;
 	display:inline-flex;
 	align-items:center;
@@ -1344,6 +1364,7 @@ h4 {
 }
 
 .video-subtitle-select {
+	min-width:44px;
 	padding:0 12px;
 	width:auto;
 	cursor:pointer;
@@ -1581,10 +1602,10 @@ blockquote p {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 17px;
-  right: 17px;
-  width: 35px;
-  height: 35px;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
   background-color: #f4670f10;
   border-radius: 50%;
   color: #f4670f;
@@ -1702,12 +1723,12 @@ blockquote p {
 }
 
 .inputGroup input {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   order: 1;
   z-index: 3;
   position: absolute;
-  left: 9px;
+  left: 3px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -1788,6 +1809,7 @@ color:var(--unCheckedColor);
   .text-button {
     display: inline-flex;
     align-items: center;
+    min-height: 44px;
     max-width: 100%;
     overflow-wrap: anywhere;
     white-space: normal;
@@ -2237,6 +2259,8 @@ color:var(--unCheckedColor);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  min-height: 44px;
   padding: 10px 18px;
   border-radius: 999px;
   background: #d7e3eb;
@@ -2344,6 +2368,12 @@ color:var(--unCheckedColor);
   height: auto;
 }
 
+.safespring-footer-logo > a {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
+}
+
 .safespring-footer-logo p {
   max-width: 300px;
   margin-bottom: 20px;
@@ -2380,8 +2410,17 @@ color:var(--unCheckedColor);
 }
 
 .safespring-footer-language-icon a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.safespring-footer-language-icon span[aria-current] {
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .safespring-footer-language-icon p {
@@ -2474,9 +2513,12 @@ color:var(--unCheckedColor);
   justify-content: space-evenly;
 }
 .safespring-footer-social a {
-  width: 100%;
+  align-items: center;
   display: flex;
   justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 900px) {
@@ -2684,9 +2726,10 @@ color:var(--unCheckedColor);
 
 .contact-link {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   color: var(--main-color);
+  min-height: 44px;
   overflow: hidden;
   word-break: break-word;
 }
@@ -2866,7 +2909,9 @@ color:var(--unCheckedColor);
 
 /* Knapp för att visa innehållsförteckningen på mindre skärmar */
 .mobile-toc {
+  box-sizing: border-box;
   display: none;
+  min-height: 44px;
   position: fixed;
   bottom: 10px;
   left: 50%;
