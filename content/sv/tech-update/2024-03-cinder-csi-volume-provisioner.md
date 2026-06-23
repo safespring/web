@@ -19,6 +19,7 @@ sidebarlinkname2: "GitHub-repo"
 sidebarlinkurl2: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 aliases:
   - /blogg/2024/2024-03-cinder-csi-volume-provisioner/
+  - /tekniska-uppdateringar/2024-03-cinder-csi-volume-provisioner/
 ---
 {{< ingress >}}
 Har du konfigurerat ditt OKD‑ eller OpenShift‑kluster med plattformsalternativet satt till "none" och saknar därför OpenStack Cinder CSI Driver Operator?

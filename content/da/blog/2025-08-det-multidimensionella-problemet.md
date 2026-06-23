@@ -12,6 +12,8 @@ socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "da"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blog/2025-08-det-multidimensionella-problemet/
 ---
 {{< ingress >}}
 I både Sverige og EU findes der en ofte tilbagevendende diskussion om brugen af amerikanske skytjenester.

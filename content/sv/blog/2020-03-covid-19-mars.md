@@ -14,6 +14,7 @@ author_image: "firm"
 aliases:
   - /blogg/covid-19-mars
   - /blogg/2020/2020-03-covid-19-mars/
+  - /blogg/2020-03-covid-19-mars/
 ---
 
 <div class="ingress"><p>Safespring planerar för fortsatt kontinuerlig drift.</p></div>

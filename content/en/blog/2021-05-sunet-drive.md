@@ -12,6 +12,7 @@ section: "blog"
 aliases:
   - /blogg/sunet-drive
   - /blogg/2021/2021-05-sunet-drive/
+  - /blog/2021-05-sunet-drive/
 ---
 {{< ingress >}}
 Together with Sunet, we have developed a file management and collaboration service for universities, university colleges, and affiliated public agencies on Sunet’s network.

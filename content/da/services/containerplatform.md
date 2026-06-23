@@ -101,14 +101,14 @@ Når du vil validere arkitektur, ansvarsfordeling og driftsmodel, er dette de me
     title="Hvad du får fra dag ét"
     href="/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/#hvad-du-får-på-dag-ét"
     icon="fa-solid fa-list-check"
-    label="Blog"
+    label="Deep Dives"
     description="De dokumenterede platformstandarder fra start."
   >}}
   {{< manual-document-row
     title="Tjenestegrænsen i praksis"
     href="/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/#tjenestegrænsen-i-praksis"
     icon="fa-solid fa-people-arrows"
-    label="Blog"
+    label="Deep Dives"
     description="Hvordan ansvar og operationelle grænser er fordelt mellem Safespring og jeres team."
   >}}
   {{< manual-document-row

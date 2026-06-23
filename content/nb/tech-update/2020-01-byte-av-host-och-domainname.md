@@ -14,6 +14,7 @@ section: "Teknisk oppdatering"
 aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
+  - /tekniske-oppdateringer/2020-01-byte-av-host-och-domainname/
 ---
 <a class="text-button" href="#english">Les den engelske versjonen</a>
 

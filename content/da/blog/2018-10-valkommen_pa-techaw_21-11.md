@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/valkommen_pa-techaw_21-11
   - /blogg/2018/2018-10-valkommen_pa-techaw_21-11/
+  - /blog/2018-10-valkommen_pa-techaw_21-11/
 ---
 ## Mød vores teknikere
 

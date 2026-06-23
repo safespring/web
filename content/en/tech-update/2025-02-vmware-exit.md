@@ -10,12 +10,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Blog"
+sectiontext: "Deep Dives"
 section: "Tech update"
 author: "Gabriel Paues"
 TOC: "In this post"
 aliases:
   - /blogg/2025/2025-02-vmware-exit/
+  - /tech-update/2025-02-vmware-exit/
 ---
 
 {{< ingress >}}

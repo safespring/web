@@ -12,6 +12,8 @@ socialmedia: ""
 language: "nb"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blogg/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/
 ---
 {{% ingress %}}
 20. oktober 2025 publiserte Europakommisjonen en referanse for gradering av europeiske skyer: Cloud Sovereignty Framework.

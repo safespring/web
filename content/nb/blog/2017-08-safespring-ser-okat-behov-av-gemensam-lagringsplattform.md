@@ -14,6 +14,7 @@ section: "blogg"
 aliases:
   - /blogg/safespring-ser-okat-behov-av-gemensam-lagringsplattform
   - /blogg/2017/2017-08-safespring-ser-okat-behov-av-gemensam-lagringsplattform/
+  - /blogg/2017-08-safespring-ser-okat-behov-av-gemensam-lagringsplattform/
 ---
 
 Med økende datamengder i alle disipliner får læresteder og institusjoner et stadig større behov for på en smidig måte å kunne lagre data. Stadig flere prosjekter håndterer i dag data i petabyte-skala, noe som fører til store kostnader ved etablering av interne lagringsløsninger. Safespring har en S3-kompatibel lagringsløsning som kan fungere som en felles plattform for prosjekter i forskningsverdenen som håndterer store datamengder.

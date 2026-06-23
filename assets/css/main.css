@@ -2048,6 +2048,14 @@ a.text-button {
 }
 
 @media only screen and (max-width: 900px) {
+  .heading-default-single .header-button {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 100%;
+  }
+
   .heading-default-single h1,
   .content-default-single h1,
   .content-default-single h2,
@@ -2080,19 +2088,42 @@ a.text-button {
   }
 
   .heading-default-single .button {
+    align-items: center;
     box-sizing: border-box;
-    display: inline-block;
-    line-height: 1.2;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
     max-width: 100%;
     margin-right: 0;
     overflow-wrap: anywhere;
     white-space: normal;
   }
 
-  .heading-default-single .button::after {
+  .heading-default-single .header-button .text-button {
+    align-items: center;
+    display: inline-flex;
+    line-height: 1;
+    min-height: 44px;
+  }
+
+  .content-default-single .button:hover {
+    margin-right: 0;
+    padding-right: 25px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .button::after,
+  .button:hover::after {
     display: none;
   }
 
+  .button:hover {
+    margin-right: 25px;
+    padding-right: 25px;
+  }
+
+  .heading-default-single .button:hover,
   .content-default-single .button:hover {
     margin-right: 0;
     padding-right: 25px;
@@ -3005,13 +3036,19 @@ a.text-button {
   font-family: var(--mon-font);
 }
 
+.sidebar-content-mobile .table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .sidebar-content-mobile .table-of-contents ul > li > ul > li {
-  padding: 5px 10px;
-  margin: 0px 0 0 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  position: relative;
 }
 
 .sidebar-content-mobile .table-of-contents ul ul {
-  padding: 0 20px;
+  padding: 0.35rem 0 0;
 }
 
 .sidebar-content-mobile .table-of-contents ul > li > ul > li > a {
@@ -3020,8 +3057,9 @@ a.text-button {
 }
 
 .sidebar-content-mobile .table-of-contents ul > li {
+  margin: 0;
   padding: 15px 0;
-  margin: 0px 0 0 0;
+  position: relative;
 }
 
 .sidebar-content-mobile .table-of-contents ul > li > a {
@@ -3029,11 +3067,11 @@ a.text-button {
 }
 
 .sidebar-content-mobile .table-of-contents ul li > ul li::before {
-  content: "";
-  font-size: 15px;
-  margin-left: -25px;
-  margin-top: 1px;
-  width: 25px;
+  display: none;
+}
+
+.sidebar-content-mobile .table-of-contents > ul > li::before {
+  display: none;
 }
 
 .mobile-toc.expanded {
@@ -3044,6 +3082,21 @@ a.text-button {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+html.toc-overlay-active,
+html.toc-overlay-active body {
+  background-color: #9da9ad;
+  overscroll-behavior: none;
+}
+
+html.toc-overlay-active body::before {
+  background: rgba(15, 32, 45, 0.32);
+  content: "";
+  inset: -120px 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 999;
 }
 
 .mobile-toc.expanded i {
@@ -3075,45 +3128,50 @@ body.no-scroll {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    bottom: auto;
-    left: auto;
-    margin: 0 auto 30px;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    left: 50%;
+    margin: 0;
     max-width: calc(100vw - 2rem);
-    position: relative;
+    position: fixed;
     top: auto;
-    transform: none;
+    transform: translateX(-50%);
     width: fit-content;
     box-shadow: 0 8px 22px rgba(25, 95, 140, 0.14);
+    z-index: 1002;
   }
 
   .mobile-toc--inline.expanded {
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
     left: 50%;
     margin: 0;
     position: fixed;
-    top: calc(92px + env(safe-area-inset-top, 0px) + 8px);
+    top: auto;
     transform: translateX(-50%);
     z-index: 1002;
   }
 
   .mobile-toc--inline + .sidebar-container-mobile.expanded {
-    bottom: auto;
+    bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
     box-sizing: border-box;
-    max-height: calc(100vh - 190px);
-    top: calc(92px + env(safe-area-inset-top, 0px) + 58px);
+    left: 1rem;
+    margin: 0;
+    max-height: calc(100vh - 9rem - env(safe-area-inset-bottom, 0px));
+    right: 1rem;
+    top: auto;
   }
 }
 
 .overlay {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: 999;
+  inset: 0;
+  width: auto;
+  height: 100vh;
+  height: 100dvh;
+  background: rgba(15, 32, 45, 0.32);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
 }
 
 .overlay.visible {

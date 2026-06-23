@@ -10,11 +10,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Blogg"
+sectiontext: "Nyheter og perspektiver"
 section: "blogg"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-eurostack/
+  - /blogg/2025-03-eurostack/
 ---
 {{< ingress >}}
 I Safespring har vi i nærmere 10 år utviklet og solgt skytjenester som respekterer at kundedata kun tilhører kunden, og at europeisk digital suverenitet er nødvendig for at Europa skal blomstre.

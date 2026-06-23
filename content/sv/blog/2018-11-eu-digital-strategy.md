@@ -12,6 +12,7 @@ section: "blog"
 aliases:
   - /blogg/eu-digital-strategy
   - /blogg/2018/2018-11-eu-digital-strategy/
+  - /blogg/2018-11-eu-digital-strategy/
 ---
 
 {{< ingress >}}

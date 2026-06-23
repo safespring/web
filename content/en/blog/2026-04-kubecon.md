@@ -3,7 +3,7 @@ title: "KubeCon + CloudNativeCon Europe 2026 — Amsterdam Recap"
 date: "2026-04-02"
 intro: "KubeCon + CloudNativeCon Europe 2026 took place at Amsterdam RAI from March 23–26, bringing together over 13,500 attendees from 100+ countries and 3,000+ organizations across nearly 900 sessions — the largest KubeCon to date."
 draft: false
-sectiontext: "Blog"
+sectiontext: "News & Perspectives"
 section: "Blog"
 tags: ["container", "events"]
 showthedate: true
@@ -12,6 +12,8 @@ eventbild: ""
 socialmediabild: ""
 language: "en"
 author: ""
+aliases:
+  - /blog/2026-04-kubecon/
 ---
 
 

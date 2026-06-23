@@ -16,6 +16,7 @@ language: "sv"
 toc: ""
 aliases:
   - /blogg/2023/2023-05-meta-miljardbot/
+  - /blogg/2023-05-meta-miljardbot/
 ---
 
 {{% ingress %}}

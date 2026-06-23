@@ -15,6 +15,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/svt-upphandling
   - /blogg/2020/2020-03-svt-upphandling/
+  - /blog/2020-03-svt-upphandling/
 ---
 
 {{< ingress >}}

@@ -16,6 +16,7 @@ toc: "Innholdsfortegnelse"
 aliases:
   - /blogg/2022-03-terraform-module
   - /blogg/2022/2022-03-terraform-module/
+  - /tekniske-oppdateringer/2022-03-terraform-module/
 ---
 {{< ingress >}}
 Dette er del to i serien om Safesprings Terraform-moduler. Dette blogginnlegget

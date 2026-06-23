@@ -13,6 +13,7 @@ socialmediabild: ""
 language: "en"
 aliases:
   - /blogg/2024/eosc-technical-launch/
+  - /blog/eosc-technical-launch/
 ---
 
 {{< ingress >}}

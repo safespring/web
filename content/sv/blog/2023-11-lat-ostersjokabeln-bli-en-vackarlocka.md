@@ -14,6 +14,7 @@ author_image: "firm"
 language: "sv"
 aliases:
   - /blogg/2023/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
+  - /blogg/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
 ---
 
 {{< ingress >}}

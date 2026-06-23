@@ -16,6 +16,7 @@ toc: "Innehållsförteckning"
 aliases:
   - /blogg/2022-06-terraform-ansible-rudder
   - /blogg/2022/2022-06-terraform-ansible-rudder/
+  - /tekniska-uppdateringar/2022-06-terraform-ansible-rudder/
 ---
 {{< ingress >}}
 Det här blogginlägget tittar på hur vi kan bygga vidare på

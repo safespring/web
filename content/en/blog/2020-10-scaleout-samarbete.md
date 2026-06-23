@@ -14,6 +14,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/scaleout-samarbete
   - /blogg/2020/2020-10-scaleout-samarbete/
+  - /blog/2020-10-scaleout-samarbete/
 ---
 ## Strategic AI collaboration to advance Sweden’s digitalisation strategy
 

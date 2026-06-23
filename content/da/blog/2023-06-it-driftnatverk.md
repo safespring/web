@@ -19,6 +19,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
   - /blogg/2023/2023-06-it-driftnatverk/
+  - /blog/2023-06-it-driftnatverk/
 ---
 {{< ingress >}}
 Safespring, i samarbejde med Atea, Binero, Cleura, Ericsson, Saab, Skatteverket, Trafikverket og Transportstyrelsen, tilslutter sig Sveriges IT-driftnetværk, et initiativ der har til formål at styrke landets IT-driftskapacitet og fremme interessen for IT-infrastruktur, datacentre og cloudtjenester.

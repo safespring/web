@@ -15,6 +15,7 @@ language: "nb"
 aliases:
   - /blogg/uppgradering-av-safesprings-compute-plattform
   - /blogg/2017/2017-08-uppgradering-av-safesprings-compute-plattform/
+  - /tekniske-oppdateringer/2017-08-uppgradering-av-safesprings-compute-plattform/
 ---
 I tråd med Safesprings mål om å holde tritt med OpenStacks offisielle versjoner (med en forsinkelse på 3 måneder for å sikre stabilitet), er arbeidet med å oppgradere til den nyeste versjonen, Ocata, nå i full gang.
 

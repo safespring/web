@@ -17,6 +17,7 @@ sidebarlinkname2: "Kontakt oss"
 sidebarlinkurl2: "/kontakt/"
 aliases:
   - /blogg/2023/2023-03-egress-cost-no/
+  - /blogg/2023-03-egress-cost/
 ---
 
 ![Safespring har en null egress kostnad for datatransfer](/img/blogg/safespring-zero-egress-cost.svg)

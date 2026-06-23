@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/johan-harrysson-cco
   - /blogg/2020/2020-01-johan-harrysson-cco/
+  - /blog/2020-01-johan-harrysson-cco/
 ---
 ![Johan Harrysson, CCO, foran Safesprings hovedkontor i Stockholm.](/img/blogg/safespring-johan-harrysson_2020-01-27.jpg)
 

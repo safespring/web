@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/webbaserat-kontorsstod
   - /blogg/2019/2019-02-webbaserat-kontorsstod/
+  - /blog/2019-02-webbaserat-kontorsstod/
 ---
 {{< ingress >}}
 By web-based office suite we mean fully integrated, web-based email, word processing, spreadsheets, presentations, chat, file storage, and document management.

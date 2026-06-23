@@ -15,6 +15,7 @@ toc: "Table of contents"
 aliases:
   - /blogg/2022-01-terraform-modules
   - /blogg/2022/2022-01-terraform-modules/
+  - /tech-update/2022-01-terraform-modules/
 ---
 
 {{< ingress >}}

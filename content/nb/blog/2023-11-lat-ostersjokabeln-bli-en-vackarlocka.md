@@ -15,6 +15,7 @@ author_image: "firma"
 language: "nb"
 aliases:
   - /blogg/2023/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
+  - /blogg/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
 ---
 {{< ingress >}}
 I en tid der digital infrastruktur har blitt like avgjørende som tradisjonelle samfunnsfunksjoner, understreker de siste hendelsene med Østersjøkabelen og andre sårbarheter et akutt behov for tiltak.

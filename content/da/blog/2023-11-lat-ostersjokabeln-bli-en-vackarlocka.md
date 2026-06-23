@@ -15,6 +15,7 @@ author_image: "firma"
 language: "da"
 aliases:
   - /blogg/2023/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
+  - /blog/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
 ---
 {{< ingress >}}
 I en tid, hvor digital infrastruktur er blevet lige så afgørende som traditionelle forsyningstjenester, understreger de seneste begivenheder omkring Østersøkablet og andre sårbarheder et presserende behov for handling.

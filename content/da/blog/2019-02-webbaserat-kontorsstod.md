@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/webbaserat-kontorsstod
   - /blogg/2019/2019-02-webbaserat-kontorsstod/
+  - /blog/2019-02-webbaserat-kontorsstod/
 ---
 {{< ingress >}}
 Med webbaseret kontorpakke mener vi fuldt integrerede, webbaserede e-mail, tekstbehandling, regneark, præsentationer, chat, fillagring og dokumenthåndtering.

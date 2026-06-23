@@ -1,6 +1,8 @@
 <div style="width: 800px; min-width: 100px;">
   <div class="section {{ if .Params.sectionhighlight }}mb-2{{ end }}">
     {{ $sectionLabel := "" }}
+    {{ $sectionName := lower .Section }}
+    {{ $sectionParam := lower (default "" .Params.section) }}
     {{ if eq .Section "om-safespring" }}
       {{ $sectionLabel = T "menu.safespring_about" }}
     {{ else if eq .Section
@@ -10,9 +12,21 @@
     {{ else if .Params.sectiontext }}
       {{ $sectionLabel = .Params.sectiontext }}
     {{ else if .Params.section }}
-      {{ $sectionLabel = .Params.section }}
+      {{ if or (eq $sectionParam "blog") (eq $sectionParam "blogg") }}
+        {{ $sectionLabel = T "knowledgehub.blog" }}
+      {{ else if or (eq .Section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
+        {{ $sectionLabel = T "knowledgehub.tech_update" }}
+      {{ else }}
+        {{ $sectionLabel = .Params.section }}
+      {{ end }}
     {{ else if not .Params.toplogo }}
-      {{ $sectionLabel = .Section }}
+      {{ if eq $sectionName "blog" }}
+        {{ $sectionLabel = T "knowledgehub.blog" }}
+      {{ else if eq $sectionName "tech-update" }}
+        {{ $sectionLabel = T "knowledgehub.tech_update" }}
+      {{ else }}
+        {{ $sectionLabel = .Section }}
+      {{ end }}
     {{ end }}
     {{ if .Params.toplogo }}
       {{ $topLogo := printf "/img/logos/%s" .Params.toplogo }}
@@ -59,7 +73,6 @@
         {{ $sidebarlinkurl2 := .Params.sidebarlinkurl2 }}
         {{ if strings.HasSuffix $sidebarlinkurl2 ".md" }}{{ $sidebarlinkurl2 = relref . $sidebarlinkurl2 }}{{ end }}
         <a
-          style="margin: 25px 0 0 0; padding: 1px 0 0 0"
           href="{{ $sidebarlinkurl2 }}"
           target="_self"
           class="text-button"

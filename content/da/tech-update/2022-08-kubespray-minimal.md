@@ -16,6 +16,7 @@ toc: "Indholdsfortegnelse"
 aliases:
   - /blogg/2022-08-kubespray-minimal
   - /blogg/2022/2022-08-kubespray-minimal/
+  - /tekniske-opdateringer/2022-08-kubespray-minimal/
 ---
 {{< ingress >}}
 Kubespray er et omfattende værktøj, der dækker mange forskellige brugsscenarier. I dette indlæg fokuserer vi på den nødvendige konfiguration for at installere en minimal K8S-klynge til test og eksperimenter på Safespring.

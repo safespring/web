@@ -17,6 +17,7 @@ toc: "Contents"
 aliases:
   - /blogg/remissvar-it-driftsutredningen
   - /blogg/2022/2022-05-remissvar-it-driftsutredningen/
+  - /blog/2022-05-remissvar-it-driftsutredningen/
 ---
 {{< ingress >}}
 Since the inquiry was published, the geopolitical situation has changed significantly. This does not alter the substance of the inquiry, but it further highlights the importance of sovereign, secure and robust IT services.{{< /ingress >}}

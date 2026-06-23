@@ -16,6 +16,7 @@ toc: "Innholdsfortegnelse"
 aliases:
   - /blogg/2022-03-ssh-keys
   - /blogg/2022/2022-03-ssh-keys/
+  - /tekniske-oppdateringer/2022-03-ssh-keys/
 ---
 {{< ingress >}}
 For Linux-/Unix-baserte skyinstanser er den første root-tilgangen til instansene aktivert ved bruk av SSH-nøkler. I dette innlegget går vi gjennom noen beste praksiser og ting å huske på når du håndterer ssh-nøkler for å gi root-tilgang til instanser.

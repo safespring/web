@@ -10,9 +10,11 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Blogg"
+sectiontext: "Nyheter og perspektiver"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blogg/2025-05-eurostack/
 ---
 {{< ingress >}}
 6. mai 2025 sendte EuroStack Industry Group, nå med over 200 deltakere, sitt andre åpne brev til president von der Leyen, EVP Virkkunen og EVP Séjourné. Safespring er stolte av å stå sammen med våre bransjekolleger i oppfordringen om full utrulling av EuroStack innen 2030.  

@@ -12,6 +12,7 @@ section: "blog"
 aliases:
   - /blogg/sunet-drive
   - /blogg/2021/2021-05-sunet-drive/
+  - /blog/2021-05-sunet-drive/
 ---
 {{< ingress >}}
 Sammen med Sunet har vi udviklet en filhåndterings- og samarbejdstjeneste for universiteter, højskoler og tilknyttede myndigheder i Sunets netværk.

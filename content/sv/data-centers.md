@@ -12,6 +12,7 @@ socialmedia: "safespring-datacenter.jpg"
 aliases:
   - /om-safespring/Datacenter/
   - /om-safespring/datacenter/
+  - /om-safespring/datasenter/
 slug: "datacenter"
 ---
 

@@ -17,6 +17,7 @@ author: "Fredric Wallsten"
 author_image: "glad"
 aliases:
   - /blogg/2023/2023-12-next-year/
+  - /blog/2023-12-next-year/
 ---
 
 {{< ingress >}}

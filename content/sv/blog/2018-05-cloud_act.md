@@ -12,6 +12,7 @@ section: "blog"
 aliases:
   - /blogg/cloud_act
   - /blogg/2018/2018-05-cloud_act/
+  - /blogg/2018-05-cloud_act/
 ---
 
 CLOUD act är en ny amerikansk lag som gör det möjligt för myndigheter att

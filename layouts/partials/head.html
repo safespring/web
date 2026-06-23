@@ -730,6 +730,25 @@
         .heading-default-single .button {
           max-width: 100%;
         }
+        .heading-default-single .header-button {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+        .heading-default-single .button {
+          align-items: center;
+          display: inline-flex;
+          justify-content: center;
+          line-height: 1;
+          margin-right: 0;
+        }
+        .heading-default-single .header-button .text-button {
+          align-items: center;
+          display: inline-flex;
+          line-height: 1;
+          min-height: 44px;
+        }
         .heading-default-single .section a {
           display: inline-flex;
           align-items: center;
@@ -884,7 +903,7 @@
     {{ end }}
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
     {{ if isset .Params "noindex" }}
       <meta name="robots" content="noindex" />

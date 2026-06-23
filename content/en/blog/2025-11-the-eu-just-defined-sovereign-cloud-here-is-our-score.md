@@ -11,6 +11,8 @@ socialmedia: ""
 language: "en"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blog/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/
 ---
 
 {{% ingress %}}

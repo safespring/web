@@ -4,7 +4,7 @@ title: "Automatisering af Windows Server Hardening på Safespring Compute: Fra l
 date: "2026-03-17"
 intro: "Resultatet er en fuldt hærdet Windows Server, som du kan klargøre i ét skud, hands-off, fra OpenStack CLI."
 draft: false
-sectiontext: "Teknologiopdatering"
+sectiontext: "Deep Dives"
 section: "Teknologiopdatering"
 tags: ["windows", "compute"]
 showthedate: true
@@ -16,6 +16,7 @@ author: "Gabriel Paues"
 aliases:
   - /blogg/2026/2026-03-windows-server-hardening/
   - /blogg/2026-03-windows-server-hardening/
+  - /tekniske-opdateringer/2026-03-windows-server-hardening/
 ---
 
 

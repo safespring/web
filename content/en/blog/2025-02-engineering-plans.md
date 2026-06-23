@@ -10,13 +10,14 @@ sidebarimage: "safespring_card_53.webp"
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Blog"
+sectiontext: "News & Perspectives"
 section: "blog"
 author: "Rob Haverkamp"
 TOC: "In this post"
 aliases:
   - /blogg/2025/2024-02-engineering-plans/
   - /blogg/2025/2025-02-engineering-plans/
+  - /blog/2025-02-engineering-plans/
 ---
 
 Hello everyone,

@@ -15,6 +15,7 @@ author_image: "firm"
 aliases:
   - /blogg/covid-19-mars
   - /blogg/2020/2020-03-covid-19-mars/
+  - /blog/2020-03-covid-19-mars/
 ---
 <div class="ingress"><p>Safespring is planning to maintain uninterrupted operations.</p></div>
 

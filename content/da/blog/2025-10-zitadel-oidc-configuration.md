@@ -11,10 +11,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "da"
-sectiontext: "Teknologiopdatering"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-10-zitadel-oidc-configuration/"
 author: "Anders Johansson, Ahmet Balci"
 TOC: "I dette indlæg"
+aliases:
+  - /blog/2025-10-zitadel-oidc-configuration/
 ---
 {{< ingress >}}
 I denne vejledning gennemgår vi konfiguration af OpenID Connect (OIDC)-godkendelse for Kubernetes API-serveren i Talos-administrerede klynger. 

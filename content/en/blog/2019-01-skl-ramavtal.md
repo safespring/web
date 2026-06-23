@@ -14,6 +14,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/skl-ramavtal
   - /blogg/2019/2019-01-skl-ramavtal/
+  - /blog/2019-01-skl-ramavtal/
 ---
 ## New framework agreement for e-archive as a service.
 

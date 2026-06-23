@@ -10,11 +10,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 language: "sv"
-sectiontext: "Blogg"
+sectiontext: "Nyheter & perspektiv"
 section: "blogg"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-eurostack/
+  - /blogg/2025-03-eurostack/
 ---
 {{< ingress >}}
 På Safespring har vi i nästan tio år utvecklat och sålt molntjänster som respekterar att kundernas data endast tillhör kunden och att europeisk digital suveränitet är nödvändig för att Europa ska blomstra.

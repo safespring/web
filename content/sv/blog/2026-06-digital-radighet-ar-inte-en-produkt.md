@@ -12,6 +12,8 @@ socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "sv"
 section: "blogg"
 author: "Gabriel Paues"
+aliases:
+  - /blogg/digital-radighet-ar-inte-en-produkt/
 ---
 
 {{< ingress >}}

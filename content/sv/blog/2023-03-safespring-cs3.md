@@ -17,6 +17,7 @@ sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
 aliases:
   - /blogg/2023/2023-03-safespring-cs3/
+  - /blogg/2023-03-safespring-cs3/
 ---
 
 {{< ingress >}}

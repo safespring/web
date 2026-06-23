@@ -16,6 +16,7 @@ toc: "Innehållsförteckning"
 aliases:
   - /blogg/2022-03-ssh-keys
   - /blogg/2022/2022-03-ssh-keys/
+  - /tekniska-uppdateringar/2022-03-ssh-keys/
 ---
 {{< ingress >}}
 För Linux-/Unix-baserade molninstanser aktiveras initial root-åtkomst till instanserna med SSH-nycklar. I det här inlägget går vi igenom några bästa praxis och saker att tänka på när du hanterar ssh-nycklar för att möjliggöra root-åtkomst till instanser.

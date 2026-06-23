@@ -14,6 +14,7 @@ socialmediabild: ""
 language: "sv"
 aliases:
   - /blogg/2024/eosc-technical-launch/
+  - /blogg/eosc-technical-launch/
 ---
 {{< ingress >}}
 Vi är glada att kunna meddela att den tekniska lanseringen av EOSC EU Node ägde rum den 10 oktober 2024, och vår vd, Fredric, var på plats vid evenemanget i Bryssel.

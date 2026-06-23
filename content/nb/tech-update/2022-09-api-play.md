@@ -16,6 +16,7 @@ toc: "Innholdsfortegnelse"
 aliases:
   - /blogg/2022-09-api-play
   - /blogg/2022/2022-09-api-play/
+  - /tekniske-oppdateringer/2022-09-api-play/
 ---
 {{< ingress >}}
 Safespring fremmer så mye automatisering som mulig ved hjelp av standardverktøy som Terraform og Ansible. Noen ganger er det likevel nødvendig å gå ett hakk dypere for å finne manglende brikker av informasjon for å kunne lage en komplett automatisering.

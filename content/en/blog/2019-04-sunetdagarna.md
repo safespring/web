@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/sunetdagarna
   - /blogg/2019/2019-04-sunetdagarna/
+  - /blog/2019-04-sunetdagarna/
 ---
 ### Download Safespring's presentations
 

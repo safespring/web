@@ -12,6 +12,7 @@ documentation: "Säkerhetskopiering"
 aliases:
   - /blogg/nyhetsbrev_januar_2018
   - /blogg/2018/2018-01-nyhetsbrev_januar_2018/
+  - /tekniska-uppdateringar/2018-01-nyhetsbrev_januar_2018/
 ---
 Våra backuptjänster finns i tre olika varianter, och med guiden får ni vägledning i när de passar bäst ur ett kostnadsperspektiv.
 

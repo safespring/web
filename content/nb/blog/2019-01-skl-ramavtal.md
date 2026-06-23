@@ -14,6 +14,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/skl-ramavtal
   - /blogg/2019/2019-01-skl-ramavtal/
+  - /blogg/2019-01-skl-ramavtal/
 ---
 ## Ny rammeavtale for e-arkiv som tjeneste.
 

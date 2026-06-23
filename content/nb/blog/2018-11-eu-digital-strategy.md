@@ -13,6 +13,7 @@ section: "blogg"
 aliases:
   - /blogg/eu-digital-strategy
   - /blogg/2018/2018-11-eu-digital-strategy/
+  - /blogg/2018-11-eu-digital-strategy/
 ---
 {{< ingress >}}
 Det interessante med EUs digitale utvikling kan oppsummeres i én setning på side 25: “Co-creation will be encouraged. Open-source solutions will be preferred...”.

@@ -22,6 +22,9 @@ explorer: ""
 section: "Webinar"
 aliases:
   - /event/
+  - /event/2020-05-13/
+  - /event/2020-06-03/
+  - /event-old/2020-09-15-2/
   - /webinars/
   - /webinar/
 fullwidth: "x"

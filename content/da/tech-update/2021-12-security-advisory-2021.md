@@ -14,6 +14,7 @@ section: "Teknisk opdatering"
 aliases:
   - /blogg/security-advisory-2021
   - /blogg/2021/2021-12-security-advisory-2021/
+  - /tekniske-opdateringer/2021-12-security-advisory-2021/
 ---
 {{% ingress %}}
 En sårbarhed i {{< tooltip "Log4j" >}}Log4j er et lille internt modul, der håndterer logning for Java-programmer.{{< /tooltip >}} blev offentliggjort den 10. december 2021. Rapporter fra hele verden viser, at sårbarheden anvendes aktivt og med succes i angreb.

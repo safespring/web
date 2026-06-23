@@ -19,6 +19,7 @@ sidebarlinkname2: "Kontakt oss"
 sidebarlinkurl2: "/kontakt"
 aliases:
   - /blogg/2023/2023-02-safespring-green-energy/
+  - /blogg/2023-02-safespring-green-energy/
 ---
 {{< ingress >}}
 Vi i Safespring er stolte over å være et selskap som jobber hardt for å redusere vår miljøpåvirkning.

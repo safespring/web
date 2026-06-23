@@ -10,14 +10,17 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Tech Update"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-12-run-llm-in-safespring-container-platform/"
 author: "Gabriel Paues"
 TOC: "In this post"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Explore Safespring Kubernetes Engine"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Book demo"
+aliases:
+  - /blog/2025-12-run-llm-in-safespring-container-platform/
 ---
 
 {{< ingress >}}

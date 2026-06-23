@@ -5,7 +5,7 @@ section: "Nyheter og innhold"
 language: "nb"
 date: 2024-12-03
 draft: false
-intro: "Safespring Knowledge Hub er en omfattende samling av Safesprings materiell og ressurser, inkludert nettsendinger, whitepapers, blogger, tekniske oppdateringer og løsningsbeskrivelser."
+intro: "Safespring Knowledge Hub samler nettsendinger, whitepapers, Nyheter og perspektiver, Deep Dives og løsningsbeskrivelser."
 nosidebar: ""
 fullwidth: ""
 aliases:

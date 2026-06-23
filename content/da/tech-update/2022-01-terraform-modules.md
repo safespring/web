@@ -16,6 +16,7 @@ toc: "Indholdsfortegnelse"
 aliases:
   - /blogg/2022-01-terraform-modules
   - /blogg/2022/2022-01-terraform-modules/
+  - /tekniske-opdateringer/2022-01-terraform-modules/
 ---
 {{< ingress >}}
 I dette blogindlæg viser vi, hvor let det er, med eksempler fra vores community-Terraform-moduler.

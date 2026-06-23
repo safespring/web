@@ -15,6 +15,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/svt-upphandling
   - /blogg/2020/2020-03-svt-upphandling/
+  - /blog/2020-03-svt-upphandling/
 ---
 {{< ingress >}}
 I dag bliver Safespring en af fem leverandører, som får mulighed for via en rammeaftale at levere cloudtjenester til Sveriges Television og Utbildningsradion.

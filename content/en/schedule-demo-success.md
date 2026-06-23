@@ -19,6 +19,7 @@ sidebarlinkurl2: "/contact"
 saas: ""
 noindex: "yes"
 aliases:
+  - /container-thanks/
   - /schedule-demo-success/
 ---
 

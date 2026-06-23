@@ -16,6 +16,7 @@ toc: "Innehållsförteckning"
 aliases:
   - /blogg/2022-05-terraform-ansible
   - /blogg/2022/2022-05-terraform-ansible/
+  - /tekniska-uppdateringar/2022-05-terraform-ansible/
 ---
 {{< ingress >}}
 Detta är del tre i serien om Safesprings Terraform-moduler. Den här bloggposten

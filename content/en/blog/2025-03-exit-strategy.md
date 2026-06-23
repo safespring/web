@@ -9,11 +9,12 @@ card: "safespring_card_54.svg"
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Blog"
+sectiontext: "News & Perspectives"
 section: "blog"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-exit-strategy/
+  - /blog/2025-03-exit-strategy/
 ---
 
 {{< ingress >}}

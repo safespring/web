@@ -13,6 +13,7 @@ section: "Tech update"
 aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
+  - /tekniska-uppdateringar/2020-01-byte-av-host-och-domainname/
 ---
 
 <a class="text-button" href="#english">Läs den engelska versionen</a>

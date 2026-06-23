@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/dagens-juridik-cloudact
   - /blogg/2019/2019-04-dagens-juridik-cloudact/
+  - /blog/2019-04-dagens-juridik-cloudact/
 ---
 <div class="ingress"><p>Adam Odmark, advokatfuldmægtig, advokatfirmaet Delphi, har skrevet en analyse i Dagens Juridik den 28. marts</p></div>
 

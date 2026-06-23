@@ -12,6 +12,7 @@ socialmediabild: ""
 language: "sv"
 aliases:
   - /blogg/2024/2024-02-daniel-melin/
+  - /blogg/2024-02-daniel-melin/
 ---
 
 ![Daniel Malin på Safespring](/img/blogg/cards/web-safespring-daniel-melin-2024-02.jpg)

@@ -19,6 +19,7 @@ sidebarlinkurl2: "https://github.com/safespring-community/cloutility-api-client/
 toc: "In this guide"
 aliases:
   - /blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/
+  - /tech-update/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/
 ---
 
 {{< ingress >}}

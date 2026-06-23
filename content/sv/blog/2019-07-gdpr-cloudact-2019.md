@@ -12,6 +12,7 @@ section: "blog"
 aliases:
   - /blogg/gdpr-cloudact-2019
   - /blogg/2019/2019-07-gdpr-cloudact-2019/
+  - /blogg/2019-07-gdpr-cloudact-2019/
 ---
 
 {{< localbutton text="Läs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}<br>

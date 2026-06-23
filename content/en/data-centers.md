@@ -11,6 +11,7 @@ sidebarlinkurl: ""
 socialmedia: "safespring-datacenter.jpg"
 aliases:
   - /en/data-centers/
+  - /about-safespring/datacenter/
 ---
 
 ![Safesprings Datacenter](/img/graphics/safespring-datacenter-map-container.svg)

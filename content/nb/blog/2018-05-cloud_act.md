@@ -13,6 +13,7 @@ section: "blogg"
 aliases:
   - /blogg/cloud_act
   - /blogg/2018/2018-05-cloud_act/
+  - /blogg/2018-05-cloud_act/
 ---
 
 CLOUD Act er en ny amerikansk lov som gjør det mulig for myndigheter å kreve utlevering av data fra amerikanske skytjenesteleverandører uansett i hvilket land dataene lagres. Selv om et selskap bruker AWS i Sverige, kan data overleveres til USA.

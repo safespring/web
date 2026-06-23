@@ -16,6 +16,7 @@ toc: "Innholdsfortegnelse"
 aliases:
   - /blogg/2022-03-network
   - /blogg/2022/2022-03-network/
+  - /tekniske-oppdateringer/2022-03-network/
 ---
 
 {{< ingress >}}

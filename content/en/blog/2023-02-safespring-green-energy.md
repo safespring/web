@@ -19,6 +19,7 @@ sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/contact.md"
 aliases:
   - /blogg/2023/2023-02-safespring-green-energy/
+  - /blog/2023-02-safespring-green-energy/
 ---
 {{< ingress >}}
 At Safespring, we are proud to be a company that works hard to reduce our environmental impact.

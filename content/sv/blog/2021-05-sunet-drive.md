@@ -11,6 +11,7 @@ section: "blog"
 aliases:
   - /blogg/sunet-drive
   - /blogg/2021/2021-05-sunet-drive/
+  - /blogg/2021-05-sunet-drive/
 ---
 
 {{< ingress >}}

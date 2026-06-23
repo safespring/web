@@ -14,6 +14,7 @@ section: "Tech update"
 aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
+  - /tech-update/2020-01-byte-av-host-och-domainname/
 ---
 <a class="text-button" href="#english">Read the English version</a>
 

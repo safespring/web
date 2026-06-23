@@ -16,6 +16,7 @@ toc: ""
 aliases:
   - /blogg/2022-02-windows-vm-cpu-perf
   - /blogg/2022/2022-02-windows-vm-cpu-perf/
+  - /tekniske-opdateringer/2022-02-windows-vm-cpu-perf/
 ---
 {{< ingress >}}
 I dette blogindlæg gennemgår vi nogle optimeringer af virtuelle maskiner. Vi forbedrede CPU-ydelsen på Windows på grund af dårlig applikationsperformance hos en af vores kunder.

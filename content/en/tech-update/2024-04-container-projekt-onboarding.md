@@ -17,6 +17,7 @@ sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 aliases:
   - /blogg/2024/2024-04-container-projekt-onboarding/
+  - /tech-update/2024-04-container-projekt-onboarding/
 ---
 
 {{< ingress >}}

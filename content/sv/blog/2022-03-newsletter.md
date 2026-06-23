@@ -15,6 +15,7 @@ toc: ""
 aliases:
   - /blogg/2022-03-newsletter
   - /blogg/2022/2022-03-newsletter/
+  - /blogg/2022-03-newsletter/
 ---
 {{< ingress >}}
 Den här artikeln är en samling av de senaste nyheterna från Safespring. Prenumerera gärna på vårt nyhetsbrev för att få de senaste uppdateringarna direkt i er inkorg.

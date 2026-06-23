@@ -1,6 +1,14 @@
 {{/* Get content from top-level sections */}}
-{{ $blogPages := where .Site.RegularPages "Section" "blog" }}
-{{ $techUpdatePages := where .Site.RegularPages "Section" "tech-update" }}
+{{ $blogPages := slice }}
+{{ $techUpdatePages := slice }}
+{{ range .Site.RegularPages }}
+  {{ $sectionParam := lower (default "" .Params.section) }}
+  {{ if or (eq .Section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
+    {{ $techUpdatePages = $techUpdatePages | append . }}
+  {{ else if eq .Section "blog" }}
+    {{ $blogPages = $blogPages | append . }}
+  {{ end }}
+{{ end }}
 {{ $webinarPages := where .Site.RegularPages "Section" "webinar" }}
 {{ $solutionBriefPages := where .Site.RegularPages "Section" "solution-brief" }}
 {{ $whitepaperPages := where .Site.RegularPages "Section" "whitepaper" }}
@@ -83,9 +91,19 @@
             style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
           />
           {{ .Language.LanguageName }}&nbsp;
+          {{ $translatedBlogPages := slice }}
+          {{ $translatedTechUpdatePages := slice }}
+          {{ range .Site.RegularPages }}
+            {{ $translatedSectionParam := lower (default "" .Params.section) }}
+            {{ if or (eq .Section "tech-update") (in $translatedSectionParam "tech update") (in $translatedSectionParam "tekn") }}
+              {{ $translatedTechUpdatePages = $translatedTechUpdatePages | append . }}
+            {{ else if eq .Section "blog" }}
+              {{ $translatedBlogPages = $translatedBlogPages | append . }}
+            {{ end }}
+          {{ end }}
           <span class="filter-number"
-            >({{ len (where .Site.RegularPages "Section" "blog") |
-              add (len (where .Site.RegularPages "Section" "tech-update")) |
+            >({{ len $translatedBlogPages |
+              add (len $translatedTechUpdatePages) |
               add (len (where .Site.RegularPages "Section" "webinar")) |
               add (len (where .Site.RegularPages "Section" "solution-brief")) |
               add (len (where .Site.RegularPages "Section" "whitepaper"))
@@ -99,11 +117,12 @@
   <div class="tf-items-container">
     {{ range $allContent.ByPublishDate.Reverse }}
       {{ $section := .Section }}
+      {{ $sectionParam := lower (default "" .Params.section) }}
       {{ $category := "unknown" }}
-      {{ if eq $section "blog" }}
-        {{ $category = "blog" }}
-      {{ else if eq $section "tech-update" }}
+      {{ if or (eq $section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
         {{ $category = "tech-update" }}
+      {{ else if eq $section "blog" }}
+        {{ $category = "blog" }}
       {{ else if eq $section "webinar" }}
         {{ $category = "webinar" }}
       {{ else if eq $section "solution-brief" }}

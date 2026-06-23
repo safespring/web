@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/dagens-juridik-cloudact
   - /blogg/2019/2019-04-dagens-juridik-cloudact/
+  - /blog/2019-04-dagens-juridik-cloudact/
 ---
 <div class="ingress"><p>Adam Odmark, associate, the law firm Delphi, has written an analysis in Dagens Juridik on March 28</p></div>
 

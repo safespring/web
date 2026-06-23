@@ -21,7 +21,7 @@ sidebartext: "Want to discuss the service? Feel free to reach out if you have an
 sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
 sidebarlinkname2: "Technical deep dive"
-sidebarlinkurl2: "/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/"
+sidebarlinkurl2: "/deep-dive/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/"
 showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
@@ -29,6 +29,7 @@ language: "en"
 slug: "safespring-kubernetes-engine"
 aliases:
   - /en/services/containerplatform/
+  - /services/container-platform/
 ---
 
 {{< ingress >}}
@@ -99,16 +100,16 @@ When you want to validate architecture, responsibility split, and operating mode
 {{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="What you get on day one"
-    href="/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#what-you-get-on-day-one"
+    href="/deep-dive/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#what-you-get-on-day-one"
     icon="fa-solid fa-list-check"
-    label="Blog"
+    label="Deep Dives"
     description="The documented platform defaults from the start."
   >}}
   {{< manual-document-row
     title="The service boundary in practice"
-    href="/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#the-service-boundary-in-practice"
+    href="/deep-dive/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#the-service-boundary-in-practice"
     icon="fa-solid fa-people-arrows"
-    label="Blog"
+    label="Deep Dives"
     description="How responsibilities and operational boundaries are split between Safespring and your team."
   >}}
   {{< manual-document-row

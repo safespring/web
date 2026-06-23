@@ -12,6 +12,8 @@ eventbild: ""
 socialmediabild: ""
 language: "sv"
 author: ""
+aliases:
+  - /blogg/2026-02-johan-harrysson-vd/
 ---
 
 ![Johan Harrysson, VD på Safespring](/img/people/harrysson/safespring-harrysson-1.jpg)

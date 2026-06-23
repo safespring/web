@@ -10,11 +10,12 @@ card: "safespring_card_54.svg"
 eventbild: ""
 socialmediabild: ""
 language: "sv"
-sectiontext: "Blogg"
+sectiontext: "Nyheter & perspektiv"
 section: "blogg"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-exit-strategy/
+  - /blogg/2025-03-exit-strategy/
 ---
 {{< ingress >}}
 I dagens geopolitiska landskap, där USA snabbt försöker bli mer likt Kina och Ryssland, ställs kunder hos amerikanska molnleverantörer inför svåra beslut.

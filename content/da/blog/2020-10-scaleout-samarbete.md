@@ -14,6 +14,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/scaleout-samarbete
   - /blogg/2020/2020-10-scaleout-samarbete/
+  - /blog/2020-10-scaleout-samarbete/
 ---
 ## Strategisk samarbejde inden for AI til at fremme den svenske digitaliseringsstrategi
 

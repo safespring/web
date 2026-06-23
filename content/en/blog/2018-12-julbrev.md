@@ -14,6 +14,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/julbrev
   - /blogg/2018/2018-12-julbrev/
+  - /blog/2018-12-julbrev/
 ---
 ## Hope you’ve had an eventful year too
 

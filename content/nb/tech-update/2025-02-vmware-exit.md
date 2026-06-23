@@ -11,12 +11,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Blogg"
+sectiontext: "Deep Dives"
 section: "Teknologioppdatering"
 author: "Gabriel Paues"
 TOC: "I dette innlegget"
 aliases:
   - /blogg/2025/2025-02-vmware-exit/
+  - /tekniske-oppdateringer/2025-02-vmware-exit/
 ---
 {{< ingress >}}
 Med Broadcoms oppkjøp av VMware har mange virksomheter og organisasjoner som har bygget infrastrukturen sin på VMware fått en ubehagelig overraskelse: en ny abonnementsbasert modell og generelt høyere priser.

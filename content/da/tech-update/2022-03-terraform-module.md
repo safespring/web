@@ -16,6 +16,7 @@ toc: "Indholdsfortegnelse"
 aliases:
   - /blogg/2022-03-terraform-module
   - /blogg/2022/2022-03-terraform-module/
+  - /tekniske-opdateringer/2022-03-terraform-module/
 ---
 {{< ingress >}}
 Dette er del to i serien om Safesprings Terraform-moduler. Dette blogindlæg ser på de nye og mere generelle Safespring-moduler til compute-instanser og sikkerhedsgrupper.{{< /ingress >}}

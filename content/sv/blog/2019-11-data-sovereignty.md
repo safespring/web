@@ -13,6 +13,7 @@ toc: "Innehållsförteckning"
 aliases:
   - /blogg/data-sovereignty
   - /blogg/2019/2019-11-data-sovereignty/
+  - /blogg/2019-11-data-sovereignty/
 ---
 
 <div class="ingress"><p>We’ve gathered some articles about GDPR and the US Cloud Act to make it easier to get a greater picture about the two regulations.</p></div>

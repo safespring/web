@@ -133,51 +133,50 @@ document.addEventListener("DOMContentLoaded", function() {
     var t = document.querySelector(".mobile-toc"),
         n = document.querySelector(".sidebar-container-mobile"),
         s = document.querySelector(".overlay"),
-        o = document.querySelector("body");
+        o = document.querySelector("body"),
+        r = document.documentElement,
+        m = document.querySelector('meta[name="theme-color"]'),
+        c = m ? m.getAttribute("content") : "#195f8c",
+        d = "#9da9ad";
 
     if (t) {
-        // Lägg till event listener på menyknappen
-        t.addEventListener("click", function() {
-            n.classList.toggle("expanded");
-            s.classList.toggle("visible");
-            o.classList.toggle("no-scroll");
-            t.classList.toggle("expanded");
+        function setTocState(isOpen) {
+            n.classList.toggle("expanded", isOpen);
+            s.classList.toggle("visible", isOpen);
+            o.classList.toggle("no-scroll", isOpen);
+            r.classList.toggle("toc-overlay-active", isOpen);
+            t.classList.toggle("expanded", isOpen);
+
+            if (m) {
+                m.setAttribute("content", isOpen ? d : c);
+            }
 
             var e = t.querySelector("i");
-            if (t.classList.contains("expanded")) {
+            if (isOpen) {
                 e.classList.remove("fa-list-ul");
                 e.classList.add("fa-xmark");
             } else {
                 e.classList.remove("fa-xmark");
                 e.classList.add("fa-list-ul");
             }
+        }
+
+        // Lägg till event listener på menyknappen
+        t.addEventListener("click", function() {
+            setTocState(!t.classList.contains("expanded"));
         });
 
         // Lägg till event listeners på länkar i sidomenyn
         var i = n.querySelectorAll("a");
         i.forEach(function(e) {
             e.addEventListener("click", function() {
-                n.classList.remove("expanded");
-                s.classList.remove("visible");
-                o.classList.remove("no-scroll");
-                t.classList.remove("expanded");
-
-                var e = t.querySelector("i");
-                e.classList.remove("fa-xmark");
-                e.classList.add("fa-list-ul");
+                setTocState(false);
             });
         });
 
         // Lägg till event listener på överlägget
         s.addEventListener("click", function() {
-            n.classList.remove("expanded");
-            s.classList.remove("visible");
-            o.classList.remove("no-scroll");
-            t.classList.remove("expanded");
-
-            var e = t.querySelector("i");
-            e.classList.remove("fa-xmark");
-            e.classList.add("fa-list-ul");
+            setTocState(false);
         });
     }
 });

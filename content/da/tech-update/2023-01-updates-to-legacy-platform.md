@@ -19,6 +19,7 @@ sidebarlinkname2: "Kontakt support"
 sidebarlinkurl2: "mailto:support@safespring.com"
 aliases:
   - /blogg/2023/2023-01-updates-to-legacy-platform/
+  - /tekniske-opdateringer/2023-01-updates-to-legacy-platform/
 ---
 {{< ingress >}}
 Kære kunder, Vi vil gerne informere jer om, at vores legacy-platform i sto1 bliver lukket ned den 1. maj.

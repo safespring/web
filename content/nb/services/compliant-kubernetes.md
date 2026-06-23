@@ -20,6 +20,7 @@ startpage: "yes"
 language: "nb"
 aliases:
   - /no/tjenester/compliant-kubernetes/
+  - /tjenester/compliant-kubernetes/
 ---
 
 {{< ingress >}}

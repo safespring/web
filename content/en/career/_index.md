@@ -12,6 +12,11 @@ sidebarlinkicon: "fa-arrow-down"
 language: "en"
 socialmedia: "/socialmedia/safespring-work.jpg"
 list: "horisontal"
+aliases:
+  - /career/2026-senior-backend-engineer/
+  - /career/2026-cloud-engineer/
+  - /career/2026-full-stack-tech-lead/
+  - /career/openstack-engineer/
 ---
 
 {{< ingress >}}

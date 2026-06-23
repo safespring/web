@@ -4,7 +4,7 @@ title: "Förstå Safespring Kubernetes Engine om du brukar köra Kubernetes sjä
 date: "2026-03-30"
 intro: "En praktisk guide för plattformsteam som vill förstå tjänstegränsen, standardvalen och de tekniska avvägningarna i Safespring Kubernetes Engine."
 draft: false
-sectiontext: "Teknikuppdatering"
+sectiontext: "Deep Dives"
 section: "Teknikuppdatering"
 tags: ["container"]
 showthedate: true
@@ -15,12 +15,13 @@ language: "sv"
 author: ""
 TOC: "I det här inlägget"
 sidebarlinkname: "Talos på OpenStack"
-sidebarlinkurl: "/tech-update/2025-03-talos-linux-on-openstack.md"
+sidebarlinkurl: "/deep-dive/2025-03-talos-linux-on-openstack/"
 sidebarlinkname2: "Cluster API på OpenStack"
-sidebarlinkurl2: "/tech-update/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api.md"
+sidebarlinkurl2: "/deep-dive/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
+  - /tekniska-uppdateringar/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
 ---
 
 {{< ingress >}}

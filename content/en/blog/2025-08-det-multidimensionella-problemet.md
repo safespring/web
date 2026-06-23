@@ -12,6 +12,8 @@ socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "en"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blog/2025-08-det-multidimensionella-problemet/
 ---
 {{< ingress >}}
 In both Sweden and the EU, there is a recurring discussion about the use of American cloud services.

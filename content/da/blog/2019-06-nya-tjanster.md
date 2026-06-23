@@ -15,6 +15,7 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/nya-tjanster
   - /blogg/2019/2019-06-nya-tjanster/
+  - /blog/2019-06-nya-tjanster/
 ---
 <div class="ingress"><p>Behovet for sikre svenske infrastrukturtjenester stiger hurtigt. Hos os er open source og åbne standarder to af grundstenene.</p></div>
 

@@ -11,13 +11,14 @@ sidebarimage: "safespring_card_53.webp"
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Blogg"
+sectiontext: "Nyheter og perspektiver"
 section: "blogg"
 author: "Rob Haverkamp"
 TOC: "I dette innlegget"
 aliases:
   - /blogg/2025/2024-02-engineering-plans/
   - /blogg/2025/2025-02-engineering-plans/
+  - /blogg/2025-02-engineering-plans/
 ---
 Hei alle sammen,
 

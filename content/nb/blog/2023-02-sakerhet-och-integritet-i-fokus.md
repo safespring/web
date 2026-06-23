@@ -19,6 +19,7 @@ sidebarlinkname2: "Kontakt oss"
 sidebarlinkurl2: "mailto:hello@safespring.com"
 aliases:
   - /blogg/2023/2023-02-sakerhet-och-integritet-i-fokus/
+  - /blogg/2023-02-sakerhet-och-integritet-i-fokus/
 ---
 ## Sikkerhet og personvern i fokus – Safespring støtter Europas selvforsyning på tech-området
 

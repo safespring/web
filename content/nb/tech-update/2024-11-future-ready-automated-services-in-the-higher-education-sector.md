@@ -15,6 +15,7 @@ language: "nb"
 toc: "I dette innlegget"
 aliases:
   - /blogg/2024/2024-11-future-ready-automated-services-in-the-higher-education-sector/
+  - /tekniske-oppdateringer/2024-11-future-ready-automated-services-in-the-higher-education-sector/
 ---
 {{< ingress >}}
 Sektoren for høyere utdanning står ved et teknologisk veiskille. Innovasjon må fortsette for å møte nye krav, men kostnadsoptimalisering og et stadig økende behov for fleksibilitet og sikkerhet kan være krevende.

@@ -19,6 +19,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
   - /blogg/2023/2023-06-it-driftnatverk/
+  - /blog/2023-06-it-driftnatverk/
 ---
 {{< ingress >}}
 Safespring, in collaboration with Atea, Binero, Cleura, Ericsson, Saab, the Swedish Tax Agency, the Swedish Transport Administration, and the Swedish Transport Agency, is joining Sweden’s IT Operations Network, an initiative aimed at strengthening the country’s IT operations capacity and boosting interest in IT infrastructure, data centers, and cloud services.

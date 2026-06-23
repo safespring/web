@@ -77,8 +77,7 @@
                 <img class="blogg-card-flag" width="20" height="20" alt="Safespring language flag"
                   src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
                 <span
-                  class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">Tech
-                  update</span>
+                  class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">{{ T "knowledgehub.tech_update" }}</span>
               </div>
               <div>
                 <h3 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h3>

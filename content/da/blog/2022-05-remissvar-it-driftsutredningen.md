@@ -17,6 +17,7 @@ toc: "Indhold"
 aliases:
   - /blogg/remissvar-it-driftsutredningen
   - /blogg/2022/2022-05-remissvar-it-driftsutredningen/
+  - /blog/2022-05-remissvar-it-driftsutredningen/
 ---
 {{< ingress >}}
 Siden udredningen blev offentliggjort, har den geopolitiske situation ændret sig væsentligt. Det ændrer ikke noget i substansen for udredningen, men understreger yderligere vigtigheden af suveræne, sikre og robuste IT-tjenester.{{< /ingress >}}

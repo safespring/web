@@ -15,6 +15,7 @@ author_image: "firm"
 language: "en"
 aliases:
   - /blogg/2023/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
+  - /blog/2023-11-lat-ostersjokabeln-bli-en-vackarlocka/
 ---
 {{< ingress >}}
 In an era where digital infrastructure has become as critical as traditional utilities, the recent events involving the Baltic Sea cable and other vulnerabilities underscore an urgent need for action.
