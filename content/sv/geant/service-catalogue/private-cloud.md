@@ -13,7 +13,7 @@ intro: "Omfattande privata molnlösningar, inklusive hårdvara, drift och progra
 background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"

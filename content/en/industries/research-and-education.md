@@ -36,7 +36,7 @@ There are many ways that a research and education organisation can do public pro
 3. The prices are already discounted but can be further negotiated.
 
 {{< icon-block-small-container >}}
-{{< icon-block-small icon="fa-solid fa-table" text="Service Catalogue" link="/geant/service-catalogue/" color="#195F8C">}}
+{{< icon-block-small icon="fa-solid fa-table" text="Service Catalogue" linkref="/geant/service-catalogue/_index.md" color="#195F8C">}}
 {{< icon-block-small icon="fa-solid fa-coins" text="Price list" link="/geant/price/" color="#3C9BCD" >}}
 {{< /icon-block-small-container >}}
 

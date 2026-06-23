@@ -13,7 +13,7 @@ intro: "Omfattende private cloud-løsninger, herunder hardware, drift og softwar
 background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "OCRE 2024-rammeværk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"

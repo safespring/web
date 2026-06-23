@@ -13,7 +13,7 @@ cardintro: "Med IaaS kan du skalere infrastrukturen din opp eller ned etter beho
 background: "safespring-compute-background.svg"
 form: "nei"
 sidebarlinkname: "Tilbake til alle kategorier"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 sidebarlinkname2: "Se pris på datakraft"
 sidebarlinkurl2: "/geant/price/#safespring-compute"
 section: "OCRE 2024-rammeverk"
