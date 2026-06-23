@@ -21,6 +21,7 @@ You’re now part of a growing community receiving exclusive updates, insights, 
 
 ### Safspring in your own languge
 
-- [Visit the Swedish site](/)
-- [Visit the Norwegian site](/no)
-- [Visit the English site](/en)
+- [Visit the Swedish site]({{% ref path="/" lang="sv" %}})
+- [Visit the Norwegian site]({{% ref path="/" lang="nb" %}})
+- [Visit the Danish site]({{% ref path="/" lang="da" %}})
+- [Visit the English site]({{% ref path="/" lang="en" %}})

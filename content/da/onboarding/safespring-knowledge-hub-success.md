@@ -21,6 +21,7 @@ Du er nu en del af et voksende fællesskab, der får eksklusive opdateringer, in
 
 ### Safspring på dit eget sprog
 
-- [Besøg den svenske side](/)
-- [Besøg den norske side](/no)
-- [Besøg den engelske side](/en)
+- [Besøg den svenske side]({{% ref path="/" lang="sv" %}})
+- [Besøg den norske side]({{% ref path="/" lang="nb" %}})
+- [Besøg den danske side]({{% ref path="/" lang="da" %}})
+- [Besøg den engelske side]({{% ref path="/" lang="en" %}})
