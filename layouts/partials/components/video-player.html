@@ -10,8 +10,10 @@
 {{- $initialSubtitleLang := .initialSubtitleLang | default "" -}}
 {{- $pageSubtitleLang := .pageSubtitleLang | default "" -}}
 {{- $ccDefaultOn := .ccDefaultOn | default "" -}}
+{{- $playerId := .playerId | default "" -}}
 
-<div class="video-player {{ $containerClass }}" data-video-player
+<div {{ if $playerId }}id="{{ $playerId }}"{{ end }} class="video-player {{ $containerClass }}" data-video-player
+  {{ if $playerId }}{{ printf "data-player-id=%q" $playerId | safeHTMLAttr }}{{ end }}
   {{ printf "data-video-src=%q" ($videoSrc | safeURL) | safeHTMLAttr }}
   {{ printf "data-cursor-paused=%q" $cursorTextPaused | safeHTMLAttr }}
   {{ printf "data-cursor-playing=%q" $cursorTextPlaying | safeHTMLAttr }}
@@ -19,11 +21,13 @@
   {{ printf "data-page-subtitle-lang=%q" (lower $pageSubtitleLang) | safeHTMLAttr }}
   {{ with (index . "unmuteOnInteraction") }}data-unmute-on-interaction="true"{{ end }}
   {{ with (index . "unmuteOnPlay") }}data-unmute-on-play="true"{{ end }}
+  {{ with (index . "urlTime") }}data-url-time="true"{{ end }}
   {{ if ne $ccDefaultOn "" }}{{ printf "data-cc-default-on=%q" (lower $ccDefaultOn) | safeHTMLAttr }}{{ end }}>
   <video data-role="video"
     {{ if $videoClass }}class="{{ $videoClass }}"{{ end }}
     {{ if $videoPoster }}poster="{{ $videoPoster }}"{{ end }}
     {{ if $preload }}preload="{{ $preload }}"{{ end }}
+    playsinline webkit-playsinline
     {{ with (index . "muted") }}muted{{ end }}>
     {{ range $trackList }}
     {{- $lang := .language | default .srclang | default "" -}}
@@ -33,6 +37,7 @@
   </video>
   <div data-role="caption-overlay" class="video-caption-overlay" aria-live="polite"></div>
   <div data-role="custom-cursor" class="custom-cursor">{{ $cursorTextPaused }}</div>
+  <button type="button" data-role="fullscreen-toggle" class="video-fullscreen-toggle" aria-label="Fullskärm" title="Fullskärm"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
   <div data-role="timeline" class="video-timeline">
     <div data-role="timeline-fill" class="video-timeline-fill"></div>
   </div>
@@ -53,7 +58,4 @@
   })();
 </script>
 
-{{- if and $page (not ($page.Scratch.Get "videoPlayerScriptIncluded")) -}}
-<script src="/js/video-player.js" defer></script>
-{{- $page.Scratch.Set "videoPlayerScriptIncluded" true -}}
-{{- end -}}
+<script src="/js/video-player.js?v=20260624-2" defer></script>

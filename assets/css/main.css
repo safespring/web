@@ -91,8 +91,9 @@ a::selection {
 video::cue {
 	color: #fff;
 	font-family: var(--mon-font);
-	border-radius: 10px;
-	padding: 10px 20px !important;
+	font-weight:600;
+	background:transparent;
+	text-shadow:0 2px 6px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.95);
 }
 
 video::-webkit-media-text-track-display {
@@ -432,6 +433,7 @@ h4 {
 	align-items:stretch;
 	flex-direction:column;
 	flex-wrap:nowrap;
+	container-type:inline-size;
 }
 
 .video-container-streamed {
@@ -455,21 +457,30 @@ h4 {
 	left:0;
 	right:0;
 	bottom:0;
-	height:clamp(96px, 16%, 149px);
+	height:clamp(96px, 18%, 190px);
 	z-index:1;
 	pointer-events:none;
 	border-radius:0 0 20px 20px;
-	background:rgba(0, 0, 0, .5);
-	-webkit-backdrop-filter:blur(18px);
-	backdrop-filter:blur(10px);
-	-webkit-mask-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 36.96%, rgba(0, 0, 0, 1) 100%);
-	mask-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 36.96%, rgba(0, 0, 0, 1) 100%);
+	background:
+		linear-gradient(180deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.12) 38%,
+			rgba(0, 0, 0, 0.58) 100%);
+	-webkit-backdrop-filter:brightness(0.76);
+	backdrop-filter:brightness(0.76);
+	-webkit-mask-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 42%, rgba(0, 0, 0, 1) 100%);
+	mask-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 42%, rgba(0, 0, 0, 1) 100%);
 	opacity:0;
 	transition:opacity 0.2s ease;
 }
 
-.index-video.is-hovering-video::after {
+.index-video.is-hovering-video::after,
+.index-video.has-visible-caption::after {
 	opacity:1;
+}
+
+.video-player.uses-native-controls::after {
+	opacity:0 !important;
 }
 
 .video-timeline {
@@ -524,22 +535,33 @@ h4 {
 
 .video-caption-overlay {
 	position:absolute;
-	left:8%;
-	right:8%;
-	bottom:5%;
+	left:11%;
+	right:11%;
+	bottom:7.5%;
 	z-index:4;
 	pointer-events:none;
 	text-align:center;
-	white-space:pre-line;
+	white-space:normal;
 	padding:0;
 	color:#F8FBFF;
 	font-family:var(--mon-font);
-	font-size:17px;
-	font-weight:599;
-	line-height:1.35;
-	text-shadow:0 1px 2px rgba(0, 0, 0, 0.7);
+	font-size:clamp(15px, 2.45cqw, 25px);
+	font-weight:700;
+	line-height:1.25;
+	letter-spacing:0;
+	text-shadow:
+		0 2px 5px rgba(0, 0, 0, 0.95),
+		0 0 2px rgba(0, 0, 0, 0.98),
+		0 0 12px rgba(0, 0, 0, 0.75);
 	opacity:0;
 	transition:bottom 0.22s ease, opacity 0.15s ease;
+}
+
+.video-caption-overlay-line {
+	display:inline;
+	max-width:100%;
+	padding:0;
+	background:transparent;
 }
 
 .video-caption-overlay.is-visible {
@@ -547,7 +569,46 @@ h4 {
 }
 
 .video-caption-overlay.is-lifted {
-	bottom:calc(5% + 28px);
+	bottom:calc(7.5% + 28px);
+}
+
+.video-fullscreen-toggle {
+	position:absolute;
+	top:3%;
+	right:3%;
+	z-index:5;
+	width:38px;
+	height:38px;
+	box-sizing:border-box;
+	padding:0;
+	border-radius:999px;
+	border:none;
+	background:rgba(255, 255, 255, 0.35);
+	backdrop-filter:blur(8px);
+	-webkit-backdrop-filter:blur(8px);
+	color:#F8FBFF;
+	font-family:var(--mon-font);
+	font-size:15px;
+	line-height:1;
+	text-shadow:0 1px 2px rgba(0, 0, 0, 0.35);
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	opacity:0;
+	pointer-events:none;
+	cursor:pointer;
+	transition:opacity 0.15s ease, background 0.15s ease;
+}
+
+.index-video.is-hovering-video .video-fullscreen-toggle,
+.video-fullscreen-toggle:focus-visible {
+	opacity:1;
+	pointer-events:auto;
+}
+
+.video-fullscreen-toggle:hover,
+.video-fullscreen-toggle:focus-visible {
+	background:rgba(20, 94, 140, 0.85);
 }
 
 .video-subtitles {
@@ -616,9 +677,52 @@ h4 {
 
 .video-subtitle-select:disabled,
 .video-subtitle-toggle:disabled,
-.video-mute-toggle:disabled {
+.video-mute-toggle:disabled,
+.video-fullscreen-toggle:disabled {
 	opacity:0.55;
 	cursor:default;
+}
+
+.video-player.is-fullscreen,
+.video-player:fullscreen,
+.video-player:-webkit-full-screen {
+	width:100vw;
+	height:100vh;
+	max-width:none;
+	min-width:0;
+	margin:0;
+	background:#000;
+	border-radius:0;
+}
+
+.video-player.is-fullscreen::after,
+.video-player:fullscreen::after,
+.video-player:-webkit-full-screen::after {
+	border-radius:0;
+}
+
+.video-player.is-fullscreen video,
+.video-player:fullscreen video,
+.video-player:-webkit-full-screen video {
+	width:100%;
+	height:100%;
+	max-width:none !important;
+	object-fit:contain;
+	border-radius:0;
+	background:#000;
+}
+
+.video-player.uses-native-controls .custom-cursor,
+.video-player.uses-native-controls .video-caption-overlay,
+.video-player.uses-native-controls .video-fullscreen-toggle,
+.video-player.uses-native-controls .video-subtitles,
+.video-player.uses-native-controls .video-time,
+.video-player.uses-native-controls .video-timeline {
+	display:none !important;
+}
+
+.video-player.uses-native-controls video {
+	cursor:auto !important;
 }
 
 .index-video video {
