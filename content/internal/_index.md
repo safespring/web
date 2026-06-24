@@ -1,5 +1,5 @@
 ---
-title: "Internal training"
+title: "Internal Knowledge Hub"
 language: "En"
 date: "2026-06-24"
 publishDate: "2026-06-24"

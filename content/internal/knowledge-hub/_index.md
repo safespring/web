@@ -1,5 +1,5 @@
 ---
-title: "Internal Knowledge Hub"
+title: "Mandatory package"
 language: "En"
 date: "2026-06-24"
 publishDate: "2026-06-24"
