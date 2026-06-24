@@ -798,9 +798,9 @@
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{{ if isset .Params "noindex" }}
-<meta name="robots" content="noindex" >
-{{ else }}{{ end }}
+{{ if or .Params.noindex (eq .Section "internal") }}
+<meta name="robots" content="noindex, nofollow, noarchive">
+{{ end }}
 
 {{ partial "favicons.html" . }}
 

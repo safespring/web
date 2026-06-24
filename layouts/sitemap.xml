@@ -2,7 +2,7 @@
 {{ printf "<?xml-stylesheet type=\"text/xsl\" href=\"/sitemap.xsl\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{ range where .Site.AllPages "Sitemap.Disable" "ne" true }}
+  {{ range .Data.Pages }}
     {{- $isInternal := strings.Contains .Permalink "/internal/" -}}
     {{- if and .Permalink (not .Params.noindex) (not $isInternal) -}}
   <url>
