@@ -56,9 +56,17 @@
                 {{ end }}
             {{ end }}
         {{ else }} <!-- Vi är inne i en sub-sektion -->
+            {{ $sectionPage := . }}
             {{ range sort .Pages "Params.episode" }}
                 {{ if not .IsSection }}
+                    {{ if and $sectionPage.Params.chapterCards .Params.chapters }}
+                        {{ $episodePage := . }}
+                        {{ range $chapterIndex, $chapter := .Params.chapters }}
+                            {{ partial "demo-chapter-card.html" (dict "Page" $episodePage "Chapter" $chapter "Number" (add $chapterIndex 1)) }}
+                        {{ end }}
+                    {{ else }}
                         {{ .Render "episode-summary" }}
+                    {{ end }}
                 {{ end }}
             {{ end }}
         {{ end }}

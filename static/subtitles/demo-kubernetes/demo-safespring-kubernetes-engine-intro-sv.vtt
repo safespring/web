@@ -1,0 +1,797 @@
+WEBVTT
+
+00:00:00.884 --> 00:00:03.185
+Välkommen till den här
+presentationen av Safesprings
+
+00:00:03.185 --> 00:00:03.901
+självserviceportal.
+
+00:00:03.901 --> 00:00:06.764
+I den här portalen,
+
+00:00:06.834 --> 00:00:10.557
+kan du skapa och sätta upp
+dina egna Kubernetes-kluster.
+
+00:00:10.557 --> 00:00:11.709
+Nu börjar vi.
+
+00:00:11.709 --> 00:00:14.014
+Du går till portalen via portal.
+
+00:00:14.014 --> 00:00:18.203
+safespring. com, där det
+finns en knapp för inloggning.
+
+00:00:18.203 --> 00:00:20.995
+Som du ser nu, när jag trycker på Sign in,
+
+00:00:20.995 --> 00:00:23.655
+skickas jag till den här sidan där
+jag väljer Continue with Safespring
+
+00:00:23.655 --> 00:00:24.037
+Provider.
+
+00:00:24.037 --> 00:00:27.093
+Just nu är min
+användarsession cachad, så det
+
+00:00:27.093 --> 00:00:31.701
+betyder att jag loggas in direkt.
+
+00:00:31.701 --> 00:00:34.701
+Men om det är första gången du gör
+detta kan du skickas vidare till den
+
+00:00:34.701 --> 00:00:39.034
+IdP som är kopplad till portalen,
+
+00:00:39.034 --> 00:00:43.301
+där ditt konto finns, och det är
+en del av onboarding-processen.
+
+00:00:43.301 --> 00:00:46.501
+Vi trycker på Continue
+with Safespring Provider,
+
+00:00:46.501 --> 00:00:48.567
+och då får vi upp den här
+vyn där det finns ett antal
+
+00:00:48.567 --> 00:00:49.054
+miljöer.
+
+00:00:49.054 --> 00:00:55.234
+En miljö är ett sätt att
+gruppera dina resurser.
+
+00:00:55.234 --> 00:00:59.129
+I dag kan du ha flera kluster i en miljö,
+
+00:00:59.129 --> 00:01:01.267
+men i framtiden kommer du
+också att kunna sätta upp
+
+00:01:01.267 --> 00:01:03.404
+compute-projekt och
+
+00:01:03.404 --> 00:01:07.679
+S3-lagringskonton.
+
+00:01:07.679 --> 00:01:08.877
+Vi går ner till den här.
+
+00:01:08.877 --> 00:01:13.617
+Här ser du att miljön är helt tom,
+och därför kan jag lägga till ett
+
+00:01:13.617 --> 00:01:14.112
+kluster.
+
+00:01:14.112 --> 00:01:18.566
+Här ser du också de
+andra knapparna som snart
+
+00:01:18.566 --> 00:01:22.440
+kommer att bli tillgängliga.
+
+00:01:22.440 --> 00:01:26.140
+Jag trycker på Add Cluster
+och ger klustret ett namn.
+
+00:01:26.140 --> 00:01:28.514
+Det här är första steget
+när man skapar ett nytt
+
+00:01:28.514 --> 00:01:29.380
+Kubernetes-kluster.
+
+00:01:29.380 --> 00:01:32.842
+Jag kallar det safe-test-01.
+
+00:01:32.842 --> 00:01:34.030
+Sedan trycker jag på Next.
+
+00:01:34.030 --> 00:01:37.853
+Nu kan jag välja vilket datacenter
+jag vill provisionera mina resurser i.
+
+00:01:37.853 --> 00:01:41.819
+Jag väljer Stockholm 2 här, eftersom
+GPU-flavors också finns där.
+
+00:01:41.819 --> 00:01:44.261
+Jag kommer inte att
+använda dem just nu, men
+
+00:01:44.261 --> 00:01:48.376
+det är en skillnad mellan de två.
+
+00:01:48.376 --> 00:01:51.120
+Annars kan det helt enkelt
+handla om geografiska skäl eller
+
+00:01:51.120 --> 00:01:55.069
+suveränitetsskäl när
+man väljer något av dem.
+
+00:01:55.069 --> 00:01:57.662
+Jag väljer Stockholm
+2 och trycker på Next.
+
+00:01:57.662 --> 00:02:00.345
+Nu är det dags att konfigurera hur
+många control plane-noder jag ska ha
+
+00:02:00.345 --> 00:02:02.400
+och vilken typ de ska använda.
+
+00:02:02.400 --> 00:02:05.483
+Mer exakt väljer jag
+tre noder, och jag kan
+
+00:02:05.483 --> 00:02:09.108
+välja deras storlek.
+
+00:02:09.108 --> 00:02:12.734
+Du ser att det finns olika
+flavor-varianter här.
+
+00:02:12.734 --> 00:02:16.134
+Man kan ha fyra vCPU:er per control
+plane-nod, åtta gigabyte RAM och 100
+
+00:02:16.134 --> 00:02:19.533
+gigabyte lagring.
+
+00:02:19.533 --> 00:02:22.252
+Men det finns också andra varianter.
+
+00:02:22.252 --> 00:02:24.572
+Jag väljer bara den minsta här.
+
+00:02:24.572 --> 00:02:28.806
+Alltså: fyra vCPU:er, åtta
+gigabyte RAM och 100 GB lagring.
+
+00:02:28.806 --> 00:02:32.782
+Sedan är det dags att
+provisionera mina worker-noder.
+
+00:02:32.782 --> 00:02:37.286
+Här ser du att jag kan
+välja antal med den här
+
+00:02:37.286 --> 00:02:39.788
+slidern.
+
+00:02:39.788 --> 00:02:43.246
+Jag väljer tre här och tar den minsta.
+
+00:02:43.246 --> 00:02:46.794
+Du ser också att GPU-flavors finns här.
+
+00:02:46.834 --> 00:02:49.519
+I framtiden kommer det också att
+finnas något mer som liknar en varukorg
+
+00:02:49.519 --> 00:02:52.988
+här, där du kanske har
+ett användningsfall där du
+
+00:02:52.988 --> 00:02:58.479
+vill ha tre worker-noder
+av den här typen och
+
+00:02:58.479 --> 00:03:00.781
+kanske bara två GPU-worker-noder.
+
+00:03:00.781 --> 00:03:02.908
+Du kanske inte vill att
+alla noder ska köras med
+
+00:03:02.908 --> 00:03:03.600
+GPU-flavors.
+
+00:03:03.600 --> 00:03:07.754
+De behövs bara för vissa applikationer.
+
+00:03:07.914 --> 00:03:11.281
+Men just nu väljer jag bara den minsta:
+åtta vCPU:er, 16 GB RAM och 100 GB
+
+00:03:11.281 --> 00:03:13.265
+lagring per nod.
+
+00:03:13.265 --> 00:03:16.572
+Sedan trycker jag på Next.
+
+00:03:16.572 --> 00:03:19.458
+Nu ser du en sammanfattningssida där
+du kan granska vad du håller på att
+
+00:03:19.458 --> 00:03:19.825
+göra.
+
+00:03:19.825 --> 00:03:25.489
+Den visar vilken miljö jag är i och
+vilket datacenter resurserna ska
+
+00:03:25.489 --> 00:03:26.780
+provisioneras i.
+
+00:03:26.780 --> 00:03:30.652
+Här ser du klustrets namn, safe-test-01;
+
+00:03:30.652 --> 00:03:33.825
+control plane, som består av
+tre noder av den här flavorn;
+
+00:03:33.825 --> 00:03:37.293
+och worker-noderna,
+
+00:03:37.293 --> 00:03:40.448
+som består av tre noder
+av den här flavorn.
+
+00:03:40.448 --> 00:03:43.310
+Det går också att ladda ner den
+här konfigurationen för senare
+
+00:03:43.310 --> 00:03:44.129
+provisionering.
+
+00:03:44.129 --> 00:03:48.226
+Nu väljer vi Create Cluster.
+
+00:03:48.226 --> 00:03:49.165
+Och nu har det startat.
+
+00:03:49.165 --> 00:03:53.674
+Det står att begäran skickades in, och
+du ser samma granskningsinformation
+
+00:03:53.674 --> 00:03:57.434
+igen.
+
+00:03:57.434 --> 00:04:00.818
+Jag kan välja Return to Environment.
+
+00:04:00.818 --> 00:04:06.246
+Här ser du att klustret nu
+finns i miljön med det här ID:t.
+
+00:04:06.246 --> 00:04:08.902
+ID:t genereras automatiskt,
+
+00:04:08.902 --> 00:04:12.568
+och du kommer att se att det
+också dyker upp på andra ställen i
+
+00:04:12.568 --> 00:04:13.141
+namngivningen.
+
+00:04:13.141 --> 00:04:17.155
+När du sätter upp
+klustret provisionerar vi
+
+00:04:17.155 --> 00:04:20.194
+också DNS automatiskt med ett DNS-namn.
+
+00:04:20.194 --> 00:04:24.318
+Det här är namnet som du pekar dina
+
+00:04:24.318 --> 00:04:29.526
+CNAME-poster mot i din DNS, så
+att du kan publicera dina egna
+
+00:04:29.526 --> 00:04:33.659
+applikationer som körs i klustret.
+
+00:04:33.659 --> 00:04:37.874
+Här ser du att det fortfarande
+håller på att skapas.
+
+00:04:37.874 --> 00:04:41.356
+Det arbetar, och det tar kanske en
+minut eller två på grund av det som
+
+00:04:41.356 --> 00:04:44.837
+görs nu.
+
+00:04:44.837 --> 00:04:49.266
+Det sätter upp control plane, sätter
+upp och provisionerar worker-noderna
+
+00:04:49.266 --> 00:04:55.257
+och gör även DNS-provisioneringen
+som jag nämnde.
+
+00:04:55.257 --> 00:04:58.235
+Det finns flera andra
+saker som behöver göras
+
+00:04:58.235 --> 00:05:02.994
+för att få miljön i drift.
+
+00:05:03.034 --> 00:05:05.533
+Jag kan också berätta att det
+är byggt på Talos Linux från
+
+00:05:05.533 --> 00:05:09.187
+grunden, vilket är ett flyktigt
+operativsystem som bara
+
+00:05:09.187 --> 00:05:10.711
+är API-baserat.
+
+00:05:10.711 --> 00:05:14.520
+Det finns ingen CLI-anslutning till
+
+00:05:14.520 --> 00:05:17.186
+Talos-noderna, och det gör
+det ganska enkelt att förutse
+
+00:05:17.186 --> 00:05:19.591
+konsekvenserna när vi gör
+
+00:05:19.591 --> 00:05:24.290
+uppgraderingar och liknande.
+
+00:05:24.290 --> 00:05:26.602
+Det är förstås en del av
+lösningen: vi hanterar control
+
+00:05:26.602 --> 00:05:27.199
+plane.
+
+00:05:27.199 --> 00:05:30.185
+Det betyder att när Kubernetes-versionen,
+
+00:05:30.185 --> 00:05:33.755
+eller något liknande,
+
+00:05:33.755 --> 00:05:37.534
+ska uppgraderas kan vi
+utföra de uppgraderingarna.
+
+00:05:37.534 --> 00:05:40.708
+Vissa uppgraderingar kan vara lite
+större och kan påverka applikationerna
+
+00:05:40.708 --> 00:05:45.393
+som körs i klustret.
+
+00:05:45.393 --> 00:05:48.303
+I så fall görs uppgraderingen i
+samarbete mellan teamet på Safespring och
+
+00:05:48.303 --> 00:05:53.537
+ert applikationsteam, så att de
+kan koordinera och säkerställa att
+
+00:05:53.537 --> 00:05:59.223
+alla era YAML-filer och liknande resurser
+
+00:05:59.223 --> 00:06:02.473
+fungerar med den nyare
+versionen av miljön.
+
+00:06:02.553 --> 00:06:04.093
+Nu är det aktivt, som du ser.
+
+00:06:04.093 --> 00:06:06.850
+Nu kan vi klicka på namnet
+här och titta på klustret.
+
+00:06:06.850 --> 00:06:09.630
+Vi har en översikt här.
+
+00:06:09.630 --> 00:06:12.461
+Vi har regionen Stockholm 2, som vi
+sa tidigare, vilket är datacentret där
+
+00:06:12.461 --> 00:06:13.640
+det körs.
+
+00:06:13.640 --> 00:06:15.999
+Du ser Kubernetes-versionen,
+Talos-versionen
+
+00:06:15.999 --> 00:06:20.953
+och det underliggande operativsystemet.
+
+00:06:20.993 --> 00:06:23.633
+Du kan också se nätverket.
+
+00:06:23.633 --> 00:06:25.745
+Här har du API-endpointen.
+
+00:06:25.745 --> 00:06:29.218
+Det är namnet du kan använda när
+du kör dina kubectl-kommandon mot
+
+00:06:29.218 --> 00:06:32.691
+klustret.
+
+00:06:32.691 --> 00:06:37.078
+Du ser också IP-adressen
+som har provisionerats.
+
+00:06:37.078 --> 00:06:42.196
+Det följer även med en
+automatiskt konfigurerad ingress.
+
+00:06:42.196 --> 00:06:45.761
+Jag pratade om det tidigare: vi
+har den här automatiskt genererade
+
+00:06:45.761 --> 00:06:51.153
+DNS-posten, som är ganska lång.
+
+00:06:51.153 --> 00:06:54.103
+Men du behöver bara kopiera den en
+gång och lägga in den som en CNAME för
+
+00:06:54.103 --> 00:06:55.091
+din egen domän.
+
+00:06:55.091 --> 00:06:57.724
+Sedan kan du sätta upp
+egna ingress-resurser i
+
+00:06:57.724 --> 00:07:02.421
+klustret som matchar namnet du har
+
+00:07:02.421 --> 00:07:06.464
+konfigurerat, med CNAME som
+pekar mot den här adressen.
+
+00:07:06.464 --> 00:07:09.513
+Då kan du servera
+applikationer från klustret.
+
+00:07:09.553 --> 00:07:12.615
+En sak till här: du ser en liten
+knapp för att skala antalet
+
+00:07:12.615 --> 00:07:13.484
+worker-noder.
+
+00:07:13.484 --> 00:07:17.828
+Vi kan faktiskt skala upp.
+
+00:07:17.828 --> 00:07:20.434
+Vi hade tre från början, så
+nu kan vi kanske ha fyra i
+
+00:07:20.434 --> 00:07:21.269
+stället.
+
+00:07:21.269 --> 00:07:25.441
+Jag väljer Scale Cluster här.
+
+00:07:25.441 --> 00:07:28.824
+Du ser att det skickar en beställning
+till vårt provisioneringssystem.
+
+00:07:28.824 --> 00:07:33.872
+Vi kan säga att det ska skala
+klustret till fyra noder.
+
+00:07:33.872 --> 00:07:38.266
+Om vi går tillbaka till miljön
+ser vi att det skapas igen.
+
+00:07:38.266 --> 00:07:42.043
+Den här åtgärden tar mycket kortare tid,
+
+00:07:42.043 --> 00:07:45.282
+eftersom det bara är en worker-nod
+som behöver provisioneras och allt
+
+00:07:45.282 --> 00:07:48.520
+annat redan finns där.
+
+00:07:48.520 --> 00:07:50.913
+Vi väntar lite tills det är klart.
+
+00:07:50.913 --> 00:07:54.847
+Och du ser att det nu har fyra noder.
+
+00:07:54.927 --> 00:07:55.836
+Nu är det klart.
+
+00:07:55.836 --> 00:08:01.955
+Klustret är aktivt igen, så vi kan
+gå in och titta på översiktssidan.
+
+00:08:01.955 --> 00:08:04.706
+Vi ser att det nu har fyra noder här.
+
+00:08:04.706 --> 00:08:07.159
+Vi lyckades alltså skala upp det.
+
+00:08:07.159 --> 00:08:09.576
+Men vad gör vi nu med detta?
+
+00:08:09.576 --> 00:08:11.992
+Jo, vi vill förstås ansluta till det.
+
+00:08:11.992 --> 00:08:16.230
+Här uppe finns knappen
+Kubeconfig, som jag ska trycka på.
+
+00:08:16.350 --> 00:08:21.633
+Här har du hela
+konfigurationen för klustret.
+
+00:08:21.633 --> 00:08:25.334
+Jag kopierar den och går
+sedan till min terminal.
+
+00:08:25.334 --> 00:08:29.459
+Nu är jag i terminalen.
+
+00:08:29.459 --> 00:08:35.287
+Så jag ska kopiera innehållet från
+portalen till min kubeconfig-fil.
+
+00:08:35.287 --> 00:08:39.594
+Jag öppnar kubeconfig-filen
+och klistrar in det här.
+
+00:08:39.594 --> 00:08:41.052
+Jag kan gå igenom det kort.
+
+00:08:41.052 --> 00:08:45.516
+Först har vi certificate authority-data
+och de nycklar som behövs för att
+
+00:08:45.516 --> 00:08:50.859
+ansluta korrekt till klustret.
+
+00:08:50.899 --> 00:08:54.114
+Du ser också servern för klustret.
+
+00:08:54.114 --> 00:08:59.221
+Det här är API-endpointen
+som vi också såg i portalen.
+
+00:08:59.221 --> 00:09:04.375
+Men en intressant sak finns här nere:
+när vi börjar köra kommandon mot det här
+
+00:09:04.375 --> 00:09:09.339
+klustret behöver vi logga in.
+
+00:09:09.339 --> 00:09:12.931
+Och det här är IDM:en som
+är kopplad till Stockholm 2.
+
+00:09:12.931 --> 00:09:13.639
+Du ser den här.
+
+00:09:13.639 --> 00:09:16.753
+Det är där jag behöver ett konto
+för att kunna ansluta till klustret.
+
+00:09:16.753 --> 00:09:21.298
+På det här sättet har vi två
+nivåer av identity providers.
+
+00:09:21.298 --> 00:09:23.360
+Vi har IdP:n för portalen, där du som
+
+00:09:23.360 --> 00:09:27.900
+administratör kan sätta upp nya kluster.
+
+00:09:27.900 --> 00:09:31.276
+Men du behöver också en annan nivå:
+IdP:erna för de faktiska datacenter där
+
+00:09:31.276 --> 00:09:32.065
+klustren provisioneras.
+
+00:09:32.065 --> 00:09:37.635
+På så sätt kan du som administratör
+ha kontroll över att skapa och ta bort
+
+00:09:37.635 --> 00:09:38.084
+kluster.
+
+00:09:38.084 --> 00:09:44.143
+Men du kan ge behörighet till vissa
+användare som bara har ett konto i den
+
+00:09:44.143 --> 00:09:49.373
+IdP som är kopplad till datacentret.
+
+00:09:49.373 --> 00:09:52.782
+Du får alltså en
+lagerindelad åtkomstmodell.
+
+00:09:52.782 --> 00:09:55.803
+Det gör det enkelt att separera ansvar,
+
+00:09:55.803 --> 00:09:59.251
+så att tekniker som arbetar med klustren
+till exempel inte har rätt att ta
+
+00:09:59.251 --> 00:10:00.947
+bort klustren.
+
+00:10:00.947 --> 00:10:05.670
+Så jag ska bara spara det här.
+
+00:10:05.670 --> 00:10:08.777
+Sedan kan vi göra den
+vanliga uppsättningen.
+
+00:10:08.777 --> 00:10:12.416
+Jag ska läsa den här filen och sätta
+min KUBECONFIG-miljövariabel så att
+
+00:10:12.416 --> 00:10:14.152
+den pekar på den.
+
+00:10:14.152 --> 00:10:17.190
+Nu har jag lagt till informationen i
+
+00:10:17.190 --> 00:10:20.593
+kubeconfig-filen, som du ser här.
+
+00:10:20.593 --> 00:10:24.958
+Och nu ska jag sätta min
+KUBECONFIG-miljövariabel så att den
+
+00:10:24.958 --> 00:10:27.975
+pekar på den.
+
+00:10:27.975 --> 00:10:34.214
+Nu pekar KUBECONFIG-miljövariabeln
+på min nya kubeconfig-fil.
+
+00:10:34.214 --> 00:10:39.021
+Nu kan jag till exempel
+köra kubectl get nodes.
+
+00:10:39.101 --> 00:10:41.656
+Som du ser behöver jag nu logga
+in på den IdP där mitt konto
+
+00:10:41.656 --> 00:10:42.676
+finns.
+
+00:10:42.676 --> 00:10:45.735
+Jag gör det.
+
+00:10:45.735 --> 00:10:47.403
+Jag anger mitt lösenord här.
+
+00:10:47.403 --> 00:10:51.340
+Sedan har jag tvåfaktorsautentisering
+aktiverad, så jag behöver använda
+
+00:10:51.340 --> 00:10:54.809
+min hårdvarunyckel.
+
+00:10:54.809 --> 00:10:57.706
+Och som du ser är jag nu autentiserad.
+
+00:10:57.706 --> 00:11:00.603
+Om vi går tillbaka hit ser vi att
+jag faktiskt fick ett svar från
+
+00:11:00.603 --> 00:11:03.501
+kommandot.
+
+00:11:03.501 --> 00:11:08.595
+Nu har jag alltså en autentiseringstoken.
+
+00:11:08.595 --> 00:11:12.944
+Nu kan jag till exempel köra
+kubectl get pods --namespace
+
+00:11:12.944 --> 00:11:17.293
+kube-system.
+
+00:11:17.293 --> 00:11:20.692
+Här ser vi alla komponenter
+som körs i klustret.
+
+00:11:20.692 --> 00:11:24.439
+Du ser att vi kör Cilium för nätverk och
+
+00:11:24.439 --> 00:11:27.980
+CoreDNS för DNS-hantering i
+
+00:11:27.980 --> 00:11:32.701
+miljön.
+
+00:11:32.781 --> 00:11:33.556
+Vi har Cinder CSI.
+
+00:11:33.556 --> 00:11:37.732
+Det beror på att vi kör vår
+miljö på OpenStack, där Cinder är
+
+00:11:37.732 --> 00:11:38.334
+volymtjänsten.
+
+00:11:38.334 --> 00:11:41.947
+Det här är pluginet som hanterar
+
+00:11:41.947 --> 00:11:44.860
+provisionering av PVC:er, alltså
+
+00:11:44.860 --> 00:11:48.743
+persistent volume claims.
+
+00:11:48.743 --> 00:11:52.265
+Sedan har vi de andra, mer
+standardiserade Kubernetes-tjänsterna som
+
+00:11:52.265 --> 00:11:57.194
+körs i alla Kubernetes-kluster.
+
+00:11:57.194 --> 00:11:58.222
+Det var det.
+
+00:11:58.222 --> 00:12:01.253
+Vi har skapat ett kluster
+och anslutit till det.
+
+00:12:01.253 --> 00:12:04.438
+Och om jag nu är klar
+med det här klustret kan
+
+00:12:04.438 --> 00:12:08.797
+jag också ta bort det.
+
+00:12:08.797 --> 00:12:10.187
+Jag kan gå hit.
+
+00:12:10.187 --> 00:12:13.994
+Det här är något jag kan göra
+som administratör för miljön.
+
+00:12:13.994 --> 00:12:17.682
+Jag behöver ange namnet, annars
+låter den mig inte fortsätta.
+
+00:12:17.682 --> 00:12:22.936
+Nu kan jag ta bort klustret, och
+det kommer att avprovisioneras.
+
+00:12:22.936 --> 00:12:26.428
+Jag hoppas att du gillade den här
+
+00:12:26.428 --> 00:12:28.994
+demonstrationen, och jag
+hoppas att vi ses snart.
+
+00:12:28.994 --> 00:12:30.094
+Hej då.
