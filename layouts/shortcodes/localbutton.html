@@ -1,3 +1,5 @@
 <br>
-<a href='{{ .Get "link" }}' {{ with .Get "target" }}target='{{ . }}'{{ else }}target='_self'{{ end }} class='button'>{{ with .Get "icon" }}<i class='fa-solid {{ . }}'></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Get "text" }}</a>
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get "link")) }}
+{{ with .Get "linkref" }}{{ $href = partial "resolve-link.html" (dict "page" $.Page "href" .) }}{{ end }}
+<a href='{{ $href }}' {{ with .Get "target" }}target='{{ . }}'{{ else }}target='_self'{{ end }} class='button'>{{ with .Get "icon" }}<i class='fa-solid {{ . }}'></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Get "text" }}</a>
 <br>

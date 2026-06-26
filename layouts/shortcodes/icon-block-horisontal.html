@@ -1,7 +1,8 @@
-{{ with .Get "link" }}
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get "link")) }}
+{{ with $href }}
 <a class="icon-block-link" href='{{ . | safeURL }}'>{{ end }}
 	<div class="icon-block-horisontal" style='background-color: {{ .Get "color" }}10;'>
 		<div class="icon-block-color" style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'>
 	<i class='{{ .Get "icon" }} icon'></i>
 	</div>
-	<p><span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br>{{ .Get "description" | safeHTML }}</p></div>{{ with .Get "link" }}</a>{{ end }}
+	<p><span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br>{{ .Get "description" | safeHTML }}</p></div>{{ with $href }}</a>{{ end }}

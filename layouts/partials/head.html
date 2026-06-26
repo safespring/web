@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <script src="https://cdn.cookietractor.com/cookietractor.js" data-lang='{{ if eq .Params.language "En"}}en-GB{{else if eq .Params.language "No"}}nb-NO{{else if eq .Params.language "Dk"}}da-DK{{else}}sv-SE{{end}}' data-id="17d1053b-7aec-41f1-b5b5-673ec4739d5a"defer></script> 
   <link rel="preload" as="image" href="/img/logos/safespring_logotype_blue_svg.svg" fetchpriority="high" type="image/svg+xml" importance="high">
-  {{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
+  {{ $bg := replaceRE "^/+" "" (.Params.background | default "safespring-blue-fade2.svg") }}
   {{ if .Params.background }}
   {{ $ext := replace (path.Ext $bg) "." "" }}
   <link rel="preload" as="image"
@@ -785,21 +785,33 @@
 </style>
 
 
-<meta property="og:title" content="{{ .Params.metatitle | default .Title }} | Safespring">
+{{ $metaTitle := printf "%s | Safespring" (.Params.metatitle | default .Title) }}
+{{ $metaDescription := "Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!" }}
+{{ with .Params.intro }}{{ $metaDescription = . }}{{ end }}
+{{ $metaImage := "img/socialmedia/safespring-start.png" }}
+{{ with .Params.socialmedia }}{{ $metaImage = printf "img/%s" (replaceRE "^/+" "" .) }}{{ end }}
+{{ $metaImage = $metaImage | absURL }}
+
+<meta property="og:title" content="{{ $metaTitle }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content='{{ .Site.BaseURL }}{{ if isset .Params "socialmedia" }}img/{{ index .Params "socialmedia" }}{{ else }}img/socialmedia/safespring-start.png{{ end }}'>
-<meta property="og:description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
+<meta property="og:image" content="{{ $metaImage }}">
+<meta property="og:description" content="{{ $metaDescription }}">
 <meta property="og:site_name" content="Safespring">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $metaTitle }}">
+<meta name="twitter:description" content="{{ $metaDescription }}">
+<meta name="twitter:image" content="{{ $metaImage }}">
+<meta name="twitter:url" content="{{ .Permalink }}">
 <meta name="author" content="{{ .Params.author }}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
-<meta name="description" content="{{ if isset .Params "intro" }}{{ index .Params "intro" }}{{ else }}Safespring är en publik molnplattform som är lokalt producerad. Med trygga datacenter håller du din data inom landets gränser. Läs mer!{{ end }}">
+<meta name="description" content="{{ $metaDescription }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {{ if or .Params.noindex (eq .Section "internal") }}
-<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="robots" content="noindex, noarchive">
 {{ end }}
 
 {{ partial "favicons.html" . }}

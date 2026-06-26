@@ -8,7 +8,7 @@ general: "yes"
 TOC: "På denna sida"
 ---
 
-*För information om hur vi arbetar med dataskyddsåtgärder i våra tjänster, besök i stället [vår sida om GDPR i molnet](/gdpr).*
+*För information om hur vi arbetar med dataskyddsåtgärder i våra tjänster, besök i stället [vår sida om GDPR i molnet](/gdpr/).*
 
 ### Vårt företag
 Safespring AB, org. nr. 559075–0245, är ett svenskt företag med huvudkontor i Stockholm och ett dotterbolag i Norge. Vi levererar molntjänster baserade på OpenStack och CEPH från flertalet datacenter i Sverige och Norge. Vårt huvudkontor ligger på Rättarvägen 3, 169 68 Solna.

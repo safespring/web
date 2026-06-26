@@ -1,4 +1,5 @@
 {{ $logo := or (.Get "logo") "/img/graphics/safespring-byline-blue.svg" }}
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get `link`)) }}
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
   <div class="safespring-horisontal-card-col safespring-horisontal-card-image safespring-horisontal-card-image--logo" style="background-image: url({{ .Get `image` }});" role="img" aria-label="{{ or (.Get `alt`) (.Get `cardtitle`) }}">
     <img class="safespring-horisontal-card-logo" src="{{ $logo }}" width="408" height="404" alt="{{ or (.Get `logoAlt`) `Safespring logotyp` }}" loading="lazy">
@@ -8,7 +9,7 @@
     {{ if isset .Params "text" }}<p>{{ .Get "text" }}</p>{{ else }}{{ .Inner | markdownify }}{{ end }}
     {{ if isset .Params "link" }}<br>
     <br>
-    <a class="button" href="{{ .Get `link` }}">{{ .Get "linktext" }}</a>
+    <a class="button" href="{{ $href }}">{{ .Get "linktext" }}</a>
     {{ end }}
   </div>
 </div>

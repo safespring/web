@@ -21,5 +21,5 @@ Läs vår solution brief och lär dig mer om vår lösning, klicka på bilden ne
 
 
 <br>
-<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img//blogg/socialmedia/safespring_social_41.gif"></a>
+<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img/blogg/socialmedia/safespring_social_41.gif"></a>
 <br>
