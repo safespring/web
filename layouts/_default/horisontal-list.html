@@ -1,5 +1,5 @@
 {{ $image := "/img/background/safespring-blue-fade2.svg" }}
-{{ if .Params.background }}{{ $image = printf "/img/background/%s" .Params.background }}{{ end }}
+{{ if .Params.background }}{{ $image = printf "/img/background/%s" (replaceRE "^/+" "" .Params.background) }}{{ end }}
 {{ if .Params.sidebarimage }}{{ $image = printf "/img/card/%s" .Params.sidebarimage }}{{ end }}
 
 <div

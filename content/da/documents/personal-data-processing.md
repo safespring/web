@@ -13,7 +13,7 @@ aliases:
 slug: "personuppgiftshantering"
 ---
 
-_For information om, hvordan vi arbejder med databeskyttelsestiltag i vores tjenester, besøg i stedet [vores side om GDPR i skyen](/gdpr)._
+_For information om, hvordan vi arbejder med databeskyttelsestiltag i vores tjenester, besøg i stedet [vores side om GDPR i skyen](/gdpr/)._
 
 ### Vores virksomhed
 

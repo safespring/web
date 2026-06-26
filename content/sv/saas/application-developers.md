@@ -58,4 +58,4 @@ Vi är ett svenskt företag som producerar alla tjänster inom landets gränser,
 
 Kontakta oss för att få veta mer om hur vi kan stötta er SaaS-verksamhet med hållbara och skalbara lösningar.
 
-<a href="/kontakt" class="text-button">Kontakta Safespring</a>
+<a href="/kontakt/" class="text-button">Kontakta Safespring</a>

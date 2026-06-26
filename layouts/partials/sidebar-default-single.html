@@ -99,8 +99,7 @@
           {{ else }}Vill du arbeta med oss? Skicka ditt CV genom att klicka här.
           {{ end }}
         </p>
-        {{ $sidebarlinkurl := .Params.sidebarlinkurl }}
-        {{ if strings.HasSuffix $sidebarlinkurl ".md" }}{{ $sidebarlinkurl = relref . $sidebarlinkurl }}{{ end }}
+        {{ $sidebarlinkurl := partial "resolve-link.html" (dict "page" . "href" .Params.sidebarlinkurl) }}
         <a class="button" href="{{ $sidebarlinkurl }}">{{ .Params.sidebarlinkname | default "Apply now" }}</a>
         {{ else }}
         <p class="card-section">{{ .Params.documentation }}</p>
@@ -110,7 +109,7 @@
         <p class="mb-2">
           {{ T "sidebar.demo_show" }}
         </p>
-        <a class="button" href="/demo/compute">{{ T "sidebar.demo" }}</a>
+        <a class="button" href="{{ relref . "demo/compute" }}">{{ T "sidebar.demo" }}</a>
         {{ end }}
       </div>
     </div>

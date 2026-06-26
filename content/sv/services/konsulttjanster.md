@@ -41,4 +41,4 @@ Arbetssätt som inbegriper automation och API kan effektivisera och reducera kos
 
 Kontakta oss för att specificera vilka behov just ni behöver och låt oss se hur vi kan effektivisera ert användande av kapacitetstjänster.
 
-<a href="/kontakt" class="text-button">Kontakta Safespring</a>
+<a href="/kontakt/" class="text-button">Kontakta Safespring</a>

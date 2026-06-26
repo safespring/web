@@ -1,0 +1,22 @@
+{{- $page := .page -}}
+{{- $href := .href | default "" -}}
+{{- $resolved := $href -}}
+
+{{- if and $href (not (or (strings.HasPrefix $href "http://") (strings.HasPrefix $href "https://") (strings.HasPrefix $href "mailto:") (strings.HasPrefix $href "tel:") (strings.HasPrefix $href "#"))) -}}
+  {{- if strings.HasSuffix $href ".md" -}}
+    {{- $resolved = relref $page $href -}}
+  {{- else if strings.HasPrefix $href "/" -}}
+    {{- $parts := split $href "#" -}}
+    {{- $path := index $parts 0 -}}
+    {{- $fragment := "" -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $fragment = printf "#%s" (index $parts 1) -}}
+    {{- end -}}
+    {{- if and (ne $path "") (not (strings.HasSuffix $path "/")) (not (findRE "\\.[A-Za-z0-9]+$" $path)) -}}
+      {{- $path = printf "%s/" $path -}}
+    {{- end -}}
+    {{- $resolved = printf "%s%s" $path $fragment -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $resolved -}}

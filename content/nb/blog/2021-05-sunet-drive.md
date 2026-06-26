@@ -23,5 +23,5 @@ Tjenesten [Sunet Drive](/dokument/sunet/sunet-drive/) gjør det enklere for bruk
 Les vår solution brief og lær mer om løsningen vår, klikk på bildet nedenfor. For alle kunder i GÉANT er løsningen tilgjengelig via OCRE-rammeavtalen. [Les mer om OCRE her]({{% relref "/industries/research-and-education.md" %}}).
 
 <br>
-<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive er en administrert lagringsløsning som er fysisk installert i universitetets lokale datasentre" src="/img//blogg/socialmedia/safespring_social_41.gif" width="720" height="405"></a>
+<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive er en administrert lagringsløsning som er fysisk installert i universitetets lokale datasentre" src="/img/blogg/socialmedia/safespring_social_41.gif" width="720" height="405"></a>
 <br>

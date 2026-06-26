@@ -28,7 +28,7 @@ At vi er et svensk selskap som produserer tjenestene i Sverige, gjør at du kan 
 
 Kontakt oss for å diskutere videre hvordan vi kan hjelpe deg å utnytte en skyløsning på en trygg måte og samtidig oppfylle lover og regler.
 
-<a href="/kontakt" class="text-button">Kontakt Safespring</a><br><br>
+<a href="/kontakt/" class="text-button">Kontakt Safespring</a><br><br>
 
 ## Whitepaper
 

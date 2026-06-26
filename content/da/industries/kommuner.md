@@ -28,7 +28,7 @@ At vi er et svensk selskab, som leverer tjenesterne i Sverige, betyder, at du ka
 
 Kontakt os for at drøfte, hvordan vi kan hjælpe dig med trygt at udnytte en skyløsning og samtidig opfylde love og regler.
 
-<a href="/kontakt" class="text-button">Kontakt Safespring</a><br><br>
+<a href="/kontakt/" class="text-button">Kontakt Safespring</a><br><br>
 
 ## White paper
 

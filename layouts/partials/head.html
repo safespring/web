@@ -22,7 +22,7 @@
       type="image/svg+xml"
       importance="high"
     />
-    {{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
+    {{ $bg := replaceRE "^/+" "" (.Params.background | default "safespring-blue-fade2.svg") }}
     {{ if .Params.background }}
       {{ $ext := replace (path.Ext $bg) "." "" }}
       <link
@@ -851,40 +851,28 @@
       {{ end }}
     </style>
 
-    <meta
-      property="og:title"
-      content="{{ .Params.metatitle | default .Title }} | Safespring"
-    />
+    {{ $metaTitle := printf "%s | Safespring" (.Params.metatitle | default .Title) }}
+    {{ $metaDescription := T "meta.desc" }}
+    {{ with .Params.intro }}{{ $metaDescription = . }}{{ end }}
+    {{ $metaImage := "img/socialmedia/safespring-start.png" }}
+    {{ with .Params.socialmedia }}{{ $metaImage = printf "img/%s" (replaceRE "^/+" "" .) }}{{ end }}
+    {{ $metaImage = $metaImage | absURL }}
+
+    <meta property="og:title" content="{{ $metaTitle }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta
-      property="og:image"
-      content="{{ .Site.BaseURL }}{{ if isset .Params "socialmedia" }}
-        img/{{ index .Params "socialmedia" }}
-      {{ else }}
-        img/socialmedia/safespring-start.png
-      {{ end }}"
-    />
-    <meta
-      property="og:description"
-      content="{{ if isset .Params "intro" }}
-        {{ index .Params "intro" }}
-      {{ else }}
-        {{ T "meta.desc" }}
-      {{ end }}"
-    />
+    <meta property="og:image" content="{{ $metaImage }}" />
+    <meta property="og:description" content="{{ $metaDescription }}" />
     <meta property="og:site_name" content="Safespring" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $metaTitle }}" />
+    <meta name="twitter:description" content="{{ $metaDescription }}" />
+    <meta name="twitter:image" content="{{ $metaImage }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
     <meta name="author" content="{{ .Params.author }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
-    <meta
-      name="description"
-      content="{{ if isset .Params "intro" }}
-        {{ index .Params "intro" }}
-      {{ else }}
-        {{ T "meta.desc" }}
-      {{ end }}"
-    />
+    <meta name="description" content="{{ $metaDescription }}" />
     <link rel="canonical" href="{{ .Permalink }}" />
     {{- if .IsTranslated -}}
       {{ range .AllTranslations }}

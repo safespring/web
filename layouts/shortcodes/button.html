@@ -4,8 +4,7 @@
     >{{ $.Page.Params.knapp }}</a
   >
 {{ else }}
-  {{ $href := $.Page.Params.sidebarlinkurl }}
-  {{ if strings.HasSuffix $href ".md" }}{{ $href = relref $.Page $href }}{{ end }}
+  {{ $href := partial "resolve-link.html" (dict "page" $.Page "href" $.Page.Params.sidebarlinkurl) }}
   <a href="{{ $href }}" target="_blank" rel="noopener noreferrer" class="button"
     >{{ $.Page.Params.sidebarlinkname }}{{ if $.Page.Params.sidebarlinkicon }}
       &nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>

@@ -23,5 +23,5 @@ The [Sunet Drive](/dokument/sunet/sunet-drive/) service helps users comply with 
 Read our solution brief to learn more about our solution—click the image below. For all customers within GÉANT, the solution is available via the OCRE framework agreement. [Read more about OCRE here]({{% relref "/industries/research-and-education.md" %}}).
 
 <br>
-<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img//blogg/socialmedia/safespring_social_41.gif" width="720" height="405"></a>
+<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img/blogg/socialmedia/safespring_social_41.gif" width="720" height="405"></a>
 <br>

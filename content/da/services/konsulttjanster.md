@@ -45,4 +45,4 @@ Arbejdsmetoder, der omfatter automatisering og API'er, kan effektivisere og redu
 
 Kontakt os for at specificere, hvilke behov netop I har, og lad os se, hvordan vi kan effektivisere jeres brug af kapacitetsydelser.
 
-<a href="/kontakt" class="text-button">Kontakt Safespring</a>
+<a href="/kontakt/" class="text-button">Kontakt Safespring</a>

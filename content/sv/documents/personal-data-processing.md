@@ -12,7 +12,7 @@ aliases:
 slug: "personuppgiftshantering"
 ---
 
-_För information om hur vi arbetar med dataskyddsåtgärder i våra tjänster, besök i stället [vår sida om GDPR i molnet](/gdpr)._
+_För information om hur vi arbetar med dataskyddsåtgärder i våra tjänster, besök i stället [vår sida om GDPR i molnet](/gdpr/)._
 
 ### Vårt företag
 

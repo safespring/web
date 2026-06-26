@@ -1,5 +1,5 @@
-{{ $href := .Get "link" }}
-{{ with .Get "linkref" }}{{ $href = relref $.Page . }}{{ end }}
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get "link")) }}
+{{ with .Get "linkref" }}{{ $href = partial "resolve-link.html" (dict "page" $.Page "href" .) }}{{ end }}
 {{ with $href }}
 <a class="icon-block-link" href='{{ . }}'>{{ end }}
     <div class="icon-block" style='color: {{ .Get "color" }};'>
