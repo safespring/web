@@ -2,13 +2,15 @@
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
 <!-- HEADING -->
-<div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+<div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ replaceRE "^/+" "" .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
   <div style="max-width: 800px;">
     <div class="section">
       {{ if .Params.toplogo }}
       <img src="/img/logos/{{ .Params.toplogo }}" alt="Logo" class="toplogo">
       {{ end }}
-      <a class="" href="/{{ .Section }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
+      {{ $sectionHref := "/" }}
+      {{ with .Section }}{{ $sectionHref = printf "/%s/" . }}{{ end }}
+      <a class="" href="{{ $sectionHref }}" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
         {{ if eq .Section "om-safespring" }}About Safespring{{ else if eq .Section "referenser" }}Customer References{{ else if .Params.section }}{{ .Params.section }}{{ else if .Params.toplogo }}{{ else }}{{ .Section }}{{ end }}
       </a>
     </div>

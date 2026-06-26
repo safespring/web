@@ -25,4 +25,4 @@ At vi er et svensk selskap som produserer tjenestene i Sverige gjør at tjeneste
 
 Kontakt oss for å se hvordan vi kan støtte deg i din virksomhet!
 
-<a href="/kontakt" id="text-button">Kontakt Safespring</a>
+<a href="/kontakt/" id="text-button">Kontakt Safespring</a>

@@ -14,4 +14,4 @@ dontshow: "yes"
 
 <p>Om du behöver hjälp eller behöver komma i kontakt med oss så skicka gärna ett mail till kontakt@safespring.com.</p>
 
-<a id="text-button" href="/kontakt">Kontakta Safespring</a>
+<a id="text-button" href="/kontakt/">Kontakta Safespring</a>
