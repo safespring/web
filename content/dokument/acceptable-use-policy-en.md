@@ -25,4 +25,4 @@ In this text, Safespring establishes policy principles for the use of their clou
 - Safespring monitors the services and can assist users in maintaining adequate security as needed. In cases of high risk, they may issue a warning, and if ignored, they may stop access to the application.
 - If users violate the policy, they must immediately inform Safespring and provide reasonable assistance to rectify and minimize the risks.
 
-{{< 2calltoaction "Read Acceptable Use Policy" "/documents/safespring-acceptable_use_policy.pdf" "Contact Us" "/contact" >}}
+{{< 2calltoaction "Read Acceptable Use Policy" "/documents/safespring-acceptable_use_policy.pdf" "Contact Us" "/en/contact/" >}}

@@ -45,7 +45,7 @@ The core of Safespring's platform is our virtual machines that come in several d
 
 All our flavors follow this new name set, making it easier for everyone who uses our platform. In our price calculator, you can see the new names today.
 
-{{< localtextbutton "Price list" "https://www.safespring.com/price/" >}}
+{{< localtextbutton "Price list" "/en/price/" >}}
 
 ## How does Nextcloud work on Safespring's platform?
 Together with Sunet and Nextcloud, Safespring has built Sunet Drive. A complete solution for large-scale storage. Read more in our comprehensive solution brief, where we explain how the service is structured and why this type of solution is suitable for sensitive data.

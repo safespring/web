@@ -25,7 +25,7 @@ En lösning är att fytta ut känslig data från de amerikanska molnen och lagra
 
 Många företag och institutioner har redan tagit steget in i bland annat vår svenska molntjänst. Läs mer om våra kunder och deras upplevelse av Safespring här:
 
-<a href="/referenser" id="text-button">Läs Safesprings Kundreferenser</a><br>
+<a href="/tjanster/case/" id="text-button">Läs Safesprings kundcase</a><br>
 
 Adam Odmark anser att läget mellan dataskyddsförordningen och USA:s Cloud Act kräver skyndsamt agerande.
 

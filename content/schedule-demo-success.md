@@ -15,7 +15,7 @@ socialmedia: ""
 sidebarlinkname: "Explore Our Solutions"
 sidebarlinkurl: "/en/services/containerplatform/"
 sidebarlinkname2: "Contact Safespring"
-sidebarlinkurl2: "/contact"
+sidebarlinkurl2: "/en/contact/"
 saas: ""
 aliases: ""
 noindex: "yes"
@@ -69,8 +69,8 @@ Safespring is a European public cloud platform built to meet compliance needs wi
 	{{< icon-block icon="fa-solid fa-film" text="Watch Our Webcasts" link="/webinars/" color="#195F8C">}}
 	{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to Know Us" link="/about-safespring/" color="#3C9BCD">}}
 	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Read Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
-	{{< icon-block icon="fa-solid fa-gavel" text="Learn About Schrems II" link="/whitepapers/schrems-ii/" color="#FA690F">}}
-	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/container-platform/" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-gavel" text="Learn About Schrems II" link="/en/whitepaper/schrems2/" color="#FA690F">}}
+	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/en/services/containerplatform/" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Open Presentation" text="Take a closer look at Safespring and our European cloud platform focused on compliance, sensitive data handling, and GDPR." >}}
