@@ -1,7 +1,7 @@
 ---
 Title: "Senior Platform Engineer"
 intro: "You will build and operate Safespring's Kubernetes platform: Talos Linux on our own OpenStack, lifecycle automation we own, and Ferga as the self-service layer for provisioning."
-draft: false
+draft: true
 date: "2026-05-19"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/38b138ae-c884-4d63-8338-a70dcf76190a/08ab95f9-1fda-4adc-b2d3-a6dcff75d73d#applyNow"
 sidebarlinkname: "Apply now"
