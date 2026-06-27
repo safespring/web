@@ -18,6 +18,7 @@ function removeScript(id) {
 var CATEGORY_SCRIPTS = {
   statistical: [
     { id: 'analytics-script',   src: '/js/matomo.js' },
+    { id: 'qualified-evaluation-script', src: '/js/qualified-evaluation.js' },
     { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js' },
     { id: 'r2b2-script',        src: '/js/r2b2.js' }
   ],
