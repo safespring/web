@@ -47,10 +47,11 @@ Facebook kan och kommer att förhala vissa städåtgärder i de egna serverhalla
 1. EUobserver: [Meta's €1.2bn fine — a GDPR win, inconsequential for user privacy?](https://euobserver.com/digital/157058)
 1. EU Kommisionen: [EU:s digitala decennium: digitala mål för 2030](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/europes-digital-decade-digital-targets-2030_sv)
 1. EU Kommisionen: [Framtiden och EU:s digitala kompass inför 2030](https://sweden.representation.ec.europa.eu/strategi-och-prioriteringar/viktiga-eu-fragor-sverige/digitala-mal-2030_sv#framtiden-och-eus-digitala-kompass-inf%C3%B6r-2030)
-1. Politico: Record Meta fine masks Europe’s privacy struggle
+1. Politico: [Record Meta fine masks Europe’s privacy struggle](https://www.politico.eu/article/record-meta-fine-masks-shortcomings-of-europes-privacy-regime/)
 1. Dagens Industri: [Meta får rekordstor EU-bot för användardatabrott](https://www.di.se/digital/meta-far-rekordstor-eu-bot-for-anvandardatabrott/)
 
 [1]: https://euobserver.com/digital/157058
 [2]: https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/europes-digital-decade-digital-targets-2030_sv
 [3]: https://sweden.representation.ec.europa.eu/strategi-och-prioriteringar/viktiga-eu-fragor-sverige/digitala-mal-2030_sv#framtiden-och-eus-digitala-kompass-inf%C3%B6r-2030 
+[4]: https://www.politico.eu/article/record-meta-fine-masks-shortcomings-of-europes-privacy-regime/
 [5]: https://www.di.se/digital/meta-far-rekordstor-eu-bot-for-anvandardatabrott/

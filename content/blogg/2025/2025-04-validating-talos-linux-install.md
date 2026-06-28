@@ -521,7 +521,7 @@ An alternative to this solution would be making use of [`extraManifests`](https:
 
 A few notes on installing Cilium CNI to consider:
 
-- Enabling `bpf.hostLegacyRouting=true` for Cilium to work with Talos Linux installation documented in the [Cilium Helm installation source](https://github.com/cilium/cilium/blob/main/Documentation/installation/k8s-install-helm.rst).
+- Enabling `bpf.hostLegacyRouting=true` for Cilium to work with Talos Linux installation documented in official [Cilium docs](https://docs.cilium.io/en/stable/installation/k8s-install-helm/#install-cilium).
 - One of the reasons we need to validate the internet connectivity was started from making Cilium DNS work as there seems to be is an issue with version `1.6.5` see [this comment](https://github.com/cilium/cilium/issues/36761#issuecomment-2560353729) and [issue 66](https://github.com/isejalabs/homelab/issues/66): 
   - "Cilium now uses BPF Host Routing in `1.16.5`, which is conflicting with `forwardKubeDNSToHost` in Talos. Setting `bpf.hostLegacyRouting=true` in your Cilium reverts to the behaviour used in `1.16.4` and earlier. This eliminates the need for disabling `forwardKubeDNSToHost` in Talos".
 

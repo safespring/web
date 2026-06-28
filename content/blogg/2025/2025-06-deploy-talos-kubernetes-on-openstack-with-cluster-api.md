@@ -416,10 +416,10 @@ spec:
       talosVersion: 1.10.3
 ```
 
-For the purpose of this tutorial we would need two [elastic IPS](https://docs.safespring.com/new/elastic-ip/). At the same time notice that the Cilium CNI installation is done via `inlineManifests`with the `bgpControlPlane.enabled=true` flag so that the [Cilium BGP Control Plane](https://github.com/cilium/cilium/blob/main/Documentation/network/bgp-control-plane/bgp-control-plane.rst) is enabled.
+For the purpose of this tutorial we would need two [elastic IPS](https://docs.safespring.com/new/elastic-ip/). At the same time notice that the Cilium CNI installation is done via `inlineManifests`with the `bgpControlPlane.enabled=true` flag so that [BGP Peering Policy](https://docs.cilium.io/en/latest/network/bgp-control-plane/bgp-control-plane-v1/) is enabled.
 
 {{% note "Note" %}}
-Long term we recommend migrating to [BGP Control Plane Resources](https://github.com/cilium/cilium/blob/main/Documentation/network/bgp-control-plane/bgp-control-plane.rst).
+Long term we recommend migrating to [BGP Control Plane Resources](https://docs.cilium.io/en/stable/network/bgp-control-plane/bgp-control-plane-v2/).
 {{% /note %}}
 
 ```yaml

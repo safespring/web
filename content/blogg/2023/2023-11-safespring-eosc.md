@@ -39,5 +39,5 @@ Vårt mål är att vara ledande inom innovativa och säkra molntjänster för at
 {{< inline "Telefon" >}} +46 76-629 25 02
 
 
-För mer detaljerad information om upphandlingen, läs gärna Europa-kommissionens pressmeddelande om EOSC-upphandlingen.
+För mer detaljerad information om upphandlingen, läs gärna Europa-kommissionens [pressmeddelande](https://digital-strategy.ec.europa.eu/en/news/commission-announces-winners-eosc-procurement) om EOSC-upphandlingen.
 {{% /custom-card %}}

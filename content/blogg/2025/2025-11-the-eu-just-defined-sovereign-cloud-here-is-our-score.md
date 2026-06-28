@@ -72,4 +72,4 @@ All our datacenters have low PUE, reuse the heat generated and use 100 % green e
 [^2]:Souveräner Cloud
 [^3]:European regulations like ENISA, NIS2 and DORA.
 [^4]:European Commission’s [Cloud Sovereignty Framework](https://commission.europa.eu/document/09579818-64a6-4dd5-9577-446ab6219113_en)
-[^5]:EuroStack publication, *A Proposed Framework for a “Buy European” Regulation of Strategic Digital Procurement*
+[^5]:EuroStack publication, [*A Proposed Framework for a “Buy European” Regulation of Strategic Digital Procurement*](https://eurostack.eu/a-proposed-framework-for-buy-european-regulation/)

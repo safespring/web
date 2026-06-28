@@ -80,7 +80,7 @@ BigPicture er et Horizon2020-prosjekt der SciLifeLab og ELIXIR-SE har gått samm
 
 Safesprings compute- og lagringstjenester utgjør en nøkkelkomponent i dette prosjektet ved å muliggjøre etableringen av en skalerbar infrastruktur som møter prosjektets krav til datahåndtering og ytelse. SciLifeLab har kunnet utvikle BigPicture-prosjektet på en rask måte ved hjelp av Safespring.
 
-[Les mer om BigPicture](/read-more/bigpicture/)
+[Les mer om BigPicture](https://bigpicture.eu/)
 
 {{% /accordion %}}
 

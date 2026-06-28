@@ -37,7 +37,7 @@ Safespring Compute is built upon OpenStack which comes with an extensible API. T
 
 ## Storage API
 
-Safespring Storage support the S3 API. The S3 API is the de-facto standard for interacting with object storage services. The service is provided with the Ceph storage project, and the operations supported by the implementation can be viewed in the [Ceph S3 API source](https://github.com/ceph/ceph/blob/main/doc/radosgw/s3.rst).
+Safespring Storage support the S3 API. The S3 API is the de-facto standard for interacting with object storage services. The service is provided with the Ceph storage project, and the operations supported by the implementation can be viewed here: https://docs.ceph.com/en/latest/radosgw/s3/.
 
 ## Backup API
 
