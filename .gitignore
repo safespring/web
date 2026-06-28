@@ -4,6 +4,10 @@ Thumbs.db
 
 public/
 
+# Generated compliance build output
+data/compliance_meta.json
+static/compliance/downloads/*.pdf
+
 
 node_modules/
 

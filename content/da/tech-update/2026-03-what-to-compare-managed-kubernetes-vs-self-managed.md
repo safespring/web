@@ -15,9 +15,9 @@ language: "da"
 author: ""
 TOC: "I dette indlæg"
 sidebarlinkname: "Talos på OpenStack"
-sidebarlinkurl: "/deep-dive/2025-03-talos-linux-on-openstack/"
+sidebarlinkurl: "/deep-dive/anvendelse-af-talos-linux-og-opsætning-af-kubernetes-på-openstack/"
 sidebarlinkname2: "Cluster API på OpenStack"
-sidebarlinkurl2: "/deep-dive/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/"
+sidebarlinkurl2: "/deep-dive/udrul-kubernetes-med-talos-på-openstack-via-cluster-api/"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
