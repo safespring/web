@@ -202,7 +202,7 @@ by using the Jinja filter `community.general.json_query`.
 This require that your environment and/or `clouds.yaml`/`secure.yaml` contain the
 necessary information; the same as if you would use the [OpenStack CLI][osclidoc].
 
-[ansibleosauth]: https://docs.openstack.org/openstacksdk/latest/user/config/configuration.html
+[ansibleosauth]: https://docs.ansible.com/ansible/latest/collections/openstack/cloud/auth_module.html
 [pysdk]: https://docs.openstack.org/openstacksdk/latest/
 [oscurlexamples]: https://docs.openstack.org/keystone/latest/api_curl_examples.html
 [userdatasize]: https://docs.openstack.org/api-ref/compute/?expanded=create-server-detail#create-server
