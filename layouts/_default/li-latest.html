@@ -26,7 +26,9 @@
         </div>
       </div>
       {{ else }}{{ if eq .Section "webinar" }}
-      <img class="lazyload" loading="lazy" src="{{ .Params.card }}" alt="{{ .Title }}">
+      {{ $webinarCard := .Params.card | default "/img/event/cards/safespring_card_0.jpg" }}
+      {{ if not (hasPrefix $webinarCard "/") }}{{ $webinarCard = printf "/img/event/cards/%s" $webinarCard }}{{ end }}
+      <img class="lazyload" loading="lazy" src="{{ $webinarCard }}" alt="{{ .Title }}">
       <div class="blogg-card-tagg-container-webinar">
         <img class="blogg-card-flag" alt="Safespring language flag" src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
         <span class="blogg-card-section-webinar mb-0 font-weight-medium text-uppercase text-muted lts-1px">Webcast</span>

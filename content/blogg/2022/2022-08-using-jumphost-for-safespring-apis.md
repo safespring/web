@@ -113,7 +113,7 @@ host/port on the remote network.
 
 The downside of sshuttle is that it currently only runs on macOS, Linux, and BSD.
 There's currently no support for Windows, including WSL (although there is a
-[workaround](https://sshuttle.readthedocs.io/en/stable/windows.html)).
+[workaround](https://github.com/sshuttle/sshuttle/blob/master/docs/windows.rst)).
 
 Using sshuttle with a Safespring Compute instance hardly requires any set up.
 Just launch an instance, add your SSH-key and simply run:

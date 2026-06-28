@@ -59,7 +59,7 @@ state - or outcome.
 The idea that configuration languages should be declarative, and that
 the agent should drive/converge real state into the declared desired state, has
 become widely accepted over the last three decades and is based on ideas and
-research by [Mark Burgess during the early nineties and later][mbcfengine].
+research by Mark Burgess during the early nineties and later.
 
 ### Terraform providers
 The superpower of Terraform comes from all of its providers. The Terraform
@@ -491,7 +491,6 @@ Voila!
 [diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]:https://docs.safespring.com/new/flavors/
 [firstblog]:https://www.safespring.com/blogg/2022-01-terraform-modules/
-[mbcfengine]:https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]:https://www.terraform.io/downloads
 [sftfmodules]:https://github.com/safespring-community/terraform-modules
 [sftfexamples]:https://github.com/safespring-community/terraform-modules/tree/main/examples

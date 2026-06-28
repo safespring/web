@@ -62,7 +62,7 @@ Two major research environments and platforms built on Safespring's infrastructu
 </p>
 <p>Safesprings provides a scalable infrastructure that meets the project's large data management and high  performance requirements. SciLifeLab has been able to develop the BigPicture project quickly by using Safespring's cloud services.
 </p><br><br>
-<a class="button" href="https://bigpicture.eu">BigPicture website</a>
+<a class="button" href="/read-more/bigpicture/">BigPicture website</a>
 </div>
 </div>
 <br>

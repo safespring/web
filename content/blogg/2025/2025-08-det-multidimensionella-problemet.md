@@ -23,7 +23,7 @@ Efter alltför många sådana diskussioner och ett fortsatt förvirrat läge bö
 
 Jag är övertygad om att problemet ligger i komplexiteten i frågan vilket innebär att den som vill resonera om detta behöver vara relativt påläst och kunnig inom åtminstone sex domäner. De jag identifierat är geopolitik, IT-säkerhet, kontinuitet, juridik, rådighet och näringspolitik. Självklart finns det en del överlapp mellan dessa sex, och det går givetvis bra att addera fler.
 
-Fram till 2020 handlade diskussionen nästan enbart om OSL, GDPR och IT-säkerhet. Geopolitik, rådighet och kontinuitet blev allt vanligare efter Rysslands fullskaliga invasion av Ukraina och Sveriges NATO-inträde. De näringspolitiska konsekvenserna lyser fortfarande med sin frånvaro även om industri-initiativet [EuroStack](https://eurostack.eu/) har satt frågan på dagordningen under 2025.
+Fram till 2020 handlade diskussionen nästan enbart om OSL, GDPR och IT-säkerhet. Geopolitik, rådighet och kontinuitet blev allt vanligare efter Rysslands fullskaliga invasion av Ukraina och Sveriges NATO-inträde. De näringspolitiska konsekvenserna lyser fortfarande med sin frånvaro även om industri-initiativet EuroStack har satt frågan på dagordningen under 2025.
 
 En påverkande faktor är också att det legat i de amerikanska leverantörernas intresse att olika frågor är oklara, på så sätt främjas att varje organisation behöver göra sin egen utredning. Klassisk söndra-och-härska-teknik.
 
@@ -57,7 +57,6 @@ Regeringen skriver i Nationell strategi för cybersäkerhet 2025-2029 att ”det
 ## Avslutning
 
 Nästa gång du stöter på en diskussion om den så kallade ”molnfrågan”, börja då med att försöka förklara vilka domäner som de olika parterna inkluderar i sina resonemang. På detta sätt kanske vi gemensamt kan lyfta diskussionen till samhällsnivå för att Sverige snabbast möjligt ska kunna erhålla en rimlig grad av digital suveränitet samt att diskussionerna blir mer meningsfulla och intellektuellt hederliga.
-
 
 
 

@@ -38,7 +38,7 @@ Terraform has become the de-facto industry standard for «Infrastructure As Code
 
 Terraform takes plain text files with «HCL - Hashicorp Configuration Language» as input and provides servers and storage as output. HCL is a declarative language, i.e., it does not specify any actions to be taken but rather a desired state - or outcome.
 
-The idea that configuration languages should be declarative, and that convergence of real state into the declared desired state, has become widely accepted over the last three decades and is based on ideas and research by [Mark Burgess during the early nineties and later][mbcfengine].
+The idea that configuration languages should be declarative, and that convergence of real state into the declared desired state, has become widely accepted over the last three decades and is based on ideas and research by Mark Burgess during the early nineties and later.
 
 ### Terraform providers
 The superpower of Terraform comes from all of it's providers. The Terraform providers are binary extensions of Terraform that, as the name indicates, «provide» resources of different kinds using the APIs of the cloud provider reflected by the extension's name.
@@ -111,6 +111,5 @@ Also, we have pointed to the modules' source code, which you can examine to see 
 
 The following post will expand further on module usage to create several sets/groups of instances and security groups to orchestrate and connect environments. Also, it will demonstrate how meta-data roles from Terraform config can be used as Ansible inventory groups to configure the operating systems according to particular roles that instances should fulfill.
 
-[mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]: https://www.terraform.io/downloads
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
