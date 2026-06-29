@@ -21,7 +21,7 @@ Du är nu en del av en växande gemenskap som får exklusiva uppdateringar, insi
 
 ### Safspring på ditt språk
 
-- [Besök den svenska sidan]({{% ref path="/" lang="sv" %}})
-- [Besök den norska sidan]({{% ref path="/" lang="nb" %}})
-- [Besök den danska sidan]({{% ref path="/" lang="da" %}})
-- [Besök den engelska sidan]({{% ref path="/" lang="en" %}})
+- [Besök den svenska sidan](https://beta.safespring.se/)
+- [Besök den norska sidan](https://beta.safespring.no/)
+- [Besök den danska sidan](https://beta.safespring.dk/)
+- [Besök den engelska sidan](https://beta.safespring.eu/)
