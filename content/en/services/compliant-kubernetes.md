@@ -1,10 +1,10 @@
 ---
-title: "Maximise Your Productivity with Welkin"
+title: "Elastisys Welkin on Safespring Compute"
 language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Experience the power of Welkin managed by Elastisys on Safespring's infrastructure."
+intro: "Elastisys builds and manages Welkin on Safespring Compute for customers that need a secure Kubernetes platform on European infrastructure."
 background: "safespring-kubernetes-background.svg"
 card: "safespring_background_medtech.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -13,7 +13,7 @@ sidebarlinkurl: "/webinar/kubernetes-15-principles/"
 sidebarlinkname2: "Watch demo"
 sidebarlinkurl2: "/demo/compute/"
 sidebarimage: "saas_elastisys.svg"
-sidebartext: "Elastisys Welkin makes it easy to create clusters with high regulatory compliance, while we ensure your infrastructure is optimised for your specific needs."
+sidebartext: "Elastisys builds Welkin on Safespring Compute, giving customers a secure Kubernetes platform on Nordic infrastructure."
 aliases:
   - /en/services/compliant-kubernetes/
 ---
@@ -28,12 +28,12 @@ aliases:
 {{< /icon-block-container >}}
 
 {{< ingress >}}
-Ready to switch to Welkin? Let Elastisys experts manage the operations while you maintain full control and security on Safespring's robust infrastructure.
+Elastisys builds and operates Welkin on Safespring Compute. Customers get a secure Kubernetes platform from Elastisys, backed by Safespring's Nordic IaaS infrastructure.
 {{< /ingress >}}
 
-With Elastisys at the helm, we can offer Welkin as a fully managed service on Safespring's infrastructure.
+Welkin is Elastisys' product. Safespring provides the Compute infrastructure, data-center location, and open-standard cloud foundation that Elastisys builds on for customers with strict security and compliance requirements.
 
-Our partner, Elastisys, is not only certified Kubernetes service providers but also creators of the open Kubernetes distribution Welkin. They are also prominent members of the Cloud Native community. We offer not only managed services but also customised training and consultations.
+Elastisys is a certified Kubernetes service provider and the creator of the open Kubernetes distribution Welkin. They are also prominent members of the Cloud Native community.
 {{< distance >}}
 
 {{% horisontal-card image="/img/event/cards/safespring-gabriel-lars.jpg" link="/webinar/kubernetes-15-principles/" linktext="Watch the video series" cardtitle="Seven Episodes on Kubernetes" text="In this Swedish web series, we will explore how to design and operate scalable applications on Kubernetes." %}}

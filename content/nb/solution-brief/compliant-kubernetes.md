@@ -47,7 +47,7 @@ I tillegg til å overvåke klyngene 24/7 for både helsemålinger og mistenkelig
 
 I bunn og grunn er utfordringen hvordan man kan øke programvaresmidigheten gjennom containerisering, samtidig som man garanterer sikkerhet og etterlevelse for virksomheten.
 
-Elastisys Welkin er en Cloud Native Computing Foundation (CNCF)-sertifisert Kubernetes-distribusjon som leveres forhåndspakket med sikkerhetsherdede konfigurasjoner og åpne kildekodekomponenter i tråd med beste praksis. Safespring leverer kvartalsvise utgivelser av Welkin – tester og herder komponentene for å sikre at de oppfyller de strenge sikkerhets- og regulatoriske kravene kundene våre har til sine containerplattformer.
+Elastisys Welkin er en Cloud Native Computing Foundation (CNCF)-sertifisert Kubernetes-distribusjon som leveres forhåndspakket med sikkerhetsherdede konfigurasjoner og åpne kildekodekomponenter i tråd med beste praksis. Elastisys leverer Welkin og drifter Kubernetes-plattformen, mens Safespring leverer Compute-infrastrukturen den kjører på.
 
 {{% horisontal-card image="/img/card/safespring-compute-icon.svg" linkref="/services/compute.md" linktext="Les mer" cardtitle="Safespring Compute er kjernen i Welkin" text="Vår infrastrukturtjeneste er lokalisert i sikre datasentre i EU og påvirkes ikke av utenlandske lover som CLOUD Act eller FISA 702." %}}
 
@@ -55,4 +55,4 @@ Welkin gjør det mulig for organisasjoner å nyte godt av alle fordelene ved Kub
 
 På grunn av Cloud Act og andre krefter som gir utenlandske aktører tilgang til brukerdata, migrerer europeiske selskaper i økende grad arbeidslaster til europeiske leverandører.
 
-Welkin er tilgjengelig som en administrert tjeneste i partnerskap med Safespring, slik at du får alle fordelene ved en moderne containerplattform som kjører i nordiske datasentre uten at du trenger å bry deg om drift.
+Welkin er tilgjengelig fra Elastisys på Safespring Compute, slik at du får alle fordelene ved en moderne containerplattform som kjører i nordiske datasentre uten at du trenger å bry deg om drift.

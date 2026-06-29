@@ -43,7 +43,7 @@ In addition to monitoring clusters 24/7 for both health metrics and suspicious e
 
 In essence, the challenge is to increase software agility through containerization while guaranteeing your organization’s security and compliance.
 
-Safespring Compliant Kubernetes (CK8s) is a Cloud Native Computing Foundation (CNCF)–certified Kubernetes distribution that comes prepackaged with security-hardened configurations and open-source components aligned with best practices. Safespring provides quarterly releases of Compliant Kubernetes—testing and hardening the components to ensure they meet the strict security and regulatory requirements our customers have for their container platforms.
+Elastisys Welkin is a Cloud Native Computing Foundation (CNCF)–certified Kubernetes distribution that comes prepackaged with security-hardened configurations and open-source components aligned with best practices. Elastisys provides the Kubernetes platform, while Safespring provides the Compute infrastructure it runs on.
 
 {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" linkref="/services/compute.md" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is hosted in secure data centers within the EU and isn’t affected by foreign laws such as the CLOUD Act or FISA 702." %}}
 
@@ -51,4 +51,4 @@ Compliant Kubernetes lets organizations realize the full benefits of Kubernetes 
 
 Because of the CLOUD Act and other mechanisms that can allow foreign entities access to user data, European companies are increasingly migrating their workloads to European providers.
 
-Compliant Kubernetes is available as a managed service in partnership with Safespring, giving you all the benefits of a modern container platform running in Nordic data centers—without the operational overhead.
+Welkin is available from Elastisys on Safespring Compute, giving you all the benefits of a modern container platform running in Nordic data centers without the operational overhead.

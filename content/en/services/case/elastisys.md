@@ -1,10 +1,11 @@
 ---
-title: "With Safespring, Elastisys’ customers can focus on developing their digital services"
+ai: true
+title: "Elastisys builds Welkin on Safespring Compute"
 language: "en"
 date: 2023-09-18
 draft: false
 section: "Use case"
-intro: "Elastisys, in collaboration with Safespring, offers compliance-adapted Kubernetes solutions. COO Rob McCuaig highlights the importance of partnership and data processing within the EU."
+intro: "Welkin is Elastisys' Kubernetes platform for environments where security, traceability, and compliance need to be reviewed. On Safespring Compute, it runs on Nordic IaaS."
 background: "/safespring-elastisys.svg"
 card: ""
 socialmedia: ""
@@ -13,76 +14,81 @@ sidebarlinkurl: ""
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 sidebarsection: ""
-sidebarimage: "elastisys-rob.png"
-sidebartext: "Rob McCuaig shares insights about Elastisys' collaboration with Safespring and the importance of data processing within the EU."
+sidebarimage: "saas_elastisys.svg"
+sidebartext: "Safespring provides the IaaS layer: compute, storage, network, and data center location. Elastisys runs the Welkin layer on top and is responsible for the customers' Kubernetes platform."
 saas: ""
 sidebarwhitepaper: ""
+service: "Safespring Compute"
 aliases:
   - /en/services/case/elastisys/
 ---
 
 {{< ingress >}}
-What makes the collaboration between Elastisys and Safespring so powerful? Rob McCuaig, COO at Elastisys, provides insight into a partnership focused on efficiency, mutual trust, and a belief in storing data exclusively within the EU.
+This page shows how responsibilities are divided when Welkin runs on Safespring Compute. The customer builds its service on Elastisys' Kubernetes platform, while Safespring is responsible for the underlying infrastructure.
 {{< /ingress >}}
 
-By offering Welkin, a compliance-adapted Kubernetes solution on Safespring’s infrastructure, Elastisys creates customer experiences where users never have to worry about information security.
+In this setup, Safespring provides the Compute infrastructure, data center location, storage, and network. Elastisys runs the Kubernetes platform and customer-facing services. This makes the supplier chain possible to describe with separate responsibilities for each party.
 
-Rob McCuaig is the COO of the Swedish Elastisys and here, he talks more about the collaboration with Safespring.
+![Responsibility split between customer, Elastisys and Safespring](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-## With Welkin, the customer can focus on their own development
+_The image shows the responsibility split. Safespring provides the infrastructure, Elastisys runs the Welkin layer, and the customer is responsible for the service and team._
 
-Elastisys delivers Kubernetes solutions to customers who need to comply with legal requirements such as GDPR. Their platform, Welkin, enables efficient operations where strict compliance and security requirements prevail. This allows their customers to accelerate the development of new applications while meeting the requirements set by laws such as GDPR and the Patient Data Act.
+## What is Welkin?
 
-Elastisys has customers spread across Europe, and therefore, they collaborate with various infrastructure providers, but for Swedish customers, they recommend local providers. Rob explains why:
+Welkin is a Kubernetes platform from Elastisys for organizations that want to run containerized applications in environments where security, traceability, and compliance need to be included from the start. The platform is built on Kubernetes and open source components and includes operations, security hardening, monitoring, and lifecycle management.
 
-{{< quote "Rob McCuaig, COO at Elastisys" >}}
+Customers can build and deploy applications without owning the full Kubernetes stack themselves. Welkin is used where questions about GDPR, patient data, audits, access control, and supplier risk need to be answered.
 
-- We saw an early good match between Elastisys and Safespring. We sell Welkin, and Safespring has the infrastructure that allows our many Swedish customers to meet security requirements.
-  {{< /quote >}}
+Welkin is CNCF-certified as a Kubernetes distribution and includes controls for security in containerized environments. Examples include intrusion detection with Falco, policy control with Open Policy Agent/Gatekeeper, automatic certificate management with cert-manager, a container registry with security scanning, and support for CI/CD flows such as ArgoCD.
 
-Safespring's platform is completely free from third-party transfers and helps Elastisys - and indirectly their customers - to comply with GDPR. Elastisys uses tools such as Falco and Gatekeeper for the security of Kubernetes clusters and Argo for customers to deploy new versions of their applications quickly and easily, running smoothly on Safespring.
+## How Elastisys uses Safespring
 
-![Elastisys on Safespring’s infrastructure](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
+Safespring Compute gives Elastisys the infrastructure Welkin needs for Swedish and Nordic customers. This includes virtual servers, storage, networking, data center location, and access to a cloud platform built on open standards.
 
-## Close collaboration creates a good customer experience
+Elastisys can focus its work on the Kubernetes platform, security controls, operating model, and customers' application environments. Safespring provides the local infrastructure base and can supply material for questions that often arise in procurements, security reviews, and technical assessments.
 
-Rob states that the collaboration between Elastisys and Safespring is characterized by transparency, a prerequisite in a fast-moving industry where questions, concerns, and regulatory changes constantly arise.
+For the end customer, the supplier chain is easier to describe. Applications run on a Kubernetes platform from Elastisys, on Safespring's Nordic IaaS infrastructure. The customer can see where data is processed, which suppliers are involved, and which part of operations each party is responsible for.
 
-{{< quote "Rob McCuaig, COO at Elastisys" >}}
+## Why infrastructure matters
 
-- For our services to work optimally for our customers, close communication with Safespring is crucial. We meet several times a year, have quick communication channels for both development and business issues, and value each other’s feedback.
-  {{< /quote >}}
+For companies that build their own platforms, SaaS services, or services for regulated industries, the infrastructure needs to be describable to customers, legal teams, security teams, and procurement.
 
-### Helping to solve the customer’s challenges
+When the product handles sensitive data, questions about data location, third-country risks, support paths, access, agreements, and subcontractors often arise before contract or production start. A local infrastructure base does not reduce the need for the company's own security work, but it provides concrete information to use when those questions need to be answered.
 
-Elastisys is usually the primary contact in the joint projects, but when their end customer needs additional information about the infrastructure security policy, Safespring, accustomed to working with the public sector, is quick to provide local support through direct chat with the developers. Rob elaborates:
+For Elastisys, Safespring is a way to offer Welkin on infrastructure that suits customers who want European operations, open technical interfaces, and a Nordic provider with experience from regulated environments.
 
-- Our customers don’t have ongoing contact with Safespring, and that is a good sign. But when situations arise where the customer has specific questions, such as during a public procurement, they quickly get a good response from Safespring. The result is that the customer doesn’t have to delve into long supplier chains but quickly finds out what they need.
+{{% note "When this model is relevant" %}}
 
-{{< distance >}}
+This setup is relevant for companies that:
 
-{{% note "Rob’s 3 tips for choosing a cloud provider" %}}
+- build their own platform or SaaS service on cloud infrastructure
+- sell to customers who review data location, jurisdiction, and subcontractors
+- need Kubernetes and open source components without tying the product to a hyperscaler ecosystem
+- need to answer questions from public sector, medtech, healthtech, finance, or other regulated environments
+- need an infrastructure partner that can take part in technical and security-related questions when the deal requires it
 
-### 1. Have the same values
-
-When choosing a provider, select a partner who has the same mentality as your company. If both of you care about, for example, European solutions, you have good prerequisites to reach a consensus on new issues that arise.
-
-### 2. Transparency - a prerequisite
-
-Just because you have common values, it doesn’t mean that the collaboration works well in practice; mutual openness is also required. So choose a partner who is as interested in your business as you are in theirs.
-
-### 3. Proximity wins
-
-Choose a partner who values working closely with you. Your senior developers should easily contact the provider's - this can lead to good cooperation, easy communication, and value-creating deliveries.
 {{% /note %}}
 
-## Are you looking for a Swedish cloud storage partner who values compliance within Sweden and the EU?
+## What Safespring contributes
 
-Meeting high demands for operational reliability and availability should be easy. That's why Safespring has made it easy to compile common questions about IT security and compliance - and how to meet them. And if you want recommendations specific to your business, get in touch!
+Safespring is not a replacement for Elastisys' product. Our contribution is the infrastructure Welkin runs on. This includes Safespring Compute, storage, networking, Nordic data center location, and a way of working where technical questions can be handled close to the teams that build the service.
+
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-layer-group" text="An infrastructure base that can be explained" description="Compute, storage, network, and data center location are clearly separated from the Kubernetes platform. This makes the responsibility split easier to describe to customers, auditors, and security teams." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-location-dot" text="Nordic operations for sensitive services" description="Safespring provides a local IaaS foundation for customers who need control over where data is processed, which jurisdiction applies, and which suppliers are part of the chain." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-code-branch" text="Kubernetes and open source components" description="Welkin is built on Kubernetes and open source components on top of Safespring Compute. The service does not need to be built on provider-specific cloud services." >}}
+
+This is relevant for other platform companies as well. If you build a platform for customers with documentation and review requirements, the infrastructure layer needs to be describable as part of your offering.
+
+## Are you building a service like Welkin?
+
+If you develop a platform, SaaS service, or product for regulated customers, the infrastructure needs to be reviewable and possible to describe. Safespring Compute can be used when you need to combine cloud infrastructure with data location in the Nordics, open standards, and a Nordic provider.
+
+Talk to us about your target state, customer requirements, and which part of the infrastructure you want to own yourselves. We can then go through whether Safespring Compute fits your product, and how the responsibilities between you, Safespring, and any platform partners should be described.
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
-I am Safespring's CCO and will be happy to help you get started.
+Contact me if you want to discuss infrastructure for your service.
 
-{{< inline "Call" >}} +46 (0)76 629 25 02
-fredric.wallsten@safespring.com
+{{< inline "Call" >}} [+46 76-629 25 02](tel:+46766292502)
+
+{{< inline "Email" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}

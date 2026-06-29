@@ -43,7 +43,7 @@ Förutom att övervaka klustren dygnet runt, både hälsomått och misstänkt ex
 
 I grunden handlar utmaningen om hur man ökar mjukvarans agilitet genom containerisering samtidigt som säkerhet och regelefterlevnad garanteras för verksamheten.
 
-Safespring Compliant Kubernetes (CK8s) är en Kubernetes‑distribution certifierad av Cloud Native Computing Foundation (CNCF) som levereras förpackad med säkerhetshärdade konfigurationer och komponenter med öppen källkod enligt bästa praxis. Safespring levererar kvartalsvisa releaser av Compliant Kubernetes – testar och härdar komponenterna för att säkerställa att de uppfyller de strikta säkerhets‑ och regulatoriska krav som våra kunder ställer på sina containerplattformar.
+Elastisys Welkin är en Kubernetes‑distribution certifierad av Cloud Native Computing Foundation (CNCF) som levereras förpackad med säkerhetshärdade konfigurationer och komponenter med öppen källkod enligt bästa praxis. Elastisys tillhandahåller Kubernetes-plattformen, medan Safespring levererar Compute-infrastrukturen den körs på.
 
 {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" linkref="/services/compute.md" linktext="Läs mer" cardtitle="Safespring Compute är kärnan i Compliant Kubernetes" text="Vår infrastrukturtjänst finns i säkra datacenter inom EU och påverkas inte av utländska lagar som CLOUD Act eller FISA 702." %}}
 
@@ -51,4 +51,4 @@ Compliant Kubernetes gör det möjligt för organisationer att dra full nytta av
 
 På grund av Cloud Act och andra mekanismer som ger utländska aktörer åtkomst till användardata migrerar europeiska företag i allt högre grad sina arbetslaster till europeiska leverantörer.
 
-Compliant Kubernetes finns som en hanterad tjänst i partnerskap med Safespring, vilket ger dig alla fördelar med en modern containerplattform som körs i nordiska datacenter utan att du behöver bekymra dig om driften.
+Welkin finns från Elastisys på Safespring Compute, vilket ger dig alla fördelar med en modern containerplattform som körs i nordiska datacenter utan att du behöver bekymra dig om driften.

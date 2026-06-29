@@ -2137,7 +2137,7 @@ a.text-button {
 .sidebar-services a {
   display: inline-flex;
   align-items: center;
-  min-height: 44px;
+  min-height: 26px;
   color: var(--clear-blue-color);
 }
 
@@ -2148,7 +2148,18 @@ a.text-button {
 }
 
 .sidebar-services ul {
+  margin: 10px 0 0;
   padding-left: 0;
+}
+
+.main-default-single .sidebar-services ul li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+}
+
+.main-default-single .sidebar-services ul li + li {
+  margin-top: 8px;
 }
 
 .sidebar-services ul li::before {
@@ -2565,27 +2576,25 @@ a.text-button {
   .safespring-footer-menu li {
     font: 20px/45px var(--mon-font);
   }
-
-  .safespring-footer-menu li a {
-    align-items: center;
-    background-color: #d7e3eb;
-    box-sizing: border-box;
-    display: inline-flex;
-    min-height: 44px;
-    padding: 10px 15px;
-    border-radius: 10px;
-  }
 }
 
 .safespring-footer-menu li a {
   align-items: center;
   box-sizing: border-box;
-  font: 300 16px/23px var(--mon-font);
+  font: 300 16px/1.35 var(--mon-font);
   color: var(--main-color) !important;
   display: inline-flex;
-  min-height: 44px;
-  padding: 10px 6px;
+  padding: 3px 0;
   transition: 0.1s;
+}
+
+@media (max-width: 600px) {
+  .safespring-footer-menu li a {
+    background-color: #d7e3eb;
+    min-height: 44px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -6139,6 +6148,23 @@ width:100vw;*/
   width: 220px;
 }
 
+.safespring-horisontal-card-content {
+  color: var(--alt-color);
+  font: var(--hind-light-weight) 1rem/1.5 var(--mon-font);
+}
+
+.safespring-horisontal-card-content h3 {
+  color: var(--clear-blue-color);
+  font: var(--hind-light-weight) 1.25rem/1.2 var(--hind-font);
+  margin: 0 0 0.5rem;
+}
+
+.safespring-horisontal-card-content p {
+  color: var(--alt-color);
+  font: var(--hind-light-weight) 1rem/1.5 var(--mon-font);
+  margin: 0;
+}
+
 .safespring-horisontal-card-content li p {
   display: inline;
   margin: 0;
@@ -6545,6 +6571,16 @@ margin-bottom:2rem;
   background-color: #ffffff;
   border-radius: 15px;
   max-width: 260px;
+}
+
+.service-card {
+  border-bottom: 5px solid white;
+  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+}
+
+.service-card:hover {
+  border-bottom-color: var(--card-color) !important;
+  transform: translateY(-5px);
 }
 
 .cardtitle {
@@ -7417,6 +7453,11 @@ details[open] summary {
   margin-top: 10px;
   padding-right: 20px;
 }
+
+.icon-block-horisontal + .accordion-box {
+  margin-top: 24px;
+}
+
 .icon-block-color {
   font-size: 35px;
   display: flex;

@@ -17,6 +17,16 @@
       <ul>
         <li>{{ T "menu.platform" }}</li>
         <li>
+          <a href="{{ relref . "services/containerplatform" }}"
+            >{{ T "menu.platform_kubernetes" }}</a
+          >
+        </li>
+        <li>
+          <a href="{{ relref . "services/machine-learning" }}"
+            >{{ T "menu.platform_ai" }}</a
+          >
+        </li>
+        <li>
           <a href="{{ relref . "services/compute" }}"
             >{{ T "menu.platform_compute" }}</a
           >
@@ -27,18 +37,8 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "services/containerplatform" }}"
-            >{{ T "menu.platform_container" }}</a
-          >
-        </li>
-        <li>
           <a href="{{ relref . "services/backup" }}"
             >{{ T "menu.platform_backup" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "services/machine-learning" }}"
-            >{{ T "menu.platform_ai" }}</a
           >
         </li>
         <li>
@@ -50,38 +50,28 @@
     </div>
     <div class="safespring-footer-menu">
       <ul>
-        <li>{{ T "menu.industries" }}</li>
+        <li>{{ T "menu.solutions" }}</li>
         <li>
           <a href="{{ relref . "industries/research-and-education" }}"
-            >{{ T "menu.industries_education" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "industries/eosc" }}"
-            >{{ T "menu.industries_science" }}</a
+            >{{ T "menu.solutions_research_education" }}</a
           >
         </li>
         <li>
           <a href="{{ relref . "industries/government" }}"
-            >{{ T "menu.industries_government" }}</a
+            >{{ T "menu.solutions_public_sector" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "saas" }}">{{ T "menu.industries_saas" }}</a>
+          <a href="{{ relref . "saas" }}">{{ T "menu.solutions_saas" }}</a>
         </li>
         <li>
-          <a href="{{ relref . "saas/application-developers" }}"
-            >{{ T "menu.industries_application_developers" }}</a
+          <a href="{{ relref . "industries/it-leverantorer" }}"
+            >{{ T "menu.solutions_it_partners" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "services/compliant-kubernetes" }}"
-            >{{ T "menu.industries_paas" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "saas/medtech" }}"
-            >{{ T "menu.industries_medtech" }}</a
+          <a href="{{ relref . "industries/eosc" }}"
+            >{{ T "menu.solutions_open_science" }}</a
           >
         </li>
       </ul>
@@ -90,9 +80,20 @@
       <ul>
         <li>{{ T "knowledgehub.knowledgehub" }}</li>
         <li>
+          <a href="{{ relref . "tech-update" }}"
+            >{{ T "knowledgehub.tech_update" }}</a
+          >
+        </li>
+        <li>
           <a href="{{ relref . "services/case" }}"
             >{{ T "knowledgehub.use_case" }}</a
           >
+        </li>
+        <li>
+          <a href="{{ relref . "webinar" }}">{{ T "knowledgehub.webcast" }}</a>
+        </li>
+        <li>
+          <a href="{{ relref . "blog" }}">{{ T "knowledgehub.blog_footer" }}</a>
         </li>
         <li>
           <a href="{{ relref . "solution-brief" }}"
@@ -100,23 +101,12 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "webinar" }}">{{ T "knowledgehub.webcast" }}</a>
-        </li>
-        <li>
-          <a href="{{ relref . "blog" }}">{{ T "knowledgehub.blog" }}</a>
-        </li>
-        <li>
           <a href="{{ relref . "whitepaper" }}"
             >{{ T "knowledgehub.whitepaper" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "tech-update" }}"
-            >{{ T "knowledgehub.tech_update" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "faq" }}">{{ T "knowledgehub.faq" }}</a>
+          <a href="{{ relref . "faq" }}">{{ T "knowledgehub.faq_footer" }}</a>
         </li>
       </ul>
     </div>

@@ -1,10 +1,11 @@
 ---
-title: "Med Safespring kan Elastisys' kunder fokusere på å utvikle sine digitale tjenester"
+ai: true
+title: "Elastisys bygger Welkin på Safespring Compute"
 language: "nb"
 date: 2023-09-18
 draft: false
 section: "Brukercase"
-intro: "Elastisys, i samarbeid med Safespring, tilbyr compliance-tilpassede Kubernetes-løsninger. COO Rob McCuaig fremhever viktigheten av partnerskap og datalagring innenfor EU."
+intro: "Welkin er Elastisys' Kubernetes-plattform for miljøer der sikkerhet, sporbarhet og etterlevelse må kunne vurderes. På Safespring Compute kjører den på nordisk IaaS."
 background: "/safespring-elastisys.svg"
 card: ""
 socialmedia: ""
@@ -13,8 +14,8 @@ sidebarlinkurl: ""
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 sidebarsection: ""
-sidebarimage: "elastisys-rob.png"
-sidebartext: "Rob McCuaig deler innsikt om Elastisys' samarbeid med Safespring og viktigheten av datalagring innenfor EU."
+sidebarimage: "saas_elastisys.svg"
+sidebartext: "Safespring leverer IaaS-laget: compute, lagring, nettverk og datasenterplassering. Elastisys drifter Welkin-laget oppå og har ansvar for kundenes Kubernetes-plattform."
 saas: ""
 sidebarwhitepaper: ""
 service: "Safespring Compute"
@@ -23,65 +24,71 @@ aliases:
 ---
 
 {{< ingress >}}
-Hva gjør samarbeidet mellom Elastisys og Safespring så kraftfullt? Rob McCuaig, COO hos Elastisys, gir et innblikk i et partnerskap hvor fokus er på effektivitet, gjensidig tillit og en overbevisning om å kun lagre data innenfor EU.
+Denne siden viser hvordan ansvaret fordeles når Welkin kjører på Safespring Compute. Kunden bygger sin tjeneste på Elastisys' Kubernetes-plattform, mens Safespring har ansvar for den underliggende infrastrukturen.
 {{< /ingress >}}
 
-Ved å tilby Welkin, en compliance-tilpassede Kubernetes-løsning på Safesprings infrastruktur, skaper Elastisys kundeopplevelser hvor brukeren aldri trenger å bekymre seg for informasjonssikkerhet.
+I løsningen leverer Safespring Compute-infrastrukturen, datasenterplasseringen, lagringen og nettverket. Elastisys drifter Kubernetes-plattformen og kundevendte tjenester. Det gjør at leverandørkjeden kan beskrives med avgrenset ansvar for hver part.
 
-Rob McCuaig er COO hos Elastisys og her forteller han mer om samarbeidet med Safespring.
+![Ansvarsfordeling mellom kunde, Elastisys og Safespring](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
-## Med Welkin kan kunden fokusere på egen utvikling
+_Bildet viser ansvarsfordelingen. Safespring leverer infrastrukturen, Elastisys drifter Welkin-laget og kunden har ansvar for tjeneste og team._
 
-Elastisys leverer Kubernetes-løsninger til kunder som må oppfylle lovkrav som GDPR. Deres plattform, Welkin, muliggjør effektiv drift der strenge etterlevelses- og sikkerhetskrav er til stede. Dette betyr at deres kunder kan akselerere utviklingen av nye applikasjoner samtidig som de oppfyller kravene som for eksempel GDPR og pasientdataloven stiller.
+## Hva er Welkin?
 
-Elastisys har kunder over hele Europa og derfor samarbeider de med ulike infrastrukturleverandører, men for norske og svenske kunder anbefaler de Safespring. Rob forklarer hvorfor:
+Welkin er en Kubernetes-plattform fra Elastisys for organisasjoner som vil kjøre containeriserte applikasjoner i miljøer der sikkerhet, sporbarhet og etterlevelse må være med fra starten. Plattformen bygger på Kubernetes og open source-komponenter og inkluderer drift, sikkerhetsherding, monitorering og livssyklushåndtering.
 
-{{< quote "Rob McCuaig, COO hos Elastisys" >}}
-– Vi så tidlig en god match mellom Elastisys og Safespring. Vi selger Welkin, og Safespring har infrastrukturen som gjør det mulig for våre mange norske og svenske kunder å oppfylle sikkerhetskravene.
-{{< /quote >}}
+For kundene betyr det at de kan bygge og drifte applikasjoner uten selv å måtte eie hele Kubernetes-stacken. Welkin brukes i sammenhenger der spørsmål om GDPR, pasientdata, revisjoner, tilgangskontroll og leverandørrisiko må kunne besvares.
 
-Safesprings plattform er helt fri for tredjelands overføringer og hjelper Elastisys – og indirekte deres kunder – med å følge GDPR. Elastisys bruker verktøy som Falco og Gatekeeper for sikkerhetsbeskyttelse av Kubernetes-klustere, samt Argo for at kundene raskt og enkelt kan implementere nye versjoner av sine applikasjoner, noe som kjører smidig på Safespring.
+Welkin er CNCF-sertifisert som Kubernetes-distribusjon og inneholder kontroller for sikkerhet i containeriserte miljøer. Eksempler er inntrengingsdeteksjon med Falco, policykontroll med Open Policy Agent/Gatekeeper, automatisk sertifikathåndtering med cert-manager, containerregister med sikkerhetsskanning og støtte for CI/CD-flyter som ArgoCD.
 
-![Elastisys på Safesprings infrastruktur](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
+## Hvordan Elastisys bruker Safespring
 
-## Tett samarbeid skaper god kundeopplevelse
+Safespring Compute gir Elastisys infrastrukturen Welkin trenger for svenske og nordiske kunder. Det handler om virtuelle servere, lagring, nettverk, datasenterplassering og tilgang til en skyplattform som bygger på åpne standarder.
 
-Rob forteller at samarbeidet mellom Elastisys og Safespring preges av transparens, noe som er en forutsetning i en raskt bevegelig bransje der spørsmål, bekymringer og reguleringsendringer stadig oppstår.
+Elastisys kan konsentrere arbeidet om Kubernetes-plattformen, sikkerhetskontrollene, driftsmodellen og kundenes applikasjonsmiljøer. Safespring står for den lokale infrastrukturbasen og kan levere underlag i spørsmål som ofte kommer opp i anbud, sikkerhetsgjennomganger og tekniske vurderinger.
 
-{{< quote "Rob McCuaig, COO hos Elastisys" >}}
-– For at våre tjenester skal fungere optimalt for våre kunder er tett kommunikasjon med Safespring avgjørende. Vi møtes flere ganger i året, har raske kommunikasjonskanaler for både utviklings- og forretningsrelaterte spørsmål og verdsetter hverandres tilbakemeldinger.
-{{< /quote >}}
+For sluttkunden blir leverandørkjeden enklere å beskrive. Applikasjonene kjører på en Kubernetes-plattform fra Elastisys, på Safesprings nordiske IaaS-infrastruktur. Kunden kan se hvor data behandles, hvilke leverandører som inngår og hvilken del av driften hver part har ansvar for.
 
-### Samarbeider for å løse kundens utfordringer
+## Hvorfor infrastrukturen spiller en rolle
 
-Vanligvis er Elastisys den primære kontaktpersonen i de felles prosjektene, men når deres sluttbruker for eksempel trenger tilleggsinformasjon om infrastrukturens sikkerhetspolicy, er Safespring rask til å bistå med lokal støtte gjennom direktechat med utviklerne. Rob utdyper:
+For selskaper som bygger egne plattformer, SaaS-tjenester eller tjenester for regulerte bransjer, må infrastrukturen kunne beskrives for kunder, jurister, sikkerhetsteam og innkjøpere.
 
-– Våre kunder har ikke noen løpende kontakt med Safespring, og det er et godt tegn. Men når det dukker opp situasjoner der kunden har spesifikke spørsmål, for eksempel ved en offentlig anbudsrunde, får de raskt et godt svar fra Safespring. Resultatet er at kunden ikke trenger å grave dypt inn i lange leverandørkjeder, men raskt får vite det de trenger.
+Når produktet håndterer sensitive data, kommer spørsmål om dataplassering, tredjelandsrisiko, supportveier, tilgang, avtaler og underleverandører ofte opp før avtale eller produksjonsstart. En lokal infrastrukturbas reduserer ikke behovet for eget sikkerhetsarbeid, men den gir konkrete opplysninger som kan brukes når slike spørsmål skal besvares.
 
-{{< distance >}}
+For Elastisys er Safespring en måte å tilby Welkin på en infrastruktur som passer kunder som vil ha europeisk drift, åpne tekniske grensesnitt og en nordisk leverandør med erfaring fra regulerte miljøer.
 
-{{% note "Robs 3 tips til deg som skal velge skytjenesteleverandør" %}}
+{{% note "Når denne modellen er relevant" %}}
 
-### 1. Ha de samme verdiene
+Dette oppsettet er relevant for selskaper som:
 
-Når du skal velge en leverandør, velg en partner som har samme grunnholdning som din bedrift. Hvis dere begge bryr dere om for eksempel europeiske løsninger, har dere gode forutsetninger for å komme til enighet i nye spørsmål som dukker opp.
+- bygger en egen plattform eller SaaS-tjeneste på skyinfrastruktur
+- selger til kunder som vurderer dataplassering, jurisdiksjon og underleverandører
+- trenger Kubernetes og open source-komponenter uten å låse produktet til et hyperscaler-økosystem
+- må svare på spørsmål fra offentlig sektor, medtech, healthtech, finans eller andre regulerte miljøer
+- trenger en infrastrukturpartner som kan delta i tekniske og sikkerhetsrelaterte spørsmål når salgsprosessen krever det
 
-### 2. Transparens – en forutsetning
-
-Bare fordi man har felles verdier betyr det ikke at samarbeidet fungerer bra i praksis, så det krever også gjensidig åpenhet. Så velg en partner som er like interessert i din virksomhet som du er i deres.
-
-### 3. Nærhet vinner
-
-Velg en partner som verdsetter at dere jobber tett sammen. Dine seniorutviklere skal enkelt kunne kontakte leverandørens – da kan du oppnå godt samarbeid, enkel kommunikasjon og verdiskapende leveranser.
 {{% /note %}}
 
-## Leter du etter en norsk partner for skylagring som verdsetter etterlevelse innenfor Norge og EU?
+## Hva Safespring bidrar med
 
-Det skal være enkelt å møte høye krav til driftssikkerhet og tilgjengelighet. Derfor har Safespring sørget for å enkelt sammenstille vanlige spørsmål om IT-sikkerhet og compliance – og hvordan du oppfyller dem. Og hvis du vil ha anbefalinger spesifikke for din virksomhet, ta kontakt!
+Safespring er ikke en erstatning for Elastisys' produkt. Vårt bidrag er infrastrukturen Welkin kjører på. Det omfatter Safespring Compute, lagring, nettverk, nordisk datasenterplassering og en arbeidsmåte der tekniske spørsmål kan håndteres tett på teamene som bygger tjenesten.
 
-{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakt oss" alt="Fredric Wallsten på Safespring" %}}
-Har du spørsmål om vår administrerte Kubernetes-plattform? Kontakt oss for dyptgående teknisk informasjon og personlig rådgivning.
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-layer-group" text="En infrastrukturbas som kan forklares" description="Compute, lagring, nettverk og datasenterplassering er tydelig avgrenset fra Kubernetes-plattformen. Det gjør ansvarsfordelingen enklere å beskrive for kunder, revisorer og sikkerhetsteam." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-location-dot" text="Nordisk drift for sensitive tjenester" description="Safespring gir et lokalt IaaS-grunnlag for kunder som trenger kontroll over hvor data behandles, hvilken jurisdiksjon som gjelder og hvilke leverandører som inngår i kjeden." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-code-branch" text="Kubernetes og open source-komponenter" description="Welkin bygger på Kubernetes og open source-komponenter på Safespring Compute. Tjenesten trenger ikke å bygges på leverandørspesifikke skytjenester." >}}
 
-{{< inline "Ring" >}} [+46 855 10 73 70](tel:+46855107370)  
+Dette er relevant også for andre plattformselskaper. Hvis dere bygger en plattform for kunder med dokumentasjons- og granskningskrav, må infrastrukturdelen kunne beskrives som en del av tilbudet deres.
+
+## Bygger dere en tjeneste som ligner Welkin?
+
+Hvis dere utvikler en plattform, SaaS-tjeneste eller et produkt for regulerte kunder, må infrastrukturen kunne granskes og beskrives. Safespring Compute kan brukes når dere trenger å kombinere skyinfrastruktur med dataplassering i Norden, åpne standarder og en nordisk leverandør.
+
+Snakk med oss om målbildet deres, kundekravene og hvilken del av infrastrukturen dere vil eie selv. Da kan vi gå gjennom om Safespring Compute passer for produktet deres, og hvordan ansvaret mellom dere, Safespring og eventuelle plattformspartnere bør beskrives.
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Kontakt meg hvis dere vil diskutere infrastruktur for tjenesten deres.
+
+{{< inline "Ring" >}} [+46 76-629 25 02](tel:+46766292502)
+
 {{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}

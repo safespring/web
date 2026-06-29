@@ -151,9 +151,9 @@ När du vill validera arkitektur, ansvarsfördelning och driftmodell är det hä
 
 {{< distance >}}
 
-## Räkna på en ungefärlig månadskostnad
+## Estimera en Safespring Kubernetes Engine-miljö
 
-Använd kalkylatorn för att uppskatta kostnaden för kontrollplan, worker-noder och central blocklagring. Den är tänkt som en snabb fingervisning inför teknisk och kommersiell utvärdering.
+Använd kalkylatorn som startpunkt inför en dimensioneringsdialog. Den räknar samman managerad kontrollplan, worker-noder och central blocklagring så att ni ser hur månadskostnaden ändras när klusterkonfigurationen ändras.
 
 {{< container-price-calculator >}}
 

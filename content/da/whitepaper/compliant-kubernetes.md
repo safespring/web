@@ -43,7 +43,7 @@ Ud over at overvåge klyngerne døgnet rundt for både sundhedsmålinger og mist
 
 Kort sagt er udfordringen at øge softwareagiliteten via containerisering samtidig med at sikkerhed og compliance garanteres for virksomheden.
 
-Safespring Compliant Kubernetes (CK8s) er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudpakket med sikkerhedshærdede konfigurationer og open source-komponenter i henhold til best practices. Safespring leverer kvartalsvise udgivelser af Compliant Kubernetes – tester og hærder komponenterne for at sikre, at de efterlever de strenge sikkerheds- og regulatoriske krav, som vores kunder stiller til deres containerplatforme.
+Elastisys Welkin er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudpakket med sikkerhedshærdede konfigurationer og open source-komponenter i henhold til best practices. Elastisys leverer Kubernetes-platformen, mens Safespring leverer Compute-infrastrukturen, den kører på.
 
 {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" linkref="/services/compute.md" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Compliant Kubernetes" text="Vores infrastrukturservice er placeret i sikre datacentre inden for EU og bliver ikke påvirket af udenlandske love som CLOUD Act eller FISA 702." %}}
 
@@ -51,4 +51,4 @@ Compliant Kubernetes gør det muligt for organisationer at udnytte alle fordelen
 
 På grund af CLOUD Act og andre forhold, der giver udenlandske aktører adgang til brugerdata, flytter europæiske virksomheder i stigende grad deres arbejdsbelastninger til europæiske udbydere.
 
-Compliant Kubernetes fås som en managed service i partnerskab med Safespring, så I får alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at I selv skal stå for driften.
+Welkin fås fra Elastisys på Safespring Compute, så I får alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at I selv skal stå for driften.

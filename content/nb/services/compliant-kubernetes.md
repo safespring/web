@@ -1,12 +1,12 @@
 ---
-title: "La utviklerne fokusere på kjerne­virksomheten"
+title: "Elastisys Welkin på Safespring Compute"
 cardtitle: "Containerplattform"
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 section: "Public Cloud"
-intro: "Kjør Welkin som en administrert tjeneste i henhold til GDPR i Europa."
+intro: "Elastisys bygger og drifter Welkin på Safespring Compute for kunder som trenger en sikker Kubernetes-plattform på europeisk infrastruktur."
 background: "safespring-kubernetes-background.svg"
 card: "safespring-kubernetes.svg"
 sidebarimage: "safespring-kubernetes.svg"
@@ -24,16 +24,16 @@ aliases:
 ---
 
 {{< ingress >}}
-Kjører du Kubernetes i dag, eller planlegger du å gjøre det? Dette er en mulighet for deg til å overlate operasjonen til sertifiserte eksperter og samtidig øke din kontroll og sikkerhet.
+Elastisys bygger og drifter Welkin på Safespring Compute. Kunder får en sikker Kubernetes-plattform fra Elastisys, bygget på Safesprings nordiske IaaS-infrastruktur.
 {{</ ingress >}}
 
 ![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-pyramid.svg)
 
-### Styrk teamet ditt med ekstern kompetanse innen DevOps og Kubernetes
+### Styrk teamet ditt med Elastisys' kompetanse innen DevOps og Kubernetes
 
-Sammen med vår partner tilbyr Safespring en Kubernetes-plattform som gjør det enkelt å være i samsvar med regelverk angående sikkerhet og personvern. Vi tilbyr en omfattende driftsløsning hvor du som kunde kan fokusere på din egen forretning og la automatikken ta seg av rapporteringskrav i henhold til regelverk.
+Welkin er Elastisys' produkt. Safespring leverer Compute-infrastrukturen, datasenterplasseringen og det åpne skygrunnlaget som Elastisys bygger på for kunder med høye krav til sikkerhet og etterlevelse.
 
-Partneren vår er sertifisert "{{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}}" via CNCF og leverer en sikkerhetsherdet Kubernetes-distribusjon som følger "upstream" Kubernetes-versjoner tett og er et aktivt medlem av Cloud Native-fellesskapet. I tillegg til administrerte Kuberntes-tjenester, tilbyr vi opplæring og konsulenttjenester.
+Elastisys er sertifisert "{{% tooltip "Kubernetes service providers" %}} Kravene er at minst tre ingeniører har fått sertifiseringen "Certified Kubernetes Administrator (CKA)". Selskapets forretningsmodell bør kunne motta svært store bedriftskunder. {{% / tooltip %}}" via CNCF og leverer en sikkerhetsherdet Kubernetes-distribusjon som følger "upstream" Kubernetes-versjoner tett og er et aktivt medlem av Cloud Native-fellesskapet.
 
 <div></div>
 <div style="margin-bottom:100px;">

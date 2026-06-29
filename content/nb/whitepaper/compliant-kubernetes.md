@@ -42,7 +42,7 @@ In addition to monitoring the clusters 24/7 for both health metrics and suspicio
 
 In essence, the challenge is how to increase software agility through containerization while guaranteeing security and compliance for your business.
 
-Safespring Compliant Kubernetes (CK8s) is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security hardened configurations and open source components according to best practices. Safespring provides quarterly releases of Compliant Kubernetes - testing and hardening the components, to make sure they adhere to the strict security and regulatory requirements our customers have for their container platforms.
+Elastisys Welkin is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security hardened configurations and open source components according to best practices. Elastisys provides the Kubernetes platform, while Safespring provides the Compute infrastructure it runs on.
 
 {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" linkref="/services/compute.md" linktext="Read more" cardtitle="Safespring Compute is the core of Compliant Kubernetes" text="Our infrastructure service is located in secure data centers within the EU and doesn't get effected by foreign laws like CLOUD Act or FISA 702." %}}
 
@@ -50,4 +50,4 @@ Compliant Kubernetes allows organizations to enjoy the full benefits of Kubernet
 
 Due to Cloud Act and other forces that allow foreign entities to access user data, European companies are also more and more migrating their workloads to European providers.
 
-Compliant Kubernetes is available as a managed service in partnership with Safespring, giving you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations.
+Welkin is available from Elastisys on Safespring Compute, giving you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations.

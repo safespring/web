@@ -6,7 +6,7 @@ intro: "CivSecs rapport Digital rådighet och strukturella beroenden visar hur k
 draft: false
 tags: ["Svenska"]
 showthedate: true
-card: "safespring-puzzle.webp"
+card: "safespring-puzzle.svg"
 eventbild: ""
 socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "sv"
