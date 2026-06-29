@@ -4,6 +4,7 @@
   {{ if or (eq $section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
     {{ $section = "tech-update" }}
   {{ end }}
+  {{ $techUpdateCard := "/img/blogg/cards/safespring-tech-update.svg" }}
   <div
     class="fill-available-space img-250 pointer
     {{ if eq $section "webinar" }}
@@ -21,20 +22,21 @@
     {{ end }}"
   >
     {{ if eq $section "blog" }}
+      {{ $blogCard := "/img/blogg/cards/safespring_card_0.webp" }}
+      {{ with .Params.card }}{{ $blogCard = printf "/img/blogg/cards/%s" . }}{{ end }}
       <img
         class="lazyload"
         loading="lazy"
-        src="{{ if.Params.card }}
-          /img/blogg/cards/{{ .Params.card }}
-        {{ else }}
-          /img/blogg/cards/safespring_card_0.webp
-        {{ end }}"
+        src="{{ $blogCard }}"
+        {{ partial "image-dimensions.html" $blogCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="blogg-card-tagg-container">
         <img
           class="blogg-card-flag"
           loading="lazy"
+          width="20"
+          height="20"
           alt="Safespring language flag"
           src="/img/flags/{{ .Language.Lang }}.svg"
         />
@@ -45,24 +47,26 @@
       </div>
       <div class="blogg-card-wapper">
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
-        <h1
+        <h2
           class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
         >
           {{ .Title }}
-        </h1>
+        </h2>
         <span class="text-button">{{ T "knowledgehub.read_post" }}</span>
       </div>
     {{ else if eq $section "tech-update" }}
       <img
-        class="lazyload tech-card-image"
-        loading="lazy"
-        src="/img/blogg/cards/safespring-tech-update.svg"
+        class="tech-card-image"
+        src="{{ $techUpdateCard }}"
+        {{ partial "image-dimensions.html" $techUpdateCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="tech-update-card-content">
         <div class="blogg-card-tagg-container-tech">
           <img
             class="blogg-card-flag"
+            width="20"
+            height="20"
             alt="Safespring language flag"
             src="/img/flags/{{ .Language.Lang }}.svg"
           />
@@ -72,11 +76,11 @@
           >
         </div>
         <div>
-          <h1
+          <h2
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
           >
             {{ .Title }}
-          </h1>
+          </h2>
           <p class="mb-1">{{ .Params.intro }}</p>
         </div>
         <div>
@@ -84,15 +88,22 @@
         </div>
       </div>
     {{ else if eq $section "webinar" }}
+      {{ $webinarCard := .Params.card }}
+      {{ if and $webinarCard (not (or (strings.HasPrefix $webinarCard "/") (strings.HasPrefix $webinarCard "http://") (strings.HasPrefix $webinarCard "https://"))) }}
+        {{ $webinarCard = printf "/img/event/cards/%s" $webinarCard }}
+      {{ end }}
       <img
         class="lazyload"
         loading="lazy"
-        src="{{ .Params.card }}"
+        src="{{ $webinarCard }}"
+        {{ partial "image-dimensions.html" $webinarCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="blogg-card-tagg-container-webinar">
         <img
           class="blogg-card-flag"
+          width="20"
+          height="20"
           alt="Safespring language flag"
           src="/img/flags/{{ .Language.Lang }}.svg"
         />
@@ -103,24 +114,28 @@
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
       </div>
       <div class="blogg-card-wapper">
-        <h1
+        <h2
           class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
         >
           {{ .Title }}
-        </h1>
+        </h2>
         <div class="webinar-card-link">{{ T "landing.play" }}</div>
       </div>
     {{ else if eq $section "solution-brief" }}
+      {{ $solutionCard := printf "/img/card/%s" .Params.card }}
       <img
         class="lazyload"
         loading="lazy"
-        src="/img/card/{{ .Params.card }}"
+        src="{{ $solutionCard }}"
+        {{ partial "image-dimensions.html" $solutionCard | safeHTMLAttr }}
         alt="{{ .Title }}"
       />
       <div class="blogg-card-tagg-container-solution-brief">
         <img
           class="blogg-card-flag"
           loading="lazy"
+          width="20"
+          height="20"
           alt="Safespring language flag"
           src="/img/flags/{{ .Language.Lang }}.svg"
         />
@@ -130,11 +145,11 @@
         >
       </div>
       <div class="blogg-card-wapper">
-        <h1
+        <h2
           class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
         >
           {{ .Title }}
-        </h1>
+        </h2>
         <span class="text-button">{{ T "knowledgehub.learn_more" }}</span>
       </div>
     {{ else if eq $section "whitepaper" }}
@@ -144,11 +159,11 @@
             class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
             >{{ T "knowledgehub.whitepaper" }}</span
           >
-          <h1
+          <h2
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
           >
             {{ .Title }}
-          </h1>
+          </h2>
           <p class="mb-1">{{ .Params.intro }}</p>
         </div>
         <div>
@@ -162,11 +177,11 @@
             class="blogg-card-section-whitepaper mb-0 font-weight-medium text-uppercase text-muted lts-1px"
             >{{ .Params.section }}</span
           >
-          <h1
+          <h2
             class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1"
           >
             {{ .Title }}
-          </h1>
+          </h2>
           <p class="mb-1">{{ .Params.intro }}</p>
         </div>
         <div>

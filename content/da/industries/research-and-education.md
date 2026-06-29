@@ -41,8 +41,8 @@ Der er mange måder, hvorpå en forsknings- og uddannelsesorganisation kan købe
 {{< distance >}}
 
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url(/img/card/ocre-background-blue.svg); display: flex;justify-content: center; align-items: center;" alt="">
-        <img src="/img/card/ocre-logo-white.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url(/img/card/ocre-background-blue.svg); display: flex;justify-content: center; align-items: center;">
+        <img src="/img/card/ocre-logo-white.svg" alt="OCRE logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="113" height="43">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <h3>Tjek om din organisation kan bruge OCRE 2024</h3>

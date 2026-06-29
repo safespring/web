@@ -1,5 +1,5 @@
 ---
-title: "Introduktion till Safespring Backup"
+title: "Introduction to Safespring Backup"
 language: "en"
 date: "2025-02-24"
 publishDate: "2025-02-24"
@@ -7,19 +7,19 @@ draft: false
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/demo-episode-series.webp"
 socialmediabild: ""
-intro: "Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data."
+intro: "Safespring Backup has built-in ransomware protection and a portal where you can easily manage your protected data."
 partner: ""
 audience: "saas"
 explorer: ""
 sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Boka videomöte"
+sidebarlinkname: "Book a video meeting"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "invisible"
 toc: "Episode"
 ---
 
-# Boka in ett möte med Gabriel!
+## Book a meeting with Gabriel!
 
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?

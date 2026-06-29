@@ -19,7 +19,7 @@ class OnboardingLanguageLinksTest(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as output_dir:
             subprocess.run(
-                ["hugo", "--destination", output_dir, "--quiet"],
+                ["hugo", "--noBuildLock", "--destination", output_dir, "--quiet"],
                 cwd=repo_root,
                 check=True,
             )

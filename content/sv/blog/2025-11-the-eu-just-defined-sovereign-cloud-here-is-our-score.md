@@ -12,6 +12,8 @@ socialmedia: ""
 language: "sv"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blogg/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/
 ---
 {{% ingress %}}
 Den 20 oktober 2025 publicerade Europeiska kommissionen en referens för att gradera europeiska moln: Cloud Sovereignty Framework.

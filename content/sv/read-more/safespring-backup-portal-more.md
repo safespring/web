@@ -1,8 +1,10 @@
-#
+---
+language: "sv"
+title: "Safespring Backup: En fullständig uppdatering av användarportalen"
+ai: true
+---
 
 {{< author-gabriel >}}
-
-## Safespring Backup: En fullständig uppdatering av användarportalen
 
 <div class="ingress">
 	<p>
@@ -48,5 +50,4 @@ Sammantaget hjälper användningen av denna mekanism oss att erbjuda en säkrare
 Med vår relansering av Safespring Backup tar Safespring ett jättesteg framåt för att förbättra användarupplevelsen och användarvänligheten för att hantera dina säkerhetskopieringar med Safespring. Med pålitligheten i Spectrum Protect kombinerat med en fullt utvecklad självbetjäningsportal för att köra dina säkerhetskopieringar har det aldrig varit enklare. Med en fullständig REST API är automatisering av olika administrativa uppgifter möjlig.
 
 Med Safespring Backup får du en säker lösning (men enkel att använda) för att hantera alla dina säkerhetskopieringar.
-
 

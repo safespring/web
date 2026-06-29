@@ -23,9 +23,9 @@ Tjänsten erbjuder en kombination av molnteknikens flexibilitet och kontrollen �
 
 {{< icon-block-container >}}
     {{< icon-block icon="fa-solid fa-user-lock" text="Digital suveränitet" link="#sakerhetsatgarder" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-headset" text="Professionell support" link="#support" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-headset" text="Professionell support" link="#support-and-availability" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-shield-alt" text="Säkerhet/ efterlevnad" link="#sakerhetsatgarder" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög tillgänglighet" link="#tillg%C3%A4nglighet" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög tillgänglighet" link="#support-and-availability" color="#3C9BCD">}}
     {{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Flexibel skalbarhet" link="#skalning-av-resurser" color="#FA690F">}}
     {{< icon-block icon="fa-solid fa-users-cog" text="Tekniskt kontoansvarig" link="#technical-account-manager-tam" color="#32cd32">}}
 {{< /icon-block-container >}}
@@ -96,7 +96,7 @@ Förenkla databashanteringen genom att lägga till en managerad databas till din
 Maximera potentialen hos dina maskininlärnings- och AI-projekt genom att lägga till en Scalout ML plattform till din On-Premise Cloud. Den här tilläggstjänsten ger dig en skalbar och flexibel plattform som är optimerad för att hantera och distribuera maskininlärningsmodeller, vilket gör det enklare för dig att träna, förutsäga och analysera data.
 {{% /accordion %}}
 
-## Support och tillgänglighet
+## Support och tillgänglighet {#support-and-availability}
 
 Denna tjänst kan levereras med en tillgänglighet på upp till 99,9 procent under förutsättning att kunden följer våra krav på datacenter-specifikationer och gränser för användning av kapacitet. Detaljer om detta ingår i standardkontraktet som blir känt under försäljningsprocessen.
 Utöver detta gäller standardstödprocessen som beskrivs i [Safesprings dokumentation](https://docs.safespring.com/service/policies).

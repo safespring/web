@@ -1,12 +1,10 @@
 ---
 language: "da"
+title: "Safespring Backup: En fuldstændig opdatering af brugerportalen"
 ai: true
 ---
-#
 
 {{< author-gabriel >}}
-
-## Safespring Backup: En fuldstændig opdatering af brugerportalen
 
 <div class="ingress">
 	<p>

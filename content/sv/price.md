@@ -34,26 +34,26 @@ Bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safe
 
 {{< distance >}}
 
-Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till längre kostnad slipper du investeria i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
+Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till lägre kostnad slipper du investera i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
 
-I priset ingår hög säkerhet såväl fysisk, logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäsningsportal där du kan managera dina instanser efter behov.
+I priset ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäningsportal där du kan hantera dina instanser efter behov.
 
 ### Ingen trafikkostnad
 
-Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller Egress cost som det också kallas är en vanligt inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om Egress och Ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
+Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller Egress cost som det också kallas, är en vanlig inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om Egress och Ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
 
 {{< distance >}}
 
 ## Safespring Kubernetes Engine
 
 {{< ingress >}}
-Safespring Kubernetes Engine ger en managerad kontrollplan för Kubernetes på Safesprings infrastruktur.
+Safespring Kubernetes Engine ger en hanterad kontrollplan för Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
 
 | Produkt ID            | Beskrivning                                      |    Per månad |
 |-----------------------|--------------------------------------------------|-------------:|
-| PAAS-man-controlplane | Managerat kontrollplan                          |     4 900 kr |
-| PAAS-controlplane     | Omanagerat kontrollplan                         |      0,00 kr |
+| PAAS-man-controlplane | Hanterad kontrollplan                           |     4 900 kr |
+| PAAS-controlplane     | Ohanterad kontrollplan                          |      0,00 kr |
 
 {{< distance >}}
 
@@ -65,7 +65,7 @@ Flavor är en förkonfigurerad instans av en virtuell maskin med en specifik kom
 
 
 ### Flavors med lokal NVMe-disk
-Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU och 64 GB RAM, med NVMe lagring upp till 1 000 GB - prissatta från endast 0,67 kr per timme eller 480 kr per 30 dagar!
+Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU och 64 GB RAM, med NVMe-lagring upp till 1 000 GB - prissatta från endast 0,67 kr per timme eller 480 kr per 30 dagar!
 
 | Produkt ID               | vCPU | RAM (GB) |           Lokal disk (GB) |                 Per timme |           Per 30 dagar |
 |--------------------------|:----:|:--------:|--------------------------:|--------------------------:|-----------------------:|
@@ -86,7 +86,7 @@ Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU o
 
 
 ### Flavors utan lokal disk
-Safesprings erbjuder en rad kostnadseffektiva virtuella maskiner med varierande vCPU och RAM. Central blocklagring kan köpas till instanserna.
+Safespring erbjuder en rad kostnadseffektiva virtuella maskiner med varierande vCPU och RAM. Central blocklagring kan köpas till instanserna.
 
 | Produkt ID         | vCPU | RAM (GB) | Lokal disk (GB) |                 Per timme |            Per 30 dagar |
 |--------------------|:----:|:--------:|:---------------:|--------------------------:|------------------------:|
@@ -103,7 +103,7 @@ Safesprings erbjuder en rad kostnadseffektiva virtuella maskiner med varierande 
 
 
 ### Flavors med GPU
-Safesprings erbjuder flera alternativ virtuella maskiner med GPU. Både med och utan lokal lagring (NVME).
+Safespring erbjuder flera alternativa virtuella maskiner med GPU, både med och utan lokal lagring (NVMe).
 
 | Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU   | Per timme | Per 30 dagar |
 |--------------------------|:----:|:--------:|----------------:|:-----:|----------:|-------------:|
@@ -151,8 +151,8 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
 <table class="width100" style="margin-bottom:40px;">
     <thead>
         <tr>
-            <th>Data Usage (GB)</th>
-            <th>Most Cost-effective Service</th>
+            <th>Dataförbrukning (GB)</th>
+            <th>Mest kostnadseffektiva tjänst</th>
         </tr>
     </thead>
     <tbody>
@@ -165,7 +165,7 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
         <td>Backup Small</td>
     </tr>
     <tr>
-        <td>7 001</td>
+        <td>7 001+</td>
         <td>Backup Large</td>
     </tr>
 </tbody>

@@ -15,6 +15,7 @@ author_image: "firm"
 aliases:
   - /blogg/covid-19-mars
   - /blogg/2020/2020-03-covid-19-mars/
+  - /blog/2020-03-covid-19-mars/
 ---
 <div class="ingress"><p>Safespring is planning to maintain uninterrupted operations.</p></div>
 
@@ -40,7 +41,7 @@ Safespring’s staff are available as usual. Contact your account manager at Saf
 
 **Fredric Wallsten**<br>
 +46 76-629 25 02<br>
-<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a>
+[fredric.wallsten@safespring.se](mailto:fredric.wallsten@safespring.se)
 
 **Support**<br>
-If you have questions about our platform, please contact us at our support address. <a href="mailto:support@safespring.com">support@safespring.com</a>
+If you have questions about our platform, please contact us at our support address. [support@safespring.com](mailto:support@safespring.com)

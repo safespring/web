@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/webbaserat-kontorsstod
   - /blogg/2019/2019-02-webbaserat-kontorsstod/
+  - /blog/2019-02-webbaserat-kontorsstod/
 ---
 {{< ingress >}}
 Med webbaseret kontorpakke mener vi fuldt integrerede, webbaserede e-mail, tekstbehandling, regneark, præsentationer, chat, fillagring og dokumenthåndtering.
@@ -36,4 +37,4 @@ Samtidig fremgik det, at de eksisterende rammeaftaler ikke er tilstrækkelige ti
 
 Safespring vil følge udviklingen tæt og bidrage til dialogen med vores ekspertise inden for sikre, moderne og lokale cloudtjenester. I skrivende stund er vi på stedet til præsentationen af foranalysen. Fotoet viser Daniel Melin, IT-indkøbsmedarbejder hos Kammarkollegiet.
 
-![Safespring på stedet under præsentationen af foranalysen: webbaserede kontorpakker](../safespring-webbaserat-kontorsstod.jpg)
+![Safespring på stedet under præsentationen af foranalysen: webbaserede kontorpakker](/img/blogg/socialmedia/safespring-webbaserat-kontorsstod.jpg)

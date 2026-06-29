@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/cloud_act
   - /blogg/2018/2018-05-cloud_act/
+  - /blog/2018-05-cloud_act/
 ---
 
 The CLOUD Act is a new US law that allows government agencies to request data from US cloud service companies regardless of the country in which the data is stored. Even if a company uses AWS in Sweden, data can be handed over to the United States.

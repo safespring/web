@@ -18,6 +18,7 @@ sidebarlinkname2: "Kontakt oss"
 sidebarlinkurl2: "/kontakt/"
 aliases:
   - /blogg/2023/2023-02-iaas-vs-hosted-server/
+  - /blogg/2023-02-iaas-vs-hosted-server/
 ---
 {{< ingress >}}
 Leter du etter den beste hostede serveren for applikasjonene eller tjenestene dine? Hvorfor ikke heller vurdere Infrastructure as a Service (IaaS) med den beste skylagringstjenesten på markedet?

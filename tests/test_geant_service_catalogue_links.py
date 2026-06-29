@@ -10,15 +10,15 @@ class GeantServiceCatalogueLinksTest(unittest.TestCase):
         repo_root = Path(__file__).resolve().parents[1]
 
         cases = {
-            "en/industries/safespring-cloud-platform-for-research-and-education/index.html": "/geant/",
-            "sv/branscher/utbildning-och-forskning/index.html": "/geant/",
+            "en/industries/safespring-cloud-platform-for-research-and-education/index.html": "/geant/service-catalogue/",
+            "sv/branscher/utbildning-och-forskning/index.html": "/geant/service-catalogue/",
             "nb/industrier/utdanning-og-forskning/index.html": "/geant/service-catalogue/",
             "da/industrier/forskning-og-uddannelse/index.html": "/geant/service-catalogue/",
         }
 
         with tempfile.TemporaryDirectory() as output_dir:
             subprocess.run(
-                ["hugo", "--destination", output_dir, "--quiet"],
+                ["hugo", "--noBuildLock", "--destination", output_dir, "--quiet"],
                 cwd=repo_root,
                 check=True,
             )
@@ -35,12 +35,7 @@ class GeantServiceCatalogueLinksTest(unittest.TestCase):
                     f"{page_path} should link to {catalogue_url}",
                 )
 
-            for child_page in sorted((output_root / "en/geant").glob("*/index.html")):
-                html = child_page.read_text(encoding="utf-8")
-                self.assertIsNone(
-                    re.search(r'href=(["\']?)/geant/service-catalogue/?\1(?=[\s>])', html),
-                    f"{child_page.relative_to(output_root)} should not link to the broken root /geant/service-catalogue path",
-                )
+            self.assertTrue((output_root / "en/geant/service-catalogue/index.html").exists())
 
 
 if __name__ == "__main__":

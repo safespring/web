@@ -21,7 +21,7 @@ sidebartext: "Want to discuss the service? Feel free to reach out if you have an
 sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
 sidebarlinkname2: "Technical deep dive"
-sidebarlinkurl2: "/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/"
+sidebarlinkurl2: "/deep-dive/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/"
 showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
@@ -29,6 +29,7 @@ language: "en"
 slug: "safespring-kubernetes-engine"
 aliases:
   - /en/services/containerplatform/
+  - /services/container-platform/
 ---
 
 {{< ingress >}}
@@ -72,7 +73,7 @@ Safespring Kubernetes Engine is a good fit when you:
 
 The most important technical advantage is not one isolated feature. It is that the service is shaped as a usable platform boundary from day one. That matters because platform teams rarely struggle with creating a cluster. They struggle with making the cluster consistent, supportable, secure, and ready for production use.
 
-{{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="What this means in practice" %}}
+{{< custom-card-logo image="/img/graphics/safespring-cloud.webp" logo="/img/graphics/safespring-byline-blue.svg" logoAlt="Safespring logo" cardtitle="What this means in practice" >}}
 The architecture is designed to give you:
 
 - a self-service model through portal and API instead of manual cluster administration
@@ -80,7 +81,7 @@ The architecture is designed to give you:
 - an immutable operating system foundation with Talos Linux, which reduces operational drift and attack surface
 - a modern network and traffic model based on Cilium, Gateway API, and Traefik support
 - a clearer responsibility split between what Safespring operates and what your own team still owns
-{{% /custom-card %}}
+{{< /custom-card-logo >}}
 
 {{< distance >}}
 
@@ -99,16 +100,16 @@ When you want to validate architecture, responsibility split, and operating mode
 {{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="What you get on day one"
-    href="/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#what-you-get-on-day-one"
+    href="/deep-dive/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#what-you-get-on-day-one"
     icon="fa-solid fa-list-check"
-    label="Blog"
+    label="Deep Dives"
     description="The documented platform defaults from the start."
   >}}
   {{< manual-document-row
     title="The service boundary in practice"
-    href="/tech-update/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#the-service-boundary-in-practice"
+    href="/deep-dive/understanding-safespring-kubernetes-engine-if-you-usually-run-kubernetes-yourself/#the-service-boundary-in-practice"
     icon="fa-solid fa-people-arrows"
-    label="Blog"
+    label="Deep Dives"
     description="How responsibilities and operational boundaries are split between Safespring and your team."
   >}}
   {{< manual-document-row
@@ -150,9 +151,9 @@ When you want to validate architecture, responsibility split, and operating mode
 
 {{< distance >}}
 
-## Estimate an approximate monthly cost
+## Estimate a Safespring Kubernetes Engine setup
 
-Use the calculator to estimate the cost of the control plane, worker nodes, and central block storage. It is intended as a quick indication before technical and commercial evaluation.
+Use the calculator as a starting point for a sizing discussion. It combines the managed control plane, worker nodes, and central block storage so you can see how the monthly cost changes when the cluster configuration changes.
 
 {{< container-price-calculator >}}
 

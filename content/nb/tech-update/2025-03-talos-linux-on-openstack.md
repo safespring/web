@@ -11,13 +11,14 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Blogg"
+sectiontext: "Deep Dives"
 section: "Teknologioppdatering"
 author: "Anders Johansson"
 TOC: "I dette innlegget"
 aliases:
   - /blogg/2025/2024-02-engineering-plans/
   - /blogg/2025/2025-03-talos-linux-on-openstack/
+  - /tekniske-oppdateringer/2025-03-talos-linux-on-openstack/
 ---
 
 {{< ingress >}}

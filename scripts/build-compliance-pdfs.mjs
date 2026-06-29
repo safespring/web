@@ -68,6 +68,47 @@ function getManualMinorVersion(rawVersion = '1.0') {
   return Number.parseInt(minor, 10) || 0;
 }
 
+function getBodySource(source) {
+  const match = source.match(/^---\n[\s\S]*?\n---\n?/);
+  return match ? source.slice(match[0].length) : source;
+}
+
+function normaliseDocumentText(source, frontMatter = parseFrontMatter(source)) {
+  const parts = [];
+  if (frontMatter.title) {
+    parts.push(frontMatter.title);
+  }
+  if (frontMatter.intro) {
+    parts.push(frontMatter.intro);
+  }
+  parts.push(getBodySource(source));
+
+  return parts.join('\n')
+    .replace(/\r\n/g, '\n')
+    .replace(/```[\s\S]*?```/g, (block) => block.replace(/```[^\n]*\n?|```/g, '\n'))
+    .replace(/\{#[^}]+\}/g, ' ')
+    .replace(/\{\{[<%][\s\S]*?[>%]\}\}/g, ' ')
+    .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\[([^\]]+)\]\[[^\]]*\]/g, '$1')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/^\s*[-*+]\s+/gm, '')
+    .replace(/^\s*\d+[.)]\s+/gm, '')
+    .replace(/[*_~>]+/g, ' ')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\s*\n\s*/g, '\n')
+    .replace(/\n{2,}/g, '\n')
+    .trim();
+}
+
+function getDocumentTextHash(source, frontMatter = parseFrontMatter(source)) {
+  return createHash('sha1').update(normaliseDocumentText(source, frontMatter)).digest('hex');
+}
+
 async function getGitOutput(args) {
   try {
     const { stdout } = await execFileAsync('git', args, {
@@ -93,52 +134,78 @@ async function getCommitMajorVersion(commit, gitPath) {
   return getMajorVersion(parseFrontMatter(source).pdfversion);
 }
 
-async function getMajorCommitCount(gitPath, majorVersion) {
+async function getCommitTextState(commit, gitPath) {
+  const source = await getCommitSource(commit, gitPath);
+  if (!source) {
+    return null;
+  }
+
+  const frontMatter = parseFrontMatter(source);
+  return {
+    commit,
+    majorVersion: getMajorVersion(frontMatter.pdfversion),
+    textHash: getDocumentTextHash(source, frontMatter),
+  };
+}
+
+async function getMajorTextHistory(gitPath, majorVersion) {
   const log = await getGitOutput(['log', '--follow', '--format=%H', '--', gitPath]);
   const commits = log.split('\n').filter(Boolean);
-  let count = 0;
+  const history = [];
 
   for (const commit of commits) {
-    const commitMajor = await getCommitMajorVersion(commit, gitPath);
-    if (!commitMajor || commitMajor !== majorVersion) {
+    const state = await getCommitTextState(commit, gitPath);
+    if (!state || state.majorVersion !== majorVersion) {
       break;
     }
 
-    count += 1;
+    history.push(state);
   }
 
-  return count;
-}
-
-async function hasWorkingTreeChanges(gitPath) {
-  return Boolean(await getGitOutput(['status', '--porcelain', '--', gitPath]));
+  return history.reverse();
 }
 
 async function buildComplianceMeta(doc) {
   const majorVersion = getMajorVersion(doc.frontMatter.pdfversion);
   const manualMinorVersion = getManualMinorVersion(doc.frontMatter.pdfversion);
   const latestCommit = await getGitOutput(['log', '-1', '--format=%H', '--', doc.gitPath]);
-  const latestCommittedMajor = latestCommit ? await getCommitMajorVersion(latestCommit, doc.gitPath) : null;
-  const commitCount = latestCommit ? await getMajorCommitCount(doc.gitPath, majorVersion) : 0;
-  const hasLocalChanges = await hasWorkingTreeChanges(doc.gitPath);
-  let minorVersion = commitCount > 0 ? Math.max(0, commitCount - 1) : manualMinorVersion;
+  const currentTextHash = getDocumentTextHash(doc.source, doc.frontMatter);
+  const history = latestCommit ? await getMajorTextHistory(doc.gitPath, majorVersion) : [];
+  let minorVersion = history.length > 0 ? 0 : manualMinorVersion;
+  let previousTextHash = null;
+  let latestTextCommit = null;
 
-  if (hasLocalChanges && latestCommit && latestCommittedMajor === majorVersion) {
+  for (const state of history) {
+    if (previousTextHash === null) {
+      previousTextHash = state.textHash;
+      latestTextCommit = state.commit;
+      continue;
+    }
+
+    if (state.textHash !== previousTextHash) {
+      minorVersion += 1;
+      previousTextHash = state.textHash;
+      latestTextCommit = state.commit;
+    }
+  }
+
+  const hasLocalTextChanges = previousTextHash !== null && currentTextHash !== previousTextHash;
+  if (hasLocalTextChanges) {
     minorVersion += 1;
   }
 
-  const contentHash = createHash('sha1').update(doc.source).digest('hex');
-  const id = latestCommit
-    ? `${latestCommit.slice(0, 12)}${hasLocalChanges ? '-dirty' : ''}`
-    : `local-${contentHash.slice(0, 12)}`;
+  const idSource = latestTextCommit || latestCommit;
+  const id = idSource
+    ? `${idSource.slice(0, 12)}${hasLocalTextChanges ? '-dirty' : ''}`
+    : `local-${currentTextHash.slice(0, 12)}`;
 
   return {
     id,
     version: `${majorVersion}.${minorVersion}`,
     majorVersion,
     updateCount: minorVersion,
-    commit: latestCommit || null,
-    dirty: hasLocalChanges,
+    commit: latestTextCommit || latestCommit || null,
+    dirty: hasLocalTextChanges,
   };
 }
 
@@ -254,6 +321,7 @@ async function ensureServer() {
     `${baseUrl}/`,
     '--port',
     port,
+    '--noBuildLock',
     '--disableFastRender',
   ], {
     cwd: root,

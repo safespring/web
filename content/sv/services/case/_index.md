@@ -6,4 +6,5 @@ intro: "Dessa fallstudier belyser hur företag och organisationer över olika se
 language: "sv"
 aliases:
   - /tjanster/case/
+  - /referenser/
 ---

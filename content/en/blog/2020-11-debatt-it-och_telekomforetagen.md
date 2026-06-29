@@ -15,6 +15,7 @@ author_image: "firm"
 aliases:
   - /blogg/debatt-it-och_telekomforetagen
   - /blogg/2020/2020-11-debatt-it-och_telekomforetagen/
+  - /blog/2020-11-debatt-it-och_telekomforetagen/
 ---
 {{< ingress >}}
 IT & Telekomföretagen’s chair Åsa Zetterberg needs to raise her sights, write representatives of four Swedish cloud service providers in a reply to last week’s op-ed.

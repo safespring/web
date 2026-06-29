@@ -10,11 +10,12 @@ card: "safespring_card_54.svg"
 eventbild: ""
 socialmediabild: ""
 language: "da"
-sectiontext: "Blog"
+sectiontext: "Nyheder og perspektiver"
 section: "blog"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-exit-strategy/
+  - /blog/2025-03-exit-strategy/
 ---
 {{< ingress >}}
 I dagens geopolitiske landskab, hvor USA hurtigt forsøger at blive mere som Kina og Rusland, står kunder hos amerikanske cloududbydere over for svære beslutninger.

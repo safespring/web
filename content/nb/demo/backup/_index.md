@@ -19,7 +19,7 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Episode"
 ---
-# Bestill et møte med Gabriel!
+## Bestill et møte med Gabriel!
 
 {{< ingress >}}
 Hvorfor velge en svensk IaaS-leverandør som etterlever strenge krav til data- og personvernregelverk for programvareløsningene dine?

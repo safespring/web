@@ -1,32 +1,51 @@
 <div style="width: 800px; min-width: 100px;">
   <div class="section {{ if .Params.sectionhighlight }}mb-2{{ end }}">
+    {{ $sectionLabel := "" }}
+    {{ $sectionName := lower .Section }}
+    {{ $sectionParam := lower (default "" .Params.section) }}
+    {{ if eq .Section "om-safespring" }}
+      {{ $sectionLabel = T "menu.safespring_about" }}
+    {{ else if eq .Section
+      "referenser"
+    }}
+      {{ $sectionLabel = T "menu.customer_references" }}
+    {{ else if .Params.sectiontext }}
+      {{ $sectionLabel = .Params.sectiontext }}
+    {{ else if .Params.section }}
+      {{ if or (eq $sectionParam "blog") (eq $sectionParam "blogg") }}
+        {{ $sectionLabel = T "knowledgehub.blog" }}
+      {{ else if or (eq .Section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
+        {{ $sectionLabel = T "knowledgehub.tech_update" }}
+      {{ else }}
+        {{ $sectionLabel = .Params.section }}
+      {{ end }}
+    {{ else if not .Params.toplogo }}
+      {{ if eq $sectionName "blog" }}
+        {{ $sectionLabel = T "knowledgehub.blog" }}
+      {{ else if eq $sectionName "tech-update" }}
+        {{ $sectionLabel = T "knowledgehub.tech_update" }}
+      {{ else }}
+        {{ $sectionLabel = .Section }}
+      {{ end }}
+    {{ end }}
     {{ if .Params.toplogo }}
+      {{ $topLogo := printf "/img/logos/%s" .Params.toplogo }}
       <img
-        src="/img/logos/{{ .Params.toplogo }}"
+        src="{{ $topLogo }}"
+        {{ partial "image-dimensions.html" $topLogo | safeHTMLAttr }}
         alt="{{ T "general.logo_alt" }}"
         class="toplogo"
       />
     {{ end }}
-    <a
-      class="{{ if .Params.sectionhighlight }}sectionhighlight{{ end }}"
-      href="{{ with .CurrentSection }}{{ .RelPermalink }}{{ else }}{{ relLangURL "/" }}{{ end }}"
-      style="{{ if .Params.cardcolor }}color: #195F8C;{{ end }}"
-    >
-      {{ if eq .Section "om-safespring" }}
-        {{ T "menu.safespring_about" }}
-      {{ else if eq .Section
-        "referenser"
-      }}
-        {{ T "menu.customer_references" }}
-      {{ else if .Params.sectiontext }}
-        {{ .Params.sectiontext }}
-      {{ else if .Params.section }}
-        {{ .Params.section }}
-      {{ else if .Params.toplogo }}
-      {{ else }}
-        {{ .Section }}
-      {{ end }}
-    </a>
+    {{ with $sectionLabel }}
+      <a
+        class="{{ if $.Params.sectionhighlight }}sectionhighlight{{ end }}"
+        href="{{ with $.CurrentSection }}{{ .RelPermalink }}{{ else }}{{ relLangURL "/" }}{{ end }}"
+        style="{{ if $.Params.cardcolor }}color: #195F8C;{{ end }}"
+      >
+        {{ . }}
+      </a>
+    {{ end }}
   </div>
   {{ if .Params.sectionhighlight }}
     <div style="margin-bottom: 40px"></div>
@@ -46,15 +65,12 @@
   {{ else }}
   {{ end }}
   {{ if .Params.sidebarlinkurl }}
-    {{ $sidebarlinkurl := .Params.sidebarlinkurl }}
-    {{ if strings.HasSuffix $sidebarlinkurl ".md" }}{{ $sidebarlinkurl = relref . $sidebarlinkurl }}{{ end }}
+    {{ $sidebarlinkurl := partial "resolve-link.html" (dict "page" . "href" .Params.sidebarlinkurl) }}
     <div class="header-button">
       <a href="{{ $sidebarlinkurl }}" target="_self" class="button">{{ if .Params.sidebarlinkicon }}<i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Params.sidebarlinkname }}</a>
       {{ if .Params.sidebarlinkurl2 }}
-        {{ $sidebarlinkurl2 := .Params.sidebarlinkurl2 }}
-        {{ if strings.HasSuffix $sidebarlinkurl2 ".md" }}{{ $sidebarlinkurl2 = relref . $sidebarlinkurl2 }}{{ end }}
+        {{ $sidebarlinkurl2 := partial "resolve-link.html" (dict "page" . "href" .Params.sidebarlinkurl2) }}
         <a
-          style="margin: 25px 0 0 0; padding: 1px 0 0 0"
           href="{{ $sidebarlinkurl2 }}"
           target="_self"
           class="text-button"
@@ -63,7 +79,12 @@
     </div>
   {{ end }}
   {{ if .Params.logo }}
-    <img src="{{ .Params.logo }}" alt="{{ T "general.logo_alt" }}" class="logo" />
+    <img
+      src="{{ .Params.logo }}"
+      {{ partial "image-dimensions.html" .Params.logo | safeHTMLAttr }}
+      alt="{{ T "general.logo_alt" }}"
+      class="logo"
+    />
   {{ else }}
   {{ end }}
 </div>

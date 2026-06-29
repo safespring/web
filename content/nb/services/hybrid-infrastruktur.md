@@ -20,7 +20,7 @@ aliases:
 
 <div class="ingress"><p>Å måtte investere i infrastruktur som bare trengs ved trafikktopper, noen få ganger i året, kan bli en dyr affære. Samtidig finnes det grunner til å selv beholde kontrollen over tjenestene man som bedrift tilbyr kundene sine.</p></div>
 
-<a href="#testa-safespring" id="text-button">Prøv Safespring</a>
+<a href="#testa-safespring" class="text-button">Prøv Safespring</a>
 
 En populær måte å løse de uregelmessige trafikkmønstrene samtidig som man beholder kontrollen, er å bruke en privat sky som ved behov kan kompletteres med en offentlig. Dette kalles for Hybrid Cloud. Siden Safesprings tjenester leveres lokalt, kan du trygt la skyen vår håndtere belastningstoppene samtidig som du beholder kontrollen selv.
 

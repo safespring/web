@@ -104,7 +104,7 @@ The Customer acknowledge and accept that Safespring without any liability is ent
 
 All Service Fees are exclusive of VAT and other taxes and/or duties.
 
-**SERVICES** — Customer’s right to use the Services is conditioned upon the Customer’s timely payment of Service Fees. Applicable Service Fees are set out at www.safespring.com/pris/.
+**SERVICES** — Customer’s right to use the Services is conditioned upon the Customer’s timely payment of Service Fees. Applicable Service Fees are set out in Safespring’s [price list]({{% relref "/price.md" %}}).
 
 **PROFESSIONAL SERVICES** — The Customer shall for the Professional Services pay the Services Fee set out at [link]. Unless otherwise has been agreed Professional Services are charged on time and material basis.
 

@@ -52,7 +52,7 @@ To create a production build locally:
 npm run build
 ```
 
-The local build installs Node dependencies if needed, installs the Playwright Chromium runtime, regenerates compliance PDFs from the current Git checkout, and then runs Hugo. Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
+The local build installs Node dependencies if needed, installs the Playwright Chromium runtime, regenerates compliance metadata and PDFs from the current Git checkout, and then runs Hugo. Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
 
 Compliance PDFs are generated before Hugo renders the site. The Caddy v2 repo watcher that publishes beta should run:
 
@@ -60,7 +60,9 @@ Compliance PDFs are generated before Hugo renders the site. The Caddy v2 repo wa
 npm run build:beta
 ```
 
-The beta build script runs `npm ci`, installs the Playwright Chromium runtime, regenerates compliance PDFs from the current Git checkout, and then runs `hugo --minify`. Pass Hugo destination arguments after `--`, for example `npm run build:beta -- -d /var/www/beta`.
+The beta build script runs `npm ci`, installs the Playwright Chromium runtime, regenerates compliance metadata and PDFs from the current Git checkout, and then runs `hugo --minify`. Pass Hugo destination arguments after `--`, for example `npm run build:beta -- -d /var/www/beta`.
+
+In the Caddy v2 VM publishing flow, Markdown files in `content/compliance/` are the source of truth. After a pull from GitHub, the watcher must run the beta build script before Caddy serves the updated site. This covers both local pull requests and edits made directly on github.com: the VM regenerates `data/compliance_meta.json` and the compliance PDFs from the checked-out Markdown, then Hugo copies the generated files into the published destination. These generated files are ignored by git and should not be included in pull requests.
 
 ## Link crawler
 

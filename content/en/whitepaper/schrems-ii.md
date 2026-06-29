@@ -16,6 +16,7 @@ toc: "Table of contents"
 language: "en"
 aliases:
   - /en/whitepaper/schrems2/
+  - /en/whitepaper/schrems2/)
 ---
 
 ## Background

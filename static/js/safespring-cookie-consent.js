@@ -44,6 +44,62 @@ function syncCategory(category) {
   }
 }
 
+function findCookiePolicyUrl(button) {
+  var scope = button && button.closest ? button.closest('.safespring-footer-information-menu') : null;
+  var cookieLink = scope ? scope.querySelector('a[href*="cookies"], a[href*="cookie"], a[href*="webbplats"], a[href*="nettsted"], a[href*="websted"]') : null;
+  if (cookieLink && cookieLink.href) {
+    return cookieLink.href;
+  }
+
+  var lang = (document.documentElement.lang || '').toLowerCase();
+  if (lang === 'sv') {
+    return '/dokument/om-webbplatsen/';
+  }
+  if (lang === 'nb' || lang === 'no' || lang === 'nn') {
+    return '/dokumenter/om-nettstedet/';
+  }
+  if (lang === 'da') {
+    return '/dokumenter/om-webstedet/';
+  }
+  return '/documents/about-the-website/';
+}
+
+function openCookieSettings(event) {
+  var trigger = event && event.target && event.target.closest
+    ? event.target.closest('.cookie-consent-settings, .cookie-consent-settings-inline')
+    : null;
+
+  if (event) {
+    event.preventDefault();
+  }
+
+  try {
+    if (window.cookieTractor && typeof window.cookieTractor.openConsentSettings === 'function') {
+      window.cookieTractor.openConsentSettings();
+      return true;
+    }
+  } catch (error) {
+    console.warn('Cookie settings are not available yet. Opening the cookie policy instead.');
+  }
+
+  window.location.href = findCookiePolicyUrl(trigger);
+  return false;
+}
+
+window.safespringOpenCookieSettings = openCookieSettings;
+
+document.addEventListener('click', function (event) {
+  var target = event.target && event.target.closest
+    ? event.target.closest('.cookie-consent-settings, .cookie-consent-settings-inline')
+    : null;
+  if (!target) {
+    return;
+  }
+
+  event.stopImmediatePropagation();
+  openCookieSettings(event);
+}, true);
+
 (function initConsentSync() {
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {

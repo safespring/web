@@ -16,6 +16,7 @@ toc: "Indholdsfortegnelse"
 aliases:
   - /blogg/2022-03-ssh-keys
   - /blogg/2022/2022-03-ssh-keys/
+  - /tekniske-opdateringer/2022-03-ssh-keys/
 ---
 {{< ingress >}}
 For Linux-/Unix-baserede cloud-instanser aktiveres den indledende root-adgang til instanserne ved hjælp af SSH-nøgler. I dette indlæg gennemgår vi bedste praksis og ting, du skal huske, når du håndterer ssh-nøgler for at give root-adgang til instanser.

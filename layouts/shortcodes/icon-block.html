@@ -1,10 +1,11 @@
-{{ $href := .Get "link" }}
-{{ with .Get "linkref" }}{{ $href = relref $.Page . }}{{ end }}
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get "link")) }}
+{{ with .Get "linkref" }}{{ $href = partial "resolve-link.html" (dict "page" $.Page "href" .) }}{{ end }}
 {{ with $href }}
 <a class="icon-block-link" href='{{ . }}'>{{ end }}
     <div class="icon-block" style='color: {{ .Get "color" }};'>
         {{ if .Get "image" }}
-            <img src='{{ .Get "image" }}' alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;"/>
+            {{ $image := .Get "image" }}
+            <img src='{{ $image }}' {{ partial "image-dimensions.html" $image | safeHTMLAttr }} alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;"/>
         {{ else }}
             <i class='{{ .Get "icon" }} icon'></i>
         {{ end }}

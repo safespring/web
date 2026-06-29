@@ -12,6 +12,8 @@ eventbild: ""
 socialmediabild: ""
 language: "nb"
 author: ""
+aliases:
+  - /blogg/2026-02-johan-harrysson-vd/
 ---
 ![Johan Harrysson, daglig leder i Safespring](/img/people/harrysson/safespring-harrysson-1.jpg)
 *Last ned [høyoppløst bilde](/img/people/harrysson/safespring-harrysson-2.jpg).*

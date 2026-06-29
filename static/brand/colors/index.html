@@ -305,6 +305,51 @@
           gap: 14px;
         }
 
+        .tone-list {
+          table-layout: fixed;
+        }
+
+        .tone {
+          display: grid;
+          gap: 7px;
+          height: auto;
+          padding: 12px 0;
+        }
+
+        .tone:not(:last-child) {
+          border-bottom: 1px solid var(--line);
+        }
+
+        .tone th,
+        .tone td {
+          display: block;
+          border-bottom: 0;
+          padding: 0;
+        }
+
+        .tone-label {
+          width: auto;
+          padding: 0;
+          font-size: 0.82rem;
+        }
+
+        .copy-button {
+          grid-template-columns: 42px minmax(0, 1fr);
+          align-items: baseline;
+          min-height: 22px;
+          overflow-wrap: anywhere;
+          white-space: normal;
+        }
+
+        .copy-kind {
+          line-height: 1.1;
+        }
+
+        .copy-value {
+          overflow-wrap: anywhere;
+          line-height: 1.1;
+        }
+
         .visual {
           min-height: 302px;
         }

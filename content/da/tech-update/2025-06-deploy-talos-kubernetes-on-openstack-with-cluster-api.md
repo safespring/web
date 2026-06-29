@@ -11,12 +11,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "da"
-sectiontext: "Teknologiopdatering"
+sectiontext: "Deep Dives"
 section: "Teknisk opdatering"
 author: "Stefan Negru"
 TOC: "I dette indlæg"
 aliases:
   - /blogg/2025/2025-04-validating-talos-linux-intstall/
+  - /tekniske-opdateringer/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/
 ---
 # 
 

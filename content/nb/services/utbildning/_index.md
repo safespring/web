@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Safespring-kurs"
+url: "/tjenester/utbildning/"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Vi tror på å bygge skalerbar programvare og infrastruktur, og ved hjelp av kursene våre kan du lære hva det betyr for deg og organisasjonen din, og hvordan det kan støtte driften og den videre utviklingen deres som et vellykket selskap."
@@ -21,7 +22,7 @@ Vi tilbyr for øyeblikket fem kurs på ulike tekniske nivåer for å gi deg båd
 To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk oversikt, men uten spesialistnivå. Målet med disse kursene er å styrke forståelsen og kunnskapen på ledernivå, både om skytjenester og fordelene en virksomhet kan oppnå ved å ta i bruk moderne praksis for skytjenester.
 
 <div class="accordion-box">
-<button class="accordion">Introduksjon til «infrastruktur som en tjeneste» for ledere</button>
+<button type="button" class="accordion">Introduksjon til «infrastruktur som en tjeneste» for ledere</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybegynner (uten eller med begrenset teknisk kunnskap)</p>
@@ -29,11 +30,11 @@ To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk overs
   <p>CEO, CTO, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, toppledere osv.</p>
   <h3>Varighet</h3>
   <p>1 dag</p>
-    <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}";'>Les mer</button>
+    <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a>
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Skystrategi for toppledere</button>
+<button type="button" class="accordion">Skystrategi for toppledere</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybegynner / ledelse (ingen eller begrenset teknisk bakgrunn).</p>
@@ -41,7 +42,7 @@ To av våre kurspakker er rettet mot ansatte som har en overordnet teknisk overs
   <p>CEO, CTO, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, toppledere osv.</p>
   <h3>Varighet</h3>
   <p>1 dag.
-  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a></p>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Les mer</a></p>
 </div>
 </div>
 
@@ -52,7 +53,7 @@ Vi tilbyr for tiden to tekniske kurspakker som dekker arbeid med skyen, fra ulik
 Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på et overordnet nivå av hvilke muligheter og fordeler skytjenester kan gi virksomheten din i form av høyere sikkerhet, lavere produksjonskostnader, fleksibilitet, kortere tid til markedet, etterlevelse av lokale lover og forskrifter, og mer …
 
 <div class="accordion-box">
-<button class="accordion">Introduksjon til skytjenester</button>
+<button type="button" class="accordion">Introduksjon til skytjenester</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Nybegynner (med noe teknisk kunnskap)</p>
@@ -60,11 +61,11 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
   <p>Programvareutviklere, tekniske prosjektledere, programvarearkitekter, drifts- og supportmedarbeidere, utrullingsingeniører, IT‑sjefer, utviklingssjefer, tekniske sjefer, linjeledere, QA- og testspesialister, domeneeksperter. Fra alle bransjer. </p>
   <h3>Varighet</h3>
   <p>4 dager (eller 2 + 2 dager)</p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}";'>Les mer</button>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}'>Les mer</a>
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Moderne DevOps og mikrotjenester</button>
+<button type="button" class="accordion">Moderne DevOps og mikrotjenester</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Mellomnivå</p>
@@ -73,12 +74,12 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
   <h3>Varighet</h3>
   <p>4 dager (eller 2 + 2 dager)</p>
   <p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/modern-devops.md" %}}";'>Les mer</button>
+  <a class="button" href='{{% relref "/services/utbildning/modern-devops.md" %}}'>Les mer</a>
   </p>
 </div>
 </div>
 <!--<div class="accordion-box">
-<button class="accordion">Lean kunstig intelligens</button>
+<button type="button" class="accordion">Lean kunstig intelligens</button>
 <div class="panel">
   <h3>Nivå</h3>
   <p>Mellomnivå</p>
@@ -87,7 +88,7 @@ Disse to pakkene er utviklet for å gi deg en oversikt og en god forståelse på
   <h3>Varighet</h3>
   <p>6 uker</p>
   <p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/lean-ai/';">Les mer</button>
+  <a class="button" href="/services/utbildning/lean-ai/">Les mer</a>
   </p>
 </div>
 </div>-->

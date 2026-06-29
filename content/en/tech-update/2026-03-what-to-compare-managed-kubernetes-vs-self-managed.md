@@ -3,7 +3,7 @@ title: "Understanding Safespring Kubernetes Engine if you usually run Kubernetes
 date: "2026-03-30"
 intro: "A practical guide for platform teams who want to understand the service boundary, defaults, and engineering trade-offs in Safespring Kubernetes Engine."
 draft: false
-sectiontext: "Tech Update"
+sectiontext: "Deep Dives"
 section: "Tech update"
 tags: ["container"]
 showthedate: true
@@ -14,12 +14,13 @@ language: "en"
 author: ""
 TOC: "In this post"
 sidebarlinkname: "Talos on OpenStack"
-sidebarlinkurl: "/tech-update/2025-03-talos-linux-on-openstack.md"
+sidebarlinkurl: "/deep-dive/using-talos-linux-and-kubernetes-bootstrap-on-openstack/"
 sidebarlinkname2: "Cluster API on OpenStack"
-sidebarlinkurl2: "/tech-update/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api.md"
+sidebarlinkurl2: "/deep-dive/deploy-talos-kubernetes-on-openstack-with-cluster-api/"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
+  - /tech-update/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
 ---
 
 {{< ingress >}}

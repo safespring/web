@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/webbaserat-kontorsstod
   - /blogg/2019/2019-02-webbaserat-kontorsstod/
+  - /blog/2019-02-webbaserat-kontorsstod/
 ---
 {{< ingress >}}
 By web-based office suite we mean fully integrated, web-based email, word processing, spreadsheets, presentations, chat, file storage, and document management.
@@ -36,4 +37,4 @@ At the same time, it emerged that the existing framework agreements are not suff
 
 Safespring will follow developments closely and will contribute to the dialogue with our expertise in secure, modern, and local cloud services. At the time of writing, we are on site for the presentation of the pre-study. The photo shows Daniel Melin, an IT procurement officer at Kammarkollegiet.
 
-![Safespring on site during the presentation of the pre-study: web-based office suites](../safespring-webbaserat-kontorsstod.jpg)
+![Safespring on site during the presentation of the pre-study: web-based office suites](/img/blogg/socialmedia/safespring-webbaserat-kontorsstod.jpg)

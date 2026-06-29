@@ -15,6 +15,7 @@ language: "da"
 toc: "I dette indlæg"
 aliases:
   - /blogg/2024/2024-11-future-ready-automated-services-in-the-higher-education-sector/
+  - /tekniske-opdateringer/2024-11-future-ready-automated-services-in-the-higher-education-sector/
 ---
 {{< ingress >}}
 Sektoren for videregående uddannelser står ved en teknologisk korsvej. Innovation skal fortsætte for at imødekomme nye krav, men omkostningsoptimering og et stadigt større behov for fleksibilitet og sikkerhed kan være svære at håndtere.

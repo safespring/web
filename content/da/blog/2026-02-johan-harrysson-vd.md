@@ -12,6 +12,8 @@ eventbild: ""
 socialmediabild: ""
 language: "da"
 author: ""
+aliases:
+  - /blog/2026-02-johan-harrysson-vd/
 ---
 ![Johan Harrysson, administrerende direktør (VD) hos Safespring](/img/people/harrysson/safespring-harrysson-1.jpg)
 *Download [højtopløst billede](/img/people/harrysson/safespring-harrysson-2.jpg).*

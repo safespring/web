@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Safespring-kurser"
+url: "/tjenester/utbildning/"
 date: 2019-01-07T13:58:58+01:00
 draft: false
 intro: "Vi tror på at bygge skalerbar software og infrastruktur, og ved hjælp af vores kurser kan du lære, hvad det betyder for dig og din organisation, og hvordan det kan understøtte driften og den videre udvikling af din virksomhed."
@@ -21,7 +22,7 @@ Vi tilbyder i øjeblikket fem kurser på forskellige tekniske niveauer, så du b
 To af vores kursuspakker henvender sig til medarbejdere med et overordnet teknisk overblik, men uden specialistniveau. Målet er at styrke forståelsen og viden på ledelsesniveau, både om cloud computing og de fordele, en virksomhed kan opnå ved at tage moderne cloud-praksis i brug.
 
 <div class="accordion-box">
-<button class="accordion">Introduktion til “Infrastructure as a Service” for ledere</button>
+<button type="button" class="accordion">Introduktion til “Infrastructure as a Service” for ledere</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Begynder (ingen eller begrænset teknisk viden)</p>
@@ -29,11 +30,11 @@ To af vores kursuspakker henvender sig til medarbejdere med et overordnet teknis
   <p>CEO, CTO, IT-chefer, udviklingschefer, tekniske chefer, linjeledere, topledere osv.</p>
   <h3>Varighed</h3>
   <p>1 dag</p>
-    <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}";'>Læs mere</button>
+    <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Læs mere</a>
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Cloud-strategi for topledere</button>
+<button type="button" class="accordion">Cloud-strategi for topledere</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Begynder / ledelse (ingen eller begrænset teknisk baggrund).</p>
@@ -41,7 +42,7 @@ To af vores kursuspakker henvender sig til medarbejdere med et overordnet teknis
   <p>CEO, CTO, IT-chefer, udviklingschefer, tekniske chefer, linjeledere, topledere osv.</p>
   <h3>Varighed</h3>
   <p>1 dag.
-  <a id="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Læs mere</a></p>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-infrastructure-as-a-service-for-managers.md" %}}'>Læs mere</a></p>
 </div>
 </div>
 
@@ -52,7 +53,7 @@ Vi tilbyder i øjeblikket to tekniske kursuspakker, der dækker arbejde med skye
 Disse to pakker er udviklet til at give dig et overblik og en god forståelse på højt niveau af, hvilke muligheder og fordele cloud-tjenester kan tilbyde din drift og forretning i form af højere sikkerhed, lavere omkostninger, fleksibilitet, kortere time-to-market, efterlevelse af lokale love og regler m.m.
 
 <div class="accordion-box">
-<button class="accordion">Introduktion til cloud computing</button>
+<button type="button" class="accordion">Introduktion til cloud computing</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Begynder (med noget teknisk viden)</p>
@@ -60,11 +61,11 @@ Disse to pakker er udviklet til at give dig et overblik og en god forståelse p�
   <p>Softwareudviklere, tekniske projektledere, softwarearkitekter, driftssupport-specialister, deployment-ingeniører, IT-chefer, udviklingschefer, tekniske chefer, linjeledere, QA- og testfolk, domæneeksperter. Fra alle brancher. </p>
   <h3>Varighed</h3>
   <p>4 dage (eller 2 + 2 dage)</p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}";'>Læs mere</button>
+  <a class="button" href='{{% relref "/services/utbildning/introduction-to-cloud-computing.md" %}}'>Læs mere</a>
 </div>
 </div>
 <div class="accordion-box">
-<button class="accordion">Moderne DevOps & microservices</button>
+<button type="button" class="accordion">Moderne DevOps & microservices</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Øvet</p>
@@ -73,12 +74,12 @@ Disse to pakker er udviklet til at give dig et overblik og en god forståelse p�
   <h3>Varighed</h3>
   <p>4 dage (eller 2 + 2 dage)</p>
   <p>
-  <button id="button" onclick='window.location.href = "{{% relref "/services/utbildning/modern-devops.md" %}}";'>Læs mere</button>
+  <a class="button" href='{{% relref "/services/utbildning/modern-devops.md" %}}'>Læs mere</a>
   </p>
 </div>
 </div>
 <!--<div class="accordion-box">
-<button class="accordion">Lean Artificial Intelligence</button>
+<button type="button" class="accordion">Lean Artificial Intelligence</button>
 <div class="panel">
   <h3>Niveau</h3>
   <p>Øvet</p>
@@ -87,7 +88,7 @@ Disse to pakker er udviklet til at give dig et overblik og en god forståelse p�
   <h3>Varighed</h3>
   <p>6 uger</p>
   <p>
-  <button id="button" onclick="window.location.href = '/services/utbildning/lean-ai/';">Læs mere</button>
+  <a class="button" href="/services/utbildning/lean-ai/">Læs mere</a>
   </p>
 </div>
 </div>-->

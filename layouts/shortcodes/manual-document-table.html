@@ -2,11 +2,21 @@
 {{- $rows := .Scratch.Get "rows" | default (slice) -}}
 {{- $matomoAction := .Get "matomoAction" -}}
 {{- $matomoCategory := default "Navigation" (.Get "matomoCategory") -}}
+{{- $tableOrdinal := .Ordinal -}}
+{{- $infoLabel := "Show description for" -}}
+{{- if eq .Page.Site.Language.Lang "sv" -}}
+  {{- $infoLabel = "Visa beskrivning för" -}}
+{{- else if eq .Page.Site.Language.Lang "nb" -}}
+  {{- $infoLabel = "Vis beskrivelse for" -}}
+{{- else if eq .Page.Site.Language.Lang "da" -}}
+  {{- $infoLabel = "Vis beskrivelse for" -}}
+{{- end -}}
 
 {{- if gt (len $rows) 0 -}}
 <div class="compliance-document-table compliance-document-table--manual">
   <div class="compliance-document-table__body">
-    {{- range $row := $rows -}}
+    {{- range $index, $row := $rows -}}
+    {{- $descriptionID := printf "manual-document-table-%d-description-%d" $tableOrdinal $index -}}
     {{- $newtab := index $row "newtab" -}}
     {{- $target := cond $newtab "_blank" "_self" -}}
     {{- $rel := cond $newtab "noopener noreferrer" "" -}}
@@ -22,7 +32,7 @@
           </span>
           <div class="compliance-document-table__title-wrap">
             <h3 class="compliance-document-table__title">{{ index $row "title" }}</h3>
-            <p class="compliance-document-table__description">{{ index $row "description" }}</p>
+            <p class="compliance-document-table__description" id="{{ $descriptionID }}" aria-hidden="true">{{ index $row "description" }}</p>
           </div>
         </div>
       </a>
@@ -31,14 +41,14 @@
         <span class="compliance-document-table__label">{{ index $row "label" }}</span>
 
         <div class="compliance-document-table__info-wrap">
-          <button type="button" class="compliance-document-table__info" aria-label="Show description for {{ index $row "title" }}">
+          <button type="button" class="compliance-document-table__info" aria-label="{{ $infoLabel }} {{ index $row "title" }}" aria-expanded="false" aria-controls="{{ $descriptionID }}">
             <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
           </button>
         </div>
 
-        <a class="compliance-document-table__arrow" href="{{ index $row "href" }}" aria-hidden="true" tabindex="-1" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}{{ safeHTMLAttr $trackAttrs }}>
+        <span class="compliance-document-table__arrow" aria-hidden="true">
           <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </span>
       </div>
     </div>
     {{- end -}}

@@ -1,0 +1,122 @@
+{{- if not (.Page.Scratch.Get "accordion-script-loaded") -}}
+  {{- .Page.Scratch.Set "accordion-script-loaded" true -}}
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    function initialiseAccordion(button, index) {
+      var panel = button.nextElementSibling;
+      if (!panel) {
+        return null;
+      }
+
+      if (!button.id) {
+        button.id = "accordion-button-" + index;
+      }
+
+      if (!panel.id) {
+        panel.id = "accordion-panel-" + index;
+      }
+
+      button.setAttribute("aria-controls", panel.id);
+      button.setAttribute("aria-expanded", button.classList.contains("accordion-active") ? "true" : "false");
+      panel.setAttribute("role", "region");
+      panel.setAttribute("aria-labelledby", button.id);
+      panel.setAttribute("aria-hidden", button.classList.contains("accordion-active") ? "false" : "true");
+
+      if (button.classList.contains("accordion-active")) {
+        panel.removeAttribute("inert");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.marginBottom = 10 + "px";
+      } else {
+        panel.setAttribute("inert", "");
+        panel.style.maxHeight = null;
+        panel.style.marginBottom = 0 + "px";
+      }
+
+      return panel;
+    }
+
+    function setAccordionState(button, expanded) {
+      var panel = button.nextElementSibling;
+      if (!panel) {
+        return;
+      }
+
+      button.classList.toggle("accordion-active", expanded);
+      button.setAttribute("aria-expanded", expanded ? "true" : "false");
+      panel.setAttribute("aria-hidden", expanded ? "false" : "true");
+
+      if (expanded) {
+        panel.removeAttribute("inert");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.marginBottom = 10 + "px";
+      } else {
+        panel.setAttribute("inert", "");
+        panel.style.maxHeight = null;
+        panel.style.marginBottom = 0 + "px";
+      }
+    }
+
+    function getAccordionHashTarget(hash) {
+      if (!hash || hash === "#") {
+        return "";
+      }
+
+      var targetId = hash.substring(1);
+      try {
+        targetId = decodeURIComponent(targetId);
+      } catch (error) {
+        return targetId;
+      }
+
+      return targetId;
+    }
+
+    for (i = 0; i < acc.length; i++) {
+      initialiseAccordion(acc[i], i);
+      if (acc[i].hasAttribute("data-accordion-ready")) {
+        continue;
+      }
+      acc[i].setAttribute("data-accordion-ready", "");
+      acc[i].addEventListener("click", function() {
+        setAccordionState(this, this.getAttribute("aria-expanded") !== "true");
+      });
+    }
+
+    function openAccordion(id) {
+      var accordionBox = document.getElementById(id);
+      if (accordionBox) {
+        var button = accordionBox.getElementsByClassName("accordion")[0];
+        if (button) {
+          setAccordionState(button, true);
+          accordionBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        }
+      }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        var targetId = getAccordionHashTarget(this.getAttribute('href'));
+        var targetElement = document.getElementById(targetId);
+        if (targetElement && targetElement.classList.contains('accordion-box')) {
+          e.preventDefault();
+          openAccordion(targetId);
+        }
+      });
+    });
+
+    function openAccordionFromHash() {
+      var targetId = getAccordionHashTarget(window.location.hash);
+      if (targetId) {
+        openAccordion(targetId);
+      }
+    }
+
+    if (window.location.hash) {
+      window.requestAnimationFrame(openAccordionFromHash);
+    }
+    window.addEventListener("hashchange", openAccordionFromHash);
+  </script>
+{{- end -}}

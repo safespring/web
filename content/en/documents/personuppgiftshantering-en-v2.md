@@ -108,7 +108,7 @@ Cookies may include:
 - Strictly necessary cookies
 - Functional cookies
 - Analytics technologies
-- Consent management cookies (read more about our cookies in the <a href="javascript:cookieTractor.openConsentSettings()" class="cookie-consent-settings" rel="nofollow">Cookies setting</a>) 
+- Consent management cookies (read more about our cookies in the <button type="button" class="cookie-consent-settings-inline" onclick="if (window.cookieTractor && cookieTractor.openConsentSettings) cookieTractor.openConsentSettings();">Cookies setting</button>)
 
 Where legally required, we obtain prior consent before placing non-essential cookies.
 

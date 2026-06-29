@@ -9,11 +9,12 @@ card: ""
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Blog"
+sectiontext: "News & Perspectives"
 section: "blog"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-eurostack/
+  - /blog/2025-03-eurostack/
 ---
 
 {{< ingress >}}

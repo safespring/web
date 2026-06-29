@@ -4,7 +4,7 @@ title: "Automatisera härdning av Windows Server på Safespring Compute: från s
 date: "2026-03-17"
 intro: "Resultatet är en fullt härdad Windows Server som du kan provisionera i ett enda steg, utan handpåläggning, från OpenStack CLI."
 draft: false
-sectiontext: "Teknikuppdatering"
+sectiontext: "Deep Dives"
 section: "Teknikuppdatering"
 tags: ["windows", "compute"]
 showthedate: true
@@ -16,6 +16,7 @@ author: "Gabriel Paues"
 aliases:
   - /blogg/2026/2026-03-windows-server-hardening/
   - /blogg/2026-03-windows-server-hardening/
+  - /tekniska-uppdateringar/2026-03-windows-server-hardening/
 ---
 
 När du startar en Windows Server-instans i en molnmiljö som Safespring Compute får du ett tomt utgångsläge: inget lösenord, ingen SSH och ingen fjärråtkomst alls.

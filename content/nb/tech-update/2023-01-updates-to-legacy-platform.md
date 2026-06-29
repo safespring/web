@@ -19,6 +19,7 @@ sidebarlinkname2: "Kontakt kundestøtte"
 sidebarlinkurl2: "mailto:support@safespring.com"
 aliases:
   - /blogg/2023/2023-01-updates-to-legacy-platform/
+  - /tekniske-oppdateringer/2023-01-updates-to-legacy-platform/
 ---
 {{< ingress >}}
 Kjære kunder, Vi vil informere om at vår gamle plattform i sto1 blir stengt 1. mai.
@@ -50,4 +51,4 @@ Takk for forståelsen og samarbeidet.
 Med vennlig hilsen,  
 Safespring Support-team
 
-{{< 2calltoaction "Kontakt support" "mailto:support@safespring.com" "Mer om plattformen vår" "/services/" >}}
+{{< 2calltoaction "Kontakt support" "mailto:support@safespring.com" "Mer om plattformen vår" "/tjenester/" >}}

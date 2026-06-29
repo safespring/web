@@ -16,6 +16,7 @@ toc: ""
 aliases:
   - /blogg/2022-08-using-jumphost-for-safespring-apis
   - /blogg/2022/2022-08-using-jumphost-for-safespring-apis/
+  - /tekniska-uppdateringar/2022-08-using-jumphost-for-safespring-apis/
 ---
 {{< ingress >}}
 Att använda en jump host är god praxis för ökad säkerhet och en enkel lösning när du inte har en fast IP-adress men behöver åtkomst till Safesprings API:er.

@@ -1,14 +1,18 @@
-{{ $href := .Get `link` }}
-{{ with .Get `linkref` }}{{ $href = relref $.Page . }}{{ end }}
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get `link`)) }}
+{{ with .Get `linkref` }}{{ $href = partial "resolve-link.html" (dict "page" $.Page "href" .) }}{{ end }}
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-  <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-image: url({{ .Get `image` }});" alt="{{ or (.Get `alt`) (.Get `cardtitle`) }}">
-</div>
-<div class="safespring-horisontal-card-col safespring-horisontal-card-content">
-<h3>{{ .Get "cardtitle" }}</h3>
-{{ if isset .Params "text" }}<p>{{ .Get "text" }}</p>{{ else }}{{ .Inner | safeHTML }}{{ end }}
-{{ if or (isset .Params "link") (isset .Params "linkref") }}<br>
-<br>
-<a class="button" href="{{ $href }}">{{ .Get "linktext" }}</a>
-{{ end }}
-</div>
+  <div
+    class="safespring-horisontal-card-col safespring-horisontal-card-image"
+    style="background-image: url({{ .Get `image` }});"
+    role="img"
+    aria-label="{{ or (.Get `alt`) (.Get `cardtitle`) }}"
+  ></div>
+  <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
+    <h3>{{ .Get "cardtitle" }}</h3>
+    {{ if isset .Params "text" }}<p>{{ .Get "text" }}</p>{{ else }}{{ .Inner | safeHTML }}{{ end }}
+    {{ if or (isset .Params "link") (isset .Params "linkref") }}<br>
+    <br>
+    <a class="button" href="{{ $href }}">{{ .Get "linktext" }}</a>
+    {{ end }}
+  </div>
 </div>

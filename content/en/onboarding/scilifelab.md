@@ -178,7 +178,7 @@ aliases:
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
+            <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
@@ -187,11 +187,11 @@ aliases:
     </div>
     <div class="form-field">
         <input type="text" id="Contact.cellPhone" name="Contact.cellPhone" required>
-        <label for="cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Cell Phone</label>
+        <label for="Contact.cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Cell Phone</label>
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
@@ -201,7 +201,7 @@ aliases:
     <p></p>
     <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="SciLifeLab">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organization</label>
+        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organization</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
@@ -225,33 +225,37 @@ aliases:
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Acceptable use policy <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Acceptable use policy <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Acceptable use policy" title="Open Acceptable use policy"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        General terms & conditions <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        General terms & conditions <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Open general terms and conditions" title="Open general terms and conditions"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549ufdca76241b764729b0c8c6e4e76ab3e8">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Create account</button>
 </form>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#checkBtn').click(function() {
-            checked = $("input[type=checkbox]:checked").length;
-            if (!checked) {
-                alert("You must accept our terms our conditions");
-                return false;
-            }
-        });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var checkBtn = document.getElementById("checkBtn");
+    if (!checkBtn) {
+        return;
+    }
+    checkBtn.addEventListener("click", function (event) {
+        var checked = document.querySelectorAll("input[type=checkbox]:checked").length;
+        if (!checked) {
+            event.preventDefault();
+            alert("You must accept our terms our conditions");
+        }
     });
+});
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function(){

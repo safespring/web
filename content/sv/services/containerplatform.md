@@ -21,7 +21,7 @@ sidebartext: "Vill du prata om tjänsten? Hör gärna av dig om du har några fr
 sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
 sidebarlinkname2: "Teknisk fördjupning"
-sidebarlinkurl2: "/tekniska-uppdateringar/förstå-safespring-kubernetes-engine-om-du-brukar-köra-kubernetes-själv/"
+sidebarlinkurl2: "/deep-dive/förstå-safespring-kubernetes-engine-om-du-brukar-köra-kubernetes-själv/"
 showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
@@ -100,16 +100,16 @@ När du vill validera arkitektur, ansvarsfördelning och driftmodell är det hä
 {{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="Vad du får från dag ett"
-    href="/tekniska-uppdateringar/förstå-safespring-kubernetes-engine-om-du-brukar-köra-kubernetes-själv/#vad-du-får-dag-ett"
+    href="/deep-dive/förstå-safespring-kubernetes-engine-om-du-brukar-köra-kubernetes-själv/#vad-du-får-dag-ett"
     icon="fa-solid fa-list-check"
-    label="Blogg"
+    label="Deep Dives"
     description="De dokumenterade plattformsstandarderna från start."
   >}}
   {{< manual-document-row
     title="Tjänstegränsen i praktiken"
-    href="/tekniska-uppdateringar/förstå-safespring-kubernetes-engine-om-du-brukar-köra-kubernetes-själv/#tjanstegransen-i-praktiken"
+    href="/deep-dive/förstå-safespring-kubernetes-engine-om-du-brukar-köra-kubernetes-själv/#tjanstegransen-i-praktiken"
     icon="fa-solid fa-people-arrows"
-    label="Blogg"
+    label="Deep Dives"
     description="Hur ansvar och operativa gränser är fördelade mellan Safespring och ert team."
   >}}
   {{< manual-document-row
@@ -151,9 +151,9 @@ När du vill validera arkitektur, ansvarsfördelning och driftmodell är det hä
 
 {{< distance >}}
 
-## Räkna på en ungefärlig månadskostnad
+## Estimera en Safespring Kubernetes Engine-miljö
 
-Använd kalkylatorn för att uppskatta kostnaden för kontrollplan, worker-noder och central blocklagring. Den är tänkt som en snabb fingervisning inför teknisk och kommersiell utvärdering.
+Använd kalkylatorn som startpunkt inför en dimensioneringsdialog. Den räknar samman managerad kontrollplan, worker-noder och central blocklagring så att ni ser hur månadskostnaden ändras när klusterkonfigurationen ändras.
 
 {{< container-price-calculator >}}
 

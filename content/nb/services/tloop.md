@@ -9,7 +9,7 @@ intro: "Integrer Safespring On-Premise Cloud i T.Loops' svenske bærekraftige an
 background: ""
 form: ""
 sidebarlinkname: "Les om Private Cloud"
-sidebarlinkurl: "/services/managed-infrastructure"
+sidebarlinkurl: "/tjenester/safesprings-lokale-sky/"
 sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute"
 socialmedia: ""
@@ -18,7 +18,7 @@ aliases:
   - /tjanster/tloop/
 ---
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-leaf" text="100 % CO₂-reduksjon" link="#" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100 % CO₂-reduksjon" link="" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-tank-water" text="Væskekjøling" link="" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30 % lavere energikostnader" link="" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-recycle" text="Klimanøytralt" link="" color="#3C9BCD">}}
@@ -89,7 +89,7 @@ Oppsummert tilbyr de mindre karbon i databehandling, mindre karbon i bygg og et 
 {{% /question %}}
 
 {{% question question="Hvor mye lavere CO₂ kan Safespring Private Cloud hos T.Loop tilby sammenlignet med min nåværende installasjon?" %}}
-De kan hjelpe deg å beregne ditt nåværende klimaavtrykk hvis de får detaljer om bruken din. Hovedsakelig baseres den beregnede CO₂-en på din PUE og hvor mange kWh du bruker. Hvis du trenger hjelp, vennligst <a href="mailto:fredric.wallsten@safespring.com">kontakt Fredric Wallsten hos Safespring</a>.
+De kan hjelpe deg å beregne ditt nåværende klimaavtrykk hvis de får detaljer om bruken din. Hovedsakelig baseres den beregnede CO₂-en på din PUE og hvor mange kWh du bruker. Hvis du trenger hjelp, vennligst [kontakt Fredric Wallsten hos Safespring](mailto:fredric.wallsten@safespring.com).
 {{% /question %}}
 
 {{% question question="Tilbyr T.Loop også Data Energy Centers® for Safespring On-Prem Cloud?" %}}
@@ -120,7 +120,7 @@ Deres Data Energy Centers® er utformet og bygget i henhold til de høyeste data
 {{% /question %}}
 
 {{% question question="Kan jeg besøke T.Loops datasenterfasiliteter før jeg inngår en colocation-avtale?" %}}
-For å bestille en omvisning, vennligst <a href="mailto:hello@tloop.se">kontakt T.Loop</a>, så ordner de et besøkstidspunkt for deg.
+For å bestille en omvisning, vennligst [kontakt T.Loop](mailto:hello@tloop.se), så ordner de et besøkstidspunkt for deg.
 {{% /question %}}
 
 {{< accordion-script >}}

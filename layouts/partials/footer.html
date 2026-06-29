@@ -4,6 +4,8 @@
       <a href="{{ relref . "/" }}"
         ><img
           src="/img/logos/safespring_logotype_blue_svg.svg"
+          width="120"
+          height="26"
           alt="{{ T "footer.logo_alt" }}"
       /></a>
       <p>{{ i18n "menu.tagline" }}</p>
@@ -15,6 +17,16 @@
       <ul>
         <li>{{ T "menu.platform" }}</li>
         <li>
+          <a href="{{ relref . "services/containerplatform" }}"
+            >{{ T "menu.platform_kubernetes" }}</a
+          >
+        </li>
+        <li>
+          <a href="{{ relref . "services/machine-learning" }}"
+            >{{ T "menu.platform_ai" }}</a
+          >
+        </li>
+        <li>
           <a href="{{ relref . "services/compute" }}"
             >{{ T "menu.platform_compute" }}</a
           >
@@ -25,18 +37,8 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "services/containerplatform" }}"
-            >{{ T "menu.platform_container" }}</a
-          >
-        </li>
-        <li>
           <a href="{{ relref . "services/backup" }}"
             >{{ T "menu.platform_backup" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "services/machine-learning" }}"
-            >{{ T "menu.platform_ai" }}</a
           >
         </li>
         <li>
@@ -48,38 +50,28 @@
     </div>
     <div class="safespring-footer-menu">
       <ul>
-        <li>{{ T "menu.industries" }}</li>
+        <li>{{ T "menu.solutions" }}</li>
         <li>
           <a href="{{ relref . "industries/research-and-education" }}"
-            >{{ T "menu.industries_education" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "industries/eosc" }}"
-            >{{ T "menu.industries_science" }}</a
+            >{{ T "menu.solutions_research_education" }}</a
           >
         </li>
         <li>
           <a href="{{ relref . "industries/government" }}"
-            >{{ T "menu.industries_government" }}</a
+            >{{ T "menu.solutions_public_sector" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "saas" }}">{{ T "menu.industries_saas" }}</a>
+          <a href="{{ relref . "saas" }}">{{ T "menu.solutions_saas" }}</a>
         </li>
         <li>
-          <a href="{{ relref . "saas/application-developers" }}"
-            >{{ T "menu.industries_application_developers" }}</a
+          <a href="{{ relref . "industries/it-leverantorer" }}"
+            >{{ T "menu.solutions_it_partners" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "services/compliant-kubernetes" }}"
-            >{{ T "menu.industries_paas" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "saas/medtech" }}"
-            >{{ T "menu.industries_medtech" }}</a
+          <a href="{{ relref . "industries/eosc" }}"
+            >{{ T "menu.solutions_open_science" }}</a
           >
         </li>
       </ul>
@@ -88,9 +80,20 @@
       <ul>
         <li>{{ T "knowledgehub.knowledgehub" }}</li>
         <li>
+          <a href="{{ relref . "tech-update" }}"
+            >{{ T "knowledgehub.tech_update" }}</a
+          >
+        </li>
+        <li>
           <a href="{{ relref . "services/case" }}"
             >{{ T "knowledgehub.use_case" }}</a
           >
+        </li>
+        <li>
+          <a href="{{ relref . "webinar" }}">{{ T "knowledgehub.webcast" }}</a>
+        </li>
+        <li>
+          <a href="{{ relref . "blog" }}">{{ T "knowledgehub.blog_footer" }}</a>
         </li>
         <li>
           <a href="{{ relref . "solution-brief" }}"
@@ -98,23 +101,12 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "webinar" }}">{{ T "knowledgehub.webcast" }}</a>
-        </li>
-        <li>
-          <a href="{{ relref . "blog" }}">{{ T "knowledgehub.blog" }}</a>
-        </li>
-        <li>
           <a href="{{ relref . "whitepaper" }}"
             >{{ T "knowledgehub.whitepaper" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "tech-update" }}"
-            >{{ T "knowledgehub.tech_update" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "faq" }}">{{ T "knowledgehub.faq" }}</a>
+          <a href="{{ relref . "faq" }}">{{ T "knowledgehub.faq_footer" }}</a>
         </li>
       </ul>
     </div>
@@ -162,24 +154,36 @@
       <a href="https://www.linkedin.com/company/safespring/"
         ><img
           src="/img/logos/social-media/safespring-linkedin.svg"
+          width="31"
+          height="31"
           alt="{{ T "footer.social_linkedin_alt" }}"
       /></a>
       <a href="https://www.x.com/safespring/"
-        ><img src="/img/logos/social-media/safespring-x.svg" alt="{{ T "footer.social_x_alt" }}"
+        ><img
+          src="/img/logos/social-media/safespring-x.svg"
+          width="31"
+          height="31"
+          alt="{{ T "footer.social_x_alt" }}"
       /></a>
       <a href="https://github.com/safespring/"
         ><img
           src="/img/logos/social-media/safespring-github.svg"
+          width="31"
+          height="31"
           alt="{{ T "footer.social_github_alt" }}"
       /></a>
       <a href="https://www.youtube.com/@safespring8922/"
         ><img
           src="/img/logos/social-media/safespring-youtube.svg"
+          width="31"
+          height="31"
           alt="{{ T "footer.social_youtube_alt" }}"
       /></a>
       <a href="https://www.facebook.com/Safespring-147994442601302/"
         ><img
           src="/img/logos/social-media/safespring-facebook.svg"
+          width="31"
+          height="31"
           alt="{{ T "footer.social_facebook_alt" }}"
       /></a>
     </div>
@@ -220,11 +224,11 @@
           >
         </li>
         <li>
-          <a
-            href="javascript:cookieTractor.openConsentSettings()"
+          <button
+            type="button"
             class="cookie-consent-settings"
-            rel="nofollow"
-            >{{ T "menu.cookie_settings" }}</a
+            onclick="if (window.cookieTractor && cookieTractor.openConsentSettings) cookieTractor.openConsentSettings();"
+            >{{ T "menu.cookie_settings" }}</button
           >
         </li>
         <li>
@@ -238,6 +242,72 @@
   </div>
 </div>
 
+{{ if (findRE "class=\"accordion" .Content 1) }}
+  {{ partial "accordion-script.html" (dict "Page" .) }}
+{{ end }}
+{{ if (findRE "compliance-document-table__info" .Content 1) }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var rows = document.querySelectorAll(".compliance-document-table__row");
+
+      rows.forEach(function (row, rowIndex) {
+        var button = row.querySelector(".compliance-document-table__info");
+        var description = row.querySelector(".compliance-document-table__description");
+
+        if (!button || !description) {
+          return;
+        }
+
+        if (!description.id) {
+          description.id = "compliance-document-description-" + rowIndex;
+        }
+
+        button.setAttribute("aria-controls", description.id);
+        button.setAttribute("aria-expanded", "false");
+        description.setAttribute("aria-hidden", "true");
+
+        button.addEventListener("click", function () {
+          var isOpen = button.getAttribute("aria-expanded") === "true";
+          rows.forEach(function (otherRow) {
+            var otherButton = otherRow.querySelector(".compliance-document-table__info");
+            var otherDescription = otherRow.querySelector(".compliance-document-table__description");
+            otherRow.classList.remove("is-description-open");
+            if (otherButton) {
+              otherButton.setAttribute("aria-expanded", "false");
+            }
+            if (otherDescription) {
+              otherDescription.setAttribute("aria-hidden", "true");
+            }
+          });
+
+          if (!isOpen) {
+            row.classList.add("is-description-open");
+            button.setAttribute("aria-expanded", "true");
+            description.setAttribute("aria-hidden", "false");
+          }
+        });
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape") {
+          return;
+        }
+
+        rows.forEach(function (row) {
+          var button = row.querySelector(".compliance-document-table__info");
+          var description = row.querySelector(".compliance-document-table__description");
+          row.classList.remove("is-description-open");
+          if (button) {
+            button.setAttribute("aria-expanded", "false");
+          }
+          if (description) {
+            description.setAttribute("aria-hidden", "true");
+          }
+        });
+      });
+    });
+  </script>
+{{ end }}
 {{ if (findRE "<pre" .Content 1) }}
   <script>
     function addLanguageLabels() {
@@ -317,6 +387,60 @@
             }
           });
         });
+      });
+    });
+  </script>
+{{ end }}
+{{ if (findRE "footnote-backref" .Content 1) }}
+  {{ $footnoteBackrefLabel := T "general.footnote_backref" }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var baseLabel = "{{ $footnoteBackrefLabel | safeJSStr }}";
+      document.querySelectorAll(".footnote-backref").forEach(function (link) {
+        var target = link.getAttribute("href") || "";
+        var reference = target.replace(/^#fnref:?/, "");
+        var label = reference ? baseLabel + " " + reference : baseLabel;
+        link.setAttribute("aria-label", label);
+        link.setAttribute("title", label);
+      });
+    });
+  </script>
+{{ end }}
+{{ if (findRE "data-src=" .Content 1) }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var lazyFrames = document.querySelectorAll("iframe[data-src]");
+      if (!lazyFrames.length) {
+        return;
+      }
+
+      function loadFrame(frame) {
+        if (!frame.dataset.src) {
+          return;
+        }
+
+        frame.src = frame.dataset.src;
+        frame.removeAttribute("data-src");
+      }
+
+      if (!("IntersectionObserver" in window)) {
+        lazyFrames.forEach(loadFrame);
+        return;
+      }
+
+      var frameObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          loadFrame(entry.target);
+          frameObserver.unobserve(entry.target);
+        });
+      });
+
+      lazyFrames.forEach(function (frame) {
+        frameObserver.observe(frame);
       });
     });
   </script>

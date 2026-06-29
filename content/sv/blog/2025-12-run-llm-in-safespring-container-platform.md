@@ -11,14 +11,17 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "sv"
-sectiontext: "Teknisk uppdatering"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-12-run-llm-in-safespring-container-platform/"
 author: "Gabriel Paues"
 TOC: "I det här inlägget"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Utforska Safespring Kubernetes Engine"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Boka demo"
+aliases:
+  - /blogg/2025-12-run-llm-in-safespring-container-platform/
 ---
 {{< ingress >}}
 Att köra en LLM lokalt behöver inte vara komplicerat. Det här inlägget visar hur du förvandlar en GPU-aktiverad Ubuntu 24.04-instans i Safespring till en praktisk AI-arbetsstation med NVIDIA-drivrutiner, Ollama och Open-WebUI.

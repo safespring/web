@@ -23,7 +23,6 @@ toc: "I denna artikel"
 service: "Safespring Private Cloud"
 ---
 
-## 
 {{< ingress >}}
 Safespring levererar en molnbaserad VM- och lagringstjänst till SciLifeLab, den största nationella forskningsinfrastrukturen för life science i Sverige. 
 {{< /ingress >}}

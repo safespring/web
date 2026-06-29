@@ -16,6 +16,7 @@ toc: "Indholdsfortegnelse"
 aliases:
   - /blogg/2022-05-terraform-ansible
   - /blogg/2022/2022-05-terraform-ansible/
+  - /tekniske-opdateringer/2022-05-terraform-ansible/
 ---
 {{< ingress >}}
 Dette er del tre i serien om Safesprings Terraform-moduler. Dette blogindlæg ser på, hvordan vi kan integrere Ansible og Terraform for at konfigurere tjenester oven på de instanser, der er klargjort med Terraform, ved at bruge Terraform-state som Ansible-inventory.

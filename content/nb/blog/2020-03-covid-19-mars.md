@@ -15,6 +15,7 @@ author_image: "firma"
 aliases:
   - /blogg/covid-19-mars
   - /blogg/2020/2020-03-covid-19-mars/
+  - /blogg/2020-03-covid-19-mars/
 ---
 <div class="ingress"><p>Safespring planlegger for fortsatt kontinuerlig drift.</p></div>
 
@@ -40,7 +41,7 @@ Safesprings ansatte er tilgjengelige som vanlig. Ta kontakt med din kundeansvarl
 
 **Fredric Wallsten**<br>
 +46 76-629 25 02<br>
-<a href="mailto:fredric.wallsten@safespring.se">fredric.wallsten@safespring.se</a>
+[fredric.wallsten@safespring.se](mailto:fredric.wallsten@safespring.se)
 
 **Brukerstøtte**<br>
-Har du spørsmål om plattformen vår, henviser vi deg til vår supportadresse. <a href="mailto:support@safespring.com">support@safespring.com</a>
+Har du spørsmål om plattformen vår, henviser vi deg til vår supportadresse. [support@safespring.com](mailto:support@safespring.com)

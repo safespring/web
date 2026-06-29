@@ -12,7 +12,7 @@ dokumentnamn: ""
 socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 sidebarlinkname: "Hent"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "#hent"
+sidebarlinkurl: "#download"
 card: "safespring_card_26.jpg"
 eventbild: ""
 aliases:
@@ -25,6 +25,8 @@ toc: "Indhold"
 {{< ingress >}}
 Dette white paper handler om EU's og amerikansk rets bestemmelser om grænseoverskridende dataoverførsler samt aktuelle retssager, som kan komme til at påvirke dette.
 {{< /ingress >}}
+
+<span id="download"></span>
 
 Allmänna dataskyddsförordningen (eng.: GDPR) trådte i kraft den 25. maj 2018 og erstattede Personuppgiftslagen (PUL). Den er hverken begyndelsen eller enden på EU's længe igangværende bestræbelser på at forbedre beskyttelsen af individets data samt retten til privatliv. Disse rettigheder er grundlæggende menneskerettigheder i EU, og samtlige medlemsstater er bundet af dem på områder, der falder ind under EU's kompetence i og med ikrafttrædelsen af Lissabontraktaten 20091. EU styrker dermed sit forspring i forhold til USA, når det gælder retlige værn om individers ret til privatliv og data.
 

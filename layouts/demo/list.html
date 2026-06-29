@@ -9,9 +9,9 @@
 <div
   class="heading-default-single"
   style="background: url({{ if.Params.eventbild }}
-    /img/blogg/background/{{ .Params.eventbild }}
+    /img/blogg/background/{{ replaceRE "^/+" "" .Params.eventbild }}
   {{ else if .Params.background }}
-    /img/background/{{ .Params.background }}
+    /img/background/{{ replaceRE "^/+" "" .Params.background }}
   {{ else }}
     /img/background/safespring-blue-fade2.svg
   {{ end }}); background-size: cover; background-position: center;"
@@ -25,9 +25,11 @@
           class="toplogo"
         />
       {{ end }}
+      {{ $sectionHref := "/" }}
+      {{ with .Section }}{{ $sectionHref = printf "/%s/" . }}{{ end }}
       <a
         class=""
-        href="/{{ .Section }}"
+        href="{{ $sectionHref }}"
         style="{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}"
       >
         {{ if eq .Section "om-safespring" }}
@@ -62,7 +64,7 @@
       {{ $sidebarlinkurl := .Params.sidebarlinkurl }}
       {{ if strings.HasSuffix $sidebarlinkurl ".md" }}{{ $sidebarlinkurl = relref . $sidebarlinkurl }}{{ end }}
       <div class="header-button">
-        <a href="{{ $sidebarlinkurl }}" target="_blank" class="button"
+        <a href="{{ $sidebarlinkurl }}" target="_blank" rel="noopener noreferrer" class="button"
           >{{ if .Params.sidebarlinkicon }}
             <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;
           {{ end }}{{ .Params.sidebarlinkname }}
@@ -74,6 +76,7 @@
             style="margin: 25px 0 0 0; padding: 1px 0 0 0"
             href="{{ $sidebarlinkurl2 }}"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-button"
           >
             {{ .Params.sidebarlinkname2 }}
@@ -112,10 +115,22 @@
     {{ end }}
   </div>
 
+  {{ $scrollLeftLabel := "Scroll left" }}
+  {{ $scrollRightLabel := "Scroll right" }}
+  {{ if eq .Site.Language.Lang "sv" }}
+    {{ $scrollLeftLabel = "Bläddra vänster" }}
+    {{ $scrollRightLabel = "Bläddra höger" }}
+  {{ else if eq .Site.Language.Lang "nb" }}
+    {{ $scrollLeftLabel = "Bla til venstre" }}
+    {{ $scrollRightLabel = "Bla til høyre" }}
+  {{ else if eq .Site.Language.Lang "da" }}
+    {{ $scrollLeftLabel = "Rul til venstre" }}
+    {{ $scrollRightLabel = "Rul til højre" }}
+  {{ end }}
   <div class="scroll-controls">
-    <button id="scrollLeft"><i class="fas fa-arrow-left"></i></button>
+    <button type="button" id="scrollLeft" aria-label="{{ $scrollLeftLabel }}"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
     <!-- Vänsterpil -->
-    <button id="scrollRight"><i class="fas fa-arrow-right"></i></button>
+    <button type="button" id="scrollRight" aria-label="{{ $scrollRightLabel }}"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
     <!-- Högerpil -->
   </div>
   <script type="text/javascript">

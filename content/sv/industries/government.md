@@ -10,6 +10,7 @@ background: "safespring-government-background.svg"
 aliases:
   - /myndighet/
   - /branscher/myndigheter/
+  - /branscher/myndigheter/daniel.melin@safespring.com
 slug: "myndigheter"
 sidebarlinkurl: "/kontakt/"
 sidebarlinkname: "Prata med Fredric"

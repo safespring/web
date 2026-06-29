@@ -18,6 +18,7 @@ sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/contact.md"
 aliases:
   - /blogg/2023/2023-02-iaas-vs-hosted-server/
+  - /blog/2023-02-iaas-vs-hosted-server/
 ---
 {{< ingress >}}
 Looking for the best hosted server for your applications or services? Why not consider Infrastructure as a Service (IaaS) instead, together with the best cloud storage service on the market?

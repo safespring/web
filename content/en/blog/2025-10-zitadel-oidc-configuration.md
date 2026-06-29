@@ -10,10 +10,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Tech Update"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-10-zitadel-oidc-configuration/"
 author: "Anders Johansson, Ahmet Balci"
 TOC: "In this post"
+aliases:
+  - /blog/2025-10-zitadel-oidc-configuration/
 ---
 
 {{< ingress >}}

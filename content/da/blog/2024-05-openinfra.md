@@ -4,7 +4,7 @@ title: "Hilsner fra OpenInfra Days Gothenburg 2024!"
 date: "2024-05-07"
 intro: "Vores session, med titlen 'Brug af NATS og Huma til at forbedre open source-infrastrukturen', var designet til at styrke både B2B-aktører og europæiske forskningsmiljøer ved at give dem robust selvbetjent adgang."
 section: "blog"
-sectiontext: "Blog"
+sectiontext: "Nyheder og perspektiver"
 draft: false
 author: "Jon Ander Novella de Miguel"
 tags: ["English"]
@@ -20,6 +20,7 @@ sidebarlinkicon: ""
 sidebarimage: "jon-openinfra-2024.webp"
 aliases:
   - /blogg/2024/2024-05-openinfra/
+  - /blog/2024-05-openinfra/
 ---
 Hej alle sammen,
 

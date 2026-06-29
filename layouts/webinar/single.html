@@ -11,14 +11,17 @@
   <div class="main-default-single">
     <div class="content-default-single">
       {{ if .Params.videoURL }}
+        {{ $isHlsSource := eq (path.Ext .Params.videoURL) ".m3u8" }}
         <div class="webinarvideo">
           <video
             id="player"
             class="webinar-videoplayer"
             poster="{{ .Params.thumbnail }}"
             controls
-            preload="metadata"
+            preload="{{ if $isHlsSource }}none{{ else }}metadata{{ end }}"
+            {{ if not $isHlsSource }}
             src="{{ .Params.videoURL }}"
+            {{ end }}
           >
             {{ range .Params.subtitles }}
               <track
@@ -30,16 +33,48 @@
             {{ end }}
             {{ T "video.browser_tag_error" }}
           </video>
+          <p
+            id="video-error"
+            class="video-error"
+            role="status"
+            data-load-error="{{ T "video.load_error" }}"
+            data-support-error="{{ T "video.browser_support_error" }}"
+            hidden
+          >
+            {{ T "video.load_error" }}
+          </p>
         </div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           var video = document.getElementById("player");
+          var videoError = document.getElementById("video-error");
           var videoSrc = "{{ .Params.videoURL }}";
+          var _paq = (window._paq = window._paq || []);
           var isFullScreen = false;
           var hlsScriptLoaded = false;
           var videoInitialized = false;
-          var isHlsSource = "{{ path.Ext .Params.videoURL }}" === ".m3u8";
+          var isHlsSource = {{ $isHlsSource }};
           var hasNativeHls = video.canPlayType("application/vnd.apple.mpegurl");
+
+          function setVideoErrorVisible(errorType) {
+            if (!videoError) {
+              return;
+            }
+
+            var message =
+              errorType === "support"
+                ? videoError.dataset.supportError
+                : videoError.dataset.loadError;
+
+            videoError.textContent = message;
+            videoError.hidden = false;
+          }
+
+          function clearVideoError() {
+            if (videoError) {
+              videoError.hidden = true;
+            }
+          }
 
           function applyTimecodeFromUrl() {
             var startTime = getTimecodeFromQuery();
@@ -74,8 +109,18 @@
             };
             script.onerror = function () {
               console.error("Failed to load hls.min.js");
+              setVideoErrorVisible("load");
             };
             document.body.appendChild(script);
+          }
+
+          function initializeHlsVideo(callback) {
+            loadHlsScript(function () {
+              initializeVideo();
+              if (callback) {
+                callback();
+              }
+            });
           }
 
           function initializeVideo() {
@@ -89,12 +134,14 @@
                 videoInitialized = true;
 
                 hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                  clearVideoError();
                   _paq.push(["trackEvent", "Video", "Loaded", videoSrc]);
                 });
 
                 hls.on(Hls.Events.ERROR, function (event, data) {
                   console.error("HLS.js error:", data);
                   if (data.fatal) {
+                    setVideoErrorVisible("load");
                     switch (data.type) {
                       case Hls.ErrorTypes.NETWORK_ERROR:
                         _paq.push([
@@ -131,7 +178,7 @@
                 videoInitialized = true;
                 _paq.push(["trackEvent", "Video", "Loaded", videoSrc]);
               } else {
-                alert("{{ T "video.browser_support_error" }}");
+                setVideoErrorVisible("support");
                 return;
               }
             } else {
@@ -151,6 +198,10 @@
 
             video.addEventListener("ended", function () {
               _paq.push(["trackEvent", "Video", "Ended", video.currentSrc]);
+            });
+
+            video.addEventListener("error", function () {
+              setVideoErrorVisible("load");
             });
 
             video.addEventListener("seeking", function () {
@@ -173,8 +224,34 @@
             applyTimecodeFromUrl();
           }
 
-          if (isHlsSource && !hasNativeHls) {
-            loadHlsScript(initializeVideo);
+          function initializeVideoForPlayback() {
+            if (isHlsSource) {
+              initializeHlsVideo(function () {
+                video.play().catch(function () {});
+              });
+            } else {
+              initializeVideo();
+              video.play().catch(function () {});
+            }
+          }
+
+          if (isHlsSource) {
+            video.addEventListener("click", function () {
+              if (!videoInitialized) {
+                initializeVideoForPlayback();
+              }
+            });
+
+            video.addEventListener("play", function () {
+              if (!videoInitialized) {
+                video.pause();
+                initializeVideoForPlayback();
+              }
+            });
+
+            if (getTimecodeFromQuery() !== null) {
+              initializeHlsVideo();
+            }
           } else {
             initializeVideo();
           }
@@ -251,7 +328,7 @@
     </div>
     <div class="sidebar-default-single">
       {{ if .Params.chapters }}
-        <button class="mobile-toc" id="mobile-toc-webinar">
+        <button type="button" class="mobile-toc" id="mobile-toc-webinar">
           <i class="fa-solid fa-list-ul"></i> {{ if .Params.chaptersTitle }}
             {{ .Params.chaptersTitle }}
           {{ else }}
@@ -334,6 +411,27 @@
       var overlay = document.querySelector(".overlay");
       var body = document.querySelector("body");
 
+      if (!toggleBtn || !sidebarContainerMobile || !overlay || !body) {
+        return;
+      }
+
+      function resetToggleIcon() {
+        var icon = toggleBtn.querySelector("i");
+        if (!icon) {
+          return;
+        }
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-list-ul");
+      }
+
+      function closeMobileToc() {
+        sidebarContainerMobile.classList.remove("expanded");
+        overlay.classList.remove("visible");
+        body.classList.remove("no-scroll");
+        toggleBtn.classList.remove("expanded");
+        resetToggleIcon();
+      }
+
       toggleBtn.addEventListener("click", function () {
         sidebarContainerMobile.classList.toggle("expanded");
         overlay.classList.toggle("visible");
@@ -355,29 +453,13 @@
       var tocLinks = sidebarContainerMobile.querySelectorAll("a");
       tocLinks.forEach(function (link) {
         link.addEventListener("click", function () {
-          sidebarContainerMobile.classList.remove("expanded");
-          overlay.classList.remove("visible");
-          body.classList.remove("no-scroll");
-          toggleBtn.classList.remove("expanded");
-
-          // Återställ ikon
-          var icon = toggleBtn.querySelector("i");
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-list-ul");
+          closeMobileToc();
         });
       });
 
       // Lägg till event listener för att stänga overlay när man klickar på den
       overlay.addEventListener("click", function () {
-        sidebarContainerMobile.classList.remove("expanded");
-        overlay.classList.remove("visible");
-        body.classList.remove("no-scroll");
-        toggleBtn.classList.remove("expanded");
-
-        // Återställ ikon
-        var icon = toggleBtn.querySelector("i");
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-list-ul");
+        closeMobileToc();
       });
     });
   </script>

@@ -5,7 +5,7 @@ section: "Nyheder og indhold"
 language: "da"
 date: 2024-12-03
 draft: false
-intro: "Safespring Knowledge Hub er en omfattende samling af Safesprings materialer og ressourcer, herunder webcasts, whitepapers, blogindlæg, tekniske opdateringer og løsningsbeskrivelser."
+intro: "Safespring Knowledge Hub samler webcasts, whitepapers, Nyheder og perspektiver, Deep Dives og løsningsbeskrivelser."
 nosidebar: ""
 fullwidth: ""
 aliases:
@@ -21,7 +21,7 @@ Du er nu en del af et voksende fællesskab, der får eksklusive opdateringer, in
 
 ### Safspring på dit eget sprog
 
-- [Besøg den svenske side]({{% ref path="/" lang="sv" %}})
-- [Besøg den norske side]({{% ref path="/" lang="nb" %}})
-- [Besøg den danske side]({{% ref path="/" lang="da" %}})
-- [Besøg den engelske side]({{% ref path="/" lang="en" %}})
+- [Besøg den svenske side](https://beta.safespring.se/)
+- [Besøg den norske side](https://beta.safespring.no/)
+- [Besøg den danske side](https://beta.safespring.dk/)
+- [Besøg den engelske side](https://beta.safespring.eu/)

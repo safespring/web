@@ -1,6 +1,3 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     .country-sweden:before {
       background-image: url("/img/flags/sweden.svg");
@@ -68,15 +65,14 @@
       padding: 0;
     }
   </style>
-</head>
-<body>
   <input
     type="text"
     id="filterInput"
     placeholder="{{ T "university_filter.placeholder" }}"
+    aria-label="{{ T "university_filter.placeholder" }}"
     style="width: 80%"
   />
-  <button id="toggleButton">{{ T "university_filter.show_all" }}</button>
+  <button type="button" id="toggleButton">{{ T "university_filter.show_all" }}</button>
   <div id="universityContainer">
     {{ if eq (T "university_filter.country") "none" }}
       {{ $order := .Get "order" | default "sweden,norway,denmark" }}
@@ -183,4 +179,3 @@
       });
     });
   </script>
-</body>

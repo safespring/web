@@ -19,6 +19,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
   - /blogg/2023/2023-04-creating-an-opensource-backup-client-library/
+  - /tech-update/2023-04-creating-an-opensource-backup-client-library/
 ---
 
 {{< ingress >}}

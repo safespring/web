@@ -10,6 +10,35 @@
 {{- $initialSubtitleLang := .initialSubtitleLang | default "" -}}
 {{- $pageSubtitleLang := .pageSubtitleLang | default "" -}}
 {{- $ccDefaultOn := .ccDefaultOn | default "" -}}
+{{- $languageCode := lower ($page.Language.Lang | default $page.Site.Language.Lang | default "sv") -}}
+{{- $isMuted := false -}}
+{{- with (index . "muted") }}{{- $isMuted = true -}}{{- end -}}
+{{- $subtitleEnableLabel := "Slå på undertexter" -}}
+{{- $subtitleDisableLabel := "Slå av undertexter" -}}
+{{- $subtitleLanguageLabel := "Undertextspråk" -}}
+{{- $muteLabel := "Ljud av" -}}
+{{- $unmuteLabel := "Ljud på" -}}
+{{- if eq $languageCode "en" -}}
+  {{- $subtitleEnableLabel = "Enable subtitles" -}}
+  {{- $subtitleDisableLabel = "Disable subtitles" -}}
+  {{- $subtitleLanguageLabel = "Subtitle language" -}}
+  {{- $muteLabel = "Mute" -}}
+  {{- $unmuteLabel = "Unmute" -}}
+{{- else if or (eq $languageCode "nb") (eq $languageCode "no") (eq $languageCode "nn") -}}
+  {{- $subtitleEnableLabel = "Slå på undertekster" -}}
+  {{- $subtitleDisableLabel = "Slå av undertekster" -}}
+  {{- $subtitleLanguageLabel = "Undertekstspråk" -}}
+  {{- $muteLabel = "Demp" -}}
+  {{- $unmuteLabel = "Lyd på" -}}
+{{- else if eq $languageCode "da" -}}
+  {{- $subtitleEnableLabel = "Slå undertekster til" -}}
+  {{- $subtitleDisableLabel = "Slå undertekster fra" -}}
+  {{- $subtitleLanguageLabel = "Undertekstsprog" -}}
+  {{- $muteLabel = "Slå lyd fra" -}}
+  {{- $unmuteLabel = "Slå lyd til" -}}
+{{- end -}}
+{{- $initialSubtitleLabel := cond (eq (lower $ccDefaultOn) "true") $subtitleDisableLabel $subtitleEnableLabel -}}
+{{- $initialMuteLabel := cond $isMuted $unmuteLabel $muteLabel -}}
 
 <div class="video-player {{ $containerClass }}" data-video-player
   {{ printf "data-video-src=%q" ($videoSrc | safeURL) | safeHTMLAttr }}
@@ -37,9 +66,9 @@
     <div data-role="timeline-fill" class="video-timeline-fill"></div>
   </div>
   <div data-role="subtitle-controls" class="video-subtitles">
-    <button type="button" data-role="subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="Slå på undertexter" title="Slå på undertexter"><i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i></button>
-    <button type="button" data-role="mute-toggle" class="video-mute-toggle" aria-pressed="false" aria-label="Ljud av" title="Ljud av"><i class="fa-solid fa-volume" aria-hidden="true"></i></button>
-    <select data-role="subtitle-select" class="video-subtitle-select" aria-label="Subtitle language"></select>
+    <button type="button" data-role="subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="{{ $initialSubtitleLabel }}" title="{{ $initialSubtitleLabel }}"><i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i></button>
+    <button type="button" data-role="mute-toggle" class="video-mute-toggle" aria-pressed="{{ cond $isMuted "true" "false" }}" aria-label="{{ $initialMuteLabel }}" title="{{ $initialMuteLabel }}"><i class="fa-solid fa-volume" aria-hidden="true"></i></button>
+    <select data-role="subtitle-select" class="video-subtitle-select" aria-label="{{ $subtitleLanguageLabel }}" title="{{ $subtitleLanguageLabel }}"></select>
   </div>
   <div data-role="time" class="video-time">00:00 / 00:00</div>
 </div>

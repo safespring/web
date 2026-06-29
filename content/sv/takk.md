@@ -18,10 +18,10 @@ Det enklaste sättet är att kontakta oss per telefon eller post. Om du har allm
 <a href="tel:+46855107370">+46 8-55 10 73 70</a>
 
 <span class="inline-rubrik">E-post</span><br>
-<a href="mailto:info@safespring.com">info@safespring.com</a>
+[info@safespring.com](mailto:info@safespring.com)
 
 <span class="inline-rubrik">Safespring Support</span><br>
-<a href="mailto:support@safespring.com">support@safespring.com</a>
+[support@safespring.com](mailto:support@safespring.com)
 
 <div class="flexcontainer-shortcode">
 {{< contact picture="/img/kontakt/fredric-wallsten.jpg" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.se" >}}

@@ -1,12 +1,10 @@
 ---
 language: "nb"
+title: "Safespring Backup: En fullstendig oppdatering av brukerportalen"
 ai: true
 ---
-#
 
 {{< author-gabriel >}}
-
-## Safespring Backup: En fullstendig oppdatering av brukerportalen
 
 <div class="ingress">
 	<p>

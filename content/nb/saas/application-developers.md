@@ -16,7 +16,7 @@ slug: "applikationsutvecklare"
 <div class="ingress"><p>Safesprings skyplattform er allsidig og et veldig godt fundament for mange forskjellige typer applikasjoner. Plattformen er godt designet for SaaS-tjenester siden skalérbarhet og fleksibilitet er viktige komponenter.</p></div>
 
 <br>
-<a href="{{% relref "/services/compliant-kubernetes.md" %}}"><img alt="Welkin gir deg alle fordelene med en moderne containerplattform som kjører i nordiske datasentre uten at du trenger å bekymre deg for drift." src="/img/saas/safespring-kubernetes.gif"></a>
+<a href="{{% relref "/services/compliant-kubernetes.md" %}}"><img alt="Welkin gir deg alle fordelene med en moderne containerplattform som kjører i nordiske datasentre uten at du trenger å bekymre deg for drift." src="/img/saas/safespring-kubernetes.gif" width="720" height="405"></a>
 <br>
 
 Vi tiltrekker kunder fra de store skytjenesteleverandørene ved å tilby en bærekraftig plattform uten låsing.
@@ -29,4 +29,4 @@ At vi er et svensk selskap som produserer tjenestene i Sverige gjør at tjeneste
 
 Kontakt oss for å se hvordan vi kan støtte deg i din virksomhet!
 
-<a href="/kontakt" id="text-button">Kontakt Safespring</a>
+<a href="/kontakt/" class="text-button">Kontakt Safespring</a>

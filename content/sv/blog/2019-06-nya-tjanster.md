@@ -14,13 +14,14 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/nya-tjanster
   - /blogg/2019/2019-06-nya-tjanster/
+  - /blogg/2019-06-nya-tjanster/
 ---
 
 <div class="ingress"><p>Behovet av säkra svenska infrastrukturtjänster ökar snabbt. Hos oss är öppen källkod och öppna standarder två av grundstenarna.</p></div>
 
 Vi har haft ett spännande halvår med många nya kunder. Bland annat har vi fått flera kunder inom hälsa- sjukvård och life-science. Det är många som ställer högre krav på juridisk säkerhet samtidigt som öppen källkod och öppna standarder står i fokus.
 
-För att stötta våra kunder i sin transformeringsresa och bistå med både kompetens och plattformstjänster utökar vi ständigt vårt serviceerbjudande. För ett par veckor sedan så lanserade vi vår DevOps-support i två olika paketeringar <a href="/devops/" id="text-button">LÄS MER</a>.
+För att stötta våra kunder i sin transformeringsresa och bistå med både kompetens och plattformstjänster utökar vi ständigt vårt serviceerbjudande. För ett par veckor sedan så lanserade vi vår DevOps-support i två olika paketeringar <a href="/devops/" class="text-button">LÄS MER</a>.
 
 Safespring planerar att lanserar flera nya driftstjänster som ger er möjlighet att fokusera era resurser på att skapa mest affärsnytta.
 

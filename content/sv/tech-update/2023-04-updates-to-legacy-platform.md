@@ -19,6 +19,7 @@ sidebarlinkname2: "Kontakta supporten"
 sidebarlinkurl2: "mailto:support@safespring.com"
 aliases:
   - /blogg/2023/2023-04-updates-to-legacy-platform/
+  - /tekniska-uppdateringar/2023-04-updates-to-legacy-platform/
 ---
 {{< ingress >}}
 Eftersom legacyplattformen i STO1 närmar sig slutet av sin livscykel hoppas vi att migreringen till den nya plattformen går bra för er.

@@ -18,6 +18,7 @@ sidebarlinkname2: "Kontakta oss"
 sidebarlinkurl2: "/kontakt"
 aliases:
   - /blogg/2023/2023-02-safespring-green-energy/
+  - /blogg/2023-02-safespring-green-energy/
 ---
 
 {{< ingress >}}

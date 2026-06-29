@@ -16,6 +16,7 @@ toc: "Innehållsförteckning"
 aliases:
   - /blogg/2022-09-api-play
   - /blogg/2022/2022-09-api-play/
+  - /tekniska-uppdateringar/2022-09-api-play/
 ---
 {{< ingress >}}
 Safespring förespråkar så mycket automatisering som möjligt med standardverktyg

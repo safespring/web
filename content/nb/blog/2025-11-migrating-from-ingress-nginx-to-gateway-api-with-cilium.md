@@ -11,14 +11,17 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Teknologioppdatering"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-11-migrating-from-ingress-nginx-to-gateway-api-with-cilium/"
 author: "Anders Johansson"
 TOC: "I dette innlegget"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Utforsk Kubernetes på forespørsel"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Bestill en demo"
+aliases:
+  - /blogg/2025-11-migrating-from-ingress-nginx-to-gateway-api-with-cilium/
 ---
 ## TL;DR
 Med utfasing av Ingress Nginx er migrering fra Ingress-Nginx til Gateway API ved bruk av Cilium med en delt gateway-tilnærming, der man bytter litt kompleksitet mot renere, mer effektiv og standardisert ingresshåndtering, én måte å løse spørsmålet om ingress til klyngen din på.

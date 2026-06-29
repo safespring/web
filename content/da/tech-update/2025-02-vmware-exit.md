@@ -11,12 +11,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "da"
-sectiontext: "Blog"
+sectiontext: "Deep Dives"
 section: "Teknisk opdatering"
 author: "Gabriel Paues"
 TOC: "I dette indlæg"
 aliases:
   - /blogg/2025/2025-02-vmware-exit/
+  - /tekniske-opdateringer/2025-02-vmware-exit/
 ---
 {{< ingress >}}
 Med Broadcoms opkøb af VMware har mange virksomheder og organisationer, der har bygget deres infrastruktur på VMware, fået en ubehagelig overraskelse: en ny abonnementsbaseret model og generelt højere priser.
@@ -83,7 +84,7 @@ Ved at bruge disse værktøjer kan tjenester konfigureres til redundans og robus
 
 Selvom denne tilgang kræver manuel opsætning, giver den administratorer en bedre forståelse af løsningen og skaber dermed tryghed.
 
-## Konklusion
+## Konklusion {#conclusion}
 
 Safesprings tjenester giver organisationer mulighed for at transformere deres interne IT til moderne cloud-baserede løsninger, samtidig med at sikkerhed, tilgængelighed og robusthed bevares. I stedet for at være afhængig af, at en platform håndterer disse opgaver automatisk, får administratorer viden og værktøjer til selv at håndtere potentielle problemer.
 

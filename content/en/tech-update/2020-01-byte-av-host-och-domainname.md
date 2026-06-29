@@ -14,8 +14,9 @@ section: "Tech update"
 aliases:
   - /blogg/byte-av-host-och-domainname
   - /blogg/2020/2020-01-byte-av-host-och-domainname/
+  - /tech-update/2020-01-byte-av-host-och-domainname/
 ---
-<a id="text-button" href="#english">Read the English version</a>
+<a class="text-button" href="#english">Read the English version</a>
 
 {{% note "14 January" %}}
 The domain name change took place on 2020-01-14. This means the host name and DNS should be updated immediately. Once you make the changes (new DNS name and add the extra root CA certificate), the service will work 100% as before and you can perform backups and restores exactly as expected. Read more under "Technical details".
@@ -32,7 +33,7 @@ Because the DNS name is tied to the certificate used for TLS, clients must updat
 This affects customers who back up to TSM1 (tsm1.cloud.ipnett.se); those whose clients point to other TSM servers already have the new root certificate and correct name.
 
 <div class="accordion-box">
-<button class="accordion">Technical details</button>
+<button type="button" class="accordion">Technical details</button>
 <div class="panel content-body">
 <p>The dsm.sys (Unix-like) or dsm.opt (Windows) file needs the TCPSERVERADDRESS parameter changed from `tsm1.cloud.ipnett.se` to `tsm1.backup.sto2.safedc.net`, and the root certificate for safedc.net must be added to the IBM TSM keystore `dsmcert.kdb`.</p><p>Existing old certificates in the keystore can remain; they do no harm.</p><p>The change will also not affect the OS’s own certificates or other installed applications that use certificates.</p>
 <h3>More information</h3>
@@ -65,7 +66,7 @@ This affects customers who back up to TSM1 (tsm1.cloud.ipnett.se); those whose c
 
 ### New address for all support tickets
 
-We will also add a new address for tickets, <a href="mailto:support@safespring.com">support@safespring.com</a>, to replace the previous support addresses under cloud.ipnett.se/no.
+We will also add a new address for tickets, [support@safespring.com](mailto:support@safespring.com), to replace the previous support addresses under cloud.ipnett.se/no.
 
 The old addresses will continue to work for a while. Having a single support entry point will make things simpler regardless of service.
 
@@ -86,7 +87,7 @@ Since the DNS name is tied to the certificate used for TLS, the clients will nee
 This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se), customers whose clients point to any other of our TSM servers already have the correct root certificate and server endpoint domain names and need not do anything.
 
 <div class="accordion-box">
-<button class="accordion">Technical details</button>
+<button type="button" class="accordion">Technical details</button>
 <div class="panel content-body">
 <p>The dsm.sys (unix-like OSes) or dsm.opt (Win) file needs to get TCPSERVERADDRESS updated from tsm1.cloud.ipnett.se to <b>tsm1.backup.sto2.safedc.net</b> and the root-ca for safedc.net needs to get into the IBM TSM keystore (dsmcert.kdb).</p><p>The old cert(s) in the keystore can stay, it will not do any harm if they remain. This will not affect the OS certificate stores, or any other application using certificates. </p>
 <h3>More information</h3>
@@ -119,7 +120,7 @@ This solely affects customers who do backups against TSM1 (tsm1.cloud.ipnett.se)
 
 ### New support address for all services
 
-We will also be adding a new address for tickets, <a href="mailto:support@safespring.com">support@safespring.com</a> to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
+We will also be adding a new address for tickets, [support@safespring.com](mailto:support@safespring.com) to replace the previous support addresses under cloud.ipnett.se/no. The old addresses will continue working for a while, but we hope it will simplify your experience by having a single point of access regardless of which service you need help with.
 
 <script>
 var acc = document.getElementsByClassName("accordion");

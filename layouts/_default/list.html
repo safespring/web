@@ -69,6 +69,7 @@
         class="content-default-single"
       {{ end }}
     >
+      {{ partial "mobile-toc.html" . }}
       {{ .Content }}
       {{ if eq .Section "webinar" }}
         <!-- Lista utvalda serier (huvudsidor för varje serie) -->

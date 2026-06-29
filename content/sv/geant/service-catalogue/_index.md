@@ -11,5 +11,6 @@ nosidebar: "ingen"
 fullwidth: "x"
 nolist: "x"
 noindex: ""
+url: "/geant/service-catalogue/"
 ---
 {{< geant-service-catalogue >}}

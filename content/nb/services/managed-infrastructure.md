@@ -21,9 +21,9 @@ Tjenesten kombinerer fleksibiliteten i skyteknologi med kontrollen fra en lokal,
 
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-user-lock" text="Digital suverenitet" link="#security-measures" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-headset" text="Profesjonell støtte" link="#support" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-headset" text="Profesjonell støtte" link="#support-and-availability" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-shield-alt" text="Sikkerhet / etterlevelse" link="#security-measures" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-tachometer-alt" text="Høy tilgjengelighet" link="#availability" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-tachometer-alt" text="Høy tilgjengelighet" link="#support-and-availability" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-expand-arrows-alt" text="Fleksibel skalerbarhet" link="#resource-scaling" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-users-cog" text="Teknisk kundeansvarlig" link="#technical-account-manager-tam" color="#32cd32">}}
 {{< /icon-block-container >}}
@@ -96,7 +96,7 @@ Maksimer potensialet i maskinlærings- og KI-prosjektene dine ved å legge til e
 
 {{< icon-block-horisontal icon="fa-kit fa-ntt" color="#195F8C" text="Oppdagelse og respons på cybertrusler" description="Når en trussel oppdages, iverksetter Samurai MDR umiddelbare tiltak for å isolere og håndtere trusselen." >}}
 
-## Støtte og tilgjengelighet
+## Støtte og tilgjengelighet {#support-and-availability}
 
 Denne tjenesten kan leveres med opptil 99,9 prosent tilgjengelighet, forutsatt at kunden oppfyller våre datasenterspesifikasjoner og krav til kapasitetsbruk. Detaljer er inkludert i standardkontrakten, som gjøres tilgjengelig i salgsprosessen. I tillegg gjelder den standard støtteprosessen som er beskrevet i [Safesprings dokumentasjon](https://docs.safespring.com/service/policies).
 

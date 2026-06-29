@@ -17,6 +17,7 @@ toc: "Indhold"
 aliases:
   - /blogg/remissvar-it-driftsutredningen
   - /blogg/2022/2022-05-remissvar-it-driftsutredningen/
+  - /blog/2022-05-remissvar-it-driftsutredningen/
 ---
 {{< ingress >}}
 Siden udredningen blev offentliggjort, har den geopolitiske situation ændret sig væsentligt. Det ændrer ikke noget i substansen for udredningen, men understreger yderligere vigtigheden af suveræne, sikre og robuste IT-tjenester.{{< /ingress >}}
@@ -113,6 +114,10 @@ Rådgiver: Amelia Andersdotter
 
 ## Links
 
-### [Samtlige høringssvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+### Samtlige høringssvar
 
-### [Slutbetænkning fra IT-driftsudredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)
+[Samtlige høringssvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+
+### Slutbetænkning fra IT-driftsudredningen
+
+[Slutbetænkning fra IT-driftsudredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)

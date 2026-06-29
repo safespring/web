@@ -3,7 +3,7 @@ title: "Automating Windows Server Hardening on Safespring Compute: From Launch t
 date: "2026-03-17"
 intro: "The result is a fully hardened Windows Server you can provision in one shot, hands-off, from the OpenStack CLI."
 draft: false
-sectiontext: "Tech Update"
+sectiontext: "Deep Dives"
 section: "Tech update"
 tags: ["windows", "compute"]
 showthedate: true
@@ -15,6 +15,7 @@ author: "Gabriel Paues"
 aliases:
   - /blogg/2026/2026-03-windows-server-hardening/
   - /blogg/2026-03-windows-server-hardening/
+  - /tech-update/2026-03-windows-server-hardening/
 ---
 
 When you spin up a Windows Server instance in a cloud environment like Safespring Compute, you get a blank slate, no password, no SSH, no remote access at all. 

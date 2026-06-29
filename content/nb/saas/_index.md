@@ -1,9 +1,9 @@
 ---
 language: "nb"
-title: "Programvare som en tjeneste blir stadig mer attraktiv, men hvordan håndteres personopplysninger?"
+title: "Skyinfrastruktur for SaaS-selskaper som håndterer kundedata"
 date: 2025-02-20
 draft: false
-intro: "Safespring tilbyr skytjenester med full integritet. Våre datasentre, som ligger i Sverige, sørger for at det kun er du som håndterer dataene dine – og at de aldri eksporteres ut av landet."
+intro: "Safespring tilbyr skyinfrastruktur fra svenske og norske datasentre for SaaS-selskaper som trenger å beskrive dataplassering, informasjonssikkerhet, support og leverandørkjede i kundegjennomganger."
 background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -18,38 +18,71 @@ aliases:
 ![Safespring-pyramiden](/img/graphics/safespring-pyramid-2025.svg)
 
 {{< ingress >}}
-Safespring forstår at kundene dine stiller høye krav til riktig håndtering av sensitive opplysninger, og at kundenes tillit til deg er viktig.
+Når SaaS-tjenesten deres selges til organisasjoner med formelle krav, må dere kunne svare på spørsmål om data, drift og ansvar. Kundene deres må forstå hvor data behandles, hvem som har tilgang, og hvilke leverandører som inngår.
 {{< /ingress >}}
 
-Safespring er en svensk skyleverandør med svenske datasentre, med fokus på å sikre at våre kunders data kun behandles av kundene selv og alltid forblir i Sverige.
+Mange SaaS-tjenester behandler personopplysninger. Når kundene har egne sikkerhetsteam, jurister, anskaffelsesprosesser og regelmessige leverandørgjennomganger, er det ikke nok at tjenesten fungerer teknisk. Dere må kunne beskrive behandling, ansvar, tilgang, supportkanaler og leverandørkjede.
 
-I nesten all SaaS er personopplysninger involvert, noe som innebærer at både du og underleverandørene dine må oppfylle kravene i personvernforordningen (GDPR). Hvis du bruker Safespring for IaaS/PaaS, blir kundenes vurdering av behandling av personopplysninger langt enklere sammenlignet med bruk av amerikanske skytjenester, noe som blant annet betyr at du kan fokusere på å selge verdien av tjenesten din i stedet.
+Safespring er en svensk skyleverandør med datasentre i Sverige og Norge. For SaaS-selskaper som selger virksomhetskritiske tjenester, gir det et infrastrukturgrunnlag der digital suverenitet, dataplassering, avtaler, tilgang og underleverandører kan beskrives uten at tjenesten må bygges på amerikanske skyleverandører.
 
-## Juridiske aspekter
+{{% note title="Når dette spiller en rolle" icon="fa-solid fa-file-shield" color="green" %}}
 
-Både du og vi i Safespring opererer i en tillitsbasert bransje der det blir stadig viktigere å gjennomgå våre avhengigheter og partnere. Kundene våre vil stille stadig høyere krav til politisk og juridisk sikkerhet i tillegg til tradisjonell IT-sikkerhet og driftssikkerhet.
+Dette er relevant når kundene deres spør om dataplassering, ISO 27001, tilgang, supportmodell, drift, underleverandører, tredjelandsrisiko eller taushetsbelagte opplysninger.
 
-Safespring er en svensk offentlig skyplattform som i stor grad forenkler din etterlevelse av svensk og europeisk lovgivning. Med fokus på åpne standarder og digital suverenitet tilbyr Safespring tjenester som virtuelle servere, lagring i stor skala, containerplattformer og backup som en tjeneste. Med datasentre i Sverige og Norge er Safespring en velprøvd og sikker plattform for SaaS-selskaper, myndigheter, datadrevne virksomheter og akademia.
+{{% /note %}}
 
-I nesten all SaaS er personopplysninger involvert, noe som innebærer at både du og underleverandørene dine må oppfylle kravene i personvernforordningen (GDPR). Når for eksempel amerikanske underleverandører brukes, er det langt mer komplisert å oppfylle kravene, det kreves mer analyse, og kundene vil stille flere spørsmål. Hvis du i stedet bruker Safespring, blir hele analysen triviell i sammenligning, noe som blant annet betyr at du kan fokusere på å selge verdien av tjenesten din i stedet for å diskutere overføringer til tredjeland, Schrems osv.
+## Juridisk kontekst
 
-Dersom din SaaS inneholder konfidensiell informasjon, enten det er opplysninger som omfattes av offentlighet og taushetsplikt, advokatklientprivilegiet eller forretningshemmeligheter, må du kunne garantere at konfidensialiteten opprettholdes. Amerikanske skyleverandører kan aldri garantere konfidensialitet, noe som fremgår av deres vilkår. Safespring har ingen slike vilkår og vil ikke utlevere kundenes opplysninger annet enn når det kreves av en svensk domstol.
+Dere og Safespring inngår i en tillitskjede. Kundene deres gransker funksjonene i SaaS-tjenesten, men også hvordan tjenesten driftes, hvor data behandles, og hvilke aktører som kan få tilgang til opplysningene.
 
-{{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datasentre" linkref="/data-centers.md" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-film" text="Se våre webinarer" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Bli kjent med selskapet" linkref="/about.md" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-lightbulb-on" text="Les løsningsbeskrivelser" link="/solution-brief/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-gavel" text="Les om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring og Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
-{{< /icon-block-container >}}
+Når amerikanske skyleverandører inngår, må dere ofte håndtere spørsmål om overføringer til tredjeland, avtaler og tilgang. Med Safespring får dere en annen leverandørkjede å beskrive: nordisk infrastruktur, datasentre i Sverige og Norge, ISO 27001-sertifisering, support fra Safesprings tekniske organisasjon og tjenester bygget på åpne standarder.
 
-## Teknologi
+Digital suverenitet blir da et praktisk spørsmål. Hvor behandles data? Hvilken jurisdiksjon gjelder? Hvem kan få tilgang til miljøet? Hvordan håndteres support- og driftssaker? Disse svarene må ofte være tydelige før en kunde kan godkjenne en SaaS-tjeneste.
 
-Safespring leverer en pålitelig og fleksibel infrastruktur som gjør det enklere for deg som SaaS-leverandør å levere tjenestene dine med høy ytelse og tilgjengelighet. Nettverksstakken er bygget med Calico, som gir deg sikker, skalerbar og høytytende kommunikasjon mellom tjenestene dine, samtidig som den sikrer stabilitet og driftssikkerhet. OpenStack-plattformen gir deg tilgang til et bredt spekter av instanstyper, som gjør det enkelt å tilpasse kapasiteten etter behov og optimalisere kostnader.
+Hvis SaaS-tjenesten deres håndterer taushetsbelagte opplysninger, må dere kunne beskrive hvordan konfidensialiteten beskyttes. Det kan gjelde opplysninger som omfattes av offentlighets- og taushetsregler, advokatklientprivilegium eller forretningshemmeligheter.
 
-Lagringen er tilpasset for å møte varierende behov, med både lokal NVMe-lagring for ekstremt rask datatilgang og sentral lagring basert på Ceph. Ceph-løsningen finnes i to varianter: én SSD-basert for høye ytelseskrav og én kostnadseffektiv lagring basert på tradisjonelle disker for store datamengder som logger og sikkerhetskopier. Ceph er også en selvreparerende og distribuert løsning som sikrer høy tilgjengelighet og redundans, noe som gir trygghet og stabilitet i din datahåndtering.
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-location-dot" text="Dataplacering som kan beskrives" description="Safespring driver infrastruktur i Sverige og Norge. Det gir et konkret svar på hvor data behandles og hvilke leverandører som inngår." >}}
 
-Safespring er en ideell plattform for deg som jobber med containerbaserte applikasjoner og Kubernetes-miljøer. Den stabile infrastrukturen og den moderne nettverksløsningen gjør det enkelt å rulle ut og administrere containerbaserte tjenester smidig. Vi utvikler også aktivt vår egen Kubernetes-baserte plattform for ytterligere å forenkle drift og skalering, alt for at du skal kunne fokusere på å utvikle tjenestene dine uten unødvendig teknisk kompleksitet.
+{{< icon-block-horisontal color="#32CD32" icon="fa-solid fa-shield-check" text="Digital suverenitet i praksis" description="Safespring gir et nordisk infrastrukturgrunnlag for tjenester der kunder spør om jurisdiksjon, tilgang, dataplassering og avhengigheter i leverandørkjeden." >}}
 
-Ved å velge Safespring får du en sikker, fleksibel og høytytende infrastruktur som er optimalisert for dine behov som SaaS-leverandør. Plattformen vår gjør at du kan fokusere på kjernevirksomheten i stedet for tekniske begrensninger, samtidig som den sikrer at tjenestene dine kan vokse og tilpasse seg fremtidige krav.
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-certificate" text="ISO 27001 og teknisk support" description="Safespring er ISO 27001-sertifisert og har en supportorganisasjon for skyplattformen. Det gir mer konkrete svar i sikkerhetsgjennomganger, revisjoner og driftsspørsmål." >}}
+
+{{% question question="Hvor behandles kundenes data?" %}}
+Safespring driver infrastruktur i Sverige og Norge. For en SaaS-leverandør gir det en dataplassering og leverandørkjede som kan beskrives for kunder, jurister og sikkerhetsteam.
+{{% /question %}}
+
+{{% question question="Hva må vi kunne vise i en kundegjennomgang?" %}}
+Dere må ofte kunne beskrive hvor data behandles, hvilke underleverandører som inngår, hvordan tilgang håndteres, hvilken supportmodell som gjelder, og hvilken del av driften hver part har ansvar for.
+{{% /question %}}
+
+{{% question question="Hvilket underlag kan vi bruke i en sikkerhetsgjennomgang?" %}}
+Dere kan beskrive Safesprings datasentre i Sverige og Norge, ISO 27001-sertifisering, supportmodell, åpne standarder og ansvarsdeling mellom SaaS-tjenesten deres og den underliggende infrastrukturen.
+{{% /question %}}
+
+{{% question question="Kan vi bygge uten å låse tjenesten til en hyperscaler?" %}}
+Ja. Safespring bygger på åpne standarder for compute, lagring og nettverk. Det gjør at applikasjoner og plattformer kan bygges uten å være avhengige av leverandørspesifikke skytjenester.
+{{% /question %}}
+
+{{< accordion-script >}}
+
+## Teknologien
+
+Safespring kan brukes som infrastrukturgrunnlag for SaaS-tjenester som kjører på virtuelle maskiner, containerplattformer eller en kombinasjon av begge. Plattformen inneholder compute, lagring, nettverk og backup. For tjenester som bygges med Kubernetes, finnes Safespring Container Platform.
+
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-server" text="Compute og OpenStack" description="Safespring Compute gir tilgang til virtuelle servere og instanstyper som kan tilpasses applikasjonens behov. Plattformen bygger på OpenStack." >}}
+
+{{< icon-block-horisontal color="#32CD32" icon="fa-solid fa-database" text="Lagring for ulike datatyper" description="Safespring tilbyr lokal NVMe-lagring for rask datatilgang og Ceph-basert sentral lagring for andre datamengder, for eksempel logger, filer og backup." >}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-cubes" text="Containerbaserte tjenester" description="For SaaS-selskaper som kjører containerbaserte applikasjoner, kan infrastrukturen kombineres med Kubernetes og åpne komponenter." >}}
+
+## Neste steg
+
+Hvis dere selger en SaaS-tjeneste til kunder med anskaffelser, sikkerhetsgjennomganger eller regelmessige leverandørrevisjoner, kan vi gå gjennom hvilke deler av infrastrukturen dere vil eie selv, og hvilke deler som bør ligge hos Safespring. Det starter ofte med dataplassering, driftsmodell, tilgang, backup, supportkanaler og hvilke opplysninger kundene deres trenger i sin gjennomgang.
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Kontakt meg hvis dere vil diskutere infrastruktur for SaaS-tjenesten deres.
+
+{{< inline "Ring" >}} [+46 76-629 25 02](tel:+46766292502)
+
+{{< inline "E-post" >}} [hello@safespring.com](mailto:hello@safespring.com)
+{{% /custom-card %}}

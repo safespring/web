@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/infrastructure-engineer
   - /blogg/2020/2020-04-infrastructure-engineer/
+  - /blog/2020-04-infrastructure-engineer/
 ---
 ## Søg jobbet som infrastrukturingeniør
 

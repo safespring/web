@@ -1,10 +1,14 @@
 <!-- Current language -->
 <span
   title="{{ .Language.LanguageName }}"
+  aria-label="{{ .Language.LanguageName }}"
+  aria-current="true"
   style="display: flex; align-items: center"
 >
   <img
     src="/img/flags/{{ .Language.Lang }}.svg"
+    width="31"
+    height="31"
     alt="{{ .Language.LanguageName }} flag"
     style="filter: opacity(0.5); transform: scale(1)"
   />
@@ -12,10 +16,19 @@
 
 <!-- Other languages -->
 {{ range .Translations }}
-  <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+  <a
+    href="{{ .Permalink }}"
+    title="{{ .Language.LanguageName }}"
+    aria-label="{{ .Language.LanguageName }}"
+    hreflang="{{ .Lang }}"
+    lang="{{ .Lang }}"
+  >
     <img
       src="/img/flags/{{ .Lang }}.svg"
-      alt="{{ .Language.LanguageName }} flag"
+      width="31"
+      height="31"
+      alt=""
+      aria-hidden="true"
     />
   </a>
 {{ end }}

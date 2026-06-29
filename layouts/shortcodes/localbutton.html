@@ -1,5 +1,6 @@
-{{ $href := .Get "link" }}
-{{ with .Get "linkref" }}{{ $href = relref $.Page . }}{{ end }}
+{{ $href := partial "resolve-link.html" (dict "page" .Page "href" (.Get "link")) }}
+{{ with .Get "linkref" }}{{ $href = partial "resolve-link.html" (dict "page" $.Page "href" .) }}{{ end }}
+{{ $target := default "_self" (.Get "target") }}
 <br>
-<a href='{{ $href }}' {{ with .Get "target" }}target='{{ . }}'{{ else }}target='_self'{{ end }} class='button'>{{ with .Get "icon" }}<i class='fa-solid {{ . }}'></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Get "text" }}</a>
+<a href='{{ $href }}' target='{{ $target }}'{{ if eq $target "_blank" }} rel='noopener noreferrer'{{ end }} class='button'>{{ with .Get "icon" }}<i class='fa-solid {{ . }}'></i>&nbsp;&nbsp;&nbsp;{{ end }}{{ .Get "text" }}</a>
 <br>

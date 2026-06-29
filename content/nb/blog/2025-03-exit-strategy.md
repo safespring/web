@@ -10,11 +10,12 @@ card: "safespring_card_54.svg"
 eventbild: ""
 socialmediabild: ""
 language: "nb"
-sectiontext: "Blogg"
+sectiontext: "Nyheter og perspektiver"
 section: "blogg"
 author: "Daniel Melin"
 aliases:
   - /blogg/2025/2025-03-exit-strategy/
+  - /blogg/2025-03-exit-strategy/
 ---
 {{< ingress >}}
 I dagens geopolitiske landskap, der USA raskt forsøker å bli mer lik Kina og Russland, står kunder hos amerikanske skyleverandører overfor vanskelige valg.

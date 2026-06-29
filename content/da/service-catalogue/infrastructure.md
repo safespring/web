@@ -30,8 +30,8 @@ Cloud-compute-tjenester omfatter følgende kategorier (OpenStack-flavors):
 1. [Grundlæggende compute](#1-basic-compute)
 1. [Hukommelsesoptimeret compute](#2-memory-optimized-compute)
 1. [Grundlæggende compute med lokal NVMe-disk](#3-basic-compute-with-local-nvme-disk)
-1. [Hukommelsesoptimeret compute med GPU og lokal NVMe-disk](#5-memory-optimized-compute-with-gpu-and-local-nvme-disk)
-1. [Bare-metal-compute](#6-bare-metal-compute)
+1. [Hukommelsesoptimeret compute med GPU og lokal NVMe-disk](#4-compute-with-gpu-and-local-nvme-disk)
+1. [Bare-metal-compute](#5-bare-metal-compute)
 
 Basisdiske er standardstørrelser for root-diske, medmindre der angives et volume med en anden størrelse ved udrulning af et image. Midlertidige diske (ephemeral) er ekstra lokale lagringsenheder, der er tilgængelige for en virtuel maskine på en specifik hypervisor, for de flavor-typer hvor det er relevant.
 
@@ -39,7 +39,7 @@ Basisdiske er standardstørrelser for root-diske, medmindre der angives et volum
 Hvis du ikke har fundet den ideelle flavor til din tjeneste, så bare rolig! Vi tilbyder en række større flavors, som i øjeblikket ikke er tilgængelige på platformen. For at høre mere, kontakt Safespring på [hello@safespring.com](mailto:hello@safespring.com).
 {{% /note %}}
 
-## 1. Grundlæggende compute
+## 1. Grundlæggende compute {#1-basic-compute}
 
 Den grundlæggende compute-profil tilbyder et vCPU-til-RAM-forhold på 1:2, hvilket betyder, at for hver virtuel CPU der allokeres, er der to gigabyte RAM tilgængeligt. Denne profil har HyperThreading deaktiveret på hypervisorerne og inkluderer ikke midlertidig (ephemeral) lagring. Derudover er CPU-overbookningsforholdet begrænset til maksimalt 1:4, hvilket sikrer, at der ikke er mere end fire gange så mange virtuelle CPU’er som fysiske CPU’er tilgængelige på værten.
 
@@ -57,7 +57,7 @@ Ingen.
 | FLAVOR-b2. c8 r16  | 8    | 16       | 0               |
 | FLAVOR-b2. c16 r32 | 16   | 32       | 0               |
 
-## 2. Hukommelsesoptimeret compute
+## 2. Hukommelsesoptimeret compute {#2-memory-optimized-compute}
 
 Den hukommelsesoptimerede compute-profil giver et vCPU-til-RAM-forhold på 1:4, hvilket betyder, at for hver virtuel CPU der allokeres, er der fire gigabyte RAM tilgængeligt. Denne profil har også HyperThreading deaktiveret på hypervisorerne og inkluderer ikke midlertidig lagring. Derudover er CPU-overbookningsforholdet begrænset til maksimalt 1:6, hvilket sikrer, at der ikke er mere end seks gange så mange virtuelle CPU’er som fysiske CPU’er tilgængelige på værten.
 
@@ -75,7 +75,7 @@ Ingen.
 | FLAVOR-b2. c8 r32  | 8    | 32       | 0               |
 | FLAVOR-b2. c16 r64 | 16   | 64       | 0               |
 
-## 3. Grundlæggende compute med lokal NVMe-disk
+## 3. Grundlæggende compute med lokal NVMe-disk {#3-basic-compute-with-local-nvme-disk}
 
 Profilen for grundlæggende compute med lokal NVMe-disk tilbyder et vCPU-til-RAM-forhold på 1:2, hvilket betyder, at for hver virtuel CPU der allokeres, er der to gigabyte RAM tilgængeligt. Denne profil inkluderer lokal midlertidig NVMe-lagring. CPU-overbookningsforholdet er sat til maksimalt 1:3, hvilket betyder, at der kan være op til tre virtuelle CPU’er for hver fysisk CPU, der er tilgængelig på værten.
 
@@ -101,7 +101,7 @@ Ingen.
 | FLAVOR-l2. c16 r32. 1000 | 16   | 32       | 1 000           |
 | FLAVOR-l2. c32 r64.1000  | 32   | 64       | 1 000           |
 
-## 4. Compute med GPU og lokal NVMe-disk
+## 4. Compute med GPU og lokal NVMe-disk {#4-compute-with-gpu-and-local-nvme-disk}
 
 Den hukommelsesoptimerede compute-profil med lokal NVMe-disk har et vCPU:RAM-forhold på 1:4. Den leveres med lokal midlertidig NVMe-lagring. CPU-overbookningsforholdet er 1:1. Den lokale lagring er IOPS-provisioneret.
 
@@ -124,7 +124,7 @@ Ingen.
 | FLAVOR-g2 .c8 r32. 500   | g2.c8r32.500   | 8    | 32 GiB     | 500 GB    | 4k/8k, 21k/42k            |
 | FLAVOR-g2 .c16 r64. 1000 | g2.c16r64.1000 | 16   | 64 GiB     | 1000 GB   | 4k/8k, 46k/92k            |
 
-## 5. Bare-metal-compute
+## 5. Bare-metal-compute {#5-bare-metal-compute}
 
 Bare-metal-compute-typen er en klargjort fysisk server. Kun de leverede OS-images understøttes fuldt ud, men der findes også dokumentation om, hvordan man forbereder et OS-image til bare-metal-serveren. Hvis bestillinger overstiger den tilgængelige kapacitet, afhænger leveringstiden af leverandørens hardwareleveringstider.
 

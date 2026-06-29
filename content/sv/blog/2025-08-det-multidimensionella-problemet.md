@@ -11,6 +11,8 @@ socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "sv"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blogg/2025-08-det-multidimensionella-problemet/
 ---
 
 {{< ingress >}}

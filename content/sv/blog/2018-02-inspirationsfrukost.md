@@ -12,6 +12,7 @@ section: "blog"
 aliases:
   - /blogg/inspirationsfrukost
   - /blogg/2018/2018-02-inspirationsfrukost/
+  - /blogg/2018-02-inspirationsfrukost/
 ---
 
 Safespring bjuder in till inspirationsfrukost kring nya teknologier och moderna sätt att bygga plattformar tillsammans med Johan Staël von Holstein.

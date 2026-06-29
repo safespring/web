@@ -18,6 +18,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
   - /blogg/2023/2023-06-it-driftnatverk/
+  - /blogg/2023-06-it-driftnatverk/
 ---
 
 {{< ingress >}}

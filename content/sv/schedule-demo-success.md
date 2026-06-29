@@ -20,6 +20,7 @@ sidebarlinkurl2: "/contact.md"
 saas: ""
 noindex: "ja"
 aliases:
+  - /container-thanks/
   - /schedule-demo-success/
 ---
 {{< ingress >}}

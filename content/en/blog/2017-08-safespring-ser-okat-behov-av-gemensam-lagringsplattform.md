@@ -14,6 +14,7 @@ section: "blog"
 aliases:
   - /blogg/safespring-ser-okat-behov-av-gemensam-lagringsplattform
   - /blogg/2017/2017-08-safespring-ser-okat-behov-av-gemensam-lagringsplattform/
+  - /blog/2017-08-safespring-ser-okat-behov-av-gemensam-lagringsplattform/
 ---
 
 With increasing data volumes across all disciplines, universities and institutions have an ever-growing need to store data efficiently. More and more projects now handle petabyte-scale data, which leads to high costs when setting up in-house storage solutions. Safespring offers an S3-compatible storage solution that can serve as a shared platform for data-intensive projects in the research community.

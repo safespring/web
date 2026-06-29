@@ -22,7 +22,7 @@
       type="image/svg+xml"
       importance="high"
     />
-    {{ $bg := .Params.background | default "safespring-blue-fade2.svg" }}
+    {{ $bg := replaceRE "^/+" "" (.Params.background | default "safespring-blue-fade2.svg") }}
     {{ if .Params.background }}
       {{ $ext := replace (path.Ext $bg) "." "" }}
       <link
@@ -113,8 +113,11 @@
       }
 
       .heading-default-single .section a {
+        align-items: center;
         color: #3c9bcd;
+        display: inline-flex;
         font: 600 1rem montserrat !important;
+        min-height: 44px;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
@@ -171,6 +174,18 @@
         width: fit-content;
         margin-right: 25px;
       }
+      @media only screen and (max-width: 600px) {
+        .button,
+        .text-button {
+          box-sizing: border-box;
+          max-width: 100%;
+          overflow-wrap: anywhere;
+          white-space: normal;
+        }
+        .button {
+          margin-right: 0;
+        }
+      }
       @media (min-width: 900px) {
         .button {
           transition: margin-right 0.3s ease, padding-right 0.3s ease;
@@ -204,6 +219,22 @@
         text-transform: uppercase;
         white-space: nowrap;
         line-height: 5;
+      }
+      a.text-button {
+        align-items: center;
+        box-sizing: border-box;
+        display: inline-flex;
+        line-height: 1.25;
+        min-height: 44px;
+        min-width: 44px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .text-button {
+          display: inline-flex;
+          align-items: center;
+          line-height: 1.25;
+        }
       }
 
       .text-button:hover {
@@ -312,12 +343,22 @@
       }
 
       .site-header-links a {
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: center;
+        min-height: 44px;
+        min-width: 44px;
         font: 15px/1 var(--hind-font-semibold) !important;
         color: var(--main-color);
         letter-spacing: 0.2px;
       }
 
       .site-header-button {
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
+        min-height: 44px;
         color: #fff !important;
         background-color: var(--green-color);
         border-radius: 50px;
@@ -331,6 +372,10 @@
       }
 
       .site-header-button-mail {
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
+        min-height: 44px;
         color: #fff !important;
         background-color: var(--green-color);
         border-radius: 50px;
@@ -512,7 +557,13 @@
         }
 
         .megamenu-service-card a {
+          align-items: center;
+          box-sizing: border-box;
           color: var(--clear-blue-color) !important;
+          display: inline-flex;
+          min-height: 44px;
+          min-width: 44px;
+          padding: 0 0.25rem;
         }
 
         .megamenu-service-card a:hover {
@@ -669,6 +720,40 @@
           max-width: 90%;
           font: 300 2.75rem/1 var(--hind-font);
         }
+        @media only screen and (max-width: 550px) {
+          .heading-default-single h1 {
+            max-width: 100%;
+            font: 300 1.85rem/1.05 var(--hind-font);
+          }
+        }
+        .heading-default-single .header-button,
+        .heading-default-single .button {
+          max-width: 100%;
+        }
+        .heading-default-single .header-button {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+        .heading-default-single .button {
+          align-items: center;
+          display: inline-flex;
+          justify-content: center;
+          line-height: 1;
+          margin-right: 0;
+        }
+        .heading-default-single .header-button .text-button {
+          align-items: center;
+          display: inline-flex;
+          line-height: 1;
+          min-height: 44px;
+        }
+        .heading-default-single .section a {
+          display: inline-flex;
+          align-items: center;
+          min-height: 44px;
+        }
       }
       {{ if .Params.logobannertransparent }}
         .heading-default-single--with-logo-banner {
@@ -766,40 +851,28 @@
       {{ end }}
     </style>
 
-    <meta
-      property="og:title"
-      content="{{ .Params.metatitle | default .Title }} | Safespring"
-    />
+    {{ $metaTitle := printf "%s | Safespring" (.Params.metatitle | default .Title) }}
+    {{ $metaDescription := T "meta.desc" }}
+    {{ with .Params.intro }}{{ $metaDescription = . }}{{ end }}
+    {{ $metaImage := "img/socialmedia/safespring-start.png" }}
+    {{ with .Params.socialmedia }}{{ $metaImage = printf "img/%s" (replaceRE "^/+" "" .) }}{{ end }}
+    {{ $metaImage = $metaImage | absURL }}
+
+    <meta property="og:title" content="{{ $metaTitle }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta
-      property="og:image"
-      content="{{ .Site.BaseURL }}{{ if isset .Params "socialmedia" }}
-        img/{{ index .Params "socialmedia" }}
-      {{ else }}
-        img/socialmedia/safespring-start.png
-      {{ end }}"
-    />
-    <meta
-      property="og:description"
-      content="{{ if isset .Params "intro" }}
-        {{ index .Params "intro" }}
-      {{ else }}
-        {{ T "meta.desc" }}
-      {{ end }}"
-    />
+    <meta property="og:image" content="{{ $metaImage }}" />
+    <meta property="og:description" content="{{ $metaDescription }}" />
     <meta property="og:site_name" content="Safespring" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $metaTitle }}" />
+    <meta name="twitter:description" content="{{ $metaDescription }}" />
+    <meta name="twitter:image" content="{{ $metaImage }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
     <meta name="author" content="{{ .Params.author }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
-    <meta
-      name="description"
-      content="{{ if isset .Params "intro" }}
-        {{ index .Params "intro" }}
-      {{ else }}
-        {{ T "meta.desc" }}
-      {{ end }}"
-    />
+    <meta name="description" content="{{ $metaDescription }}" />
     <link rel="canonical" href="{{ .Permalink }}" />
     {{- if .IsTranslated -}}
       {{ range .AllTranslations }}
@@ -818,7 +891,7 @@
     {{ end }}
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
     {{ if isset .Params "noindex" }}
       <meta name="robots" content="noindex" />

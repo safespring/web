@@ -15,6 +15,7 @@ toc: "Table of contents"
 aliases:
   - /blogg/2022-08-kubespray-minimal
   - /blogg/2022/2022-08-kubespray-minimal/
+  - /tech-update/2022-08-kubespray-minimal/
 ---
 
 {{< ingress >}}

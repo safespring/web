@@ -72,7 +72,7 @@ Safespring Kubernetes Engine passer særligt godt, når I:
 
 Den vigtigste tekniske fordel er ikke en enkelt funktion. Det er, at tjenesten er udformet som en brugbar platformsgrænse fra dag ét. Det betyder noget, fordi platformteams sjældent går i stå ved at oprette et cluster. De går i stå ved at gøre clustret konsistent, supportbart, sikkert og klart til produktion.
 
-{{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="Hvad det betyder i praksis" %}}
+{{< custom-card-logo image="/img/graphics/safespring-cloud.webp" logo="/img/graphics/safespring-byline-blue.svg" logoAlt="Safespring-logo" cardtitle="Hvad det betyder i praksis" >}}
 Arkitekturen er designet til at give jer:
 
 - en self-service-model via portal og API i stedet for manuel clusteradministration
@@ -80,7 +80,7 @@ Arkitekturen er designet til at give jer:
 - et immutable operativsystemfundament med Talos Linux, som reducerer driftsafvigelser og angrebsflade
 - en moderne netværks- og trafikmodel baseret på Cilium, Gateway API og understøttelse af Traefik
 - en tydeligere ansvarsfordeling mellem det, Safespring driver, og det jeres eget team fortsat ejer
-{{% /custom-card %}}
+{{< /custom-card-logo >}}
 
 {{< distance >}}
 
@@ -101,14 +101,14 @@ Når du vil validere arkitektur, ansvarsfordeling og driftsmodel, er dette de me
     title="Hvad du får fra dag ét"
     href="/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/#hvad-du-får-på-dag-ét"
     icon="fa-solid fa-list-check"
-    label="Blog"
+    label="Deep Dives"
     description="De dokumenterede platformstandarder fra start."
   >}}
   {{< manual-document-row
     title="Tjenestegrænsen i praksis"
     href="/tekniske-opdateringer/forstå-safespring-kubernetes-engine-hvis-du-normalt-kører-kubernetes-selv/#tjenestegrænsen-i-praksis"
     icon="fa-solid fa-people-arrows"
-    label="Blog"
+    label="Deep Dives"
     description="Hvordan ansvar og operationelle grænser er fordelt mellem Safespring og jeres team."
   >}}
   {{< manual-document-row
@@ -150,9 +150,9 @@ Når du vil validere arkitektur, ansvarsfordeling og driftsmodel, er dette de me
 
 {{< distance >}}
 
-## Beregn en omtrentlig månedlig omkostning
+## Estimér et Safespring Kubernetes Engine-miljø
 
-Brug beregneren til at estimere omkostningen for kontrolplan, worker-noder og central bloklagring. Den er tænkt som en hurtig indikation før teknisk og kommerciel evaluering.
+Brug beregneren som startpunkt for en dimensioneringsdialog. Den samler administreret kontrolplan, worker-noder og central bloklagring, før I går videre med teknisk vurdering.
 
 {{< container-price-calculator >}}
 

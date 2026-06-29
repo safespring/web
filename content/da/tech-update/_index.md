@@ -1,11 +1,12 @@
 ---
-title: "Tekniske Opdateringer"
+title: "Deep Dives"
 language: "da"
 date: 2024-01-01T00:00:00+00:00
 draft: false
 section: "tech-update"
-intro: "Hold dig opdateret med de seneste tekniske opdateringer, infrastrukturændringer og udviklingsindsigter fra Safespring."
+intro: "Tekniske artikler, praktiske gennemgange og arkitektur-deep dives fra Safespring."
 nosidebar: "none"
 fullwidth: "yes"
-nolist: "x"
+aliases:
+  - /tekniske-opdateringer/
 ---

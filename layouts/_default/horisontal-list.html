@@ -1,18 +1,14 @@
+{{ $image := "/img/background/safespring-blue-fade2.svg" }}
+{{ if .Params.background }}{{ $image = printf "/img/background/%s" (replaceRE "^/+" "" .Params.background) }}{{ end }}
+{{ if .Params.sidebarimage }}{{ $image = printf "/img/card/%s" .Params.sidebarimage }}{{ end }}
+
 <div
   class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row my-2"
 >
   <div class="safespring-horisontal-card-col safespring-horisontal-card-image">
     <img
-      src="{{ if .Params.sidebarimage }}
-        /img/card/{{ .Params.sidebarimage }}
-      {{ else }}
-        {{ if .Params.background }}
-          /img/background/{{ .Params.background }}
-        {{ else }}
-          /img/background/safespring-blue-fade2.svg
-        {{ end }}
-      {{ end }}
-  "
+      src="{{ $image }}"
+      {{ partial "image-dimensions.html" $image | safeHTMLAttr }}
       alt="{{ .Params.title }}"
     />
   </div>

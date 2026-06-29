@@ -228,7 +228,7 @@ En migreringsplan inneholder nødvendigvis en kartleggingsfase, identifisering a
 
 Når migreringen først er gjennomført venter systemadministrasjon og overvåking i et nytt miljø. Verktøyene for dette er også presentert i dokumentet og hvordan de sammen gir en helhetsløsning med fokus på sikkerhet og smidige, agile utviklingsprosesser.
 
-## AKS-motstykke som open source
+## AKS-motstykke som open source {#aks-motsvarighet-som-open-source}
 
 | Tjeneste i Azure                             | Funksjon                                                              | Open source                                                                                                    | Administrert hos Safespring                      |
 | -------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |

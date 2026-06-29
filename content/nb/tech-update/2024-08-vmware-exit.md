@@ -14,6 +14,7 @@ socialmediabild: ""
 language: "nb"
 aliases:
   - /blogg/2024/2024-08-vmware-exit/
+  - /tekniske-oppdateringer/2024-08-vmware-exit/
 ---
 {{< ingress >}}
 Broadcoms oppkjøp av VMware har hatt betydelige konsekvenser for kundene,

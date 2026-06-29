@@ -11,10 +11,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "sv"
-sectiontext: "Teknikuppdatering"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-10-zitadel-oidc-configuration/"
 author: "Anders Johansson, Ahmet Balci"
 TOC: "I det här inlägget"
+aliases:
+  - /blogg/2025-10-zitadel-oidc-configuration/
 ---
 {{< ingress >}}
 I den här guiden går vi igenom hur du konfigurerar OpenID Connect (OIDC)-autentisering för Kubernetes API-servern i Talos-hanterade kluster.
@@ -79,7 +82,7 @@ När projektet har skapats, notera projektets **Resurs-ID** – det kommer att a
 
 ---
 
-### 2. Skapa OIDC-applikationer
+### 2. Skapa OIDC-applikationer {#2-create-oidc-applications}
 
 Beroende på din miljö, konfigurera en (eller båda) av följande applikationer:
 

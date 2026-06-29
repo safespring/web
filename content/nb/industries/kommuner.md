@@ -13,7 +13,7 @@ cardintro: ""
 aliases:
   - /branscher/kommuner/
 ---
-<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
+<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true" preload="none">
 <source type="video/mp4" src="/branscher/images/safespring_esam.mp4">
 <track src="/branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svensk" default>
 </video>
@@ -24,11 +24,11 @@ Våre tjenester gjør det mulig både å oppfylle disse og samtidig dra nytte av
 
 At vi er et svensk selskap som produserer tjenestene i Sverige, gjør at du kan oppfylle eSams anbefalinger.
 
-<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Les eSams anbefalinger</a>
+<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" class="text-button">Les eSams anbefalinger</a>
 
 Kontakt oss for å diskutere videre hvordan vi kan hjelpe deg å utnytte en skyløsning på en trygg måte og samtidig oppfylle lover og regler.
 
-<a href="/kontakt" id="text-button">Kontakt Safespring</a><br><br>
+<a href="/kontakt/" class="text-button">Kontakt Safespring</a><br><br>
 
 ## Whitepaper
 
@@ -43,4 +43,4 @@ Dette whitepaperet tar for seg forutsetningene etter dommen og anbefalinger til 
 
 <h3 id="download">Last ned whitepaper</h3>
 
-<br><iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" 		width="360" 		height="367" 		style="border:0"></iframe>
+<br><iframe data-src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" width="360" height="367" style="border:0" loading="lazy" title="Last ned whitepaper"></iframe>

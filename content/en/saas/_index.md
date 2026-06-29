@@ -1,9 +1,9 @@
 ---
 language: "en"
-title: "Software as a Service is Becoming Increasingly Attractive, but How is Personal Data Handled?"
+title: "Cloud infrastructure for SaaS companies that handle customer data"
 date: 2025-02-20
 draft: false
-intro: "Safespring offers cloud services with complete integrity. Our data centers, located in Sweden, ensure that your data is handled only by you – and never exported outside the country."
+intro: "Safespring provides cloud infrastructure from Swedish and Norwegian data centers for SaaS companies that need to describe data location, information security, support, and the supplier chain in customer reviews."
 background: ""
 card: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 socialmedia: "safespring_social_01.jpg"
@@ -18,38 +18,71 @@ aliases:
 ![Safespring pyramid](/img/graphics/safespring-pyramid-2025.svg)
 
 {{< ingress >}}
-Safespring understands that your customers have high demands for the correct handling of sensitive data and that your customers’ trust in you is important.
+When your SaaS service is sold to organizations with formal requirements, you need to answer questions about data, operations, and responsibility. Your customers need to understand where data is processed, who has access, and which suppliers are involved.
 {{< /ingress >}}
 
-Safespring is a Swedish cloud service provider with Swedish data centers, focusing on ensuring that our customers’ data is handled only by our customers and always remains in Sweden.
+Many SaaS services process personal data. When customers have their own security teams, legal teams, procurement processes, and recurring supplier reviews, it is not enough that the service works technically. You need to describe processing, responsibility, access, support channels, and the supplier chain.
 
-In almost all SaaS, personal data is involved, which means that both you and your subcontractors need to meet the requirements of the General Data Protection Regulation (GDPR). If you use Safespring for your IaaS/PaaS, your customers’ analysis regarding personal data processing becomes trivial compared to using American cloud services, which, among other things, means you can focus on selling the value of your service instead.
+Safespring is a Swedish cloud provider with data centers in Sweden and Norway. For SaaS companies that sell business-critical services, this gives you an infrastructure base where digital sovereignty, data location, contracts, access, and subcontractors can be described without building the service on American cloud providers.
 
-## Legal Aspects
+{{% note title="When this matters" icon="fa-solid fa-file-shield" color="green" %}}
 
-Both you and we at Safespring operate in a trust-based industry where it is increasingly critical to review our dependencies and partners. Our customers will place ever higher demands on political and legal security in addition to traditional IT security and operational reliability.
+This is relevant when your customers ask about data location, ISO 27001, access, support model, operations, subcontractors, third-country risk, or confidential information.
 
-Safespring is a Swedish public cloud platform that greatly simplifies your compliance with Swedish and European legislation. With a focus on open standards and digital sovereignty, Safespring offers services such as virtual servers, large-scale storage, container platforms, and backup as a service. With data centers in Sweden and Norway, Safespring is a proven and secure platform for SaaS companies, authorities, data-driven companies, and the academic sector.
+{{% /note %}}
 
-In almost all SaaS, personal data is involved, which means that both you and your subcontractors need to meet the requirements of the General Data Protection Regulation (GDPR). When, for example, American subcontractors are used, it is much more complicated to meet the requirements, more analysis is required, and customers will ask more questions. If you instead use Safespring, the entire analysis becomes trivial in comparison, which, among other things, means you can focus on selling the value of your service instead of discussing third-country transfers, Schrems, etc.
+## Legal context
 
-If your SaaS contains confidential information, whether it is information covered by the Public Access to Information and Secrecy Act, attorney-client privilege, or commercial confidentiality, you must be able to guarantee that confidentiality is maintained. American cloud service providers can never guarantee confidentiality, as is clear from their terms and conditions. Safespring has no such terms and will not disclose our customers’ information except when required by a Swedish court.
+You and Safespring operate in a chain of trust. Your customers review the functions in your SaaS service, but also how the service is operated, where data is processed, and which parties can access the information.
 
-{{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-map-location-dot" text="Safespring’s Data Centers" linkref="/data-centers.md" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-film" text="Watch our webcasts" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" linkref="/about.md" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-lightbulb-on" text="Read Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-gavel" text="Read about Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}
-{{< /icon-block-container >}}
+When American cloud providers are involved, you often need to handle questions about third-country transfers, contracts, and access. With Safespring, you get a different supplier chain to describe: Nordic infrastructure, data centers in Sweden and Norway, ISO 27001 certification, support from Safespring's technical organization, and services built on open standards.
+
+Digital sovereignty then becomes a practical question. Where is data processed? Which jurisdiction applies? Who can access the environment? How are support and operations cases handled? These answers often need to be clear before a customer can approve a SaaS service.
+
+If your SaaS service handles confidential information, you need to describe how confidentiality is protected. This can include information covered by public-sector secrecy rules, attorney-client privilege, or commercial confidentiality.
+
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-location-dot" text="Data location that can be described" description="Safespring runs infrastructure in Sweden and Norway. This gives a concrete answer to where data is processed and which suppliers are involved." >}}
+
+{{< icon-block-horisontal color="#32CD32" icon="fa-solid fa-shield-check" text="Digital sovereignty in practice" description="Safespring gives you a Nordic infrastructure base for services where customers ask about jurisdiction, access, data location, and dependencies in the supplier chain." >}}
+
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-certificate" text="ISO 27001 and technical support" description="Safespring is ISO 27001 certified and has a support organization for the cloud platform. This gives more concrete answers in security reviews, audits, and operations questions." >}}
+
+{{% question question="Where is our customers' data processed?" %}}
+Safespring runs infrastructure in Sweden and Norway. For a SaaS provider, this gives a data location and supplier chain that can be described to customers, legal teams, and security teams.
+{{% /question %}}
+
+{{% question question="What do we need to show in a customer review?" %}}
+You often need to describe where data is processed, which subcontractors are involved, how access is handled, which support model applies, and which part of operations each party is responsible for.
+{{% /question %}}
+
+{{% question question="What material can we use in a security review?" %}}
+You can describe Safespring's data centers in Sweden and Norway, ISO 27001 certification, support model, open standards, and the responsibility split between your SaaS service and the underlying infrastructure.
+{{% /question %}}
+
+{{% question question="Can we build without locking the service to a hyperscaler?" %}}
+Yes. Safespring builds on open standards for compute, storage, and networking. This means applications and platforms can be built without depending on provider-specific cloud services.
+{{% /question %}}
+
+{{< accordion-script >}}
 
 ## Technology
 
-Safespring provides a reliable and flexible infrastructure that makes it easier for you as a SaaS provider to deliver your services with high performance and availability. The network stack is built with Calico, giving you secure, scalable, and high-performance communication between your services while ensuring stability and operational reliability. The OpenStack platform gives you access to a wide range of instance types, making it easy to adjust capacity to your needs and optimize costs.
+Safespring can be used as the infrastructure base for SaaS services running on virtual machines, container platforms, or a combination of both. The platform includes compute, storage, networking, and backup. For services built with Kubernetes, there is Safespring Container Platform.
 
-The storage is tailored to meet your varying requirements, with both local NVMe storage for extremely fast data access and Ceph-based central storage. The Ceph solution comes in two variants: one SSD-based for high performance requirements and one cost-effective storage based on traditional disks for large amounts of data such as logs and backups. Ceph is also a self-healing and distributed solution that ensures high availability and redundancy, giving you security and stability in your data management flow.
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-server" text="Compute and OpenStack" description="Safespring Compute gives access to virtual servers and instance types that can be adapted to the application's needs. The platform is built on OpenStack." >}}
 
-Safespring is an ideal platform for those working with container-based applications and Kubernetes environments. The stable infrastructure and modern network solution make it easy for you to deploy and manage container-based services smoothly. We are also actively developing our own Kubernetes-based platform to further simplify management and scaling, all so that you can focus on developing your services without unnecessary technical complexity.
+{{< icon-block-horisontal color="#32CD32" icon="fa-solid fa-database" text="Storage for different data types" description="Safespring provides local NVMe storage for fast data access and Ceph-based central storage for other data volumes, such as logs, files, and backup." >}}
 
-By choosing Safespring, you get a secure, flexible, and high-performance infrastructure optimized for your needs as a SaaS provider. Our platform enables you to focus on your core business instead of technical limitations, while ensuring that your services can grow and adapt to future requirements.
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-cubes" text="Container-based services" description="For SaaS companies running container-based applications, the infrastructure can be combined with Kubernetes and open components." >}}
+
+## Next step
+
+If you sell a SaaS service to customers with procurement processes, security reviews, or recurring supplier audits, we can go through which parts of the infrastructure you want to own and which parts should sit with Safespring. This usually starts with data location, operating model, access, backup, support channels, and the information your customers need in their review.
+
+{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Fredric Wallsten" %}}
+Contact me if you want to discuss infrastructure for your SaaS service.
+
+{{< inline "Phone" >}} [+46 76-629 25 02](tel:+46766292502)
+
+{{< inline "Email" >}} [hello@safespring.com](mailto:hello@safespring.com)
+{{% /custom-card %}}

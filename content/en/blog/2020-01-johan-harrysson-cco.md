@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/johan-harrysson-cco
   - /blogg/2020/2020-01-johan-harrysson-cco/
+  - /blog/2020-01-johan-harrysson-cco/
 ---
 ![Johan Harrysson, CCO, outside Safespring’s headquarters in Stockholm.](/img/blogg/safespring-johan-harrysson_2020-01-27.jpg)
 
@@ -46,13 +47,13 @@ says Mikael Schütt, Chairman of the Board at Safespring.
 ### For more information
 
 **Mikael Schütt**, Chairman of the Board<br>
-<a href="mailto:mikael.shutt@safespring.se">mikael.shutt@safespring.se</a><br>
+[mikael.shutt@safespring.se](mailto:mikael.shutt@safespring.se)<br>
 <a href="tel:+46760935070">+46 (0)760-93 50 70</a>
 
 **Fredric Wallsten**, CEO, Safespring<br>
-<a href="mailto:fredric.wallsten@safesprings.se">fredric.wallsten@safesprings.se</a><br>
+[fredric.wallsten@safesprings.se](mailto:fredric.wallsten@safesprings.se)<br>
 <a href="tel:+46766292002">+46 (0)766-29 20 02</a>
 
 **Johan Harrysson**, CCO, Safespring<br>
-<a href="mailto:johan.harrysson@safespring.se">johan.harrysson@safespring.se</a><br>
+[johan.harrysson@safespring.se](mailto:johan.harrysson@safespring.se)<br>
 <a href="tel:+46708375566">+46 (0)708-37 55 66</a>

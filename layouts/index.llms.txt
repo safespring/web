@@ -77,9 +77,9 @@ Use robots.txt for crawl permissions and sitemap.xml for exhaustive URL discover
 
 ## Knowledge and Resources
 {{- $resourcePages := slice
-  (dict "page" ($site.GetPage "knowledge-hub") "label" "Knowledge Hub" "note" "Collected blogs, webinars, white papers, technical updates, and solution briefs.")
-  (dict "page" ($site.GetPage "blog") "label" "Blog" "note" "Company news, policy views, customer context, and cloud sovereignty articles.")
-  (dict "page" ($site.GetPage "tech-update") "label" "Tech Updates" "note" "Technical updates, platform changes, infrastructure examples, and engineering notes.")
+  (dict "page" ($site.GetPage "knowledge-hub") "label" "Knowledge Hub" "note" "Collected News & Perspectives, webinars, white papers, Deep Dives, and solution briefs.")
+  (dict "page" ($site.GetPage "blog") "label" "News & Perspectives" "note" "Company news, policy views, customer context, and cloud sovereignty articles.")
+  (dict "page" ($site.GetPage "tech-update") "label" "Deep Dives" "note" "Technical articles, platform architecture, infrastructure examples, and engineering notes.")
   (dict "page" ($site.GetPage "whitepaper") "label" "White Papers" "note" "Long-form publications about cloud, compliance, security, GDPR, and migration.")
   (dict "page" ($site.GetPage "solution-brief") "label" "Solution Briefs" "note" "Concise practical guides and implementation summaries.")
   (dict "page" ($site.GetPage "webinar") "label" "Webinars" "note" "Recorded and upcoming sessions about cloud services, compliance, Kubernetes, and backup.")

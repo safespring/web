@@ -31,8 +31,8 @@ Flere og flere industrier som den offentlige sektor, bank, fintech, RegTech, iGa
 Håndtering af følsomme brugerdata og efterlevelse af regler som GDPR, ISO 27001 eller PCI DSS kan være vanskelig i et dynamisk, containerbaseret miljø på grund af flere lag af abstraktion og virtualisering, som er svære at oversætte til regulatoriske krav, der er skrevet med fysisk infrastruktur og single-tenancy for øje. Derfor har det i de seneste år været en udfordring at overbevise sikkerhedsteams om, at containere kan være lige så sikre – om ikke sikrere – end traditionelle VM'er. Desuden bliver angrebsoverfladen større, når der kommer flere bevægelige dele til.
 
 <br><br>
-<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile">
-<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop">
+<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile" alt="Compliant Kubernetes on Safespring illustration" width="318" height="721">
+<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop" alt="Compliant Kubernetes on Safespring illustration" width="582" height="457">
 <br><br>
 
 Hvis jeres nuværende miljø har bestået alle audits, skal DevOps-teams argumentere endnu tydeligere for containerisering, eftersom den nuværende opsætning – selv om den er ufleksibel og giver en langsommere softwareudviklingscyklus – er dokumenteret compliant. Elementer som netværkssegmentering, firewalls, rollebaseret adgangskontrol, håndtering af secrets, sårbarhedsscanning (antivirus) og opdateringer håndteres alle anderledes i containeriserede miljøer.
@@ -47,7 +47,7 @@ Ud over at overvåge klyngerne 24/7 for både sundhedsmetrikker og mistænkelig 
 
 Kort sagt er udfordringen at øge softwareagiliteten gennem containerisering, samtidig med at I kan garantere sikkerhed og compliance for jeres virksomhed.
 
-Elastisys Welkin er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudkonfigureret med sikkerhedshærdede indstillinger og open source-komponenter efter best practices. Safespring udgiver kvartalsvise versioner af Welkin – tester og hærder komponenterne – for at sikre, at de lever op til de strenge sikkerheds- og regulatoriske krav, vores kunder stiller til deres containerplatforme.
+Elastisys Welkin er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudkonfigureret med sikkerhedshærdede indstillinger og open source-komponenter efter best practices. Elastisys leverer Welkin og driver Kubernetes-platformen, mens Safespring leverer Compute-infrastrukturen, den kører på.
 
 {{% horisontal-card image="/img/card/safespring-compute-icon.svg" linkref="/services/compute.md" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Welkin" text="Vores infrastrukturtjeneste er placeret i sikre datacentre inden for EU og påvirkes ikke af udenlandske love som CLOUD Act eller FISA 702." %}}
 
@@ -55,4 +55,4 @@ Welkin gør det muligt for organisationer at udnytte alle fordelene ved Kubernet
 
 På grund af CLOUD Act og andre forhold, der giver udenlandske aktører adgang til brugerdata, migrerer europæiske virksomheder i stigende grad deres workloads til europæiske udbydere.
 
-Welkin fås som en managed service i partnerskab med Safespring, så I får alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at I behøver at bekymre jer om driften.
+Welkin fås fra Elastisys på Safespring Compute, så I får alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at I behøver at bekymre jer om driften.

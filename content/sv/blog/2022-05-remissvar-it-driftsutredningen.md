@@ -16,6 +16,7 @@ toc: "Innehåll"
 aliases:
   - /blogg/remissvar-it-driftsutredningen
   - /blogg/2022/2022-05-remissvar-it-driftsutredningen/
+  - /blogg/2022-05-remissvar-it-driftsutredningen/
 ---
 
 {{< ingress >}}
@@ -114,6 +115,10 @@ Rådgivare: Amelia Andersdotter
 
 ## Länkar
 
-### [Samtliga remissvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+### Samtliga remissvar
 
-### [Slutbetänkande av It-driftsutredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)
+[Samtliga remissvar](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+
+### Slutbetänkande av It-driftsutredningen
+
+[Slutbetänkande av It-driftsutredningen](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)

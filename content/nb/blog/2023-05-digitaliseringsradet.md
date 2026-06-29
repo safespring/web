@@ -16,6 +16,7 @@ language: "nb"
 toc: ""
 aliases:
   - /blogg/2023/2023-05-digitaliseringsradet/
+  - /blogg/2023-05-digitaliseringsradet/
 ---
 {{% ingress %}}
 

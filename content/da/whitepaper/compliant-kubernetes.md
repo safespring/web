@@ -27,8 +27,8 @@ Flere og flere brancher som den offentlige sektor, bank, fintech, RegTech, iGami
 Håndtering af følsomme brugerdata og overholdelse af regler som GDPR, ISO-27001 eller PCI-DSS kan være vanskeligt i et dynamisk, containerbaseret miljø på grund af flere lag af abstraktion og virtualisering, som er svære at oversætte til regulatoriske krav, der er skrevet med fysisk infrastruktur og single-tenancy for øje. Derfor har det i de seneste år været en udfordring at bevise over for sikkerhedsteams, at containere kan være lige så sikre – om ikke sikrere – end traditionelle VM'er. Samtidig øges angrebsfladen med flere bevægelige dele.
 
 <br><br>
-<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile">
-<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop">
+<img src="/img/safespring-compliant-kubernetes-3.svg" class="mobile" alt="Compliant Kubernetes on Safespring illustration" width="318" height="721">
+<img src="/img/safespring-compliant-kubernetes-2.svg" class="desktop" alt="Compliant Kubernetes on Safespring illustration" width="582" height="457">
 <br><br>
 
 Hvis jeres nuværende miljø har bestået alle revisioner, må DevOps-teams argumentere endnu stærkere for containerisering, da den nuværende opsætning, selv om den er ufleksibel og giver en langsommere softwareudviklingslivscyklus, er dokumenteret i overensstemmelse med kravene. Aspekter som netværkssegmentering, firewalls, rollebaseret adgangskontrol, håndtering af secrets, sårbarhedsscanning (antivirus) og opdateringer håndteres alle anderledes i containeriserede miljøer.
@@ -43,7 +43,7 @@ Ud over at overvåge klyngerne døgnet rundt for både sundhedsmålinger og mist
 
 Kort sagt er udfordringen at øge softwareagiliteten via containerisering samtidig med at sikkerhed og compliance garanteres for virksomheden.
 
-Safespring Compliant Kubernetes (CK8s) er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudpakket med sikkerhedshærdede konfigurationer og open source-komponenter i henhold til best practices. Safespring leverer kvartalsvise udgivelser af Compliant Kubernetes – tester og hærder komponenterne for at sikre, at de efterlever de strenge sikkerheds- og regulatoriske krav, som vores kunder stiller til deres containerplatforme.
+Elastisys Welkin er en Cloud Native Computing Foundation (CNCF)-certificeret Kubernetes-distribution, der leveres forudpakket med sikkerhedshærdede konfigurationer og open source-komponenter i henhold til best practices. Elastisys leverer Kubernetes-platformen, mens Safespring leverer Compute-infrastrukturen, den kører på.
 
 {{% horisontal-card image="/img/blue/safespring_card_compute.jpg" linkref="/services/compute.md" linktext="Læs mere" cardtitle="Safespring Compute er kernen i Compliant Kubernetes" text="Vores infrastrukturservice er placeret i sikre datacentre inden for EU og bliver ikke påvirket af udenlandske love som CLOUD Act eller FISA 702." %}}
 
@@ -51,4 +51,4 @@ Compliant Kubernetes gør det muligt for organisationer at udnytte alle fordelen
 
 På grund af CLOUD Act og andre forhold, der giver udenlandske aktører adgang til brugerdata, flytter europæiske virksomheder i stigende grad deres arbejdsbelastninger til europæiske udbydere.
 
-Compliant Kubernetes fås som en managed service i partnerskab med Safespring, så I får alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at I selv skal stå for driften.
+Welkin fås fra Elastisys på Safespring Compute, så I får alle fordelene ved en moderne containerplatform, der kører i nordiske datacentre, uden at I selv skal stå for driften.

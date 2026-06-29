@@ -1069,7 +1069,7 @@ Opretter et tekstlink med en knaplignende stil (eller et enkelt tekstlink) uden 
 
 ### Kode
 ```html
-<a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
+<a class="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
 ```
 ### Eksempler
 ```
@@ -1115,7 +1115,7 @@ Opretter en FAQ-lignende accordion med et spørgsmål som overskrift og svaret i
 ### Kode
 ```html
 <div class="accordion-box">
-  <button class="accordion">{{ .Get "question" }}</button>
+  <button type="button" class="accordion">{{ .Get "question" }}</button>
   <div class="panel content-body">
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <h3 itemprop="name">{{ .Get "question" }}</h3>

@@ -15,6 +15,7 @@ toc: ""
 aliases:
   - /blogg/2022-08-using-jumphost-for-safespring-apis
   - /blogg/2022/2022-08-using-jumphost-for-safespring-apis/
+  - /tech-update/2022-08-using-jumphost-for-safespring-apis/
 ---
 
 {{< ingress >}}

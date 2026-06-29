@@ -23,7 +23,6 @@ aliases:
 toc: "I denne artikkelen"
 ---
 
-##
 
 {{< ingress >}}
 

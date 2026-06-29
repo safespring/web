@@ -16,6 +16,7 @@ toc: "Innholdsfortegnelse"
 aliases:
   - /blogg/2022-03-terraform-module
   - /blogg/2022/2022-03-terraform-module/
+  - /tekniske-oppdateringer/2022-03-terraform-module/
 ---
 {{< ingress >}}
 Dette er del to i serien om Safesprings Terraform-moduler. Dette blogginnlegget
@@ -116,7 +117,9 @@ Spesielt hvis du leser dette på et senere tidspunkt. {{< /note >}}
 
 Vi bruker [eksemplene][sftfexamples] i Terraform-modulets [git-repo][sftfmodules] som referanse og forklarer hvert av dem under koden.
 
-### [Eks1][ex1]: Én instans med standardparametere
+### Eks1: Én instans med standardparametere
+
+[Eks1][ex1]
 
 [ex1]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf
 ```
@@ -150,7 +153,9 @@ Når dette tas i bruk, vil denne koden opprette en compute-instans med navnet he
 
 Parameteren `config_drive` brukes sjelden. Hvis du ikke vet hva den brukes til, kan du trygt la standardverdien stå (false). Forklaringen av parameterne `role` og `wg_ip` lar vi vente til senere.
 
-### [Eksempel 2][ex2]: Et sett med 3 instanser ved bruk av count
+### Eksempel 2: Et sett med 3 instanser ved bruk av count
+
+[Eksempel 2][ex2]
 
 [ex2]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-count/main.tf
 ```
@@ -163,7 +168,9 @@ module my_sf_instances {
 ```
 Her har vi lagt til en count på 3, og vi bruker count-indeksen for å skille navnene på de 3 instansene som opprettes (du kan ikke opprette mer enn én instans med samme navn). Å kjøre apply vil gi 3 instanser med navn `hello-safespring-{1,2,3}.example.com`. Kommenterte standardparametere ble forklart i det første eksemplet, så de er utelatt her. Som i det første eksemplet vil standardverdier brukes der ingen er angitt, så alle de 3 instansene får de samme egenskapene, og disse har de samme standardverdiene som i det første eksemplet.
 
-### [Eksempel 3][ex3]: Sikkerhetsgruppe(r) og nøkkelpar som del av koden
+### Eksempel 3: Sikkerhetsgruppe(r) og nøkkelpar som del av koden
+
+[Eksempel 3][ex3]
 
 [ex3]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-with-keypair-and-secgroup/main.tf
 ```
@@ -228,7 +235,9 @@ Spesifikasjonen av regler for sikkerhetsgruppen gjøres med map-variabler direkt
 
 Det er helt opp til deg om du vil bruke modulbiblioteket vårt, lage dine egne moduler eller bare opprette ressursene direkte i konfigurasjonen din. I det minste kan modulbiblioteket, med sine standardverdier, fungere som dokumentasjon eller en tynn innpakning rundt ressursene og navnene i plattformen vår sett fra et Terraform-perspektiv.
 
-### [Eksempel 4][ex4]: Map-er definerer instanser og regler for sikkerhetsgrupper
+### Eksempel 4: Map-er definerer instanser og regler for sikkerhetsgrupper
+
+[Eksempel 4][ex4]
 
 [ex4]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance-set-using-map/main.tf
 ```
@@ -314,7 +323,9 @@ Det er verdt å merke seg at parameteren `delete_default_rules = true` vil fjern
 
 {{< note "Merk" >}}Hvis du oppretter en instans som ikke har noen sikkerhetsgrupper tilknyttet, vil den likevel knyttes til sikkerhetsgruppen `default` som inkluderer egress-regler som lar instansen koble ut til verden. For å hindre dette, opprett dine egne sikkerhetsgrupper som du knytter instanser til, og bruk parameteren «delete_default_rules = true» til modulen «v2-compute-security-group».{{< /note >}}
 
-### [Ex5][ex5]: Kombinere count og map for instanser og map for disker
+### Ex5: Kombinere count og map for instanser og map for disker
+
+[Ex5][ex5]
 
 [ex5]: https://github.com/safespring-community/terraform-modules/tree/main/examples/v2-compute-instance-set-with-count-and-map
 

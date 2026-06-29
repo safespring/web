@@ -20,6 +20,7 @@ sidebarlinkname2: ""
 sidebarlinkurl2: ""
 aliases:
   - /blogg/2023/2023-04-creating-an-opensource-backup-client-library/
+  - /tekniske-oppdateringer/2023-04-creating-an-opensource-backup-client-library/
 ---
 {{< ingress >}}
 Hos Safespring brenner vi for teknologi med åpen kildekode. Plattformen vår bygger på flere open source-produkter, og vi er opptatt av å gi tilbake til fellesskapet når det er mulig.

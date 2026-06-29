@@ -23,7 +23,6 @@ aliases:
   - /en/services/case/scilifelab/
 ---
 
-##
 
 {{< ingress >}}
 Safespring delivers a cloud-based VM and storage service to SciLifeLab, Sweden's largest national research infrastructure for life sciences.
@@ -56,8 +55,8 @@ SciLifeLab runs several research programs that depend on high-performance comput
 Two major research environments and platforms built on Safespring's infrastructure are the data delivery project DDS and the AI project Bigpicture.
 
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;" alt="">
-        <img src="/img/logos/bigpicture.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;">
+        <img src="/img/logos/bigpicture.svg" alt="BigPicture logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="220" height="102">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <p>BigPicture is intended to support the development of artificial intelligence in life science. In this Horizon2020 project SciLifeLab and ELIXIR-SE have teamed up with many other European partners to deliver a pathology data repository.
@@ -69,8 +68,8 @@ Two major research environments and platforms built on Safespring's infrastructu
 </div>
 <br>
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;" alt="">
-        <img src="/img/logos/scilifelab-symbol.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;">
+        <img src="/img/logos/scilifelab-symbol.svg" alt="SciLifeLab logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="117" height="111">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <p>DDS stands for Data Delivery System and is a central solution for SciLifeLab as a complex infrastructure that produces research data. It is a unified transport solution for delivering life science data from data-producing technical platforms, such as DNA sequencing, imaging, and proteomics, to researchers across Sweden. </p>

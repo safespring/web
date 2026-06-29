@@ -15,6 +15,7 @@ language: "sv"
 toc: "Innehållsförteckning"
 aliases:
   - /blogg/2023/2023-05-multicloud-demo/
+  - /tekniska-uppdateringar/2023-05-multicloud-demo/
 ---
 {{< ingress >}}
 Utforska kraften i infrastruktur som kod (IAC) med den här guiden om

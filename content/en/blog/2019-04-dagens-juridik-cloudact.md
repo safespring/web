@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/dagens-juridik-cloudact
   - /blogg/2019/2019-04-dagens-juridik-cloudact/
+  - /blog/2019-04-dagens-juridik-cloudact/
 ---
 <div class="ingress"><p>Adam Odmark, associate, the law firm Delphi, has written an analysis in Dagens Juridik on March 28</p></div>
 
@@ -28,7 +29,7 @@ One solution is to move sensitive data out of the American clouds and store it w
 
 Many companies and institutions have already taken this step, including by choosing our Swedish cloud service. Read more about our customers and their experience with Safespring here:
 
-<a href="{{% relref "/services/case/" %}}" id="text-button">Read Safespring’s customer references</a><br>
+<a href="{{% relref "/services/case/" %}}" class="text-button">Read Safespring’s customer references</a><br>
 
 Adam Odmark believes that the situation between the GDPR and the U.S. CLOUD Act requires urgent action.
 

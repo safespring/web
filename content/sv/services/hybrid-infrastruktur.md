@@ -18,7 +18,7 @@ aliases:
 ---
 <div class="ingress"><p>Att behöva investera i infrastruktur som bara behövs vid trafikspikar, några få gånger om året, kan bli en dyr historia. Samtidigt så finns det anledningar till att själv behålla kontrollen över de tjänster som man som företag erbjuder sina kunder.</p></div>
 
-<a href="#testa-safespring" id="text-button">Testa Safespring</a>
+<a href="#testa-safespring" class="text-button">Testa Safespring</a>
 
 Ett populärt sätt att lösa de oregelbundna trafikmönstrena samtidigt som man behåller kontrollen är att använda sig av ett privat moln som man vid behov kan komplettera med ett publikt. Detta kallas för Hybrid Cloud. I och med att Safesprings tjänster produceras lokalt  så kan du tryggt låta vårt moln hantera belastningstopparna samtidigt som att den egna kontrollen behålls.
 

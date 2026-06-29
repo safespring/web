@@ -1,6 +1,14 @@
 {{/* Get content from top-level sections */}}
-{{ $blogPages := where .Site.RegularPages "Section" "blog" }}
-{{ $techUpdatePages := where .Site.RegularPages "Section" "tech-update" }}
+{{ $blogPages := slice }}
+{{ $techUpdatePages := slice }}
+{{ range .Site.RegularPages }}
+  {{ $sectionParam := lower (default "" .Params.section) }}
+  {{ if or (eq .Section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
+    {{ $techUpdatePages = $techUpdatePages | append . }}
+  {{ else if eq .Section "blog" }}
+    {{ $blogPages = $blogPages | append . }}
+  {{ end }}
+{{ end }}
 {{ $webinarPages := where .Site.RegularPages "Section" "webinar" }}
 {{ $solutionBriefPages := where .Site.RegularPages "Section" "solution-brief" }}
 {{ $whitepaperPages := where .Site.RegularPages "Section" "whitepaper" }}
@@ -26,23 +34,23 @@
 <section class="tf-buttons-container-center">
   {{/* Category filter buttons */}}
   <div class="tf-buttons-container">
-    <button class="active" data-category="all">
+    <button type="button" class="active" data-category="all" aria-pressed="true">
       {{ T "filter.all" }} <span class="filter-number">({{ len $allContent }})</span>
     </button>
-    <button data-category="blog">
+    <button type="button" data-category="blog" aria-pressed="false">
       {{ T "filter.blog" }} <span class="filter-number">({{ $blogCount }})</span>
     </button>
-    <button data-category="tech-update">
+    <button type="button" data-category="tech-update" aria-pressed="false">
       {{ T "filter.tech_updates" }} <span class="filter-number">({{ $techUpdateCount }})</span>
     </button>
-    <button data-category="webinar">
+    <button type="button" data-category="webinar" aria-pressed="false">
       {{ T "filter.webinars" }} <span class="filter-number">({{ $webinarCount }})</span>
     </button>
-    <button data-category="solution-brief">
+    <button type="button" data-category="solution-brief" aria-pressed="false">
       {{ T "filter.solution_briefs" }}
       <span class="filter-number">({{ $solutionBriefCount }})</span>
     </button>
-    <button data-category="whitepaper">
+    <button type="button" data-category="whitepaper" aria-pressed="false">
       {{ T "filter.whitepapers" }} <span class="filter-number">({{ $whitepaperCount }})</span>
     </button>
   </div>
@@ -50,43 +58,57 @@
   <div class="line">
     <div class="tf-buttons-container">
       {{/* Current language button (active) */}}
-      <button
+      <span
         class="text active"
+        aria-current="true"
         style="cursor: default;"
         title="{{ .Site.Language.LanguageName }}"
       >
         <img
           src="/img/flags/{{ $currentLang }}.svg"
+          width="20"
+          height="20"
           alt="{{ .Site.Language.LanguageName }} flag"
           style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
         />
         {{ .Site.Language.LanguageName }}&nbsp;
         <span class="filter-number">({{ len $allContent }})</span>
-      </button>
+      </span>
 
       {{/* Other languages */}}
       {{ range .Site.Home.Translations }}
         <a
+          class="text"
           href="{{ with .GetPage "knowledge-hub" }}{{ .Permalink }}{{ end }}"
           style="text-decoration: none;"
           title="{{ .Language.LanguageName }}"
         >
-          <button class="text">
-            <img
-              src="/img/flags/{{ .Lang }}.svg"
-              alt="{{ .Language.LanguageName }} flag"
-              style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
-            />
-            {{ .Language.LanguageName }}&nbsp;
-            <span class="filter-number"
-              >({{ len (where .Site.RegularPages "Section" "blog") |
-                add (len (where .Site.RegularPages "Section" "tech-update")) |
-                add (len (where .Site.RegularPages "Section" "webinar")) |
-                add (len (where .Site.RegularPages "Section" "solution-brief")) |
-                add (len (where .Site.RegularPages "Section" "whitepaper"))
-              }})</span
-            >
-          </button>
+          <img
+            src="/img/flags/{{ .Lang }}.svg"
+            width="20"
+            height="20"
+            alt="{{ .Language.LanguageName }} flag"
+            style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
+          />
+          {{ .Language.LanguageName }}&nbsp;
+          {{ $translatedBlogPages := slice }}
+          {{ $translatedTechUpdatePages := slice }}
+          {{ range .Site.RegularPages }}
+            {{ $translatedSectionParam := lower (default "" .Params.section) }}
+            {{ if or (eq .Section "tech-update") (in $translatedSectionParam "tech update") (in $translatedSectionParam "tekn") }}
+              {{ $translatedTechUpdatePages = $translatedTechUpdatePages | append . }}
+            {{ else if eq .Section "blog" }}
+              {{ $translatedBlogPages = $translatedBlogPages | append . }}
+            {{ end }}
+          {{ end }}
+          <span class="filter-number"
+            >({{ len $translatedBlogPages |
+              add (len $translatedTechUpdatePages) |
+              add (len (where .Site.RegularPages "Section" "webinar")) |
+              add (len (where .Site.RegularPages "Section" "solution-brief")) |
+              add (len (where .Site.RegularPages "Section" "whitepaper"))
+            }})</span
+          >
         </a>
       {{ end }}
     </div>
@@ -95,11 +117,12 @@
   <div class="tf-items-container">
     {{ range $allContent.ByPublishDate.Reverse }}
       {{ $section := .Section }}
+      {{ $sectionParam := lower (default "" .Params.section) }}
       {{ $category := "unknown" }}
-      {{ if eq $section "blog" }}
-        {{ $category = "blog" }}
-      {{ else if eq $section "tech-update" }}
+      {{ if or (eq $section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}
         {{ $category = "tech-update" }}
+      {{ else if eq $section "blog" }}
+        {{ $category = "blog" }}
       {{ else if eq $section "webinar" }}
         {{ $category = "webinar" }}
       {{ else if eq $section "solution-brief" }}
@@ -130,7 +153,18 @@
   /* Ensure buttons have pointer cursor */
   .tf-buttons-container button {
     cursor: pointer;
-    transition: all 0.2s ease-out;
+    transition:
+      background-color 0.2s ease-out,
+      border-color 0.2s ease-out,
+      color 0.2s ease-out;
+  }
+
+  .tf-buttons-container a.text {
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease-out,
+      border-color 0.2s ease-out,
+      color 0.2s ease-out;
   }
 
   /* Style adjustments for language buttons */
@@ -138,11 +172,14 @@
     text-decoration: none;
   }
 
-  .tf-buttons-container button:hover {
+  .tf-buttons-container button:hover,
+  .tf-buttons-container a.text:hover {
     border-color: var(--button-color);
   }
 
-  .tf-buttons-container button.text {
+  .tf-buttons-container button.text,
+  .tf-buttons-container a.text,
+  .tf-buttons-container span.text {
     display: inline-flex;
     align-items: center;
   }
@@ -159,9 +196,11 @@
       button.addEventListener("click", function () {
         // Remove active class from all category buttons
         filterButtons.forEach((btn) => btn.classList.remove("active"));
+        filterButtons.forEach((btn) => btn.setAttribute("aria-pressed", "false"));
 
         // Add active class to clicked button
         this.classList.add("active");
+        this.setAttribute("aria-pressed", "true");
 
         // Get selected category
         const selectedCategory = this.getAttribute("data-category");

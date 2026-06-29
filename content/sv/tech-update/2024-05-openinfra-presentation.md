@@ -19,6 +19,7 @@ sidebarlinkicon: ""
 sidebarimage: "jon-openinfra-2024.webp"
 aliases:
   - /blogg/2024/2024-05-openinfra-presentation/
+  - /tekniska-uppdateringar/2024-05-openinfra-presentation/
 ---
 {{< ingress >}}
 Jag hade nyligen möjlighet att presentera på OpenInfra Day Sweden 2024, och jag är glad att kunna dela med mig av insikter och nyheter från vårt team på Safespring.

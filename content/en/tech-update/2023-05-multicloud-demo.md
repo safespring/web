@@ -14,6 +14,7 @@ language: "en"
 toc: "Table of contents"
 aliases:
   - /blogg/2023/2023-05-multicloud-demo/
+  - /tech-update/2023-05-multicloud-demo/
 ---
 
 {{< ingress >}}

@@ -18,6 +18,7 @@ sidebarlinkname2: "Kontakt os"
 sidebarlinkurl2: "mailto:hello@safespring.com"
 aliases:
   - /blogg/2023/2023-03-safespring-cs3/
+  - /blog/2023-03-safespring-cs3/
 ---
 {{< ingress >}}
 Safespring deltager sammen med Sunet på den kommende CS3-konference, som finder sted i Barcelona. Som en 'industry sponsor' ser vi frem til at dele vores ekspertise og diskutere nye innovationer med de øvrige deltagere.

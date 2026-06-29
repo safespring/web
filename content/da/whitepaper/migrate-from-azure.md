@@ -221,6 +221,6 @@ En migrationsplan indeholder den nødvendige inventariseringsfase, identificerin
 
 Når migreringen er gennemført, venter systemadministration og overvågning i et nyt miljø. Værktøjerne hertil præsenteres også i dokumentet, som desuden belyser, hvordan de spiller sammen for at levere en samlet løsning med fokus på sikkerhed og smidige, agile udviklingsprocesser.
 
-## AKS-modstykker som åben kildekode
+## AKS-modstykker som åben kildekode {#aks-counterparts-as-open-source}
 
 {{< en-aks-alternatives >}}

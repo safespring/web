@@ -17,6 +17,7 @@ toc: "Contents"
 aliases:
   - /blogg/remissvar-it-driftsutredningen
   - /blogg/2022/2022-05-remissvar-it-driftsutredningen/
+  - /blog/2022-05-remissvar-it-driftsutredningen/
 ---
 {{< ingress >}}
 Since the inquiry was published, the geopolitical situation has changed significantly. This does not alter the substance of the inquiry, but it further highlights the importance of sovereign, secure and robust IT services.{{< /ingress >}}
@@ -114,6 +115,10 @@ Advisor: Amelia Andersdotter
 
 ## Links
 
-### [All consultation responses](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+### All consultation responses
 
-### [Final report of the IT operations inquiry](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)
+[All consultation responses](https://www.regeringen.se/remisser/2021/12/remiss-av-it-driftsutredningens-slutbetankande-saker-och-kostnadseffektiv-it-drift--forslag-till-varaktiga-former-for-samordnad-statlig-it-drift/)
+
+### Final report of the IT operations inquiry
+
+[Final report of the IT operations inquiry](https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2021/12/sou-202197/)

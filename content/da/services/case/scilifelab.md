@@ -23,7 +23,6 @@ service: "Safespring Privat Cloud"
 aliases:
   - /en/services/case/scilifelab/
 ---
-##
 {{< ingress >}}
 Safespring leverer en skybaseret VM- og lagringstjeneste til SciLifeLab, Sveriges største nationale forskningsinfrastruktur for life science.
 {{< /ingress >}}
@@ -55,8 +54,8 @@ SciLifeLab driver flere forskningsprogrammer, der er afhængige af højtydende d
 To store forskningsmiljøer og -platforme bygget på Safesprings infrastruktur er dataleveringsprojektet DDS og AI-projektet BigPicture.
 
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;" alt="">
-        <img src="/img/logos/bigpicture.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #f2f0f7; display: flex;justify-content: center; align-items: center;">
+        <img src="/img/logos/bigpicture.svg" alt="BigPicture logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="220" height="102">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <p>BigPicture har til formål at understøtte udviklingen af kunstig intelligens inden for life science. I dette Horizon2020-projekt har SciLifeLab og ELIXIR-SE slået sig sammen med mange andre europæiske partnere for at levere et patologidatabibliotek.
@@ -68,8 +67,8 @@ To store forskningsmiljøer og -platforme bygget på Safesprings infrastruktur e
 </div>
 <br>
 <div class="safespring-horisontal-card-container bg-white shadow-1 safespring-horisontal-card-row">
-    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;" alt="">
-        <img src="/img/logos/scilifelab-symbol.svg" style="max-width: 80%; min-width: 20%; min-height: 30px;">
+    <div class="safespring-horisontal-card-col safespring-horisontal-card-image" style="background-color: #eef6e4; display: flex;justify-content: center; align-items: center;">
+        <img src="/img/logos/scilifelab-symbol.svg" alt="SciLifeLab logo" style="max-width: 80%; min-width: 20%; min-height: 30px;" width="117" height="111">
     </div>
 <div class="safespring-horisontal-card-col safespring-horisontal-card-content">
     <p>DDS står for Data Delivery System og er en central løsning for SciLifeLab som en kompleks infrastruktur, der producerer forskningsdata. Det er en samlet transportløsning til levering af life science-data fra dataproducerende tekniske platforme, såsom DNA-sekventering, billeddannelse og proteomik, til forskere i hele Sverige. </p>

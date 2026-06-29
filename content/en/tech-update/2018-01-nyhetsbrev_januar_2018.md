@@ -12,6 +12,7 @@ documentation: "Backup"
 aliases:
   - /blogg/nyhetsbrev_januar_2018
   - /blogg/2018/2018-01-nyhetsbrev_januar_2018/
+  - /tech-update/2018-01-nyhetsbrev_januar_2018/
 ---
 Our backup services are available in three different versions, and the guide helps you decide when each is the best fit from a cost perspective.
 

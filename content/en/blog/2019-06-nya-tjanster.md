@@ -15,12 +15,13 @@ author: "Fredric Wallsten"
 aliases:
   - /blogg/nya-tjanster
   - /blogg/2019/2019-06-nya-tjanster/
+  - /blog/2019-06-nya-tjanster/
 ---
 <div class="ingress"><p>The need for secure Swedish infrastructure services is growing rapidly. With us, open source and open standards are two of the cornerstones.</p></div>
 
 We’ve had an exciting half-year with many new customers. Among others, we’ve gained several customers in healthcare and life sciences. Many are placing higher demands on legal compliance while keeping open source and open standards in focus.
 
-To support our customers on their transformation journey and provide both expertise and platform services, we continuously expand our service offering. A couple of weeks ago, we launched our DevOps support in two different packages <a href="/devops/" id="text-button">READ MORE</a>.
+To support our customers on their transformation journey and provide both expertise and platform services, we continuously expand our service offering. A couple of weeks ago, we launched our DevOps support in two different packages <a href="/devops/" class="text-button">READ MORE</a>.
 
 Safespring plans to launch several new operations services that let you focus your resources on creating the most business value.
 

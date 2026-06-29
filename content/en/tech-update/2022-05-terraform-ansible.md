@@ -15,6 +15,7 @@ toc: "Table of contents"
 aliases:
   - /blogg/2022-05-terraform-ansible
   - /blogg/2022/2022-05-terraform-ansible/
+  - /tech-update/2022-05-terraform-ansible/
 ---
 
 {{< ingress >}}

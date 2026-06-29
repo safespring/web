@@ -5,7 +5,7 @@
 <div
   class="heading-default-single"
   style="background: url({{ if .Params.background }}
-    /img/background/{{ .Params.background }}
+    /img/background/{{ replaceRE "^/+" "" .Params.background }}
   {{ else }}
     /img/background/safespring-blue-fade2.svg
   {{ end }}); background-size: cover; background-position: center;"
@@ -19,8 +19,10 @@
           class="toplogo"
         />
       {{ end }}
+      {{ $sectionHref := "/" }}
+      {{ with .Section }}{{ $sectionHref = printf "/%s/" . }}{{ end }}
       <a
-        href="/{{ .Section }}"
+        href="{{ $sectionHref }}"
         style="{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}"
       >
         {{ if eq .Section "om-safespring" }}

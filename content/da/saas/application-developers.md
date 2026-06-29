@@ -56,4 +56,4 @@ Vi er en svensk virksomhed, der leverer alle tjenester inden for landets grænse
 
 Kontakt os for at høre mere om, hvordan vi kan støtte din SaaS-forretning med bæredygtige og skalerbare løsninger.
 
-<a href="/kontakt" id="text-button">Kontakt Safespring</a>
+<a href="/kontakt/" class="text-button">Kontakt Safespring</a>

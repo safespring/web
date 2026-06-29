@@ -58,7 +58,7 @@
               id="main-menu-link-5"
               href="mailto:hello@safespring.com"
               class="site-header-button-mail"
-              onclick="_paq.push(['trackEvent', 'Knapptryck', 'Mailknapp']);"
+              onclick="if (window._paq && window._paq.push) { window._paq.push(['trackEvent', 'Knapptryck', 'Mailknapp']); }"
               >hello@safespring.com</a
             >
           </li>
@@ -86,6 +86,7 @@
     id="site-megamenu"
     aria-hidden="true"
     aria-label="{{ T "menu.platform" }}"
+    inert
   >
     <div class="megamenu-main-service">
       {{ range $slug := $primaryServiceSlugs }}
@@ -122,9 +123,9 @@
   </div>
 
   <!-- Mobile menu wrapper (inside header) -->
-  <div class="mobile-menu-wrapper" id="mobileMenuWrapper" aria-hidden="true">
+  <div class="mobile-menu-wrapper" id="mobileMenuWrapper" aria-hidden="true" inert>
     <!-- Main menu screen -->
-    <div class="menu-screen" id="mobileMainMenu">
+    <div class="menu-screen" id="mobileMainMenu" aria-hidden="false">
       <ul>
         <li class="menu-item-featured">
           <button
@@ -179,6 +180,7 @@
       class="menu-screen submenu"
       id="mobilePlatformSubMenu"
       aria-hidden="true"
+      inert
     >
       <div class="submenu-header">
         <button type="button" class="back-button">
@@ -225,7 +227,7 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "services/compliant-kubernetes" }}"
+          <a href="{{ relref . "services/case/elastisys" }}"
             >{{ T "menu.welkin" }}</a
           >
         </li>
@@ -238,7 +240,7 @@
     </div>
 
     <!-- Knowledge Hub submenu -->
-    <div class="menu-screen submenu" id="mobileNewsSubMenu" aria-hidden="true">
+    <div class="menu-screen submenu" id="mobileNewsSubMenu" aria-hidden="true" inert>
       <div class="submenu-header">
         <button type="button" class="back-button">
           &larr;
@@ -294,7 +296,7 @@
     </div>
 
     <!-- About submenu -->
-    <div class="menu-screen submenu" id="mobileAboutSubMenu" aria-hidden="true">
+    <div class="menu-screen submenu" id="mobileAboutSubMenu" aria-hidden="true" inert>
       <div class="submenu-header">
         <button type="button" class="back-button">
           &larr;
@@ -365,6 +367,8 @@
             >
               <img
                 src="/img/flags/{{ $language.Lang }}.svg"
+                width="31"
+                height="31"
                 alt=""
                 aria-hidden="true"
               />
@@ -393,6 +397,12 @@
   .site-header-platform-link {
     padding-bottom: 30px;
     margin-bottom: -30px;
+  }
+
+  .site-header-logo a {
+    align-items: center;
+    display: inline-flex;
+    min-height: 44px;
   }
 
   .site-header-links a:focus-visible,
@@ -433,16 +443,28 @@
 
   /* Mobile layout */
   @media only screen and (max-width: 940px) {
+    .site-header,
+    .mobile-menu-wrapper {
+      width: 100vw;
+      max-width: 100vw;
+      overflow-x: clip;
+      box-sizing: border-box;
+    }
+
     .site-header-wrapper {
       justify-content: space-between !important;
       flex-flow: row nowrap !important;
       gap: 1rem;
       padding: 1.25rem 1.5rem 1rem !important;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .site-header-wrapper::before {
       width: calc(100% - 3rem);
       left: 1.5rem;
+      transform: none;
     }
 
     .site-header-logo {
@@ -453,7 +475,9 @@
     }
 
     .site-header-logo a {
+      align-items: center;
       display: flex;
+      min-height: 44px;
     }
 
     .site-header-logo img {
@@ -537,16 +561,15 @@
   }
 
   /* Mobile menu styles */
+  body.mobile-menu-open .site-header {
+    z-index: 2000;
+  }
+
   :root {
-    --initialMain: 5px;
-    --initialSub: 10px;
-    --shiftAmount: 5px;
-    --shiftTime: 0.3s;
-    --easeFunction: ease;
-    --fadeOutTime: 0.15s;
-    --fadeInTime: 0.15s;
-    --fadeEase: ease-in-out;
-    --bgFadeTime: 0.3s;
+    --mobile-menu-slide-distance: 24px;
+    --mobile-menu-shift-time: 0.32s;
+    --mobile-menu-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --mobile-menu-fade-time: 0.22s;
   }
 
   .mobile-menu-wrapper {
@@ -554,7 +577,7 @@
     top: 92px; /* Start below the header bar */
     left: 0;
     width: 100%;
-    height: calc(100% - 80px); /* Adjust height to account for header */
+    height: calc(100% - 92px); /* Match the header offset */
     background: transparent;
     color: #195f8c;
     z-index: 1000;
@@ -583,12 +606,13 @@
     visibility: hidden;
     pointer-events: none;
     transition:
-      opacity var(--fadeEase) var(--fadeOutTime),
-      visibility var(--fadeEase) var(--fadeOutTime),
-      transform var(--shiftTime) var(--easeFunction);
+      opacity var(--mobile-menu-fade-time) ease,
+      transform var(--mobile-menu-shift-time) var(--mobile-menu-ease),
+      visibility 0s linear var(--mobile-menu-fade-time);
   }
 
   .menu-screen {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -600,7 +624,7 @@
   }
 
   #mobileMainMenu {
-    transform: translateX(var(--initialMain));
+    transform: translateX(0);
     transition-delay: 0s;
   }
 
@@ -608,14 +632,14 @@
     z-index: 1;
     opacity: 0;
     pointer-events: none;
-    transform: translateX(var(--initialSub));
+    transform: translateX(var(--mobile-menu-slide-distance));
     transition-delay: 0s;
   }
 
   .mobile-menu-wrapper.show-submenu #mobileMainMenu {
     opacity: 0;
     pointer-events: none;
-    transform: translateX(calc(var(--initialMain) - var(--shiftAmount)));
+    transform: translateX(calc(-1 * var(--mobile-menu-slide-distance)));
     transition-delay: 0s;
   }
 
@@ -623,24 +647,28 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(calc(var(--initialSub) - var(--shiftAmount)));
-    transition-delay: var(--fadeOutTime);
+    transform: translateX(0);
+    transition-delay: 0.04s;
   }
 
   .mobile-menu-wrapper.visible:not(.show-submenu) #mobileMainMenu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(var(--initialMain));
-    transition-delay: var(--fadeInTime);
+    transform: translateX(0);
+    transition-delay: 0.04s;
   }
 
   .mobile-menu-wrapper:not(.show-submenu) .submenu {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateX(var(--initialSub));
+    transform: translateX(var(--mobile-menu-slide-distance));
     transition-delay: 0s;
+  }
+
+  .mobile-menu-wrapper.visible .menu-screen {
+    visibility: visible;
   }
 
   /* Menu item animations */
@@ -706,10 +734,13 @@
 
   .menu-screen a,
   .mobile-submenu-trigger {
+    align-items: center;
     background: none;
     border: 0;
+    box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
+    min-height: 44px;
     padding: 0;
     text-align: left;
     text-decoration: none;
@@ -762,9 +793,14 @@
 
   .menu-item-featured a,
   .menu-item-featured .mobile-submenu-trigger {
+    box-sizing: border-box;
     font-size: 1.6rem;
     font-weight: 600;
     font-style: normal;
+    line-height: 1.15;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
     color: #195f8c;
     font-family: var(--hind-font);
   }
@@ -872,7 +908,7 @@
     background: color-mix(in srgb, var(--main-color) 18%, transparent);
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 430px) {
     .mobile-language-label {
       position: absolute;
       width: 1px;
@@ -943,6 +979,54 @@
   body.mobile-menu-open {
     overflow: hidden;
   }
+
+  body:not(.mobile-menu-open) .mobile-menu-wrapper,
+  body:not(.mobile-menu-open) .mobile-menu-wrapper .menu-screen {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: none;
+  }
+
+  body:not(.mobile-menu-open) .mobile-menu-wrapper #mobileMainMenu,
+  body:not(.mobile-menu-open) .mobile-menu-wrapper .menu-screen {
+    transform: translateX(0);
+  }
+
+  body.mobile-menu-open .mobile-menu-wrapper {
+    background: rgb(250, 254, 254);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  body.mobile-menu-open .mobile-menu-wrapper:not(.show-submenu) #mobileMainMenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  body.mobile-menu-open .mobile-menu-wrapper.show-submenu .submenu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-menu-wrapper,
+    .mobile-menu-wrapper .menu-screen,
+    #mobileMainMenu li {
+      transition: none !important;
+    }
+
+    .mobile-menu-wrapper .menu-screen,
+    .mobile-menu-wrapper.show-submenu #mobileMainMenu,
+    .mobile-menu-wrapper.show-submenu .submenu.active,
+    .mobile-menu-wrapper.visible:not(.show-submenu) #mobileMainMenu,
+    .mobile-menu-wrapper:not(.show-submenu) .submenu {
+      transform: translateX(0) !important;
+    }
+  }
 </style>
 
 <script>
@@ -971,17 +1055,23 @@
   const platformLink = document.getElementById("main-menu-link-platform");
   const megaMenuWrapper = document.getElementById("site-megamenu");
   let hideTimeout;
+  let suppressMegaMenuFocusOpen = false;
 
   function showMegaMenu() {
+    if (suppressMegaMenuFocusOpen) {
+      return;
+    }
     clearTimeout(hideTimeout);
     megaMenuWrapper.classList.add("show");
     megaMenuWrapper.setAttribute("aria-hidden", "false");
+    megaMenuWrapper.removeAttribute("inert");
     platformLink.setAttribute("aria-expanded", "true");
   }
 
   function hideMegaMenu() {
     megaMenuWrapper.classList.remove("show");
     megaMenuWrapper.setAttribute("aria-hidden", "true");
+    megaMenuWrapper.setAttribute("inert", "");
     platformLink.setAttribute("aria-expanded", "false");
   }
 
@@ -997,6 +1087,7 @@
     platformLink.addEventListener("mouseenter", showMegaMenu);
     platformLink.addEventListener("focus", showMegaMenu);
     platformLink.addEventListener("mouseleave", scheduleMegaMenuClose);
+    platformLink.addEventListener("focusout", scheduleMegaMenuClose);
 
     megaMenuWrapper.addEventListener("mouseenter", showMegaMenu);
     megaMenuWrapper.addEventListener("mouseleave", scheduleMegaMenuClose);
@@ -1005,8 +1096,13 @@
 
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && megaMenuWrapper.classList.contains("show")) {
+        e.preventDefault();
         hideMegaMenu();
+        suppressMegaMenuFocusOpen = true;
         platformLink.focus();
+        window.requestAnimationFrame(function () {
+          suppressMegaMenuFocusOpen = false;
+        });
       }
     });
   }
@@ -1025,12 +1121,77 @@
   const mobileSubmenus = document.querySelectorAll(
     ".mobile-menu-wrapper .submenu",
   );
+  const mobileMainMenu = document.getElementById("mobileMainMenu");
+  const mobileMenuFocusableSelector =
+    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+  function setMobileMenuPageInert(isInert) {
+    Array.from(document.body.children).forEach((element) => {
+      if (
+        element === navbar ||
+        element.id === "CookieConsent" ||
+        element.tagName === "SCRIPT" ||
+        element.tagName === "STYLE"
+      ) {
+        return;
+      }
+
+      if (isInert) {
+        if (!element.hasAttribute("data-mobile-menu-inert")) {
+          if (element.hasAttribute("inert")) {
+            element.setAttribute("data-mobile-menu-had-inert", "");
+          }
+          element.setAttribute("data-mobile-menu-inert", "");
+        }
+        element.setAttribute("inert", "");
+        return;
+      }
+
+      if (!element.hasAttribute("data-mobile-menu-inert")) {
+        return;
+      }
+
+      if (!element.hasAttribute("data-mobile-menu-had-inert")) {
+        element.removeAttribute("inert");
+      }
+      element.removeAttribute("data-mobile-menu-inert");
+      element.removeAttribute("data-mobile-menu-had-inert");
+    });
+  }
+
+  function getMobileMenuFocusableElements() {
+    if (!mobileMenuBtn || !mobileMenuWrapper) {
+      return [];
+    }
+
+    return [mobileMenuBtn]
+      .concat(
+        Array.from(mobileMenuWrapper.querySelectorAll(mobileMenuFocusableSelector)),
+      )
+      .filter((element) => {
+        if (element.closest("[inert]")) {
+          return false;
+        }
+
+        const style = window.getComputedStyle(element);
+        return (
+          style.display !== "none" &&
+          style.visibility !== "hidden" &&
+          element.getClientRects().length > 0
+        );
+      });
+  }
 
   function resetMobileSubmenus() {
     mobileMenuWrapper.classList.remove("show-submenu");
+    if (mobileMainMenu) {
+      mobileMainMenu.setAttribute("aria-hidden", "false");
+      mobileMainMenu.removeAttribute("inert");
+    }
     mobileSubmenus.forEach((sub) => {
       sub.classList.remove("active");
       sub.setAttribute("aria-hidden", "true");
+      sub.setAttribute("inert", "");
     });
     mobileSubmenuLinks.forEach((link) => {
       link.setAttribute("aria-expanded", "false");
@@ -1043,7 +1204,9 @@
     mobileMenuBtn.classList.remove("active");
     mobileMenuBtn.setAttribute("aria-expanded", "false");
     mobileMenuWrapper.setAttribute("aria-hidden", "true");
+    mobileMenuWrapper.setAttribute("inert", "");
     document.body.classList.remove("mobile-menu-open");
+    setMobileMenuPageInert(false);
     resetMobileSubmenus();
   }
 
@@ -1052,7 +1215,10 @@
     mobileMenuBtn.classList.add("active");
     mobileMenuBtn.setAttribute("aria-expanded", "true");
     mobileMenuWrapper.setAttribute("aria-hidden", "false");
+    mobileMenuWrapper.removeAttribute("inert");
     document.body.classList.add("mobile-menu-open");
+    setMobileMenuPageInert(true);
+    resetMobileSubmenus();
   }
 
   // Toggle mobile menu
@@ -1071,9 +1237,14 @@
     link.addEventListener("click", function (e) {
       e.preventDefault();
       mobileMenuWrapper.classList.add("show-submenu");
+      if (mobileMainMenu) {
+        mobileMainMenu.setAttribute("aria-hidden", "true");
+        mobileMainMenu.setAttribute("inert", "");
+      }
       mobileSubmenus.forEach((sub) => {
         sub.classList.remove("active");
         sub.setAttribute("aria-hidden", "true");
+        sub.setAttribute("inert", "");
       });
       mobileSubmenuLinks.forEach((submenuLink) => {
         submenuLink.setAttribute("aria-expanded", "false");
@@ -1085,7 +1256,15 @@
       if (targetSubmenu) {
         targetSubmenu.classList.add("active");
         targetSubmenu.setAttribute("aria-hidden", "false");
+        targetSubmenu.removeAttribute("inert");
         link.setAttribute("aria-expanded", "true");
+
+        const firstSubmenuFocusable = targetSubmenu.querySelector(
+          mobileMenuFocusableSelector,
+        );
+        if (firstSubmenuFocusable) {
+          firstSubmenuFocusable.focus();
+        }
       }
     });
   });
@@ -1094,6 +1273,16 @@
   mobileBackButtons.forEach((btn) => {
     btn.addEventListener("click", function () {
       resetMobileSubmenus();
+      if (!mobileMainMenu) {
+        return;
+      }
+
+      const firstMainMenuFocusable = mobileMainMenu.querySelector(
+        mobileMenuFocusableSelector,
+      );
+      if (firstMainMenuFocusable) {
+        firstMainMenuFocusable.focus();
+      }
     });
   });
 
@@ -1111,6 +1300,38 @@
   });
 
   document.addEventListener("keydown", function (e) {
+    if (
+      e.key === "Tab" &&
+      mobileMenuWrapper &&
+      mobileMenuWrapper.classList.contains("visible")
+    ) {
+      const focusableElements = getMobileMenuFocusableElements();
+      const firstFocusableElement = focusableElements[0];
+      const lastFocusableElement =
+        focusableElements[focusableElements.length - 1];
+
+      if (!firstFocusableElement || !lastFocusableElement) {
+        return;
+      }
+
+      if (e.shiftKey && document.activeElement === firstFocusableElement) {
+        e.preventDefault();
+        lastFocusableElement.focus();
+        return;
+      }
+
+      if (!e.shiftKey && document.activeElement === lastFocusableElement) {
+        e.preventDefault();
+        firstFocusableElement.focus();
+        return;
+      }
+
+      if (!focusableElements.includes(document.activeElement)) {
+        e.preventDefault();
+        firstFocusableElement.focus();
+      }
+    }
+
     if (
       e.key === "Escape" &&
       mobileMenuWrapper &&

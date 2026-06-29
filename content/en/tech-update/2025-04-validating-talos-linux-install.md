@@ -10,12 +10,13 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "en"
-sectiontext: "Tech Update"
+sectiontext: "Deep Dives"
 section: "Tech update"
 author: "Stefan Negru"
 TOC: "In this post"
 aliases:
   - /blogg/2025/2025-04-validating-talos-linux-intstall/
+  - /tech-update/2025-04-validating-talos-linux-install/
 ---
 
 In a [previous article]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}) we started to explore Talos Linux and what that could mean for us, and how we can automate the installation on Safespring OpenStack, but we wanted to go a few steps further in our investigation and look into confirming two more aspects:

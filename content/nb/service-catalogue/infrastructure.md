@@ -30,8 +30,8 @@ Cloud compute-tjenester inneholder følgende kategorier (OpenStack flavors):
 1. [Grunnleggende compute](#1-basic-compute)
 1. [Minneoptimalisert compute](#2-memory-optimized-compute)
 1. [Grunnleggende compute med lokal NVMe-disk](#3-basic-compute-with-local-nvme-disk)
-1. [Minneoptimalisert compute med GPU og lokal NVMe-disk](#5-memory-optimized-compute-with-gpu-and-local-nvme-disk)
-1. [Bare metal-compute](#6-bare-metal-compute)
+1. [Minneoptimalisert compute med GPU og lokal NVMe-disk](#4-compute-with-gpu-and-local-nvme-disk)
+1. [Bare metal-compute](#5-bare-metal-compute)
 
 Basisdisker er standard rotdiskstørrelser med mindre et volum med en annen størrelse spesifiseres ved utrulling av et image. Ephemeral-disker er ekstra lokale lagringsenheter tilgjengelige for en virtuell maskin på en bestemt hypervisor, for de flavor-typene der det er aktuelt.
 
@@ -39,7 +39,7 @@ Basisdisker er standard rotdiskstørrelser med mindre et volum med en annen stø
 Hvis du ikke har funnet den ideelle flavoren for tjenesten din, ikke bekymre deg! Vi tilbyr en rekke større flavors som ikke er tilgjengelige på plattformen for øyeblikket. For mer informasjon, ta kontakt med Safespring på [hello@safespring.com](mailto:hello@safespring.com).
 {{% /note %}}
 
-## 1. Grunnleggende compute
+## 1. Grunnleggende compute {#1-basic-compute}
 
 Den grunnleggende compute-profilen tilbyr et vCPU-til-RAM-forhold på 1:2, som betyr at for hver virtuelle CPU som tildeles, er det to gigabyte RAM tilgjengelig. Denne profilen har Hyper-Threading deaktivert på hypervisorene og inkluderer ikke ephemeral-lagring. I tillegg er CPU-overprovisjoneringen begrenset til maks 1:4, slik at det ikke er mer enn fire ganger så mange virtuelle CPU-er som fysiske CPU-er tilgjengelig på verten.
 
@@ -57,7 +57,7 @@ Ingen.
 | FLAVOR-b2. c8 r16  | 8    | 16       | 0               |
 | FLAVOR-b2. c16 r32 | 16   | 32       | 0               |
 
-## 2. Minneoptimalisert compute
+## 2. Minneoptimalisert compute {#2-memory-optimized-compute}
 
 Den minneoptimaliserte compute-profilen gir et vCPU-til-RAM-forhold på 1:4, som betyr at for hver virtuelle CPU som tildeles, er det fire gigabyte RAM tilgjengelig. Denne profilen har også Hyper-Threading deaktivert på hypervisorene og inkluderer ikke ephemeral-lagring. I tillegg er CPU-overprovisjoneringen begrenset til maks 1:6, slik at det ikke er mer enn seks ganger så mange virtuelle CPU-er som fysiske CPU-er tilgjengelig på verten.
 
@@ -75,7 +75,7 @@ Ingen.
 | FLAVOR-b2. c8 r32  | 8    | 32       | 0               |
 | FLAVOR-b2. c16 r64 | 16   | 64       | 0               |
 
-## 3. Grunnleggende compute med lokal NVMe-disk
+## 3. Grunnleggende compute med lokal NVMe-disk {#3-basic-compute-with-local-nvme-disk}
 
 Profilen for grunnleggende compute med lokal NVMe-disk tilbyr et vCPU-til-RAM-forhold på 1:2, som betyr at for hver virtuelle CPU som tildeles, er det to gigabyte RAM tilgjengelig. Denne profilen inkluderer lokal ephemeral NVMe-lagring. CPU-overprovisjoneringen er satt til maks 1:3, som betyr at det kan være opptil tre virtuelle CPU-er for hver fysiske CPU tilgjengelig på verten.
 
@@ -101,7 +101,7 @@ Ingen.
 | FLAVOR-l2. c16 r32. 1000 | 16   | 32       | 1 000           |
 | FLAVOR-l2. c32 r64.1000  | 32   | 64       | 1 000           |
 
-## 4. Compute med GPU og lokal NVME-disk
+## 4. Compute med GPU og lokal NVME-disk {#4-compute-with-gpu-and-local-nvme-disk}
 
 Den minneoptimaliserte compute-profilen med lokal NVME-disk har et vCPU:RAM-forhold på 1:4. Den leveres med lokal ephemeral NVME-lagring. CPU-overprovisjoneringen er 1:1. Det lokale lageret er IOPS-provisjonert.
 
@@ -124,7 +124,7 @@ Ingen.
 | FLAVOR-g2 .c8 r32. 500   | g2.c8r32.500   | 8    | 32 GiB | 500 GB    | 4k/8k, 21k/42k                 |
 | FLAVOR-g2 .c16 r64. 1000 | g2.c16r64.1000 | 16   | 64 GiB | 1000 GB   | 4k/8k, 46k/92k                 |
 
-## 5. Bare metal-compute
+## 5. Bare metal-compute {#5-bare-metal-compute}
 
 Bare metal-compute er en provisjonert fysisk server. Kun de leverte OS-images er fullt støttet, men dokumentasjon om hvordan du forbereder et OS-image for bare metal-serveren er også tilgjengelig. Hvis bestillinger overstiger tilgjengelig kapasitet, avhenger leveringstiden av leverandørens maskinvareleveranser.
 

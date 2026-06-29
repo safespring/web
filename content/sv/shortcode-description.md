@@ -1068,7 +1068,7 @@ Skapar en textlänk med en knapp-liknande stil (eller en enkel textlänk) utan b
 
 ### Kod
 ```html
-<a id="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
+<a class="text-button" target="_self" href="{{ .Get 1 }}">{{ .Get 0 }}</a> <br />
 ```
 ### Exempel
 ```
@@ -1114,7 +1114,7 @@ Skapar en FAQ-liknande dragspelsmeny med en fråga som rubrik och svaret i det h
 ### Kod
 ```html
 <div class="accordion-box">
-  <button class="accordion">{{ .Get "question" }}</button>
+  <button type="button" class="accordion">{{ .Get "question" }}</button>
   <div class="panel content-body">
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <h3 itemprop="name">{{ .Get "question" }}</h3>

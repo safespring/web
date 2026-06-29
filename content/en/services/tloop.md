@@ -18,7 +18,7 @@ aliases:
   - /tjanster/tloop/
 ---
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-leaf" text="100% CO2 reduction" link="#" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100% CO2 reduction" link="" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-tank-water" text="Liquid cooling" link="" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-down-from-dotted-line" text="30% lower energy costs" link="" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-recycle" text="Climate neutral" link="" color="#3C9BCD">}}
@@ -89,7 +89,7 @@ In summary, they offer less carbon in compute, less carbon in buildings, and hea
 {{% /question %}}
 
 {{% question question="How much lower CO₂ can Safespring Private Cloud at T.Loop offer compared to my current installation?" %}}
-They can help you calculate your current climate footprint if they receive details about your usage. Primarily, the calculated CO₂ is based on your PUE and how many kWh you use. If you need help, please <a href="mailto:fredric.wallsten@safespring.com">contact Fredric Wallsten at Safespring</a>.
+They can help you calculate your current climate footprint if they receive details about your usage. Primarily, the calculated CO₂ is based on your PUE and how many kWh you use. If you need help, please [contact Fredric Wallsten at Safespring](mailto:fredric.wallsten@safespring.com).
 {{% /question %}}
 
 {{% question question="Does T.Loop also offer Data Energy Centers® for Safespring On-Prem Cloud?" %}}
@@ -120,7 +120,7 @@ Their Data Energy Centers® are designed and built to the highest data center st
 {{% /question %}}
 
 {{% question question="Can I visit T.Loop’s data center facilities before I sign a co-location agreement?" %}}
-To book a tour, please <a href="mailto:hello@tloop.se">contact T.Loop</a> and they will arrange a visit time for you.
+To book a tour, please [contact T.Loop](mailto:hello@tloop.se) and they will arrange a visit time for you.
 {{% /question %}}
 
 {{< accordion-script >}}

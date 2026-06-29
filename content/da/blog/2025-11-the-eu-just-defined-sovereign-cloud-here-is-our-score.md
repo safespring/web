@@ -12,6 +12,8 @@ socialmedia: ""
 language: "da"
 section: "blogg"
 author: "Daniel Melin"
+aliases:
+  - /blog/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/
 ---
 {{% ingress %}}
 Den 20. oktober 2025 offentliggjorde Europa-Kommissionen en reference for klassificering af europæiske cloudtjenester: Cloud Sovereignty Framework.

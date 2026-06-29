@@ -4,18 +4,28 @@
 <body>
   <div class="main">
     {{ partial "header.html" . }}
-    <div class="terms">
-      {{ $data := .Data }}
-      {{ range $key, $value := .Data.Terms }}
-        <div class="term">
-          <a href="{{ $data.Plural }}/{{ $key | urlize }}">
-            <div class="term-title">{{ $key }} ({{ len $value }})</div>
-          </a>
-        </div>
-        <!-- term -->
-      {{ end }}
+    <div class="heading-default-single">
+      <div style="width: 800px; min-width: 100px;">
+        <h1>{{ .Title }}</h1>
+      </div>
+      <div class="w250"></div>
     </div>
-    <!-- terms -->
+    <main class="main-default-single">
+      <div class="content-default-single-full-width">
+        <div class="terms terms-index">
+          {{ $data := .Data }}
+          {{ range $key, $value := .Data.Terms }}
+            <div class="term">
+              <a href="{{ printf "/%s/%s/" $data.Plural ($key | urlize) | relLangURL }}">
+                <div class="term-title">{{ $key }} ({{ len $value }})</div>
+              </a>
+            </div>
+            <!-- term -->
+          {{ end }}
+        </div>
+        <!-- terms -->
+      </div>
+    </main>
     {{ partial "footer.html" . }}
   </div>
   <!-- main end -->

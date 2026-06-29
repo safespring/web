@@ -26,6 +26,8 @@ toc: "Contents"
 This white paper concerns the provisions of EU and U.S. law governing cross-border data transfers and current court cases that may affect them.
 {{< /ingress >}}
 
+<span id="download"></span>
+
 The General Data Protection Regulation (GDPR) entered into force on 25 May 2018, replacing the Personal Data Act (PUL). It is neither the beginning nor the end of the EU’s long-standing efforts to improve the protection of individuals’ data and their right to privacy. These rights are fundamental human rights in the EU, and all Member States have been bound by them in areas within the EU’s competence since the Lisbon Treaty took effect in 20091. The EU thereby strengthens its lead over the United States when it comes to legal protections for individuals’ rights to privacy and data.
 
 ## Background

@@ -19,6 +19,7 @@ sidebarlinkname2: "GitHub-kodelager"
 sidebarlinkurl2: "https://github.com/safespring-community/utilities/tree/main/okd/cinder-csi"
 aliases:
   - /blogg/2024/2024-03-cinder-csi-volume-provisioner/
+  - /tekniske-oppdateringer/2024-03-cinder-csi-volume-provisioner/
 ---
 {{< ingress >}}
 Har du konfigurert OKD- eller OpenShift-klyngen din med plattformalternativet satt til "none" og mangler som følge av dette OpenStack Cinder CSI Driver Operator?

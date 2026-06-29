@@ -140,7 +140,7 @@ We use cookies and similar technologies in compliance with the ePrivacy Directiv
 - Strictly necessary cookies
 - Functional cookies
 - Analytics technologies
-- Consent management cookies (read more about our cookies in the <a href="javascript:cookieTractor.openConsentSettings()" class="cookie-consent-settings" rel="nofollow">Cookies setting</a>)
+- Consent management cookies (read more about our cookies in the <button type="button" class="cookie-consent-settings-inline" onclick="if (window.cookieTractor && cookieTractor.openConsentSettings) cookieTractor.openConsentSettings();">Cookies setting</button>)
 
 ## 5. Business Contact Data
 

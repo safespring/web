@@ -13,7 +13,7 @@ cardintro: ""
 aliases:
   - /branscher/kommuner/
 ---
-<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true">
+<video poster="/branscher/images/safespring_esam.jpg" width="100%" style="border-radius: 5px;" controls="true" preload="none">
 <source type="video/mp4" src="/branscher/images/safespring_esam.mp4">
 <track src="/branscher/images/safespring_esam.vtt" kind="subtitles" srclang="sv" label="Svenska" default>
 </video>
@@ -24,11 +24,11 @@ Our services make it possible to meet these requirements while benefiting from t
 
 Because we are a Swedish company that provides these services in Sweden, you can comply with eSam's recommendations.
 
-<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" id="text-button">Read eSam's recommendations</a>
+<a href="http://www.esamverka.se/stod-och-vagledning/rattsliga-uttalanden/rojande-och-molntjanster.html" class="text-button">Read eSam's recommendations</a>
 
 Contact us to discuss further how we can help you safely use a cloud solution while complying with laws and regulations.
 
-<a href="{{% relref "/contact.md" %}}" id="text-button">Contact Safespring</a><br><br>
+<a href="{{% relref "/contact.md" %}}" class="text-button">Contact Safespring</a><br><br>
 
 ## White paper
 
@@ -43,4 +43,4 @@ This white paper outlines the conditions following the ruling and provides recom
 
 <h3 id="download">Download the white paper</h3>
 
-<br><iframe src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" 		width="360" 		height="367" 		style="border:0"></iframe>
+<br><iframe data-src="https://pages.upsales.com/9549u77a8afc208f84341af2a530953248804-frame" width="360" height="367" style="border:0" loading="lazy" title="Download white paper"></iframe>

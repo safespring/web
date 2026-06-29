@@ -37,7 +37,7 @@
     </div>
   </div>
 </div>
-<div style="margin: 50px;">.</div>
+<div class="ai-disclaimer-spacer" aria-hidden="true"></div>
 
 <style>
   .ai-disclaimer-container {
@@ -47,16 +47,21 @@
     background-color: #fafefe;
     border-radius: 40px;
     max-width: 350px;
-    position: absolute;
+    position: relative;
     transition: box-shadow 300ms ease-in;
     width: 65vw;
     border: solid 2px #fafefe
+  }
+
+  .ai-disclaimer-spacer {
+    display: none;
   }
 
   .ai-disclaimer-header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    min-height: 44px;
     width: 100%;
     border: 0;
     background: transparent;
@@ -83,6 +88,13 @@
     transition: transform 200ms ease-in;
   }
 
+  .ai-disclaimer-header:focus-visible,
+  .ai-disclaimer-cta a:focus-visible {
+    outline: 3px solid var(--cloud-blue-color);
+    outline-offset: 4px;
+    border-radius: 8px;
+  }
+
   .ai-disclaimer-headline {
     display: flex;
     align-items: center;
@@ -94,7 +106,8 @@
     max-height: 0;
     opacity: 0;
     pointer-events: none;
-    transition: max-height 600ms ease, opacity 200ms ease;
+    visibility: hidden;
+    transition: max-height 600ms ease, opacity 200ms ease, visibility 0s linear 600ms;
   }
 
   .ai-disclaimer-cta {
@@ -102,13 +115,52 @@
   	justify-content: space-between;
   }
 
+  @media only screen and (max-width: 900px) {
+    .ai-disclaimer-container {
+      box-sizing: border-box;
+      margin-left: 0;
+      max-width: 100%;
+      padding: 24px;
+      position: relative;
+      width: 100%;
+      border-radius: 24px;
+    }
+
+    .ai-disclaimer-header {
+      gap: 0.75rem;
+    }
+
+    .ai-disclaimer-header p {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+
+    .ai-disclaimer-cta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .ai-disclaimer-cta a {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .ai-disclaimer-spacer {
+      margin: 0 0 1.5rem;
+    }
+  }
+
   /* ÖPPEN via klass (mobil/klick) */
-  .ai-disclaimer-container.is-open .ai-disclaimer-panel {
+  .ai-disclaimer-container.is-open .ai-disclaimer-panel,
+  .ai-disclaimer-header[aria-expanded="true"] + .ai-disclaimer-panel {
     max-height: 300px;
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
+    transition: max-height 600ms ease, opacity 200ms ease, visibility 0s;
   }
-  .ai-disclaimer-container.is-open .ai-disclaimer-header .fa-caret-down {
+  .ai-disclaimer-container.is-open .ai-disclaimer-header .fa-caret-down,
+  .ai-disclaimer-header[aria-expanded="true"] .fa-caret-down {
     transform: rotate(180deg);
   }
 
@@ -119,6 +171,8 @@
       max-height: 300px;
       opacity: 1;
       pointer-events: auto;
+      visibility: visible;
+      transition: max-height 600ms ease, opacity 200ms ease, visibility 0s;
     }
     .ai-disclaimer-container:hover .fa-caret-down,
     .ai-disclaimer-container:focus-within .fa-caret-down {
@@ -150,13 +204,15 @@
     // hover
     root.addEventListener('mouseenter', () => setExpanded(true));
     root.addEventListener('mouseleave', () => {
-      // bara stäng om den inte är manuellt öppnad via mobil-klass
-      if (!root.classList.contains('is-open')) setExpanded(false);
+      // stäng bara om panelen inte fortfarande har tangentbordsfokus
+      if (!root.classList.contains('is-open') && !root.matches(':focus-within')) setExpanded(false);
     });
     // keyboard focus
-    btn.addEventListener('focus', () => setExpanded(true));
-    btn.addEventListener('blur', () => {
-      if (!root.classList.contains('is-open')) setExpanded(false);
+    root.addEventListener('focusin', () => setExpanded(true));
+    root.addEventListener('focusout', (event) => {
+      if (!root.classList.contains('is-open') && !root.contains(event.relatedTarget)) {
+        setExpanded(false);
+      }
     });
     // Klick på desktop ska inte toggla (önskat beteende: hover öppnar)
     btn.addEventListener('click', (e) => {

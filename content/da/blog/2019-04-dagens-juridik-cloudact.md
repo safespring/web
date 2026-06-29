@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/dagens-juridik-cloudact
   - /blogg/2019/2019-04-dagens-juridik-cloudact/
+  - /blog/2019-04-dagens-juridik-cloudact/
 ---
 <div class="ingress"><p>Adam Odmark, advokatfuldmægtig, advokatfirmaet Delphi, har skrevet en analyse i Dagens Juridik den 28. marts</p></div>
 
@@ -28,7 +29,7 @@ En løsning er at flytte følsomme data ud af de amerikanske cloudmiljøer og la
 
 Mange virksomheder og institutioner har allerede taget skridtet og bruger blandt andet vores svenske cloudtjeneste. Læs mere om vores kunder og deres oplevelse af Safespring her:
 
-<a href="{{% relref "/services/case/" %}}" id="text-button">Læs Safesprings kundereferencer</a><br>
+<a href="{{% relref "/services/case/" %}}" class="text-button">Læs Safesprings kundereferencer</a><br>
 
 Adam Odmark mener, at situationen mellem databeskyttelsesforordningen og USA's Cloud Act kræver hurtig handling.
 

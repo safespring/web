@@ -18,6 +18,7 @@ sidebarlinkurl: "https://github.com/safespring-community/utilities/tree/main/okd
 sidebarlinkicon: "fa-arrow-up-right-from-square"
 aliases:
   - /blogg/2024/2024-04-container-projekt-onboarding/
+  - /tekniske-opdateringer/2024-04-container-projekt-onboarding/
 ---
 {{< ingress >}}
 Velkommen til Project Onboarding – en transformativ tilgang, der forenkler håndteringen af namespaces i Kubernetes for multi-tenant-miljøer.

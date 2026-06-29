@@ -27,13 +27,13 @@ Ved å velge fornybar energi unngår vi karbonutslipp som ellers ville vært ska
 
 For å bekrefte vår bærekraftsprestasjon har vi valgt å få tjenestene våre sertifisert av «The Green Web Foundation». Denne organisasjonen arbeider for å gjøre internett til et grønnere sted og sertifiserer selskaper som bruker fornybar energi for sine nettsider og digitale tjenester. Å få tjenestene våre sertifisert av The Green Web Foundation er et skritt i riktig retning mot å bli en grønnere organisasjon.
 
-![Dette nettstedet er grønt hostet – verifisert av thegreenwebfoundation.org](https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true)
+<img src="https://app.greenweb.org/api/v3/greencheckimage/www.safespring.com?nocache=true" alt="Dette nettstedet er grønt hostet – verifisert av thegreenwebfoundation.org" width="200" height="95">
 
 Men det er ikke bare bruken av fornybar energi som gjør oss til en bærekraftig virksomhet. Alle datasentrene våre er utformet for å ha en PUE under 1,2. PUE står for «Power Usage Effectiveness» og er en viktig faktor for å måle energieffektiviteten til et datasenter. En PUE under 1,2 betyr at vi bruker en minimal mengde energi for å drive datasentrene våre, noe som er en viktig del av å redusere vårt miljøavtrykk.
 
 Hos Safespring vil vi fortsette å arbeide for å redusere vårt miljøavtrykk og være en bærekraftig virksomhet. Vi er stolte av miljøarbeidet vårt og bestemte på å ta vår del av ansvaret for å beskytte planeten.
 
-## Safesprings bærekraftsarbeid
+## Safesprings bærekraftsarbeid {#safesprings-sustainability-work}
 
 {{< ingress >}}
 Safesprings mål er å bidra til en renere verden ved å levere infrastruktur­tjenester av høy kvalitet til våre kunder i Norden, slik at de kan produsere sine tjenester uten egne investeringer i maskinvare. Dette vil gi lavere karbonutslipp.
@@ -52,7 +52,7 @@ Som et mellomstort selskap som arbeider med produkter og tjenester som ikke foru
 - Safespring deltar i ulike nasjonale returordninger som innlevering av brukt elektronisk utstyr og kildesortering.
 - Avfall gjenvinnes så langt det er mulig (lokale myndigheter og gårdeiere tilrettelegger og organiserer).
 
-### ISO 14001-rammeverk for vår miljøpolicy
+### ISO 14001-rammeverk for vår miljøpolicy {#iso-14001-framework-for-our-environmental-policy}
 
 Safespring bruker ISO 14001:2004 som rammeverk for vårt miljøarbeid. Standarden fungerer som et rammeverk som hjelper organisasjoner med å utvikle egne miljøstyringssystemer.
 
@@ -65,11 +65,11 @@ Med hensyn til ISO 14001 fokuserer Safespring først og fremst på redusert karb
 {{< icon-block-horisontal icon="fa-solid fa-recycle" color="#195F8C" description="Gjenvinne alt materiale på en klimaklok og bærekraftig måte, for å redusere avfall og støtte en sirkulær økonomi." text="Bærekraftig gjenvinning" >}}
 {{< icon-block-horisontal icon="fa-solid fa-chalkboard-teacher" color="#195F8C" description="Kontinuerlig opplæring og informasjon til Safespring-ansatte om vårt miljøarbeid for å fremme en bærekraftig arbeidskultur." text="Opplæring i bærekraft" >}}
 
-### Miljøhensyn ved innkjøp og anskaffelser
+### Miljøhensyn ved innkjøp og anskaffelser {#environmental-considerations-in-purchasing-and-procurement}
 
 Så langt det er mulig bruker vi moderne, energieffektive løsninger for å produsere tjenestene våre. Maskinvaren som brukes i datasentrene våre moderniseres kontinuerlig for å være så energieffektiv som mulig. Ved innkjøp og anskaffelser er miljøaspektet alltid med i beslutningsprosessen for å sikre at vi oppnår våre fastsatte miljømål.
 
-### Ressursutnyttelse og gjenbruk
+### Ressursutnyttelse og gjenbruk {#resource-utilization-and-reuse}
 
 Maskinvaren som utgjør grunnlaget for plattformen vår, gjenbrukes i vår interne utvikling når den ikke lenger er egnet for produksjon, så langt det lar seg gjøre, før den til slutt gjenvinnes på en klimaklok og bærekraftig måte.
 

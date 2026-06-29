@@ -15,6 +15,7 @@ language: "sv"
 toc: "I det här inlägget"
 aliases:
   - /blogg/2024/2024-11-future-ready-automated-services-in-the-higher-education-sector/
+  - /tekniska-uppdateringar/2024-11-future-ready-automated-services-in-the-higher-education-sector/
 ---
 {{< ingress >}}
 Sektorn för högre utbildning står vid teknikens vägskäl. Innovation måste fortsätta för att möta nya krav, men kostnadsoptimering och ett ständigt växande behov av flexibilitet och säkerhet kan vara svårt att hantera.

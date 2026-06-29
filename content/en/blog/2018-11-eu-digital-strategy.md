@@ -13,6 +13,7 @@ section: "blog"
 aliases:
   - /blogg/eu-digital-strategy
   - /blogg/2018/2018-11-eu-digital-strategy/
+  - /blog/2018-11-eu-digital-strategy/
 ---
 {{< ingress >}}
 What’s interesting about the EU’s digital development can be summed up in a sentence on page 25: “Co-creation will be encouraged. Open-source solutions will be preferred...”.
@@ -33,6 +34,6 @@ There is a growing number of voices arguing that this should also apply to sourc
 
 Safespring advocates open source and encourages users to contribute their extensions to jointly develop and make things easier for others. By iterating on code together, systems improve faster, become more stable, and above all more cost-effective. The vision is a society where public authorities, companies, and private individuals work together to improve the code and the systems that are used.
 
-<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" id="text-button">EUROPEAN COMMISSION DIGITAL STRATEGY</a>
+<a href="https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf" class="text-button">EUROPEAN COMMISSION DIGITAL STRATEGY</a>
 
 [strategi]: https://ec.europa.eu/info/sites/info/files/strategy/decision-making_process/documents/ec_digitalstrategy_en.pdf

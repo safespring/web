@@ -1,4 +1,76 @@
 {{ partial "head.html" . }}
+{{ $containerFormCopy := dict
+  "joinBeta" "Join the beta"
+  "bookDemo" "Book a demo"
+  "heroDemo" "BOOK DEMO"
+  "seePrice" "See price"
+  "getStartedPrefix" "Get started with Safespring Container"
+  "bullets" (slice
+    "Spin up clusters quickly"
+    "Stay compliant with EU security and jurisdictional requirements"
+    "Scale from a single project to multiple managed clusters"
+  )
+  "talkPrefix" "Prefer to talk first? You can always"
+  "talkLink" "book a demo"
+  "talkSuffix" "instead."
+  "startOnboarding" "Start onboarding"
+  "workEmail" "Please use your work email."
+}}
+{{ if eq .Site.Language.Lang "sv" }}
+  {{ $containerFormCopy = dict
+    "joinBeta" "Gå med i betan"
+    "bookDemo" "Boka demo"
+    "heroDemo" "BOKA DEMO"
+    "seePrice" "Se pris"
+    "getStartedPrefix" "Kom igång med Safespring Container"
+    "bullets" (slice
+      "Starta kluster snabbt"
+      "Behåll efterlevnad mot EU-krav på säkerhet och jurisdiktion"
+      "Skala från ett enskilt projekt till flera hanterade kluster"
+    )
+    "talkPrefix" "Vill du prata först? Du kan alltid"
+    "talkLink" "boka en demo"
+    "talkSuffix" "i stället."
+    "startOnboarding" "Starta onboarding"
+    "workEmail" "Använd din jobbmejl."
+  }}
+{{ else if eq .Site.Language.Lang "nb" }}
+  {{ $containerFormCopy = dict
+    "joinBeta" "Bli med i betaen"
+    "bookDemo" "Bestill demo"
+    "heroDemo" "BESTILL DEMO"
+    "seePrice" "Se pris"
+    "getStartedPrefix" "Kom i gang med Safespring Container"
+    "bullets" (slice
+      "Start klustre raskt"
+      "Hold deg i samsvar med EU-krav til sikkerhet og jurisdiksjon"
+      "Skaler fra ett prosjekt til flere administrerte klustre"
+    )
+    "talkPrefix" "Vil du snakke med oss først? Du kan alltid"
+    "talkLink" "bestille en demo"
+    "talkSuffix" "i stedet."
+    "startOnboarding" "Start registrering"
+    "workEmail" "Bruk jobb-e-posten din."
+  }}
+{{ else if eq .Site.Language.Lang "da" }}
+  {{ $containerFormCopy = dict
+    "joinBeta" "Deltag i betaen"
+    "bookDemo" "Book en demo"
+    "heroDemo" "BOOK DEMO"
+    "seePrice" "Se pris"
+    "getStartedPrefix" "Kom i gang med Safespring Container"
+    "bullets" (slice
+      "Start klynger hurtigt"
+      "Overhold EU-krav til sikkerhed og jurisdiktion"
+      "Skaler fra et enkelt projekt til flere administrerede klynger"
+    )
+    "talkPrefix" "Vil du tale med os først? Du kan altid"
+    "talkLink" "booke en demo"
+    "talkSuffix" "i stedet."
+    "startOnboarding" "Start registrering"
+    "workEmail" "Brug din arbejds-e-mail."
+  }}
+{{ end }}
 <style>
   :root {
     /* HERO */
@@ -28,7 +100,7 @@
     --accent: #007aff;
     --radius: 16px;
     --shadow: none;
-    --tab-h: 42px;
+    --tab-h: 44px;
     --dur: 260ms;
     --ease: cubic-bezier(0.25, 0.8, 0.3, 1);
 
@@ -58,7 +130,7 @@
   }
 
   body {
-    margin: 10%;
+    margin: clamp(16px, 4vw, 10%);
     font-family: var(--mon-font);
     background: var(--bg);
     color: var(--ink);
@@ -75,6 +147,29 @@
     max-width: 1200px;
     margin-inline: auto;
     padding: 22px clamp(16px, 4vw, 32px);
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin-inline: 0;
+    }
+
+    .wrap {
+      padding-inline: 16px;
+    }
+
+    .hero-text,
+    .hero-text h1,
+    .hero-text p {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 2.15rem !important;
+      line-height: 1.05;
+    }
   }
 
 /*@media (min-width: 1300px){
@@ -100,6 +195,11 @@
 }
 .brand img {
   width: auto;
+}
+.brand a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 /* Hero */
@@ -265,6 +365,7 @@ button:focus-visible {
   background: transparent;
   color: var(--muted);
   height: var(--tab-h);
+  min-height: 44px;
   padding: 0 12px;
   border-radius: 10px;
   display: inline-flex;
@@ -512,6 +613,18 @@ h3{
 }
 
 @media (max-width: 500px) {
+  .two-fields-div {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .first-fields-div,
+  .second-fields-div {
+    box-sizing: border-box;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
   .second-fields-div {
     padding: 0%;
   }
@@ -526,7 +639,10 @@ h3{
 }
 
 .blue-box a{
+  align-items: center;
+  display: inline-flex;
   font-weight: 600;
+  min-height: 44px;
 }
 
 @media (max-width: 900px) {
@@ -623,13 +739,13 @@ h3{
           {{ .Params.intro }}
         </p>
         <a id="openModal" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm" class="button">
-          BOOK DEMO
+          {{ $containerFormCopy.heroDemo }}
         </a>
-        <a class="text-button" href="#price">See price</a>
+        <a class="text-button" href="#price">{{ $containerFormCopy.seePrice }}</a>
       </div>
 
       <div class="hero-media" aria-hidden="true">
-        <img src="/img/people/safespring-p.png" alt="Safespring Cloud Experts" />
+        <img src="/img/people/safespring-p.png" alt="Safespring Cloud Experts" width="1384" height="1383"/>
       </div>
     </section>
   </div>
@@ -641,9 +757,9 @@ h3{
         <h2 class="title" id="boxTitle">Overview</h2>
 
         <div class="tabs" id="tabs">
-          <button class="tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0">Overview</button>
-          <button class="tab" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Features</button>
-          <button class="tab" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">Pricing</button>
+          <button type="button" class="tab is-active" id="tab-1" role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0">Overview</button>
+          <button type="button" class="tab" id="tab-2" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Features</button>
+          <button type="button" class="tab" id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">Pricing</button>
           <span class="indicator" aria-hidden="true"></span>
         </div>
       </div>
@@ -657,13 +773,13 @@ h3{
         <p>Two <strong>ElasticIP</strong> is inlcluded in the price. <br>Calculate your cluster in our <a href="#price">price calculator</a></p><br><br>
         <h3>Looking for GPU's?</h3>
         <p>Choose among many different flavors for your worker nodes. We have Nvidia A2 GPU flavors ready for your next project.</p>
-        <a class="button" href="#get-started">Join the beta</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">Book a demo</a>
+        <a class="button" href="#get-started">{{ $containerFormCopy.joinBeta }}</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">{{ $containerFormCopy.bookDemo }}</a>
       </div>
 
-      <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+      <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true" inert>
         <h3>This is your toolbox</h3>
         <p>Get up-and-running quick with defined defaults for network, storage, igress, monetoring and more. Use our tools or bring your own. Either way you're in control.</p>
-        <a class="button" href="#get-started">Join the beta</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">Book a demo</a>
+        <a class="button" href="#get-started">{{ $containerFormCopy.joinBeta }}</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">{{ $containerFormCopy.bookDemo }}</a>
         <br><br> 
         <div class="three-boxes">
           <div class="box"><strong>Networking</strong>
@@ -701,7 +817,7 @@ h3{
             </div>
           </div>
         </div>
-        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+        <div class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true" inert>
           <h3>Predictable pricing, no hidden costs</h3>
           <p>Costs are transparent: a managed control plane is fixed at 4,900 SEK/month. Worker nodes are billed separately, based on selected VM flavor.</p>
           <p>Two <strong>ElasticIP</strong> is inlcluded in the price. <br>Calculate your cluster in our <a href="#price">price calculator</a></p>
@@ -731,7 +847,7 @@ h3{
               </tr>
             </tbody>
           </table>
-          <a class="button" href="#get-started">Join the beta</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">Book a demo</a>
+          <a class="button" href="#get-started">{{ $containerFormCopy.joinBeta }}</a><a class="text-button" href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">{{ $containerFormCopy.bookDemo }}</a>
 
           <br>
         </div>
@@ -793,8 +909,8 @@ h3{
 
 {{ partial "container-scroll-story.html" . }}
 
-<h1 style="margin-top:100px">Deep dive<br> in to the cloud <br>with our Engineers</h1>
-<p style="">Read our tech updates directly from the engineers of Safespring Cloud Services. <br>Code examples, links to GitHub repos and more.</p>
+<h1 style="margin-top:100px">Deep Dives<br>from our engineers</h1>
+<p style="">Read Deep Dives directly from the engineers of Safespring Cloud Services. <br>Code examples, links to GitHub repos and more.</p>
 {{ partial "blog-post-container-cards.html" . }}
 
 <div style="margin-top:20%;"></div>
@@ -891,15 +1007,15 @@ h3{
 
 <section class="two-fields-div hero hero--with-arrow" id="get-started">
   <div class="first-fields-div hero-text">
-    <h1>Get started with Safespring Container <span style="word-break: keep-all;">Platfor<span class="arrow-src" aria-hidden="true">m</span></span></h1>
+    <h1>{{ $containerFormCopy.getStartedPrefix }} <span style="word-break: keep-all;">Platfor<span class="arrow-src" aria-hidden="true">m</span></span></h1>
     <div style="margin:50px 0;">
       <ul class="fa-ul modern-list">
-        <li><i class="fa-solid fa-check"></i> Spin up clusters quickly</li>
-        <li><i class="fa-solid fa-check"></i> Stay compliant with EU security and jurisdictional requirements</li>
-        <li><i class="fa-solid fa-check"></i> Scale from a single project to multiple managed clusters</li>
+        {{ range $containerFormCopy.bullets }}
+        <li><i class="fa-solid fa-check"></i> {{ . }}</li>
+        {{ end }}
       </ul>
     </div>
-    <p class="blue-box">Prefer to talk first? You can always <a href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">book a demo</a> instead.</p>
+    <p class="blue-box">{{ $containerFormCopy.talkPrefix }} <a href="https://next.safespring.com/apps/calendar/appointment/y7t9DxxxCTrm">{{ $containerFormCopy.talkLink }}</a> {{ $containerFormCopy.talkSuffix }}</p>
   </div>
   <svg class="arrow-layer" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
     <defs>
@@ -1203,7 +1319,7 @@ select {
       nameField.after(dunsField);
       nameField.after(spinner);
       nameField.typeahead({
-        hint: true,
+        hint: false,
         highlight: true,
         minLength: 3
       }, {
@@ -1237,6 +1353,12 @@ select {
       }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
         spinner.css("display", "none");
       });
+      nameField.siblings(".tt-hint").attr({
+        "aria-hidden": "true",
+        "tabindex": "-1",
+        "autocomplete": "off",
+        "inert": ""
+      });
     }
   });
 </script>
@@ -1257,37 +1379,37 @@ select {
   <!-- <div class="column-two"> -->
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-firstname-input" autocomplete="given-name" name="Contact.firstname" required="required">
-      <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
+      <label for="up-firstname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.f_name" }}</label>
     </div>
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-lastname-input" autocomplete="family-name" name="Contact.lastname" required="required">
-      <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Last name</label>
+      <label for="up-lastname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.l_name" }}</label>
     </div>
     <!-- </div> -->
     <!-- <div class="column-two"> -->
       <div class="active-input form-field">
-        <input maxlength="512" type="text" placeholder="" name="Contact.cellPhone">
-        <label for="phone"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;Mobile phone</label>
+        <input maxlength="512" type="text" placeholder="" id="up-phone-input" name="Contact.cellPhone">
+        <label for="up-phone-input"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ T "form.phone" }}</label>
       </div>
       <div class="email form-field">
-        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+        <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="{{ T "form.email_title" }}" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
+        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;{{ T "form.email" }}</label>
       </div>
       <small id="email-domain-warning">
-        Please use your work email.
+        {{ $containerFormCopy.workEmail }}
       </small>
       <!-- </div> -->
       <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Company</label>
+        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;{{ T "form.org" }}</label>
       </div>
       <!-- REQUIRED FIELDS -->
       <input type="hidden" name="formCid" value="9549">
       <input type="hidden" name="formId" value="9549u4d6655796cf741c5aab400e441c49e50">
       <input type="hidden" name="isFrame" value="false">
-      <input type="text" value="" name="validation" style="display: none;">
+      <input type="hidden" value="" name="validation">
       <!-- END OF REQUIRED FIELDS -->
-      <div class="submit-button"><button class="button pt-1 pb-1 cta-start" type="submit">Start onboarding</button></div>
+      <div class="submit-button"><button class="button pt-1 pb-1 cta-start" type="submit">{{ $containerFormCopy.startOnboarding }}</button></div>
     </form>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js"></script>
@@ -1323,6 +1445,11 @@ select {
               xhr.send();
             }
           });
+          var selectedFlag = el.parentNode && el.parentNode.querySelector('.iti__selected-flag');
+          if (selectedFlag) {
+            selectedFlag.setAttribute('aria-label', '{{ T "form.phone" }}');
+            selectedFlag.setAttribute('title', '{{ T "form.phone" }}');
+          }
         });
       })();
     </script>
@@ -1330,7 +1457,7 @@ select {
       !function(){var t=document.getElementById("up-form");t&&t.addEventListener("submit",function(t){var e=t.target.querySelector("button[type=submit]");e&&(e.disabled=!0)})}();
     </script>
     <script>
-      function onSubmit(e){var t;"function"!=typeof window._bEmValid||!0===window.__validEmail?validateForm(e,"https://www.safespring.com/container-thanks/"):(e.preventDefault(),t=setInterval(function(){void 0!==window.__validEmail&&(clearInterval(t),!0===window.__validEmail)&&validateForm(e,"https://www.safespring.com/container-thanks/")},300))}function validateForm(e,t){e.preventDefault();e=document.getElementsByName("formId")[0].value;for(var n=(e=document.forms["form_"+e]).querySelectorAll("input, textarea, select"),o=0;o<n.length;o++)"text"===n[o].type&&(n[o].value=n[o].value.trim());var a=e.querySelectorAll("input[name*=phone], input[name*=Phone]");if([].forEach.call(a,function(e){e.iti&&(e.value=e.iti.getNumber())}),void 0===window.grecaptcha||""!==window.grecaptcha.getResponse()){var l=[];for(o=0;o<n.length;o++)"checkbox"===n[o].type?l.push(n[o].name+"="+encodeURIComponent(n[o].checked?n[o].value:"off")):l.push(n[o].name+"="+encodeURIComponent(n[o].value));a=l.join("&");var s=(a+="&isAjax=true",window._paq||null),i=new XMLHttpRequest;i.open("POST",e.action),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.send(a),i.onload=function(){var e,n;200===i.status?t?(s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),"undefined"!=typeof _uaq&&_uaq("form="+i.responseText),setTimeout(function(){window.top.location.href=t},333)):(e=document.getElementById("up-form"),n=document.getElementById("up-form-thanks"),e.style.display="none",n.style.display="block",s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),_uaq&&_uaq("form="+i.responseText)):console.log("AJAX ERROR",i.status)}}else e=document.getElementById("recaptcha-error"),a=document.getElementsByClassName("g-recaptcha"),e.style.display="none",a&&a.length&&console.log("handle this later")}var form=document.getElementById("up-form");form.addEventListener("submit",onSubmit);
+      function onSubmit(e){var t;"function"!=typeof window._bEmValid||!0===window.__validEmail?validateForm(e,"https://www.safespring.com/schedule-demo-success/"):(e.preventDefault(),t=setInterval(function(){void 0!==window.__validEmail&&(clearInterval(t),!0===window.__validEmail)&&validateForm(e,"https://www.safespring.com/schedule-demo-success/")},300))}function validateForm(e,t){e.preventDefault();e=document.getElementsByName("formId")[0].value;for(var n=(e=document.forms["form_"+e]).querySelectorAll("input, textarea, select"),o=0;o<n.length;o++)"text"===n[o].type&&(n[o].value=n[o].value.trim());var a=e.querySelectorAll("input[name*=phone], input[name*=Phone]");if([].forEach.call(a,function(e){e.iti&&(e.value=e.iti.getNumber())}),void 0===window.grecaptcha||""!==window.grecaptcha.getResponse()){var l=[];for(o=0;o<n.length;o++)"checkbox"===n[o].type?l.push(n[o].name+"="+encodeURIComponent(n[o].checked?n[o].value:"off")):l.push(n[o].name+"="+encodeURIComponent(n[o].value));a=l.join("&");var s=(a+="&isAjax=true",window._paq||null),i=new XMLHttpRequest;i.open("POST",e.action),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.send(a),i.onload=function(){var e,n;200===i.status?t?(s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),"undefined"!=typeof _uaq&&_uaq("form="+i.responseText),setTimeout(function(){window.top.location.href=t},333)):(e=document.getElementById("up-form"),n=document.getElementById("up-form-thanks"),e.style.display="none",n.style.display="block",s&&s.push&&s.push(["trackLink","https://post.upsales.com/"+i.responseText,"link"]),_uaq&&_uaq("form="+i.responseText)):console.log("AJAX ERROR",i.status)}}else e=document.getElementById("recaptcha-error"),a=document.getElementsByClassName("g-recaptcha"),e.style.display="none",a&&a.length&&console.log("handle this later")}var form=document.getElementById("up-form");form.addEventListener("submit",onSubmit);
     </script>
     <script>
     // Globala init: sätt custom-validation + hoppa över Ajax om invalid
@@ -1348,7 +1475,7 @@ select {
           if(parts.length===2 && personalDomains.includes(parts[1])){
             warning.style.display = "block";
             emailField.setCustomValidity(
-                                         'Please use your work email.'
+                                         '{{ $containerFormCopy.workEmail }}'
                                          );
           } else {
             warning.style.display = "none";
@@ -1468,6 +1595,12 @@ select {
       const on = i === idx;
       p.classList.toggle('is-active', on);
       p.style.display = on ? 'block' : 'none';
+      p.setAttribute('aria-hidden', on ? 'false' : 'true');
+      if (on) {
+        p.removeAttribute('inert');
+      } else {
+        p.setAttribute('inert', '');
+      }
     });
 
     /* Clear any fixed height a previous script/CSS might have left behind */

@@ -15,6 +15,7 @@ author_image: "firma"
 aliases:
   - /blogg/debatt-it-och_telekomforetagen
   - /blogg/2020/2020-11-debatt-it-och_telekomforetagen/
+  - /blogg/2020-11-debatt-it-och_telekomforetagen/
 ---
 {{< ingress >}}
 IT & Telekomföretagens forbundsleder Åsa Zetterberg trenger å løfte blikket, skriver representanter for fire svenske skytjenesteleverandører i en replikk til forrige ukes debattartikkel.

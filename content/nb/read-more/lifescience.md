@@ -1,8 +1,8 @@
 ---
 language: "nb"
+title: "Hva er life science?"
 ai: true
 ---
-# Hva er life science?
 
 Life science, eller livsvitenskap på norsk, er et bredt og mangesidig forskningsfelt som omfatter studiet av alt levende. Dette området favner en rekke ulike disipliner og emner, hvorav noen inkluderer:
 

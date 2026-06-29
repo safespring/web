@@ -48,10 +48,15 @@
   transform: translateY(-50%);
   border: none;
   background: rgba(0, 0, 0, 0.05);
-  padding: 0.4rem 0.7rem;
+  padding: 0;
+  min-width: 44px;
+  min-height: 44px;
   cursor: pointer;
   font-size: 1.4rem;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-carousel__nav--prev { left: 0; }
@@ -64,15 +69,15 @@
       <div class="content-container blog-card">
         <a href="{{ .RelPermalink }}">
           <div class='fill-available-space img-250 pointer bg-blue-white-fade blue-hover-tech tech-card-flex'>
-            <img class="lazyload tech-card-image" loading="lazy" src="/img/blogg/cards/safespring-tech-update.svg"
+            {{ $techUpdateCard := "/img/blogg/cards/safespring-tech-update.svg" }}
+            <img class="tech-card-image" src="{{ $techUpdateCard }}" {{ partial "image-dimensions.html" $techUpdateCard | safeHTMLAttr }}
               alt="{{ .Title }}">
             <div class="tech-update-card-content">
               <div class="blogg-card-tagg-container-tech">
-                <img class="blogg-card-flag" alt="Safespring language flag"
+                <img class="blogg-card-flag" width="20" height="20" alt="Safespring language flag"
                   src='{{ if (eq .Params.language "En") }}/img/eu.svg{{ else if (eq .Params.language "No") }}/img/norway.svg{{ else }}/img/sweden.svg{{ end }}'>
                 <span
-                  class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">Tech
-                  update</span>
+                  class="blogg-card-section-tech mb-0 font-weight-medium text-uppercase text-muted lts-1px">{{ T "knowledgehub.tech_update" }}</span>
               </div>
               <div>
                 <h3 class="blogg-card-title ff-serif font-weight-light text-black mt-1 mb-1">{{ .Title }}</h3>

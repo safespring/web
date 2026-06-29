@@ -189,11 +189,11 @@ Takk for at du velger Safesprings tjenester. Vi gleder oss til å samarbeide med
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Fornavn</label>
+            <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Fornavn</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Etternavn</label>
+            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Etternavn</label>
         </div>
     </div>
     <div class="form-field">
@@ -202,7 +202,7 @@ Takk for at du velger Safesprings tjenester. Vi gleder oss til å samarbeide med
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Angi en gyldig e-postadresse" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
+        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
     </div>
     <div class="form-field">
         <input type="text" id="eppn" name="Extra.1683706722052">
@@ -212,7 +212,7 @@ Takk for at du velger Safesprings tjenester. Vi gleder oss til å samarbeide med
     <p></p>
     <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisasjon</label>
+        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisasjon</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
@@ -265,33 +265,37 @@ Takk for at du velger Safesprings tjenester. Vi gleder oss til å samarbeide med
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Åpne retningslinjer for akseptabel bruk" title="Åpne retningslinjer for akseptabel bruk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Generelle vilkår og betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Generelle vilkår og betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Åpne generelle vilkår og betingelser" title="Åpne generelle vilkår og betingelser"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u6488cf25775f4e62b6d09de546b45f5f">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Opprett konto</button>
 </form>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#checkBtn').click(function() {
-            checked = $("input[type=checkbox]:checked").length;
-            if (!checked) {
-                alert("Du må akseptere våre vilkår og betingelser");
-                return false;
-            }
-        });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var checkBtn = document.getElementById("checkBtn");
+    if (!checkBtn) {
+        return;
+    }
+    checkBtn.addEventListener("click", function (event) {
+        var checked = document.querySelectorAll("input[type=checkbox]:checked").length;
+        if (!checked) {
+            event.preventDefault();
+            alert("Du må akseptere våre vilkår og betingelser");
+        }
     });
+});
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function(){

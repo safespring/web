@@ -105,7 +105,7 @@ Objektlåsning är en funktion som gör objekt oföränderliga under en specific
 Ja, Safespring Storage är fullt S3-kompatibelt, vilket gör att du kan använda dina befintliga verktyg och applikationer utan ändringar.
 {{% /question %}}
 
-{{< distance >}}
+{{< distance "contact" >}}
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
 Upptäck den fulla potentialen i dina data med Safespring Storage. Vårt team är redo att hjälpa dig att hitta den perfekta lagringslösningen för ditt företags behov.

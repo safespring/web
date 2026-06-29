@@ -17,6 +17,7 @@ sidebarlinkname: "Læs bilaget"
 sidebarlinkurl: "/publications/safespring-svd-kritisk-infrastruktur.pdf"
 aliases:
   - /blogg/2023/2023-06-molninfrastruktur/
+  - /blog/2023-06-molninfrastruktur/
 ---
 _Denne tekst er publiceret i Svenska Dagbladets tillæg "Kritisk infrastruktur"._
 

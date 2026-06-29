@@ -1,7 +1,10 @@
-<div class="accordion-box" id="{{ .Get "id" }}">
-  <button class="accordion">{{ .Get "title" }}</button>
-  <div class="panel content-body">
-    <h3>{{ .Get "title" }}</h3>
+{{ $title := .Get "title" }}
+{{ $controlID := printf "accordion-%d-button" .Ordinal }}
+{{ $panelID := printf "accordion-%d-panel" .Ordinal }}
+<div class="accordion-box"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
+  <button type="button" class="accordion" id="{{ $controlID }}" aria-expanded="false" aria-controls="{{ $panelID }}">{{ $title }}</button>
+  <div class="panel content-body" id="{{ $panelID }}" role="region" aria-labelledby="{{ $controlID }}" aria-hidden="true" inert>
+    <h3>{{ $title }}</h3>
     {{ .Inner }}
    <div class="pb-2"></div>
   </div>

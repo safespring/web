@@ -284,11 +284,11 @@ Safespring Compute erbjuder stora fördelar såsom förenklat samarbete mellan o
     <div class="column-two">
     <div class="form-field">
         <input type="text" id="firstname" name="Contact.firstname" required>
-        <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label>
+        <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label>
     </div>
         <div class="form-field">
         <input type="text" id="lastname" name="Contact.lastname" required>
-        <label for="name"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label>
+        <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label>
     </div>
     </div>
     <div class="form-field">
@@ -297,13 +297,13 @@ Safespring Compute erbjuder stora fördelar såsom förenklat samarbete mellan o
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Ange en giltig e-postadress" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="email"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
+        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
     </div>
     <h2>Kontoinformation</h2>
     <p></p>
         <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required">
-        <label for="organization"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
+        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
     </div>
     <div class="form-field">
         <input type="text" id="gatekeeper-name" name="Extra.1695029810459" required>
@@ -314,34 +314,23 @@ Safespring Compute erbjuder stora fördelar såsom förenklat samarbete mellan o
     <div class="inputGroup">
             <input type="checkbox" name="accept-usage" id="accept-usage" required>
             <label for="accept-usage">
-            Policy för godtagbar användning <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Policy för godtagbar användning <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Öppna policy för acceptabel användning" title="Öppna policy för acceptabel användning"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </label>
     </div>
     <div class="inputGroup">
             <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
            <label for="accept-terms"> 
-        Allmänna villkor <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Allmänna villkor <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Öppna allmänna villkor" title="Öppna allmänna villkor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
            </label>
     </div>
     <!-- REQUIRED FIELDS -->
     <input type="hidden" name="formCid" value="9549">
     <input type="hidden" name="formId" value="9549u5325684f3ca44641b1ebb4d4a8cd2e22">
     <input type="hidden" name="isFrame" value="false">
-    <input type="text" value="" name="validation" style="display: none;">
+    <input type="hidden" value="" name="validation">
     <!-- END OF REQUIRED FIELDS -->
     <button class="button pt-1 pb-1 mt-2 submit-button" id="checkBtn" type="submit">Skapa konto</button>
 </form>
-<script type="text/javascript">
-            $(document).ready(function() {
-                $('#checkBtn').click(function() {
-                    checked = $("input[type=checkbox]:checked").length;
-                    if (!checked) {
-                        alert("You must accept our terms our conditions");
-                        return false;
-                    }
-                });
-            });
-        </script>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
     const ids = ["#up-email-input", "#billing", "#gatekeeper-email"];

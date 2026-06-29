@@ -11,14 +11,17 @@ sidebarimage: ""
 eventbild: ""
 socialmediabild: ""
 language: "sv"
-sectiontext: "Teknikuppdatering"
+sectiontext: "Deep Dives"
 section: "Tech update"
+url: "/deep-dive/2025-11-migrating-from-ingress-nginx-to-gateway-api-with-cilium/"
 author: "Anders Johansson"
 TOC: "I det här inlägget"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Utforska Safespring Kubernetes Engine"
 sidebarlinkurl2: "/containers#get-started"
 sidebarlinkname2: "Boka demo"
+aliases:
+  - /blogg/2025-11-migrating-from-ingress-nginx-to-gateway-api-with-cilium/
 ---
 
 ## TL;DR

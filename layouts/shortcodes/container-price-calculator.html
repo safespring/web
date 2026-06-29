@@ -4,38 +4,26 @@
     <p>{{ T "container_calculator.intro" }}</p>
   </div>
 
+  <div class="container-calculator__preset-strip" aria-labelledby="container-presets-title">
+    <span class="container-calculator__preset-label" id="container-presets-title">{{ T "container_calculator.presets_title" }}</span>
+    <div class="container-calculator__presets" role="radiogroup" aria-label="{{ T "container_calculator.preset_aria" }}">
+      <label>
+        <input type="radio" name="container-preset" value="start" checked>
+        <span>{{ T "container_calculator.preset_start_label" }}</span>
+      </label>
+      <label>
+        <input type="radio" name="container-preset" value="production">
+        <span>{{ T "container_calculator.preset_production_label" }}</span>
+      </label>
+      <label>
+        <input type="radio" name="container-preset" value="ha">
+        <span>{{ T "container_calculator.preset_ha_label" }}</span>
+      </label>
+    </div>
+  </div>
+
   <div class="container-calculator__layout">
     <div class="container-calculator__form">
-      <section class="container-calculator__group" aria-labelledby="container-presets-title">
-        <div class="container-calculator__group-head">
-          <h4 id="container-presets-title">{{ T "container_calculator.presets_title" }}</h4>
-          <p>{{ T "container_calculator.presets_desc" }}</p>
-        </div>
-        <div class="container-calculator__presets" role="radiogroup" aria-label="{{ T "container_calculator.preset_aria" }}">
-          <label>
-            <input type="radio" name="container-preset" value="start" checked>
-            <span>
-              <strong>{{ T "container_calculator.preset_start_label" }}</strong>
-              <small>{{ T "container_calculator.preset_start_desc" }}</small>
-            </span>
-          </label>
-          <label>
-            <input type="radio" name="container-preset" value="production">
-            <span>
-              <strong>{{ T "container_calculator.preset_production_label" }}</strong>
-              <small>{{ T "container_calculator.preset_production_desc" }}</small>
-            </span>
-          </label>
-          <label>
-            <input type="radio" name="container-preset" value="ha">
-            <span>
-              <strong>{{ T "container_calculator.preset_ha_label" }}</strong>
-              <small>{{ T "container_calculator.preset_ha_desc" }}</small>
-            </span>
-          </label>
-        </div>
-      </section>
-
       <section class="container-calculator__group" aria-labelledby="container-cp-title">
         <h4 id="container-cp-title">{{ T "container_calculator.control_plane_title" }}</h4>
         <div class="container-calculator__row">
@@ -45,10 +33,10 @@
             <label><input type="radio" name="container-cp-nodes" value="5"><span>5</span></label>
           </div>
         </div>
-        <label class="container-calculator__row">
+        <div class="container-calculator__row">
           <span>{{ T "container_calculator.size_label" }}</span>
-          <select data-cp-size aria-label="{{ T "container_calculator.control_plane_size_aria" }}"></select>
-        </label>
+          <div class="container-calculator__select" data-cp-size-select data-label="{{ T "container_calculator.control_plane_size_aria" }}"></div>
+        </div>
       </section>
 
       <section class="container-calculator__group" aria-labelledby="container-workers-title">
@@ -86,9 +74,13 @@
           <h4 id="container-summary-title">{{ T "container_calculator.summary_title" }}</h4>
           <strong data-total>{{ T "container_calculator.initial_total" }}</strong>
           <span data-hourly>{{ T "container_calculator.initial_hourly" }}</span>
+          <p class="container-calculator__scope">{{ T "container_calculator.summary_scope" }}</p>
         </div>
         <dl>
-          <div><dt>{{ T "container_calculator.cp_total_label" }}</dt><dd data-cp-total>8 044 SEK</dd></div>
+          <div>
+            <dt>{{ T "container_calculator.cp_base_total_label" }}</dt><dd data-cp-base-total>4 900 SEK</dd>
+            <dt class="container-calculator__summary-sub">{{ T "container_calculator.cp_nodes_total_label" }}</dt><dd class="container-calculator__summary-sub" data-cp-node-total>3 144 SEK</dd>
+          </div>
           <div><dt>{{ T "container_calculator.worker_total_label" }}</dt><dd data-worker-total>2 280 SEK</dd></div>
           <div><dt>{{ T "container_calculator.storage_total_label" }}</dt><dd data-storage-total>0 SEK</dd></div>
         </dl>
@@ -109,7 +101,7 @@
     --calc-muted: #5d7280;
     --calc-line: #cfe0ea;
     --calc-soft: #f8fbfd;
-    --calc-green: var(--green-color, #32cd32);
+    --calc-accent: var(--green-color, #32cd32);
     color: var(--calc-ink);
     display: grid;
     font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -142,7 +134,6 @@
   }
 
   .container-calculator__head p,
-  .container-calculator__group-head p,
   .container-calculator__note,
   .container-calculator__summary p,
   .container-calculator__summary span {
@@ -182,14 +173,25 @@
     line-height: 1.3;
   }
 
-  .container-calculator__group-head {
-    display: grid;
-    gap: 4px;
+  .container-calculator__preset-strip {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: -4px;
+  }
+
+  .container-calculator__preset-label {
+    color: var(--calc-muted);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
   }
 
   .container-calculator__presets {
-    display: grid;
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .container-calculator__presets input,
@@ -203,27 +205,21 @@
 
   .container-calculator__presets span {
     border: 1px solid var(--calc-line);
-    border-radius: 7px;
+    border-radius: 999px;
     cursor: pointer;
-    display: grid;
-    gap: 2px;
-    padding: 12px 14px;
+    color: #244c66;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    min-height: 34px;
+    align-items: center;
+    padding: 7px 11px;
   }
 
   .container-calculator__presets input:checked + span {
     background: #eef7fb;
     border-color: #94bdd4;
-  }
-
-  .container-calculator__presets strong {
-    color: #244c66;
-    font-size: 15px;
-  }
-
-  .container-calculator__presets small {
-    color: var(--calc-muted);
-    font-size: 13px;
-    line-height: 1.35;
   }
 
   .container-calculator__row,
@@ -250,6 +246,7 @@
     color: var(--calc-blue);
     font: inherit;
     font-size: 14px;
+    min-height: 44px;
     min-width: 0;
     padding: 10px 12px;
     width: 100%;
@@ -257,8 +254,7 @@
 
   .container-calculator select:focus,
   .container-calculator input[type="number"]:focus,
-  .container-calculator button:focus-visible,
-  .container-calculator label:focus-within {
+  .container-calculator button:focus-visible {
     border-color: #3c9bcd;
     box-shadow: 0 0 0 3px rgba(60, 155, 205, .14);
     outline: none;
@@ -278,14 +274,147 @@
     display: inline-flex;
     font-size: 14px;
     font-weight: 600;
-    min-height: 40px;
+    min-height: 44px;
+    min-width: 44px;
     align-items: center;
+    justify-content: center;
     padding: 9px 12px;
   }
 
   .container-calculator__segments input:checked + span {
     background: #eef7fb;
     border-color: #94bdd4;
+  }
+
+  .container-calculator__presets input:focus-visible + span,
+  .container-calculator__segments input:focus-visible + span {
+    border-color: #3c9bcd;
+    box-shadow: 0 0 0 3px rgba(60, 155, 205, .14);
+  }
+
+  .container-calculator__select {
+    min-width: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .container-calculator__select-trigger {
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--calc-line);
+    border-radius: 7px;
+    color: var(--calc-blue);
+    cursor: pointer;
+    display: grid;
+    font: inherit;
+    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) 16px;
+    min-height: 44px;
+    padding: 9px 12px;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .container-calculator__select-trigger::after {
+    border-bottom: 2px solid var(--calc-blue);
+    border-right: 2px solid var(--calc-blue);
+    content: "";
+    height: 8px;
+    justify-self: end;
+    margin-top: -4px;
+    transform: rotate(45deg);
+    width: 8px;
+  }
+
+  .container-calculator__select.is-open .container-calculator__select-trigger {
+    border-color: #3c9bcd;
+    box-shadow: 0 0 0 3px rgba(60, 155, 205, .14);
+  }
+
+  .container-calculator__select.is-open .container-calculator__select-trigger::after {
+    margin-top: 4px;
+    transform: rotate(225deg);
+  }
+
+  .container-calculator__select-value strong,
+  .container-calculator__select-value small,
+  .container-calculator__select-option strong,
+  .container-calculator__select-option small {
+    display: block;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .container-calculator__select-value strong,
+  .container-calculator__select-option strong {
+    color: #244c66;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .container-calculator__select-value small,
+  .container-calculator__select-option small {
+    color: var(--calc-muted);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .container-calculator__select-list {
+    background: #fff;
+    border: 1px solid #94bdd4;
+    border-radius: 7px;
+    box-shadow: 0 14px 34px rgba(17, 24, 32, .16);
+    display: grid;
+    gap: 2px;
+    left: 0;
+    max-height: min(380px, 62vh);
+    overflow: auto;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 40;
+  }
+
+  .container-calculator__select-group {
+    align-items: center;
+    color: #244c66;
+    display: flex;
+    font-size: 11px;
+    font-weight: 700;
+    gap: 10px;
+    letter-spacing: .04em;
+    padding: 12px 10px 6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .container-calculator__select-group::before,
+  .container-calculator__select-group::after {
+    border-top: 1px solid rgba(36, 76, 102, .24);
+    content: "";
+    flex: 1;
+  }
+
+  .container-calculator__select-option {
+    background: transparent;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .container-calculator__select-option:hover,
+  .container-calculator__select-option:focus-visible,
+  .container-calculator__select-option[aria-selected="true"] {
+    background: #eef7fb;
+    outline: none;
   }
 
   .container-calculator__workers {
@@ -312,11 +441,11 @@
     align-items: center;
     display: grid;
     gap: 6px;
-    grid-template-columns: 34px minmax(34px, 1fr) 34px;
+    grid-template-columns: 44px minmax(34px, 1fr) 44px;
   }
 
   .container-calculator__storage-gb .container-calculator__stepper {
-    grid-template-columns: 34px 110px max-content 34px;
+    grid-template-columns: 44px 110px max-content 44px;
     justify-content: start;
   }
 
@@ -334,7 +463,7 @@
     cursor: pointer;
     font: inherit;
     font-weight: 700;
-    min-height: 34px;
+    min-height: 44px;
   }
 
   .container-calculator__stepper button:disabled,
@@ -372,11 +501,18 @@
   }
 
   .container-calculator__summary strong[data-total] {
-    color: var(--calc-green);
+    color: var(--calc-blue);
     display: block;
-    font-size: clamp(28px, 3.2vw, 36px);
+    font-size: clamp(27px, 2.7vw, 34px);
     line-height: 1.1;
     margin: 7px 0 4px;
+  }
+
+  .container-calculator__scope {
+    border-left: 3px solid var(--calc-accent);
+    color: #244c66;
+    margin-top: 12px !important;
+    padding-left: 12px;
   }
 
   .container-calculator__summary dl {
@@ -388,7 +524,7 @@
     align-items: baseline;
     border-top: 1px solid var(--calc-line);
     display: grid;
-    gap: 12px;
+    gap: 4px 12px;
     grid-template-columns: minmax(0, 1fr) max-content;
     padding: 10px 0;
   }
@@ -398,6 +534,12 @@
     font-size: 15px;
     font-weight: 700;
     margin: 0;
+  }
+
+  .container-calculator__summary .container-calculator__summary-sub {
+    color: var(--calc-muted);
+    font-size: 13px;
+    font-weight: 500;
   }
 
   .container-calculator__actions {
@@ -474,6 +616,8 @@
       approx: "{{ T "container_calculator.approx" | safeJSStr }}",
       workerTypeAria: "{{ T "container_calculator.worker_type_aria" | safeJSStr }}",
       workerCountAria: "{{ T "container_calculator.worker_count_aria" | safeJSStr }}",
+      workerDecreaseAria: "{{ T "container_calculator.worker_decrease_aria" | safeJSStr }}",
+      workerIncreaseAria: "{{ T "container_calculator.worker_increase_aria" | safeJSStr }}",
       removeRowAria: "{{ T "container_calculator.remove_row_aria" | safeJSStr }}",
       localDisk: "{{ T "container_calculator.local_disk" | safeJSStr }}",
       presetStart: "{{ T "container_calculator.preset_start_label" | safeJSStr }}",
@@ -494,24 +638,24 @@
     };
 
     var workerCatalog = [
-      { id: 'b2.c4r8', label: 'Standard · 4 vCPU / 8 GB', monthly: 760 },
-      { id: 'b2.c4r16', label: 'Standard · 4 vCPU / 16 GB', monthly: 1200 },
-      { id: 'b2.c8r16', label: 'Standard · 8 vCPU / 16 GB', monthly: 1520 },
-      { id: 'b2.c8r32', label: 'Standard · 8 vCPU / 32 GB', monthly: 2400 },
-      { id: 'b2.c16r32', label: 'Standard · 16 vCPU / 32 GB', monthly: 3040 },
-      { id: 'l2.c4r8.100', label: text.localDisk + ' · 4 vCPU / 8 GB · 100 GB NVMe', monthly: 860 },
-      { id: 'l2.c4r8.500', label: text.localDisk + ' · 4 vCPU / 8 GB · 500 GB NVMe', monthly: 1260 },
-      { id: 'l2.c4r8.1000', label: text.localDisk + ' · 4 vCPU / 8 GB · 1000 GB NVMe', monthly: 1760 },
-      { id: 'l2.c8r16.100', label: text.localDisk + ' · 8 vCPU / 16 GB · 100 GB NVMe', monthly: 1620 },
-      { id: 'l2.c8r16.500', label: text.localDisk + ' · 8 vCPU / 16 GB · 500 GB NVMe', monthly: 2020 },
-      { id: 'l2.c8r16.1000', label: text.localDisk + ' · 8 vCPU / 16 GB · 1000 GB NVMe', monthly: 2520 },
-      { id: 'l2.c16r32.100', label: text.localDisk + ' · 16 vCPU / 32 GB · 100 GB NVMe', monthly: 3140 },
-      { id: 'l2.c16r32.500', label: text.localDisk + ' · 16 vCPU / 32 GB · 500 GB NVMe', monthly: 3540 },
-      { id: 'l2.c16r32.1000', label: text.localDisk + ' · 16 vCPU / 32 GB · 1000 GB NVMe', monthly: 4040 },
-      { id: 'gpu.l2.c4r16.125.a2', label: 'GPU · 4 vCPU / 16 GB · 125 GB NVMe · 1x A2', monthly: 3345 },
-      { id: 'gpu.l2.c8r32.250.a2', label: 'GPU · 8 vCPU / 32 GB · 250 GB NVMe · 1x A2', monthly: 4670 },
-      { id: 'gpu.b2.c4r8.a2', label: 'GPU · 4 vCPU / 8 GB · 1x A2', monthly: 2780 },
-      { id: 'gpu.b2.c8r16.a2', label: 'GPU · 8 vCPU / 16 GB · 1x A2', monthly: 3540 }
+      { id: 'b2.c4r8', group: 'Standard', label: '4 vCPU / 8 GB', monthly: 760 },
+      { id: 'b2.c4r16', group: 'Standard', label: '4 vCPU / 16 GB', monthly: 1200 },
+      { id: 'b2.c8r16', group: 'Standard', label: '8 vCPU / 16 GB', monthly: 1520 },
+      { id: 'b2.c8r32', group: 'Standard', label: '8 vCPU / 32 GB', monthly: 2400 },
+      { id: 'b2.c16r32', group: 'Standard', label: '16 vCPU / 32 GB', monthly: 3040 },
+      { id: 'l2.c4r8.100', group: text.localDisk, label: '4 vCPU / 8 GB · 100 GB NVMe', monthly: 860 },
+      { id: 'l2.c4r8.500', group: text.localDisk, label: '4 vCPU / 8 GB · 500 GB NVMe', monthly: 1260 },
+      { id: 'l2.c4r8.1000', group: text.localDisk, label: '4 vCPU / 8 GB · 1000 GB NVMe', monthly: 1760 },
+      { id: 'l2.c8r16.100', group: text.localDisk, label: '8 vCPU / 16 GB · 100 GB NVMe', monthly: 1620 },
+      { id: 'l2.c8r16.500', group: text.localDisk, label: '8 vCPU / 16 GB · 500 GB NVMe', monthly: 2020 },
+      { id: 'l2.c8r16.1000', group: text.localDisk, label: '8 vCPU / 16 GB · 1000 GB NVMe', monthly: 2520 },
+      { id: 'l2.c16r32.100', group: text.localDisk, label: '16 vCPU / 32 GB · 100 GB NVMe', monthly: 3140 },
+      { id: 'l2.c16r32.500', group: text.localDisk, label: '16 vCPU / 32 GB · 500 GB NVMe', monthly: 3540 },
+      { id: 'l2.c16r32.1000', group: text.localDisk, label: '16 vCPU / 32 GB · 1000 GB NVMe', monthly: 4040 },
+      { id: 'gpu.l2.c4r16.125.a2', group: 'GPU', label: '4 vCPU / 16 GB · 125 GB NVMe · 1x A2', monthly: 3345 },
+      { id: 'gpu.l2.c8r32.250.a2', group: 'GPU', label: '8 vCPU / 32 GB · 250 GB NVMe · 1x A2', monthly: 4670 },
+      { id: 'gpu.b2.c4r8.a2', group: 'GPU', label: '4 vCPU / 8 GB · 1x A2', monthly: 2780 },
+      { id: 'gpu.b2.c8r16.a2', group: 'GPU', label: '8 vCPU / 16 GB · 1x A2', monthly: 3540 }
     ];
 
     var presets = {
@@ -542,6 +686,7 @@
     };
 
     var state = clonePreset('start');
+    var cpSizeDropdown;
 
     function clonePreset(key) {
       return {
@@ -570,6 +715,149 @@
       return workerCatalog.find(function (item) { return item.id === id; }) || workerCatalog[0];
     }
 
+    function closeDropdown(dropdown) {
+      var list = dropdown.querySelector('.container-calculator__select-list');
+      var trigger = dropdown.querySelector('.container-calculator__select-trigger');
+      dropdown.classList.remove('is-open');
+      if (list) list.hidden = true;
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    function closeAllDropdowns(except) {
+      root.querySelectorAll('.container-calculator__select.is-open').forEach(function (dropdown) {
+        if (dropdown !== except) closeDropdown(dropdown);
+      });
+    }
+
+    function openDropdown(dropdown) {
+      var list = dropdown.querySelector('.container-calculator__select-list');
+      var trigger = dropdown.querySelector('.container-calculator__select-trigger');
+      closeAllDropdowns(dropdown);
+      dropdown.classList.add('is-open');
+      if (list) list.hidden = false;
+      if (trigger) trigger.setAttribute('aria-expanded', 'true');
+    }
+
+    function renderDropdownChoice(target, option) {
+      target.textContent = '';
+      var label = document.createElement('strong');
+      label.textContent = option.label;
+      target.appendChild(label);
+      if (option.meta) {
+        var meta = document.createElement('small');
+        meta.textContent = option.meta;
+        target.appendChild(meta);
+      }
+    }
+
+    function createDropdown(mount, config) {
+      var selectedValue = config.value;
+      mount.innerHTML = '';
+
+      var trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'container-calculator__select-trigger';
+      trigger.setAttribute('aria-haspopup', 'listbox');
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.setAttribute('aria-label', config.label);
+
+      var value = document.createElement('span');
+      value.className = 'container-calculator__select-value';
+      trigger.appendChild(value);
+
+      var list = document.createElement('div');
+      list.className = 'container-calculator__select-list';
+      list.setAttribute('role', 'listbox');
+      list.setAttribute('aria-label', config.label);
+      list.hidden = true;
+
+      function optionFor(optionValue) {
+        return config.options.find(function (option) { return option.value === optionValue; }) || config.options[0];
+      }
+
+      function optionButtons() {
+        return Array.prototype.slice.call(list.querySelectorAll('.container-calculator__select-option'));
+      }
+
+      function selectValue(nextValue, notify) {
+        selectedValue = nextValue;
+        renderDropdownChoice(value, optionFor(selectedValue));
+        optionButtons().forEach(function (button) {
+          button.setAttribute('aria-selected', button.dataset.value === selectedValue ? 'true' : 'false');
+        });
+        if (notify) config.onChange(selectedValue);
+      }
+
+      var currentGroup = '';
+      config.options.forEach(function (option) {
+        if (option.group && option.group !== currentGroup) {
+          currentGroup = option.group;
+          var group = document.createElement('div');
+          group.className = 'container-calculator__select-group';
+          group.textContent = currentGroup;
+          list.appendChild(group);
+        }
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'container-calculator__select-option';
+        button.dataset.value = option.value;
+        button.setAttribute('role', 'option');
+        renderDropdownChoice(button, option);
+        button.addEventListener('click', function () {
+          selectValue(option.value, true);
+          closeDropdown(mount);
+          trigger.focus();
+        });
+        list.appendChild(button);
+      });
+
+      trigger.addEventListener('click', function () {
+        if (mount.classList.contains('is-open')) {
+          closeDropdown(mount);
+        } else {
+          openDropdown(mount);
+        }
+      });
+
+      trigger.addEventListener('keydown', function (event) {
+        if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+        event.preventDefault();
+        openDropdown(mount);
+        var buttons = optionButtons();
+        var selectedIndex = buttons.findIndex(function (button) { return button.dataset.value === selectedValue; });
+        var nextIndex = event.key === 'ArrowUp' ? Math.max(selectedIndex, 0) : Math.max(selectedIndex, 0);
+        if (event.key === 'ArrowUp' && selectedIndex <= 0) nextIndex = buttons.length - 1;
+        buttons[nextIndex].focus();
+      });
+
+      list.addEventListener('keydown', function (event) {
+        var buttons = optionButtons();
+        var currentIndex = buttons.indexOf(document.activeElement);
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          closeDropdown(mount);
+          trigger.focus();
+        }
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          event.preventDefault();
+          var nextIndex = currentIndex;
+          if (event.key === 'ArrowDown') nextIndex = currentIndex >= buttons.length - 1 ? 0 : currentIndex + 1;
+          if (event.key === 'ArrowUp') nextIndex = currentIndex <= 0 ? buttons.length - 1 : currentIndex - 1;
+          buttons[nextIndex].focus();
+        }
+      });
+
+      mount.appendChild(trigger);
+      mount.appendChild(list);
+      selectValue(selectedValue, false);
+
+      return {
+        setValue: function (nextValue) {
+          selectValue(nextValue, false);
+        }
+      };
+    }
+
     function workerCount() {
       return state.workers.reduce(function (sum, worker) { return sum + worker.qty; }, 0);
     }
@@ -580,8 +868,16 @@
       }, 0);
     }
 
+    function cpNodeTotal() {
+      return state.cpNodes * cpSizes[state.cpSize].monthly;
+    }
+
+    function cpStorageTotal() {
+      return controlPlaneStorageGb * controlPlaneStoragePrice;
+    }
+
     function cpTotal() {
-      return managedControlPlaneFee + state.cpNodes * cpSizes[state.cpSize].monthly + controlPlaneStorageGb * controlPlaneStoragePrice;
+      return managedControlPlaneFee + cpNodeTotal() + cpStorageTotal();
     }
 
     function storageTotal() {
@@ -607,27 +903,30 @@
       root.querySelectorAll('input[name="container-cp-nodes"]').forEach(function (input) {
         input.checked = Number(input.value) === state.cpNodes;
       });
-      root.querySelector('[data-cp-size]').value = state.cpSize;
+      if (cpSizeDropdown) cpSizeDropdown.setValue(state.cpSize);
       root.querySelectorAll('input[name="container-storage-type"]').forEach(function (input) {
         input.checked = input.value === state.storageType;
       });
       root.querySelector('[data-storage-gb]').value = state.storageGb;
     }
 
-    function renderCpSelect() {
-      var select = root.querySelector('[data-cp-size]');
-      select.innerHTML = '';
-      Object.keys(cpSizes).forEach(function (key) {
-        var option = document.createElement('option');
-        option.value = key;
-        option.textContent = cpSizes[key].label + ' · ' + money(cpSizes[key].monthly, text.perNode);
-        select.appendChild(option);
+    function renderCpSizeDropdown() {
+      var options = Object.keys(cpSizes).map(function (key) {
+        return {
+          value: key,
+          label: cpSizes[key].label
+        };
       });
-      select.addEventListener('change', function () {
-        state.cpSize = select.value;
-        markCustomPreset();
-        update();
-        track('Container Config Change', 'Control plane size');
+      cpSizeDropdown = createDropdown(root.querySelector('[data-cp-size-select]'), {
+        label: root.querySelector('[data-cp-size-select]').dataset.label,
+        value: state.cpSize,
+        options: options,
+        onChange: function (nextValue) {
+          state.cpSize = nextValue;
+          markCustomPreset();
+          update();
+          track('Container Config Change', 'Control plane size');
+        }
       });
     }
 
@@ -641,31 +940,35 @@
         row.className = 'container-calculator__worker';
         row.innerHTML = [
           '<div class="container-calculator__worker-main">',
-          '<span class="container-calculator__worker-label">' + item.label + '</span>',
-          '<select aria-label="' + text.workerTypeAria + '"></select>',
+          '<span class="container-calculator__worker-label">' + item.group + '</span>',
+          '<div class="container-calculator__select" data-worker-type-select></div>',
           '</div>',
           '<div class="container-calculator__stepper" aria-label="' + text.workerCountAria + '">',
-          '<button type="button" data-worker-minus="' + index + '">-</button>',
+          '<button type="button" data-worker-minus="' + index + '" aria-label="' + text.workerDecreaseAria + '">-</button>',
           '<span>' + worker.qty + '</span>',
-          '<button type="button" data-worker-plus="' + index + '">+</button>',
+          '<button type="button" data-worker-plus="' + index + '" aria-label="' + text.workerIncreaseAria + '">+</button>',
           '</div>',
           '<button class="container-calculator__remove" type="button" data-worker-remove="' + index + '" aria-label="' + text.removeRowAria + '">x</button>'
         ].join('');
 
-        var select = row.querySelector('select');
-        workerCatalog.forEach(function (candidate) {
-          var option = document.createElement('option');
-          option.value = candidate.id;
-          option.textContent = candidate.label + ' · ' + money(candidate.monthly);
-          option.selected = candidate.id === worker.id;
-          select.appendChild(option);
-        });
-        select.addEventListener('change', function () {
-          state.workers[index].id = select.value;
-          markCustomPreset();
-          renderWorkers();
-          update();
-          track('Container Config Change', 'Worker flavor');
+        createDropdown(row.querySelector('[data-worker-type-select]'), {
+          label: text.workerTypeAria,
+          value: worker.id,
+          options: workerCatalog.map(function (candidate) {
+            return {
+              value: candidate.id,
+              group: candidate.group,
+              label: candidate.label,
+              meta: money(candidate.monthly)
+            };
+          }),
+          onChange: function (nextValue) {
+            state.workers[index].id = nextValue;
+            markCustomPreset();
+            renderWorkers();
+            update();
+            track('Container Config Change', 'Worker flavor');
+          }
         });
         list.appendChild(row);
       });
@@ -715,15 +1018,26 @@
       syncControls();
       root.querySelector('[data-total]').textContent = money(estimate, text.perMonth);
       root.querySelector('[data-hourly]').textContent = text.approx + ' ' + (estimate / 720).toLocaleString(text.locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' ' + text.currency + text.perHour;
-      root.querySelector('[data-cp-total]').textContent = money(cpTotal());
+      root.querySelector('[data-cp-base-total]').textContent = money(managedControlPlaneFee);
+      root.querySelector('[data-cp-node-total]').textContent = money(cpNodeTotal() + cpStorageTotal());
       root.querySelector('[data-worker-total]').textContent = money(workerTotal());
       root.querySelector('[data-storage-total]').textContent = money(storageTotal());
       root.querySelector('[data-storage-gb-row]').hidden = state.storageType === 'none';
       root.querySelector('[data-add-worker]').disabled = workerCount() >= maxWorkers;
     }
 
-    renderCpSelect();
+    renderCpSizeDropdown();
     renderWorkers();
+
+    document.addEventListener('click', function (event) {
+      if (!root.contains(event.target)) {
+        closeAllDropdowns();
+        return;
+      }
+      root.querySelectorAll('.container-calculator__select.is-open').forEach(function (dropdown) {
+        if (!dropdown.contains(event.target)) closeDropdown(dropdown);
+      });
+    });
 
     root.querySelectorAll('input[name="container-preset"]').forEach(function (input) {
       input.addEventListener('change', function () {

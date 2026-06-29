@@ -7,7 +7,7 @@ intro: "Fredric Wallsten har mange års erfaring med disse spørgsmål i sin rol
 background: "safespring_2019-10-24_fredric-wallsten_03-small_fotograf-marcus-boberg.jpg"
 form: "nej"
 sidebarlinkname: "Hent whitepaper"
-sidebarlinkurl: "#ned"
+sidebarlinkurl: "#down"
 language: "da"
 section: "Fredric Wallsten"
 article: "DN.no"
@@ -15,6 +15,7 @@ socialmedia: "/socialmedia/fredric-social-article.jpg"
 aliases:
   - /no/aktuelt/norsk_skytjeneste/
   - /no/aktuelt/norsk-skytjeneste/
+  - /blog/norsk-skytjeneste/
 ---
 
 ## Norsk statslig cloudtjeneste?

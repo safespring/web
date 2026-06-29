@@ -23,6 +23,7 @@
         document.addEventListener("DOMContentLoaded", function () {
           var video = document.getElementById("player");
           var videoSrc = "{{ .Params.videoURL }}";
+          var _paq = (window._paq = window._paq || []);
           var isFullScreen = false;
           var hlsScriptLoaded = false;
           var videoInitialized = false;
@@ -222,15 +223,16 @@
             <div class="webinarplaylist">
               <ul>
                 {{ range $index, $element := .Params.chapters }}
-                  <a
-                    href="javascript:void(0);"
-                    onclick="setCurrentTime({{ $element.time }})"
-                  >
-                    <li>
+                  <li>
+                    <button
+                      type="button"
+                      class="webinarplaylist-button"
+                      onclick="setCurrentTime({{ $element.time }})"
+                    >
                       <span>{{ $element.title }}</span>
                       <span class="timer">{{ $element.timeFormatted }}</span>
-                    </li>
-                  </a>
+                    </button>
+                  </li>
                 {{ end }}
               </ul>
             </div>

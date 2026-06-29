@@ -47,7 +47,7 @@ Jeg er CCO hos Safespring og kan hjælpe dig med at se, hvordan Safespring kan b
 
 {{< distance >}}
 
-## Rammeaftale
+## Rammeaftale {#framework-agreement}
 
 {{< ingress >}}
 Safesprings tjenester kan afropes via National Procurement Services’ eksisterende rammeaftaler, Information Supply og Software Solutions, hvor vi er underleverandør.
@@ -63,15 +63,15 @@ Oplev skytjenester bygget på åbenhed, bæredygtighed og sikkerhed. Med vores f
 
 Alle Safesprings skytjenester er bygget med open source-komponenter, fordi disse er branchestandard og det mest teknisk avancerede software, der findes.
 
-### Åbne standarder
+### Åbne standarder {#open-standards}
 
 Alle Safesprings skytjenester bruger åbne standarder, fordi vi – i modsætning til flere af vores konkurrenter – ikke tror på leverandørlåsning. I stedet mener vi, at vi er så dygtige og omkostningseffektive, at kunderne ønsker at blive af egen fri vilje.
 
-### Bæredygtighed
+### Bæredygtighed {#sustainability}
 
 Alle Safesprings skytjenester leveres fra moderne og bæredygtige datacentre i Sverige. For eksempel bruger vi kun grøn strøm, har høj energieffektivitet og udnytter overskudsvarme.
 
-### Juridisk sikkerhed
+### Juridisk sikkerhed {#legal-security}
 
 Fordi Safespring er et svensk medarbejderejet selskab med datacentre i Sverige, behøver du ikke bekymre dig om fremtidige afgørelser fra EU-Domstolen, der for eksempel kan påvirke din behandling af personoplysninger.
 
