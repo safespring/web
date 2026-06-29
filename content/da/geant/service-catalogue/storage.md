@@ -13,7 +13,7 @@ cardintro: "Lagringstjeneste baseret på Cephs objektlagringsklynge ved brug af 
 background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tilbage til alle kategorier"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 sidebarlinkname2: "Se pris på lagerplads"
 sidebarlinkurl2: "/geant/price/#safespring-storage"
 section: "OCRE 2024-rammeværk"

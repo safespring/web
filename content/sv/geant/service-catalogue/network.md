@@ -13,7 +13,7 @@ cardintro: "Heltäckande nätverkstjänster för sömlös uppkoppling och kontro
 background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 sidebarlinkname2: "Se pris för nätverk"
 sidebarlinkurl2: "/geant/price/#network"
 section: "OCRE 2024-ramverket"

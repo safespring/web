@@ -12,7 +12,7 @@ cardintro: "Comprehensive network services for seamless connectivity and control
 background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Back to all categories"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 sidebarlinkname2: "See price for network"
 sidebarlinkurl2: "/geant/price/#network"
 section: "OCRE 2024 framework"

@@ -12,7 +12,7 @@ intro: "Effortlessly manage and deploy operating system images in the cloud with
 background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Back to all categories"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"

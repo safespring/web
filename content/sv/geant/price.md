@@ -14,7 +14,7 @@ nosidebar: ""
 sidebarlinkname: "Ladda ner prislista"
 sidebarlinkurl: "/pricelist/geant/geant_safespring_pricelist.xlsx"
 sidebarlinkname2: "Tjänstekatalog"
-sidebarlinkurl2: "/geant/service-catalogue/"
+sidebarlinkurl2: "/geant/service-catalogue/_index.md"
 noindex: "x"
 aliases:
   - /geant/price/

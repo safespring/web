@@ -12,7 +12,7 @@ cardintro: "Storage service based on the Ceph object storage cluster using S3-AP
 background: "safespring-compute-background.svg"
 form: "no"
 sidebarlinkname: "Back to all categories"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 sidebarlinkname2: "See price for storage"
 sidebarlinkurl2: "/geant/price/#safespring-storage"
 section: "OCRE 2024 framework"

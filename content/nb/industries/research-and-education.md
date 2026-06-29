@@ -36,7 +36,7 @@ Det er flere måter en forsknings- og utdanningsorganisasjon kan benytte Safespr
 3. Prisene er allerede rabatterte, men kan forhandles ytterligere.
 
 {{< icon-block-small-container >}}
-{{< icon-block-small icon="fa-solid fa-table" text="Tjenestekatalog" link="/geant/service-catalogue/" color="#195F8C">}}
+{{< icon-block-small icon="fa-solid fa-table" text="Tjenestekatalog" linkref="/geant/service-catalogue/_index.md" color="#195F8C">}}
 {{< icon-block-small icon="fa-solid fa-coins" text="Prisliste" link="/geant/price/" color="#3C9BCD" >}}
 {{< /icon-block-small-container >}}
 

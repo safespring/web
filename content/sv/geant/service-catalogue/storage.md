@@ -13,7 +13,7 @@ cardintro: "Lagringstjänst baserad på Cephs objektlagringskluster som använde
 background: "safespring-compute-background.svg"
 form: "nej"
 sidebarlinkname: "Tillbaka till alla kategorier"
-sidebarlinkurl: "/geant/service-catalogue"
+sidebarlinkurl: "/geant/service-catalogue/_index.md"
 sidebarlinkname2: "Se pris för lagring"
 sidebarlinkurl2: "/geant/price/#safespring-storage"
 section: "OCRE 2024-ramverk"
