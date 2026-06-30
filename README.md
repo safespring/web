@@ -54,6 +54,8 @@ npm run build
 
 The local build installs Node dependencies if needed, installs the Playwright Chromium runtime, regenerates compliance metadata and PDFs from the current Git checkout, and then runs Hugo. Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
 
+Pages are treated as noindex when frontmatter has `noindex: true` or the Hugo section is `internal`. Use only boolean `noindex: true` or `noindex: false`; the build validates this before rendering.
+
 Compliance PDFs are generated before Hugo renders the site. The Caddy v2 repo watcher that publishes beta should run:
 
 ```bash

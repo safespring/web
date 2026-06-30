@@ -14,11 +14,12 @@ class NoindexCleanupTest(unittest.TestCase):
 
         intended_noindex_pages = {
             "en/documents/sunet-drive-file-sync-and-share-solution/index.html": "https://beta.safespring.eu/documents/sunet-drive-file-sync-and-share-solution/",
-            "en/schedule-demo-success/index.html": "https://beta.safespring.eu/en/schedule-demo-success/",
+            "en/contact-thanks/index.html": "https://beta.safespring.eu/contact-thanks/",
             "en/onboarding/success/index.html": "https://beta.safespring.eu/en/onboarding/success/",
             "en/geant/index.html": "https://beta.safespring.eu/geant/",
             "en/documents/safespring-swamid-privacy-policy/index.html": "https://beta.safespring.eu/documents/safespring-swamid-privacy-policy/",
             "en/onboarding/safespring-onboarding/index.html": "https://beta.safespring.eu/onboarding/safespring-onboarding/",
+            "en/internal/index.html": "https://beta.safespring.eu/en/internal/",
         }
         intended_indexable_pages = {
             "en/services/index.html": "https://beta.safespring.eu/services/",
@@ -46,17 +47,25 @@ class NoindexCleanupTest(unittest.TestCase):
                 self.assertNotRegex(page.read_text(encoding="utf-8"), NOINDEX_META)
                 self.assertIn(f"<loc>{page_url}</loc>", sitemap)
 
-    def test_all_content_noindex_frontmatter_is_boolean_true(self):
+    def test_all_content_noindex_frontmatter_is_boolean(self):
         repo_root = Path(__file__).resolve().parents[1]
 
         for path in sorted((repo_root / "content").rglob("*.md")):
             for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
                 if line.startswith("noindex:"):
-                    self.assertEqual(
+                    self.assertIn(
                         line,
-                        "noindex: true",
-                        f"{path.relative_to(repo_root)}:{line_number} should use boolean true",
+                        {"noindex: true", "noindex: false"},
+                        f"{path.relative_to(repo_root)}:{line_number} should use boolean true or false",
                     )
+
+    def test_sitemap_templates_use_noindex_or_internal_rule(self):
+        repo_root = Path(__file__).resolve().parents[1]
+        rule = '(or (eq .Params.noindex true) (eq .Section "internal"))'
+
+        for template_path in ("layouts/_default/sitemap.xml", "layouts/index.xml"):
+            template = (repo_root / template_path).read_text(encoding="utf-8")
+            self.assertIn(rule, template)
 
 
 if __name__ == "__main__":

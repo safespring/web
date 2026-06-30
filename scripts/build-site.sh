@@ -15,5 +15,6 @@ if [ "${SKIP_PLAYWRIGHT_INSTALL:-0}" != "1" ]; then
   npm run pdf:setup
 fi
 
+python3 scripts/validate_noindex_frontmatter.py
 npm run pdf:compliance
 hugo "$@"
