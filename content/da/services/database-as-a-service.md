@@ -45,7 +45,7 @@ Database-som-service tager sig af alt og giver dig tilgængelige databaser med h
 
 Tjenesten bygges af vores partner Severalnines på Safespring. At administrere et komplekst, klustret databasemiljø er tidskrævende og ofte skræmmende. Med blot nogle få enkle klik kan du implementere et fuldt administreret, lastbalanceret, højtilgængeligt databasekluster til MySQL, MariaDB eller PostgreSQL, der leverer ydeevne, oppetid og enkelhed.
 
-{{< 2calltoaction "Book demo" "/demo" "Kontakt os" "/kontakt" >}}
+{{< 2calltoaction "Se demo" "/demo/compute/" "Kontakt os" "/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

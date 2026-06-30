@@ -44,7 +44,7 @@ In this section, Amelia Andersdotter, Head of Risk and Compliance at Safespring,
 
 They begin by explaining how modern software development techniques, such as containerization, allow applications to run independently of the underlying hardware and infrastructure. Gabriel emphasizes how containers can reduce dependence on specific operating systems and hardware resources, enabling updates and maintenance to be carried out more efficiently and with less disruption.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book a demo with Gabriel" link="/demo/compute/" linktext="Book a demo" text="Speak directly with our Cloud Architect Gabriel about how your application can be built on Safespring's digital infrastructure." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Watch demo" link="/demo/compute/" linktext="Watch demo" text="Watch a practical walkthrough of the Safespring cloud platform and how it can support your applications." >}}
 
 {{< distance >}}
 

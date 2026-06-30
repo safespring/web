@@ -13,7 +13,7 @@ cardintro: "Robust enterprise-grade cloud backup til fysiske eller virtuelle ser
 background: "safespring-backup-background.svg"
 form: ""
 sidebarlinkname: "Se demo"
-sidebarlinkurl: "/demo/compute/"
+sidebarlinkurl: "/demo/backup/"
 sidebarlinkname2: "Pris for Backup"
 sidebarlinkurl2: "/price/#safespring-backup"
 socialmedia: "safespring-backup.jpg"

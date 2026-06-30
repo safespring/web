@@ -19,6 +19,14 @@ slug: "kontakt"
 
 {{< distance >}}
 
+### Skriv til os
+
+Udfyld formularen, hvis du vil have os til at kontakte dig. Du kan også sende e-mail eller ringe direkte.
+
+{{< contact-form >}}
+
+{{< distance >}}
+
 ### Vores medarbejdere
 
 Her finder du kontaktinformation til nogle af vores medarbejdere. Tøv ikke med at tage kontakt, hvis du har spørgsmål eller har brug for hjælp med noget specifikt.

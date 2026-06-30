@@ -11,7 +11,7 @@ cardintro: "Svensk IaaS med robust serverkapasitet, kontroll og høy fleksibilit
 background: "safespring-compute-background.svg"
 form: "no"
 documentation: "Compute"
-sidebarlinkname: "Bestill demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/pris/#safespring-compute"

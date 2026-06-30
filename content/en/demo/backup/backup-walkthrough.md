@@ -12,8 +12,8 @@ card: "/img/webinar/thumbnails/demo-backup-3.webp"
 eventbild: ""
 socialmediabild: ""
 intro: "We walk through Safespring Backup in this hands-on video – a demo that demonstrates our backup-as-a-service."
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Book a video call"
+sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -48,10 +48,10 @@ We walk through Safespring Backup in this hands-on video—a demo that shows how
 
 In the video, Gabriel explains how to practically create backups and hierarchies, and how to check the health of your protected data.
 
-### Book a meeting with Gabriel
-Schedule a video meeting and ask your questions directly to Gabriel! Easily pick a time via the link below or send an email to hello@safespring.com
+### Ask us about Safespring Backup
+Send your questions through the form below, or email hello@safespring.com
 
-{{< localbutton text="Book a video call" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Contact us" link="/contact/#contact-form" >}}
 
 {{< distance >}}
 

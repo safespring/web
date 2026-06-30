@@ -11,8 +11,8 @@ intro: "Watch practical walkthroughs for creating, scaling and accessing Kuberne
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Schedule a video chat"
+sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "invisible"
@@ -26,4 +26,4 @@ Learn how Safespring Kubernetes Engine works in practice, from provisioning a ma
 
 These demos are aimed at teams evaluating Kubernetes on Safespring or preparing to run workloads on the platform. Each chapter card opens the same walkthrough at the selected timestamp, so you can jump directly to the part you need.
 
-{{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Contact us" link="/contact/#contact-form" >}}

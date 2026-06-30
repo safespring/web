@@ -18,8 +18,8 @@ author: "Anders Johansson"
 TOC: "I dette indlæg"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Udforsk Safespring Kubernetes Engine"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Book en demo"
+sidebarlinkurl2: "/demo/kubernetes/"
+sidebarlinkname2: "Se demo"
 aliases:
   - /blog/2025-11-migrating-from-ingress-nginx-to-gateway-api-with-cilium/
 ---

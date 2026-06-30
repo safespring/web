@@ -44,7 +44,7 @@ I denne delen diskuterer Amelia Andersdotter, risiko- og etterlevelsesansvarlig 
 
 De innleder med å forklare hvordan moderne programvareutviklingsteknikker, som containerisering, gir applikasjoner muligheten til å kjøres uavhengig av den underliggende maskinvaren og infrastrukturen. Gabriel understreker hvordan containere kan redusere avhengigheten av spesifikke operativsystemer og maskinvare-ressurser, noe som gjør at oppdateringer og vedlikehold kan utføres mer effektivt og med færre avbrudd.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Bestill demo med Gabriel" link="/demo/compute/" linktext="Bestill demo" text="Snakk direkte med vår skyarkitekt Gabriel om hvordan deres applikasjon kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gjennomgang av Safesprings skyplattform og hvordan den kan støtte applikasjonene deres." >}}
 
 {{< distance >}}
 

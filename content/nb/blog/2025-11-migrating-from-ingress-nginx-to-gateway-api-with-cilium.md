@@ -18,8 +18,8 @@ author: "Anders Johansson"
 TOC: "I dette innlegget"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Utforsk Kubernetes på forespørsel"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Bestill en demo"
+sidebarlinkurl2: "/demo/kubernetes/"
+sidebarlinkname2: "Se demo"
 aliases:
   - /blogg/2025-11-migrating-from-ingress-nginx-to-gateway-api-with-cilium/
 ---

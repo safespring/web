@@ -1,15 +1,15 @@
 ---
 ai: true
-title: "Tak, fordi du har booket en demo hos Safespring."
+title: "Tak, fordi du kontakter Safespring"
 language: "da"
 date: 2024-08-20
 draft: false
-section: "Planlagt demo"
-intro: "Tak for din interesse i Safespring, den pålidelige europæiske cloudplatform, der overholder databeskyttelseslovgivningen. Vi glæder os til at vise dig, hvordan vores løsninger kan understøtte din virksomhed."
+section: "Kontakt"
+intro: "Tak for din interesse i Safespring. Vi vender tilbage så snart vi kan."
 background: "safespring-blue-fade2.svg"
 darkmode: "fra"
 sidebarimage: "safespring-fredric.webp"
-sidebartext: "Mit navn er Fredric Wallsten, og jeg bliver din primære kontaktperson hos Safespring. Hvis du har nogle spørgsmål før vores demo, er du meget velkommen til at kontakte mig."
+sidebartext: "Mit navn er Fredric Wallsten, og jeg bliver din primære kontaktperson hos Safespring. Hvis du har spørgsmål, er du velkommen til at kontakte mig direkte."
 sidebarphone: "076 629 25 02"
 sidebarmail: "fredric.wallsten@safespring.com"
 socialmedia: ""
@@ -19,12 +19,13 @@ sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/contact.md"
 saas: ""
 noindex: "ja"
+slug: "contact-thanks"
 aliases:
   - /container-thanks/
   - /schedule-demo-success/
 ---
 {{< ingress >}}
-Din demo er nu booket! Vi ser frem til at mødes med dig og demonstrere, hvordan Safespring kan forbedre din datainfrastruktur. I mellemtiden er du velkommen til at udforske ressourcerne nedenfor for at lære mere om, hvad vi tilbyder.
+Tak. Vi har modtaget din henvendelse og kontakter dig. I mellemtiden kan du udforske ressourcerne nedenfor eller kontakte os direkte via e-mail eller telefon.
 {{< /ingress >}}
 
 Safespring er en europæisk public cloud-platform, bygget til at imødekomme compliance-behov inden for EU. Med stærkt fokus på digital suverænitet og åbne standarder tilbyder Safespring tjenester som virtuelle servere, lagring i stor skala og backup som en tjeneste. Vores datacentre i Sverige og Norge leverer en sikker og gennemprøvet platform til offentlige myndigheder, datadrevne virksomheder og den akademiske sektor.

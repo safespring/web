@@ -12,8 +12,8 @@ card: "/img/webinar/thumbnails/demo-backup-1.webp"
 eventbild: ""
 socialmediabild: ""
 intro: "Vi går gjennom vanlige begreper og forskjellen mellom Safespring Backup og andre backupsystemer."
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Bestill videosamtale"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakt oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -69,11 +69,11 @@ I videoen forklarer Gabriel og Christian hvordan vi sikrer at dataene dine allti
 
 De går også gjennom viktige funksjoner som multitenancy, deduplisering og robust beskyttelse mot trusler som ransomware, noe som garanterer at dataene dine aldri går tapt.
 
-### Book et møte med Gabriel
+### Spør oss om Safespring Backup
 
-Book et videomøte og still spørsmålene dine direkte til Gabriel! Du velger enkelt et tidspunkt via lenken nedenfor eller sender en e-post til hello@safespring.com
+Send spørsmålene dine via skjemaet, eller send en e-post til hello@safespring.com
 
-{{< localbutton text="Book videosamtale" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Kontakt oss" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

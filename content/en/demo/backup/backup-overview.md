@@ -12,8 +12,8 @@ card: "/img/webinar/thumbnails/demo-backup-1.webp"
 eventbild: ""
 socialmediabild: ""
 intro: "We cover common concepts and the differences between Safespring Backup and other backup systems."
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Book a video call"
+sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -69,11 +69,11 @@ In the video, Gabriel and Christian explain how we ensure your data always has m
 
 They also cover key features like multitenancy, deduplication, and robust protection against threats such as ransomware, ensuring your data is never lost.
 
-### Book a meeting with Gabriel
+### Ask us about Safespring Backup
 
-Schedule a video meeting and ask your questions directly to Gabriel! Choose a time via the link below or send an email to hello@safespring.com
+Send your questions through the form below, or email hello@safespring.com
 
-{{< localbutton text="Book a video call" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Contact us" link="/contact/#contact-form" >}}
 
 {{< distance >}}
 

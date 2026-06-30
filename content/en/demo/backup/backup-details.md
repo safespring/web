@@ -12,8 +12,8 @@ card: "/img/webinar/thumbnails/demo-backup-2.webp"
 eventbild: ""
 socialmediabild: ""
 intro: "A technical deep dive into Safespring Backup with a focus on automated recovery tests, API integration, and modern infrastructure."
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Book a video call"
+sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -52,11 +52,11 @@ In this technical deep dive, we examine Safespring Backup, focusing on how autom
 
 In the video, Gabriel and Christian explain in detail how Safespring Backup handles off-site backups, performs automated tests to verify data readability, and optimizes the recovery process. They demonstrate how API-driven integration enables scalability, cost reporting, and the management of both traditional servers and modern container-based solutions.
 
-### Book a meeting with Gabriel
+### Ask us about Safespring Backup
 
-Schedule a video meeting and ask your questions directly to Gabriel! Choose a time via the link below or send an email to hello@safespring.com
+Send your questions through the form below, or email hello@safespring.com
 
-{{< localbutton text="Book a video call" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Contact us" link="/contact/#contact-form" >}}
 
 {{< distance >}}
 

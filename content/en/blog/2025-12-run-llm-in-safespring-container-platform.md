@@ -17,8 +17,8 @@ author: "Gabriel Paues"
 TOC: "In this post"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Explore Safespring Kubernetes Engine"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Book demo"
+sidebarlinkurl2: "/demo/kubernetes/"
+sidebarlinkname2: "Watch demo"
 aliases:
   - /blog/2025-12-run-llm-in-safespring-container-platform/
 ---

@@ -11,7 +11,7 @@ form: ""
 sidebarlinkname: "Læs om Private Cloud"
 sidebarlinkurl: "/tjenester/safespring-lokal-cloud/"
 sidebarlinkname2: "Se demo"
-sidebarlinkurl2: "/demo/compute"
+sidebarlinkurl2: "/demo/compute/"
 socialmedia: ""
 devops: ""
 aliases:

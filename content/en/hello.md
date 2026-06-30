@@ -3,7 +3,7 @@ title: "Hello, glad you want to learn more about Safespring"
 language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-section: "Book demo"
+section: "Watch demo"
 intro: "Safespring is the Swedish public cloud platform that complies with European data protection laws. We are pleased to offer a secure and reliable platform for our customers and their data."
 background: "safespring-blue-fade2.svg"
 darkmode: "off"

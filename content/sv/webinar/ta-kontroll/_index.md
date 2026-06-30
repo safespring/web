@@ -45,4 +45,4 @@ Upptäck varje avsnitt i vår serie och lär dig mer om de specifika säkerhetsu
 6. **Hållbar säkerhet:**
    Utforska hur hållbarhetsprinciper kan integreras i din säkerhetsstrategi för att minska miljöpåverkan samtidigt som du skyddar data.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk genomgång av Safesprings digitala infrastruktur och hur den kan stödja era applikationer." >}}

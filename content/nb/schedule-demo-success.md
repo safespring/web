@@ -1,15 +1,15 @@
 ---
 ai: true
-title: "Takk for at du har avtalt en demo med Safespring"
+title: "Takk for at du kontakter Safespring"
 language: "nb"
 date: 2024-08-20
 draft: false
-section: "Demo planlagt"
-intro: "Takk for interessen for Safespring, den pålitelige europeiske skyplattformen som oppfyller kravene i personvernlovgivningen. Vi ser frem til å vise deg hvordan løsningene våre kan støtte virksomheten din."
+section: "Kontakt"
+intro: "Takk for interessen for Safespring. Vi tar kontakt så snart vi kan."
 background: "safespring-blue-fade2.svg"
 darkmode: "av"
 sidebarimage: "safespring-fredric.webp"
-sidebartext: "Jeg heter Fredric Wallsten, og jeg blir din hovedkontakt hos Safespring. Hvis du har noen spørsmål før demoen vår, ta gjerne kontakt."
+sidebartext: "Jeg heter Fredric Wallsten, og jeg blir din hovedkontakt hos Safespring. Hvis du har spørsmål, kan du gjerne ta kontakt direkte."
 sidebarphone: "076 629 25 02"
 sidebarmail: "fredric.wallsten@safespring.com"
 socialmedia: ""
@@ -19,12 +19,13 @@ sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/contact.md"
 saas: ""
 noindex: "ja"
+slug: "contact-thanks"
 aliases:
   - /container-thanks/
   - /schedule-demo-success/
 ---
 {{< ingress >}}
-Demoen din er planlagt! Vi ser frem til å møte deg og vise hvordan Safespring kan styrke datainfrastrukturen din. I mellomtiden er du velkommen til å utforske ressursene nedenfor for å lære mer om hva vi tilbyr.
+Takk. Vi har mottatt forespørselen din og kontakter deg. I mellomtiden kan du utforske ressursene nedenfor eller kontakte oss direkte via e-post eller telefon.
 {{< /ingress >}}
 
 Safespring er en europeisk offentlig skyplattform bygget for å møte etterlevelseskrav innenfor EU. Med et sterkt fokus på digital suverenitet og åpne standarder tilbyr Safespring tjenester som virtuelle servere, lagring i stor skala og sikkerhetskopiering som en tjeneste. Våre datasentre i Sverige og Norge gir en sikker og velprøvd plattform for offentlige virksomheter, datadrevne selskaper og akademia.

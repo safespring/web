@@ -18,8 +18,8 @@ author: "Gabriel Paues"
 TOC: "I dette indlæg"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Udforsk Safespring Kubernetes Engine"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Bogdemo"
+sidebarlinkurl2: "/demo/kubernetes/"
+sidebarlinkname2: "Se demo"
 aliases:
   - /blog/2025-12-run-llm-in-safespring-container-platform/
 ---

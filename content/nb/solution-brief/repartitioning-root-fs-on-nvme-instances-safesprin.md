@@ -6,8 +6,8 @@ draft: false
 tags: ["English"]
 intro: "Dette løsningsnotatet gir trinnvise instruksjoner om hvordan du ompartisjonerer rotfilsystemet på en NVMe-instans i l2-serien på Safesprings plattform."
 background: ""
-sidebarlinkname: "Møt en skyarkitekt"
-sidebarlinkurl: "/demo"
+sidebarlinkname: "Se demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 socialmedia: ""

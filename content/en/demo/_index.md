@@ -7,12 +7,12 @@ section: "Public Cloud"
 intro: "Learn how Safespring can support your business operations with a demonstration of our cloud platform."
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Schedule a video chat"
+sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-arrow-up-right-from-square"
 ---
 
-# Schedule a private demo
+# Contact us
 
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?
@@ -28,4 +28,4 @@ At Safespring, we provide a cloud service that supports your business's need for
 
 {{< distance >}}
 
-{{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Contact us" link="/contact/#contact-form" >}}

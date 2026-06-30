@@ -86,8 +86,8 @@ NTT Security leverer tjenesten Samurai MDR, hvilket sikrer, at din virksomhed ha
 
 Med Samurai MDR på Safesprings skyplatform får du en kombination af NTT Securitys avancerede cybersikkerhed og Safesprings pålidelige infrastruktur, som er bygget på åbne standarder og tilbyder digital suverænitet.
 
-## Book en demo
+## Se demo
 
-Lad os guide dig gennem fordelene ved Samurai MDR. Kontakt os i dag og book en demo.
+Se en demo af Safesprings platform, og kontakt os, hvis du vil tale videre om Samurai MDR.
 
-{{< localbutton text="Book demo" link="/demo" >}}
+{{< localbutton text="Se demo" link="/demo/compute/" >}}

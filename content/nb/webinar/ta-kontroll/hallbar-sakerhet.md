@@ -43,7 +43,7 @@ I denne delen utforsker Gabriel Paues, skyarkitekt hos Safespring, og Amelia And
 
 Samtalen starter med en definisjon av bærekraft i teknisk forstand — ikke bare miljømessig påvirkning, men også effektiv ressursbruk og langsiktige, bærekraftige investeringer i teknologi. Gabriel og Amelia understreker viktigheten av å bruke skytjenester og moderne teknologier som containere for å redusere overflødig infrastruktur og øke systemenes effektivitet.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Bestill demo med Gabriel" link="/demo/compute/" linktext="Bestill demo" text="Snakk direkte med vår skyarkitekt Gabriel om hvordan applikasjonen deres kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gjennomgang av Safesprings skyplattform og hvordan den kan støtte applikasjonene deres." >}}
 
 ### I denne delen
 

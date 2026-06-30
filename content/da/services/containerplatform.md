@@ -162,7 +162,7 @@ Brug beregneren som startpunkt for en dimensioneringsdialog. Den samler administ
 
 ## Vil du se, hvordan platformen fungerer i praksis?
 
-Book en kort gennemgang med en cloud architect. Vi kan vise, hvordan clusters oprettes, hvordan ansvarsfordelingen ser ud, og hvordan tjenesten passer til jeres krav til drift, sikkerhed og compliance.
+Kontakt os for en kort gennemgang med en cloud architect. Vi kan vise, hvordan clusters oprettes, hvordan ansvarsfordelingen ser ud, og hvordan tjenesten passer til jeres krav til drift, sikkerhed og compliance.
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakt os" alt="Fredric Wallsten på Safespring" %}}
 

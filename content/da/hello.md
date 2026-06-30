@@ -4,7 +4,7 @@ title: "Hej, dejligt at du vil lære mere om Safespring"
 language: "da"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-section: "Book en demo"
+section: "Se demo"
 intro: "Safespring er den svenske offentlige cloudplatform, der overholder den europæiske databeskyttelseslovgivning. Vi er glade for at kunne tilbyde en sikker og pålidelig platform til vores kunder og deres data."
 background: "safespring-blue-fade2.svg"
 darkmode: "fra"

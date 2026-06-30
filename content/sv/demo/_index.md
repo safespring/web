@@ -8,11 +8,11 @@ section: "Publikt moln"
 intro: "Upptäck hur Safespring kan stödja er verksamhet genom en demonstration av vår molnplattform."
 background: "safespring-blue-fade2.svg"
 darkmode: "av"
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Schemalägg ett videosamtal"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakta oss"
 sidebarlinkicon: "fa fa-arrow-up-right-from-square"
 ---
-# Boka en personlig demo
+# Kontakta oss
 
 {{< ingress >}}
 Varför välja en svensk IaaS-leverantör som upprätthåller strikta standarder för dataskydd och regelefterlevnad för era programvarulösningar?
@@ -20,7 +20,7 @@ Varför välja en svensk IaaS-leverantör som upprätthåller strikta standarder
 
 Hos Safespring erbjuder vi en molntjänst som stödjer ert företags behov av operativ flexibilitet, samtidigt som vi håller fast vid de svenska kraven på dataskydd och regelefterlevnad. Vår plattform möjliggör effektiv driftsättning, hantering och skalning av applikationer.
 
-### Det här kan ni förvänta er av ett möte med oss
+### Det här kan ni förvänta er när ni kontaktar oss
 
 - Insikter om våra molntjänster och lösningar anpassade för SaaS-företag
 - En genomgång av hur vår plattform kan stödja ert företags digitala transformation
@@ -28,4 +28,4 @@ Hos Safespring erbjuder vi en molntjänst som stödjer ert företags behov av op
 
 {{< distance >}}
 
-{{< localbutton text="Boka demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakta oss" link="/kontakt/#contact-form" >}}

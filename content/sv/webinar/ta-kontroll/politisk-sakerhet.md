@@ -43,7 +43,7 @@ I detta avsnitt diskuterar Gabriel Paues, molnarkitekt på Safespring, och Ameli
 
 Samtalet börjar med en diskussion om sambandet mellan politiska och juridiska osäkerheter. Gabriel och Amelia förklarar hur dessa faktorer är sammanflätade men ändå skiljer sig åt i stabilitet och förutsägbarhet. Amelia ger exempel från EU där politiska beslut snabbt kan förändras, vilket skapar utmaningar för företag som måste anpassa sig till nya regelverk.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk genomgång av Safesprings digitala infrastruktur och hur den kan stödja era applikationer." >}}
 
 {{< distance >}}
 

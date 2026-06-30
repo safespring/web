@@ -43,7 +43,7 @@ In this section, Amelia Andersdotter, Head of Risk and Compliance at Safespring,
 
 Amelia and Gabriel highlight various aspects of logical security, including encryption, data storage, and redundant systems that protect data even in the event of physical failures. They also discuss modern techniques such as containerization and confidential computing, which protect data both in use and at rest, reducing the risk of unauthorized access.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book a demo with Gabriel" link="/demo/compute/" linktext="Book a demo" text="Speak directly with our cloud architect Gabriel about how your application can be built on Safespring's digital infrastructure." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Watch demo" link="/demo/compute/" linktext="Watch demo" text="Watch a practical walkthrough of the Safespring cloud platform and how it can support your applications." >}}
 
 {{< distance >}}
 

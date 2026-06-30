@@ -43,7 +43,7 @@ I denne delen diskuterer Amelia Andersdotter, ansvarlig for risiko og etterlevel
 
 Amelia og Gabriel belyser ulike aspekter ved logisk sikkerhet, inkludert kryptering, datalagring og redundante systemer som beskytter data selv ved fysiske feil. De diskuterer også moderne teknikker som containerisering og konfidensiell databehandling, som beskytter data både under behandling og i hvile, noe som reduserer risikoen for uautorisert tilgang.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Bestill en demo med Gabriel" link="/demo/compute/" linktext="Bestill demo" text="Snakk direkte med vår skyarkitekt Gabriel om hvordan applikasjonen deres kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gjennomgang av Safesprings skyplattform og hvordan den kan støtte applikasjonene deres." >}}
 
 {{< distance >}}
 

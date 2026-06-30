@@ -12,14 +12,14 @@ intro: "Denne serien gir en strukturert rekke med dyptgående veiledninger, rett
 partner: ""
 audience: "programvare som en tjeneste"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Planlegg en videosamtale"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakt oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Episode"
 ---
-# Bestill en privat demo
+# Kontakt oss
 
 {{< ingress >}}
 Hvorfor velge en svensk IaaS-leverandør som ivaretar strenge krav til dataetterlevelse for programvareløsningene dine?
@@ -27,13 +27,13 @@ Hvorfor velge en svensk IaaS-leverandør som ivaretar strenge krav til dataetter
 
 Hos Safespring tilbyr vi en skytjeneste som støtter virksomhetens behov for operasjonell fleksibilitet, samtidig som vi ivaretar Sveriges krav til personvern og etterlevelse. Plattformen vår muliggjør effektiv utrulling, administrasjon og skalering av applikasjoner.
 
-### Dette kan du forvente av et møte med oss
+### Dette kan du forvente når du kontakter oss
 
 - Innsikt i våre skytjenester og løsninger tilpasset SaaS-selskaper
 - En gjennomgang av hvordan plattformen vår kan støtte virksomhetens digitale transformasjon
 - Veiledning i å optimalisere skystrategien din slik at den bedre passer virksomhetens spesifikke behov
 
-{{< localbutton text="Bestill demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakt oss" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

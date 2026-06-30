@@ -11,7 +11,7 @@ socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Se videoserie i sju delar"
 sidebarlinkurl: "/webinar/kubernetes-15-principles/"
 sidebarlinkname2: "Se demo"
-sidebarlinkurl2: "/demo/compute/"
+sidebarlinkurl2: "/demo/kubernetes/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: "Elastisys bygger Welkin på Safespring Compute och ger kunder en säker Kubernetes-plattform på nordisk infrastruktur."
 aliases:

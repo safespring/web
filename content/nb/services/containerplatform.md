@@ -162,7 +162,7 @@ Bruk kalkulatoren som startpunkt for en dimensjoneringsdialog. Den summerer admi
 
 ## Vil du se hvordan plattformen fungerer i praksis?
 
-Book en kort gjennomgang med en cloud architect. Vi kan vise hvordan cluster opprettes, hvordan ansvarsfordelingen ser ut, og hvordan tjenesten passer kravene deres til drift, sikkerhet og compliance.
+Kontakt oss for en kort gjennomgang med en cloud architect. Vi kan vise hvordan cluster opprettes, hvordan ansvarsfordelingen ser ut, og hvordan tjenesten passer kravene deres til drift, sikkerhet og compliance.
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakt oss" alt="Fredric Wallsten på Safespring" %}}
 

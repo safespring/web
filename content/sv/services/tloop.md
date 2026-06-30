@@ -10,7 +10,7 @@ form: ""
 sidebarlinkname: "Läs om Private Cloud"
 sidebarlinkurl: "/tjanster/managed-infrastructure"
 sidebarlinkname2: "Se demo"
-sidebarlinkurl2: "/demo/compute"
+sidebarlinkurl2: "/demo/compute/"
 socialmedia: ""
 devops: ""
 aliases:

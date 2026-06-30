@@ -45,4 +45,4 @@ Oppdag hver episode i serien vår, og lær mer om de spesifikke sikkerhetsutford
 6. **Bærekraftig sikkerhet:**
    Utforsk hvordan bærekraftsprinsipper kan integreres i sikkerhetsstrategien din for å redusere miljøpåvirkningen samtidig som du beskytter data.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Bestill demo med Gabriel" link="/demo/compute/" linktext="Bestill demo" text="Snakk direkte med vår skyarkitekt Gabriel om hvordan applikasjonen deres kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gjennomgang av Safesprings skyplattform og hvordan den kan støtte applikasjonene deres." >}}

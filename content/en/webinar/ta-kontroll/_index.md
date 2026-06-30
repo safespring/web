@@ -45,4 +45,4 @@ Discover each episode in our series and learn more about the specific security c
 6. **Sustainable security:**
    Explore how sustainability principles can be integrated into your security strategy to reduce environmental impact while protecting data.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book a demo with Gabriel" link="/demo/compute/" linktext="Book a demo" text="Talk directly with our Cloud Architect Gabriel about how your application can be built on Safespring’s digital infrastructure." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Watch demo" link="/demo/compute/" linktext="Watch demo" text="Watch a practical walkthrough of the Safespring cloud platform and how it can support your applications." >}}

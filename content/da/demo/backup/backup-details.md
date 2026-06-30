@@ -12,8 +12,8 @@ card: "/img/webinar/thumbnails/demo-backup-2.webp"
 eventbild: ""
 socialmediabild: ""
 intro: "En teknisk dybdegående gennemgang af Safespring Backup med fokus på automatiserede gendannelsestests, API-integration og moderne infrastruktur."
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Book en videosamtale"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakt os"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -52,11 +52,11 @@ I denne tekniske dybdegennemgang gennemgår vi Safespring Backup med fokus på, 
 
 I videoen forklarer Gabriel og Christian detaljeret, hvordan Safespring Backup håndterer off-site-backups, gennemfører automatiserede tests for at verificere datas læsbarhed samt optimerer gendannelsesprocessen. De demonstrerer, hvordan API-styret integration muliggør skalerbarhed, omkostningsrapportering og håndtering af både traditionelle servere og moderne containerløsninger.
 
-### Book et møde med Gabriel
+### Spørg os om Safespring Backup
 
-Book et videomøde og stil dine spørgsmål direkte til Gabriel! Vælg et tidspunkt via linket nedenfor eller send en mail til hello@safespring.com
+Send dine spørgsmål via formularen, eller send en mail til hello@safespring.com
 
-{{< localbutton text="Book videomøde" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Kontakt os" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

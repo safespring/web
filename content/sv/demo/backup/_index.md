@@ -12,14 +12,14 @@ intro: "Safesprings Backup har inbyggt skydd mot ransomware och en portal där n
 partner: ""
 audience: "programvara som en tjänst"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Boka videomöte"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakta oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "osynlig"
 toc: "Avsnitt"
 ---
-## Boka in ett möte med Gabriel!
+## Kontakta oss
 
 {{< ingress >}}
 Varför välja en svensk IaaS-leverantör som upprätthåller strikta krav på dataskydd och efterlevnad för dina programvarulösningar?
@@ -27,13 +27,13 @@ Varför välja en svensk IaaS-leverantör som upprätthåller strikta krav på d
 
 På Safespring erbjuder vi en molntjänst som stödjer din verksamhets behov av operativ flexibilitet, samtidigt som vi värnar om Sveriges krav på dataskydd och regelefterlevnad. Vår plattform möjliggör effektiv driftsättning, hantering och skalning av applikationer.
 
-### Det här kan du förvänta dig av ett möte med oss
+### Det här kan du förvänta dig när du kontaktar oss
 
 - Insikter i våra molntjänster och lösningar anpassade för SaaS-företag
 - En genomgång av hur vår plattform kan stödja ditt företags digitala transformation
 - Vägledning för att optimera din molnstrategi så att den bättre passar dina specifika verksamhetsbehov
 
-{{< localbutton text="Boka en demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakta oss" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

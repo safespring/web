@@ -43,7 +43,7 @@ I denne delen diskuterer Gabriel Paues, skyarkitekt hos Safespring, og Amelia An
 
 Samtalen starter med en diskusjon om sammenhengen mellom politiske og juridiske usikkerheter. Gabriel og Amelia forklarer hvordan disse faktorene er sammenvevd, men likevel skiller seg i stabilitet og forutsigbarhet. Amelia gir eksempler fra EU der politiske beslutninger raskt kan endres, noe som skaper utfordringer for bedrifter som må tilpasse seg nye regelverk.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Bestill demo med Gabriel" link="/demo/compute/" linktext="Bestill demo" text="Snakk direkte med vår skyarkitekt Gabriel om hvordan applikasjonen deres kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gjennomgang av Safesprings skyplattform og hvordan den kan støtte applikasjonene deres." >}}
 
 {{< distance >}}
 

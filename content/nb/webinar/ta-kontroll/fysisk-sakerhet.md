@@ -43,7 +43,7 @@ I denne seksjonen diskuterer Amelia Andersdotter, ansvarlig for risiko og etterl
 
 Amelia og Gabriel utforsker hvordan sertifiseringer som ISO 27001 kan verifisere at underleverandører oppfyller høye standarder for fysisk sikkerhet. De diskuterer også hvordan fysisk sikkerhet fungerer som en grunnpilar for databeskyttelse i skybaserte miljøer, der både fysisk og logisk beskyttelse må virke sammen for å skape en robust sikkerhetsstruktur.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book demo med Gabriel" link="/demo/compute/" linktext="Book demo" text="Snakk direkte med vår skyearkitekt Gabriel om hvordan deres applikasjon kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gjennomgang av Safesprings skyplattform og hvordan den kan støtte applikasjonene deres." >}}
 
 {{< distance >}}
 

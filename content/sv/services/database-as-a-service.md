@@ -45,7 +45,7 @@ Databas-som-tjänst tar hand om allt, vilket ger dig tillgängliga databaser med
 
 Tjänsten byggs av vår partner Severalnines på Safespring. Att hantera en komplex, klustrad databasmiljö är en tidskrävande och ofta skrämmande uppgift. Med bara några enkla klick kan du distribuera ett fullt hanterat, lastbalanserat, högtillgängligt databaskluster för MySQL, MariaDB eller PostgreSQL som ger prestanda, drifttid och enkelhet.
 
-{{< 2calltoaction "Boka demo" "/demo" "Kontakta oss" "/kontakt" >}}
+{{< 2calltoaction "Se demo" "/demo/compute/" "Kontakta oss" "/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

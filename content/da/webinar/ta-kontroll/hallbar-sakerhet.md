@@ -43,7 +43,7 @@ I dette afsnit udforsker Gabriel Paues, cloudarkitekt hos Safespring, og Amelia 
 
 Diskussionen indledes med en definition af bæredygtighed i tekniske termer—ikke kun miljømæssig påvirkning, men også effektiv udnyttelse af ressourcer og langsigtede, bæredygtige investeringer i teknologi. Gabriel og Amelia understreger vigtigheden af at bruge cloudtjenester og moderne teknologier som containere for at reducere overflødig infrastruktur og øge systemernes effektivitet.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book en demo med Gabriel" link="/demo/compute/" linktext="Book en demo" text="Tal direkte med vores cloudarkitekt Gabriel om, hvordan jeres applikation kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gennemgang af Safesprings cloudplatform, og hvordan den kan understøtte jeres applikationer." >}}
 
 ### I dette afsnit
 

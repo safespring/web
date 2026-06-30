@@ -45,7 +45,7 @@ The dialogue begins with an overview of what legal security entails, specificall
 
 Amelia highlights various sources of legal requirements, including the EU level and the Swedish national level. She brings up specific examples such as the General Data Protection Regulation and the Patient Data Act. They also discuss the technical and practical challenges companies face when they must adapt to slow-moving legal changes, and the need for flexible IT infrastructures that can be adjusted when legal requirements change.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book a demo with Gabriel" link="/demo/compute/" linktext="Book a demo" text="Speak directly with our cloud architect Gabriel about how your application can be built on Safespring’s digital infrastructure." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Watch demo" link="/demo/compute/" linktext="Watch demo" text="Watch a practical walkthrough of the Safespring cloud platform and how it can support your applications." >}}
 
 {{< distance >}}
 

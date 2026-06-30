@@ -9,8 +9,8 @@ intro: "Powerful virtual servers with NVMe storage and an optimized network arch
 background: ""
 card: ""
 socialmedia: "sudo_dockyards_social_01.jpg"
-sidebarlinkname: "View demo"
-sidebarlinkurl: "/demo/compute/"
+sidebarlinkname: "Watch demo"
+sidebarlinkurl: "/demo/kubernetes/"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact.md"
 aliases:

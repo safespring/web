@@ -12,14 +12,14 @@ intro: "Safesprings Backup har innebygd beskyttelse mot ransomware og en portal 
 partner: ""
 audience: "programvare som en tjeneste"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Bestill videomøte"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakt oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Episode"
 ---
-## Bestill et møte med Gabriel!
+## Kontakt oss
 
 {{< ingress >}}
 Hvorfor velge en svensk IaaS-leverandør som etterlever strenge krav til data- og personvernregelverk for programvareløsningene dine?
@@ -27,13 +27,13 @@ Hvorfor velge en svensk IaaS-leverandør som etterlever strenge krav til data- o
 
 Hos Safespring tilbyr vi en skytjeneste som støtter virksomhetens behov for operasjonell fleksibilitet, samtidig som vi er forpliktet til Sveriges krav til personvern og etterlevelse. Vår plattform muliggjør effektiv utrulling, administrasjon og skalering av applikasjoner.
 
-### Hva du kan forvente av et møte med oss
+### Dette kan du forvente når du kontakter oss
 
 - Innsikt i våre skytjenester og løsninger tilpasset SaaS-selskaper
 - En gjennomgang av hvordan plattformen vår kan støtte virksomhetens digitale transformasjon
 - Veiledning i å optimalisere skystrategien din slik at den bedre passer dine spesifikke forretningsbehov
 
-{{< localbutton text="Bestill demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakt oss" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

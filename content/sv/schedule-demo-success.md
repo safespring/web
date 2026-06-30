@@ -1,15 +1,15 @@
 ---
 ai: true
-title: "Tack för att du bokade in en demo med Safespring"
+title: "Tack för att du kontaktar Safespring"
 language: "sv"
 date: 2024-08-20
 draft: false
-section: "Demo bokad"
-intro: "Tack för ditt intresse för Safespring, den pålitliga europeiska molnplattformen som uppfyller kraven i dataskyddslagstiftningen. Vi ser fram emot att visa hur våra lösningar kan stödja din verksamhet."
+section: "Kontakt"
+intro: "Tack för ditt intresse för Safespring. Vi återkommer så snart vi kan."
 background: "safespring-blue-fade2.svg"
 darkmode: "av"
 sidebarimage: "safespring-fredric.webp"
-sidebartext: "Jag heter Fredric Wallsten och jag kommer att vara din huvudsakliga kontaktperson på Safespring. Om du har några frågor inför vår demo, tveka inte att höra av dig."
+sidebartext: "Jag heter Fredric Wallsten och jag kommer att vara din huvudsakliga kontaktperson på Safespring. Om du har frågor är du välkommen att höra av dig direkt."
 sidebarphone: "076 629 25 02"
 sidebarmail: "fredric.wallsten@safespring.com"
 socialmedia: ""
@@ -19,12 +19,13 @@ sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/contact.md"
 saas: ""
 noindex: "ja"
+slug: "contact-thanks"
 aliases:
   - /container-thanks/
   - /schedule-demo-success/
 ---
 {{< ingress >}}
-Din demo har bokats! Vi ser fram emot att träffa dig och visa hur Safespring kan stärka din datainfrastruktur. Under tiden är du välkommen att utforska resurserna nedan för att lära dig mer om vad vi erbjuder.
+Tack. Vi har tagit emot din förfrågan och kontaktar dig. Under tiden är du välkommen att utforska resurserna nedan eller kontakta oss direkt via mail eller telefon.
 {{< /ingress >}}
 
 Safespring är en europeisk publik molnplattform byggd för att möta efterlevnadskraven inom EU. Med starkt fokus på digital suveränitet och öppna standarder erbjuder Safespring tjänster som virtuella servrar, lagring i stor skala och backup som tjänst. Våra datacenter i Sverige och Norge utgör en säker och beprövad plattform för myndigheter, datadrivna företag och akademin.

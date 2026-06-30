@@ -163,7 +163,7 @@ Använd kalkylatorn som startpunkt inför en dimensioneringsdialog. Den räknar 
 
 ## Vill du se hur plattformen fungerar i praktiken?
 
-Boka en kort genomgång med en cloud architect. Vi kan visa hur kluster skapas, hur ansvarsfördelningen ser ut och hur tjänsten passar era krav på drift, säkerhet och regelefterlevnad.
+Kontakta oss för en kort genomgång med en cloud architect. Vi kan visa hur kluster skapas, hur ansvarsfördelningen ser ut och hur tjänsten passar era krav på drift, säkerhet och regelefterlevnad.
 
 {{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss" %}}
 

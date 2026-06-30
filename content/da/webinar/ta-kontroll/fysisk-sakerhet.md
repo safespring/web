@@ -43,7 +43,7 @@ I dette afsnit diskuterer Amelia Andersdotter, ansvarlig for risiko og complianc
 
 Amelia og Gabriel undersøger, hvordan certificeringer som ISO 27001 kan verificere, at underleverandører opfylder høje standarder for fysisk sikkerhed. De drøfter også, hvordan fysisk sikkerhed fungerer som en grundpille for databeskyttelse i cloud-baserede miljøer, hvor både fysisk og logisk beskyttelse skal spille sammen for at skabe en robust sikkerhedsstruktur.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book en demo med Gabriel" link="/demo/compute/" linktext="Book en demo" text="Tal direkte med vores cloud-arkitekt Gabriel om, hvordan jeres applikation kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gennemgang af Safesprings cloudplatform, og hvordan den kan understøtte jeres applikationer." >}}
 
 {{< distance >}}
 

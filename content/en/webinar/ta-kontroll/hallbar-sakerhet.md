@@ -43,7 +43,7 @@ In this section, Gabriel Paues, Cloud Architect at Safespring, and Amelia Anders
 
 The discussion begins with a definition of sustainability in technical terms—not only environmental impact but also efficient use of resources and long-term sustainable investments in technology. Gabriel and Amelia emphasize the importance of using cloud services and modern technologies such as containers to reduce excess infrastructure and improve system efficiency.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book a demo with Gabriel" link="/demo/compute/" linktext="Book a demo" text="Speak directly with our cloud architect Gabriel about how your application can be built on Safespring’s digital infrastructure." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Watch demo" link="/demo/compute/" linktext="Watch demo" text="Watch a practical walkthrough of the Safespring cloud platform and how it can support your applications." >}}
 
 ### In this section
 

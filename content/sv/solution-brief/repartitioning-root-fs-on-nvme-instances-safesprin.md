@@ -6,8 +6,8 @@ draft: false
 tags: ["English"]
 intro: "Denna lösningsguide innehåller steg-för-steg-instruktioner om hur du partitionerar om rotfilsystemet på en NVMe-instans i l2-serien på Safesprings plattform."
 background: ""
-sidebarlinkname: "Möt en molnarkitekt"
-sidebarlinkurl: "/demo"
+sidebarlinkname: "Se demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 socialmedia: ""

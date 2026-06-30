@@ -43,7 +43,7 @@ In this section, Amelia Andersdotter, Head of Risk and Compliance at Safespring,
 
 Amelia and Gabriel explore how certifications such as ISO 27001 can verify that subcontractors meet high standards for physical security. They also discuss how physical security serves as a cornerstone of data protection in cloud-based environments, where both physical and logical safeguards must work together to create a robust security framework.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book a demo with Gabriel" link="/demo/compute/" linktext="Book a demo" text="Speak directly with our cloud architect Gabriel about how your application can be built on Safespring's digital infrastructure." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Watch demo" link="/demo/compute/" linktext="Watch demo" text="Watch a practical walkthrough of the Safespring cloud platform and how it can support your applications." >}}
 
 {{< distance >}}
 

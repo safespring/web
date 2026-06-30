@@ -12,14 +12,14 @@ intro: "Den här serien erbjuder en strukturerad uppsättning djupgående guider
 partner: ""
 audience: "SaaS"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Schemalägg ett videosamtal"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakta oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "osynlig"
 toc: "Avsnitt"
 ---
-# Boka en privat demo
+# Kontakta oss
 
 {{< ingress >}}
 Varför välja en svensk IaaS-leverantör som upprätthåller strikta krav på dataskydd och regelefterlevnad för dina programvarulösningar?
@@ -27,13 +27,13 @@ Varför välja en svensk IaaS-leverantör som upprätthåller strikta krav på d
 
 Hos Safespring erbjuder vi en molntjänst som stödjer ditt företags behov av operativ flexibilitet samtidigt som vi är fullt ut engagerade i att uppfylla Sveriges krav på dataskydd och regelefterlevnad. Vår plattform möjliggör effektiv driftsättning, hantering och skalning av applikationer.
 
-### Det här kan du förvänta dig av ett möte med oss
+### Det här kan du förvänta dig när du kontaktar oss
 
 - Insikter i våra molntjänster och lösningar anpassade för SaaS-företag
 - En genomgång av hur vår plattform kan stödja ditt företags digitala transformation
 - Vägledning i hur du optimerar din molnstrategi så att den bättre passar dina specifika verksamhetsbehov
 
-{{< localbutton text="Boka demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakta oss" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

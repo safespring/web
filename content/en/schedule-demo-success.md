@@ -1,14 +1,14 @@
 ---
-title: "Thank You for Scheduling a Demo with Safespring"
+title: "Thank you for contacting Safespring"
 language: "en"
 date: 2024-08-20
 draft: false
-section: "Demo Scheduled"
-intro: "Thank you for your interest in Safespring, the trusted European cloud platform that meets data protection laws. We’re excited to show you how our solutions can support your business."
+section: "Contact"
+intro: "Thank you for your interest in Safespring. We will get back to you as soon as we can."
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
 sidebarimage: "safespring-fredric.webp"
-sidebartext: "My name is Fredric Wallsten, and I’ll be your main contact at Safespring. If you have any questions before our demo, feel free to reach out."
+sidebartext: "My name is Fredric Wallsten, and I’ll be your main contact at Safespring. If you have any questions, feel free to reach out directly."
 sidebarphone: "076 629 25 02"
 sidebarmail: "fredric.wallsten@safespring.com"
 socialmedia: ""
@@ -18,13 +18,14 @@ sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact"
 saas: ""
 noindex: "yes"
+slug: "contact-thanks"
 aliases:
   - /container-thanks/
   - /schedule-demo-success/
 ---
 
 {{< ingress >}}
-Your demo has been successfully scheduled! We’re looking forward to meeting with you and demonstrating how Safespring can enhance your data infrastructure. In the meantime, feel free to explore the resources below to learn more about what we offer.
+Thank you. We have received your request and will contact you. In the meantime, feel free to explore the resources below or contact us directly by email or phone.
 {{< /ingress >}}
 
 Safespring is a European public cloud platform built to meet compliance needs within the EU. With a strong focus on digital sovereignty and open standards, Safespring offers services like virtual servers, large-scale storage, and backup as a service. Our datacenters in Sweden and Norway provide a secure and proven platform for government bodies, data-driven companies, and the academic sector.

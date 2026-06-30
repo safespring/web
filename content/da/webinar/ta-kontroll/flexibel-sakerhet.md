@@ -44,7 +44,7 @@ I dette afsnit diskuterer Amelia Andersdotter, risiko- og complianceansvarlig ho
 
 De indleder med at forklare, hvordan moderne softwareudviklingsteknikker, såsom containerisering, giver applikationer mulighed for at køre uafhængigt af den underliggende hardware og infrastruktur. Gabriel understreger, hvordan containere kan reducere afhængigheden af specifikke operativsystemer og hardware-ressourcer, hvilket betyder, at opdateringer og vedligeholdelse kan udføres mere effektivt og med færre forstyrrelser.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Book en demo med Gabriel" link="/demo/compute/" linktext="Book en demo" text="Tal direkte med vores cloud-arkitekt Gabriel om, hvordan jeres applikation kan bygges på Safesprings digitale infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Se en praktisk gennemgang af Safesprings cloudplatform, og hvordan den kan understøtte jeres applikationer." >}}
 
 {{< distance >}}
 

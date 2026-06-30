@@ -10,7 +10,7 @@ background: ""
 card: ""
 socialmedia: "sudo_dockyards_social_01.jpg"
 sidebarlinkname: "Se demo"
-sidebarlinkurl: "/demo/compute/"
+sidebarlinkurl: "/demo/kubernetes/"
 sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/kontakt"
 aliases:

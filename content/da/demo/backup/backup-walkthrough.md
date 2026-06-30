@@ -12,8 +12,8 @@ card: "/img/webinar/thumbnails/demo-backup-3.webp"
 eventbild: ""
 socialmediabild: ""
 intro: "Vi gennemgår Safespring Backup i denne hands-on-video – en demo, der viser vores backup som en tjeneste"
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Book en videosamtale"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakt os"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -49,11 +49,11 @@ Vi gennemgår Safespring Backup i denne hands-on video – en demo, der viser, h
 
 I videoen forklarer Gabriel, hvordan du rent praktisk går til værks for at oprette sikkerhedskopier, hierarkier og kontrollere tilstanden af dine beskyttede data.
 
-### Book et møde med Gabriel
+### Spørg os om Safespring Backup
 
-Book et videomøde og stil dine spørgsmål direkte til Gabriel! Du vælger nemt et tidspunkt via linket nedenfor eller sender en mail til hello@safespring.com
+Send dine spørgsmål via formularen, eller send en mail til hello@safespring.com
 
-{{< localbutton text="Book videomøde" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Kontakt os" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

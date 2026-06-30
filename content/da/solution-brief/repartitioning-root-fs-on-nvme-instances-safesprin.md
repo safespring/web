@@ -6,8 +6,8 @@ draft: false
 tags: ["English"]
 intro: "Dette løsningsnotat giver en trin-for-trin-vejledning i, hvordan man ompartitionerer root-filsystemet på en NVMe-instans i l2-serien på Safesprings platform."
 background: ""
-sidebarlinkname: "Mød en cloud-arkitekt"
-sidebarlinkurl: "/demo"
+sidebarlinkname: "Se demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: ""
 sidebarlinkurl2: ""
 socialmedia: ""

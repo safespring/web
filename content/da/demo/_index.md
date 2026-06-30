@@ -8,11 +8,11 @@ section: "Offentlig cloud"
 intro: "Lær, hvordan Safespring kan understøtte jeres forretningsdrift med en demonstration af vores cloudplatform."
 background: "safespring-blue-fade2.svg"
 darkmode: "fra"
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Planlæg en videochat"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakt os"
 sidebarlinkicon: "fa fa-arrow-up-right-from-square"
 ---
-# Book en privat demo
+# Kontakt os
 
 {{< ingress >}}
 Hvorfor vælge en svensk IaaS-udbyder, der opretholder strenge standarder for overholdelse af datalovgivningen for dine softwareløsninger?
@@ -20,7 +20,7 @@ Hvorfor vælge en svensk IaaS-udbyder, der opretholder strenge standarder for ov
 
 Hos Safespring leverer vi en cloudtjeneste, der understøtter din virksomheds behov for driftsmæssig fleksibilitet, samtidig med at vi lever op til Sveriges krav til databeskyttelse og compliance. Vores platform muliggør effektiv udrulning, administration og skalering af applikationer.
 
-### Det kan du forvente af et møde med os
+### Det kan du forvente, når du kontakter os
 
 - Indblik i vores cloudtjenester og løsninger skræddersyet til SaaS-virksomheder
 - En gennemgang af, hvordan vores platform kan understøtte din virksomheds digitale transformation
@@ -28,4 +28,4 @@ Hos Safespring leverer vi en cloudtjeneste, der understøtter din virksomheds be
 
 {{< distance >}}
 
-{{< localbutton text="Book en demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakt os" link="/kontakt/#contact-form" >}}

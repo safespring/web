@@ -10,7 +10,7 @@ cardintro: ""
 background: ""
 form: ""
 sidebarimage: ""
-sidebarlinkname: "See demo"
+sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact.md"
@@ -86,8 +86,8 @@ NTT Security provides the Samurai MDR service, ensuring your company has access 
 
 With Samurai MDR on Safespring's cloud platform, you get a combination of NTT Security's advanced cybersecurity and Safespring's reliable infrastructure, built on open standards and offering digital sovereignty.
 
-## Book a demo
+## Watch demo
 
-Let us guide you through the benefits of Samurai MDR. Contact us today to schedule a demo.
+Watch a demo of Safespring's platform and contact us if you want to discuss Samurai MDR further.
 
-{{< localbutton text="Book a demo" link="/demo" >}}
+{{< localbutton text="Watch demo" link="/demo/compute/" >}}
