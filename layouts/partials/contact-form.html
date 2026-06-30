@@ -23,7 +23,14 @@
 
   .contact-form .form-field {
     position: relative;
+    width: 100%;
     margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .contact-form .column-two {
+    width: 100%;
+    align-items: stretch;
   }
 
   .contact-form .column-two > .form-field {
@@ -58,6 +65,8 @@
     border: solid 0.5px var(--main-color);
     border-radius: 100px;
     box-sizing: border-box;
+    display: block;
+    max-width: none;
     font-size: 16px;
     color: var(--main-color);
     padding: 15px 25px;
@@ -160,6 +169,7 @@
   }
 
   .contact-form .iti input[type="tel"] {
+    width: 100%;
     padding-left: 88px;
   }
 
@@ -177,7 +187,9 @@
     margin: 10px 0;
     position: relative;
     border-radius: 50px;
-    max-width: 300px;
+    width: 100%;
+    max-width: none !important;
+    box-sizing: border-box;
   }
 
   .contact-form .inputGroup label {
@@ -192,7 +204,9 @@
     transition: color 200ms ease-in;
     overflow: hidden;
     border-radius: 50px;
-    max-width: 300px;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
     font-family: var(--hind-font);
     font-size: 17px;
     font-weight: var(--heavy-weight);
