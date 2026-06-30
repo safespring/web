@@ -16,6 +16,13 @@ pageimage: ""
 
 {{< distance >}}
 
+### Write to us
+Fill in the form if you want us to get back to you. You can also always email or call directly.
+
+{{< contact-form >}}
+
+{{< distance >}}
+
 ### Our Team
 Here you can find contact information for some of our team members. Don't hesitate to get in touch if you have any questions or need assistance with anything specific.
 

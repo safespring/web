@@ -3,16 +3,16 @@ title: "Talk to a cloud architect about compliant European cloud infrastructure"
 language: "En"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-section: "Book demo"
-intro: "Book a short session with Safespring to see how our Nordic cloud platform can support regulated workloads, data sovereignty, and modern infrastructure needs."
+section: "Watch demo"
+intro: "Watch Safespring demos to see how our Nordic cloud platform supports regulated workloads, data sovereignty, and modern infrastructure needs. Contact us when you want to discuss your use case."
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
 card: ""
 socialmedia: ""
 sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/compute/"
-sidebarlinkname2: "Schedule demo"
-sidebarlinkurl2: "#contact"
+sidebarlinkname2: "Contact us"
+sidebarlinkurl2: "#contact-form"
 sidebarsection: ""
 sidebarimage: ""
 sidebartitle: ""
@@ -29,7 +29,7 @@ aliases: ""
 Get a practical walkthrough of Safespring’s cloud platform and discuss how it can fit your organisation’s technical, compliance, and operational requirements.
 {{< /ingress >}}
 
-Safespring provides cloud infrastructure operated from Sweden and Norway, built for organisations that need control, transparency, and compliance within Europe. In the demo, one of our cloud experts will walk you through relevant services and help map them to your use case.
+Safespring provides cloud infrastructure operated from Sweden and Norway, built for organisations that need control, transparency, and compliance within Europe. When you contact us, one of our cloud experts can walk you through relevant services and help map them to your use case.
 
 ### What's included
 
@@ -40,4 +40,4 @@ Safespring provides cloud infrastructure operated from Sweden and Norway, built 
 
 {{< distance >}}
 
-{{< boka-demo-en >}}
+{{< contact-form >}}

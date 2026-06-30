@@ -4,8 +4,8 @@ metatitle: "Run a local LLM with Ollama on Safespring GPU instances"
 intro: "Set up NVIDIA drivers, Ollama and Open-WebUI on an Ubuntu GPU instance in Safespring to run a local LLM with browser access and full data control."
 sidebarlinkname: "Explore AI and GPU"
 sidebarlinkurl: "/en/services/machine-learning-ai-gpu-resources/"
-sidebarlinkname2: "Book demo"
-sidebarlinkurl2: "/en/contact/"
+sidebarlinkname2: "Watch demo"
+sidebarlinkurl2: "/demo/kubernetes/"
 date: 2025-12-16
 draft: false
 tags: ["container"]

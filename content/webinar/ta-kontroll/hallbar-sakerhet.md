@@ -42,7 +42,7 @@ I detta avsnitt utforskar Gabriel Paues, molnarkitekt på Safespring, och Amelia
 
 Diskussionen inleds med en definition av hållbarhet i tekniska termer—inte bara miljömässig påverkan utan också effektiv användning av resurser och långsiktigt hållbara investeringar i teknik. Gabriel och Amelia betonar vikten av att använda molntjänster och moderna teknologier som containrar för att minska överflödig infrastruktur och öka systemens effektivitet.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Boka demo med Gabriel" link="/demo/compute/" linktext="Boka demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
 
 
 ### I detta avsnitt

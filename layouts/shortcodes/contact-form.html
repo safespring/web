@@ -1,0 +1,67 @@
+{{ $path := .Page.File.Path }}
+{{ $pageLang := lower (default "" .Page.Params.language) }}
+{{ $lang := "sv" }}
+{{ if or (hasPrefix $path "en/") (eq $pageLang "en") }}
+  {{ $lang = "en" }}
+{{ else if or (hasPrefix $path "no/") (eq $pageLang "no") (eq $pageLang "nb") }}
+  {{ $lang = "no" }}
+{{ end }}
+{{ $copy := dict
+  "firstName" "First name"
+  "lastName" "Last name"
+  "phone" "Phone"
+  "email" "Email"
+  "organization" "Organisation"
+  "termsPrefix" "I accept"
+  "termsText" "the personal data terms"
+  "termsUrl" "/dokument/personuppgiftshantering-en/"
+  "submit" "Contact me"
+  "acceptAlert" "You must accept our terms and conditions"
+  "successUrl" "/contact-thanks/"
+}}
+{{ if eq $lang "sv" }}
+  {{ $copy = dict
+    "firstName" "Förnamn"
+    "lastName" "Efternamn"
+    "phone" "Telefon"
+    "email" "E-post"
+    "organization" "Organisation"
+    "termsPrefix" "Jag accepterar"
+    "termsText" "personuppgiftshanteringen"
+    "termsUrl" "/dokument/personuppgiftshantering/"
+    "submit" "Bli kontaktad"
+    "acceptAlert" "Du måste acceptera våra villkor"
+    "successUrl" "/contact-thanks/"
+  }}
+{{ else if eq $lang "no" }}
+  {{ $copy = dict
+    "firstName" "Fornavn"
+    "lastName" "Etternavn"
+    "phone" "Telefon"
+    "email" "E-post"
+    "organization" "Organisasjon"
+    "termsPrefix" "Jeg aksepterer"
+    "termsText" "behandlingen av personopplysninger"
+    "termsUrl" "/dokument/personuppgiftshantering-no/"
+    "submit" "Bli kontaktet"
+    "acceptAlert" "Du må akseptere vilkårene"
+    "successUrl" "/contact-thanks/"
+  }}
+{{ end }}
+
+<p id="contact-form"></p>
+
+{{ partial "contact-form.html" (dict
+  "page" .Page
+  "firstName" $copy.firstName
+  "lastName" $copy.lastName
+  "phone" $copy.phone
+  "email" $copy.email
+  "organization" $copy.organization
+  "termsPrefix" $copy.termsPrefix
+  "termsText" $copy.termsText
+  "termsUrl" $copy.termsUrl
+  "submit" $copy.submit
+  "acceptAlert" $copy.acceptAlert
+  "successUrl" $copy.successUrl
+) }}

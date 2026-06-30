@@ -11,8 +11,8 @@ intro: 'Safesprings Backup har inbyggt skydd för ransomware och en portal där 
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Boka videomöte"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakta oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "invisible"
@@ -20,7 +20,7 @@ toc: "Episode"
 ---
 
 
-# Boka in ett möte med Gabriel!
+# Kontakta oss
 
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?
@@ -36,7 +36,7 @@ At Safespring, we provide a cloud service that supports your business's need for
 
 
 
-{{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Kontakta oss" target="_blank" link="/kontakt/#contact-form" icon="fa-up-right-from-square" >}}
 
 {{< distance >}}
 

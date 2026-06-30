@@ -16,8 +16,8 @@ author: "Anders Johansson"
 TOC: "In this post"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Explore Kubernetes Engine"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Book demo"
+sidebarlinkurl2: "/demo/kubernetes/"
+sidebarlinkname2: "Watch demo"
 ---
 
 ## TL;DR

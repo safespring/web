@@ -11,8 +11,8 @@ intro: 'This series offers a structured sequence of in-depth tutorials aimed at 
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Schedule a video chat"
+sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
 nosidebar: "invisible"
@@ -20,7 +20,7 @@ toc: "Episode"
 ---
 
 
-# Schedule a private demo
+# Contact us
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?
 {{< /ingress >}}
@@ -35,7 +35,7 @@ At Safespring, we provide a cloud service that supports your business's need for
 
 
 
-{{< localbutton text="Schedule demo" target="_blank" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Contact us" target="_blank" link="/contact/#contact-form" icon="fa-up-right-from-square" >}}
 
 {{< distance >}}
 

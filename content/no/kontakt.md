@@ -16,6 +16,13 @@ pageimage: ""
 
 {{< distance >}}
 
+### Skriv til oss
+Fyll ut skjemaet hvis du vil at vi skal kontakte deg. Du kan også alltid sende e-post eller ringe direkte.
+
+{{< contact-form >}}
+
+{{< distance >}}
+
 ### Våre ansatte
 Her finner du kontaktinformasjon til noen av våre ansatte. Ikke nøl med å ta kontakt hvis du har spørsmål eller trenger hjelp med noe spesifikt.
 
