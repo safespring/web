@@ -7,7 +7,7 @@ background: ""
 sidebarlinkname: "Kontakta Safespring"
 sidebarlinkurl: "/kontakt/"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 language: "sv"
 TOC: "På denna sida"
 ---

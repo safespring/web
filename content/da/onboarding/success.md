@@ -9,7 +9,7 @@ background: ""
 sidebarlinkname: "Opret endnu en konto"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 aliases:
   - /onboarding/success/
 ---

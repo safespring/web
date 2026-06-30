@@ -17,7 +17,7 @@ sidebarlinkurl: "/services/containerplatform.md"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact"
 saas: ""
-noindex: "yes"
+noindex: true
 slug: "contact-thanks"
 aliases:
   - /container-thanks/

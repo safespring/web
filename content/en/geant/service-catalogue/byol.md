@@ -17,7 +17,7 @@ section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 nosidebar: ""
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/byol/
 ---

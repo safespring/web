@@ -8,7 +8,7 @@ background: ""
 sidebarlinkname: "Skapa konto"
 sidebarlinkurl: "#form"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 language: "sv"
 aliases:
     - /create-account

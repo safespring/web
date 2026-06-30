@@ -9,5 +9,5 @@ socialmedia: "/safespring-start.jpg"
 nosidebar: "none"
 fullwidth: "x"
 nolist: ""
-noindex: "x"
+noindex: true
 ---

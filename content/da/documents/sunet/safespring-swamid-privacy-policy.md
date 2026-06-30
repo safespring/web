@@ -9,7 +9,7 @@ dokumentbild: "safespring_card_0.jpg"
 sidebarlinkname: "Hent PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring-swamid-privacy-policy.pdf"
-noindex: "noindex"
+noindex: true
 aliases:
   - /dokument/sunet/safespring-swamid-privacy-policy/
 ---

@@ -20,7 +20,7 @@ section: "OCRE 2024-rammeaftale"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
 nosidebar: ""
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/courses/
 ---

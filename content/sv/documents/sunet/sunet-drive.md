@@ -12,7 +12,7 @@ dokumentbild: "safespring_card_42.jpg"
 sidebarlinkname: "Ladda ner som PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring_solution-brief_sunet-drive.pdf"
-noindex: ""
+noindex: true
 toc: "Innehållsförteckning"
 aliases:
   - /dokument/sunet/sunet-drive/

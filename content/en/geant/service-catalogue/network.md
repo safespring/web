@@ -18,7 +18,7 @@ sidebarlinkurl2: "/geant/price/#network"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/network/
 ---

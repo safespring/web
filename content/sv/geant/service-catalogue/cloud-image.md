@@ -17,7 +17,7 @@ sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/cloud-image/
 ---

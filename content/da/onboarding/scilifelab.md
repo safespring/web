@@ -8,7 +8,7 @@ background: ""
 sidebarlinkname: "Opret konto"
 sidebarlinkurl: "#form"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 language: "da"
 aliases:
     - /create-account

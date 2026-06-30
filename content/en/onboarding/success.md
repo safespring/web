@@ -8,7 +8,7 @@ background: ""
 sidebarlinkname: "Create another account"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 aliases:
   - /onboarding/success/
 ---

@@ -17,7 +17,7 @@ sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "OCRE 2024-rammeaftale"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne side"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/api/
 ---

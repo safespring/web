@@ -19,7 +19,7 @@ sidebarlinkurl2: "/geant/price/#network"
 section: "OCRE-rammeverk for 2024"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/network/
 ---

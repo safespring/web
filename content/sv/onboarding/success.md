@@ -9,7 +9,7 @@ background: ""
 sidebarlinkname: "Skapa ett annat konto"
 sidebarlinkurl: "/onboarding/new-account/"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 aliases:
   - /onboarding/success/
 ---

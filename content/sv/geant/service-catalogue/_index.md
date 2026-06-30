@@ -10,7 +10,7 @@ socialmedia: "/safespring-start.jpg"
 nosidebar: "ingen"
 fullwidth: "x"
 nolist: "x"
-noindex: ""
+noindex: true
 url: "/geant/service-catalogue/"
 ---
 {{< geant-service-catalogue >}}

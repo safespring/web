@@ -10,5 +10,5 @@ socialmedia: "/safespring-start.jpg"
 nosidebar: "ingen"
 fullwidth: "x"
 nolist: ""
-noindex: "x"
+noindex: true
 ---

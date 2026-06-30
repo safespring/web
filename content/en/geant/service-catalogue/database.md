@@ -16,7 +16,7 @@ sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "OCRE 2024 framework"
 socialmedia: "/safespring-start.jpg"
 toc: "On this page"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/database/
 ---

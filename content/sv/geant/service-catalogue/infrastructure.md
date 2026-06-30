@@ -19,7 +19,7 @@ sidebarlinkurl2: "/geant/price/#safespring-compute"
 section: "Ramverket OCRE 2024"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/infrastructure/
 ---

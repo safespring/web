@@ -18,7 +18,7 @@ section: "OCRE 2024-ramverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 nosidebar: ""
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/professional-services/
 ---

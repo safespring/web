@@ -20,7 +20,7 @@ section: "OCRE 2024-rammeverk"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
 nosidebar: ""
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/support/
 ---

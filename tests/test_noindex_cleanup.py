@@ -1,0 +1,63 @@
+import re
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+
+
+NOINDEX_META = re.compile(r'<meta\s+name=["\']?robots["\']?\s+content=["\']?noindex["\']?')
+
+
+class NoindexCleanupTest(unittest.TestCase):
+    def test_noindex_meta_and_sitemap_only_for_intended_pages(self):
+        repo_root = Path(__file__).resolve().parents[1]
+
+        intended_noindex_pages = {
+            "en/documents/sunet-drive-file-sync-and-share-solution/index.html": "https://beta.safespring.eu/documents/sunet-drive-file-sync-and-share-solution/",
+            "en/schedule-demo-success/index.html": "https://beta.safespring.eu/en/schedule-demo-success/",
+            "en/onboarding/success/index.html": "https://beta.safespring.eu/en/onboarding/success/",
+            "en/geant/index.html": "https://beta.safespring.eu/geant/",
+            "en/documents/safespring-swamid-privacy-policy/index.html": "https://beta.safespring.eu/documents/safespring-swamid-privacy-policy/",
+            "en/onboarding/safespring-onboarding/index.html": "https://beta.safespring.eu/onboarding/safespring-onboarding/",
+        }
+        intended_indexable_pages = {
+            "en/services/index.html": "https://beta.safespring.eu/services/",
+        }
+
+        with tempfile.TemporaryDirectory() as output_dir:
+            subprocess.run(
+                ["hugo", "--destination", output_dir, "--quiet"],
+                cwd=repo_root,
+                check=True,
+            )
+
+            output_root = Path(output_dir)
+            sitemap = (output_root / "en/sitemap.xml").read_text(encoding="utf-8")
+
+            for page_path, page_url in intended_noindex_pages.items():
+                page = output_root / page_path
+                self.assertTrue(page.exists(), f"{page_path} should render")
+                self.assertRegex(page.read_text(encoding="utf-8"), NOINDEX_META)
+                self.assertNotIn(f"<loc>{page_url}</loc>", sitemap)
+
+            for page_path, page_url in intended_indexable_pages.items():
+                page = output_root / page_path
+                self.assertTrue(page.exists(), f"{page_path} should render")
+                self.assertNotRegex(page.read_text(encoding="utf-8"), NOINDEX_META)
+                self.assertIn(f"<loc>{page_url}</loc>", sitemap)
+
+    def test_all_content_noindex_frontmatter_is_boolean_true(self):
+        repo_root = Path(__file__).resolve().parents[1]
+
+        for path in sorted((repo_root / "content").rglob("*.md")):
+            for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+                if line.startswith("noindex:"):
+                    self.assertEqual(
+                        line,
+                        "noindex: true",
+                        f"{path.relative_to(repo_root)}:{line_number} should use boolean true",
+                    )
+
+
+if __name__ == "__main__":
+    unittest.main()

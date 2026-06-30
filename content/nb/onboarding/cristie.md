@@ -8,7 +8,7 @@ background: ""
 sidebarlinkname: "Opprett konto"
 sidebarlinkurl: "#form"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 language: "nb"
 aliases:
     - /create-account

@@ -9,7 +9,7 @@ dokumentbild: "safespring_card_0.jpg"
 sidebarlinkname: "Ladda ner PDF"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "/documents/sunet/safespring-sunet-private-cloud-security-controls.pdf"
-noindex: "indexera inte"
+noindex: true
 aliases:
   - /dokument/sunet/private-cloud-security-controls/
 ---

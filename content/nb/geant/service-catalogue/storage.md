@@ -19,7 +19,7 @@ sidebarlinkurl2: "/geant/price/#safespring-storage"
 section: "OCRE 2024-rammeverket"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
-noindex: "x"
+noindex: true
 aliases:
   - /geant/service-catalogue/storage/
 ---

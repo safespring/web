@@ -7,7 +7,7 @@ background: ""
 sidebarlinkname: "Create account"
 sidebarlinkurl: "#form"
 socialmedia: ""
-noindex: "yes"
+noindex: true
 language: "En"
 aliases:
     - /create-account

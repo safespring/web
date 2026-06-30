@@ -17,7 +17,7 @@ sidebarlinkurl: "/geant/service-catalogue/_index.md"
 section: "Rammeverk for OCRE 2024"
 socialmedia: "/safespring-start.jpg"
 toc: "På denne siden"
-noindex: "x"
+noindex: true
 layout: "redirect"
 redirecturl: "/tjenester/containerplattform/"
 aliases:

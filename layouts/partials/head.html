@@ -893,7 +893,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-    {{ if or .Params.noindex (eq .Section "internal") }}
+    {{ if or (eq .Params.noindex true) (eq .Section "internal") }}
       <meta name="robots" content="noindex, nofollow, noarchive" />
     {{ end }}
 
