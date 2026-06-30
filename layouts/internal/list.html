@@ -1,0 +1,71 @@
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" . }}
+
+<div class="heading-default-single" style="background: url({{ if .Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
+  <div style="max-width: 800px;">
+    <div class="section">
+      <a href="/internal/" style='{{ if .Params.cardcolor }}color: #5c5c5c;{{ end }}'>
+        {{ .Params.section | default "Internal" }}
+      </a>
+    </div>
+    <h1 class="balance-text" style="color: {{ if .Params.cardcolor }}{{ .Params.cardcolor }}{{ else }}var(--main-color){{ end }}">
+      {{ .Title }}
+    </h1>
+    {{ with .Params.intro }}
+    <p>{{ . }}</p>
+    {{ end }}
+  </div>
+  <div class="w250"></div>
+</div>
+
+<div class="flexcontainer-webinar-series-backplate">
+  <div class="webinar-scrolling-wrapper-flexbox">
+    {{ if eq .RelPermalink "/internal/" }}
+      {{ range .Pages }}
+        {{ if .IsSection }}
+          {{ .Render "series-summary" }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{ $sectionPage := . }}
+      {{ range sort .Pages "Params.episode" }}
+        {{ if not .IsSection }}
+          {{ if and $sectionPage.Params.chapterCards .Params.chapters }}
+            {{ $episodePage := . }}
+            {{ range $chapterIndex, $chapter := .Params.chapters }}
+              {{ partial "demo-chapter-card.html" (dict "Page" $episodePage "Chapter" $chapter "Number" (add $chapterIndex 1)) }}
+            {{ end }}
+          {{ else }}
+            {{ .Render "episode-summary" }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="scroll-controls">
+    <button id="scrollLeft" aria-label="Scroll left"><i class="fas fa-arrow-left"></i></button>
+    <button id="scrollRight" aria-label="Scroll right"><i class="fas fa-arrow-right"></i></button>
+  </div>
+  <script>
+    document.getElementById('scrollLeft').addEventListener('click', function () {
+      document.querySelector('.webinar-scrolling-wrapper-flexbox').scrollBy({ left: -150, behavior: 'smooth' });
+    });
+    document.getElementById('scrollRight').addEventListener('click', function () {
+      document.querySelector('.webinar-scrolling-wrapper-flexbox').scrollBy({ left: 150, behavior: 'smooth' });
+    });
+  </script>
+</div>
+
+<main class="main-default-single">
+  <div {{ if .Params.fullwidth }}class="content-default-single-full-width"{{ else }}class="content-default-single"{{ end }}>
+    {{ .Content }}
+  </div>
+  {{ if eq .Params.nosidebar "invisible" }}
+  <div class="w350"></div>
+  {{ end }}
+</main>
+
+{{ partial "footer.html" . }}
+</body>

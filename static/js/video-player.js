@@ -168,6 +168,8 @@
     var ccDefaultOnAttr = normalizeBool(root.getAttribute('data-cc-default-on'));
     var unmuteOnInteraction = normalizeBool(root.getAttribute('data-unmute-on-interaction')) === true;
     var unmuteOnPlay = normalizeBool(root.getAttribute('data-unmute-on-play')) === true;
+    var playerId = root.getAttribute('data-player-id') || root.id || '';
+    var useUrlTime = normalizeBool(root.getAttribute('data-url-time')) === true;
     var debugContext = {
       src: videoSrc,
       normalizedSrc: normalizedVideoSrc,
@@ -331,6 +333,94 @@
       }
       video.currentTime = ratio * video.duration;
       updateTimelineProgress();
+    }
+
+    function parseSeekTime(time) {
+      var parsedTime = Number(time);
+      return Number.isFinite(parsedTime) && parsedTime >= 0 ? parsedTime : null;
+    }
+
+    function getRequestedTime() {
+      var requestedTime = null;
+      if (window.URLSearchParams) {
+        var params = new URLSearchParams(window.location.search);
+        requestedTime = params.get('t') || params.get('time');
+      }
+      if (!requestedTime && window.location.hash) {
+        var hashMatch = window.location.hash.match(/(?:^#t=|[&?]t=)(\d+(?:\.\d+)?)/);
+        requestedTime = hashMatch ? hashMatch[1] : null;
+      }
+      return parseSeekTime(requestedTime);
+    }
+
+    function updateUrlTime(time) {
+      if (!window.history || !window.history.replaceState || !window.URL) {
+        return;
+      }
+      var url = new URL(window.location.href);
+      url.searchParams.set('t', Math.floor(time));
+      if (playerId) {
+        url.hash = playerId;
+      }
+      window.history.replaceState(null, '', url.toString());
+    }
+
+    function seekTo(time, options) {
+      var targetTime = parseSeekTime(time);
+      options = options || {};
+      if (targetTime === null) {
+        return Promise.resolve(false);
+      }
+
+      function applySeek(resolve) {
+        var duration = Number(video.duration);
+        if (Number.isFinite(duration) && duration > 0) {
+          targetTime = Math.min(targetTime, duration);
+        }
+        try {
+          video.currentTime = targetTime;
+        } catch (error) {
+          logPlaybackError(error);
+          resolve(false);
+          return;
+        }
+        updateTimelineProgress();
+        updateTimeText();
+        if (options.updateUrl && useUrlTime) {
+          updateUrlTime(targetTime);
+        }
+        if (options.play) {
+          var playResult = video.play();
+          if (playResult && playResult.catch) {
+            playResult.catch(function (error) {
+              logPlaybackError(error);
+            });
+          }
+        }
+        resolve(true);
+      }
+
+      return ensureVideoInitialized().then(function () {
+        return new Promise(function (resolve) {
+          if (video.readyState >= 1) {
+            applySeek(resolve);
+            return;
+          }
+          video.addEventListener('loadedmetadata', function () {
+            applySeek(resolve);
+          }, { once: true });
+          if (video.load) {
+            try {
+              video.load();
+            } catch (error) {
+              logPlaybackError(error);
+            }
+          }
+        });
+      }).catch(function (error) {
+        logPlaybackError(error);
+        return false;
+      });
     }
 
     function stopTimelineScrub() {
@@ -1038,6 +1128,29 @@
 
     hideTimeline();
     updateMuteButton();
+
+    var publicApi = {
+      seekTo: seekTo
+    };
+    root.__videoPlayer = publicApi;
+    if (playerId) {
+      window.videoPlayers = window.videoPlayers || {};
+      window.videoPlayers[playerId] = publicApi;
+    }
+    if (playerId === 'player') {
+      window.setCurrentTime = function (time) {
+        return publicApi.seekTo(time, {
+          play: true,
+          updateUrl: true
+        });
+      };
+    }
+    if (useUrlTime) {
+      var requestedTime = getRequestedTime();
+      if (requestedTime !== null) {
+        seekTo(requestedTime, { play: false });
+      }
+    }
   }
 
   function initAllVideoPlayers() {

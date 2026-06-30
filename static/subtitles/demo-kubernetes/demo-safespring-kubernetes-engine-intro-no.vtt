@@ -1,0 +1,792 @@
+WEBVTT
+
+00:00:00.884 --> 00:00:03.178
+Velkommen til denne
+presentasjonen av Safesprings
+
+00:00:03.178 --> 00:00:04.075
+selvbetjeningsportal.
+
+00:00:04.075 --> 00:00:06.764
+I denne portalen,
+
+00:00:06.834 --> 00:00:10.717
+kan du opprette og sette opp
+dine egne Kubernetes-klynger.
+
+00:00:10.717 --> 00:00:12.269
+La oss komme i gang.
+
+00:00:12.269 --> 00:00:14.131
+Du går til portalen via portal.
+
+00:00:14.131 --> 00:00:18.147
+safespring. com, der du har
+en knapp for innlogging.
+
+00:00:18.147 --> 00:00:20.959
+Som du ser nå, når jeg trykker på Sign in,
+
+00:00:20.959 --> 00:00:23.636
+blir jeg sendt til denne siden der
+jeg velger Continue with Safespring
+
+00:00:23.636 --> 00:00:24.079
+Provider.
+
+00:00:24.079 --> 00:00:27.178
+Akkurat nå er brukerøkten
+min mellomlagret, så
+
+00:00:27.178 --> 00:00:32.383
+det betyr at jeg blir logget inn direkte.
+
+00:00:32.383 --> 00:00:35.357
+Men hvis dette er første
+gang du gjør dette,
+
+00:00:35.357 --> 00:00:38.264
+kan du bli sendt videre til IdP-en som
+er koblet til portalen, der kontoen
+
+00:00:38.264 --> 00:00:43.942
+din finnes, og det er en
+del av onboarding-prosessen.
+
+00:00:43.942 --> 00:00:47.389
+La oss trykke på Continue
+with Safespring Provider,
+
+00:00:47.389 --> 00:00:50.634
+så får vi opp denne
+visningen med flere miljøer.
+
+00:00:50.674 --> 00:00:55.292
+Et miljø er en måte å
+gruppere ressursene dine på.
+
+00:00:55.292 --> 00:00:59.171
+I dag kan du ha flere klynger i ett miljø,
+
+00:00:59.171 --> 00:01:02.773
+men i fremtiden vil du
+også kunne sette opp
+
+00:01:02.773 --> 00:01:06.956
+compute-infrastrukturprosjekter
+og S3-lagringskontoer.
+
+00:01:06.956 --> 00:01:10.439
+La oss gå ned til denne.
+
+00:01:10.439 --> 00:01:13.857
+Her ser du at miljøet er helt
+tomt, og derfor kan jeg legge
+
+00:01:13.857 --> 00:01:14.999
+til en klynge.
+
+00:01:14.999 --> 00:01:19.382
+Her ser du også de andre knappene
+som snart blir tilgjengelige.
+
+00:01:19.382 --> 00:01:24.109
+Jeg trykker på Add Cluster
+og gir klyngen et navn.
+
+00:01:24.109 --> 00:01:28.689
+Dette er første steg når man
+oppretter en ny Kubernetes-klynge.
+
+00:01:28.689 --> 00:01:32.163
+Jeg kaller den safe-test-01.
+
+00:01:32.163 --> 00:01:33.241
+Deretter trykker jeg på Next.
+
+00:01:33.241 --> 00:01:34.965
+Nå kan jeg velge hvilket
+datasenter jeg vil
+
+00:01:34.965 --> 00:01:39.754
+provisjonere ressursene mine i.
+
+00:01:39.754 --> 00:01:41.925
+Jeg velger Stockholm 2 her,
+fordi GPU-flavors også er
+
+00:01:41.925 --> 00:01:42.470
+tilgjengelige der.
+
+00:01:42.470 --> 00:01:47.131
+Jeg skal ikke bruke dem akkurat nå,
+men det er én forskjell mellom de to.
+
+00:01:47.131 --> 00:01:49.839
+Ellers kan det ganske
+enkelt være geografiske
+
+00:01:49.839 --> 00:01:55.069
+grunner eller suverenitetsgrunner
+til at du velger en av dem.
+
+00:01:55.069 --> 00:01:57.601
+Jeg velger Stockholm 2 og trykker på Next.
+
+00:01:57.601 --> 00:02:00.315
+Nå er det tid for å konfigurere hvor
+mange control plane-noder jeg skal ha
+
+00:02:00.315 --> 00:02:04.234
+og hvilken type som skal brukes.
+
+00:02:04.274 --> 00:02:06.814
+Mer presist velger jeg tre
+noder, og jeg kan velge
+
+00:02:06.814 --> 00:02:07.777
+størrelsen deres.
+
+00:02:07.777 --> 00:02:11.439
+Du ser at det finnes ulike
+flavor-varianter her.
+
+00:02:11.439 --> 00:02:16.265
+Du kan ha fire vCPU-er per control
+plane-node, åtte gigabyte RAM og 100
+
+00:02:16.265 --> 00:02:19.589
+gigabyte lagring.
+
+00:02:19.589 --> 00:02:22.278
+Men det finnes også andre varianter.
+
+00:02:22.278 --> 00:02:24.382
+Jeg velger bare den minste her.
+
+00:02:24.382 --> 00:02:28.350
+Altså: fire vCPU-er, åtte
+gigabyte RAM og 100 GB lagring.
+
+00:02:28.350 --> 00:02:33.268
+Deretter er det tid for å
+provisjonere worker-nodene mine.
+
+00:02:33.268 --> 00:02:37.514
+Her ser du at jeg kan
+velge antall med denne
+
+00:02:37.514 --> 00:02:39.970
+slideren.
+
+00:02:39.970 --> 00:02:43.337
+Jeg velger tre her og tar den minste.
+
+00:02:43.337 --> 00:02:46.794
+Du ser også at GPU-flavors finnes her.
+
+00:02:46.834 --> 00:02:49.687
+I fremtiden kommer det også til
+å finnes noe mer som ligner på en
+
+00:02:49.687 --> 00:02:53.332
+handlekurv her, der du kanskje
+har et bruksområde der du vil
+
+00:02:53.332 --> 00:02:55.709
+ha tre worker-noder av denne
+
+00:02:55.709 --> 00:03:00.640
+typen og kanskje bare to GPU-worker-noder.
+
+00:03:00.640 --> 00:03:04.866
+Du vil kanskje ikke ha alle
+nodene kjørende med GPU-flavors.
+
+00:03:04.866 --> 00:03:07.754
+De trengs bare for enkelte applikasjoner.
+
+00:03:07.914 --> 00:03:11.985
+Men akkurat nå velger jeg
+bare den minste: åtte vCPU-er,
+
+00:03:11.985 --> 00:03:14.675
+16 GB RAM og 100 GB lagring per node.
+
+00:03:14.675 --> 00:03:15.539
+Så trykker jeg på Next.
+
+00:03:15.539 --> 00:03:17.093
+Nå ser du en oppsummeringsside
+der du kan gå
+
+00:03:17.093 --> 00:03:22.309
+gjennom det du er i ferd med å gjøre.
+
+00:03:22.309 --> 00:03:25.472
+Den viser hvilket miljø jeg er i og
+hvilket datasenter ressursene skal
+
+00:03:25.472 --> 00:03:26.651
+provisjoneres i.
+
+00:03:26.651 --> 00:03:30.777
+Her ser du navnet på
+klyngen, safe-test-01;
+
+00:03:30.777 --> 00:03:35.137
+control plane, som består av
+tre noder av denne flavoren; og
+
+00:03:35.137 --> 00:03:40.456
+worker-nodene, som består av
+tre noder av denne flavoren.
+
+00:03:40.456 --> 00:03:43.338
+Det er også mulig å laste ned
+denne konfigurasjonen for senere
+
+00:03:43.338 --> 00:03:44.163
+provisjonering.
+
+00:03:44.163 --> 00:03:48.288
+Nå velger vi Create Cluster.
+
+00:03:48.288 --> 00:03:50.453
+Og nå har det startet.
+
+00:03:50.453 --> 00:03:53.483
+Det står at forespørselen ble sendt inn,
+
+00:03:53.483 --> 00:03:58.122
+og du ser den samme
+gjennomgangsinformasjonen igjen.
+
+00:03:58.122 --> 00:04:01.334
+Jeg kan velge Return to Environment.
+
+00:04:01.334 --> 00:04:04.279
+Her ser du at jeg nå har denne
+klyngen i miljøet, med denne
+
+00:04:04.279 --> 00:04:05.617
+ID-en.
+
+00:04:05.617 --> 00:04:09.632
+ID-en genereres automatisk,
+
+00:04:09.632 --> 00:04:12.933
+og du kommer til å se at den
+også dukker opp andre steder i
+
+00:04:12.933 --> 00:04:13.470
+navngivningen.
+
+00:04:13.470 --> 00:04:17.227
+Når du setter opp denne
+klyngen, provisjonerer
+
+00:04:17.227 --> 00:04:21.063
+vi også DNS automatisk med et DNS-navn.
+
+00:04:21.063 --> 00:04:24.909
+Dette er navnet du
+peker CNAME-postene dine
+
+00:04:24.909 --> 00:04:30.278
+mot i DNS-en din, slik at
+du kan publisere dine egne
+
+00:04:30.278 --> 00:04:34.733
+applikasjoner som kjører i klyngen.
+
+00:04:34.733 --> 00:04:37.874
+Her ser du at den fortsatt opprettes.
+
+00:04:37.874 --> 00:04:41.481
+Den jobber, og det tar kanskje ett
+eller to minutter på grunn av det som
+
+00:04:41.481 --> 00:04:45.088
+gjøres nå.
+
+00:04:45.088 --> 00:04:49.587
+Den setter opp control plane, setter
+opp og provisjonerer worker-nodene og
+
+00:04:49.587 --> 00:04:55.783
+gjør også DNS-provisjoneringen
+som jeg snakket om.
+
+00:04:55.783 --> 00:04:58.692
+Det er flere andre ting
+vi må gjøre for å få
+
+00:04:58.692 --> 00:05:02.994
+miljøet opp og kjøre.
+
+00:05:03.034 --> 00:05:05.585
+Jeg kan også fortelle at det
+er basert på Talos Linux fra
+
+00:05:05.585 --> 00:05:10.207
+grunnen av, som er et flyktig
+operativsystem som bare er
+
+00:05:10.207 --> 00:05:10.854
+API-basert.
+
+00:05:10.854 --> 00:05:14.088
+Det finnes ingen CLI-tilkobling til
+
+00:05:14.088 --> 00:05:16.713
+Talos-nodene, og dette gjør
+det ganske enkelt å forutse
+
+00:05:16.713 --> 00:05:19.154
+konsekvensene når vi utfører
+
+00:05:19.154 --> 00:05:23.886
+oppgraderinger og lignende.
+
+00:05:23.886 --> 00:05:26.400
+Det er selvfølgelig en del
+av løsningen: vi håndterer
+
+00:05:26.400 --> 00:05:27.236
+control plane.
+
+00:05:27.236 --> 00:05:29.746
+Det betyr at når
+Kubernetes-versjonen, eller
+
+00:05:29.746 --> 00:05:35.009
+noe lignende, skal oppgraderes,
+
+00:05:35.009 --> 00:05:37.858
+kan vi utføre disse oppgraderingene.
+
+00:05:37.858 --> 00:05:41.499
+Noen oppgraderinger kan være litt
+større og kan påvirke applikasjonene som
+
+00:05:41.499 --> 00:05:42.814
+kjører i klyngen.
+
+00:05:42.814 --> 00:05:45.882
+I så fall gjøres
+oppgraderingen i samarbeid
+
+00:05:45.882 --> 00:05:51.076
+mellom teamet hos Safespring og
+
+00:05:51.076 --> 00:05:53.856
+applikasjonsteamet ditt, slik at
+de kan koordinere og sikre at alle
+
+00:05:53.856 --> 00:06:00.019
+YAML-filene og lignende
+ressurser fungerer med
+
+00:06:00.019 --> 00:06:01.870
+den nyere versjonen av miljøet.
+
+00:06:01.870 --> 00:06:04.461
+Nå er den aktiv, som du ser.
+
+00:06:04.461 --> 00:06:08.005
+Nå kan vi klikke på navnet
+her og se på klyngen vår.
+
+00:06:08.005 --> 00:06:08.883
+Vi har en oversikt her.
+
+00:06:08.883 --> 00:06:10.288
+Vi har regionen Stockholm 2, som vi sa
+
+00:06:10.288 --> 00:06:15.297
+tidligere, altså
+datasenteret der den kjører.
+
+00:06:15.297 --> 00:06:18.125
+Du ser Kubernetes-versjonen,
+Talos-versjonen og det underliggende
+
+00:06:18.125 --> 00:06:19.000
+operativsystemet.
+
+00:06:19.000 --> 00:06:23.376
+Du kan også se nettverket.
+
+00:06:23.376 --> 00:06:24.702
+Her har du API-endepunktet.
+
+00:06:24.702 --> 00:06:29.519
+Dette er navnet du kan bruke når du
+kjører kubectl-kommandoene dine mot
+
+00:06:29.519 --> 00:06:33.185
+klyngen.
+
+00:06:33.185 --> 00:06:37.219
+Du ser også IP-adressen
+som er provisjonert.
+
+00:06:37.219 --> 00:06:42.169
+Den kommer også med en
+automatisk konfigurert ingress.
+
+00:06:42.169 --> 00:06:45.607
+Jeg snakket om det tidligere: vi
+har denne automatisk genererte
+
+00:06:45.607 --> 00:06:49.971
+DNS-posten, som ser ganske lang ut.
+
+00:06:49.971 --> 00:06:51.824
+Men du trenger bare å
+kopiere den én gang og
+
+00:06:51.824 --> 00:06:56.775
+legge den til som en CNAME
+for ditt eget domene.
+
+00:06:56.775 --> 00:06:59.103
+Deretter kan du sette opp egne
+ingress-ressurser i klyngen
+
+00:06:59.103 --> 00:07:04.339
+som matcher navnet du har konfigurert,
+
+00:07:04.339 --> 00:07:06.800
+med CNAME som peker til denne adressen.
+
+00:07:06.800 --> 00:07:09.513
+Da kan du levere
+applikasjoner fra klyngen.
+
+00:07:09.553 --> 00:07:12.621
+En ting til her: du ser en liten
+knapp for å skalere antallet
+
+00:07:12.621 --> 00:07:13.500
+worker-noder.
+
+00:07:13.500 --> 00:07:17.898
+Vi kan faktisk skalere opp.
+
+00:07:17.898 --> 00:07:20.516
+Vi hadde tre fra starten, så
+nå kan vi kanskje ha fire i
+
+00:07:20.516 --> 00:07:21.348
+stedet.
+
+00:07:21.348 --> 00:07:25.506
+Jeg velger Scale Cluster her.
+
+00:07:25.506 --> 00:07:29.166
+Du ser at dette sender en bestilling
+til provisjoneringssystemet vårt.
+
+00:07:29.166 --> 00:07:33.416
+La oss si at den skal skalere
+klyngen til fire noder.
+
+00:07:33.416 --> 00:07:39.468
+Hvis vi går tilbake til miljøet,
+ser vi at den opprettes igjen.
+
+00:07:39.468 --> 00:07:42.939
+Denne operasjonen tar mye kortere tid,
+fordi det bare er én worker-node som må
+
+00:07:42.939 --> 00:07:48.440
+provisjoneres, og alt
+annet er allerede på plass.
+
+00:07:48.440 --> 00:07:50.913
+Vi venter litt til den blir ferdig.
+
+00:07:50.913 --> 00:07:54.847
+Og du ser at den nå har fire noder.
+
+00:07:54.927 --> 00:07:55.750
+Nå er den ferdig.
+
+00:07:55.750 --> 00:08:01.585
+Klyngen er aktiv igjen, så vi kan
+gå inn og se på oversiktssiden.
+
+00:08:01.585 --> 00:08:04.221
+Vi ser at den nå har fire noder her.
+
+00:08:04.221 --> 00:08:06.711
+Vi klarte altså å skalere den opp.
+
+00:08:06.711 --> 00:08:09.137
+Men hva gjør vi nå med dette?
+
+00:08:09.137 --> 00:08:11.910
+Jo, vi vil selvfølgelig koble oss til den.
+
+00:08:11.910 --> 00:08:16.230
+Her oppe har vi knappen
+Kubeconfig, som jeg skal trykke på.
+
+00:08:16.350 --> 00:08:21.461
+Her har du hele
+konfigurasjonen for klyngen.
+
+00:08:21.461 --> 00:08:25.262
+Jeg kopierer den, og så
+går jeg til terminalen min.
+
+00:08:25.262 --> 00:08:29.459
+Nå er jeg i terminalen.
+
+00:08:29.459 --> 00:08:35.372
+Så jeg skal kopiere innholdet fra
+portalen til kubeconfig-filen min.
+
+00:08:35.372 --> 00:08:39.457
+Jeg åpner kubeconfig-filen
+og limer det inn her.
+
+00:08:39.457 --> 00:08:41.180
+Jeg kan gå gjennom dette kort.
+
+00:08:41.180 --> 00:08:45.584
+Først har vi certificate authority-data
+og nøklene som trengs for å koble
+
+00:08:45.584 --> 00:08:50.859
+riktig til klyngen.
+
+00:08:50.899 --> 00:08:54.036
+Du ser også serveren for klyngen.
+
+00:08:54.036 --> 00:08:58.883
+Dette er API-endepunktet
+som vi også så i portalen.
+
+00:08:58.883 --> 00:09:01.022
+Men én interessant ting er her
+nede: når vi begynner å kjøre
+
+00:09:01.022 --> 00:09:03.161
+kommandoer
+
+00:09:03.161 --> 00:09:08.554
+mot denne klyngen, må vi logge inn.
+
+00:09:08.554 --> 00:09:11.406
+Og dette er IDM-en som er
+koblet til Stockholm 2.
+
+00:09:11.406 --> 00:09:12.768
+Du ser den her.
+
+00:09:12.768 --> 00:09:16.877
+Det er der jeg trenger en
+konto for å koble til klyngen.
+
+00:09:16.877 --> 00:09:20.336
+På denne måten har vi to
+nivåer av identity providers.
+
+00:09:20.336 --> 00:09:22.645
+Vi har IdP-en for portalen, der du som
+
+00:09:22.645 --> 00:09:27.515
+administrator kan sette opp nye klynger.
+
+00:09:27.515 --> 00:09:31.037
+Men du trenger også et annet nivå:
+IdP-ene for de faktiske datasentrene der
+
+00:09:31.037 --> 00:09:31.882
+klyngene provisjoneres.
+
+00:09:31.882 --> 00:09:37.790
+På denne måten kan du som administrator
+ha kontroll over å sette opp og
+
+00:09:37.790 --> 00:09:38.638
+slette klynger.
+
+00:09:38.638 --> 00:09:44.647
+Men du kan gi tillatelser til enkelte
+brukere som bare har en konto i
+
+00:09:44.647 --> 00:09:49.682
+IdP-en som er koblet til datasenteret.
+
+00:09:49.682 --> 00:09:52.704
+Du får altså en lagdelt tilgangsmodell.
+
+00:09:52.704 --> 00:09:55.648
+Dette gjør det enkelt å skille ansvar,
+
+00:09:55.648 --> 00:09:59.174
+slik at teknikere som jobber med
+klyngene for eksempel ikke har rett til å
+
+00:09:59.174 --> 00:10:00.896
+slette klyngene.
+
+00:10:00.896 --> 00:10:05.721
+Så jeg skal bare lagre dette her.
+
+00:10:05.721 --> 00:10:08.944
+Deretter kan vi gjøre
+det vanlige oppsettet.
+
+00:10:08.944 --> 00:10:12.499
+Jeg skal lese denne filen og sette
+KUBECONFIG-miljøvariabelen min til å
+
+00:10:12.499 --> 00:10:13.905
+peke på den.
+
+00:10:13.905 --> 00:10:17.186
+Nå har jeg lagt til informasjonen i
+
+00:10:17.186 --> 00:10:20.578
+kubeconfig-filen, som du ser her.
+
+00:10:20.578 --> 00:10:24.688
+Og nå skal jeg sette
+KUBECONFIG-miljøvariabelen min til å
+
+00:10:24.688 --> 00:10:26.910
+peke på den.
+
+00:10:26.910 --> 00:10:29.133
+Nå peker KUBECONFIG-miljøvariabelen
+
+00:10:29.133 --> 00:10:34.227
+på den nye kubeconfig-filen min.
+
+00:10:34.227 --> 00:10:39.021
+Nå kan jeg for eksempel
+kjøre kubectl get nodes.
+
+00:10:39.101 --> 00:10:41.587
+Som du ser, må jeg nå logge
+inn på IdP-en der kontoen min
+
+00:10:41.587 --> 00:10:42.591
+finnes.
+
+00:10:42.591 --> 00:10:45.603
+Jeg gjør det.
+
+00:10:45.603 --> 00:10:48.280
+Jeg skriver inn passordet mitt her.
+
+00:10:48.280 --> 00:10:51.646
+Deretter har jeg tofaktorautentisering
+aktivert, så jeg må bruke
+
+00:10:51.646 --> 00:10:55.011
+maskinvarenøkkelen min.
+
+00:10:55.011 --> 00:10:57.764
+Og som du ser er jeg nå autentisert.
+
+00:10:57.764 --> 00:11:00.632
+Hvis vi går tilbake hit, ser vi
+at jeg faktisk fikk et svar fra
+
+00:11:00.632 --> 00:11:03.501
+kommandoen.
+
+00:11:03.501 --> 00:11:08.347
+Nå har jeg altså en autentiseringstoken.
+
+00:11:08.347 --> 00:11:12.649
+Nå kan jeg for eksempel kjøre
+kubectl get pods --namespace
+
+00:11:12.649 --> 00:11:16.950
+kube-system.
+
+00:11:16.950 --> 00:11:20.403
+Her ser vi alle komponentene
+som kjører i klyngen.
+
+00:11:20.403 --> 00:11:24.220
+Du ser at vi kjører Cilium for nettverk og
+
+00:11:24.220 --> 00:11:27.855
+CoreDNS for DNS-håndtering i
+
+00:11:27.855 --> 00:11:32.701
+miljøet.
+
+00:11:32.781 --> 00:11:33.634
+Vi har Cinder CSI.
+
+00:11:33.634 --> 00:11:37.877
+Det er fordi vi kjører miljøet
+vårt på OpenStack, der Cinder er
+
+00:11:37.877 --> 00:11:38.496
+volumtjenesten.
+
+00:11:38.496 --> 00:11:42.212
+Dette er pluginen som
+håndterer provisjonering
+
+00:11:42.212 --> 00:11:45.070
+av PVC-er, altså persistent
+
+00:11:45.070 --> 00:11:48.881
+volume claims.
+
+00:11:48.881 --> 00:11:52.564
+Deretter har vi de andre, mer standard
+Kubernetes-tjenestene som kjører
+
+00:11:52.564 --> 00:11:57.188
+i alle Kubernetes-klynger.
+
+00:11:57.188 --> 00:11:58.381
+Så det var det.
+
+00:11:58.381 --> 00:12:01.425
+Vi har opprettet en klynge
+og koblet oss til den.
+
+00:12:01.425 --> 00:12:04.661
+Og hvis jeg nå er ferdig
+med denne klyngen,
+
+00:12:04.661 --> 00:12:09.081
+kan jeg også slette den.
+
+00:12:09.081 --> 00:12:10.482
+Jeg kan gå hit.
+
+00:12:10.482 --> 00:12:13.985
+Dette er noe jeg kan gjøre
+som administrator for miljøet.
+
+00:12:13.985 --> 00:12:17.141
+Jeg må skrive inn navnet,
+for ellers lar den
+
+00:12:17.141 --> 00:12:21.301
+meg ikke fortsette.
+
+00:12:21.301 --> 00:12:25.981
+Nå kan jeg slette klyngen,
+og den blir avprovisjonert.
+
+00:12:26.061 --> 00:12:28.892
+Jeg håper du likte denne demonstrasjonen,
+og jeg håper å se deg snart.
+
+00:12:28.892 --> 00:12:29.992
+Ha det.

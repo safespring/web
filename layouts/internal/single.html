@@ -1,0 +1,54 @@
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" . }}
+
+<div class="heading-default-single">
+  {{ .Render "li3" }}
+</div>
+
+<div class="main-default-single">
+  <div class="content-default-single">
+    {{ if .Params.videoURL }}
+    {{ partial "components/video-player.html" (dict
+      "page" .Page
+      "src" .Params.videoURL
+      "poster" .Params.thumbnail
+      "tracks" (.Params.subtitles | default (slice))
+      "containerClass" "webinarvideo index-video video-container-streamed demo-video-player"
+      "videoClass" "webinar-videoplayer"
+      "preload" "none"
+      "cursorTextPaused" "Play"
+      "cursorTextPlaying" "Pause"
+      "playerId" "player"
+      "urlTime" true
+    ) }}
+    {{ end }}
+    {{ .Content }}
+    {{ if and (isset .Params "episode") (.Params.episode) }}
+      {{ partial "internal-serie.html" . }}
+    {{ end }}
+  </div>
+
+  <div class="sidebar-default-single">
+    {{ if .Params.chapters }}
+    <div class="sidebar-container">
+      <div class="sidebar-content">
+        <h3>{{ if .Params.chaptersTitle }}{{ .Params.chaptersTitle }}{{ else }}Chapters{{ end }}</h3>
+        <div class="webinarplaylist">
+          <ul>
+            {{ range .Params.chapters }}
+            <a href="javascript:void(0);" onclick="setCurrentTime({{ .time }})">
+              <li><span>{{ .title }}</span> <span class="timer">{{ .timeFormatted }}</span></li>
+            </a>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ if .Params.sidebar }}{{ partial "sidebar-default-single.html" . }}{{ end }}
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
+</body>

@@ -10,6 +10,9 @@
 {{- $initialSubtitleLang := .initialSubtitleLang | default "" -}}
 {{- $pageSubtitleLang := .pageSubtitleLang | default "" -}}
 {{- $ccDefaultOn := .ccDefaultOn | default "" -}}
+{{- $playerId := .playerId | default "" -}}
+{{- $urlTime := false -}}
+{{- with (index . "urlTime") }}{{- $urlTime = true -}}{{- end -}}
 {{- $languageCode := lower ($page.Language.Lang | default $page.Site.Language.Lang | default "sv") -}}
 {{- $isMuted := false -}}
 {{- with (index . "muted") }}{{- $isMuted = true -}}{{- end -}}
@@ -40,7 +43,9 @@
 {{- $initialSubtitleLabel := cond (eq (lower $ccDefaultOn) "true") $subtitleDisableLabel $subtitleEnableLabel -}}
 {{- $initialMuteLabel := cond $isMuted $unmuteLabel $muteLabel -}}
 
-<div class="video-player {{ $containerClass }}" data-video-player
+<div {{ if $playerId }}id="{{ $playerId }}"{{ end }} class="video-player {{ $containerClass }}" data-video-player
+  {{ if $playerId }}{{ printf "data-player-id=%q" $playerId | safeHTMLAttr }}{{ end }}
+  {{ if $urlTime }}data-url-time="true"{{ end }}
   {{ printf "data-video-src=%q" ($videoSrc | safeURL) | safeHTMLAttr }}
   {{ printf "data-cursor-paused=%q" $cursorTextPaused | safeHTMLAttr }}
   {{ printf "data-cursor-playing=%q" $cursorTextPlaying | safeHTMLAttr }}

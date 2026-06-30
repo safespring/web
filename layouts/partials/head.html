@@ -893,9 +893,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-    {{ if isset .Params "noindex" }}
-      <meta name="robots" content="noindex" />
-    {{ else }}
+    {{ if or .Params.noindex (eq .Section "internal") }}
+      <meta name="robots" content="noindex, nofollow, noarchive" />
     {{ end }}
 
     {{ partial "favicons.html" . }}
