@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-6.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Discover how to securely connect to instances within private and default networks using jump hosts in the OpenStack environment.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

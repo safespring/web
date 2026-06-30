@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-3.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Discover how to set up and launch a cloud instance from an image in OpenStack, including configuration of networks and security settings.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

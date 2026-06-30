@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-5.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Explore the network architecture within the Safe Spring OpenStack platform and learn how to set up instances across different network types.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

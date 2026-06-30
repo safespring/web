@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-safespring-kubernetes-engine-demo-1.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Create a Kubernetes cluster in the Safespring self-service portal, scale worker nodes, download kubeconfig, authenticate with the data-center IDP and connect with kubectl.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

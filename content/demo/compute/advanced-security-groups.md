@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-7.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Learn how to configure and utilize security groups in OpenStack to manage access and streamline security across multiple instances effectively.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-4.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Learn how to start an OpenStack instance from a volume, offering enhanced data resilience and storage options.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

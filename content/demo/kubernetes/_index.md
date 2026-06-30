@@ -11,7 +11,7 @@ intro: "Watch practical walkthroughs for creating, scaling and accessing Kuberne
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
@@ -26,4 +26,4 @@ Learn how Safespring Kubernetes Engine works in practice, from provisioning a ma
 
 These demos are aimed at teams evaluating Kubernetes on Safespring or preparing to run workloads on the platform. Each chapter card opens the same walkthrough at the selected timestamp, so you can jump directly to the part you need.
 
-{{< localbutton text="Contact us" target="_blank" link="/contact/#contact-form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Contact us" target="_blank" link="/en/contact/#contact-form" icon="fa-up-right-from-square" >}}

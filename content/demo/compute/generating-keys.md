@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-1.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Learn how to generate and import SSH keys into the OpenStack platform with this step-by-step video tutorial.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

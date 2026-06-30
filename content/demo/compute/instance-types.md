@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-2.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Explore the different instance types and storage configurations available in OpenStack to optimize your cloud infrastructure.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

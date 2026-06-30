@@ -11,7 +11,7 @@ card: "/img/webinar/thumbnails/demo-episode-8.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'Explore how to use server groups in OpenStack to enforce anti-affinity rules for improved redundancy and reliability in your cloud infrastructure.'
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""

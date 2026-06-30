@@ -11,7 +11,7 @@ intro: 'This series offers a structured sequence of in-depth tutorials aimed at 
 partner: ""
 audience: "saas"
 explorer: ""
-sidebarlinkurl: "/contact/#contact-form"
+sidebarlinkurl: "/en/contact/#contact-form"
 sidebarlinkname: "Contact us"
 sidebarlinkicon: "fa fa-external-link"
 sidebarimage: ""
@@ -35,7 +35,7 @@ At Safespring, we provide a cloud service that supports your business's need for
 
 
 
-{{< localbutton text="Contact us" target="_blank" link="/contact/#contact-form" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Contact us" target="_blank" link="/en/contact/#contact-form" icon="fa-up-right-from-square" >}}
 
 {{< distance >}}
 
