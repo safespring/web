@@ -1,7 +1,7 @@
 ---
 title: "Digital rådighet är inte en produkt"
 date: "2026-07-01"
-intro: "CivSecs rapport Digital rådighet och strukturella beroenden sätter ord på frågor som redan finns i upphandling, arkitektur, dataskydd och AI. Utvecklingen kring EU-US Data Privacy Framework gör frågan konkret för molnkunder."
+intro: "CivSecs rapport Digital rådighet och strukturella beroenden samlar frågor som redan dyker upp i upphandling, arkitektur, dataskydd och AI. Utvecklingen kring EU-US Data Privacy Framework gör dem konkreta för molnkunder."
 draft: false
 tags: ["Svenska"]
 showthedate: true
@@ -14,28 +14,28 @@ author: "Gabriel Paues"
 ---
 
 {{< ingress >}}
-I maj 2026 publicerade CivSec rapporten Digital rådighet och strukturella beroenden. Rapporten definierar digital rådighet som en organisations faktiska förmåga att kontrollera information, system och beslut över tid, även när leverantörer, avtal eller juridiska förutsättningar förändras.
+När CivSec i maj 2026 publicerade rapporten Digital rådighet och strukturella beroenden satte de en tydlig definition på begreppet: organisationens faktiska förmåga att kontrollera information, system och beslut över tid, även när leverantörer, avtal eller juridiska förutsättningar förändras.
 {{< /ingress >}}
 
-CivSec kopplar frågan till NIS2, AI Act, DORA och den svenska cybersäkerhetslagen (2025:1506).[^1] Rapporten beskriver också ett gap mellan vad regelverken gör möjligt och vad organisationer faktiskt kräver när de upphandlar, dokumenterar och styr sina digitala miljöer.
+Rapporten placerar digital rådighet bredvid NIS2, AI Act, DORA och den svenska cybersäkerhetslagen (2025:1506).[^1] Den pekar också på gapet mellan vad regelverken redan gör möjligt och vad organisationer faktiskt kräver när de upphandlar, dokumenterar och styr sina digitala miljöer.
 
-På Safespring har vi under flera år skrivit om samma problemområde från olika håll: jurisdiktion och dataskydd, molnarkitektur, AI, offentlig upphandling och möjligheten att byta väg när förutsättningarna ändras. Flera av resonemangen finns i artikeln [Det multidimensionella problemet](/blogg/2025/2025-08-det-multidimensionella-problemet/), där juridik, säkerhet, drift, geopolitiska förutsättningar och verksamhetsrisk behandlas tillsammans.
+På Safespring har vi kommit in på samma område från flera håll under de senaste åren: jurisdiktion och dataskydd, molnarkitektur, AI, offentlig upphandling och möjligheten att byta väg när förutsättningarna ändras. I artikeln [Det multidimensionella problemet](/blogg/2025/2025-08-det-multidimensionella-problemet/) samlade vi flera av de perspektiven, från juridik och säkerhet till drift, geopolitik och verksamhetsrisk.
 
-Digital rådighet är ett användbart samlingsbegrepp, men det får inte bli ett nytt ord för en gammal produktkategori. Det handlar om vilka beslut en organisation fortfarande kan fatta när teknik, avtal, leverantörsmarknad eller lagstiftning förändras.
+Digital rådighet fungerar bra som samlingsbegrepp, men bara om det inte görs om till ännu en produktkategori. Kärnan är vilka beslut en organisation fortfarande kan fatta när teknik, avtal, leverantörsmarknad eller lagstiftning förändras.
 
 ## När juridiken möter infrastrukturen
 
-Diskussionen om digital rådighet förs ofta som en teknisk fråga, men många av de mest komplicerade avvägningarna är juridiska.
+I upphandling och arkitektur låter digital rådighet ofta som en teknisk fråga. Flera av de svåraste avvägningarna ligger ändå i juridiken.
 
-Det blev tydligt efter Schrems II-domen 2020 och har fortsatt genom arbetet med EU-US Data Privacy Framework. För organisationer som behandlar känslig information räcker det inte att läsa tekniska specifikationer. De behöver också veta var data behandlas, vilken lagstiftning leverantören lyder under och vilka möjligheter som finns att flytta tjänster om förutsättningarna ändras.
+Schrems II-domen 2020 gjorde det tydligt, och arbetet med EU-US Data Privacy Framework har hållit frågan levande. Organisationer som behandlar känslig information behöver mer än tekniska specifikationer. De behöver veta var data behandlas, vilken lagstiftning leverantören lyder under och hur realistiskt det är att flytta tjänster om förutsättningarna ändras.
 
 Den 29 juni 2026 avgjorde USA:s högsta domstol *Trump v. Slaughter*.[^2] Domstolen slog fast att FTC:s begränsning av presidentens möjlighet att avsätta kommissionärer strider mot maktfördelningen i USA:s konstitution.
 
-Det är relevant för EU-US Data Privacy Framework eftersom EU-kommissionens adekvansbeslut från 10 juli 2023 bygger på amerikanska tillsyns- och rättsmedelsfunktioner.[^3] Den 30 juni skickade noyb ett formellt brev till EU-kommissionen.[^4] noyb menar att domen påverkar grunden för DPF, bland annat eftersom kommissionens beslut hänvisar till FTC mer än 250 gånger. I sin artikel om domen skriver noyb också att SCC:er och BCR:er kan påverkas när organisationers transfer impact assessments bygger på amerikansk tillsyn eller särskilda rättsmedel.[^5]
+Kopplingen till EU-US Data Privacy Framework är direkt: EU-kommissionens adekvansbeslut från 10 juli 2023 bygger på amerikanska tillsyns- och rättsmedelsfunktioner.[^3] Den 30 juni skickade noyb ett formellt brev till EU-kommissionen.[^4] noyb menar att domen påverkar grunden för DPF, bland annat eftersom kommissionens beslut hänvisar till FTC mer än 250 gånger. I sin artikel om domen skriver noyb också att SCC:er och BCR:er kan påverkas när organisationers transfer impact assessments bygger på amerikansk tillsyn eller särskilda rättsmedel.[^5]
 
-Det betyder inte att DPF har upphört att gälla. Adekvansbeslutet gäller tills EU-kommissionen återkallar det eller EU-domstolen ogiltigförklarar det. Däremot bör organisationer som använder amerikanska molntjänster kunna visa vilken grund deras överföringar vilar på och vilka antaganden som ingår i bedömningen.
+DPF gäller alltså fortfarande. Adekvansbeslutet gäller tills EU-kommissionen återkallar det eller EU-domstolen ogiltigförklarar det. Organisationer som använder amerikanska molntjänster bör ändå kunna visa vilken grund deras överföringar vilar på och vilka antaganden som ingår i den egna analysen.
 
-I white paperet [Läget efter EU-US Data Protection Framework (DPF)](/whitepaper/eu-us-dpf/) beskrev vi hur sådana frågor påverkar riskbedömningen även när data lagras inom Europa. Samma typ av bedömning återkommer när verksamheter väljer molnplattform, samarbetsverktyg, AI-tjänster och säkerhetssystem.
+I vårt white paper [Läget efter EU-US Data Protection Framework (DPF)](/whitepaper/eu-us-dpf/) skrev vi om hur sådana överväganden påverkar riskbilden även när data lagras inom Europa. Den typen av genomgång återkommer när verksamheter väljer molnplattform, samarbetsverktyg, AI-tjänster och säkerhetssystem.
 
 I en genomgång av molntjänster bör organisationen kunna svara på:
 
@@ -45,53 +45,53 @@ I en genomgång av molntjänster bör organisationen kunna svara på:
 - Vilka bedömningar hänvisar till oberoende amerikansk tillsyn eller särskilda rättsmedel?
 - Vilka system innehåller data med högt skyddsvärde?
 
-Detta ersätter inte juridisk rådgivning. Det är däremot ett skäl att gå igenom molnberoenden, underleverantörer och exit-planer medan det fortfarande finns tid att göra arbetet ordnat.
+Listan är inte juridisk rådgivning. Den är en praktisk anledning att gå igenom molnberoenden, underleverantörer och exit-planer medan det fortfarande finns tid att göra arbetet ordnat.
 
 ## Öppna standarder och möjlighet att byta väg
 
-Rapporten återkommer flera gånger till frågan om portabilitet.
+CivSec återkommer flera gånger till portabilitet.
 
 Portabilitet omfattar dataexport, men också hur beroende verksamheten blir av en viss plattform, ett visst gränssnitt eller en viss leverantörs sätt att paketera tjänster.
 
 Öppna standarder löser inte hela problemet, men de kan minska kostnaden för framtida förändringar. OpenStack används för att bygga molninfrastruktur med öppna gränssnitt. Kubernetes används för att köra containeriserade applikationer i olika miljöer. S3-kompatibla lagringsgränssnitt kan minska beroendet av en specifik lagringsleverantör.
 
-Tekniken eliminerar inte leverantörsberoenden. Den gör däremot vissa beroenden mer synliga och vissa byten mer genomförbara. Vi har tidigare berört samma frågor i artikeln [Helhetsgrepp om molninfrastrukturen](/blogg/2023/2023-06-molninfrastruktur/) och i flera texter om OpenStack, Kubernetes och leverantörsoberoende arkitektur.
+Teknikval tar inte bort leverantörsberoenden, men de kan göra beroendena synligare och vissa byten mer genomförbara. Vi har tidigare varit inne på det i artikeln [Helhetsgrepp om molninfrastrukturen](/blogg/2023/2023-06-molninfrastruktur/) och i flera texter om OpenStack, Kubernetes och leverantörsoberoende arkitektur.
 
 ## AI gör beroendet tydligare
 
-Under de senaste två åren har många organisationer börjat diskutera AI på samma sätt som de tidigare diskuterade molntjänster.
+Under de senaste två åren har AI börjat hamna i samma typ av samtal som molntjänster gjorde tidigare.
 
-Samtalen börjar ofta i funktionalitet, men går snabbt vidare till data och beroenden: var information behandlas, om modellen kan granskas, om lösningen kan flyttas och vilka krav AI Act ställer på dokumentation och transparens.
+Startpunkten är ofta funktionalitet. Ganska snabbt hamnar diskussionen ändå i data och beroenden: var information behandlas, om modellen kan granskas, om lösningen kan flyttas och vilka krav AI Act ställer på dokumentation och transparens.
 
-I rapporten behandlas AI som en del av digital rådighet. Vi ser samma frågor i samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor. Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](/en/services/machine-learning-ai-gpu-resources/).
+CivSec behandlar AI som en del av digital rådighet. Vi känner igen mönstret från samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor. Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Machine Learning, AI and GPU Resources](/en/services/machine-learning-ai-gpu-resources/).
 
-I juni 2026 blev frågan praktisk. Den 12 juni skrev Anthropic att den amerikanska regeringen hade beslutat om exportkontroller för modellerna Fable 5 och Mythos 5.[^6] Beslutet gällde utländska medborgare, både inom och utanför USA. Anthropic skrev samtidigt att företaget saknade ett tillförlitligt sätt att kontrollera nationalitet i realtid och därför stängde av åtkomsten till båda modellerna för alla användare.
+I juni 2026 kom ett konkret exempel. Den 12 juni skrev Anthropic att den amerikanska regeringen hade beslutat om exportkontroller för modellerna Fable 5 och Mythos 5.[^6] Beslutet gällde utländska medborgare, både inom och utanför USA. Anthropic skrev samtidigt att företaget saknade ett tillförlitligt sätt att kontrollera nationalitet i realtid och därför stängde av åtkomsten till båda modellerna för alla användare.
 
 Den 30 juni skrev Anthropic att exportkontrollerna hade lyfts.[^7] Fable 5 skulle åter bli tillgänglig globalt den 1 juli, medan Mythos 5 hade återställts för en uppsättning amerikanska organisationer efter godkännande från den amerikanska regeringen.
 
-För en svensk eller europeisk verksamhet är frågan inte om just Fable 5 eller Mythos 5 ska användas. Frågan är om en kritisk AI-funktion kan påverkas av beslut som ligger utanför det egna avtalet, den egna leverantörsstyrningen och EU:s jurisdiktion.
+För en svensk eller europeisk verksamhet är poängen inte om just Fable 5 eller Mythos 5 ska användas. Det viktiga är om en kritisk AI-funktion kan påverkas av beslut som ligger utanför det egna avtalet, den egna leverantörsstyrningen och EU:s jurisdiktion.
 
 ## När juridik påverkar tillgång till tjänster
 
-Anthropic-exemplet är nytt, men frågan om tillgång till digitala tjänster och utländsk jurisdiktion är äldre.
+Anthropic är det färska exemplet. Problemet med tillgång till digitala tjänster och utländsk jurisdiktion är äldre.
 
 År 2019 utfärdade USA Executive Order 13884, som blockerade egendom och vissa transaktioner kopplade till Venezuelas regering.[^8] I samband med detta meddelade Adobe användare i Venezuela att deras konton skulle deaktiveras. The Verge rapporterade att Adobe först skrev att återbetalningar inte kunde göras, men senare ändrade beskedet.[^9]
 
 År 2025 sanktionerade USA Karim Khan, chefsåklagare vid Internationella brottmålsdomstolen. Associated Press rapporterade att Khans Microsoft-konto hade stängts och att han fick gå över till Proton Mail.[^10] I ett skriftligt svar i det brittiska överhuset noterade regeringen att Microsoft starkt hade förnekat att företaget gjort detta.[^11]
 
-Exemplen är olika och ska inte pressas in i samma förklaring. För riskbedömningen är det ändå relevant vilken jurisdiktion leverantören lyder under, vilka sanktionsregler som kan träffa tjänsten och vilken teknisk kontroll leverantören har.
+Exemplen ska inte pressas in i samma förklaring. De visar ändå varför jurisdiktion, sanktionsregler och leverantörens tekniska kontroll behöver finnas med i riskarbetet.
 
 ## NIS2 gör frågan mindre valfri
 
-En återkommande observation i rapporten är att många organisationer fortfarande behandlar leverantörsberoenden som en IT-fråga trots att regelverken i allt högre grad behandlar dem som en verksamhetsfråga.
+CivSec återkommer till att många organisationer fortfarande behandlar leverantörsberoenden som en IT-fråga, trots att regelverken i allt högre grad gör dem till en verksamhetsfråga.
 
-Det är en förändring som blivit tydligare genom NIS2. Frågor om jurisdiktion, leverantörskedjor, incidenthantering och kontinuitet blir en del av verksamhetens riskhantering. För vissa organisationer leder det till nya krav i upphandlingar. För andra leder det till nya krav på dokumentation, arkitektur eller leverantörsstyrning.
+NIS2 har gjort den förändringen tydligare. Jurisdiktion, leverantörskedjor, incidenthantering och kontinuitet hör nu ihop med verksamhetens riskhantering. För vissa organisationer märks det i upphandlingar. För andra märks det i kraven på dokumentation, arkitektur eller leverantörsstyrning.
 
-Samma utveckling ligger bakom flera av de resonemang vi tidigare fört kring digital rådighet, leverantörsrisk och europeisk infrastruktur, bland annat i artikeln [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/).
+Det är också bakgrunden till flera av våra tidigare texter om digital rådighet, leverantörsrisk och europeisk infrastruktur, bland annat [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/).
 
 ## Digital rådighet i praktiken
 
-I praktiken handlar digital rådighet ofta om frågor som går att ställa i en arkitekturgranskning, riskanalys eller upphandling:
+I praktiskt arbete går digital rådighet ofta att börja med frågor som passar i en arkitekturgranskning, riskanalys eller upphandling:
 
 - Kan data flyttas till en annan miljö?
 - Finns dokumenterade exit-möjligheter?
@@ -99,9 +99,9 @@ I praktiken handlar digital rådighet ofta om frågor som går att ställa i en 
 - Kan en kritisk AI-funktion ersättas om åtkomsten plötsligt dras tillbaka?
 - Vem kan fatta beslut om tjänstens fortsatta tillgänglighet?
 
-Svar på dessa frågor kommer att se olika ut för olika verksamheter. En forskningsmiljö har andra krav än en kommun. En publik webbplats har andra krav än ett system som används för myndighetsutövning.
+Svaren kommer att skilja sig mellan verksamheter. En forskningsmiljö har andra krav än en kommun. En publik webbplats har andra krav än ett system som används för myndighetsutövning.
 
-Det är därför digital rådighet inte är en produkt, en regioninställning eller en certifiering. Det är resultatet av tekniska, juridiska och organisatoriska beslut som fattas över tid.
+Digital rådighet är därför inte en produkt, en regioninställning eller en certifiering. Den byggs upp genom tekniska, juridiska och organisatoriska beslut som fattas över tid.
 
 För den som vill fördjupa sig ytterligare i den europeiska dimensionen av frågan rekommenderar vi även artiklarna [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/) och [Varför Safespring stödjer EuroStack](/blogg/2025/2025-03-eurostack/).
 
