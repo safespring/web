@@ -13,8 +13,7 @@ intro: "En webcast-serie der vi dykker ned i våre kunders digitale fremskritt m
 audience: "kommune"
 episodetype: "Brukstilfelle"
 section: "Webinar"
-aliases:
-  - /webinar/kommun/
+url: "/webinar/kommun/"
 ---
 {{< ingress >}}
 Oppdag hvordan kundene våre har navigert i den digitale tidsalderen og integrert innovative løsninger for å forbedre effektiviteten og tjenestene i organisasjonene sine. Hver del gir et unikt innblikk i praktiske anvendelser av Safespring-teknologier.

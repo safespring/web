@@ -88,13 +88,19 @@
         </div>
       </div>
     {{ else if eq $section "webinar" }}
-      {{ $webinarCard := .Params.card }}
+      {{ $webinarCard := .Params.card | default .Params.thumbnail | default "/img/event/cards/safespring_card_26.jpg" }}
       {{ if and $webinarCard (not (or (strings.HasPrefix $webinarCard "/") (strings.HasPrefix $webinarCard "http://") (strings.HasPrefix $webinarCard "https://"))) }}
         {{ $webinarCard = printf "/img/event/cards/%s" $webinarCard }}
       {{ end }}
+      {{ if and $webinarCard (not (or (strings.HasPrefix $webinarCard "http://") (strings.HasPrefix $webinarCard "https://"))) }}
+        {{ $webinarCardFile := printf "static/%s" (strings.TrimPrefix "/" $webinarCard) }}
+        {{ if not (fileExists $webinarCardFile) }}
+          {{ $webinarCard = "/img/event/cards/safespring_card_26.jpg" }}
+        {{ end }}
+      {{ end }}
       <img
         class="lazyload"
-        loading="lazy"
+        loading="eager"
         src="{{ $webinarCard }}"
         {{ partial "image-dimensions.html" $webinarCard | safeHTMLAttr }}
         alt="{{ .Title }}"

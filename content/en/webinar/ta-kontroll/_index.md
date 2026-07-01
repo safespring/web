@@ -19,8 +19,7 @@ sidebarimage: ""
 nosidebar: "invisible"
 toc: "Section"
 section: "Webinar"
-aliases:
-  - /webinar/ta-kontroll/
+url: "/webinar/ta-kontroll/"
 ---
 {{< ingress >}}
 Welcome to our web series "Take Control" where we dive deep into various aspects of security for data-driven companies and organizations.

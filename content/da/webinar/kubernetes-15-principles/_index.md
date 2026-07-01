@@ -19,9 +19,9 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Afsnit"
 section: "Webinar"
+url: "/webinar/kubernetes-15-principles/"
 aliases:
   - /kubernetes-webcast
-  - /webinar/kubernetes-15-principles/
 ---
 {{< ingress >}}
 I denne webserie vil vi gennemgå Elastisys principper for at få mest muligt ud af Kubernetes og drage maksimal nytte af dets fordele.

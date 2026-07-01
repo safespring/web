@@ -165,9 +165,16 @@
       class="content-default-single"
     {{ end }}
   >
-    {{ .Content }}
+    {{ $isWebinarRoot := and (eq $.Section "webinar") (eq .RelPermalink "/webinar/") }}
+    {{ if $isWebinarRoot }}
+      <div class="webinar-hub-copy">
+        {{ .Content }}
+      </div>
+    {{ else }}
+      {{ .Content }}
+    {{ end }}
     <div class="webinar-side-bar-cards" style="margin-top: 0">
-      {{ range where .RegularPages ".Params.series" "ne" "true" }}
+      {{ range (where .RegularPages ".Params.series" "ne" "true").ByDate.Reverse }}
         <div class="content-container">{{ .Render "li-latest" }}</div>
       {{ end }}
     </div>

@@ -19,8 +19,7 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Avsnitt"
 section: "Nettseminar"
-aliases:
-  - /webinar/ta-kontroll/
+url: "/webinar/ta-kontroll/"
 ---
 {{< ingress >}}
 Velkommen til vår nettserie "Ta Kontroll" der vi dykker dypt ned i ulike aspekter av sikkerhet for datadrevne bedrifter og organisasjoner.

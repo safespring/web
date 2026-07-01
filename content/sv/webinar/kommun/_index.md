@@ -12,8 +12,7 @@ intro: "En webcast-serie där vi dyker ner i våra kunders digitala framsteg med
 audience: "kommun"
 episodetype: "Use Case"
 section: "Webinar"
-aliases:
-  - /webinar/kommun/
+url: "/webinar/kommun/"
 ---
 
 {{< ingress >}}

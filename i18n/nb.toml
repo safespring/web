@@ -272,6 +272,9 @@ load_error = "Videoen kunne ikke lastes. Prøv igjen senere."
 
 [webinar]
 chapters = "Avsnitt"
+episode_singular = "episode"
+episode_plural = "episoder"
+open_series = "Se alle episoder"
 
 [container_calculator]
 title = "Kostnadsestimat for cluster"

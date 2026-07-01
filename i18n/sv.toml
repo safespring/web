@@ -272,6 +272,9 @@ load_error = "Videon kunde inte laddas. Försök igen senare."
 
 [webinar]
 chapters = "Avsnitt"
+episode_singular = "avsnitt"
+episode_plural = "avsnitt"
+open_series = "Se alla avsnitt"
 
 [container_calculator]
 title = "Kostnadsestimat för kluster"

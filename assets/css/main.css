@@ -4556,7 +4556,10 @@ ol li ol li::before {
 
 .img-250 > img {
   height: 250px !important;
-  width: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .blogg-card-title {
@@ -4568,6 +4571,25 @@ ol li ol li::before {
   hyphens: auto;
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+.webinar-hub-copy {
+  box-sizing: border-box;
+  max-width: 780px;
+  margin: 0 auto 4rem;
+}
+
+.webinar-hub-copy > * {
+  max-width: 100%;
+}
+
+.webinar-hub-copy .ingress,
+.webinar-hub-copy p {
+  max-width: 720px;
+}
+
+.webinar-hub-copy .button {
+  margin-top: 1.5rem;
 }
 
 .blogg-card-flag {
@@ -5112,6 +5134,11 @@ ol li ol li::before {
   padding: 20px 40px;
 }
 
+.webinar-series-text-container--hub {
+  justify-content: flex-start;
+  gap: clamp(2.75rem, 5vw, 4rem);
+}
+
 .webinar-highlist-card h2 {
   /* Stilar för webinar-highlist-card h2 */
 }
@@ -5166,6 +5193,11 @@ ol li ol li::before {
     height: calc(100% - 40px);
     justify-content: space-between;
     padding: 20px 40px;
+  }
+
+  .webinar-series-text-container--hub {
+    justify-content: space-between;
+    gap: 0;
   }
 
   .episode-counter {

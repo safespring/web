@@ -272,6 +272,9 @@ load_error = "Videoen kunne ikke indlæses. Prøv igen senere."
 
 [webinar]
 chapters = "Afsnit"
+episode_singular = "afsnit"
+episode_plural = "afsnit"
+open_series = "Se alle afsnit"
 
 [container_calculator]
 title = "Prisestimat for cluster"

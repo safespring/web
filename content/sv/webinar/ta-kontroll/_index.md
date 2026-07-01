@@ -18,8 +18,7 @@ sidebarimage: ""
 nosidebar: "invisible"
 toc: "Avsnitt"
 section: "Webinar"
-aliases:
-  - /webinar/ta-kontroll/
+url: "/webinar/ta-kontroll/"
 ---
 
 {{< ingress >}}

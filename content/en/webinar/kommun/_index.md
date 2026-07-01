@@ -13,8 +13,7 @@ intro: "A webcast series where we delve into our customers’ digital advancemen
 audience: "municipality"
 episodetype: "Use Case"
 section: "Webinar"
-aliases:
-  - /webinar/kommun/
+url: "/webinar/kommun/"
 ---
 {{< ingress >}}
 Discover how our customers have navigated the digital era and integrated innovative solutions to improve efficiency and services within their organizations. Each section offers a unique look into practical applications of Safespring technologies.

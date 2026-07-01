@@ -19,8 +19,7 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Afsnit"
 section: "Webinar"
-aliases:
-  - /webinar/ta-kontroll/
+url: "/webinar/ta-kontroll/"
 ---
 {{< ingress >}}
 Velkommen til vores webserie "Tag kontrol", hvor vi dykker ned i forskellige aspekter af sikkerhed for datadrevne virksomheder og organisationer.

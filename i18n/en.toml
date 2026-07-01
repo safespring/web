@@ -273,6 +273,9 @@ load_error = "The video could not be loaded. Please try again later."
 
 [webinar]
 chapters = "Chapters"
+episode_singular = "episode"
+episode_plural = "episodes"
+open_series = "See all episodes"
 
 [container_calculator]
 title = "Cluster cost estimate"

@@ -18,8 +18,7 @@ sidebarimage: ""
 nosidebar: "invisible"
 toc: "Avsnitt"
 section: "Webinar"
-aliases:
-  - /webinar/gdpr-fireside-chat/
+url: "/webinar/gdpr-fireside-chat/"
 ---
 
 ## Välkommen till vår exklusiva podcast-serie

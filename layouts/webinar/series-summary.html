@@ -1,0 +1,23 @@
+{{ $episodeCount := len .RegularPages }}
+{{ $card := .Params.card | default .Params.thumbnail | default "/img/event/cards/safespring_card_26.jpg" }}
+{{ if and $card (not (or (strings.HasPrefix $card "/") (strings.HasPrefix $card "http://") (strings.HasPrefix $card "https://"))) }}
+  {{ $card = printf "/img/event/cards/%s" $card }}
+{{ end }}
+{{ $episodeLabel := T "webinar.episode_plural" }}
+{{ if eq $episodeCount 1 }}
+  {{ $episodeLabel = T "webinar.episode_singular" }}
+{{ end }}
+<div class="webinar-card">
+  <a href="{{ .RelPermalink }}">
+    <div class="webinar-highlist-card shadow-1">
+      <div class="webinar-highlist-image" style="background-image: url('{{ $card | safeURL }}');"></div>
+      <div class="webinar-series-text-container webinar-series-text-container--hub" data-href="{{ .RelPermalink }}">
+        <p class="episode-counter">{{ $episodeCount }} {{ $episodeLabel }}</p>
+        <div>
+          <h2>{{ .Title }}</h2>
+          <span class="text-button">{{ T "webinar.open_series" }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
