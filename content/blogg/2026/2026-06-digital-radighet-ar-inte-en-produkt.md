@@ -5,7 +5,7 @@ intro: "CivSecs rapport Digital rådighet och strukturella beroenden sätter ord
 draft: false
 tags: ["Svenska"]
 showthedate: true
-card: "safespring-puzzle.webp"
+card: "digital-radighet-schrems-card.webp"
 eventbild: ""
 socialmedia: "blogg/socialmedia/safespring-puzzle.jpg"
 language: "Se"
