@@ -19,8 +19,6 @@ I maj 2026 publicerade CivSec rapporten Digital rådighet och strukturella beroe
 
 CivSec kopplar frågan till NIS2, AI Act, DORA och den svenska cybersäkerhetslagen (2025:1506).[^1] Rapporten beskriver också ett gap mellan vad regelverken gör möjligt och vad organisationer faktiskt kräver när de upphandlar, dokumenterar och styr sina digitala miljöer.
 
-Begreppet är relativt nytt. Frågorna är det inte.
-
 På Safespring har vi under flera år skrivit om samma problemområde från olika håll: jurisdiktion och dataskydd, molnarkitektur, AI, offentlig upphandling och möjligheten att byta väg när förutsättningarna ändras. Flera av resonemangen finns i artikeln [Det multidimensionella problemet](/blogg/2025/2025-08-det-multidimensionella-problemet/), där juridik, säkerhet, drift, geopolitiska förutsättningar och verksamhetsrisk behandlas tillsammans.
 
 Digital rådighet är ett användbart samlingsbegrepp, men det får inte bli ett nytt ord för en gammal produktkategori. Det handlar om vilka beslut en organisation fortfarande kan fatta när teknik, avtal, leverantörsmarknad eller lagstiftning förändras.
@@ -39,7 +37,7 @@ Det betyder inte att DPF har upphört att gälla. Adekvansbeslutet gäller tills
 
 I white paperet [Läget efter EU-US Data Protection Framework (DPF)](/whitepaper/eu-us-dpf/) beskrev vi hur sådana frågor påverkar riskbedömningen även när data lagras inom Europa. Samma typ av bedömning återkommer när verksamheter väljer molnplattform, samarbetsverktyg, AI-tjänster och säkerhetssystem.
 
-För molnkunder blir de praktiska frågorna konkreta:
+I en genomgång av molntjänster bör organisationen kunna svara på:
 
 - Vilka personuppgifter behandlas i USA eller kan nås från USA?
 - Vilken överföringsmekanism används för varje behandling?
@@ -106,6 +104,8 @@ Svar på dessa frågor kommer att se olika ut för olika verksamheter. En forskn
 Det är därför digital rådighet inte är en produkt, en regioninställning eller en certifiering. Det är resultatet av tekniska, juridiska och organisatoriska beslut som fattas över tid.
 
 För den som vill fördjupa sig ytterligare i den europeiska dimensionen av frågan rekommenderar vi även artiklarna [EU har precis definierat det suveräna molnet, här är vårt resultat](/blogg/2025/2025-11-the-eu-just-defined-sovereign-cloud-here-is-our-score/) och [Varför Safespring stödjer EuroStack](/blogg/2025/2025-03-eurostack/).
+
+## Källor
 
 [^1]: CivSec, *Digital rådighet och strukturella beroenden*, maj 2026: <https://www.civsec.se/documents/Digital%20r%C3%A5dighet%20och%20strukturella%20beroenden_1.1.pdf>
 [^2]: Supreme Court of the United States, *Trump v. Slaughter*, 29 juni 2026: <https://www.supremecourt.gov/opinions/25pdf/25-332_qn12.pdf>
