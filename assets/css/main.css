@@ -6072,6 +6072,17 @@ details[open] summary {
 	margin-top: 10px;
 	padding-right: 20px;
 }
+
+.icon-block-horisontal p {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+a[href^="tel:"] .icon-block-horisontal__description {
+	white-space: nowrap;
+	word-break: keep-all;
+}
+
 .icon-block-color {
 	font-size: 35px;
 	display: flex;

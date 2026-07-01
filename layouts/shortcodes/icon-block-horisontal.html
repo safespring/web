@@ -5,4 +5,4 @@
 		<div class="icon-block-color" style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'>
 	<i class='{{ .Get "icon" }} icon'></i>
 	</div>
-	<p><span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br>{{ .Get "description" | safeHTML }}</p></div>{{ with $href }}</a>{{ end }}
+	<p><span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br><span class="icon-block-horisontal__description">{{ .Get "description" | safeHTML }}</span></p></div>{{ with $href }}</a>{{ end }}

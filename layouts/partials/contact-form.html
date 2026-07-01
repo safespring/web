@@ -53,6 +53,7 @@
     font-family: 'Montserrat';
     line-height: 16px;
     color: var(--middle-blue-color);
+    z-index: 2;
   }
 
   .contact-form .form-field input[type="text"],
@@ -72,6 +73,8 @@
     padding: 15px 25px;
     background-color: transparent;
     font-family: 'Montserrat';
+    position: relative;
+    z-index: 1;
   }
 
   .contact-form .form-field input:focus,
@@ -82,8 +85,7 @@
   }
 
   .contact-form .form-field.has-content label,
-  .contact-form .form-field.is-focused label,
-  .contact-form .form-field.phone-field label {
+  .contact-form .form-field.is-focused label {
     transform: translateY(-205%);
     -webkit-transform: translateY(-205%);
     color: #3C9BCD;
@@ -166,15 +168,19 @@
   .contact-form .iti {
     display: block;
     width: 100%;
+    margin-block: 8px;
+    z-index: 1;
   }
 
   .contact-form .iti input[type="tel"] {
     width: 100%;
-    padding-left: 88px;
+    margin-block: 0;
+    padding-left: 25px !important;
   }
 
-  .contact-form .phone-field .iti__flag-container {
-    left: 18px;
+  .contact-form .phone-field .iti__flag-container,
+  .contact-form .phone-field .iti__selected-flag {
+    display: none !important;
   }
 
   .contact-form .phone-field label {
