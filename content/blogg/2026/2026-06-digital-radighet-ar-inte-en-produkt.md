@@ -2,7 +2,7 @@
 title: "Digital rådighet är inte en produkt"
 date: "2026-06-10"
 intro: "CivSecs rapport Digital rådighet och strukturella beroenden visar hur kontroll, beroenden och handlingsfrihet behöver behandlas som långsiktiga verksamhetsfrågor."
-draft: true
+draft: false
 tags: ["Svenska"]
 showthedate: true
 card: "safespring-puzzle.webp"
