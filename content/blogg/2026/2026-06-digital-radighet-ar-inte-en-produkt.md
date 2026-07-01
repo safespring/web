@@ -14,10 +14,10 @@ author: "Gabriel Paues"
 ---
 
 {{< ingress >}}
-I maj 2026 publicerade CivSec rapporten *Digital rådighet och strukturella beroenden*.[^1] Rapporten definierar digital rådighet som en organisations faktiska förmåga att kontrollera information, system och beslut över tid, även när leverantörer, avtal eller juridiska förutsättningar förändras.
+I maj 2026 publicerade CivSec rapporten Digital rådighet och strukturella beroenden. Rapporten definierar digital rådighet som en organisations faktiska förmåga att kontrollera information, system och beslut över tid, även när leverantörer, avtal eller juridiska förutsättningar förändras.
 {{< /ingress >}}
 
-CivSec kopplar frågan till NIS2, AI Act, DORA och den svenska cybersäkerhetslagen (2025:1506). Rapporten beskriver också ett gap mellan vad regelverken gör möjligt och vad organisationer faktiskt kräver när de upphandlar, dokumenterar och styr sina digitala miljöer.
+CivSec kopplar frågan till NIS2, AI Act, DORA och den svenska cybersäkerhetslagen (2025:1506).[^1] Rapporten beskriver också ett gap mellan vad regelverken gör möjligt och vad organisationer faktiskt kräver när de upphandlar, dokumenterar och styr sina digitala miljöer.
 
 Begreppet är relativt nytt. Frågorna är det inte.
 
