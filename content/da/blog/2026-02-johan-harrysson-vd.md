@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring positionerer sig til videre vækst: Udnævner Johan Harrysson til ny administrerende direktør"
+slug: "safespring-positionerer-sig-til-videre-vaekst-udnaevner-johan-harrysson-til-ny-administrerende-direktor"
 date: "2026-02-05"
 intro: "I forbindelse med direktørskiftet overtager Safesprings grundlægger og tidligere administrerende direktør, Fredric Wallsten, rollen som Chief Commercial Officer (CCO)."
 draft: false

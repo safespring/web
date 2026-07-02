@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring deltager i et fælles initiativ for at styrke den svenske IT-drift"
+slug: "safespring-deltager-i-et-faelles-initiativ-for-at-styrke-den-svenske-it-drift"
 date: "2023-06-27"
 publishDate: "2023-06-27"
 intro: "Safespring støtter initiativet Sveriges IT-driftnätverk med sin ekspertise og dedikation til digital suverænitet, databeskyttelse og GDPR-overholdelse."

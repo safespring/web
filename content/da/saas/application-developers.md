@@ -1,6 +1,7 @@
 ---
 language: "da"
 title: "Safespring – skalerbar og sikker infrastruktur til SaaS-virksomheder uden leverandørlåsning"
+slug: "safespring-skalerbar-og-sikker-infrastruktur-til-saas-virksomheder-uden-leverandorlasning"
 cardtitle: "Safespring for SaaS-virksomheder"
 date: 2024-09-13
 card: "safespring_card_21.svg"

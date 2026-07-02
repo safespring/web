@@ -1,5 +1,6 @@
 ---
 title: "Database som tjeneste med høy tilgjengelighet"
+slug: "database-som-tjeneste-med-hoy-tilgjengelighet"
 language: "nb"
 cardtitle: "Database-tjeneste"
 cardicon: "fa-solid fa-database"

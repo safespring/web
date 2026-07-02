@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Forstå Safespring Kubernetes Engine, hvis du normalt kører Kubernetes selv"
+slug: "forsta-safespring-kubernetes-engine-hvis-du-normalt-korer-kubernetes-selv"
 date: "2026-03-30"
 intro: "En praktisk guide til platformsteams, der ønsker at forstå tjenestegrænsen, standardindstillingerne og tekniske kompromiser i Safespring Kubernetes Engine."
 draft: false
@@ -15,9 +16,9 @@ language: "da"
 author: ""
 TOC: "I dette indlæg"
 sidebarlinkname: "Talos på OpenStack"
-sidebarlinkurl: "/deep-dive/anvendelse-af-talos-linux-og-opsætning-af-kubernetes-på-openstack/"
+sidebarlinkurl: "/deep-dive/anvendelse-af-talos-linux-og-opsaetning-af-kubernetes-pa-openstack/"
 sidebarlinkname2: "Cluster API på OpenStack"
-sidebarlinkurl2: "/deep-dive/udrul-kubernetes-med-talos-på-openstack-via-cluster-api/"
+sidebarlinkurl2: "/deep-dive/udrul-kubernetes-med-talos-pa-openstack-via-cluster-api/"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
@@ -49,7 +50,7 @@ termer end "administrerede Kubernetes".
 4. For mange teams er værdien ikke, at Kubernetes bliver "nemme", men at færre tilbagevendende platformsansvar skal ejes internt.
 5. Hvis dit team allerede kører Kubernetes selv, overføres den oplevelse stadig direkte, især omkring arbejdsbelastningsdesign, observerbarhed, adgangsmodeller, lageradfærd og trafikmønstre.
 
-{{< localbutton text="Gå til tjenestegrænsen" link="#tjenestegrænsen-i-praksis" >}}
+{{< localbutton text="Gå til tjenestegrænsen" link="#tjenestegraensen-i-praksis" >}}
 
 {{% /accordion %}}
 
@@ -81,7 +82,7 @@ konkrete platformstermer:
 Det gør det nemmere for platformsteams at vurdere tilbuddet som infrastruktur, ikke kun som
 produktmeddelelser.
 
-## Hvad du får på dag ét
+## Hvad du får på dag ét {#hvad-du-far-pa-dag-et}
 
 Baseret på den aktuelle Safespring-dokumentation er Safespring Kubernetes Engine dokumenteret med
 følgende platformsegenskaber:
@@ -100,7 +101,7 @@ Det er en meningsfuld mængde platforms overfladeareal, der skal defineres foran
 betyder, at tjenesten ikke kun handler om at få noder til at starte. Det handler også om at
 give teams en kendt måde at tænke på adgang, netværk, lagring og platformsdrift.
 
-## Tjenestegrænsen i praksis
+## Tjenestegrænsen i praksis {#tjenestegraensen-i-praksis}
 
 Hvis du er vant til selvadministrerede Kubernetes, hjælper det at læse tjenesten ikke som
 "hvad kan den?" men som "hvad ejer den allerede?"

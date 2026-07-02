@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Amelia Andersdotter tiltræder som seniorrådgiver"
+slug: "amelia-andersdotter-tiltraeder-som-seniorradgiver"
 date: "2023-09-01"
 intro: "Med sin mangeårige baggrund inden for politik, teknologi og kommunikation er Amelia en strategisk ressource, der i høj grad vil bidrage til Safesprings fortsatte udvikling."
 draft: true

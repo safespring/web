@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Gøteborgs universitet tar kontroll over sikkerhetskopiene sine"
+slug: "goteborgs-universitet-tar-kontroll-over-sikkerhetskopiene-sine"
 language: "nb"
 date: 2024-04-02
 draft: false

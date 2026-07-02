@@ -2,14 +2,16 @@
 title: "Compliant Kubernetes"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Compliant Kubernetes gives you all the benefits of a modern container platform running in Nordic data centers without you having to care about operations."
-background: "safespring-compute.jpg"
-form: "yes"
-sidebarlinkname: ""
-sidebarlinkurl: ""
-socialmedia: "safespring-compute.jpg"
-devops: ""
-section: "Public Cloud"
+intro: "Compliant Kubernetes gir deg alle fordelene ved en moderne containerplattform som kjører i nordiske datasentre, uten at du trenger å bekymre deg for drift."
+section: "Hvitbok"
+sidebarlinkname: "Hent"
+sidebarlinkicon: "fa-file-download"
+sidebarlinkurl: "#download"
+card: "safespring_card_37.jpg"
+eventbild: "safespring_background_37.jpg"
+socialmedia: "/blogg/socialmedia/safespring_social_37-2.gif"
+socialmediabild: "safespring_social_37-2.gif"
+toc: "Innhold"
 language: "nb"
 aliases:
   - /no/whitepaper/compliant-kubernetes/
@@ -18,6 +20,10 @@ aliases:
 {{% ingress %}}
 Organizations across all industries are adopting containers for increased agility, developer productivity and increased availability and performance.
 {{% /ingress %}}
+
+<span id="download"></span>
+
+## Compliance in container environments
 
 To orchestrate and manage this dynamic, new environment of smaller micro-services, Kubernetes has emerged as the de-facto standard.
 
@@ -32,6 +38,8 @@ Handling sensitive user data and adhering to regulations like GDPR, ISO-27001 or
 
 If your current environment has passed all audits, DevOps teams must make the case for containerization even louder as the current setup, even though inflexible and causing a slower software development lifecycle, is proven compliant. Aspects such as network segmentation, firewalls, role-based access control, secret handling, vulnerability (antivirus) scanning and updates are all done differently in containerized environments.
 
+## Operational requirements
+
 Although historically known as hard to set up, getting a Kubernetes cluster up and running today is basically a few clicks away. Operating it in production with real workloads while handling sensitive user data is still a major challenge though, especially under heavy security requirements or regulatory restrictions.
 
 ![Compliant Kubernetes on Safespring Compute](/img/safespring_compliant_kubernetes-pyramide.svg)
@@ -41,6 +49,8 @@ _A process has started to connect Safespring's cloud platform to Sjunet in Swede
 In addition to monitoring the clusters 24/7 for both health metrics and suspicious external activity, operating a cluster also means doing constant platform lifecycle management - upgrading, testing and patching when security vulnerabilities arrive. Keeping up to date with Common Vulnerabilities and Exposures (CVEs), managing backups and operating ancillary services like logging and monitoring also add to the work burden of your operations team.
 
 In essence, the challenge is how to increase software agility through containerization while guaranteeing security and compliance for your business.
+
+## Compliant Kubernetes on Safespring
 
 Elastisys Welkin is a Cloud Native Computing Foundation (CNCF) certified Kubernetes distribution that comes prepackaged with security hardened configurations and open source components according to best practices. Elastisys provides the Kubernetes platform, while Safespring provides the Compute infrastructure it runs on.
 

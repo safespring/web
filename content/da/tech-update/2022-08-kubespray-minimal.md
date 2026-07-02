@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Opsætning af en minimal Kubernetes-klynge på Safespring med Kubespray"
+slug: "opsaetning-af-en-minimal-kubernetes-klynge-pa-safespring-med-kubespray"
 date: "2022-08-22"
 intro: "Safespring er en cloudplatform baseret på OpenStack. Dette indlæg viser én måde, hvorpå du kan komme fra nul ressourcer til en minimal Kubernetes-klynge udelukkende ved hjælp af kode."
 draft: false

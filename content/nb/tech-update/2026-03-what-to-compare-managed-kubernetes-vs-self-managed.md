@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Forstå Safespring Kubernetes Engine hvis du vanligvis kjører Kubernetes selv"
+slug: "forsta-safespring-kubernetes-engine-hvis-du-vanligvis-kjorer-kubernetes-selv"
 date: "2026-03-30"
 intro: "En praktisk veiledning for plattformteam som ønsker å forstå tjenestegrensene, standardinnstillingene og tekniske avveininger i Safespring Kubernetes Engine."
 draft: false
@@ -15,9 +16,9 @@ language: "nb"
 author: ""
 TOC: "I dette innlegget"
 sidebarlinkname: "Talos på OpenStack"
-sidebarlinkurl: "/deep-dive/bruk-av-talos-linux-og-oppstart-av-kubernetes-på-openstack/"
+sidebarlinkurl: "/deep-dive/bruk-av-talos-linux-og-oppstart-av-kubernetes-pa-openstack/"
 sidebarlinkname2: "Cluster API på OpenStack"
-sidebarlinkurl2: "/deep-dive/distribuer-talos-kubernetes-på-openstack-ved-hjelp-av-cluster-api/"
+sidebarlinkurl2: "/deep-dive/distribuer-talos-kubernetes-pa-openstack-ved-hjelp-av-cluster-api/"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
@@ -82,7 +83,7 @@ konkrete plattformtermer:
 Det gjør det lettere for plattformteam å vurdere tilbudet som infrastruktur, ikke bare som
 produktmeldinger.
 
-## Hva du får på dag én
+## Hva du får på dag én {#hva-du-far-pa-dag-en}
 
 Basert på gjeldende Safespring-dokumentasjon, er Safespring Kubernetes Engine dokumentert med
 følgende plattformegenskaper:

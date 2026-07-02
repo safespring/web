@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Objektlagring med S3-protokollen giver dig ubegrænset fleksibilitet"
+slug: "objektlagring-med-s3-protokollen-giver-dig-ubegraenset-fleksibilitet"
 language: "da"
 date: 2018-06-20
 draft: false

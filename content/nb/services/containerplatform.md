@@ -21,7 +21,7 @@ sidebartext: "Vil du snakke om tjenesten? Ta gjerne kontakt hvis du har spørsm�
 sidebarphone: "+46 76-629 25 02"
 sidebarmail: "hello@safespring.com"
 sidebarlinkname2: "Teknisk fordypning"
-sidebarlinkurl2: "/tekniske-oppdateringer/forstå-safespring-kubernetes-engine-hvis-du-vanligvis-kjører-kubernetes-selv/"
+sidebarlinkurl2: "/deep-dive/forsta-safespring-kubernetes-engine-hvis-du-vanligvis-kjorer-kubernetes-selv/"
 showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
@@ -99,14 +99,14 @@ Når du vil validere arkitektur, ansvarsfordeling og driftsmodell, er dette de m
 {{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
   {{< manual-document-row
     title="Hva du får fra dag én"
-    href="/tekniske-oppdateringer/forstå-safespring-kubernetes-engine-hvis-du-vanligvis-kjører-kubernetes-selv/#hva-du-får-på-dag-én"
+    href="/deep-dive/forsta-safespring-kubernetes-engine-hvis-du-vanligvis-kjorer-kubernetes-selv/#hva-du-far-pa-dag-en"
     icon="fa-solid fa-list-check"
     label="Deep Dives"
     description="De dokumenterte plattformstandardene fra start."
   >}}
   {{< manual-document-row
     title="Tjenestegrensen i praksis"
-    href="/tekniske-oppdateringer/forstå-safespring-kubernetes-engine-hvis-du-vanligvis-kjører-kubernetes-selv/#tjenestegrensen-i-praksis"
+    href="/deep-dive/forsta-safespring-kubernetes-engine-hvis-du-vanligvis-kjorer-kubernetes-selv/#tjenestegrensen-i-praksis"
     icon="fa-solid fa-people-arrows"
     label="Deep Dives"
     description="Hvordan ansvar og operative grenser er fordelt mellom Safespring og teamet deres."

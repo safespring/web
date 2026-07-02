@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Høringssvar til it-drift-udredningen"
+slug: "horingssvar-til-it-drift-udredningen"
 date: "2022-05-11"
 intro: "Vores svar fokuserer ikke primært på specialsystemer, men på myndigheders behov for innovative, standardiserede it-systemer og -tjenester for fortsat at digitalisere og udvikle opgaveløsningen."
 draft: false

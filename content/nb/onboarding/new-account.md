@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Innføring i Safespring"
+slug: "innforing-i-safespring"
 date: 2024-09-23T13:05:26+02:00
 draft: false
 intro: "Velkommen til Safesprings onboarding-side! Vi er glade for å ha deg her og ser frem til å hjelpe deg i gang med tjenestene våre."

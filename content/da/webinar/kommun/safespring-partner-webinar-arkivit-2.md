@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Sætte et byggeprojekt i bero: Kan man sætte alle ændrings-, tillægs- og fradragsarbejder på pause i 12 år?"
+slug: "saette-et-byggeprojekt-i-bero-kan-man-saette-alle-aendrings-tillaegs-og-fradragsarbejder-pa-pause-i-12-ar"
 language: "da"
 episode: "2"
 series: "true"

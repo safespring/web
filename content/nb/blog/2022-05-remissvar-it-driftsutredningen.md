@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Høringssvar til IT-driftsutredningen"
+slug: "horingssvar-til-it-driftsutredningen"
 date: "2022-05-11"
 intro: "Vårt svar retter seg ikke først og fremst mot spesialsystemer, men mot myndighetenes behov for innovative, standardiserte IT-systemer og tjenester for å fortsette å digitalisere og utvikle virksomheten."
 draft: false

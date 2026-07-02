@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Yderligere to dataoverførselsaftaler mellem USA og EU kan blive erklæret ugyldige"
+slug: "yderligere-to-dataoverforselsaftaler-mellem-usa-og-eu-kan-blive-erklaeret-ugyldige"
 date: "2019-07-09"
 draft: false
 tags: ["Svenska"]

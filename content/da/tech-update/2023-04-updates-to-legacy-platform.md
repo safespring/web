@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Vigtig opdatering vedrørende EOL for legacy-platformen i STO1"
+slug: "vigtig-opdatering-vedrorende-eol-for-legacy-platformen-i-sto1"
 date: "2023-04-18"
 publishDate: "2023-04-18"
 intro: "Vi vil gerne informere dig om, at vores legacy-platform i STO1 bliver lukket ned den 1. maj 2023."

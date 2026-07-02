@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Hvordan bør vi forholde os til cloudtjenester?"
+slug: "hvordan-bor-vi-forholde-os-til-cloudtjenester"
 episode: "2"
 series: "true"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.jpg"

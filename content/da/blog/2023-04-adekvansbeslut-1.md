@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Hvad er relevansen i en ny tilstrækkelighedsafgørelse?"
+slug: "hvad-er-relevansen-i-en-ny-tilstraekkelighedsafgorelse"
 date: "2023-04-17"
 intro: "I denne tekst analyseres EU-Kommissionens tilstrækkelighedsafgørelse for dataoverførsler til USA og dens indvirkning på europæiske organisationer og borgeres rettigheder. Vi drøfter også strategier til at sikre digital suverænitet og langsigtet bæredygtighed i it-miljøer for europæiske virksomheder og myndigheder."
 draft: true

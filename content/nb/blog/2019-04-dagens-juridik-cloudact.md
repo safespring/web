@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Amerikanske skyleverandører kan bli nødt til å velge hvilken lov de bryter"
+slug: "amerikanske-skyleverandorer-kan-bli-nodt-til-a-velge-hvilken-lov-de-bryter"
 date: "2019-04-05T12:00:13+02:00"
 draft: false
 tags: ["Svenska"]

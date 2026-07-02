@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Vi har lavet en guide, der hjælper dig med at vælge en backuptjeneste."
+slug: "vi-har-lavet-en-guide-der-hjaelper-dig-med-at-vaelge-en-backuptjeneste"
 intro: "Vores backup-tjenester findes i tre forskellige varianter, og med guiden får I en vejledning"
 date: "2018-01-22"
 draft: false

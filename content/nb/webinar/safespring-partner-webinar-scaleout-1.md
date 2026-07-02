@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Maskinlæring - fra idé til pilot og produksjon"
+slug: "maskinlaering-fra-ide-til-pilot-og-produksjon"
 language: "nb"
 publishDate: "2020-09-03T13:58:35+02:00"
 draft: false

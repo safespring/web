@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Safespring SWAMID personvernerklæring"
+slug: "safespring-swamid-personvernerklaering"
 date: 2022-12-07T08:29:26+02:00
 draft: false
 intro: "Policy for behandling av personopplysninger innenfor virkeområdet til identitetsleverandøren (IdP) slik fastsatt av Safespring"

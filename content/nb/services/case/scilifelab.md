@@ -1,5 +1,6 @@
 ---
 title: "En fleksibel og sikker skyløsning for forskning innen livsvitenskap "
+slug: "en-fleksibel-og-sikker-skylosning-for-forskning-innen-livsvitenskap"
 language: "nb"
 date: 2023-06-01
 draft: false

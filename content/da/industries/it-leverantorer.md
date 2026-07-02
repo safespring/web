@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "IT-leverandører"
+slug: "it-leverandorer"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Vores ydelser er alsidige og danner et stærkt fundament for mange forskellige anvendelsesområder, og derfor har vi erfaring fra mange forskellige brancher og sektorer."

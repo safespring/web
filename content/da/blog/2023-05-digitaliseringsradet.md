@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Sådan bør regeringen styrke sin it-strategi gennem Digitaliseringsrådet"
+slug: "sadan-bor-regeringen-styrke-sin-it-strategi-gennem-digitaliseringsradet"
 date: "2023-05-29"
 publishDate: "2023-05-29"
 intro: "Digitaliseringsrådet har fået fornyet mandat frem til 2026. Samtidig ligger prop. 2022/23:97 til beslutning om undtagelser fra tavshedspligten ved udkontraktering af it-drift."

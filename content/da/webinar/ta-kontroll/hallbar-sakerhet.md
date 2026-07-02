@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Bæredygtig sikkerhed"
+slug: "baeredygtig-sikkerhed"
 section: "Tag kontrol"
 episode: "6"
 series: "true"

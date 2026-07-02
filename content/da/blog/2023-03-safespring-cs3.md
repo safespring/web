@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring præsenterer Sunet Drive på CS3-konferencen"
+slug: "safespring-praesenterer-sunet-drive-pa-cs3-konferencen"
 date: "2023-03-03"
 intro: "Ved at deltage i konferencer som CS3 kan vi dele ud af vores ekspertise og samarbejde med andre eksperter inden for videnskabeligt samarbejde for at udvikle og forbedre vores ydelser."
 draft: false

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring opkræver ingen trafikgebyrer."
+slug: "safespring-opkraever-ingen-trafikgebyrer"
 date: "2023-03-20"
 intro: "Egress-omkostninger, eller udgående trafikomkostninger, er en omkostning, der ofte bliver glemt, når man bruger infrastruktur som en tjeneste, men som er en almindelig form for leverandørindlåsning."
 draft: false

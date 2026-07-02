@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Nem håndtering af fremmøde og ressourceplanlægning i daginstitutionerne"
+slug: "nem-handtering-af-fremmode-og-ressourceplanlaegning-i-daginstitutionerne"
 language: "da"
 episode: "5"
 series: "true"

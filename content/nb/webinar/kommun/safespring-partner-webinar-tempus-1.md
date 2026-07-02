@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Enkel håndtering av tilstedeværelse og ressursplanlegging i barnehagen"
+slug: "enkel-handtering-av-tilstedevaerelse-og-ressursplanlegging-i-barnehagen"
 language: "nb"
 episode: "5"
 series: "true"

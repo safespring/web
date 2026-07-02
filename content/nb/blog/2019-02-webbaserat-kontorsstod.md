@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Alle skal kunne jobbe sikkert med nettbaserte kontorverktøy"
+slug: "alle-skal-kunne-jobbe-sikkert-med-nettbaserte-kontorverktoy"
 date: "2019-02-22T14:51:25+01:00"
 draft: false
 tags: ["Svenska"]

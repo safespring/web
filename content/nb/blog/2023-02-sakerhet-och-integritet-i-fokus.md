@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring støtter Europas selvforsyning innen teknologi"
+slug: "safespring-stotter-europas-selvforsyning-innen-teknologi"
 date: "2023-02-22"
 publishDate: "2023-02-17"
 intro: "Les om Safesprings støtte til Europas selvforsyning på teknologiområdet. Safespring diskuterer viktigheten av økt selvforsyningsgrad for å sikre integriteten til organisasjoner og individer, og oppmuntrer til samarbeid i den europeiske teknologisektoren."

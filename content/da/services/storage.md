@@ -1,5 +1,6 @@
 ---
 title: "Safespring S3: Skalerbar og højtydende objektlagring"
+slug: "safespring-s3-skalerbar-og-hojtydende-objektlagring"
 language: "da"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"

@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "IT-leverandører"
+slug: "it-leverandorer"
 date: 2019-01-09T10:47:25+01:00
 draft: false
 intro: "Våre tjenester er allsidige og utgjør et svært godt fundament for mange ulike bruksområder, og vi har derfor erfaring fra en rekke bransjer og sektorer."

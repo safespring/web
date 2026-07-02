@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Lær å lykkes med containere og Kubernetes"
+slug: "laer-a-lykkes-med-containere-og-kubernetes"
 language: "nb"
 publishDate: "2020-05-05"
 draft: false

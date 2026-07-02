@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Uro rundt EU–US Data Privacy Framework: Derfor bør dataoverføring til tredjeland unngås"
+slug: "uro-rundt-euus-data-privacy-framework-derfor-bor-dataoverforing-til-tredjeland-unngas"
 date: "2023-04-05"
 intro: "Usikkerheten rundt EU-US Data Privacy Framework og konsekvensene for virksomheter som overfører personopplysninger mellom EU og USA."
 draft: true

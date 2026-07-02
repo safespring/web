@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Beste praksis for SSH-nøkler i skyen/OpenStack"
+slug: "openstack"
 date: "2022-03-17"
 intro: "La oss gå gjennom noen anbefalte fremgangsmåter for håndtering av SSH-nøkler og avklare vanlige misforståelser."
 draft: false

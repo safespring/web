@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Bærekraftig sikkerhet"
+slug: "baerekraftig-sikkerhet"
 section: "Ta kontroll"
 episode: "6"
 series: "true"

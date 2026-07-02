@@ -20,15 +20,15 @@ aliases:
 ---
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsåtgärder" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsåtgärder" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsatgarder" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsatgarder" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-file-alt" text="White Paper om adekvansbeslutet" link="/whitepaper/eu-us-dpf/" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" linkref="/data-centers.md" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
-## Externa dataskyddsåtgärder
+## Externa dataskyddsåtgärder {#externa-dataskyddsatgarder}
 
 I dataskydds- och GDPR-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar uteslutande om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat [rekommendationer för organisationer](/whitepaper/eu-us-dpf/#rekommendationer) som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
 
@@ -129,7 +129,7 @@ Central blocklagring för ökad redundans: Som en del av vår tjänst erbjuder v
 
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federerad maskininlärning" linkref="/services/case/scaleout.md" linktext="Läs Use Case" text="“Det finns ett värde i att kritisk infrastruktur finns på plats i Sverige där vi inte är beroende av andra länders lagstiftningar...“ – Ebba Kreamer, Scaleout" >}}
 
-## Interna dataskyddsåtgärder
+## Interna dataskyddsåtgärder {#interna-dataskyddsatgarder}
 
 Interna dataskyddsåtgärder är sådana som Safespring implementerar för personuppgifter vi själva ansvarar för. Vi är ett molnbolag som är verksamma mot andra företag. Vår kommersiella verksamhet omfattar personuppgifter i ytterst begränsad omfattning. I produktion hanteras endast användarnamn och lösenord till användare i plattformen.
 

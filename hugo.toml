@@ -2,6 +2,7 @@ baseURL = "https://beta.safespring.eu/"
 author = "Safespring"
 copyright = "2025 Safespring"
 refLinksErrorLevel = 'warning'
+removePathAccents = true
 
 # Pagination
 [pagination]
@@ -246,6 +247,8 @@ lang = 'da'
     hardWraps = false
     unsafe = true
     xhtml = false
+  [markup.goldmark.parser]
+    autoIDType = 'github-ascii'
   [markup.goldmark.extensions]
     footnote = true
 

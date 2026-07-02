@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Bedste praksis for SSH-nøgler i Cloud/OpenStack"
+slug: "openstack"
 date: "2022-03-17"
 intro: "Lad os gennemgå nogle bedste fremgangsmåder for håndtering af SSH-nøgler og afklare almindelige misforståelser."
 draft: false

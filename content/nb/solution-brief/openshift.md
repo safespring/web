@@ -1,5 +1,6 @@
 ---
 title: "OpenShift kjører smidig på Safesprings plattform"
+slug: "openshift-kjorer-smidig-pa-safesprings-plattform"
 date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["Norsk"]

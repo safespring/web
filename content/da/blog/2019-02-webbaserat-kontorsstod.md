@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Alle bør kunne arbejde sikkert i webbaserede kontorprogrammer"
+slug: "alle-bor-kunne-arbejde-sikkert-i-webbaserede-kontorprogrammer"
 date: "2019-02-22T14:51:25+01:00"
 draft: false
 tags: ["Svenska"]

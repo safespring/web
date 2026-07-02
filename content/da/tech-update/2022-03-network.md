@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Forklaring af Safesprings netværksmodel"
+slug: "forklaring-af-safesprings-netvaerksmodel"
 date: "2022-03-24"
 intro: "Folk er forvirrede over netværksstakken i Safesprings OpenStack-beregningsplatform. Lad os se nærmere på den og forklare."
 draft: false

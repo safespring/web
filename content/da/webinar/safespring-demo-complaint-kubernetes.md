@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Norsk Kubernetes til beskyttelsesværdige data"
+slug: "norsk-kubernetes-til-beskyttelsesvaerdige-data"
 language: "da"
 publishDate: "2021-10-12"
 draft: false

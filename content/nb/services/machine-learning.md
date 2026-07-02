@@ -1,5 +1,6 @@
 ---
 title: "Maskinlæring og AI med GPU-ressurser"
+slug: "maskinlaering-og-ai-med-gpu-ressurser"
 section: "Public Cloud"
 language: "nb"
 cardtitle: "AI & ML-tjenester"

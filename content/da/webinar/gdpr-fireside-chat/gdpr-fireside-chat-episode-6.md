@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Nyt præsidentielt dekret: Er amerikanske skytjenester nu lovlige?"
+slug: "nyt-praesidentielt-dekret-er-amerikanske-skytjenester-nu-lovlige"
 language: "da"
 episode: "6"
 series: "true"

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "OpenShift kører problemfrit på Safesprings platform"
+slug: "openshift-korer-problemfrit-pa-safesprings-platform"
 date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["English"]

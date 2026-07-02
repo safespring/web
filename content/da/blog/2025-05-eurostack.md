@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "EuroStacks andet åbne brev: Køb, sælg og finansier europæisk!"
+slug: "eurostacks-andet-abne-brev-kob-saelg-og-finansier-europaeisk"
 date: 2025-05-07
 intro: "I takt med at det geopolitiske pres tiltager, skal Europa 'Go European' og udrulle EuroStack på tværs af EU inden 2030 for at sikre vores digitale fremtid."
 draft: false

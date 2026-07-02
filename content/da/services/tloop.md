@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Bæredygtig privat cloud i T.Loops Data Energy Center"
+slug: "baeredygtig-privat-cloud-i-t-loops-data-energy-center"
 section: "Administreret infrastruktur"
 language: "da"
 date: 2024-02-06

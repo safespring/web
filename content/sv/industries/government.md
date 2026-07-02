@@ -26,12 +26,12 @@ TOC: "På denna sida"
 ---
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-balance-scale" text="Juridisk säkerhet" link="#juridisk-säkerhet" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-leaf" text="Hållbarhet" link="#hållbarhet" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-balance-scale" text="Juridisk säkerhet" link="#juridisk-sakerhet" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-leaf" text="Hållbarhet" link="#hallbarhet" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-handshake" text="Politisk säkerhet" link="" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-code-branch" text="Öppna standarder" link="#öppna-standarder" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-code-branch" text="Öppna standarder" link="#oppna-standarder" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-file-signature" text="Ramavtal" link="#ramavtal" color="#FA690F">}}
-{{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="#öppen-källkod" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-code" text="Öppen källkod" link="#oppen-kallkod" color="#195F8C">}}
 {{< /icon-block-container >}}
 
 ## Svenska molntjänster
@@ -67,19 +67,19 @@ Kontakta oss för att diskutera vidare hur vi kan hjälpa dig att använda lagli
 
 Upptäck molntjänster byggda på öppenhet, hållbarhet och säkerhet. Med vårt engagemang för öppna standarder och gröna datacenter, erbjuder vi en trygg och effektiv molnplattform. Läs vidare för att se vad som gör Safespring unikt.
 
-### Öppen källkod
+### Öppen källkod {#oppen-kallkod}
 
 Alla Safesprings molntjänster är byggda med öppen källkodskomponenter eftersom dessa är branschstandard och är de tekniskt mest avancerade programvarorna som finns.
 
-### Öppna standarder
+### Öppna standarder {#oppna-standarder}
 
 Alla Safesprings molntjänster använder öppna standarder eftersom vi, till skillnad från flera av våra konkurrenter, inte tror på leverantörsinlåsning. Vi tror instället att vi är så bra och kostnadseffektiva att kunderna vill stanna kvar av fri vilja.
 
-### Hållbarhet
+### Hållbarhet {#hallbarhet}
 
 Alla Safesprings molntjänster levereras från moderna och hållbara datacenter i Sverige. Exempelvis använder vi endast grön el, har hög energieffektivitet och tar till vara på restvärmen.
 
-### Juridisk säkerhet
+### Juridisk säkerhet {#juridisk-sakerhet}
 
 Eftersom Safespring är ett svenskt personalägt företag med datacenter i Sverige behöver du inte fundera över om kommande domar från EU-domstolen kommer påverka t.ex. er personuppgiftsbehandling.
 

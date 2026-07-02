@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Amerikanske cloududbydere kan blive nødt til at vælge, hvilken lov de vil bryde"
+slug: "amerikanske-cloududbydere-kan-blive-nodt-til-at-vaelge-hvilken-lov-de-vil-bryde"
 date: "2019-04-05T12:00:13+02:00"
 draft: false
 tags: ["Svenska"]

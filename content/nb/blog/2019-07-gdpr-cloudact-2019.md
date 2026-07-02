@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Ytterligere to dataoverføringsavtaler mellom USA og EU kan ugyldiggjøres"
+slug: "ytterligere-to-dataoverforingsavtaler-mellom-usa-og-eu-kan-ugyldiggjores"
 date: "2019-07-09"
 draft: false
 tags: ["Svenska"]

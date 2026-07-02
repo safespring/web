@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Når du vil, må eller blir tvunget til å forlate en amerikansk skyleverandør"
+slug: "nar-du-vil-ma-eller-blir-tvunget-til-a-forlate-en-amerikansk-skyleverandor"
 date: 2025-03-26
 intro: "Uansett hvorfor du går, står du overfor Exit-dilemmaet."
 draft: false

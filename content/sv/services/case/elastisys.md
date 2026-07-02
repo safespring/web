@@ -20,7 +20,7 @@ sidebarwhitepaper: ""
 service: "Safespring Compute"
 aliases:
   - /tjanster/case/elastisys/
-  - /losningsfaktablad/welkin-på-safespring/
+  - /losningsfaktablad/welkin-pa-safespring/
   - /solution-brief/compliant-kubernetes/
 ---
 

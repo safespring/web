@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Slip ud af VMware-fælden?"
+slug: "slip-ud-af-vmware-faelden"
 date: 2024-08-30
 intro: "VMware-brugere fik vendt op og ned på deres verden, da Broadcom i 2024 besluttede at foretage en hurtig ændring af brugervilkårene for VMware-softwaren."
 draft: false

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Oprettelse og administration af SSH-nøgler i OpenStack"
+slug: "oprettelse-og-administration-af-ssh-nogler-i-openstack"
 section: ""
 episode: "1"
 series: "true"

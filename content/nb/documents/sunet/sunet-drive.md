@@ -2,6 +2,7 @@
 ai: true
 language: "nb"
 title: "Sunet Drive-løsning for filsynkronisering og deling"
+slug: "sunet-drive-losning-for-filsynkronisering-og-deling"
 section: "Løsningsnotat"
 date: 2021-04-12T11:29:26+02:00
 draft: false

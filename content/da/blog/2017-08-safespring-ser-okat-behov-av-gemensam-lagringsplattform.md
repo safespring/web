@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Safespring ser øget behov for en fælles lagringsplatform"
+slug: "safespring-ser-oget-behov-for-en-faelles-lagringsplatform"
 date: "2017-08-28"
 draft: false
 tags: ["Svenska"]

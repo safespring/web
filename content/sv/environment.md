@@ -13,11 +13,11 @@ slug: "miljo-och-hallbarhet"
 ---
 
 {{< icon-block-container >}}
-{{< icon-block icon="fa-solid fa-leaf" text="100% Förnyelsebara energikällor" link="#safesprings-hållbarhetsarbete" color="#32cd32">}}
-{{< icon-block icon="fa-solid fa-recycle" text="Hållbar återvinning" link="#resursutnyttjande-och-återanvändning" color="#195F8C">}}
+{{< icon-block icon="fa-solid fa-leaf" text="100% Förnyelsebara energikällor" link="#safesprings-hallbarhetsarbete" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-recycle" text="Hållbar återvinning" link="#resursutnyttjande-och-ateranvandning" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-thermometer-three-quarters" text="Värme­återvinning" link="#safespring-stockholm-norr" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-route" text="Resurs­effektivisering" link="#miljöhänsyn-vid-inköp-och-upphandling" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-award" text="ISO 14001 ramverk" link="#iso-14001-ramverk-för-vår-miljöpolicy" color="#FA690F">}}
+{{< icon-block icon="fa-solid fa-route" text="Resurs­effektivisering" link="#miljohansyn-vid-inkop-och-upphandling" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-award" text="ISO 14001 ramverk" link="#iso-14001-ramverk-for-var-miljopolicy" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-hand-holding-water" text="Adiabatisk kylsystems­teknologi" link="#safespring-oslo" color="#195F8C">}}
 {{< /icon-block-container >}}
 
@@ -35,7 +35,7 @@ Men det är inte bara vår användning av förnybar energi som gör oss till en 
 
 Vi på Safespring kommer fortsätta att arbeta för att minska vår miljöpåverkan och fortsätta att vara en hållbar verksamhet. Vi är stolta över vårt miljöarbete och vi är fast beslutna att göra vår del för att skydda vår planet
 
-## Safesprings hållbarhetsarbete
+## Safesprings hållbarhetsarbete {#safesprings-hallbarhetsarbete}
 
 {{< ingress >}}
 Safesprings mål är att bidra till en renare värld genom att leverera infrastrukturtjänster av hög kvalitet till våra kunder i Norden, så att de kan producera sina tjänster utan egen investering i hårdvara. Detta kommer att betyda lägre koldioxid-utsläpp.
@@ -54,7 +54,7 @@ Som ett medelstort företag som arbetar med produkter och tjänster som inte fö
 - Safespring deltar i olika nationella återvinningsarrangemang som retur av begagnad elektronisk utrustning och källsortering.
 - Avfall återvinns i den mån det är möjligt (lokala myndigheter och husägare förbereder och organiserar).
 
-### ISO 14001 Ramverk för vår miljöpolicy
+### ISO 14001 Ramverk för vår miljöpolicy {#iso-14001-ramverk-for-var-miljopolicy}
 
 Safespring använder ISO 14001:2004 som ramverk för vårt miljöarbete. Standarden fungerar som ett ramverk för att hjälpa organisationer att utveckla sina egna miljöhanteringssystem.
 
@@ -67,11 +67,11 @@ Safespring fokuserar med avseende på ISO 14001 främst på minskade koldioxidav
 {{< icon-block-horisontal icon="fa-solid fa-recycle" color="#195F8C" description="Återvinna allt material på ett klimatsmart och hållbart sätt, för att minska vårt avfall och stödja en cirkulär ekonomi." text="Hållbar återvinning" >}}
 {{< icon-block-horisontal icon="fa-solid fa-chalkboard-teacher" color="#195F8C" description="Ständig utbildning och information till Safesprings personal om vårt miljöarbete för att främja en hållbar arbetskultur." text="Utbildning i hållbarhet" >}}
 
-### Miljöhänsyn vid inköp och upphandling
+### Miljöhänsyn vid inköp och upphandling {#miljohansyn-vid-inkop-och-upphandling}
 
 I den utsträckning som är möjligt använder vi moderna energieffektiva lösningar för att producera våra tjänster. Den hårdvara som används i våra datacenter moderniseras löpande för att vara så energisnål och effektiv som möjligt. Vid inköp och upphandling tas alltid miljöaspekten med i beslutsfattandet för att säkerställa att vi når våra satta miljömål.
 
-### Resursutnyttjande och återanvändning
+### Resursutnyttjande och återanvändning {#resursutnyttjande-och-ateranvandning}
 
 Hårdvaran som ligger till grund för vår plattform återanvänds i vår interna utveckling när den inte är lämpad för produktion så långt det går innan den återvinns på ett klimatsmart och hållbart sätt.
 

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Brug af en bastion-vært til vedvarende adgang til Safesprings API'er"
+slug: "brug-af-en-bastion-vaert-til-vedvarende-adgang-til-safesprings-apier"
 date: "2022-09-06"
 intro: "Lær at opsætte en jump host for øget sikkerhed og nem adgang til Safesprings API'er, når du er på farten."
 draft: false

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Opsummering og næste skridt"
+slug: "opsummering-og-naeste-skridt"
 section: "Design og idriftsættelse af skalerbare applikationer på Kubernetes"
 episode: "7"
 series: "true"

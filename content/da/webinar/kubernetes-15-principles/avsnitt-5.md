@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Avancerede udrulningsstrategier & tilgængelighed"
+slug: "avancerede-udrulningsstrategier-tilgaengelighed"
 section: "Design og udrulning af skalerbare applikationer på Kubernetes"
 episode: "5"
 series: "true"

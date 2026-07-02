@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Meta bødefældt for dataovertrædelser: Er det blot et symbolsk tiltag eller reel forandring?"
+slug: "meta-bodefaeldt-for-dataovertraedelser-er-det-blot-et-symbolsk-tiltag-eller-reel-forandring"
 date: "2023-05-24"
 publishDate: "2023-05-24"
 intro: "Fredric skriver i denne artikel om, hvorfor USA og EU ikke vil blive enige om en dataoverførselsaftale, der holder i længden, inden for overskuelig fremtid."

@@ -1,5 +1,6 @@
 ---
 title: "EU-domstolens ugyldiggjøring av Privacy Shield"
+slug: "eu-domstolens-ugyldiggjoring-av-privacy-shield"
 date: 2020-07-06T09:42:10+02:00
 draft: false
 intro: "Forutsetninger og anbefalinger for offentlig sektor og leverandører til offentlig sektor."

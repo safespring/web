@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Øg kommunens samfundsnytte med en digital assistent"
+slug: "og-kommunens-samfundsnytte-med-en-digital-assistent"
 language: "da"
 episode: "1"
 series: "true"

@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Sunet Drive-løsning til synkronisering og deling af filer"
+slug: "sunet-drive-losning-til-synkronisering-og-deling-af-filer"
 section: "Løsningsoversigt"
 date: 2021-04-12T11:29:26+02:00
 draft: false

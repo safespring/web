@@ -1,5 +1,6 @@
 ---
 title: "Fødereret AI med FEDn på Safespring"
+slug: "fodereret-ai-med-fedn-pa-safespring"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
 language: "da"

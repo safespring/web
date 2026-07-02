@@ -15,9 +15,9 @@ language: "sv"
 author: ""
 TOC: "I det här inlägget"
 sidebarlinkname: "Talos på OpenStack"
-sidebarlinkurl: "/deep-dive/använda-talos-linux-och-initiera-kubernetes-på-openstack/"
+sidebarlinkurl: "/deep-dive/anvanda-talos-linux-och-initiera-kubernetes-pa-openstack/"
 sidebarlinkname2: "Cluster API på OpenStack"
-sidebarlinkurl2: "/deep-dive/distribuera-talos-kubernetes-i-openstack-med-hjälp-av-cluster-api/"
+sidebarlinkurl2: "/deep-dive/distribuera-talos-kubernetes-i-openstack-med-hjalp-av-cluster-api/"
 aliases:
   - /blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
   - /blogg/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/
@@ -66,7 +66,7 @@ Det som är mer intressant i Safesprings fall är att tjänstegränsen dokumente
 
 Det gör det enklare för plattformsteam att utvärdera erbjudandet som infrastruktur, inte bara som produktbudskap.
 
-## Vad du får dag ett
+## Vad du får dag ett {#vad-du-far-dag-ett}
 
 Utifrån den aktuella Safespring-dokumentationen beskrivs Safespring Kubernetes Engine med följande plattformsegenskaper:
 

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "OpenStack Cinder CSI-volumklargjører"
+slug: "openstack-cinder-csi-volumklargjorer"
 date: "2024-03-13"
 intro: "Denne guiden er utformet for å hjelpe deg med å integrere Cinder CSI Volume Provisioner i OKD- eller OpenShift-klyngen din på en enkel måte."
 draft: false

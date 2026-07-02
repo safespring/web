@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Bærekraftig privatsky i T.Loops Data Energy Center"
+slug: "baerekraftig-privatsky-i-t-loops-data-energy-center"
 section: "Administrert infrastruktur"
 language: "nb"
 date: 2024-02-06

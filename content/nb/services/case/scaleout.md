@@ -1,5 +1,6 @@
 ---
 title: "Scaleout Systems leverer GDPR-sikker maskinlæring med Safespring"
+slug: "scaleout-systems-leverer-gdpr-sikker-maskinlaering-med-safespring"
 language: "nb"
 date: 2023-10-16
 draft: false

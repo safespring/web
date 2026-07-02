@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Artikler om digital suverænitet, GDPR og CLOUD Act"
+slug: "artikler-om-digital-suveraenitet-gdpr-og-cloud-act"
 date: "2019-11-19T08:03:13+02:00"
 draft: false
 tags: ["English"]

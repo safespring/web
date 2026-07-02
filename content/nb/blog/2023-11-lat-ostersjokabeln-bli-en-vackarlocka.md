@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Kommentar: La Østersjøkabelen bli en vekker"
+slug: "kommentar-la-ostersjokabelen-bli-en-vekker"
 date: "2023-11-13"
 intro: "Å investere i digital infrastruktur er ikke bare et spørsmål om nasjonal sikkerhet; det er også en mulighet til å øke teknologikompetansen i Sverige."
 draft: false

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Anvendelse af Talos Linux og opsætning af Kubernetes på OpenStack"
+slug: "anvendelse-af-talos-linux-og-opsaetning-af-kubernetes-pa-openstack"
 date: 2025-03-03
 intro: "Vi anser automatisering, sikkerhed og de gængse IaC-værktøjer for at være den hellige treenighed bag en robust Kubernetes-platformløsning."
 draft: false

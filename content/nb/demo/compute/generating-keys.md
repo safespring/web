@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Opprett og administrer SSH-nøkler i OpenStack"
+slug: "opprett-og-administrer-ssh-nokler-i-openstack"
 section: ""
 episode: "1"
 series: "true"

@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Safespring præsenterede to projekter på SUNET-dagene"
+slug: "safespring-praesenterede-to-projekter-pa-sunet-dagene"
 date: "2019-04-03T14:55:39+02:00"
 draft: false
 tags: ["Svenska"]

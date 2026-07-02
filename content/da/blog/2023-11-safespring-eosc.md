@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring: En nøgleaktør i Europas nye videnskabelige skyplatform til en værdi af 32 millioner euro"
+slug: "safespring-en-nogleaktor-i-europas-nye-videnskabelige-skyplatform-til-en-vaerdi-af-32-millioner-euro"
 date: "2023-11-27"
 intro: "European Open Science Cloud (EOSC) er et initiativ, der har til formål at forbedre og revolutionere det videnskabelige forskningssamarbejde i Europa."
 draft: false

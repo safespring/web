@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safesprings rolle i den europæiske Open Science Cloud (EOSC): Levering af centrale infrastrukturtjenester"
+slug: "safesprings-rolle-i-den-europaeiske-open-science-cloud-eosc-levering-af-centrale-infrastrukturtjenester"
 metatitle: "Safespring & EOSC: Styrker åben forskning med cloud-infrastrukturløsninger"
 cardtitle: "Safespring til forskning & uddannelse"
 card: "safespring_card_11.svg"

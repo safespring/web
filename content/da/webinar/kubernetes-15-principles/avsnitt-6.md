@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Sikkerhed og begrænsninger for Pods og netværk"
+slug: "sikkerhed-og-begraensninger-for-pods-og-netvaerk"
 section: "Design og idriftsættelse af skalerbare applikationer på Kubernetes"
 episode: "6"
 series: "true"

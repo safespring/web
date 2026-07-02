@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Hvorfor Safespring støtter EuroStack"
+slug: "hvorfor-safespring-stotter-eurostack"
 date: 2025-03-17
 intro: "Den eneste vej frem er at styrke den europæiske it-industri, så vi indhenter efterslæbet der, hvor der er mangler."
 draft: false

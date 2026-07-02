@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Kjør Sudo's Dockyards på Safesprings optimaliserte servere"
+slug: "kjor-sudos-dockyards-pa-safesprings-optimaliserte-servere"
 language: "nb"
 date: 2023-05-19
 draft: false

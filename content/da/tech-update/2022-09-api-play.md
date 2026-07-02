@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Nyttige (måske) OpenStack-API-tricks til at muliggøre mere automatisering"
+slug: "nyttige-maske-openstack-api-tricks-til-at-muliggore-mere-automatisering"
 date: "2022-09-20"
 intro: "Sådan får du oplysninger, der ellers ikke er direkte tilgængelige fra Openstack API'et"
 draft: false

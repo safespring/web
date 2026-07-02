@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "AI nær oss: En brobygger mellom innovasjon og ansvar"
+slug: "ai-naer-oss-en-brobygger-mellom-innovasjon-og-ansvar"
 section: "eForvaltningsdagene 2023"
 language: "nb"
 date: "2023-11-07"

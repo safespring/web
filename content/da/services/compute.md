@@ -109,4 +109,4 @@ Selvom vores platform er baseret på open source og Linux, understøtter vi ogs�
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba fra Scaleout fortæller om vigtigheden af håndtering af følsomme data" link="/tjenester/scaleout-systems-leverer-gdpr-sikker-maskinlæring-med-safespring/" linktext="Læs Use Case" text="“Fordi machine learning- og AI-initiativer af denne type kræver håndtering af store mængder følsomme data, er det vigtigt, at virksomheder har kontrol og kan stole på en pålidelig leverandør med høj datasikkerhed og integritet.”" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba fra Scaleout fortæller om vigtigheden af håndtering af følsomme data" link="/tjenester/scaleout-systems-leverer-gdpr-sikker-maskinlaering-med-safespring/" linktext="Læs Use Case" text="“Fordi machine learning- og AI-initiativer af denne type kræver håndtering af store mængder følsomme data, er det vigtigt, at virksomheder har kontrol og kan stole på en pålidelig leverandør med høj datasikkerhed og integritet.”" >}}

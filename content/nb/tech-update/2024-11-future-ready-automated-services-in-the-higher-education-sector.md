@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Fremtidsrettede automatiserte tjenester i høyere utdanningssektoren"
+slug: "fremtidsrettede-automatiserte-tjenester-i-hoyere-utdanningssektoren"
 date: 2024-11-21
 intro: "Under et nylig webinar med SIKT fikk jeg muligheten til å fordype meg i automatisering, åpne standarder og digital suverenitet."
 draft: false

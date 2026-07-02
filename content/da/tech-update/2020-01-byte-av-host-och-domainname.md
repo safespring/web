@@ -2,6 +2,7 @@
 ai: true
 language: "da"
 title: "Ændring af værts- og domænenavn på support- og backup-tjenesten"
+slug: "aendring-af-vaerts-og-domaenenavn-pa-support-og-backup-tjenesten"
 intro: "Vi udfaser vores tidligere moderselskabs varemærke IPnett fra vores tjenester."
 date: "2020-01-07T10:16:45+01:00"
 draft: false

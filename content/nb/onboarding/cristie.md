@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring-innføringsveiledning for Cristie"
+slug: "safespring-innforingsveiledning-for-cristie"
 date: 2024-09-23T13:05:26+02:00
 draft: false
 intro: "Følg disse trinnene for å sette opp og administrere nye prosjekter i Safesprings S3-tjeneste. Riktig navngiving av prosjekter og håndtering av tilgangsopplysninger sikrer smidig fakturering og enkelt samarbeid med forhandlere."

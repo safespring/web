@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Safespring bliver certificeret som en grøn tjeneste af The Green Web Foundation"
+slug: "safespring-bliver-certificeret-som-en-gron-tjeneste-af-the-green-web-foundation"
 date: "2023-02-27"
 publishDate: "2023-02-27"
 intro: "Safespring sikrer, at deres datacentre bruger 100 % vedvarende energi og har valgt at få deres tjenester certificeret af \"The Green Web Foundation\" for at bekræfte deres bæredygtighedsresultater. Læs mere om, hvordan Safespring arbejder for at blive en grønnere organisation."

@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Er det mulig å erstatte VMware? Det kan være..."
+slug: "er-det-mulig-a-erstatte-vmware-det-kan-vaere"
 date: 2025-02-20
 intro: "VMware er utformet for drift og administrasjon av interne IT-systemer, mens Safespring leverer tjenester for å kjøre applikasjoner og systemer i skyen. Begge har sine tydelige styrker og svakheter."
 draft: false

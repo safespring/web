@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "EU har netop defineret den suveræne cloud – her er vores score"
+slug: "eu-har-netop-defineret-den-suveraene-cloud-her-er-vores-score"
 date: 2025-11-06
 intro: "Cloud Sovereignty Framework er nu referencen for klassificering af europæiske cloudtjenester. Det fastsætter skrappe krav til ejerskab, kontrol, lovgivning og infrastruktur. Her er, hvad det betyder, og hvordan Safespring lever op."
 draft: false

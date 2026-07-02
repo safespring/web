@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Kan EU's og USA's nye aftale føre til Schrems III?"
+slug: "kan-eus-og-usas-nye-aftale-fore-til-schrems-iii"
 episode: "5"
 series: "true"
 language: "da"

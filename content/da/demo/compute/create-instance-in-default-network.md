@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Forståelse af netværkskonfigurationer i OpenStack"
+slug: "forstaelse-af-netvaerkskonfigurationer-i-openstack"
 section: ""
 episode: "5"
 series: "true"

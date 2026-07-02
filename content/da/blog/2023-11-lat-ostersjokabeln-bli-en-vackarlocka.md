@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Kommentar: Lad Østersøkablet blive en øjenåbner"
+slug: "kommentar-lad-ostersokablet-blive-en-ojenabner"
 date: "2023-11-13"
 intro: "At investere i digital infrastruktur er ikke blot et spørgsmål om national sikkerhed; det er også en mulighed for at øge tech-kompetencen i Sverige."
 draft: false

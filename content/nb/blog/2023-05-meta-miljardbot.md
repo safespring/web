@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Meta bøtelagt for databrudd: Bare et symbolsk tiltak eller en reell endring?"
+slug: "meta-botelagt-for-databrudd-bare-et-symbolsk-tiltak-eller-en-reell-endring"
 date: "2023-05-24"
 publishDate: "2023-05-24"
 intro: "Fredric skriver i denne artikkelen om hvorfor USA og EU ikke kommer til å enes om en dataoverføringsavtale som holder i lengden innen overskuelig fremtid"

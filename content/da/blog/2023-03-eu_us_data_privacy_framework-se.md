@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Bekymringer vedrørende EU-USA Data Privacy Framework: Hvorfor overførsel af data til tredjelande bør undgås"
+slug: "bekymringer-vedrorende-eu-usa-data-privacy-framework-hvorfor-overforsel-af-data-til-tredjelande-bor-undgas"
 date: "2023-04-05"
 intro: "Usikkerheden omkring EU-US Data Privacy Framework og dets konsekvenser for virksomheder, der overfører personoplysninger mellem EU og USA."
 draft: true

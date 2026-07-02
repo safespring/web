@@ -1,6 +1,7 @@
 ---
 ai: true
 title: "Hvordan bør vi tenke rundt skytjenester?"
+slug: "hvordan-bor-vi-tenke-rundt-skytjenester"
 episode: "2"
 series: "true"
 thumbnail: "/img/webinar/thumbnails/gdpr-fireside-chat-episode-2.jpg"
