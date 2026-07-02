@@ -267,5 +267,3 @@ Safespring driver en fullt hanterad NATS‑tjänst som låter dig ta del av för
 ### Hanterad NATS – SLA
 
 Tjänsten levereras med support ”dygnet runt, sju dagar i veckan” och har ett tillgänglighets‑SLA på 99,9 procent.
-
-{{% accordion-script %}}

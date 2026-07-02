@@ -53,7 +53,6 @@ termer enn «administrerte Kubernetes».
 {{< localbutton text="Gå til tjenestegrensen" link="#tjenestegrensen-i-praksis" >}}
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ## Hva Safespring Kubernetes Engine prøver å gjøre
 

@@ -42,7 +42,6 @@ En komplet DevSecOps‑platform med 24x7x365 support til observabilitet samt let
 {{% question question="Hvad er DevSecOps?" %}}
 En DevSecOps‑platform er en integreret løsning, der kombinerer praksisser inden for softwareudvikling (Dev), sikkerhed (Sec) og drift (Ops). Målet er at indlejre sikkerhed problemfrit i softwareudviklingens livscyklus. Denne tilgang sikrer, at sikkerhedshensyn ikke blot er en eftertanke, men er integreret fra starten og igennem hele udviklings-, udrulnings- og vedligeholdelsesprocessen. Derved hjælper den med at identificere og afbøde sikkerhedssårbarheder tidligt, forbedre den overordnede softwaresikkerhed, accelerere udviklingsprocessen og styrke samarbejdet mellem udviklings-, sikkerheds- og driftsteams.
 {{% /question %}}
-{{< accordion-script >}}
 
 ### Funktioner i overblik
 

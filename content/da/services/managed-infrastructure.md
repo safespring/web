@@ -188,4 +188,3 @@ Leveringsmøde: Forbered statusrapport
 {{< /chart >}}
 
 {{< distance >}}
-{{< accordion-script >}}

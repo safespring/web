@@ -83,6 +83,5 @@ We understand that applying for a new role is a big step, and we aim to make it 
 Flexibility in Every Step: We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< horisontal-card image="/img/kontakt/marietta.webp" cardtitle="Got questions?" link="mailto:marietta@safespring.com" linktext="Send email" text="Marietta is your contact here at Safespring. You can contact her at marietta@safespring.com " >}}

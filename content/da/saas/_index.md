@@ -63,7 +63,6 @@ I kan beskrive Safesprings datacentre i Sverige og Norge, ISO 27001-certificerin
 Ja. Safespring bygger på åbne standarder for compute, lagring og netværk. Det gør, at applikationer og platforme kan bygges uden at være afhængige af leverandørspecifikke cloudtjenester.
 {{% /question %}}
 
-{{< accordion-script >}}
 
 ## Teknologien
 

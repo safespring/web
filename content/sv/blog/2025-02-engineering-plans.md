@@ -35,7 +35,6 @@ Vill du ha den korta versionen? Safesprings ingenjörsteam tar stora steg under 
 
 Dessa uppgraderingar förstärker Safesprings åtagande för öppna, suveräna och regelefterlevande molnlösningar.
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ### **STO1 – lärdomar**
 

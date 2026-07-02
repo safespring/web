@@ -81,7 +81,6 @@ Lock-in effects is a term used to describe situations where an organization beco
 This can make it difficult for the organization to switch providers. [Read more about egress-cost](/blogg/2023/2023-03-egress-cost/), which is a common lock-in mechanism.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{% note "Read more" %}}
 

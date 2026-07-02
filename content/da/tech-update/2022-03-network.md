@@ -41,7 +41,6 @@ Der er ingen pulje af flydende IP-adresser (floating IPs).
 Klik dig igennem de syv skærmbilleder i diagrammet nedenfor for at forstå, hvordan kommunikationen sker baseret på medlemskaber i sikkerhedsgrupper og deres regler.
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 {{< distance >}}
 

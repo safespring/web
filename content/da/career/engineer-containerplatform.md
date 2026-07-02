@@ -83,6 +83,5 @@ Vi forstår, at det er et stort skridt at søge et nyt job, og vi bestræber os 
 Fleksibilitet i hvert skridt: Vi anerkender, at talent kommer i mange former, og at den standardiserede interviewproces ikke passer alle. Hvis du har idéer til, hvordan du bedst vil fremvise dine kompetencer, lytter vi gerne! Målet er at give dig mulighed for at vise os, hvordan du arbejder bedst.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< horisontal-card image="/img/kontakt/marietta.webp" cardtitle="Har du spørgsmål?" link="mailto:marietta@safespring.com" linktext="Send e-mail" text="Marietta er din kontakt her hos Safespring. Du kan kontakte hende på marietta@safespring.com " >}}

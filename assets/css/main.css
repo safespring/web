@@ -3038,41 +3038,66 @@ a.text-button {
   margin: 20px;
 }
 
+.sidebar-content-mobile .sidebar-toc {
+  margin: 0 0 0.8rem;
+  padding-top: 0;
+}
+
 .sidebar-content-mobile .table-of-contents a {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
+  line-height: 1.18;
+  margin: 0;
+  min-height: 32px;
   color: var(--middle-blue-color);
   font-family: var(--mon-font);
 }
 
+.sidebar-content-mobile .table-of-contents > * {
+  margin: 0;
+}
+
 .sidebar-content-mobile .table-of-contents ul {
   list-style: none;
+  margin: 0;
   padding-left: 0;
+}
+
+.sidebar-content-mobile .table-of-contents > ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-content-mobile .table-of-contents > ul > li + li {
+  margin-top: 0.55rem;
+}
+
+.sidebar-content-mobile .table-of-contents > ul > li > a {
+  align-items: center;
+  font-weight: 599 !important;
+  min-height: 34px;
 }
 
 .sidebar-content-mobile .table-of-contents ul > li > ul > li {
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.05rem 0;
   position: relative;
 }
 
 .sidebar-content-mobile .table-of-contents ul ul {
-  padding: 0.35rem 0 0;
+  padding: 0.05rem 0 0 0.9rem;
 }
 
 .sidebar-content-mobile .table-of-contents ul > li > ul > li > a {
   margin-left: 0px;
   font-weight: 400 !important;
+  min-height: 30px;
 }
 
 .sidebar-content-mobile .table-of-contents ul > li {
   margin: 0;
-  padding: 15px 0;
+  padding: 0;
   position: relative;
-}
-
-.sidebar-content-mobile .table-of-contents ul > li > a {
-  font-weight: 599 !important;
 }
 
 .sidebar-content-mobile .table-of-contents ul li > ul li::before {
@@ -3652,7 +3677,7 @@ html.toc-overlay-active body::before {
   .partner-container,
   .partner-container::after,
   .partnerlogo {
-    transition: none;
+    transition: border-color 80ms ease-out;
   }
 }
 
@@ -5139,6 +5164,10 @@ ol li ol li::before {
   gap: clamp(2.75rem, 5vw, 4rem);
 }
 
+.webinar-series-text-container--demo {
+  justify-content: space-between;
+}
+
 .webinar-highlist-card h2 {
   /* Stilar för webinar-highlist-card h2 */
 }
@@ -5200,6 +5229,10 @@ ol li ol li::before {
     gap: 0;
   }
 
+  .webinar-series-text-container--demo {
+    width: 220px;
+  }
+
   .episode-counter {
     margin-top: 20px !important;
   }
@@ -5218,6 +5251,12 @@ ol li ol li::before {
     hyphens: auto;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  .webinar-series-text-container--demo h2 {
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }
 
@@ -6922,6 +6961,173 @@ th:last-child {
 
 /* TABLE - END */
 
+body.has-mobile-price-tables .mobile-compact-table-list {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  body.has-mobile-price-tables .mobile-compact-table[data-mobile-compact-ready="true"] {
+    display: none;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-table-list {
+    border-bottom: 1px solid var(--cloud-blue-color);
+    display: block;
+    margin: 1.75rem 0 3rem;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid var(--cloud-blue-color);
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    transition: border-color 80ms ease-out;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row.is-border-settling {
+    transition: none;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row.is-border-settling + .mobile-compact-row {
+    transition: none;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row[open],
+  body.has-mobile-price-tables .mobile-compact-row.is-closing {
+    border-bottom-color: transparent;
+    border-top-color: var(--middle-blue-color);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row[open]:last-child {
+    border-bottom-color: var(--middle-blue-color);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row.is-closing {
+    border-bottom-color: transparent;
+    border-top-color: var(--cloud-blue-color);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row.is-closing:last-child {
+    border-bottom-color: var(--cloud-blue-color);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row[open] + .mobile-compact-row {
+    border-top-color: var(--middle-blue-color);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row.is-closing + .mobile-compact-row {
+    border-top-color: var(--cloud-blue-color);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__summary {
+    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: minmax(0, 1fr) auto 0.75rem;
+    list-style: none;
+    min-height: 44px;
+    padding: 0.48rem 0;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__summary::after {
+    border-bottom: 1.5px solid var(--main-color);
+    border-right: 1.5px solid var(--main-color);
+    content: "";
+    display: block;
+    height: 0.45rem;
+    transform: rotate(45deg);
+    transition: transform 80ms ease-out;
+    width: 0.45rem;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row--static .mobile-compact-row__summary {
+    cursor: default;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row--static .mobile-compact-row__summary::after {
+    content: none;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row[open] .mobile-compact-row__summary::after {
+    transform: translateY(3px) rotate(225deg);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row.is-closing .mobile-compact-row__summary::after {
+    transition-duration: 0ms;
+    transform: rotate(45deg);
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__product,
+  body.has-mobile-price-tables .mobile-compact-row__price {
+    color: var(--main-color);
+    font-family: var(--mon-font);
+    font-size: 15px;
+    font-weight: 599;
+    line-height: 1.15;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: right;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__product {
+    text-align: left;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__price {
+    white-space: nowrap;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__details {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    transform-origin: top;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__details div {
+    align-items: center;
+    border-top: 1px solid var(--cloud-blue-color);
+    box-sizing: border-box;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: minmax(6.5rem, 42%) minmax(0, 1fr);
+    min-height: 40px;
+    padding: 0.38rem 0;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__details dt,
+  body.has-mobile-price-tables .mobile-compact-row__details dd {
+    margin: 0;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__details dt {
+    color: var(--middle-blue-color);
+    font-family: var(--hind-font);
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  body.has-mobile-price-tables .mobile-compact-row__details dd {
+    color: #555555;
+    font-family: var(--mon-font);
+    font-size: 15px;
+    line-height: 1.2;
+    min-height: 1em;
+    overflow-wrap: anywhere;
+    text-align: right;
+  }
+}
+
 .author-container {
   display: flex;
   align-items: center;
@@ -7119,6 +7325,58 @@ details[open] summary {
   white-space: nowrap;
   letter-spacing: 0.2px;
   width: fit-content;
+}
+
+@media screen and (max-width: 650px) {
+  body.has-mobile-price-tables details.mobile-compact-row,
+  body.has-mobile-price-tables details.mobile-compact-row[open] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    bottom: auto;
+    left: auto;
+    overflow: hidden;
+    position: static;
+    right: auto;
+    top: auto;
+    transition: border-color 80ms ease-out;
+    z-index: auto;
+  }
+
+  body.has-mobile-price-tables details.mobile-compact-row > summary.mobile-compact-row__summary,
+  body.has-mobile-price-tables details.mobile-compact-row[open] > summary.mobile-compact-row__summary {
+    background: transparent;
+    border-radius: 0;
+    color: inherit;
+    float: none !important;
+    font: inherit;
+    justify-content: normal;
+    letter-spacing: 0;
+    margin: 0 !important;
+    min-height: 44px;
+    padding: 0.48rem 0 !important;
+    position: static;
+    text-align: left;
+    text-transform: none;
+    top: auto !important;
+    white-space: normal;
+    width: 100%;
+  }
+
+  body.has-mobile-price-tables details.mobile-compact-row[open] > summary.mobile-compact-row__summary::before {
+    content: none !important;
+  }
+
+  body.has-mobile-price-tables details.mobile-compact-row > .mobile-compact-row__details,
+  body.has-mobile-price-tables details.mobile-compact-row[open] > .mobile-compact-row__details {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 !important;
+    max-width: none;
+    padding: 0 !important;
+    transition: none;
+    z-index: auto;
+  }
 }
 
 @media print {

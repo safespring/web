@@ -70,7 +70,6 @@ Samurai MDR opdateres løbende med de nyeste trusselsdefinitioner og sikkerhedso
 
 </div>
 
-{{< accordion-script >}}
 
 {{< distance >}}
 

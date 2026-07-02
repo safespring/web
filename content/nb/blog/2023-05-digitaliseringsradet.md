@@ -53,5 +53,3 @@ Disse forslagene tar sikte på å skape bedre forutsetninger for at myndigheter 
 Kilde: [Regeringskansliet](https://www.regeringen.se/rattsliga-dokument/proposition/2023/03/prop.-20222397)
 
 {{% /accordion %}}
-
-{{< accordion-script >}}

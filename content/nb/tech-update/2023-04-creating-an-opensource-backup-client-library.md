@@ -69,5 +69,3 @@ Auwau's Cloutility er en programvareløsning som tilbyr en brukervennlig kundepo
 {{% accordion title="CLI-verktøy" %}}
 CLI, kort for Command Line Interface, er et tekstbasert grensesnitt som lar brukere samhandle med et program eller operativsystem ved å skrive kommandoer, i stedet for å bruke et grafisk grensesnitt (GUI). Et CLI-verktøy er et hjelpeprogram som bruker kommandolinjen for å utføre oppgaver eller operasjoner, og gir erfarne brukere en rask og effektiv måte å samhandle med et system på.
 {{% /accordion %}}
-
-{{< accordion-script >}}

@@ -70,7 +70,6 @@ Samurai MDR is regularly updated with the latest threat data definitions and sec
 
 </div>
 
-{{< accordion-script >}}
 
 {{< distance >}}
 

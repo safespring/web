@@ -175,7 +175,6 @@ Safespring Backup offers data reduction technology <sup>1</sup> in the service w
 </table>
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 | Product ID                  | Fixed monthly price | Per GB / 30 days |
 | --------------------------- | ------------------: | ---------------: |

@@ -62,7 +62,6 @@ Kortets udseende er beskrevet i `layouts/_default/li-index` og kan tilpasses ved
 ```
 {{% /accordion %}} {{< distance >}} {{< services >}}
 
-{{< accordion-script >}}
 
 ---
 
@@ -112,59 +111,23 @@ En primær knap med teksten "Ring til os" (linket til `/contact`) og et sekundæ
 
 ### Beskrivelse
 
-Indsætter det JavaScript, der er nødvendigt for at aktivere funktionaliteten for accordion-elementer (åbne/lukke, glidende rulning, åbning af
-accordion via links).
+`accordion-script` findes stadig som en bagudkompatibel shortcode, men skal normalt ikke tilføjes i Markdown. Footeren indlæser accordion-scriptet automatisk, når det renderede sideindhold indeholder `class="accordion"`.
 
-### Kode
-```html
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
+Brug den kun i specialtilfælde, hvor accordion-markup oprettes uden for `.Content` og derfor ikke fanges af den automatiske indlæsning.
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("accordion-active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.style.marginBottom = 0 + "px";
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.marginBottom = 10 + "px";
-      }
-    });
-  }
-
-  function openAccordion(id) {
-    var accordionBox = document.getElementById(id);
-    if (accordionBox) {
-      var button = accordionBox.getElementsByClassName("accordion")[0];
-      if (button) {
-        button.click();
-        accordionBox.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  }
-
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      var targetId = this.getAttribute("href").substr(1);
-      var targetElement = document.getElementById(targetId);
-      if (targetElement && targetElement.classList.contains("accordion-box")) {
-        e.preventDefault();
-        openAccordion(targetId);
-      }
-    });
-  });
-</script>
-```
 ### Eksempel
 
-{{< accordion-script >}}
+Almindelige accordions behøver kun selve accordion-shortcoden:
 
-### Renderet resultat
+```markdown
+{{% accordion title="Mere information" id="acc1" %}}
+Indhold.
+{{% /accordion %}}
+```
 
-Ingen direkte visuel komponent. Scriptet kører i baggrunden for at muliggøre accordion-funktionalitet.
+### Gengivet resultat
+
+Ingen direkte visuel komponent. Scriptet kører automatisk på sider, hvor accordions findes i sideindholdet.
 
 ---
 
@@ -1314,5 +1277,3 @@ Viser tekst med en tooltip, der dukker op ved hover.
 ### Renderet resultat
 
 Teksten "Hold musen over mig" med en tooltip, der vises ved hover.
-
-{{< accordion-script >}}

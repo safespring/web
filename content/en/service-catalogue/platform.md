@@ -266,5 +266,3 @@ Safespring operates a fully managed NATS service that allows you to get the bene
 ### Managed NATS – SLA
 
 The service come with support ”twenty-four hours a day, seven days a week” and has a 99.9 percent availability SLA.
-
-{{% accordion-script %}}

@@ -35,7 +35,6 @@ Vil du have den korte version? Safesprings engineering-team tager store skridt i
 
 Disse opgraderinger understreger Safesprings engagement i åbne, suveræne og compliant cloudløsninger.
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ### **STO1 – erfaringer**
 

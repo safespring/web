@@ -11,6 +11,7 @@ aliases:
   - /myndighet/
   - /branscher/myndigheter/
   - /branscher/myndigheter/daniel.melin@safespring.com
+  - /branscher/kommuner/
 slug: "myndigheter"
 sidebarlinkurl: "/kontakt/"
 sidebarlinkname: "Prata med Fredric"

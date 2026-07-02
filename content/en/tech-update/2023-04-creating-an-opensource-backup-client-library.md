@@ -69,5 +69,3 @@ Auwau's Cloutility is a software solution that provides a user-friendly customer
 {{% accordion title="CLI tool" %}}
 CLI, short for Command Line Interface, is a text-based interface that allows users to interact with a computer program or operating system by typing commands, rather than using a graphical user interface (GUI). A CLI tool is a software utility that uses a command line interface for performing tasks or operations, offering a quick and efficient way for experienced users to interact with a system.
 {{% /accordion %}}
-
-{{< accordion-script >}}

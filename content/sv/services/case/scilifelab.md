@@ -140,5 +140,3 @@ Jag är CCO på Safespring och hjälper dig gärna att komma igång.
 {{< inline "Ring" >}} +46855107370
 fredric.wallsten@safespring.com
 {{% /custom-card %}}
-
-{{< accordion-script >}}

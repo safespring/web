@@ -7,6 +7,9 @@ card: "safespring_card_31.svg"
 draft: false
 intro: "Safespring provides secure and sustainable cloud services without lock-in"
 background: "safespring-government-background.svg"
+aliases:
+  - /industries/kommuner/
+  - /branscher/kommuner/
 sidebarlinkurl: "/contact/"
 sidebarlinkname: "Talk to Fredric"
 banner: "blue-hover-blogg"

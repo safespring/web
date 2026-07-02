@@ -47,5 +47,3 @@ Safespring is a proud participant in the Sweden’s IT Operations Network initia
 {{< inline "Call" >}} +46 76-629 25 02
 [fredric@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

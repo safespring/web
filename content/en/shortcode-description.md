@@ -72,7 +72,6 @@ can be used to customize the text displayed on the card. {{% accordion title="Ht
 
 {{% /accordion %}} {{< distance >}} {{< services >}}
 
-{{< accordion-script >}}
 
 ---
 
@@ -124,61 +123,23 @@ En primär knapp med texten "Call Us" (länkad till `/contact`) och en sekundär
 
 ### Beskrivning
 
-Infogar JavaScript som behövs för att aktivera funktionaliteten hos accordion-element (toggle, smidig scroll, öppning av
-accordion via länkar).
+`accordion-script` finns kvar som bakåtkompatibel shortcode, men ska normalt inte läggas in i Markdown. Sidfoten laddar accordion-scriptet automatiskt när det renderade sidinnehållet innehåller `class="accordion"`.
 
-### Kod
-
-```html
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("accordion-active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.style.marginBottom = 0 + "px";
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.marginBottom = 10 + "px";
-      }
-    });
-  }
-
-  function openAccordion(id) {
-    var accordionBox = document.getElementById(id);
-    if (accordionBox) {
-      var button = accordionBox.getElementsByClassName("accordion")[0];
-      if (button) {
-        button.click();
-        accordionBox.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  }
-
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      var targetId = this.getAttribute("href").substr(1);
-      var targetElement = document.getElementById(targetId);
-      if (targetElement && targetElement.classList.contains("accordion-box")) {
-        e.preventDefault();
-        openAccordion(targetId);
-      }
-    });
-  });
-</script>
-```
+Använd den bara i specialfall där accordion-markup skapas utanför `.Content` och därför inte fångas av autoladdningen.
 
 ### Exempel
 
-{{< accordion-script >}}
+Vanliga accordions behöver bara själva accordion-shortcoden:
+
+```markdown
+{{% accordion title="Mer information" id="acc1" %}}
+Innehåll.
+{{% /accordion %}}
+```
 
 ### Renderat resultat
 
-Ingen direkt visuell komponent. Scriptet körs i bakgrunden för att möjliggöra accordion-funktionalitet.
+Ingen direkt visuell komponent. Scriptet körs automatiskt på sidor där accordions finns i sidinnehållet.
 
 ---
 
@@ -1446,5 +1407,3 @@ Visar text med en tooltip som dyker upp vid hover.
 ### Renderat resultat
 
 Texten "Håll musen över mig" med en tooltip som visas vid hover.
-
-{{< accordion-script >}}

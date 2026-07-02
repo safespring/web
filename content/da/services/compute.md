@@ -78,7 +78,6 @@ Hos Safespring er vi stolte af at tilbyde disse avancerede VPN-muligheder integr
 
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 ## Central bloklagring
 

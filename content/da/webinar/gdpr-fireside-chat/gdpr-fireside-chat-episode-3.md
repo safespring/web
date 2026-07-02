@@ -44,5 +44,3 @@ Gabriel arbejder hos Safespring, som leverer en bæredygtig cloudplatform til si
 {{% accordion title="Om IT-Säkerhetsbolaget og Patrik" %}}
 Patrik er administrerende direktør og grundlægger af IT-Säkerhetsbolaget AB, som er en totalleverandør inden for bæredygtig digitalisering med ekspertkompetencer inden for it-sikkerhed, informationssikkerhed, ISO-revisioner, it-jura og databeskyttelse.
 {{% /accordion %}}
-
-{{< accordion-script >}}

@@ -51,7 +51,6 @@ Click through the seven screens of the diagram below to understand how
 communication happens based on security group memberships and rules.
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 {{< distance >}}
 

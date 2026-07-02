@@ -83,7 +83,6 @@ At Safespring, we are proud to offer these advanced VPN capabilities integrated 
 
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 ## Central block storage
 

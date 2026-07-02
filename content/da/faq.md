@@ -147,5 +147,3 @@ Vi tilbyder en SLA på 99,9 %. Det betyder, at vi garanterer 99,9 % tilgængelig
 {{% /question %}}
 
 </div></div>
-
-{{< accordion-script >}}

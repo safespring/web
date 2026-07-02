@@ -104,5 +104,3 @@ Unlock the full potential of your data with Safespring Storage. Our team is read
 
 [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

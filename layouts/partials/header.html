@@ -1,6 +1,10 @@
 {{ $servicePages := (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
 {{ $primaryServiceSlugs := slice "containerplatform" "compute" "storage" }}
 {{ $secondaryServiceSlugs := slice "machine-learning" "backup" "database-as-a-service" }}
+{{ $aboutPage := "about" }}
+{{ if eq .Language.Lang "en" }}
+  {{ $aboutPage = "about-safespring" }}
+{{ end }}
 
 <header id="navbar" class="site-header">
   <div class="site-header-wrapper">
@@ -44,7 +48,7 @@
               id="main-menu-link-demo"
               data-matomo-location="header-nav"
               data-matomo-label="{{ T "sidebar.demo" }}"
-              href="{{ relref . "demo/compute" }}"
+              href="{{ relref . "demo" }}"
               >{{ T "sidebar.demo" }}</a
             >
           </li>
@@ -146,7 +150,7 @@
             aria-controls="mobileNewsSubMenu"
             aria-expanded="false"
           >
-            {{ T "knowledgehub.news" }}
+            {{ T "menu.solutions" }}
           </button>
         </li>
         <li class="menu-item-featured">
@@ -157,20 +161,33 @@
             aria-controls="mobileAboutSubMenu"
             aria-expanded="false"
           >
-            {{ T "menu.safespring_about" }}
+            {{ T "menu.resources" }}
           </button>
         </li>
-        <li class="menu-divider" aria-hidden="true"></li>
-        <li>
-          <a href="{{ relref . "contact" }}">{{ T "menu.contact" }}</a>
+        <li class="menu-item-featured">
+          <button
+            type="button"
+            class="mobile-submenu-trigger"
+            data-submenu="mobileSafespringSubMenu"
+            aria-controls="mobileSafespringSubMenu"
+            aria-expanded="false"
+          >
+            {{ T "menu.safespring" }}
+          </button>
         </li>
-        <li>
+        <li class="menu-item-featured">
           <a href="{{ relref . "price" }}">{{ T "menu.price" }}</a>
         </li>
-        <li>
-          <a href="{{ relref . "career" }}"
-            >{{ T "menu.safespring_careers" }}</a
+        <li class="menu-item-featured">
+          <button
+            type="button"
+            class="mobile-submenu-trigger"
+            data-submenu="mobileContactSubMenu"
+            aria-controls="mobileContactSubMenu"
+            aria-expanded="false"
           >
+            {{ T "menu.demo_contact" }}
+          </button>
         </li>
       </ul>
     </div>
@@ -190,18 +207,18 @@
       </div>
       <ul>
         <li class="menu-item-featured">
+          <a href="{{ relref . "services/containerplatform" }}"
+            >{{ T "menu.platform_kubernetes" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
           <a href="{{ relref . "services/compute" }}"
             >{{ T "menu.platform_compute" }}</a
           >
         </li>
         <li class="menu-item-featured">
-          <a href="{{ relref . "services/containerplatform" }}"
-            >{{ T "menu.platform_container" }}</a
-          >
-        </li>
-        <li class="menu-item-featured">
           <a href="{{ relref . "services/storage" }}"
-            >{{ T "menu.platform_storage" }}</a
+            >{{ T "menu.platform_storage_s3" }}</a
           >
         </li>
         <li class="menu-item-featured">
@@ -210,44 +227,90 @@
           >
         </li>
         <li>
-          <a href="{{ relref . "data-centers" }}"
-            >{{ T "menu.safespring_datacenters" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "compliance/acceptable_use_policy" }}"
-            >{{ T "menu.acceptable_use_policy" }}</a
-          >
-        </li>
-        <li class="menu-divider" aria-hidden="true"></li>
-        <li class="submenu-heading">{{ T "menu.solutions_for" }}:</li>
-        <li>
           <a href="{{ relref . "services/database-as-a-service" }}"
             >{{ T "menu.platform_database" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "services/case/elastisys" }}"
-            >{{ T "menu.welkin" }}</a
+          <a href="{{ relref . "services/machine-learning" }}"
+            >{{ T "menu.platform_ai_gpu" }}</a
           >
         </li>
         <li>
-          <a href="{{ relref . "services/machine-learning" }}"
-            >{{ T "menu.platform_ai" }}</a
+          <a href="{{ relref . "service-catalogue" }}"
+            >{{ T "menu.service_catalogue" }}</a
+          >
+        </li>
+        <li>
+          <a href="https://docs.safespring.com">{{ T "menu.docs" }}</a>
+        </li>
+        <li>
+          <a href="https://status.safespring.com"
+            >{{ T "menu.safespring_status" }}</a
           >
         </li>
       </ul>
     </div>
 
-    <!-- Knowledge Hub submenu -->
+    <!-- Solutions submenu -->
     <div class="menu-screen submenu" id="mobileNewsSubMenu" aria-hidden="true" inert>
       <div class="submenu-header">
         <button type="button" class="back-button">
           &larr;
-          <span class="submenu-title">{{ T "knowledgehub.news" }}</span>
+          <span class="submenu-title">{{ T "menu.solutions" }}</span>
         </button>
       </div>
       <ul>
+        <li class="menu-item-featured">
+          <a href="{{ relref . "industries/government" }}"
+            >{{ T "menu.solutions_public_sector" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a href="{{ relref . "industries/research-and-education" }}"
+            >{{ T "menu.solutions_research_education" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a href="{{ relref . "saas" }}">{{ T "menu.solutions_saas" }}</a>
+        </li>
+        <li>
+          <a href="{{ relref . "industries/it-leverantorer" }}"
+            >{{ T "menu.solutions_it_partners" }}</a
+          >
+        </li>
+        <li>
+          <a href="{{ relref . "industries/eosc" }}"
+            >{{ T "menu.solutions_open_science" }}</a
+          >
+        </li>
+        <li>
+          <a href="{{ relref . "whitepaper/migrate-from-azure" }}"
+            >{{ T "menu.solutions_migration" }}</a
+          >
+        </li>
+        <li>
+          <a href="{{ relref . "gdpr" }}"
+            >{{ T "menu.solutions_digital_sovereignty_gdpr" }}</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Resources submenu -->
+    <div class="menu-screen submenu" id="mobileAboutSubMenu" aria-hidden="true" inert>
+      <div class="submenu-header">
+        <button type="button" class="back-button">
+          &larr;
+          <span class="submenu-title">{{ T "menu.resources" }}</span>
+        </button>
+      </div>
+      <ul>
+        <li class="menu-item-featured">
+          <a href="{{ relref . "tech-update" }}"
+            >{{ T "knowledgehub.tech_update" }}</a
+          >
+        </li>
         <li class="menu-item-featured">
           <a href="{{ relref . "services/case" }}"
             >{{ T "knowledgehub.use_case" }}</a
@@ -256,79 +319,101 @@
         <li class="menu-item-featured">
           <a href="{{ relref . "webinar" }}">{{ T "knowledgehub.webcast" }}</a>
         </li>
-        <li class="menu-item-featured">
-          <a href="{{ relref . "tech-update" }}"
-            >{{ T "knowledgehub.tech_update" }}</a
-          >
-        </li>
-        <li class="menu-item-featured">
-          <a href="{{ relref . "whitepaper" }}"
-            >{{ T "knowledgehub.whitepaper" }}</a
-          >
-        </li>
-        <li class="menu-item-featured">
-          <a href="{{ relref . "blog" }}">{{ T "knowledgehub.blog" }}</a>
-        </li>
-        <li class="menu-item-featured">
+        <li>
           <a href="{{ relref . "solution-brief" }}"
             >{{ T "knowledgehub.solution_brief" }}</a
           >
         </li>
         <li>
-          <a href="https://docs.safespring.com">{{ T "menu.docs" }}</a>
-        </li>
-        <li>
-          <a href="{{ relref . "service-catalogue" }}"
-            >{{ T "menu.service_catalogue" }}</a
+          <a href="{{ relref . "whitepaper" }}"
+            >{{ T "knowledgehub.whitepaper" }}</a
           >
         </li>
         <li>
-          <a href="https://status.safespring.com"
-            >{{ T "menu.safespring_status" }}</a
-          >
-        </li>
-        <li>
-          <a href="{{ relref . "data-centers" }}"
-            >{{ T "menu.safespring_datacenters" }}</a
-          >
+          <a href="{{ relref . "faq" }}">{{ T "knowledgehub.faq_footer" }}</a>
         </li>
       </ul>
     </div>
 
-    <!-- About submenu -->
-    <div class="menu-screen submenu" id="mobileAboutSubMenu" aria-hidden="true" inert>
+    <!-- Safespring submenu -->
+    <div
+      class="menu-screen submenu"
+      id="mobileSafespringSubMenu"
+      aria-hidden="true"
+      inert
+    >
       <div class="submenu-header">
         <button type="button" class="back-button">
           &larr;
-          <span class="submenu-title">{{ T "menu.safespring_about" }}</span>
+          <span class="submenu-title">{{ T "menu.safespring" }}</span>
         </button>
       </div>
       <ul>
         <li class="menu-item-featured">
-          <a href="{{ relref . "about" }}">{{ T "menu.company_in_brief" }}</a>
+          <a href="{{ relref . $aboutPage }}">{{ T "menu.safespring_about" }}</a>
         </li>
         <li class="menu-item-featured">
           <a href="{{ relref . "data-centers" }}"
             >{{ T "menu.safespring_datacenters" }}</a
           >
+        </li>
+        <li class="menu-item-featured">
+          <a href="{{ relref . "compliance" }}">{{ T "menu.certifications" }}</a>
         </li>
         <li class="menu-item-featured">
           <a href="{{ relref . "environment" }}"
             >{{ T "menu.safespring_sustainability" }}</a
           >
         </li>
-        <!--
         <li>
-          <a href="{{/* relref . "corporate-governance" */}}"
-            >{{ T "menu.corporate_governance" }}</a
+          <a href="{{ relref . "our-partners" }}"
+            >{{ T "menu.safespring_partners" }}</a
           >
         </li>
-        -->
         <li>
-          <a href="{{ relref . "faq" }}">{{ T "menu.safespring_faq" }}</a>
+          <a href="{{ relref . "compliance" }}"
+            >{{ T "menu.safespring_terms_and_policies" }}</a
+          >
         </li>
         <li>
-          <a href="{{ relref . "compliance" }}">{{ T "menu.certifications" }}</a>
+          <a href="{{ relref . "career" }}"
+            >{{ T "menu.safespring_careers" }}</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Demo and contact submenu -->
+    <div
+      class="menu-screen submenu"
+      id="mobileContactSubMenu"
+      aria-hidden="true"
+      inert
+    >
+      <div class="submenu-header">
+        <button type="button" class="back-button">
+          &larr;
+          <span class="submenu-title">{{ T "menu.demo_contact" }}</span>
+        </button>
+      </div>
+      <ul>
+        <li class="menu-item-featured">
+          <a
+            data-matomo-location="mobile-menu"
+            data-matomo-label="{{ T "sidebar.demo" }}"
+            href="{{ relref . "demo" }}"
+            >{{ T "sidebar.demo" }}</a
+          >
+        </li>
+        <li class="menu-item-featured">
+          <a href="{{ relref . "contact" }}">{{ T "menu.contact" }}</a>
+        </li>
+        <li>
+          <a
+            href="mailto:hello@safespring.com"
+            onclick="if (window._paq && window._paq.push) { window._paq.push(['trackEvent', 'Knapptryck', 'Mobilmeny mailknapp']); }"
+            >hello@safespring.com</a
+          >
         </li>
       </ul>
     </div>
@@ -760,11 +845,12 @@
     align-items: center;
     border-radius: 8px;
     box-sizing: border-box;
-    font-size: 1.2rem;
-    line-height: 1.2;
+    font-size: 1.28rem;
+    font-weight: 600;
+    line-height: 1.12;
     margin-left: -0.75rem;
-    min-height: 44px;
-    padding: 0.55rem 0.8rem 0.5rem 0.75rem;
+    min-height: 2.55rem;
+    padding: 0.42rem 0.8rem 0.38rem 0.75rem;
     transition:
       background-color 0.2s ease,
       color 0.2s ease;
@@ -794,10 +880,10 @@
   .menu-item-featured a,
   .menu-item-featured .mobile-submenu-trigger {
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: 2.05rem;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.15;
+    line-height: 1.05;
     max-width: 100%;
     overflow-wrap: anywhere;
     white-space: normal;
@@ -811,6 +897,11 @@
     margin: 1.15rem 0 1.05rem;
     padding: 0 !important;
     width: min(100%, 22rem);
+  }
+
+  .submenu .menu-divider {
+    border-top: 0;
+    margin: 2rem 0 0.75rem;
   }
 
   .mobile-language-dock {
@@ -960,19 +1051,20 @@
   }
 
   .submenu-title {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 600;
     font-family: var(--hind-font);
   }
 
   .submenu-heading {
-    font-size: 1.2rem;
-    font-weight: 100;
-    margin-bottom: 5px;
-    opacity: 0.6;
+    font-size: 1.28rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 0.25rem;
+    opacity: 0.52;
     color: #195f8c;
     font-family: var(--hind-font);
-    padding-top: 0.5rem;
+    padding-top: 0;
   }
 
   /* Prevent body scroll when menu is open */

@@ -92,7 +92,6 @@ På Safespring bygger vi inte bara system; vi bygger relationer. Vi förstår at
 Vi vet att talang kommer i många former och att den vanliga intervjuprocessen inte är one-size-fits-all. Om du har idéer kring hur du helst vill visa upp dina färdigheter så lyssnar vi gärna! Vårt mål är att ge dig en möjlighet att visa oss hur du jobbar som bäst.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{% note "info" %}}
 **Startdatum:**  

@@ -53,5 +53,3 @@ These proposals aim to create better conditions for agencies to outsource or coo
 Source: [Government Offices of Sweden](https://www.regeringen.se/rattsliga-dokument/proposition/2023/03/prop.-20222397)
 
 {{% /accordion %}}
-
-{{< accordion-script >}}

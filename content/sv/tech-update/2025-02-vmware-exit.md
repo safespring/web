@@ -33,7 +33,6 @@ I och med Broadcoms förvärv av VMware har många företag och organisationer s
 {{< localbutton text="Låt oss prata" link="#conclusion" >}}
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ## VMware-erbjudandet
 

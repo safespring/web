@@ -116,7 +116,6 @@ See configurations for backup in the [service catalogue](/geant/service-catalogu
 | 7 001           | Backup Large                |
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 | Product ID         | Fixed monthly price | Per GB / 30 days |
 | ------------------ | ------------------- | ---------------- |

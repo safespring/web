@@ -112,5 +112,3 @@ Upptäck den fulla potentialen i dina data med Safespring Storage. Vårt team ä
 
 [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

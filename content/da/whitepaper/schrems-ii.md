@@ -183,7 +183,6 @@ Organisationer i Sverige er på nuværende tidspunkt sandsynligvis forhindret i 
 Dette white paper er skrevet af Amelia Andersdotter. Safespring tilbyder svenskproducerede cloudtjenester.
 {{< /ingress >}}
 
-{{< accordion-script >}}
 
 [^1]: ECLI:EU:C:2020:559
 

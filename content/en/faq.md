@@ -148,5 +148,3 @@ We offer an SLA of 99.9%. This means we guarantee 99.9% availability for our ser
 {{% /question %}}
 
 </div></div>
-
-{{< accordion-script >}}

@@ -32,7 +32,6 @@ Our IaaS platform is based on the market-leading OpenStack cloud platform and is
 If you're ready to take your career to the next level, we encourage you to apply to join our team at Safespring. We can't wait to see what you can bring to the table.
 
 {{% accordion title="Our recruitment process" %}}
-{{< accordion-script >}}
 
 At Safespring we're not just building systems; we're building relationships. We understand that applying for a new role is a big step, and we aim to make it a smooth, transparent, and engaging experience for you.
 

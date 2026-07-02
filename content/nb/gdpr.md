@@ -126,7 +126,6 @@ Sentral blokklagring for økt redundans: Som en del av vår tjeneste tilbyr vi s
 - motstandsdyktighet hos behandlingssystemene og -tjenestene (32.1c)
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Føderert maskinlæring" linkref="/services/case/scaleout.md" linktext="Les Use Case" text="“Det er verdi i å ha kritisk infrastruktur plassert i Sverige hvor vi ikke er avhengige av andre lands lovgivning...“ – Ebba Kreamer, Scaleout" >}}
 

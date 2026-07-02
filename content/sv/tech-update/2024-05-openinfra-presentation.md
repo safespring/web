@@ -95,5 +95,3 @@ Vi implementerade flera NATS-meddelandemönster, bland annat:
 Detta projekt är ett viktigt steg mot att erbjuda skalbar självserviceåtkomst till open source-infrastruktur för våra kunder. Genom att utnyttja NATS och Huma har vi skapat ett robust, effektivt och säkert verktyg som möter de växande behoven hos våra B2B-kunder och den europeiska forskargemenskapen.
 
 Hör gärna av dig om du har några frågor eller vill ha mer detaljerad information om vårt projekt!
-
-{{< accordion-script >}}

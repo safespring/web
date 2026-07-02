@@ -88,6 +88,5 @@ I Safespring bygger vi ikke bare systemer; vi bygger relasjoner. Vi forstår at 
 Vi erkjenner at talent kommer i mange former, og at standard intervjuprosess ikke passer alle. Har du ideer til hvordan du best kan vise frem ferdighetene dine, lytter vi gjerne! Målet vårt er å gi deg en mulighet til å vise oss hvordan du jobber best.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< horisontal-card image="/img/kontakt/marietta.webp" cardtitle="Har du spørsmål?" link="mailto:marietta@safespring.com" linktext="Send e-post" text="Marietta er din kontakt her hos Safespring. Du kan kontakte henne på marietta@safespring.com " >}}

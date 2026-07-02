@@ -122,5 +122,3 @@ Their Data Energy Centers® are designed and built to the highest data center st
 {{% question question="Can I visit T.Loop’s data center facilities before I sign a co-location agreement?" %}}
 To book a tour, please [contact T.Loop](mailto:hello@tloop.se) and they will arrange a visit time for you.
 {{% /question %}}
-
-{{< accordion-script >}}

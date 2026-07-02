@@ -37,7 +37,6 @@ På Safespring bygger vi inte bara system – vi bygger relationer. Vi förstår
 Vi vet att talang kan se ut på många olika sätt och att en standardiserad intervjuprocess inte passar alla. Har du förslag på hur du helst visar upp dina färdigheter? Vi lyssnar! Vårt mål är att ge dig möjlighet att visa hur du arbetar som bäst.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Klicka här för att ansöka" description="Vill du bli en del av oss? Skicka ditt CV genom att klicka här!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/47ac0d37-2bfb-4b20-a544-0bcecaa33b68/db5f120a-b35c-462a-882a-9c91adcf1cd6#applyNow" >}}
 

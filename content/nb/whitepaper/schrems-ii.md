@@ -178,5 +178,3 @@ Hviteboken er skrevet av Amelia Andersdotter. Safespring tilbyr svenskproduserte
 15. E-delegationen, Vägledning för digital samverkan, Version 4.1, 2015-05-28.
 16. DIGG, 2019-136, Policy för utveckling av programvara.
 17. Spørsmål 5 i del II må egentlig alltid besvares med «ja» ved bruken av amerikanske skytjenester, så lenge USA ikke endrer sin lovgivning.
-
-{{< accordion-script >}}

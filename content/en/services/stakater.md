@@ -42,7 +42,6 @@ A complete 24x7x365 supported DevSecOps platform for observability, and effortle
 {{% question question="What is DevSecOps?" %}}
 A DevSecOps platform is an integrated solution that combines software development (Dev), security (Sec), and operations (Ops) practices. It aims to embed security seamlessly into the software development lifecycle. This approach ensures that security considerations are not just an afterthought but are integrated from the outset and throughout the development, deployment, and maintenance processes. By doing so, it helps in identifying and mitigating security vulnerabilities early, improving the overall security of the software, speeding up the development process, and fostering collaboration among development, security, and operations teams.
 {{% /question %}}
-{{< accordion-script >}}
 
 ### Features at a glance
 

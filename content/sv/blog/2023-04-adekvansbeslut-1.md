@@ -81,7 +81,6 @@ Inlåsningseffekter är en term som används för att beskriva situationen där 
 Detta kan göra det svårt för organisationen att byta levererantör. [Läs mer om egress-cost](/blogg/2023/2023-03-egress-cost/) som är en vanlig inlåsningsmekanism.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{% note "Läs mer" %}}
 

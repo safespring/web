@@ -33,7 +33,6 @@ With Broadcom's acquisition of VMware, many companies and organizations that hav
 {{< localbutton text="Let's talk" link="#conclusion" >}}
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ## The VMware Offering
 

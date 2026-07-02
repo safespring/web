@@ -5,14 +5,11 @@
         class="webinar-highlist-image"
         style="background-image: url('{{ with .Params.card }}{{ . }}{{ else }}{{ .Params.thumbnail }}{{ end }}');"
       ></div>
-      <div class="webinar-series-text-container" data-href="{{ .RelPermalink }}">
-        <div>
-          <h2>{{ .Title }}</h2>
-          {{ with .Params.intro }}<p>{{ . }}</p>{{ end }}
-          <span class="text-button"
-            >{{ T "sidebar.demo" }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i
-          ></span>
-        </div>
+      <div class="webinar-series-text-container webinar-series-text-container--demo" data-href="{{ .RelPermalink }}">
+        <h2>{{ .Title }}</h2>
+        <span class="text-button"
+          >{{ T "sidebar.demo" }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i
+        ></span>
       </div>
     </div>
   </a>

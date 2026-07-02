@@ -72,7 +72,6 @@ FEDn allows models to be trained locally on client-side data, sending only encry
 Yes, FEDn supports popular machine learning frameworks including TensorFlow, PyTorch, Keras, Hugging Face, and scikit-learn, enabling seamless integration into your existing AI development processes.
 {{% /question %}}
 
-{{< accordion-script >}}
 
 {{< distance >}}
 
@@ -83,4 +82,3 @@ Yes, FEDn supports popular machine learning frameworks including TensorFlow, PyT
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Seamless Integration" description="Easily integrate FEDn with popular AI frameworks like TensorFlow and PyTorch, and deploy flexibly across Safespring's secure cloud infrastructure." >}}
 
 {{< distance >}}
-

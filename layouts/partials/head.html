@@ -904,6 +904,10 @@
     <!-- Ladda kritisk CSS direkt -->
     {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" />
+    {{ if and .File (eq .File.BaseFileName "price") }}
+      {{ $mobilePriceTablesJS := resources.Get "js/mobile-price-tables.js" | minify | fingerprint }}
+      <script src="{{ $mobilePriceTablesJS.RelPermalink }}" defer></script>
+    {{ end }}
 
     {{ $faBundleTarget := "css/combined-font-awesome.css" }}
     {{ $faSources := slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css") }}

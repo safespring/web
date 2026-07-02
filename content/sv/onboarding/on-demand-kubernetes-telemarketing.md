@@ -96,7 +96,6 @@ GPU är särskild beräkningskapacitet som ofta används för AI, maskininlärni
 Du behöver inte veta vilken GPU-modell kunden behöver. Lyssna bara efter om de har AI-, ML- eller analysbehov där vanlig serverkapacitet inte räcker.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 ## När kunden är relevant
 

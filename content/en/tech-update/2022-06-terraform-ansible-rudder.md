@@ -515,5 +515,3 @@ of this blog post. Head over to Normation's [Rudder page][rudder] to learn more.
 [netblog]: /blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
-
-{{< accordion-script >}}

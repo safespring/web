@@ -95,5 +95,3 @@ We implemented several NATS messaging patterns, including:
 This project represents a significant step forward in providing scalable, self-service access to open source infrastructure for our customers. By leveraging NATS and Huma, we have created a robust, efficient, and secure tool that meets the growing demands of our B2B and European research communities.
 
 Feel free to reach out if you have any questions or would like more detailed information about our project!
-
-{{< accordion-script >}}

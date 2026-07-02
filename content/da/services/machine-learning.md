@@ -71,7 +71,6 @@ FEDn tillader modeller at blive trænet lokalt på klient-side data og sender ku
 Ja, FEDn understøtter populære maskinlæringsframeworks inklusive TensorFlow, PyTorch, Keras, Hugging Face og scikit-learn, hvilket muliggør problemfri integration i dine eksisterende AI-udviklingsprocesser.
 {{% /question %}}
 
-{{< accordion-script >}}
 
 {{< distance >}}
 

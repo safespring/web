@@ -72,7 +72,6 @@ Hos Safespring bygger vi ikke bare systemer; vi bygger relationer. Vi forstår, 
 Vi ved, at talent kommer i mange former, og at en standardiseret interviewproces ikke passer til alle. Hvis du har idéer til, hvordan du bedst vil demonstrere dine kompetencer, lytter vi gerne! Vores mål er at give dig mulighed for at vise os, hvordan du arbejder bedst.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< distance >}}
 

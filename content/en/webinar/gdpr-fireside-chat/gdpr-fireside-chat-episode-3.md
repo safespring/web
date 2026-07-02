@@ -44,5 +44,3 @@ Gabriel works at Safespring, which delivers a sustainable cloud platform for sec
 {{% accordion title="About IT-Säkerhetsbolaget and Patrik" %}}
 Patrik is the CEO and founder of IT-Säkerhetsbolaget AB, a full-service provider of sustainable digitalization with expertise in IT security, information security, ISO audits, IT law, and data protection.
 {{% /accordion %}}
-
-{{< accordion-script >}}

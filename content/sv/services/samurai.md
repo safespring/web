@@ -69,7 +69,6 @@ Samurai MDR uppdateras regelbundet med de senaste hotdatadefinitionerna och säk
 
 </div>
 
-{{< accordion-script >}}
 
 {{< distance >}}
 
@@ -86,4 +85,3 @@ Med Samurai MDR på Safesprings molnplattform får du en kombination av NTT Secu
 Se en demo av Safesprings plattform och kontakta oss om du vill prata vidare om Samurai MDR.
 
 {{< localbutton text="Se demo" link="/demo/compute/" >}}
-

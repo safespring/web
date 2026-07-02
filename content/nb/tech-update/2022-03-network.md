@@ -49,7 +49,6 @@ Klikk deg gjennom de syv skjermbildene i diagrammet under for å forstå hvordan
 kommunikasjon skjer basert på medlemskap og regler i sikkerhetsgrupper.
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 {{< distance >}}
 

@@ -192,5 +192,3 @@ Amelia Andersdotter wrote this white paper. Safespring provides cloud services p
 1. E-delegation, Guidance for digital collaboration, Version 4.1, 28 May 2015.
 1. DIGG, 2019-136, Policy for software development.
 1. Question 5 in part II will, in principle, always need to be answered in the affirmative when using US cloud services if the US does not change its legislation.
-
-{{< accordion-script >}}

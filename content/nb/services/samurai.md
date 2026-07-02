@@ -70,7 +70,6 @@ Samurai MDR oppdateres jevnlig med de nyeste trusseldefinisjonene og sikkerhetso
 
 </div>
 
-{{< accordion-script >}}
 
 {{< distance >}}
 

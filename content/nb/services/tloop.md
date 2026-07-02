@@ -122,5 +122,3 @@ Deres Data Energy Centers® er utformet og bygget i henhold til de høyeste data
 {{% question question="Kan jeg besøke T.Loops datasenterfasiliteter før jeg inngår en colocation-avtale?" %}}
 For å bestille en omvisning, vennligst [kontakt T.Loop](mailto:hello@tloop.se), så ordner de et besøkstidspunkt for deg.
 {{% /question %}}
-
-{{< accordion-script >}}

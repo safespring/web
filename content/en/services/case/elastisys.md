@@ -21,6 +21,8 @@ sidebarwhitepaper: ""
 service: "Safespring Compute"
 aliases:
   - /en/services/case/elastisys/
+  - /solution-brief/welkin-on-safespring/
+  - /solution-brief/compliant-kubernetes/
 ---
 
 {{< ingress >}}
@@ -40,6 +42,10 @@ Welkin is a Kubernetes platform from Elastisys for organizations that want to ru
 Customers can build and deploy applications without owning the full Kubernetes stack themselves. Welkin is used where questions about GDPR, patient data, audits, access control, and supplier risk need to be answered.
 
 Welkin is CNCF-certified as a Kubernetes distribution and includes controls for security in containerized environments. Examples include intrusion detection with Falco, policy control with Open Policy Agent/Gatekeeper, automatic certificate management with cert-manager, a container registry with security scanning, and support for CI/CD flows such as ArgoCD.
+
+The hard part is not only starting a Kubernetes cluster, but operating it with real workloads over time. For regulated environments, the platform needs to handle upgrades, testing, patching, CVE tracking, backups, and supporting services for logging and monitoring without making the responsibility split unclear.
+
+That means Welkin can be used across the software lifecycle: development, packaging, testing, deployment, operations, and audits. Safespring's role is to provide the local Compute infrastructure, data center location, storage, and network that the platform can run on.
 
 ## How Elastisys uses Safespring
 

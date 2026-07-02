@@ -280,4 +280,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 </script>
-{{< accordion-script >}}

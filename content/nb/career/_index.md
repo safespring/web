@@ -27,7 +27,6 @@ Vår IaaS-plattform er basert på den markedsledende OpenStack-skyplattformen og
 Hvis du er klar for å ta karrieren din til neste nivå, oppfordrer vi deg til å søke om å bli en del av teamet vårt hos Safespring. Vi gleder oss til å se hva du kan bidra med.
 
 {{% accordion title="Vår rekrutteringsprosess" %}}
-{{< accordion-script >}}
 
 Hos Safespring bygger vi ikke bare systemer; vi bygger relasjoner. Vi forstår at det å søke på en ny stilling er et stort steg, og vi ønsker å gjøre prosessen smidig, transparent og engasjerende for deg.
 

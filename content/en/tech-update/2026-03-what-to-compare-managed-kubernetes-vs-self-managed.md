@@ -44,7 +44,6 @@ This post is aimed at engineers and platform teams who are perfectly capable of 
 {{< localbutton text="Jump to the service boundary" link="#the-service-boundary-in-practice" >}}
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ## What Safespring Kubernetes Engine is trying to do
 

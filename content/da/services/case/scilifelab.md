@@ -153,5 +153,3 @@ Jeg er CCO hos Safespring og kan hjælpe dig med at bruge vores tjenester, som a
 {{< inline "Ring" >}} +46 (0)76 629 25 02
 [fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

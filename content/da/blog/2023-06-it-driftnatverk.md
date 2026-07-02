@@ -47,5 +47,3 @@ Safespring er en stolt deltager i initiativet Sveriges IT-driftnetværk og arbej
 {{< inline "Ring" >}} +46 76-629 25 02
 [fredric@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

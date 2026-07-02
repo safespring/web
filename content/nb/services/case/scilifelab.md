@@ -191,5 +191,3 @@ SLA står for Service Level Agreement og er en avtale mellom to parter om hvilke
 I denne sammenhengen er det en avtale mellom Safespring og SciLifeLab om hvilket nivå av ytelse og tjeneste som skal leveres for skytjenesten.
 
 {{% /accordion %}}
-
-{{< accordion-script >}}

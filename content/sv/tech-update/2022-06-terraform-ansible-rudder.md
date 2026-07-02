@@ -441,5 +441,3 @@ Användningen av Rudder för att hålla dina instanser kontinuerligt i överenss
 [netblog]: /blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/
-
-{{< accordion-script >}}

@@ -183,7 +183,6 @@ Anledningen till detta återfinns i amerikansk lagstiftning kring underrättelse
 Detta white paper är skrivet av Amelia Andersdotter. Safespring erbjuder svenskproducerade molntjänster.
 {{< /ingress >}}
 
-{{< accordion-script >}}
 
 [^1]: ECLI:EU:C:2020:559
 

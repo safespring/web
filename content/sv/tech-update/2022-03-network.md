@@ -41,7 +41,6 @@ Det finns ingen pool med flytande IP-adresser.
 Klicka igenom de sju vyerna i diagrammet nedan för att förstå hur kommunikationen sker baserat på medlemskap i säkerhetsgrupper och deras regler.
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 {{< distance >}}
 

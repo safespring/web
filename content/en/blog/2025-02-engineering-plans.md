@@ -35,7 +35,6 @@ So you want the short version? Safespring’s engineering team is making big mov
 
 These upgrades reinforce Safespring’s commitment to open, sovereign, and compliant cloud solutions.
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ### **STO1 - lessons learned**
 

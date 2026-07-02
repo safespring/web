@@ -35,7 +35,6 @@ Vil du ha kortversjonen? Safesprings ingeniørteam gjør store grep i 2025!
 
 Disse oppgraderingene understreker Safesprings forpliktelse til åpne, suverene og regelverkskompatible skyløsninger.
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ### **STO1 – lærdommer**
 

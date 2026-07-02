@@ -37,7 +37,6 @@ At Safespring we're not just building systems; we're building relationships. We 
 We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Click here to apply" description="Would you like to join us? Send your CV by clicking here!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/47ac0d37-2bfb-4b20-a544-0bcecaa33b68/db5f120a-b35c-462a-882a-9c91adcf1cd6#applyNow" >}}
 

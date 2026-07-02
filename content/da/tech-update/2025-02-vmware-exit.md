@@ -33,7 +33,6 @@ Med Broadcoms opkøb af VMware har mange virksomheder og organisationer, der har
 {{< localbutton text="Lad os tage en snak" link="#conclusion" >}}
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ## VMware-tilbuddet
 

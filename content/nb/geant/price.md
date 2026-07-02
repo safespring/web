@@ -116,7 +116,6 @@ Se konfigurasjoner for sikkerhetskopi i [tjenestekatalogen](/geant/service-catal
 | 7 001            | Backup Large                     |
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 | Produkt-ID          | Fast månedspris | Per GB / 30 dager |
 | ------------------- | ---------------- | ----------------- |

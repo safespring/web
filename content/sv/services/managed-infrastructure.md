@@ -189,4 +189,3 @@ Leveransmöte: Förbereda statusrapport
 {{< /chart >}}
 -->
 {{< distance >}}
-{{< accordion-script >}}

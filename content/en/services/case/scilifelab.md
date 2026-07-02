@@ -154,5 +154,3 @@ I am Safespring's CCO and can assist you in using our services already procured 
 {{< inline "Call" >}} +46 (0)76 629 25 02
 [fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

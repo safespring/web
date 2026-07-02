@@ -83,6 +83,5 @@ Vi forstår at det å søke en ny rolle er et stort steg, og vi ønsker å gjør
 Fleksibilitet i hvert steg: Vi vet at talent kommer i mange former, og at standard intervjuprosess ikke passer for alle. Hvis du har ideer til hvordan du best vil vise fram ferdighetene dine, lytter vi gjerne! Målet vårt er å gi deg mulighet til å vise oss hvordan du jobber best.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< horisontal-card image="/img/kontakt/marietta.webp" cardtitle="Har du spørsmål?" link="mailto:marietta@safespring.com" linktext="Send e-post" text="Marietta er din kontakt her hos Safespring. Du kan kontakte henne på marietta@safespring.com " >}}

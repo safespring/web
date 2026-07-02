@@ -11,6 +11,9 @@ language: "nb"
 section: "Safespring"
 aliases:
   - /no/bransjer/myndigheter/
+  - /no/bransjer/kommuner/
+  - /industrier/kommuner/
+  - /branscher/kommuner/
 slug: "myndigheter"
 ---
 

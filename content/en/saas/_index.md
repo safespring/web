@@ -63,7 +63,6 @@ You can describe Safespring's data centers in Sweden and Norway, ISO 27001 certi
 Yes. Safespring builds on open standards for compute, storage, and networking. This means applications and platforms can be built without depending on provider-specific cloud services.
 {{% /question %}}
 
-{{< accordion-script >}}
 
 ## Technology
 

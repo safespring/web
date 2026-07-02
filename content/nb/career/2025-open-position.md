@@ -37,7 +37,6 @@ I Safespring bygger vi ikke bare systemer; vi bygger relasjoner. Vi forstår at 
 Vi vet at talent kommer i mange former, og at en standard intervjuprosess ikke passer for alle. Hvis du har ideer om hvordan du foretrekker å vise fram ferdighetene dine, lytter vi gjerne! Målet vårt er å gi deg mulighet til å vise oss hvordan du jobber best.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-from-square" text="Klikk her for å søke" description="Har du lyst til å bli med oss? Send CV-en din ved å klikke her!" link="https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/47ac0d37-2bfb-4b20-a544-0bcecaa33b68/db5f120a-b35c-462a-882a-9c91adcf1cd6#applyNow" >}}
 

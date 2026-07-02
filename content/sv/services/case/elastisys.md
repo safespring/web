@@ -20,6 +20,8 @@ sidebarwhitepaper: ""
 service: "Safespring Compute"
 aliases:
   - /tjanster/case/elastisys/
+  - /losningsfaktablad/welkin-på-safespring/
+  - /solution-brief/compliant-kubernetes/
 ---
 
 {{< ingress >}}
@@ -39,6 +41,10 @@ Welkin är en Kubernetes-plattform från Elastisys för organisationer som vill 
 För kunderna innebär det att de kan bygga och driftsätta applikationer utan att själva behöva äga hela Kubernetes-stacken. Welkin används i sammanhang där frågor om GDPR, patientdata, revisioner, åtkomstkontroll och leverantörsrisk behöver kunna besvaras.
 
 Welkin är CNCF-certifierad som Kubernetes-distribution och innehåller kontroller för säkerhet i containeriserade miljöer. Exempel är intrångsdetektering med Falco, policykontroll med Open Policy Agent/Gatekeeper, automatisk certifikathantering med cert-manager, containerregister med säkerhetsskanning och stöd för CI/CD-flöden som ArgoCD.
+
+Den svåra delen är inte bara att starta ett Kubernetes-kluster, utan att drifta det med verkliga laster över tid. För reglerade miljöer behöver plattformen hantera uppgraderingar, testning, patchning, CVE-uppföljning, backup samt stödjande tjänster för loggning och monitorering utan att ansvarsfördelningen blir otydlig.
+
+Det gör att Welkin kan användas genom hela mjukvarulivscykeln: utveckling, paketering, test, driftsättning, drift och revision. Safesprings roll är att ge den lokala Compute-infrastrukturen, datacenterplaceringen, lagringen och nätverket som plattformen kan köras på.
 
 ## Hur Elastisys använder Safespring
 

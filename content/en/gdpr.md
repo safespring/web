@@ -123,7 +123,6 @@ Central block storage for increased redundancy: As part of our service, we offer
 - the resilience of processing systems and services (32.1c)
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 {{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federated Machine Learning" linkref="/services/case/scaleout.md" linktext="Read Use Case" text="“There is value in having critical infrastructure located in Sweden where we are not dependent on other countries' legislation...“ – Ebba Kreamer, Scaleout" >}}
 

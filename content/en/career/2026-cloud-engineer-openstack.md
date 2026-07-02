@@ -106,7 +106,6 @@ At Safespring we're not just building systems; we're building relationships. We 
 We recognize that talent comes in many forms and that the standard interview process isn’t one-size-fits-all. If you have ideas on how you would prefer to showcase your skills, we’re all ears! Our goal is to give you an opportunity to show us how you work best.
 {{% /accordion %}}
 
-{{< accordion-script >}}
 
 
 ## How to apply
@@ -131,4 +130,3 @@ As soon as possible, we will interview candidates on rolling basis
 **Salary range:**  
 €50.000 - €80.000 annually
 {{% /note %}}
-

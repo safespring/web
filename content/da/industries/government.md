@@ -7,6 +7,9 @@ card: "safespring_card_31.svg"
 draft: false
 intro: "Safespring leverer sikre og bæredygtige skytjenester uden leverandørlåsning"
 background: "safespring-government-background.svg"
+aliases:
+  - /industrier/kommuner/
+  - /branscher/kommuner/
 sidebarlinkurl: "/kontakt/"
 sidebarlinkname: "Tal med Fredric"
 banner: "blue-hover-blogg"

@@ -107,5 +107,3 @@ Oplev det fulde potentiale i dine data med Safespring Storage. Vores team er kla
 
 [hello@safespring.com](mailto:hello@safespring.com)
 {{% /custom-card %}}
-
-{{< accordion-script >}}

@@ -172,7 +172,6 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
 </table>
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 | Produkt ID       | Fast månadspris        | Per GB i 30 dagar |
 |------------------|------------------------|-------------------|

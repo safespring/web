@@ -45,7 +45,6 @@ Det här inlägget riktar sig till ingenjörer och plattformsteam som absolut ka
 {{< localbutton text="Hoppa till tjänstegränsen" link="#tjanstegransen-i-praktiken" >}}
 
 {{% /accordion %}}
-{{< accordion-script >}}
 
 ## Vad Safespring Kubernetes Engine försöker göra
 

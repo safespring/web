@@ -95,5 +95,3 @@ Vi implementerte flere NATS‑mønstre, blant annet:
 Dette prosjektet er et viktig steg fremover for å tilby skalerbar, selvbetjent tilgang til infrastruktur med åpen kildekode for kundene våre. Ved å utnytte NATS og Huma har vi laget et robust, effektivt og sikkert verktøy som møter de økende behovene hos våre B2B‑kunder og europeiske forskningsmiljøer.
 
 Ta gjerne kontakt hvis du har spørsmål eller ønsker mer detaljert informasjon om prosjektet vårt!
-
-{{< accordion-script >}}

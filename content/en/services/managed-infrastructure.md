@@ -187,4 +187,3 @@ Delivery Meeting: Prepare status report
 {{< /chart >}}
 -->
 {{< distance >}}
-{{< accordion-script >}}
