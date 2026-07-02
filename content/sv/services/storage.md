@@ -1,5 +1,6 @@
 ---
-title: "Safespring S3: Skalbar och högpresterande objektlagring"
+title: "S3-kompatibel objektlagring i Sverige och Norden"
+metatitle: "S3 Storage i Sverige och Norden | Safespring Storage"
 language: "sv"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
@@ -9,8 +10,8 @@ cardcolor: "#f4670f"
 cardorder: "4"
 date: 2024-09-22T10:50:10+02:00
 draft: false
-intro: "Molnbaserad lagring som tillhandahålls från våra datacenter i Norden och bygger på den marknadsledande lagringsteknologin Ceph."
-cardintro: "Skalbar objektlagring med kontroll, prestanda och drift från Norden."
+intro: "S3-kompatibel objektlagring för organisationer som behöver skalbar lagring, objektlåsning, låg latency och kontroll över data i svenska och nordiska datacenter."
+cardintro: "S3-kompatibel objektlagring med kontroll, objektlåsning och nordisk drift."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Kom igång"
@@ -43,7 +44,7 @@ aliases:
 ## S3 Storage - lagring i molnet
 
 {{< ingress >}}
-Safespring Storage är en S3-kompatibel objektlagrings&shy;lösning utformad för att möta europeiska organisationers behov. Med fokus på compliance, skalbarhet och prestanda erbjuder Safespring Storage en tillförlitlig grund för dina lagringsbehov.
+Safespring Storage är objektlagring för verksamheter som behöver S3-kompatibilitet, skalbarhet och kontroll över dataplacering utan att låsa sig till en global hyperscaler.
 {{< /ingress >}}
 
 Med **datakryptering** kan du skydda dina data med end-to-end-kryptering och säkerställa integritet och konfidentialitet under överföring och lagring. Vår funktion **objektlåsning** skyddar dina kritiska data från oavsiktlig radering eller ransomware-attacker genom att göra objekt oföränderliga under en specifik tidsperiod.

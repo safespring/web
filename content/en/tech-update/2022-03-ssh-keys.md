@@ -1,7 +1,8 @@
 ---
-title: "Best practices for SSH keys in Cloud/OpenStack"
+title: "SSH key best practices for OpenStack cloud instances"
+metatitle: "SSH key best practices for OpenStack cloud instances"
 date: "2022-03-17"
-intro: "Let's go through some best practices regarding management of SSH keys, and clear up common misunderstandings."
+intro: "Learn how SSH keypairs, OpenStack keypairs and host keys differ, and how to manage private keys safely when provisioning cloud instances."
 draft: false
 tags: ["English"]
 showthedate: true
@@ -11,6 +12,10 @@ socialmediabild: ""
 section: "Tech update"
 author: "Jarle Bjørgeengen"
 language: "en"
+sidebarlinkname: "Explore OpenStack Compute"
+sidebarlinkurl: "/services/safespring-cloud-compute/"
+sidebarlinkname2: "Compute documentation"
+sidebarlinkurl2: "https://docs.safespring.com/compute/howto/keypairs/"
 toc: "Table of contents"
 aliases:
   - /blogg/2022-03-ssh-keys

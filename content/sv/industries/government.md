@@ -1,12 +1,15 @@
 ---
 language: "sv"
-title: "Safespring är en helt svensk molnplattform"
-cardtitle: "Safespring för myndigheter"
+title: "Molntjänster för svenska myndigheter"
+metatitle: "Molntjänster för myndigheter i Sverige | Safespring"
+cardtitle: "Myndigheter"
 date: 2022-03-03T10:47:25+01:00
 card: "safespring_card_31.svg"
 draft: false
-intro: "Safespring tillhandahåller säkra och hållbara molntjänster utan inlåsning"
+intro: "Svensk molnplattform för myndigheter som behöver digital suveränitet, dataplacering i Sverige och Norden, öppna standarder och stöd för upphandling via ramavtal."
 background: "safespring-government-background.svg"
+sidebarlinkname2: "Läs om Cloud Act"
+sidebarlinkurl2: "/whitepaper/cloudact/"
 aliases:
   - /myndighet/
   - /branscher/myndigheter/
@@ -18,7 +21,7 @@ sidebarlinkname: "Prata med Fredric"
 banner: "blue-hover-blogg"
 cardicon: "fa-solid fa-building-columns"
 cardcolor: "#417DA5"
-cardintro: ""
+cardintro: "Svenska molntjänster för offentlig sektor med kontroll, säkerhet och digital suveränitet."
 TOC: "På denna sida"
 ---
 
@@ -34,7 +37,7 @@ TOC: "På denna sida"
 ## Svenska molntjänster
 
 {{< ingress >}}
-Digital suveränitet genom svenska molntjänster byggd med öppna standarder och öppen källkod.
+Safespring hjälper myndigheter använda molntjänster med större kontroll över dataplacering, jurisdiktion och leverantörsberoende. Plattformen bygger på öppna standarder och levereras från Sverige och Norden.
 {{</ ingress >}}
 
 Våra molntjänster gör det möjligt att både uppfylla kraven på kontroll och datasäkerhet samtidigt som ni drar nytta av den kostnadseffektivitet och flexibilitet som moderna molntjänster ger.

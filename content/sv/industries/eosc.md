@@ -58,6 +58,6 @@ Vi är glada över att bidra till EOSC EU Node och ser fram emot att fortsätta 
 {{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
 Jag är CCO på Safespring och hjälper dig att använda våra tjänster som redan är upphandlade enligt OCRE-avtalet.
 
-{{< inline "Ring" >}} +46 (0)76 629 25 02
+{{< inline "Ring" >}} +46 (0)76 629 25 02<br>
 [fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}

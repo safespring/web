@@ -1,9 +1,10 @@
 ---
-title: "Hur du hanterar det osäkra läget i och med GDPR och CLOUD Act"
+title: "CLOUD Act, FISA 702 och GDPR för svenska molntjänster"
+metatitle: "CLOUD Act, FISA 702 och GDPR | Juridisk risk i molnet"
 section: "White Paper"
 language: "sv"
 date: "2019-07-09"
-intro: "EU-rättens och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma att påverka detta."
+intro: "Förstå hur CLOUD Act och FISA 702 påverkar europeiska organisationers molnval, och varför svensk och europeisk drift kan minska juridisk och operativ risk."
 draft: false
 tags: ["Svenska"]
 author: "Martin Millnert"
@@ -22,7 +23,7 @@ toc: "Innehåll"
 ---
 
 {{< ingress >}}
-Detta white paper handlar om EUs- och amerikansk rätts bestämmelser om gränsöverskridande dataöverföringar samt aktuella rättsfall som kan komma påverka detta.
+Amerikansk lagstiftning kan påverka europeiska organisationers molnval även när data lagras i Europa. Den här genomgången förklarar riskerna och vilka frågor som bör ställas vid val av molnleverantör.
 {{< /ingress >}}
 
 <span id="download"></span>

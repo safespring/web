@@ -41,7 +41,7 @@ Kontakta oss gärna om du vill veta mer eller om du har några frågor. Vi ser f
 {{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
 Jag är CCO på Safespring och hjälper dig se hur Safespring kan bli en del av er digitala infrastruktur.
 
-{{< inline "Ring" >}} +46 (0)76 629 25 02
+{{< inline "Ring" >}} +46 (0)76 629 25 02<br>
 [Skicka mail](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}
 

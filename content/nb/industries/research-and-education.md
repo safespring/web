@@ -84,6 +84,6 @@ Safesprings tjenester er klare til bruk. Hvis du tilhører forsknings- og utdann
 {{% custom-card image="/img/kontakt/fredric-wallsten-2023.webp" cardtitle="Fredric Wallsten" %}}
 Jeg er CCO i Safespring og hjelper deg med å bruke tjenestene våre som allerede er anskaffet under OCRE 2024.
 
-{{< inline "Ring" >}} +46 (0)76 629 25 02
+{{< inline "Ring" >}} +46 (0)76 629 25 02<br>
 [fredric.wallsten@safespring.com](mailto:fredric.wallsten@safespring.com)
 {{% /custom-card %}}

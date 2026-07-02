@@ -1,7 +1,8 @@
 ---
-title: "Validating Talos Linux Install and Maintenance Operations"
+title: "Validate and upgrade Talos Linux Kubernetes on OpenStack"
+metatitle: "Validate and upgrade Talos Linux Kubernetes on OpenStack"
 date: 2025-04-09
-intro: "An accessible approach to operations on a Kubernetes platform, represents a compelling  option for PaaS operators."
+intro: "Validate a Talos Linux Kubernetes cluster on OpenStack with Cilium and Cinder CSI, then upgrade Talos OS and Kubernetes through repeatable operations"
 draft: false
 tags: ["container"]
 showthedate: true
@@ -13,11 +14,19 @@ language: "en"
 sectiontext: "Deep Dives"
 section: "Tech update"
 author: "Stefan Negru"
+sidebarlinkname: "Explore Kubernetes Engine"
+sidebarlinkurl: "/containers/"
+sidebarlinkname2: "Talk to a cloud architect"
+sidebarlinkurl2: "/contact/"
 TOC: "In this post"
 aliases:
   - /blogg/2025/2025-04-validating-talos-linux-intstall/
   - /tech-update/2025-04-validating-talos-linux-install/
 ---
+
+{{< ingress >}}
+Use this guide to validate a Talos Linux Kubernetes cluster on OpenStack, confirm Cilium and Cinder CSI behavior, and run repeatable upgrade operations for both Talos OS and Kubernetes.
+{{< /ingress >}}
 
 In a [previous article]({{% relref "/tech-update/2025-03-talos-linux-on-openstack.md" %}}) we started to explore Talos Linux and what that could mean for us, and how we can automate the installation on Safespring OpenStack, but we wanted to go a few steps further in our investigation and look into confirming two more aspects:
 

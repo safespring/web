@@ -1,5 +1,6 @@
 ---
-title: "Safespring Backup"
+title: "Backup som tjänst med svensk och europeisk drift"
+metatitle: "Backup som tjänst i Sverige | Safespring Backup"
 language: "sv"
 documentation: "Backup"
 cardtitle: "Backup"
@@ -8,8 +9,8 @@ cardcolor: "#29a929"
 cardorder: "6"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-intro: "Med Safesprings molnbaserad backuptjänst behöver du inte investera i egen hård- eller mjukvara. Betala bara för mängden data som sparas i tjänsten!"
-cardintro: "Robust enterprise-backup i molnet för fysiska eller virtuella servrar."
+intro: "Safespring Backup ger skyddad, skalbar och krypterad backup som tjänst med portal, rapportering, ransomware-skydd och drift från svenska och nordiska datacenter."
+cardintro: "Backup som tjänst med ransomware-skydd, portal och nordisk drift."
 background: "safespring-backup-background.svg"
 form: "yes"
 sidebarlinkname: "Se demo"
@@ -33,7 +34,7 @@ megamenu: "yes"
 {{< distance >}}
 
 {{< ingress >}}
-Safesprings Backup har inbyggt skydd för ransomware och en portal där du enkelt sköter kontrollen av er skyddade data.
+Safespring Backup hjälper organisationer skydda servrar och kritiska data utan att bygga egen backupinfrastruktur. Tjänsten levereras från nordiska datacenter och ger kontroll över både data, rapportering och återställning.
 {{< /ingress >}}
 
 Att ta Backup genom Safespring betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.

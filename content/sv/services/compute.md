@@ -1,6 +1,6 @@
 ---
 title: "Svensk OpenStack IaaS för reglerade verksamheter"
-metatitle: "Stärk ditt företag med cloud computing och lägg till VPN i Safespring"
+metatitle: "OpenStack IaaS i Sverige och Norden | Safespring Compute"
 language: "sv"
 documentation: "Compute"
 cardtitle: "Compute"
@@ -10,7 +10,7 @@ cardorder: "3"
 date: 2022-12-07T13:58:58+01:00
 draft: false
 intro: "Safespring Compute är en svensk och europeisk IaaS-plattform för virtuella servrar, automation och skalbar infrastruktur med dataplacering i Norden och tydlig kontroll."
-cardintro: "Svensk IaaS med robust serverkapacitet, kontroll och hög flexibilitet."
+cardintro: "OpenStack-baserad IaaS med kontroll, automation och drift från Norden."
 background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Se demo"
