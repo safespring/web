@@ -20,6 +20,8 @@ language: "nb"
 section: "Løsningsoversikt"
 aliases:
   - /whitepaper/immutable-storage/
+  - /hvitbok/safespring-immutable-object-storage/
+  - /no/whitepaper/immutable-storage/
   - /solution-brief/immutable-storage/
   - /en/whitepaper/immutable-storage/
 ---

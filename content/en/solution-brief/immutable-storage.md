@@ -19,6 +19,7 @@ language: "en"
 section: "Solution Brief"
 aliases:
   - /whitepaper/immutable-storage/
+  - /whitepaper/safespring-immutable-object-storage/
   - /solution-brief/immutable-storage/
   - /en/whitepaper/immutable-storage/
 ---

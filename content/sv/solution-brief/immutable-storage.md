@@ -20,6 +20,8 @@ language: "sv"
 section: "Lösningsöversikt"
 aliases:
   - /whitepaper/immutable-storage/
+  - /vitbok/oforanderlig-objektlagring-fran-safespring/
+  - /old-solution-briefs/immutable-storage/
   - /solution-brief/immutable-storage/
   - /en/whitepaper/immutable-storage/
 ---

@@ -20,6 +20,7 @@ language: "da"
 section: "Løsningsoversigt"
 aliases:
   - /whitepaper/immutable-storage/
+  - /hvidbog/safespring-uforanderlig-objektlagring/
   - /solution-brief/immutable-storage/
   - /en/whitepaper/immutable-storage/
 ---

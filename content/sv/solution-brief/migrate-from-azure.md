@@ -18,6 +18,7 @@ language: "sv"
 section: "Solution Brief"
 aliases:
   - /solution-brief/migrate-from-azure/
+  - /vitbok/migrera-fran-azure-kubernetes-service-till-ck8s-hos-safespring/
 ---
 
 ## Migrering till Compliant Kubernetes
@@ -54,7 +55,7 @@ Det kommer också fler och fler applikationer som ersätter de mer användarnär
 
 Safespring är en molntjänstleverantör med datacenter i Sverige vilket gör juridiska krockar med amerikanska lagar en ickefråga. Tillsammans med vår partner Elastisys har vi tagit fram ett gemensamt erbjudande, Compliant Kubernetes eller Ck8s. Det är en managerad tjänst som ger organisationer den grundplatta som möjliggör frigörelse till den underliggande molntjänstleverantören. Om ett företag i sin nuvarande molntjänstleverantör redan använder Kubernetes så blir migreringen enklare eftersom det då går att återanvända all kod som beskriver systemen och tjänsterna som körs.
 
-Detta white paper beskriver hur en migrering från Microsoft Azure Kubernetes Service (AKS) ser ut. Utgångspunkt är att organisationen redan kör Kubernetes i Azure. Flera av stegen är applicerbara även för organisationer som inte använder Azure Kubernetes Service i dagsläget. Med utgångspunkt att Kubernetes fortsätter att vara det lingua franca för drift av containeriserade applikationer, är fördelen att köra det i organisationen uppenbara. Allt arbete som läggs ned på att migrera till en standardiserad plattform kan återanvändas om organisationen skulle vilja flytta sin infrastruktur någon annanstans eftersom samma definitioner för infrastrukturen kan användas så länge som mottagarplattformen också är Kubernetes. Det skapar en flexibilitet och oberoende som annars är svår att uppnå.
+Detta dokument beskriver hur en migrering från Microsoft Azure Kubernetes Service (AKS) ser ut. Utgångspunkt är att organisationen redan kör Kubernetes i Azure. Flera av stegen är applicerbara även för organisationer som inte använder Azure Kubernetes Service i dagsläget. Med utgångspunkt att Kubernetes fortsätter att vara det lingua franca för drift av containeriserade applikationer, är fördelen att köra det i organisationen uppenbara. Allt arbete som läggs ned på att migrera till en standardiserad plattform kan återanvändas om organisationen skulle vilja flytta sin infrastruktur någon annanstans eftersom samma definitioner för infrastrukturen kan användas så länge som mottagarplattformen också är Kubernetes. Det skapar en flexibilitet och oberoende som annars är svår att uppnå.
 
 ### Fördelarna med Open Source
 

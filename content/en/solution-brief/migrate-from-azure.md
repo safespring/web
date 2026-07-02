@@ -19,6 +19,9 @@ language: "en"
 section: "Solution Brief"
 aliases:
   - /solution-brief/migrate-from-azure/
+  - /whitepaper/migrate-from-azure/
+  - /en/whitepaper/migrate-from-azure/
+  - /whitepaper/migrate-from-azure-kubernetes-service-to-ck8s-at-safespring/
 ---
 ## Migration to Compliant Kubernetes
 
@@ -54,7 +57,7 @@ More and more applications are also emerging that replace user-facing services s
 
 Safespring is a cloud service provider with data centers in Sweden, which makes legal conflicts with US laws a non-issue. Together with our partner Elastisys, we have developed a joint offering: Compliant Kubernetes, or CK8s. It is a managed service that provides organizations with the foundation needed to achieve independence from the underlying cloud provider. If a company already uses Kubernetes with its current cloud provider, migration becomes easier because all the code describing the systems and services can be reused.
 
-This white paper describes what a migration from Microsoft Azure Kubernetes Service (AKS) looks like, assuming the organization already runs Kubernetes in Azure. Many of the steps also apply to organizations not currently using Azure Kubernetes Service. Assuming Kubernetes continues to be the lingua franca for operating containerized applications, the advantages of running it within the organization are clear. All the work invested in migrating to a standardized platform can be reused if the organization later wants to move its infrastructure elsewhere, since the same infrastructure definitions can be used as long as the target platform is also Kubernetes. This creates flexibility and independence that are otherwise hard to achieve.
+This document describes what a migration from Microsoft Azure Kubernetes Service (AKS) looks like, assuming the organization already runs Kubernetes in Azure. Many of the steps also apply to organizations not currently using Azure Kubernetes Service. Assuming Kubernetes continues to be the lingua franca for operating containerized applications, the advantages of running it within the organization are clear. All the work invested in migrating to a standardized platform can be reused if the organization later wants to move its infrastructure elsewhere, since the same infrastructure definitions can be used as long as the target platform is also Kubernetes. This creates flexibility and independence that are otherwise hard to achieve.
 
 ### The advantages of Open Source
 
