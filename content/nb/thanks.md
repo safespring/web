@@ -1,5 +1,7 @@
 ---
 title: "Takk!"
+translationKey: "thanks"
+slug: "takk"
 intro: "Hvis du vil vite mer, kan du enkelt kontakte oss på Safespring"
 date: "2020-09-25"
 draft: false

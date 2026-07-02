@@ -1,12 +1,15 @@
 ---
 ai: true
 title: "Tack!"
+translationKey: "thanks"
+slug: "tack"
 intro: "Om du vill veta mer, kan du enkelt kontakta oss på Safespring"
 date: "2020-09-25"
 draft: false
 language: "sv"
 section: "Safespring"
 aliases:
+  - /takk/
   - /no/takk-di/
   - /no/takk/
 ---

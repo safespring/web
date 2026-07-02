@@ -1,12 +1,15 @@
 ---
 ai: true
 title: "Thanks!"
+translationKey: "thanks"
+slug: "thanks"
 intro: "If you’d like to learn more, you can easily contact us at Safespring."
 date: "2020-09-25"
 draft: false
 language: "en"
 section: "Safespring"
 aliases:
+  - /takk/
   - /no/takk-di/
   - /no/takk/
 ---
