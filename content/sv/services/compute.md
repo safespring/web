@@ -110,7 +110,7 @@ OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applik
 
 Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
 
-{{< readfile "Vad är IaaS?" "/content/read-more/iaas-vs-colocation.md" >}}
+{{< readfile "Vad är IaaS?" "/content/sv/read-more/iaas-vs-colocation.md" >}}
 
 
 {{< distance >}}

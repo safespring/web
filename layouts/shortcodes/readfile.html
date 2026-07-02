@@ -4,8 +4,13 @@
 	<div id="content-to-print">
 		{{ with .Get 1 }}
 		{{ $path := . }}
-		{{ with (readFile $path) }}
-		{{ . | markdownify | safeHTML}}
+		{{ if not (fileExists $path) }}
+		{{ errorf "readfile shortcode in %s references missing file %q" $.Page.Path $path }}
+		{{ else }}
+		{{ $content := readFile $path }}
+		{{ $content = replaceRE `(?s)^---\s*\n.*?\n---\s*\n?` "" $content }}
+		{{ $content = replaceRE `(?s)^\+\+\+\s*\n.*?\n\+\+\+\s*\n?` "" $content }}
+		{{ $content | markdownify | safeHTML}}
 		{{ end }}
 		{{ end }}
 	</div>

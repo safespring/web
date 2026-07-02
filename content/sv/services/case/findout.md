@@ -28,7 +28,7 @@ Med en stor mängd patientuppgifter är FindOut Diagnostic ett av många bolag s
 
 Detta kan skapa en juridisk konflikt för svenska företag som hanterar patientdata och personuppgifter, eftersom de måste följa EU-lagstiftningen, såsom GDPR. Detta leder till att svenska företag riskerar att bryta mot sekretesslagar och dataskyddsförordningar när de använder amerikanska molntjänster som lyder under amerikansk jurisdiktion.
 
-{{< readfile "Vad är Cloud Act och Fisa 702?" "/content/read-more/about-cloudact-fisa702-se.md" >}}
+{{< readfile "Vad är Cloud Act och Fisa 702?" "/content/sv/read-more/about-cloudact-fisa702-se.md" >}}
 
 Efter en grundlig utvärdering valde de att köra [Compliant Kubernetes](/tjanster/compliant-kubernetes/) på Safesprings infrastruktur, en svensk molntjänstleverantör med en bevisad historia av att hantera känslig information säkert.
 
