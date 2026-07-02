@@ -59,6 +59,35 @@ def is_markdown_file(path: str) -> bool:
     return path.lower().endswith(".md")
 
 
+def is_draft_frontmatter_line(line: str) -> bool:
+    stripped = line.strip()
+    for separator in (":", "="):
+        key, found, value = stripped.partition(separator)
+        if not found:
+            continue
+        if key.strip().strip("'\"").lower() != "draft":
+            continue
+        normalized_value = value.split("#", 1)[0].strip().strip("'\"").lower()
+        return normalized_value == "true"
+    return False
+
+
+def is_draft_file(abs_path: str) -> bool:
+    try:
+        with open(abs_path, "r", encoding="utf-8") as f:
+            delimiter = f.readline().strip()
+            if delimiter not in ("---", "+++"):
+                return False
+            for line in f:
+                if line.strip() == delimiter:
+                    return False
+                if is_draft_frontmatter_line(line):
+                    return True
+    except UnicodeDecodeError:
+        return False
+    return False
+
+
 def to_abs(path: str) -> str:
     return path if os.path.isabs(path) else os.path.abspath(path)
 
@@ -75,6 +104,8 @@ def build_lang_to_bases(content_root_abs: str, langs: Iterable[str]) -> Dict[str
                 if not is_markdown_file(fname):
                     continue
                 abs_path = os.path.join(root, fname)
+                if is_draft_file(abs_path):
+                    continue
                 # compute base relative path after content/<lang>/
                 rel_after_lang = os.path.relpath(abs_path, lang_dir)
                 rel_after_lang = rel_after_lang.replace("\\", "/")
