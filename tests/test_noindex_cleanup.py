@@ -21,6 +21,10 @@ class NoindexCleanupTest(unittest.TestCase):
             "en/onboarding/safespring-onboarding/index.html": "https://beta.safespring.eu/onboarding/safespring-onboarding/",
             "en/internal/index.html": "https://beta.safespring.eu/en/internal/",
         }
+        non_rendered_fragment_pages = {
+            "en/read-more/index.html": "https://beta.safespring.eu/read-more/",
+            "en/read-more/iaas-vs-colocation/index.html": "https://beta.safespring.eu/read-more/iaas-vs-colocation/",
+        }
         intended_indexable_pages = {
             "en/services/index.html": "https://beta.safespring.eu/services/",
         }
@@ -40,6 +44,12 @@ class NoindexCleanupTest(unittest.TestCase):
                 self.assertTrue(page.exists(), f"{page_path} should render")
                 self.assertRegex(page.read_text(encoding="utf-8"), NOINDEX_META)
                 self.assertNotIn(f"<loc>{page_url}</loc>", sitemap)
+
+            for page_path, page_url in non_rendered_fragment_pages.items():
+                self.assertFalse((output_root / page_path).exists(), f"{page_path} should not render as a standalone page")
+                self.assertNotIn(f"<loc>{page_url}</loc>", sitemap)
+
+            self.assertFalse((output_root / "en/read-more/index.xml").exists())
 
             for page_path, page_url in intended_indexable_pages.items():
                 page = output_root / page_path
@@ -61,7 +71,7 @@ class NoindexCleanupTest(unittest.TestCase):
 
     def test_sitemap_templates_use_noindex_or_internal_rule(self):
         repo_root = Path(__file__).resolve().parents[1]
-        rule = '(or (eq .Params.noindex true) (eq .Section "internal"))'
+        rule = '(or (eq .Params.noindex true) (eq .Section "internal") (eq .Section "read-more"))'
 
         for template_path in ("layouts/_default/sitemap.xml", "layouts/index.xml"):
             template = (repo_root / template_path).read_text(encoding="utf-8")
