@@ -5,8 +5,9 @@ language: "da"
 date: "2024-04-19"
 publishDate: "2024-04-19"
 draft: false
+weight: 20
 tags: ["English"]
-card: "/img/webinar/thumbnails/demo-episode-series.webp"
+card: "/img/webinar/thumbnails/demo-episode-3.webp"
 socialmediabild: ""
 intro: "Denne serie tilbyder et struktureret forløb af dybdegående vejledninger, der er målrettet ingeniører, som ønsker at styrke deres praktiske færdigheder i brugen af Safespring-platformen."
 partner: ""

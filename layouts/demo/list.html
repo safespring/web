@@ -101,7 +101,7 @@
       <!-- Kontrollerar om URL innehåller "demo/" -->
       {{ if eq .RelPermalink "/demo/" }}
         <!-- Vi är på root av "demo" -->
-        {{ range sort .Sections "Date" "desc" }}
+        {{ range .Sections.ByWeight }}
           {{ .Render "series-summary" }}
         {{ end }}
       {{ else }}

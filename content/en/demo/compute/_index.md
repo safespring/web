@@ -4,8 +4,9 @@ language: "en"
 date: "2024-04-19"
 publishDate: "2024-04-19"
 draft: false
+weight: 20
 tags: ["English"]
-card: "/img/webinar/thumbnails/demo-episode-series.webp"
+card: "/img/webinar/thumbnails/demo-episode-3.webp"
 socialmediabild: ""
 intro: "This series offers a structured sequence of in-depth tutorials aimed at engineers looking to enhance their practical skills with Safespring platform. "
 partner: ""

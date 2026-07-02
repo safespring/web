@@ -5164,10 +5164,6 @@ ol li ol li::before {
   gap: clamp(2.75rem, 5vw, 4rem);
 }
 
-.webinar-series-text-container--demo {
-  justify-content: space-between;
-}
-
 .webinar-highlist-card h2 {
   /* Stilar för webinar-highlist-card h2 */
 }
@@ -5229,10 +5225,6 @@ ol li ol li::before {
     gap: 0;
   }
 
-  .webinar-series-text-container--demo {
-    width: 220px;
-  }
-
   .episode-counter {
     margin-top: 20px !important;
   }
@@ -5253,11 +5245,6 @@ ol li ol li::before {
     word-break: break-word;
   }
 
-  .webinar-series-text-container--demo h2 {
-    hyphens: none;
-    overflow-wrap: normal;
-    word-break: normal;
-  }
 }
 
 @media (max-width: 768px) {
@@ -5374,7 +5361,7 @@ ol li ol li::before {
   word-break: break-word;
 }
 
-.webinar-series-text-container .text-button,
+.webinar-series-text-container--hub .text-button,
 .webinar-series-text-container-episode .text-button {
   align-items: center;
   display: inline-flex;

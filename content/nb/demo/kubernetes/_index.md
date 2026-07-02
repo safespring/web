@@ -4,6 +4,7 @@ language: "nb"
 date: "2026-06-20"
 publishDate: "2026-06-20"
 draft: false
+weight: 10
 tags: ["Norsk"]
 card: "/img/webinar/thumbnails/demo-safespring-kubernetes-engine-demo-1.webp"
 socialmediabild: ""

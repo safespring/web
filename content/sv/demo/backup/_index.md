@@ -5,6 +5,7 @@ language: "sv"
 date: "2025-02-24"
 publishDate: "2025-02-24"
 draft: false
+weight: 30
 tags: ["Svenska"]
 card: "/img/webinar/thumbnails/demo-episode-series.webp"
 socialmediabild: ""
