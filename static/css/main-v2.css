@@ -946,14 +946,14 @@ color:var(--unCheckedColor);
   backdrop-filter: blur(10px);
 }
 
-.site-header-button-mail::before {
+.site-header-button-contact::before {
   font: var(--fa-font-solid);
-  content: "\f0e0";
+  content: "\f2bb";
   margin-right: 10px;
 }
 
-.site-header-button-mail:hover::before {
-  content: "\f044";
+.site-header-button-contact:hover::before {
+  content: "\f2bb";
 }
 
 /* END - HEADER 2022 */

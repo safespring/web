@@ -24,26 +24,28 @@
     {{ if eq $section "blog" }}
       {{ $blogCard := "/img/blogg/cards/safespring_card_0.webp" }}
       {{ with .Params.card }}{{ $blogCard = printf "/img/blogg/cards/%s" . }}{{ end }}
-      <img
-        class="lazyload"
-        loading="lazy"
-        src="{{ $blogCard }}"
-        {{ partial "image-dimensions.html" $blogCard | safeHTMLAttr }}
-        alt="{{ .Title }}"
-      />
-      <div class="blogg-card-tagg-container">
+      <div class="blogg-card-media">
         <img
-          class="blogg-card-flag"
+          class="lazyload"
           loading="lazy"
-          width="20"
-          height="20"
-          alt="Safespring language flag"
-          src="/img/flags/{{ .Language.Lang }}.svg"
+          src="{{ $blogCard }}"
+          {{ partial "image-dimensions.html" $blogCard | safeHTMLAttr }}
+          alt="{{ .Title }}"
         />
-        <span
-          class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px"
-          >{{ T "knowledgehub.blog" }}</span
-        >
+        <div class="blogg-card-tagg-container blogg-card-tagg-container--glass">
+          <img
+            class="blogg-card-flag"
+            loading="lazy"
+            width="20"
+            height="20"
+            alt="Safespring language flag"
+            src="/img/flags/{{ .Language.Lang }}.svg"
+          />
+          <span
+            class="blogg-card-section mb-0 font-weight-medium text-uppercase text-muted lts-1px"
+            >{{ T "knowledgehub.blog" }}</span
+          >
+        </div>
       </div>
       <div class="blogg-card-wapper">
         <!--<span class="blogg-card-date mb-1 font-weight-thin text-uppercase text-light-black">{{ .Date.Format "2006-01-02" }}</span>-->
