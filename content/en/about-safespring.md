@@ -12,6 +12,8 @@ intro: "We run cloud services from data centers in Sweden and Norway, with open 
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"
 aliases:
+  - /about/
+  - /en/about/
   - /about-safespring-new/
 ---
 

@@ -25,7 +25,7 @@ Use robots.txt for crawl permissions and sitemap.xml for exhaustive URL discover
 ## Core Pages
 {{- $corePages := slice
   (dict "page" $site.Home "label" "Home" "note" "Overview of Safespring and the cloud platform.")
-  (dict "page" ($site.GetPage "about") "label" "About Safespring" "note" "Company overview, data center model, open source focus, and service background.")
+  (dict "page" ($site.GetPage "about-safespring") "label" "About Safespring" "note" "Company overview, data center model, open source focus, and service background.")
   (dict "page" ($site.GetPage "services") "label" "Services" "note" "Main cloud infrastructure service overview.")
   (dict "page" ($site.GetPage "service-catalogue") "label" "Service Catalogue" "note" "Structured service catalogue and service level context.")
   (dict "page" ($site.GetPage "price") "label" "Price List and Calculator" "note" "Pricing information and downloadable price calculator.")

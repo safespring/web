@@ -30,7 +30,7 @@ Safespring is a Swedish public cloud platform and an alternative that complies w
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-map-location-dot" text="Safespring's Data Center" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Watch our webcasts" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" link="/about/" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" link="/about-safespring/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Read Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Read about Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/containerplatform.md" color="#32cd32">}}

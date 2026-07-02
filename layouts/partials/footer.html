@@ -114,10 +114,7 @@
       <ul>
         <li>{{ T "menu.safespring" }}</li>
         <li>
-          {{ $aboutPage := "about" }}
-          {{ if eq .Language.Lang "en" }}
-            {{ $aboutPage = "about-safespring" }}
-          {{ end }}
+          {{ $aboutPage := "about-safespring" }}
           <a href="{{ relref . $aboutPage }}">{{ T "menu.safespring_about" }}</a>
         </li>
         <li>

@@ -31,7 +31,7 @@ Safespring er en svensk offentlig skyplattform og et alternativ som oppfyller lo
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-map-location-dot" text="Safesprings datasentre" linkref="/data-centers.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-film" text="Se våre webcasts" link="/webinar/" color="#195F8C">}}
-{{< icon-block icon="fa-kit fa-safespring-icon" text="Bli kjent med selskapet" linkref="/about.md" color="#3C9BCD">}}
+{{< icon-block icon="fa-kit fa-safespring-icon" text="Bli kjent med selskapet" linkref="/about-safespring.md" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-lightbulb-on" text="Les Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-gavel" text="Les om Schrems II" linkref="/whitepaper/schrems-ii.md" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" linkref="/services/compliant-kubernetes.md" color="#32cd32">}}

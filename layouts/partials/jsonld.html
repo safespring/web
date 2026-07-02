@@ -163,7 +163,7 @@
       }}
   {{ else if eq $typeFolder "blog" }}
     {{ $authorName := (or .Params.author "Safespring") }}
-    {{ $authorDict := dict "@type" "Person" "name" $authorName "url" ("about/" | absURL) }}
+    {{ $authorDict := dict "@type" "Person" "name" $authorName "url" (relref . "about-safespring" | absURL) }}
 
     {{ $matchedAuthor := false }}
     {{ range where .Site.Data.authors "name" .Params.author }}

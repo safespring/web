@@ -4,6 +4,7 @@ metatitle: "Om Safespring: vores historie"
 language: "da"
 translationKey: "about-safespring"
 layout: "about-history"
+slug: "om-safespring"
 date: 2026-06-01
 draft: false
 section: "Safespring"
@@ -11,6 +12,7 @@ intro: "Vi driver cloudtjenester fra datacentre i Sverige og Norge, med open sou
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"
 aliases:
+  - /about/
   - /en/about/
   - /om-safespring-ny/
 ---
