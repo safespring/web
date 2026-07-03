@@ -1,4 +1,4 @@
-{{- $videoConfig := .Site.Data.indexvideo | default dict -}}
+{{- $videoConfig := hugo.Data.indexvideo | default dict -}}
 {{- $language := lower (.Params.language | default .Language.Lang | default "sv") -}}
 {{- $pageSubtitleLangMap := dict "sv" "sv" "en" "en" "nb" "no" "no" "no" "da" "en" -}}
 {{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}

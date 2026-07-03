@@ -111,9 +111,7 @@ En primær knap med teksten "Ring til os" (linket til `/contact`) og et sekundæ
 
 ### Beskrivelse
 
-`accordion-script` findes stadig som en bagudkompatibel shortcode, men skal normalt ikke tilføjes i Markdown. Footeren indlæser accordion-scriptet automatisk, når det renderede sideindhold indeholder `class="accordion"`.
-
-Brug den kun i specialtilfælde, hvor accordion-markup oprettes uden for `.Content` og derfor ikke fanges af den automatiske indlæsning.
+`accordion-script` skal ikke tilføjes i Markdown. Footeren indlæser accordion-scriptet automatisk, når det renderede sideindhold indeholder `class="accordion"`.
 
 ### Eksempel
 
@@ -188,7 +186,7 @@ Viser en tabel, der sammenligner Azure-tjenester med open source-alternativer og
 ```
 ### Eksempel
 ```
-{{< en-aks-alternatives >}}
+{{</* en-aks-alternatives */>}}
 ```
 ### Renderet resultat
 

@@ -11,7 +11,6 @@ fullwidth: "yes"
 nolist: "x"
 aliases:
   - /latest/
-  - /blog/
 ---
 
 {{< latest-content-filter >}}

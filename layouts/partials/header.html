@@ -418,34 +418,35 @@
         {{ $pageTranslations := .AllTranslations }}
         {{ $homeTranslations := .Site.Home.AllTranslations }}
         {{ $languageShortLabels := dict "en" "EN" "sv" "SV" "nb" "NO" "da" "DA" }}
-        {{ range .Site.Languages }}
-          {{ $language := . }}
-          {{ $target := index (where $pageTranslations "Lang" $language.Lang) 0 }}
+        {{ range hugo.Sites }}
+          {{ $language := .Language }}
+          {{ $languageName := $language.Name }}
+          {{ $target := index (where $pageTranslations "Language.Name" $languageName) 0 }}
           {{ if not $target }}
-            {{ $target = index (where $homeTranslations "Lang" $language.Lang) 0 }}
+            {{ $target = index (where $homeTranslations "Language.Name" $languageName) 0 }}
           {{ end }}
           {{ if $target }}
             <a
-              class="mobile-language-link{{ if eq $language.Lang $.Language.Lang }}
+              class="mobile-language-link{{ if eq $languageName $.Language.Name }}
                 active
               {{ end }}"
               href="{{ $target.Permalink }}"
-              lang="{{ $language.Lang }}"
-              hreflang="{{ $language.Lang }}"
-              aria-label="{{ $language.LanguageName }}"
-              title="{{ $language.LanguageName }}"
-              {{ if eq $language.Lang $.Language.Lang }}
+              lang="{{ $language.Locale }}"
+              hreflang="{{ $language.Locale }}"
+              aria-label="{{ $language.Label }}"
+              title="{{ $language.Label }}"
+              {{ if eq $languageName $.Language.Name }}
                 aria-current="true"
               {{ end }}
             >
               <img
-                src="/img/flags/{{ $language.Lang }}.svg"
+                src="/img/flags/{{ $languageName }}.svg"
                 width="31"
                 height="31"
                 alt=""
                 aria-hidden="true"
               />
-              <span>{{ index $languageShortLabels $language.Lang }}</span>
+              <span>{{ index $languageShortLabels $languageName }}</span>
             </a>
           {{ end }}
         {{ end }}

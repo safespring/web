@@ -166,7 +166,7 @@
     {{ $authorDict := dict "@type" "Person" "name" $authorName "url" (relref . "about-safespring" | absURL) }}
 
     {{ $matchedAuthor := false }}
-    {{ range where .Site.Data.authors "name" .Params.author }}
+    {{ range where hugo.Data.authors "name" .Params.author }}
       {{ $authorImageVariant := default "happy" $.Params.author_image }}
       {{ if eq $authorImageVariant "firma" }}{{ $authorImageVariant = "firm" }}{{ end }}
       {{ if eq $authorImageVariant "glad" }}{{ $authorImageVariant = "happy" }}{{ end }}

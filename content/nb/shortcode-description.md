@@ -110,9 +110,7 @@ En primær knapp med teksten "Call Us" (lenket til `/contact`) og en sekundær t
 
 ### Beskrivelse
 
-`accordion-script` finnes fortsatt som en bakoverkompatibel shortcode, men skal normalt ikke legges inn i Markdown. Footeren laster accordion-scriptet automatisk når det renderte sideinnholdet inneholder `class="accordion"`.
-
-Bruk den bare i spesialtilfeller der accordion-markup opprettes utenfor `.Content` og derfor ikke fanges av den automatiske innlastingen.
+`accordion-script` skal ikke legges inn i Markdown. Footeren laster accordion-scriptet automatisk når det renderte sideinnholdet inneholder `class="accordion"`.
 
 ### Eksempel
 
@@ -187,7 +185,7 @@ Viser en tabell som sammenligner Azure‑tjenester med open source‑alternative
 ```
 ### Eksempler
 ```
-{{< en-aks-alternatives >}}
+{{</* en-aks-alternatives */>}}
 ```
 ### Rendret resultat
 

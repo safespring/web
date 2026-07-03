@@ -42,7 +42,7 @@
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
 {{ $pageParams := .Params }}
 <div class="authors">
-  {{ range where .Site.Data.authors "name" "in" .Params.author }}
+  {{ range where hugo.Data.authors "name" "in" .Params.author }}
     {{ $authorImageVariant := default "happy" $.Params.author_image }}
     {{ if eq $authorImageVariant "firma" }}{{ $authorImageVariant = "firm" }}{{ end }}
     {{ if eq $authorImageVariant "glad" }}{{ $authorImageVariant = "happy" }}{{ end }}
@@ -63,7 +63,7 @@
     {{ partial "mobile-toc.html" . }}
     {{ $documentMeta := dict }}
     {{ with .File }}
-      {{ with index $.Site.Data.compliance_meta .BaseFileName }}
+      {{ with index hugo.Data.compliance_meta .BaseFileName }}
         {{ $documentMeta = . }}
       {{ end }}
     {{ end }}

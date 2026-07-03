@@ -11,8 +11,6 @@ sidebarlinkurl: "#form"
 socialmedia: ""
 noindex: true
 language: "nb"
-aliases:
-    - /create-account
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css">

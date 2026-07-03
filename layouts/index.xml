@@ -2,7 +2,12 @@
 {{ printf "<?xml-stylesheet type=\"text/xsl\" href=\"/sitemap.xsl\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{ range where .Site.AllPages "Sitemap.Disable" "ne" true }}
+  {{ $pages := slice }}
+  {{ range hugo.Sites }}
+    {{ $pages = $pages | append .Home }}
+    {{ $pages = $pages | append .Pages }}
+  {{ end }}
+  {{ range where $pages "Sitemap.Disable" "ne" true }}
     {{- if and .Permalink (not (or (eq .Params.noindex true) (eq .Section "internal") (eq .Section "read-more"))) -}}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}

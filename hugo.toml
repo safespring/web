@@ -16,8 +16,8 @@ defaultContentLanguage = 'sv'
 
 [languages]
   [languages.en]
-  languageCode = 'en-GB'
-  languageName = 'English'
+  locale = 'en-GB'
+  label = 'English'
   title = 'Empowering European Innovation'
   weight = 1
   baseURL = 'https://beta.safespring.eu/'
@@ -53,8 +53,8 @@ defaultContentLanguage = 'sv'
       saas = '/saas/'
 
   [languages.sv]
-  languageCode = 'sv-SE'
-  languageName = 'Svenska'
+  locale = 'sv-SE'
+  label = 'Svenska'
   title = 'Stärk europeisk innovation'
   weight = 2
   baseURL = 'https://beta.safespring.se/'
@@ -88,8 +88,8 @@ defaultContentLanguage = 'sv'
       saas = '/saas/'
 
   [languages.nb]
-  languageCode = 'nb-NO'
-  languageName = 'Norsk (Bokmål)'
+  locale = 'nb-NO'
+  label = 'Norsk (Bokmål)'
   title = 'Styrke europeisk innovasjon'
   weight = 3
   baseURL = 'https://beta.safespring.no/'
@@ -121,8 +121,8 @@ defaultContentLanguage = 'sv'
       saas = '/saas/'
 
   [languages.da]
-  languageCode = 'da-DK'
-  languageName = 'Dansk'
+  locale = 'da-DK'
+  label = 'Dansk'
   title = 'Styrkelse af europæisk innovation'
   weight = 4
   baseURL = 'https://beta.safespring.dk/'
@@ -161,46 +161,54 @@ defaultContentLanguage = 'sv'
 [[module.mounts]]
 source = 'content/sv'
 target = 'content'
-lang = 'sv'
+  [module.mounts.sites.matrix]
+  languages = ['sv']
 
 # NB content
 [[module.mounts]]
 source = 'content/nb'
 target = 'content'
-lang = 'nb'
+  [module.mounts.sites.matrix]
+  languages = ['nb']
 
 # DA content
 [[module.mounts]]
 source = 'content/da'
 target = 'content'
-lang = 'da'
+  [module.mounts.sites.matrix]
+  languages = ['da']
 
 # EN content
 [[module.mounts]]
 source = 'content/en'
 target = 'content'
-lang = 'en'
+  [module.mounts.sites.matrix]
+  languages = ['en']
 
 # English compliance documents rendered for every language.
 [[module.mounts]]
 source = 'content/compliance'
 target = 'content/compliance'
-lang = 'sv'
+  [module.mounts.sites.matrix]
+  languages = ['sv']
 
 [[module.mounts]]
 source = 'content/compliance'
 target = 'content/compliance'
-lang = 'en'
+  [module.mounts.sites.matrix]
+  languages = ['en']
 
 [[module.mounts]]
 source = 'content/compliance'
 target = 'content/compliance'
-lang = 'nb'
+  [module.mounts.sites.matrix]
+  languages = ['nb']
 
 [[module.mounts]]
 source = 'content/compliance'
 target = 'content/compliance'
-lang = 'da'
+  [module.mounts.sites.matrix]
+  languages = ['da']
 
 
 
@@ -214,7 +222,7 @@ lang = 'da'
     priority = 0.5
 
 [outputs]
-    home = ["HTML", "RSS", "SITEMAP", "LLMS"]
+    home = ["HTML", "RSS", "LLMS"]
 
 [outputFormats.LLMS]
     mediaType = "text/plain"

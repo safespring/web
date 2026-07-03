@@ -17,7 +17,7 @@
   {{ end }}
   {{ $pdfMeta := dict }}
   {{ with .File }}
-    {{ with index $.Site.Data.compliance_meta .BaseFileName }}
+    {{ with index hugo.Data.compliance_meta .BaseFileName }}
       {{ $pdfMeta = . }}
     {{ end }}
   {{ end }}
