@@ -1,44 +1,18 @@
-{{ $lang := .Page.Site.Language.Lang }}
-{{ $copy := dict
-  "termsPrefix" "I accept"
-  "termsText" "the personal data terms"
-  "termsUrl" "/compliance/privacy_policy/"
-  "submit" "Contact me"
-  "acceptAlert" "You must accept our terms and conditions"
-}}
-{{ if eq $lang "sv" }}
-  {{ $copy = dict
-    "termsPrefix" "Jag accepterar"
-    "termsText" "personuppgiftshanteringen"
-    "termsUrl" "/compliance/privacy_policy/"
-    "submit" "Bli kontaktad"
-    "acceptAlert" "Du måste acceptera våra villkor"
-  }}
-{{ else if eq $lang "nb" }}
-  {{ $copy = dict
-    "termsPrefix" "Jeg aksepterer"
-    "termsText" "behandlingen av personopplysninger"
-    "termsUrl" "/compliance/privacy_policy/"
-    "submit" "Bli kontaktet"
-    "acceptAlert" "Du må akseptere vilkårene"
-  }}
-{{ else if eq $lang "da" }}
-  {{ $copy = dict
-    "termsPrefix" "Jeg accepterer"
-    "termsText" "behandlingen af personoplysninger"
-    "termsUrl" "/compliance/privacy_policy/"
-    "submit" "Bliv kontaktet"
-    "acceptAlert" "Du skal acceptere vores vilkår"
-  }}
-{{ end }}
+{{ $termsUrl := "/compliance/privacy_policy/" }}
 
 <p id="contact-form"></p>
 
 {{ partial "contact-form.html" (dict
   "page" .Page
-  "termsPrefix" $copy.termsPrefix
-  "termsText" $copy.termsText
-  "termsUrl" $copy.termsUrl
-  "submit" $copy.submit
-  "acceptAlert" $copy.acceptAlert
+  "firstName" (T "form.f_name")
+  "lastName" (T "form.l_name")
+  "phone" (T "form.phone")
+  "email" (T "form.email")
+  "organization" (T "form.org")
+  "termsPrefix" (T "price_list.terms_accept")
+  "termsText" (T "form.privacy")
+  "termsUrl" $termsUrl
+  "submit" (T "form.submit")
+  "acceptAlert" (T "form.not_accepted")
+  "successUrl" "/contact-thanks/"
 ) }}
