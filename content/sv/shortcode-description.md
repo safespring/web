@@ -110,9 +110,7 @@ En primär knapp med texten "Ring oss" (länkad till `/contact`) och en sekundä
 
 ### Beskrivning
 
-`accordion-script` finns kvar som bakåtkompatibel shortcode, men ska normalt inte läggas in i Markdown. Sidfoten laddar accordion-scriptet automatiskt när det renderade sidinnehållet innehåller `class="accordion"`.
-
-Använd den bara i specialfall där accordion-markup skapas utanför `.Content` och därför inte fångas av autoladdningen.
+`accordion-script` ska inte läggas in i Markdown. Sidfoten laddar accordion-scriptet automatiskt när det renderade sidinnehållet innehåller `class="accordion"`.
 
 ### Exempel
 
@@ -187,7 +185,7 @@ Visar en tabell som jämför Azure-tjänster med open source-alternativ samt ang
 ```
 ### Exempel
 ```
-{{< en-aks-alternatives >}}
+{{</* en-aks-alternatives */>}}
 ```
 ### Renderat resultat
 

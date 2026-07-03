@@ -5,7 +5,7 @@
 
 This file is a curated map for LLMs and AI agents. It summarizes the most important Safespring website areas and points to pages that explain the platform, services, compliance posture, documentation, and contact paths.
 
-Primary language for this build: {{ $site.Language.LanguageName }} ({{ $site.Language.Lang }}).
+Primary language for this build: {{ $site.Language.Label }} ({{ $site.Language.Name }}).
 
 Use robots.txt for crawl permissions and sitemap.xml for exhaustive URL discovery.
 
@@ -19,7 +19,7 @@ Use robots.txt for crawl permissions and sitemap.xml for exhaustive URL discover
 ## Language Versions
 {{- range $site.Home.AllTranslations }}
 
-- [{{ .Language.LanguageName }}]({{ .Permalink }}): Safespring website in {{ .Language.LanguageName }}.
+- [{{ .Language.Label }}]({{ .Permalink }}): Safespring website in {{ .Language.Label }}.
 {{- end }}
 
 ## Core Pages

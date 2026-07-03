@@ -21,7 +21,7 @@
 {{ $allContent = $allContent | append $solutionBriefPages }}
 {{ $allContent = $allContent | append $whitepaperPages }}
 
-{{ $currentLang := .Site.Language.Lang }}
+{{ $currentLang := .Site.Language.Name }}
 
 {{/* Use the actual counts from sections */}}
 {{ $blogCount := len $blogPages }}
@@ -62,16 +62,16 @@
         class="text active"
         aria-current="true"
         style="cursor: default;"
-        title="{{ .Site.Language.LanguageName }}"
+        title="{{ .Site.Language.Label }}"
       >
         <img
           src="/img/flags/{{ $currentLang }}.svg"
           width="20"
           height="20"
-          alt="{{ .Site.Language.LanguageName }} flag"
+          alt="{{ .Site.Language.Label }} flag"
           style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
         />
-        {{ .Site.Language.LanguageName }}&nbsp;
+        {{ .Site.Language.Label }}&nbsp;
         <span class="filter-number">({{ len $allContent }})</span>
       </span>
 
@@ -81,16 +81,16 @@
           class="text"
           href="{{ with .GetPage "knowledge-hub" }}{{ .Permalink }}{{ end }}"
           style="text-decoration: none;"
-          title="{{ .Language.LanguageName }}"
+          title="{{ .Language.Label }}"
         >
           <img
-            src="/img/flags/{{ .Lang }}.svg"
+            src="/img/flags/{{ .Language.Name }}.svg"
             width="20"
             height="20"
-            alt="{{ .Language.LanguageName }} flag"
+            alt="{{ .Language.Label }} flag"
             style="width: 20px; height: auto; margin-right: 8px; vertical-align: middle;"
           />
-          {{ .Language.LanguageName }}&nbsp;
+          {{ .Language.Label }}&nbsp;
           {{ $translatedBlogPages := slice }}
           {{ $translatedTechUpdatePages := slice }}
           {{ range .Site.RegularPages }}

@@ -81,7 +81,7 @@
         {{ $country := . }}
         <ul id="dataList-{{ $country | urlize }}" class="universitylist">
           <p>{{ T "university_filter.title" }} {{ $country }}:</p>
-          {{ range index site.Data.universities $country }}
+          {{ range index hugo.Data.universities $country }}
             <li class="country-{{ $country | urlize }}">{{ . }}</li>
           {{ end }}
         </ul>
@@ -92,7 +92,7 @@
         class="universitylist"
       >
         <p>{{ T "university_filter.title" }}</p>
-        {{ range index site.Data.universities  (T "university_filter.country") }}
+        {{ range index hugo.Data.universities  (T "university_filter.country") }}
           <li class="country-{{ T "university_filter.country" }}">{{ . }}</li>
         {{ end }}
       </ul>

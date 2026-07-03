@@ -16,7 +16,6 @@ section: "Teknikuppdatering"
 author: "Stefan Negru"
 TOC: "I det här inlägget"
 aliases:
-  - /blogg/2025/2025-04-validating-talos-linux-intstall/
   - /tekniska-uppdateringar/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/
 ---
 # 
