@@ -121,7 +121,7 @@ Open source code reduces the ability of vendors and implementers to hide securit
 
 ## References
 
-[^1]: Safespring. (2018). _Cloud Act White Paper_. Retrieved from [safespring.com](/whitepaper/cloudact/)
+[^1]: Safespring. (2018). _Cloud Act White Paper_. Retrieved from [safespring.com](/whitepaper/how-to-handle-the-uncertainty-in-light-of-the-gdpr-and-the-cloud-act/)
 
 [^2]: Safespring. (2020). _Schrems II White Paper_. Retrieved from [safespring.com]({{% relref "/whitepaper/schrems-ii.md" %}})
 

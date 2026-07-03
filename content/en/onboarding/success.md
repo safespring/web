@@ -6,7 +6,7 @@ draft: false
 intro: "Your onboarding-registration is now complete, and we’re excited to have you with us. You’re all set to start taking advantage of everything we offer."
 background: ""
 sidebarlinkname: "Create another account"
-sidebarlinkurl: "/onboarding/new-account/"
+sidebarlinkurl: "/onboarding/safespring-onboarding/"
 socialmedia: ""
 noindex: true
 aliases:

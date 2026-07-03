@@ -88,7 +88,7 @@ Terraform).
 
 Det finns fler fördelar. Om du till exempel vill deploya till instanser på det
 privata (RFC1918) nätet är det enda sättet att göra det via en publik instans på
-samma site. Vi har skrivit om det i detalj i [ett annat blogginlägg](/blogg/2022-03-network/).
+samma site. Vi har skrivit om det i detalj i [ett annat blogginlägg](/deep-dive/safesprings-natverksmodell-forklarad/).
 Du kan förstås skapa en särskild jump bara för detta ändamål, men att göra all
 provisionering och alla leveranser från en och samma värd är betydligt
 bekvämare.

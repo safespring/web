@@ -121,7 +121,7 @@ At kildekoden er åben, mindsker mulighederne for, at leverandører og implement
 
 ## Kildeliste
 
-[^1]: Safespring. (2018). _Cloud Act White Paper_. Hentet fra [safespring.com](/whitepaper/cloudact/)
+[^1]: Safespring. (2018). _Cloud Act White Paper_. Hentet fra [safespring.com](/hvidbog/sadan-handterer-du-usikkerheden-i-forbindelse-med-gdpr-og-cloud-act/)
 
 [^2]: Safespring. (2020). _Schrems II White Paper_. Hentet fra [safespring.com]({{% relref "/whitepaper/schrems-ii.md" %}})
 

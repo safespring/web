@@ -34,7 +34,7 @@ Der er nogle forudsætninger for at kunne gentage trinnene, og vi går ikke i de
 - Kubernetes-kommandolinjeværktøjet `kubectl`.
 - Podman/Docker.
 - OpenStack-adgangsoplysninger (inkluder også OpenStack EC2-adgangsoplysninger til state S3-lager).
-- Talos-klynge klargjort med [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) samt [Cinder CSI](/blogg/2024/2024-03-cinder-csi-volume-provisioner/).
+- Talos-klynge klargjort med [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) samt [Cinder CSI](/deep-dive/openstack-cinder-csi-volumenklargorer/).
 {{% /note %}}
 
 Videre til de praktiske trin:

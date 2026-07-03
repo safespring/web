@@ -56,7 +56,7 @@ President Biden har undertegnet en presidentordre om forbedrede beskyttelsestilt
 
 ### Dokumenter som er tatt opp i tidligere samtaler
 
-- [Safesprings høringssvar til IT-driftsutredningen](/blogg/remissvar-it-driftsutredningen/)
+- [Safesprings høringssvar til IT-driftsutredningen](/perspektiv/horingssvar-til-it-driftsutredningen/)
 - [Transatlantisk personvernrammeverk](https://next.safespring.com/s/L5ssXCHtGAjKFYs)
 - [EDPBs presisering om det transatlantiske personvernrammeverket](https://edpb.europa.eu/our-work-tools/our-documents/statements/statement-012022-announcement-agreement-principle-new-trans_en)
 - [Stockholms stad slutter seg til eSam](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)

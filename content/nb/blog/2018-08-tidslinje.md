@@ -27,7 +27,7 @@ En sammenfatning av hendelsene som ledet frem til GDPR og CLOUD Act, som i dag e
 
 De siste tjue årene har Internett og det digitale samfunnet påvirket både privatpersoner, myndigheter og virksomheter. Lovgivningen fra EU og USA om vern av personopplysninger har gått i to ulike retninger, men forsøkt å møtes på enkelte punkter. Her følger en sammenfatning av det som leder frem til GDPR og CLOUD Act, som i dag er to av de gjeldende lovverkene.
 
-{{< localbutton text="Les whitepaper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Les whitepaper" link="/hvitbok/status-etter-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 {{% timeline ariaLabel="Tidslinje over personvernlovgivning" %}}
 {{% timeline-item year="1995" date="1995-10-24" %}}
@@ -119,7 +119,7 @@ Anken i US vs. Microsoft til USAs høyesterett legges ned fordi CLOUD Act har gj
 {{% /timeline-item %}}
 {{% /timeline %}}
 
-{{< localbutton text="Les whitepaper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Les whitepaper" link="/hvitbok/status-etter-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 ## Kilder
 

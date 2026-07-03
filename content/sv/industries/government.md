@@ -9,7 +9,7 @@ draft: false
 intro: "Svensk molnplattform för myndigheter som behöver digital suveränitet, dataplacering i Sverige och Norden, öppna standarder och stöd för upphandling via ramavtal."
 background: "safespring-government-background.svg"
 sidebarlinkname2: "Läs om Cloud Act"
-sidebarlinkurl2: "/whitepaper/cloudact/"
+sidebarlinkurl2: "/vitbok/cloud-act-fisa-702-och-gdpr-for-svenska-molntjanster/"
 aliases:
   - /myndighet/
   - /branscher/myndigheter/

@@ -47,7 +47,7 @@ The solution is to have a system in place that sends an offsite copy to another 
 
 ### Immutable objects
 
-When object storage is used for offsite backup, it’s important that the data cannot be tampered with or deleted. That’s why the “immutable objects” feature is a good way to protect stored data. The user can set a time window during which the data is completely protected from external influence. This makes backup safer and more cost-effective than before with Safespring Storage. [Read our solution brief on immutable objects](/solution-brief/immutable-storage/).
+When object storage is used for offsite backup, it’s important that the data cannot be tampered with or deleted. That’s why the “immutable objects” feature is a good way to protect stored data. The user can set a time window during which the data is completely protected from external influence. This makes backup safer and more cost-effective than before with Safespring Storage. [Read our solution brief on immutable objects](/solution-brief/safespring-immutable-object-storage/).
 
 ### The importance of offsite backup
 

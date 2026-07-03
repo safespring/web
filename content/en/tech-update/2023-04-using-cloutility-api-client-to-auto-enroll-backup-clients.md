@@ -27,7 +27,7 @@ In this tutorial, we will explore Safespring's cloutility-backup-client library 
 {{< /ingress >}}
 
 {{% note "Recommended reading" %}}
-Dive deeper into the world of open-source backup client management by checking out our recent article on [Creating an Open-Source Backup Client Library.](/blogg/2023/2023-04-creating-an-opensource-backup-client-library/) Happy reading!
+Dive deeper into the world of open-source backup client management by checking out our recent article on [Creating an Open-Source Backup Client Library.](/deep-dive/creating-an-open-source-backup-client-library/) Happy reading!
 {{% /note %}}
 
 ## Prerequisites

@@ -48,7 +48,7 @@ På Safesprings Openstack-baserade infrastruktur­plattform kan du snabbt distri
 
 ### Detta behöver du för att köra igång
 
-- Ett projekt på [Safespring Compute](/compute) med följande resurser:
+- Ett projekt på [Safespring Compute](/tjanster/safespring-cloud-compute/) med följande resurser:
   - Memory: 60GB
   - VCPUs: 16
   - Security group rules: 40

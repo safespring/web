@@ -55,4 +55,4 @@ Alla våra flavors följer denna nya namnsättning, vilket gör det enklare för
 
 Tillsammans med Sunet och Nextcloud har Safespring byggt Sunet Drive. En komplett lösning för storskalig lagring. Läs mer i vår omfattande lösningsbeskrivning där vi förklarar hur tjänsten är uppbyggd och varför den här typen av lösning lämpar sig för känsliga data.
 
-{{< localtextbutton "Läs mer" "/dokument/sunet/sunet-drive/" >}}
+{{< localtextbutton "Läs mer" "/dokument/sunet-drive-en-losning-for-synkronisering-och-delning-av-filer/" >}}

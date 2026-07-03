@@ -68,12 +68,12 @@ Safespring är den föredragna molnplattformen för forskning och utbildning. V�
 ### Infrastruktur som kod
 
 - [Safespring OKD-installationsprogram](https://github.com/safespring-community/utilities/tree/main/okd)
-- [Recept/ Blogginlägg för minimal Kubespray](/blogg/2022-08-kubespray-minimal/)
+- [Recept/ Blogginlägg för minimal Kubespray](/deep-dive/konfigurera-ett-minimalt-kubernetes-kluster-pa-safespring-med-kubespray/)
 - [Safespring Terraform-moduler](https://github.com/safespring-community/terraform-modules)
 
 ### Läs mer
 
 - [Alla blogginlägg]({{% relref "/blog" %}})
 - Lösningsöversikt: [OpenShift körs smidigt på Safesprings plattform]({{% relref "/solution-brief/openshift.md" %}})
-- Teach-uppdatering: [Kom igång med Kubespray](/blogg/2022-08-kubespray-minimal/)
-- Teach-uppdatering: [Enkel provisionering med Terraform, Ansible och Rudder](/blogg/2022-06-terraform-ansible-rudder/)
+- Teach-uppdatering: [Kom igång med Kubespray](/deep-dive/konfigurera-ett-minimalt-kubernetes-kluster-pa-safespring-med-kubespray/)
+- Teach-uppdatering: [Enkel provisionering med Terraform, Ansible och Rudder](/deep-dive/fran-noll-till-kontinuerlig-regelefterlevnad-med-terraform-ansible-och-rudder/)

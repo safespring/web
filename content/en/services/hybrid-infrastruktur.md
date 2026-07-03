@@ -20,7 +20,7 @@ aliases:
 
 <div class="ingress"><p>Having to invest in infrastructure that’s only needed during traffic spikes a few times a year can get expensive. At the same time, there are good reasons to keep control of the services your company offers its customers.</p></div>
 
-<a href="#testa-safespring" class="text-button">Try Safespring</a>
+<a href="#contact-form" class="text-button">Try Safespring</a>
 
 A popular way to handle irregular traffic patterns while retaining control is to use a private cloud that can be supplemented with a public one when needed. This is called Hybrid Cloud. Since Safespring’s services are delivered locally, you can safely let our cloud handle peak loads while maintaining your own control.
 

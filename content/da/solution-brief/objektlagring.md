@@ -48,7 +48,7 @@ Løsningen er at have et system sat op, som sender en offsite-kopi til et andet 
 
 ### Immutable objects
 
-Når objektlagring bruges til offsite-backup, er det vigtigt, at data ikke kan manipuleres eller slettes. Derfor er funktionen “immutable objects” en god måde at beskytte de lagrede data på. Brugeren kan sætte en tidsramme, hvor data er fuldstændig beskyttet mod påvirkning udefra. Det gør sikkerhedskopiering mere sikker og mere omkostningseffektiv end før med Safespring Storage. [Læs vores solution brief om immutable objects](/solution-brief/immutable-storage/).
+Når objektlagring bruges til offsite-backup, er det vigtigt, at data ikke kan manipuleres eller slettes. Derfor er funktionen “immutable objects” en god måde at beskytte de lagrede data på. Brugeren kan sætte en tidsramme, hvor data er fuldstændig beskyttet mod påvirkning udefra. Det gør sikkerhedskopiering mere sikker og mere omkostningseffektiv end før med Safespring Storage. [Læs vores solution brief om immutable objects](/losningsfaktablad/safespring-uforanderlig-objektlagring/).
 
 ### Vigtigheden af offsite-backup
 

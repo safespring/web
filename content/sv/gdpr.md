@@ -22,7 +22,7 @@ aliases:
 {{< icon-block-container >}}
 {{< icon-block icon="fa-solid fa-shield-alt" text="Externa dataskydds­åtgärder" link="#externa-dataskyddsatgarder" color="#FA690F">}}
 {{< icon-block icon="fa-solid fa-lock" text="Interna dataskydds­åtgärder" link="#interna-dataskyddsatgarder" color="#195F8C">}}
-{{< icon-block icon="fa-solid fa-file-alt" text="White Paper om adekvansbeslutet" link="/whitepaper/eu-us-dpf/" color="#32cd32">}}
+{{< icon-block icon="fa-solid fa-file-alt" text="White Paper om adekvansbeslutet" link="/vitbok/laget-efter-eu-us-data-protection-framework-dpf/" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" linkref="/data-centers.md" color="#3C9BCD">}}
 {{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
@@ -30,14 +30,14 @@ aliases:
 
 ## Externa dataskyddsåtgärder {#externa-dataskyddsatgarder}
 
-I dataskydds- och GDPR-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar uteslutande om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat [rekommendationer för organisationer](/whitepaper/eu-us-dpf/#rekommendationer) som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
+I dataskydds- och GDPR-sammanhang pratas ofta om tredjelandsöverföringar. Ett helt kapitel i GDPR handlar uteslutande om begränsningar av möjligheterna att överföra uppgifter och vi har tidigare utarbetat [rekommendationer för organisationer](/vitbok/laget-efter-eu-us-data-protection-framework-dpf/#rekommendationer) som fortfarande brottas med just detta. Men det är inte de enda kraven på personuppgiftsansvariga där biträden kan hjälpa till.
 
 Safesprings skyldighet som ert personuppgiftsbiträde är att aktivt bistå med er regelefterlevnad (enligt artikel 28.3). Vi är här för att göra ert arbete enklare och mer effektivt när det kommer till att uppfylla dataskyddskraven. Vår molnplattform säkerställer att ni, som personuppgiftsansvariga, alltid kan leva upp till de krav som GDPR ställer på er.
 
 Vi tolkar detta som en positiv skyldighet att inte bara själva implementera säkerhetsåtgärder i våra egna system utan även informera om vilka möjligheter vår infrastruktur ger er att anpassa dataskydd efter behov. Här nedan följer en lista på tekniska säkerhetsfunktioner som kan bidra till högre processuell säkerhet och som vi antingen direkt tillhandahåller eller kan ge god rådgivning kring.
 
 {{% note %}}
-Läs även om hur [CLOUD Act och FISA 702 påverkar molnval](/whitepaper/cloudact/), och hur Safesprings svenska och nordiska drift minskar beroendet av tredjelandsleverantörer.
+Läs även om hur [CLOUD Act och FISA 702 påverkar molnval](/vitbok/cloud-act-fisa-702-och-gdpr-for-svenska-molntjanster/), och hur Safesprings svenska och nordiska drift minskar beroendet av tredjelandsleverantörer.
 {{% /note %}}
 
 {{% accordion title="Logghantering och säkerhetsåtgärder" id="1" %}}

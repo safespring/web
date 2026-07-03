@@ -27,10 +27,10 @@ Det har aldri vært enklere å provisjonere compute- og blokklagringsressurser i
 {{% note "Les mer" %}}
 Hvis du synes dette innlegget var nyttig, sjekk gjerne resten av serien om bruk av Terraform og Ansible for ressursprovisjonering og etterlevelse. Spesielt kan du like:
 
-1. [Superenkel provisjonering med Safesprings Terraform-moduler](/blogg/2022-01-terraform-modules)
-2. [Fleksibel provisjonering av ressurser med Safesprings nye Terraform-moduler](/blogg/2022-03-terraform-module)
-3. [Integrere Terraform og Ansible for effektiv ressursforvaltning](/blogg/2022-05-terraform-ansible)
-4. [Fra null til kontinuerlig etterlevelse med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Superenkel provisjonering med Safesprings Terraform-moduler](/deep-dive/superenkel-provisjonering-med-safesprings-terraform-moduler/)
+2. [Fleksibel provisjonering av ressurser med Safesprings nye Terraform-moduler](/deep-dive/fleksibel-provisjonering-av-ressurser-med-safesprings-nye-terraform-moduler/)
+3. [Integrere Terraform og Ansible for effektiv ressursforvaltning](/deep-dive/integrering-av-terraform-og-ansible/)
+4. [Fra null til kontinuerlig etterlevelse med Terraform, Ansible og Rudder](/deep-dive/fra-null-til-kontinuerlig-etterlevelse-med-terraform-ansible-og-rudder/)
 
 {{% /note %}}
 

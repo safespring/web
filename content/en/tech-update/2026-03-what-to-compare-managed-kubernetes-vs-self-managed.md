@@ -14,7 +14,7 @@ language: "en"
 author: ""
 TOC: "In this post"
 sidebarlinkname: "Talos on OpenStack"
-sidebarlinkurl: "/deep-dive/using-talos-linux-and-kubernetes-bootstrap-on-openstack/"
+sidebarlinkurl: "/deep-dive/bootstrap-talos-linux-kubernetes-on-openstack/"
 sidebarlinkname2: "Cluster API on OpenStack"
 sidebarlinkurl2: "/deep-dive/deploy-talos-kubernetes-on-openstack-with-cluster-api/"
 aliases:

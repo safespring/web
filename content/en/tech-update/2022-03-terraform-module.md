@@ -32,10 +32,10 @@ instances.
 {{% note "Read more" %}}
 If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
 
-1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
-2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
-3. [Integrating Terraform and ansible for efficient resource management](/blogg/2022-05-terraform-ansible)
-4. [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Dead easy provisioning using the Safespring Terraform modules](/deep-dive/dead-easy-provisioning-using-the-safespring-terraform-modules/)
+2. [Flexible provisioning of resources with Safespring's new Terraform modules](/deep-dive/flexible-provisioning-of-resources-with-safesprings-new-terraform-modules/)
+3. [Integrating Terraform and ansible for efficient resource management](/deep-dive/integrating-terraform-and-ansible/)
+4. [From zero to continuous compliance with Terraform, ansible and Rudder](/deep-dive/from-zero-to-continuous-compliance-with-terraform-ansible-and-rudder/)
 
 {{% /note %}}
 
@@ -564,12 +564,12 @@ for the sum/union of all parameters to be specified.
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]: https://docs.safespring.com/new/flavors/
-[firstblog]: /blogg/2022-01-terraform-modules/
+[firstblog]: /deep-dive/dead-easy-provisioning-using-the-safespring-terraform-modules/
 [mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]: https://www.terraform.io/downloads
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
 [sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]: /blogg/2022-03-ssh-keys/
-[netblog]: /blogg/2022-03-network/
+[sshblog]: /deep-dive/ssh-key-best-practices-for-openstack-cloud-instances/
+[netblog]: /deep-dive/the-safespring-network-model-explained/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/

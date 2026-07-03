@@ -21,7 +21,7 @@ aliases:
 
 We’ve had an exciting half-year with many new customers. Among others, we’ve gained several customers in healthcare and life sciences. Many are placing higher demands on legal compliance while keeping open source and open standards in focus.
 
-To support our customers on their transformation journey and provide both expertise and platform services, we continuously expand our service offering. A couple of weeks ago, we launched our DevOps support in two different packages <a href="/devops/" class="text-button">READ MORE</a>.
+To support our customers on their transformation journey and provide both expertise and platform services, we continuously expand our service offering. A couple of weeks ago, we launched our DevOps support in two different packages.
 
 Safespring plans to launch several new operations services that let you focus your resources on creating the most business value.
 

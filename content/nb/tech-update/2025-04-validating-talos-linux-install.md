@@ -34,7 +34,7 @@ Det er noen forutsetninger for å kunne gjenta stegene, og selv om vi ikke går 
 - Kubernetes kommandolinjeverktøy `kubectl`.
 - Podman/Docker.
 - OpenStack-legitimasjon (ta også med OpenStack ec2-legitimasjon for state s3-lager).
-- Talos-klynge provisjonert med [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) samt [Cinder CSI](/blogg/2024/2024-03-cinder-csi-volume-provisioner/).
+- Talos-klynge provisjonert med [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) samt [Cinder CSI](/deep-dive/openstack-cinder-csi-volumklargjorer/).
 {{% /note %}}
 
 Videre med de praktiske stegene:

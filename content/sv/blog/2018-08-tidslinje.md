@@ -27,7 +27,7 @@ En sammanfattning av händelserna som ledde fram till GDPR och CLOUD Act som ida
 
 De senaste tjugo åren har Internet och det digitala samhället påverkat både privatpersoner, myndigheter och företag. Lagstiftningen från EU och USA gällande personuppgiftsskydd har gått åt två olika håll men försökt mötas på vissa punkter. Här följer en sammanfattning av det som leder fram till GDPR och CLOUD Act som idag är två av de gällande lagstiftningarna.
 
-{{< localbutton text="Läs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Läs white paper" link="/vitbok/laget-efter-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 {{% timeline ariaLabel="Tidslinje över dataskyddslagar" %}}
 {{% timeline-item year="1995" date="1995-10-24" %}}
@@ -119,7 +119,7 @@ US vs. Microsoft-överklagan till amerikanska Supreme Court läggs ner på grund
 {{% /timeline-item %}}
 {{% /timeline %}}
 
-{{< localbutton text="Läs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Läs white paper" link="/vitbok/laget-efter-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 ## Källor
 

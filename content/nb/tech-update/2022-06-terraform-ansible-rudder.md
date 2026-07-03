@@ -32,10 +32,10 @@ Oppdatert for å rette en inkonsistens 2022-08-22
 {{% note "Les mer" %}}
 Hvis du synes dette innlegget var nyttig, bør du også sjekke resten av serien om bruk av Terraform og Ansible for ressursprovisjonering og etterlevelse. Spesielt kan disse være interessante:
 
-1. [Superenkel provisjonering med Safesprings Terraform‑moduler](/blogg/2022-01-terraform-modules)
-2. [Fleksibel provisjonering av ressurser med Safesprings nye Terraform‑moduler](/blogg/2022-03-terraform-module)
-3. [Integrering av Terraform og Ansible for effektiv ressursforvaltning](/blogg/2022-05-terraform-ansible)
-4. [Fra null til kontinuerlig etterlevelse med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Superenkel provisjonering med Safesprings Terraform‑moduler](/deep-dive/superenkel-provisjonering-med-safesprings-terraform-moduler/)
+2. [Fleksibel provisjonering av ressurser med Safesprings nye Terraform‑moduler](/deep-dive/fleksibel-provisjonering-av-ressurser-med-safesprings-nye-terraform-moduler/)
+3. [Integrering av Terraform og Ansible for effektiv ressursforvaltning](/deep-dive/integrering-av-terraform-og-ansible/)
+4. [Fra null til kontinuerlig etterlevelse med Terraform, Ansible og Rudder](/deep-dive/fra-null-til-kontinuerlig-etterlevelse-med-terraform-ansible-og-rudder/)
 
 {{% /note %}}
 
@@ -440,7 +440,7 @@ Bruken av Rudder for å holde instansene dine kontinuerlig i samsvar med policye
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]: https://docs.safespring.com/new/flavors/
-[firstblog]: /blogg/2022-01-terraform-modules/
+[firstblog]: /deep-dive/superenkel-provisjonering-med-safesprings-terraform-moduler//
 [mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]: https://www.terraform.io/downloads
 [sftfmodules]: https://github.com/safespring-community/terraform-modules

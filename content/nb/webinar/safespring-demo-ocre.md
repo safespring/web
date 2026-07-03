@@ -68,12 +68,12 @@ Safespring er den foretrukne skyplattformen for forskning og utdanning. Velkomme
 ### Infrastruktur som kode
 
 - [Safespring OKD-installer](https://github.com/safespring-community/utilities/tree/main/okd)
-- [Oppskrift/ blogginnlegg for minimal Kubespray](/blogg/2022-08-kubespray-minimal/)
+- [Oppskrift/ blogginnlegg for minimal Kubespray](/deep-dive/oppsett-av-en-minimal-kubernetes-klynge-hos-safespring-med-kubespray/)
 - [Safespring Terraform-moduler](https://github.com/safespring-community/terraform-modules)
 
 ### Les mer
 
 - [Alle blogginnlegg]({{% relref "/blog" %}})
 - Løsningsnotat: [OpenShift kjører problemfritt på Safesprings plattform]({{% relref "/solution-brief/openshift.md" %}})
-- Teach-oppdatering: [Kom i gang med Kubespray](/blogg/2022-08-kubespray-minimal/)
-- Teach-oppdatering: [Enkel klargjøring med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder/)
+- Teach-oppdatering: [Kom i gang med Kubespray](/deep-dive/oppsett-av-en-minimal-kubernetes-klynge-hos-safespring-med-kubespray/)
+- Teach-oppdatering: [Enkel klargjøring med Terraform, Ansible og Rudder](/deep-dive/fra-null-til-kontinuerlig-etterlevelse-med-terraform-ansible-og-rudder/)

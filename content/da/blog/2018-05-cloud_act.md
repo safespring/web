@@ -28,7 +28,7 @@ Hvis du vil læse mere om, hvordan CLOUD Act påvirker svenske og norske virksom
 
 Dette white paper handler særligt om EU-rettens og amerikansk rets bestemmelser om grænseoverskridende dataoverførsler samt aktuelle retssager, der kan få betydning herfor.
 
-{{< localbutton text="Læs white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Læs white paper" link="/hvidbog/situationen-efter-eu-usas-databeskyttelsesramme-dpf/" icon="fa-up-right-from-square" >}}
 
 [cloudact]: http://bit.ly/2IdBiu0
 [effcloudact]: https://www.eff.org/deeplinks/2018/04/us-cloud-act-and-eu-privacy-protection-race-bottom

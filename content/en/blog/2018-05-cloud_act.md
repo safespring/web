@@ -28,7 +28,7 @@ If you want to read more about how the CLOUD Act affects Swedish and Norwegian c
 
 This white paper focuses specifically on the provisions of EU and US law regarding cross-border data transfers, as well as current court cases that may affect this.
 
-{{< localbutton text="Read the white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Read the white paper" link="/whitepaper/where-things-stand-after-the-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 [cloudact]: http://bit.ly/2IdBiu0
 [effcloudact]: https://www.eff.org/deeplinks/2018/04/us-cloud-act-and-eu-privacy-protection-race-bottom

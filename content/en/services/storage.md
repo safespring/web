@@ -61,7 +61,7 @@ Do your application need high speed access to the stored data or are you looking
 
 #### Content Storage and Distribution
 
-Store and distribute large media files, documents, and other digital assets efficiently to your global audience. Use Safespring Storage as a media server to stream video over HLS. Safespring uses our own services. [This webinar is streamed from Safespring Storage](/webinar/safespring-partner-webinar-elastisys-1/).
+Store and distribute large media files, documents, and other digital assets efficiently to your global audience. Use Safespring Storage as a media server to stream video over HLS. Safespring uses our own services. [This webinar is streamed from Safespring Storage](/webinar/cloud-to-cloud-migration/).
 
 #### Big Data Analytics
 

@@ -26,10 +26,10 @@ Vi ser også på, hvordan vi kan bruge det til at provisionere sæt af instanser
 {{% note "Læs mere" %}}
 Hvis du fandt dette indlæg nyttigt, så husk at tjekke resten af serien om brug af Terraform og Ansible til resource provisioning og compliance. Du vil især måske også synes om:
 
-1. [Supernem provisionering med Safesprings Terraform-moduler](/blogg/2022-01-terraform-modules)
-2. [Fleksibel provisionering af ressourcer med Safesprings nye Terraform-moduler](/blogg/2022-03-terraform-module)
-3. [Integration af Terraform og Ansible for effektiv ressourcehåndtering](/blogg/2022-05-terraform-ansible)
-4. [Fra nul til kontinuerlig compliance med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Supernem provisionering med Safesprings Terraform-moduler](/deep-dive/supernem-provisionering-med-safespring-terraform-modulerne/)
+2. [Fleksibel provisionering af ressourcer med Safesprings nye Terraform-moduler](/deep-dive/fleksibel-provisionering-af-ressourcer-med-safesprings-nye-terraform-moduler/)
+3. [Integration af Terraform og Ansible for effektiv ressourcehåndtering](/deep-dive/integration-af-terraform-og-ansible/)
+4. [Fra nul til kontinuerlig compliance med Terraform, Ansible og Rudder](/deep-dive/fra-nul-til-kontinuerlig-efterlevelse-med-terraform-ansible-og-rudder/)
 
 {{% /note %}}
 
@@ -408,12 +408,12 @@ Derudover har vi defineret et andet map inde i map-indgangen for `db`-instansen,
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]: https://docs.safespring.com/new/flavors/
-[firstblog]: /blogg/2022-01-terraform-modules/
+[firstblog]: /deep-dive/supernem-provisionering-med-safespring-terraform-modulerne/
 [mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]: https://www.terraform.io/downloads
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
 [sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]: /blogg/2022-03-ssh-keys/
-[netblog]: /blogg/2022-03-network/
+[sshblog]: /deep-dive/openstack/
+[netblog]: /deep-dive/forklaring-af-safesprings-netvaerksmodel/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/

@@ -122,6 +122,6 @@ Safespring tilbyder en gratis vurderingstjeneste, der hjælper jer med at migrer
 
 {{< distance >}}
 
-[tfmodulesblog]: /blogg/2022/2022-03-terraform-module/
+[tfmodulesblog]: /deep-dive/fleksibel-provisionering-af-ressourcer-med-safesprings-nye-terraform-moduler/
 [survey]: https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd
 [openstackmig]: https://www.openstack.org/vmware-migration-to-openstack-white-paper

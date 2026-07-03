@@ -43,7 +43,7 @@ There are a few prerequisites to to be able to replicate the steps and while we 
 - Kubernetes Command line tool `kubectl`.
 - Podman/Docker.
 - OpenStack credentials (also include OpenStack ec2 credentials for state s3 store).
-- Talos cluster provisioned with [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) as well as [Cinder CSI](/blogg/2024/2024-03-cinder-csi-volume-provisioner/).
+- Talos cluster provisioned with [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) as well as [Cinder CSI](/deep-dive/install-the-openstack-cinder-csi-driver-for-kubernetes/).
 {{% /note %}}
 
 Onward with the hands-on steps:

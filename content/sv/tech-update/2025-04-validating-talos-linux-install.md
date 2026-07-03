@@ -34,7 +34,7 @@ Det finns några förutsättningar för att kunna återskapa stegen, och vi går
 - Kubernetes kommandoradsverktyg `kubectl`.
 - Podman/Docker.
 - OpenStack-autentiseringsuppgifter (inkludera även OpenStack EC2-uppgifter för S3-lagring av state).
-- Talos-kluster provisionerat med [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) samt [Cinder CSI](/blogg/2024/2024-03-cinder-csi-volume-provisioner/).
+- Talos-kluster provisionerat med [Cilium CNI](https://www.talos.dev/v1.9/kubernetes-guides/network/deploying-cilium/) samt [Cinder CSI](/deep-dive/csi-volymprovisionerare-for-openstack-cinder/).
 {{% /note %}}
 
 Vidare till de praktiska stegen:

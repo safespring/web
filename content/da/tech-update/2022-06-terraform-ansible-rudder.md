@@ -32,10 +32,10 @@ Opdateret for at rette en inkonsistens den 2022-08-22
 {{% note "Read more" %}}
 Hvis du fandt dette indlæg nyttigt, så husk at tjekke resten af serien om brug af Terraform og Ansible til ressourceklargøring og compliance. Særligt kunne du også have glæde af:
 
-1. [Knaldnem klargøring med Safesprings Terraform‑moduler](/blogg/2022-01-terraform-modules)
-2. [Fleksibel klargøring af ressourcer med Safesprings nye Terraform‑moduler](/blogg/2022-03-terraform-module)
-3. [Integration af Terraform og Ansible til effektiv ressourcehåndtering](/blogg/2022-05-terraform-ansible)
-4. [Fra nul til kontinuerlig compliance med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Knaldnem klargøring med Safesprings Terraform‑moduler](/deep-dive/supernem-provisionering-med-safespring-terraform-modulerne/)
+2. [Fleksibel klargøring af ressourcer med Safesprings nye Terraform‑moduler](/deep-dive/fleksibel-provisionering-af-ressourcer-med-safesprings-nye-terraform-moduler/)
+3. [Integration af Terraform og Ansible til effektiv ressourcehåndtering](/deep-dive/integration-af-terraform-og-ansible/)
+4. [Fra nul til kontinuerlig compliance med Terraform, Ansible og Rudder](/deep-dive/fra-nul-til-kontinuerlig-efterlevelse-med-terraform-ansible-og-rudder/)
 
 {{% /note %}}
 
@@ -441,7 +441,7 @@ Brugen af Rudder til løbende at holde dine instanser i overensstemmelse med din
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]: https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
 [newflavors]: https://docs.safespring.com/new/flavors/
-[firstblog]: /blogg/2022-01-terraform-modules/
+[firstblog]: /deep-dive/supernem-provisionering-med-safespring-terraform-modulerne//
 [mbcfengine]: https://www.researchgate.net/publication/243774232_Cfengine_A_site_configuration_engine
 [tfdl]: https://www.terraform.io/downloads
 [sftfmodules]: https://github.com/safespring-community/terraform-modules

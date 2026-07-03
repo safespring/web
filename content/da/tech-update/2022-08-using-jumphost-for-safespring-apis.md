@@ -92,7 +92,7 @@ til API-baseret klargøring (f.eks. Terraform).
 Der er også andre fordele. Hvis du for eksempel vil udrulle til instanser på det
 private (RFC1918) netværk, er den eneste måde at gøre det på via en offentlig
 instans på samme site. Det har vi skrevet om i detaljer i
-[et andet blogindlæg](/blogg/2022-03-network/).
+[et andet blogindlæg](/deep-dive/forklaring-af-safesprings-netvaerksmodel/).
 Du kan naturligvis oprette en specifik jump kun til dette formål, men at lave al
 klargøring og udrulning fra en enkelt vært er langt mere bekvemt.
 

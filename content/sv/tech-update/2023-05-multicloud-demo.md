@@ -497,20 +497,20 @@ Allteftersom vi fortsätter utforska möjligheterna med IAC hoppas vi att den h�
 {{% note "Läs mer" %}}
 Om du tyckte att det här inlägget var användbart, ta gärna en titt på resten av serien om att använda Terraform och Ansible för resursprovisionering och efterlevnad. Särskilt kanske du också uppskattar:
 
--- [Enkel provisionering med Safesprings Terraform‑moduler](/blogg/2022-01-terraform-modules)  
--- [Flexibel provisionering av resurser med Safesprings nya Terraform‑moduler](/blogg/2022-03-terraform-module)  
--- [Integrering av Terraform och ansible för effektiv resurshantering](/blogg/2022-05-terraform-ansible)  
--- [Från noll till kontinuerlig efterlevnad med Terraform, ansible och Rudder](/blogg/2022-06-terraform-ansible-rudder)
+- [Enkel provisionering med Safesprings Terraform‑moduler](/deep-dive/busenkel-provisionering-med-safesprings-terraform-moduler/)
+- [Flexibel provisionering av resurser med Safesprings nya Terraform‑moduler](/deep-dive/flexibel-provisionering-av-resurser-med-safesprings-nya-terraform-moduler/)
+- [Integrering av Terraform och ansible för effektiv resurshantering](/deep-dive/integrera-terraform-med-ansible/)
+- [Från noll till kontinuerlig efterlevnad med Terraform, ansible och Rudder](/deep-dive/fran-noll-till-kontinuerlig-regelefterlevnad-med-terraform-ansible-och-rudder/)
 
 {{% /note %}}
 
-[tfmodulesblog]: /blogg/2022/2022-03-terraform-module/
+[tfmodulesblog]: /deep-dive/flexibel-provisionering-av-resurser-med-safesprings-nya-terraform-moduler/
 [ati]: https://github.com/safespring-community/utilities/blob/main/ati/terraform.py
 [ksparams]: https://github.com/kubernetes-sigs/kubespray/blob/master/docs/vars.md
 [kubespray]: https://github.com/kubernetes-sigs/kubespray
 [sftfmodules]: https://github.com/safespring-community/terraform-modules
 [sftfexamples]: https://github.com/safespring-community/terraform-modules/tree/main/examples
-[sshblog]: /blogg/2022-03-ssh-keys/
+[sshblog]: /deep-dive/basta-praxis-for-ssh-nycklar-i-moln-/openstack-miljoer/
 [netblog]: /blogg/2022-03-network/
 [tfdocs]: https://www.terraform.io/docs
 [tfreleases]: https://releases.hashicorp.com/terraform/

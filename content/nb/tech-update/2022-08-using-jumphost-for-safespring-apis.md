@@ -85,7 +85,7 @@ opprette en jump-host via web-dashbordet og bruker denne til API-basert provisjo
 Det finnes også andre fordeler. Hvis du for eksempel vil rulle ut til
 instanser på det private (RFC1918)-nettverket, er den eneste måten å gjøre det på via en
 offentlig instans på samme site. Vi har skrevet om det i detalj i
-[et annet blogginnlegg](/blogg/2022-03-network/).
+[et annet blogginnlegg](/deep-dive/safesprings-nettverksmodell-forklart/).
 Du kan selvfølgelig opprette en egen jump-host kun for dette formålet, men
 å gjøre all provisjonering og utrulling fra én enkelt vert er langt mer
 praktisk.

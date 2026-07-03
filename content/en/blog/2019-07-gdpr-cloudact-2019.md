@@ -15,7 +15,7 @@ aliases:
   - /blogg/2019/2019-07-gdpr-cloudact-2019/
   - /blog/2019-07-gdpr-cloudact-2019/
 ---
-{{< localbutton text="Read the white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}<br>
+{{< localbutton text="Read the white paper" link="/whitepaper/where-things-stand-after-the-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}<br>
 
 <div class="ingress"><p>Today, the Court of Justice of the European Union (CJEU) begins its review of the validity of Privacy Shield and the Standard Contractual Clauses (SCCs).</p></div>
 
@@ -41,5 +41,5 @@ Download the full background on the security landscape in Europe and how you can
 <a href="https://techcrunch.com/2019/06/24/eu-us-privacy-shield-legal-showdown-now-set-for-july-9/?guccounter=2">TechCrunch, 2019-06-24</a><br>
 <a href="https://www.justice.gov/opa/press-release/file/1153446/download?utm_medium=email&utm_a=govdelivery">U.S. Department of Justice, 2019-04</a><br>
 
-{{< localbutton text="Read the white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Read the white paper" link="/whitepaper/where-things-stand-after-the-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 <br>

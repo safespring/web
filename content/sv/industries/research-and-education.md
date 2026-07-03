@@ -36,7 +36,7 @@ Det finns många sätt som en organisation inom forskning och utbildning kan upp
 
 {{< icon-block-small-container >}}
 {{< icon-block-small icon="fa-solid fa-table" text="Tjänstekatalog" linkref="/geant/service-catalogue/_index.md" color="#195F8C">}}
-{{< icon-block-small icon="fa-solid fa-coins" text="Prislista" link="/geant/price/" color="#3C9BCD" >}}
+{{< icon-block-small icon="fa-solid fa-coins" text="Prislista" link="/geant/prislista-och-kalkylator/" color="#3C9BCD" >}}
 {{< /icon-block-small-container >}}
 
 {{< distance >}}

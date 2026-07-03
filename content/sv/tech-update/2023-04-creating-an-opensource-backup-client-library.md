@@ -39,7 +39,7 @@ Styrkan i ett bibliotek ligger dock i möjligheten att utökas med skräddarsydd
 Därför välkomnar vi bidrag från communityt för att utöka de tillgängliga funktionerna och ta fram specialiserade verktyg som uppfyller specifika behov. Vårt mål, som alltid, är att skapa en robust och flexibel lösning som enkelt kan anpassas till olika miljöer och användningsfall, och vi hoppas att vårt arbete med Cloutility API-klienten möjliggör detta.
 
 {{% note "Rekommenderad läsning" %}}
-Fördjupa dig i världen av öppen källkod för hantering av backupklienter genom att läsa vår senaste artikel om [Automatisera registrering av backupnoder med Cloutility API-klienten.](/blogg/2023/2023-04-using-cloutility-api-client-to-auto-enroll-backup-clients/) Trevlig läsning!
+Fördjupa dig i världen av öppen källkod för hantering av backupklienter genom att läsa vår senaste artikel om [Automatisera registrering av backupnoder med Cloutility API-klienten.](/deep-dive/automatisera-registreringen-av-backupnoder-med-cloutilitys-api-klient/) Trevlig läsning!
 {{% /note %}}
 
 ## Förstå viktiga begrepp

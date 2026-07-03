@@ -24,7 +24,7 @@ I dag ble _«[Forstudierapport: webbaserte kontorpakker](https://www.avropa.se/g
 
 Det er positivt at denne debatten får fart. Den politiske situasjonen har gjort at mange står med ett bein i utenlandske skytjenester som ikke lenger er i samsvar med gjeldende regler og lover. Blant annet innebærer CLOUD Act i USA at filer og data lagret i amerikanske skytjenester skal anses som utlevert etter eSam.
 
-Safesprings hvitbok om CLOUD Act er brukt i rapporten som en referanse til den politiske situasjonen mellom EU og USA. [Last gjerne ned dokumentet her.](/whitepaper/cloudact/)
+Safesprings hvitbok om CLOUD Act er brukt i rapporten som en referanse til den politiske situasjonen mellom EU og USA. [Last gjerne ned dokumentet her.](/hvitbok/slik-handterer-du-den-usikre-situasjonen-i-lys-av-gdpr-og-cloud-act/)
 
 ## Anbefalinger
 

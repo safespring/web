@@ -54,7 +54,7 @@ Hva har skjedd i første kvartal 2022. Bli med og diskuter, still spørsmål og 
 
 ### Dokumenter som tas opp under samtalen
 
-- [Safesprings høringssvar til IT-driftsutredningen](/blogg/remissvar-it-driftsutredningen/)
+- [Safesprings høringssvar til IT-driftsutredningen](/perspektiv/horingssvar-til-it-driftsutredningen/)
 - [Det transatlantiske rammeverket for personvern](https://next.safespring.com/s/L5ssXCHtGAjKFYs)
 - [EDPBs klargjøring om det transatlantiske rammeverket for personvern](https://edpb.europa.eu/our-work-tools/our-documents/statements/statement-012022-announcement-agreement-principle-new-trans_en)
 - [Stockholms stad slutter seg til eSam](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)

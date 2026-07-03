@@ -18,10 +18,10 @@ aliases:
 Tillsammans med Sunet har vi tagit fram en filhanterings- och samarbetstjänst för universitet, högskolor och anslutna myndigheter i Sunets nät.
 {{< /ingress >}}
 
-Tjänsten [Sunet Drive](/dokument/sunet/sunet-drive/) underlättar för användarna att följa GDPR, produceras på Safespring Private Cloud, från svenska datacenter där Sunet driftar lösningen och har #digitalsuveränitet.
+Tjänsten [Sunet Drive](/dokument/sunet-drive-en-losning-for-synkronisering-och-delning-av-filer/) underlättar för användarna att följa GDPR, produceras på Safespring Private Cloud, från svenska datacenter där Sunet driftar lösningen och har #digitalsuveränitet.
 
 Läs vår solution brief och lär dig mer om vår lösning, klicka på bilden nedan. För alla kunder inom GÉANT är lösningen tillgänglig via OCRE-ramavtalet. [Läs med om OCRE här]({{% relref "/industries/research-and-education.md" %}}).
 
 <br>
-<a href="/dokument/sunet/sunet-drive/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img/blogg/socialmedia/safespring_social_41.gif" width="720" height="405"></a>
+<a href="/dokument/sunet-drive-en-losning-for-synkronisering-och-delning-av-filer/"><img alt="Sunet Drive is a managed storage solution which is physically installed in the university’s local data centers" src="/img/blogg/socialmedia/safespring_social_41.gif" width="720" height="405"></a>
 <br>

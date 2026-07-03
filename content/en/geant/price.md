@@ -32,7 +32,7 @@ Infrastructure as a service can run on an open source license or with a Windows 
 ### Flavors with local NVMe storage
 
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
-See configurations for flavors with local NVMe storage in the [service catalogue](/geant/service-catalogue/infrastructure/#configurations).
+See configurations for flavors with local NVMe storage in the [service catalogue](/geant/cloud-compute-service/#configurations).
 
 | Product ID               | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
 | ------------------------ | ---- | -------- | --------------- | ------ | -------- |
@@ -54,7 +54,7 @@ See configurations for flavors with local NVMe storage in the [service catalogue
 ### Flavors without local storage
 
 Central block storage can be purchased for the instances. See "Central block storage" in the price list.
-See configurations for flavors without local storage in the [service catalogue](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
+See configurations for flavors without local storage in the [service catalogue](/geant/cloud-compute-service/#compute-without-local-storage).
 
 | Product ID         | vCPU | RAM (GB) | Local disc (GB) | Hourly | 30 days  |
 | ------------------ | ---- | -------- | --------------- | ------ | -------- |
@@ -72,7 +72,7 @@ See configurations for flavors without local storage in the [service catalogue](
 ### Central Block Storage
 
 Central block storage provides three copies of the data distributed in a robust CEPH cluster.
-See configurations in the [service catalogue](/geant/service-catalogue/infrastructure/#central-block-storage).
+See configurations in the [service catalogue](/geant/cloud-compute-service/#central-block-storage).
 
 | Product ID      | Description               | Hourly   | 30 days  |
 | --------------- | ------------------------- | -------- | -------- |
@@ -88,7 +88,7 @@ See configurations in the [service catalogue](/geant/service-catalogue/infrastru
 Contact us for discounts on larger storage quantities. Pricing model based on the number of stored TB per month.
 {{< /ingress >}}
 
-See configurations for object storage in the [service catalogue](/geant/service-catalogue/storage/#configurations).
+See configurations for object storage in the [service catalogue](/geant/storage-as-a-service/#configurations).
 
 | Product ID | Per TB for 30 days |
 | ---------- | ------------------ |
@@ -105,7 +105,7 @@ Cloud backup solution for on-prem or cloud servers based on Spectrum Protect (TS
 
 Safespring Backup offers data reduction technology[^1] in the service which typically reduces the data volume between 45%-90%. The price is set per protected GB on the client and per stored GB in the service after deduplication and compression. Additionally, 1TB is included in the fixed monthly price for BAAS-small.
 
-See configurations for backup in the [service catalogue](/geant/service-catalogue/backup/#configurations).
+See configurations for backup in the [service catalogue](/geant/backup-as-a-service/#configurations).
 
 {{% accordion title="Which plan is best?" %}}
 
@@ -132,7 +132,7 @@ Safespring offers various software and licenses that can run on top of Safesprin
 ### Network
 
 Safespring offers several network services.  
-See network alternatives in the [service catalogue](/geant/service-catalogue/network/).
+See network alternatives in the [service catalogue](/geant/network-services/).
 
 | Product ID   | Type                       | Description                               | Billing per | Monthly  |
 | ------------ | -------------------------- | ----------------------------------------- | ----------- | -------- |
@@ -147,7 +147,7 @@ See network alternatives in the [service catalogue](/geant/service-catalogue/net
 ### Software and Licenses
 
 Safespring offers several software and licenses.  
-See third-party software licenses in the [service catalogue](/geant/service-catalogue/third-party-software-licenses/).
+See third-party software licenses in the [service catalogue](/geant/third-party-software-licenses/).
 
 | Product ID        | Description                     | Billing per | Monthly  |
 | ----------------- | ------------------------------- | ----------- | -------- |
@@ -200,7 +200,7 @@ Access our experienced consultants and project managers to optimize your cloud i
 ### Educations
 
 Safespring offers several courses in IaaS and cloud services.  
-Read the course descriptions in the [service catalogue](/geant/service-catalogue/courses/).
+Read the course descriptions in the [service catalogue](/geant/courses/).
 
 | Product ID                  | Description                                     | Duration  | Billing per | Price      |
 | --------------------------- | ----------------------------------------------- | --------- | ----------- | ---------- |

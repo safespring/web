@@ -61,7 +61,7 @@ Behöver din applikation snabb åtkomst till lagrade data eller letar du efter e
 
 ## Nyckelfunktioner
 
-1. Ingen trafikkostnad tas ut från tjänsten, det som kallas egress-cost och ingress-cost. Du kan läsa mer om den funktionen i vår arikel: [Safespring tar inte ut några trafikavgifter](/blogg/2023/2023-03-egress-cost/).
+1. Ingen trafikkostnad tas ut från tjänsten, det som kallas egress-cost och ingress-cost. Du kan läsa mer om den funktionen i vår arikel: [Safespring tar inte ut några trafikavgifter](/perspektiv/safespring-tar-inte-ut-nagra-trafikavgifter/).
 1. Safespring Storage prioriterar din datasäkerhet. Med funktioner som objektlåsning och ACL:er har du full kontroll över din datas tillgänglighet och skydd.
 1. Betala endast för den lagring du använder. Safespring Storage erbjuder [flexibla prissättningsmodeller](/pris/#safespring-storage-s3) som kan anpassas efter dina specifika behov, vilket ger kostnadsbesparingar när du skalar.
 1. Vårt erfarna kundsupportteam finns tillgängligt för att hjälpa dig med alla frågor eller problem, vilket garanterar en smidig Safespring-upplevelse.
@@ -74,7 +74,7 @@ Lagra och distribuera stora mediefiler, dokument och andra digitala tillgångar 
 
 #### Stordataanalys
 
-Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/tjanster/case/scilifelab/).
+Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/tjanster/en-flexibel-och-saker-molntjanst-for-life-science-forskning/).
 
 #### Databackup och återställning
 

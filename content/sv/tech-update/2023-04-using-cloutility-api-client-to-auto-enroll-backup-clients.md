@@ -28,7 +28,7 @@ I den här guiden går vi igenom Safesprings cloutility-backup-client-bibliotek 
 {{< /ingress >}}
 
 {{% note "Rekommenderad läsning" %}}
-Fördjupa dig i världen av hantering av backupklienter med öppen källkod genom att läsa vår senaste artikel: [Skapa ett open source-bibliotek för backupklienter.](/blogg/2023/2023-04-creating-an-opensource-backup-client-library/) Trevlig läsning!
+Fördjupa dig i världen av hantering av backupklienter med öppen källkod genom att läsa vår senaste artikel: [Skapa ett open source-bibliotek för backupklienter.](/deep-dive/att-skapa-ett-bibliotek-med-oppen-kallkod-for-sakerhetskopieringsklienter/) Trevlig läsning!
 {{% /note %}}
 
 ## Förutsättningar

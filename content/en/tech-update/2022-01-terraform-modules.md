@@ -27,10 +27,10 @@ It has never been easier to provision compute and block storage resources in Saf
 {{% note "Read more" %}}
 If you found this post useful, be sure to check out the rest of the series on using Terraform and Ansible for resource provisioning and compliance. In particular, you might also enjoy:
 
-1. [Dead easy provisioning using the Safespring Terraform modules](/blogg/2022-01-terraform-modules)
-2. [Flexible provisioning of resources with Safespring's new Terraform modules](/blogg/2022-03-terraform-module)
-3. [Integrating Terraform and ansible for efficient resource management](/blogg/2022-05-terraform-ansible)
-4. [From zero to continuous compliance with Terraform, ansible and Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Dead easy provisioning using the Safespring Terraform modules](/deep-dive/dead-easy-provisioning-using-the-safespring-terraform-modules/)
+2. [Flexible provisioning of resources with Safespring's new Terraform modules](/deep-dive/flexible-provisioning-of-resources-with-safesprings-new-terraform-modules/)
+3. [Integrating Terraform and ansible for efficient resource management](/deep-dive/integrating-terraform-and-ansible/)
+4. [From zero to continuous compliance with Terraform, ansible and Rudder](/deep-dive/from-zero-to-continuous-compliance-with-terraform-ansible-and-rudder/)
 
 {{% /note %}}
 

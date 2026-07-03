@@ -23,7 +23,7 @@ Idag släpptes _”[Förstudierapport Webbaserade kontorsstöd](https://www.avro
 
 Det är positivt att den här debatten börjar ta fart. Det politiska läget har gjort att många står med ett ben i utländska molntjänster som inte längre följer de regler och lagar som gäller. Bland annat har Cloud Act i USA gjort att de filer och data som lagras i amerikanska molntjänster skall anses vara röjd enligt eSam.
 
-Safesprings white paper om Cloud Act har används i rapporten som referens till det politiska läge som EU och USA befinner sig i. [Ladda gärna ner det dokumentet här.](/whitepaper/cloudact/)
+Safesprings white paper om Cloud Act har används i rapporten som referens till det politiska läge som EU och USA befinner sig i. [Ladda gärna ner det dokumentet här.](/vitbok/cloud-act-fisa-702-och-gdpr-for-svenska-molntjanster/)
 
 ## Rekommendationer
 

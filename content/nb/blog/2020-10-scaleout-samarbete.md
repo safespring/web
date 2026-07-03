@@ -50,7 +50,7 @@ Tjenesten er tilgjengelig hos Safespring med Scaleout som ekspertpartner og prog
 
 Som eksempel er STACKn grunnlaget for en portal for maskinlæring hos SciLifeLab (en ledende nasjonal infrastruktur for life science i Sverige), det er basen i en svensk testarena for føderert maskinlæring sammen med AI Sweden, Hewlett Packard, Zenuity, med flere, STACKn inngår i et paneuropeisk prosjekt innen flytrafikkstyring der Eurocontrol, Swiss Airlines, SITA Aero og andre aktører er med, samt i små oppstartsbedrifter som Smart Recycling (en løsning som reduserer kostnader og CO2-utslipp innen gjenvinning), Prosilico (et verktøy som vurderer kjemiske strukturers påvirkning og toksiske effekter i menneskekroppen), for å nevne noen.
 
-I løpet av høsten holdes en serie webinarer som demonstrerer STACKn i Safesprings regi, der Scaleout demonstrerer løsningen ved å sette i produksjon en maskinlæringsmodell på 30 minutter. [Klikk her for å delta på webinarene](/event/) og les mer om STACKn her https://stackn.ai.
+I løpet av høsten holdes en serie webinarer som demonstrerer STACKn i Safesprings regi, der Scaleout demonstrerer løsningen ved å sette i produksjon en maskinlæringsmodell på 30 minutter. [Klikk her for å delta på webinarene](/webinar/) og les mer om STACKn her https://stackn.ai.
 
 #### Safespring (Org.nr: 559075-0245)
 

@@ -7,7 +7,7 @@ draft: false
 intro: "Din onboarding er nu gennemført, og vi er glade for at have dig med hos os. Du er helt klar til at begynde at få glæde af alt det, vi tilbyder."
 background: ""
 sidebarlinkname: "Opret endnu en konto"
-sidebarlinkurl: "/onboarding/new-account/"
+sidebarlinkurl: "/onboarding/kom-godt-i-gang-med-safespring/"
 socialmedia: ""
 noindex: true
 aliases:

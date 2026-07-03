@@ -23,7 +23,7 @@ Today, the _"[Pre-study Report: Web-based Office Suites](https://www.avropa.se/g
 
 It is positive that this debate is gaining momentum. The political situation has left many with one foot in foreign cloud services that no longer comply with applicable rules and laws. Among other things, the CLOUD Act in the United States means that files and data stored in American cloud services should be regarded as disclosed under eSam.
 
-Safespring’s white paper on the CLOUD Act has been used in the report as a reference to the political situation between the EU and the US. [Feel free to download the document here.](/whitepaper/cloudact/)
+Safespring’s white paper on the CLOUD Act has been used in the report as a reference to the political situation between the EU and the US. [Feel free to download the document here.](/whitepaper/how-to-handle-the-uncertainty-in-light-of-the-gdpr-and-the-cloud-act/)
 
 ## Recommendations
 

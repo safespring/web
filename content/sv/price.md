@@ -40,7 +40,7 @@ I priset ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får 
 
 ### Ingen trafikkostnad
 
-Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller Egress cost som det också kallas, är en vanlig inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om Egress och Ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
+Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller Egress cost som det också kallas, är en vanlig inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om Egress och Ingress cost i vårt [blogginlägg om trafikkostnader](/perspektiv/safespring-tar-inte-ut-nagra-trafikavgifter/).
 
 {{< distance >}}
 

@@ -20,8 +20,8 @@ aliases:
 Safespring "Infrastructure as Code" was presented at SUNET Days
 We had two intensive days in Karlstad. Anders Bruvik presented how we build infrastructure as code and shared many examples and approaches that help organizations with their development work toward the cloud.
 
-<a href="/blog/Safespring_Infrastructure-as-code_Presentation-SUNET-dagarna_2019.pdf" class="text-button">Infrastructure as Code</a><br><br>
+<a href="/publications/Safespring_Infrastructure-as-code_Presentation-SUNET-dagarna_2019.pdf" class="text-button">Infrastructure as Code</a><br><br>
 
 Gabriel Paues presented our project "SUNET Distributed Storage," covering its current status and the roadmap ahead. If you want a good overview of SUNET Object Storage, we recommend downloading Gabriel’s presentation:
 
-<a href="/blog/Safespring_SUNET-Distribuerad-Lagring_Presentation-SUNET-dagarna_2019.pdf" class="text-button">SUNET Distributed Storage</a>
+<a href="/publications/Safespring_SUNET-Distribuerad-Lagring_Presentation-SUNET-dagarna_2019.pdf" class="text-button">SUNET Distributed Storage</a>

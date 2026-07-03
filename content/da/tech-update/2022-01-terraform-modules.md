@@ -27,10 +27,10 @@ Det har aldrig været nemmere at klargøre compute- og bloklagringsressourcer p�
 {{% note "Læs mere" %}}
 Hvis du fandt dette indlæg nyttigt, så tjek resten af serien om brug af Terraform og Ansible til klargøring og compliance. Især vil du måske også synes om:
 
-1. [Ekstremt nem klargøring med Safesprings Terraform-moduler](/blogg/2022-01-terraform-modules)
-2. [Fleksibel klargøring af ressourcer med Safesprings nye Terraform-moduler](/blogg/2022-03-terraform-module)
-3. [Integrering af Terraform og Ansible til effektiv ressourcehåndtering](/blogg/2022-05-terraform-ansible)
-4. [Fra nul til kontinuerlig compliance med Terraform, Ansible og Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Ekstremt nem klargøring med Safesprings Terraform-moduler](/deep-dive/supernem-provisionering-med-safespring-terraform-modulerne/)
+2. [Fleksibel klargøring af ressourcer med Safesprings nye Terraform-moduler](/deep-dive/fleksibel-provisionering-af-ressourcer-med-safesprings-nye-terraform-moduler/)
+3. [Integrering af Terraform og Ansible til effektiv ressourcehåndtering](/deep-dive/integration-af-terraform-og-ansible/)
+4. [Fra nul til kontinuerlig compliance med Terraform, Ansible og Rudder](/deep-dive/fra-nul-til-kontinuerlig-efterlevelse-med-terraform-ansible-og-rudder/)
 
 {{% /note %}}
 

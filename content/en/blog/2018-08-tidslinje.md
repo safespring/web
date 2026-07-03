@@ -27,7 +27,7 @@ A summary of the events that led up to the GDPR and the CLOUD Act, which today a
 
 Over the past twenty years, the Internet and the digital society have affected individuals, public authorities, and companies alike. EU and U.S. legislation on personal data protection has moved in two different directions, but has tried to meet at certain points. Below is a summary of what leads up to the GDPR and the CLOUD Act, which today are two of the governing pieces of legislation.
 
-{{< localbutton text="Read white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Read white paper" link="/whitepaper/where-things-stand-after-the-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 {{% timeline ariaLabel="Timeline of data protection laws" %}}
 {{% timeline-item year="1995" date="1995-10-24" %}}
@@ -119,7 +119,7 @@ The US vs. Microsoft appeal to the U.S. Supreme Court is dropped because the CLO
 {{% /timeline-item %}}
 {{% /timeline %}}
 
-{{< localbutton text="Read white paper" link="/whitepaper/eu-us-dpf/" icon="fa-up-right-from-square" >}}
+{{< localbutton text="Read white paper" link="/whitepaper/where-things-stand-after-the-eu-us-data-protection-framework-dpf/" icon="fa-up-right-from-square" >}}
 
 ## Sources
 

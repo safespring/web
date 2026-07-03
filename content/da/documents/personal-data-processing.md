@@ -59,7 +59,7 @@ Du har ret til at gøre indsigelse mod vores behandling af dine oplysninger og b
 
 ### Særlig information om cookies
 
-Vi har særlig information om cookies på denne [side om cookies](/dokument/cookies/).
+Vi har særlig information om cookies på denne [side om cookies](/dokumenter/om-webstedet/).
 
 {{% note "databehandleraftale" %}}
 For mere information om vores databehandleraftale, kontakt din kontaktperson.

@@ -32,7 +32,7 @@ Infrastruktur som en tjeneste kan køre på en open source-licens eller med en W
 ### Instanstyper med lokal NVMe-lagring
 
 Central bloklagring kan tilkøbes til instanserne. Se "Central bloklagring" i prislisten.
-Se konfigurationer for instanstyper med lokal NVMe-lagring i [servicekataloget](/geant/service-catalogue/infrastructure/#configurations).
+Se konfigurationer for instanstyper med lokal NVMe-lagring i [servicekataloget](/geant/service-catalogue/infrastructure/#konfigurationer).
 
 | Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | Timepris | 30 dage  |
 | ------------------------ | ---- | -------- | --------------- | -------- | -------- |
@@ -54,7 +54,7 @@ Se konfigurationer for instanstyper med lokal NVMe-lagring i [servicekataloget](
 ### Instanstyper uden lokal lagring
 
 Central bloklagring kan tilkøbes til instanserne. Se "Central bloklagring" i prislisten.
-Se konfigurationer for instanstyper uden lokal lagring i [servicekataloget](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
+Se konfigurationer for instanstyper uden lokal lagring i [servicekataloget](/geant/service-catalogue/infrastructure/#compute-uden-lokal-lagring).
 
 | Produkt-ID         | vCPU | RAM (GB) | Lokal disk (GB) | Timepris | 30 dage  |
 | ------------------ | ---- | -------- | --------------- | -------- | -------- |
@@ -72,7 +72,7 @@ Se konfigurationer for instanstyper uden lokal lagring i [servicekataloget](/gea
 ### Central bloklagring
 
 Central bloklagring leverer tre kopier af data fordelt i en robust CEPH-klynge.
-Se konfigurationer i [servicekataloget](/geant/service-catalogue/infrastructure/#central-block-storage).
+Se konfigurationer i [servicekataloget](/geant/service-catalogue/infrastructure/#central-bloklagring).
 
 | Produkt-ID      | Beskrivelse                | Timepris  | 30 dage  |
 | --------------- | -------------------------- | --------- | -------- |
@@ -88,7 +88,7 @@ Se konfigurationer i [servicekataloget](/geant/service-catalogue/infrastructure/
 Kontakt os for rabatter ved større lagermængder. Pris­modellen er baseret på antallet af lagrede TB pr. måned.
 {{< /ingress >}}
 
-Se konfigurationer for objektlagring i [servicekataloget](/geant/service-catalogue/storage/#configurations).
+Se konfigurationer for objektlagring i [servicekataloget](/geant/service-catalogue/storage/#konfigurationer).
 
 | Produkt-ID | Per TB i 30 dage |
 | ---------- | ---------------- |
@@ -105,7 +105,7 @@ Cloud-backupløsning til on-prem eller cloudservere baseret på Spectrum Protect
 
 Safespring Backup tilbyder datanedbringningsteknologi[^1] i tjenesten, som typisk reducerer datamængden med 45–90 %. Prisen fastsættes pr. beskyttet GB på klienten og pr. lagret GB i tjenesten efter deduplikering og komprimering. Derudover er 1 TB inkluderet i den faste månedlige pris for BAAS-small.
 
-Se konfigurationer for backup i [servicekataloget](/geant/service-catalogue/backup/#configurations).
+Se konfigurationer for backup i [servicekataloget](/geant/service-catalogue/backup/#konfigurationer).
 
 {{% accordion title="Hvilken plan er bedst?" %}}
 

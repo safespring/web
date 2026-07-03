@@ -27,10 +27,10 @@ Det har aldrig varit enklare att provisionera compute‑ och blocklagringsresurs
 {{% note "Läs mer" %}}
 Om du tyckte att det här inlägget var användbart, kolla gärna in resten av serien om hur du använder Terraform och Ansible för resurstilldelning och regelefterlevnad. I synnerhet kan du också gilla:
 
-1. [Busenkel provisionering med Safesprings Terraform‑moduler](/blogg/2022-01-terraform-modules)
-2. [Flexibel resurstilldelning med Safesprings nya Terraform‑moduler](/blogg/2022-03-terraform-module)
-3. [Integrera Terraform och Ansible för effektiv resurshantering](/blogg/2022-05-terraform-ansible)
-4. [Från noll till kontinuerlig regelefterlevnad med Terraform, Ansible och Rudder](/blogg/2022-06-terraform-ansible-rudder)
+1. [Busenkel provisionering med Safesprings Terraform‑moduler](/deep-dive/busenkel-provisionering-med-safesprings-terraform-moduler/)
+2. [Flexibel resurstilldelning med Safesprings nya Terraform‑moduler](/deep-dive/flexibel-provisionering-av-resurser-med-safesprings-nya-terraform-moduler/)
+3. [Integrera Terraform och Ansible för effektiv resurshantering](/deep-dive/integrera-terraform-med-ansible/)
+4. [Från noll till kontinuerlig regelefterlevnad med Terraform, Ansible och Rudder](/deep-dive/fran-noll-till-kontinuerlig-regelefterlevnad-med-terraform-ansible-och-rudder/)
 
 {{% /note %}}
 

@@ -32,7 +32,7 @@ Infrastruktur som tjänst kan köras med en öppen källkodslicens eller med en 
 ### Instansstorlekar med lokal NVMe-lagring
 
 Central blocklagring kan köpas till instanserna. Se "Central blocklagring" i prislistan.
-Se konfigurationer för instansstorlekar med lokal NVMe-lagring i [tjänstekatalogen](/geant/service-catalogue/infrastructure/#configurations).
+Se konfigurationer för instansstorlekar med lokal NVMe-lagring i [tjänstekatalogen](/geant/molnberakningstjanst/#konfigurationer).
 
 | Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | Per timme | 30 dagar |
 | ------------------------ | ---- | -------- | ---------------- | --------- | -------- |
@@ -54,7 +54,7 @@ Se konfigurationer för instansstorlekar med lokal NVMe-lagring i [tjänstekatal
 ### Instansstorlekar utan lokal lagring
 
 Central blocklagring kan köpas till instanserna. Se "Central blocklagring" i prislistan.
-Se konfigurationer för instansstorlekar utan lokal lagring i [tjänstekatalogen](/geant/service-catalogue/infrastructure/#compute-without-local-storage).
+Se konfigurationer för instansstorlekar utan lokal lagring i [tjänstekatalogen](/geant/molnberakningstjanst/#berakning-utan-lokal-lagring).
 
 | Produkt-ID         | vCPU | RAM (GB) | Lokal disk (GB) | Per timme | 30 dagar |
 | ------------------ | ---- | -------- | ---------------- | --------- | -------- |
@@ -72,7 +72,7 @@ Se konfigurationer för instansstorlekar utan lokal lagring i [tjänstekatalogen
 ### Central blocklagring
 
 Central blocklagring ger tre kopior av data distribuerade i ett robust CEPH-kluster.
-Se konfigurationer i [tjänstekatalogen](/geant/service-catalogue/infrastructure/#central-block-storage).
+Se konfigurationer i [tjänstekatalogen](/geant/molnberakningstjanst/#central-blocklagring).
 
 | Produkt-ID      | Beskrivning               | Per timme | 30 dagar |
 | --------------- | ------------------------- | --------- | -------- |
@@ -88,7 +88,7 @@ Se konfigurationer i [tjänstekatalogen](/geant/service-catalogue/infrastructure
 Kontakta oss för rabatter vid större lagringsvolymer. Prissättningsmodell baserad på antal lagrade TB per månad.
 {{< /ingress >}}
 
-Se konfigurationer för objektlagring i [tjänstekatalogen](/geant/service-catalogue/storage/#configurations).
+Se konfigurationer för objektlagring i [tjänstekatalogen](/geant/lagring-som-tjanst/#konfigurationer).
 
 | Produkt-ID | Per TB i 30 dagar |
 | ---------- | ----------------- |
@@ -105,7 +105,7 @@ Molnbaserad lösning för säkerhetskopiering av on-prem- eller molnservrar base
 
 Safespring Backup erbjuder dataminskningsteknik[^1] i tjänsten som typiskt minskar datavolymen med 45–90 %. Priset sätts per skyddad GB på klienten och per lagrad GB i tjänsten efter deduplikering och komprimering. Dessutom ingår 1 TB i det fasta månadspriset för BAAS-small.
 
-Se konfigurationer för backup i [tjänstekatalogen](/geant/service-catalogue/backup/#configurations).
+Se konfigurationer för backup i [tjänstekatalogen](/geant/backup-som-tjanst/#konfigurationer).
 
 {{% accordion title="Vilket alternativ är bäst?" %}}
 
@@ -132,7 +132,7 @@ Safespring erbjuder olika programvara och licenser som kan köras ovanpå Safesp
 ### Nätverk
 
 Safespring erbjuder flera nätverkstjänster.  
-Se nätverksalternativ i [tjänstekatalogen](/geant/service-catalogue/network/).
+Se nätverksalternativ i [tjänstekatalogen](/geant/natverkstjanster/).
 
 | Produkt-ID  | Typ                        | Beskrivning                             | Debitering per | Per månad |
 | ----------- | -------------------------- | --------------------------------------- | -------------- | --------- |
@@ -147,7 +147,7 @@ Se nätverksalternativ i [tjänstekatalogen](/geant/service-catalogue/network/).
 ### Programvara och licenser
 
 Safespring erbjuder flera programvaror och licenser.  
-Se tredjepartsprogramvarulicenser i [tjänstekatalogen](/geant/service-catalogue/third-party-software-licenses/).
+Se tredjepartsprogramvarulicenser i [tjänstekatalogen](/geant/licenser-for-programvara-fran-tredje-part/).
 
 | Produkt-ID        | Beskrivning                    | Debitering per | Per månad |
 | ----------------- | ------------------------------ | -------------- | --------- |
@@ -200,7 +200,7 @@ Access our experienced consultants and project managers to optimize your cloud i
 ### Utbildningar
 
 Safespring erbjuder flera kurser inom IaaS och molntjänster.  
-Läs kursbeskrivningarna i [tjänstekatalogen](/geant/service-catalogue/courses/).
+Läs kursbeskrivningarna i [tjänstekatalogen](/geant/kurser/).
 
 | Produkt-ID                  | Beskrivning                                   | Längd     | Debitering per | Pris       |
 | --------------------------- | --------------------------------------------- | --------- | -------------- | ---------- |

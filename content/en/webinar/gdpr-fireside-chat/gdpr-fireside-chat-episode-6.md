@@ -56,7 +56,7 @@ President Biden has signed an executive order on enhanced safeguards for U.S. si
 
 ### Documents covered in earlier conversations
 
-- [Safespring's consultation response to the IT Operations Inquiry](/blogg/remissvar-it-driftsutredningen/)
+- [Safespring's consultation response to the IT Operations Inquiry](/perspectives/consultation-response-to-the-it-operations-inquiry/)
 - [Trans Atlantic Data Privacy Framework](https://next.safespring.com/s/L5ssXCHtGAjKFYs)
 - [EDPB's clarification on the Trans Atlantic Data Privacy Framework](https://edpb.europa.eu/our-work-tools/our-documents/statements/statement-012022-announcement-agreement-principle-new-trans_en)
 - [The City of Stockholm joins eSam](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)
