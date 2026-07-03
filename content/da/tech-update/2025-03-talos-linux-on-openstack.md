@@ -17,7 +17,6 @@ section: "Teknisk opdatering"
 author: "Anders Johansson"
 TOC: "I dette indlæg"
 aliases:
-  - /blogg/2025/2024-02-engineering-plans/
   - /blogg/2025/2025-03-talos-linux-on-openstack/
   - /tekniske-opdateringer/2025-03-talos-linux-on-openstack/
 ---
