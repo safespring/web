@@ -1,7 +1,7 @@
 {{- $target := .Params.redirecturl | default "/" -}}
 {{- $absoluteTarget := $target | absURL -}}
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "sv" }}">
+<html lang="{{ .Site.Language.Locale | default "sv" }}">
   <head>
     <meta charset="utf-8">
     <title>{{ .Title }} | Safespring</title>

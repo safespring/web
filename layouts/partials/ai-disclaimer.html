@@ -2,7 +2,7 @@
 {{- $translations := .Page.AllTranslations -}}
 {{- $original := index (where $translations ".Params.ai" "ne" true) 0 | default .Page -}}
 {{- $english := index (where $translations "Lang" "en") 0 | default .Page -}}
-{{- $originalLangName := $original.Language.LanguageName -}}
+{{- $originalLangName := $original.Language.Label -}}
 {{- $href := $english.Permalink -}}
 
 <div class="ai-disclaimer-container" id="{{ $id }}">
