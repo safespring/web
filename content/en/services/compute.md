@@ -1,6 +1,6 @@
 ---
 
-title: "Swedish OpenStack IaaS for Regulated Organizations"
+title: "Safespring Compute"
 language: "en"
 documentation: "Compute"
 cardtitle: "Compute"
@@ -19,6 +19,7 @@ sidebarlinkname2: "Compute Pricing"
 sidebarlinkurl2: "/price/#safespring-compute"
 socialmedia: "safespring-compute.jpg"
 aliases:
+  - /services/safespring-cloud-compute/
   - /compute/
   - /safespring-compute/
   - /en/services/compute/
@@ -26,7 +27,7 @@ aliases:
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
-slug: "safespring-cloud-compute"
+slug: "compute"
 ---
 
 {{< icon-block-container >}}

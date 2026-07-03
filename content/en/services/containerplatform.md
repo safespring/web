@@ -26,8 +26,9 @@ showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
 language: "en"
-slug: "safespring-kubernetes-engine"
+slug: "kubernetes"
 aliases:
+  - /services/safespring-kubernetes-engine/
   - /en/services/containerplatform/
   - /services/container-platform/
 ---

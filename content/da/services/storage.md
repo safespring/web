@@ -1,6 +1,6 @@
 ---
-title: "Safespring S3: Skalerbar og højtydende objektlagring"
-slug: "safespring-s3-skalerbar-og-hojtydende-objektlagring"
+title: "Safespring S3"
+slug: "s3"
 language: "da"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
@@ -21,6 +21,7 @@ section: "Public cloud"
 socialmedia: "safespring-storage.jpg"
 megamenu: "yes"
 aliases:
+  - /tjenester/safespring-s3-skalerbar-og-hojtydende-objektlagring/
   - /da/storage/
   - /da/safespring-storage/
   - /da/tjenester/storage/

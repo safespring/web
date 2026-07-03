@@ -1,5 +1,5 @@
 ---
-title: "S3-kompatibel objektlagring i Sverige och Norden"
+title: "Safespring S3"
 metatitle: "S3 Storage i Sverige och Norden | Safespring Storage"
 language: "sv"
 documentation: "Storage"
@@ -25,7 +25,9 @@ sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna 
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 megamenu: "yes"
+slug: "s3"
 aliases:
+  - /tjanster/s3-kompatibel-objektlagring-i-sverige-och-norden/
   - /storage/
   - /safespring-storage/
   - /tjanster/safespring-storage/

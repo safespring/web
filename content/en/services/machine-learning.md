@@ -1,5 +1,5 @@
 ---
-title: "Federated AI with FEDn on Safespring"
+title: "AI & ML"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
 language: "en"
@@ -18,7 +18,9 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact"
 socialmedia: ""
+slug: "ai-ml"
 aliases:
+  - /services/federated-ai-with-fedn-on-safespring/
   - /en/services/machine-learning-ai-gpu-resources/
 ---
 

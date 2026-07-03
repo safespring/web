@@ -1,5 +1,5 @@
 ---
-title: "Elastisys Welkin på Safespring Compute"
+title: "Elastisys Welkin"
 language: "da"
 date: "2025-05-23"
 draft: false
@@ -14,7 +14,9 @@ sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/kubernetes/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: "Elastisys bygger Welkin på Safespring Compute og giver kunder en sikker Kubernetes-platform på nordisk infrastruktur."
+slug: "welkin"
 aliases:
+  - /tjenester/elastisys-welkin-pa-safespring-compute/
   - /da/services/compliant-kubernetes/
 ---
 

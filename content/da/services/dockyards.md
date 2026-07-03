@@ -1,7 +1,7 @@
 ---
 ai: true
-title: "Kør Sudo's Dockyards på Safesprings optimerede servere"
-slug: "kor-sudos-dockyards-pa-safesprings-optimerede-servere"
+title: "Sudo Dockyards"
+slug: "dockyards"
 language: "da"
 date: 2023-05-19
 draft: false
@@ -15,6 +15,7 @@ sidebarlinkurl: "/demo/kubernetes/"
 sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/kontakt"
 aliases:
+  - /tjenester/kor-sudos-dockyards-pa-safesprings-optimerede-servere/
   - /tjanster/dockyards/
 ---
 {{< icon-block-container >}}

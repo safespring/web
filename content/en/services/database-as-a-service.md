@@ -1,5 +1,5 @@
 ---
-title: "Database as a service is fully-managed, highly-available, open source"
+title: "Safespring Database"
 language: "en"
 cardtitle: "Database"
 cardicon: "fa-solid fa-database"
@@ -25,7 +25,9 @@ sidebarknapp: ""
 sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
+slug: "database"
 aliases:
+  - /services/database-as-a-service-is-fully-managed-highly-available-open-source/
   - /en/services/database-as-a-service/
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
@@ -36,7 +38,7 @@ logomobile: "/img/logos/dbaas-logos-mobile.svg"
     {{< icon-block icon="fas fa-gauge-high" text="High Availability" link="" color="#32CD32">}}
     {{< icon-block icon="fas fa-sliders" text="Advanced Traffic Control" link="" color="#195F8C">}}
     {{< icon-block icon="fas fa-database" text="Cache22 - Redis 7 Compatible" link="" color="#FA690F">}}
-    {{< icon-block icon="fak fa-safespring-icon" text="Safespring Infrastructure" link="/services/safespring-cloud-compute/" color="#417DA5">}}
+    {{< icon-block icon="fak fa-safespring-icon" text="Safespring Infrastructure" link="/services/compute/" color="#417DA5">}}
     {{< icon-block icon="fas fa-clock-rotate-left" text="Automated Backups" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 

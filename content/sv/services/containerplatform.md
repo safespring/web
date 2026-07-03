@@ -28,7 +28,7 @@ fontawesomebundle: "containerplatform"
 language: "sv"
 aliases:
   - /tjanster/containerplattform/
-slug: "containerplattform"
+slug: "kubernetes"
 ---
 
 {{< ingress >}}

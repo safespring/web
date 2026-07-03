@@ -1,6 +1,6 @@
 ---
-title: "Database som service med høj tilgængelighed"
-slug: "database-som-service-med-hoj-tilgaengelighed"
+title: "Safespring Database"
+slug: "database"
 language: "da"
 cardtitle: "Database service"
 cardicon: "fa-solid fa-database"
@@ -28,6 +28,7 @@ darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
 aliases:
+  - /tjenester/database-som-service-med-hoj-tilgaengelighed/
   - /da/tjenester/database-as-a-service/
 ---
 

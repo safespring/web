@@ -1,5 +1,5 @@
 ---
-title: "Databas som tjänst med hög tillgänglighet"
+title: "Safespring Database"
 language: "sv"
 cardtitle: "Databas som tjänst"
 cardicon: "fa-solid fa-database"
@@ -26,7 +26,9 @@ sidebarmail: "hello@safespring.com"
 darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"
 logomobile: "/img/logos/dbaas-logos-mobile.svg"
+slug: "database"
 aliases:
+  - /tjanster/databas-som-tjanst-med-hog-tillganglighet/
   - /tjanster/database-as-a-service/
 ---
 
@@ -81,4 +83,4 @@ Prissättningskomponenter är antalet server-vCPU:er och tillhörande RAM, mäng
 | Över 1024 GB         | 0,95 SEK/GB    |
 
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/safespring-cloud-compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan av Database as a service" text="Safespring körs i datacenter inom Europa och berörs inte av utländsk lagstiftning som CLOUD Act eller FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjanster/compute/" linktext="Läs mer" cardtitle="Safespring Compute är kärnan av Database as a service" text="Safespring körs i datacenter inom Europa och berörs inte av utländsk lagstiftning som CLOUD Act eller FISA 702." %}}

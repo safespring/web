@@ -1,6 +1,6 @@
 ---
-title: "Fødereret AI med FEDn på Safespring"
-slug: "fodereret-ai-med-fedn-pa-safespring"
+title: "AI & ML"
+slug: "ai-ml"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
 language: "da"
@@ -20,6 +20,7 @@ sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/contact.md"
 socialmedia: ""
 aliases:
+  - /tjenester/fodereret-ai-med-fedn-pa-safespring/
   - /da/tjenester/machine-learning/
 ---
 

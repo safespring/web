@@ -1,5 +1,5 @@
 ---
-title: "Safespring On-Premise Cloud"
+title: "Private Cloud"
 language: "sv"
 date: 2023-05-10
 draft: false
@@ -7,7 +7,9 @@ intro: "Få hjälp med att sätta upp din egen molninfrastruktur som vi underhå
 background: ""
 form: ""
 socialmedia: "safespring-private-cloud.jpg"
+slug: "private-cloud"
 aliases:
+  - /tjanster/safespring-on-premise-cloud/
   - /private-cloud/
   - /tjanster/managed-private-cloud/
   - /tjanster/managed-infrastructure/

@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Konsulenttjenester"
+title: "Consulting"
 language: "nb"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -8,7 +8,9 @@ intro: "Safespring har stor kompetanse innen skytjenester og skyapplikasjoner. V
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
+slug: "consulting"
 aliases:
+  - /tjenester/konsulenttjenester/
   - /konsulttjanster/
   - /tjanster/konsulttjanster/
 ---

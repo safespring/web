@@ -18,7 +18,7 @@ socialmedia: "/safespring-start.jpg"
 toc: "On this page"
 noindex: true
 layout: "redirect"
-redirecturl: "/services/safespring-kubernetes-engine/"
+redirecturl: "/services/kubernetes/"
 aliases:
   - /geant/service-catalogue/platform/
 ---

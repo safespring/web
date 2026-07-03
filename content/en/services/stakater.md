@@ -1,5 +1,5 @@
 ---
-title: "Managed Kubernetes and OpenShift by Stakater on Safespring"
+title: "Stakater Kubernetes & OpenShift"
 language: "en"
 date: 2024-01-01
 draft: false
@@ -16,7 +16,9 @@ socialmedia: ""
 sidebartext: ""
 devops: ""
 section: "Public Cloud"
+slug: "stakater"
 aliases:
+  - /services/managed-kubernetes-and-openshift-by-stakater-on-safespring/
   - /en/services/stakater/
 ---
 

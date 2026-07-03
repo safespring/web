@@ -1,5 +1,5 @@
 ---
-title: "Elastisys Welkin on Safespring Compute"
+title: "Elastisys Welkin"
 language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -14,7 +14,9 @@ sidebarlinkname2: "Watch demo"
 sidebarlinkurl2: "/demo/kubernetes/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: "Elastisys builds Welkin on Safespring Compute, giving customers a secure Kubernetes platform on Nordic infrastructure."
+slug: "welkin"
 aliases:
+  - /services/elastisys-welkin-on-safespring-compute/
   - /en/services/compliant-kubernetes/
 ---
 
@@ -62,4 +64,4 @@ Therefore, Sweden's regions and municipalities set clear requirements that perso
 
 Boost your competitiveness in Europe with the right cloud service and increase your sales.
 
-{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/safespring-cloud-compute/" linktext="Read more" cardtitle="Safespring Compute: The Foundation for Welkin" text="Our infrastructure service is run in state-of-the-art data centers within the EU, protected from laws like the CLOUD Act or FISA 702." %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/services/compute/" linktext="Read more" cardtitle="Safespring Compute: The Foundation for Welkin" text="Our infrastructure service is run in state-of-the-art data centers within the EU, protected from laws like the CLOUD Act or FISA 702." %}}

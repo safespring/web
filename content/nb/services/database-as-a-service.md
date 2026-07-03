@@ -1,6 +1,6 @@
 ---
-title: "Database som tjeneste med høy tilgjengelighet"
-slug: "database-som-tjeneste-med-hoy-tilgjengelighet"
+title: "Safespring Database"
+slug: "database"
 language: "nb"
 cardtitle: "Database-tjeneste"
 cardicon: "fa-solid fa-database"
@@ -24,6 +24,7 @@ sidebarlink: ""
 saas: ""
 sidebarwhitepaper: ""
 aliases:
+  - /tjenester/database-som-tjeneste-med-hoy-tilgjengelighet/
   - /no/tjenester/database-as-a-service/
 darkmode: "off"
 logo: "/img/logos/dbaas-logos.svg"

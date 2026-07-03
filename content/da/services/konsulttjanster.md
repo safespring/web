@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Konsulentydelser"
+title: "Consulting"
 language: "da"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -8,7 +8,9 @@ intro: "Safespring har stor ekspertise inden for cloudtjenester og cloudapplikat
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
+slug: "consulting"
 aliases:
+  - /tjenester/konsulentydelser/
   - /konsulttjanster/
   - /tjanster/konsulttjanster/
 ---

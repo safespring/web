@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Run Sudo's Dockyards on Safespring's optimized servers"
+title: "Sudo Dockyards"
 language: "en"
 date: 2023-05-19
 draft: false
@@ -13,7 +13,9 @@ sidebarlinkname: "Watch demo"
 sidebarlinkurl: "/demo/kubernetes/"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/contact.md"
+slug: "dockyards"
 aliases:
+  - /services/run-sudos-dockyards-on-safesprings-optimized-servers/
   - /tjanster/dockyards/
 ---
 {{< icon-block-container >}}

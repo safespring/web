@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Sustainable Private Cloud at the T.Loops Data Energy Center"
+title: "T.Loops Private Cloud"
 section: "Managed Infrastructure"
 language: "en"
 date: 2024-02-06
@@ -9,12 +9,14 @@ intro: "Integrate Safespring On-Premise Cloud into T.Loops' sustainable faciliti
 background: ""
 form: ""
 sidebarlinkname: "Learn about Private Cloud"
-sidebarlinkurl: "/services/safespring-on-premise-cloud/"
+sidebarlinkurl: "/services/private-cloud/"
 sidebarlinkname2: "Watch demo"
 sidebarlinkurl2: "/demo/compute/"
 socialmedia: ""
 devops: ""
+slug: "tloop"
 aliases:
+  - /services/sustainable-private-cloud-at-the-t.loops-data-energy-center/
   - /tjanster/tloop/
 ---
 {{< icon-block-container >}}

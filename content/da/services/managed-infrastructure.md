@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Safespring lokal cloud"
+title: "Private Cloud"
 language: "da"
 date: 2023-05-10
 draft: false
@@ -10,7 +10,9 @@ form: ""
 socialmedia: "safespring-private-cloud.jpg"
 section: "Privat sky"
 toc: "På denne side"
+slug: "private-cloud"
 aliases:
+  - /tjenester/safespring-lokal-cloud/
   - /en/services/managed-infrastructure/
 ---
 {{< ingress >}}

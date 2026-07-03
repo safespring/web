@@ -1,6 +1,6 @@
 ---
-title: "Maskinlæring og AI med GPU-ressurser"
-slug: "maskinlaering-og-ai-med-gpu-ressurser"
+title: "AI & ML"
+slug: "ai-ml"
 section: "Public Cloud"
 language: "nb"
 cardtitle: "AI & ML-tjenester"
@@ -16,6 +16,7 @@ sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
 aliases:
+  - /tjenester/maskinlaering-og-ai-med-gpu-ressurser/
   - /no/tjenester/machine-learning/
 ---
 

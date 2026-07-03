@@ -1,5 +1,5 @@
 ---
-title: "Hållbart Private Cloud i T.Loops Data Energy Center"
+title: "T.Loops Private Cloud"
 section: "Managed Infrastructure"
 language: "sv"
 date: 2024-02-06
@@ -8,12 +8,14 @@ intro: "Integrera Safespring On-Premise Cloud i T.Loops svenska hållbara anläg
 background: ""
 form: ""
 sidebarlinkname: "Läs om Private Cloud"
-sidebarlinkurl: "/tjanster/safespring-on-premise-cloud/"
+sidebarlinkurl: "/tjanster/private-cloud/"
 sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute/"
 socialmedia: ""
 devops: ""
+slug: "tloop"
 aliases:
+  - /tjanster/hallbart-private-cloud-i-t.loops-data-energy-center/
   - /tjanster/tloop/
 ---
 

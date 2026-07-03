@@ -1,5 +1,5 @@
 ---
-title: "Konsulttjänster"
+title: "Consulting"
 language: "sv"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -7,6 +7,7 @@ intro: "Safespring har stor kompetens inom molntjänster och molnapplikationer. 
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
+slug: "consulting"
 aliases:
   - /konsulttjanster/
   - /tjanster/konsulttjanster/

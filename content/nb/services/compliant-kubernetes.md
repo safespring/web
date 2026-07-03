@@ -1,5 +1,5 @@
 ---
-title: "Elastisys Welkin på Safespring Compute"
+title: "Elastisys Welkin"
 cardtitle: "Containerplattform"
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"
@@ -18,7 +18,9 @@ sidebarlinkurl2: "/demo/kubernetes/"
 sidebarwhitepaper: ""
 startpage: "yes"
 language: "nb"
+slug: "welkin"
 aliases:
+  - /tjenester/elastisys-welkin-pa-safespring-compute/
   - /no/tjenester/compliant-kubernetes/
   - /tjenester/compliant-kubernetes/
 ---

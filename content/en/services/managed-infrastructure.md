@@ -1,5 +1,5 @@
 ---
-title: "Safespring On-Premise Cloud"
+title: "Private Cloud"
 language: "en"
 date: 2023-05-10
 draft: false
@@ -9,7 +9,9 @@ form: ""
 socialmedia: "safespring-private-cloud.jpg"
 section: "Private Cloud"
 toc: "On this page"
+slug: "private-cloud"
 aliases:
+  - /services/safespring-on-premise-cloud/
   - /en/services/managed-infrastructure/
 ---
 

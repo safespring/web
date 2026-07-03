@@ -1,5 +1,5 @@
 ---
-title: "Federerad AI med FEDn på Safespring"
+title: "AI & ML"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
 language: "sv"
@@ -23,7 +23,9 @@ sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna 
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 socialmedia: ""
+slug: "ai-ml"
 aliases:
+  - /tjanster/federerad-ai-med-fedn-pa-safespring/
   - /tjanster/machine-learning/
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Svensk OpenStack IaaS til regulerede virksomheder"
+title: "Safespring Compute"
 cardtitle: "Compute"
 cardicon: "fa-solid fa-server"
 cardcolor: "#417DA5"
@@ -20,8 +20,9 @@ section: "Safespring Compute"
 socialmedia: "/safespring-start.jpg"
 megamenu: "yes"
 aliases:
+  - /tjenester/safespring-cloud-compute/
   - /da/tjenester/compute/
-slug: "safespring-cloud-compute"
+slug: "compute"
 ---
 
 {{< icon-block-container >}}

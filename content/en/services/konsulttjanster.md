@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Consulting services"
+title: "Consulting"
 language: "en"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -8,7 +8,9 @@ intro: "Safespring has extensive expertise in cloud services and cloud applicati
 background: ""
 socialmedia: "safespring-konsulttjanster.jpg"
 form: "yes"
+slug: "consulting"
 aliases:
+  - /services/consulting-services/
   - /konsulttjanster/
   - /tjanster/konsulttjanster/
 ---

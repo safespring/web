@@ -1,7 +1,7 @@
 ---
 ai: true
-title: "Bæredygtig privat cloud i T.Loops Data Energy Center"
-slug: "baeredygtig-privat-cloud-i-t-loops-data-energy-center"
+title: "T.Loops Private Cloud"
+slug: "tloop"
 section: "Administreret infrastruktur"
 language: "da"
 date: 2024-02-06
@@ -10,12 +10,13 @@ intro: "Integrer Safespring On-Premise Cloud i T.Loops svenske, bæredygtige fac
 background: ""
 form: ""
 sidebarlinkname: "Læs om Private Cloud"
-sidebarlinkurl: "/tjenester/safespring-lokal-cloud/"
+sidebarlinkurl: "/tjenester/private-cloud/"
 sidebarlinkname2: "Se demo"
 sidebarlinkurl2: "/demo/compute/"
 socialmedia: ""
 devops: ""
 aliases:
+  - /tjenester/baeredygtig-privat-cloud-i-t-loops-data-energy-center/
   - /tjanster/tloop/
 ---
 {{< icon-block-container >}}

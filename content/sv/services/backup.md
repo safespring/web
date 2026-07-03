@@ -1,5 +1,5 @@
 ---
-title: "Backup som tjänst med svensk och europeisk drift"
+title: "Safespring Backup"
 metatitle: "Backup som tjänst i Sverige | Safespring Backup"
 language: "sv"
 documentation: "Backup"
@@ -22,7 +22,9 @@ sidebarimage: "safespring-fredric.webp"
 sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
+slug: "backup"
 aliases:
+  - /tjanster/backup-som-tjanst-med-svensk-och-europeisk-drift/
   - /backup/
   - /safespring-backup/
   - /tjanster/safespring-backup/

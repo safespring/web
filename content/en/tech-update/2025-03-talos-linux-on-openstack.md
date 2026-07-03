@@ -17,7 +17,7 @@ author: "Anders Johansson"
 sidebarlinkname: "Explore Kubernetes Engine"
 sidebarlinkurl: "/containers/"
 sidebarlinkname2: "Explore OpenStack Compute"
-sidebarlinkurl2: "/services/safespring-cloud-compute/"
+sidebarlinkurl2: "/services/compute/"
 TOC: "In this post"
 aliases:
   - /blogg/2025/2025-03-talos-linux-on-openstack/

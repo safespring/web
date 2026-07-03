@@ -1,5 +1,5 @@
 ---
-title: "Safespring Backup: Sikker og skalerbar databackup og gendannelse"
+title: "Safespring Backup"
 language: "da"
 documentation: "Backup"
 cardtitle: "Backup"
@@ -19,7 +19,9 @@ sidebarlinkurl2: "/price/#safespring-backup"
 socialmedia: "safespring-backup.jpg"
 section: "Public Cloud"
 megamenu: "yes"
+slug: "backup"
 aliases:
+  - /tjenester/safespring-backup-sikker-og-skalerbar-databackup-og-gendannelse/
   - /da/tjenester/backup/
 ---
 

@@ -19,7 +19,7 @@ socialmedia: "/safespring-start.jpg"
 toc: "På den här sidan"
 noindex: true
 layout: "redirect"
-redirecturl: "/tjanster/containerplattform/"
+redirecturl: "/tjanster/kubernetes/"
 aliases:
   - /geant/service-catalogue/platform/
 ---

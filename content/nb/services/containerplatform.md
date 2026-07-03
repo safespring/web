@@ -27,8 +27,9 @@ banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
 language: "nb"
 aliases:
+  - /tjenester/containerplattform/
   - /no/tjenester/containerplattform/
-slug: "containerplattform"
+slug: "kubernetes"
 ---
 
 {{< ingress >}}

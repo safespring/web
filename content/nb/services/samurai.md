@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Beskytt bedriften din med NTT Securitys Samurai MDR hos Safespring"
+title: "Samurai MDR"
 language: "nb"
 documentation: "Samurai"
 date: 2023-09-18
@@ -18,7 +18,9 @@ socialmedia: ""
 sidebartext: ""
 devops: ""
 section: "Tjenester"
+slug: "samurai-mdr"
 aliases:
+  - /tjenester/beskytt-bedriften-din-med-ntt-securitys-samurai-mdr-hos-safespring/
   - /tjanster/samurai/
 ---
 ## NTT Securitys cybertrusseldeteksjon og respons for din bedrift, bygget på Safesprings skyplattform

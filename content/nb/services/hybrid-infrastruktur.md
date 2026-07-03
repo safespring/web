@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Hybrid infrastruktur"
+title: "Hybrid Cloud"
 language: "nb"
 date: 2019-01-07T13:58:58+01:00
 draft: false
@@ -12,7 +12,9 @@ sidebarimage: "safespring-fredric.webp"
 sidebartext: "Vil du snakke om tjenesten? Jeg heter Fredric Wallsten. Ta gjerne kontakt med meg hvis du har noen spørsmål."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
+slug: "hybrid-cloud"
 aliases:
+  - /tjenester/hybrid-infrastruktur/
   - /hybrid-cloud/
   - /tjanster/hybrid-cloud/
   - /tjanster/hybrid-infrastruktur/

@@ -16,7 +16,7 @@ TOC: "In this guide"
 sidebarlinkname: "Explore Kubernetes Engine"
 sidebarlinkurl: "/containers/"
 sidebarlinkname2: "Explore OpenStack Compute"
-sidebarlinkurl2: "/services/safespring-cloud-compute/"
+sidebarlinkurl2: "/services/compute/"
 aliases:
   - /blogg/2024/2024-03-cinder-csi-volume-provisioner/
   - /tech-update/2024-03-cinder-csi-volume-provisioner/

@@ -1,5 +1,5 @@
 ---
-title: "Safespring S3: Scalable, and high-performance object storage"
+title: "Safespring S3"
 language: "en"
 documentation: "Storage"
 cardtitle: "Storage"
@@ -19,7 +19,9 @@ sidebarlinkurl2: "/price/#safespring-storage-s3"
 socialmedia: "safespring-storage.jpg"
 section: "Public Cloud"
 megamenu: "yes"
+slug: "s3"
 aliases:
+  - /services/safespring-s3-scalable-and-high-performance-object-storage/
   - /en/services/storage/
 ---
 

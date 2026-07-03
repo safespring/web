@@ -1,5 +1,5 @@
 ---
-title: "Svensk OpenStack IaaS för reglerade verksamheter"
+title: "Safespring Compute"
 metatitle: "OpenStack IaaS i Sverige och Norden | Safespring Compute"
 language: "sv"
 documentation: "Compute"
@@ -23,13 +23,14 @@ sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna 
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 aliases:
+  - /tjanster/safespring-cloud-compute/
   - /compute/
   - /safespring-compute/
   - /tjanster/safespring-compute/
 devops: ""
 section: "Public Cloud"
 megamenu: "yes"
-slug: "safespring-cloud-compute"
+slug: "compute"
 ---
 
 {{< icon-block-container >}}

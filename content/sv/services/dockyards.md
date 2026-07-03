@@ -1,5 +1,5 @@
 ---
-title: "Kör Sudo's Dockyards på Safesprings optimerade servrar"
+title: "Sudo Dockyards"
 language: "sv"
 date: 2023-05-19
 draft: false
@@ -12,7 +12,9 @@ sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/kubernetes/"
 sidebarlinkname2: "Kontakta Safespring"
 sidebarlinkurl2: "/kontakt"
+slug: "dockyards"
 aliases:
+  - /tjanster/kor-sudos-dockyards-pa-safesprings-optimerade-servrar/
   - /tjanster/dockyards/
 ---
 

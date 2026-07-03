@@ -1,6 +1,6 @@
 ---
-title: "Safespring S3: Skalerbar og høyytelses objektlagring"
-slug: "safespring-s3-skalerbar-og-hoyytelses-objektlagring"
+title: "Safespring S3"
+slug: "s3"
 language: "nb"
 documentation: "Storage"
 cardtitle: "Lagring i stor skala"
@@ -21,6 +21,7 @@ socialmedia: "safespring-storage.jpg"
 section: "Public cloud"
 megamenu: "yes"
 aliases:
+  - /tjenester/safespring-s3-skalerbar-og-hoyytelses-objektlagring/
   - /no/storage/
   - /no/safespring-storage/
   - /no/tjenester/storage/

@@ -26,8 +26,9 @@ showthedate: false
 banner: "blue-hover-tech"
 fontawesomebundle: "containerplatform"
 language: "da"
-slug: "containerplatform"
+slug: "kubernetes"
 aliases:
+  - /tjenester/containerplatform/
   - /da/tjenester/containerplatform/
 ---
 

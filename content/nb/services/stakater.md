@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Administrert Kubernetes og OpenShift fra Stakater på Safespring"
+title: "Stakater Kubernetes & OpenShift"
 language: "nb"
 date: 2024-01-01
 draft: false
@@ -17,7 +17,9 @@ socialmedia: ""
 sidebartext: ""
 devops: ""
 section: "Offentlig sky"
+slug: "stakater"
 aliases:
+  - /tjenester/administrert-kubernetes-og-openshift-fra-stakater-pa-safespring/
   - /en/services/stakater/
 ---
 {{< icon-block-container >}}

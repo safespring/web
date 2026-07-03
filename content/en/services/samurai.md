@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Protect your business with NTT Security's Samurai MDR on Safespring"
+title: "Samurai MDR"
 language: "en"
 documentation: "Samurai"
 date: 2023-09-18
@@ -18,7 +18,9 @@ socialmedia: ""
 sidebartext: ""
 devops: ""
 section: "Services"
+slug: "samurai-mdr"
 aliases:
+  - /services/protect-your-business-with-ntt-securitys-samurai-mdr-on-safespring/
   - /tjanster/samurai/
 ---
 ## NTT Security's cyber threat detection and response for your business, built on Safespring's cloud platform

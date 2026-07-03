@@ -17,7 +17,7 @@ author: "Stefan Negru"
 sidebarlinkname: "Explore Kubernetes Engine"
 sidebarlinkurl: "/containers/"
 sidebarlinkname2: "Explore OpenStack Compute"
-sidebarlinkurl2: "/services/safespring-cloud-compute/"
+sidebarlinkurl2: "/services/compute/"
 TOC: "In this post"
 aliases:
   - /tech-update/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/
