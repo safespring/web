@@ -1,5 +1,5 @@
 ---
-title: "AI & ML"
+title: "Maskinlæring og AI med GPU-ressurser"
 slug: "ai-ml"
 section: "Public Cloud"
 language: "nb"

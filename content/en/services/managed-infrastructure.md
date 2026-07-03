@@ -1,5 +1,5 @@
 ---
-title: "Private Cloud"
+title: "Safespring On-Premise Cloud"
 language: "en"
 date: 2023-05-10
 draft: false

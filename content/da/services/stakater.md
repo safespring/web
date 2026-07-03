@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Stakater Kubernetes & OpenShift"
+title: "Administreret Kubernetes og OpenShift af Stakater på Safespring"
 language: "da"
 date: 2024-01-01
 draft: false

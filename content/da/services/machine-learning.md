@@ -1,5 +1,5 @@
 ---
-title: "AI & ML"
+title: "Fødereret AI med FEDn på Safespring"
 slug: "ai-ml"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""

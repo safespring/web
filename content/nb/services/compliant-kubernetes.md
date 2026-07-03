@@ -1,5 +1,5 @@
 ---
-title: "Elastisys Welkin"
+title: "Elastisys Welkin på Safespring Compute"
 cardtitle: "Containerplattform"
 cardicon: "fa-solid fa-container-storage"
 cardcolor: "#3C9BCD"

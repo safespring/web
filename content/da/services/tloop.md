@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "T.Loops Private Cloud"
+title: "Bæredygtig privat cloud i T.Loops Data Energy Center"
 slug: "tloop"
 section: "Administreret infrastruktur"
 language: "da"

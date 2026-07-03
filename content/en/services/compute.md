@@ -1,6 +1,6 @@
 ---
 
-title: "Safespring Compute"
+title: "Swedish OpenStack IaaS for Regulated Organizations"
 language: "en"
 documentation: "Compute"
 cardtitle: "Compute"

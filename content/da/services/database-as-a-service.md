@@ -1,5 +1,5 @@
 ---
-title: "Safespring Database"
+title: "Database som service med høj tilgængelighed"
 slug: "database"
 language: "da"
 cardtitle: "Database service"

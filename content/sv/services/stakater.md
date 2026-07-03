@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Stakater Kubernetes & OpenShift"
+title: "Hanterade Kubernetes- och OpenShift-tjänster från Stakater hos Safespring"
 language: "sv"
 date: 2024-01-01
 draft: false

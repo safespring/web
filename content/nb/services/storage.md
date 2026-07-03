@@ -1,5 +1,5 @@
 ---
-title: "Safespring S3"
+title: "Safespring S3: Skalerbar og høyytelses objektlagring"
 slug: "s3"
 language: "nb"
 documentation: "Storage"

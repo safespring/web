@@ -1,5 +1,5 @@
 ---
-title: "Elastisys Welkin"
+title: "Elastisys Welkin på Safespring Compute"
 language: "da"
 date: "2025-05-23"
 draft: false

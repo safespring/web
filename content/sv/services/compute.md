@@ -1,5 +1,5 @@
 ---
-title: "Safespring Compute"
+title: "Svensk OpenStack IaaS för reglerade verksamheter"
 metatitle: "OpenStack IaaS i Sverige och Norden | Safespring Compute"
 language: "sv"
 documentation: "Compute"

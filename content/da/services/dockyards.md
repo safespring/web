@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Sudo Dockyards"
+title: "Kør Sudo's Dockyards på Safesprings optimerede servere"
 slug: "dockyards"
 language: "da"
 date: 2023-05-19

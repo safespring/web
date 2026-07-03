@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "T.Loops Private Cloud"
+title: "Sustainable Private Cloud at the T.Loops Data Energy Center"
 section: "Managed Infrastructure"
 language: "en"
 date: 2024-02-06

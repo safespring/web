@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Private Cloud"
+title: "Safesprings lokale sky"
 language: "nb"
 date: 2023-05-10
 draft: false

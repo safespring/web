@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Private Cloud"
+title: "Safespring lokal cloud"
 language: "da"
 date: 2023-05-10
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Safespring Database"
+title: "Database as a service is fully-managed, highly-available, open source"
 language: "en"
 cardtitle: "Database"
 cardicon: "fa-solid fa-database"

@@ -1,5 +1,5 @@
 ---
-title: "Samurai MDR"
+title: "Skydda ditt företag med NTT Securitys Samurai MDR på Safespring"
 language: "sv"
 documentation: "Samurai"
 date: 2023-09-18

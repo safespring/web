@@ -1,6 +1,6 @@
 ---
 ai: true
-title: "Sudo Dockyards"
+title: "Run Sudo's Dockyards on Safespring's optimized servers"
 language: "en"
 date: 2023-05-19
 draft: false

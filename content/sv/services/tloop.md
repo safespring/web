@@ -1,5 +1,5 @@
 ---
-title: "T.Loops Private Cloud"
+title: "Hållbart Private Cloud i T.Loops Data Energy Center"
 section: "Managed Infrastructure"
 language: "sv"
 date: 2024-02-06

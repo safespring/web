@@ -1,5 +1,5 @@
 ---
-title: "Safespring Backup"
+title: "Backup som tjänst med svensk och europeisk drift"
 metatitle: "Backup som tjänst i Sverige | Safespring Backup"
 language: "sv"
 documentation: "Backup"

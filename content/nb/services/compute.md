@@ -1,5 +1,5 @@
 ---
-title: "Safespring Compute"
+title: "Svensk OpenStack IaaS for regulerte virksomheter"
 cardtitle: "Compute"
 cardicon: "fa-solid fa-server"
 cardcolor: "#417DA5"

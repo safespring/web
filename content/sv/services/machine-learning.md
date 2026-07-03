@@ -1,5 +1,5 @@
 ---
-title: "AI & ML"
+title: "Federerad AI med FEDn på Safespring"
 toplogo: "safespring_partners_scaleout-systems.svg"
 section: ""
 language: "sv"

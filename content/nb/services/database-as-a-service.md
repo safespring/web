@@ -1,5 +1,5 @@
 ---
-title: "Safespring Database"
+title: "Database som tjeneste med høy tilgjengelighet"
 slug: "database"
 language: "nb"
 cardtitle: "Database-tjeneste"

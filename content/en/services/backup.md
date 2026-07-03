@@ -1,5 +1,5 @@
 ---
-title: "Safespring Backup"
+title: "Safespring Backup: Secure and Scalable Data Backup and Recovery"
 language: "en"
 documentation: "Backup"
 cardtitle: "Backup"

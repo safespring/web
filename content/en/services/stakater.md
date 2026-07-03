@@ -1,5 +1,5 @@
 ---
-title: "Stakater Kubernetes & OpenShift"
+title: "Managed Kubernetes and OpenShift by Stakater on Safespring"
 language: "en"
 date: 2024-01-01
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Safespring S3"
+title: "Safespring S3: Scalable, and high-performance object storage"
 language: "en"
 documentation: "Storage"
 cardtitle: "Storage"

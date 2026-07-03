@@ -1,5 +1,5 @@
 ---
-title: "Safespring Database"
+title: "Databas som tjänst med hög tillgänglighet"
 language: "sv"
 cardtitle: "Databas som tjänst"
 cardicon: "fa-solid fa-database"

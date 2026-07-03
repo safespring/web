@@ -1,5 +1,5 @@
 ---
-title: "Safespring S3"
+title: "S3-kompatibel objektlagring i Sverige och Norden"
 metatitle: "S3 Storage i Sverige och Norden | Safespring Storage"
 language: "sv"
 documentation: "Storage"
