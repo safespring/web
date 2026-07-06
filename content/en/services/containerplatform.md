@@ -28,12 +28,12 @@ language: "En"
 ---
 
 {{< ingress >}}
-Safespring Kubernetes Engine is a Kubernetes service for running containerized applications on Safespring infrastructure, with self-service provisioning and a managed control plane.
+Safespring Kubernetes Engine runs containerized applications on Safespring infrastructure. The service includes self-service provisioning and a managed control plane.
 {{</ ingress >}}
 
-It is designed for organizations that need stronger control over data location, jurisdiction, and operational boundaries, including environments with GDPR, compliance, and digital sovereignty requirements.
+Organizations use the service when data location, jurisdiction, and operational boundaries must be explicit, including environments with GDPR, compliance, and digital sovereignty requirements.
 
-The practical value is that engineering teams get a platform that is ready to use, while the organization keeps control over jurisdiction, security posture, and long-term platform direction without having to own every layer of platform operations internally.
+Engineering teams get a Kubernetes environment without operating the control plane. The organization keeps decisions about jurisdiction, security posture, and platform direction inside its own governance.
 
 {{< icon-block-container >}}
     {{< icon-block icon="fas fa-rocket" text="Deploy anywhere" link="" color="#195F8C">}}
@@ -44,30 +44,31 @@ The practical value is that engineering teams get a platform that is ready to us
     {{< icon-block icon="fas fa-sliders" text="You are in control" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
-## Why the architecture matters
+## Architecture and service boundary
 
-The most important technical advantage is not one isolated feature. It is that the service is shaped as a usable platform boundary from day one. That matters because platform teams rarely struggle with creating a cluster. They struggle with making the cluster consistent, supportable, secure, and ready for production use.
+Safespring Kubernetes Engine sets a service boundary before the first cluster is created. Safespring runs the control plane. Your team creates clusters in the portal and then owns the workloads and application configuration inside the cluster. API-based cluster provisioning is under development.
 
 {{< custom-card-logo image="/img/graphics/safespring-cloud.webp" logo="/img/graphics/safespring-byline-blue.svg" logoAlt="Safespring logo" cardtitle="What this means in practice" >}}
-The architecture is designed to give you:
+The service includes:
 
-- a self-service model through portal and API instead of manual cluster administration
-- a managed control plane so your team does not have to own every control-plane concern internally
-- an immutable operating system foundation with Talos Linux, which reduces operational drift and attack surface
-- a modern network and traffic model based on Cilium, Gateway API, and Traefik support
-- a clearer responsibility split between what Safespring operates and what your own team still owns
+- cluster creation through the Safespring portal
+- API-based cluster provisioning, which is under development
+- a managed control plane
+- Talos Linux as the node operating system
+- Cilium, Gateway API, and Traefik support for networking and traffic handling
+- a documented split between Safespring's platform responsibility and your team's application responsibility
 
 {{< /custom-card-logo >}}
 
 {{< distance >}}
 
-## Technical advantages, explained simply
+## Technical characteristics
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-rocket" text="Provisioning and control are already defined" description="Clusters are created through portal and API, and the control plane is managed as part of the service. That shortens time to production and reduces the amount of platform assembly your own team has to repeat for every new environment." >}}
-{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="The foundation is designed for lower operational risk" description="Talos Linux provides an immutable, Kubernetes-focused node foundation, while OIDC-based access, modern networking, and a clear service boundary make the platform easier to govern and easier to reason about." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="The service supports real workloads, not just cluster creation" description="Persistent volumes through Cinder CSI, traffic management through Cilium Gateway API and Traefik support, and GPU-capable worker nodes mean the platform can support production applications with different runtime needs." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-rocket" text="Create clusters in the portal" description="Teams create clusters in the Safespring portal. API-based cluster provisioning is under development. Safespring operates the control plane as part of the service. This reduces the internal platform work needed before a Kubernetes environment can be used." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="The foundation reduces operational drift" description="Talos Linux provides an immutable, Kubernetes-focused node base. OIDC-based access, Cilium networking, and a defined service boundary make the platform easier to review and operate." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="Workloads can use storage, traffic handling, and GPU nodes" description="Cinder CSI provides persistent volumes. Cilium Gateway API and Traefik support traffic handling. GPU-capable worker nodes are available for workloads that need them." >}}
 
-This is also where digital sovereignty becomes practical rather than abstract. The platform is delivered from Safespring data centers in Sweden and Norway, powered by 100% renewable energy, and built for organizations that want stronger control over jurisdiction, data location, and long-term independence from hyperscaler lock-in.
+The service is delivered from Safespring data centers in Sweden and Norway and runs on 100% renewable energy. It is for organizations that need control over jurisdiction, data location, and supplier dependency.
 
 ## Go deeper before technical evaluation
 
