@@ -11,7 +11,7 @@ socialmedia: "safespring_social_01.jpg"
 sidebarlinkname: "Watch the video series (Swedish)"
 sidebarlinkurl: "/webinar/kubernetes-15-principles/"
 sidebarlinkname2: "Watch demo"
-sidebarlinkurl2: "/demo/compute/"
+sidebarlinkurl2: "/demo/kubernetes/"
 sidebarimage: "saas_elastisys.svg"
 sidebartext: "Elastisys Welkin makes it easy to create clusters with high regulatory compliance, while we ensure your infrastructure is optimised for your specific needs."
 ---

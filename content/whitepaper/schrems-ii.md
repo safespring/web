@@ -204,7 +204,7 @@ Detta white paper är skrivet av Amelia Andersdotter. Safespring erbjuder svensk
 [^19]: Justitiedepartementets instruktion inför sammanträde i kommittén för skydd av enskilda med avseende på behandling av personuppgifter av 2016–06–20.
 [^20]: Statskontoret 2020:14, Myndighetsanalys av Datainspektionen.
 [^21]: Datainspektionen DI-2019-841, 15 mars 2019.
-[^22]: [Kammarkollegiet, Statens inköpscentral, ramavtal på IT- och telekomområdet](https://www.avropa.se/ramavtal/ramavtalsomraden/it-och-telekom/)
+[^22]: [Kammarkollegiet, Statens inköpscentral, ramavtal](https://www.avropa.se/ramavtal/)
 [^23]: Se ovan fotnot 6.
 [^24]: [Open Stack Foundation](https://osf.dev)
 [^25]: [Cloud Native Computing Foundation (Linux Foundation)](https://cncf.io)

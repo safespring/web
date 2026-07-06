@@ -38,7 +38,7 @@ Two of our course packages is aimed for staff with overall technical overview bu
   <p>CEO, CTO, IT Managers, Development Managers, Technical Managers, Line managers, top-level managers, etc.</p>
   <h3>Duration</h3>
   <p>1 day.
-  <a id="button" href='/tjanster/utbildning/cloud-strategy-for-top-level-managers/'>Learn more</a></p>
+  <a id="button" href='/tjanster/utbildning/introduction-to-infrastructure-as-a-service-for-managers/'>Learn more</a></p>
 </div>
 </div>
 

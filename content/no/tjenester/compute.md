@@ -11,7 +11,7 @@ cardintro: "Nordisk IaaS med robust serverkapasitet, kontroll og høy fleksibili
 background: "safespring-compute-background.svg"
 form: "no"
 documentation: "Compute"
-sidebarlinkname: "Bestill demo"
+sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Pris för Compute"
 sidebarlinkurl2: "/no/pris/#safespring-compute"
@@ -45,9 +45,9 @@ Safespring Compute tilbyr en skybasert infrastrukturtjeneste som gir deg fleksib
 1. Fleksible lagringsalternativer: Safespring tilbyr to ulike [lagringstjenester](/no/tjenester/storage/) – slik at du kan balansere dine behov mellom beste ytelse og laveste kostnad.
 1. Støtte for akademiske sektorer: Safespring Compute er en pålitelig partner for universiteter, høyskoler og forskningsmiljøer i Sverige og Norge, og tilbyr tjenester som er spesielt utviklet for å møte kravene til forsknings- og utdannelsessektoren.
 
-Safespring Compute kan forbedre din organisasjons IT-infrastruktur gjennom sin skybaserte løsning. Besøk vår nettside og bestill en demo i dag.
+Safespring Compute kan forbedre din organisasjons IT-infrastruktur gjennom sin skybaserte løsning. Se demoen eller kontakt oss hvis du vil vite mer.
 
-{{< localbutton text="Kom i gang" link="/no/demo/" >}}
+{{< localbutton text="Se demo" link="/demo/compute/" >}}
 {{< distance >}}
 
 Oppdag fordelene ved Safespring Compute og la oss hjelpe deg med å skape en fleksibel, sikker og kostnadseffektiv IT-løsning for din organisasjon. Invester i en norsk skytjeneste som gir deg den beste balansen mellom ytelse og sikkerhet.

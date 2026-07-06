@@ -59,5 +59,3 @@ Regeringen skriver i Nationell strategi för cybersäkerhet 2025-2029 att ”det
 Nästa gång du stöter på en diskussion om den så kallade ”molnfrågan”, börja då med att försöka förklara vilka domäner som de olika parterna inkluderar i sina resonemang. På detta sätt kanske vi gemensamt kan lyfta diskussionen till samhällsnivå för att Sverige snabbast möjligt ska kunna erhålla en rimlig grad av digital suveränitet samt att diskussionerna blir mer meningsfulla och intellektuellt hederliga.
 
 
-
-

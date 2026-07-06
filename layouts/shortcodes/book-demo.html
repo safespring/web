@@ -1,1 +1,13 @@
-<iframe src="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" width="600" height="400"></iframe>
+{{ partial "contact-form.html" (dict
+  "firstName" "First name"
+  "lastName" "Last name"
+  "phone" "Phone"
+  "email" "Email"
+  "organization" "Organisation"
+  "termsPrefix" "I accept"
+  "termsText" "the personal data terms"
+  "termsUrl" "/dokument/personuppgiftshantering-en/"
+  "submit" "Contact me"
+  "acceptAlert" "You must accept our terms and conditions"
+  "successUrl" "/contact-thanks/"
+) }}

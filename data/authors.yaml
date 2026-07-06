@@ -25,8 +25,8 @@
 
 - name: "Fredric Wallsten"
   title: "CCO, Safespring"
-  image_happy: "fredric-1.webp"
-  image_firm: "fredric-2.webp"
+  image_happy: "fredric.webp"
+  image_firm: "fredric.webp"
 
 - name: "Niklas Hagman"
   title: "OpenShift Platform Specialist"
@@ -59,4 +59,3 @@
 - name: "Ahmet Balci"
   title: "Platform Engineer"
   image_happy: "ahmet.webp"
-  

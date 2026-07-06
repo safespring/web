@@ -3,7 +3,7 @@ title: "Hello, glad you want to learn more about Safespring"
 language: "En"
 date: 2019-01-07T13:58:58+01:00
 draft: false
-section: "Book demo"
+section: "Watch demo"
 intro: "Safespring is the Swedish public cloud platform that complies with European data protection laws. We are pleased to offer a secure and reliable platform for our customers and their data."
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
@@ -32,7 +32,7 @@ Safespring is a Swedish public cloud platform and an alternative that complies w
 	{{< icon-block icon="fa-kit fa-safespring-icon" text="Get to know the company" link="/en/about/" color="#3C9BCD">}}
 	{{< icon-block icon="fa-solid fa-lightbulb-on" text="Read Solution Briefs" link="/solution-brief/" color="#3C9BCD">}}
 	{{< icon-block icon="fa-solid fa-gavel" text="Read about Schrems II" link="/en/whitepaper/schrems2/" color="#FA690F">}}
-	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/services/container-platform/" color="#32cd32">}}
+	{{< icon-block icon="fa-solid fa-code" text="Safespring & Kubernetes" link="/en/services/containerplatform/" color="#32cd32">}}
 {{< /icon-block-container >}}
 
 {{< horisontal-card image="/img/card/safespring-art-logo.svg" cardtitle="Presentation" link="/publications/safespring-introduction.pdf" linktext="Open presentation" text="Take a closer look at Safespring and our Swedish cloud platform focusing on compliance and management of sensitive data and GDPR." >}}

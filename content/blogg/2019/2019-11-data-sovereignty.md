@@ -49,7 +49,7 @@ aliases:
 
 <!-- <div class="label-green">New</div> -->
 ### Molntjänster i samhällsbärande verksamhet – risker, lämplighet och vägen framåt
-**2019-11-22** / Försäkringskassan / [Link to white paper](https://www.forsakringskassan.se/wps/wcm/connect/30cc57bd-b5cd-4e04-94cd-1f7a02a9ae1a/vitbok.pdf?MOD=AJPERES&CVID=)
+**2019-11-22** / Försäkringskassan / White paper
 
 - Den 22 november skriver Försäkringskassans generaldirektör Nils Öberg på [DN-debatt](https://www.dn.se/debatt/sveriges-digitala-suveranitet-hotas-av-it-tjanster-i-molnet) om publika molntjänster i offentlig verksamhet.
 - "Den svenska stats- och kommunala förvaltningen måste ha suverän kontroll över sin information", säger Nils Öberg
@@ -76,7 +76,7 @@ aliases:
 - “Data will be the most important raw material of the future,” said German Economy Minister Peter Altmaier in a statement this week. “The European economy urgently needs an infrastructure that ensures data sovereignty.”
 
 ### What’s driving Europe’s new aggressive stance on tech
-**2019-10-29** / Politico / [Link to article](https://www.politico.eu/article/europe-digital-technological-sovereignty-facebook-google-amazon-ursula-von-der-leyen/)
+**2019-10-29** / Politico / Article
 
 - President Ursula von der Leyen is determined to bolster the EU’s ability to compete head on with the United States and China on all things digital.
 - That strategy includes taking a tougher stance on foreigners scooping up European tech firms, using government contracts as a “strategic” tool to allow local rivals to compete with in-ternational firms like Amazon, and super-charging the bloc’s industrial policy to fuel innova-tion in fields such as artificial intelligence and quantum computing.
@@ -90,7 +90,7 @@ aliases:
 - Paris is concerned a 2018 U.S. law called the Cloud Act lets any U.S. agency access European corporate data that is stored on the data centres of U.S. companies without telling them.
 
 ### Germany’s plan to control its own data
-**2019-09-12** / Politico / [Link to article](https://www.politico.eu/article/germanys-plan-to-control-its-own-data-digital-infrastructure/)
+**2019-09-12** / Politico / Article
 
 - Berlin aspires to become a world leader in industrial or business-to-business data technology, a goal that senior industrialists argue will be difficult to achieve if foreign powers control the storage of sensitive data and can use their supremacy to pressure Germany.
 - The strategy, which includes a project to develop a European cloud-hosting service named Gaia-X, aims to address growing alarm over the reliance of large firms, government services and even police forces on hosts such as Amazon to store their data.
@@ -148,7 +148,7 @@ aliases:
 - Kunskaps- och programvaruföretaget Björn Lundén Information har gjort en enkätund-ersökning där närmare tusen små och medelstora företag svarat på hur de upplever och har agerat till följd av den nya dataskyddsförordningen GDPR.
 
 ### Svenska myndigheter sprider känsliga uppgifter till utlandet
-**2018-11-02** / Göteborgs-Posten / [Link to article](https://www.gp.se/ledare/cwejman-svenska-myndigheter-sprider-k%C3%A4nsliga-uppgifter-till-utlandet-1.10321735)
+**2018-11-02** / Göteborgs-Posten / Article
 
 - LEDARE Svenska myndigheter fortsätter att upphandla molntjänster där känslig data riskerar att hamna i fel händer. Även Göteborgs stad har ingått i avtal där känslig data om svenska medborgare kan han hamna på villovägar.
 
@@ -209,7 +209,7 @@ aliases:
 - The CLOUD Act allows US law enforcement authorities to require the disclosure of data by service providers in the US, regardless of where the data is stored. The EDPB and EDPS em-phasize that a comprehensive EU-US agreement regarding cross-border access to electronic evidence, containing strong procedural and substantial safeguards for fundamental rights, appears the most appropriate instrument to ensure the necessary level of protection for EU data subjects and legal certainty for businesses.
 
 ### eSam ser risker med molntjänster i offentlig sektor
-**2018-11-12** / eSam / [Link to article](http://www.esamverka.se/nyheter/nyheter/2018-11-12-esam-ser-risker-med-molntjanster-i-offentlig-sektor.html)
+**2018-11-12** / eSam / Article
 
 - En gruppering inom eSam har sedan våren 2018 arbetat med frågan om hur det offentliga kan använda sig av molntjänster utifrån säkerhet- och sekretesslagstiftning och vilka rekom-mendationer som eSam kan ge sina medlemmar och andra aktörer i offentlig sektor.
 

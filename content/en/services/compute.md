@@ -68,7 +68,7 @@ At Safespring, we are proud to offer these advanced VPN capabilities integrated 
 
 {{< distance >}}
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Scaleout Builds an AI Platform" link="/services/case/scaleout/" linktext="Read Use Case" text="“Since machine learning and AI initiatives of this kind require handling large amounts of sensitive data, it is important for companies to have control and rely on a trusted provider with high data security and integrity.”" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Scaleout Builds an AI Platform" link="/en/services/case/scaleout/" linktext="Read Use Case" text="“Since machine learning and AI initiatives of this kind require handling large amounts of sensitive data, it is important for companies to have control and rely on a trusted provider with high data security and integrity.”" >}}
 
 {{< distance >}}
 

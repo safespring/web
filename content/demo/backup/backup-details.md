@@ -11,8 +11,8 @@ card: "/img/webinar/thumbnails/demo-backup-2.webp"
 eventbild: ""
 socialmediabild: ""
 intro: 'En teknisk djupdykning i Safespring Backup med fokus på automatiserade återställningstester, API-integration och modern infrastruktur.'
-sidebarlinkurl: "https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form"
-sidebarlinkname: "Boka videosamtal"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname: "Kontakta oss"
 sidebarlinkicon: "fa fa-external-link"
 sidebarlinkurl2: ""
 sidebarlinkname2: ""
@@ -49,10 +49,10 @@ I denna tekniska djupdykning granskar vi Safespring Backup med fokus på hur aut
 
 I videon förklarar Gabriel och Christian detaljerat hur Safespring Backup hanterar off-site backuper, genomför automatiserade tester för att verifiera datans läsbarhet samt optimerar återställningsprocessen. De demonstrerar hur API-styrd integration möjliggör skalbarhet, kostnadsrapportering och hantering av både traditionella servrar och moderna containerlösningar. 
 
-### Boka möte med Gabriel
-Boka in ett videomöte och ställ dina frågor direkt till Gabriel! Välj en tid via länken nedan eller skicka ett mail till hello@safespring.com
+### Kontakta oss
+Skicka dina frågor via formuläret nedan eller maila hello@safespring.com
 
-{{< localbutton text="Boka videosamtal" link="https://next.safespring.com/index.php/apps/appointments/embed/VOZl8W1TrMMEFQ%3D%3D/form" >}}
+{{< localbutton text="Kontakta oss" link="/kontakt/#contact-form" >}}
 
 {{< distance >}}
 

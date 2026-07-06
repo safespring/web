@@ -16,6 +16,13 @@ pageimage: ""
 
 {{< distance >}}
 
+### Skriv till oss
+Fyll i formuläret om du vill att vi återkommer till dig. Du kan också alltid maila eller ringa direkt.
+
+{{< contact-form >}}
+
+{{< distance >}}
+
 ### Våra medarbetare
 Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte att ta kontakt om du har frågor eller behöver hjälp med något specifikt.
 

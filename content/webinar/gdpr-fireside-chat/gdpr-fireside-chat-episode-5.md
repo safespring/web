@@ -54,10 +54,10 @@ Vad har hänt under första kvartalet 2022. Var med och diskutera, ställ frågo
 - [Safesprings remissvar till It-driftsutredningen](/blogg/remissvar-it-driftsutredningen/)
 - [Trans Atlantic Data Privacy Framework](https://next.safespring.com/s/L5ssXCHtGAjKFYs)
 - [EDPB:s förtydligande om Trans Atlantic Data Privacy Framework](https://edpb.europa.eu/our-work-tools/our-documents/statements/statement-012022-announcement-agreement-principle-new-trans_en)
-- [Stockholm stad ansluter sig till eSam](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)
+- Stockholm stad ansluter sig till eSam
 - [Stockholms Stad lämnar Microsoft](/publications/stockholm-stad_underlag-for-inriktningsbeslut.pdf)
 - [Stockholms region lämnar Microsoft](/publications/nulagesbeskrivning-ms-teams-ur-ett-integritetsskyddsperspektiv.pdf)
-- [Lista på länder med adekvat skyddsnivå (IMY)](https://www.esamverka.se/aktuellt/nyheter/nyheter/2022-02-25-stockholms-stad-ansluter-till-arbetet-med-digital-samarbetsplattform.html#)
+- [Lista på länder med adekvat skyddsnivå (EU-kommissionen)](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en)
 
 ### Dagens ämnen:
 - Avtal mellan EU och USA?

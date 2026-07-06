@@ -1,12 +1,13 @@
-{{ partial "schedule-demo-form.html" (dict
+{{ partial "contact-form.html" (dict
 	"firstName" "Fornavn"
 	"lastName" "Etternavn"
 	"phone" "Telefon"
-	"date" "Dato"
+	"email" "E-post"
 	"organization" "Organisasjon"
 	"termsPrefix" "Jeg aksepterer"
-	"termsText" "vilkårene"
+	"termsText" "behandlingen av personopplysninger"
 	"termsUrl" "/dokument/personuppgiftshantering-no/"
-	"submit" "Bestill demo"
+	"submit" "Bli kontaktet"
 	"acceptAlert" "Du må akseptere vilkårene"
+	"successUrl" "/contact-thanks/"
 ) }}

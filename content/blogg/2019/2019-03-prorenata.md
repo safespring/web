@@ -17,7 +17,7 @@ aliases:
 
 Efter tydliggöranden från bland annat [staten](/blogg/webbaserat-kontorsstod/), och [upphandlingar](https://www.e-avrop.com/norrkoping/e-Upphandling/Announcement.aspx?id=40679) med krav på lösningar som följer svensk och europeisk lagstiftning valde ProReNata att byta till en Svensk tjänsteleverantör.
 
-Många känner säkert till [eSams](http://www.esamverka.se/download/18.290a0225166bfafb714c0c7a/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf) utlåtande om hur CLOUD Act ökar risken att data i amerikanska molntjänster röjs. Detta var något som ProReNata tog till sig och valde att agera på.
+Många känner säkert till eSams utlåtande om hur CLOUD Act ökar risken att data i amerikanska molntjänster röjs. Detta var något som ProReNata tog till sig och valde att agera på.
 
 >"Även om vi menar att vi lagrar data i full enlighet med svensk lag, utan röjd sekretess så följer vi noga den diskussion som förs bland våra kunder kring CLOUD Act och lagrandet av data och vi har förstått att våra kunder skulle föredra att data lagras i Sverige hos en svensk leverantör" — Jens Alm, VD ProReNata
 

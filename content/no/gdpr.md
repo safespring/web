@@ -8,8 +8,8 @@ intro: "Her gir vi en grundig oversikt over hvordan vår svenske offentlige skyp
 background: "safespring-blue-fade2.svg"
 darkmode: "off"
 socialmedia: ""
-sidebarlinkname: "Bestill demo"
-sidebarlinkurl: "/no/demo"
+sidebarlinkname: "Se demo"
+sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakt Safespring"
 sidebarlinkurl2: "/no/kontakt"
 saas: ""
@@ -22,8 +22,8 @@ TOC: "På denne siden"
     {{< icon-block icon="fa-solid fa-lock" text="Interne databeskyttelses­tiltak" link="#interne-databeskyttelsestiltak" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="GDPR Webcast-serie" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-database" text="Om våre datasentre" link="/om-safespring/datasenter/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-shield" text="Behandling av person­opplysninger" link="/dokumenter/personopplysningsbehandling/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-database" text="Om våre datasentre" link="/no/datasenter/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-shield" text="Behandling av person­opplysninger" link="/dokument/personuppgiftshantering-no/" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 
@@ -137,7 +137,7 @@ Sentral blokklagring for økt redundans: Som en del av vår tjeneste tilbyr vi s
 
 
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Føderert maskinlæring" link="/tjenester/case/scaleout/" linktext="Les Use Case" text="“Det er verdi i å ha kritisk infrastruktur plassert i Sverige hvor vi ikke er avhengige av andre lands lovgivning...“ – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Føderert maskinlæring" link="/no/tjenester/case/scaleout/" linktext="Les Use Case" text="“Det er verdi i å ha kritisk infrastruktur plassert i Sverige hvor vi ikke er avhengige av andre lands lovgivning...“ – Ebba Kreamer, Scaleout" >}}
 
 
 

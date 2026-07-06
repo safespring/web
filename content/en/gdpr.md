@@ -22,8 +22,8 @@ TOC: "On this page"
     {{< icon-block icon="fa-solid fa-lock" text="Internal Data Protection" link="#internal-data-protection-measures" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="GDPR Webcast Series" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-database" text="About Our Data Centers" link="/about-safespring/datacenter/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-shield" text="Personal Data Processing" link="/documents/personal-data-processing/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-database" text="About Our Data Centers" link="/en/data-centers/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-shield" text="Personal Data Processing" link="/dokument/personuppgiftshantering-en/" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 
@@ -134,7 +134,7 @@ Central block storage for increased redundancy: As part of our service, we offer
 
 
 
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federated Machine Learning" link="/services/case/scaleout/" linktext="Read Use Case" text="“There is value in having critical infrastructure located in Sweden where we are not dependent on other countries' legislation...“ – Ebba Kreamer, Scaleout" >}}
+{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Federated Machine Learning" link="/en/services/case/scaleout/" linktext="Read Use Case" text="“There is value in having critical infrastructure located in Sweden where we are not dependent on other countries' legislation...“ – Ebba Kreamer, Scaleout" >}}
 
 
 

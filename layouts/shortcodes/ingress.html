@@ -1,1 +1,3 @@
-<div class="ingress"><p>{{ .Inner }}</p></div>
+{{ $inner := trim .Inner " \n\r\t" }}
+{{ $content := $inner | $.Page.RenderString (dict "display" "block") }}
+<div class="ingress">{{- $content -}}</div>

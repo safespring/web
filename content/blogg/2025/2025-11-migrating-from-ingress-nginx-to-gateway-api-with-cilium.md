@@ -16,8 +16,8 @@ author: "Anders Johansson"
 TOC: "In this post"
 sidebarlinkurl: "/containers"
 sidebarlinkname: "Explore Kubernetes Engine"
-sidebarlinkurl2: "/containers#get-started"
-sidebarlinkname2: "Book demo"
+sidebarlinkurl2: "/demo/kubernetes/"
+sidebarlinkname2: "Watch demo"
 ---
 
 ## TL;DR
@@ -343,11 +343,11 @@ The shared gateway approach shows improved performance by:
 
 ## Links
 
-[Ingress Nginx Retirement](https://www.kubernetes.dev/blog/2025/11/1/ingress-nginx-retirement/)
+[Ingress Nginx Retirement](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/)
 
 [Gateway API](https://gateway-api.sigs.k8s.io)
 
-[Cilium Gateway](https://docs.cilium.io/en/stable/network/servicemesh/gateway-api/gateway-api/#gateway-api-support)
+[Cilium Gateway](https://github.com/cilium/cilium/blob/main/Documentation/network/servicemesh/gateway-api/gateway-api.rst)
 
 
 {{< horisontal-card
