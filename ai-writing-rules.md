@@ -133,6 +133,86 @@ Write like a careful editor, not like a chatbot. Prefer specific, verifiable fac
 31. Do not over-format comments.
    - Avoid bold-heavy lists, title-case subheadings, emoji, subject-line text, and canned closing statements.
 
+## Additional Style Rules
+
+32. Prefer concrete sequences over structured explanations.
+   - When describing events, write what happens in order instead of grouping information into themed sections.
+   - Let the chronology carry the explanation where possible.
+
+33. Avoid artificial symmetry.
+   - Do not force every section or paragraph to have similar length or structure.
+   - Allow some sections to be much shorter or longer when the evidence requires it.
+
+34. Do not end with a summary unless the source does.
+   - End when the relevant facts have been presented.
+   - Avoid concluding paragraphs that restate or elevate what was already said.
+
+35. Minimize advisory language in factual descriptions.
+   - When the task is to describe a process or event, describe what typically happens before explaining what someone should do.
+   - Separate facts from recommendations.
+
+36. Prefer specific actions over abstract descriptions.
+   - Replace phrases such as "the process begins", "the focus shifts", or "the main thing is" with the concrete actions that occur.
+
+37. Remove unnecessary qualifiers.
+   - Use words such as "normally", "typically", "often", and "generally" only when they communicate genuine uncertainty or variation.
+   - Do not repeat them throughout a text.
+
+38. Do not interpret the importance of facts.
+   - Describe events without stating what is "most significant", "the real change", or "what matters most" unless a reliable source explicitly makes that comparison.
+
+39. Vary sentence rhythm naturally.
+   - Mix short and long sentences where appropriate.
+   - Do not maintain a mechanically consistent sentence length across a text.
+
+40. Prefer observation over narration.
+   - Write as if documenting what an informed observer would see happen.
+   - Avoid sounding like a guide, lecturer, or explainer unless that format is requested.
+
+41. Avoid transition words unless they improve clarity.
+   - Do not insert words such as "therefore", "meanwhile", "however", "overall", or "finally" simply to connect paragraphs.
+   - If two paragraphs already follow logically, leave them unconnected.
+
+42. Trust the reader.
+   - State the facts and stop.
+   - Do not add explanatory or reflective sentences simply to ensure the reader understands the point.
+
+43. Do not treat style markers as proof of AI use.
+   - Do not infer that a text is AI-generated from punctuation, sentence rhythm, vocabulary, or formatting alone.
+   - Use style markers as a prompt for closer review, not as evidence.
+
+44. Do not launder claims through named sources.
+   - Do not attach a claim to a source unless the source says that specific thing.
+   - Do not cite search snippets, summaries, abstracts, or AI-generated source descriptions as if they were the source text.
+
+45. Preserve local language and register.
+   - Do not smooth Swedish, regional, technical, or domain-specific wording into generic Anglo-American business prose.
+   - Keep established terminology, naming, and institutional phrasing unless it is wrong or unclear.
+
+46. Do not fake human imperfection.
+   - Do not add casual fragments, contractions, typos, slang, or irregular punctuation simply to make text seem less AI-generated.
+   - Make the text accurate and natural, not artificially flawed.
+
+47. Avoid SEO-shaped filler.
+   - Do not repeat keywords, service names, or search phrases where a human editor would use a pronoun or omit the phrase.
+   - Do not add explanatory paragraphs only to satisfy a presumed content template.
+
+48. Keep provenance visible during editing.
+   - Preserve which facts came from supplied material, which came from verified external sources, and which are editorial judgment.
+   - Do not blend source text, interpretation, and recommendation into one unsupported paragraph.
+
+49. Do not over-normalize source material.
+   - Do not turn uneven, specific source material into balanced sections, equal-length paragraphs, or neat category lists.
+   - Preserve asymmetry when the evidence is asymmetrical.
+
+50. Use dates when currency matters.
+   - Do not write "current", "latest", "recent", or "now" unless the date and source have been checked.
+   - Prefer exact dates when a claim may become stale.
+
+51. Do not replace one AI tell with another.
+   - Avoid mechanical removal of flagged words if the result becomes equally formulaic.
+   - Rewrite from the evidence instead of swapping vocabulary.
+
 ## Final Quality Check
 
 Before publishing AI-written text, verify:

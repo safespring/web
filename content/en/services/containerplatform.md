@@ -48,7 +48,7 @@ The practical value is that engineering teams get a platform that is ready to us
 
 The most important technical advantage is not one isolated feature. It is that the service is shaped as a usable platform boundary from day one. That matters because platform teams rarely struggle with creating a cluster. They struggle with making the cluster consistent, supportable, secure, and ready for production use.
 
-{{% custom-card image="/img/graphics/safespring-image.svg" cardtitle="What this means in practice" %}}
+{{< custom-card-logo image="/img/graphics/safespring-cloud.webp" logo="/img/graphics/safespring-byline-blue.svg" logoAlt="Safespring logo" cardtitle="What this means in practice" >}}
 The architecture is designed to give you:
 
 - a self-service model through portal and API instead of manual cluster administration
@@ -56,7 +56,8 @@ The architecture is designed to give you:
 - an immutable operating system foundation with Talos Linux, which reduces operational drift and attack surface
 - a modern network and traffic model based on Cilium, Gateway API, and Traefik support
 - a clearer responsibility split between what Safespring operates and what your own team still owns
-{{% /custom-card %}}
+
+{{< /custom-card-logo >}}
 
 {{< distance >}}
 
@@ -68,17 +69,61 @@ The architecture is designed to give you:
 
 This is also where digital sovereignty becomes practical rather than abstract. The platform is delivered from Safespring data centers in Sweden and Norway, powered by 100% renewable energy, and built for organizations that want stronger control over jurisdiction, data location, and long-term independence from hyperscaler lock-in.
 
-## Go deeper when you need the detail
+## Go deeper before technical evaluation
 
-If you want the technical detail behind the service, these are the most useful next reads:
+When you want to validate architecture, responsibility boundaries, and the operating model, these are the most useful next steps.
 
-- [What you get on day one](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one) for the documented platform defaults
-- [The service boundary in practice](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice) for the responsibility split
-- [Getting started in the official docs](https://docs.safespring.com/kubernetes/getting-started/) for provisioning, control plane layouts, and supported components
-- [Traffic management](https://docs.safespring.com/kubernetes/manage-traffic/) for Gateway API and Traefik-related traffic patterns
-- [Portal overview](https://docs.safespring.com/kubernetes/portal-overview/) for the self-service workflow and cluster access
-- [Persistent volumes](https://docs.safespring.com/kubernetes/persistent-volumes/) for storage behavior and classes
-- [Logging and monitoring](https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/) for the current observability boundary
+{{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
+  {{< manual-document-row
+    title="What you get on day one"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one"
+    icon="fa-solid fa-list-check"
+    label="Blog"
+    description="The documented platform defaults from the start."
+  >}}
+  {{< manual-document-row
+    title="The service boundary in practice"
+    href="/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice"
+    icon="fa-solid fa-people-arrows"
+    label="Blog"
+    description="How responsibilities and operational boundaries are split between Safespring and your team."
+  >}}
+  {{< manual-document-row
+    title="Getting started in the official docs"
+    href="https://docs.safespring.com/kubernetes/getting-started/"
+    icon="fa-solid fa-book-open"
+    label="Docs"
+    description="Provisioning, control-plane layouts, and component support."
+  >}}
+  {{< manual-document-row
+    title="Portal overview"
+    href="https://docs.safespring.com/kubernetes/portal-overview/"
+    icon="fa-solid fa-table-columns"
+    label="Guide"
+    description="The self-service flow, cluster overview, and how access works in the portal."
+  >}}
+  {{< manual-document-row
+    title="Persistent volumes"
+    href="https://docs.safespring.com/kubernetes/persistent-volumes/"
+    icon="fa-solid fa-hard-drive"
+    label="Guide"
+    description="Storage behavior, volume types, and available classes."
+  >}}
+  {{< manual-document-row
+    title="Logging and monitoring"
+    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    icon="fa-solid fa-chart-line"
+    label="Guide"
+    description="The current observability boundary for logs, metrics, and follow-up."
+  >}}
+  {{< manual-document-row
+    title="Traffic management"
+    href="https://docs.safespring.com/kubernetes/manage-traffic/"
+    icon="fa-solid fa-route"
+    label="Guide"
+    description="Gateway API, Traefik, and how traffic flows are handled in the platform."
+  >}}
+{{< /manual-document-table >}}
 
 {{< distance >}}
 
