@@ -1,6 +1,5 @@
 ---
 title: "Safespring Cloud Platform for Research and Education"
-cardtitle: "Safespring for Reserach and Education"
 card: "safespring_card_11.svg"
 date: 2023-04-27
 draft: false
