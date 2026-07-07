@@ -1,6 +1,5 @@
 ---
 title: "Safesprings skytjenester for forskning og utdanning"
-cardtitle: "Safespring for Reserach and Education"
 card: "safespring_card_11.svg"
 date: 2025-01-27
 draft: false

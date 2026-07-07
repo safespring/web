@@ -7,7 +7,7 @@ draft: false
 tags: ""
 showthedate: false
 pageimage: ""
-intro: "Tillsammans skapar vi en säkrare, och mer kostnadseffektiv digital infrastruktur."
+intro: "Tillsammans skapar vi en säkrare och mer kostnadseffektiv digital infrastruktur."
 toc: "På denna sida"
 nosidebar: ""
 ---
@@ -31,20 +31,20 @@ Bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safe
 
 {{< distance >}}
 
-Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till längre kostnad slipper du investeria i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
+Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till lägre kostnad slipper du investera i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
 
-I priset ingår hög säkerhet såväl fysisk, logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäsningsportal där du kan managera dina instanser efter behov.
+I priset ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får även 24/7-support och tillgång till vår självbetjäningsportal där du kan hantera dina instanser efter behov.
 
 ### Ingen trafikkostnad
 
-Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller Egress cost som det också kallas är en vanligt inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om Egress och Ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
+Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller egress cost som det också kallas, är en vanlig inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om egress och ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
 
 {{< distance >}}
 
 ## Safespring Kubernetes Engine
 
 {{< ingress >}}
-Safespring Kubernetes Engine ger en managerad kontrollplan för Kubernetes på Safesprings infrastruktur.
+Safespring Kubernetes Engine ger ett managerat kontrollplan för Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
 
 | Produkt ID            | Beskrivning                                      |    Per månad |
@@ -62,7 +62,7 @@ Flavor är en förkonfigurerad instans av en virtuell maskin med en specifik kom
 
 
 ### Flavors med lokal NVMe-disk
-Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU och 64 GB RAM, med NVMe lagring upp till 1 000 GB - prissatta från endast 0,67 kr per timme eller 480 kr per 30 dagar!
+Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU och 64 GB RAM, med NVMe-lagring upp till 1 000 GB - prissatta från endast 0,67 kr per timme eller 480 kr per 30 dagar!
 
 | Produkt ID               | vCPU | RAM (GB) |           Lokal disk (GB) |                 Per timme |           Per 30 dagar |
 |--------------------------|:----:|:--------:|--------------------------:|--------------------------:|-----------------------:|
@@ -83,7 +83,7 @@ Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU o
 
 
 ### Flavors utan lokal disk	
-Safesprings erbjuder en rad kostnadseffektiva virtuella maskiner med varierande vCPU och RAM. Central blocklagring kan köpas till instanserna.
+Safespring erbjuder en rad kostnadseffektiva virtuella maskiner med varierande vCPU och RAM. Central blocklagring kan köpas till instanserna.
 
 | Produkt ID         | vCPU | RAM (GB) | Lokal disk (GB) |                 Per timme |            Per 30 dagar |
 |--------------------|:----:|:--------:|:---------------:|--------------------------:|------------------------:|
@@ -100,7 +100,7 @@ Safesprings erbjuder en rad kostnadseffektiva virtuella maskiner med varierande 
 
 
 ### Flavors med GPU
-Safesprings erbjuder flera alternativ virtuella maskiner med GPU. Både med och utan lokal lagring (NVME).
+Safespring erbjuder flera alternativ för virtuella maskiner med GPU, både med och utan lokal lagring (NVMe).
 
 | Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU   | Per timme | Per 30 dagar |
 |--------------------------|:----:|:--------:|----------------:|:-----:|----------:|-------------:|
@@ -112,7 +112,7 @@ Safesprings erbjuder flera alternativ virtuella maskiner med GPU. Både med och 
 
 
 ### Central blocklagring		
-Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster. Få snabb och pålitlig lagring med Safesprings från endast 1,20 kr per GB per 30 dagar.
+Central blocklagring ger tre kopior av data utspridda i ett robust Ceph-kluster. Få snabb och pålitlig lagring hos Safespring från endast 1,20 kr per GB per 30 dagar.
 
 | Produkt ID      | Beskrivning               |       Per timme      |             Per 30 dagar |
 |-----------------|---------------------------|:--------------------:|-------------------------:|
@@ -141,7 +141,7 @@ Safespring erbjuder två anpassade S3-produkter för olika lagringsbehov: S3-arc
 Safespring erbjuder tre olika backuplösningar. Priserna per GB börjar så lågt som 0,92 kr, vilket ger dig högkvalitativ backup till ett överkomligt pris.
 {{< /ingress >}}
 
-Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som vanligtvis minskar datamängden mellan 45%-90%. Priset är fastställt per skyddad GB på klienten och per lagrad GB i tjänsten efter deduplicering och komprimering. Dessutom ingår 1TB i det fasta månadspriset för BAAS-small.
+Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som vanligtvis minskar datamängden mellan 45%-90%. Priset är fastställt per skyddad GB på klienten och per lagrad GB i tjänsten efter deduplicering och komprimering. Dessutom ingår 1 TB i det fasta månadspriset för BAAS-small.
 
 {{% accordion title="Vilken plan är bäst?" %}}
 
@@ -178,14 +178,14 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
 | BAAS-large <sup>4</sup>     |              9 500 kr  | 0,92 kr           |
 
 
-## Nätverk och Mjukvara
+## Nätverk och mjukvara
 
 {{< ingress >}}
 Safespring erbjuder en del mjukvaror och licenser som kan köra ovanpå Safesprings molnplattform.
 {{< /ingress >}}
 
 ### Nätverk
-Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och egress) utan extra kostnad, Reverse DNS-names och Bring Your Own IP-prefixes. Dessutom kan kunder begära en offert för deras hanterade lastbalanserare som kräver egna servrar.
+Safespring erbjuder publika IPv4- och IPv6-adresser, datatrafik (ingress och egress) utan extra kostnad, Reverse DNS-namn och Bring Your Own IP-prefix. Dessutom kan kunder begära offert på en hanterad lastbalanserare som kräver egna servrar.
 
 | Produkt ID   |  Typ                       | Beskrivning                             | Debitering per |    Per månad |
 |--------------|----------------------------|-----------------------------------------|----------------|-------------:|
@@ -198,8 +198,8 @@ Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och e
 | NET-byoip    | Bring your own IP prefixes |                                         | N/A            |      0,00 kr |
 
 
-### Mjukvara och Licenser
-Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattform.
+### Mjukvara och licenser
+Maximera er infrastruktur med mjukvara som är optimerad för Safesprings plattform.
 
 | Produkt ID        | Beskrivning                     | Debitering per |    Per månad |
 |-------------------|---------------------------------|----------------|-------------:|
@@ -217,19 +217,19 @@ Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelef
 | PAAS-man.mariadb      | Managed MariaDB                                   | Begär offert |
 | PAAS-man.redis        | Managed Redis                                     | Begär offert |
 
-#3 Support och konsulttjänster
+## Support och konsulttjänster
 
 {{< ingress >}}
 Vi erbjuder olika nivåer av support för molninfrastruktur. Dessutom erbjuder vi erfarna konsulter och projektledare till konkurrenskraftiga priser.
 {{< /ingress >}}
 
 ### Support
-Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.
+Få tillgång till dedikerad support och teknisk chatt genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.
 
 | Produkt ID       | Beskrivning                                        | Debitering per |                 Pris |
 |------------------|----------------------------------------------------|----------------|---------------------:|
 | SUPPORT-base     | Support för Safesprings tjänster                   | N/A            |              0,00 kr |
-| SUPPORT-standard | Tillgång till chatt-rum med support och tekniker   | Total volym    | 3 % av total volym <sup>5</sup> |
+| SUPPORT-standard | Tillgång till chattrum med support och tekniker    | Total volym    | 3 % av total volym <sup>5</sup> |
 | SUPPORT-premium  | Dedikerad servicechef med kvartalsvisa driftsmöten | Timme          |         Begär offert |
 
 ### Konsulttjänster
@@ -245,7 +245,7 @@ Få tillgång till våra erfarna konsulter och projektledare för att optimera d
 | PS-pm.sen        | Project Manager, senior expertise level                           | Timme          | 1 374 kr |
 
 ### Utbildningar
-Lär dig allt om moderna IT-tjänster med Safesprings kurspaket, inklusive introduktioner till "infrastruktur som tjänst" och moln-infrastrukturteknik, samt fördjupade kurser om molnstrategi och modern DevOps med "microservices". Begär offert idag för att ta din verksamhet till nästa nivå!
+Lär dig allt om moderna IT-tjänster med Safesprings kurspaket, inklusive introduktioner till "infrastruktur som tjänst" och molninfrastrukturteknik, samt fördjupade kurser om molnstrategi och modern DevOps med "microservices". Begär offert idag för att ta din verksamhet till nästa nivå!
 
 | Produkt ID                  | Beskrivning                                  | Längd      | Debitering per |         Pris |
 |-----------------------------|----------------------------------------------|------------|----------------|-------------:|
@@ -262,4 +262,4 @@ Anteckningar
 2. Priset är per skyddad GB på klienten. 
 3. Priset är per lagrad GB i tjänsten efter deduplicering och komprimering. Det ingår 1 000 GB i det fasta månadspriset.
 4. Priset är per lagrad GB i tjänsten efter deduplicering och komprimering. 
-5. Supportavgiften debiteras med 3 % av den totala volymen med en lägsta avgift på 1500 SEK per månad.
+5. Supportavgiften debiteras med 3 % av den totala volymen med en lägsta avgift på 1 500 SEK per månad.
