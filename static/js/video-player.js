@@ -1,9 +1,6 @@
 (function () {
   'use strict';
 
-  if (window.__videoPlayerBootstrapped) {
-    return;
-  }
   window.__videoPlayerBootstrapped = true;
 
   var hlsScriptPromise = null;
@@ -156,6 +153,12 @@
     var subtitleToggle = root.querySelector('[data-role="subtitle-toggle"]');
     var muteToggle = root.querySelector('[data-role="mute-toggle"]');
     var subtitleSelect = root.querySelector('[data-role="subtitle-select"]');
+    var posterLayer = root.querySelector('[data-role="poster"]');
+    var playOverlay = root.querySelector('[data-role="play-overlay"]');
+    var chapterMarkers = root.querySelectorAll('[data-role="chapter-marker"]');
+    if (posterLayer) {
+      root.classList.remove('is-video-active');
+    }
 
     var videoSrc = root.__videoSrc || root.getAttribute('data-video-src') || '';
     var normalizedVideoSrc = normalizeMediaUrl(videoSrc);
@@ -192,6 +195,7 @@
     var activeSubtitleTrack = null;
     var activeSubtitleListener = null;
     var hlsInstance = null;
+    var videoSurfaceRequested = false;
 
     var muteLabels = {
       mute: 'Ljud av',
@@ -228,6 +232,36 @@
       language: (initialSubtitleLang || autoSubtitleLang || pageSubtitleLang || '').toLowerCase()
     };
 
+    function showVideoSurface() {
+      if (posterLayer && videoSurfaceRequested) {
+        root.classList.add('is-video-active');
+      }
+    }
+
+    function requestVideoSurface() {
+      videoSurfaceRequested = true;
+      showVideoSurface();
+    }
+
+    function updatePlayOverlay() {
+      if (!playOverlay) {
+        return;
+      }
+      var isPlaying = !video.paused && !video.ended;
+      root.classList.toggle('is-video-playing', isPlaying);
+      playOverlay.classList.toggle('is-hidden', isPlaying);
+      playOverlay.setAttribute('aria-hidden', isPlaying ? 'true' : 'false');
+      playOverlay.tabIndex = isPlaying ? -1 : 0;
+    }
+
+    function restorePosterAtStart() {
+      if (!posterLayer || getRequestedTime() !== null || !video.paused || video.currentTime > 0.25) {
+        return;
+      }
+      videoSurfaceRequested = false;
+      root.classList.remove('is-video-active');
+    }
+
     function setCursorText() {
       if (!customCursor) {
         return;
@@ -256,16 +290,138 @@
 
     function updateTimelineProgress() {
       if (!videoTimelineFill) {
+        updateChapterMarkers();
         return;
       }
       if (!video.duration || video.duration <= 0 || !isFinite(video.duration) || !isFinite(video.currentTime)) {
         videoTimelineFill.style.width = '0%';
         updateTimeText();
+        updateChapterMarkers();
         return;
       }
       var progress = (video.currentTime / video.duration) * 100;
       videoTimelineFill.style.width = Math.min(Math.max(progress, 0), 100) + '%';
       updateTimeText();
+      updateChapterMarkers();
+    }
+
+    function getChapterMarkerTime(marker) {
+      return parseSeekTime(marker.getAttribute('data-chapter-time'));
+    }
+
+    function isChapterTooltipEvent(event) {
+      return Boolean(event && event.target && event.target.closest && event.target.closest('[data-role="chapter-tooltip"]'));
+    }
+
+    function seekToChapterMarker(marker) {
+      var targetTime = getChapterMarkerTime(marker);
+      if (targetTime === null) {
+        return;
+      }
+      seekTo(targetTime, {
+        play: true,
+        updateUrl: true,
+        showVideo: true
+      });
+    }
+
+    function getChapterFallbackDuration() {
+      var chapterTimes = [];
+      for (var i = 0; i < chapterMarkers.length; i++) {
+        var chapterTime = getChapterMarkerTime(chapterMarkers[i]);
+        if (chapterTime !== null) {
+          chapterTimes.push(chapterTime);
+        }
+      }
+      if (!chapterTimes.length) {
+        return 0;
+      }
+      chapterTimes.sort(function (a, b) {
+        return a - b;
+      });
+      var maxChapterTime = chapterTimes[chapterTimes.length - 1];
+      var fallbackTail = 60;
+      var gaps = [];
+      for (var j = 1; j < chapterTimes.length; j++) {
+        var gap = chapterTimes[j] - chapterTimes[j - 1];
+        if (gap > 0) {
+          gaps.push(gap);
+        }
+      }
+      if (gaps.length) {
+        gaps.sort(function (a, b) {
+          return a - b;
+        });
+        fallbackTail = gaps[Math.floor(gaps.length / 2)];
+      }
+      return maxChapterTime + Math.max(30, fallbackTail);
+    }
+
+    function getTimelineDuration() {
+      var duration = Number(video.duration);
+      if (Number.isFinite(duration) && duration > 0) {
+        return duration;
+      }
+      return getChapterFallbackDuration();
+    }
+
+    function updateChapterMarkers() {
+      if (!chapterMarkers.length) {
+        return;
+      }
+
+      var duration = getTimelineDuration();
+      var currentTime = Number(video.currentTime);
+      var activeMarker = null;
+
+      for (var i = 0; i < chapterMarkers.length; i++) {
+        var marker = chapterMarkers[i];
+        var chapterTime = getChapterMarkerTime(marker);
+        var nextMarker = chapterMarkers[i + 1] || null;
+        var nextChapterTime = nextMarker ? getChapterMarkerTime(nextMarker) : null;
+        var segmentEnd = nextChapterTime !== null && nextChapterTime > chapterTime ? nextChapterTime : duration;
+        var isVisible = duration > 0 && chapterTime !== null && chapterTime >= 0;
+        var segmentWidth = isVisible ? Math.max(((segmentEnd - chapterTime) / duration) * 100, 0) : 0;
+        marker.hidden = !isVisible;
+
+        if (!isVisible) {
+          marker.classList.remove('is-active');
+          marker.removeAttribute('aria-current');
+          marker.style.removeProperty('--chapter-width');
+          marker.style.removeProperty('--chapter-fill');
+          continue;
+        }
+
+        var position = Math.min(Math.max((chapterTime / duration) * 100, 0), 100);
+        var fill = 0;
+        if (Number.isFinite(currentTime)) {
+          if (currentTime >= segmentEnd) {
+            fill = 100;
+          } else if (currentTime > chapterTime && segmentEnd > chapterTime) {
+            fill = ((currentTime - chapterTime) / (segmentEnd - chapterTime)) * 100;
+          }
+        }
+
+        marker.style.left = position + '%';
+        marker.style.setProperty('--chapter-width', Math.min(Math.max(segmentWidth, 0), 100) + '%');
+        marker.style.setProperty('--chapter-gap', i === chapterMarkers.length - 1 ? '0px' : '4px');
+        marker.style.setProperty('--chapter-fill', Math.min(Math.max(fill, 0), 100) + '%');
+
+        marker.classList.remove('is-active');
+        marker.removeAttribute('aria-current');
+        if (Number.isFinite(currentTime) && currentTime >= chapterTime && currentTime < segmentEnd) {
+          activeMarker = marker;
+        }
+      }
+
+      if (!activeMarker && Number.isFinite(currentTime) && currentTime >= duration && chapterMarkers.length) {
+        activeMarker = chapterMarkers[chapterMarkers.length - 1];
+      }
+
+      if (activeMarker) {
+        activeMarker.classList.add('is-active');
+        activeMarker.setAttribute('aria-current', 'true');
+      }
     }
 
     function showTimeline() {
@@ -312,17 +468,21 @@
       return event.clientX;
     }
 
-    function seekFromTimeline(event) {
-      if (!videoTimeline || !video.duration || video.duration <= 0 || !isFinite(video.duration)) {
-        return;
+    function getTimelineSeekTime(event) {
+      if (!videoTimeline) {
+        return null;
+      }
+      var duration = getTimelineDuration();
+      if (!duration || duration <= 0 || !isFinite(duration)) {
+        return null;
       }
       var rect = videoTimeline.getBoundingClientRect();
       if (!rect.width || !isFinite(rect.width)) {
-        return;
+        return null;
       }
       var clientX = getTimelineClientX(event);
       if (!isFinite(clientX)) {
-        return;
+        return null;
       }
       var ratio = (clientX - rect.left) / rect.width;
       if (ratio < 0) {
@@ -331,11 +491,38 @@
       if (ratio > 1) {
         ratio = 1;
       }
-      video.currentTime = ratio * video.duration;
+      return ratio * duration;
+    }
+
+    function seekFromTimeline(event) {
+      var targetTime = getTimelineSeekTime(event);
+      if (targetTime === null) {
+        return;
+      }
+      if (!initialized || video.readyState < 1) {
+        seekTo(targetTime, {
+          showVideo: true,
+          updateUrl: useUrlTime
+        });
+        return;
+      }
+      try {
+        video.currentTime = targetTime;
+      } catch (error) {
+        logPlaybackError(error);
+        return;
+      }
       updateTimelineProgress();
+      updateTimeText();
+      if (useUrlTime) {
+        updateUrlTime(targetTime);
+      }
     }
 
     function parseSeekTime(time) {
+      if (time === null || time === undefined || time === '') {
+        return null;
+      }
       var parsedTime = Number(time);
       return Number.isFinite(parsedTime) && parsedTime >= 0 ? parsedTime : null;
     }
@@ -388,6 +575,9 @@
         updateTimeText();
         if (options.updateUrl && useUrlTime) {
           updateUrlTime(targetTime);
+        }
+        if (options.play || options.showVideo) {
+          requestVideoSurface();
         }
         if (options.play) {
           var playResult = video.play();
@@ -445,6 +635,7 @@
       if (!isTimelineScrubbing) {
         return;
       }
+      event.preventDefault();
       seekFromTimeline(event);
     }
 
@@ -816,6 +1007,7 @@
 
     function togglePlayback() {
       if (video.paused) {
+        videoSurfaceRequested = true;
         var playResult = video.play();
         if (playResult && playResult.catch) {
           playResult.catch(function (error) {
@@ -1038,6 +1230,125 @@
       });
     }
 
+    function showChapterTooltip(event) {
+      event.currentTarget.classList.add('is-tooltip-visible');
+    }
+
+    function hideChapterTooltip(event) {
+      if (isPointInChapterTooltipZone(event.currentTarget, event)) {
+        return;
+      }
+      event.currentTarget.classList.remove('is-tooltip-visible');
+    }
+
+    function getChapterTooltip(marker) {
+      return marker ? marker.querySelector('[data-role="chapter-tooltip"]') : null;
+    }
+
+    function isPointInChapterTooltipZone(marker, event) {
+      if (!marker || !event || !isFinite(event.clientX) || !isFinite(event.clientY)) {
+        return false;
+      }
+      var tooltip = getChapterTooltip(marker);
+      if (!tooltip) {
+        return false;
+      }
+      var markerRect = marker.getBoundingClientRect();
+      var tooltipRect = tooltip.getBoundingClientRect();
+      var padding = 10;
+      var left = Math.min(markerRect.left, tooltipRect.left) - padding;
+      var right = Math.max(markerRect.right, tooltipRect.right) + padding;
+      var top = Math.min(markerRect.top, tooltipRect.top) - padding;
+      var bottom = Math.max(markerRect.bottom, tooltipRect.bottom) + padding;
+      return event.clientX >= left && event.clientX <= right && event.clientY >= top && event.clientY <= bottom;
+    }
+
+    function getVisibleChapterTooltipMarker() {
+      for (var i = 0; i < chapterMarkers.length; i++) {
+        if (chapterMarkers[i].classList.contains('is-tooltip-visible')) {
+          return chapterMarkers[i];
+        }
+      }
+      return null;
+    }
+
+    function hideAllChapterTooltips(exceptMarker) {
+      for (var i = 0; i < chapterMarkers.length; i++) {
+        if (chapterMarkers[i] !== exceptMarker) {
+          chapterMarkers[i].classList.remove('is-tooltip-visible');
+        }
+      }
+    }
+
+    function updateChapterTooltipFromPointer(event) {
+      if (!chapterMarkers.length || !event || !isFinite(event.clientX) || !isFinite(event.clientY) || !document.elementFromPoint) {
+        return;
+      }
+      var element = document.elementFromPoint(event.clientX, event.clientY);
+      var marker = element && element.closest ? element.closest('[data-role="chapter-marker"]') : null;
+      if (!marker || !root.contains(marker)) {
+        var visibleMarker = getVisibleChapterTooltipMarker();
+        if (isPointInChapterTooltipZone(visibleMarker, event)) {
+          return;
+        }
+        hideAllChapterTooltips();
+        return;
+      }
+      hideAllChapterTooltips(marker);
+      marker.classList.add('is-tooltip-visible');
+    }
+
+    root.addEventListener('mousemove', updateChapterTooltipFromPointer);
+    root.addEventListener('mouseleave', function () {
+      hideAllChapterTooltips();
+    });
+
+    for (var chapterMarkerIndex = 0; chapterMarkerIndex < chapterMarkers.length; chapterMarkerIndex++) {
+      chapterMarkers[chapterMarkerIndex].addEventListener('mouseenter', showChapterTooltip);
+      chapterMarkers[chapterMarkerIndex].addEventListener('mouseleave', hideChapterTooltip);
+      chapterMarkers[chapterMarkerIndex].addEventListener('focus', showChapterTooltip);
+      chapterMarkers[chapterMarkerIndex].addEventListener('blur', hideChapterTooltip);
+      chapterMarkers[chapterMarkerIndex].addEventListener('mousedown', function (event) {
+        if (isChapterTooltipEvent(event)) {
+          event.preventDefault();
+          event.stopPropagation();
+          seekToChapterMarker(event.currentTarget);
+          return;
+        }
+        startTimelineScrub(event);
+      });
+      chapterMarkers[chapterMarkerIndex].addEventListener('touchstart', function (event) {
+        if (isChapterTooltipEvent(event)) {
+          event.preventDefault();
+          event.stopPropagation();
+          seekToChapterMarker(event.currentTarget);
+          return;
+        }
+        startTimelineScrub(event);
+      });
+      chapterMarkers[chapterMarkerIndex].addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (isChapterTooltipEvent(event)) {
+          seekToChapterMarker(event.currentTarget);
+        }
+      });
+      chapterMarkers[chapterMarkerIndex].addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') {
+          return;
+        }
+        event.preventDefault();
+        event.stopPropagation();
+        seekToChapterMarker(event.currentTarget);
+      });
+    }
+
+    if (playOverlay) {
+      playOverlay.addEventListener('click', function (event) {
+        toggleWithCustomInteraction(event);
+      });
+    }
+
     function toggleWithCustomInteraction(event) {
       if (isToggleInProgress) {
         return;
@@ -1074,7 +1385,9 @@
     });
 
     video.addEventListener('play', function () {
+      showVideoSurface();
       setCursorText();
+      updatePlayOverlay();
       if (unmuteOnPlay) {
         maybeUnmuteVideo();
       }
@@ -1083,6 +1396,8 @@
 
     video.addEventListener('pause', function () {
       setCursorText();
+      restorePosterAtStart();
+      updatePlayOverlay();
       if (customCursor) {
         showCustomCursor();
       }
@@ -1092,6 +1407,16 @@
       initializeSubtitles();
       updateTimelineProgress();
       updateTimeText();
+      updateChapterMarkers();
+      restorePosterAtStart();
+    });
+
+    video.addEventListener('loadeddata', function () {
+      restorePosterAtStart();
+    });
+
+    video.addEventListener('canplay', function () {
+      restorePosterAtStart();
     });
 
     video.addEventListener('timeupdate', function () {
@@ -1106,6 +1431,7 @@
       setCursorText();
       updateTimelineProgress();
       updateTimeText();
+      updatePlayOverlay();
       if (customCursor) {
         showCustomCursor();
       }
@@ -1128,6 +1454,8 @@
 
     hideTimeline();
     updateMuteButton();
+    updatePlayOverlay();
+    updateChapterMarkers();
 
     var publicApi = {
       seekTo: seekTo
@@ -1148,9 +1476,13 @@
     if (useUrlTime) {
       var requestedTime = getRequestedTime();
       if (requestedTime !== null) {
-        seekTo(requestedTime, { play: false });
+        seekTo(requestedTime, {
+          play: false,
+          showVideo: true
+        });
       }
     }
+    window.setTimeout(restorePosterAtStart, 0);
   }
 
   function initAllVideoPlayers() {

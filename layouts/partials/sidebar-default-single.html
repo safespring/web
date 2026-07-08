@@ -10,12 +10,12 @@
       role="img"
       aria-label="{{ .Title }}"
     ></div>
-    <div class="sidebar-content">
+    <div class="sidebar-content sidebar-content--toc">
       {{ if .Params.toc }}
       <h2 class="sidebar-toc">
         {{ .Params.toc }}
       </h2>
-      <div>
+      <div class="sidebar-toc-list">
         {{ $toc | safeHTML }}
       </div>
     </div>

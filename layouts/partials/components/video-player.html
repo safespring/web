@@ -11,6 +11,7 @@
 {{- $pageSubtitleLang := .pageSubtitleLang | default "" -}}
 {{- $ccDefaultOn := .ccDefaultOn | default "" -}}
 {{- $playerId := .playerId | default "" -}}
+{{- $chapterList := .chapters | default (slice) -}}
 {{- $urlTime := false -}}
 {{- with (index . "urlTime") }}{{- $urlTime = true -}}{{- end -}}
 {{- $languageCode := lower ($page.Language.Lang | default $page.Site.Language.Lang | default "sv") -}}
@@ -65,10 +66,44 @@
     {{ end }}
     Your browser does not support the video tag.
   </video>
+  {{- if $videoPoster }}
+  <div data-role="poster" class="video-poster" style="background-image: url('{{ $videoPoster }}');" aria-hidden="true"></div>
+  {{- end }}
+  <button type="button" data-role="play-overlay" class="video-play-overlay" aria-label="{{ $cursorTextPaused }}" title="{{ $cursorTextPaused }}">
+    <i class="fas fa-play" aria-hidden="true"></i>
+  </button>
   <div data-role="caption-overlay" class="video-caption-overlay" aria-live="polite"></div>
   <div data-role="custom-cursor" class="custom-cursor">{{ $cursorTextPaused }}</div>
-  <div data-role="timeline" class="video-timeline">
+  <div data-role="timeline" class="video-timeline{{ if $chapterList }} video-timeline--chapters{{ end }}">
     <div data-role="timeline-fill" class="video-timeline-fill"></div>
+    {{- if $chapterList }}
+    {{- $firstChapter := index $chapterList 0 -}}
+    {{- $firstChapterTime := float ($firstChapter.time | default 0) -}}
+    {{- $hasIntroSegment := gt $firstChapterTime 0 -}}
+    <div data-role="chapter-segments" class="video-chapter-segments">
+      {{- if $hasIntroSegment }}
+      <button type="button" data-role="chapter-marker" class="video-chapter-segment is-first" data-chapter-time="0" data-chapter-title="Start" aria-label="Start, 0:00" title="Start, 0:00">
+        <span data-role="chapter-segment-fill" class="video-chapter-segment-fill" aria-hidden="true"></span>
+        <span data-role="chapter-tooltip" class="video-chapter-tooltip" aria-hidden="true">Start, 0:00</span>
+        <span class="sr-only">Start, 0:00</span>
+      </button>
+      {{- end }}
+      {{- range $index, $chapter := $chapterList }}
+        {{- $chapterTime := $chapter.time | default 0 -}}
+        {{- $chapterTitle := $chapter.title | default (printf "Chapter %d" (add $index 1)) -}}
+        {{- $chapterTimeFormatted := $chapter.timeFormatted | default "" -}}
+        {{- $chapterLabel := $chapterTitle -}}
+        {{- if $chapterTimeFormatted -}}
+          {{- $chapterLabel = printf "%s, %s" $chapterTitle $chapterTimeFormatted -}}
+        {{- end -}}
+        <button type="button" data-role="chapter-marker" class="video-chapter-segment{{ if and (not $hasIntroSegment) (eq $index 0) }} is-first{{ end }}{{ if eq $index (sub (len $chapterList) 1) }} is-last{{ end }}" data-chapter-time="{{ $chapterTime }}" {{ printf "data-chapter-title=%q" $chapterTitle | safeHTMLAttr }} {{ printf "aria-label=%q" $chapterLabel | safeHTMLAttr }} {{ printf "title=%q" $chapterLabel | safeHTMLAttr }}>
+          <span data-role="chapter-segment-fill" class="video-chapter-segment-fill" aria-hidden="true"></span>
+          <span data-role="chapter-tooltip" class="video-chapter-tooltip" aria-hidden="true">{{ $chapterLabel }}</span>
+          <span class="sr-only">{{ $chapterLabel }}</span>
+        </button>
+      {{- end }}
+    </div>
+    {{- end }}
   </div>
   <div data-role="subtitle-controls" class="video-subtitles">
     <button type="button" data-role="subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="{{ $initialSubtitleLabel }}" title="{{ $initialSubtitleLabel }}"><i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i></button>
@@ -87,7 +122,5 @@
   })();
 </script>
 
-{{- if and $page (not ($page.Scratch.Get "videoPlayerScriptIncluded")) -}}
-<script src="/js/video-player.js" defer></script>
-{{- $page.Scratch.Set "videoPlayerScriptIncluded" true -}}
-{{- end -}}
+{{- $videoPlayerVersion := readFile "static/js/video-player.js" | md5 -}}
+<script src="/js/video-player.js?v={{ $videoPlayerVersion }}" defer></script>

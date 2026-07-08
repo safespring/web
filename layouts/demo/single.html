@@ -18,6 +18,7 @@
         "containerClass" "webinarvideo index-video video-container-streamed demo-video-player"
         "videoClass" "webinar-videoplayer"
         "preload" "none"
+        "chapters" (.Params.chapters | default (slice))
         "cursorTextPaused" "Play"
         "cursorTextPlaying" "Pause"
         "playerId" "player"
