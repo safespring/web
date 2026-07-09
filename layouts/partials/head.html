@@ -4,6 +4,7 @@
     <!-- Site Title changes according to current page . -->
     <title>{{ .Params.metatitle | default .Title }} | Safespring</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <script>
       var matomoSiteId = {{ T "meta.matomo_id" }};
       var matomoCookieDomain = {{ T "meta.matomo_cookie_domain" }};
@@ -23,6 +24,8 @@
       importance="high"
     />
     {{ $bg := replaceRE "^/+" "" (.Params.background | default "safespring-blue-fade2.svg") }}
+    {{ $bgImage := printf "url('/img/background/%s')" $bg | safeCSS }}
+    {{ $usesMobileGeneratedBackground := eq $bg "safespring-compute-background.svg" }}
     {{ if .Params.background }}
       {{ $ext := replace (path.Ext $bg) "." "" }}
       <link
@@ -30,6 +33,7 @@
         as="image"
         href="/img/background/{{ $bg }}"
         fetchpriority="high"
+        {{ if $usesMobileGeneratedBackground }}media="(min-width: 901px)"{{ end }}
         {{ if eq $ext "svg" }}
           type="image/svg+xml"
         {{ else }}
@@ -76,7 +80,11 @@
     background-color: #fafefe;
   }
   .heading-default-single {
-    background-image: url('/img/background/{{ $bg }}');
+    {{ if $usesMobileGeneratedBackground }}
+      background-image: linear-gradient(145deg, #e7eff3 0%, #edf4f7 55%, #cfe3ec 100%);
+    {{ else }}
+      background-image: {{ $bgImage }};
+    {{ end }}
     padding:12% 5% 4% 5%;
     display:flex;
     flex-flow:row nowrap;
@@ -89,6 +97,14 @@
     position: relative;
     overflow: hidden;
   }
+
+  {{ if $usesMobileGeneratedBackground }}
+    @media only screen and (min-width: 901px) {
+      .heading-default-single {
+        background-image: {{ $bgImage }};
+      }
+    }
+  {{ end }}
 
     @media only screen and (min-width:1500px) {
       .heading-default-single {
@@ -892,10 +908,6 @@
       {{- end -}}
 
     {{ end }}
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-
     {{ if or (eq .Params.noindex true) (eq .Section "internal") (eq .Section "read-more") }}
       <meta name="robots" content="noindex, nofollow, noarchive" />
     {{ end }}
