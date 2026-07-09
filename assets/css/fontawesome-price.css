@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-weight: var(--fa-style, 900);
+}
+
+.fas,
+.fa-solid,
+.fa {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+  font-style: normal;
+  line-height: 1;
+}
+
+.fas:before,
+.fa-solid:before,
+.fa:before {
+  content: var(--fa);
+}
+
+.fa-classic,
+.fas,
+.fa-solid {
+  font-family: "Font Awesome 6 Pro";
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+.fa-arrow-up-right-from-square {
+  --fa: "\f08e";
+}
+
+.fa-caret-down {
+  --fa: "\f0d7";
+}
+
+.fa-container-storage {
+  --fa: "\f4b7";
+}
+
+.fa-envelope {
+  --fa: "\f0e0";
+}
+
+.fa-exclamation {
+  --fa: "!";
+}
+
+.fa-file-pdf {
+  --fa: "\f1c1";
+}
+
+.fa-language {
+  --fa: "\f1ab";
+}
+
+.fa-list-ul {
+  --fa: "\f0ca";
+}
+
+.fa-server {
+  --fa: "\f233";
+}
+
+.fa-table {
+  --fa: "\f0ce";
+}
+
+.fa-xmark {
+  --fa: "\f00d";
+}
