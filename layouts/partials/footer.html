@@ -224,7 +224,6 @@
           <button
             type="button"
             class="cookie-consent-settings"
-            onclick="if (window.cookieTractor && cookieTractor.openConsentSettings) cookieTractor.openConsentSettings();"
             >{{ T "menu.cookie_settings" }}</button
           >
         </li>
@@ -240,275 +239,35 @@
 </div>
 
 {{ if (findRE "class=\"accordion" .Content 1) }}
-  {{ partial "accordion-script.html" (dict "Page" .) }}
+  {{/* Accordion markup needs JS to initialize aria/inert state, animate panels, and preserve hash links to accordion boxes after static rendering. */}}
+  {{ partial "js-component.html" (dict "source" "js/components/accordion.js") }}
 {{ end }}
 {{ if (findRE "compliance-document-table__info" .Content 1) }}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var rows = document.querySelectorAll(".compliance-document-table__row");
-
-      rows.forEach(function (row, rowIndex) {
-        var button = row.querySelector(".compliance-document-table__info");
-        var description = row.querySelector(".compliance-document-table__description");
-
-        if (!button || !description) {
-          return;
-        }
-
-        if (!description.id) {
-          description.id = "compliance-document-description-" + rowIndex;
-        }
-
-        button.setAttribute("aria-controls", description.id);
-        button.setAttribute("aria-expanded", "false");
-        description.setAttribute("aria-hidden", "true");
-
-        button.addEventListener("click", function () {
-          var isOpen = button.getAttribute("aria-expanded") === "true";
-          rows.forEach(function (otherRow) {
-            var otherButton = otherRow.querySelector(".compliance-document-table__info");
-            var otherDescription = otherRow.querySelector(".compliance-document-table__description");
-            otherRow.classList.remove("is-description-open");
-            if (otherButton) {
-              otherButton.setAttribute("aria-expanded", "false");
-            }
-            if (otherDescription) {
-              otherDescription.setAttribute("aria-hidden", "true");
-            }
-          });
-
-          if (!isOpen) {
-            row.classList.add("is-description-open");
-            button.setAttribute("aria-expanded", "true");
-            description.setAttribute("aria-hidden", "false");
-          }
-        });
-      });
-
-      document.addEventListener("keydown", function (event) {
-        if (event.key !== "Escape") {
-          return;
-        }
-
-        rows.forEach(function (row) {
-          var button = row.querySelector(".compliance-document-table__info");
-          var description = row.querySelector(".compliance-document-table__description");
-          row.classList.remove("is-description-open");
-          if (button) {
-            button.setAttribute("aria-expanded", "false");
-          }
-          if (description) {
-            description.setAttribute("aria-hidden", "true");
-          }
-        });
-      });
-    });
-  </script>
+  {{/* Compliance document tables need JS after static rendering so info buttons can keep one description open while maintaining aria-expanded and aria-hidden state. */}}
+  {{ partial "js-component.html" (dict "source" "js/components/compliance-document-info.js") }}
 {{ end }}
 {{ if (findRE "<pre" .Content 1) }}
-  <script>
-    function addLanguageLabels() {
-      document
-        .querySelectorAll('pre > code[class*="language-"]')
-        .forEach(function (codeBlock) {
-          var languageMatch = codeBlock.className.match(/language-(\w+)/);
-          if (languageMatch) {
-            var language = languageMatch[1];
-            var pre = codeBlock.parentNode;
-            if (language === "fallback") {
-              language = " ";
-            }
-            pre.setAttribute("data-lang", language);
-          }
-        });
-    }
-
-    addLanguageLabels();
-
-    document.querySelectorAll("pre").forEach((pre) => {
-      const button = document.createElement("button");
-      button.className = "copy-code-button";
-      button.innerHTML = "{{ T "footer.copy_code" }}";
-
-      button.addEventListener("click", () => {
-        const code = pre.querySelector("code").textContent;
-        navigator.clipboard
-          .writeText(code)
-          .then(() => {
-            button.innerHTML = "{{ T "footer.copied" }}";
-            setTimeout(() => {
-              button.innerHTML = "{{ T "footer.copy_code" }}";
-            }, 4000);
-          })
-          .catch(() => {
-            button.innerHTML = "{{ T "footer.error" }}";
-          });
-
-        // Ta bort fokus från knappen efter 4 sekunder
-        setTimeout(() => {
-          button.blur();
-        }, 4000);
-      });
-
-      pre.style.position = "relative";
-      pre.style.display = "flex";
-      button.style.position = "absolute";
-      button.style.top = "0";
-      button.style.right = "0";
-
-      pre.appendChild(button);
-    });
-  </script>
+  {{/* Code blocks need JS because Markdown/Hugo output does not include language badges or localized copy controls in the rendered pre/code markup. */}}
+  {{ $codeBlockParams := dict "copyLabel" (T "footer.copy_code") "copiedLabel" (T "footer.copied") "errorLabel" (T "footer.error") }}
+  {{ partial "js-component.html" (dict "source" "js/components/code-block-tools.js" "target" (printf "js/components/code-block-tools.%s.js" .Language.Lang) "params" $codeBlockParams) }}
 {{ end }}
 {{ if (findRE "<table" .Content 1) }}
-  <script>
-    // Hämta alla tabeller på sidan
-    const tables = document.querySelectorAll("table");
-
-    // Kör funktionen när sidan laddas
-    window.addEventListener("load", function () {
-      // Iterera över tabellerna
-      tables.forEach(function (table) {
-        // Iterera över tabellens rader
-        const rows = table.querySelectorAll("tr");
-        rows.forEach(function (row, rowIndex) {
-          // Iterera över radens celler
-          const cells = row.querySelectorAll("td");
-          cells.forEach(function (cell, cellIndex) {
-            // Hämta rubriktexten för den aktuella cellen från tabellens rubrikrad
-            const headerCells = table.querySelectorAll("th");
-            if (headerCells && headerCells.length > cellIndex) {
-              const label = headerCells[cellIndex].textContent;
-              // Lägg till data-label attributet till cellen med rubriktexten som värde
-              cell.setAttribute("data-label", label);
-            }
-          });
-        });
-      });
-    });
-  </script>
+  {{/* Markdown tables need JS-generated data-label attributes so the existing mobile table CSS can display header labels beside cells. */}}
+  {{ partial "js-component.html" (dict "source" "js/components/table-labels.js") }}
 {{ end }}
 {{ if (findRE "footnote-backref" .Content 1) }}
   {{ $footnoteBackrefLabel := T "general.footnote_backref" }}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var baseLabel = "{{ $footnoteBackrefLabel | safeJSStr }}";
-      document.querySelectorAll(".footnote-backref").forEach(function (link) {
-        var target = link.getAttribute("href") || "";
-        var reference = target.replace(/^#fnref:?/, "");
-        var label = reference ? baseLabel + " " + reference : baseLabel;
-        link.setAttribute("aria-label", label);
-        link.setAttribute("title", label);
-      });
-    });
-  </script>
+  {{/* Hugo footnote backrefs need localized aria/title labels after render to preserve the current accessible return-link behavior. */}}
+  {{ partial "js-component.html" (dict "source" "js/components/footnote-backrefs.js" "target" (printf "js/components/footnote-backrefs.%s.js" .Language.Lang) "params" (dict "backrefLabel" $footnoteBackrefLabel)) }}
 {{ end }}
 {{ if (findRE "data-src=" .Content 1) }}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var lazyFrames = document.querySelectorAll("iframe[data-src]");
-      if (!lazyFrames.length) {
-        return;
-      }
-
-      function loadFrame(frame) {
-        if (!frame.dataset.src) {
-          return;
-        }
-
-        frame.src = frame.dataset.src;
-        frame.removeAttribute("data-src");
-      }
-
-      if (!("IntersectionObserver" in window)) {
-        lazyFrames.forEach(loadFrame);
-        return;
-      }
-
-      var frameObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          loadFrame(entry.target);
-          frameObserver.unobserve(entry.target);
-        });
-      });
-
-      lazyFrames.forEach(function (frame) {
-        frameObserver.observe(frame);
-      });
-    });
-  </script>
+  {{/* Lazy iframe JS preserves the existing embed performance behavior by copying data-src to src only when the iframe reaches the viewport. */}}
+  {{ partial "js-component.html" (dict "source" "js/components/lazy-iframes.js") }}
 {{ end }}
 {{ if (findRE "<div class=\"mermaid\"" .Content 1) }}
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const safespringTheme = {
-        theme: "base",
-        themeVariables: {
-          primaryColor: "#E8EFF3",
-          primaryTextColor: "#417DA5",
-          primaryBorderColor: "#FFFFFF00",
-          lineColor: "#417DA5",
-          secondaryColor: "#FAFEFE",
-          secondaryTextColor: "#FAFEFE",
-          fontFamily: "var(--mon-font)",
-          labelColor: "#FFFFFF",
-          actorBorder: "#FFFFFF",
-          actorBkg: "#E8EFF3",
-          actorTextColor: "#417DA5",
-          actorLineColor: "#417DA5",
-          signalColor: "#417DA5",
-          labelBoxBkgColor: "#E8EFF3",
-          labelBoxBorderColor: "#417DA5",
-          arrowheadColor: "#417DA5",
-          flowchartBackground: "#E8EFF3",
-          todayLineColor: "#417DA5",
-          classText: "#417DA5",
-          classBackground: "#E8EFF3",
-          classBorder: "#FFFFFF",
-          tableNodeTextColor: "#417DA5",
-          tableNodeBackground: "#E8EFF3",
-          tableNodeBorderColor: "#FFFFFF",
-          quadrantTitleFill: "var(--clear-blue-color)",
-          quadrantPointFill: "var(--link-color)",
-          quadrantPointTextFill: "var(--link-color)",
-          pieOuterStrokeWidth: "0px",
-          cScale0: "#E8EFF3",
-          cScaleLabel0: "#417DA5",
-          cScale1: "#E8EFF3",
-          cScaleLabel1: "#417DA5",
-          cScale2: "#E8EFF3",
-          cScaleLabel2: "#417DA5",
-          cScale3: "#E8EFF3",
-          cScaleLabel3: "#417DA5",
-          cScale4: "#E8EFF3",
-          cScaleLabel4: "#417DA5",
-          cScale5: "#E8EFF3",
-          cScaleLabel5: "#417DA5",
-          cScale6: "#E8EFF3",
-          cScaleLabel6: "#417DA5",
-          cScale7: "#E8EFF3",
-          cScaleLabel7: "#417DA5",
-          cScale8: "#E8EFF3",
-          cScaleLabel8: "#417DA5",
-          cScale9: "#E8EFF3",
-          cScaleLabel9: "#417DA5",
-          cScale10: "#E8EFF3",
-          cScaleLabel10: "#417DA5",
-          cScale11: "#E8EFF3",
-          cScaleLabel11: "#417DA5",
-          cScale12: "#E8EFF3",
-          cScaleLabel12: "#417DA5",
-        },
-      };
-
-      mermaid.initialize(safespringTheme);
-    });
-  </script>
+  {{/* Mermaid pages keep the existing CDN dependency, while the local built component applies the Safespring theme after Mermaid is available. */}}
+  {{ partial "js-component.html" (dict "source" "js/components/mermaid-theme.js") }}
 {{ end }}
 <style type="text/css">
   #CookieConsent .cookie-popup {

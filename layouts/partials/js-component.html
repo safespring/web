@@ -1,0 +1,15 @@
+{{- $source := .source -}}
+{{- $opts := dict "minify" true -}}
+{{- with .target -}}
+  {{- $opts = merge $opts (dict "targetPath" .) -}}
+{{- end -}}
+{{- with .params -}}
+  {{- $opts = merge $opts (dict "params" .) -}}
+{{- end -}}
+{{- with resources.Get $source -}}
+  {{- with . | js.Build $opts | fingerprint -}}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+  {{- end -}}
+{{- else -}}
+  {{- errorf "Missing JavaScript component asset %q" $source -}}
+{{- end -}}

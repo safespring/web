@@ -1270,7 +1270,7 @@ h4 {
 	height:6px;
 	display:block;
 	position:absolute;
-	left:3%;
+	left:var(--video-timeline-left, 3%);
 	right:3%;
 	bottom:5%;
 	width:auto;
@@ -1461,13 +1461,13 @@ h4 {
 }
 
 .video-caption-overlay.is-lifted {
-	bottom:calc(5% + 48px);
+	bottom:calc(5% + 60px);
 }
 
 .video-subtitles {
 	position:absolute;
 	left:3%;
-	bottom:calc(5% + 14px);
+	bottom:calc(5% + 22px);
 	z-index:5;
 	display:flex;
 	align-items:center;
@@ -1488,7 +1488,7 @@ h4 {
 }
 
 .video-player:focus-within .video-caption-overlay {
-	bottom:calc(5% + 48px);
+	bottom:calc(5% + 60px);
 }
 
 @media (hover:none), (pointer:coarse) {
@@ -1507,7 +1507,7 @@ h4 {
 	}
 
 	.video-caption-overlay {
-		bottom:calc(5% + 48px);
+		bottom:calc(5% + 60px);
 	}
 }
 

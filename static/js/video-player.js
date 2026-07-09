@@ -231,6 +231,7 @@
       enabled: ccDefaultOnAttr === null ? !!autoSubtitleLang : ccDefaultOnAttr,
       language: (initialSubtitleLang || autoSubtitleLang || pageSubtitleLang || '').toLowerCase()
     };
+    var minVisibleChapterFillPixels = 3;
 
     function showVideoSurface() {
       if (posterLayer && videoSurfaceRequested) {
@@ -290,18 +291,21 @@
 
     function updateTimelineProgress() {
       if (!videoTimelineFill) {
+        updateTimelineLayout();
         updateChapterMarkers();
         return;
       }
       if (!video.duration || video.duration <= 0 || !isFinite(video.duration) || !isFinite(video.currentTime)) {
         videoTimelineFill.style.width = '0%';
         updateTimeText();
+        updateTimelineLayout();
         updateChapterMarkers();
         return;
       }
       var progress = (video.currentTime / video.duration) * 100;
       videoTimelineFill.style.width = Math.min(Math.max(progress, 0), 100) + '%';
       updateTimeText();
+      updateTimelineLayout();
       updateChapterMarkers();
     }
 
@@ -389,6 +393,7 @@
           marker.removeAttribute('aria-current');
           marker.style.removeProperty('--chapter-width');
           marker.style.removeProperty('--chapter-fill');
+          marker.style.removeProperty('--chapter-gap');
           continue;
         }
 
@@ -405,7 +410,15 @@
         marker.style.left = position + '%';
         marker.style.setProperty('--chapter-width', Math.min(Math.max(segmentWidth, 0), 100) + '%');
         marker.style.setProperty('--chapter-gap', i === chapterMarkers.length - 1 ? '0px' : '4px');
-        marker.style.setProperty('--chapter-fill', Math.min(Math.max(fill, 0), 100) + '%');
+
+        var boundedFill = Math.min(Math.max(fill, 0), 100);
+        if (boundedFill > 0 && boundedFill < 100 && marker.getBoundingClientRect) {
+          var markerWidth = marker.getBoundingClientRect().width;
+          if (markerWidth > 0 && (markerWidth * boundedFill / 100) < minVisibleChapterFillPixels) {
+            boundedFill = 0;
+          }
+        }
+        marker.style.setProperty('--chapter-fill', boundedFill + '%');
 
         marker.classList.remove('is-active');
         marker.removeAttribute('aria-current');
@@ -424,7 +437,28 @@
       }
     }
 
+    function updateTimelineLayout() {
+      if (!videoTimeline || !subtitleControls || !root.getBoundingClientRect || !subtitleControls.getBoundingClientRect) {
+        return;
+      }
+
+      var rootRect = root.getBoundingClientRect();
+      var controlsRect = subtitleControls.getBoundingClientRect();
+      if (!rootRect.width || !controlsRect.width || controlsRect.right <= rootRect.left) {
+        videoTimeline.style.removeProperty('--video-timeline-left');
+        return;
+      }
+
+      var defaultInset = rootRect.width * 0.03;
+      var controlsInset = controlsRect.right - rootRect.left + 12;
+      var minTimelineWidth = rootRect.width > 640 ? 320 : 132;
+      var maxInset = Math.max(defaultInset, rootRect.width - defaultInset - minTimelineWidth);
+      var timelineInset = Math.max(defaultInset, Math.min(controlsInset, maxInset));
+      videoTimeline.style.setProperty('--video-timeline-left', Math.ceil(timelineInset) + 'px');
+    }
+
     function showTimeline() {
+      updateTimelineLayout();
       if (videoTimeline) {
         videoTimeline.style.opacity = '1';
         videoTimeline.style.pointerEvents = 'auto';
@@ -820,6 +854,8 @@
           subtitleSelect.value = subtitleState.language;
         }
       }
+
+      updateTimelineLayout();
     }
 
     function updateMuteButton() {
@@ -1452,9 +1488,12 @@
       updateMuteButton();
     });
 
+    window.addEventListener('resize', updateTimelineLayout);
+
     hideTimeline();
     updateMuteButton();
     updatePlayOverlay();
+    updateTimelineLayout();
     updateChapterMarkers();
 
     var publicApi = {
