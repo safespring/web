@@ -3,4 +3,4 @@ Disallow: /internal/
 Disallow: /admin/
 Disallow: /login/
 Allow: /
-Sitemap: /sitemap.xml
+Sitemap: {{ "sitemap.xml" | absURL }}

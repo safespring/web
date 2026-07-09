@@ -7,6 +7,9 @@ socialmediabild: ""
 intro: "Whitepaperet du nettopp lastet ned sendes til e-postadressen du oppga i skjemaet."
 background: ""
 dontshow: "yes"
+noindex: true
+sitemap:
+  disable: true
 section: "Bekreftelse"
 language: "nb"
 aliases:

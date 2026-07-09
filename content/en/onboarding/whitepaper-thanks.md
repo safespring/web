@@ -6,6 +6,9 @@ socialmediabild: ""
 intro: "The white paper you just downloaded will be sent to the email address you provided in the form."
 background: ""
 dontshow: "yes"
+noindex: true
+sitemap:
+  disable: true
 section: "Confirmation"
 language: "en"
 aliases:

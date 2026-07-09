@@ -3,11 +3,16 @@ author = "Safespring"
 copyright = "2025 Safespring"
 refLinksErrorLevel = 'warning'
 removePathAccents = true
+enableGitInfo = true
+enableRobotsTXT = true
 
 # Pagination
 [pagination]
   pagerSize = 10
   path = "latest"
+
+[frontmatter]
+  lastmod = ['lastmod', 'modified', ':git', 'date', 'publishdate', 'pubdate', 'published']
 
 #------------------------------------------------------------------------------
 # Languages
@@ -216,13 +221,18 @@ target = 'content/compliance'
 
   mainSections = ['blog', 'tech-update', 'webinar', 'whitepaper', 'solution-brief']
 
+[taxonomies]
+  tag = 'tags'
+
 [sitemap]
-    changefreq = "daily"
     filename = "sitemap.xml"
-    priority = 0.5
 
 [outputs]
     home = ["HTML", "RSS", "LLMS"]
+
+[services]
+  [services.rss]
+    limit = 50
 
 [outputFormats.LLMS]
     mediaType = "text/plain"

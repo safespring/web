@@ -8,6 +8,9 @@ draft: false
 intro: "Safespring Knowledge Hub samlar webbsändningar, vitböcker, Nyheter & perspektiv, Deep Dives och lösningsöversikter."
 nosidebar: ""
 fullwidth: ""
+noindex: true
+sitemap:
+  disable: true
 aliases:
   - /latest/safespring-knowledge-hub-success/
 ---

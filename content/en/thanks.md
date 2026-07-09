@@ -8,6 +8,9 @@ date: "2020-09-25"
 draft: false
 language: "en"
 section: "Safespring"
+noindex: true
+sitemap:
+  disable: true
 aliases:
   - /takk/
   - /no/takk-di/

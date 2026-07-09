@@ -7,6 +7,9 @@ socialmediabild: ""
 intro: "Whitepaperet, du netop har downloadet, bliver sendt til den e-mailadresse, du angav i formularen."
 background: ""
 dontshow: "yes"
+noindex: true
+sitemap:
+  disable: true
 section: "Bekræftelse"
 language: "da"
 aliases:

@@ -7,6 +7,9 @@ draft: false
 intro: "The Safespring Knowledge Hub collects webcasts, white papers, News & Perspectives, Deep Dives, and solution briefs."
 nosidebar: ""
 fullwidth: ""
+noindex: true
+sitemap:
+  disable: true
 aliases:
   - /latest/safespring-knowledge-hub-success/
 ---

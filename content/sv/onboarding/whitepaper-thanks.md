@@ -7,6 +7,9 @@ socialmediabild: ""
 intro: "Vitboken du precis laddade ner kommer att skickas till den e-postadress du angav i formuläret."
 background: ""
 dontshow: "yes"
+noindex: true
+sitemap:
+  disable: true
 section: "Bekräftelse"
 language: "sv"
 aliases:
