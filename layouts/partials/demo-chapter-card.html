@@ -10,7 +10,15 @@
 <div class="webinar-card-episode webinar-card-chapter">
   <a href="{{ $href | safeURL }}" aria-label="Watch chapter {{ $number }} from {{ $timeLabel }}: {{ $chapter.title }}">
     <div class="webinar-highlist-card-episode shadow-1">
-      <div class="webinar-highlist-image-episode" style="background-image: url('{{ $image }}');"></div>
+      <div class="webinar-highlist-image-episode">
+        <img
+          src="{{ $image }}"
+          {{ partial "image-dimensions.html" $image | safeHTMLAttr }}
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
       <div class="webinar-series-text-container-episode" data-href="{{ $href }}">
         <p class="episode-counter-episode">{{ $number }}</p>
         <div>

@@ -1,10 +1,15 @@
 <div class="webinar-card-episode">
   <a href="{{ .RelPermalink }}">
     <div class="webinar-highlist-card-episode shadow-1">
-      <div
-        class="webinar-highlist-image-episode"
-        style="background-image: url('{{ .Params.card }}');"
-      ></div>
+      <div class="webinar-highlist-image-episode">
+        <img
+          src="{{ .Params.card }}"
+          {{ partial "image-dimensions.html" .Params.card | safeHTMLAttr }}
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
       <div
         class="webinar-series-text-container-episode"
         data-href="{{ .RelPermalink }}"

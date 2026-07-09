@@ -10,7 +10,15 @@
 <div class="webinar-card">
   <a href="{{ .RelPermalink }}">
     <div class="webinar-highlist-card shadow-1">
-      <div class="webinar-highlist-image" style="background-image: url('{{ $card | safeURL }}');"></div>
+      <div class="webinar-highlist-image">
+        <img
+          src="{{ $card | safeURL }}"
+          {{ partial "image-dimensions.html" $card | safeHTMLAttr }}
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
       <div class="webinar-series-text-container webinar-series-text-container--hub" data-href="{{ .RelPermalink }}">
         <p class="episode-counter">{{ $episodeCount }} {{ $episodeLabel }}</p>
         <div>

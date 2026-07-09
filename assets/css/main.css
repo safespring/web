@@ -4931,6 +4931,16 @@ ol li ol li::before {
   width: 200px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.webinar-highlist-image img,
+.webinar-highlist-image-episode img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .webinar-series-text-container {
@@ -5091,6 +5101,8 @@ ol li ol li::before {
   width: 100%;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .webinar-highlist-image-episode:before {
