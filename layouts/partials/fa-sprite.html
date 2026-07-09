@@ -21,11 +21,23 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- range slice "fa-solid-video" "fa-solid-external-link" -}}
+  {{- $symbol := . -}}
+  {{- if not (index $icons $symbol) -}}
+    {{- $icon := partial "fa-icon-data-by-symbol.html" $symbol -}}
+    {{- $icons = merge $icons (dict $symbol $icon) -}}
+    {{- $order = $order | append $symbol -}}
+  {{- end -}}
+{{- end -}}
 {{- if and $icons (gt (len $order) 0) -}}
+{{- $emitted := dict -}}
 <svg class="fa-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
   {{- range $order -}}
-    {{- with index $icons . -}}
+    {{- if not (index $emitted .) -}}
+      {{- $emitted = merge $emitted (dict . true) -}}
+      {{- with index $icons . -}}
   <symbol id="{{ .symbol }}" viewBox="{{ .viewBox }}">{{ .body | safeHTML }}</symbol>
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 </svg>

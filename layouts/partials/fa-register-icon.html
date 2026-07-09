@@ -2,10 +2,7 @@
 {{- $class := .class | default "" -}}
 {{- $icon := partial "fa-icon-data.html" (dict "class" $class) -}}
 {{- if $page -}}
-  {{- $icons := $page.Scratch.Get "faIcons" | default dict -}}
-  {{- if not (index $icons $icon.symbol) -}}
-    {{- $page.Scratch.SetInMap "faIcons" $icon.symbol $icon -}}
-    {{- $page.Scratch.Add "faIconOrder" (slice $icon.symbol) -}}
-  {{- end -}}
+  {{- $page.Scratch.SetInMap "faIcons" $icon.symbol $icon -}}
+  {{- $page.Scratch.Add "faIconOrder" (slice $icon.symbol) -}}
 {{- end -}}
 {{- return $icon -}}
