@@ -907,7 +907,17 @@
     <!-- CSS -->
     <!-- Ladda kritisk CSS direkt -->
     {{ $isPricePage := and .File (eq .File.BaseFileName "price") }}
-    {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
+    {{ $hasComplianceDocumentTable := gt (len (findRE "compliance-document-table__info" .Content 1)) 0 }}
+    {{ $hasVideoPlayer := or .IsHome .Params.videoURL (gt (len (findRE "data-video-player" .Content 1)) 0) }}
+    {{ $mainCSSResource := resources.Get "css/main.css" }}
+    {{ $mainCSS := $mainCSSResource | minify | fingerprint }}
+    {{ if and $hasComplianceDocumentTable $hasVideoPlayer }}
+      {{ $mainCSS = resources.Concat "css/main-compliance-document-table-video-player.css" (slice $mainCSSResource (resources.Get "css/compliance-document-table.css") (resources.Get "css/video-player.css")) | minify | fingerprint }}
+    {{ else if $hasComplianceDocumentTable }}
+      {{ $mainCSS = resources.Concat "css/main-compliance-document-table.css" (slice $mainCSSResource (resources.Get "css/compliance-document-table.css")) | minify | fingerprint }}
+    {{ else if $hasVideoPlayer }}
+      {{ $mainCSS = resources.Concat "css/main-video-player.css" (slice $mainCSSResource (resources.Get "css/video-player.css")) | minify | fingerprint }}
+    {{ end }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" />
     {{ if $isPricePage }}
       {{ $priceTablesCSS := resources.Get "css/price-tables.css" | minify | fingerprint }}

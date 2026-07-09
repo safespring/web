@@ -62,6 +62,10 @@
   --fa: "\f4b7";
 }
 
+.fa-exclamation {
+  --fa: "!";
+}
+
 .fa-hard-drive {
   --fa: "\f0a0";
 }
