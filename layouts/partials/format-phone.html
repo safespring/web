@@ -1,0 +1,42 @@
+{{- $phone := printf "%s" (.phone | default "") -}}
+{{- $page := .page -}}
+{{- $href := replaceRE `[^0-9+]` "" $phone -}}
+
+{{- if strings.HasPrefix $href "00" -}}
+  {{- $href = printf "+%s" (replaceRE `^00` "" $href) -}}
+{{- end -}}
+
+{{- if and (not (strings.HasPrefix $href "+")) (strings.HasPrefix $href "0") -}}
+  {{- $href = printf "+46%s" (replaceRE `^0` "" $href) -}}
+{{- end -}}
+
+{{- $isSwedishSite := false -}}
+{{- with $page -}}
+  {{- $siteBaseURL := printf "%s" .Site.BaseURL -}}
+  {{- $isSwedishSite = or (eq .Lang "sv") (in $siteBaseURL ".se/") -}}
+{{- end -}}
+
+{{- $label := $phone -}}
+{{- if $isSwedishSite -}}
+  {{- $landline := replaceRE `^\+468([0-9]{3})([0-9]{3})([0-9]{2})$` "08-$1 $2 $3" $href -}}
+  {{- if ne $landline $href -}}
+    {{- $label = $landline -}}
+  {{- else -}}
+    {{- $mobile := replaceRE `^\+46([0-9]{2})([0-9]{3})([0-9]{2})([0-9]{2})$` "0$1-$2 $3 $4" $href -}}
+    {{- if ne $mobile $href -}}
+      {{- $label = $mobile -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $landline := replaceRE `^\+468([0-9]{3})([0-9]{3})([0-9]{2})$` "+46 8 $1 $2 $3" $href -}}
+  {{- if ne $landline $href -}}
+    {{- $label = $landline -}}
+  {{- else -}}
+    {{- $mobile := replaceRE `^\+46([0-9]{2})([0-9]{3})([0-9]{2})([0-9]{2})$` "+46 $1 $2 $3 $4" $href -}}
+    {{- if ne $mobile $href -}}
+      {{- $label = $mobile -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "href" $href "label" $label) -}}

@@ -1,0 +1,31 @@
+{{- $class := "" -}}
+{{- $style := "" -}}
+{{- $title := "" -}}
+{{- $ariaHidden := true -}}
+{{- $page := false -}}
+{{- $extraClasses := slice -}}
+{{- if reflect.IsMap . -}}
+  {{- $class = index . "class" | default "" -}}
+  {{- $style = index . "style" | default "" -}}
+  {{- $title = index . "title" | default "" -}}
+  {{- $page = index . "page" | default false -}}
+  {{- with index . "extraClasses" -}}{{- $extraClasses = . -}}{{- end -}}
+  {{- if isset . "ariaHidden" -}}{{- $ariaHidden = index . "ariaHidden" -}}{{- end -}}
+{{- else -}}
+  {{- $class = printf "%s" . -}}
+{{- end -}}
+{{- $targetPage := $page -}}
+{{- with $page -}}
+  {{- with .Scratch.Get "faTargetPage" -}}
+    {{- $targetPage = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $icon := partial "fa-register-icon.html" (dict "class" $class "page" $targetPage) -}}
+{{- $extraSymbols := slice -}}
+{{- range $extraClasses -}}
+  {{- $extraIcon := partial "fa-register-icon.html" (dict "class" . "page" $targetPage) -}}
+  {{- $extraSymbols = $extraSymbols | append $extraIcon.symbol -}}
+{{- end -}}
+<svg class="fa-icon {{ $class }}"{{ with $style }} style="{{ . | safeCSS }}"{{ end }}{{ if $ariaHidden }} aria-hidden="true"{{ else }} role="img"{{ with $title }} aria-label="{{ . }}"{{ end }}{{ end }} focusable="false" data-fa-symbol="{{ $icon.symbol }}"{{ if gt (len $extraSymbols) 0 }} data-fa-extra-symbols="{{ delimit $extraSymbols " " }}"{{ end }}>
+  <use href="#{{ $icon.symbol }}" xlink:href="#{{ $icon.symbol }}"></use>
+</svg>

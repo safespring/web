@@ -62,19 +62,19 @@
     <div class="contact-link-container">
       {{ if .Params.phone }}
         <a class="contact-link" href="tel:{{ .Get `phone` }}">
-          <i class="fa-solid fa-phone"></i>
+          {{ partial "fa-icon.html" (dict "class" "fa-solid fa-phone" "page" .Page) }}
           <span class="phone-number">{{ .Get "phone" }}</span>
         </a>
       {{ end }}
       {{ if .Params.email }}
         <a class="contact-link" href="mailto:{{ .Get `email` }}">
-          <i class="fa-solid fa-envelope"></i>
+          {{ partial "fa-icon.html" (dict "class" "fa-solid fa-envelope" "page" .Page) }}
           <span>{{ .Get "email" }}</span>
         </a>
       {{ end }}
       {{ if .Params.address }}
         <a class="contact-link" href="{{ .Get `address-link` }}">
-          <i class="fa-solid fa-map"></i>
+          {{ partial "fa-icon.html" (dict "class" "fa-solid fa-map" "page" .Page) }}
           <span>{{ .Get "address" }}</span>
         </a>
       {{ end }}

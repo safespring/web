@@ -9,7 +9,7 @@
             <div class="thumbnail" style="background-image: url('{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Params.card }}{{ end }}');"></div>
             {{ if ne .RelPermalink $currentNode.RelPermalink }}
             <div class="play-button">
-              <i class="fas fa-play"></i>
+              {{ partial "fa-icon.html" (dict "class" "fas fa-play" "page" $.Page) }}
             </div>
             {{ end }}
           </div>

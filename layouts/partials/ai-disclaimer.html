@@ -4,6 +4,8 @@
 {{- $english := index (where $translations "Lang" "en") 0 | default .Page -}}
 {{- $originalLangName := $original.Language.Label -}}
 {{- $href := $english.Permalink -}}
+{{- $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-language" "page" .) -}}
+{{- $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) -}}
 
 <div class="ai-disclaimer-container" id="{{ $id }}">
   <button
@@ -12,9 +14,9 @@
     aria-expanded="false"
     aria-controls="{{ $id }}-panel"
   >
-      <i class="fa-solid fa-language" aria-hidden="true"></i>
+      {{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}
       <p>{{ T "ai_disclaimer.title" }}</p>
-    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+    {{ partial "fa-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}
   </button>
 
   <div

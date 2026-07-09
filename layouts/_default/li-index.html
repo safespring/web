@@ -6,10 +6,9 @@
   <div class="flex-item shadow-1 service-card" style="--card-color: {{ .Params.cardcolor }}">
     <div class="cardtitle">
       <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10">
-        <i
-          class="{{ .Params.cardicon }} icon"
-          style="color: {{ .Params.cardcolor }} !important"
-        ></i>
+        {{ with .Params.cardicon }}
+          {{ partial "fa-icon.html" (dict "class" (printf "%s icon" .) "style" (printf "color: %s !important" $.Params.cardcolor) "page" $) }}
+        {{ end }}
       </div>
       <h2 style="color: {{ .Params.cardcolor }}">
         {{ if .Params.cardtitle }}

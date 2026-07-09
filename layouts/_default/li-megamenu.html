@@ -8,10 +8,9 @@
   <div class="megamenu-main-service-card">
     <div class="cardtitle">
       <div class="cardicon" style="background-color: {{ .Params.cardcolor }}10">
-        <i
-          class="{{ .Params.cardicon }} icon"
-          style="color: {{ .Params.cardcolor }} !important"
-        ></i>
+        {{ with .Params.cardicon }}
+          {{ partial "fa-icon.html" (dict "class" (printf "%s icon" .) "style" (printf "color: %s !important" $.Params.cardcolor) "page" $) }}
+        {{ end }}
       </div>
       <span
         class="megamenu-main-service-card-title"

@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
-{{ partial "header.html" .Site.Home }}
+{{ partial "header.html" . }}
 <!-- HEADING -->
 <div
   class="heading-default-single"
@@ -74,7 +74,7 @@
         class="icon-block-color"
         style="color: #eed700; background-color: #eed70010"
       >
-        <i class="fa-solid fa-triangle-exclamation icon"></i>
+        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-triangle-exclamation icon" "page" .) }}
       </div>
       <div style="padding: 15px 0">
         <p class="inline_rubrik" style="color: #eed700; margin-bottom: 0">

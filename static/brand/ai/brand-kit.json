@@ -60,7 +60,7 @@
   },
   "designSystem": {
     "sourceCss": [
-      "/css/main-v2.css"
+      "/brand/ai/brand-tokens.css"
     ],
     "surfaces": {
       "page": { "hex": "#FAFEFE", "usage": "Default page, slide, and document surface" },
@@ -105,7 +105,7 @@
       "principle": "When adapting an existing artifact, preserve useful structure but replace generic visual systems with Safespring tokens, local fonts, approved icons, official assets, and verified claims.",
       "requiredChecks": [
         "Use local Montserrat for body text, compact UI labels, and card-header labels. Use local Hind Light or Hind 300 for larger expressive headings.",
-        "Use Font Awesome 6 Pro or approved Safespring symbols for functional icons; do not use emoji icons.",
+        "Use Font Awesome 7 Pro or approved Safespring symbols for functional icons; do not use emoji icons.",
         "Use canonical color tokens only; use cloud blue #E7EFF3 for ordinary component backgrounds.",
         "Use section-header blue #DAE5EE for compact section or card-header fields, with main blue #195F8C text and icons.",
         "Use Montserrat SemiBold / weight 600 for compact card-header label text. Keep Hind Light for expressive document titles and larger headings.",

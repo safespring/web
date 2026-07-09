@@ -1,7 +1,10 @@
 <div class="flexcontainer-three">
   {{ range (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
     {{ if isset .Params "cardorder" }}
+      {{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $.Page) }}{{ end }}
+      {{ .Scratch.Set "faTargetPage" $.Page }}
       {{ .Render "li-index"}}
+      {{ .Scratch.Set "faTargetPage" false }}
       {{ else }}
     {{ end }}
   {{ end }}

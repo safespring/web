@@ -189,30 +189,30 @@ Tack för att du väljer Safesprings tjänster. Vi ser fram emot att arbeta med 
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Förnamn</label>
+            <label for="firstname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Förnamn</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternamn</label>
+            <label for="lastname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Efternamn</label>
         </div>
     </div>
     <div class="form-field">
         <input type="tel" id="phone" name="Contact.cellPhone" required>
-        <label for="phone"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;Mobil</label>
+        <label for="phone">{{< fa-icon class="fas fa-mobile-screen-button" >}}&nbsp;&nbsp;&nbsp;Mobil</label>
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Ange en giltig e-postadress" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
+        <label for="up-email-input">{{< fa-icon class="fas fa-envelope" >}}&nbsp;&nbsp;&nbsp;E-post</label>
     </div>
     <div class="form-field">
         <input type="text" id="eppn" name="Extra.1683706722052">
-        <label for="eppn"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;EPPN (för anslutning till NREN)</label>
+        <label for="eppn">{{< fa-icon class="fas fa-input-text" >}}&nbsp;&nbsp;&nbsp;EPPN (för anslutning till NREN)</label>
     </div>
     <h2>Kontouppgifter</h2>
     <p></p>
     <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required">
-        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
+        <label for="up-client-name-input">{{< fa-icon class="fas fa-briefcase" >}}&nbsp;&nbsp;&nbsp;Organisation</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
@@ -228,19 +228,19 @@ Tack för att du väljer Safesprings tjänster. Vi ser fram emot att arbeta med 
                 <option value="DCO B">DCO B</option>
             </optgroup>
         </select>
-        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Välj din site</label><i class="fas fa-angle-down selection-icon"></i>
+        <label for="site">{{< fa-icon class="fas fa-cloud-check" >}}&nbsp;&nbsp;&nbsp;Välj din site</label>{{< fa-icon class="fas fa-angle-down selection-icon" >}}
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Projektnamn (t.ex. infra.domain.com)</label>
+        <label for="project">{{< fa-icon class="fas fa-input-text" >}}&nbsp;&nbsp;&nbsp;Projektnamn (t.ex. infra.domain.com)</label>
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Ange en giltig e-postadress" id="billing" autocomplete="off" name="Extra.1683706812269" required="required">
-        <label for="billing"><i class="fas fa-envelope-open-dollar"></i>&nbsp;&nbsp;&nbsp;Fakturaadress (e-post)</label>
+        <label for="billing">{{< fa-icon class="fas fa-envelope-open-dollar" >}}&nbsp;&nbsp;&nbsp;Fakturaadress (e-post)</label>
     </div>
     <div class="form-field">
         <input maxlength="512" type="text" id="ip" name="Extra.1683706829902" required>
-        <label for="ip"><i class="fas fa-input-numeric"></i>&nbsp;&nbsp;&nbsp;IP-adress att vitlista för API-åtkomst</label>
+        <label for="ip">{{< fa-icon class="fas fa-input-numeric" >}}&nbsp;&nbsp;&nbsp;IP-adress att vitlista för API-åtkomst</label>
     </div>
     <div class="inputGroup" style="margin-bottom: 25px;">
         <input type="checkbox" value="yes" name="Extra.1715929693168" id="nren-ip-address">
@@ -250,28 +250,28 @@ Tack för att du väljer Safesprings tjänster. Vi ser fram emot att arbeta med 
     <p></p>
     <div class="form-field">
         <input type="text" id="gatekeeper-name" name="Extra.1683706848970" required>
-        <label for="gatekeeper-name"><i class="fas fa-user-gear"></i>&nbsp;&nbsp;&nbsp;Namn</label>
+        <label for="gatekeeper-name">{{< fa-icon class="fas fa-user-gear" >}}&nbsp;&nbsp;&nbsp;Namn</label>
     </div>
     <div class="form-field">
         <input type="tel" id="gatekeeper-phone" name="Extra.1683706862870" required>
-        <label for="gatekeeper-phone"><i class="fa-kit fa-solid-mobile-screen-button-gear"></i>&nbsp;&nbsp;&nbsp;Mobil</label>
+        <label for="gatekeeper-phone">{{< fa-icon class="fa-kit fa-solid-mobile-screen-button-gear" >}}&nbsp;&nbsp;&nbsp;Mobil</label>
     </div>
     <div class="form-field">
         <input type="email" id="gatekeeper-email" name="Extra.1683706879354" required>
-        <label for="gatekeeper-email"><i class="fa-kit fa-solid-envelope-gear"></i>&nbsp;&nbsp;&nbsp;E-post</label>
+        <label for="gatekeeper-email">{{< fa-icon class="fa-kit fa-solid-envelope-gear" >}}&nbsp;&nbsp;&nbsp;E-post</label>
     </div>
     <h2>Godkännande</h2>
     <p>Genom att skicka in detta formulär godkänner du våra villkor och policys. Vi tar våra kunders integritet på största allvar och kommer endast att använda din information för att kunna fullgöra din beställning. Om du har några frågor eller funderingar är du varmt välkommen att kontakta oss. Tack för att du väljer våra tjänster!</p>
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Policy för acceptabel användning <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Öppna policy för acceptabel användning" title="Öppna policy för acceptabel användning"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Policy för acceptabel användning <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Öppna policy för acceptabel användning" title="Öppna policy för acceptabel användning">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Allmänna villkor <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Öppna allmänna villkor" title="Öppna allmänna villkor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Allmänna villkor <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Öppna allmänna villkor" title="Öppna allmänna villkor">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->

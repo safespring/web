@@ -7,7 +7,7 @@
   {{ $href := partial "resolve-link.html" (dict "page" $.Page "href" $.Page.Params.sidebarlinkurl) }}
   <a href="{{ $href }}" target="_blank" rel="noopener noreferrer" class="button"
     >{{ $.Page.Params.sidebarlinkname }}{{ if $.Page.Params.sidebarlinkicon }}
-      &nbsp;&nbsp;&nbsp;<i class="fas {{ $.Page.Params.sidebarlinkicon }}"></i>
+      &nbsp;&nbsp;&nbsp;{{ partial "fa-icon.html" (dict "class" (printf "fas %s" $.Page.Params.sidebarlinkicon) "page" .Page) }}
     {{ end }}</a
   >
 {{ end }}

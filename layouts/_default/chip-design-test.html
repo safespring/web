@@ -31,7 +31,7 @@
                 <div class="chip-badge" aria-label="Nyheder og perspektiver">
                   <img src="/img/flags/da.svg" alt="" width="20" height="20" />
                   <span>Nyheder og perspektiver</span>
-                  <i class="fa-solid fa-book" aria-hidden="true"></i>
+                  {{ partial "fa-icon.html" (dict "class" "fa-solid fa-book" "page" $) }}
                 </div>
               {{ end }}
             </div>
@@ -40,7 +40,7 @@
                 <div class="chip-badge" aria-label="Nyheder og perspektiver">
                   <img src="/img/flags/da.svg" alt="" width="20" height="20" />
                   <span>Nyheder og perspektiver</span>
-                  <i class="fa-solid fa-book" aria-hidden="true"></i>
+                  {{ partial "fa-icon.html" (dict "class" "fa-solid fa-book" "page" $) }}
                 </div>
               {{ end }}
               <h3>{{ .title }}</h3>

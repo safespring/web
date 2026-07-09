@@ -66,7 +66,7 @@
       <div class="header-button">
         <a href="{{ $sidebarlinkurl }}" target="_blank" rel="noopener noreferrer" class="button"
           >{{ if .Params.sidebarlinkicon }}
-            <i class="fas {{ .Params.sidebarlinkicon }}"></i>&nbsp;&nbsp;&nbsp;
+            {{ partial "fa-icon.html" (dict "class" (printf "fas %s" .Params.sidebarlinkicon) "page" .) }}&nbsp;&nbsp;&nbsp;
           {{ end }}{{ .Params.sidebarlinkname }}
         </a>
         {{ if .Params.sidebarlinkurl2 }}
@@ -102,15 +102,16 @@
       {{ if eq .RelPermalink "/webinar/" }}
         <!-- Vi är på root av "webinar" -->
         {{ range .Pages }}
-          {{ if .IsSection }}{{ .Render "series-summary" }}{{ end }}
+          {{ if .IsSection }}{{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" $) }}{{ .Scratch.Set "faTargetPage" $ }}{{ .Render "series-summary" }}{{ .Scratch.Set "faTargetPage" false }}{{ end }}
         {{ end }}
       {{ else }}
         <!-- Vi är inne i en sub-sektion -->
         {{ range sort .Pages "Params.episode" }}
           {{ if not .IsSection }}
-            {{ .Render
-              "episode-summary"
-            }}
+            {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" $) }}
+            {{ .Scratch.Set "faTargetPage" $ }}
+            {{ .Render "episode-summary" }}
+            {{ .Scratch.Set "faTargetPage" false }}
           {{ end }}
         {{ end }}
       {{ end }}
@@ -129,10 +130,12 @@
     {{ $scrollLeftLabel = "Rul til venstre" }}
     {{ $scrollRightLabel = "Rul til højre" }}
   {{ end }}
+  {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-left" "page" .) }}
+  {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" .) }}
   <div class="scroll-controls">
-    <button type="button" id="scrollLeft" aria-label="{{ $scrollLeftLabel }}"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+    <button type="button" id="scrollLeft" aria-label="{{ $scrollLeftLabel }}">{{ partial "fa-icon.html" (dict "class" "fas fa-arrow-left" "page" .) }}</button>
     <!-- Vänsterpil -->
-    <button type="button" id="scrollRight" aria-label="{{ $scrollRightLabel }}"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+    <button type="button" id="scrollRight" aria-label="{{ $scrollRightLabel }}">{{ partial "fa-icon.html" (dict "class" "fas fa-arrow-right" "page" .) }}</button>
     <!-- Högerpil -->
   </div>
   <script type="text/javascript">

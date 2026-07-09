@@ -15,7 +15,7 @@
         <p class="episode-counter-episode">{{ $number }}</p>
         <div>
           <h2>{{ $chapter.title }}</h2>
-          <span class="text-button">{{ $timeLabel }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span>
+          <span class="text-button">{{ $timeLabel }}&nbsp;&nbsp;&nbsp;{{ partial "fa-icon.html" (dict "class" "fas fa-arrow-right" "page" $.Page) }}</span>
         </div>
       </div>
     </div>

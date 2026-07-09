@@ -103,7 +103,7 @@ Use the correction register as a learning loop for Safespring brand alignment:
 Current one-pager lessons:
 - Do not use Inter, Roboto, Arial-first, Google Fonts, or another standalone font system when Safespring fonts are available.
 - Use local Montserrat for body text, compact UI labels, and card-header labels. Use local Hind Light / Hind 300 for larger expressive headings.
-- Use Font Awesome 6 Pro or curated Safespring symbols for functional icons. Do not use emoji as brand or interface icons.
+- Use Font Awesome 7 Pro or curated Safespring symbols for functional icons. Do not use emoji as brand or interface icons.
 - For A4 one-pagers and printable documents, set the physical format explicitly to `210mm x 297mm`, add an A4 page rule, and verify that the page has no internal overflow.
 - For Word-like A4 one-pagers and formal documents, use Word's standard 1 inch / `25.4mm` content margin grid unless a different margin system is explicitly requested.
 - Header and footer background bands may bleed to the paper edges in formal one-pagers, but content inside them and all body content must align to the document margin grid horizontally. In A4 one-pagers using the Word-standard grid, header and footer content may be vertically centered inside approved-height bands when that creates calmer document balance. Color choices must still follow the cloud-blue/main-color background rules unless a band is an approved brand mark or explicitly approved special case.

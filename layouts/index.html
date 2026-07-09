@@ -30,7 +30,7 @@
     <section class="background-bright">
       <div class="flexcontainer-three">
         {{ range (where $.Site.RegularPages "Section" "services").ByParam "cardorder" }}
-          {{ if isset .Params "cardorder" }}{{ .Render "li-index" }}{{ end }}
+          {{ if isset .Params "cardorder" }}{{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $) }}{{ end }}{{ .Scratch.Set "faTargetPage" $ }}{{ .Render "li-index" }}{{ .Scratch.Set "faTargetPage" false }}{{ end }}
         {{ end }}
       </div>
       <div id="scaleout-usecase">

@@ -1,0 +1,20 @@
+{{- $symbol := . -}}
+{{- $icon := false -}}
+{{- $solidIcons := index hugo.Data.icons "fa-solid" -}}
+{{- $customIcons := index hugo.Data.icons "fa-custom" -}}
+{{- range $solidIcons -}}
+  {{- if eq .symbol $symbol -}}
+    {{- $icon = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $icon -}}
+  {{- range $customIcons -}}
+    {{- if eq .symbol $symbol -}}
+      {{- $icon = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $icon -}}
+  {{- errorf "Font Awesome SVG symbol %q is not present in committed icon data" $symbol -}}
+{{- end -}}
+{{- return $icon -}}

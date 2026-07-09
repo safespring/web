@@ -176,22 +176,22 @@ language: "da"
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Fornavn</label>
+            <label for="firstname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Fornavn</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Efternavn</label>
+            <label for="lastname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Efternavn</label>
         </div>
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Indtast venligst en gyldig e-mailadresse" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-mail</label>
+        <label for="up-email-input">{{< fa-icon class="fas fa-envelope" >}}&nbsp;&nbsp;&nbsp;E-mail</label>
     </div>
     <h2>Kontooplysninger</h2>
     <p></p>
     <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="Cristie">
-        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisation</label>
+        <label for="up-client-name-input">{{< fa-icon class="fas fa-briefcase" >}}&nbsp;&nbsp;&nbsp;Organisation</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
@@ -201,11 +201,11 @@ language: "da"
                 <option value="OSL 1">OSL 1</option>
             </optgroup>
         </select>
-        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Vælg din lokation</label><i class="fas fa-angle-down selection-icon"></i>
+        <label for="site">{{< fa-icon class="fas fa-cloud-check" >}}&nbsp;&nbsp;&nbsp;Vælg din lokation</label>{{< fa-icon class="fas fa-angle-down selection-icon" >}}
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Projektnavn (Fx. customer1.reseller1.com)</label>
+        <label for="project">{{< fa-icon class="fas fa-input-text" >}}&nbsp;&nbsp;&nbsp;Projektnavn (Fx. customer1.reseller1.com)</label>
     </div>
 {{% accordion title="Sådan navngiver du et projekt" %}}
 Cristie bør navngive deres projekter efter følgende nomenklatur:
@@ -221,13 +221,13 @@ På den måde kan vi bevare et godt overblik over, hvilke omkostninger der skal 
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Politik for acceptabel brug <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Åbn politik for acceptabel brug" title="Åbn politik for acceptabel brug"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Politik for acceptabel brug <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Åbn politik for acceptabel brug" title="Åbn politik for acceptabel brug">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Generelle vilkår & betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Åbn generelle vilkår og betingelser" title="Åbn generelle vilkår og betingelser"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Generelle vilkår & betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Åbn generelle vilkår og betingelser" title="Åbn generelle vilkår og betingelser">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->

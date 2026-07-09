@@ -25,7 +25,7 @@
 <div class="note-dotted" style="--note-accent: {{ $accent }};">
   {{ if $title }}
   <p class="note-dotted-title note-dotted-title--custom">
-    <span class="note-dotted-icon" aria-hidden="true"><i class="{{ $icon }}"></i></span>
+    <span class="note-dotted-icon" aria-hidden="true">{{ partial "fa-icon.html" (dict "class" $icon "page" .Page) }}</span>
     <span>{{ $title }}</span>
   </p>
   {{ end }}

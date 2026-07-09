@@ -146,10 +146,15 @@ video::-webkit-media-text-track-display {
 	transition:opacity 0.18s ease, transform 0.18s ease, background-color 0.18s ease;
 }
 
-.video-play-overlay i {
+.video-play-overlay i,
+.video-play-overlay .fa-icon {
 	margin-left:0.14em;
 	font-size:clamp(24px, 4.2vw, 36px);
 	line-height:1;
+}
+
+.video-play-overlay .fa-icon {
+	font-size:clamp(32px, 5vw, 44px);
 }
 
 .video-play-overlay:hover,
@@ -216,6 +221,8 @@ video::-webkit-media-text-track-display {
 
 .video-timeline--chapters {
 	height:8px;
+	left:3%;
+	z-index:7;
 	background:transparent;
 	overflow:visible;
 }
@@ -261,6 +268,19 @@ video::-webkit-media-text-track-display {
 	transition:width 0.1s linear;
 }
 
+.video-chapter-segment .sr-only {
+	position:absolute;
+	width:1px;
+	height:1px;
+	padding:0;
+	margin:-1px;
+	overflow:hidden;
+	clip:rect(0, 0, 0, 0);
+	clip-path:inset(50%);
+	white-space:nowrap;
+	border:0;
+}
+
 .video-chapter-segment:hover,
 .video-chapter-segment:focus-visible,
 .video-chapter-segment.is-tooltip-visible {
@@ -282,7 +302,7 @@ video::-webkit-media-text-track-display {
 	position:absolute;
 	left:50%;
 	bottom:calc(100% + 12px);
-	z-index:8;
+	z-index:9;
 	display:block;
 	max-width:min(240px, 70vw);
 	padding:9px 12px 8px;
@@ -645,14 +665,28 @@ video {
 }
 
 .webinarplaylist ul li::before {
-  display: inline-block;
+  background: var(--clear-blue-color);
+  content: "";
+  display: block;
+  flex: 0 0 auto;
   font-size: 100%;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 6 Pro";
-  content: "\f144";
-  color: var(--clear-blue-color);
-  padding: 0px 0px 0px 20px;
+  height: 1.65em;
+  margin: 0 1.5rem 0 0;
+  border-radius: 50%;
+  width: 1.65em;
+}
+
+.webinarplaylist ul li::after {
+  background: #fff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  content: "";
+  height: 0.62em;
+  left: calc(15px + 0.67em);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.2s ease;
+  width: 0.48em;
 }
 
 .webinarplaylist ul li {
@@ -666,6 +700,7 @@ video {
   list-style-type: none;
   list-style-position: outside;
   line-height: 1 !important;
+  position: relative;
   transition: all 0.2s ease;
 }
 
@@ -676,17 +711,21 @@ video {
   color: var(--main-color) !important;
   cursor: pointer;
   display: flex;
+  gap: 0.75rem;
   font: 16px var(--hind-font) !important;
   min-height: 44px;
   padding: 0;
   text-align: left;
+  text-transform: none;
   width: 100%;
 }
 
 .webinarplaylist-button > span:not(.timer),
 .webinarplaylist ul li > span:not(.timer) {
+  flex: 1 1 auto;
   min-width: 0;
   overflow-wrap: anywhere;
+  text-transform: none;
   white-space: normal;
 }
 
@@ -709,6 +748,7 @@ video {
   font: 16px var(--hind-font) !important;
   color: var(--main-color) !important;
   min-height: 44px;
+  text-transform: none;
 }
 
 .webinarplaylist li:hover {
@@ -716,4 +756,8 @@ video {
   border-radius: 10px;
   padding-left: 35px;
   margin: 0px -10px 0 -20px;
+}
+
+.webinarplaylist li:hover::after {
+  left: calc(35px + 0.67em);
 }

@@ -6,15 +6,13 @@
     "format": "prettier --write .",
     "pdf:compliance": "node scripts/build-compliance-pdfs.mjs",
     "pdf:setup": "playwright install chromium",
-    "pdf:watch": "node scripts/watch-compliance-pdfs.mjs",
-    "purgecss": "purgecss --css static/css/main-v2.css --output static/css/main-v2.css --content layouts/**/*.html content/**/*.md"
+    "pdf:watch": "node scripts/watch-compliance-pdfs.mjs"
   },
   "devDependencies": {
     "@pdf-lib/fontkit": "^1.1.1",
     "pdf-lib": "^1.17.1",
     "playwright": "^1.52.0",
     "prettier": "^3.5.3",
-    "prettier-plugin-go-template": "^0.0.15",
-    "purgecss": "^7.0.2"
+    "prettier-plugin-go-template": "^0.0.15"
   }
 }

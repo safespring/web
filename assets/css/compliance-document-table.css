@@ -3,6 +3,14 @@
   position: relative;
 }
 
+@media (min-width: 901px) {
+  .main-default-single .content-default-single > .compliance-document-table {
+    box-sizing: border-box;
+    max-width: 90vw;
+    min-width: min(700px, 90vw);
+  }
+}
+
 .compliance-document-table__body {
   display: block;
 }

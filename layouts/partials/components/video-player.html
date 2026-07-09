@@ -43,6 +43,9 @@
 {{- end -}}
 {{- $initialSubtitleLabel := cond (eq (lower $ccDefaultOn) "true") $subtitleDisableLabel $subtitleEnableLabel -}}
 {{- $initialMuteLabel := cond $isMuted $unmuteLabel $muteLabel -}}
+{{- range slice "fas fa-play" "fa-solid fa-closed-captioning-slash" "fa-solid fa-closed-captioning" "fa-solid fa-volume" "fa-solid fa-volume-xmark" -}}
+  {{- $_ := partial "fa-register-icon.html" (dict "class" . "page" $page) -}}
+{{- end -}}
 
 <div {{ if $playerId }}id="{{ $playerId }}"{{ end }} class="video-player {{ $containerClass }}" data-video-player
   {{ if $playerId }}{{ printf "data-player-id=%q" $playerId | safeHTMLAttr }}{{ end }}
@@ -70,7 +73,7 @@
   <div data-role="poster" class="video-poster" style="background-image: url('{{ $videoPoster }}');" aria-hidden="true"></div>
   {{- end }}
   <button type="button" data-role="play-overlay" class="video-play-overlay" aria-label="{{ $cursorTextPaused }}" title="{{ $cursorTextPaused }}">
-    <i class="fas fa-play" aria-hidden="true"></i>
+    {{ partial "fa-icon.html" (dict "class" "fas fa-play" "page" $page) }}
   </button>
   <div data-role="caption-overlay" class="video-caption-overlay" aria-live="polite"></div>
   <div data-role="custom-cursor" class="custom-cursor">{{ $cursorTextPaused }}</div>
@@ -106,8 +109,8 @@
     {{- end }}
   </div>
   <div data-role="subtitle-controls" class="video-subtitles">
-    <button type="button" data-role="subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="{{ $initialSubtitleLabel }}" title="{{ $initialSubtitleLabel }}"><i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i></button>
-    <button type="button" data-role="mute-toggle" class="video-mute-toggle" aria-pressed="{{ cond $isMuted "true" "false" }}" aria-label="{{ $initialMuteLabel }}" title="{{ $initialMuteLabel }}"><i class="fa-solid fa-volume" aria-hidden="true"></i></button>
+    <button type="button" data-role="subtitle-toggle" class="video-subtitle-toggle" aria-pressed="false" aria-label="{{ $initialSubtitleLabel }}" title="{{ $initialSubtitleLabel }}">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-closed-captioning-slash" "extraClasses" (slice "fa-solid fa-closed-captioning") "page" $page) }}</button>
+    <button type="button" data-role="mute-toggle" class="video-mute-toggle" aria-pressed="{{ cond $isMuted "true" "false" }}" aria-label="{{ $initialMuteLabel }}" title="{{ $initialMuteLabel }}">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-volume" "extraClasses" (slice "fa-solid fa-volume-xmark") "page" $page) }}</button>
     <select data-role="subtitle-select" class="video-subtitle-select" aria-label="{{ $subtitleLanguageLabel }}" title="{{ $subtitleLanguageLabel }}"></select>
   </div>
   <div data-role="time" class="video-time">00:00 / 00:00</div>

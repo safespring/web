@@ -10,6 +10,10 @@
 {{ $submit := default (T "form.submit") .submit }}
 {{ $acceptAlert := default (T "form.not_accepted") .acceptAlert }}
 {{ $successUrl := default "/contact-thanks/" .successUrl }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-user" "page" $page) }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-envelope" "page" $page) }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-mobile-screen-button" "page" $page) }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-briefcase" "page" $page) }}
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
@@ -184,6 +188,13 @@
   }
 
   .contact-form .phone-field label {
+    transform: translateY(-205%);
+    -webkit-transform: translateY(-205%);
+    color: #3C9BCD;
+    font: 400 12px/16px 'Hind';
+    letter-spacing: 0.5px;
+    background-color: #fafefe;
+    border-radius: 100px;
     pointer-events: none;
   }
 
@@ -314,26 +325,26 @@
   <div class="column-two">
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-firstname-input" autocomplete="given-name" name="Contact.firstname" required="required">
-      <label for="up-firstname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ $firstName }}</label>
+      <label for="up-firstname-input">{{ partial "fa-icon.html" (dict "class" "fas fa-user" "page" $page) }}&nbsp;&nbsp;&nbsp;{{ $firstName }}</label>
     </div>
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-lastname-input" autocomplete="family-name" name="Contact.lastname" required="required">
-      <label for="up-lastname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ $lastName }}</label>
+      <label for="up-lastname-input">{{ partial "fa-icon.html" (dict "class" "fas fa-user" "page" $page) }}&nbsp;&nbsp;&nbsp;{{ $lastName }}</label>
     </div>
   </div>
   <div class="column-two">
     <div class="form-field">
       <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="{{ T "form.email_title" }}" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
-      <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;{{ $email }}</label>
+      <label for="up-email-input">{{ partial "fa-icon.html" (dict "class" "fas fa-envelope" "page" $page) }}&nbsp;&nbsp;&nbsp;{{ $email }}</label>
     </div>
     <div class="form-field phone-field">
       <input maxlength="512" type="tel" placeholder="" id="up-phone-input" autocomplete="tel" name="Contact.cellPhone">
-      <label for="up-phone-input"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ $phone }}</label>
+      <label for="up-phone-input">{{ partial "fa-icon.html" (dict "class" "fas fa-mobile-screen-button" "page" $page) }}&nbsp;&nbsp;&nbsp;{{ $phone }}</label>
     </div>
   </div>
   <div class="form-field">
     <input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
-    <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;{{ $organization }}</label>
+    <label for="up-client-name-input">{{ partial "fa-icon.html" (dict "class" "fas fa-briefcase" "page" $page) }}&nbsp;&nbsp;&nbsp;{{ $organization }}</label>
   </div>
   <div class="inputGroup">
     <input type="checkbox" value="on" name="singleOptIn.4riingqjtdo" id="accept-usage">

@@ -16,7 +16,7 @@
           ></div>
           {{ if eq .RelPermalink $currentNode.RelPermalink }}{{else}}
           <div class="play-button">
-            <i class="fas fa-play"></i>
+            {{ partial "fa-icon.html" (dict "class" "fas fa-play" "page" $.Page) }}
           </div>
           {{ end }}
         </div>

@@ -4,7 +4,7 @@
 {{- $pageSubtitleLang := index $pageSubtitleLangMap $language | default "" -}}
 
 {{ partial "components/video-player.html" (dict
-  "page" .Page
+  "page" .
   "src" (index $videoConfig "src" | default "")
   "poster" (index $videoConfig "poster" | default "/img/card/safespring_use-case_scaleout-1080p.jpg")
   "tracks" (index $videoConfig "tracks" | default (slice))

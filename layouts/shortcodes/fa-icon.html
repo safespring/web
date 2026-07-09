@@ -1,0 +1,4 @@
+{{- $class := .Get "class" | default (.Get 0) -}}
+{{- $style := .Get "style" | default "" -}}
+{{- $title := .Get "title" | default "" -}}
+{{- partial "fa-icon.html" (dict "class" $class "style" $style "title" $title "page" .Page) -}}

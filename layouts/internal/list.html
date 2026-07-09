@@ -24,7 +24,10 @@
     {{ if eq .RelPermalink "/internal/" }}
       {{ range .Pages }}
         {{ if .IsSection }}
+          {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" $) }}
+          {{ .Scratch.Set "faTargetPage" $ }}
           {{ .Render "series-summary" }}
+          {{ .Scratch.Set "faTargetPage" false }}
         {{ end }}
       {{ end }}
     {{ else }}
@@ -37,16 +40,21 @@
               {{ partial "demo-chapter-card.html" (dict "Page" $episodePage "Chapter" $chapter "Number" (add $chapterIndex 1)) }}
             {{ end }}
           {{ else }}
+            {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" $) }}
+            {{ .Scratch.Set "faTargetPage" $ }}
             {{ .Render "episode-summary" }}
+            {{ .Scratch.Set "faTargetPage" false }}
           {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
   </div>
 
+  {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-left" "page" .) }}
+  {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" .) }}
   <div class="scroll-controls">
-    <button id="scrollLeft" aria-label="Scroll left"><i class="fas fa-arrow-left"></i></button>
-    <button id="scrollRight" aria-label="Scroll right"><i class="fas fa-arrow-right"></i></button>
+    <button id="scrollLeft" aria-label="Scroll left">{{ partial "fa-icon.html" (dict "class" "fas fa-arrow-left" "page" .) }}</button>
+    <button id="scrollRight" aria-label="Scroll right">{{ partial "fa-icon.html" (dict "class" "fas fa-arrow-right" "page" .) }}</button>
   </div>
   <script>
     document.getElementById('scrollLeft').addEventListener('click', function () {

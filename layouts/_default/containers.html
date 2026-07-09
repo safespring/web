@@ -875,7 +875,7 @@ h3{
   <div class="grid">
     <article class="col">
       <div class="icon-wrap" aria-hidden="true">
-        <i class="fa-solid fa-forward-fast"></i>
+        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-forward-fast" "page" .) }}
       </div>
       <h3>Fast</h3>
       <p>
@@ -885,7 +885,7 @@ h3{
 
     <article class="col">
       <div class="icon-wrap" aria-hidden="true">
-        <i style="font-size:45px" class="fa-kit fa-eu-flag"></i>
+        {{ partial "fa-icon.html" (dict "class" "fa-kit fa-eu-flag" "style" "font-size:45px" "page" .) }}
       </div>
       <h3>Sovereign</h3>
       <p>
@@ -895,7 +895,7 @@ h3{
 
     <article class="col">
       <div class="icon-wrap" aria-hidden="true">
-        <i class="fa-solid fa-cloud-arrow-up"></i>
+        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-cloud-arrow-up" "page" .) }}
       </div>
       <h3>Scalable</h3>
       <p>
@@ -950,9 +950,9 @@ h3{
   margin: 0 0 12px 0;
 }
 
-/* ===== OPTION A: Plain list with an inline <i> icon =====
+/* ===== OPTION A: Plain list with an inline SVG icon =====
    <ul class="modern-list">
-     <li><i class="fa-solid fa-check"></i> Your text…</li>
+     <li><svg class="fa-icon fa-solid fa-check">…</svg> Your text…</li>
    </ul>
 */
 .modern-list > li{
@@ -963,7 +963,7 @@ h3{
 }
 
 /* icon circle */
-.modern-list > li > i{
+.modern-list > li > .fa-icon{
   width: 36px;
   height: 36px;
   display: grid;
@@ -971,12 +971,12 @@ h3{
   border-radius: 50%;
   background: var(--list-icon-circle, var(--list-icon-circle-fallback));
   color: var(--list-icon);
-  font-size: 18px;                /* FA icon size */
+  font-size: 18px;
   line-height: 1;
 }
 
 /* text column */
-.modern-list > li > :not(i){
+.modern-list > li > :not(.fa-icon){
   align-self: center;
 }
 
@@ -1011,7 +1011,7 @@ h3{
     <div style="margin:50px 0;">
       <ul class="fa-ul modern-list">
         {{ range $containerFormCopy.bullets }}
-        <li><i class="fa-solid fa-check"></i> {{ . }}</li>
+        <li>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-check" "page" $) }} {{ . }}</li>
         {{ end }}
       </ul>
     </div>
@@ -1379,21 +1379,21 @@ select {
   <!-- <div class="column-two"> -->
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-firstname-input" autocomplete="given-name" name="Contact.firstname" required="required">
-      <label for="up-firstname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.f_name" }}</label>
+      <label for="up-firstname-input">{{ partial "fa-icon.html" (dict "class" "fas fa-user" "page" .) }}&nbsp;&nbsp;&nbsp;{{ T "form.f_name" }}</label>
     </div>
     <div class="form-field">
       <input maxlength="512" type="text" placeholder="" id="up-lastname-input" autocomplete="family-name" name="Contact.lastname" required="required">
-      <label for="up-lastname-input"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;{{ T "form.l_name" }}</label>
+      <label for="up-lastname-input">{{ partial "fa-icon.html" (dict "class" "fas fa-user" "page" .) }}&nbsp;&nbsp;&nbsp;{{ T "form.l_name" }}</label>
     </div>
     <!-- </div> -->
     <!-- <div class="column-two"> -->
       <div class="active-input form-field">
         <input maxlength="512" type="text" placeholder="" id="up-phone-input" name="Contact.cellPhone">
-        <label for="up-phone-input"><i class="fas fa-mobile-screen-button"></i>&nbsp;&nbsp;&nbsp;{{ T "form.phone" }}</label>
+        <label for="up-phone-input">{{ partial "fa-icon.html" (dict "class" "fas fa-mobile-screen-button" "page" .) }}&nbsp;&nbsp;&nbsp;{{ T "form.phone" }}</label>
       </div>
       <div class="email form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="{{ T "form.email_title" }}" id="up-email-input" autocomplete="email" name="Contact.email" required="required">
-        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;{{ T "form.email" }}</label>
+        <label for="up-email-input">{{ partial "fa-icon.html" (dict "class" "fas fa-envelope" "page" .) }}&nbsp;&nbsp;&nbsp;{{ T "form.email" }}</label>
       </div>
       <small id="email-domain-warning">
         {{ $containerFormCopy.workEmail }}
@@ -1401,7 +1401,7 @@ select {
       <!-- </div> -->
       <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" autocomplete="organization" name="Client.name" required="required">
-        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;{{ T "form.org" }}</label>
+        <label for="up-client-name-input">{{ partial "fa-icon.html" (dict "class" "fas fa-briefcase" "page" .) }}&nbsp;&nbsp;&nbsp;{{ T "form.org" }}</label>
       </div>
       <!-- REQUIRED FIELDS -->
       <input type="hidden" name="formCid" value="9549">

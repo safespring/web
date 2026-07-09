@@ -2,6 +2,14 @@
 {{ $primaryServiceSlugs := slice "containerplatform" "compute" "storage" }}
 {{ $secondaryServiceSlugs := slice "machine-learning" "backup" "database-as-a-service" }}
 {{ $aboutPage := "about-safespring" }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-address-card" "page" .) }}
+{{ range $slug := $primaryServiceSlugs }}
+  {{ range $servicePages }}
+    {{ if eq .File.BaseFileName $slug }}
+      {{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $) }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 <header id="navbar" class="site-header">
   <div class="site-header-wrapper">
@@ -54,7 +62,7 @@
               id="main-menu-link-5"
               href="{{ relref . "contact" }}"
               class="site-header-button-contact"
-              >{{ T "menu.contact" }}</a
+              >{{ partial "fa-icon.html" (dict "class" "fa-solid fa-address-card" "page" .) }}{{ T "menu.contact" }}</a
             >
           </li>
         </ul>
@@ -87,7 +95,9 @@
       {{ range $slug := $primaryServiceSlugs }}
         {{ range $servicePages }}
           {{ if eq .File.BaseFileName $slug }}
+            {{ .Scratch.Set "faTargetPage" $ }}
             {{ .Render "li-megamenu" }}
+            {{ .Scratch.Set "faTargetPage" false }}
           {{ end }}
         {{ end }}
       {{ end }}

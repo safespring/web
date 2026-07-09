@@ -31,6 +31,7 @@
 {{ $isPricePage := and .File (eq .File.BaseFileName "price") }}
 <body{{ if $isPricePage }} class="has-mobile-price-tables"{{ end }}>
 <div class="heading-default-single{{ if .Params.logobannertransparent }} heading-default-single--with-logo-banner{{ end }}">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
+    {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
     {{ .Render "li3" }}
     {{ if .Params.logobannertransparent }}{{ partial "logobanner-transparent.html" . }}{{ end }}
   </div>
@@ -108,7 +109,7 @@
             <dt>{{ $documentPDFLabel }}</dt>
             <dd>
               <a class="document-download__link" href="{{ . }}" download>
-                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                {{ partial "fa-icon.html" (dict "class" "fa-solid fa-download" "page" $) }}
                 {{ $documentDownloadLabel }}
               </a>
             </dd>

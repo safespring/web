@@ -119,7 +119,7 @@
           title="Please enter a valid email"
         />
         <label for="up-email-input">
-          <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email
+          {{ partial "fa-icon.html" (dict "class" "fas fa-envelope" "page" .Page) }}&nbsp;&nbsp;&nbsp;Email
         </label>
       </div>
 
@@ -143,8 +143,7 @@
             target="_blank"
             rel="noopener noreferrer"
             >{{ T "price_list.terms" }}
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+            {{ partial "fa-icon.html" (dict "class" "fa-solid fa-arrow-up-right-from-square" "page" .Page) }}</a>
         </label>
       </div>
       <input type="hidden" name="formCid" value="9549" />

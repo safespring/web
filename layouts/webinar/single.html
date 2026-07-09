@@ -4,6 +4,7 @@
   {{ partial "header.html" . }}
   <!-- HEADING -->
   <div class="heading-default-single">
+    {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
     {{ .Render "li3" }}
   </div>
 
@@ -12,7 +13,7 @@
     <div class="content-default-single">
       {{ if .Params.videoURL }}
         {{ partial "components/video-player.html" (dict
-          "page" .Page
+          "page" .
           "src" .Params.videoURL
           "poster" .Params.thumbnail
           "tracks" (.Params.subtitles | default (slice))
@@ -38,7 +39,7 @@
     <div class="sidebar-default-single">
       {{ if .Params.chapters }}
         <button type="button" class="mobile-toc" id="mobile-toc-webinar">
-          <i class="fa-solid fa-list-ul"></i> {{ if .Params.chaptersTitle }}
+          {{ partial "fa-icon.html" (dict "class" "fa-solid fa-list-ul" "extraClasses" (slice "fa-solid fa-xmark") "page" .) }} {{ if .Params.chaptersTitle }}
             {{ .Params.chaptersTitle }}
           {{ else }}
             {{ T "webinar.chapters" }}
@@ -124,13 +125,25 @@
         return;
       }
 
-      function resetToggleIcon() {
-        var icon = toggleBtn.querySelector("i");
+      function setToggleIcon(isOpen) {
+        var icon = toggleBtn.querySelector("svg.fa-icon");
+        var use = icon ? icon.querySelector("use") : null;
+        var iconName = isOpen ? "xmark" : "list-ul";
+        var symbol = "#fa-solid-" + iconName;
         if (!icon) {
           return;
         }
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-list-ul");
+        icon.classList.toggle("fa-list-ul", !isOpen);
+        icon.classList.toggle("fa-xmark", isOpen);
+        icon.setAttribute("data-fa-symbol", symbol.slice(1));
+        if (use) {
+          use.setAttribute("href", symbol);
+          use.setAttributeNS("http://www.w3.org/1999/xlink", "href", symbol);
+        }
+      }
+
+      function resetToggleIcon() {
+        setToggleIcon(false);
       }
 
       function closeMobileToc() {
@@ -147,15 +160,7 @@
         body.classList.toggle("no-scroll");
         toggleBtn.classList.toggle("expanded");
 
-        // Ändra ikon
-        var icon = toggleBtn.querySelector("i");
-        if (toggleBtn.classList.contains("expanded")) {
-          icon.classList.remove("fa-list-ul");
-          icon.classList.add("fa-xmark");
-        } else {
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-list-ul");
-        }
+        setToggleIcon(toggleBtn.classList.contains("expanded"));
       });
 
       // Lägg till event listeners på länkar i innehållsförteckningen

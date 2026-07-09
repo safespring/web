@@ -1,3 +1,5 @@
+  {{ if .Params.sidebarphone }}{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-phone" "page" .) }}{{ end }}
+  {{ if .Params.sidebarmail }}{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-at" "page" .) }}{{ end }}
   {{ $toc := "" }}
   {{ if .Params.toc }}
   {{ $toc = .Page.TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" }}
@@ -31,10 +33,11 @@
           <p>{{ T "sidebar.main_text2" }}</p>
         {{ end }}
         {{ if .Params.sidebarphone }}
-          <p class="sidebar-content-button"><i class="fa-solid fa-phone"></i><a href="tel:{{ .Params.sidebarphone }}">{{ .Params.sidebarphone }}</a></p>
+          {{ $sidebarPhone := partial "format-phone.html" (dict "phone" .Params.sidebarphone "page" .) }}
+          <p class="sidebar-content-button">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-phone" "page" .) }}<a href="tel:{{ $sidebarPhone.href }}">{{ $sidebarPhone.label }}</a></p>
         {{ end }}
         {{ if .Params.sidebarmail }}
-          <p class="sidebar-content-button"><i class="fa-solid fa-at"></i><a href="mailto:{{ .Params.sidebarmail }}">{{ T "sidebar.send_email" }}</a></p>
+          <p class="sidebar-content-button">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-at" "page" .) }}<a href="mailto:{{ .Params.sidebarmail }}">{{ T "sidebar.send_email" }}</a></p>
         {{ end }}
       </div>
 
@@ -84,10 +87,11 @@
   </div>
   {{ end }}
 
-  <div class="sidebar-container demo-sticky">
+  {{ $isCareerApply := and (eq .Section "career") .Params.sidebarlinkurl }}
+  <div class="sidebar-container demo-sticky{{ if not $isCareerApply }} demo-sticky--demo-link{{ end }}">
     <div class="sidebar-content">
       <div>
-        {{ if and (eq .Section "career") .Params.sidebarlinkurl }}
+        {{ if $isCareerApply }}
         <p class="card-section"></p>
         <span class="card-heading">
           {{ .Params.sidebarlinkname | default "Apply now" }}
@@ -102,14 +106,17 @@
         {{ $sidebarlinkurl := partial "resolve-link.html" (dict "page" . "href" .Params.sidebarlinkurl) }}
         <a class="button" href="{{ $sidebarlinkurl }}">{{ .Params.sidebarlinkname | default "Apply now" }}</a>
         {{ else }}
-        <p class="card-section">{{ .Params.documentation }}</p>
-        <span class="card-heading">
-          {{ T "sidebar.demo" }}
-        </span>
-        <p class="mb-2">
-          {{ T "sidebar.demo_show" }}
-        </p>
-        <a class="button" href="{{ relref . "demo" }}">{{ T "sidebar.demo" }}</a>
+        <a
+          class="demo-sticky-card matomo-track"
+          data-matomo-location="sidebar-demo"
+          data-matomo-label="{{ T "sidebar.demo" }}"
+          href="{{ relref . "demo" }}"
+        >
+          <span class="demo-sticky-card__icon" aria-hidden="true">
+            {{ partial "fa-icon.html" (dict "class" "fa-solid fa-video" "page" .) }}
+          </span>
+          <span class="demo-sticky-card__label">{{ T "sidebar.demo" }}</span>
+        </a>
         {{ end }}
       </div>
     </div>
@@ -139,6 +146,23 @@ document.addEventListener("DOMContentLoaded", function() {
         d = "#9da9ad";
 
     if (t) {
+        function setTocIcon(isOpen) {
+            var e = t.querySelector("svg.fa-icon"),
+                use = e ? e.querySelector("use") : null,
+                iconName = isOpen ? "xmark" : "list-ul",
+                symbol = "#fa-solid-" + iconName;
+            if (!e) {
+                return;
+            }
+            e.classList.toggle("fa-list-ul", !isOpen);
+            e.classList.toggle("fa-xmark", isOpen);
+            e.setAttribute("data-fa-symbol", symbol.slice(1));
+            if (use) {
+                use.setAttribute("href", symbol);
+                use.setAttributeNS("http://www.w3.org/1999/xlink", "href", symbol);
+            }
+        }
+
         function setTocState(isOpen) {
             n.classList.toggle("expanded", isOpen);
             s.classList.toggle("visible", isOpen);
@@ -150,14 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 m.setAttribute("content", isOpen ? d : c);
             }
 
-            var e = t.querySelector("i");
-            if (isOpen) {
-                e.classList.remove("fa-list-ul");
-                e.classList.add("fa-xmark");
-            } else {
-                e.classList.remove("fa-xmark");
-                e.classList.add("fa-list-ul");
-            }
+            setTocIcon(isOpen);
         }
 
         // Lägg till event listener på menyknappen

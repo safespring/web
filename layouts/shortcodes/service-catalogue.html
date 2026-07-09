@@ -2,6 +2,6 @@
   {{ range (where $.Site.RegularPages "Section" "service-catalogue").ByParam
     "cardorder"
   }}
-    {{ if isset .Params "cardorder" }}{{ .Render "li-index" }}{{ end }}
+    {{ if isset .Params "cardorder" }}{{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $.Page) }}{{ end }}{{ .Scratch.Set "faTargetPage" $.Page }}{{ .Render "li-index" }}{{ .Scratch.Set "faTargetPage" false }}{{ end }}
   {{ end }}
 </div>

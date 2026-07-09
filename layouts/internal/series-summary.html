@@ -12,7 +12,7 @@
         <p class="episode-counter">{{ $episodeCount }} trainings</p>
         <div>
           <h2>{{ .Title }}</h2>
-          <span class="text-button">Open training&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span>
+          <span class="text-button">Open training&nbsp;&nbsp;&nbsp;{{ partial "fa-icon.html" (dict "class" "fas fa-arrow-right" "page" .) }}</span>
         </div>
       </div>
     </div>

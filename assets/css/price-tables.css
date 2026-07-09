@@ -9,6 +9,15 @@
     overflow: visible;
   }
 
+  body.has-mobile-price-tables .main-default-single .content-default-single > table {
+    display: table;
+    max-width: calc(100vw - 5rem);
+    min-width: min(700px, calc(100vw - 5rem));
+    overflow: visible;
+    table-layout: auto;
+    width: max-content;
+  }
+
   body.has-mobile-price-tables .content-default-single th,
   body.has-mobile-price-tables .content-default-single td,
   body.has-mobile-price-tables .content-default-single-full-width th,
@@ -21,24 +30,41 @@
     overflow-wrap: normal;
   }
 
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) th,
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) td {
+    line-height: 1.15;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) th:first-child,
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) td:first-child,
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) th:last-child,
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) td:last-child,
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) th[style*="text-align:center"],
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) td[style*="text-align:center"],
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) th[style*="text-align:right"],
+  body.has-mobile-price-tables .main-default-single .content-default-single > table:not(.width100) td[style*="text-align:right"] {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+
   body.has-mobile-price-tables .content-default-single th,
   body.has-mobile-price-tables .content-default-single-full-width th,
   body.has-mobile-price-tables .main-default-single-full-width th {
     line-height: 1.1;
   }
-}
 
-@media screen and (min-width: 901px) and (max-width: 1100px) {
-  body.has-mobile-price-tables .content-default-single table {
-    width: max-content;
-    max-width: calc(50vw + 350px - 1rem);
+  body.has-mobile-price-tables .main-default-single .content-default-single > table th:last-child,
+  body.has-mobile-price-tables .main-default-single .content-default-single > table td:last-child {
+    white-space: nowrap;
   }
 }
 
 @media screen and (min-width: 1280px) {
   body.has-mobile-price-tables .content-default-single table {
     width: max-content;
-    max-width: calc(100% + 5vw - 1rem);
+    max-width: calc(100vw - 5rem);
   }
 }
 
@@ -46,8 +72,10 @@ body.has-mobile-price-tables .mobile-compact-table-list {
   display: none;
 }
 
-@media screen and (max-width: 650px) {
-  body.has-mobile-price-tables .mobile-compact-table[data-mobile-compact-ready="true"] {
+@media screen and (max-width: 1100px) {
+  body.has-mobile-price-tables .content-default-single table.mobile-compact-table[data-mobile-compact-ready="true"],
+  body.has-mobile-price-tables .content-default-single-full-width table.mobile-compact-table[data-mobile-compact-ready="true"],
+  body.has-mobile-price-tables .main-default-single-full-width table.mobile-compact-table[data-mobile-compact-ready="true"] {
     display: none;
   }
 

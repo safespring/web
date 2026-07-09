@@ -438,23 +438,9 @@
     }
 
     function updateTimelineLayout() {
-      if (!videoTimeline || !subtitleControls || !root.getBoundingClientRect || !subtitleControls.getBoundingClientRect) {
-        return;
-      }
-
-      var rootRect = root.getBoundingClientRect();
-      var controlsRect = subtitleControls.getBoundingClientRect();
-      if (!rootRect.width || !controlsRect.width || controlsRect.right <= rootRect.left) {
+      if (videoTimeline) {
         videoTimeline.style.removeProperty('--video-timeline-left');
-        return;
       }
-
-      var defaultInset = rootRect.width * 0.03;
-      var controlsInset = controlsRect.right - rootRect.left + 12;
-      var minTimelineWidth = rootRect.width > 640 ? 320 : 132;
-      var maxInset = Math.max(defaultInset, rootRect.width - defaultInset - minTimelineWidth);
-      var timelineInset = Math.max(defaultInset, Math.min(controlsInset, maxInset));
-      videoTimeline.style.setProperty('--video-timeline-left', Math.ceil(timelineInset) + 'px');
     }
 
     function showTimeline() {
@@ -825,6 +811,30 @@
       }
     }
 
+    function setSvgIcon(button, iconName) {
+      if (!button) {
+        return;
+      }
+      var icon = button.querySelector('svg.fa-icon');
+      if (!icon) {
+        return;
+      }
+      var symbol = 'fa-solid-' + iconName;
+      var use = icon.querySelector('use');
+      icon.setAttribute('data-fa-symbol', symbol);
+      icon.classList.remove(
+        'fa-closed-captioning',
+        'fa-closed-captioning-slash',
+        'fa-volume',
+        'fa-volume-xmark'
+      );
+      icon.classList.add('fa-solid', 'fa-' + iconName);
+      if (use) {
+        use.setAttribute('href', '#' + symbol);
+        use.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + symbol);
+      }
+    }
+
     function updateSubtitleControls() {
       if (!subtitleControls) {
         return;
@@ -841,9 +851,7 @@
         subtitleToggle.setAttribute('aria-pressed', subtitlesEnabled ? 'true' : 'false');
         subtitleToggle.setAttribute('aria-label', subtitlesEnabled ? subtitleToggleLabels.disable : subtitleToggleLabels.enable);
         subtitleToggle.setAttribute('title', subtitlesEnabled ? subtitleToggleLabels.disable : subtitleToggleLabels.enable);
-        subtitleToggle.innerHTML = subtitlesEnabled
-          ? '<i class="fa-solid fa-closed-captioning-slash" aria-hidden="true"></i>'
-          : '<i class="fa-solid fa-closed-captioning" aria-hidden="true"></i>';
+        setSvgIcon(subtitleToggle, subtitlesEnabled ? 'closed-captioning-slash' : 'closed-captioning');
       }
 
       if (subtitleSelect) {
@@ -867,9 +875,7 @@
       muteToggle.setAttribute('aria-pressed', isMuted ? 'true' : 'false');
       muteToggle.setAttribute('aria-label', isMuted ? muteLabels.unmute : muteLabels.mute);
       muteToggle.setAttribute('title', isMuted ? muteLabels.unmute : muteLabels.mute);
-      muteToggle.innerHTML = isMuted
-        ? '<i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>'
-        : '<i class="fa-solid fa-volume" aria-hidden="true"></i>';
+      setSvgIcon(muteToggle, isMuted ? 'volume-xmark' : 'volume');
     }
 
     function maybeUnmuteVideo() {

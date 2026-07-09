@@ -45,14 +45,6 @@
     font-display: swap;
   }
 
-  @font-face {
-    font-family: "Font Awesome 6 Pro";
-    src: url("/fonts/fa-solid-900.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-    font-display: block;
-  }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --a4-width: 210mm;
@@ -60,7 +52,6 @@
     --page-margin: 25.4mm;
     --heading-font: "Hind Light", sans-serif;
     --body-font: "Montserrat", sans-serif;
-    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Pro";
     --main-color: #195F8C;
     --blue: #195F8C;
     --blue-dark: #14527a;
@@ -211,12 +202,9 @@
   }
   .card-header span.icon {
     color: var(--blue);
-    font: var(--fa-font-solid);
-    font-size: 11px;
+    font: 700 10px/1 var(--body-font);
     width: 14px;
     text-align: center;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
   }
   .card-header h2 {
     color: var(--blue);
@@ -262,10 +250,7 @@
     justify-content: center;
     flex-shrink: 0;
     color: var(--blue-dark);
-    font: var(--fa-font-solid);
-    font-size: 11px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    font: 700 10px/1 var(--body-font);
   }
   .service-name {
     font-family: var(--body-font);
@@ -299,9 +284,14 @@
     gap: 3px;
   }
   .badge::before {
-    content: "\f00c";
-    font: var(--fa-font-solid);
-    color: var(--blue-mid);
+    border: solid var(--blue-mid);
+    border-width: 0 1.4px 1.4px 0;
+    content: "";
+    display: inline-block;
+    height: 7px;
+    margin-right: 2px;
+    transform: rotate(45deg);
+    width: 4px;
   }
 
   /* Industries */
@@ -489,12 +479,10 @@
   .inline-icon {
     color: var(--blue-mid);
     display: inline-block;
-    font: var(--fa-font-solid);
+    font: 700 8px/1 var(--body-font);
     margin-right: 4px;
     text-align: center;
     width: 11px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
   }
 
   .card-body div[style*="margin-top:12px"] {
@@ -677,7 +665,7 @@
 
     <!-- Services -->
     <div class="card services-card">
-      <div class="card-header"><span class="icon">&#xf013;</span><h2>Services</h2></div>
+      <div class="card-header"><span class="icon">S</span><h2>Services</h2></div>
       <div class="card-body">
         <div class="services-grid">
           <div class="service-item">
@@ -714,7 +702,7 @@
 
     <!-- Compliance -->
     <div class="card">
-      <div class="card-header"><span class="icon">&#xf2f7;</span><h2>Compliance &amp; Certifications</h2></div>
+      <div class="card-header"><span class="icon">C</span><h2>Compliance &amp; Certifications</h2></div>
       <div class="card-body">
         <div class="badges">
           <div class="badge">GDPR – contractual guarantees</div>
@@ -725,9 +713,9 @@
         </div>
         <div class="evidence-group">
           <div class="evidence-list">
-            <div class="evidence-row"><span class="inline-icon">&#xf024;</span><span class="evidence-text">100% Swedish-owned, no exposure to US regulation, laws, access, or surveillance</span></div>
-            <div class="evidence-row data-center"><span class="inline-icon">&#xf1ad;</span><span class="evidence-text">Data centers: STO1, STO2 &amp; OSL2 public cloud locations; Tier III, green energy</span></div>
-            <div class="evidence-row"><span class="inline-icon">&#xf46d;</span><span class="evidence-text">Framework agreements: GÉANT OCRE IaaS+ for the R&amp;E sector</span></div>
+            <div class="evidence-row"><span class="inline-icon">-</span><span class="evidence-text">100% Swedish-owned, no exposure to US regulation, laws, access, or surveillance</span></div>
+            <div class="evidence-row data-center"><span class="inline-icon">-</span><span class="evidence-text">Data centers: STO1, STO2 &amp; OSL2 public cloud locations; Tier III, green energy</span></div>
+            <div class="evidence-row"><span class="inline-icon">-</span><span class="evidence-text">Framework agreements: GÉANT OCRE IaaS+ for the R&amp;E sector</span></div>
           </div>
         </div>
       </div>
@@ -735,7 +723,7 @@
 
     <!-- Industries -->
     <div class="card">
-      <div class="card-header"><span class="icon">&#xf275;</span><h2>Key Industries</h2></div>
+      <div class="card-header"><span class="icon">I</span><h2>Key Industries</h2></div>
       <div class="card-body">
         <ul class="industry-list">
           <li><span class="dot"></span><div><div>Life Science &amp; MedTech</div><div class="industry-detail">Sensitive research and clinical data · 24/7 SLA</div></div></li>
@@ -747,7 +735,7 @@
 
     <!-- Values -->
     <div class="card">
-      <div class="card-header"><span class="icon">&#xf0eb;</span><h2>Our Values</h2></div>
+      <div class="card-header"><span class="icon">V</span><h2>Our Values</h2></div>
       <div class="card-body">
         <div class="values-row">
           <div class="value-card">
@@ -771,7 +759,7 @@
 
     <!-- Customers - full width -->
     <div class="card full trust-card">
-      <div class="card-header"><span class="icon">&#xf2b5;</span><h2>Trusted by European Research &amp; Public Sector</h2></div>
+      <div class="card-header"><span class="icon">T</span><h2>Trusted by European Research &amp; Public Sector</h2></div>
       <div class="card-body">
         <div class="logo-grid">
           <div class="logo-row square">

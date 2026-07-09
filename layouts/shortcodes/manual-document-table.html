@@ -28,7 +28,7 @@
       <a class="compliance-document-table__link" href="{{ index $row "href" }}" aria-label="{{ index $row "title" }}" target="{{ $target }}"{{ with $rel }} rel="{{ . }}"{{ end }}{{ safeHTMLAttr $trackAttrs }}>
         <div class="compliance-document-table__main">
           <span class="compliance-document-table__file-icon" aria-hidden="true">
-            <i class="{{ index $row "icon" }}"></i>
+            {{ partial "fa-icon.html" (dict "class" (index $row "icon") "page" $.Page) }}
           </span>
           <div class="compliance-document-table__title-wrap">
             <h3 class="compliance-document-table__title">{{ index $row "title" }}</h3>
@@ -42,12 +42,12 @@
 
         <div class="compliance-document-table__info-wrap">
           <button type="button" class="compliance-document-table__info" aria-label="{{ $infoLabel }} {{ index $row "title" }}" aria-expanded="false" aria-controls="{{ $descriptionID }}">
-            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+            {{ partial "fa-icon.html" (dict "class" "fa-solid fa-circle-info" "page" $.Page) }}
           </button>
         </div>
 
         <span class="compliance-document-table__arrow" aria-hidden="true">
-          <i class="fa-solid fa-arrow-right"></i>
+          {{ partial "fa-icon.html" (dict "class" "fa-solid fa-arrow-right" "page" $.Page) }}
         </span>
       </div>
     </div>

@@ -1,0 +1,32 @@
+{{- $icons := .Scratch.Get "faIcons" | default dict -}}
+{{- $order := .Scratch.Get "faIconOrder" | default (slice) -}}
+{{- with .Content -}}
+  {{- range findRE `data-fa-symbol=("[^"]+"|[^\s>]+)` . -}}
+    {{- $symbol := replaceRE `^data-fa-symbol="?([^"\s>]+)"?$` "$1" . -}}
+    {{- if and $symbol (not (index $icons $symbol)) -}}
+      {{- $icon := partial "fa-icon-data-by-symbol.html" $symbol -}}
+      {{- $icons = merge $icons (dict $symbol $icon) -}}
+      {{- $order = $order | append $symbol -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range findRE `data-fa-extra-symbols=("[^"]+"|[^\s>]+)` . -}}
+    {{- $symbols := replaceRE `^data-fa-extra-symbols="?([^"\s>]+)"?$` "$1" . -}}
+    {{- range split $symbols " " -}}
+      {{- $symbol := strings.TrimSpace . -}}
+      {{- if and $symbol (not (index $icons $symbol)) -}}
+        {{- $icon := partial "fa-icon-data-by-symbol.html" $symbol -}}
+        {{- $icons = merge $icons (dict $symbol $icon) -}}
+        {{- $order = $order | append $symbol -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $icons (gt (len $order) 0) -}}
+<svg class="fa-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  {{- range $order -}}
+    {{- with index $icons . -}}
+  <symbol id="{{ .symbol }}" viewBox="{{ .viewBox }}">{{ .body | safeHTML }}</symbol>
+    {{- end -}}
+  {{- end -}}
+</svg>
+{{- end -}}

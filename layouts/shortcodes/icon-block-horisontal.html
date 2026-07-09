@@ -3,6 +3,6 @@
 <a class="icon-block-link" href='{{ . | safeURL }}'>{{ end }}
 	<div class="icon-block-horisontal" style='background-color: {{ .Get "color" }}10;'>
 		<div class="icon-block-color" style='color: {{ .Get "color" }};background-color: {{ .Get "color" }}10;'>
-	<i class='{{ .Get "icon" }} icon'></i>
+	{{ with .Get "icon" }}{{ partial "fa-icon.html" (dict "class" (printf "%s icon" .) "page" $.Page) }}{{ end }}
 	</div>
 	<p><span class="inline_rubrik" style='color: {{ .Get "color" }};'>{{ .Get "text" }} </span><br>{{ .Get "description" | safeHTML }}</p></div>{{ with $href }}</a>{{ end }}

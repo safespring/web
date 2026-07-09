@@ -55,15 +55,20 @@
 {{ partial "local-font-faces.html" . }}
 
 <style>
-  @media (min-width: 900px) {
-    .site-header-button-contact::before {
-      font: var(--fa-font-solid);
-      content: "\f2bb";
-      margin-right: 10px;
-    }
+  .fa-icon {
+    box-sizing: content-box;
+    display: inline-block;
+    fill: currentColor;
+    flex-shrink: 0;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    width: var(--fa-width, 1.25em);
+  }
 
-    .site-header-button-contact:hover::before {
-      content: "\f2bb";
+  @media (min-width: 900px) {
+    .site-header-button-contact .fa-icon {
+      margin-right: 10px;
     }
   }
   body {
@@ -196,9 +201,9 @@
           padding-right: 20px;
         }
         .button:after {
-          content: "\f061";
+          content: "→";
           margin-left: -10px;
-          font: var(--fa-font-solid);
+          font: 600 1em/1 var(--mon-font);
           transform: scaleX(0);
           transform-origin: left; /* Ändra transform-origin till vänster */
           opacity: 0;
@@ -207,7 +212,7 @@
         }
 
         .button:hover::after {
-          content: "\f061";
+          content: "→";
           transform: scaleX(1);
           opacity: 1;
           margin-left: 10px;
@@ -366,12 +371,6 @@
         padding: 7px 17px 7px 17px;
       }
 
-      .site-header-button::before {
-        font: var(--fa-font-solid);
-        content: "\f095";
-        margin-right: 10px;
-      }
-
       .site-header-button-contact {
         display: inline-flex;
         align-items: center;
@@ -410,7 +409,7 @@
           display: none;
         }
 
-        .megamenu-main-service-card > .cardtitle > .cardicon i {
+        .megamenu-main-service-card > .cardtitle > .cardicon .fa-icon {
           display: none;
         }
 
@@ -926,26 +925,6 @@
       <script src="{{ $mobilePriceTablesJS.RelPermalink }}" defer></script>
     {{ end }}
 
-    {{ $faBundleTarget := "css/combined-font-awesome.css" }}
-    {{ $faSources := slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css") }}
-    {{ if $isPricePage }}
-      {{ $faBundleTarget = "css/combined-font-awesome-price.css" }}
-      {{ $faSources = slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome-price.css") }}
-    {{ else if eq .Params.fontawesomebundle "containerplatform" }}
-      {{ $faBundleTarget = "css/combined-font-awesome-containerplatform.css" }}
-      {{ $faSources = slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome-containerplatform.css") }}
-    {{ end }}
-    {{ $faCSS := resources.Concat $faBundleTarget $faSources | minify | fingerprint }}
-    <link
-      rel="preload"
-      href="{{ $faCSS.RelPermalink }}"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-      media="all"
-    />
-    <noscript>
-      <link rel="stylesheet" href="{{ $faCSS.RelPermalink }}" />
-    </noscript>
     {{ partial "jsonld.html" . }}
   </head>
 </html>

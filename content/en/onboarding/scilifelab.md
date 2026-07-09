@@ -176,30 +176,30 @@ language: "en"
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;First name</label>
+            <label for="firstname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;First name</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Last name</label>
+            <label for="lastname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Last name</label>
         </div>
     </div>
     <div class="form-field">
         <input type="text" id="Contact.cellPhone" name="Contact.cellPhone" required>
-        <label for="Contact.cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Cell Phone</label>
+        <label for="Contact.cellPhone">{{< fa-icon class="fas fa-mobile-alt" >}}&nbsp;&nbsp;&nbsp;Cell Phone</label>
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Please enter a valid email" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+        <label for="up-email-input">{{< fa-icon class="fas fa-envelope" >}}&nbsp;&nbsp;&nbsp;Email</label>
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
-            <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID <small>(leave empty for local account)</small></label>
+            <label for="Extra.1761215574932">{{< fa-icon class="fas fa-id-badge" >}}&nbsp;&nbsp;&nbsp;Swamid-ID <small>(leave empty for local account)</small></label>
         </div>
     <h2>Account information</h2>
     <p></p>
     <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="SciLifeLab">
-        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organization</label>
+        <label for="up-client-name-input">{{< fa-icon class="fas fa-briefcase" >}}&nbsp;&nbsp;&nbsp;Organization</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
@@ -208,28 +208,28 @@ language: "en"
                 <option value="STO 2">STO 2</option>
             </optgroup>
         </select>
-        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Choose your site</label><i class="fas fa-angle-down selection-icon"></i>
+        <label for="site">{{< fa-icon class="fas fa-cloud-check" >}}&nbsp;&nbsp;&nbsp;Choose your site</label>{{< fa-icon class="fas fa-angle-down selection-icon" >}}
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Project name <small>(project.department.nbis.se)</small></label>
+        <label for="project">{{< fa-icon class="fas fa-input-text" >}}&nbsp;&nbsp;&nbsp;Project name <small>(project.department.nbis.se)</small></label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>
-            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Budget</label>
+            <label for="quota">{{< fa-icon class="fas fa-coins" >}}&nbsp;&nbsp;&nbsp;Budget</label>
         </div>
 <h2>Acceptence</h2>
     <p>By submitting this form, you agree to our terms and policies. We take the privacy of our customers seriously and will only use your information for the purpose of fulfilling your order. If you have any questions or concerns, please do not hesitate to contact us. Thank you for choosing our services!</p>
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Acceptable use policy <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Acceptable use policy" title="Open Acceptable use policy"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Acceptable use policy <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Acceptable use policy" title="Open Acceptable use policy">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        General terms & conditions <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Open general terms and conditions" title="Open general terms and conditions"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        General terms & conditions <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Open general terms and conditions" title="Open general terms and conditions">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->

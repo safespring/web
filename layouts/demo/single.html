@@ -4,6 +4,7 @@
  {{ partial "header.html" . }}
  <!-- HEADING -->
  <div class="heading-default-single">
+   {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
    {{ .Render "li3" }}
  </div>
  <!-- CONTENT -->
@@ -11,7 +12,7 @@
   <div class="content-default-single">
     {{ if .Params.videoURL }}
       {{ partial "components/video-player.html" (dict
-        "page" .Page
+        "page" .
         "src" .Params.videoURL
         "poster" .Params.thumbnail
         "tracks" (.Params.subtitles | default (slice))

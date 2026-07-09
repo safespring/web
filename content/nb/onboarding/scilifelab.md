@@ -176,30 +176,30 @@ language: "nb"
     <div class="column-two">
         <div class="form-field">
             <input type="text" id="firstname" name="Contact.firstname" required>
-            <label for="firstname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Fornavn</label>
+            <label for="firstname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Fornavn</label>
         </div>
         <div class="form-field">
             <input type="text" id="lastname" name="Contact.lastname" required>
-            <label for="lastname"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Etternavn</label>
+            <label for="lastname">{{< fa-icon class="fas fa-user" >}}&nbsp;&nbsp;&nbsp;Etternavn</label>
         </div>
     </div>
     <div class="form-field">
         <input type="text" id="Contact.cellPhone" name="Contact.cellPhone" required>
-        <label for="Contact.cellPhone"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Mobiltelefon</label>
+        <label for="Contact.cellPhone">{{< fa-icon class="fas fa-mobile-alt" >}}&nbsp;&nbsp;&nbsp;Mobiltelefon</label>
     </div>
     <div class="form-field">
         <input maxlength="512" type="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&amp;’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+){1,}$" title="Vennligst oppgi en gyldig e-postadresse" id="up-email-input" autocomplete="off" name="Contact.email" required="required">
-        <label for="up-email-input"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;E-post</label>
+        <label for="up-email-input">{{< fa-icon class="fas fa-envelope" >}}&nbsp;&nbsp;&nbsp;E-post</label>
     </div>
         <div class="form-field">
             <input type="text" id="Extra.1761215574932" name="Extra.1761215574932" required>
-            <label for="Extra.1761215574932"><i class="fas fa-id-badge"></i>&nbsp;&nbsp;&nbsp;Swamid-ID</label>
+            <label for="Extra.1761215574932">{{< fa-icon class="fas fa-id-badge" >}}&nbsp;&nbsp;&nbsp;Swamid-ID</label>
         </div>
     <h2>Kontoinformasjon</h2>
     <p></p>
     <div class="form-field">
         <input maxlength="512" type="text" placeholder="" id="up-client-name-input" name="Client.name" required="required" value="SciLifeLab">
-        <label for="up-client-name-input"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Organisasjon</label>
+        <label for="up-client-name-input">{{< fa-icon class="fas fa-briefcase" >}}&nbsp;&nbsp;&nbsp;Organisasjon</label>
     </div>
     <div class="form-field">
         <select id="site" name="Extra.1683706744635" required>
@@ -208,28 +208,28 @@ language: "nb"
                 <option value="STO 2">STO 2</option>
             </optgroup>
         </select>
-        <label for="site"><i class="fas fa-cloud-check"></i>&nbsp;&nbsp;&nbsp;Velg lokasjonen din</label><i class="fas fa-angle-down selection-icon"></i>
+        <label for="site">{{< fa-icon class="fas fa-cloud-check" >}}&nbsp;&nbsp;&nbsp;Velg lokasjonen din</label>{{< fa-icon class="fas fa-angle-down selection-icon" >}}
     </div>
     <div class="form-field">
         <input type="text" id="project" name="Extra.1683706799384" required placeholder="">
-        <label for="project"><i class="fas fa-input-text"></i>&nbsp;&nbsp;&nbsp;Prosjektnavn (f.eks. project.scilifelab.se)</label>
+        <label for="project">{{< fa-icon class="fas fa-input-text" >}}&nbsp;&nbsp;&nbsp;Prosjektnavn (f.eks. project.scilifelab.se)</label>
     </div>
         <div class="form-field">
             <input type="text" id="quota" name="Extra.1761215509196" required>
-            <label for="quota"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Budsjett</label>
+            <label for="quota">{{< fa-icon class="fas fa-coins" >}}&nbsp;&nbsp;&nbsp;Budsjett</label>
         </div>
 <h2>Godkjenning</h2>
     <p>Ved å sende inn dette skjemaet godtar du våre vilkår og retningslinjer. Vi tar kundenes personvern på alvor og vil kun bruke opplysningene dine for å oppfylle bestillingen din. Hvis du har spørsmål eller bekymringer, ikke nøl med å kontakte oss. Takk for at du velger tjenestene våre!</p>
     <div class="inputGroup">
         <input type="checkbox" name="accept-usage" id="accept-usage" required>
         <label for="accept-usage">
-            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Åpne retningslinjer for akseptabel bruk" title="Åpne retningslinjer for akseptabel bruk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            Retningslinjer for akseptabel bruk <a class="label-link" href="/documents/safespring-acceptable_use_policy.pdf" target="_blank" rel="noopener noreferrer" aria-label="Åpne retningslinjer for akseptabel bruk" title="Åpne retningslinjer for akseptabel bruk">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
         </label>
     </div>
     <div class="inputGroup">
         <input type="checkbox" name="singleOptIn.qptjh8v9er" id="accept-terms" required>
         <label for="accept-terms"> 
-        Generelle vilkår og betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Åpne generelle vilkår og betingelser" title="Åpne generelle vilkår og betingelser"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        Generelle vilkår og betingelser <a class="label-link" href="/compliance/general_terms_and_conditions/" target="_blank" rel="noopener noreferrer" aria-label="Åpne generelle vilkår og betingelser" title="Åpne generelle vilkår og betingelser">{{< fa-icon class="fa-solid fa-arrow-up-right-from-square" >}}</a>
     </label>
     </div>
     <!-- REQUIRED FIELDS -->

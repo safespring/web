@@ -6,8 +6,8 @@
         {{ if .Get "image" }}
             {{ $image := .Get "image" }}
             <img src='{{ $image }}' {{ partial "image-dimensions.html" $image | safeHTMLAttr }} alt='{{ .Get "alt" | default "Icon" }}' class="icon-svg" style="height: 70px;"/>
-        {{ else }}
-            <i class='{{ .Get "icon" }} icon'></i>
+        {{ else if .Get "icon" }}
+            {{ partial "fa-icon.html" (dict "class" (printf "%s icon" (.Get "icon")) "page" .Page) }}
         {{ end }}
         <p>
             <span style='color: {{ .Get "color" }};'>{{ .Get "text" }}</span>{{ .Get "description" }}

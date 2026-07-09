@@ -1,0 +1,35 @@
+{{- $class := .class | default "" -}}
+{{- $baseClasses := slice "fa" "fas" "far" "fab" "fal" "fad" "fak" "fa-kit" "fa-solid" "fa-regular" "fa-brands" "fa-fw" "fa-ul" "fa-li" "fa-spin" "fa-1x" "fa-2x" "fa-3x" "fa-4x" "fa-5x" "fa-6x" "fa-7x" "fa-8x" "fa-9x" "fa-10x" -}}
+{{- $iconName := "" -}}
+{{- $isCustom := false -}}
+{{- range split $class " " -}}
+  {{- $token := strings.TrimSpace . -}}
+  {{- if or (eq $token "fak") (eq $token "fa-kit") -}}
+    {{- $isCustom = true -}}
+  {{- end -}}
+  {{- if and (strings.HasPrefix $token "fa-") (not (in $baseClasses $token)) -}}
+    {{- $iconName = strings.TrimPrefix "fa-" $token -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $iconName -}}
+  {{- errorf "Font Awesome SVG icon class %q does not include an icon name" $class -}}
+{{- end -}}
+
+{{- $solidIcons := index hugo.Data.icons "fa-solid" -}}
+{{- $customIcons := index hugo.Data.icons "fa-custom" -}}
+{{- $icon := false -}}
+{{- if $isCustom -}}
+  {{- $icon = index $customIcons $iconName -}}
+  {{- if not $icon -}}
+    {{- $icon = index $solidIcons $iconName -}}
+  {{- end -}}
+{{- else -}}
+  {{- $icon = index $solidIcons $iconName -}}
+  {{- if not $icon -}}
+    {{- $icon = index $customIcons $iconName -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $icon -}}
+  {{- errorf "Font Awesome SVG icon %q from class %q is not present in committed icon data" $iconName $class -}}
+{{- end -}}
+{{- return $icon -}}

@@ -76,7 +76,10 @@
         <div class="series-container">
           {{ range where .Site.RegularPages "Section" "webinar" }}
             {{ if .IsSection }}
+              {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-arrow-right" "page" $) }}
+              {{ .Scratch.Set "faTargetPage" $ }}
               <div class="flexcontainer">{{ .Render "series-summary" }}</div>
+              {{ .Scratch.Set "faTargetPage" false }}
             {{ end }}
           {{ end }}
         </div>
@@ -90,7 +93,7 @@
         {{ if not .Params.nolist }}
           {{ if eq .Params.list "indexcard" }}
             <div class="flexcontainer-three">
-              {{ range .Pages }}{{ .Render "li-index" }}{{ end }}
+              {{ range .Pages }}{{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $) }}{{ end }}{{ .Scratch.Set "faTargetPage" $ }}{{ .Render "li-index" }}{{ .Scratch.Set "faTargetPage" false }}{{ end }}
               <!-- Stänger 'range .Pages' -->
             </div>
           {{ end }}

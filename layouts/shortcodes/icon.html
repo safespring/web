@@ -1,1 +1,5 @@
-<i style="color: {{ .Get 1 | safeHTML }}" class="{{ .Get 0 }}"></i>
+{{- $style := "" -}}
+{{- with .Get 1 -}}
+  {{- $style = printf "color: %s" . -}}
+{{- end -}}
+{{- partial "fa-icon.html" (dict "class" (.Get 0) "style" $style "page" .Page) -}}
