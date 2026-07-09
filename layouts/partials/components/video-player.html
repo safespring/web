@@ -51,6 +51,7 @@
   {{ if $playerId }}{{ printf "data-player-id=%q" $playerId | safeHTMLAttr }}{{ end }}
   {{ if $urlTime }}data-url-time="true"{{ end }}
   {{ printf "data-video-src=%q" ($videoSrc | safeURL) | safeHTMLAttr }}
+  {{ if $videoPoster }}{{ printf "data-poster-src=%q" ($videoPoster | safeURL) | safeHTMLAttr }}{{ end }}
   {{ printf "data-cursor-paused=%q" $cursorTextPaused | safeHTMLAttr }}
   {{ printf "data-cursor-playing=%q" $cursorTextPlaying | safeHTMLAttr }}
   {{ printf "data-initial-subtitle-lang=%q" (lower $initialSubtitleLang) | safeHTMLAttr }}
@@ -60,7 +61,6 @@
   {{ if ne $ccDefaultOn "" }}{{ printf "data-cc-default-on=%q" (lower $ccDefaultOn) | safeHTMLAttr }}{{ end }}>
   <video data-role="video"
     {{ if $videoClass }}class="{{ $videoClass }}"{{ end }}
-    {{ if $videoPoster }}poster="{{ $videoPoster }}"{{ end }}
     {{ if $preload }}preload="{{ $preload }}"{{ end }}
     {{ with (index . "muted") }}muted{{ end }}>
     {{ range $trackList }}
@@ -70,7 +70,7 @@
     Your browser does not support the video tag.
   </video>
   {{- if $videoPoster }}
-  <div data-role="poster" class="video-poster" style="background-image: url('{{ $videoPoster }}');" aria-hidden="true"></div>
+  <div data-role="poster" class="video-poster" aria-hidden="true"></div>
   {{- end }}
   <button type="button" data-role="play-overlay" class="video-play-overlay" aria-label="{{ $cursorTextPaused }}" title="{{ $cursorTextPaused }}">
     {{ partial "fa-icon.html" (dict "class" "fas fa-play" "page" $page) }}

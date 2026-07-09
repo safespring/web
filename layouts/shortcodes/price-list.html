@@ -274,14 +274,17 @@
     });
   </script>
 
-    <!-- jQuery-bit för terms-checkbox, om du vill behålla den -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      $(function () {
-        $("#checkBtn").click(function () {
-          if (!$("input[type=checkbox]:checked").length) {
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkButton = document.getElementById("checkBtn");
+        if (!checkButton) {
+          return;
+        }
+
+        checkButton.addEventListener("click", function (event) {
+          if (!document.querySelector("input[type=checkbox]:checked")) {
+            event.preventDefault();
             alert("You must accept our terms our conditions");
-            return false;
           }
         });
       });

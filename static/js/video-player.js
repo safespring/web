@@ -156,6 +156,8 @@
     var posterLayer = root.querySelector('[data-role="poster"]');
     var playOverlay = root.querySelector('[data-role="play-overlay"]');
     var chapterMarkers = root.querySelectorAll('[data-role="chapter-marker"]');
+    var posterSrc = root.getAttribute('data-poster-src') || '';
+    var posterLoaded = false;
     if (posterLayer) {
       root.classList.remove('is-video-active');
     }
@@ -233,6 +235,53 @@
     };
     var minVisibleChapterFillPixels = 3;
 
+    function loadPoster() {
+      if (!posterSrc || posterLoaded) {
+        return;
+      }
+      posterLoaded = true;
+      video.setAttribute('poster', posterSrc);
+      if (posterLayer) {
+        posterLayer.style.backgroundImage = 'url("' + posterSrc.replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '")';
+      }
+    }
+
+    function schedulePosterLoad() {
+      if (!posterSrc) {
+        return;
+      }
+
+      function observePoster() {
+        if (!('IntersectionObserver' in window)) {
+          window.setTimeout(loadPoster, 1200);
+          return;
+        }
+
+        var posterObserver = new IntersectionObserver(function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            if (entries[i].isIntersecting) {
+              loadPoster();
+              posterObserver.disconnect();
+              return;
+            }
+          }
+        }, {
+          rootMargin: '150px 0px',
+          threshold: 0.01
+        });
+        posterObserver.observe(root);
+      }
+
+      if (document.readyState === 'complete') {
+        window.setTimeout(observePoster, 400);
+        return;
+      }
+
+      window.addEventListener('load', function () {
+        window.setTimeout(observePoster, 400);
+      }, { once: true });
+    }
+
     function showVideoSurface() {
       if (posterLayer && videoSurfaceRequested) {
         root.classList.add('is-video-active');
@@ -259,6 +308,7 @@
       if (!posterLayer || getRequestedTime() !== null || !video.paused || video.currentTime > 0.25) {
         return;
       }
+      loadPoster();
       videoSurfaceRequested = false;
       root.classList.remove('is-video-active');
     }
@@ -1398,6 +1448,7 @@
       if (initialized) {
         event.preventDefault();
         event.stopPropagation();
+        loadPoster();
         if (unmuteOnInteraction) {
           maybeUnmuteVideo();
         }
@@ -1408,6 +1459,7 @@
       isToggleInProgress = true;
       event.preventDefault();
       event.stopPropagation();
+      loadPoster();
       if (unmuteOnInteraction) {
         maybeUnmuteVideo();
       }
@@ -1497,6 +1549,7 @@
     window.addEventListener('resize', updateTimelineLayout);
 
     hideTimeline();
+    schedulePosterLoad();
     updateMuteButton();
     updatePlayOverlay();
     updateTimelineLayout();
@@ -1527,7 +1580,9 @@
         });
       }
     }
-    window.setTimeout(restorePosterAtStart, 0);
+    if (!posterSrc) {
+      window.setTimeout(restorePosterAtStart, 0);
+    }
   }
 
   function initAllVideoPlayers() {

@@ -908,16 +908,18 @@
     {{ $isPricePage := and .File (eq .File.BaseFileName "price") }}
     {{ $hasComplianceDocumentTable := gt (len (findRE "compliance-document-table__info" .Content 1)) 0 }}
     {{ $hasVideoPlayer := or .IsHome .Params.videoURL (gt (len (findRE "data-video-player" .Content 1)) 0) }}
-    {{ $mainCSSResource := resources.Get "css/main.css" }}
-    {{ $mainCSS := $mainCSSResource | minify | fingerprint }}
-    {{ if and $hasComplianceDocumentTable $hasVideoPlayer }}
-      {{ $mainCSS = resources.Concat "css/main-compliance-document-table-video-player.css" (slice $mainCSSResource (resources.Get "css/compliance-document-table.css") (resources.Get "css/video-player.css")) | minify | fingerprint }}
-    {{ else if $hasComplianceDocumentTable }}
-      {{ $mainCSS = resources.Concat "css/main-compliance-document-table.css" (slice $mainCSSResource (resources.Get "css/compliance-document-table.css")) | minify | fingerprint }}
-    {{ else if $hasVideoPlayer }}
-      {{ $mainCSS = resources.Concat "css/main-video-player.css" (slice $mainCSSResource (resources.Get "css/video-player.css")) | minify | fingerprint }}
-    {{ end }}
+    {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" />
+    {{ if $hasComplianceDocumentTable }}
+      {{ $complianceDocumentTableCSS := resources.Get "css/compliance-document-table.css" | minify | fingerprint }}
+      <link rel="preload" href="{{ $complianceDocumentTableCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+      <noscript><link rel="stylesheet" href="{{ $complianceDocumentTableCSS.RelPermalink }}" /></noscript>
+    {{ end }}
+    {{ if $hasVideoPlayer }}
+      {{ $videoPlayerCSS := resources.Get "css/video-player.css" | minify | fingerprint }}
+      <link rel="preload" href="{{ $videoPlayerCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+      <noscript><link rel="stylesheet" href="{{ $videoPlayerCSS.RelPermalink }}" /></noscript>
+    {{ end }}
     {{ if $isPricePage }}
       {{ $priceTablesCSS := resources.Get "css/price-tables.css" | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $priceTablesCSS.RelPermalink }}" />

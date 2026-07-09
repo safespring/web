@@ -15,10 +15,8 @@
 {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-mobile-screen-button" "page" $page) }}
 {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-briefcase" "page" $page) }}
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js"></script>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous"></noscript>
 
 <style>
   .contact-form {
@@ -360,74 +358,111 @@
 </form>
 
 <script>
-  jQuery(document).ready(function() {
-    var matchClientsTimeout = null;
-    var matchClients = function(q, sync, cb) {
-      if (matchClientsTimeout) {
-        clearTimeout(matchClientsTimeout);
+  (function() {
+    var scriptPromises = {};
+
+    function loadScript(src) {
+      if (scriptPromises[src]) {
+        return scriptPromises[src];
       }
-      matchClientsTimeout = setTimeout(function() {
-        jQuery.ajax({
-          type: "GET",
-          url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&country=NO&country=DK&country=FI&country=GB&country=BE&country=FR&country=IE&country=IT&country=LU&country=NL&country=DE&country=AT&name=" + encodeURIComponent(q),
-          success: function(res) {
-            cb(res.data);
-          },
-          error: function() {}
-        });
-      }, 200);
-    };
-    var getSuggestTemplate = function(c) {
-      return "<div><div>" + c.name + "</div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "</span></div>";
-    };
-    var nameField = jQuery("#up-client-name-input");
-    if (nameField.length && typeof nameField.typeahead === "function") {
-      var selectedClientName = "";
-      var dunsField = jQuery("<input type='hidden' name='Client.dunsNo' />");
-      var spinner = jQuery("<b id='up-client-spinner'><svg class='spinner' viewBox='0 0 50 50'><circle class='path' cx='25' cy='25' r='20' fill='none' stroke-width='5'></circle></svg></b>");
-      spinner.css("display", "none");
-      nameField.after(dunsField);
-      nameField.after(spinner);
-      nameField.typeahead({ hint: false, highlight: true, minLength: 2 }, {
-        name: "clients",
-        limit: 25,
-        source: matchClients,
-        templates: { suggestion: getSuggestTemplate }
-      }).bind("typeahead:autocompleted", function(ev, client) {
-        nameField.typeahead("val", client.name);
-        dunsField.val(client.dunsNo);
-        selectedClientName = client.name;
-        nameField.blur();
-      }).bind("typeahead:select", function(ev, client) {
-        nameField.typeahead("val", client.name);
-        dunsField.val(client.dunsNo);
-        selectedClientName = client.name;
-      }).bind("typeahead:cursorchange", function(ev, client) {
-        if (client) {
+
+      scriptPromises[src] = new Promise(function(resolve, reject) {
+        var existing = document.querySelector('script[src="' + src + '"]');
+        if (existing) {
+          existing.addEventListener("load", resolve, { once: true });
+          existing.addEventListener("error", reject, { once: true });
+          if (existing.dataset.loaded === "true") {
+            resolve();
+          }
+          return;
+        }
+
+        var script = document.createElement("script");
+        script.src = src;
+        script.async = true;
+        script.onload = function() {
+          script.dataset.loaded = "true";
+          resolve();
+        };
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+
+      return scriptPromises[src];
+    }
+
+    function initClientTypeahead() {
+      var $ = window.jQuery;
+      if (!$ || !$.fn || typeof $.fn.typeahead !== "function") {
+        return;
+      }
+
+      var matchClientsTimeout = null;
+      var matchClients = function(q, sync, cb) {
+        if (matchClientsTimeout) {
+          clearTimeout(matchClientsTimeout);
+        }
+        matchClientsTimeout = setTimeout(function() {
+          $.ajax({
+            type: "GET",
+            url: "https://power.upsales.com/api/external/prospecting/clientSearch?country=SE&country=NO&country=DK&country=FI&country=GB&country=BE&country=FR&country=IE&country=IT&country=LU&country=NL&country=DE&country=AT&name=" + encodeURIComponent(q),
+            success: function(res) {
+              cb(res.data);
+            },
+            error: function() {}
+          });
+        }, 200);
+      };
+      var getSuggestTemplate = function(c) {
+        return "<div><div>" + c.name + "</div><span style='color: #6B7C93; font-size: 10px;'>" + c.city + "</span></div>";
+      };
+      var nameField = $("#up-client-name-input");
+      if (nameField.length && typeof nameField.typeahead === "function") {
+        var selectedClientName = "";
+        var dunsField = $("<input type='hidden' name='Client.dunsNo' />");
+        var spinner = $("<b id='up-client-spinner'><svg class='spinner' viewBox='0 0 50 50'><circle class='path' cx='25' cy='25' r='20' fill='none' stroke-width='5'></circle></svg></b>");
+        spinner.css("display", "none");
+        nameField.after(dunsField);
+        nameField.after(spinner);
+        nameField.typeahead({ hint: false, highlight: true, minLength: 2 }, {
+          name: "clients",
+          limit: 25,
+          source: matchClients,
+          templates: { suggestion: getSuggestTemplate }
+        }).bind("typeahead:autocompleted", function(ev, client) {
           nameField.typeahead("val", client.name);
           dunsField.val(client.dunsNo);
           selectedClientName = client.name;
-        }
-      }).bind("typeahead:change", function(ev, value) {
-        if (value !== selectedClientName) {
-          dunsField.val("");
-        }
-      }).on("typeahead:asyncrequest", function() {
-        spinner.css("display", "inline");
-      }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
-        spinner.css("display", "none");
-      });
-      nameField.siblings(".tt-hint").attr({
-        "aria-hidden": "true",
-        "tabindex": "-1",
-        "autocomplete": "off",
-        "inert": ""
-      });
+          nameField.blur();
+        }).bind("typeahead:select", function(ev, client) {
+          nameField.typeahead("val", client.name);
+          dunsField.val(client.dunsNo);
+          selectedClientName = client.name;
+        }).bind("typeahead:cursorchange", function(ev, client) {
+          if (client) {
+            nameField.typeahead("val", client.name);
+            dunsField.val(client.dunsNo);
+            selectedClientName = client.name;
+          }
+        }).bind("typeahead:change", function(ev, value) {
+          if (value !== selectedClientName) {
+            dunsField.val("");
+          }
+        }).on("typeahead:asyncrequest", function() {
+          spinner.css("display", "inline");
+        }).on("typeahead:asynccancel typeahead:asyncreceive", function() {
+          spinner.css("display", "none");
+        });
+        nameField.siblings(".tt-hint").attr({
+          "aria-hidden": "true",
+          "tabindex": "-1",
+          "autocomplete": "off",
+          "inert": ""
+        });
+      }
     }
-  });
-</script>
-<script>
-  (function() {
+
+    function initPhoneFields() {
     var phoneFields = document.querySelectorAll('input[name*=phone], input[name*=Phone]');
     [].forEach.call(phoneFields, function(element) {
       if (!window.intlTelInput) {
@@ -460,6 +495,20 @@
         selectedFlag.setAttribute("aria-label", "{{ $phone }}");
         selectedFlag.setAttribute("title", "{{ $phone }}");
       }
+    });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      loadScript("https://code.jquery.com/jquery-3.7.1.min.js")
+        .then(function() {
+          return loadScript("https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js");
+        })
+        .then(initClientTypeahead)
+        .catch(function() {});
+
+      loadScript("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js")
+        .then(initPhoneFields)
+        .catch(function() {});
     });
   })();
 </script>
