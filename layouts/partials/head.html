@@ -25,7 +25,21 @@
     />
     {{ $bg := replaceRE "^/+" "" (.Params.background | default "safespring-blue-fade2.svg") }}
     {{ $bgImage := printf "url('/img/background/%s')" $bg | safeCSS }}
-    {{ $usesMobileGeneratedBackground := eq $bg "safespring-compute-background.svg" }}
+    {{ $usesMobileGeneratedBackground := eq (lower (path.Ext $bg)) ".svg" }}
+    {{ $mobileBackground := "linear-gradient(120deg, #d5e3eb 0%, #f8fafb 100%)" }}
+    {{ if in (slice "safespring-compute-background.svg" "safespring-ai-background.svg" "safespring-government-background.svg") $bg }}
+      {{ $mobileBackground = "linear-gradient(145deg, #e7eff3 0%, #edf4f7 55%, #cfe3ec 100%)" }}
+    {{ else if in (slice "safespring-kubernetes-background.svg" "safespring-kubernetes.svg" "safespring-blue-fade-kubernetes.svg") $bg }}
+      {{ $mobileBackground = "linear-gradient(145deg, #e7eff3 0%, #deebf2 100%)" }}
+    {{ else if in (slice "safespring-datacenter-map-background.svg" "safespring-datacenter-map-container.svg" "safespring-datacenter-map.svg" "safespring-map.svg") $bg }}
+      {{ $mobileBackground = "linear-gradient(145deg, #e8eff3 0%, #d2e1e9 100%)" }}
+    {{ else if eq $bg "safespring-storage-background.svg" }}
+      {{ $mobileBackground = "linear-gradient(145deg, #fffbf8 0%, #ffd5bd 100%)" }}
+    {{ else if in (slice "safespring-backup-background.svg" "safespring-backup.svg") $bg }}
+      {{ $mobileBackground = "linear-gradient(145deg, #eafcea 0%, #b7efb9 100%)" }}
+    {{ else if in (slice "safespring-background-dbaas.svg" "safespring-dbaas-1.svg") $bg }}
+      {{ $mobileBackground = "linear-gradient(145deg, #ffffff 0%, #e5e6ec 100%)" }}
+    {{ end }}
     {{ if .Params.background }}
       {{ $ext := replace (path.Ext $bg) "." "" }}
       <link
@@ -47,6 +61,7 @@
         as="image"
         href="/img/background/safespring-blue-fade2.svg"
         fetchpriority="high"
+        media="(min-width: 901px)"
         type="image/svg+xml"
         importance="high"
       />
@@ -81,7 +96,7 @@
   }
   .heading-default-single {
     {{ if $usesMobileGeneratedBackground }}
-      background-image: linear-gradient(145deg, #e7eff3 0%, #edf4f7 55%, #cfe3ec 100%);
+      background-image: {{ $mobileBackground | safeCSS }};
     {{ else }}
       background-image: {{ $bgImage }};
     {{ end }}

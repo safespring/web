@@ -25,13 +25,15 @@ aliases:
   - /en/services/backup/
 ---
 
-{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-en/master.m3u8" >}}
-
 {{< ingress >}}
 Safespring Backup is a next-generation data backup and recovery solution that leverages the reliability and scalability of IBM Spectrum Protect.
 {{< /ingress >}}
 
 With Safespring Backup, businesses can protect countless terabytes of data with minimal administration effort, thanks to its high security, excellent scalability, and data lifecycle automation features. Our backups are encrypted in transit with TLS 1.2, and can also be configured to be encrypted client-side for even higher security automatically.
+
+{{< distance >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-en/master.m3u8" >}}
+{{< distance >}}
 
 ### Why Safespring Backup?
 

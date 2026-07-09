@@ -15,7 +15,6 @@
 {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-mobile-screen-button" "page" $page) }}
 {{ $_ := partial "fa-register-icon.html" (dict "class" "fas fa-briefcase" "page" $page) }}
 
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css" crossorigin="anonymous"></noscript>
 
 <style>
@@ -360,6 +359,32 @@
 <script>
   (function() {
     var scriptPromises = {};
+    var stylePromises = {};
+    var enhancementsStarted = false;
+
+    function loadStylesheet(href) {
+      if (stylePromises[href]) {
+        return stylePromises[href];
+      }
+
+      stylePromises[href] = new Promise(function(resolve, reject) {
+        var existing = document.querySelector('link[rel="stylesheet"][href="' + href + '"]');
+        if (existing) {
+          resolve();
+          return;
+        }
+
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = href;
+        link.crossOrigin = "anonymous";
+        link.onload = resolve;
+        link.onerror = reject;
+        document.head.appendChild(link);
+      });
+
+      return stylePromises[href];
+    }
 
     function loadScript(src) {
       if (scriptPromises[src]) {
@@ -498,7 +523,12 @@
     });
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
+    function initEnhancements() {
+      if (enhancementsStarted) {
+        return;
+      }
+      enhancementsStarted = true;
+
       loadScript("https://code.jquery.com/jquery-3.7.1.min.js")
         .then(function() {
           return loadScript("https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js");
@@ -506,10 +536,43 @@
         .then(initClientTypeahead)
         .catch(function() {});
 
-      loadScript("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js")
+      loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/css/intlTelInput.css")
+        .then(function() {
+          return loadScript("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.1/js/intlTelInput.min.js");
+        })
         .then(initPhoneFields)
         .catch(function() {});
-    });
+    }
+
+    function scheduleEnhancements() {
+      var form = document.getElementById("up-form");
+      if (!form) {
+        return;
+      }
+
+      form.addEventListener("focusin", initEnhancements, { once: true });
+      if (!("IntersectionObserver" in window)) {
+        window.setTimeout(initEnhancements, 1500);
+        return;
+      }
+
+      var observer = new IntersectionObserver(function(entries) {
+        if (entries.some(function(entry) { return entry.isIntersecting; })) {
+          observer.disconnect();
+          initEnhancements();
+        }
+      }, {
+        rootMargin: "400px 0px",
+        threshold: 0.01
+      });
+      observer.observe(form);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", scheduleEnhancements, { once: true });
+    } else {
+      scheduleEnhancements();
+    }
   })();
 </script>
 <script>

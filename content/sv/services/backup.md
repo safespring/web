@@ -32,14 +32,15 @@ section: "Public Cloud"
 megamenu: "yes"
 ---
 
-{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/demo-backup-2/master.m3u8" "/img/webinar/thumbnails/demo-backup-2.webp" >}}
-{{< distance >}}
-
 {{< ingress >}}
 Safespring Backup hjälper organisationer skydda servrar och kritiska data utan att bygga egen backupinfrastruktur. Tjänsten levereras från nordiska datacenter och ger kontroll över både data, rapportering och återställning.
 {{< /ingress >}}
 
 Att ta Backup genom Safespring betyder att du inte behöver investera i någon egen hård- eller mjukvara, det enda du behöver göra är att installera en klient på de maskiner du vill göra backup på. Att din data inte lämnar landet samt att vi är ett nordiskt bolag som därigenom inte omfattas av ex. *Cloud Act* gör att du kan känna dig ännu tryggare.
+
+{{< distance >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/demo-backup-2/master.m3u8" "/img/webinar/thumbnails/demo-backup-2.webp" >}}
+{{< distance >}}
 
 Med vår webbportal kan du enkelt hantera dina backup:er, få rapporter och status samt hantera användare och roller i din organisation.
 

@@ -25,13 +25,15 @@ aliases:
   - /no/tjenester/backup/
 ---
 
-{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-english/master.m3u8" "/img/card/safespring_backup_demo.svg" >}}
-
 {{< ingress >}}
 Safespring Backup er en neste generasjons databackup- og gjenopprettingsløsning som utnytter påliteligheten og skalerbarheten til IBM Spectrum Protect.
 {{< /ingress >}}
 
 Med Safespring Backup kan bedrifter beskytte utallige terabytes av data med minimal administrativ innsats, takket være dens høye sikkerhet, utmerket skalerbarhet og automatisering av datalivssyklusen. Våre sikkerhetskopier er kryptert i transit med TLS 1.2, og kan også konfigureres for å være kryptert klientside for enda høyere sikkerhet automatisk.
+
+{{< distance >}}
+{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-backup-english/master.m3u8" "/img/card/safespring_backup_demo.svg" >}}
+{{< distance >}}
 
 ### Hvorfor Safespring Backup?
 
