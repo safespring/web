@@ -8,13 +8,13 @@ This document records the low-risk CSS performance changes made to the Hugo site
 
 The PageSpeed mobile run for `/tjanster/compute/` reported one global stylesheet as both render-blocking and mostly unused:
 
-| Measurement | Before |
-| --- | ---: |
+| Measurement                      |      Before |
+| -------------------------------- | ----------: |
 | `main.min...css` minified source | `104,647 B` |
-| transferred CSS | `21.1 KiB` |
-| estimated unused transfer | `16.4 KiB` |
-| render-blocking request duration | `690 ms` |
-| estimated render-blocking saving | `170 ms` |
+| transferred CSS                  |  `21.1 KiB` |
+| estimated unused transfer        |  `16.4 KiB` |
+| render-blocking request duration |    `690 ms` |
+| estimated render-blocking saving |    `170 ms` |
 
 Local Chromium CSS Coverage used about `22,274 B`, or `21.3%`, of that stylesheet during the first mobile viewport.
 
@@ -43,37 +43,37 @@ The previous monolithic source was split manually along existing component bound
 
 After the split, the Compute page's deferred base stylesheet is:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset            |        Raw |      Gzip |
+| ---------------- | ---------: | --------: |
 | `main.min...css` | `27,226 B` | `5,892 B` |
 
 The complete set of local processed stylesheets selected for Compute is:
 
-| Asset group | Raw | Gzip |
-| --- | ---: | ---: |
-| Global base and footer | `34,533 B` | `7,449 B` |
-| Content components used by Compute | `14,128 B` | `4,339 B` |
-| Conditional video player | `12,736 B` | `3,030 B` |
-| **Total deferred/processed CSS** | **`61,397 B`** | **`14,818 B`** |
+| Asset group                        |            Raw |           Gzip |
+| ---------------------------------- | -------------: | -------------: |
+| Global base and footer             |     `34,533 B` |      `7,449 B` |
+| Content components used by Compute |     `14,128 B` |      `4,339 B` |
+| Conditional video player           |     `12,736 B` |      `3,030 B` |
+| **Total deferred/processed CSS**   | **`61,397 B`** | **`14,818 B`** |
 
 The page downloads several small cacheable component files instead of one large page-agnostic file. None of these links is a normal render-blocking stylesheet on Compute.
 
 Local Chromium mobile CSS Coverage for the new base file was:
 
-| Raw | Used | Unused | Used share |
-| ---: | ---: | ---: | ---: |
-| `27,218 B` | `8,640 B` | `18,578 B` | `31.7%` |
+|        Raw |      Used |     Unused | Used share |
+| ---------: | --------: | ---------: | ---------: |
+| `27,218 B` | `8,640 B` | `18,578 B` |    `31.7%` |
 
 The remaining conditional files are each below `13 KB` minified, and the base file's unused source is below Lighthouse's previous large-resource threshold. A new live PageSpeed run is still required after deployment; local figures are not recorded as production results.
 
 A Lighthouse `13.4.0` run against the same build with gzip delivery produced:
 
-| Audit | Result |
-| --- | --- |
-| `unused-css-rules` | pass, no listed resources |
+| Audit                     | Result                    |
+| ------------------------- | ------------------------- |
+| `unused-css-rules`        | pass, no listed resources |
 | `render-blocking-insight` | pass, no listed resources |
-| Total Blocking Time | `0 ms` |
-| Cumulative Layout Shift | `0` |
+| Total Blocking Time       | `0 ms`                    |
+| Cumulative Layout Shift   | `0`                       |
 
 The local HTTP/1 server is not used as a production LCP reference. The live PageSpeed profile remains the acceptance measurement after deployment.
 
@@ -117,11 +117,11 @@ The confirmed legacy set contained `55` rules using `21` unreferenced classes. T
 
 The rules are retained in `assets/css/legacy.css`, which is intentionally absent from Hugo's asset loading and generated output.
 
-| Asset measurement | Before legacy split | After legacy split | Change |
-| --- | ---: | ---: | ---: |
-| `main.css` source | `36,399 B` | `29,971 B` | `-6,428 B` |
-| generated `main.min...css` | `27,226 B` | `22,227 B` | `-4,999 B` |
-| generated main gzip | `5,892 B` | `5,053 B` | `-839 B` |
+| Asset measurement          | Before legacy split | After legacy split |     Change |
+| -------------------------- | ------------------: | -----------------: | ---------: |
+| `main.css` source          |          `36,399 B` |         `29,971 B` | `-6,428 B` |
+| generated `main.min...css` |          `27,226 B` |         `22,227 B` | `-4,999 B` |
+| generated main gzip        |           `5,892 B` |          `5,053 B` |   `-839 B` |
 
 Compute mobile coverage after the legacy split was `8,640 B` used and `13,579 B` unused from a `22,219 B` measured stylesheet, increasing the used share from `31.7%` to `38.9%` without changing the used byte count.
 
@@ -133,16 +133,42 @@ The first conditional-module implementation missed markup emitted by layouts out
 
 The repair makes home an explicit `content-components.css` consumer, passes a `hasDefaultSidebar` flag from every layout that renders the shared sidebar, and scopes icon centering to `.icon-block-color .fa-icon`. The current verification result is:
 
-| Check | Result |
-| --- | ---: |
-| Playwright route/viewport cases | `20/20` passed |
-| Generated HTML files scanned | `2,904` |
-| Normal pages checked | `1,074` |
-| Component-to-CSS contracts checked | `1,722` |
-| Missing CSS contracts | `0` |
-| Emitted or linked `legacy.css` | `0` |
+| Check                              |         Result |
+| ---------------------------------- | -------------: |
+| Playwright route/viewport cases    | `24/24` passed |
+| Generated HTML files scanned       |        `2,904` |
+| Normal pages checked               |        `1,074` |
+| Component-to-CSS contracts checked |        `2,439` |
+| Missing CSS contracts              |            `0` |
+| Emitted or linked `legacy.css`     |            `0` |
 
 The final local Lighthouse `13.4.0` mobile spot check used Headless Chrome `150` against the Hugo development server. Both pages had `0 ms` TBT, effectively zero CLS, and no render-blocking requests. The local performance scores were `86` for home and `84` for Kubernetes, with LCP at `4.0 s` and `4.1 s`. Lighthouse still estimated `41 KiB` and `15 KiB` of unused CSS respectively, so unused CSS and live mobile LCP remain separate follow-up work rather than being recorded as green.
+
+Author blocks on news and Deep Dive pages follow the same layout-generated contract. `article-extras.css` is selected when author frontmatter is set, and the browser matrix asserts a flex author block with a circular `75x75px` background image.
+
+The desktop megamenu previously inherited `.cardtitle`, `.cardicon`, and icon-centering rules from `service-cards.css`. That made the menu look correct on home and service-list pages but stretched the icon backgrounds on pages where the service-card module was intentionally absent. Equivalent rules are now scoped to `.megamenu-main-service-card` in critical layout CSS, and every desktop browser case opens the menu and asserts a circular, centered `40x40px` icon.
+
+Accordion motion keeps the existing JavaScript-managed measured height and ARIA state. CSS uses a pronounced ease-in-out height curve that starts slowly, accelerates through the middle, and settles slowly without scaling the panel width. Bottom spacing follows the same curve, and the two-line plus icon folds into a minus. `prefers-reduced-motion: reduce` reduces all accordion transitions to an effectively immediate state change.
+
+Accordion panel insets remain on the first and last direct content children so collapsed panels keep zero height. The resulting open panel has the same `46px` visual spacing on all four sides, including nested FAQ/schema markup.
+
+Nested FAQ/schema panels reset the first inner heading's top margin so it does not add `40px` above the shared `46px` inset. The FAQ browser case opens the selected security question and asserts all four panel insets after the height transition settles.
+
+Compliance download metadata is generated by the default single layout from `downloadpdf` frontmatter. `document-content.css` is therefore selected directly from that parameter instead of relying only on `.Content` markers. The browser matrix verifies the metadata grid, row columns, label treatment, width, and separators on the Acceptable Use Policy page.
+
+Webinar and demo carousel controls are explicit `70x70px` circular flex buttons with centered SVG arrows, keyboard focus rings, and a restrained hover lift. The desktop webinar browser case asserts the circle dimensions and icon centering.
+
+Webinar episode cards explicitly color their SVG play icons white. Chapter playlists use fixed `22px` circles, `6x8px` arrows, and a `12px` text gap; the browser matrix asserts these dimensions on the corresponding Swedish legal-security episode at desktop and mobile widths.
+
+Horizontal cards use equal content padding on all four sides at desktop and mobile widths. Article code-block copy controls use a pill radius; the LLM Deep Dive browser case asserts both component contracts.
+
+The AI translation disclaimer keeps a compact `4px` bottom margin. When translated content starts with an ingress block, its first paragraph uses an `8px` top margin instead of the global ingress paragraph margin. A translated standard-document browser case asserts the component margin at desktop and mobile widths; other following-content margins remain independent.
+
+`.bg-white` and `.card-heading` are cross-layout contracts used by horizontal cards, sidebars, and contact cards. They remain in always-loaded `main.css`, not conditional `content-cards.css`. The Compute browser case asserts the documentation-heading typography and the white NIS 2 card surface.
+
+Home and service-list cards keep their icon circles at `40px` while rendering the SVG symbol at `20px`. The home browser case asserts both dimensions so icon growth cannot shift the service-card grid.
+
+The `readfile` shortcode uses `.readfile-details` and `.readfile-summary`, with its styling isolated in conditional `details-content.css`. This restores the summary pill and open full-screen presentation on service pages without applying generic `details` rules to price tables or other native disclosure components.
 
 ## Scope
 
@@ -201,8 +227,8 @@ That meant all rules inside `assets/css/main.css` were render-blocking on all pa
 
 The generated baseline was:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset            |         Raw |       Gzip |
+| ---------------- | ----------: | ---------: |
 | `main.min...css` | `124,662 B` | `23,197 B` |
 
 ### Static main-v2.css
@@ -216,8 +242,8 @@ The remaining repo references were maintenance metadata, not live page CSS:
 
 Because the file lived under `static/`, Hugo copied it to every language output even though normal pages did not request it:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset                    |        Raw |       Gzip |
+| ------------------------ | ---------: | ---------: |
 | `static/css/main-v2.css` | `90,906 B` | `18,161 B` |
 
 ### Price-table CSS
@@ -236,9 +262,18 @@ Because the rules were in `main.css`, every page paid the CSS parse/download cos
 `layouts/shortcodes/price-list.html` loaded three external Material CSS files:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@material/form-field/dist/mdc.form-field.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css"
+/>
 ```
 
 No `mdc-*` class usage was found in the price shortcode, price content, or the mobile price-table script. These links added three external stylesheet requests on price pages without styling active elements.
@@ -247,14 +282,14 @@ No `mdc-*` class usage was found in the price shortcode, price content, or the m
 
 Most pages used the full generated Font Awesome Pro `6.7.2` bundle:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset                             |         Raw |       Gzip |
+| --------------------------------- | ----------: | ---------: |
 | `combined-font-awesome.min...css` | `210,862 B` | `50,714 B` |
 
 The self-hosted Classic Solid font file was:
 
-| Asset | Raw |
-| --- | ---: |
+| Asset                |         Raw |
+| -------------------- | ----------: |
 | `fa-solid-900.woff2` | `354,296 B` |
 
 The site already had one existing subset mechanism for pages with:
@@ -345,8 +380,8 @@ The CSS is still a normal render-blocking stylesheet on price pages. That is int
 
 Generated size:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset                    |       Raw |      Gzip |
+| ------------------------ | --------: | --------: |
 | `price-tables.min...css` | `6,487 B` | `1,384 B` |
 
 ### Price pages use a Font Awesome subset
@@ -386,8 +421,8 @@ The subset includes the icon mappings needed by the price pages and adjacent GEA
 
 Generated size:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset                                   |       Raw |      Gzip |
+| --------------------------------------- | --------: | --------: |
 | `combined-font-awesome-price.min...css` | `2,973 B` | `1,084 B` |
 
 Important limitation: this only subsets Font Awesome CSS. It does not subset the `fa-solid-900.woff2` font file, which is still fetched when Font Awesome icons are used.
@@ -509,11 +544,11 @@ Templates and shortcodes that previously emitted `<i class="fa...">` now call `f
 
 Three legacy Dockyards icons were mapped to Classic Solid replacements:
 
-| Legacy input | SVG output |
-| --- | --- |
-| `fa-docker` | `fa-cubes` |
-| `fa-automation` | `fa-gears` |
-| `fa-expert` | `fa-user-tie` |
+| Legacy input    | SVG output    |
+| --------------- | ------------- |
+| `fa-docker`     | `fa-cubes`    |
+| `fa-automation` | `fa-gears`    |
+| `fa-expert`     | `fa-user-tie` |
 
 Active Font Awesome CSS/webfont loading was removed from `layouts/partials/head.html`. Normal rendered pages no longer request:
 
@@ -536,8 +571,8 @@ HUGO_CACHEDIR=/tmp/safespring-css-impl-cache-after hugo --minify --destination /
 
 This is not a render-blocking page-load win because normal pages did not link `main-v2.css`. The effect is build-output and maintenance cleanup:
 
-| Asset | Before | After | Change |
-| --- | ---: | ---: | ---: |
+| Asset                                    |                           Before | After |  Change |
+| ---------------------------------------- | -------------------------------: | ----: | ------: |
 | copied `main-v2.css` per language output | `90,906 B` raw / `18,161 B` gzip | `0 B` | removed |
 
 With four language outputs in the verification build, Hugo no longer copies roughly `363,624 B` of unreferenced CSS into the generated site.
@@ -546,9 +581,9 @@ With four language outputs in the verification build, Hugo no longer copies roug
 
 The first price-table split made all pages get a smaller `main.css`:
 
-| Asset | Before raw | After raw | Raw change | Before gzip | After gzip | Gzip change |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `main.min...css` | `124,662 B` | `118,138 B` | `-6,524 B` | `23,197 B` | `22,313 B` | `-884 B` |
+| Asset            |  Before raw |   After raw | Raw change | Before gzip | After gzip | Gzip change |
+| ---------------- | ----------: | ----------: | ---------: | ----------: | ---------: | ----------: |
+| `main.min...css` | `124,662 B` | `118,138 B` | `-6,524 B` |  `23,197 B` | `22,313 B` |    `-884 B` |
 
 This is a small global win. The bigger win is on price pages.
 
@@ -563,14 +598,14 @@ HUGO_CACHEDIR=/tmp/safespring-css-compliance-cache-after hugo --minify --destina
 
 Gzip values below use `gzip -cn` so the generated filename is not included in the gzip header.
 
-| Asset | Before raw | After raw | Raw change | Before gzip | After gzip | Gzip change |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `main.min...css` | `118,138 B` | `112,731 B` | `-5,407 B` | `22,235 B` | `21,350 B` | `-885 B` |
+| Asset            |  Before raw |   After raw | Raw change | Before gzip | After gzip | Gzip change |
+| ---------------- | ----------: | ----------: | ---------: | ----------: | ---------: | ----------: |
+| `main.min...css` | `118,138 B` | `112,731 B` | `-5,407 B` |  `22,235 B` | `21,350 B` |    `-885 B` |
 
 Pages with compliance document tables now load the generated main variant:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset                                      |         Raw |       Gzip |
+| ------------------------------------------ | ----------: | ---------: |
 | `main-compliance-document-table.min...css` | `118,138 B` | `22,231 B` |
 
 That keeps the document-table pages at parity with the previous single `main.css` payload while normal pages no longer carry the document-table CSS.
@@ -588,20 +623,20 @@ The source CSS moved into `assets/css/video-player.css` is `14,312 B`.
 
 Normal pages now get a smaller global `main.css`:
 
-| Asset | Before raw | After raw | Raw change | Before gzip | After gzip | Gzip change |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `main.min...css` | `112,731 B` | `100,619 B` | `-12,112 B` | `21,350 B` | `19,208 B` | `-2,142 B` |
+| Asset            |  Before raw |   After raw |  Raw change | Before gzip | After gzip | Gzip change |
+| ---------------- | ----------: | ----------: | ----------: | ----------: | ---------: | ----------: |
+| `main.min...css` | `112,731 B` | `100,619 B` | `-12,112 B` |  `21,350 B` | `19,208 B` |  `-2,142 B` |
 
 Compliance document-table pages also benefit because their main variant is built from the smaller `main.css`:
 
-| Asset | Before raw | After raw | Raw change | Before gzip | After gzip | Gzip change |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `main-compliance-document-table.min...css` | `118,138 B` | `106,026 B` | `-12,112 B` | `22,231 B` | `20,089 B` | `-2,142 B` |
+| Asset                                      |  Before raw |   After raw |  Raw change | Before gzip | After gzip | Gzip change |
+| ------------------------------------------ | ----------: | ----------: | ----------: | ----------: | ---------: | ----------: |
+| `main-compliance-document-table.min...css` | `118,138 B` | `106,026 B` | `-12,112 B` |  `22,231 B` | `20,089 B` |  `-2,142 B` |
 
 Video pages now load the generated main video variant:
 
-| Asset | Raw | Gzip |
-| --- | ---: | ---: |
+| Asset                         |         Raw |       Gzip |
+| ----------------------------- | ----------: | ---------: |
 | `main-video-player.min...css` | `112,731 B` | `21,432 B` |
 
 That keeps video pages at essentially the previous single-main payload size, with no added CSS request. The raw size matches the old `main.css`; gzip is `+82 B` in this local build because the moved rules are concatenated after the smaller `main.css`.
@@ -619,33 +654,33 @@ HUGO_CACHEDIR=/tmp/safespring-fa-svg-cache hugo --minify --destination /tmp/safe
 
 Generated Font Awesome CSS bundles were removed from rendered page loading:
 
-| Asset | Before raw | Before gzip | After |
-| --- | ---: | ---: | --- |
-| `combined-font-awesome.min...css` | `161,133 B` | `36,765 B` | not generated/linked |
-| `combined-font-awesome-price.min...css` | `3,094 B` | `1,041 B` | not generated/linked |
-| `combined-font-awesome-containerplatform.min...css` | `3,431 B` | `1,156 B` | not generated/linked |
+| Asset                                               |  Before raw | Before gzip | After                |
+| --------------------------------------------------- | ----------: | ----------: | -------------------- |
+| `combined-font-awesome.min...css`                   | `161,133 B` |  `36,765 B` | not generated/linked |
+| `combined-font-awesome-price.min...css`             |   `3,094 B` |   `1,041 B` | not generated/linked |
+| `combined-font-awesome-containerplatform.min...css` |   `3,431 B` |   `1,156 B` | not generated/linked |
 
 The static font files are still copied into the output because they remain in `static/fonts`, but normal rendered pages no longer reference or request them:
 
-| Asset | Raw | Page-load status |
-| --- | ---: | --- |
+| Asset                |         Raw | Page-load status               |
+| -------------------- | ----------: | ------------------------------ |
 | `fa-solid-900.woff2` | `276,676 B` | not requested by checked pages |
-| `custom-icons.woff2` | `10,592 B` | not requested by checked pages |
+| `custom-icons.woff2` |  `10,592 B` | not requested by checked pages |
 
 The SVG sprite adds small page-local HTML instead. Key English pages measured:
 
-| Page | Sprite raw | Sprite gzip | HTML gzip change | FA refs before -> after |
-| --- | ---: | ---: | ---: | --- |
-| `/en/` | `7,358 B` | `2,285 B` | `+2,419 B` | `2 -> 0` |
-| `/en/price/` | `6,077 B` | `1,972 B` | `+2,192 B` | `2 -> 0` |
-| `/en/services/kubernetes/` | `13,032 B` | `4,300 B` | `+4,945 B` | `2 -> 0` |
-| `/en/services/dockyards/` | `6,669 B` | `2,633 B` | `+2,888 B` | `2 -> 0` |
-| `/en/compliance/` | `7,400 B` | `2,393 B` | `+2,787 B` | `2 -> 0` |
-| `/en/compliance/iso-27001/` | `5,504 B` | `1,713 B` | `+1,946 B` | `2 -> 0` |
-| `/en/demo/introduction-to-safespring-kubernetes-engine/` | `6,086 B` | `1,944 B` | `+2,061 B` | `2 -> 0` |
-| `/en/contact/` | `4,842 B` | `1,846 B` | `+2,083 B` | `2 -> 0` |
-| `/en/deep-dive/bootstrap-talos-linux-kubernetes-on-openstack/` | `3,458 B` | `1,202 B` | `+1,345 B` | `2 -> 0` |
-| `/en/services/compute/` | `8,950 B` | `2,788 B` | `+3,370 B` | `2 -> 0` |
+| Page                                                           | Sprite raw | Sprite gzip | HTML gzip change | FA refs before -> after |
+| -------------------------------------------------------------- | ---------: | ----------: | ---------------: | ----------------------- |
+| `/en/`                                                         |  `7,358 B` |   `2,285 B` |       `+2,419 B` | `2 -> 0`                |
+| `/en/price/`                                                   |  `6,077 B` |   `1,972 B` |       `+2,192 B` | `2 -> 0`                |
+| `/en/services/kubernetes/`                                     | `13,032 B` |   `4,300 B` |       `+4,945 B` | `2 -> 0`                |
+| `/en/services/dockyards/`                                      |  `6,669 B` |   `2,633 B` |       `+2,888 B` | `2 -> 0`                |
+| `/en/compliance/`                                              |  `7,400 B` |   `2,393 B` |       `+2,787 B` | `2 -> 0`                |
+| `/en/compliance/iso-27001/`                                    |  `5,504 B` |   `1,713 B` |       `+1,946 B` | `2 -> 0`                |
+| `/en/demo/introduction-to-safespring-kubernetes-engine/`       |  `6,086 B` |   `1,944 B` |       `+2,061 B` | `2 -> 0`                |
+| `/en/contact/`                                                 |  `4,842 B` |   `1,846 B` |       `+2,083 B` | `2 -> 0`                |
+| `/en/deep-dive/bootstrap-talos-linux-kubernetes-on-openstack/` |  `3,458 B` |   `1,202 B` |       `+1,345 B` | `2 -> 0`                |
+| `/en/services/compute/`                                        |  `8,950 B` |   `2,788 B` |       `+3,370 B` | `2 -> 0`                |
 
 The tradeoff is intentional: each icon page gets roughly `1.2-4.3 KB` gzip of inline sprite HTML, while avoiding a `36.8 KB` gzip Font Awesome CSS request and the much larger Classic Solid webfont request on pages with icons.
 
@@ -653,27 +688,27 @@ The tradeoff is intentional: each icon page gets roughly `1.2-4.3 KB` gzip of in
 
 Local processed CSS loaded by price pages changed from:
 
-| Before asset | Raw | Gzip |
-| --- | ---: | ---: |
-| `local-font-faces.min...css` | `2,878 B` | `354 B` |
-| `main.min...css` | `124,662 B` | `23,197 B` |
-| `combined-font-awesome.min...css` | `210,862 B` | `50,714 B` |
-| **Total** | **`338,402 B`** | **`74,265 B`** |
+| Before asset                      |             Raw |           Gzip |
+| --------------------------------- | --------------: | -------------: |
+| `local-font-faces.min...css`      |       `2,878 B` |        `354 B` |
+| `main.min...css`                  |     `124,662 B` |     `23,197 B` |
+| `combined-font-awesome.min...css` |     `210,862 B` |     `50,714 B` |
+| **Total**                         | **`338,402 B`** | **`74,265 B`** |
 
 to:
 
-| After asset | Raw | Gzip |
-| --- | ---: | ---: |
-| `local-font-faces.min...css` | `2,878 B` | `354 B` |
-| `main.min...css` | `118,138 B` | `22,313 B` |
-| `price-tables.min...css` | `6,487 B` | `1,384 B` |
-| `combined-font-awesome-price.min...css` | `2,973 B` | `1,084 B` |
-| **Total** | **`130,476 B`** | **`25,135 B`** |
+| After asset                             |             Raw |           Gzip |
+| --------------------------------------- | --------------: | -------------: |
+| `local-font-faces.min...css`            |       `2,878 B` |        `354 B` |
+| `main.min...css`                        |     `118,138 B` |     `22,313 B` |
+| `price-tables.min...css`                |       `6,487 B` |      `1,384 B` |
+| `combined-font-awesome-price.min...css` |       `2,973 B` |      `1,084 B` |
+| **Total**                               | **`130,476 B`** | **`25,135 B`** |
 
 Net local processed CSS reduction on price pages:
 
-| Raw | Gzip |
-| ---: | ---: |
+|          Raw |        Gzip |
+| -----------: | ----------: |
 | `-207,926 B` | `-49,130 B` |
 
 In addition, price pages no longer request the three external Material CSS files. The audit estimated those at about `53.7 KB` raw CSS before transfer compression, plus three network requests.

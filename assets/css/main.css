@@ -713,8 +713,15 @@ a.text-button {
 }
 
 .card-heading {
-  margin: 0;
-  padding: 0;
+  color: var(--heading-color);
+  font: var(--hind-light-weight) 2.25rem/1 var(--hind-font);
+  hyphens: manual;
+  margin: 0 0 7px;
+  padding: 30px 0 0;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .arrows {

@@ -1,0 +1,98 @@
+.readfile-details[open] {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  z-index: 9999;
+  background-color: rgb(0, 0, 0, 0);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  transition: 0.3s ease-out;
+}
+
+.readfile-details[open] > div {
+  transition: 0.5s ease-out;
+  box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  background-color: white;
+  max-width: 800px;
+  padding: 100px;
+  margin: 5% auto;
+  border-radius: 20px;
+}
+
+.readfile-summary {
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--link-color);
+  border-radius: 50px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  padding: 14px 25px 12px !important;
+  text-align: center;
+  font: 14px/1 var(--hind-font-semibold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  min-width: 44px;
+  width: fit-content;
+  margin: 3% 0;
+}
+
+.readfile-summary::-webkit-details-marker,
+.readfile-summary::marker {
+  content: "";
+}
+
+.readfile-details[open] > .readfile-summary::before {
+  content: "Stäng " !important;
+}
+
+.readfile-details[open] > .readfile-summary {
+  content: none !important;
+  margin: 5%;
+  position: sticky;
+  top: 10%;
+  float: right;
+  background-color: var(--link-color);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px 8px;
+  text-align: center;
+  font: 13px/1 var(--hind-font-semibold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1100px) {
+  .readfile-details[open] > div {
+    margin: 10%;
+  }
+
+  .readfile-details[open] > .readfile-summary {
+    margin: 15% !important;
+  }
+
+  .readfile-details[open] > .readfile-summary::before {
+    content: "Tillbaka " !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .readfile-details[open] > div {
+    margin: 5% !important;
+    padding: 5% !important;
+  }
+
+  .readfile-details[open] > .readfile-summary {
+    margin: 0 auto !important;
+    top: 90% !important;
+    float: none !important;
+  }
+}

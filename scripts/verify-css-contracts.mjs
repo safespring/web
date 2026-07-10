@@ -14,6 +14,11 @@ function walk(directory) {
 
 const classContracts = [
   [
+    "article-extras",
+    (classes) => classes.includes("author-container"),
+    /\/css\/article-extras\.min/,
+  ],
+  [
     "accordion",
     (classes) =>
       classes.some(
@@ -48,6 +53,11 @@ const classContracts = [
     /\/css\/content-components\.min/,
   ],
   [
+    "document-content",
+    (classes) => classes.includes("document-download"),
+    /\/css\/document-content\.min/,
+  ],
+  [
     "content-filter",
     (classes) =>
       classes.some((name) =>
@@ -59,6 +69,11 @@ const classContracts = [
     "horizontal-card",
     (classes) => classes.includes("safespring-horisontal-card-container"),
     /\/css\/horizontal-card\.min/,
+  ],
+  [
+    "details-content",
+    (classes) => classes.includes("readfile-details"),
+    /\/css\/details-content\.min/,
   ],
   [
     "icon-blocks",
@@ -124,8 +139,10 @@ function isNormalPage(relativePath, html) {
 }
 
 function extractClasses(html) {
-  return [...html.matchAll(/class=(?:"([^"]*)"|'([^']*)')/gi)].flatMap(
-    (match) => (match[1] || match[2] || "").split(/\s+/).filter(Boolean),
+  return [
+    ...html.matchAll(/class=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi),
+  ].flatMap((match) =>
+    (match[1] || match[2] || match[3] || "").split(/\s+/).filter(Boolean),
   );
 }
 

@@ -87,10 +87,6 @@
   position: relative;
 }
 
-.bg-white {
-  background-color: #fff;
-}
-
 .extra-small {
   font-size: 0.7rem;
   padding-top: 4px;
@@ -470,14 +466,6 @@
 .bg-blue-white-fade {
   background-image: linear-gradient(200deg, #e8eff3, #e8eff300 80%);
 }
-.card-heading {
-  hyphens: manual;
-  padding-top: 30px;
-  font: var(--hind-light-weight) 2.25rem/1 var(--hind-font);
-  color: var(--heading-color);
-  margin-bottom: 7px;
-}
-
 .styled-link {
   text-decoration: none;
   outline: none;
@@ -497,7 +485,9 @@
 }
 
 .blue-hover {
-  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  transition:
+    transform 0.2s ease-in,
+    border-bottom-color 0.2s ease-in;
   border-bottom: 5px solid #ffffff;
 }
 
@@ -507,7 +497,9 @@
 }
 
 .blue-hover-tech {
-  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  transition:
+    transform 0.2s ease-in,
+    border-bottom-color 0.2s ease-in;
   border-bottom: 5px solid transparent;
 }
 
@@ -522,7 +514,9 @@
 }
 
 .blue-hover-blogg {
-  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  transition:
+    transform 0.2s ease-in,
+    border-bottom-color 0.2s ease-in;
   border-bottom: 5px solid transparent;
 }
 
@@ -532,7 +526,9 @@
 }
 
 .blue-hover-webinar {
-  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  transition:
+    transform 0.2s ease-in,
+    border-bottom-color 0.2s ease-in;
   border-bottom: 5px solid white;
 }
 
@@ -542,7 +538,9 @@
 }
 
 .blue-hover-whitepaper {
-  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  transition:
+    transform 0.2s ease-in,
+    border-bottom-color 0.2s ease-in;
   border-bottom: 5px solid white;
 }
 
@@ -664,18 +662,42 @@
 
 #scrollLeft,
 #scrollRight {
+  align-items: center;
   background: rgba(255, 255, 255, 0.7); /* Halvtransparent vit */
   border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
   cursor: pointer;
+  display: inline-flex;
   font-size: 20px;
+  justify-content: center;
   margin: 10px;
   height: 70px;
+  padding: 0;
+  transition:
+    background-color 180ms ease-out,
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out;
   width: 70px;
 }
 
 #scrollLeft:hover,
 #scrollRight:hover {
   background: rgba(255, 255, 255, 1); /* Opaq vit vid hover */
+  box-shadow: 0 8px 20px rgba(25, 95, 140, 0.12);
+  transform: translateY(-2px);
+}
+
+#scrollLeft:focus-visible,
+#scrollRight:focus-visible {
+  outline: 3px solid var(--main-color);
+  outline-offset: 3px;
+}
+
+#scrollLeft .fa-icon,
+#scrollRight .fa-icon {
+  color: var(--main-color);
+  margin: 0;
 }
 
 .webinar-scrolling-wrapper-flexbox {
@@ -869,7 +891,6 @@
     overflow-wrap: anywhere;
     word-break: break-word;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -990,13 +1011,13 @@
 .webinar-series-text-container-episode .text-button {
   align-items: center;
   display: inline-flex;
-  gap: .45rem;
+  gap: 0.45rem;
   line-height: 1.2;
   white-space: normal;
 }
 
 .webinar-series-text-container-episode .text-button {
-  margin-top: .55rem;
+  margin-top: 0.55rem;
 }
 
 .flexcontainer-webinar-series-backplate {

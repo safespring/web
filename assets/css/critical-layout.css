@@ -458,6 +458,24 @@
           border-radius: 20px;
         }
 
+        .megamenu-main-service-card .cardtitle {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .megamenu-main-service-card .cardicon {
+          display: flex;
+          flex-shrink: 0;
+          width: 40px;
+          height: 40px;
+          border-radius: 100px;
+        }
+
+        .megamenu-main-service-card .cardicon .fa-icon {
+          margin: auto;
+        }
+
         .megamenu-main-service-card p {
           font-weight: 400;
           color: #323232bf;

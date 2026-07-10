@@ -38,7 +38,7 @@
   }
 
   .safespring-horisontal-card-content {
-    padding: 1.75em 3em 3em 3em;
+    padding: 3em;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -57,7 +57,7 @@
   }
 
   .safespring-horisontal-card-content {
-    padding: 1em 3em 3em 3em;
+    padding: 3em;
   }
 }
 

@@ -43,7 +43,7 @@
 
 <style>
   .ai-disclaimer-container {
-    margin: 20px 0;
+    margin: 20px 0 4px;
     margin-left: -30px;
     padding: 30px;
     background-color: #fafefe;
@@ -57,6 +57,10 @@
 
   .ai-disclaimer-spacer {
     display: none;
+  }
+
+  .ai-disclaimer-container + .ai-disclaimer-spacer + style + script + .ingress > p:first-child {
+    margin-top: 8px;
   }
 
   .ai-disclaimer-header {

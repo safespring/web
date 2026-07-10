@@ -153,16 +153,17 @@
     {{ $hasHorizontalCard := or (eq .Params.list "horisontal") (eq .Section "career") (gt (len (findRE "safespring-horisontal-card-container" $renderedContent 1)) 0) }}
     {{ $hasContentTable := or (eq .Layout "containers") (gt (len (findRE "<table" $renderedContent 1)) 0) }}
     {{ $hasCodeContent := gt (len (findRE "<pre|<code" $renderedContent 1)) 0 }}
+    {{ $hasDetailsContent := gt (len (findRE "readfile-details" $renderedContent 1)) 0 }}
     {{ $hasFormContent := or (eq .Layout "containers") (eq .Params.form "yes") (gt (len (findRE "<form|class=\"contact-form|inputGroup|g-recaptcha" $renderedContent 1)) 0) }}
     {{ $hasLegacyAboutPage := gt (len (findRE "id=\"sticky-div\"|class=\"map\"" $renderedContent 1)) 0 }}
     {{ $hasPhotoRoll := or .Params.logobanner .Params.logobannertransparent .Params.logobannersaas }}
     {{ $hasTooltip := gt (len (findRE "tooltip" $renderedContent 1)) 0 }}
     {{ $hasContentFilter := gt (len (findRE "tf-filter|tf-buttons|filter-number" $renderedContent 1)) 0 }}
     {{ $hasServiceCards := or .IsHome (eq .Params.list "indexcard") (eq .Kind "section") (gt (len (findRE "flexcontainer-three|service-card" $renderedContent 1)) 0) }}
-    {{ $hasArticleExtras := gt (len (findRE "author-container|class=\"authors|class=\"cpu|class=\"impact" $renderedContent 1)) 0 }}
+    {{ $hasArticleExtras := or .Params.author (gt (len (findRE "author-container|class=\"authors|class=\"cpu|class=\"impact" $renderedContent 1)) 0) }}
     {{ $hasIconBlocks := gt (len (findRE "icon-block|icon-blue|icon-orange" $renderedContent 1)) 0 }}
     {{ $hasMermaid := gt (len (findRE "class=\"mermaid" $renderedContent 1)) 0 }}
-    {{ $hasDocumentContent := or $hasComplianceDocumentTable (gt (len (findRE "document-table|footnote-ref|class=\"footnotes" $renderedContent 1)) 0) }}
+    {{ $hasDocumentContent := or .Params.downloadpdf $hasComplianceDocumentTable (gt (len (findRE "document-table|footnote-ref|class=\"footnotes" $renderedContent 1)) 0) }}
 
     {{ partial "deferred-stylesheet.html" (dict "source" "css/main.css") }}
     {{ partial "deferred-stylesheet.html" (dict "source" "css/footer.css") }}
@@ -191,6 +192,9 @@
     {{ end }}
     {{ if $hasCodeContent }}
       {{ partial "deferred-stylesheet.html" (dict "source" "css/code-content.css") }}
+    {{ end }}
+    {{ if $hasDetailsContent }}
+      {{ partial "deferred-stylesheet.html" (dict "source" "css/details-content.css") }}
     {{ end }}
     {{ if $hasFormContent }}
       {{ partial "deferred-stylesheet.html" (dict "source" "css/forms.css") }}

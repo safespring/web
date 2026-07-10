@@ -29,8 +29,8 @@
   text-align: left !important;
   outline: none !important;
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease !important;
+    background-color 180ms ease-out,
+    color 180ms ease-out !important;
   font: 300 16px/1.2 var(--hind-font) !important;
   /*border-radius:10px;*/
   text-transform: none;
@@ -52,50 +52,84 @@
   border-radius: 5px 5px 0 0;
 }
 
-.accordion:after {
-  content: "\2b";
-  font: 700 24px/1 var(--mon-font);
+.accordion::before,
+.accordion::after {
+  content: "";
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  /* Flytta elementet vertikalt med 50% av sin höjd */
-  color: #19f064;
-  font-weight: bold;
-  margin-left: 15px;
-  margin-right: 15px;
+  left: 20px;
+  width: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #19f064;
+  transform-origin: center;
+  transition:
+    transform 360ms cubic-bezier(0.76, 0, 0.24, 1),
+    background-color 180ms ease-out;
 }
 
-.active-utbildning:after {
-  content: "\2212" !important;
-  color: #fa690f !important;
-  border-radius: 5px 5px 0 0;
+.accordion::before {
+  transform: translate(-50%, -50%) rotate(90deg) scaleX(1);
 }
 
-.accordion-active:after {
-  content: "\2212" !important;
-  color: #fa690f !important;
+.accordion::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.active-utbildning::before,
+.accordion-active::before {
+  background-color: #fa690f;
+  transform: translate(-50%, -50%) rotate(90deg) scaleX(0);
+}
+
+.active-utbildning::after,
+.accordion-active::after {
+  background-color: #fa690f;
+  transform: translate(-50%, -50%) rotate(180deg);
 }
 
 .accordion-active {
+  background-color: rgba(232, 239, 243, 0.34);
 }
 
 .panel {
-  padding: 0 46px !important;
+  --accordion-panel-padding: 46px;
+  padding: 0 var(--accordion-panel-padding) !important;
   background-color: rgba(234, 240, 244, 0.5);
   max-height: 0;
+  margin-bottom: 0;
   overflow: hidden !important;
   border-radius: 20px;
-  transition: max-height 0.6s cubic-bezier(0.34, 0, 0, 1.04) !important;
+  transition:
+    max-height 460ms cubic-bezier(0.76, 0, 0.24, 1),
+    margin-bottom 460ms cubic-bezier(0.76, 0, 0.24, 1) !important;
+  will-change: max-height;
 }
 
-.panel p:first-child {
-  padding-top: 40px;
+.panel > :first-child {
+  padding-top: var(--accordion-panel-padding) !important;
+}
+
+.panel > :last-child {
+  padding-bottom: var(--accordion-panel-padding) !important;
+}
+
+.panel > :first-child > :first-child {
+  margin-top: 0;
 }
 
 .panel p {
   margin: 0px !important;
   padding-top: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion,
+  .accordion::before,
+  .accordion::after,
+  .panel {
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* END - UTBILDNING */

@@ -119,6 +119,10 @@
   margin: auto;
 }
 
+.flexcontainer-three .cardicon .fa-icon {
+  font-size: 1.25rem;
+}
+
 /*.headline-and-badge {
 display:flex;
 justify-content:flex-end;
