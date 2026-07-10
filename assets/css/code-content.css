@@ -147,6 +147,7 @@ strong {
   color: var(--middle-blue-color);
   border: none;
   border-radius: 999px;
+  font-family: var(--mon-font);
   font-size: 80%;
   line-height: 1.2;
   margin: 12px;

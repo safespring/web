@@ -286,6 +286,7 @@ for (const viewport of viewports) {
                 ]
               : [],
             buttonHeight: buttonBox?.height || 0,
+            buttonFontFamily: buttonStyle?.fontFamily,
             buttonRadius: parseFloat(buttonStyle?.borderRadius || "0"),
           };
         });
@@ -301,6 +302,13 @@ for (const viewport of viewports) {
             articleComponentLayout.buttonHeight / 2
         ) {
           throw new Error("copy-code button is not pill-shaped");
+        }
+        if (
+          !articleComponentLayout.buttonFontFamily
+            ?.toLowerCase()
+            .includes("montserrat")
+        ) {
+          throw new Error("copy-code button is not using Montserrat");
         }
       }
 
