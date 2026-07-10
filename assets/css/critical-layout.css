@@ -542,6 +542,23 @@
         .megamenu-service-card a:hover {
           color: var(--link-color) !important;
         }
+
+        .megamenu-wrapper--content {
+          gap: clamp(2rem, 4vw, 4rem);
+          padding-block: 3%;
+        }
+
+        .megamenu-wrapper--content .megamenu-main-service {
+          gap: 20px;
+        }
+
+        .megamenu-wrapper--content .megamenu-main-service-card {
+          width: 250px;
+        }
+
+        .megamenu-wrapper--content .megamenu-service-card {
+          min-width: 190px;
+        }
       }
       /* END - MEGA MENU */
 

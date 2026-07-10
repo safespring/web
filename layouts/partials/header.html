@@ -30,7 +30,7 @@
           <li>
             <a
               id="main-menu-link-platform"
-              class="site-header-platform-link"
+              class="site-header-platform-link site-header-megamenu-link"
               href="{{ relref . "services" }}"
               aria-controls="site-megamenu"
               aria-expanded="false"
@@ -44,7 +44,13 @@
             >
           </li>
           <li>
-            <a id="main-menu-link-2" href="{{ relref . "knowledge-hub" }}"
+            <a
+              id="main-menu-link-current"
+              class="site-header-platform-link site-header-megamenu-link"
+              href="{{ relref . "knowledge-hub" }}"
+              aria-controls="site-content-megamenu"
+              aria-expanded="false"
+              aria-haspopup="true"
               >{{ T "menu.current" }}</a
             >
           </li>
@@ -125,6 +131,16 @@
         {{ end }}
       </ul>
     </div>
+  </div>
+
+  <div
+    class="megamenu-wrapper megamenu-wrapper--content desktop-only"
+    id="site-content-megamenu"
+    aria-hidden="true"
+    aria-label="{{ T "menu.current" }}"
+    inert
+  >
+    {{ partial "knowledge-hub-megamenu.html" . }}
   </div>
 
   <!-- Mobile menu wrapper (inside header) -->

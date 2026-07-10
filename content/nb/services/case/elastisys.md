@@ -43,6 +43,8 @@ For kundene betyr det at de kan bygge og drifte applikasjoner uten selv å mått
 
 Welkin er CNCF-sertifisert som Kubernetes-distribusjon og inneholder kontroller for sikkerhet i containeriserte miljøer. Eksempler er inntrengingsdeteksjon med Falco, policykontroll med Open Policy Agent/Gatekeeper, automatisk sertifikathåndtering med cert-manager, containerregister med sikkerhetsskanning og støtte for CI/CD-flyter som ArgoCD.
 
+I en sikkerhetsgjennomgang må det derfor være mulig å følge hvordan nettverkssegmentering, rollebasert tilgang, hemmelighetshåndtering, sårbarhetsskanning, logging og oppdateringer håndteres. Kontrollene må kunne dokumenteres i den løpende driften, ikke bare når klyngen tas i bruk.
+
 Den vanskelige delen er ikke bare å starte en Kubernetes-klynge, men å drifte den med reelle arbeidslaster over tid. For regulerte miljøer må plattformen håndtere oppgraderinger, testing, patching, CVE-oppfølging, backup og støttetjenester for logging og monitorering uten at ansvarsfordelingen blir uklar.
 
 Det gjør at Welkin kan brukes gjennom hele programvarelivssyklusen: utvikling, pakking, test, utrulling, drift og revisjon. Safesprings rolle er å gi den lokale Compute-infrastrukturen, datasenterplasseringen, lagringen og nettverket som plattformen kan kjøre på.

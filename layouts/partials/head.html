@@ -144,6 +144,8 @@
     {{ $hasComplianceDocumentTable := gt (len (findRE "compliance-document-table__info" $renderedContent 1)) 0 }}
     {{ $hasVideoPlayer := or .IsHome .Params.videoURL (gt (len (findRE "data-video-player" $renderedContent 1)) 0) }}
     {{ $hasAboutHistory := eq .Layout "about-history" }}
+    {{ $hasContentTimeline := gt (len (findRE "content-timeline" $renderedContent 1)) 0 }}
+    {{ $hasBoundaryTable := gt (len (findRE "ss-boundary-table" $renderedContent 1)) 0 }}
     {{ $hasDefaultSidebar := .Scratch.Get "hasDefaultSidebar" }}
     {{ $hasContactCard := gt (len (findRE "contact-container" $renderedContent 1)) 0 }}
     {{ $cardSections := slice "blog" "demo" "internal" "solution-brief" "tech-update" "webinar" "whitepaper" }}
@@ -159,6 +161,9 @@
     {{ $hasPhotoRoll := or .Params.logobanner .Params.logobannertransparent .Params.logobannersaas }}
     {{ $hasTooltip := gt (len (findRE "tooltip" $renderedContent 1)) 0 }}
     {{ $hasContentFilter := gt (len (findRE "tf-filter|tf-buttons|filter-number" $renderedContent 1)) 0 }}
+    {{ $knowledgeSections := slice "blog" "tech-update" "webinar" "solution-brief" "whitepaper" }}
+    {{ $isKnowledgeHubPage := and .File (eq .File.BaseFileName "knowledge-hub") }}
+    {{ $hasKnowledgeNavigation := or $isKnowledgeHubPage (in $knowledgeSections .Section) }}
     {{ $hasServiceCards := or .IsHome (eq .Params.list "indexcard") (eq .Kind "section") (gt (len (findRE "flexcontainer-three|service-card" $renderedContent 1)) 0) }}
     {{ $hasArticleExtras := or .Params.author (gt (len (findRE "author-container|class=\"authors|class=\"cpu|class=\"impact" $renderedContent 1)) 0) }}
     {{ $hasIconBlocks := gt (len (findRE "icon-block|icon-blue|icon-orange" $renderedContent 1)) 0 }}
@@ -170,6 +175,15 @@
     {{ if $hasAboutHistory }}
       {{ $aboutHistoryCSS := resources.Get "css/about-history.css" | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $aboutHistoryCSS.RelPermalink }}" />
+    {{ end }}
+    {{ if .Params.ai }}
+      {{ partial "deferred-stylesheet.html" (dict "source" "css/ai-disclaimer.css") }}
+    {{ end }}
+    {{ if $hasContentTimeline }}
+      {{ partial "deferred-stylesheet.html" (dict "source" "css/content-timeline.css") }}
+    {{ end }}
+    {{ if $hasBoundaryTable }}
+      {{ partial "deferred-stylesheet.html" (dict "source" "css/boundary-table.css") }}
     {{ end }}
     {{ if $hasContactCard }}
       {{ partial "deferred-stylesheet.html" (dict "source" "css/contact-card.css") }}
@@ -210,6 +224,9 @@
     {{ end }}
     {{ if $hasContentFilter }}
       {{ partial "deferred-stylesheet.html" (dict "source" "css/content-filter.css") }}
+    {{ end }}
+    {{ if $hasKnowledgeNavigation }}
+      {{ partial "deferred-stylesheet.html" (dict "source" "css/knowledge-navigation.css") }}
     {{ end }}
     {{ if $hasServiceCards }}
       {{ partial "deferred-stylesheet.html" (dict "source" "css/service-cards.css") }}

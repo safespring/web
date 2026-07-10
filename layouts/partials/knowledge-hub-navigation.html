@@ -1,0 +1,35 @@
+{{- $page := . -}}
+{{- $categories := partial "knowledge-hub-categories.html" $page -}}
+{{- $isKnowledgeHub := and $page.File (eq $page.File.BaseFileName "knowledge-hub") -}}
+{{- $activeSection := $page.Section -}}
+{{- $sectionParam := lower (default "" $page.Params.section) -}}
+{{- if or (eq $page.Section "tech-update") (in $sectionParam "tech update") (in $sectionParam "deep dive") (in $sectionParam "tekn") -}}
+  {{- $activeSection = "tech-update" -}}
+{{- end -}}
+<nav class="knowledge-category-nav" aria-label="{{ T "knowledgehub.browse_categories" }}">
+  <div class="knowledge-category-nav__inner">
+    <a
+      class="knowledge-category-nav__link{{ if $isKnowledgeHub }} is-active{{ end }}"
+      href="{{ relref $page "knowledge-hub" }}"
+      {{ if $isKnowledgeHub }}aria-current="page"{{ end }}
+    >
+      <span class="knowledge-category-nav__icon knowledge-category-nav__icon--all">
+        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-layer-group" "page" $page) }}
+      </span>
+      <span>{{ T "knowledgehub.knowledgehub" }}</span>
+    </a>
+    {{ range $categories }}
+      {{- $isActive := eq $activeSection .section -}}
+      <a
+        class="knowledge-category-nav__link{{ if $isActive }} is-active{{ end }}"
+        href="{{ .href }}"
+        {{ if $isActive }}aria-current="page"{{ end }}
+      >
+        <span class="knowledge-category-nav__icon" style="--category-color: {{ .color }}">
+          {{ partial "fa-icon.html" (dict "class" .icon "page" $page) }}
+        </span>
+        <span>{{ .label }}</span>
+      </a>
+    {{ end }}
+  </div>
+</nav>

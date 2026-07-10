@@ -6,7 +6,7 @@
  * desktop megamenu accessibility, mobile menu state, inert handling, focus
  * trapping, Escape/outside-click closing, and contact-button tracking.
  *
- * DOM contract: #navbar, #main-menu-link-platform, #site-megamenu,
+ * DOM contract: #navbar, .site-header-megamenu-link[aria-controls],
  * #mobileMenuBtn, #mobileMenuWrapper, #mobileMainMenu, .mobile-submenu-trigger,
  * .mobile-menu-wrapper .back-button, and .mobile-menu-wrapper .submenu.
  *
@@ -54,61 +54,102 @@
   }
 
   function initMegaMenu() {
-    var platformLink = document.getElementById("main-menu-link-platform");
-    var megaMenuWrapper = document.getElementById("site-megamenu");
-    var hideTimeout;
-    var suppressMegaMenuFocusOpen = false;
+    var megaMenuLinks = Array.from(
+      document.querySelectorAll(".site-header-megamenu-link[aria-controls]"),
+    );
+    var controllers = [];
 
-    if (!platformLink || !megaMenuWrapper) {
+    if (!megaMenuLinks.length) {
       return;
     }
 
-    function showMegaMenu() {
-      if (suppressMegaMenuFocusOpen) {
+    function hideMegaMenu(controller) {
+      controller.wrapper.classList.remove("show");
+      controller.wrapper.setAttribute("aria-hidden", "true");
+      controller.wrapper.setAttribute("inert", "");
+      controller.link.setAttribute("aria-expanded", "false");
+    }
+
+    function showMegaMenu(controller) {
+      if (controller.suppressFocusOpen) {
         return;
       }
-      clearTimeout(hideTimeout);
-      megaMenuWrapper.classList.add("show");
-      megaMenuWrapper.setAttribute("aria-hidden", "false");
-      megaMenuWrapper.removeAttribute("inert");
-      platformLink.setAttribute("aria-expanded", "true");
+      controllers.forEach(function (otherController) {
+        clearTimeout(otherController.hideTimeout);
+        if (otherController !== controller) {
+          hideMegaMenu(otherController);
+        }
+      });
+      clearTimeout(controller.hideTimeout);
+      controller.wrapper.classList.add("show");
+      controller.wrapper.setAttribute("aria-hidden", "false");
+      controller.wrapper.removeAttribute("inert");
+      controller.link.setAttribute("aria-expanded", "true");
     }
 
-    function hideMegaMenu() {
-      megaMenuWrapper.classList.remove("show");
-      megaMenuWrapper.setAttribute("aria-hidden", "true");
-      megaMenuWrapper.setAttribute("inert", "");
-      platformLink.setAttribute("aria-expanded", "false");
-    }
-
-    function scheduleMegaMenuClose() {
-      hideTimeout = setTimeout(function () {
-        if (!document.activeElement.closest("#site-megamenu")) {
-          hideMegaMenu();
+    function scheduleMegaMenuClose(controller) {
+      controller.hideTimeout = setTimeout(function () {
+        if (!controller.wrapper.contains(document.activeElement)) {
+          hideMegaMenu(controller);
         }
       }, 120);
     }
 
-    platformLink.addEventListener("mouseenter", showMegaMenu);
-    platformLink.addEventListener("focus", showMegaMenu);
-    platformLink.addEventListener("mouseleave", scheduleMegaMenuClose);
-    platformLink.addEventListener("focusout", scheduleMegaMenuClose);
+    megaMenuLinks.forEach(function (link) {
+      var wrapper = document.getElementById(link.getAttribute("aria-controls"));
+      if (!wrapper) {
+        return;
+      }
+      var controller = {
+        link: link,
+        wrapper: wrapper,
+        hideTimeout: null,
+        suppressFocusOpen: false,
+      };
+      controllers.push(controller);
 
-    megaMenuWrapper.addEventListener("mouseenter", showMegaMenu);
-    megaMenuWrapper.addEventListener("mouseleave", scheduleMegaMenuClose);
-    megaMenuWrapper.addEventListener("focusin", showMegaMenu);
-    megaMenuWrapper.addEventListener("focusout", scheduleMegaMenuClose);
+      link.addEventListener("mouseenter", function () {
+        showMegaMenu(controller);
+      });
+      link.addEventListener("focus", function () {
+        showMegaMenu(controller);
+      });
+      link.addEventListener("mouseleave", function () {
+        scheduleMegaMenuClose(controller);
+      });
+      link.addEventListener("focusout", function () {
+        scheduleMegaMenuClose(controller);
+      });
+      wrapper.addEventListener("mouseenter", function () {
+        showMegaMenu(controller);
+      });
+      wrapper.addEventListener("mouseleave", function () {
+        scheduleMegaMenuClose(controller);
+      });
+      wrapper.addEventListener("focusin", function () {
+        showMegaMenu(controller);
+      });
+      wrapper.addEventListener("focusout", function () {
+        scheduleMegaMenuClose(controller);
+      });
+    });
 
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && megaMenuWrapper.classList.contains("show")) {
-        event.preventDefault();
-        hideMegaMenu();
-        suppressMegaMenuFocusOpen = true;
-        platformLink.focus();
-        window.requestAnimationFrame(function () {
-          suppressMegaMenuFocusOpen = false;
-        });
+      if (event.key !== "Escape") {
+        return;
       }
+      controllers.forEach(function (controller) {
+        if (!controller.wrapper.classList.contains("show")) {
+          return;
+        }
+        event.preventDefault();
+        hideMegaMenu(controller);
+        controller.suppressFocusOpen = true;
+        controller.link.focus();
+        window.requestAnimationFrame(function () {
+          controller.suppressFocusOpen = false;
+        });
+      });
     });
   }
 

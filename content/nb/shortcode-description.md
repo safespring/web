@@ -117,8 +117,8 @@ En primær knapp med teksten "Call Us" (lenket til `/contact`) og en sekundær t
 Vanlige accordions trenger bare selve accordion-shortcoden:
 
 ```markdown
-{{% accordion title="Mer informasjon" id="acc1" %}}
-Innhold.
+{{% accordion title="Mer information" id="acc1" %}}
+Innehåll.
 {{% /accordion %}}
 ```
 

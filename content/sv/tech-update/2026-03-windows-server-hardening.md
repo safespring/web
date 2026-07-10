@@ -305,13 +305,13 @@ ansible-playbook -i inventory.ini windows_baseline.yml
 ### Användbara alternativ
 
 ```bash
-# Utförligare output, bra för felsökning
+# Verbose output, good for troubleshooting
 ansible-playbook -i inventory.ini windows_baseline.yml -v
 
-# Maximal debug-output
+# Maximum debug output
 ansible-playbook -i inventory.ini windows_baseline.yml -vvv
 
-# Torrkörning, visa vad som skulle ändras utan att göra ändringar
+# Dry run, see what would change without making changes
 ansible-playbook -i inventory.ini windows_baseline.yml --check
 ```
 

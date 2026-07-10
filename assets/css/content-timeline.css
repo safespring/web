@@ -1,0 +1,94 @@
+.content-timeline {
+  list-style: none;
+  width: min(100%, 820px);
+  margin: clamp(2rem, 4vw, 3rem) 0;
+  padding: 0;
+  border-left: 1px solid rgba(25, 95, 140, 0.24);
+  counter-reset: none;
+}
+
+.content-timeline__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(5.8rem, 0.22fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  margin: 0;
+  padding: clamp(1rem, 2vw, 1.35rem) 0 clamp(1.5rem, 3vw, 2.25rem) clamp(1rem, 2vw, 1.6rem);
+  border-top: 1px solid rgba(25, 95, 140, 0.14);
+  counter-increment: none;
+}
+
+.content-timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.content-timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -0.41rem;
+  top: calc(clamp(1rem, 2vw, 1.35rem) + 0.15rem);
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0;
+  border-radius: 50%;
+  background: var(--web-green-color);
+  box-shadow: 0 0 0 0.45rem rgba(25, 240, 100, 0.14);
+  text-align: initial;
+  direction: ltr;
+}
+
+.content-timeline__label {
+  color: #195f8c;
+  font: 600 0.86rem/1.2 "safespring mono", var(--mon-font);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.content-timeline__date {
+  display: block;
+  margin: 0 0 0.45rem;
+}
+
+.content-timeline__title {
+  margin: 0 0 0.45rem;
+  color: #163648;
+  font: 599 1.1rem/1.25 var(--hind-font);
+  letter-spacing: 0;
+}
+
+.content-timeline__content > :first-child {
+  margin-top: 0;
+}
+
+.content-timeline__content p {
+  margin: 0 0 1rem;
+}
+
+.content-timeline__content p:last-child {
+  margin-bottom: 0;
+}
+
+.content-timeline--topics .content-timeline__item {
+  padding-top: clamp(0.95rem, 1.8vw, 1.25rem);
+  padding-bottom: clamp(1.35rem, 2.6vw, 1.95rem);
+}
+
+.content-timeline--topics .content-timeline__title {
+  margin-bottom: 0.55rem;
+  font-family: var(--mon-font);
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.content-timeline--topics .content-timeline__content p {
+  margin-bottom: 0.7rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .content-timeline__item {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+}

@@ -1,0 +1,44 @@
+{{- $page := . -}}
+{{- $categories := slice
+  (dict
+    "section" "webinar"
+    "label" (T "knowledgehub.webcast")
+    "description" (T "knowledgehub.webcast_desc")
+    "icon" "fa-solid fa-video"
+    "color" "#195f8c"
+    "href" (relref $page "webinar")
+  )
+  (dict
+    "section" "tech-update"
+    "label" (T "knowledgehub.tech_update")
+    "description" (T "knowledgehub.tech_update_desc")
+    "icon" "fa-solid fa-code"
+    "color" "#3c9bcd"
+    "href" (relref $page "tech-update")
+  )
+  (dict
+    "section" "blog"
+    "label" (T "knowledgehub.blog")
+    "description" (T "knowledgehub.blog_desc")
+    "icon" "fa-solid fa-book-open"
+    "color" "#f4670f"
+    "href" (relref $page "blog")
+  )
+  (dict
+    "section" "solution-brief"
+    "label" (T "knowledgehub.solution_brief")
+    "description" (T "knowledgehub.solution_brief_desc")
+    "icon" "fa-solid fa-lightbulb-on"
+    "color" "#32cd32"
+    "href" (relref $page "solution-brief")
+  )
+  (dict
+    "section" "whitepaper"
+    "label" (T "knowledgehub.whitepaper")
+    "description" (T "knowledgehub.whitepaper_desc")
+    "icon" "fa-solid fa-file-lines"
+    "color" "#6154a4"
+    "href" (relref $page "whitepaper")
+  )
+-}}
+{{- return $categories -}}

@@ -47,27 +47,36 @@ Safespring used the criteria in the Cloud Sovereignty Framework and conducted a 
 
 {{< distance >}}
 
-{{% note "how we assess ourselves" %}}
+## How we assess ourselves
+
 Here’s how we assess ourselves across the eight sovereignty objectives (SEAL score from 0 to 4):
 
-1. **SOV-1** *Strategic Sovereignty score: 4.*  
+{{% timeline class="content-timeline--topics" ariaLabel="Safespring sovereignty assessment" %}}
+{{% timeline-item code="SOV-1" title="Strategic Sovereignty · Score 4" %}}
 Safespring is 100 % a Swedish company and with only Swedish governance. We are owned by the employees and the board of directors. We have no dependency on non-European capital and all employees are European citizens living in EU/EES. Court orders from non EU/EES countries towards us are not valid and we don’t do business in countries outside EU/EES. Our technology stack is made up of open source technologies that cannot be suspended by another country or vendor.
-2. **SOV-2** *Legal & Jurisdictional Sovereignty score: 4.*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-2" title="Legal & Jurisdictional Sovereignty · Score 4" %}}
 Only Swedish and EU law applies to our contracts, services and operations. Our datacenters are in Sweden and Norway. We have no exposure to legal systems outside EU/EES. All IPR creation are within EU/EES.
-3. **SOV-3** *Data & AI Sovereignty score: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-3" title="Data & AI Sovereignty · Score 4" %}}
 We don’t see, log or use our customers’ data in any way. We use encryption and other security measures to protect our customers but they are also free to use their own encryption with keys only they have access to. All data is stored in the datacenter the customer chose to use and cannot be exported to countries outside Sweden and Norway since we don’t have datacenters there.
-4. **SOV-4** *Operational Sovereignty score: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-4" title="Operational Sovereignty · Score 4" %}}
 We own, manage and control our entire tech stack, from server hardware to Kubernetes platform. We minimize technological dependency on non-European vendors. This operational autonomy enables us to evolve or migrate the service if needed, without proprietary lock-in. 
-5. **SOV-5** Supply *Chain Sovereignty score: 2*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-5" title="Supply Chain Sovereignty · Score 2" %}}
 Server and networking hardware is impossible to buy without Chinese, Korean and/or American components and firmware. Since that’s how the market is we are highly dependent on non-EU/EES hardware. The software we use is open source and therefore global. We are not dependent on any company our country for the software stack we use. The datacenters we use are owned and operated by companies and staff from EU/EES. 
-6. **SOV-6** *Technology Sovereignty score: 3*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-6" title="Technology Sovereignty · Score 3" %}}
 We only use open source components, open API:s and open protocols. Our entire stack can technically and legally be deployed at customer site where the customer can further develop the stack without Safespring. All components, architecture and dependencies are documented and open. We lack server hardware, CPU:s, GPU:s and switches from EU/EES vendors. 
-7. **SOV-7** *Security & Compliance Sovereignty score: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-7" title="Security & Compliance Sovereignty · Score 4" %}}
 We are compliant with all relevant Swedish and EU law like GDPR, NIS2 and OSL. We are certified according to FR2000 and very soon ISO 27001. All security operations are within EU/EES. We are fully transparent about bugs, security breaches and fixes with our customers. Our customers can audit our datacenters, operations and compliance measures. 
-8. **SOV-8** *Environmental Sustainability score: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-8" title="Environmental Sustainability · Score 4" %}}
 All our datacenters have low PUE, reuse the heat generated and use 100 % green electricity. Our datacenter operators can provide data and certifications about all relevant sustainability parameters. We use our hardware until it can no longer be used and recycle it responsibly. 
-
-{{% /note %}}
+{{% /timeline-item %}}
+{{% /timeline %}}
 
 ## References
 [^1]:Trusted Cloud Referential by CIGREF and ANSSI’s Cloud de Confiance

@@ -54,6 +54,13 @@ import * as params from "@params";
       button.className = "copy-code-button";
       setButtonLabel(button, labels.copy);
 
+      var toolbar = document.createElement("div");
+      toolbar.className = "code-block-toolbar";
+
+      var language = document.createElement("span");
+      language.className = "code-block-language";
+      language.textContent = pre.dataset.lang || "";
+
       button.addEventListener("click", function () {
         if (!navigator.clipboard || !navigator.clipboard.writeText) {
           setButtonLabel(button, labels.error);
@@ -77,13 +84,10 @@ import * as params from "@params";
         }, 4000);
       });
 
-      pre.style.position = "relative";
-      pre.style.display = "flex";
-      button.style.position = "absolute";
-      button.style.top = "0";
-      button.style.right = "0";
-
-      pre.appendChild(button);
+      toolbar.appendChild(language);
+      toolbar.appendChild(button);
+      pre.classList.add("code-block-enhanced");
+      pre.appendChild(toolbar);
     });
   }
 

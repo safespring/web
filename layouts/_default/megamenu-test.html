@@ -1,0 +1,633 @@
+{{ partial "head.html" . }}
+{{ $categories := partial "knowledge-hub-categories.html" . }}
+{{ $initialCategory := index $categories 0 }}
+<body class="mega-menu-test-page">
+  <header class="mega-menu-test-header">
+    <a href="/" aria-label="Safespring">
+      <img
+        src="/img/logos/safespring_logotype_blue_svg.svg"
+        width="140"
+        height="30"
+        alt="Safespring"
+      />
+    </a>
+    <nav aria-label="Testnavigation">
+      <span>Plattformen</span>
+      <span>Pris</span>
+      <span class="is-selected">Aktuellt</span>
+      <span>Se demo</span>
+      <span class="mega-menu-test-header__contact">Kontakt</span>
+    </nav>
+  </header>
+
+  <main class="mega-menu-test">
+    <section class="mega-menu-test__intro">
+      <p class="mega-menu-test__eyebrow">Megameny</p>
+      <h1>Jämför två riktningar</h1>
+      <div class="mega-menu-test__view-switch" role="group" aria-label="Välj jämförelsevy">
+        <button type="button" class="is-active" data-comparison-mode="both" aria-pressed="true">
+          Båda
+        </button>
+        <button type="button" data-comparison-mode="current" aria-pressed="false">
+          Nuvarande
+        </button>
+        <button type="button" data-comparison-mode="new" aria-pressed="false">
+          Ny design
+        </button>
+      </div>
+    </section>
+
+    <section class="mega-menu-test__option" data-comparison-panel="current">
+      <div class="mega-menu-test__option-heading">
+        <span>01</span>
+        <div>
+          <p>Nuvarande</p>
+          <h2>Kortbaserad meny</h2>
+        </div>
+      </div>
+      <div class="mega-menu-test__stage mega-menu-test__stage--current">
+        <div class="megamenu-wrapper megamenu-wrapper--content mega-menu-test__current-menu show">
+          {{ partial "knowledge-hub-megamenu.html" . }}
+        </div>
+      </div>
+    </section>
+
+    <section class="mega-menu-test__option" data-comparison-panel="new">
+      <div class="mega-menu-test__option-heading">
+        <span>02</span>
+        <div>
+          <p>Nytt förslag</p>
+          <h2>Innehållsindex med förhandsvisning</h2>
+        </div>
+      </div>
+      <div class="mega-menu-test__stage mega-menu-test__stage--new">
+        <div class="mega-menu-concept" data-mega-concept>
+          <div class="mega-menu-concept__index">
+            <div class="mega-menu-concept__title">
+              <p>Aktuellt</p>
+              <span>5 format</span>
+            </div>
+            <nav aria-label="Innehållskategorier">
+              {{ range $index, $category := $categories }}
+                <a
+                  class="mega-menu-concept__item{{ if eq $index 0 }} is-active{{ end }}"
+                  href="{{ $category.href }}"
+                  data-mega-item
+                  data-label="{{ $category.label }}"
+                  data-description="{{ $category.description }}"
+                  data-href="{{ $category.href }}"
+                  data-color="{{ $category.color }}"
+                  style="--item-color: {{ $category.color }}"
+                >
+                  <span
+                    class="mega-menu-concept__item-icon"
+                    style="--item-color: {{ $category.color }}"
+                  >
+                    {{ partial "fa-icon.html" (dict "class" $category.icon "page" $) }}
+                  </span>
+                  <span class="mega-menu-concept__item-copy">
+                    <strong>{{ $category.label }}</strong>
+                    <small>{{ $category.description }}</small>
+                  </span>
+                  <span class="mega-menu-concept__arrow" aria-hidden="true">→</span>
+                </a>
+              {{ end }}
+            </nav>
+          </div>
+
+          <aside
+            class="mega-menu-concept__preview"
+            style="--preview-color: {{ $initialCategory.color }}"
+            data-mega-preview
+          >
+            <div class="mega-menu-concept__preview-mark" aria-hidden="true">
+              {{ partial "fa-icon.html" (dict "class" $initialCategory.icon "page" $) }}
+            </div>
+            <p class="mega-menu-concept__preview-label">Utforska</p>
+            <h3 data-preview-title>{{ $initialCategory.label }}</h3>
+            <p data-preview-description>{{ $initialCategory.description }}</p>
+            <a href="{{ $initialCategory.href }}" data-preview-link>
+              Öppna kategorin <span aria-hidden="true">→</span>
+            </a>
+            <a class="mega-menu-concept__hub-link" href="{{ relref . "knowledge-hub" }}">
+              Visa hela kunskapshubben
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .mega-menu-test-page {
+      background: #f7fbfd;
+      color: #323232;
+    }
+
+    .mega-menu-test-header {
+      align-items: center;
+      background: rgba(250, 254, 254, 0.94);
+      border-bottom: 1px solid color-mix(in srgb, var(--main-color) 16%, transparent);
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      min-height: 94px;
+      padding: 1.5rem max(2rem, calc((100vw - 1180px) / 2));
+    }
+
+    .mega-menu-test-header > a {
+      align-items: center;
+      display: inline-flex;
+      min-height: 44px;
+    }
+
+    .mega-menu-test-header img {
+      display: block;
+      width: 140px;
+    }
+
+    .mega-menu-test-header nav {
+      align-items: center;
+      display: flex;
+      font: 600 0.92rem/1 var(--hind-font);
+      gap: clamp(1.5rem, 3vw, 3rem);
+      color: var(--main-color);
+    }
+
+    .mega-menu-test-header nav span {
+      align-items: center;
+      display: inline-flex;
+      min-height: 44px;
+      position: relative;
+    }
+
+    .mega-menu-test-header nav .is-selected::after {
+      background: var(--button-color);
+      bottom: 0;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .mega-menu-test-header__contact {
+      background: var(--green-color);
+      border-radius: 999px;
+      color: #fff;
+      padding-inline: 1.35rem;
+    }
+
+    .mega-menu-test {
+      margin: 0 auto;
+      max-width: 1280px;
+      padding: clamp(3rem, 7vw, 6rem) 2rem 8rem;
+    }
+
+    .mega-menu-test__intro {
+      align-items: end;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem 3rem;
+      justify-content: space-between;
+      margin: 0 auto clamp(3rem, 6vw, 5rem);
+      max-width: 1180px;
+    }
+
+    .mega-menu-test__eyebrow,
+    .mega-menu-test__option-heading p,
+    .mega-menu-concept__title p,
+    .mega-menu-concept__preview-label {
+      color: var(--clear-blue-color);
+      font: 600 0.8rem/1 var(--mon-font);
+      letter-spacing: 0.08em;
+      margin: 0 0 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .mega-menu-test__intro h1 {
+      color: var(--main-color);
+      font: 300 clamp(2.8rem, 6vw, 5.4rem)/0.95 var(--hind-font);
+      margin: 0;
+    }
+
+    .mega-menu-test__view-switch {
+      background: color-mix(in srgb, var(--cloud-blue-color) 72%, white);
+      border-radius: 999px;
+      display: inline-flex;
+      padding: 4px;
+    }
+
+    .mega-menu-test__view-switch button {
+      background: transparent;
+      border: 0;
+      border-radius: 999px;
+      color: var(--main-color);
+      cursor: pointer;
+      font: 600 0.78rem/1 var(--mon-font);
+      min-height: 42px;
+      padding: 0.75rem 1rem 0.65rem;
+    }
+
+    .mega-menu-test__view-switch button.is-active {
+      background: #fff;
+      box-shadow: 0 4px 14px rgba(25, 95, 140, 0.1);
+    }
+
+    .mega-menu-test__view-switch button:focus-visible,
+    .mega-menu-concept a:focus-visible {
+      outline: 3px solid var(--main-color);
+      outline-offset: 3px;
+    }
+
+    .mega-menu-test__option {
+      margin: 0 auto clamp(4rem, 8vw, 7rem);
+      max-width: 1180px;
+      animation: menu-option-enter 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .mega-menu-test__option[hidden] {
+      display: none;
+    }
+
+    .mega-menu-test__option-heading {
+      align-items: flex-start;
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .mega-menu-test__option-heading > span {
+      color: var(--clear-blue-color);
+      font: 400 2.2rem/1 var(--hind-font);
+    }
+
+    .mega-menu-test__option-heading h2 {
+      color: var(--main-color);
+      font: 300 clamp(1.8rem, 3vw, 2.6rem)/1 var(--hind-font);
+      margin: 0;
+    }
+
+    .mega-menu-test__stage {
+      background: linear-gradient(120deg, rgba(232, 239, 243, 0.88), rgba(250, 254, 254, 0.96));
+      border-block: 1px solid color-mix(in srgb, var(--main-color) 16%, transparent);
+      box-sizing: border-box;
+      min-height: 390px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .mega-menu-test__stage::before {
+      color: color-mix(in srgb, var(--main-color) 6%, transparent);
+      content: "S";
+      font: 300 34rem/0.7 var(--hind-font);
+      pointer-events: none;
+      position: absolute;
+      right: -3rem;
+      top: 2rem;
+    }
+
+    .mega-menu-test__current-menu {
+      background: transparent;
+      box-sizing: border-box;
+      inset: auto;
+      margin: 0;
+      min-height: 390px;
+      position: relative !important;
+      width: 100%;
+    }
+
+    .mega-menu-concept {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.85fr);
+      min-height: 390px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mega-menu-concept__index {
+      padding: clamp(2rem, 4vw, 3.5rem);
+    }
+
+    .mega-menu-concept__title {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.2rem;
+    }
+
+    .mega-menu-concept__title p {
+      color: var(--main-color);
+      margin: 0;
+    }
+
+    .mega-menu-concept__title > span {
+      color: var(--middle-blue-color);
+      font: 500 0.78rem/1 var(--mon-font);
+    }
+
+    .mega-menu-concept__index nav {
+      border-top: 1px solid color-mix(in srgb, var(--main-color) 18%, transparent);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mega-menu-concept__item {
+      align-items: center;
+      border-bottom: 1px solid color-mix(in srgb, var(--main-color) 18%, transparent);
+      box-sizing: border-box;
+      color: var(--main-color);
+      display: grid;
+      gap: 0.8rem;
+      grid-template-columns: 38px minmax(0, 1fr) 20px;
+      min-height: 104px;
+      padding: 1rem 1.1rem;
+      position: relative;
+      transition: background-color 180ms ease-out;
+    }
+
+    .mega-menu-concept__item:nth-child(odd) {
+      border-right: 1px solid color-mix(in srgb, var(--main-color) 18%, transparent);
+    }
+
+    .mega-menu-concept__item:hover,
+    .mega-menu-concept__item:focus-visible,
+    .mega-menu-concept__item.is-active {
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .mega-menu-concept__item-icon {
+      align-items: center;
+      background: color-mix(in srgb, var(--item-color) 10%, white);
+      border-radius: 50%;
+      color: var(--item-color);
+      display: inline-flex;
+      height: 38px;
+      justify-content: center;
+      width: 38px;
+    }
+
+    .mega-menu-concept__item-icon .fa-icon {
+      margin: 0;
+    }
+
+    .mega-menu-concept__item-copy {
+      display: block;
+      min-width: 0;
+    }
+
+    .mega-menu-concept__item-copy strong {
+      display: block;
+      font: 400 1.12rem/1.15 var(--hind-font);
+    }
+
+    .mega-menu-concept__item-copy small {
+      color: #323232b8;
+      display: block;
+      font: 300 0.72rem/1.35 var(--mon-font);
+      margin-top: 0.25rem;
+    }
+
+    .mega-menu-concept__arrow {
+      color: var(--button-color);
+      font: 600 1rem/1 var(--mon-font);
+      transition: transform 180ms ease-out;
+    }
+
+    .mega-menu-concept__item:hover .mega-menu-concept__arrow,
+    .mega-menu-concept__item:focus-visible .mega-menu-concept__arrow {
+      transform: translateX(4px);
+    }
+
+    .mega-menu-concept__preview {
+      background: rgba(255, 255, 255, 0.78);
+      border-left: 1px solid color-mix(in srgb, var(--main-color) 18%, transparent);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+      padding: clamp(2.4rem, 5vw, 4.5rem);
+      position: relative;
+    }
+
+    .mega-menu-concept__preview::before {
+      background: var(--preview-color);
+      content: "";
+      inset: 0 auto 0 0;
+      position: absolute;
+      transform-origin: bottom;
+      transition: background-color 180ms ease-out;
+      width: 4px;
+    }
+
+    .mega-menu-concept__preview-mark {
+      align-items: center;
+      background: color-mix(in srgb, var(--preview-color) 10%, white);
+      border-radius: 50%;
+      color: var(--preview-color);
+      display: flex;
+      height: 54px;
+      justify-content: center;
+      margin-bottom: 2rem;
+      transition:
+        background-color 180ms ease-out,
+        color 180ms ease-out,
+        transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+      width: 54px;
+    }
+
+    .mega-menu-concept__preview.is-updating .mega-menu-concept__preview-mark {
+      transform: scale(0.92);
+    }
+
+    .mega-menu-concept__preview h3 {
+      color: var(--main-color);
+      font: 300 clamp(2rem, 3.2vw, 3rem)/1 var(--hind-font);
+      margin: 0 0 1rem;
+    }
+
+    .mega-menu-concept__preview > p:not(.mega-menu-concept__preview-label) {
+      color: #323232c7;
+      font: 300 0.95rem/1.55 var(--mon-font);
+      margin: 0 0 2rem;
+    }
+
+    .mega-menu-concept__preview > a:not(.mega-menu-concept__hub-link) {
+      color: var(--button-color);
+      font: 600 0.78rem/1 var(--mon-font);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    .mega-menu-concept__preview > a span {
+      display: inline-block;
+      margin-left: 0.4rem;
+      transition: transform 180ms ease-out;
+    }
+
+    .mega-menu-concept__preview > a:hover span {
+      transform: translateX(4px);
+    }
+
+    .mega-menu-concept__hub-link {
+      border-top: 1px solid color-mix(in srgb, var(--main-color) 16%, transparent);
+      color: var(--main-color);
+      font: 400 0.82rem/1.3 var(--mon-font);
+      padding-top: 1.3rem;
+    }
+
+    @keyframes menu-option-enter {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .mega-menu-test-header nav span:not(.is-selected):not(.mega-menu-test-header__contact) {
+        display: none;
+      }
+
+      .mega-menu-concept {
+        grid-template-columns: 1fr;
+      }
+
+      .mega-menu-concept__preview {
+        border-left: 0;
+        border-top: 1px solid color-mix(in srgb, var(--main-color) 18%, transparent);
+        min-height: 340px;
+      }
+
+      .mega-menu-test__current-menu {
+        display: flex !important;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .mega-menu-test-header {
+        min-height: 82px;
+        padding: 1rem 1.25rem;
+      }
+
+      .mega-menu-test-header nav {
+        gap: 0.75rem;
+      }
+
+      .mega-menu-test-header nav .is-selected {
+        display: none;
+      }
+
+      .mega-menu-test {
+        padding: 3rem 1rem 5rem;
+      }
+
+      .mega-menu-test__intro {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .mega-menu-test__view-switch {
+        max-width: 100%;
+      }
+
+      .mega-menu-test__view-switch button {
+        padding-inline: 0.75rem;
+      }
+
+      .mega-menu-test__stage--current {
+        overflow-x: auto;
+      }
+
+      .mega-menu-test__current-menu {
+        min-width: 850px;
+      }
+
+      .mega-menu-concept__index {
+        padding: 1.25rem;
+      }
+
+      .mega-menu-concept__index nav {
+        grid-template-columns: 1fr;
+      }
+
+      .mega-menu-concept__item:nth-child(odd) {
+        border-right: 0;
+      }
+
+      .mega-menu-concept__preview {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mega-menu-test__option,
+      .mega-menu-concept__item,
+      .mega-menu-concept__arrow,
+      .mega-menu-concept__preview-mark {
+        animation: none;
+        transition: none;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      var modeButtons = document.querySelectorAll("[data-comparison-mode]");
+      var panels = document.querySelectorAll("[data-comparison-panel]");
+      var concept = document.querySelector("[data-mega-concept]");
+      var preview = concept && concept.querySelector("[data-mega-preview]");
+      var items = concept ? concept.querySelectorAll("[data-mega-item]") : [];
+
+      modeButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var mode = button.getAttribute("data-comparison-mode");
+          modeButtons.forEach(function (candidate) {
+            var isActive = candidate === button;
+            candidate.classList.toggle("is-active", isActive);
+            candidate.setAttribute("aria-pressed", isActive ? "true" : "false");
+          });
+          panels.forEach(function (panel) {
+            panel.hidden = mode !== "both" && panel.getAttribute("data-comparison-panel") !== mode;
+          });
+        });
+      });
+
+      function updatePreview(item) {
+        if (!preview) return;
+        items.forEach(function (candidate) {
+          candidate.classList.toggle("is-active", candidate === item);
+        });
+        preview.classList.add("is-updating");
+        preview.style.setProperty("--preview-color", item.getAttribute("data-color"));
+        preview.querySelector("[data-preview-title]").textContent = item.getAttribute("data-label");
+        preview.querySelector("[data-preview-description]").textContent = item.getAttribute("data-description");
+        preview.querySelector("[data-preview-link]").setAttribute("href", item.getAttribute("data-href"));
+        var sourceUse = item.querySelector("use");
+        var previewUse = preview.querySelector(".mega-menu-concept__preview-mark use");
+        if (sourceUse && previewUse) {
+          var iconHref = sourceUse.getAttribute("href");
+          previewUse.setAttribute("href", iconHref);
+          previewUse.setAttribute("xlink:href", iconHref);
+        }
+        window.setTimeout(function () {
+          preview.classList.remove("is-updating");
+        }, 180);
+      }
+
+      items.forEach(function (item) {
+        item.addEventListener("mouseenter", function () {
+          updatePreview(item);
+        });
+        item.addEventListener("focus", function () {
+          updatePreview(item);
+        });
+      });
+    })();
+  </script>
+  {{ partial "fa-sprite.html" . }}
+</body>

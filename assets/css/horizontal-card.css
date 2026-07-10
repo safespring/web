@@ -2,6 +2,7 @@
 .safespring-horisontal-card-container {
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: var(--reg-shadow);
 }
 
 @media screen and (min-width: 1500px) {

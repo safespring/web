@@ -53,6 +53,9 @@
 <div class="heading-default-single">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
     {{ .Render "li3" }}
   </div>
+  {{ if in (slice "blog" "tech-update" "solution-brief" "whitepaper") .Section }}
+    {{ partial "knowledge-hub-navigation.html" . }}
+  {{ end }}
 
   <!-- CONTENT -->
   {{ if .Params.logobanner }}{{ partial "LogoBanner2.html" . }}{{ end }}
@@ -73,6 +76,18 @@
     >
       {{ partial "mobile-toc.html" . }}
       {{ .Content }}
+      {{ $listPages := .Pages }}
+      {{ if eq .Section "blog" }}
+        {{ $perspectivePages := slice }}
+        {{ range .Pages }}
+          {{ $sectionParam := lower (.Params.section | default "") }}
+          {{ $isDeepDive := or (in $sectionParam "tech update") (in $sectionParam "tekn") (in $sectionParam "deep dive") }}
+          {{ if not $isDeepDive }}
+            {{ $perspectivePages = $perspectivePages | append . }}
+          {{ end }}
+        {{ end }}
+        {{ $listPages = $perspectivePages }}
+      {{ end }}
       {{ if eq .Section "webinar" }}
         <!-- Lista utvalda serier (huvudsidor för varje serie) -->
         <div class="series-container">
@@ -95,14 +110,14 @@
         {{ if not .Params.nolist }}
           {{ if eq .Params.list "indexcard" }}
             <div class="flexcontainer-three">
-              {{ range .Pages }}{{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $) }}{{ end }}{{ .Scratch.Set "faTargetPage" $ }}{{ .Render "li-index" }}{{ .Scratch.Set "faTargetPage" false }}{{ end }}
+              {{ range $listPages }}{{ with .Params.cardicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" . "page" $) }}{{ end }}{{ .Scratch.Set "faTargetPage" $ }}{{ .Render "li-index" }}{{ .Scratch.Set "faTargetPage" false }}{{ end }}
               <!-- Stänger 'range .Pages' -->
             </div>
           {{ end }}
           <!-- Stänger 'if eq .Params.list "indexcard"' -->
 
           {{ if eq .Params.list "horisontal" }}
-            {{ range .Pages }}
+            {{ range $listPages }}
               {{ .Render
                 "horisontal-list"
               }}
@@ -110,7 +125,7 @@
             <!-- Stänger 'range .Pages' -->
           {{ else }}
             <div class="flexcontainer">
-              {{ range .Pages }}
+              {{ range $listPages }}
                 <div class="content-container">{{ .Render "li-latest" }}</div>
               {{ end }}
               <!-- Stänger 'range .Pages' -->

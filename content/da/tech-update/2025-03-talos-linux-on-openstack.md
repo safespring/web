@@ -91,7 +91,6 @@ Inden vi fortsætter, lad os sætte API-endpointet for klyngen og vælge, hvilke
 ```bash
 talosctl config endpoint "https://fqdn"
 talosctl config node "https://fdqn"
-
 ```
 
 _Følgende er en eksempelkonfiguration, der også viser, hvordan man installerer en brugerdefineret CNI (Cilium i dette tilfælde) med et Kubernetes-job._
@@ -166,7 +165,6 @@ Og til sidst opretter vi én til arbejderne:
 
 ```yaml
 # separate worker node config
-
 machine:
   type: worker
   nodeLabels:
@@ -177,22 +175,19 @@ En maskinkonfiguration kan også patches efterfølgende:
 
 ```bash
 talosctl machineconfig patch worker.yaml --patch @patches/patch.yaml -o worker1.yaml
-
 ```
 
 Og på en kørende Talos-node kan du patche maskinkonfigurationen ved hjælp af følgende:
 
 ```bash
 talosctl patch mc --nodes 1.2.3.4 --patch @patches/patch.yaml
-
 ```
 
 {{% note "hent kubconfig" %}}
 Når vi sætter indstillingen `rotate-server-certificates` til `true`, kan den nye kubconfig hentes ved at bruge:
 
 ```bash
-talosctl kubeconfig kubeconfig\_<path>
-
+talosctl kubeconfig kubeconfig_<path>
 ```
 
 {{% /note %}}
@@ -232,7 +227,6 @@ Kør nedenstående for at verificere adgangen til klyngen.
 
 ```
 kubectl get nodes -o wide
-
 ```
 
 ## Konklusion: Hvorfor Talos Linux?

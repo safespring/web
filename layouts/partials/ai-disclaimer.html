@@ -1,9 +1,7 @@
 {{- $id := printf "ai-disc-%d" (now.UnixNano) -}}
 {{- $translations := .Page.AllTranslations -}}
 {{- $original := index (where $translations ".Params.ai" "ne" true) 0 | default .Page -}}
-{{- $english := index (where $translations "Lang" "en") 0 | default .Page -}}
-{{- $originalLangName := $original.Language.Label -}}
-{{- $href := $english.Permalink -}}
+{{- $originalLangName := T (printf "ai_disclaimer.lang_%s" $original.Lang) -}}
 {{- $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-language" "page" .) -}}
 {{- $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) -}}
 
@@ -14,228 +12,47 @@
     aria-expanded="false"
     aria-controls="{{ $id }}-panel"
   >
-      {{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}
-      <p>{{ T "ai_disclaimer.title" }}</p>
+    {{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}
+    <span>{{ T "ai_disclaimer.title" }}</span>
     {{ partial "fa-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}
   </button>
-
-  <div
-    class="ai-disclaimer-panel"
-    id="{{ $id }}-panel"
-    role="region"
-    aria-label="{{ T "ai_disclaimer.title" }}"
-  >
-    <p>{{ T "ai_disclaimer.intro" }}</p>
-    <div class="ai-disclaimer-cta">
-      {{- if ne $original.Lang "en" }}
-        <a href="{{ $english.Permalink }}"><strong>{{ T "ai_disclaimer.lang_en" }}</strong></a>
-      {{- end }}
-      <a href="{{ $original.Permalink }}"><strong>{{ T (printf "ai_disclaimer.lang_%s" $original.Lang) }} ({{ T "ai_disclaimer.original" }})</strong></a>
-      <a href='mailto:web@safespring.com
-?subject={{ T "ai_disclaimer.mail_subject" }}{{ .Title }}
-&amp;body={{ T "ai_disclaimer.mail_body" (dict "Permalink" .Page.Permalink) }}'>
-        <small>{{ T "ai_disclaimer.feedback" }}</small>
-      </a>
+  <div class="ai-disclaimer-panel" id="{{ $id }}-panel" role="region">
+    <div class="ai-disclaimer-panel__inner">
+      <p>{{ T "ai_disclaimer.source" (dict "Language" $originalLangName) }}</p>
+      <a href="{{ $original.Permalink }}">{{ T "ai_disclaimer.read_original" }}</a>
     </div>
   </div>
 </div>
-<div class="ai-disclaimer-spacer" aria-hidden="true"></div>
-
-<style>
-  .ai-disclaimer-container {
-    margin: 20px 0 4px;
-    margin-left: -30px;
-    padding: 30px;
-    background-color: #fafefe;
-    border-radius: 40px;
-    max-width: 350px;
-    position: relative;
-    transition: box-shadow 300ms ease-in;
-    width: 65vw;
-    border: solid 2px #fafefe
-  }
-
-  .ai-disclaimer-spacer {
-    display: none;
-  }
-
-  .ai-disclaimer-container + .ai-disclaimer-spacer + style + script + .ingress > p:first-child {
-    margin-top: 8px;
-  }
-
-  .ai-disclaimer-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 44px;
-    width: 100%;
-    border: 0;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    text-align: left;
-    font: var(--mon-font);
-    margin: 0;
-    color: var(--main-color);
-  }
-
-  .ai-disclaimer-header p {
-    margin: 0 30px;
-    font-weight: 600;
-    color: var(--main-color);
-    line-height: 1;
-    text-wrap: balance;
-    text-transform: none;
-    font-size: 1rem;
-  }
-
-  .ai-disclaimer-header i {
-    font-size: 20px;
-    transition: transform 200ms ease-in;
-  }
-
-  .ai-disclaimer-header:focus-visible,
-  .ai-disclaimer-cta a:focus-visible {
-    outline: 3px solid var(--cloud-blue-color);
-    outline-offset: 4px;
-    border-radius: 8px;
-  }
-
-  .ai-disclaimer-headline {
-    display: flex;
-    align-items: center;
-  }
-
-  /* Panel – stängd som default (utan hidden-attribut; styrs av CSS/klass) */
-  .ai-disclaimer-panel {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transition: max-height 600ms ease, opacity 200ms ease, visibility 0s linear 600ms;
-  }
-
-  .ai-disclaimer-cta {
-  	display: flex;
-  	justify-content: space-between;
-  }
-
-  @media only screen and (max-width: 900px) {
-    .ai-disclaimer-container {
-      box-sizing: border-box;
-      margin-left: 0;
-      max-width: 100%;
-      padding: 24px;
-      position: relative;
-      width: 100%;
-      border-radius: 24px;
-    }
-
-    .ai-disclaimer-header {
-      gap: 0.75rem;
-    }
-
-    .ai-disclaimer-header p {
-      flex: 1 1 auto;
-      margin: 0;
-    }
-
-    .ai-disclaimer-cta {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .ai-disclaimer-cta a {
-      overflow-wrap: anywhere;
-      word-break: break-word;
-    }
-
-    .ai-disclaimer-spacer {
-      margin: 0 0 1.5rem;
-    }
-  }
-
-  /* ÖPPEN via klass (mobil/klick) */
-  .ai-disclaimer-container.is-open .ai-disclaimer-panel,
-  .ai-disclaimer-header[aria-expanded="true"] + .ai-disclaimer-panel {
-    max-height: 300px;
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transition: max-height 600ms ease, opacity 200ms ease, visibility 0s;
-  }
-  .ai-disclaimer-container.is-open .ai-disclaimer-header .fa-caret-down,
-  .ai-disclaimer-header[aria-expanded="true"] .fa-caret-down {
-    transform: rotate(180deg);
-  }
-
-  /* ÖPPEN via hover/fokus (desktop/laptop) */
-  @media (hover:hover) and (pointer:fine) {
-    .ai-disclaimer-container:hover .ai-disclaimer-panel,
-    .ai-disclaimer-container:focus-within .ai-disclaimer-panel {
-      max-height: 300px;
-      opacity: 1;
-      pointer-events: auto;
-      visibility: visible;
-      transition: max-height 600ms ease, opacity 200ms ease, visibility 0s;
-    }
-    .ai-disclaimer-container:hover .fa-caret-down,
-    .ai-disclaimer-container:focus-within .fa-caret-down {
-      transform: rotate(180deg);
-    }
-    .ai-disclaimer-container:hover {
-    	box-shadow: #00365842 0 25px 50px -12px;    	
-    	transition: all 300ms ease-out;
-      border: solid 2px #195f8c0f;
-      background-color: var(--cloud-blue-color);
-    }
-  }
-</style>
 
 <script>
 (() => {
-  const root  = document.getElementById('{{ $id }}');
-  const btn   = root.querySelector('.ai-disclaimer-header');
-  const panel = root.querySelector('.ai-disclaimer-panel');
+  const root = document.getElementById('{{ $id }}');
+  const button = root.querySelector('.ai-disclaimer-header');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  // Hjälpare: sätt aria-expanded baserat på öppet läge
   const setExpanded = (expanded) => {
-    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
   };
 
-  // 1) Desktop/laptop (hover + keyboard): uppdatera aria vid hover/fokus
-  const isFineHover = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
-  if (isFineHover) {
-    // hover
+  button.addEventListener('click', () => {
+    const open = !root.classList.contains('is-open');
+    root.classList.toggle('is-open', open);
+    setExpanded(open);
+  });
+
+  if (finePointer) {
     root.addEventListener('mouseenter', () => setExpanded(true));
     root.addEventListener('mouseleave', () => {
-      // stäng bara om panelen inte fortfarande har tangentbordsfokus
-      if (!root.classList.contains('is-open') && !root.matches(':focus-within')) setExpanded(false);
+      if (!root.classList.contains('is-open') && !root.matches(':focus-within')) {
+        setExpanded(false);
+      }
     });
-    // keyboard focus
     root.addEventListener('focusin', () => setExpanded(true));
     root.addEventListener('focusout', (event) => {
       if (!root.classList.contains('is-open') && !root.contains(event.relatedTarget)) {
         setExpanded(false);
       }
     });
-    // Klick på desktop ska inte toggla (önskat beteende: hover öppnar)
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      // gör inget – hover/focus sköter öppningen
-    });
-  } else {
-    // 2) Mobil/surfplatta (touch): toggla på klick
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const nowOpen = !root.classList.contains('is-open');
-      root.classList.toggle('is-open', nowOpen);
-      setExpanded(nowOpen);
-    });
   }
-
-  // Init aria (stängt)
-  setExpanded(false);
 })();
 </script>

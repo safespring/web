@@ -1,0 +1,191 @@
+{{ partial "head.html" . }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-circle-info" "page" .) }}
+{{ $_ := partial "fa-register-icon.html" (dict "class" "fa-solid fa-check" "page" .) }}
+<body class="ai-notice-lab-page">
+  {{ partial "header.html" . }}
+
+  <main class="ai-notice-lab">
+    <header class="ai-notice-lab__intro">
+      <div>
+        <p class="ai-notice-lab__eyebrow">Automatisk översättning</p>
+        <h1>Välj en tydligare notis</h1>
+        <p class="ai-notice-lab__lede">Sex riktningar med samma innehåll, visade där de skulle möta läsaren i en teknisk Deep Dive.</p>
+      </div>
+      <nav aria-label="Hoppa till förslag">
+        {{ range seq 1 6 }}<a href="#variant-{{ . }}">0{{ . }}</a>{{ end }}
+      </nav>
+    </header>
+
+    <div class="ai-notice-lab__options">
+      <section class="ai-option" id="variant-1" data-ai-variant>
+        <header class="ai-option__heading">
+          <span>01</span><div><p>I artikelmetadata</p><h2>Kompakt statusrad</h2></div>
+        </header>
+        <div class="article-stage article-stage--metadata">
+          <div class="article-stage__author"><span class="avatar">GP</span><p><strong>Gabriel Paues</strong><small>Cloud Architect</small></p></div>
+          <details class="notice-meta">
+            <summary>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}<span>Automatiskt översatt</span>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}</summary>
+            <div class="notice-panel"><p>Texten är automatiskt översatt för din bekvämlighet.</p><div><a href="#">English</a><a href="#">Läs originalet</a></div></div>
+          </details>
+          <div class="article-copy"><p class="article-copy__ingress">Om du redan vet hur man kör Kubernetes själv är den viktiga frågan inte om en hanterad tjänst kan skapa ett kluster.</p><p>Den viktiga frågan är hur tjänsten är utformad, var gränsen går och vilka delar av plattformen den redan löser på ett bra sätt.</p></div>
+        </div>
+      </section>
+
+      <section class="ai-option" id="variant-2" data-ai-variant>
+        <header class="ai-option__heading">
+          <span>02</span><div><p>Mellan hero och text</p><h2>Redaktionell informationsrad</h2></div>
+        </header>
+        <div class="article-stage article-stage--strip">
+          <details class="notice-strip">
+            <summary><span class="notice-icon">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}</span><span><strong>Automatiskt översatt</strong><small>Den här artikeln finns även på originalspråket</small></span>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}</summary>
+            <div class="notice-panel"><p>Texten är automatiskt översatt för din bekvämlighet.</p><div><a href="#">English</a><a href="#">Läs originalet</a></div></div>
+          </details>
+          <div class="article-copy"><p class="article-copy__ingress">Om du redan vet hur man kör Kubernetes själv är den viktiga frågan inte om en hanterad tjänst kan skapa ett kluster.</p><p>Den viktiga frågan är hur tjänsten är utformad, var gränsen går och vilka delar av plattformen den redan löser på ett bra sätt.</p></div>
+        </div>
+      </section>
+
+      <section class="ai-option" id="variant-3" data-ai-variant>
+        <header class="ai-option__heading">
+          <span>03</span><div><p>Bredvid ingressen</p><h2>Marginalnotis</h2></div>
+        </header>
+        <div class="article-stage article-stage--rail">
+          <aside class="notice-rail"><span>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}</span><strong>Automatiskt översatt</strong><p>Översatt från engelska.</p><a href="#">Läs originalet</a></aside>
+          <div class="article-copy"><p class="article-copy__ingress">Om du redan vet hur man kör Kubernetes själv är den viktiga frågan inte om en hanterad tjänst kan skapa ett kluster.</p><p>Den viktiga frågan är hur tjänsten är utformad, var gränsen går och vilka delar av plattformen den redan löser på ett bra sätt.</p></div>
+        </div>
+      </section>
+
+      <section class="ai-option" id="variant-4" data-ai-variant>
+        <header class="ai-option__heading">
+          <span>04</span><div><p>Under författaren</p><h2>Diskret textdisclosure</h2></div>
+        </header>
+        <div class="article-stage article-stage--plain">
+          <details class="notice-plain">
+            <summary>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}<span>Automatiskt översatt från engelska</span>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}</summary>
+            <div class="notice-panel"><p>Texten är automatiskt översatt för din bekvämlighet.</p><div><a href="#">English</a><a href="#">Läs originalet</a></div></div>
+          </details>
+          <div class="article-copy"><p class="article-copy__ingress">Om du redan vet hur man kör Kubernetes själv är den viktiga frågan inte om en hanterad tjänst kan skapa ett kluster.</p><p>Den viktiga frågan är hur tjänsten är utformad, var gränsen går och vilka delar av plattformen den redan löser på ett bra sätt.</p></div>
+        </div>
+      </section>
+
+      <section class="ai-option" id="variant-5" data-ai-variant>
+        <header class="ai-option__heading">
+          <span>05</span><div><p>I artikelflödet</p><h2>Infälld språkpanel</h2></div>
+        </header>
+        <div class="article-stage article-stage--inset">
+          <div class="article-copy"><p class="article-copy__ingress">Om du redan vet hur man kör Kubernetes själv är den viktiga frågan inte om en hanterad tjänst kan skapa ett kluster.</p>
+            <details class="notice-inset"><summary><span class="notice-icon">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-language" "page" .) }}</span><span><strong>Den här texten är automatiskt översatt</strong><small>Originalspråk: engelska</small></span>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-caret-down" "page" .) }}</summary><div class="notice-panel"><p>Vi använder automatisk översättning för att göra våra tekniska texter tillgängliga på fler språk.</p><div><a href="#">English</a><a href="#">Läs originalet</a></div></div></details>
+            <p>Den viktiga frågan är hur tjänsten är utformad, var gränsen går och vilka delar av plattformen den redan löser på ett bra sätt.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-option" id="variant-6" data-ai-variant>
+        <header class="ai-option__heading">
+          <span>06</span><div><p>I artikelns övre hörn</p><h2>Statusetikett</h2></div>
+        </header>
+        <div class="article-stage article-stage--badge">
+          <details class="notice-badge"><summary>{{ partial "fa-icon.html" (dict "class" "fa-solid fa-check" "page" .) }}<span>Översatt</span></summary><div class="notice-badge__panel"><strong>Automatiskt översatt</strong><p>Texten är översatt från engelska.</p><a href="#">Läs originalet</a></div></details>
+          <div class="article-copy"><p class="article-copy__ingress">Om du redan vet hur man kör Kubernetes själv är den viktiga frågan inte om en hanterad tjänst kan skapa ett kluster.</p><p>Den viktiga frågan är hur tjänsten är utformad, var gränsen går och vilka delar av plattformen den redan löser på ett bra sätt.</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <style>
+    .ai-notice-lab-page { background:#f7fbfd; color:#323232; }
+    .ai-notice-lab { margin:auto; max-width:1240px; padding:clamp(3rem,7vw,6rem) 2rem 8rem; }
+    .ai-notice-lab__intro { align-items:end; display:flex; gap:2rem; justify-content:space-between; margin:0 auto clamp(4rem,8vw,7rem); max-width:1080px; }
+    .ai-notice-lab__eyebrow,.ai-option__heading p { color:var(--clear-blue-color); font:600 .78rem/1 var(--mon-font); letter-spacing:.08em; margin:0 0 .75rem; text-transform:uppercase; }
+    .ai-notice-lab__intro h1 { color:var(--main-color); font:300 clamp(3rem,7vw,5.6rem)/.95 var(--hind-font); margin:0; }
+    .ai-notice-lab__lede { font:400 1.2rem/1.45 var(--hind-font); margin:1.25rem 0 0; max-width:660px; }
+    .ai-notice-lab__intro nav { display:flex; flex-wrap:wrap; gap:.4rem; }
+    .ai-notice-lab__intro nav a { align-items:center; border:1px solid #b7d3e1; border-radius:50%; color:var(--main-color); display:flex; font:600 .72rem/1 var(--mon-font); height:40px; justify-content:center; text-decoration:none; width:40px; }
+    .ai-notice-lab__intro nav a:hover,.ai-notice-lab__intro nav a:focus-visible { background:var(--main-color); color:white; }
+    .ai-notice-lab__options { display:grid; gap:clamp(4.5rem,9vw,8rem); }
+    .ai-option { scroll-margin-top:2rem; }
+    .ai-option__heading { align-items:center; display:flex; gap:1.25rem; margin:0 auto 1.5rem; max-width:940px; }
+    .ai-option__heading > span { align-items:center; background:var(--main-color); border-radius:50%; color:#fff; display:flex; flex:0 0 46px; font:600 .72rem/1 var(--mon-font); height:46px; justify-content:center; }
+    .ai-option__heading p { margin-bottom:.4rem; }
+    .ai-option__heading h2 { color:var(--main-color); font:400 clamp(1.6rem,3vw,2.2rem)/1.05 var(--hind-font); margin:0; }
+    .article-stage { background:#fff; border:1px solid #dfebf0; border-radius:8px; box-shadow:0 10px 30px rgba(18,75,108,.07); box-sizing:border-box; margin:auto; min-height:360px; padding:clamp(2rem,5vw,4.25rem); position:relative; width:min(940px,100%); }
+    .article-copy { max-width:650px; }
+    .article-copy p { font:400 1.08rem/1.52 var(--hind-font); margin:0 0 1.25rem; }
+    .article-copy .article-copy__ingress { color:#252525; font-size:clamp(1.45rem,2.8vw,2rem); font-weight:300; line-height:1.28; }
+    .article-stage__author { align-items:center; border-bottom:1px solid #e1ebef; display:flex; gap:.8rem; margin-bottom:1.25rem; padding-bottom:1rem; }
+    .article-stage__author .avatar { align-items:center; background:var(--cloud-blue-color); border-radius:50%; color:var(--main-color); display:flex; font:600 .72rem/1 var(--mon-font); height:42px; justify-content:center; width:42px; }
+    .article-stage__author p,.article-stage__author small { display:block; margin:0; }
+    .article-stage__author p { font:400 .9rem/1.3 var(--hind-font); }
+    details summary { box-sizing:border-box; cursor:pointer; list-style:none; }
+    details summary::-webkit-details-marker { display:none; }
+    details .fa-caret-down { transition:transform 220ms ease; }
+    details[open] .fa-caret-down { transform:rotate(180deg); }
+    .notice-panel p { margin:0; }
+    .notice-panel div { display:flex; flex-wrap:wrap; gap:.75rem; }
+    .notice-panel a,.notice-rail a,.notice-badge a { color:var(--main-color); font-weight:600; }
+
+    .notice-meta { margin:0 0 1.5rem 54px; max-width:410px; }
+    .notice-meta summary { align-items:center; color:var(--main-color); display:flex; font:600 .88rem/1 var(--mon-font); gap:.65rem; min-height:44px; }
+    .notice-meta summary span { flex:1; }
+    .notice-meta .notice-panel { border-left:2px solid var(--clear-blue-color); display:grid; font:400 .94rem/1.4 var(--hind-font); gap:.65rem; margin:.25rem 0 .75rem .4rem; padding:.2rem 0 .2rem 1rem; }
+
+    .article-stage--strip { padding-top:0; }
+    .notice-strip { background:var(--cloud-blue-color); border-radius:0 0 8px 8px; margin:0 clamp(-4.25rem,-5vw,-2rem) clamp(2rem,5vw,3.5rem); }
+    .notice-strip summary { align-items:center; display:grid; gap:1rem; grid-template-columns:42px 1fr auto; min-height:76px; padding:1rem clamp(2rem,5vw,4.25rem); }
+    .notice-strip summary > span:nth-child(2) strong,.notice-strip summary > span:nth-child(2) small { display:block; }
+    .notice-strip summary strong { color:var(--main-color); font:600 .95rem/1.2 var(--mon-font); }
+    .notice-strip summary small { font:400 .9rem/1.3 var(--hind-font); margin-top:.2rem; }
+    .notice-icon { align-items:center; background:#fff; border-radius:50%; color:var(--main-color); display:flex; height:42px; justify-content:center; width:42px; }
+    .notice-strip .notice-panel { display:grid; gap:.75rem; padding:0 clamp(2rem,5vw,4.25rem) 1.5rem calc(clamp(2rem,5vw,4.25rem) + 58px); }
+
+    .article-stage--rail { display:grid; gap:clamp(2rem,5vw,4rem); grid-template-columns:185px 1fr; }
+    .notice-rail { align-self:start; border-left:3px solid var(--clear-blue-color); display:flex; flex-direction:column; gap:.45rem; padding:.25rem 0 .4rem 1rem; }
+    .notice-rail > span { color:var(--clear-blue-color); font-size:1.15rem; }
+    .notice-rail strong { color:var(--main-color); font:600 .85rem/1.25 var(--mon-font); }
+    .notice-rail p,.notice-rail a { font:400 .88rem/1.35 var(--hind-font); margin:0; }
+    .notice-rail a { font-weight:600; }
+
+    .notice-plain { margin-bottom:1.5rem; }
+    .notice-plain summary { align-items:center; color:var(--main-color); display:inline-flex; font:600 .88rem/1.2 var(--mon-font); gap:.65rem; min-height:44px; text-decoration:underline; text-decoration-color:#9bc5d9; text-underline-offset:5px; }
+    .notice-plain .notice-panel { display:grid; font:400 .94rem/1.4 var(--hind-font); gap:.5rem; margin:.25rem 0 .75rem; max-width:520px; padding-left:1.65rem; }
+
+    .notice-inset { background:#f1f7fa; border:1px solid #d7e7ee; border-radius:8px; margin:2rem 0; }
+    .notice-inset summary { align-items:center; display:grid; gap:1rem; grid-template-columns:42px 1fr auto; min-height:84px; padding:1rem 1.25rem; }
+    .notice-inset summary strong,.notice-inset summary small { display:block; }
+    .notice-inset summary strong { color:var(--main-color); font:600 .9rem/1.25 var(--mon-font); }
+    .notice-inset summary small { font:400 .86rem/1.3 var(--hind-font); margin-top:.2rem; }
+    .notice-inset .notice-panel { border-top:1px solid #d7e7ee; display:grid; gap:.75rem; padding:1.25rem; }
+
+    .article-stage--badge { padding-top:5.5rem; }
+    .notice-badge { position:absolute; right:2rem; top:2rem; z-index:2; }
+    .notice-badge summary { align-items:center; background:#e7f7e9; border:1px solid #b9e5bd; border-radius:999px; color:#168529; display:flex; font:600 .78rem/1 var(--mon-font); gap:.5rem; min-height:40px; padding:.65rem .95rem; }
+    .notice-badge__panel { background:#fff; border:1px solid #d7e7ee; border-radius:8px; box-shadow:0 12px 30px rgba(18,75,108,.14); display:none; margin-top:.55rem; padding:1rem; position:absolute; right:0; width:230px; }
+    .notice-badge[open] .notice-badge__panel { display:block; }
+    .notice-badge__panel strong { color:var(--main-color); font:600 .85rem/1.3 var(--mon-font); }
+    .notice-badge__panel p,.notice-badge__panel a { font:400 .88rem/1.4 var(--hind-font); margin:.5rem 0; }
+    .notice-badge__panel a { font-weight:600; }
+
+    summary:focus-visible,a:focus-visible { outline:3px solid var(--clear-blue-color); outline-offset:3px; }
+    @media(max-width:720px) {
+      .ai-notice-lab { padding:3rem 1rem 5rem; }
+      .ai-notice-lab__intro { align-items:flex-start; flex-direction:column; margin-bottom:4rem; }
+      .ai-notice-lab__intro h1 { font-size:3rem; }
+      .article-stage { min-height:0; padding:2rem 1.25rem; }
+      .article-stage--strip { padding-top:0; }
+      .notice-strip { margin:0 -1.25rem 2rem; }
+      .notice-strip summary { grid-template-columns:36px 1fr auto; padding:1rem 1.25rem; }
+      .notice-strip .notice-panel { padding:0 1.25rem 1.25rem; }
+      .notice-icon { height:36px; width:36px; }
+      .article-stage--rail { grid-template-columns:1fr; }
+      .notice-rail { border-bottom:1px solid #d7e7ee; border-left:0; border-top:3px solid var(--clear-blue-color); display:grid; grid-template-columns:auto 1fr; padding:1rem 0; }
+      .notice-rail p,.notice-rail a { grid-column:2; }
+      .notice-meta { margin-left:0; }
+      .article-stage--badge { padding-top:5.5rem; }
+      .notice-badge { right:1.25rem; top:1.25rem; }
+      .notice-badge__panel { max-width:calc(100vw - 4.5rem); }
+    }
+    @media(prefers-reduced-motion:reduce) { details .fa-caret-down { transition:none; } }
+  </style>
+  {{ partial "fa-sprite.html" . }}
+</body>

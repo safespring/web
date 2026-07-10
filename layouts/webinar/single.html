@@ -8,6 +8,7 @@
     {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
     {{ .Render "li3" }}
   </div>
+  {{ partial "knowledge-hub-navigation.html" . }}
 
   <!-- CONTENT -->
   <div class="main-default-single">

@@ -118,8 +118,8 @@ En primær knap med teksten "Ring til os" (linket til `/contact`) og et sekundæ
 Almindelige accordions behøver kun selve accordion-shortcoden:
 
 ```markdown
-{{% accordion title="Mere information" id="acc1" %}}
-Indhold.
+{{% accordion title="Mer information" id="acc1" %}}
+Innehåll.
 {{% /accordion %}}
 ```
 

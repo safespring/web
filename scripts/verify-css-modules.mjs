@@ -38,9 +38,29 @@ const pages = [
     selector: ".safespring-horisontal-card-content",
   },
   {
+    name: "boundary-table",
+    path: "/deep-dive/forsta-safespring-kubernetes-engine-om-du-brukar-kora-kubernetes-sjalv/",
+    selector: ".ss-boundary-table",
+  },
+  {
+    name: "windows-hardening",
+    path: "/deep-dive/automatisera-hardning-av-windows-server-pa-safespring-compute-fran-start-till-last-system/",
+    selector: ".code-block-toolbar",
+  },
+  {
+    name: "welkin-case",
+    path: "/tjanster/elastisys-bygger-welkin-pa-safespring-compute/",
+    selector: ".safespring-horisontal-card-container",
+  },
+  {
     name: "ai-disclaimer",
-    path: "/dokument/sunet-safespring-sakerhetskontroller-for-privata-moln/",
+    path: "/deep-dive/forsta-safespring-kubernetes-engine-om-du-brukar-kora-kubernetes-sjalv/",
     selector: ".ai-disclaimer-container",
+  },
+  {
+    name: "ai-disclaimer-test",
+    path: "/ai-disclaimer-test/",
+    selector: ".ai-notice-lab",
   },
   {
     name: "faq",
@@ -48,9 +68,49 @@ const pages = [
     selector: ".accordion-box",
   },
   {
+    name: "knowledge-hub",
+    path: "/kunskapshubb/",
+    selector: ".knowledge-category-nav",
+  },
+  {
+    name: "news-list",
+    path: "/perspektiv/",
+    selector: ".knowledge-category-nav",
+  },
+  {
+    name: "deep-dive-list",
+    path: "/deep-dive/",
+    selector: ".knowledge-category-nav",
+  },
+  {
+    name: "solution-brief-list",
+    path: "/losningsfaktablad/",
+    selector: ".knowledge-category-nav",
+  },
+  {
+    name: "whitepaper-list",
+    path: "/vitbok/",
+    selector: ".knowledge-category-nav",
+  },
+  {
+    name: "solution-brief-article",
+    path: "/losningsfaktablad/objektlagring-med-protokollet-s3-ger-dig-oandlig-flexibilitet/",
+    selector: ".knowledge-category-nav",
+  },
+  {
+    name: "whitepaper-article",
+    path: "/vitbok/cloud-act-fisa-702-och-gdpr-for-svenska-molntjanster/",
+    selector: ".knowledge-category-nav",
+  },
+  {
     name: "news-author",
     path: "/perspektiv/digital-radighet-ar-inte-en-produkt/",
     selector: ".author-container",
+  },
+  {
+    name: "sovereignty-timeline",
+    path: "/perspektiv/eu-har-precis-definierat-det-suverana-molnet-har-ar-vart-resultat/",
+    selector: ".content-timeline",
   },
   {
     name: "compliance-document",
@@ -80,6 +140,7 @@ for (const viewport of viewports) {
     const page = await browser.newPage({
       viewport: { width: viewport.width, height: viewport.height },
       isMobile: viewport.isMobile,
+      hasTouch: viewport.isMobile,
     });
     const runtimeErrors = [];
     const cssErrors = [];
@@ -312,17 +373,307 @@ for (const viewport of viewports) {
         }
       }
 
-      if (test.name === "ai-disclaimer") {
-        const disclaimerLayout = await page.evaluate(() => {
-          const disclaimer = document.querySelector(".ai-disclaimer-container");
+      if (test.name === "windows-hardening") {
+        const codeBlockLayout = await page.evaluate(() => {
+          const blocks = [...document.querySelectorAll("pre.code-block-enhanced")];
+          const pre = blocks.find((block) => {
+            const code = block.querySelector(":scope > code");
+            return code && code.scrollWidth > code.clientWidth;
+          });
+          const code = pre?.querySelector(":scope > code");
+          const toolbar = pre?.querySelector(".code-block-toolbar");
+          const button = toolbar?.querySelector(".copy-code-button");
+          const before = toolbar?.getBoundingClientRect();
+          const buttonBefore = button?.getBoundingClientRect();
+          const codeStyle = code ? getComputedStyle(code) : null;
+          const toolbarHeight = toolbar?.getBoundingClientRect().height || 0;
+          if (code) code.scrollLeft = Math.min(180, code.scrollWidth);
+          const after = toolbar?.getBoundingClientRect();
+          const buttonAfter = button?.getBoundingClientRect();
           return {
-            marginBottom: disclaimer
-              ? getComputedStyle(disclaimer).marginBottom
+            foundOverflowingBlock: Boolean(pre),
+            preOverflowX: pre ? getComputedStyle(pre).overflowX : null,
+            codeOverflowX: code ? getComputedStyle(code).overflowX : null,
+            codeScrollLeft: code?.scrollLeft || 0,
+            codePadding: codeStyle
+              ? {
+                  top: parseFloat(codeStyle.paddingTop),
+                  right: parseFloat(codeStyle.paddingRight),
+                  bottom: parseFloat(codeStyle.paddingBottom),
+                  left: parseFloat(codeStyle.paddingLeft),
+                }
+              : null,
+            toolbarHeight,
+            toolbarShift: before && after ? after.left - before.left : null,
+            buttonShift:
+              buttonBefore && buttonAfter
+                ? buttonAfter.left - buttonBefore.left
+                : null,
+            toolbarBackground: toolbar
+              ? getComputedStyle(toolbar).backgroundColor
               : null,
           };
         });
-        if (disclaimerLayout.marginBottom !== "4px") {
-          throw new Error("AI disclaimer has excessive space below it");
+        if (
+          !codeBlockLayout.foundOverflowingBlock ||
+          codeBlockLayout.codeScrollLeft <= 0
+        ) {
+          throw new Error("no horizontally scrollable code block was found");
+        }
+        if (
+          codeBlockLayout.preOverflowX !== "hidden" ||
+          codeBlockLayout.codeOverflowX !== "auto"
+        ) {
+          throw new Error("code content does not own horizontal scrolling");
+        }
+        if (
+          codeBlockLayout.toolbarShift !== 0 ||
+          codeBlockLayout.buttonShift !== 0
+        ) {
+          throw new Error("code block toolbar moves with scrolled code");
+        }
+        if (
+          !codeBlockLayout.codePadding ||
+          codeBlockLayout.codePadding.top - codeBlockLayout.toolbarHeight < 16 ||
+          codeBlockLayout.codePadding.right < 20 ||
+          codeBlockLayout.codePadding.bottom < 16 ||
+          codeBlockLayout.codePadding.left < 20
+        ) {
+          throw new Error("code block content padding is too small");
+        }
+        if (codeBlockLayout.toolbarBackground === "rgba(0, 0, 0, 0)") {
+          throw new Error("code block toolbar background is missing");
+        }
+      }
+
+      if (test.name === "welkin-case") {
+        const horizontalCards = await page.evaluate(() =>
+          [...document.querySelectorAll(".safespring-horisontal-card-container")]
+            .map((card) => ({
+              shadow: getComputedStyle(card).boxShadow,
+              radius: getComputedStyle(card).borderRadius,
+            })),
+        );
+        if (
+          horizontalCards.length === 0 ||
+          horizontalCards.some(
+            (card) => card.shadow === "none" || card.radius !== "10px",
+          )
+        ) {
+          throw new Error("horizontal card shadow or radius is missing");
+        }
+      }
+
+      if (test.name === "news-list") {
+        const listedContent = await page.evaluate(() => {
+          const links = [
+            ...document.querySelectorAll(
+              ".main-default-single .content-container a[href]",
+            ),
+          ].map((link) => link.getAttribute("href"));
+          return {
+            count: links.length,
+            deepDiveLinks: links.filter((href) => href?.startsWith("/deep-dive/")),
+          };
+        });
+        if (listedContent.count === 0 || listedContent.deepDiveLinks.length) {
+          throw new Error("perspectives list contains Deep Dive cards");
+        }
+      }
+
+      if (test.name === "deep-dive-list") {
+        const deepDiveLinks = await page.evaluate(() =>
+          [...document.querySelectorAll(".main-default-single .content-container a[href]")]
+            .map((link) => link.getAttribute("href")),
+        );
+        if (
+          !deepDiveLinks.includes(
+            "/deep-dive/2025-12-run-llm-in-safespring-container-platform/",
+          )
+        ) {
+          throw new Error("Gabriel's LLM article is missing from Deep Dives");
+        }
+      }
+
+      if (test.name === "sovereignty-timeline") {
+        const timelineLayout = await page.evaluate(() => {
+          const timeline = document.querySelector(".content-timeline");
+          const items = [
+            ...document.querySelectorAll(".content-timeline__item"),
+          ];
+          const firstItem = items[0];
+          const marker = firstItem
+            ? getComputedStyle(firstItem, "::before")
+            : null;
+          return {
+            itemCount: items.length,
+            noteCount: document.querySelectorAll(".note-dotted").length,
+            cssLoaded: [...document.styleSheets].some((sheet) =>
+              sheet.href?.includes("/css/content-timeline.min"),
+            ),
+            gridColumns: firstItem
+              ? getComputedStyle(firstItem).gridTemplateColumns
+                  .split(" ")
+                  .filter(Boolean).length
+              : 0,
+            timelineWidth: timeline?.getBoundingClientRect().width || 0,
+            markerColor: marker?.backgroundColor,
+          };
+        });
+        if (timelineLayout.itemCount !== 8 || timelineLayout.noteCount !== 0) {
+          throw new Error("sovereignty assessment is not an eight-item timeline");
+        }
+        if (!timelineLayout.cssLoaded) {
+          throw new Error("content timeline stylesheet is missing");
+        }
+        const expectedColumns = viewport.isMobile ? 1 : 2;
+        if (timelineLayout.gridColumns !== expectedColumns) {
+          throw new Error(
+            `timeline should use ${expectedColumns} grid column(s)`,
+          );
+        }
+        if (
+          !timelineLayout.timelineWidth ||
+          timelineLayout.timelineWidth > viewport.width
+        ) {
+          throw new Error("timeline width exceeds the viewport");
+        }
+        if (timelineLayout.markerColor === "rgba(0, 0, 0, 0)") {
+          throw new Error("timeline marker is not rendered");
+        }
+      }
+
+      if (test.name === "ai-disclaimer") {
+        const disclaimerLayout = await page.evaluate(() => {
+          const disclaimer = document.querySelector(".ai-disclaimer-container");
+          const header = disclaimer?.querySelector(".ai-disclaimer-header");
+          const title = header?.querySelector("span");
+          const icon = header?.querySelector(".fa-language");
+          const panel = disclaimer?.querySelector(".ai-disclaimer-panel");
+          const content = disclaimer?.parentElement;
+          const intro = content
+            ? [...content.children].find((element) => element.tagName === "P")
+            : null;
+          const disclaimerBox = disclaimer?.getBoundingClientRect();
+          const contentBox = content?.getBoundingClientRect();
+          const introBox = intro?.getBoundingClientRect();
+          const titleBox = title?.getBoundingClientRect();
+          const iconBox = icon?.getBoundingClientRect();
+          const style = disclaimer ? getComputedStyle(disclaimer) : null;
+          const panelStyle = panel ? getComputedStyle(panel) : null;
+          return {
+            collapsedHeight: disclaimerBox?.height || 0,
+            cssFloat: style?.float,
+            display: style?.display,
+            contentLeft: contentBox?.left || 0,
+            contentWidth: contentBox?.width || 0,
+            expanded: header?.getAttribute("aria-expanded"),
+            headerHeight: header?.getBoundingClientRect().height || 0,
+            hasButton: Boolean(header),
+            hasLanguageIcon: Boolean(
+              disclaimer?.querySelector(".fa-solid.fa-language"),
+            ),
+            iconTitleAligned:
+              titleBox && iconBox
+                ? Math.abs(
+                    titleBox.top + titleBox.height / 2 -
+                      (iconBox.top + iconBox.height / 2),
+                  ) < 1
+                : false,
+            panelVisibility: panelStyle?.visibility,
+            position: style?.position,
+            paddingLeft: parseFloat(style?.paddingLeft || "0"),
+            paddingRight: parseFloat(style?.paddingRight || "0"),
+            stylesheetLoaded: [...document.styleSheets].some((sheet) =>
+              (sheet.href || "").includes("ai-disclaimer"),
+            ),
+            width: disclaimer?.getBoundingClientRect().width || 0,
+            introLeft: introBox?.left || 0,
+            introWidth: introBox?.width || 0,
+          };
+        });
+        if (
+          !disclaimerLayout.stylesheetLoaded ||
+          !disclaimerLayout.hasLanguageIcon ||
+          !disclaimerLayout.hasButton ||
+          !disclaimerLayout.iconTitleAligned ||
+          disclaimerLayout.headerHeight < 44 ||
+          disclaimerLayout.collapsedHeight > 50 ||
+          disclaimerLayout.expanded !== "false" ||
+          disclaimerLayout.panelVisibility !== "hidden" ||
+          disclaimerLayout.cssFloat !== "none" ||
+          disclaimerLayout.position !== "relative" ||
+          Math.abs(disclaimerLayout.introLeft - disclaimerLayout.contentLeft) > 1 ||
+          Math.abs(disclaimerLayout.introWidth - disclaimerLayout.contentWidth) > 1 ||
+          disclaimerLayout.width > Math.min(350, disclaimerLayout.contentWidth) + 1
+        ) {
+          throw new Error("collapsed AI translation disclosure is invalid");
+        }
+
+        const disclaimer = page.locator(".ai-disclaimer-container");
+        const disclaimerToggle = page.locator(".ai-disclaimer-header");
+        if (viewport.isMobile) {
+          await disclaimerToggle.evaluate((button) => button.click());
+        } else {
+          await disclaimer.hover();
+        }
+        await page.waitForTimeout(350);
+        const openLayout = await disclaimer.evaluate((element) => {
+          const style = getComputedStyle(element);
+          const lineStyle = getComputedStyle(element, "::after");
+          const panel = element.querySelector(".ai-disclaimer-panel");
+          const link = panel?.querySelector("a");
+          return {
+            expanded: element
+              .querySelector(".ai-disclaimer-header")
+              ?.getAttribute("aria-expanded"),
+            linkHeight: link?.getBoundingClientRect().height || 0,
+            backgroundColor: style.backgroundColor,
+            lineColor: lineStyle.backgroundColor,
+            lineLeft: lineStyle.left,
+            lineOrigin: lineStyle.transformOrigin,
+            lineTransform: lineStyle.transform,
+            lineWidth: lineStyle.width,
+            panelHeight: panel?.getBoundingClientRect().height || 0,
+            panelVisibility: panel ? getComputedStyle(panel).visibility : null,
+            paddingLeft: parseFloat(style.paddingLeft),
+            paddingRight: parseFloat(style.paddingRight),
+          };
+        });
+        if (
+          openLayout.expanded !== "true" ||
+          openLayout.backgroundColor !== "rgba(0, 0, 0, 0)" ||
+          openLayout.linkHeight < 44 ||
+          openLayout.lineColor === "rgba(0, 0, 0, 0)" ||
+          openLayout.lineLeft !== "0px" ||
+          !openLayout.lineOrigin.endsWith(" 0px") ||
+          openLayout.lineTransform === "none" ||
+          openLayout.lineTransform === "matrix(1, 0, 0, 0, 0, 0)" ||
+          openLayout.lineWidth !== "2px" ||
+          openLayout.panelHeight <= 0 ||
+          openLayout.panelVisibility !== "visible" ||
+          openLayout.paddingLeft !== disclaimerLayout.paddingLeft ||
+          openLayout.paddingRight !== disclaimerLayout.paddingRight
+        ) {
+          throw new Error("expanded AI translation disclosure is invalid");
+        }
+        if (viewport.isMobile) {
+          await disclaimerToggle.evaluate((button) => button.click());
+          await page.waitForTimeout(350);
+          const closedLayout = await disclaimer.evaluate((element) => ({
+            expanded: element
+              .querySelector(".ai-disclaimer-header")
+              ?.getAttribute("aria-expanded"),
+            panelVisibility: getComputedStyle(
+              element.querySelector(".ai-disclaimer-panel"),
+            ).visibility,
+          }));
+          if (
+            closedLayout.expanded !== "false" ||
+            closedLayout.panelVisibility !== "hidden"
+          ) {
+            throw new Error("touch AI translation disclosure does not close");
+          }
         }
       }
 
@@ -503,6 +854,105 @@ for (const viewport of viewports) {
         }
       }
 
+      const knowledgeNavigationTests = {
+        article: "/deep-dive/",
+        "llm-article": "/deep-dive/",
+        "windows-hardening": "/deep-dive/",
+        "knowledge-hub": "/kunskapshubb/",
+        "news-author": "/perspektiv/",
+        "news-list": "/perspektiv/",
+        "deep-dive-list": "/deep-dive/",
+        "solution-brief-list": "/losningsfaktablad/",
+        "solution-brief-article": "/losningsfaktablad/",
+        "whitepaper-list": "/vitbok/",
+        "whitepaper-article": "/vitbok/",
+        webinar: "/webinar/",
+      };
+      if (knowledgeNavigationTests[test.name]) {
+        const knowledgeNavigationLayout = await page.evaluate(() => {
+          const navigation = document.querySelector(
+            ".knowledge-category-nav__inner",
+          );
+          const links = [
+            ...document.querySelectorAll(".knowledge-category-nav__link"),
+          ];
+          const activeLinks = links.filter(
+            (link) => link.getAttribute("aria-current") === "page",
+          );
+          const navigationElement = navigation?.parentElement;
+          const navigationBox = navigationElement?.getBoundingClientRect();
+          const navigationStyle = navigationElement
+            ? getComputedStyle(navigationElement)
+            : null;
+          const activeStyle = activeLinks[0]
+            ? getComputedStyle(activeLinks[0])
+            : null;
+          const heroBox = document
+            .querySelector(".heading-default-single")
+            ?.getBoundingClientRect();
+          return {
+            activeCount: activeLinks.length,
+            activeHref: activeLinks[0]?.getAttribute("href"),
+            activeBorderColor: activeStyle?.borderBottomColor,
+            activeBorderWidth: activeStyle?.borderBottomWidth,
+            backgroundColor: navigationStyle?.backgroundColor,
+            bodyOverflow:
+              document.documentElement.scrollWidth >
+              document.documentElement.clientWidth,
+            display: navigation ? getComputedStyle(navigation).display : null,
+            fontWeights: [...new Set(
+              links.map((link) => getComputedStyle(link).fontWeight),
+            )],
+            linkCount: links.length,
+            heroGap:
+              navigationBox && heroBox
+                ? navigationBox.top - heroBox.bottom
+                : null,
+            navigationWidth: navigationBox?.width || 0,
+            navigationClientWidth: navigation?.clientWidth || 0,
+            navigationScrollWidth: navigation?.scrollWidth || 0,
+            viewportWidth: document.documentElement.clientWidth,
+          };
+        });
+        if (
+          knowledgeNavigationLayout.linkCount !== 6 ||
+          knowledgeNavigationLayout.activeCount !== 1 ||
+          knowledgeNavigationLayout.fontWeights.length !== 1 ||
+          knowledgeNavigationLayout.fontWeights[0] !== "600" ||
+          knowledgeNavigationLayout.activeHref !==
+            knowledgeNavigationTests[test.name]
+        ) {
+          throw new Error("knowledge navigation links or active state are invalid");
+        }
+        if (knowledgeNavigationLayout.bodyOverflow) {
+          throw new Error("knowledge navigation causes page overflow");
+        }
+        if (
+          knowledgeNavigationLayout.backgroundColor !== "rgb(232, 239, 243)" ||
+          knowledgeNavigationLayout.activeBorderWidth !== "2px" ||
+          knowledgeNavigationLayout.activeBorderColor === "rgb(244, 103, 15)"
+        ) {
+          throw new Error("knowledge navigation visual treatment is invalid");
+        }
+        if (
+          Math.abs(knowledgeNavigationLayout.heroGap || 0) > 1 ||
+          knowledgeNavigationLayout.navigationWidth !==
+            knowledgeNavigationLayout.viewportWidth
+        ) {
+          throw new Error(
+            "knowledge navigation is not full-width directly below the hero",
+          );
+        }
+        if (
+          viewport.isMobile &&
+          (knowledgeNavigationLayout.display !== "flex" ||
+            knowledgeNavigationLayout.navigationScrollWidth <=
+              knowledgeNavigationLayout.navigationClientWidth)
+        ) {
+          throw new Error("mobile knowledge navigation is not horizontally scrollable");
+        }
+      }
+
       if (viewport.isMobile) {
         const menuButton = page.locator("#mobileMenuBtn");
         await menuButton.click();
@@ -565,6 +1015,36 @@ for (const viewport of viewports) {
           );
         }
         await page.keyboard.press("Escape");
+
+        if (test.name === "knowledge-hub") {
+          await page.locator("#main-menu-link-current").hover();
+          await page.locator("#site-content-megamenu.show").waitFor();
+          const contentMegaMenuLayout = await page.evaluate(() => {
+            const menu = document.querySelector("#site-content-megamenu");
+            const platformMenu = document.querySelector("#site-megamenu");
+            return {
+              hidden: menu?.getAttribute("aria-hidden"),
+              linkCount: menu?.querySelectorAll("a").length,
+              primaryCount: menu?.querySelectorAll(
+                ".megamenu-main-service > a",
+              ).length,
+              secondaryCount: menu?.querySelectorAll(
+                ".megamenu-service-card-list a",
+              ).length,
+              platformOpen: platformMenu?.classList.contains("show"),
+            };
+          });
+          if (
+            contentMegaMenuLayout.hidden !== "false" ||
+            contentMegaMenuLayout.linkCount !== 5 ||
+            contentMegaMenuLayout.primaryCount !== 3 ||
+            contentMegaMenuLayout.secondaryCount !== 2 ||
+            contentMegaMenuLayout.platformOpen
+          ) {
+            throw new Error("content megamenu structure or state is invalid");
+          }
+          await page.keyboard.press("Escape");
+        }
       }
 
       if (test.name === "compute") {

@@ -1,0 +1,88 @@
+.ss-boundary-table {
+  border-top: 1px solid #e8eff3;
+  box-sizing: border-box;
+  font-family: var(--mon-font);
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+}
+
+.ss-boundary-head,
+.ss-boundary-row {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(155px, 0.65fr) minmax(0, 1fr) minmax(0, 1fr);
+  margin: 0;
+}
+
+.ss-boundary-head {
+  align-items: end;
+  background: #fafefe;
+  border-bottom: 1px solid #e8eff3;
+  padding: 0.75rem 0.25rem 0.6rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.ss-boundary-head-label {
+  color: var(--clear-blue-color);
+  font: 600 0.9rem/1.2 var(--mon-font);
+  letter-spacing: 0;
+}
+
+.ss-boundary-row {
+  border-top: 1px solid #e8eff3;
+  padding: 1rem 0.25rem;
+}
+
+.ss-boundary-topic {
+  color: var(--main-color);
+  font: 600 1rem/1.25 var(--hind-font);
+  overflow-wrap: anywhere;
+}
+
+.ss-boundary-col {
+  min-width: 0;
+}
+
+.ss-boundary-label {
+  color: var(--clear-blue-color);
+  display: none;
+  font: 600 0.9rem/1.2 var(--hind-font);
+  margin: 0 0 0.45rem;
+}
+
+.ss-boundary-content {
+  color: #323232;
+  font: 400 1rem/1.45 var(--mon-font);
+  overflow-wrap: break-word;
+}
+
+.ss-boundary-content > *:first-child {
+  margin-top: 0;
+}
+
+.ss-boundary-content > *:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .ss-boundary-head {
+    display: none;
+  }
+
+  .ss-boundary-table {
+    border-top: 0;
+  }
+
+  .ss-boundary-row {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1rem 0;
+  }
+
+  .ss-boundary-label {
+    display: block;
+  }
+}

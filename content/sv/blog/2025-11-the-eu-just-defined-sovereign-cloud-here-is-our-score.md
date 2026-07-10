@@ -47,27 +47,36 @@ Safespring använde kriterierna i Cloud Sovereignty Framework och genomförde en
 
 {{< distance >}}
 
-{{% note "hur vi bedömer oss själva" %}}
+## Hur vi bedömer oss själva
+
 Så här bedömer vi oss själva utifrån de åtta suveränitetsmålen (SEAL‑poäng från 0 till 4):
 
-1. **SOV-1** *Strategisk suveränitet, poäng: 4.*  
+{{% timeline class="content-timeline--topics" ariaLabel="Safesprings suveränitetsbedömning" %}}
+{{% timeline-item code="SOV-1" title="Strategisk suveränitet · Poäng 4" %}}
 Safespring är till 100 % ett svenskt bolag med enbart svensk styrning. Vi ägs av medarbetarna och styrelsen. Vi har inget beroende av icke‑europeiskt kapital och alla medarbetare är europeiska medborgare som bor inom EU/EES. Domstolsbeslut från länder utanför EU/EES gentemot oss är inte giltiga och vi bedriver inte verksamhet i länder utanför EU/EES. Vår teknikstack består av öppen källkod som inte kan stängas av av ett annat land eller en leverantör.
-2. **SOV-2** *Juridisk och jurisdiktionell suveränitet, poäng: 4.*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-2" title="Juridisk och jurisdiktionell suveränitet · Poäng 4" %}}
 Endast svensk rätt och EU‑rätt gäller för våra avtal, tjänster och vår verksamhet. Våra datacenter finns i Sverige och Norge. Vi har ingen exponering mot rättssystem utanför EU/EES. All IPR‑skapande sker inom EU/EES.
-3. **SOV-3** *Data- och AI‑suveränitet, poäng: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-3" title="Data- och AI‑suveränitet · Poäng 4" %}}
 Vi ser inte, loggar inte och använder inte våra kunders data på något sätt. Vi använder kryptering och andra säkerhetsåtgärder för att skydda våra kunder, men de kan också fritt använda egen kryptering med nycklar som endast de har tillgång till. All data lagras i det datacenter kunden valt att använda och kan inte exporteras till länder utanför Sverige och Norge eftersom vi inte har datacenter där.
-4. **SOV-4** *Operativ suveränitet, poäng: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-4" title="Operativ suveränitet · Poäng 4" %}}
 Vi äger, driver och kontrollerar hela vår teknikstack, från serverhårdvara till Kubernetes-plattform. Vi minimerar tekniskt beroende av icke‑europeiska leverantörer. Denna operativa autonomi gör att vi kan utveckla eller migrera tjänsten vid behov, utan proprietär inlåsning. 
-5. **SOV-5** Leverans*kedjesuveränitet, poäng: 2*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-5" title="Leveranskedjesuveränitet · Poäng 2" %}}
 Server- och nätverkshårdvara är omöjlig att köpa utan kinesiska, koreanska och/eller amerikanska komponenter och firmware. Eftersom marknaden ser ut så är vi i hög grad beroende av hårdvara utanför EU/EES. Programvaran vi använder är öppen källkod och därmed global. Vi är inte beroende av något företag eller land för den programvarustack vi använder. De datacenter vi använder ägs och drivs av företag och personal från EU/EES. 
-6. **SOV-6** *Teknisk suveränitet, poäng: 3*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-6" title="Teknisk suveränitet · Poäng 3" %}}
 Vi använder endast komponenter med öppen källkod, öppna API:er och öppna protokoll. Hela vår stack kan tekniskt och juridiskt distribueras hos kund, där kunden kan vidareutveckla stacken utan Safespring. Alla komponenter, arkitektur och beroenden är dokumenterade och öppna. Vi saknar serverhårdvara, CPU:er, GPU:er och switchar från leverantörer inom EU/EES. 
-7. **SOV-7** *Säkerhets- och regelefterlevnadssuveränitet, poäng: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-7" title="Säkerhets- och regelefterlevnadssuveränitet · Poäng 4" %}}
 Vi uppfyller all relevant svensk och EU‑lagstiftning som GDPR, NIS2 och OSL. Vi är certifierade enligt FR2000 och mycket snart ISO 27001. All säkerhetsverksamhet sker inom EU/EES. Vi är helt transparenta gentemot våra kunder kring buggar, säkerhetsincidenter och åtgärder. Våra kunder kan granska våra datacenter, vår drift och våra efterlevnadsåtgärder. 
-8. **SOV-8** *Miljömässig hållbarhet, poäng: 4*  
+{{% /timeline-item %}}
+{{% timeline-item code="SOV-8" title="Miljömässig hållbarhet · Poäng 4" %}}
 Alla våra datacenter har låg PUE, återanvänder värmen som genereras och använder 100 % grön elektricitet. Våra datacenteroperatörer kan tillhandahålla data och certifieringar om alla relevanta hållbarhetsparametrar. Vi använder vår hårdvara tills den inte längre kan användas och återvinner den ansvarsfullt. 
-
-{{% /note %}}
+{{% /timeline-item %}}
+{{% /timeline %}}
 
 ## Referenser
 [^1]:Trusted Cloud Referential av CIGREF och ANSSI:s Cloud de Confiance

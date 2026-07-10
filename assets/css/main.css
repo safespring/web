@@ -1221,12 +1221,17 @@ html.toc-overlay-active body::before {
 
 .content-default-single ul li > ul li::before {
   content: "-";
+  background-color: transparent;
+  border-radius: 0;
   color: var(--link-color);
-  font-weight: 599 !important;
-  font: var(--mon-font);
+  font-family: var(--mon-font);
+  font-weight: var(--heavy-weight);
+  height: auto;
+  line-height: inherit;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin: 0 0.35em 0 -1em;
+  vertical-align: baseline;
 }
 
 .content-body ul li > ul li {

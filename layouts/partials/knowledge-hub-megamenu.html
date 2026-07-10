@@ -1,0 +1,40 @@
+{{- $categories := partial "knowledge-hub-categories.html" . -}}
+<div class="megamenu-main-service">
+  {{ range first 3 $categories }}
+    <a
+      href="{{ .href }}"
+      class="matomo-track"
+      data-matomo-label="{{ .label }}"
+      data-matomo-location="mega-menu-content-primary"
+    >
+      <div class="megamenu-main-service-card">
+        <div class="cardtitle">
+          <div class="cardicon" style="background-color: {{ .color }}10">
+            {{ partial "fa-icon.html" (dict "class" (printf "%s icon" .icon) "style" (printf "color: %s !important" .color) "page" $) }}
+          </div>
+          <span class="megamenu-main-service-card-title" style="color: {{ .color }}">
+            {{ .label }}
+          </span>
+        </div>
+        <p class="mb-0">{{ .description }}</p>
+      </div>
+    </a>
+  {{ end }}
+</div>
+<div class="megamenu-service-card">
+  <span class="megamenu-service-card-title-small">
+    {{ T "knowledgehub.more_formats" }}
+  </span>
+  <ul class="megamenu-service-card-list">
+    {{ range after 3 $categories }}
+      <li>
+        <a
+          href="{{ .href }}"
+          class="matomo-track"
+          data-matomo-label="{{ .label }}"
+          data-matomo-location="mega-menu-content-secondary"
+        >{{ .label }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</div>

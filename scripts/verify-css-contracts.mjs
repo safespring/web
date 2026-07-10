@@ -14,6 +14,11 @@ function walk(directory) {
 
 const classContracts = [
   [
+    "content-timeline",
+    (classes) => classes.includes("content-timeline"),
+    /\/css\/content-timeline\.min/,
+  ],
+  [
     "article-extras",
     (classes) => classes.includes("author-container"),
     /\/css\/article-extras\.min/,
@@ -113,6 +118,16 @@ const classContracts = [
     "compliance-document-table",
     (classes) => classes.includes("compliance-document-table__info"),
     /\/css\/compliance-document-table\.min/,
+  ],
+  [
+    "boundary-table",
+    (classes) => classes.includes("ss-boundary-table"),
+    /\/css\/boundary-table\.min/,
+  ],
+  [
+    "ai-disclaimer",
+    (classes) => classes.includes("ai-disclaimer-container"),
+    /\/css\/ai-disclaimer\.min/,
   ],
 ];
 
