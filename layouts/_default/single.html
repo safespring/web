@@ -13,6 +13,8 @@
 {{ else if eq $.Params.title "Svenska molntjänster (Explorer)" }}
   {{ partial "explorer.html" . }}
 {{ else }}
+  {{ $hasDefaultSidebar := and (ne .Params.nosidebar "none") (ne .Params.nosidebar "invisible") (ne .Section "webinar") }}
+  {{ .Scratch.Set "hasDefaultSidebar" $hasDefaultSidebar }}
   {{ partial "head.html" . }}
   <!-- NAVBAR -->
   {{ partial "header.html" . }}

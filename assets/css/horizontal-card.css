@@ -1,0 +1,144 @@
+/* HORISONTAL CARD */
+.safespring-horisontal-card-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1500px) {
+  .safespring-horisontal-card-image {
+    max-width: 30% !important;
+  }
+  .safespring-horisontal-card-container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .safespring-horisontal-card-container {
+    width: 100%;
+  }
+
+  .safespring-horisontal-card-col {
+    flex: 1; /* additionally, equal width */
+  }
+  .safespring-horisontal-card-container {
+  }
+  .safespring-horisontal-card-row {
+    display: flex; /* equal height of the children */
+  }
+  .safespring-horisontal-card-image {
+    width: auto;
+  }
+  .safespring-horisontal-card-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px 0 0 5px;
+    object-fit: cover;
+  }
+
+  .safespring-horisontal-card-content {
+    padding: 1.75em 3em 3em 3em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .safespring-horisontal-card-container {
+    width: 100%;
+  }
+  .safespring-horisontal-card-row {
+    flex: none !important;
+    display: block !important;
+  }
+  .safespring-horisontal-card-image {
+    height: 250px;
+  }
+  .safespring-horisontal-card-row {
+    display: flex; /* equal height of the children */
+  }
+
+  .safespring-horisontal-card-content {
+    padding: 1em 3em 3em 3em;
+  }
+}
+
+.safespring-horisontal-card-image {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.safespring-horisontal-card-image--logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.safespring-horisontal-card-image img.safespring-horisontal-card-logo {
+  border-radius: 0;
+  flex-shrink: 0;
+  height: auto;
+  max-width: calc(100% - 64px);
+  min-height: 0;
+  min-width: 0;
+  object-fit: contain;
+  width: 220px;
+}
+
+.safespring-horisontal-card-content {
+  color: var(--alt-color);
+  font: var(--hind-light-weight) 1rem/1.5 var(--mon-font);
+}
+
+.safespring-horisontal-card-content h3 {
+  color: var(--clear-blue-color);
+  font: var(--hind-light-weight) 1.25rem/1.2 var(--hind-font);
+  margin: 0 0 0.5rem;
+}
+
+.safespring-horisontal-card-content p {
+  color: var(--alt-color);
+  font: var(--hind-light-weight) 1rem/1.5 var(--mon-font);
+  margin: 0;
+}
+
+.safespring-horisontal-card-content li p {
+  display: inline;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .safespring-horisontal-card-image img.safespring-horisontal-card-logo {
+    width: 180px;
+  }
+}
+/*@media screen and (max-width:900px) {
+
+	.row {
+	display:block;
+}
+
+.col {
+flex:0; /* additionally, equal width}/*
+
+.safespring-horisontal-card-image {
+display:block !important;
+justify-content:center!important;
+align-items:center;
+overflow:hidden;
+float:none;
+max-width:100%;
+}
+.safespring-horisontal-card-image img{
+min-width:100%;
+min-height:100%;
+border-radius:5px 5px 0 0;
+object-fit:cover; hej
+}
+
+.safespring-horisontal-card-content {
+padding:1em 3em 3em 3em;
+}
+}*/
+
+/* END - HORISONTAL CARD */

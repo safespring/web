@@ -1,0 +1,1049 @@
+/* CARD */
+
+.body {
+  margin: 10px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+.body * {
+  box-sizing: inherit;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+@media only screen and (max-device-width: 750px) {
+}
+
+.body,
+.text-light-black {
+  color: rgba(50, 50, 50, 0.8);
+}
+
+.text-black {
+  color: var(--main-color);
+}
+
+.text-muted {
+  color: #32cd32;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.ff-serif {
+  font-family: "Hind", san-serif;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 599;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.lts-1px {
+  letter-spacing: 1px;
+}
+
+.lts-2px {
+  letter-spacing: 2px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.extra-small {
+  font-size: 0.7rem;
+  padding-top: 4px;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.big {
+  font-weight: var(--extra-light-weight);
+  font-size: 1.5rem;
+}
+
+.img-250 > img {
+  height: 250px !important;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.blogg-card-title {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.content-container .blogg-card-title {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.webinar-hub-copy {
+  box-sizing: border-box;
+  max-width: 780px;
+  margin: 0 auto 4rem;
+}
+
+.webinar-hub-copy > * {
+  max-width: 100%;
+}
+
+.webinar-hub-copy .ingress,
+.webinar-hub-copy p {
+  max-width: 720px;
+}
+
+.webinar-hub-copy .button {
+  margin-top: 1.5rem;
+}
+
+.blogg-card-flag {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.blogg-card-media {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.blogg-card-media > img {
+  display: block;
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blogg-card-wapper {
+  padding: 5% 15%;
+}
+
+@media only screen and (max-width: 900px) {
+  .blogg-card-wapper {
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .content-container .img-250 > img {
+    display: block;
+    width: 100%;
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  .content-container .padding-15 {
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .content-container .padding-15 p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .content-container .padding-15 .blogg-card-title {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .blogg-card-wapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 24px;
+  }
+
+  .content-container .padding-15 {
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+    padding: 20px 24px;
+  }
+
+  .content-container .padding-15 > * {
+    min-width: 0;
+  }
+
+  .content-container .padding-15 p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .blogg-card-title,
+  .content-container .text-button,
+  .webinar-card-link {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .blogg-card-title {
+    font-size: clamp(1.35rem, 9vw, 1.875rem);
+  }
+
+  .content-container .img-250 > img {
+    display: block;
+    width: 100%;
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  .tech-card-flex,
+  .tech-update-card-content {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .blogg-card-tagg-container,
+  .blogg-card-tagg-container-webinar,
+  .blogg-card-tagg-container-tech,
+  .blogg-card-tagg-container-solution-brief {
+    box-sizing: border-box;
+    max-width: calc(100% - 16px);
+    flex-wrap: wrap;
+  }
+
+  .blogg-card-section,
+  .blogg-card-section-tech,
+  .blogg-card-section-webinar,
+  .blogg-card-section-whitepaper,
+  .blogg-card-section-solution-brief {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blogg-card-tagg-container-webinar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffefe5;
+  padding: 5px 15px 5px 5px;
+  border-radius: 100px;
+  margin-top: -20px;
+  border: solid 7px white;
+}
+
+.blogg-card-tagg-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e6fbe9;
+  padding: 5px 15px 5px 5px;
+  border-radius: 100px;
+  margin-top: -20px;
+  border: solid 7px white;
+}
+
+.blogg-card-tagg-container--glass {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  z-index: 1;
+  max-width: calc(100% - 32px);
+  gap: 7px;
+  margin-top: 0;
+  padding: 6px 10px 6px 7px;
+  color: #fff;
+  background: rgba(8, 38, 58, 0.56);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 14px 34px rgba(2, 18, 32, 0.28);
+  transform: translateX(-50%);
+  backdrop-filter: blur(14px) saturate(125%);
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+}
+
+.blogg-card-tagg-container--glass .blogg-card-flag {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.blogg-card-tagg-container--glass .blogg-card-section {
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.blogg-card-tagg-container--glass .blogg-card-section:after {
+  margin-left: 7px;
+  font-size: 10px;
+}
+
+.blogg-card-tagg-container--tab {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  z-index: 1;
+  max-width: calc(100% - 16px);
+  margin-top: 0;
+  padding: 9px 16px 9px 14px;
+  color: #fff;
+  background: var(--main-color);
+  border: 0;
+  border-radius: 0 100px 100px 0;
+  box-shadow: 0 10px 28px rgba(25, 95, 140, 0.22);
+}
+
+.blogg-card-tagg-container--tab .blogg-card-section {
+  color: #fff;
+  white-space: nowrap;
+}
+
+.blogg-card-tagg-container-tech {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  margin-top: -20px;
+}
+
+.blogg-card-tagg-container-solution-brief {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e8eff3;
+  padding: 5px 15px 5px 5px;
+  border-radius: 100px;
+  margin-top: -20px;
+  border: solid 7px white;
+}
+
+.webinar-card-link {
+  font: 16px var(--hind-font-semibold);
+  color: var(--button-color);
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.webinar-card-link:after {
+  border-bottom: 0.35em solid transparent;
+  border-left: 0.55em solid currentColor;
+  border-top: 0.35em solid transparent;
+  content: "";
+  display: inline-block;
+  margin: 0 0 0 10px;
+  vertical-align: -0.05em;
+}
+
+.blogg-card-image {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.tech-card-image {
+}
+
+.blogg-card-text-container {
+  padding: 50px 50px 10px 50px;
+}
+
+.blogg-card-section {
+  font-size: 13px;
+  margin-top: 1px;
+  font-weight: 599;
+}
+
+.blogg-card-section:after {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 0.42em;
+  margin: 0 0 0 10px;
+  vertical-align: 0.08em;
+  width: 0.42em;
+}
+
+.blogg-card-section-solution-brief {
+  color: #195f8c;
+  margin-top: 1px;
+  font-size: 13px;
+  font-weight: 599;
+}
+
+.blogg-card-section-solution-brief:after {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 0.42em;
+  margin: 0 0 0 10px;
+  vertical-align: 0.08em;
+  width: 0.42em;
+}
+
+.blogg-card-section-webinar:after {
+  border-bottom: 0.35em solid transparent;
+  border-left: 0.55em solid currentColor;
+  border-top: 0.35em solid transparent;
+  content: "";
+  display: inline-block;
+  margin: 0 0 0 10px;
+  vertical-align: -0.05em;
+}
+
+.blogg-card-section-tech {
+  color: #3c9bcd;
+  margin-top: 1px;
+  font-size: 13px;
+  margin-right: 5px;
+  font-weight: 599;
+}
+
+.blogg-card-section-webinar {
+  color: #fa690f;
+  margin-top: 1px;
+  font-size: 13px;
+  font-weight: 599;
+}
+
+.blogg-card-section-whitepaper {
+  color: #32cd32;
+  font-size: 13px;
+  margin-right: 5px;
+  font-weight: 599;
+}
+
+.bg-blue-white-fade {
+  background-image: linear-gradient(200deg, #e8eff3, #e8eff300 80%);
+}
+.card-heading {
+  hyphens: manual;
+  padding-top: 30px;
+  font: var(--hind-light-weight) 2.25rem/1 var(--hind-font);
+  color: var(--heading-color);
+  margin-bottom: 7px;
+}
+
+.styled-link {
+  text-decoration: none;
+  outline: none;
+  color: var(--link-color);
+  transition: color 0.25s ease-in;
+}
+
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+  color: var(--main-color);
+}
+
+.shadow-1 {
+  /*box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.15);*/
+  box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.1);
+}
+
+.blue-hover {
+  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  border-bottom: 5px solid #ffffff;
+}
+
+.blue-hover:hover {
+  transform: translateY(-5px);
+  border-bottom-color: #195f8c;
+}
+
+.blue-hover-tech {
+  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  border-bottom: 5px solid transparent;
+}
+
+.blue-hover-tech:hover {
+  transform: translateY(-5px);
+  border-bottom-color: #3c9bcd;
+}
+
+.blue-hover-blogg:hover {
+  transform: translateY(-5px);
+  border-bottom-color: #32cd32;
+}
+
+.blue-hover-blogg {
+  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  border-bottom: 5px solid transparent;
+}
+
+.blue-hover-webinar:hover {
+  transform: translateY(-5px);
+  border-bottom-color: #fa690f;
+}
+
+.blue-hover-webinar {
+  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  border-bottom: 5px solid white;
+}
+
+.blue-hover-whitepaper:hover {
+  transform: translateY(-5px);
+  border-bottom-color: #323232;
+}
+
+.blue-hover-whitepaper {
+  transition: transform 0.2s ease-in, border-bottom-color 0.2s ease-in;
+  border-bottom: 5px solid white;
+}
+
+.float-left {
+  float: left;
+}
+
+/**Margin and padding utilities*/
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.terms-index {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.terms-index .term a {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(25, 95, 140, 0.08);
+  color: var(--main-color);
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.terms-index .term a:hover {
+  color: var(--link-color);
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .flexcontainer {
+    padding: 5% 10% !important;
+  }
+}
+
+.flexcontainer {
+  display: flex;
+  gap: 40px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 5% 0;
+}
+
+/* WEBINAR SERIE SCROLLBAR */
+
+/* WEBINAR SERIE */
+
+.scroll-controls {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  width: 100%; /* eller ange en specifik bredd om du föredrar det */
+}
+
+#scrollLeft,
+#scrollRight {
+  background: rgba(255, 255, 255, 0.7); /* Halvtransparent vit */
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+}
+
+#scrollLeft:hover,
+#scrollRight:hover {
+  background: rgba(255, 255, 255, 1); /* Opaq vit vid hover */
+}
+
+.webinar-scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1% 1% 1% 10%; /* Grundläggande padding för mobil */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+/* Pseudo-element för att simulera utrymme före den första kortet och efter den sista kortet */
+.webinar-scrolling-wrapper-flexbox::before,
+.webinar-scrolling-wrapper-flexbox::after {
+  content: "";
+  width: 0; /* Bredden sätts till 50% av skärmens bredd på mobila enheter */
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .flexcontainer-webinar-series-backplate {
+    overflow-x: hidden;
+  }
+
+  .webinar-scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw;
+    padding: 1rem max(1rem, calc((100vw - 300px) / 2));
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .webinar-scrolling-wrapper-flexbox::before,
+  .webinar-scrolling-wrapper-flexbox::after {
+    display: none;
+  }
+}
+
+.webinar-card {
+  display: inline-block;
+}
+
+/* Göm scrollbar för webkit browsers */
+.webinar-scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsivitet för mobila enheter */
+@media (max-width: 768px) {
+  .webinar-card {
+    flex: 0 0 min(300px, calc(100vw - 2rem));
+    margin-right: 10px;
+    width: min(300px, calc(100vw - 2rem));
+  }
+
+  .webinar-scrolling-wrapper-flexbox .lazyload {
+    height: auto;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .webinar-scrolling-wrapper-flexbox {
+    padding-left: max(1rem, calc((100vw - 300px) / 2));
+  }
+}
+
+.webinar-highlist-card {
+  /* Stilar för webinar-highlist-card */
+  margin-right: 10px; /* Mellanrum mellan kort */
+  scroll-snap-align: center; /* Snappar kortet till mitten */
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+  background-color: white;
+}
+
+.webinar-highlist-image {
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.webinar-highlist-image img,
+.webinar-highlist-image-episode img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.webinar-series-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  padding: 20px 40px;
+}
+
+.webinar-series-text-container--hub {
+  justify-content: flex-start;
+  gap: clamp(2.75rem, 5vw, 4rem);
+}
+
+.webinar-highlist-card h2 {
+  /* Stilar för webinar-highlist-card h2 */
+}
+
+/* Responsiva stilar för webinar-highlist-card */
+@media (max-width: 768px) {
+  .scroll-controls {
+    display: none;
+  }
+
+  #scrollLeft,
+  #scrollRight {
+    display: none;
+  }
+
+  #scrollLeft:hover,
+  #scrollRight:hover {
+    display: none;
+  }
+
+  .webinar-highlist-card {
+    width: 100%;
+    max-width: min(300px, calc(100vw - 2rem));
+    height: 400px !important;
+    margin-left: 0;
+  }
+
+  .webinar-highlist-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .webinar-highlist-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.9)
+    ); /* svart toning */
+    z-index: 1; /* Säkerställ att toningen är över bilden men under texten */
+  }
+
+  .webinar-series-text-container {
+    z-index: 9;
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: calc(100% - 40px);
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+
+  .webinar-series-text-container--hub {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .episode-counter {
+    margin-top: 20px !important;
+  }
+
+  .webinar-series-text-container p {
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  .webinar-series-text-container h2 {
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+    color: white;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .webinar-side-bar {
+    padding: 3rem 1.25rem;
+  }
+
+  .webinar-side-bar-cards {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .webinar-side-bar-cards .content-container {
+    width: min(100%, 350px);
+    min-width: 0;
+  }
+}
+
+/* Webinar episode-summary  */
+
+.webinar-card-episode {
+  margin: 0 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Lägger till en mjuk övergångseffekt */
+  cursor: pointer; /* Ändrar cursorn till en pekare för att indikera klickbarhet */
+}
+
+@media (max-width: 768px) {
+  .webinar-card-episode {
+    flex: 0 0 min(300px, calc(100vw - 2rem));
+    margin: 0 10px 0 0;
+    width: min(300px, calc(100vw - 2rem));
+  }
+
+  .webinar-highlist-card-episode {
+    width: 100%;
+    max-width: min(300px, calc(100vw - 2rem));
+  }
+}
+
+.webinar-card-episode:hover {
+  transform: scale(1.05); /* Skalar upp kortet lite när det hovras över */
+}
+
+.webinar-highlist-card-episode {
+  scroll-snap-align: center; /* Snappar kortet till mitten */
+  display: flex;
+  position: relative;
+  background-color: white;
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 400px !important;
+}
+
+.webinar-highlist-image-episode {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.webinar-highlist-image-episode:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.9)
+  ); /* svart toning */
+  z-index: 1; /* Säkerställ att toningen är över bilden men under texten */
+}
+
+.webinar-series-text-container-episode {
+  z-index: 9;
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: calc(100% - 56px);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px 36px;
+}
+
+.episode-counter-episode {
+  font-weight: 300;
+  font-size: 60px;
+  margin-top: 20px !important;
+}
+
+.webinar-series-text-container-episode p {
+  line-height: 1.1;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.webinar-series-text-container-episode h2 {
+  line-height: 1.1;
+  padding: 0;
+  margin: 0;
+  color: white;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.webinar-series-text-container--hub .text-button,
+.webinar-series-text-container-episode .text-button {
+  align-items: center;
+  display: inline-flex;
+  gap: .45rem;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+.webinar-series-text-container-episode .text-button {
+  margin-top: .55rem;
+}
+
+.flexcontainer-webinar-series-backplate {
+  background-color: var(--cloud-blue-color);
+  padding: 4% 0;
+}
+
+.flexcontainer-shortcode {
+  margin: 5% auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tech-update-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15% !important;
+}
+
+.tech-card-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.tech-update-card-content {
+  margin: -150px 0 0 0 !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15% !important;
+}
+
+.tech-card-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/* END - CARD */

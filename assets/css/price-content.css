@@ -1,0 +1,259 @@
+/* PRICE TABLE */
+
+.container-table-wp {
+  display: grid;
+  grid-column: 1 / span 7;
+}
+
+@media screen and (max-width: 1600px) {
+  .container-table-wp {
+    display: grid;
+    grid-column: 1 / span 8;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container-table-wp {
+    display: grid;
+    grid-column: span 10;
+    margin: 0 16px 0 16px;
+  }
+}
+
+.price-table {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.table {
+  width: 100%;
+  display: table;
+  border-radius: 5px;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #fff;
+}
+
+.row.header {
+  color: #fafefe;
+  background: #195f8c;
+}
+
+.row.header:hover {
+  background-color: #417da5;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .row.header {
+    padding: 0;
+    height: 0px;
+  }
+
+  .row.header .cell {
+    display: none;
+  }
+
+  .row .cell:before {
+    font-family: var(--hind-font);
+    font-size: 13px;
+    color: #195f8c;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 599 !important;
+
+    margin-bottom: 13px;
+    content: attr(data-title);
+    min-width: 98px;
+    display: block;
+  }
+}
+
+.cell {
+  display: table-cell;
+}
+
+@media screen and (max-width: 600px) {
+  .cell {
+    display: block;
+  }
+}
+
+.row .cell {
+  font-family: var(--mon-font);
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.2;
+  font-weight: unset !important;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.row:last-of-type .cell {
+  border-bottom: 0px solid #fff;
+  padding-bottom: 16px;
+}
+
+.row.header .cell {
+  font-family: var(--hind-font);
+  font-size: 18px;
+  color: #fafefe;
+  background: #195f8c;
+  line-height: 1.2;
+  font-weight: unset !important;
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
+.row .cell:nth-child(1) {
+  width: 150px;
+  padding-left: 40px;
+}
+
+.row .cell:nth-child(2) {
+  width: 150px;
+  padding-right: 10px;
+}
+
+.row .cell:nth-child(3) {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.row .cell:nth-child(4) {
+  width: 80px;
+}
+
+.row .cell:nth-child(5) {
+  width: 150px;
+}
+
+.row .cell:nth-child(6) {
+  width: 150px;
+}
+
+.row .cell:nth-child(7) {
+  width: 150px;
+}
+
+.table,
+.row {
+  width: 100% !important;
+}
+
+.row:hover {
+  background-color: #e3eef2;
+}
+
+@media (max-width: 600px) {
+  .row {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 16px;
+    padding-top: 30px;
+    padding-right: 16px;
+    margin: 0;
+  }
+
+  .row .cell {
+    border: none;
+    padding: 16px 30px;
+  }
+  .row .cell:nth-child(1) {
+    padding-left: 30px;
+  }
+
+  .row .cell {
+    font-family: var(--mon-font);
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.2;
+    font-weight: unset !important;
+  }
+
+  .table,
+  .row,
+  .cell {
+    width: 100% !important;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* MOBILE CITAT */
+
+/* END - MOBILE CITAT */
+
+/* TOGGLE */
+
+.toggle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.b {
+  display: block;
+}
+
+.toggle {
+  position: relative;
+  width: 54px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: var(--main-color);
+  overflow: hidden;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+}
+
+.check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+.check:checked ~ .switch {
+  right: 2px;
+  left: 57.5%;
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-property: left, right;
+  transition-delay: 0.08s, 0s;
+}
+
+.switch {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 57.5%;
+  background-color: #fff;
+  border-radius: 36px;
+  z-index: 1;
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-property: left, right;
+  transition-delay: 0s, 0.08s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* END PRICE TABLE */

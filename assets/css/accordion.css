@@ -1,0 +1,101 @@
+/* UTBILDNING */
+
+.accordion-box {
+  /*box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.15);*/
+  max-width: 700px;
+  width: 99%;
+  /*border-radius:10px;*/
+  border-top: solid 1px #e8eff3;
+}
+
+.accordion-box:last-of-type {
+  border-bottom: solid 1px #e8eff3;
+  margin-bottom: 10px;
+}
+
+.accordion-box button {
+  white-space: normal !important;
+  background-color: transparent;
+}
+
+.accordion {
+  background-color: transparent;
+  color: #195f8c;
+  cursor: pointer !important;
+  padding: 18px 18px 14px 45px !important;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  text-align: left !important;
+  outline: none !important;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease !important;
+  font: 300 16px/1.2 var(--hind-font) !important;
+  /*border-radius:10px;*/
+  text-transform: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.accordion:hover {
+  color: var(--link-color);
+}
+
+.accordion:focus-visible {
+  outline: 3px solid var(--main-color) !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(232, 239, 243, 0.95);
+}
+
+.active-utbildning {
+  border-radius: 5px 5px 0 0;
+}
+
+.accordion:after {
+  content: "\2b";
+  font: 700 24px/1 var(--mon-font);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  /* Flytta elementet vertikalt med 50% av sin höjd */
+  color: #19f064;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.active-utbildning:after {
+  content: "\2212" !important;
+  color: #fa690f !important;
+  border-radius: 5px 5px 0 0;
+}
+
+.accordion-active:after {
+  content: "\2212" !important;
+  color: #fa690f !important;
+}
+
+.accordion-active {
+}
+
+.panel {
+  padding: 0 46px !important;
+  background-color: rgba(234, 240, 244, 0.5);
+  max-height: 0;
+  overflow: hidden !important;
+  border-radius: 20px;
+  transition: max-height 0.6s cubic-bezier(0.34, 0, 0, 1.04) !important;
+}
+
+.panel p:first-child {
+  padding-top: 40px;
+}
+
+.panel p {
+  margin: 0px !important;
+  padding-top: 10px;
+}
+
+/* END - UTBILDNING */

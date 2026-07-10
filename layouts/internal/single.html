@@ -1,3 +1,4 @@
+{{ .Scratch.Set "hasDefaultSidebar" (and (isset .Params "sidebar") .Params.sidebar) }}
 {{ partial "head.html" . }}
 <body>
 {{ partial "header.html" . }}

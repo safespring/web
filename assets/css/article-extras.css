@@ -1,0 +1,207 @@
+/* LIVE */
+
+.author-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.25px solid var(--cloud-blue-color);
+  padding-bottom: 30px;
+}
+.author-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.author-info {
+  margin-left: 15px;
+}
+
+.author-name {
+  margin: 0;
+  font-weight: 599;
+}
+
+.author-title {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.authors {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  align-items: space-between;
+}
+
+@media screen and (max-width: 800px){
+	.authors {
+	  display: flex;
+	  gap: 1rem;
+	  flex-wrap: wrap;
+	  align-items: space-between;
+	}
+}
+
+
+/* Flavour */
+
+.cpu {
+  width: max(10px, 15px);
+  height: 10px;
+  background-color: var(--main-color);
+}
+
+.cpu:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.cpu:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Impcat */
+
+.impact {
+  width: max(10px, 15px);
+  height: 10px;
+  background-color: var(--main-color);
+}
+
+.impact:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.impact:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Balanced text */
+
+@media screen and (min-width:500px) {
+	.balance-text,
+	.balanced-text {
+		visibility:visible;
+	}
+
+	@supports (text-wrap:balance) {
+		.balance-text,
+		.balanced-text {
+			text-wrap:balance;
+		}
+	}
+}
+
+/* Läs mer */
+
+details[open] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 9999;
+  background-color: rgb(0, 0, 0, 0);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  transition: 0.3s ease-out;
+}
+
+details[open] > div {
+  transition: 0.5s ease-out;
+  box-shadow: 2px 3px 9px 0 rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  background-color: white;
+  max-width: 800px;
+  padding: 100px;
+  margin: 5% auto;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  details[open] > div {
+    margin: 10%;
+  }
+  details[open] summary {
+    margin: 15% !important;
+  }
+  details[open] summary:before {
+    content: "Tillbaka " !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  details[open] > div {
+    margin: 5% !important;
+    padding: 5% !important;
+  }
+  details[open] summary {
+    margin: 0 auto !important;
+    top: 90% !important;
+    float: none !important;
+  }
+}
+
+summary {
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--link-color);
+  border-radius: 50px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  padding: 14px 25px 12px 25px !important;
+  text-align: center;
+  font: 14px/1 var(--hind-font-semibold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  min-height: 44px;
+  min-width: 44px;
+  width: fit-content;
+  margin: 3% 0;
+}
+
+summary::-webkit-details-marker {
+  content: "";
+}
+
+summary#summary::marker {
+  content: "";
+}
+
+details[open] summary:before {
+  content: "Stäng " !important;
+}
+
+details[open] summary {
+  content: none !important;
+  margin: 5%;
+  position: sticky;
+  top: 10%;
+  float: right;
+  background-color: var(--link-color);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px 8px 25px;
+  text-align: center;
+  font: 13px/1 var(--hind-font-semibold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  width: fit-content;
+}
+
+@media print {
+  @page {
+    padding: 3cm;
+    margin: 3cm;
+  }
+}

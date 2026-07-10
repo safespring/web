@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "safespring mono";
+  src: url("/fonts/Safespring-Mono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "safespring mono";
+  src: url("/fonts/Safespring-Mono-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "safespring mono";
+  src: url("/fonts/Safespring-Mono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "safespring mono";
+  src: url("/fonts/Safespring-Mono-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "safespring mono";
+  src: url("/fonts/Safespring-Mono-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "safespring mono";
+  src: url("/fonts/Safespring-Mono-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+p > code,
+li > code {
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  word-break: break-word;
+}
+
+@media only screen and (max-width: 900px) {
+  p > code,
+  li > code {
+    overflow-wrap: anywhere;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+code {
+  font-style: normal;
+  font-size: 0.9rem !important;
+  background: #eaf0f4;
+  padding: 0 8px 2px 8px;
+  border-radius: 7px;
+  color: #195f8c;
+  overflow: auto;
+  font-family: "safespring mono";
+  line-height: 1;
+}
+
+code > span {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 900px) {
+  p > code,
+  li > code {
+    padding-inline: 3px;
+  }
+}
+
+/* === CODE BLOCK  === */
+
+pre {
+  position: relative;
+  background: #eaf0f4 !important;
+  box-sizing: border-box;
+  display: block !important;
+  max-width: min(800px, 100%) !important;
+  padding: 60px 30px 5px 30px !important;
+  border-radius: 10px !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-family: "safespring mono";
+  font-size: 0.9rem !important;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) var(--cloud-blue-color);
+}
+
+pre[data-lang]::before {
+  content: attr(data-lang);
+  font-weight: 599;
+  font-size: 0.9rem;
+  background-color: #195f8c10;
+  color: #195f8c;
+  padding: 15px 0px 15px 30px;
+  position: absolute;
+  width: calc(100% - 30px);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: "safespring mono";
+}
+
+/* WebKit-baserade webbläsare (Chrome, Safari, m.fl.) */
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--middle-blue-color); /* Bakgrundsfärg i spåret */
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* Färg på "tummen" */
+  border-radius: 50px; /* Rundade hörn */
+  border: 2px solid var(--cloud-blue-color); /* Ger lite space runt tummen */
+}
+
+/* === END: CODE BLOCK === */
+
+strong {
+  font-weight: var(--heavy-weight);
+}
+
+.copy-code-button {
+  position: absolute;
+  background-color: #417da510;
+  color: var(--middle-blue-color);
+  border: none;
+  font-size: 80%;
+  margin: 12px;
+  padding: 4px 10px 2px 10px;
+  z-index: 1;
+}
+
+.copy-code-button:hover {
+  cursor: pointer;
+  background-color: #417da530;
+}
+
+.copy-code-button:focus {
+  color: #32cd32;
+  background-color: #e7f9eb;
+  outline: 0;
+}
+
+.copy-code-button:active {
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+.highlight {
+  margin: 15px 0;
+  max-width: 80vw;
+  font-size: 0.9px;
+}

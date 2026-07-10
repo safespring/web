@@ -39,6 +39,8 @@
 }}
   {{ partial "explorer.html" . }}
 {{ else }}
+  {{ $hasDefaultSidebar := and (ne .Params.nosidebar "none") (ne .Params.nosidebar "invisible") (ne .Section "webinar") }}
+  {{ .Scratch.Set "hasDefaultSidebar" $hasDefaultSidebar }}
   {{ partial "head.html" . }}
 
 

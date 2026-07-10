@@ -1,0 +1,177 @@
+/* TABLE */
+
+table {
+  min-width: 100%;
+  border-spacing: 0;
+  /*box-shadow:2px 3px 9px 0 rgba(0, 0, 0, 0.10);
+	padding:5%;
+	background-color:white;
+	border-radius:10px;*/
+  margin: 40px 0 80px 0;
+}
+
+.content-default-single table,
+.content-default-single-full-width table,
+.main-default-single-full-width table {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  width: 100%;
+}
+
+@media (min-width: 901px) {
+  .main-default-single .content-default-single > table {
+    max-width: 90vw;
+    min-width: min(700px, 90vw);
+    width: min(700px, 90vw);
+  }
+
+  .main-default-single .content-default-single > table:not(.width100) {
+    margin-left: -20px;
+  }
+
+  .main-default-single .content-default-single > table:not(.width100) th,
+  .main-default-single .content-default-single > table:not(.width100) td {
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-break: normal;
+  }
+}
+
+table.width100 {
+  width: 100% !important;
+}
+
+@media (min-width: 1500px) {
+  .main-default-single .content-default-single > table {
+    max-width: calc(100% + 15vw - 1rem);
+    width: max-content;
+  }
+
+  .main-default-single .content-default-single > table.width100 {
+    width: max-content !important;
+  }
+}
+
+thead {
+  font: 18px/1 var(--hind-font);
+  color: var(--clear-blue-color);
+}
+
+tbody {
+  margin: 0;
+}
+
+th {
+  font-weight: 300;
+  text-align: left;
+  /*border-bottom:1px solid var(--cloud-blue-color);*/
+  padding: 10px 20px;
+  background-color: transparent !important;
+  white-space: nowrap;
+}
+
+td {
+  font: 16px/1 var(--mon-font);
+  font-weight: 300;
+  padding: 10px 20px;
+  /*border-bottom:1px solid var(--cloud-blue-color);*/
+  white-space: nowrap;
+}
+
+td:first-child {
+  font-weight: 599;
+  color: var(--main-color);
+}
+
+tr:hover {
+  background-color: var(--cloud-blue-color) !important;
+}
+
+tr:nth-child(odd) td {
+  background-color: #e8eff34d;
+}
+
+tr:last-child td {
+  border-bottom: 1px solid var(--cloud-blue-color);
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+@media screen and (max-width: 650px) {
+  table {
+    border: 0;
+    width: 100%;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 1px solid var(--main-color);
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+  }
+
+  table td {
+    border-bottom: 1px solid var(--cloud-blue-color);
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content:attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font: 15px/1 var(--hind-font);
+    color: var(--clear-blue-color);
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  td: first-child;
+  th:first-child {
+    border-radius: 0;
+  }
+
+  td: last-child;
+  th:last-child {
+    border-radius: 0;
+  }
+
+  td:first-child {
+    font-weight: 599;
+    color: var(--main-color);
+  }
+  td {
+    text-align: right !important;
+    white-space: pre-wrap;
+  }
+}
+
+/* TABLE - END */

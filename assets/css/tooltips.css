@@ -1,0 +1,33 @@
+/* TOOLTIP */
+
+.text-tooltip {
+  border-bottom: 1px dotted #323232;
+}
+
+.text-tooltiptext {
+  visibility: hidden;
+  max-width: 650px;
+  background-color: #ebf1f5;
+  color: #323232;
+  text-align: left;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: -20px;
+  padding: 20px;
+  font-weight: 300;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.text-tooltip:hover {
+  font-weight: 599;
+  color: var(--link-color);
+}
+
+.text-tooltip:hover .text-tooltiptext {
+  visibility: visible;
+}
+
+/* END - TOOLTIP */

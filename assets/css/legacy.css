@@ -1,0 +1,380 @@
+/*
+ * Legacy CSS retained for historical reference and rollback only.
+ * This file is intentionally not loaded by layouts/partials/head.html.
+ * Every selector below had zero references in generated HTML, templates,
+ * content, and generated/source JavaScript during the 2026-07-10 audit.
+ */
+
+.shortcode-divider {
+	width:min(100%, 700px);
+	border:0;
+	border-top:1px solid #195F8C70;
+	float:none;
+	clear:both;
+	margin:50px 0;
+}
+
+.heading-content {
+  margin: 166px 0 5% 0;
+  grid-column: 2 / span 6;
+  align-self: end;
+}
+
+.heading-content h1 {
+  font: var(--hind-light-weight) 55px/1.1 var(--hind-font);
+  line-height: 1.1;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.heading-content h1:nth-child(2) {
+  margin-top: -20px;
+  line-height: 1;
+}
+
+.heading-content p {
+  font: var(--medium-weight) 18px var(--mon-font);
+  color: var(--text-color);
+}
+
+.heading-sub {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  overflow: hidden;
+}
+
+.heading-background {
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-main {
+  background: var(--text-color);
+  min-height: 61%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(2em, 1fr) [main-start] minmax(0, 39rem)
+    [main-end] minmax(2em, 1fr) [full-end];
+  grid-template-rows:
+    [full-start] minmax(4em, 1fr) [main-start] minmax(30em, auto)
+    [main-end] minmax(4em, 1fr) [full-end];
+  justify-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .heading-sub {
+    padding: 130px 0 0 0;
+    width: 100vw;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heading-sub:last-child {
+    margin: 0 0 20px 0;
+  }
+
+  .ch-sidebar {
+    margin: 20px;
+  }
+}
+
+.content-main > * {
+  grid-column: main;
+  grid-row: main;
+}
+
+@media only screen and (min-width: 900px) {
+  .content-chalmers {
+    background-color: #fafefe;
+    min-height: 61%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /*  grid-auto-columns:65rem;
+grid-template-columns:1.3fr 0.7fr */
+  }
+
+  .ch-content {
+    display: -ms-grid;
+    display: grid;
+    grid-column: 2 / span 5;
+    margin: 10% 0;
+  }
+
+  .ch-content li {
+    margin: 7px 0;
+    line-height: 1.5;
+  }
+  .ch-sidebar {
+    height: fit-content;
+    background-color: #fff;
+    grid-column: 8 / span 3;
+    margin: 10% 10% 10% 5px;
+    padding: 10% 15% 10% 15%;
+    border-radius: 10px;
+  }
+  .ch-sidebar p {
+    font-size: 16px;
+  }
+  .ch-sidebar h2 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .heading-content {
+    grid-column: 2 / span 5;
+  }
+
+  .ch-sidebar-logo {
+    padding: 0 0 15px;
+    max-width: 65px !important;
+  }
+  .ch-sidebar {
+    grid-column: 8 / span 2;
+    margin-right: 5%;
+  }
+}
+
+.ch-content {
+  grid-column: 2 / span 5;
+}
+
+.ch-sidebar p {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+  .content-chalmers {
+    background-color: #fafefe;
+  }
+  .ch-content {
+    grid-column: span all;
+    margin: 30px;
+  }
+  .ch-sidebar p {
+    font-size: 16px;
+  }
+}
+
+.content-heading > * {
+  margin: 0;
+  padding: 0;
+  font: 18px var(--hind-font-semibold);
+  color: var(--heading-color);
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.ch-content .content-heading:nth-child(n + 2) {
+  padding: 55px 0 0;
+}
+
+.ch-sidebar-logo {
+  padding: 0 0 15px;
+  max-width: 65px !important;
+}
+
+.ch-sidebar a {
+  color: var(--main-color);
+}
+
+.ch-sidebar a:hover {
+  color: var(--link-color);
+}
+
+.content-heading {
+  margin: 0;
+  padding: 0 0 10px;
+  font: 18px var(--hind-font-semibold);
+  color: var(--heading-color);
+  line-height: 18px;
+}
+
+@media only screen and (max-width: 550px) {
+  .content-chalmers {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+  }
+  .content-heading {
+    font: 16px var(--hind-font);
+  }
+  .content-heading h2 {
+    font: 16px var(--hind-font);
+  }
+}
+
+.ipad-form-tack {
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.ipad-form-start {
+  /*height:100vh;
+width:100vw;*/
+  display: flex;
+  /*position:absolute;*/
+  justify-content: center;
+  align-items: center;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10;
+}
+
+.ipad-form-start:first-child {
+  padding-top: 15%;
+}
+
+.ipad-form {
+  float: left;
+  width: 40vw;
+  padding: 10vw;
+  margin-left: 40vw;
+}
+
+.ipad-form-tack h1 {
+  font: 300 65px/70px var(--hind-font);
+  color: var(--text-color);
+  text-align: center;
+  position: absolute;
+  top: 40vh;
+}
+
+.ipad-form-start h1 {
+  position: absolute;
+  font: 300 55px/70px var(--hind-font);
+  color: var(--text-color);
+  text-align: center;
+  max-width: 100vw;
+  top: 16vw;
+}
+
+.ipad-form h1 {
+  font: 300 35px/40px var(--hind-font);
+  color: var(--clear-blue-color);
+  margin: 0;
+}
+
+.ipad-form h2 {
+  font: 300 25px/40px var(--hind-font);
+  color: var(--clear-blue-color);
+  margin: 0;
+}
+
+.ipad-section-tack {
+  position: absolute;
+  font: var(--heavy-weight) 30px/20px var(--mon-font);
+  color: var(--web-green-color);
+  text-transform: uppercase;
+  text-align: center;
+  top: 33vh;
+}
+
+.ipad-section {
+  font: var(--heavy-weight) 16px/5px var(--mon-font);
+  color: var(--web-green-color);
+  text-transform: uppercase;
+}
+
+.ipad-image-tack {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.ipad-image-start {
+  height: 100%;
+  width: 100%;
+  float: left;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.ipad-image {
+  height: 110vh;
+  width: 40vw;
+  float: left;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.ipad-image-tack img {
+  position: absolute;
+  margin: 0 auto 0 auto;
+  width: 20vw;
+  top: 10vh;
+}
+
+.ipad-image img {
+  position: absolute;
+  margin: 0 auto 0 auto;
+  width: 20vw;
+  top: 10vw;
+}
+
+.ipad-image-start img {
+  position: absolute;
+  margin: 0 auto 0 auto;
+  width: 20vw;
+  top: 6vw;
+}
+
+.button-white-border {
+  position: absolute;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2.5px solid #fafefe;
+  padding: 15px 30px 13px 30px;
+  bottom: 10vw;
+  text-align: center;
+  font: 18px var(--hind-font-semibold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ipad-button {
+  position: absolute;
+  text-align: center;
+  border-radius: 50px;
+  background-color: var(--link-color);
+  padding: 15px 30px 13px 30px;
+  font: 18px var(--hind-font-semibold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  bottom: 10vh;
+}
+
+.flexcontainer-ipad {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.flexcontainer-ipad h3 {
+  font: 300 28px/1.2 var(--hind-font) !important;
+  color: var(--blue-color);
+  margin: 0;
+}

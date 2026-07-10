@@ -1,0 +1,149 @@
+/* SAFESPRING CONACT CARD v1
+
+.contact-container {
+	display: flex;
+	box-shadow: var(--tran-shadow);
+	border-radius: 20px;
+	background-color: white;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.contact-image {
+	width: 150px !important;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+}
+
+.contact-text-container {
+	margin: 30px;
+}
+
+.contact-name {
+	font-family: var(--hind-font);
+	font-size: 25px;
+}
+
+.contact-title {
+	font-family: var(--mon-font);
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-link-container {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.contact-link {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	background-color: var(--cloud-blue-color);
+	border-radius: 10px;
+	padding: 20px;
+	color: var(--main-color);
+	font-weight: 599;
+	margin-top: 10px;
+	overflow: hidden;
+	transition: width 1s ease;
+	width: 17px;
+}
+
+.contact-link:hover {
+	width: 100%;
+}
+
+
+.contact-link span {
+	visibility: hidden;
+  transition: opacity 1s ease;
+  opacity: 0;
+  position: relative;
+}
+
+.contact-link:hover span {
+	visibility: visible;
+	opacity: 1;
+}
+
+*/
+
+/* SAFESPRING CONACT CARD v2 */
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  border-bottom: solid 0.5px var(--cloud-blue-color);
+}
+
+.contact-image {
+  width: 100px !important;
+  height: 100px !important;
+  background-position: center;
+  background-size: cover;
+  border-radius: 500px;
+}
+
+.contact-text-container {
+  margin: 30px;
+}
+
+.contact-name {
+  font-family: var(--hind-font);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.contact-title {
+  font-family: var(--mon-font);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.contact-link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-link {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--main-color);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.contact-link i {
+  display: none;
+  background-color: var(--cloud-blue-color);
+  border-radius: 500px;
+  padding: 6px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-image {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .contact-text-container {
+    margin: 24px 10px 24px 20px;
+  }
+}
+
+.contact-small-email {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
+}
+
+/* END – SAFESPRING CONACT CARD */
