@@ -16,7 +16,7 @@ sidebarlinkurl2: "/en/price/"
 
 Safespring delivers a locally based Cloud built for the apps of tomorrow. It enables our customers to innovate quickly, reducing time to market and removing technical constraints while increasing efficiency and retaining data sovereignty. With our platform, we help our customers improve competitiveness to delivery excellence.
 
-{{< localbutton text="Service catalogue" link="/services/safespring-service-catalogue-2020.pdf" >}}
+{{< localbutton text="Service catalogue" link="/service-catalogue/" >}}
 
 <div class="flexcontainer-shortcode" style=""> 
 
