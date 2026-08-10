@@ -1,7 +1,7 @@
 ---
-title: "Configure Zitadel OIDC for the Talos Kubernetes API Server"
-metatitle: "Zitadel OIDC for Talos Kubernetes API Server"
-intro: "Configure OIDC login for Talos Kubernetes clusters with Zitadel, kubelogin and Kubernetes RBAC so platform teams can centralize access control."
+title: "ZITADEL OIDC for Talos Kubernetes: Setup Guide"
+metatitle: "ZITADEL OIDC for Talos Kubernetes: Setup Guide"
+intro: "Configure ZITADEL OIDC for a Talos Kubernetes API server with kubelogin, project roles and RBAC. Includes tested browser and device-code flows."
 sidebarlinkname: "Explore Kubernetes Engine"
 sidebarlinkurl: "/en/services/containerplatform/"
 sidebarlinkname2: "Talk to a cloud architect"
