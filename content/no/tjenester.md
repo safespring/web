@@ -13,7 +13,7 @@ Language: "No"
 Safespring leverer en lokalt basert sky bygget for morgendagens apper. Det gjør det mulig for våre kunder å innovere raskt, redusere tid til markedsføring og fjerne tekniske begrensninger, samtidig som effektivitetsnivået øker og man beholder sin digitale suverenitet. Med vår plattform hjelper vi kundene våre med å forbedre konkurransekraften til å levere god kvalitet.
 
 <br><br>
-<a target="_blank" href="/services/safespring-service-catalogue-2020.pdf" class="button">Service catalogue</a>
+<a href="/service-catalogue/" class="button">Service catalogue</a>
 
 <div class="flexcontainer-shortcode" style="">
 
