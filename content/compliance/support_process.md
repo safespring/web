@@ -45,7 +45,7 @@ In order to facilitate the best possible support experience please provide as mu
 -   Console output, error codes or relevant logs
 -   Protocols, ports
 
-for detailed template please see documention under chapter *status and support*: https://docs.safespring.com/
+for detailed template please see documentation under chapter *status and support*: https://docs.safespring.com/
 
 ## Support process 
 
@@ -99,7 +99,7 @@ Safespring effectively manages all levels of incidents with continuous support a
 {{% note color="red" icon="fa-solid fa-1" title="Critical Incident" %}}
 ## Critical Incident - P1
 
-### Defenition
+### Definition
 Incidents that cause loss of service or continuous instability of mission-critical functionality and have no workaround. The Incident causes or may cause a material adverse effect on Customer's business or material parts of the operational services are unavailable.
 
 ### Safespring Incident Handling
@@ -116,8 +116,8 @@ Given by SLA
 {{% note color="orange" icon="fa-solid fa-2" title="Major Incident" %}}
 ## Major Incident - P2
 
-### Defenition
-Incidents that are impairing, but not causing loss of service or loss of mission-critical functionality. Intermittent issues that affect missioncritical functionality. The Incident causes or may cause an adverse effect on Customer's business or a critical function does not work, or work with response times that are inferior to the agreed.
+### Definition
+Incidents that are impairing, but not causing loss of service or loss of mission-critical functionality. Intermittent issues that affect mission-critical functionality. The Incident causes or may cause an adverse effect on Customer's business or a critical function does not work, or work with response times that are inferior to the agreed.
 
 ### Safespring Incident Handling
 Safespring is working continuous 24/7 with the Incident until it is resolved or a satisfactory "work-around" is established. Safespring will inform the Customer regarding progression of the Incident handling. Safespring's management will create a dialogue with the manufacturer's support department. If necessary, the Safespring will require on-site assistance from the manufacturer.
@@ -132,7 +132,7 @@ As soon as practically possible
 {{% note color="green" icon="fa-solid fa-3" title="Minor incident" %}}
 ## Minor incident - P3
 
-### Defenition
+### Definition
 All other incidents
 
 ### Safespring Incident Handling
