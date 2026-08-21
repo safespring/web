@@ -13,7 +13,8 @@
   var state = window[NAMESPACE] || {};
   if (state.initialized) {
     state.config = mergeConfig(state.config || DEFAULT_CONFIG, GOOGLE_CONFIG);
-    ensureGoogleTag();
+    ensureGoogleQueue();
+    flushQualifiedEvaluation();
     return;
   }
 
@@ -24,11 +25,15 @@
 
   var tracking = window.safespringTracking = window.safespringTracking || {};
   tracking.trackGoogleAdsConversion = trackGoogleAdsConversion;
+  tracking.trackGoogleAdsEvent = trackGoogleAdsEvent;
+  tracking.hasGoogleAdsMarketingConsent = hasMarketingConsent;
   tracking.configureGoogleAds = configureGoogleAds;
 
-  ensureGoogleTag();
+  ensureGoogleQueue();
   bindPriceListTracking();
   bindLeadFormTracking();
+  bindConsentTracking();
+  flushQualifiedEvaluation();
 
   function mergeConfig(base, override) {
     var merged = {
@@ -56,7 +61,8 @@
 
   function configureGoogleAds(nextConfig) {
     state.config = mergeConfig(state.config, nextConfig || {});
-    ensureGoogleTag();
+    ensureGoogleQueue();
+    flushQualifiedEvaluation();
   }
 
   function hasMarketingConsent() {
@@ -69,9 +75,9 @@
     }
   }
 
-  function ensureGoogleTag() {
+  function ensureGoogleQueue() {
     if (!hasMarketingConsent()) {
-      return;
+      return false;
     }
 
     if (!window.dataLayer) {
@@ -83,25 +89,7 @@
         window.dataLayer.push(arguments);
       };
     }
-
-    if (!state.sourceLoaded) {
-      injectGoogleSource(state.config.accountId);
-      window.gtag('js', new Date());
-      window.gtag('config', state.config.accountId);
-      state.sourceLoaded = true;
-    }
-  }
-
-  function injectGoogleSource(accountId) {
-    if (document.getElementById('google-ads-gtag-source')) {
-      return;
-    }
-
-    var source = document.createElement('script');
-    source.id = 'google-ads-gtag-source';
-    source.async = true;
-    source.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(accountId);
-    document.head.appendChild(source);
+    return true;
   }
 
   function resolveSendTo(explicitSendTo, conversionType) {
@@ -115,7 +103,7 @@
     var opts = options || {};
     var sendTo = resolveSendTo(opts.sendTo, opts.conversionType);
 
-    if (!sendTo || !hasMarketingConsent() || typeof window.gtag !== 'function') {
+    if (!sendTo || !ensureGoogleQueue()) {
       return false;
     }
 
@@ -137,6 +125,56 @@
 
     window.gtag('event', 'conversion', payload);
     return true;
+  }
+
+  function trackGoogleAdsEvent(eventName, parameters) {
+    if (typeof eventName !== 'string' || !eventName || !ensureGoogleQueue()) {
+      return false;
+    }
+
+    var payload = {};
+    var source = parameters && typeof parameters === 'object' ? parameters : {};
+    Object.keys(source).forEach(function (key) {
+      payload[key] = source[key];
+    });
+
+    if (!payload.send_to) {
+      payload.send_to = state.config.accountId;
+    }
+    if (!payload.transport_type) {
+      payload.transport_type = 'beacon';
+    }
+
+    window.gtag('event', eventName, payload);
+    return true;
+  }
+
+  function flushQualifiedEvaluation() {
+    var tracker = window.safespringTracking || {};
+    if (typeof tracker.flushQualifiedEvaluationToGoogleAds === 'function') {
+      tracker.flushQualifiedEvaluationToGoogleAds();
+    }
+  }
+
+  function bindConsentTracking() {
+    window.addEventListener('CookieConsentGiven', function () {
+      ensureGoogleQueue();
+      window.setTimeout(flushQualifiedEvaluation, 0);
+    }, false);
+
+    window.addEventListener('CookieConsent', function () {
+      ensureGoogleQueue();
+      window.setTimeout(flushQualifiedEvaluation, 0);
+    }, false);
+
+    window.addEventListener('CookieConsentRevoked', function (event) {
+      var revoked = event && event.detail && Array.isArray(event.detail.consents)
+        ? event.detail.consents
+        : [];
+      if (revoked.indexOf('marketing') > -1) {
+        state.pendingFormConversion = null;
+      }
+    }, false);
   }
 
   function bindPriceListTracking() {
@@ -218,7 +256,7 @@
 
   function isUpsalesForm(form) {
     var action = form.getAttribute('action') || '';
-    return action.indexOf('power.upsales.com/api/external/formSubmit') !== -1;
+    return isUpsalesSubmitUrl(action);
   }
 
   function inferFormConversionType(form) {
@@ -288,8 +326,12 @@
     var method = (xhr.__safespringMethod || '').toUpperCase();
     var url = xhr.__safespringUrl || '';
     return method === 'POST' &&
-      url.indexOf('power.upsales.com/api/external/formSubmit') !== -1 &&
+      isUpsalesSubmitUrl(url) &&
       xhr.status >= 200 &&
       xhr.status < 300;
+  }
+
+  function isUpsalesSubmitUrl(url) {
+    return /power\.upsales\.com\/api\/external\/(formSubmit|forms\/submit)(?:[/?#]|$)/i.test(url || '');
   }
 })();

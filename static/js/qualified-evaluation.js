@@ -4,11 +4,12 @@
   var EVENT_ACTION = 'Qualified evaluation';
   var SESSION_KEY = 'safespring.qualifiedEvaluation.session.v1';
   var SENT_KEY = 'safespring.qualifiedEvaluation.sent.v1';
+  var GOOGLE_SENT_KEY = 'safespring.qualifiedEvaluation.googleSent.v1';
   var RETURNING_KEY = 'safespring.qualifiedEvaluation.firstSeen.v1';
   var SAVE_EVERY_SECONDS = 5;
   var EVALUATE_EVERY_SECONDS = 5;
 
-  var COMMERCIAL_PATH_RE = /\/(tjanster|services|pris|price|kontakt|contact|demo|schedule-demo|branscher|industries|ocre|eosc|compliance|certifieringar|data-centers|datacenter|containerplattform|containerplatform|containers|kubernetes|compute|storage|backup|database|machine-learning|ai|gpu|openstack|gdpr|sovereign-cloud|cloud)(\/|$)/i;
+  var COMMERCIAL_PATH_RE = /\/(tjanster|tjenester|services|pris|price|kontakt|contact|demo|schedule-demo|branscher|industries|ocre|eosc|compliance|certifieringar|data-centers|datacenter|containerplattform|containerplatform|containers|kubernetes|compute|storage|s3|backup|database|machine-learning|ai|gpu|openstack|gdpr|sovereign-cloud|cloud)(\/|$)/i;
   var HIGH_INTENT_PATH_RE = /\/(pris|price|kontakt|contact|demo|schedule-demo|container-thanks)(\/|$)/i;
   var CONTENT_ONLY_PATH_RE = /\/(blogg|blog|career|docs|documentation|latest|whitepaper|webinar|solution-brief)(\/|$)/i;
 
@@ -32,6 +33,7 @@
   addCurrentPage();
   saveState();
   evaluate();
+  scheduleGoogleAdsFlush();
 
   var timer = window.setInterval(function () {
     if (stopped) return;
@@ -69,6 +71,12 @@
       : [];
     if (revoked.indexOf('statistical') > -1) stop();
   }, false);
+
+  window.addEventListener('CookieConsentGiven', scheduleGoogleAdsFlush, false);
+  window.addEventListener('CookieConsent', scheduleGoogleAdsFlush, false);
+
+  var tracking = window.safespringTracking = window.safespringTracking || {};
+  tracking.flushQualifiedEvaluationToGoogleAds = flushQualifiedEvaluationToGoogleAds;
 
   function stop() {
     stopped = true;
@@ -118,7 +126,6 @@
 
   function sendQualifiedEvaluation() {
     if (wasSent()) return;
-    write(SENT_KEY, String(Date.now()), true);
 
     var score = Math.min(100, Math.round(
       state.activeSeconds / 12
@@ -129,6 +136,11 @@
       + (state.returning ? 10 : 0)
     ));
 
+    state.qualifiedScore = score;
+    state.qualifiedAt = Date.now();
+    saveState();
+    write(SENT_KEY, String(state.qualifiedAt), true);
+
     var paq = window._paq = window._paq || [];
     paq.push([
       'trackEvent',
@@ -137,6 +149,38 @@
       VERSION,
       score
     ]);
+
+    scheduleGoogleAdsFlush();
+  }
+
+  function scheduleGoogleAdsFlush() {
+    window.setTimeout(flushQualifiedEvaluationToGoogleAds, 0);
+  }
+
+  function flushQualifiedEvaluationToGoogleAds() {
+    if (!wasSent() || wasSentToGoogle() || !hasStatisticalConsent() || !hasMarketingConsent()) {
+      return false;
+    }
+
+    var adsTracking = window.safespringTracking || {};
+    if (typeof adsTracking.trackGoogleAdsEvent !== 'function') {
+      return false;
+    }
+
+    var score = typeof state.qualifiedScore === 'number'
+      ? state.qualifiedScore
+      : 0;
+    var sent = adsTracking.trackGoogleAdsEvent('qualified_evaluation', {
+      evaluation_version: VERSION,
+      evaluation_score: score,
+      product_area: inferProductArea(),
+      returning_visitor: !!state.returning
+    });
+
+    if (sent) {
+      write(GOOGLE_SENT_KEY, String(Date.now()), true);
+    }
+    return sent;
   }
 
   function hasStatisticalConsent() {
@@ -144,6 +188,16 @@
       return !!window.cookieTractor
         && typeof window.cookieTractor.consentGivenFor === 'function'
         && window.cookieTractor.consentGivenFor('statistical');
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function hasMarketingConsent() {
+    try {
+      return !!window.cookieTractor
+        && typeof window.cookieTractor.consentGivenFor === 'function'
+        && window.cookieTractor.consentGivenFor('marketing');
     } catch (e) {
       return false;
     }
@@ -160,6 +214,24 @@
 
   function wasSent() {
     return !!read(SENT_KEY, true);
+  }
+
+  function wasSentToGoogle() {
+    return !!read(GOOGLE_SENT_KEY, true);
+  }
+
+  function inferProductArea() {
+    var paths = state.commercialPaths || [];
+    for (var index = paths.length - 1; index >= 0; index -= 1) {
+      var path = paths[index];
+      if (/\/(safespring-)?backup(\/|$)/i.test(path)) return 'backup';
+      if (/\/(safespring-)?storage(\/|$)/i.test(path) || /\/s3(\/|$)/i.test(path)) return 'storage';
+      if (/\/(safespring-)?compute(\/|$)/i.test(path) || /\/openstack(\/|$)/i.test(path)) return 'compute';
+      if (/\/(kubernetes|containerplattform|containerplatform|containers|welkin|stakater)(\/|$)/i.test(path)) {
+        return 'kubernetes';
+      }
+    }
+    return 'general';
   }
 
   function normalizePath(path) {
