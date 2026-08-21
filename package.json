@@ -6,8 +6,7 @@
     "format": "prettier --write .",
     "pdf:compliance": "node scripts/build-compliance-pdfs.mjs",
     "pdf:setup": "playwright install chromium",
-    "pdf:watch": "node scripts/watch-compliance-pdfs.mjs",
-    "test:consent": "node scripts/test-consent-tracking.mjs"
+    "pdf:watch": "node scripts/watch-compliance-pdfs.mjs"
   },
   "devDependencies": {
     "@pdf-lib/fontkit": "^1.1.1",
