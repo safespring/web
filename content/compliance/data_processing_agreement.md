@@ -87,8 +87,6 @@ This DPA applies only to Safespring’s processing of Personal Data on behalf of
 
 **7.3** In the event the Controller objects to a new Sub-Processor in accordance with Section 7.1, the Processor shall use reasonable efforts to offer an alternative or suggest a commercial reasonable change in the Service or the Controller’s configuration to prevent processing of Personal Data by the objected Sub-Processor. If no practical or commercially reasonable solution is possible according to the Processor, the Processor shall notify the Controller accordingly and, the Controller may terminate the relevant agreement, solely in respect of the affected Service, by giving written notice no later than forty‑five (45) days following receipt of such notification, failing which the Controller shall be deemed to have accepted the use of the relevant Sub‑Processor.
 
-who may terminate the relevant agreement with respect for any affected Service by giving 45 days’ written notice after receiving this information.
-
 ## 8. Transfers to third countries
 
 **8.1** The Parties acknowledge that, as of the effective date of the DPA, the Processor does not transfer Personal Data outside the EU/EEA, and does not engage Sub-Processors to process Personal Data outside the EU/EEA, in connection with the Services. If, during the term of the Agreement, the Processor intends to introduce any transfer of Personal Data outside the EU/EEA, the Processor shall (i) inform the Controller in advance in accordance with this DPA, and (ii) ensure that such transfer is carried out in accordance with Applicable Legislation, including by implementing appropriate safeguards (such as an applicable adequacy decision or Standard Contractual Clauses) and, where required, supplementary measures.
