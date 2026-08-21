@@ -18,10 +18,12 @@ function removeScript(id) {
 var CATEGORY_SCRIPTS = {
   statistical: [
     { id: 'analytics-script',   src: '/js/matomo.js' },
+    { id: 'qualified-evaluation-script', src: '/js/qualified-evaluation.js' },
     { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js' },
     { id: 'r2b2-script',        src: '/js/r2b2.js' }
   ],
   marketing: [
+    { id: 'google-ads-script',  src: '/js/google-ads.js' },
     { id: 'upsales-script',     src: 'https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js' }
   ]
 };
@@ -29,8 +31,8 @@ var CATEGORY_SCRIPTS = {
 function syncCategory(category) {
   var hasConsent = false;
   try {
-    hasConsent = !!cookieTractor && typeof cookieTractor.consentGivenFor === 'function'
-      ? cookieTractor.consentGivenFor(category)
+    hasConsent = !!window.cookieTractor && typeof window.cookieTractor.consentGivenFor === 'function'
+      ? window.cookieTractor.consentGivenFor(category)
       : false;
   } catch (e) {
     hasConsent = false;
@@ -42,6 +44,19 @@ function syncCategory(category) {
   } else {
     list.forEach(function (item) { removeScript(item.id); });
   }
+}
+
+function syncAllCategories() {
+  Object.keys(CATEGORY_SCRIPTS).forEach(function (category) {
+    syncCategory(category);
+  });
+}
+
+function scheduleConsentSync() {
+  syncAllCategories();
+  window.setTimeout(syncAllCategories, 0);
+  window.setTimeout(syncAllCategories, 250);
+  window.setTimeout(syncAllCategories, 1000);
 }
 
 function findCookiePolicyUrl(button) {
@@ -102,28 +117,30 @@ document.addEventListener('click', function (event) {
 
 (function initConsentSync() {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      syncCategory('statistical');
-      syncCategory('marketing');
-    });
+    document.addEventListener('DOMContentLoaded', scheduleConsentSync);
   } else {
-    syncCategory('statistical');
-    syncCategory('marketing');
+    scheduleConsentSync();
   }
 })();
 
-window.addEventListener('CookieConsentGiven', function (event) {
-  // If one category is granted we can resync both cheaply
-  syncCategory('statistical');
-  syncCategory('marketing');
+window.addEventListener('CookieConsentGiven', function () {
+  scheduleConsentSync();
+}, false);
+
+window.addEventListener('CookieConsent', function () {
+  // CookieTractor emits this on pageload for existing consent choices.
+  scheduleConsentSync();
 }, false);
 
 window.addEventListener('CookieConsentRevoked', function (event) {
-  var revoked = Array.isArray(event?.detail?.consents) ? event.detail.consents : [];
+  var revoked = event && event.detail && Array.isArray(event.detail.consents)
+    ? event.detail.consents
+    : [];
   if (revoked.indexOf('statistical') > -1) {
     (CATEGORY_SCRIPTS.statistical || []).forEach(function (item) { removeScript(item.id); });
   }
   if (revoked.indexOf('marketing') > -1) {
     (CATEGORY_SCRIPTS.marketing || []).forEach(function (item) { removeScript(item.id); });
   }
+  scheduleConsentSync();
 }, false);
