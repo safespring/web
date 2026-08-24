@@ -45,8 +45,15 @@ toc: "On this page"
     description="The legal baseline. Sets the framework for the customer relationship, including responsibilities, delivery terms, limitations, and how the service is governed."
   >}}
   {{< manual-document-row
-    title="Privacy Policy"
+    title="Privacy Policy (Services and Authorized Users)"
     href="/compliance/privacy_policy/"
+    icon="fa-solid fa-file-lines"
+    label="Document"
+    description="About your data. Describes what personal data we collect, why we collect it, how long we keep it, and which rights you have."
+  >}}
+  {{< manual-document-row
+    title="Privacy Policy (Web and Recruitment)"
+    href="/compliance/privacy_policy_web_recruitment/"
     icon="fa-solid fa-file-lines"
     label="Document"
     description="About your data. Describes what personal data we collect, why we collect it, how long we keep it, and which rights you have."
