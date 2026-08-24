@@ -83,9 +83,7 @@ website: https://tietosuoja.fi/en/home
 We may process personal data relating to:
 
 - Website visitors
-- Business contacts
 - Job applicants
-- Authorized Users of our services
 
 ## 4. Website Privacy
 
@@ -168,7 +166,7 @@ We will retain your Personal Data:
 
 ## 6. Recipients and International Transfers
 
-To fulfill the purposes described above, we may need to share personal data with suppliers when they perform services on our behalf, mainly to provide and maintain IT systems and partners for recruitment. See the list below of our engaged processors.
+To fulfill the purposes described above, we may need to share personal data with suppliers when they perform services on our behalf, mainly to support recruitment. See the list below of our engaged processors.
 
 Your personal data is generally only processed within the EU/EEA. In the event the data is transferred to a country outside the EU/EEA, as set out in the list below, we ensure that such transfer is lawful. If the European Commission does not consider that the country ensures an adequate level of protection, the transfer to the third party will be supported by the Commission’s standard contractual clauses and, where applicable, supplemented with additional safeguards. Finally, your personal data may also be transferred to the United States, where applicable, and such transfers are based on the recipient being certified under the EU-US Data Privacy Framework Program.
 
