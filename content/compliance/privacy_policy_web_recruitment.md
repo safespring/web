@@ -138,13 +138,13 @@ We use cookies and similar technologies in compliance with the ePrivacy Directiv
 - Analytics technologies
 - Consent management cookies (read more about our cookies in the <a href="javascript:cookieTractor.openConsentSettings()" class="cookie-consent-settings" rel="nofollow">Cookies setting</a>)
 
-## 6. Recruitment
+## 5. Recruitment
 
-### 6.1 Purpose of Processing
+### 5.1 Purpose of Processing
 
 If you submit a job application, we will process your Personal Data in order to administer your application and assess whether to proceed with your application and potentially offer you employment.
 
-### 6.2 Categories of Personal Data
+### 5.2 Categories of Personal Data
 
 We may process:
 
@@ -152,21 +152,21 @@ We may process:
 - CV and application documents including work experience and education background and other information voluntarily provided by you.
 - Assessment notes
 
-### 6.3 Legal Basis
+### 5.3 Legal Basis
 
 The processing is based on:
 
 - Art. 6(1)(a) — Consent (if you consent to be included in a candidate pool)
 - Art. 6(1)(b) — Pre-contractual steps
 
-### 6.4 Retention
+### 5.4 Retention
 
 We will retain your Personal Data:
 
 - During active recruitment
 - Up to 12 months for candidate pooling (unless consent is withdrawn)
 
-## 8. Recipients and International Transfers
+## 6. Recipients and International Transfers
 
 To fulfill the purposes described above, we may need to share personal data with suppliers when they perform services on our behalf, mainly to provide and maintain IT systems and partners for recruitment. See the list below of our engaged processors.
 
@@ -177,14 +177,14 @@ Your personal data is generally only processed within the EU/EEA. In the event t
 | Hailey HR | Finland, Sweden | ATS used to evaluate candidates | Sweden | [Hailey HR DPA](https://haileyhr.com/de/data-processing-agreement/) |
 | LinkedIn – Recruitment | USA, EU operations in Ireland | Used to link candidate CVs to ATS | USA | [LinkedIn DPA](https://www.linkedin.com/legal/l/dpa) |
 
-## 10. Automated Decision-Making
+## 7. Automated Decision-Making
 
 We do not engage in automated decision-making or profiling within the meaning of GDPR Art. 22, unless explicitly stated and legally permitted.
 
-## 11. Third-Party Websites
+## 8. Third-Party Websites
 
 Our website may contain links to third-party websites. Our processing will still be in accordance with this privacy policy, but when you have used these links to leave our site, you should exercise caution and inform yourself of the privacy statement applicable to the website in question. We are not responsible for their data processing practices.
 
-## 12. Contact Us
+## 9. Contact Us
 
 If you have any questions about your rights, please feel free to contact us at gdpr@safespring.com

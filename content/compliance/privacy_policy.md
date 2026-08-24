@@ -89,9 +89,9 @@ We may process personal data relating to:
 - Job applicants
 - Authorized Users of our services
 
-## 5. Business Contact Data
+## 4. Business Contact Data
 
-### 5.1 Purpose of Processing
+### 4.1 Purpose of Processing
 
 When we enter into an agreement with the company you represent, we process your personal data in order to administer the agreement and communicate with you, in particular for the purpose of:
 
@@ -101,7 +101,7 @@ When we enter into an agreement with the company you represent, we process your 
 - Customer relationship management
 - Surveys and newsletters
 
-### 5.2 Categories of Personal Data
+### 4.2 Categories of Personal Data
 
 We may process:
 
@@ -112,7 +112,7 @@ We may process:
 - Employer organisation
 - Professional profile links
 
-### 5.3 Legal Basis
+### 4.3 Legal Basis
 
 The processing is based on:
 
@@ -120,16 +120,16 @@ The processing is based on:
 - Art. 6(1)(b) — Contract performance (to fulfil the agreement when we enter into an agreement with you directly)
 - Art. 6(1)(a) — Consent (for surveys/newsletters)
 
-### 5.4 Retention
+### 4.4 Retention
 
 We will retain your Personal Data:
 
 - Personal data is retained for the duration of the active business relationship and 1 year thereafter or until you inform us that you no longer shall be the contact person under the agreement.
 - For processing based on your consent you may withdraw the consent at any time. If you opt-out or unsubscribe from our marketing, we will no longer process your personal data for this purpose.
 
-## 7. Authorized Users of our services
+## 5. Authorized Users of our services
 
-### 7.1 Purpose
+### 5.1 Purpose
 
 When we enter into an agreement with the company that you represent, we process your Personal Data in order to deliver the contracted services and in particular for the purpose of:
 
@@ -137,7 +137,7 @@ When we enter into an agreement with the company that you represent, we process 
 - Ensure security and compliance with internal policies
 - Monitor and audit usage to prevent unauthorised access or misuse
 
-### 7.2 Categories of Personal Data
+### 5.2 Categories of Personal Data
 
 We may process:
 
@@ -147,7 +147,7 @@ We may process:
 - Business Phone
 - Any potential Personal Data you voluntarily share with us
 
-### 7.3 Legal Basis
+### 5.3 Legal Basis
 
 The processing is based on:
 
@@ -156,7 +156,7 @@ The processing is based on:
 - Art. 6(1)(b) - Contractual Necessity (to fulfil the agreement when we enter into an agreement with you directly)
 - Art. 6(1)(c) - Legal Obligation
 
-### 7.4 Retention
+### 5.4 Retention
 
 We will retain your Personal Data:
 
@@ -164,7 +164,7 @@ We will retain your Personal Data:
 - We store and process your Personal Data in support matters for the period necessary for us to resolve your support matter.
 - Duration of engagement plus 7 years for financial reporting
 
-## 8. Recipients and International Transfers
+## 6. Recipients and International Transfers
 
 To fulfill the purposes described above, we may need to share personal data with suppliers when they perform services on our behalf, mainly to provide and maintain IT systems and partners for recruitment. See the list below of our engaged processors.
 
@@ -186,7 +186,7 @@ If you create an account with Slack and use the shared workspace, you may share 
 
 Our processing will still be in accordance with this privacy policy or in accordance with an applicable data processing agreement.
 
-## 9. Information Security Measures
+## 7. Information Security Measures
 
 We follow generally accepted industry standards to protect the information submitted to us, both during transmission and once we receive it. We maintain appropriate administrative, technical and physical safeguards to protect your personal data against accidental or unlawful destruction, accidental loss, unauthorized alteration, unauthorized disclosure or access, misuse, and any other unlawful form of processing of the personal data in our possession.
 
@@ -206,14 +206,14 @@ Personal data protection is integrated into our security governance framework.
 
 Records of processing activities (ROPA) are maintained in accordance with GDPR Art. 30.
 
-## 10. Automated Decision-Making
+## 8. Automated Decision-Making
 
 We do not engage in automated decision-making or profiling within the meaning of GDPR Art. 22, unless explicitly stated and legally permitted.
 
-## 11. Third-Party Websites
+## 9. Third-Party Websites
 
 Our website may contain links to third-party websites. Our processing will still be in accordance with this privacy policy, but when you have used these links to leave our site, you should exercise caution and inform yourself of the privacy statement applicable to the website in question. We are not responsible for their data processing practices.
 
-## 12. Contact Us
+## 10. Contact Us
 
 If you have any questions about your rights, please feel free to contact us at gdpr@safespring.com
