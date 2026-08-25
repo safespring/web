@@ -81,7 +81,7 @@ This DPA applies only to Safespring’s processing of Personal Data on behalf of
 
 ## 7. Sub-processors
 
-**7.1** The Processor may engage third parties to process the Personal Data or any part thereof on its behalf (“Sub-Processor”). Where the Processor intends to engage a new Sub-Processor, the Controller must be informed thereof in writing. The new Sub-Processor may process the Personal Data if the Controller has not objected in writing 30 days after such information was provided. The absence of Controller’s objections will be deemed as the Controller’s acceptance of the change of Sub-Processor. Sub-Processors are listed in Appendix 1, which shall be updated in the event of changes to the Sub-Processors.
+**7.1** The Processor may engage third parties to process the Personal Data or any part thereof on its behalf (“Sub-Processor”). Where the Processor intends to engage a new Sub-Processor, the Controller must be informed thereof in writing. The new Sub-Processor may process the Personal Data if the Controller has not objected in writing 30 days after such information was provided. The absence of Controller’s objections will be deemed as the Controller’s acceptance of the change of Sub-Processor. Sub-Processors are listed in the Privacy Policy, which shall be updated in the event of changes to the Sub-Processors.
 
 **7.2** The Processor shall enter into a written agreement with every Sub-Processor, in which each Sub-Processor undertakes obligations at least reflecting those undertaken by the Processor under this DPA. The Processor is responsible towards the Controller for its Sub-Processors' acts and omissions as for its own.
 
