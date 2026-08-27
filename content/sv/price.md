@@ -15,17 +15,6 @@ aliases:
 slug: "pris"
 ---
 
-
-<!--
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-table" text="Prislista med kalkylator" link="/pricelist/SEK/safespring-price-list-sek.xlsx" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-file-pdf" text="Prislista som PDF" link="/pricelist/SEK/safespring-price-list-sek.pdf" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-file-csv" text="Prislista som CSV (kommer)" link="" color="#EBEBEB">}}
-{{< /icon-block-container >}}
-{{< distance >}}
--->
-
-
 ## Ladda ner priskalkylator
 Bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safespring. Priskalkylatorn är en Excel-fil med inbyggd logik för att räkna ut en månadskostnad baserad på dina val.
 
@@ -50,6 +39,8 @@ Safespring tar inte ut någon trafikkostnad för den data som skickas till eller
 Safespring Kubernetes Engine ger en hanterad kontrollplan för Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
 
+Priset nedan gäller kontrollplanet. Instanserna som används som worker-noder tillkommer och debiteras enligt den flavor du väljer under Safespring Compute.
+
 | Produkt ID            | Beskrivning                                      |    Per månad |
 |-----------------------|--------------------------------------------------|-------------:|
 | PAAS-man-controlplane | Hanterad kontrollplan                           |     4 900 kr |
@@ -65,7 +56,7 @@ Flavor är en förkonfigurerad instans av en virtuell maskin med en specifik kom
 
 
 ### Flavors med lokal NVMe-disk
-Upptäck vårt sortiment av kraftfulla virtuella servrar, med upp till 32 vCPU och 64 GB RAM, med NVMe-lagring upp till 1 000 GB - prissatta från endast 0,67 kr per timme eller 480 kr per 30 dagar!
+Flavors med lokal NVMe-disk kombinerar 2–32 vCPU och 4–64 GB RAM med 100–1 000 GB lokal lagring. Priserna börjar på 0,67 kr per timme eller 480 kr per 30 dagar.
 
 | Produkt ID               | vCPU | RAM (GB) |           Lokal disk (GB) |                 Per timme |           Per 30 dagar |
 |--------------------------|:----:|:--------:|--------------------------:|--------------------------:|-----------------------:|
@@ -103,7 +94,7 @@ Safespring erbjuder en rad kostnadseffektiva virtuella maskiner med varierande v
 
 
 ### Flavors med GPU
-Safespring erbjuder flera alternativa virtuella maskiner med GPU, både med och utan lokal lagring (NVMe).
+GPU-instanser är avsedda för arbetslaster som behöver beräkningsacceleration, exempelvis AI, maskininlärning och dataanalys. Utbudet omfattar flavors med A2 och H100 NVL, med eller utan lokal NVMe-lagring. Läs mer om [GPU-resurser för AI och maskininlärning](/tjanster/machine-learning/).
 
 | Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU   | Per timme | Per 30 dagar |
 |--------------------------|:----:|:--------:|----------------:|:-----:|----------:|-------------:|
@@ -111,7 +102,7 @@ Safespring erbjuder flera alternativa virtuella maskiner med GPU, både med och 
 | FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | A2    | 6,49 kr   | 4 670 kr     |
 | FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | A2    | 3,86 kr   | 2 780 kr     |
 | FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | A2    | 4,92 kr   | 3 540 kr     |
-| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100  | 32,91 kr  | 24 024 kr    |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100 NVL | 32,91 kr  | 24 024 kr    |
 
 
 ### Central blocklagring
@@ -210,14 +201,15 @@ Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattf
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |     4 766 kr |
 
 ### Plattformstjänster
-Vi erbjuder en komplett hantering av dina Kubernetes-miljöer, inklusive regelefterlevnad, med Compliant Kubernetes. Dessutom erbjuds Managed Elasticsearch, NATS, MariaDB och Redis. Begär en offert idag för att få tillgång till dessa tjänster!
+Safespring Kubernetes Engine (SKE) ger ett managerat kontrollplan för Kubernetes. Därutöver erbjuder Safespring managerade tjänster för PostgreSQL, MariaDB, Elasticsearch, Redis och NATS. Tjänsterna i tabellen nedan kostar från 2 kr per timme.
 
-| Produkt ID            | Beskrivning                                       |    Per månad |
-|-----------------------|---------------------------------------------------|-------------:|
-| PAAS-openshift        | Ingen support                                     | Begär offert |
-| PAAS-man.nats         | Managed NATS                                      | Begär offert |
-| PAAS-man.mariadb      | Managed MariaDB                                   | Begär offert |
-| PAAS-man.redis        | Managed Redis                                     | Begär offert |
+| Produkt ID               | Beskrivning           | Från per timme |
+|--------------------------|-----------------------|---------------:|
+| PAAS-man.postgresql      | Managed PostgreSQL    |        2,00 kr |
+| PAAS-man.mariadb         | Managed MariaDB       |        2,00 kr |
+| PAAS-man.elasticsearch   | Managed Elasticsearch |        2,00 kr |
+| PAAS-man.redis           | Managed Redis         |        2,00 kr |
+| PAAS-man.nats            | Managed NATS          |        2,00 kr |
 
 ## Support och konsulttjänster
 

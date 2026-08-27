@@ -68,7 +68,7 @@ Under de senaste två åren har AI börjat hamna i samma typ av samtal som molnt
 
 Startpunkten är ofta funktionalitet. Ganska snabbt hamnar diskussionen ändå i data och beroenden: var information behandlas, om modellen kan granskas, om lösningen kan flyttas och vilka krav AI Act ställer på dokumentation och transparens.
 
-CivSec behandlar AI som en del av digital rådighet. Vi känner igen mönstret från samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor. Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Federerad AI med FEDn på Safespring]({{% relref "/services/machine-learning.md" %}}).
+CivSec behandlar AI som en del av digital rådighet. Vi känner igen mönstret från samtal om privata AI-miljöer, GPU-infrastruktur och användning av språkmodeller inom offentlig sektor. Ett exempel är vårt arbete med GPU-infrastruktur och federerad maskininlärning, där dataplacering, kontroll och samarbete mellan organisationer blir en del av den tekniska lösningen. Mer om detta finns på vår sida om [Federerad AI med FEDn på Safespring]({{% relref "/services/federated-ai.md" %}}).
 
 I juni 2026 kom ett konkret exempel. Den 12 juni skrev Anthropic att den amerikanska regeringen hade beslutat om exportkontroller för modellerna Fable 5 och Mythos 5.[^6] Beslutet gällde utländska medborgare, både inom och utanför USA. Anthropic skrev samtidigt att företaget saknade ett tillförlitligt sätt att kontrollera nationalitet i realtid och därför stängde av åtkomsten till båda modellerna för alla användare.
 
