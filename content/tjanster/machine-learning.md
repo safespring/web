@@ -1,83 +1,118 @@
 ---
-title: "Federerad AI med FEDn på Safespring"
-toplogo: "safespring_partners_scaleout-systems.svg"
-section: ""
+title: "GPU-resurser för AI och maskininlärning"
+metatitle: "GPU-instanser för AI och maskininlärning | Safespring"
+section: "Public Cloud"
 language: "Se"
-cardtitle: "AI & ML"
+cardtitle: "GPU för AI och ML"
 megamenulisttitle: "GPU (AI/ML)"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
 cardorder: "2"
 date: 2025-03-13
 draft: false
-intro: "Utnyttja säkert federerad maskininlärning med FEDn på Safesprings GDPR-kompatibla molninfrastruktur."
-cardintro: "Utnyttja säkert federerad maskininlärning med FEDn på Safespring"
+intro: "Kör inferens, modellträning, videokodning och andra GPU-accelererade arbetslaster i Safesprings molninfrastruktur."
+cardintro: "GPU-instanser med A2 och H100 NVL för beräkningsintensiva arbetslaster."
 form: ""
 background: "safespring-ai-background.svg"
-sidebarlinkname: "Se demo"
-sidebarlinkurl: "/demo/compute/"
+sidebarlinkname: "Se priser"
+sidebarlinkurl: "/pris/#flavors-med-gpu"
 sidebarlinkname2: "Kontakta Safespring"
-sidebarlinkurl2: "/en/contact"
+sidebarlinkurl2: "/kontakt"
 sidebarimage: "safespring-fredric.webp"
-sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna kontakt med mig om du har några frågor."
+sidebartext: "Vill du prata om GPU-resurser? Jag heter Fredric Wallsten. Kontakta mig gärna om du har frågor."
 sidebarphone: "+46855107370"
 sidebarmail: "hello@safespring.com"
 socialmedia: ""
 ---
 
-
-{{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-scaleout-eforvaltningsdagarna-talkslot-2023/master.m3u8" "/img/webinar/thumbnails/safespring-scaleout-eforvaltningsdagarna-2023.jpg" >}}
-{{< distance >}}
+## GPU-instanser i Safespring Compute
 
 {{< ingress >}}
-Utnyttja kraften i federerad maskininlärning för att utveckla robusta AI-modeller utan att kompromissa med datasekretessen. Skala sömlöst med FEDn, säkert drivet av Safesprings infrastruktur.
+Safespring Compute erbjuder GPU-flavors för inferens, modellträning, videokodning och drift av stora språkmodeller.
 {{< /ingress >}}
 
-## Skala säkert med FEDn på Safespring
+GPU-resurserna finns som flavors, det vill säga fördefinierade resursprofiler. Varje GPU-flavor har en bestämd kombination av GPU, vCPU och RAM. Flavors i l2-serien har dessutom lokal disk. Aktuella konfigurationer och priser finns i prislistan.
 
-FEDn är ett open source-ramverk för federerad maskininlärning från Scaleout Systems, utformat för att möjliggöra samarbetsbaserad maskininlärningsträning samtidigt som datasekretess och GDPR-efterlevnad respekteras fullt ut. Safespring erbjuder den säkra, robusta infrastruktur som krävs för att distribuera och skala FEDn, och säkerställer att dina AI-initiativ förblir kompatibla, säkra och effektiva.
+A2 passar för inferens, lättare träning och videokodning. A2-flavors finns i STO2 och aktiveras för projektet via supporten. H100 NVL erbjuds i STO1 på förfrågan och är optimerad för inferens med stora språkmodeller. Kortet har 94 GB HBM3-minne, PCIe 5.0 x16 och passiv kylning.
 
-Genom att utnyttja Safespring molntjänst i kombination med FEDns federerade maskininlärning, kan din organisation:
-
-- Bevara datasekretessen med lokal träning av data.
-- Skala från pilotprojekt till full produktion sömlöst.
-- Säkerställa full GDPR- och dataskyddsefterlevnad.
-- Lätt integrera med befintliga maskininlärningsarbetsflöden.
+{{< gpu-comparison >}}
 
 {{< distance >}}
 
-{{< horisontal-card 
-    image="/img/card/safespring-scaleut_use-case-ebba.webp" 
-    cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data" 
-    link="/tjanster/case/scaleout/" 
-    linktext="Läs Use Case" 
-    text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" 
->}}
+## Välj mellan lokal och central lagring
+
+l2-flavors har lokal NVMe-lagring på compute-noden. Rotdisken följer instansens livscykel och raderas tillsammans med instansen. Safespring kan inte återställa informationen om den lokala disken går sönder. Använd därför l2 för tillståndslösa eller kortlivade arbetslaster, eller se till att informationen säkerhetskopieras.
+
+b2-flavors har ingen lokal disk och startas från en beständig volym i den centrala blocklagringen. Volymen finns kvar oberoende av instansen och kan vara av typen `fast` eller `large`.
 
 {{< distance >}}
 
-## Vanliga frågor (FAQ)
+## GPU-noder för Kubernetes
 
-{{% question question="Vad är federerad maskininlärning, och varför är det viktigt?" %}}
-Federerad maskininlärning möjliggör att maskininlärningsmodeller tränas på decentraliserade dataset utan att överföra rådata, vilket säkerställer sekretess och efterlevnad – avgörande för känsliga sektorer som hälso- och sjukvård, finans samt offentlig förvaltning.
-{{% /question %}}
-
-{{% question question="Hur säkerställer FEDn GDPR-efterlevnad?" %}}
-FEDn möjliggör att modeller tränas lokalt på kunddata, och skickar endast krypterade modellparametrar tillbaka till den centrala aggregeraren. Detta förhindrar överföring av rådata och säkerställer full GDPR-efterlevnad.
-{{% /question %}}
-
-{{% question question="Kan FEDn integreras med befintliga AI-ramverk?" %}}
-Ja, FEDn stöder populära maskininlärningsramverk såsom TensorFlow, PyTorch, Keras, Hugging Face och scikit-learn, vilket möjliggör sömlös integration i dina befintliga AI-utvecklingsprocesser.
-{{% /question %}}
-
-{{< accordion-script >}}
+GPU-stöd i Safespring Kubernetes Engine är tillgängligt i STO2 för worker-noder med A2-flavors vars namn slutar på `gA2`. Det dokumenterade SKE-stödet omfattar inte H100 NVL. Det managerade kontrollplanet och Compute-instanserna som används som worker-noder debiteras separat.
 
 {{< distance >}}
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-network-wired" text="Distribuerad & Skalbar" description="FEDns hierarkiska design med flera aggregeringsservrar säkerställer effektiv arbetsbelastningsfördelning och skalbarhet, vilket stöder tusentals klienter sömlöst." >}}
+## Dokumentation och exempel om GPU och maskininlärning
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-chart-line" text="Övervakning och analys i realtid" description="Dra nytta av inbyggd övervakning, analys och systemåterställning i realtid, vilket förbättrar den operativa tillförlitligheten och ger insyn i dina federerade experiment." >}}
+Läs teknisk dokumentation om GPU-instanser, en praktisk guide till att köra en lokal språkmodell och exempel på maskininlärning i Safesprings infrastruktur.
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Sömlös integration" description="Integrera enkelt FEDn med populära AI-ramverk som TensorFlow och PyTorch, och distribuera flexibelt över Safesprings säkra molninfrastruktur." >}}
+{{< manual-document-table matomoAction="GPU Resources Deep Dive" >}}
+  {{< manual-document-row
+    title="A2-flavors i Safespring Compute"
+    href="https://docs.safespring.com/compute/gpu/"
+    icon="fa-solid fa-microchip"
+    label="Dokumentation"
+    description="NVIDIA A2, namn på flavors, begränsningar och installation av NVIDIA-drivrutiner."
+  >}}
+  {{< manual-document-row
+    title="Kör GPU-arbetslaster i Kubernetes"
+    href="https://docs.safespring.com/kubernetes/gpu/"
+    icon="fa-solid fa-dharmachakra"
+    label="Guide"
+    description="Verifiera NVIDIA-körmiljön och kör GPU-jobb och vLLM-inferens i Safespring Kubernetes Engine."
+  >}}
+  {{< manual-document-row
+    title="Kör en lokal språkmodell med Ollama"
+    href="/blogg/2025/2025-12-run-llm-in-safespring-container-platform/"
+    icon="fa-solid fa-terminal"
+    label="Engelsk blogg"
+    description="Installera NVIDIA-drivrutiner, Ollama och Open-WebUI på en GPU-instans som kör Ubuntu."
+  >}}
+  {{< manual-document-row
+    title="Välj lagring för GPU-instansen"
+    href="https://docs.safespring.com/compute/volume/"
+    icon="fa-solid fa-hard-drive"
+    label="Guide"
+    description="Jämför lokal lagring med beständiga volymer och läs om volymtyperna fast och large."
+  >}}
+  {{< manual-document-row
+    title="Federerad maskininlärning med Scaleout"
+    href="/tjanster/case/scaleout/"
+    icon="fa-solid fa-people-group"
+    label="Kundcase"
+    description="Scaleout berättar om federerad maskininlärning, dataskydd och sitt arbete i Safesprings infrastruktur."
+  >}}
+  {{< manual-document-row
+    title="AI nära oss: innovation och ansvar"
+    href="/webinar/eforvaltningsdagarna-2023/"
+    icon="fa-solid fa-circle-play"
+    label="Seminarium"
+    description="Ett inspelat samtal om AI, dataskydd och att träna modeller utan att flytta data."
+  >}}
+  {{< manual-document-row
+    title="Maskininlärning från idé till produktion"
+    href="/webinar/safespring-partner-webinar-scaleout-1/"
+    icon="fa-solid fa-diagram-project"
+    label="Webbinarium"
+    description="Scaleout visar hur ett maskininlärningsprojekt går från pilot till produktion."
+  >}}
+{{< /manual-document-table >}}
 
 {{< distance >}}
+
+## Konfigurationer och priser
+
+På [prislistan för GPU-instanser](/pris/#flavors-med-gpu) finns aktuella konfigurationer med vCPU, RAM, lokal disk, GPU-modell samt pris per timme och för 30 dagar.
+
+Om du är osäker på vilken flavor eller lagringslösning som passar din arbetslast kan du [kontakta Safespring](/kontakt) för att gå igenom kraven.
