@@ -197,7 +197,7 @@ Maximera er infrastruktur med mjukvara som är optimerad för Safesprings plattf
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |     4 766 kr |
 
 ### Plattformstjänster
-Safespring Kubernetes Engine (SKE) ger ett managerat kontrollplan för Kubernetes. Därutöver erbjuder Safespring managerade tjänster för PostgreSQL, MariaDB, Elasticsearch, Redis och NATS. Tjänsterna i tabellen nedan kostar från 2 kr per timme.
+Safesprings partner erbjuder databas som tjänst för PostgreSQL, MariaDB och Redis. Därutöver finns managerade tjänster för Elasticsearch och NATS. Tjänsterna körs på Safesprings infrastruktur och kostar från 2 kr per timme.
 
 | Produkt ID               | Beskrivning           | Från per timme |
 |--------------------------|-----------------------|---------------:|
