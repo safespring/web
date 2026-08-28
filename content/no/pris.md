@@ -11,14 +11,6 @@ intro: "Sammen skaper vi en tryggere og mer kostnadseffektiv digital infrastrukt
 toc: "På denne siden"
 nosidebar: ""
 ---
-<!--
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-table" text="Prisliste med kalkulator" link="/pricelist/NOK/safespring-price-list-nok.xlsx" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-file-pdf" text="Prisliste som PDF" link="/pricelist/NOK/safespring-price-list-nok.pdf" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-file-csv" text="Prisliste som CSV (kommer)" link="" color="#EBEBEB">}}
-{{< /icon-block-container >}}
--->
-
 ## Last ned priskalkulator
 Bygg opp ditt nåværende miljø for å se hvor mye du sparer ved å flytte til Safespring. Priskalkulatoren er en Excel-fil med innebygd logikk for å beregne en månedskostnad basert på dine valg.
 
@@ -30,9 +22,7 @@ Bygg opp ditt nåværende miljø for å se hvor mye du sparer ved å flytte til 
 Se våre priser lenger ned på denne siden eller last ned pris-kalkulatoren til din datamaskin. Kalkulatoren er en Excel-fil med innebygd logikk for å beregne månedskostnaden basert på dine valg.
 {{< /ingress >}}
 
-Det er mange fordeler med infrastruktur som en tjeneste. I tillegg til økt ytelse til lavere kostnader, unngår du å investere i ny maskinvare og betaler kun for de ressursene du tildeler.
-
-Last ned vår pris-kalkulator og bygg opp din nåværende miljø for å se hvor mye du kan spare ved å flytte til Safespring. Prisen inkluderer høy sikkerhet både fysisk, logisk og juridisk. Du får også 24/7 support og tilgang til vår selvbetjeningssportal der du kan administrere dine instanser etter behov.
+Prisen inkluderer høy sikkerhet, både fysisk, logisk og juridisk. Du får også 24/7 support og tilgang til selvbetjeningsportalen vår, der du kan administrere instansene dine etter behov.
 
 ## Ingen trafikkostnad
 
@@ -45,6 +35,8 @@ Safespring tar ikke betalt for datatrafikk til eller fra våre tjenester. Trafik
 {{< ingress >}}
 Safespring Kubernetes Engine gir en administrert kontrollplan for Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
+
+Prisen nedenfor gjelder kontrollplanet. Instansene som brukes som workernoder, kommer i tillegg og faktureres etter den flavoren du velger under Safespring Compute.
 
 | Produkt ID            | Beskrivelse                                      |    Per måned |
 |-----------------------|--------------------------------------------------|-------------:|
@@ -60,7 +52,7 @@ En "Flavor" er en forhåndskonfigurert instans av en virtuell maskin med en spes
 {{< /ingress >}}
 
 ### Flavors med lokal NVMe-disk
-Oppdag vårt utvalg av kraftige virtuelle servere med opptil 32 vCPU og 64 GB RAM, med NVMe-lagring opptil 1 000 GB - priset fra kun 0,67 kr per time eller 480 kr per 30 dager!
+Flavors med lokal NVMe-disk kombinerer 2–32 vCPU og 4–64 GB RAM med 100–1 000 GB lokal lagring. Prisene starter på 0,67 kr per time eller 480 kr per 30 dager.
 
 | Produkt ID               | vCPU | RAM (GB) |           Lokal disk (GB) |                  Per time |           Per 30 dager |
 |--------------------------|:----:|:--------:|--------------------------:|--------------------------:|-----------------------:|
@@ -98,7 +90,7 @@ Safespring tilbyr et utvalg kostnadseffektive virtuelle maskiner med variert vCP
 
 
 ### GPU-varianter
-Safespring tilbyr flere alternativer for virtuelle maskiner med GPU, både med og uten lokal lagring (NVMe).
+GPU-instanser er beregnet for arbeidslaster som trenger beregningsakselerasjon, for eksempel AI, maskinlæring og dataanalyse. Utvalget omfatter flavors med A2 og H100 NVL, med eller uten lokal NVMe-lagring. Les mer om [GPU-ressurser for AI og maskinlæring](/no/tjenester/machine-learning/).
 
 | Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU  | Per time | Per 30 dager |
 |--------------------------|:----:|:--------:|----------------:|:----:|---------:|-------------:|
@@ -106,7 +98,7 @@ Safespring tilbyr flere alternativer for virtuelle maskiner med GPU, både med o
 | FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | A2   | 6,49 kr  | 4 670 kr     |
 | FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | A2   | 3,86 kr  | 2 780 kr     |
 | FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | A2   | 4,92 kr  | 3 540 kr     |
-| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100 | 32,91 kr | 24 024 kr    |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100 NVL | 32,91 kr | 24 024 kr    |
 
 
 
@@ -210,14 +202,15 @@ Maksimer infrastrukturen din med programvare som kjører optimalt på Safespring
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |  4 766 kr |
 
 ### Plattformtjenester
-Vi tilbyr komplett administrasjon av Kubernetes-miljøene dine, inkludert overholdelse av regler, med Compliant Kubernetes. I tillegg tilbys Managed Elasticsearch, NATS, MariaDB og Redis. Be om tilbud i dag for å få tilgang til disse tjenestene!
+Safespring Kubernetes Engine (SKE) gir et administrert kontrollplan for Kubernetes. I tillegg tilbyr Safespring administrerte tjenester for PostgreSQL, MariaDB, Elasticsearch, Redis og NATS. Tjenestene i tabellen nedenfor koster fra 2 kr per time.
 
-| Produkt ID            | Beskrivelse                                           | Per måned |
-|-----------------------|-------------------------------------------------------|----------:|
-| PAAS-openshift        | Ingen support                                         |    Tilbud |
-| PAAS-man.nats         | Managed NATS                                          |    Tilbud |
-| PAAS-man.mariadb      | Managed MariaDB                                       |    Tilbud |
-| PAAS-man.redis        | Managed Redis                                         |    Tilbud |
+| Produkt ID               | Beskrivelse           | Fra per time |
+|--------------------------|-----------------------|-------------:|
+| PAAS-man.postgresql      | Managed PostgreSQL    |      2,00 kr |
+| PAAS-man.mariadb         | Managed MariaDB       |      2,00 kr |
+| PAAS-man.elasticsearch   | Managed Elasticsearch |      2,00 kr |
+| PAAS-man.redis           | Managed Redis         |      2,00 kr |
+| PAAS-man.nats            | Managed NATS          |      2,00 kr |
 
 ## Støtte og Konsulenttjenester
 
@@ -247,15 +240,6 @@ Få tilgang til våre erfarne konsulenter og prosjektledere for å optimalisere 
 | PS-pm.jun        | Project Manager, junior expertise level                           | Timme          |   | 1 139 kr |
 | PS-pm.sen        | Project Manager, senior expertise level                           | Timme          |   | 1 374 kr |
 
-### Opplæring
-Lær alt om moderne IT-tjenester med Safesprings kurspakke, inkludert introduksjoner til "infrastruktur som en tjeneste" og skyinfrastrukturteknologi, samt dypdykkende kurs om skystrategi og moderne DevOps med "microservices". Be om tilbud i dag for å ta virksomheten din til neste nivå!
-
-| Produkt ID                  | Beskrivelse                                      | Varighet   | Fakturering pr |   Pris |
-|-----------------------------|--------------------------------------------------|------------|----------------|-------:|
-| COURSE-intro.iaas           | Introduksjon til "infrastruktur som en tjeneste" | En dag     | Stykk          | Tilbud |
-| COURSE-cxo.strategy         | Cloud-strategi for ledergrupper                  | En dag     | Stykk          | Tilbud |
-| COURSE-intro.cloud          | Introduksjon til cloud-infrastrukturteknologi    | Fire dager | Stykk          | Tilbud |
-| COURSE-devops.microservices | Moderne DevOps og "microservices"                | Fire dager | Stykk          | Tilbud |
 ___
 Notes
 

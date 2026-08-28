@@ -15,14 +15,6 @@ sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Contact us"
 sidebarlinkurl2: "/en/contact"
 ---
-<!--
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-table" text="Price list with calculator" link="/pricelist/EUR/safespring-price-list-eur.xlsx" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-file-pdf" text="Price list as PDF" link="/pricelist/EUR/safespring-price-list-eur.pdf" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-file-csv" text="Price list as CSV (coming soon)" link="" color="#EBEBEB">}}
-{{< /icon-block-container >}}
--->
-
 ## Download the price calculator
 Set up your current environment to see how much you save by moving to Safespring. The price calculator is an Excel file with built-in logic to calculate a monthly cost based on your selections.
 
@@ -34,9 +26,7 @@ Set up your current environment to see how much you save by moving to Safespring
 See our prices further down on this page or download the price calculator to your computer. The price calculator is an Excel file with built-in logic to calculate a monthly cost based on your choices.
 {{< /ingress >}}
 
-There are many advantages to infrastructure as a service. In addition to increased performance for lower cost, you avoid investing in new hardware and paying for space that is not utilized. With us, you only pay for the resources you allocate.
-
-Download our price calculator and build your current environment to see what you save by moving to Safespring. The price includes high security, both physical, logical, and legal. You also get 24/7 support and access to our self-service portal where you can manage your instances as needed.
+The price includes high security—physical, logical, and legal. You also get 24/7 support and access to our self-service portal, where you can manage your instances as needed.
 
 ## No Traffic Cost
 
@@ -49,6 +39,8 @@ Safespring does not charge any traffic cost for data sent to or from our service
 {{< ingress >}}
 Safespring Kubernetes Engine provides a managed Kubernetes control plane on Safespring infrastructure.
 {{< /ingress >}}
+
+The price below covers the control plane. Instances used as worker nodes are additional and are billed according to the flavor you choose under Safespring Compute.
 
 | Product ID            | Description                                      |   Per month |
 |-----------------------|--------------------------------------------------|------------:|
@@ -64,7 +56,7 @@ Flavor is a pre-configured instance of a virtual machine with a specific combina
 {{< /ingress >}}
 
 ### Flavors with local NVMe disk
-Discover our range of powerful virtual servers, with up to 32 vCPUs and 64 GB RAM, with NVMe storage up to 1,000 GB - priced from only €0.060 per hour or €42.72 per 30 days!
+Flavors with local NVMe storage combine 2–32 vCPUs and 4–64 GB RAM with 100–1,000 GB of local storage. Prices start at €0.06 per hour or €42.72 per 30 days.
 
 | Product ID               | vCPU | RAM (GB) |           Local disc (GB) |                   Hourly |                 30 days |
 |--------------------------|:----:|:--------:|--------------------------:|-------------------------:|------------------------:|
@@ -101,7 +93,7 @@ Safespring offers a range of cost-effective virtual machines with varying vCPUs 
 
 
 ### GPU Flavors
-Safespring offers several virtual machine options with GPU, both with and without local storage (NVMe).
+GPU instances are designed for workloads that need compute acceleration, such as AI, machine learning, and data analysis. The range includes flavors with A2 and H100 NVL, with or without local NVMe storage. Learn more about [GPU resources for AI and machine learning](/en/services/machine-learning-ai-gpu-resources/).
 
 | Product ID               | vCPU | RAM (GB) | Local Disk (GB) | GPU  | Per Hour | Per 30 Days |
 |--------------------------|:----:|:--------:|----------------:|:----:|---------:|------------:|
@@ -109,7 +101,7 @@ Safespring offers several virtual machine options with GPU, both with and withou
 | FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | A2   | 0,58 €   | 415,63 €    |
 | FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | A2   | 0,34 €   | 247,42 €    |
 | FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | A2   | 0,44 €   | 315,06 €    |
-| FLAVOR-b2.c32.r192.gH100 | 32   | 192      | 0               | H100 | 2,93 €   | 2 138,14 €  |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      | 0               | H100 NVL | 2,93 €   | 2 138,14 €  |
 
 
 
@@ -214,14 +206,15 @@ Maximize your infrastructure with software optimized to run on Safespring's plat
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU        |        424,17 € |
 
 ### Platform Services
-We offer complete management of your Kubernetes environments, including regulatory compliance, with Compliant Kubernetes. Additionally, Managed Elasticsearch, NATS, MariaDB, and Redis are offered. Request a quote today to access these services!
+Safespring Kubernetes Engine (SKE) provides a managed Kubernetes control plane. Safespring also offers managed services for PostgreSQL, MariaDB, Elasticsearch, Redis, and NATS. Services in the table below start at €0.18 per hour.
 
-| Product ID            | Description                                           |         Monthly |
-|-----------------------|-------------------------------------------------------|----------------:|
-| PAAS-openshift        | No support                                            | Request a quote |
-| PAAS-man.nats         | Managed NATS                                          | Request a quote |
-| PAAS-man.mariadb      | Managed MariaDB                                       | Request a quote |
-| PAAS-man.redis        | Managed Redis                                         | Request a quote |
+| Product ID               | Description           | From per hour |
+|--------------------------|-----------------------|--------------:|
+| PAAS-man.postgresql      | Managed PostgreSQL    |        €0.18  |
+| PAAS-man.mariadb         | Managed MariaDB       |        €0.18  |
+| PAAS-man.elasticsearch   | Managed Elasticsearch |        €0.18  |
+| PAAS-man.redis           | Managed Redis         |        €0.18  |
+| PAAS-man.nats            | Managed NATS          |        €0.18  |
 
 ## Support and Consulting Services
 
@@ -246,16 +239,6 @@ Access our experienced consultants and project managers to optimize your cloud i
 | PS-cloudarch.sen | Cloud Infrastructure Architect Consultant, senior expertise level | Hour        | 122,29 € |
 | PS-pm.jun        | Project Manager, junior expertise level                           | Hour        | 101,37 € |
 | PS-pm.sen        | Project Manager, senior expertise level                           | Hour        | 122,29 € |
-
-### Training
-Learn all about modern IT services with Safespring's course packages, including introductions to "infrastructure as a service" and cloud infrastructure technology, as well as in-depth courses on cloud strategy and modern DevOps with "microservices". Request a quote today to take your business to the next level!
-
-| Product ID                  | Description                                     |  Duration | Billing per |                  Price |
-|-----------------------------|-------------------------------------------------|----------:|:-----------:|-----------------------:|
-| COURSE-intro.iaas           | Introduction to "infrastructure as a service"   |   One day |   Occasion  | Requests for quotation |
-| COURSE-cxo.strategy         | Cloud strategy for management teams             |   One day |   Occasion  | Requests for quotation |
-| COURSE-intro.cloud          | Introduction to cloud infrastructure technology | Four days |   Occasion  | Requests for quotation |
-| COURSE-devops.microservices | Modern DevOps and "microservices"               | Four days |   Occasion  | Requests for quotation |
 
 ___
 
