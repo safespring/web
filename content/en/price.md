@@ -216,7 +216,7 @@ Maximize your infrastructure with software optimized to run on Safespring's plat
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU        |        424,17 € |
 
 ### Platform Services
-Safespring Kubernetes Engine (SKE) provides a managed Kubernetes control plane. Safespring also offers managed services for PostgreSQL, MariaDB, Elasticsearch, Redis, and NATS. Services in the table below start at €0.18 per hour.
+Safespring's partner provides database as a service for PostgreSQL, MariaDB, and Redis. Managed services are also available for Elasticsearch and NATS. The services run on Safespring infrastructure and start at €0.18 per hour.
 
 | Product ID               | Description           | From per hour |
 |--------------------------|-----------------------|--------------:|
