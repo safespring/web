@@ -64,14 +64,14 @@ Läs teknisk dokumentation om GPU-instanser, en praktisk guide till att köra en
   {{< manual-document-row
     title="A2-flavors i Safespring Compute"
     href="https://docs.safespring.com/compute/gpu/"
-    icon="fa-solid fa-microchip"
+    icon="fa-solid fa-microchip-ai"
     label="Dokumentation"
     description="NVIDIA A2, namn på flavors, begränsningar och installation av NVIDIA-drivrutiner."
   >}}
   {{< manual-document-row
     title="Kör GPU-arbetslaster i Kubernetes"
     href="https://docs.safespring.com/kubernetes/gpu/"
-    icon="fa-solid fa-dharmachakra"
+    icon="fa-solid fa-server"
     label="Guide"
     description="Verifiera NVIDIA-körmiljön och kör GPU-jobb och vLLM-inferens i Safespring Kubernetes Engine."
   >}}
@@ -92,21 +92,21 @@ Läs teknisk dokumentation om GPU-instanser, en praktisk guide till att köra en
   {{< manual-document-row
     title="Federerad maskininlärning med Scaleout"
     href="/tjanster/case/scaleout/"
-    icon="fa-solid fa-people-group"
+    icon="fa-solid fa-people-arrows"
     label="Kundcase"
     description="Scaleout berättar om federerad maskininlärning, dataskydd och sitt arbete i Safesprings infrastruktur."
   >}}
   {{< manual-document-row
     title="AI nära oss: innovation och ansvar"
     href="/webinar/eforvaltningsdagarna-2023/"
-    icon="fa-solid fa-circle-play"
+    icon="fa-solid fa-play"
     label="Seminarium"
     description="Ett inspelat samtal om AI, dataskydd och att träna modeller utan att flytta data."
   >}}
   {{< manual-document-row
     title="Maskininlärning från idé till produktion"
     href="/webinar/safespring-partner-webinar-scaleout-1/"
-    icon="fa-solid fa-diagram-project"
+    icon="fa-solid fa-project-diagram"
     label="Webbinarium"
     description="Scaleout visar hur ett maskininlärningsprojekt går från pilot till produktion."
   >}}

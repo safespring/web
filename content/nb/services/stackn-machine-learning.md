@@ -1,19 +1,19 @@
 ---
 title: "Maskinlæring og AI med GPU-ressurser"
-slug: "ai-ml"
+slug: "maskinlaering-og-ai-med-gpu-ressurser"
 section: ""
 language: "nb"
 date: 2019-04-30T08:58:58+01:00
 draft: false
+build:
+  list: never
+  render: always
 intro: "Bygg moderne løsninger som utnytter maskinlæring og kunstig intelligens."
 form: ""
 background: "safespring-ai-background.svg"
 sidebarlinkname: ""
 sidebarlinkurl: ""
 socialmedia: "safespring-managed-database.jpg"
-aliases:
-  - /tjenester/maskinlaering-og-ai-med-gpu-ressurser/
-  - /no/tjenester/machine-learning/
 ---
 
 {{< ingress >}}
@@ -33,4 +33,3 @@ STACKn er et Django-rammeverk som implementerer prosjektbasert flerbrukeradminis
 - Dashboards/apper: distribuer og verts Dash, Flask og RShiny UI-er og apper enkelt.
 
 STACKn er svært tilpassbart og er den beste plattformen for maskinlæring i skyen for datavetenskap i Sverige, med fokus på GDPR-samsvar siden den er bygget på Safespring IaaS.
-

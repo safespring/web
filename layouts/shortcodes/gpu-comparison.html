@@ -46,7 +46,7 @@
     "a2Usage" "Inference, light training, video encoding"
     "h100Usage" "Inference with large language models"
   -}}
-{{- else if eq $language "no" -}}
+{{- else if or (eq $language "no") (eq $language "nb") -}}
   {{- $copy = dict
     "comparisonLabel" "Sammenligning mellom NVIDIA A2 og NVIDIA H100 NVL"
     "memory" "GPU-minne"
@@ -332,7 +332,7 @@
     <article class="gpu-comparison__card" aria-labelledby="gpu-a2-title">
       <header class="gpu-comparison__header">
         <div class="gpu-comparison__title">
-          <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+          <i class="fa-solid fa-microchip-ai" aria-hidden="true"></i>
           <h3 id="gpu-a2-title">NVIDIA A2</h3>
         </div>
         <p class="gpu-comparison__location">STO2</p>
@@ -373,7 +373,7 @@
     <article class="gpu-comparison__card" aria-labelledby="gpu-h100-title">
       <header class="gpu-comparison__header">
         <div class="gpu-comparison__title">
-          <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+          <i class="fa-solid fa-microchip-ai" aria-hidden="true"></i>
           <h3 id="gpu-h100-title">NVIDIA H100 NVL</h3>
         </div>
         <p class="gpu-comparison__location gpu-comparison__location--request">STO1</p>

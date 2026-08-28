@@ -5,6 +5,9 @@ section: ""
 language: "sv"
 date: 2025-03-13
 draft: false
+build:
+  list: never
+  render: always
 intro: "Utnyttja säkert federerad maskininlärning med FEDn på Safesprings GDPR-kompatibla molninfrastruktur."
 cardintro: "Utnyttja säkert federerad maskininlärning med FEDn på Safespring"
 form: ""
@@ -12,7 +15,7 @@ background: "safespring-ai-background.svg"
 sidebarlinkname: "Se demo"
 sidebarlinkurl: "/demo/compute/"
 sidebarlinkname2: "Kontakta Safespring"
-sidebarlinkurl2: "/contact.md"
+sidebarlinkurl2: "/kontakt"
 sidebarimage: "safespring-fredric.webp"
 sidebartext: "Vill du prata om tjänsten? Jag heter Fredric Wallsten, ta gärna kontakt med mig om du har några frågor."
 sidebarphone: "+46855107370"
@@ -76,4 +79,3 @@ Ja, FEDn stöder populära maskininlärningsramverk såsom TensorFlow, PyTorch, 
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Sömlös integration" description="Integrera enkelt FEDn med populära AI-ramverk som TensorFlow och PyTorch, och distribuera flexibelt över Safesprings säkra molninfrastruktur." >}}
 
 {{< distance >}}
-

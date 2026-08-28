@@ -64,14 +64,14 @@ Les teknisk dokumentasjon om GPU-instanser, en praktisk veiledning for å kjøre
   {{< manual-document-row
     title="A2-flavors i Safespring Compute"
     href="https://docs.safespring.com/compute/gpu/"
-    icon="fa-solid fa-microchip"
+    icon="fa-solid fa-microchip-ai"
     label="Dokumentasjon"
     description="NVIDIA A2, navn på flavors, begrensninger og installasjon av NVIDIA-drivere."
   >}}
   {{< manual-document-row
     title="Kjør GPU-arbeidslaster i Kubernetes"
     href="https://docs.safespring.com/kubernetes/gpu/"
-    icon="fa-solid fa-dharmachakra"
+    icon="fa-solid fa-server"
     label="Veiledning"
     description="Verifiser NVIDIA-kjøremiljøet og kjør GPU-jobber og vLLM-inferens i Safespring Kubernetes Engine."
   >}}
@@ -92,7 +92,7 @@ Les teknisk dokumentasjon om GPU-instanser, en praktisk veiledning for å kjøre
   {{< manual-document-row
     title="Føderert maskinlæring med Scaleout"
     href="/tjenester/case/scaleout/"
-    icon="fa-solid fa-people-group"
+    icon="fa-solid fa-people-arrows"
     label="Kundecase"
     description="Scaleout forteller om føderert maskinlæring, databeskyttelse og arbeidet sitt i Safesprings infrastruktur."
   >}}

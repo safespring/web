@@ -68,7 +68,7 @@ De siste to årene har AI begynt å havne i samme type samtaler som skytjenester
 
 Utgangspunktet er ofte funksjonalitet. Ganske raskt havner diskusjonen likevel i data og avhengigheter: hvor informasjon behandles, om modellen kan granskes, om løsningen kan flyttes og hvilke krav AI Act stiller til dokumentasjon og transparens.
 
-CivSec behandler AI som en del av digital råderett. Vi kjenner igjen mønsteret fra samtaler om private AI-miljøer, GPU-infrastruktur og bruk av språkmodeller i offentlig sektor. Et eksempel er vårt arbeid med GPU-infrastruktur og føderert maskinlæring, der dataplassering, kontroll og samarbeid mellom organisasjoner blir en del av den tekniske løsningen. Mer om dette finnes på siden vår om [Maskinlæring og AI med GPU-ressurser]({{% relref "/services/machine-learning.md" %}}).
+CivSec behandler AI som en del av digital råderett. Vi kjenner igjen mønsteret fra samtaler om private AI-miljøer, GPU-infrastruktur og bruk av språkmodeller i offentlig sektor. Et eksempel er vårt arbeid med GPU-infrastruktur og føderert maskinlæring, der dataplassering, kontroll og samarbeid mellom organisasjoner blir en del av den tekniske løsningen. Mer om dette finnes på siden vår om [Maskinlæring og AI med GPU-ressurser]({{% relref "/services/stackn-machine-learning.md" %}}).
 
 I juni 2026 kom et konkret eksempel. Den 12. juni skrev Anthropic at den amerikanske regjeringen hadde besluttet eksportkontroller for modellene Fable 5 og Mythos 5.[^6] Beslutningen gjaldt utenlandske statsborgere, både innenfor og utenfor USA. Anthropic skrev samtidig at selskapet manglet en pålitelig måte å kontrollere nasjonalitet i sanntid på og derfor stengte tilgangen til begge modellene for alle brukere.
 

@@ -201,7 +201,7 @@ Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattf
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |     4 766 kr |
 
 ### Plattformstjänster
-Safesprings partner erbjuder [databas som tjänst](/tjanster/database-as-a-service/) för PostgreSQL, MariaDB och Redis. Därutöver finns managerade tjänster för Elasticsearch och NATS. Tjänsterna körs på Safesprings infrastruktur och kostar från 2 kr per timme.
+Safesprings partner erbjuder [databas som tjänst](/tjanster/database/) för PostgreSQL, MariaDB och Redis. Därutöver finns managerade tjänster för Elasticsearch och NATS. Tjänsterna körs på Safesprings infrastruktur och kostar från 2 kr per timme.
 
 | Produkt ID               | Beskrivning           | Från per timme |
 |--------------------------|-----------------------|---------------:|

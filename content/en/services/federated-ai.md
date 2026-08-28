@@ -5,6 +5,9 @@ section: ""
 language: "en"
 date: 2025-03-13
 draft: false
+build:
+  list: never
+  render: always
 intro: "Harness federated machine learning securely with FEDn on Safespring's GDPR-compliant cloud infrastructure."
 cardintro: "Harness federated machine learning securely with FEDn on Safespring"
 form: ""
@@ -77,4 +80,3 @@ Yes, FEDn supports popular machine learning frameworks including TensorFlow, PyT
 {{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Seamless Integration" description="Easily integrate FEDn with popular AI frameworks like TensorFlow and PyTorch, and deploy flexibly across Safespring's secure cloud infrastructure." >}}
 
 {{< distance >}}
-

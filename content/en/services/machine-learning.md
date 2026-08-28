@@ -64,14 +64,14 @@ Explore technical documentation for GPU instances, a practical guide to running 
   {{< manual-document-row
     title="A2 flavors in Safespring Compute"
     href="https://docs.safespring.com/compute/gpu/"
-    icon="fa-solid fa-microchip"
+    icon="fa-solid fa-microchip-ai"
     label="Docs"
     description="NVIDIA A2, flavor naming, restrictions, and NVIDIA driver installation."
   >}}
   {{< manual-document-row
     title="Run GPU workloads in Kubernetes"
     href="https://docs.safespring.com/kubernetes/gpu/"
-    icon="fa-solid fa-dharmachakra"
+    icon="fa-solid fa-server"
     label="Guide"
     description="Verify the NVIDIA runtime and run GPU jobs and vLLM inference in Safespring Kubernetes Engine."
   >}}
@@ -92,7 +92,7 @@ Explore technical documentation for GPU instances, a practical guide to running 
   {{< manual-document-row
     title="Federated machine learning with Scaleout"
     href="/services/case/scaleout/"
-    icon="fa-solid fa-people-group"
+    icon="fa-solid fa-people-arrows"
     label="Case study"
     description="Scaleout discusses federated machine learning, data protection, and its work on Safespring's infrastructure."
   >}}
