@@ -52,6 +52,8 @@ Safespring does not charge any traffic cost for data sent to or from our service
 Safespring Kubernetes Engine provides a managed Kubernetes control plane on Safespring infrastructure.
 {{< /ingress >}}
 
+The price below covers the control plane. Instances used as worker nodes are additional and are billed according to the flavor you choose under Safespring Compute.
+
 | Product ID            | Description                                      |   Per month |
 |-----------------------|--------------------------------------------------|------------:|
 | PAAS-man-controlplane | Managed control plane                           |    436,10 € |
@@ -105,14 +107,15 @@ Safespring offers a range of cost-effective virtual machines with varying vCPUs 
 
 
 ### GPU Flavors
-Safespring offers several virtual machine options with GPU, both with and without local storage (NVMe).
+GPU instances are designed for workloads that need compute acceleration, such as AI, machine learning, and data analysis. The range includes flavors with A2 and H100 NVL, with or without local NVMe storage. Learn more about [GPU resources for AI and machine learning](/services/ai-ml/).
 
-| Product ID               | vCPU | RAM (GB) | Local Disk (GB) | GPU (A2) | Per Hour | Per 30 Days |
-|--------------------------|:----:|:--------:|----------------:|:--------:|---------------:|------------------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | 1        |  0,41 €           |  297,71 €      |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | 1        |  0,58 €           |  415,63 €      |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | 1        |  0,34 €           |  247,42 €      |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | 1        |  0,44 €           |  315,06 €      |
+| Product ID               | vCPU | RAM (GB) | Local Disk (GB) | GPU  | Per Hour | Per 30 Days |
+|--------------------------|:----:|:--------:|----------------:|:----:|---------:|------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | A2   | 0,41 €   | 297,71 €    |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | A2   | 0,58 €   | 415,63 €    |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | A2   | 0,34 €   | 247,42 €    |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | A2   | 0,44 €   | 315,06 €    |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      | 0               | H100 NVL | 2,93 €   | 2 138,14 €  |
 
 
 
@@ -213,15 +216,15 @@ Maximize your infrastructure with software optimized to run on Safespring's plat
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU        |        424,17 € |
 
 ### Platform Services
+Safespring Kubernetes Engine (SKE) provides a managed Kubernetes control plane. Safespring also offers managed services for PostgreSQL, MariaDB, Elasticsearch, Redis, and NATS. Services in the table below start at €0.18 per hour.
 
-We offer complete management of your Kubernetes environments, including regulatory compliance, with Compliant Kubernetes. Additionally, Managed Elasticsearch, NATS, MariaDB, and Redis are offered. Request a quote today to access these services!
-
-| Product ID            | Description                                           |         Monthly |
-| --------------------- | ----------------------------------------------------- | --------------: |
-| PAAS-openshift        | No support                                            | Request a quote |
-| PAAS-man.nats         | Managed NATS                                          | Request a quote |
-| PAAS-man.mariadb      | Managed MariaDB                                       | Request a quote |
-| PAAS-man.redis        | Managed Redis                                         | Request a quote |
+| Product ID               | Description           | From per hour |
+|--------------------------|-----------------------|--------------:|
+| PAAS-man.postgresql      | Managed PostgreSQL    |        €0.18  |
+| PAAS-man.mariadb         | Managed MariaDB       |        €0.18  |
+| PAAS-man.elasticsearch   | Managed Elasticsearch |        €0.18  |
+| PAAS-man.redis           | Managed Redis         |        €0.18  |
+| PAAS-man.nats            | Managed NATS          |        €0.18  |
 
 ## Support and Consulting Services
 

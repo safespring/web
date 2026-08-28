@@ -49,6 +49,8 @@ Safespring tar ikke betalt for datatrafikk til eller fra våre tjenester. Trafik
 Safespring Kubernetes Engine gir en administrert kontrollplan for Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
 
+Prisen nedenfor gjelder kontrollplanet. Instansene som brukes som workernoder, kommer i tillegg og faktureres etter den flavoren du velger under Safespring Compute.
+
 | Produkt ID            | Beskrivelse                                      |    Per måned |
 |-----------------------|--------------------------------------------------|-------------:|
 | PAAS-man-controlplane | Administrert kontrollplan                       |     4 900 kr |
@@ -101,14 +103,15 @@ Safespring tilbyr et utvalg kostnadseffektive virtuelle maskiner med variert vCP
 | FLAVOR-b2. c16 r64 |  16  |    64    |               0 |  6,67 kr |     4 800 kr |
 
 ### GPU-varianter
-Safespring tilbyr flere alternativer for virtuelle maskiner med GPU, både med og uten lokal lagring (NVMe).
+GPU-instanser er beregnet for arbeidslaster som trenger beregningsakselerasjon, for eksempel AI, maskinlæring og dataanalyse. Utvalget omfatter flavors med A2 og H100 NVL, med eller uten lokal NVMe-lagring. Les mer om [GPU-ressurser for AI og maskinlæring](/tjenester/ai-ml/).
 
-| Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) | Per time | Per 30 dager |
-|--------------------------|:----:|:--------:|----------------:|:--------:|---------:|-------------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 | 1        | 4,65 kr  | 3 345 kr     |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | 1        | 6,49 kr  | 4 670 kr     |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | 1        | 3,86 kr  | 2 780 kr     |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | 1        | 4,92 kr  | 3 540 kr     |
+| Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU  | Per time | Per 30 dager |
+|--------------------------|:----:|:--------:|----------------:|:----:|---------:|-------------:|
+| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       |             125 | A2   | 4,65 kr  | 3 345 kr     |
+| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       |             250 | A2   | 6,49 kr  | 4 670 kr     |
+| FLAVOR-b2.c4r8.gA2       | 4    | 8        |               0 | A2   | 3,86 kr  | 2 780 kr     |
+| FLAVOR-b2.c8r16.gA2      | 8    | 16       |               0 | A2   | 4,92 kr  | 3 540 kr     |
+| FLAVOR-b2.c32.r192.gH100 | 32   | 192      |               0 | H100 NVL | 32,91 kr | 24 024 kr    |
 
 
 
@@ -208,15 +211,15 @@ Maksimer infrastrukturen din med programvare som kjører optimalt på Safespring
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |  4 766 kr |
 
 ### Plattformtjenester
+Safespring Kubernetes Engine (SKE) gir et administrert kontrollplan for Kubernetes. I tillegg tilbyr Safespring administrerte tjenester for PostgreSQL, MariaDB, Elasticsearch, Redis og NATS. Tjenestene i tabellen nedenfor koster fra 2 kr per time.
 
-Vi tilbyr komplett administrasjon av Kubernetes-miljøene dine, inkludert overholdelse av regler, med Compliant Kubernetes. I tillegg tilbys Managed Elasticsearch, NATS, MariaDB og Redis. Be om tilbud i dag for å få tilgang til disse tjenestene!
-
-| Produkt ID            | Beskrivelse                                           | Per måned |
-| --------------------- | ----------------------------------------------------- | --------: |
-| PAAS-openshift        | Ingen support                                         |    Tilbud |
-| PAAS-man.nats         | Managed NATS                                          |    Tilbud |
-| PAAS-man.mariadb      | Managed MariaDB                                       |    Tilbud |
-| PAAS-man.redis        | Managed Redis                                         |    Tilbud |
+| Produkt ID               | Beskrivelse           | Fra per time |
+|--------------------------|-----------------------|-------------:|
+| PAAS-man.postgresql      | Managed PostgreSQL    |      2,00 kr |
+| PAAS-man.mariadb         | Managed MariaDB       |      2,00 kr |
+| PAAS-man.elasticsearch   | Managed Elasticsearch |      2,00 kr |
+| PAAS-man.redis           | Managed Redis         |      2,00 kr |
+| PAAS-man.nats            | Managed NATS          |      2,00 kr |
 
 ## Støtte og Konsulenttjenester
 

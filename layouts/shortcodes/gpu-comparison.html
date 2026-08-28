@@ -1,3 +1,77 @@
+{{- $language := lower (default "se" .Page.Params.language) -}}
+{{- $copy := dict
+  "comparisonLabel" "Jämförelse mellan NVIDIA A2 och NVIDIA H100 NVL"
+  "memory" "GPU-minne"
+  "a2MemoryLabel" "GPU-minne: 16 GB jämfört med H100 NVL:s 94 GB"
+  "a2MemoryText" "16 GB av 94 GB"
+  "h100MemoryLabel" "GPU-minne: 94 GB jämfört med A2:s 16 GB"
+  "h100MemoryText" "94 GB av 94 GB"
+  "architecture" "Arkitektur"
+  "configurations" "Konfigurationer"
+  "a2Configurations" "4 (b2 och l2)"
+  "h100Configurations" "1 (b2)"
+  "priceFrom" "Pris från"
+  "a2Price" "3,86 kr/timme"
+  "h100Price" "32,91 kr/timme"
+  "powerLimit" "Effektgräns"
+  "upTo400" "Upp till 400 W"
+  "status" "Status"
+  "a2Status" "Aktiveras via supporten"
+  "h100Status" "Tillgänglig på förfrågan"
+  "usage" "Användning"
+  "a2Usage" "Inferens, lättare träning, videokodning"
+  "h100Usage" "Inferens med stora språkmodeller"
+-}}
+{{- if eq $language "en" -}}
+  {{- $copy = dict
+    "comparisonLabel" "Comparison between NVIDIA A2 and NVIDIA H100 NVL"
+    "memory" "GPU memory"
+    "a2MemoryLabel" "GPU memory: 16 GB compared with 94 GB for H100 NVL"
+    "a2MemoryText" "16 GB of 94 GB"
+    "h100MemoryLabel" "GPU memory: 94 GB compared with 16 GB for A2"
+    "h100MemoryText" "94 GB of 94 GB"
+    "architecture" "Architecture"
+    "configurations" "Configurations"
+    "a2Configurations" "4 (b2 and l2)"
+    "h100Configurations" "1 (b2)"
+    "priceFrom" "Price from"
+    "a2Price" "€0.34/hour"
+    "h100Price" "€2.93/hour"
+    "powerLimit" "Power limit"
+    "upTo400" "Up to 400 W"
+    "status" "Status"
+    "a2Status" "Enabled through support"
+    "h100Status" "Available on request"
+    "usage" "Use cases"
+    "a2Usage" "Inference, light training, video encoding"
+    "h100Usage" "Inference with large language models"
+  -}}
+{{- else if eq $language "no" -}}
+  {{- $copy = dict
+    "comparisonLabel" "Sammenligning mellom NVIDIA A2 og NVIDIA H100 NVL"
+    "memory" "GPU-minne"
+    "a2MemoryLabel" "GPU-minne: 16 GB sammenlignet med 94 GB for H100 NVL"
+    "a2MemoryText" "16 GB av 94 GB"
+    "h100MemoryLabel" "GPU-minne: 94 GB sammenlignet med 16 GB for A2"
+    "h100MemoryText" "94 GB av 94 GB"
+    "architecture" "Arkitektur"
+    "configurations" "Konfigurasjoner"
+    "a2Configurations" "4 (b2 og l2)"
+    "h100Configurations" "1 (b2)"
+    "priceFrom" "Pris fra"
+    "a2Price" "3,86 kr/time"
+    "h100Price" "32,91 kr/time"
+    "powerLimit" "Effektgrense"
+    "upTo400" "Opptil 400 W"
+    "status" "Status"
+    "a2Status" "Aktiveres via support"
+    "h100Status" "Tilgjengelig på forespørsel"
+    "usage" "Bruksområder"
+    "a2Usage" "Inferens, lettere trening, videokoding"
+    "h100Usage" "Inferens med store språkmodeller"
+  -}}
+{{- end -}}
+
 <style>
   .gpu-comparison {
     --gpu-blue: #195f8c;
@@ -253,7 +327,7 @@
   }
 </style>
 
-<section class="gpu-comparison" aria-label="Jämförelse mellan NVIDIA A2 och NVIDIA H100 NVL">
+<section class="gpu-comparison" aria-label="{{ index $copy "comparisonLabel" }}">
   <div class="gpu-comparison__cards">
     <article class="gpu-comparison__card" aria-labelledby="gpu-a2-title">
       <header class="gpu-comparison__header">
@@ -265,33 +339,33 @@
       </header>
 
       <div class="gpu-comparison__body">
-        <p class="gpu-comparison__eyebrow">GPU-minne</p>
+        <p class="gpu-comparison__eyebrow">{{ index $copy "memory" }}</p>
         <p class="gpu-comparison__memory">
           <data value="16">16 GB</data>
           <span>GDDR6</span>
         </p>
-        <div class="gpu-comparison__bar" role="progressbar" aria-label="GPU-minne: 16 GB jämfört med H100 NVL:s 94 GB" aria-valuemin="0" aria-valuemax="94" aria-valuenow="16" aria-valuetext="16 GB av 94 GB">
+        <div class="gpu-comparison__bar" role="progressbar" aria-label="{{ index $copy "a2MemoryLabel" }}" aria-valuemin="0" aria-valuemax="94" aria-valuenow="16" aria-valuetext="{{ index $copy "a2MemoryText" }}">
           <span class="gpu-comparison__bar-fill"></span>
         </div>
 
         <dl class="gpu-comparison__facts">
-          <dt>Arkitektur</dt>
+          <dt>{{ index $copy "architecture" }}</dt>
           <dd class="gpu-comparison__value">Ampere</dd>
 
-          <dt>Konfigurationer</dt>
-          <dd class="gpu-comparison__value gpu-comparison__tech">4 (b2 och l2)</dd>
+          <dt>{{ index $copy "configurations" }}</dt>
+          <dd class="gpu-comparison__value gpu-comparison__tech">{{ index $copy "a2Configurations" }}</dd>
 
-          <dt>Pris från</dt>
-          <dd class="gpu-comparison__value gpu-comparison__tech">3,86 kr/timme</dd>
+          <dt>{{ index $copy "priceFrom" }}</dt>
+          <dd class="gpu-comparison__value gpu-comparison__tech">{{ index $copy "a2Price" }}</dd>
 
-          <dt>Effektgräns</dt>
+          <dt>{{ index $copy "powerLimit" }}</dt>
           <dd class="gpu-comparison__value gpu-comparison__tech">60 W</dd>
 
-          <dt>Status</dt>
-          <dd class="gpu-comparison__value">Aktiveras via supporten</dd>
+          <dt>{{ index $copy "status" }}</dt>
+          <dd class="gpu-comparison__value">{{ index $copy "a2Status" }}</dd>
 
-          <dt>Användning</dt>
-          <dd>Inferens, lättare träning, videokodning</dd>
+          <dt>{{ index $copy "usage" }}</dt>
+          <dd>{{ index $copy "a2Usage" }}</dd>
         </dl>
       </div>
     </article>
@@ -306,33 +380,33 @@
       </header>
 
       <div class="gpu-comparison__body">
-        <p class="gpu-comparison__eyebrow">GPU-minne</p>
+        <p class="gpu-comparison__eyebrow">{{ index $copy "memory" }}</p>
         <p class="gpu-comparison__memory">
           <data value="94">94 GB</data>
           <span>HBM3</span>
         </p>
-        <div class="gpu-comparison__bar" role="progressbar" aria-label="GPU-minne: 94 GB jämfört med A2:s 16 GB" aria-valuemin="0" aria-valuemax="94" aria-valuenow="94" aria-valuetext="94 GB av 94 GB">
+        <div class="gpu-comparison__bar" role="progressbar" aria-label="{{ index $copy "h100MemoryLabel" }}" aria-valuemin="0" aria-valuemax="94" aria-valuenow="94" aria-valuetext="{{ index $copy "h100MemoryText" }}">
           <span class="gpu-comparison__bar-fill gpu-comparison__bar-fill--full"></span>
         </div>
 
         <dl class="gpu-comparison__facts">
-          <dt>Arkitektur</dt>
+          <dt>{{ index $copy "architecture" }}</dt>
           <dd class="gpu-comparison__value">Hopper</dd>
 
-          <dt>Konfigurationer</dt>
-          <dd class="gpu-comparison__value gpu-comparison__tech">1 (b2)</dd>
+          <dt>{{ index $copy "configurations" }}</dt>
+          <dd class="gpu-comparison__value gpu-comparison__tech">{{ index $copy "h100Configurations" }}</dd>
 
-          <dt>Pris från</dt>
-          <dd class="gpu-comparison__value gpu-comparison__tech">32,91 kr/timme</dd>
+          <dt>{{ index $copy "priceFrom" }}</dt>
+          <dd class="gpu-comparison__value gpu-comparison__tech">{{ index $copy "h100Price" }}</dd>
 
-          <dt>Effektgräns</dt>
-          <dd class="gpu-comparison__value gpu-comparison__tech">Upp till 400 W</dd>
+          <dt>{{ index $copy "powerLimit" }}</dt>
+          <dd class="gpu-comparison__value gpu-comparison__tech">{{ index $copy "upTo400" }}</dd>
 
-          <dt>Status</dt>
-          <dd class="gpu-comparison__value gpu-comparison__value--request">Tillgänglig på förfrågan</dd>
+          <dt>{{ index $copy "status" }}</dt>
+          <dd class="gpu-comparison__value gpu-comparison__value--request">{{ index $copy "h100Status" }}</dd>
 
-          <dt>Användning</dt>
-          <dd>Inferens med stora språkmodeller</dd>
+          <dt>{{ index $copy "usage" }}</dt>
+          <dd>{{ index $copy "h100Usage" }}</dd>
         </dl>
       </div>
     </article>
