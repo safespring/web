@@ -52,7 +52,7 @@ Safespring does not charge any traffic cost for data sent to or from our service
 Safespring Kubernetes Engine provides a managed Kubernetes control plane on Safespring infrastructure.
 {{< /ingress >}}
 
-The price below covers the control plane. Instances used as worker nodes are additional and are billed according to the flavor you choose under Safespring Compute.
+The price below covers Safespring's management of the control plane. Compute instances for control-plane and worker nodes are additional and are billed according to the selected flavors.
 
 | Product ID            | Description                                      |   Per month |
 |-----------------------|--------------------------------------------------|------------:|
@@ -216,7 +216,7 @@ Maximize your infrastructure with software optimized to run on Safespring's plat
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU        |        424,17 € |
 
 ### Platform Services
-Safespring's partner provides database as a service for PostgreSQL, MariaDB, and Redis. Managed services are also available for Elasticsearch and NATS. The services run on Safespring infrastructure and start at €0.18 per hour.
+Safespring's partner provides [database as a service](/en/services/database-as-a-service/) for PostgreSQL, MariaDB, and Redis. Managed services are also available for Elasticsearch and NATS. The services run on Safespring infrastructure and start at €0.18 per hour.
 
 | Product ID               | Description           | From per hour |
 |--------------------------|-----------------------|--------------:|

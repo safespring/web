@@ -39,7 +39,7 @@ Safespring tar inte ut någon trafikkostnad för den data som skickas till eller
 Safespring Kubernetes Engine ger en hanterad kontrollplan för Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
 
-Priset nedan gäller kontrollplanet. Instanserna som används som worker-noder tillkommer och debiteras enligt den flavor du väljer under Safespring Compute.
+Priset nedan gäller Safesprings hantering av kontrollplanet. Compute-instanserna för kontrollplansnoder och worker-noder tillkommer och debiteras enligt valda flavors.
 
 | Produkt ID            | Beskrivning                                      |    Per månad |
 |-----------------------|--------------------------------------------------|-------------:|
@@ -201,7 +201,7 @@ Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattf
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |     4 766 kr |
 
 ### Plattformstjänster
-Safesprings partner erbjuder databas som tjänst för PostgreSQL, MariaDB och Redis. Därutöver finns managerade tjänster för Elasticsearch och NATS. Tjänsterna körs på Safesprings infrastruktur och kostar från 2 kr per timme.
+Safesprings partner erbjuder [databas som tjänst](/tjanster/database-as-a-service/) för PostgreSQL, MariaDB och Redis. Därutöver finns managerade tjänster för Elasticsearch och NATS. Tjänsterna körs på Safesprings infrastruktur och kostar från 2 kr per timme.
 
 | Produkt ID               | Beskrivning           | Från per timme |
 |--------------------------|-----------------------|---------------:|
