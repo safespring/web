@@ -31,15 +31,15 @@ Safespring tar inte ut någon trafikkostnad för den data som skickas till eller
 ## Safespring Kubernetes Engine
 
 {{< ingress >}}
-Safespring Kubernetes Engine ger ett managerat kontrollplan för Kubernetes på Safesprings infrastruktur.
+Safespring Kubernetes Engine ger ett hanterat kontrollplan för Kubernetes på Safesprings infrastruktur.
 {{< /ingress >}}
 
 Priset nedan gäller Safesprings hantering av kontrollplanet. Compute-instanserna för kontrollplansnoder och worker-noder tillkommer och debiteras enligt valda flavors.
 
 | Produkt ID            | Beskrivning                                      |    Per månad |
 |-----------------------|--------------------------------------------------|-------------:|
-| PAAS-man-controlplane | Managerat kontrollplan                          |     4 900 kr |
-| PAAS-controlplane     | Omanagerat kontrollplan                         |      0,00 kr |
+| PAAS-man-controlplane | Hanterat kontrollplan                           |     4 900 kr |
+| PAAS-controlplane     | Ohanterat kontrollplan                          |      0,00 kr |
 
 {{< distance >}}
 
