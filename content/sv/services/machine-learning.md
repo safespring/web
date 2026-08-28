@@ -1,6 +1,6 @@
 ---
 title: "GPU-resurser för AI och maskininlärning"
-metatitle: "GPU-instanser för AI och maskininlärning | Safespring"
+metatitle: "GPU-instanser för AI och maskininlärning"
 section: "Public Cloud"
 language: "sv"
 cardtitle: "GPU för AI och ML"
@@ -79,7 +79,7 @@ Läs teknisk dokumentation om GPU-instanser, en praktisk guide till att köra en
     title="Kör en lokal språkmodell med Ollama"
     href="/blogg/2025/2025-12-run-llm-in-safespring-container-platform/"
     icon="fa-solid fa-terminal"
-    label="Engelsk blogg"
+    label="Blogg"
     description="Installera NVIDIA-drivrutiner, Ollama och Open-WebUI på en GPU-instans som kör Ubuntu."
   >}}
   {{< manual-document-row
