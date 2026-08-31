@@ -1,86 +1,104 @@
 ---
-title: "Federated AI with FEDn on Safespring"
-toplogo: "safespring_partners_scaleout-systems.svg"
-section: ""
+title: "GPU resources for AI and machine learning"
+metatitle: "GPU instances for AI and machine learning"
+section: "Public Cloud"
 language: "En"
-cardtitle: "AI & ML"
+cardtitle: "GPU for AI and ML"
+megamenulisttitle: "GPU (AI/ML)"
 cardicon: "fa-solid fa-microchip-ai"
 cardcolor: "#195F8C"
 cardorder: "2"
 date: 2025-03-13
 draft: false
-intro: "Harness federated machine learning securely with FEDn on Safespring's GDPR-compliant cloud infrastructure."
-cardintro: "Harness federated machine learning securely with FEDn on Safespring"
+intro: "Run inference, model training, video encoding, and other GPU-accelerated workloads on Safespring's cloud infrastructure."
+cardintro: "GPU instances with A2 and H100 NVL for compute-intensive workloads."
 form: ""
 background: "safespring-ai-background.svg"
-sidebarlinkname: "Watch demo"
-sidebarlinkurl: "/demo/compute/"
+sidebarlinkname: "View prices"
+sidebarlinkurl: "/en/price/#gpu-flavors"
 sidebarlinkname2: "Contact Safespring"
 sidebarlinkurl2: "/en/contact"
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Would you like to discuss GPU resources? My name is Fredric Wallsten. Feel free to contact me if you have any questions."
+sidebarphone: "+46855107370"
+sidebarmail: "hello@safespring.com"
 socialmedia: ""
 ---
 
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-cloud" text="Cloud-based Integration" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-users-cog" text="Collaborative Environment" link="" color="#195F8C">}}
-    {{< icon-block icon="fa-solid fa-lock" text="Data Privacy and Security" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-network-wired" text="Federated Learning" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-brain" text="Advanced Machine Learning" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring Infrastructure" link="" color="#3C9BCD">}}
-{{< /icon-block-container >}}
-
-## Scale Securely with FEDn on Safespring
+## GPU instances in Safespring Compute
 
 {{< ingress >}}
-Unlock the power of federated learning to develop robust AI models without compromising data privacy. Scale seamlessly with FEDn, powered securely by Safespring's infrastructure.
+Safespring Compute provides GPU flavors for inference, model training, video encoding, and running large language models.
 {{< /ingress >}}
 
+GPU resources are provided as flavors, which are predefined resource profiles. Each GPU flavor has a fixed combination of GPU, vCPU, and RAM. Flavors in the l2 series also include local storage. Current configurations and prices are listed on the price page.
 
-FEDn is an enterprise-ready, open-source federated learning framework from Scaleout Systems, designed to allow collaborative machine learning training while fully respecting data privacy and GDPR compliance. Safespring provides the secure, resilient infrastructure necessary for deploying and scaling FEDn, ensuring your AI initiatives remain compliant, secure, and efficient.
+A2 is suitable for inference, lighter training, and video encoding. A2 flavors are available in STO2 and are enabled for the project through support. H100 NVL is available in STO1 on request and is optimized for inference with large language models. The card has 94 GB of HBM3 memory, PCIe 5.0 x16, and passive cooling.
 
-By leveraging Safespring’s secure cloud platform combined with FEDn's powerful federated learning capabilities, your organization can:
-
-- Maintain data privacy with local data training.
-- Scale from pilot projects to full production seamlessly.
-- Ensure full GDPR and data protection compliance.
-- Easily integrate with existing ML workflows.
+{{< gpu-comparison >}}
 
 {{< distance >}}
 
-{{< horisontal-card 
-    image="/img/card/safespring-scaleut_use-case-ebba.webp" 
-    cardtitle="Ebba from Scaleout shares insights on the importance of managing sensitive data" 
-    link="/en/services/case/scaleout/" 
-    linktext="Read Use Case" 
-    text="“Since machine learning involves sensitive data, secure management and relying on trusted infrastructure like Safespring's becomes critical.”" >}}
+## Choose between local and central storage
+
+l2 flavors include local NVMe storage on the compute node. The root disk follows the instance lifecycle and is deleted with the instance. Safespring cannot restore the data if the local disk fails. Use l2 for stateless or short-lived workloads, or make sure that the data is backed up.
+
+b2 flavors do not include a local disk and boot from a persistent volume in central block storage. The volume remains independently of the instance and can be either `fast` or `large`.
 
 {{< distance >}}
 
-## Frequently Asked Questions (FAQ)
+## GPU nodes for Kubernetes
 
-{{% question question="What is federated learning, and why is it important?" %}}
-Federated learning enables machine learning models to train on decentralized datasets without transferring raw data, ensuring privacy and compliance, crucial for sensitive sectors like healthcare, finance, and public administration.
-{{% /question %}}
-
-{{% question question="How does FEDn ensure GDPR compliance?" %}}
-FEDn allows models to be trained locally on client-side data, sending only encrypted model parameters back to the central aggregator. This prevents raw data transfer, ensuring full GDPR compliance.
-{{% /question %}}
-
-{{% question question="Can FEDn integrate with existing AI frameworks?" %}}
-Yes, FEDn supports popular machine learning frameworks including TensorFlow, PyTorch, Keras, Hugging Face, and scikit-learn, enabling seamless integration into your existing AI development processes.
-{{% /question %}}
-
-{{< accordion-script >}}
+GPU support in Safespring Kubernetes Engine is available in STO2 for worker nodes using A2 flavors whose names end in `gA2`. The documented SKE support does not include H100 NVL. The managed control plane and the Compute instances used as worker nodes are billed separately.
 
 {{< distance >}}
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-network-wired" text="Distributed & Scalable" description="FEDn's hierarchical design with multiple aggregation servers ensures efficient workload distribution and scalability, supporting thousands of clients seamlessly." >}}
+## GPU and machine learning documentation and examples
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-chart-line" text="Real-Time Monitoring & Analytics" description="Benefit from built-in real-time monitoring, analytics, and system recovery, enhancing operational reliability and visibility into your federated experiments." >}}
+Explore technical documentation for GPU instances, a practical guide to running a local language model, and an example of machine learning on Safespring's infrastructure.
 
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-plug" text="Seamless Integration" description="Easily integrate FEDn with popular AI frameworks like TensorFlow and PyTorch, and deploy flexibly across Safespring's secure cloud infrastructure." >}}
+{{< manual-document-table matomoAction="GPU Resources Deep Dive" >}}
+  {{< manual-document-row
+    title="A2 flavors in Safespring Compute"
+    href="https://docs.safespring.com/compute/gpu/"
+    icon="fa-solid fa-microchip"
+    label="Docs"
+    description="NVIDIA A2, flavor naming, restrictions, and NVIDIA driver installation."
+  >}}
+  {{< manual-document-row
+    title="Run GPU workloads in Kubernetes"
+    href="https://docs.safespring.com/kubernetes/gpu/"
+    icon="fa-solid fa-dharmachakra"
+    label="Guide"
+    description="Verify the NVIDIA runtime and run GPU jobs and vLLM inference in Safespring Kubernetes Engine."
+  >}}
+  {{< manual-document-row
+    title="Run a local language model with Ollama"
+    href="/blogg/2025/2025-12-run-llm-in-safespring-container-platform/"
+    icon="fa-solid fa-terminal"
+    label="Blog"
+    description="Install NVIDIA drivers, Ollama, and Open-WebUI on an Ubuntu GPU instance."
+  >}}
+  {{< manual-document-row
+    title="Choose storage for the GPU instance"
+    href="https://docs.safespring.com/compute/volume/"
+    icon="fa-solid fa-hard-drive"
+    label="Guide"
+    description="Compare local storage with persistent volumes and learn about the fast and large volume types."
+  >}}
+  {{< manual-document-row
+    title="Federated machine learning with Scaleout"
+    href="/en/services/case/scaleout/"
+    icon="fa-solid fa-people-group"
+    label="Case study"
+    description="Scaleout discusses federated machine learning, data protection, and its work on Safespring's infrastructure."
+  >}}
+{{< /manual-document-table >}}
 
 {{< distance >}}
 
+## Configurations and prices
 
+The [GPU instance price list](/en/price/#gpu-flavors) contains current configurations with vCPU, RAM, local storage, GPU model, and prices per hour and per 30 days.
 
+If you are unsure which flavor or storage option fits your workload, [contact Safespring](/en/contact) to discuss your requirements.

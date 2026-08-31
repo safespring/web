@@ -45,8 +45,15 @@ toc: "På denne siden"
     description="Det juridiske grunnlaget. Beskriver rammene for kundeforholdet, inkludert ansvar, leveransevilkår, begrensninger og hvordan tjenesten styres."
   >}}
   {{< manual-document-row
-    title="Privacy Policy"
+    title="Privacy Policy (Services and Authorized Users)"
     href="/compliance/privacy_policy/"
+    icon="fa-solid fa-file-lines"
+    label="Dokument"
+    description="Om dine data. Beskriver hvilke personopplysninger vi samler inn, hvorfor vi gjør det, hvor lenge de lagres og hvilke rettigheter du har."
+  >}}
+  {{< manual-document-row
+    title="Privacy Policy (Web and Recruitment)"
+    href="/compliance/privacy_policy_web_recruitment/"
     icon="fa-solid fa-file-lines"
     label="Dokument"
     description="Om dine data. Beskriver hvilke personopplysninger vi samler inn, hvorfor vi gjør det, hvor lenge de lagres og hvilke rettigheter du har."
