@@ -24,7 +24,7 @@ aliases:
 {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" linkref="/whitepaper/schrems-ii.md" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="GDPR Webcast-serie" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-database" text="Om våre datasentre" linkref="/data-centers.md" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-user-shield" text="Behandling av person­opplysninger" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-shield" text="Behandling av person­opplysninger" linkref="/compliance/privacy_policy_web_recruitment.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Eksterne databeskyttelsestiltak

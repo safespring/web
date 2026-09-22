@@ -58,7 +58,7 @@ Du har en rätt att göra invändningar mot vår behandling av dina uppgifter oc
 
 ### Särskild information om webbkakor
 
-Vi har särskild information om webbkakor på den här [sidan om cookies](/dokument/om-webbplatsen/).
+Vi har särskild information om webbkakor på den här [sidan om cookies](/compliance/privacy_policy_web_recruitment/).
 
 {{% note "personuppgifts­biträdesavtal" %}}
 För mer information om vårt personuppgiftsbiträdesavtal, ta kontakt med din kundkontakt.

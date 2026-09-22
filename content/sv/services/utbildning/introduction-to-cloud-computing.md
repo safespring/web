@@ -126,7 +126,7 @@ Meddela oss att du är intresserad av kursen ”Introduction to Cloud Computing�
 	<input type="hidden" value="" name="validation">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>Genom att skicka in formuläret godkänner du våra <a href="{{% relref "/compliance/privacy_policy.md" %}}" target="_blank">villkor</a> (på svenska).</p>
+	<p>Genom att skicka in formuläret godkänner du våra <a href="{{% relref "/compliance/privacy_policy_web_recruitment.md" %}}" target="_blank">villkor</a> (på engelska).</p>
 	<button type="submit" class="button">Skicka intresseanmälan</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

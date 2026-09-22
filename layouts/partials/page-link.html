@@ -1,0 +1,15 @@
+{{- $page := .page -}}
+{{- $href := $page.RelPermalink -}}
+{{- if .absolute -}}
+  {{- $href = $page.Permalink -}}
+{{- end -}}
+{{- if and (eq $page.Section "documents") $page.File -}}
+  {{- if in (slice "cookies" "personal-data-processing" "personuppgiftshantering-en-v2") $page.File.TranslationBaseName -}}
+    {{- if .absolute -}}
+      {{- $href = ref $page "/compliance/privacy_policy_web_recruitment.md" -}}
+    {{- else -}}
+      {{- $href = relref $page "/compliance/privacy_policy_web_recruitment.md" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $href -}}

@@ -19,7 +19,7 @@
   <div class="ai-disclaimer-panel" id="{{ $id }}-panel" role="region">
     <div class="ai-disclaimer-panel__inner">
       <p>{{ T "ai_disclaimer.source" (dict "Language" $originalLangName) }}</p>
-      <a href="{{ $original.Permalink }}">{{ T "ai_disclaimer.read_original" }}</a>
+      <a href="{{ partial "page-link.html" (dict "page" $original "absolute" true) }}">{{ T "ai_disclaimer.read_original" }}</a>
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<a href="{{ .RelPermalink }}">
+<a href="{{ partial "page-link.html" (dict "page" .) }}">
   {{ $section := .Section }}
   {{ $sectionParam := lower (default "" .Params.section) }}
   {{ if or (eq $section "tech-update") (in $sectionParam "tech update") (in $sectionParam "tekn") }}

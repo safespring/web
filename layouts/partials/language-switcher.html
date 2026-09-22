@@ -17,7 +17,7 @@
 <!-- Other languages -->
 {{ range .Translations }}
   <a
-    href="{{ .Permalink }}"
+    href="{{ partial "page-link.html" (dict "page" . "absolute" true) }}"
     title="{{ .Language.Label }}"
     aria-label="{{ .Language.Label }}"
     hreflang="{{ .Language.Locale }}"

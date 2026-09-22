@@ -455,7 +455,7 @@
               class="mobile-language-link{{ if eq $languageName $.Language.Name }}
                 active
               {{ end }}"
-              href="{{ $target.Permalink }}"
+              href="{{ partial "page-link.html" (dict "page" $target "absolute" true) }}"
               lang="{{ $language.Locale }}"
               hreflang="{{ $language.Locale }}"
               aria-label="{{ $language.Label }}"

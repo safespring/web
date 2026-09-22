@@ -60,24 +60,8 @@ function scheduleConsentSync() {
   window.setTimeout(syncAllCategories, 1000);
 }
 
-function findCookiePolicyUrl(button) {
-  var scope = button && button.closest ? button.closest('.safespring-footer-information-menu') : null;
-  var cookieLink = scope ? scope.querySelector('a[href*="cookies"], a[href*="cookie"], a[href*="webbplats"], a[href*="nettsted"], a[href*="websted"]') : null;
-  if (cookieLink && cookieLink.href) {
-    return cookieLink.href;
-  }
-
-  var lang = (document.documentElement.lang || '').toLowerCase();
-  if (lang === 'sv') {
-    return '/dokument/om-webbplatsen/';
-  }
-  if (lang === 'nb' || lang === 'no' || lang === 'nn') {
-    return '/dokumenter/om-nettstedet/';
-  }
-  if (lang === 'da') {
-    return '/dokumenter/om-webstedet/';
-  }
-  return '/documents/about-the-website/';
+function findCookiePolicyUrl() {
+  return "/compliance/privacy_policy_web_recruitment/";
 }
 
 function openCookieSettings(event) {

@@ -25,7 +25,7 @@ aliases:
 {{< icon-block icon="fa-solid fa-file-alt" text="White Paper om adekvansbeslutet" link="/vitbok/laget-efter-eu-us-data-protection-framework-dpf/" color="#32cd32">}}
 {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
 {{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" linkref="/data-centers.md" color="#3C9BCD">}}
-{{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" linkref="/compliance/privacy_policy.md" color="#3C9BCD">}}
+{{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" linkref="/compliance/privacy_policy_web_recruitment.md" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 ## Externa dataskyddsåtgärder {#externa-dataskyddsatgarder}

@@ -118,7 +118,7 @@ Giv os besked om, at du er interesseret i kurset "Introduktion til “Infrastruc
 	<input type="hidden" value="" name="validation">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>Ved at indsende denne formular accepterer du vores <a href="{{% relref "/compliance/privacy_policy.md" %}}" target="_blank">vilkår og betingelser</a> (svensk).</p>
+	<p>Ved at indsende denne formular accepterer du vores <a href="{{% relref "/compliance/privacy_policy_web_recruitment.md" %}}" target="_blank">vilkår og betingelser</a> (engelsk).</p>
 	<button type="submit" class="button">Send forespørgsel</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>
