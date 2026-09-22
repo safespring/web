@@ -109,7 +109,7 @@ Let us know that you're interested in the course "Introduction to “Infrastruct
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>By submitting this form you agree to our <a href="/dokument/personuppgiftshantering/" target="_blank">terms and conditions</a> (Swedish).</p>
+	<p>By submitting this form you agree to our <a href="/compliance/privacy_policy_web_recruitment/" target="_blank">terms and conditions</a> (English).</p>
 	<button type="submit" class="button">Send request</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>

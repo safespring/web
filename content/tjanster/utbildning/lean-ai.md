@@ -69,7 +69,7 @@ Skicka in en förfrågan så ta vi kontakt med er och sätter ihop ett program s
 	<input type="text" value="" name="validation" style="display: none;">
 	<!-- END OF REQUIRED FIELDS -->
   <br>
-	<p>Genom att skicka in förfrågan så godkänner du Safesprings <a href="/dokument/personuppgiftshantering/" target="_blank">villkor</a>.</p>
+	<p>Genom att skicka in förfrågan så godkänner du Safesprings <a href="/compliance/privacy_policy_web_recruitment/" target="_blank">villkor</a>.</p>
 	<button type="submit" class="button">Send request</button>
 </form>
 <script>(function(){var form = document.getElementById("up-form");if(form) {form.addEventListener("submit", function(ev) {var button = ev.target.querySelector("button[type=submit]");if(button) {button.disabled = true;}});}})();</script>
