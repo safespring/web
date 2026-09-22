@@ -318,7 +318,8 @@ body {
   margin-top: 2mm;
 }
 
-.contact-link i {
+.contact-link i,
+.contact-link svg {
   display: none;
 }
 

@@ -912,7 +912,8 @@ a.text-button {
 /* MOBILE TOC BUTTON */
 
 .mobile-toc .fa-icon {
-  margin-right: 10px;
+  flex: 0 0 auto;
+  margin-right: 0;
 }
 
 /* Döljer innehållsförteckningen på mindre skärmar */
@@ -1055,19 +1056,38 @@ html.toc-overlay-active body::before {
   }
 
   .mobile-toc--inline {
+    appearance: none;
     align-items: center;
+    background: rgba(250, 254, 254, 0.96);
+    border: 1px solid rgba(25, 95, 140, 0.2);
+    border-radius: 999px;
+    color: var(--main-color);
     display: inline-flex;
+    font: 600 0.9rem/1 var(--hind-font);
+    gap: 0.65rem;
     justify-content: center;
     bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
     left: 50%;
     margin: 0;
     max-width: calc(100vw - 2rem);
+    min-height: 48px;
+    padding: 0.75rem 1.1rem;
     position: fixed;
+    text-transform: none;
     top: auto;
+    touch-action: manipulation;
     transform: translateX(-50%);
     width: fit-content;
-    box-shadow: 0 8px 22px rgba(25, 95, 140, 0.14);
+    white-space: nowrap;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(15, 54, 80, 0.16);
     z-index: 1002;
+  }
+
+  .mobile-toc--inline:focus-visible {
+    outline: 3px solid rgba(25, 95, 140, 0.32);
+    outline-offset: 3px;
   }
 
   .mobile-toc--inline.expanded {
