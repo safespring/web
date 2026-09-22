@@ -23,7 +23,7 @@ TOC: "På denne siden"
     {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="GDPR Webcast-serie" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-database" text="Om våre datasentre" link="/no/datasenter/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-shield" text="Behandling av person­opplysninger" link="/dokument/personuppgiftshantering-no/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-shield" text="Behandling av person­opplysninger" link="/compliance/privacy_policy_web_recruitment/" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 

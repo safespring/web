@@ -23,7 +23,7 @@ TOC: "On this page"
     {{< icon-block icon="fa-solid fa-file-alt" text="Schrems II White Paper" link="/whitepaper/schrems-ii/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="GDPR Webcast Series" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-database" text="About Our Data Centers" link="/en/data-centers/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-shield" text="Personal Data Processing" link="/dokument/personuppgiftshantering-en/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-shield" text="Personal Data Processing" link="/compliance/privacy_policy_web_recruitment/" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 

@@ -1,4 +1,8 @@
-<a href="{{ .RelPermalink }}">
+{{- $href := .RelPermalink -}}
+{{- if findRE `^/dokument/(personuppgiftshantering|cookies)(-en|-no|-en-v2)?/$` $href -}}
+  {{- $href = "/compliance/privacy_policy_web_recruitment/" -}}
+{{- end -}}
+<a href="{{ $href }}">
   <div class='fill-available-space img-250 pointer {{ if eq .Section "webinar" }}blue-hover-webinar flex-center{{ else }}{{ if eq .Section "solution-brief" }}blue-hover-whitepaper flex-center{{ else }}{{ if eq .Params.section "Tech update" }}bg-blue-white-fade blue-hover-tech tech-card-flex{{ else }}blue-hover-blogg flex-center{{ end }}{{ end }}{{ end }}'>
     {{ if eq .Params.section "blogg" }}
     <img class="lazyload" loading="lazy" src="{{ if.Params.card }}/img/blogg/cards/{{ .Params.card }}{{ else }}/img/blogg/cards/safespring_card_0.webp{{ end }}" alt="{{ .Title }}">

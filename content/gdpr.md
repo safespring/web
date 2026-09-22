@@ -24,7 +24,7 @@ TOC: "På denna sida"
     {{< icon-block icon="fa-solid fa-file-alt" text="White Paper om adekvansbeslutet" link="/whitepaper/eu-us-dpf/" color="#32cd32">}}
     {{< icon-block icon="fa-solid fa-video" text="Webcastserie om GDPR" link="/webinar/gdpr-fireside-chat/" color="#195F8C">}}
     {{< icon-block icon="fa-solid fa-database" text="Om våra datacenter" link="/om-safespring/datacenter/" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" link="/dokument/personuppgiftshantering/" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-user-shield" text="Personuppgifts-behandling" link="/compliance/privacy_policy_web_recruitment/" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 
