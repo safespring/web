@@ -11,7 +11,7 @@ socialmedia: "safespring_social_42.gif"
 dokumentbild: "safespring_card_42.jpg"
 sidebarlinkname: "Ladda ner som PDF"
 sidebarlinkicon: "fa-file-download"
-sidebarlinkurl: "/documents/sunet/safespring_solution-brief_sunet-drive.pdf"
+sidebarlinkurl: "/documents/archive/sunet/safespring-solution-brief-sunet-drive-2021.pdf"
 noindex: true
 toc: "Innehållsförteckning"
 aliases:

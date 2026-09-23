@@ -1,8 +1,8 @@
 ---
-title: "Configure Zitadel OIDC for the Talos Kubernetes API Server"
-metatitle: "Zitadel OIDC for Talos Kubernetes API Server"
+title: "ZITADEL OIDC for Talos Kubernetes: Setup Guide"
+metatitle: "ZITADEL OIDC for Talos Kubernetes: Setup Guide"
 date: 2025-10-03
-intro: "Configure OIDC login for Talos Kubernetes clusters with Zitadel, kubelogin and Kubernetes RBAC so platform teams can centralize access control."
+intro: "Configure ZITADEL OIDC for a Talos Kubernetes API server with kubelogin, project roles and RBAC. Includes tested browser and device-code flows."
 draft: false
 tags: ["container"]
 showthedate: true

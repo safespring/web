@@ -33,9 +33,7 @@ Bygg opp ditt nåværende miljø for å se hvor mye du sparer ved å flytte til 
 Se våre priser lenger ned på denne siden eller last ned pris-kalkulatoren til din datamaskin. Kalkulatoren er en Excel-fil med innebygd logikk for å beregne månedskostnaden basert på dine valg.
 {{< /ingress >}}
 
-Det er mange fordeler med infrastruktur som en tjeneste. I tillegg til økt ytelse til lavere kostnader, unngår du å investere i ny maskinvare og betaler kun for de ressursene du tildeler.
-
-Last ned vår pris-kalkulator og bygg opp din nåværende miljø for å se hvor mye du kan spare ved å flytte til Safespring. Prisen inkluderer høy sikkerhet både fysisk, logisk og juridisk. Du får også 24/7 support og tilgang til vår selvbetjeningssportal der du kan administrere dine instanser etter behov.
+Prisen inkluderer høy sikkerhet, både fysisk, logisk og juridisk. Du får også 24/7 support og tilgang til selvbetjeningsportalen vår, der du kan administrere instansene dine etter behov.
 
 ## Ingen trafikkostnad
 
@@ -66,7 +64,7 @@ En "Flavor" er en forhåndskonfigurert instans av en virtuell maskin med en spes
 
 ### Flavors med lokal NVMe-disk
 
-Oppdag vårt utvalg av kraftige virtuelle servere med opptil 32 vCPU og 64 GB RAM, med NVMe-lagring opptil 1 000 GB - priset fra kun 0,67 kr per time eller 480 kr per 30 dager!
+Flavors med lokal NVMe-disk kombinerer 2–32 vCPU og 4–64 GB RAM med 100–1 000 GB lokal lagring. Prisene starter på 0,67 kr per time eller 480 kr per 30 dager.
 
 | Produkt ID               | vCPU | RAM (GB) | Lokal disk (GB) | Per time | Per 30 dager |
 | ------------------------ | :--: | :------: | --------------: | -------: | -----------: |
@@ -249,17 +247,6 @@ Få tilgang til våre erfarne konsulenter og prosjektledere for å optimalisere 
 | PS-cloudarch.sen | Cloud Infrastructure Architect Consultant, senior expertise level | Timme          |     | 1 374 kr |
 | PS-pm.jun        | Project Manager, junior expertise level                           | Timme          |     | 1 139 kr |
 | PS-pm.sen        | Project Manager, senior expertise level                           | Timme          |     | 1 374 kr |
-
-### Opplæring
-
-Lær alt om moderne IT-tjenester med Safesprings kurspakke, inkludert introduksjoner til "infrastruktur som en tjeneste" og skyinfrastrukturteknologi, samt dypdykkende kurs om skystrategi og moderne DevOps med "microservices". Be om tilbud i dag for å ta virksomheten din til neste nivå!
-
-| Produkt ID                  | Beskrivelse                                      | Varighet   | Fakturering pr |   Pris |
-| --------------------------- | ------------------------------------------------ | ---------- | -------------- | -----: |
-| COURSE-intro.iaas           | Introduksjon til "infrastruktur som en tjeneste" | En dag     | Stykk          | Tilbud |
-| COURSE-cxo.strategy         | Cloud-strategi for ledergrupper                  | En dag     | Stykk          | Tilbud |
-| COURSE-intro.cloud          | Introduksjon til cloud-infrastrukturteknologi    | Fire dager | Stykk          | Tilbud |
-| COURSE-devops.microservices | Moderne DevOps og "microservices"                | Fire dager | Stykk          | Tilbud |
 
 ---
 

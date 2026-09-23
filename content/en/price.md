@@ -36,9 +36,7 @@ Set up your current environment to see how much you save by moving to Safespring
 See our prices further down on this page or download the price calculator to your computer. The price calculator is an Excel file with built-in logic to calculate a monthly cost based on your choices.
 {{< /ingress >}}
 
-There are many advantages to infrastructure as a service. In addition to increased performance for lower cost, you avoid investing in new hardware and paying for space that is not utilized. With us, you only pay for the resources you allocate.
-
-Download our price calculator and build your current environment to see what you save by moving to Safespring. The price includes high security, both physical, logical, and legal. You also get 24/7 support and access to our self-service portal where you can manage your instances as needed.
+The price includes high security—physical, logical, and legal. You also get 24/7 support and access to our self-service portal, where you can manage your instances as needed.
 
 ## No Traffic Cost
 
@@ -69,7 +67,7 @@ Flavor is a pre-configured instance of a virtual machine with a specific combina
 
 ### Flavors with local NVMe disk
 
-Discover our range of powerful virtual servers, with up to 32 vCPUs and 64 GB RAM, with NVMe storage up to 1,000 GB - priced from only €0.060 per hour or €42.72 per 30 days!
+Flavors with local NVMe storage combine 2–32 vCPUs and 4–64 GB RAM with 100–1,000 GB of local storage. Prices start at €0.06 per hour or €42.72 per 30 days.
 
 | Product ID               | vCPU | RAM (GB) | Local disc (GB) | Hourly |  30 days |
 | ------------------------ | :--: | :------: | --------------: | -----: | -------: |
@@ -250,17 +248,6 @@ Access our experienced consultants and project managers to optimize your cloud i
 | PS-cloudarch.sen | Cloud Infrastructure Architect Consultant, senior expertise level | Hour        | 122,29 € |
 | PS-pm.jun        | Project Manager, junior expertise level                           | Hour        | 101,37 € |
 | PS-pm.sen        | Project Manager, senior expertise level                           | Hour        | 122,29 € |
-
-### Training
-
-Learn all about modern IT services with Safespring's course packages, including introductions to "infrastructure as a service" and cloud infrastructure technology, as well as in-depth courses on cloud strategy and modern DevOps with "microservices". Request a quote today to take your business to the next level!
-
-| Product ID                  | Description                                     |  Duration | Billing per |                  Price |
-| --------------------------- | ----------------------------------------------- | --------: | :---------: | ---------------------: |
-| COURSE-intro.iaas           | Introduction to "infrastructure as a service"   |   One day |  Occasion   | Requests for quotation |
-| COURSE-cxo.strategy         | Cloud strategy for management teams             |   One day |  Occasion   | Requests for quotation |
-| COURSE-intro.cloud          | Introduction to cloud infrastructure technology | Four days |  Occasion   | Requests for quotation |
-| COURSE-devops.microservices | Modern DevOps and "microservices"               | Four days |  Occasion   | Requests for quotation |
 
 ---
 

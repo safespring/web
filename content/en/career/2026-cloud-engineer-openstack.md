@@ -1,7 +1,7 @@
 ---
 Title: "Cloud Engineer - OpenStack"
 intro: "Be the change Europe needs! Join Safespring as a Cloud Engineer with focus on OpenStack!"
-draft: false
+draft: true
 date: "2026-05-15"
 sidebarlinkurl: "https://safespring.careers.haileyhr.app/en-GB/job/738d81c0-d4ba-4ddd-af69-b6ec5d37158b/fc1bd372-3fda-49d2-b19f-bc94c0a28b99/27ad59d4-2c20-4aba-8de6-69c3848bc457#applyNow"
 sidebarlinkname: "Apply now"

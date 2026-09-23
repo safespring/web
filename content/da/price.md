@@ -37,13 +37,26 @@ Opsæt dit nuværende miljø for at se, hvor meget du sparer ved at flytte til S
 Se vores priser længere nede på siden, eller download prisberegneren til din computer. Prisberegneren er en Excel-fil med indbygget logik, der beregner en månedlig omkostning baseret på dine valg.
 {{< /ingress >}}
 
-Der er mange fordele ved infrastruktur som en service. Ud over højere ydeevne til lavere pris undgår du at investere i ny hardware og at betale for kapacitet, der ikke bliver udnyttet. Hos os betaler du kun for de ressourcer, du allokerer.
-
-Download vores prisberegner og byg dit nuværende miljø for at se, hvad du sparer ved at flytte til Safespring. Prisen inkluderer høj sikkerhed – fysisk, logisk og juridisk. Du får også 24/7-support og adgang til vores selvbetjeningsportal, hvor du kan administrere dine instanser efter behov.
+Prisen inkluderer høj sikkerhed – fysisk, logisk og juridisk. Du får også 24/7-support og adgang til vores selvbetjeningsportal, hvor du kan administrere dine instanser efter behov.
 
 ## Ingen trafikomkostninger
 
 Safespring opkræver ingen trafikomkostninger for data sendt til eller fra vores tjenester. Trafikomkostning, eller egress-omkostning som det også kaldes, er en almindelig lock-in-mekanisme. Safespring er bygget på åbne standarder, og det er en del af vores filosofi.
+
+{{< distance >}}
+
+## Safespring Kubernetes Engine
+
+{{< ingress >}}
+Safespring Kubernetes Engine leverer et administreret Kubernetes-kontrolplan på Safesprings infrastruktur.
+{{< /ingress >}}
+
+Prisen nedenfor dækker Safesprings administration af kontrolplanet. Compute-instanser til kontrolplansnoder og workernoder kommer derudover og faktureres efter de valgte flavors.
+
+| Produkt-ID            | Beskrivelse                 | Pr. måned |
+|-----------------------|-----------------------------|----------:|
+| PAAS-man-controlplane | Administreret kontrolplan   | 436,10 € |
+| PAAS-controlplane     | Ikke-administreret kontrolplan | 0,00 € |
 
 {{< distance >}}
 
@@ -93,16 +106,16 @@ Safespring tilbyder en række omkostningseffektive virtuelle maskiner med varier
 
 
 ### GPU-flavors
-Safespring tilbyder flere muligheder for virtuelle maskiner med GPU, både med og uden lokal lagring (NVMe).
 
-| Produkt-ID               | vCPU | RAM (GB) | Lokal disk (GB) | GPU (A2) | Pr. time | Pr. 30 dage |
-|--------------------------|:----:|:--------:|----------------:|:--------:|---------------:|------------------:|
-| FLAVOR-l2.c4r16.125.gA2  | 4    | 16       | 125             | 1        |    0,41 €        |     297,71 €      |
-| FLAVOR-l2.c8r32.250.gA2  | 8    | 32       | 250             | 1        |    0,58 €        |     415,63 €      |
-| FLAVOR-b2.c4r8.gA2       | 4    | 8        | 0               | 1        |    0,34 €        |     247,42 €      |
-| FLAVOR-b2.c8r16.gA2      | 8    | 16       | 0               | 1        |    0,44 €        |     315,06 €      |
+GPU-instanser er beregnet til workloads, der kræver beregningsacceleration, for eksempel AI, maskinlæring og dataanalyse. Udvalget omfatter flavors med A2 og H100 NVL, med eller uden lokal NVMe-lagring. Læs mere om [GPU-ressourcer til AI og maskinlæring](/tjenester/ai-ml/).
 
-
+| Produkt-ID | vCPU | RAM (GB) | Lokal disk (GB) | GPU | Pr. time | Pr. 30 dage |
+|------------|:----:|:--------:|----------------:|-----|---------:|------------:|
+| FLAVOR-l2.c4r16.125.gA2 | 4 | 16 | 125 | A2 | 0,41 € | 297,71 € |
+| FLAVOR-l2.c8r32.250.gA2 | 8 | 32 | 250 | A2 | 0,58 € | 415,63 € |
+| FLAVOR-b2.c4r8.gA2 | 4 | 8 | 0 | A2 | 0,34 € | 247,42 € |
+| FLAVOR-b2.c8r16.gA2 | 8 | 16 | 0 | A2 | 0,44 € | 315,06 € |
+| FLAVOR-b2.c32.r192.gH100 | 32 | 192 | 0 | H100 NVL | 2,93 € | 2 138,14 € |
 
 ### Central bloklagring
 
@@ -202,14 +215,15 @@ Maksimer din infrastruktur med software, der er optimeret til at køre på Safes
 
 ### Platformtjenester
 
-Vi tilbyder komplet administration af dine Kubernetes-miljøer, inklusive overholdelse af regulativer, med Compliant Kubernetes. Derudover tilbydes Managed Elasticsearch, NATS, MariaDB og Redis. Anmod om et tilbud i dag for at få adgang til disse tjenester!
+Safesprings partnere tilbyder [database som en tjeneste](/tjenester/database/) til PostgreSQL, MariaDB og Redis. Derudover findes administrerede tjenester til Elasticsearch og NATS. Tjenesterne kører på Safesprings infrastruktur og koster fra 0,18 € pr. time.
 
-| Produkt-ID             | Beskrivelse                                            |         Månedligt |
-| --------------------- | ------------------------------------------------------ | ----------------: |
-| PAAS-openshift        | Ingen support                                         | Anmod om et tilbud |
-| PAAS-man.nats         | Administreret NATS                                   | Anmod om et tilbud |
-| PAAS-man.mariadb      | Administreret MariaDB                                | Anmod om et tilbud |
-| PAAS-man.redis        | Administreret Redis                                  | Anmod om et tilbud |
+| Produkt-ID | Beskrivelse | Fra pr. time |
+|------------|-------------|-------------:|
+| PAAS-man.postgresql | Managed PostgreSQL | 0,18 € |
+| PAAS-man.mariadb | Managed MariaDB | 0,18 € |
+| PAAS-man.elasticsearch | Managed Elasticsearch | 0,18 € |
+| PAAS-man.redis | Managed Redis | 0,18 € |
+| PAAS-man.nats | Managed NATS | 0,18 € |
 
 ## Support- og konsulentydelser
 
@@ -235,17 +249,6 @@ Få adgang til vores erfarne konsulenter og projektledere for at optimere din cl
 | PS-cloudarch.sen | Cloud-infrastrukturarkitekt, konsulent, seniorniveau               | Time            |   122,29 € |
 | PS-pm.jun        | Projektleder, juniorniveau                                         | Time            |   101,37 € |
 | PS-pm.sen        | Projektleder, seniorniveau                                         | Time            |   122,29 € |
-
-### Kurser
-
-Lær alt om moderne it-tjenester med Safesprings kurspakker, inklusive introduktioner til "infrastruktur som en service" og cloudinfrastrukturteknologi samt dybdegående kurser i cloudstrategi og moderne DevOps med "mikroservices". Anmod om et tilbud i dag og løft din forretning til næste niveau!
-
-| Produkt-ID                  | Beskrivelse                                      |  Varighed | Fakturering pr. |                 Pris |
-| --------------------------- | ------------------------------------------------ | --------: | :-------------: | -------------------: |
-| COURSE-intro.iaas           | Introduktion til "infrastruktur som en service"  |    Én dag |   Arrangement   | Anmod om et tilbud  |
-| COURSE-cxo.strategy         | Cloudstrategi for ledelsesteams                  |    Én dag |   Arrangement   | Anmod om et tilbud  |
-| COURSE-intro.cloud          | Introduktion til cloudinfrastrukturteknologi     |  Fire dage |   Arrangement   | Anmod om et tilbud  |
-| COURSE-devops.microservices | Moderne DevOps og "mikroservices"                |  Fire dage |   Arrangement   | Anmod om et tilbud  |
 
 ---
 

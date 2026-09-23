@@ -1282,105 +1282,36 @@ En lista med tjänstekort från sektionen "en" (om cardorder är definierad).
 
 ---
 
-## streamed-video.html
+## video.html
 
-### Beskrivning
+### Description
+Displays the shared video player with support for HLS streams, MP4 and subtitles. The `video` shortcode replaces the former `streamed-video` shortcode.
 
-Visar en videospelare som stödjer HLS-strömmar. Använder Hls.js för att initiera videon om webbläsaren stödjer det.
+### Code
+The implementation is in `layouts/shortcodes/video.html`, which uses `layouts/partials/components/video-player.html` and `static/js/video-player.js`.
 
-### Kod
+### Parameters
 
-```html
-<div class="webinarvideo">
-  <video
-    class="webinar-videoplayer"
-    id="myVideo"
-    controls
-    preload="none"
-    poster="{{ .Get 1 | safeURL }}"
-  >
-    Your browser does not support the video tag.
-  </video>
-</div>
+- `src` or the first positional parameter: the video URL.
+- `poster` or the second positional parameter: an optional preview image.
+- `subtitles`: an optional JSON list of subtitle tracks.
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var video = document.getElementById("myVideo");
-    var hlsScriptLoaded = false;
-    var videoInitialized = false;
+### Examples
 
-    function loadHlsScript(callback) {
-      if (hlsScriptLoaded) {
-        callback();
-        return;
-      }
-
-      var script = document.createElement("script");
-      script.src = "/js/hls.min.js";
-      script.onload = function () {
-        hlsScriptLoaded = true;
-        callback();
-      };
-      document.body.appendChild(script);
-    }
-
-    function initializeVideo() {
-      if (videoInitialized) return;
-
-      if (window.Hls && Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource("{{ .Get 0 | safeURL }}");
-        hls.attachMedia(video);
-        videoInitialized = true;
-      } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        // För Safari
-        video.src = "{{ .Get 0 | safeURL }}";
-        videoInitialized = true;
-      } else if (
-        /iPad|iPhone|iPod/.test(navigator.userAgent) &&
-        !window.MSStream
-      ) {
-        video.src = "{{ .Get 0 | safeURL }}";
-        video.load();
-      } else {
-        alert("Your browser does not support this video format.");
-      }
-    }
-
-    // Spela upp videon vid klick eller play
-    video.addEventListener("play", function () {
-      if (!videoInitialized) {
-        loadHlsScript(function () {
-          initializeVideo();
-          video.play();
-        });
-      }
-    });
-
-    video.addEventListener("click", function () {
-      if (!videoInitialized) {
-        loadHlsScript(function () {
-          initializeVideo();
-          video.play();
-        });
-      }
-    });
-  });
-</script>
+```go-html-template
+{{</* video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" */>}}
 ```
 
-### Exempel
+The same example with named parameters:
 
+```go-html-template
+{{</* video src="https://example.com/stream.m3u8" poster="https://example.com/poster.jpg" */>}}
 ```
-{{< video "https://example.com/stream.m3u8" "https://example.com/poster.jpg" >}}
-```
 
-### Renderat resultat
-
-En videospelare med stöd för HLS-strömning och en förhandsbild (poster).
+### Rendered result
+A video player with support for HLS streaming and a preview image (poster).
 
 ---
-
 ## tooltip.html
 
 ### Beskrivning

@@ -7,7 +7,7 @@ draft: false
 tags: ""
 showthedate: false
 pageimage: ""
-intro: "Tillsammans skapar vi en säkrare, och mer kostnadseffektiv digital infrastruktur."
+intro: "Tillsammans skapar vi en säkrare och mer kostnadseffektiv digital infrastruktur."
 toc: "På denna sida"
 nosidebar: ""
 aliases:
@@ -23,9 +23,7 @@ Bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safe
 
 {{< distance >}}
 
-Det finns många fördelar med infrastruktur som tjänst. Förutom ökad prestanda till lägre kostnad slipper du investera i ny hårdvara och betala för utrymme som inte utnyttjas. Hos oss betalar du endast för de resurser du allokerar.
-
-I priset ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får även 24/7 support och tillgång till vår självbetjäningsportal där du kan hantera dina instanser efter behov.
+I priset ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får även 24/7-support och tillgång till vår självbetjäningsportal där du kan hantera dina instanser efter behov.
 
 ### Ingen trafikkostnad
 
@@ -106,7 +104,7 @@ GPU-instanser är avsedda för arbetslaster som behöver beräkningsacceleration
 
 
 ### Central blocklagring
-Central blocklagring ger tre kopior av datat utspritt i ett robust CEPH-kluster. Få snabb och pålitlig lagring med Safesprings från endast 1,20 kr per GB per 30 dagar.
+Central blocklagring ger tre kopior av data utspridda i ett robust Ceph-kluster. Få snabb och pålitlig lagring hos Safespring från endast 1,20 kr per GB per 30 dagar.
 
 | Produkt ID      | Beskrivning               |       Per timme      |             Per 30 dagar |
 |-----------------|---------------------------|:--------------------:|-------------------------:|
@@ -135,7 +133,7 @@ Safespring erbjuder två anpassade S3-produkter för olika lagringsbehov: S3-arc
 Safespring erbjuder tre olika backuplösningar. Priserna per GB börjar så lågt som 0,92 kr, vilket ger dig högkvalitativ backup till ett överkomligt pris.
 {{< /ingress >}}
 
-Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som vanligtvis minskar datamängden mellan 45%-90%. Priset är fastställt per skyddad GB på klienten och per lagrad GB i tjänsten efter deduplicering och komprimering. Dessutom ingår 1TB i det fasta månadspriset för BAAS-small.
+Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som vanligtvis minskar datamängden mellan 45%-90%. Priset är fastställt per skyddad GB på klienten och per lagrad GB i tjänsten efter deduplicering och komprimering. Dessutom ingår 1 TB i det fasta månadspriset för BAAS-small.
 
 {{% accordion title="Vilken plan är bäst?" %}}
 
@@ -171,14 +169,14 @@ Safespring Backup erbjuder datareduktionsteknik <sup>1</sup> i tjänsten som van
 | BAAS-large <sup>4</sup>     |              9 500 kr  | 0,92 kr           |
 
 
-## Nätverk och Mjukvara
+## Nätverk och mjukvara
 
 {{< ingress >}}
 Safespring erbjuder en del mjukvaror och licenser som kan köra ovanpå Safesprings molnplattform.
 {{< /ingress >}}
 
 ### Nätverk
-Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och egress) utan extra kostnad, Reverse DNS-names och Bring Your Own IP-prefixes. Dessutom kan kunder begära en offert för deras hanterade lastbalanserare som kräver egna servrar.
+Safespring erbjuder publika IPv4- och IPv6-adresser, datatrafik (ingress och egress) utan extra kostnad, Reverse DNS-namn och Bring Your Own IP-prefix. Dessutom kan kunder begära offert på en hanterad lastbalanserare som kräver egna servrar.
 
 | Produkt ID   |  Typ                       | Beskrivning                             | Debitering per |    Per månad |
 |--------------|----------------------------|-----------------------------------------|----------------|-------------:|
@@ -191,8 +189,8 @@ Safespring erbjuder IPv4 och IPv6 publika IP-adresser, datatrafik (ingress och e
 | NET-byoip    | Bring your own IP prefixes |                                         | N/A            |      0,00 kr |
 
 
-### Mjukvara och Licenser
-Maximera er infrastruktur med mjukvara som kör optimerat på Safesprings plattform.
+### Mjukvara och licenser
+Maximera er infrastruktur med mjukvara som är optimerad för Safesprings plattform.
 
 | Produkt ID        | Beskrivning                     | Debitering per |    Per månad |
 |-------------------|---------------------------------|----------------|-------------:|
@@ -218,7 +216,7 @@ Vi erbjuder olika nivåer av support för molninfrastruktur. Dessutom erbjuder v
 {{< /ingress >}}
 
 ### Support
-Få tillgång till dedikerad support och teknisk chat genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.
+Få tillgång till dedikerad support och teknisk chatt genom SUPPORT-standard, medan SUPPORT-premium erbjuder en dedikerad servicekontakt och kvartalsvisa driftsmöten. SUPPORT-base är helt gratis.
 
 | Produkt ID       | Beskrivning                                        | Debitering per |                 Pris |
 |------------------|----------------------------------------------------|----------------|---------------------:|
@@ -238,16 +236,6 @@ Få tillgång till våra erfarna konsulter och projektledare för att optimera d
 | PS-pm.jun        | Project Manager, junior expertise level                           | Timme          | 1 139 kr |
 | PS-pm.sen        | Project Manager, senior expertise level                           | Timme          | 1 374 kr |
 
-### Utbildningar
-Lär dig allt om moderna IT-tjänster med Safesprings kurspaket, inklusive introduktioner till "infrastruktur som tjänst" och moln-infrastrukturteknik, samt fördjupade kurser om molnstrategi och modern DevOps med "microservices". Begär offert idag för att ta din verksamhet till nästa nivå!
-
-| Produkt ID                  | Beskrivning                                  | Längd      | Debitering per |         Pris |
-|-----------------------------|----------------------------------------------|------------|----------------|-------------:|
-| COURSE-intro.iaas           | Introduktion till "infrastruktur som tjänst" | En dag     | Tillfälle      | Begär offert |
-| COURSE-cxo.strategy         | Molnstrategi för ledningsgrupper             | En dag     | Tillfälle      | Begär offert |
-| COURSE-intro.cloud          | Introduktion till moln-infrastrukturteknik   | Fyra dagar | Tillfälle      | Begär offert |
-| COURSE-devops.microservices | Modern DevOps och "microservices"            | Fyra dagar | Tillfälle      | Begär offert |
-
 ___
 
 Anteckningar
@@ -256,4 +244,4 @@ Anteckningar
 2. Priset är per skyddad GB på klienten.
 3. Priset är per lagrad GB i tjänsten efter deduplicering och komprimering. Det ingår 1 000 GB i det fasta månadspriset.
 4. Priset är per lagrad GB i tjänsten efter deduplicering och komprimering.
-5. Supportavgiften debiteras med 3 % av den totala volymen med en lägsta avgift på 1500 SEK per månad.
+5. Supportavgiften debiteras med 3 % av den totala volymen med en lägsta avgift på 1 500 SEK per månad.

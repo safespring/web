@@ -83,13 +83,11 @@ This DPA applies only to Safespring’s processing of Personal Data on behalf of
 
 ## 7. Sub-processors
 
-**7.1** The Processor may engage third parties to process the Personal Data or any part thereof on its behalf (“Sub-Processor”). Where the Processor intends to engage a new Sub-Processor, the Controller must be informed thereof in writing. The new Sub-Processor may process the Personal Data if the Controller has not objected in writing 30 days after such information was provided. The absence of Controller’s objections will be deemed as the Controller’s acceptance of the change of Sub-Processor. Sub-Processors are listed in Appendix 1, which shall be updated in the event of changes to the Sub-Processors.
+**7.1** The Processor may engage third parties to process the Personal Data or any part thereof on its behalf (“Sub-Processor”). Where the Processor intends to engage a new Sub-Processor, the Controller must be informed thereof in writing. The new Sub-Processor may process the Personal Data if the Controller has not objected in writing 30 days after such information was provided. The absence of Controller’s objections will be deemed as the Controller’s acceptance of the change of Sub-Processor. Sub-Processors are listed in the Privacy Policy, which shall be updated in the event of changes to the Sub-Processors.
 
 **7.2** The Processor shall enter into a written agreement with every Sub-Processor, in which each Sub-Processor undertakes obligations at least reflecting those undertaken by the Processor under this DPA. The Processor is responsible towards the Controller for its Sub-Processors' acts and omissions as for its own.
 
 **7.3** In the event the Controller objects to a new Sub-Processor in accordance with Section 7.1, the Processor shall use reasonable efforts to offer an alternative or suggest a commercial reasonable change in the Service or the Controller’s configuration to prevent processing of Personal Data by the objected Sub-Processor. If no practical or commercially reasonable solution is possible according to the Processor, the Processor shall notify the Controller accordingly and, the Controller may terminate the relevant agreement, solely in respect of the affected Service, by giving written notice no later than forty‑five (45) days following receipt of such notification, failing which the Controller shall be deemed to have accepted the use of the relevant Sub‑Processor.
-
-who may terminate the relevant agreement with respect for any affected Service by giving 45 days’ written notice after receiving this information.
 
 ## 8. Transfers to third countries
 

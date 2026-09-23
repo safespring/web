@@ -46,6 +46,30 @@
     "a2Usage" "Inference, light training, video encoding"
     "h100Usage" "Inference with large language models"
   -}}
+{{- else if eq $language "da" -}}
+  {{- $copy = dict
+    "comparisonLabel" "Sammenligning mellem NVIDIA A2 og NVIDIA H100 NVL"
+    "memory" "GPU-hukommelse"
+    "a2MemoryLabel" "GPU-hukommelse: 16 GB sammenlignet med H100 NVL's 94 GB"
+    "a2MemoryText" "16 GB af 94 GB"
+    "h100MemoryLabel" "GPU-hukommelse: 94 GB sammenlignet med A2's 16 GB"
+    "h100MemoryText" "94 GB af 94 GB"
+    "architecture" "Arkitektur"
+    "configurations" "Konfigurationer"
+    "a2Configurations" "4 (b2 og l2)"
+    "h100Configurations" "1 (b2)"
+    "priceFrom" "Pris fra"
+    "a2Price" "0,34 €/time"
+    "h100Price" "2,93 €/time"
+    "powerLimit" "Effektgrænse"
+    "upTo400" "Op til 400 W"
+    "status" "Status"
+    "a2Status" "Aktiveres via supporten"
+    "h100Status" "Tilgængelig på forespørgsel"
+    "usage" "Anvendelse"
+    "a2Usage" "Inferens, lettere træning, videokodning"
+    "h100Usage" "Inferens med store sprogmodeller"
+  -}}
 {{- else if or (eq $language "no") (eq $language "nb") -}}
   {{- $copy = dict
     "comparisonLabel" "Sammenligning mellom NVIDIA A2 og NVIDIA H100 NVL"

@@ -110,7 +110,7 @@
           class="demo-sticky-card matomo-track"
           data-matomo-location="sidebar-demo"
           data-matomo-label="{{ T "sidebar.demo" }}"
-          href="{{ relref . "demo" }}"
+          href="{{ with .Params.demolink }}{{ partial "resolve-link.html" (dict "page" $currentPage "href" .) }}{{ else }}{{ relref . "demo" }}{{ end }}"
         >
           <span class="demo-sticky-card__icon" aria-hidden="true">
             {{ partial "fa-icon.html" (dict "class" "fa-solid fa-video" "page" .) }}

@@ -33,12 +33,12 @@ aliases:
 ---
 
 {{< ingress >}}
-Safespring Kubernetes Engine giver udviklingsteams en færdig platform til containeriserede workloads, driftet fra Sverige og Norge. I får en hurtigere vej til produktion uden at give afkald på kontrol over jurisdiktion, sikkerhed og platformsgrænser.
+Safespring Kubernetes Engine kører containeriserede workloads på Safesprings infrastruktur i Sverige og Norge. Tjenesten omfatter selvbetjent provisionering og et administreret kontrolplan.
 {{< /ingress >}}
 
-Tjenesten er designet til organisationer, der har brug for stærkere kontrol over dataplacering, jurisdiktion og operationelle grænser, herunder miljøer med krav til GDPR, compliance og digital suverænitet.
+Tjenesten bruges, når dataplacering, jurisdiktion og operationelle grænser skal være tydelige, for eksempel ved krav til GDPR, compliance og digital suverænitet.
 
-Den praktiske værdi er, at engineering-teams får en platform, der er klar til brug, samtidig med at organisationen bevarer kontrol over jurisdiktion, sikkerhedsprofil og langsigtet platformretning uden selv at skulle eje hvert lag af platformdriften internt.
+Udviklingsteamet får et Kubernetes-miljø uden selv at drive kontrolplanet. Organisationen bevarer beslutninger om jurisdiktion, sikkerhedsprofil og platformens retning i sin egen styring.
 
 {{< icon-block-container >}}
     {{< icon-block icon="fas fa-rocket" text="Udrul hvor som helst" link="" color="#195F8C">}}
@@ -69,29 +69,30 @@ Safespring Kubernetes Engine passer særligt godt, når I:
 | Mindre indlåsning | Kubernetes og åbne komponenter i stedet for proprietære økosystemer |
 | Compliance-dialog | Svensk/nordisk leverandør med erfaring fra regulerede miljøer |
 
-## Hvorfor arkitekturen betyder noget
+## Arkitektur og tjenestegrænse
 
-Den vigtigste tekniske fordel er ikke en enkelt funktion. Det er, at tjenesten er udformet som en brugbar platformsgrænse fra dag ét. Det betyder noget, fordi platformteams sjældent går i stå ved at oprette et cluster. De går i stå ved at gøre clustret konsistent, supportbart, sikkert og klart til produktion.
+Safespring Kubernetes Engine fastlægger tjenestegrænsen, før det første cluster oprettes. Safespring driver kontrolplanet. Jeres team opretter clustre i portalen og har derefter ansvaret for workloads og applikationskonfiguration i clustret. API-baseret clusterprovisionering er under udvikling.
 
 {{< custom-card-logo image="/img/graphics/safespring-cloud.webp" logo="/img/graphics/safespring-byline-blue.svg" logoAlt="Safespring-logo" cardtitle="Hvad det betyder i praksis" >}}
-Arkitekturen er designet til at give jer:
+Tjenesten omfatter:
 
-- en self-service-model via portal og API i stedet for manuel clusteradministration
-- en administreret kontrolplan, så teamet ikke selv skal eje alle kontrolplansspørgsmål internt
-- et immutable operativsystemfundament med Talos Linux, som reducerer driftsafvigelser og angrebsflade
-- en moderne netværks- og trafikmodel baseret på Cilium, Gateway API og understøttelse af Traefik
-- en tydeligere ansvarsfordeling mellem det, Safespring driver, og det jeres eget team fortsat ejer
+- oprettelse af clustre via Safesprings portal
+- API-baseret clusterprovisionering, som er under udvikling
+- et administreret kontrolplan
+- Talos Linux som operativsystem til noderne
+- Cilium, Gateway API og Traefik-understøttelse til netværk og trafikhåndtering
+- en dokumenteret fordeling mellem Safesprings platformansvar og jeres teams applikationsansvar
 {{< /custom-card-logo >}}
 
 {{< distance >}}
 
-## Tekniske fordele, forklaret enkelt
+## Tekniske egenskaber
 
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-rocket" text="Provisionering og kontrol er allerede defineret" description="Klynger oprettes via portal og API, og kontrolplanet er administreret som en del af tjenesten. Det forkorter tiden til produktion og reducerer mængden af platformarbejde, som jeres eget team ellers skulle gentage for hvert nyt miljø." >}}
-{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Fundamentet er designet til lavere operationel risiko" description="Talos Linux giver et immutable, Kubernetes-fokuseret nodefundament, mens OIDC-baseret adgang, moderne netværkshåndtering og en tydelig tjenestegrænse gør platformen lettere at styre og lettere at forstå." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="Tjenesten understøtter reelle workloads, ikke kun clusteroprettelse" description="Persistente volumener via Cinder CSI, trafikhåndtering via Cilium Gateway API og Traefik-understøttelse samt GPU-kompatible workernoder betyder, at platformen kan bære produktionsapplikationer med forskellige kørselsbehov." >}}
+{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-rocket" text="Opret clustre i portalen" description="Teams opretter clustre i Safesprings portal. API-baseret clusterprovisionering er under udvikling. Safespring driver kontrolplanet som en del af tjenesten. Det reducerer det interne platformarbejde, der er nødvendigt, før et Kubernetes-miljø kan tages i brug." >}}
+{{< icon-block-horisontal color="#32cd32" icon="fa-solid fa-shield-check" text="Grundlaget reducerer driftsafvigelser" description="Talos Linux giver et immutable, Kubernetes-fokuseret grundlag for noderne. OIDC-baseret adgang, Cilium-netværk og en defineret tjenestegrænse gør platformen lettere at gennemgå og drive." >}}
+{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-arrow-up-right-dots" text="Workloads kan bruge lagring, trafikhåndtering og GPU-noder" description="Cinder CSI giver persistente volumener. Cilium Gateway API og Traefik understøtter trafikhåndtering. GPU-kompatible workernoder er tilgængelige til workloads, der har brug for dem." >}}
 
-Det er også her, digital suverænitet bliver praktisk i stedet for abstrakt. Platformen leveres fra Safesprings datacentre i Sverige og Norge, drives med 100% vedvarende energi og er bygget til organisationer, der ønsker stærkere kontrol over jurisdiktion, dataplacering og langsigtet uafhængighed fra hyperscaler-lock-in.
+Tjenesten leveres fra Safesprings datacentre i Sverige og Norge og drives med 100% vedvarende energi. Den er til organisationer, der har brug for kontrol over jurisdiktion, dataplacering og leverandørafhængigheder.
 
 ## Fordyb dig før teknisk evaluering
 

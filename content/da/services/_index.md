@@ -18,7 +18,7 @@ aliases:
 
 Safespring leverer en lokalt forankret cloud-platform bygget til morgendagens apps. Den gør det muligt for vores kunder at innovere hurtigt, forkorte time-to-market og fjerne tekniske begrænsninger, samtidig med at effektiviteten øges og datasuveræniteten bevares. Med vores platform hjælper vi vores kunder med at styrke deres konkurrenceevne og levere resultater i topklasse.
 
-{{< localbutton text="Servicekatalog" link="/services/safespring-service-catalogue-2020.pdf" >}}
+{{< localbutton text="Servicekatalog" link="/service-catalogue/" >}}
 
 <div class="flexcontainer-shortcode" style="">
 
