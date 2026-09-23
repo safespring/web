@@ -52,6 +52,13 @@
   /*demo*/
 }
 
+@media only screen and (max-width: 600px) {
+  .flex-container > .flex-content {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+}
+
 .fill-available-space {
   height: 100%;
 }

@@ -42,11 +42,11 @@ To reactivate a legacy component, first restore or add its markup, move only tha
 | --- | --- | --- |
 | `accordion.css` | Rendered content contains `class="accordion` | `.accordion`, `.accordion-box`, `.panel`, and `.accordion-active`; height-only sizing, content reveal, plus/minus morph, and reduced-motion behavior stay aligned with `accordion.js`. |
 | `article-extras.css` | Author frontmatter, or author, CPU/flavour, or impact markup is present | Default-single author markup is generated outside `.Content`; shortcode markers remain content-detected. |
-| `contact-card.css` | Rendered content contains `contact-container` | Contact shortcode/card markup using `.contact-*`. |
-| `content-cards.css` | Home, list/taxonomy pages, or card-oriented sections | Blog, tech-update, webinar, solution-brief, and whitepaper cards, including circular webinar/demo carousel controls. |
+| `contact-card.css` | Rendered content contains `contact-container` or `contact-small-email` | Contact shortcode/card markup using `.contact-*`, including email link sizing in `contact-small`. |
+| `content-cards.css` | Home, list/taxonomy pages, card-oriented sections, or rendered `flex-container`/`flex-content` markup | Blog, tech-update, webinar, solution-brief, and whitepaper cards, including circular webinar/demo carousel controls. Also supplies the card surface and padding used by `contact-small` and `info`. |
 | `content-components.css` | Home page, standard sidebar, or demo sticky, two-field, ingress/quote, partner, note, or disclaimer markup is present | Home and default-single layouts generate component markup outside `.Content`; shortcode markup must remain detectable in rendered `.Content`. |
 | `content-filter.css` | Filter markup contains `tf-filter`, `tf-buttons`, or `filter-number` | Filter controls and `.tf-*` item state classes. |
-| `content-listing.css` | The content-card condition is active | Listing containers, webinar sidebar, and list-page metadata. |
+| `content-listing.css` | The content-card condition is active, including rendered `flex-container`/`flex-content` markup | Listing containers, webinar sidebar, list-page metadata, and the wrapping layout used by `flexbox` and its cards. Flex cards use one column at widths up to 600px so labels and values remain readable. |
 | `content-tables.css` | Rendered content contains a `<table` | Responsive generic tables; keep aligned with `table-labels.js`. |
 | `code-content.css` | Rendered content contains `<pre` or `<code` | Safespring Mono faces, code blocks, pill-shaped copy controls, and highlighted code. |
 | `details-content.css` | Rendered content contains `readfile-details` | Scoped `readfile` summary button and open full-screen details presentation. |

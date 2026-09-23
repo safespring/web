@@ -147,9 +147,9 @@
     {{ $hasContentTimeline := gt (len (findRE "content-timeline" $renderedContent 1)) 0 }}
     {{ $hasBoundaryTable := gt (len (findRE "ss-boundary-table" $renderedContent 1)) 0 }}
     {{ $hasDefaultSidebar := .Scratch.Get "hasDefaultSidebar" }}
-    {{ $hasContactCard := gt (len (findRE "contact-container" $renderedContent 1)) 0 }}
+    {{ $hasContactCard := gt (len (findRE "contact-container|contact-small-email" $renderedContent 1)) 0 }}
     {{ $cardSections := slice "blog" "demo" "internal" "solution-brief" "tech-update" "webinar" "whitepaper" }}
-    {{ $hasContentCards := or .IsHome (in $cardSections .Section) (in (slice "section" "taxonomy" "term") .Kind) (gt (len (findRE "blogg-card|webinar-highlist|tech-update-card" $renderedContent 1)) 0) }}
+    {{ $hasContentCards := or .IsHome (in $cardSections .Section) (in (slice "section" "taxonomy" "term") .Kind) (gt (len (findRE "blogg-card|webinar-highlist|tech-update-card|flex-container|flex-content" $renderedContent 1)) 0) }}
     {{ $hasContentComponents := or .IsHome $hasDefaultSidebar (gt (len (findRE "demo-sticky|two-field-|class=\"ingress|class=\"quote|partner-grid|partner-container|note-dotted|disclaimer-dotted|class=\"note|class=\"disclaimer" $renderedContent 1)) 0) }}
     {{ $hasAccordion := gt (len (findRE "class=\"accordion" $renderedContent 1)) 0 }}
     {{ $hasHorizontalCard := or (eq .Params.list "horisontal") (eq .Section "career") (gt (len (findRE "safespring-horisontal-card-container" $renderedContent 1)) 0) }}

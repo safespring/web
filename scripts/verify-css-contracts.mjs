@@ -14,6 +14,17 @@ function walk(directory) {
 
 const classContracts = [
   [
+    "flex-card-styles",
+    (classes) => classes.includes("flex-content"),
+    /\/css\/content-cards\.min/,
+  ],
+  [
+    "flex-layout",
+    (classes) =>
+      classes.some((name) => ["flex-container", "flex-content"].includes(name)),
+    /\/css\/content-listing\.min/,
+  ],
+  [
     "content-timeline",
     (classes) => classes.includes("content-timeline"),
     /\/css\/content-timeline\.min/,
@@ -33,7 +44,8 @@ const classContracts = [
   ],
   [
     "contact-card",
-    (classes) => classes.includes("contact-container"),
+    (classes) =>
+      classes.some((name) => ["contact-container", "contact-small-email"].includes(name)),
     /\/css\/contact-card\.min/,
   ],
   [
