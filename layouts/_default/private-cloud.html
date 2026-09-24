@@ -1,0 +1,114 @@
+{{ partial "head.html" . }}
+<body class="private-cloud-page">
+  {{ partial "header.html" . }}
+  <a class="pc-skip" href="#private-cloud-content">Hoppa till innehållet</a>
+  <main id="private-cloud-content" class="pc-page">
+    {{ with .Params.hero }}
+    <section class="pc-hero" aria-labelledby="pc-title">
+      <img class="pc-hero-image" src="/img/background/safespring_bilder_3.jpg" alt="" width="2000" height="1203" fetchpriority="high" decoding="async">
+      <div class="pc-wrap pc-hero-inner">
+        <p class="pc-eyebrow">{{ .eyebrow }}</p>
+        <h1 id="pc-title">{{ .title }}</h1>
+        <p class="pc-hero-promise">{{ .promise }}</p>
+        <p class="pc-hero-text">{{ .text }}</p>
+        <a class="pc-button" href="{{ relref $ "contact" }}">{{ .cta }} <span aria-hidden="true">↗</span></a>
+        <a class="pc-hero-explore" href="#kontroll">{{ .link }} <span aria-hidden="true">↓</span></a>
+      </div>
+      <span class="pc-hero-rule" aria-hidden="true"></span>
+    </section>
+    {{ end }}
+
+    {{ with .Params.overview }}
+    <section id="kontroll" class="pc-section pc-wrap" aria-labelledby="pc-control-title">
+      <div class="pc-section-intro pc-reveal">
+        <div><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-control-title">{{ .title }}</h2></div>
+        <p class="pc-lead">{{ .text }}</p>
+      </div>
+      <div class="pc-principles">
+        {{ range $i, $item := .items }}
+        <div class="pc-principle pc-reveal">
+          <span class="pc-index" aria-hidden="true">0{{ add $i 1 }}</span>
+          <h3>{{ .title }}</h3><p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.responsibility }}
+    <section class="pc-responsibility" aria-labelledby="pc-responsibility-title">
+      <div class="pc-wrap pc-responsibility-grid">
+        <div class="pc-reveal"><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-responsibility-title">{{ .title }}</h2><p class="pc-lead">{{ .text }}</p></div>
+        <div class="pc-layers pc-reveal">
+          {{ range $i, $layer := .layers }}
+          <div class="pc-layer{{ if eq $i 1 }} pc-layer-managed{{ end }}">
+            <p class="pc-layer-owner">{{ .owner }}</p><h3>{{ .title }}</h3><p>{{ .text }}</p>
+          </div>
+          {{ end }}
+          <p class="pc-note">{{ .note }}</p>
+        </div>
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.placement }}
+    <section id="placering" class="pc-section pc-placement" aria-labelledby="pc-placement-title">
+      <div class="pc-wrap">
+        <div class="pc-section-intro pc-reveal"><div><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-placement-title">{{ .title }}</h2></div><p class="pc-lead">{{ .text }}</p></div>
+        <div class="pc-places pc-reveal" data-pc-tabs>
+          <div class="pc-tablist" aria-label="Välj placering" hidden>
+            {{ range $i, $option := .options }}
+            <button type="button" id="tab-{{ .id }}" data-panel="panel-{{ .id }}"><span aria-hidden="true">{{ .number }}</span>{{ .label }}</button>
+            {{ end }}
+          </div>
+          {{ range .options }}
+          <div class="pc-place-panel" id="panel-{{ .id }}">
+            <div class="pc-place-visual" aria-hidden="true">
+              <span class="pc-place-letter">{{ .number }}</span>
+              <svg class="pc-building" viewBox="0 0 420 300" fill="none">
+                <path d="M30 259h360M73 259V123l132-64 141 66v134M205 59v200M73 123l132 67 141-65M205 190v69"/>
+                <path d="M99 138v90l79 38M99 163l79 38M99 188l79 38M99 213l79 38M233 186v69M260 174v81M287 162v93M314 150v105"/>
+                <path class="pc-building-accent" d="M149 155v-32l56-27 59 28v33M149 123l56 29 59-28M205 152v28"/>
+                <circle class="pc-building-dot" cx="205" cy="96" r="5"/>
+              </svg>
+              <p>{{ .label }}</p>
+            </div>
+            <div class="pc-place-copy">
+              <p class="pc-eyebrow pc-place-fallback-label">{{ .label }}</p>
+              <h3>{{ .title }}</h3><p>{{ .text }}</p><p class="pc-place-detail">{{ .detail }}</p>
+              <ul class="pc-place-tags">{{ range .tags }}<li>{{ . }}</li>{{ end }}</ul>
+              {{ if .link }}<a class="pc-link" href="{{ .link }}">{{ .linktext }} <span aria-hidden="true">↗</span></a>{{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.openness }}
+    <section class="pc-section pc-wrap pc-open" aria-labelledby="pc-open-title">
+      <div class="pc-open-visual pc-reveal" aria-hidden="true"><span class="pc-open-bracket">[</span><div>OpenStack<span>Private Cloud</span></div><span class="pc-open-bracket">]</span></div>
+      <div class="pc-open-copy pc-reveal"><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-open-title">{{ .title }}</h2><p>{{ .text }}</p><p>{{ .secondary }}</p><a class="pc-link" href="{{ relref $ .link }}">{{ .linktext }} <span aria-hidden="true">↗</span></a></div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.trust }}
+    <aside class="pc-trust" aria-labelledby="pc-trust-title">
+      <div class="pc-wrap pc-trust-inner pc-reveal"><div><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-trust-title">{{ .title }}</h2></div><div><p>{{ .text }}</p><a class="pc-link" href="{{ relref $ .link }}">{{ .linktext }} <span aria-hidden="true">↗</span></a></div></div>
+    </aside>
+    {{ end }}
+
+    {{ with .Params.faq }}
+    <section class="pc-section pc-wrap pc-faq" aria-labelledby="pc-faq-title">
+      <div class="pc-reveal"><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-faq-title">{{ .title }}</h2></div>
+      <div class="pc-questions pc-reveal">{{ range .items }}<details><summary>{{ .question }}<span aria-hidden="true"></span></summary><div><p>{{ .answer }}</p></div></details>{{ end }}</div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.contact }}
+    <section class="pc-contact" aria-labelledby="pc-contact-title"><div class="pc-wrap pc-reveal"><p class="pc-eyebrow">{{ .eyebrow }}</p><h2 id="pc-contact-title">{{ .title }}</h2><p>{{ .text }}</p><a class="pc-button" href="{{ relref $ "contact" }}">{{ .cta }} <span aria-hidden="true">↗</span></a></div></section>
+    {{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>

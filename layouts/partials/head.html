@@ -260,6 +260,11 @@
       <script src="{{ $mobilePriceTablesJS.RelPermalink }}" defer></script>
     {{ end }}
 
+    {{ if eq .Layout "private-cloud" }}
+      {{ $privateCloudCSS := resources.Get "css/private-cloud.css" | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $privateCloudCSS.RelPermalink }}" integrity="{{ $privateCloudCSS.Data.Integrity }}" crossorigin="anonymous" />
+      {{ partial "js-component.html" (dict "source" "js/components/private-cloud.js") }}
+    {{ end }}
     {{ partial "jsonld.html" . }}
   </head>
 </html>
