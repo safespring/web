@@ -50,18 +50,20 @@
     {{ with $data.compute }}
     <article class="pc-compute pc-component" aria-labelledby="pc-compute-title">
       <div class="pc-technology">
-        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-server" "page" $page) }}
+        <span class="pc-technology-icon">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-server" "page" $page) }}</span>
         <span>{{ .technology }}</span>
       </div>
-      <h3 id="pc-compute-title">{{ .title }}</h3>
-      <p>{{ .text }}</p>
-      <p class="pc-component-note">{{ .note }}</p>
+      <div class="pc-compute-copy">
+        <h3 id="pc-compute-title">{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        <p class="pc-component-note">{{ .note }}</p>
+      </div>
     </article>
     {{ end }}
     {{ with $data.storage }}
     <div class="pc-storage" role="group" aria-labelledby="pc-storage-title">
       <div class="pc-technology">
-        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-database" "page" $page) }}
+        <span class="pc-technology-icon">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-database" "page" $page) }}</span>
         <span id="pc-storage-title">{{ .technology }}<small>{{ .label }}</small></span>
       </div>
       <div class="pc-storage-items">
@@ -76,6 +78,7 @@
     </div>
     {{ end }}
   </div>
+  {{ with .Inner }}<div class="pc-platform-followup">{{ $page.RenderString . }}</div>{{ end }}
   {{ else if eq $kind "trust" }}
   <div class="pc-feature-card">
     <div class="pc-feature-image pc-certification-image" aria-hidden="true"></div>

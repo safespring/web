@@ -106,7 +106,7 @@ private_cloud_visuals:
 Med Private Cloud får ni en dedikerad plattform och en partner som sköter den löpande driften.
 {{< /ingress >}}
 
-{{< private-cloud-visual "benefits" >}}
+{{< private-cloud-visual "benefits" />}}
 
 {{< distance >}}
 
@@ -114,7 +114,7 @@ Med Private Cloud får ni en dedikerad plattform och en partner som sköter den 
 
 Tillsammans klargör vi vem som ansvarar för varje del, från datacentret till applikationerna.
 
-{{< private-cloud-visual "responsibility" >}}
+{{< private-cloud-visual "responsibility" />}}
 
 {{< distance >}}
 
@@ -122,7 +122,7 @@ Tillsammans klargör vi vem som ansvarar för varje del, från datacentret till 
 
 Utgå från verksamhetens krav på placering och fysisk kontroll. Vi hjälper er att välja ett upplägg för den dedikerade infrastrukturen.
 
-{{< private-cloud-visual "placement" >}}
+{{< private-cloud-visual "placement" />}}
 
 {{< distance >}}
 
@@ -138,11 +138,13 @@ Tjänstekatalogen beskriver möjligheten för er att ta över förvaltningen av 
 
 [Utforska tjänstekatalogen]({{< relref "geant/service-catalogue/private-cloud" >}})
 
+{{< /private-cloud-visual >}}
+
 {{< distance >}}
 
 ## Ett systematiskt säkerhetsarbete {#sakerhet}
 
-{{< private-cloud-visual "trust" >}}
+{{< private-cloud-visual "trust" />}}
 
 {{< distance >}}
 
@@ -172,4 +174,4 @@ Kontakta oss för en offert utifrån era behov av kapacitet, placering och drift
 
 ## Låt oss gå igenom era behov {#kontakt}
 
-{{< private-cloud-visual "contact" >}}
+{{< private-cloud-visual "contact" />}}

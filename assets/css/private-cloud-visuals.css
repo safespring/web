@@ -31,20 +31,38 @@
 .pc-visuals .pc-location-features { display: grid; gap: 12px; margin: 28px 0 0; padding: 0; list-style: none; }
 .pc-visuals .pc-location-features li { position: relative; margin: 0; padding: 0 0 0 1.25em; color: var(--main-color); font: 400 .8rem/1.5 var(--mon-font); }
 .pc-visuals .pc-location-features li::before { position: absolute; top: .55em; left: 0; display: block; content: ""; width: .4em; height: .4em; margin: 0; border-radius: 50%; background: #32cd32; }
-.pc-platform { display: grid; gap: 48px; }
-.pc-technology { display: flex; align-items: center; gap: 14px; padding-bottom: 28px; margin-bottom: 32px; border-bottom: 1px solid #195f8c26; color: var(--main-color); font: 300 1.7rem/1.15 var(--hind-font); }
-.pc-technology .fa-icon { flex-shrink: 0; font-size: 30px; color: var(--clear-blue-color); }
-.pc-technology small { display: block; margin-top: 6px; font: 400 .75rem/1.4 var(--mon-font); }
-.pc-storage-items { display: grid; gap: 40px; }
-.pc-component .pc-component-note { margin-top: 28px; color: var(--main-color); font-size: .8rem; font-weight: 400; }
+.pc-platform { display: grid; gap: 28px; }
+.pc-compute, .pc-storage { min-width: 0; padding: 32px; border: 1px solid #195f8c18; border-radius: 20px; background: #195f8c05; }
+.pc-compute { display: grid; gap: 28px; }
+.pc-compute-copy { min-width: 0; }
+.pc-storage { background: #3c9bcd08; }
+.pc-technology { display: flex; align-items: center; gap: 16px; color: var(--main-color); font: 300 1.7rem/1.15 var(--hind-font); }
+.pc-technology-icon { display: flex; align-items: center; justify-content: center; flex: 0 0 48px; width: 48px; height: 48px; border-radius: 50%; background: #3c9bcd12; }
+.pc-technology .fa-icon { font-size: 25px; color: var(--clear-blue-color); }
+.pc-technology small { display: block; margin-top: 5px; font: 400 .8rem/1.4 var(--mon-font); }
+.pc-storage > .pc-technology { padding-bottom: 28px; margin-bottom: 28px; border-bottom: 1px solid #195f8c1c; }
+.pc-storage-items { display: grid; gap: 32px; }
+.pc-storage-items .pc-component { display: flex; flex-direction: column; min-width: 0; }
+.pc-storage-items .pc-component + .pc-component { padding-top: 28px; border-top: 1px solid #195f8c1c; }
+.pc-component .pc-component-note { margin: 24px 0 0; color: var(--main-color); font-size: .85rem; font-weight: 400; }
+.pc-storage-items .pc-component-note { margin-top: auto; padding-top: 8px; }
+.pc-platform-followup { margin-top: 40px; padding-top: 28px; border-top: 1px solid #195f8c1c; }
+.pc-platform-followup p { max-width: 58ch; }
+.pc-platform-followup p:last-child a { display: inline-flex; align-items: center; min-height: 44px; }
 .pc-feature-card { display: grid; overflow: hidden; border-radius: 20px; background: #fff; box-shadow: var(--reg-shadow); }
 .pc-feature-image { min-height: 180px; background-position: center; background-size: cover; }
 .pc-certification-image { background-image: url('/img/card/safespring-iso.svg'); background-color: #e1eaef; background-size: contain; background-repeat: no-repeat; }
 .pc-contact-image { background-image: url('/img/card/safespring-art-logo.svg'); }
 .pc-feature-copy { min-width: 0; padding: 32px; }
 @container pc-visual (min-width: 520px) {
-  .pc-storage-items { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
   .pc-feature-card { grid-template-columns: .65fr 1.35fr; }
+}
+@container pc-visual (min-width: 600px) {
+  .pc-compute { grid-template-columns: 150px minmax(0, 1fr); gap: 32px; }
+  .pc-compute > .pc-technology { align-self: start; flex-direction: column; align-items: flex-start; gap: 20px; }
+  .pc-storage-items { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
+  .pc-storage-items .pc-component:first-child { padding-right: 28px; }
+  .pc-storage-items .pc-component + .pc-component { padding: 0 0 0 28px; border-top: 0; border-left: 1px solid #195f8c1c; }
 }
 @container pc-visual (min-width: 660px) {
   .pc-benefits { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
@@ -54,8 +72,6 @@
   .pc-locations { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pc-location { padding: 32px 28px; }
   .pc-location h3 { min-height: 3.45em; }
-  .pc-platform { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 36px; }
-  .pc-technology { min-height: 96px; }
 }
 @container pc-visual (max-width: 360px) {
   .pc-benefit { grid-template-columns: 32px minmax(0, 1fr); column-gap: 20px; row-gap: 20px; padding: 28px 24px; align-items: center; }
@@ -67,4 +83,5 @@
   .pc-layer-icon { min-height: 64px; }
   .pc-layer-copy { padding: 24px 20px; }
   .pc-location, .pc-feature-copy { padding: 28px 24px; }
+  .pc-compute, .pc-storage { padding: 28px 24px; }
 }
