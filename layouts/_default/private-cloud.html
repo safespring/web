@@ -90,10 +90,43 @@
 
       {{ with .Params.openness }}
       <section id="oppenhet" class="pc-wrap pc-open" aria-labelledby="pc-open-title">
-        <div class="pc-open-symbol" aria-hidden="true">{{ partial "fa-icon.html" (dict "class" "fa-solid fa-code" "page" $) }}<span>OpenStack</span></div>
-        <div>
+        <div class="pc-intro">
           <h2 id="pc-open-title">{{ .title }}</h2>
-          <p>{{ .text }}</p><p>{{ .secondary }}</p>
+          <p class="pc-lead">{{ .text }}</p>
+        </div>
+        <div class="pc-platform">
+          {{ with .compute }}
+          <article class="pc-compute pc-component" aria-labelledby="pc-compute-title">
+            <div class="pc-technology">
+              {{ partial "fa-icon.html" (dict "class" "fa-solid fa-server" "page" $) }}
+              <span>{{ .technology }}</span>
+            </div>
+            <h3 id="pc-compute-title">{{ .title }}</h3>
+            <p>{{ .text }}</p>
+            <p class="pc-component-note">{{ .note }}</p>
+          </article>
+          {{ end }}
+          {{ with .storage }}
+          <div class="pc-storage" role="group" aria-labelledby="pc-storage-title">
+            <div class="pc-technology">
+              {{ partial "fa-icon.html" (dict "class" "fa-solid fa-database" "page" $) }}
+              <span id="pc-storage-title">{{ .technology }}<small>{{ .label }}</small></span>
+            </div>
+            <div class="pc-storage-items">
+              {{ range $i, $item := .items }}
+              <article class="pc-component" aria-labelledby="pc-storage-{{ $i }}">
+                <h3 id="pc-storage-{{ $i }}">{{ .title }}</h3>
+                <p>{{ .text }}</p>
+                <p class="pc-component-note">{{ .note }}</p>
+              </article>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="pc-platform-followup">
+          <p>{{ .extensions }}</p>
+          <p>{{ .secondary }}</p>
           <a class="text-button" href="{{ relref $ .link }}">{{ .linktext }}</a>
         </div>
       </section>

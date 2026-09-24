@@ -71,9 +71,24 @@ placement:
       link: "/tjanster/tloop/"
       linktext: "Läs om samarbetet med T.Loop"
 openness:
-  eyebrow: "04 / Handlingsfrihet"
-  title: "Bygg vidare med OpenStack"
-  text: "Bygg med OpenStack och automatisera via API:er. Komplettera med lagring eller GPU-kapacitet efter behov, och planera för en kombination med Safesprings publika moln."
+  title: "Plattformens byggstenar"
+  text: "Kombinera beräkning och lagring efter era behov. OpenStack är grunden för Compute, medan Ceph används för block- och objektlagring."
+  compute:
+    technology: "OpenStack"
+    title: "Compute"
+    text: "Virtuella servrar med kapacitet för era applikationer. Processorer, minne och lokal lagring anpassas efter era behov."
+    note: "Lokal instanslagring ingår i grunden."
+  storage:
+    technology: "Ceph"
+    label: "Lagringsplattform"
+    items:
+      - title: "Blocklagring"
+        text: "Beständiga lagringsvolymer för era virtuella servrar, baserade på Ceph."
+        note: "Tillval till Compute."
+      - title: "Objektlagring"
+        text: "Lagra stora datamängder via ett S3-kompatibelt API. Objektlagringen kan kombineras med Compute eller levereras separat."
+        note: "S3-kompatibelt API."
+  extensions: "Compute kan kompletteras med GPU-kapacitet. En kombination med Safesprings publika moln planeras utifrån era behov."
   secondary: "Tjänstekatalogen beskriver möjligheten för er att ta över förvaltningen av plattformen, med kunskapsöverföring från Safespring."
   linktext: "Utforska tjänstekatalogen"
   link: "geant/service-catalogue/private-cloud"
