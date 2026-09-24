@@ -44,7 +44,9 @@ Dialogen inleds med en översikt av vad juridisk säkerhet innebär, specifikt i
 
 Amelia belyser olika källor till juridiska krav, inklusive EU-nivån och den svenska nationella nivån. Hon tar upp specifika exempel som dataskyddsförordningen och patientdatalagen. De diskuterar även de tekniska och praktiska utmaningar som företag står inför när de måste anpassa sig till långsamma rättsliga förändringar, samt behovet av flexibla IT-infrastrukturer som kan justeras vid ändringar i juridiska krav.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+### Prata med en lösningsarkitekt
+
+Vill ni diskutera hur er applikation kan köras på Safesprings infrastruktur? Mejla [hello@safespring.com](mailto:hello@safespring.com) eller ring [08-55 10 73 70](tel:+46855107370) för att komma i kontakt med en lösningsarkitekt.
 
 {{< distance >}}
 ### I detta avsnitt

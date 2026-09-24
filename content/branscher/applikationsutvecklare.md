@@ -1,6 +1,5 @@
 ---
 title: "Safespring – Skalbar och säker infrastruktur för SaaS-bolag utan inlåsning"
-cardtitle: "Safespring för SaaS-bolag"
 date: 2024-09-13
 card: "safespring_card_21.svg"
 draft: false

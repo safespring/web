@@ -40,14 +40,6 @@ Genom att använda NVMe-lagring för etcd förbättras prestanda och tillförlit
 
 {{< distance >}}
 
-{{% custom-card image="/img/card/elastisys-rob.png" cardtitle="Use Case: Elastisys applikation Welkin" %}}
-Rob McCuaig delar insikter om Elastisys samarbete med Safespring och vikten av databehandling inom EU. 
-
-{{< 2calltoaction "Läs Use Case" "/tjanster/case/elastisys" "Mer om tjänsten" "/tjanster/compliant-kubernetes">}}
-{{% /custom-card %}}
-
-{{< distance >}}
-
 ## Safesprings nätverksmodell är optimal för containerplattformar och cloud native
 
 Safespring är en produkt som erbjuder en effektiv och hög tillgänglig nätverksstack som använder BGP (Border Gateway Protocol). Det här gör att Safespring kan erbjuda en effektiv lastbalansering med hjälp av Equal cost multipath routing och Elastic IP (ECMP).

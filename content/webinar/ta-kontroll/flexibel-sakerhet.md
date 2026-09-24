@@ -42,7 +42,9 @@ I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterl­evnadskunn
 
 De inleder med att förklara hur moderna programvaru­utvecklings­tekniker, som containerisering, ger applikationer möjligheten att köras oberoende av den underliggande hårdvaran och infrastrukturen. Gabriel betonar hur containrar kan minska beroendet av specifika operativsystem och hårdvaru­resurser, vilket leder till att uppdateringar och underhåll kan utföras mer effektivt och med mindre störningar.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+### Prata med en lösningsarkitekt
+
+Vill ni diskutera hur er applikation kan köras på Safesprings infrastruktur? Mejla [hello@safespring.com](mailto:hello@safespring.com) eller ring [08-55 10 73 70](tel:+46855107370) för att komma i kontakt med en lösningsarkitekt.
 
 {{< distance >}}
 

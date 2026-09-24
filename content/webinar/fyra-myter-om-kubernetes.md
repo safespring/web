@@ -17,7 +17,6 @@ videoURL: "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processed
 thumbnail: ""
 chaptersTitle: "I detta avsnitt"
 chapters:
-chapters:
   - title: "Myt 1"
     time: 30
     timeFormatted: "0:36"

@@ -55,8 +55,4 @@ Gabriel Paues från Safespring går igenom Sunet Backuptjänst BaaS tillsammans 
 
 ## Kontakt
 
-**Anders Nilsson**, Sunet  
-anders@sunet.se
-
-**Gabriel Paues**, Safespring  
-gabriel.paues@safespring.com 
+Vill ni prata med en lösningsarkitekt om Safespring Backup? Mejla [hello@safespring.com](mailto:hello@safespring.com) eller ring [08-55 10 73 70](tel:+46855107370).

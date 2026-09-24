@@ -8,7 +8,6 @@ draft: false
 tags: ["Svenska"]
 author: "Amelia Andersdotter"
 dokumentnamn: ""
-socialmediabild: ""
 sidebarlinkname: ""
 sidebarlinkicon: ""
 sidebarlinkurl: ""
