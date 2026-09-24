@@ -28,9 +28,9 @@
 .pc-location-label { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; color: var(--main-color); font: 500 .8rem/1.4 var(--mon-font); }
 .pc-location-label .fa-icon { font-size: 32px; }
 .pc-location:last-child .pc-location-label .fa-icon { color: #32cd32; }
-.pc-visuals .pc-location-features { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 28px 0 0; padding: 0; list-style: none; }
-.pc-visuals .pc-location-features li { position: static; margin: 0; padding: 0; color: var(--main-color); font: 400 .8rem/1.5 var(--mon-font); }
-.pc-visuals .pc-location-features li::before { position: static; content: "•"; width: auto; height: auto; margin-right: 8px; background: none; color: #32cd32; }
+.pc-visuals .pc-location-features { display: grid; gap: 12px; margin: 28px 0 0; padding: 0; list-style: none; }
+.pc-visuals .pc-location-features li { position: relative; margin: 0; padding: 0 0 0 1.25em; color: var(--main-color); font: 400 .8rem/1.5 var(--mon-font); }
+.pc-visuals .pc-location-features li::before { position: absolute; top: .55em; left: 0; display: block; content: ""; width: .4em; height: .4em; margin: 0; border-radius: 50%; background: #32cd32; }
 .pc-platform { display: grid; gap: 48px; }
 .pc-technology { display: flex; align-items: center; gap: 14px; padding-bottom: 28px; margin-bottom: 32px; border-bottom: 1px solid #195f8c26; color: var(--main-color); font: 300 1.7rem/1.15 var(--hind-font); }
 .pc-technology .fa-icon { flex-shrink: 0; font-size: 30px; color: var(--clear-blue-color); }
@@ -67,6 +67,4 @@
   .pc-layer-icon { min-height: 64px; }
   .pc-layer-copy { padding: 24px 20px; }
   .pc-location, .pc-feature-copy { padding: 28px 24px; }
-  .pc-visuals .pc-location-features { display: block; }
-  .pc-visuals .pc-location-features li + li { margin-top: 8px; }
 }
