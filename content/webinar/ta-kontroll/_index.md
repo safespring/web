@@ -43,4 +43,6 @@ Upptäck varje avsnitt i vår serie och lär dig mer om de specifika säkerhetsu
    Utforska hur hållbarhetsprinciper kan integreras i din säkerhetsstrategi för att minska miljöpåverkan samtidigt som du skyddar data.
 
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+### Prata med en lösningsarkitekt
+
+Vill ni diskutera hur er applikation kan köras på Safesprings infrastruktur? Mejla [hello@safespring.com](mailto:hello@safespring.com) eller ring [08-55 10 73 70](tel:+46855107370) för att komma i kontakt med en lösningsarkitekt.

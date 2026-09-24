@@ -1,6 +1,5 @@
 ---
 title: "Thank you for subscribing to Safespring Knowledge Hub!"
-section: "News and content"
 language: "En"
 date: 2024-12-03
 draft: false

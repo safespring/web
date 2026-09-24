@@ -4,7 +4,6 @@ date: 2023-03-02T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "This solution brief provides step-by-step instructions on how to repartition the root filesystem on an NVMe instance in the l2-series on Safespring's platform."
-background: ""
 sidebarlinkname: "Meet a cloud Architect"
 sidebarlinkurl: "/en/demo"
 sidebarlinkname2: ""

@@ -9,7 +9,6 @@ draft: false
 tags: ["Svenska"]
 author: "Martin Millnert"
 dokumentnamn: ""
-socialmediabild: "Safespring_Linkedin_cloudact-gdpr.jpg"
 sidebarlinkname: "Hämta"
 sidebarlinkicon: "fa-file-download"
 sidebarlinkurl: "#download"

@@ -51,7 +51,7 @@
       </a>
       {{ end }}
       {{ if .Params.email }}
-      <a class="contact-link" href="tel:{{ .Get `email` }}">
+      <a class="contact-link" href="mailto:{{ .Get `email` }}">
         <i class="fa-solid fa-envelope"></i>
         <span>{{ .Get "email" }}</span>
       </a>

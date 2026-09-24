@@ -27,7 +27,7 @@ Fyll i formuläret om du vill att vi återkommer till dig. Du kan också alltid 
 Här hittar du kontaktinformation till några av våra medarbetare. Tveka inte att ta kontakt om du har frågor eller behöver hjälp med något specifikt.
 
 {{< contact picture="fredric.webp" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.com" >}}
-{{< contact picture="gabriel.webp" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
+{{< contact picture="rob-m.webp" title="CR&OO" name="Rob McCuaig" email="rob.mccuaig@safespring.com" >}}
 {{< contact picture="/marcus.webp" title="CMO" name="Marcus Boberg" phone="+46762117309" email="marcus.boberg@safespring.com" >}}
 
 {{< distance >}}

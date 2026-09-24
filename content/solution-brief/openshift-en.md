@@ -4,7 +4,6 @@ date: 2021-12-07T13:58:58+01:00
 draft: false
 tags: ["English"]
 intro: "With the OKD community installer, you can quickly get an OpenShift cluster up-and-running."
-background: "safespring-compute.jpg"
 sidebarlinkname: "Contact Us"
 sidebarlinkurl: "/en/contact"
 socialmedia: "safespring-compute.jpg"

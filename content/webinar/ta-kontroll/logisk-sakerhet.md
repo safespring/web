@@ -42,7 +42,9 @@ I detta avsnitt diskuterar Amelia Andersdotter, risk och regelefterlevnads­råd
 
 Amelia och Gabriel belyser olika aspekter av logisk säkerhet, inklusive kryptering, datalagring och redundanta system som skyddar data även vid fysiska fel. De diskuterar också moderna tekniker som containerisering och konfidentiell databehandling, som skyddar data både under bearbetning och i vila, vilket minskar risken för obehörig åtkomst.
 
-{{< horisontal-card image="/img/card/safespring-gabriel-demo.webp" cardtitle="Se demo" link="/demo/compute/" linktext="Se demo" text="Prata direkt med vår molnarkitekt Gabriel om hur er applikation kan byggas på Safesprings digitala infrastruktur." >}}
+### Prata med en lösningsarkitekt
+
+Vill ni diskutera hur er applikation kan köras på Safesprings infrastruktur? Mejla [hello@safespring.com](mailto:hello@safespring.com) eller ring [08-55 10 73 70](tel:+46855107370) för att komma i kontakt med en lösningsarkitekt.
 
 {{< distance >}}
 

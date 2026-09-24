@@ -105,19 +105,9 @@ Our courses are thoroughly researched and structured to provide intense and inti
 - Interactive roundtable discussion and breakout sessions
 - Hands-on “learning by doing”
 
-## About the instructors
-The curriculum is designed by experts and our instructors are all experienced professionals. The courseware is always current and updated with the latest tech advancements.
+## Contact us about training
 
-### Max Andersson
-*Technical PM & Software engineer*
-
-Max has a background in both computer science and business studies. He specializes in distributed application development and business development. Previous work has been related to migrating legacy systems to become cloud native and build cloud infrastructure to handle large scale deployments in hybrid cloud environments.
-
-### Gabriel Paues
-*Cloud Architect*
-
-Gabriel has a background in networking and cloud services and has several years of experience in professional training. Gabriel’s energetic attitude makes sure you will learn what you need while also having fun.
-
+Have questions about our courses or want to discuss your team's training needs? Email [hello@safespring.com](mailto:hello@safespring.com) or call [+46 8 55 10 73 70](tel:+46855107370).
 
 <script>
 var acc = document.getElementsByClassName("accordion");

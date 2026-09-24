@@ -52,9 +52,9 @@ Safespring is the preferred cloud platform for research and education. Welcome t
 
 [Read more about our OCRE agreement](/ocre)
 
-{{< contact picture="/img/kontakt/fredric-wallsten-2023.webp" title="CCO" name="Fredric Wallsten" phone="+46766292502" email="fredric.wallsten@safespring.com" >}}
-{{< contact picture="/img/kontakt/gabriel-paues.jpg" title="Cloud Architect" name="Gabriel Paues" email="gabriel.paues@safespring.com" >}}
-{{< contact picture="/img/kontakt/jarle-bjorgeengen.jpg" title="Chief Product Officer" name="Jarle Bjørgeengen" email="jarle.bjorgeengen@safespring.com" >}}
+## Contact Safespring
+
+To discuss your cloud infrastructure with a solution architect at Safespring, email [hello@safespring.com](mailto:hello@safespring.com) or call [+46 8 55 10 73 70](tel:+46855107370).
 
 ## References
 ### Database as a service
