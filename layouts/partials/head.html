@@ -260,10 +260,6 @@
       <script src="{{ $mobilePriceTablesJS.RelPermalink }}" defer></script>
     {{ end }}
 
-    {{ if eq .Layout "private-cloud" }}
-      {{ $privateCloudCSS := slice (resources.Get "css/icon-blocks.css") (resources.Get "css/horizontal-card.css") (resources.Get "css/accordion.css") (resources.Get "css/private-cloud.css") | resources.Concat "css/private-cloud-page.css" | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $privateCloudCSS.RelPermalink }}" integrity="{{ $privateCloudCSS.Data.Integrity }}" crossorigin="anonymous" />
-    {{ end }}
     {{ partial "jsonld.html" . }}
   </head>
 </html>
