@@ -1,0 +1,97 @@
+{{- $page := .Page -}}
+{{- $kind := .Get 0 -}}
+{{- $data := index .Page.Params.private_cloud_visuals $kind -}}
+<div class="pc-visuals">
+  {{ if eq $kind "benefits" }}
+  <div class="pc-benefits">
+    {{ $icons := slice "fa-solid fa-server" "fa-solid fa-headset" "fa-solid fa-code" }}
+    {{ range $i, $item := $data }}
+    <div class="pc-benefit">
+      {{ partial "fa-icon.html" (dict "class" (index $icons $i) "page" $page) }}
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </div>
+    {{ end }}
+  </div>
+  {{ else if eq $kind "responsibility" }}
+  <div class="pc-layers">
+    {{ $icons := slice "fa-solid fa-user-lock" "fa-solid fa-cloud" "fa-solid fa-server" }}
+    {{ range $i, $layer := $data.layers }}
+    <div class="pc-layer{{ if eq $i 1 }} pc-layer-managed{{ end }}">
+      <div class="pc-layer-icon">{{ partial "fa-icon.html" (dict "class" (index $icons $i) "page" $page) }}</div>
+      <div class="pc-layer-copy">
+        <p class="pc-owner">{{ .owner }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+    </div>
+    {{ end }}
+    <p class="pc-note">{{ $data.note }}</p>
+  </div>
+  {{ else if eq $kind "placement" }}
+  <div class="pc-locations">
+    {{ $icons := slice "fa-solid fa-server" "fa-solid fa-leaf" }}
+    {{ range $i, $option := $data }}
+    <article class="pc-location" aria-labelledby="location-{{ .id }}">
+      <div class="pc-location-label">
+        {{ partial "fa-icon.html" (dict "class" (index $icons $i) "page" $page) }}
+        <span>{{ .label }}</span>
+      </div>
+      <h3 id="location-{{ .id }}">{{ .title }}</h3>
+      <p>{{ .text }}</p>
+      <p>{{ .detail }}</p>
+      <ul class="pc-location-features">{{ range .tags }}<li>{{ . }}</li>{{ end }}</ul>
+      {{ with .link }}<a class="text-button" href="{{ . }}">{{ $option.linktext }}</a>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+  {{ else if eq $kind "platform" }}
+  <div class="pc-platform">
+    {{ with $data.compute }}
+    <article class="pc-compute pc-component" aria-labelledby="pc-compute-title">
+      <div class="pc-technology">
+        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-server" "page" $page) }}
+        <span>{{ .technology }}</span>
+      </div>
+      <h3 id="pc-compute-title">{{ .title }}</h3>
+      <p>{{ .text }}</p>
+      <p class="pc-component-note">{{ .note }}</p>
+    </article>
+    {{ end }}
+    {{ with $data.storage }}
+    <div class="pc-storage" role="group" aria-labelledby="pc-storage-title">
+      <div class="pc-technology">
+        {{ partial "fa-icon.html" (dict "class" "fa-solid fa-database" "page" $page) }}
+        <span id="pc-storage-title">{{ .technology }}<small>{{ .label }}</small></span>
+      </div>
+      <div class="pc-storage-items">
+        {{ range $i, $item := .items }}
+        <article class="pc-component" aria-labelledby="pc-storage-{{ $i }}">
+          <h3 id="pc-storage-{{ $i }}">{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          <p class="pc-component-note">{{ .note }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ else if eq $kind "trust" }}
+  <div class="pc-feature-card">
+    <div class="pc-feature-image pc-certification-image" aria-hidden="true"></div>
+    <div class="pc-feature-copy">
+      <h3>{{ $data.title }}</h3>
+      <p>{{ $data.text }}</p>
+      <a class="text-button" href="{{ relref $page $data.link }}">{{ $data.linktext }}</a>
+    </div>
+  </div>
+  {{ else if eq $kind "contact" }}
+  <div class="pc-feature-card">
+    <div class="pc-feature-image pc-contact-image" aria-hidden="true"></div>
+    <div class="pc-feature-copy">
+      <p>{{ $data.text }}</p>
+      <a class="button" href="{{ relref $page "contact" }}">{{ $data.cta }}</a>
+    </div>
+  </div>
+  {{ end }}
+</div>
