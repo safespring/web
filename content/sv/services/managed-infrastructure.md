@@ -7,8 +7,8 @@ lastmod: 2026-09-24
 draft: false
 layout: "private-cloud"
 intro: "Ett dedikerat moln på öppen teknik. Safespring sköter plattformens drift och underhåll, med placering och kapacitet utifrån era krav."
-background: "safespring_bilder_3.jpg"
-socialmedia: "safespring_bilder_3.jpg"
+background: "safespring-compute-background.svg"
+socialmedia: "socialmedia/safespring-private-cloud.jpg"
 slug: "private-cloud"
 aliases:
   - /tjanster/safespring-on-premise-cloud/

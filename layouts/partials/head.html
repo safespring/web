@@ -261,9 +261,8 @@
     {{ end }}
 
     {{ if eq .Layout "private-cloud" }}
-      {{ $privateCloudCSS := resources.Get "css/private-cloud.css" | minify | fingerprint }}
+      {{ $privateCloudCSS := slice (resources.Get "css/icon-blocks.css") (resources.Get "css/horizontal-card.css") (resources.Get "css/accordion.css") (resources.Get "css/private-cloud.css") | resources.Concat "css/private-cloud-page.css" | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $privateCloudCSS.RelPermalink }}" integrity="{{ $privateCloudCSS.Data.Integrity }}" crossorigin="anonymous" />
-      {{ partial "js-component.html" (dict "source" "js/components/private-cloud.js") }}
     {{ end }}
     {{ partial "jsonld.html" . }}
   </head>
