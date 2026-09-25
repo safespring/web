@@ -12,9 +12,9 @@
     state.requested = true;
     var mtm = window._mtm = window._mtm || [];
     mtm.push({ 'mtm.startTime': (new Date().getTime()), event: 'mtm.Start' });
-    var containerUrl = 'https://analytics.safespring.com/js/container_43nGFJfy.js?v=google-tag-owner-20260925';
+    var containerUrl = 'https://analytics.safespring.com/js/container_43nGFJfy.js?v=matomo-owner-20260925-r1';
     if (window.location.hostname === 'www2.safespring.com') {
-      containerUrl = 'https://analytics.safespring.com/js/container_43nGFJfy_staging_a9c2dc2373b94947ef881235.js?v=8d271a7cbc52';
+      containerUrl = 'https://analytics.safespring.com/js/container_43nGFJfy_staging_a9c2dc2373b94947ef881235.js?v=d4b3314b2ea2';
     }
     var script = document.createElement('script');
     script.id = 'matomo-container-tag';

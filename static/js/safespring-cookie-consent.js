@@ -20,7 +20,7 @@ var CATEGORY_SCRIPTS = {
     { id: 'analytics-script',   src: '/js/matomo.js?v=e56bbb690474' },
     { id: 'qualified-evaluation-script', src: '/js/qualified-evaluation.js' },
     { id: 'qualified-evaluation-v2-script', src: '/js/qualified-evaluation-v2.js' },
-    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js?v=b93ec61b37cc' },
+    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js?v=7a3e646446f4' },
     { id: 'r2b2-script',        src: '/js/r2b2.js' }
   ],
   marketing: [
