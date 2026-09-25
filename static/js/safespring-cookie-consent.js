@@ -20,11 +20,11 @@ var CATEGORY_SCRIPTS = {
     { id: 'analytics-script',   src: '/js/matomo.js' },
     { id: 'qualified-evaluation-script', src: '/js/qualified-evaluation.js' },
     { id: 'qualified-evaluation-v2-script', src: '/js/qualified-evaluation-v2.js' },
-    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js' },
+    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js?v=03dd77c0a193' },
     { id: 'r2b2-script',        src: '/js/r2b2.js' }
   ],
   marketing: [
-    { id: 'google-ads-script',  src: '/js/google-ads.js' },
+    { id: 'google-ads-script',  src: '/js/google-ads.js?v=885ab2c1ed4c' },
     { id: 'upsales-script',     src: 'https://img.upsales.com/lBtRI6eK9zoMXU3igCaQIw==/visit/v.js' }
   ]
 };
