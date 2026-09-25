@@ -89,7 +89,52 @@
         window.dataLayer.push(arguments);
       };
     }
+
+    ensureGoogleTag();
     return true;
+  }
+
+  function hasGoogleCommand(command, accountId) {
+    return window.dataLayer.some(function (entry) {
+      return entry && entry[0] === command &&
+        (!accountId || entry[1] === accountId);
+    });
+  }
+
+  function ensureGoogleTag() {
+    // CookieTractor owns consent defaults and updates. Never grant consent here.
+    var accountId = state.config.accountId;
+    state.configuredAccounts = state.configuredAccounts || {};
+
+    if (!hasGoogleCommand('js') && !state.googleTagRequested) {
+      window.gtag('js', new Date());
+    }
+    if (!state.configuredAccounts[accountId]) {
+      if (!hasGoogleCommand('config', accountId)) {
+        window.gtag('config', accountId);
+      }
+      state.configuredAccounts[accountId] = true;
+    }
+
+    if (state.googleTagRequested) {
+      return;
+    }
+    state.googleTagRequested = true;
+
+    // Reuse a tag already present during migration; do not load a second copy.
+    if (document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js?"]')) {
+      state.googleTagStatus = 'existing';
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.id = 'google-ads-base-tag';
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(accountId);
+    state.googleTagStatus = 'loading';
+    script.onload = function () { state.googleTagStatus = 'loaded'; };
+    script.onerror = function () { state.googleTagStatus = 'error'; };
+    document.head.appendChild(script);
   }
 
   function resolveSendTo(explicitSendTo, conversionType) {
