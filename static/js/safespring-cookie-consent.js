@@ -17,10 +17,10 @@ function removeScript(id) {
 
 var CATEGORY_SCRIPTS = {
   statistical: [
-    { id: 'analytics-script',   src: '/js/matomo.js' },
+    { id: 'analytics-script',   src: '/js/matomo.js?v=e56bbb690474' },
     { id: 'qualified-evaluation-script', src: '/js/qualified-evaluation.js' },
     { id: 'qualified-evaluation-v2-script', src: '/js/qualified-evaluation-v2.js' },
-    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js?v=03dd77c0a193' },
+    { id: 'tagmanager-script',  src: '/js/matomo-tagmanager.js?v=b93ec61b37cc' },
     { id: 'r2b2-script',        src: '/js/r2b2.js' }
   ],
   marketing: [
