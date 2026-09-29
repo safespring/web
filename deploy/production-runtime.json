@@ -1,0 +1,12 @@
+{
+  "verified_on": "2026-09-29",
+  "production_branch": "production",
+  "staging_branch": "master",
+  "hugo_version": "0.111.3",
+  "hugo_extended": true,
+  "git_version": "1.8.3.1",
+  "caddy_major": 1,
+  "os": "CentOS 7.9",
+  "build_platform": "linux/amd64",
+  "build_image": "klakegg/hugo:0.111.3-ext@sha256:44179f2c025a120aa7df63a42982a7c4ba8a27e9360c1d1cbd4e46842920be4f"
+}
