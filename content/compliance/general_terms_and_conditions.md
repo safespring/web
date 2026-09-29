@@ -239,11 +239,11 @@ Other modifications, amendments or other changes to the Agreement may only be ma
 
 {{< distance >}}
 
-# EU Data Act Annex
+## EU Data Act Annex
 
 The following EU Data Act Annex governs all Switch and/or Erase Requests made by Customer pursuant to Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data and amending Regulation (EU) 2017/2394 and Directive (EU) 2020/1828 (“EU Data Act”).
 
-## Definitions
+### Definitions
 
 **Erase Request** means a request by the Customer to exercise its right under EU Data Act to erase the Customer Data from the Service.
 

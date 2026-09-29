@@ -1,0 +1,42 @@
+{{- $page := .page -}}
+{{- $translations := dict
+  "en" (dict "document" "View history on GitHub" "all" "View all document changes on GitHub" "updated" "Last updated" "latest" "Latest document change")
+  "sv" (dict "document" "Visa historik på GitHub" "all" "Visa alla dokumentändringar på GitHub" "updated" "Senast ändrat" "latest" "Senaste dokumentändring")
+  "no" (dict "document" "Se historikk på GitHub" "all" "Se alle dokumentendringer på GitHub" "updated" "Sist endret" "latest" "Siste dokumentendring")
+-}}
+{{- $language := lower ($page.Params.language | default "sv") -}}
+{{- $labels := index $translations $language | default (index $translations "en") -}}
+{{- $sourcePath := "content/compliance" -}}
+{{- $label := $labels.all -}}
+{{- $dateLabel := $labels.latest -}}
+{{- $updated := false -}}
+{{- if .all -}}
+  {{- range where $page.Site.RegularPages "Section" "compliance" -}}
+    {{- with .GitInfo -}}
+      {{- if not $updated -}}
+        {{- $updated = .AuthorDate -}}
+      {{- else if .AuthorDate.After $updated -}}
+        {{- $updated = .AuthorDate -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $sourcePath = printf "content/%s" $page.File.Path -}}
+  {{- $label = $labels.document -}}
+  {{- $dateLabel = $labels.updated -}}
+  {{- with $page.GitInfo -}}
+    {{- $updated = .AuthorDate -}}
+  {{- end -}}
+{{- end -}}
+<div class="compliance-history">
+  {{ with $updated }}
+    <div class="compliance-history__updated">
+      <span class="compliance-history__label">{{ $dateLabel }}</span>
+      <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time>
+    </div>
+  {{ end }}
+  <a class="compliance-history__link" href="{{ printf "https://github.com/safespring/web/commits/production/%s" $sourcePath }}">
+    {{ $label }}
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+  </a>
+</div>

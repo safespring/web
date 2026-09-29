@@ -54,6 +54,8 @@ hugo
 
 Generated output is written to `public/`. That directory is ignored by git and should be treated as build output, not source.
 
+Compliance pages read their last change date from Git when Hugo builds the site. Git must be installed in the build environment (including inside a Docker container), and the checkout must include its full Git history. These dates describe committed document changes, not publication or contract effective dates. Other pages retain their existing front matter date handling.
+
 ## Repository structure
 
 The most important directories are:

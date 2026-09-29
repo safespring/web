@@ -47,6 +47,9 @@
     </div>
   {{ end }}
 </div>
+    {{ if eq .Section "compliance" }}
+      {{ partial "compliance-history.html" (dict "page" . "all" false) }}
+    {{ end }}
     {{ .Content }}
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
