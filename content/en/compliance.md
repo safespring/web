@@ -22,6 +22,8 @@ toc: "On this page"
 
 ## Compliance package
 
+{{< compliance-history >}}
+
 {{< manual-document-table >}}
   {{< manual-document-row
     title="Acceptable Use Policy"

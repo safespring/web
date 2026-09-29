@@ -3,6 +3,11 @@ languageCode = "sv"
 title = "Empowering European Innovation"
 author = "Safespring"
 copyright = "2025 Safespring"
+enableGitInfo = true
+
+# Use Git dates explicitly in the compliance component without changing other pages.
+[frontmatter]
+  lastmod = ["lastmod", "date", "publishDate"]
 
 # Pagination
 [pagination]

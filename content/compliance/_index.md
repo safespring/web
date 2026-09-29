@@ -21,6 +21,8 @@ toc: "På denna sida"
 
 ## Compliance package
 
+{{< compliance-history >}}
+
 {{< document-table label="Dokument" >}}
 
 ## Våra certifieringar
