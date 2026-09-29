@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "Informasjon vedrørende behandling av personopplysninger"
 date: 2022-03-31T14:29:26+02:00
 draft: false

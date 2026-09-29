@@ -3,16 +3,13 @@ languageCode = "sv"
 title = "Empowering European Innovation"
 author = "Safespring"
 copyright = "2025 Safespring"
-enableGitInfo = true
+enableGitInfo = false # Production Git 1.8.3.1 cannot serve Hugo's GitInfo calls.
+paginate = 10
+paginatePath = "page" # Preserve the effective Hugo 0.111.3 production URLs.
 
 # Use Git dates explicitly in the compliance component without changing other pages.
 [frontmatter]
   lastmod = ["lastmod", "date", "publishDate"]
-
-# Pagination
-[pagination]
-  pagerSize = 10
-  path = "latest"
 
 [params]
   mainSections = ['blogg', 'webinar', 'whitepaper', 'solution-brief']

@@ -44,6 +44,8 @@ Partneren vår er sertifisert "{{% tooltip "Kubernetes service providers" %}} K
 
 ### Hvorfor Welkin?
 
+Les også vår [bakgrunnsartikkel om Compliant Kubernetes (på engelsk)](/no/whitepaper/compliant-kubernetes/).
+
 Kubernetes må settes sammen på en sikker måte for bruk i produksjon. "Welkin" ble designet basert på ISO27001-standarden og er en sikkerhetsherdet Kubernetes-distribusjon som inneholder komponentene og konfigurasjonen du trenger for observerbarhet og sikkerhet - fra dag én.
 
 {{< localtextbutton "Utforsk kildekoden" "https://compliantkubernetes.io/" >}}

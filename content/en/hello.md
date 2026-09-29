@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Hello, glad you want to learn more about Safespring"
 language: "En"
 date: 2019-01-07T13:58:58+01:00

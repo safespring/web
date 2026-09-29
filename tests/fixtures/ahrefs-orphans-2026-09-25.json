@@ -1,0 +1,198 @@
+[
+  {
+    "url": "/dokument/cookies/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/cookies.md"
+  },
+  {
+    "url": "/dokument/cookies-en/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/cookies-en.md"
+  },
+  {
+    "url": "/dokument/cookies-no/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/cookies-no.md"
+  },
+  {
+    "url": "/dokument/personuppgiftshantering/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/personuppgiftshantering.md"
+  },
+  {
+    "url": "/dokument/personuppgiftshantering-en/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/personuppgiftshantering-en.md"
+  },
+  {
+    "url": "/dokument/personuppgiftshantering-no/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/personuppgiftshantering-no.md"
+  },
+  {
+    "url": "/dokument/personuppgiftshantering-en-v2/",
+    "action": "redirect",
+    "target": "/compliance/privacy_policy_web_recruitment/",
+    "source": "content/dokument/personuppgiftshantering-en-v2.md"
+  },
+  {
+    "url": "/no/no-kontakt-old/",
+    "action": "redirect",
+    "target": "/no/kontakt/",
+    "source": "content/no/no-kontakt-old.md"
+  },
+  {
+    "url": "/no/aktuelt/norsk_skytjeneste/",
+    "action": "redirect",
+    "target": "/no/aktuelt/norsk-skytjeneste/",
+    "source": "content/no/aktuelt/norsk_skytjeneste.md"
+  },
+  {
+    "url": "/en/ocre-2024/",
+    "action": "redirect",
+    "target": "/en/ocre/",
+    "source": "content/en/ocre-2024.md"
+  },
+  {
+    "url": "/en/documents/acceptable-use-policy/",
+    "action": "redirect",
+    "target": "/compliance/acceptable_use_policy/",
+    "source": "content/en/documents/acceptable-use-policy.md"
+  },
+  {
+    "url": "/latest/safespring-knowledge-hub-success/",
+    "action": "noindex",
+    "source": "content/latest/safespring-knowledge-hub-success.md"
+  },
+  {
+    "url": "/survey/thanks/",
+    "action": "noindex",
+    "source": "content/survey-thanks.md"
+  },
+  {
+    "url": "/en/whitepaper/thanks/",
+    "action": "noindex",
+    "source": "content/en/whitepaper/thanks.md"
+  },
+  {
+    "url": "/no/takk/",
+    "action": "noindex",
+    "source": "content/no/takk.md"
+  },
+  {
+    "url": "/categories/",
+    "action": "noindex",
+    "source": "content/categories/_index.md"
+  },
+  {
+    "url": "/tjanster/samurai/",
+    "action": "linked",
+    "link_from": "/om-safespring/samarbeten-och-partners/"
+  },
+  {
+    "url": "/tjanster/dockyards/",
+    "action": "linked",
+    "link_from": "/tjanster/containerplattform/"
+  },
+  {
+    "url": "/tjanster/tloop/",
+    "action": "linked",
+    "link_from": "/tjanster/managed-infrastructure/"
+  },
+  {
+    "url": "/tjanster/konsulttjanster/",
+    "action": "linked",
+    "link_from": "/tjanster/"
+  },
+  {
+    "url": "/tjanster/hybrid-infrastruktur/",
+    "action": "linked",
+    "link_from": "/tjanster/managed-infrastructure/"
+  },
+  {
+    "url": "/tjanster/utbildning/",
+    "action": "linked",
+    "link_from": "/tjanster/"
+  },
+  {
+    "url": "/en/services/compliant-kubernetes/",
+    "action": "linked",
+    "link_from": "/en/services/containerplatform/"
+  },
+  {
+    "url": "/en/services/stakater/",
+    "action": "linked",
+    "link_from": "/en/services/containerplatform/"
+  },
+  {
+    "url": "/en/services/managed-infrastructure/",
+    "action": "linked",
+    "link_from": "/en/services/compute/"
+  },
+  {
+    "url": "/en/whitepaper/migrate-from-azure/",
+    "action": "linked",
+    "link_from": "/en/services/compliant-kubernetes/"
+  },
+  {
+    "url": "/en/whitepaper/immutable-storage/",
+    "action": "linked",
+    "link_from": "/en/services/storage/"
+  },
+  {
+    "url": "/no/whitepaper/immutable-storage/",
+    "action": "linked",
+    "link_from": "/no/tjenester/storage/"
+  },
+  {
+    "url": "/no/whitepaper/compliant-kubernetes/",
+    "action": "linked",
+    "link_from": "/no/tjenester/compliant-kubernetes/"
+  },
+  {
+    "url": "/no/whitepaper/schremsii/",
+    "action": "linked",
+    "link_from": "/no/gdpr/"
+  },
+  {
+    "url": "/no/aktuelt/norsk-skytjeneste/",
+    "action": "linked",
+    "link_from": "/no/gdpr/"
+  },
+  {
+    "url": "/no/bransjer/",
+    "action": "linked",
+    "link_from": "/no/om-safespring/"
+  },
+  {
+    "url": "/no/demo/",
+    "action": "linked",
+    "link_from": "/no/kontakt/"
+  },
+  {
+    "url": "/en/hello/",
+    "action": "noindex",
+    "source": "content/en/hello.md"
+  },
+  {
+    "url": "/no/hello/",
+    "action": "noindex",
+    "source": "content/no/hello.md"
+  },
+  {
+    "url": "/upplev/",
+    "action": "noindex",
+    "source": "content/upplev.md"
+  },
+  {
+    "url": "/no/opplev/",
+    "action": "noindex",
+    "source": "content/no/opplev.md"
+  }
+]

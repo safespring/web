@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/acceptable_use_policy/"
+noindex: true
 title: "Safespring Acceptable Use Policy"
 date: 2024-05-17
 draft: false

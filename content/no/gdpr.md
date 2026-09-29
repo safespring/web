@@ -29,6 +29,9 @@ TOC: "På denne siden"
 
 
 ## Eksterne databeskyttelsestiltak
+
+For bakgrunn fra 2020, se vår [informasjonsguide om Schrems II](/no/whitepaper/schremsii/) og intervjuet [Trenger vi en norsk statlig skytjeneste?](/no/aktuelt/norsk-skytjeneste/).
+
 I konteksten av databeskyttelse og GDPR diskuteres ofte tredjelands­overføringer. Et helt kapittel i GDPR handler utelukkende om begrensningene av mulighetene for å overføre data, og vi har tidligere utviklet [anbefalinger for organisasjoner](/whitepaper/schrems-ii/) som fortsatt sliter med nettopp dette. Men disse er ikke de eneste kravene til databehandlere der behandlere kan hjelpe.
 
 Safesprings forpliktelse som deres databehandler er å aktivt assistere med deres overholdelse (i henhold til artikkel 28.3). Vi er her for å gjøre arbeidet deres enklere og mer effektivt når det kommer til å møte databeskyttelseskravene. Vår skyplattform sikrer at dere, som databehandlere, alltid kan møte kravene GDPR stiller til dere.

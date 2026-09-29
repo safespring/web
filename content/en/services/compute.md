@@ -27,6 +27,8 @@ megamenu: "yes"
 
 ## Swedish Cloud Services
 
+If you need infrastructure in your own data center, explore [Safespring On-Premise Cloud](/en/services/managed-infrastructure/).
+
 {{< ingress >}}
 Discover a flexible IT solution that creates opportunities instead of tying up capital.
 {{< /ingress >}}

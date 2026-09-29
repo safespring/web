@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Hei, hyggelig at du vil vite mer om Safespring"
 language: "No"
 date: 2019-01-07T13:58:58+01:00

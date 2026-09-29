@@ -71,6 +71,8 @@ Utnytt Safespring Storage til å lagre store datasett som kreves for analyse- og
 
 #### Databackup og gjenoppretting
 
+Les vår [guide til immutable object storage (på engelsk)](/no/whitepaper/immutable-storage/) for mer om objektlåsing og sikkerhetskopiering.
+
 Vår backup-tjeneste bruker Safespring Storage som grunnlag for å sikre sikkerhetskopiering av dine kritiske data og sikre rask gjenoppretting ved katastrofer eller datatap.
 
 #### Samsvar og arkivering

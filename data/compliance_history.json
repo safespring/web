@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "documents": {
+    "compliance/acceptable_use_policy.md": {
+      "author_date": "2026-04-28T22:47:23+02:00",
+      "commit": "1301de2c797c4ac64e0c86fa9b1070f18489b197",
+      "source_sha256": "dd342d52480545c66f0ff1cf45ed3b71272ef3339099b5f3e7de47cc6601cd61"
+    },
+    "compliance/data_processing_agreement.md": {
+      "author_date": "2026-08-25T16:24:04+02:00",
+      "commit": "895eb3e6b637e9946a1784127ffda68d00390f57",
+      "source_sha256": "940105470f17f259544ae995366ebc4eaac28a5a16f429396b04a9782a9d4042"
+    },
+    "compliance/general_terms_and_conditions.md": {
+      "author_date": "2026-09-29T10:55:50+02:00",
+      "commit": "2fb00f0fec9b21f316c756795997c829ad58a830",
+      "source_sha256": "87fc884cbb3d5d464adfe3e009dda8f20d840294281fb2cb61b88e299a8068b8"
+    },
+    "compliance/privacy_policy.md": {
+      "author_date": "2026-08-24T11:02:20+02:00",
+      "commit": "f02d0d013a04fb73d622e70d781fffd1ad52f8e2",
+      "source_sha256": "038552a6180bd0ff893ca09ae0cb83c4c726a1924d5b6981feff873a1c950e13"
+    },
+    "compliance/privacy_policy_web_recruitment.md": {
+      "author_date": "2026-08-24T11:02:20+02:00",
+      "commit": "f02d0d013a04fb73d622e70d781fffd1ad52f8e2",
+      "source_sha256": "38c69599edf1d8edb2ea07b9f20e93552819a09d10194c6b26bb3d0aac69c9b9"
+    },
+    "compliance/service_level_agreement.md": {
+      "author_date": "2026-05-26T14:15:03+02:00",
+      "commit": "a2fde4736543c1ba29ce28084f58eaae974b28a6",
+      "source_sha256": "a2db6006ddd3d5e456231e551449c36a9655877c2ca5024d3f60bf60fd0339d6"
+    },
+    "compliance/support_process.md": {
+      "author_date": "2026-08-13T10:03:55+02:00",
+      "commit": "a907b8bcd73b1c15865a6c9e2262e081c89e1075",
+      "source_sha256": "4f06671364b27e8b9a0cab63d6adef6ef2743807d129cf90b9917a0a0e8f8217"
+    }
+  }
+}

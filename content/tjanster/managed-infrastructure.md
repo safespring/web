@@ -65,6 +65,8 @@ Ni får tillgång till snabb och professionell support med en Technical Account 
 
 ### Tilläggstjänster för On-Premise Cloud
 
+Läs även om [hybrid infrastruktur](/tjanster/hybrid-infrastruktur/) och [Private Cloud i T.Loops Data Energy Center](/tjanster/tloop/).
+
 Börja arbeta med hybrid cloud med följande tilläggstjänster för att anpassa det efter dina behov och optimera prestanda.
 
 {{% accordion title="Kombinera med Safesprings publika molnplattform" %}}

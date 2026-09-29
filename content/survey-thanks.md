@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Survey received"
 language: "En"
 date: 2026-03-09

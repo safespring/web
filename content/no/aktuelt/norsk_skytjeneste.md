@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/no/aktuelt/norsk-skytjeneste/"
+noindex: true
 title: "Trenger vi en norsk statlig skytjeneste?"
 date: 2020-10-14T09:42:10+02:00
 draft: false

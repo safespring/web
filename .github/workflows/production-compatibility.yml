@@ -1,0 +1,27 @@
+name: Production compatibility
+
+on:
+  pull_request:
+    branches: [master, production]
+  push:
+    branches: [master, production]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  production-build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test compatibility guards
+        run: python3 -m unittest discover -s tests -p 'test_production_compatibility.py'
+      - name: Check the deployed Hugo and Git constraints
+        run: python3 scripts/check-production.py

@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "About the Website"
 intro: "Safespring's websites use cookies to improve usability. Statistics and analysis tools are used to improve the website."
 date: 2022-12-26T09:24:38+02:00

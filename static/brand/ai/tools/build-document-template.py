@@ -8,7 +8,7 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Inches, Pt, RGBColor
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 OUT = ROOT / "static" / "brand" / "ai" / "templates" / "safespring-document-template.docx"
 LOGO_BLUE = ROOT / "static" / "img" / "logos" / "safespring" / "png" / "safespring_logotype_blue_png.png"
 

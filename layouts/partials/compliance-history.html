@@ -11,21 +11,25 @@
 {{- $dateLabel := $labels.latest -}}
 {{- $updated := false -}}
 {{- if .all -}}
+  {{- $allDatesKnown := true -}}
   {{- range where $page.Site.RegularPages "Section" "compliance" -}}
-    {{- with .GitInfo -}}
+    {{- with partial "compliance-history-date.html" . -}}
       {{- if not $updated -}}
-        {{- $updated = .AuthorDate -}}
-      {{- else if .AuthorDate.After $updated -}}
-        {{- $updated = .AuthorDate -}}
+        {{- $updated = . -}}
+      {{- else if .After $updated -}}
+        {{- $updated = . -}}
       {{- end -}}
+    {{- else -}}
+      {{- $allDatesKnown = false -}}
     {{- end -}}
   {{- end -}}
+  {{- if not $allDatesKnown -}}{{- $updated = false -}}{{- end -}}
 {{- else -}}
   {{- $sourcePath = printf "content/%s" $page.File.Path -}}
   {{- $label = $labels.document -}}
   {{- $dateLabel = $labels.updated -}}
-  {{- with $page.GitInfo -}}
-    {{- $updated = .AuthorDate -}}
+  {{- with partial "compliance-history-date.html" $page -}}
+    {{- $updated = . -}}
   {{- end -}}
 {{- end -}}
 <div class="compliance-history">

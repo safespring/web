@@ -1,0 +1,15 @@
+{{- /* Generated before deployment; rendering must not invoke the server's old Git. */ -}}
+{{- $updated := false -}}
+{{- with .File -}}
+  {{- $sourcePath := printf "content/%s" .Path -}}
+  {{- $filePath := .Path -}}
+  {{- with $.Site.Data.compliance_history -}}
+    {{- with index .documents $filePath -}}
+      {{- /* Never show a recorded date against changed/uncommitted source text. */ -}}
+      {{- if eq .source_sha256 (sha256 (readFile $sourcePath)) -}}
+        {{- $updated = time .author_date -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $updated -}}

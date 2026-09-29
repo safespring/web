@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Opplev Safespring"
 language: "No"
 date: 2018-12-18T13:03:45+01:00

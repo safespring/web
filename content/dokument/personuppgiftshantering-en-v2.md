@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "Privacy Policy"
 date: 2026-03-04
 draft: false

@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "Om webbplatsen"
 intro: "Safesprings webbplatser använder cookies för att förbättra användbarheten. Statistik- och analysverktyg används för att förbättra webbplatsen."
 date: 2022-12-26T09:24:38+02:00

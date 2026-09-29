@@ -14,6 +14,12 @@ nosidebar: ""
 
 {{< services >}}
 
+## Fler tjänster
+
+- [Private Cloud i eget datacenter](/tjanster/managed-infrastructure/)
+- [Konsulttjänster inom molninfrastruktur](/tjanster/konsulttjanster/)
+- [Utbildningar inom moln och DevOps](/tjanster/utbildning/)
+
 {{< ingress >}}
 Stabil infrastruktur efter behov. Med Safespring får du en effektiv modell för leverans av tjänst utan att förlora kontroll över din data.
 {{< /ingress >}}

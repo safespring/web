@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/no/kontakt/"
+noindex: true
 title: "Kontakt oss på Safespring"
 intro: "Safespring leverer en lokalt basert sky bygget for morgendagens apper."
 date: "2020-09-25"

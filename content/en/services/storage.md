@@ -67,6 +67,8 @@ Leverage Safespring Storage for storing large datasets required for analytics an
 
 #### Data Backup and Recovery
 
+Read our [guide to immutable object storage](/en/whitepaper/immutable-storage/) for more about object locking and backups.
+
 Our Backup service uses Safesprings Storage as a base to securely back up your critical data and ensure quick recovery in case of disasters or data loss events.
 
 #### Compliance and Archiving

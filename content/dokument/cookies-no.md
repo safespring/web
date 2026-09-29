@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "Om nettstedet"
 intro: "Safesprings nettsteder bruker informasjonskapsler (cookies) for å forbedre brukervennligheten. Statistikk- og analyseverktøy brukes for å forbedre nettstedet."
 date: 2023-05-26T09:24:38+02:00
