@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "Information Regarding Personal Data Processing"
 date: 2023-05-31T14:29:26+02:00
 draft: false

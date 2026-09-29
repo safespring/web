@@ -1,0 +1,26 @@
+# Exact legacy routes from the Ahrefs audit on 2026-09-25.
+# Import inside the existing www.safespring.com Caddy v1 site block.
+# Tested with Caddy 1.0.3. No catch-all rules.
+
+redir /dokument/cookies /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/cookies/ /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/cookies-en /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/cookies-en/ /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/cookies-no /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/cookies-no/ /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering/ /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering-en /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering-en/ /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering-no /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering-no/ /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering-en-v2 /compliance/privacy_policy_web_recruitment/ 301
+redir /dokument/personuppgiftshantering-en-v2/ /compliance/privacy_policy_web_recruitment/ 301
+redir /no/no-kontakt-old /no/kontakt/ 301
+redir /no/no-kontakt-old/ /no/kontakt/ 301
+redir /no/aktuelt/norsk_skytjeneste /no/aktuelt/norsk-skytjeneste/ 301
+redir /no/aktuelt/norsk_skytjeneste/ /no/aktuelt/norsk-skytjeneste/ 301
+redir /en/ocre-2024 /en/ocre/ 301
+redir /en/ocre-2024/ /en/ocre/ 301
+redir /en/documents/acceptable-use-policy /compliance/acceptable_use_policy/ 301
+redir /en/documents/acceptable-use-policy/ /compliance/acceptable_use_policy/ 301

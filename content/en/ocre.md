@@ -19,7 +19,6 @@ TOC: "On this page"
 aliases:
     - /OCRE
     - /ocre
-    - /en/ocre-2024
 ---
 
 

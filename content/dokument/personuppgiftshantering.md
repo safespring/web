@@ -1,4 +1,7 @@
 ---
+layout: "redirect"
+redirecturl: "/compliance/privacy_policy_web_recruitment/"
+noindex: true
 title: "Information avseende personuppgifts­behandling"
 date: 2024-01-05
 draft: false
