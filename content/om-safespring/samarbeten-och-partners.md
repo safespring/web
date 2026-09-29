@@ -45,6 +45,8 @@ Jag är CCO på Safespring och hjälper dig att använda våra tjänster som red
 
 ## Några av våra partners
 
+Läs om [NTT Securitys Samurai MDR på Safespring](/tjanster/samurai/).
+
 <div class="partner-grid">
 <a href="https://nextcloud.com"><div class="partner-container"><img style="max-height:70px;" class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_nextcloud.svg"></div></a><a href="https://elastisys.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_elastisys.svg"></div></a>
 <a href="https://severalnines.com/"><div class="partner-container"><img class="partnerlogo" src="/om-safespring/images/partners/safespring_partners_severalnines.svg"></div></a>

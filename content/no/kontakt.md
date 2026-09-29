@@ -17,6 +17,9 @@ pageimage: ""
 {{< distance >}}
 
 ### Skriv til oss
+
+Vil du diskutere skyinfrastruktur og etterlevelse? [Snakk med en skyarkitekt](/no/demo/).
+
 Fyll ut skjemaet hvis du vil at vi skal kontakte deg. Du kan også alltid sende e-post eller ringe direkte.
 
 {{< contact-form >}}

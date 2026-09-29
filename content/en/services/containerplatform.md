@@ -72,6 +72,8 @@ The service is delivered from Safespring data centers in Sweden and Norway and r
 
 ## Go deeper before technical evaluation
 
+For other Kubernetes offerings in our partner ecosystem, explore [Elastisys Welkin on Safespring](/en/services/compliant-kubernetes/) and [Stakater's Kubernetes and OpenShift services](/en/services/stakater/).
+
 When you want to validate architecture, responsibility boundaries, and the operating model, these are the most useful next steps.
 
 {{< manual-document-table matomoAction="Container Platform Deep Dive" >}}

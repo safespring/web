@@ -39,6 +39,9 @@ Our partner, Elastisys, is not only certified Kubernetes service providers but a
 ![Welkin on Safespring Compute](/img/saas/elastisys-safespring-compliant-kubernetes-pyramid.svg)
 
 ## Why Choose Welkin?
+
+Planning a migration? Read our [white paper on migrating from Azure Kubernetes Service to Compliant Kubernetes](/en/whitepaper/migrate-from-azure/).
+
 Kubernetes in its purest form is not secure. Welkin is tailored to ISO27001 standards, which means it is designed for maximum security and observability from the start.
 
 ![Welkin on Safespring Compute](/img/saas/safespring-compliant-kubernetes-chart.svg)

@@ -22,6 +22,8 @@ Fra våre profesjonelle datasentre i Sverige og Norge inkluderer leveransen av i
 
 <p><span class="inline-rubrik">Safespring Storage</span> Vi tilbyr en objektlagringstjeneste der vi eksponerer et S3-grensesnitt for applikasjonen din. Tjenesten er optimalisert med stor og billig lagringsplass og er godt egnet for applikasjoner som å lese eller skrive store datamengder.</p>
 
+Se hvordan tjenestene kan brukes i [ulike bransjer](/no/bransjer/).
+
 ## Open Source
 
 Våre tjenester er basert på Open Source. De siste tiårene har vist at programvare med åpen kildekode gir et ekstremt kraftig økosystem av selskaper og organisasjoner som har de samme behovene, men samtidig behovet for tilpassede løsninger.

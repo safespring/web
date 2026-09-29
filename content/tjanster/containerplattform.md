@@ -95,6 +95,8 @@ Tjänsten levereras från Safesprings datahallar i Sverige och Norge och drivs m
 
 ## Fördjupa dig inför teknisk utvärdering
 
+För andra Kubernetes-lösningar i vårt partnerekosystem, läs om [Dockyards på Safespring](/tjanster/dockyards/).
+
 När du vill validera arkitektur, ansvarsfördelning och driftmodell är det här de mest användbara nästa stegen.
 
 {{< manual-document-table matomoAction="Container Platform Deep Dive" >}}
