@@ -4,7 +4,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{ range .Data.Pages }}
     {{- $isInternal := strings.Contains .Permalink "/internal/" -}}
-    {{- if and .Permalink (not .Params.noindex) (not $isInternal) -}}
+    {{- if and .Permalink (not .Params.noindex) (not .Params.redirecturl) (not $isInternal) -}}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
     <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02" ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}

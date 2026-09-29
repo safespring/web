@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Thanks for downloading our white paper"
 date: 2018-06-20
 draft: false

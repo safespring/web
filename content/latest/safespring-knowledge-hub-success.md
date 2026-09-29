@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Thank you for subscribing to Safespring Knowledge Hub!"
 language: "En"
 date: 2024-12-03

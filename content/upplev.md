@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Experience Safespring, based on OpenStack"
 language: "En"
 date: "2023-09-18"
