@@ -11,6 +11,7 @@ from datetime import datetime
 import hashlib
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -90,6 +91,8 @@ def build_site(root, output, runtime):
     git.chmod(0o755)
     command = [
         "docker", "run", "--rm", "--platform", runtime["build_platform"], "--network", "none",
+        # Keep build artifacts removable by the caller on Linux CI runners.
+        "--user", f"{os.getuid()}:{os.getgid()}",
         "--mount", f"type=bind,source={root},target=/src,readonly",
         "--mount", f"type=bind,source={output},target=/out",
         "--env", "HUGO_RESOURCEDIR=/out/resources",
