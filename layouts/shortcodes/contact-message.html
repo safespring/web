@@ -1,0 +1,743 @@
+{{/*
+  Reusable, message-first Upsales contact form.
+
+  Safe preview:
+  {{< contact-message preview="true" >}}
+
+  Live use with the configured Safespring Upsales form:
+  {{< contact-message >}}
+
+  Optional parameters:
+  title, intro, button, message-label, message-placeholder,
+  form-id, form-cid, message-field, consent-field, success-url,
+  theme (cloud|white), id, preview (true|false).
+*/}}
+
+{{- $path := "" -}}
+{{- with .Page.File -}}{{- $path = .Path -}}{{- end -}}
+{{- $pageLang := lower (default "" .Page.Params.language) -}}
+{{- $lang := "sv" -}}
+{{- if or (hasPrefix $path "en/") (eq $pageLang "en") -}}
+  {{- $lang = "en" -}}
+{{- else if or (hasPrefix $path "no/") (eq $pageLang "no") (eq $pageLang "nb") -}}
+  {{- $lang = "no" -}}
+{{- end -}}
+
+{{- $copy := dict
+  "title" "What can we help you with?"
+  "intro" "Briefly describe what you want to solve."
+  "messageLabel" "Describe what you need help with"
+  "messagePlaceholder" "Tell us about the situation, what you want to achieve and any important requirements."
+  "detailsLabel" "How can we contact you?"
+  "detailsIntro" "Enter your details so we can reply."
+  "reviewTitle" "Ready to send?"
+  "reviewIntro" "Read through your message before sending."
+  "messageSummary" "Your message"
+  "edit" "Edit"
+  "stepLabel" "Step"
+  "ofLabel" "of"
+  "next" "Next"
+  "back" "Back"
+  "firstName" "First name"
+  "lastName" "Last name"
+  "email" "Work email"
+  "organization" "Organisation"
+  "termsPrefix" "I accept Safespring's"
+  "termsText" "personal data terms"
+  "termsUrl" "/compliance/privacy_policy_web_recruitment/"
+  "button" "Send message"
+  "sending" "Sending…"
+  "previewStatus" "Preview: the form was not submitted."
+  "errorStatus" "We could not send your message. Please try again or email hello@safespring.com."
+  "successUrl" "https://www.safespring.com/hello"
+  "counterLabel" "characters"
+  "optional" "optional"
+-}}
+
+{{- if eq $lang "sv" -}}
+  {{- $copy = dict
+    "title" "Vad behöver du hjälp med?"
+    "intro" "Beskriv kort vad du vill lösa."
+    "messageLabel" "Beskriv vad du behöver hjälp med"
+    "messagePlaceholder" "Berätta om nuläget, vad du vill uppnå och eventuella krav."
+    "detailsLabel" "Hur kommer vi i kontakt med dig?"
+    "detailsIntro" "Fyll i dina uppgifter så att vi kan svara."
+    "reviewTitle" "Redo att skicka?"
+    "reviewIntro" "Läs igenom ditt meddelande innan du skickar."
+    "messageSummary" "Ditt meddelande"
+    "edit" "Ändra"
+    "stepLabel" "Steg"
+    "ofLabel" "av"
+    "next" "Nästa"
+    "back" "Tillbaka"
+    "firstName" "Förnamn"
+    "lastName" "Efternamn"
+    "email" "Arbetsmail"
+    "organization" "Organisation"
+    "termsPrefix" "Jag accepterar Safesprings"
+    "termsText" "personuppgiftshantering"
+    "termsUrl" "/compliance/privacy_policy_web_recruitment/"
+    "button" "Skicka meddelandet"
+    "sending" "Skickar…"
+    "previewStatus" "Förhandsvisning: formuläret skickades inte."
+    "errorStatus" "Meddelandet kunde inte skickas. Försök igen eller maila hello@safespring.com."
+    "successUrl" "https://www.safespring.com/hello"
+    "counterLabel" "tecken"
+    "optional" "valfritt"
+  -}}
+{{- else if eq $lang "no" -}}
+  {{- $copy = dict
+    "title" "Hva trenger du hjelp med?"
+    "intro" "Beskriv kort hva du vil løse."
+    "messageLabel" "Beskriv hva du trenger hjelp med"
+    "messagePlaceholder" "Fortell om dagens situasjon, hva du vil oppnå og eventuelle krav."
+    "detailsLabel" "Hvordan kan vi kontakte deg?"
+    "detailsIntro" "Fyll inn opplysningene dine, så kan vi svare."
+    "reviewTitle" "Klar til å sende?"
+    "reviewIntro" "Les gjennom meldingen din før du sender."
+    "messageSummary" "Meldingen din"
+    "edit" "Endre"
+    "stepLabel" "Trinn"
+    "ofLabel" "av"
+    "next" "Neste"
+    "back" "Tilbake"
+    "firstName" "Fornavn"
+    "lastName" "Etternavn"
+    "email" "Jobb-e-post"
+    "organization" "Organisasjon"
+    "termsPrefix" "Jeg aksepterer Safesprings"
+    "termsText" "behandling av personopplysninger"
+    "termsUrl" "/compliance/privacy_policy_web_recruitment/"
+    "button" "Send meldingen"
+    "sending" "Sender…"
+    "previewStatus" "Forhåndsvisning: skjemaet ble ikke sendt."
+    "errorStatus" "Meldingen kunne ikke sendes. Prøv igjen eller send e-post til hello@safespring.com."
+    "successUrl" "https://www.safespring.com/hello"
+    "counterLabel" "tegn"
+    "optional" "valgfritt"
+  -}}
+{{- end -}}
+
+{{- $preview := eq (lower (.Get "preview" | default "false")) "true" -}}
+{{- $formId := .Get "form-id" | default "9549u860f6303d26e4d3e93145d03af78ae73" -}}
+{{- $formCid := .Get "form-cid" | default "9549" -}}
+{{- $messageField := .Get "message-field" | default "Extra.1786446644631" -}}
+{{- $consentField := .Get "consent-field" | default "singleOptIn.x6yk9zt1qfc" -}}
+
+{{- $instanceId := .Get "id" | default (printf "ss-contact-message-%d" .Ordinal) -}}
+{{- $title := .Get "title" | default $copy.title -}}
+{{- $intro := .Get "intro" | default $copy.intro -}}
+{{- $button := .Get "button" | default $copy.button -}}
+{{- $messageLabel := .Get "message-label" | default $copy.messageLabel -}}
+{{- $messagePlaceholder := .Get "message-placeholder" | default $copy.messagePlaceholder -}}
+{{- $successUrl := .Get "success-url" | default $copy.successUrl -}}
+{{- $theme := .Get "theme" | default "cloud" -}}
+{{- $namePrefix := cond $preview "Preview" "" -}}
+{{- $messageName := cond $preview "Preview.message" $messageField -}}
+
+{{- if not ($.Page.Scratch.Get "contact-message-assets-loaded") -}}
+<style>
+  .ss-contact-message {
+    --ss-contact-deep: var(--main-color, #195f8c);
+    --ss-contact-clear: var(--middle-blue-color, #3c9bcd);
+    --ss-contact-cloud: var(--cloud-blue-color, #e7eff3);
+    --ss-contact-orange: var(--orange-color, #f4670f);
+    --ss-contact-text: #284d64;
+    --ss-contact-muted: #506a78;
+    --ss-contact-line: rgba(25, 95, 140, .2);
+    width: min(100%, 720px);
+    margin: 2.5rem 0;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    border: 1px solid rgba(25, 95, 140, .1);
+    border-radius: 10px;
+    color: var(--ss-contact-text);
+    background: var(--ss-contact-cloud);
+    box-sizing: border-box;
+    font-family: var(--mon-font, "Montserrat", sans-serif);
+  }
+
+  .ss-contact-message--white {
+    background: #fff;
+    border: 1px solid var(--ss-contact-line);
+  }
+
+  .ss-contact-message *,
+  .ss-contact-message *::before,
+  .ss-contact-message *::after {
+    box-sizing: border-box;
+  }
+
+  .ss-contact-message__header {
+    max-width: 680px;
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .ss-contact-message__step-count {
+    margin: 0 0 1.35rem;
+    color: var(--ss-contact-muted);
+    font-size: .75rem;
+    font-weight: 600;
+  }
+
+  .ss-contact-message__step {
+    max-width: 660px;
+    animation: ss-contact-step-in .28s ease both;
+  }
+
+  .ss-contact-message__step[hidden] {
+    display: none;
+  }
+
+  @keyframes ss-contact-step-in {
+    from { opacity: 0; transform: translateY(9px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  .ss-contact-message__title {
+    margin: 0 0 .7rem;
+    color: var(--ss-contact-deep);
+    font: 300 clamp(2rem, 3vw, 2.5rem)/1.1 var(--hind-font, "Hind", sans-serif);
+    letter-spacing: -.015em;
+    text-wrap: balance;
+  }
+
+  .ss-contact-message__intro {
+    margin: 0;
+    max-width: 640px;
+    color: var(--ss-contact-muted);
+    font: 300 1rem/1.55 var(--mon-font, "Montserrat", sans-serif);
+  }
+
+  .ss-contact-message__group {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .ss-contact-message__message-wrap {
+    position: relative;
+  }
+
+  .ss-contact-message textarea,
+  .ss-contact-message__input {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border: 1px solid var(--ss-contact-line);
+    border-radius: 8px;
+    color: var(--ss-contact-text);
+    background: rgba(255, 255, 255, .84);
+    box-shadow: none;
+    font: 400 1rem/1.45 var(--mon-font, "Montserrat", sans-serif);
+    outline: none;
+    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+
+  .ss-contact-message textarea {
+    min-height: 180px;
+    padding: 1rem 1rem 2.3rem;
+    resize: vertical;
+  }
+
+  .ss-contact-message__input {
+    min-height: 54px;
+    padding: .85rem 1rem .75rem;
+  }
+
+  .ss-contact-message textarea:focus,
+  .ss-contact-message__input:focus {
+    border-color: var(--ss-contact-clear);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(60, 155, 205, .12);
+  }
+
+  .ss-contact-message textarea::placeholder,
+  .ss-contact-message__input::placeholder {
+    color: #8296a2;
+    opacity: 1;
+  }
+
+  .ss-contact-message textarea:user-invalid,
+  .ss-contact-message__input:user-invalid {
+    border-color: #b94141;
+  }
+
+  .ss-contact-message__counter {
+    position: absolute;
+    right: .85rem;
+    bottom: .72rem;
+    color: #79909c;
+    font-size: .66rem;
+  }
+
+  .ss-contact-message__details {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ss-contact-message__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .ss-contact-message__field label {
+    display: block;
+    margin: 0 0 .4rem;
+    color: var(--ss-contact-muted);
+    font-size: .7rem;
+    font-weight: 600;
+  }
+
+  .ss-contact-message__field--wide {
+    grid-column: 1 / -1;
+  }
+
+  .ss-contact-message__consent {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: .7rem;
+    align-items: start;
+    margin: 1.15rem 0 1.5rem;
+    color: var(--ss-contact-muted);
+    font-size: .72rem;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  .ss-contact-message__consent input {
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    accent-color: var(--ss-contact-deep);
+  }
+
+  .ss-contact-message__consent a {
+    color: var(--ss-contact-orange);
+    text-underline-offset: 3px;
+  }
+
+  .ss-contact-message__footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .ss-contact-message__nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.55rem;
+  }
+
+  .ss-contact-message__next,
+  .ss-contact-message__submit {
+    min-height: 50px;
+    padding: .9rem 1.5rem .78rem;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--ss-contact-orange);
+    font: 600 .76rem/1 var(--mon-font, "Montserrat", sans-serif);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .18s ease, opacity .18s ease;
+  }
+
+  .ss-contact-message__back {
+    min-height: 44px;
+    padding: .7rem .15rem;
+    border: 0;
+    color: var(--ss-contact-deep);
+    background: transparent;
+    font-size: .74rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+  }
+
+
+  .ss-contact-message__summary {
+    margin: 0 0 1.35rem;
+    padding: 0;
+    color: var(--ss-contact-text);
+    background: transparent;
+  }
+
+  .ss-contact-message__summary-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: .45rem;
+  }
+
+  .ss-contact-message__summary strong {
+    display: block;
+    color: var(--ss-contact-deep);
+    font: 600 .9rem/1.3 var(--hind-font-semibold, var(--hind-font, "Hind", sans-serif));
+  }
+
+  .ss-contact-message__edit {
+    padding: 0;
+    border: 0;
+    color: var(--ss-contact-deep);
+    background: transparent;
+    font: 600 .72rem/1.3 var(--mon-font, "Montserrat", sans-serif);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+
+  .ss-contact-message__summary p {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    color: var(--ss-contact-muted);
+    font-size: .9rem;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .ss-contact-message__next:hover,
+  .ss-contact-message__submit:hover:not(:disabled) {
+    background: #d9560a;
+  }
+
+  .ss-contact-message__next:focus-visible,
+  .ss-contact-message__back:focus-visible,
+  .ss-contact-message__edit:focus-visible,
+  .ss-contact-message__submit:focus-visible {
+    outline: 3px solid rgba(60, 155, 205, .38);
+    outline-offset: 3px;
+  }
+
+  .ss-contact-message__submit:disabled {
+    cursor: wait;
+    opacity: .66;
+  }
+
+  .ss-contact-message__status {
+    min-height: 1.2rem;
+    margin: 0;
+    color: var(--ss-contact-deep);
+    font-size: .72rem;
+    line-height: 1.45;
+  }
+
+  .ss-contact-message__status[data-state="error"] {
+    color: #a63434;
+  }
+
+  @media (max-width: 640px) {
+    .ss-contact-message {
+      margin: 1.75rem 0;
+      padding: 1.35rem;
+      border-radius: 8px;
+    }
+
+    .ss-contact-message__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ss-contact-message__field--wide {
+      grid-column: auto;
+    }
+
+    .ss-contact-message__submit {
+      width: 100%;
+    }
+
+    .ss-contact-message__nav {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .ss-contact-message__next,
+    .ss-contact-message__back {
+      width: 100%;
+    }
+
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ss-contact-message *,
+    .ss-contact-message *::before,
+    .ss-contact-message *::after {
+      scroll-behavior: auto !important;
+      transition-duration: .01ms !important;
+    }
+  }
+</style>
+<script>
+  (function () {
+    function initContactMessageForms() {
+      document.querySelectorAll(".ss-contact-message[data-contact-message]").forEach(function (component) {
+        if (component.dataset.initialized === "true") return;
+        component.dataset.initialized = "true";
+
+        var form = component.querySelector("form");
+        var message = component.querySelector("textarea");
+        var counter = component.querySelector("[data-contact-message-counter]");
+        var status = component.querySelector("[data-contact-message-status]");
+        var button = component.querySelector("button[type='submit']");
+        var buttonText = button ? button.textContent : "";
+        var steps = Array.prototype.slice.call(component.querySelectorAll("[data-contact-message-step]"));
+        var stepCount = component.querySelector("[data-contact-message-step-count]");
+        var summary = component.querySelector("[data-contact-message-summary]");
+        var currentStep = 0;
+
+        function updateCounter() {
+          if (!message || !counter) return;
+          counter.textContent = message.value.length + " / " + message.maxLength;
+        }
+
+        function updateStep(nextStep, moveFocus) {
+          if (moveFocus && component.contains(document.activeElement)) {
+            document.activeElement.blur();
+          }
+          currentStep = Math.max(0, Math.min(nextStep, steps.length - 1));
+          steps.forEach(function (step, index) {
+            var isCurrent = index === currentStep;
+            step.hidden = !isCurrent;
+            if (isCurrent) {
+              step.removeAttribute("aria-hidden");
+            } else {
+              step.setAttribute("aria-hidden", "true");
+            }
+          });
+          if (stepCount) {
+            stepCount.textContent = component.dataset.stepLabel + " " + (currentStep + 1) + " " + component.dataset.ofLabel + " " + steps.length;
+          }
+          if (summary && message) {
+            summary.textContent = message.value.trim();
+          }
+          status.textContent = "";
+          status.removeAttribute("data-state");
+          if (moveFocus) {
+            window.setTimeout(function () {
+              var heading = steps[currentStep].querySelector("[data-contact-message-heading]");
+              if (heading) heading.focus({ preventScroll: true });
+            }, 30);
+          }
+        }
+
+        function validateCurrentStep() {
+          var controls = steps[currentStep].querySelectorAll("input, textarea, select");
+          for (var index = 0; index < controls.length; index += 1) {
+            if (!controls[index].checkValidity()) {
+              controls[index].reportValidity();
+              return false;
+            }
+          }
+          return true;
+        }
+
+        if (message) {
+          message.addEventListener("input", updateCounter);
+          updateCounter();
+        }
+
+        if (!form) return;
+        component.querySelectorAll("[data-contact-message-next]").forEach(function (nextButton) {
+          nextButton.addEventListener("click", function () {
+            if (validateCurrentStep()) updateStep(currentStep + 1, true);
+          });
+        });
+        component.querySelectorAll("[data-contact-message-back]").forEach(function (backButton) {
+          backButton.addEventListener("click", function () {
+            updateStep(currentStep - 1, true);
+          });
+        });
+        component.querySelectorAll("[data-contact-message-edit]").forEach(function (editButton) {
+          editButton.addEventListener("click", function () {
+            updateStep(0, true);
+          });
+        });
+
+        form.addEventListener("keydown", function (event) {
+          var isShortcut = event.key === "Enter" && (event.ctrlKey || event.metaKey);
+          var isSingleLineEnter = event.key === "Enter" && event.target.tagName !== "TEXTAREA";
+          if (currentStep < steps.length - 1 && (isShortcut || isSingleLineEnter)) {
+            event.preventDefault();
+            if (validateCurrentStep()) updateStep(currentStep + 1, true);
+          }
+        });
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          if (!form.reportValidity()) return;
+
+          if (form.dataset.preview === "true") {
+            status.textContent = form.dataset.previewStatus;
+            status.dataset.state = "preview";
+            return;
+          }
+
+          if (button) {
+            button.disabled = true;
+            button.textContent = form.dataset.sendingLabel;
+          }
+          status.textContent = "";
+          status.dataset.state = "sending";
+
+          var payload = new URLSearchParams(new FormData(form));
+          payload.set("isAjax", "true");
+          var request = new XMLHttpRequest();
+          request.open("POST", form.action);
+          request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          request.onload = function () {
+            if (request.status === 200) {
+              if (window._paq && window._paq.push) {
+                window._paq.push(["trackLink", "https://post.upsales.com/" + request.responseText, "link"]);
+              }
+              if (typeof window._uaq === "function") {
+                window._uaq("form=" + request.responseText);
+              }
+              window.setTimeout(function () {
+                window.location.assign(form.dataset.successUrl);
+              }, 333);
+              return;
+            }
+            restoreAfterError();
+          };
+          request.onerror = restoreAfterError;
+          request.send(payload.toString());
+
+          function restoreAfterError() {
+            if (button) {
+              button.disabled = false;
+              button.textContent = buttonText;
+            }
+            status.textContent = form.dataset.errorStatus;
+            status.dataset.state = "error";
+          }
+        });
+        updateStep(0, false);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initContactMessageForms, { once: true });
+    } else {
+      initContactMessageForms();
+    }
+  })();
+</script>
+{{- $.Page.Scratch.Set "contact-message-assets-loaded" true -}}
+{{- end -}}
+
+<section
+  class="ss-contact-message{{ if eq $theme "white" }} ss-contact-message--white{{ end }}"
+  id="{{ $instanceId }}"
+  data-contact-message
+  data-step-label="{{ $copy.stepLabel }}"
+  data-of-label="{{ $copy.ofLabel }}"
+>
+  <p class="ss-contact-message__step-count" data-contact-message-step-count>{{ $copy.stepLabel }} 1 {{ $copy.ofLabel }} 3</p>
+
+  <form
+    action="{{ if $preview }}#{{ else }}https://power.upsales.com/api/external/forms/submit{{ end }}"
+    method="post"
+    name="form_{{ $formId }}"
+    data-preview="{{ $preview }}"
+    data-preview-status="{{ $copy.previewStatus }}"
+    data-error-status="{{ $copy.errorStatus }}"
+    data-sending-label="{{ $copy.sending }}"
+    data-success-url="{{ $successUrl }}"
+  >
+    <div class="ss-contact-message__step" data-contact-message-step aria-hidden="false">
+      <header class="ss-contact-message__header">
+        <h2 class="ss-contact-message__title" tabindex="-1" data-contact-message-heading>{{ $title }}</h2>
+        <p class="ss-contact-message__intro">{{ $intro }}</p>
+      </header>
+
+      <div class="ss-contact-message__group">
+        <div class="ss-contact-message__message-wrap">
+          <textarea
+            id="{{ $instanceId }}-message"
+            name="{{ $messageName }}"
+            aria-label="{{ $messageLabel }}"
+            maxlength="512"
+            minlength="20"
+            placeholder="{{ $messagePlaceholder }}"
+            required
+          ></textarea>
+          <span class="ss-contact-message__counter" data-contact-message-counter aria-live="polite">0 / 512</span>
+        </div>
+      </div>
+
+      <div class="ss-contact-message__nav">
+        <button class="ss-contact-message__next" type="button" data-contact-message-next>{{ $copy.next }} <span aria-hidden="true">&#8594;</span></button>
+      </div>
+    </div>
+
+    <div class="ss-contact-message__step" data-contact-message-step hidden aria-hidden="true">
+      <header class="ss-contact-message__header">
+        <h2 class="ss-contact-message__title" tabindex="-1" data-contact-message-heading>{{ $copy.detailsLabel }}</h2>
+        <p class="ss-contact-message__intro">{{ $copy.detailsIntro }}</p>
+      </header>
+
+      <div class="ss-contact-message__details">
+      <div class="ss-contact-message__grid">
+        <div class="ss-contact-message__field">
+          <label for="{{ $instanceId }}-firstname">{{ $copy.firstName }}</label>
+          <input class="ss-contact-message__input" id="{{ $instanceId }}-firstname" name="{{ if $preview }}{{ $namePrefix }}.firstname{{ else }}Contact.firstname{{ end }}" autocomplete="given-name" required>
+        </div>
+        <div class="ss-contact-message__field">
+          <label for="{{ $instanceId }}-lastname">{{ $copy.lastName }}</label>
+          <input class="ss-contact-message__input" id="{{ $instanceId }}-lastname" name="{{ if $preview }}{{ $namePrefix }}.lastname{{ else }}Contact.lastname{{ end }}" autocomplete="family-name" required>
+        </div>
+        <div class="ss-contact-message__field">
+          <label for="{{ $instanceId }}-email">{{ $copy.email }}</label>
+          <input class="ss-contact-message__input" id="{{ $instanceId }}-email" name="{{ if $preview }}{{ $namePrefix }}.email{{ else }}Contact.email{{ end }}" type="email" autocomplete="email" required>
+        </div>
+        <div class="ss-contact-message__field">
+          <label for="{{ $instanceId }}-organization">{{ $copy.organization }}</label>
+          <input class="ss-contact-message__input" id="{{ $instanceId }}-organization" name="{{ if $preview }}{{ $namePrefix }}.organization{{ else }}Client.name{{ end }}" autocomplete="organization" required>
+        </div>
+      </div>
+      </div>
+
+      <div class="ss-contact-message__nav">
+        <button class="ss-contact-message__back" type="button" data-contact-message-back><span aria-hidden="true">&#8592;</span> {{ $copy.back }}</button>
+        <button class="ss-contact-message__next" type="button" data-contact-message-next>{{ $copy.next }} <span aria-hidden="true">&#8594;</span></button>
+      </div>
+    </div>
+
+    <div class="ss-contact-message__step" data-contact-message-step hidden aria-hidden="true">
+      <header class="ss-contact-message__header">
+        <h2 class="ss-contact-message__title" tabindex="-1" data-contact-message-heading>{{ $copy.reviewTitle }}</h2>
+        <p class="ss-contact-message__intro">{{ $copy.reviewIntro }}</p>
+      </header>
+
+      <div class="ss-contact-message__summary">
+        <div class="ss-contact-message__summary-heading">
+          <strong>{{ $copy.messageSummary }}</strong>
+          <button class="ss-contact-message__edit" type="button" data-contact-message-edit>{{ $copy.edit }}</button>
+        </div>
+        <p data-contact-message-summary></p>
+      </div>
+
+      <label class="ss-contact-message__consent" for="{{ $instanceId }}-consent">
+        <input type="checkbox" id="{{ $instanceId }}-consent" name="{{ if $preview }}Preview.consent{{ else }}{{ $consentField }}{{ end }}" value="on" required>
+        <span>{{ $copy.termsPrefix }} <a href="{{ $copy.termsUrl }}">{{ $copy.termsText }}</a>.</span>
+      </label>
+
+      <div class="ss-contact-message__footer">
+        <button class="ss-contact-message__back" type="button" data-contact-message-back><span aria-hidden="true">&#8592;</span> {{ $copy.back }}</button>
+        <button class="ss-contact-message__submit" type="submit">{{ $button }}</button>
+        <p class="ss-contact-message__status" data-contact-message-status role="status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <input type="hidden" name="formCid" value="{{ $formCid }}">
+    <input type="hidden" name="formId" value="{{ $formId }}">
+    <input type="hidden" name="isFrame" value="false">
+    <input type="hidden" name="validation" value="">
+  </form>
+</section>
