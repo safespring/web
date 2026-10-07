@@ -12,11 +12,13 @@ socialmediabild: ""
 section: "Tech update"
 language: "En"
 toc: ""
-sidebarlinkname: "How to migrate"
-sidebarlinkurl: "https://docs.safespring.com/new/migrate-from-legacy/"
-sidebarlinkname2: "Contact support"
-sidebarlinkurl2: "mailto:support@safespring.com"
+sidebarlinkname: "Contact support"
+sidebarlinkurl: "mailto:support@safespring.com"
 ---
+
+{{% note "Archived notice" %}}
+This notice is from 2023. The migration guide it referred to has since been retired. Please contact [support](mailto:support@safespring.com) if you have questions.
+{{% /note %}}
 
 {{< ingress >}}
 Dear valued customers, We would like to inform you that our legacy platform in sto1 will be shut down on May 1st. 
@@ -32,11 +34,11 @@ We understand that this transition may cause inconvenience and we want to assure
 - {{< inline "May 1st, 2023:" >}} Legacy platform in sto1 will be shut down.
 
 {{% note "No extra cost when migrating" %}}
-When moving from the old platform to the new platform, you don't have to pay for two environments. Read this [guide on how to migrate](https://docs.safespring.com/new/migrate-from-legacy/) for more information
+When moving from the old platform to the new platform, you don't have to pay for two environments. Read this guide on how to migrate for more information
 {{% /note %}}
 
 ### I use the legacy platform, what do I do?
-- Before March 1st, 2023: [Migrate to the new platform](https://docs.safespring.com/new/migrate-from-legacy/) as no new instances can be created on the legacy platform after that date.
+- Before March 1st, 2023: Migrate to the new platform as no new instances can be created on the legacy platform after that date.
 - Before April 1st, 2023: Make sure you are ready for the legacy platform to be shut down as support for it will be limited after that date.
 - Before May 1st, 2023: Complete the migration to the new platform as the legacy platform in STO1 will be shut down on that date.
 - If you have any questions or concerns, contact the Safespring support team

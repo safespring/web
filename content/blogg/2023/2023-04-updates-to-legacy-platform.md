@@ -12,11 +12,13 @@ socialmediabild: ""
 section: "Tech update"
 language: "En"
 toc: ""
-sidebarlinkname: "How to migrate"
-sidebarlinkurl: "https://docs.safespring.com/new/migrate-from-legacy/"
-sidebarlinkname2: "Contact support"
-sidebarlinkurl2: "mailto:support@safespring.com"
+sidebarlinkname: "Contact support"
+sidebarlinkurl: "mailto:support@safespring.com"
 ---
+
+{{% note "Archived notice" %}}
+This notice is from 2023. The migration guide it referred to has since been retired. Please contact [support](mailto:support@safespring.com) if you have questions.
+{{% /note %}}
 
 {{< ingress >}}
 As the legacy platform in STO1 is reaching its end of life, we hope that you're getting along with the migration to the new platform.
@@ -24,7 +26,7 @@ As the legacy platform in STO1 is reaching its end of life, we hope that you're 
 
 According to our project tracking, most of you have already migrated to the new platform or are in the progress of doing so.
 
-For those who haven't started yet, we would like to encourage you to do so as soon as possible and get in touch with us if you need any assistance. All steps necessary to migrate your instances can be found in our [migration guide](https://docs.safespring.com/new/migrate-from-legacy/). 
+For those who haven't started yet, we would like to encourage you to do so as soon as possible and get in touch with us if you need any assistance. All steps necessary to migrate your instances can be found in our migration guide.
 
 For those of you struggling to meet the May 1 deadline, rest assured that we will not delete any data without your consent. We've been in touch with all customers to set up a migration plan and we will continue to do so in the coming weeks. 
 

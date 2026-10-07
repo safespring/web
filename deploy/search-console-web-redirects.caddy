@@ -1,0 +1,52 @@
+# Reviewed Search Console routes, 2026-10-07. Caddy v1 only.
+# Import inside the existing www.safespring.com and www2.safespring.com site block(s).
+# Exact paths only; removed content and crawler artifacts are not redirected.
+# Preserve query parameters, including UTM tags, without adding empty queries.
+
+redir {
+  if {query} not ""
+  /about-safespring /en/about/?{query} 301
+  /about-safespring/ /en/about/?{query} 301
+  /about/datacenter /en/data-centers/?{query} 301
+  /about/datacenter/ /en/data-centers/?{query} 301
+  /documents/c005476-safespring-ab-2029-04-01.pdf /compliance/safespring-iso_27001_2023_sv-eng.pdf?{query} 301
+  /documents/safespring-compliance-package-2026-v2.pdf /compliance/?{query} 301
+  /event/2020-05-13 /webinar/kommun/safespring-partner-webinar-tempus-1/?{query} 301
+  /event/2020-05-13/ /webinar/kommun/safespring-partner-webinar-tempus-1/?{query} 301
+  /event/2020-06-03 /webinar/kommun/safespring-partner-webinar-tempus-1/?{query} 301
+  /event/2020-06-03/ /webinar/kommun/safespring-partner-webinar-tempus-1/?{query} 301
+  /om-safespring/datasenter /no/datasenter/?{query} 301
+  /om-safespring/datasenter/ /no/datasenter/?{query} 301
+  /safespring-compute.html /tjanster/safespring-compute/?{query} 301
+  /safespring-storage.html /tjanster/safespring-storage/?{query} 301
+  /services/case/scaleout /en/services/case/scaleout/?{query} 301
+  /services/case/scaleout/ /en/services/case/scaleout/?{query} 301
+  /services/container-platform /en/services/containerplatform/?{query} 301
+  /services/container-platform/ /en/services/containerplatform/?{query} 301
+  /tjenester/compliant-kubernetes /no/tjenester/compliant-kubernetes/?{query} 301
+  /tjenester/compliant-kubernetes/ /no/tjenester/compliant-kubernetes/?{query} 301
+}
+
+redir {
+  if {query} is ""
+  /about-safespring /en/about/ 301
+  /about-safespring/ /en/about/ 301
+  /about/datacenter /en/data-centers/ 301
+  /about/datacenter/ /en/data-centers/ 301
+  /documents/c005476-safespring-ab-2029-04-01.pdf /compliance/safespring-iso_27001_2023_sv-eng.pdf 301
+  /documents/safespring-compliance-package-2026-v2.pdf /compliance/ 301
+  /event/2020-05-13 /webinar/kommun/safespring-partner-webinar-tempus-1/ 301
+  /event/2020-05-13/ /webinar/kommun/safespring-partner-webinar-tempus-1/ 301
+  /event/2020-06-03 /webinar/kommun/safespring-partner-webinar-tempus-1/ 301
+  /event/2020-06-03/ /webinar/kommun/safespring-partner-webinar-tempus-1/ 301
+  /om-safespring/datasenter /no/datasenter/ 301
+  /om-safespring/datasenter/ /no/datasenter/ 301
+  /safespring-compute.html /tjanster/safespring-compute/ 301
+  /safespring-storage.html /tjanster/safespring-storage/ 301
+  /services/case/scaleout /en/services/case/scaleout/ 301
+  /services/case/scaleout/ /en/services/case/scaleout/ 301
+  /services/container-platform /en/services/containerplatform/ 301
+  /services/container-platform/ /en/services/containerplatform/ 301
+  /tjenester/compliant-kubernetes /no/tjenester/compliant-kubernetes/ 301
+  /tjenester/compliant-kubernetes/ /no/tjenester/compliant-kubernetes/ 301
+}
