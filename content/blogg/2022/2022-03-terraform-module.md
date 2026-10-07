@@ -536,7 +536,7 @@ for the sum/union of all parameters to be specified.
 [tftry]: https://www.terraform.io/language/functions/try
 [coc]: https://www.paloaltonetworks.com/cyberpedia/how-to-break-the-cyber-attack-lifecycle
 [diskmap]:https://github.com/safespring-community/terraform-modules/blob/main/examples/v2-compute-instance/main.tf#L17
-[newflavors]:https://docs.safespring.com/new/flavors/
+[newflavors]:https://docs.safespring.com/compute/flavors/
 [firstblog]:https://www.safespring.com/blogg/2022-01-terraform-modules/
 [tfdl]:https://www.terraform.io/downloads
 [sftfmodules]:https://github.com/safespring-community/terraform-modules

@@ -559,6 +559,6 @@ If you found this post useful, be sure to check out the rest of the series on us
 [netblog]:https://www.safespring.com/blogg/2022-03-network/
 [tfdocs]:https://www.terraform.io/docs
 [tfreleases]:https://releases.hashicorp.com/terraform/
-[osclidoc]:https://docs.safespring.com/new/api/
+[osclidoc]:https://docs.safespring.com/compute/api/
 [appcred]: https://docs.safespring.com/new/app-creds/
 [mcdemo]: https://github.com/safespring-community/terraform-modules/tree/main/examples/openstack-multicloud

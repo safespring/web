@@ -219,5 +219,5 @@ necessary information; the same as if you would use the [OpenStack CLI][osclidoc
 [netblog]:https://www.safespring.com/blogg/2022-03-network/
 [tfdocs]:https://www.terraform.io/docs
 [tfreleases]:https://releases.hashicorp.com/terraform/
-[osclidoc]:https://docs.safespring.com/new/api/
+[osclidoc]:https://docs.safespring.com/compute/api/
 [appcred]: https://docs.safespring.com/new/app-creds/
