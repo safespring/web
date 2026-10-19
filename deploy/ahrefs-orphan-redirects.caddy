@@ -24,3 +24,15 @@ redir /en/ocre-2024 /en/ocre/ 301
 redir /en/ocre-2024/ /en/ocre/ 301
 redir /en/documents/acceptable-use-policy /compliance/acceptable_use_policy/ 301
 redir /en/documents/acceptable-use-policy/ /compliance/acceptable_use_policy/ 301
+
+# Preserve query parameters when retiring the Dockyards service page.
+redir {
+  if {query} not ""
+  /tjanster/dockyards /tjanster/containerplattform/?{query} 301
+  /tjanster/dockyards/ /tjanster/containerplattform/?{query} 301
+}
+redir {
+  if {query} is ""
+  /tjanster/dockyards /tjanster/containerplattform/ 301
+  /tjanster/dockyards/ /tjanster/containerplattform/ 301
+}

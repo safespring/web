@@ -817,12 +817,9 @@
 {{ partial "favicons.html" . }}
 
 <!-- CSS -->
-<!-- Ladda huvud-CSS tidigt utan den tidigare dubbla länkningsstrategin -->
+<!-- Applicera huvud-CSS före första renderingen för att undvika layoutskiften. -->
 {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="preload" href="{{ $mainCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
-</noscript>
+<link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
 
 {{ $faBundleTarget := "css/combined-font-awesome.css" }}
 {{ $faSources := slice (resources.Get "css/solid.min.css") (resources.Get "css/custom-icons.min.css") (resources.Get "css/fontawesome.min.css") }}

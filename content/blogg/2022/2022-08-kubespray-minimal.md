@@ -498,4 +498,4 @@ $ terraform destroy -var-file=$HOME/kubespray-clusters/minimal-k8s/cluster.tfvar
 [tfdocs]:https://www.terraform.io/docs
 [tfreleases]:https://releases.hashicorp.com/terraform/
 [osclidoc]:https://docs.safespring.com/compute/api/
-[appcred]: https://docs.safespring.com/new/app-creds/
+[appcred]: https://docs.safespring.com/compute/app-creds/

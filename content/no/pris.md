@@ -202,12 +202,19 @@ Maksimer infrastrukturen din med programvare som kjører optimalt på Safespring
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |  4 766 kr |
 
 ### Plattformtjenester
-Safesprings partner tilbyr [database som tjeneste](/no/tjenester/database-as-a-service/) for PostgreSQL, MariaDB og Redis. I tillegg finnes det administrerte tjenester for Elasticsearch og NATS. Tjenestene kjører på Safesprings infrastruktur og koster fra 2 kr per time.
+
+#### Database som tjeneste fra Severalnines
+
+Med [CCX Cloud](/no/tjenester/database-as-a-service/) får du administrerte databaser med PostgreSQL, MySQL, MariaDB og Valkey på Safesprings infrastruktur. Severalnines leverer og drifter tjenesten og er din avtalepart.
+
+{{< ccx-pricing >}}
+
+#### Andre plattformtjenester
+
+Prisene nedenfor gjelder Elasticsearch, Redis og NATS, separat fra CCX Cloud.
 
 | Produkt ID               | Beskrivelse           | Fra per time |
 |--------------------------|-----------------------|-------------:|
-| PAAS-man.postgresql      | Managed PostgreSQL    |      2,00 kr |
-| PAAS-man.mariadb         | Managed MariaDB       |      2,00 kr |
 | PAAS-man.elasticsearch   | Managed Elasticsearch |      2,00 kr |
 | PAAS-man.redis           | Managed Redis         |      2,00 kr |
 | PAAS-man.nats            | Managed NATS          |      2,00 kr |

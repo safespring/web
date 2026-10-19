@@ -1,4 +1,9 @@
 ---
+layout: "redirect"
+redirecturl: "/tjanster/containerplattform/"
+noindex: true
+_build:
+  list: never
 title: "Kör Sudo's Dockyards på Safesprings optimerade servrar"
 language: "Se"
 date: 2023-05-19
