@@ -20,11 +20,11 @@ Bygg upp din nuvarande miljö för att se vad du sparar på att flytta till Safe
 
 {{< distance >}}
 
-I priset ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får även 24/7-support och tillgång till vår självbetjäningsportal där du kan hantera dina instanser efter behov.
+I priset för Safesprings egna infrastrukturtjänster ingår hög säkerhet, såväl fysisk som logisk och juridisk. Du får även 24/7-support och tillgång till vår självbetjäningsportal där du kan hantera dina instanser efter behov. För CCX Cloud gäller Severalnines priser och avtalsvillkor; se [plattformstjänster](#plattformstjänster).
 
 ### Ingen trafikkostnad
 
-Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från våra tjänster. Trafikkostnad, eller egress cost som det också kallas, är en vanlig inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om egress och ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
+Safespring tar inte ut någon trafikkostnad för den data som skickas till eller från Safesprings egna infrastrukturtjänster. Trafikkostnad, eller egress cost som det också kallas, är en vanlig inlåsningsmekanism. Safespring är byggt på öppna standarder och det är en del av vår filosofi. Läs mer om egress och ingress cost i vårt [blogginlägg om trafikkostnader](/blogg/2023/2023-03-egress-cost/).
 
 {{< distance >}}
 
@@ -196,13 +196,20 @@ Maximera er infrastruktur med mjukvara som är optimerad för Safesprings plattf
 | SW-ms.sql.ser     | Microsoft SQL Server standard   | vCPU           |     1 229 kr |
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU           |     4 766 kr |
 
-### Plattformstjänster
-Safesprings partner erbjuder [databas som tjänst](/tjanster/database-as-a-service/) för PostgreSQL, MariaDB och Redis. Därutöver finns managerade tjänster för Elasticsearch och NATS. Tjänsterna körs på Safesprings infrastruktur och kostar från 2 kr per timme.
+### Plattformstjänster {#plattformstjänster}
+
+#### Databas som tjänst från Severalnines
+
+Med [CCX Cloud](/tjanster/database-as-a-service/) får du hanterade databaser med PostgreSQL, MySQL, MariaDB och Valkey på Safesprings infrastruktur. Severalnines levererar och hanterar tjänsten och är din avtalspart.
+
+{{< ccx-pricing >}}
+
+#### Övriga plattformstjänster
+
+Priserna nedan gäller Elasticsearch, Redis och NATS, separat från CCX Cloud.
 
 | Produkt ID               | Beskrivning           | Från per timme |
 |--------------------------|-----------------------|---------------:|
-| PAAS-man.postgresql      | Managed PostgreSQL    |        2,00 kr |
-| PAAS-man.mariadb         | Managed MariaDB       |        2,00 kr |
 | PAAS-man.elasticsearch   | Managed Elasticsearch |        2,00 kr |
 | PAAS-man.redis           | Managed Redis         |        2,00 kr |
 | PAAS-man.nats            | Managed NATS          |        2,00 kr |

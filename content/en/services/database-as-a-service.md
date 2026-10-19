@@ -1,86 +1,72 @@
 ---
-title: "Database as a service is fully-managed, highly-available, open source"
+title: "Database as a service on Safespring"
 language: "En"
-cardtitle: "Database"
+cardtitle: "Database as a service"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
 cardorder: "5"
 date: 2022-04-29T11:58:58+01:00
 draft: false
-section: ""
-intro: "Built on top of the pressure-tested ClusterControl, CCX enables you to provision, deploy and manage performant, open source database clusters in moments."
-cardintro: "Database as a service lets you deploy and access managed, secured database clusters."
+section: "DBaaS"
+toplogo: "severalninses-logo.png"
+intro: "Managed PostgreSQL, MySQL, MariaDB and Valkey databases on Safespring infrastructure. Severalnines provides the service, and your agreement is with Severalnines."
+cardintro: "Managed databases from Severalnines on Safespring infrastructure."
 background: "safespring-background-dbaas.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
-sidebarlinkname: ""
-sidebarlinkurl: ""
+sidebarlinkname: "Contact Safespring"
+sidebarlinkurl: "/en/contact/#contact-form"
+sidebarlinkname2: "View prices"
+sidebarlinkurl2: "#price"
 sidebarsection: ""
-sidebarimage: "safespring-dbaas.svg"
-toplogo: "severalninses-logo.png"
-sidebartitle: ""
-sidebartext: ""
-sidebardate: ""
-sidebarknapp: ""
-sidebarlink: ""
-saas: ""
-sidebarwhitepaper: ""
-aliases:
-logo: "/img/logos/dbaas-logos.svg"
-logomobile: "/img/logos/dbaas-logos-mobile.svg"
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "I'm Fredric Wallsten. Contact me if you have questions about database as a service."
+sidebarphone: "+46855107370"
+sidebarmail: "hello@safespring.com"
+darkmode: "off"
 ---
 
 {{< icon-block-container >}}
-    {{< icon-block icon="fas fa-repeat" text="Automated Operations" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fas fa-gauge-high" text="High Availability" link="" color="#32CD32">}}
-    {{< icon-block icon="fas fa-sliders" text="Advanced Traffic Control" link="" color="#195F8C">}}
-    {{< icon-block icon="fas fa-database" text="Cache22 - Redis 7 Compatible" link="" color="#FA690F">}}
-    {{< icon-block icon="fak fa-safespring-icon" text="Safespring Infrastructure" link="/en/services/compute/" color="#417DA5">}}
-    {{< icon-block icon="fas fa-clock-rotate-left" text="Automated Backups" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-arrows-rotate" text="Automated operations" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-gauge" text="High availability" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-chart-line" text="Monitoring" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-unlock" text="User management" link="" color="#f4670f">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safespring infrastructure" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Backups" link="" color="#3C9BCD">}}
 {{< /icon-block-container >}}
 
 {{< ingress >}}
-The Database-as-a-Service solution CCX takes care of everything, giving you accessible, high-performance databases for your applications.
-{{</ ingress >}}
+Let Severalnines run your databases on Safespring infrastructure.
+{{< /ingress >}}
 
-Our partner Severalnines has built the service on Safespring. Managing a complex, clustered database environment is time-consuming and often daunting. With just a few simple steps, you can deploy a fully managed, load-balanced, high-availability database cluster for MySQL, MariaDB, PostgreSQL, or Redis that delivers performance, uptime, and simplicity.
+With CCX Cloud, you can create and manage PostgreSQL, MySQL, MariaDB and Valkey databases. The service is built on Severalnines' ClusterControl platform and brings together monitoring, backups and recovery.
 
-### Key Benefits
-{{< icon-block-horisontal color="#195F8C" icon="fa-solid fa-shield-halved" text="Minimize Disruptions" description="Auto-healing, failover and other features proactively monitor and address faults to ensure business continuity." >}}
-{{< icon-block-horisontal color="#3C9BCD" icon="fa-solid fa-scale-balanced" text="Ensure Compliance" description="Open-source databases and Safespring Compute help you fulfill data sovereignty requirements and reduce vendor lock-in." >}}
-{{< icon-block-horisontal color="#FA690F" icon="fa-solid fa-rocket" text="Reduce Time to Market" description="Optimized for efficient day 2 operations, reducing intervention and allowing focus on business value." >}}
+### Who is responsible for what?
+
+Safespring provides the infrastructure on which the databases run. Severalnines provides and manages the database service. Your agreement is with Severalnines and sets out the terms for support and service levels.
+
+Want to know how the service fits your environment? Contact Safespring to discuss your database needs.
+
+<p><a class="button" href="/en/contact/#contact-form">Contact Safespring</a> <a class="text-button" href="#price">View prices</a></p>
 
 {{< distance >}}
 
-### Security & Compliance
-CCX is ISO 27001 certified and is in the process of obtaining SOC 2 certification. Severalnines guarantees a minimum SLA of 99.98%.
+### Monitoring and backups
 
-### Features
-CCX includes an easy-to-use provisioning and deployment process, allowing you to set up high-availability databases with just a few clicks. Failover and auto-recovery mechanisms ensure that downtime-creating issues are detected and resolved automatically. With backup and disaster recovery capabilities, your data remains protected, minimizing disruption in case of failure. 
+Monitor database status and resource-intensive queries in CCX. The service supports backups and recovery, so you can plan how to protect and restore your data.
 
-Scaling is seamless, enabling you to expand or reduce storage and replicas as your workload demands. Firewall and security protections keep your databases safe, featuring encryption and controlled access. Additionally, database user management simplifies role and access control to enhance security. 
+### High availability and scaling
 
-For performance monitoring, observability dashboards provide insights into your database performance, helping you pinpoint issues efficiently. Query monitoring tools allow for optimization by identifying top queries and troubleshooting resource-intensive processes.
+CCX supports automatic fault handling and recovery, as well as adding or removing replicas. Configure the service to suit your database type and availability requirements.
+
+### Access and security
+
+Manage database users and permissions in CCX. Firewall features help you control which connections are allowed.
 
 ## Price
-{{< ingress >}} 
-Pricing is consumption-based. You pay per hour only for what you use.
-{{< /ingress >}}
 
-Pricing components are the number of server vCPUs and associated RAM, amount of storage consumed, and data output type and amount.
+Prices are converted from USD and shown per node per hour, excluding VAT.
 
-| Instance | vCPU   | RAM (GB) | Disk (GB) | Hourly price (Node) |
-|----------|--------|----------|-----------|---------------------|
-| Tiny     | 2vCPU  | 4GB      | 100       | 0.185 EUR           |
-| Small    | 8vCPU  | 8GB      | 100       | 0.332 EUR           |
-| Medium   | 8vCPU  | 16GB     | 100       | 0.628 EUR           |
-| Large    | 16vCPU | 32GB     | 100       | 1.205 EUR           |
-| X-Large  | 16vCPU | 32GB     | 500       | 1.338 EUR           |
-| XX-Large | 16vCPU | 32GB     | 1000      | 1.543 EUR           |
+{{< ccx-pricing >}}
 
-{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Contact us" %}}
-Have questions about our Database-as-a-Service platform? Contact us for in-depth technical information and personalized guidance.
-
-{{< inline "Call" >}} [+46 855 10 73 70](tel:+46855107370)  
-{{< inline "Mail" >}} [hello@safespring.com](mailto:hello@safespring.com)
-{{% /custom-card %}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/en/services/compute/" linktext="Read about Safespring Compute" cardtitle="The infrastructure behind the database service" text="CCX Cloud from Severalnines runs on Safespring infrastructure. Learn more about Safespring Compute, which underpins the service." %}}

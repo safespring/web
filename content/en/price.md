@@ -205,13 +205,20 @@ Maximize your infrastructure with software optimized to run on Safespring's plat
 | SW-ms.sql.ser     | Microsoft SQL Server standard   | vCPU        |        109,38 € |
 | SW-ms.sql.ser.ent | Microsoft SQL Server Enterprise | vCPU        |        424,17 € |
 
-### Platform Services
-Safespring's partner provides [database as a service](/en/services/database-as-a-service/) for PostgreSQL, MariaDB, and Redis. Managed services are also available for Elasticsearch and NATS. The services run on Safespring infrastructure and start at €0.18 per hour.
+### Platform services
+
+#### Database as a service from Severalnines
+
+With [CCX Cloud](/en/services/database-as-a-service/), you get managed PostgreSQL, MySQL, MariaDB and Valkey databases on Safespring infrastructure. Severalnines provides and manages the service. Your agreement is with Severalnines.
+
+{{< ccx-pricing >}}
+
+#### Other platform services
+
+The prices below are for Elasticsearch, Redis and NATS, separately from CCX Cloud.
 
 | Product ID               | Description           | From per hour |
 |--------------------------|-----------------------|--------------:|
-| PAAS-man.postgresql      | Managed PostgreSQL    |        €0.18  |
-| PAAS-man.mariadb         | Managed MariaDB       |        €0.18  |
 | PAAS-man.elasticsearch   | Managed Elasticsearch |        €0.18  |
 | PAAS-man.redis           | Managed Redis         |        €0.18  |
 | PAAS-man.nats            | Managed NATS          |        €0.18  |

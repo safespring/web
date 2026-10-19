@@ -369,7 +369,7 @@ kubectl label secret -n safespring safespring-demo-cloud-config clusterctl.clust
 #  Set clusterctl.cluster.x-k8s.io/move label for the secret created from OPENSTACK_CLOUD_YAML_B64 in order to successfully move objects from bootstrap cluster to target cluster. 
 ```
 
-For more information on getting application credentials see our documentation on how to [create application credentials](https://docs.safespring.com/new/app-creds/#creating-application-credentials-using-the-dashboard).
+For more information on getting application credentials see our documentation on how to [create application credentials](https://docs.safespring.com/compute/app-creds/#creating-application-credentials-using-the-dashboard).
 
 
 ```yaml

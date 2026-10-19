@@ -5938,7 +5938,7 @@ details[open] summary {
 }
 
 .icon-block-link .icon-block{
-	transition:ease .1s;
+	transition:transform .1s ease, background-color .1s ease, border-color .1s ease, box-shadow .1s ease;
 }
 
 .icon-block-link {
@@ -5947,7 +5947,7 @@ details[open] summary {
 
 .icon-block-link:hover .icon-block{
 	transform:scale(1.02);
-	transition:ease .2s;
+	transition:transform .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
 	border-radius:15px;
 	background-color:white;
 	display:flex;
