@@ -93,11 +93,18 @@ def main():
     http_checks = 0
     rules = {}
     for line in (ROOT / "deploy/ahrefs-orphan-redirects.caddy").read_text().splitlines():
-        if line.startswith("redir "):
-            _, source, target, code = line.split()
-            if source in rules:
-                errors.append(f"Duplicate Caddy route: {source}")
-            rules[source] = (target, code)
+        # Read default destinations from inline rules and conditional blocks.
+        # Query-preserving variants are verified by the optional HTTP checks.
+        parts = line.split()
+        if len(parts) == 4 and parts[0] == "redir":
+            _, source, target, code = parts
+        elif len(parts) == 3 and parts[0].startswith("/") and "{query}" not in parts[1]:
+            source, target, code = parts
+        else:
+            continue
+        if source in rules:
+            errors.append(f"Duplicate Caddy route: {source}")
+        rules[source] = (target, code)
 
     for case in cases:
         url, action = case["url"], case["action"]
@@ -129,15 +136,19 @@ def main():
                     if rules.get(variant) != (target, "301"):
                         errors.append(f"Missing exact Caddy 301 rule: {variant}")
                     if args.http_base:
-                        request_url = args.http_base.rstrip("/") + variant
-                        try:
-                            response = opener.open(request_url, timeout=10)
-                        except HTTPError as exc:
-                            response = exc
-                        with response:
-                            http_checks += 1
-                            if response.code != 301 or response.headers.get("Location") != target:
-                                errors.append(f"Wrong HTTP response for {variant}: {response.code}, {response.headers.get('Location')}")
+                        queries = [""]
+                        if case.get("preserve_query"):
+                            queries.append("?utm_source=redirect-check&ref=a%2Fb")
+                        for query in queries:
+                            request_url = args.http_base.rstrip("/") + variant + query
+                            try:
+                                response = opener.open(request_url, timeout=10)
+                            except HTTPError as exc:
+                                response = exc
+                            with response:
+                                http_checks += 1
+                                if response.code != 301 or response.headers.get("Location") != target + query:
+                                    errors.append(f"Wrong HTTP response for {variant + query}: {response.code}, {response.headers.get('Location')}")
             elif page.redirect:
                 errors.append(f"Noindex page must remain directly usable: {url}")
         else:

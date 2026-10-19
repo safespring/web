@@ -97,8 +97,10 @@
   },
   {
     "url": "/tjanster/dockyards/",
-    "action": "linked",
-    "link_from": "/tjanster/containerplattform/"
+    "action": "redirect",
+    "target": "/tjanster/containerplattform/",
+    "preserve_query": true,
+    "source": "content/tjanster/dockyards.md"
   },
   {
     "url": "/tjanster/tloop/",
