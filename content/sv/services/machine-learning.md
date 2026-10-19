@@ -77,7 +77,7 @@ Läs teknisk dokumentation om GPU-instanser, en praktisk guide till att köra en
   >}}
   {{< manual-document-row
     title="Kör en lokal språkmodell med Ollama"
-    href="/blogg/2025/2025-12-run-llm-in-safespring-container-platform/"
+    href="/deep-dive/2025-12-run-llm-in-safespring-container-platform/"
     icon="fa-solid fa-terminal"
     label="Blogg"
     description="Installera NVIDIA-drivrutiner, Ollama och Open-WebUI på en GPU-instans som kör Ubuntu."
@@ -91,21 +91,21 @@ Läs teknisk dokumentation om GPU-instanser, en praktisk guide till att köra en
   >}}
   {{< manual-document-row
     title="Federerad maskininlärning med Scaleout"
-    href="/tjanster/case/scaleout/"
+    href="/tjanster/scaleout-systems-levererar-gdpr-saker-maskininlarning-med-safespring/"
     icon="fa-solid fa-people-arrows"
     label="Kundcase"
     description="Scaleout berättar om federerad maskininlärning, dataskydd och sitt arbete i Safesprings infrastruktur."
   >}}
   {{< manual-document-row
     title="AI nära oss: innovation och ansvar"
-    href="/webinar/eforvaltningsdagarna-2023/"
+    href="/webinar/ai-nara-oss-en-brobyggare-mellan-innovation-och-ansvar/"
     icon="fa-solid fa-play"
     label="Seminarium"
     description="Ett inspelat samtal om AI, dataskydd och att träna modeller utan att flytta data."
   >}}
   {{< manual-document-row
     title="Maskininlärning från idé till produktion"
-    href="/webinar/safespring-partner-webinar-scaleout-1/"
+    href="/webinar/maskininlarning-fran-ide-till-pilot-och-produktion/"
     icon="fa-solid fa-project-diagram"
     label="Webbinarium"
     description="Scaleout visar hur ett maskininlärningsprojekt går från pilot till produktion."

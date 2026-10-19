@@ -1,0 +1,31 @@
+{{- $pricing := hugo.Data.ccx_pricing -}}
+{{- $language := lower (.Page.Params.language | default .Site.Language.Lang) -}}
+{{- if eq $language "se" }}{{ $language = "sv" }}{{ end -}}
+{{- if eq $language "no" }}{{ $language = "nb" }}{{ end -}}
+{{- $labels := index $pricing.locales $language -}}
+{{- if not $labels }}{{ errorf "Unsupported CCX pricing language: %s" $language }}{{ end -}}
+{{/* Preserve full-width mobile rows; beta content tables otherwise use display: block. */}}
+<table style="display: table;" aria-label="{{ $labels.table_label }}">
+  <thead>
+    <tr>
+      <th scope="col">{{ $labels.instance }}</th>
+      <th scope="col">vCPU</th>
+      <th scope="col">RAM (GB)</th>
+      <th scope="col">Disk (GB)</th>
+      <th scope="col" title="{{ $labels.price_note }}">{{ $labels.price_heading }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $pricing.instances }}
+    {{- $price := index .hourly_prices $labels.currency -}}
+    {{- if ne $language "en" }}{{ $price = replace $price "." "," }}{{ end }}
+    <tr>
+      <td data-label="{{ $labels.instance }}">{{ .name }}</td>
+      <td data-label="vCPU">{{ .vcpu }}</td>
+      <td data-label="RAM (GB)">{{ .ram_gb }}</td>
+      <td data-label="Disk (GB)">{{ .disk_gb }}</td>
+      <td data-label="{{ $labels.price_heading }}">{{ $price }}</td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>

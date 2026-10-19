@@ -1,9 +1,10 @@
 ---
-title: "Dedikerad infrastruktur med Safespring som driftpartner."
-metatitle: "Private Cloud – dedikerad infrastruktur med Safespring"
+layout: "service-landing"
+title: "Private Cloud med Safespring som driftpartner"
+metatitle: "Private Cloud med dedikerad infrastruktur"
 language: "sv"
 date: "2023-05-10"
-lastmod: "2026-09-24"
+lastmod: "2026-10-02"
 draft: false
 intro: "Ett moln på öppen teknik för er verksamhet, placerat i ert datacenter eller hos en datacenterpartner."
 background: "safespring-compute-background.svg"
@@ -84,14 +85,6 @@ private_cloud_visuals:
         text: Lagra stora datamängder via ett S3-kompatibelt API. Objektlagringen
           kan kombineras med Compute eller levereras separat.
         note: S3-kompatibelt API.
-  trust:
-    eyebrow: Ett systematiskt säkerhetsarbete
-    title: ISO 27001
-    text: Safesprings certifierade ledningssystem för informationssäkerhet omfattar
-      drift, utveckling och underhåll av infrastruktur för både publika och privata
-      molntjänster.
-    linktext: Läs om certifieringens omfattning
-    link: compliance/iso-27001
   contact:
     eyebrow: Nästa steg
     title: Låt oss gå igenom era behov
@@ -100,78 +93,105 @@ private_cloud_visuals:
     cta: Prata Private Cloud med oss
 ---
 
-## Kapacitet, drift och öppen teknik {#kontroll}
+<section class="service-section service-split service-intro" aria-labelledby="pc-intro">
+<div>
+<p class="service-eyebrow">Safespring Private Cloud</p>
+<h2 id="pc-intro">Ett eget moln med en driftpartner</h2>
+</div>
+<div class="service-copy">
+<p>En dedikerad molnplattform för er organisation, placerad i ert eget datacenter eller hos en datacenterpartner.</p>
+<p>Safespring sköter plattformens drift och underhåll. Ni ansvarar för applikationer, data och användare. Lösningen utformas efter kapacitet, fysisk placering och det driftansvar ni vill fördela.</p>
+<div class="service-actions"><a class="button" href="/kontakt/">Diskutera Private Cloud</a><a class="text-button" href="#ansvar">Se ansvarsfördelningen</a></div>
+</div>
+</section>
 
-{{< ingress >}}
-Med Private Cloud får ni en dedikerad plattform och en partner som sköter den löpande driften.
-{{< /ingress >}}
-
+<section id="kontroll" class="service-section" aria-labelledby="pc-behov">
+<h2 id="pc-behov">När passar ett privat moln?</h2>
+<p>Private Cloud är relevant när ni behöver dedikerad infrastruktur och vill planera kapaciteten för en egen miljö. Det kan också vara ett alternativ när placeringen styrs av era datacenter- eller verksamhetskrav.</p>
 {{< private-cloud-visual "benefits" />}}
+{{< note title="Jämför med det publika molnet" color="middle-blue" >}}
+I det publika molnet använder ni resurser i en gemensam plattform. För en privat installation behöver hårdvara, kapacitetsutökning och driftupplägg planeras för just er miljö.
+{{< /note >}}
+</section>
 
-{{< distance >}}
+<section id="ansvar" class="service-section service-split" aria-labelledby="pc-ansvar">
+<div>
+<h2 id="pc-ansvar">Ett tydligt ansvar på varje nivå</h2>
+<p>Safespring sköter molnplattformens driftsättning, löpande drift och programvaruunderhåll. Ni sköter applikationer och data, inklusive er strategi för säkerhetskopiering.</p>
+<p>Ström, kylning, anslutning och arbete på plats ligger hos er eller datacenterpartnern enligt valt upplägg. Exakt ansvar, support och servicenivåer fastställs i avtalet.</p>
+</div>
+<div>{{< private-cloud-visual "responsibility" />}}</div>
+</section>
 
-## Så fördelas ansvaret {#ansvar}
-
-Tillsammans klargör vi vem som ansvarar för varje del, från datacentret till applikationerna.
-
-{{< private-cloud-visual "responsibility" />}}
-
-{{< distance >}}
-
-## Placering efter era krav {#placering}
-
-Utgå från verksamhetens krav på placering och fysisk kontroll. Vi hjälper er att välja ett upplägg för den dedikerade infrastrukturen.
-
+<section id="placering" class="service-section" aria-labelledby="pc-placering">
+<h2 id="pc-placering">Eget datacenter eller datacenterpartner</h2>
+<p>Om plattformen ska stå hos er behöver utrymme, el, kylning, anslutning och arbete på plats ingå i planeringen. Private Cloud kan även placeras hos T.Loop i Sverige; placering, kapacitet och villkor tas fram för lösningen.</p>
 {{< private-cloud-visual "placement" />}}
+</section>
 
-{{< distance >}}
-
-## Plattformens byggstenar {#oppenhet}
-
-Kombinera beräkning och lagring efter era behov. OpenStack är grunden för Compute, medan Ceph används för block- och objektlagring.
-
+<section id="oppenhet" class="service-section" aria-labelledby="pc-plattform">
+<h2 id="pc-plattform">OpenStack för Compute, Ceph för lagring</h2>
+<p>Lokal instanslagring ingår i grundupplägget. Ceph-baserad blocklagring kan väljas till, och S3-kompatibel objektlagring kan kombineras med Compute eller levereras separat.</p>
 {{< private-cloud-visual "platform" >}}
-
-Compute kan kompletteras med GPU-kapacitet. En kombination med Safesprings publika moln planeras utifrån era behov.
-
-Tjänstekatalogen beskriver möjligheten för er att ta över förvaltningen av plattformen, med kunskapsöverföring från Safespring.
-
-[Utforska tjänstekatalogen]({{< relref "geant/service-catalogue/private-cloud" >}})
-
+GPU-kapacitet är ett tillval som behöver dimensioneras. Stäm av de tjänster, API:er och nätverksfunktioner ni behöver; funktionerna i det publika molnet ska inte automatiskt förutsättas ingå i en privat installation.
 {{< /private-cloud-visual >}}
+</section>
 
-{{< distance >}}
+<section class="service-section service-split" aria-labelledby="pc-flytt">
+<div>
+<h2 id="pc-flytt">Utvärderar ni ett alternativ till VMware?</h2>
+<p>Börja med de arbetslaster och VMware-funktioner ni använder. OpenStack kan kräva anpassningar av er miljö.</p>
+</div>
+<div>
+{{< timeline ariaLabel="Utvärdering inför en migration till Private Cloud" >}}
+  {{< timeline-item label="01" title="Inventera funktioner och krav" >}}
+<p>Jämför nätverk, lagring, automation, licenser och tillgänglighetskrav med den planerade OpenStack-miljön.</p>
+  {{< /timeline-item >}}
+  {{< timeline-item label="02" title="Planera en avgränsad pilot" >}}
+<p>En migration behöver en avgränsad pilot, en plan för dataflytt och ett sätt att återgå om provet inte uppfyller kraven.</p>
+  {{< /timeline-item >}}
+  {{< timeline-item label="03" title="Bestäm omfattning och ansvar" >}}
+<p>Diskutera driftupplägg och ansvar innan produktionsflytten planeras. Private Cloud ska inte behandlas som en direkt ersättare utan anpassning.</p>
+  {{< /timeline-item >}}
+{{< /timeline >}}
+</div>
+</section>
 
-## Ett systematiskt säkerhetsarbete {#sakerhet}
+<section id="sakerhet" class="service-section" aria-labelledby="pc-villkor">
+<h2 id="pc-villkor">Knyt tekniken till tydliga villkor</h2>
+{{< card-grid columns="2" ariaLabel="Frågor att avtala för Private Cloud" >}}
+  {{< card-grid-item code="DRIFT" title="Åtkomst, återställning och support" >}}
+Gå igenom administrativ åtkomst, backup, redundans och support som delar av samma lösning. Servicenivåer behöver knytas till tjänsten och er arkitektur, inte användas som ett generellt löfte om varje applikation.
+  {{< /card-grid-item >}}
+  {{< card-grid-item code="AVTAL" title="Integration och framtida byte" >}}
+Öppna gränssnitt är en teknisk grund för integration. Rättigheter att ta över förvaltningen, eventuell kunskapsöverföring och ansvar vid ett avslut behöver också framgå av avtalet.
+  {{< /card-grid-item >}}
+{{< /card-grid >}}
+</section>
 
-{{< private-cloud-visual "trust" />}}
-
-{{< distance >}}
-
-## Frågor om Private Cloud {#fragor}
-
-{{% accordion title="Hur skiljer sig Private Cloud från ett publikt moln?" %}}
-Private Cloud bygger på dedikerad infrastruktur för er organisation. Kapacitet, placering och driftupplägg utformas för era behov. I Safesprings publika moln använder ni resurser i en gemensam plattform.
-{{% /accordion %}}
-
-{{% accordion title="Vem äger hårdvaran?" %}}
-I det Private Cloud-erbjudande som beskrivs i vår tjänstekatalog äger kunden hårdvaran. Vi går igenom hårdvara, placering och ansvarsfördelning när vi tar fram lösningen.
-{{% /accordion %}}
-
-{{% accordion title="Vilka OpenStack-funktioner och API:er ingår?" %}}
-OpenStack är grunden för beräkningsplattformen. Vi stämmer av vilka tjänster, API:er och nätverksfunktioner ni behöver när vi utformar lösningen. Omfattningen ska framgå av erbjudandet.
-{{% /accordion %}}
-
-{{% accordion title="Hur hanteras tillgänglighet och säkerhetskopiering?" %}}
-Vi går igenom era krav på redundans, återställning och support och fastställer servicenivåerna i avtalet. Ni ansvarar för era applikationer och er strategi för säkerhetskopiering. Säkerhetskopiering och lösningar över flera platser behöver planeras särskilt.
-{{% /accordion %}}
-
+<section id="fragor" class="service-section" aria-labelledby="pc-fragor">
+<h2 id="pc-fragor">Pris och frågor inför ett beslut</h2>
 {{% accordion title="Vad kostar Private Cloud?" %}}
-Kontakta oss för en offert utifrån era behov av kapacitet, placering och drift. I dialogen går vi också igenom tillval, support och avtalsperiod.
+Priset tas fram genom offert. Kapacitet, placering, lagringstillval, support och avtalsperiod är delar av underlaget. Ta med dagens resursbehov och hur ni väntar er att det förändras.
 {{% /accordion %}}
+{{% accordion title="Vem äger hårdvaran?" %}}
+Ägande och ansvar för hårdvaran fastställs i erbjudandet och avtalet. Gå igenom placering, underhåll och vad som ska hända när avtalet löper ut.
+{{% /accordion %}}
+{{% accordion title="Ingår drift av våra applikationer och backup?" %}}
+Driften av molnplattformen ska skiljas från driften av applikationerna. Ni ansvarar för applikationer, data och backupstrategi. Ytterligare åtaganden behöver beskrivas och avtalas särskilt.
+{{% /accordion %}}
+{{% accordion title="Kan vi kombinera med Safesprings publika moln?" %}}
+En kombination kan planeras utifrån era behov. Gå igenom anslutning, dataflöden och ansvar för respektive miljö innan ni väljer vilka delar som ska ligga var.
+{{% /accordion %}}
+</section>
 
-{{< distance >}}
-
-## Låt oss gå igenom era behov {#kontakt}
-
+<section id="kontakt" class="service-section service-split service-photo-contact" aria-labelledby="pc-kontakt">
+<figure class="service-photo service-photo-planning">
+<img src="/img/team/safespring-team-planning-1280.jpg" srcset="/img/team/safespring-team-planning-640.jpg 640w, /img/team/safespring-team-planning-1280.jpg 1280w" sizes="(max-width: 800px) 90vw, 560px" width="1280" height="720" alt="Två personer samtalar framför en presentationsskärm i Safesprings kontorsmiljö." loading="lazy" decoding="async">
+</figure>
+<div>
+<h2 id="pc-kontakt">Förbered ett samtal om er miljö</h2>
+<p>Beskriv systemen, ungefärlig kapacitet och önskad placering. Ta med krav på tillgänglighet, återställning och support, samt vilka delar ert eget team vill sköta.</p>
 {{< private-cloud-visual "contact" />}}
+</div>
+</section>

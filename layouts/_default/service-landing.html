@@ -1,0 +1,17 @@
+{{ .Scratch.Set "hasDefaultSidebar" false }}
+{{ partial "head.html" . }}
+<body class="service-landing-page">
+  {{ partial "header.html" . }}
+  <div class="heading-default-single">
+    {{ .Render "li3" }}
+  </div>
+  <main id="main-content" class="service-landing-main">
+    {{ .Content }}
+    {{ if eq .Params.form "yes" }}
+      <section class="service-section service-form" aria-label="Kontakta Safespring">
+        {{ partial "form.html" . }}
+      </section>
+    {{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>

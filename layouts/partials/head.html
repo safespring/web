@@ -144,6 +144,7 @@
     {{ $hasComplianceDocumentTable := gt (len (findRE "compliance-document-table__info" $renderedContent 1)) 0 }}
     {{ $hasVideoPlayer := or .IsHome .Params.videoURL (gt (len (findRE "data-video-player" $renderedContent 1)) 0) }}
     {{ $hasAboutHistory := eq .Layout "about-history" }}
+    {{ $hasServiceLanding := eq .Layout "service-landing" }}
     {{ $hasContentTimeline := gt (len (findRE "content-timeline" $renderedContent 1)) 0 }}
     {{ $hasBoundaryTable := gt (len (findRE "ss-boundary-table" $renderedContent 1)) 0 }}
     {{ $hasDefaultSidebar := .Scratch.Get "hasDefaultSidebar" }}
@@ -172,9 +173,13 @@
 
     {{ partial "deferred-stylesheet.html" (dict "source" "css/main.css") }}
     {{ partial "deferred-stylesheet.html" (dict "source" "css/footer.css") }}
-    {{ if $hasAboutHistory }}
+    {{ if or $hasAboutHistory $hasServiceLanding }}
       {{ $aboutHistoryCSS := resources.Get "css/about-history.css" | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $aboutHistoryCSS.RelPermalink }}" />
+    {{ end }}
+    {{ if $hasServiceLanding }}
+      {{ $serviceLandingCSS := resources.Get "css/service-landing.css" | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $serviceLandingCSS.RelPermalink }}" />
     {{ end }}
     {{ if .Params.ai }}
       {{ partial "deferred-stylesheet.html" (dict "source" "css/ai-disclaimer.css") }}

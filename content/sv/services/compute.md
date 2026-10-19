@@ -1,6 +1,7 @@
 ---
-title: "Svensk OpenStack IaaS för reglerade verksamheter"
-metatitle: "OpenStack IaaS i Sverige och Norden | Safespring Compute"
+layout: "service-landing"
+title: "Virtuella servrar på OpenStack"
+metatitle: "Virtuella servrar i Sverige – Compute"
 language: "sv"
 documentation: "Compute"
 cardtitle: "Compute"
@@ -9,8 +10,8 @@ cardcolor: "#417DA5"
 cardorder: "3"
 date: 2022-12-07T13:58:58+01:00
 draft: false
-intro: "Safespring Compute är en svensk och europeisk IaaS-plattform för virtuella servrar, automation och skalbar infrastruktur med dataplacering i Norden och tydlig kontroll."
-cardintro: "OpenStack-baserad IaaS med kontroll, automation och drift från Norden."
+intro: "Virtuella servrar med dataplacering i Stockholm eller Oslo. Välj resurser, automatisera med OpenStack och planera drift och backup för er miljö."
+cardintro: "Virtuella servrar på OpenStack med portal, API och Terraform."
 background: "safespring-compute-background.svg"
 form: "yes"
 sidebarlinkname: "Se demo"
@@ -33,89 +34,123 @@ megamenu: "yes"
 slug: "compute"
 ---
 
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-server" text="Central blocklagring" link="#central-blocklagring" color="#195F8C" >}}
-    {{< icon-block icon="fa-solid fa-user-lock" text="Data Sovereignty" link="" color="#32cd32" >}}
-    {{< icon-block icon="fa-solid fa-lock-open" text="No vendor lock-in" link="" color="#195F8C" >}}
-    {{< icon-block icon="fa-solid fa-chart-line" text="Skalbar infrastruktur" link="" color="#3C9BCD" >}}
-    {{< icon-block icon="fa-solid fa-code" text="Open source" link="" color="#3C9BCD" >}}
-    {{< icon-block icon="fa-solid fa-cloud-upload-alt" text="99,9% tillgänglighet" link="" color="#32cd32" >}}
-{{< /icon-block-container >}}
+<section class="service-section service-split service-intro" aria-labelledby="compute-intro">
+<div>
+<p class="service-eyebrow">Safespring Compute</p>
+<h2 id="compute-intro">Virtuella servrar för den miljö ni vill bygga</h2>
+</div>
+<div class="service-copy">
+<p>Safespring Compute ger er virtuella servrar på OpenStack. Välj resurser och datacenter för er miljö och hantera servrarna i portalen eller med API och Terraform.</p>
+<p>Safespring sköter infrastrukturen. Ni driver operativsystem och applikationer och planerar hur era data säkerhetskopieras.</p>
+<div class="service-actions">
+<a class="button" href="/demo/compute/">Se demo av Compute</a>
+<a class="text-button" href="#resurser">Jämför resurser och lagring</a>
+</div>
+</div>
+</section>
 
+<section class="service-section" aria-labelledby="resurser">
+<h2 id="resurser">Välj beräkning och lagring tillsammans</h2>
+<p>Börja med applikationens behov av processorkraft, minne och lagring. Diskvalet påverkar både prestanda och hur data behöver skyddas.</p>
+{{< card-grid columns="2" ariaLabel="Två typer av instanser och lagring" >}}
+  {{< card-grid-item code="b2" title="Central blocklagring" >}}
+Volymen är skild från den server som kör instansen. Om den ska finnas kvar när instansen tas bort behöver inställningen för radering vid avslut vara rätt.
 
-## OpenStack-baserad IaaS i Sverige
+Central blocklagring finns som FAST och LARGE. Välj efter diskprestanda och kapacitet.
+  {{< /card-grid-item >}}
+  {{< card-grid-item code="l2" title="Lokal NVMe-lagring" >}}
+För arbetslaster där lokal disk är ett medvetet arkitekturval. Planera hur applikationen hanterar diskfel och hur data återställs.
 
-{{< ingress >}}
-Safespring Compute ger organisationer en flexibel infrastrukturplattform för virtuella servrar, automation och skalbar drift utan hyperscaler-inlåsning.
-{{< /ingress >}}
+Lokal disk har inte samma egenskaper som central blocklagring.
+  {{< /card-grid-item >}}
+{{< /card-grid >}}
+<div id="central-blocklagring"></div>
+{{< manual-document-table >}}
+  {{< manual-document-row title="Instanstyper och resurser" href="https://docs.safespring.com/compute/flavors/" label="Docs" description="Jämför instanstyperna och deras lagring." >}}
+  {{< manual-document-row title="Volymer och livscykel" href="https://docs.safespring.com/compute/volume/" label="Guide" description="Hur volymer skapas, ansluts och tas bort." >}}
+{{< /manual-document-table >}}
+</section>
 
-Med Safespring kan du skapa, starta och stoppa virtuella maskiner med bara några få enkla steg. Det är enkelt att anpassa efter dina behov tack vare vår självbetjäning och fullständiga automation.
+<section class="service-section service-split" aria-labelledby="compute-placering">
+<div>
+<h2 id="compute-placering">Välj var miljön ska köras</h2>
+<p>Compute finns dokumenterad på sajterna STO1 och STO2 i Stockholm samt OSL2 i Oslo. Välj svensk placering när det är ett krav för er lösning.</p>
+<p>Sajterna är separata. En applikation som ska tåla att en hel sajt blir otillgänglig behöver utformas för det.</p>
+</div>
+<div>
+{{< card-grid columns="1" ariaLabel="Dataplacering för Compute" >}}
+  {{< card-grid-item code="STO1 / STO2" title="Stockholm" >}}
+Svensk dataplacering för er Compute-miljö.
+  {{< /card-grid-item >}}
+  {{< card-grid-item code="OSL2" title="Oslo" >}}
+Norsk dataplacering på en separat sajt.
+  {{< /card-grid-item >}}
+{{< /card-grid >}}
+<p>Datacentervalet ersätter inte er bedömning av avtal, åtkomst och personuppgiftshantering. <a href="https://docs.safespring.com/compute/sites/">Läs om sajter och dataplacering</a>.</p>
+</div>
+</section>
 
-### Din data är GDPR säker
+<section class="service-section" aria-labelledby="compute-ansvar">
+<h2 id="compute-ansvar">Infrastrukturen hos oss. Applikationerna hos er.</h2>
+{{< card-grid columns="2" ariaLabel="Ansvarsfördelning för Compute" >}}
+  {{< card-grid-item code="SAFESPRING" title="Molninfrastrukturen" >}}
+Safespring sköter den infrastruktur där era virtuella servrar körs. Ni hanterar resurserna genom portalen, OpenStack CLI eller Terraform.
+  {{< /card-grid-item >}}
+  {{< card-grid-item code="ERT TEAM" title="System, behörigheter och backup" >}}
+Ni väljer operativsystem och sköter applikationer, uppdateringar och behörigheter. Automatiska backuper av era virtuella maskiner ingår inte i Compute.
+  {{< /card-grid-item >}}
+{{< /card-grid >}}
+{{< note title="Planera återställningen" color="middle-blue" >}}
+Snapshots och redundant lagring ersätter inte en backupstrategi. Välj hur era data ska skyddas och prova att de kan återställas. S3-objektlagring är en separat tjänst: [Safespring Storage]({{< relref "services/storage" >}}).
+{{< /note >}}
+<p><a href="https://docs.safespring.com/compute/security-compliance/data-management/">Läs om ansvar och datahantering för Compute</a>.</p>
+</section>
 
-Vi erbjuder högsta nivå av säkerhet och tillgänglighet med våra datahallar belägna inom Sveriges gränser. Safespring Compute är flexibel, automatiserad och ger dig enklare efterlevnad av lagar och regler kring datalagring. Alla data lagras på krypterade hårddiskar.
+<section class="service-section service-split" aria-labelledby="compute-inforande">
+<div>
+<h2 id="compute-inforande">Planera automation och kostnad före en flytt</h2>
+<p>API-åtkomsten är IP-begränsad. Tillåtna adresser behöver vara konfigurerade, eller så behöver åtkomsten ske från en instans på plattformen.</p>
+<div class="service-actions"><a class="text-button" href="/pris/#safespring-compute">Se priser för Compute</a></div>
+</div>
+<div>
+{{< timeline ariaLabel="Att planera inför Compute" >}}
+  {{< timeline-item label="01" title="Kontrollera åtkomst och verktyg" >}}
+<p>Planera era utvecklings- och driftsättningsflöden med portal, OpenStack CLI och Terraform. <a href="https://docs.safespring.com/compute/api/">Läs om API-åtkomst och Terraform</a>.</p>
+  {{< /timeline-item >}}
+  {{< timeline-item label="02" title="Räkna på resurser som finns kvar" >}}
+<p>En instans debiteras så länge den finns, även när den är avstängd, pausad eller shelved. Volymer och snapshots kan ge separata kostnader. Säkra data innan resurser raderas.</p>
+  {{< /timeline-item >}}
+  {{< timeline-item label="03" title="Planera ändringar av kapacitet" >}}
+<p>Resize görs offline. Kontrollera vilka byten som stöds för instanstypen och planera avbrottet. <a href="https://docs.safespring.com/compute/cost-optimization/">Läs om kostnadsoptimering</a>.</p>
+  {{< /timeline-item >}}
+{{< /timeline >}}
+</div>
+</section>
 
-Med Safespring Compute får du tillgång till marknadsledande molnteknologi direkt ifrån våra säkra och tillförlitliga datahallar i Sverige. Din data stannar inom landets gränser, vilket ger extra datasäkerhet.
-
-{{< distance >}}
-
-{{% custom-card image="/img/card/safespring-move-from-vmware.svg" cardtitle="Få en kostnadsfri bedömning för att migrera dina VMware-workloads till Safespring" %}}
-Safespring hjälper dig migrera från VMware till Safespring, kostnadsfritt och anpassat efter dina behov. Bedömningen inkluderar att identifiera era nuvarande VMware-produkter, bedöma automationsnivåer och skapa ett koncepttest för migration.
-
-{{< localbutton icon="fa fa-external-link" text="Starta bedömningen" link="https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd" >}}
-
-{{% /custom-card %}}
-
-{{< distance >}}
-
-### Samarbeta effektivt med Safespring Compute
-Vår tjänst underlättar samarbete mellan olika avdelningar eller grupper, förenklar IT-hantering och tillför effektivitet till din organisation.
-
-
-### Byggt på öppen källkod
-Safespring Compute är byggd på Open Source, vilket möjliggör för företag och organisationer att dela på produktutvecklingen och innovation. Detta gynnar alla parter - företag, organisationer och slutanvändare.
-
-{{% accordion title="VPN tjänster" %}}
-
-Med Safespring Compute kan du stärka din organisation med robusta och flexibla VPN-alternativ som WireGuard och ZeroTier. Vår automatiserade lösning för WireGuard VPN-servrar ger en säker och effektiv startpunkt för åtkomst till privata nätverk från vilken plats som helst, perfekt för företag som kräver fjärråtkomst och hög datasekretess. WireGuard erbjuder en strömlinjeformad och lättkonfigurerad VPN-arkitektur som garanterar att dina företagsdata är säkra och åtkomliga oavsett var dina anställda befinner sig.
-
-För organisationer som söker en ännu mer skalbar VPN-lösning är ZeroTier ett utmärkt alternativ. Med ZeroTier kan du enkelt skapa virtuella nätverk med krypterade tunnlar, som möjliggör säker och omedelbar kommunikation mellan noder globalt. Denna plattform är idealisk för snabb konfiguration och enkel skalbarhet, utan behovet av traditionell VPN-hårdvara eller komplexa installationsprocesser.
-
-På Safespring är vi stolta över att erbjuda dessa avancerade VPN-möjligheter integrerade direkt i vår Compute-plattform. Med bara några få klick kan du konfigurera och deploya en fullständig VPN-lösning som stöder både WireGuard och ZeroTier, vilket säkerställer att din organisation alltid har tillgång till säkra och flexibla nätverksalternativ.
-
-[Läs mer i vår dokumentation](https://docs.safespring.com/compute/vpn/).
-
-{{% /accordion %}}
-
-
-## Central blocklagring
-
-{{< ingress >}}
-Vår centraliserade blocklagring erbjuder säker och flexibel lagringskapacitet som är separerad från de noder där dina instanser körs. 
-{{< /ingress >}}
-
-Detta möjliggör hög tillgänglighet och tillförlitlighet. Genom ett distribuerat Ceph-kluster kan vi garantera optimal prestanda och skalbarhet för dina specifika behov. Våra blocklagringsalternativ finns i två varianter, anpassade för olika användnings­områden: FAST och LARGE.
-
-{{< icon-block-horisontal color="#195F8C" icon="fas fa-rocket" text="FAST" description="Vår FAST-lagring är optimerad för prestanda och designad för applikationer som kräver låga latenser och höga IOPS (Input/Output Operations Per Second). Den är idealisk för databaser, virtuella maskiner och andra prestandakritiska applikationer som kräver snabb responstid och pålitlig tillgänglighet." >}}
-{{< icon-block-horisontal color="#195F8C" icon="fas fa-hdd" text="LARGE" description="LARGE-lagringen är designad för att erbjuda kostnadseffektiv blocklagring med hög kapacitet. Det är det perfekta valet för applikationer där lagringskapacitet prioriteras framför prestanda, såsom arkivering, säkerhetskopior och hantering av stora datamängder där kostnad per gigabyte är en avgörande faktor." >}}
-{{< distance >}}
-
+<section class="service-section" aria-labelledby="compute-demo">
+<h2 id="compute-demo">Se hur en instans skapas</h2>
 {{< video "https://s3.sto1.safedc.net/a489f53964f14fe897308b4243d7138d:processedvideos/safespring-demo-instans-svenska/master.m3u8" "/img/card/safespring-demo-instans-svenska.webp" >}}
-{{< distance >}}
+</section>
 
-{{< horisontal-card image="/img/card/safespring-image.svg" cardtitle="NIS 2 direktivet" link="/gdpr" linktext="Safesprings säkerhet" text="NIS 2 direktivet utökar kraven på företag inom kritiska sektorer att implementera riskhanteringsstrategier, säkerställa incidenthantering och kontinuitet, samt garantera leverantörskedjans säkerhet." >}}
+<section class="service-section" aria-labelledby="compute-fragor">
+<h2 id="compute-fragor">Frågor inför en flytt</h2>
+{{% accordion title="Kan vi flytta från VMware?" %}}
+Det börjar med att jämföra er nuvarande miljö med OpenStack. Nätverk, lagring, automation och applikationernas krav kan behöva anpassas. En bedömning av miljön är inte samma sak som en genomförd migration.
 
+[Beskriv er miljö i formuläret för migrationsbedömning](https://next.safespring.com/apps/forms/s/miJx5AFAb988X5EjwCLF5LGd).
+{{% /accordion %}}
+{{% accordion title="Kan vi köra Windows?" %}}
+Windows-avbildningar finns för virtuella maskiner. Kontrollera att licenser, drivrutiner och applikationskrav fungerar för er planerade miljö. Att en avbildning finns innebär inte att alla licenser eller migreringsmoment ingår.
+{{% /accordion %}}
+{{% accordion title="Ska vi välja Compute eller Kubernetes?" %}}
+Välj Compute när ni vill hantera virtuella maskiner och deras operativsystem. För containeriserade applikationer med ett managerat kontrollplan kan ni utvärdera [Safespring Kubernetes Engine]({{< relref "services/containerplatform" >}}). Ert ansvar för applikationer och data behöver vara tydligt i båda fallen.
+{{% /accordion %}}
+</section>
 
-## OpenStack och Kubernetes
-OpenStack och Kubernetes gör det enkelt att automatisera och skalera din applikationsuppsättning. Oavsett var du väljer att köra dina applikationer kan Safespring erbjuda en enhetlig och smidig lösning.
-
-Även om vår plattform är baserad på öppen källkod och Linux, stödjer vi även Windows på våra virtuella maskiner. Safespring samarbetar med CloudBase för att erbjuda startklara Windows-avbildningar, så att du snabbt kan komma igång.
-
-{{< readfile "Vad är IaaS?" "/content/sv/read-more/iaas-vs-colocation.md" >}}
-
-
-{{< distance >}}
-
-{{< horisontal-card image="/img/card/safespring-scaleut_use-case-ebba.webp" cardtitle="Ebba från Scaleout som samarbetat med Safespring berättar om vikten av hantering av känslig data " link="/tjanster/scaleout-systems-levererar-gdpr-saker-maskininlarning-med-safespring/" linktext="Läs Use Case" text="“Eftersom maskininlärning och AI-initiativ av detta slaget kräver hantering av stora mängder känslig data, är det viktigt att företag har kontroll och kan förlita sig på en pålitlig leverantör med hög datasäkerhet och integritet.”" >}}
-
-{{< distance >}}
+<section class="service-section service-split" aria-labelledby="compute-kontakt">
+<h2 id="compute-kontakt">Beskriv den miljö ni vill bygga</h2>
+<div>
+<p>Berätta vad ni kör i dag, ungefärligt resursbehov, önskad dataplacering och krav på återställning. Det ger ett underlag för att diskutera vilken konfiguration som passar.</p>
+<div class="service-actions"><a class="button" href="#contact-form">Kontakta oss om Compute</a></div>
+</div>
+</section>

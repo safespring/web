@@ -1,81 +1,76 @@
 ---
-title: "Database som tjeneste med høy tilgjengelighet"
-slug: "database"
+title: "Database som tjeneste på Safespring"
 language: "nb"
-cardtitle: "Database-tjeneste"
+cardtitle: "Database som tjeneste"
 cardicon: "fa-solid fa-database"
 cardcolor: "#5C509D"
 cardorder: "4"
 date: 2022-04-29T11:58:58+01:00
 draft: false
 section: "DBaaS"
-intro: "Med bare noen få klikk kan du distribuere et fullt administrert, lastbalansert, høytilgjengelig databasenøkkel for MySQL, MariaDB eller PostgreSQL som gir ytelse, drifttid og enkelhet."
-cardintro: "Med noen få klikk kan du distribuere et fullt administrert, databasenøkkel."
+toplogo: "severalninses-logo.png"
+intro: "Administrerte databaser med PostgreSQL, MySQL, MariaDB og Valkey på Safesprings infrastruktur. Severalnines leverer tjenesten og er din avtalepart."
+cardintro: "Administrerte databaser fra Severalnines på Safesprings infrastruktur."
 background: "safespring-background-dbaas.svg"
 card: ""
 socialmedia: "safespring_social_01.jpg"
+sidebarlinkname: "Kontakt Safespring"
+sidebarlinkurl: "/kontakt/#contact-form"
+sidebarlinkname2: "Se priser"
+sidebarlinkurl2: "#pris"
 sidebarsection: ""
-sidebarimage: "safespring-dbaas.svg"
-sidebartitle: ""
-sidebartext: ""
-sidebardate: ""
-sidebarknapp: ""
-sidebarlink: ""
-saas: ""
-sidebarwhitepaper: ""
+sidebarimage: "safespring-fredric.webp"
+sidebartext: "Jeg heter Fredric Wallsten. Kontakt meg hvis du har spørsmål om database som tjeneste."
+sidebarphone: "+46855107370"
+sidebarmail: "hello@safespring.com"
+darkmode: "off"
+slug: "database"
 aliases:
   - /tjenester/database-som-tjeneste-med-hoy-tilgjengelighet/
   - /no/tjenester/database-as-a-service/
-darkmode: "off"
-logo: "/img/logos/dbaas-logos.svg"
-logomobile: "/img/logos/dbaas-logos-mobile.svg"
 ---
 
-
-![Safespring benefits](/img/saas/safespring_key-points-dbaas.svg)
+{{< icon-block-container >}}
+    {{< icon-block icon="fa-solid fa-arrows-rotate" text="Automatisert drift" link="" color="#3C9BCD">}}
+    {{< icon-block icon="fa-solid fa-gauge" text="Høy tilgjengelighet" link="" color="#32cd32">}}
+    {{< icon-block icon="fa-solid fa-chart-line" text="Overvåking" link="" color="#195F8C">}}
+    {{< icon-block icon="fa-solid fa-unlock" text="Brukeradministrasjon" link="" color="#f4670f">}}
+    {{< icon-block icon="fa-kit fa-safespring-icon" text="Safesprings infrastruktur" link="" color="#417DA5">}}
+    {{< icon-block icon="fa-solid fa-clock-rotate-left" text="Sikkerhetskopiering" link="" color="#3C9BCD">}}
+{{< /icon-block-container >}}
 
 {{< ingress >}}
-Database-som-tjeneste tar seg av alt, noe som gir deg tilgjengelige databaser med høy ytelse for dine applikasjoner.
-{{</ ingress >}}
+La Severalnines ta seg av databasedriften på Safesprings infrastruktur.
+{{< /ingress >}}
 
-Tjenesten bygges av vår partner Severalnines på Safespring. Å administrere en kompleks, klustret databasmiljø er en tidkrevende og ofte skummel oppgave. Med bare noen få klikk kan du distribuere et fullt administrert, lastbalansert, høytilgjengelig databasenøkkel for MySQL, MariaDB eller PostgreSQL som gir ytelse, drifttid og enkelhet.
+Med CCX Cloud kan du opprette og administrere databaser med PostgreSQL, MySQL, MariaDB og Valkey. Tjenesten bygger på Severalnines' plattform ClusterControl og samler overvåking, sikkerhetskopiering og gjenoppretting.
 
-{{< 2calltoaction "Se demo" "/demo/compute/" "Kontakt oss" "/kontakt/#contact-form" >}}
+### Hvem har ansvar for hva?
+
+Safespring leverer infrastrukturen som databasene kjører på. Severalnines leverer og administrerer databasetjenesten og er din avtalepart. Support og tjenestenivå reguleres i avtalen din med Severalnines.
+
+Vil du vite hvordan tjenesten passer inn i miljøet ditt? Kontakt Safespring for å diskutere databasebehovet ditt.
+
+<p><a class="button" href="/kontakt/#contact-form">Kontakt Safespring</a> <a class="text-button" href="#pris">Se priser</a></p>
 
 {{< distance >}}
 
-### Automatisert drift med ClusterControl
-CCX bygger på ClusterControl, en bevist plattform for å automatisere og administrere høy tilgjengelige MySQL-, MariaDB- og PostgreSQL-distribusjoner. Forestill deg din egen virtuelle DBA som jobber 24x7 for å sikre at dine klynger alltid er tilgjengelige og fungerer optimalt, med backup-administrering for å beskytte dine data.
+### Overvåking og sikkerhetskopiering
 
-### Avansert trafikkontroll
-CCX distribuerer databasbevisste lastbalansere for å gi deg full kontroll over å dirigere queries på forespørsel, optimalisere tilkoblingshåndteringen, muliggjøre throttling og mye mer. Den har evnen til å cache queries, noe som gjør dine applikasjoner mer responsiv og gir en bedre sluttbrukeropplevelse.
+Følg med på databasenes status og ressurskrevende databasespørringer i CCX. Tjenesten støtter sikkerhetskopiering og gjenoppretting, slik at du kan planlegge hvordan dataene dine skal beskyttes og gjenopprettes.
 
-### Høy tilgjengelighet
-CCX tilbyr svært tilgjengelige distribusjoner for MySQL og MariaDB med hjelp av multi-master Galera-klynging. Funksjoner inkluderer flere skrivbare masters, sterkt konsekvente data over servere, sømløs skalering og rask failover.
+### Høy tilgjengelighet og skalering
+
+CCX støtter automatisk feilhåndtering og gjenoppretting. Du kan også legge til eller fjerne replikaer. Konfigurasjonen må tilpasses databasetypen og kravene dine til tilgjengelighet.
+
+### Tilgang og sikkerhet
+
+Administrer databasebrukere og tilganger i CCX. Brannmurfunksjoner hjelper deg med å styre hvilke tilkoblinger som tillates.
 
 ## Pris
-{{< ingress >}}
-Prisene er basert på forbruk. Du betaler per time bare for det du bruker.
-{{</ ingress >}}
 
-Priskomponentene er antall server-vCPUer og tilhørende RAM, mengden forbrukt lagring og datautgangsstype (utgående eller mellom AZ) og mengde.
+Prisene er omregnet fra USD og vises per node per time, ekskl. mva.
 
-| Instance | vCPU   | RAM (GB) | Disk (GB) | Pris per node per time |
-|----------|--------|----------|-----------|---------------------|
-| Tiny     | 2vCPU  | 4GB      | 100       | 2,085 NOK           |
-| Small    | 8vCPU  | 8GB      | 100       | 3,746 NOK           |
-| Medium   | 8vCPU  | 16GB     | 100       | 7,045 NOK           |
-| Large    | 16vCPU | 32GB     | 100       | 13,609 NOK          |
-| X-Large  | 16vCPU | 32GB     | 500       | 15,266 NOK          |
-| XX-Large | 16vCPU | 32GB     | 1000      | 17,417 NOK          |
+{{< ccx-pricing >}}
 
-
-| Data Egress          | Månedspris     |
-|----------------------|----------------|
-| Första 1024GB        | GRATIS         |
-| Över 1024 GB         | 0,95 NOK/GB    |
-
-
-{{< 2calltoaction "Se demo" "/demo/compute/" "Kontakt oss" "/kontakt/#contact-form" >}}
-
-{{< distance >}}
+{{% horisontal-card image="/img/graphics/safespring-image.svg" link="/tjenester/compute/" linktext="Les om Safespring Compute" cardtitle="Infrastrukturen bak databasetjenesten" text="CCX Cloud fra Severalnines kjører på Safesprings infrastruktur. Les mer om Safespring Compute, som ligger til grunn for tjenesten." %}}

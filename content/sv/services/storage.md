@@ -1,6 +1,7 @@
 ---
-title: "S3-kompatibel objektlagring i Sverige och Norden"
-metatitle: "S3 Storage i Sverige och Norden | Safespring Storage"
+layout: "service-landing"
+title: "S3-kompatibel objektlagring för företag"
+metatitle: "S3-kompatibel objektlagring i Sverige"
 language: "sv"
 documentation: "Storage"
 cardtitle: "Storskalig lagring"
@@ -10,8 +11,8 @@ cardcolor: "#f4670f"
 cardorder: "4"
 date: 2024-09-22T10:50:10+02:00
 draft: false
-intro: "S3-kompatibel objektlagring för organisationer som behöver skalbar lagring, objektlåsning, låg latency och kontroll över data i svenska och nordiska datacenter."
-cardintro: "S3-kompatibel objektlagring med kontroll, objektlåsning och nordisk drift."
+intro: "S3-kompatibel lagring för applikationer, arkiv och backupverktyg. Jämför Standard och Archive, kompatibilitet, kvoter och pris."
+cardintro: "S3-kompatibel objektlagring med Standard och Archive."
 background: "safespring-storage-background.svg"
 form: "yes"
 sidebarlinkname: "Kom igång"
@@ -33,85 +34,116 @@ aliases:
   - /tjanster/safespring-storage/
 ---
 
+<section class="service-section service-split service-intro" aria-labelledby="storage-intro">
+<div>
+<p class="service-eyebrow">Safespring Storage</p>
+<h2 id="storage-intro">Objektlagring som ansluter till era system</h2>
+</div>
+<div class="service-copy">
+<p>S3-kompatibel objektlagring för applikationer och dataarkiv, som också kan användas som lagringsmål för backupverktyg. Välj lagringstyp och dataplacering utifrån hur era data används.</p>
+<p>Åtkomsten sker via ett S3-API. En fildelningslösning med användargränssnitt behöver en separat applikation.</p>
+<div class="service-actions"><a class="button" href="/pris/#safespring-storage-s3">Se priser för Storage</a><a class="text-button" href="#lagringstyper">Jämför Standard och Archive</a></div>
+</div>
+</section>
 
-{{< icon-block-container >}}
-    {{< icon-block icon="fa-solid fa-shield-alt" text="Europeiska säkerhets­värden" link="" color="#32cd32">}}
-    {{< icon-block icon="fa-solid fa-layer-group" text="Skalbar lagring" link="" color="#417DA5">}}
-    {{< icon-block icon="fa-solid fa-tachometer-alt" text="Hög prestanda" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-kit fa-safespring-s3" text="S3-kompatibel" link="" color="#3C9BCD">}}
-    {{< icon-block icon="fa-solid fa-sync-alt" text="Hög tillgänglighet" link="" color="#FA690F">}}
-    {{< icon-block icon="fa-solid fa-dollar-sign" text="Kostnads­effektivt" link="" color="#32cd32">}}
-{{< /icon-block-container >}}
+<section class="service-section" aria-labelledby="lagringstyper">
+<h2 id="lagringstyper">Löpande åtkomst eller långsiktigt arkiv?</h2>
+{{< card-grid columns="2" ariaLabel="Jämförelse av Standard och Archive" >}}
+  {{< card-grid-item code="STANDARD" title="För data som används ofta" >}}
+För applikationer som ofta läser och skriver data. Standard finns dokumenterad i Stockholm och Oslo.
 
-## S3 Storage - lagring i molnet
+Publicerade standardkvoter: 10 buckets med 1 TB per bucket och en miljon objekt per bucket.
+  {{< /card-grid-item >}}
+  {{< card-grid-item code="ARCHIVE" title="För stora objekt som används sällan" >}}
+För större objekt som skrivs sällan och läses sporadiskt, exempelvis arkiv eller ett externt lagringsmål för ett backupverktyg. Archive är dokumenterad på STO2 i Stockholm.
 
-{{< ingress >}}
-Safespring Storage är objektlagring för verksamheter som behöver S3-kompatibilitet, skalbarhet och kontroll över dataplacering utan att låsa sig till en global hyperscaler.
-{{< /ingress >}}
+Publicerade standardkvoter: 2 buckets med 32 TB per bucket och en miljon objekt per bucket.
+  {{< /card-grid-item >}}
+{{< /card-grid >}}
+{{< note title="Archive har en separat kontotyp" color="middle-blue" >}}
+Archive är en separat tjänst, inte en automatisk övergång till en annan lagringsklass i samma bucket. Välj endpoint efter överenskommen variant och dataplacering. Stäm av större kvotbehov innan ni bygger lösningen kring dem.
+{{< /note >}}
+<p><a href="https://docs.safespring.com/storage/quota/">Läs om kvoter för Standard och Archive</a>.</p>
+</section>
 
-Med **datakryptering** kan du skydda dina data med end-to-end-kryptering och säkerställa integritet och konfidentialitet under överföring och lagring. Vår funktion **objektlåsning** skyddar dina kritiska data från oavsiktlig radering eller ransomware-attacker genom att göra objekt oföränderliga under en specifik tidsperiod.
+<section class="service-section service-split" aria-labelledby="storage-kompatibilitet">
+<div>
+<h2 id="storage-kompatibilitet">Utgå från de S3-funktioner ni använder</h2>
+<p>Vanliga S3-operationer och flera S3-klienter stöds. Kontrollera de funktioner applikationen faktiskt använder före en flytt.</p>
+</div>
+<div>
+{{< timeline ariaLabel="Kontroller inför en S3-integration" >}}
+  {{< timeline-item label="01" title="Anslut till rätt endpoint" >}}
+<p>Stäm av dataplacering, path-style-adressering och autentisering mot klientens konfigurationsguide.</p>
+  {{< /timeline-item >}}
+  {{< timeline-item label="02" title="Kontrollera funktioner och kryptering" >}}
+<p>Safespring Storage är inte identiskt med Amazon S3. AWS SSE-S3, SSE-KMS och Cross-Region Replication anges som ej stödda i kompatibilitetsmatrisen. Förutsätt inte en automatisk kopia mellan regioner.</p>
+  {{< /timeline-item >}}
+  {{< timeline-item label="03" title="Prova ert verktyg före dataflytten" >}}
+<p>Testa de operationer ni behöver, exempelvis uppladdning, läsning och radering, i en avgränsad miljö innan ni flyttar produktionsdata.</p>
+  {{< /timeline-item >}}
+{{< /timeline >}}
+<div class="service-actions"><a class="text-button" href="https://docs.safespring.com/storage/s3-compatibility/">Läs kompatibilitetsmatrisen</a></div>
+</div>
+</section>
 
-Molnbaserade applikationer förlitar sig på dataåtkomst med låg latens och snabba överföringar. Våra **optimerade överföringar** möjliggör effektiv datahantering genom prestandaförbättringar som parallella uppladdningar och multipart-överföringar.
+<section class="service-section" aria-labelledby="storage-backup">
+<h2 id="storage-backup">Ett lagringsmål i er backupstrategi</h2>
+{{< card-grid columns="2" ariaLabel="Lagring och kundens backupansvar" >}}
+  {{< card-grid-item code="LAGRING" title="Anslut ert backupverktyg" >}}
+Storage kan utvärderas som lagringsmål för ett backupverktyg. Det innebär inte att Safespring sköter hela backupflödet eller gör automatiska backuper av era buckets och objekt.
+  {{< /card-grid-item >}}
+  {{< card-grid-item code="ERT TEAM" title="Konfigurera och prova återställning" >}}
+Ni väljer vilka data som ska skyddas och konfigurerar verktyget. Redundans, versionshantering och eventuell objektlåsning ersätter inte en genomtänkt backupstrategi.
+  {{< /card-grid-item >}}
+{{< /card-grid >}}
+<p><a href="https://docs.safespring.com/storage/security-compliance/data-management/">Läs om ansvar och datahantering</a>.</p>
+</section>
 
-Dessutom erbjuder vår lösning enkel integration med befintliga S3-verktyg och applikationer, vilket eliminerar behovet av ändringar. Med brett applikationsstöd är Safespring Storage kompatibel med populära programvaror som Veeam Backup, Nextcloud, Cyberduck med flera.
+<section class="service-section service-split" aria-labelledby="storage-kostnad">
+<div>
+<h2 id="storage-kostnad">Räkna på lagring och användning</h2>
+<p>Planera både datamängd och antal objekt. Lagringskostnaden behöver beräknas för vald tjänst och användning.</p>
+<div class="service-actions"><a class="button" href="/pris/#safespring-storage-s3">Se priser för Storage</a></div>
+</div>
+<div>
+{{< note title="Ingen separat ingress- eller egressavgift" color="middle-blue" >}}
+Safespring tar inte ut ingress- eller egressavgifter för Storage. Överföringen in till och ut från tjänsten har alltså ingen separat trafikavgift. Själva lagringen har fortfarande en kostnad.
+{{< /note >}}
+</div>
+</section>
 
-## Safespring Storage finns i två versioner
-Behöver din applikation snabb åtkomst till lagrade data eller letar du efter en långsiktig lagringslösning för en offsite-backup?
+<section class="service-section" aria-labelledby="storage-guider">
+<h2 id="storage-guider">Konfigurationsguider för era verktyg</h2>
+{{< manual-document-table >}}
+  {{< manual-document-row title="AWS CLI" href="https://docs.safespring.com/storage/howto/configs/aws-cli/" label="Guide" description="Konfiguration för kommandoradsverktyget." >}}
+  {{< manual-document-row title="Cyberduck" href="https://docs.safespring.com/storage/howto/configs/cyberduck/" label="Guide" description="Anslut Cyberduck till Storage." >}}
+  {{< manual-document-row title="MinIO Client" href="https://docs.safespring.com/storage/howto/configs/minio-client/" label="Guide" description="Konfiguration av MinIO Client." >}}
+{{< /manual-document-table >}}
+</section>
 
-{{< icon-block-horisontal icon="fa-solid fa-rabbit-running" color="#3C9BCD" text="S3 Standardlagring" description="Vår standard S3-tjänst med låg latens och hög prestanda. Optimerad för applikationer som kräver snabb och tillförlitlig dataåtkomst." >}}
-{{< icon-block-horisontal icon="fa-solid fa-boxes-packing" color="#3C9BCD" text="S3 Arkivlagring" description="En kostnadseffektiv S3-tjänst utformad för arkiveringsändamål, idealisk för att lagra större objekt som skrivs en gång och läses sällan." >}}
+<section class="service-section" aria-labelledby="storage-fragor">
+<h2 id="storage-fragor">Frågor inför en integration</h2>
+{{% accordion title="Kan vi använda Object Lock?" %}}
+Stäm av stöd för ert konto och den avsedda lagringsvarianten innan ni bygger ett retentionskrav på Object Lock. Gå igenom retention, bucketkonfiguration och skillnaden mellan governance- och compliance-läge. Objektlåsning innebär inte en garanti mot alla typer av dataförlust.
 
-## Nyckelfunktioner
+[Läs dokumentationen om objektlåsning](https://docs.safespring.com/storage/object-locking/).
+{{% /accordion %}}
+{{% accordion title="Hur fungerar kryptering?" %}}
+Skilj på kryptering i lagringsplattformen och kryptering som er klient eller applikation ansvarar för. Kontrollera krypteringsmetod och nyckelhantering mot kompatibilitetsmatrisen. Stöd för AWS KMS ska inte förutsättas.
+{{% /accordion %}}
+{{% accordion title="Får vi automatiskt en kopia i ett annat datacenter?" %}}
+Nej, utgå inte från automatisk geografisk kopiering. Om lösningen kräver en separat kopia behöver ni planera kopieringen, dess placering och hur återställning ska fungera.
+{{% /accordion %}}
+{{% accordion title="Är Storage en färdig fildelningstjänst?" %}}
+Storage ger åtkomst till objekt via ett S3-API. Det är inte en färdig fildelningstjänst med användargränssnitt som Dropbox eller OneDrive. En sådan lösning behöver en separat applikation.
+{{% /accordion %}}
+</section>
 
-1. Ingen trafikkostnad tas ut från tjänsten, det som kallas egress-cost och ingress-cost. Du kan läsa mer om den funktionen i vår arikel: [Safespring tar inte ut några trafikavgifter](/perspektiv/safespring-tar-inte-ut-nagra-trafikavgifter/).
-1. Safespring Storage prioriterar din datasäkerhet. Med funktioner som objektlåsning och ACL:er har du full kontroll över din datas tillgänglighet och skydd.
-1. Betala endast för den lagring du använder. Safespring Storage erbjuder [flexibla prissättningsmodeller](/pris/#safespring-storage-s3) som kan anpassas efter dina specifika behov, vilket ger kostnadsbesparingar när du skalar.
-1. Vårt erfarna kundsupportteam finns tillgängligt för att hjälpa dig med alla frågor eller problem, vilket garanterar en smidig Safespring-upplevelse.
-
-### Användningsområden
-
-#### Innehållslagring och distribution
-
-Lagra och distribuera stora mediefiler, dokument och andra digitala tillgångar effektivt till din globala publik. Använd Safespring Storage som en medieserver för att strömma video över HLS. Safespring använder våra egna tjänster. [Våra webcasts streamas från Safespring Storage](/webinar/).
-
-#### Stordataanalys
-
-Utnyttja Safespring Storage för att lagra stora dataset som krävs för analys- och maskininlärningsapplikationer. Läs mer om hur [SciLifeLab använder Safespring för forskning inom livsvetenskap](/tjanster/en-flexibel-och-saker-molntjanst-for-life-science-forskning/).
-
-#### Databackup och återställning
-
-Vår backup-tjänst använder Safespring Storage som bas för att säkert säkerhetskopiera dina kritiska data och säkerställa snabb återställning vid katastrofer eller dataförlust.
-
-#### Efterlevnad och arkivering
-
-Möt regulatoriska krav genom att säkert lagra och arkivera data med oföränderlighet och granskningsmöjligheter.
-
-## Kom igång med våra konfigurationsguider
-
-{{< icon-block-small-container >}}
-    {{< icon-block-small icon="fa-solid fa-terminal" text="s3fs" link="https://docs.safespring.com/storage/howto/configs/s3fs/" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-cloud" text="CloudBerry" link="https://docs.safespring.com/storage/howto/configs/cloudberry/" color="#417DA5">}}
-    {{< icon-block-small icon="fa-solid fa-duck" text="CyberDuck" link="https://docs.safespring.com/storage/howto/configs/cyberduck/" color="#3C9BCD">}}
-    {{< icon-block-small icon="fa-solid fa-duck" text="Duck CLI" link="https://docs.safespring.com/storage/howto/configs/duck-cli/" color="#3C9BCD">}}
-    {{< icon-block-small icon="fa-solid fa-server" text="MinIO Client" link="https://docs.safespring.com/storage/howto/configs/minio-client/" color="#FA690F">}}
-    {{< icon-block-small icon="fa-solid fa-cloud-upload-alt" text="AWS-CLI" link="https://docs.safespring.com/storage/howto/configs/aws-cli/" color="#32cd32">}}
-    {{< icon-block-small icon="fa-solid fa-cloud" text="NextCloud" link="https://docs.safespring.com/storage/howto/configs/nextcloud-s3/" color="#32cd32">}}
-{{< /icon-block-small-container >}}
-
-## Vanliga frågor
-
-{{% question question="Vad är objektlåsning och hur skyddar det mina data?" %}}
-Objektlåsning är en funktion som gör objekt oföränderliga under en specificerad tidsperiod och förhindrar att de raderas eller skrivs över. Detta skyddar dina data från oavsiktliga raderingar och ransomware-attacker.
-{{% /question %}}
-
-{{% question question="Är Safespring Storage kompatibelt med mina befintliga S3-verktyg?" %}}
-Ja, Safespring Storage är fullt S3-kompatibelt, vilket gör att du kan använda dina befintliga verktyg och applikationer utan ändringar.
-{{% /question %}}
-
-{{< distance "contact" >}}
-
-{{% custom-card image="/img/card/safespring-fredric.webp" cardtitle="Kontakta oss idag" alt="Kontakta Safespring" %}}
-Upptäck den fulla potentialen i dina data med Safespring Storage. Vårt team är redo att hjälpa dig att hitta den perfekta lagringslösningen för ditt företags behov.
-
-[hello@safespring.com](mailto:hello@safespring.com)
-{{% /custom-card %}}
+<section id="contact" class="service-section service-split" aria-labelledby="storage-kontakt">
+<h2 id="storage-kontakt">Hitta rätt konfiguration för era data</h2>
+<div>
+<p>Berätta vilket system som ska ansluta till lagringen och om behovet gäller applikationsdata, arkiv eller ett backupmål. Ta med datamängd, antal objekt, läs- och skrivmönster samt krav på placering, retention och återställning.</p>
+<div class="service-actions"><a class="button" href="#contact-form">Kontakta oss om Storage</a></div>
+</div>
+</section>

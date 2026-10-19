@@ -1,0 +1,302 @@
+{
+  "source_url": "https://severalnines.com/ccx/cloud/",
+  "crosscheck_url": "https://severalnines.com/pricing/",
+  "terms_url": "https://severalnines.com/terms/",
+  "checked_on": "2026-10-19",
+  "checked_on_label": "19 oktober 2026",
+  "instances": [
+    {
+      "name": "Tiny",
+      "vcpu": 2,
+      "ram_gb": 4,
+      "disk_gb": "100",
+      "hourly_price_usd": "0.201",
+      "hourly_prices": {
+        "SEK": "2.002",
+        "NOK": "1.916",
+        "DKK": "1.331",
+        "EUR": "0.178"
+      }
+    },
+    {
+      "name": "Small",
+      "vcpu": 8,
+      "ram_gb": 8,
+      "disk_gb": "100",
+      "hourly_price_usd": "0.357",
+      "hourly_prices": {
+        "SEK": "3.555",
+        "NOK": "3.403",
+        "DKK": "2.364",
+        "EUR": "0.316"
+      }
+    },
+    {
+      "name": "Medium",
+      "vcpu": 8,
+      "ram_gb": 16,
+      "disk_gb": "100",
+      "hourly_price_usd": "0.675",
+      "hourly_prices": {
+        "SEK": "6.722",
+        "NOK": "6.435",
+        "DKK": "4.469",
+        "EUR": "0.598"
+      }
+    },
+    {
+      "name": "Large",
+      "vcpu": 16,
+      "ram_gb": 32,
+      "disk_gb": "100",
+      "hourly_price_usd": "1.308",
+      "hourly_prices": {
+        "SEK": "13.026",
+        "NOK": "12.469",
+        "DKK": "8.660",
+        "EUR": "1.159"
+      }
+    },
+    {
+      "name": "X-Large",
+      "vcpu": 16,
+      "ram_gb": 32,
+      "disk_gb": "500",
+      "hourly_price_usd": "1.476",
+      "hourly_prices": {
+        "SEK": "14.699",
+        "NOK": "14.071",
+        "DKK": "9.773",
+        "EUR": "1.307"
+      }
+    },
+    {
+      "name": "XX-Large",
+      "vcpu": 16,
+      "ram_gb": 32,
+      "disk_gb": "1 000",
+      "hourly_price_usd": "1.683",
+      "hourly_prices": {
+        "SEK": "16.760",
+        "NOK": "16.044",
+        "DKK": "11.143",
+        "EUR": "1.491"
+      }
+    }
+  ],
+  "base_currency": "USD",
+  "conversion": {
+    "source": "European Central Bank",
+    "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
+    "window_start": "2026-09-19",
+    "window_end": "2026-10-18",
+    "observation_count": 20,
+    "first_observation": "2026-09-21",
+    "last_observation": "2026-10-16",
+    "method": "Arithmetic mean of published daily local-currency-per-USD cross-rates. EUR/USD = 1 / USD per EUR; local/USD = local per EUR / USD per EUR. No weekend carry-forward.",
+    "rounding": "3 decimal places, ROUND_HALF_UP after applying the unrounded mean exchange rate",
+    "rates_per_usd": {
+      "SEK": "9.958666967305641470136472267737175593005",
+      "NOK": "9.533226862169814925510535649306616310965",
+      "DKK": "6.62112773784968388869494419855791663686",
+      "EUR": "0.885762273655601255301880246868273977906"
+    },
+    "observations_per_eur": [
+      {
+        "date": "2026-09-21",
+        "EUR": 1,
+        "USD": "1.149",
+        "SEK": "11.275",
+        "NOK": "10.813",
+        "DKK": "7.4755"
+      },
+      {
+        "date": "2026-09-22",
+        "EUR": 1,
+        "USD": "1.1463",
+        "SEK": "11.2463",
+        "NOK": "10.801",
+        "DKK": "7.4756"
+      },
+      {
+        "date": "2026-09-23",
+        "EUR": 1,
+        "USD": "1.1411",
+        "SEK": "11.272",
+        "NOK": "10.799",
+        "DKK": "7.4756"
+      },
+      {
+        "date": "2026-09-24",
+        "EUR": 1,
+        "USD": "1.1367",
+        "SEK": "11.2645",
+        "NOK": "10.7895",
+        "DKK": "7.4756"
+      },
+      {
+        "date": "2026-09-25",
+        "EUR": 1,
+        "USD": "1.1403",
+        "SEK": "11.29",
+        "NOK": "10.84",
+        "DKK": "7.4755"
+      },
+      {
+        "date": "2026-09-28",
+        "EUR": 1,
+        "USD": "1.1378",
+        "SEK": "11.3205",
+        "NOK": "10.817",
+        "DKK": "7.4752"
+      },
+      {
+        "date": "2026-09-29",
+        "EUR": 1,
+        "USD": "1.1355",
+        "SEK": "11.321",
+        "NOK": "10.8735",
+        "DKK": "7.4754"
+      },
+      {
+        "date": "2026-09-30",
+        "EUR": 1,
+        "USD": "1.1355",
+        "SEK": "11.331",
+        "NOK": "10.9015",
+        "DKK": "7.4755"
+      },
+      {
+        "date": "2026-10-01",
+        "EUR": 1,
+        "USD": "1.1298",
+        "SEK": "11.331",
+        "NOK": "10.875",
+        "DKK": "7.4758"
+      },
+      {
+        "date": "2026-10-02",
+        "EUR": 1,
+        "USD": "1.1225",
+        "SEK": "11.29",
+        "NOK": "10.8315",
+        "DKK": "7.4736"
+      },
+      {
+        "date": "2026-10-05",
+        "EUR": 1,
+        "USD": "1.1204",
+        "SEK": "11.2525",
+        "NOK": "10.7575",
+        "DKK": "7.4745"
+      },
+      {
+        "date": "2026-10-06",
+        "EUR": 1,
+        "USD": "1.1269",
+        "SEK": "11.2425",
+        "NOK": "10.778",
+        "DKK": "7.4747"
+      },
+      {
+        "date": "2026-10-07",
+        "EUR": 1,
+        "USD": "1.1177",
+        "SEK": "11.224",
+        "NOK": "10.712",
+        "DKK": "7.4745"
+      },
+      {
+        "date": "2026-10-08",
+        "EUR": 1,
+        "USD": "1.1186",
+        "SEK": "11.194",
+        "NOK": "10.717",
+        "DKK": "7.4739"
+      },
+      {
+        "date": "2026-10-09",
+        "EUR": 1,
+        "USD": "1.1206",
+        "SEK": "11.1675",
+        "NOK": "10.7155",
+        "DKK": "7.4751"
+      },
+      {
+        "date": "2026-10-12",
+        "EUR": 1,
+        "USD": "1.1181",
+        "SEK": "11.1965",
+        "NOK": "10.6955",
+        "DKK": "7.4748"
+      },
+      {
+        "date": "2026-10-13",
+        "EUR": 1,
+        "USD": "1.1188",
+        "SEK": "11.1698",
+        "NOK": "10.6685",
+        "DKK": "7.4753"
+      },
+      {
+        "date": "2026-10-14",
+        "EUR": 1,
+        "USD": "1.1195",
+        "SEK": "11.158",
+        "NOK": "10.6035",
+        "DKK": "7.4754"
+      },
+      {
+        "date": "2026-10-15",
+        "EUR": 1,
+        "USD": "1.1208",
+        "SEK": "11.1765",
+        "NOK": "10.652",
+        "DKK": "7.475"
+      },
+      {
+        "date": "2026-10-16",
+        "EUR": 1,
+        "USD": "1.1253",
+        "SEK": "11.145",
+        "NOK": "10.624",
+        "DKK": "7.4748"
+      }
+    ],
+    "sek_crosscheck": {
+      "source_url": "https://api.riksbank.se/swea/v1/Observations/SEKUSDPMI/2026-09-19/2026-10-18",
+      "mean_sek_per_usd": "9.958667",
+      "observations": 20
+    }
+  },
+  "locales": {
+    "sv": {
+      "currency": "SEK",
+      "instance": "Instans",
+      "price_heading": "Ca SEK/nod/timme",
+      "price_note": "Ungefärligt pris, exklusive moms. Omräknat från USD med genomsnittlig dagskurs 19 september–18 oktober 2026.",
+      "table_label": "Ungefärliga nodpriser för CCX Cloud på Safespring, exklusive moms"
+    },
+    "en": {
+      "currency": "EUR",
+      "instance": "Instance",
+      "price_heading": "Approx. EUR/node/hour",
+      "price_note": "Approximate price, excluding VAT. Converted from USD using the average daily exchange rate for 19 September–18 October 2026.",
+      "table_label": "Approximate node prices for CCX Cloud on Safespring, excluding VAT"
+    },
+    "nb": {
+      "currency": "NOK",
+      "instance": "Instans",
+      "price_heading": "Ca. NOK/node/time",
+      "price_note": "Omtrentlig pris, ekskl. mva. Omregnet fra USD med gjennomsnittlig dagskurs 19. september–18. oktober 2026.",
+      "table_label": "Omtrentlige nodepriser for CCX Cloud på Safespring, ekskl. mva."
+    },
+    "da": {
+      "currency": "DKK",
+      "instance": "Instans",
+      "price_heading": "Ca. DKK/node/time",
+      "price_note": "Vejledende pris, ekskl. moms. Omregnet fra USD med den gennemsnitlige dagskurs for 19. september–18. oktober 2026.",
+      "table_label": "Vejledende nodepriser for CCX Cloud på Safespring, ekskl. moms"
+    }
+  }
+}

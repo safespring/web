@@ -215,12 +215,18 @@ Maksimer din infrastruktur med software, der er optimeret til at køre på Safes
 
 ### Platformtjenester
 
-Safesprings partnere tilbyder [database som en tjeneste](/tjenester/database/) til PostgreSQL, MariaDB og Redis. Derudover findes administrerede tjenester til Elasticsearch og NATS. Tjenesterne kører på Safesprings infrastruktur og koster fra 0,18 € pr. time.
+#### Database som service fra Severalnines
+
+Med [CCX Cloud](/tjenester/database/) får du administrerede databaser med PostgreSQL, MySQL, MariaDB og Valkey på Safesprings infrastruktur. Severalnines leverer og driver tjenesten og er din aftalepart.
+
+{{< ccx-pricing >}}
+
+#### Andre platformtjenester
+
+Priserne nedenfor gælder Elasticsearch, Redis og NATS, separat fra CCX Cloud.
 
 | Produkt-ID | Beskrivelse | Fra pr. time |
 |------------|-------------|-------------:|
-| PAAS-man.postgresql | Managed PostgreSQL | 0,18 € |
-| PAAS-man.mariadb | Managed MariaDB | 0,18 € |
 | PAAS-man.elasticsearch | Managed Elasticsearch | 0,18 € |
 | PAAS-man.redis | Managed Redis | 0,18 € |
 | PAAS-man.nats | Managed NATS | 0,18 € |
