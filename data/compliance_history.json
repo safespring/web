@@ -2,39 +2,39 @@
   "schema_version": 1,
   "documents": {
     "compliance/acceptable_use_policy.md": {
-      "author_date": "2026-04-28T22:47:23+02:00",
-      "commit": "1301de2c797c4ac64e0c86fa9b1070f18489b197",
-      "source_sha256": "dd342d52480545c66f0ff1cf45ed3b71272ef3339099b5f3e7de47cc6601cd61"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "a6573e0e2ad12bf8025ab7a1232b6ff1f777030b71b9744351e3a3611c620026"
     },
     "compliance/data_processing_agreement.md": {
-      "author_date": "2026-08-25T16:24:04+02:00",
-      "commit": "895eb3e6b637e9946a1784127ffda68d00390f57",
-      "source_sha256": "940105470f17f259544ae995366ebc4eaac28a5a16f429396b04a9782a9d4042"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "31dd0f7766a1bca95907c55617d569953ac4770bfb1d8d01dd0ede31f19acb3d"
     },
     "compliance/general_terms_and_conditions.md": {
-      "author_date": "2026-09-29T10:55:50+02:00",
-      "commit": "2fb00f0fec9b21f316c756795997c829ad58a830",
-      "source_sha256": "87fc884cbb3d5d464adfe3e009dda8f20d840294281fb2cb61b88e299a8068b8"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "ed3ffc1a0e5ceaaa176bb8b22973d5c9dd3ab9c366ae71f6b8fb9c3a4259a12f"
     },
     "compliance/privacy_policy.md": {
-      "author_date": "2026-08-24T11:02:20+02:00",
-      "commit": "f02d0d013a04fb73d622e70d781fffd1ad52f8e2",
-      "source_sha256": "038552a6180bd0ff893ca09ae0cb83c4c726a1924d5b6981feff873a1c950e13"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "7d90c7e34475c8d63f4ebe0f081b71c263d6d64de6a1ffccf7489c48b71bedf6"
     },
     "compliance/privacy_policy_web_recruitment.md": {
-      "author_date": "2026-08-24T11:02:20+02:00",
-      "commit": "f02d0d013a04fb73d622e70d781fffd1ad52f8e2",
-      "source_sha256": "38c69599edf1d8edb2ea07b9f20e93552819a09d10194c6b26bb3d0aac69c9b9"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "9753409ea6b3f4157ece91062729120beb7637434410761dbb0232d50ee519e5"
     },
     "compliance/service_level_agreement.md": {
-      "author_date": "2026-05-26T14:15:03+02:00",
-      "commit": "a2fde4736543c1ba29ce28084f58eaae974b28a6",
-      "source_sha256": "a2db6006ddd3d5e456231e551449c36a9655877c2ca5024d3f60bf60fd0339d6"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "6176795680169e5f25e11a87ccf719bdb1fb0312a0f6698799ad0e762e1f8cad"
     },
     "compliance/support_process.md": {
-      "author_date": "2026-08-13T10:03:55+02:00",
-      "commit": "a907b8bcd73b1c15865a6c9e2262e081c89e1075",
-      "source_sha256": "4f06671364b27e8b9a0cab63d6adef6ef2743807d129cf90b9917a0a0e8f8217"
+      "author_date": "2026-10-29T15:19:41+01:00",
+      "commit": "91d372352179f8676b0513d475435d56bc451262",
+      "source_sha256": "30c104502e161882757e1e330d913858953891daaaa6821646d89a88fa4fa608"
     }
   }
 }
