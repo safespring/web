@@ -7,7 +7,6 @@ documentimage: "safespring_card_20.jpg"
 general: "yes"
 language: "En"
 TOC: "Table of contents"
-noindex: "x"
 outputs:
   - HTML
   - PRINT

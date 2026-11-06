@@ -10,7 +10,6 @@ sidebarlinkurl: ""
 general: "yes"
 toc: "Table of contents"
 language: "En"
-noindex: "x"
 outputs:
   - HTML
   - PRINT
