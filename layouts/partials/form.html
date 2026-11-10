@@ -1,16 +1,10 @@
+{{ $copy := partial "contact-form-copy.html" . }}
 <p id="contact-form"></p>
 
 <div>
-  <h2>{{ T "form.title" }}</h2>
-  <p>{{ T "form.desc" }}</p>
+  <h2>{{ $copy.heading }}</h2>
+  <p>{{ $copy.intro }}</p>
   <br />
 
-  {{ partial "contact-form.html" (dict
-    "page" .
-    "termsText" (T "form.privacy")
-    "termsUrl" (relref . "/compliance/privacy_policy_web_recruitment.md")
-    "submit" (T "form.submit")
-    "acceptAlert" (T "form.not_accepted")
-    "successUrl" "/contact-thanks/"
-  ) }}
+  {{ partial "contact-form.html" (dict "page" .) }}
 </div>

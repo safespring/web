@@ -1,0 +1,14 @@
+{{- $lang := .Language.Lang -}}
+{{- $service := "" -}}
+{{- $slug := "" -}}
+{{- with .File -}}{{- $slug = .BaseFileName -}}{{- end -}}
+{{- if eq $slug "compute" -}}{{- $service = "Compute" -}}
+{{- else if eq $slug "storage" -}}{{- $service = "Storage" -}}
+{{- else if eq $slug "backup" -}}{{- $service = "Backup" -}}
+{{- else if or (eq .Layout "containers") (in $slug "kubernetes") (eq $slug "openshift") -}}{{- $service = "Kubernetes" -}}
+{{- end -}}
+{{- $copy := merge (index hugo.Data.contact_form_copy $lang) (dict "lang" $lang "service" $service) -}}
+{{- with $service -}}
+  {{- $copy = merge $copy (dict "heading" (printf $copy.serviceHeading .)) -}}
+{{- end -}}
+{{- return $copy -}}

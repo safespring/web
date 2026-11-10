@@ -1,18 +1,7 @@
-{{ $termsUrl := "/compliance/privacy_policy_web_recruitment/" }}
-
+{{ $copy := partial "contact-form-copy.html" .Page }}
 <p id="contact-form"></p>
 
-{{ partial "contact-form.html" (dict
-  "page" .Page
-  "firstName" (T "form.f_name")
-  "lastName" (T "form.l_name")
-  "phone" (T "form.phone")
-  "email" (T "form.email")
-  "organization" (T "form.org")
-  "termsPrefix" (T "price_list.terms_accept")
-  "termsText" (T "form.privacy")
-  "termsUrl" $termsUrl
-  "submit" (T "form.submit")
-  "acceptAlert" (T "form.not_accepted")
-  "successUrl" "/contact-thanks/"
-) }}
+{{/* Shortcode pages already provide their own contact/demo heading. */}}
+<p>{{ $copy.intro }}</p>
+
+{{ partial "contact-form.html" (dict "page" .Page) }}
