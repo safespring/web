@@ -50,6 +50,10 @@
     {{ if eq .Section "compliance" }}
       {{ partial "compliance-history.html" (dict "page" . "all" false) }}
     {{ end }}
+    {{ if eq .Params.form "yes" }}
+      {{ $contactCopy := partial "contact-form-copy.html" . }}
+      <p><a class="button" href="#contact-form">{{ $contactCopy.heading }}</a></p>
+    {{ end }}
     {{ .Content }}
     {{ if eq .Params.form "yes" }}{{ partial "form.html" . }}{{ else }}{{ end }}
     {{ if .Params.citat }}{{ partial "citat.html" . }}{{ else }}{{ end }}
