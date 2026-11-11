@@ -1,0 +1,49 @@
+{
+  "integrationReady": true,
+  "formId": "9549u7794d4f86da545e6a442e233c24577d8",
+  "formCid": "9549",
+  "submissionUrl": "https://power.upsales.com/api/external/forms/submit",
+  "analyticsSites": {
+    "www.safespring.com": "1",
+    "beta.safespring.se": "3",
+    "beta.safespring.no": "4",
+    "beta.safespring.eu": "5",
+    "beta.safespring.dk": "6"
+  },
+  "fieldNames": {
+    "message": "Extra.1794322916575",
+    "sourcePage": "Extra.1794322940710",
+    "service": "Extra.1794322963895",
+    "language": "Extra.1794322979811"
+  },
+  "blockedEmailDomains": [
+    "gmail.com",
+    "googlemail.com",
+    "hotmail.com",
+    "hotmail.se",
+    "hotmail.no",
+    "yahoo.com",
+    "yahoo.se",
+    "yahoo.no",
+    "icloud.com",
+    "me.com",
+    "mac.com",
+    "outlook.com",
+    "outlook.se",
+    "live.com",
+    "live.no",
+    "live.se",
+    "aol.com",
+    "simplelogin.com",
+    "msn.com",
+    "nespf.com"
+  ],
+  "blockedEmailProviders": [
+    "gmail",
+    "yahoo",
+    "hotmail",
+    "live",
+    "aol",
+    "outlook"
+  ]
+}

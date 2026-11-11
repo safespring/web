@@ -1,22 +1,10 @@
+{{ $copy := partial "contact-form-copy.html" . }}
 <p id="contact-form"></p>
 
 <div>
-  <h2>Kontakta oss</h2>
-  <p>Skriv till oss så återkommer vi med rätt kontaktväg för det du vill veta mer om.</p>
+  <h2>{{ $copy.heading }}</h2>
+  <p>{{ $copy.intro }}</p>
   <br />
 
-  {{ partial "contact-form.html" (dict
-    "page" .
-    "firstName" "Förnamn"
-    "lastName" "Efternamn"
-    "phone" "Telefon"
-    "email" "E-post"
-    "organization" "Organisation"
-    "termsPrefix" "Jag accepterar"
-    "termsText" "personuppgiftshanteringen"
-    "termsUrl" "/compliance/privacy_policy_web_recruitment/"
-    "submit" "Bli kontaktad"
-    "acceptAlert" "Du måste acceptera våra villkor"
-    "successUrl" "/contact-thanks/"
-  ) }}
+  {{ partial "contact-form.html" (dict "page" .) }}
 </div>

@@ -286,6 +286,11 @@
   function bindLeadFormTracking() {
     document.addEventListener('submit', function (event) {
       var form = event.target;
+      // The shared contact form validates its own receipt. A submit attempt or
+      // a generic HTTP 2xx must not become an Ads lead conversion.
+      if (form && form.hasAttribute && form.hasAttribute('data-contact-form')) {
+        return;
+      }
       if (!form || !isUpsalesForm(form)) {
         return;
       }
@@ -368,6 +373,9 @@
   }
 
   function isSuccessfulUpsalesSubmit(xhr) {
+    // Do not consume another legacy form's pending conversion for a request
+    // owned by the shared contact form, even if its response is HTTP 200.
+    if (xhr.__safespringContactFormManaged) return false;
     var method = (xhr.__safespringMethod || '').toUpperCase();
     var url = xhr.__safespringUrl || '';
     return method === 'POST' &&

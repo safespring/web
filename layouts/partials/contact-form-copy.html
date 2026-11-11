@@ -1,0 +1,19 @@
+{{- $path := .RelPermalink -}}
+{{- $language := lower (default "sv" .Params.language) -}}
+{{- $lang := "sv" -}}
+{{- if or (hasPrefix $path "/en/") (eq $language "en") -}}
+  {{- $lang = "en" -}}
+{{- else if or (hasPrefix $path "/no/") (eq $language "no") (eq $language "nb") -}}
+  {{- $lang = "no" -}}
+{{- end -}}
+{{- $service := "" -}}
+{{- if in $path "safespring-compute" -}}{{- $service = "Compute" -}}
+{{- else if in $path "storage" -}}{{- $service = "Storage" -}}
+{{- else if in $path "safespring-backup" -}}{{- $service = "Backup" -}}
+{{- else if or (eq $path "/containers/") (in $path "kubernetes") (in $path "openshift") -}}{{- $service = "Kubernetes" -}}
+{{- end -}}
+{{- $copy := merge (index .Site.Data.contact_form_copy $lang) (dict "lang" $lang "service" $service) -}}
+{{- with $service -}}
+  {{- $copy = merge $copy (dict "heading" (printf $copy.serviceHeading .)) -}}
+{{- end -}}
+{{- return $copy -}}
