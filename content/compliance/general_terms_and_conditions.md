@@ -103,7 +103,7 @@ All Service Fees are exclusive of VAT and other taxes and/or duties.
 
 **SERVICES** — Customer’s right to use the Services is conditioned upon the Customer’s timely payment of Service Fees. Applicable Service Fees are set out at www.safespring.com/pris/.
 
-**PROFESSIONAL SERVICES** — The Customer shall for the Professional Services pay the Services Fee set out at [link]. Unless otherwise has been agreed Professional Services are charged on time and material basis.
+**PROFESSIONAL SERVICES** — The Customer shall for the Professional Services pay the Services Fee set out at www.safespring.com/pris/. Unless otherwise has been agreed Professional Services are charged on time and material basis.
 
 **OVERDUE PAYMENTS** — For any overdue payments, Safespring shall have the right to charge a monthly interest of 2 percent based on the outstanding overdue balance. If payment for Services is more than 60 days past due, Safespring may, without any liability whatsoever, terminate or suspend providing the affected services to the Customer upon 10 days prior written notice to the Customer.
 
