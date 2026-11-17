@@ -1,5 +1,6 @@
 ---
 title: "Safespring Kubernetes Engine"
+documentation: "Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Kubernetes"
@@ -75,11 +76,11 @@ Hvis du vil forstå tjenesten mer teknisk, er dette de mest nyttige neste lesnin
 
 - [Hva du får fra dag én](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#what-you-get-on-day-one) for de dokumenterte plattformstandardene
 - [Tjenestegrensen i praksis](/blogg/2026/2026-03-what-to-compare-managed-kubernetes-vs-self-managed/#the-service-boundary-in-practice) for ansvarsdelingen
-- [Kom i gang i den offisielle dokumentasjonen](https://docs.safespring.com/kubernetes/getting-started/) for provisjonering, kontrollplanoppsett og komponentstøtte
+- [Tjenesteoversikt for Safespring Kubernetes Engine](https://docs.safespring.com/kubernetes/getting-started/) for arkitektur, kontrollplan, nettverk, lagring og komponentstøtte
 - [Trafikkhåndtering](https://docs.safespring.com/kubernetes/manage-traffic/) for Gateway API og Traefik-relaterte trafikkmønstre
-- [Portaloversikt](https://docs.safespring.com/kubernetes/portal-overview/) for selvbetjeningsflyten og clustertilgang
+- [Opprett og koble til ditt første cluster](https://docs.safespring.com/kubernetes/portal-overview/) for kontoaktivering, opprettelse i portalen og tilgang med kubectl
 - [Persistente volumer](https://docs.safespring.com/kubernetes/persistent-volumes/) for lagringsatferd og klasser
-- [Logging og overvåking](https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/) for dagens observability-grense
+- [Logging og overvåking](https://docs.safespring.com/kubernetes/observability/) for metrics, logger og overvåking av clustere og applikasjoner
 
 {{< distance >}}
 

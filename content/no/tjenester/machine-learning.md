@@ -1,6 +1,7 @@
 ---
 title: "GPU-ressurser for AI og maskinlæring"
 metatitle: "GPU-instanser for AI og maskinlæring"
+documentation: "GPU"
 section: "Public Cloud"
 language: "No"
 cardtitle: "GPU for AI og ML"
@@ -59,11 +60,18 @@ Les teknisk dokumentasjon om GPU-instanser, en praktisk veiledning for å kjøre
 
 {{< manual-document-table matomoAction="GPU Resources Deep Dive" >}}
   {{< manual-document-row
-    title="A2-flavors i Safespring Compute"
+    title="GPU-flavors i Safespring Compute"
     href="https://docs.safespring.com/compute/gpu/"
     icon="fa-solid fa-microchip"
     label="Dokumentasjon"
-    description="NVIDIA A2, navn på flavors, begrensninger og installasjon av NVIDIA-drivere."
+    description="NVIDIA A2 og H100 NVL, navn på flavors, tilgjengelighet og begrensninger."
+  >}}
+  {{< manual-document-row
+    title="Kom i gang med en A2 GPU-instans"
+    href="https://docs.safespring.com/compute/howto/gpu-instance/"
+    icon="fa-solid fa-terminal"
+    label="Veiledning"
+    description="Opprett en GPU-instans, installer NVIDIA-drivere og kjør en lokal språkmodell med Ollama."
   >}}
   {{< manual-document-row
     title="Kjør GPU-arbeidslaster i Kubernetes"

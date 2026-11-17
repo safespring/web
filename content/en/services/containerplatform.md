@@ -1,5 +1,6 @@
 ---
 title: "Safespring Kubernetes Engine"
+documentation: "Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Kubernetes"
@@ -92,18 +93,18 @@ When you want to validate architecture, responsibility boundaries, and the opera
     description="How responsibilities and operational boundaries are split between Safespring and your team."
   >}}
   {{< manual-document-row
-    title="Getting started in the official docs"
+    title="Safespring Kubernetes Engine service overview"
     href="https://docs.safespring.com/kubernetes/getting-started/"
     icon="fa-solid fa-book-open"
     label="Docs"
-    description="Provisioning, control-plane layouts, and component support."
+    description="Architecture, control plane, networking, storage, and component support."
   >}}
   {{< manual-document-row
-    title="Portal overview"
+    title="Create and access your first cluster"
     href="https://docs.safespring.com/kubernetes/portal-overview/"
     icon="fa-solid fa-table-columns"
     label="Guide"
-    description="The self-service flow, cluster overview, and how access works in the portal."
+    description="Activate accounts, create a cluster in the portal, and connect with kubectl."
   >}}
   {{< manual-document-row
     title="Persistent volumes"
@@ -114,10 +115,10 @@ When you want to validate architecture, responsibility boundaries, and the opera
   >}}
   {{< manual-document-row
     title="Logging and monitoring"
-    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    href="https://docs.safespring.com/kubernetes/observability/"
     icon="fa-solid fa-chart-line"
     label="Guide"
-    description="The current observability boundary for logs, metrics, and follow-up."
+    description="Guides to metrics, logs, and monitoring clusters and applications."
   >}}
   {{< manual-document-row
     title="Traffic management"

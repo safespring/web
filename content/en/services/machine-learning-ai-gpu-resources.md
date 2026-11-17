@@ -1,6 +1,7 @@
 ---
 title: "GPU resources for AI and machine learning"
 metatitle: "GPU instances for AI and machine learning"
+documentation: "GPU"
 section: "Public Cloud"
 language: "En"
 cardtitle: "GPU for AI and ML"
@@ -59,11 +60,18 @@ Explore technical documentation for GPU instances, a practical guide to running 
 
 {{< manual-document-table matomoAction="GPU Resources Deep Dive" >}}
   {{< manual-document-row
-    title="A2 flavors in Safespring Compute"
+    title="GPU flavors in Safespring Compute"
     href="https://docs.safespring.com/compute/gpu/"
     icon="fa-solid fa-microchip"
     label="Docs"
-    description="NVIDIA A2, flavor naming, restrictions, and NVIDIA driver installation."
+    description="NVIDIA A2 and H100 NVL, flavor naming, availability, and restrictions."
+  >}}
+  {{< manual-document-row
+    title="Set up an A2 GPU instance"
+    href="https://docs.safespring.com/compute/howto/gpu-instance/"
+    icon="fa-solid fa-terminal"
+    label="Guide"
+    description="Create a GPU instance, install NVIDIA drivers, and run a local language model with Ollama."
   >}}
   {{< manual-document-row
     title="Run GPU workloads in Kubernetes"
