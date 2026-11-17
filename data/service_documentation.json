@@ -1,0 +1,455 @@
+{
+  "Compute": [
+    {
+      "title": "Getting Started",
+      "url": "https://docs.safespring.com/compute/getting-started/"
+    },
+    {
+      "title": "VPN Options",
+      "url": "https://docs.safespring.com/compute/vpn/"
+    },
+    {
+      "title": "API Access",
+      "url": "https://docs.safespring.com/compute/api/"
+    },
+    {
+      "title": "Flavors",
+      "url": "https://docs.safespring.com/compute/flavors/"
+    },
+    {
+      "title": "GPU Flavors",
+      "url": "https://docs.safespring.com/compute/gpu/"
+    },
+    {
+      "title": "Images",
+      "url": "https://docs.safespring.com/compute/image/"
+    },
+    {
+      "title": "Volumes",
+      "url": "https://docs.safespring.com/compute/volume/"
+    },
+    {
+      "title": "Networking",
+      "url": "https://docs.safespring.com/compute/networking/"
+    },
+    {
+      "title": "Load Balancing",
+      "url": "https://docs.safespring.com/compute/loadbalancing/"
+    },
+    {
+      "title": "Application Credentials",
+      "url": "https://docs.safespring.com/compute/app-creds/"
+    },
+    {
+      "title": "Troubleshooting",
+      "url": "https://docs.safespring.com/compute/troubleshooting/"
+    },
+    {
+      "title": "Quotas",
+      "url": "https://docs.safespring.com/compute/quotas/"
+    },
+    {
+      "title": "Cost Optimization",
+      "url": "https://docs.safespring.com/compute/cost-optimization/"
+    },
+    {
+      "title": "HOWTOs",
+      "items": [
+        {
+          "title": "Multi Factor Authentication",
+          "url": "https://docs.safespring.com/compute/howto/totp-mfa/"
+        },
+        {
+          "title": "Cloud-init and Cloudbase-init",
+          "url": "https://docs.safespring.com/compute/howto/cloud-init/"
+        },
+        {
+          "title": "Using Keypairs",
+          "url": "https://docs.safespring.com/compute/howto/keypairs/"
+        },
+        {
+          "title": "Network Ports",
+          "url": "https://docs.safespring.com/compute/howto/network-ports/"
+        },
+        {
+          "title": "Windows images",
+          "url": "https://docs.safespring.com/compute/howto/windows/"
+        },
+        {
+          "title": "Migrate instance to another project",
+          "url": "https://docs.safespring.com/compute/howto/migrate-between-projects/"
+        },
+        {
+          "title": "Taking snapshots of instances",
+          "url": "https://docs.safespring.com/compute/howto/snapshotting-instances/"
+        }
+      ]
+    },
+    {
+      "title": "Security and Compliance",
+      "url": "https://docs.safespring.com/compute/security-compliance/"
+    }
+  ],
+  "Storage": [
+    {
+      "title": "Getting Started",
+      "url": "https://docs.safespring.com/storage/getting-started/"
+    },
+    {
+      "title": "S3 Quotas",
+      "url": "https://docs.safespring.com/storage/quota/"
+    },
+    {
+      "title": "S3 API Compatibility",
+      "url": "https://docs.safespring.com/storage/s3-compatibility/"
+    },
+    {
+      "title": "S3 Advanced Features",
+      "url": "https://docs.safespring.com/storage/s3-advanced/"
+    },
+    {
+      "title": "S3 Usage Report",
+      "url": "https://docs.safespring.com/storage/usage-statistics/"
+    },
+    {
+      "title": "Object Locking",
+      "url": "https://docs.safespring.com/storage/object-locking/"
+    },
+    {
+      "title": "Issue S3 Credentials with the OpenStack CLI",
+      "url": "https://docs.safespring.com/storage/howto/openstack-cli-credentials/"
+    },
+    {
+      "title": "Tool Config Examples",
+      "items": [
+        {
+          "title": "Example s3fs config",
+          "url": "https://docs.safespring.com/storage/howto/configs/s3fs/"
+        },
+        {
+          "title": "Example s3cmd config",
+          "url": "https://docs.safespring.com/storage/howto/configs/s3cmd/"
+        },
+        {
+          "title": "Example CloudBerry config",
+          "url": "https://docs.safespring.com/storage/howto/configs/cloudberry/"
+        },
+        {
+          "title": "Example CyberDuck config",
+          "url": "https://docs.safespring.com/storage/howto/configs/cyberduck/"
+        },
+        {
+          "title": "Example Duck CLI config",
+          "url": "https://docs.safespring.com/storage/howto/configs/duck-cli/"
+        },
+        {
+          "title": "Example Minio Client config",
+          "url": "https://docs.safespring.com/storage/howto/configs/minio-client/"
+        },
+        {
+          "title": "Example AWS-CLI config",
+          "url": "https://docs.safespring.com/storage/howto/configs/aws-cli/"
+        },
+        {
+          "title": "Example NextCloud S3 integration",
+          "url": "https://docs.safespring.com/storage/howto/configs/nextcloud-s3/"
+        }
+      ]
+    },
+    {
+      "title": "Tips and Tricks",
+      "url": "https://docs.safespring.com/storage/tips-n-tricks/"
+    },
+    {
+      "title": "Backup Exec and Safespring Storage",
+      "url": "https://docs.safespring.com/storage/backup-exec/"
+    },
+    {
+      "title": "Other Backends",
+      "url": "https://docs.safespring.com/storage/other-backends/"
+    },
+    {
+      "title": "Security and Compliance",
+      "url": "https://docs.safespring.com/storage/security-compliance/"
+    }
+  ],
+  "Backup": [
+    {
+      "title": "Getting Started",
+      "url": "https://docs.safespring.com/backup/quickstart-guide/"
+    },
+    {
+      "title": "Installation",
+      "items": [
+        {
+          "title": "Overview",
+          "url": "https://docs.safespring.com/backup/install/overview/"
+        },
+        {
+          "title": "Linux",
+          "url": "https://docs.safespring.com/backup/install/linux/"
+        },
+        {
+          "title": "Windows",
+          "url": "https://docs.safespring.com/backup/install/windows/"
+        },
+        {
+          "title": "macOS",
+          "url": "https://docs.safespring.com/backup/install/apple-macos/"
+        },
+        {
+          "title": "freeBSD",
+          "url": "https://docs.safespring.com/backup/install/freebsd-other/"
+        },
+        {
+          "title": "Microsoft SQL Server",
+          "url": "https://docs.safespring.com/backup/install/mssql-windows/"
+        }
+      ]
+    },
+    {
+      "title": "HOWTOs",
+      "items": [
+        {
+          "title": "Back up Files",
+          "url": "https://docs.safespring.com/backup/howto/back-up-files/"
+        },
+        {
+          "title": "Consumption Units",
+          "url": "https://docs.safespring.com/backup/howto/consumption-units/"
+        },
+        {
+          "title": "Business Units",
+          "url": "https://docs.safespring.com/backup/howto/business-units/"
+        },
+        {
+          "title": "Passwords",
+          "url": "https://docs.safespring.com/backup/howto/password/"
+        },
+        {
+          "title": "Deleting Nodes",
+          "url": "https://docs.safespring.com/backup/howto/delete-node/"
+        },
+        {
+          "title": "Email Reports",
+          "url": "https://docs.safespring.com/backup/howto/reports-by-email/"
+        },
+        {
+          "title": "Encryption",
+          "url": "https://docs.safespring.com/backup/howto/encryption/"
+        },
+        {
+          "title": "Include/Exclude",
+          "url": "https://docs.safespring.com/backup/howto/include-exclude/"
+        },
+        {
+          "title": "Admin SSO",
+          "url": "https://docs.safespring.com/backup/howto/sso/"
+        },
+        {
+          "title": "Handling Changing Files",
+          "url": "https://docs.safespring.com/backup/howto/changing-files/"
+        },
+        {
+          "title": "List Files",
+          "url": "https://docs.safespring.com/backup/howto/list-files/"
+        },
+        {
+          "title": "Linux GUI",
+          "url": "https://docs.safespring.com/backup/howto/linux-gui/"
+        }
+      ]
+    },
+    {
+      "title": "Automation",
+      "items": [
+        {
+          "title": "Command Line",
+          "url": "https://docs.safespring.com/backup/automation/cli-tool/"
+        },
+        {
+          "title": "REST API",
+          "url": "https://docs.safespring.com/backup/automation/rest-api/"
+        },
+        {
+          "title": "API Resources",
+          "url": "https://docs.safespring.com/backup/automation/api-resources/"
+        },
+        {
+          "title": "More Info",
+          "url": "https://docs.safespring.com/backup/automation/more-info/"
+        }
+      ]
+    },
+    {
+      "title": "Recovery",
+      "items": [
+        {
+          "title": "The Basics",
+          "url": "https://docs.safespring.com/backup/recovery/basics/"
+        },
+        {
+          "title": "Linux Systems",
+          "url": "https://docs.safespring.com/backup/recovery/linux-recovery/"
+        },
+        {
+          "title": "Windows Systems",
+          "url": "https://docs.safespring.com/backup/recovery/windows-recovery/"
+        },
+        {
+          "title": "Testing",
+          "url": "https://docs.safespring.com/backup/recovery/testing/"
+        },
+        {
+          "title": "Encryption",
+          "url": "https://docs.safespring.com/backup/recovery/encryption/"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Backup",
+      "items": [
+        {
+          "title": "Microsoft 365",
+          "url": "https://docs.safespring.com/backup/cloud/microsoft-365/"
+        },
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://docs.safespring.com/backup/cloud/microsoft-entra-id/"
+        },
+        {
+          "title": "User Data Recovery",
+          "url": "https://docs.safespring.com/backup/cloud/user-data-recovery/"
+        },
+        {
+          "title": "Read PST files",
+          "url": "https://docs.safespring.com/backup/cloud/pst-files/"
+        }
+      ]
+    },
+    {
+      "title": "FAQ",
+      "url": "https://docs.safespring.com/backup/faq/"
+    },
+    {
+      "title": "Security and Compliance",
+      "url": "https://docs.safespring.com/backup/security-compliance/"
+    }
+  ],
+  "Kubernetes": [
+    {
+      "title": "Create Your First SKE Cluster",
+      "url": "https://docs.safespring.com/kubernetes/portal-overview/"
+    },
+    {
+      "title": "SKE Service Overview",
+      "url": "https://docs.safespring.com/kubernetes/getting-started/"
+    },
+    {
+      "title": "Manage Environments",
+      "url": "https://docs.safespring.com/kubernetes/environments/"
+    },
+    {
+      "title": "Deploy Your First Application",
+      "url": "https://docs.safespring.com/kubernetes/getting_started/"
+    },
+    {
+      "title": "Portal and Access",
+      "items": [
+        {
+          "title": "Authentication",
+          "url": "https://docs.safespring.com/kubernetes/authentication/"
+        },
+        {
+          "title": "Kubernetes Dashboard",
+          "url": "https://docs.safespring.com/kubernetes/dashboard/"
+        }
+      ]
+    },
+    {
+      "title": "Cluster Services",
+      "items": [
+        {
+          "title": "Secret Management",
+          "url": "https://docs.safespring.com/kubernetes/secret-management/"
+        },
+        {
+          "title": "Traffic Management",
+          "url": "https://docs.safespring.com/kubernetes/manage-traffic/"
+        },
+        {
+          "title": "Persistent Volumes",
+          "url": "https://docs.safespring.com/kubernetes/persistent-volumes/"
+        },
+        {
+          "title": "Database Solutions",
+          "url": "https://docs.safespring.com/kubernetes/database/"
+        },
+        {
+          "title": "Container Registry",
+          "url": "https://docs.safespring.com/kubernetes/registry/"
+        },
+        {
+          "title": "GPU Workloads",
+          "url": "https://docs.safespring.com/kubernetes/gpu/"
+        }
+      ]
+    },
+    {
+      "title": "Operations",
+      "items": [
+        {
+          "title": "Audit Logging",
+          "url": "https://docs.safespring.com/kubernetes/audit-logging/"
+        },
+        {
+          "title": "Observability",
+          "url": "https://docs.safespring.com/kubernetes/observability/"
+        },
+        {
+          "title": "Troubleshooting",
+          "url": "https://docs.safespring.com/kubernetes/troubleshooting/"
+        }
+      ]
+    },
+    {
+      "title": "Security and Compliance",
+      "url": "https://docs.safespring.com/kubernetes/security-compliance/"
+    }
+  ],
+  "GPU": [
+    {
+      "title": "GPU Flavors",
+      "url": "https://docs.safespring.com/compute/gpu/"
+    },
+    {
+      "title": "Set Up an A2 GPU Instance",
+      "url": "https://docs.safespring.com/compute/howto/gpu-instance/"
+    },
+    {
+      "title": "GPU Workloads in Kubernetes",
+      "url": "https://docs.safespring.com/kubernetes/gpu/"
+    },
+    {
+      "title": "Compute Resources",
+      "items": [
+        {
+          "title": "Getting Started",
+          "url": "https://docs.safespring.com/compute/getting-started/"
+        },
+        {
+          "title": "Flavors",
+          "url": "https://docs.safespring.com/compute/flavors/"
+        },
+        {
+          "title": "Images",
+          "url": "https://docs.safespring.com/compute/image/"
+        },
+        {
+          "title": "Volumes",
+          "url": "https://docs.safespring.com/compute/volume/"
+        }
+      ]
+    }
+  ]
+}

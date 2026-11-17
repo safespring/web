@@ -1,5 +1,6 @@
 ---
 title: "Safespring Kubernetes Engine"
+documentation: "Kubernetes"
 section: "Platform"
 sectionhighlight: ""
 cardtitle: "Kubernetes"
@@ -113,18 +114,18 @@ När du vill validera arkitektur, ansvarsfördelning och driftmodell är det hä
     description="Hur ansvar och operativa gränser är fördelade mellan Safespring och ert team."
   >}}
   {{< manual-document-row
-    title="Kom igång i den officiella dokumentationen"
+    title="Tjänsteöversikt för Safespring Kubernetes Engine"
     href="https://docs.safespring.com/kubernetes/getting-started/"
     icon="fa-solid fa-book-open"
     label="Docs"
-    description="Provisionering, kontrollplanslayouter och komponentstöd."
+    description="Arkitektur, kontrollplan, nätverk, lagring och komponentstöd."
   >}}
   {{< manual-document-row
-    title="Portalöversikt"
+    title="Skapa och anslut till ditt första kluster"
     href="https://docs.safespring.com/kubernetes/portal-overview/"
     icon="fa-solid fa-table-columns"
     label="Guide"
-    description="Self-service-flödet, klusteröversikt och hur åtkomst fungerar i portalen."
+    description="Aktivera konton, skapa ett kluster i portalen och anslut med kubectl."
   >}}
   {{< manual-document-row
     title="Persistenta volymer"
@@ -135,10 +136,10 @@ När du vill validera arkitektur, ansvarsfördelning och driftmodell är det hä
   >}}
   {{< manual-document-row
     title="Loggning och övervakning"
-    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    href="https://docs.safespring.com/kubernetes/observability/"
     icon="fa-solid fa-chart-line"
     label="Guide"
-    description="Den nuvarande observability-gränsen för loggar, metrics och uppföljning."
+    description="Guider för metrics, loggar och övervakning av kluster och applikationer."
   >}}
   {{< manual-document-row
     title="Trafikhantering"
