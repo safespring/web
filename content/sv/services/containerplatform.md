@@ -1,4 +1,5 @@
 ---
+documentation: "Kubernetes"
 layout: "service-landing"
 title: "Safespring Kubernetes Engine"
 section: "Platform"
@@ -140,7 +141,7 @@ Safespring lagrar eller övervakar inte SKE-klustrens loggar enligt tjänstens d
   {{< manual-document-row title="Skapa ert första kluster" href="https://docs.safespring.com/kubernetes/portal-overview/" icon="fa-solid fa-table-columns" label="Guide" description="Konton, portal och åtkomst till klustret." >}}
   {{< manual-document-row title="Tjänstens omfattning" href="https://docs.safespring.com/kubernetes/getting-started/" icon="fa-solid fa-book-open" label="Docs" description="Kontrollplan, komponenter och SLA." >}}
   {{< manual-document-row title="Lagring för applikationer" href="https://docs.safespring.com/kubernetes/persistent-volumes/" icon="fa-solid fa-hard-drive" label="Guide" description="Lagringsklasser och volymernas livscykel." >}}
-  {{< manual-document-row title="Loggning och övervakning" href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/" icon="fa-solid fa-chart-line" label="Guide" description="Gränsen mellan driftinfrastruktur och kundens loggar." >}}
+  {{< manual-document-row title="Loggning och övervakning" href="https://docs.safespring.com/kubernetes/observability/" icon="fa-solid fa-chart-line" label="Guide" description="Installera Prometheus, Grafana och Loki för klustrets mätvärden och loggar." >}}
 {{< /manual-document-table >}}
 </section>
 

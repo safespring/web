@@ -1,4 +1,5 @@
 ---
+documentation: "Kubernetes"
 title: "Safespring Kubernetes Engine"
 section: "Platform"
 sectionhighlight: ""
@@ -114,18 +115,18 @@ Når du vil validere arkitektur, ansvarsfordeling og driftsmodell, er dette de m
     description="Hvordan ansvar og operative grenser er fordelt mellom Safespring og teamet deres."
   >}}
   {{< manual-document-row
-    title="Kom i gang i den offisielle dokumentasjonen"
+    title="Tjenesteoversikt for SKE"
     href="https://docs.safespring.com/kubernetes/getting-started/"
     icon="fa-solid fa-book-open"
     label="Docs"
     description="Provisjonering, kontrollplanoppsett og komponentstøtte."
   >}}
   {{< manual-document-row
-    title="Portaloversikt"
+    title="Opprett ditt første SKE-cluster"
     href="https://docs.safespring.com/kubernetes/portal-overview/"
     icon="fa-solid fa-table-columns"
     label="Guide"
-    description="Selvbetjeningsflyten, clusteroversikt og hvordan tilgang fungerer i portalen."
+    description="Aktiver kontoer, opprett et cluster og konfigurer tilgang gjennom portalen."
   >}}
   {{< manual-document-row
     title="Persistente volumer"
@@ -136,10 +137,10 @@ Når du vil validere arkitektur, ansvarsfordeling og driftsmodell, er dette de m
   >}}
   {{< manual-document-row
     title="Logging og overvåking"
-    href="https://docs.safespring.com/kubernetes/security-compliance/logging-monitoring/"
+    href="https://docs.safespring.com/kubernetes/observability/"
     icon="fa-solid fa-chart-line"
     label="Guide"
-    description="Den nåværende observability-grensen for logger, metrics og oppfølging."
+    description="Installer Prometheus, Grafana og Loki for clusterets måledata og logger."
   >}}
   {{< manual-document-row
     title="Trafikkhåndtering"

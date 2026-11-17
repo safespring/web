@@ -523,3 +523,28 @@
     animation: none !important;
   }
 }
+
+.service-landing-page .service-documentation .sidebar-documentation {
+  columns: 2;
+  column-gap: 3rem;
+  margin: 2rem 0 0;
+  padding-left: 0;
+  list-style: none;
+  font: 300 1rem/1.7 var(--mon-font);
+}
+
+.service-landing-page .service-documentation .sidebar-documentation ul {
+  list-style: none;
+}
+
+.service-landing-page .service-documentation .sidebar-documentation > li {
+  break-inside: avoid;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+@media (max-width: 700px) {
+  .service-landing-page .service-documentation .sidebar-documentation {
+    columns: 1;
+  }
+}

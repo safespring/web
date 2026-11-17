@@ -7,6 +7,13 @@
   </div>
   <main id="main-content" class="service-landing-main">
     {{ .Content }}
+    {{ if .Params.documentation }}
+      <section class="service-section service-documentation" aria-labelledby="service-documentation-title">
+        <h2 id="service-documentation-title">{{ .Params.documentation }}: {{ T "sidebar.documentation" }}</h2>
+        <p>{{ T "sidebar.documentation_desc" }}</p>
+        {{ partial "documentation.html" . }}
+      </section>
+    {{ end }}
     {{ if eq .Params.form "yes" }}
       <section class="service-section service-form" aria-label="Kontakta Safespring">
         {{ partial "form.html" . }}

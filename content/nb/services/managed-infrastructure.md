@@ -100,7 +100,7 @@ Maksimer potensialet i maskinlærings- og KI-prosjektene dine ved å legge til e
 
 ## Støtte og tilgjengelighet {#support-and-availability}
 
-Denne tjenesten kan leveres med opptil 99,9 prosent tilgjengelighet, forutsatt at kunden oppfyller våre datasenterspesifikasjoner og krav til kapasitetsbruk. Detaljer er inkludert i standardkontrakten, som gjøres tilgjengelig i salgsprosessen. I tillegg gjelder den standard støtteprosessen som er beskrevet i [Safesprings dokumentasjon](https://docs.safespring.com/service/policies).
+Denne tjenesten kan leveres med opptil 99,9 prosent tilgjengelighet, forutsatt at kunden oppfyller våre datasenterspesifikasjoner og krav til kapasitetsbruk. Detaljer er inkludert i standardkontrakten, som gjøres tilgjengelig i salgsprosessen. I tillegg gjelder den standard støtteprosessen som er beskrevet i [Safesprings dokumentasjon](https://docs.safespring.com/service/policies/).
 
 ### Kundeansvar
 

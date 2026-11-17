@@ -98,7 +98,7 @@ Maximize the potential of your machine learning and AI projects by adding a Scal
 
 ## Support and Availability
 
-This service can be delivered with up to 99.9 percent availability, provided the customer meets our data center specifications and capacity usage requirements. Details are included in the standard contract, which is made available during the sales process. Additionally, the standard support process described in [Safespring’s documentation](https://docs.safespring.com/service/policies) applies.
+This service can be delivered with up to 99.9 percent availability, provided the customer meets our data center specifications and capacity usage requirements. Details are included in the standard contract, which is made available during the sales process. Additionally, the standard support process described in [Safespring’s documentation](https://docs.safespring.com/service/policies/) applies.
 
 ### Customer Responsibilities
 
