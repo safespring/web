@@ -85,11 +85,11 @@ Sweden: +46 8 551 073 74
 #### Escalation level TWO 
 
 Head of Engineering -- Head of Operations  
-Phone: +31 637 17 46 61
+Phone: +46 8 551 073 75
 
 #### Escalation level THREE 
 
-CEO -- Phone: +46 708 37 55 66
+CEO -- Phone: +46 8 551 073 76
 
 ## Incident level description and response time
 
