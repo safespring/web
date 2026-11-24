@@ -77,6 +77,14 @@
     padding: 22px clamp(16px, 4vw, 32px);
   }
 
+  .brand-wrap {
+    padding-bottom: 0;
+  }
+
+  .hero-wrap {
+    padding-top: 0;
+  }
+
 /*@media (min-width: 1300px){
   .hero h1 {
     font-size: 5rem;
@@ -605,9 +613,8 @@ h3{
 }
 
 </style>
-</head>
 <body>
-  <div class="wrap">
+  <header class="wrap brand-wrap">
     <!-- Brand -->
     <div class="brand" aria-label="Safespring">
     	<a href="/">
@@ -615,6 +622,9 @@ h3{
     	</a>
     </div>
 
+  </header>
+  <main>
+  <div class="wrap hero-wrap">
     <!-- Hero -->
     <section class="hero" aria-label="Kubernetes offering">
       <div class="hero-text">
@@ -1068,4 +1078,6 @@ h3{
 })();
 </script>
 
+</main>
 {{ partial "footer.html" . }}
+</body>

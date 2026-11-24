@@ -1,6 +1,7 @@
 {{ partial "head.html" . }}
 <body>
 {{ partial "header.html" . }}
+<main>
 
 <div class="heading-default-single" style="background: url({{ if .Params.eventbild }}/img/blogg/background/{{ .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
   <div style="max-width: 800px;">
@@ -58,13 +59,14 @@
   </script>
 </div>
 
-<main class="main-default-single">
+<div class="main-default-single">
   <div {{ if .Params.fullwidth }}class="content-default-single-full-width"{{ else }}class="content-default-single"{{ end }}>
     {{ .Content }}
   </div>
   {{ if eq .Params.nosidebar "invisible" }}
   <div class="w350"></div>
   {{ end }}
+</div>
 </main>
 
 {{ partial "footer.html" . }}
