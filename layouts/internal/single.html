@@ -2,6 +2,7 @@
 {{ partial "head.html" . }}
 <body>
 {{ partial "header.html" . }}
+<main id="main-content">
 
 <div class="heading-default-single">
   {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
@@ -53,5 +54,6 @@
   </div>
 </div>
 
+</main>
 {{ partial "footer.html" . }}
 </body>

@@ -3,6 +3,7 @@
 <!-- NAVBAR -->
 <body>
  {{ partial "header.html" . }}
+<main id="main-content">
  <!-- HEADING -->
  <div class="heading-default-single">
    {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
@@ -73,5 +74,6 @@
   </div>
   <!-- SIDEBAR -->
   <!-- FOOTER -->
-  {{ partial "footer.html" . }}
+  </main>
+{{ partial "footer.html" . }}
 </body>

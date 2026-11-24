@@ -1,7 +1,9 @@
 {{ .Scratch.Set "hasDefaultSidebar" true }}
 {{ partial "head.html" . }}
+<body>
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
+<main>
 <!-- HEADING -->
 <div
   class="heading-default-single"
@@ -56,7 +58,7 @@
   </div>
   <div class="w250"></div>
 </div>
-<main class="main-default-single">
+<div class="main-default-single">
   <div
     {{ if
       .Params.fullwidth
@@ -103,5 +105,7 @@
     <!-- Use partial to include the content in the standard sidebar -->
     {{ partial "sidebar-default-single.html" . }}
   </div>
+</div>
 </main>
 {{ partial "footer.html" . }}
+</body>

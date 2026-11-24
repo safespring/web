@@ -16,6 +16,8 @@
   {{ $hasDefaultSidebar := and (ne .Params.nosidebar "none") (ne .Params.nosidebar "invisible") (ne .Section "webinar") }}
   {{ .Scratch.Set "hasDefaultSidebar" $hasDefaultSidebar }}
   {{ partial "head.html" . }}
+{{ $isPricePage := and .File (eq .File.BaseFileName "price") }}
+<body{{ if $isPricePage }} class="has-mobile-price-tables"{{ end }}>
   <!-- NAVBAR -->
   {{ partial "header.html" . }}
   <!-- HEADING -->
@@ -30,10 +32,9 @@
   {{ end }}'); background-size: cover; background-position: center;">
   {{ .Render "li3" }}
 </div>-->
-{{ $isPricePage := and .File (eq .File.BaseFileName "price") }}
-<body{{ if $isPricePage }} class="has-mobile-price-tables"{{ end }}>
 {{ $knowledgeSections := slice "blog" "tech-update" "webinar" "solution-brief" "whitepaper" }}
 {{ $isKnowledgeHub := and .File (eq .File.BaseFileName "knowledge-hub") }}
+<main>
 <div class="heading-default-single{{ if .Params.logobannertransparent }} heading-default-single--with-logo-banner{{ end }}">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
     {{ with .Params.sidebarlinkicon }}{{ $_ := partial "fa-register-icon.html" (dict "class" (printf "fas %s" .) "page" $) }}{{ end }}
     {{ .Render "li3" }}
@@ -46,7 +47,7 @@
 <!-- CONTENT -->
 {{ if and (not .Params.logobannertransparent) .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
-<main class="main-default-single">
+<div class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
 {{ $pageParams := .Params }}
 <div class="authors">
@@ -157,7 +158,7 @@
       <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
       {{ partial (printf "%s" .Params.fullwidthwidget) . }}
     {{ end }}
-  </main>
+  </div>
 
 
   <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
@@ -167,8 +168,9 @@
   {{ end }}
 
 
+</main>
+
   <!-- FOOTER -->
   {{ partial "footer.html" . }}
-{{ end }}
-
 </body>
+{{ end }}

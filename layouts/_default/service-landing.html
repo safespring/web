@@ -2,10 +2,11 @@
 {{ partial "head.html" . }}
 <body class="service-landing-page">
   {{ partial "header.html" . }}
+  <main>
   <div class="heading-default-single">
     {{ .Render "li3" }}
   </div>
-  <main id="main-content" class="service-landing-main">
+  <div id="main-content" class="service-landing-main">
     {{ .Content }}
     {{ if .Params.documentation }}
       <section class="service-section service-documentation" aria-labelledby="service-documentation-title">
@@ -19,6 +20,7 @@
         {{ partial "form.html" . }}
       </section>
     {{ end }}
+  </div>
   </main>
   {{ partial "footer.html" . }}
 </body>

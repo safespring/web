@@ -66,6 +66,12 @@ The beta build script runs `npm ci`, installs the Playwright Chromium runtime, r
 
 In the Caddy v2 VM publishing flow, Markdown files in `content/compliance/` are the source of truth. After a pull from GitHub, the watcher must run the beta build script before Caddy serves the updated site. This covers both local pull requests and edits made directly on github.com: the VM regenerates `data/compliance_meta.json` and the compliance PDFs from the checked-out Markdown, then Hugo copies the generated files into the published destination. These generated files are ignored by git and should not be included in pull requests.
 
+To check the main content landmark, page heading and intro across all four languages after building, run:
+
+```bash
+node scripts/verify-main-landmarks.mjs public
+```
+
 ## Link crawler
 
 `scripts/crawl_hugo.py` crawls a rendered site and reports internal link problems that Hugo can miss. It checks for:

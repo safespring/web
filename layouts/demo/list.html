@@ -1,9 +1,11 @@
 {{ .Scratch.Set "hasDefaultSidebar" true }}
 {{ partial "head.html" . }}
+<body>
 
 
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
+<main id="main-content">
 
 
 <!-- HEADING -->
@@ -168,7 +170,7 @@
       });
   </script>
 </div>
-<main class="main-default-single">
+<div class="main-default-single">
   <div
     {{ if
       .Params.fullwidth
@@ -213,7 +215,7 @@
     <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
     {{ partial (printf "%s" .Params.fullwidthwidget) . }}
   {{ end }}
-</main>
+</div>
 
 <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
 {{ if $isDemo }}
@@ -223,4 +225,6 @@
 
 
 <!-- FOOTER -->
+</main>
 {{ partial "footer.html" . }}
+</body>
