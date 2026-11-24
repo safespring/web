@@ -82,6 +82,68 @@ def check_rendered(build, data):
     print(f"PASS: {len(cases)} rendered compliance dates and history links", flush=True)
 
 
+class MainLandmark(HTMLParser):
+    """Check landmark boundaries without changing the site's existing heading hierarchy."""
+
+    content_classes = {"heading-index", "heading-default-single", "hero", "main-default-single",
+                       "content-summary-index", "content-summary-blogg"}
+    site_classes = {"site-header", "safespring-footer-container", "brand-wrap"}
+
+    def __init__(self):
+        super().__init__()
+        self.count = 0
+        self.inside = False
+        self.redirect = False
+        self.errors = set()
+
+    def handle_starttag(self, tag, attributes):
+        attrs = dict(attributes)
+        classes = set((attrs.get("class") or "").split())
+        if tag == "meta" and (attrs.get("http-equiv") or "").lower() == "refresh":
+            self.redirect = True
+        if tag == "main":
+            self.count += 1
+            self.inside = True
+            if any(key in attrs for key in ("hidden", "inert")) or attrs.get("aria-hidden") == "true":
+                self.errors.add("hidden main")
+            if attrs.get("role", "main") != "main":
+                self.errors.add("main has a conflicting role")
+        elif attrs.get("role") == "main":
+            self.errors.add("unexpected additional main role")
+        if (tag == "h1" or classes & self.content_classes) and not self.inside:
+            self.errors.add("title, introduction or page content outside main")
+        if self.inside and (attrs.get("id") == "navbar" or classes & self.site_classes):
+            self.errors.add("site header or footer inside main")
+
+    def handle_endtag(self, tag):
+        if tag == "main":
+            if not self.inside:
+                self.errors.add("unexpected closing main")
+            self.inside = False
+
+
+def check_main_landmarks(output):
+    failures = []
+    checked = 0
+    for page in sorted(output.rglob("*.html")):
+        relative = page.relative_to(output)
+        if (ROOT / "static" / relative).is_file():
+            continue
+        parser = MainLandmark()
+        parser.feed(page.read_text())
+        parser.close()
+        if parser.redirect:
+            continue
+        checked += 1
+        if parser.count != 1 or parser.inside:
+            parser.errors.add("expected one complete main element")
+        if parser.errors:
+            failures.append(f"{relative}: {', '.join(sorted(parser.errors))}")
+    if not checked or failures:
+        raise ValueError("Main landmark check failed:\n" + "\n".join(failures or ["no pages checked"]))
+    print(f"PASS: main landmark boundaries in {checked} generated HTML pages", flush=True)
+
+
 def build_site(root, output, runtime):
     guard = output / "guard"
     guard.mkdir()
@@ -162,6 +224,7 @@ def run(output):
     print("PASS: production configuration and committed document history", flush=True)
     build_site(ROOT, output, runtime)
     check_rendered(output / "html", data)
+    check_main_landmarks(output / "html")
     subprocess.run([sys.executable, str(ROOT / "scripts/check-orphan-pages.py"),
                     str(output / "html")], check=True)
     check_history_fallback(output, runtime)

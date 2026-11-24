@@ -3,6 +3,7 @@
 
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
+<main>
 
 <!-- HEADING -->
 <div class="heading-default-single" style="background: url({{ if.Params.eventbild }}/img/blogg/background/{{ replaceRE "^/+" "" .Params.eventbild }}{{ else if .Params.background }}/img/background/{{ replaceRE "^/+" "" .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
@@ -100,7 +101,7 @@ document.getElementById('scrollRight').addEventListener('click', function() {
 
 </script>
 </div>
-<main class="main-default-single">
+<div class="main-default-single">
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
  </div>
@@ -134,7 +135,7 @@ document.getElementById('scrollRight').addEventListener('click', function() {
   <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
   {{ partial (printf "%s" .Params.fullwidthwidget) . }}
   {{ end }}
-</main>
+</div>
 
 <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
 {{ if $isDemo }}
@@ -142,6 +143,7 @@ document.getElementById('scrollRight').addEventListener('click', function() {
 {{ partial "webinar-side-bar.html" . }}
 {{ end }}
 
+</main>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
 </body>

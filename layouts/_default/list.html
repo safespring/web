@@ -42,6 +42,7 @@
 
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
+<main>
 <!-- HEADING -->
 <div class="heading-default-single">    <!--<img class="heading-default-single-img" src="/img/background/{{ .Params.background | default "safespring-blue-fade2.svg" }}" fetchpriority="high" alt="Background Image" class="background-img">-->
     {{ .Render "li3" }}
@@ -50,7 +51,7 @@
 <!-- CONTENT -->
 {{ if .Params.logobanner }}{{ partial "logobanner2.html" . }}{{ end }}
 {{ if .Params.logobannersaas }}{{ partial "logobanner-saas.html" . }}{{ end }}
-<main class="main-default-single">
+<div class="main-default-single">
   <div {{ if .Params.fullwidth }}class='content-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     {{ .Content }}
 
@@ -133,7 +134,7 @@
   <!-- printf används för att kunna använda variabelvärdet som en del av partial-namnet -->
   {{ partial (printf "%s" .Params.fullwidthwidget) . }}
   {{ end }}
-</main>
+</div>
 
 <!-- Om sidan är 'webinar', inkludera en specifik sidebar för denna sektion -->
 {{ if $isWebinar }}
@@ -141,7 +142,8 @@
 {{ partial "webinar-side-bar.html" . }}
 {{ end }}
 
+</main>
 <!-- FOOTER -->
 {{ partial "footer.html" . }}
-{{ end }}
 </body>
+{{ end }}
