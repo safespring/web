@@ -4,7 +4,7 @@
   {{ partial "g-tag-manager.html" . }}
   <div class="main">
     {{ partial "header.html" . }}
-    <div class="terms">
+    <main class="terms" aria-label="{{ .Title }}">
       {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
       <div class="term">
         <a href="{{ printf "/%s/%s/" $data.Plural ($key | urlize) | relURL }}">
@@ -13,7 +13,7 @@
       </div>
       <!-- term -->
       {{ end }}
-    </div>
+    </main>
     <!-- terms -->
     {{ partial "footer.html" . }}
   </div>

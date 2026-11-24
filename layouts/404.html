@@ -1,6 +1,7 @@
 {{ partial "head.html" . }}
 <!-- NAVBAR -->
 {{ partial "header.html" . }}
+<main>
 <!-- HEADING -->
 <div class="heading-default-single" style="background: url({{ if .Params.background }}/img/background/{{ replaceRE "^/+" "" .Params.background }}{{ else }}/img/background/safespring-blue-fade2.svg{{ end }}); background-size: cover; background-position: center;">
   <div style="max-width: 800px;">
@@ -23,7 +24,7 @@
   </div>
   <div class="w250"></div>
 </div>
-<main class="main-default-single">
+<div class="main-default-single">
   <div {{ if .Params.fullwidth }}class='main-default-single-full-width'{{else}}class='content-default-single'{{end}}>
     <h2>The page you are looking for seems to not exist</h2>
     <p>This may be due to an incorrect link. If the page has moved or has been removed, it can happen that the old link stops working and directs you to this page instead. Please contact us if you believe that this page should still exist under this link.</p>
@@ -48,5 +49,6 @@
     <!-- Use partial to include the content in the standard sidebar -->
     {{ partial "sidebar-default-single.html" . }}
   </div>
+</div>
 </main>
 {{ partial "footer.html" . }}
