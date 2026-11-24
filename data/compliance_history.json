@@ -32,9 +32,9 @@
       "source_sha256": "6176795680169e5f25e11a87ccf719bdb1fb0312a0f6698799ad0e762e1f8cad"
     },
     "compliance/support_process.md": {
-      "author_date": "2026-10-29T15:19:41+01:00",
-      "commit": "91d372352179f8676b0513d475435d56bc451262",
-      "source_sha256": "30c104502e161882757e1e330d913858953891daaaa6821646d89a88fa4fa608"
+      "author_date": "2026-11-24T10:01:55+01:00",
+      "commit": "52bac4b49a87e7ed3727e6108bb7ca55d9e450f0",
+      "source_sha256": "1883b09e3ce6b37a44c115bfa05958c8acb9306648fcdb8ac4d537d15e61b99e"
     }
   }
 }
