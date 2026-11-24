@@ -32,8 +32,8 @@
       "source_sha256": "6176795680169e5f25e11a87ccf719bdb1fb0312a0f6698799ad0e762e1f8cad"
     },
     "compliance/support_process.md": {
-      "author_date": "2026-11-24T10:01:55+01:00",
-      "commit": "52bac4b49a87e7ed3727e6108bb7ca55d9e450f0",
+      "author_date": "2026-11-24T10:37:02+01:00",
+      "commit": "df12a5f8ef9a80df7f045cd6422ba366d74b4863",
       "source_sha256": "1883b09e3ce6b37a44c115bfa05958c8acb9306648fcdb8ac4d537d15e61b99e"
     }
   }

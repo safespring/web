@@ -1,5 +1,16 @@
 {{ $pages := .Page.RegularPages }}
+{{ with .Get "source" }}
+  {{ with $.Page.Site.GetPage . }}
+    {{ $pages = .RegularPages }}
+  {{ else }}
+    {{ errorf "document-table source %q not found: %s" . $.Position }}
+  {{ end }}
+{{ end }}
 {{ $label := default "Document" (.Get "label") }}
+{{ $descriptions := .Page.Params.document_descriptions | default (dict) }}
+{{ $language := lower (.Page.Params.language | default "sv") }}
+{{ $infoLabels := dict "sv" "Visa beskrivning för" "en" "Show description for" "no" "Vis beskrivelse for" }}
+{{ $infoLabel := index $infoLabels $language | default (index $infoLabels "en") }}
 
 {{ if gt (len $pages) 0 }}
 <div class="compliance-document-table">
@@ -13,7 +24,7 @@
           </span>
           <div class="compliance-document-table__title-wrap">
             <h3 class="compliance-document-table__title">{{ $page.Title }}</h3>
-            <p class="compliance-document-table__description">{{ $page.Params.intro }}</p>
+            <p class="compliance-document-table__description">{{ index $descriptions $page.File.BaseFileName | default $page.Params.intro }}</p>
           </div>
         </div>
       </a>
@@ -22,7 +33,7 @@
         <span class="compliance-document-table__label">{{ $label }}</span>
 
         <div class="compliance-document-table__info-wrap">
-          <button type="button" class="compliance-document-table__info" aria-label="Visa beskrivning för {{ $page.Title }}">
+          <button type="button" class="compliance-document-table__info" aria-label="{{ $infoLabel }} {{ $page.Title }}">
             <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
           </button>
         </div>
