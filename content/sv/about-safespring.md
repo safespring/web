@@ -7,6 +7,7 @@ layout: "about-history"
 slug: "om-safespring"
 date: 2026-06-01
 draft: false
+section: "Safespring"
 intro: "Vi bygger vårt moln för digital suveränitet och motståndskraft mot driftstörningar. Ni väljer var i Sverige eller Norge ni kör era applikationer och kan förbereda er för avbrott genom att använda flera driftplatser. Vi använder programvara med öppen källkod, bland annat OpenStack och Kubernetes."
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"

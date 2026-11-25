@@ -7,6 +7,7 @@ layout: "about-history"
 slug: "om-safespring"
 date: 2026-06-01
 draft: false
+section: "Safespring"
 intro: "Vi bygger skyplattformen vår med digital suverenitet og robust drift som mål. Dere velger hvor i Sverige eller Norge applikasjonene deres skal kjøre, og kan bruke flere driftssteder for å være forberedt på driftsavbrudd. Vi bruker programvare med åpen kildekode, blant annet OpenStack og Kubernetes."
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"
