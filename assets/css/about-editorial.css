@@ -1,8 +1,4 @@
 /* Editorial layout for the About page in all four languages. */
-.about-history-page .heading-default-single { min-height: 440px; }
-.about-history-page .heading-default-single h1 { font-size: clamp(3.6rem, 6vw, 5.5rem); }
-.about-history-page .heading-default-single p { max-width: 650px; line-height: 1.7; font-size: 1rem; }
-.about-history-page .heading-default-single .header-button { margin-top: 25px; }
 .about-editorial-section { box-sizing: border-box; padding-block: clamp(3.5rem, 7vw, 6rem); scroll-margin-top: 100px; }
 .about-editorial-section h2,
 .about-editorial-section h3 {
@@ -168,9 +164,6 @@
 .about-editorial-close .about-editorial-section__body > p { margin-top: 0; }
 .about-editorial-close .about-editorial-section__body > br { display: none; }
 .about-editorial-close .about-editorial-section__body > p:last-child { font-size: .8rem; }
-.about-history-page .heading-default-single h1 { animation: about-intro-in 500ms ease-out both; }
-.about-history-page .heading-default-single p { animation: about-intro-in 600ms 80ms ease-out both; }
-@keyframes about-intro-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 @media(max-width:1000px) {
   .about-history-page { --about-history-gutter: 40px; }
   .about-editorial-story { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 35px; }
@@ -179,9 +172,6 @@
 }
 @media(max-width:700px) {
   .about-history-page { --about-history-gutter: 24px; }
-  .about-history-page .heading-default-single { min-height: 480px; padding-top: 115px; padding-bottom: 45px; }
-  .about-history-page .heading-default-single p { max-width: 100%; font-size: .9rem; }
-  .about-history-page .heading-default-single .header-button { margin-top: 15px; }
   .about-editorial-section h2 { font-size: 2.2rem; }
   .about-editorial-section p { font-size: .9rem; }
   .about-editorial-story, .about-editorial-section--media, .about-editorial-close { display: block; }
@@ -190,13 +180,10 @@
   .about-editorial-close .about-editorial-section__body { margin-top: 24px; }
 }
 @media(prefers-reduced-motion:reduce) {
-  .about-history-page .heading-default-single h1, .about-history-page .heading-default-single p { animation: none; }
   .about-editorial-section__body .text-button::after { transition: none; }
 }
 
 /* A quieter layout: headings, connected prose and compact functional blocks. */
-.about-history-page .heading-default-single .section { display: none; }
-.about-history-page .heading-default-single { min-height: 390px; }
 .about-editorial-section__body a:not(.button):not(.text-button) { font-weight: 500; }
 .about-editorial-story { display: block; }
 .about-editorial-story .about-editorial-section__heading { position: static; }
@@ -210,9 +197,4 @@
   .about-editorial-story .content-timeline__label { font-size: .68rem; }
   .about-editorial-story .content-timeline__item h3 { font-size: 1.15rem; }
   .about-editorial-close .about-editorial-section__body { margin-top: 22px; }
-}
-
-.about-history-page .heading-default-single {
-  background-color: rgb(255 255 255 / 35%);
-  background-blend-mode: screen;
 }

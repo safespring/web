@@ -7,7 +7,6 @@ translationKey: "about-safespring"
 slug: "about-safespring"
 date: 2026-06-01
 draft: false
-section: "About us"
 intro: "We build our cloud for digital sovereignty and resilience. You choose where your applications run in Sweden or Norway and can use separate sites to prepare for outages. We use open source software, including OpenStack and Kubernetes."
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"

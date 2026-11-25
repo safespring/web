@@ -1,14 +1,6 @@
 /* === ABOUT SAFESPRING HISTORY PAGE === */
 .about-history-page {
   --about-history-gutter: max(90px, calc((100% - 1120px) / 2));
-  background: #f7fbfc;
-  color: #163648;
-}
-
-.about-history-page .heading-default-single {
-  justify-content: flex-start;
-  padding-left: var(--about-history-gutter);
-  padding-right: var(--about-history-gutter);
 }
 
 .about-history-close__actions {
@@ -51,6 +43,8 @@
 }
 
 .about-history-main {
+  background: #f7fbfc;
+  color: #163648;
   overflow: clip;
 }
 
