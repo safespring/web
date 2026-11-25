@@ -177,6 +177,10 @@
       {{ $aboutHistoryCSS := resources.Get "css/about-history.css" | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $aboutHistoryCSS.RelPermalink }}" />
     {{ end }}
+    {{ if $hasAboutHistory }}
+      {{ $aboutEditorialCSS := resources.Get "css/about-editorial.css" | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $aboutEditorialCSS.RelPermalink }}" />
+    {{ end }}
     {{ if $hasServiceLanding }}
       {{ $serviceLandingCSS := resources.Get "css/service-landing.css" | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $serviceLandingCSS.RelPermalink }}" />

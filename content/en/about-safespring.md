@@ -1,167 +1,88 @@
 ---
 title: "Safespring"
-metatitle: "About Safespring: our history"
+metatitle: "About Safespring: our company, people and history"
 language: "en"
-translationKey: "about-safespring"
 layout: "about-history"
+translationKey: "about-safespring"
 slug: "about-safespring"
 date: 2026-06-01
 draft: false
-section: "Safespring"
-intro: "We run cloud services from data centers in Sweden and Norway, with open source technology and European jurisdiction."
+section: "About us"
+intro: "We build our cloud for digital sovereignty and resilience. You choose where your applications run in Sweden or Norway and can use separate sites to prepare for outages. We use open source software, including OpenStack and Kubernetes."
 background: "safespring-akademisk-sektor-2024.webp"
 socialmedia: "safespring-start.jpg"
+sidebarlinkname: "Meet Safespring"
+sidebarlinkurl: "#today"
 aliases:
   - /about/
   - /en/about/
   - /about-safespring-new/
 ---
 
-<section class="about-history-section about-history-intro" aria-labelledby="about-history-intro-title">
-  <div class="about-history-intro__copy">
-    <h2 id="about-history-intro-title">We provide cloud infrastructure from Sweden and Norway for organisations that need control over where data is stored and processed</h2>
-  </div>
-  <div class="about-history-intro__text">
-    <p>Our platform uses OpenStack for compute services and S3-compatible object storage. Our services are based on open source software, open standards and local production in the Nordics.</p>
-    <p>We work with research and education, public-sector organisations, regulated industries and companies that need cloud services under Swedish and European law.</p>
-  </div>
-</section>
+{{< about-section id="today" title="A Swedish cloud company" class="about-editorial-today" >}}
 
-<section class="about-history-section about-history-origin" aria-labelledby="about-history-origin-title">
-  <figure class="about-history-origin__media">
-    <img src="/img/background/safespring-fredric-wallsten-2023-portrait.webp" alt="Fredric Wallsten at Safespring." loading="lazy" decoding="async" width="1400" height="2153">
-    <figcaption class="about-history-origin__caption">Fredric Wallsten, Founder</figcaption>
-  </figure>
-  <div class="about-history-origin__copy">
-    <h2 id="about-history-origin-title">The service history and the company record start at different points</h2>
-    <p>Our roots go back to 2014, when the work started within IPnett after a procurement for infrastructure as a service to the academic sector in Scandinavia.</p>
-    <p>Safespring AB was registered in Sweden on 5 September 2016. In 2017, customers, contracts, staff and sites were transferred from IPnett to Safespring. On this page, 2014 refers to the start of the work inside IPnett, 2016 refers to the registered Swedish company and 2017 refers to the operating transfer.</p>
-  </div>
-</section>
+With Safespring, organisations can run their software and store their data without having to buy and maintain their own servers. For larger projects, we can provide compute, storage, Kubernetes and GPU capacity together.
 
-<section class="about-history-section about-history-timeline" aria-labelledby="about-history-timeline-title">
-  <div class="about-history-timeline__heading">
-    <h2 id="about-history-timeline-title">From academic infrastructure work to European cloud services</h2>
-  </div>
+Safespring is headquartered in Solna. Our board members and employees own the company, and all owners are based in the EU or the wider European Economic Area. [Our team]({{< relref "/contact.md" >}}#our-team) works with universities, public agencies and businesses, including those in regulated industries.
 
-  <ol class="about-history-timeline__list">
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2014</span>
-      <div>
-        <h3>IPnett Cloud starts</h3>
-        <p>Our service roots start with IPnett Cloud and the first generation of infrastructure and backup services.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2016</span>
-      <div>
-        <h3>NORDUnet procurement and company registration</h3>
-        <p>IPnett won NORDUnet's IaaS/BaaS public procurement after 5,000 design hours. Safespring AB was registered in Sweden on 5 September 2016.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2017</span>
-      <div>
-        <h3>Safespring becomes the operating company</h3>
-        <p>Customers, contracts, staff and sites were transferred from IPnett to Safespring.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2018</span>
-      <div>
-        <h3>Swedish IaaS revenue passes 1M MRR</h3>
-        <p>Safespring passed 1 million in monthly recurring revenue for Swedish infrastructure services.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2020</span>
-      <div>
-        <h3>A stronger position in research and education</h3>
-        <p>Safespring secured the GÉANT IaaS+ procurement contract for EU countries, strengthening our role in the research and education sector.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2022</span>
-      <div>
-        <h3>A broader IaaS company</h3>
-        <p>Our customer base became more diverse, and we prepared for further European expansion through the GÉANT framework.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2023</span>
-      <div>
-        <h3>European Open Science Cloud</h3>
-        <p>Safespring delivered infrastructure for the European Open Science Cloud to the European Commission.</p>
-      </div>
-    </li>
-    <li class="about-history-timeline__item">
-      <span class="about-history-timeline__date">2026</span>
-      <div>
-        <h3>Our first platform-as-a-service offer</h3>
-        <p>Safespring Kubernetes Engine launched as our first platform-as-a-service offer. The same year, Johan Harrysson became CEO and founder Fredric Wallsten moved into the CCO role.</p>
-      </div>
-    </li>
-  </ol>
-</section>
+{{< /about-section >}}
 
-<section class="about-history-section about-history-map" aria-labelledby="about-history-map-title">
-  <div class="about-history-map__copy">
-    <h2 id="about-history-map-title">Our cloud sites are in Sweden and Norway</h2>
-    <p>Our services are produced in Nordic data centers powered by renewable energy. In Stockholm, excess heat is recovered into district heating, and Stockholm South is designed for PUE below 1.2. In Oslo, hydropower is part of the energy profile and the site is stated at PUE 1.1.</p>
-    <p>We use selected co-location partners for high availability, performance and data residency. These facilities provide physical security controls, redundant power and cooling, and robust connectivity. Each partner is reviewed through our vendor risk management process.</p>
-  </div>
-  <div class="about-history-map__image">
-    <img src="/img/graphics/safespring-cloud-sites-map-container.svg" alt="Map showing Safespring public and private cloud sites in Stockholm, Oslo, and Kalix." loading="lazy" decoding="async" width="1000" height="1000">
-  </div>
-  {{< card-grid class="about-history-map__details" ariaLabel="Co-location partner details" >}}
-    {{< card-grid-item code="STO1" title="Stockholm" >}}
-Tier III facility with ISO 9001, ISO 14001, ISO 27001 and ISO 45001 certification.
+{{< about-section id="story" title="Our history" class="about-editorial-story" >}}
 
-SUNET and SJUNET connectivity.
-    {{< /card-grid-item >}}
-    {{< card-grid-item code="STO2" title="Stockholm" >}}
-Tier III facility with ISO 27001 and ISO 20000 certification.
+{{% timeline ariaLabel="Safespring history" %}}
+{{% timeline-item year="2014" title="Our roots at IPnett" %}}
+IPnett Cloud started developing infrastructure and backup services for the Nordic academic sector.
+{{% /timeline-item %}}
+{{% timeline-item year="2016–17" title="Safespring becomes its own company" %}}
+Safespring AB was registered in September 2016. Customers, contracts, staff and sites transferred from IPnett in 2017.
+{{% /timeline-item %}}
+{{% timeline-item year="2023" title="Part of the European Open Science Cloud" %}}
+Safespring joined the winning EOSC procurement team as a subcontractor to Poznań Supercomputing and Networking Center (PSNC).
+{{% /timeline-item %}}
+{{% timeline-item year="2025" title="Cloud access through OCRE 2024" %}}
+Our services became available through the framework for research and education.
+{{% /timeline-item %}}
+{{% timeline-item label="TODAY" title="A broader cloud platform" %}}
+Compute, storage and Kubernetes with a managed control plane for organisations across research, business and the public sector.
+{{% /timeline-item %}}
+{{% /timeline %}}
 
-SUNET and SJUNET connectivity.
-    {{< /card-grid-item >}}
-    {{< card-grid-item code="OSL2" title="Oslo" >}}
-Tier III facility with ISO 14001, ISO 27001 and Eco-Lighthouse certification.
-    {{< /card-grid-item >}}
-  {{< /card-grid >}}
-</section>
+{{< /about-section >}}
 
-<section class="about-history-section about-history-proof" aria-labelledby="about-history-proof-title">
-  <div class="about-history-proof__heading">
-    <h2 id="about-history-proof-title">Four service facts</h2>
-  </div>
-  <div class="about-history-proof__grid">
-    <div class="about-history-proof__item">
-      <span>01</span>
-      <h3>Open source and open standards</h3>
-      <p>Our services are based on open source software and open standards where possible.</p>
-    </div>
-    <div class="about-history-proof__item">
-      <span>02</span>
-      <h3>Nordic data centers</h3>
-      <p>Our services are produced from data centers in Sweden and Norway. Our data center pages state that these sites use renewable energy.</p>
-    </div>
-    <div class="about-history-proof__item">
-      <span>03</span>
-      <h3>Research and education</h3>
-      <p>We list Sunet, Sikt, DeiC and GÉANT OCRE as procurement and access routes for research and education.</p>
-    </div>
-    <div class="about-history-proof__item">
-      <span>04</span>
-      <h3>European jurisdiction</h3>
-      <p>Our services operate under Swedish and EU law, with data stored in the selected Swedish or Norwegian data center.</p>
-    </div>
-  </div>
-  <div class="about-history-logo-strip" aria-label="Selected research and education context">
-    <img src="/img/logos/about-history/sunet.svg" alt="SUNET" width="124" height="157">
-    <img src="/img/logos/about-history/sikt.svg" alt="Sikt" width="400" height="107">
-    <img src="/img/logos/about-history/nordunet.svg" alt="NORDUnet" width="399" height="73">
-    <img src="/img/logos/about-history/eosc.svg" alt="EOSC" width="60" height="10">
-    <img src="/img/logos/ocre-2024.svg" alt="OCRE 2024" width="823" height="141">
-    <img class="about-history-logo-strip__wide" src="/img/logos/european-commission-horizontal-white.svg" alt="European Commission" width="576" height="207">
-  </div>
-</section>
+{{< about-section id="infrastructure" title="Data centres in Sweden and Norway" image="/img/graphics/safespring-cloud-sites-map-container.svg" alt="Map of Safespring public and private cloud sites in Stockholm, Oslo and Kalix." caption="Our public and private cloud sites in Sweden and Norway." >}}
+
+Our compute sites operate independently. If your application needs to stay available during a site outage, you can run replicas at separate sites and route traffic between them. Our documentation shows [which services are available at each site](https://docs.safespring.com/#service-availability-by-site).
+
+We work with [data centre partners]({{< relref "/data-centers.md" >}}) for physical security, power, cooling and connectivity. The facilities use electricity from renewable sources. At Stockholm Norr, heat from the facility is recovered for district heating.
+
+{{< /about-section >}}
+
+{{< about-section id="certifications" title="Our certifications" class="about-editorial-certifications" >}}
+
+For each certification, you can review its scope alongside our [policies and service documents]({{< relref "/compliance/_index.md" >}}).
+
+[ISO 27001]({{< relref "/compliance/iso-27001.md" >}})
+: Information security management for the sale, operation, development and maintenance of public and private cloud infrastructure.
+
+[FR2000]({{< relref "/compliance/fr2000.md" >}})
+: Quality, environmental management, and occupational health and safety.
+
+{{< /about-section >}}
+
+{{< about-section id="research" title="Our work in research and education" class="about-editorial-research" image="/img/background/safespring-research.jpg" alt="" >}}
+
+Researchers using the [European Open Science Cloud]({{< relref "/industries/eosc.md" >}}) can run compute jobs and containers on infrastructure we provide as a subcontractor to the Poznań Supercomputing and Networking Center (PSNC).
+
+Through the [GÉANT OCRE 2024 framework]({{< relref "/industries/research-and-education.md" >}}), eligible research and education organisations in Denmark, Norway and Sweden can procure our cloud services.
+
+{{< /about-section >}}
+
+{{< about-section id="talk" title="Plan your project with us" class="about-editorial-close" >}}
+
+What needs to keep running if a site goes offline? Tell us about your workloads, your peak capacity needs and where your data must stay. We can use those requirements to plan the infrastructure with you.
+
+{{< localbutton text="Talk to Safespring" linkref="/contact.md" >}}
+
+[hello@safespring.com](mailto:hello@safespring.com)
+
+{{< /about-section >}}

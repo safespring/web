@@ -24,7 +24,7 @@ Shared utility and cross-layout rules such as `.bg-white` and `.card-heading` re
 
 ### Blocking page CSS
 
-`about-history.css` remains blocking on the dedicated `about-history` layout because its page-specific layout begins in the first viewport.
+`about-history.css` remains blocking on the dedicated `about-history` layout because its page-specific layout begins in the first viewport. The four About pages also load `about-editorial.css` for their shared `about-section` shortcode, timeline and responsive editorial layout.
 
 `price-content.css` and `price-tables.css` are concatenated into one blocking price-page stylesheet. Their initial table layout must be available before paint.
 

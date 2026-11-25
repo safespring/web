@@ -1,0 +1,32 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+{{- if or (not $id) (not $title) -}}
+  {{- errorf "about-section requires id and title: %s" .Position -}}
+{{- end -}}
+<section id="{{ $id }}" class="about-history-section about-editorial-section{{ with .Get "class" }} {{ . }}{{ end }}{{ if .Get "image" }} about-editorial-section--media{{ end }}" aria-labelledby="{{ $id }}-title">
+  <div class="about-editorial-section__heading">
+    {{ with .Get "label" }}<p class="about-editorial-label">{{ . }}</p>{{ end }}
+    <h2 id="{{ $id }}-title">{{ $title }}</h2>
+    {{ with .Get "lead" }}<p class="about-editorial-lead">{{ . }}</p>{{ end }}
+  </div>
+  <div class="about-editorial-section__body">
+    {{/* Shared HTML shortcodes contain indented tags after blank lines. Keep those tags out of Markdown code blocks. */}}
+    {{ .Inner | replaceRE "(?m)^[ \t]+(<)" "$1" | .Page.RenderString (dict "display" "block") }}
+  </div>
+  {{ with .Get "image" }}
+    <figure class="about-editorial-section__media">
+      {{- $src := . -}}
+      {{- with $.Get "publicCloud" -}}
+        {{/* Localise the legend from the same SVG source as the English map. */}}
+        {{- $svg := readFile (path.Join "static" $src) -}}
+        {{- $svg = replace $svg ">Public cloud</text>" (printf ">%s</text>" (. | htmlEscape)) -}}
+        {{- $svg = replace $svg ">Private cloud</text>" (printf ">%s</text>" ($.Get "privateCloud" | htmlEscape)) -}}
+        {{- $file := printf "img/graphics/cloud-sites-%s.svg" $.Page.Language.Lang -}}
+        {{- $map := resources.FromString $file $svg | fingerprint -}}
+        {{- $src = $map.RelPermalink -}}
+      {{- end -}}
+      <img src="{{ $src }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async" {{ partial "image-dimensions.html" . | safeHTMLAttr }}>
+      {{ with $.Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+    </figure>
+  {{ end }}
+</section>
