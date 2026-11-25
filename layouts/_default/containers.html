@@ -66,9 +66,16 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1 {
+  h1,
+  .containers-section-title {
     font-size: clamp(3rem, 5vw, 6rem) !important;
     line-height: 1;
+  }
+
+  .containers-section-title {
+    font-weight: var(--hind-light-weight);
+    margin: 0;
+    padding: 0;
   }
 
   .wrap {
@@ -803,7 +810,7 @@ h3{
 
 {{ partial "container-scroll-story.html" . }}
 
-<h1 style="margin-top:100px">Deep dive<br> in to the cloud <br>with our Engineers</h1>
+<h2 class="containers-section-title" style="margin-top:100px">Deep dive<br> in to the cloud <br>with our Engineers</h2>
 <p style="">Read our tech updates directly from the engineers of Safespring Cloud Services. <br>Code examples, links to GitHub repos and more.</p>
 {{ partial "blog-post-container-cards.html" . }}
 
@@ -901,7 +908,7 @@ h3{
 
 <section class="two-fields-div hero hero--with-arrow" id="get-started">
   <div class="first-fields-div hero-text">
-    <h1>Get started with Safespring Container <span style="word-break: keep-all;">Platfor<span class="arrow-src" aria-hidden="true">m</span></span></h1>
+    <h2 class="containers-section-title">Get started with Safespring Container <span style="word-break: keep-all;">Platfor<span class="arrow-src" aria-hidden="true">m</span></span></h2>
     <div style="margin:50px 0;">
       <ul class="fa-ul modern-list">
         <li><i class="fa-solid fa-check"></i> Spin up clusters quickly</li>

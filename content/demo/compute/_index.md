@@ -20,7 +20,7 @@ toc: "Episode"
 ---
 
 
-# Contact us
+## Contact us
 {{< ingress >}}
 Why choose a Swedish IaaS provider that upholds stringent data compliance standards for your software solutions?
 {{< /ingress >}}
