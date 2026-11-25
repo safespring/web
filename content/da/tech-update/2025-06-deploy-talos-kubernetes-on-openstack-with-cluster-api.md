@@ -18,7 +18,6 @@ TOC: "I dette indlæg"
 aliases:
   - /tekniske-opdateringer/2025-06-deploy-talos-kubernetes-on-openstack-with-cluster-api/
 ---
-# 
 
 {{< ingress >}}
 En trin-for-trin guide til deklarativt at klargøre, konfigurere og administrere Talos Linux Kubernetes-klynger på Safesprings OpenStack-infrastruktur ved hjælp af CAPO og ClusterResourceSets.

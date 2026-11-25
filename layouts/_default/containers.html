@@ -138,9 +138,16 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1 {
+  h1,
+  .containers-section-title {
     font-size: clamp(3rem, 5vw, 6rem) !important;
     line-height: 1;
+  }
+
+  .containers-section-title {
+    font-weight: var(--hind-light-weight);
+    margin: 0;
+    padding: 0;
   }
 
   .wrap {
@@ -169,12 +176,14 @@
 
     .hero-text,
     .hero-text h1,
+    .hero-text .containers-section-title,
     .hero-text p {
       min-width: 0;
       max-width: 100%;
     }
 
-    .hero h1 {
+    .hero h1,
+    .hero .containers-section-title {
       font-size: 2.15rem !important;
       line-height: 1.05;
     }
@@ -919,7 +928,7 @@ h3{
 
 {{ partial "container-scroll-story.html" . }}
 
-<h1 style="margin-top:100px">Deep Dives<br>from our engineers</h1>
+<h2 class="containers-section-title" style="margin-top:100px">Deep Dives<br>from our engineers</h2>
 <p style="">Read Deep Dives directly from the engineers of Safespring Cloud Services. <br>Code examples, links to GitHub repos and more.</p>
 {{ partial "blog-post-container-cards.html" . }}
 
@@ -1017,7 +1026,7 @@ h3{
 
 <section class="two-fields-div hero hero--with-arrow" id="get-started">
   <div class="first-fields-div hero-text">
-    <h1>{{ $containerFormCopy.getStartedPrefix }} <span style="word-break: keep-all;">Platfor<span class="arrow-src" aria-hidden="true">m</span></span></h1>
+    <h2 class="containers-section-title">{{ $containerFormCopy.getStartedPrefix }} <span style="word-break: keep-all;">Platfor<span class="arrow-src" aria-hidden="true">m</span></span></h2>
     <div style="margin:50px 0;">
       <ul class="fa-ul modern-list">
         {{ range $containerFormCopy.bullets }}

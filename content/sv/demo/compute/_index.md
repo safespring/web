@@ -20,7 +20,7 @@ sidebarimage: ""
 nosidebar: "osynlig"
 toc: "Avsnitt"
 ---
-# Kontakta oss
+## Kontakta oss
 
 {{< ingress >}}
 Varför välja en svensk IaaS-leverantör som upprätthåller strikta krav på dataskydd och regelefterlevnad för dina programvarulösningar?

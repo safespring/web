@@ -20,7 +20,7 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Afsnit"
 ---
-# Kontakt os
+## Kontakt os
 
 {{< ingress >}}
 Hvorfor vælge en svensk IaaS‑udbyder, der overholder strenge krav til datacompliance for dine softwareløsninger?

@@ -12,7 +12,7 @@ sidebarlinkurl: "/kontakt/#contact-form"
 sidebarlinkname: "Kontakt oss"
 sidebarlinkicon: "fa fa-arrow-up-right-from-square"
 ---
-# Kontakt oss
+## Kontakt oss
 
 {{< ingress >}}
 Hvorfor velge en svensk IaaS-leverandør som opprettholder strenge standarder for etterlevelse av dataregelverk for programvareløsningene dine?

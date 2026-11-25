@@ -20,7 +20,7 @@ sidebarimage: ""
 nosidebar: "usynlig"
 toc: "Episode"
 ---
-# Kontakt oss
+## Kontakt oss
 
 {{< ingress >}}
 Hvorfor velge en svensk IaaS-leverandør som ivaretar strenge krav til dataetterlevelse for programvareløsningene dine?
